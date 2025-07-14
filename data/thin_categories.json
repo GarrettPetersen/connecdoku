@@ -5,9 +5,6 @@
   "Wars": [
     "Total War"
   ],
-  "Cars": [
-    "Grand Theft Auto"
-  ],
   "Sports Terms": [
     "Overwatch"
   ],
@@ -35,17 +32,11 @@
   "Religious Titles": [
     "Cardinal"
   ],
-  "Sports": [
-    "Golf"
-  ],
   "Units of Measurement": [
     "Kilo"
   ],
   "Cities in South America": [
     "Lima"
-  ],
-  "Clothing": [
-    "Uniform"
   ],
   "Royalty": [
     "Prince"
@@ -77,6 +68,9 @@
   "Silver Things": [
     "Colossus"
   ],
+  "Smells": [
+    "Musk"
+  ],
   "Astronomers": [
     "Kepler"
   ],
@@ -85,12 +79,6 @@
   ],
   "Pronouns": [
     "IT"
-  ],
-  "Coffee": [
-    "Java"
-  ],
-  "Crypto": [
-    "DEX"
   ],
   "Events": [
     "CON"
@@ -107,9 +95,9 @@
     "NASA",
     "NATO"
   ],
-  "Synonyms for Good": [
-    "Bravo",
-    "Goat"
+  "Sports": [
+    "Golf",
+    "Football"
   ],
   "Comedians": [
     "Joker",
@@ -134,10 +122,20 @@
     "Ant",
     "Hare"
   ],
+  "Body Parts": [
+    "Hearts",
+    "Achilles",
+    "Arm"
+  ],
   "Norse Mythology": [
     "Loki",
     "Thor",
     "Sleipnir"
+  ],
+  "Software": [
+    "Data",
+    "INT",
+    "Key"
   ],
   "Books": [
     "Inferno",
@@ -154,19 +152,14 @@
     "Vatican",
     "Temple Mount"
   ],
+  "Synonyms for Good": [
+    "Bravo",
+    "Goat",
+    "Big"
+  ],
   "Dances": [
     "Foxtrot",
     "Tango",
-    "CHA"
-  ],
-  "Math Terms": [
-    "Infinity",
-    "Zero",
-    "INT"
-  ],
-  "Hot Beverages": [
-    "Green Tea",
-    "Java",
     "CHA"
   ],
   "Gemstones": [
@@ -178,5 +171,10 @@
     "Black Widow",
     "Spider-Man",
     "Doctor Octopus"
+  ],
+  "Coffee": [
+    "Java",
+    "Coffee",
+    "Starbuck"
   ]
 }

@@ -155,7 +155,8 @@
     "Cooler",
     "Freezer",
     "Fridge",
-    "Lamp"
+    "Lamp",
+    "Toaster"
   ],
   "Arctic Animals": [
     "Polar Bear"
@@ -180,6 +181,7 @@
   "Associated with Edgar Allan Poe": [
     "Amontillado",
     "Lenore",
+    "Raven",
     "Tell‑Tale",
     "Usher"
   ],
@@ -243,6 +245,14 @@
     "Monkey",
     "Scorpion"
   ],
+  "Battlestar Galactica": [
+    "Apollo",
+    "Galactica",
+    "Helen",
+    "Hera",
+    "Starbuck",
+    "Toaster"
+  ],
   "Bear": [
     "Bruin"
   ],
@@ -305,6 +315,7 @@
     "Black Hole",
     "Black Widow",
     "Blackpink",
+    "Coffee",
     "Crow",
     "Panther",
     "Penguin",
@@ -376,10 +387,23 @@
     "Jaipur",
     "Troyes"
   ],
+  "Body Parts": [
+    "Achilles",
+    "Arm",
+    "Hearts"
+  ],
   "Books": [
     "IT",
     "Inferno",
     "V"
+  ],
+  "Breakfast": [
+    "Coffee",
+    "Egg",
+    "Hash",
+    "Java",
+    "Juice",
+    "Toaster"
   ],
   "British Monarchs": [
     "Elizabeth",
@@ -466,11 +490,27 @@
     "Poker",
     "Solitaire",
     "Spades",
+    "Texas",
     "Uno",
     "Whist"
   ],
   "Cars": [
-    "Grand Theft Auto"
+    "Bronco",
+    "Buick",
+    "Cadillac",
+    "Chrysler",
+    "Dodge",
+    "Ford",
+    "GMC",
+    "Grand Theft Auto",
+    "Honda",
+    "Hood",
+    "Jeep",
+    "Lincoln",
+    "Saturn",
+    "Subaru",
+    "Tesla",
+    "Toyota"
   ],
   "Checkout Items": [
     "Batteries",
@@ -618,10 +658,15 @@
     "Mozart"
   ],
   "Clothing": [
+    "Glove",
+    "Hood",
+    "Iron",
     "Uniform"
   ],
   "Coffee": [
-    "Java"
+    "Coffee",
+    "Java",
+    "Starbuck"
   ],
   "Colors": [
     "Aurora",
@@ -770,7 +815,10 @@
     "Rogue"
   ],
   "Crypto": [
-    "DEX"
+    "Coin",
+    "DEX",
+    "Hash",
+    "Key"
   ],
   "D&D Stats": [
     "CHA",
@@ -866,8 +914,11 @@
   ],
   "Drinks": [
     "CHA",
+    "Coffee",
     "Green Tea",
     "Java",
+    "Juice",
+    "Kraken",
     "Milk",
     "Whiskey"
   ],
@@ -887,9 +938,12 @@
     "Pluto"
   ],
   "Economics": [
+    "Coin",
     "Copper",
     "Gold",
+    "Monopoly",
     "Nickel",
+    "Risk",
     "Silver"
   ],
   "Electronics": [
@@ -1025,7 +1079,8 @@
   ],
   "Ends with ALL": [
     "Ball",
-    "Dragon Ball"
+    "Dragon Ball",
+    "Football"
   ],
   "Ends with ALO": [
     "Buffalo",
@@ -1116,6 +1171,9 @@
   "Ends with ARK": [
     "Shark"
   ],
+  "Ends with ARM": [
+    "Arm"
+  ],
   "Ends with ARO": [
     "Kilimanjaro"
   ],
@@ -1144,7 +1202,8 @@
     "Suitcase"
   ],
   "Ends with ASH": [
-    "Flash"
+    "Flash",
+    "Hash"
   ],
   "Ends with AST": [
     "Beast",
@@ -1215,6 +1274,9 @@
   "Ends with B": [
     "B"
   ],
+  "Ends with BALL": [
+    "Football"
+  ],
   "Ends with BAT": [
     "Bat"
   ],
@@ -1238,6 +1300,9 @@
   ],
   "Ends with BIA": [
     "Columbia"
+  ],
+  "Ends with BIG": [
+    "Big"
   ],
   "Ends with BIN": [
     "Robin"
@@ -1616,6 +1681,9 @@
   "Ends with FAN": [
     "Fan"
   ],
+  "Ends with FEE": [
+    "Coffee"
+  ],
   "Ends with FEL": [
     "Duffel"
   ],
@@ -1761,6 +1829,7 @@
   "Ends with ICE": [
     "Dice",
     "Ice",
+    "Juice",
     "Spice",
     "Venice"
   ],
@@ -1977,6 +2046,7 @@
     "Poker"
   ],
   "Ends with KEY": [
+    "Key",
     "Mickey",
     "Monkey",
     "Turkey",
@@ -2370,6 +2440,9 @@
   "Ends with OID": [
     "Void"
   ],
+  "Ends with OIN": [
+    "Coin"
+  ],
   "Ends with OIR": [
     "Choir"
   ],
@@ -2423,7 +2496,8 @@
     "Sony"
   ],
   "Ends with OOD": [
-    "Blood"
+    "Blood",
+    "Hood"
   ],
   "Ends with OOK": [
     "Notebook"
@@ -2521,6 +2595,9 @@
   ],
   "Ends with OUT": [
     "Fallout"
+  ],
+  "Ends with OVE": [
+    "Glove"
   ],
   "Ends with OWL": [
     "Owl"
@@ -2817,7 +2894,8 @@
     "Lobster",
     "Peter",
     "Polyester",
-    "Rooster"
+    "Rooster",
+    "Toaster"
   ],
   "Ends with TES": [
     "Gates"
@@ -2893,7 +2971,8 @@
     "Buck",
     "Canuck",
     "Fire Truck",
-    "Puck"
+    "Puck",
+    "Starbuck"
   ],
   "Ends with UGE": [
     "Baton Rouge",
@@ -2984,10 +3063,12 @@
     "Naruto",
     "Pluto"
   ],
+  "Ends with VE": [
+    "Glove"
+  ],
   "Ends with VEN": [
     "Beethoven",
-    "Raven",
-    "The Raven"
+    "Raven"
   ],
   "Ends with VER": [
     "Denver",
@@ -3241,6 +3322,7 @@
     "Egg",
     "Eggplant",
     "Grape",
+    "Hash",
     "Ketchup",
     "Kiwi",
     "Lemon",
@@ -3427,6 +3509,7 @@
   ],
   "Hot Beverages": [
     "CHA",
+    "Coffee",
     "Green Tea",
     "Java"
   ],
@@ -3444,8 +3527,10 @@
     "Chair",
     "Desk",
     "Dresser",
+    "Key",
     "Sofa",
-    "Table"
+    "Table",
+    "Toaster"
   ],
   "Ice-themed": [
     "Ice Age",
@@ -3674,6 +3759,7 @@
     "Teflon"
   ],
   "Math Terms": [
+    "Data",
     "INT",
     "Infinity",
     "Zero"
@@ -3731,6 +3817,7 @@
   "Money Slang": [
     "Bond",
     "Buck",
+    "Coin",
     "Dough",
     "Gold",
     "Nickel",
@@ -3765,7 +3852,9 @@
   ],
   "Movies": [
     "Apollo 13",
+    "Big",
     "Bond",
+    "Clue",
     "Dante's Peak",
     "Doom",
     "Everest",
@@ -3777,6 +3866,7 @@
     "Oscar",
     "Pompeii",
     "Poseidon",
+    "Saw",
     "Silver",
     "Snowman",
     "Titanic",
@@ -3839,6 +3929,7 @@
     "Elvis",
     "Madonna",
     "Prince",
+    "Usher",
     "Xia"
   ],
   "Mythical Creatures": [
@@ -3968,6 +4059,12 @@
     "Loki",
     "Sleipnir",
     "Thor"
+  ],
+  "OJ Simpson": [
+    "Bronco",
+    "Football",
+    "Glove",
+    "Juice"
   ],
   "Organizations": [
     "NASA",
@@ -4198,7 +4295,7 @@
     "Jabberwocky",
     "Moon",
     "Ozymandias",
-    "The Raven"
+    "Raven"
   ],
   "Poets": [
     "Dante",
@@ -4564,6 +4661,7 @@
     "Enterprise",
     "Graf Zeppelin",
     "Heather",
+    "Hood",
     "Iris",
     "Los Angeles",
     "Lusitania",
@@ -4586,6 +4684,7 @@
     "Bismarck",
     "Concordia",
     "Edmund Fitzgerald",
+    "Hood",
     "Lusitania",
     "Mary Rose",
     "Queen Mary",
@@ -4613,12 +4712,20 @@
     "Poe",
     "Shakespeare"
   ],
+  "Smells": [
+    "Musk"
+  ],
   "Social Media Brands": [
     "Meta",
     "Reddit",
     "Snap",
     "TikTok",
     "X"
+  ],
+  "Software": [
+    "Data",
+    "INT",
+    "Key"
   ],
   "Space Missions": [
     "Apollo",
@@ -4669,6 +4776,7 @@
     "Spider-Man"
   ],
   "Sports": [
+    "Football",
     "Golf"
   ],
   "Sports Equipment": [
@@ -4679,7 +4787,8 @@
     "Golf",
     "Puck",
     "Skate",
-    "Stick"
+    "Stick",
+    "Wilson"
   ],
   "Sports Terms": [
     "Overwatch"
@@ -4815,6 +4924,9 @@
   "Starts with ARK": [
     "Ark Royal"
   ],
+  "Starts with ARM": [
+    "Arm"
+  ],
   "Starts with ATH": [
     "Athena",
     "Athens"
@@ -4918,6 +5030,7 @@
     "Bezos"
   ],
   "Starts with BIG": [
+    "Big",
     "Big Bird"
   ],
   "Starts with BIR": [
@@ -5127,6 +5240,12 @@
     "Cobalt",
     "Cobb",
     "Cobra"
+  ],
+  "Starts with COF": [
+    "Coffee"
+  ],
+  "Starts with COI": [
+    "Coin"
   ],
   "Starts with COL": [
     "Colossal",
@@ -5440,6 +5559,9 @@
   "Starts with FLY": [
     "Flyer"
   ],
+  "Starts with FOO": [
+    "Football"
+  ],
   "Starts with FOR": [
     "Ford"
   ],
@@ -5511,6 +5633,9 @@
   ],
   "Starts with GIR": [
     "Giraffe"
+  ],
+  "Starts with GLO": [
+    "Glove"
   ],
   "Starts with GMC": [
     "GMC"
@@ -5598,6 +5723,9 @@
     "Harry",
     "Hartford"
   ],
+  "Starts with HAS": [
+    "Hash"
+  ],
   "Starts with HAU": [
     "Haumea"
   ],
@@ -5648,6 +5776,7 @@
     "Honolulu"
   ],
   "Starts with HOO": [
+    "Hood",
     "Hoover"
   ],
   "Starts with HOR": [
@@ -5793,6 +5922,9 @@
   "Starts with JUG": [
     "Juggernaut"
   ],
+  "Starts with JUI": [
+    "Juice"
+  ],
   "Starts with JUL": [
     "Juliet"
   ],
@@ -5840,6 +5972,9 @@
   "Starts with KET": [
     "Ketchup"
   ],
+  "Starts with KEY": [
+    "Key"
+  ],
   "Starts with KHA": [
     "Khan"
   ],
@@ -5877,7 +6012,8 @@
     "Laker"
   ],
   "Starts with LAM": [
-    "Lambda"
+    "Lambda",
+    "Lamp"
   ],
   "Starts with LAN": [
     "Lando",
@@ -6646,6 +6782,7 @@
     "Stallion",
     "Stamp",
     "Star",
+    "Starbuck",
     "Statler"
   ],
   "Starts with STE": [
@@ -6740,7 +6877,6 @@
     "Thanos"
   ],
   "Starts with THE": [
-    "The Raven",
     "Thera",
     "Theseus",
     "Theta"
@@ -6766,6 +6902,9 @@
   "Starts with TIT": [
     "Titanic",
     "Titanium"
+  ],
+  "Starts with TOA": [
+    "Toaster"
   ],
   "Starts with TOB": [
     "Toblerone"
@@ -7116,6 +7255,7 @@
   ],
   "Synonyms for Big": [
     "Behemoth",
+    "Big",
     "Colossal",
     "Enormous",
     "Gargantuan",
@@ -7133,6 +7273,7 @@
     "Whale"
   ],
   "Synonyms for Good": [
+    "Big",
     "Bravo",
     "Goat"
   ],
@@ -7319,6 +7460,7 @@
     "Pokemon",
     "Portal",
     "Rust",
+    "Saturn",
     "Total War",
     "X-Wing"
   ],
@@ -7346,6 +7488,7 @@
     "Yacht"
   ],
   "Weapons": [
+    "Arm",
     "Bow",
     "Cobra",
     "Dagger",

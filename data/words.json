@@ -380,6 +380,11 @@
     "Starts with MAS",
     "Synonyms for Big"
   ],
+  "Huge": [
+    "Ends with UGE",
+    "Starts with HUG",
+    "Synonyms for Big"
+  ],
   "Gargantuan": [
     "Ends with UAN",
     "Starts with GAR",
@@ -435,6 +440,7 @@
   ],
   "Tesla": [
     "Car Brands",
+    "Cars",
     "Companies",
     "Ends with SLA",
     "Inventors",
@@ -444,6 +450,7 @@
   ],
   "Lincoln": [
     "Car Brands",
+    "Cars",
     "Cities in USA",
     "Ends with OLN",
     "Place Names",
@@ -569,7 +576,6 @@
   ],
   "Madrid": [
     "Capitals",
-    "Cities in Europe",
     "Ends with RID",
     "Starts with MAD"
   ],
@@ -706,7 +712,8 @@
   "Iron": [
     "Elements",
     "Ends with RON",
-    "Starts with IRO"
+    "Starts with IRO",
+    "Clothing"
   ],
   "Venus": [
     "Ends with NUS",
@@ -735,11 +742,13 @@
   ],
   "Saturn": [
     "Car Brands",
+    "Cars",
     "Ends with URN",
     "Gas Giants",
     "Planets",
     "Roman Gods",
-    "Starts with SAT"
+    "Starts with SAT",
+    "Video Games"
   ],
   "Uranus": [
     "Ends with NUS",
@@ -811,11 +820,13 @@
     "Greek Gods",
     "Greek Mythology",
     "Starts with HER",
-    "Trojan War"
+    "Trojan War",
+    "Battlestar Galactica"
   ],
   "Ford": [
     "US Presidents",
     "Car Brands",
+    "Cars",
     "Companies",
     "Ends with ORD",
     "River Crossings",
@@ -823,48 +834,57 @@
   ],
   "Honda": [
     "Car Brands",
+    "Cars",
     "Companies",
     "Ends with NDA",
     "Starts with HON"
   ],
   "Toyota": [
     "Car Brands",
+    "Cars",
     "Companies",
     "Ends with OTA",
     "Starts with TOY"
   ],
   "Dodge": [
     "Car Brands",
+    "Cars",
     "Ends with DGE",
     "Starts with DOD"
   ],
   "Jeep": [
     "Car Brands",
+    "Cars",
     "Ends with EEP",
     "Starts with JEE"
   ],
   "Chrysler": [
     "Car Brands",
+    "Cars",
     "Ends with LER",
     "Starts with CHR"
   ],
   "GMC": [
     "Car Brands",
+    "Cars",
     "Ends with GMC",
     "Starts with GMC"
   ],
   "Buick": [
     "Car Brands",
+    "Cars",
     "Ends with ICK",
     "Starts with BUI"
   ],
   "Cadillac": [
     "Car Brands",
+    "Cars",
     "Ends with LAC",
     "Starts with CAD"
   ],
   "Subaru": [
     "Car Brands",
+    "Cars",
     "Ends with ARU",
     "Starts with SUB"
   ],
@@ -1130,7 +1150,9 @@
     "Ends with VEN",
     "NFL Teams",
     "Predators",
-    "Starts with RAV"
+    "Starts with RAV",
+    "Associated with Edgar Allan Poe",
+    "Poems"
   ],
   "Dolphin": [
     "Animals",
@@ -1270,11 +1292,6 @@
     "Capitals",
     "Ends with AWA",
     "Starts with OTT"
-  ],
-  "Madrid": [
-    "Capitals",
-    "Ends with RID",
-    "Starts with MAD"
   ],
   "Tokyo": [
     "Capitals",
@@ -1477,7 +1494,8 @@
   "Wilson": [
     "Ends with SON",
     "Starts with WIL",
-    "US Presidents"
+    "US Presidents",
+    "Sports Equipment"
   ],
   "Virginia": [
     "Ends with NIA",
@@ -1501,7 +1519,8 @@
     "Ends with XAS",
     "Place Names",
     "Starts with TEX",
-    "US States"
+    "US States",
+    "Card Games"
   ],
   "California": [
     "Ends with NIA",
@@ -1731,12 +1750,14 @@
   "Monopoly": [
     "Board Games",
     "Ends with OLY",
-    "Starts with MON"
+    "Starts with MON",
+    "Economics"
   ],
   "Risk": [
     "Board Games",
     "Ends with ISK",
-    "Starts with RIS"
+    "Starts with RIS",
+    "Economics"
   ],
   "Catan": [
     "Board Games",
@@ -1752,7 +1773,8 @@
   "Clue": [
     "Board Games",
     "Ends with LUE",
-    "Starts with CLU"
+    "Starts with CLU",
+    "Movies"
   ],
   "Carcassonne": [
     "Board Games",
@@ -1808,7 +1830,8 @@
     "Ends with KEN",
     "Mythical Creatures",
     "Sea Monsters",
-    "Starts with KRA"
+    "Starts with KRA",
+    "Drinks"
   ],
   "Pegasus": [
     "Ends with SUS",
@@ -1839,7 +1862,8 @@
   "Hearts": [
     "Card Games",
     "Ends with RTS",
-    "Starts with HEA"
+    "Starts with HEA",
+    "Body Parts"
   ],
   "Spades": [
     "Card Games",
@@ -2049,7 +2073,8 @@
   "Usher": [
     "Associated with Edgar Allan Poe",
     "Ends with HER",
-    "Starts with USH"
+    "Starts with USH",
+    "Musicians"
   ],
   "Amontillado": [
     "Associated with Edgar Allan Poe",
@@ -2060,11 +2085,6 @@
     "Associated with Edgar Allan Poe",
     "Ends with ALE",
     "Starts with TEL"
-  ],
-  "The Raven": [
-    "Ends with VEN",
-    "Poems",
-    "Starts with THE"
   ],
   "Ozymandias": [
     "Ends with IAS",
@@ -2242,7 +2262,8 @@
     "Ends with SAW",
     "Starts with SAW",
     "Tools",
-    "Wooden Objects"
+    "Wooden Objects",
+    "Movies"
   ],
   "Chisel": [
     "Ends with SEL",
@@ -2333,7 +2354,8 @@
     "Greek Heroes",
     "Starts with ACH",
     "Tragic Heroes",
-    "Trojan War"
+    "Trojan War",
+    "Body Parts"
   ],
   "Perseus": [
     "Demigods",
@@ -2732,7 +2754,9 @@
   "Data": [
     "Ends with ATA",
     "Star Trek",
-    "Starts with DAT"
+    "Starts with DAT",
+    "Math Terms",
+    "Software"
   ],
   "Millennium Falcon": [
     "Birds",
@@ -2748,8 +2772,9 @@
   ],
   "Galactica": [
     "Ends with ICA",
-    "Fictional Spaceships",
-    "Starts with GAL"
+    "Starts with GAL",
+    "Battlestar Galactica",
+    "Fictional Spaceships"
   ],
   "Discovery One": [
     "Ends with ONE",
@@ -2859,11 +2884,6 @@
     "Museums",
     "Starts with UFF"
   ],
-  "Huge": [
-    "Ends with UGE",
-    "Starts with HUG",
-    "Synonyms for Big"
-  ],
   "Vast": [
     "Ends with AST",
     "Starts with VAS",
@@ -2923,7 +2943,8 @@
     "Foods",
     "Ingredients in Cobb Salad",
     "Starts with EGG",
-    "White Things"
+    "White Things",
+    "Breakfast"
   ],
   "Avocado": [
     "Burger Toppings",
@@ -3242,7 +3263,8 @@
     "Greek Gods",
     "Music",
     "Space Missions",
-    "Starts with APO"
+    "Starts with APO",
+    "Battlestar Galactica"
   ],
   "Nevada": [
     "Deserts",
@@ -3819,7 +3841,9 @@
   "Bronco": [
     "Cowboy Terms",
     "Ends with NCO",
-    "Starts with BRO"
+    "Starts with BRO",
+    "Cars",
+    "OJ Simpson"
   ],
   "Canoe": [
     "Ends with NOE",
@@ -3883,10 +3907,11 @@
     "Sun"
   ],
   "Lamp": [
+    "Appliances",
     "Electronics",
     "Ends with AMP",
-    "Appliances",
     "Lighting",
+    "Starts with LAM",
     "Starts with LED"
   ],
   "Montgomery": [
@@ -4719,6 +4744,13 @@
     "Sports",
     "Sports Equipment",
     "Starts with GOL"
+  ],
+  "Football": [
+    "Ends with ALL",
+    "Ends with BALL",
+    "OJ Simpson",
+    "Sports",
+    "Starts with FOO"
   ],
   "Hotel": [
     "Ends with TEL",
@@ -5740,7 +5772,8 @@
     "Companies",
     "Ends with USK",
     "Starts with MUS",
-    "Technology"
+    "Technology",
+    "Smells"
   ],
   "Bezos": [
     "Businesspeople",
@@ -6073,7 +6106,17 @@
     "Programming Languages",
     "Starts with JAV",
     "Hot Beverages",
-    "Drinks"
+    "Drinks",
+    "Breakfast"
+  ],
+  "Coffee": [
+    "Black Things",
+    "Breakfast",
+    "Coffee",
+    "Drinks",
+    "Ends with FEE",
+    "Hot Beverages",
+    "Starts with COF"
   ],
   "Python": [
     "Animals",
@@ -6315,14 +6358,16 @@
     "Female Names",
     "Greek Mythology",
     "Starts with HEL",
-    "Trojan War"
+    "Trojan War",
+    "Battlestar Galactica"
   ],
   "INT": [
     "Ends with INT",
     "Starts with INT",
     "D&D Stats",
     "Math Terms",
-    "Abstract Concepts"
+    "Abstract Concepts",
+    "Software"
   ],
   "STR": [
     "Ends with STR",
@@ -6355,5 +6400,75 @@
     "Drinks",
     "Hot Beverages",
     "D&D Stats"
+  ],
+  "Big": [
+    "Ends with BIG",
+    "Starts with BIG",
+    "Synonyms for Big",
+    "Synonyms for Good",
+    "Movies"
+  ],
+  "Toaster": [
+    "Ends with TER",
+    "Starts with TOA",
+    "Appliances",
+    "Household Items",
+    "Battlestar Galactica",
+    "Breakfast"
+  ],
+  "Starbuck": [
+    "Ends with UCK",
+    "Starts with STA",
+    "Battlestar Galactica",
+    "Coffee"
+  ],
+  "Hood": [
+    "Ends with OOD",
+    "Starts with HOO",
+    "Cars",
+    "Clothing",
+    "Ships",
+    "Shipwrecks"
+  ],
+  "Arm": [
+    "Ends with ARM",
+    "Starts with ARM",
+    "Body Parts",
+    "Weapons"
+  ],
+  "Glove": [
+    "Clothing",
+    "Ends with OVE",
+    "Ends with VE",
+    "OJ Simpson",
+    "Starts with GLO"
+  ],
+  "Juice": [
+    "Drinks",
+    "Ends with ICE",
+    "OJ Simpson",
+    "Starts with JUI",
+    "Breakfast"
+  ],
+  "Hash": [
+    "Breakfast",
+    "Crypto",
+    "Ends with ASH",
+    "Foods",
+    "Starts with HAS"
+  ],
+  "Key": [
+    "Crypto",
+    "Ends with KEY",
+    "Household Items",
+    "Software",
+    "Starts with KEY"
+  ],
+  "Coin": [
+    "Ends with OIN",
+    "Starts with COI",
+    "Money Slang",
+    "Crypto",
+    "Economics"
   ]
 }
