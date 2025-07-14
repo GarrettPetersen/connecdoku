@@ -1,10 +1,4 @@
 {
-  "Sun": [
-    "Helios"
-  ],
-  "Household Appliances": [
-    "LED Lamp"
-  ],
   "Psychology Terms": [
     "Persona"
   ],
@@ -14,17 +8,11 @@
   "Cars": [
     "Grand Theft Auto"
   ],
-  "Crimes": [
-    "Grand Theft Auto"
-  ],
   "Sports Terms": [
     "Overwatch"
   ],
   "Spanish Words": [
     "Diablo"
-  ],
-  "Books": [
-    "Inferno"
   ],
   "Ninja Terms": [
     "Naruto"
@@ -35,17 +23,14 @@
   "Martial Arts": [
     "Dragon Ball"
   ],
+  "Star Trek": [
+    "Voyager"
+  ],
   "Alliances": [
     "NATO"
   ],
-  "Games": [
-    "Dice"
-  ],
   "Dinosaurs": [
     "Raptor"
-  ],
-  "Star": [
-    "Sun"
   ],
   "Bear": [
     "Bruin"
@@ -55,6 +40,9 @@
   ],
   "Sports": [
     "Golf"
+  ],
+  "Units of Measurement": [
+    "Kilo"
   ],
   "Cities in South America": [
     "Lima"
@@ -104,30 +92,45 @@
   "Coffee": [
     "Java"
   ],
+  "Crypto": [
+    "DEX"
+  ],
+  "Events": [
+    "CON"
+  ],
   "Norse Gods": [
     "Loki",
     "Thor"
+  ],
+  "Crimes": [
+    "Grand Theft Auto",
+    "Bond"
   ],
   "Organizations": [
     "NASA",
     "NATO"
   ],
-  "Dances": [
-    "Foxtrot",
-    "Tango"
-  ],
-  "Drinks": [
-    "Whiskey",
-    "Milk"
+  "Synonyms for Good": [
+    "Bravo",
+    "Goat"
   ],
   "Comedians": [
     "Joker",
     "Riddler"
   ],
+  "Synonyms for Bad": [
+    "Lemon",
+    "CON"
+  ],
   "National Leaders": [
     "Bismarck",
     "Victoria",
     "Caesar"
+  ],
+  "Star": [
+    "Milky Way",
+    "Sun",
+    "Black Hole"
   ],
   "Fable Characters": [
     "Crow",
@@ -139,10 +142,10 @@
     "Thor",
     "Sleipnir"
   ],
-  "Philosophical Concepts": [
-    "Paradox",
-    "Infinity",
-    "Zero"
+  "Books": [
+    "Inferno",
+    "IT",
+    "V"
   ],
   "Manga": [
     "Naruto",
@@ -154,10 +157,20 @@
     "Vatican",
     "Temple Mount"
   ],
+  "Dances": [
+    "Foxtrot",
+    "Tango",
+    "CHA"
+  ],
   "Math Terms": [
     "Infinity",
     "Zero",
-    "Nothing"
+    "INT"
+  ],
+  "Hot Beverages": [
+    "Green Tea",
+    "Java",
+    "CHA"
   ],
   "Gemstones": [
     "Emerald",
@@ -168,10 +181,5 @@
     "Black Widow",
     "Spider-Man",
     "Doctor Octopus"
-  ],
-  "Appliances": [
-    "Cooler",
-    "Freezer",
-    "Fridge"
   ]
 }

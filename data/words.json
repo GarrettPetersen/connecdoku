@@ -872,7 +872,8 @@
     "Astronomical Objects",
     "Chocolate Bars",
     "Ends with WAY",
-    "Starts with MIL"
+    "Starts with MIL",
+    "Star"
   ],
   "Twix": [
     "Checkout Items",
@@ -3881,10 +3882,10 @@
     "Starts with HEL",
     "Sun"
   ],
-  "LED Lamp": [
+  "Lamp": [
     "Electronics",
     "Ends with AMP",
-    "Household Appliances",
+    "Appliances",
     "Lighting",
     "Starts with LED"
   ],
@@ -4141,7 +4142,8 @@
     "Starts with HAL",
     "TV Shows",
     "The Good Place",
-    "Video Games"
+    "Video Games",
+    "Sun"
   ],
   "Pokemon": [
     "Animals",
@@ -4344,7 +4346,8 @@
     "Ends with GER",
     "Space Missions",
     "Space Telescopes",
-    "Starts with VOY"
+    "Starts with VOY",
+    "Star Trek"
   ],
   "Sahara": [
     "Deserts",
@@ -4565,7 +4568,6 @@
   "Dice": [
     "Board Game Equipment",
     "Ends with ICE",
-    "Games",
     "Starts with DIC"
   ],
   "Card": [
@@ -4589,7 +4591,8 @@
     "Ends with SUN",
     "NBA Teams",
     "Star",
-    "Starts with SUN"
+    "Starts with SUN",
+    "Sun"
   ],
   "Nugget": [
     "Ends with GET",
@@ -4684,7 +4687,8 @@
     "Ends with AVO",
     "Male Names",
     "NATO Phonetic Alphabet",
-    "Starts with BRA"
+    "Starts with BRA",
+    "Synonyms for Good"
   ],
   "Charlie": [
     "Ends with LIE",
@@ -4731,7 +4735,8 @@
   "Kilo": [
     "Ends with ILO",
     "NATO Phonetic Alphabet",
-    "Starts with KIL"
+    "Starts with KIL",
+    "Units of Measurement"
   ],
   "Lima": [
     "Cities in South America",
@@ -5064,7 +5069,8 @@
     "Astronomical Objects",
     "Black Things",
     "Ends with OLE",
-    "Starts with BLA"
+    "Starts with BLA",
+    "Star"
   ],
   "Stop Sign": [
     "Ends with IGN",
@@ -5092,13 +5098,12 @@
     "Ends with ERO",
     "Math Terms",
     "Philosophical Concepts",
-    "Physics Terms",
     "Starts with ZER"
   ],
   "Nothing": [
     "Abstract Concepts",
+    "Philosophical Concepts",
     "Ends with ING",
-    "Math Terms",
     "Physics Terms",
     "Starts with NOT"
   ],
@@ -5196,7 +5201,9 @@
   "Green Tea": [
     "Ends with TEA",
     "Green Things",
-    "Starts with GRE"
+    "Starts with GRE",
+    "Hot Beverages",
+    "Drinks"
   ],
   "Emerald": [
     "Ends with ALD",
@@ -5525,14 +5532,16 @@
     "Flowers",
     "Plants",
     "Starts with SUN",
-    "Yellow Things"
+    "Yellow Things",
+    "Sun"
   ],
   "Lemon": [
     "Ends with MON",
     "Foods",
     "Fruits",
     "Starts with LEM",
-    "Yellow Things"
+    "Yellow Things",
+    "Synonyms for Bad"
   ],
   "Ice": [
     "Ends with ICE",
@@ -5880,7 +5889,8 @@
     "Animals",
     "Domesticated Animals",
     "Ends with OAT",
-    "Starts with GOA"
+    "Starts with GOA",
+    "Synonyms for Good"
   ],
   "Cookie": [
     "Baked Goods",
@@ -5914,13 +5924,11 @@
   ],
   "X": [
     "Companies",
-    "Ends with X",
     "High-Value Scrabble Letters",
     "Movie Ratings",
     "Roman Numerals",
     "Single Letters",
     "Social Media Brands",
-    "Starts with X",
     "Tech Companies"
   ],
   "TikTok": [
@@ -6032,7 +6040,9 @@
     "Ends with IT",
     "Pronouns",
     "Starts with IT",
-    "Two-Letter Words"
+    "Two-Letter Words",
+    "Movies",
+    "Books"
   ],
   "UP": [
     "Acronyms",
@@ -6061,7 +6071,9 @@
     "Ends with AVA",
     "Place Names",
     "Programming Languages",
-    "Starts with JAV"
+    "Starts with JAV",
+    "Hot Beverages",
+    "Drinks"
   ],
   "Python": [
     "Animals",
@@ -6093,7 +6105,10 @@
     "Roman Numerals"
   ],
   "V": [
-    "Roman Numerals"
+    "Roman Numerals",
+    "Movies",
+    "Books",
+    "Superheroes"
   ],
   "L": [
     "Roman Numerals"
@@ -6281,7 +6296,9 @@
     "Ends with OND",
     "James Bond Characters",
     "Money Slang",
-    "Starts with BON"
+    "Starts with BON",
+    "Crimes",
+    "Movies"
   ],
   "Moneypenny": [
     "Ends with NNY",
@@ -6299,5 +6316,44 @@
     "Greek Mythology",
     "Starts with HEL",
     "Trojan War"
+  ],
+  "INT": [
+    "Ends with INT",
+    "Starts with INT",
+    "D&D Stats",
+    "Math Terms",
+    "Abstract Concepts"
+  ],
+  "STR": [
+    "Ends with STR",
+    "Starts with STR",
+    "D&D Stats"
+  ],
+  "DEX": [
+    "Ends with DEX",
+    "Starts with DEX",
+    "Crypto",
+    "D&D Stats"
+  ],
+  "CON": [
+    "Ends with CON",
+    "Starts with CON",
+    "D&D Stats",
+    "Cooling Devices",
+    "Events",
+    "Synonyms for Bad"
+  ],
+  "WIS": [
+    "Ends with WIS",
+    "Starts with WIS",
+    "D&D Stats"
+  ],
+  "CHA": [
+    "Ends with CHA",
+    "Starts with CHA",
+    "Dances",
+    "Drinks",
+    "Hot Beverages",
+    "D&D Stats"
   ]
 }

@@ -1,5 +1,6 @@
 {
   "Abstract Concepts": [
+    "INT",
     "Infinity",
     "Nothing",
     "Void",
@@ -153,7 +154,8 @@
   "Appliances": [
     "Cooler",
     "Freezer",
-    "Fridge"
+    "Fridge",
+    "Lamp"
   ],
   "Arctic Animals": [
     "Polar Bear"
@@ -375,7 +377,9 @@
     "Troyes"
   ],
   "Books": [
-    "Inferno"
+    "IT",
+    "Inferno",
+    "V"
   ],
   "British Monarchs": [
     "Elizabeth",
@@ -725,6 +729,7 @@
   ],
   "Cooling Devices": [
     "AC",
+    "CON",
     "Cooler",
     "Fan",
     "Freezer",
@@ -758,10 +763,22 @@
     "Rodeo"
   ],
   "Crimes": [
+    "Bond",
     "Grand Theft Auto"
   ],
   "Criminals": [
     "Rogue"
+  ],
+  "Crypto": [
+    "DEX"
+  ],
+  "D&D Stats": [
+    "CHA",
+    "CON",
+    "DEX",
+    "INT",
+    "STR",
+    "WIS"
   ],
   "DC Characters": [
     "Batman",
@@ -777,6 +794,7 @@
     "Wonder Woman"
   ],
   "Dances": [
+    "CHA",
     "Foxtrot",
     "Tango"
   ],
@@ -847,6 +865,9 @@
     "Sheep"
   ],
   "Drinks": [
+    "CHA",
+    "Green Tea",
+    "Java",
     "Milk",
     "Whiskey"
   ],
@@ -879,7 +900,7 @@
     "Fluorescent",
     "Halogen",
     "LED",
-    "LED Lamp"
+    "Lamp"
   ],
   "Elements": [
     "Argon",
@@ -1024,7 +1045,7 @@
     "Sami"
   ],
   "Ends with AMP": [
-    "LED Lamp",
+    "Lamp",
     "Stamp"
   ],
   "Ends with AMS": [
@@ -1292,6 +1313,9 @@
   "Ends with CES": [
     "Pisces"
   ],
+  "Ends with CHA": [
+    "CHA"
+  ],
   "Ends with CHI": [
     "Chi",
     "Karachi"
@@ -1313,6 +1337,7 @@
   ],
   "Ends with CON": [
     "Bacon",
+    "CON",
     "Falcon",
     "Macon",
     "Millennium Falcon"
@@ -1359,6 +1384,9 @@
   "Ends with DES": [
     "Hades",
     "Spades"
+  ],
+  "Ends with DEX": [
+    "DEX"
   ],
   "Ends with DGE": [
     "Bridge",
@@ -1829,6 +1857,9 @@
   ],
   "Ends with INO": [
     "Rhino"
+  ],
+  "Ends with INT": [
+    "INT"
   ],
   "Ends with ION": [
     "Damnation",
@@ -2740,6 +2771,9 @@
   "Ends with STA": [
     "Augusta"
   ],
+  "Ends with STR": [
+    "STR"
+  ],
   "Ends with SUE": [
     "Tissue"
   ],
@@ -2991,11 +3025,11 @@
   "Ends with WIN": [
     "Darwin"
   ],
+  "Ends with WIS": [
+    "WIS"
+  ],
   "Ends with WIX": [
     "Twix"
-  ],
-  "Ends with X": [
-    "X"
   ],
   "Ends with XAR": [
     "Pixar"
@@ -3082,6 +3116,9 @@
     "Inuit",
     "Sami",
     "Zulu"
+  ],
+  "Events": [
+    "CON"
   ],
   "Fable Characters": [
     "Ant",
@@ -3253,9 +3290,6 @@
     "Sofa",
     "Table"
   ],
-  "Games": [
-    "Dice"
-  ],
   "Gas Giants": [
     "Jupiter",
     "Neptune",
@@ -3391,6 +3425,11 @@
     "Spear",
     "Sword"
   ],
+  "Hot Beverages": [
+    "CHA",
+    "Green Tea",
+    "Java"
+  ],
   "Hotels": [
     "Hilton",
     "Hotel",
@@ -3398,9 +3437,6 @@
     "Marriott",
     "Statler",
     "Waldorf"
-  ],
-  "Household Appliances": [
-    "LED Lamp"
   ],
   "Household Items": [
     "Bed",
@@ -3481,7 +3517,7 @@
     "Halo",
     "Halogen",
     "LED",
-    "LED Lamp",
+    "Lamp",
     "Neon",
     "Xenon"
   ],
@@ -3638,8 +3674,8 @@
     "Teflon"
   ],
   "Math Terms": [
+    "INT",
     "Infinity",
-    "Nothing",
     "Zero"
   ],
   "Media Companies": [
@@ -3729,10 +3765,12 @@
   ],
   "Movies": [
     "Apollo 13",
+    "Bond",
     "Dante's Peak",
     "Doom",
     "Everest",
     "Film",
+    "IT",
     "Ice Age",
     "Inferno",
     "Krakatoa",
@@ -3744,6 +3782,7 @@
     "Titanic",
     "Troy",
     "UP",
+    "V",
     "Volcano",
     "Zulu"
   ],
@@ -3949,6 +3988,7 @@
   ],
   "Philosophical Concepts": [
     "Infinity",
+    "Nothing",
     "Paradox",
     "Zero"
   ],
@@ -3981,8 +4021,7 @@
     "Aperture",
     "Infinity",
     "Nothing",
-    "Portal",
-    "Zero"
+    "Portal"
   ],
   "Pink Panther Characters": [
     "Pink Panther"
@@ -4646,7 +4685,12 @@
     "Overwatch"
   ],
   "Star": [
+    "Black Hole",
+    "Milky Way",
     "Sun"
+  ],
+  "Star Trek": [
+    "Voyager"
   ],
   "Star Trek Characters": [
     "Data",
@@ -5035,6 +5079,7 @@
     "Ceres"
   ],
   "Starts with CHA": [
+    "CHA",
     "Chair",
     "Challenger",
     "Chanel",
@@ -5092,6 +5137,7 @@
     "Columbus"
   ],
   "Starts with CON": [
+    "CON",
     "Concord",
     "Concordia",
     "Congo",
@@ -5200,6 +5246,9 @@
   ],
   "Starts with DEV": [
     "Devil"
+  ],
+  "Starts with DEX": [
+    "DEX"
   ],
   "Starts with DIA": [
     "Diablo"
@@ -5659,6 +5708,7 @@
     "Infinity"
   ],
   "Starts with INT": [
+    "INT",
     "Intel"
   ],
   "Starts with INU": [
@@ -5843,7 +5893,7 @@
   ],
   "Starts with LED": [
     "LED",
-    "LED Lamp"
+    "Lamp"
   ],
   "Starts with LEI": [
     "Leia",
@@ -6610,6 +6660,9 @@
     "Stop Sign",
     "Storm"
   ],
+  "Starts with STR": [
+    "STR"
+  ],
   "Starts with SUB": [
     "Subaru"
   ],
@@ -6860,6 +6913,9 @@
   "Starts with WIL": [
     "Wilson"
   ],
+  "Starts with WIS": [
+    "WIS"
+  ],
   "Starts with WIZ": [
     "Wizard"
   ],
@@ -6875,9 +6931,6 @@
   ],
   "Starts with WRI": [
     "Wright"
-  ],
-  "Starts with X": [
-    "X"
   ],
   "Starts with X-R": [
     "X-ray"
@@ -7007,7 +7060,10 @@
     "Suitcase"
   ],
   "Sun": [
-    "Helios"
+    "Halo",
+    "Helios",
+    "Sun",
+    "Sunflower"
   ],
   "Superheroes": [
     "Angel",
@@ -7035,6 +7091,7 @@
     "Storm",
     "Superman",
     "Thor",
+    "V",
     "Wolverine",
     "Wonder Woman"
   ],
@@ -7055,6 +7112,10 @@
     "Venom",
     "Vulture"
   ],
+  "Synonyms for Bad": [
+    "CON",
+    "Lemon"
+  ],
   "Synonyms for Big": [
     "Behemoth",
     "Colossal",
@@ -7072,6 +7133,10 @@
     "Titanic",
     "Vast",
     "Whale"
+  ],
+  "Synonyms for Good": [
+    "Bravo",
+    "Goat"
   ],
   "TV Shows": [
     "Doom",
@@ -7231,6 +7296,9 @@
   ],
   "USA": [
     "Captain America"
+  ],
+  "Units of Measurement": [
+    "Kilo"
   ],
   "Vegetables": [
     "Lettuce",
