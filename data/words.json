@@ -1021,7 +1021,8 @@
     "Ends with GER",
     "Mammals",
     "Predators",
-    "Starts with TIG"
+    "Starts with TIG",
+    "MLB Teams"
   ],
   "Bear": [
     "Animals",
@@ -2105,7 +2106,8 @@
   "Police Car": [
     "Black and White",
     "Ends with CAR",
-    "Starts with POL"
+    "Starts with POL",
+    "Crime"
   ],
   "Sword": [
     "Ends with ORD",
@@ -2388,7 +2390,8 @@
     "Ends with EUS",
     "Epic Heroes",
     "Greek Heroes",
-    "Starts with ODY"
+    "Starts with ODY",
+    "Trojan War"
   ],
   "Gilgamesh": [
     "Ends with ESH",
@@ -2411,7 +2414,8 @@
     "Ends with EAR",
     "Shakespeare Characters",
     "Starts with KIN",
-    "Tragic Heroes"
+    "Tragic Heroes",
+    "Royalty"
   ],
   "Bee": [
     "Arthropods",
@@ -2674,7 +2678,8 @@
     "Monarchs",
     "Rulers",
     "Starts with KIN",
-    "Titles of Rank"
+    "Titles of Rank",
+    "Royalty"
   ],
   "Ketchup": [
     "Condiments",
@@ -4087,7 +4092,8 @@
     "Ends with LEM",
     "Place Names",
     "Starts with SAL",
-    "State Capitals"
+    "State Capitals",
+    "Books"
   ],
   "Harrisburg": [
     "Cities in USA",
@@ -4178,7 +4184,9 @@
     "Mythical Creatures",
     "Starts with POK",
     "TV Shows",
-    "Video Games"
+    "Video Games",
+    "Manga",
+    "Movies"
   ],
   "Persona": [
     "Ends with ONA",
@@ -4209,7 +4217,7 @@
   "Grand Theft Auto": [
     "Car Brands",
     "Cars",
-    "Crimes",
+    "Crime",
     "Ends with UTO",
     "Starts with GRA",
     "Video Games"
@@ -4700,7 +4708,8 @@
     "NFL Teams",
     "Red Things",
     "Religious Titles",
-    "Starts with CAR"
+    "Starts with CAR",
+    "MLB Teams"
   ],
   "Alpha": [
     "Ends with PHA",
@@ -4852,17 +4861,24 @@
   "Yankee": [
     "Ends with KEE",
     "NATO Phonetic Alphabet",
-    "Starts with YAN"
+    "Starts with YAN",
+    "MLB Teams"
   ],
   "Queen": [
     "Board Game Equipment",
     "Ends with EEN",
-    "Starts with QUE"
+    "Starts with QUE",
+    "Royalty",
+    "Band Namesakes",
+    "Musicians",
+    "Music"
   ],
   "Bishop": [
     "Board Game Equipment",
     "Ends with HOP",
-    "Starts with BIS"
+    "Starts with BIS",
+    "Religious Terms",
+    "Religious Titles"
   ],
   "Elvis": [
     "Ends with VIS",
@@ -5737,7 +5753,8 @@
     "Starts with ANG",
     "Superheroes",
     "The Good Place",
-    "X-Men Characters"
+    "X-Men Characters",
+    "MLB Teams"
   ],
   "Harp": [
     "Ends with ARP",
@@ -6149,9 +6166,8 @@
   ],
   "V": [
     "Roman Numerals",
-    "Movies",
-    "Books",
-    "Superheroes"
+    "Superheroes",
+    "DC Characters"
   ],
   "L": [
     "Roman Numerals"
@@ -6340,7 +6356,7 @@
     "James Bond Characters",
     "Money Slang",
     "Starts with BON",
-    "Crimes",
+    "Crime",
     "Movies"
   ],
   "Moneypenny": [
@@ -6386,7 +6402,8 @@
     "D&D Stats",
     "Cooling Devices",
     "Events",
-    "Synonyms for Bad"
+    "Synonyms for Bad",
+    "Crime"
   ],
   "WIS": [
     "Ends with WIS",
@@ -6470,5 +6487,90 @@
     "Money Slang",
     "Crypto",
     "Economics"
+  ],
+  "Fraud": [
+    "Ends with AUD",
+    "Starts with FRA",
+    "Crime",
+    "Economics"
+  ],
+  "Murder": [
+    "Crime",
+    "Ends with DER",
+    "OJ Simpson",
+    "Starts with MUR",
+    "Synonyms for Bad"
+  ],
+  "Jerusalem": [
+    "Ancient Cities",
+    "Cities in Asia",
+    "Ends with LEM",
+    "Place Names",
+    "Religious Sites",
+    "Roman Cities",
+    "Starts with JER"
+  ],
+  "Battery": [
+    "Crime",
+    "Electronics",
+    "Ends with ERY",
+    "Starts with BAT"
+  ],
+  "Good": [
+    "Economics",
+    "Ends with OOD",
+    "Starts with GOO",
+    "Synonyms for Good",
+    "The Good Place"
+  ],
+  "Federation": [
+    "Alliances",
+    "Ends with ION",
+    "Star Trek",
+    "Starts with FED"
+  ],
+  "Alliance": [
+    "Alliances",
+    "Ends with NCE",
+    "Star Wars",
+    "Starts with ALL"
+  ],
+  "Giant": [
+    "Ends with ANT",
+    "MLB Teams",
+    "Mythical Creatures",
+    "Starts with GIA",
+    "Synonyms for Big"
+  ],
+  "Ray": [
+    "Animals",
+    "Ends with RAY",
+    "Fish",
+    "MLB Teams",
+    "Math Terms",
+    "Starts with RAY",
+    "Sun"
+  ],
+  "Iliad": [
+    "Books",
+    "Ends with IAD",
+    "Greek Mythology",
+    "Starts with ILI",
+    "Trojan War"
+  ],
+  "Odyssey": [
+    "Books",
+    "Cars",
+    "Ends with SEY",
+    "Greek Mythology",
+    "Starts with ODY",
+    "Trojan War"
+  ],
+  "Rank": [
+    "Ends with ANK",
+    "Math Terms",
+    "Smells",
+    "Starts with RAN",
+    "Synonyms for Bad"
   ]
 }

@@ -33,6 +33,8 @@
     "Shenandoah"
   ],
   "Alliances": [
+    "Alliance",
+    "Federation",
     "NATO"
   ],
   "Ancient Cities": [
@@ -42,6 +44,7 @@
     "Baghdad",
     "Carthage",
     "Constantinople",
+    "Jerusalem",
     "Mecca",
     "Paris",
     "Pompeii",
@@ -121,6 +124,7 @@
     "Ram",
     "Raptor",
     "Raven",
+    "Ray",
     "Rhino",
     "Rooster",
     "Sabretooth",
@@ -243,6 +247,7 @@
     "Byrd",
     "Crow",
     "Monkey",
+    "Queen",
     "Scorpion"
   ],
   "Battlestar Galactica": [
@@ -394,8 +399,10 @@
   ],
   "Books": [
     "IT",
+    "Iliad",
     "Inferno",
-    "V"
+    "Odyssey",
+    "Salem"
   ],
   "Breakfast": [
     "Coffee",
@@ -507,6 +514,7 @@
     "Hood",
     "Jeep",
     "Lincoln",
+    "Odyssey",
     "Saturn",
     "Subaru",
     "Tesla",
@@ -552,6 +560,7 @@
     "Beijing",
     "Delhi",
     "Jaipur",
+    "Jerusalem",
     "Karachi",
     "Samarkand",
     "Seoul",
@@ -807,9 +816,14 @@
     "Ranch",
     "Rodeo"
   ],
-  "Crimes": [
+  "Crime": [
+    "Battery",
     "Bond",
-    "Grand Theft Auto"
+    "CON",
+    "Fraud",
+    "Grand Theft Auto",
+    "Murder",
+    "Police Car"
   ],
   "Criminals": [
     "Rogue"
@@ -839,6 +853,7 @@
     "Penguin",
     "Riddler",
     "Superman",
+    "V",
     "Wonder Woman"
   ],
   "Dances": [
@@ -940,7 +955,9 @@
   "Economics": [
     "Coin",
     "Copper",
+    "Fraud",
     "Gold",
+    "Good",
     "Monopoly",
     "Nickel",
     "Risk",
@@ -949,6 +966,7 @@
   "Electronics": [
     "AC",
     "AM",
+    "Battery",
     "Camera",
     "FM",
     "Fluorescent",
@@ -1121,6 +1139,9 @@
   "Ends with ANG": [
     "Tang"
   ],
+  "Ends with ANK": [
+    "Rank"
+  ],
   "Ends with ANO": [
     "Piano",
     "Volcano"
@@ -1133,6 +1154,7 @@
     "Cormorant",
     "Eggplant",
     "Elephant",
+    "Giant",
     "Grant"
   ],
   "Ends with ANY": [
@@ -1224,6 +1246,9 @@
   ],
   "Ends with ATT": [
     "Hyatt"
+  ],
+  "Ends with AUD": [
+    "Fraud"
   ],
   "Ends with AUI": [
     "Maui"
@@ -1442,6 +1467,7 @@
   ],
   "Ends with DER": [
     "Lavender",
+    "Murder",
     "Spider",
     "Thunder",
     "Vader"
@@ -1624,6 +1650,7 @@
     "Desert"
   ],
   "Ends with ERY": [
+    "Battery",
     "Montgomery"
   ],
   "Ends with ESA": [
@@ -1811,6 +1838,9 @@
   "Ends with HUP": [
     "Ketchup"
   ],
+  "Ends with IAD": [
+    "Iliad"
+  ],
   "Ends with IAN": [
     "Italian"
   ],
@@ -1932,6 +1962,7 @@
   ],
   "Ends with ION": [
     "Damnation",
+    "Federation",
     "Lion",
     "Onion",
     "Orion",
@@ -2084,6 +2115,7 @@
     "LED"
   ],
   "Ends with LEM": [
+    "Jerusalem",
     "Salem"
   ],
   "Ends with LEN": [
@@ -2245,6 +2277,7 @@
     "Snap"
   ],
   "Ends with NCE": [
+    "Alliance",
     "Beyonce",
     "Florence",
     "France",
@@ -2497,6 +2530,7 @@
   ],
   "Ends with OOD": [
     "Blood",
+    "Good",
     "Hood"
   ],
   "Ends with OOK": [
@@ -2680,6 +2714,7 @@
     "Ram"
   ],
   "Ends with RAY": [
+    "Ray",
     "X-ray"
   ],
   "Ends with RCA": [
@@ -2821,6 +2856,9 @@
   ],
   "Ends with SER": [
     "Dresser"
+  ],
+  "Ends with SEY": [
+    "Odyssey"
   ],
   "Ends with SIL": [
     "Basil"
@@ -3269,6 +3307,7 @@
   ],
   "Fish": [
     "Carp",
+    "Ray",
     "Salmon",
     "Shark",
     "Tuna"
@@ -3443,6 +3482,8 @@
     "Helen",
     "Hera",
     "Horse",
+    "Iliad",
+    "Odyssey",
     "Paris",
     "Troy"
   ],
@@ -3620,7 +3661,13 @@
     "Ruth"
   ],
   "MLB Teams": [
-    "Blue Jay"
+    "Angel",
+    "Blue Jay",
+    "Cardinal",
+    "Giant",
+    "Ray",
+    "Tiger",
+    "Yankee"
   ],
   "Magic": [
     "Dragon",
@@ -3708,7 +3755,8 @@
   "Manga": [
     "Dragon Ball",
     "Naruto",
-    "One Piece"
+    "One Piece",
+    "Pokemon"
   ],
   "Martial Arts": [
     "Dragon Ball"
@@ -3762,6 +3810,8 @@
     "Data",
     "INT",
     "Infinity",
+    "Rank",
+    "Ray",
     "Zero"
   ],
   "Media Companies": [
@@ -3864,6 +3914,7 @@
     "Inferno",
     "Krakatoa",
     "Oscar",
+    "Pokemon",
     "Pompeii",
     "Poseidon",
     "Saw",
@@ -3872,7 +3923,6 @@
     "Titanic",
     "Troy",
     "UP",
-    "V",
     "Volcano",
     "Zulu"
   ],
@@ -3912,6 +3962,7 @@
     "Note",
     "Persona",
     "Piano",
+    "Queen",
     "Song",
     "Tune",
     "Violin"
@@ -3929,6 +3980,7 @@
     "Elvis",
     "Madonna",
     "Prince",
+    "Queen",
     "Usher",
     "Xia"
   ],
@@ -3942,6 +3994,7 @@
     "Diablo",
     "Dragon",
     "Elf",
+    "Giant",
     "Griffin",
     "Hydra",
     "Jabberwocky",
@@ -4064,7 +4117,8 @@
     "Bronco",
     "Football",
     "Glove",
-    "Juice"
+    "Juice",
+    "Murder"
   ],
   "Organizations": [
     "NASA",
@@ -4190,6 +4244,7 @@
     "Japan",
     "Java",
     "Jefferson City",
+    "Jerusalem",
     "Juneau",
     "Kalahari",
     "Karachi",
@@ -4417,12 +4472,14 @@
     "Wonder Woman"
   ],
   "Religious Sites": [
+    "Jerusalem",
     "Mecca",
     "Temple Mount",
     "Vatican"
   ],
   "Religious Terms": [
     "Angel",
+    "Bishop",
     "Canon",
     "Damnation",
     "Devil",
@@ -4432,6 +4489,7 @@
     "Inferno"
   ],
   "Religious Titles": [
+    "Bishop",
     "Cardinal"
   ],
   "Reptiles": [
@@ -4477,6 +4535,7 @@
     "Antioch",
     "Carthage",
     "Constantinople",
+    "Jerusalem",
     "Pompeii",
     "Roma",
     "Rome"
@@ -4520,7 +4579,10 @@
     "Darkroom"
   ],
   "Royalty": [
-    "Prince"
+    "King",
+    "King Lear",
+    "Prince",
+    "Queen"
   ],
   "Rulers": [
     "Duke",
@@ -4713,7 +4775,8 @@
     "Shakespeare"
   ],
   "Smells": [
-    "Musk"
+    "Musk",
+    "Rank"
   ],
   "Social Media Brands": [
     "Meta",
@@ -4801,6 +4864,7 @@
   "Star Trek": [
     "Data",
     "Enterprise",
+    "Federation",
     "Kirk",
     "Picard",
     "Q",
@@ -4809,6 +4873,7 @@
     "Voyager"
   ],
   "Star Wars": [
+    "Alliance",
     "Chewbacca",
     "Desert",
     "Han",
@@ -4859,6 +4924,9 @@
   ],
   "Starts with ALE": [
     "Alexandria"
+  ],
+  "Starts with ALL": [
+    "Alliance"
   ],
   "Starts with ALM": [
     "Almanac"
@@ -4983,6 +5051,7 @@
     "Batman",
     "Baton Rouge",
     "Batteries",
+    "Battery",
     "Battlefield"
   ],
   "Starts with BEA": [
@@ -5532,6 +5601,9 @@
   "Starts with FAR": [
     "Faraday"
   ],
+  "Starts with FED": [
+    "Federation"
+  ],
   "Starts with FER": [
     "Ferry"
   ],
@@ -5571,7 +5643,8 @@
   ],
   "Starts with FRA": [
     "France",
-    "Frankfort"
+    "Frankfort",
+    "Fraud"
   ],
   "Starts with FRE": [
     "Freezer",
@@ -5625,6 +5698,9 @@
     "Germania",
     "Germany"
   ],
+  "Starts with GIA": [
+    "Giant"
+  ],
   "Starts with GIG": [
     "Gigantic"
   ],
@@ -5655,6 +5731,7 @@
     "Goliath"
   ],
   "Starts with GOO": [
+    "Good",
     "Goofy",
     "Google"
   ],
@@ -5819,6 +5896,9 @@
   "Starts with IKO": [
     "iKON"
   ],
+  "Starts with ILI": [
+    "Iliad"
+  ],
   "Starts with ILL": [
     "Illyria"
   ],
@@ -5903,6 +5983,9 @@
   "Starts with JEF": [
     "Jefferson",
     "Jefferson City"
+  ],
+  "Starts with JER": [
+    "Jerusalem"
   ],
   "Starts with JOB": [
     "Jobs"
@@ -6219,6 +6302,9 @@
   "Starts with MU": [
     "Mu"
   ],
+  "Starts with MUR": [
+    "Murder"
+  ],
   "Starts with MUS": [
     "Musk",
     "Mustard"
@@ -6310,7 +6396,8 @@
     "Obama"
   ],
   "Starts with ODY": [
-    "Odysseus"
+    "Odysseus",
+    "Odyssey"
   ],
   "Starts with OKL": [
     "Oklahoma City"
@@ -6553,13 +6640,17 @@
     "Ram"
   ],
   "Starts with RAN": [
-    "Ranch"
+    "Ranch",
+    "Rank"
   ],
   "Starts with RAP": [
     "Raptor"
   ],
   "Starts with RAV": [
     "Raven"
+  ],
+  "Starts with RAY": [
+    "Ray"
   ],
   "Starts with RED": [
     "RED",
@@ -7199,6 +7290,7 @@
   "Sun": [
     "Halo",
     "Helios",
+    "Ray",
     "Sun",
     "Sunflower"
   ],
@@ -7251,7 +7343,9 @@
   ],
   "Synonyms for Bad": [
     "CON",
-    "Lemon"
+    "Lemon",
+    "Murder",
+    "Rank"
   ],
   "Synonyms for Big": [
     "Behemoth",
@@ -7259,6 +7353,7 @@
     "Colossal",
     "Enormous",
     "Gargantuan",
+    "Giant",
     "Gigantic",
     "Goliath",
     "Huge",
@@ -7275,7 +7370,8 @@
   "Synonyms for Good": [
     "Big",
     "Bravo",
-    "Goat"
+    "Goat",
+    "Good"
   ],
   "TV Shows": [
     "Doom",
@@ -7333,6 +7429,7 @@
     "Chorus",
     "Cloud",
     "Gates",
+    "Good",
     "Halo",
     "Harp"
   ],
@@ -7391,6 +7488,9 @@
     "Helen",
     "Hera",
     "Horse",
+    "Iliad",
+    "Odysseus",
+    "Odyssey",
     "Paris",
     "Troy"
   ],
