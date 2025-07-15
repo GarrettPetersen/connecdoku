@@ -45,7 +45,132 @@ function createLoadingBar(current, total, width = 50, label = 'Progress') {
 class CategoryGraph {
     constructor() {
         this.edges = new Map(); // (rowCat, colCat) -> word count
+        this.strictSubsets = new Map(); // category -> set of categories it's a strict subset of
+        this.findStrictSubsets();
         this.precomputeEdges();
+    }
+
+    // Find strict subset relationships between categories
+    findStrictSubsets() {
+        console.log('Finding strict subset relationships...');
+        const categories = Object.keys(categoryToWords);
+        let processedPairs = 0;
+        const totalPairs = categories.length * categories.length;
+
+        for (const cat1 of categories) {
+            for (const cat2 of categories) {
+                processedPairs++;
+
+                // Update progress every 1000 pairs
+                if (processedPairs % 1000 === 0) {
+                    process.stdout.write(createLoadingBar(processedPairs, totalPairs, 50, 'Subset Check'));
+                }
+
+                if (cat1 !== cat2) {
+                    const words1 = new Set(categoryToWords[cat1] || []);
+                    const words2 = new Set(categoryToWords[cat2] || []);
+
+                    // Check if cat1 is a strict subset of cat2
+                    if (words1.size > 0 && words2.size > 0) {
+                        let isSubset = true;
+                        for (const word of words1) {
+                            if (!words2.has(word)) {
+                                isSubset = false;
+                                break;
+                            }
+                        }
+
+                        if (isSubset && words1.size < words2.size) {
+                            // cat1 is a strict subset of cat2
+                            if (!this.strictSubsets.has(cat1)) {
+                                this.strictSubsets.set(cat1, new Set());
+                            }
+                            this.strictSubsets.get(cat1).add(cat2);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Final progress update
+        process.stdout.write(createLoadingBar(totalPairs, totalPairs, 50, 'Subset Check') + '\n');
+
+        // Count and display strict subset relationships
+        let totalSubsets = 0;
+        for (const [cat, supersets] of this.strictSubsets) {
+            totalSubsets += supersets.size;
+        }
+        console.log(`Found ${totalSubsets} strict subset relationships`);
+
+        // Show some examples
+        let examplesShown = 0;
+        for (const [cat, supersets] of this.strictSubsets) {
+            if (examplesShown < 5) {
+                console.log(`  ${cat} is a strict subset of: ${Array.from(supersets).join(', ')}`);
+                examplesShown++;
+            }
+        }
+    }
+
+    // Check if two categories can coexist in a puzzle (not strict subset relationship)
+    canCoexist(cat1, cat2) {
+        if (cat1 === cat2) return false;
+
+        // Check if cat1 is a strict subset of cat2
+        const cat1Supersets = this.strictSubsets.get(cat1);
+        if (cat1Supersets && cat1Supersets.has(cat2)) {
+            return false;
+        }
+
+        // Check if cat2 is a strict subset of cat1
+        const cat2Supersets = this.strictSubsets.get(cat2);
+        if (cat2Supersets && cat2Supersets.has(cat1)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    // Check if two categories have significant overlap (more than 50% of words in common)
+    hasSignificantOverlap(cat1, cat2) {
+        if (cat1 === cat2) return true;
+
+        const words1 = new Set(categoryToWords[cat1] || []);
+        const words2 = new Set(categoryToWords[cat2] || []);
+
+        if (words1.size === 0 || words2.size === 0) return false;
+
+        let overlapCount = 0;
+        for (const word of words1) {
+            if (words2.has(word)) {
+                overlapCount++;
+            }
+        }
+
+        // If more than 50% of words overlap, consider them significantly overlapping
+        const overlapPercentage = overlapCount / Math.min(words1.size, words2.size);
+        return overlapPercentage > 0.5;
+    }
+
+    // Check if a set of categories can be used together in a puzzle
+    canUseCategoriesTogether(categories) {
+        for (let i = 0; i < categories.length; i++) {
+            for (let j = i + 1; j < categories.length; j++) {
+                const cat1 = categories[i];
+                const cat2 = categories[j];
+
+                // Check for strict subset relationships
+                if (!this.canCoexist(cat1, cat2)) {
+                    return false;
+                }
+
+                // Check for significant overlap
+                if (this.hasSignificantOverlap(cat1, cat2)) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     // Precompute edge weights for all category pairs
@@ -76,6 +201,11 @@ class CategoryGraph {
                         process.stdout.write(createLoadingBar(processedPairs, totalPairs, 50, 'Category Pair Check'));
                     }
 
+                    // Skip if categories can't coexist due to strict subset relationship
+                    if (!this.canCoexist(rowCat, colCat)) {
+                        continue;
+                    }
+
                     const wordCount = this.getWordCountForPair(rowCat, colCat);
                     if (wordCount > 0) {
                         this.edges.set(`${rowCat}|${colCat}`, wordCount);
@@ -87,7 +217,7 @@ class CategoryGraph {
 
         // Final progress update
         process.stdout.write(createLoadingBar(totalPairs, totalPairs, 50, 'Category Pair Check') + '\n');
-        console.log(`Found ${compatiblePairs} compatible category pairs out of ${totalPairs} total pairs`);
+        console.log(`Found ${compatiblePairs} compatible category pairs out of ${totalPairs} total pairs (after subset filtering)`);
     }
 
     // Get number of words that belong to both categories
@@ -256,6 +386,13 @@ class CategoryGraph {
             if (additionalRows.length >= 3) {
                 // We have 4 row categories, now find 4 column categories
                 rowCategories.push(...additionalRows.slice(0, 3));
+
+                // Check if all row categories can be used together
+                if (!this.canUseCategoriesTogether(rowCategories)) {
+                    console.log(`Skipping - row categories have conflicts: ${rowCategories.join(', ')}`);
+                    continue;
+                }
+
                 const allConnectedCategories = this.getIntersectionOfConnections(graph, rowCategories);
 
                 console.log(`Intersection of all row connections: ${allConnectedCategories.size} categories`);
@@ -267,6 +404,19 @@ class CategoryGraph {
                     console.log(`Selected ${columnCategories.length} column categories:`, columnCategories.join(', '));
 
                     if (columnCategories.length === 4) {
+                        // Check if all column categories can be used together
+                        if (!this.canUseCategoriesTogether(columnCategories)) {
+                            console.log(`Skipping - column categories have conflicts: ${columnCategories.join(', ')}`);
+                            continue;
+                        }
+
+                        // Check if row and column categories can be used together
+                        const allCategories = [...rowCategories, ...columnCategories];
+                        if (!this.canUseCategoriesTogether(allCategories)) {
+                            console.log(`Skipping - row and column categories have conflicts`);
+                            continue;
+                        }
+
                         combinations.push({
                             rowCategories: rowCategories,
                             colCategories: columnCategories
@@ -402,6 +552,11 @@ class CategoryGraph {
                 }
 
                 if (cat1 !== cat2) {
+                    // Skip if categories can't coexist due to strict subset relationship
+                    if (!this.canCoexist(cat1, cat2)) {
+                        continue;
+                    }
+
                     const edgeKey = `${cat1}|${cat2}`;
                     const wordCount = this.edges.get(edgeKey) || 0;
                     if (wordCount > 0) {
@@ -519,16 +674,12 @@ class PuzzleSolver {
             return false; // Word must belong to both categories
         }
 
-        // Check if word is already used in this row or column
+        // Check if word is already used anywhere in the grid (prevent duplicates)
         for (let i = 0; i < 4; i++) {
-            if (i !== col && grid[row][i] === word) {
-                return false; // Word already used in this row
-            }
-        }
-
-        for (let i = 0; i < 4; i++) {
-            if (i !== row && grid[i][col] === word) {
-                return false; // Word already used in this column
+            for (let j = 0; j < 4; j++) {
+                if (grid[i][j] === word) {
+                    return false; // Word already used somewhere in the grid
+                }
             }
         }
 
@@ -589,7 +740,22 @@ class PuzzleSolver {
     recordMissingPair(cat1, cat2, depth) {
         const pair = [cat1, cat2].sort().join('|');
         if (!this.missingPairs.has(pair)) {
-            this.missingPairs.set(pair, { count: 0, maxDepth: 0 });
+            // Find actual overlapping words between the two categories
+            const words1 = new Set(categoryToWords[cat1] || []);
+            const words2 = new Set(categoryToWords[cat2] || []);
+            const overlappingWords = [];
+
+            for (const word of words1) {
+                if (words2.has(word)) {
+                    overlappingWords.push(word);
+                }
+            }
+
+            this.missingPairs.set(pair, {
+                count: 0,
+                maxDepth: 0,
+                overlappingWords: overlappingWords
+            });
         }
         const entry = this.missingPairs.get(pair);
         entry.count++;
@@ -761,7 +927,8 @@ class PuzzleSolver {
         const missingPairsArray = Array.from(this.missingPairs.entries()).map(([pair, data]) => ({
             categories: pair.split('|'),
             count: data.count,
-            maxDepth: data.maxDepth
+            maxDepth: data.maxDepth,
+            overlappingWords: data.overlappingWords
         })).sort((a, b) => b.maxDepth - a.maxDepth); // Sort by depth (closest to completion first)
 
         fs.writeFileSync('missing_word_pairs.json', JSON.stringify(missingPairsArray, null, 2));
