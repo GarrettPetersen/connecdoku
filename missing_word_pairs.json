@@ -1,54 +1,6 @@
 [
   {
     "categories": [
-      "Purple Things",
-      "Ships"
-    ],
-    "count": 120,
-    "maxDepth": 15,
-    "overlappingWords": [
-      "Violet"
-    ],
-    "wordCategoryConflicts": {
-      "Violet": [
-        "Colors",
-        "Female Names",
-        "Flower-class Corvettes",
-        "Flowers",
-        "Plant-Based Colors"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Plant-Based Colors",
-      "Ships"
-    ],
-    "count": 1392,
-    "maxDepth": 14,
-    "overlappingWords": [
-      "Violet",
-      "Buttercup"
-    ],
-    "wordCategoryConflicts": {
-      "Violet": [
-        "Colors",
-        "Female Names",
-        "Flower-class Corvettes",
-        "Flowers",
-        "Purple Things"
-      ],
-      "Buttercup": [
-        "Female Names",
-        "Flower-class Corvettes",
-        "Flowers",
-        "Plants",
-        "Colors"
-      ]
-    }
-  },
-  {
-    "categories": [
       "Superheroes",
       "Weapons"
     ],
@@ -67,41 +19,6 @@
         "Avengers",
         "Birds of Prey",
         "Marvel Characters"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Colors",
-      "Ships"
-    ],
-    "count": 1392,
-    "maxDepth": 13,
-    "overlappingWords": [
-      "Violet",
-      "Iris",
-      "Buttercup"
-    ],
-    "wordCategoryConflicts": {
-      "Violet": [
-        "Female Names",
-        "Flower-class Corvettes",
-        "Flowers",
-        "Plant-Based Colors",
-        "Purple Things"
-      ],
-      "Iris": [
-        "Female Names",
-        "Flowers",
-        "Greek Gods",
-        "Plants"
-      ],
-      "Buttercup": [
-        "Female Names",
-        "Flower-class Corvettes",
-        "Flowers",
-        "Plants",
-        "Plant-Based Colors"
       ]
     }
   },
@@ -191,26 +108,6 @@
   },
   {
     "categories": [
-      "Female Names",
-      "Purple Things"
-    ],
-    "count": 1084,
-    "maxDepth": 11,
-    "overlappingWords": [
-      "Violet"
-    ],
-    "wordCategoryConflicts": {
-      "Violet": [
-        "Colors",
-        "Flower-class Corvettes",
-        "Flowers",
-        "Plant-Based Colors",
-        "Ships"
-      ]
-    }
-  },
-  {
-    "categories": [
       "Black Things",
       "Marvel Characters"
     ],
@@ -235,43 +132,6 @@
   },
   {
     "categories": [
-      "Female Names",
-      "Plant-Based Colors"
-    ],
-    "count": 144,
-    "maxDepth": 10,
-    "overlappingWords": [
-      "Violet",
-      "Olive",
-      "Buttercup"
-    ],
-    "wordCategoryConflicts": {
-      "Violet": [
-        "Colors",
-        "Flower-class Corvettes",
-        "Flowers",
-        "Purple Things",
-        "Ships"
-      ],
-      "Olive": [
-        "Colors",
-        "Foods",
-        "Green Things",
-        "Plants",
-        "Shades of Green",
-        "Trees"
-      ],
-      "Buttercup": [
-        "Flower-class Corvettes",
-        "Flowers",
-        "Plants",
-        "Ships",
-        "Colors"
-      ]
-    }
-  },
-  {
-    "categories": [
       "Plants",
       "Types of Animals"
     ],
@@ -288,50 +148,25 @@
   },
   {
     "categories": [
-      "Foods",
-      "Green Things"
+      "Place Names",
+      "Superheroes"
     ],
-    "count": 4,
+    "count": 10,
     "maxDepth": 6,
     "overlappingWords": [
-      "Olive"
+      "Phoenix"
     ],
     "wordCategoryConflicts": {
-      "Olive": [
-        "Colors",
-        "Female Names",
-        "Plant-Based Colors",
-        "Plants",
-        "Shades of Green",
-        "Trees"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Foods",
-      "Plant-Based Colors"
-    ],
-    "count": 60,
-    "maxDepth": 6,
-    "overlappingWords": [
-      "Orange",
-      "Olive"
-    ],
-    "wordCategoryConflicts": {
-      "Orange": [
-        "Colors",
-        "Companies",
-        "Fruits",
-        "Place Names"
-      ],
-      "Olive": [
-        "Colors",
-        "Female Names",
-        "Green Things",
-        "Plants",
-        "Shades of Green",
-        "Trees"
+      "Phoenix": [
+        "Birds",
+        "Cities in USA",
+        "Magic",
+        "Marvel Characters",
+        "Mythical Creatures",
+        "Red Things",
+        "State Capitals",
+        "Video Games",
+        "X-Men Characters"
       ]
     }
   },
@@ -380,31 +215,10 @@
   },
   {
     "categories": [
-      "Colors",
-      "Green Things"
-    ],
-    "count": 5,
-    "maxDepth": 3,
-    "overlappingWords": [
-      "Olive"
-    ],
-    "wordCategoryConflicts": {
-      "Olive": [
-        "Female Names",
-        "Foods",
-        "Plant-Based Colors",
-        "Plants",
-        "Shades of Green",
-        "Trees"
-      ]
-    }
-  },
-  {
-    "categories": [
       "Flowers",
       "Red Things"
     ],
-    "count": 12,
+    "count": 58,
     "maxDepth": 3,
     "overlappingWords": [
       "Rose"
@@ -413,7 +227,8 @@
       "Rose": [
         "Flower-class Corvettes",
         "Plant-Based Colors",
-        "Plants"
+        "Plants",
+        "Colors"
       ]
     }
   },
