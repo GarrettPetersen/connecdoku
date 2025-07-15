@@ -387,6 +387,7 @@ class CategoryGraph {
         const allCats = validCategories;
         let edgeTrials = 0;
         const totalEdgeTrials = allCats.length * allCats.length / 2;
+        const maxEdgeTrials = 1000000; // No early termination (set very high)
 
         // Temporarily suppress console.log during this phase
         const originalLog = console.log;
@@ -403,6 +404,15 @@ class CategoryGraph {
                     // Patch: temporarily add an edge between cat1 and cat2
                     edgeTrials++;
                     process.stdout.write(createLoadingBar(edgeTrials, totalEdgeTrials, 50, 'Edge Trials') + ` | Found: ${almostValidCombinations.length}`);
+
+                    // Early termination for testing
+                    if (edgeTrials >= maxEdgeTrials) {
+                        console.log = originalLog;
+                        process.stdout.write(createLoadingBar(edgeTrials, totalEdgeTrials, 50, 'Edge Trials') + '\n');
+                        console.log(`Early termination after ${maxEdgeTrials} edge trials`);
+                        break;
+                    }
+
                     // Create a shallow copy of the edges map
                     const patchedEdges = new Map(this.edges);
                     patchedEdges.set(edgeKey, 1);
@@ -420,18 +430,16 @@ class CategoryGraph {
                             }
                             continue;
                         }
-                        if (this.canFormValidPuzzle(combo.rowCategories, combo.colCategories)) {
-                            // Count any new valid combination found with the patched edge
-                            // (the fact that it's new means the patched edge enabled it)
-                            almostValidCombinations.push({
-                                ...combo,
-                                missingEdges: [[cat1, cat2]]
-                            });
-                            seenHashes.add(hash);
-                            // Debug: log when we find a new combination
-                            if (almostValidCombinations.length % 10 === 0) {
-                                console.log(`Found almost valid combo #${almostValidCombinations.length}: ${combo.rowCategories.join(',')} | ${combo.colCategories.join(',')} (missing: ${cat1}-${cat2})`);
-                            }
+                        // Any combination found during edge trials should be treated as almost valid
+                        // (since it required the patched edge to be found)
+                        almostValidCombinations.push({
+                            ...combo,
+                            missingEdges: [[cat1, cat2]]
+                        });
+                        seenHashes.add(hash);
+                        // Debug: log when we find a new combination
+                        if (almostValidCombinations.length % 10 === 0) {
+                            console.log(`Found almost valid combo #${almostValidCombinations.length}: ${combo.rowCategories.join(',')} | ${combo.colCategories.join(',')} (missing: ${cat1}-${cat2})`);
                         }
                     }
                 }
@@ -1199,6 +1207,76 @@ class PuzzleSolver {
         return totalOptions;
     }
 
+    // Try to solve an almost valid combination, getting as close as possible
+    solveAlmostValid(grid, rowCategories, colCategories, missingEdges) {
+        // First, try to solve normally to see how far we get
+        const originalIterations = this.iterations;
+        this.solve(grid, rowCategories, colCategories);
+
+        // If we found a complete solution, we're done
+        if (this.isComplete(grid)) {
+            return;
+        }
+
+        // If we didn't get very far, try a more aggressive approach
+        // Reset the grid and try with relaxed constraints
+        for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 4; j++) {
+                grid[i][j] = null;
+            }
+        }
+
+        // Try to fill as many cells as possible, even if some words are used multiple times
+        this.solveRelaxed(grid, rowCategories, colCategories, missingEdges);
+    }
+
+    // Solve with relaxed constraints (allow some word reuse for almost valid combinations)
+    solveRelaxed(grid, rowCategories, colCategories, missingEdges) {
+        // Try to fill each cell with any available word
+        for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 4; j++) {
+                if (!grid[i][j]) {
+                    const rowCat = rowCategories[i];
+                    const colCat = colCategories[j];
+
+                    // Get all words that belong to both categories
+                    const availableWords = this.getWordsForCategories(rowCat, colCat);
+
+                    if (availableWords.length > 0) {
+                        // Just pick the first available word (we're being aggressive)
+                        grid[i][j] = availableWords[0];
+                    } else {
+                        // This cell has no words - this is a missing edge
+                        // Record this as a missing pair
+                        this.recordMissingPair(rowCat, colCat, 0, [...rowCategories, ...colCategories]);
+
+                        // Try to find what words would be needed
+                        const words1 = new Set(categoryToWords[rowCat] || []);
+                        const words2 = new Set(categoryToWords[colCat] || []);
+
+                        // Find words that are in one category but not the other
+                        const missingWords = [];
+                        for (const word of words1) {
+                            if (!words2.has(word)) {
+                                missingWords.push(word);
+                            }
+                        }
+                        for (const word of words2) {
+                            if (!words1.has(word)) {
+                                missingWords.push(word);
+                            }
+                        }
+
+                        console.log(`Missing edge: ${rowCat} - ${colCat}. Would need words like: ${missingWords.slice(0, 3).join(', ')}`);
+                    }
+                }
+            }
+        }
+
+        // Now try to solve the partially filled grid normally
+        this.solve(grid, rowCategories, colCategories);
+    }
+
     // Try category combinations that passed the graph theory pre-filter
     tryValidCategoryCombinations() {
         console.log('Starting puzzle solver with graph theory pre-filtering...');
@@ -1210,7 +1288,15 @@ class PuzzleSolver {
         const validCombinations = [];
         const almostValidCombinations = [];
 
+        console.log(`Processing ${allCombinations.length} total combinations...`);
+        let edgeTrialCombos = 0;
+
         for (const combination of allCombinations) {
+            if (combination.missingEdges) {
+                edgeTrialCombos++;
+                console.log(`Found edge trial combination: ${combination.rowCategories.join(',')} | ${combination.colCategories.join(',')} (missing: ${combination.missingEdges.map(e => e.join('-')).join(', ')})`);
+            }
+
             if (this.graph.canFormValidPuzzle(combination.rowCategories, combination.colCategories)) {
                 validCombinations.push(combination);
             } else if (this.graph.isAlmostValid(combination.rowCategories, combination.colCategories) || combination.missingEdges) {
@@ -1218,6 +1304,9 @@ class PuzzleSolver {
                 almostValidCombinations.push(combination);
             }
         }
+
+        console.log(`Found ${edgeTrialCombos} combinations from edge trials`);
+        console.log(`Separated into ${validCombinations.length} valid and ${almostValidCombinations.length} almost valid combinations`);
 
         if (allCombinations.length === 0) {
             console.log('No category combinations found!');
@@ -1279,7 +1368,8 @@ class PuzzleSolver {
             const grid = Array(4).fill().map(() => Array(4).fill(null));
 
             // Try to solve with these category assignments (will fail but collect missing pairs)
-            this.solve(grid, combination.rowCategories, combination.colCategories);
+            // For almost valid combinations, we want to get as close as possible
+            this.solveAlmostValid(grid, combination.rowCategories, combination.colCategories, combination.missingEdges);
 
             if (this.iterations > this.maxIterations && this.maxIterations > 0) {
                 console.log('\nStopping due to max iterations');
