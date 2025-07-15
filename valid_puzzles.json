@@ -1,43 +1,43 @@
 [
   {
-    "hash": "Batman|Bear|Black Widow|Cardinal|Crow|Cyclops|Iceman|Iron Man|Mr. Freeze|Phoenix|Polar Bear|Robin|Superman|Swan|Wolverine|Wonder Woman|Birds|Black Things|DC Characters|Marvel Characters|Red Things|Superheroes|Types of Animals|White Things",
+    "hash": "Batman|Bear|Black Widow|Cardinal|Cobra|Eagle|Flash|Green Arrow|Hawkeye|Magneto|Penguin|Phoenix|Robin|Venom|Witchblade|Wonder Woman|Birds|Black Things|DC Characters|Marvel Characters|Red Things|Superheroes|Types of Animals|Weapons",
     "grid": [
       [
-        "Polar Bear",
-        "Iceman",
-        "Swan",
-        "Mr. Freeze"
-      ],
-      [
-        "Wolverine",
-        "Cyclops",
-        "Robin",
-        "Superman"
-      ],
-      [
-        "Cardinal",
-        "Iron Man",
-        "Phoenix",
-        "Wonder Woman"
-      ],
-      [
-        "Bear",
-        "Black Widow",
-        "Crow",
+        "Penguin",
+        "Wonder Woman",
+        "Green Arrow",
         "Batman"
+      ],
+      [
+        "Eagle",
+        "Cardinal",
+        "Cobra",
+        "Bear"
+      ],
+      [
+        "Phoenix",
+        "Magneto",
+        "Hawkeye",
+        "Venom"
+      ],
+      [
+        "Robin",
+        "Flash",
+        "Witchblade",
+        "Black Widow"
       ]
     ],
     "rowCategories": [
-      "White Things",
-      "Superheroes",
-      "Red Things",
-      "Black Things"
-    ],
-    "colCategories": [
+      "DC Characters",
       "Types of Animals",
       "Marvel Characters",
+      "Superheroes"
+    ],
+    "colCategories": [
       "Birds",
-      "DC Characters"
+      "Red Things",
+      "Weapons",
+      "Black Things"
     ]
   }
 ]

@@ -747,7 +747,7 @@ class PuzzleSolver {
     }
 
     // Record missing category pair
-    recordMissingPair(cat1, cat2, depth) {
+    recordMissingPair(cat1, cat2, depth, currentPuzzleCategories = null) {
         const pair = [cat1, cat2].sort().join('|');
         if (!this.missingPairs.has(pair)) {
             // Find actual overlapping words between the two categories
@@ -762,14 +762,31 @@ class PuzzleSolver {
             }
 
             // Find what other categories the overlapping words belong to
+            // Only include categories that are actually being used in the current puzzle attempt
             const wordCategoryConflicts = {};
             for (const word of overlappingWords) {
                 const wordCategories = wordsData[word] || [];
-                const otherCategories = wordCategories.filter(cat =>
-                    cat !== cat1 && cat !== cat2 &&
-                    !cat.startsWith('Starts with ') &&
-                    !cat.startsWith('Ends with ')
-                );
+                let otherCategories;
+
+                if (currentPuzzleCategories) {
+                    // Only show categories that are actually in the current puzzle attempt
+                    otherCategories = wordCategories.filter(cat =>
+                        cat !== cat1 && cat !== cat2 &&
+                        !cat.startsWith('Starts with ') &&
+                        !cat.startsWith('Ends with ') &&
+                        categoryToWords[cat] && categoryToWords[cat].length >= 4 &&
+                        currentPuzzleCategories.includes(cat)
+                    );
+                } else {
+                    // Fallback: show all valid categories (for backward compatibility)
+                    otherCategories = wordCategories.filter(cat =>
+                        cat !== cat1 && cat !== cat2 &&
+                        !cat.startsWith('Starts with ') &&
+                        !cat.startsWith('Ends with ') &&
+                        categoryToWords[cat] && categoryToWords[cat].length >= 4
+                    );
+                }
+
                 if (otherCategories.length > 0) {
                     wordCategoryConflicts[word] = otherCategories;
                 }
@@ -840,7 +857,9 @@ class PuzzleSolver {
                         console.log(`    [${grid[i].map(cell => cell || '_').join(', ')}]`);
                     }
                 }
-                this.recordMissingPair(rowCat, colCat, depth);
+                // Get all categories being used in the current puzzle attempt
+                const currentPuzzleCategories = [...rowCategories, ...colCategories];
+                this.recordMissingPair(rowCat, colCat, depth, currentPuzzleCategories);
             }
             return;
         }

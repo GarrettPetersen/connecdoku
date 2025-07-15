@@ -1,29 +1,6 @@
 [
   {
     "categories": [
-      "Superheroes",
-      "Weapons"
-    ],
-    "count": 3640,
-    "maxDepth": 14,
-    "overlappingWords": [
-      "Green Arrow",
-      "Hawkeye"
-    ],
-    "wordCategoryConflicts": {
-      "Green Arrow": [
-        "DC Characters",
-        "Green Things"
-      ],
-      "Hawkeye": [
-        "Avengers",
-        "Birds of Prey",
-        "Marvel Characters"
-      ]
-    }
-  },
-  {
-    "categories": [
       "Birds",
       "Red Things"
     ],
@@ -35,21 +12,11 @@
     ],
     "wordCategoryConflicts": {
       "Phoenix": [
-        "Cities in USA",
-        "Magic",
         "Marvel Characters",
-        "Mythical Creatures",
-        "Place Names",
-        "State Capitals",
-        "Superheroes",
-        "Video Games",
-        "X-Men Characters"
+        "Mythical Creatures"
       ],
       "Cardinal": [
-        "Types of Animals",
-        "NFL Teams",
-        "Religious Titles",
-        "MLB Teams"
+        "Types of Animals"
       ]
     }
   },
@@ -65,44 +32,8 @@
     ],
     "wordCategoryConflicts": {
       "Phoenix": [
-        "Cities in USA",
-        "Magic",
         "Marvel Characters",
-        "Place Names",
-        "Red Things",
-        "State Capitals",
-        "Superheroes",
-        "Video Games",
-        "X-Men Characters"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Birds",
-      "Superheroes"
-    ],
-    "count": 1692,
-    "maxDepth": 12,
-    "overlappingWords": [
-      "Robin",
-      "Phoenix"
-    ],
-    "wordCategoryConflicts": {
-      "Robin": [
-        "Types of Animals",
-        "DC Characters"
-      ],
-      "Phoenix": [
-        "Cities in USA",
-        "Magic",
-        "Marvel Characters",
-        "Mythical Creatures",
-        "Place Names",
-        "Red Things",
-        "State Capitals",
-        "Video Games",
-        "X-Men Characters"
+        "Red Things"
       ]
     }
   },
@@ -119,73 +50,10 @@
     ],
     "wordCategoryConflicts": {
       "Black Widow": [
-        "Types of Animals",
-        "Avengers",
-        "Spiders",
-        "Superheroes"
+        "Types of Animals"
       ],
       "Venom": [
-        "Spider-Verse Villains",
         "Supervillains"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Plants",
-      "Types of Animals"
-    ],
-    "count": 1428,
-    "maxDepth": 10,
-    "overlappingWords": [
-      "Coral"
-    ],
-    "wordCategoryConflicts": {
-      "Coral": [
-        "Colors"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Place Names",
-      "Superheroes"
-    ],
-    "count": 10,
-    "maxDepth": 6,
-    "overlappingWords": [
-      "Phoenix"
-    ],
-    "wordCategoryConflicts": {
-      "Phoenix": [
-        "Birds",
-        "Cities in USA",
-        "Magic",
-        "Marvel Characters",
-        "Mythical Creatures",
-        "Red Things",
-        "State Capitals",
-        "Video Games",
-        "X-Men Characters"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Red Things",
-      "Types of Animals"
-    ],
-    "count": 4,
-    "maxDepth": 5,
-    "overlappingWords": [
-      "Cardinal"
-    ],
-    "wordCategoryConflicts": {
-      "Cardinal": [
-        "Birds",
-        "NFL Teams",
-        "Religious Titles",
-        "MLB Teams"
       ]
     }
   },
@@ -202,73 +70,10 @@
     "wordCategoryConflicts": {
       "Roma": [
         "Ancient Cities",
-        "Burger Toppings",
         "Capitals",
         "Foods",
-        "Ingredients in Cobb Salad",
-        "Ingredients in a BLT",
         "Place Names",
-        "Roman Cities",
         "Roman Empire"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Flowers",
-      "Red Things"
-    ],
-    "count": 58,
-    "maxDepth": 3,
-    "overlappingWords": [
-      "Rose"
-    ],
-    "wordCategoryConflicts": {
-      "Rose": [
-        "Flower-class Corvettes",
-        "Plant-Based Colors",
-        "Plants",
-        "Colors"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Airships",
-      "Roman Empire"
-    ],
-    "count": 2,
-    "maxDepth": 3,
-    "overlappingWords": [
-      "Roma"
-    ],
-    "wordCategoryConflicts": {
-      "Roma": [
-        "Ancient Cities",
-        "Burger Toppings",
-        "Capitals",
-        "Cities in Italy",
-        "Foods",
-        "Ingredients in Cobb Salad",
-        "Ingredients in a BLT",
-        "Place Names",
-        "Roman Cities"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Black Things",
-      "DC Characters"
-    ],
-    "count": 1,
-    "maxDepth": 3,
-    "overlappingWords": [
-      "Batman"
-    ],
-    "wordCategoryConflicts": {
-      "Batman": [
-        "Superheroes"
       ]
     }
   },
@@ -285,47 +90,7 @@
     "wordCategoryConflicts": {
       "Gambit": [
         "Marvel Characters",
-        "Red Things",
-        "X-Men Characters"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Cities in Italy",
-      "Disasters"
-    ],
-    "count": 2,
-    "maxDepth": 2,
-    "overlappingWords": [
-      "Pompeii"
-    ],
-    "wordCategoryConflicts": {
-      "Pompeii": [
-        "Ancient Cities",
-        "Disaster Movies",
-        "Movies",
-        "Place Names",
-        "Roman Cities",
-        "Roman Empire",
-        "Volcanoes"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Black Things",
-      "Supervillains"
-    ],
-    "count": 2,
-    "maxDepth": 2,
-    "overlappingWords": [
-      "Venom"
-    ],
-    "wordCategoryConflicts": {
-      "Venom": [
-        "Marvel Characters",
-        "Spider-Verse Villains"
+        "Red Things"
       ]
     }
   }
