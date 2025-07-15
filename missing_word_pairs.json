@@ -49,6 +49,29 @@
   },
   {
     "categories": [
+      "Superheroes",
+      "Weapons"
+    ],
+    "count": 3640,
+    "maxDepth": 14,
+    "overlappingWords": [
+      "Green Arrow",
+      "Hawkeye"
+    ],
+    "wordCategoryConflicts": {
+      "Green Arrow": [
+        "DC Characters",
+        "Green Things"
+      ],
+      "Hawkeye": [
+        "Avengers",
+        "Birds of Prey",
+        "Marvel Characters"
+      ]
+    }
+  },
+  {
+    "categories": [
       "Colors",
       "Ships"
     ],
@@ -87,7 +110,7 @@
       "Birds",
       "Red Things"
     ],
-    "count": 1558,
+    "count": 30,
     "maxDepth": 13,
     "overlappingWords": [
       "Phoenix",
@@ -118,7 +141,7 @@
       "Birds",
       "Mythical Creatures"
     ],
-    "count": 153,
+    "count": 45,
     "maxDepth": 12,
     "overlappingWords": [
       "Phoenix"
@@ -142,12 +165,17 @@
       "Birds",
       "Superheroes"
     ],
-    "count": 1366,
+    "count": 1692,
     "maxDepth": 12,
     "overlappingWords": [
+      "Robin",
       "Phoenix"
     ],
     "wordCategoryConflicts": {
+      "Robin": [
+        "Types of Animals",
+        "DC Characters"
+      ],
       "Phoenix": [
         "Cities in USA",
         "Magic",
@@ -207,27 +235,6 @@
   },
   {
     "categories": [
-      "Foods",
-      "Trees"
-    ],
-    "count": 56,
-    "maxDepth": 11,
-    "overlappingWords": [
-      "Olive"
-    ],
-    "wordCategoryConflicts": {
-      "Olive": [
-        "Colors",
-        "Female Names",
-        "Green Things",
-        "Plant-Based Colors",
-        "Plants",
-        "Shades of Green"
-      ]
-    }
-  },
-  {
-    "categories": [
       "Female Names",
       "Plant-Based Colors"
     ],
@@ -265,27 +272,17 @@
   },
   {
     "categories": [
-      "Foods",
-      "Plants"
+      "Plants",
+      "Types of Animals"
     ],
-    "count": 28,
+    "count": 1428,
     "maxDepth": 10,
     "overlappingWords": [
-      "Olive",
-      "Pepper"
+      "Coral"
     ],
     "wordCategoryConflicts": {
-      "Olive": [
-        "Colors",
-        "Female Names",
-        "Green Things",
-        "Plant-Based Colors",
-        "Shades of Green",
-        "Trees"
-      ],
-      "Pepper": [
-        "Colors",
-        "Spices & Herbs"
+      "Coral": [
+        "Colors"
       ]
     }
   },
@@ -343,8 +340,8 @@
       "Red Things",
       "Types of Animals"
     ],
-    "count": 6,
-    "maxDepth": 6,
+    "count": 4,
+    "maxDepth": 5,
     "overlappingWords": [
       "Cardinal"
     ],
@@ -359,29 +356,10 @@
   },
   {
     "categories": [
-      "Colors",
-      "Place Names"
-    ],
-    "count": 21,
-    "maxDepth": 5,
-    "overlappingWords": [
-      "Orange"
-    ],
-    "wordCategoryConflicts": {
-      "Orange": [
-        "Companies",
-        "Foods",
-        "Fruits",
-        "Plant-Based Colors"
-      ]
-    }
-  },
-  {
-    "categories": [
       "Airships",
       "Cities in Italy"
     ],
-    "count": 4,
+    "count": 2,
     "maxDepth": 3,
     "overlappingWords": [
       "Roma"
@@ -423,6 +401,24 @@
   },
   {
     "categories": [
+      "Flowers",
+      "Red Things"
+    ],
+    "count": 12,
+    "maxDepth": 3,
+    "overlappingWords": [
+      "Rose"
+    ],
+    "wordCategoryConflicts": {
+      "Rose": [
+        "Flower-class Corvettes",
+        "Plant-Based Colors",
+        "Plants"
+      ]
+    }
+  },
+  {
+    "categories": [
       "Airships",
       "Roman Empire"
     ],
@@ -447,22 +443,17 @@
   },
   {
     "categories": [
-      "Plant-Based Colors",
-      "Trees"
+      "Black Things",
+      "DC Characters"
     ],
-    "count": 7,
+    "count": 1,
     "maxDepth": 3,
     "overlappingWords": [
-      "Olive"
+      "Batman"
     ],
     "wordCategoryConflicts": {
-      "Olive": [
-        "Colors",
-        "Female Names",
-        "Foods",
-        "Green Things",
-        "Plants",
-        "Shades of Green"
+      "Batman": [
+        "Superheroes"
       ]
     }
   },
@@ -508,81 +499,18 @@
   },
   {
     "categories": [
-      "Birds",
-      "White Things"
+      "Black Things",
+      "Supervillains"
     ],
-    "count": 1,
+    "count": 2,
     "maxDepth": 2,
     "overlappingWords": [
-      "Swan"
+      "Venom"
     ],
     "wordCategoryConflicts": {
-      "Swan": [
-        "Types of Animals"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Religious Terms",
-      "Superheroes"
-    ],
-    "count": 1,
-    "maxDepth": 2,
-    "overlappingWords": [
-      "Angel"
-    ],
-    "wordCategoryConflicts": {
-      "Angel": [
+      "Venom": [
         "Marvel Characters",
-        "Mythical Creatures",
-        "The Good Place",
-        "X-Men Characters",
-        "MLB Teams"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Superheroes",
-      "The Good Place"
-    ],
-    "count": 1,
-    "maxDepth": 2,
-    "overlappingWords": [
-      "Angel"
-    ],
-    "wordCategoryConflicts": {
-      "Angel": [
-        "Marvel Characters",
-        "Mythical Creatures",
-        "Religious Terms",
-        "X-Men Characters",
-        "MLB Teams"
-      ]
-    }
-  },
-  {
-    "categories": [
-      "Magic",
-      "Superheroes"
-    ],
-    "count": 1,
-    "maxDepth": 1,
-    "overlappingWords": [
-      "Phoenix"
-    ],
-    "wordCategoryConflicts": {
-      "Phoenix": [
-        "Birds",
-        "Cities in USA",
-        "Marvel Characters",
-        "Mythical Creatures",
-        "Place Names",
-        "Red Things",
-        "State Capitals",
-        "Video Games",
-        "X-Men Characters"
+        "Spider-Verse Villains"
       ]
     }
   }

@@ -228,7 +228,6 @@
     "Coffee",
     "Crow",
     "Panther",
-    "Penguin",
     "Raven",
     "Venom"
   ],
@@ -261,11 +260,13 @@
     "Indigo",
     "Mystique",
     "Nightcrawler",
+    "Ocean",
     "Sapphire",
     "Teal"
   ],
   "Board Game Equipment": [
     "Bishop",
+    "Board",
     "Card",
     "Chessboard",
     "Dice",
@@ -758,6 +759,7 @@
     "Mr. Freeze",
     "Penguin",
     "Riddler",
+    "Robin",
     "Superman",
     "V",
     "Wonder Woman"
@@ -1081,6 +1083,7 @@
     "Sahara"
   ],
   "Ends with ARD": [
+    "Board",
     "Card",
     "Chessboard",
     "Mustard",
@@ -1440,7 +1443,8 @@
     "Teal"
   ],
   "Ends with EAN": [
-    "Green Bean"
+    "Green Bean",
+    "Ocean"
   ],
   "Ends with EAR": [
     "Bear",
@@ -2225,6 +2229,9 @@
   ],
   "Ends with NEO": [
     "Borneo"
+  ],
+  "Ends with NER": [
+    "Mariner"
   ],
   "Ends with NES": [
     "Des Moines"
@@ -3579,6 +3586,7 @@
     "Blue Jay",
     "Cardinal",
     "Giant",
+    "Mariner",
     "Ray",
     "Tiger",
     "Yankee"
@@ -4714,6 +4722,7 @@
     "Gemini",
     "Hubble",
     "Kepler",
+    "Mariner",
     "Mercury",
     "NASA",
     "Voyager"
@@ -5049,7 +5058,8 @@
     "Bluebird"
   ],
   "Starts with BOA": [
-    "Boar"
+    "Boar",
+    "Board"
   ],
   "Starts with BOI": [
     "Boise"
@@ -6131,6 +6141,7 @@
   ],
   "Starts with MAR": [
     "Mare",
+    "Mariner",
     "Marker",
     "Marriott",
     "Mars",
@@ -6312,6 +6323,9 @@
   ],
   "Starts with OBA": [
     "Obama"
+  ],
+  "Starts with OCE": [
+    "Ocean"
   ],
   "Starts with ODY": [
     "Odysseus",
@@ -7239,6 +7253,7 @@
     "Nightcrawler",
     "Phoenix",
     "Professor X",
+    "Robin",
     "Rogue",
     "Shadowcat",
     "Spider-Man",
@@ -7359,6 +7374,12 @@
     "Halo",
     "Harp"
   ],
+  "The Rime of the Ancient Mariner": [
+    "Albatross",
+    "Board",
+    "Mariner",
+    "Ocean"
+  ],
   "Titles of Rank": [
     "Count",
     "Duke",
@@ -7429,6 +7450,7 @@
     "UP"
   ],
   "Types of Animals": [
+    "Albatross",
     "Animal",
     "Basilisk",
     "Bear",
@@ -7470,6 +7492,7 @@
     "Hawk",
     "Hen",
     "Horse",
+    "Hummingbird",
     "Jaguar",
     "K9",
     "Kiwi",
@@ -7501,6 +7524,7 @@
     "Raven",
     "Ray",
     "Rhino",
+    "Robin",
     "Rooster",
     "Sabretooth",
     "Salmon",
@@ -7513,6 +7537,7 @@
     "Sheep",
     "Skunk",
     "Sow",
+    "Sparrow",
     "Stallion",
     "Swan",
     "Tern",

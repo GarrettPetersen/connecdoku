@@ -110,6 +110,24 @@ class CategoryGraph {
                 examplesShown++;
             }
         }
+
+        // Debug: Check Birds vs Types of Animals specifically
+        const birds = new Set(categoryToWords['Birds'] || []);
+        const typesOfAnimals = new Set(categoryToWords['Types of Animals'] || []);
+        console.log(`\nDEBUG: Birds has ${birds.size} words, Types of Animals has ${typesOfAnimals.size} words`);
+        let allBirdsInTypes = true;
+        for (const bird of birds) {
+            if (!typesOfAnimals.has(bird)) {
+                console.log(`  Bird not in Types of Animals: ${bird}`);
+                allBirdsInTypes = false;
+            }
+        }
+        console.log(`All birds in Types of Animals: ${allBirdsInTypes}`);
+        if (allBirdsInTypes && birds.size < typesOfAnimals.size) {
+            console.log('Birds SHOULD be a strict subset of Types of Animals');
+        } else {
+            console.log('Birds is NOT a strict subset of Types of Animals');
+        }
     }
 
     // Check if two categories can coexist in a puzzle (not strict subset relationship)
@@ -808,6 +826,20 @@ class PuzzleSolver {
             const rowCat = rowCategories[row];
             const colCat = colCategories[col];
             if (rowCat && colCat) {
+                // Add debugging for depth 1 failures
+                if (depth === 1) {
+                    console.log(`DEBUG: Failed at depth 1 for cell (${row},${col})`);
+                    console.log(`  Row category: ${rowCat}`);
+                    console.log(`  Column category: ${colCat}`);
+                    console.log(`  All words in ${rowCat}: ${categoryToWords[rowCat]?.join(', ') || 'none'}`);
+                    console.log(`  All words in ${colCat}: ${categoryToWords[colCat]?.join(', ') || 'none'}`);
+                    const intersection = this.getWordsForCategories(rowCat, colCat);
+                    console.log(`  Intersection: ${intersection.join(', ')}`);
+                    console.log(`  Grid so far:`);
+                    for (let i = 0; i < 4; i++) {
+                        console.log(`    [${grid[i].map(cell => cell || '_').join(', ')}]`);
+                    }
+                }
                 this.recordMissingPair(rowCat, colCat, depth);
             }
             return;

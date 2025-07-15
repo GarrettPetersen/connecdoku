@@ -1086,7 +1086,6 @@
   "Penguin": [
     "Types of Animals",
     "Birds",
-    "Black Things",
     "Black and White",
     "DC Characters",
     "Ends with UIN",
@@ -1207,17 +1206,22 @@
   "Sparrow": [
     "Birds",
     "Ends with ROW",
-    "Starts with SPA"
+    "Starts with SPA",
+    "Types of Animals"
   ],
   "Robin": [
     "Birds",
     "Ends with BIN",
-    "Starts with ROB"
+    "Starts with ROB",
+    "Types of Animals",
+    "Superheroes",
+    "DC Characters"
   ],
   "Hummingbird": [
     "Birds",
     "Ends with IRD",
-    "Starts with HUM"
+    "Starts with HUM",
+    "Types of Animals"
   ],
   "Canada": [
     "Commonwealth Nations",
@@ -3648,7 +3652,9 @@
     "Foods",
     "Sea Birds",
     "Ships",
-    "Starts with ALB"
+    "Starts with ALB",
+    "Types of Animals",
+    "The Rime of the Ancient Mariner"
   ],
   "Pencil": [
     "Ends with CIL",
@@ -6593,5 +6599,24 @@
     "Mammals",
     "Starts with RAT",
     "Types of Animals"
+  ],
+  "Board": [
+    "Board Game Equipment",
+    "Ends with ARD",
+    "Starts with BOA",
+    "The Rime of the Ancient Mariner"
+  ],
+  "Ocean": [
+    "Blue Things",
+    "Ends with EAN",
+    "Starts with OCE",
+    "The Rime of the Ancient Mariner"
+  ],
+  "Mariner": [
+    "Ends with NER",
+    "MLB Teams",
+    "Space Missions",
+    "Starts with MAR",
+    "The Rime of the Ancient Mariner"
   ]
 }
