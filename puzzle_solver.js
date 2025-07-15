@@ -271,6 +271,24 @@ class CategoryGraph {
         return this.hasPerfectMatching(adjacencyMatrix);
     }
 
+    // Check if combination is "almost valid" - missing just one overlap
+    isAlmostValid(rowCategories, colCategories) {
+        // Quick check: count how many intersections have 0 words
+        let zeroIntersections = 0;
+        for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 4; j++) {
+                const edgeKey = `${rowCategories[i]}|${colCategories[j]}`;
+                const wordCount = this.edges.get(edgeKey) || 0;
+                if (wordCount === 0) {
+                    zeroIntersections++;
+                }
+            }
+        }
+
+        // If 1-3 intersections have 0 words, it's "almost valid" (more lenient)
+        return zeroIntersections >= 1 && zeroIntersections <= 3;
+    }
+
     // Check if bipartite graph has a perfect matching using Hungarian algorithm
     hasPerfectMatching(adjacencyMatrix) {
         const n = 4;
@@ -313,6 +331,8 @@ class CategoryGraph {
     getValidCategoryCombinations() {
         console.log('Finding valid category combinations using graph traversal...');
         const validCombinations = [];
+        const almostValidCombinations = [];
+        const seenHashes = new Set();
 
         // Sort categories by number of words (most words first - easier to solve)
         const sortedCategories = validCategories.sort((a, b) =>
@@ -332,7 +352,7 @@ class CategoryGraph {
         console.log('Finding valid category combinations using graph traversal...');
         const combinations = this.findValidCategoryCombinations(graph, sortedCategories);
 
-        console.log(`Found ${combinations.length} valid category combinations`);
+        console.log(`Found ${combinations.length} potential category combinations`);
 
         // Convert to row/column format and validate
         let combinationsChecked = 0;
@@ -340,28 +360,112 @@ class CategoryGraph {
 
         for (const combination of combinations) {
             combinationsChecked++;
-
             // Update progress every 10 combinations
             if (combinationsChecked % 10 === 0) {
                 process.stdout.write(createLoadingBar(combinationsChecked, totalCombinations, 50, 'Combination Validation'));
             }
-
+            const hash = [...combination.rowCategories, ...combination.colCategories].sort().join('|');
+            if (seenHashes.has(hash)) continue;
             if (this.canFormValidPuzzle(combination.rowCategories, combination.colCategories)) {
                 validCombinations.push(combination);
-
-                // Stop if we found enough valid combinations
-                if (validCombinations.length >= 100) {
-                    process.stdout.write(createLoadingBar(totalCombinations, totalCombinations, 50, 'Combination Validation') + '\n');
-                    console.log(`\nFound ${validCombinations.length} valid combinations, stopping search`);
-                    return validCombinations;
-                }
+                seenHashes.add(hash);
+                // Continue searching for ALL valid combinations
+            } else if (this.isAlmostValid(combination.rowCategories, combination.colCategories)) {
+                // Include almost valid combinations for instructive purposes
+                almostValidCombinations.push({ ...combination, missingEdges: [] });
+                seenHashes.add(hash);
+                // Continue searching for more almost valid combinations
             }
         }
 
         // Final progress update
         process.stdout.write(createLoadingBar(totalCombinations, totalCombinations, 50, 'Combination Validation') + '\n');
-        console.log(`Found ${validCombinations.length} valid category combinations out of ${combinationsChecked.toLocaleString()} checked`);
-        return validCombinations;
+        console.log(`Found ${validCombinations.length} valid category combinations and ${almostValidCombinations.length} almost valid combinations out of ${combinationsChecked.toLocaleString()} checked`);
+
+        // --- New phase: Add one missing edge and search for almost valid combinations ---
+        console.log('Searching for almost valid combinations by adding one missing edge...');
+        const allCats = validCategories;
+        let edgeTrials = 0;
+        const totalEdgeTrials = allCats.length * allCats.length / 2;
+
+        // Temporarily suppress console.log during this phase
+        const originalLog = console.log;
+        const originalStdout = process.stdout.write;
+        console.log = () => { }; // Suppress all console.log during this phase
+
+        for (let i = 0; i < allCats.length; i++) {
+            for (let j = i + 1; j < allCats.length; j++) {
+                const cat1 = allCats[i];
+                const cat2 = allCats[j];
+                const edgeKey = `${cat1}|${cat2}`;
+                const reverseEdgeKey = `${cat2}|${cat1}`;
+                if ((this.edges.get(edgeKey) || 0) === 0 && this.canCoexist(cat1, cat2)) {
+                    // Patch: temporarily add an edge between cat1 and cat2
+                    edgeTrials++;
+                    process.stdout.write(createLoadingBar(edgeTrials, totalEdgeTrials, 50, 'Edge Trials') + ` | Found: ${almostValidCombinations.length}`);
+                    // Create a shallow copy of the edges map
+                    const patchedEdges = new Map(this.edges);
+                    patchedEdges.set(edgeKey, 1);
+                    patchedEdges.set(reverseEdgeKey, 1);
+                    // Create a patched graph
+                    const patchedGraph = this.buildCategoryGraphWithEdges(patchedEdges);
+                    // Find valid combinations in the patched graph (with suppressed logging)
+                    const patchedCombinations = this.findValidCategoryCombinationsSilent(patchedGraph, sortedCategories);
+                    for (const combo of patchedCombinations) {
+                        const hash = [...combo.rowCategories, ...combo.colCategories].sort().join('|');
+                        if (seenHashes.has(hash)) {
+                            // Debug: log when we skip a duplicate
+                            if (edgeTrials % 1000 === 0) {
+                                console.log(`Skipping duplicate combo: ${combo.rowCategories.join(',')} | ${combo.colCategories.join(',')}`);
+                            }
+                            continue;
+                        }
+                        if (this.canFormValidPuzzle(combo.rowCategories, combo.colCategories)) {
+                            // Count any new valid combination found with the patched edge
+                            // (the fact that it's new means the patched edge enabled it)
+                            almostValidCombinations.push({
+                                ...combo,
+                                missingEdges: [[cat1, cat2]]
+                            });
+                            seenHashes.add(hash);
+                            // Debug: log when we find a new combination
+                            if (almostValidCombinations.length % 10 === 0) {
+                                console.log(`Found almost valid combo #${almostValidCombinations.length}: ${combo.rowCategories.join(',')} | ${combo.colCategories.join(',')} (missing: ${cat1}-${cat2})`);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Restore console.log
+        console.log = originalLog;
+        process.stdout.write(createLoadingBar(edgeTrials, totalEdgeTrials, 50, 'Edge Trials') + '\n');
+        console.log(`Found ${almostValidCombinations.length} almost valid combinations (with one missing edge)`);
+
+        // Return both valid and almost valid combinations
+        return [...validCombinations, ...almostValidCombinations];
+    }
+
+    // Helper: build a graph with a custom edges map
+    buildCategoryGraphWithEdges(customEdges) {
+        const graph = new Map();
+        for (const cat1 of validCategories) {
+            graph.set(cat1, new Set());
+            for (const cat2 of validCategories) {
+                if (cat1 !== cat2) {
+                    if (!this.canCoexist(cat1, cat2)) {
+                        continue;
+                    }
+                    const edgeKey = `${cat1}|${cat2}`;
+                    const wordCount = customEdges.get(edgeKey) || 0;
+                    if (wordCount > 0) {
+                        graph.get(cat1).add(cat2);
+                    }
+                }
+            }
+        }
+        return graph;
     }
 
     // Find valid category combinations using graph traversal
@@ -436,12 +540,58 @@ class CategoryGraph {
                         console.log(`Rows: ${rowCategories.join(', ')}`);
                         console.log(`Columns: ${columnCategories.join(', ')}`);
 
-                        // Stop if we found enough combinations
-                        if (combinations.length >= 1000) {
-                            process.stdout.write(createLoadingBar(totalNodes, totalNodes, 50, 'Graph Traversal') + '\n');
-                            console.log(`\nFound ${combinations.length} combinations, stopping search`);
-                            return combinations;
+                        // Continue searching for ALL combinations
+                        // No limit - find everything
+                    }
+                }
+            }
+        }
+
+        // Also try to find combinations with fewer connections (for almost valid combinations)
+        console.log('\nNow looking for combinations with fewer connections (almost valid)...');
+
+        for (const startCategory of sortedCategories.slice(0, 50)) { // Limit to first 50 for speed
+            // Try this category as a row category
+            const rowCategories = [startCategory];
+            const connectedCategories = new Set(graph.get(startCategory) || []);
+
+            // Find 3 more row categories with relaxed connection requirements
+            const additionalRows = this.findAdditionalRowCategoriesRelaxed(graph, rowCategories, connectedCategories, sortedCategories);
+
+            if (additionalRows.length >= 3) {
+                rowCategories.push(...additionalRows.slice(0, 3));
+
+                // Check if all row categories can be used together
+                if (!this.canUseCategoriesTogether(rowCategories)) {
+                    continue;
+                }
+
+                const allConnectedCategories = this.getIntersectionOfConnections(graph, rowCategories);
+
+                if (allConnectedCategories.size >= 2) { // Relaxed requirement
+                    const columnCategories = this.findColumnCategories(graph, rowCategories, allConnectedCategories, sortedCategories);
+
+                    if (columnCategories.length === 4) {
+                        if (!this.canUseCategoriesTogether(columnCategories)) {
+                            continue;
                         }
+
+                        const allCategories = [...rowCategories, ...columnCategories];
+                        if (!this.canUseCategoriesTogether(allCategories)) {
+                            continue;
+                        }
+
+                        combinations.push({
+                            rowCategories: rowCategories,
+                            colCategories: columnCategories
+                        });
+
+                        console.log(`Found potential combination #${combinations.length}!`);
+                        console.log(`Rows: ${rowCategories.join(', ')}`);
+                        console.log(`Columns: ${columnCategories.join(', ')}`);
+
+                        // Continue searching for ALL combinations
+                        // No limit - find everything
                     }
                 }
             }
@@ -450,6 +600,66 @@ class CategoryGraph {
         // Final progress update
         process.stdout.write(createLoadingBar(totalNodes, totalNodes, 50, 'Graph Traversal') + '\n');
         console.log(`Found ${combinations.length} potential category combinations`);
+        return combinations;
+    }
+
+    // Silent version of findValidCategoryCombinations (for the edge patching phase)
+    findValidCategoryCombinationsSilent(graph, sortedCategories) {
+        const combinations = [];
+        let processedNodes = 0;
+        const totalNodes = sortedCategories.length;
+
+        for (const startCategory of sortedCategories) {
+            processedNodes++;
+
+            // Try this category as a row category
+            const rowCategories = [startCategory];
+            const connectedCategories = new Set(graph.get(startCategory) || []);
+
+            // Find 3 more row categories that are connected to all column categories
+            const additionalRows = this.findAdditionalRowCategoriesSilent(graph, rowCategories, connectedCategories, sortedCategories);
+
+            if (additionalRows.length >= 3) {
+                // We have 4 row categories, now find 4 column categories
+                rowCategories.push(...additionalRows.slice(0, 3));
+
+                // Check if all row categories can be used together
+                if (!this.canUseCategoriesTogether(rowCategories)) {
+                    continue;
+                }
+
+                const allConnectedCategories = this.getIntersectionOfConnections(graph, rowCategories);
+
+                if (allConnectedCategories.size >= 4) {
+                    // Find 4 column categories from the connected ones
+                    const columnCategories = this.findColumnCategoriesSilent(graph, rowCategories, allConnectedCategories, sortedCategories);
+
+                    if (columnCategories.length === 4) {
+                        // Check if all column categories can be used together
+                        if (!this.canUseCategoriesTogether(columnCategories)) {
+                            continue;
+                        }
+
+                        // Check if row and column categories can be used together
+                        const allCategories = [...rowCategories, ...columnCategories];
+                        if (!this.canUseCategoriesTogether(allCategories)) {
+                            continue;
+                        }
+
+                        combinations.push({
+                            rowCategories: rowCategories,
+                            colCategories: columnCategories
+                        });
+
+                        // Stop if we found enough combinations
+                        if (combinations.length >= 5000) {
+                            return combinations;
+                        }
+                    }
+                }
+            }
+        }
+
         return combinations;
     }
 
@@ -481,6 +691,64 @@ class CategoryGraph {
             }
         }
 
+        return additionalRows;
+    }
+
+    // Silent version for edge patching phase
+    findAdditionalRowCategoriesSilent(graph, currentRows, connectedCategories, sortedCategories) {
+        const additionalRows = [];
+        const requiredConnections = Math.max(1, Math.floor(connectedCategories.size * 0.5));
+
+        for (const category of sortedCategories) {
+            if (currentRows.includes(category)) continue;
+
+            const categoryConnections = graph.get(category) || new Set();
+            let connectionCount = 0;
+
+            for (const connectedCat of connectedCategories) {
+                if (categoryConnections.has(connectedCat)) {
+                    connectionCount++;
+                }
+            }
+
+            if (connectionCount >= requiredConnections) {
+                additionalRows.push(category);
+                if (additionalRows.length >= 3) break;
+            }
+        }
+
+        return additionalRows;
+    }
+
+    // Find additional row categories with relaxed connection requirements (for almost valid combinations)
+    findAdditionalRowCategoriesRelaxed(graph, currentRows, connectedCategories, sortedCategories) {
+        const additionalRows = [];
+        const requiredConnections = Math.max(1, Math.floor(connectedCategories.size * 0.3)); // More relaxed: 30% of connections
+
+        console.log(`Looking for row categories with at least ${requiredConnections} connections (relaxed, out of ${connectedCategories.size} total)`);
+
+        for (const category of sortedCategories) {
+            if (currentRows.includes(category)) continue;
+
+            // Check if this category is connected to enough of the connected categories
+            const categoryConnections = graph.get(category) || new Set();
+            let connectionCount = 0;
+
+            for (const connectedCat of connectedCategories) {
+                if (categoryConnections.has(connectedCat)) {
+                    connectionCount++;
+                }
+            }
+
+            // If this category is connected to enough potential column categories, it's a good row candidate
+            if (connectionCount >= requiredConnections) {
+                additionalRows.push(category);
+                console.log(`  ${category}: ${connectionCount}/${connectedCategories.size} connections`);
+                if (additionalRows.length >= 3) break; // We only need 3 more
+            }
+        }
+
+        console.log(`Found ${additionalRows.length} additional row categories (relaxed): ${additionalRows.join(', ')}`);
         return additionalRows;
     }
 
@@ -523,6 +791,31 @@ class CategoryGraph {
             // Check if this candidate has good connections to row categories
             const connections = this.countConnectionsToRows(graph, candidate, rowCategories);
             if (connections >= 2) { // Relax requirement to at least 2 connections
+                columnCategories.push(candidate);
+            }
+        }
+
+        return columnCategories.slice(0, 4);
+    }
+
+    // Silent version for edge patching phase
+    findColumnCategoriesSilent(graph, rowCategories, connectedCategories, sortedCategories) {
+        const columnCandidates = Array.from(connectedCategories);
+        const columnCategories = [];
+
+        // Sort candidates by number of connections to row categories
+        columnCandidates.sort((a, b) => {
+            const aConnections = this.countConnectionsToRows(graph, a, rowCategories);
+            const bConnections = this.countConnectionsToRows(graph, b, rowCategories);
+            return bConnections - aConnections;
+        });
+
+        // Take the first 4 that have at least 2 connections to row categories
+        for (const candidate of columnCandidates) {
+            if (columnCategories.length >= 4) break;
+
+            const connections = this.countConnectionsToRows(graph, candidate, rowCategories);
+            if (connections >= 2) {
                 columnCategories.push(candidate);
             }
         }
@@ -910,20 +1203,34 @@ class PuzzleSolver {
     tryValidCategoryCombinations() {
         console.log('Starting puzzle solver with graph theory pre-filtering...');
 
-        // Get valid category combinations using graph theory
-        const validCombinations = this.graph.getValidCategoryCombinations();
+        // Get valid and almost valid category combinations using graph theory
+        const allCombinations = this.graph.getValidCategoryCombinations();
 
-        if (validCombinations.length === 0) {
-            console.log('No valid category combinations found!');
+        // Separate valid from almost valid combinations
+        const validCombinations = [];
+        const almostValidCombinations = [];
+
+        for (const combination of allCombinations) {
+            if (this.graph.canFormValidPuzzle(combination.rowCategories, combination.colCategories)) {
+                validCombinations.push(combination);
+            } else if (this.graph.isAlmostValid(combination.rowCategories, combination.colCategories) || combination.missingEdges) {
+                // Include combinations that are almost valid OR have missing edges from edge trials
+                almostValidCombinations.push(combination);
+            }
+        }
+
+        if (allCombinations.length === 0) {
+            console.log('No category combinations found!');
             return;
         }
 
-        console.log(`Trying ${validCombinations.length} valid category combinations...`);
+        console.log(`Trying ${validCombinations.length} valid combinations and ${almostValidCombinations.length} almost valid combinations...`);
 
         let currentCombination = 0;
-        const totalCombinations = validCombinations.length;
+        const totalCombinations = allCombinations.length;
         let successfulCombinations = 0;
 
+        // First try valid combinations
         for (const combination of validCombinations) {
             currentCombination++;
             const puzzlesBefore = this.validPuzzles.length;
@@ -944,14 +1251,35 @@ class PuzzleSolver {
             const puzzlesAfter = this.validPuzzles.length;
             if (puzzlesAfter > puzzlesBefore) {
                 successfulCombinations++;
-                console.log(`\n✓ Found puzzle for combination ${currentCombination}:`);
-                console.log(`  Rows: ${combination.rowCategories.join(', ')}`);
-                console.log(`  Cols: ${combination.colCategories.join(', ')}`);
-            } else {
-                console.log(`\n✗ No puzzle found for combination ${currentCombination}:`);
+                console.log(`\n✓ Found puzzle for valid combination ${currentCombination}:`);
                 console.log(`  Rows: ${combination.rowCategories.join(', ')}`);
                 console.log(`  Cols: ${combination.colCategories.join(', ')}`);
             }
+
+            if (this.iterations > this.maxIterations && this.maxIterations > 0) {
+                console.log('\nStopping due to max iterations');
+                return;
+            }
+        }
+
+        // Then try almost valid combinations to collect missing word pairs
+        console.log(`\nNow trying ${almostValidCombinations.length} almost valid combinations to collect missing word pairs...`);
+
+        for (const combination of almostValidCombinations) {
+            currentCombination++;
+
+            // Update progress every combination
+            const progress = (currentCombination / totalCombinations * 100).toFixed(2);
+            const barLength = 50;
+            const filledLength = Math.floor((currentCombination / totalCombinations) * barLength);
+            const bar = '█'.repeat(filledLength) + '░'.repeat(barLength - filledLength);
+            process.stdout.write(`\rPuzzle Solving: [${bar}] ${progress}% (${currentCombination}/${totalCombinations}) | Puzzles: ${this.validPuzzles.length} | Iterations: ${this.iterations.toLocaleString()}`);
+
+            // Initialize empty grid
+            const grid = Array(4).fill().map(() => Array(4).fill(null));
+
+            // Try to solve with these category assignments (will fail but collect missing pairs)
+            this.solve(grid, combination.rowCategories, combination.colCategories);
 
             if (this.iterations > this.maxIterations && this.maxIterations > 0) {
                 console.log('\nStopping due to max iterations');
@@ -963,7 +1291,8 @@ class PuzzleSolver {
         const progress = '100';
         const bar = '█'.repeat(50);
         process.stdout.write(`\rPuzzle Solving: [${bar}] ${progress}% (${currentCombination}/${totalCombinations}) | Puzzles: ${this.validPuzzles.length} | Iterations: ${this.iterations.toLocaleString()}\n`);
-        console.log(`\nSummary: Found ${successfulCombinations} puzzles out of ${totalCombinations} combinations`);
+        console.log(`\nSummary: Found ${successfulCombinations} puzzles out of ${validCombinations.length} valid combinations`);
+        console.log(`Collected missing word pairs from ${almostValidCombinations.length} almost valid combinations`);
     }
 
     // Save results to files
