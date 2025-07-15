@@ -585,6 +585,7 @@
   "Colors": [
     "Aurora",
     "Blue",
+    "Buttercup",
     "Cobalt",
     "Copper",
     "Coral",
@@ -2083,7 +2084,8 @@
   "Ends with LLE": [
     "Belle",
     "Marseille",
-    "Nashville"
+    "Nashville",
+    "Ratatouille"
   ],
   "Ends with LLO": [
     "Apollo",
@@ -2620,6 +2622,9 @@
   ],
   "Ends with RAM": [
     "Ram"
+  ],
+  "Ends with RAT": [
+    "Rat"
   ],
   "Ends with RAY": [
     "Ray",
@@ -3289,6 +3294,7 @@
     "Pickle",
     "Pie",
     "Ranch",
+    "Ratatouille",
     "Red Velvet",
     "Roma",
     "Salmon",
@@ -3651,6 +3657,7 @@
     "Panther",
     "Polar Bear",
     "Rabbit",
+    "Rat",
     "Rhino",
     "Sabretooth",
     "Seal",
@@ -3827,6 +3834,7 @@
     "Pokemon",
     "Pompeii",
     "Poseidon",
+    "Ratatouille",
     "Saw",
     "Silver",
     "Snowman",
@@ -4228,6 +4236,7 @@
     "Venus"
   ],
   "Plant-Based Colors": [
+    "Buttercup",
     "Jade",
     "Olive",
     "Orange",
@@ -6555,6 +6564,10 @@
   "Starts with RAP": [
     "Raptor"
   ],
+  "Starts with RAT": [
+    "Rat",
+    "Ratatouille"
+  ],
   "Starts with RAV": [
     "Raven"
   ],
@@ -7484,6 +7497,7 @@
     "Rabbit",
     "Ram",
     "Raptor",
+    "Rat",
     "Raven",
     "Ray",
     "Rhino",

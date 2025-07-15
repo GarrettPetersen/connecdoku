@@ -133,12 +133,10 @@ class CategoryGraph {
 
     // Check if two categories have significant overlap (more than 50% of words in common)
     hasSignificantOverlap(cat1, cat2) {
-        if (cat1 === cat2) return true;
+        if (cat1 === cat2) return false;
 
         const words1 = new Set(categoryToWords[cat1] || []);
         const words2 = new Set(categoryToWords[cat2] || []);
-
-        if (words1.size === 0 || words2.size === 0) return false;
 
         let overlapCount = 0;
         for (const word of words1) {
@@ -147,25 +145,19 @@ class CategoryGraph {
             }
         }
 
-        // If more than 50% of words overlap, consider them significantly overlapping
-        const overlapPercentage = overlapCount / Math.min(words1.size, words2.size);
-        return overlapPercentage > 0.5;
+        // Any overlap is significant (changed from 50% threshold)
+        return overlapCount > 0;
     }
 
-    // Check if a set of categories can be used together in a puzzle
+    // Check if categories can be used together in a puzzle
     canUseCategoriesTogether(categories) {
         for (let i = 0; i < categories.length; i++) {
             for (let j = i + 1; j < categories.length; j++) {
                 const cat1 = categories[i];
                 const cat2 = categories[j];
 
-                // Check for strict subset relationships
+                // Disallow strict subset relationships only
                 if (!this.canCoexist(cat1, cat2)) {
-                    return false;
-                }
-
-                // Check for significant overlap
-                if (this.hasSignificantOverlap(cat1, cat2)) {
                     return false;
                 }
             }
@@ -751,10 +743,25 @@ class PuzzleSolver {
                 }
             }
 
+            // Find what other categories the overlapping words belong to
+            const wordCategoryConflicts = {};
+            for (const word of overlappingWords) {
+                const wordCategories = wordsData[word] || [];
+                const otherCategories = wordCategories.filter(cat =>
+                    cat !== cat1 && cat !== cat2 &&
+                    !cat.startsWith('Starts with ') &&
+                    !cat.startsWith('Ends with ')
+                );
+                if (otherCategories.length > 0) {
+                    wordCategoryConflicts[word] = otherCategories;
+                }
+            }
+
             this.missingPairs.set(pair, {
                 count: 0,
                 maxDepth: 0,
-                overlappingWords: overlappingWords
+                overlappingWords: overlappingWords,
+                wordCategoryConflicts: wordCategoryConflicts
             });
         }
         const entry = this.missingPairs.get(pair);
@@ -928,7 +935,8 @@ class PuzzleSolver {
             categories: pair.split('|'),
             count: data.count,
             maxDepth: data.maxDepth,
-            overlappingWords: data.overlappingWords
+            overlappingWords: data.overlappingWords,
+            wordCategoryConflicts: data.wordCategoryConflicts
         })).sort((a, b) => b.maxDepth - a.maxDepth); // Sort by depth (closest to completion first)
 
         fs.writeFileSync('missing_word_pairs.json', JSON.stringify(missingPairsArray, null, 2));

@@ -1,1 +1,589 @@
-[]
+[
+  {
+    "categories": [
+      "Purple Things",
+      "Ships"
+    ],
+    "count": 120,
+    "maxDepth": 15,
+    "overlappingWords": [
+      "Violet"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Colors",
+        "Female Names",
+        "Flower-class Corvettes",
+        "Flowers",
+        "Plant-Based Colors"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Plant-Based Colors",
+      "Ships"
+    ],
+    "count": 1392,
+    "maxDepth": 14,
+    "overlappingWords": [
+      "Violet",
+      "Buttercup"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Colors",
+        "Female Names",
+        "Flower-class Corvettes",
+        "Flowers",
+        "Purple Things"
+      ],
+      "Buttercup": [
+        "Female Names",
+        "Flower-class Corvettes",
+        "Flowers",
+        "Plants",
+        "Colors"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Colors",
+      "Ships"
+    ],
+    "count": 1392,
+    "maxDepth": 13,
+    "overlappingWords": [
+      "Violet",
+      "Iris",
+      "Buttercup"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Female Names",
+        "Flower-class Corvettes",
+        "Flowers",
+        "Plant-Based Colors",
+        "Purple Things"
+      ],
+      "Iris": [
+        "Female Names",
+        "Flowers",
+        "Greek Gods",
+        "Plants"
+      ],
+      "Buttercup": [
+        "Female Names",
+        "Flower-class Corvettes",
+        "Flowers",
+        "Plants",
+        "Plant-Based Colors"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Birds",
+      "Red Things"
+    ],
+    "count": 1558,
+    "maxDepth": 13,
+    "overlappingWords": [
+      "Phoenix",
+      "Cardinal"
+    ],
+    "wordCategoryConflicts": {
+      "Phoenix": [
+        "Cities in USA",
+        "Magic",
+        "Marvel Characters",
+        "Mythical Creatures",
+        "Place Names",
+        "State Capitals",
+        "Superheroes",
+        "Video Games",
+        "X-Men Characters"
+      ],
+      "Cardinal": [
+        "Types of Animals",
+        "NFL Teams",
+        "Religious Titles",
+        "MLB Teams"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Birds",
+      "Mythical Creatures"
+    ],
+    "count": 153,
+    "maxDepth": 12,
+    "overlappingWords": [
+      "Phoenix"
+    ],
+    "wordCategoryConflicts": {
+      "Phoenix": [
+        "Cities in USA",
+        "Magic",
+        "Marvel Characters",
+        "Place Names",
+        "Red Things",
+        "State Capitals",
+        "Superheroes",
+        "Video Games",
+        "X-Men Characters"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Birds",
+      "Superheroes"
+    ],
+    "count": 1366,
+    "maxDepth": 12,
+    "overlappingWords": [
+      "Phoenix"
+    ],
+    "wordCategoryConflicts": {
+      "Phoenix": [
+        "Cities in USA",
+        "Magic",
+        "Marvel Characters",
+        "Mythical Creatures",
+        "Place Names",
+        "Red Things",
+        "State Capitals",
+        "Video Games",
+        "X-Men Characters"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Female Names",
+      "Purple Things"
+    ],
+    "count": 1084,
+    "maxDepth": 11,
+    "overlappingWords": [
+      "Violet"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Colors",
+        "Flower-class Corvettes",
+        "Flowers",
+        "Plant-Based Colors",
+        "Ships"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Black Things",
+      "Marvel Characters"
+    ],
+    "count": 15,
+    "maxDepth": 11,
+    "overlappingWords": [
+      "Black Widow",
+      "Venom"
+    ],
+    "wordCategoryConflicts": {
+      "Black Widow": [
+        "Types of Animals",
+        "Avengers",
+        "Spiders",
+        "Superheroes"
+      ],
+      "Venom": [
+        "Spider-Verse Villains",
+        "Supervillains"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Foods",
+      "Trees"
+    ],
+    "count": 56,
+    "maxDepth": 11,
+    "overlappingWords": [
+      "Olive"
+    ],
+    "wordCategoryConflicts": {
+      "Olive": [
+        "Colors",
+        "Female Names",
+        "Green Things",
+        "Plant-Based Colors",
+        "Plants",
+        "Shades of Green"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Female Names",
+      "Plant-Based Colors"
+    ],
+    "count": 144,
+    "maxDepth": 10,
+    "overlappingWords": [
+      "Violet",
+      "Olive",
+      "Buttercup"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Colors",
+        "Flower-class Corvettes",
+        "Flowers",
+        "Purple Things",
+        "Ships"
+      ],
+      "Olive": [
+        "Colors",
+        "Foods",
+        "Green Things",
+        "Plants",
+        "Shades of Green",
+        "Trees"
+      ],
+      "Buttercup": [
+        "Flower-class Corvettes",
+        "Flowers",
+        "Plants",
+        "Ships",
+        "Colors"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Foods",
+      "Plants"
+    ],
+    "count": 28,
+    "maxDepth": 10,
+    "overlappingWords": [
+      "Olive",
+      "Pepper"
+    ],
+    "wordCategoryConflicts": {
+      "Olive": [
+        "Colors",
+        "Female Names",
+        "Green Things",
+        "Plant-Based Colors",
+        "Shades of Green",
+        "Trees"
+      ],
+      "Pepper": [
+        "Colors",
+        "Spices & Herbs"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Foods",
+      "Green Things"
+    ],
+    "count": 4,
+    "maxDepth": 6,
+    "overlappingWords": [
+      "Olive"
+    ],
+    "wordCategoryConflicts": {
+      "Olive": [
+        "Colors",
+        "Female Names",
+        "Plant-Based Colors",
+        "Plants",
+        "Shades of Green",
+        "Trees"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Foods",
+      "Plant-Based Colors"
+    ],
+    "count": 60,
+    "maxDepth": 6,
+    "overlappingWords": [
+      "Orange",
+      "Olive"
+    ],
+    "wordCategoryConflicts": {
+      "Orange": [
+        "Colors",
+        "Companies",
+        "Fruits",
+        "Place Names"
+      ],
+      "Olive": [
+        "Colors",
+        "Female Names",
+        "Green Things",
+        "Plants",
+        "Shades of Green",
+        "Trees"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Red Things",
+      "Types of Animals"
+    ],
+    "count": 6,
+    "maxDepth": 6,
+    "overlappingWords": [
+      "Cardinal"
+    ],
+    "wordCategoryConflicts": {
+      "Cardinal": [
+        "Birds",
+        "NFL Teams",
+        "Religious Titles",
+        "MLB Teams"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Colors",
+      "Place Names"
+    ],
+    "count": 21,
+    "maxDepth": 5,
+    "overlappingWords": [
+      "Orange"
+    ],
+    "wordCategoryConflicts": {
+      "Orange": [
+        "Companies",
+        "Foods",
+        "Fruits",
+        "Plant-Based Colors"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Airships",
+      "Cities in Italy"
+    ],
+    "count": 4,
+    "maxDepth": 3,
+    "overlappingWords": [
+      "Roma"
+    ],
+    "wordCategoryConflicts": {
+      "Roma": [
+        "Ancient Cities",
+        "Burger Toppings",
+        "Capitals",
+        "Foods",
+        "Ingredients in Cobb Salad",
+        "Ingredients in a BLT",
+        "Place Names",
+        "Roman Cities",
+        "Roman Empire"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Colors",
+      "Green Things"
+    ],
+    "count": 5,
+    "maxDepth": 3,
+    "overlappingWords": [
+      "Olive"
+    ],
+    "wordCategoryConflicts": {
+      "Olive": [
+        "Female Names",
+        "Foods",
+        "Plant-Based Colors",
+        "Plants",
+        "Shades of Green",
+        "Trees"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Airships",
+      "Roman Empire"
+    ],
+    "count": 2,
+    "maxDepth": 3,
+    "overlappingWords": [
+      "Roma"
+    ],
+    "wordCategoryConflicts": {
+      "Roma": [
+        "Ancient Cities",
+        "Burger Toppings",
+        "Capitals",
+        "Cities in Italy",
+        "Foods",
+        "Ingredients in Cobb Salad",
+        "Ingredients in a BLT",
+        "Place Names",
+        "Roman Cities"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Plant-Based Colors",
+      "Trees"
+    ],
+    "count": 7,
+    "maxDepth": 3,
+    "overlappingWords": [
+      "Olive"
+    ],
+    "wordCategoryConflicts": {
+      "Olive": [
+        "Colors",
+        "Female Names",
+        "Foods",
+        "Green Things",
+        "Plants",
+        "Shades of Green"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Card Games",
+      "Superheroes"
+    ],
+    "count": 1,
+    "maxDepth": 2,
+    "overlappingWords": [
+      "Gambit"
+    ],
+    "wordCategoryConflicts": {
+      "Gambit": [
+        "Marvel Characters",
+        "Red Things",
+        "X-Men Characters"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Cities in Italy",
+      "Disasters"
+    ],
+    "count": 2,
+    "maxDepth": 2,
+    "overlappingWords": [
+      "Pompeii"
+    ],
+    "wordCategoryConflicts": {
+      "Pompeii": [
+        "Ancient Cities",
+        "Disaster Movies",
+        "Movies",
+        "Place Names",
+        "Roman Cities",
+        "Roman Empire",
+        "Volcanoes"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Birds",
+      "White Things"
+    ],
+    "count": 1,
+    "maxDepth": 2,
+    "overlappingWords": [
+      "Swan"
+    ],
+    "wordCategoryConflicts": {
+      "Swan": [
+        "Types of Animals"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Religious Terms",
+      "Superheroes"
+    ],
+    "count": 1,
+    "maxDepth": 2,
+    "overlappingWords": [
+      "Angel"
+    ],
+    "wordCategoryConflicts": {
+      "Angel": [
+        "Marvel Characters",
+        "Mythical Creatures",
+        "The Good Place",
+        "X-Men Characters",
+        "MLB Teams"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Superheroes",
+      "The Good Place"
+    ],
+    "count": 1,
+    "maxDepth": 2,
+    "overlappingWords": [
+      "Angel"
+    ],
+    "wordCategoryConflicts": {
+      "Angel": [
+        "Marvel Characters",
+        "Mythical Creatures",
+        "Religious Terms",
+        "X-Men Characters",
+        "MLB Teams"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Magic",
+      "Superheroes"
+    ],
+    "count": 1,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "Phoenix"
+    ],
+    "wordCategoryConflicts": {
+      "Phoenix": [
+        "Birds",
+        "Cities in USA",
+        "Marvel Characters",
+        "Mythical Creatures",
+        "Place Names",
+        "Red Things",
+        "State Capitals",
+        "Video Games",
+        "X-Men Characters"
+      ]
+    }
+  }
+]
