@@ -950,7 +950,11 @@
   "Red": [
     "Colors",
     "Ends with RED",
-    "Starts with RED"
+    "Starts with RED",
+    "Camera Companies",
+    "Companies",
+    "Photography Terms",
+    "Red Things"
   ],
   "Orange": [
     "Colors",
@@ -970,7 +974,8 @@
   "Green": [
     "Colors",
     "Ends with EEN",
-    "Starts with GRE"
+    "Starts with GRE",
+    "Golf Terms"
   ],
   "Blue": [
     "Colors",
@@ -2167,7 +2172,8 @@
     "Historical Weapons",
     "Sports Equipment",
     "Starts with CLU",
-    "Wooden Objects"
+    "Wooden Objects",
+    "Golf Terms"
   ],
   "Halberd": [
     "Ends with ERD",
@@ -5456,14 +5462,6 @@
     "Starts with SON",
     "Tech Companies"
   ],
-  "RED": [
-    "Camera Companies",
-    "Companies",
-    "Ends with RED",
-    "Photography Terms",
-    "Red Things",
-    "Starts with RED"
-  ],
   "Olympus": [
     "Camera Companies",
     "Companies",
@@ -6699,5 +6697,17 @@
     "Starts with BLA",
     "Superheroes",
     "Types of Animals"
+  ],
+  "Nick Fury": [
+    "Avengers",
+    "Black Things",
+    "Ends with URY",
+    "Marvel Characters",
+    "Starts with NIC"
+  ],
+  "Greenland": [
+    "Ends with AND",
+    "Place Names",
+    "Starts with GRE"
   ]
 }

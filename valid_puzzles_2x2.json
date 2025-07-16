@@ -1,0 +1,1140 @@
+{
+  "gridSize": "2x2",
+  "totalPuzzles": 54,
+  "puzzles": [
+    {
+      "grid": [
+        [
+          "Olive",
+          "Jean Grey"
+        ],
+        [
+          "Roma",
+          "Phoenix"
+        ]
+      ],
+      "rowCategories": [
+        "Female Names",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Foods",
+        "Marvel Characters"
+      ],
+      "hash": "Olive|Jean Grey||Roma|Phoenix||Female Names|Place Names|Foods|Marvel Characters"
+    },
+    {
+      "grid": [
+        [
+          "Birch",
+          "Coral"
+        ],
+        [
+          "Roma",
+          "Crab"
+        ]
+      ],
+      "rowCategories": [
+        "Plants",
+        "Foods"
+      ],
+      "colCategories": [
+        "Place Names",
+        "Types of Animals"
+      ],
+      "hash": "Birch|Coral||Roma|Crab||Plants|Foods|Place Names|Types of Animals"
+    },
+    {
+      "grid": [
+        [
+          "Fuji",
+          "Everest"
+        ],
+        [
+          "Orange",
+          "Pompeii"
+        ]
+      ],
+      "rowCategories": [
+        "Mountains",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Companies",
+        "Movies"
+      ],
+      "hash": "Fuji|Everest||Orange|Pompeii||Mountains|Place Names|Companies|Movies"
+    },
+    {
+      "grid": [
+        [
+          "Olive",
+          "Hulk"
+        ],
+        [
+          "Roma",
+          "Phoenix"
+        ]
+      ],
+      "rowCategories": [
+        "Green Things",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Foods",
+        "Marvel Characters"
+      ],
+      "hash": "Olive|Hulk||Roma|Phoenix||Green Things|Place Names|Foods|Marvel Characters"
+    },
+    {
+      "grid": [
+        [
+          "Venom",
+          "Batman"
+        ],
+        [
+          "Doctor Octopus",
+          "Robin"
+        ]
+      ],
+      "rowCategories": [
+        "Black Things",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Marvel Characters",
+        "Superheroes"
+      ],
+      "hash": "Venom|Batman||Doctor Octopus|Robin||Black Things|Types of Animals|Marvel Characters|Superheroes"
+    },
+    {
+      "grid": [
+        [
+          "Olympus",
+          "Iris"
+        ],
+        [
+          "Orange",
+          "Santa Maria"
+        ]
+      ],
+      "rowCategories": [
+        "Greek Gods",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Companies",
+        "Female Names"
+      ],
+      "hash": "Olympus|Iris||Orange|Santa Maria||Greek Gods|Place Names|Companies|Female Names"
+    },
+    {
+      "grid": [
+        [
+          "Daisy",
+          "Rose"
+        ],
+        [
+          "Santa Maria",
+          "Orange"
+        ]
+      ],
+      "rowCategories": [
+        "Flowers",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Female Names",
+        "Colors"
+      ],
+      "hash": "Daisy|Rose||Santa Maria|Orange||Flowers|Place Names|Female Names|Colors"
+    },
+    {
+      "grid": [
+        [
+          "Santa Maria",
+          "John"
+        ],
+        [
+          "Roma",
+          "Curry"
+        ]
+      ],
+      "rowCategories": [
+        "Saints",
+        "Foods"
+      ],
+      "colCategories": [
+        "Place Names",
+        "Male Names"
+      ],
+      "hash": "Santa Maria|John||Roma|Curry||Saints|Foods|Place Names|Male Names"
+    },
+    {
+      "grid": [
+        [
+          "Swan",
+          "Egg"
+        ],
+        [
+          "Cardinal",
+          "Tomato"
+        ]
+      ],
+      "rowCategories": [
+        "White Things",
+        "Red Things"
+      ],
+      "colCategories": [
+        "Types of Animals",
+        "Foods"
+      ],
+      "hash": "Swan|Egg||Cardinal|Tomato||White Things|Red Things|Types of Animals|Foods"
+    },
+    {
+      "grid": [
+        [
+          "Tesla",
+          "Graf Zeppelin"
+        ],
+        [
+          "Orange",
+          "Bismarck"
+        ]
+      ],
+      "rowCategories": [
+        "Inventors",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Companies",
+        "Ships"
+      ],
+      "hash": "Tesla|Graf Zeppelin||Orange|Bismarck||Inventors|Place Names|Companies|Ships"
+    },
+    {
+      "grid": [
+        [
+          "Steel",
+          "Film"
+        ],
+        [
+          "Orange",
+          "Ratatouille"
+        ]
+      ],
+      "rowCategories": [
+        "Materials",
+        "Foods"
+      ],
+      "colCategories": [
+        "Colors",
+        "Movies"
+      ],
+      "hash": "Steel|Film||Orange|Ratatouille||Materials|Foods|Colors|Movies"
+    },
+    {
+      "grid": [
+        [
+          "Eagle",
+          "Lion"
+        ],
+        [
+          "Phoenix",
+          "Wolverine"
+        ]
+      ],
+      "rowCategories": [
+        "NFL Teams",
+        "Marvel Characters"
+      ],
+      "colCategories": [
+        "Birds",
+        "Mammals"
+      ],
+      "hash": "Eagle|Lion||Phoenix|Wolverine||NFL Teams|Marvel Characters|Birds|Mammals"
+    },
+    {
+      "grid": [
+        [
+          "Milk",
+          "Kraken"
+        ],
+        [
+          "Crab",
+          "Basilisk"
+        ]
+      ],
+      "rowCategories": [
+        "Drinks",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Foods",
+        "Mythical Creatures"
+      ],
+      "hash": "Milk|Kraken||Crab|Basilisk||Drinks|Types of Animals|Foods|Mythical Creatures"
+    },
+    {
+      "grid": [
+        [
+          "Spice",
+          "Gold"
+        ],
+        [
+          "Ratatouille",
+          "Silver"
+        ]
+      ],
+      "rowCategories": [
+        "Money Slang",
+        "Movies"
+      ],
+      "colCategories": [
+        "Foods",
+        "Elements"
+      ],
+      "hash": "Spice|Gold||Ratatouille|Silver||Money Slang|Movies|Foods|Elements"
+    },
+    {
+      "grid": [
+        [
+          "Animal",
+          "Grover"
+        ],
+        [
+          "Crab",
+          "Curry"
+        ]
+      ],
+      "rowCategories": [
+        "Muppet Characters",
+        "Foods"
+      ],
+      "colCategories": [
+        "Types of Animals",
+        "Male Names"
+      ],
+      "hash": "Animal|Grover||Crab|Curry||Muppet Characters|Foods|Types of Animals|Male Names"
+    },
+    {
+      "grid": [
+        [
+          "Canon",
+          "Angel"
+        ],
+        [
+          "Orange",
+          "Phoenix"
+        ]
+      ],
+      "rowCategories": [
+        "Religious Terms",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Companies",
+        "Marvel Characters"
+      ],
+      "hash": "Canon|Angel||Orange|Phoenix||Religious Terms|Place Names|Companies|Marvel Characters"
+    },
+    {
+      "grid": [
+        [
+          "AC",
+          "Cooler"
+        ],
+        [
+          "IT",
+          "Saw"
+        ]
+      ],
+      "rowCategories": [
+        "Cooling Devices",
+        "Movies"
+      ],
+      "colCategories": [
+        "Acronyms",
+        "Tools"
+      ],
+      "hash": "AC|Cooler||IT|Saw||Cooling Devices|Movies|Acronyms|Tools"
+    },
+    {
+      "grid": [
+        [
+          "Animal",
+          "Grover"
+        ],
+        [
+          "Crab",
+          "Curry"
+        ]
+      ],
+      "rowCategories": [
+        "Puppet Characters",
+        "Foods"
+      ],
+      "colCategories": [
+        "Types of Animals",
+        "Male Names"
+      ],
+      "hash": "Animal|Grover||Crab|Curry||Puppet Characters|Foods|Types of Animals|Male Names"
+    },
+    {
+      "grid": [
+        [
+          "Romeo",
+          "Cleopatra"
+        ],
+        [
+          "Curry",
+          "Olive"
+        ]
+      ],
+      "rowCategories": [
+        "Shakespeare Characters",
+        "Foods"
+      ],
+      "colCategories": [
+        "Male Names",
+        "Female Names"
+      ],
+      "hash": "Romeo|Cleopatra||Curry|Olive||Shakespeare Characters|Foods|Male Names|Female Names"
+    },
+    {
+      "grid": [
+        [
+          "Kirk",
+          "Warrior"
+        ],
+        [
+          "Sam",
+          "Buck"
+        ]
+      ],
+      "rowCategories": [
+        "Titles of Rank",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Male Names",
+        "NBA Teams"
+      ],
+      "hash": "Kirk|Warrior||Sam|Buck||Titles of Rank|Types of Animals|Male Names|NBA Teams"
+    },
+    {
+      "grid": [
+        [
+          "RED",
+          "Fuji"
+        ],
+        [
+          "Phoenix",
+          "Amazon"
+        ]
+      ],
+      "rowCategories": [
+        "Camera Companies",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Red Things",
+        "Tech Companies"
+      ],
+      "hash": "RED|Fuji||Phoenix|Amazon||Camera Companies|Place Names|Red Things|Tech Companies"
+    },
+    {
+      "grid": [
+        [
+          "Millennium Falcon",
+          "Enterprise"
+        ],
+        [
+          "Phoenix",
+          "Bismarck"
+        ]
+      ],
+      "rowCategories": [
+        "Fictional Spaceships",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Birds",
+        "Ships"
+      ],
+      "hash": "Millennium Falcon|Enterprise||Phoenix|Bismarck||Fictional Spaceships|Place Names|Birds|Ships"
+    },
+    {
+      "grid": [
+        [
+          "Loki",
+          "Red Riding Hood"
+        ],
+        [
+          "Black Widow",
+          "Crab"
+        ]
+      ],
+      "rowCategories": [
+        "Folklore Figures",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Marvel Characters",
+        "Red Things"
+      ],
+      "hash": "Loki|Red Riding Hood||Black Widow|Crab||Folklore Figures|Types of Animals|Marvel Characters|Red Things"
+    },
+    {
+      "grid": [
+        [
+          "Whale",
+          "Siren"
+        ],
+        [
+          "Black Widow",
+          "Jean Grey"
+        ]
+      ],
+      "rowCategories": [
+        "Sea Monsters",
+        "Marvel Characters"
+      ],
+      "colCategories": [
+        "Types of Animals",
+        "Female Names"
+      ],
+      "hash": "Whale|Siren||Black Widow|Jean Grey||Sea Monsters|Marvel Characters|Types of Animals|Female Names"
+    },
+    {
+      "grid": [
+        [
+          "Gates",
+          "Angel"
+        ],
+        [
+          "Apple",
+          "Phoenix"
+        ]
+      ],
+      "rowCategories": [
+        "The Good Place",
+        "Red Things"
+      ],
+      "colCategories": [
+        "Companies",
+        "Marvel Characters"
+      ],
+      "hash": "Gates|Angel||Apple|Phoenix||The Good Place|Red Things|Companies|Marvel Characters"
+    },
+    {
+      "grid": [
+        [
+          "Red Hood",
+          "Uniform"
+        ],
+        [
+          "Phoenix",
+          "India"
+        ]
+      ],
+      "rowCategories": [
+        "Clothing",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Superheroes",
+        "NATO Phonetic Alphabet"
+      ],
+      "hash": "Red Hood|Uniform||Phoenix|India||Clothing|Place Names|Superheroes|NATO Phonetic Alphabet"
+    },
+    {
+      "grid": [
+        [
+          "Wolverine",
+          "Banana"
+        ],
+        [
+          "Cardinal",
+          "Tomato"
+        ]
+      ],
+      "rowCategories": [
+        "Yellow Things",
+        "Red Things"
+      ],
+      "colCategories": [
+        "Types of Animals",
+        "Foods"
+      ],
+      "hash": "Wolverine|Banana||Cardinal|Tomato||Yellow Things|Red Things|Types of Animals|Foods"
+    },
+    {
+      "grid": [
+        [
+          "Cooler",
+          "Lamp"
+        ],
+        [
+          "Lens",
+          "Camera"
+        ]
+      ],
+      "rowCategories": [
+        "Appliances",
+        "Photography Terms"
+      ],
+      "colCategories": [
+        "Tools",
+        "Electronics"
+      ],
+      "hash": "Cooler|Lamp||Lens|Camera||Appliances|Photography Terms|Tools|Electronics"
+    },
+    {
+      "grid": [
+        [
+          "Jaipur",
+          "Istanbul"
+        ],
+        [
+          "Tokyo",
+          "Venice"
+        ]
+      ],
+      "rowCategories": [
+        "Board Games Named After Places",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Cities in Asia",
+        "Historic Trade Cities"
+      ],
+      "hash": "Jaipur|Istanbul||Tokyo|Venice||Board Games Named After Places|Place Names|Cities in Asia|Historic Trade Cities"
+    },
+    {
+      "grid": [
+        [
+          "Han",
+          "Xia"
+        ],
+        [
+          "Spice",
+          "Red Velvet"
+        ]
+      ],
+      "rowCategories": [
+        "Chinese Dynasties",
+        "Foods"
+      ],
+      "colCategories": [
+        "Star Wars",
+        "K-pop"
+      ],
+      "hash": "Han|Xia||Spice|Red Velvet||Chinese Dynasties|Foods|Star Wars|K-pop"
+    },
+    {
+      "grid": [
+        [
+          "Ranch",
+          "Bronco"
+        ],
+        [
+          "Roma",
+          "Lincoln"
+        ]
+      ],
+      "rowCategories": [
+        "Cowboy Terms",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Foods",
+        "Cars"
+      ],
+      "hash": "Ranch|Bronco||Roma|Lincoln||Cowboy Terms|Place Names|Foods|Cars"
+    },
+    {
+      "grid": [
+        [
+          "Elf",
+          "Magic"
+        ],
+        [
+          "Phoenix",
+          "Texas"
+        ]
+      ],
+      "rowCategories": [
+        "Fantasy",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Mythical Creatures",
+        "Card Games"
+      ],
+      "hash": "Elf|Magic||Phoenix|Texas||Fantasy|Place Names|Mythical Creatures|Card Games"
+    },
+    {
+      "grid": [
+        [
+          "Bond",
+          "Q"
+        ],
+        [
+          "Silver",
+          "C"
+        ]
+      ],
+      "rowCategories": [
+        "James Bond Characters",
+        "Elements"
+      ],
+      "colCategories": [
+        "Movies",
+        "Programming Languages"
+      ],
+      "hash": "Bond|Q||Silver|C||James Bond Characters|Elements|Movies|Programming Languages"
+    },
+    {
+      "grid": [
+        [
+          "Magazine",
+          "Newspaper"
+        ],
+        [
+          "Cobra",
+          "Penguin"
+        ]
+      ],
+      "rowCategories": [
+        "Periodicals",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Weapons",
+        "Black and White"
+      ],
+      "hash": "Magazine|Newspaper||Cobra|Penguin||Periodicals|Types of Animals|Weapons|Black and White"
+    },
+    {
+      "grid": [
+        [
+          "Grape",
+          "Thanos"
+        ],
+        [
+          "Roma",
+          "Phoenix"
+        ]
+      ],
+      "rowCategories": [
+        "Purple Things",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Foods",
+        "Marvel Characters"
+      ],
+      "hash": "Grape|Thanos||Roma|Phoenix||Purple Things|Place Names|Foods|Marvel Characters"
+    },
+    {
+      "grid": [
+        [
+          "Big Bird",
+          "Roosevelt"
+        ],
+        [
+          "Phoenix",
+          "Bismarck"
+        ]
+      ],
+      "rowCategories": [
+        "Sesame Street Characters",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Birds",
+        "National Leaders"
+      ],
+      "hash": "Big Bird|Roosevelt||Phoenix|Bismarck||Sesame Street Characters|Place Names|Birds|National Leaders"
+    },
+    {
+      "grid": [
+        [
+          "IT",
+          "Go"
+        ],
+        [
+          "Silver",
+          "C"
+        ]
+      ],
+      "rowCategories": [
+        "Two-Letter Words",
+        "Elements"
+      ],
+      "colCategories": [
+        "Movies",
+        "Programming Languages"
+      ],
+      "hash": "IT|Go||Silver|C||Two-Letter Words|Elements|Movies|Programming Languages"
+    },
+    {
+      "grid": [
+        [
+          "Panther",
+          "Tiger"
+        ],
+        [
+          "Black Widow",
+          "Angel"
+        ]
+      ],
+      "rowCategories": [
+        "Big Cats",
+        "Marvel Characters"
+      ],
+      "colCategories": [
+        "Black Things",
+        "MLB Teams"
+      ],
+      "hash": "Panther|Tiger||Black Widow|Angel||Big Cats|Marvel Characters|Black Things|MLB Teams"
+    },
+    {
+      "grid": [
+        [
+          "AB",
+          "O"
+        ],
+        [
+          "CNN",
+          "X"
+        ]
+      ],
+      "rowCategories": [
+        "Blood Types",
+        "Companies"
+      ],
+      "colCategories": [
+        "Acronyms",
+        "Single Letters"
+      ],
+      "hash": "AB|O||CNN|X||Blood Types|Companies|Acronyms|Single Letters"
+    },
+    {
+      "grid": [
+        [
+          "Hash",
+          "Coin"
+        ],
+        [
+          "Orange",
+          "Gold"
+        ]
+      ],
+      "rowCategories": [
+        "Crypto",
+        "Colors"
+      ],
+      "colCategories": [
+        "Foods",
+        "Economics"
+      ],
+      "hash": "Hash|Coin||Orange|Gold||Crypto|Colors|Foods|Economics"
+    },
+    {
+      "grid": [
+        [
+          "Heather",
+          "Rose"
+        ],
+        [
+          "Santa Maria",
+          "Orange"
+        ]
+      ],
+      "rowCategories": [
+        "Flower-class Corvettes",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Female Names",
+        "Colors"
+      ],
+      "hash": "Heather|Rose||Santa Maria|Orange||Flower-class Corvettes|Place Names|Female Names|Colors"
+    },
+    {
+      "grid": [
+        [
+          "Cobalt",
+          "Gold"
+        ],
+        [
+          "Blue Jay",
+          "Buck"
+        ]
+      ],
+      "rowCategories": [
+        "Metallic Colors",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Blue Things",
+        "Money Slang"
+      ],
+      "hash": "Cobalt|Gold||Blue Jay|Buck||Metallic Colors|Types of Animals|Blue Things|Money Slang"
+    },
+    {
+      "grid": [
+        [
+          "Uniform",
+          "Battlefield"
+        ],
+        [
+          "Zulu",
+          "Pokemon"
+        ]
+      ],
+      "rowCategories": [
+        "Military Terms",
+        "Movies"
+      ],
+      "colCategories": [
+        "NATO Phonetic Alphabet",
+        "Video Games"
+      ],
+      "hash": "Uniform|Battlefield||Zulu|Pokemon||Military Terms|Movies|NATO Phonetic Alphabet|Video Games"
+    },
+    {
+      "grid": [
+        [
+          "Curry",
+          "James"
+        ],
+        [
+          "Roma",
+          "Santa Maria"
+        ]
+      ],
+      "rowCategories": [
+        "NBA Players",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Foods",
+        "Saints"
+      ],
+      "hash": "Curry|James||Roma|Santa Maria||NBA Players|Place Names|Foods|Saints"
+    },
+    {
+      "grid": [
+        [
+          "Chorus",
+          "Bridge"
+        ],
+        [
+          "Gates",
+          "Ford"
+        ]
+      ],
+      "rowCategories": [
+        "Parts of a Song",
+        "Companies"
+      ],
+      "colCategories": [
+        "The Good Place",
+        "River Crossings"
+      ],
+      "hash": "Chorus|Bridge||Gates|Ford||Parts of a Song|Companies|The Good Place|River Crossings"
+    },
+    {
+      "grid": [
+        [
+          "Portal",
+          "Aperture"
+        ],
+        [
+          "Paradox",
+          "Fuji"
+        ]
+      ],
+      "rowCategories": [
+        "Physics Terms",
+        "Companies"
+      ],
+      "colCategories": [
+        "Video Games",
+        "Photography Terms"
+      ],
+      "hash": "Portal|Aperture||Paradox|Fuji||Physics Terms|Companies|Video Games|Photography Terms"
+    },
+    {
+      "grid": [
+        [
+          "Dragon",
+          "Cobra"
+        ],
+        [
+          "Phoenix",
+          "Lincoln"
+        ]
+      ],
+      "rowCategories": [
+        "Reptiles",
+        "Place Names"
+      ],
+      "colCategories": [
+        "Mythical Creatures",
+        "Car Brands"
+      ],
+      "hash": "Dragon|Cobra||Phoenix|Lincoln||Reptiles|Place Names|Mythical Creatures|Car Brands"
+    },
+    {
+      "grid": [
+        [
+          "Green Goblin",
+          "Venom"
+        ],
+        [
+          "Kiwi",
+          "Bear"
+        ]
+      ],
+      "rowCategories": [
+        "Spider-Verse Villains",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Green Things",
+        "Black Things"
+      ],
+      "hash": "Green Goblin|Venom||Kiwi|Bear||Spider-Verse Villains|Types of Animals|Green Things|Black Things"
+    },
+    {
+      "grid": [
+        [
+          "Lemon",
+          "Rank"
+        ],
+        [
+          "Crab",
+          "Ray"
+        ]
+      ],
+      "rowCategories": [
+        "Synonyms for Bad",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Foods",
+        "Math Terms"
+      ],
+      "hash": "Lemon|Rank||Crab|Ray||Synonyms for Bad|Types of Animals|Foods|Math Terms"
+    },
+    {
+      "grid": [
+        [
+          "Goat",
+          "Bravo"
+        ],
+        [
+          "Crab",
+          "Curry"
+        ]
+      ],
+      "rowCategories": [
+        "Synonyms for Good",
+        "Foods"
+      ],
+      "colCategories": [
+        "Types of Animals",
+        "Male Names"
+      ],
+      "hash": "Goat|Bravo||Crab|Curry||Synonyms for Good|Foods|Types of Animals|Male Names"
+    },
+    {
+      "grid": [
+        [
+          "Alliance",
+          "Federation"
+        ],
+        [
+          "Lando",
+          "Kirk"
+        ]
+      ],
+      "rowCategories": [
+        "Alliances",
+        "Male Names"
+      ],
+      "colCategories": [
+        "Star Wars",
+        "Star Trek"
+      ],
+      "hash": "Alliance|Federation||Lando|Kirk||Alliances|Male Names|Star Wars|Star Trek"
+    },
+    {
+      "grid": [
+        [
+          "Foxtrot",
+          "CHA"
+        ],
+        [
+          "India",
+          "Java"
+        ]
+      ],
+      "rowCategories": [
+        "Dances",
+        "Place Names"
+      ],
+      "colCategories": [
+        "NATO Phonetic Alphabet",
+        "Drinks"
+      ],
+      "hash": "Foxtrot|CHA||India|Java||Dances|Place Names|NATO Phonetic Alphabet|Drinks"
+    },
+    {
+      "grid": [
+        [
+          "Black Hole",
+          "Sun"
+        ],
+        [
+          "Bear",
+          "Buck"
+        ]
+      ],
+      "rowCategories": [
+        "Star",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Black Things",
+        "NBA Teams"
+      ],
+      "hash": "Black Hole|Sun||Bear|Buck||Star|Types of Animals|Black Things|NBA Teams"
+    },
+    {
+      "grid": [
+        [
+          "Thor",
+          "Loki"
+        ],
+        [
+          "Robin",
+          "Penguin"
+        ]
+      ],
+      "rowCategories": [
+        "Norse Gods",
+        "Types of Animals"
+      ],
+      "colCategories": [
+        "Superheroes",
+        "Supervillains"
+      ],
+      "hash": "Thor|Loki||Robin|Penguin||Norse Gods|Types of Animals|Superheroes|Supervillains"
+    }
+  ]
+}

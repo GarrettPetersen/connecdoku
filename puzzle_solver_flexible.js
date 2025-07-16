@@ -9,13 +9,11 @@ const COLS = 2;
 // Load the words data
 const wordsData = JSON.parse(fs.readFileSync('data/words.json', 'utf8'));
 
-// Extract categories (excluding pattern-based ones)
+// Extract categories (including pattern-based ones)
 const categories = new Set();
 for (const wordCategories of Object.values(wordsData)) {
     for (const category of wordCategories) {
-        if (!category.startsWith('Starts with ') && !category.startsWith('Ends with ')) {
-            categories.add(category);
-        }
+        categories.add(category);
     }
 }
 
@@ -23,12 +21,10 @@ for (const wordCategories of Object.values(wordsData)) {
 const categoryToWords = {};
 for (const [word, wordCategories] of Object.entries(wordsData)) {
     for (const category of wordCategories) {
-        if (!category.startsWith('Starts with ') && !category.startsWith('Ends with ')) {
-            if (!categoryToWords[category]) {
-                categoryToWords[category] = [];
-            }
-            categoryToWords[category].push(word);
+        if (!categoryToWords[category]) {
+            categoryToWords[category] = [];
         }
+        categoryToWords[category].push(word);
     }
 }
 
@@ -315,9 +311,15 @@ class CategoryGraph {
         const seenHashes = new Set();
 
         // Sort categories by number of words (most words first - easier to solve)
-        const sortedCategories = validCategories.sort((a, b) =>
-            (categoryToWords[b].length - categoryToWords[a].length)
-        );
+        const sortedCategories = validCategories.sort((a, b) => {
+            const aWords = categoryToWords[a].length;
+            const bWords = categoryToWords[b].length;
+            if (aWords !== bWords) {
+                return bWords - aWords;
+            }
+            // Secondary sort by category name for stability
+            return a.localeCompare(b);
+        });
 
         console.log(`Categories sorted by word count (most words first):`);
         sortedCategories.slice(0, 10).forEach((cat, i) => {
@@ -514,9 +516,15 @@ class CategoryGraph {
     // Find column categories from connected categories
     findColumnCategories(graph, rowCategories, connectedCategories, sortedCategories) {
         const columnCategories = [];
-        const sortedConnected = Array.from(connectedCategories).sort((a, b) =>
-            (categoryToWords[b].length - categoryToWords[a].length)
-        );
+        const sortedConnected = Array.from(connectedCategories).sort((a, b) => {
+            const aWords = categoryToWords[a].length;
+            const bWords = categoryToWords[b].length;
+            if (aWords !== bWords) {
+                return bWords - aWords;
+            }
+            // Secondary sort by category name for stability
+            return a.localeCompare(b);
+        });
 
         for (const category of sortedConnected) {
             if (columnCategories.length >= this.cols) break; // We only need column categories

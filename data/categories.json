@@ -138,6 +138,7 @@
     "Hawkeye",
     "Hulk",
     "Iron Man",
+    "Nick Fury",
     "Thor"
   ],
   "Baked Goods": [
@@ -230,6 +231,7 @@
     "Blackpink",
     "Coffee",
     "Crow",
+    "Nick Fury",
     "Panther",
     "Raven",
     "Venom"
@@ -358,7 +360,7 @@
     "Leica",
     "Nikon",
     "Olympus",
-    "RED",
+    "Red",
     "Sony"
   ],
   "Capitals": [
@@ -658,7 +660,7 @@
     "Paradox",
     "Pixar",
     "Prada",
-    "RED",
+    "Red",
     "Reddit",
     "Rockefeller",
     "Snap",
@@ -1053,6 +1055,7 @@
     "Mont Blanc"
   ],
   "Ends with AND": [
+    "Greenland",
     "New Zealand",
     "Samarkand",
     "Wand"
@@ -2667,7 +2670,6 @@
     "Bismarck"
   ],
   "Ends with RED": [
-    "RED",
     "Red"
   ],
   "Ends with REE": [
@@ -3028,7 +3030,8 @@
     "Saturn"
   ],
   "Ends with URY": [
-    "Mercury"
+    "Mercury",
+    "Nick Fury"
   ],
   "Ends with USK": [
     "Musk"
@@ -3366,6 +3369,10 @@
     "Emerald",
     "Ruby",
     "Sapphire"
+  ],
+  "Golf Terms": [
+    "Club",
+    "Green"
   ],
   "Greek Gods": [
     "Aphrodite",
@@ -3732,6 +3739,7 @@
     "Loki",
     "Magneto",
     "Mystique",
+    "Nick Fury",
     "Nightcrawler",
     "Phoenix",
     "Professor X",
@@ -4128,7 +4136,7 @@
     "Lens",
     "Nikon",
     "Olympus",
-    "RED",
+    "Red",
     "Sony",
     "Xenon"
   ],
@@ -4206,6 +4214,7 @@
     "Georgia",
     "Germany",
     "Gobi",
+    "Greenland",
     "Harrisburg",
     "Hartford",
     "Helena",
@@ -4438,7 +4447,7 @@
     "Lobster",
     "Magneto",
     "Phoenix",
-    "RED",
+    "Red",
     "Red Hood",
     "Red Riding Hood",
     "Red Velvet",
@@ -5736,7 +5745,8 @@
     "Green Goblin",
     "Green Lantern",
     "Green Light",
-    "Green Tea"
+    "Green Tea",
+    "Greenland"
   ],
   "Starts with GRI": [
     "Griffin"
@@ -6329,6 +6339,7 @@
     "Newton"
   ],
   "Starts with NIC": [
+    "Nick Fury",
     "Nickel",
     "Nicoise"
   ],
@@ -6644,7 +6655,6 @@
     "Ray"
   ],
   "Starts with RED": [
-    "RED",
     "Red",
     "Red Hood",
     "Red Riding Hood",

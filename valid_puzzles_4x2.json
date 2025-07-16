@@ -1,37 +1,161 @@
 {
   "gridSize": "4x2",
-  "totalPuzzles": 1,
+  "totalPuzzles": 5,
   "puzzles": [
     {
       "grid": [
         [
-          "Iron Man",
-          "Hulk"
+          "Pinta",
+          "Pine"
         ],
         [
-          "Crab",
-          "Kiwi"
+          "Bismarck",
+          "Birch"
         ],
         [
-          "Magneto",
-          "Green Goblin"
+          "Albatross",
+          "Coral"
         ],
         [
-          "Wonder Woman",
-          "Green Lantern"
+          "Violet",
+          "Daisy"
         ]
       ],
       "rowCategories": [
-        "Avengers",
+        "Starts with PIN",
+        "Place Names",
         "Types of Animals",
-        "Supervillains",
-        "DC Characters"
+        "Female Names"
       ],
       "colCategories": [
-        "Red Things",
-        "Green Things"
+        "Ships",
+        "Plants"
       ],
-      "hash": "Iron Man|Hulk||Crab|Kiwi||Magneto|Green Goblin||Wonder Woman|Green Lantern||Avengers|Types of Animals|Supervillains|DC Characters|Red Things|Green Things"
+      "hash": "Pinta|Pine||Bismarck|Birch||Albatross|Coral||Violet|Daisy||Starts with PIN|Place Names|Types of Animals|Female Names|Ships|Plants"
+    },
+    {
+      "grid": [
+        [
+          "Victor",
+          "Victory"
+        ],
+        [
+          "India",
+          "Bismarck"
+        ],
+        [
+          "Lima",
+          "Albatross"
+        ],
+        [
+          "Juliet",
+          "Violet"
+        ]
+      ],
+      "rowCategories": [
+        "Starts with VIC",
+        "Place Names",
+        "Foods",
+        "Female Names"
+      ],
+      "colCategories": [
+        "NATO Phonetic Alphabet",
+        "Ships"
+      ],
+      "hash": "Victor|Victory||India|Bismarck||Lima|Albatross||Juliet|Violet||Starts with VIC|Place Names|Foods|Female Names|NATO Phonetic Alphabet|Ships"
+    },
+    {
+      "grid": [
+        [
+          "Chicken",
+          "Kraken"
+        ],
+        [
+          "Roma",
+          "Phoenix"
+        ],
+        [
+          "Crab",
+          "Basilisk"
+        ],
+        [
+          "Olive",
+          "Siren"
+        ]
+      ],
+      "rowCategories": [
+        "Ends with KEN",
+        "Place Names",
+        "Types of Animals",
+        "Female Names"
+      ],
+      "colCategories": [
+        "Foods",
+        "Mythical Creatures"
+      ],
+      "hash": "Chicken|Kraken||Roma|Phoenix||Crab|Basilisk||Olive|Siren||Ends with KEN|Place Names|Types of Animals|Female Names|Foods|Mythical Creatures"
+    },
+    {
+      "grid": [
+        [
+          "Guitar",
+          "Star"
+        ],
+        [
+          "Persona",
+          "Halo"
+        ],
+        [
+          "Apollo",
+          "Helios"
+        ],
+        [
+          "Jazz",
+          "Sun"
+        ]
+      ],
+      "rowCategories": [
+        "Ends with TAR",
+        "Video Games",
+        "Greek Gods",
+        "NBA Teams"
+      ],
+      "colCategories": [
+        "Music",
+        "Astronomical Objects"
+      ],
+      "hash": "Guitar|Star||Persona|Halo||Apollo|Helios||Jazz|Sun||Ends with TAR|Video Games|Greek Gods|NBA Teams|Music|Astronomical Objects"
+    },
+    {
+      "grid": [
+        [
+          "Banana",
+          "Banshee"
+        ],
+        [
+          "Roma",
+          "Phoenix"
+        ],
+        [
+          "Crab",
+          "Basilisk"
+        ],
+        [
+          "Olive",
+          "Siren"
+        ]
+      ],
+      "rowCategories": [
+        "Starts with BAN",
+        "Place Names",
+        "Types of Animals",
+        "Female Names"
+      ],
+      "colCategories": [
+        "Foods",
+        "Mythical Creatures"
+      ],
+      "hash": "Banana|Banshee||Roma|Phoenix||Crab|Basilisk||Olive|Siren||Starts with BAN|Place Names|Types of Animals|Female Names|Foods|Mythical Creatures"
     }
   ]
 }
