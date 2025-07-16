@@ -387,7 +387,7 @@ class CategoryGraph {
         const allCats = validCategories;
         let edgeTrials = 0;
         const totalEdgeTrials = allCats.length * allCats.length / 2;
-        const maxEdgeTrials = 1000000; // No early termination (set very high)
+        const maxEdgeTrials = 1;
 
         // Temporarily suppress console.log during this phase
         const originalLog = console.log;

@@ -273,7 +273,8 @@
     "Dice",
     "King",
     "Pawn",
-    "Queen"
+    "Queen",
+    "Trump"
   ],
   "Board Games": [
     "Carcassonne",
@@ -1788,6 +1789,7 @@
   ],
   "Ends with ICK": [
     "Buick",
+    "Saint Patrick",
     "Stick"
   ],
   "Ends with ICO": [
@@ -2988,6 +2990,9 @@
     "Sulu",
     "Zulu"
   ],
+  "Ends with UMP": [
+    "Trump"
+  ],
   "Ends with UNA": [
     "Tuna"
   ],
@@ -3437,7 +3442,8 @@
     "Jade",
     "Olive",
     "Riddler",
-    "Sage"
+    "Sage",
+    "Saint Patrick"
   ],
   "Harry Potter Characters": [
     "Draco",
@@ -4048,6 +4054,7 @@
     "Obama",
     "Ozymandias",
     "Roosevelt",
+    "Trump",
     "Victoria",
     "Washington",
     "Wilson"
@@ -4562,6 +4569,7 @@
     "Mary",
     "Paul",
     "Peter",
+    "Saint Patrick",
     "San Juan",
     "San Pedro",
     "Santa Maria",
@@ -6702,6 +6710,7 @@
     "Sahara"
   ],
   "Starts with SAI": [
+    "Saint Patrick",
     "Saint Paul"
   ],
   "Starts with SAL": [
@@ -6999,6 +7008,9 @@
   "Starts with TRO": [
     "Troy",
     "Troyes"
+  ],
+  "Starts with TRU": [
+    "Trump"
   ],
   "Starts with TSA": [
     "Tsar"
@@ -7607,6 +7619,7 @@
     "Madison",
     "Obama",
     "Roosevelt",
+    "Trump",
     "Washington",
     "Wilson"
   ],
