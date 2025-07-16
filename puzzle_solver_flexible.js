@@ -3,7 +3,7 @@ const fs = require('fs');
 // ===== CONFIGURATION =====
 // Set your desired grid dimensions here
 const ROWS = 4;
-const COLS = 2;
+const COLS = 3;
 // =========================
 
 // Load the words data
@@ -385,66 +385,228 @@ class CategoryGraph {
         return graph;
     }
 
-    // Find valid category combinations using graph traversal
+    // Find valid category combinations using constraint-based search
     findValidCategoryCombinations(graph, sortedCategories) {
-        console.log(`Using graph traversal to find valid ${this.rows}x${this.cols} category combinations...`);
+        console.log(`Using constraint-based search to find valid ${this.rows}x${this.cols} category combinations...`);
         const combinations = [];
-        let processedNodes = 0;
-        const totalNodes = sortedCategories.length;
+        let totalAttempts = 0;
+        let foundCombinations = 0;
+        const seenHashes = new Set();
 
-        console.log(`Starting from ${totalNodes} categories as potential row categories...`);
+        // Sort categories by word count for better performance
+        const sortedCategoriesForSearch = validCategories.sort((a, b) => {
+            const aWords = categoryToWords[a].length;
+            const bWords = categoryToWords[b].length;
+            if (aWords !== bWords) {
+                return bWords - aWords;
+            }
+            return a.localeCompare(b);
+        });
 
-        for (const startCategory of sortedCategories) {
-            processedNodes++;
+        const totalFirstRows = sortedCategoriesForSearch.length;
+        const barWidth = 50;
+        function printLoadingBar(current, total, found, currentCategories = []) {
+            const percent = Math.min(1, current / total);
+            const filled = Math.floor(percent * barWidth);
+            const bar = '█'.repeat(filled) + '░'.repeat(barWidth - filled);
 
-            // Update progress every 10 nodes
-            if (processedNodes % 10 === 0) {
-                process.stdout.write(createLoadingBar(processedNodes, totalNodes, 50, 'Graph Traversal'));
+            // Build the base line without categories
+            const baseLine = `Progress: [${bar}] ${(percent * 100).toFixed(1)}% (${current}/${total}) | Valid: ${found.toLocaleString()}`;
+
+            // Calculate available space for categories
+            const maxWidth = process.stdout.columns || 120;
+            const availableSpace = maxWidth - baseLine.length - 15; // 15 for " | Checking: "
+
+            let categoryInfo = '';
+            if (currentCategories.length > 0 && availableSpace > 10) {
+                // Truncate category names more aggressively
+                const truncatedCategories = currentCategories.map(cat => {
+                    if (cat.length > 8) return cat.substring(0, 5) + '...';
+                    return cat;
+                });
+
+                // Join and truncate if still too long
+                let categoryDisplay = truncatedCategories.join(', ');
+                if (categoryDisplay.length > availableSpace) {
+                    categoryDisplay = categoryDisplay.substring(0, availableSpace - 3) + '...';
+                }
+
+                categoryInfo = ` | Checking: ${categoryDisplay}`;
             }
 
-            // Try this category as a row category
-            const rowCategories = [startCategory];
-            const connectedCategories = new Set(graph.get(startCategory) || []);
+            const line = baseLine + categoryInfo;
+            // Clear the line and write the new content
+            process.stdout.write(`\r${line.padEnd(maxWidth)}`);
+        }
 
-            // Find more row categories that are connected to all column categories
-            const additionalRows = this.findAdditionalRowCategories(graph, rowCategories, connectedCategories, sortedCategories);
+        console.log(`Starting constraint-based search with ${totalFirstRows} categories...`);
 
-            if (additionalRows.length >= this.rows - 1) {
-                // We have enough row categories, now find column categories
-                rowCategories.push(...additionalRows.slice(0, this.rows - 1));
+        // Try each category as the first row (only once per category)
+        for (const [firstRowIdx, firstRow] of sortedCategoriesForSearch.entries()) {
+            totalAttempts++;
 
-                // Check if all row categories can be used together
-                if (!this.canUseCategoriesTogether(rowCategories)) {
+            // Update loading bar
+            if (firstRowIdx % 1 === 0) {
+                printLoadingBar(firstRowIdx + 1, totalFirstRows, foundCombinations, [firstRow]);
+            }
+
+            // Find all categories that intersect with firstRow (potential columns)
+            // Only consider categories that come AFTER firstRow to avoid duplicates
+            const validFirstColumns = sortedCategoriesForSearch.filter((col, idx) =>
+                idx > firstRowIdx && // Only consider categories after firstRow
+                this.getWordCountForPair(firstRow, col) > 0
+            );
+
+            for (const firstCol of validFirstColumns) {
+                // Skip if firstCol is a strict subset of firstRow
+                const firstRowSupersets = this.strictSubsets.get(firstCol);
+                if (firstRowSupersets && firstRowSupersets.has(firstRow)) {
                     continue;
                 }
 
-                const allConnectedCategories = this.getIntersectionOfConnections(graph, rowCategories);
+                // Update loading bar with current row and column
+                printLoadingBar(firstRowIdx + 1, totalFirstRows, foundCombinations, [firstRow, firstCol]);
 
-                if (allConnectedCategories.size >= this.cols) {
-                    // Find column categories from the connected ones
-                    const columnCategories = this.findColumnCategories(graph, rowCategories, allConnectedCategories, sortedCategories);
+                // Find all categories that intersect with firstCol (potential second rows)
+                // Only consider categories that come AFTER firstRow to avoid duplicates
+                const validSecondRows = sortedCategoriesForSearch.filter((row, idx) =>
+                    idx > firstRowIdx && // Only consider categories after firstRow
+                    row !== firstCol &&
+                    this.getWordCountForPair(row, firstCol) > 0
+                );
 
-                    if (columnCategories.length === this.cols) {
-                        // Check if all column categories can be used together
-                        if (!this.canUseCategoriesTogether(columnCategories)) {
+                for (const secondRow of validSecondRows) {
+                    // Skip if secondRow is a strict subset of firstRow or firstCol
+                    const secondRowSupersets = this.strictSubsets.get(secondRow);
+                    if (secondRowSupersets && (secondRowSupersets.has(firstRow) || secondRowSupersets.has(firstCol))) {
+                        continue;
+                    }
+
+                    // Update loading bar with current categories
+                    printLoadingBar(firstRowIdx + 1, totalFirstRows, foundCombinations, [firstRow, firstCol, secondRow]);
+
+                    // Find all categories that intersect with both firstRow and secondRow (potential second columns)
+                    // Only consider categories that come AFTER firstCol to avoid duplicates
+                    const firstColIdx = sortedCategoriesForSearch.indexOf(firstCol);
+                    const validSecondColumns = sortedCategoriesForSearch.filter((col, idx) =>
+                        idx > firstColIdx && // Only consider categories after firstCol
+                        col !== secondRow &&
+                        this.getWordCountForPair(firstRow, col) > 0 &&
+                        this.getWordCountForPair(secondRow, col) > 0
+                    );
+
+                    for (const secondCol of validSecondColumns) {
+                        // Skip if secondCol is a strict subset of any existing categories
+                        const secondColSupersets = this.strictSubsets.get(secondCol);
+                        if (secondColSupersets && (secondColSupersets.has(firstRow) || secondColSupersets.has(firstCol) || secondColSupersets.has(secondRow))) {
                             continue;
                         }
 
-                        // Check if row and column categories can be used together
-                        const allCategories = [...rowCategories, ...columnCategories];
-                        if (!this.canUseCategoriesTogether(allCategories)) {
-                            continue;
-                        }
+                        // Update loading bar with current categories
+                        printLoadingBar(firstRowIdx + 1, totalFirstRows, foundCombinations, [firstRow, firstCol, secondRow, secondCol]);
 
-                        combinations.push({
-                            rowCategories: rowCategories,
-                            colCategories: columnCategories
-                        });
+                        // For 4x3 grid, we need 2 more rows and 1 more column
+                        const validThirdRows = sortedCategoriesForSearch.filter((row, idx) =>
+                            idx > firstRowIdx && // Only consider categories after firstRow
+                            row !== firstCol &&
+                            row !== secondRow &&
+                            row !== secondCol &&
+                            this.getWordCountForPair(row, firstCol) > 0 &&
+                            this.getWordCountForPair(row, secondCol) > 0
+                        );
 
-                        // Limit total combinations to prevent memory issues
-                        if (combinations.length >= 100000) {
-                            console.log(`Reached limit of 100000 combinations, stopping search...`);
-                            return combinations;
+                        for (const thirdRow of validThirdRows) {
+                            // Skip if thirdRow is a strict subset of any existing categories
+                            const thirdRowSupersets = this.strictSubsets.get(thirdRow);
+                            if (thirdRowSupersets && (thirdRowSupersets.has(firstRow) || thirdRowSupersets.has(firstCol) || thirdRowSupersets.has(secondRow) || thirdRowSupersets.has(secondCol))) {
+                                continue;
+                            }
+
+                            // Update loading bar with current categories
+                            printLoadingBar(firstRowIdx + 1, totalFirstRows, foundCombinations, [firstRow, firstCol, secondRow, secondCol, thirdRow]);
+
+                            const validFourthRows = sortedCategoriesForSearch.filter((row, idx) =>
+                                idx > firstRowIdx && // Only consider categories after firstRow
+                                row !== firstCol &&
+                                row !== secondRow &&
+                                row !== secondCol &&
+                                row !== thirdRow &&
+                                this.getWordCountForPair(row, firstCol) > 0 &&
+                                this.getWordCountForPair(row, secondCol) > 0
+                            );
+
+                            for (const fourthRow of validFourthRows) {
+                                // Skip if fourthRow is a strict subset of any existing categories
+                                const fourthRowSupersets = this.strictSubsets.get(fourthRow);
+                                if (fourthRowSupersets && (fourthRowSupersets.has(firstRow) || fourthRowSupersets.has(firstCol) || fourthRowSupersets.has(secondRow) || fourthRowSupersets.has(secondCol) || fourthRowSupersets.has(thirdRow))) {
+                                    continue;
+                                }
+
+                                // Update loading bar with current categories
+                                printLoadingBar(firstRowIdx + 1, totalFirstRows, foundCombinations, [firstRow, firstCol, secondRow, secondCol, thirdRow, fourthRow]);
+                                // For 4x3, we need one more column
+                                const secondColIdx = sortedCategoriesForSearch.indexOf(secondCol);
+                                const validThirdColumns = sortedCategoriesForSearch.filter((col, idx) =>
+                                    idx > secondColIdx && // Only consider categories after secondCol
+                                    col !== firstRow &&
+                                    col !== secondRow &&
+                                    col !== thirdRow &&
+                                    col !== fourthRow &&
+                                    this.getWordCountForPair(firstRow, col) > 0 &&
+                                    this.getWordCountForPair(secondRow, col) > 0 &&
+                                    this.getWordCountForPair(thirdRow, col) > 0 &&
+                                    this.getWordCountForPair(fourthRow, col) > 0
+                                );
+
+                                for (const thirdCol of validThirdColumns) {
+                                    // Skip if thirdCol is a strict subset of any existing categories
+                                    const thirdColSupersets = this.strictSubsets.get(thirdCol);
+                                    if (thirdColSupersets && (thirdColSupersets.has(firstRow) || thirdColSupersets.has(firstCol) || thirdColSupersets.has(secondRow) || thirdColSupersets.has(secondCol) || thirdColSupersets.has(thirdRow) || thirdColSupersets.has(fourthRow))) {
+                                        continue;
+                                    }
+
+                                    // Update loading bar with current categories
+                                    printLoadingBar(firstRowIdx + 1, totalFirstRows, foundCombinations, [firstRow, firstCol, secondRow, secondCol, thirdRow, fourthRow, thirdCol]);
+
+                                    // We have a complete 4x3 combination
+                                    const rowCategories = [firstRow, secondRow, thirdRow, fourthRow];
+                                    const colCategories = [firstCol, secondCol, thirdCol];
+
+                                    // Check if all categories can be used together (no strict subsets)
+                                    const allCategories = [...rowCategories, ...colCategories];
+                                    if (!this.canUseCategoriesTogether(allCategories)) {
+                                        continue;
+                                    }
+
+                                    // Verify all intersections have at least one word
+                                    let allIntersectionsValid = true;
+                                    for (const rowCat of rowCategories) {
+                                        for (const colCat of colCategories) {
+                                            if (this.getWordCountForPair(rowCat, colCat) === 0) {
+                                                allIntersectionsValid = false;
+                                                break;
+                                            }
+                                        }
+                                        if (!allIntersectionsValid) break;
+                                    }
+
+                                    if (allIntersectionsValid) {
+                                        // Create a canonical hash to avoid duplicates
+                                        const rowHash = rowCategories.sort().join('|');
+                                        const colHash = colCategories.sort().join('|');
+                                        const combinationHash = `${rowHash}||${colHash}`;
+
+                                        if (!seenHashes.has(combinationHash)) {
+                                            combinations.push({
+                                                rowCategories: rowCategories,
+                                                colCategories: colCategories
+                                            });
+                                            seenHashes.add(combinationHash);
+                                            foundCombinations++;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -452,15 +614,17 @@ class CategoryGraph {
         }
 
         // Final progress update
-        process.stdout.write(createLoadingBar(totalNodes, totalNodes, 50, 'Graph Traversal') + '\n');
-        console.log(`Found ${combinations.length} potential category combinations`);
+        printLoadingBar(totalFirstRows, totalFirstRows, foundCombinations, []);
+        process.stdout.write('\n');
+        console.log(`\nConstraint-based search completed!`);
+        console.log(`Total first rows attempted: ${totalAttempts}`);
+        console.log(`Found ${combinations.length} unique valid category combinations`);
         return combinations;
     }
 
     // Find additional row categories that are connected to all potential column categories
     findAdditionalRowCategories(graph, currentRows, connectedCategories, sortedCategories) {
         const additionalRows = [];
-        const requiredConnections = Math.max(1, Math.floor(connectedCategories.size * 0.5)); // Relax requirement to 50% of connections
 
         for (const category of sortedCategories) {
             if (currentRows.includes(category)) continue;
@@ -469,19 +633,9 @@ class CategoryGraph {
             const testRows = [...currentRows, category];
             if (!this.canUseCategoriesTogether(testRows)) continue;
 
-            // Count how many of the connected categories this row connects to
-            const rowConnections = graph.get(category) || new Set();
-            let connectionCount = 0;
-            for (const connectedCat of connectedCategories) {
-                if (rowConnections.has(connectedCat)) {
-                    connectionCount++;
-                }
-            }
-
-            if (connectionCount >= requiredConnections) {
-                additionalRows.push(category);
-                if (additionalRows.length >= this.rows - 1) break; // We only need more rows
-            }
+            // Much less restrictive: just add any category that can be used with current rows
+            additionalRows.push(category);
+            if (additionalRows.length >= this.rows - 1) break; // We only need more rows
         }
 
         return additionalRows;
@@ -489,28 +643,15 @@ class CategoryGraph {
 
     // Get intersection of connections for all row categories
     getIntersectionOfConnections(graph, rowCategories) {
-        const intersection = new Set();
-        let first = true;
+        // Much less restrictive: return all categories as potential columns
+        const allCategories = new Set(validCategories);
 
+        // Only exclude categories that are already used as rows
         for (const rowCat of rowCategories) {
-            const connections = graph.get(rowCat) || new Set();
-            if (first) {
-                // Add all connections from the first row category
-                for (const cat of connections) {
-                    intersection.add(cat);
-                }
-                first = false;
-            } else {
-                // Keep only categories that are connected to ALL row categories
-                for (const cat of intersection) {
-                    if (!connections.has(cat)) {
-                        intersection.delete(cat);
-                    }
-                }
-            }
+            allCategories.delete(rowCat);
         }
 
-        return intersection;
+        return allCategories;
     }
 
     // Find column categories from connected categories
@@ -533,19 +674,8 @@ class CategoryGraph {
             const testCols = [...columnCategories, category];
             if (!this.canUseCategoriesTogether(testCols)) continue;
 
-            // Check if this category connects to all row categories
-            const categoryConnections = graph.get(category) || new Set();
-            let connectsToAll = true;
-            for (const rowCat of rowCategories) {
-                if (!categoryConnections.has(rowCat)) {
-                    connectsToAll = false;
-                    break;
-                }
-            }
-
-            if (connectsToAll) {
-                columnCategories.push(category);
-            }
+            // Much less restrictive: just add any category that can be used with current columns
+            columnCategories.push(category);
         }
 
         return columnCategories;
