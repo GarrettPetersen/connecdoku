@@ -1,5 +1,11 @@
 const fs = require('fs');
 
+// ===== CONFIGURATION =====
+// Set your desired grid dimensions here
+const ROWS = 4;
+const COLS = 2;
+// =========================
+
 // Load the words data
 const wordsData = JSON.parse(fs.readFileSync('data/words.json', 'utf8'));
 
@@ -26,12 +32,13 @@ for (const [word, wordCategories] of Object.entries(wordsData)) {
     }
 }
 
-// Filter categories to only those with at least 3 words (for 4x3)
+// Filter categories to only those with at least min(ROWS, COLS) words
+const minWordsRequired = Math.min(ROWS, COLS);
 const validCategories = Object.keys(categoryToWords).filter(cat =>
-    categoryToWords[cat].length >= 3
+    categoryToWords[cat].length >= minWordsRequired
 );
 
-console.log(`Found ${validCategories.length} categories with at least 3 words`);
+console.log(`Found ${validCategories.length} categories with at least ${minWordsRequired} words for ${ROWS}x${COLS} grid`);
 
 // Utility function to create loading bars
 function createLoadingBar(current, total, width = 50, label = 'Progress') {
@@ -41,9 +48,11 @@ function createLoadingBar(current, total, width = 50, label = 'Progress') {
     return `\r${label}: [${bar}] ${percentage.toFixed(1)}% (${current.toLocaleString()}/${total.toLocaleString()})`;
 }
 
-// Graph theory class for finding valid category combinations (4x3 version)
-class CategoryGraph4x3 {
-    constructor() {
+// Graph theory class for finding valid category combinations (flexible version)
+class CategoryGraph {
+    constructor(rows, cols) {
+        this.rows = rows;
+        this.cols = cols;
         this.edges = new Map(); // (rowCat, colCat) -> word count
         this.strictSubsets = new Map(); // category -> set of categories it's a strict subset of
         this.findStrictSubsets();
@@ -122,7 +131,7 @@ class CategoryGraph4x3 {
         return true;
     }
 
-    // Check if two categories have significant overlap (more than 50% of words in common)
+    // Check if two categories have significant overlap
     hasSignificantOverlap(cat1, cat2) {
         if (cat1 === cat2) return false;
 
@@ -136,7 +145,7 @@ class CategoryGraph4x3 {
             }
         }
 
-        // Any overlap is significant (changed from 50% threshold)
+        // Any overlap is significant
         return overlapCount > 0;
     }
 
@@ -202,7 +211,7 @@ class CategoryGraph4x3 {
     getWordCountForPair(cat1, cat2) {
         const words1 = new Set(categoryToWords[cat1] || []);
         const words2 = new Set(categoryToWords[cat2] || []);
-        
+
         let count = 0;
         for (const word of words1) {
             if (words2.has(word)) {
@@ -212,9 +221,9 @@ class CategoryGraph4x3 {
         return count;
     }
 
-    // Check if categories can form a valid 4x3 puzzle
+    // Check if categories can form a valid puzzle
     canFormValidPuzzle(rowCategories, colCategories) {
-        if (rowCategories.length !== 4 || colCategories.length !== 3) {
+        if (rowCategories.length !== this.rows || colCategories.length !== this.cols) {
             return false;
         }
 
@@ -239,7 +248,7 @@ class CategoryGraph4x3 {
 
     // Check if categories are almost valid (missing one edge)
     isAlmostValid(rowCategories, colCategories) {
-        if (rowCategories.length !== 4 || colCategories.length !== 3) {
+        if (rowCategories.length !== this.rows || colCategories.length !== this.cols) {
             return false;
         }
 
@@ -263,31 +272,26 @@ class CategoryGraph4x3 {
         return missingEdges === 1; // Exactly one missing edge
     }
 
-    // Check for perfect matching in 4x3 grid (adapted from 4x4)
+    // Check for perfect matching in grid
     hasPerfectMatching(adjacencyMatrix) {
-        const rows = 4;
-        const cols = 3;
-        const matching = new Array(cols).fill(-1); // col -> row mapping
-        const visited = new Array(rows).fill(false);
+        const matching = new Array(this.cols).fill(-1); // col -> row mapping
+        const visited = new Array(this.rows).fill(false);
 
         // Try to find a perfect matching
         let matchCount = 0;
-        for (let row = 0; row < rows; row++) {
+        for (let row = 0; row < this.rows; row++) {
             visited.fill(false);
             if (this.findAugmentingPath(adjacencyMatrix, row, visited, matching)) {
                 matchCount++;
             }
         }
 
-        return matchCount === cols; // Perfect matching found (all 3 columns matched)
+        return matchCount === this.cols; // Perfect matching found
     }
 
-    // Find augmenting path using DFS (adapted for 4x3)
+    // Find augmenting path using DFS
     findAugmentingPath(adjacencyMatrix, row, visited, matching) {
-        const rows = 4;
-        const cols = 3;
-
-        for (let col = 0; col < cols; col++) {
+        for (let col = 0; col < this.cols; col++) {
             // Check if there's an edge and it's not visited
             if (adjacencyMatrix[row][col] > 0 && !visited[col]) {
                 visited[col] = true;
@@ -303,9 +307,9 @@ class CategoryGraph4x3 {
         return false;
     }
 
-    // Get valid category combinations that can form 4x3 puzzles
+    // Get valid category combinations that can form puzzles
     getValidCategoryCombinations() {
-        console.log('Finding valid 4x3 category combinations using graph traversal...');
+        console.log(`Finding valid ${this.rows}x${this.cols} category combinations using graph traversal...`);
         const validCombinations = [];
         const almostValidCombinations = [];
         const seenHashes = new Set();
@@ -325,7 +329,7 @@ class CategoryGraph4x3 {
         const graph = this.buildCategoryGraph();
 
         // Find valid category combinations using graph traversal
-        console.log('Finding valid 4x3 category combinations using graph traversal...');
+        console.log(`Finding valid ${this.rows}x${this.cols} category combinations using graph traversal...`);
         const combinations = this.findValidCategoryCombinations(graph, sortedCategories);
 
         console.log(`Found ${combinations.length} potential category combinations`);
@@ -379,9 +383,9 @@ class CategoryGraph4x3 {
         return graph;
     }
 
-    // Find valid category combinations using graph traversal (4x3 version)
+    // Find valid category combinations using graph traversal
     findValidCategoryCombinations(graph, sortedCategories) {
-        console.log('Using graph traversal to find valid 4x3 category combinations...');
+        console.log(`Using graph traversal to find valid ${this.rows}x${this.cols} category combinations...`);
         const combinations = [];
         let processedNodes = 0;
         const totalNodes = sortedCategories.length;
@@ -400,12 +404,12 @@ class CategoryGraph4x3 {
             const rowCategories = [startCategory];
             const connectedCategories = new Set(graph.get(startCategory) || []);
 
-            // Find 3 more row categories that are connected to all column categories
+            // Find more row categories that are connected to all column categories
             const additionalRows = this.findAdditionalRowCategories(graph, rowCategories, connectedCategories, sortedCategories);
 
-            if (additionalRows.length >= 3) {
-                // We have 4 row categories, now find 3 column categories
-                rowCategories.push(...additionalRows.slice(0, 3));
+            if (additionalRows.length >= this.rows - 1) {
+                // We have enough row categories, now find column categories
+                rowCategories.push(...additionalRows.slice(0, this.rows - 1));
 
                 // Check if all row categories can be used together
                 if (!this.canUseCategoriesTogether(rowCategories)) {
@@ -414,11 +418,11 @@ class CategoryGraph4x3 {
 
                 const allConnectedCategories = this.getIntersectionOfConnections(graph, rowCategories);
 
-                if (allConnectedCategories.size >= 3) {
-                    // Find 3 column categories from the connected ones
+                if (allConnectedCategories.size >= this.cols) {
+                    // Find column categories from the connected ones
                     const columnCategories = this.findColumnCategories(graph, rowCategories, allConnectedCategories, sortedCategories);
 
-                    if (columnCategories.length === 3) {
+                    if (columnCategories.length === this.cols) {
                         // Check if all column categories can be used together
                         if (!this.canUseCategoriesTogether(columnCategories)) {
                             continue;
@@ -474,7 +478,7 @@ class CategoryGraph4x3 {
 
             if (connectionCount >= requiredConnections) {
                 additionalRows.push(category);
-                if (additionalRows.length >= 3) break; // We only need 3 more rows
+                if (additionalRows.length >= this.rows - 1) break; // We only need more rows
             }
         }
 
@@ -515,7 +519,7 @@ class CategoryGraph4x3 {
         );
 
         for (const category of sortedConnected) {
-            if (columnCategories.length >= 3) break; // We only need 3 column categories
+            if (columnCategories.length >= this.cols) break; // We only need column categories
 
             // Check if this category can be used with current column categories
             const testCols = [...columnCategories, category];
@@ -540,9 +544,11 @@ class CategoryGraph4x3 {
     }
 }
 
-// Puzzle solver class for 4x3 grids
-class PuzzleSolver4x3 {
-    constructor(maxIterations = 100000000) {
+// Puzzle solver class for flexible grids
+class PuzzleSolver {
+    constructor(rows, cols, maxIterations = 100000000) {
+        this.rows = rows;
+        this.cols = cols;
         this.maxIterations = maxIterations;
         this.validPuzzles = [];
         this.iterationCount = 0;
@@ -552,7 +558,7 @@ class PuzzleSolver4x3 {
     getWordsForCategories(cat1, cat2) {
         const words1 = new Set(categoryToWords[cat1] || []);
         const words2 = new Set(categoryToWords[cat2] || []);
-        
+
         const intersection = [];
         for (const word of words1) {
             if (words2.has(word)) {
@@ -564,8 +570,8 @@ class PuzzleSolver4x3 {
 
     // Check if a word is already used in the grid
     isWordUsed(grid, word) {
-        for (let i = 0; i < 4; i++) {
-            for (let j = 0; j < 3; j++) {
+        for (let i = 0; i < this.rows; i++) {
+            for (let j = 0; j < this.cols; j++) {
                 if (grid[i][j] === word) {
                     return true;
                 }
@@ -594,7 +600,7 @@ class PuzzleSolver4x3 {
         }
 
         // Check if word belongs to any category that's already assigned to a different row or column
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < this.rows; i++) {
             if (i !== row) {
                 const otherRowCat = rowCategories[i];
                 if (wordCategories.includes(otherRowCat)) {
@@ -602,7 +608,7 @@ class PuzzleSolver4x3 {
                 }
             }
         }
-        for (let j = 0; j < 3; j++) {
+        for (let j = 0; j < this.cols; j++) {
             if (j !== col) {
                 const otherColCat = colCategories[j];
                 if (wordCategories.includes(otherColCat)) {
@@ -624,15 +630,15 @@ class PuzzleSolver4x3 {
         }
 
         const availableWords = this.getWordsForCategories(rowCat, colCat);
-        
+
         // Filter out words that can't be placed due to category conflicts
         return availableWords.filter(word => this.canPlaceWord(grid, word, row, col, rowCategories, colCategories));
     }
 
     // Check if grid is complete
     isComplete(grid) {
-        for (let i = 0; i < 4; i++) {
-            for (let j = 0; j < 3; j++) {
+        for (let i = 0; i < this.rows; i++) {
+            for (let j = 0; j < this.cols; j++) {
                 if (!grid[i][j]) {
                     return false;
                 }
@@ -643,8 +649,8 @@ class PuzzleSolver4x3 {
 
     // Find next empty cell
     findNextEmpty(grid) {
-        for (let i = 0; i < 4; i++) {
-            for (let j = 0; j < 3; j++) {
+        for (let i = 0; i < this.rows; i++) {
+            for (let j = 0; j < this.cols; j++) {
                 if (!grid[i][j]) {
                     return { row: i, col: j };
                 }
@@ -663,7 +669,7 @@ class PuzzleSolver4x3 {
     // Solve the puzzle using backtracking
     solve(grid, rowCategories, colCategories, depth = 0) {
         this.iterationCount++;
-        
+
         if (this.iterationCount > this.maxIterations) {
             console.log('Reached maximum iterations, stopping...');
             return false;
@@ -691,11 +697,11 @@ class PuzzleSolver4x3 {
 
         for (const word of availableWords) {
             grid[row][col] = word;
-            
+
             if (this.solve(grid, rowCategories, colCategories, depth + 1)) {
                 return true;
             }
-            
+
             grid[row][col] = null;
         }
 
@@ -704,24 +710,24 @@ class PuzzleSolver4x3 {
 
     // Try to solve puzzles for all valid category combinations
     tryValidCategoryCombinations() {
-        const graph = new CategoryGraph4x3();
+        const graph = new CategoryGraph(this.rows, this.cols);
         const validCombinations = graph.getValidCategoryCombinations();
-        
+
         console.log(`\nAttempting to solve ${validCombinations.length} valid category combinations...`);
-        
+
         let solvedCount = 0;
         let totalAttempts = 0;
-        
+
         for (const combination of validCombinations) {
             totalAttempts++;
-            
+
             if (totalAttempts % 10 === 0) {
                 console.log(`Attempted ${totalAttempts}/${validCombinations.length} combinations, found ${solvedCount} puzzles`);
             }
-            
-            // Initialize empty 4x3 grid
-            const grid = Array(4).fill(null).map(() => Array(3).fill(null));
-            
+
+            // Initialize empty grid
+            const grid = Array(this.rows).fill(null).map(() => Array(this.cols).fill(null));
+
             if (this.solve(grid, combination.rowCategories, combination.colCategories)) {
                 solvedCount++;
                 console.log(`Found puzzle ${solvedCount}:`);
@@ -734,30 +740,31 @@ class PuzzleSolver4x3 {
                 console.log('');
             }
         }
-        
-        console.log(`\nCompleted! Found ${solvedCount} valid 4x3 puzzles out of ${totalAttempts} attempts.`);
+
+        console.log(`\nCompleted! Found ${solvedCount} valid ${this.rows}x${this.cols} puzzles out of ${totalAttempts} attempts.`);
         return this.validPuzzles;
     }
 
     // Save results to file
     saveResults() {
-        const outputFile = 'valid_puzzles_4x3.json';
+        const outputFile = `valid_puzzles_${this.rows}x${this.cols}.json`;
         const outputData = {
+            gridSize: `${this.rows}x${this.cols}`,
             totalPuzzles: this.validPuzzles.length,
             puzzles: this.validPuzzles
         };
-        
+
         fs.writeFileSync(outputFile, JSON.stringify(outputData, null, 2));
-        console.log(`\nSaved ${this.validPuzzles.length} valid 4x3 puzzles to ${outputFile}`);
+        console.log(`\nSaved ${this.validPuzzles.length} valid ${this.rows}x${this.cols} puzzles to ${outputFile}`);
     }
 }
 
 // Main execution
-console.log('Starting 4x3 puzzle solver...\n');
+console.log(`Starting ${ROWS}x${COLS} puzzle solver...\n`);
 
-const solver = new PuzzleSolver4x3();
+const solver = new PuzzleSolver(ROWS, COLS);
 const puzzles = solver.tryValidCategoryCombinations();
 solver.saveResults();
 
-console.log('\n4x3 puzzle solver completed!'); 
+console.log(`\n${ROWS}x${COLS} puzzle solver completed!`);
 

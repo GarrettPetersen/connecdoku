@@ -1,0 +1,37 @@
+{
+  "gridSize": "4x2",
+  "totalPuzzles": 1,
+  "puzzles": [
+    {
+      "grid": [
+        [
+          "Iron Man",
+          "Hulk"
+        ],
+        [
+          "Crab",
+          "Kiwi"
+        ],
+        [
+          "Magneto",
+          "Green Goblin"
+        ],
+        [
+          "Wonder Woman",
+          "Green Lantern"
+        ]
+      ],
+      "rowCategories": [
+        "Avengers",
+        "Types of Animals",
+        "Supervillains",
+        "DC Characters"
+      ],
+      "colCategories": [
+        "Red Things",
+        "Green Things"
+      ],
+      "hash": "Iron Man|Hulk||Crab|Kiwi||Magneto|Green Goblin||Wonder Woman|Green Lantern||Avengers|Types of Animals|Supervillains|DC Characters|Red Things|Green Things"
+    }
+  ]
+}
