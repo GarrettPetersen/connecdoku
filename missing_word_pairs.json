@@ -1,76 +1,152 @@
 [
   {
     "categories": [
-      "Birds",
-      "Red Things"
+      "Green Things",
+      "Saints"
     ],
-    "count": 30,
-    "maxDepth": 13,
+    "count": 26,
+    "maxDepth": 3,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Saints",
+      "Yellow Things"
+    ],
+    "count": 26,
+    "maxDepth": 3,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds of Prey",
+      "Drinks"
+    ],
+    "count": 3,
+    "maxDepth": 3,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Drinks",
+      "MLB Teams"
+    ],
+    "count": 3,
+    "maxDepth": 3,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Ancient Cities",
+      "Disasters"
+    ],
+    "count": 3,
+    "maxDepth": 2,
     "overlappingWords": [
-      "Phoenix",
-      "Cardinal"
+      "Pompeii"
     ],
     "wordCategoryConflicts": {
-      "Phoenix": [
-        "Marvel Characters",
-        "Mythical Creatures"
-      ],
-      "Cardinal": [
-        "Types of Animals"
+      "Pompeii": [
+        "Cities in Italy",
+        "Movies",
+        "Place Names",
+        "Roman Empire"
       ]
     }
   },
   {
     "categories": [
-      "Birds",
-      "Mythical Creatures"
+      "Purple Things",
+      "Ships"
     ],
-    "count": 45,
-    "maxDepth": 12,
+    "count": 6,
+    "maxDepth": 2,
     "overlappingWords": [
-      "Phoenix"
+      "Violet"
     ],
     "wordCategoryConflicts": {
-      "Phoenix": [
-        "Marvel Characters",
-        "Red Things"
+      "Violet": [
+        "Colors",
+        "Female Names"
       ]
     }
   },
   {
     "categories": [
-      "Black Things",
+      "Purple Things",
+      "Superheroes"
+    ],
+    "count": 4,
+    "maxDepth": 2,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Books",
+      "Religious Terms"
+    ],
+    "count": 3,
+    "maxDepth": 2,
+    "overlappingWords": [
+      "Inferno"
+    ],
+    "wordCategoryConflicts": {
+      "Inferno": [
+        "Movies"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Card Games",
       "Marvel Characters"
     ],
-    "count": 15,
-    "maxDepth": 11,
+    "count": 3,
+    "maxDepth": 1,
     "overlappingWords": [
-      "Black Widow",
-      "Venom"
+      "Gambit"
     ],
     "wordCategoryConflicts": {
-      "Black Widow": [
-        "Types of Animals"
-      ],
-      "Venom": [
-        "Supervillains"
+      "Gambit": [
+        "Red Things",
+        "Superheroes"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Marvel Characters",
+      "White Things"
+    ],
+    "count": 1,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "Iceman"
+    ],
+    "wordCategoryConflicts": {
+      "Iceman": [
+        "Superheroes"
       ]
     }
   },
   {
     "categories": [
       "Airships",
-      "Cities in Italy"
+      "Ancient Cities"
     ],
-    "count": 2,
-    "maxDepth": 3,
+    "count": 5,
+    "maxDepth": 1,
     "overlappingWords": [
       "Roma"
     ],
     "wordCategoryConflicts": {
       "Roma": [
-        "Ancient Cities",
-        "Capitals",
+        "Cities in Italy",
         "Foods",
         "Place Names",
         "Roman Empire"
@@ -79,18 +155,647 @@
   },
   {
     "categories": [
+      "Marvel Characters",
+      "The Good Place"
+    ],
+    "count": 1,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "Angel"
+    ],
+    "wordCategoryConflicts": {
+      "Angel": [
+        "Mythical Creatures",
+        "Religious Terms",
+        "Superheroes"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "DC Characters",
+      "Red Things"
+    ],
+    "count": 9,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "Wonder Woman",
+      "Flash"
+    ],
+    "wordCategoryConflicts": {
+      "Wonder Woman": [
+        "Superheroes"
+      ],
+      "Flash": [
+        "Superheroes"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Elements",
+      "Money Slang"
+    ],
+    "count": 2,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "Gold",
+      "Nickel"
+    ],
+    "wordCategoryConflicts": {
+      "Gold": [
+        "Colors",
+        "Economics",
+        "Metals",
+        "Yellow Things"
+      ],
+      "Nickel": [
+        "Economics",
+        "Metals"
+      ]
+    }
+  },
+  {
+    "categories": [
       "Card Games",
+      "Types of Animals"
+    ],
+    "count": 4,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Ancient Cities",
+      "Volcanoes"
+    ],
+    "count": 6,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "Pompeii"
+    ],
+    "wordCategoryConflicts": {
+      "Pompeii": [
+        "Cities in Italy",
+        "Disasters",
+        "Movies",
+        "Place Names",
+        "Roman Empire"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Books",
+      "Male Names"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds",
+      "White Things"
+    ],
+    "count": 4,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "Swan"
+    ],
+    "wordCategoryConflicts": {
+      "Swan": [
+        "Types of Animals"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Colors",
+      "Disasters"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Airships",
+      "Colors"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Disasters",
+      "NATO Phonetic Alphabet"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Airships",
+      "NATO Phonetic Alphabet"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Single Letters",
+      "Tech Companies"
+    ],
+    "count": 4,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "X"
+    ],
+    "wordCategoryConflicts": {
+      "X": [
+        "High-Value Scrabble Letters",
+        "Movie Ratings",
+        "Roman Numerals"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Drinks",
+      "Supervillains"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Blue Things",
+      "Drinks"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Drinks",
+      "Weapons"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "DC Characters",
+      "Drinks"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Books",
+      "Metals"
+    ],
+    "count": 3,
+    "maxDepth": 1,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Movie Ratings",
+      "Single Letters"
+    ],
+    "count": 4,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "X",
+      "M"
+    ],
+    "wordCategoryConflicts": {
+      "X": [
+        "High-Value Scrabble Letters",
+        "Roman Numerals",
+        "Social Media Brands"
+      ],
+      "M": [
+        "James Bond Characters",
+        "Roman Numerals"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Female Names",
+      "Sea Monsters"
+    ],
+    "count": 6,
+    "maxDepth": 1,
+    "overlappingWords": [
+      "Siren"
+    ],
+    "wordCategoryConflicts": {
+      "Siren": [
+        "Mythical Creatures"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Mythical Creatures",
+      "Supervillains"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Juggernaut"
+    ],
+    "wordCategoryConflicts": {
+      "Juggernaut": [
+        "Marvel Characters"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Cities in Italy",
+      "Movies"
+    ],
+    "count": 7,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Pompeii"
+    ],
+    "wordCategoryConflicts": {
+      "Pompeii": [
+        "Ancient Cities",
+        "Place Names",
+        "Roman Empire"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Birds",
+      "DC Characters"
+    ],
+    "count": 9,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Penguin",
+      "Robin"
+    ],
+    "wordCategoryConflicts": {
+      "Penguin": [
+        "Types of Animals"
+      ],
+      "Robin": [
+        "Types of Animals",
+        "Superheroes"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Foods",
+      "Green Things"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Olive"
+    ],
+    "wordCategoryConflicts": {
+      "Olive": [
+        "Colors"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Flowers",
+      "Ships"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Mayflower",
+      "Violet",
+      "Iris",
+      "Heather",
+      "Buttercup"
+    ],
+    "wordCategoryConflicts": {
+      "Mayflower": [
+        "Plants"
+      ],
+      "Violet": [
+        "Colors"
+      ],
+      "Iris": [
+        "Colors",
+        "Plants"
+      ],
+      "Heather": [
+        "Plants"
+      ],
+      "Buttercup": [
+        "Plants",
+        "Colors"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Black Things",
+      "Marvel Characters"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Black Widow",
+      "Venom"
+    ],
+    "wordCategoryConflicts": {
+      "Black Widow": [
+        "Types of Animals",
+        "Superheroes"
+      ],
+      "Venom": [
+        "Supervillains"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Companies",
+      "Religious Terms"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Canon"
+    ],
+    "wordCategoryConflicts": {
+      "Canon": [
+        "Red Things"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "MLB Teams",
+      "Superheroes"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Angel"
+    ],
+    "wordCategoryConflicts": {
+      "Angel": [
+        "Marvel Characters",
+        "Mythical Creatures"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Birds",
+      "Magic"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Phoenix"
+    ],
+    "wordCategoryConflicts": {
+      "Phoenix": [
+        "Marvel Characters",
+        "Mythical Creatures",
+        "Place Names",
+        "Red Things",
+        "Superheroes"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Flower-class Corvettes",
+      "Ships"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Violet",
+      "Heather",
+      "Buttercup"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Colors"
+      ],
+      "Heather": [
+        "Plants"
+      ],
+      "Buttercup": [
+        "Plants",
+        "Colors"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Birds",
       "Superheroes"
     ],
     "count": 1,
-    "maxDepth": 2,
+    "maxDepth": 0,
     "overlappingWords": [
-      "Gambit"
+      "Robin",
+      "Phoenix"
     ],
     "wordCategoryConflicts": {
-      "Gambit": [
+      "Robin": [
+        "Types of Animals"
+      ],
+      "Phoenix": [
         "Marvel Characters",
+        "Mythical Creatures",
+        "Place Names",
         "Red Things"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Marvel Characters",
+      "Weapons"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Hawkeye"
+    ],
+    "wordCategoryConflicts": {
+      "Hawkeye": [
+        "Birds of Prey",
+        "Superheroes"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Capitals",
+      "Foods"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Roma"
+    ],
+    "wordCategoryConflicts": {
+      "Roma": [
+        "Ancient Cities",
+        "Cities in Italy",
+        "Place Names",
+        "Roman Empire"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Airships",
+      "Foods"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Roma"
+    ],
+    "wordCategoryConflicts": {
+      "Roma": [
+        "Ancient Cities",
+        "Cities in Italy",
+        "Place Names",
+        "Roman Empire"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Colors",
+      "Place Names"
+    ],
+    "count": 9,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Orange"
+    ],
+    "wordCategoryConflicts": {
+      "Orange": [
+        "Foods"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "DC Characters",
+      "Types of Animals"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Penguin",
+      "Robin"
+    ],
+    "wordCategoryConflicts": {
+      "Penguin": [
+        "Birds",
+        "Supervillains"
+      ],
+      "Robin": [
+        "Birds",
+        "Superheroes"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Superheroes",
+      "Weather"
+    ],
+    "count": 5,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Storm",
+      "Flash",
+      "Thor"
+    ],
+    "wordCategoryConflicts": {
+      "Storm": [
+        "Marvel Characters"
+      ],
+      "Flash": [
+        "Red Things"
+      ],
+      "Thor": [
+        "Marvel Characters"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Mythical Creatures",
+      "TV Shows"
+    ],
+    "count": 7,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Pokemon"
+    ],
+    "wordCategoryConflicts": {
+      "Pokemon": [
+        "Video Games"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Plant-Based Colors",
+      "Ships"
+    ],
+    "count": 10,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Violet",
+      "Buttercup"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Female Names"
+      ],
+      "Buttercup": [
+        "Female Names",
+        "Plants"
       ]
     }
   },
@@ -109,7 +814,7 @@
       "Place Names",
       "TV Shows"
     ],
-    "count": 1,
+    "count": 3,
     "maxDepth": 0,
     "overlappingWords": [],
     "wordCategoryConflicts": {}
@@ -119,7 +824,7 @@
       "Monarchs",
       "Place Names"
     ],
-    "count": 1,
+    "count": 3,
     "maxDepth": 0,
     "overlappingWords": [],
     "wordCategoryConflicts": {}
@@ -156,13 +861,86 @@
   },
   {
     "categories": [
-      "Card Games",
-      "Types of Animals"
+      "Female Names",
+      "Flowers"
     ],
     "count": 2,
     "maxDepth": 0,
-    "overlappingWords": [],
-    "wordCategoryConflicts": {}
+    "overlappingWords": [
+      "Violet",
+      "Daisy",
+      "Iris",
+      "Heather",
+      "Buttercup"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Colors",
+        "Ships"
+      ],
+      "Daisy": [
+        "Plants"
+      ],
+      "Iris": [
+        "Colors",
+        "Plants",
+        "Ships"
+      ],
+      "Heather": [
+        "Plants",
+        "Ships"
+      ],
+      "Buttercup": [
+        "Plants",
+        "Ships",
+        "Colors"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Female Names",
+      "Purple Things"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Violet"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Colors",
+        "Ships"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Female Names",
+      "Flower-class Corvettes"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Violet",
+      "Heather",
+      "Buttercup"
+    ],
+    "wordCategoryConflicts": {
+      "Violet": [
+        "Colors",
+        "Ships"
+      ],
+      "Heather": [
+        "Plants",
+        "Ships"
+      ],
+      "Buttercup": [
+        "Plants",
+        "Ships",
+        "Colors"
+      ]
+    }
   },
   {
     "categories": [
@@ -179,7 +957,7 @@
       "Cities in USA",
       "TV Shows"
     ],
-    "count": 1,
+    "count": 3,
     "maxDepth": 0,
     "overlappingWords": [],
     "wordCategoryConflicts": {}
@@ -189,7 +967,7 @@
       "State Capitals",
       "TV Shows"
     ],
-    "count": 1,
+    "count": 3,
     "maxDepth": 0,
     "overlappingWords": [],
     "wordCategoryConflicts": {}
@@ -239,7 +1017,7 @@
       "Black Things",
       "Foods"
     ],
-    "count": 1,
+    "count": 3,
     "maxDepth": 0,
     "overlappingWords": [],
     "wordCategoryConflicts": {}
@@ -249,7 +1027,7 @@
       "Foods",
       "Metals"
     ],
-    "count": 1,
+    "count": 3,
     "maxDepth": 0,
     "overlappingWords": [],
     "wordCategoryConflicts": {}
@@ -258,6 +1036,855 @@
     "categories": [
       "Foods",
       "Historic Trade Cities"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Companies",
+      "Plant-Based Colors"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Orange"
+    ],
+    "wordCategoryConflicts": {
+      "Orange": [
+        "Foods",
+        "Place Names"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Companies",
+      "Female Names"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Companies",
+      "Movies"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Companies",
+      "Single Letters"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "X"
+    ],
+    "wordCategoryConflicts": {
+      "X": [
+        "High-Value Scrabble Letters",
+        "Movie Ratings",
+        "Roman Numerals"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Companies",
+      "Programming Languages"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Companies",
+      "TV Shows"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Male Names",
+      "Supervillains"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Blue Things",
+      "Male Names"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "DC Characters",
+      "Male Names"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "MLB Teams",
+      "Male Names"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "DC Characters",
+      "Marvel Characters"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Marvel Characters",
+      "NBA Teams"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds of Prey",
+      "Male Names"
+    ],
+    "count": 16,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Sam"
+    ],
+    "wordCategoryConflicts": {
+      "Sam": [
+        "Types of Animals",
+        "Birds"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Marvel Characters",
+      "Muppet Characters"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Marvel Characters",
+      "Puppet Characters"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Blue Things",
+      "Superheroes"
+    ],
+    "count": 12,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Beast",
+      "Nightcrawler"
+    ],
+    "wordCategoryConflicts": {
+      "Beast": [
+        "Types of Animals",
+        "Marvel Characters"
+      ],
+      "Nightcrawler": [
+        "Marvel Characters"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Marvel Characters",
+      "The Rime of the Ancient Mariner"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds",
+      "Movies"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Marvel Characters",
+      "Metals"
+    ],
+    "count": 6,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Iron Man",
+      "Magneto",
+      "Colossus"
+    ],
+    "wordCategoryConflicts": {
+      "Iron Man": [
+        "Red Things",
+        "Superheroes"
+      ],
+      "Magneto": [
+        "Red Things"
+      ],
+      "Colossus": [
+        "Superheroes"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Birds",
+      "Colors"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds",
+      "Weapons"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds",
+      "Flowers"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds",
+      "Purple Things"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds",
+      "Flower-class Corvettes"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Superheroes",
+      "Supervillains"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Disasters",
+      "Superheroes"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Female Names",
+      "Red Things"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Female Names",
+      "Spices & Herbs"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Female Names",
+      "Yellow Things"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Anime",
+      "Female Names"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Female Names",
+      "Manga"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Movies",
+      "Tech Companies"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Movies",
+      "Red Things"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Capitals",
+      "Movies"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Ships",
+      "Volcanoes"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Metals",
+      "Ships"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Historic Trade Cities",
+      "Ships"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Colors",
+      "Volcanoes"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Colors",
+      "Historic Trade Cities"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "NATO Phonetic Alphabet",
+      "Volcanoes"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Historic Trade Cities",
+      "NATO Phonetic Alphabet"
+    ],
+    "count": 3,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "NATO Phonetic Alphabet",
+      "Plant-Based Colors"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Blue Things",
+      "Mythical Creatures"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "DC Characters",
+      "Mythical Creatures"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Metals",
+      "Mythical Creatures"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds of Prey",
+      "Mythical Creatures"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Programming Languages",
+      "Tech Companies"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Blue Things",
+      "Red Things"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Purple Things",
+      "Red Things"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "DC Characters",
+      "X-Men Characters"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Foods",
+      "K-pop"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Red Velvet"
+    ],
+    "wordCategoryConflicts": {
+      "Red Velvet": [
+        "Colors",
+        "Red Things"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Car Brands",
+      "K-pop"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "MLB Teams",
+      "Supervillains"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Blue Things",
+      "DC Characters"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Black Things",
+      "Blue Things"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Blue Things",
+      "White Things"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds of Prey",
+      "Blue Things"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Place Names",
+      "Saints"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Santa Maria",
+      "San Juan",
+      "San Pedro"
+    ],
+    "wordCategoryConflicts": {
+      "Santa Maria": [
+        "Female Names",
+        "Ships"
+      ],
+      "San Juan": [
+        "Ships"
+      ],
+      "San Pedro": [
+        "Ships"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Saints",
+      "Spices & Herbs"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds of Prey",
+      "Black Things"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Metals",
+      "TV Shows"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Programming Languages",
+      "Social Media Brands"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Greek Mythology",
+      "TV Shows"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Anime",
+      "Mythical Creatures"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Pokemon"
+    ],
+    "wordCategoryConflicts": {
+      "Pokemon": [
+        "Card Games",
+        "Video Games"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Anime",
+      "Greek Mythology"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Manga",
+      "Mythical Creatures"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Pokemon"
+    ],
+    "wordCategoryConflicts": {
+      "Pokemon": [
+        "Card Games",
+        "Video Games"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Greek Mythology",
+      "Manga"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Birds of Prey",
+      "MLB Teams"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Religious Terms",
+      "Sea Monsters"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "MLB Teams",
+      "Sea Monsters"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Sea Monsters",
+      "The Good Place"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Economics",
+      "Elements"
+    ],
+    "count": 2,
+    "maxDepth": 0,
+    "overlappingWords": [
+      "Gold",
+      "Silver",
+      "Nickel",
+      "Copper"
+    ],
+    "wordCategoryConflicts": {
+      "Gold": [
+        "Colors",
+        "Metals",
+        "Money Slang",
+        "Yellow Things"
+      ],
+      "Silver": [
+        "Colors",
+        "Metals",
+        "Movies"
+      ],
+      "Nickel": [
+        "Metals",
+        "Money Slang"
+      ],
+      "Copper": [
+        "Colors",
+        "Metals"
+      ]
+    }
+  },
+  {
+    "categories": [
+      "Crime",
+      "Yellow Things"
+    ],
+    "count": 1,
+    "maxDepth": 0,
+    "overlappingWords": [],
+    "wordCategoryConflicts": {}
+  },
+  {
+    "categories": [
+      "Books",
+      "Ice-themed"
     ],
     "count": 1,
     "maxDepth": 0,

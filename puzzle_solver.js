@@ -994,6 +994,27 @@ class PuzzleSolver {
             }
         }
 
+        // NEW: Check if word belongs to any category that's already assigned to a different row/column
+        const assignedCategories = new Set([...rowCategories, ...colCategories]);
+        for (const category of wordCategories) {
+            if (assignedCategories.has(category)) {
+                // This word belongs to a category that's already assigned
+                // Check if this category is assigned to a different position
+                for (let i = 0; i < 4; i++) {
+                    // Check if category is assigned to a different row
+                    if (i !== row && rowCategories[i] === category) {
+                        return false; // Word belongs to category assigned to different row
+                    }
+                }
+                for (let j = 0; j < 4; j++) {
+                    // Check if category is assigned to a different column
+                    if (j !== col && colCategories[j] === category) {
+                        return false; // Word belongs to category assigned to different column
+                    }
+                }
+            }
+        }
+
         return true;
     }
 
@@ -1007,6 +1028,8 @@ class PuzzleSolver {
         }
 
         const availableWords = this.getWordsForCategories(rowCat, colCat);
+        
+        // Filter out words that can't be placed due to category conflicts
         return availableWords.filter(word => this.canPlaceWord(grid, word, row, col, rowCategories, colCategories));
     }
 
@@ -1243,8 +1266,18 @@ class PuzzleSolver {
                     const availableWords = this.getWordsForCategories(rowCat, colCat);
 
                     if (availableWords.length > 0) {
-                        // Just pick the first available word (we're being aggressive)
-                        grid[i][j] = availableWords[0];
+                        // Filter out words that can't be placed due to category conflicts
+                        const validWords = availableWords.filter(word => 
+                            this.canPlaceWord(grid, word, i, j, rowCategories, colCategories)
+                        );
+                        
+                        if (validWords.length > 0) {
+                            // Just pick the first available word (we're being aggressive)
+                            grid[i][j] = validWords[0];
+                        } else {
+                            // No valid words due to category conflicts
+                            console.log(`Cell (${i},${j}) has no valid words due to category conflicts`);
+                        }
                     } else {
                         // This cell has no words - this is a missing edge
                         // Record this as a missing pair

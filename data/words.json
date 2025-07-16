@@ -456,7 +456,8 @@
     "Place Names",
     "Starts with LIN",
     "State Capitals",
-    "US Presidents"
+    "US Presidents",
+    "National Leaders"
   ],
   "Washington": [
     "Capitals",
@@ -467,7 +468,8 @@
     "Starts with WAS",
     "State Capitals",
     "US Presidents",
-    "US States"
+    "US States",
+    "National Leaders"
   ],
   "Victoria": [
     "British Monarchs",
@@ -485,7 +487,8 @@
     "Female Names",
     "Monarchs",
     "Queens",
-    "Starts with ELI"
+    "Starts with ELI",
+    "National Leaders"
   ],
   "Newton": [
     "Ends with TON",
@@ -830,7 +833,8 @@
     "Companies",
     "Ends with ORD",
     "River Crossings",
-    "Starts with FOR"
+    "Starts with FOR",
+    "National Leaders"
   ],
   "Honda": [
     "Car Brands",
@@ -1456,29 +1460,34 @@
   "Adams": [
     "Ends with AMS",
     "Starts with ADA",
-    "US Presidents"
+    "US Presidents",
+    "National Leaders"
   ],
   "Jefferson": [
     "Ends with SON",
     "Starts with JEF",
-    "US Presidents"
+    "US Presidents",
+    "National Leaders"
   ],
   "Roosevelt": [
     "Ends with ELT",
     "Muppet Characters",
     "Sesame Street Characters",
     "Starts with ROO",
-    "US Presidents"
+    "US Presidents",
+    "National Leaders"
   ],
   "Kennedy": [
     "Ends with EDY",
     "Starts with KEN",
-    "US Presidents"
+    "US Presidents",
+    "National Leaders"
   ],
   "Obama": [
     "Ends with AMA",
     "Starts with OBA",
-    "US Presidents"
+    "US Presidents",
+    "National Leaders"
   ],
   "Madison": [
     "Cities in USA",
@@ -1486,7 +1495,8 @@
     "Place Names",
     "Starts with MAD",
     "State Capitals",
-    "US Presidents"
+    "US Presidents",
+    "National Leaders"
   ],
   "Jackson": [
     "Cities in USA",
@@ -1494,13 +1504,15 @@
     "Place Names",
     "Starts with JAC",
     "State Capitals",
-    "US Presidents"
+    "US Presidents",
+    "National Leaders"
   ],
   "Wilson": [
     "Ends with SON",
     "Starts with WIL",
     "US Presidents",
-    "Sports Equipment"
+    "Sports Equipment",
+    "National Leaders"
   ],
   "Virginia": [
     "Ends with NIA",
@@ -2084,7 +2096,8 @@
   "Amontillado": [
     "Associated with Edgar Allan Poe",
     "Ends with ADO",
-    "Starts with AMO"
+    "Starts with AMO",
+    "Drinks"
   ],
   "Tell‑Tale": [
     "Associated with Edgar Allan Poe",
@@ -2094,7 +2107,10 @@
   "Ozymandias": [
     "Ends with IAS",
     "Poems",
-    "Starts with OZY"
+    "Starts with OZY",
+    "Supervillains",
+    "National Leaders",
+    "DC Characters"
   ],
   "Invictus": [
     "Ends with TUS",
@@ -3008,7 +3024,8 @@
     "Muppet Characters",
     "Puppet Characters",
     "Sesame Street Characters",
-    "Starts with GRO"
+    "Starts with GRO",
+    "National Leaders"
   ],
   "Statler": [
     "Ends with LER",
@@ -3078,18 +3095,21 @@
     "US Presidents",
     "Companies",
     "Ends with VER",
-    "Starts with HOO"
+    "Starts with HOO",
+    "National Leaders"
   ],
   "Grant": [
     "US Presidents",
     "Ends with ANT",
-    "Starts with GRA"
+    "Starts with GRA",
+    "National Leaders"
   ],
   "Catherine": [
     "Ends with INE",
     "Female Names",
     "Saints",
-    "Starts with CAT"
+    "Starts with CAT",
+    "National Leaders"
   ],
   "Teresa": [
     "Ends with ESA",
@@ -5544,7 +5564,6 @@
     "Ends with PUS",
     "Marvel Characters",
     "Spider-Verse Villains",
-    "Spiders",
     "Starts with DOC",
     "Supervillains"
   ],
@@ -6606,7 +6625,8 @@
     "Board Game Equipment",
     "Ends with ARD",
     "Starts with BOA",
-    "The Rime of the Ancient Mariner"
+    "The Rime of the Ancient Mariner",
+    "Wooden Objects"
   ],
   "Ocean": [
     "Blue Things",
@@ -6626,5 +6646,29 @@
     "Starts with WIT",
     "Superheroes",
     "Weapons"
+  ],
+  "Herculaneum": [
+    "Ends with EUM",
+    "Place Names",
+    "Starts with HER",
+    "Roman Empire",
+    "Ancient Cities",
+    "Disasters",
+    "Volcanoes"
+  ],
+  "Red Hood": [
+    "Ends with OOD",
+    "Starts with RED",
+    "Superheroes",
+    "Red Things",
+    "DC Characters",
+    "Clothing"
+  ],
+  "Red Riding Hood": [
+    "Ends with OOD",
+    "Starts with RED",
+    "Folklore Figures",
+    "Red Things",
+    "Clothing"
   ]
 }

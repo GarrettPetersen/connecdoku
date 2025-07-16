@@ -44,6 +44,7 @@
     "Baghdad",
     "Carthage",
     "Constantinople",
+    "Herculaneum",
     "Jerusalem",
     "Mecca",
     "Paris",
@@ -576,6 +577,8 @@
     "Glove",
     "Hood",
     "Iron",
+    "Red Hood",
+    "Red Riding Hood",
     "Uniform"
   ],
   "Coffee": [
@@ -759,7 +762,9 @@
     "Joker",
     "Lex Luthor",
     "Mr. Freeze",
+    "Ozymandias",
     "Penguin",
+    "Red Hood",
     "Riddler",
     "Robin",
     "Superman",
@@ -808,6 +813,7 @@
     "Deepwater Horizon",
     "Fallout",
     "Fukushima",
+    "Herculaneum",
     "Hindenburg",
     "Katrina",
     "Krakatoa",
@@ -838,6 +844,7 @@
     "Sheep"
   ],
   "Drinks": [
+    "Amontillado",
     "CHA",
     "Coffee",
     "Green Tea",
@@ -1599,6 +1606,9 @@
   ],
   "Ends with ETO": [
     "Magneto"
+  ],
+  "Ends with EUM": [
+    "Herculaneum"
   ],
   "Ends with EUS": [
     "Odysseus",
@@ -2451,7 +2461,9 @@
   "Ends with OOD": [
     "Blood",
     "Good",
-    "Hood"
+    "Hood",
+    "Red Hood",
+    "Red Riding Hood"
   ],
   "Ends with OOK": [
     "Notebook"
@@ -3261,7 +3273,8 @@
     "Coyote",
     "Loki",
     "Maui",
-    "Puck"
+    "Puck",
+    "Red Riding Hood"
   ],
   "Foods": [
     "Albatross",
@@ -4018,9 +4031,26 @@
     "Washington"
   ],
   "National Leaders": [
+    "Adams",
     "Bismarck",
     "Caesar",
-    "Victoria"
+    "Catherine",
+    "Elizabeth",
+    "Ford",
+    "Grant",
+    "Grover",
+    "Hoover",
+    "Jackson",
+    "Jefferson",
+    "Kennedy",
+    "Lincoln",
+    "Madison",
+    "Obama",
+    "Ozymandias",
+    "Roosevelt",
+    "Victoria",
+    "Washington",
+    "Wilson"
   ],
   "Ninja Terms": [
     "Naruto"
@@ -4165,6 +4195,7 @@
     "Harrisburg",
     "Hartford",
     "Helena",
+    "Herculaneum",
     "Honolulu",
     "Hudson",
     "India",
@@ -4392,6 +4423,8 @@
     "Magneto",
     "Phoenix",
     "RED",
+    "Red Hood",
+    "Red Riding Hood",
     "Red Velvet",
     "Rose",
     "Ruby",
@@ -4476,6 +4509,7 @@
     "Constantinople",
     "Gaul",
     "Germania",
+    "Herculaneum",
     "Hispania",
     "Illyria",
     "Pompeii",
@@ -4765,7 +4799,6 @@
   ],
   "Spiders": [
     "Black Widow",
-    "Doctor Octopus",
     "Spider-Man"
   ],
   "Sports": [
@@ -5762,6 +5795,7 @@
   ],
   "Starts with HER": [
     "Hera",
+    "Herculaneum",
     "Hercules",
     "Hermes",
     "Hermione",
@@ -6594,6 +6628,8 @@
   "Starts with RED": [
     "RED",
     "Red",
+    "Red Hood",
+    "Red Riding Hood",
     "Red Velvet",
     "Reddit"
   ],
@@ -7259,6 +7295,7 @@
     "Nightcrawler",
     "Phoenix",
     "Professor X",
+    "Red Hood",
     "Robin",
     "Rogue",
     "Shadowcat",
@@ -7281,6 +7318,7 @@
     "Magneto",
     "Mr. Freeze",
     "Mystique",
+    "Ozymandias",
     "Penguin",
     "Riddler",
     "Sabretooth",
@@ -7624,6 +7662,7 @@
     "Etna",
     "Eyjafjallajokull",
     "Fuji",
+    "Herculaneum",
     "Krakatoa",
     "Pinatubo",
     "Pompeii",
@@ -7684,6 +7723,7 @@
   ],
   "Wooden Objects": [
     "Bat",
+    "Board",
     "Bow",
     "Chisel",
     "Club",
