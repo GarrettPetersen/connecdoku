@@ -54,6 +54,9 @@
     "Samarkand",
     "Troy"
   ],
+  "Animals": [
+    "Pinky"
+  ],
   "Anime": [
     "Dragon Ball",
     "Naruto",
@@ -306,7 +309,8 @@
   "Body Parts": [
     "Achilles",
     "Arm",
-    "Hearts"
+    "Hearts",
+    "Pinky"
   ],
   "Books": [
     "IT",
@@ -1157,7 +1161,8 @@
     "Vast"
   ],
   "Ends with ATA": [
-    "Data"
+    "Data",
+    "Pinata"
   ],
   "Ends with ATE": [
     "Skate"
@@ -1350,6 +1355,9 @@
   "Ends with CNN": [
     "CNN"
   ],
+  "Ends with COG": [
+    "Cog"
+  ],
   "Ends with CON": [
     "Bacon",
     "CON",
@@ -1464,6 +1472,7 @@
   ],
   "Ends with EAR": [
     "Bear",
+    "Gear",
     "King Lear",
     "Polar Bear",
     "Spear"
@@ -1486,7 +1495,8 @@
     "Greek"
   ],
   "Ends with EEL": [
-    "Steel"
+    "Steel",
+    "Wheel"
   ],
   "Ends with EEN": [
     "Green",
@@ -1900,6 +1910,7 @@
     "Lion",
     "Onion",
     "Orion",
+    "Pinion",
     "Scorpion",
     "Stallion"
   ],
@@ -2295,6 +2306,9 @@
   "Ends with NIX": [
     "Phoenix"
   ],
+  "Ends with NKY": [
+    "Pinky"
+  ],
   "Ends with NNA": [
     "Anna",
     "Madonna"
@@ -2340,6 +2354,7 @@
     "Dante"
   ],
   "Ends with NTO": [
+    "Pinto",
     "Sacramento",
     "Toronto"
   ],
@@ -2907,6 +2922,7 @@
     "Hilton",
     "Krypton",
     "Newton",
+    "Piston",
     "Trenton",
     "Washington"
   ],
@@ -3059,6 +3075,7 @@
     "Dover",
     "Grover",
     "Hoover",
+    "Lever",
     "Silver"
   ],
   "Ends with VET": [
@@ -3327,6 +3344,7 @@
     "Pepper",
     "Pickle",
     "Pie",
+    "Pinto",
     "Ranch",
     "Ratatouille",
     "Red Velvet",
@@ -3775,6 +3793,14 @@
     "Ray",
     "Zero"
   ],
+  "Mechanical Parts": [
+    "Cog",
+    "Gear",
+    "Lever",
+    "Pinion",
+    "Piston",
+    "Wheel"
+  ],
   "Media Companies": [
     "CNN",
     "Disney",
@@ -4019,6 +4045,7 @@
     "Magic",
     "Nugget",
     "Pelican",
+    "Piston",
     "Raptor",
     "Sun",
     "Thunder",
@@ -4708,6 +4735,7 @@
     "Ark Royal",
     "Bismarck",
     "Buttercup",
+    "Cog",
     "Edmund Fitzgerald",
     "Enterprise",
     "Graf Zeppelin",
@@ -4806,7 +4834,10 @@
     "Santa Maria"
   ],
   "Spanish Words": [
-    "Diablo"
+    "Diablo",
+    "Pinata",
+    "Pinta",
+    "Pinto"
   ],
   "Spices & Herbs": [
     "Basil",
@@ -5304,6 +5335,9 @@
   "Starts with COF": [
     "Coffee"
   ],
+  "Starts with COG": [
+    "Cog"
+  ],
   "Starts with COI": [
     "Coin"
   ],
@@ -5674,6 +5708,9 @@
   ],
   "Starts with GAZ": [
     "Gazette"
+  ],
+  "Starts with GEA": [
+    "Gear"
   ],
   "Starts with GEM": [
     "Gemini"
@@ -6123,6 +6160,7 @@
     "Lettuce"
   ],
   "Starts with LEV": [
+    "Lever",
     "Leviathan"
   ],
   "Starts with LEX": [
@@ -6534,14 +6572,19 @@
     "Pierre"
   ],
   "Starts with PIN": [
+    "Pinata",
     "Pinatubo",
     "Pine",
+    "Pinion",
     "Pink Panther",
-    "Pinta"
+    "Pinky",
+    "Pinta",
+    "Pinto"
   ],
   "Starts with PIS": [
     "Pisa",
-    "Pisces"
+    "Pisces",
+    "Piston"
   ],
   "Starts with PIX": [
     "Pixar"
@@ -7140,6 +7183,9 @@
   "Starts with WHA": [
     "Whale"
   ],
+  "Starts with WHE": [
+    "Wheel"
+  ],
   "Starts with WHI": [
     "Whiskey",
     "Whist",
@@ -7705,6 +7751,9 @@
     "Tambora",
     "Thera",
     "Vesuvius"
+  ],
+  "Warner Bros. Characters": [
+    "Pinky"
   ],
   "Wars": [
     "Total War"

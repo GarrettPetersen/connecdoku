@@ -1,55 +1,24 @@
 {
   "gridSize": "4x2",
-  "totalPuzzles": 5,
+  "totalPuzzles": 4,
   "puzzles": [
     {
       "grid": [
         [
-          "Pinta",
-          "Pine"
+          "Victory",
+          "Victor"
         ],
         [
           "Bismarck",
-          "Birch"
+          "India"
         ],
         [
           "Albatross",
-          "Coral"
+          "Lima"
         ],
         [
           "Violet",
-          "Daisy"
-        ]
-      ],
-      "rowCategories": [
-        "Starts with PIN",
-        "Place Names",
-        "Types of Animals",
-        "Female Names"
-      ],
-      "colCategories": [
-        "Ships",
-        "Plants"
-      ],
-      "hash": "Pinta|Pine||Bismarck|Birch||Albatross|Coral||Violet|Daisy||Starts with PIN|Place Names|Types of Animals|Female Names|Ships|Plants"
-    },
-    {
-      "grid": [
-        [
-          "Victor",
-          "Victory"
-        ],
-        [
-          "India",
-          "Bismarck"
-        ],
-        [
-          "Lima",
-          "Albatross"
-        ],
-        [
-          "Juliet",
-          "Violet"
+          "Juliet"
         ]
       ],
       "rowCategories": [
@@ -59,10 +28,10 @@
         "Female Names"
       ],
       "colCategories": [
-        "NATO Phonetic Alphabet",
-        "Ships"
+        "Ships",
+        "NATO Phonetic Alphabet"
       ],
-      "hash": "Victor|Victory||India|Bismarck||Lima|Albatross||Juliet|Violet||Starts with VIC|Place Names|Foods|Female Names|NATO Phonetic Alphabet|Ships"
+      "hash": "Victory|Victor||Bismarck|India||Albatross|Lima||Violet|Juliet||Starts with VIC|Place Names|Foods|Female Names|Ships|NATO Phonetic Alphabet"
     },
     {
       "grid": [
