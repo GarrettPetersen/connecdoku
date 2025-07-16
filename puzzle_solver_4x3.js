@@ -436,8 +436,8 @@ class CategoryGraph4x3 {
                         });
 
                         // Limit total combinations to prevent memory issues
-                        if (combinations.length >= 1000) {
-                            console.log(`Reached limit of 1000 combinations, stopping search...`);
+                        if (combinations.length >= 100000) {
+                            console.log(`Reached limit of 100000 combinations, stopping search...`);
                             return combinations;
                         }
                     }
@@ -542,7 +542,7 @@ class CategoryGraph4x3 {
 
 // Puzzle solver class for 4x3 grids
 class PuzzleSolver4x3 {
-    constructor(maxIterations = 100000) {
+    constructor(maxIterations = 100000000) {
         this.maxIterations = maxIterations;
         this.validPuzzles = [];
         this.iterationCount = 0;
