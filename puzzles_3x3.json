@@ -1,26 +1,98 @@
 [
   {
     "rows": [
-      "Ends with NIA",
-      "Airships",
-      "Ancient Cities"
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
     ],
     "cols": [
-      "Disasters",
-      "Place Names",
-      "Roman Empire"
+      "Commonwealth Nations",
+      "Ends with BIA",
+      "Ends with NIA"
     ],
     "size": "3x3",
     "solutions": [
-      "Lusitania",
-      "California",
-      "Britannia",
-      "Hindenburg",
-      "Akron",
+      "South Africa",
+      "Gambia",
+      "Mauritania",
+      "India",
+      "Saudi Arabia",
+      "Armenia",
+      "United Kingdom",
+      "Serbia",
+      "Albania"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with ANA",
+      "Airships",
+      "Birds"
+    ],
+    "cols": [
+      "Cities",
+      "Foods",
+      "Place Names"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Tijuana",
+      "Banana",
+      "Botswana",
+      "Los Angeles",
       "Roma",
-      "Herculaneum",
-      "Athens",
-      "Carthage"
+      "Akron",
+      "Phoenix",
+      "Albatross",
+      "Turkey"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with NTO",
+      "Airships",
+      "Birds"
+    ],
+    "cols": [
+      "Cities",
+      "Foods",
+      "Place Names"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Sacramento",
+      "Pinto",
+      "Toronto",
+      "Los Angeles",
+      "Roma",
+      "Akron",
+      "Phoenix",
+      "Albatross",
+      "Turkey"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with SIA",
+      "Commonwealth Nations",
+      "Ends with BIA"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Tunisia",
+      "Indonesia",
+      "Russia",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Gambia",
+      "Saudi Arabia",
+      "Serbia"
     ]
   },
   {
@@ -49,54 +121,6 @@
   },
   {
     "rows": [
-      "Mammals",
-      "Arthropods",
-      "Birds"
-    ],
-    "cols": [
-      "Band Namesakes",
-      "Ends with ANT",
-      "Predators"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Monkey",
-      "Elephant",
-      "Bear",
-      "Beetle",
-      "Ant",
-      "Scorpion",
-      "Crow",
-      "Cormorant",
-      "Eagle"
-    ]
-  },
-  {
-    "rows": [
-      "Muppet Characters",
-      "Arthropods",
-      "Birds"
-    ],
-    "cols": [
-      "Band Namesakes",
-      "Foods",
-      "Types of Animals"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Animal",
-      "Waldorf",
-      "Sam",
-      "Beetle",
-      "Crab",
-      "Lobster",
-      "Crow",
-      "Albatross",
-      "Blue Jay"
-    ]
-  },
-  {
-    "rows": [
       "Predators",
       "Band Namesakes",
       "Ends with ANT"
@@ -117,30 +141,6 @@
       "Ant",
       "Cormorant",
       "Elephant"
-    ]
-  },
-  {
-    "rows": [
-      "Puppet Characters",
-      "Arthropods",
-      "Birds"
-    ],
-    "cols": [
-      "Band Namesakes",
-      "Foods",
-      "Types of Animals"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Animal",
-      "Waldorf",
-      "Sam",
-      "Beetle",
-      "Crab",
-      "Lobster",
-      "Crow",
-      "Albatross",
-      "Blue Jay"
     ]
   },
   {
@@ -169,6 +169,30 @@
   },
   {
     "rows": [
+      "Saints",
+      "Airships",
+      "Birds"
+    ],
+    "cols": [
+      "Cities",
+      "Place Names",
+      "Ships"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "San Juan",
+      "San Pedro",
+      "Santa Maria",
+      "Los Angeles",
+      "Akron",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Turkey",
+      "Albatross"
+    ]
+  },
+  {
+    "rows": [
       "Spider-Verse Villains",
       "Avengers",
       "Birds"
@@ -189,6 +213,78 @@
       "Eagle",
       "Crow",
       "Albatross"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with CHI",
+      "Airships",
+      "Birds"
+    ],
+    "cols": [
+      "Cities",
+      "Foods",
+      "Place Names"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Chicago",
+      "Chicken",
+      "Chile",
+      "Los Angeles",
+      "Roma",
+      "Akron",
+      "Phoenix",
+      "Albatross",
+      "Turkey"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with MAL",
+      "Commonwealth Nations",
+      "Ends with BIA"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Malawi",
+      "Malaysia",
+      "Malta",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Gambia",
+      "Saudi Arabia",
+      "Serbia"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with MON",
+      "Airships",
+      "Birds"
+    ],
+    "cols": [
+      "Band Namesakes",
+      "Cities",
+      "Place Names"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Monkey",
+      "Monaco",
+      "Mongolia",
+      "Zeppelin",
+      "Los Angeles",
+      "Akron",
+      "Crow",
+      "Phoenix",
+      "Turkey"
     ]
   },
   {

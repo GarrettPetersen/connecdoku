@@ -1,114 +1,142 @@
 [
   {
     "rows": [
-      "Ends with NIA",
-      "Airships",
-      "Ancient Cities",
-      "Cities in Italy"
+      "Ends with SIA",
+      "Commonwealth Nations",
+      "Ends with BIA",
+      "Ends with NIA"
     ],
     "cols": [
-      "Disasters",
-      "Place Names",
-      "Roman Empire"
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
     ],
     "size": "4x3",
     "solutions": [
-      "Lusitania",
-      "California",
-      "Britannia",
-      "Hindenburg",
-      "Akron",
-      "Roma",
-      "Herculaneum",
-      "Athens",
-      "Carthage",
-      "Pompeii",
-      "Florence",
-      "Rome"
+      "Tunisia",
+      "Indonesia",
+      "Russia",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Gambia",
+      "Saudi Arabia",
+      "Serbia",
+      "Mauritania",
+      "Armenia",
+      "Albania"
     ]
   },
   {
     "rows": [
-      "Ends with NIA",
-      "Airships",
-      "Ancient Cities",
-      "Cities in Italy"
+      "Ends with SIA",
+      "Commonwealth Nations",
+      "Ends with BIA",
+      "Ends with NIA"
     ],
     "cols": [
-      "Disasters",
-      "Place Names",
-      "Roman Empire"
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
     ],
     "size": "4x3",
     "solutions": [
-      "Lusitania",
-      "California",
-      "Britannia",
-      "Hindenburg",
-      "Akron",
-      "Roma",
-      "Herculaneum",
-      "Athens",
-      "Carthage",
-      "Pompeii",
-      "Florence",
-      "Rome"
+      "Tunisia",
+      "Indonesia",
+      "Russia",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Gambia",
+      "Saudi Arabia",
+      "Serbia",
+      "Mauritania",
+      "Armenia",
+      "Albania"
     ]
   },
   {
     "rows": [
-      "Muppet Characters",
-      "Arthropods",
+      "Starts with MAL",
+      "Commonwealth Nations",
+      "Ends with BIA",
+      "Ends with NIA"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Malawi",
+      "Malaysia",
+      "Malta",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Gambia",
+      "Saudi Arabia",
+      "Serbia",
+      "Mauritania",
+      "Armenia",
+      "Albania"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with MAL",
+      "Commonwealth Nations",
+      "Ends with BIA",
+      "Ends with NIA"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Malawi",
+      "Malaysia",
+      "Malta",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Gambia",
+      "Saudi Arabia",
+      "Serbia",
+      "Mauritania",
+      "Armenia",
+      "Albania"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with MON",
+      "Airships",
       "Birds",
-      "Ends with ION"
+      "Ends with LES"
     ],
     "cols": [
       "Band Namesakes",
-      "Foods",
-      "Types of Animals"
+      "Cities",
+      "Place Names"
     ],
     "size": "4x3",
     "solutions": [
-      "Animal",
-      "Waldorf",
-      "Sam",
-      "Beetle",
-      "Crab",
-      "Lobster",
+      "Monkey",
+      "Monaco",
+      "Mongolia",
+      "Zeppelin",
+      "Los Angeles",
+      "Akron",
       "Crow",
-      "Albatross",
-      "Blue Jay",
-      "Scorpion",
-      "Onion",
-      "Lion"
-    ]
-  },
-  {
-    "rows": [
-      "Puppet Characters",
-      "Arthropods",
-      "Birds",
-      "Ends with ION"
-    ],
-    "cols": [
-      "Band Namesakes",
-      "Foods",
-      "Types of Animals"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Animal",
-      "Waldorf",
-      "Sam",
-      "Beetle",
-      "Crab",
-      "Lobster",
-      "Crow",
-      "Albatross",
-      "Blue Jay",
-      "Scorpion",
-      "Onion",
-      "Lion"
+      "Phoenix",
+      "Turkey",
+      "Beatles",
+      "Naples",
+      "Seychelles"
     ]
   }
 ]
