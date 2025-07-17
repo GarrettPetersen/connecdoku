@@ -30,7 +30,8 @@
     "Los Angeles",
     "Macon",
     "Roma",
-    "Shenandoah"
+    "Shenandoah",
+    "Zeppelin"
   ],
   "Alliances": [
     "Alliance",
@@ -55,7 +56,8 @@
     "Troy"
   ],
   "Animals": [
-    "Pinky"
+    "Pinky",
+    "Turkey"
   ],
   "Anime": [
     "Dragon Ball",
@@ -159,7 +161,8 @@
     "Crow",
     "Monkey",
     "Queen",
-    "Scorpion"
+    "Scorpion",
+    "Zeppelin"
   ],
   "Battlestar Galactica": [
     "Apollo",
@@ -211,7 +214,8 @@
     "Seahawk",
     "Sparrow",
     "Swan",
-    "Tern"
+    "Tern",
+    "Turkey"
   ],
   "Birds of Prey": [
     "Eagle",
@@ -450,6 +454,9 @@
     "N",
     "O"
   ],
+  "Chemicals": [
+    "Ammonia"
+  ],
   "Chinese Dynasties": [
     "Han",
     "Ming",
@@ -471,6 +478,109 @@
     "Toblerone",
     "Twix"
   ],
+  "Cities": [
+    "Albany",
+    "Alexandria",
+    "Annapolis",
+    "Antioch",
+    "Athens",
+    "Atlanta",
+    "Augusta",
+    "Austin",
+    "Baghdad",
+    "Bari",
+    "Baton Rouge",
+    "Beijing",
+    "Berlin",
+    "Bismarck",
+    "Boise",
+    "Bologna",
+    "Boston",
+    "Cancun",
+    "Caprese",
+    "Carson City",
+    "Carthage",
+    "Charleston",
+    "Cheyenne",
+    "Chicago",
+    "Columbia",
+    "Columbus",
+    "Concord",
+    "Constantinople",
+    "Dallas",
+    "Delhi",
+    "Denver",
+    "Des Moines",
+    "Dover",
+    "Dublin",
+    "Florence",
+    "Frankfort",
+    "Genoa",
+    "Harrisburg",
+    "Hartford",
+    "Helena",
+    "Herculaneum",
+    "Honolulu",
+    "Hudson",
+    "Indianapolis",
+    "Jackson",
+    "Jaipur",
+    "Jefferson City",
+    "Jerusalem",
+    "Juneau",
+    "Karachi",
+    "Lansing",
+    "Lima",
+    "Lincoln",
+    "Little Rock",
+    "London",
+    "Los Angeles",
+    "Madison",
+    "Mecca",
+    "Miami",
+    "Milan",
+    "Montgomery",
+    "Montpelier",
+    "Naples",
+    "Nashville",
+    "New York",
+    "Oklahoma City",
+    "Olympia",
+    "Paris",
+    "Phoenix",
+    "Pierre",
+    "Pisa",
+    "Pompeii",
+    "Providence",
+    "Raleigh",
+    "Richmond",
+    "Roma",
+    "Rome",
+    "Sacramento",
+    "Saint Paul",
+    "Salem",
+    "Salt Lake City",
+    "Samarkand",
+    "San Diego",
+    "San Jose",
+    "San Juan",
+    "Santa Fe",
+    "Seattle",
+    "Seoul",
+    "Singapore",
+    "Springfield",
+    "Tallahassee",
+    "Tijuana",
+    "Tokyo",
+    "Topeka",
+    "Toronto",
+    "Trenton",
+    "Troy",
+    "Turin",
+    "Venice",
+    "Verona",
+    "Washington"
+  ],
   "Cities in Asia": [
     "Baghdad",
     "Beijing",
@@ -480,6 +590,7 @@
     "Karachi",
     "Samarkand",
     "Seoul",
+    "Singapore",
     "Tokyo"
   ],
   "Cities in Europe": [
@@ -506,10 +617,70 @@
     "Verona"
   ],
   "Cities in North America": [
+    "Albany",
+    "Annapolis",
+    "Atlanta",
+    "Augusta",
+    "Austin",
+    "Baton Rouge",
+    "Bismarck",
+    "Boise",
+    "Boston",
     "Cancun",
+    "Carson City",
+    "Charleston",
+    "Cheyenne",
+    "Chicago",
+    "Columbia",
+    "Columbus",
+    "Concord",
+    "Dallas",
+    "Denver",
+    "Des Moines",
+    "Dover",
+    "Frankfort",
+    "Harrisburg",
+    "Hartford",
+    "Helena",
+    "Honolulu",
+    "Hudson",
+    "Indianapolis",
+    "Jackson",
+    "Jefferson City",
+    "Juneau",
+    "Lansing",
+    "Lincoln",
+    "Little Rock",
+    "Los Angeles",
+    "Madison",
+    "Miami",
+    "Montgomery",
+    "Montpelier",
+    "Nashville",
+    "New York",
+    "Oklahoma City",
+    "Olympia",
+    "Phoenix",
+    "Pierre",
+    "Providence",
+    "Raleigh",
+    "Richmond",
+    "Sacramento",
+    "Saint Paul",
+    "Salem",
+    "Salt Lake City",
+    "San Diego",
+    "San Jose",
     "San Juan",
+    "Santa Fe",
+    "Seattle",
+    "Springfield",
+    "Tallahassee",
     "Tijuana",
-    "Toronto"
+    "Topeka",
+    "Toronto",
+    "Trenton",
+    "Washington"
   ],
   "Cities in South America": [
     "Lima"
@@ -713,22 +884,409 @@
     "Radiator"
   ],
   "Countries": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Angola",
+    "Antigua and Barbuda",
+    "Argentina",
+    "Armenia",
     "Australia",
+    "Austria",
+    "Azerbaijan",
+    "Bahamas",
+    "Bahrain",
+    "Bangladesh",
+    "Barbados",
+    "Belarus",
+    "Belgium",
+    "Belize",
+    "Benin",
+    "Bhutan",
+    "Bolivia",
+    "Bosnia and Herzegovina",
+    "Botswana",
     "Brazil",
+    "Brunei",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cabo Verde",
+    "Cambodia",
+    "Cameroon",
     "Canada",
+    "Central African Republic",
+    "Chad",
+    "Chile",
     "China",
+    "Colombia",
+    "Comoros",
+    "Congo",
+    "Costa Rica",
+    "Croatia",
+    "Cuba",
+    "Cyprus",
+    "Czech Republic",
+    "Democratic Republic of the Congo",
+    "Denmark",
+    "Djibouti",
+    "Dominica",
+    "Dominican Republic",
+    "East Timor",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "Equatorial Guinea",
+    "Eritrea",
+    "Estonia",
+    "Eswatini",
+    "Ethiopia",
+    "Fiji",
+    "Finland",
+    "France",
+    "Gabon",
+    "Gambia",
+    "Georgia",
+    "Germany",
+    "Ghana",
+    "Greece",
+    "Greek",
+    "Grenada",
+    "Guatemala",
+    "Guinea",
+    "Guinea-Bissau",
+    "Guyana",
+    "Haiti",
+    "Honduras",
+    "Hungary",
+    "Iceland",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Ivory Coast",
+    "Jamaica",
+    "Japan",
+    "Jordan",
+    "Kazakhstan",
+    "Kenya",
+    "Kiribati",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Laos",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Liechtenstein",
+    "Lithuania",
+    "Luxembourg",
+    "Madagascar",
+    "Malawi",
+    "Malaysia",
+    "Maldives",
+    "Mali",
+    "Malta",
+    "Marshall Islands",
+    "Mauritania",
+    "Mauritius",
+    "Mexico",
+    "Micronesia",
+    "Moldova",
+    "Monaco",
+    "Mongolia",
+    "Montenegro",
+    "Morocco",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
+    "Nauru",
+    "Nepal",
+    "Netherlands",
+    "New Zealand",
+    "Nicaragua",
+    "Niger",
+    "Nigeria",
+    "North Korea",
+    "North Macedonia",
+    "Norway",
+    "Oman",
+    "Pakistan",
+    "Palau",
+    "Panama",
+    "Papua New Guinea",
+    "Paraguay",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Qatar",
+    "Romania",
+    "Russia",
+    "Rwanda",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Saint Vincent and the Grenadines",
+    "Samoa",
+    "San Marino",
+    "Sao Tome and Principe",
+    "Saudi Arabia",
+    "Senegal",
+    "Serbia",
+    "Seychelles",
+    "Sierra Leone",
+    "Singapore",
+    "Slovakia",
+    "Slovenia",
+    "Solomon Islands",
+    "Somalia",
+    "South Africa",
+    "South Korea",
+    "South Sudan",
+    "Spain",
+    "Sri Lanka",
+    "Sudan",
+    "Suriname",
+    "Sweden",
+    "Switzerland",
+    "Syria",
+    "Taiwan",
+    "Tajikistan",
+    "Tanzania",
+    "Thailand",
+    "Togo",
+    "Tonga",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Turkey",
+    "Turkmenistan",
+    "Tuvalu",
+    "Uganda",
+    "Ukraine",
+    "United Arab Emirates",
+    "United Kingdom",
+    "United States",
+    "Uruguay",
+    "Uzbekistan",
+    "Vanuatu",
+    "Vatican City",
+    "Venezuela",
+    "Vietnam",
+    "Yemen",
+    "Zambia",
+    "Zimbabwe"
+  ],
+  "Countries in Africa": [
+    "Algeria",
+    "Angola",
+    "Benin",
+    "Botswana",
+    "Burkina Faso",
+    "Burundi",
+    "Cabo Verde",
+    "Cameroon",
+    "Central African Republic",
+    "Chad",
+    "Comoros",
+    "Congo",
+    "Democratic Republic of the Congo",
+    "Djibouti",
+    "Egypt",
+    "Equatorial Guinea",
+    "Eritrea",
+    "Eswatini",
+    "Ethiopia",
+    "Gabon",
+    "Gambia",
+    "Ghana",
+    "Guinea",
+    "Guinea-Bissau",
+    "Ivory Coast",
+    "Kenya",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Madagascar",
+    "Malawi",
+    "Mali",
+    "Mauritania",
+    "Mauritius",
+    "Morocco",
+    "Mozambique",
+    "Namibia",
+    "Niger",
+    "Nigeria",
+    "Rwanda",
+    "Sao Tome and Principe",
+    "Senegal",
+    "Seychelles",
+    "Sierra Leone",
+    "Somalia",
+    "South Africa",
+    "South Sudan",
+    "Sudan",
+    "Tanzania",
+    "Togo",
+    "Tunisia",
+    "Uganda",
+    "Zambia",
+    "Zimbabwe"
+  ],
+  "Countries in Asia": [
+    "Afghanistan",
+    "Armenia",
+    "Azerbaijan",
+    "Bahrain",
+    "Bangladesh",
+    "Bhutan",
+    "Cambodia",
+    "China",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Israel",
+    "Japan",
+    "Jordan",
+    "Kazakhstan",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Laos",
+    "Lebanon",
+    "Malaysia",
+    "Maldives",
+    "Mongolia",
+    "Myanmar",
+    "Nepal",
+    "North Korea",
+    "Oman",
+    "Pakistan",
+    "Palau",
+    "Philippines",
+    "Qatar",
+    "Russia",
+    "Saudi Arabia",
+    "Singapore",
+    "South Korea",
+    "Sri Lanka",
+    "Syria",
+    "Taiwan",
+    "Tajikistan",
+    "Thailand",
+    "Turkey",
+    "Turkmenistan",
+    "United Arab Emirates",
+    "Uzbekistan",
+    "Vietnam",
+    "Yemen"
+  ],
+  "Countries in Europe": [
+    "Albania",
+    "Andorra",
+    "Austria",
+    "Belarus",
+    "Belgium",
+    "Bosnia and Herzegovina",
+    "Bulgaria",
+    "Croatia",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Estonia",
+    "Finland",
     "France",
     "Georgia",
     "Germany",
     "Greece",
-    "Greek",
-    "India",
+    "Hungary",
+    "Iceland",
+    "Ireland",
     "Italy",
-    "Japan",
-    "Mexico",
+    "Latvia",
+    "Liechtenstein",
+    "Lithuania",
+    "Luxembourg",
+    "Malta",
+    "Moldova",
+    "Monaco",
+    "Montenegro",
+    "Netherlands",
+    "North Macedonia",
+    "Norway",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Russia",
+    "San Marino",
+    "Serbia",
+    "Slovakia",
+    "Slovenia",
     "Spain",
-    "Turkey",
-    "United Kingdom"
+    "Sweden",
+    "Switzerland",
+    "Ukraine",
+    "United Kingdom",
+    "Vatican City"
+  ],
+  "Countries in North America": [
+    "Antigua and Barbuda",
+    "Bahamas",
+    "Barbados",
+    "Belize",
+    "Canada",
+    "Costa Rica",
+    "Cuba",
+    "Dominica",
+    "Dominican Republic",
+    "El Salvador",
+    "Grenada",
+    "Guatemala",
+    "Haiti",
+    "Honduras",
+    "Jamaica",
+    "Mexico",
+    "Nicaragua",
+    "Panama",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Saint Vincent and the Grenadines",
+    "Trinidad and Tobago",
+    "United States"
+  ],
+  "Countries in Oceania": [
+    "Australia",
+    "Fiji",
+    "Kiribati",
+    "Marshall Islands",
+    "Micronesia",
+    "Nauru",
+    "New Zealand",
+    "Palau",
+    "Papua New Guinea",
+    "Samoa",
+    "Solomon Islands",
+    "Tonga",
+    "Tuvalu",
+    "Vanuatu"
+  ],
+  "Countries in South America": [
+    "Argentina",
+    "Bolivia",
+    "Brazil",
+    "Chile",
+    "Colombia",
+    "Ecuador",
+    "Guyana",
+    "Paraguay",
+    "Peru",
+    "Suriname",
+    "Uruguay",
+    "Venezuela"
   ],
   "Cowboy Terms": [
     "Bronco",
@@ -966,11 +1524,13 @@
   ],
   "Ends with ACO": [
     "Draco",
+    "Monaco",
     "Taco"
   ],
   "Ends with ADA": [
     "Canada",
     "Enchilada",
+    "Grenada",
     "Nevada",
     "Prada"
   ],
@@ -982,6 +1542,9 @@
     "Amontillado",
     "Avocado",
     "Prado"
+  ],
+  "Ends with AEL": [
+    "Israel"
   ],
   "Ends with AFT": [
     "Raft"
@@ -995,19 +1558,27 @@
     "Sage"
   ],
   "Ends with AGO": [
-    "Chicago"
+    "Chicago",
+    "Trinidad and Tobago"
   ],
   "Ends with AIN": [
+    "Bahrain",
     "Rain",
     "Spain"
   ],
   "Ends with AIR": [
     "Chair"
   ],
+  "Ends with AIT": [
+    "Kuwait"
+  ],
   "Ends with AKE": [
     "Cake",
     "Drake",
     "Makemake"
+  ],
+  "Ends with ALA": [
+    "Guatemala"
   ],
   "Ends with ALD": [
     "Donald",
@@ -1020,7 +1591,8 @@
     "Whale"
   ],
   "Ends with ALI": [
-    "Denali"
+    "Denali",
+    "Mali"
   ],
   "Ends with ALL": [
     "Ball",
@@ -1034,11 +1606,18 @@
   "Ends with ALT": [
     "Cobalt"
   ],
+  "Ends with ALU": [
+    "Tuvalu"
+  ],
   "Ends with ALY": [
     "Italy"
   ],
   "Ends with AMA": [
-    "Obama"
+    "Obama",
+    "Panama"
+  ],
+  "Ends with AME": [
+    "Suriname"
   ],
   "Ends with AMI": [
     "Miami",
@@ -1053,15 +1632,24 @@
   ],
   "Ends with ANA": [
     "Banana",
+    "Botswana",
+    "Ghana",
+    "Guyana",
     "Tijuana"
   ],
   "Ends with ANC": [
     "Mont Blanc"
   ],
   "Ends with AND": [
+    "Finland",
     "Greenland",
+    "Iceland",
+    "Ireland",
     "New Zealand",
+    "Poland",
     "Samarkand",
+    "Switzerland",
+    "Thailand",
     "Wand"
   ],
   "Ends with ANG": [
@@ -1092,6 +1680,9 @@
   "Ends with AOH": [
     "Pharaoh"
   ],
+  "Ends with AOS": [
+    "Laos"
+  ],
   "Ends with APA": [
     "Papa"
   ],
@@ -1120,6 +1711,7 @@
     "Kalahari"
   ],
   "Ends with ARK": [
+    "Denmark",
     "Shark"
   ],
   "Ends with ARM": [
@@ -1143,6 +1735,7 @@
     "Subaru"
   ],
   "Ends with ARY": [
+    "Hungary",
     "Mary",
     "Queen Mary"
   ],
@@ -1156,8 +1749,12 @@
     "Flash",
     "Hash"
   ],
+  "Ends with ASO": [
+    "Burkina Faso"
+  ],
   "Ends with AST": [
     "Beast",
+    "Ivory Coast",
     "Vast"
   ],
   "Ends with ATA": [
@@ -1170,12 +1767,18 @@
   "Ends with ATH": [
     "Goliath"
   ],
+  "Ends with ATI": [
+    "Kiribati"
+  ],
   "Ends with ATO": [
     "NATO",
     "Tomato"
   ],
   "Ends with ATT": [
     "Hyatt"
+  ],
+  "Ends with ATU": [
+    "Vanuatu"
   ],
   "Ends with AUD": [
     "Fraud"
@@ -1203,6 +1806,9 @@
   ],
   "Ends with AWA": [
     "Ottawa"
+  ],
+  "Ends with AWI": [
+    "Malawi"
   ],
   "Ends with AWK": [
     "Hawk",
@@ -1254,7 +1860,13 @@
     "November"
   ],
   "Ends with BIA": [
-    "Columbia"
+    "Colombia",
+    "Columbia",
+    "Gambia",
+    "Namibia",
+    "Saudi Arabia",
+    "Serbia",
+    "Zambia"
   ],
   "Ends with BIG": [
     "Big"
@@ -1279,7 +1891,8 @@
     "Diablo"
   ],
   "Ends with BON": [
-    "Carbon"
+    "Carbon",
+    "Gabon"
   ],
   "Ends with BOS": [
     "Phobos"
@@ -1304,14 +1917,20 @@
   "Ends with BUS": [
     "Columbus"
   ],
+  "Ends with BWE": [
+    "Zimbabwe"
+  ],
+  "Ends with BYA": [
+    "Libya"
+  ],
   "Ends with BYL": [
     "Chernobyl"
   ],
   "Ends with CAN": [
-    "Pelican",
-    "Vatican"
+    "Pelican"
   ],
   "Ends with CAR": [
+    "Madagascar",
     "Oscar",
     "Police Car"
   ],
@@ -1326,6 +1945,9 @@
   ],
   "Ends with CCI": [
     "Gucci"
+  ],
+  "Ends with CCO": [
+    "Morocco"
   ],
   "Ends with CER": [
     "Cancer"
@@ -1345,6 +1967,9 @@
   ],
   "Ends with CHT": [
     "Yacht"
+  ],
+  "Ends with CIA": [
+    "Saint Lucia"
   ],
   "Ends with CIL": [
     "Pencil"
@@ -1384,7 +2009,9 @@
     "Dam"
   ],
   "Ends with DAN": [
-    "Jordan"
+    "Jordan",
+    "South Sudan",
+    "Sudan"
   ],
   "Ends with DAR": [
     "Cedar"
@@ -1394,6 +2021,9 @@
   ],
   "Ends with DEL": [
     "Handel"
+  ],
+  "Ends with DEN": [
+    "Sweden"
   ],
   "Ends with DEO": [
     "Rodeo"
@@ -1418,6 +2048,7 @@
     "Fridge"
   ],
   "Ends with DIA": [
+    "Cambodia",
     "Concordia",
     "India"
   ],
@@ -1443,6 +2074,13 @@
     "London",
     "Poseidon",
     "Radon"
+  ],
+  "Ends with DOR": [
+    "Ecuador",
+    "El Salvador"
+  ],
+  "Ends with DOS": [
+    "Barbados"
   ],
   "Ends with DOW": [
     "Black Widow"
@@ -1524,10 +2162,14 @@
     "Pompeii"
   ],
   "Ends with EIN": [
-    "Einstein"
+    "Einstein",
+    "Liechtenstein"
   ],
   "Ends with EKA": [
     "Topeka"
+  ],
+  "Ends with ELA": [
+    "Venezuela"
   ],
   "Ends with ELD": [
     "Battlefield",
@@ -1585,6 +2227,9 @@
   "Ends with ERT": [
     "Desert"
   ],
+  "Ends with ERU": [
+    "Peru"
+  ],
   "Ends with ERY": [
     "Battery",
     "Montgomery"
@@ -1598,6 +2243,7 @@
     "Cheese"
   ],
   "Ends with ESH": [
+    "Bangladesh",
     "Gilgamesh"
   ],
   "Ends with ESK": [
@@ -1669,6 +2315,10 @@
   "Ends with FOX": [
     "Fox"
   ],
+  "Ends with GAL": [
+    "Portugal",
+    "Senegal"
+  ],
   "Ends with GAN": [
     "Michigan"
   ],
@@ -1685,6 +2335,7 @@
     "Butterfinger",
     "Challenger",
     "Dagger",
+    "Niger",
     "Tiger",
     "Voyager"
   ],
@@ -1725,14 +2376,21 @@
     "Dragon",
     "Oregon"
   ],
+  "Ends with GRO": [
+    "Montenegro"
+  ],
   "Ends with GUA": [
-    "Aconcagua"
+    "Aconcagua",
+    "Nicaragua"
   ],
   "Ends with GUE": [
     "Rogue"
   ],
   "Ends with GUM": [
     "Gum"
+  ],
+  "Ends with HAD": [
+    "Chad"
   ],
   "Ends with HAN": [
     "Han",
@@ -1795,7 +2453,10 @@
   ],
   "Ends with ICA": [
     "Captain America",
+    "Costa Rica",
+    "Dominica",
     "Galactica",
+    "Jamaica",
     "Leica",
     "South Africa"
   ],
@@ -1845,10 +2506,14 @@
   "Ends with IGO": [
     "Indigo"
   ],
+  "Ends with IJI": [
+    "Fiji"
+  ],
   "Ends with IKE": [
     "Mike"
   ],
   "Ends with ILE": [
+    "Chile",
     "Nile"
   ],
   "Ends with ILK": [
@@ -1868,6 +2533,8 @@
     "Lima"
   ],
   "Ends with INA": [
+    "Argentina",
+    "Bosnia and Herzegovina",
     "China",
     "Katrina",
     "Nina"
@@ -1880,6 +2547,7 @@
     "Pine",
     "Rhine",
     "Seine",
+    "Ukraine",
     "Wolverine"
   ],
   "Ends with ING": [
@@ -1892,6 +2560,7 @@
     "X-Wing"
   ],
   "Ends with INI": [
+    "Eswatini",
     "Gemini"
   ],
   "Ends with INK": [
@@ -1899,7 +2568,8 @@
     "Blackpink"
   ],
   "Ends with INO": [
-    "Rhino"
+    "Rhino",
+    "San Marino"
   ],
   "Ends with INT": [
     "INT"
@@ -1923,6 +2593,9 @@
   ],
   "Ends with IOS": [
     "Helios"
+  ],
+  "Ends with IPE": [
+    "Sao Tome and Principe"
   ],
   "Ends with IRD": [
     "Big Bird",
@@ -1960,6 +2633,9 @@
   "Ends with ITE": [
     "Aphrodite"
   ],
+  "Ends with ITI": [
+    "Haiti"
+  ],
   "Ends with ITO": [
     "Burrito"
   ],
@@ -1969,9 +2645,11 @@
     "Jefferson City",
     "Oklahoma City",
     "Salt Lake City",
-    "Serenity"
+    "Serenity",
+    "Vatican City"
   ],
   "Ends with IUM": [
+    "Belgium",
     "Beryllium",
     "Helium",
     "Lithium",
@@ -1981,6 +2659,7 @@
   ],
   "Ends with IUS": [
     "Aquarius",
+    "Mauritius",
     "Sagittarius",
     "Scorpius",
     "Vesuvius"
@@ -1995,8 +2674,14 @@
   "Ends with IWI": [
     "Kiwi"
   ],
+  "Ends with IZE": [
+    "Belize"
+  ],
   "Ends with IZI": [
     "Uffizi"
+  ],
+  "Ends with JAN": [
+    "Azerbaijan"
   ],
   "Ends with JAY": [
     "Blue Jay"
@@ -2031,6 +2716,9 @@
     "Turkey",
     "Whiskey"
   ],
+  "Ends with KIA": [
+    "Slovakia"
+  ],
   "Ends with KIE": [
     "Cookie"
   ],
@@ -2058,6 +2746,9 @@
   ],
   "Ends with LAS": [
     "Dallas"
+  ],
+  "Ends with LAU": [
+    "Palau"
   ],
   "Ends with LED": [
     "LED"
@@ -2087,7 +2778,8 @@
     "Beatles",
     "Hercules",
     "Los Angeles",
-    "Naples"
+    "Naples",
+    "Seychelles"
   ],
   "Ends with LET": [
     "Hamlet",
@@ -2101,7 +2793,14 @@
   ],
   "Ends with LIA": [
     "Australia",
-    "Brasilia"
+    "Brasilia",
+    "Mongolia",
+    "Somalia"
+  ],
+  "Ends with LIC": [
+    "Central African Republic",
+    "Czech Republic",
+    "Dominican Republic"
   ],
   "Ends with LIE": [
     "Charlie"
@@ -2111,7 +2810,8 @@
     "Dublin",
     "Graf Zeppelin",
     "Green Goblin",
-    "Violin"
+    "Violin",
+    "Zeppelin"
   ],
   "Ends with LIP": [
     "Tulip"
@@ -2147,7 +2847,8 @@
     "Salsa"
   ],
   "Ends with LTA": [
-    "Delta"
+    "Delta",
+    "Malta"
   ],
   "Ends with LUB": [
     "Club"
@@ -2167,10 +2868,17 @@
     "Feynman",
     "Iceman",
     "Iron Man",
+    "Oman",
     "Snowman",
     "Spider-Man",
     "Superman",
     "Wonder Woman"
+  ],
+  "Ends with MAR": [
+    "Myanmar"
+  ],
+  "Ends with MAS": [
+    "Bahamas"
   ],
   "Ends with MBO": [
     "Jumbo"
@@ -2180,6 +2888,9 @@
   ],
   "Ends with MEG": [
     "Nutmeg"
+  ],
+  "Ends with MEN": [
+    "Yemen"
   ],
   "Ends with MEO": [
     "Romeo"
@@ -2202,11 +2913,17 @@
   "Ends with MMA": [
     "Gamma"
   ],
+  "Ends with MOA": [
+    "Samoa"
+  ],
   "Ends with MON": [
     "Cinnamon",
     "Lemon",
     "Pokemon",
     "Salmon"
+  ],
+  "Ends with MOR": [
+    "East Timor"
   ],
   "Ends with MOS": [
     "Deimos"
@@ -2221,6 +2938,9 @@
     "Canal",
     "Cardinal",
     "Journal"
+  ],
+  "Ends with NAM": [
+    "Vietnam"
   ],
   "Ends with NAP": [
     "Snap"
@@ -2247,7 +2967,12 @@
   ],
   "Ends with NDA": [
     "Honda",
-    "Panda"
+    "Panda",
+    "Rwanda",
+    "Uganda"
+  ],
+  "Ends with NDI": [
+    "Burundi"
   ],
   "Ends with NDO": [
     "Lando"
@@ -2255,8 +2980,21 @@
   "Ends with NDR": [
     "Jörmungandr"
   ],
+  "Ends with NDS": [
+    "Marshall Islands",
+    "Netherlands",
+    "Solomon Islands"
+  ],
   "Ends with NDY": [
     "Cotton Candy"
+  ],
+  "Ends with NEA": [
+    "Equatorial Guinea",
+    "Guinea",
+    "Papua New Guinea"
+  ],
+  "Ends with NEI": [
+    "Brunei"
   ],
   "Ends with NEL": [
     "Chanel",
@@ -2269,7 +3007,9 @@
     "Mariner"
   ],
   "Ends with NES": [
-    "Des Moines"
+    "Des Moines",
+    "Philippines",
+    "Saint Vincent and the Grenadines"
   ],
   "Ends with NET": [
     "Gannet",
@@ -2280,20 +3020,35 @@
     "Sydney",
     "Whitney"
   ],
+  "Ends with NGA": [
+    "Tonga"
+  ],
   "Ends with NGE": [
     "Orange"
   ],
   "Ends with NGO": [
     "Congo",
+    "Democratic Republic of the Congo",
     "Flamingo",
     "Tango"
   ],
   "Ends with NIA": [
+    "Albania",
+    "Ammonia",
+    "Armenia",
     "Britannia",
     "California",
+    "Estonia",
     "Germania",
     "Hispania",
+    "Lithuania",
     "Lusitania",
+    "Mauretania",
+    "Mauritania",
+    "North Macedonia",
+    "Romania",
+    "Slovenia",
+    "Tanzania",
     "Virginia"
   ],
   "Ends with NIC": [
@@ -2303,11 +3058,17 @@
   "Ends with NIE": [
     "Minnie"
   ],
+  "Ends with NIN": [
+    "Benin"
+  ],
   "Ends with NIR": [
     "Sleipnir"
   ],
   "Ends with NIX": [
     "Phoenix"
+  ],
+  "Ends with NKA": [
+    "Sri Lanka"
   ],
   "Ends with NKY": [
     "Pinky"
@@ -2334,6 +3095,7 @@
   ],
   "Ends with NON": [
     "Canon",
+    "Lebanon",
     "Xenon"
   ],
   "Ends with NOS": [
@@ -2371,6 +3133,9 @@
     "Cygnus",
     "Uranus",
     "Venus"
+  ],
+  "Ends with NYA": [
+    "Kenya"
   ],
   "Ends with O": [
     "O"
@@ -2423,6 +3188,9 @@
   "Ends with OFY": [
     "Goofy"
   ],
+  "Ends with OGO": [
+    "Togo"
+  ],
   "Ends with OHN": [
     "John"
   ],
@@ -2440,6 +3208,9 @@
   ],
   "Ends with OKI": [
     "Loki"
+  ],
+  "Ends with OLA": [
+    "Angola"
   ],
   "Ends with OLD": [
     "Gold"
@@ -2475,6 +3246,7 @@
   "Ends with ONE": [
     "Discovery One",
     "Hermione",
+    "Sierra Leone",
     "Toblerone"
   ],
   "Ends with ONG": [
@@ -2499,6 +3271,7 @@
     "Doom"
   ],
   "Ends with OON": [
+    "Cameroon",
     "Moon",
     "Pontoon"
   ],
@@ -2523,7 +3296,8 @@
   ],
   "Ends with ORE": [
     "Dumbledore",
-    "Lenore"
+    "Lenore",
+    "Singapore"
   ],
   "Ends with ORF": [
     "Waldorf"
@@ -2588,11 +3362,17 @@
   "Ends with OUT": [
     "Fallout"
   ],
+  "Ends with OVA": [
+    "Moldova"
+  ],
   "Ends with OVE": [
     "Glove"
   ],
   "Ends with OWL": [
     "Owl"
+  ],
+  "Ends with PAL": [
+    "Nepal"
   ],
   "Ends with PAN": [
     "Japan"
@@ -2616,6 +3396,7 @@
     "Pi"
   ],
   "Ends with PIA": [
+    "Ethiopia",
     "Olympia"
   ],
   "Ends with PIE": [
@@ -2654,6 +3435,7 @@
     "PVC"
   ],
   "Ends with QUE": [
+    "Mozambique",
     "Mystique"
   ],
   "Ends with R X": [
@@ -2671,6 +3453,15 @@
   "Ends with RAM": [
     "Ram"
   ],
+  "Ends with RAN": [
+    "Iran"
+  ],
+  "Ends with RAQ": [
+    "Iraq"
+  ],
+  "Ends with RAS": [
+    "Honduras"
+  ],
   "Ends with RAT": [
     "Rat"
   ],
@@ -2686,6 +3477,14 @@
   ],
   "Ends with RCK": [
     "Bismarck"
+  ],
+  "Ends with RDE": [
+    "Cabo Verde"
+  ],
+  "Ends with REA": [
+    "Eritrea",
+    "North Korea",
+    "South Korea"
   ],
   "Ends with RED": [
     "Red"
@@ -2717,9 +3516,15 @@
   ],
   "Ends with RIA": [
     "Alexandria",
+    "Algeria",
     "Andrea Doria",
+    "Austria",
+    "Bulgaria",
     "Illyria",
+    "Liberia",
+    "Nigeria",
     "Santa Maria",
+    "Syria",
     "Victoria"
   ],
   "Ends with RID": [
@@ -2750,6 +3555,9 @@
     "Omicron",
     "Ron"
   ],
+  "Ends with ROS": [
+    "Comoros"
+  ],
   "Ends with ROT": [
     "Foxtrot"
   ],
@@ -2762,6 +3570,7 @@
     "Troy"
   ],
   "Ends with RRA": [
+    "Andorra",
     "Sierra"
   ],
   "Ends with RRE": [
@@ -2787,8 +3596,10 @@
     "Drum"
   ],
   "Ends with RUS": [
+    "Belarus",
     "Cerberus",
     "Chorus",
+    "Cyprus",
     "Elbrus",
     "Taurus",
     "Walrus"
@@ -2805,6 +3616,9 @@
     "Quasar",
     "Tsar"
   ],
+  "Ends with SAU": [
+    "Guinea-Bissau"
+  ],
   "Ends with SAW": [
     "Saw"
   ],
@@ -2819,6 +3633,13 @@
   ],
   "Ends with SEY": [
     "Odyssey"
+  ],
+  "Ends with SIA": [
+    "Indonesia",
+    "Malaysia",
+    "Micronesia",
+    "Russia",
+    "Tunisia"
   ],
   "Ends with SIL": [
     "Basil"
@@ -2864,10 +3685,19 @@
     "Portal"
   ],
   "Ends with TAN": [
-    "Catan"
+    "Afghanistan",
+    "Bhutan",
+    "Catan",
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "Pakistan",
+    "Tajikistan",
+    "Turkmenistan",
+    "Uzbekistan"
   ],
   "Ends with TAR": [
     "Guitar",
+    "Qatar",
     "Star"
   ],
   "Ends with TAU": [
@@ -2896,7 +3726,15 @@
     "Toaster"
   ],
   "Ends with TES": [
-    "Gates"
+    "Gates",
+    "United Arab Emirates",
+    "United States"
+  ],
+  "Ends with THO": [
+    "Lesotho"
+  ],
+  "Ends with TIA": [
+    "Croatia"
   ],
   "Ends with TIC": [
     "Gigantic",
@@ -2953,6 +3791,13 @@
   "Ends with UAR": [
     "Jaguar"
   ],
+  "Ends with UAY": [
+    "Paraguay",
+    "Uruguay"
+  ],
+  "Ends with UBA": [
+    "Cuba"
+  ],
   "Ends with UBE": [
     "Danube"
   ],
@@ -2972,6 +3817,9 @@
     "Fire Truck",
     "Puck",
     "Starbuck"
+  ],
+  "Ends with UDA": [
+    "Antigua and Barbuda"
   ],
   "Ends with UGE": [
     "Baton Rouge",
@@ -3043,10 +3891,14 @@
   ],
   "Ends with URG": [
     "Harrisburg",
-    "Hindenburg"
+    "Hindenburg",
+    "Luxembourg"
   ],
   "Ends with URN": [
     "Saturn"
+  ],
+  "Ends with URU": [
+    "Nauru"
   ],
   "Ends with URY": [
     "Mercury",
@@ -3060,6 +3912,9 @@
   ],
   "Ends with UTH": [
     "Ruth"
+  ],
+  "Ends with UTI": [
+    "Djibouti"
   ],
   "Ends with UTO": [
     "Grand Theft Auto",
@@ -3081,27 +3936,37 @@
     "Lever",
     "Silver"
   ],
+  "Ends with VES": [
+    "Maldives"
+  ],
   "Ends with VET": [
     "Red Velvet"
+  ],
+  "Ends with VIA": [
+    "Bolivia",
+    "Latvia"
   ],
   "Ends with VIL": [
     "Devil"
   ],
   "Ends with VIS": [
-    "Elvis"
+    "Elvis",
+    "Saint Kitts and Nevis"
   ],
   "Ends with VRE": [
     "Louvre"
   ],
   "Ends with WAN": [
-    "Swan"
+    "Swan",
+    "Taiwan"
   ],
   "Ends with WAR": [
     "Total War"
   ],
   "Ends with WAY": [
     "Causeway",
-    "Milky Way"
+    "Milky Way",
+    "Norway"
   ],
   "Ends with WER": [
     "Mayflower",
@@ -3145,6 +4010,9 @@
   ],
   "Ends with YON": [
     "Crayon"
+  ],
+  "Ends with YPT": [
+    "Egypt"
   ],
   "Ends with YRA": [
     "Lyra"
@@ -3359,6 +4227,7 @@
     "Tang",
     "Tart",
     "Tomato",
+    "Turkey",
     "Waldorf"
   ],
   "Fruits": [
@@ -3542,6 +4411,7 @@
     "Bed",
     "Bench",
     "Chair",
+    "China",
     "Desk",
     "Dresser",
     "Key",
@@ -3589,6 +4459,50 @@
     "Tesla",
     "Whitney",
     "Wright"
+  ],
+  "Island Nations": [
+    "Antigua and Barbuda",
+    "Bahamas",
+    "Bahrain",
+    "Barbados",
+    "Cabo Verde",
+    "Comoros",
+    "Cuba",
+    "Cyprus",
+    "Dominica",
+    "Dominican Republic",
+    "East Timor",
+    "Fiji",
+    "Grenada",
+    "Iceland",
+    "Indonesia",
+    "Ireland",
+    "Jamaica",
+    "Kiribati",
+    "Madagascar",
+    "Maldives",
+    "Malta",
+    "Marshall Islands",
+    "Mauritius",
+    "Micronesia",
+    "Nauru",
+    "Palau",
+    "Papua New Guinea",
+    "Philippines",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Saint Vincent and the Grenadines",
+    "Samoa",
+    "Sao Tome and Principe",
+    "Seychelles",
+    "Singapore",
+    "Solomon Islands",
+    "Sri Lanka",
+    "Taiwan",
+    "Tonga",
+    "Trinidad and Tobago",
+    "Tuvalu",
+    "Vanuatu"
   ],
   "James Bond Characters": [
     "Bond",
@@ -3671,6 +4585,7 @@
     "Beethoven",
     "Bell",
     "Bravo",
+    "Chad",
     "Count",
     "Curry",
     "Drake",
@@ -3905,6 +4820,7 @@
     "Ice Age",
     "Inferno",
     "Krakatoa",
+    "Madagascar",
     "Oscar",
     "Pinnochio",
     "Pokemon",
@@ -3976,7 +4892,8 @@
     "Prince",
     "Queen",
     "Usher",
-    "Xia"
+    "Xia",
+    "Zeppelin"
   ],
   "Mythical Creatures": [
     "Angel",
@@ -4201,127 +5118,310 @@
     "One Piece"
   ],
   "Place Names": [
+    "Afghanistan",
     "Akron",
     "Alaska",
+    "Albania",
     "Albany",
+    "Algeria",
     "Amazon",
+    "Andorra",
+    "Angola",
     "Annapolis",
+    "Antigua and Barbuda",
+    "Argentina",
+    "Armenia",
     "Athens",
     "Atlanta",
     "Augusta",
     "Austin",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
     "Baghdad",
+    "Bahamas",
+    "Bahrain",
+    "Bangladesh",
+    "Barbados",
     "Baton Rouge",
     "Beijing",
+    "Belarus",
+    "Belgium",
+    "Belize",
+    "Benin",
     "Berlin",
+    "Bhutan",
     "Birch",
     "Bismarck",
     "Boise",
+    "Bolivia",
     "Borneo",
+    "Bosnia and Herzegovina",
     "Boston",
+    "Botswana",
+    "Brazil",
+    "Brunei",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cabo Verde",
     "California",
+    "Cambodia",
+    "Cameroon",
     "Canada",
     "Cancun",
     "Carson City",
     "Cedar",
+    "Central African Republic",
+    "Chad",
     "Charleston",
     "Cheyenne",
     "Chicago",
+    "Chile",
     "China",
+    "Colombia",
     "Columbia",
     "Columbus",
+    "Comoros",
     "Concord",
     "Congo",
+    "Costa Rica",
+    "Croatia",
+    "Cuba",
+    "Cyprus",
+    "Czech Republic",
     "Daintree",
     "Dallas",
+    "Democratic Republic of the Congo",
+    "Denmark",
     "Denver",
     "Des Moines",
+    "Djibouti",
+    "Dominica",
+    "Dominican Republic",
     "Dover",
     "Dublin",
+    "East Timor",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "Equatorial Guinea",
+    "Eritrea",
+    "Estonia",
+    "Eswatini",
+    "Ethiopia",
     "Europa",
+    "Fiji",
+    "Finland",
     "Florence",
     "Florida",
     "France",
     "Frankfort",
+    "Gabon",
+    "Gambia",
     "Georgia",
     "Germany",
+    "Ghana",
     "Gobi",
+    "Greece",
     "Greenland",
+    "Grenada",
+    "Guatemala",
+    "Guinea",
+    "Guinea-Bissau",
+    "Guyana",
+    "Haiti",
     "Harrisburg",
     "Hartford",
     "Helena",
     "Herculaneum",
+    "Honduras",
     "Honolulu",
     "Hudson",
+    "Hungary",
+    "Iceland",
     "India",
     "Indianapolis",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Ivory Coast",
     "Jackson",
+    "Jamaica",
     "Japan",
     "Java",
     "Jefferson City",
     "Jerusalem",
+    "Jordan",
     "Juneau",
     "Kalahari",
     "Karachi",
+    "Kazakhstan",
+    "Kenya",
+    "Kiribati",
     "Krakatoa",
+    "Kuwait",
+    "Kyrgyzstan",
     "Lansing",
+    "Laos",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Liechtenstein",
     "Lincoln",
+    "Lithuania",
     "Little Rock",
     "London",
     "Los Angeles",
+    "Luxembourg",
     "Macon",
+    "Madagascar",
     "Madison",
+    "Malawi",
+    "Malaysia",
+    "Maldives",
+    "Mali",
+    "Malta",
+    "Marshall Islands",
+    "Mauritania",
+    "Mauritius",
     "Mecca",
     "Mexico",
     "Miami",
+    "Micronesia",
+    "Moldova",
+    "Monaco",
+    "Mongolia",
+    "Montenegro",
     "Montgomery",
     "Montpelier",
+    "Morocco",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
     "Nashville",
+    "Nauru",
+    "Nepal",
+    "Netherlands",
     "Nevada",
     "New York",
     "New Zealand",
+    "Nicaragua",
+    "Niger",
+    "Nigeria",
+    "North Korea",
+    "North Macedonia",
+    "Norway",
     "Oklahoma City",
     "Olympia",
+    "Oman",
     "Orange",
+    "Pakistan",
+    "Palau",
+    "Panama",
+    "Papua New Guinea",
+    "Paraguay",
     "Paris",
+    "Peru",
+    "Philippines",
     "Phoenix",
     "Pierre",
+    "Poland",
     "Pompeii",
+    "Portugal",
     "Providence",
+    "Qatar",
     "Quebec",
     "Raleigh",
     "Richmond",
     "Roma",
+    "Romania",
     "Rome",
+    "Russia",
+    "Rwanda",
     "Sacramento",
     "Sahara",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
     "Saint Paul",
+    "Saint Vincent and the Grenadines",
     "Salem",
     "Salt Lake City",
     "Samarkand",
+    "Samoa",
     "San Diego",
     "San Jose",
     "San Juan",
+    "San Marino",
     "San Pedro",
     "Santa Fe",
     "Santa Maria",
+    "Sao Tome and Principe",
+    "Saudi Arabia",
     "Seattle",
+    "Senegal",
     "Seoul",
+    "Serbia",
+    "Seychelles",
+    "Sierra Leone",
+    "Singapore",
+    "Slovakia",
+    "Slovenia",
+    "Solomon Islands",
+    "Somalia",
     "South Africa",
+    "South Korea",
+    "South Sudan",
+    "Spain",
     "Springfield",
+    "Sri Lanka",
+    "Sudan",
+    "Suriname",
+    "Sweden",
+    "Switzerland",
     "Sydney",
+    "Syria",
+    "Taiwan",
+    "Tajikistan",
     "Tallahassee",
+    "Tanzania",
     "Temple Mount",
     "Texas",
+    "Thailand",
     "Tijuana",
+    "Togo",
     "Tokyo",
+    "Tonga",
     "Topeka",
     "Toronto",
     "Trenton",
-    "Vatican",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Turkey",
+    "Turkmenistan",
+    "Tuvalu",
+    "Uganda",
+    "Ukraine",
+    "United Arab Emirates",
+    "United Kingdom",
+    "United States",
+    "Uruguay",
+    "Uzbekistan",
+    "Vanuatu",
+    "Vatican City",
+    "Venezuela",
     "Venice",
     "Verona",
-    "Washington"
+    "Vietnam",
+    "Washington",
+    "Yemen",
+    "Zambia",
+    "Zimbabwe"
   ],
   "Planets": [
     "Earth",
@@ -4494,7 +5594,7 @@
     "Jerusalem",
     "Mecca",
     "Temple Mount",
-    "Vatican"
+    "Vatican City"
   ],
   "Religious Terms": [
     "Angel",
@@ -4569,6 +5669,7 @@
     "Herculaneum",
     "Hispania",
     "Illyria",
+    "Mauretania",
     "Pompeii",
     "Roma",
     "Rome",
@@ -4750,6 +5851,7 @@
     "Los Angeles",
     "Lusitania",
     "Mary Rose",
+    "Mauretania",
     "Mayflower",
     "Nina",
     "Pinta",
@@ -4937,6 +6039,9 @@
   "Starts with ADA": [
     "Adams"
   ],
+  "Starts with AFG": [
+    "Afghanistan"
+  ],
   "Starts with AKR": [
     "Akron"
   ],
@@ -4944,11 +6049,15 @@
     "Alaska"
   ],
   "Starts with ALB": [
+    "Albania",
     "Albany",
     "Albatross"
   ],
   "Starts with ALE": [
     "Alexandria"
+  ],
+  "Starts with ALG": [
+    "Algeria"
   ],
   "Starts with ALL": [
     "Alliance"
@@ -4962,6 +6071,9 @@
   "Starts with AMA": [
     "Amazon"
   ],
+  "Starts with AMM": [
+    "Ammonia"
+  ],
   "Starts with AMO": [
     "Amontillado"
   ],
@@ -4969,10 +6081,12 @@
     "Anansi"
   ],
   "Starts with AND": [
+    "Andorra",
     "Andrea Doria"
   ],
   "Starts with ANG": [
-    "Angel"
+    "Angel",
+    "Angola"
   ],
   "Starts with ANI": [
     "Animal"
@@ -4985,6 +6099,7 @@
   ],
   "Starts with ANT": [
     "Ant",
+    "Antigua and Barbuda",
     "Antioch",
     "Antwerp"
   ],
@@ -5008,6 +6123,7 @@
     "Ares"
   ],
   "Starts with ARG": [
+    "Argentina",
     "Argon"
   ],
   "Starts with ARI": [
@@ -5018,7 +6134,8 @@
     "Ark Royal"
   ],
   "Starts with ARM": [
-    "Arm"
+    "Arm",
+    "Armenia"
   ],
   "Starts with ATH": [
     "Athena",
@@ -5035,13 +6152,17 @@
   ],
   "Starts with AUS": [
     "Austin",
-    "Australia"
+    "Australia",
+    "Austria"
   ],
   "Starts with AVO": [
     "Avocado"
   ],
   "Starts with AXE": [
     "Axe"
+  ],
+  "Starts with AZE": [
+    "Azerbaijan"
   ],
   "Starts with B": [
     "B"
@@ -5057,14 +6178,20 @@
   "Starts with BAG": [
     "Baghdad"
   ],
+  "Starts with BAH": [
+    "Bahamas",
+    "Bahrain"
+  ],
   "Starts with BAL": [
     "Ball"
   ],
   "Starts with BAN": [
     "Banana",
+    "Bangladesh",
     "Banshee"
   ],
   "Starts with BAR": [
+    "Barbados",
     "Bari"
   ],
   "Starts with BAS": [
@@ -5100,12 +6227,16 @@
     "Beijing"
   ],
   "Starts with BEL": [
+    "Belarus",
+    "Belgium",
+    "Belize",
     "Bell",
     "Belle"
   ],
   "Starts with BEN": [
     "Bench",
-    "Benedict"
+    "Benedict",
+    "Benin"
   ],
   "Starts with BEO": [
     "Beowulf"
@@ -5122,6 +6253,9 @@
   ],
   "Starts with BEZ": [
     "Bezos"
+  ],
+  "Starts with BHU": [
+    "Bhutan"
   ],
   "Starts with BIG": [
     "Big",
@@ -5164,6 +6298,7 @@
     "Boise"
   ],
   "Starts with BOL": [
+    "Bolivia",
     "Bologna"
   ],
   "Starts with BON": [
@@ -5174,7 +6309,11 @@
     "Boron"
   ],
   "Starts with BOS": [
+    "Bosnia and Herzegovina",
     "Boston"
+  ],
+  "Starts with BOT": [
+    "Botswana"
   ],
   "Starts with BOU": [
     "Bounty"
@@ -5198,7 +6337,8 @@
     "Bronco"
   ],
   "Starts with BRU": [
-    "Bruin"
+    "Bruin",
+    "Brunei"
   ],
   "Starts with BTS": [
     "BTS"
@@ -5213,10 +6353,13 @@
     "Buick"
   ],
   "Starts with BUL": [
+    "Bulgaria",
     "Bull"
   ],
   "Starts with BUR": [
-    "Burrito"
+    "Burkina Faso",
+    "Burrito",
+    "Burundi"
   ],
   "Starts with BUT": [
     "Buttercup",
@@ -5225,6 +6368,9 @@
   ],
   "Starts with BYR": [
     "Byrd"
+  ],
+  "Starts with CAB": [
+    "Cabo Verde"
   ],
   "Starts with CAD": [
     "Cadillac"
@@ -5239,7 +6385,9 @@
     "California"
   ],
   "Starts with CAM": [
-    "Camera"
+    "Cambodia",
+    "Camera",
+    "Cameroon"
   ],
   "Starts with CAN": [
     "Canada",
@@ -5279,7 +6427,8 @@
     "Cedar"
   ],
   "Starts with CEN": [
-    "Centaur"
+    "Centaur",
+    "Central African Republic"
   ],
   "Starts with CER": [
     "Cerberus",
@@ -5287,6 +6436,7 @@
   ],
   "Starts with CHA": [
     "CHA",
+    "Chad",
     "Chair",
     "Challenger",
     "Chanel",
@@ -5306,6 +6456,7 @@
     "Chi",
     "Chicago",
     "Chicken",
+    "Chile",
     "China",
     "Chisel"
   ],
@@ -5347,10 +6498,14 @@
     "Coin"
   ],
   "Starts with COL": [
+    "Colombia",
     "Colossal",
     "Colossus",
     "Columbia",
     "Columbus"
+  ],
+  "Starts with COM": [
+    "Comoros"
   ],
   "Starts with CON": [
     "CON",
@@ -5370,6 +6525,9 @@
     "Coral",
     "Cormorant"
   ],
+  "Starts with COS": [
+    "Costa Rica"
+  ],
   "Starts with COT": [
     "Cotton Candy"
   ],
@@ -5388,10 +6546,14 @@
     "Crayon"
   ],
   "Starts with CRO": [
+    "Croatia",
     "Crow"
   ],
   "Starts with CRU": [
     "Crunch"
+  ],
+  "Starts with CUB": [
+    "Cuba"
   ],
   "Starts with CUR": [
     "Curie",
@@ -5405,6 +6567,12 @@
   ],
   "Starts with CYG": [
     "Cygnus"
+  ],
+  "Starts with CYP": [
+    "Cyprus"
+  ],
+  "Starts with CZE": [
+    "Czech Republic"
   ],
   "Starts with DA": [
     "Da Vinci"
@@ -5449,10 +6617,12 @@
     "Delta"
   ],
   "Starts with DEM": [
-    "Demeter"
+    "Demeter",
+    "Democratic Republic of the Congo"
   ],
   "Starts with DEN": [
     "Denali",
+    "Denmark",
     "Denver"
   ],
   "Starts with DES": [
@@ -5479,6 +6649,9 @@
     "Discovery One",
     "Disney"
   ],
+  "Starts with DJI": [
+    "Djibouti"
+  ],
   "Starts with DOC": [
     "Doctor Octopus"
   ],
@@ -5493,6 +6666,10 @@
   ],
   "Starts with DOL": [
     "Dolphin"
+  ],
+  "Starts with DOM": [
+    "Dominica",
+    "Dominican Republic"
   ],
   "Starts with DON": [
     "Donald"
@@ -5539,8 +6716,14 @@
   "Starts with EAR": [
     "Earth"
   ],
+  "Starts with EAS": [
+    "East Timor"
+  ],
   "Starts with ECH": [
     "Echo"
+  ],
+  "Starts with ECU": [
+    "Ecuador"
   ],
   "Starts with EDI": [
     "Edison"
@@ -5552,8 +6735,14 @@
     "Egg",
     "Eggplant"
   ],
+  "Starts with EGY": [
+    "Egypt"
+  ],
   "Starts with EIN": [
     "Einstein"
+  ],
+  "Starts with EL ": [
+    "El Salvador"
   ],
   "Starts with ELB": [
     "Elbrus"
@@ -5594,11 +6783,24 @@
   "Starts with EPS": [
     "Epsilon"
   ],
+  "Starts with EQU": [
+    "Equatorial Guinea"
+  ],
   "Starts with ERI": [
-    "Eris"
+    "Eris",
+    "Eritrea"
+  ],
+  "Starts with EST": [
+    "Estonia"
+  ],
+  "Starts with ESW": [
+    "Eswatini"
   ],
   "Starts with ETA": [
     "Eta"
+  ],
+  "Starts with ETH": [
+    "Ethiopia"
   ],
   "Starts with ETN": [
     "Etna"
@@ -5640,8 +6842,14 @@
   "Starts with FEY": [
     "Feynman"
   ],
+  "Starts with FIJ": [
+    "Fiji"
+  ],
   "Starts with FIL": [
     "Film"
+  ],
+  "Starts with FIN": [
+    "Finland"
   ],
   "Starts with FIR": [
     "Fire Truck"
@@ -5689,12 +6897,16 @@
   "Starts with FUK": [
     "Fukushima"
   ],
+  "Starts with GAB": [
+    "Gabon"
+  ],
   "Starts with GAL": [
     "Galactica",
     "Galaxy",
     "Galileo"
   ],
   "Starts with GAM": [
+    "Gambia",
     "Gambit",
     "Gamma"
   ],
@@ -5730,6 +6942,9 @@
   "Starts with GER": [
     "Germania",
     "Germany"
+  ],
+  "Starts with GHA": [
+    "Ghana"
   ],
   "Starts with GIA": [
     "Giant"
@@ -5788,7 +7003,8 @@
     "Green Lantern",
     "Green Light",
     "Green Tea",
-    "Greenland"
+    "Greenland",
+    "Grenada"
   ],
   "Starts with GRI": [
     "Griffin"
@@ -5796,10 +7012,15 @@
   "Starts with GRO": [
     "Grover"
   ],
+  "Starts with GUA": [
+    "Guatemala"
+  ],
   "Starts with GUC": [
     "Gucci"
   ],
   "Starts with GUI": [
+    "Guinea",
+    "Guinea-Bissau",
     "Guitar"
   ],
   "Starts with GUL": [
@@ -5808,11 +7029,17 @@
   "Starts with GUM": [
     "Gum"
   ],
+  "Starts with GUY": [
+    "Guyana"
+  ],
   "Starts with HAD": [
     "Hades"
   ],
   "Starts with HAG": [
     "Hagrid"
+  ],
+  "Starts with HAI": [
+    "Haiti"
   ],
   "Starts with HAL": [
     "Halberd",
@@ -5885,6 +7112,7 @@
   ],
   "Starts with HON": [
     "Honda",
+    "Honduras",
     "Honolulu"
   ],
   "Starts with HOO": [
@@ -5912,6 +7140,9 @@
   "Starts with HUM": [
     "Hummingbird"
   ],
+  "Starts with HUN": [
+    "Hungary"
+  ],
   "Starts with HYA": [
     "Hyatt"
   ],
@@ -5926,6 +7157,7 @@
     "Ice",
     "Ice Age",
     "Ice Pack",
+    "Iceland",
     "Iceman"
   ],
   "Starts with IKO": [
@@ -5943,7 +7175,8 @@
   "Starts with IND": [
     "India",
     "Indianapolis",
-    "Indigo"
+    "Indigo",
+    "Indonesia"
   ],
   "Starts with INF": [
     "Inferno",
@@ -5962,12 +7195,22 @@
   "Starts with IOT": [
     "Iota"
   ],
+  "Starts with IRA": [
+    "Iran",
+    "Iraq"
+  ],
+  "Starts with IRE": [
+    "Ireland"
+  ],
   "Starts with IRI": [
     "Iris"
   ],
   "Starts with IRO": [
     "Iron",
     "Iron Man"
+  ],
+  "Starts with ISR": [
+    "Israel"
   ],
   "Starts with IST": [
     "Istanbul"
@@ -5978,6 +7221,9 @@
   "Starts with ITA": [
     "Italian",
     "Italy"
+  ],
+  "Starts with IVO": [
+    "Ivory Coast"
   ],
   "Starts with IVY": [
     "Ivy"
@@ -5998,6 +7244,7 @@
     "Jaipur"
   ],
   "Starts with JAM": [
+    "Jamaica",
     "James"
   ],
   "Starts with JAP": [
@@ -6080,9 +7327,13 @@
   "Starts with KAY": [
     "Kayak"
   ],
+  "Starts with KAZ": [
+    "Kazakhstan"
+  ],
   "Starts with KEN": [
     "Kennedy",
-    "Kenobi"
+    "Kenobi",
+    "Kenya"
   ],
   "Starts with KEP": [
     "Kepler"
@@ -6105,6 +7356,7 @@
     "King Lear"
   ],
   "Starts with KIR": [
+    "Kiribati",
     "Kirk"
   ],
   "Starts with KIT": [
@@ -6126,6 +7378,12 @@
   "Starts with KRY": [
     "Krypton"
   ],
+  "Starts with KUW": [
+    "Kuwait"
+  ],
+  "Starts with KYR": [
+    "Kyrgyzstan"
+  ],
   "Starts with LAK": [
     "Laker"
   ],
@@ -6137,11 +7395,20 @@
     "Lando",
     "Lansing"
   ],
+  "Starts with LAO": [
+    "Laos"
+  ],
   "Starts with LAS": [
     "Lasso"
   ],
+  "Starts with LAT": [
+    "Latvia"
+  ],
   "Starts with LAV": [
     "Lavender"
+  ],
+  "Starts with LEB": [
+    "Lebanon"
   ],
   "Starts with LED": [
     "LED",
@@ -6161,6 +7428,9 @@
   "Starts with LEO": [
     "Leo"
   ],
+  "Starts with LES": [
+    "Lesotho"
+  ],
   "Starts with LET": [
     "Lettuce"
   ],
@@ -6172,7 +7442,12 @@
     "Lex Luthor"
   ],
   "Starts with LIB": [
-    "Libra"
+    "Liberia",
+    "Libra",
+    "Libya"
+  ],
+  "Starts with LIE": [
+    "Liechtenstein"
   ],
   "Starts with LIL": [
     "Lily"
@@ -6188,6 +7463,7 @@
   ],
   "Starts with LIT": [
     "Lithium",
+    "Lithuania",
     "Little Rock"
   ],
   "Starts with LOB": [
@@ -6214,6 +7490,9 @@
   "Starts with LUS": [
     "Lusitania"
   ],
+  "Starts with LUX": [
+    "Luxembourg"
+  ],
   "Starts with LYR": [
     "Lyra"
   ],
@@ -6226,6 +7505,7 @@
     "Macon"
   ],
   "Starts with MAD": [
+    "Madagascar",
     "Madison",
     "Madonna",
     "Madrid"
@@ -6239,6 +7519,13 @@
   ],
   "Starts with MAK": [
     "Makemake"
+  ],
+  "Starts with MAL": [
+    "Malawi",
+    "Malaysia",
+    "Maldives",
+    "Mali",
+    "Malta"
   ],
   "Starts with MAM": [
     "Mammoth"
@@ -6254,6 +7541,7 @@
     "Marriott",
     "Mars",
     "Marseille",
+    "Marshall Islands",
     "Mary",
     "Mary Rose"
   ],
@@ -6264,7 +7552,10 @@
     "Matterhorn"
   ],
   "Starts with MAU": [
-    "Maui"
+    "Maui",
+    "Mauretania",
+    "Mauritania",
+    "Mauritius"
   ],
   "Starts with MAY": [
     "Mayflower",
@@ -6293,6 +7584,7 @@
   "Starts with MIC": [
     "Michigan",
     "Mickey",
+    "Micronesia",
     "Microsoft"
   ],
   "Starts with MIK": [
@@ -6312,11 +7604,17 @@
   "Starts with MIS": [
     "Mississippi"
   ],
+  "Starts with MOL": [
+    "Moldova"
+  ],
   "Starts with MON": [
+    "Monaco",
     "Moneypenny",
+    "Mongolia",
     "Monkey",
     "Monopoly",
     "Mont Blanc",
+    "Montenegro",
     "Montgomery",
     "Montpelier",
     "Monumental"
@@ -6325,12 +7623,14 @@
     "Moon"
   ],
   "Starts with MOR": [
+    "Morocco",
     "Morse"
   ],
   "Starts with MOT": [
     "Moth"
   ],
   "Starts with MOZ": [
+    "Mozambique",
     "Mozart"
   ],
   "Starts with MR.": [
@@ -6346,8 +7646,14 @@
     "Musk",
     "Mustard"
   ],
+  "Starts with MYA": [
+    "Myanmar"
+  ],
   "Starts with MYS": [
     "Mystique"
+  ],
+  "Starts with NAM": [
+    "Namibia"
   ],
   "Starts with NAP": [
     "Napkin",
@@ -6363,6 +7669,9 @@
   "Starts with NAT": [
     "NATO"
   ],
+  "Starts with NAU": [
+    "Nauru"
+  ],
   "Starts with NEB": [
     "Nebula"
   ],
@@ -6370,7 +7679,11 @@
     "Neon"
   ],
   "Starts with NEP": [
+    "Nepal",
     "Neptune"
+  ],
+  "Starts with NET": [
+    "Netherlands"
   ],
   "Starts with NEV": [
     "Nevada"
@@ -6382,11 +7695,14 @@
     "Newton"
   ],
   "Starts with NIC": [
+    "Nicaragua",
     "Nick Fury",
     "Nickel",
     "Nicoise"
   ],
   "Starts with NIG": [
+    "Niger",
+    "Nigeria",
     "Nightcrawler"
   ],
   "Starts with NIK": [
@@ -6403,6 +7719,11 @@
   ],
   "Starts with NO ": [
     "No Parking Sign"
+  ],
+  "Starts with NOR": [
+    "North Korea",
+    "North Macedonia",
+    "Norway"
   ],
   "Starts with NOT": [
     "Note",
@@ -6453,6 +7774,9 @@
     "Olympia",
     "Olympus"
   ],
+  "Starts with OMA": [
+    "Oman"
+  ],
   "Starts with OME": [
     "Omega"
   ],
@@ -6502,10 +7826,15 @@
   "Starts with OZY": [
     "Ozymandias"
   ],
+  "Starts with PAK": [
+    "Pakistan"
+  ],
   "Starts with PAL": [
+    "Palau",
     "Palpatine"
   ],
   "Starts with PAN": [
+    "Panama",
     "Panasonic",
     "Panda",
     "Pandemic",
@@ -6513,10 +7842,12 @@
   ],
   "Starts with PAP": [
     "Papa",
-    "Paper"
+    "Paper",
+    "Papua New Guinea"
   ],
   "Starts with PAR": [
     "Paradox",
+    "Paraguay",
     "Paris"
   ],
   "Starts with PAU": [
@@ -6546,7 +7877,8 @@
   ],
   "Starts with PER": [
     "Perseus",
-    "Persona"
+    "Persona",
+    "Peru"
   ],
   "Starts with PET": [
     "Peter",
@@ -6556,7 +7888,8 @@
     "Pharaoh"
   ],
   "Starts with PHI": [
-    "Phi"
+    "Phi",
+    "Philippines"
   ],
   "Starts with PHO": [
     "Phobos",
@@ -6611,6 +7944,7 @@
     "Poker"
   ],
   "Starts with POL": [
+    "Poland",
     "Polar Bear",
     "Police Car",
     "Polyester"
@@ -6622,7 +7956,8 @@
     "Pontoon"
   ],
   "Starts with POR": [
-    "Portal"
+    "Portal",
+    "Portugal"
   ],
   "Starts with POS": [
     "Poseidon"
@@ -6658,6 +7993,9 @@
   ],
   "Starts with PYT": [
     "Python"
+  ],
+  "Starts with QAT": [
+    "Qatar"
   ],
   "Starts with QUA": [
     "Quasar"
@@ -6743,6 +8081,7 @@
   ],
   "Starts with ROM": [
     "Roma",
+    "Romania",
     "Rome",
     "Romeo"
   ],
@@ -6760,10 +8099,14 @@
     "Ruby"
   ],
   "Starts with RUS": [
+    "Russia",
     "Rust"
   ],
   "Starts with RUT": [
     "Ruth"
+  ],
+  "Starts with RWA": [
+    "Rwanda"
   ],
   "Starts with SAB": [
     "Sabretooth"
@@ -6779,8 +8122,11 @@
     "Sahara"
   ],
   "Starts with SAI": [
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
     "Saint Patrick",
-    "Saint Paul"
+    "Saint Paul",
+    "Saint Vincent and the Grenadines"
   ],
   "Starts with SAL": [
     "Salem",
@@ -6791,21 +8137,29 @@
   "Starts with SAM": [
     "Sam",
     "Samarkand",
-    "Sami"
+    "Sami",
+    "Samoa"
   ],
   "Starts with SAN": [
     "San Diego",
     "San Jose",
     "San Juan",
+    "San Marino",
     "San Pedro",
     "Santa Fe",
     "Santa Maria"
+  ],
+  "Starts with SAO": [
+    "Sao Tome and Principe"
   ],
   "Starts with SAP": [
     "Sapphire"
   ],
   "Starts with SAT": [
     "Saturn"
+  ],
+  "Starts with SAU": [
+    "Saudi Arabia"
   ],
   "Starts with SAW": [
     "Saw"
@@ -6826,14 +8180,21 @@
   "Starts with SEI": [
     "Seine"
   ],
+  "Starts with SEN": [
+    "Senegal"
+  ],
   "Starts with SEO": [
     "Seoul"
   ],
   "Starts with SER": [
+    "Serbia",
     "Serenity"
   ],
   "Starts with SEV": [
     "Seventeen"
+  ],
+  "Starts with SEY": [
+    "Seychelles"
   ],
   "Starts with SHA": [
     "Shadowcat",
@@ -6848,13 +8209,17 @@
     "Shield"
   ],
   "Starts with SIE": [
-    "Sierra"
+    "Sierra",
+    "Sierra Leone"
   ],
   "Starts with SIG": [
     "Sigma"
   ],
   "Starts with SIL": [
     "Silver"
+  ],
+  "Starts with SIN": [
+    "Singapore"
   ],
   "Starts with SIR": [
     "Siren"
@@ -6867,6 +8232,10 @@
   ],
   "Starts with SLE": [
     "Sleipnir"
+  ],
+  "Starts with SLO": [
+    "Slovakia",
+    "Slovenia"
   ],
   "Starts with SNA": [
     "Snap",
@@ -6883,14 +8252,20 @@
     "Sofa"
   ],
   "Starts with SOL": [
-    "Solitaire"
+    "Solitaire",
+    "Solomon Islands"
+  ],
+  "Starts with SOM": [
+    "Somalia"
   ],
   "Starts with SON": [
     "Song",
     "Sony"
   ],
   "Starts with SOU": [
-    "South Africa"
+    "South Africa",
+    "South Korea",
+    "South Sudan"
   ],
   "Starts with SOW": [
     "Sow"
@@ -6919,6 +8294,9 @@
   "Starts with SPR": [
     "Springfield"
   ],
+  "Starts with SRI": [
+    "Sri Lanka"
+  ],
   "Starts with ST.": [
     "St. Helens"
   ],
@@ -6945,6 +8323,9 @@
   "Starts with SUB": [
     "Subaru"
   ],
+  "Starts with SUD": [
+    "Sudan"
+  ],
   "Starts with SUI": [
     "Suitcase"
   ],
@@ -6960,8 +8341,17 @@
     "Super Junior",
     "Superman"
   ],
+  "Starts with SUR": [
+    "Suriname"
+  ],
   "Starts with SWA": [
     "Swan"
+  ],
+  "Starts with SWE": [
+    "Sweden"
+  ],
+  "Starts with SWI": [
+    "Switzerland"
   ],
   "Starts with SWO": [
     "Sword"
@@ -6969,11 +8359,20 @@
   "Starts with SYD": [
     "Sydney"
   ],
+  "Starts with SYR": [
+    "Syria"
+  ],
   "Starts with TAB": [
     "Table"
   ],
   "Starts with TAC": [
     "Taco"
+  ],
+  "Starts with TAI": [
+    "Taiwan"
+  ],
+  "Starts with TAJ": [
+    "Tajikistan"
   ],
   "Starts with TAL": [
     "Tallahassee"
@@ -6983,7 +8382,8 @@
   ],
   "Starts with TAN": [
     "Tang",
-    "Tango"
+    "Tango",
+    "Tanzania"
   ],
   "Starts with TAR": [
     "TARDIS",
@@ -7017,6 +8417,7 @@
     "Texas"
   ],
   "Starts with THA": [
+    "Thailand",
     "Thames",
     "Thanos"
   ],
@@ -7053,11 +8454,17 @@
   "Starts with TOB": [
     "Toblerone"
   ],
+  "Starts with TOG": [
+    "Togo"
+  ],
   "Starts with TOK": [
     "Tokyo"
   ],
   "Starts with TOM": [
     "Tomato"
+  ],
+  "Starts with TON": [
+    "Tonga"
   ],
   "Starts with TOP": [
     "Topeka"
@@ -7073,6 +8480,9 @@
   ],
   "Starts with TRE": [
     "Trenton"
+  ],
+  "Starts with TRI": [
+    "Trinidad and Tobago"
   ],
   "Starts with TRO": [
     "Troy",
@@ -7090,11 +8500,16 @@
   "Starts with TUN": [
     "Tuna",
     "Tune",
+    "Tunisia",
     "Tunnel"
   ],
   "Starts with TUR": [
     "Turin",
-    "Turkey"
+    "Turkey",
+    "Turkmenistan"
+  ],
+  "Starts with TUV": [
+    "Tuvalu"
   ],
   "Starts with TWI": [
     "Twix"
@@ -7102,10 +8517,18 @@
   "Starts with UFF": [
     "Uffizi"
   ],
+  "Starts with UGA": [
+    "Uganda"
+  ],
+  "Starts with UKR": [
+    "Ukraine"
+  ],
   "Starts with UNI": [
     "Unicorn",
     "Uniform",
-    "United Kingdom"
+    "United Arab Emirates",
+    "United Kingdom",
+    "United States"
   ],
   "Starts with UNO": [
     "Uno"
@@ -7123,19 +8546,29 @@
   "Starts with URS": [
     "Ursa Major"
   ],
+  "Starts with URU": [
+    "Uruguay"
+  ],
   "Starts with USH": [
     "Usher"
   ],
+  "Starts with UZB": [
+    "Uzbekistan"
+  ],
   "Starts with VAD": [
     "Vader"
+  ],
+  "Starts with VAN": [
+    "Vanuatu"
   ],
   "Starts with VAS": [
     "Vast"
   ],
   "Starts with VAT": [
-    "Vatican"
+    "Vatican City"
   ],
   "Starts with VEN": [
+    "Venezuela",
     "Venice",
     "Venom",
     "Venus"
@@ -7150,6 +8583,9 @@
     "Victor",
     "Victoria",
     "Victory"
+  ],
+  "Starts with VIE": [
+    "Vietnam"
   ],
   "Starts with VIO": [
     "Violet",
@@ -7247,6 +8683,9 @@
   "Starts with YEL": [
     "Yellow"
   ],
+  "Starts with YEM": [
+    "Yemen"
+  ],
   "Starts with YIE": [
     "Yield Sign"
   ],
@@ -7259,8 +8698,14 @@
   "Starts with Z": [
     "Z"
   ],
+  "Starts with ZAM": [
+    "Zambia"
+  ],
   "Starts with ZEB": [
     "Zebra"
+  ],
+  "Starts with ZEP": [
+    "Zeppelin"
   ],
   "Starts with ZER": [
     "Zero"
@@ -7270,6 +8715,9 @@
   ],
   "Starts with ZEU": [
     "Zeus"
+  ],
+  "Starts with ZIM": [
+    "Zimbabwe"
   ],
   "Starts with ZUL": [
     "Zulu"

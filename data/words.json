@@ -17,6 +17,8 @@
     "Starts with LUS"
   ],
   "Bismarck": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with RCK",
     "National Leaders",
@@ -99,6 +101,7 @@
   ],
   "Pompeii": [
     "Ancient Cities",
+    "Cities",
     "Cities in Italy",
     "Disaster Movies",
     "Disasters",
@@ -181,6 +184,7 @@
     "Ancient Cities",
     "Burger Toppings",
     "Capitals",
+    "Cities",
     "Cities in Italy",
     "Ends with OMA",
     "Foods",
@@ -193,6 +197,8 @@
   ],
   "Los Angeles": [
     "Airships",
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with LES",
     "Place Names",
@@ -245,6 +251,7 @@
   "Rome": [
     "Ancient Cities",
     "Capitals",
+    "Cities",
     "Cities in Italy",
     "Ends with OME",
     "Place Names",
@@ -254,6 +261,7 @@
   ],
   "Carthage": [
     "Ancient Cities",
+    "Cities",
     "Ends with AGE",
     "Historic Trade Cities",
     "Roman Cities",
@@ -262,6 +270,7 @@
   ],
   "Constantinople": [
     "Ancient Cities",
+    "Cities",
     "Ends with PLE",
     "Roman Cities",
     "Roman Empire",
@@ -293,6 +302,7 @@
     "Starts with ILL"
   ],
   "Venice": [
+    "Cities",
     "Cities in Italy",
     "Ends with ICE",
     "Historic Trade Cities",
@@ -300,42 +310,50 @@
     "Starts with VEN"
   ],
   "Florence": [
+    "Cities",
     "Cities in Italy",
     "Ends with NCE",
     "Place Names",
     "Starts with FLO"
   ],
   "Milan": [
+    "Cities",
     "Cities in Italy",
     "Ends with LAN",
     "Starts with MIL"
   ],
   "Naples": [
+    "Cities",
     "Cities in Italy",
     "Ends with LES",
     "Starts with NAP"
   ],
   "Turin": [
+    "Cities",
     "Cities in Italy",
     "Ends with RIN",
     "Starts with TUR"
   ],
   "Pisa": [
+    "Cities",
     "Cities in Italy",
     "Ends with ISA",
     "Starts with PIS"
   ],
   "Genoa": [
+    "Cities",
     "Cities in Italy",
     "Ends with NOA",
     "Starts with GEN"
   ],
   "Bari": [
+    "Cities",
     "Cities in Italy",
     "Ends with ARI",
     "Starts with BAR"
   ],
   "Verona": [
+    "Cities",
     "Cities in Europe",
     "Cities in Italy",
     "Ends with ONA",
@@ -343,6 +361,7 @@
     "Starts with VER"
   ],
   "Bologna": [
+    "Cities",
     "Cities in Italy",
     "Ends with GNA",
     "Starts with BOL"
@@ -432,6 +451,7 @@
   ],
   "Troy": [
     "Ancient Cities",
+    "Cities",
     "Ends with ROY",
     "Greek Mythology",
     "Movies",
@@ -451,25 +471,29 @@
   "Lincoln": [
     "Car Brands",
     "Cars",
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with OLN",
+    "National Leaders",
     "Place Names",
     "Starts with LIN",
     "State Capitals",
-    "US Presidents",
-    "National Leaders"
+    "US Presidents"
   ],
   "Washington": [
     "Capitals",
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with TON",
     "National Capitals",
+    "National Leaders",
     "Place Names",
     "Starts with WAS",
     "State Capitals",
     "US Presidents",
-    "US States",
-    "National Leaders"
+    "US States"
   ],
   "Victoria": [
     "British Monarchs",
@@ -548,6 +572,7 @@
   "Paris": [
     "Ancient Cities",
     "Capitals",
+    "Cities",
     "Cities in Europe",
     "Ends with RIS",
     "Greek Mythology",
@@ -558,6 +583,7 @@
   ],
   "London": [
     "Capitals",
+    "Cities",
     "Cities in Europe",
     "Ends with DON",
     "National Capitals",
@@ -566,12 +592,14 @@
   ],
   "Berlin": [
     "Capitals",
+    "Cities",
     "Cities in Europe",
     "Ends with LIN",
     "Place Names",
     "Starts with BER"
   ],
   "Dublin": [
+    "Cities",
     "Cities in Europe",
     "Ends with LIN",
     "Place Names",
@@ -585,6 +613,7 @@
   "Athens": [
     "Ancient Cities",
     "Capitals",
+    "Cities",
     "Ends with ENS",
     "National Capitals",
     "Place Names",
@@ -596,18 +625,23 @@
     "Starts with SYD"
   ],
   "Toronto": [
+    "Cities",
     "Cities in North America",
     "Ends with NTO",
     "Place Names",
     "Starts with TOR"
   ],
   "Seattle": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with TLE",
     "Place Names",
     "Starts with SEA"
   ],
   "Boston": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with TON",
     "Place Names",
@@ -1235,52 +1269,65 @@
   "Canada": [
     "Commonwealth Nations",
     "Countries",
+    "Countries in North America",
     "Ends with ADA",
     "Place Names",
     "Starts with CAN"
   ],
   "Germany": [
     "Countries",
+    "Countries in Europe",
     "Ends with ANY",
     "Place Names",
     "Starts with GER"
   ],
   "France": [
     "Countries",
+    "Countries in Europe",
     "Ends with NCE",
     "Place Names",
     "Starts with FRA"
   ],
   "Italy": [
     "Countries",
+    "Countries in Europe",
     "Ends with ALY",
+    "Place Names",
     "Starts with ITA"
   ],
   "Spain": [
     "Countries",
+    "Countries in Europe",
     "Ends with AIN",
+    "Place Names",
     "Starts with SPA"
   ],
   "Japan": [
     "Countries",
+    "Countries in Asia",
     "Ends with PAN",
     "Place Names",
     "Starts with JAP"
   ],
   "China": [
     "Countries",
+    "Countries in Asia",
     "Ends with INA",
+    "Household Items",
     "Place Names",
     "Starts with CHI"
   ],
   "Brazil": [
     "Countries",
+    "Countries in South America",
     "Ends with ZIL",
+    "Place Names",
     "Starts with BRA"
   ],
   "India": [
     "Commonwealth Nations",
     "Countries",
+    "Countries in Asia",
     "Ends with DIA",
     "NATO Phonetic Alphabet",
     "Place Names",
@@ -1288,19 +1335,27 @@
   ],
   "Mexico": [
     "Countries",
+    "Countries in North America",
     "Ends with ICO",
     "Place Names",
     "Starts with MEX"
   ],
   "Greece": [
     "Countries",
+    "Countries in Europe",
     "Ends with ECE",
+    "Place Names",
     "Starts with GRE"
   ],
   "Turkey": [
     "Countries",
+    "Countries in Asia",
     "Ends with KEY",
-    "Starts with TUR"
+    "Foods",
+    "Place Names",
+    "Starts with TUR",
+    "Animals",
+    "Birds"
   ],
   "Ottawa": [
     "Capitals",
@@ -1309,6 +1364,7 @@
   ],
   "Tokyo": [
     "Capitals",
+    "Cities",
     "Cities in Asia",
     "Ends with KYO",
     "National Capitals",
@@ -1317,6 +1373,7 @@
   ],
   "Beijing": [
     "Capitals",
+    "Cities",
     "Cities in Asia",
     "Ends with ING",
     "National Capitals",
@@ -1330,6 +1387,7 @@
   ],
   "Delhi": [
     "Capitals",
+    "Cities",
     "Cities in Asia",
     "Ends with LHI",
     "Starts with DEL"
@@ -1495,22 +1553,26 @@
     "National Leaders"
   ],
   "Madison": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with SON",
+    "National Leaders",
     "Place Names",
     "Starts with MAD",
     "State Capitals",
-    "US Presidents",
-    "National Leaders"
+    "US Presidents"
   ],
   "Jackson": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with SON",
+    "National Leaders",
     "Place Names",
     "Starts with JAC",
     "State Capitals",
-    "US Presidents",
-    "National Leaders"
+    "US Presidents"
   ],
   "Wilson": [
     "Ends with SON",
@@ -1526,6 +1588,7 @@
   ],
   "Georgia": [
     "Countries",
+    "Countries in Europe",
     "Ends with GIA",
     "Place Names",
     "Starts with GEO",
@@ -1551,6 +1614,8 @@
     "US States"
   ],
   "New York": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ORK",
     "Place Names",
@@ -1574,6 +1639,8 @@
     "US States"
   ],
   "Atlanta": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with NTA",
     "Place Names",
@@ -1581,6 +1648,8 @@
     "State Capitals"
   ],
   "Austin": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with TIN",
     "Place Names",
@@ -1588,6 +1657,8 @@
     "State Capitals"
   ],
   "Denver": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with VER",
     "Place Names",
@@ -1595,6 +1666,8 @@
     "State Capitals"
   ],
   "Olympia": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with PIA",
     "Place Names",
@@ -1604,6 +1677,8 @@
   ],
   "Phoenix": [
     "Birds",
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with NIX",
     "Magic",
@@ -1618,6 +1693,8 @@
     "X-Men Characters"
   ],
   "Sacramento": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with NTO",
     "Place Names",
@@ -1626,6 +1703,8 @@
     "State Capitals on Rivers"
   ],
   "Lansing": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ING",
     "Place Names",
@@ -1634,6 +1713,8 @@
     "State Capitals on Rivers"
   ],
   "Albany": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ANY",
     "Place Names",
@@ -2188,6 +2269,7 @@
   ],
   "Alexandria": [
     "Ancient Cities",
+    "Cities",
     "Ends with RIA",
     "Historic Trade Cities",
     "Roman Cities",
@@ -2195,6 +2277,7 @@
   ],
   "Antioch": [
     "Ancient Cities",
+    "Cities",
     "Ends with OCH",
     "Roman Cities",
     "Starts with ANT"
@@ -2217,6 +2300,7 @@
   ],
   "Jaipur": [
     "Board Games Named After Places",
+    "Cities",
     "Cities in Asia",
     "Ends with PUR",
     "Starts with JAI"
@@ -2573,15 +2657,19 @@
     "X-Men Characters"
   ],
   "Australia": [
-    "Countries",
     "Commonwealth Nations",
+    "Countries",
+    "Countries in Oceania",
     "Ends with LIA",
+    "Place Names",
     "Starts with AUS"
   ],
   "United Kingdom": [
-    "Countries",
     "Commonwealth Nations",
+    "Countries",
+    "Countries in Europe",
     "Ends with DOM",
+    "Place Names",
     "Starts with UNI"
   ],
   "Caesar": [
@@ -2871,6 +2959,7 @@
     "Starts with NIN"
   ],
   "San Juan": [
+    "Cities",
     "Cities in North America",
     "Ends with UAN",
     "Place Names",
@@ -3077,6 +3166,7 @@
     "Starts with NIC"
   ],
   "Caprese": [
+    "Cities",
     "Cities in Italy",
     "Ends with ESE",
     "Eponymous Salads",
@@ -3126,6 +3216,8 @@
     "Starts with TER"
   ],
   "San Jose": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with OSE",
     "Place Names",
@@ -3134,6 +3226,8 @@
     "Starts with SAN"
   ],
   "San Diego": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with EGO",
     "Place Names",
@@ -3270,13 +3364,17 @@
   ],
   "Jordan": [
     "Athletes",
+    "Countries",
+    "Countries in Asia",
     "Ends with DAN",
     "Male Names",
     "NBA Players",
+    "Place Names",
     "Starts with JOR"
   ],
   "Baghdad": [
     "Ancient Cities",
+    "Cities",
     "Cities in Asia",
     "Ends with DAD",
     "Historic Trade Cities",
@@ -3285,6 +3383,7 @@
   ],
   "Samarkand": [
     "Ancient Cities",
+    "Cities",
     "Cities in Asia",
     "Ends with AND",
     "Historic Trade Cities",
@@ -3319,6 +3418,8 @@
     "US States"
   ],
   "Carson City": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ITY",
     "Place Names",
@@ -3327,6 +3428,8 @@
     "US States"
   ],
   "Juneau": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with EAU",
     "Place Names",
@@ -3436,24 +3539,30 @@
   ],
   "New Zealand": [
     "Commonwealth Nations",
+    "Countries",
+    "Countries in Oceania",
     "Ends with AND",
     "Place Names",
     "Starts with NEW"
   ],
   "South Africa": [
     "Commonwealth Nations",
+    "Countries",
+    "Countries in Africa",
     "Ends with ICA",
     "Place Names",
     "Starts with SOU"
   ],
   "Seoul": [
     "Capitals",
+    "Cities",
     "Cities in Asia",
     "Ends with OUL",
     "Place Names",
     "Starts with SEO"
   ],
   "Karachi": [
+    "Cities",
     "Cities in Asia",
     "Ends with CHI",
     "Place Names",
@@ -3809,18 +3918,24 @@
     "Starts with HAL"
   ],
   "Chicago": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with AGO",
     "Place Names",
     "Starts with CHI"
   ],
   "Miami": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with AMI",
     "Place Names",
     "Starts with MIA"
   ],
   "Dallas": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with LAS",
     "Place Names",
@@ -3864,6 +3979,8 @@
     "Starts with PIX"
   ],
   "Congo": [
+    "Countries",
+    "Countries in Africa",
     "Ends with NGO",
     "Place Names",
     "Rainforests",
@@ -3943,6 +4060,8 @@
     "Starts with TEF"
   ],
   "Hudson": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with SON",
     "Place Names",
@@ -3965,6 +4084,8 @@
     "Starts with LED"
   ],
   "Montgomery": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ERY",
     "Place Names",
@@ -3972,6 +4093,8 @@
     "State Capitals"
   ],
   "Little Rock": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with OCK",
     "Place Names",
@@ -3979,6 +4102,8 @@
     "State Capitals"
   ],
   "Hartford": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ORD",
     "Place Names",
@@ -3986,6 +4111,8 @@
     "State Capitals"
   ],
   "Dover": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with VER",
     "Place Names",
@@ -3993,6 +4120,8 @@
     "State Capitals"
   ],
   "Tallahassee": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with SEE",
     "Place Names",
@@ -4000,6 +4129,8 @@
     "State Capitals"
   ],
   "Honolulu": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ULU",
     "Place Names",
@@ -4007,6 +4138,8 @@
     "State Capitals"
   ],
   "Boise": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ISE",
     "Place Names",
@@ -4014,6 +4147,8 @@
     "State Capitals"
   ],
   "Springfield": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ELD",
     "Place Names",
@@ -4021,6 +4156,8 @@
     "State Capitals"
   ],
   "Indianapolis": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with LIS",
     "Place Names",
@@ -4028,6 +4165,8 @@
     "State Capitals"
   ],
   "Des Moines": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with NES",
     "Place Names",
@@ -4035,6 +4174,8 @@
     "State Capitals"
   ],
   "Topeka": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with EKA",
     "Place Names",
@@ -4042,6 +4183,8 @@
     "State Capitals"
   ],
   "Frankfort": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ORT",
     "Place Names",
@@ -4049,6 +4192,8 @@
     "State Capitals"
   ],
   "Baton Rouge": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with UGE",
     "Place Names",
@@ -4056,6 +4201,8 @@
     "State Capitals"
   ],
   "Augusta": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with STA",
     "Place Names",
@@ -4063,6 +4210,8 @@
     "State Capitals"
   ],
   "Annapolis": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with LIS",
     "Place Names",
@@ -4070,6 +4219,8 @@
     "State Capitals"
   ],
   "Saint Paul": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with AUL",
     "Place Names",
@@ -4077,6 +4228,8 @@
     "State Capitals"
   ],
   "Jefferson City": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ITY",
     "Place Names",
@@ -4084,6 +4237,8 @@
     "State Capitals"
   ],
   "Helena": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ENA",
     "Place Names",
@@ -4091,6 +4246,8 @@
     "State Capitals"
   ],
   "Concord": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ORD",
     "Place Names",
@@ -4098,6 +4255,8 @@
     "State Capitals"
   ],
   "Trenton": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with TON",
     "Place Names",
@@ -4105,6 +4264,8 @@
     "State Capitals"
   ],
   "Santa Fe": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with  FE",
     "Place Names",
@@ -4112,6 +4273,8 @@
     "State Capitals"
   ],
   "Raleigh": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with IGH",
     "Place Names",
@@ -4119,6 +4282,8 @@
     "State Capitals"
   ],
   "Columbus": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with BUS",
     "Place Names",
@@ -4126,6 +4291,8 @@
     "State Capitals"
   ],
   "Oklahoma City": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ITY",
     "Place Names",
@@ -4133,14 +4300,18 @@
     "State Capitals"
   ],
   "Salem": [
+    "Books",
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with LEM",
     "Place Names",
     "Starts with SAL",
-    "State Capitals",
-    "Books"
+    "State Capitals"
   ],
   "Harrisburg": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with URG",
     "Place Names",
@@ -4148,6 +4319,8 @@
     "State Capitals"
   ],
   "Providence": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with NCE",
     "Place Names",
@@ -4155,6 +4328,8 @@
     "State Capitals"
   ],
   "Columbia": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with BIA",
     "Place Names",
@@ -4162,6 +4337,8 @@
     "State Capitals"
   ],
   "Pierre": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with RRE",
     "Place Names",
@@ -4169,6 +4346,8 @@
     "State Capitals"
   ],
   "Nashville": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with LLE",
     "Place Names",
@@ -4176,6 +4355,8 @@
     "State Capitals"
   ],
   "Salt Lake City": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with ITY",
     "Place Names",
@@ -4183,6 +4364,8 @@
     "State Capitals"
   ],
   "Montpelier": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with IER",
     "Place Names",
@@ -4190,6 +4373,8 @@
     "State Capitals"
   ],
   "Richmond": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with OND",
     "Place Names",
@@ -4197,6 +4382,8 @@
     "State Capitals"
   ],
   "Charleston": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with TON",
     "Place Names",
@@ -4204,6 +4391,8 @@
     "State Capitals"
   ],
   "Cheyenne": [
+    "Cities",
+    "Cities in North America",
     "Cities in USA",
     "Ends with NNE",
     "Place Names",
@@ -4396,12 +4585,14 @@
     "Starts with INU"
   ],
   "Tijuana": [
+    "Cities",
     "Cities in North America",
     "Ends with ANA",
     "Place Names",
     "Starts with TIJ"
   ],
   "Cancun": [
+    "Cities",
     "Cities in North America",
     "Ends with CUN",
     "Place Names",
@@ -4409,16 +4600,11 @@
   ],
   "Mecca": [
     "Ancient Cities",
+    "Cities",
     "Ends with CCA",
     "Place Names",
     "Religious Sites",
     "Starts with MEC"
-  ],
-  "Vatican": [
-    "Ends with CAN",
-    "Place Names",
-    "Religious Sites",
-    "Starts with VAT"
   ],
   "Temple Mount": [
     "Ends with UNT",
@@ -4832,6 +5018,7 @@
     "Units of Measurement"
   ],
   "Lima": [
+    "Cities",
     "Cities in South America",
     "Ends with IMA",
     "Foods",
@@ -6545,6 +6732,7 @@
   ],
   "Jerusalem": [
     "Ancient Cities",
+    "Cities",
     "Cities in Asia",
     "Ends with LEM",
     "Place Names",
@@ -6654,12 +6842,13 @@
     "Weapons"
   ],
   "Herculaneum": [
+    "Ancient Cities",
+    "Cities",
+    "Disasters",
     "Ends with EUM",
     "Place Names",
-    "Starts with HER",
     "Roman Empire",
-    "Ancient Cities",
-    "Disasters",
+    "Starts with HER",
     "Volcanoes"
   ],
   "Red Hood": [
@@ -6767,5 +6956,1302 @@
     "Movies",
     "Starts with PIN",
     "Wooden Objects"
+  ],
+  "Zeppelin": [
+    "Airships",
+    "Band Namesakes",
+    "Ends with LIN",
+    "Musicians",
+    "Starts with ZEP"
+  ],
+  "Ammonia": [
+    "Chemicals",
+    "Ends with NIA",
+    "Starts with AMM"
+  ],
+  "Mauretania": [
+    "Ends with NIA",
+    "Roman Empire",
+    "Ships",
+    "Starts with MAU"
+  ],
+  "Afghanistan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TAN",
+    "Place Names",
+    "Starts with AFG"
+  ],
+  "Albania": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with NIA",
+    "Place Names",
+    "Starts with ALB"
+  ],
+  "Algeria": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with RIA",
+    "Place Names",
+    "Starts with ALG"
+  ],
+  "Andorra": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with RRA",
+    "Place Names",
+    "Starts with AND"
+  ],
+  "Angola": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with OLA",
+    "Place Names",
+    "Starts with ANG"
+  ],
+  "Antigua and Barbuda": [
+    "Countries",
+    "Countries in North America",
+    "Ends with UDA",
+    "Place Names",
+    "Starts with ANT",
+    "Island Nations"
+  ],
+  "Argentina": [
+    "Countries",
+    "Countries in South America",
+    "Ends with INA",
+    "Place Names",
+    "Starts with ARG"
+  ],
+  "Armenia": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with NIA",
+    "Place Names",
+    "Starts with ARM"
+  ],
+  "Austria": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with RIA",
+    "Place Names",
+    "Starts with AUS"
+  ],
+  "Azerbaijan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with JAN",
+    "Place Names",
+    "Starts with AZE"
+  ],
+  "Bahamas": [
+    "Countries",
+    "Countries in North America",
+    "Ends with MAS",
+    "Place Names",
+    "Starts with BAH",
+    "Island Nations"
+  ],
+  "Bahrain": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with AIN",
+    "Place Names",
+    "Starts with BAH",
+    "Island Nations"
+  ],
+  "Bangladesh": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with ESH",
+    "Place Names",
+    "Starts with BAN"
+  ],
+  "Barbados": [
+    "Countries",
+    "Countries in North America",
+    "Ends with DOS",
+    "Place Names",
+    "Starts with BAR",
+    "Island Nations"
+  ],
+  "Belarus": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with RUS",
+    "Place Names",
+    "Starts with BEL"
+  ],
+  "Belgium": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with IUM",
+    "Place Names",
+    "Starts with BEL"
+  ],
+  "Belize": [
+    "Countries",
+    "Countries in North America",
+    "Ends with IZE",
+    "Place Names",
+    "Starts with BEL"
+  ],
+  "Benin": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NIN",
+    "Place Names",
+    "Starts with BEN"
+  ],
+  "Bhutan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TAN",
+    "Place Names",
+    "Starts with BHU"
+  ],
+  "Bolivia": [
+    "Countries",
+    "Countries in South America",
+    "Ends with VIA",
+    "Place Names",
+    "Starts with BOL"
+  ],
+  "Bosnia and Herzegovina": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with INA",
+    "Place Names",
+    "Starts with BOS"
+  ],
+  "Botswana": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with ANA",
+    "Place Names",
+    "Starts with BOT"
+  ],
+  "Brunei": [
+    "Countries",
+    "Ends with NEI",
+    "Place Names",
+    "Starts with BRU"
+  ],
+  "Bulgaria": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with RIA",
+    "Place Names",
+    "Starts with BUL"
+  ],
+  "Burkina Faso": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with ASO",
+    "Place Names",
+    "Starts with BUR"
+  ],
+  "Burundi": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NDI",
+    "Place Names",
+    "Starts with BUR"
+  ],
+  "Cabo Verde": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with RDE",
+    "Place Names",
+    "Starts with CAB",
+    "Island Nations"
+  ],
+  "Cambodia": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with DIA",
+    "Place Names",
+    "Starts with CAM"
+  ],
+  "Cameroon": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with OON",
+    "Place Names",
+    "Starts with CAM"
+  ],
+  "Central African Republic": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with LIC",
+    "Place Names",
+    "Starts with CEN"
+  ],
+  "Chad": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with HAD",
+    "Male Names",
+    "Place Names",
+    "Starts with CHA"
+  ],
+  "Chile": [
+    "Countries",
+    "Countries in South America",
+    "Ends with ILE",
+    "Place Names",
+    "Starts with CHI"
+  ],
+  "Colombia": [
+    "Countries",
+    "Countries in South America",
+    "Ends with BIA",
+    "Place Names",
+    "Starts with COL"
+  ],
+  "Comoros": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with ROS",
+    "Place Names",
+    "Starts with COM",
+    "Island Nations"
+  ],
+  "Costa Rica": [
+    "Countries",
+    "Countries in North America",
+    "Ends with ICA",
+    "Place Names",
+    "Starts with COS"
+  ],
+  "Croatia": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with TIA",
+    "Place Names",
+    "Starts with CRO"
+  ],
+  "Cuba": [
+    "Countries",
+    "Countries in North America",
+    "Ends with UBA",
+    "Place Names",
+    "Starts with CUB",
+    "Island Nations"
+  ],
+  "Cyprus": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with RUS",
+    "Place Names",
+    "Starts with CYP",
+    "Island Nations"
+  ],
+  "Czech Republic": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with LIC",
+    "Place Names",
+    "Starts with CZE"
+  ],
+  "Democratic Republic of the Congo": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NGO",
+    "Place Names",
+    "Starts with DEM"
+  ],
+  "Denmark": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with ARK",
+    "Place Names",
+    "Starts with DEN"
+  ],
+  "Djibouti": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with UTI",
+    "Place Names",
+    "Starts with DJI"
+  ],
+  "Dominica": [
+    "Countries",
+    "Countries in North America",
+    "Ends with ICA",
+    "Place Names",
+    "Starts with DOM",
+    "Island Nations"
+  ],
+  "Dominican Republic": [
+    "Countries",
+    "Countries in North America",
+    "Ends with LIC",
+    "Place Names",
+    "Starts with DOM",
+    "Island Nations"
+  ],
+  "East Timor": [
+    "Countries",
+    "Ends with MOR",
+    "Place Names",
+    "Starts with EAS",
+    "Island Nations"
+  ],
+  "Ecuador": [
+    "Countries",
+    "Countries in South America",
+    "Ends with DOR",
+    "Place Names",
+    "Starts with ECU"
+  ],
+  "Egypt": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with YPT",
+    "Place Names",
+    "Starts with EGY"
+  ],
+  "El Salvador": [
+    "Countries",
+    "Countries in North America",
+    "Ends with DOR",
+    "Place Names",
+    "Starts with EL "
+  ],
+  "Equatorial Guinea": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NEA",
+    "Place Names",
+    "Starts with EQU"
+  ],
+  "Eritrea": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with REA",
+    "Place Names",
+    "Starts with ERI"
+  ],
+  "Estonia": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with NIA",
+    "Place Names",
+    "Starts with EST"
+  ],
+  "Eswatini": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with INI",
+    "Place Names",
+    "Starts with ESW"
+  ],
+  "Ethiopia": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with PIA",
+    "Place Names",
+    "Starts with ETH"
+  ],
+  "Fiji": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with IJI",
+    "Place Names",
+    "Starts with FIJ",
+    "Island Nations"
+  ],
+  "Finland": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with AND",
+    "Place Names",
+    "Starts with FIN"
+  ],
+  "Gabon": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with BON",
+    "Place Names",
+    "Starts with GAB"
+  ],
+  "Gambia": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with BIA",
+    "Place Names",
+    "Starts with GAM"
+  ],
+  "Ghana": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with ANA",
+    "Place Names",
+    "Starts with GHA"
+  ],
+  "Grenada": [
+    "Countries",
+    "Countries in North America",
+    "Ends with ADA",
+    "Place Names",
+    "Starts with GRE",
+    "Island Nations"
+  ],
+  "Guatemala": [
+    "Countries",
+    "Countries in North America",
+    "Ends with ALA",
+    "Place Names",
+    "Starts with GUA"
+  ],
+  "Guinea": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NEA",
+    "Place Names",
+    "Starts with GUI"
+  ],
+  "Guinea-Bissau": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with SAU",
+    "Place Names",
+    "Starts with GUI"
+  ],
+  "Guyana": [
+    "Countries",
+    "Countries in South America",
+    "Ends with ANA",
+    "Place Names",
+    "Starts with GUY"
+  ],
+  "Haiti": [
+    "Countries",
+    "Countries in North America",
+    "Ends with ITI",
+    "Place Names",
+    "Starts with HAI"
+  ],
+  "Honduras": [
+    "Countries",
+    "Countries in North America",
+    "Ends with RAS",
+    "Place Names",
+    "Starts with HON"
+  ],
+  "Hungary": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with ARY",
+    "Place Names",
+    "Starts with HUN"
+  ],
+  "Iceland": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with AND",
+    "Place Names",
+    "Starts with ICE",
+    "Island Nations"
+  ],
+  "Indonesia": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with SIA",
+    "Place Names",
+    "Starts with IND",
+    "Island Nations"
+  ],
+  "Iran": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with RAN",
+    "Place Names",
+    "Starts with IRA"
+  ],
+  "Iraq": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with RAQ",
+    "Place Names",
+    "Starts with IRA"
+  ],
+  "Ireland": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with AND",
+    "Place Names",
+    "Starts with IRE",
+    "Island Nations"
+  ],
+  "Israel": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with AEL",
+    "Place Names",
+    "Starts with ISR"
+  ],
+  "Ivory Coast": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with AST",
+    "Place Names",
+    "Starts with IVO"
+  ],
+  "Jamaica": [
+    "Countries",
+    "Countries in North America",
+    "Ends with ICA",
+    "Place Names",
+    "Starts with JAM",
+    "Island Nations"
+  ],
+  "Kazakhstan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TAN",
+    "Place Names",
+    "Starts with KAZ"
+  ],
+  "Kenya": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NYA",
+    "Place Names",
+    "Starts with KEN"
+  ],
+  "Kiribati": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with ATI",
+    "Place Names",
+    "Starts with KIR",
+    "Island Nations"
+  ],
+  "Kuwait": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with AIT",
+    "Place Names",
+    "Starts with KUW"
+  ],
+  "Kyrgyzstan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TAN",
+    "Place Names",
+    "Starts with KYR"
+  ],
+  "Laos": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with AOS",
+    "Place Names",
+    "Starts with LAO"
+  ],
+  "Latvia": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with VIA",
+    "Place Names",
+    "Starts with LAT"
+  ],
+  "Lebanon": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with NON",
+    "Place Names",
+    "Starts with LEB"
+  ],
+  "Lesotho": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with THO",
+    "Place Names",
+    "Starts with LES"
+  ],
+  "Liberia": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with RIA",
+    "Place Names",
+    "Starts with LIB"
+  ],
+  "Libya": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with BYA",
+    "Place Names",
+    "Starts with LIB"
+  ],
+  "Liechtenstein": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with EIN",
+    "Place Names",
+    "Starts with LIE"
+  ],
+  "Lithuania": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with NIA",
+    "Place Names",
+    "Starts with LIT"
+  ],
+  "Luxembourg": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with URG",
+    "Place Names",
+    "Starts with LUX"
+  ],
+  "Madagascar": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with CAR",
+    "Movies",
+    "Place Names",
+    "Starts with MAD",
+    "Island Nations"
+  ],
+  "Malawi": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with AWI",
+    "Place Names",
+    "Starts with MAL"
+  ],
+  "Malaysia": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with SIA",
+    "Place Names",
+    "Starts with MAL"
+  ],
+  "Maldives": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with VES",
+    "Place Names",
+    "Starts with MAL",
+    "Island Nations"
+  ],
+  "Mali": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with ALI",
+    "Place Names",
+    "Starts with MAL"
+  ],
+  "Malta": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with LTA",
+    "Place Names",
+    "Starts with MAL",
+    "Island Nations"
+  ],
+  "Marshall Islands": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with NDS",
+    "Place Names",
+    "Starts with MAR",
+    "Island Nations"
+  ],
+  "Mauritania": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NIA",
+    "Place Names",
+    "Starts with MAU"
+  ],
+  "Mauritius": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with IUS",
+    "Place Names",
+    "Starts with MAU",
+    "Island Nations"
+  ],
+  "Micronesia": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with SIA",
+    "Place Names",
+    "Starts with MIC",
+    "Island Nations"
+  ],
+  "Moldova": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with OVA",
+    "Place Names",
+    "Starts with MOL"
+  ],
+  "Monaco": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with ACO",
+    "Place Names",
+    "Starts with MON"
+  ],
+  "Mongolia": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with LIA",
+    "Place Names",
+    "Starts with MON"
+  ],
+  "Montenegro": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with GRO",
+    "Place Names",
+    "Starts with MON"
+  ],
+  "Morocco": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with CCO",
+    "Place Names",
+    "Starts with MOR"
+  ],
+  "Mozambique": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with QUE",
+    "Place Names",
+    "Starts with MOZ"
+  ],
+  "Myanmar": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with MAR",
+    "Place Names",
+    "Starts with MYA"
+  ],
+  "Namibia": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with BIA",
+    "Place Names",
+    "Starts with NAM"
+  ],
+  "Nauru": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with URU",
+    "Place Names",
+    "Starts with NAU",
+    "Island Nations"
+  ],
+  "Nepal": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with PAL",
+    "Place Names",
+    "Starts with NEP"
+  ],
+  "Netherlands": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with NDS",
+    "Place Names",
+    "Starts with NET"
+  ],
+  "Nicaragua": [
+    "Countries",
+    "Countries in North America",
+    "Ends with GUA",
+    "Place Names",
+    "Starts with NIC"
+  ],
+  "Niger": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with GER",
+    "Place Names",
+    "Starts with NIG"
+  ],
+  "Nigeria": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with RIA",
+    "Place Names",
+    "Starts with NIG"
+  ],
+  "North Korea": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with REA",
+    "Place Names",
+    "Starts with NOR"
+  ],
+  "North Macedonia": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with NIA",
+    "Place Names",
+    "Starts with NOR"
+  ],
+  "Norway": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with WAY",
+    "Place Names",
+    "Starts with NOR"
+  ],
+  "Oman": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with MAN",
+    "Place Names",
+    "Starts with OMA"
+  ],
+  "Pakistan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TAN",
+    "Place Names",
+    "Starts with PAK"
+  ],
+  "Palau": [
+    "Countries",
+    "Countries in Asia",
+    "Countries in Oceania",
+    "Ends with LAU",
+    "Place Names",
+    "Starts with PAL",
+    "Island Nations"
+  ],
+  "Panama": [
+    "Countries",
+    "Countries in North America",
+    "Ends with AMA",
+    "Place Names",
+    "Starts with PAN"
+  ],
+  "Papua New Guinea": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with NEA",
+    "Place Names",
+    "Starts with PAP",
+    "Island Nations"
+  ],
+  "Paraguay": [
+    "Countries",
+    "Countries in South America",
+    "Ends with UAY",
+    "Place Names",
+    "Starts with PAR"
+  ],
+  "Peru": [
+    "Countries",
+    "Countries in South America",
+    "Ends with ERU",
+    "Place Names",
+    "Starts with PER"
+  ],
+  "Philippines": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with NES",
+    "Place Names",
+    "Starts with PHI",
+    "Island Nations"
+  ],
+  "Poland": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with AND",
+    "Place Names",
+    "Starts with POL"
+  ],
+  "Portugal": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with GAL",
+    "Place Names",
+    "Starts with POR"
+  ],
+  "Qatar": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TAR",
+    "Place Names",
+    "Starts with QAT"
+  ],
+  "Romania": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with NIA",
+    "Place Names",
+    "Starts with ROM"
+  ],
+  "Russia": [
+    "Countries",
+    "Countries in Europe",
+    "Countries in Asia",
+    "Ends with SIA",
+    "Place Names",
+    "Starts with RUS"
+  ],
+  "Rwanda": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NDA",
+    "Place Names",
+    "Starts with RWA"
+  ],
+  "Saint Kitts and Nevis": [
+    "Countries",
+    "Countries in North America",
+    "Ends with VIS",
+    "Place Names",
+    "Starts with SAI",
+    "Island Nations"
+  ],
+  "Saint Lucia": [
+    "Countries",
+    "Countries in North America",
+    "Ends with CIA",
+    "Place Names",
+    "Starts with SAI",
+    "Island Nations"
+  ],
+  "Saint Vincent and the Grenadines": [
+    "Countries",
+    "Countries in North America",
+    "Ends with NES",
+    "Place Names",
+    "Starts with SAI",
+    "Island Nations"
+  ],
+  "Samoa": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with MOA",
+    "Place Names",
+    "Starts with SAM",
+    "Island Nations"
+  ],
+  "San Marino": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with INO",
+    "Place Names",
+    "Starts with SAN"
+  ],
+  "Sao Tome and Principe": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with IPE",
+    "Place Names",
+    "Starts with SAO",
+    "Island Nations"
+  ],
+  "Saudi Arabia": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with BIA",
+    "Place Names",
+    "Starts with SAU"
+  ],
+  "Senegal": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with GAL",
+    "Place Names",
+    "Starts with SEN"
+  ],
+  "Serbia": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with BIA",
+    "Place Names",
+    "Starts with SER"
+  ],
+  "Seychelles": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with LES",
+    "Place Names",
+    "Starts with SEY",
+    "Island Nations"
+  ],
+  "Sierra Leone": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with ONE",
+    "Place Names",
+    "Starts with SIE"
+  ],
+  "Singapore": [
+    "Cities",
+    "Cities in Asia",
+    "Countries",
+    "Countries in Asia",
+    "Ends with ORE",
+    "Island Nations",
+    "Place Names",
+    "Starts with SIN"
+  ],
+  "Slovakia": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with KIA",
+    "Place Names",
+    "Starts with SLO"
+  ],
+  "Slovenia": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with NIA",
+    "Place Names",
+    "Starts with SLO"
+  ],
+  "Solomon Islands": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with NDS",
+    "Place Names",
+    "Starts with SOL",
+    "Island Nations"
+  ],
+  "Somalia": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with LIA",
+    "Place Names",
+    "Starts with SOM"
+  ],
+  "South Korea": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with REA",
+    "Place Names",
+    "Starts with SOU"
+  ],
+  "South Sudan": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with DAN",
+    "Place Names",
+    "Starts with SOU"
+  ],
+  "Sri Lanka": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with NKA",
+    "Place Names",
+    "Starts with SRI",
+    "Island Nations"
+  ],
+  "Sudan": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with DAN",
+    "Place Names",
+    "Starts with SUD"
+  ],
+  "Suriname": [
+    "Countries",
+    "Countries in South America",
+    "Ends with AME",
+    "Place Names",
+    "Starts with SUR"
+  ],
+  "Sweden": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with DEN",
+    "Place Names",
+    "Starts with SWE"
+  ],
+  "Switzerland": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with AND",
+    "Place Names",
+    "Starts with SWI"
+  ],
+  "Syria": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with RIA",
+    "Place Names",
+    "Starts with SYR"
+  ],
+  "Taiwan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with WAN",
+    "Place Names",
+    "Starts with TAI",
+    "Island Nations"
+  ],
+  "Tajikistan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TAN",
+    "Place Names",
+    "Starts with TAJ"
+  ],
+  "Tanzania": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NIA",
+    "Place Names",
+    "Starts with TAN"
+  ],
+  "Thailand": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with AND",
+    "Place Names",
+    "Starts with THA"
+  ],
+  "Togo": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with OGO",
+    "Place Names",
+    "Starts with TOG"
+  ],
+  "Tonga": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with NGA",
+    "Place Names",
+    "Starts with TON",
+    "Island Nations"
+  ],
+  "Trinidad and Tobago": [
+    "Countries",
+    "Countries in North America",
+    "Ends with AGO",
+    "Place Names",
+    "Starts with TRI",
+    "Island Nations"
+  ],
+  "Tunisia": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with SIA",
+    "Place Names",
+    "Starts with TUN"
+  ],
+  "Turkmenistan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TAN",
+    "Place Names",
+    "Starts with TUR"
+  ],
+  "Tuvalu": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with ALU",
+    "Place Names",
+    "Starts with TUV",
+    "Island Nations"
+  ],
+  "Uganda": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with NDA",
+    "Place Names",
+    "Starts with UGA"
+  ],
+  "Ukraine": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with INE",
+    "Place Names",
+    "Starts with UKR"
+  ],
+  "United Arab Emirates": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TES",
+    "Place Names",
+    "Starts with UNI"
+  ],
+  "United States": [
+    "Countries",
+    "Countries in North America",
+    "Ends with TES",
+    "Place Names",
+    "Starts with UNI"
+  ],
+  "Uruguay": [
+    "Countries",
+    "Countries in South America",
+    "Ends with UAY",
+    "Place Names",
+    "Starts with URU"
+  ],
+  "Uzbekistan": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with TAN",
+    "Place Names",
+    "Starts with UZB"
+  ],
+  "Vanuatu": [
+    "Countries",
+    "Countries in Oceania",
+    "Ends with ATU",
+    "Place Names",
+    "Starts with VAN",
+    "Island Nations"
+  ],
+  "Vatican City": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with ITY",
+    "Place Names",
+    "Starts with VAT",
+    "Religious Sites"
+  ],
+  "Venezuela": [
+    "Countries",
+    "Countries in South America",
+    "Ends with ELA",
+    "Place Names",
+    "Starts with VEN"
+  ],
+  "Vietnam": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with NAM",
+    "Place Names",
+    "Starts with VIE"
+  ],
+  "Yemen": [
+    "Countries",
+    "Countries in Asia",
+    "Ends with MEN",
+    "Place Names",
+    "Starts with YEM"
+  ],
+  "Zambia": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with BIA",
+    "Place Names",
+    "Starts with ZAM"
+  ],
+  "Zimbabwe": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with BWE",
+    "Place Names",
+    "Starts with ZIM"
   ]
 }
