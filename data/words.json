@@ -1312,7 +1312,8 @@
     "WWII Allied Powers",
     "NATO Countries",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony"
   ],
   "Germany": [
     "Countries",
@@ -1386,7 +1387,9 @@
     "Starts with BRA",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Portuguese Colony",
+    "Former Dutch Colony"
   ],
   "India": [
     "Commonwealth Nations",
@@ -1398,7 +1401,8 @@
     "Starts with IND",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Mexico": [
     "Countries",
@@ -1408,7 +1412,8 @@
     "Starts with MEX",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former Spanish Colony"
   ],
   "Greece": [
     "Countries",
@@ -2779,7 +2784,8 @@
     "Starts with AUS",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony"
   ],
   "United Kingdom": [
     "Commonwealth Nations",
@@ -3497,7 +3503,8 @@
     "Place Names",
     "Starts with JOR",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Baghdad": [
     "Ancient Cities",
@@ -3677,7 +3684,8 @@
     "Starts with NEW",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony"
   ],
   "South Africa": [
     "Commonwealth Nations",
@@ -3688,7 +3696,10 @@
     "Starts with SOU",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony",
+    "Former Dutch Colony"
   ],
   "Seoul": [
     "Cities",
@@ -4128,7 +4139,9 @@
     "Rainforests",
     "Starts with CON",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Daintree": [
     "Ends with REE",
@@ -7181,7 +7194,8 @@
     "WWII Allied Powers",
     "NATO Countries",
     "Modern Countries",
-    "Locations in Europe"
+    "Locations in Europe",
+    "Former Italian Colony"
   ],
   "Algeria": [
     "Countries",
@@ -7190,7 +7204,9 @@
     "Place Names",
     "Starts with ALG",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Andorra": [
     "Countries",
@@ -7208,7 +7224,9 @@
     "Place Names",
     "Starts with ANG",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Spanish Colony",
+    "Former Portuguese Colony"
   ],
   "Antigua and Barbuda": [
     "Countries",
@@ -7218,7 +7236,9 @@
     "Starts with ANT",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony",
+    "Former French Colony"
   ],
   "Argentina": [
     "Countries",
@@ -7228,7 +7248,8 @@
     "Starts with ARG",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Spanish Colony"
   ],
   "Armenia": [
     "Countries",
@@ -7267,7 +7288,8 @@
     "Starts with BAH",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony"
   ],
   "Bahrain": [
     "Countries",
@@ -7277,7 +7299,8 @@
     "Starts with BAH",
     "Island Nations",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Bangladesh": [
     "Countries",
@@ -7286,7 +7309,8 @@
     "Place Names",
     "Starts with BAN",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Barbados": [
     "Countries",
@@ -7296,7 +7320,8 @@
     "Starts with BAR",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony"
   ],
   "Belarus": [
     "Countries",
@@ -7326,7 +7351,8 @@
     "Place Names",
     "Starts with BEL",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony"
   ],
   "Benin": [
     "Countries",
@@ -7335,7 +7361,9 @@
     "Place Names",
     "Starts with BEN",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Bhutan": [
     "Countries",
@@ -7354,7 +7382,8 @@
     "Starts with BOL",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Spanish Colony"
   ],
   "Bosnia and Herzegovina": [
     "Countries",
@@ -7372,7 +7401,9 @@
     "Place Names",
     "Starts with BOT",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Brunei": [
     "Countries",
@@ -7399,7 +7430,9 @@
     "Place Names",
     "Starts with BUR",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Burundi": [
     "Countries",
@@ -7408,7 +7441,10 @@
     "Place Names",
     "Starts with BUR",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former German Colony",
+    "Former Spanish Colony",
+    "Former Belgian Colony"
   ],
   "Cabo Verde": [
     "Countries",
@@ -7427,7 +7463,8 @@
     "Place Names",
     "Starts with CAM",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former French Colony"
   ],
   "Cameroon": [
     "Countries",
@@ -7436,7 +7473,11 @@
     "Place Names",
     "Starts with CAM",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former French Colony",
+    "Former German Colony",
+    "Former Spanish Colony"
   ],
   "Central African Republic": [
     "Countries",
@@ -7445,7 +7486,9 @@
     "Place Names",
     "Starts with CEN",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Chad": [
     "Countries",
@@ -7455,7 +7498,9 @@
     "Place Names",
     "Starts with CHA",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Chile": [
     "Countries",
@@ -7465,7 +7510,8 @@
     "Starts with CHI",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Spanish Colony"
   ],
   "Colombia": [
     "Countries",
@@ -7475,7 +7521,8 @@
     "Starts with COL",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Spanish Colony"
   ],
   "Comoros": [
     "Countries",
@@ -7485,7 +7532,9 @@
     "Starts with COM",
     "Island Nations",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Costa Rica": [
     "Countries",
@@ -7495,7 +7544,8 @@
     "Starts with COS",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former Spanish Colony"
   ],
   "Croatia": [
     "Countries",
@@ -7506,7 +7556,8 @@
     "WWII Axis Powers",
     "NATO Countries",
     "Modern Countries",
-    "Locations in Europe"
+    "Locations in Europe",
+    "Former Italian Colony"
   ],
   "Cuba": [
     "Countries",
@@ -7517,7 +7568,8 @@
     "Island Nations",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former Spanish Colony"
   ],
   "Cyprus": [
     "Countries",
@@ -7527,7 +7579,8 @@
     "Starts with CYP",
     "Island Nations",
     "Modern Countries",
-    "Locations in Europe"
+    "Locations in Europe",
+    "Former British Colony"
   ],
   "Czech Republic": [
     "Countries",
@@ -7546,7 +7599,10 @@
     "Place Names",
     "Starts with DEM",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony",
+    "Former Belgian Colony"
   ],
   "Denmark": [
     "Countries",
@@ -7566,7 +7622,9 @@
     "Place Names",
     "Starts with DJI",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Dominica": [
     "Countries",
@@ -7576,7 +7634,9 @@
     "Starts with DOM",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony",
+    "Former French Colony"
   ],
   "Dominican Republic": [
     "Countries",
@@ -7587,7 +7647,9 @@
     "Island Nations",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Ecuador": [
     "Countries",
@@ -7597,7 +7659,8 @@
     "Starts with ECU",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Spanish Colony"
   ],
   "Egypt": [
     "Countries",
@@ -7607,7 +7670,9 @@
     "Starts with EGY",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "El Salvador": [
     "Countries",
@@ -7617,7 +7682,8 @@
     "Starts with EL ",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former Spanish Colony"
   ],
   "Equatorial Guinea": [
     "Countries",
@@ -7626,7 +7692,8 @@
     "Place Names",
     "Starts with EQU",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Spanish Colony"
   ],
   "Estonia": [
     "Countries",
@@ -7646,7 +7713,9 @@
     "Place Names",
     "Starts with ESW",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Ethiopia": [
     "Countries",
@@ -7656,7 +7725,8 @@
     "Starts with ETH",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Italian Colony"
   ],
   "Fiji": [
     "Countries",
@@ -7666,7 +7736,8 @@
     "Starts with FIJ",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony"
   ],
   "Finland": [
     "Countries",
@@ -7686,7 +7757,9 @@
     "Place Names",
     "Starts with GAB",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Gambia": [
     "Countries",
@@ -7695,7 +7768,9 @@
     "Place Names",
     "Starts with GAM",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Ghana": [
     "Countries",
@@ -7704,7 +7779,9 @@
     "Place Names",
     "Starts with GHA",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Grenada": [
     "Countries",
@@ -7714,7 +7791,9 @@
     "Starts with GRE",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony",
+    "Former French Colony"
   ],
   "Guatemala": [
     "Countries",
@@ -7724,7 +7803,8 @@
     "Starts with GUA",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former Spanish Colony"
   ],
   "Guinea": [
     "Countries",
@@ -7733,7 +7813,9 @@
     "Place Names",
     "Starts with GUI",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Guinea-Bissau": [
     "Countries",
@@ -7742,7 +7824,9 @@
     "Place Names",
     "Starts with GUI",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Spanish Colony",
+    "Former Portuguese Colony"
   ],
   "Guyana": [
     "Countries",
@@ -7751,7 +7835,10 @@
     "Place Names",
     "Starts with GUY",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former British Colony",
+    "Former French Colony",
+    "Former Dutch Colony"
   ],
   "Haiti": [
     "Countries",
@@ -7761,7 +7848,8 @@
     "Starts with HAI",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former French Colony"
   ],
   "Honduras": [
     "Countries",
@@ -7771,7 +7859,8 @@
     "Starts with HON",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former Spanish Colony"
   ],
   "Hungary": [
     "Countries",
@@ -7803,7 +7892,8 @@
     "Starts with IND",
     "Island Nations",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former Dutch Colony"
   ],
   "Iran": [
     "Countries",
@@ -7823,7 +7913,8 @@
     "Starts with IRA",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Ireland": [
     "Countries",
@@ -7842,7 +7933,8 @@
     "Place Names",
     "Starts with ISR",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Ivory Coast": [
     "Countries",
@@ -7851,7 +7943,9 @@
     "Place Names",
     "Starts with IVO",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Jamaica": [
     "Countries",
@@ -7861,7 +7955,8 @@
     "Starts with JAM",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony"
   ],
   "Kazakhstan": [
     "Countries",
@@ -7880,7 +7975,9 @@
     "Place Names",
     "Starts with KEN",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Kiribati": [
     "Countries",
@@ -7890,7 +7987,8 @@
     "Starts with KIR",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony"
   ],
   "Kuwait": [
     "Countries",
@@ -7899,7 +7997,8 @@
     "Place Names",
     "Starts with KUW",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Kyrgyzstan": [
     "Countries",
@@ -7918,7 +8017,8 @@
     "Place Names",
     "Starts with LAO",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former French Colony"
   ],
   "Latvia": [
     "Countries",
@@ -7938,7 +8038,8 @@
     "Place Names",
     "Starts with LEB",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former French Colony"
   ],
   "Lesotho": [
     "Countries",
@@ -7947,7 +8048,9 @@
     "Place Names",
     "Starts with LES",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Liberia": [
     "Countries",
@@ -7957,7 +8060,8 @@
     "Starts with LIB",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Spanish Colony"
   ],
   "Liechtenstein": [
     "Countries",
@@ -7999,7 +8103,9 @@
     "Starts with MAD",
     "Island Nations",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Malawi": [
     "Countries",
@@ -8008,7 +8114,9 @@
     "Place Names",
     "Starts with MAL",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Malaysia": [
     "Countries",
@@ -8017,7 +8125,9 @@
     "Place Names",
     "Starts with MAL",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony",
+    "Former Dutch Colony"
   ],
   "Maldives": [
     "Countries",
@@ -8027,7 +8137,8 @@
     "Starts with MAL",
     "Island Nations",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Mali": [
     "Countries",
@@ -8036,7 +8147,9 @@
     "Place Names",
     "Starts with MAL",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Malta": [
     "Countries",
@@ -8046,7 +8159,8 @@
     "Starts with MAL",
     "Island Nations",
     "Modern Countries",
-    "Locations in Europe"
+    "Locations in Europe",
+    "Former British Colony"
   ],
   "Marshall Islands": [
     "Countries",
@@ -8056,7 +8170,8 @@
     "Starts with MAR",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former German Colony"
   ],
   "Mauritania": [
     "Countries",
@@ -8075,7 +8190,9 @@
     "Starts with MAU",
     "Island Nations",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Micronesia": [
     "Countries",
@@ -8085,7 +8202,8 @@
     "Starts with MIC",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former German Colony"
   ],
   "Moldova": [
     "Countries",
@@ -8125,7 +8243,8 @@
     "Starts with MON",
     "NATO Countries",
     "Modern Countries",
-    "Locations in Europe"
+    "Locations in Europe",
+    "Former Italian Colony"
   ],
   "Morocco": [
     "Countries",
@@ -8134,7 +8253,9 @@
     "Place Names",
     "Starts with MOR",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Mozambique": [
     "Countries",
@@ -8143,7 +8264,9 @@
     "Place Names",
     "Starts with MOZ",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Spanish Colony",
+    "Former Portuguese Colony"
   ],
   "Myanmar": [
     "Countries",
@@ -8152,7 +8275,8 @@
     "Place Names",
     "Starts with MYA",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Namibia": [
     "Countries",
@@ -8161,7 +8285,10 @@
     "Place Names",
     "Starts with NAM",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former German Colony",
+    "Former Spanish Colony"
   ],
   "Nauru": [
     "Countries",
@@ -8171,7 +8298,9 @@
     "Starts with NAU",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony",
+    "Former German Colony"
   ],
   "Nepal": [
     "Countries",
@@ -8201,7 +8330,8 @@
     "Starts with NIC",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former Spanish Colony"
   ],
   "Niger": [
     "Countries",
@@ -8210,7 +8340,9 @@
     "Place Names",
     "Starts with NIG",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Nigeria": [
     "Countries",
@@ -8219,7 +8351,9 @@
     "Place Names",
     "Starts with NIG",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "North Korea": [
     "Countries",
@@ -8258,7 +8392,8 @@
     "Place Names",
     "Starts with OMA",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Pakistan": [
     "Countries",
@@ -8267,7 +8402,8 @@
     "Place Names",
     "Starts with PAK",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Palau": [
     "Countries",
@@ -8279,7 +8415,8 @@
     "Island Nations",
     "Modern Countries",
     "Locations in Asia",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former German Colony"
   ],
   "Panama": [
     "Countries",
@@ -8289,7 +8426,8 @@
     "Starts with PAN",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former Spanish Colony"
   ],
   "Papua New Guinea": [
     "Countries",
@@ -8299,7 +8437,9 @@
     "Starts with PAP",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony",
+    "Former German Colony"
   ],
   "Paraguay": [
     "Countries",
@@ -8309,7 +8449,8 @@
     "Starts with PAR",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Spanish Colony"
   ],
   "Peru": [
     "Countries",
@@ -8319,7 +8460,8 @@
     "Starts with PER",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Spanish Colony"
   ],
   "Philippines": [
     "Countries",
@@ -8330,7 +8472,9 @@
     "Island Nations",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former Spanish Colony",
+    "Former Dutch Colony"
   ],
   "Poland": [
     "Countries",
@@ -8360,7 +8504,8 @@
     "Place Names",
     "Starts with QAT",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Romania": [
     "Countries",
@@ -8392,7 +8537,10 @@
     "Place Names",
     "Starts with RWA",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former German Colony",
+    "Former Spanish Colony",
+    "Former Belgian Colony"
   ],
   "Saint Kitts and Nevis": [
     "Countries",
@@ -8402,7 +8550,9 @@
     "Starts with SAI",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony",
+    "Former French Colony"
   ],
   "Saint Lucia": [
     "Countries",
@@ -8412,7 +8562,9 @@
     "Starts with SAI",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony",
+    "Former French Colony"
   ],
   "Saint Vincent and the Grenadines": [
     "Countries",
@@ -8422,7 +8574,9 @@
     "Starts with SAI",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony",
+    "Former French Colony"
   ],
   "Samoa": [
     "Countries",
@@ -8432,7 +8586,9 @@
     "Starts with SAM",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony",
+    "Former German Colony"
   ],
   "San Marino": [
     "Countries",
@@ -8453,7 +8609,8 @@
     "Starts with SAO",
     "Island Nations",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Portuguese Colony"
   ],
   "Saudi Arabia": [
     "Countries",
@@ -8472,7 +8629,9 @@
     "Place Names",
     "Starts with SEN",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Serbia": [
     "Countries",
@@ -8491,7 +8650,9 @@
     "Starts with SEY",
     "Island Nations",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Sierra Leone": [
     "Countries",
@@ -8500,7 +8661,9 @@
     "Place Names",
     "Starts with SIE",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Singapore": [
     "Cities",
@@ -8512,7 +8675,9 @@
     "Place Names",
     "Starts with SIN",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony",
+    "Former Dutch Colony"
   ],
   "Slovakia": [
     "Countries",
@@ -8533,7 +8698,8 @@
     "Starts with SLO",
     "NATO Countries",
     "Modern Countries",
-    "Locations in Europe"
+    "Locations in Europe",
+    "Former Italian Colony"
   ],
   "Solomon Islands": [
     "Countries",
@@ -8543,7 +8709,8 @@
     "Starts with SOL",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony"
   ],
   "Somalia": [
     "Countries",
@@ -8552,7 +8719,9 @@
     "Place Names",
     "Starts with SOM",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Spanish Colony",
+    "Former Italian Colony"
   ],
   "South Korea": [
     "Countries",
@@ -8570,7 +8739,9 @@
     "Place Names",
     "Starts with SOU",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Sri Lanka": [
     "Countries",
@@ -8580,7 +8751,9 @@
     "Starts with SRI",
     "Island Nations",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony",
+    "Former Dutch Colony"
   ],
   "Suriname": [
     "Countries",
@@ -8589,7 +8762,9 @@
     "Place Names",
     "Starts with SUR",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former French Colony",
+    "Former Dutch Colony"
   ],
   "Sweden": [
     "Countries",
@@ -8617,7 +8792,8 @@
     "Place Names",
     "Starts with SYR",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former French Colony"
   ],
   "Taiwan": [
     "Countries",
@@ -8627,7 +8803,8 @@
     "Starts with TAI",
     "Island Nations",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former Dutch Colony"
   ],
   "Tajikistan": [
     "Countries",
@@ -8646,7 +8823,10 @@
     "Place Names",
     "Starts with TAN",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former German Colony",
+    "Former Spanish Colony"
   ],
   "Thailand": [
     "Countries",
@@ -8665,7 +8845,10 @@
     "Place Names",
     "Starts with TOG",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former German Colony",
+    "Former Spanish Colony"
   ],
   "Tonga": [
     "Countries",
@@ -8675,7 +8858,8 @@
     "Starts with TON",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony"
   ],
   "Trinidad and Tobago": [
     "Countries",
@@ -8685,7 +8869,9 @@
     "Starts with TRI",
     "Island Nations",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony",
+    "Former French Colony"
   ],
   "Tunisia": [
     "Countries",
@@ -8694,7 +8880,9 @@
     "Place Names",
     "Starts with TUN",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony",
+    "Former Spanish Colony"
   ],
   "Turkmenistan": [
     "Countries",
@@ -8714,7 +8902,8 @@
     "Starts with TUV",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony"
   ],
   "Uganda": [
     "Countries",
@@ -8723,7 +8912,9 @@
     "Place Names",
     "Starts with UGA",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Ukraine": [
     "Countries",
@@ -8742,7 +8933,8 @@
     "Place Names",
     "Starts with UNI",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "United States": [
     "Countries",
@@ -8753,7 +8945,8 @@
     "WWII Allied Powers",
     "NATO Countries",
     "Modern Countries",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony"
   ],
   "Uruguay": [
     "Countries",
@@ -8763,7 +8956,8 @@
     "Starts with URU",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Spanish Colony"
   ],
   "Uzbekistan": [
     "Countries",
@@ -8783,7 +8977,8 @@
     "Starts with VAN",
     "Island Nations",
     "Modern Countries",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony"
   ],
   "Vatican City": [
     "Countries",
@@ -8805,7 +9000,8 @@
     "Starts with VEN",
     "WWII Allied Powers",
     "Modern Countries",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Spanish Colony"
   ],
   "Vietnam": [
     "Countries",
@@ -8814,7 +9010,8 @@
     "Place Names",
     "Starts with VIE",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former French Colony"
   ],
   "Yemen": [
     "Countries",
@@ -8823,7 +9020,8 @@
     "Place Names",
     "Starts with YEM",
     "Modern Countries",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Zambia": [
     "Countries",
@@ -8832,7 +9030,9 @@
     "Place Names",
     "Starts with ZAM",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Zimbabwe": [
     "Countries",
@@ -8841,7 +9041,9 @@
     "Place Names",
     "Starts with ZIM",
     "Modern Countries",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony",
+    "Former Spanish Colony"
   ],
   "Warsaw Pact": [
     "Alliances",
@@ -8856,7 +9058,8 @@
     "Place Names",
     "Starts with EAS",
     "Countries that No Longer Exist",
-    "Locations in Europe"
+    "Locations in Europe",
+    "Former German Colony"
   ],
   "Rhodesia": [
     "Countries",
@@ -8865,7 +9068,8 @@
     "Place Names",
     "Starts with RHO",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "South Vietnam": [
     "Countries",
@@ -8874,7 +9078,8 @@
     "Place Names",
     "Starts with SOU",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former French Colony"
   ],
   "North Vietnam": [
     "Countries",
@@ -8883,7 +9088,8 @@
     "Place Names",
     "Starts with NOR",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former French Colony"
   ],
   "South Yemen": [
     "Countries",
@@ -8892,7 +9098,8 @@
     "Place Names",
     "Starts with SOU",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "North Yemen": [
     "Countries",
@@ -8901,7 +9108,8 @@
     "Place Names",
     "Starts with NOR",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Tanganyika": [
     "Countries",
@@ -8910,7 +9118,8 @@
     "Place Names",
     "Starts with TAN",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "Zanzibar": [
     "Countries",
@@ -8920,7 +9129,8 @@
     "Ends with BAR",
     "Place Names",
     "Starts with ZAN",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "Upper Volta": [
     "Countries",
@@ -8930,7 +9140,8 @@
     "Ends with TA",
     "Place Names",
     "Starts with UPP",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony"
   ],
   "Dahomey": [
     "Countries",
@@ -8940,7 +9151,8 @@
     "Ends with MEY",
     "Place Names",
     "Starts with DAH",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony"
   ],
   "Siam": [
     "Countries",
@@ -8949,7 +9161,9 @@
     "Place Names",
     "Starts with SIA",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony",
+    "Former French Colony"
   ],
   "Burma": [
     "Countries",
@@ -8959,7 +9173,8 @@
     "Ends with RMA",
     "Place Names",
     "Starts with BUR",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Ceylon": [
     "Countries",
@@ -8968,7 +9183,8 @@
     "Place Names",
     "Starts with CEY",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "Kampuchea": [
     "Countries",
@@ -8978,7 +9194,8 @@
     "Ends with HEA",
     "Place Names",
     "Starts with KAM",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former French Colony"
   ],
   "Persia": [
     "Countries",
@@ -8987,7 +9204,9 @@
     "Place Names",
     "Starts with PER",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony",
+    "Former Russian Colony"
   ],
   "Abyssinia": [
     "Countries",
@@ -8997,7 +9216,8 @@
     "Ends with NIA",
     "Place Names",
     "Starts with ABY",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "British Honduras": [
     "Countries",
@@ -9006,7 +9226,8 @@
     "Place Names",
     "Starts with BRI",
     "Countries that No Longer Exist",
-    "Locations in North America"
+    "Locations in North America",
+    "Former British Colony"
   ],
   "Dutch Guiana": [
     "Countries",
@@ -9015,7 +9236,8 @@
     "Place Names",
     "Starts with DUT",
     "Countries that No Longer Exist",
-    "Locations in South America"
+    "Locations in South America",
+    "Former Dutch Colony"
   ],
   "British Guiana": [
     "Countries",
@@ -9024,7 +9246,8 @@
     "Place Names",
     "Starts with BRI",
     "Countries that No Longer Exist",
-    "Locations in South America"
+    "Locations in South America",
+    "Former British Colony"
   ],
   "New Hebrides": [
     "Countries",
@@ -9034,7 +9257,9 @@
     "Ends with ES",
     "Place Names",
     "Starts with NEW",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former British Colony",
+    "Former French Colony"
   ],
   "Western Samoa": [
     "Countries",
@@ -9044,7 +9269,9 @@
     "Ends with OA",
     "Place Names",
     "Starts with WES",
-    "Locations in Oceania"
+    "Locations in Oceania",
+    "Former German Colony",
+    "Former British Colony"
   ],
   "Portuguese Timor": [
     "Countries",
@@ -9053,7 +9280,8 @@
     "Place Names",
     "Starts with POR",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former Portuguese Colony"
   ],
   "Netherlands East Indies": [
     "Countries",
@@ -9063,7 +9291,8 @@
     "Ends with IES",
     "Place Names",
     "Starts with NET",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former Dutch Colony"
   ],
   "French Indochina": [
     "Countries",
@@ -9072,7 +9301,8 @@
     "Place Names",
     "Starts with FRE",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former French Colony"
   ],
   "British Malaya": [
     "Countries",
@@ -9081,7 +9311,8 @@
     "Place Names",
     "Starts with BRI",
     "Countries that No Longer Exist",
-    "Locations in Asia"
+    "Locations in Asia",
+    "Former British Colony"
   ],
   "French West Africa": [
     "Countries",
@@ -9090,7 +9321,8 @@
     "Place Names",
     "Starts with FRE",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony"
   ],
   "French Equatorial Africa": [
     "Countries",
@@ -9099,7 +9331,8 @@
     "Place Names",
     "Starts with FRE",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony"
   ],
   "Belgian Congo": [
     "Countries",
@@ -9108,7 +9341,8 @@
     "Place Names",
     "Starts with BEL",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Belgian Colony"
   ],
   "Northern Rhodesia": [
     "Countries",
@@ -9117,7 +9351,8 @@
     "Place Names",
     "Starts with NOR",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "Southern Rhodesia": [
     "Countries",
@@ -9126,7 +9361,8 @@
     "Place Names",
     "Starts with SOU",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "Nyasaland": [
     "Countries",
@@ -9135,7 +9371,8 @@
     "Place Names",
     "Starts with NYA",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "Bechuanaland": [
     "Countries",
@@ -9144,7 +9381,8 @@
     "Place Names",
     "Starts with BEC",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "Basutoland": [
     "Countries",
@@ -9153,7 +9391,8 @@
     "Place Names",
     "Starts with BAS",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "Portuguese Guinea": [
     "Countries",
@@ -9163,7 +9402,8 @@
     "Ends with NEA",
     "Place Names",
     "Starts with POR",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Portuguese Colony"
   ],
   "Spanish Guinea": [
     "Countries",
@@ -9173,7 +9413,8 @@
     "Ends with NEA",
     "Place Names",
     "Starts with SPA",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Spanish Colony"
   ],
   "French Somaliland": [
     "Countries",
@@ -9182,7 +9423,8 @@
     "Place Names",
     "Starts with FRE",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony"
   ],
   "British Somaliland": [
     "Countries",
@@ -9191,7 +9433,8 @@
     "Place Names",
     "Starts with BRI",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "Italian Somaliland": [
     "Countries",
@@ -9200,7 +9443,8 @@
     "Place Names",
     "Starts with ITA",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Italian Colony"
   ],
   "Anglo-Egyptian Sudan": [
     "Countries",
@@ -9209,7 +9453,8 @@
     "Place Names",
     "Starts with ANG",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "British East Africa": [
     "Countries",
@@ -9218,7 +9463,8 @@
     "Place Names",
     "Starts with BRI",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "German East Africa": [
     "Countries",
@@ -9227,7 +9473,8 @@
     "Place Names",
     "Starts with GER",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former German Colony"
   ],
   "Belgian East Africa": [
     "Countries",
@@ -9236,7 +9483,8 @@
     "Place Names",
     "Starts with BEL",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Belgian Colony"
   ],
   "Portuguese East Africa": [
     "Countries",
@@ -9245,7 +9493,8 @@
     "Place Names",
     "Starts with POR",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Portuguese Colony"
   ],
   "Spanish East Africa": [
     "Countries",
@@ -9254,7 +9503,8 @@
     "Place Names",
     "Starts with SPA",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Spanish Colony"
   ],
   "Italian East Africa": [
     "Countries",
@@ -9263,7 +9513,8 @@
     "Place Names",
     "Starts with ITA",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Italian Colony"
   ],
   "French East Africa": [
     "Countries",
@@ -9272,7 +9523,8 @@
     "Place Names",
     "Starts with FRE",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former French Colony"
   ],
   "British West Africa": [
     "Countries",
@@ -9281,7 +9533,8 @@
     "Place Names",
     "Starts with BRI",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former British Colony"
   ],
   "German West Africa": [
     "Countries",
@@ -9290,7 +9543,8 @@
     "Place Names",
     "Starts with GER",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former German Colony"
   ],
   "Belgian West Africa": [
     "Countries",
@@ -9299,7 +9553,8 @@
     "Place Names",
     "Starts with BEL",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Belgian Colony"
   ],
   "Portuguese West Africa": [
     "Countries",
@@ -9308,7 +9563,8 @@
     "Place Names",
     "Starts with POR",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Portuguese Colony"
   ],
   "Spanish West Africa": [
     "Countries",
@@ -9317,7 +9573,8 @@
     "Place Names",
     "Starts with SPA",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Spanish Colony"
   ],
   "Italian West Africa": [
     "Countries",
@@ -9326,7 +9583,8 @@
     "Place Names",
     "Starts with ITA",
     "Countries that No Longer Exist",
-    "Locations in Africa"
+    "Locations in Africa",
+    "Former Italian Colony"
   ],
   "Transnistria": [
     "Countries",
