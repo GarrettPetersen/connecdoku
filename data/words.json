@@ -130,19 +130,25 @@
     "Volcanoes"
   ],
   "Chernobyl": [
+    "Cities",
+    "Cities in Europe",
     "Disasters",
     "Ends with BYL",
+    "Place Names",
     "Starts with CHE"
   ],
   "Fukushima": [
     "Disasters",
+    "Cities",
+    "Cities in Asia",
     "Ends with IMA",
     "Starts with FUK"
   ],
   "Katrina": [
     "Disasters",
     "Ends with INA",
-    "Starts with KAT"
+    "Starts with KAT",
+    "Female Names"
   ],
   "Challenger": [
     "Disasters",
@@ -433,8 +439,8 @@
   ],
   "Apollo 13": [
     "Ends with  13",
-    "Ends with 13",
     "Movies",
+    "Space Missions",
     "Starts with APO"
   ],
   "Volcano": [
@@ -868,7 +874,8 @@
     "Ends with ORD",
     "River Crossings",
     "Starts with FOR",
-    "National Leaders"
+    "National Leaders",
+    "Businesspeople"
   ],
   "Honda": [
     "Car Brands",
@@ -1272,28 +1279,32 @@
     "Countries in North America",
     "Ends with ADA",
     "Place Names",
-    "Starts with CAN"
+    "Starts with CAN",
+    "WWII Allied Powers"
   ],
   "Germany": [
     "Countries",
     "Countries in Europe",
     "Ends with ANY",
     "Place Names",
-    "Starts with GER"
+    "Starts with GER",
+    "WWII Axis Powers"
   ],
   "France": [
     "Countries",
     "Countries in Europe",
     "Ends with NCE",
     "Place Names",
-    "Starts with FRA"
+    "Starts with FRA",
+    "WWII Allied Powers"
   ],
   "Italy": [
     "Countries",
     "Countries in Europe",
     "Ends with ALY",
     "Place Names",
-    "Starts with ITA"
+    "Starts with ITA",
+    "WWII Axis Powers"
   ],
   "Spain": [
     "Countries",
@@ -1307,7 +1318,8 @@
     "Countries in Asia",
     "Ends with PAN",
     "Place Names",
-    "Starts with JAP"
+    "Starts with JAP",
+    "WWII Axis Powers"
   ],
   "China": [
     "Countries",
@@ -1315,14 +1327,16 @@
     "Ends with INA",
     "Household Items",
     "Place Names",
-    "Starts with CHI"
+    "Starts with CHI",
+    "WWII Allied Powers"
   ],
   "Brazil": [
     "Countries",
     "Countries in South America",
     "Ends with ZIL",
     "Place Names",
-    "Starts with BRA"
+    "Starts with BRA",
+    "WWII Allied Powers"
   ],
   "India": [
     "Commonwealth Nations",
@@ -1331,21 +1345,24 @@
     "Ends with DIA",
     "NATO Phonetic Alphabet",
     "Place Names",
-    "Starts with IND"
+    "Starts with IND",
+    "WWII Allied Powers"
   ],
   "Mexico": [
     "Countries",
     "Countries in North America",
     "Ends with ICO",
     "Place Names",
-    "Starts with MEX"
+    "Starts with MEX",
+    "WWII Allied Powers"
   ],
   "Greece": [
     "Countries",
     "Countries in Europe",
     "Ends with ECE",
     "Place Names",
-    "Starts with GRE"
+    "Starts with GRE",
+    "WWII Allied Powers"
   ],
   "Turkey": [
     "Countries",
@@ -1355,7 +1372,8 @@
     "Place Names",
     "Starts with TUR",
     "Animals",
-    "Birds"
+    "Birds",
+    "WWII Allied Powers"
   ],
   "Ottawa": [
     "Capitals",
@@ -2662,7 +2680,8 @@
     "Countries in Oceania",
     "Ends with LIA",
     "Place Names",
-    "Starts with AUS"
+    "Starts with AUS",
+    "WWII Allied Powers"
   ],
   "United Kingdom": [
     "Commonwealth Nations",
@@ -2670,7 +2689,8 @@
     "Countries in Europe",
     "Ends with DOM",
     "Place Names",
-    "Starts with UNI"
+    "Starts with UNI",
+    "WWII Allied Powers"
   ],
   "Caesar": [
     "Ends with SAR",
@@ -3543,7 +3563,8 @@
     "Countries in Oceania",
     "Ends with AND",
     "Place Names",
-    "Starts with NEW"
+    "Starts with NEW",
+    "WWII Allied Powers"
   ],
   "South Africa": [
     "Commonwealth Nations",
@@ -3551,7 +3572,8 @@
     "Countries in Africa",
     "Ends with ICA",
     "Place Names",
-    "Starts with SOU"
+    "Starts with SOU",
+    "WWII Allied Powers"
   ],
   "Seoul": [
     "Capitals",
@@ -6987,7 +7009,8 @@
     "Countries in Europe",
     "Ends with NIA",
     "Place Names",
-    "Starts with ALB"
+    "Starts with ALB",
+    "WWII Allied Powers"
   ],
   "Algeria": [
     "Countries",
@@ -7023,7 +7046,8 @@
     "Countries in South America",
     "Ends with INA",
     "Place Names",
-    "Starts with ARG"
+    "Starts with ARG",
+    "WWII Allied Powers"
   ],
   "Armenia": [
     "Countries",
@@ -7089,7 +7113,8 @@
     "Countries in Europe",
     "Ends with IUM",
     "Place Names",
-    "Starts with BEL"
+    "Starts with BEL",
+    "WWII Allied Powers"
   ],
   "Belize": [
     "Countries",
@@ -7117,7 +7142,8 @@
     "Countries in South America",
     "Ends with VIA",
     "Place Names",
-    "Starts with BOL"
+    "Starts with BOL",
+    "WWII Allied Powers"
   ],
   "Bosnia and Herzegovina": [
     "Countries",
@@ -7144,7 +7170,8 @@
     "Countries in Europe",
     "Ends with RIA",
     "Place Names",
-    "Starts with BUL"
+    "Starts with BUL",
+    "WWII Axis Powers"
   ],
   "Burkina Faso": [
     "Countries",
@@ -7202,14 +7229,16 @@
     "Countries in South America",
     "Ends with ILE",
     "Place Names",
-    "Starts with CHI"
+    "Starts with CHI",
+    "WWII Allied Powers"
   ],
   "Colombia": [
     "Countries",
     "Countries in South America",
     "Ends with BIA",
     "Place Names",
-    "Starts with COL"
+    "Starts with COL",
+    "WWII Allied Powers"
   ],
   "Comoros": [
     "Countries",
@@ -7224,14 +7253,16 @@
     "Countries in North America",
     "Ends with ICA",
     "Place Names",
-    "Starts with COS"
+    "Starts with COS",
+    "WWII Allied Powers"
   ],
   "Croatia": [
     "Countries",
     "Countries in Europe",
     "Ends with TIA",
     "Place Names",
-    "Starts with CRO"
+    "Starts with CRO",
+    "WWII Axis Powers"
   ],
   "Cuba": [
     "Countries",
@@ -7239,7 +7270,8 @@
     "Ends with UBA",
     "Place Names",
     "Starts with CUB",
-    "Island Nations"
+    "Island Nations",
+    "WWII Allied Powers"
   ],
   "Cyprus": [
     "Countries",
@@ -7268,7 +7300,8 @@
     "Countries in Europe",
     "Ends with ARK",
     "Place Names",
-    "Starts with DEN"
+    "Starts with DEN",
+    "WWII Allied Powers"
   ],
   "Djibouti": [
     "Countries",
@@ -7291,7 +7324,8 @@
     "Ends with LIC",
     "Place Names",
     "Starts with DOM",
-    "Island Nations"
+    "Island Nations",
+    "WWII Allied Powers"
   ],
   "East Timor": [
     "Countries",
@@ -7305,21 +7339,24 @@
     "Countries in South America",
     "Ends with DOR",
     "Place Names",
-    "Starts with ECU"
+    "Starts with ECU",
+    "WWII Allied Powers"
   ],
   "Egypt": [
     "Countries",
     "Countries in Africa",
     "Ends with YPT",
     "Place Names",
-    "Starts with EGY"
+    "Starts with EGY",
+    "WWII Allied Powers"
   ],
   "El Salvador": [
     "Countries",
     "Countries in North America",
     "Ends with DOR",
     "Place Names",
-    "Starts with EL "
+    "Starts with EL ",
+    "WWII Allied Powers"
   ],
   "Equatorial Guinea": [
     "Countries",
@@ -7354,7 +7391,8 @@
     "Countries in Africa",
     "Ends with PIA",
     "Place Names",
-    "Starts with ETH"
+    "Starts with ETH",
+    "WWII Allied Powers"
   ],
   "Fiji": [
     "Countries",
@@ -7369,7 +7407,8 @@
     "Countries in Europe",
     "Ends with AND",
     "Place Names",
-    "Starts with FIN"
+    "Starts with FIN",
+    "WWII Axis Powers"
   ],
   "Gabon": [
     "Countries",
@@ -7405,7 +7444,8 @@
     "Countries in North America",
     "Ends with ALA",
     "Place Names",
-    "Starts with GUA"
+    "Starts with GUA",
+    "WWII Allied Powers"
   ],
   "Guinea": [
     "Countries",
@@ -7433,21 +7473,24 @@
     "Countries in North America",
     "Ends with ITI",
     "Place Names",
-    "Starts with HAI"
+    "Starts with HAI",
+    "WWII Allied Powers"
   ],
   "Honduras": [
     "Countries",
     "Countries in North America",
     "Ends with RAS",
     "Place Names",
-    "Starts with HON"
+    "Starts with HON",
+    "WWII Allied Powers"
   ],
   "Hungary": [
     "Countries",
     "Countries in Europe",
     "Ends with ARY",
     "Place Names",
-    "Starts with HUN"
+    "Starts with HUN",
+    "WWII Axis Powers"
   ],
   "Iceland": [
     "Countries",
@@ -7470,14 +7513,16 @@
     "Countries in Asia",
     "Ends with RAN",
     "Place Names",
-    "Starts with IRA"
+    "Starts with IRA",
+    "WWII Allied Powers"
   ],
   "Iraq": [
     "Countries",
     "Countries in Asia",
     "Ends with RAQ",
     "Place Names",
-    "Starts with IRA"
+    "Starts with IRA",
+    "WWII Allied Powers"
   ],
   "Ireland": [
     "Countries",
@@ -7578,7 +7623,8 @@
     "Countries in Africa",
     "Ends with RIA",
     "Place Names",
-    "Starts with LIB"
+    "Starts with LIB",
+    "WWII Allied Powers"
   ],
   "Libya": [
     "Countries",
@@ -7606,7 +7652,8 @@
     "Countries in Europe",
     "Ends with URG",
     "Place Names",
-    "Starts with LUX"
+    "Starts with LUX",
+    "WWII Allied Powers"
   ],
   "Madagascar": [
     "Countries",
@@ -7763,14 +7810,16 @@
     "Countries in Europe",
     "Ends with NDS",
     "Place Names",
-    "Starts with NET"
+    "Starts with NET",
+    "WWII Allied Powers"
   ],
   "Nicaragua": [
     "Countries",
     "Countries in North America",
     "Ends with GUA",
     "Place Names",
-    "Starts with NIC"
+    "Starts with NIC",
+    "WWII Allied Powers"
   ],
   "Niger": [
     "Countries",
@@ -7805,7 +7854,8 @@
     "Countries in Europe",
     "Ends with WAY",
     "Place Names",
-    "Starts with NOR"
+    "Starts with NOR",
+    "WWII Allied Powers"
   ],
   "Oman": [
     "Countries",
@@ -7835,7 +7885,8 @@
     "Countries in North America",
     "Ends with AMA",
     "Place Names",
-    "Starts with PAN"
+    "Starts with PAN",
+    "WWII Allied Powers"
   ],
   "Papua New Guinea": [
     "Countries",
@@ -7850,14 +7901,16 @@
     "Countries in South America",
     "Ends with UAY",
     "Place Names",
-    "Starts with PAR"
+    "Starts with PAR",
+    "WWII Allied Powers"
   ],
   "Peru": [
     "Countries",
     "Countries in South America",
     "Ends with ERU",
     "Place Names",
-    "Starts with PER"
+    "Starts with PER",
+    "WWII Allied Powers"
   ],
   "Philippines": [
     "Countries",
@@ -7865,14 +7918,16 @@
     "Ends with NES",
     "Place Names",
     "Starts with PHI",
-    "Island Nations"
+    "Island Nations",
+    "WWII Allied Powers"
   ],
   "Poland": [
     "Countries",
     "Countries in Europe",
     "Ends with AND",
     "Place Names",
-    "Starts with POL"
+    "Starts with POL",
+    "WWII Allied Powers"
   ],
   "Portugal": [
     "Countries",
@@ -7893,7 +7948,8 @@
     "Countries in Europe",
     "Ends with NIA",
     "Place Names",
-    "Starts with ROM"
+    "Starts with ROM",
+    "WWII Axis Powers"
   ],
   "Russia": [
     "Countries",
@@ -7964,7 +8020,8 @@
     "Countries in Asia",
     "Ends with BIA",
     "Place Names",
-    "Starts with SAU"
+    "Starts with SAU",
+    "WWII Allied Powers"
   ],
   "Senegal": [
     "Countries",
@@ -8010,7 +8067,8 @@
     "Countries in Europe",
     "Ends with KIA",
     "Place Names",
-    "Starts with SLO"
+    "Starts with SLO",
+    "WWII Axis Powers"
   ],
   "Slovenia": [
     "Countries",
@@ -8118,7 +8176,8 @@
     "Countries in Asia",
     "Ends with AND",
     "Place Names",
-    "Starts with THA"
+    "Starts with THA",
+    "WWII Axis Powers"
   ],
   "Togo": [
     "Countries",
@@ -8191,14 +8250,16 @@
     "Countries in North America",
     "Ends with TES",
     "Place Names",
-    "Starts with UNI"
+    "Starts with UNI",
+    "WWII Allied Powers"
   ],
   "Uruguay": [
     "Countries",
     "Countries in South America",
     "Ends with UAY",
     "Place Names",
-    "Starts with URU"
+    "Starts with URU",
+    "WWII Allied Powers"
   ],
   "Uzbekistan": [
     "Countries",
@@ -8230,7 +8291,8 @@
     "Countries in South America",
     "Ends with ELA",
     "Place Names",
-    "Starts with VEN"
+    "Starts with VEN",
+    "WWII Allied Powers"
   ],
   "Vietnam": [
     "Countries",
