@@ -36,7 +36,8 @@
   "Alliances": [
     "Alliance",
     "Federation",
-    "NATO"
+    "NATO",
+    "Warsaw Pact"
   ],
   "Ancient Cities": [
     "Alexandria",
@@ -101,6 +102,7 @@
     "Usher"
   ],
   "Astronomers": [
+    "Galileo",
     "Kepler"
   ],
   "Astronomical Objects": [
@@ -323,6 +325,12 @@
     "Odyssey",
     "Salem"
   ],
+  "Breakaway Regions": [
+    "Abkhazia",
+    "Artsakh",
+    "South Ossetia",
+    "Transnistria"
+  ],
   "Breakfast": [
     "Coffee",
     "Egg",
@@ -371,22 +379,6 @@
     "Olympus",
     "Red",
     "Sony"
-  ],
-  "Capitals": [
-    "Athens",
-    "Beijing",
-    "Berlin",
-    "Brasilia",
-    "Delhi",
-    "London",
-    "Madrid",
-    "Ottawa",
-    "Paris",
-    "Roma",
-    "Rome",
-    "Seoul",
-    "Tokyo",
-    "Washington"
   ],
   "Car Brands": [
     "Buick",
@@ -497,6 +489,7 @@
     "Boise",
     "Bologna",
     "Boston",
+    "Brasilia",
     "Cancun",
     "Caprese",
     "Carson City",
@@ -694,6 +687,7 @@
     "Washington"
   ],
   "Cities in South America": [
+    "Brasilia",
     "Lima"
   ],
   "Cities in USA": [
@@ -895,14 +889,18 @@
     "Radiator"
   ],
   "Countries": [
+    "Abkhazia",
+    "Abyssinia",
     "Afghanistan",
     "Albania",
     "Algeria",
     "Andorra",
+    "Anglo-Egyptian Sudan",
     "Angola",
     "Antigua and Barbuda",
     "Argentina",
     "Armenia",
+    "Artsakh",
     "Australia",
     "Austria",
     "Azerbaijan",
@@ -910,7 +908,12 @@
     "Bahrain",
     "Bangladesh",
     "Barbados",
+    "Basutoland",
+    "Bechuanaland",
     "Belarus",
+    "Belgian Congo",
+    "Belgian East Africa",
+    "Belgian West Africa",
     "Belgium",
     "Belize",
     "Benin",
@@ -919,15 +922,23 @@
     "Bosnia and Herzegovina",
     "Botswana",
     "Brazil",
+    "British East Africa",
+    "British Guiana",
+    "British Honduras",
+    "British Malaya",
+    "British Somaliland",
+    "British West Africa",
     "Brunei",
     "Bulgaria",
     "Burkina Faso",
+    "Burma",
     "Burundi",
     "Cabo Verde",
     "Cambodia",
     "Cameroon",
     "Canada",
     "Central African Republic",
+    "Ceylon",
     "Chad",
     "Chile",
     "China",
@@ -939,26 +950,34 @@
     "Cuba",
     "Cyprus",
     "Czech Republic",
+    "Dahomey",
     "Democratic Republic of the Congo",
     "Denmark",
     "Djibouti",
     "Dominica",
     "Dominican Republic",
-    "East Timor",
+    "Dutch Guiana",
+    "East Germany",
     "Ecuador",
     "Egypt",
     "El Salvador",
     "Equatorial Guinea",
-    "Eritrea",
     "Estonia",
     "Eswatini",
     "Ethiopia",
     "Fiji",
     "Finland",
     "France",
+    "French East Africa",
+    "French Equatorial Africa",
+    "French Indochina",
+    "French Somaliland",
+    "French West Africa",
     "Gabon",
     "Gambia",
     "Georgia",
+    "German East Africa",
+    "German West Africa",
     "Germany",
     "Ghana",
     "Greece",
@@ -978,11 +997,15 @@
     "Iraq",
     "Ireland",
     "Israel",
+    "Italian East Africa",
+    "Italian Somaliland",
+    "Italian West Africa",
     "Italy",
     "Ivory Coast",
     "Jamaica",
     "Japan",
     "Jordan",
+    "Kampuchea",
     "Kazakhstan",
     "Kenya",
     "Kiribati",
@@ -993,7 +1016,6 @@
     "Lebanon",
     "Lesotho",
     "Liberia",
-    "Libya",
     "Liechtenstein",
     "Lithuania",
     "Luxembourg",
@@ -1019,24 +1041,36 @@
     "Nauru",
     "Nepal",
     "Netherlands",
+    "Netherlands East Indies",
+    "New Hebrides",
     "New Zealand",
     "Nicaragua",
     "Niger",
     "Nigeria",
     "North Korea",
     "North Macedonia",
+    "North Vietnam",
+    "North Yemen",
+    "Northern Rhodesia",
     "Norway",
+    "Nyasaland",
     "Oman",
     "Pakistan",
     "Palau",
     "Panama",
     "Papua New Guinea",
     "Paraguay",
+    "Persia",
     "Peru",
     "Philippines",
     "Poland",
     "Portugal",
+    "Portuguese East Africa",
+    "Portuguese Guinea",
+    "Portuguese Timor",
+    "Portuguese West Africa",
     "Qatar",
+    "Rhodesia",
     "Romania",
     "Russia",
     "Rwanda",
@@ -1050,6 +1084,7 @@
     "Senegal",
     "Serbia",
     "Seychelles",
+    "Siam",
     "Sierra Leone",
     "Singapore",
     "Slovakia",
@@ -1058,20 +1093,28 @@
     "Somalia",
     "South Africa",
     "South Korea",
+    "South Ossetia",
     "South Sudan",
+    "South Vietnam",
+    "South Yemen",
+    "Southern Rhodesia",
     "Spain",
+    "Spanish East Africa",
+    "Spanish Guinea",
+    "Spanish West Africa",
     "Sri Lanka",
-    "Sudan",
     "Suriname",
     "Sweden",
     "Switzerland",
     "Syria",
     "Taiwan",
     "Tajikistan",
+    "Tanganyika",
     "Tanzania",
     "Thailand",
     "Togo",
     "Tonga",
+    "Transnistria",
     "Trinidad and Tobago",
     "Tunisia",
     "Turkey",
@@ -1082,21 +1125,34 @@
     "United Arab Emirates",
     "United Kingdom",
     "United States",
+    "Upper Volta",
     "Uruguay",
     "Uzbekistan",
     "Vanuatu",
     "Vatican City",
     "Venezuela",
     "Vietnam",
+    "Western Samoa",
     "Yemen",
     "Zambia",
+    "Zanzibar",
     "Zimbabwe"
   ],
   "Countries in Africa": [
+    "Abyssinia",
     "Algeria",
+    "Anglo-Egyptian Sudan",
     "Angola",
+    "Basutoland",
+    "Bechuanaland",
+    "Belgian Congo",
+    "Belgian East Africa",
+    "Belgian West Africa",
     "Benin",
     "Botswana",
+    "British East Africa",
+    "British Somaliland",
+    "British West Africa",
     "Burkina Faso",
     "Burundi",
     "Cabo Verde",
@@ -1105,23 +1161,31 @@
     "Chad",
     "Comoros",
     "Congo",
+    "Dahomey",
     "Democratic Republic of the Congo",
     "Djibouti",
     "Egypt",
     "Equatorial Guinea",
-    "Eritrea",
     "Eswatini",
     "Ethiopia",
+    "French East Africa",
+    "French Equatorial Africa",
+    "French Somaliland",
+    "French West Africa",
     "Gabon",
     "Gambia",
+    "German East Africa",
+    "German West Africa",
     "Ghana",
     "Guinea",
     "Guinea-Bissau",
+    "Italian East Africa",
+    "Italian Somaliland",
+    "Italian West Africa",
     "Ivory Coast",
     "Kenya",
     "Lesotho",
     "Liberia",
-    "Libya",
     "Madagascar",
     "Malawi",
     "Mali",
@@ -1132,6 +1196,12 @@
     "Namibia",
     "Niger",
     "Nigeria",
+    "Northern Rhodesia",
+    "Nyasaland",
+    "Portuguese East Africa",
+    "Portuguese Guinea",
+    "Portuguese West Africa",
+    "Rhodesia",
     "Rwanda",
     "Sao Tome and Principe",
     "Senegal",
@@ -1140,23 +1210,35 @@
     "Somalia",
     "South Africa",
     "South Sudan",
-    "Sudan",
+    "Southern Rhodesia",
+    "Spanish East Africa",
+    "Spanish Guinea",
+    "Spanish West Africa",
+    "Tanganyika",
     "Tanzania",
     "Togo",
     "Tunisia",
     "Uganda",
+    "Upper Volta",
     "Zambia",
+    "Zanzibar",
     "Zimbabwe"
   ],
   "Countries in Asia": [
+    "Abkhazia",
     "Afghanistan",
     "Armenia",
+    "Artsakh",
     "Azerbaijan",
     "Bahrain",
     "Bangladesh",
     "Bhutan",
+    "British Malaya",
+    "Burma",
     "Cambodia",
+    "Ceylon",
     "China",
+    "French Indochina",
     "India",
     "Indonesia",
     "Iran",
@@ -1164,6 +1246,7 @@
     "Israel",
     "Japan",
     "Jordan",
+    "Kampuchea",
     "Kazakhstan",
     "Kuwait",
     "Kyrgyzstan",
@@ -1174,16 +1257,25 @@
     "Mongolia",
     "Myanmar",
     "Nepal",
+    "Netherlands East Indies",
     "North Korea",
+    "North Vietnam",
+    "North Yemen",
     "Oman",
     "Pakistan",
     "Palau",
+    "Persia",
     "Philippines",
+    "Portuguese Timor",
     "Qatar",
     "Russia",
     "Saudi Arabia",
+    "Siam",
     "Singapore",
     "South Korea",
+    "South Ossetia",
+    "South Vietnam",
+    "South Yemen",
     "Sri Lanka",
     "Syria",
     "Taiwan",
@@ -1208,6 +1300,7 @@
     "Cyprus",
     "Czech Republic",
     "Denmark",
+    "East Germany",
     "Estonia",
     "Finland",
     "France",
@@ -1240,6 +1333,7 @@
     "Spain",
     "Sweden",
     "Switzerland",
+    "Transnistria",
     "Ukraine",
     "United Kingdom",
     "Vatican City"
@@ -1249,6 +1343,7 @@
     "Bahamas",
     "Barbados",
     "Belize",
+    "British Honduras",
     "Canada",
     "Costa Rica",
     "Cuba",
@@ -1276,6 +1371,7 @@
     "Marshall Islands",
     "Micronesia",
     "Nauru",
+    "New Hebrides",
     "New Zealand",
     "Palau",
     "Papua New Guinea",
@@ -1283,14 +1379,17 @@
     "Solomon Islands",
     "Tonga",
     "Tuvalu",
-    "Vanuatu"
+    "Vanuatu",
+    "Western Samoa"
   ],
   "Countries in South America": [
     "Argentina",
     "Bolivia",
     "Brazil",
+    "British Guiana",
     "Chile",
     "Colombia",
+    "Dutch Guiana",
     "Ecuador",
     "Guyana",
     "Paraguay",
@@ -1298,6 +1397,78 @@
     "Suriname",
     "Uruguay",
     "Venezuela"
+  ],
+  "Countries in the USSR": [
+    "Armenia",
+    "Azerbaijan",
+    "Belarus",
+    "East Germany",
+    "Estonia",
+    "Georgia",
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "Latvia",
+    "Lithuania",
+    "Moldova",
+    "Russia",
+    "Tajikistan",
+    "Turkmenistan",
+    "Ukraine",
+    "Uzbekistan"
+  ],
+  "Countries that No Longer Exist": [
+    "Abyssinia",
+    "Anglo-Egyptian Sudan",
+    "Basutoland",
+    "Bechuanaland",
+    "Belgian Congo",
+    "Belgian East Africa",
+    "Belgian West Africa",
+    "British East Africa",
+    "British Guiana",
+    "British Honduras",
+    "British Malaya",
+    "British Somaliland",
+    "British West Africa",
+    "Burma",
+    "Ceylon",
+    "Dahomey",
+    "Dutch Guiana",
+    "East Germany",
+    "French East Africa",
+    "French Equatorial Africa",
+    "French Indochina",
+    "French Somaliland",
+    "French West Africa",
+    "German East Africa",
+    "German West Africa",
+    "Italian East Africa",
+    "Italian Somaliland",
+    "Italian West Africa",
+    "Kampuchea",
+    "Netherlands East Indies",
+    "New Hebrides",
+    "North Vietnam",
+    "North Yemen",
+    "Northern Rhodesia",
+    "Nyasaland",
+    "Persia",
+    "Portuguese East Africa",
+    "Portuguese Guinea",
+    "Portuguese Timor",
+    "Portuguese West Africa",
+    "Rhodesia",
+    "Siam",
+    "South Vietnam",
+    "South Yemen",
+    "Southern Rhodesia",
+    "Spanish East Africa",
+    "Spanish Guinea",
+    "Spanish West Africa",
+    "Tanganyika",
+    "Upper Volta",
+    "Western Samoa",
+    "Zanzibar"
   ],
   "Cowboy Terms": [
     "Bronco",
@@ -1535,6 +1706,9 @@
     "Monaco",
     "Taco"
   ],
+  "Ends with ACT": [
+    "Warsaw Pact"
+  ],
   "Ends with ADA": [
     "Canada",
     "Enchilada",
@@ -1584,6 +1758,9 @@
     "Cake",
     "Drake",
     "Makemake"
+  ],
+  "Ends with AKH": [
+    "Artsakh"
   ],
   "Ends with ALA": [
     "Guatemala"
@@ -1641,6 +1818,8 @@
   "Ends with ANA": [
     "Banana",
     "Botswana",
+    "British Guiana",
+    "Dutch Guiana",
     "Ghana",
     "Guyana",
     "Tijuana"
@@ -1649,11 +1828,17 @@
     "Mont Blanc"
   ],
   "Ends with AND": [
+    "Basutoland",
+    "Bechuanaland",
+    "British Somaliland",
     "Finland",
+    "French Somaliland",
     "Greenland",
     "Iceland",
     "Ireland",
+    "Italian Somaliland",
     "New Zealand",
+    "Nyasaland",
     "Poland",
     "Samarkand",
     "Switzerland",
@@ -1683,6 +1868,7 @@
   ],
   "Ends with ANY": [
     "Albany",
+    "East Germany",
     "Germany"
   ],
   "Ends with AOH": [
@@ -1697,6 +1883,9 @@
   "Ends with APE": [
     "Grape",
     "Snape"
+  ],
+  "Ends with AR": [
+    "Zanzibar"
   ],
   "Ends with ARA": [
     "Sahara"
@@ -1831,6 +2020,9 @@
   "Ends with AXY": [
     "Galaxy"
   ],
+  "Ends with AYA": [
+    "British Malaya"
+  ],
   "Ends with AYO": [
     "Mayo"
   ],
@@ -1845,6 +2037,9 @@
   ],
   "Ends with BALL": [
     "Football"
+  ],
+  "Ends with BAR": [
+    "Zanzibar"
   ],
   "Ends with BAT": [
     "Bat"
@@ -1927,9 +2122,6 @@
   ],
   "Ends with BWE": [
     "Zimbabwe"
-  ],
-  "Ends with BYA": [
-    "Libya"
   ],
   "Ends with BYL": [
     "Chernobyl"
@@ -2017,9 +2209,9 @@
     "Dam"
   ],
   "Ends with DAN": [
+    "Anglo-Egyptian Sudan",
     "Jordan",
-    "South Sudan",
-    "Sudan"
+    "South Sudan"
   ],
   "Ends with DAR": [
     "Cedar"
@@ -2045,6 +2237,7 @@
   ],
   "Ends with DES": [
     "Hades",
+    "New Hebrides",
     "Spades"
   ],
   "Ends with DEX": [
@@ -2101,6 +2294,11 @@
   ],
   "Ends with DRO": [
     "San Pedro"
+  ],
+  "Ends with EA": [
+    "Kampuchea",
+    "Portuguese Guinea",
+    "Spanish Guinea"
   ],
   "Ends with EAD": [
     "Bread"
@@ -2242,6 +2440,10 @@
     "Battery",
     "Montgomery"
   ],
+  "Ends with ES": [
+    "Netherlands East Indies",
+    "New Hebrides"
+  ],
   "Ends with ESA": [
     "Teresa"
   ],
@@ -2291,6 +2493,9 @@
   ],
   "Ends with EXO": [
     "EXO"
+  ],
+  "Ends with EY": [
+    "Dahomey"
   ],
   "Ends with EYE": [
     "Hawkeye"
@@ -2405,6 +2610,9 @@
     "Khan",
     "Leviathan"
   ],
+  "Ends with HEA": [
+    "Kampuchea"
+  ],
   "Ends with HEE": [
     "Banshee"
   ],
@@ -2447,8 +2655,14 @@
   "Ends with HUP": [
     "Ketchup"
   ],
+  "Ends with IA": [
+    "Abyssinia"
+  ],
   "Ends with IAD": [
     "Iliad"
+  ],
+  "Ends with IAM": [
+    "Siam"
   ],
   "Ends with IAN": [
     "Italian"
@@ -2460,13 +2674,28 @@
     "IBM"
   ],
   "Ends with ICA": [
+    "Belgian East Africa",
+    "Belgian West Africa",
+    "British East Africa",
+    "British West Africa",
     "Captain America",
     "Costa Rica",
     "Dominica",
+    "French East Africa",
+    "French Equatorial Africa",
+    "French West Africa",
     "Galactica",
+    "German East Africa",
+    "German West Africa",
+    "Italian East Africa",
+    "Italian West Africa",
     "Jamaica",
     "Leica",
-    "South Africa"
+    "Portuguese East Africa",
+    "Portuguese West Africa",
+    "South Africa",
+    "Spanish East Africa",
+    "Spanish West Africa"
   ],
   "Ends with ICE": [
     "Dice",
@@ -2494,7 +2723,8 @@
   ],
   "Ends with IES": [
     "Aries",
-    "Batteries"
+    "Batteries",
+    "Netherlands East Indies"
   ],
   "Ends with IET": [
     "Juliet"
@@ -2516,6 +2746,9 @@
   ],
   "Ends with IJI": [
     "Fiji"
+  ],
+  "Ends with IKA": [
+    "Tanganyika"
   ],
   "Ends with IKE": [
     "Mike"
@@ -2544,6 +2777,7 @@
     "Argentina",
     "Bosnia and Herzegovina",
     "China",
+    "French Indochina",
     "Katrina",
     "Nina"
   ],
@@ -2842,6 +3076,7 @@
     "Elmo"
   ],
   "Ends with LON": [
+    "Ceylon",
     "Epsilon",
     "Nylon",
     "Teflon",
@@ -2856,7 +3091,8 @@
   ],
   "Ends with LTA": [
     "Delta",
-    "Malta"
+    "Malta",
+    "Upper Volta"
   ],
   "Ends with LUB": [
     "Club"
@@ -2867,6 +3103,9 @@
   ],
   "Ends with M": [
     "M"
+  ],
+  "Ends with MA": [
+    "Burma"
   ],
   "Ends with MAL": [
     "Animal"
@@ -2898,6 +3137,8 @@
     "Nutmeg"
   ],
   "Ends with MEN": [
+    "North Yemen",
+    "South Yemen",
     "Yemen"
   ],
   "Ends with MEO": [
@@ -2915,6 +3156,9 @@
   "Ends with MET": [
     "Met"
   ],
+  "Ends with MEY": [
+    "Dahomey"
+  ],
   "Ends with MIC": [
     "Pandemic"
   ],
@@ -2922,7 +3166,8 @@
     "Gamma"
   ],
   "Ends with MOA": [
-    "Samoa"
+    "Samoa",
+    "Western Samoa"
   ],
   "Ends with MON": [
     "Cinnamon",
@@ -2931,7 +3176,7 @@
     "Salmon"
   ],
   "Ends with MOR": [
-    "East Timor"
+    "Portuguese Timor"
   ],
   "Ends with MOS": [
     "Deimos"
@@ -2948,6 +3193,8 @@
     "Journal"
   ],
   "Ends with NAM": [
+    "North Vietnam",
+    "South Vietnam",
     "Vietnam"
   ],
   "Ends with NAP": [
@@ -2999,7 +3246,9 @@
   "Ends with NEA": [
     "Equatorial Guinea",
     "Guinea",
-    "Papua New Guinea"
+    "Papua New Guinea",
+    "Portuguese Guinea",
+    "Spanish Guinea"
   ],
   "Ends with NEI": [
     "Brunei"
@@ -3035,12 +3284,14 @@
     "Orange"
   ],
   "Ends with NGO": [
+    "Belgian Congo",
     "Congo",
     "Democratic Republic of the Congo",
     "Flamingo",
     "Tango"
   ],
   "Ends with NIA": [
+    "Abyssinia",
     "Albania",
     "Ammonia",
     "Armenia",
@@ -3147,6 +3398,9 @@
   ],
   "Ends with O": [
     "O"
+  ],
+  "Ends with OA": [
+    "Western Samoa"
   ],
   "Ends with OAH": [
     "Shenandoah"
@@ -3468,6 +3722,7 @@
     "Iraq"
   ],
   "Ends with RAS": [
+    "British Honduras",
     "Honduras"
   ],
   "Ends with RAT": [
@@ -3490,7 +3745,6 @@
     "Cabo Verde"
   ],
   "Ends with REA": [
-    "Eritrea",
     "North Korea",
     "South Korea"
   ],
@@ -3533,6 +3787,7 @@
     "Nigeria",
     "Santa Maria",
     "Syria",
+    "Transnistria",
     "Victoria"
   ],
   "Ends with RID": [
@@ -3549,6 +3804,9 @@
     "Eris",
     "Iris",
     "Paris"
+  ],
+  "Ends with RMA": [
+    "Burma"
   ],
   "Ends with RNA": [
     "Annapurna"
@@ -3646,7 +3904,11 @@
     "Indonesia",
     "Malaysia",
     "Micronesia",
+    "Northern Rhodesia",
+    "Persia",
+    "Rhodesia",
     "Russia",
+    "Southern Rhodesia",
     "Tunisia"
   ],
   "Ends with SIL": [
@@ -3687,6 +3949,9 @@
   "Ends with SUS": [
     "Colossus",
     "Pegasus"
+  ],
+  "Ends with TA": [
+    "Upper Volta"
   ],
   "Ends with TAL": [
     "Monumental",
@@ -3742,7 +4007,8 @@
     "Lesotho"
   ],
   "Ends with TIA": [
-    "Croatia"
+    "Croatia",
+    "South Ossetia"
   ],
   "Ends with TIC": [
     "Gigantic",
@@ -4036,6 +4302,9 @@
   ],
   "Ends with ZER": [
     "Freezer"
+  ],
+  "Ends with ZIA": [
+    "Abkhazia"
   ],
   "Ends with ZIL": [
     "Brazil"
@@ -4480,7 +4749,6 @@
     "Cyprus",
     "Dominica",
     "Dominican Republic",
-    "East Timor",
     "Fiji",
     "Grenada",
     "Iceland",
@@ -4553,6 +4821,366 @@
     "LED",
     "Neon",
     "Xenon"
+  ],
+  "Locations in Africa": [
+    "Abyssinia",
+    "Algeria",
+    "Anglo-Egyptian Sudan",
+    "Angola",
+    "Basutoland",
+    "Bechuanaland",
+    "Belgian Congo",
+    "Belgian East Africa",
+    "Belgian West Africa",
+    "Benin",
+    "Botswana",
+    "British East Africa",
+    "British Somaliland",
+    "British West Africa",
+    "Burkina Faso",
+    "Burundi",
+    "Cabo Verde",
+    "Cameroon",
+    "Central African Republic",
+    "Chad",
+    "Comoros",
+    "Congo",
+    "Dahomey",
+    "Democratic Republic of the Congo",
+    "Djibouti",
+    "Egypt",
+    "Equatorial Guinea",
+    "Eswatini",
+    "Ethiopia",
+    "French East Africa",
+    "French Equatorial Africa",
+    "French Somaliland",
+    "French West Africa",
+    "Gabon",
+    "Gambia",
+    "German East Africa",
+    "German West Africa",
+    "Ghana",
+    "Guinea",
+    "Guinea-Bissau",
+    "Italian East Africa",
+    "Italian Somaliland",
+    "Italian West Africa",
+    "Ivory Coast",
+    "Kenya",
+    "Kilimanjaro",
+    "Lesotho",
+    "Liberia",
+    "Madagascar",
+    "Malawi",
+    "Mali",
+    "Mauritania",
+    "Mauritius",
+    "Morocco",
+    "Mozambique",
+    "Namibia",
+    "Niger",
+    "Nigeria",
+    "Northern Rhodesia",
+    "Nyasaland",
+    "Portuguese East Africa",
+    "Portuguese Guinea",
+    "Portuguese West Africa",
+    "Rhodesia",
+    "Rwanda",
+    "Sao Tome and Principe",
+    "Senegal",
+    "Seychelles",
+    "Sierra Leone",
+    "Somalia",
+    "South Africa",
+    "South Sudan",
+    "Southern Rhodesia",
+    "Spanish East Africa",
+    "Spanish Guinea",
+    "Spanish West Africa",
+    "Tanganyika",
+    "Tanzania",
+    "Togo",
+    "Tunisia",
+    "Uganda",
+    "Upper Volta",
+    "Zambia",
+    "Zanzibar",
+    "Zimbabwe"
+  ],
+  "Locations in Asia": [
+    "Abkhazia",
+    "Afghanistan",
+    "Annapurna",
+    "Armenia",
+    "Artsakh",
+    "Azerbaijan",
+    "Baghdad",
+    "Bahrain",
+    "Bangladesh",
+    "Beijing",
+    "Bhutan",
+    "British Malaya",
+    "Burma",
+    "Cambodia",
+    "Ceylon",
+    "China",
+    "Delhi",
+    "Everest",
+    "French Indochina",
+    "Fuji",
+    "Fukushima",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Israel",
+    "Jaipur",
+    "Japan",
+    "Jerusalem",
+    "Jordan",
+    "K2",
+    "Kampuchea",
+    "Karachi",
+    "Kazakhstan",
+    "Krakatoa",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Laos",
+    "Lebanon",
+    "Malaysia",
+    "Maldives",
+    "Mongolia",
+    "Myanmar",
+    "Nepal",
+    "Netherlands East Indies",
+    "North Korea",
+    "North Vietnam",
+    "North Yemen",
+    "Oman",
+    "Pakistan",
+    "Palau",
+    "Persia",
+    "Philippines",
+    "Pinatubo",
+    "Portuguese Timor",
+    "Qatar",
+    "Russia",
+    "Samarkand",
+    "Saudi Arabia",
+    "Seoul",
+    "Siam",
+    "Singapore",
+    "South Korea",
+    "South Ossetia",
+    "South Vietnam",
+    "South Yemen",
+    "Sri Lanka",
+    "Syria",
+    "Taiwan",
+    "Tajikistan",
+    "Tambora",
+    "Thailand",
+    "Tokyo",
+    "Turkey",
+    "Turkmenistan",
+    "United Arab Emirates",
+    "Uzbekistan",
+    "Vietnam",
+    "Yemen"
+  ],
+  "Locations in Europe": [
+    "Albania",
+    "Andorra",
+    "Austria",
+    "Belarus",
+    "Belgium",
+    "Berlin",
+    "Bosnia and Herzegovina",
+    "Bulgaria",
+    "Chernobyl",
+    "Croatia",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Dublin",
+    "East Germany",
+    "Elbrus",
+    "Estonia",
+    "Etna",
+    "Finland",
+    "France",
+    "Georgia",
+    "Germany",
+    "Greece",
+    "Hungary",
+    "Iceland",
+    "Ireland",
+    "Italy",
+    "Latvia",
+    "Liechtenstein",
+    "Lithuania",
+    "London",
+    "Luxembourg",
+    "Malta",
+    "Matterhorn",
+    "Moldova",
+    "Monaco",
+    "Mont Blanc",
+    "Montenegro",
+    "Netherlands",
+    "North Macedonia",
+    "Norway",
+    "Olympus",
+    "Paris",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Russia",
+    "San Marino",
+    "Serbia",
+    "Slovakia",
+    "Slovenia",
+    "Spain",
+    "Sweden",
+    "Switzerland",
+    "Transnistria",
+    "Ukraine",
+    "United Kingdom",
+    "Vatican City",
+    "Verona",
+    "Vesuvius"
+  ],
+  "Locations in North America": [
+    "Albany",
+    "Annapolis",
+    "Antigua and Barbuda",
+    "Atlanta",
+    "Augusta",
+    "Austin",
+    "Bahamas",
+    "Barbados",
+    "Baton Rouge",
+    "Belize",
+    "Bismarck",
+    "Boise",
+    "Boston",
+    "British Honduras",
+    "Canada",
+    "Cancun",
+    "Carson City",
+    "Charleston",
+    "Cheyenne",
+    "Chicago",
+    "Columbia",
+    "Columbus",
+    "Concord",
+    "Costa Rica",
+    "Cuba",
+    "Dallas",
+    "Denali",
+    "Denver",
+    "Des Moines",
+    "Dominica",
+    "Dominican Republic",
+    "Dover",
+    "El Salvador",
+    "Frankfort",
+    "Grenada",
+    "Guatemala",
+    "Haiti",
+    "Harrisburg",
+    "Hartford",
+    "Helena",
+    "Honduras",
+    "Honolulu",
+    "Hudson",
+    "Indianapolis",
+    "Jackson",
+    "Jamaica",
+    "Jefferson City",
+    "Juneau",
+    "Lansing",
+    "Lincoln",
+    "Little Rock",
+    "Los Angeles",
+    "Madison",
+    "Mexico",
+    "Miami",
+    "Montgomery",
+    "Montpelier",
+    "Nashville",
+    "New York",
+    "Nicaragua",
+    "Oklahoma City",
+    "Olympia",
+    "Panama",
+    "Phoenix",
+    "Pierre",
+    "Providence",
+    "Raleigh",
+    "Richmond",
+    "Sacramento",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Saint Paul",
+    "Saint Vincent and the Grenadines",
+    "Salem",
+    "Salt Lake City",
+    "San Diego",
+    "San Jose",
+    "San Juan",
+    "Santa Fe",
+    "Seattle",
+    "Sierra",
+    "Springfield",
+    "St. Helens",
+    "Tallahassee",
+    "Tijuana",
+    "Topeka",
+    "Toronto",
+    "Trenton",
+    "Trinidad and Tobago",
+    "United States",
+    "Washington"
+  ],
+  "Locations in Oceania": [
+    "Australia",
+    "Fiji",
+    "Kiribati",
+    "Marshall Islands",
+    "Micronesia",
+    "Nauru",
+    "New Hebrides",
+    "New Zealand",
+    "Palau",
+    "Papua New Guinea",
+    "Samoa",
+    "Solomon Islands",
+    "Tonga",
+    "Tuvalu",
+    "Vanuatu",
+    "Western Samoa"
+  ],
+  "Locations in South America": [
+    "Aconcagua",
+    "Argentina",
+    "Bolivia",
+    "Brasilia",
+    "Brazil",
+    "British Guiana",
+    "Chile",
+    "Colombia",
+    "Dutch Guiana",
+    "Ecuador",
+    "Guyana",
+    "Lima",
+    "Paraguay",
+    "Peru",
+    "Suriname",
+    "Uruguay",
+    "Venezuela"
   ],
   "MLB Players": [
     "Cobb",
@@ -4771,6 +5399,200 @@
     "Overwatch",
     "Uniform"
   ],
+  "Modern Countries": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Angola",
+    "Antigua and Barbuda",
+    "Argentina",
+    "Armenia",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
+    "Bahamas",
+    "Bahrain",
+    "Bangladesh",
+    "Barbados",
+    "Belarus",
+    "Belgium",
+    "Belize",
+    "Benin",
+    "Bhutan",
+    "Bolivia",
+    "Bosnia and Herzegovina",
+    "Botswana",
+    "Brazil",
+    "Brunei",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cabo Verde",
+    "Cambodia",
+    "Cameroon",
+    "Canada",
+    "Central African Republic",
+    "Chad",
+    "Chile",
+    "China",
+    "Colombia",
+    "Comoros",
+    "Congo",
+    "Costa Rica",
+    "Croatia",
+    "Cuba",
+    "Cyprus",
+    "Czech Republic",
+    "Democratic Republic of the Congo",
+    "Denmark",
+    "Djibouti",
+    "Dominica",
+    "Dominican Republic",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "Equatorial Guinea",
+    "Estonia",
+    "Eswatini",
+    "Ethiopia",
+    "Fiji",
+    "Finland",
+    "France",
+    "Gabon",
+    "Gambia",
+    "Georgia",
+    "Germany",
+    "Ghana",
+    "Greece",
+    "Greek",
+    "Grenada",
+    "Guatemala",
+    "Guinea",
+    "Guinea-Bissau",
+    "Guyana",
+    "Haiti",
+    "Honduras",
+    "Hungary",
+    "Iceland",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Ivory Coast",
+    "Jamaica",
+    "Japan",
+    "Jordan",
+    "Kazakhstan",
+    "Kenya",
+    "Kiribati",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Laos",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Liechtenstein",
+    "Lithuania",
+    "Luxembourg",
+    "Madagascar",
+    "Malawi",
+    "Malaysia",
+    "Maldives",
+    "Mali",
+    "Malta",
+    "Marshall Islands",
+    "Mauritania",
+    "Mauritius",
+    "Mexico",
+    "Micronesia",
+    "Moldova",
+    "Monaco",
+    "Mongolia",
+    "Montenegro",
+    "Morocco",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
+    "Nauru",
+    "Nepal",
+    "Netherlands",
+    "New Zealand",
+    "Nicaragua",
+    "Niger",
+    "Nigeria",
+    "North Korea",
+    "North Macedonia",
+    "Norway",
+    "Oman",
+    "Pakistan",
+    "Palau",
+    "Panama",
+    "Papua New Guinea",
+    "Paraguay",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Qatar",
+    "Romania",
+    "Russia",
+    "Rwanda",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Saint Vincent and the Grenadines",
+    "Samoa",
+    "San Marino",
+    "Sao Tome and Principe",
+    "Saudi Arabia",
+    "Senegal",
+    "Serbia",
+    "Seychelles",
+    "Sierra Leone",
+    "Singapore",
+    "Slovakia",
+    "Slovenia",
+    "Solomon Islands",
+    "Somalia",
+    "South Africa",
+    "South Korea",
+    "South Sudan",
+    "Spain",
+    "Sri Lanka",
+    "Suriname",
+    "Sweden",
+    "Switzerland",
+    "Syria",
+    "Taiwan",
+    "Tajikistan",
+    "Tanzania",
+    "Thailand",
+    "Togo",
+    "Tonga",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Turkey",
+    "Turkmenistan",
+    "Tuvalu",
+    "Uganda",
+    "Ukraine",
+    "United Arab Emirates",
+    "United Kingdom",
+    "United States",
+    "Uruguay",
+    "Uzbekistan",
+    "Vanuatu",
+    "Vatican City",
+    "Venezuela",
+    "Vietnam",
+    "Yemen",
+    "Zambia",
+    "Zimbabwe"
+  ],
   "Monarchs": [
     "Duke",
     "Elizabeth",
@@ -4801,12 +5623,15 @@
     "Fuji",
     "K2",
     "Kilimanjaro",
+    "Krakatoa",
     "Matterhorn",
     "Mont Blanc",
     "Olympus",
     "Pinatubo",
     "Sierra",
-    "Tambora"
+    "St. Helens",
+    "Tambora",
+    "Vesuvius"
   ],
   "Movie Ratings": [
     "G",
@@ -4934,6 +5759,40 @@
     "Sleipnir",
     "Unicorn"
   ],
+  "NATO Countries": [
+    "Albania",
+    "Belgium",
+    "Bulgaria",
+    "Canada",
+    "Croatia",
+    "Czech Republic",
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "France",
+    "Germany",
+    "Greece",
+    "Hungary",
+    "Iceland",
+    "Italy",
+    "Latvia",
+    "Lithuania",
+    "Luxembourg",
+    "Montenegro",
+    "Netherlands",
+    "North Macedonia",
+    "Norway",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Slovakia",
+    "Slovenia",
+    "Spain",
+    "Sweden",
+    "Turkey",
+    "United Kingdom",
+    "United States"
+  ],
   "NATO Phonetic Alphabet": [
     "Alpha",
     "Bravo",
@@ -5004,8 +5863,16 @@
   "National Capitals": [
     "Athens",
     "Beijing",
+    "Berlin",
+    "Brasilia",
+    "Delhi",
     "London",
+    "Madrid",
+    "Ottawa",
     "Paris",
+    "Roma",
+    "Rome",
+    "Seoul",
     "Tokyo",
     "Washington"
   ],
@@ -5127,6 +5994,9 @@
     "One Piece"
   ],
   "Place Names": [
+    "Abkhazia",
+    "Abyssinia",
+    "Aconcagua",
     "Afghanistan",
     "Akron",
     "Alaska",
@@ -5135,11 +6005,14 @@
     "Algeria",
     "Amazon",
     "Andorra",
+    "Anglo-Egyptian Sudan",
     "Angola",
     "Annapolis",
+    "Annapurna",
     "Antigua and Barbuda",
     "Argentina",
     "Armenia",
+    "Artsakh",
     "Athens",
     "Atlanta",
     "Augusta",
@@ -5152,9 +6025,14 @@
     "Bahrain",
     "Bangladesh",
     "Barbados",
+    "Basutoland",
     "Baton Rouge",
+    "Bechuanaland",
     "Beijing",
     "Belarus",
+    "Belgian Congo",
+    "Belgian East Africa",
+    "Belgian West Africa",
     "Belgium",
     "Belize",
     "Benin",
@@ -5168,10 +6046,18 @@
     "Bosnia and Herzegovina",
     "Boston",
     "Botswana",
+    "Brasilia",
     "Brazil",
+    "British East Africa",
+    "British Guiana",
+    "British Honduras",
+    "British Malaya",
+    "British Somaliland",
+    "British West Africa",
     "Brunei",
     "Bulgaria",
     "Burkina Faso",
+    "Burma",
     "Burundi",
     "Cabo Verde",
     "California",
@@ -5182,6 +6068,7 @@
     "Carson City",
     "Cedar",
     "Central African Republic",
+    "Ceylon",
     "Chad",
     "Charleston",
     "Chernobyl",
@@ -5200,9 +6087,11 @@
     "Cuba",
     "Cyprus",
     "Czech Republic",
+    "Dahomey",
     "Daintree",
     "Dallas",
     "Democratic Republic of the Congo",
+    "Denali",
     "Denmark",
     "Denver",
     "Des Moines",
@@ -5211,25 +6100,36 @@
     "Dominican Republic",
     "Dover",
     "Dublin",
-    "East Timor",
+    "Dutch Guiana",
+    "East Germany",
     "Ecuador",
     "Egypt",
     "El Salvador",
+    "Elbrus",
     "Equatorial Guinea",
-    "Eritrea",
     "Estonia",
     "Eswatini",
     "Ethiopia",
+    "Etna",
     "Europa",
+    "Everest",
     "Fiji",
     "Finland",
     "Florence",
     "Florida",
     "France",
     "Frankfort",
+    "French East Africa",
+    "French Equatorial Africa",
+    "French Indochina",
+    "French Somaliland",
+    "French West Africa",
+    "Fuji",
     "Gabon",
     "Gambia",
     "Georgia",
+    "German East Africa",
+    "German West Africa",
     "Germany",
     "Ghana",
     "Gobi",
@@ -5257,6 +6157,9 @@
     "Iraq",
     "Ireland",
     "Israel",
+    "Italian East Africa",
+    "Italian Somaliland",
+    "Italian West Africa",
     "Italy",
     "Ivory Coast",
     "Jackson",
@@ -5267,10 +6170,13 @@
     "Jerusalem",
     "Jordan",
     "Juneau",
+    "K2",
     "Kalahari",
+    "Kampuchea",
     "Karachi",
     "Kazakhstan",
     "Kenya",
+    "Kilimanjaro",
     "Kiribati",
     "Krakatoa",
     "Kuwait",
@@ -5281,7 +6187,6 @@
     "Lebanon",
     "Lesotho",
     "Liberia",
-    "Libya",
     "Liechtenstein",
     "Lincoln",
     "Lithuania",
@@ -5298,6 +6203,7 @@
     "Mali",
     "Malta",
     "Marshall Islands",
+    "Matterhorn",
     "Mauritania",
     "Mauritius",
     "Mecca",
@@ -5307,6 +6213,7 @@
     "Moldova",
     "Monaco",
     "Mongolia",
+    "Mont Blanc",
     "Montenegro",
     "Montgomery",
     "Montpelier",
@@ -5318,7 +6225,9 @@
     "Nauru",
     "Nepal",
     "Netherlands",
+    "Netherlands East Indies",
     "Nevada",
+    "New Hebrides",
     "New York",
     "New Zealand",
     "Nicaragua",
@@ -5326,9 +6235,14 @@
     "Nigeria",
     "North Korea",
     "North Macedonia",
+    "North Vietnam",
+    "North Yemen",
+    "Northern Rhodesia",
     "Norway",
+    "Nyasaland",
     "Oklahoma City",
     "Olympia",
+    "Olympus",
     "Oman",
     "Orange",
     "Pakistan",
@@ -5337,17 +6251,24 @@
     "Papua New Guinea",
     "Paraguay",
     "Paris",
+    "Persia",
     "Peru",
     "Philippines",
     "Phoenix",
     "Pierre",
+    "Pinatubo",
     "Poland",
     "Pompeii",
     "Portugal",
+    "Portuguese East Africa",
+    "Portuguese Guinea",
+    "Portuguese Timor",
+    "Portuguese West Africa",
     "Providence",
     "Qatar",
     "Quebec",
     "Raleigh",
+    "Rhodesia",
     "Richmond",
     "Roma",
     "Romania",
@@ -5378,6 +6299,8 @@
     "Seoul",
     "Serbia",
     "Seychelles",
+    "Siam",
+    "Sierra",
     "Sierra Leone",
     "Singapore",
     "Slovakia",
@@ -5386,11 +6309,18 @@
     "Somalia",
     "South Africa",
     "South Korea",
+    "South Ossetia",
     "South Sudan",
+    "South Vietnam",
+    "South Yemen",
+    "Southern Rhodesia",
     "Spain",
+    "Spanish East Africa",
+    "Spanish Guinea",
+    "Spanish West Africa",
     "Springfield",
     "Sri Lanka",
-    "Sudan",
+    "St. Helens",
     "Suriname",
     "Sweden",
     "Switzerland",
@@ -5399,6 +6329,8 @@
     "Taiwan",
     "Tajikistan",
     "Tallahassee",
+    "Tambora",
+    "Tanganyika",
     "Tanzania",
     "Temple Mount",
     "Texas",
@@ -5409,6 +6341,7 @@
     "Tonga",
     "Topeka",
     "Toronto",
+    "Transnistria",
     "Trenton",
     "Trinidad and Tobago",
     "Tunisia",
@@ -5420,6 +6353,7 @@
     "United Arab Emirates",
     "United Kingdom",
     "United States",
+    "Upper Volta",
     "Uruguay",
     "Uzbekistan",
     "Vanuatu",
@@ -5427,10 +6361,13 @@
     "Venezuela",
     "Venice",
     "Verona",
+    "Vesuvius",
     "Vietnam",
     "Washington",
+    "Western Samoa",
     "Yemen",
     "Zambia",
+    "Zanzibar",
     "Zimbabwe"
   ],
   "Planets": [
@@ -6041,6 +6978,12 @@
   "Starts with AB": [
     "AB"
   ],
+  "Starts with ABK": [
+    "Abkhazia"
+  ],
+  "Starts with ABY": [
+    "Abyssinia"
+  ],
   "Starts with ACH": [
     "Achilles"
   ],
@@ -6097,6 +7040,7 @@
   ],
   "Starts with ANG": [
     "Angel",
+    "Anglo-Egyptian Sudan",
     "Angola"
   ],
   "Starts with ANI": [
@@ -6147,6 +7091,9 @@
   "Starts with ARM": [
     "Arm",
     "Armenia"
+  ],
+  "Starts with ART": [
+    "Artsakh"
   ],
   "Starts with ATH": [
     "Athena",
@@ -6207,7 +7154,8 @@
   ],
   "Starts with BAS": [
     "Basil",
-    "Basilisk"
+    "Basilisk",
+    "Basutoland"
   ],
   "Starts with BAT": [
     "Bat",
@@ -6222,6 +7170,9 @@
     "Beast",
     "Beat",
     "Beatles"
+  ],
+  "Starts with BEC": [
+    "Bechuanaland"
   ],
   "Starts with BED": [
     "Bed"
@@ -6239,6 +7190,9 @@
   ],
   "Starts with BEL": [
     "Belarus",
+    "Belgian Congo",
+    "Belgian East Africa",
+    "Belgian West Africa",
     "Belgium",
     "Belize",
     "Bell",
@@ -6342,7 +7296,13 @@
   ],
   "Starts with BRI": [
     "Bridge",
-    "Britannia"
+    "Britannia",
+    "British East Africa",
+    "British Guiana",
+    "British Honduras",
+    "British Malaya",
+    "British Somaliland",
+    "British West Africa"
   ],
   "Starts with BRO": [
     "Bronco"
@@ -6369,6 +7329,7 @@
   ],
   "Starts with BUR": [
     "Burkina Faso",
+    "Burma",
     "Burrito",
     "Burundi"
   ],
@@ -6444,6 +7405,9 @@
   "Starts with CER": [
     "Cerberus",
     "Ceres"
+  ],
+  "Starts with CEY": [
+    "Ceylon"
   ],
   "Starts with CHA": [
     "CHA",
@@ -6594,6 +7558,9 @@
   "Starts with DAG": [
     "Dagger"
   ],
+  "Starts with DAH": [
+    "Dahomey"
+  ],
   "Starts with DAI": [
     "Daintree",
     "Daisy"
@@ -6721,6 +7688,9 @@
   "Starts with DUM": [
     "Dumbledore"
   ],
+  "Starts with DUT": [
+    "Dutch Guiana"
+  ],
   "Starts with EAG": [
     "Eagle"
   ],
@@ -6728,7 +7698,7 @@
     "Earth"
   ],
   "Starts with EAS": [
-    "East Timor"
+    "East Germany"
   ],
   "Starts with ECH": [
     "Echo"
@@ -6798,8 +7768,7 @@
     "Equatorial Guinea"
   ],
   "Starts with ERI": [
-    "Eris",
-    "Eritrea"
+    "Eris"
   ],
   "Starts with EST": [
     "Estonia"
@@ -6897,7 +7866,12 @@
   ],
   "Starts with FRE": [
     "Freezer",
-    "French"
+    "French",
+    "French East Africa",
+    "French Equatorial Africa",
+    "French Indochina",
+    "French Somaliland",
+    "French West Africa"
   ],
   "Starts with FRI": [
     "Fridge"
@@ -6951,6 +7925,8 @@
     "Georgia"
   ],
   "Starts with GER": [
+    "German East Africa",
+    "German West Africa",
     "Germania",
     "Germany"
   ],
@@ -7231,6 +8207,9 @@
   ],
   "Starts with ITA": [
     "Italian",
+    "Italian East Africa",
+    "Italian Somaliland",
+    "Italian West Africa",
     "Italy"
   ],
   "Starts with IVO": [
@@ -7325,6 +8304,9 @@
   ],
   "Starts with KAL": [
     "Kalahari"
+  ],
+  "Starts with KAM": [
+    "Kampuchea"
   ],
   "Starts with KAP": [
     "Kappa"
@@ -7454,8 +8436,7 @@
   ],
   "Starts with LIB": [
     "Liberia",
-    "Libra",
-    "Libya"
+    "Libra"
   ],
   "Starts with LIE": [
     "Liechtenstein"
@@ -7694,12 +8675,14 @@
     "Neptune"
   ],
   "Starts with NET": [
-    "Netherlands"
+    "Netherlands",
+    "Netherlands East Indies"
   ],
   "Starts with NEV": [
     "Nevada"
   ],
   "Starts with NEW": [
+    "New Hebrides",
     "New York",
     "New Zealand",
     "Newspaper",
@@ -7734,6 +8717,9 @@
   "Starts with NOR": [
     "North Korea",
     "North Macedonia",
+    "North Vietnam",
+    "North Yemen",
+    "Northern Rhodesia",
     "Norway"
   ],
   "Starts with NOT": [
@@ -7752,6 +8738,9 @@
   ],
   "Starts with NUT": [
     "Nutmeg"
+  ],
+  "Starts with NYA": [
+    "Nyasaland"
   ],
   "Starts with NYL": [
     "Nylon"
@@ -7888,6 +8877,7 @@
   ],
   "Starts with PER": [
     "Perseus",
+    "Persia",
     "Persona",
     "Peru"
   ],
@@ -7968,7 +8958,11 @@
   ],
   "Starts with POR": [
     "Portal",
-    "Portugal"
+    "Portugal",
+    "Portuguese East Africa",
+    "Portuguese Guinea",
+    "Portuguese Timor",
+    "Portuguese West Africa"
   ],
   "Starts with POS": [
     "Poseidon"
@@ -8064,7 +9058,8 @@
     "Rhino"
   ],
   "Starts with RHO": [
-    "Rho"
+    "Rho",
+    "Rhodesia"
   ],
   "Starts with RIC": [
     "Richmond"
@@ -8219,6 +9214,9 @@
   "Starts with SHI": [
     "Shield"
   ],
+  "Starts with SIA": [
+    "Siam"
+  ],
   "Starts with SIE": [
     "Sierra",
     "Sierra Leone"
@@ -8276,7 +9274,11 @@
   "Starts with SOU": [
     "South Africa",
     "South Korea",
-    "South Sudan"
+    "South Ossetia",
+    "South Sudan",
+    "South Vietnam",
+    "South Yemen",
+    "Southern Rhodesia"
   ],
   "Starts with SOW": [
     "Sow"
@@ -8287,6 +9289,9 @@
   "Starts with SPA": [
     "Spades",
     "Spain",
+    "Spanish East Africa",
+    "Spanish Guinea",
+    "Spanish West Africa",
     "Sparrow"
   ],
   "Starts with SPE": [
@@ -8333,9 +9338,6 @@
   ],
   "Starts with SUB": [
     "Subaru"
-  ],
-  "Starts with SUD": [
-    "Sudan"
   ],
   "Starts with SUI": [
     "Suitcase"
@@ -8393,6 +9395,7 @@
   ],
   "Starts with TAN": [
     "Tang",
+    "Tanganyika",
     "Tango",
     "Tanzania"
   ],
@@ -8489,6 +9492,9 @@
   "Starts with TOY": [
     "Toyota"
   ],
+  "Starts with TRA": [
+    "Transnistria"
+  ],
   "Starts with TRE": [
     "Trenton"
   ],
@@ -8546,6 +9552,9 @@
   ],
   "Starts with UP": [
     "UP"
+  ],
+  "Starts with UPP": [
+    "Upper Volta"
   ],
   "Starts with UPS": [
     "Upsilon"
@@ -8628,10 +9637,14 @@
     "Wand"
   ],
   "Starts with WAR": [
-    "Warrior"
+    "Warrior",
+    "Warsaw Pact"
   ],
   "Starts with WAS": [
     "Washington"
+  ],
+  "Starts with WES": [
+    "Western Samoa"
   ],
   "Starts with WHA": [
     "Whale"
@@ -8711,6 +9724,9 @@
   ],
   "Starts with ZAM": [
     "Zambia"
+  ],
+  "Starts with ZAN": [
+    "Zanzibar"
   ],
   "Starts with ZEB": [
     "Zebra"

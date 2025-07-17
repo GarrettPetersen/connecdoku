@@ -1,81 +1,177 @@
 [
   {
     "rows": [
+      "Commonwealth Nations",
+      "Countries that No Longer Exist",
+      "Ends with AND"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Abyssinia",
+      "British Malaya",
+      "East Germany",
+      "Basutoland",
+      "Thailand",
+      "Finland"
+    ]
+  },
+  {
+    "rows": [
       "Countries in Africa",
       "Countries in Asia",
       "Countries in Europe"
     ],
     "cols": [
       "Commonwealth Nations",
-      "Ends with BIA",
-      "Ends with NIA"
+      "Countries that No Longer Exist",
+      "Ends with AND"
     ],
     "size": "3x3",
     "solutions": [
       "South Africa",
-      "Gambia",
-      "Mauritania",
+      "Abyssinia",
+      "Basutoland",
       "India",
-      "Saudi Arabia",
-      "Armenia",
+      "British Malaya",
+      "Thailand",
       "United Kingdom",
-      "Serbia",
-      "Albania"
+      "East Germany",
+      "Finland"
     ]
   },
   {
     "rows": [
+      "Countries in North America",
+      "Countries in Africa",
+      "Countries in Asia"
+    ],
+    "cols": [
+      "Commonwealth Nations",
+      "Countries that No Longer Exist",
+      "Island Nations"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Canada",
+      "British Honduras",
+      "Antigua and Barbuda",
+      "South Africa",
+      "Abyssinia",
+      "Cabo Verde",
+      "India",
+      "British Malaya",
+      "Bahrain"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Countries in Africa",
+      "Countries in Asia"
+    ],
+    "cols": [
+      "Commonwealth Nations",
+      "Countries that No Longer Exist",
+      "Ends with AND"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "New Zealand",
+      "South Africa",
+      "Abyssinia",
+      "Basutoland",
+      "India",
+      "British Malaya",
+      "Thailand"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in South America",
+      "Countries in Africa",
+      "Locations in North America"
+    ],
+    "cols": [
+      "Countries that No Longer Exist",
       "Ends with ANA",
-      "Airships",
-      "Birds"
-    ],
-    "cols": [
-      "Cities",
-      "Foods",
-      "Place Names"
+      "Ends with BIA"
     ],
     "size": "3x3",
     "solutions": [
-      "Tijuana",
-      "Banana",
+      "British Guiana",
+      "Dutch Guiana",
+      "Colombia",
+      "Abyssinia",
       "Botswana",
-      "Los Angeles",
-      "Roma",
-      "Akron",
-      "Phoenix",
-      "Albatross",
-      "Turkey"
+      "Gambia",
+      "British Honduras",
+      "Tijuana",
+      "Columbia"
     ]
   },
   {
     "rows": [
-      "Ends with NTO",
-      "Airships",
-      "Birds"
+      "Countries that No Longer Exist",
+      "Commonwealth Nations",
+      "Ends with AND"
     ],
     "cols": [
-      "Cities",
-      "Foods",
-      "Place Names"
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
     ],
     "size": "3x3",
     "solutions": [
-      "Sacramento",
-      "Pinto",
-      "Toronto",
-      "Los Angeles",
-      "Roma",
-      "Akron",
-      "Phoenix",
-      "Albatross",
-      "Turkey"
+      "Abyssinia",
+      "British Malaya",
+      "East Germany",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Basutoland",
+      "Thailand",
+      "Finland"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Commonwealth Nations",
+      "Countries that No Longer Exist"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Countries in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "South Africa",
+      "United Kingdom",
+      "Canada",
+      "Abyssinia",
+      "East Germany",
+      "British Honduras"
     ]
   },
   {
     "rows": [
       "Ends with SIA",
       "Commonwealth Nations",
-      "Ends with BIA"
+      "Countries that No Longer Exist"
     ],
     "cols": [
       "Countries in Africa",
@@ -84,15 +180,15 @@
     ],
     "size": "3x3",
     "solutions": [
-      "Tunisia",
+      "Northern Rhodesia",
       "Indonesia",
       "Russia",
       "South Africa",
       "India",
       "United Kingdom",
-      "Gambia",
-      "Saudi Arabia",
-      "Serbia"
+      "Abyssinia",
+      "British Malaya",
+      "East Germany"
     ]
   },
   {
@@ -117,6 +213,78 @@
       "Amontillado",
       "Milk",
       "Kraken"
+    ]
+  },
+  {
+    "rows": [
+      "Locations in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
+    ],
+    "cols": [
+      "Commonwealth Nations",
+      "Countries that No Longer Exist",
+      "Ends with AND"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Africa",
+      "Abyssinia",
+      "Basutoland",
+      "India",
+      "British Malaya",
+      "Thailand",
+      "United Kingdom",
+      "East Germany",
+      "Finland"
+    ]
+  },
+  {
+    "rows": [
+      "Locations in Oceania",
+      "Countries in Africa",
+      "Countries in Asia"
+    ],
+    "cols": [
+      "Commonwealth Nations",
+      "Countries that No Longer Exist",
+      "Ends with AND"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "New Zealand",
+      "South Africa",
+      "Abyssinia",
+      "Basutoland",
+      "India",
+      "British Malaya",
+      "Thailand"
+    ]
+  },
+  {
+    "rows": [
+      "Locations in South America",
+      "Airships",
+      "Birds"
+    ],
+    "cols": [
+      "Cities",
+      "Foods",
+      "Place Names"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Brasilia",
+      "Lima",
+      "Aconcagua",
+      "Los Angeles",
+      "Roma",
+      "Akron",
+      "Phoenix",
+      "Albatross",
+      "Turkey"
     ]
   },
   {
@@ -169,30 +337,6 @@
   },
   {
     "rows": [
-      "Saints",
-      "Airships",
-      "Birds"
-    ],
-    "cols": [
-      "Cities",
-      "Place Names",
-      "Ships"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "San Juan",
-      "San Pedro",
-      "Santa Maria",
-      "Los Angeles",
-      "Akron",
-      "Graf Zeppelin",
-      "Phoenix",
-      "Turkey",
-      "Albatross"
-    ]
-  },
-  {
-    "rows": [
       "Spider-Verse Villains",
       "Avengers",
       "Birds"
@@ -217,33 +361,33 @@
   },
   {
     "rows": [
-      "Starts with CHI",
+      "Starts with CHA",
       "Airships",
-      "Birds"
+      "Disaster Movies"
     ],
     "cols": [
       "Cities",
-      "Foods",
+      "Disasters",
       "Place Names"
     ],
     "size": "3x3",
     "solutions": [
-      "Chicago",
-      "Chicken",
-      "Chile",
+      "Charleston",
+      "Challenger",
+      "Chad",
       "Los Angeles",
-      "Roma",
+      "Hindenburg",
       "Akron",
-      "Phoenix",
-      "Albatross",
-      "Turkey"
+      "Pompeii",
+      "Krakatoa",
+      "Everest"
     ]
   },
   {
     "rows": [
       "Starts with MAL",
       "Commonwealth Nations",
-      "Ends with BIA"
+      "Countries that No Longer Exist"
     ],
     "cols": [
       "Countries in Africa",
@@ -258,33 +402,1569 @@
       "South Africa",
       "India",
       "United Kingdom",
-      "Gambia",
-      "Saudi Arabia",
-      "Serbia"
+      "Abyssinia",
+      "British Malaya",
+      "East Germany"
     ]
   },
   {
     "rows": [
-      "Starts with MON",
-      "Airships",
-      "Birds"
+      "Starts with NOR",
+      "Commonwealth Nations",
+      "Countries that No Longer Exist"
     ],
     "cols": [
-      "Band Namesakes",
-      "Cities",
-      "Place Names"
+      "Countries in Africa",
+      "Countries in Asia",
+      "Countries in Europe"
     ],
     "size": "3x3",
     "solutions": [
-      "Monkey",
-      "Monaco",
-      "Mongolia",
-      "Zeppelin",
-      "Los Angeles",
-      "Akron",
-      "Crow",
-      "Phoenix",
-      "Turkey"
+      "Northern Rhodesia",
+      "North Korea",
+      "North Macedonia",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Abyssinia",
+      "British Malaya",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Countries in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Commonwealth Nations",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "India",
+      "British Malaya",
+      "Transnistria",
+      "United Kingdom",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Commonwealth Nations",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "India",
+      "British Malaya",
+      "Transnistria",
+      "United Kingdom",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SOU",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Breakaway Regions",
+      "Modern Countries",
+      "Countries that No Longer Exist"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Ossetia",
+      "South Africa",
+      "South Vietnam",
+      "Abkhazia",
+      "Afghanistan",
+      "British Malaya",
+      "Transnistria",
+      "Albania",
+      "East Germany"
     ]
   },
   {
