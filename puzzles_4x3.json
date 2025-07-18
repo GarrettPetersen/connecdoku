@@ -1,6 +1,34 @@
 [
   {
     "rows": [
+      "Comedy Films",
+      "Adventure Films",
+      "Crime Films",
+      "Movies directed by Quentin Tarantino"
+    ],
+    "cols": [
+      "Action Films",
+      "Drama Films",
+      "Movies featuring Bruce Willis"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Red",
+      "About Time",
+      "Moonrise Kingdom",
+      "Avatar",
+      "Interstellar",
+      "The Fifth Element",
+      "Death Wish",
+      "Copycat",
+      "Looper",
+      "Death Proof",
+      "Django Unchained",
+      "Pulp Fiction"
+    ]
+  },
+  {
+    "rows": [
       "Commonwealth Nations",
       "Countries that No Longer Exist",
       "Ends with AND",
@@ -60,783 +88,27 @@
       "Commonwealth Nations",
       "Countries that No Longer Exist",
       "Ends with AND",
-      "Former British Colony"
+      "Ends with RIA"
     ],
     "cols": [
       "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia"
+      "Countries in Asia",
+      "Locations in Europe"
     ],
     "size": "4x3",
     "solutions": [
       "South Africa",
       "Abyssinia",
       "Basutoland",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "New Zealand",
-      "Fiji",
+      "Algeria",
       "India",
       "British Malaya",
       "Thailand",
-      "Bahrain"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Syria",
+      "United Kingdom",
+      "East Germany",
+      "Finland",
+      "Austria"
     ]
   },
   {
@@ -1653,6 +925,1490 @@
   },
   {
     "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Oceania",
+      "Locations in Europe",
+      "Countries in Africa",
+      "Countries in South America"
+    ],
+    "cols": [
+      "WWII Allied Powers",
+      "Countries that No Longer Exist",
+      "Former British Colony"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Australia",
+      "New Hebrides",
+      "Fiji",
+      "Albania",
+      "East Germany",
+      "Cyprus",
+      "Egypt",
+      "Abyssinia",
+      "Anglo-Egyptian Sudan",
+      "Argentina",
+      "British Guiana",
+      "Guyana"
+    ]
+  },
+  {
+    "rows": [
       "Countries that No Longer Exist",
       "Ends with ANA",
       "Ends with BIA",
@@ -1709,6 +2465,62 @@
   },
   {
     "rows": [
+      "Crime Films",
+      "Adventure Films",
+      "Comedy Films",
+      "Movies directed by Quentin Tarantino"
+    ],
+    "cols": [
+      "Action Films",
+      "Drama Films",
+      "Movies featuring Bruce Willis"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Death Wish",
+      "Copycat",
+      "Looper",
+      "Avatar",
+      "Interstellar",
+      "The Fifth Element",
+      "Red",
+      "About Time",
+      "Moonrise Kingdom",
+      "Death Proof",
+      "Django Unchained",
+      "Pulp Fiction"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with  II",
+      "Action Films",
+      "Drama Films",
+      "Movies featuring Sigourney Weaver"
+    ],
+    "cols": [
+      "Adventure Films",
+      "Comedy Films",
+      "Crime Films"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Back to the Future Part II",
+      "Ghostbusters II",
+      "The Godfather Part II",
+      "Avatar",
+      "Red",
+      "Death Wish",
+      "Interstellar",
+      "About Time",
+      "Copycat",
+      "Avatar: Frontiers of Pandora",
+      "Galaxy Quest",
+      "Vantage Point"
+    ]
+  },
+  {
+    "rows": [
       "Ends with LIC",
       "Commonwealth Nations",
       "Countries that No Longer Exist",
@@ -1733,34 +2545,6 @@
       "Anglo-Egyptian Sudan",
       "Cyprus",
       "Antigua and Barbuda"
-    ]
-  },
-  {
-    "rows": [
-      "Ends with SIA",
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Ends with AND"
-    ],
-    "cols": [
-      "Countries in Africa",
-      "Countries in Asia",
-      "Countries in Europe"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Northern Rhodesia",
-      "Indonesia",
-      "Russia",
-      "South Africa",
-      "India",
-      "United Kingdom",
-      "Abyssinia",
-      "British Malaya",
-      "East Germany",
-      "Basutoland",
-      "Thailand",
-      "Finland"
     ]
   },
   {
@@ -3280,2295 +4064,2015 @@
       "Commonwealth Nations",
       "Countries that No Longer Exist",
       "Ends with AND",
-      "Former British Colony"
+      "Ends with RIA"
     ],
     "cols": [
       "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia"
+      "Countries in Asia",
+      "Locations in Europe"
     ],
     "size": "4x3",
     "solutions": [
       "South Africa",
       "Abyssinia",
       "Basutoland",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "New Zealand",
-      "Fiji",
+      "Algeria",
       "India",
       "British Malaya",
       "Thailand",
-      "Bahrain"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Africa",
-      "Locations in Oceania",
-      "Countries in Asia",
-      "Countries in Oceania"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Africa",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Oceania",
-      "Countries in Africa",
-      "Countries in Asia",
-      "Countries in Europe"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Ends with AND"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Australia",
-      "New Hebrides",
-      "New Zealand",
-      "South Africa",
-      "Abyssinia",
-      "Basutoland",
-      "India",
-      "British Malaya",
-      "Thailand",
+      "Syria",
       "United Kingdom",
       "East Germany",
-      "Finland"
+      "Finland",
+      "Austria"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies directed by Robert Zemeckis",
+      "Action Films",
+      "Drama Films",
+      "Sequels"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Adventure Films",
+      "Comedy Films",
+      "Oscar Winners"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Back to the Future",
+      "Back to the Future Part II",
+      "Forrest Gump",
+      "Avatar",
+      "Red",
+      "Django Unchained",
+      "Interstellar",
+      "About Time",
+      "Gone with the Wind",
+      "Attack of the Clones",
+      "Back to the Future Part III",
+      "The Godfather Part II"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Movies featuring Sigourney Weaver"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Crime Films",
+      "Horror Films"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "Dog Day Afternoon",
+      "The Devil's Advocate",
+      "Red",
+      "Death Wish",
+      "Aliens",
+      "About Time",
+      "Copycat",
+      "Donnie Darko",
+      "Galaxy Quest",
+      "Vantage Point",
+      "Alien"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
     "rows": [
-      "Locations in Oceania",
-      "Locations in Europe",
-      "Countries in Africa",
-      "Countries in Oceania"
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
     ],
     "cols": [
-      "WWII Allied Powers",
-      "Countries that No Longer Exist",
-      "Former British Colony"
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
     ],
     "size": "4x3",
     "solutions": [
-      "Australia",
-      "New Hebrides",
-      "Fiji",
-      "Albania",
-      "East Germany",
-      "Cyprus",
-      "Egypt",
-      "Abyssinia",
-      "Anglo-Egyptian Sudan",
-      "New Zealand",
-      "Western Samoa",
-      "Kiribati"
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "The Devil's Advocate",
+      "The Godfather Part II",
+      "Red",
+      "The Matrix",
+      "A Good Day to Die Hard",
+      "About Time",
+      "The Lake House",
+      "Kill Bill: Volume 2",
+      "Back to the Future",
+      "Bill & Ted's Bogus Journey",
+      "Attack of the Clones"
     ]
   },
   {
@@ -5629,6 +6133,34 @@
   },
   {
     "rows": [
+      "Starts with CHE",
+      "Birds",
+      "Movies",
+      "Starts with NEW"
+    ],
+    "cols": [
+      "Black and White",
+      "Cities",
+      "Place Names"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Chessboard",
+      "Chernobyl",
+      "Cheyenne",
+      "Magpie",
+      "Phoenix",
+      "Turkey",
+      "Othello",
+      "Pompeii",
+      "Everest",
+      "Newspaper",
+      "New York",
+      "New Hebrides"
+    ]
+  },
+  {
+    "rows": [
       "Starts with MAL",
       "Commonwealth Nations",
       "Countries that No Longer Exist",
@@ -5681,62 +6213,6 @@
       "Basutoland",
       "Thailand",
       "Finland"
-    ]
-  },
-  {
-    "rows": [
-      "Breakaway Regions",
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Ends with SIA"
-    ],
-    "cols": [
-      "Starts with SOU",
-      "Countries in Asia",
-      "Locations in Europe"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Ossetia",
-      "South Africa",
-      "South Vietnam",
-      "Southern Rhodesia",
-      "Abkhazia",
-      "India",
-      "British Malaya",
-      "Indonesia",
-      "Transnistria",
-      "United Kingdom",
-      "East Germany",
-      "Russia"
-    ]
-  },
-  {
-    "rows": [
-      "Breakaway Regions",
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Former British Colony"
-    ],
-    "cols": [
-      "Starts with SOU",
-      "Countries in Asia",
-      "Locations in Europe"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "South Ossetia",
-      "South Africa",
-      "South Vietnam",
-      "South Sudan",
-      "Abkhazia",
-      "India",
-      "British Malaya",
-      "Bahrain",
-      "Transnistria",
-      "United Kingdom",
-      "East Germany",
-      "Cyprus"
     ]
   }
 ]

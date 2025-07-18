@@ -1,6 +1,30 @@
 [
   {
     "rows": [
+      "Books",
+      "3D Animated Films",
+      "Adventure Films"
+    ],
+    "cols": [
+      "Blockbusters",
+      "Ends with ARS",
+      "Ends with LES"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Harry Potter and the Chamber of Secrets",
+      "The Fault in Our Stars",
+      "Anne of Green Gables",
+      "Toy Story",
+      "Cars",
+      "The Incredibles",
+      "Jurassic Park",
+      "Star Wars",
+      "Holes"
+    ]
+  },
+  {
+    "rows": [
       "Commonwealth Nations",
       "Countries that No Longer Exist",
       "Ends with AND"
@@ -145,6 +169,54 @@
   },
   {
     "rows": [
+      "Crime Films",
+      "Adventure Films",
+      "Comedy Films"
+    ],
+    "cols": [
+      "Action Films",
+      "Drama Films",
+      "Ends with  II"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Death Wish",
+      "Copycat",
+      "The Godfather Part II",
+      "Avatar",
+      "Interstellar",
+      "Back to the Future Part II",
+      "Red",
+      "About Time",
+      "Ghostbusters II"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with  II",
+      "Action Films",
+      "Drama Films"
+    ],
+    "cols": [
+      "Adventure Films",
+      "Comedy Films",
+      "Crime Films"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Back to the Future Part II",
+      "Ghostbusters II",
+      "The Godfather Part II",
+      "Avatar",
+      "Red",
+      "Death Wish",
+      "Interstellar",
+      "About Time",
+      "Copycat"
+    ]
+  },
+  {
+    "rows": [
       "Ends with LIC",
       "Commonwealth Nations",
       "Countries that No Longer Exist"
@@ -165,30 +237,6 @@
       "Abyssinia",
       "East Germany",
       "British Honduras"
-    ]
-  },
-  {
-    "rows": [
-      "Ends with SIA",
-      "Commonwealth Nations",
-      "Countries that No Longer Exist"
-    ],
-    "cols": [
-      "Countries in Africa",
-      "Countries in Asia",
-      "Countries in Europe"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Northern Rhodesia",
-      "Indonesia",
-      "Russia",
-      "South Africa",
-      "India",
-      "United Kingdom",
-      "Abyssinia",
-      "British Malaya",
-      "East Germany"
     ]
   },
   {
@@ -289,6 +337,30 @@
   },
   {
     "rows": [
+      "Horror Films",
+      "Adventure Films",
+      "Comedy Films"
+    ],
+    "cols": [
+      "Action Films",
+      "Drama Films",
+      "Movies featuring Alan Rickman"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Aliens",
+      "Donnie Darko",
+      "Sweeney Todd: The Demon Barber of Fleet Street",
+      "Avatar",
+      "Interstellar",
+      "Robin Hood: Prince of Thieves",
+      "Red",
+      "About Time",
+      "Galaxy Quest"
+    ]
+  },
+  {
+    "rows": [
       "Locations in Africa",
       "Countries in Asia",
       "Countries in Europe"
@@ -309,30 +381,6 @@
       "United Kingdom",
       "East Germany",
       "Finland"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in Oceania",
-      "Countries in Africa",
-      "Countries in Asia"
-    ],
-    "cols": [
-      "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Ends with AND"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Australia",
-      "New Hebrides",
-      "New Zealand",
-      "South Africa",
-      "Abyssinia",
-      "Basutoland",
-      "India",
-      "British Malaya",
-      "Thailand"
     ]
   },
   {
@@ -361,6 +409,54 @@
   },
   {
     "rows": [
+      "Movies directed by Robert Zemeckis",
+      "Action Films",
+      "Drama Films"
+    ],
+    "cols": [
+      "Adventure Films",
+      "Comedy Films",
+      "Oscar Winners"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Back to the Future",
+      "Back to the Future Part II",
+      "Forrest Gump",
+      "Avatar",
+      "Red",
+      "Django Unchained",
+      "Interstellar",
+      "About Time",
+      "Gone with the Wind"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Al Pacino",
+      "Action Films",
+      "Drama Films"
+    ],
+    "cols": [
+      "Comedy Films",
+      "Crime Films",
+      "Horror Films"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Once Upon a Time in Hollywood",
+      "Dog Day Afternoon",
+      "The Devil's Advocate",
+      "Red",
+      "Death Wish",
+      "Aliens",
+      "About Time",
+      "Copycat",
+      "Donnie Darko"
+    ]
+  },
+  {
+    "rows": [
       "Predators",
       "Band Namesakes",
       "Ends with ANT"
@@ -378,30 +474,6 @@
       "Beetle",
       "Crow",
       "Monkey",
-      "Ant",
-      "Cormorant",
-      "Elephant"
-    ]
-  },
-  {
-    "rows": [
-      "Red Things",
-      "Band Namesakes",
-      "Ends with ANT"
-    ],
-    "cols": [
-      "Arthropods",
-      "Birds",
-      "Types of Animals"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Crab",
-      "Cardinal",
-      "Lobster",
-      "Beetle",
-      "Crow",
-      "Animal",
       "Ant",
       "Cormorant",
       "Elephant"
@@ -433,25 +505,49 @@
   },
   {
     "rows": [
-      "Starts with CHA",
-      "Airships",
-      "Disaster Movies"
+      "Starts with BAC",
+      "Action Films",
+      "Drama Films"
     ],
     "cols": [
+      "Adventure Films",
+      "Comedy Films",
+      "Sci-fi Films"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Back to the Future",
+      "Back to the Future Part II",
+      "Back to the Future Part III",
+      "Avatar",
+      "Red",
+      "Aliens",
+      "Interstellar",
+      "About Time",
+      "12 Monkeys"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with CHE",
+      "Birds",
+      "Movies"
+    ],
+    "cols": [
+      "Black and White",
       "Cities",
-      "Disasters",
       "Place Names"
     ],
     "size": "3x3",
     "solutions": [
-      "Charleston",
-      "Challenger",
-      "Chad",
-      "Los Angeles",
-      "Hindenburg",
-      "Akron",
+      "Chessboard",
+      "Chernobyl",
+      "Cheyenne",
+      "Magpie",
+      "Phoenix",
+      "Turkey",
+      "Othello",
       "Pompeii",
-      "Krakatoa",
       "Everest"
     ]
   },
@@ -481,6 +577,30 @@
   },
   {
     "rows": [
+      "Starts with NEW",
+      "Birds",
+      "Movies"
+    ],
+    "cols": [
+      "Black and White",
+      "Cities",
+      "Countries"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Newspaper",
+      "New York",
+      "New Hebrides",
+      "Magpie",
+      "Phoenix",
+      "Turkey",
+      "Othello",
+      "Pompeii",
+      "Madagascar"
+    ]
+  },
+  {
+    "rows": [
       "Starts with NOR",
       "Commonwealth Nations",
       "Countries that No Longer Exist"
@@ -500,54 +620,6 @@
       "United Kingdom",
       "Abyssinia",
       "British Malaya",
-      "East Germany"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with SOU",
-      "Countries in Asia",
-      "Countries in Europe"
-    ],
-    "cols": [
-      "Breakaway Regions",
-      "Commonwealth Nations",
-      "Countries that No Longer Exist"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "South Ossetia",
-      "South Africa",
-      "South Vietnam",
-      "Abkhazia",
-      "India",
-      "British Malaya",
-      "Transnistria",
-      "United Kingdom",
-      "East Germany"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with SOU",
-      "Countries in Asia",
-      "Locations in Europe"
-    ],
-    "cols": [
-      "Breakaway Regions",
-      "Commonwealth Nations",
-      "Countries that No Longer Exist"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "South Ossetia",
-      "South Africa",
-      "South Vietnam",
-      "Abkhazia",
-      "India",
-      "British Malaya",
-      "Transnistria",
-      "United Kingdom",
       "East Germany"
     ]
   },
