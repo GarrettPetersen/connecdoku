@@ -1377,14 +1377,18 @@
   ],
   "Canada": [
     "Commonwealth Nations",
+    "Constitutional Monarchies",
     "Countries",
     "Countries in North America",
     "Ends with ADA",
+    "Federal Republics",
     "Former British Colonies",
+    "G7 Countries",
     "Large Countries",
     "Locations in North America",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with CAN",
     "WWII Allied Powers"
@@ -1393,49 +1397,65 @@
     "Countries",
     "Countries in Europe",
     "Ends with ANY",
+    "Federal Republics",
+    "G7 Countries",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with GER",
     "WWII Axis Powers"
   ],
   "France": [
     "Countries",
     "Countries in Europe",
+    "Countries with Nuclear Weapons",
     "Ends with NCE",
+    "G7 Countries",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with FRA",
+    "UN Security Council Permanent Members",
     "WWII Allied Powers"
   ],
   "Italy": [
     "Countries",
     "Countries in Europe",
     "Ends with ALY",
+    "G7 Countries",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with ITA",
     "WWII Axis Powers"
   ],
   "Spain": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Europe",
     "Ends with AIN",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with SPA"
   ],
   "Japan": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Asia",
     "Ends with PAN",
+    "G7 Countries",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
@@ -1443,8 +1463,10 @@
     "WWII Axis Powers"
   ],
   "China": [
+    "BRICS Nations",
     "Countries",
     "Countries in Asia",
+    "Countries with Nuclear Weapons",
     "Ends with INA",
     "Household Items",
     "Large Countries",
@@ -1452,13 +1474,17 @@
     "Modern Countries",
     "Most Populous Countries (Top 10)",
     "Place Names",
+    "Republics",
     "Starts with CHI",
+    "UN Security Council Permanent Members",
     "WWII Allied Powers"
   ],
   "Brazil": [
+    "BRICS Nations",
     "Countries",
     "Countries in South America",
     "Ends with ZIL",
+    "Federal Republics",
     "Former Dutch Colonies",
     "Former Portuguese Colonies",
     "Large Countries",
@@ -1466,14 +1492,18 @@
     "Modern Countries",
     "Most Populous Countries (Top 10)",
     "Place Names",
+    "Republics",
     "Starts with BRA",
     "WWII Allied Powers"
   ],
   "India": [
+    "BRICS Nations",
     "Commonwealth Nations",
     "Countries",
     "Countries in Asia",
+    "Countries with Nuclear Weapons",
     "Ends with DIA",
+    "Federal Republics",
     "Former British Colonies",
     "Large Countries",
     "Locations in Asia",
@@ -1481,6 +1511,7 @@
     "Most Populous Countries (Top 10)",
     "NATO Phonetic Alphabet",
     "Place Names",
+    "Republics",
     "Starts with IND",
     "WWII Allied Powers"
   ],
@@ -1488,6 +1519,7 @@
     "Countries",
     "Countries in North America",
     "Ends with ICO",
+    "Federal Republics",
     "Former Spanish Colonies",
     "Large Countries",
     "Locations in North America",
@@ -1504,6 +1536,7 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with GRE",
     "WWII Allied Powers"
@@ -1518,7 +1551,9 @@
     "Locations in Asia",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with TUR",
     "WWII Allied Powers"
   ],
@@ -1804,9 +1839,11 @@
     "Countries in Europe",
     "Countries in the USSR",
     "Ends with GIA",
+    "Former Soviet Republics",
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with GEO",
     "US States"
   ],
@@ -2935,6 +2972,7 @@
   ],
   "Australia": [
     "Commonwealth Nations",
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Oceania",
     "Ends with LIA",
@@ -2948,14 +2986,19 @@
   ],
   "United Kingdom": [
     "Commonwealth Nations",
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Europe",
+    "Countries with Nuclear Weapons",
     "Ends with DOM",
+    "G7 Countries",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with UNI",
+    "UN Security Council Permanent Members",
     "WWII Allied Powers"
   ],
   "Caesar": [
@@ -3890,6 +3933,7 @@
   ],
   "New Zealand": [
     "Commonwealth Nations",
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Oceania",
     "Ends with AND",
@@ -3902,16 +3946,19 @@
     "WWII Allied Powers"
   ],
   "South Africa": [
+    "BRICS Nations",
     "Commonwealth Nations",
     "Countries",
     "Countries in Africa",
     "Ends with ICA",
+    "Federal Republics",
     "Former British Colonies",
     "Former Dutch Colonies",
     "Former Spanish Colonies",
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with SOU",
     "WWII Allied Powers"
   ],
@@ -4370,8 +4417,10 @@
     "Former Spanish Colonies",
     "Locations in Africa",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
     "Rainforests",
+    "Republics",
     "Starts with CON"
   ],
   "Daintree": [
@@ -7427,6 +7476,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with AFG"
   ],
   "Albania": [
@@ -7437,7 +7487,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with ALB",
     "WWII Allied Powers"
   ],
@@ -7450,7 +7502,9 @@
     "Large Countries",
     "Locations in Africa",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
+    "Republics",
     "Starts with ALG"
   ],
   "Andorra": [
@@ -7459,6 +7513,7 @@
     "Ends with RRA",
     "Landlocked Countries",
     "Locations in Europe",
+    "Microstates",
     "Modern Countries",
     "Place Names",
     "Small Countries",
@@ -7472,7 +7527,9 @@
     "Former Spanish Colonies",
     "Locations in Africa",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
+    "Republics",
     "Starts with ANG"
   ],
   "Antigua and Barbuda": [
@@ -7493,11 +7550,13 @@
     "Countries",
     "Countries in South America",
     "Ends with INA",
+    "Federal Republics",
     "Former Spanish Colonies",
     "Large Countries",
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with ARG",
     "WWII Allied Powers"
   ],
@@ -7506,20 +7565,24 @@
     "Countries in Asia",
     "Countries in the USSR",
     "Ends with NIA",
+    "Former Soviet Republics",
     "Landlocked Countries",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with ARM"
   ],
   "Austria": [
     "Countries",
     "Countries in Europe",
     "Ends with RIA",
+    "Federal Republics",
     "Landlocked Countries",
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with AUS"
   ],
   "Azerbaijan": [
@@ -7527,10 +7590,12 @@
     "Countries in Asia",
     "Countries in the USSR",
     "Ends with JAN",
+    "Former Soviet Republics",
     "Landlocked Countries",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with AZE"
   ],
   "Bahamas": [
@@ -7565,6 +7630,7 @@
     "Modern Countries",
     "Most Populous Countries (Top 10)",
     "Place Names",
+    "Republics",
     "Starts with BAN"
   ],
   "Barbados": [
@@ -7585,19 +7651,24 @@
     "Countries in Europe",
     "Countries in the USSR",
     "Ends with RUS",
+    "Former Soviet Republics",
     "Landlocked Countries",
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with BEL"
   ],
   "Belgium": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Europe",
     "Ends with IUM",
+    "Federal Republics",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with BEL",
     "WWII Allied Powers"
@@ -7621,6 +7692,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with BEN"
   ],
   "Bhutan": [
@@ -7642,6 +7714,7 @@
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with BOL",
     "WWII Allied Powers"
   ],
@@ -7664,6 +7737,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with BOT"
   ],
   "Brunei": [
@@ -7680,7 +7754,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with BUL",
     "WWII Axis Powers"
   ],
@@ -7694,6 +7770,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with BUR"
   ],
   "Burundi": [
@@ -7707,6 +7784,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with BUR"
   ],
   "Cabo Verde": [
@@ -7741,6 +7819,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with CAM"
   ],
   "Central African Republic": [
@@ -7753,6 +7832,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with CEN"
   ],
   "Chad": [
@@ -7768,6 +7848,7 @@
     "Modern Countries",
     "People",
     "Place Names",
+    "Republics",
     "Starts with CHA"
   ],
   "Chile": [
@@ -7778,6 +7859,7 @@
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with CHI",
     "WWII Allied Powers"
   ],
@@ -7789,6 +7871,7 @@
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with COL",
     "WWII Allied Powers"
   ],
@@ -7813,6 +7896,7 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with COS",
     "WWII Allied Powers"
   ],
@@ -7824,7 +7908,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with CRO",
     "WWII Axis Powers"
   ],
@@ -7861,7 +7947,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with CZE"
   ],
   "Democratic Republic of the Congo": [
@@ -7875,15 +7963,18 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with DEM"
   ],
   "Denmark": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Europe",
     "Ends with ARK",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with DEN",
     "WWII Allied Powers"
@@ -7924,6 +8015,7 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with DOM",
     "WWII Allied Powers"
   ],
@@ -7935,6 +8027,7 @@
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with ECU",
     "WWII Allied Powers"
   ],
@@ -7947,6 +8040,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with EGY",
     "WWII Allied Powers"
   ],
@@ -7958,6 +8052,7 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with EL ",
     "WWII Allied Powers"
   ],
@@ -7968,7 +8063,9 @@
     "Former Spanish Colonies",
     "Locations in Africa",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
+    "Republics",
     "Starts with EQU"
   ],
   "Estonia": [
@@ -7976,10 +8073,13 @@
     "Countries in Europe",
     "Countries in the USSR",
     "Ends with NIA",
+    "Former Soviet Republics",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with EST"
   ],
   "Eswatini": [
@@ -7998,11 +8098,13 @@
     "Countries",
     "Countries in Africa",
     "Ends with PIA",
+    "Federal Republics",
     "Former Italian Colonies",
     "Landlocked Countries",
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with ETH",
     "WWII Allied Powers"
   ],
@@ -8025,7 +8127,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with FIN",
     "WWII Axis Powers"
   ],
@@ -8037,7 +8141,9 @@
     "Former Spanish Colonies",
     "Locations in Africa",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
+    "Republics",
     "Starts with GAB"
   ],
   "Gambia": [
@@ -8060,6 +8166,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with GHA"
   ],
   "Grenada": [
@@ -8083,6 +8190,7 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with GUA",
     "WWII Allied Powers"
   ],
@@ -8095,6 +8203,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with GUI"
   ],
   "Guinea-Bissau": [
@@ -8106,6 +8215,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with GUI"
   ],
   "Guyana": [
@@ -8118,6 +8228,7 @@
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with GUY"
   ],
   "Haiti": [
@@ -8129,6 +8240,7 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with HAI",
     "WWII Allied Powers"
   ],
@@ -8140,6 +8252,7 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with HON",
     "WWII Allied Powers"
   ],
@@ -8151,7 +8264,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with HUN",
     "WWII Axis Powers"
   ],
@@ -8164,6 +8279,7 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with ICE"
   ],
@@ -8179,6 +8295,7 @@
     "Modern Countries",
     "Most Populous Countries (Top 10)",
     "Place Names",
+    "Republics",
     "Starts with IND"
   ],
   "Iran": [
@@ -8188,7 +8305,9 @@
     "Large Countries",
     "Locations in Asia",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
+    "Republics",
     "Starts with IRA",
     "WWII Allied Powers"
   ],
@@ -8196,10 +8315,13 @@
     "Countries",
     "Countries in Asia",
     "Ends with RAQ",
+    "Federal Republics",
     "Former British Colonies",
     "Locations in Asia",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
+    "Republics",
     "Starts with IRA",
     "WWII Allied Powers"
   ],
@@ -8212,16 +8334,19 @@
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with IRE"
   ],
   "Israel": [
     "Countries",
     "Countries in Asia",
+    "Countries with Nuclear Weapons",
     "Ends with AEL",
     "Former British Colonies",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with ISR"
   ],
   "Ivory Coast": [
@@ -8233,6 +8358,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with IVO"
   ],
   "Jamaica": [
@@ -8252,11 +8378,13 @@
     "Countries in Asia",
     "Countries in the USSR",
     "Ends with TAN",
+    "Former Soviet Republics",
     "Landlocked Countries",
     "Large Countries",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with KAZ"
   ],
   "Kenya": [
@@ -8268,6 +8396,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with KEN"
   ],
   "Kiribati": [
@@ -8290,6 +8419,7 @@
     "Former British Colonies",
     "Locations in Asia",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
     "Starts with KUW"
   ],
@@ -8298,10 +8428,12 @@
     "Countries in Asia",
     "Countries in the USSR",
     "Ends with TAN",
+    "Former Soviet Republics",
     "Landlocked Countries",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with KYR"
   ],
   "Laos": [
@@ -8313,6 +8445,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with LAO"
   ],
   "Latvia": [
@@ -8320,10 +8453,13 @@
     "Countries in Europe",
     "Countries in the USSR",
     "Ends with VIA",
+    "Former Soviet Republics",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with LAT"
   ],
   "Lebanon": [
@@ -8334,6 +8470,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with LEB"
   ],
   "Lesotho": [
@@ -8356,6 +8493,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with LIB",
     "WWII Allied Powers"
   ],
@@ -8366,6 +8504,7 @@
     "Landlocked Countries",
     "Least Populous Countries (Bottom 10)",
     "Locations in Europe",
+    "Microstates",
     "Modern Countries",
     "Place Names",
     "Small Countries",
@@ -8376,13 +8515,17 @@
     "Countries in Europe",
     "Countries in the USSR",
     "Ends with NIA",
+    "Former Soviet Republics",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with LIT"
   ],
   "Luxembourg": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Europe",
     "Ends with URG",
@@ -8390,6 +8533,7 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with LUX",
     "WWII Allied Powers"
@@ -8406,6 +8550,7 @@
     "Modern Countries",
     "Movies",
     "Place Names",
+    "Republics",
     "Starts with MAD"
   ],
   "Malawi": [
@@ -8421,9 +8566,11 @@
     "Starts with MAL"
   ],
   "Malaysia": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Asia",
     "Ends with SIA",
+    "Federal Republics",
     "Former British Colonies",
     "Former Dutch Colonies",
     "Locations in Asia",
@@ -8454,6 +8601,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with MAL"
   ],
   "Malta": [
@@ -8464,6 +8612,7 @@
     "Island Nations",
     "Islands",
     "Locations in Europe",
+    "Microstates",
     "Modern Countries",
     "Place Names",
     "Starts with MAL"
@@ -8489,6 +8638,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with MAU"
   ],
   "Mauritius": [
@@ -8502,6 +8652,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with MAU"
   ],
   "Micronesia": [
@@ -8522,10 +8673,12 @@
     "Countries in Europe",
     "Countries in the USSR",
     "Ends with OVA",
+    "Former Soviet Republics",
     "Landlocked Countries",
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with MOL"
   ],
   "Monaco": [
@@ -8536,6 +8689,7 @@
     "Ends with ACO",
     "Least Populous Countries (Bottom 10)",
     "Locations in Europe",
+    "Microstates",
     "Modern Countries",
     "Place Names",
     "Small Countries",
@@ -8550,6 +8704,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with MON"
   ],
   "Montenegro": [
@@ -8560,6 +8715,7 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with MON"
   ],
@@ -8583,6 +8739,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with MOZ"
   ],
   "Myanmar": [
@@ -8593,6 +8750,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with MYA"
   ],
   "Namibia": [
@@ -8605,6 +8763,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with NAM"
   ],
   "Nauru": [
@@ -8626,6 +8785,7 @@
     "Countries",
     "Countries in Asia",
     "Ends with PAL",
+    "Federal Republics",
     "Landlocked Countries",
     "Locations in Asia",
     "Modern Countries",
@@ -8633,12 +8793,14 @@
     "Starts with NEP"
   ],
   "Netherlands": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Europe",
     "Ends with NDS",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with NET",
     "WWII Allied Powers"
@@ -8664,23 +8826,28 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with NIG"
   ],
   "Nigeria": [
     "Countries",
     "Countries in Africa",
     "Ends with RIA",
+    "Federal Republics",
     "Former British Colonies",
     "Former Spanish Colonies",
     "Locations in Africa",
     "Modern Countries",
     "Most Populous Countries (Top 10)",
+    "OPEC Members",
     "Place Names",
+    "Republics",
     "Starts with NIG"
   ],
   "North Korea": [
     "Countries",
     "Countries in Asia",
+    "Countries with Nuclear Weapons",
     "Ends with REA",
     "Locations in Asia",
     "Modern Countries",
@@ -8695,16 +8862,19 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with NOR"
   ],
   "Norway": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Europe",
     "Ends with WAY",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with NOR",
     "WWII Allied Powers"
@@ -8722,12 +8892,15 @@
   "Pakistan": [
     "Countries",
     "Countries in Asia",
+    "Countries with Nuclear Weapons",
     "Ends with TAN",
+    "Federal Republics",
     "Former British Colonies",
     "Locations in Asia",
     "Modern Countries",
     "Most Populous Countries (Top 10)",
     "Place Names",
+    "Republics",
     "Starts with PAK"
   ],
   "Palau": [
@@ -8753,6 +8926,7 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with PAN",
     "WWII Allied Powers"
   ],
@@ -8778,6 +8952,7 @@
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with PAR",
     "WWII Allied Powers"
   ],
@@ -8790,6 +8965,7 @@
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with PER",
     "WWII Allied Powers"
   ],
@@ -8804,6 +8980,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with PHI",
     "WWII Allied Powers"
   ],
@@ -8814,7 +8991,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with POL",
     "WWII Allied Powers"
   ],
@@ -8825,7 +9004,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with POR"
   ],
   "Qatar": [
@@ -8845,23 +9026,30 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with ROM",
     "WWII Axis Powers"
   ],
   "Russia": [
+    "BRICS Nations",
     "Countries",
     "Countries in Asia",
     "Countries in Europe",
     "Countries in the USSR",
+    "Countries with Nuclear Weapons",
     "Ends with SIA",
+    "Federal Republics",
+    "Former Soviet Republics",
     "Large Countries",
     "Locations in Asia",
     "Locations in Europe",
     "Modern Countries",
     "Most Populous Countries (Top 10)",
     "Place Names",
-    "Starts with RUS"
+    "Starts with RUS",
+    "UN Security Council Permanent Members"
   ],
   "Rwanda": [
     "Countries",
@@ -8874,6 +9062,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with RWA"
   ],
   "Saint Kitts and Nevis": [
@@ -8941,6 +9130,7 @@
     "Landlocked Countries",
     "Least Populous Countries (Bottom 10)",
     "Locations in Europe",
+    "Microstates",
     "Modern Countries",
     "Place Names",
     "Small Countries",
@@ -8964,6 +9154,7 @@
     "Large Countries",
     "Locations in Asia",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
     "Starts with SAU",
     "WWII Allied Powers"
@@ -8977,6 +9168,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with SEN"
   ],
   "Serbia": [
@@ -8987,6 +9179,7 @@
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with SER"
   ],
   "Seychelles": [
@@ -9012,6 +9205,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with SIE"
   ],
   "Singapore": [
@@ -9038,7 +9232,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with SLO",
     "WWII Axis Powers"
   ],
@@ -9050,7 +9246,9 @@
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
+    "Republics",
     "Starts with SLO"
   ],
   "Solomon Islands": [
@@ -9074,6 +9272,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with SOM"
   ],
   "South Korea": [
@@ -9095,6 +9294,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with SOU"
   ],
   "Sri Lanka": [
@@ -9108,6 +9308,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with SRI"
   ],
   "Suriname": [
@@ -9119,9 +9320,11 @@
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with SUR"
   ],
   "Sweden": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Europe",
     "Ends with DEN",
@@ -9135,6 +9338,7 @@
     "Countries",
     "Countries in Europe",
     "Ends with AND",
+    "Federal Republics",
     "Landlocked Countries",
     "Locations in Europe",
     "Modern Countries",
@@ -9149,6 +9353,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with SYR"
   ],
   "Taiwan": [
@@ -9168,10 +9373,12 @@
     "Countries in Asia",
     "Countries in the USSR",
     "Ends with TAN",
+    "Former Soviet Republics",
     "Landlocked Countries",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with TAJ"
   ],
   "Tanzania": [
@@ -9184,9 +9391,11 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with TAN"
   ],
   "Thailand": [
+    "Constitutional Monarchies",
     "Countries",
     "Countries in Asia",
     "Ends with AND",
@@ -9206,6 +9415,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with TOG"
   ],
   "Tonga": [
@@ -9243,6 +9453,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with TUN"
   ],
   "Turkmenistan": [
@@ -9250,10 +9461,12 @@
     "Countries in Asia",
     "Countries in the USSR",
     "Ends with TAN",
+    "Former Soviet Republics",
     "Landlocked Countries",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with TUR"
   ],
   "Tuvalu": [
@@ -9280,6 +9493,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with UGA"
   ],
   "Ukraine": [
@@ -9287,9 +9501,11 @@
     "Countries in Europe",
     "Countries in the USSR",
     "Ends with INE",
+    "Former Soviet Republics",
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with UKR"
   ],
   "United Arab Emirates": [
@@ -9299,21 +9515,27 @@
     "Former British Colonies",
     "Locations in Asia",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
     "Starts with UNI"
   ],
   "United States": [
     "Countries",
     "Countries in North America",
+    "Countries with Nuclear Weapons",
     "Ends with TES",
+    "Federal Republics",
     "Former British Colonies",
+    "G7 Countries",
     "Large Countries",
     "Locations in North America",
     "Modern Countries",
     "Most Populous Countries (Top 10)",
     "NATO Countries",
+    "NATO Members",
     "Place Names",
     "Starts with UNI",
+    "UN Security Council Permanent Members",
     "WWII Allied Powers"
   ],
   "Uruguay": [
@@ -9324,6 +9546,7 @@
     "Locations in South America",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with URU",
     "WWII Allied Powers"
   ],
@@ -9332,10 +9555,12 @@
     "Countries in Asia",
     "Countries in the USSR",
     "Ends with TAN",
+    "Former Soviet Republics",
     "Landlocked Countries",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with UZB"
   ],
   "Vanuatu": [
@@ -9359,6 +9584,7 @@
     "Landlocked Countries",
     "Least Populous Countries (Bottom 10)",
     "Locations in Europe",
+    "Microstates",
     "Modern Countries",
     "Place Names",
     "Religious Sites",
@@ -9369,10 +9595,13 @@
     "Countries",
     "Countries in South America",
     "Ends with ELA",
+    "Federal Republics",
     "Former Spanish Colonies",
     "Locations in South America",
     "Modern Countries",
+    "OPEC Members",
     "Place Names",
+    "Republics",
     "Starts with VEN",
     "WWII Allied Powers"
   ],
@@ -9384,6 +9613,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with VIE"
   ],
   "Yemen": [
@@ -9394,6 +9624,7 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with YEM"
   ],
   "Zambia": [
@@ -9406,6 +9637,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with ZAM"
   ],
   "Zimbabwe": [
@@ -9418,6 +9650,7 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
+    "Republics",
     "Starts with ZIM"
   ],
   "Warsaw Pact": [
@@ -15081,5 +15314,46 @@
     "Scooby-Doo Characters",
     "Starts with SCR",
     "Warner Bros. Characters"
+  ],
+  "Libya": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with BYA",
+    "Locations in Africa",
+    "Modern Countries",
+    "OPEC Members",
+    "Place Names",
+    "Republics",
+    "Starts with LIB"
+  ],
+  "Eritrea": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with REA",
+    "Locations in Africa",
+    "Modern Countries",
+    "Place Names",
+    "Republics",
+    "Starts with ERI"
+  ],
+  "Macedonia": [
+    "Countries",
+    "Countries in Europe",
+    "Ends with NIA",
+    "Locations in Europe",
+    "Modern Countries",
+    "Place Names",
+    "Republics",
+    "Starts with MAC"
+  ],
+  "Sudan": [
+    "Countries",
+    "Countries in Africa",
+    "Ends with DAN",
+    "Locations in Africa",
+    "Modern Countries",
+    "Place Names",
+    "Republics",
+    "Starts with SUD"
   ]
 }

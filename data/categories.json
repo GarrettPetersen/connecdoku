@@ -430,6 +430,13 @@
     "Nick Fury",
     "Thor"
   ],
+  "BRICS Nations": [
+    "Brazil",
+    "China",
+    "India",
+    "Russia",
+    "South Africa"
+  ],
   "Baked Goods": [
     "Bread",
     "Cake",
@@ -1461,6 +1468,22 @@
     "Ursa Major",
     "Virgo"
   ],
+  "Constitutional Monarchies": [
+    "Australia",
+    "Belgium",
+    "Canada",
+    "Denmark",
+    "Japan",
+    "Luxembourg",
+    "Malaysia",
+    "Netherlands",
+    "New Zealand",
+    "Norway",
+    "Spain",
+    "Sweden",
+    "Thailand",
+    "United Kingdom"
+  ],
   "Cooling Devices": [
     "AC",
     "CON",
@@ -1545,6 +1568,7 @@
     "Egypt",
     "El Salvador",
     "Equatorial Guinea",
+    "Eritrea",
     "Estonia",
     "Eswatini",
     "Ethiopia",
@@ -1599,9 +1623,11 @@
     "Lebanon",
     "Lesotho",
     "Liberia",
+    "Libya",
     "Liechtenstein",
     "Lithuania",
     "Luxembourg",
+    "Macedonia",
     "Madagascar",
     "Malawi",
     "Malaysia",
@@ -1686,6 +1712,7 @@
     "Spanish Guinea",
     "Spanish West Africa",
     "Sri Lanka",
+    "Sudan",
     "Suriname",
     "Sweden",
     "Switzerland",
@@ -1749,6 +1776,7 @@
     "Djibouti",
     "Egypt",
     "Equatorial Guinea",
+    "Eritrea",
     "Eswatini",
     "Ethiopia",
     "French East Africa",
@@ -1769,6 +1797,7 @@
     "Kenya",
     "Lesotho",
     "Liberia",
+    "Libya",
     "Madagascar",
     "Malawi",
     "Mali",
@@ -1797,6 +1826,7 @@
     "Spanish East Africa",
     "Spanish Guinea",
     "Spanish West Africa",
+    "Sudan",
     "Tanganyika",
     "Tanzania",
     "Togo",
@@ -1898,6 +1928,7 @@
     "Liechtenstein",
     "Lithuania",
     "Luxembourg",
+    "Macedonia",
     "Malta",
     "Moldova",
     "Monaco",
@@ -2052,6 +2083,17 @@
     "Upper Volta",
     "Western Samoa",
     "Zanzibar"
+  ],
+  "Countries with Nuclear Weapons": [
+    "China",
+    "France",
+    "India",
+    "Israel",
+    "North Korea",
+    "Pakistan",
+    "Russia",
+    "United Kingdom",
+    "United States"
   ],
   "Cowboy Terms": [
     "Bronco",
@@ -3054,6 +3096,9 @@
   "Ends with BWE": [
     "Zimbabwe"
   ],
+  "Ends with BYA": [
+    "Libya"
+  ],
   "Ends with BYL": [
     "Chernobyl"
   ],
@@ -3149,7 +3194,8 @@
   "Ends with DAN": [
     "Anglo-Egyptian Sudan",
     "Jordan",
-    "South Sudan"
+    "South Sudan",
+    "Sudan"
   ],
   "Ends with DAR": [
     "Cedar"
@@ -4586,6 +4632,7 @@
     "Insomnia",
     "Lithuania",
     "Lusitania",
+    "Macedonia",
     "Mauretania",
     "Mauritania",
     "North Macedonia",
@@ -5160,6 +5207,7 @@
     "Inglourious Basterds"
   ],
   "Ends with REA": [
+    "Eritrea",
     "Moorea",
     "North Korea",
     "South Korea"
@@ -6177,6 +6225,27 @@
     "Hermes",
     "Prada"
   ],
+  "Federal Republics": [
+    "Argentina",
+    "Austria",
+    "Belgium",
+    "Brazil",
+    "Canada",
+    "Ethiopia",
+    "Germany",
+    "India",
+    "Iraq",
+    "Malaysia",
+    "Mexico",
+    "Nepal",
+    "Nigeria",
+    "Pakistan",
+    "Russia",
+    "South Africa",
+    "Switzerland",
+    "United States",
+    "Venezuela"
+  ],
   "Female Animals": [
     "Cow",
     "Doe",
@@ -6594,6 +6663,23 @@
   "Former Russian Colonies": [
     "Persia"
   ],
+  "Former Soviet Republics": [
+    "Armenia",
+    "Azerbaijan",
+    "Belarus",
+    "Estonia",
+    "Georgia",
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "Latvia",
+    "Lithuania",
+    "Moldova",
+    "Russia",
+    "Tajikistan",
+    "Turkmenistan",
+    "Ukraine",
+    "Uzbekistan"
+  ],
   "Former Spanish Colonies": [
     "Algeria",
     "Angola",
@@ -6684,6 +6770,15 @@
     "Locker",
     "Sofa",
     "Table"
+  ],
+  "G7 Countries": [
+    "Canada",
+    "France",
+    "Germany",
+    "Italy",
+    "Japan",
+    "United Kingdom",
+    "United States"
   ],
   "Gas Giants": [
     "Jupiter",
@@ -7272,6 +7367,7 @@
     "Djibouti",
     "Egypt",
     "Equatorial Guinea",
+    "Eritrea",
     "Eswatini",
     "Ethiopia",
     "French East Africa",
@@ -7293,6 +7389,7 @@
     "Kilimanjaro",
     "Lesotho",
     "Liberia",
+    "Libya",
     "Madagascar",
     "Malawi",
     "Mali",
@@ -7321,6 +7418,7 @@
     "Spanish East Africa",
     "Spanish Guinea",
     "Spanish West Africa",
+    "Sudan",
     "Tanganyika",
     "Tanzania",
     "Togo",
@@ -7494,6 +7592,7 @@
     "Lithuania",
     "London",
     "Luxembourg",
+    "Macedonia",
     "Madeira",
     "Majorca",
     "Malta",
@@ -7910,6 +8009,14 @@
     "Salsa",
     "Taco"
   ],
+  "Microstates": [
+    "Andorra",
+    "Liechtenstein",
+    "Malta",
+    "Monaco",
+    "San Marino",
+    "Vatican City"
+  ],
   "Military Terms": [
     "Battlefield",
     "NATO",
@@ -7970,6 +8077,7 @@
     "Egypt",
     "El Salvador",
     "Equatorial Guinea",
+    "Eritrea",
     "Estonia",
     "Eswatini",
     "Ethiopia",
@@ -8013,9 +8121,11 @@
     "Lebanon",
     "Lesotho",
     "Liberia",
+    "Libya",
     "Liechtenstein",
     "Lithuania",
     "Luxembourg",
+    "Macedonia",
     "Madagascar",
     "Malawi",
     "Malaysia",
@@ -8080,6 +8190,7 @@
     "South Sudan",
     "Spain",
     "Sri Lanka",
+    "Sudan",
     "Suriname",
     "Sweden",
     "Switzerland",
@@ -11040,6 +11151,39 @@
     "United Kingdom",
     "United States"
   ],
+  "NATO Members": [
+    "Albania",
+    "Belgium",
+    "Bulgaria",
+    "Canada",
+    "Croatia",
+    "Czech Republic",
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "France",
+    "Germany",
+    "Greece",
+    "Hungary",
+    "Iceland",
+    "Italy",
+    "Latvia",
+    "Lithuania",
+    "Luxembourg",
+    "Montenegro",
+    "Netherlands",
+    "North Macedonia",
+    "Norway",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Slovakia",
+    "Slovenia",
+    "Spain",
+    "Turkey",
+    "United Kingdom",
+    "United States"
+  ],
   "NATO Phonetic Alphabet": [
     "Alpha",
     "Bravo",
@@ -11172,6 +11316,21 @@
     "Glove",
     "Juice",
     "Murder"
+  ],
+  "OPEC Members": [
+    "Algeria",
+    "Angola",
+    "Congo",
+    "Equatorial Guinea",
+    "Gabon",
+    "Iran",
+    "Iraq",
+    "Kuwait",
+    "Libya",
+    "Nigeria",
+    "Saudi Arabia",
+    "United Arab Emirates",
+    "Venezuela"
   ],
   "Organizations": [
     "NASA",
@@ -11601,6 +11760,7 @@
     "Elbrus",
     "Ellesmere",
     "Equatorial Guinea",
+    "Eritrea",
     "Estonia",
     "Eswatini",
     "Ethiopia",
@@ -11711,6 +11871,7 @@
     "Lebanon",
     "Lesotho",
     "Liberia",
+    "Libya",
     "Liechtenstein",
     "Lincoln",
     "Lithuania",
@@ -11721,6 +11882,7 @@
     "Los Angeles",
     "Luxembourg",
     "Luzon",
+    "Macedonia",
     "Macon",
     "Madagascar",
     "Madeira",
@@ -11878,6 +12040,7 @@
     "Sri Lanka",
     "St. Helens",
     "Staten Island",
+    "Sudan",
     "Sulawesi",
     "Sumatra",
     "Suriname",
@@ -12192,6 +12355,122 @@
     "Cobra",
     "Dragon",
     "Python"
+  ],
+  "Republics": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Angola",
+    "Argentina",
+    "Armenia",
+    "Austria",
+    "Azerbaijan",
+    "Bangladesh",
+    "Belarus",
+    "Benin",
+    "Bolivia",
+    "Botswana",
+    "Brazil",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cameroon",
+    "Central African Republic",
+    "Chad",
+    "Chile",
+    "China",
+    "Colombia",
+    "Congo",
+    "Costa Rica",
+    "Croatia",
+    "Czech Republic",
+    "Democratic Republic of the Congo",
+    "Dominican Republic",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "Equatorial Guinea",
+    "Eritrea",
+    "Estonia",
+    "Ethiopia",
+    "Finland",
+    "France",
+    "Gabon",
+    "Georgia",
+    "Germany",
+    "Ghana",
+    "Guatemala",
+    "Guinea",
+    "Guinea-Bissau",
+    "Guyana",
+    "Haiti",
+    "Honduras",
+    "Hungary",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Ivory Coast",
+    "Kazakhstan",
+    "Kenya",
+    "Kyrgyzstan",
+    "Laos",
+    "Latvia",
+    "Lebanon",
+    "Liberia",
+    "Libya",
+    "Lithuania",
+    "Macedonia",
+    "Madagascar",
+    "Mali",
+    "Mauritania",
+    "Mauritius",
+    "Moldova",
+    "Mongolia",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
+    "Niger",
+    "Nigeria",
+    "Pakistan",
+    "Panama",
+    "Paraguay",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Rwanda",
+    "Senegal",
+    "Serbia",
+    "Sierra Leone",
+    "Slovakia",
+    "Slovenia",
+    "Somalia",
+    "South Africa",
+    "South Sudan",
+    "Sri Lanka",
+    "Sudan",
+    "Suriname",
+    "Syria",
+    "Tajikistan",
+    "Tanzania",
+    "Togo",
+    "Tunisia",
+    "Turkey",
+    "Turkmenistan",
+    "Uganda",
+    "Ukraine",
+    "Uruguay",
+    "Uzbekistan",
+    "Venezuela",
+    "Vietnam",
+    "Yemen",
+    "Zambia",
+    "Zimbabwe"
   ],
   "Rhythm": [
     "Beat"
@@ -13790,7 +14069,8 @@
     "Equatorial Guinea"
   ],
   "Starts with ERI": [
-    "Eris"
+    "Eris",
+    "Eritrea"
   ],
   "Starts with ESC": [
     "Escape from New York"
@@ -14630,7 +14910,8 @@
   ],
   "Starts with LIB": [
     "Liberia",
-    "Libra"
+    "Libra",
+    "Libya"
   ],
   "Starts with LIE": [
     "Liechtenstein"
@@ -14707,6 +14988,7 @@
   "Starts with MAC": [
     "Macbeth",
     "Mace",
+    "Macedonia",
     "Macon"
   ],
   "Starts with MAD": [
@@ -15751,6 +16033,9 @@
   ],
   "Starts with SUB": [
     "Subaru"
+  ],
+  "Starts with SUD": [
+    "Sudan"
   ],
   "Starts with SUI": [
     "Suitcase"
@@ -16881,6 +17166,13 @@
     "Wolverine",
     "Worm",
     "Zebra"
+  ],
+  "UN Security Council Permanent Members": [
+    "China",
+    "France",
+    "Russia",
+    "United Kingdom",
+    "United States"
   ],
   "US Presidents": [
     "Adams",
