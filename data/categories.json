@@ -234,6 +234,7 @@
     "Don Quixote",
     "Dune",
     "Journey to the West",
+    "Jurassic Park",
     "Moby Dick",
     "Percy Jackson & the Olympians",
     "The Alchemist",
@@ -2238,7 +2239,9 @@
     "Vantage Point"
   ],
   "Crime Stories": [
-    "Crime and Punishment"
+    "Crime and Punishment",
+    "Pulp Fiction",
+    "The Godfather"
   ],
   "Criminals": [
     "Rogue"
@@ -6163,6 +6166,10 @@
     "The Ramayana",
     "The Tale of the Heike"
   ],
+  "Epic Stories": [
+    "Avatar",
+    "Star Wars"
+  ],
   "Eponymous Salads": [
     "Caesar",
     "Caprese",
@@ -6297,9 +6304,13 @@
   ],
   "Family Sagas": [
     "Dream of the Red Chamber",
+    "Gone with the Wind",
     "Little Women",
     "One Hundred Years of Solitude",
-    "The Brothers Karamazov"
+    "The Brothers Karamazov",
+    "The Godfather",
+    "The Godfather Part II",
+    "The Godfather Part III"
   ],
   "Fantasy": [
     "Elf",
@@ -6385,25 +6396,67 @@
     "Wish"
   ],
   "Fantasy Stories": [
+    "A Wrinkle in Time",
+    "Aladdin",
+    "Alice in Wonderland",
     "Alice's Adventures in Wonderland",
+    "Arrietty",
+    "Beauty and the Beast",
+    "Castle in the Sky",
+    "Cinderella",
+    "Coco",
+    "Encanto",
+    "Fantasia",
+    "Fantasia 2000",
+    "Frozen",
+    "Ghostbusters",
+    "Ghostbusters II",
+    "Groundhog Day",
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Deathly Hallows",
+    "Harry Potter and the Deathly Hallows: Part 1",
+    "Harry Potter and the Deathly Hallows: Part 2",
     "Harry Potter and the Goblet of Fire",
     "Harry Potter and the Half-Blood Prince",
     "Harry Potter and the Order of the Phoenix",
     "Harry Potter and the Prisoner of Azkaban",
+    "Harry Potter and the Sorcerer's Stone",
+    "Hercules",
+    "Howl's Moving Castle",
     "Journey to the West",
+    "Kiki's Delivery Service",
+    "My Neighbor Totoro",
     "Percy Jackson & the Olympians",
     "Peter Pan",
+    "Pinocchio",
+    "Pom Poko",
+    "Ponyo",
+    "Porco Rosso",
+    "Princess Mononoke",
+    "Sleeping Beauty",
+    "Snow White and the Seven Dwarfs",
+    "Soul",
+    "Spirited Away",
+    "Tales from Earthsea",
+    "Tangled",
     "The Anubis Gates",
+    "The Black Cauldron",
+    "The Cat Returns",
     "The Chronicles of Narnia",
     "The Hobbit",
+    "The Little Mermaid",
     "The Little Prince",
     "The Lord of the Rings",
     "The Map of Chaos",
     "The Map of Time",
     "The Map of the Sky",
-    "Twilight"
+    "The Princess and the Frog",
+    "The Sword in the Stone",
+    "The Tale of the Princess Kaguya",
+    "Time Bandits",
+    "Twilight",
+    "When Marnie Was There",
+    "Wish"
   ],
   "Fashion Brands": [
     "Chanel",
@@ -7117,7 +7170,9 @@
   "Historical Fiction": [
     "Les Misérables",
     "Romance of the Three Kingdoms",
+    "Schindler's List",
     "The Tale of the Heike",
+    "Troy",
     "War and Peace"
   ],
   "Historical Figures": [
@@ -7199,12 +7254,25 @@
     "The Village"
   ],
   "Horror Stories": [
+    "Alien",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens",
+    "Death Proof",
+    "Donnie Darko",
     "Dracula",
     "Frankenstein",
+    "Glass",
     "IT",
     "Salem's Lot",
+    "Sweeney Todd: The Demon Barber of Fleet Street",
+    "The Butterfly Effect",
+    "The Devil's Advocate",
     "The Shining",
-    "The Stand"
+    "The Sixth Sense",
+    "The Stand",
+    "The Terminator",
+    "The Village"
   ],
   "Hot Beverages": [
     "CHA",
@@ -8161,7 +8229,8 @@
     "Yugioh"
   ],
   "Maritime Stories": [
-    "Moby Dick"
+    "Moby Dick",
+    "Titanic"
   ],
   "Martial Arts": [
     "Dragon Ball"
@@ -12989,12 +13058,16 @@
     "Working Girl"
   ],
   "Romance Stories": [
+    "Casablanca",
+    "Gone with the Wind",
     "Jane Eyre",
     "Outlander",
     "Pride and Prejudice",
+    "Sense and Sensibility",
     "The Fault in Our Stars",
     "The Tale of Genji",
     "The Time Traveler's Wife",
+    "Titanic",
     "Twilight",
     "Wuthering Heights"
   ],
@@ -13154,9 +13227,42 @@
     "To Say Nothing of the Dog"
   ],
   "Science Fiction": [
+    "12 Monkeys",
+    "A Wrinkle in Time",
+    "Alien",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens",
+    "Armageddon",
+    "Arrival",
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water",
+    "Avengers: Endgame",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
     "Brave New World",
+    "Deja Vu",
     "Dracula",
-    "Frankenstein"
+    "Edge of Tomorrow",
+    "Flight of the Navigator",
+    "Frankenstein",
+    "Galaxy Quest",
+    "Interstellar",
+    "Lilo & Stitch",
+    "Looper",
+    "Predestination",
+    "Primer",
+    "Source Code",
+    "Tenet",
+    "Terminator 2: Judgment Day",
+    "The Fifth Element",
+    "The Philadelphia Experiment",
+    "The Terminator",
+    "Time Bandits",
+    "WALL-E",
+    "X-Men: Days of Future Past"
   ],
   "Scientists": [
     "Aristotle",

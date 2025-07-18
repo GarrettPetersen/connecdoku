@@ -596,9 +596,6 @@
   "Legal Stories": [
     "To Kill a Mockingbird"
   ],
-  "Maritime Stories": [
-    "Moby Dick"
-  ],
   "Mystery Stories": [
     "The Secret Garden"
   ],
@@ -1688,9 +1685,6 @@
   "Things Latin American": [
     "One Hundred Years of Solitude"
   ],
-  "Crime Stories": [
-    "Crime and Punishment"
-  ],
   "Psychological Fiction": [
     "Crime and Punishment"
   ],
@@ -1699,6 +1693,10 @@
   ],
   "Revenge Stories": [
     "The Count of Monte Cristo"
+  ],
+  "Maritime Stories": [
+    "Titanic",
+    "Moby Dick"
   ],
   "Golf Terms": [
     "Green",
@@ -1763,6 +1761,10 @@
   "Movies directed by Hiromasa Yonebayashi": [
     "Arrietty",
     "When Marnie Was There"
+  ],
+  "Epic Stories": [
+    "Star Wars",
+    "Avatar"
   ],
   "Movies featuring Frank Oz": [
     "The Empire Strikes Back",
@@ -2191,6 +2193,11 @@
     "The Big Sleep",
     "The Maltese Falcon"
   ],
+  "Crime Stories": [
+    "The Godfather",
+    "Pulp Fiction",
+    "Crime and Punishment"
+  ],
   "Movies directed by Francis Ford Coppola": [
     "The Godfather",
     "The Godfather Part II",
@@ -2270,11 +2277,6 @@
     "The Catcher in the Rye",
     "Anne of Green Gables",
     "Little Women"
-  ],
-  "Science Fiction": [
-    "Brave New World",
-    "Dracula",
-    "Frankenstein"
   ],
   "Movies featuring Michael Madsen": [
     "Donnie Brasco",
