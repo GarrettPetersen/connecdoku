@@ -49,30 +49,6 @@
   },
   {
     "rows": [
-      "Books",
-      "3D Animated Films",
-      "Adventure Films"
-    ],
-    "cols": [
-      "Blockbusters",
-      "Ends with ARS",
-      "Ends with LES"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Harry Potter and the Chamber of Secrets",
-      "The Fault in Our Stars",
-      "Anne of Green Gables",
-      "Toy Story",
-      "Cars",
-      "The Incredibles",
-      "Jurassic Park",
-      "Star Wars",
-      "Holes"
-    ]
-  },
-  {
-    "rows": [
       "Commonwealth Nations",
       "Countries that No Longer Exist",
       "Ends with BIA"
@@ -93,6 +69,102 @@
       "Gambia",
       "Saudi Arabia",
       "Serbia"
+    ]
+  },
+  {
+    "rows": [
+      "Commonwealth Nations",
+      "Starts with MAL",
+      "Countries that No Longer Exist"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Malawi",
+      "Malaysia",
+      "Malta",
+      "Abyssinia",
+      "British Malaya",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Commonwealth Nations",
+      "Starts with MAL",
+      "Countries that No Longer Exist"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Malawi",
+      "Malaysia",
+      "Malta",
+      "Abyssinia",
+      "British Malaya",
+      "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Commonwealth Nations",
+      "Starts with MAL",
+      "Ends with NIA"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Malawi",
+      "Malaysia",
+      "Malta",
+      "Abyssinia",
+      "Armenia",
+      "Albania"
+    ]
+  },
+  {
+    "rows": [
+      "Commonwealth Nations",
+      "Starts with MAL",
+      "Ends with NIA"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Malawi",
+      "Malaysia",
+      "Malta",
+      "Abyssinia",
+      "Armenia",
+      "Albania"
     ]
   },
   {
@@ -189,6 +261,54 @@
       "Othello",
       "The Maltese Falcon",
       "Doom"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with IFE",
+      "Adventure Films",
+      "Blockbusters"
+    ],
+    "cols": [
+      "3D Animated Films",
+      "Books",
+      "Christmas Films"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "A Bug's Life",
+      "The Time Traveler's Wife",
+      "It's a Wonderful Life",
+      "Frozen",
+      "Peter Pan",
+      "Rise of the Guardians",
+      "Toy Story",
+      "Harry Potter and the Chamber of Secrets",
+      "Die Hard"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with IFE",
+      "Musical Films",
+      "Blockbusters"
+    ],
+    "cols": [
+      "3D Animated Films",
+      "Books",
+      "Christmas Films"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "A Bug's Life",
+      "The Time Traveler's Wife",
+      "It's a Wonderful Life",
+      "Coco",
+      "Peter Pan",
+      "The Muppet Christmas Carol",
+      "Toy Story",
+      "Harry Potter and the Chamber of Secrets",
+      "Die Hard"
     ]
   },
   {
@@ -5017,6 +5137,30 @@
   },
   {
     "rows": [
+      "Ends with RED",
+      "Adventure Films",
+      "Blockbusters"
+    ],
+    "cols": [
+      "3D Animated Films",
+      "Action Films",
+      "Books"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Turning Red",
+      "Red",
+      "Kindred",
+      "Frozen",
+      "Avatar",
+      "Peter Pan",
+      "Toy Story",
+      "Die Hard",
+      "Harry Potter and the Chamber of Secrets"
+    ]
+  },
+  {
+    "rows": [
       "Female Names",
       "Birds",
       "Drinks"
@@ -5061,30 +5205,6 @@
       "Gambia",
       "Saudi Arabia",
       "Columbia"
-    ]
-  },
-  {
-    "rows": [
-      "Former German Colony",
-      "Commonwealth Nations",
-      "Ends with AND"
-    ],
-    "cols": [
-      "Countries in Africa",
-      "Countries in Asia",
-      "Countries in Europe"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Burundi",
-      "Palau",
-      "East Germany",
-      "South Africa",
-      "India",
-      "United Kingdom",
-      "Basutoland",
-      "Thailand",
-      "Finland"
     ]
   },
   {
@@ -5137,26 +5257,122 @@
   },
   {
     "rows": [
-      "Starts with CHE",
-      "Birds",
-      "Movies"
+      "Movies featuring Arnold Schwarzenegger",
+      "Adventure Films",
+      "Drama Films"
     ],
     "cols": [
-      "Black and White",
-      "Cities",
-      "Star Wars Universe"
+      "Christmas Films",
+      "Ends with TOR",
+      "Sequels"
     ],
     "size": "3x3",
     "solutions": [
-      "Chessboard",
-      "Chernobyl",
-      "Chewbacca",
-      "Magpie",
-      "Phoenix",
-      "Millennium Falcon",
-      "Othello",
-      "Pompeii",
-      "Alien"
+      "Jingle All the Way",
+      "The Terminator",
+      "Terminator 2: Judgment Day",
+      "Rise of the Guardians",
+      "Flight of the Navigator",
+      "Attack of the Clones",
+      "A Christmas Story",
+      "Gladiator",
+      "Kill Bill: Volume 2"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Sigourney Weaver",
+      "Best Picture Winners",
+      "Family Films"
+    ],
+    "cols": [
+      "Action Films",
+      "Ends with  II",
+      "Romance Films"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Aliens",
+      "Ghostbusters II",
+      "Working Girl",
+      "Braveheart",
+      "The Godfather Part II",
+      "Casablanca",
+      "Home Alone",
+      "Back to the Future Part II",
+      "Lady and the Tramp"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Sigourney Weaver",
+      "Best Picture Winners",
+      "Time Travel Stories"
+    ],
+    "cols": [
+      "Action Films",
+      "Ends with  II",
+      "Romance Films"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Aliens",
+      "Ghostbusters II",
+      "Working Girl",
+      "Braveheart",
+      "The Godfather Part II",
+      "Casablanca",
+      "Avengers: Endgame",
+      "Back to the Future Part II",
+      "About Time"
+    ]
+  },
+  {
+    "rows": [
+      "Period Films",
+      "Adventure Films",
+      "Crime Films"
+    ],
+    "cols": [
+      "Action Films",
+      "Comedy Films",
+      "Movies directed by Christopher Nolan"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Braveheart",
+      "Green Book",
+      "Oppenheimer",
+      "Avatar",
+      "Back to the Future",
+      "Interstellar",
+      "Death Wish",
+      "Bad Santa",
+      "Insomnia"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with BRA",
+      "Adventure Films",
+      "Blockbusters"
+    ],
+    "cols": [
+      "3D Animated Films",
+      "Action Films",
+      "Books"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Brave",
+      "Braveheart",
+      "Brave New World",
+      "Frozen",
+      "Avatar",
+      "Peter Pan",
+      "Toy Story",
+      "Die Hard",
+      "Harry Potter and the Chamber of Secrets"
     ]
   },
   {
@@ -5229,30 +5445,6 @@
       "Abyssinia",
       "Armenia",
       "Albania"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with NEW",
-      "Birds",
-      "Movies"
-    ],
-    "cols": [
-      "Black and White",
-      "Cities",
-      "Countries"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Newspaper",
-      "New York",
-      "New Hebrides",
-      "Magpie",
-      "Phoenix",
-      "Turkey",
-      "Othello",
-      "Pompeii",
-      "Madagascar"
     ]
   },
   {
