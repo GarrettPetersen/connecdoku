@@ -135,6 +135,7 @@
     "Disaster Movies",
     "Disasters",
     "Ends with TOA",
+    "Islands",
     "Locations in Asia",
     "Mountains",
     "Movies",
@@ -3717,6 +3718,7 @@
     "Countries in Oceania",
     "Ends with AND",
     "Former British Colony",
+    "Islands",
     "Locations in Oceania",
     "Modern Countries",
     "Place Names",
@@ -4197,6 +4199,7 @@
   ],
   "Borneo": [
     "Ends with NEO",
+    "Islands",
     "Place Names",
     "Rainforests",
     "Starts with BOR"
@@ -4935,6 +4938,7 @@
     "Astronomical Objects",
     "Ends with OPA",
     "Greek Mythology",
+    "Islands",
     "Place Names",
     "Satellites",
     "Starts with EUR",
@@ -6565,6 +6569,7 @@
     "Drinks",
     "Ends with AVA",
     "Hot Beverages",
+    "Islands",
     "Place Names",
     "Programming Languages",
     "Starts with JAV"
@@ -7115,6 +7120,7 @@
   ],
   "Greenland": [
     "Ends with AND",
+    "Islands",
     "Place Names",
     "Starts with GRE"
   ],
@@ -7256,6 +7262,7 @@
     "Former British Colony",
     "Former French Colony",
     "Island Nations",
+    "Islands",
     "Locations in North America",
     "Modern Countries",
     "Place Names",
@@ -7307,6 +7314,7 @@
     "Starts with AZE"
   ],
   "Bahamas": [
+    "Archipelagos",
     "Countries",
     "Countries in North America",
     "Ends with MAS",
@@ -7345,6 +7353,7 @@
     "Ends with DOS",
     "Former British Colony",
     "Island Nations",
+    "Islands",
     "Locations in North America",
     "Modern Countries",
     "Place Names",
@@ -7485,6 +7494,7 @@
     "Countries in Africa",
     "Ends with RDE",
     "Island Nations",
+    "Islands",
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
@@ -7568,6 +7578,7 @@
     "Former French Colony",
     "Former Spanish Colony",
     "Island Nations",
+    "Islands",
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
@@ -7602,6 +7613,7 @@
     "Ends with UBA",
     "Former Spanish Colony",
     "Island Nations",
+    "Islands",
     "Locations in North America",
     "Modern Countries",
     "Place Names",
@@ -7614,6 +7626,7 @@
     "Ends with RUS",
     "Former British Colony",
     "Island Nations",
+    "Islands",
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
@@ -7672,6 +7685,7 @@
     "Former British Colony",
     "Former French Colony",
     "Island Nations",
+    "Islands",
     "Least Populous Countries (Bottom 10)",
     "Locations in North America",
     "Modern Countries",
@@ -7772,6 +7786,7 @@
     "WWII Allied Powers"
   ],
   "Fiji": [
+    "Archipelagos",
     "Countries",
     "Countries in Oceania",
     "Ends with IJI",
@@ -7833,6 +7848,7 @@
     "Former British Colony",
     "Former French Colony",
     "Island Nations",
+    "Islands",
     "Locations in North America",
     "Modern Countries",
     "Place Names",
@@ -7888,6 +7904,7 @@
     "Countries in North America",
     "Ends with ITI",
     "Former French Colony",
+    "Islands",
     "Locations in North America",
     "Modern Countries",
     "Place Names",
@@ -7922,6 +7939,7 @@
     "Countries in Europe",
     "Ends with AND",
     "Island Nations",
+    "Islands",
     "Locations in Europe",
     "Modern Countries",
     "NATO Countries",
@@ -7929,6 +7947,7 @@
     "Starts with ICE"
   ],
   "Indonesia": [
+    "Archipelagos",
     "Countries",
     "Countries in Asia",
     "Ends with SIA",
@@ -7968,6 +7987,7 @@
     "Countries in Europe",
     "Ends with AND",
     "Island Nations",
+    "Islands",
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
@@ -8000,6 +8020,7 @@
     "Ends with ICA",
     "Former British Colony",
     "Island Nations",
+    "Islands",
     "Locations in North America",
     "Modern Countries",
     "Place Names",
@@ -8029,6 +8050,7 @@
     "Starts with KEN"
   ],
   "Kiribati": [
+    "Archipelagos",
     "Countries",
     "Countries in Oceania",
     "Ends with ATI",
@@ -8158,6 +8180,7 @@
     "Former French Colony",
     "Former Spanish Colony",
     "Island Nations",
+    "Islands",
     "Locations in Africa",
     "Modern Countries",
     "Movies",
@@ -8188,6 +8211,7 @@
     "Starts with MAL"
   ],
   "Maldives": [
+    "Archipelagos",
     "Countries",
     "Countries in Asia",
     "Ends with VES",
@@ -8217,12 +8241,14 @@
     "Ends with LTA",
     "Former British Colony",
     "Island Nations",
+    "Islands",
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
     "Starts with MAL"
   ],
   "Marshall Islands": [
+    "Archipelagos",
     "Countries",
     "Countries in Oceania",
     "Ends with NDS",
@@ -8251,12 +8277,14 @@
     "Former British Colony",
     "Former Spanish Colony",
     "Island Nations",
+    "Islands",
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
     "Starts with MAU"
   ],
   "Micronesia": [
+    "Archipelagos",
     "Countries",
     "Countries in Oceania",
     "Ends with SIA",
@@ -8365,6 +8393,7 @@
     "Former British Colony",
     "Former German Colony",
     "Island Nations",
+    "Islands",
     "Least Populous Countries (Bottom 10)",
     "Locations in Oceania",
     "Modern Countries",
@@ -8487,6 +8516,7 @@
     "Ends with LAU",
     "Former German Colony",
     "Island Nations",
+    "Islands",
     "Least Populous Countries (Bottom 10)",
     "Locations in Asia",
     "Locations in Oceania",
@@ -8512,6 +8542,7 @@
     "Former British Colony",
     "Former German Colony",
     "Island Nations",
+    "Islands",
     "Locations in Oceania",
     "Modern Countries",
     "Place Names",
@@ -8542,6 +8573,7 @@
     "WWII Allied Powers"
   ],
   "Philippines": [
+    "Archipelagos",
     "Countries",
     "Countries in Asia",
     "Ends with NES",
@@ -8630,6 +8662,7 @@
     "Former British Colony",
     "Former French Colony",
     "Island Nations",
+    "Islands",
     "Least Populous Countries (Bottom 10)",
     "Locations in North America",
     "Modern Countries",
@@ -8644,6 +8677,7 @@
     "Former British Colony",
     "Former French Colony",
     "Island Nations",
+    "Islands",
     "Locations in North America",
     "Modern Countries",
     "Place Names",
@@ -8657,6 +8691,7 @@
     "Former British Colony",
     "Former French Colony",
     "Island Nations",
+    "Islands",
     "Locations in North America",
     "Modern Countries",
     "Place Names",
@@ -8664,6 +8699,7 @@
     "Starts with SAI"
   ],
   "Samoa": [
+    "Archipelagos",
     "Countries",
     "Countries in Oceania",
     "Ends with MOA",
@@ -8739,6 +8775,7 @@
     "Former British Colony",
     "Former Spanish Colony",
     "Island Nations",
+    "Islands",
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
@@ -8765,6 +8802,7 @@
     "Former British Colony",
     "Former Dutch Colony",
     "Island Nations",
+    "Islands",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
@@ -8795,6 +8833,7 @@
     "Starts with SLO"
   ],
   "Solomon Islands": [
+    "Archipelagos",
     "Countries",
     "Countries in Oceania",
     "Ends with NDS",
@@ -8844,6 +8883,7 @@
     "Former British Colony",
     "Former Dutch Colony",
     "Island Nations",
+    "Islands",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
@@ -8896,6 +8936,7 @@
     "Ends with WAN",
     "Former Dutch Colony",
     "Island Nations",
+    "Islands",
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
@@ -8947,6 +8988,7 @@
     "Starts with TOG"
   ],
   "Tonga": [
+    "Archipelagos",
     "Countries",
     "Countries in Oceania",
     "Ends with NGA",
@@ -8965,6 +9007,7 @@
     "Former British Colony",
     "Former French Colony",
     "Island Nations",
+    "Islands",
     "Locations in North America",
     "Modern Countries",
     "Place Names",
@@ -8998,6 +9041,7 @@
     "Ends with ALU",
     "Former British Colony",
     "Island Nations",
+    "Islands",
     "Least Populous Countries (Bottom 10)",
     "Locations in Oceania",
     "Modern Countries",
@@ -9079,6 +9123,7 @@
     "Ends with ATU",
     "Former British Colony",
     "Island Nations",
+    "Islands",
     "Locations in Oceania",
     "Modern Countries",
     "Place Names",
@@ -9235,6 +9280,7 @@
     "Countries that No Longer Exist",
     "Ends with BAR",
     "Former British Colony",
+    "Islands",
     "Locations in Africa",
     "Place Names",
     "Starts with ZAN"
@@ -9352,6 +9398,7 @@
     "Starts with BRI"
   ],
   "New Hebrides": [
+    "Archipelagos",
     "Countries",
     "Countries in Oceania",
     "Countries that No Longer Exist",
@@ -9369,11 +9416,13 @@
     "Ends with MOA",
     "Former British Colony",
     "Former German Colony",
+    "Islands",
     "Locations in Oceania",
     "Place Names",
     "Starts with WES"
   ],
   "Portuguese Timor": [
+    "Archipelagos",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -9384,6 +9433,7 @@
     "Starts with POR"
   ],
   "Netherlands East Indies": [
+    "Archipelagos",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -9404,6 +9454,7 @@
     "Starts with FRE"
   ],
   "British Malaya": [
+    "Archipelagos",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -14017,5 +14068,586 @@
     "Period Films",
     "Starts with OPP",
     "Thriller Films"
+  ],
+  "Crete": [
+    "Ends with ETE",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with CRE"
+  ],
+  "Sicily": [
+    "Ends with ILY",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with SIC"
+  ],
+  "Sardinia": [
+    "Ends with NIA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with SAR"
+  ],
+  "Corsica": [
+    "Ends with ICA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with COR"
+  ],
+  "Majorca": [
+    "Ends with RCA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with MAJ"
+  ],
+  "Ibiza": [
+    "Ends with IZA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with IBI"
+  ],
+  "Rhodes": [
+    "Ends with DES",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with RHO"
+  ],
+  "Hainan": [
+    "Ends with NAN",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with HAI"
+  ],
+  "Hokkaido": [
+    "Ends with IDO",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with HOK"
+  ],
+  "Honshu": [
+    "Ends with SHU",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with HON"
+  ],
+  "Kyushu": [
+    "Ends with SHU",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with KYU"
+  ],
+  "Shikoku": [
+    "Ends with OKU",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with SHI"
+  ],
+  "Jeju": [
+    "Ends with EJU",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with JEJ"
+  ],
+  "Phuket": [
+    "Ends with KET",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with PHU"
+  ],
+  "Bali": [
+    "Ends with ALI",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with BAL"
+  ],
+  "Lombok": [
+    "Ends with BOK",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with LOM"
+  ],
+  "Sumatra": [
+    "Ends with TRA",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with SUM"
+  ],
+  "Sulawesi": [
+    "Ends with ESI",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with SUL"
+  ],
+  "Luzon": [
+    "Ends with ZON",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with LUZ"
+  ],
+  "Mindanao": [
+    "Ends with NAO",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with MIN"
+  ],
+  "Cebu": [
+    "Ends with EBU",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with CEB"
+  ],
+  "Andaman": [
+    "Archipelagos",
+    "Ends with MAN",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with AND"
+  ],
+  "Nicobar": [
+    "Archipelagos",
+    "Ends with BAR",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with NIC"
+  ],
+  "Lakshadweep": [
+    "Archipelagos",
+    "Ends with EEP",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with LAK"
+  ],
+  "Ryukyu": [
+    "Archipelagos",
+    "Ends with KYU",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with RYU"
+  ],
+  "Okinawa": [
+    "Ends with AWA",
+    "Islands",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with OKI"
+  ],
+  "Hawaii": [
+    "Ends with AII",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with HAW"
+  ],
+  "Oahu": [
+    "Ends with AHU",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with OAH"
+  ],
+  "Kauai": [
+    "Ends with UAI",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with KAU"
+  ],
+  "Big Island": [
+    "Ends with AND",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with BIG"
+  ],
+  "Manhattan": [
+    "Ends with TAN",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with MAN"
+  ],
+  "Long Island": [
+    "Ends with AND",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with LON"
+  ],
+  "Staten Island": [
+    "Ends with AND",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with STA"
+  ],
+  "Martha's Vineyard": [
+    "Ends with ARD",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with MAR"
+  ],
+  "Nantucket": [
+    "Ends with KET",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with NAN"
+  ],
+  "Key West": [
+    "Ends with EST",
+    "Islands",
+    "Locations in North America",
+    "Place Names",
+    "Starts with KEY"
+  ],
+  "Galapagos": [
+    "Archipelagos",
+    "Ends with GOS",
+    "Locations in South America",
+    "Place Names",
+    "Starts with GAL"
+  ],
+  "Easter Island": [
+    "Ends with AND",
+    "Islands",
+    "Locations in South America",
+    "Place Names",
+    "Starts with EAS"
+  ],
+  "Robinson Crusoe": [
+    "Ends with SOE",
+    "Islands",
+    "Locations in South America",
+    "Place Names",
+    "Starts with ROB"
+  ],
+  "Tahiti": [
+    "Ends with ITI",
+    "Islands",
+    "Locations in Oceania",
+    "Place Names",
+    "Starts with TAH"
+  ],
+  "Bora Bora": [
+    "Ends with ORA",
+    "Islands",
+    "Locations in Oceania",
+    "Place Names",
+    "Starts with BOR"
+  ],
+  "Moorea": [
+    "Ends with REA",
+    "Islands",
+    "Locations in Oceania",
+    "Place Names",
+    "Starts with MOO"
+  ],
+  "Guam": [
+    "Ends with UAM",
+    "Islands",
+    "Locations in Oceania",
+    "Place Names",
+    "Starts with GUA"
+  ],
+  "Saipan": [
+    "Ends with PAN",
+    "Islands",
+    "Locations in Oceania",
+    "Place Names",
+    "Starts with SAI"
+  ],
+  "Yap": [
+    "Ends with YAP",
+    "Islands",
+    "Locations in Oceania",
+    "Place Names",
+    "Starts with YAP"
+  ],
+  "Pohnpei": [
+    "Ends with PEI",
+    "Islands",
+    "Locations in Oceania",
+    "Place Names",
+    "Starts with POH"
+  ],
+  "Kosrae": [
+    "Ends with RAE",
+    "Islands",
+    "Locations in Oceania",
+    "Place Names",
+    "Starts with KOS"
+  ],
+  "Chuuk": [
+    "Ends with UUK",
+    "Islands",
+    "Locations in Oceania",
+    "Place Names",
+    "Starts with CHU"
+  ],
+  "Madeira": [
+    "Archipelagos",
+    "Ends with IRA",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with MAD"
+  ],
+  "Azores": [
+    "Archipelagos",
+    "Ends with RES",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with AZO"
+  ],
+  "Canary Islands": [
+    "Archipelagos",
+    "Ends with NDS",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with CAN"
+  ],
+  "Tenerife": [
+    "Ends with IFE",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with TEN"
+  ],
+  "Gran Canaria": [
+    "Ends with RIA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with GRA"
+  ],
+  "Lanzarote": [
+    "Ends with OTE",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with LAN"
+  ],
+  "Fuerteventura": [
+    "Ends with URA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with FUE"
+  ],
+  "La Palma": [
+    "Ends with LMA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with LA "
+  ],
+  "El Hierro": [
+    "Ends with RRO",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with EL "
+  ],
+  "La Gomera": [
+    "Ends with ERA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with LA "
+  ],
+  "Gozo": [
+    "Ends with OZO",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with GOZ"
+  ],
+  "Comino": [
+    "Ends with INO",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with COM"
+  ],
+  "Santorini": [
+    "Ends with INI",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with SAN"
+  ],
+  "Mykonos": [
+    "Ends with NOS",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with MYK"
+  ],
+  "Corfu": [
+    "Ends with RFU",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with COR"
+  ],
+  "Menorca": [
+    "Ends with RCA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with MEN"
+  ],
+  "Formentera": [
+    "Ends with ERA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with FOR"
+  ],
+  "Capri": [
+    "Ends with PRI",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with CAP"
+  ],
+  "Ischia": [
+    "Ends with HIA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with ISC"
+  ],
+  "Elba": [
+    "Ends with LBA",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with ELB"
+  ],
+  "Isle of Man": [
+    "Ends with MAN",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with ISL"
+  ],
+  "Jersey": [
+    "Ends with SEY",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with JER"
+  ],
+  "Guernsey": [
+    "Ends with SEY",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with GUE"
+  ],
+  "Alderney": [
+    "Ends with NEY",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with ALD"
+  ],
+  "Sark": [
+    "Ends with ARK",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with SAR"
+  ],
+  "Isle of Wight": [
+    "Ends with GHT",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with ISL"
+  ],
+  "Skye": [
+    "Ends with KYE",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with SKY"
+  ],
+  "Orkney": [
+    "Archipelagos",
+    "Ends with NEY",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with ORK"
+  ],
+  "Shetland": [
+    "Archipelagos",
+    "Ends with AND",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with SHE"
+  ],
+  "Hebrides": [
+    "Archipelagos",
+    "Ends with DES",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with HEB"
+  ],
+  "Faroe Islands": [
+    "Archipelagos",
+    "Ends with NDS",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with FAR"
+  ],
+  "Svalbard": [
+    "Archipelagos",
+    "Ends with ARD",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with SVA"
+  ],
+  "Gotland": [
+    "Ends with AND",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with GOT"
+  ],
+  "Bornholm": [
+    "Ends with OLM",
+    "Islands",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with BOR"
+  ],
+  "Aland": [
+    "Archipelagos",
+    "Ends with AND",
+    "Locations in Europe",
+    "Place Names",
+    "Starts with ALA"
   ]
 }

@@ -323,6 +323,37 @@
     "Lamp",
     "Toaster"
   ],
+  "Archipelagos": [
+    "Aland",
+    "Andaman",
+    "Azores",
+    "Bahamas",
+    "British Malaya",
+    "Canary Islands",
+    "Faroe Islands",
+    "Fiji",
+    "Galapagos",
+    "Hebrides",
+    "Indonesia",
+    "Kiribati",
+    "Lakshadweep",
+    "Madeira",
+    "Maldives",
+    "Marshall Islands",
+    "Micronesia",
+    "Netherlands East Indies",
+    "New Hebrides",
+    "Nicobar",
+    "Orkney",
+    "Philippines",
+    "Portuguese Timor",
+    "Ryukyu",
+    "Samoa",
+    "Shetland",
+    "Solomon Islands",
+    "Svalbard",
+    "Tonga"
+  ],
   "Arctic Animals": [
     "Polar Bear"
   ],
@@ -2565,8 +2596,14 @@
     "Chicago",
     "Trinidad and Tobago"
   ],
+  "Ends with AHU": [
+    "Oahu"
+  ],
   "Ends with AID": [
     "The Little Mermaid"
+  ],
+  "Ends with AII": [
+    "Hawaii"
   ],
   "Ends with AIN": [
     "Bahrain",
@@ -2603,6 +2640,7 @@
     "Whale"
   ],
   "Ends with ALI": [
+    "Bali",
     "Denali",
     "Mali"
   ],
@@ -2660,23 +2698,30 @@
     "Mont Blanc"
   ],
   "Ends with AND": [
+    "Aland",
     "Alice in Wonderland",
     "Alice's Adventures in Wonderland",
     "Basutoland",
     "Bechuanaland",
+    "Big Island",
     "British Somaliland",
+    "Easter Island",
     "Finland",
     "French Somaliland",
+    "Gotland",
     "Greenland",
     "Iceland",
     "Ireland",
     "Italian Somaliland",
     "La La Land",
+    "Long Island",
     "New Zealand",
     "Nomadland",
     "Nyasaland",
     "Poland",
     "Samarkand",
+    "Shetland",
+    "Staten Island",
     "Switzerland",
     "Thailand",
     "The Stand",
@@ -2736,9 +2781,11 @@
     "Chessboard",
     "Die Hard",
     "Live Free or Die Hard",
+    "Martha's Vineyard",
     "Mustard",
     "Picard",
     "Red Beard",
+    "Svalbard",
     "Wizard"
   ],
   "Ends with ARE": [
@@ -2754,6 +2801,7 @@
   "Ends with ARK": [
     "Denmark",
     "Jurassic Park",
+    "Sark",
     "Shark"
   ],
   "Ends with ARL": [
@@ -2872,6 +2920,7 @@
     "Bravo"
   ],
   "Ends with AWA": [
+    "Okinawa",
     "Ottawa"
   ],
   "Ends with AWI": [
@@ -2907,6 +2956,7 @@
     "Harry Potter and the Prisoner of Azkaban"
   ],
   "Ends with BAR": [
+    "Nicobar",
     "Zanzibar"
   ],
   "Ends with BAT": [
@@ -2960,6 +3010,9 @@
   ],
   "Ends with BLO": [
     "Diablo"
+  ],
+  "Ends with BOK": [
+    "Lombok"
   ],
   "Ends with BON": [
     "Carbon",
@@ -3119,8 +3172,10 @@
   ],
   "Ends with DES": [
     "Hades",
+    "Hebrides",
     "New Hebrides",
     "Pirates of the Caribbean: On Stranger Tides",
+    "Rhodes",
     "Spades"
   ],
   "Ends with DEX": [
@@ -3223,6 +3278,9 @@
   "Ends with EAU": [
     "Juneau"
   ],
+  "Ends with EBU": [
+    "Cebu"
+  ],
   "Ends with ECE": [
     "Greece",
     "One Piece"
@@ -3257,6 +3315,7 @@
   ],
   "Ends with EEP": [
     "Jeep",
+    "Lakshadweep",
     "Sheep",
     "The Big Sleep"
   ],
@@ -3284,6 +3343,9 @@
     "Einstein",
     "Frankenstein",
     "Liechtenstein"
+  ],
+  "Ends with EJU": [
+    "Jeju"
   ],
   "Ends with EKA": [
     "Topeka"
@@ -3341,7 +3403,9 @@
   ],
   "Ends with ERA": [
     "Camera",
+    "Formentera",
     "Hera",
+    "La Gomera",
     "The Phantom of the Opera",
     "Thera"
   ],
@@ -3390,6 +3454,9 @@
     "Bangladesh",
     "Gilgamesh"
   ],
+  "Ends with ESI": [
+    "Sulawesi"
+  ],
   "Ends with ESK": [
     "Desk"
   ],
@@ -3401,6 +3468,7 @@
   "Ends with EST": [
     "Everest",
     "Galaxy Quest",
+    "Key West",
     "One Flew Over the Cuckoo's Nest",
     "Pirates of the Caribbean: Dead Man's Chest"
   ],
@@ -3410,6 +3478,9 @@
     "Meta",
     "Theta",
     "Zeta"
+  ],
+  "Ends with ETE": [
+    "Crete"
   ],
   "Ends with ETH": [
     "Elizabeth",
@@ -3512,6 +3583,7 @@
   ],
   "Ends with GHT": [
     "Green Light",
+    "Isle of Wight",
     "Moonlight",
     "Spotlight",
     "The Hateful Eight",
@@ -3545,6 +3617,9 @@
     "Dragon",
     "Oregon",
     "Raya and the Last Dragon"
+  ],
+  "Ends with GOS": [
+    "Galapagos"
   ],
   "Ends with GRO": [
     "Montenegro"
@@ -3587,6 +3662,9 @@
   ],
   "Ends with HEY": [
     "Hershey"
+  ],
+  "Ends with HIA": [
+    "Ischia"
   ],
   "Ends with HID": [
     "Orchid"
@@ -3643,6 +3721,7 @@
     "British East Africa",
     "British West Africa",
     "Captain America",
+    "Corsica",
     "Costa Rica",
     "Dominica",
     "French East Africa",
@@ -3687,6 +3766,9 @@
   "Ends with IDA": [
     "Florida"
   ],
+  "Ends with IDO": [
+    "Hokkaido"
+  ],
   "Ends with IEN": [
     "Alien"
   ],
@@ -3706,6 +3788,7 @@
     "A Bug's Life",
     "It's a Wonderful Life",
     "Knife",
+    "Tenerife",
     "The Time Traveler's Wife"
   ],
   "Ends with IGH": [
@@ -3751,7 +3834,8 @@
     "Kilo"
   ],
   "Ends with ILY": [
-    "Lily"
+    "Lily",
+    "Sicily"
   ],
   "Ends with IMA": [
     "Fukushima",
@@ -3807,13 +3891,15 @@
   ],
   "Ends with INI": [
     "Eswatini",
-    "Gemini"
+    "Gemini",
+    "Santorini"
   ],
   "Ends with INK": [
     "BLACKPINK",
     "Blackpink"
   ],
   "Ends with INO": [
+    "Comino",
     "Rhino",
     "San Marino"
   ],
@@ -3855,7 +3941,8 @@
     "The Time Ships"
   ],
   "Ends with IRA": [
-    "Akira"
+    "Akira",
+    "Madeira"
   ],
   "Ends with IRD": [
     "Big Bird",
@@ -3917,7 +4004,8 @@
     "Revenge of the Sith"
   ],
   "Ends with ITI": [
-    "Haiti"
+    "Haiti",
+    "Tahiti"
   ],
   "Ends with ITO": [
     "Burrito"
@@ -3965,6 +4053,9 @@
   "Ends with IWI": [
     "Kiwi"
   ],
+  "Ends with IZA": [
+    "Ibiza"
+  ],
   "Ends with IZE": [
     "Belize"
   ],
@@ -4002,6 +4093,10 @@
     "The Hurt Locker",
     "The Rise of Skywalker"
   ],
+  "Ends with KET": [
+    "Nantucket",
+    "Phuket"
+  ],
   "Ends with KEY": [
     "Key",
     "Mickey",
@@ -4025,8 +4120,14 @@
     "Nikon",
     "iKON"
   ],
+  "Ends with KYE": [
+    "Skye"
+  ],
   "Ends with KYO": [
     "Tokyo"
+  ],
+  "Ends with KYU": [
+    "Ryukyu"
   ],
   "Ends with L-E": [
     "WALL-E"
@@ -4050,6 +4151,9 @@
   ],
   "Ends with LAU": [
     "Palau"
+  ],
+  "Ends with LBA": [
+    "Elba"
   ],
   "Ends with LDA": [
     "Matilda"
@@ -4146,6 +4250,9 @@
   "Ends with LLY": [
     "Love Actually"
   ],
+  "Ends with LMA": [
+    "La Palma"
+  ],
   "Ends with LMO": [
     "Elmo"
   ],
@@ -4186,11 +4293,13 @@
     "Animal"
   ],
   "Ends with MAN": [
+    "Andaman",
     "Batman",
     "Birdman",
     "Feynman",
     "Iceman",
     "Iron Man",
+    "Isle of Man",
     "Oman",
     "Rain Man",
     "Scent of a Woman",
@@ -4299,6 +4408,12 @@
     "South Vietnam",
     "Vietnam"
   ],
+  "Ends with NAN": [
+    "Hainan"
+  ],
+  "Ends with NAO": [
+    "Mindanao"
+  ],
   "Ends with NAP": [
     "Snap"
   ],
@@ -4350,6 +4465,8 @@
     "Jörmungandr"
   ],
   "Ends with NDS": [
+    "Canary Islands",
+    "Faroe Islands",
     "Marshall Islands",
     "Netherlands",
     "Solomon Islands"
@@ -4394,8 +4511,10 @@
     "Treasure Planet"
   ],
   "Ends with NEY": [
+    "Alderney",
     "Bill & Ted's Bogus Journey",
     "Disney",
+    "Orkney",
     "Sydney",
     "Whitney"
   ],
@@ -4433,6 +4552,7 @@
     "Mauritania",
     "North Macedonia",
     "Romania",
+    "Sardinia",
     "Slovenia",
     "Tanzania",
     "The Chronicles of Narnia",
@@ -4488,6 +4608,7 @@
     "Xenon"
   ],
   "Ends with NOS": [
+    "Mykonos",
     "Thanos"
   ],
   "Ends with NOW": [
@@ -4621,6 +4742,9 @@
   "Ends with OKO": [
     "Pom Poko"
   ],
+  "Ends with OKU": [
+    "Shikoku"
+  ],
   "Ends with OLA": [
     "Angola"
   ],
@@ -4634,6 +4758,9 @@
   "Ends with OLF": [
     "Golf",
     "Wolf"
+  ],
+  "Ends with OLM": [
+    "Bornholm"
   ],
   "Ends with OLN": [
     "Lincoln"
@@ -4733,6 +4860,7 @@
   "Ends with ORA": [
     "Aurora",
     "Avatar: Frontiers of Pandora",
+    "Bora Bora",
     "Tambora"
   ],
   "Ends with ORD": [
@@ -4798,6 +4926,7 @@
   ],
   "Ends with OTE": [
     "Coyote",
+    "Lanzarote",
     "Note"
   ],
   "Ends with OTH": [
@@ -4841,12 +4970,19 @@
     "Harry Potter and the Deathly Hallows",
     "The Wind in the Willows"
   ],
+  "Ends with OZO": [
+    "Gozo"
+  ],
   "Ends with PAL": [
     "Nepal"
   ],
   "Ends with PAN": [
     "Japan",
-    "Peter Pan"
+    "Peter Pan",
+    "Saipan"
+  ],
+  "Ends with PEI": [
+    "Pohnpei"
   ],
   "Ends with PEN": [
     "Pen"
@@ -4893,6 +5029,9 @@
   "Ends with PPI": [
     "Mississippi"
   ],
+  "Ends with PRI": [
+    "Capri"
+  ],
   "Ends with PSI": [
     "Psi"
   ],
@@ -4918,6 +5057,9 @@
   ],
   "Ends with RAC": [
     "Dirac"
+  ],
+  "Ends with RAE": [
+    "Kosrae"
   ],
   "Ends with RAI": [
     "Seven Samurai"
@@ -4951,6 +5093,8 @@
     "X-ray"
   ],
   "Ends with RCA": [
+    "Majorca",
+    "Menorca",
     "Orca"
   ],
   "Ends with RCH": [
@@ -4966,6 +5110,7 @@
     "Inglourious Basterds"
   ],
   "Ends with REA": [
+    "Moorea",
     "North Korea",
     "South Korea"
   ],
@@ -4985,6 +5130,7 @@
   ],
   "Ends with RES": [
     "Ares",
+    "Azores",
     "Ceres"
   ],
   "Ends with RET": [
@@ -4995,6 +5141,9 @@
   ],
   "Ends with RFS": [
     "Snow White and the Seven Dwarfs"
+  ],
+  "Ends with RFU": [
+    "Corfu"
   ],
   "Ends with RGE": [
     "George"
@@ -5012,6 +5161,7 @@
     "Andrea Doria",
     "Austria",
     "Bulgaria",
+    "Gran Canaria",
     "Illyria",
     "Liberia",
     "Nigeria",
@@ -5101,6 +5251,9 @@
   "Ends with RRE": [
     "Pierre"
   ],
+  "Ends with RRO": [
+    "El Hierro"
+  ],
   "Ends with RRY": [
     "Blueberry",
     "Curry",
@@ -5173,11 +5326,17 @@
     "The Wind Rises"
   ],
   "Ends with SEY": [
+    "Guernsey",
+    "Jersey",
     "Odyssey",
     "The Odyssey"
   ],
   "Ends with SHA": [
     "Kagemusha"
+  ],
+  "Ends with SHU": [
+    "Honshu",
+    "Kyushu"
   ],
   "Ends with SIA": [
     "Fantasia",
@@ -5206,6 +5365,9 @@
   ],
   "Ends with SLA": [
     "Tesla"
+  ],
+  "Ends with SOE": [
+    "Robinson Crusoe"
   ],
   "Ends with SON": [
     "Edison",
@@ -5255,6 +5417,7 @@
     "Catan",
     "Kazakhstan",
     "Kyrgyzstan",
+    "Manhattan",
     "Pakistan",
     "Tajikistan",
     "Turkmenistan",
@@ -5364,7 +5527,8 @@
     "Victor"
   ],
   "Ends with TRA": [
-    "Cleopatra"
+    "Cleopatra",
+    "Sumatra"
   ],
   "Ends with TTE": [
     "Gazette"
@@ -5377,6 +5541,12 @@
   ],
   "Ends with TZE": [
     "Yangtze"
+  ],
+  "Ends with UAI": [
+    "Kauai"
+  ],
+  "Ends with UAM": [
+    "Guam"
   ],
   "Ends with UAN": [
     "Gargantuan",
@@ -5485,6 +5655,9 @@
     "Count",
     "Temple Mount"
   ],
+  "Ends with URA": [
+    "Fuerteventura"
+  ],
   "Ends with URE": [
     "Aperture",
     "Back to the Future",
@@ -5535,6 +5708,9 @@
   "Ends with UTY": [
     "American Beauty",
     "Sleeping Beauty"
+  ],
+  "Ends with UUK": [
+    "Chuuk"
   ],
   "Ends with UYA": [
     "The Tale of the Princess Kaguya"
@@ -5628,6 +5804,9 @@
   "Ends with YAN": [
     "Cyan"
   ],
+  "Ends with YAP": [
+    "Yap"
+  ],
   "Ends with YER": [
     "Flyer"
   ],
@@ -5669,7 +5848,8 @@
   ],
   "Ends with ZON": [
     "Amazon",
-    "Deepwater Horizon"
+    "Deepwater Horizon",
+    "Luzon"
   ],
   "Ends with ZOS": [
     "Bezos"
@@ -6658,6 +6838,113 @@
     "Tuvalu",
     "Vanuatu"
   ],
+  "Islands": [
+    "Alderney",
+    "Antigua and Barbuda",
+    "Bali",
+    "Barbados",
+    "Big Island",
+    "Bora Bora",
+    "Borneo",
+    "Bornholm",
+    "Cabo Verde",
+    "Capri",
+    "Cebu",
+    "Chuuk",
+    "Comino",
+    "Comoros",
+    "Corfu",
+    "Corsica",
+    "Crete",
+    "Cuba",
+    "Cyprus",
+    "Dominica",
+    "Easter Island",
+    "El Hierro",
+    "Elba",
+    "Europa",
+    "Formentera",
+    "Fuerteventura",
+    "Gotland",
+    "Gozo",
+    "Gran Canaria",
+    "Greenland",
+    "Grenada",
+    "Guam",
+    "Guernsey",
+    "Hainan",
+    "Haiti",
+    "Hawaii",
+    "Hokkaido",
+    "Honshu",
+    "Ibiza",
+    "Iceland",
+    "Ireland",
+    "Ischia",
+    "Isle of Man",
+    "Isle of Wight",
+    "Jamaica",
+    "Java",
+    "Jeju",
+    "Jersey",
+    "Kauai",
+    "Key West",
+    "Kosrae",
+    "Krakatoa",
+    "Kyushu",
+    "La Gomera",
+    "La Palma",
+    "Lanzarote",
+    "Lombok",
+    "Long Island",
+    "Luzon",
+    "Madagascar",
+    "Majorca",
+    "Malta",
+    "Manhattan",
+    "Martha's Vineyard",
+    "Mauritius",
+    "Menorca",
+    "Mindanao",
+    "Moorea",
+    "Mykonos",
+    "Nantucket",
+    "Nauru",
+    "New Zealand",
+    "Oahu",
+    "Okinawa",
+    "Palau",
+    "Papua New Guinea",
+    "Phuket",
+    "Pohnpei",
+    "Rhodes",
+    "Robinson Crusoe",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Saint Vincent and the Grenadines",
+    "Saipan",
+    "Santorini",
+    "Sardinia",
+    "Sark",
+    "Seychelles",
+    "Shikoku",
+    "Sicily",
+    "Singapore",
+    "Skye",
+    "Sri Lanka",
+    "Staten Island",
+    "Sulawesi",
+    "Sumatra",
+    "Tahiti",
+    "Taiwan",
+    "Tenerife",
+    "Trinidad and Tobago",
+    "Tuvalu",
+    "Vanuatu",
+    "Western Samoa",
+    "Yap",
+    "Zanzibar"
+  ],
   "James Bond Characters": [
     "Bond",
     "James",
@@ -6901,18 +7188,21 @@
   "Locations in Asia": [
     "Abkhazia",
     "Afghanistan",
+    "Andaman",
     "Annapurna",
     "Armenia",
     "Artsakh",
     "Azerbaijan",
     "Baghdad",
     "Bahrain",
+    "Bali",
     "Bangladesh",
     "Beijing",
     "Bhutan",
     "British Malaya",
     "Burma",
     "Cambodia",
+    "Cebu",
     "Ceylon",
     "China",
     "Delhi",
@@ -6920,6 +7210,9 @@
     "French Indochina",
     "Fuji",
     "Fukushima",
+    "Hainan",
+    "Hokkaido",
+    "Honshu",
     "India",
     "Indonesia",
     "Iran",
@@ -6927,6 +7220,7 @@
     "Israel",
     "Jaipur",
     "Japan",
+    "Jeju",
     "Jerusalem",
     "Jordan",
     "K2",
@@ -6936,29 +7230,39 @@
     "Krakatoa",
     "Kuwait",
     "Kyrgyzstan",
+    "Kyushu",
+    "Lakshadweep",
     "Laos",
     "Lebanon",
+    "Lombok",
+    "Luzon",
     "Malaysia",
     "Maldives",
+    "Mindanao",
     "Mongolia",
     "Myanmar",
     "Nepal",
     "Netherlands East Indies",
+    "Nicobar",
     "North Korea",
     "North Vietnam",
     "North Yemen",
+    "Okinawa",
     "Oman",
     "Pakistan",
     "Palau",
     "Persia",
     "Philippines",
+    "Phuket",
     "Pinatubo",
     "Portuguese Timor",
     "Qatar",
     "Russia",
+    "Ryukyu",
     "Samarkand",
     "Saudi Arabia",
     "Seoul",
+    "Shikoku",
     "Siam",
     "Singapore",
     "South Korea",
@@ -6966,6 +7270,8 @@
     "South Vietnam",
     "South Yemen",
     "Sri Lanka",
+    "Sulawesi",
+    "Sumatra",
     "Syria",
     "Taiwan",
     "Tajikistan",
@@ -6980,60 +7286,102 @@
     "Yemen"
   ],
   "Locations in Europe": [
+    "Aland",
     "Albania",
+    "Alderney",
     "Andorra",
     "Austria",
+    "Azores",
     "Belarus",
     "Belgium",
     "Berlin",
+    "Bornholm",
     "Bosnia and Herzegovina",
     "Bulgaria",
+    "Canary Islands",
+    "Capri",
     "Chernobyl",
+    "Comino",
+    "Corfu",
+    "Corsica",
+    "Crete",
     "Croatia",
     "Cyprus",
     "Czech Republic",
     "Denmark",
     "Dublin",
     "East Germany",
+    "El Hierro",
+    "Elba",
     "Elbrus",
     "Estonia",
     "Etna",
+    "Faroe Islands",
     "Finland",
+    "Formentera",
     "France",
+    "Fuerteventura",
     "Georgia",
     "Germany",
+    "Gotland",
+    "Gozo",
+    "Gran Canaria",
     "Greece",
+    "Guernsey",
+    "Hebrides",
     "Hungary",
+    "Ibiza",
     "Iceland",
     "Ireland",
+    "Ischia",
+    "Isle of Man",
+    "Isle of Wight",
     "Italy",
+    "Jersey",
+    "La Gomera",
+    "La Palma",
+    "Lanzarote",
     "Latvia",
     "Liechtenstein",
     "Lithuania",
     "London",
     "Luxembourg",
+    "Madeira",
+    "Majorca",
     "Malta",
     "Matterhorn",
+    "Menorca",
     "Moldova",
     "Monaco",
     "Mont Blanc",
     "Montenegro",
+    "Mykonos",
     "Netherlands",
     "North Macedonia",
     "Norway",
     "Olympus",
+    "Orkney",
     "Paris",
     "Poland",
     "Portugal",
+    "Rhodes",
     "Romania",
     "Russia",
     "San Marino",
+    "Santorini",
+    "Sardinia",
+    "Sark",
     "Serbia",
+    "Shetland",
+    "Sicily",
+    "Skye",
     "Slovakia",
     "Slovenia",
     "Spain",
+    "Svalbard",
     "Sweden",
     "Switzerland",
+    "Tenerife",
     "Transnistria",
     "Ukraine",
     "United Kingdom",
@@ -7052,6 +7400,7 @@
     "Barbados",
     "Baton Rouge",
     "Belize",
+    "Big Island",
     "Bismarck",
     "Boise",
     "Boston",
@@ -7081,6 +7430,7 @@
     "Haiti",
     "Harrisburg",
     "Hartford",
+    "Hawaii",
     "Helena",
     "Honduras",
     "Honolulu",
@@ -7090,18 +7440,25 @@
     "Jamaica",
     "Jefferson City",
     "Juneau",
+    "Kauai",
+    "Key West",
     "Lansing",
     "Lincoln",
     "Little Rock",
+    "Long Island",
     "Los Angeles",
     "Madison",
+    "Manhattan",
+    "Martha's Vineyard",
     "Mexico",
     "Miami",
     "Montgomery",
     "Montpelier",
+    "Nantucket",
     "Nashville",
     "New York",
     "Nicaragua",
+    "Oahu",
     "Oklahoma City",
     "Olympia",
     "Panama",
@@ -7125,6 +7482,7 @@
     "Sierra",
     "Springfield",
     "St. Helens",
+    "Staten Island",
     "Tallahassee",
     "Tijuana",
     "Topeka",
@@ -7133,6 +7491,33 @@
     "Trinidad and Tobago",
     "United States",
     "Washington"
+  ],
+  "Locations in Oceania": [
+    "Australia",
+    "Bora Bora",
+    "Chuuk",
+    "Fiji",
+    "Guam",
+    "Kiribati",
+    "Kosrae",
+    "Marshall Islands",
+    "Micronesia",
+    "Moorea",
+    "Nauru",
+    "New Hebrides",
+    "New Zealand",
+    "Palau",
+    "Papua New Guinea",
+    "Pohnpei",
+    "Saipan",
+    "Samoa",
+    "Solomon Islands",
+    "Tahiti",
+    "Tonga",
+    "Tuvalu",
+    "Vanuatu",
+    "Western Samoa",
+    "Yap"
   ],
   "Locations in South America": [
     "Aconcagua",
@@ -7144,11 +7529,14 @@
     "Chile",
     "Colombia",
     "Dutch Guiana",
+    "Easter Island",
     "Ecuador",
+    "Galapagos",
     "Guyana",
     "Lima",
     "Paraguay",
     "Peru",
+    "Robinson Crusoe",
     "Suriname",
     "Uruguay",
     "Venezuela"
@@ -9634,11 +10022,14 @@
     "Aconcagua",
     "Afghanistan",
     "Akron",
+    "Aland",
     "Alaska",
     "Albania",
     "Albany",
+    "Alderney",
     "Algeria",
     "Amazon",
+    "Andaman",
     "Andorra",
     "Anglo-Egyptian Sudan",
     "Angola",
@@ -9655,9 +10046,11 @@
     "Australia",
     "Austria",
     "Azerbaijan",
+    "Azores",
     "Baghdad",
     "Bahamas",
     "Bahrain",
+    "Bali",
     "Bangladesh",
     "Barbados",
     "Basutoland",
@@ -9673,11 +10066,14 @@
     "Benin",
     "Berlin",
     "Bhutan",
+    "Big Island",
     "Birch",
     "Bismarck",
     "Boise",
     "Bolivia",
+    "Bora Bora",
     "Borneo",
+    "Bornholm",
     "Bosnia and Herzegovina",
     "Boston",
     "Botswana",
@@ -9699,8 +10095,11 @@
     "Cambodia",
     "Cameroon",
     "Canada",
+    "Canary Islands",
     "Cancun",
+    "Capri",
     "Carson City",
+    "Cebu",
     "Cedar",
     "Central African Republic",
     "Ceylon",
@@ -9711,13 +10110,18 @@
     "Chicago",
     "Chile",
     "China",
+    "Chuuk",
     "Colombia",
     "Columbia",
     "Columbus",
+    "Comino",
     "Comoros",
     "Concord",
     "Congo",
+    "Corfu",
+    "Corsica",
     "Costa Rica",
+    "Crete",
     "Croatia",
     "Cuba",
     "Cyprus",
@@ -9737,9 +10141,12 @@
     "Dublin",
     "Dutch Guiana",
     "East Germany",
+    "Easter Island",
     "Ecuador",
     "Egypt",
+    "El Hierro",
     "El Salvador",
+    "Elba",
     "Elbrus",
     "Equatorial Guinea",
     "Estonia",
@@ -9748,10 +10155,12 @@
     "Etna",
     "Europa",
     "Everest",
+    "Faroe Islands",
     "Fiji",
     "Finland",
     "Florence",
     "Florida",
+    "Formentera",
     "France",
     "Frankfort",
     "French East Africa",
@@ -9759,8 +10168,10 @@
     "French Indochina",
     "French Somaliland",
     "French West Africa",
+    "Fuerteventura",
     "Fuji",
     "Gabon",
+    "Galapagos",
     "Gambia",
     "Georgia",
     "German East Africa",
@@ -9768,22 +10179,33 @@
     "Germany",
     "Ghana",
     "Gobi",
+    "Gotland",
+    "Gozo",
+    "Gran Canaria",
     "Greece",
     "Greenland",
     "Grenada",
+    "Guam",
     "Guatemala",
+    "Guernsey",
     "Guinea",
     "Guinea-Bissau",
     "Guyana",
+    "Hainan",
     "Haiti",
     "Harrisburg",
     "Hartford",
+    "Hawaii",
+    "Hebrides",
     "Helena",
     "Herculaneum",
+    "Hokkaido",
     "Honduras",
     "Honolulu",
+    "Honshu",
     "Hudson",
     "Hungary",
+    "Ibiza",
     "Iceland",
     "India",
     "Indianapolis",
@@ -9791,6 +10213,9 @@
     "Iran",
     "Iraq",
     "Ireland",
+    "Ischia",
+    "Isle of Man",
+    "Isle of Wight",
     "Israel",
     "Italian East Africa",
     "Italian Somaliland",
@@ -9802,6 +10227,8 @@
     "Japan",
     "Java",
     "Jefferson City",
+    "Jeju",
+    "Jersey",
     "Jerusalem",
     "Jordan",
     "Juneau",
@@ -9809,14 +10236,22 @@
     "Kalahari",
     "Kampuchea",
     "Karachi",
+    "Kauai",
     "Kazakhstan",
     "Kenya",
+    "Key West",
     "Kilimanjaro",
     "Kiribati",
+    "Kosrae",
     "Krakatoa",
     "Kuwait",
     "Kyrgyzstan",
+    "Kyushu",
+    "La Gomera",
+    "La Palma",
+    "Lakshadweep",
     "Lansing",
+    "Lanzarote",
     "Laos",
     "Latvia",
     "Lebanon",
@@ -9826,25 +10261,34 @@
     "Lincoln",
     "Lithuania",
     "Little Rock",
+    "Lombok",
     "London",
+    "Long Island",
     "Los Angeles",
     "Luxembourg",
+    "Luzon",
     "Macon",
     "Madagascar",
+    "Madeira",
     "Madison",
+    "Majorca",
     "Malawi",
     "Malaysia",
     "Maldives",
     "Mali",
     "Malta",
+    "Manhattan",
     "Marshall Islands",
+    "Martha's Vineyard",
     "Matterhorn",
     "Mauritania",
     "Mauritius",
     "Mecca",
+    "Menorca",
     "Mexico",
     "Miami",
     "Micronesia",
+    "Mindanao",
     "Moldova",
     "Monaco",
     "Mongolia",
@@ -9852,10 +10296,13 @@
     "Montenegro",
     "Montgomery",
     "Montpelier",
+    "Moorea",
     "Morocco",
     "Mozambique",
     "Myanmar",
+    "Mykonos",
     "Namibia",
+    "Nantucket",
     "Nashville",
     "Nauru",
     "Nepal",
@@ -9866,6 +10313,7 @@
     "New York",
     "New Zealand",
     "Nicaragua",
+    "Nicobar",
     "Niger",
     "Nigeria",
     "North Korea",
@@ -9875,11 +10323,14 @@
     "Northern Rhodesia",
     "Norway",
     "Nyasaland",
+    "Oahu",
+    "Okinawa",
     "Oklahoma City",
     "Olympia",
     "Olympus",
     "Oman",
     "Orange",
+    "Orkney",
     "Pakistan",
     "Palau",
     "Panama",
@@ -9890,8 +10341,10 @@
     "Peru",
     "Philippines",
     "Phoenix",
+    "Phuket",
     "Pierre",
     "Pinatubo",
+    "Pohnpei",
     "Poland",
     "Pompeii",
     "Portugal",
@@ -9903,19 +10356,23 @@
     "Qatar",
     "Quebec",
     "Raleigh",
+    "Rhodes",
     "Rhodesia",
     "Richmond",
+    "Robinson Crusoe",
     "Roma",
     "Romania",
     "Rome",
     "Russia",
     "Rwanda",
+    "Ryukyu",
     "Sacramento",
     "Sahara",
     "Saint Kitts and Nevis",
     "Saint Lucia",
     "Saint Paul",
     "Saint Vincent and the Grenadines",
+    "Saipan",
     "Salem",
     "Salt Lake City",
     "Samarkand",
@@ -9927,17 +10384,24 @@
     "San Pedro",
     "Santa Fe",
     "Santa Maria",
+    "Santorini",
     "Sao Tome and Principe",
+    "Sardinia",
+    "Sark",
     "Saudi Arabia",
     "Seattle",
     "Senegal",
     "Seoul",
     "Serbia",
     "Seychelles",
+    "Shetland",
+    "Shikoku",
     "Siam",
+    "Sicily",
     "Sierra",
     "Sierra Leone",
     "Singapore",
+    "Skye",
     "Slovakia",
     "Slovenia",
     "Solomon Islands",
@@ -9956,11 +10420,16 @@
     "Springfield",
     "Sri Lanka",
     "St. Helens",
+    "Staten Island",
+    "Sulawesi",
+    "Sumatra",
     "Suriname",
+    "Svalbard",
     "Sweden",
     "Switzerland",
     "Sydney",
     "Syria",
+    "Tahiti",
     "Taiwan",
     "Tajikistan",
     "Tallahassee",
@@ -9968,6 +10437,7 @@
     "Tanganyika",
     "Tanzania",
     "Temple Mount",
+    "Tenerife",
     "Texas",
     "Thailand",
     "Tijuana",
@@ -10000,6 +10470,7 @@
     "Vietnam",
     "Washington",
     "Western Samoa",
+    "Yap",
     "Yemen",
     "Zambia",
     "Zanzibar",
@@ -10810,17 +11281,24 @@
   "Starts with AFG": [
     "Afghanistan"
   ],
+  "Starts with AKI": [
+    "Akira"
+  ],
   "Starts with AKR": [
     "Akron"
   ],
   "Starts with ALA": [
     "Aladdin",
+    "Aland",
     "Alaska"
   ],
   "Starts with ALB": [
     "Albania",
     "Albany",
     "Albatross"
+  ],
+  "Starts with ALD": [
+    "Alderney"
   ],
   "Starts with ALE": [
     "Alexandria"
@@ -10851,6 +11329,7 @@
     "Amontillado"
   ],
   "Starts with AND": [
+    "Andaman",
     "Andorra",
     "Andrea Doria"
   ],
@@ -10938,6 +11417,9 @@
   "Starts with AVO": [
     "Avocado"
   ],
+  "Starts with AZO": [
+    "Azores"
+  ],
   "Starts with BAC": [
     "Bach",
     "Back to the Future",
@@ -10951,6 +11433,7 @@
     "Bahrain"
   ],
   "Starts with BAL": [
+    "Bali",
     "Ball"
   ],
   "Starts with BAN": [
@@ -11028,7 +11511,8 @@
   "Starts with BIG": [
     "Big",
     "Big Bird",
-    "Big Hero 6"
+    "Big Hero 6",
+    "Big Island"
   ],
   "Starts with BIR": [
     "Birch",
@@ -11074,7 +11558,9 @@
     "Bond"
   ],
   "Starts with BOR": [
+    "Bora Bora",
     "Borneo",
+    "Bornholm",
     "Boron"
   ],
   "Starts with BOS": [
@@ -11155,6 +11641,7 @@
   "Starts with CAN": [
     "Canada",
     "Canal",
+    "Canary Islands",
     "Cancer",
     "Cancun",
     "Canoe",
@@ -11163,6 +11650,7 @@
   ],
   "Starts with CAP": [
     "Caprese",
+    "Capri",
     "Capricorn",
     "Captain America"
   ],
@@ -11240,6 +11728,9 @@
     "Cinderella",
     "Cinnamon"
   ],
+  "Starts with CLE": [
+    "Cleopatra"
+  ],
   "Starts with CLU": [
     "Club",
     "Clue"
@@ -11255,6 +11746,10 @@
     "Colossus",
     "Columbia",
     "Columbus"
+  ],
+  "Starts with COM": [
+    "Comino",
+    "Comoros"
   ],
   "Starts with CON": [
     "CON",
@@ -11273,7 +11768,9 @@
   ],
   "Starts with COR": [
     "Coral",
-    "Cormorant"
+    "Corfu",
+    "Cormorant",
+    "Corsica"
   ],
   "Starts with COS": [
     "Costa Rica"
@@ -11434,7 +11931,8 @@
     "Eagle"
   ],
   "Starts with EAS": [
-    "East Germany"
+    "East Germany",
+    "Easter Island"
   ],
   "Starts with ECU": [
     "Ecuador"
@@ -11453,9 +11951,11 @@
     "Einstein"
   ],
   "Starts with EL ": [
+    "El Hierro",
     "El Salvador"
   ],
   "Starts with ELB": [
+    "Elba",
     "Elbrus"
   ],
   "Starts with ELE": [
@@ -11519,7 +12019,8 @@
     "Fantasia 2000"
   ],
   "Starts with FAR": [
-    "Faraday"
+    "Faraday",
+    "Faroe Islands"
   ],
   "Starts with FED": [
     "Federation"
@@ -11557,6 +12058,7 @@
   ],
   "Starts with FOR": [
     "Ford",
+    "Formentera",
     "Forrest Gump"
   ],
   "Starts with FOX": [
@@ -11594,6 +12096,7 @@
   ],
   "Starts with GAL": [
     "Galactica",
+    "Galapagos",
     "Galaxy",
     "Galaxy Quest",
     "Galileo"
@@ -11670,8 +12173,13 @@
     "Goofy",
     "Google"
   ],
+  "Starts with GOT": [
+    "GOT7",
+    "Gotland"
+  ],
   "Starts with GRA": [
     "Graf Zeppelin",
+    "Gran Canaria",
     "Grand Theft Auto",
     "Grant",
     "Grape",
@@ -11701,6 +12209,13 @@
     "Groundhog Day",
     "Grover"
   ],
+  "Starts with GUA": [
+    "Guam",
+    "Guatemala"
+  ],
+  "Starts with GUE": [
+    "Guernsey"
+  ],
   "Starts with GUI": [
     "Guinea",
     "Guinea-Bissau",
@@ -11719,6 +12234,7 @@
     "Hagrid"
   ],
   "Starts with HAI": [
+    "Hainan",
     "Hairspray",
     "Haiti"
   ],
@@ -11755,6 +12271,7 @@
     "Hash"
   ],
   "Starts with HAW": [
+    "Hawaii",
     "Hawk",
     "Hawkeye",
     "Hawking"
@@ -11763,6 +12280,9 @@
     "Hearts",
     "Heat",
     "Heather"
+  ],
+  "Starts with HEB": [
+    "Hebrides"
   ],
   "Starts with HEL": [
     "Helen",
@@ -11803,7 +12323,8 @@
   "Starts with HON": [
     "Honda",
     "Honduras",
-    "Honolulu"
+    "Honolulu",
+    "Honshu"
   ],
   "Starts with HOO": [
     "Hood",
@@ -11895,6 +12416,10 @@
     "Iron",
     "Iron Man"
   ],
+  "Starts with ISL": [
+    "Isle of Man",
+    "Isle of Wight"
+  ],
   "Starts with ITA": [
     "Italian",
     "Italian East Africa",
@@ -11930,6 +12455,7 @@
     "Jefferson City"
   ],
   "Starts with JER": [
+    "Jersey",
     "Jerusalem"
   ],
   "Starts with JOK": [
@@ -11975,7 +12501,8 @@
     "Kepler"
   ],
   "Starts with KEY": [
-    "Key"
+    "Key",
+    "Key West"
   ],
   "Starts with KHA": [
     "Khan"
@@ -12012,8 +12539,17 @@
   "Starts with KYR": [
     "Kyrgyzstan"
   ],
+  "Starts with KYU": [
+    "Kyushu"
+  ],
+  "Starts with LA ": [
+    "La Gomera",
+    "La La Land",
+    "La Palma"
+  ],
   "Starts with LAK": [
-    "Laker"
+    "Laker",
+    "Lakshadweep"
   ],
   "Starts with LAM": [
     "Lambda",
@@ -12021,7 +12557,8 @@
   ],
   "Starts with LAN": [
     "Lando",
-    "Lansing"
+    "Lansing",
+    "Lanzarote"
   ],
   "Starts with LAO": [
     "Laos"
@@ -12100,7 +12637,8 @@
     "Locker"
   ],
   "Starts with LON": [
-    "London"
+    "London",
+    "Long Island"
   ],
   "Starts with LOO": [
     "Looper"
@@ -12117,6 +12655,9 @@
   "Starts with LUX": [
     "Luxembourg"
   ],
+  "Starts with LUZ": [
+    "Luzon"
+  ],
   "Starts with MAC": [
     "Macbeth",
     "Mace",
@@ -12124,6 +12665,7 @@
   ],
   "Starts with MAD": [
     "Madagascar",
+    "Madeira",
     "Madison",
     "Madonna",
     "Madrid"
@@ -12134,6 +12676,9 @@
     "Magic",
     "Magneto",
     "Magpie"
+  ],
+  "Starts with MAJ": [
+    "Majorca"
   ],
   "Starts with MAK": [
     "Makemake"
@@ -12150,6 +12695,7 @@
   ],
   "Starts with MAN": [
     "Manatee",
+    "Manhattan",
     "Mantle"
   ],
   "Starts with MAR": [
@@ -12160,6 +12706,7 @@
     "Mars",
     "Marseille",
     "Marshall Islands",
+    "Martha's Vineyard",
     "Mary",
     "Mary Poppins",
     "Mary Poppins Returns",
@@ -12185,6 +12732,9 @@
   ],
   "Starts with MEC": [
     "Mecca"
+  ],
+  "Starts with MEN": [
+    "Menorca"
   ],
   "Starts with MER": [
     "Mercury"
@@ -12213,6 +12763,7 @@
     "Million Dollar Baby"
   ],
   "Starts with MIN": [
+    "Mindanao",
     "Ming",
     "Minnie",
     "Minotaur"
@@ -12236,7 +12787,8 @@
   "Starts with MOO": [
     "Moon",
     "Moonlight",
-    "Moonrise Kingdom"
+    "Moonrise Kingdom",
+    "Moorea"
   ],
   "Starts with MOR": [
     "Morocco",
@@ -12260,11 +12812,17 @@
     "My Fair Lady",
     "My Neighbor Totoro"
   ],
+  "Starts with MYK": [
+    "Mykonos"
+  ],
   "Starts with MYS": [
     "Mystique"
   ],
   "Starts with NAM": [
     "Namibia"
+  ],
+  "Starts with NAN": [
+    "Nantucket"
   ],
   "Starts with NAP": [
     "Napkin",
@@ -12303,6 +12861,7 @@
     "Nicaragua",
     "Nick Fury",
     "Nickel",
+    "Nicobar",
     "Nicoise"
   ],
   "Starts with NIG": [
@@ -12355,6 +12914,9 @@
     "Odysseus",
     "Odyssey"
   ],
+  "Starts with OKI": [
+    "Okinawa"
+  ],
   "Starts with OKL": [
     "Oklahoma City"
   ],
@@ -12399,8 +12961,14 @@
   "Starts with ORI": [
     "Orion"
   ],
+  "Starts with ORK": [
+    "Orkney"
+  ],
   "Starts with OSC": [
     "Oscar"
+  ],
+  "Starts with OTT": [
+    "Ottawa"
   ],
   "Starts with OUT": [
     "Out of Africa",
@@ -12472,6 +13040,9 @@
   "Starts with PHO": [
     "Phobos",
     "Phoenix"
+  ],
+  "Starts with PHU": [
+    "Phuket"
   ],
   "Starts with PIA": [
     "Piano"
@@ -12630,6 +13201,7 @@
   ],
   "Starts with RHO": [
     "Rho",
+    "Rhodes",
     "Rhodesia"
   ],
   "Starts with RIC": [
@@ -12645,7 +13217,8 @@
   "Starts with ROB": [
     "Robin",
     "Robin Hood",
-    "Robin Hood: Prince of Thieves"
+    "Robin Hood: Prince of Thieves",
+    "Robinson Crusoe"
   ],
   "Starts with ROC": [
     "Rockefeller",
@@ -12694,7 +13267,8 @@
     "Saint Lucia",
     "Saint Patrick",
     "Saint Paul",
-    "Saint Vincent and the Grenadines"
+    "Saint Vincent and the Grenadines",
+    "Saipan"
   ],
   "Starts with SAL": [
     "Salem",
@@ -12717,10 +13291,15 @@
     "San Pedro",
     "Sanjuro",
     "Santa Fe",
-    "Santa Maria"
+    "Santa Maria",
+    "Santorini"
   ],
   "Starts with SAP": [
     "Sapphire"
+  ],
+  "Starts with SAR": [
+    "Sardinia",
+    "Sark"
   ],
   "Starts with SAU": [
     "Saudi Arabia"
@@ -12772,10 +13351,15 @@
   ],
   "Starts with SHE": [
     "Sheep",
-    "Shenandoah"
+    "Shenandoah",
+    "Shetland"
   ],
   "Starts with SHI": [
-    "Shield"
+    "Shield",
+    "Shikoku"
+  ],
+  "Starts with SIC": [
+    "Sicily"
   ],
   "Starts with SIE": [
     "Sierra",
@@ -12879,6 +13463,7 @@
     "Star Wars",
     "Starbuck",
     "Stargate",
+    "Staten Island",
     "Statler"
   ],
   "Starts with STE": [
@@ -12899,7 +13484,11 @@
     "Suitcase"
   ],
   "Starts with SUL": [
+    "Sulawesi",
     "Sulu"
+  ],
+  "Starts with SUM": [
+    "Sumatra"
   ],
   "Starts with SUN": [
     "Sun",
@@ -12912,6 +13501,9 @@
   ],
   "Starts with SUR": [
     "Suriname"
+  ],
+  "Starts with SVA": [
+    "Svalbard"
   ],
   "Starts with SWA": [
     "Swan"
@@ -12937,6 +13529,9 @@
   ],
   "Starts with TAC": [
     "Taco"
+  ],
+  "Starts with TAH": [
+    "Tahiti"
   ],
   "Starts with TAI": [
     "Taiwan"
@@ -12979,6 +13574,10 @@
   ],
   "Starts with TEM": [
     "Temple Mount"
+  ],
+  "Starts with TEN": [
+    "Tenerife",
+    "Tenet"
   ],
   "Starts with TER": [
     "Teresa",
@@ -13359,6 +13958,9 @@
   ],
   "Starts with ZAM": [
     "Zambia"
+  ],
+  "Starts with ZAN": [
+    "Zanzibar"
   ],
   "Starts with ZEB": [
     "Zebra"
