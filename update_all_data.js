@@ -89,29 +89,9 @@ Object.keys(categoriesToWords)
         sortedCategories[category] = categoriesToWords[category].sort();
     });
 
-// Step 2.5: Remove duplicate categories (categories with identical word lists)
-console.log('2.5. Removing duplicate categories...');
-const categorySignatures = new Map();
-const uniqueCategories = {};
-let duplicateCategoriesRemoved = 0;
-
-for (const [category, words] of Object.entries(sortedCategories)) {
-    const signature = words.join('|');
-
-    if (categorySignatures.has(signature)) {
-        // This category has the same words as an existing category
-        const existingCategory = categorySignatures.get(signature);
-        console.log(`Removing duplicate category: "${category}" (same as "${existingCategory}")`);
-        duplicateCategoriesRemoved++;
-    } else {
-        // This is a unique category
-        categorySignatures.set(signature, category);
-        uniqueCategories[category] = words;
-    }
-}
-
-// Replace sortedCategories with uniqueCategories
-const finalCategories = uniqueCategories;
+// Step 2.5: Skip duplicate detection (categories with same words can be different concepts)
+console.log('2.5. Skipping duplicate category detection...');
+const finalCategories = sortedCategories;
 
 // Write the categories.json file
 const outputPath = path.join(__dirname, 'data', 'categories.json');
@@ -189,7 +169,6 @@ fs.writeFileSync(path.join(__dirname, 'data', 'thin_categories.json'), JSON.stri
 console.log('All data files updated successfully!');
 console.log(`- Updated ${updatedCount} words with patterns`);
 console.log(`- Found and merged ${duplicateWordsFound} duplicate words`);
-console.log(`- Removed ${duplicateCategoriesRemoved} duplicate categories`);
-console.log(`- Generated ${Object.keys(finalCategories).length} unique categories`);
+console.log(`- Generated ${Object.keys(finalCategories).length} categories`);
 console.log(`- Extracted ${sortedWords.length} words and ${sortedCategoriesList.length} categories`);
 console.log(`- Found ${Object.keys(thinCategories).length} thin categories`); 

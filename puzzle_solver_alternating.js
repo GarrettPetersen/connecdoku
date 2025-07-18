@@ -1,4 +1,15 @@
 const fs = require('fs');
+const { execSync } = require('child_process');
+
+// Step 1: Run update_all_data to ensure data is current
+console.log('Step 1: Updating all data files...');
+try {
+    execSync('node update_all_data.js', { stdio: 'inherit' });
+    console.log('Data files updated successfully!\n');
+} catch (error) {
+    console.error('Error updating data files:', error.message);
+    process.exit(1);
+}
 
 // Load data
 const categories = JSON.parse(fs.readFileSync('data/categories.json', 'utf8'));
