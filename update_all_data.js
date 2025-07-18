@@ -42,17 +42,42 @@ console.log('1.5. Handling duplicate words and merging categories...');
 const mergedWordsData = {};
 let duplicateWordsFound = 0;
 
+// First, normalize names for comparison
+const normalizedNames = {};
 for (const [word, categories] of Object.entries(wordsData)) {
-    if (mergedWordsData[word]) {
-        // This word already exists, merge the categories
-        const existingCategories = new Set(mergedWordsData[word]);
-        categories.forEach(category => existingCategories.add(category));
-        mergedWordsData[word] = Array.from(existingCategories).sort();
+    // Create normalized version (lowercase, no extra spaces)
+    const normalized = word.toLowerCase().replace(/\s+/g, ' ').trim();
+    if (!normalizedNames[normalized]) {
+        normalizedNames[normalized] = [];
+    }
+    normalizedNames[normalized].push(word);
+}
+
+// Then merge categories for duplicates
+for (const [normalized, variants] of Object.entries(normalizedNames)) {
+    if (variants.length > 1) {
+        // Found duplicate names
+        console.log(`Found duplicate names: ${variants.join(', ')}`);
         duplicateWordsFound++;
-        console.log(`Merged categories for duplicate word: ${word}`);
+
+        // Choose the most complete name variant (usually the longer one)
+        const primaryVariant = variants.reduce((a, b) => a.length >= b.length ? a : b);
+
+        // Merge all categories from all variants
+        const mergedCategories = new Set();
+        variants.forEach(variant => {
+            wordsData[variant].forEach(category => mergedCategories.add(category));
+        });
+
+        // Store merged categories under the primary variant
+        mergedWordsData[primaryVariant] = Array.from(mergedCategories).sort();
+
+        // Log what we're doing
+        console.log(`Using "${primaryVariant}" as primary variant`);
+        console.log(`Merged categories: ${mergedWordsData[primaryVariant].join(', ')}`);
     } else {
-        // First occurrence of this word
-        mergedWordsData[word] = categories;
+        // Single variant, just copy it
+        mergedWordsData[variants[0]] = wordsData[variants[0]];
     }
 }
 

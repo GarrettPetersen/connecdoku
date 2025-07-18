@@ -365,6 +365,34 @@
   },
   {
     "rows": [
+      "Airships",
+      "Birds",
+      "Ends with TLE",
+      "Starts with QUE"
+    ],
+    "cols": [
+      "Place Names",
+      "Band Namesakes",
+      "Real People"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Akron",
+      "Phoenix",
+      "Seattle",
+      "Quebec",
+      "Zeppelin",
+      "Crow",
+      "Beetle",
+      "Queen",
+      "Graf Zeppelin",
+      "Drake",
+      "Aristotle",
+      "Queen Mary"
+    ]
+  },
+  {
+    "rows": [
       "Starts with AND",
       "Former British Colonies",
       "Large Countries",
@@ -3165,6 +3193,34 @@
   },
   {
     "rows": [
+      "Starts with DRA",
+      "Ends with ILL",
+      "Ends with TLE",
+      "Starts with PRI"
+    ],
+    "cols": [
+      "Anime",
+      "Books",
+      "People"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Dragon Ball",
+      "Dracula",
+      "Drake",
+      "From Up on Poppy Hill",
+      "All You Need Is Kill",
+      "Winston Churchill",
+      "Howl's Moving Castle",
+      "The Man in the High Castle",
+      "Aristotle",
+      "Princess Mononoke",
+      "Pride and Prejudice",
+      "Prince"
+    ]
+  },
+  {
+    "rows": [
       "Starts with QUE",
       "Airships",
       "Birds",
@@ -3187,8 +3243,64 @@
       "Drake",
       "Phoenix",
       "Beetle",
-      "Mantle",
+      "Aristotle",
       "Seattle"
+    ]
+  },
+  {
+    "rows": [
+      "Things Italian",
+      "Airships",
+      "Starts with HER",
+      "Trojan War"
+    ],
+    "cols": [
+      "Ancient Cities",
+      "Ends with LES",
+      "People"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Pompeii",
+      "Naples",
+      "Caesar",
+      "Roma",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Herculaneum",
+      "Hercules",
+      "Hermes",
+      "Paris",
+      "Achilles",
+      "Helen"
+    ]
+  },
+  {
+    "rows": [
+      "Trojan War",
+      "Airships",
+      "Starts with HER",
+      "Things Italian"
+    ],
+    "cols": [
+      "Ancient Cities",
+      "Ends with LES",
+      "People"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Paris",
+      "Achilles",
+      "Helen",
+      "Roma",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Herculaneum",
+      "Hercules",
+      "Hermes",
+      "Pompeii",
+      "Naples",
+      "Caesar"
     ]
   }
 ]

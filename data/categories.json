@@ -275,6 +275,17 @@
     "Samarkand",
     "Troy"
   ],
+  "Ancient Figures": [
+    "Aristotle",
+    "Plato",
+    "Socrates"
+  ],
+  "Ancient Rulers": [
+    "Cleopatra",
+    "Ming",
+    "Pharaoh",
+    "Tsar"
+  ],
   "Animals": [
     "Pinky",
     "Turkey"
@@ -376,6 +387,10 @@
     "Spider",
     "Tarantula"
   ],
+  "Artists": [
+    "Da Vinci",
+    "Michelangelo"
+  ],
   "Associated with Edgar Allan Poe": [
     "Amontillado",
     "Lenore",
@@ -384,6 +399,7 @@
     "Usher"
   ],
   "Astronomers": [
+    "Copernicus",
     "Galileo",
     "Kepler"
   ],
@@ -429,6 +445,9 @@
     "Iron Man",
     "Nick Fury",
     "Thor"
+  ],
+  "Aviation Pioneers": [
+    "Wright"
   ],
   "BRICS Nations": [
     "Brazil",
@@ -590,13 +609,13 @@
     "Vulture"
   ],
   "Black Things": [
+    "BLACKPINK",
     "Batman",
     "Bear",
     "Black Cat",
     "Black Hole",
     "Black Panther",
     "Black Widow",
-    "Blackpink",
     "Coffee",
     "Crow",
     "Nick Fury",
@@ -1439,6 +1458,12 @@
     "TikTok",
     "Toyota",
     "X"
+  ],
+  "Composers": [
+    "Bach",
+    "Beethoven",
+    "Handel",
+    "Mozart"
   ],
   "Condiments": [
     "Ketchup",
@@ -2559,6 +2584,9 @@
   "Ends with  FE": [
     "Santa Fe"
   ],
+  "Ends with  HE": [
+    "Zheng He"
+  ],
   "Ends with  II": [
     "Back to the Future Part II",
     "Ghostbusters II",
@@ -2716,7 +2744,8 @@
   ],
   "Ends with AMA": [
     "Obama",
-    "Panama"
+    "Panama",
+    "Vasco da Gama"
   ],
   "Ends with AME": [
     "Avengers: Endgame",
@@ -2825,6 +2854,9 @@
   "Ends with ARA": [
     "Sahara"
   ],
+  "Ends with ARC": [
+    "Joan of Arc"
+  ],
   "Ends with ARD": [
     "A Good Day to Die Hard",
     "Board",
@@ -2932,6 +2964,7 @@
   ],
   "Ends with ATO": [
     "NATO",
+    "Plato",
     "Tomato"
   ],
   "Ends with ATS": [
@@ -3091,6 +3124,7 @@
     "Istanbul"
   ],
   "Ends with BUS": [
+    "Christopher Columbus",
     "Columbus"
   ],
   "Ends with BWE": [
@@ -3177,6 +3211,9 @@
   ],
   "Ends with CUP": [
     "Buttercup"
+  ],
+  "Ends with CUS": [
+    "Copernicus"
   ],
   "Ends with D 2": [
     "Die Hard 2",
@@ -3427,7 +3464,11 @@
     "Hell",
     "Spell"
   ],
+  "Ends with ELO": [
+    "Michelangelo"
+  ],
   "Ends with ELT": [
+    "Franklin D. Roosevelt",
     "Roosevelt"
   ],
   "Ends with EMO": [
@@ -3680,6 +3721,9 @@
   "Ends with GNA": [
     "Bologna"
   ],
+  "Ends with GNE": [
+    "Charlemagne"
+  ],
   "Ends with GO!": [
     "Oh, the Places You'll Go!"
   ],
@@ -3904,7 +3948,8 @@
   ],
   "Ends with ILL": [
     "All You Need Is Kill",
-    "From Up on Poppy Hill"
+    "From Up on Poppy Hill",
+    "Winston Churchill"
   ],
   "Ends with ILM": [
     "Film"
@@ -3974,8 +4019,7 @@
     "Santorini"
   ],
   "Ends with INK": [
-    "BLACKPINK",
-    "Blackpink"
+    "BLACKPINK"
   ],
   "Ends with INO": [
     "Comino",
@@ -4218,6 +4262,7 @@
     "Olaf"
   ],
   "Ends with LAN": [
+    "Ferdinand Magellan",
     "Milan",
     "Mulan"
   ],
@@ -4855,6 +4900,7 @@
     "Lincoln"
   ],
   "Ends with OLO": [
+    "Marco Polo",
     "Solo"
   ],
   "Ends with OLT": [
@@ -5274,7 +5320,8 @@
     "Madrid"
   ],
   "Ends with RIE": [
-    "Curie"
+    "Curie",
+    "Marie Curie"
   ],
   "Ends with RIN": [
     "Turin"
@@ -5329,7 +5376,8 @@
     "The Black Cauldron"
   ],
   "Ends with ROR": [
-    "The Last Emperor"
+    "The Last Emperor",
+    "William the Conqueror"
   ],
   "Ends with ROS": [
     "Comoros"
@@ -5366,6 +5414,9 @@
   "Ends with RSE": [
     "Horse",
     "Morse"
+  ],
+  "Ends with RTE": [
+    "Napoleon Bonaparte"
   ],
   "Ends with RTH": [
     "Earth"
@@ -5479,6 +5530,7 @@
     "Jackson",
     "Jefferson",
     "Madison",
+    "Thomas Edison",
     "Wilson"
   ],
   "Ends with SOW": [
@@ -5575,6 +5627,7 @@
   ],
   "Ends with TES": [
     "Gates",
+    "Socrates",
     "The Anubis Gates",
     "United Arab Emirates",
     "United States"
@@ -5597,6 +5650,7 @@
     "Atlantis"
   ],
   "Ends with TLE": [
+    "Aristotle",
     "Beetle",
     "Chicken Little",
     "Howl's Moving Castle",
@@ -5616,6 +5670,7 @@
   "Ends with TON": [
     "Boston",
     "Charleston",
+    "George Washington",
     "Hilton",
     "Krypton",
     "Newton",
@@ -5978,6 +6033,9 @@
     "Pontoon",
     "Tunnel"
   ],
+  "Enlightenment Figures": [
+    "Newton"
+  ],
   "Epic Heroes": [
     "Achilles",
     "Beowulf",
@@ -6007,6 +6065,13 @@
   ],
   "Events": [
     "CON"
+  ],
+  "Explorers": [
+    "Christopher Columbus",
+    "Ferdinand Magellan",
+    "Marco Polo",
+    "Vasco da Gama",
+    "Zheng He"
   ],
   "Fable Characters": [
     "Ant",
@@ -6922,6 +6987,53 @@
     "Samarkand",
     "Venice"
   ],
+  "Historical Figures": [
+    "Aristotle",
+    "Bach",
+    "Beethoven",
+    "Catherine",
+    "Charlemagne",
+    "Christopher Columbus",
+    "Cleopatra",
+    "Copernicus",
+    "Da Vinci",
+    "Dante",
+    "Drake",
+    "Einstein",
+    "Elizabeth",
+    "Ferdinand Magellan",
+    "Franklin D. Roosevelt",
+    "Galileo",
+    "George Washington",
+    "Grant",
+    "Handel",
+    "Homer",
+    "Joan of Arc",
+    "Khan",
+    "Marco Polo",
+    "Marie Curie",
+    "Mary",
+    "Michelangelo",
+    "Ming",
+    "Mozart",
+    "Napoleon Bonaparte",
+    "Newton",
+    "Pharaoh",
+    "Plato",
+    "Poe",
+    "Saint Patrick",
+    "Shakespeare",
+    "Socrates",
+    "Teresa",
+    "Thomas Edison",
+    "Tsar",
+    "Vasco da Gama",
+    "Victoria",
+    "William the Conqueror",
+    "Winston Churchill",
+    "Wright",
+    "Zheng He"
+  ],
   "Historical Weapons": [
     "Axe",
     "Bow",
@@ -7023,6 +7135,7 @@
     "Graf Zeppelin",
     "Morse",
     "Tesla",
+    "Thomas Edison",
     "Whitney",
     "Wright"
   ],
@@ -7965,6 +8078,9 @@
     "Ray",
     "Zero"
   ],
+  "Mathematicians": [
+    "Newton"
+  ],
   "Mechanical Parts": [
     "Cog",
     "Gear",
@@ -7978,6 +8094,18 @@
     "Disney",
     "Fox",
     "Pixar"
+  ],
+  "Medieval Figures": [
+    "Charlemagne",
+    "Joan of Arc",
+    "Marco Polo",
+    "William the Conqueror",
+    "Zheng He"
+  ],
+  "Medieval Rulers": [
+    "Charlemagne",
+    "Khan",
+    "William the Conqueror"
   ],
   "Metallic Colors": [
     "Cobalt",
@@ -8016,6 +8144,14 @@
     "Monaco",
     "San Marino",
     "Vatican City"
+  ],
+  "Military Leaders": [
+    "George Washington",
+    "Grant",
+    "Joan of Arc",
+    "Napoleon Bonaparte",
+    "William the Conqueror",
+    "Winston Churchill"
   ],
   "Military Terms": [
     "Battlefield",
@@ -8220,6 +8356,25 @@
     "Yemen",
     "Zambia",
     "Zimbabwe"
+  ],
+  "Modern Figures": [
+    "Einstein",
+    "Franklin D. Roosevelt",
+    "George Washington",
+    "Marie Curie",
+    "Napoleon Bonaparte",
+    "Thomas Edison",
+    "Winston Churchill",
+    "Wright"
+  ],
+  "Modern Rulers": [
+    "Catherine",
+    "Elizabeth",
+    "Franklin D. Roosevelt",
+    "George Washington",
+    "Napoleon Bonaparte",
+    "Victoria",
+    "Winston Churchill"
   ],
   "Monarchs": [
     "Duke",
@@ -11293,6 +11448,11 @@
   "Ninja Terms": [
     "Naruto"
   ],
+  "Nobel Prize Winners": [
+    "Einstein",
+    "Marie Curie",
+    "Winston Churchill"
+  ],
   "Noble Gases": [
     "Argon",
     "Helium",
@@ -11412,6 +11572,7 @@
     "Adams",
     "Anna",
     "Annabel",
+    "Aristotle",
     "Athena",
     "Aurora",
     "Bach",
@@ -11426,8 +11587,11 @@
     "Caesar",
     "Catherine",
     "Chad",
+    "Charlemagne",
+    "Christopher Columbus",
     "Cleopatra",
     "Cobb",
+    "Copernicus",
     "Count",
     "Curie",
     "Curry",
@@ -11445,10 +11609,13 @@
     "Elsa",
     "Elvis",
     "Faraday",
+    "Ferdinand Magellan",
     "Feynman",
     "Ford",
+    "Franklin D. Roosevelt",
     "Fred",
     "Galileo",
+    "George Washington",
     "Graf Zeppelin",
     "Grant",
     "Grover",
@@ -11466,6 +11633,7 @@
     "James",
     "Jean Grey",
     "Jefferson",
+    "Joan of Arc",
     "John",
     "Jordan",
     "Juliet",
@@ -11483,12 +11651,16 @@
     "Madison",
     "Madonna",
     "Mantle",
+    "Marco Polo",
+    "Marie Curie",
     "Mary",
     "Mary Rose",
     "Mays",
+    "Michelangelo",
     "Ming",
     "Morse",
     "Mozart",
+    "Napoleon Bonaparte",
     "Newton",
     "Nina",
     "Obama",
@@ -11499,6 +11671,7 @@
     "Paul",
     "Peter",
     "Pharaoh",
+    "Plato",
     "Poe",
     "Prince",
     "Professor X",
@@ -11506,24 +11679,31 @@
     "Romeo",
     "Roosevelt",
     "Ruth",
+    "Saint Patrick",
     "Sam",
     "Santa Maria",
     "Shaggy",
     "Shakespeare",
     "Siren",
+    "Socrates",
     "Sulu",
     "Teresa",
     "Tesla",
+    "Thomas Edison",
     "Trump",
     "Tsar",
+    "Vasco da Gama",
     "Velma",
     "Victor",
     "Victoria",
     "Violet",
     "Washington",
     "Whitney",
+    "William the Conqueror",
     "Wilson",
-    "Wright"
+    "Winston Churchill",
+    "Wright",
+    "Zheng He"
   ],
   "Period Films": [
     "12 Years a Slave",
@@ -11554,6 +11734,11 @@
     "Magazine",
     "Newspaper"
   ],
+  "Philosophers": [
+    "Aristotle",
+    "Plato",
+    "Socrates"
+  ],
   "Philosophical Concepts": [
     "Infinity",
     "Nothing",
@@ -11583,6 +11768,7 @@
     "Faraday",
     "Feynman",
     "Galileo",
+    "Marie Curie",
     "Newton"
   ],
   "Physics Terms": [
@@ -11595,7 +11781,7 @@
     "Pink Panther"
   ],
   "Pink Things": [
-    "Blackpink",
+    "BLACKPINK",
     "Cotton Candy",
     "Flamingo",
     "Pink Panther",
@@ -12239,39 +12425,53 @@
   ],
   "Real People": [
     "Adams",
+    "Aristotle",
+    "Bach",
+    "Beethoven",
     "Bell",
     "Benedict",
     "Bismarck",
     "Caesar",
     "Catherine",
+    "Charlemagne",
+    "Christopher Columbus",
+    "Cleopatra",
     "Cobb",
+    "Copernicus",
     "Curie",
     "Curry",
     "Da Vinci",
     "Dante",
     "Darwin",
     "Dirac",
+    "Drake",
     "Duke",
     "Edison",
     "Einstein",
     "Elizabeth",
     "Faraday",
+    "Ferdinand Magellan",
     "Feynman",
     "Ford",
+    "Franklin D. Roosevelt",
     "Galileo",
+    "George Washington",
     "Graf Zeppelin",
     "Grant",
     "Grover",
+    "Handel",
     "Hawking",
     "Homer",
     "Hoover",
     "Hubble",
     "Jackson",
     "Jefferson",
+    "Joan of Arc",
     "John",
     "Jordan",
     "Kennedy",
     "Kepler",
+    "Khan",
     "King",
     "Kobe",
     "Lando",
@@ -12279,29 +12479,43 @@
     "Lincoln",
     "Madison",
     "Mantle",
+    "Marco Polo",
+    "Marie Curie",
     "Mary Rose",
     "Mays",
+    "Michelangelo",
     "Ming",
     "Morse",
+    "Mozart",
+    "Napoleon Bonaparte",
     "Newton",
     "Obama",
     "Ozymandias",
     "Paul",
     "Peter",
     "Pharaoh",
+    "Plato",
     "Poe",
     "Queen Mary",
     "Roosevelt",
     "Ruth",
+    "Saint Patrick",
     "Shakespeare",
+    "Socrates",
+    "Teresa",
     "Tesla",
+    "Thomas Edison",
     "Trump",
     "Tsar",
+    "Vasco da Gama",
     "Victoria",
     "Washington",
     "Whitney",
+    "William the Conqueror",
     "Wilson",
-    "Wright"
+    "Winston Churchill",
+    "Wright",
+    "Zheng He"
   ],
   "Red Things": [
     "Apple",
@@ -12327,6 +12541,11 @@
     "Tomato",
     "Wonder Woman"
   ],
+  "Religious Figures": [
+    "Joan of Arc",
+    "Saint Patrick",
+    "Teresa"
+  ],
   "Religious Sites": [
     "Jerusalem",
     "Mecca",
@@ -12349,6 +12568,15 @@
   ],
   "Remakes": [
     "West Side Story"
+  ],
+  "Renaissance Figures": [
+    "Christopher Columbus",
+    "Copernicus",
+    "Da Vinci",
+    "Ferdinand Magellan",
+    "Galileo",
+    "Michelangelo",
+    "Vasco da Gama"
   ],
   "Reptiles": [
     "Basilisk",
@@ -12609,6 +12837,13 @@
     "Pharaoh",
     "Tsar"
   ],
+  "Sailors": [
+    "Christopher Columbus",
+    "Drake",
+    "Ferdinand Magellan",
+    "Vasco da Gama",
+    "Zheng He"
+  ],
   "Saints": [
     "Catherine",
     "George",
@@ -12739,7 +12974,10 @@
     "To Say Nothing of the Dog"
   ],
   "Scientists": [
+    "Aristotle",
+    "Copernicus",
     "Curie",
+    "Da Vinci",
     "Darwin",
     "Dirac",
     "Einstein",
@@ -12749,8 +12987,10 @@
     "Hawking",
     "Hubble",
     "Kepler",
+    "Marie Curie",
     "Newton",
-    "Tesla"
+    "Tesla",
+    "Thomas Edison"
   ],
   "Scooby-Doo Characters": [
     "Daphne",
@@ -13256,6 +13496,7 @@
   ],
   "Starts with ARI": [
     "Aries",
+    "Aristotle",
     "Arizona"
   ],
   "Starts with ARK": [
@@ -13453,7 +13694,6 @@
     "Black Hole",
     "Black Panther",
     "Black Widow",
-    "Blackpink",
     "Blade Runner"
   ],
   "Starts with BLE": [
@@ -13651,6 +13891,7 @@
     "Challenger",
     "Chanel",
     "Chariots of Fire",
+    "Charlemagne",
     "Charleston",
     "Charlie",
     "Charlotte's Web"
@@ -13678,6 +13919,7 @@
     "Chorus"
   ],
   "Starts with CHR": [
+    "Christopher Columbus",
     "Chrysler"
   ],
   "Starts with CHU": [
@@ -13743,6 +13985,7 @@
     "Cooler"
   ],
   "Starts with COP": [
+    "Copernicus",
     "Copper",
     "Copycat"
   ],
@@ -14133,6 +14376,7 @@
     "Federation"
   ],
   "Starts with FER": [
+    "Ferdinand Magellan",
     "Ferry"
   ],
   "Starts with FEY": [
@@ -14194,6 +14438,7 @@
     "France",
     "Frankenstein",
     "Frankfort",
+    "Franklin D. Roosevelt",
     "Fraud"
   ],
   "Starts with FRE": [
@@ -14266,6 +14511,7 @@
   ],
   "Starts with GEO": [
     "George",
+    "George Washington",
     "Georgia"
   ],
   "Starts with GER": [
@@ -14705,6 +14951,9 @@
   "Starts with JIN": [
     "Jingle All the Way"
   ],
+  "Starts with JOA": [
+    "Joan of Arc"
+  ],
   "Starts with JOB": [
     "Jobs"
   ],
@@ -15027,7 +15276,9 @@
     "Mantle"
   ],
   "Starts with MAR": [
+    "Marco Polo",
     "Mare",
+    "Marie Curie",
     "Mariner",
     "Marker",
     "Marriott",
@@ -15086,6 +15337,7 @@
     "Miami"
   ],
   "Starts with MIC": [
+    "Michelangelo",
     "Michigan",
     "Mickey",
     "Micronesia",
@@ -15189,7 +15441,8 @@
   ],
   "Starts with NAP": [
     "Napkin",
-    "Naples"
+    "Naples",
+    "Napoleon Bonaparte"
   ],
   "Starts with NAR": [
     "Naruto"
@@ -15515,6 +15768,7 @@
   "Starts with PLA": [
     "Planet",
     "Plastic",
+    "Plato",
     "Platoon"
   ],
   "Starts with PLU": [
@@ -15940,6 +16194,9 @@
     "Snow White and the Seven Dwarfs",
     "Snowman"
   ],
+  "Starts with SOC": [
+    "Socrates"
+  ],
   "Starts with SOF": [
     "Sofa"
   ],
@@ -16268,6 +16525,7 @@
     "Theta"
   ],
   "Starts with THO": [
+    "Thomas Edison",
     "Thor"
   ],
   "Starts with THR": [
@@ -16434,6 +16692,7 @@
     "Vanuatu"
   ],
   "Starts with VAS": [
+    "Vasco da Gama",
     "Vast"
   ],
   "Starts with VAT": [
@@ -16520,11 +16779,13 @@
   ],
   "Starts with WIL": [
     "Wile E. Coyote",
+    "William the Conqueror",
     "Wilson"
   ],
   "Starts with WIN": [
     "Winnie the Pooh",
-    "Winnie-the-Pooh"
+    "Winnie-the-Pooh",
+    "Winston Churchill"
   ],
   "Starts with WIS": [
     "WIS",
@@ -16622,6 +16883,9 @@
   ],
   "Starts with ZEU": [
     "Zeus"
+  ],
+  "Starts with ZHE": [
+    "Zheng He"
   ],
   "Starts with ZIM": [
     "Zimbabwe"
@@ -16890,6 +17154,108 @@
     "Board",
     "Mariner",
     "Ocean"
+  ],
+  "Things American": [
+    "Disney",
+    "Einstein",
+    "Elvis",
+    "Franklin D. Roosevelt",
+    "George Washington",
+    "NASA",
+    "New York",
+    "Thomas Edison",
+    "Wright"
+  ],
+  "Things British": [
+    "Beatles",
+    "Darwin",
+    "Elizabeth",
+    "London",
+    "Newton",
+    "Shakespeare",
+    "Thames",
+    "Victoria",
+    "William the Conqueror",
+    "Winston Churchill"
+  ],
+  "Things Chinese": [
+    "Beijing",
+    "Dragon",
+    "Marco Polo",
+    "Ming",
+    "Panda",
+    "Zheng He"
+  ],
+  "Things Egyptian": [
+    "Alexandria",
+    "Cleopatra",
+    "Nile",
+    "Pharaoh"
+  ],
+  "Things French": [
+    "Charlemagne",
+    "Joan of Arc",
+    "Louvre",
+    "Marie Curie",
+    "Napoleon Bonaparte",
+    "Paris",
+    "William the Conqueror"
+  ],
+  "Things German": [
+    "Bach",
+    "Beethoven",
+    "Berlin",
+    "Charlemagne",
+    "Einstein",
+    "Rhine"
+  ],
+  "Things Greek": [
+    "Aristotle",
+    "Athena",
+    "Athens",
+    "Cleopatra",
+    "Homer",
+    "Olympus",
+    "Plato",
+    "Socrates",
+    "Zeus"
+  ],
+  "Things Italian": [
+    "Caesar",
+    "Christopher Columbus",
+    "Da Vinci",
+    "Dante",
+    "Florence",
+    "Galileo",
+    "Marco Polo",
+    "Michelangelo",
+    "Naples",
+    "Pompeii",
+    "Rome",
+    "Venice",
+    "Vesuvius"
+  ],
+  "Things Japanese": [
+    "Honda",
+    "Pokemon",
+    "Sony",
+    "Tokyo",
+    "Toyota"
+  ],
+  "Things Polish": [
+    "Copernicus",
+    "Marie Curie"
+  ],
+  "Things Portuguese": [
+    "Ferdinand Magellan",
+    "Vasco da Gama"
+  ],
+  "Things Russian": [
+    "Volga"
+  ],
+  "Things Spanish": [
+    "Christopher Columbus",
+    "Ferdinand Magellan"
   ],
   "Thriller Films": [
     "12 Monkeys",
@@ -17177,6 +17543,8 @@
   "US Presidents": [
     "Adams",
     "Ford",
+    "Franklin D. Roosevelt",
+    "George Washington",
     "Grant",
     "Grover",
     "Hoover",
@@ -17311,6 +17679,10 @@
     "Slovakia",
     "Thailand"
   ],
+  "WWII Leaders": [
+    "Franklin D. Roosevelt",
+    "Winston Churchill"
+  ],
   "War Films": [
     "Braveheart",
     "Casablanca",
@@ -17416,6 +17788,15 @@
     "Saw",
     "Spear",
     "Stick"
+  ],
+  "Writers": [
+    "Aristotle",
+    "Dante",
+    "Homer",
+    "Plato",
+    "Poe",
+    "Shakespeare",
+    "Winston Churchill"
   ],
   "Writing Instruments": [
     "Crayon",

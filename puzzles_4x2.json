@@ -162,25 +162,48 @@
   },
   {
     "rows": [
-      "Chinese Dynasties",
-      "Countries",
-      "Starts with MAY",
-      "Airships"
+      "Board Game Equipment",
+      "Airships",
+      "Birds",
+      "Ends with TLE"
     ],
     "cols": [
-      "Foods",
+      "Band Namesakes",
+      "Real People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Queen",
+      "King",
+      "Zeppelin",
+      "Graf Zeppelin",
+      "Crow",
+      "Drake",
+      "Beetle",
+      "Aristotle"
+    ]
+  },
+  {
+    "rows": [
+      "Board Game Equipment",
+      "Airships",
+      "Birds",
+      "Ends with TLE"
+    ],
+    "cols": [
+      "Band Namesakes",
       "People"
     ],
     "size": "4x2",
     "solutions": [
-      "Tang",
-      "Ming",
-      "Turkey",
-      "Chad",
-      "Mayo",
-      "Mays",
-      "Roma",
-      "Graf Zeppelin"
+      "Queen",
+      "King",
+      "Zeppelin",
+      "Graf Zeppelin",
+      "Crow",
+      "Drake",
+      "Beetle",
+      "Aristotle"
     ]
   },
   {
@@ -18033,6 +18056,29 @@
   },
   {
     "rows": [
+      "Ends with AUL",
+      "Airships",
+      "Birds",
+      "Countries"
+    ],
+    "cols": [
+      "Cities",
+      "Real People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Saint Paul",
+      "Paul",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Jordan"
+    ]
+  },
+  {
+    "rows": [
       "Ends with AVE",
       "Adventure Films",
       "Starts with A B",
@@ -18075,6 +18121,29 @@
       "A Beautiful Mind",
       "Wish",
       "Death Wish"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with BUS",
+      "Airships",
+      "Birds",
+      "Countries"
+    ],
+    "cols": [
+      "Cities",
+      "Real People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Columbus",
+      "Christopher Columbus",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Jordan"
     ]
   },
   {
@@ -51843,6 +51912,29 @@
   },
   {
     "rows": [
+      "Ends with VER",
+      "Airships",
+      "Birds",
+      "Countries"
+    ],
+    "cols": [
+      "Cities",
+      "Real People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Denver",
+      "Grover",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Jordan"
+    ]
+  },
+  {
+    "rows": [
       "Ends with VIA",
       "BRICS Nations",
       "Countries that No Longer Exist",
@@ -55937,926 +56029,6 @@
   },
   {
     "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN",
-      "Cities"
-    ],
-    "cols": [
-      "Marvel Characters",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Green Goblin",
-      "Olive",
-      "Beast",
-      "Drake",
-      "Iceman",
-      "Feynman",
-      "Phoenix",
-      "Bismarck"
-    ]
-  },
-  {
-    "rows": [
       "Horror Films",
       "Adventure Films",
       "Crime Films",
@@ -56899,6 +56071,29 @@
       "Venom",
       "Gambit",
       "Joker"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with ILL",
+      "Ends with TLE",
+      "Starts with PRI",
+      "Ends with DAY"
+    ],
+    "cols": [
+      "Japanese Films",
+      "Time Travel Stories"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "From Up on Poppy Hill",
+      "Howl's Moving Castle",
+      "Princess Mononoke",
+      "Only Yesterday",
+      "All You Need Is Kill",
+      "The Man in the High Castle",
+      "Primer",
+      "Groundhog Day"
     ]
   },
   {
@@ -66287,6 +65482,29 @@
   },
   {
     "rows": [
+      "Airships",
+      "Ends with RIA",
+      "Locations in Asia",
+      "Movies"
+    ],
+    "cols": [
+      "Real People",
+      "Roman Cities"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Graf Zeppelin",
+      "Victoria",
+      "Jordan",
+      "Beethoven",
+      "Roma",
+      "Alexandria",
+      "Jerusalem",
+      "Pompeii"
+    ]
+  },
+  {
+    "rows": [
       "Religious Terms",
       "Black Things",
       "Ends with BIT",
@@ -66375,6 +65593,75 @@
       "Trump",
       "Texas",
       "Bismarck"
+    ]
+  },
+  {
+    "rows": [
+      "Royalty",
+      "Airships",
+      "Birds",
+      "Ends with TLE"
+    ],
+    "cols": [
+      "Band Namesakes",
+      "Real People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Queen",
+      "King",
+      "Zeppelin",
+      "Graf Zeppelin",
+      "Crow",
+      "Drake",
+      "Beetle",
+      "Aristotle"
+    ]
+  },
+  {
+    "rows": [
+      "Royalty",
+      "Airships",
+      "Birds",
+      "Ends with TLE"
+    ],
+    "cols": [
+      "Band Namesakes",
+      "People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Queen",
+      "King",
+      "Zeppelin",
+      "Graf Zeppelin",
+      "Crow",
+      "Drake",
+      "Beetle",
+      "Aristotle"
+    ]
+  },
+  {
+    "rows": [
+      "Saints",
+      "Airships",
+      "Birds",
+      "Countries"
+    ],
+    "cols": [
+      "Cities",
+      "Real People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "San Juan",
+      "Catherine",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Jordan"
     ]
   },
   {
@@ -68058,52 +67345,6 @@
   },
   {
     "rows": [
-      "Shakespeare Characters",
-      "Birds",
-      "Board Game Equipment",
-      "Ends with CAR"
-    ],
-    "cols": [
-      "Black and White",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Othello",
-      "Caesar",
-      "Magpie",
-      "Drake",
-      "Chessboard",
-      "King",
-      "Police Car",
-      "Oscar"
-    ]
-  },
-  {
-    "rows": [
-      "Shakespeare Characters",
-      "Birds",
-      "Board Game Equipment",
-      "Ends with CAR"
-    ],
-    "cols": [
-      "Black and White",
-      "Fictional People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Othello",
-      "Cleopatra",
-      "Magpie",
-      "Sam",
-      "Chessboard",
-      "King",
-      "Police Car",
-      "Oscar"
-    ]
-  },
-  {
-    "rows": [
       "Small Countries",
       "Countries in North America",
       "Countries that No Longer Exist",
@@ -69595,29 +68836,6 @@
       "A Christmas Story",
       "Alice in Wonderland",
       "La La Land"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with BEE",
-      "Ends with ANT",
-      "Ends with TER",
-      "Associated with Edgar Allan Poe"
-    ],
-    "cols": [
-      "People",
-      "Types of Animals"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Beethoven",
-      "Beetle",
-      "Grant",
-      "Cormorant",
-      "Peter",
-      "Lobster",
-      "Lenore",
-      "Raven"
     ]
   },
   {
@@ -77695,6 +76913,29 @@
   },
   {
     "rows": [
+      "Starts with JEF",
+      "Airships",
+      "Birds",
+      "Countries"
+    ],
+    "cols": [
+      "Cities",
+      "Real People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Jefferson City",
+      "Jefferson",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Jordan"
+    ]
+  },
+  {
+    "rows": [
       "Starts with KIR",
       "Countries in Asia",
       "Former French Colonies",
@@ -77787,25 +77028,25 @@
   },
   {
     "rows": [
-      "Starts with MAL",
-      "Countries in North America",
-      "Countries in Oceania",
-      "Ends with ARD"
+      "Starts with LAN",
+      "Airships",
+      "Birds",
+      "Countries"
     ],
     "cols": [
-      "Archipelagos",
-      "Islands"
+      "Cities",
+      "Real People"
     ],
     "size": "4x2",
     "solutions": [
-      "Maldives",
-      "Malta",
-      "Bahamas",
-      "Antigua and Barbuda",
-      "Fiji",
-      "Nauru",
-      "Svalbard",
-      "Martha's Vineyard"
+      "Lansing",
+      "Lando",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Jordan"
     ]
   },
   {
@@ -77833,1244 +77074,71 @@
   },
   {
     "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
+      "Starts with MAL",
+      "Countries in North America",
+      "Countries in Oceania",
+      "Ends with ARD"
     ],
     "cols": [
-      "Islands",
-      "People"
+      "Archipelagos",
+      "Islands"
     ],
     "size": "4x2",
     "solutions": [
-      "Mindanao",
-      "Ming",
+      "Maldives",
+      "Malta",
+      "Bahamas",
       "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
+      "Fiji",
+      "Nauru",
+      "Svalbard",
+      "Martha's Vineyard"
     ]
   },
   {
     "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
+      "Starts with NAP",
+      "Airships",
+      "Birds",
+      "Countries"
     ],
     "cols": [
-      "Islands",
-      "People"
+      "Cities",
+      "Real People"
     ],
     "size": "4x2",
     "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
+      "Naples",
+      "Napoleon Bonaparte",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Jordan"
     ]
   },
   {
     "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
+      "Starts with NAP",
+      "Airships",
+      "Birds",
+      "Countries"
     ],
     "cols": [
-      "Islands",
+      "Cities",
       "People"
     ],
     "size": "4x2",
     "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with MIN",
-      "Countries",
-      "Starts with MAN",
-      "Astronomical Objects"
-    ],
-    "cols": [
-      "Islands",
-      "People"
-    ],
-    "size": "4x2",
-    "solutions": [
-      "Mindanao",
-      "Ming",
-      "Antigua and Barbuda",
-      "Chad",
-      "Manhattan",
-      "Mantle",
-      "Europa",
-      "Aurora"
+      "Naples",
+      "Napoleon Bonaparte",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Chad"
     ]
   },
   {
@@ -79232,6 +77300,52 @@
       "A Christmas Story",
       "Alice in Wonderland",
       "La La Land"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SAI",
+      "Airships",
+      "Birds",
+      "Countries"
+    ],
+    "cols": [
+      "Cities",
+      "Real People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Saint Paul",
+      "Saint Patrick",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Jordan"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with SAI",
+      "Airships",
+      "Birds",
+      "Countries"
+    ],
+    "cols": [
+      "Cities",
+      "People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Saint Paul",
+      "Saint Patrick",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Chad"
     ]
   },
   {
@@ -80980,6 +79094,75 @@
       "The Lion King",
       "Encanto",
       "Zootopia"
+    ]
+  },
+  {
+    "rows": [
+      "Things British",
+      "Airships",
+      "Birds",
+      "Ends with TLE"
+    ],
+    "cols": [
+      "Band Namesakes",
+      "Locations in North America"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Beatles",
+      "Victoria",
+      "Zeppelin",
+      "Los Angeles",
+      "Crow",
+      "Phoenix",
+      "Beetle",
+      "Seattle"
+    ]
+  },
+  {
+    "rows": [
+      "Things German",
+      "Airships",
+      "Birds",
+      "Countries"
+    ],
+    "cols": [
+      "Cities",
+      "Real People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Berlin",
+      "Bach",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Jordan"
+    ]
+  },
+  {
+    "rows": [
+      "Things German",
+      "Airships",
+      "Birds",
+      "Countries"
+    ],
+    "cols": [
+      "Cities",
+      "People"
+    ],
+    "size": "4x2",
+    "solutions": [
+      "Berlin",
+      "Bach",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Phoenix",
+      "Drake",
+      "Monaco",
+      "Chad"
     ]
   }
 ]

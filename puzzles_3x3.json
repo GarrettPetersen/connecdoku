@@ -337,26 +337,26 @@
   },
   {
     "rows": [
-      "Green Things",
-      "Types of Animals",
-      "Ends with MAN"
+      "Japanese Films",
+      "Books",
+      "People"
     ],
     "cols": [
-      "Avengers",
-      "People",
-      "DC Characters"
+      "Ends with ILL",
+      "Ends with TLE",
+      "Starts with PRI"
     ],
     "size": "3x3",
     "solutions": [
-      "Hulk",
-      "Olive",
-      "Green Arrow",
-      "Black Panther",
-      "Drake",
-      "Penguin",
-      "Iron Man",
-      "Feynman",
-      "Batman"
+      "From Up on Poppy Hill",
+      "Howl's Moving Castle",
+      "Princess Mononoke",
+      "All You Need Is Kill",
+      "The Man in the High Castle",
+      "Pride and Prejudice",
+      "Winston Churchill",
+      "Aristotle",
+      "Prince"
     ]
   },
   {
@@ -716,7 +716,31 @@
       "Beetle",
       "Graf Zeppelin",
       "Drake",
-      "Mantle"
+      "Aristotle"
+    ]
+  },
+  {
+    "rows": [
+      "Place Names",
+      "Band Namesakes",
+      "Real People"
+    ],
+    "cols": [
+      "Airships",
+      "Birds",
+      "Ends with TLE"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Akron",
+      "Phoenix",
+      "Seattle",
+      "Zeppelin",
+      "Crow",
+      "Beetle",
+      "Graf Zeppelin",
+      "Drake",
+      "Aristotle"
     ]
   },
   {
@@ -5517,6 +5541,54 @@
       "Toy Story",
       "Die Hard",
       "Harry Potter and the Chamber of Secrets"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with DRA",
+      "Ends with ILL",
+      "Ends with TLE"
+    ],
+    "cols": [
+      "Anime",
+      "Books",
+      "Historical Figures"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Dragon Ball",
+      "Dracula",
+      "Drake",
+      "From Up on Poppy Hill",
+      "All You Need Is Kill",
+      "Winston Churchill",
+      "Howl's Moving Castle",
+      "The Man in the High Castle",
+      "Aristotle"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with DRA",
+      "Ends with ILL",
+      "Ends with TLE"
+    ],
+    "cols": [
+      "Anime",
+      "Books",
+      "People"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Dragon Ball",
+      "Dracula",
+      "Drake",
+      "From Up on Poppy Hill",
+      "All You Need Is Kill",
+      "Winston Churchill",
+      "Howl's Moving Castle",
+      "The Man in the High Castle",
+      "Aristotle"
     ]
   },
   {
@@ -19197,6 +19269,30 @@
       "Crow",
       "Drake",
       "Phoenix"
+    ]
+  },
+  {
+    "rows": [
+      "Things Italian",
+      "Airships",
+      "Starts with HER"
+    ],
+    "cols": [
+      "Ancient Cities",
+      "Ends with LES",
+      "People"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Pompeii",
+      "Naples",
+      "Caesar",
+      "Roma",
+      "Los Angeles",
+      "Graf Zeppelin",
+      "Herculaneum",
+      "Hercules",
+      "Hermes"
     ]
   },
   {

@@ -138,6 +138,7 @@
     "Roman Cities",
     "Roman Empire",
     "Starts with POM",
+    "Things Italian",
     "Volcanoes"
   ],
   "Krakatoa": [
@@ -256,6 +257,7 @@
     "Place Names",
     "Roman Empire",
     "Starts with VES",
+    "Things Italian",
     "Volcanoes"
   ],
   "St. Helens": [
@@ -313,7 +315,8 @@
     "Place Names",
     "Roman Cities",
     "Roman Empire",
-    "Starts with ROM"
+    "Starts with ROM",
+    "Things Italian"
   ],
   "Carthage": [
     "Ancient Cities",
@@ -363,14 +366,16 @@
     "Ends with ICE",
     "Historic Trade Cities",
     "Place Names",
-    "Starts with VEN"
+    "Starts with VEN",
+    "Things Italian"
   ],
   "Florence": [
     "Cities",
     "Cities in Italy",
     "Ends with NCE",
     "Place Names",
-    "Starts with FLO"
+    "Starts with FLO",
+    "Things Italian"
   ],
   "Milan": [
     "Cities",
@@ -382,7 +387,8 @@
     "Cities",
     "Cities in Italy",
     "Ends with LES",
-    "Starts with NAP"
+    "Starts with NAP",
+    "Things Italian"
   ],
   "Turin": [
     "Cities",
@@ -567,42 +573,57 @@
     "Cities",
     "Ends with RIA",
     "Female Names",
+    "Historical Figures",
     "Islands",
     "Locations in North America",
+    "Modern Rulers",
     "National Leaders",
     "People",
     "Place Names",
     "Queens",
     "Real People",
-    "Starts with VIC"
+    "Starts with VIC",
+    "Things British"
   ],
   "Elizabeth": [
     "British Monarchs",
     "British Royals",
     "Ends with ETH",
     "Female Names",
+    "Historical Figures",
+    "Modern Rulers",
     "Monarchs",
     "National Leaders",
     "People",
     "Queens",
     "Real People",
-    "Starts with ELI"
+    "Starts with ELI",
+    "Things British"
   ],
   "Newton": [
     "Ends with TON",
+    "Enlightenment Figures",
+    "Historical Figures",
+    "Mathematicians",
     "People",
     "Physicists",
     "Real People",
     "Scientists",
-    "Starts with NEW"
+    "Starts with NEW",
+    "Things British"
   ],
   "Einstein": [
     "Ends with EIN",
+    "Historical Figures",
+    "Modern Figures",
+    "Nobel Prize Winners",
     "People",
     "Physicists",
     "Real People",
     "Scientists",
-    "Starts with EIN"
+    "Starts with EIN",
+    "Things American",
+    "Things German"
   ],
   "Feynman": [
     "Ends with MAN",
@@ -632,19 +653,23 @@
     "People",
     "Real People",
     "Scientists",
-    "Starts with DAR"
+    "Starts with DAR",
+    "Things British"
   ],
   "Galileo": [
     "Astronomers",
     "Ends with LEO",
+    "Historical Figures",
     "Inventors",
     "People",
     "Physicists",
     "Real People",
+    "Renaissance Figures",
     "Scientists",
     "Space Missions",
     "Space Telescopes",
-    "Starts with GAL"
+    "Starts with GAL",
+    "Things Italian"
   ],
   "Faraday": [
     "Ends with DAY",
@@ -656,11 +681,15 @@
     "Starts with FAR"
   ],
   "Wright": [
+    "Aviation Pioneers",
     "Ends with GHT",
+    "Historical Figures",
     "Inventors",
+    "Modern Figures",
     "People",
     "Real People",
-    "Starts with WRI"
+    "Starts with WRI",
+    "Things American"
   ],
   "Paris": [
     "Ancient Cities",
@@ -672,6 +701,7 @@
     "National Capitals",
     "Place Names",
     "Starts with PAR",
+    "Things French",
     "Trojan War"
   ],
   "London": [
@@ -681,7 +711,8 @@
     "Locations in Europe",
     "National Capitals",
     "Place Names",
-    "Starts with LON"
+    "Starts with LON",
+    "Things British"
   ],
   "Berlin": [
     "Cities",
@@ -690,7 +721,8 @@
     "Locations in Europe",
     "National Capitals",
     "Place Names",
-    "Starts with BER"
+    "Starts with BER",
+    "Things German"
   ],
   "Dublin": [
     "Cities",
@@ -711,7 +743,8 @@
     "Ends with ENS",
     "National Capitals",
     "Place Names",
-    "Starts with ATH"
+    "Starts with ATH",
+    "Things Greek"
   ],
   "Sydney": [
     "Ends with NEY",
@@ -938,7 +971,8 @@
   "Zeus": [
     "Ends with EUS",
     "Greek Gods",
-    "Starts with ZEU"
+    "Starts with ZEU",
+    "Things Greek"
   ],
   "Hades": [
     "Ends with DES",
@@ -977,14 +1011,16 @@
     "Cars",
     "Companies",
     "Ends with NDA",
-    "Starts with HON"
+    "Starts with HON",
+    "Things Japanese"
   ],
   "Toyota": [
     "Car Brands",
     "Cars",
     "Companies",
     "Ends with OTA",
-    "Starts with TOY"
+    "Starts with TOY",
+    "Things Japanese"
   ],
   "Dodge": [
     "Car Brands",
@@ -1252,6 +1288,7 @@
     "Herbivores",
     "Mammals",
     "Starts with PAN",
+    "Things Chinese",
     "Types of Animals"
   ],
   "Zebra": [
@@ -1569,7 +1606,8 @@
     "Locations in Asia",
     "National Capitals",
     "Place Names",
-    "Starts with TOK"
+    "Starts with TOK",
+    "Things Japanese"
   ],
   "Beijing": [
     "Cities",
@@ -1578,7 +1616,8 @@
     "Locations in Asia",
     "National Capitals",
     "Place Names",
-    "Starts with BEI"
+    "Starts with BEI",
+    "Things Chinese"
   ],
   "Brasilia": [
     "Cities",
@@ -1654,7 +1693,8 @@
   "Nile": [
     "Ends with ILE",
     "Rivers",
-    "Starts with NIL"
+    "Starts with NIL",
+    "Things Egyptian"
   ],
   "Amazon": [
     "Companies",
@@ -1688,17 +1728,20 @@
   "Volga": [
     "Ends with LGA",
     "Rivers",
-    "Starts with VOL"
+    "Starts with VOL",
+    "Things Russian"
   ],
   "Thames": [
     "Ends with MES",
     "Rivers",
-    "Starts with THA"
+    "Starts with THA",
+    "Things British"
   ],
   "Rhine": [
     "Ends with INE",
     "Rivers",
-    "Starts with RHI"
+    "Starts with RHI",
+    "Things German"
   ],
   "Seine": [
     "Ends with INE",
@@ -1744,11 +1787,16 @@
     "Starts with WHI"
   ],
   "Da Vinci": [
+    "Artists",
     "Ends with NCI",
+    "Historical Figures",
     "Inventors",
     "People",
     "Real People",
-    "Starts with DA "
+    "Renaissance Figures",
+    "Scientists",
+    "Starts with DA ",
+    "Things Italian"
   ],
   "Adams": [
     "Ends with AMS",
@@ -1875,6 +1923,7 @@
     "Place Names",
     "Starts with NEW",
     "State Capitals",
+    "Things American",
     "US States"
   ],
   "Michigan": [
@@ -2179,7 +2228,8 @@
     "Magic",
     "Mythical Creatures",
     "Reptiles",
-    "Starts with DRA"
+    "Starts with DRA",
+    "Things Chinese"
   ],
   "Unicorn": [
     "Ends with ORN",
@@ -2444,7 +2494,8 @@
   "Beatles": [
     "Band Namesakes",
     "Ends with LES",
-    "Starts with BEA"
+    "Starts with BEA",
+    "Things British"
   ],
   "Lenore": [
     "Associated with Edgar Allan Poe",
@@ -2557,7 +2608,8 @@
     "Ends with RIA",
     "Historic Trade Cities",
     "Roman Cities",
-    "Starts with ALE"
+    "Starts with ALE",
+    "Things Egyptian"
   ],
   "Antioch": [
     "Ancient Cities",
@@ -2709,17 +2761,21 @@
   ],
   "Homer": [
     "Ends with MER",
+    "Historical Figures",
     "Male Names",
     "People",
     "Poets",
     "Real People",
     "Single Name Writers",
     "Starts with HOM",
-    "Trojan War"
+    "Things Greek",
+    "Trojan War",
+    "Writers"
   ],
   "Mary": [
     "Ends with ARY",
     "Female Names",
+    "Historical Figures",
     "People",
     "Saints",
     "Starts with MAR"
@@ -2732,37 +2788,50 @@
     "Starts with ANN"
   ],
   "Cleopatra": [
+    "Ancient Rulers",
     "Ends with TRA",
     "Female Names",
     "Fictional People",
+    "Historical Figures",
     "People",
+    "Real People",
     "Shakespeare Characters",
-    "Starts with CLE"
+    "Starts with CLE",
+    "Things Egyptian",
+    "Things Greek"
   ],
   "Poe": [
     "Ends with POE",
+    "Historical Figures",
     "People",
     "Poets",
     "Real People",
     "Single Name Writers",
-    "Starts with POE"
+    "Starts with POE",
+    "Writers"
   ],
   "Dante": [
     "Ends with NTE",
+    "Historical Figures",
     "People",
     "Poets",
     "Real People",
     "Single Name Writers",
     "Starts with DAN",
-    "The Bad Place"
+    "The Bad Place",
+    "Things Italian",
+    "Writers"
   ],
   "Shakespeare": [
     "Ends with ARE",
+    "Historical Figures",
     "People",
     "Poets",
     "Real People",
     "Single Name Writers",
-    "Starts with SHA"
+    "Starts with SHA",
+    "Things British",
+    "Writers"
   ],
   "Achilles": [
     "Body Parts",
@@ -3012,7 +3081,8 @@
     "Salad Dressings",
     "Salads",
     "Shakespeare Characters",
-    "Starts with CAE"
+    "Starts with CAE",
+    "Things Italian"
   ],
   "Waldorf": [
     "Ends with ORF",
@@ -3104,25 +3174,33 @@
   "Khan": [
     "Ends with HAN",
     "Fictional People",
+    "Historical Figures",
+    "Medieval Rulers",
     "People",
+    "Real People",
     "Rulers",
     "Star Trek",
     "Starts with KHA",
     "Titles of Rank"
   ],
   "Pharaoh": [
+    "Ancient Rulers",
     "Ends with AOH",
     "Fictional People",
+    "Historical Figures",
     "Monarchs",
     "People",
     "Real People",
     "Rulers",
     "Starts with PHA",
+    "Things Egyptian",
     "Titles of Rank"
   ],
   "Tsar": [
+    "Ancient Rulers",
     "Ends with SAR",
     "Fictional People",
+    "Historical Figures",
     "Monarchs",
     "People",
     "Real People",
@@ -3348,7 +3426,8 @@
     "Art Museums",
     "Ends with VRE",
     "Museums",
-    "Starts with LOU"
+    "Starts with LOU",
+    "Things French"
   ],
   "Prado": [
     "Art Museums",
@@ -3563,6 +3642,8 @@
   ],
   "Grant": [
     "Ends with ANT",
+    "Historical Figures",
+    "Military Leaders",
     "National Leaders",
     "People",
     "Real People",
@@ -3572,6 +3653,8 @@
   "Catherine": [
     "Ends with INE",
     "Female Names",
+    "Historical Figures",
+    "Modern Rulers",
     "National Leaders",
     "People",
     "Real People",
@@ -3581,7 +3664,10 @@
   "Teresa": [
     "Ends with ESA",
     "Female Names",
+    "Historical Figures",
     "People",
+    "Real People",
+    "Religious Figures",
     "Saints",
     "Starts with TER"
   ],
@@ -3663,12 +3749,15 @@
     "Starts with SON"
   ],
   "Ming": [
+    "Ancient Rulers",
     "Athletes",
     "Chinese Dynasties",
     "Ends with ING",
+    "Historical Figures",
     "People",
     "Real People",
-    "Starts with MIN"
+    "Starts with MIN",
+    "Things Chinese"
   ],
   "Note": [
     "Ends with OTE",
@@ -3782,7 +3871,8 @@
     "Fictional People",
     "Greek Gods",
     "People",
-    "Starts with ATH"
+    "Starts with ATH",
+    "Things Greek"
   ],
   "Apollo": [
     "Battlestar Galactica",
@@ -4401,7 +4491,8 @@
     "Companies",
     "Ends with NEY",
     "Media Companies",
-    "Starts with DIS"
+    "Starts with DIS",
+    "Things American"
   ],
   "Pixar": [
     "Companies",
@@ -4892,6 +4983,7 @@
     "Mythical Creatures",
     "Starts with POK",
     "TV Shows",
+    "Things Japanese",
     "Video Games"
   ],
   "Yugioh": [
@@ -5211,7 +5303,8 @@
     "Ends with ASA",
     "Organizations",
     "Space Missions",
-    "Starts with NAS"
+    "Starts with NAS",
+    "Things American"
   ],
   "NATO": [
     "Acronyms",
@@ -5242,10 +5335,13 @@
   "Drake": [
     "Birds",
     "Ends with AKE",
+    "Historical Figures",
     "Male Animals",
     "Male Names",
     "Musicians",
     "People",
+    "Real People",
+    "Sailors",
     "Starts with DRA",
     "Types of Animals"
   ],
@@ -5618,7 +5714,8 @@
     "Male Names",
     "Musicians",
     "People",
-    "Starts with ELV"
+    "Starts with ELV",
+    "Things American"
   ],
   "Madonna": [
     "Ends with NNA",
@@ -5784,8 +5881,10 @@
     "Starts with EXO"
   ],
   "BLACKPINK": [
+    "Black Things",
     "Ends with INK",
     "K-pop",
+    "Pink Things",
     "Starts with BLA"
   ],
   "Seventeen": [
@@ -5993,12 +6092,6 @@
     "Shades of Green",
     "Starts with EME"
   ],
-  "Blackpink": [
-    "Black Things",
-    "Ends with INK",
-    "Pink Things",
-    "Starts with BLA"
-  ],
   "Flamingo": [
     "Birds",
     "Ends with NGO",
@@ -6143,7 +6236,8 @@
     "Ends with ONY",
     "Photography Terms",
     "Starts with SON",
-    "Tech Companies"
+    "Tech Companies",
+    "Things Japanese"
   ],
   "Olympus": [
     "Camera Companies",
@@ -6155,7 +6249,8 @@
     "Photography Terms",
     "Place Names",
     "Starts with OLY",
-    "Tech Companies"
+    "Tech Companies",
+    "Things Greek"
   ],
   "Leica": [
     "Camera Companies",
@@ -6572,35 +6667,49 @@
   ],
   "Bach": [
     "Classical Composers",
+    "Composers",
     "Ends with ACH",
+    "Historical Figures",
     "Male Names",
     "Music",
     "People",
-    "Starts with BAC"
+    "Real People",
+    "Starts with BAC",
+    "Things German"
   ],
   "Mozart": [
     "Classical Composers",
+    "Composers",
     "Ends with ART",
+    "Historical Figures",
     "Male Names",
     "Music",
     "People",
+    "Real People",
     "Starts with MOZ"
   ],
   "Beethoven": [
     "Classical Composers",
+    "Composers",
     "Ends with VEN",
+    "Historical Figures",
     "Male Names",
     "Movies",
     "Music",
     "People",
-    "Starts with BEE"
+    "Real People",
+    "Starts with BEE",
+    "Things German"
   ],
   "Handel": [
     "Classical Composers",
+    "Composers",
     "Ends with DEL",
+    "Historical Figures",
     "Male Names",
     "Music",
     "People",
+    "Real People",
     "Starts with HAN"
   ],
   "Melody": [
@@ -7358,6 +7467,10 @@
   "Saint Patrick": [
     "Ends with ICK",
     "Green Things",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Religious Figures",
     "Saints",
     "Starts with SAI"
   ],
@@ -15355,5 +15468,223 @@
     "Place Names",
     "Republics",
     "Starts with SUD"
+  ],
+  "Marco Polo": [
+    "Ends with OLO",
+    "Explorers",
+    "Historical Figures",
+    "Medieval Figures",
+    "People",
+    "Real People",
+    "Starts with MAR",
+    "Things Chinese",
+    "Things Italian"
+  ],
+  "Christopher Columbus": [
+    "Ends with BUS",
+    "Explorers",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Renaissance Figures",
+    "Sailors",
+    "Starts with CHR",
+    "Things Italian",
+    "Things Spanish"
+  ],
+  "Socrates": [
+    "Ancient Figures",
+    "Ends with TES",
+    "Historical Figures",
+    "People",
+    "Philosophers",
+    "Real People",
+    "Starts with SOC",
+    "Things Greek"
+  ],
+  "Vasco da Gama": [
+    "Ends with AMA",
+    "Explorers",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Renaissance Figures",
+    "Sailors",
+    "Starts with VAS",
+    "Things Portuguese"
+  ],
+  "Ferdinand Magellan": [
+    "Ends with LAN",
+    "Explorers",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Renaissance Figures",
+    "Sailors",
+    "Starts with FER",
+    "Things Portuguese",
+    "Things Spanish"
+  ],
+  "Zheng He": [
+    "Ends with  HE",
+    "Explorers",
+    "Historical Figures",
+    "Medieval Figures",
+    "People",
+    "Real People",
+    "Sailors",
+    "Starts with ZHE",
+    "Things Chinese"
+  ],
+  "Plato": [
+    "Ancient Figures",
+    "Ends with ATO",
+    "Historical Figures",
+    "People",
+    "Philosophers",
+    "Real People",
+    "Starts with PLA",
+    "Things Greek",
+    "Writers"
+  ],
+  "Aristotle": [
+    "Ancient Figures",
+    "Ends with TLE",
+    "Historical Figures",
+    "People",
+    "Philosophers",
+    "Real People",
+    "Scientists",
+    "Starts with ARI",
+    "Things Greek",
+    "Writers"
+  ],
+  "Michelangelo": [
+    "Artists",
+    "Ends with ELO",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Renaissance Figures",
+    "Starts with MIC",
+    "Things Italian"
+  ],
+  "Copernicus": [
+    "Astronomers",
+    "Ends with CUS",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Renaissance Figures",
+    "Scientists",
+    "Starts with COP",
+    "Things Polish"
+  ],
+  "Charlemagne": [
+    "Ends with GNE",
+    "Historical Figures",
+    "Medieval Figures",
+    "Medieval Rulers",
+    "People",
+    "Real People",
+    "Starts with CHA",
+    "Things French",
+    "Things German"
+  ],
+  "William the Conqueror": [
+    "Ends with ROR",
+    "Historical Figures",
+    "Medieval Figures",
+    "Medieval Rulers",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Starts with WIL",
+    "Things British",
+    "Things French"
+  ],
+  "Joan of Arc": [
+    "Ends with ARC",
+    "Historical Figures",
+    "Medieval Figures",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Starts with JOA",
+    "Things French"
+  ],
+  "Napoleon Bonaparte": [
+    "Ends with RTE",
+    "Historical Figures",
+    "Military Leaders",
+    "Modern Figures",
+    "Modern Rulers",
+    "People",
+    "Real People",
+    "Starts with NAP",
+    "Things French"
+  ],
+  "George Washington": [
+    "Ends with TON",
+    "Historical Figures",
+    "Military Leaders",
+    "Modern Figures",
+    "Modern Rulers",
+    "People",
+    "Real People",
+    "Starts with GEO",
+    "Things American",
+    "US Presidents"
+  ],
+  "Marie Curie": [
+    "Ends with RIE",
+    "Historical Figures",
+    "Modern Figures",
+    "Nobel Prize Winners",
+    "People",
+    "Physicists",
+    "Real People",
+    "Scientists",
+    "Starts with MAR",
+    "Things French",
+    "Things Polish"
+  ],
+  "Winston Churchill": [
+    "Ends with ILL",
+    "Historical Figures",
+    "Military Leaders",
+    "Modern Figures",
+    "Modern Rulers",
+    "Nobel Prize Winners",
+    "People",
+    "Real People",
+    "Starts with WIN",
+    "Things British",
+    "WWII Leaders",
+    "Writers"
+  ],
+  "Franklin D. Roosevelt": [
+    "Ends with ELT",
+    "Historical Figures",
+    "Modern Figures",
+    "Modern Rulers",
+    "People",
+    "Real People",
+    "Starts with FRA",
+    "Things American",
+    "US Presidents",
+    "WWII Leaders"
+  ],
+  "Thomas Edison": [
+    "Ends with SON",
+    "Historical Figures",
+    "Inventors",
+    "Modern Figures",
+    "People",
+    "Real People",
+    "Scientists",
+    "Starts with THO",
+    "Things American"
   ]
 }

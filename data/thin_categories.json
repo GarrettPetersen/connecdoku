@@ -5,8 +5,20 @@
   "Movies featuring Kathy Bates": [
     "Titanic"
   ],
+  "Enlightenment Figures": [
+    "Newton"
+  ],
+  "Mathematicians": [
+    "Newton"
+  ],
+  "Aviation Pioneers": [
+    "Wright"
+  ],
   "Movies directed by Robert Schwentke": [
     "Red"
+  ],
+  "Things Russian": [
+    "Volga"
   ],
   "Movies directed by Orson Welles": [
     "Othello"
@@ -1646,10 +1658,6 @@
   "Movies featuring Cillian Murphy": [
     "Oppenheimer"
   ],
-  "Astronomers": [
-    "Galileo",
-    "Kepler"
-  ],
   "Golf Terms": [
     "Green",
     "Club"
@@ -1661,6 +1669,10 @@
   "Cities in South America": [
     "Brasilia",
     "Lima"
+  ],
+  "Artists": [
+    "Da Vinci",
+    "Michelangelo"
   ],
   "Norse Gods": [
     "Loki",
@@ -2046,10 +2058,36 @@
     "Moonlight",
     "Green Book"
   ],
+  "Things Spanish": [
+    "Christopher Columbus",
+    "Ferdinand Magellan"
+  ],
+  "Things Portuguese": [
+    "Vasco da Gama",
+    "Ferdinand Magellan"
+  ],
+  "Things Polish": [
+    "Copernicus",
+    "Marie Curie"
+  ],
+  "WWII Leaders": [
+    "Winston Churchill",
+    "Franklin D. Roosevelt"
+  ],
   "Movies featuring Kate Winslet": [
     "Titanic",
     "Sense and Sensibility",
     "The Holiday"
+  ],
+  "Nobel Prize Winners": [
+    "Einstein",
+    "Marie Curie",
+    "Winston Churchill"
+  ],
+  "Astronomers": [
+    "Galileo",
+    "Kepler",
+    "Copernicus"
   ],
   "Star": [
     "Milky Way",
@@ -2071,10 +2109,20 @@
     "Perseus",
     "Theseus"
   ],
+  "Medieval Rulers": [
+    "Khan",
+    "Charlemagne",
+    "William the Conqueror"
+  ],
   "Software": [
     "Data",
     "INT",
     "Key"
+  ],
+  "Religious Figures": [
+    "Teresa",
+    "Saint Patrick",
+    "Joan of Arc"
   ],
   "Epic Poems": [
     "Inferno",
@@ -2240,5 +2288,15 @@
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Two Towers",
     "The Lord of the Rings: The Return of the King"
+  ],
+  "Ancient Figures": [
+    "Socrates",
+    "Plato",
+    "Aristotle"
+  ],
+  "Philosophers": [
+    "Socrates",
+    "Plato",
+    "Aristotle"
   ]
 }
