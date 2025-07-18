@@ -14,32 +14,27 @@ let totalWords = 0;
 for (const [word, categories] of Object.entries(wordsData)) {
     totalWords++;
 
-    // Only process words with 3 or more letters
+    // Remove all existing "Starts with" and "Ends with" categories from ALL words
+    const newCategories = categories.filter(category =>
+        !category.startsWith('Starts with ') && !category.startsWith('Ends with ')
+    );
+
+    // Only add new pattern tags to words with 3 or more letters
     if (word.length >= 3) {
         const startsWith = `Starts with ${word.substring(0, 3).toUpperCase()}`;
         const endsWith = `Ends with ${word.substring(word.length - 3).toUpperCase()}`;
 
-        let updated = false;
-        const newCategories = [...categories];
+        // Add "Starts with" category
+        newCategories.push(startsWith);
 
-        // Add "Starts with" category if not already present
-        if (!categories.includes(startsWith)) {
-            newCategories.push(startsWith);
-            updated = true;
-        }
+        // Add "Ends with" category
+        newCategories.push(endsWith);
 
-        // Add "Ends with" category if not already present
-        if (!categories.includes(endsWith)) {
-            newCategories.push(endsWith);
-            updated = true;
-        }
-
-        // Update the word's categories if changes were made
-        if (updated) {
-            wordsData[word] = newCategories.sort();
-            updatedCount++;
-        }
+        updatedCount++;
     }
+
+    // Update the word's categories (for all words, to remove old pattern tags)
+    wordsData[word] = newCategories.sort();
 }
 
 // Write the updated data back to the file
