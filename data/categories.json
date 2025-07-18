@@ -231,16 +231,22 @@
     "X-Men: Days of Future Past"
   ],
   "Adventure Stories": [
+    "Don Quixote",
     "Dune",
+    "Journey to the West",
     "Moby Dick",
     "Percy Jackson & the Olympians",
     "The Alchemist",
     "The Chronicles of Narnia",
+    "The Count of Monte Cristo",
     "The Hobbit",
     "The Hunger Games",
     "The Iliad",
+    "The Jungle Book",
     "The Lord of the Rings",
-    "The Odyssey"
+    "The Odyssey",
+    "The Ramayana",
+    "Water Margin"
   ],
   "Airships": [
     "Akron",
@@ -285,6 +291,12 @@
     "Ming",
     "Pharaoh",
     "Tsar"
+  ],
+  "Animal Stories": [
+    "The Jungle Book",
+    "The Tale of Peter Rabbit",
+    "The Wind in the Willows",
+    "Winnie-the-Pooh"
   ],
   "Animals": [
     "Pinky",
@@ -739,7 +751,10 @@
     "Beloved",
     "Brave New World",
     "Charlotte's Web",
+    "Crime and Punishment",
+    "Don Quixote",
     "Dracula",
+    "Dream of the Red Chamber",
     "Dune",
     "Fahrenheit 451",
     "Frankenstein",
@@ -758,25 +773,32 @@
     "Iliad",
     "Inferno",
     "Jane Eyre",
+    "Journey to the West",
     "Kindred",
+    "Les Misérables",
     "Little Women",
     "Matilda",
     "Moby Dick",
     "Odyssey",
     "Oh, the Places You'll Go!",
+    "One Hundred Years of Solitude",
     "Outlander",
     "Percy Jackson & the Olympians",
     "Peter Pan",
     "Pride and Prejudice",
+    "Romance of the Three Kingdoms",
     "Salem",
     "Salem's Lot",
     "Slaughterhouse-Five",
     "The Alchemist",
     "The Anubis Gates",
+    "The Brothers Karamazov",
     "The Catcher in the Rye",
     "The Chronicles of Narnia",
     "The Color Purple",
+    "The Count of Monte Cristo",
     "The Da Vinci Code",
+    "The Divine Comedy",
     "The Door into Summer",
     "The End of Eternity",
     "The Fault in Our Stars",
@@ -792,17 +814,21 @@
     "The Jungle Book",
     "The Little Prince",
     "The Lord of the Rings",
+    "The Mahabharata",
     "The Man in the High Castle",
     "The Map of Chaos",
     "The Map of Time",
     "The Map of the Sky",
     "The Odyssey",
+    "The Ramayana",
     "The Road",
     "The Secret Garden",
     "The Shining",
     "The Silence of the Lambs",
     "The Stand",
+    "The Tale of Genji",
     "The Tale of Peter Rabbit",
+    "The Tale of the Heike",
     "The Time Machine",
     "The Time Ships",
     "The Time Traveler's Almanac",
@@ -812,6 +838,8 @@
     "To Kill a Mockingbird",
     "To Say Nothing of the Dog",
     "Twilight",
+    "War and Peace",
+    "Water Margin",
     "Where the Wild Things Are",
     "Winnie-the-Pooh",
     "Wuthering Heights"
@@ -940,6 +968,14 @@
   ],
   "Chemicals": [
     "Ammonia"
+  ],
+  "Children's Books": [
+    "Alice's Adventures in Wonderland",
+    "The Jungle Book",
+    "The Secret Garden",
+    "The Tale of Peter Rabbit",
+    "The Wind in the Willows",
+    "Winnie-the-Pooh"
   ],
   "Children's Stories": [
     "Alice's Adventures in Wonderland",
@@ -1288,6 +1324,38 @@
     "Trenton",
     "Washington"
   ],
+  "Classic Literature": [
+    "1984",
+    "Brave New World",
+    "Crime and Punishment",
+    "Don Quixote",
+    "Dracula",
+    "Dream of the Red Chamber",
+    "Frankenstein",
+    "Jane Eyre",
+    "Journey to the West",
+    "Les Misérables",
+    "Little Women",
+    "Moby Dick",
+    "One Hundred Years of Solitude",
+    "Pride and Prejudice",
+    "Romance of the Three Kingdoms",
+    "The Brothers Karamazov",
+    "The Count of Monte Cristo",
+    "The Divine Comedy",
+    "The Grapes of Wrath",
+    "The Great Gatsby",
+    "The Iliad",
+    "The Mahabharata",
+    "The Odyssey",
+    "The Ramayana",
+    "The Tale of Genji",
+    "The Tale of the Heike",
+    "To Kill a Mockingbird",
+    "War and Peace",
+    "Water Margin",
+    "Wuthering Heights"
+  ],
   "Classical Composers": [
     "Bach",
     "Beethoven",
@@ -1404,6 +1472,7 @@
     "Working Girl"
   ],
   "Comedy Stories": [
+    "Don Quixote",
     "The Hitchhiker's Guide to the Galaxy",
     "To Say Nothing of the Dog"
   ],
@@ -2120,6 +2189,9 @@
     "United Kingdom",
     "United States"
   ],
+  "Court Stories": [
+    "The Tale of Genji"
+  ],
   "Cowboy Terms": [
     "Bronco",
     "Cowboy",
@@ -2164,6 +2236,9 @@
     "The Hateful Eight",
     "The Irishman",
     "Vantage Point"
+  ],
+  "Crime Stories": [
+    "Crime and Punishment"
   ],
   "Criminals": [
     "Rogue"
@@ -2619,7 +2694,8 @@
   "Ends with ACE": [
     "Mace",
     "Scarface",
-    "The Phantom Menace"
+    "The Phantom Menace",
+    "War and Peace"
   ],
   "Ends with ACH": [
     "Bach",
@@ -2773,6 +2849,7 @@
     "Ghana",
     "Guyana",
     "Moana",
+    "The Ramayana",
     "Tijuana"
   ],
   "Ends with ANC": [
@@ -2948,7 +3025,8 @@
   ],
   "Ends with ATA": [
     "Data",
-    "Pinata"
+    "Pinata",
+    "The Mahabharata"
   ],
   "Ends with ATE": [
     "Skate",
@@ -3063,6 +3141,7 @@
     "Annabel"
   ],
   "Ends with BER": [
+    "Dream of the Red Chamber",
     "November"
   ],
   "Ends with BIA": [
@@ -3393,7 +3472,8 @@
     "The Last Jedi"
   ],
   "Ends with EDY": [
-    "Kennedy"
+    "Kennedy",
+    "The Divine Comedy"
   ],
   "Ends with EED": [
     "Safety Not Guaranteed"
@@ -3489,6 +3569,7 @@
     "The Force Awakens"
   ],
   "Ends with ENT": [
+    "Crime and Punishment",
     "Fluorescent",
     "Rent",
     "Terms of Endearment",
@@ -3573,6 +3654,7 @@
   "Ends with EST": [
     "Everest",
     "Galaxy Quest",
+    "Journey to the West",
     "Key West",
     "One Flew Over the Cuckoo's Nest",
     "Pirates of the Caribbean: Dead Man's Chest"
@@ -3707,6 +3789,9 @@
   ],
   "Ends with GIC": [
     "Magic"
+  ],
+  "Ends with GIN": [
+    "Water Margin"
   ],
   "Ends with GLE": [
     "Eagle",
@@ -3937,7 +4022,8 @@
     "Tanganyika"
   ],
   "Ends with IKE": [
-    "Mike"
+    "Mike",
+    "The Tale of the Heike"
   ],
   "Ends with ILE": [
     "Chile",
@@ -4706,6 +4792,9 @@
     "Harry Potter and the Order of the Phoenix",
     "Phoenix"
   ],
+  "Ends with NJI": [
+    "The Tale of Genji"
+  ],
   "Ends with NKA": [
     "Sri Lanka"
   ],
@@ -4918,6 +5007,9 @@
   "Ends with OME": [
     "Rome"
   ],
+  "Ends with OMS": [
+    "Romance of the Three Kingdoms"
+  ],
   "Ends with ONA": [
     "Arizona",
     "Persona",
@@ -5062,6 +5154,7 @@
   ],
   "Ends with OTE": [
     "Coyote",
+    "Don Quixote",
     "Lanzarote",
     "Note",
     "Wile E. Coyote"
@@ -5543,6 +5636,9 @@
   "Ends with STA": [
     "Augusta"
   ],
+  "Ends with STO": [
+    "The Count of Monte Cristo"
+  ],
   "Ends with STR": [
     "STR"
   ],
@@ -5755,6 +5851,9 @@
   ],
   "Ends with UDD": [
     "Elmer Fudd"
+  ],
+  "Ends with UDE": [
+    "One Hundred Years of Solitude"
   ],
   "Ends with UGE": [
     "Baton Rouge",
@@ -6025,6 +6124,9 @@
   "Ends with ZOS": [
     "Bezos"
   ],
+  "Ends with ZOV": [
+    "The Brothers Karamazov"
+  ],
   "Engineering Structures": [
     "Bridge",
     "Canal",
@@ -6044,10 +6146,22 @@
     "Perseus",
     "Theseus"
   ],
+  "Epic Novels": [
+    "Romance of the Three Kingdoms",
+    "War and Peace"
+  ],
   "Epic Poems": [
     "Inferno",
     "The Iliad",
     "The Odyssey"
+  ],
+  "Epic Poetry": [
+    "The Divine Comedy",
+    "The Iliad",
+    "The Mahabharata",
+    "The Odyssey",
+    "The Ramayana",
+    "The Tale of the Heike"
   ],
   "Eponymous Salads": [
     "Caesar",
@@ -6181,6 +6295,12 @@
     "Wreck-It Ralph",
     "Zootopia"
   ],
+  "Family Sagas": [
+    "Dream of the Red Chamber",
+    "Little Women",
+    "One Hundred Years of Solitude",
+    "The Brothers Karamazov"
+  ],
   "Fantasy": [
     "Elf",
     "Magic",
@@ -6272,6 +6392,7 @@
     "Harry Potter and the Half-Blood Prince",
     "Harry Potter and the Order of the Phoenix",
     "Harry Potter and the Prisoner of Azkaban",
+    "Journey to the West",
     "Percy Jackson & the Olympians",
     "Peter Pan",
     "The Anubis Gates",
@@ -6860,6 +6981,12 @@
     "Club",
     "Green"
   ],
+  "Gothic Fiction": [
+    "Dracula",
+    "Frankenstein",
+    "Jane Eyre",
+    "Wuthering Heights"
+  ],
   "Greek Gods": [
     "Aphrodite",
     "Apollo",
@@ -6987,6 +7114,12 @@
     "Samarkand",
     "Venice"
   ],
+  "Historical Fiction": [
+    "Les Misérables",
+    "Romance of the Three Kingdoms",
+    "The Tale of the Heike",
+    "War and Peace"
+  ],
   "Historical Figures": [
     "Aristotle",
     "Bach",
@@ -7021,10 +7154,12 @@
     "Pharaoh",
     "Plato",
     "Poe",
+    "Romance of the Three Kingdoms",
     "Saint Patrick",
     "Shakespeare",
     "Socrates",
     "Teresa",
+    "The Mahabharata",
     "Thomas Edison",
     "Tsar",
     "Vasco da Gama",
@@ -7433,6 +7568,9 @@
     "San Marino",
     "Tuvalu",
     "Vatican City"
+  ],
+  "Legal Stories": [
+    "To Kill a Mockingbird"
   ],
   "Lighting": [
     "Aurora",
@@ -7936,6 +8074,9 @@
     "Wand",
     "Wizard"
   ],
+  "Magical Realism": [
+    "One Hundred Years of Solitude"
+  ],
   "Male Animals": [
     "Boar",
     "Buck",
@@ -8018,6 +8159,9 @@
     "One Piece",
     "Pokemon",
     "Yugioh"
+  ],
+  "Maritime Stories": [
+    "Moby Dick"
   ],
   "Martial Arts": [
     "Dragon Ball"
@@ -8152,6 +8296,9 @@
     "Napoleon Bonaparte",
     "William the Conqueror",
     "Winston Churchill"
+  ],
+  "Military Stories": [
+    "Romance of the Three Kingdoms"
   ],
   "Military Terms": [
     "Battlefield",
@@ -11242,6 +11389,9 @@
     "Xia",
     "Zeppelin"
   ],
+  "Mystery Stories": [
+    "The Secret Garden"
+  ],
   "Mythical Creatures": [
     "Angel",
     "Banshee",
@@ -11271,6 +11421,10 @@
     "Pegasus",
     "Sleipnir",
     "Unicorn"
+  ],
+  "Mythology": [
+    "The Iliad",
+    "The Odyssey"
   ],
   "NATO Countries": [
     "Albania",
@@ -11562,6 +11716,9 @@
     "Titanic",
     "Unforgiven"
   ],
+  "Outlaw Stories": [
+    "Water Margin"
+  ],
   "Parts of a Song": [
     "Beat",
     "Bridge",
@@ -11744,6 +11901,9 @@
     "Nothing",
     "Paradox",
     "Zero"
+  ],
+  "Philosophical Fiction": [
+    "The Brothers Karamazov"
   ],
   "Photography Terms": [
     "Aperture",
@@ -12334,6 +12494,9 @@
     "Poe",
     "Shakespeare"
   ],
+  "Political Fiction": [
+    "1984"
+  ],
   "Polymers": [
     "Nylon",
     "PVC",
@@ -12383,6 +12546,9 @@
     "Ruby",
     "Rust",
     "Z"
+  ],
+  "Psychological Fiction": [
+    "Crime and Punishment"
   ],
   "Psychology Terms": [
     "Persona"
@@ -12523,6 +12689,7 @@
     "Canon",
     "Cardinal",
     "Crab",
+    "Dream of the Red Chamber",
     "Fire Truck",
     "Flash",
     "Gambit",
@@ -12551,6 +12718,12 @@
     "Mecca",
     "Temple Mount",
     "Vatican City"
+  ],
+  "Religious Stories": [
+    "Journey to the West",
+    "The Divine Comedy",
+    "The Mahabharata",
+    "The Ramayana"
   ],
   "Religious Terms": [
     "Angel",
@@ -12700,6 +12873,9 @@
     "Zambia",
     "Zimbabwe"
   ],
+  "Revenge Stories": [
+    "The Count of Monte Cristo"
+  ],
   "Rhythm": [
     "Beat"
   ],
@@ -12817,6 +12993,7 @@
     "Outlander",
     "Pride and Prejudice",
     "The Fault in Our Stars",
+    "The Tale of Genji",
     "The Time Traveler's Wife",
     "Twilight",
     "Wuthering Heights"
@@ -12878,6 +13055,9 @@
     "Europa",
     "Moon",
     "Phobos"
+  ],
+  "Satire": [
+    "Don Quixote"
   ],
   "Sauces": [
     "Ketchup",
@@ -12972,6 +13152,11 @@
     "The Time Ships",
     "The Time Traveler's Almanac",
     "To Say Nothing of the Dog"
+  ],
+  "Science Fiction": [
+    "Brave New World",
+    "Dracula",
+    "Frankenstein"
   ],
   "Scientists": [
     "Aristotle",
@@ -13191,6 +13376,13 @@
   "Smells": [
     "Musk",
     "Rank"
+  ],
+  "Social Commentary": [
+    "Les Misérables",
+    "Pride and Prejudice",
+    "The Grapes of Wrath",
+    "The Great Gatsby",
+    "To Kill a Mockingbird"
   ],
   "Social Media Brands": [
     "Meta",
@@ -14019,6 +14211,9 @@
   "Starts with CRE": [
     "Crete"
   ],
+  "Starts with CRI": [
+    "Crime and Punishment"
+  ],
   "Starts with CRO": [
     "Croatia",
     "Crow"
@@ -14170,6 +14365,7 @@
     "Dominican Republic"
   ],
   "Starts with DON": [
+    "Don Quixote",
     "Donald",
     "Donnie Brasco",
     "Donnie Darko"
@@ -14191,6 +14387,7 @@
     "Drake"
   ],
   "Starts with DRE": [
+    "Dream of the Red Chamber",
     "Dreamgirls",
     "Dreams",
     "Dresser"
@@ -14967,7 +15164,8 @@
     "Jordan"
   ],
   "Starts with JOU": [
-    "Journal"
+    "Journal",
+    "Journey to the West"
   ],
   "Starts with JUG": [
     "Juggernaut"
@@ -15592,6 +15790,7 @@
   ],
   "Starts with ONE": [
     "One Flew Over the Cuckoo's Nest",
+    "One Hundred Years of Solitude",
     "One Piece"
   ],
   "Starts with ONI": [
@@ -15974,6 +16173,7 @@
   ],
   "Starts with ROM": [
     "Roma",
+    "Romance of the Three Kingdoms",
     "Romania",
     "Rome",
     "Romeo"
@@ -16423,15 +16623,18 @@
     "The Artist",
     "The Big Sleep",
     "The Black Cauldron",
+    "The Brothers Karamazov",
     "The Butterfly Effect",
     "The Cat Returns",
     "The Catcher in the Rye",
     "The Chronicles of Narnia",
     "The Color Purple",
+    "The Count of Monte Cristo",
     "The Da Vinci Code",
     "The Deer Hunter",
     "The Departed",
     "The Devil's Advocate",
+    "The Divine Comedy",
     "The Door into Summer",
     "The Emperor's New Groove",
     "The Empire Strikes Back",
@@ -16476,6 +16679,7 @@
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Return of the King",
     "The Lord of the Rings: The Two Towers",
+    "The Mahabharata",
     "The Maltese Falcon",
     "The Man in the High Castle",
     "The Many Adventures of Winnie the Pooh",
@@ -16492,6 +16696,7 @@
     "The Philadelphia Experiment",
     "The Polar Express",
     "The Princess and the Frog",
+    "The Ramayana",
     "The Rescuers",
     "The Rescuers Down Under",
     "The Rise of Skywalker",
@@ -16507,7 +16712,9 @@
     "The Sound of Music",
     "The Stand",
     "The Sword in the Stone",
+    "The Tale of Genji",
     "The Tale of Peter Rabbit",
+    "The Tale of the Heike",
     "The Tale of the Princess Kaguya",
     "The Terminator",
     "The Thing",
@@ -16752,11 +16959,15 @@
     "Wand"
   ],
   "Starts with WAR": [
+    "War and Peace",
     "Warrior",
     "Warsaw Pact"
   ],
   "Starts with WAS": [
     "Washington"
+  ],
+  "Starts with WAT": [
+    "Water Margin"
   ],
   "Starts with WES": [
     "West Side Story",
@@ -17161,30 +17372,55 @@
     "Elvis",
     "Franklin D. Roosevelt",
     "George Washington",
+    "Little Women",
+    "Moby Dick",
     "NASA",
     "New York",
+    "The Grapes of Wrath",
+    "The Great Gatsby",
     "Thomas Edison",
+    "To Kill a Mockingbird",
     "Wright"
   ],
   "Things British": [
+    "1984",
+    "Alice's Adventures in Wonderland",
     "Beatles",
+    "Brave New World",
     "Darwin",
+    "Dracula",
     "Elizabeth",
+    "Frankenstein",
+    "Jane Eyre",
     "London",
     "Newton",
+    "Pride and Prejudice",
     "Shakespeare",
     "Thames",
+    "The Jungle Book",
+    "The Secret Garden",
+    "The Tale of Peter Rabbit",
+    "The Wind in the Willows",
     "Victoria",
     "William the Conqueror",
-    "Winston Churchill"
+    "Winnie-the-Pooh",
+    "Winston Churchill",
+    "Wuthering Heights"
   ],
   "Things Chinese": [
     "Beijing",
     "Dragon",
+    "Dream of the Red Chamber",
+    "Journey to the West",
     "Marco Polo",
     "Ming",
     "Panda",
+    "Romance of the Three Kingdoms",
+    "Water Margin",
     "Zheng He"
+  ],
+  "Things Colombian": [
+    "One Hundred Years of Solitude"
   ],
   "Things Egyptian": [
     "Alexandria",
@@ -17195,10 +17431,12 @@
   "Things French": [
     "Charlemagne",
     "Joan of Arc",
+    "Les Misérables",
     "Louvre",
     "Marie Curie",
     "Napoleon Bonaparte",
     "Paris",
+    "The Count of Monte Cristo",
     "William the Conqueror"
   ],
   "Things German": [
@@ -17218,7 +17456,14 @@
     "Olympus",
     "Plato",
     "Socrates",
+    "The Iliad",
+    "The Odyssey",
     "Zeus"
+  ],
+  "Things Indian": [
+    "The Jungle Book",
+    "The Mahabharata",
+    "The Ramayana"
   ],
   "Things Italian": [
     "Caesar",
@@ -17232,6 +17477,7 @@
     "Naples",
     "Pompeii",
     "Rome",
+    "The Divine Comedy",
     "Venice",
     "Vesuvius"
   ],
@@ -17239,8 +17485,13 @@
     "Honda",
     "Pokemon",
     "Sony",
+    "The Tale of Genji",
+    "The Tale of the Heike",
     "Tokyo",
     "Toyota"
+  ],
+  "Things Latin American": [
+    "One Hundred Years of Solitude"
   ],
   "Things Polish": [
     "Copernicus",
@@ -17251,10 +17502,14 @@
     "Vasco da Gama"
   ],
   "Things Russian": [
-    "Volga"
+    "Crime and Punishment",
+    "The Brothers Karamazov",
+    "Volga",
+    "War and Peace"
   ],
   "Things Spanish": [
     "Christopher Columbus",
+    "Don Quixote",
     "Ferdinand Magellan"
   ],
   "Thriller Films": [
@@ -17692,6 +17947,13 @@
     "The Deer Hunter",
     "The English Patient",
     "The Hurt Locker"
+  ],
+  "War Stories": [
+    "Romance of the Three Kingdoms",
+    "The Iliad",
+    "The Mahabharata",
+    "The Tale of the Heike",
+    "War and Peace"
   ],
   "Warner Bros. Characters": [
     "Bugs Bunny",

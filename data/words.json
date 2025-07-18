@@ -1,10 +1,13 @@
 {
   "1984": [
     "Books",
+    "Classic Literature",
     "Dystopian Stories",
     "Ends with 984",
+    "Political Fiction",
     "Sci-fi Stories",
-    "Starts with 198"
+    "Starts with 198",
+    "Things British"
   ],
   "Titanic": [
     "Best Picture Winners",
@@ -11135,7 +11138,10 @@
   "The Jungle Book": [
     "2D Animated Films",
     "Adventure Films",
+    "Adventure Stories",
+    "Animal Stories",
     "Books",
+    "Children's Books",
     "Children's Stories",
     "Disney",
     "Ends with OOK",
@@ -11146,7 +11152,9 @@
     "Movies featuring Phil Harris",
     "Movies featuring Sebastian Cabot",
     "Musical Films",
-    "Starts with THE"
+    "Starts with THE",
+    "Things British",
+    "Things Indian"
   ],
   "The Aristocats": [
     "2D Animated Films",
@@ -11802,15 +11810,22 @@
   ],
   "To Kill a Mockingbird": [
     "Books",
+    "Classic Literature",
     "Drama Stories",
     "Ends with IRD",
-    "Starts with TO "
+    "Legal Stories",
+    "Social Commentary",
+    "Starts with TO ",
+    "Things American"
   ],
   "The Great Gatsby": [
     "Books",
+    "Classic Literature",
     "Drama Stories",
     "Ends with SBY",
-    "Starts with THE"
+    "Social Commentary",
+    "Starts with THE",
+    "Things American"
   ],
   "Harry Potter and the Sorcerer's Stone": [
     "Blockbusters",
@@ -11841,10 +11856,13 @@
   ],
   "Brave New World": [
     "Books",
+    "Classic Literature",
     "Dystopian Stories",
     "Ends with RLD",
     "Sci-fi Stories",
-    "Starts with BRA"
+    "Science Fiction",
+    "Starts with BRA",
+    "Things British"
   ],
   "Fahrenheit 451": [
     "Books",
@@ -11855,35 +11873,53 @@
   ],
   "Pride and Prejudice": [
     "Books",
+    "Classic Literature",
     "Ends with ICE",
     "Romance Stories",
-    "Starts with PRI"
+    "Social Commentary",
+    "Starts with PRI",
+    "Things British"
   ],
   "Moby Dick": [
     "Adventure Stories",
     "Books",
+    "Classic Literature",
     "Ends with ICK",
-    "Starts with MOB"
+    "Maritime Stories",
+    "Starts with MOB",
+    "Things American"
   ],
   "The Grapes of Wrath": [
     "Books",
+    "Classic Literature",
     "Drama Stories",
     "Ends with ATH",
-    "Starts with THE"
+    "Social Commentary",
+    "Starts with THE",
+    "Things American"
   ],
   "The Odyssey": [
     "Adventure Stories",
     "Books",
+    "Classic Literature",
     "Ends with SEY",
     "Epic Poems",
-    "Starts with THE"
+    "Epic Poetry",
+    "Mythology",
+    "Starts with THE",
+    "Things Greek"
   ],
   "The Iliad": [
     "Adventure Stories",
     "Books",
+    "Classic Literature",
     "Ends with IAD",
     "Epic Poems",
-    "Starts with THE"
+    "Epic Poetry",
+    "Mythology",
+    "Starts with THE",
+    "Things Greek",
+    "War Stories"
   ],
   "Salem's Lot": [
     "Books",
@@ -12014,68 +12050,99 @@
   ],
   "Dracula": [
     "Books",
+    "Classic Literature",
     "Ends with ULA",
+    "Gothic Fiction",
     "Horror Stories",
-    "Starts with DRA"
+    "Science Fiction",
+    "Starts with DRA",
+    "Things British"
   ],
   "Frankenstein": [
     "Books",
+    "Classic Literature",
     "Ends with EIN",
+    "Gothic Fiction",
     "Horror Stories",
-    "Starts with FRA"
+    "Science Fiction",
+    "Starts with FRA",
+    "Things British"
   ],
   "Jane Eyre": [
     "Books",
+    "Classic Literature",
     "Drama Stories",
     "Ends with YRE",
+    "Gothic Fiction",
     "Romance Stories",
-    "Starts with JAN"
+    "Starts with JAN",
+    "Things British"
   ],
   "Wuthering Heights": [
     "Books",
+    "Classic Literature",
     "Drama Stories",
     "Ends with HTS",
+    "Gothic Fiction",
     "Romance Stories",
-    "Starts with WUT"
+    "Starts with WUT",
+    "Things British"
   ],
   "Little Women": [
     "Books",
+    "Classic Literature",
     "Coming of Age Stories",
     "Drama Stories",
     "Ends with MEN",
+    "Family Sagas",
     "Oscar Winners",
-    "Starts with LIT"
+    "Starts with LIT",
+    "Things American"
   ],
   "The Secret Garden": [
     "Books",
+    "Children's Books",
     "Children's Stories",
     "Ends with DEN",
-    "Starts with THE"
+    "Mystery Stories",
+    "Starts with THE",
+    "Things British"
   ],
   "Alice's Adventures in Wonderland": [
     "Books",
+    "Children's Books",
     "Children's Stories",
     "Ends with AND",
     "Fantasy Stories",
-    "Starts with ALI"
+    "Starts with ALI",
+    "Things British"
   ],
   "The Wind in the Willows": [
+    "Animal Stories",
     "Books",
+    "Children's Books",
     "Children's Stories",
     "Ends with OWS",
-    "Starts with THE"
+    "Starts with THE",
+    "Things British"
   ],
   "Winnie-the-Pooh": [
+    "Animal Stories",
     "Books",
+    "Children's Books",
     "Children's Stories",
     "Ends with OOH",
-    "Starts with WIN"
+    "Starts with WIN",
+    "Things British"
   ],
   "The Tale of Peter Rabbit": [
+    "Animal Stories",
     "Books",
+    "Children's Books",
     "Children's Stories",
     "Ends with BIT",
-    "Starts with THE"
+    "Starts with THE",
+    "Things British"
   ],
   "The Very Hungry Caterpillar": [
     "Books",
@@ -13836,8 +13903,11 @@
     "Starts with DRE"
   ],
   "Les Misérables": [
+    "Books",
+    "Classic Literature",
     "Drama Films",
     "Ends with LES",
+    "Historical Fiction",
     "Movies directed by Tom Hooper",
     "Movies featuring Amanda Seyfried",
     "Movies featuring Anne Hathaway",
@@ -13845,7 +13915,9 @@
     "Movies featuring Russell Crowe",
     "Musical Films",
     "Period Films",
-    "Starts with LES"
+    "Social Commentary",
+    "Starts with LES",
+    "Things French"
   ],
   "Into the Woods": [
     "Adventure Films",
@@ -15686,5 +15758,151 @@
     "Scientists",
     "Starts with THO",
     "Things American"
+  ],
+  "Romance of the Three Kingdoms": [
+    "Books",
+    "Classic Literature",
+    "Ends with OMS",
+    "Epic Novels",
+    "Historical Fiction",
+    "Historical Figures",
+    "Military Stories",
+    "Starts with ROM",
+    "Things Chinese",
+    "War Stories"
+  ],
+  "Dream of the Red Chamber": [
+    "Books",
+    "Classic Literature",
+    "Ends with BER",
+    "Family Sagas",
+    "Red Things",
+    "Starts with DRE",
+    "Things Chinese"
+  ],
+  "Journey to the West": [
+    "Adventure Stories",
+    "Books",
+    "Classic Literature",
+    "Ends with EST",
+    "Fantasy Stories",
+    "Religious Stories",
+    "Starts with JOU",
+    "Things Chinese"
+  ],
+  "Water Margin": [
+    "Adventure Stories",
+    "Books",
+    "Classic Literature",
+    "Ends with GIN",
+    "Outlaw Stories",
+    "Starts with WAT",
+    "Things Chinese"
+  ],
+  "The Tale of Genji": [
+    "Books",
+    "Classic Literature",
+    "Court Stories",
+    "Ends with NJI",
+    "Romance Stories",
+    "Starts with THE",
+    "Things Japanese"
+  ],
+  "Don Quixote": [
+    "Adventure Stories",
+    "Books",
+    "Classic Literature",
+    "Comedy Stories",
+    "Ends with OTE",
+    "Satire",
+    "Starts with DON",
+    "Things Spanish"
+  ],
+  "One Hundred Years of Solitude": [
+    "Books",
+    "Classic Literature",
+    "Ends with UDE",
+    "Family Sagas",
+    "Magical Realism",
+    "Starts with ONE",
+    "Things Colombian",
+    "Things Latin American"
+  ],
+  "The Divine Comedy": [
+    "Books",
+    "Classic Literature",
+    "Ends with EDY",
+    "Epic Poetry",
+    "Religious Stories",
+    "Starts with THE",
+    "Things Italian"
+  ],
+  "War and Peace": [
+    "Books",
+    "Classic Literature",
+    "Ends with ACE",
+    "Epic Novels",
+    "Historical Fiction",
+    "Starts with WAR",
+    "Things Russian",
+    "War Stories"
+  ],
+  "Crime and Punishment": [
+    "Books",
+    "Classic Literature",
+    "Crime Stories",
+    "Ends with ENT",
+    "Psychological Fiction",
+    "Starts with CRI",
+    "Things Russian"
+  ],
+  "The Brothers Karamazov": [
+    "Books",
+    "Classic Literature",
+    "Ends with ZOV",
+    "Family Sagas",
+    "Philosophical Fiction",
+    "Starts with THE",
+    "Things Russian"
+  ],
+  "The Count of Monte Cristo": [
+    "Adventure Stories",
+    "Books",
+    "Classic Literature",
+    "Ends with STO",
+    "Revenge Stories",
+    "Starts with THE",
+    "Things French"
+  ],
+  "The Tale of the Heike": [
+    "Books",
+    "Classic Literature",
+    "Ends with IKE",
+    "Epic Poetry",
+    "Historical Fiction",
+    "Starts with THE",
+    "Things Japanese",
+    "War Stories"
+  ],
+  "The Mahabharata": [
+    "Books",
+    "Classic Literature",
+    "Ends with ATA",
+    "Epic Poetry",
+    "Historical Figures",
+    "Religious Stories",
+    "Starts with THE",
+    "Things Indian",
+    "War Stories"
+  ],
+  "The Ramayana": [
+    "Adventure Stories",
+    "Books",
+    "Classic Literature",
+    "Ends with ANA",
+    "Epic Poetry",
+    "Religious Stories",
+    "Starts with THE",
+    "Things Indian"
   ]
 }

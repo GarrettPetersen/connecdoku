@@ -1,4 +1,7 @@
 {
+  "Political Fiction": [
+    "1984"
+  ],
   "Movies featuring Billy Zane": [
     "Titanic"
   ],
@@ -16,9 +19,6 @@
   ],
   "Movies directed by Robert Schwentke": [
     "Red"
-  ],
-  "Things Russian": [
-    "Volga"
   ],
   "Movies directed by Orson Welles": [
     "Othello"
@@ -592,6 +592,15 @@
   ],
   "Movies featuring Vivien Leigh": [
     "Gone with the Wind"
+  ],
+  "Legal Stories": [
+    "To Kill a Mockingbird"
+  ],
+  "Maritime Stories": [
+    "Moby Dick"
+  ],
+  "Mystery Stories": [
+    "The Secret Garden"
   ],
   "Movies directed by Alfonso Cuarón": [
     "Harry Potter and the Prisoner of Azkaban"
@@ -1658,6 +1667,39 @@
   "Movies featuring Cillian Murphy": [
     "Oppenheimer"
   ],
+  "Military Stories": [
+    "Romance of the Three Kingdoms"
+  ],
+  "Outlaw Stories": [
+    "Water Margin"
+  ],
+  "Court Stories": [
+    "The Tale of Genji"
+  ],
+  "Satire": [
+    "Don Quixote"
+  ],
+  "Magical Realism": [
+    "One Hundred Years of Solitude"
+  ],
+  "Things Colombian": [
+    "One Hundred Years of Solitude"
+  ],
+  "Things Latin American": [
+    "One Hundred Years of Solitude"
+  ],
+  "Crime Stories": [
+    "Crime and Punishment"
+  ],
+  "Psychological Fiction": [
+    "Crime and Punishment"
+  ],
+  "Philosophical Fiction": [
+    "The Brothers Karamazov"
+  ],
+  "Revenge Stories": [
+    "The Count of Monte Cristo"
+  ],
   "Golf Terms": [
     "Green",
     "Club"
@@ -1858,6 +1900,10 @@
     "Harry Potter and the Sorcerer's Stone",
     "Harry Potter and the Chamber of Secrets"
   ],
+  "Mythology": [
+    "The Odyssey",
+    "The Iliad"
+  ],
   "Movies directed by Mike Newell": [
     "Harry Potter and the Goblet of Fire",
     "Donnie Brasco"
@@ -1986,10 +2032,6 @@
     "A Wrinkle in Time",
     "Four Christmases"
   ],
-  "Comedy Stories": [
-    "The Hitchhiker's Guide to the Galaxy",
-    "To Say Nothing of the Dog"
-  ],
   "Movies featuring Natalie Wood": [
     "Miracle on 34th Street",
     "West Side Story"
@@ -2058,10 +2100,6 @@
     "Moonlight",
     "Green Book"
   ],
-  "Things Spanish": [
-    "Christopher Columbus",
-    "Ferdinand Magellan"
-  ],
   "Things Portuguese": [
     "Vasco da Gama",
     "Ferdinand Magellan"
@@ -2073,6 +2111,10 @@
   "WWII Leaders": [
     "Winston Churchill",
     "Franklin D. Roosevelt"
+  ],
+  "Epic Novels": [
+    "Romance of the Three Kingdoms",
+    "War and Peace"
   ],
   "Movies featuring Kate Winslet": [
     "Titanic",
@@ -2204,6 +2246,11 @@
     "The Aristocats",
     "Robin Hood"
   ],
+  "Things Indian": [
+    "The Jungle Book",
+    "The Mahabharata",
+    "The Ramayana"
+  ],
   "Movies featuring Eva Gabor": [
     "The Aristocats",
     "The Rescuers",
@@ -2224,6 +2271,11 @@
     "Anne of Green Gables",
     "Little Women"
   ],
+  "Science Fiction": [
+    "Brave New World",
+    "Dracula",
+    "Frankenstein"
+  ],
   "Movies featuring Michael Madsen": [
     "Donnie Brasco",
     "Reservoir Dogs",
@@ -2243,6 +2295,11 @@
     "The Terminator",
     "Terminator 2: Judgment Day",
     "Jingle All the Way"
+  ],
+  "Comedy Stories": [
+    "The Hitchhiker's Guide to the Galaxy",
+    "To Say Nothing of the Dog",
+    "Don Quixote"
   ],
   "Movies featuring Russell Crowe": [
     "Les Misérables",
@@ -2288,6 +2345,11 @@
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Two Towers",
     "The Lord of the Rings: The Return of the King"
+  ],
+  "Things Spanish": [
+    "Christopher Columbus",
+    "Ferdinand Magellan",
+    "Don Quixote"
   ],
   "Ancient Figures": [
     "Socrates",
