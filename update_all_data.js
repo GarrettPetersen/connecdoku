@@ -6,7 +6,7 @@ console.log('Updating all data files...');
 
 // Step 1: Add word patterns (from add_word_patterns.js)
 console.log('1. Adding word patterns...');
-const wordsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'words.json'), 'utf8'));
+let wordsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'words.json'), 'utf8'));
 
 let updatedCount = 0;
 let totalWords = 0;
@@ -37,6 +37,28 @@ for (const [word, categories] of Object.entries(wordsData)) {
     wordsData[word] = newCategories.sort();
 }
 
+// Step 1.5: Handle duplicate words and merge their categories
+console.log('1.5. Handling duplicate words and merging categories...');
+const mergedWordsData = {};
+let duplicateWordsFound = 0;
+
+for (const [word, categories] of Object.entries(wordsData)) {
+    if (mergedWordsData[word]) {
+        // This word already exists, merge the categories
+        const existingCategories = new Set(mergedWordsData[word]);
+        categories.forEach(category => existingCategories.add(category));
+        mergedWordsData[word] = Array.from(existingCategories).sort();
+        duplicateWordsFound++;
+        console.log(`Merged categories for duplicate word: ${word}`);
+    } else {
+        // First occurrence of this word
+        mergedWordsData[word] = categories;
+    }
+}
+
+// Replace the original data with merged data
+wordsData = mergedWordsData;
+
 // Write the updated data back to the file
 fs.writeFileSync(path.join(__dirname, 'data', 'words.json'), JSON.stringify(wordsData, null, 2), 'utf8');
 
@@ -52,8 +74,10 @@ for (const [word, categories] of Object.entries(wordsData)) {
         if (!categoriesToWords[category]) {
             categoriesToWords[category] = [];
         }
-        // Add the word to this category
-        categoriesToWords[category].push(word);
+        // Add the word to this category (avoid duplicates)
+        if (!categoriesToWords[category].includes(word)) {
+            categoriesToWords[category].push(word);
+        }
     }
 }
 
@@ -65,9 +89,33 @@ Object.keys(categoriesToWords)
         sortedCategories[category] = categoriesToWords[category].sort();
     });
 
+// Step 2.5: Remove duplicate categories (categories with identical word lists)
+console.log('2.5. Removing duplicate categories...');
+const categorySignatures = new Map();
+const uniqueCategories = {};
+let duplicateCategoriesRemoved = 0;
+
+for (const [category, words] of Object.entries(sortedCategories)) {
+    const signature = words.join('|');
+
+    if (categorySignatures.has(signature)) {
+        // This category has the same words as an existing category
+        const existingCategory = categorySignatures.get(signature);
+        console.log(`Removing duplicate category: "${category}" (same as "${existingCategory}")`);
+        duplicateCategoriesRemoved++;
+    } else {
+        // This is a unique category
+        categorySignatures.set(signature, category);
+        uniqueCategories[category] = words;
+    }
+}
+
+// Replace sortedCategories with uniqueCategories
+const finalCategories = uniqueCategories;
+
 // Write the categories.json file
 const outputPath = path.join(__dirname, 'data', 'categories.json');
-fs.writeFileSync(outputPath, JSON.stringify(sortedCategories, null, 2), 'utf8');
+fs.writeFileSync(outputPath, JSON.stringify(finalCategories, null, 2), 'utf8');
 
 // Step 3: Extract words and categories (from extract_words_and_categories.js)
 console.log('3. Extracting words and categories...');
@@ -109,7 +157,9 @@ for (const [word, wordCategories] of Object.entries(wordsData)) {
         if (!categories[category]) {
             categories[category] = [];
         }
-        categories[category].push(word);
+        if (!categories[category].includes(word)) {
+            categories[category].push(word);
+        }
     }
 }
 
@@ -138,6 +188,8 @@ fs.writeFileSync(path.join(__dirname, 'data', 'thin_categories.json'), JSON.stri
 
 console.log('All data files updated successfully!');
 console.log(`- Updated ${updatedCount} words with patterns`);
-console.log(`- Generated ${Object.keys(sortedCategories).length} categories`);
+console.log(`- Found and merged ${duplicateWordsFound} duplicate words`);
+console.log(`- Removed ${duplicateCategoriesRemoved} duplicate categories`);
+console.log(`- Generated ${Object.keys(finalCategories).length} unique categories`);
 console.log(`- Extracted ${sortedWords.length} words and ${sortedCategoriesList.length} categories`);
 console.log(`- Found ${Object.keys(thinCategories).length} thin categories`); 

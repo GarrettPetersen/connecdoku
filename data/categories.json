@@ -85,7 +85,6 @@
     "Toy Story",
     "Turning Red",
     "Up",
-    "WALL-E",
     "Wish",
     "Wreck-It Ralph",
     "Zootopia"
@@ -113,17 +112,60 @@
     "iKON"
   ],
   "Action Films": [
+    "A Good Day to Die Hard",
+    "Aliens",
+    "Armageddon",
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water",
+    "Avengers: Endgame",
     "Death Proof",
+    "Death Wish",
+    "Deja Vu",
     "Die Hard",
+    "Die Hard 2",
+    "Die Hard with a Vengeance",
     "Django Unchained",
+    "Edge of Tomorrow",
     "Inglourious Basterds",
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
+    "Live Free or Die Hard",
+    "Looper",
+    "Red",
+    "Red 2",
     "Robin Hood: Prince of Thieves",
-    "The Matrix"
+    "Sin City",
+    "Sin City: A Dame to Kill For",
+    "Source Code",
+    "Tenet",
+    "Terminator 2: Judgment Day",
+    "The Fifth Element",
+    "The Matrix",
+    "The Philadelphia Experiment",
+    "The Terminator",
+    "Vantage Point",
+    "X-Men: Days of Future Past"
+  ],
+  "Action Stories": [
+    "All You Need Is Kill"
   ],
   "Adventure Films": [
+    "A Wrinkle in Time",
     "Attack of the Clones",
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water",
+    "Avengers: Endgame",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
+    "Bill & Ted's Bogus Journey",
+    "Bill & Ted's Excellent Adventure",
+    "Edge of Tomorrow",
+    "Flight of the Navigator",
+    "Holes",
+    "Interstellar",
     "Jurassic Park",
     "Return of the Jedi",
     "Revenge of the Sith",
@@ -132,10 +174,14 @@
     "Solo",
     "Star Wars",
     "The Empire Strikes Back",
+    "The Fifth Element",
     "The Force Awakens",
     "The Last Jedi",
     "The Phantom Menace",
-    "The Rise of Skywalker"
+    "The Philadelphia Experiment",
+    "The Rise of Skywalker",
+    "Time Bandits",
+    "X-Men: Days of Future Past"
   ],
   "Adventure Stories": [
     "Dune",
@@ -185,6 +231,9 @@
   "Animals": [
     "Pinky",
     "Turkey"
+  ],
+  "Animated Films": [
+    "WALL-E"
   ],
   "Anime": [
     "Akira",
@@ -409,8 +458,11 @@
   ],
   "Black and White Films": [
     "Casablanca",
+    "Giant",
     "High and Low",
     "Ikiru",
+    "Kagemusha",
+    "Othello",
     "Rashomon",
     "Red Beard",
     "Sanjuro",
@@ -498,8 +550,10 @@
     "Pinky"
   ],
   "Books": [
+    "11/22/63",
     "1984",
     "Alice's Adventures in Wonderland",
+    "All You Need Is Kill",
     "Anne of Green Gables",
     "Beloved",
     "Brave New World",
@@ -523,32 +577,44 @@
     "Iliad",
     "Inferno",
     "Jane Eyre",
+    "Kindred",
     "Little Women",
     "Matilda",
     "Moby Dick",
     "Odyssey",
     "Oh, the Places You'll Go!",
+    "Outlander",
     "Percy Jackson & the Olympians",
     "Peter Pan",
     "Pride and Prejudice",
     "Salem",
     "Salem's Lot",
+    "Slaughterhouse-Five",
     "The Alchemist",
+    "The Anubis Gates",
     "The Catcher in the Rye",
     "The Chronicles of Narnia",
     "The Color Purple",
     "The Da Vinci Code",
+    "The Door into Summer",
+    "The End of Eternity",
     "The Fault in Our Stars",
+    "The First Fifteen Lives of Harry August",
     "The Girl with the Dragon Tattoo",
     "The Grapes of Wrath",
     "The Great Gatsby",
     "The Handmaid's Tale",
+    "The Hitchhiker's Guide to the Galaxy",
     "The Hobbit",
     "The Hunger Games",
     "The Iliad",
     "The Jungle Book",
     "The Little Prince",
     "The Lord of the Rings",
+    "The Man in the High Castle",
+    "The Map of Chaos",
+    "The Map of Time",
+    "The Map of the Sky",
     "The Odyssey",
     "The Road",
     "The Secret Garden",
@@ -556,9 +622,14 @@
     "The Silence of the Lambs",
     "The Stand",
     "The Tale of Peter Rabbit",
+    "The Time Machine",
+    "The Time Ships",
+    "The Time Traveler's Almanac",
+    "The Time Traveler's Wife",
     "The Very Hungry Caterpillar",
     "The Wind in the Willows",
     "To Kill a Mockingbird",
+    "To Say Nothing of the Dog",
     "Twilight",
     "Where the Wild Things Are",
     "Winnie-the-Pooh",
@@ -579,12 +650,6 @@
     "Toaster"
   ],
   "British Monarchs": [
-    "Elizabeth",
-    "Mary Rose",
-    "Queen Mary",
-    "Victoria"
-  ],
-  "British Royals": [
     "Elizabeth",
     "Mary Rose",
     "Queen Mary",
@@ -1062,9 +1127,31 @@
     "Riddler"
   ],
   "Comedy Films": [
+    "About Time",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
+    "Bill & Ted's Bogus Journey",
+    "Bill & Ted's Excellent Adventure",
     "Galaxy Quest",
+    "Ghostbusters",
+    "Ghostbusters II",
+    "Groundhog Day",
+    "Holes",
+    "Hot Tub Time Machine",
+    "Kate & Leopold",
     "Love Actually",
-    "Once Upon a Time in Hollywood"
+    "Moonrise Kingdom",
+    "Once Upon a Time in Hollywood",
+    "Red",
+    "Red 2",
+    "Safety Not Guaranteed",
+    "Time Bandits",
+    "Working Girl"
+  ],
+  "Comedy Stories": [
+    "The Hitchhiker's Guide to the Galaxy",
+    "To Say Nothing of the Dog"
   ],
   "Coming of Age Stories": [
     "Anne of Green Gables",
@@ -1755,21 +1842,28 @@
     "Police Car"
   ],
   "Crime Films": [
+    "Copycat",
+    "Death Wish",
+    "Deja Vu",
     "Dog Day Afternoon",
     "Donnie Brasco",
     "Insomnia",
     "Jackie Brown",
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
+    "Looper",
     "Pulp Fiction",
     "Reservoir Dogs",
     "Scarface",
     "Serpico",
+    "Sin City",
+    "Sin City: A Dame to Kill For",
     "The Godfather",
     "The Godfather Part II",
     "The Godfather Part III",
     "The Hateful Eight",
-    "The Irishman"
+    "The Irishman",
+    "Vantage Point"
   ],
   "Criminals": [
     "Rogue"
@@ -1783,7 +1877,6 @@
   "Cult Classics": [
     "Akira",
     "Blade Runner",
-    "Pulp Fiction",
     "The Matrix"
   ],
   "D&D Stats": [
@@ -1838,6 +1931,7 @@
     "Raptor"
   ],
   "Disaster Movies": [
+    "Armageddon",
     "Dante's Peak",
     "Everest",
     "Krakatoa",
@@ -1940,36 +2034,75 @@
     "Sheep"
   ],
   "Drama Films": [
+    "12 Monkeys",
+    "A Map of the World",
+    "About Time",
+    "Arrival",
+    "Copycat",
+    "Death Wish",
+    "Deja Vu",
     "Django Unchained",
     "Dog Day Afternoon",
     "Donnie Brasco",
+    "Donnie Darko",
     "Forrest Gump",
+    "Frequency",
+    "Glass",
     "Gone with the Wind",
+    "Groundhog Day",
     "Inglourious Basterds",
     "Insomnia",
+    "Interstellar",
     "Jackie Brown",
+    "Kate & Leopold",
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
+    "Looper",
+    "Moonrise Kingdom",
     "Once Upon a Time in Hollywood",
+    "Othello",
+    "Predestination",
+    "Primer",
+    "Pulp Fiction",
     "Reservoir Dogs",
+    "Safety Not Guaranteed",
     "Scarface",
     "Scent of a Woman",
     "Schindler's List",
     "Sense and Sensibility",
     "Serpico",
+    "Sin City",
+    "Sin City: A Dame to Kill For",
+    "Somewhere in Time",
+    "Source Code",
+    "Tenet",
+    "The Butterfly Effect",
     "The Devil's Advocate",
     "The Godfather Part III",
     "The Hateful Eight",
-    "The Irishman"
+    "The Ice Storm",
+    "The Irishman",
+    "The Lake House",
+    "The Sixth Sense",
+    "The Village",
+    "Unbreakable",
+    "Working Girl"
   ],
   "Drama Stories": [
+    "11/22/63",
     "Beloved",
     "Jane Eyre",
+    "Kindred",
     "Little Women",
+    "Outlander",
+    "Slaughterhouse-Five",
     "The Color Purple",
     "The Fault in Our Stars",
+    "The First Fifteen Lives of Harry August",
     "The Grapes of Wrath",
     "The Great Gatsby",
+    "The Man in the High Castle",
+    "The Time Traveler's Wife",
     "To Kill a Mockingbird",
     "Wuthering Heights"
   ],
@@ -2066,7 +2199,15 @@
     "Santa Fe"
   ],
   "Ends with  II": [
+    "Back to the Future Part II",
+    "Ghostbusters II",
     "The Godfather Part II"
+  ],
+  "Ends with  VU": [
+    "Deja Vu"
+  ],
+  "Ends with /63": [
+    "11/22/63"
   ],
   "Ends with 000": [
     "Fantasia 2000"
@@ -2130,7 +2271,8 @@
   "Ends with AGE": [
     "Carthage",
     "Ice Age",
-    "Sage"
+    "Sage",
+    "The Village"
   ],
   "Ends with AGO": [
     "Chicago",
@@ -2199,6 +2341,7 @@
     "Panama"
   ],
   "Ends with AME": [
+    "Avengers: Endgame",
     "Suriname",
     "The Hunchback of Notre Dame"
   ],
@@ -2282,7 +2425,8 @@
     "Pharaoh"
   ],
   "Ends with AOS": [
-    "Laos"
+    "Laos",
+    "The Map of Chaos"
   ],
   "Ends with APA": [
     "Papa"
@@ -2295,10 +2439,12 @@
     "Sahara"
   ],
   "Ends with ARD": [
+    "A Good Day to Die Hard",
     "Board",
     "Card",
     "Chessboard",
     "Die Hard",
+    "Live Free or Die Hard",
     "Mustard",
     "Picard",
     "Red Beard",
@@ -2361,11 +2507,15 @@
   "Ends with ASO": [
     "Burkina Faso"
   ],
+  "Ends with ASS": [
+    "Glass"
+  ],
   "Ends with AST": [
     "Beast",
     "Beauty and the Beast",
     "Ivory Coast",
-    "Vast"
+    "Vast",
+    "X-Men: Days of Future Past"
   ],
   "Ends with ATA": [
     "Data",
@@ -2439,7 +2589,8 @@
     "Axe"
   ],
   "Ends with AXY": [
-    "Galaxy"
+    "Galaxy",
+    "The Hitchhiker's Guide to the Galaxy"
   ],
   "Ends with AYA": [
     "British Malaya"
@@ -2505,7 +2656,8 @@
   "Ends with BLE": [
     "Hubble",
     "Scrabble",
-    "Table"
+    "Table",
+    "Unbreakable"
   ],
   "Ends with BLO": [
     "Diablo"
@@ -2554,6 +2706,7 @@
   "Ends with CAT": [
     "Black Cat",
     "Cat",
+    "Copycat",
     "Shadowcat"
   ],
   "Ends with CCA": [
@@ -2617,6 +2770,10 @@
   "Ends with CUP": [
     "Buttercup"
   ],
+  "Ends with D 2": [
+    "Die Hard 2",
+    "Red 2"
+  ],
   "Ends with DAD": [
     "Baghdad"
   ],
@@ -2636,7 +2793,9 @@
   ],
   "Ends with DAY": [
     "Faraday",
-    "Only Yesterday"
+    "Groundhog Day",
+    "Only Yesterday",
+    "Terminator 2: Judgment Day"
   ],
   "Ends with DEL": [
     "Handel"
@@ -2651,6 +2810,7 @@
   "Ends with DER": [
     "Lavender",
     "Murder",
+    "Outlander",
     "Spider",
     "The Rescuers Down Under",
     "Thunder",
@@ -2690,12 +2850,15 @@
     "Doe"
   ],
   "Ends with DOG": [
-    "Dog"
+    "Dog",
+    "To Say Nothing of the Dog"
   ],
   "Ends with DOM": [
+    "Moonrise Kingdom",
     "United Kingdom"
   ],
   "Ends with DON": [
+    "Armageddon",
     "London",
     "Poseidon",
     "Radon"
@@ -2758,12 +2921,18 @@
     "Greece",
     "One Piece"
   ],
+  "Ends with ECT": [
+    "The Butterfly Effect"
+  ],
   "Ends with EDI": [
     "Return of the Jedi",
     "The Last Jedi"
   ],
   "Ends with EDY": [
     "Kennedy"
+  ],
+  "Ends with EED": [
+    "Safety Not Guaranteed"
   ],
   "Ends with EEK": [
     "Greek"
@@ -2836,13 +3005,16 @@
     "Helena"
   ],
   "Ends with ENS": [
+    "Aliens",
     "Athens",
     "Lens",
     "St. Helens",
     "The Force Awakens"
   ],
   "Ends with ENT": [
-    "Fluorescent"
+    "Fluorescent",
+    "The Fifth Element",
+    "The Philadelphia Experiment"
   ],
   "Ends with EON": [
     "Neon"
@@ -2870,6 +3042,7 @@
   ],
   "Ends with ERS": [
     "Checkers",
+    "Ghostbusters",
     "Snickers",
     "The Rescuers"
   ],
@@ -2941,6 +3114,9 @@
   "Ends with EYE": [
     "Hawkeye"
   ],
+  "Ends with EYS": [
+    "12 Monkeys"
+  ],
   "Ends with EZE": [
     "Mr. Freeze"
   ],
@@ -2965,6 +3141,9 @@
   ],
   "Ends with FLY": [
     "Butterfly"
+  ],
+  "Ends with FOR": [
+    "Sin City: A Dame to Kill For"
   ],
   "Ends with FOX": [
     "Fox"
@@ -3039,9 +3218,6 @@
   "Ends with GUA": [
     "Aconcagua",
     "Nicaragua"
-  ],
-  "Ends with GUE": [
-    "Rogue"
   ],
   "Ends with GUM": [
     "Gum"
@@ -3172,6 +3348,9 @@
   "Ends with IDA": [
     "Florida"
   ],
+  "Ends with IEN": [
+    "Alien"
+  ],
   "Ends with IER": [
     "Montpelier"
   ],
@@ -3186,7 +3365,8 @@
   ],
   "Ends with IFE": [
     "A Bug's Life",
-    "Knife"
+    "Knife",
+    "The Time Traveler's Wife"
   ],
   "Ends with IGH": [
     "Raleigh"
@@ -3201,6 +3381,7 @@
     "Indigo"
   ],
   "Ends with III": [
+    "Back to the Future Part III",
     "The Godfather Part III"
   ],
   "Ends with IJI": [
@@ -3220,6 +3401,7 @@
     "Milk"
   ],
   "Ends with ILL": [
+    "All You Need Is Kill",
     "From Up on Poppy Hill"
   ],
   "Ends with ILM": [
@@ -3234,6 +3416,12 @@
   "Ends with IMA": [
     "Fukushima",
     "Lima"
+  ],
+  "Ends with IME": [
+    "A Wrinkle in Time",
+    "About Time",
+    "Somewhere in Time",
+    "The Map of Time"
   ],
   "Ends with INA": [
     "Argentina",
@@ -3252,11 +3440,13 @@
   "Ends with INE": [
     "Catherine",
     "Fluorine",
+    "Hot Tub Time Machine",
     "Magazine",
     "Palpatine",
     "Pine",
     "Rhine",
     "Seine",
+    "The Time Machine",
     "Ukraine",
     "Wolverine"
   ],
@@ -3284,18 +3474,21 @@
     "San Marino"
   ],
   "Ends with INT": [
-    "INT"
+    "INT",
+    "Vantage Point"
   ],
   "Ends with IOH": [
     "Yugioh"
   ],
   "Ends with ION": [
+    "Alien: Resurrection",
     "Damnation",
     "Federation",
     "Lion",
     "Onion",
     "Orion",
     "Pinion",
+    "Predestination",
     "Pulp Fiction",
     "Scorpion",
     "Stallion"
@@ -3309,6 +3502,9 @@
   ],
   "Ends with IPE": [
     "Sao Tome and Principe"
+  ],
+  "Ends with IPS": [
+    "The Time Ships"
   ],
   "Ends with IRA": [
     "Akira"
@@ -3328,7 +3524,8 @@
     "Kirk"
   ],
   "Ends with IRL": [
-    "Gone Girl"
+    "Gone Girl",
+    "Working Girl"
   ],
   "Ends with IRU": [
     "Ikiru"
@@ -3342,6 +3539,7 @@
     "Nicoise"
   ],
   "Ends with ISH": [
+    "Death Wish",
     "Wish"
   ],
   "Ends with ISK": [
@@ -3368,6 +3566,9 @@
   "Ends with ITO": [
     "Burrito"
   ],
+  "Ends with ITS": [
+    "Time Bandits"
+  ],
   "Ends with ITY": [
     "Carson City",
     "Infinity",
@@ -3376,6 +3577,8 @@
     "Salt Lake City",
     "Sense and Sensibility",
     "Serenity",
+    "Sin City",
+    "The End of Eternity",
     "Vatican City"
   ],
   "Ends with IUM": [
@@ -3397,6 +3600,7 @@
   "Ends with IVE": [
     "Massive",
     "Olive",
+    "Slaughterhouse-Five",
     "The Great Mouse Detective"
   ],
   "Ends with IVY": [
@@ -3467,9 +3671,6 @@
   "Ends with KYO": [
     "Tokyo"
   ],
-  "Ends with L-E": [
-    "WALL-E"
-  ],
   "Ends with LAC": [
     "Cadillac"
   ],
@@ -3481,6 +3682,7 @@
     "Mulan"
   ],
   "Ends with LAR": [
+    "Interstellar",
     "The Very Hungry Caterpillar"
   ],
   "Ends with LAS": [
@@ -3521,6 +3723,7 @@
     "Anne of Green Gables",
     "Beatles",
     "Hercules",
+    "Holes",
     "Los Angeles",
     "Naples",
     "Seychelles",
@@ -3667,7 +3870,9 @@
   ],
   "Ends with MER": [
     "Hammer",
-    "Homer"
+    "Homer",
+    "Primer",
+    "The Door into Summer"
   ],
   "Ends with MES": [
     "Hermes",
@@ -3704,8 +3909,12 @@
   "Ends with MOS": [
     "Deimos"
   ],
+  "Ends with N 3": [
+    "Alien 3"
+  ],
   "Ends with NAC": [
-    "Almanac"
+    "Almanac",
+    "The Time Traveler's Almanac"
   ],
   "Ends with NAL": [
     "Canal",
@@ -3726,6 +3935,7 @@
   "Ends with NCE": [
     "Alliance",
     "Beyonce",
+    "Die Hard with a Vengeance",
     "Florence",
     "France",
     "Harry Potter and the Half-Blood Prince",
@@ -3744,6 +3954,9 @@
   ],
   "Ends with NCO": [
     "Bronco"
+  ],
+  "Ends with NCY": [
+    "Frequency"
   ],
   "Ends with NDA": [
     "Honda",
@@ -3801,9 +4014,11 @@
   "Ends with NET": [
     "Gannet",
     "Planet",
+    "Tenet",
     "Treasure Planet"
   ],
   "Ends with NEY": [
+    "Bill & Ted's Bogus Journey",
     "Disney",
     "Sydney",
     "Whitney"
@@ -3902,7 +4117,8 @@
     "Snow"
   ],
   "Ends with NSE": [
-    "Immense"
+    "Immense",
+    "The Sixth Sense"
   ],
   "Ends with NSI": [
     "Anansi"
@@ -3981,6 +4197,7 @@
     "Yoda"
   ],
   "Ends with ODE": [
+    "Source Code",
     "The Da Vinci Code"
   ],
   "Ends with ODY": [
@@ -4026,7 +4243,8 @@
     "Angola"
   ],
   "Ends with OLD": [
-    "Gold"
+    "Gold",
+    "Kate & Leopold"
   ],
   "Ends with OLE": [
     "Black Hole"
@@ -4125,6 +4343,7 @@
   ],
   "Ends with ORA": [
     "Aurora",
+    "Avatar: Frontiers of Pandora",
     "Tambora"
   ],
   "Ends with ORD": [
@@ -4146,6 +4365,7 @@
   ],
   "Ends with ORM": [
     "Storm",
+    "The Ice Storm",
     "Uniform",
     "Worm"
   ],
@@ -4236,6 +4456,7 @@
   ],
   "Ends with PER": [
     "Copper",
+    "Looper",
     "Newspaper",
     "Paper",
     "Pepper"
@@ -4347,6 +4568,7 @@
     "South Korea"
   ],
   "Ends with RED": [
+    "Kindred",
     "Red",
     "Turning Red"
   ],
@@ -4410,7 +4632,11 @@
   "Ends with RIX": [
     "The Matrix"
   ],
+  "Ends with RKO": [
+    "Donnie Darko"
+  ],
   "Ends with RLD": [
+    "A Map of the World",
     "Brave New World",
     "Strange World"
   ],
@@ -4445,6 +4671,7 @@
   ],
   "Ends with ROW": [
     "Crow",
+    "Edge of Tomorrow",
     "Green Arrow",
     "Sparrow"
   ],
@@ -4554,7 +4781,8 @@
     "Alaska"
   ],
   "Ends with SKY": [
-    "Castle in the Sky"
+    "Castle in the Sky",
+    "The Map of the Sky"
   ],
   "Ends with SLA": [
     "Tesla"
@@ -4613,6 +4841,7 @@
     "Uzbekistan"
   ],
   "Ends with TAR": [
+    "Avatar",
     "Guitar",
     "Qatar",
     "Star"
@@ -4638,6 +4867,7 @@
     "Intel"
   ],
   "Ends with TER": [
+    "Avatar: The Way of Water",
     "Demeter",
     "Jupiter",
     "Lobster",
@@ -4648,6 +4878,7 @@
   ],
   "Ends with TES": [
     "Gates",
+    "The Anubis Gates",
     "United Arab Emirates",
     "United States"
   ],
@@ -4673,7 +4904,8 @@
     "Chicken Little",
     "Howl's Moving Castle",
     "Mantle",
-    "Seattle"
+    "Seattle",
+    "The Man in the High Castle"
   ],
   "Ends with TNA": [
     "Etna"
@@ -4698,8 +4930,10 @@
     "The Girl with the Dragon Tattoo"
   ],
   "Ends with TOR": [
+    "Flight of the Navigator",
     "Radiator",
     "Raptor",
+    "The Terminator",
     "Victor"
   ],
   "Ends with TRA": [
@@ -4826,6 +5060,8 @@
   ],
   "Ends with URE": [
     "Aperture",
+    "Back to the Future",
+    "Bill & Ted's Excellent Adventure",
     "Vulture"
   ],
   "Ends with URG": [
@@ -4846,11 +5082,15 @@
     "Mercury",
     "Nick Fury"
   ],
+  "Ends with USE": [
+    "The Lake House"
+  ],
   "Ends with USK": [
     "Musk"
   ],
   "Ends with UST": [
-    "Rust"
+    "Rust",
+    "The First Fifteen Lives of Harry August"
   ],
   "Ends with UTH": [
     "Ruth"
@@ -4868,6 +5108,9 @@
   ],
   "Ends with UYA": [
     "The Tale of the Princess Kaguya"
+  ],
+  "Ends with VAL": [
+    "Arrival"
   ],
   "Ends with VED": [
     "Beloved"
@@ -5044,12 +5287,18 @@
   "Family Films": [
     "101 Dalmatians",
     "A Bug's Life",
+    "A Wrinkle in Time",
     "Aladdin",
     "Alice in Wonderland",
     "Atlantis",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
     "Bambi",
     "Beauty and the Beast",
     "Big Hero 6",
+    "Bill & Ted's Bogus Journey",
+    "Bill & Ted's Excellent Adventure",
     "Bolt",
     "Brave",
     "Brother Bear",
@@ -5063,8 +5312,10 @@
     "Fantasia",
     "Fantasia 2000",
     "Finding Nemo",
+    "Flight of the Navigator",
     "Frozen",
     "Hercules",
+    "Holes",
     "Home on the Range",
     "Inside Out",
     "Lady and the Tramp",
@@ -5118,8 +5369,12 @@
     "Wizard"
   ],
   "Fantasy Films": [
+    "A Wrinkle in Time",
     "Arrietty",
     "Castle in the Sky",
+    "Ghostbusters",
+    "Ghostbusters II",
+    "Groundhog Day",
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Deathly Hallows: Part 1",
     "Harry Potter and the Deathly Hallows: Part 2",
@@ -5139,6 +5394,7 @@
     "Tales from Earthsea",
     "The Cat Returns",
     "The Tale of the Princess Kaguya",
+    "Time Bandits",
     "When Marnie Was There"
   ],
   "Fantasy Stories": [
@@ -5151,10 +5407,14 @@
     "Harry Potter and the Prisoner of Azkaban",
     "Percy Jackson & the Olympians",
     "Peter Pan",
+    "The Anubis Gates",
     "The Chronicles of Narnia",
     "The Hobbit",
     "The Little Prince",
     "The Lord of the Rings",
+    "The Map of Chaos",
+    "The Map of Time",
+    "The Map of the Sky",
     "Twilight"
   ],
   "Fashion Brands": [
@@ -5757,9 +6017,19 @@
     "Sword"
   ],
   "Horror Films": [
+    "Alien",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens",
     "Death Proof",
+    "Donnie Darko",
+    "Glass",
     "Sweeney Todd: The Demon Barber of Fleet Street",
-    "The Devil's Advocate"
+    "The Butterfly Effect",
+    "The Devil's Advocate",
+    "The Sixth Sense",
+    "The Terminator",
+    "The Village"
   ],
   "Horror Stories": [
     "Dracula",
@@ -6277,24 +6547,6 @@
     "United States",
     "Washington"
   ],
-  "Locations in Oceania": [
-    "Australia",
-    "Fiji",
-    "Kiribati",
-    "Marshall Islands",
-    "Micronesia",
-    "Nauru",
-    "New Hebrides",
-    "New Zealand",
-    "Palau",
-    "Papua New Guinea",
-    "Samoa",
-    "Solomon Islands",
-    "Tonga",
-    "Tuvalu",
-    "Vanuatu",
-    "Western Samoa"
-  ],
   "Locations in South America": [
     "Aconcagua",
     "Argentina",
@@ -6774,19 +7026,39 @@
   ],
   "Movies": [
     "101 Dalmatians",
+    "12 Monkeys",
     "A Bug's Life",
+    "A Good Day to Die Hard",
+    "A Map of the World",
+    "A Wrinkle in Time",
+    "About Time",
     "Akira",
     "Aladdin",
     "Alice in Wonderland",
+    "Alien",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens",
     "Apollo 13",
+    "Armageddon",
     "Arrietty",
+    "Arrival",
     "Atlantis",
     "Attack of the Clones",
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water",
+    "Avengers: Endgame",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
     "Bambi",
     "Beauty and the Beast",
     "Beethoven",
     "Big",
     "Big Hero 6",
+    "Bill & Ted's Bogus Journey",
+    "Bill & Ted's Excellent Adventure",
     "Blade Runner",
     "Bolt",
     "Brave",
@@ -6798,15 +7070,22 @@
     "Cinderella",
     "Clue",
     "Coco",
+    "Copycat",
     "Dante's Peak",
     "Death Proof",
+    "Death Wish",
+    "Deja Vu",
     "Die Hard",
+    "Die Hard 2",
+    "Die Hard with a Vengeance",
     "Django Unchained",
     "Dog Day Afternoon",
     "Donnie Brasco",
+    "Donnie Darko",
     "Doom",
     "Dreams",
     "Dumbo",
+    "Edge of Tomorrow",
     "Elemental",
     "Encanto",
     "Everest",
@@ -6814,12 +7093,18 @@
     "Fantasia 2000",
     "Film",
     "Finding Nemo",
+    "Flight of the Navigator",
     "Forrest Gump",
+    "Frequency",
     "From Up on Poppy Hill",
     "Frozen",
     "Galaxy Quest",
+    "Ghostbusters",
+    "Ghostbusters II",
+    "Glass",
     "Gone with the Wind",
     "Grave of the Fireflies",
+    "Groundhog Day",
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Deathly Hallows: Part 1",
     "Harry Potter and the Deathly Hallows: Part 2",
@@ -6830,34 +7115,42 @@
     "Harry Potter and the Sorcerer's Stone",
     "Hercules",
     "High and Low",
+    "Holes",
     "Home on the Range",
+    "Hot Tub Time Machine",
     "Howl's Moving Castle",
     "Ice Age",
     "Ikiru",
     "Inglourious Basterds",
     "Inside Out",
     "Insomnia",
+    "Interstellar",
     "Jackie Brown",
     "Jurassic Park",
     "Kagemusha",
+    "Kate & Leopold",
     "Kiki's Delivery Service",
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
     "Krakatoa",
     "Lady and the Tramp",
     "Lilo & Stitch",
+    "Live Free or Die Hard",
+    "Looper",
     "Love Actually",
     "Luca",
     "Madagascar",
     "Meet the Robinsons",
     "Moana",
     "Monsters Inc",
+    "Moonrise Kingdom",
     "Mulan",
     "My Neighbor Totoro",
     "Oliver & Company",
     "Once Upon a Time in Hollywood",
     "Only Yesterday",
     "Oscar",
+    "Othello",
     "Pinnochio",
     "Pinocchio",
     "Pocahontas",
@@ -6867,12 +7160,16 @@
     "Ponyo",
     "Porco Rosso",
     "Poseidon",
+    "Predestination",
+    "Primer",
     "Princess Mononoke",
     "Pulp Fiction",
     "Ran",
     "Rashomon",
     "Ratatouille",
     "Raya and the Last Dragon",
+    "Red",
+    "Red 2",
     "Red Beard",
     "Reservoir Dogs",
     "Return of the Jedi",
@@ -6880,6 +7177,7 @@
     "Robin Hood",
     "Robin Hood: Prince of Thieves",
     "Rogue One",
+    "Safety Not Guaranteed",
     "Sanjuro",
     "Saw",
     "Scarface",
@@ -6889,11 +7187,15 @@
     "Serpico",
     "Seven Samurai",
     "Silver",
+    "Sin City",
+    "Sin City: A Dame to Kill For",
     "Sleeping Beauty",
     "Snow White and the Seven Dwarfs",
     "Snowman",
     "Solo",
+    "Somewhere in Time",
     "Soul",
+    "Source Code",
     "Spirited Away",
     "Star Wars",
     "Strange World",
@@ -6901,13 +7203,17 @@
     "Tales from Earthsea",
     "Tangled",
     "Tarzan",
+    "Tenet",
+    "Terminator 2: Judgment Day",
     "The Aristocats",
     "The Big Sleep",
     "The Black Cauldron",
+    "The Butterfly Effect",
     "The Cat Returns",
     "The Devil's Advocate",
     "The Emperor's New Groove",
     "The Empire Strikes Back",
+    "The Fifth Element",
     "The Force Awakens",
     "The Fox and the Hound",
     "The Godfather",
@@ -6917,8 +7223,10 @@
     "The Hateful Eight",
     "The Hidden Fortress",
     "The Hunchback of Notre Dame",
+    "The Ice Storm",
     "The Incredibles",
     "The Irishman",
+    "The Lake House",
     "The Last Jedi",
     "The Lion King",
     "The Little Mermaid",
@@ -6926,27 +7234,36 @@
     "The Many Adventures of Winnie the Pooh",
     "The Matrix",
     "The Phantom Menace",
+    "The Philadelphia Experiment",
     "The Princess and the Frog",
     "The Rescuers",
     "The Rescuers Down Under",
     "The Rise of Skywalker",
+    "The Sixth Sense",
     "The Sword in the Stone",
     "The Tale of the Princess Kaguya",
+    "The Terminator",
+    "The Village",
     "The Wind Rises",
     "Throne of Blood",
+    "Time Bandits",
     "Titanic",
     "Toy Story",
     "Treasure Planet",
     "Troy",
     "Turning Red",
+    "Unbreakable",
     "Up",
+    "Vantage Point",
     "Volcano",
     "WALL-E",
     "When Marnie Was There",
     "Whisper of the Heart",
     "Winnie the Pooh",
     "Wish",
+    "Working Girl",
     "Wreck-It Ralph",
+    "X-Men: Days of Future Past",
     "Yojimbo",
     "Zootopia",
     "Zulu"
@@ -6965,21 +7282,33 @@
     "Throne of Blood",
     "Yojimbo"
   ],
-  "Movies directed by Alfonso Cuarón": [
-    "Harry Potter and the Prisoner of Azkaban"
+  "Movies directed by Andrew Davis": [
+    "Holes"
   ],
   "Movies directed by Ang Lee": [
-    "Sense and Sensibility"
+    "Sense and Sensibility",
+    "The Ice Storm"
+  ],
+  "Movies directed by Anthony Russo": [
+    "Avengers: Endgame"
+  ],
+  "Movies directed by Ava DuVernay": [
+    "A Wrinkle in Time"
   ],
   "Movies directed by Brian De Palma": [
     "Scarface"
+  ],
+  "Movies directed by Bryan Singer": [
+    "X-Men: Days of Future Past"
   ],
   "Movies directed by Chris Columbus": [
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Sorcerer's Stone"
   ],
   "Movies directed by Christopher Nolan": [
-    "Insomnia"
+    "Insomnia",
+    "Interstellar",
+    "Tenet"
   ],
   "Movies directed by David Yates": [
     "Harry Potter and the Deathly Hallows: Part 1",
@@ -6988,12 +7317,26 @@
     "Harry Potter and the Order of the Phoenix"
   ],
   "Movies directed by Dean Parisot": [
-    "Galaxy Quest"
+    "Galaxy Quest",
+    "Red 2"
+  ],
+  "Movies directed by Doug Liman": [
+    "Edge of Tomorrow"
+  ],
+  "Movies directed by Duncan Jones": [
+    "Source Code"
+  ],
+  "Movies directed by Eli Roth": [
+    "Death Wish"
   ],
   "Movies directed by Francis Ford Coppola": [
     "The Godfather",
     "The Godfather Part II",
     "The Godfather Part III"
+  ],
+  "Movies directed by Frank Miller": [
+    "Sin City",
+    "Sin City: A Dame to Kill For"
   ],
   "Movies directed by Gareth Edwards": [
     "Rogue One"
@@ -7007,6 +7350,9 @@
   "Movies directed by Gorō Miyazaki": [
     "From Up on Poppy Hill",
     "Tales from Earthsea"
+  ],
+  "Movies directed by Harold Ramis": [
+    "Groundhog Day"
   ],
   "Movies directed by Hayao Miyazaki": [
     "Castle in the Sky",
@@ -7023,9 +7369,6 @@
     "Arrietty",
     "When Marnie Was There"
   ],
-  "Movies directed by Hiroyuki Morita": [
-    "The Cat Returns"
-  ],
   "Movies directed by Howard Hawks": [
     "The Big Sleep"
   ],
@@ -7038,18 +7381,58 @@
     "Pom Poko",
     "The Tale of the Princess Kaguya"
   ],
+  "Movies directed by Ivan Reitman": [
+    "Ghostbusters",
+    "Ghostbusters II"
+  ],
   "Movies directed by J.J. Abrams": [
     "The Force Awakens",
     "The Rise of Skywalker"
+  ],
+  "Movies directed by James Cameron": [
+    "Aliens",
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water",
+    "Terminator 2: Judgment Day",
+    "The Terminator"
+  ],
+  "Movies directed by James Mangold": [
+    "Kate & Leopold"
+  ],
+  "Movies directed by Jean-Pierre Jeunet": [
+    "Alien: Resurrection"
+  ],
+  "Movies directed by Jeannot Szwarc": [
+    "Somewhere in Time"
   ],
   "Movies directed by John Huston": [
     "The Maltese Falcon"
   ],
   "Movies directed by John McTiernan": [
-    "Die Hard"
+    "Die Hard",
+    "Die Hard with a Vengeance"
+  ],
+  "Movies directed by John Moore": [
+    "A Good Day to Die Hard"
+  ],
+  "Movies directed by Jon Amiel": [
+    "Copycat"
   ],
   "Movies directed by Kevin Reynolds": [
     "Robin Hood: Prince of Thieves"
+  ],
+  "Movies directed by Len Wiseman": [
+    "Live Free or Die Hard"
+  ],
+  "Movies directed by Luc Besson": [
+    "The Fifth Element"
+  ],
+  "Movies directed by M. Night Shyamalan": [
+    "Glass",
+    "The Sixth Sense",
+    "The Village",
+    "Unbreakable"
   ],
   "Movies directed by Martin Brest": [
     "Scent of a Woman"
@@ -7057,12 +7440,27 @@
   "Movies directed by Martin Scorsese": [
     "The Irishman"
   ],
-  "Movies directed by Michael Curtiz": [
-    "Casablanca"
+  "Movies directed by Michael Bay": [
+    "Armageddon"
+  ],
+  "Movies directed by Michael Spierig": [
+    "Predestination"
   ],
   "Movies directed by Mike Newell": [
     "Donnie Brasco",
     "Harry Potter and the Goblet of Fire"
+  ],
+  "Movies directed by Mike Nichols": [
+    "Working Girl"
+  ],
+  "Movies directed by Orson Welles": [
+    "Othello"
+  ],
+  "Movies directed by Pete Hewitt": [
+    "Bill & Ted's Bogus Journey"
+  ],
+  "Movies directed by Pete Travis": [
+    "Vantage Point"
   ],
   "Movies directed by Quentin Tarantino": [
     "Death Proof",
@@ -7074,25 +7472,44 @@
     "Once Upon a Time in Hollywood",
     "Pulp Fiction",
     "Reservoir Dogs",
+    "Sin City",
     "The Hateful Eight"
   ],
+  "Movies directed by Randal Kleiser": [
+    "Flight of the Navigator"
+  ],
+  "Movies directed by Renny Harlin": [
+    "Die Hard 2"
+  ],
   "Movies directed by Rian Johnson": [
+    "Looper",
     "The Last Jedi"
   ],
   "Movies directed by Richard Curtis": [
+    "About Time",
     "Love Actually"
   ],
   "Movies directed by Richard Marquand": [
     "Return of the Jedi"
   ],
   "Movies directed by Ridley Scott": [
+    "Alien",
     "Blade Runner"
   ],
+  "Movies directed by Robert Schwentke": [
+    "Red"
+  ],
   "Movies directed by Robert Zemeckis": [
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
     "Forrest Gump"
   ],
-  "Movies directed by Ron Howard": [
-    "Solo"
+  "Movies directed by Scott Elliott": [
+    "A Map of the World"
+  ],
+  "Movies directed by Shane Carruth": [
+    "Primer"
   ],
   "Movies directed by Sidney Lumet": [
     "Dog Day Afternoon",
@@ -7102,17 +7519,24 @@
     "Jurassic Park",
     "Schindler's List"
   ],
+  "Movies directed by Stephen Herek": [
+    "Bill & Ted's Excellent Adventure"
+  ],
+  "Movies directed by Steve Pink": [
+    "Hot Tub Time Machine"
+  ],
+  "Movies directed by Stewart Raffill": [
+    "The Philadelphia Experiment"
+  ],
   "Movies directed by Taylor Hackford": [
     "The Devil's Advocate"
   ],
-  "Movies directed by Tim Burton": [
-    "Sweeney Todd: The Demon Barber of Fleet Street"
+  "Movies directed by Terry Gilliam": [
+    "12 Monkeys",
+    "Time Bandits"
   ],
-  "Movies directed by Victor Fleming": [
-    "Gone with the Wind"
-  ],
-  "Movies directed by Wachowskis": [
-    "The Matrix"
+  "Movies directed by Wes Anderson": [
+    "Moonrise Kingdom"
   ],
   "Movies directed by Yoshifumi Kondo": [
     "Whisper of the Heart"
@@ -7153,14 +7577,22 @@
     "Sense and Sensibility",
     "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
-  "Movies featuring Alden Ehrenreich": [
-    "Solo"
-  ],
   "Movies featuring Alec Guinness": [
     "Star Wars"
   ],
+  "Movies featuring Alex Winter": [
+    "Bill & Ted's Bogus Journey",
+    "Bill & Ted's Excellent Adventure"
+  ],
   "Movies featuring Andy Garcia": [
     "The Godfather Part III"
+  ],
+  "Movies featuring Anne Hathaway": [
+    "Interstellar"
+  ],
+  "Movies featuring Arnold Schwarzenegger": [
+    "Terminator 2: Judgment Day",
+    "The Terminator"
   ],
   "Movies featuring Billy Dee Williams": [
     "Return of the Jedi",
@@ -7172,7 +7604,25 @@
     "Once Upon a Time in Hollywood"
   ],
   "Movies featuring Bruce Willis": [
-    "Die Hard"
+    "12 Monkeys",
+    "A Good Day to Die Hard",
+    "Armageddon",
+    "Death Wish",
+    "Die Hard",
+    "Die Hard 2",
+    "Die Hard with a Vengeance",
+    "Glass",
+    "Live Free or Die Hard",
+    "Looper",
+    "Moonrise Kingdom",
+    "Pulp Fiction",
+    "Red",
+    "Red 2",
+    "Sin City",
+    "Sin City: A Dame to Kill For",
+    "The Fifth Element",
+    "The Sixth Sense",
+    "Unbreakable"
   ],
   "Movies featuring Carrie Fisher": [
     "Return of the Jedi",
@@ -7181,12 +7631,6 @@
     "The Force Awakens",
     "The Last Jedi"
   ],
-  "Movies featuring Charlize Theron": [
-    "The Devil's Advocate"
-  ],
-  "Movies featuring Chris O'Donnell": [
-    "Scent of a Woman"
-  ],
   "Movies featuring Christoph Waltz": [
     "Django Unchained",
     "Inglourious Basterds"
@@ -7194,10 +7638,10 @@
   "Movies featuring Christopher Lee": [
     "Attack of the Clones"
   ],
-  "Movies featuring Daisy Ridley": [
-    "The Force Awakens",
-    "The Last Jedi",
-    "The Rise of Skywalker"
+  "Movies featuring Christopher Lloyd": [
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III"
   ],
   "Movies featuring Daniel Radcliffe": [
     "Harry Potter and the Chamber of Secrets",
@@ -7213,52 +7657,21 @@
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2"
   ],
-  "Movies featuring Diane Keaton": [
-    "The Godfather Part III"
-  ],
-  "Movies featuring Diego Luna": [
-    "Rogue One"
-  ],
-  "Movies featuring Donald Glover": [
-    "Solo"
-  ],
-  "Movies featuring Donnie Yen": [
-    "Rogue One"
-  ],
-  "Movies featuring Emilia Clarke": [
-    "Solo"
+  "Movies featuring Domhnall Gleeson": [
+    "About Time"
   ],
   "Movies featuring Emma Thompson": [
     "Love Actually",
     "Sense and Sensibility"
-  ],
-  "Movies featuring Emma Watson": [
-    "Harry Potter and the Chamber of Secrets",
-    "Harry Potter and the Deathly Hallows: Part 1",
-    "Harry Potter and the Deathly Hallows: Part 2",
-    "Harry Potter and the Goblet of Fire",
-    "Harry Potter and the Half-Blood Prince",
-    "Harry Potter and the Order of the Phoenix",
-    "Harry Potter and the Prisoner of Azkaban",
-    "Harry Potter and the Sorcerer's Stone"
   ],
   "Movies featuring Ewan McGregor": [
     "Attack of the Clones",
     "Revenge of the Sith",
     "The Phantom Menace"
   ],
-  "Movies featuring Felicity Jones": [
-    "Rogue One"
-  ],
-  "Movies featuring Forest Whitaker": [
-    "Rogue One"
-  ],
   "Movies featuring Frank Oz": [
     "Return of the Jedi",
     "The Empire Strikes Back"
-  ],
-  "Movies featuring Gary Oldman": [
-    "Harry Potter and the Prisoner of Azkaban"
   ],
   "Movies featuring Harrison Ford": [
     "Blade Runner",
@@ -7267,52 +7680,37 @@
     "The Empire Strikes Back",
     "The Force Awakens"
   ],
-  "Movies featuring Harvey Keitel": [
-    "Reservoir Dogs"
-  ],
   "Movies featuring Hayden Christensen": [
     "Attack of the Clones",
     "Revenge of the Sith"
   ],
-  "Movies featuring Helena Bonham Carter": [
-    "Sweeney Todd: The Demon Barber of Fleet Street"
-  ],
   "Movies featuring Hilary Swank": [
     "Insomnia"
   ],
-  "Movies featuring Hugh Grant": [
-    "Love Actually"
+  "Movies featuring Hugh Jackman": [
+    "Kate & Leopold",
+    "X-Men: Days of Future Past"
   ],
   "Movies featuring Humphrey Bogart": [
     "Casablanca",
     "The Big Sleep",
     "The Maltese Falcon"
   ],
-  "Movies featuring Ian McDiarmid": [
-    "Revenge of the Sith"
-  ],
-  "Movies featuring Ingrid Bergman": [
-    "Casablanca"
+  "Movies featuring Jake Gyllenhaal": [
+    "Donnie Darko",
+    "Source Code"
   ],
   "Movies featuring Jake Lloyd": [
     "The Phantom Menace"
   ],
-  "Movies featuring Jamie Foxx": [
-    "Django Unchained"
-  ],
   "Movies featuring Jennifer Jason Leigh": [
     "The Hateful Eight"
   ],
-  "Movies featuring Joe Pesci": [
-    "The Irishman"
-  ],
-  "Movies featuring John Boyega": [
-    "The Force Awakens",
-    "The Last Jedi",
-    "The Rise of Skywalker"
-  ],
   "Movies featuring John Cazale": [
     "Dog Day Afternoon"
+  ],
+  "Movies featuring John David Washington": [
+    "Tenet"
   ],
   "Movies featuring John Travolta": [
     "Pulp Fiction"
@@ -7325,19 +7723,16 @@
     "Sense and Sensibility"
   ],
   "Movies featuring Keanu Reeves": [
+    "Bill & Ted's Bogus Journey",
+    "Bill & Ted's Excellent Adventure",
     "The Devil's Advocate",
+    "The Lake House",
     "The Matrix"
-  ],
-  "Movies featuring Kevin Costner": [
-    "Robin Hood: Prince of Thieves"
   ],
   "Movies featuring Kurt Russell": [
     "Death Proof",
     "Once Upon a Time in Hollywood",
     "The Hateful Eight"
-  ],
-  "Movies featuring Laurence Fishburne": [
-    "The Matrix"
   ],
   "Movies featuring Leonardo DiCaprio": [
     "Django Unchained",
@@ -7347,22 +7742,8 @@
     "Love Actually",
     "The Phantom Menace"
   ],
-  "Movies featuring Lucy Liu": [
-    "Kill Bill: Volume 1"
-  ],
-  "Movies featuring Maggie Smith": [
-    "Harry Potter and the Chamber of Secrets",
-    "Harry Potter and the Sorcerer's Stone"
-  ],
   "Movies featuring Margot Robbie": [
     "Once Upon a Time in Hollywood"
-  ],
-  "Movies featuring Mark Hamill": [
-    "Return of the Jedi",
-    "Star Wars",
-    "The Empire Strikes Back",
-    "The Force Awakens",
-    "The Last Jedi"
   ],
   "Movies featuring Marlon Brando": [
     "The Godfather"
@@ -7371,26 +7752,6 @@
     "Donnie Brasco",
     "Kill Bill: Volume 2",
     "Reservoir Dogs"
-  ],
-  "Movies featuring Michelle Pfeiffer": [
-    "Scarface"
-  ],
-  "Movies featuring Morgan Freeman": [
-    "Robin Hood: Prince of Thieves"
-  ],
-  "Movies featuring Mélanie Laurent": [
-    "Inglourious Basterds"
-  ],
-  "Movies featuring Natalie Portman": [
-    "Attack of the Clones",
-    "Revenge of the Sith",
-    "The Phantom Menace"
-  ],
-  "Movies featuring Pam Grier": [
-    "Jackie Brown"
-  ],
-  "Movies featuring Peter Cushing": [
-    "Star Wars"
   ],
   "Movies featuring Ralph Fiennes": [
     "Harry Potter and the Deathly Hallows: Part 1",
@@ -7403,25 +7764,6 @@
     "The Godfather Part II",
     "The Irishman"
   ],
-  "Movies featuring Robert Forster": [
-    "Jackie Brown"
-  ],
-  "Movies featuring Robin Williams": [
-    "Insomnia"
-  ],
-  "Movies featuring Rosario Dawson": [
-    "Death Proof"
-  ],
-  "Movies featuring Rupert Grint": [
-    "Harry Potter and the Chamber of Secrets",
-    "Harry Potter and the Deathly Hallows: Part 1",
-    "Harry Potter and the Deathly Hallows: Part 2",
-    "Harry Potter and the Goblet of Fire",
-    "Harry Potter and the Half-Blood Prince",
-    "Harry Potter and the Order of the Phoenix",
-    "Harry Potter and the Prisoner of Azkaban",
-    "Harry Potter and the Sorcerer's Stone"
-  ],
   "Movies featuring Samuel L. Jackson": [
     "Django Unchained",
     "Jackie Brown",
@@ -7429,10 +7771,24 @@
     "The Hateful Eight"
   ],
   "Movies featuring Sigourney Weaver": [
-    "Galaxy Quest"
-  ],
-  "Movies featuring Steve Buscemi": [
-    "Reservoir Dogs"
+    "A Map of the World",
+    "Alien",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens",
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water",
+    "Copycat",
+    "Galaxy Quest",
+    "Ghostbusters",
+    "Ghostbusters II",
+    "Holes",
+    "The Ice Storm",
+    "The Village",
+    "Vantage Point",
+    "WALL-E",
+    "Working Girl"
   ],
   "Movies featuring Tim Allen": [
     "Galaxy Quest"
@@ -7444,16 +7800,6 @@
   "Movies featuring Tom Hanks": [
     "Forrest Gump"
   ],
-  "Movies featuring Uma Thurman": [
-    "Kill Bill: Volume 1",
-    "Kill Bill: Volume 2"
-  ],
-  "Movies featuring Vivien Leigh": [
-    "Gone with the Wind"
-  ],
-  "Movies featuring Woody Harrelson": [
-    "Solo"
-  ],
   "Muppet Characters": [
     "Animal",
     "Big Bird",
@@ -7464,12 +7810,6 @@
     "Sam",
     "Statler",
     "Waldorf"
-  ],
-  "Museums": [
-    "Louvre",
-    "Met",
-    "Prado",
-    "Uffizi"
   ],
   "Music": [
     "Apollo",
@@ -7495,9 +7835,6 @@
     "Soul",
     "Tune",
     "Violin"
-  ],
-  "Musical Films": [
-    "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
   "Musical Instruments": [
     "Drum",
@@ -7737,6 +8074,7 @@
   ],
   "Period Films": [
     "Once Upon a Time in Hollywood",
+    "Othello",
     "Sense and Sensibility",
     "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
@@ -8313,12 +8651,6 @@
     "Thanos",
     "Violet"
   ],
-  "Queens": [
-    "Elizabeth",
-    "Mary Rose",
-    "Queen Mary",
-    "Victoria"
-  ],
   "Radio Terms": [
     "AM",
     "FM",
@@ -8408,12 +8740,6 @@
     "Volga",
     "Yangtze"
   ],
-  "Road Signs": [
-    "No Parking Sign",
-    "Speed Limit Sign",
-    "Stop Sign",
-    "Yield Sign"
-  ],
   "Roman Cities": [
     "Alexandria",
     "Antioch",
@@ -8462,15 +8788,25 @@
     "X"
   ],
   "Romance Films": [
+    "About Time",
     "Casablanca",
     "Gone with the Wind",
+    "Groundhog Day",
+    "Kate & Leopold",
     "Love Actually",
-    "Sense and Sensibility"
+    "Moonrise Kingdom",
+    "Safety Not Guaranteed",
+    "Sense and Sensibility",
+    "Somewhere in Time",
+    "The Lake House",
+    "Working Girl"
   ],
   "Romance Stories": [
     "Jane Eyre",
+    "Outlander",
     "Pride and Prejudice",
     "The Fault in Our Stars",
+    "The Time Traveler's Wife",
     "Twilight",
     "Wuthering Heights"
   ],
@@ -8548,11 +8884,43 @@
     "Waldorf"
   ],
   "Sci-fi Films": [
-    "Galaxy Quest"
+    "12 Monkeys",
+    "A Wrinkle in Time",
+    "Alien",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens",
+    "Armageddon",
+    "Arrival",
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water",
+    "Avengers: Endgame",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
+    "Deja Vu",
+    "Edge of Tomorrow",
+    "Flight of the Navigator",
+    "Galaxy Quest",
+    "Interstellar",
+    "Looper",
+    "Predestination",
+    "Primer",
+    "Source Code",
+    "Tenet",
+    "Terminator 2: Judgment Day",
+    "The Fifth Element",
+    "The Philadelphia Experiment",
+    "The Terminator",
+    "Time Bandits",
+    "WALL-E",
+    "X-Men: Days of Future Past"
   ],
   "Sci-fi Stories": [
     "1984",
     "Akira",
+    "All You Need Is Kill",
     "Attack of the Clones",
     "Blade Runner",
     "Brave New World",
@@ -8562,15 +8930,24 @@
     "Return of the Jedi",
     "Revenge of the Sith",
     "Rogue One",
+    "Slaughterhouse-Five",
     "Solo",
     "Star Wars",
+    "The Door into Summer",
     "The Empire Strikes Back",
+    "The End of Eternity",
+    "The First Fifteen Lives of Harry August",
     "The Force Awakens",
+    "The Hitchhiker's Guide to the Galaxy",
     "The Last Jedi",
+    "The Man in the High Castle",
     "The Matrix",
     "The Phantom Menace",
     "The Rise of Skywalker",
-    "WALL-E"
+    "The Time Machine",
+    "The Time Ships",
+    "The Time Traveler's Almanac",
+    "To Say Nothing of the Dog"
   ],
   "Scientists": [
     "Curie",
@@ -8616,7 +8993,19 @@
     "Whale"
   ],
   "Sequels": [
+    "A Good Day to Die Hard",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens",
     "Attack of the Clones",
+    "Avatar: The Way of Water",
+    "Avengers: Endgame",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
+    "Bill & Ted's Bogus Journey",
+    "Die Hard 2",
+    "Die Hard with a Vengeance",
+    "Ghostbusters II",
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Deathly Hallows",
     "Harry Potter and the Deathly Hallows: Part 1",
@@ -8626,17 +9015,20 @@
     "Harry Potter and the Order of the Phoenix",
     "Harry Potter and the Prisoner of Azkaban",
     "Kill Bill: Volume 2",
+    "Live Free or Die Hard",
+    "Red 2",
     "Return of the Jedi",
     "Revenge of the Sith",
-    "Star Wars",
+    "Sin City: A Dame to Kill For",
+    "Terminator 2: Judgment Day",
     "The Empire Strikes Back",
     "The Force Awakens",
     "The Godfather Part II",
     "The Godfather Part III",
     "The Last Jedi",
-    "The Matrix",
     "The Phantom Menace",
-    "The Rise of Skywalker"
+    "The Rise of Skywalker",
+    "X-Men: Days of Future Past"
   ],
   "Sesame Street Characters": [
     "Big Bird",
@@ -8717,12 +9109,6 @@
     "O",
     "X",
     "Z"
-  ],
-  "Single Name Writers": [
-    "Dante",
-    "Homer",
-    "Poe",
-    "Shakespeare"
   ],
   "Smells": [
     "Musk",
@@ -8840,6 +9226,8 @@
     "The Rise of Skywalker"
   ],
   "Star Wars Universe": [
+    "Alien",
+    "Aliens",
     "Alliance",
     "Chewbacca",
     "Desert",
@@ -8855,23 +9243,11 @@
     "X-Wing",
     "Yoda"
   ],
-  "Starts with (G)": [
-    "(G)I-DLE"
-  ],
   "Starts with 101": [
     "101 Dalmatians"
   ],
-  "Starts with 198": [
-    "1984"
-  ],
-  "Starts with 2PM": [
-    "2PM"
-  ],
   "Starts with A B": [
     "A Bug's Life"
-  ],
-  "Starts with ABK": [
-    "Abkhazia"
   ],
   "Starts with ABY": [
     "Abyssinia"
@@ -8887,9 +9263,6 @@
   ],
   "Starts with AFG": [
     "Afghanistan"
-  ],
-  "Starts with AKI": [
-    "Akira"
   ],
   "Starts with AKR": [
     "Akron"
@@ -8911,28 +9284,24 @@
   ],
   "Starts with ALI": [
     "Alice in Wonderland",
-    "Alice's Adventures in Wonderland"
+    "Alice's Adventures in Wonderland",
+    "Alien",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens"
   ],
   "Starts with ALL": [
+    "All You Need Is Kill",
     "Alliance"
   ],
   "Starts with ALM": [
     "Almanac"
   ],
-  "Starts with ALP": [
-    "Alpha"
-  ],
   "Starts with AMA": [
     "Amazon"
   ],
-  "Starts with AMM": [
-    "Ammonia"
-  ],
   "Starts with AMO": [
     "Amontillado"
-  ],
-  "Starts with ANA": [
-    "Anansi"
   ],
   "Starts with AND": [
     "Andorra",
@@ -8942,9 +9311,6 @@
     "Angel",
     "Anglo-Egyptian Sudan",
     "Angola"
-  ],
-  "Starts with ANI": [
-    "Animal"
   ],
   "Starts with ANN": [
     "Anna",
@@ -8961,9 +9327,6 @@
   ],
   "Starts with APE": [
     "Aperture"
-  ],
-  "Starts with APH": [
-    "Aphrodite"
   ],
   "Starts with APO": [
     "Apollo",
@@ -8986,18 +9349,14 @@
     "Aries",
     "Arizona"
   ],
-  "Starts with ARK": [
-    "Ark Royal"
-  ],
   "Starts with ARM": [
     "Arm",
+    "Armageddon",
     "Armenia"
   ],
   "Starts with ARR": [
-    "Arrietty"
-  ],
-  "Starts with ART": [
-    "Artsakh"
+    "Arrietty",
+    "Arrival"
   ],
   "Starts with ATH": [
     "Athena",
@@ -9007,12 +9366,6 @@
     "Atlanta",
     "Atlantis"
   ],
-  "Starts with ATT": [
-    "Attack of the Clones"
-  ],
-  "Starts with AUG": [
-    "Augusta"
-  ],
   "Starts with AUR": [
     "Aurora"
   ],
@@ -9021,25 +9374,21 @@
     "Australia",
     "Austria"
   ],
+  "Starts with AVA": [
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water"
+  ],
   "Starts with AVO": [
     "Avocado"
   ],
-  "Starts with AXE": [
-    "Axe"
-  ],
-  "Starts with AZE": [
-    "Azerbaijan"
-  ],
-  "Starts with BAB": [
-    "Baba Yaga"
-  ],
   "Starts with BAC": [
     "Bach",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
     "Backpack",
     "Bacon"
-  ],
-  "Starts with BAG": [
-    "Baghdad"
   ],
   "Starts with BAH": [
     "Bahamas",
@@ -9047,9 +9396,6 @@
   ],
   "Starts with BAL": [
     "Ball"
-  ],
-  "Starts with BAM": [
-    "Bambi"
   ],
   "Starts with BAN": [
     "Banana",
@@ -9083,9 +9429,6 @@
   "Starts with BEC": [
     "Bechuanaland"
   ],
-  "Starts with BED": [
-    "Bed"
-  ],
   "Starts with BEE": [
     "Bee",
     "Beethoven",
@@ -9113,9 +9456,6 @@
     "Benedict",
     "Benin"
   ],
-  "Starts with BEO": [
-    "Beowulf"
-  ],
   "Starts with BER": [
     "Berlin",
     "Beryllium"
@@ -9126,9 +9466,6 @@
   "Starts with BEY": [
     "Beyonce"
   ],
-  "Starts with BEZ": [
-    "Bezos"
-  ],
   "Starts with BHU": [
     "Bhutan"
   ],
@@ -9136,9 +9473,6 @@
     "Big",
     "Big Bird",
     "Big Hero 6"
-  ],
-  "Starts with BIR": [
-    "Birch"
   ],
   "Starts with BIS": [
     "Bishop",
@@ -9155,9 +9489,6 @@
   ],
   "Starts with BLE": [
     "Bleu Cheese"
-  ],
-  "Starts with BLO": [
-    "Blood"
   ],
   "Starts with BLU": [
     "Blue",
@@ -9193,21 +9524,12 @@
   "Starts with BOT": [
     "Botswana"
   ],
-  "Starts with BOU": [
-    "Bounty"
-  ],
-  "Starts with BOW": [
-    "Bow"
-  ],
   "Starts with BRA": [
     "Brasilia",
     "Brave",
     "Brave New World",
     "Bravo",
     "Brazil"
-  ],
-  "Starts with BRE": [
-    "Bread"
   ],
   "Starts with BRI": [
     "Bridge",
@@ -9226,9 +9548,6 @@
   "Starts with BRU": [
     "Bruin",
     "Brunei"
-  ],
-  "Starts with BTS": [
-    "BTS"
   ],
   "Starts with BUC": [
     "Buck"
@@ -9253,15 +9572,6 @@
     "Buttercup",
     "Butterfinger",
     "Butterfly"
-  ],
-  "Starts with BYR": [
-    "Byrd"
-  ],
-  "Starts with CAB": [
-    "Cabo Verde"
-  ],
-  "Starts with CAD": [
-    "Cadillac"
   ],
   "Starts with CAE": [
     "Caesar"
@@ -9314,9 +9624,6 @@
   "Starts with CAU": [
     "Causeway"
   ],
-  "Starts with CED": [
-    "Cedar"
-  ],
   "Starts with CEN": [
     "Centaur",
     "Central African Republic"
@@ -9367,35 +9674,14 @@
     "Cinderella",
     "Cinnamon"
   ],
-  "Starts with CLE": [
-    "Cleopatra"
-  ],
-  "Starts with CLO": [
-    "Cloud"
-  ],
   "Starts with CLU": [
     "Club",
     "Clue"
-  ],
-  "Starts with CNN": [
-    "CNN"
   ],
   "Starts with COB": [
     "Cobalt",
     "Cobb",
     "Cobra"
-  ],
-  "Starts with COC": [
-    "Coco"
-  ],
-  "Starts with COF": [
-    "Coffee"
-  ],
-  "Starts with COG": [
-    "Cog"
-  ],
-  "Starts with COI": [
-    "Coin"
   ],
   "Starts with COL": [
     "Colombia",
@@ -9403,9 +9689,6 @@
     "Colossus",
     "Columbia",
     "Columbus"
-  ],
-  "Starts with COM": [
-    "Comoros"
   ],
   "Starts with CON": [
     "CON",
@@ -9419,7 +9702,8 @@
     "Cooler"
   ],
   "Starts with COP": [
-    "Copper"
+    "Copper",
+    "Copycat"
   ],
   "Starts with COR": [
     "Coral",
@@ -9427,9 +9711,6 @@
   ],
   "Starts with COS": [
     "Costa Rica"
-  ],
-  "Starts with COT": [
-    "Cotton Candy"
   ],
   "Starts with COU": [
     "Count"
@@ -9452,18 +9733,9 @@
   "Starts with CRU": [
     "Crunch"
   ],
-  "Starts with CUB": [
-    "Cuba"
-  ],
   "Starts with CUR": [
     "Curie",
     "Curry"
-  ],
-  "Starts with CYA": [
-    "Cyan"
-  ],
-  "Starts with CYC": [
-    "Cyclops"
   ],
   "Starts with CYG": [
     "Cygnus"
@@ -9474,21 +9746,12 @@
   "Starts with CZE": [
     "Czech Republic"
   ],
-  "Starts with DA ": [
-    "Da Vinci"
-  ],
   "Starts with DAG": [
     "Dagger"
-  ],
-  "Starts with DAH": [
-    "Dahomey"
   ],
   "Starts with DAI": [
     "Daintree",
     "Daisy"
-  ],
-  "Starts with DAL": [
-    "Dallas"
   ],
   "Starts with DAM": [
     "Dam",
@@ -9507,13 +9770,11 @@
     "Data"
   ],
   "Starts with DEA": [
-    "Death Proof"
+    "Death Proof",
+    "Death Wish"
   ],
   "Starts with DEE": [
     "Deepwater Horizon"
-  ],
-  "Starts with DEI": [
-    "Deimos"
   ],
   "Starts with DEL": [
     "Delhi",
@@ -9533,33 +9794,17 @@
     "Desert",
     "Desk"
   ],
-  "Starts with DEV": [
-    "Devil"
-  ],
-  "Starts with DEX": [
-    "DEX"
-  ],
-  "Starts with DIA": [
-    "Diablo"
-  ],
   "Starts with DIC": [
     "Dice"
   ],
   "Starts with DIE": [
-    "Die Hard"
-  ],
-  "Starts with DIR": [
-    "Dirac"
+    "Die Hard",
+    "Die Hard 2",
+    "Die Hard with a Vengeance"
   ],
   "Starts with DIS": [
     "Discovery One",
     "Disney"
-  ],
-  "Starts with DJA": [
-    "Django Unchained"
-  ],
-  "Starts with DJI": [
-    "Djibouti"
   ],
   "Starts with DOC": [
     "Doctor Octopus"
@@ -9567,15 +9812,9 @@
   "Starts with DOD": [
     "Dodge"
   ],
-  "Starts with DOE": [
-    "Doe"
-  ],
   "Starts with DOG": [
     "Dog",
     "Dog Day Afternoon"
-  ],
-  "Starts with DOL": [
-    "Dolphin"
   ],
   "Starts with DOM": [
     "Dominica",
@@ -9583,13 +9822,11 @@
   ],
   "Starts with DON": [
     "Donald",
-    "Donnie Brasco"
+    "Donnie Brasco",
+    "Donnie Darko"
   ],
   "Starts with DOO": [
     "Doom"
-  ],
-  "Starts with DOU": [
-    "Dough"
   ],
   "Starts with DOV": [
     "Dover"
@@ -9605,14 +9842,8 @@
     "Dreams",
     "Dresser"
   ],
-  "Starts with DRU": [
-    "Drum"
-  ],
   "Starts with DUB": [
     "Dublin"
-  ],
-  "Starts with DUF": [
-    "Duffel"
   ],
   "Starts with DUG": [
     "Dugong"
@@ -9633,14 +9864,8 @@
   "Starts with EAG": [
     "Eagle"
   ],
-  "Starts with EAR": [
-    "Earth"
-  ],
   "Starts with EAS": [
     "East Germany"
-  ],
-  "Starts with ECH": [
-    "Echo"
   ],
   "Starts with ECU": [
     "Ecuador"
@@ -9655,9 +9880,6 @@
     "Egg",
     "Eggplant"
   ],
-  "Starts with EGY": [
-    "Egypt"
-  ],
   "Starts with EIN": [
     "Einstein"
   ],
@@ -9671,14 +9893,8 @@
     "Elemental",
     "Elephant"
   ],
-  "Starts with ELF": [
-    "Elf"
-  ],
   "Starts with ELI": [
     "Elizabeth"
-  ],
-  "Starts with ELM": [
-    "Elmo"
   ],
   "Starts with ELS": [
     "Elsa"
@@ -9693,14 +9909,8 @@
     "Encanto",
     "Enchilada"
   ],
-  "Starts with ENO": [
-    "Enormous"
-  ],
   "Starts with ENT": [
     "Enterprise"
-  ],
-  "Starts with ENV": [
-    "Envelope"
   ],
   "Starts with EPS": [
     "Epsilon"
@@ -9723,29 +9933,11 @@
   "Starts with ETH": [
     "Ethiopia"
   ],
-  "Starts with ETN": [
-    "Etna"
-  ],
-  "Starts with EUC": [
-    "Euchre"
-  ],
-  "Starts with EUR": [
-    "Europa"
-  ],
   "Starts with EVE": [
     "Everest"
   ],
-  "Starts with EWE": [
-    "Ewe"
-  ],
-  "Starts with EXO": [
-    "EXO"
-  ],
   "Starts with EYJ": [
     "Eyjafjallajokull"
-  ],
-  "Starts with FAH": [
-    "Fahrenheit 451"
   ],
   "Starts with FAL": [
     "Falcon",
@@ -9768,12 +9960,6 @@
   "Starts with FEY": [
     "Feynman"
   ],
-  "Starts with FIJ": [
-    "Fiji"
-  ],
-  "Starts with FIL": [
-    "Film"
-  ],
   "Starts with FIN": [
     "Finding Nemo",
     "Finland"
@@ -9792,9 +9978,6 @@
   "Starts with FLU": [
     "Fluorescent",
     "Fluorine"
-  ],
-  "Starts with FLY": [
-    "Flyer"
   ],
   "Starts with FOO": [
     "Football"
@@ -9820,7 +10003,8 @@
     "French Equatorial Africa",
     "French Indochina",
     "French Somaliland",
-    "French West Africa"
+    "French West Africa",
+    "Frequency"
   ],
   "Starts with FRI": [
     "Fridge"
@@ -9828,9 +10012,6 @@
   "Starts with FRO": [
     "From Up on Poppy Hill",
     "Frozen"
-  ],
-  "Starts with FUJ": [
-    "Fuji"
   ],
   "Starts with FUK": [
     "Fukushima"
@@ -9862,17 +10043,11 @@
   "Starts with GAU": [
     "Gaul"
   ],
-  "Starts with GAZ": [
-    "Gazette"
-  ],
   "Starts with GEA": [
     "Gear"
   ],
   "Starts with GEM": [
     "Gemini"
-  ],
-  "Starts with GEN": [
-    "Genoa"
   ],
   "Starts with GEO": [
     "George",
@@ -9896,17 +10071,8 @@
   "Starts with GIL": [
     "Gilgamesh"
   ],
-  "Starts with GIR": [
-    "Giraffe"
-  ],
   "Starts with GLO": [
     "Glove"
-  ],
-  "Starts with GMC": [
-    "GMC"
-  ],
-  "Starts with GOA": [
-    "Goat"
   ],
   "Starts with GOB": [
     "Gobi"
@@ -9925,9 +10091,6 @@
     "Goodnight Moon",
     "Goofy",
     "Google"
-  ],
-  "Starts with GOT": [
-    "GOT7"
   ],
   "Starts with GRA": [
     "Graf Zeppelin",
@@ -9955,13 +10118,8 @@
     "Griffin"
   ],
   "Starts with GRO": [
+    "Groundhog Day",
     "Grover"
-  ],
-  "Starts with GUA": [
-    "Guatemala"
-  ],
-  "Starts with GUC": [
-    "Gucci"
   ],
   "Starts with GUI": [
     "Guinea",
@@ -9971,9 +10129,6 @@
   "Starts with GUL": [
     "Gull"
   ],
-  "Starts with GUM": [
-    "Gum"
-  ],
   "Starts with GUY": [
     "Guyana"
   ],
@@ -9982,9 +10137,6 @@
   ],
   "Starts with HAG": [
     "Hagrid"
-  ],
-  "Starts with HAI": [
-    "Haiti"
   ],
   "Starts with HAL": [
     "Halberd",
@@ -10018,16 +10170,10 @@
   "Starts with HAS": [
     "Hash"
   ],
-  "Starts with HAU": [
-    "Haumea"
-  ],
   "Starts with HAW": [
     "Hawk",
     "Hawkeye",
     "Hawking"
-  ],
-  "Starts with HAZ": [
-    "Hazel"
   ],
   "Starts with HEA": [
     "Hearts",
@@ -10081,6 +10227,7 @@
     "Horse"
   ],
   "Starts with HOT": [
+    "Hot Tub Time Machine",
     "Hotel"
   ],
   "Starts with HOW": [
@@ -10095,24 +10242,15 @@
   "Starts with HUG": [
     "Huge"
   ],
-  "Starts with HUL": [
-    "Hulk"
-  ],
   "Starts with HUM": [
     "Hummingbird"
   ],
   "Starts with HUN": [
     "Hungary"
   ],
-  "Starts with HYA": [
-    "Hyatt"
-  ],
   "Starts with HYD": [
     "Hydra",
     "Hydrogen"
-  ],
-  "Starts with IBM": [
-    "IBM"
   ],
   "Starts with ICE": [
     "Ice",
@@ -10120,9 +10258,6 @@
     "Ice Pack",
     "Iceland",
     "Iceman"
-  ],
-  "Starts with IKI": [
-    "Ikiru"
   ],
   "Starts with IKO": [
     "iKON"
@@ -10146,22 +10281,14 @@
     "Inferno",
     "Infinity"
   ],
-  "Starts with ING": [
-    "Inglourious Basterds"
-  ],
   "Starts with INS": [
     "Inside Out",
     "Insomnia"
   ],
   "Starts with INT": [
     "INT",
-    "Intel"
-  ],
-  "Starts with INU": [
-    "Inuit"
-  ],
-  "Starts with INV": [
-    "Invictus"
+    "Intel",
+    "Interstellar"
   ],
   "Starts with IOT": [
     "Iota"
@@ -10180,12 +10307,6 @@
     "Iron",
     "Iron Man"
   ],
-  "Starts with ISR": [
-    "Israel"
-  ],
-  "Starts with IST": [
-    "Istanbul"
-  ],
   "Starts with ITA": [
     "Italian",
     "Italian East Africa",
@@ -10196,12 +10317,6 @@
   "Starts with IVO": [
     "Ivory Coast"
   ],
-  "Starts with IVY": [
-    "Ivy"
-  ],
-  "Starts with JAB": [
-    "Jabberwocky"
-  ],
   "Starts with JAC": [
     "Jackie Brown",
     "Jackson"
@@ -10209,30 +10324,12 @@
   "Starts with JAD": [
     "Jade"
   ],
-  "Starts with JAG": [
-    "Jaguar"
-  ],
-  "Starts with JAI": [
-    "Jaipur"
-  ],
   "Starts with JAM": [
     "Jamaica",
     "James"
   ],
-  "Starts with JAN": [
-    "Jane Eyre"
-  ],
   "Starts with JAP": [
     "Japan"
-  ],
-  "Starts with JAV": [
-    "Java"
-  ],
-  "Starts with JAZ": [
-    "Jazz"
-  ],
-  "Starts with JEA": [
-    "Jean Grey"
   ],
   "Starts with JEE": [
     "Jeep"
@@ -10244,12 +10341,6 @@
   "Starts with JER": [
     "Jerusalem"
   ],
-  "Starts with JOB": [
-    "Jobs"
-  ],
-  "Starts with JOH": [
-    "John"
-  ],
   "Starts with JOK": [
     "Joker"
   ],
@@ -10259,20 +10350,11 @@
   "Starts with JOU": [
     "Journal"
   ],
-  "Starts with JUG": [
-    "Juggernaut"
-  ],
   "Starts with JUI": [
     "Juice"
   ],
-  "Starts with JUL": [
-    "Juliet"
-  ],
   "Starts with JUM": [
     "Jumbo"
-  ],
-  "Starts with JUN": [
-    "Juneau"
   ],
   "Starts with JUP": [
     "Jupiter"
@@ -10280,29 +10362,15 @@
   "Starts with JUR": [
     "Jurassic Park"
   ],
-  "Starts with JÖR": [
-    "Jörmungandr"
-  ],
-  "Starts with KAG": [
-    "Kagemusha"
-  ],
   "Starts with KAL": [
     "Kalahari"
-  ],
-  "Starts with KAM": [
-    "Kampuchea"
-  ],
-  "Starts with KAP": [
-    "Kappa"
   ],
   "Starts with KAR": [
     "Karachi"
   ],
   "Starts with KAT": [
+    "Kate & Leopold",
     "Katrina"
-  ],
-  "Starts with KAY": [
-    "Kayak"
   ],
   "Starts with KAZ": [
     "Kazakhstan"
@@ -10314,9 +10382,6 @@
   ],
   "Starts with KEP": [
     "Kepler"
-  ],
-  "Starts with KET": [
-    "Ketchup"
   ],
   "Starts with KEY": [
     "Key"
@@ -10334,6 +10399,7 @@
     "Kilo"
   ],
   "Starts with KIN": [
+    "Kindred",
     "King",
     "King Lear"
   ],
@@ -10341,17 +10407,8 @@
     "Kiribati",
     "Kirk"
   ],
-  "Starts with KIT": [
-    "KitKat"
-  ],
-  "Starts with KIW": [
-    "Kiwi"
-  ],
   "Starts with KNI": [
     "Knife"
-  ],
-  "Starts with KOB": [
-    "Kobe"
   ],
   "Starts with KRA": [
     "Krakatoa",
@@ -10359,9 +10416,6 @@
   ],
   "Starts with KRY": [
     "Krypton"
-  ],
-  "Starts with KUW": [
-    "Kuwait"
   ],
   "Starts with KYR": [
     "Kyrgyzstan"
@@ -10412,9 +10466,6 @@
   "Starts with LEO": [
     "Leo"
   ],
-  "Starts with LES": [
-    "Lesotho"
-  ],
   "Starts with LET": [
     "Lettuce"
   ],
@@ -10439,9 +10490,6 @@
   "Starts with LIM": [
     "Lima"
   ],
-  "Starts with LIN": [
-    "Lincoln"
-  ],
   "Starts with LIO": [
     "Lion"
   ],
@@ -10457,23 +10505,14 @@
   "Starts with LOC": [
     "Locker"
   ],
-  "Starts with LOK": [
-    "Loki"
-  ],
   "Starts with LON": [
     "London"
   ],
+  "Starts with LOO": [
+    "Looper"
+  ],
   "Starts with LOS": [
     "Los Angeles"
-  ],
-  "Starts with LOU": [
-    "Louvre"
-  ],
-  "Starts with LOV": [
-    "Love Actually"
-  ],
-  "Starts with LUC": [
-    "Luca"
   ],
   "Starts with LUK": [
     "Luke"
@@ -10483,9 +10522,6 @@
   ],
   "Starts with LUX": [
     "Luxembourg"
-  ],
-  "Starts with LYR": [
-    "Lyra"
   ],
   "Starts with MAC": [
     "Macbeth",
@@ -10554,12 +10590,6 @@
   "Starts with MEC": [
     "Mecca"
   ],
-  "Starts with MEE": [
-    "Meet the Robinsons"
-  ],
-  "Starts with MEL": [
-    "Melody"
-  ],
   "Starts with MER": [
     "Mercury"
   ],
@@ -10579,9 +10609,6 @@
     "Micronesia",
     "Microsoft"
   ],
-  "Starts with MIK": [
-    "Mike"
-  ],
   "Starts with MIL": [
     "Milan",
     "Milk",
@@ -10593,17 +10620,11 @@
     "Minnie",
     "Minotaur"
   ],
-  "Starts with MIS": [
-    "Mississippi"
-  ],
   "Starts with MOA": [
     "Moana"
   ],
   "Starts with MOB": [
     "Moby Dick"
-  ],
-  "Starts with MOL": [
-    "Moldova"
   ],
   "Starts with MON": [
     "Monaco",
@@ -10619,7 +10640,8 @@
     "Monumental"
   ],
   "Starts with MOO": [
-    "Moon"
+    "Moon",
+    "Moonrise Kingdom"
   ],
   "Starts with MOR": [
     "Morocco",
@@ -10632,9 +10654,6 @@
     "Mozambique",
     "Mozart"
   ],
-  "Starts with MR.": [
-    "Mr. Freeze"
-  ],
   "Starts with MUL": [
     "Mulan"
   ],
@@ -10644,12 +10663,6 @@
   "Starts with MUS": [
     "Musk",
     "Mustard"
-  ],
-  "Starts with MY ": [
-    "My Neighbor Totoro"
-  ],
-  "Starts with MYA": [
-    "Myanmar"
   ],
   "Starts with MYS": [
     "Mystique"
@@ -10661,9 +10674,6 @@
     "Napkin",
     "Naples"
   ],
-  "Starts with NAR": [
-    "Naruto"
-  ],
   "Starts with NAS": [
     "NASA",
     "Nashville"
@@ -10671,14 +10681,8 @@
   "Starts with NAT": [
     "NATO"
   ],
-  "Starts with NAU": [
-    "Nauru"
-  ],
   "Starts with NEB": [
     "Nebula"
-  ],
-  "Starts with NEO": [
-    "Neon"
   ],
   "Starts with NEP": [
     "Nepal",
@@ -10737,23 +10741,11 @@
     "Notebook",
     "Nothing"
   ],
-  "Starts with NOV": [
-    "November"
-  ],
-  "Starts with NUG": [
-    "Nugget"
-  ],
-  "Starts with NUT": [
-    "Nutmeg"
-  ],
   "Starts with NYA": [
     "Nyasaland"
   ],
   "Starts with NYL": [
     "Nylon"
-  ],
-  "Starts with OAK": [
-    "Oak"
   ],
   "Starts with OBA": [
     "Obama"
@@ -10765,14 +10757,8 @@
     "Odysseus",
     "Odyssey"
   ],
-  "Starts with OH,": [
-    "Oh, the Places You'll Go!"
-  ],
   "Starts with OKL": [
     "Oklahoma City"
-  ],
-  "Starts with OLA": [
-    "Olaf"
   ],
   "Starts with OLI": [
     "Olive",
@@ -10785,17 +10771,8 @@
   "Starts with OMA": [
     "Oman"
   ],
-  "Starts with OME": [
-    "Omega"
-  ],
   "Starts with OMI": [
     "Omicron"
-  ],
-  "Starts with ONC": [
-    "Once Upon a Time in Hollywood"
-  ],
-  "Starts with ONE": [
-    "One Piece"
   ],
   "Starts with ONI": [
     "Onion"
@@ -10822,23 +10799,11 @@
   "Starts with OSC": [
     "Oscar"
   ],
-  "Starts with OTH": [
-    "Othello"
-  ],
-  "Starts with OTT": [
-    "Ottawa"
-  ],
-  "Starts with OVE": [
-    "Overwatch"
-  ],
-  "Starts with OWL": [
-    "Owl"
+  "Starts with OUT": [
+    "Outlander"
   ],
   "Starts with OXY": [
     "Oxygen"
-  ],
-  "Starts with OZY": [
-    "Ozymandias"
   ],
   "Starts with PAK": [
     "Pakistan"
@@ -10867,9 +10832,6 @@
   "Starts with PAU": [
     "Paul"
   ],
-  "Starts with PAW": [
-    "Pawn"
-  ],
   "Starts with PEA": [
     "Peach",
     "Peacock",
@@ -10877,9 +10839,6 @@
   ],
   "Starts with PEG": [
     "Pegasus"
-  ],
-  "Starts with PEL": [
-    "Pelican"
   ],
   "Starts with PEN": [
     "Pen",
@@ -10900,9 +10859,6 @@
     "Peter",
     "Peter Pan",
     "Petrel"
-  ],
-  "Starts with PHA": [
-    "Pharaoh"
   ],
   "Starts with PHI": [
     "Phi",
@@ -10940,9 +10896,6 @@
     "Pisces",
     "Piston"
   ],
-  "Starts with PIX": [
-    "Pixar"
-  ],
   "Starts with PLA": [
     "Planet",
     "Plastic"
@@ -10950,12 +10903,6 @@
   "Starts with PLU": [
     "Pluto",
     "Plutonium"
-  ],
-  "Starts with POC": [
-    "Pocahontas"
-  ],
-  "Starts with POE": [
-    "Poe"
   ],
   "Starts with POK": [
     "Pokemon",
@@ -10993,15 +10940,13 @@
   ],
   "Starts with PRI": [
     "Pride and Prejudice",
+    "Primer",
     "Prince",
     "Princess Mononoke"
   ],
   "Starts with PRO": [
     "Professor X",
     "Providence"
-  ],
-  "Starts with PSI": [
-    "Psi"
   ],
   "Starts with PUC": [
     "Puck"
@@ -11015,12 +10960,6 @@
   ],
   "Starts with PUR": [
     "Purple"
-  ],
-  "Starts with PVC": [
-    "PVC"
-  ],
-  "Starts with PYT": [
-    "Python"
   ],
   "Starts with QAT": [
     "Qatar"
@@ -11040,25 +10979,13 @@
     "Radiator",
     "Radon"
   ],
-  "Starts with RAF": [
-    "Raft"
-  ],
   "Starts with RAI": [
     "Rain"
-  ],
-  "Starts with RAL": [
-    "Raleigh"
-  ],
-  "Starts with RAM": [
-    "Ram"
   ],
   "Starts with RAN": [
     "Ran",
     "Ranch",
     "Rank"
-  ],
-  "Starts with RAP": [
-    "Raptor"
   ],
   "Starts with RAS": [
     "Rashomon"
@@ -11076,20 +11003,12 @@
   ],
   "Starts with RED": [
     "Red",
+    "Red 2",
     "Red Beard",
     "Red Hood",
     "Red Riding Hood",
     "Red Velvet",
     "Reddit"
-  ],
-  "Starts with RES": [
-    "Reservoir Dogs"
-  ],
-  "Starts with RET": [
-    "Return of the Jedi"
-  ],
-  "Starts with REV": [
-    "Revenge of the Sith"
   ],
   "Starts with RHI": [
     "Rhine",
@@ -11105,9 +11024,6 @@
   "Starts with RID": [
     "Riddler"
   ],
-  "Starts with RIF": [
-    "Rifle"
-  ],
   "Starts with RIS": [
     "Risk"
   ],
@@ -11118,9 +11034,6 @@
   ],
   "Starts with ROC": [
     "Rockefeller"
-  ],
-  "Starts with ROD": [
-    "Rodeo"
   ],
   "Starts with ROG": [
     "Rogue",
@@ -11142,15 +11055,9 @@
   "Starts with ROS": [
     "Rose"
   ],
-  "Starts with RUB": [
-    "Ruby"
-  ],
   "Starts with RUS": [
     "Russia",
     "Rust"
-  ],
-  "Starts with RUT": [
-    "Ruth"
   ],
   "Starts with RWA": [
     "Rwanda"
@@ -11164,9 +11071,6 @@
   "Starts with SAG": [
     "Sage",
     "Sagittarius"
-  ],
-  "Starts with SAH": [
-    "Sahara"
   ],
   "Starts with SAI": [
     "Saint Kitts and Nevis",
@@ -11198,26 +11102,11 @@
     "Santa Fe",
     "Santa Maria"
   ],
-  "Starts with SAO": [
-    "Sao Tome and Principe"
-  ],
   "Starts with SAP": [
     "Sapphire"
   ],
-  "Starts with SAT": [
-    "Saturn"
-  ],
   "Starts with SAU": [
     "Saudi Arabia"
-  ],
-  "Starts with SAW": [
-    "Saw"
-  ],
-  "Starts with SCA": [
-    "Scarface"
-  ],
-  "Starts with SCE": [
-    "Scent of a Woman"
   ],
   "Starts with SCH": [
     "Schindler's List"
@@ -11269,30 +11158,23 @@
   "Starts with SHI": [
     "Shield"
   ],
-  "Starts with SIA": [
-    "Siam"
-  ],
   "Starts with SIE": [
     "Sierra",
     "Sierra Leone"
-  ],
-  "Starts with SIG": [
-    "Sigma"
   ],
   "Starts with SIL": [
     "Silver"
   ],
   "Starts with SIN": [
+    "Sin City",
+    "Sin City: A Dame to Kill For",
     "Singapore"
-  ],
-  "Starts with SIR": [
-    "Siren"
   ],
   "Starts with SKA": [
     "Skate"
   ],
-  "Starts with SKU": [
-    "Skunk"
+  "Starts with SLA": [
+    "Slaughterhouse-Five"
   ],
   "Starts with SLE": [
     "Sleeping Beauty",
@@ -11314,16 +11196,14 @@
     "Snow White and the Seven Dwarfs",
     "Snowman"
   ],
-  "Starts with SOF": [
-    "Sofa"
-  ],
   "Starts with SOL": [
     "Solitaire",
     "Solo",
     "Solomon Islands"
   ],
   "Starts with SOM": [
-    "Somalia"
+    "Somalia",
+    "Somewhere in Time"
   ],
   "Starts with SON": [
     "Song",
@@ -11331,6 +11211,7 @@
   ],
   "Starts with SOU": [
     "Soul",
+    "Source Code",
     "South Africa",
     "South Korea",
     "South Ossetia",
@@ -11338,9 +11219,6 @@
     "South Vietnam",
     "South Yemen",
     "Southern Rhodesia"
-  ],
-  "Starts with SOW": [
-    "Sow"
   ],
   "Starts with SOY": [
     "Soy Sauce"
@@ -11370,9 +11248,6 @@
   "Starts with SPR": [
     "Springfield"
   ],
-  "Starts with SRI": [
-    "Sri Lanka"
-  ],
   "Starts with ST.": [
     "St. Helens"
   ],
@@ -11397,12 +11272,6 @@
   "Starts with STR": [
     "STR",
     "Strange World"
-  ],
-  "Starts with SUB": [
-    "Subaru"
-  ],
-  "Starts with SUI": [
-    "Suitcase"
   ],
   "Starts with SUL": [
     "Sulu"
@@ -11488,13 +11357,8 @@
   ],
   "Starts with TER": [
     "Teresa",
+    "Terminator 2: Judgment Day",
     "Tern"
-  ],
-  "Starts with TES": [
-    "Tesla"
-  ],
-  "Starts with TEX": [
-    "Texas"
   ],
   "Starts with THA": [
     "Thailand",
@@ -11503,18 +11367,24 @@
   ],
   "Starts with THE": [
     "The Alchemist",
+    "The Anubis Gates",
     "The Aristocats",
     "The Big Sleep",
     "The Black Cauldron",
+    "The Butterfly Effect",
     "The Cat Returns",
     "The Catcher in the Rye",
     "The Chronicles of Narnia",
     "The Color Purple",
     "The Da Vinci Code",
     "The Devil's Advocate",
+    "The Door into Summer",
     "The Emperor's New Groove",
     "The Empire Strikes Back",
+    "The End of Eternity",
     "The Fault in Our Stars",
+    "The Fifth Element",
+    "The First Fifteen Lives of Harry August",
     "The Force Awakens",
     "The Fox and the Hound",
     "The Girl with the Dragon Tattoo",
@@ -11527,23 +11397,31 @@
     "The Handmaid's Tale",
     "The Hateful Eight",
     "The Hidden Fortress",
+    "The Hitchhiker's Guide to the Galaxy",
     "The Hobbit",
     "The Hunchback of Notre Dame",
     "The Hunger Games",
+    "The Ice Storm",
     "The Iliad",
     "The Incredibles",
     "The Irishman",
     "The Jungle Book",
+    "The Lake House",
     "The Last Jedi",
     "The Lion King",
     "The Little Mermaid",
     "The Little Prince",
     "The Lord of the Rings",
     "The Maltese Falcon",
+    "The Man in the High Castle",
     "The Many Adventures of Winnie the Pooh",
+    "The Map of Chaos",
+    "The Map of Time",
+    "The Map of the Sky",
     "The Matrix",
     "The Odyssey",
     "The Phantom Menace",
+    "The Philadelphia Experiment",
     "The Princess and the Frog",
     "The Rescuers",
     "The Rescuers Down Under",
@@ -11552,11 +11430,18 @@
     "The Secret Garden",
     "The Shining",
     "The Silence of the Lambs",
+    "The Sixth Sense",
     "The Stand",
     "The Sword in the Stone",
     "The Tale of Peter Rabbit",
     "The Tale of the Princess Kaguya",
+    "The Terminator",
+    "The Time Machine",
+    "The Time Ships",
+    "The Time Traveler's Almanac",
+    "The Time Traveler's Wife",
     "The Very Hungry Caterpillar",
+    "The Village",
     "The Wind Rises",
     "The Wind in the Willows",
     "Thera",
@@ -11578,18 +11463,13 @@
   "Starts with TIJ": [
     "Tijuana"
   ],
-  "Starts with TIK": [
-    "TikTok"
-  ],
-  "Starts with TIS": [
-    "Tissue"
-  ],
   "Starts with TIT": [
     "Titanic",
     "Titanium"
   ],
   "Starts with TO ": [
-    "To Kill a Mockingbird"
+    "To Kill a Mockingbird",
+    "To Say Nothing of the Dog"
   ],
   "Starts with TOA": [
     "Toaster"
@@ -11597,26 +11477,11 @@
   "Starts with TOB": [
     "Toblerone"
   ],
-  "Starts with TOG": [
-    "Togo"
-  ],
-  "Starts with TOK": [
-    "Tokyo"
-  ],
   "Starts with TOM": [
     "Tomato"
   ],
-  "Starts with TON": [
-    "Tonga"
-  ],
-  "Starts with TOP": [
-    "Topeka"
-  ],
   "Starts with TOR": [
     "Toronto"
-  ],
-  "Starts with TOT": [
-    "Total War"
   ],
   "Starts with TOY": [
     "Toy Story",
@@ -11642,9 +11507,6 @@
   "Starts with TSA": [
     "Tsar"
   ],
-  "Starts with TUL": [
-    "Tulip"
-  ],
   "Starts with TUN": [
     "Tuna",
     "Tune",
@@ -11657,15 +11519,9 @@
     "Turkmenistan",
     "Turning Red"
   ],
-  "Starts with TUV": [
-    "Tuvalu"
-  ],
   "Starts with TWI": [
     "Twilight",
     "Twix"
-  ],
-  "Starts with UFF": [
-    "Uffizi"
   ],
   "Starts with UGA": [
     "Uganda"
@@ -11673,15 +11529,15 @@
   "Starts with UKR": [
     "Ukraine"
   ],
+  "Starts with UNB": [
+    "Unbreakable"
+  ],
   "Starts with UNI": [
     "Unicorn",
     "Uniform",
     "United Arab Emirates",
     "United Kingdom",
     "United States"
-  ],
-  "Starts with UNO": [
-    "Uno"
   ],
   "Starts with UPP": [
     "Upper Volta"
@@ -11692,9 +11548,6 @@
   "Starts with URA": [
     "Uranium",
     "Uranus"
-  ],
-  "Starts with URS": [
-    "Ursa Major"
   ],
   "Starts with URU": [
     "Uruguay"
@@ -11709,6 +11562,7 @@
     "Vader"
   ],
   "Starts with VAN": [
+    "Vantage Point",
     "Vanuatu"
   ],
   "Starts with VAS": [
@@ -11744,9 +11598,6 @@
   "Starts with VIR": [
     "Virginia",
     "Virgo"
-  ],
-  "Starts with VOI": [
-    "Void"
   ],
   "Starts with VOL": [
     "Volcano",
@@ -11816,16 +11667,11 @@
     "Wonder Woman"
   ],
   "Starts with WOR": [
+    "Working Girl",
     "Worm"
-  ],
-  "Starts with WRE": [
-    "Wreck-It Ralph"
   ],
   "Starts with WRI": [
     "Wright"
-  ],
-  "Starts with WUT": [
-    "Wuthering Heights"
   ],
   "Starts with X-R": [
     "X-ray"
@@ -11835,12 +11681,6 @@
   ],
   "Starts with XEN": [
     "Xenon"
-  ],
-  "Starts with XIA": [
-    "Xia"
-  ],
-  "Starts with YAC": [
-    "Yacht"
   ],
   "Starts with YAN": [
     "Yangtze",
@@ -11855,20 +11695,11 @@
   "Starts with YIE": [
     "Yield Sign"
   ],
-  "Starts with YOD": [
-    "Yoda"
-  ],
   "Starts with YOJ": [
     "Yojimbo"
   ],
-  "Starts with YUG": [
-    "Yugioh"
-  ],
   "Starts with ZAM": [
     "Zambia"
-  ],
-  "Starts with ZAN": [
-    "Zanzibar"
   ],
   "Starts with ZEB": [
     "Zebra"
@@ -11876,17 +11707,11 @@
   "Starts with ZEP": [
     "Zeppelin"
   ],
-  "Starts with ZER": [
-    "Zero"
-  ],
   "Starts with ZET": [
     "Zeta"
   ],
   "Starts with ZEU": [
     "Zeus"
-  ],
-  "Starts with ZIM": [
-    "Zimbabwe"
   ],
   "Starts with ZOO": [
     "Zootopia"
@@ -12154,19 +11979,105 @@
     "Ocean"
   ],
   "Thriller Films": [
+    "12 Monkeys",
+    "A Good Day to Die Hard",
+    "Alien",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens",
+    "Arrival",
+    "Copycat",
     "Death Proof",
+    "Death Wish",
+    "Deja Vu",
     "Die Hard",
+    "Die Hard 2",
+    "Die Hard with a Vengeance",
+    "Donnie Darko",
+    "Frequency",
+    "Glass",
     "Insomnia",
     "Jackie Brown",
+    "Live Free or Die Hard",
+    "Looper",
+    "Predestination",
+    "Primer",
+    "Pulp Fiction",
     "Reservoir Dogs",
     "Scarface",
-    "The Devil's Advocate"
+    "Sin City",
+    "Sin City: A Dame to Kill For",
+    "Source Code",
+    "Tenet",
+    "Terminator 2: Judgment Day",
+    "The Butterfly Effect",
+    "The Devil's Advocate",
+    "The Sixth Sense",
+    "The Terminator",
+    "The Village",
+    "Unbreakable",
+    "Vantage Point"
   ],
   "Thriller Stories": [
+    "11/22/63",
     "Gone Girl",
     "The Da Vinci Code",
     "The Girl with the Dragon Tattoo",
     "The Silence of the Lambs"
+  ],
+  "Time Travel Stories": [
+    "11/22/63",
+    "12 Monkeys",
+    "A Wrinkle in Time",
+    "About Time",
+    "All You Need Is Kill",
+    "Arrival",
+    "Avengers: Endgame",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
+    "Bill & Ted's Bogus Journey",
+    "Bill & Ted's Excellent Adventure",
+    "Deja Vu",
+    "Donnie Darko",
+    "Edge of Tomorrow",
+    "Flight of the Navigator",
+    "Frequency",
+    "Groundhog Day",
+    "Hot Tub Time Machine",
+    "Interstellar",
+    "Kate & Leopold",
+    "Kindred",
+    "Looper",
+    "Outlander",
+    "Predestination",
+    "Primer",
+    "Safety Not Guaranteed",
+    "Slaughterhouse-Five",
+    "Somewhere in Time",
+    "Source Code",
+    "Tenet",
+    "Terminator 2: Judgment Day",
+    "The Anubis Gates",
+    "The Butterfly Effect",
+    "The Door into Summer",
+    "The End of Eternity",
+    "The First Fifteen Lives of Harry August",
+    "The Hitchhiker's Guide to the Galaxy",
+    "The Lake House",
+    "The Man in the High Castle",
+    "The Map of Chaos",
+    "The Map of Time",
+    "The Map of the Sky",
+    "The Philadelphia Experiment",
+    "The Terminator",
+    "The Time Machine",
+    "The Time Ships",
+    "The Time Traveler's Almanac",
+    "The Time Traveler's Wife",
+    "Time Bandits",
+    "To Say Nothing of the Dog",
+    "X-Men: Days of Future Past"
   ],
   "Titles of Rank": [
     "Count",
@@ -12189,12 +12100,6 @@
     "Pen",
     "Saw",
     "Stamp"
-  ],
-  "Traffic Signs": [
-    "No Parking Sign",
-    "Speed Limit Sign",
-    "Stop Sign",
-    "Yield Sign"
   ],
   "Tragic Heroes": [
     "Achilles",
@@ -12373,9 +12278,6 @@
   "USA": [
     "Captain America"
   ],
-  "Units of Measurement": [
-    "Kilo"
-  ],
   "Vegetables": [
     "Lettuce",
     "Onion",
@@ -12478,12 +12380,6 @@
     "Casablanca",
     "Inglourious Basterds"
   ],
-  "Warner Bros. Characters": [
-    "Pinky"
-  ],
-  "Wars": [
-    "Total War"
-  ],
   "Watercraft": [
     "Canoe",
     "Kayak",
@@ -12520,6 +12416,7 @@
     "Thunder"
   ],
   "Western Films": [
+    "Back to the Future Part III",
     "Django Unchained",
     "The Hateful Eight"
   ],

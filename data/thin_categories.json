@@ -1,4 +1,13 @@
 {
+  "Movies directed by Robert Schwentke": [
+    "Red"
+  ],
+  "Movies directed by Orson Welles": [
+    "Othello"
+  ],
+  "Movies featuring Orson Welles": [
+    "Othello"
+  ],
   "Psychology Terms": [
     "Persona"
   ],
@@ -77,9 +86,6 @@
   "Movies featuring John Travolta": [
     "Pulp Fiction"
   ],
-  "Movies directed by Robert Zemeckis": [
-    "Forrest Gump"
-  ],
   "Movies featuring Tom Hanks": [
     "Forrest Gump"
   ],
@@ -116,9 +122,6 @@
   "Movies featuring Ian McDiarmid": [
     "Revenge of the Sith"
   ],
-  "Movies directed by Rian Johnson": [
-    "The Last Jedi"
-  ],
   "Movies directed by Gareth Edwards": [
     "Rogue One"
   ],
@@ -149,8 +152,11 @@
   "Movies featuring Woody Harrelson": [
     "Solo"
   ],
-  "Movies directed by Ridley Scott": [
-    "Blade Runner"
+  "Animated Films": [
+    "WALL-E"
+  ],
+  "Movies directed by Andrew Stanton": [
+    "WALL-E"
   ],
   "Movies directed by Howard Hawks": [
     "The Big Sleep"
@@ -173,22 +179,7 @@
   "Christmas Films": [
     "Die Hard"
   ],
-  "Movies directed by John McTiernan": [
-    "Die Hard"
-  ],
-  "Movies featuring Bruce Willis": [
-    "Die Hard"
-  ],
-  "Movies directed by Dean Parisot": [
-    "Galaxy Quest"
-  ],
-  "Movies featuring Sigourney Weaver": [
-    "Galaxy Quest"
-  ],
   "Movies featuring Tim Allen": [
-    "Galaxy Quest"
-  ],
-  "Sci-fi Films": [
     "Galaxy Quest"
   ],
   "Movies directed by Kevin Reynolds": [
@@ -200,14 +191,8 @@
   "Movies featuring Morgan Freeman": [
     "Robin Hood: Prince of Thieves"
   ],
-  "Movies directed by Ang Lee": [
-    "Sense and Sensibility"
-  ],
   "Movies featuring Kate Winslet": [
     "Sense and Sensibility"
-  ],
-  "Movies directed by Richard Curtis": [
-    "Love Actually"
   ],
   "Movies featuring Hugh Grant": [
     "Love Actually"
@@ -247,9 +232,6 @@
   ],
   "Movies featuring Charlize Theron": [
     "The Devil's Advocate"
-  ],
-  "Movies directed by Christopher Nolan": [
-    "Insomnia"
   ],
   "Movies featuring Hilary Swank": [
     "Insomnia"
@@ -292,6 +274,213 @@
   ],
   "Movies featuring Margot Robbie": [
     "Once Upon a Time in Hollywood"
+  ],
+  "Movies directed by David Fincher": [
+    "Alien 3"
+  ],
+  "Movies directed by Jean-Pierre Jeunet": [
+    "Alien: Resurrection"
+  ],
+  "Movies directed by Mike Nichols": [
+    "Working Girl"
+  ],
+  "Movies directed by Jon Amiel": [
+    "Copycat"
+  ],
+  "Movies directed by Scott Elliott": [
+    "A Map of the World"
+  ],
+  "Movies directed by Andrew Davis": [
+    "Holes"
+  ],
+  "Movies directed by Pete Travis": [
+    "Vantage Point"
+  ],
+  "Movies directed by Renny Harlin": [
+    "Die Hard 2"
+  ],
+  "Movies directed by Len Wiseman": [
+    "Live Free or Die Hard"
+  ],
+  "Movies directed by John Moore": [
+    "A Good Day to Die Hard"
+  ],
+  "Movies directed by Luc Besson": [
+    "The Fifth Element"
+  ],
+  "Movies directed by Michael Bay": [
+    "Armageddon"
+  ],
+  "Movies directed by Wes Anderson": [
+    "Moonrise Kingdom"
+  ],
+  "Movies directed by Eli Roth": [
+    "Death Wish"
+  ],
+  "Movies directed by Harold Ramis": [
+    "Groundhog Day"
+  ],
+  "Movies featuring Andie MacDowell": [
+    "Groundhog Day"
+  ],
+  "Movies featuring Bill Murray": [
+    "Groundhog Day"
+  ],
+  "Movies featuring Anne Hathaway": [
+    "Interstellar"
+  ],
+  "Movies featuring Matthew McConaughey": [
+    "Interstellar"
+  ],
+  "Movies directed by Shane Carruth": [
+    "Primer"
+  ],
+  "Movies directed by Duncan Jones": [
+    "Source Code"
+  ],
+  "Movies directed by Doug Liman": [
+    "Edge of Tomorrow"
+  ],
+  "Movies featuring Emily Blunt": [
+    "Edge of Tomorrow"
+  ],
+  "Movies featuring Tom Cruise": [
+    "Edge of Tomorrow"
+  ],
+  "Movies directed by Denis Villeneuve": [
+    "Arrival"
+  ],
+  "Movies featuring Amy Adams": [
+    "Arrival"
+  ],
+  "Movies featuring John David Washington": [
+    "Tenet"
+  ],
+  "Movies featuring Robert Pattinson": [
+    "Tenet"
+  ],
+  "Movies directed by Michael Spierig": [
+    "Predestination"
+  ],
+  "Movies directed by Peter Spierig": [
+    "Predestination"
+  ],
+  "Movies featuring Ethan Hawke": [
+    "Predestination"
+  ],
+  "Movies featuring Domhnall Gleeson": [
+    "About Time"
+  ],
+  "Movies featuring Rachel McAdams": [
+    "About Time"
+  ],
+  "Movies directed by Colin Trevorrow": [
+    "Safety Not Guaranteed"
+  ],
+  "Movies featuring Aubrey Plaza": [
+    "Safety Not Guaranteed"
+  ],
+  "Movies directed by Eric Bress": [
+    "The Butterfly Effect"
+  ],
+  "Movies directed by J. Mackye Gruber": [
+    "The Butterfly Effect"
+  ],
+  "Movies featuring Ashton Kutcher": [
+    "The Butterfly Effect"
+  ],
+  "Movies directed by Richard Kelly": [
+    "Donnie Darko"
+  ],
+  "Movies directed by Gregory Hoblit": [
+    "Frequency"
+  ],
+  "Movies featuring Dennis Quaid": [
+    "Frequency"
+  ],
+  "Movies featuring Jim Caviezel": [
+    "Frequency"
+  ],
+  "Movies directed by Tony Scott": [
+    "Deja Vu"
+  ],
+  "Movies featuring Denzel Washington": [
+    "Deja Vu"
+  ],
+  "Movies directed by Alejandro Agresti": [
+    "The Lake House"
+  ],
+  "Movies featuring Sandra Bullock": [
+    "The Lake House"
+  ],
+  "Movies directed by James Mangold": [
+    "Kate & Leopold"
+  ],
+  "Movies featuring Meg Ryan": [
+    "Kate & Leopold"
+  ],
+  "Movies directed by Jeannot Szwarc": [
+    "Somewhere in Time"
+  ],
+  "Movies featuring Christopher Reeve": [
+    "Somewhere in Time"
+  ],
+  "Movies featuring Jane Seymour": [
+    "Somewhere in Time"
+  ],
+  "Movies directed by Stewart Raffill": [
+    "The Philadelphia Experiment"
+  ],
+  "Movies directed by Randal Kleiser": [
+    "Flight of the Navigator"
+  ],
+  "Movies directed by Stephen Herek": [
+    "Bill & Ted's Excellent Adventure"
+  ],
+  "Movies directed by Pete Hewitt": [
+    "Bill & Ted's Bogus Journey"
+  ],
+  "Movies directed by Steve Pink": [
+    "Hot Tub Time Machine"
+  ],
+  "Movies featuring John Cusack": [
+    "Hot Tub Time Machine"
+  ],
+  "Movies directed by Bryan Singer": [
+    "X-Men: Days of Future Past"
+  ],
+  "Movies featuring Ian McKellen": [
+    "X-Men: Days of Future Past"
+  ],
+  "Movies featuring Patrick Stewart": [
+    "X-Men: Days of Future Past"
+  ],
+  "Movies directed by Anthony Russo": [
+    "Avengers: Endgame"
+  ],
+  "Movies directed by Joe Russo": [
+    "Avengers: Endgame"
+  ],
+  "Movies featuring Chris Evans": [
+    "Avengers: Endgame"
+  ],
+  "Movies featuring Robert Downey Jr.": [
+    "Avengers: Endgame"
+  ],
+  "Movies featuring Scarlett Johansson": [
+    "Avengers: Endgame"
+  ],
+  "Movies directed by Ava DuVernay": [
+    "A Wrinkle in Time"
+  ],
+  "Movies featuring Oprah Winfrey": [
+    "A Wrinkle in Time"
+  ],
+  "Movies featuring Reese Witherspoon": [
+    "A Wrinkle in Time"
+  ],
+  "Action Stories": [
+    "All You Need Is Kill"
   ],
   "Astronomers": [
     "Galileo",
@@ -345,10 +534,6 @@
     "The Godfather Part II",
     "The Irishman"
   ],
-  "Movies featuring Keanu Reeves": [
-    "The Matrix",
-    "The Devil's Advocate"
-  ],
   "Movies directed by Gorō Miyazaki": [
     "Tales from Earthsea",
     "From Up on Poppy Hill"
@@ -373,9 +558,17 @@
     "The Force Awakens",
     "The Rise of Skywalker"
   ],
+  "Movies directed by Rian Johnson": [
+    "The Last Jedi",
+    "Looper"
+  ],
   "Movies directed by Spielberg": [
     "Schindler's List",
     "Jurassic Park"
+  ],
+  "Movies directed by Ridley Scott": [
+    "Blade Runner",
+    "Alien"
   ],
   "Film Noir": [
     "The Big Sleep",
@@ -393,9 +586,25 @@
     "Harry Potter and the Goblet of Fire",
     "Donnie Brasco"
   ],
+  "Movies directed by John McTiernan": [
+    "Die Hard",
+    "Die Hard with a Vengeance"
+  ],
+  "Movies directed by Dean Parisot": [
+    "Galaxy Quest",
+    "Red 2"
+  ],
+  "Movies directed by Ang Lee": [
+    "Sense and Sensibility",
+    "The Ice Storm"
+  ],
   "Movies featuring Emma Thompson": [
     "Sense and Sensibility",
     "Love Actually"
+  ],
+  "Movies directed by Richard Curtis": [
+    "Love Actually",
+    "About Time"
   ],
   "Movies featuring Johnny Depp": [
     "Sweeney Todd: The Demon Barber of Fleet Street",
@@ -429,9 +638,45 @@
     "Django Unchained",
     "Once Upon a Time in Hollywood"
   ],
-  "Western Films": [
-    "Django Unchained",
-    "The Hateful Eight"
+  "Movies directed by Ivan Reitman": [
+    "Ghostbusters",
+    "Ghostbusters II"
+  ],
+  "Movies directed by Terry Gilliam": [
+    "12 Monkeys",
+    "Time Bandits"
+  ],
+  "Movies directed by Frank Miller": [
+    "Sin City",
+    "Sin City: A Dame to Kill For"
+  ],
+  "Movies directed by Robert Rodriguez": [
+    "Sin City",
+    "Sin City: A Dame to Kill For"
+  ],
+  "Movies featuring Arnold Schwarzenegger": [
+    "The Terminator",
+    "Terminator 2: Judgment Day"
+  ],
+  "Movies featuring Linda Hamilton": [
+    "The Terminator",
+    "Terminator 2: Judgment Day"
+  ],
+  "Movies featuring Jake Gyllenhaal": [
+    "Source Code",
+    "Donnie Darko"
+  ],
+  "Movies featuring Hugh Jackman": [
+    "Kate & Leopold",
+    "X-Men: Days of Future Past"
+  ],
+  "Movies featuring Alex Winter": [
+    "Bill & Ted's Excellent Adventure",
+    "Bill & Ted's Bogus Journey"
+  ],
+  "Comedy Stories": [
+    "The Hitchhiker's Guide to the Galaxy",
+    "To Say Nothing of the Dog"
   ],
   "Star": [
     "Milky Way",
@@ -488,6 +733,11 @@
     "The Godfather Part II",
     "The Godfather Part III"
   ],
+  "Cult Classics": [
+    "The Matrix",
+    "Akira",
+    "Blade Runner"
+  ],
   "Movies featuring Billy Dee Williams": [
     "The Empire Strikes Back",
     "Return of the Jedi",
@@ -523,21 +773,6 @@
     "Anne of Green Gables",
     "Little Women"
   ],
-  "Comedy Films": [
-    "Galaxy Quest",
-    "Love Actually",
-    "Once Upon a Time in Hollywood"
-  ],
-  "Period Films": [
-    "Sense and Sensibility",
-    "Sweeney Todd: The Demon Barber of Fleet Street",
-    "Once Upon a Time in Hollywood"
-  ],
-  "Horror Films": [
-    "Sweeney Todd: The Demon Barber of Fleet Street",
-    "The Devil's Advocate",
-    "Death Proof"
-  ],
   "Biographical Films": [
     "Serpico",
     "Donnie Brasco",
@@ -548,9 +783,29 @@
     "Reservoir Dogs",
     "Kill Bill: Volume 2"
   ],
+  "Movies directed by Christopher Nolan": [
+    "Insomnia",
+    "Interstellar",
+    "Tenet"
+  ],
   "Movies featuring Kurt Russell": [
     "Death Proof",
     "The Hateful Eight",
     "Once Upon a Time in Hollywood"
+  ],
+  "Western Films": [
+    "Django Unchained",
+    "The Hateful Eight",
+    "Back to the Future Part III"
+  ],
+  "Movies featuring Christopher Lloyd": [
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III"
+  ],
+  "Movies featuring Michael J. Fox": [
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III"
   ]
 }

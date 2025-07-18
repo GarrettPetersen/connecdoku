@@ -1025,10 +1025,15 @@
     "Starts with HER"
   ],
   "Red": [
+    "Action Films",
     "Camera Companies",
     "Colors",
+    "Comedy Films",
     "Companies",
     "Ends with RED",
+    "Movies",
+    "Movies directed by Robert Schwentke",
+    "Movies featuring Bruce Willis",
     "Photography Terms",
     "Red Things",
     "Starts with RED"
@@ -2014,8 +2019,14 @@
   ],
   "Othello": [
     "Black and White",
+    "Black and White Films",
     "Board Games",
+    "Drama Films",
     "Ends with LLO",
+    "Movies",
+    "Movies directed by Orson Welles",
+    "Movies featuring Orson Welles",
+    "Period Films",
     "Shakespeare Characters",
     "Starts with OTH",
     "Tragic Heroes"
@@ -6926,6 +6937,7 @@
     "Starts with ALL"
   ],
   "Giant": [
+    "Black and White Films",
     "Ends with ANT",
     "MLB Teams",
     "Mythical Creatures",
@@ -9614,13 +9626,15 @@
   ],
   "Pulp Fiction": [
     "Crime Films",
-    "Cult Classics",
+    "Drama Films",
     "Ends with ION",
     "Movies",
     "Movies directed by Quentin Tarantino",
+    "Movies featuring Bruce Willis",
     "Movies featuring John Travolta",
     "Movies featuring Samuel L. Jackson",
-    "Starts with PUL"
+    "Starts with PUL",
+    "Thriller Films"
   ],
   "Forrest Gump": [
     "Drama Films",
@@ -9640,7 +9654,6 @@
     "Movies featuring Keanu Reeves",
     "Movies featuring Laurence Fishburne",
     "Sci-fi Stories",
-    "Sequels",
     "Starts with THE"
   ],
   "Spirited Away": [
@@ -9869,7 +9882,6 @@
     "Movies featuring Mark Hamill",
     "Movies featuring Peter Cushing",
     "Sci-fi Stories",
-    "Sequels",
     "Star Wars Movies",
     "Starts with STA"
   ],
@@ -10089,12 +10101,14 @@
     "Starts with CAR"
   ],
   "WALL-E": [
-    "3D Animated Films",
+    "Animated Films",
     "Ends with L-E",
     "Family Films",
     "Movies",
+    "Movies directed by Andrew Stanton",
+    "Movies featuring Sigourney Weaver",
     "Pixar",
-    "Sci-fi Stories",
+    "Sci-fi Films",
     "Starts with WAL"
   ],
   "Up": [
@@ -10674,6 +10688,7 @@
     "Starts with RAN"
   ],
   "Kagemusha": [
+    "Black and White Films",
     "Ends with SHA",
     "Japanese Films",
     "Movies",
@@ -11433,5 +11448,853 @@
     "Movies featuring Margot Robbie",
     "Period Films",
     "Starts with ONC"
+  ],
+  "Alien": [
+    "Ends with IEN",
+    "Horror Films",
+    "Movies",
+    "Movies directed by Ridley Scott",
+    "Movies featuring Sigourney Weaver",
+    "Sci-fi Films",
+    "Star Wars Universe",
+    "Starts with ALI",
+    "Thriller Films"
+  ],
+  "Aliens": [
+    "Action Films",
+    "Ends with ENS",
+    "Horror Films",
+    "Movies",
+    "Movies directed by James Cameron",
+    "Movies featuring Sigourney Weaver",
+    "Sci-fi Films",
+    "Sequels",
+    "Star Wars Universe",
+    "Starts with ALI",
+    "Thriller Films"
+  ],
+  "Alien 3": [
+    "Ends with N 3",
+    "Horror Films",
+    "Movies",
+    "Movies directed by David Fincher",
+    "Movies featuring Sigourney Weaver",
+    "Sci-fi Films",
+    "Sequels",
+    "Starts with ALI",
+    "Thriller Films"
+  ],
+  "Alien: Resurrection": [
+    "Ends with ION",
+    "Horror Films",
+    "Movies",
+    "Movies directed by Jean-Pierre Jeunet",
+    "Movies featuring Sigourney Weaver",
+    "Sci-fi Films",
+    "Sequels",
+    "Starts with ALI",
+    "Thriller Films"
+  ],
+  "Avatar": [
+    "Action Films",
+    "Adventure Films",
+    "Ends with TAR",
+    "Movies",
+    "Movies directed by James Cameron",
+    "Movies featuring Sigourney Weaver",
+    "Sci-fi Films",
+    "Starts with AVA"
+  ],
+  "Avatar: The Way of Water": [
+    "Action Films",
+    "Adventure Films",
+    "Ends with TER",
+    "Movies",
+    "Movies directed by James Cameron",
+    "Movies featuring Sigourney Weaver",
+    "Sci-fi Films",
+    "Sequels",
+    "Starts with AVA"
+  ],
+  "Ghostbusters": [
+    "Comedy Films",
+    "Ends with ERS",
+    "Fantasy Films",
+    "Movies",
+    "Movies directed by Ivan Reitman",
+    "Movies featuring Sigourney Weaver",
+    "Starts with GHO"
+  ],
+  "Ghostbusters II": [
+    "Comedy Films",
+    "Ends with  II",
+    "Fantasy Films",
+    "Movies",
+    "Movies directed by Ivan Reitman",
+    "Movies featuring Sigourney Weaver",
+    "Sequels",
+    "Starts with GHO"
+  ],
+  "Working Girl": [
+    "Comedy Films",
+    "Drama Films",
+    "Ends with IRL",
+    "Movies",
+    "Movies directed by Mike Nichols",
+    "Movies featuring Sigourney Weaver",
+    "Romance Films",
+    "Starts with WOR"
+  ],
+  "Copycat": [
+    "Crime Films",
+    "Drama Films",
+    "Ends with CAT",
+    "Movies",
+    "Movies directed by Jon Amiel",
+    "Movies featuring Sigourney Weaver",
+    "Starts with COP",
+    "Thriller Films"
+  ],
+  "The Ice Storm": [
+    "Drama Films",
+    "Ends with ORM",
+    "Movies",
+    "Movies directed by Ang Lee",
+    "Movies featuring Sigourney Weaver",
+    "Starts with THE"
+  ],
+  "A Map of the World": [
+    "Drama Films",
+    "Ends with RLD",
+    "Movies",
+    "Movies directed by Scott Elliott",
+    "Movies featuring Sigourney Weaver",
+    "Starts with A M"
+  ],
+  "Holes": [
+    "Adventure Films",
+    "Comedy Films",
+    "Ends with LES",
+    "Family Films",
+    "Movies",
+    "Movies directed by Andrew Davis",
+    "Movies featuring Sigourney Weaver",
+    "Starts with HOL"
+  ],
+  "The Village": [
+    "Drama Films",
+    "Ends with AGE",
+    "Horror Films",
+    "Movies",
+    "Movies directed by M. Night Shyamalan",
+    "Movies featuring Sigourney Weaver",
+    "Starts with THE",
+    "Thriller Films"
+  ],
+  "Vantage Point": [
+    "Action Films",
+    "Crime Films",
+    "Ends with INT",
+    "Movies",
+    "Movies directed by Pete Travis",
+    "Movies featuring Sigourney Weaver",
+    "Starts with VAN",
+    "Thriller Films"
+  ],
+  "Avatar: Frontiers of Pandora": [
+    "Action Films",
+    "Adventure Films",
+    "Ends with ORA",
+    "Movies",
+    "Movies directed by James Cameron",
+    "Movies featuring Sigourney Weaver",
+    "Sci-fi Films",
+    "Starts with AVA"
+  ],
+  "Die Hard 2": [
+    "Action Films",
+    "Ends with D 2",
+    "Movies",
+    "Movies directed by Renny Harlin",
+    "Movies featuring Bruce Willis",
+    "Sequels",
+    "Starts with DIE",
+    "Thriller Films"
+  ],
+  "Die Hard with a Vengeance": [
+    "Action Films",
+    "Ends with NCE",
+    "Movies",
+    "Movies directed by John McTiernan",
+    "Movies featuring Bruce Willis",
+    "Sequels",
+    "Starts with DIE",
+    "Thriller Films"
+  ],
+  "Live Free or Die Hard": [
+    "Action Films",
+    "Ends with ARD",
+    "Movies",
+    "Movies directed by Len Wiseman",
+    "Movies featuring Bruce Willis",
+    "Sequels",
+    "Starts with LIV",
+    "Thriller Films"
+  ],
+  "A Good Day to Die Hard": [
+    "Action Films",
+    "Ends with ARD",
+    "Movies",
+    "Movies directed by John Moore",
+    "Movies featuring Bruce Willis",
+    "Sequels",
+    "Starts with A G",
+    "Thriller Films"
+  ],
+  "12 Monkeys": [
+    "Drama Films",
+    "Ends with EYS",
+    "Movies",
+    "Movies directed by Terry Gilliam",
+    "Movies featuring Bruce Willis",
+    "Sci-fi Films",
+    "Starts with 12 ",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "The Fifth Element": [
+    "Action Films",
+    "Adventure Films",
+    "Ends with ENT",
+    "Movies",
+    "Movies directed by Luc Besson",
+    "Movies featuring Bruce Willis",
+    "Sci-fi Films",
+    "Starts with THE"
+  ],
+  "Armageddon": [
+    "Action Films",
+    "Disaster Movies",
+    "Ends with DON",
+    "Movies",
+    "Movies directed by Michael Bay",
+    "Movies featuring Bruce Willis",
+    "Sci-fi Films",
+    "Starts with ARM"
+  ],
+  "The Sixth Sense": [
+    "Drama Films",
+    "Ends with NSE",
+    "Horror Films",
+    "Movies",
+    "Movies directed by M. Night Shyamalan",
+    "Movies featuring Bruce Willis",
+    "Starts with THE",
+    "Thriller Films"
+  ],
+  "Unbreakable": [
+    "Drama Films",
+    "Ends with BLE",
+    "Movies",
+    "Movies directed by M. Night Shyamalan",
+    "Movies featuring Bruce Willis",
+    "Starts with UNB",
+    "Thriller Films"
+  ],
+  "Sin City": [
+    "Action Films",
+    "Crime Films",
+    "Drama Films",
+    "Ends with ITY",
+    "Movies",
+    "Movies directed by Frank Miller",
+    "Movies directed by Quentin Tarantino",
+    "Movies directed by Robert Rodriguez",
+    "Movies featuring Bruce Willis",
+    "Starts with SIN",
+    "Thriller Films"
+  ],
+  "Sin City: A Dame to Kill For": [
+    "Action Films",
+    "Crime Films",
+    "Drama Films",
+    "Ends with FOR",
+    "Movies",
+    "Movies directed by Frank Miller",
+    "Movies directed by Robert Rodriguez",
+    "Movies featuring Bruce Willis",
+    "Sequels",
+    "Starts with SIN",
+    "Thriller Films"
+  ],
+  "Looper": [
+    "Action Films",
+    "Crime Films",
+    "Drama Films",
+    "Ends with PER",
+    "Movies",
+    "Movies directed by Rian Johnson",
+    "Movies featuring Bruce Willis",
+    "Sci-fi Films",
+    "Starts with LOO",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Red 2": [
+    "Action Films",
+    "Comedy Films",
+    "Ends with D 2",
+    "Movies",
+    "Movies directed by Dean Parisot",
+    "Movies featuring Bruce Willis",
+    "Sequels",
+    "Starts with RED"
+  ],
+  "Moonrise Kingdom": [
+    "Comedy Films",
+    "Drama Films",
+    "Ends with DOM",
+    "Movies",
+    "Movies directed by Wes Anderson",
+    "Movies featuring Bruce Willis",
+    "Romance Films",
+    "Starts with MOO"
+  ],
+  "Death Wish": [
+    "Action Films",
+    "Crime Films",
+    "Drama Films",
+    "Ends with ISH",
+    "Movies",
+    "Movies directed by Eli Roth",
+    "Movies featuring Bruce Willis",
+    "Starts with DEA",
+    "Thriller Films"
+  ],
+  "Glass": [
+    "Drama Films",
+    "Ends with ASS",
+    "Horror Films",
+    "Movies",
+    "Movies directed by M. Night Shyamalan",
+    "Movies featuring Bruce Willis",
+    "Starts with GLA",
+    "Thriller Films"
+  ],
+  "Groundhog Day": [
+    "Comedy Films",
+    "Drama Films",
+    "Ends with DAY",
+    "Fantasy Films",
+    "Movies",
+    "Movies directed by Harold Ramis",
+    "Movies featuring Andie MacDowell",
+    "Movies featuring Bill Murray",
+    "Romance Films",
+    "Starts with GRO",
+    "Time Travel Stories"
+  ],
+  "Back to the Future": [
+    "Adventure Films",
+    "Comedy Films",
+    "Ends with URE",
+    "Family Films",
+    "Movies",
+    "Movies directed by Robert Zemeckis",
+    "Movies featuring Christopher Lloyd",
+    "Movies featuring Michael J. Fox",
+    "Sci-fi Films",
+    "Starts with BAC",
+    "Time Travel Stories"
+  ],
+  "Back to the Future Part II": [
+    "Adventure Films",
+    "Comedy Films",
+    "Ends with  II",
+    "Family Films",
+    "Movies",
+    "Movies directed by Robert Zemeckis",
+    "Movies featuring Christopher Lloyd",
+    "Movies featuring Michael J. Fox",
+    "Sci-fi Films",
+    "Sequels",
+    "Starts with BAC",
+    "Time Travel Stories"
+  ],
+  "Back to the Future Part III": [
+    "Adventure Films",
+    "Comedy Films",
+    "Ends with III",
+    "Family Films",
+    "Movies",
+    "Movies directed by Robert Zemeckis",
+    "Movies featuring Christopher Lloyd",
+    "Movies featuring Michael J. Fox",
+    "Sci-fi Films",
+    "Sequels",
+    "Starts with BAC",
+    "Time Travel Stories",
+    "Western Films"
+  ],
+  "The Terminator": [
+    "Action Films",
+    "Ends with TOR",
+    "Horror Films",
+    "Movies",
+    "Movies directed by James Cameron",
+    "Movies featuring Arnold Schwarzenegger",
+    "Movies featuring Linda Hamilton",
+    "Sci-fi Films",
+    "Starts with THE",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Terminator 2: Judgment Day": [
+    "Action Films",
+    "Ends with DAY",
+    "Movies",
+    "Movies directed by James Cameron",
+    "Movies featuring Arnold Schwarzenegger",
+    "Movies featuring Linda Hamilton",
+    "Sci-fi Films",
+    "Sequels",
+    "Starts with TER",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Interstellar": [
+    "Adventure Films",
+    "Drama Films",
+    "Ends with LAR",
+    "Movies",
+    "Movies directed by Christopher Nolan",
+    "Movies featuring Anne Hathaway",
+    "Movies featuring Matthew McConaughey",
+    "Sci-fi Films",
+    "Starts with INT",
+    "Time Travel Stories"
+  ],
+  "Primer": [
+    "Drama Films",
+    "Ends with MER",
+    "Movies",
+    "Movies directed by Shane Carruth",
+    "Sci-fi Films",
+    "Starts with PRI",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Source Code": [
+    "Action Films",
+    "Drama Films",
+    "Ends with ODE",
+    "Movies",
+    "Movies directed by Duncan Jones",
+    "Movies featuring Jake Gyllenhaal",
+    "Sci-fi Films",
+    "Starts with SOU",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Edge of Tomorrow": [
+    "Action Films",
+    "Adventure Films",
+    "Ends with ROW",
+    "Movies",
+    "Movies directed by Doug Liman",
+    "Movies featuring Emily Blunt",
+    "Movies featuring Tom Cruise",
+    "Sci-fi Films",
+    "Starts with EDG",
+    "Time Travel Stories"
+  ],
+  "Arrival": [
+    "Drama Films",
+    "Ends with VAL",
+    "Movies",
+    "Movies directed by Denis Villeneuve",
+    "Movies featuring Amy Adams",
+    "Sci-fi Films",
+    "Starts with ARR",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Tenet": [
+    "Action Films",
+    "Drama Films",
+    "Ends with NET",
+    "Movies",
+    "Movies directed by Christopher Nolan",
+    "Movies featuring John David Washington",
+    "Movies featuring Robert Pattinson",
+    "Sci-fi Films",
+    "Starts with TEN",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Predestination": [
+    "Drama Films",
+    "Ends with ION",
+    "Movies",
+    "Movies directed by Michael Spierig",
+    "Movies directed by Peter Spierig",
+    "Movies featuring Ethan Hawke",
+    "Sci-fi Films",
+    "Starts with PRE",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "About Time": [
+    "Comedy Films",
+    "Drama Films",
+    "Ends with IME",
+    "Movies",
+    "Movies directed by Richard Curtis",
+    "Movies featuring Domhnall Gleeson",
+    "Movies featuring Rachel McAdams",
+    "Romance Films",
+    "Starts with ABO",
+    "Time Travel Stories"
+  ],
+  "Safety Not Guaranteed": [
+    "Comedy Films",
+    "Drama Films",
+    "Ends with EED",
+    "Movies",
+    "Movies directed by Colin Trevorrow",
+    "Movies featuring Aubrey Plaza",
+    "Romance Films",
+    "Starts with SAF",
+    "Time Travel Stories"
+  ],
+  "The Butterfly Effect": [
+    "Drama Films",
+    "Ends with ECT",
+    "Horror Films",
+    "Movies",
+    "Movies directed by Eric Bress",
+    "Movies directed by J. Mackye Gruber",
+    "Movies featuring Ashton Kutcher",
+    "Starts with THE",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Donnie Darko": [
+    "Drama Films",
+    "Ends with RKO",
+    "Horror Films",
+    "Movies",
+    "Movies directed by Richard Kelly",
+    "Movies featuring Jake Gyllenhaal",
+    "Starts with DON",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Frequency": [
+    "Drama Films",
+    "Ends with NCY",
+    "Movies",
+    "Movies directed by Gregory Hoblit",
+    "Movies featuring Dennis Quaid",
+    "Movies featuring Jim Caviezel",
+    "Starts with FRE",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "Deja Vu": [
+    "Action Films",
+    "Crime Films",
+    "Drama Films",
+    "Ends with  VU",
+    "Movies",
+    "Movies directed by Tony Scott",
+    "Movies featuring Denzel Washington",
+    "Sci-fi Films",
+    "Starts with DEJ",
+    "Thriller Films",
+    "Time Travel Stories"
+  ],
+  "The Lake House": [
+    "Drama Films",
+    "Ends with USE",
+    "Movies",
+    "Movies directed by Alejandro Agresti",
+    "Movies featuring Keanu Reeves",
+    "Movies featuring Sandra Bullock",
+    "Romance Films",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "Kate & Leopold": [
+    "Comedy Films",
+    "Drama Films",
+    "Ends with OLD",
+    "Movies",
+    "Movies directed by James Mangold",
+    "Movies featuring Hugh Jackman",
+    "Movies featuring Meg Ryan",
+    "Romance Films",
+    "Starts with KAT",
+    "Time Travel Stories"
+  ],
+  "Somewhere in Time": [
+    "Drama Films",
+    "Ends with IME",
+    "Movies",
+    "Movies directed by Jeannot Szwarc",
+    "Movies featuring Christopher Reeve",
+    "Movies featuring Jane Seymour",
+    "Romance Films",
+    "Starts with SOM",
+    "Time Travel Stories"
+  ],
+  "The Philadelphia Experiment": [
+    "Action Films",
+    "Adventure Films",
+    "Ends with ENT",
+    "Movies",
+    "Movies directed by Stewart Raffill",
+    "Sci-fi Films",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "Flight of the Navigator": [
+    "Adventure Films",
+    "Ends with TOR",
+    "Family Films",
+    "Movies",
+    "Movies directed by Randal Kleiser",
+    "Sci-fi Films",
+    "Starts with FLI",
+    "Time Travel Stories"
+  ],
+  "Time Bandits": [
+    "Adventure Films",
+    "Comedy Films",
+    "Ends with ITS",
+    "Fantasy Films",
+    "Movies",
+    "Movies directed by Terry Gilliam",
+    "Sci-fi Films",
+    "Starts with TIM",
+    "Time Travel Stories"
+  ],
+  "Bill & Ted's Excellent Adventure": [
+    "Adventure Films",
+    "Comedy Films",
+    "Ends with URE",
+    "Family Films",
+    "Movies",
+    "Movies directed by Stephen Herek",
+    "Movies featuring Alex Winter",
+    "Movies featuring Keanu Reeves",
+    "Starts with BIL",
+    "Time Travel Stories"
+  ],
+  "Bill & Ted's Bogus Journey": [
+    "Adventure Films",
+    "Comedy Films",
+    "Ends with NEY",
+    "Family Films",
+    "Movies",
+    "Movies directed by Pete Hewitt",
+    "Movies featuring Alex Winter",
+    "Movies featuring Keanu Reeves",
+    "Sequels",
+    "Starts with BIL",
+    "Time Travel Stories"
+  ],
+  "The Time Traveler's Wife": [
+    "Books",
+    "Drama Stories",
+    "Ends with IFE",
+    "Romance Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "Hot Tub Time Machine": [
+    "Comedy Films",
+    "Ends with INE",
+    "Movies",
+    "Movies directed by Steve Pink",
+    "Movies featuring John Cusack",
+    "Starts with HOT",
+    "Time Travel Stories"
+  ],
+  "X-Men: Days of Future Past": [
+    "Action Films",
+    "Adventure Films",
+    "Ends with AST",
+    "Movies",
+    "Movies directed by Bryan Singer",
+    "Movies featuring Hugh Jackman",
+    "Movies featuring Ian McKellen",
+    "Movies featuring Patrick Stewart",
+    "Sci-fi Films",
+    "Sequels",
+    "Starts with X-M",
+    "Time Travel Stories"
+  ],
+  "Avengers: Endgame": [
+    "Action Films",
+    "Adventure Films",
+    "Ends with AME",
+    "Movies",
+    "Movies directed by Anthony Russo",
+    "Movies directed by Joe Russo",
+    "Movies featuring Chris Evans",
+    "Movies featuring Robert Downey Jr.",
+    "Movies featuring Scarlett Johansson",
+    "Sci-fi Films",
+    "Sequels",
+    "Starts with AVE",
+    "Time Travel Stories"
+  ],
+  "A Wrinkle in Time": [
+    "Adventure Films",
+    "Ends with IME",
+    "Family Films",
+    "Fantasy Films",
+    "Movies",
+    "Movies directed by Ava DuVernay",
+    "Movies featuring Oprah Winfrey",
+    "Movies featuring Reese Witherspoon",
+    "Sci-fi Films",
+    "Starts with A W",
+    "Time Travel Stories"
+  ],
+  "The Time Machine": [
+    "Books",
+    "Ends with INE",
+    "Sci-fi Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "Slaughterhouse-Five": [
+    "Books",
+    "Drama Stories",
+    "Ends with IVE",
+    "Sci-fi Stories",
+    "Starts with SLA",
+    "Time Travel Stories"
+  ],
+  "The Hitchhiker's Guide to the Galaxy": [
+    "Books",
+    "Comedy Stories",
+    "Ends with AXY",
+    "Sci-fi Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "Kindred": [
+    "Books",
+    "Drama Stories",
+    "Ends with RED",
+    "Starts with KIN",
+    "Time Travel Stories"
+  ],
+  "Outlander": [
+    "Books",
+    "Drama Stories",
+    "Ends with DER",
+    "Romance Stories",
+    "Starts with OUT",
+    "Time Travel Stories"
+  ],
+  "11/22/63": [
+    "Books",
+    "Drama Stories",
+    "Ends with /63",
+    "Starts with 11/",
+    "Thriller Stories",
+    "Time Travel Stories"
+  ],
+  "The Man in the High Castle": [
+    "Books",
+    "Drama Stories",
+    "Ends with TLE",
+    "Sci-fi Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "The First Fifteen Lives of Harry August": [
+    "Books",
+    "Drama Stories",
+    "Ends with UST",
+    "Sci-fi Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "All You Need Is Kill": [
+    "Action Stories",
+    "Books",
+    "Ends with ILL",
+    "Sci-fi Stories",
+    "Starts with ALL",
+    "Time Travel Stories"
+  ],
+  "The End of Eternity": [
+    "Books",
+    "Ends with ITY",
+    "Sci-fi Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "The Door into Summer": [
+    "Books",
+    "Ends with MER",
+    "Sci-fi Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "The Anubis Gates": [
+    "Books",
+    "Ends with TES",
+    "Fantasy Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "To Say Nothing of the Dog": [
+    "Books",
+    "Comedy Stories",
+    "Ends with DOG",
+    "Sci-fi Stories",
+    "Starts with TO ",
+    "Time Travel Stories"
+  ],
+  "The Time Ships": [
+    "Books",
+    "Ends with IPS",
+    "Sci-fi Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "The Time Traveler's Almanac": [
+    "Books",
+    "Ends with NAC",
+    "Sci-fi Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "The Map of Time": [
+    "Books",
+    "Ends with IME",
+    "Fantasy Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "The Map of the Sky": [
+    "Books",
+    "Ends with SKY",
+    "Fantasy Stories",
+    "Starts with THE",
+    "Time Travel Stories"
+  ],
+  "The Map of Chaos": [
+    "Books",
+    "Ends with AOS",
+    "Fantasy Stories",
+    "Starts with THE",
+    "Time Travel Stories"
   ]
 }
