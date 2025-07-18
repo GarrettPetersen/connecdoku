@@ -1,6 +1,54 @@
 [
   {
     "rows": [
+      "Avengers",
+      "Birds",
+      "Supervillains"
+    ],
+    "cols": [
+      "Birds of Prey",
+      "Black Things",
+      "Red Things"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Hawkeye",
+      "Black Panther",
+      "Iron Man",
+      "Eagle",
+      "Crow",
+      "Cardinal",
+      "Vulture",
+      "Venom",
+      "Magneto"
+    ]
+  },
+  {
+    "rows": [
+      "Birds of Prey",
+      "Black Things",
+      "Red Things"
+    ],
+    "cols": [
+      "Avengers",
+      "Birds",
+      "Supervillains"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Hawkeye",
+      "Eagle",
+      "Vulture",
+      "Black Panther",
+      "Crow",
+      "Venom",
+      "Iron Man",
+      "Cardinal",
+      "Magneto"
+    ]
+  },
+  {
+    "rows": [
       "Books",
       "3D Animated Films",
       "Adventure Films"
@@ -27,7 +75,7 @@
     "rows": [
       "Commonwealth Nations",
       "Countries that No Longer Exist",
-      "Ends with AND"
+      "Ends with BIA"
     ],
     "cols": [
       "Countries in Africa",
@@ -42,9 +90,9 @@
       "Abyssinia",
       "British Malaya",
       "East Germany",
-      "Basutoland",
-      "Thailand",
-      "Finland"
+      "Gambia",
+      "Saudi Arabia",
+      "Serbia"
     ]
   },
   {
@@ -56,19 +104,19 @@
     "cols": [
       "Commonwealth Nations",
       "Countries that No Longer Exist",
-      "Ends with AND"
+      "Ends with BIA"
     ],
     "size": "3x3",
     "solutions": [
       "South Africa",
       "Abyssinia",
-      "Basutoland",
+      "Gambia",
       "India",
       "British Malaya",
-      "Thailand",
+      "Saudi Arabia",
       "United Kingdom",
       "East Germany",
-      "Finland"
+      "Serbia"
     ]
   },
   {
@@ -80,7 +128,7 @@
     "cols": [
       "Commonwealth Nations",
       "Countries that No Longer Exist",
-      "Former British Colony"
+      "Island Nations"
     ],
     "size": "3x3",
     "solutions": [
@@ -89,7 +137,7 @@
       "Antigua and Barbuda",
       "South Africa",
       "Abyssinia",
-      "Anglo-Egyptian Sudan",
+      "Cabo Verde",
       "India",
       "British Malaya",
       "Bahrain"
@@ -97,57 +145,9 @@
   },
   {
     "rows": [
-      "Countries in Oceania",
-      "Countries in Africa",
-      "Countries in Asia"
-    ],
-    "cols": [
+      "Countries that No Longer Exist",
       "Commonwealth Nations",
-      "Countries that No Longer Exist",
-      "Ends with AND"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Australia",
-      "New Hebrides",
-      "New Zealand",
-      "South Africa",
-      "Abyssinia",
-      "Basutoland",
-      "India",
-      "British Malaya",
-      "Thailand"
-    ]
-  },
-  {
-    "rows": [
-      "Countries in South America",
-      "Countries in Africa",
-      "Former British Colony"
-    ],
-    "cols": [
-      "Countries that No Longer Exist",
-      "Ends with ANA",
       "Ends with BIA"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "British Guiana",
-      "Dutch Guiana",
-      "Colombia",
-      "Abyssinia",
-      "Botswana",
-      "Gambia",
-      "Anglo-Egyptian Sudan",
-      "Ghana",
-      "Namibia"
-    ]
-  },
-  {
-    "rows": [
-      "Countries that No Longer Exist",
-      "Commonwealth Nations",
-      "Ends with AND"
     ],
     "cols": [
       "Countries in Africa",
@@ -162,57 +162,33 @@
       "South Africa",
       "India",
       "United Kingdom",
-      "Basutoland",
-      "Thailand",
-      "Finland"
+      "Gambia",
+      "Saudi Arabia",
+      "Serbia"
     ]
   },
   {
     "rows": [
-      "Crime Films",
-      "Adventure Films",
-      "Comedy Films"
+      "Crime",
+      "Birds",
+      "Movies"
     ],
     "cols": [
-      "Action Films",
-      "Drama Films",
-      "Ends with  II"
+      "Black and White",
+      "Ends with CON",
+      "Video Games"
     ],
     "size": "3x3",
     "solutions": [
-      "Death Wish",
-      "Copycat",
-      "The Godfather Part II",
-      "Avatar",
-      "Interstellar",
-      "Back to the Future Part II",
-      "Red",
-      "About Time",
-      "Ghostbusters II"
-    ]
-  },
-  {
-    "rows": [
-      "Ends with  II",
-      "Action Films",
-      "Drama Films"
-    ],
-    "cols": [
-      "Adventure Films",
-      "Comedy Films",
-      "Crime Films"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Back to the Future Part II",
-      "Ghostbusters II",
-      "The Godfather Part II",
-      "Avatar",
-      "Red",
-      "Death Wish",
-      "Interstellar",
-      "About Time",
-      "Copycat"
+      "Police Car",
+      "CON",
+      "Grand Theft Auto",
+      "Magpie",
+      "Falcon",
+      "Phoenix",
+      "Othello",
+      "The Maltese Falcon",
+      "Doom"
     ]
   },
   {
@@ -241,6 +217,4806 @@
   },
   {
     "rows": [
+      "Ends with LIC",
+      "Commonwealth Nations",
+      "Starts with BEL"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Countries in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "South Africa",
+      "United Kingdom",
+      "Canada",
+      "Belgian Congo",
+      "Belarus",
+      "Belize"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Commonwealth Nations",
+      "Starts with BEL"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "South Africa",
+      "United Kingdom",
+      "Canada",
+      "Belgian Congo",
+      "Belarus",
+      "Belize"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LIC",
+      "Starts with BEL",
+      "Commonwealth Nations"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Europe",
+      "Locations in North America"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Central African Republic",
+      "Czech Republic",
+      "Dominican Republic",
+      "Belgian Congo",
+      "Belarus",
+      "Belize",
+      "South Africa",
+      "United Kingdom",
+      "Canada"
+    ]
+  },
+  {
+    "rows": [
       "Female Names",
       "Birds",
       "Drinks"
@@ -265,38 +5041,14 @@
   },
   {
     "rows": [
-      "Former Belgian Colony",
-      "Countries in Asia",
-      "Countries in North America"
-    ],
-    "cols": [
-      "Countries that No Longer Exist",
-      "Former French Colony",
-      "Former Spanish Colony"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Belgian Congo",
-      "Democratic Republic of the Congo",
-      "Burundi",
-      "British Malaya",
-      "Cambodia",
-      "Philippines",
-      "British Honduras",
-      "Antigua and Barbuda",
-      "Costa Rica"
-    ]
-  },
-  {
-    "rows": [
       "Former French Colony",
       "Commonwealth Nations",
-      "Countries that No Longer Exist"
+      "Ends with BIA"
     ],
     "cols": [
       "Countries in Africa",
       "Countries in Asia",
-      "Countries in North America"
+      "Locations in North America"
     ],
     "size": "3x3",
     "solutions": [
@@ -306,57 +5058,57 @@
       "South Africa",
       "India",
       "Canada",
-      "Abyssinia",
-      "British Malaya",
-      "British Honduras"
+      "Gambia",
+      "Saudi Arabia",
+      "Columbia"
     ]
   },
   {
     "rows": [
-      "Former Italian Colony",
+      "Former German Colony",
       "Commonwealth Nations",
-      "Countries that No Longer Exist"
+      "Ends with AND"
     ],
     "cols": [
       "Countries in Africa",
-      "Countries in Europe",
-      "Ends with AND"
+      "Countries in Asia",
+      "Countries in Europe"
     ],
     "size": "3x3",
     "solutions": [
-      "Ethiopia",
-      "Albania",
-      "Italian Somaliland",
-      "South Africa",
-      "United Kingdom",
-      "New Zealand",
-      "Abyssinia",
+      "Burundi",
+      "Palau",
       "East Germany",
-      "Basutoland"
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Basutoland",
+      "Thailand",
+      "Finland"
     ]
   },
   {
     "rows": [
-      "Horror Films",
-      "Adventure Films",
-      "Comedy Films"
+      "Former Spanish Colony",
+      "Countries in Asia",
+      "Countries in Europe"
     ],
     "cols": [
-      "Action Films",
-      "Drama Films",
-      "Movies featuring Alan Rickman"
+      "Commonwealth Nations",
+      "Countries that No Longer Exist",
+      "Ends with BIA"
     ],
     "size": "3x3",
     "solutions": [
-      "Aliens",
-      "Donnie Darko",
-      "Sweeney Todd: The Demon Barber of Fleet Street",
-      "Avatar",
-      "Interstellar",
-      "Robin Hood: Prince of Thieves",
-      "Red",
-      "About Time",
-      "Galaxy Quest"
+      "South Africa",
+      "Spanish East Africa",
+      "Colombia",
+      "India",
+      "British Malaya",
+      "Saudi Arabia",
+      "United Kingdom",
+      "East Germany",
+      "Serbia"
     ]
   },
   {
@@ -368,163 +5120,19 @@
     "cols": [
       "Commonwealth Nations",
       "Countries that No Longer Exist",
-      "Ends with AND"
+      "Ends with BIA"
     ],
     "size": "3x3",
     "solutions": [
       "South Africa",
       "Abyssinia",
-      "Basutoland",
+      "Gambia",
       "India",
       "British Malaya",
-      "Thailand",
+      "Saudi Arabia",
       "United Kingdom",
       "East Germany",
-      "Finland"
-    ]
-  },
-  {
-    "rows": [
-      "Locations in South America",
-      "Airships",
-      "Birds"
-    ],
-    "cols": [
-      "Cities",
-      "Foods",
-      "Place Names"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Brasilia",
-      "Lima",
-      "Aconcagua",
-      "Los Angeles",
-      "Roma",
-      "Akron",
-      "Phoenix",
-      "Albatross",
-      "Turkey"
-    ]
-  },
-  {
-    "rows": [
-      "Movies directed by Robert Zemeckis",
-      "Action Films",
-      "Drama Films"
-    ],
-    "cols": [
-      "Adventure Films",
-      "Comedy Films",
-      "Oscar Winners"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Back to the Future",
-      "Back to the Future Part II",
-      "Forrest Gump",
-      "Avatar",
-      "Red",
-      "Django Unchained",
-      "Interstellar",
-      "About Time",
-      "Gone with the Wind"
-    ]
-  },
-  {
-    "rows": [
-      "Movies featuring Al Pacino",
-      "Action Films",
-      "Drama Films"
-    ],
-    "cols": [
-      "Comedy Films",
-      "Crime Films",
-      "Horror Films"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Once Upon a Time in Hollywood",
-      "Dog Day Afternoon",
-      "The Devil's Advocate",
-      "Red",
-      "Death Wish",
-      "Aliens",
-      "About Time",
-      "Copycat",
-      "Donnie Darko"
-    ]
-  },
-  {
-    "rows": [
-      "Predators",
-      "Band Namesakes",
-      "Ends with ANT"
-    ],
-    "cols": [
-      "Arthropods",
-      "Birds",
-      "Mammals"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Scorpion",
-      "Eagle",
-      "Bear",
-      "Beetle",
-      "Crow",
-      "Monkey",
-      "Ant",
-      "Cormorant",
-      "Elephant"
-    ]
-  },
-  {
-    "rows": [
-      "Spider-Verse Villains",
-      "Avengers",
-      "Birds"
-    ],
-    "cols": [
-      "Birds of Prey",
-      "Black Things",
-      "Types of Animals"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Vulture",
-      "Venom",
-      "Doctor Octopus",
-      "Hawkeye",
-      "Black Panther",
-      "Black Widow",
-      "Eagle",
-      "Crow",
-      "Albatross"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with BAC",
-      "Action Films",
-      "Drama Films"
-    ],
-    "cols": [
-      "Adventure Films",
-      "Comedy Films",
-      "Sci-fi Films"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Back to the Future",
-      "Back to the Future Part II",
-      "Back to the Future Part III",
-      "Avatar",
-      "Red",
-      "Aliens",
-      "Interstellar",
-      "About Time",
-      "12 Monkeys"
+      "Serbia"
     ]
   },
   {
@@ -536,19 +5144,19 @@
     "cols": [
       "Black and White",
       "Cities",
-      "Place Names"
+      "Star Wars Universe"
     ],
     "size": "3x3",
     "solutions": [
       "Chessboard",
       "Chernobyl",
-      "Cheyenne",
+      "Chewbacca",
       "Magpie",
       "Phoenix",
-      "Turkey",
+      "Millennium Falcon",
       "Othello",
       "Pompeii",
-      "Everest"
+      "Alien"
     ]
   },
   {
@@ -573,6 +5181,54 @@
       "Abyssinia",
       "British Malaya",
       "East Germany"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with MAL",
+      "Commonwealth Nations",
+      "Ends with NIA"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Malawi",
+      "Malaysia",
+      "Malta",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Abyssinia",
+      "Armenia",
+      "Albania"
+    ]
+  },
+  {
+    "rows": [
+      "Starts with MAL",
+      "Commonwealth Nations",
+      "Ends with NIA"
+    ],
+    "cols": [
+      "Countries in Africa",
+      "Countries in Asia",
+      "Locations in Europe"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Malawi",
+      "Malaysia",
+      "Malta",
+      "South Africa",
+      "India",
+      "United Kingdom",
+      "Abyssinia",
+      "Armenia",
+      "Albania"
     ]
   },
   {
@@ -603,7 +5259,7 @@
     "rows": [
       "Starts with NOR",
       "Commonwealth Nations",
-      "Countries that No Longer Exist"
+      "Ends with AND"
     ],
     "cols": [
       "Countries in Africa",
@@ -618,33 +5274,33 @@
       "South Africa",
       "India",
       "United Kingdom",
-      "Abyssinia",
-      "British Malaya",
-      "East Germany"
+      "Basutoland",
+      "Thailand",
+      "Finland"
     ]
   },
   {
     "rows": [
-      "Superheroes",
-      "Birds of Prey",
-      "Black Things"
+      "Starts with POL",
+      "Birds",
+      "Starts with PAN"
     ],
     "cols": [
-      "Avengers",
-      "Birds",
+      "Black and White",
+      "Modern Countries",
       "Predators"
     ],
     "size": "3x3",
     "solutions": [
-      "Black Panther",
-      "Phoenix",
-      "Wolverine",
-      "Hawkeye",
+      "Police Car",
+      "Poland",
+      "Polar Bear",
+      "Magpie",
+      "Turkey",
       "Eagle",
-      "Falcon",
-      "Black Widow",
-      "Crow",
-      "Bear"
+      "Panda",
+      "Panama",
+      "Panther"
     ]
   }
 ]

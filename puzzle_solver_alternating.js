@@ -86,17 +86,29 @@ function findValidNextCategories(currentCategories, otherCategories, maxSize, mi
         }
 
         if (isValid) {
-            valid.push(i);
+            // Test if adding this category would create a valid puzzle
+            const testCategories = [...currentCategories, i];
+            const testOtherCategories = [...otherCategories];
+
+            // Create test puzzle
+            const testRows = testCategories.map(idx => categoryNames[idx]);
+            const testCols = testOtherCategories.map(idx => categoryNames[idx]);
+
+            // Check if this would create a valid puzzle
+            if (isValidPuzzle(testRows, testCols)) {
+                valid.push(i);
+            }
         }
     }
 
     return valid;
 }
 
-// Function to check if a puzzle is valid (exactly one unique word per cell)
+// Function to validate that a puzzle has unique solutions (each word fits exactly one cell)
 function isValidPuzzle(rows, cols) {
-    const usedWords = new Set();
+    const wordToCells = new Map(); // Maps each word to the cells it can fit in
 
+    // Check each cell and record which words can fit where
     for (let i = 0; i < rows.length; i++) {
         for (let j = 0; j < cols.length; j++) {
             const rowWords = categories[rows[i]];
@@ -105,23 +117,24 @@ function isValidPuzzle(rows, cols) {
             // Find intersection
             const intersection = rowWords.filter(word => colWords.includes(word));
 
-            if (intersection.length === 0) {
-                return false; // No word for this cell
+            // Record each word and which cell it can fit in
+            for (const word of intersection) {
+                if (!wordToCells.has(word)) {
+                    wordToCells.set(word, []);
+                }
+                wordToCells.get(word).push([i, j]);
             }
-
-            // Check if any word in intersection is available (not used yet)
-            const availableWords = intersection.filter(word => !usedWords.has(word));
-
-            if (availableWords.length === 0) {
-                return false; // All words in intersection already used
-            }
-
-            // Use the first available word
-            usedWords.add(availableWords[0]);
         }
     }
 
-    return true; // All cells have unique words
+    // Check for words that can fit in multiple cells
+    for (const [word, cells] of wordToCells.entries()) {
+        if (cells.length > 1) {
+            return false; // Word can fit in multiple cells - invalid puzzle
+        }
+    }
+
+    return true; // All words fit in exactly one cell
 }
 
 // Function to solve a puzzle with given row and column categories

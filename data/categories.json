@@ -26,6 +26,7 @@
     "My Neighbor Totoro",
     "Oliver & Company",
     "Only Yesterday",
+    "Peter Pan",
     "Pinocchio",
     "Pocahontas",
     "Pom Poko",
@@ -45,6 +46,7 @@
     "The Fox and the Hound",
     "The Great Mouse Detective",
     "The Hunchback of Notre Dame",
+    "The Jungle Book",
     "The Lion King",
     "The Little Mermaid",
     "The Many Adventures of Winnie the Pooh",
@@ -119,6 +121,7 @@
     "Avatar: Frontiers of Pandora",
     "Avatar: The Way of Water",
     "Avengers: Endgame",
+    "Braveheart",
     "Death Proof",
     "Death Wish",
     "Deja Vu",
@@ -127,20 +130,36 @@
     "Die Hard with a Vengeance",
     "Django Unchained",
     "Edge of Tomorrow",
+    "Escape from New York",
+    "Everything Everywhere All at Once",
+    "Gladiator",
+    "Home Alone",
+    "Home Alone 2: Lost in New York",
     "Inglourious Basterds",
+    "Jingle All the Way",
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
     "Live Free or Die Hard",
     "Looper",
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Red",
     "Red 2",
     "Robin Hood: Prince of Thieves",
     "Sin City",
     "Sin City: A Dame to Kill For",
     "Source Code",
+    "Stargate",
     "Tenet",
     "Terminator 2: Judgment Day",
     "The Fifth Element",
+    "The Hurt Locker",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers",
     "The Matrix",
     "The Philadelphia Experiment",
     "The Terminator",
@@ -152,6 +171,7 @@
   ],
   "Adventure Films": [
     "A Wrinkle in Time",
+    "Aladdin",
     "Attack of the Clones",
     "Avatar",
     "Avatar: Frontiers of Pandora",
@@ -164,22 +184,49 @@
     "Bill & Ted's Excellent Adventure",
     "Edge of Tomorrow",
     "Flight of the Navigator",
+    "Frozen",
+    "Hercules",
     "Holes",
     "Interstellar",
+    "Into the Woods",
     "Jurassic Park",
+    "Moana",
+    "Mulan",
+    "Peter Pan",
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Pocahontas",
     "Return of the Jedi",
     "Revenge of the Sith",
+    "Rise of the Guardians",
+    "Robin Hood",
     "Robin Hood: Prince of Thieves",
     "Rogue One",
     "Solo",
     "Star Wars",
+    "Stargate",
+    "Tangled",
+    "Tarzan",
     "The Empire Strikes Back",
     "The Fifth Element",
     "The Force Awakens",
+    "The Great Mouse Detective",
+    "The Jungle Book",
     "The Last Jedi",
+    "The Lion King",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers",
     "The Phantom Menace",
     "The Philadelphia Experiment",
+    "The Polar Express",
+    "The Rescuers",
+    "The Rescuers Down Under",
     "The Rise of Skywalker",
+    "The Wizard of Oz",
     "Time Bandits",
     "X-Men: Days of Future Past"
   ],
@@ -233,6 +280,13 @@
     "Turkey"
   ],
   "Animated Films": [
+    "A Charlie Brown Christmas",
+    "Arthur Christmas",
+    "How the Grinch Stole Christmas",
+    "Rise of the Guardians",
+    "The Grinch",
+    "The Nightmare Before Christmas",
+    "The Polar Express",
     "WALL-E"
   ],
   "Anime": [
@@ -372,6 +426,60 @@
   "Bear": [
     "Bruin"
   ],
+  "Best Picture Winners": [
+    "12 Years a Slave",
+    "A Beautiful Mind",
+    "Amadeus",
+    "American Beauty",
+    "Argo",
+    "Birdman",
+    "Braveheart",
+    "CODA",
+    "Casablanca",
+    "Chariots of Fire",
+    "Chicago",
+    "Crash",
+    "Dances with Wolves",
+    "Driving Miss Daisy",
+    "Everything Everywhere All at Once",
+    "Forrest Gump",
+    "Gandhi",
+    "Gladiator",
+    "Gone with the Wind",
+    "Green Book",
+    "Kramer vs. Kramer",
+    "Million Dollar Baby",
+    "Moonlight",
+    "No Country for Old Men",
+    "Nomadland",
+    "One Flew Over the Cuckoo's Nest",
+    "Oppenheimer",
+    "Ordinary People",
+    "Out of Africa",
+    "Parasite",
+    "Platoon",
+    "Rain Man",
+    "Rocky",
+    "Schindler's List",
+    "Shakespeare in Love",
+    "Slumdog Millionaire",
+    "Spotlight",
+    "Terms of Endearment",
+    "The Artist",
+    "The Deer Hunter",
+    "The Departed",
+    "The English Patient",
+    "The Godfather",
+    "The Godfather Part II",
+    "The Hurt Locker",
+    "The King's Speech",
+    "The Last Emperor",
+    "The Lord of the Rings: The Return of the King",
+    "The Shape of Water",
+    "The Silence of the Lambs",
+    "Titanic",
+    "Unforgiven"
+  ],
   "Big Cats": [
     "Jaguar",
     "Lion",
@@ -379,9 +487,20 @@
     "Tiger"
   ],
   "Biographical Films": [
+    "12 Years a Slave",
+    "A Beautiful Mind",
+    "Amadeus",
     "Donnie Brasco",
+    "Evita",
+    "Gandhi",
+    "Green Book",
+    "Oppenheimer",
     "Serpico",
-    "The Irishman"
+    "The Greatest Showman",
+    "The Irishman",
+    "The King's Speech",
+    "The Last Emperor",
+    "Tick, Tick... Boom!"
   ],
   "Biology": [
     "Blood"
@@ -461,6 +580,7 @@
     "Giant",
     "High and Low",
     "Ikiru",
+    "It's a Wonderful Life",
     "Kagemusha",
     "Othello",
     "Rashomon",
@@ -468,10 +588,12 @@
     "Sanjuro",
     "Schindler's List",
     "Seven Samurai",
+    "Singin' in the Rain",
     "The Big Sleep",
     "The Hidden Fortress",
     "The Maltese Falcon",
     "Throne of Blood",
+    "White Christmas",
     "Yojimbo"
   ],
   "Blockbusters": [
@@ -792,7 +914,32 @@
     "Twix"
   ],
   "Christmas Films": [
-    "Die Hard"
+    "A Charlie Brown Christmas",
+    "A Christmas Story",
+    "Arthur Christmas",
+    "Bad Santa",
+    "Die Hard",
+    "Elf",
+    "Four Christmases",
+    "Home Alone",
+    "Home Alone 2: Lost in New York",
+    "How the Grinch Stole Christmas",
+    "It's a Wonderful Life",
+    "Jingle All the Way",
+    "Love Actually",
+    "Miracle on 34th Street",
+    "National Lampoon's Christmas Vacation",
+    "Rise of the Guardians",
+    "Scrooged",
+    "The Grinch",
+    "The Holiday",
+    "The Muppet Christmas Carol",
+    "The Nightmare Before Christmas",
+    "The Polar Express",
+    "The Santa Clause",
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause",
+    "White Christmas"
   ],
   "Cities": [
     "Albany",
@@ -1127,26 +1274,67 @@
     "Riddler"
   ],
   "Comedy Films": [
+    "101 Dalmatians",
+    "A Charlie Brown Christmas",
+    "A Christmas Story",
     "About Time",
+    "Annie",
+    "Arthur Christmas",
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III",
+    "Bad Santa",
     "Bill & Ted's Bogus Journey",
     "Bill & Ted's Excellent Adventure",
+    "Birdman",
+    "CODA",
+    "Driving Miss Daisy",
+    "Everything Everywhere All at Once",
+    "Four Christmases",
     "Galaxy Quest",
     "Ghostbusters",
     "Ghostbusters II",
+    "Grease",
+    "Green Book",
     "Groundhog Day",
+    "Hairspray",
     "Holes",
+    "Home Alone",
+    "Home Alone 2: Lost in New York",
     "Hot Tub Time Machine",
+    "How the Grinch Stole Christmas",
+    "Jingle All the Way",
     "Kate & Leopold",
+    "Lilo & Stitch",
+    "Little Shop of Horrors",
     "Love Actually",
     "Moonrise Kingdom",
+    "My Fair Lady",
+    "National Lampoon's Christmas Vacation",
+    "Oliver & Company",
     "Once Upon a Time in Hollywood",
+    "Parasite",
     "Red",
     "Red 2",
+    "Rocky Horror Picture Show",
     "Safety Not Guaranteed",
+    "Scrooged",
+    "Shakespeare in Love",
+    "Singin' in the Rain",
+    "Terms of Endearment",
+    "The Aristocats",
+    "The Artist",
+    "The Emperor's New Groove",
+    "The Grinch",
+    "The Holiday",
+    "The Many Adventures of Winnie the Pooh",
+    "The Muppet Christmas Carol",
+    "The Parent Trap",
+    "The Santa Clause",
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause",
     "Time Bandits",
+    "Winnie the Pooh",
     "Working Girl"
   ],
   "Comedy Stories": [
@@ -1842,7 +2030,10 @@
     "Police Car"
   ],
   "Crime Films": [
+    "Bad Santa",
+    "Chicago",
     "Copycat",
+    "Crash",
     "Death Wish",
     "Deja Vu",
     "Dog Day Afternoon",
@@ -1852,12 +2043,14 @@
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
     "Looper",
+    "No Country for Old Men",
     "Pulp Fiction",
     "Reservoir Dogs",
     "Scarface",
     "Serpico",
     "Sin City",
     "Sin City: A Dame to Kill For",
+    "The Departed",
     "The Godfather",
     "The Godfather Part II",
     "The Godfather Part III",
@@ -1966,6 +2159,7 @@
     "Brother Bear",
     "Chicken Little",
     "Cinderella",
+    "Coco",
     "Dumbo",
     "Encanto",
     "Fantasia",
@@ -1975,11 +2169,19 @@
     "Home on the Range",
     "Lady and the Tramp",
     "Lilo & Stitch",
+    "Mary Poppins",
+    "Mary Poppins Returns",
     "Meet the Robinsons",
     "Moana",
     "Mulan",
     "Oliver & Company",
+    "Peter Pan",
     "Pinocchio",
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Pocahontas",
     "Raya and the Last Dragon",
     "Robin Hood",
@@ -1987,6 +2189,7 @@
     "Sleeping Beauty",
     "Snow White and the Seven Dwarfs",
     "Solo",
+    "Soul",
     "Strange World",
     "Tangled",
     "Tarzan",
@@ -1997,10 +2200,12 @@
     "The Fox and the Hound",
     "The Great Mouse Detective",
     "The Hunchback of Notre Dame",
+    "The Jungle Book",
     "The Last Jedi",
     "The Lion King",
     "The Little Mermaid",
     "The Many Adventures of Winnie the Pooh",
+    "The Parent Trap",
     "The Princess and the Frog",
     "The Rescuers",
     "The Rescuers Down Under",
@@ -2035,57 +2240,129 @@
   ],
   "Drama Films": [
     "12 Monkeys",
+    "12 Years a Slave",
+    "A Beautiful Mind",
+    "A Christmas Story",
     "A Map of the World",
     "About Time",
+    "Amadeus",
+    "American Beauty",
+    "Argo",
     "Arrival",
+    "Bambi",
+    "Birdman",
+    "Braveheart",
+    "CODA",
+    "Cabaret",
+    "Chariots of Fire",
+    "Chicago",
     "Copycat",
+    "Crash",
+    "Dances with Wolves",
     "Death Wish",
     "Deja Vu",
     "Django Unchained",
     "Dog Day Afternoon",
     "Donnie Brasco",
     "Donnie Darko",
+    "Dreamgirls",
+    "Driving Miss Daisy",
+    "Dumbo",
+    "Everything Everywhere All at Once",
+    "Evita",
+    "Fiddler on the Roof",
     "Forrest Gump",
+    "Four Christmases",
     "Frequency",
+    "Gandhi",
+    "Gladiator",
     "Glass",
+    "Godspell",
     "Gone with the Wind",
+    "Green Book",
     "Groundhog Day",
+    "Hedwig and the Angry Inch",
+    "In the Heights",
     "Inglourious Basterds",
     "Insomnia",
     "Interstellar",
+    "It's a Wonderful Life",
     "Jackie Brown",
+    "Jesus Christ Superstar",
     "Kate & Leopold",
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
+    "Kramer vs. Kramer",
+    "La La Land",
+    "Les Misérables",
     "Looper",
+    "Love Actually",
+    "Million Dollar Baby",
+    "Miracle on 34th Street",
+    "Moonlight",
     "Moonrise Kingdom",
+    "Moulin Rouge!",
+    "No Country for Old Men",
+    "Nomadland",
+    "Oliver!",
     "Once Upon a Time in Hollywood",
+    "One Flew Over the Cuckoo's Nest",
+    "Oppenheimer",
+    "Ordinary People",
     "Othello",
+    "Out of Africa",
+    "Parasite",
+    "Platoon",
     "Predestination",
     "Primer",
     "Pulp Fiction",
+    "Rain Man",
+    "Rent",
     "Reservoir Dogs",
+    "Rocky",
     "Safety Not Guaranteed",
     "Scarface",
     "Scent of a Woman",
     "Schindler's List",
+    "Scrooged",
     "Sense and Sensibility",
     "Serpico",
     "Sin City",
     "Sin City: A Dame to Kill For",
+    "Slumdog Millionaire",
     "Somewhere in Time",
     "Source Code",
+    "Spotlight",
     "Tenet",
+    "Terms of Endearment",
+    "The Artist",
     "The Butterfly Effect",
+    "The Deer Hunter",
+    "The Departed",
     "The Devil's Advocate",
+    "The English Patient",
+    "The Fox and the Hound",
     "The Godfather Part III",
+    "The Greatest Showman",
     "The Hateful Eight",
+    "The Holiday",
+    "The Hunchback of Notre Dame",
+    "The Hurt Locker",
     "The Ice Storm",
     "The Irishman",
+    "The King's Speech",
     "The Lake House",
+    "The Last Emperor",
+    "The Phantom of the Opera",
+    "The Shape of Water",
     "The Sixth Sense",
+    "The Sound of Music",
     "The Village",
+    "Tick, Tick... Boom!",
+    "Titanic",
     "Unbreakable",
+    "Unforgiven",
+    "West Side Story",
     "Working Girl"
   ],
   "Drama Stories": [
@@ -2149,6 +2426,7 @@
     "Good",
     "Monopoly",
     "Nickel",
+    "Rent",
     "Risk",
     "Silver"
   ],
@@ -2203,6 +2481,9 @@
     "Ghostbusters II",
     "The Godfather Part II"
   ],
+  "Ends with  OZ": [
+    "The Wizard of Oz"
+  ],
   "Ends with  VU": [
     "Deja Vu"
   ],
@@ -2220,6 +2501,9 @@
   ],
   "Ends with 984": [
     "1984"
+  ],
+  "Ends with ABY": [
+    "Million Dollar Baby"
   ],
   "Ends with ACE": [
     "Mace",
@@ -2259,6 +2543,9 @@
     "Avocado",
     "Prado"
   ],
+  "Ends with ADY": [
+    "My Fair Lady"
+  ],
   "Ends with AEL": [
     "Israel"
   ],
@@ -2284,6 +2571,7 @@
   "Ends with AIN": [
     "Bahrain",
     "Rain",
+    "Singin' in the Rain",
     "Spain"
   ],
   "Ends with AIR": [
@@ -2383,7 +2671,9 @@
     "Iceland",
     "Ireland",
     "Italian Somaliland",
+    "La La Land",
     "New Zealand",
+    "Nomadland",
     "Nyasaland",
     "Poland",
     "Samarkand",
@@ -2405,7 +2695,8 @@
   "Ends with ANS": [
     "101 Dalmatians",
     "Blue Jeans",
-    "Percy Jackson & the Olympians"
+    "Percy Jackson & the Olympians",
+    "Rise of the Guardians"
   ],
   "Ends with ANT": [
     "Ant",
@@ -2465,6 +2756,9 @@
     "Jurassic Park",
     "Shark"
   ],
+  "Ends with ARL": [
+    "Pirates of the Caribbean: The Curse of the Black Pearl"
+  ],
   "Ends with ARM": [
     "Arm"
   ],
@@ -2482,6 +2776,7 @@
     "The Fault in Our Stars"
   ],
   "Ends with ART": [
+    "Braveheart",
     "Mozart",
     "Tart",
     "Whisper of the Heart"
@@ -2498,9 +2793,11 @@
     "NASA"
   ],
   "Ends with ASE": [
+    "Grease",
     "Suitcase"
   ],
   "Ends with ASH": [
+    "Crash",
     "Flash",
     "Hash"
   ],
@@ -2523,6 +2820,7 @@
   ],
   "Ends with ATE": [
     "Skate",
+    "Stargate",
     "The Devil's Advocate"
   ],
   "Ends with ATH": [
@@ -2567,6 +2865,7 @@
     "Java"
   ],
   "Ends with AVE": [
+    "12 Years a Slave",
     "Brave"
   ],
   "Ends with AVO": [
@@ -2745,7 +3044,8 @@
     "Pencil"
   ],
   "Ends with CKY": [
-    "Jabberwocky"
+    "Jabberwocky",
+    "Rocky"
   ],
   "Ends with CNN": [
     "CNN"
@@ -2795,7 +3095,8 @@
     "Faraday",
     "Groundhog Day",
     "Only Yesterday",
-    "Terminator 2: Judgment Day"
+    "Terminator 2: Judgment Day",
+    "The Holiday"
   ],
   "Ends with DEL": [
     "Handel"
@@ -2819,6 +3120,7 @@
   "Ends with DES": [
     "Hades",
     "New Hebrides",
+    "Pirates of the Caribbean: On Stranger Tides",
     "Spades"
   ],
   "Ends with DEX": [
@@ -2828,6 +3130,9 @@
     "Bridge",
     "Dodge",
     "Fridge"
+  ],
+  "Ends with DHI": [
+    "Gandhi"
   ],
   "Ends with DIA": [
     "Cambodia",
@@ -2886,7 +3191,8 @@
     "Kill Bill: Volume 1"
   ],
   "Ends with E 2": [
-    "Kill Bill: Volume 2"
+    "Kill Bill: Volume 2",
+    "The Santa Clause 2"
   ],
   "Ends with EAD": [
     "Bread"
@@ -2921,6 +3227,9 @@
     "Greece",
     "One Piece"
   ],
+  "Ends with ECH": [
+    "The King's Speech"
+  ],
   "Ends with ECT": [
     "The Butterfly Effect"
   ],
@@ -2952,6 +3261,7 @@
     "The Big Sleep"
   ],
   "Ends with EET": [
+    "Miracle on 34th Street",
     "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
   "Ends with EGA": [
@@ -2991,6 +3301,7 @@
   ],
   "Ends with ELL": [
     "Bell",
+    "Godspell",
     "Hell",
     "Spell"
   ],
@@ -3004,6 +3315,9 @@
     "Athena",
     "Helena"
   ],
+  "Ends with END": [
+    "Pirates of the Caribbean: At World's End"
+  ],
   "Ends with ENS": [
     "Aliens",
     "Athens",
@@ -3013,15 +3327,22 @@
   ],
   "Ends with ENT": [
     "Fluorescent",
+    "Rent",
+    "Terms of Endearment",
+    "The English Patient",
     "The Fifth Element",
     "The Philadelphia Experiment"
   ],
   "Ends with EON": [
     "Neon"
   ],
+  "Ends with ER!": [
+    "Oliver!"
+  ],
   "Ends with ERA": [
     "Camera",
     "Hera",
+    "The Phantom of the Opera",
     "Thera"
   ],
   "Ends with ERD": [
@@ -3044,6 +3365,7 @@
     "Checkers",
     "Ghostbusters",
     "Snickers",
+    "The Lord of the Rings: The Two Towers",
     "The Rescuers"
   ],
   "Ends with ERT": [
@@ -3073,11 +3395,14 @@
   ],
   "Ends with ESS": [
     "Chess",
-    "The Hidden Fortress"
+    "The Hidden Fortress",
+    "The Polar Express"
   ],
   "Ends with EST": [
     "Everest",
-    "Galaxy Quest"
+    "Galaxy Quest",
+    "One Flew Over the Cuckoo's Nest",
+    "Pirates of the Caribbean: Dead Man's Chest"
   ],
   "Ends with ETA": [
     "Beta",
@@ -3100,6 +3425,7 @@
     "Herculaneum"
   ],
   "Ends with EUS": [
+    "Amadeus",
     "Odysseus",
     "Perseus",
     "Theseus",
@@ -3155,6 +3481,12 @@
   "Ends with GAN": [
     "Michigan"
   ],
+  "Ends with GE!": [
+    "Moulin Rouge!"
+  ],
+  "Ends with GED": [
+    "Scrooged"
+  ],
   "Ends with GEL": [
     "Angel"
   ],
@@ -3180,6 +3512,8 @@
   ],
   "Ends with GHT": [
     "Green Light",
+    "Moonlight",
+    "Spotlight",
     "The Hateful Eight",
     "Twilight",
     "Wright"
@@ -3274,10 +3608,14 @@
     "Lex Luthor",
     "Thor"
   ],
+  "Ends with HOW": [
+    "Rocky Horror Picture Show"
+  ],
   "Ends with HRE": [
     "Euchre"
   ],
   "Ends with HTS": [
+    "In the Heights",
     "Wuthering Heights"
   ],
   "Ends with HUP": [
@@ -3317,6 +3655,7 @@
     "Italian West Africa",
     "Jamaica",
     "Leica",
+    "Out of Africa",
     "Portuguese East Africa",
     "Portuguese West Africa",
     "South Africa",
@@ -3365,6 +3704,7 @@
   ],
   "Ends with IFE": [
     "A Bug's Life",
+    "It's a Wonderful Life",
     "Knife",
     "The Time Traveler's Wife"
   ],
@@ -3435,6 +3775,7 @@
     "Monsters Inc"
   ],
   "Ends with IND": [
+    "A Beautiful Mind",
     "Gone with the Wind"
   ],
   "Ends with INE": [
@@ -3458,7 +3799,10 @@
     "Ming",
     "Nothing",
     "The Lion King",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
     "The Shining",
+    "The Thing",
     "X-Wing"
   ],
   "Ends with INI": [
@@ -3473,6 +3817,9 @@
     "Rhino",
     "San Marino"
   ],
+  "Ends with INS": [
+    "Mary Poppins"
+  ],
   "Ends with INT": [
     "INT",
     "Vantage Point"
@@ -3485,6 +3832,7 @@
     "Damnation",
     "Federation",
     "Lion",
+    "National Lampoon's Christmas Vacation",
     "Onion",
     "Orion",
     "Pinion",
@@ -3516,8 +3864,10 @@
     "To Kill a Mockingbird"
   ],
   "Ends with IRE": [
+    "Chariots of Fire",
     "Harry Potter and the Goblet of Fire",
     "Sapphire",
+    "Slumdog Millionaire",
     "Solitaire"
   ],
   "Ends with IRK": [
@@ -3549,13 +3899,19 @@
   "Ends with IST": [
     "Schindler's List",
     "The Alchemist",
+    "The Artist",
     "Whist"
   ],
   "Ends with ISY": [
-    "Daisy"
+    "Daisy",
+    "Driving Miss Daisy"
+  ],
+  "Ends with ITA": [
+    "Evita"
   ],
   "Ends with ITE": [
-    "Aphrodite"
+    "Aphrodite",
+    "Parasite"
   ],
   "Ends with ITH": [
     "Revenge of the Sith"
@@ -3643,6 +3999,7 @@
     "Locker",
     "Marker",
     "Poker",
+    "The Hurt Locker",
     "The Rise of Skywalker"
   ],
   "Ends with KEY": [
@@ -3670,6 +4027,9 @@
   ],
   "Ends with KYO": [
     "Tokyo"
+  ],
+  "Ends with L-E": [
+    "WALL-E"
   ],
   "Ends with LAC": [
     "Cadillac"
@@ -3724,8 +4084,10 @@
     "Beatles",
     "Hercules",
     "Holes",
+    "Les Misérables",
     "Los Angeles",
     "Naples",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
     "Seychelles",
     "The Incredibles"
   ],
@@ -3825,14 +4187,17 @@
   ],
   "Ends with MAN": [
     "Batman",
+    "Birdman",
     "Feynman",
     "Iceman",
     "Iron Man",
     "Oman",
+    "Rain Man",
     "Scent of a Woman",
     "Snowman",
     "Spider-Man",
     "Superman",
+    "The Greatest Showman",
     "The Irishman",
     "Wonder Woman"
   ],
@@ -3840,7 +4205,12 @@
     "Myanmar"
   ],
   "Ends with MAS": [
-    "Bahamas"
+    "A Charlie Brown Christmas",
+    "Arthur Christmas",
+    "Bahamas",
+    "How the Grinch Stole Christmas",
+    "The Nightmare Before Christmas",
+    "White Christmas"
   ],
   "Ends with MBI": [
     "Bambi"
@@ -3861,6 +4231,7 @@
   ],
   "Ends with MEN": [
     "Little Women",
+    "No Country for Old Men",
     "North Yemen",
     "South Yemen",
     "Yemen"
@@ -3871,6 +4242,8 @@
   "Ends with MER": [
     "Hammer",
     "Homer",
+    "Kramer vs. Kramer",
+    "Oppenheimer",
     "Primer",
     "The Door into Summer"
   ],
@@ -3936,6 +4309,7 @@
     "Alliance",
     "Beyonce",
     "Die Hard with a Vengeance",
+    "Everything Everywhere All at Once",
     "Florence",
     "France",
     "Harry Potter and the Half-Blood Prince",
@@ -3947,7 +4321,9 @@
     "Bench",
     "Crunch",
     "French",
-    "Ranch"
+    "Hedwig and the Angry Inch",
+    "Ranch",
+    "The Grinch"
   ],
   "Ends with NCI": [
     "Da Vinci"
@@ -4067,6 +4443,7 @@
     "Titanic"
   ],
   "Ends with NIE": [
+    "Annie",
     "Minnie"
   ],
   "Ends with NIN": [
@@ -4125,6 +4502,7 @@
   ],
   "Ends with NTA": [
     "Atlanta",
+    "Bad Santa",
     "Magenta",
     "Pinta"
   ],
@@ -4194,11 +4572,15 @@
     "Coco"
   ],
   "Ends with ODA": [
+    "CODA",
     "Yoda"
   ],
   "Ends with ODE": [
     "Source Code",
     "The Da Vinci Code"
+  ],
+  "Ends with ODS": [
+    "Into the Woods"
   ],
   "Ends with ODY": [
     "Melody"
@@ -4265,6 +4647,9 @@
   "Ends with OLY": [
     "Monopoly"
   ],
+  "Ends with OM!": [
+    "Tick, Tick... Boom!"
+  ],
   "Ends with OMA": [
     "Roma"
   ],
@@ -4284,6 +4669,7 @@
     "Discovery One",
     "Harry Potter and the Sorcerer's Stone",
     "Hermione",
+    "Home Alone",
     "Rogue One",
     "Sierra Leone",
     "The Sword in the Stone",
@@ -4310,7 +4696,8 @@
     "Throne of Blood"
   ],
   "Ends with OOF": [
-    "Death Proof"
+    "Death Proof",
+    "Fiddler on the Roof"
   ],
   "Ends with OOH": [
     "The Many Adventures of Winnie the Pooh",
@@ -4318,6 +4705,7 @@
     "Winnie-the-Pooh"
   ],
   "Ends with OOK": [
+    "Green Book",
     "Notebook",
     "The Jungle Book"
   ],
@@ -4330,6 +4718,7 @@
     "Dog Day Afternoon",
     "Goodnight Moon",
     "Moon",
+    "Platoon",
     "Pontoon"
   ],
   "Ends with OPA": [
@@ -4361,6 +4750,8 @@
     "Waldorf"
   ],
   "Ends with ORK": [
+    "Escape from New York",
+    "Home Alone 2: Lost in New York",
     "New York"
   ],
   "Ends with ORM": [
@@ -4377,13 +4768,18 @@
   "Ends with ORO": [
     "My Neighbor Totoro"
   ],
+  "Ends with ORS": [
+    "Little Shop of Horrors"
+  ],
   "Ends with ORT": [
     "Frankfort",
     "Voldemort"
   ],
   "Ends with ORY": [
+    "A Christmas Story",
     "Toy Story",
-    "Victory"
+    "Victory",
+    "West Side Story"
   ],
   "Ends with OSE": [
     "Mary Rose",
@@ -4432,6 +4828,7 @@
   ],
   "Ends with OVE": [
     "Glove",
+    "Shakespeare in Love",
     "The Emperor's New Groove"
   ],
   "Ends with OWL": [
@@ -4483,6 +4880,7 @@
     "Apple",
     "Constantinople",
     "Green Apple",
+    "Ordinary People",
     "Purple",
     "The Color Purple"
   ],
@@ -4534,6 +4932,9 @@
     "Iran",
     "Ran"
   ],
+  "Ends with RAP": [
+    "The Parent Trap"
+  ],
   "Ends with RAQ": [
     "Iraq"
   ],
@@ -4545,6 +4946,7 @@
     "Rat"
   ],
   "Ends with RAY": [
+    "Hairspray",
     "Ray",
     "X-ray"
   ],
@@ -4585,6 +4987,9 @@
     "Ares",
     "Ceres"
   ],
+  "Ends with RET": [
+    "Cabaret"
+  ],
   "Ends with REY": [
     "Jean Grey"
   ],
@@ -4595,6 +5000,7 @@
     "George"
   ],
   "Ends with RGO": [
+    "Argo",
     "Virgo"
   ],
   "Ends with RHO": [
@@ -4640,6 +5046,9 @@
     "Brave New World",
     "Strange World"
   ],
+  "Ends with RLS": [
+    "Dreamgirls"
+  ],
   "Ends with RMA": [
     "Burma"
   ],
@@ -4650,10 +5059,14 @@
     "Inferno"
   ],
   "Ends with RNS": [
+    "Mary Poppins Returns",
     "The Cat Returns"
   ],
   "Ends with ROG": [
     "The Princess and the Frog"
+  ],
+  "Ends with ROL": [
+    "The Muppet Christmas Carol"
   ],
   "Ends with RON": [
     "Akron",
@@ -4662,6 +5075,9 @@
     "Omicron",
     "Ron",
     "The Black Cauldron"
+  ],
+  "Ends with ROR": [
+    "The Last Emperor"
   ],
   "Ends with ROS": [
     "Comoros"
@@ -4753,6 +5169,7 @@
     "Dresser"
   ],
   "Ends with SES": [
+    "Four Christmases",
     "The Wind Rises"
   ],
   "Ends with SEY": [
@@ -4773,6 +5190,9 @@
     "Russia",
     "Southern Rhodesia",
     "Tunisia"
+  ],
+  "Ends with SIC": [
+    "The Sound of Music"
   ],
   "Ends with SIL": [
     "Basil"
@@ -4843,6 +5263,7 @@
   "Ends with TAR": [
     "Avatar",
     "Guitar",
+    "Jesus Christ Superstar",
     "Qatar",
     "Star"
   ],
@@ -4859,6 +5280,9 @@
   "Ends with TEA": [
     "Green Tea"
   ],
+  "Ends with TED": [
+    "The Departed"
+  ],
   "Ends with TEE": [
     "Manatee"
   ],
@@ -4874,6 +5298,8 @@
     "Peter",
     "Polyester",
     "Rooster",
+    "The Deer Hunter",
+    "The Shape of Water",
     "Toaster"
   ],
   "Ends with TES": [
@@ -4931,6 +5357,7 @@
   ],
   "Ends with TOR": [
     "Flight of the Navigator",
+    "Gladiator",
     "Radiator",
     "Raptor",
     "The Terminator",
@@ -5083,7 +5510,9 @@
     "Nick Fury"
   ],
   "Ends with USE": [
-    "The Lake House"
+    "The Lake House",
+    "The Santa Clause",
+    "The Santa Clause 3: The Escape Clause"
   ],
   "Ends with USK": [
     "Musk"
@@ -5104,6 +5533,7 @@
     "Pluto"
   ],
   "Ends with UTY": [
+    "American Beauty",
     "Sleeping Beauty"
   ],
   "Ends with UYA": [
@@ -5117,7 +5547,8 @@
   ],
   "Ends with VEN": [
     "Beethoven",
-    "Raven"
+    "Raven",
+    "Unforgiven"
   ],
   "Ends with VER": [
     "Denver",
@@ -5128,6 +5559,7 @@
     "Silver"
   ],
   "Ends with VES": [
+    "Dances with Wolves",
     "Maldives",
     "Robin Hood: Prince of Thieves"
   ],
@@ -5157,6 +5589,7 @@
   ],
   "Ends with WAY": [
     "Causeway",
+    "Jingle All the Way",
     "Milky Way",
     "Norway",
     "Spirited Away"
@@ -5287,9 +5720,13 @@
   "Family Films": [
     "101 Dalmatians",
     "A Bug's Life",
+    "A Charlie Brown Christmas",
+    "A Christmas Story",
     "A Wrinkle in Time",
     "Aladdin",
     "Alice in Wonderland",
+    "Annie",
+    "Arthur Christmas",
     "Atlantis",
     "Back to the Future",
     "Back to the Future Part II",
@@ -5316,20 +5753,31 @@
     "Frozen",
     "Hercules",
     "Holes",
+    "Home Alone",
+    "Home Alone 2: Lost in New York",
     "Home on the Range",
+    "How the Grinch Stole Christmas",
     "Inside Out",
+    "Jingle All the Way",
     "Lady and the Tramp",
     "Lilo & Stitch",
     "Luca",
+    "Mary Poppins",
+    "Mary Poppins Returns",
     "Meet the Robinsons",
+    "Miracle on 34th Street",
     "Moana",
     "Monsters Inc",
     "Mulan",
+    "National Lampoon's Christmas Vacation",
     "Oliver & Company",
+    "Oliver!",
+    "Peter Pan",
     "Pinocchio",
     "Pocahontas",
     "Ratatouille",
     "Raya and the Last Dragon",
+    "Rise of the Guardians",
     "Robin Hood",
     "Sleeping Beauty",
     "Snow White and the Seven Dwarfs",
@@ -5342,15 +5790,26 @@
     "The Emperor's New Groove",
     "The Fox and the Hound",
     "The Great Mouse Detective",
+    "The Grinch",
     "The Hunchback of Notre Dame",
     "The Incredibles",
+    "The Jungle Book",
     "The Lion King",
     "The Little Mermaid",
     "The Many Adventures of Winnie the Pooh",
+    "The Muppet Christmas Carol",
+    "The Nightmare Before Christmas",
+    "The Parent Trap",
+    "The Polar Express",
     "The Princess and the Frog",
     "The Rescuers",
     "The Rescuers Down Under",
+    "The Santa Clause",
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause",
+    "The Sound of Music",
     "The Sword in the Stone",
+    "The Wizard of Oz",
     "Toy Story",
     "Treasure Planet",
     "Turning Red",
@@ -5370,8 +5829,18 @@
   ],
   "Fantasy Films": [
     "A Wrinkle in Time",
+    "Aladdin",
+    "Alice in Wonderland",
     "Arrietty",
+    "Arthur Christmas",
+    "Beauty and the Beast",
     "Castle in the Sky",
+    "Cinderella",
+    "Coco",
+    "Encanto",
+    "Fantasia",
+    "Fantasia 2000",
+    "Frozen",
     "Ghostbusters",
     "Ghostbusters II",
     "Groundhog Day",
@@ -5383,19 +5852,56 @@
     "Harry Potter and the Order of the Phoenix",
     "Harry Potter and the Prisoner of Azkaban",
     "Harry Potter and the Sorcerer's Stone",
+    "Hercules",
+    "How the Grinch Stole Christmas",
     "Howl's Moving Castle",
+    "Into the Woods",
+    "It's a Wonderful Life",
     "Kiki's Delivery Service",
+    "Mary Poppins",
+    "Mary Poppins Returns",
+    "Miracle on 34th Street",
     "My Neighbor Totoro",
+    "Peter Pan",
+    "Pinocchio",
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Pom Poko",
     "Ponyo",
     "Porco Rosso",
     "Princess Mononoke",
+    "Rise of the Guardians",
+    "Scrooged",
+    "Sleeping Beauty",
+    "Snow White and the Seven Dwarfs",
+    "Soul",
     "Spirited Away",
     "Tales from Earthsea",
+    "Tangled",
+    "The Black Cauldron",
     "The Cat Returns",
+    "The Grinch",
+    "The Little Mermaid",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers",
+    "The Muppet Christmas Carol",
+    "The Nightmare Before Christmas",
+    "The Polar Express",
+    "The Princess and the Frog",
+    "The Santa Clause",
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause",
+    "The Shape of Water",
+    "The Sword in the Stone",
     "The Tale of the Princess Kaguya",
+    "The Wizard of Oz",
     "Time Bandits",
-    "When Marnie Was There"
+    "When Marnie Was There",
+    "Wish"
   ],
   "Fantasy Stories": [
     "Alice's Adventures in Wonderland",
@@ -5733,7 +6239,6 @@
   "Former German Colony": [
     "Burundi",
     "Cameroon",
-    "East Germany",
     "German East Africa",
     "German West Africa",
     "Marshall Islands",
@@ -6024,11 +6529,15 @@
     "Death Proof",
     "Donnie Darko",
     "Glass",
+    "Little Shop of Horrors",
+    "Rocky Horror Picture Show",
     "Sweeney Todd: The Demon Barber of Fleet Street",
     "The Butterfly Effect",
     "The Devil's Advocate",
+    "The Phantom of the Opera",
     "The Sixth Sense",
     "The Terminator",
+    "The Thing",
     "The Village"
   ],
   "Horror Stories": [
@@ -7268,6 +7777,9 @@
     "Zootopia",
     "Zulu"
   ],
+  "Movies directed by Adam Shankman": [
+    "Hairspray"
+  ],
   "Movies directed by Akira Kurosawa": [
     "Dreams",
     "High and Low",
@@ -7282,6 +7794,12 @@
     "Throne of Blood",
     "Yojimbo"
   ],
+  "Movies directed by Alejandro Agresti": [
+    "The Lake House"
+  ],
+  "Movies directed by Alejandro G. Iñárritu": [
+    "Birdman"
+  ],
   "Movies directed by Andrew Davis": [
     "Holes"
   ],
@@ -7289,26 +7807,99 @@
     "Sense and Sensibility",
     "The Ice Storm"
   ],
+  "Movies directed by Anthony Minghella": [
+    "The English Patient"
+  ],
   "Movies directed by Anthony Russo": [
     "Avengers: Endgame"
   ],
   "Movies directed by Ava DuVernay": [
     "A Wrinkle in Time"
   ],
+  "Movies directed by Barry Jenkins": [
+    "Moonlight"
+  ],
+  "Movies directed by Barry Levinson": [
+    "Rain Man"
+  ],
+  "Movies directed by Ben Affleck": [
+    "Argo"
+  ],
+  "Movies directed by Ben Sharpsteen": [
+    "Dumbo",
+    "Pinocchio"
+  ],
+  "Movies directed by Bob Clark": [
+    "A Christmas Story"
+  ],
+  "Movies directed by Bong Joon-ho": [
+    "Parasite"
+  ],
   "Movies directed by Brian De Palma": [
     "Scarface"
+  ],
+  "Movies directed by Brian Levant": [
+    "Jingle All the Way"
+  ],
+  "Movies directed by Bruce Beresford": [
+    "Driving Miss Daisy"
   ],
   "Movies directed by Bryan Singer": [
     "X-Men: Days of Future Past"
   ],
+  "Movies directed by Chloé Zhao": [
+    "Nomadland"
+  ],
+  "Movies directed by Chris Buck": [
+    "Frozen",
+    "Tarzan",
+    "Wish"
+  ],
   "Movies directed by Chris Columbus": [
     "Harry Potter and the Chamber of Secrets",
-    "Harry Potter and the Sorcerer's Stone"
+    "Harry Potter and the Sorcerer's Stone",
+    "Home Alone",
+    "Home Alone 2: Lost in New York",
+    "Rent"
+  ],
+  "Movies directed by Chris Sanders": [
+    "Lilo & Stitch"
   ],
   "Movies directed by Christopher Nolan": [
     "Insomnia",
     "Interstellar",
+    "Oppenheimer",
     "Tenet"
+  ],
+  "Movies directed by Chuck Jones": [
+    "How the Grinch Stole Christmas"
+  ],
+  "Movies directed by Clint Eastwood": [
+    "Million Dollar Baby",
+    "Unforgiven"
+  ],
+  "Movies directed by Clyde Geronimi": [
+    "Alice in Wonderland",
+    "Cinderella",
+    "Lady and the Tramp",
+    "Peter Pan",
+    "Sleeping Beauty"
+  ],
+  "Movies directed by Damien Chazelle": [
+    "La La Land"
+  ],
+  "Movies directed by Daniel Kwan": [
+    "Everything Everywhere All at Once"
+  ],
+  "Movies directed by Danny Boyle": [
+    "Slumdog Millionaire"
+  ],
+  "Movies directed by David Greene": [
+    "Godspell"
+  ],
+  "Movies directed by David Hand": [
+    "Bambi",
+    "Snow White and the Seven Dwarfs"
   ],
   "Movies directed by David Yates": [
     "Harry Potter and the Deathly Hallows: Part 1",
@@ -7334,6 +7925,9 @@
     "The Godfather Part II",
     "The Godfather Part III"
   ],
+  "Movies directed by Frank Capra": [
+    "It's a Wonderful Life"
+  ],
   "Movies directed by Frank Miller": [
     "Sin City",
     "Sin City: A Dame to Kill For"
@@ -7341,15 +7935,36 @@
   "Movies directed by Gareth Edwards": [
     "Rogue One"
   ],
+  "Movies directed by Gary Trousdale": [
+    "Beauty and the Beast",
+    "The Hunchback of Notre Dame"
+  ],
+  "Movies directed by Gene Kelly": [
+    "Singin' in the Rain"
+  ],
   "Movies directed by George Lucas": [
     "Attack of the Clones",
     "Revenge of the Sith",
     "Star Wars",
     "The Phantom Menace"
   ],
+  "Movies directed by George Scribner": [
+    "Oliver & Company"
+  ],
+  "Movies directed by George Seaton": [
+    "Miracle on 34th Street"
+  ],
+  "Movies directed by Gore Verbinski": [
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: The Curse of the Black Pearl"
+  ],
   "Movies directed by Gorō Miyazaki": [
     "From Up on Poppy Hill",
     "Tales from Earthsea"
+  ],
+  "Movies directed by Guillermo del Toro": [
+    "The Shape of Water"
   ],
   "Movies directed by Harold Ramis": [
     "Groundhog Day"
@@ -7365,12 +7980,24 @@
     "Spirited Away",
     "The Wind Rises"
   ],
+  "Movies directed by Hendel Butoy": [
+    "The Rescuers Down Under"
+  ],
+  "Movies directed by Henry Selick": [
+    "The Nightmare Before Christmas"
+  ],
   "Movies directed by Hiromasa Yonebayashi": [
     "Arrietty",
     "When Marnie Was There"
   ],
+  "Movies directed by Hiroyuki Morita": [
+    "The Cat Returns"
+  ],
   "Movies directed by Howard Hawks": [
     "The Big Sleep"
+  ],
+  "Movies directed by Hugh Hudson": [
+    "Chariots of Fire"
   ],
   "Movies directed by Irvin Kershner": [
     "The Empire Strikes Back"
@@ -7389,16 +8016,27 @@
     "The Force Awakens",
     "The Rise of Skywalker"
   ],
+  "Movies directed by James Algar": [
+    "Fantasia",
+    "Fantasia 2000"
+  ],
   "Movies directed by James Cameron": [
     "Aliens",
     "Avatar",
     "Avatar: Frontiers of Pandora",
     "Avatar: The Way of Water",
     "Terminator 2: Judgment Day",
-    "The Terminator"
+    "The Terminator",
+    "Titanic"
+  ],
+  "Movies directed by James L. Brooks": [
+    "Terms of Endearment"
   ],
   "Movies directed by James Mangold": [
     "Kate & Leopold"
+  ],
+  "Movies directed by Jared Bush": [
+    "Encanto"
   ],
   "Movies directed by Jean-Pierre Jeunet": [
     "Alien: Resurrection"
@@ -7406,8 +8044,34 @@
   "Movies directed by Jeannot Szwarc": [
     "Somewhere in Time"
   ],
+  "Movies directed by Jeremiah S. Chechik": [
+    "National Lampoon's Christmas Vacation"
+  ],
+  "Movies directed by Joachim Rønning": [
+    "Pirates of the Caribbean: Dead Men Tell No Tales"
+  ],
+  "Movies directed by Joel Coen": [
+    "No Country for Old Men"
+  ],
+  "Movies directed by Joel Schumacher": [
+    "The Phantom of the Opera"
+  ],
+  "Movies directed by John Cameron Mitchell": [
+    "Hedwig and the Angry Inch"
+  ],
+  "Movies directed by John Carpenter": [
+    "Escape from New York",
+    "The Thing"
+  ],
+  "Movies directed by John G. Avildsen": [
+    "Rocky"
+  ],
   "Movies directed by John Huston": [
+    "Annie",
     "The Maltese Falcon"
+  ],
+  "Movies directed by John Madden": [
+    "Shakespeare in Love"
   ],
   "Movies directed by John McTiernan": [
     "Die Hard",
@@ -7416,8 +8080,20 @@
   "Movies directed by John Moore": [
     "A Good Day to Die Hard"
   ],
+  "Movies directed by John Pasquin": [
+    "The Santa Clause"
+  ],
   "Movies directed by Jon Amiel": [
     "Copycat"
+  ],
+  "Movies directed by Jon M. Chu": [
+    "In the Heights"
+  ],
+  "Movies directed by Kathryn Bigelow": [
+    "The Hurt Locker"
+  ],
+  "Movies directed by Kevin Costner": [
+    "Dances with Wolves"
   ],
   "Movies directed by Kevin Reynolds": [
     "Robin Hood: Prince of Thieves"
@@ -7434,17 +8110,41 @@
     "The Village",
     "Unbreakable"
   ],
+  "Movies directed by Mark Dindal": [
+    "The Emperor's New Groove"
+  ],
   "Movies directed by Martin Brest": [
     "Scent of a Woman"
   ],
   "Movies directed by Martin Scorsese": [
+    "The Departed",
     "The Irishman"
+  ],
+  "Movies directed by Mel Gibson": [
+    "Braveheart"
   ],
   "Movies directed by Michael Bay": [
     "Armageddon"
   ],
+  "Movies directed by Michael Cimino": [
+    "The Deer Hunter"
+  ],
+  "Movies directed by Michael Curtiz": [
+    "Casablanca",
+    "White Christmas"
+  ],
+  "Movies directed by Michael Gracey": [
+    "The Greatest Showman"
+  ],
+  "Movies directed by Michael Lembeck": [
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause"
+  ],
   "Movies directed by Michael Spierig": [
     "Predestination"
+  ],
+  "Movies directed by Michel Hazanavicius": [
+    "The Artist"
   ],
   "Movies directed by Mike Newell": [
     "Donnie Brasco",
@@ -7453,14 +8153,48 @@
   "Movies directed by Mike Nichols": [
     "Working Girl"
   ],
+  "Movies directed by Milos Forman": [
+    "Amadeus",
+    "One Flew Over the Cuckoo's Nest"
+  ],
+  "Movies directed by Nancy Meyers": [
+    "The Holiday"
+  ],
+  "Movies directed by Nathan Greno": [
+    "Tangled"
+  ],
+  "Movies directed by Norman Jewison": [
+    "Fiddler on the Roof",
+    "Jesus Christ Superstar"
+  ],
+  "Movies directed by Oliver Stone": [
+    "Platoon"
+  ],
   "Movies directed by Orson Welles": [
     "Othello"
+  ],
+  "Movies directed by Paul Haggis": [
+    "Crash"
+  ],
+  "Movies directed by Pete Docter": [
+    "Soul"
   ],
   "Movies directed by Pete Hewitt": [
     "Bill & Ted's Bogus Journey"
   ],
   "Movies directed by Pete Travis": [
     "Vantage Point"
+  ],
+  "Movies directed by Peter Farrelly": [
+    "Green Book"
+  ],
+  "Movies directed by Peter Jackson": [
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers"
+  ],
+  "Movies directed by Peter Ramsey": [
+    "Rise of the Guardians"
   ],
   "Movies directed by Quentin Tarantino": [
     "Death Proof",
@@ -7476,7 +8210,8 @@
     "The Hateful Eight"
   ],
   "Movies directed by Randal Kleiser": [
-    "Flight of the Navigator"
+    "Flight of the Navigator",
+    "Grease"
   ],
   "Movies directed by Renny Harlin": [
     "Die Hard 2"
@@ -7494,22 +8229,73 @@
   ],
   "Movies directed by Ridley Scott": [
     "Alien",
-    "Blade Runner"
+    "Blade Runner",
+    "Gladiator"
+  ],
+  "Movies directed by Rob Marshall": [
+    "Chicago",
+    "Into the Woods",
+    "Mary Poppins Returns",
+    "Pirates of the Caribbean: On Stranger Tides"
+  ],
+  "Movies directed by Robert Benton": [
+    "Kramer vs. Kramer"
+  ],
+  "Movies directed by Robert Redford": [
+    "Ordinary People"
   ],
   "Movies directed by Robert Schwentke": [
     "Red"
+  ],
+  "Movies directed by Robert Wise": [
+    "The Sound of Music",
+    "West Side Story"
   ],
   "Movies directed by Robert Zemeckis": [
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III",
-    "Forrest Gump"
+    "Forrest Gump",
+    "The Polar Express"
+  ],
+  "Movies directed by Roger Allers": [
+    "The Lion King"
+  ],
+  "Movies directed by Roland Emmerich": [
+    "Stargate"
+  ],
+  "Movies directed by Ron Clements": [
+    "Aladdin",
+    "Hercules",
+    "Moana",
+    "The Great Mouse Detective",
+    "The Little Mermaid",
+    "The Princess and the Frog"
+  ],
+  "Movies directed by Ron Howard": [
+    "A Beautiful Mind",
+    "Solo"
+  ],
+  "Movies directed by Sam Mendes": [
+    "American Beauty"
+  ],
+  "Movies directed by Sarah Smith": [
+    "Arthur Christmas"
   ],
   "Movies directed by Scott Elliott": [
     "A Map of the World"
   ],
+  "Movies directed by Scott Mosier": [
+    "The Grinch"
+  ],
+  "Movies directed by Seth Gordon": [
+    "Four Christmases"
+  ],
   "Movies directed by Shane Carruth": [
     "Primer"
+  ],
+  "Movies directed by Sian Heder": [
+    "CODA"
   ],
   "Movies directed by Sidney Lumet": [
     "Dog Day Afternoon",
@@ -7519,24 +8305,69 @@
     "Jurassic Park",
     "Schindler's List"
   ],
+  "Movies directed by Stephen Anderson": [
+    "Winnie the Pooh"
+  ],
   "Movies directed by Stephen Herek": [
     "Bill & Ted's Excellent Adventure"
+  ],
+  "Movies directed by Steve McQueen": [
+    "12 Years a Slave"
   ],
   "Movies directed by Steve Pink": [
     "Hot Tub Time Machine"
   ],
+  "Movies directed by Steven Spielberg": [
+    "West Side Story"
+  ],
   "Movies directed by Stewart Raffill": [
     "The Philadelphia Experiment"
   ],
+  "Movies directed by Sydney Pollack": [
+    "Out of Africa"
+  ],
   "Movies directed by Taylor Hackford": [
     "The Devil's Advocate"
+  ],
+  "Movies directed by Ted Berman": [
+    "The Black Cauldron",
+    "The Fox and the Hound"
   ],
   "Movies directed by Terry Gilliam": [
     "12 Monkeys",
     "Time Bandits"
   ],
+  "Movies directed by Terry Zwigoff": [
+    "Bad Santa"
+  ],
+  "Movies directed by Tim Burton": [
+    "Sweeney Todd: The Demon Barber of Fleet Street"
+  ],
+  "Movies directed by Tom Hooper": [
+    "Les Misérables",
+    "The King's Speech"
+  ],
+  "Movies directed by Tom McCarthy": [
+    "Spotlight"
+  ],
+  "Movies directed by Tony Bancroft": [
+    "Mulan"
+  ],
+  "Movies directed by Victor Fleming": [
+    "Gone with the Wind",
+    "The Wizard of Oz"
+  ],
   "Movies directed by Wes Anderson": [
     "Moonrise Kingdom"
+  ],
+  "Movies directed by Wolfgang Reitherman": [
+    "101 Dalmatians",
+    "Robin Hood",
+    "The Aristocats",
+    "The Jungle Book",
+    "The Many Adventures of Winnie the Pooh",
+    "The Rescuers",
+    "The Sword in the Stone"
   ],
   "Movies directed by Yoshifumi Kondo": [
     "Whisper of the Heart"
@@ -7545,6 +8376,9 @@
     "The Force Awakens",
     "The Last Jedi",
     "The Rise of Skywalker"
+  ],
+  "Movies featuring Adam Pascal": [
+    "Rent"
   ],
   "Movies featuring Al Pacino": [
     "Dog Day Afternoon",
@@ -7577,6 +8411,12 @@
     "Sense and Sensibility",
     "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
+  "Movies featuring Alan Tudyk": [
+    "Wish"
+  ],
+  "Movies featuring Albert Finney": [
+    "Annie"
+  ],
   "Movies featuring Alec Guinness": [
     "Star Wars"
   ],
@@ -7584,24 +8424,84 @@
     "Bill & Ted's Bogus Journey",
     "Bill & Ted's Excellent Adventure"
   ],
+  "Movies featuring Amanda Seyfried": [
+    "Les Misérables"
+  ],
   "Movies featuring Andy Garcia": [
     "The Godfather Part III"
   ],
+  "Movies featuring Angela Lansbury": [
+    "Beauty and the Beast"
+  ],
   "Movies featuring Anne Hathaway": [
-    "Interstellar"
+    "Interstellar",
+    "Les Misérables"
+  ],
+  "Movies featuring Ariana DeBose": [
+    "West Side Story",
+    "Wish"
   ],
   "Movies featuring Arnold Schwarzenegger": [
+    "Jingle All the Way",
     "Terminator 2: Judgment Day",
     "The Terminator"
+  ],
+  "Movies featuring Auli'i Cravalho": [
+    "Moana"
+  ],
+  "Movies featuring Barbara Luddy": [
+    "Lady and the Tramp"
+  ],
+  "Movies featuring Barrie Ingham": [
+    "The Great Mouse Detective"
+  ],
+  "Movies featuring Barry Dennen": [
+    "Jesus Christ Superstar"
+  ],
+  "Movies featuring Betty Lou Gerson": [
+    "101 Dalmatians"
+  ],
+  "Movies featuring Bill Murray": [
+    "Groundhog Day",
+    "Scrooged"
+  ],
+  "Movies featuring Bill Nighy": [
+    "Arthur Christmas",
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: The Curse of the Black Pearl"
+  ],
+  "Movies featuring Bill Shirley": [
+    "Sleeping Beauty"
+  ],
+  "Movies featuring Bill Thompson": [
+    "Lady and the Tramp",
+    "Peter Pan"
   ],
   "Movies featuring Billy Dee Williams": [
     "Return of the Jedi",
     "The Empire Strikes Back",
     "The Rise of Skywalker"
   ],
+  "Movies featuring Billy Zane": [
+    "Titanic"
+  ],
+  "Movies featuring Bing Crosby": [
+    "White Christmas"
+  ],
+  "Movies featuring Bob Newhart": [
+    "The Rescuers",
+    "The Rescuers Down Under"
+  ],
+  "Movies featuring Bobby Driscoll": [
+    "Peter Pan"
+  ],
   "Movies featuring Brad Pitt": [
     "Inglourious Basterds",
     "Once Upon a Time in Hollywood"
+  ],
+  "Movies featuring Brian Bedford": [
+    "Robin Hood"
   ],
   "Movies featuring Bruce Willis": [
     "12 Monkeys",
@@ -7631,6 +8531,19 @@
     "The Force Awakens",
     "The Last Jedi"
   ],
+  "Movies featuring Catherine Zeta-Jones": [
+    "Chicago"
+  ],
+  "Movies featuring Charlie Brown": [
+    "A Charlie Brown Christmas"
+  ],
+  "Movies featuring Chris Pine": [
+    "Rise of the Guardians",
+    "Wish"
+  ],
+  "Movies featuring Christian Rub": [
+    "Pinocchio"
+  ],
   "Movies featuring Christoph Waltz": [
     "Django Unchained",
     "Inglourious Basterds"
@@ -7641,7 +8554,14 @@
   "Movies featuring Christopher Lloyd": [
     "Back to the Future",
     "Back to the Future Part II",
-    "Back to the Future Part III"
+    "Back to the Future Part III",
+    "One Flew Over the Cuckoo's Nest"
+  ],
+  "Movies featuring Cillian Murphy": [
+    "Oppenheimer"
+  ],
+  "Movies featuring Connie Nielsen": [
+    "Gladiator"
   ],
   "Movies featuring Daniel Radcliffe": [
     "Harry Potter and the Chamber of Secrets",
@@ -7653,25 +8573,103 @@
     "Harry Potter and the Prisoner of Azkaban",
     "Harry Potter and the Sorcerer's Stone"
   ],
+  "Movies featuring Daniel Stern": [
+    "Home Alone",
+    "Home Alone 2: Lost in New York"
+  ],
+  "Movies featuring Danny DeVito": [
+    "Hercules",
+    "One Flew Over the Cuckoo's Nest"
+  ],
   "Movies featuring David Carradine": [
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2"
   ],
+  "Movies featuring David Ogden Stiers": [
+    "Lilo & Stitch",
+    "Pocahontas"
+  ],
+  "Movies featuring Demi Moore": [
+    "The Hunchback of Notre Dame"
+  ],
   "Movies featuring Domhnall Gleeson": [
     "About Time"
+  ],
+  "Movies featuring Donald Moffat": [
+    "The Thing"
+  ],
+  "Movies featuring Donald Pleasence": [
+    "Escape from New York"
+  ],
+  "Movies featuring Dustin Hoffman": [
+    "Kramer vs. Kramer",
+    "Rain Man"
+  ],
+  "Movies featuring Ed Harris": [
+    "A Beautiful Mind"
+  ],
+  "Movies featuring Ed Wynn": [
+    "Alice in Wonderland"
+  ],
+  "Movies featuring Edward Brophy": [
+    "Dumbo"
+  ],
+  "Movies featuring Eleanor Audley": [
+    "Cinderella",
+    "Sleeping Beauty"
+  ],
+  "Movies featuring Elizabeth Berridge": [
+    "Amadeus"
+  ],
+  "Movies featuring Elizabeth Mitchell": [
+    "The Santa Clause 2"
+  ],
+  "Movies featuring Emily Blunt": [
+    "Edge of Tomorrow",
+    "Into the Woods",
+    "Mary Poppins Returns",
+    "Oppenheimer"
+  ],
+  "Movies featuring Emma Stone": [
+    "Birdman",
+    "La La Land"
   ],
   "Movies featuring Emma Thompson": [
     "Love Actually",
     "Sense and Sensibility"
   ],
+  "Movies featuring Eva Gabor": [
+    "The Aristocats",
+    "The Rescuers",
+    "The Rescuers Down Under"
+  ],
   "Movies featuring Ewan McGregor": [
     "Attack of the Clones",
+    "Moulin Rouge!",
     "Revenge of the Sith",
     "The Phantom Menace"
   ],
   "Movies featuring Frank Oz": [
     "Return of the Jedi",
     "The Empire Strikes Back"
+  ],
+  "Movies featuring Freddie Jones": [
+    "The Black Cauldron"
+  ],
+  "Movies featuring Gene Hackman": [
+    "Unforgiven"
+  ],
+  "Movies featuring Geoffrey Rush": [
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "The King's Speech"
+  ],
+  "Movies featuring George Sanders": [
+    "The Jungle Book"
+  ],
+  "Movies featuring Geraldine Page": [
+    "The Rescuers"
   ],
   "Movies featuring Harrison Ford": [
     "Blade Runner",
@@ -7684,17 +8682,39 @@
     "Attack of the Clones",
     "Revenge of the Sith"
   ],
+  "Movies featuring Helena Bonham Carter": [
+    "Sweeney Todd: The Demon Barber of Fleet Street",
+    "The King's Speech"
+  ],
   "Movies featuring Hilary Swank": [
-    "Insomnia"
+    "Insomnia",
+    "Million Dollar Baby"
   ],
   "Movies featuring Hugh Jackman": [
     "Kate & Leopold",
+    "Les Misérables",
+    "Rise of the Guardians",
+    "The Greatest Showman",
     "X-Men: Days of Future Past"
   ],
   "Movies featuring Humphrey Bogart": [
     "Casablanca",
     "The Big Sleep",
     "The Maltese Falcon"
+  ],
+  "Movies featuring Ian McKellen": [
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers",
+    "X-Men: Days of Future Past"
+  ],
+  "Movies featuring Ian McShane": [
+    "Pirates of the Caribbean: On Stranger Tides"
+  ],
+  "Movies featuring Jack Nicholson": [
+    "One Flew Over the Cuckoo's Nest",
+    "Terms of Endearment",
+    "The Departed"
   ],
   "Movies featuring Jake Gyllenhaal": [
     "Donnie Darko",
@@ -7703,8 +8723,24 @@
   "Movies featuring Jake Lloyd": [
     "The Phantom Menace"
   ],
+  "Movies featuring James Woods": [
+    "Hercules"
+  ],
+  "Movies featuring Jamie Foxx": [
+    "Django Unchained",
+    "Soul"
+  ],
+  "Movies featuring Javier Bardem": [
+    "No Country for Old Men",
+    "Pirates of the Caribbean: Dead Men Tell No Tales"
+  ],
   "Movies featuring Jennifer Jason Leigh": [
     "The Hateful Eight"
+  ],
+  "Movies featuring Joe Pesci": [
+    "Home Alone",
+    "Home Alone 2: Lost in New York",
+    "The Irishman"
   ],
   "Movies featuring John Cazale": [
     "Dog Day Afternoon"
@@ -7712,15 +8748,46 @@
   "Movies featuring John David Washington": [
     "Tenet"
   ],
+  "Movies featuring John Fiedler": [
+    "The Many Adventures of Winnie the Pooh"
+  ],
+  "Movies featuring John Goodman": [
+    "The Artist",
+    "The Emperor's New Groove"
+  ],
   "Movies featuring John Travolta": [
+    "Grease",
+    "Hairspray",
     "Pulp Fiction"
   ],
   "Movies featuring Johnny Depp": [
     "Donnie Brasco",
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
+  "Movies featuring Julie Andrews": [
+    "Mary Poppins",
+    "The Sound of Music"
+  ],
+  "Movies featuring Junius Matthews": [
+    "The Many Adventures of Winnie the Pooh",
+    "The Sword in the Stone"
+  ],
+  "Movies featuring Karl Swenson": [
+    "The Sword in the Stone"
+  ],
   "Movies featuring Kate Winslet": [
-    "Sense and Sensibility"
+    "Sense and Sensibility",
+    "The Holiday",
+    "Titanic"
+  ],
+  "Movies featuring Kathryn Beaumont": [
+    "Alice in Wonderland",
+    "Peter Pan"
   ],
   "Movies featuring Keanu Reeves": [
     "Bill & Ted's Bogus Journey",
@@ -7729,18 +8796,53 @@
     "The Lake House",
     "The Matrix"
   ],
+  "Movies featuring Keith David": [
+    "The Princess and the Frog",
+    "The Thing"
+  ],
+  "Movies featuring Kevin Costner": [
+    "Dances with Wolves",
+    "Robin Hood: Prince of Thieves"
+  ],
   "Movies featuring Kurt Russell": [
     "Death Proof",
+    "Escape from New York",
     "Once Upon a Time in Hollywood",
-    "The Hateful Eight"
+    "Stargate",
+    "The Fox and the Hound",
+    "The Hateful Eight",
+    "The Thing"
   ],
   "Movies featuring Leonardo DiCaprio": [
     "Django Unchained",
-    "Once Upon a Time in Hollywood"
+    "Once Upon a Time in Hollywood",
+    "The Departed",
+    "Titanic"
+  ],
+  "Movies featuring Leopold Stokowski": [
+    "Fantasia"
   ],
   "Movies featuring Liam Neeson": [
     "Love Actually",
     "The Phantom Menace"
+  ],
+  "Movies featuring Lin-Manuel Miranda": [
+    "Mary Poppins Returns"
+  ],
+  "Movies featuring Linda Hamilton": [
+    "Terminator 2: Judgment Day",
+    "The Terminator"
+  ],
+  "Movies featuring Louise Fletcher": [
+    "One Flew Over the Cuckoo's Nest"
+  ],
+  "Movies featuring Maggie Smith": [
+    "Harry Potter and the Chamber of Secrets",
+    "Harry Potter and the Sorcerer's Stone"
+  ],
+  "Movies featuring Mahershala Ali": [
+    "Green Book",
+    "Moonlight"
   ],
   "Movies featuring Margot Robbie": [
     "Once Upon a Time in Hollywood"
@@ -7748,27 +8850,124 @@
   "Movies featuring Marlon Brando": [
     "The Godfather"
   ],
+  "Movies featuring Martin Short": [
+    "The Santa Clause 3: The Escape Clause"
+  ],
+  "Movies featuring Matthew McConaughey": [
+    "Interstellar"
+  ],
+  "Movies featuring Mel Gibson": [
+    "Braveheart",
+    "Pocahontas"
+  ],
+  "Movies featuring Meryl Streep": [
+    "Into the Woods",
+    "Kramer vs. Kramer",
+    "Out of Africa",
+    "The Deer Hunter"
+  ],
+  "Movies featuring Michael J. Fox": [
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III"
+  ],
+  "Movies featuring Michael Keaton": [
+    "Birdman",
+    "Spotlight"
+  ],
   "Movies featuring Michael Madsen": [
     "Donnie Brasco",
     "Kill Bill: Volume 2",
     "Reservoir Dogs"
+  ],
+  "Movies featuring Michelle Pfeiffer": [
+    "Hairspray",
+    "Scarface"
+  ],
+  "Movies featuring Morgan Freeman": [
+    "Driving Miss Daisy",
+    "Million Dollar Baby",
+    "Robin Hood: Prince of Thieves",
+    "Unforgiven"
+  ],
+  "Movies featuring Natalie Portman": [
+    "Attack of the Clones",
+    "Revenge of the Sith",
+    "The Phantom Menace"
+  ],
+  "Movies featuring Natalie Wood": [
+    "Miracle on 34th Street",
+    "West Side Story"
+  ],
+  "Movies featuring Norma Crane": [
+    "Fiddler on the Roof"
+  ],
+  "Movies featuring Olivia Newton-John": [
+    "Grease"
+  ],
+  "Movies featuring Oprah Winfrey": [
+    "A Wrinkle in Time",
+    "The Princess and the Frog"
+  ],
+  "Movies featuring Phil Harris": [
+    "Robin Hood",
+    "The Aristocats",
+    "The Jungle Book"
+  ],
+  "Movies featuring Rachel House": [
+    "Moana",
+    "Soul"
+  ],
+  "Movies featuring Rachel McAdams": [
+    "About Time",
+    "Spotlight"
   ],
   "Movies featuring Ralph Fiennes": [
     "Harry Potter and the Deathly Hallows: Part 1",
     "Harry Potter and the Deathly Hallows: Part 2",
     "Harry Potter and the Goblet of Fire",
     "Harry Potter and the Half-Blood Prince",
-    "Harry Potter and the Order of the Phoenix"
+    "Harry Potter and the Order of the Phoenix",
+    "The English Patient"
+  ],
+  "Movies featuring Reese Witherspoon": [
+    "A Wrinkle in Time",
+    "Four Christmases"
   ],
   "Movies featuring Robert De Niro": [
+    "The Deer Hunter",
     "The Godfather Part II",
     "The Irishman"
+  ],
+  "Movies featuring Robert Downey Jr.": [
+    "Avengers: Endgame",
+    "Oppenheimer"
+  ],
+  "Movies featuring Robin Williams": [
+    "Aladdin",
+    "Insomnia"
+  ],
+  "Movies featuring Rosario Dawson": [
+    "Death Proof"
+  ],
+  "Movies featuring Russell Crowe": [
+    "A Beautiful Mind",
+    "Gladiator",
+    "Les Misérables"
   ],
   "Movies featuring Samuel L. Jackson": [
     "Django Unchained",
     "Jackie Brown",
     "Pulp Fiction",
     "The Hateful Eight"
+  ],
+  "Movies featuring Sandra Bullock": [
+    "Crash",
+    "The Lake House"
+  ],
+  "Movies featuring Sebastian Cabot": [
+    "The Jungle Book",
+    "The Sword in the Stone"
   ],
   "Movies featuring Sigourney Weaver": [
     "A Map of the World",
@@ -7790,15 +8989,50 @@
     "WALL-E",
     "Working Girl"
   ],
+  "Movies featuring Stellan Skarsgård": [
+    "Pirates of the Caribbean: Dead Man's Chest"
+  ],
+  "Movies featuring Sterling Holloway": [
+    "Alice in Wonderland",
+    "Dumbo",
+    "The Aristocats",
+    "The Many Adventures of Winnie the Pooh"
+  ],
   "Movies featuring Tim Allen": [
-    "Galaxy Quest"
+    "Galaxy Quest",
+    "The Santa Clause",
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause"
   ],
   "Movies featuring Tim Roth": [
     "Reservoir Dogs",
     "The Hateful Eight"
   ],
+  "Movies featuring Tom Cruise": [
+    "Edge of Tomorrow",
+    "Rain Man"
+  ],
   "Movies featuring Tom Hanks": [
-    "Forrest Gump"
+    "Forrest Gump",
+    "The Polar Express"
+  ],
+  "Movies featuring Tom Hulce": [
+    "Amadeus",
+    "The Hunchback of Notre Dame"
+  ],
+  "Movies featuring Verna Felton": [
+    "Cinderella",
+    "Dumbo",
+    "Sleeping Beauty"
+  ],
+  "Movies featuring Viggo Mortensen": [
+    "Green Book",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers"
+  ],
+  "Movies featuring Vivien Leigh": [
+    "Gone with the Wind"
   ],
   "Muppet Characters": [
     "Animal",
@@ -7835,6 +9069,86 @@
     "Soul",
     "Tune",
     "Violin"
+  ],
+  "Musical Films": [
+    "101 Dalmatians",
+    "Aladdin",
+    "Alice in Wonderland",
+    "Annie",
+    "Bambi",
+    "Beauty and the Beast",
+    "Cabaret",
+    "Chicago",
+    "Cinderella",
+    "Coco",
+    "Dreamgirls",
+    "Dumbo",
+    "Encanto",
+    "Evita",
+    "Fantasia",
+    "Fantasia 2000",
+    "Fiddler on the Roof",
+    "Frozen",
+    "Godspell",
+    "Grease",
+    "Hairspray",
+    "Hedwig and the Angry Inch",
+    "Hercules",
+    "In the Heights",
+    "Into the Woods",
+    "Jesus Christ Superstar",
+    "La La Land",
+    "Lady and the Tramp",
+    "Les Misérables",
+    "Lilo & Stitch",
+    "Little Shop of Horrors",
+    "Mary Poppins",
+    "Mary Poppins Returns",
+    "Moana",
+    "Moulin Rouge!",
+    "Mulan",
+    "My Fair Lady",
+    "Oliver & Company",
+    "Oliver!",
+    "Peter Pan",
+    "Pinocchio",
+    "Pocahontas",
+    "Rent",
+    "Robin Hood",
+    "Rocky Horror Picture Show",
+    "Singin' in the Rain",
+    "Sleeping Beauty",
+    "Snow White and the Seven Dwarfs",
+    "Soul",
+    "Sweeney Todd: The Demon Barber of Fleet Street",
+    "Tangled",
+    "Tarzan",
+    "The Aristocats",
+    "The Black Cauldron",
+    "The Emperor's New Groove",
+    "The Fox and the Hound",
+    "The Great Mouse Detective",
+    "The Greatest Showman",
+    "The Hunchback of Notre Dame",
+    "The Jungle Book",
+    "The Lion King",
+    "The Little Mermaid",
+    "The Many Adventures of Winnie the Pooh",
+    "The Muppet Christmas Carol",
+    "The Nightmare Before Christmas",
+    "The Parent Trap",
+    "The Phantom of the Opera",
+    "The Princess and the Frog",
+    "The Rescuers",
+    "The Rescuers Down Under",
+    "The Sound of Music",
+    "The Sword in the Stone",
+    "The Wizard of Oz",
+    "Tick, Tick... Boom!",
+    "West Side Story",
+    "White Christmas",
+    "Winnie the Pooh",
+    "Wish"
   ],
   "Musical Instruments": [
     "Drum",
@@ -8056,15 +9370,70 @@
     "NATO"
   ],
   "Oscar Winners": [
+    "12 Years a Slave",
+    "A Beautiful Mind",
+    "Amadeus",
+    "American Beauty",
+    "Argo",
+    "Avatar",
+    "Birdman",
+    "Black Panther",
+    "Braveheart",
+    "CODA",
     "Casablanca",
+    "Chariots of Fire",
+    "Chicago",
+    "Crash",
+    "Dances with Wolves",
     "Django Unchained",
+    "Driving Miss Daisy",
+    "Everything Everywhere All at Once",
     "Forrest Gump",
+    "Gandhi",
+    "Gladiator",
     "Gone with the Wind",
+    "Green Book",
+    "Joker",
+    "Kramer vs. Kramer",
+    "La La Land",
+    "Little Women",
+    "Million Dollar Baby",
+    "Moonlight",
+    "No Country for Old Men",
+    "Nomadland",
+    "Once Upon a Time in Hollywood",
+    "One Flew Over the Cuckoo's Nest",
+    "Oppenheimer",
+    "Ordinary People",
+    "Out of Africa",
+    "Parasite",
+    "Platoon",
+    "Rain Man",
+    "Rocky",
     "Scent of a Woman",
     "Schindler's List",
+    "Shakespeare in Love",
+    "Slumdog Millionaire",
     "Spirited Away",
+    "Spotlight",
+    "Terms of Endearment",
+    "The Artist",
+    "The Deer Hunter",
+    "The Departed",
+    "The English Patient",
     "The Godfather",
-    "The Godfather Part II"
+    "The Godfather Part II",
+    "The Greatest Showman",
+    "The Hurt Locker",
+    "The Irishman",
+    "The King's Speech",
+    "The Last Emperor",
+    "The Lord of the Rings: The Return of the King",
+    "The Matrix",
+    "The Shape of Water",
+    "The Silence of the Lambs",
+    "Titanic",
+    "Unforgiven"
   ],
   "Parts of a Song": [
     "Beat",
@@ -8073,10 +9442,26 @@
     "Melody"
   ],
   "Period Films": [
+    "12 Years a Slave",
+    "Amadeus",
+    "Braveheart",
+    "Chariots of Fire",
+    "Gandhi",
+    "Gladiator",
+    "Green Book",
+    "Les Misérables",
     "Once Upon a Time in Hollywood",
+    "Oppenheimer",
     "Othello",
+    "Out of Africa",
     "Sense and Sensibility",
-    "Sweeney Todd: The Demon Barber of Fleet Street"
+    "Shakespeare in Love",
+    "Sweeney Todd: The Demon Barber of Fleet Street",
+    "The Artist",
+    "The English Patient",
+    "The King's Speech",
+    "The Last Emperor",
+    "Titanic"
   ],
   "Periodicals": [
     "Almanac",
@@ -8790,15 +10175,34 @@
   "Romance Films": [
     "About Time",
     "Casablanca",
+    "Four Christmases",
     "Gone with the Wind",
+    "Grease",
     "Groundhog Day",
+    "Hairspray",
     "Kate & Leopold",
+    "La La Land",
+    "Lady and the Tramp",
     "Love Actually",
     "Moonrise Kingdom",
+    "Moulin Rouge!",
+    "My Fair Lady",
+    "Out of Africa",
     "Safety Not Guaranteed",
     "Sense and Sensibility",
+    "Shakespeare in Love",
+    "Singin' in the Rain",
+    "Slumdog Millionaire",
     "Somewhere in Time",
+    "The Artist",
+    "The English Patient",
+    "The Holiday",
     "The Lake House",
+    "The Parent Trap",
+    "The Shape of Water",
+    "Titanic",
+    "West Side Story",
+    "White Christmas",
     "Working Girl"
   ],
   "Romance Stories": [
@@ -8901,18 +10305,24 @@
     "Back to the Future Part III",
     "Deja Vu",
     "Edge of Tomorrow",
+    "Escape from New York",
+    "Everything Everywhere All at Once",
     "Flight of the Navigator",
     "Galaxy Quest",
     "Interstellar",
+    "Lilo & Stitch",
     "Looper",
     "Predestination",
     "Primer",
     "Source Code",
+    "Stargate",
     "Tenet",
     "Terminator 2: Judgment Day",
     "The Fifth Element",
     "The Philadelphia Experiment",
+    "The Shape of Water",
     "The Terminator",
+    "The Thing",
     "Time Bandits",
     "WALL-E",
     "X-Men: Days of Future Past"
@@ -9014,8 +10424,15 @@
     "Harry Potter and the Half-Blood Prince",
     "Harry Potter and the Order of the Phoenix",
     "Harry Potter and the Prisoner of Azkaban",
+    "Home Alone 2: Lost in New York",
     "Kill Bill: Volume 2",
     "Live Free or Die Hard",
+    "Mary Poppins Returns",
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Red 2",
     "Return of the Jedi",
     "Revenge of the Sith",
@@ -9026,8 +10443,14 @@
     "The Godfather Part II",
     "The Godfather Part III",
     "The Last Jedi",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers",
     "The Phantom Menace",
+    "The Rescuers Down Under",
     "The Rise of Skywalker",
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause",
     "X-Men: Days of Future Past"
   ],
   "Sesame Street Characters": [
@@ -9193,6 +10616,11 @@
     "Stick",
     "Wilson"
   ],
+  "Sports Films": [
+    "Chariots of Fire",
+    "Million Dollar Baby",
+    "Rocky"
+  ],
   "Sports Terms": [
     "Overwatch"
   ],
@@ -9243,11 +10671,17 @@
     "X-Wing",
     "Yoda"
   ],
-  "Starts with 101": [
-    "101 Dalmatians"
+  "Starts with 12 ": [
+    "12 Monkeys",
+    "12 Years a Slave"
   ],
   "Starts with A B": [
+    "A Beautiful Mind",
     "A Bug's Life"
+  ],
+  "Starts with A C": [
+    "A Charlie Brown Christmas",
+    "A Christmas Story"
   ],
   "Starts with ABY": [
     "Abyssinia"
@@ -9298,6 +10732,7 @@
     "Almanac"
   ],
   "Starts with AMA": [
+    "Amadeus",
     "Amazon"
   ],
   "Starts with AMO": [
@@ -9317,7 +10752,8 @@
     "Annabel",
     "Annapolis",
     "Annapurna",
-    "Anne of Green Gables"
+    "Anne of Green Gables",
+    "Annie"
   ],
   "Starts with ANT": [
     "Ant",
@@ -9327,6 +10763,9 @@
   ],
   "Starts with APE": [
     "Aperture"
+  ],
+  "Starts with APH": [
+    "Aphrodite"
   ],
   "Starts with APO": [
     "Apollo",
@@ -9343,6 +10782,7 @@
   ],
   "Starts with ARG": [
     "Argentina",
+    "Argo",
     "Argon"
   ],
   "Starts with ARI": [
@@ -9357,6 +10797,10 @@
   "Starts with ARR": [
     "Arrietty",
     "Arrival"
+  ],
+  "Starts with ART": [
+    "Arthur Christmas",
+    "Artsakh"
   ],
   "Starts with ATH": [
     "Athena",
@@ -9474,6 +10918,10 @@
     "Big Bird",
     "Big Hero 6"
   ],
+  "Starts with BIR": [
+    "Birch",
+    "Birdman"
+  ],
   "Starts with BIS": [
     "Bishop",
     "Bismarck"
@@ -9528,6 +10976,7 @@
     "Brasilia",
     "Brave",
     "Brave New World",
+    "Braveheart",
     "Bravo",
     "Brazil"
   ],
@@ -9572,6 +11021,10 @@
     "Buttercup",
     "Butterfinger",
     "Butterfly"
+  ],
+  "Starts with CAB": [
+    "Cabaret",
+    "Cabo Verde"
   ],
   "Starts with CAE": [
     "Caesar"
@@ -9641,6 +11094,7 @@
     "Chair",
     "Challenger",
     "Chanel",
+    "Chariots of Fire",
     "Charleston",
     "Charlie",
     "Charlotte's Web"
@@ -9724,6 +11178,7 @@
   ],
   "Starts with CRA": [
     "Crab",
+    "Crash",
     "Crayon"
   ],
   "Starts with CRO": [
@@ -9758,6 +11213,7 @@
     "Damnation"
   ],
   "Starts with DAN": [
+    "Dances with Wolves",
     "Dante",
     "Dante's Peak",
     "Danube"
@@ -9839,6 +11295,7 @@
     "Drake"
   ],
   "Starts with DRE": [
+    "Dreamgirls",
     "Dreams",
     "Dresser"
   ],
@@ -9934,7 +11391,8 @@
     "Ethiopia"
   ],
   "Starts with EVE": [
-    "Everest"
+    "Everest",
+    "Everything Everywhere All at Once"
   ],
   "Starts with EYJ": [
     "Eyjafjallajokull"
@@ -9970,6 +11428,9 @@
   "Starts with FLA": [
     "Flamingo",
     "Flash"
+  ],
+  "Starts with FLI": [
+    "Flight of the Navigator"
   ],
   "Starts with FLO": [
     "Florence",
@@ -10031,6 +11492,7 @@
     "Gamma"
   ],
   "Starts with GAN": [
+    "Gandhi",
     "Ganges",
     "Gannet"
   ],
@@ -10071,6 +11533,10 @@
   "Starts with GIL": [
     "Gilgamesh"
   ],
+  "Starts with GLA": [
+    "Gladiator",
+    "Glass"
+  ],
   "Starts with GLO": [
     "Glove"
   ],
@@ -10100,12 +11566,14 @@
     "Grave of the Fireflies"
   ],
   "Starts with GRE": [
+    "Grease",
     "Greece",
     "Greek",
     "Green",
     "Green Apple",
     "Green Arrow",
     "Green Bean",
+    "Green Book",
     "Green Eggs and Ham",
     "Green Goblin",
     "Green Lantern",
@@ -10137,6 +11605,10 @@
   ],
   "Starts with HAG": [
     "Hagrid"
+  ],
+  "Starts with HAI": [
+    "Hairspray",
+    "Haiti"
   ],
   "Starts with HAL": [
     "Halberd",
@@ -10211,6 +11683,8 @@
     "Hispania"
   ],
   "Starts with HOM": [
+    "Home Alone",
+    "Home Alone 2: Lost in New York",
     "Home on the Range",
     "Homer"
   ],
@@ -10231,6 +11705,7 @@
     "Hotel"
   ],
   "Starts with HOW": [
+    "How the Grinch Stole Christmas",
     "Howl's Moving Castle"
   ],
   "Starts with HUB": [
@@ -10288,7 +11763,8 @@
   "Starts with INT": [
     "INT",
     "Intel",
-    "Interstellar"
+    "Interstellar",
+    "Into the Woods"
   ],
   "Starts with IOT": [
     "Iota"
@@ -10316,6 +11792,9 @@
   ],
   "Starts with IVO": [
     "Ivory Coast"
+  ],
+  "Starts with JAB": [
+    "Jabberwocky"
   ],
   "Starts with JAC": [
     "Jackie Brown",
@@ -10412,16 +11891,14 @@
   ],
   "Starts with KRA": [
     "Krakatoa",
-    "Kraken"
+    "Kraken",
+    "Kramer vs. Kramer"
   ],
   "Starts with KRY": [
     "Krypton"
   ],
   "Starts with KYR": [
     "Kyrgyzstan"
-  ],
-  "Starts with LAD": [
-    "Lady and the Tramp"
   ],
   "Starts with LAK": [
     "Laker"
@@ -10466,6 +11943,10 @@
   "Starts with LEO": [
     "Leo"
   ],
+  "Starts with LES": [
+    "Les Misérables",
+    "Lesotho"
+  ],
   "Starts with LET": [
     "Lettuce"
   ],
@@ -10497,6 +11978,7 @@
     "Lithium",
     "Lithuania",
     "Little Rock",
+    "Little Shop of Horrors",
     "Little Women"
   ],
   "Starts with LOB": [
@@ -10567,6 +12049,8 @@
     "Marseille",
     "Marshall Islands",
     "Mary",
+    "Mary Poppins",
+    "Mary Poppins Returns",
     "Mary Rose"
   ],
   "Starts with MAS": [
@@ -10613,15 +12097,13 @@
     "Milan",
     "Milk",
     "Milky Way",
-    "Millennium Falcon"
+    "Millennium Falcon",
+    "Million Dollar Baby"
   ],
   "Starts with MIN": [
     "Ming",
     "Minnie",
     "Minotaur"
-  ],
-  "Starts with MOA": [
-    "Moana"
   ],
   "Starts with MOB": [
     "Moby Dick"
@@ -10641,6 +12123,7 @@
   ],
   "Starts with MOO": [
     "Moon",
+    "Moonlight",
     "Moonrise Kingdom"
   ],
   "Starts with MOR": [
@@ -10654,15 +12137,16 @@
     "Mozambique",
     "Mozart"
   ],
-  "Starts with MUL": [
-    "Mulan"
-  ],
   "Starts with MUR": [
     "Murder"
   ],
   "Starts with MUS": [
     "Musk",
     "Mustard"
+  ],
+  "Starts with MY ": [
+    "My Fair Lady",
+    "My Neighbor Totoro"
   ],
   "Starts with MYS": [
     "Mystique"
@@ -10679,7 +12163,8 @@
     "Nashville"
   ],
   "Starts with NAT": [
-    "NATO"
+    "NATO",
+    "National Lampoon's Christmas Vacation"
   ],
   "Starts with NEB": [
     "Nebula"
@@ -10726,6 +12211,7 @@
     "Nitrogen"
   ],
   "Starts with NO ": [
+    "No Country for Old Men",
     "No Parking Sign"
   ],
   "Starts with NOR": [
@@ -10762,7 +12248,8 @@
   ],
   "Starts with OLI": [
     "Olive",
-    "Oliver & Company"
+    "Oliver & Company",
+    "Oliver!"
   ],
   "Starts with OLY": [
     "Olympia",
@@ -10773,6 +12260,10 @@
   ],
   "Starts with OMI": [
     "Omicron"
+  ],
+  "Starts with ONE": [
+    "One Flew Over the Cuckoo's Nest",
+    "One Piece"
   ],
   "Starts with ONI": [
     "Onion"
@@ -10800,6 +12291,7 @@
     "Oscar"
   ],
   "Starts with OUT": [
+    "Out of Africa",
     "Outlander"
   ],
   "Starts with OXY": [
@@ -10827,6 +12319,7 @@
   "Starts with PAR": [
     "Paradox",
     "Paraguay",
+    "Parasite",
     "Paris"
   ],
   "Starts with PAU": [
@@ -10891,6 +12384,13 @@
     "Pinta",
     "Pinto"
   ],
+  "Starts with PIR": [
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Pirates of the Caribbean: The Curse of the Black Pearl"
+  ],
   "Starts with PIS": [
     "Pisa",
     "Pisces",
@@ -10898,7 +12398,8 @@
   ],
   "Starts with PLA": [
     "Planet",
-    "Plastic"
+    "Plastic",
+    "Platoon"
   ],
   "Starts with PLU": [
     "Pluto",
@@ -10980,7 +12481,8 @@
     "Radon"
   ],
   "Starts with RAI": [
-    "Rain"
+    "Rain",
+    "Rain Man"
   ],
   "Starts with RAN": [
     "Ran",
@@ -11025,6 +12527,7 @@
     "Riddler"
   ],
   "Starts with RIS": [
+    "Rise of the Guardians",
     "Risk"
   ],
   "Starts with ROB": [
@@ -11033,7 +12536,9 @@
     "Robin Hood: Prince of Thieves"
   ],
   "Starts with ROC": [
-    "Rockefeller"
+    "Rockefeller",
+    "Rocky",
+    "Rocky Horror Picture Show"
   ],
   "Starts with ROG": [
     "Rogue",
@@ -11117,7 +12622,8 @@
     "Scorpius"
   ],
   "Starts with SCR": [
-    "Scrabble"
+    "Scrabble",
+    "Scrooged"
   ],
   "Starts with SEA": [
     "Seahawk",
@@ -11149,6 +12655,7 @@
   "Starts with SHA": [
     "Shadowcat",
     "Shakespeare",
+    "Shakespeare in Love",
     "Shark"
   ],
   "Starts with SHE": [
@@ -11168,7 +12675,8 @@
   "Starts with SIN": [
     "Sin City",
     "Sin City: A Dame to Kill For",
-    "Singapore"
+    "Singapore",
+    "Singin' in the Rain"
   ],
   "Starts with SKA": [
     "Skate"
@@ -11243,7 +12751,8 @@
     "Spirited Away"
   ],
   "Starts with SPO": [
-    "Spock"
+    "Spock",
+    "Spotlight"
   ],
   "Starts with SPR": [
     "Springfield"
@@ -11257,6 +12766,7 @@
     "Star",
     "Star Wars",
     "Starbuck",
+    "Stargate",
     "Statler"
   ],
   "Starts with STE": [
@@ -11272,6 +12782,9 @@
   "Starts with STR": [
     "STR",
     "Strange World"
+  ],
+  "Starts with SUI": [
+    "Suitcase"
   ],
   "Starts with SUL": [
     "Sulu"
@@ -11358,6 +12871,7 @@
   "Starts with TER": [
     "Teresa",
     "Terminator 2: Judgment Day",
+    "Terms of Endearment",
     "Tern"
   ],
   "Starts with THA": [
@@ -11369,6 +12883,7 @@
     "The Alchemist",
     "The Anubis Gates",
     "The Aristocats",
+    "The Artist",
     "The Big Sleep",
     "The Black Cauldron",
     "The Butterfly Effect",
@@ -11377,11 +12892,14 @@
     "The Chronicles of Narnia",
     "The Color Purple",
     "The Da Vinci Code",
+    "The Deer Hunter",
+    "The Departed",
     "The Devil's Advocate",
     "The Door into Summer",
     "The Emperor's New Groove",
     "The Empire Strikes Back",
     "The End of Eternity",
+    "The English Patient",
     "The Fault in Our Stars",
     "The Fifth Element",
     "The First Fifteen Lives of Harry August",
@@ -11394,24 +12912,33 @@
     "The Grapes of Wrath",
     "The Great Gatsby",
     "The Great Mouse Detective",
+    "The Greatest Showman",
+    "The Grinch",
     "The Handmaid's Tale",
     "The Hateful Eight",
     "The Hidden Fortress",
     "The Hitchhiker's Guide to the Galaxy",
     "The Hobbit",
+    "The Holiday",
     "The Hunchback of Notre Dame",
     "The Hunger Games",
+    "The Hurt Locker",
     "The Ice Storm",
     "The Iliad",
     "The Incredibles",
     "The Irishman",
     "The Jungle Book",
+    "The King's Speech",
     "The Lake House",
+    "The Last Emperor",
     "The Last Jedi",
     "The Lion King",
     "The Little Mermaid",
     "The Little Prince",
     "The Lord of the Rings",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers",
     "The Maltese Falcon",
     "The Man in the High Castle",
     "The Many Adventures of Winnie the Pooh",
@@ -11419,23 +12946,34 @@
     "The Map of Time",
     "The Map of the Sky",
     "The Matrix",
+    "The Muppet Christmas Carol",
+    "The Nightmare Before Christmas",
     "The Odyssey",
+    "The Parent Trap",
     "The Phantom Menace",
+    "The Phantom of the Opera",
     "The Philadelphia Experiment",
+    "The Polar Express",
     "The Princess and the Frog",
     "The Rescuers",
     "The Rescuers Down Under",
     "The Rise of Skywalker",
     "The Road",
+    "The Santa Clause",
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause",
     "The Secret Garden",
+    "The Shape of Water",
     "The Shining",
     "The Silence of the Lambs",
     "The Sixth Sense",
+    "The Sound of Music",
     "The Stand",
     "The Sword in the Stone",
     "The Tale of Peter Rabbit",
     "The Tale of the Princess Kaguya",
     "The Terminator",
+    "The Thing",
     "The Time Machine",
     "The Time Ships",
     "The Time Traveler's Almanac",
@@ -11444,6 +12982,7 @@
     "The Village",
     "The Wind Rises",
     "The Wind in the Willows",
+    "The Wizard of Oz",
     "Thera",
     "Theseus",
     "Theta"
@@ -11626,6 +13165,7 @@
     "Washington"
   ],
   "Starts with WES": [
+    "West Side Story",
     "Western Samoa"
   ],
   "Starts with WHA": [
@@ -11640,6 +13180,7 @@
     "Whiskey",
     "Whisper of the Heart",
     "Whist",
+    "White Christmas",
     "Whitney"
   ],
   "Starts with WIL": [
@@ -11673,6 +13214,9 @@
   "Starts with WRI": [
     "Wright"
   ],
+  "Starts with WUT": [
+    "Wuthering Heights"
+  ],
   "Starts with X-R": [
     "X-ray"
   ],
@@ -11694,6 +13238,9 @@
   ],
   "Starts with YIE": [
     "Yield Sign"
+  ],
+  "Starts with YOD": [
+    "Yoda"
   ],
   "Starts with YOJ": [
     "Yojimbo"
@@ -11985,6 +13532,7 @@
     "Alien 3",
     "Alien: Resurrection",
     "Aliens",
+    "Argo",
     "Arrival",
     "Copycat",
     "Death Proof",
@@ -12000,6 +13548,9 @@
     "Jackie Brown",
     "Live Free or Die Hard",
     "Looper",
+    "No Country for Old Men",
+    "Oppenheimer",
+    "Parasite",
     "Predestination",
     "Primer",
     "Pulp Fiction",
@@ -12008,9 +13559,11 @@
     "Sin City",
     "Sin City: A Dame to Kill For",
     "Source Code",
+    "Spotlight",
     "Tenet",
     "Terminator 2: Judgment Day",
     "The Butterfly Effect",
+    "The Departed",
     "The Devil's Advocate",
     "The Sixth Sense",
     "The Terminator",
@@ -12377,8 +13930,14 @@
     "Thailand"
   ],
   "War Films": [
+    "Braveheart",
     "Casablanca",
-    "Inglourious Basterds"
+    "Inglourious Basterds",
+    "Mulan",
+    "Platoon",
+    "The Deer Hunter",
+    "The English Patient",
+    "The Hurt Locker"
   ],
   "Watercraft": [
     "Canoe",
@@ -12417,8 +13976,11 @@
   ],
   "Western Films": [
     "Back to the Future Part III",
+    "Dances with Wolves",
     "Django Unchained",
-    "The Hateful Eight"
+    "No Country for Old Men",
+    "The Hateful Eight",
+    "Unforgiven"
   ],
   "White Things": [
     "Albatross",

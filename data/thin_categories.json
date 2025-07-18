@@ -1,4 +1,10 @@
 {
+  "Movies featuring Billy Zane": [
+    "Titanic"
+  ],
+  "Movies featuring Kathy Bates": [
+    "Titanic"
+  ],
   "Movies directed by Robert Schwentke": [
     "Red"
   ],
@@ -7,6 +13,27 @@
   ],
   "Movies featuring Orson Welles": [
     "Othello"
+  ],
+  "Movies featuring James Woods": [
+    "Hercules"
+  ],
+  "Movies featuring Susan Egan": [
+    "Hercules"
+  ],
+  "Movies featuring Tate Donovan": [
+    "Hercules"
+  ],
+  "Movies featuring Catherine Zeta-Jones": [
+    "Chicago"
+  ],
+  "Movies featuring Queen Latifah": [
+    "Chicago"
+  ],
+  "Movies featuring Renée Zellweger": [
+    "Chicago"
+  ],
+  "Movies featuring Richard Gere": [
+    "Chicago"
   ],
   "Psychology Terms": [
     "Persona"
@@ -37,6 +64,15 @@
   ],
   "Biology": [
     "Blood"
+  ],
+  "Movies directed by Jon Favreau": [
+    "Elf"
+  ],
+  "Movies featuring James Caan": [
+    "Elf"
+  ],
+  "Movies featuring Will Ferrell": [
+    "Elf"
   ],
   "Language": [
     "Spell"
@@ -74,20 +110,11 @@
   "Former Russian Colony": [
     "Persia"
   ],
-  "Movies directed by Michael Curtiz": [
-    "Casablanca"
-  ],
   "Movies featuring Ingrid Bergman": [
     "Casablanca"
   ],
   "Movies featuring Marlon Brando": [
     "The Godfather"
-  ],
-  "Movies featuring John Travolta": [
-    "Pulp Fiction"
-  ],
-  "Movies featuring Tom Hanks": [
-    "Forrest Gump"
   ],
   "Movies directed by Wachowskis": [
     "The Matrix"
@@ -137,9 +164,6 @@
   "Movies featuring Forest Whitaker": [
     "Rogue One"
   ],
-  "Movies directed by Ron Howard": [
-    "Solo"
-  ],
   "Movies featuring Alden Ehrenreich": [
     "Solo"
   ],
@@ -152,20 +176,410 @@
   "Movies featuring Woody Harrelson": [
     "Solo"
   ],
-  "Animated Films": [
-    "WALL-E"
-  ],
   "Movies directed by Andrew Stanton": [
     "WALL-E"
   ],
+  "Movies directed by Lee Unkrich": [
+    "Coco"
+  ],
+  "Movies featuring Alanna Ubach": [
+    "Coco"
+  ],
+  "Movies featuring Anthony Gonzalez": [
+    "Coco"
+  ],
+  "Movies featuring Benjamin Bratt": [
+    "Coco"
+  ],
+  "Movies featuring Gael García Bernal": [
+    "Coco"
+  ],
+  "Movies directed by Pete Docter": [
+    "Soul"
+  ],
+  "Movies featuring Graham Norton": [
+    "Soul"
+  ],
+  "Movies featuring Tina Fey": [
+    "Soul"
+  ],
+  "Movies featuring Adriana Caselotti": [
+    "Snow White and the Seven Dwarfs"
+  ],
+  "Movies featuring Lucille La Verne": [
+    "Snow White and the Seven Dwarfs"
+  ],
+  "Movies featuring Pinto Colvig": [
+    "Snow White and the Seven Dwarfs"
+  ],
+  "Movies featuring Roy Atwell": [
+    "Snow White and the Seven Dwarfs"
+  ],
+  "Movies featuring Christian Rub": [
+    "Pinocchio"
+  ],
+  "Movies featuring Dickie Jones": [
+    "Pinocchio"
+  ],
+  "Movies featuring Evelyn Venable": [
+    "Pinocchio"
+  ],
+  "Movies featuring Leopold Stokowski": [
+    "Fantasia"
+  ],
+  "Movies featuring Edward Brophy": [
+    "Dumbo"
+  ],
+  "Movies featuring Hardie Albright": [
+    "Bambi"
+  ],
+  "Movies featuring Peter Behn": [
+    "Bambi"
+  ],
+  "Movies featuring Stan Alexander": [
+    "Bambi"
+  ],
+  "Movies featuring Tim Davis": [
+    "Bambi"
+  ],
+  "Movies featuring Ilene Woods": [
+    "Cinderella"
+  ],
+  "Movies featuring Rhoda Williams": [
+    "Cinderella"
+  ],
+  "Movies featuring Ed Wynn": [
+    "Alice in Wonderland"
+  ],
+  "Movies featuring Richard Haydn": [
+    "Alice in Wonderland"
+  ],
+  "Movies featuring Bobby Driscoll": [
+    "Peter Pan"
+  ],
+  "Movies featuring Hans Conried": [
+    "Peter Pan"
+  ],
+  "Movies featuring Barbara Luddy": [
+    "Lady and the Tramp"
+  ],
+  "Movies featuring Larry Roberts": [
+    "Lady and the Tramp"
+  ],
+  "Movies featuring Peggy Lee": [
+    "Lady and the Tramp"
+  ],
+  "Movies featuring Bill Shirley": [
+    "Sleeping Beauty"
+  ],
+  "Movies featuring Mary Costa": [
+    "Sleeping Beauty"
+  ],
+  "Movies featuring Betty Lou Gerson": [
+    "101 Dalmatians"
+  ],
+  "Movies featuring Cate Bauer": [
+    "101 Dalmatians"
+  ],
+  "Movies featuring Lisa Davis": [
+    "101 Dalmatians"
+  ],
+  "Movies featuring Rod Taylor": [
+    "101 Dalmatians"
+  ],
+  "Movies featuring Karl Swenson": [
+    "The Sword in the Stone"
+  ],
+  "Movies featuring Rickie Sorensen": [
+    "The Sword in the Stone"
+  ],
+  "Movies featuring George Sanders": [
+    "The Jungle Book"
+  ],
+  "Movies featuring Louis Prima": [
+    "The Jungle Book"
+  ],
+  "Movies featuring Scatman Crothers": [
+    "The Aristocats"
+  ],
+  "Movies featuring Brian Bedford": [
+    "Robin Hood"
+  ],
+  "Movies featuring Peter Ustinov": [
+    "Robin Hood"
+  ],
+  "Movies featuring Terry-Thomas": [
+    "Robin Hood"
+  ],
+  "Movies featuring John Fiedler": [
+    "The Many Adventures of Winnie the Pooh"
+  ],
+  "Movies featuring Paul Winchell": [
+    "The Many Adventures of Winnie the Pooh"
+  ],
+  "Movies featuring Geraldine Page": [
+    "The Rescuers"
+  ],
+  "Movies featuring Joe Flynn": [
+    "The Rescuers"
+  ],
+  "Movies featuring Jack Albertson": [
+    "The Fox and the Hound"
+  ],
+  "Movies featuring Mickey Rooney": [
+    "The Fox and the Hound"
+  ],
+  "Movies featuring Pearl Bailey": [
+    "The Fox and the Hound"
+  ],
+  "Movies featuring Freddie Jones": [
+    "The Black Cauldron"
+  ],
+  "Movies featuring Grant Bardsley": [
+    "The Black Cauldron"
+  ],
+  "Movies featuring Nigel Hawthorne": [
+    "The Black Cauldron"
+  ],
+  "Movies featuring Susan Sheridan": [
+    "The Black Cauldron"
+  ],
+  "Movies featuring Barrie Ingham": [
+    "The Great Mouse Detective"
+  ],
+  "Movies featuring Candy Candido": [
+    "The Great Mouse Detective"
+  ],
+  "Movies featuring Val Bettin": [
+    "The Great Mouse Detective"
+  ],
+  "Movies featuring Vincent Price": [
+    "The Great Mouse Detective"
+  ],
+  "Movies directed by George Scribner": [
+    "Oliver & Company"
+  ],
+  "Movies featuring Billy Joel": [
+    "Oliver & Company"
+  ],
+  "Movies featuring Cheech Marin": [
+    "Oliver & Company"
+  ],
+  "Movies featuring Joey Lawrence": [
+    "Oliver & Company"
+  ],
+  "Movies featuring Natalie Gregory": [
+    "Oliver & Company"
+  ],
+  "Movies featuring Christopher Daniel Barnes": [
+    "The Little Mermaid"
+  ],
+  "Movies featuring Jodi Benson": [
+    "The Little Mermaid"
+  ],
+  "Movies featuring Pat Carroll": [
+    "The Little Mermaid"
+  ],
+  "Movies featuring Samuel E. Wright": [
+    "The Little Mermaid"
+  ],
+  "Movies directed by Hendel Butoy": [
+    "The Rescuers Down Under"
+  ],
+  "Movies featuring George C. Scott": [
+    "The Rescuers Down Under"
+  ],
+  "Movies featuring John Candy": [
+    "The Rescuers Down Under"
+  ],
+  "Movies featuring Angela Lansbury": [
+    "Beauty and the Beast"
+  ],
+  "Movies featuring Jerry Orbach": [
+    "Beauty and the Beast"
+  ],
+  "Movies featuring Paige O'Hara": [
+    "Beauty and the Beast"
+  ],
+  "Movies featuring Robby Benson": [
+    "Beauty and the Beast"
+  ],
+  "Movies featuring Jonathan Freeman": [
+    "Aladdin"
+  ],
+  "Movies featuring Linda Larkin": [
+    "Aladdin"
+  ],
+  "Movies featuring Scott Weinger": [
+    "Aladdin"
+  ],
+  "Movies directed by Roger Allers": [
+    "The Lion King"
+  ],
+  "Movies featuring James Earl Jones": [
+    "The Lion King"
+  ],
+  "Movies featuring Jeremy Irons": [
+    "The Lion King"
+  ],
+  "Movies featuring Matthew Broderick": [
+    "The Lion King"
+  ],
+  "Movies featuring Nathan Lane": [
+    "The Lion King"
+  ],
+  "Movies directed by Mike Gabriel": [
+    "Pocahontas"
+  ],
+  "Movies featuring Christian Bale": [
+    "Pocahontas"
+  ],
+  "Movies featuring Irene Bedard": [
+    "Pocahontas"
+  ],
+  "Movies featuring Demi Moore": [
+    "The Hunchback of Notre Dame"
+  ],
+  "Movies featuring Kevin Kline": [
+    "The Hunchback of Notre Dame"
+  ],
+  "Movies featuring Tony Jay": [
+    "The Hunchback of Notre Dame"
+  ],
+  "Movies directed by Tony Bancroft": [
+    "Mulan"
+  ],
+  "Movies featuring BD Wong": [
+    "Mulan"
+  ],
+  "Movies featuring Eddie Murphy": [
+    "Mulan"
+  ],
+  "Movies featuring Miguel Ferrer": [
+    "Mulan"
+  ],
+  "Movies featuring Ming-Na Wen": [
+    "Mulan"
+  ],
+  "Movies featuring Brian Blessed": [
+    "Tarzan"
+  ],
+  "Movies featuring Glenn Close": [
+    "Tarzan"
+  ],
+  "Movies featuring Minnie Driver": [
+    "Tarzan"
+  ],
+  "Movies featuring Tony Goldwyn": [
+    "Tarzan"
+  ],
+  "Movies featuring James Levine": [
+    "Fantasia 2000"
+  ],
+  "Movies directed by Mark Dindal": [
+    "The Emperor's New Groove"
+  ],
+  "Movies featuring David Spade": [
+    "The Emperor's New Groove"
+  ],
+  "Movies featuring Eartha Kitt": [
+    "The Emperor's New Groove"
+  ],
+  "Movies featuring Patrick Warburton": [
+    "The Emperor's New Groove"
+  ],
+  "Movies directed by Chris Sanders": [
+    "Lilo & Stitch"
+  ],
+  "Movies featuring Chris Sanders": [
+    "Lilo & Stitch"
+  ],
+  "Movies featuring Daveigh Chase": [
+    "Lilo & Stitch"
+  ],
+  "Movies featuring Tia Carrere": [
+    "Lilo & Stitch"
+  ],
+  "Movies featuring Anika Noni Rose": [
+    "The Princess and the Frog"
+  ],
+  "Movies featuring Bruno Campos": [
+    "The Princess and the Frog"
+  ],
+  "Movies directed by Nathan Greno": [
+    "Tangled"
+  ],
+  "Movies featuring Donna Murphy": [
+    "Tangled"
+  ],
+  "Movies featuring Mandy Moore": [
+    "Tangled"
+  ],
+  "Movies featuring Ron Perlman": [
+    "Tangled"
+  ],
+  "Movies featuring Zachary Levi": [
+    "Tangled"
+  ],
+  "Movies directed by Stephen Anderson": [
+    "Winnie the Pooh"
+  ],
+  "Movies featuring Bud Luckey": [
+    "Winnie the Pooh"
+  ],
+  "Movies featuring Craig Ferguson": [
+    "Winnie the Pooh"
+  ],
+  "Movies featuring Jim Cummings": [
+    "Winnie the Pooh"
+  ],
+  "Movies featuring John Cleese": [
+    "Winnie the Pooh"
+  ],
+  "Movies featuring Idina Menzel": [
+    "Frozen"
+  ],
+  "Movies featuring Jonathan Groff": [
+    "Frozen"
+  ],
+  "Movies featuring Josh Gad": [
+    "Frozen"
+  ],
+  "Movies featuring Kristen Bell": [
+    "Frozen"
+  ],
+  "Movies featuring Auli'i Cravalho": [
+    "Moana"
+  ],
+  "Movies featuring Dwayne Johnson": [
+    "Moana"
+  ],
+  "Movies featuring Temuera Morrison": [
+    "Moana"
+  ],
+  "Movies directed by Jared Bush": [
+    "Encanto"
+  ],
+  "Movies featuring Diane Guerrero": [
+    "Encanto"
+  ],
+  "Movies featuring John Leguizamo": [
+    "Encanto"
+  ],
+  "Movies featuring María Cecilia Botero": [
+    "Encanto"
+  ],
+  "Movies featuring Stephanie Beatriz": [
+    "Encanto"
+  ],
+  "Movies featuring Alan Tudyk": [
+    "Wish"
+  ],
+  "Movies featuring Angelique Cabral": [
+    "Wish"
+  ],
   "Movies directed by Howard Hawks": [
     "The Big Sleep"
-  ],
-  "Movies directed by John Huston": [
-    "The Maltese Falcon"
-  ],
-  "Movies directed by Victor Fleming": [
-    "Gone with the Wind"
   ],
   "Movies featuring Vivien Leigh": [
     "Gone with the Wind"
@@ -176,34 +590,13 @@
   "Movies featuring Gary Oldman": [
     "Harry Potter and the Prisoner of Azkaban"
   ],
-  "Christmas Films": [
-    "Die Hard"
-  ],
-  "Movies featuring Tim Allen": [
-    "Galaxy Quest"
-  ],
   "Movies directed by Kevin Reynolds": [
     "Robin Hood: Prince of Thieves"
-  ],
-  "Movies featuring Kevin Costner": [
-    "Robin Hood: Prince of Thieves"
-  ],
-  "Movies featuring Morgan Freeman": [
-    "Robin Hood: Prince of Thieves"
-  ],
-  "Movies featuring Kate Winslet": [
-    "Sense and Sensibility"
   ],
   "Movies featuring Hugh Grant": [
     "Love Actually"
   ],
   "Movies directed by Tim Burton": [
-    "Sweeney Todd: The Demon Barber of Fleet Street"
-  ],
-  "Movies featuring Helena Bonham Carter": [
-    "Sweeney Todd: The Demon Barber of Fleet Street"
-  ],
-  "Musical Films": [
     "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
   "Movies featuring Andy Garcia": [
@@ -213,9 +606,6 @@
     "The Godfather Part III"
   ],
   "Movies directed by Brian De Palma": [
-    "Scarface"
-  ],
-  "Movies featuring Michelle Pfeiffer": [
     "Scarface"
   ],
   "Movies featuring John Cazale": [
@@ -232,18 +622,6 @@
   ],
   "Movies featuring Charlize Theron": [
     "The Devil's Advocate"
-  ],
-  "Movies featuring Hilary Swank": [
-    "Insomnia"
-  ],
-  "Movies featuring Robin Williams": [
-    "Insomnia"
-  ],
-  "Movies directed by Martin Scorsese": [
-    "The Irishman"
-  ],
-  "Movies featuring Joe Pesci": [
-    "The Irishman"
   ],
   "Movies featuring Harvey Keitel": [
     "Reservoir Dogs"
@@ -265,9 +643,6 @@
   ],
   "Movies featuring Mélanie Laurent": [
     "Inglourious Basterds"
-  ],
-  "Movies featuring Jamie Foxx": [
-    "Django Unchained"
   ],
   "Movies featuring Jennifer Jason Leigh": [
     "The Hateful Eight"
@@ -323,12 +698,6 @@
   "Movies featuring Andie MacDowell": [
     "Groundhog Day"
   ],
-  "Movies featuring Bill Murray": [
-    "Groundhog Day"
-  ],
-  "Movies featuring Anne Hathaway": [
-    "Interstellar"
-  ],
   "Movies featuring Matthew McConaughey": [
     "Interstellar"
   ],
@@ -339,12 +708,6 @@
     "Source Code"
   ],
   "Movies directed by Doug Liman": [
-    "Edge of Tomorrow"
-  ],
-  "Movies featuring Emily Blunt": [
-    "Edge of Tomorrow"
-  ],
-  "Movies featuring Tom Cruise": [
     "Edge of Tomorrow"
   ],
   "Movies directed by Denis Villeneuve": [
@@ -369,9 +732,6 @@
     "Predestination"
   ],
   "Movies featuring Domhnall Gleeson": [
-    "About Time"
-  ],
-  "Movies featuring Rachel McAdams": [
     "About Time"
   ],
   "Movies directed by Colin Trevorrow": [
@@ -410,9 +770,6 @@
   "Movies directed by Alejandro Agresti": [
     "The Lake House"
   ],
-  "Movies featuring Sandra Bullock": [
-    "The Lake House"
-  ],
   "Movies directed by James Mangold": [
     "Kate & Leopold"
   ],
@@ -431,9 +788,6 @@
   "Movies directed by Stewart Raffill": [
     "The Philadelphia Experiment"
   ],
-  "Movies directed by Randal Kleiser": [
-    "Flight of the Navigator"
-  ],
   "Movies directed by Stephen Herek": [
     "Bill & Ted's Excellent Adventure"
   ],
@@ -449,9 +803,6 @@
   "Movies directed by Bryan Singer": [
     "X-Men: Days of Future Past"
   ],
-  "Movies featuring Ian McKellen": [
-    "X-Men: Days of Future Past"
-  ],
   "Movies featuring Patrick Stewart": [
     "X-Men: Days of Future Past"
   ],
@@ -464,23 +815,839 @@
   "Movies featuring Chris Evans": [
     "Avengers: Endgame"
   ],
-  "Movies featuring Robert Downey Jr.": [
-    "Avengers: Endgame"
-  ],
   "Movies featuring Scarlett Johansson": [
     "Avengers: Endgame"
   ],
   "Movies directed by Ava DuVernay": [
     "A Wrinkle in Time"
   ],
-  "Movies featuring Oprah Winfrey": [
-    "A Wrinkle in Time"
-  ],
-  "Movies featuring Reese Witherspoon": [
-    "A Wrinkle in Time"
-  ],
   "Action Stories": [
     "All You Need Is Kill"
+  ],
+  "Movies featuring Kermit the Frog": [
+    "The Muppet Christmas Carol"
+  ],
+  "Movies featuring Michael Caine": [
+    "The Muppet Christmas Carol"
+  ],
+  "Movies featuring Miss Piggy": [
+    "The Muppet Christmas Carol"
+  ],
+  "Movies directed by Frank Capra": [
+    "It's a Wonderful Life"
+  ],
+  "Movies featuring Donna Reed": [
+    "It's a Wonderful Life"
+  ],
+  "Movies featuring James Stewart": [
+    "It's a Wonderful Life"
+  ],
+  "Movies directed by George Seaton": [
+    "Miracle on 34th Street"
+  ],
+  "Movies featuring Maureen O'Hara": [
+    "Miracle on 34th Street"
+  ],
+  "Movies directed by Bob Clark": [
+    "A Christmas Story"
+  ],
+  "Movies featuring Darren McGavin": [
+    "A Christmas Story"
+  ],
+  "Movies featuring Peter Billingsley": [
+    "A Christmas Story"
+  ],
+  "Movies directed by Jeremiah S. Chechik": [
+    "National Lampoon's Christmas Vacation"
+  ],
+  "Movies featuring Beverly D'Angelo": [
+    "National Lampoon's Christmas Vacation"
+  ],
+  "Movies featuring Chevy Chase": [
+    "National Lampoon's Christmas Vacation"
+  ],
+  "Movies featuring Randy Quaid": [
+    "National Lampoon's Christmas Vacation"
+  ],
+  "Movies directed by Henry Selick": [
+    "The Nightmare Before Christmas"
+  ],
+  "Movies featuring Chris Sarandon": [
+    "The Nightmare Before Christmas"
+  ],
+  "Movies featuring Danny Elfman": [
+    "The Nightmare Before Christmas"
+  ],
+  "Movies featuring Bing Crosby": [
+    "White Christmas"
+  ],
+  "Movies featuring Danny Kaye": [
+    "White Christmas"
+  ],
+  "Movies featuring Rosemary Clooney": [
+    "White Christmas"
+  ],
+  "Movies featuring Charlie Brown": [
+    "A Charlie Brown Christmas"
+  ],
+  "Movies featuring Snoopy": [
+    "A Charlie Brown Christmas"
+  ],
+  "Movies directed by Chuck Jones": [
+    "How the Grinch Stole Christmas"
+  ],
+  "Movies featuring Boris Karloff": [
+    "How the Grinch Stole Christmas"
+  ],
+  "Movies directed by Scott Mosier": [
+    "The Grinch"
+  ],
+  "Movies featuring Benedict Cumberbatch": [
+    "The Grinch"
+  ],
+  "Movies directed by John Pasquin": [
+    "The Santa Clause"
+  ],
+  "Movies featuring Judge Reinhold": [
+    "The Santa Clause"
+  ],
+  "Movies featuring Elizabeth Mitchell": [
+    "The Santa Clause 2"
+  ],
+  "Movies featuring Martin Short": [
+    "The Santa Clause 3: The Escape Clause"
+  ],
+  "Movies directed by Brian Levant": [
+    "Jingle All the Way"
+  ],
+  "Movies featuring Phil Hartman": [
+    "Jingle All the Way"
+  ],
+  "Movies featuring Sinbad": [
+    "Jingle All the Way"
+  ],
+  "Movies directed by Richard Donner": [
+    "Scrooged"
+  ],
+  "Movies featuring Karen Allen": [
+    "Scrooged"
+  ],
+  "Movies directed by Terry Zwigoff": [
+    "Bad Santa"
+  ],
+  "Movies featuring Billy Bob Thornton": [
+    "Bad Santa"
+  ],
+  "Movies featuring Lauren Graham": [
+    "Bad Santa"
+  ],
+  "Movies directed by Nancy Meyers": [
+    "The Holiday"
+  ],
+  "Movies featuring Cameron Diaz": [
+    "The Holiday"
+  ],
+  "Movies featuring Jack Black": [
+    "The Holiday"
+  ],
+  "Movies featuring Jude Law": [
+    "The Holiday"
+  ],
+  "Movies directed by Seth Gordon": [
+    "Four Christmases"
+  ],
+  "Movies featuring Vince Vaughn": [
+    "Four Christmases"
+  ],
+  "Movies directed by Sarah Smith": [
+    "Arthur Christmas"
+  ],
+  "Movies featuring Hugh Laurie": [
+    "Arthur Christmas"
+  ],
+  "Movies featuring James McAvoy": [
+    "Arthur Christmas"
+  ],
+  "Movies directed by Peter Ramsey": [
+    "Rise of the Guardians"
+  ],
+  "Movies featuring Alec Baldwin": [
+    "Rise of the Guardians"
+  ],
+  "Movies directed by Robert Stevenson": [
+    "Mary Poppins"
+  ],
+  "Movies featuring Dick Van Dyke": [
+    "Mary Poppins"
+  ],
+  "Movies featuring Lin-Manuel Miranda": [
+    "Mary Poppins Returns"
+  ],
+  "Movies featuring Christopher Plummer": [
+    "The Sound of Music"
+  ],
+  "Movies featuring Olivia Newton-John": [
+    "Grease"
+  ],
+  "Movies directed by Gene Kelly": [
+    "Singin' in the Rain"
+  ],
+  "Movies featuring Debbie Reynolds": [
+    "Singin' in the Rain"
+  ],
+  "Movies featuring Gene Kelly": [
+    "Singin' in the Rain"
+  ],
+  "Movies directed by Steven Spielberg": [
+    "West Side Story"
+  ],
+  "Movies featuring Ansel Elgort": [
+    "West Side Story"
+  ],
+  "Movies featuring David Alvarez": [
+    "West Side Story"
+  ],
+  "Movies featuring Rachel Zegler": [
+    "West Side Story"
+  ],
+  "Movies featuring Rita Moreno": [
+    "West Side Story"
+  ],
+  "Remakes": [
+    "West Side Story"
+  ],
+  "Movies directed by George Cukor": [
+    "My Fair Lady"
+  ],
+  "Movies featuring Audrey Hepburn": [
+    "My Fair Lady"
+  ],
+  "Movies featuring Rex Harrison": [
+    "My Fair Lady"
+  ],
+  "Movies featuring Judy Garland": [
+    "The Wizard of Oz"
+  ],
+  "Movies featuring Ray Bolger": [
+    "The Wizard of Oz"
+  ],
+  "Movies featuring Albert Finney": [
+    "Annie"
+  ],
+  "Movies featuring Carol Burnett": [
+    "Annie"
+  ],
+  "Movies directed by Carol Reed": [
+    "Oliver!"
+  ],
+  "Movies featuring Oliver Reed": [
+    "Oliver!"
+  ],
+  "Movies featuring Ron Moody": [
+    "Oliver!"
+  ],
+  "Movies featuring Norma Crane": [
+    "Fiddler on the Roof"
+  ],
+  "Movies featuring Topol": [
+    "Fiddler on the Roof"
+  ],
+  "Movies directed by Bob Fosse": [
+    "Cabaret"
+  ],
+  "Movies featuring Joel Grey": [
+    "Cabaret"
+  ],
+  "Movies featuring Liza Minnelli": [
+    "Cabaret"
+  ],
+  "Movies directed by Baz Luhrmann": [
+    "Moulin Rouge!"
+  ],
+  "Movies featuring Nicole Kidman": [
+    "Moulin Rouge!"
+  ],
+  "Movies directed by Damien Chazelle": [
+    "La La Land"
+  ],
+  "Movies featuring Ryan Gosling": [
+    "La La Land"
+  ],
+  "Movies directed by Michael Gracey": [
+    "The Greatest Showman"
+  ],
+  "Movies featuring Michelle Williams": [
+    "The Greatest Showman"
+  ],
+  "Movies featuring Zac Efron": [
+    "The Greatest Showman"
+  ],
+  "Movies featuring Zendaya": [
+    "The Greatest Showman"
+  ],
+  "Movies featuring Adam Pascal": [
+    "Rent"
+  ],
+  "Movies featuring Anthony Rapp": [
+    "Rent"
+  ],
+  "Movies directed by Adam Shankman": [
+    "Hairspray"
+  ],
+  "Movies directed by Bill Condon": [
+    "Dreamgirls"
+  ],
+  "Movies featuring Beyoncé": [
+    "Dreamgirls"
+  ],
+  "Movies featuring Jennifer Hudson": [
+    "Dreamgirls"
+  ],
+  "Movies featuring Amanda Seyfried": [
+    "Les Misérables"
+  ],
+  "Movies featuring Anna Kendrick": [
+    "Into the Woods"
+  ],
+  "Movies featuring James Corden": [
+    "Into the Woods"
+  ],
+  "Movies directed by Joel Schumacher": [
+    "The Phantom of the Opera"
+  ],
+  "Movies featuring Emmy Rossum": [
+    "The Phantom of the Opera"
+  ],
+  "Movies featuring Gerard Butler": [
+    "The Phantom of the Opera"
+  ],
+  "Movies featuring Miranda Richardson": [
+    "The Phantom of the Opera"
+  ],
+  "Movies featuring Patrick Wilson": [
+    "The Phantom of the Opera"
+  ],
+  "Movies directed by Alan Parker": [
+    "Evita"
+  ],
+  "Movies featuring Antonio Banderas": [
+    "Evita"
+  ],
+  "Movies featuring Jimmy Nail": [
+    "Evita"
+  ],
+  "Movies featuring Jonathan Pryce": [
+    "Evita"
+  ],
+  "Movies featuring Madonna": [
+    "Evita"
+  ],
+  "Movies featuring Barry Dennen": [
+    "Jesus Christ Superstar"
+  ],
+  "Movies featuring Carl Anderson": [
+    "Jesus Christ Superstar"
+  ],
+  "Movies featuring Ted Neeley": [
+    "Jesus Christ Superstar"
+  ],
+  "Movies featuring Yvonne Elliman": [
+    "Jesus Christ Superstar"
+  ],
+  "Movies directed by David Greene": [
+    "Godspell"
+  ],
+  "Movies featuring David Haskell": [
+    "Godspell"
+  ],
+  "Movies featuring Katie Hanley": [
+    "Godspell"
+  ],
+  "Movies featuring Lynne Thigpen": [
+    "Godspell"
+  ],
+  "Movies featuring Victor Garber": [
+    "Godspell"
+  ],
+  "Movies directed by Jim Sharman": [
+    "Rocky Horror Picture Show"
+  ],
+  "Movies featuring Barry Bostwick": [
+    "Rocky Horror Picture Show"
+  ],
+  "Movies featuring Richard O'Brien": [
+    "Rocky Horror Picture Show"
+  ],
+  "Movies featuring Susan Sarandon": [
+    "Rocky Horror Picture Show"
+  ],
+  "Movies featuring Tim Curry": [
+    "Rocky Horror Picture Show"
+  ],
+  "Movies directed by Frank Oz": [
+    "Little Shop of Horrors"
+  ],
+  "Movies featuring Ellen Greene": [
+    "Little Shop of Horrors"
+  ],
+  "Movies featuring Rick Moranis": [
+    "Little Shop of Horrors"
+  ],
+  "Movies featuring Steve Martin": [
+    "Little Shop of Horrors"
+  ],
+  "Movies featuring Vincent Gardenia": [
+    "Little Shop of Horrors"
+  ],
+  "Movies directed by John Cameron Mitchell": [
+    "Hedwig and the Angry Inch"
+  ],
+  "Movies featuring Andrea Martin": [
+    "Hedwig and the Angry Inch"
+  ],
+  "Movies featuring John Cameron Mitchell": [
+    "Hedwig and the Angry Inch"
+  ],
+  "Movies featuring Michael Pitt": [
+    "Hedwig and the Angry Inch"
+  ],
+  "Movies featuring Miriam Shor": [
+    "Hedwig and the Angry Inch"
+  ],
+  "Movies directed by Lin-Manuel Miranda": [
+    "Tick, Tick... Boom!"
+  ],
+  "Movies featuring Alexandra Shipp": [
+    "Tick, Tick... Boom!"
+  ],
+  "Movies featuring Andrew Garfield": [
+    "Tick, Tick... Boom!"
+  ],
+  "Movies featuring Robin de Jesús": [
+    "Tick, Tick... Boom!"
+  ],
+  "Movies featuring Vanessa Hudgens": [
+    "Tick, Tick... Boom!"
+  ],
+  "Movies directed by Jon M. Chu": [
+    "In the Heights"
+  ],
+  "Movies featuring Anthony Ramos": [
+    "In the Heights"
+  ],
+  "Movies featuring Corey Hawkins": [
+    "In the Heights"
+  ],
+  "Movies featuring Leslie Grace": [
+    "In the Heights"
+  ],
+  "Movies featuring Melissa Barrera": [
+    "In the Heights"
+  ],
+  "Movies featuring Donald Moffat": [
+    "The Thing"
+  ],
+  "Movies featuring Wilford Brimley": [
+    "The Thing"
+  ],
+  "Movies featuring Donald Pleasence": [
+    "Escape from New York"
+  ],
+  "Movies featuring Ernest Borgnine": [
+    "Escape from New York"
+  ],
+  "Movies featuring Lee Van Cleef": [
+    "Escape from New York"
+  ],
+  "Movies directed by Roland Emmerich": [
+    "Stargate"
+  ],
+  "Movies featuring James Spader": [
+    "Stargate"
+  ],
+  "Movies featuring Jaye Davidson": [
+    "Stargate"
+  ],
+  "Movies featuring Viveca Lindfors": [
+    "Stargate"
+  ],
+  "Movies featuring Stellan Skarsgård": [
+    "Pirates of the Caribbean: Dead Man's Chest"
+  ],
+  "Movies featuring Ian McShane": [
+    "Pirates of the Caribbean: On Stranger Tides"
+  ],
+  "Movies featuring Penélope Cruz": [
+    "Pirates of the Caribbean: On Stranger Tides"
+  ],
+  "Movies directed by Joachim Rønning": [
+    "Pirates of the Caribbean: Dead Men Tell No Tales"
+  ],
+  "Movies featuring Brenton Thwaites": [
+    "Pirates of the Caribbean: Dead Men Tell No Tales"
+  ],
+  "Movies featuring Kaya Scodelario": [
+    "Pirates of the Caribbean: Dead Men Tell No Tales"
+  ],
+  "Movies featuring Louise Fletcher": [
+    "One Flew Over the Cuckoo's Nest"
+  ],
+  "Movies directed by John G. Avildsen": [
+    "Rocky"
+  ],
+  "Movies featuring Burgess Meredith": [
+    "Rocky"
+  ],
+  "Movies featuring Sylvester Stallone": [
+    "Rocky"
+  ],
+  "Movies featuring Talia Shire": [
+    "Rocky"
+  ],
+  "Movies directed by Michael Cimino": [
+    "The Deer Hunter"
+  ],
+  "Movies featuring Christopher Walken": [
+    "The Deer Hunter"
+  ],
+  "Movies directed by Robert Benton": [
+    "Kramer vs. Kramer"
+  ],
+  "Movies featuring Justin Henry": [
+    "Kramer vs. Kramer"
+  ],
+  "Movies directed by Robert Redford": [
+    "Ordinary People"
+  ],
+  "Movies featuring Donald Sutherland": [
+    "Ordinary People"
+  ],
+  "Movies featuring Mary Tyler Moore": [
+    "Ordinary People"
+  ],
+  "Movies featuring Timothy Hutton": [
+    "Ordinary People"
+  ],
+  "Movies directed by Hugh Hudson": [
+    "Chariots of Fire"
+  ],
+  "Movies featuring Ben Cross": [
+    "Chariots of Fire"
+  ],
+  "Movies featuring Ian Charleson": [
+    "Chariots of Fire"
+  ],
+  "Movies featuring Nigel Havers": [
+    "Chariots of Fire"
+  ],
+  "Movies directed by Richard Attenborough": [
+    "Gandhi"
+  ],
+  "Movies featuring Ben Kingsley": [
+    "Gandhi"
+  ],
+  "Movies featuring Candice Bergen": [
+    "Gandhi"
+  ],
+  "Movies featuring Martin Sheen": [
+    "Gandhi"
+  ],
+  "Movies directed by James L. Brooks": [
+    "Terms of Endearment"
+  ],
+  "Movies featuring Debra Winger": [
+    "Terms of Endearment"
+  ],
+  "Movies featuring Shirley MacLaine": [
+    "Terms of Endearment"
+  ],
+  "Movies featuring Elizabeth Berridge": [
+    "Amadeus"
+  ],
+  "Movies featuring F. Murray Abraham": [
+    "Amadeus"
+  ],
+  "Movies directed by Sydney Pollack": [
+    "Out of Africa"
+  ],
+  "Movies featuring Klaus Maria Brandauer": [
+    "Out of Africa"
+  ],
+  "Movies featuring Robert Redford": [
+    "Out of Africa"
+  ],
+  "Movies directed by Oliver Stone": [
+    "Platoon"
+  ],
+  "Movies featuring Charlie Sheen": [
+    "Platoon"
+  ],
+  "Movies featuring Tom Berenger": [
+    "Platoon"
+  ],
+  "Movies featuring Willem Dafoe": [
+    "Platoon"
+  ],
+  "Movies directed by Bernardo Bertolucci": [
+    "The Last Emperor"
+  ],
+  "Movies featuring Joan Chen": [
+    "The Last Emperor"
+  ],
+  "Movies featuring John Lone": [
+    "The Last Emperor"
+  ],
+  "Movies featuring Peter O'Toole": [
+    "The Last Emperor"
+  ],
+  "Movies directed by Barry Levinson": [
+    "Rain Man"
+  ],
+  "Movies featuring Valeria Golino": [
+    "Rain Man"
+  ],
+  "Movies directed by Bruce Beresford": [
+    "Driving Miss Daisy"
+  ],
+  "Movies featuring Dan Aykroyd": [
+    "Driving Miss Daisy"
+  ],
+  "Movies featuring Jessica Tandy": [
+    "Driving Miss Daisy"
+  ],
+  "Movies directed by Kevin Costner": [
+    "Dances with Wolves"
+  ],
+  "Movies featuring Graham Greene": [
+    "Dances with Wolves"
+  ],
+  "Movies featuring Mary McDonnell": [
+    "Dances with Wolves"
+  ],
+  "Movies featuring Gene Hackman": [
+    "Unforgiven"
+  ],
+  "Movies directed by Mel Gibson": [
+    "Braveheart"
+  ],
+  "Movies featuring Patrick McGoohan": [
+    "Braveheart"
+  ],
+  "Movies featuring Sophie Marceau": [
+    "Braveheart"
+  ],
+  "Movies directed by Anthony Minghella": [
+    "The English Patient"
+  ],
+  "Movies featuring Juliette Binoche": [
+    "The English Patient"
+  ],
+  "Movies featuring Kristin Scott Thomas": [
+    "The English Patient"
+  ],
+  "Movies directed by John Madden": [
+    "Shakespeare in Love"
+  ],
+  "Movies featuring Gwyneth Paltrow": [
+    "Shakespeare in Love"
+  ],
+  "Movies featuring Joseph Fiennes": [
+    "Shakespeare in Love"
+  ],
+  "Movies featuring Judi Dench": [
+    "Shakespeare in Love"
+  ],
+  "Movies directed by Sam Mendes": [
+    "American Beauty"
+  ],
+  "Movies featuring Annette Bening": [
+    "American Beauty"
+  ],
+  "Movies featuring Kevin Spacey": [
+    "American Beauty"
+  ],
+  "Movies featuring Thora Birch": [
+    "American Beauty"
+  ],
+  "Movies featuring Connie Nielsen": [
+    "Gladiator"
+  ],
+  "Movies featuring Joaquin Phoenix": [
+    "Gladiator"
+  ],
+  "Movies featuring Ed Harris": [
+    "A Beautiful Mind"
+  ],
+  "Movies featuring Jennifer Connelly": [
+    "A Beautiful Mind"
+  ],
+  "Movies directed by Paul Haggis": [
+    "Crash"
+  ],
+  "Movies featuring Don Cheadle": [
+    "Crash"
+  ],
+  "Movies featuring Matt Dillon": [
+    "Crash"
+  ],
+  "Movies featuring Matt Damon": [
+    "The Departed"
+  ],
+  "Movies directed by Joel Coen": [
+    "No Country for Old Men"
+  ],
+  "Movies featuring Josh Brolin": [
+    "No Country for Old Men"
+  ],
+  "Movies featuring Tommy Lee Jones": [
+    "No Country for Old Men"
+  ],
+  "Movies directed by Danny Boyle": [
+    "Slumdog Millionaire"
+  ],
+  "Movies featuring Anil Kapoor": [
+    "Slumdog Millionaire"
+  ],
+  "Movies featuring Dev Patel": [
+    "Slumdog Millionaire"
+  ],
+  "Movies featuring Freida Pinto": [
+    "Slumdog Millionaire"
+  ],
+  "Movies directed by Kathryn Bigelow": [
+    "The Hurt Locker"
+  ],
+  "Movies featuring Anthony Mackie": [
+    "The Hurt Locker"
+  ],
+  "Movies featuring Brian Geraghty": [
+    "The Hurt Locker"
+  ],
+  "Movies featuring Jeremy Renner": [
+    "The Hurt Locker"
+  ],
+  "Movies featuring Colin Firth": [
+    "The King's Speech"
+  ],
+  "Movies directed by Michel Hazanavicius": [
+    "The Artist"
+  ],
+  "Movies featuring Bérénice Bejo": [
+    "The Artist"
+  ],
+  "Movies featuring Jean Dujardin": [
+    "The Artist"
+  ],
+  "Movies directed by Ben Affleck": [
+    "Argo"
+  ],
+  "Movies featuring Alan Arkin": [
+    "Argo"
+  ],
+  "Movies featuring Ben Affleck": [
+    "Argo"
+  ],
+  "Movies featuring Bryan Cranston": [
+    "Argo"
+  ],
+  "Movies directed by Steve McQueen": [
+    "12 Years a Slave"
+  ],
+  "Movies featuring Chiwetel Ejiofor": [
+    "12 Years a Slave"
+  ],
+  "Movies featuring Lupita Nyong'o": [
+    "12 Years a Slave"
+  ],
+  "Movies featuring Michael Fassbender": [
+    "12 Years a Slave"
+  ],
+  "Movies directed by Alejandro G. Iñárritu": [
+    "Birdman"
+  ],
+  "Movies featuring Edward Norton": [
+    "Birdman"
+  ],
+  "Movies directed by Tom McCarthy": [
+    "Spotlight"
+  ],
+  "Movies featuring Mark Ruffalo": [
+    "Spotlight"
+  ],
+  "Movies directed by Barry Jenkins": [
+    "Moonlight"
+  ],
+  "Movies featuring Naomie Harris": [
+    "Moonlight"
+  ],
+  "Movies featuring Trevante Rhodes": [
+    "Moonlight"
+  ],
+  "Movies directed by Guillermo del Toro": [
+    "The Shape of Water"
+  ],
+  "Movies featuring Michael Shannon": [
+    "The Shape of Water"
+  ],
+  "Movies featuring Richard Jenkins": [
+    "The Shape of Water"
+  ],
+  "Movies featuring Sally Hawkins": [
+    "The Shape of Water"
+  ],
+  "Movies directed by Peter Farrelly": [
+    "Green Book"
+  ],
+  "Movies featuring Linda Cardellini": [
+    "Green Book"
+  ],
+  "Movies directed by Bong Joon-ho": [
+    "Parasite"
+  ],
+  "Movies featuring Cho Yeo-jeong": [
+    "Parasite"
+  ],
+  "Movies featuring Lee Sun-kyun": [
+    "Parasite"
+  ],
+  "Movies featuring Song Kang-ho": [
+    "Parasite"
+  ],
+  "Movies directed by Chloé Zhao": [
+    "Nomadland"
+  ],
+  "Movies featuring David Strathairn": [
+    "Nomadland"
+  ],
+  "Movies featuring Frances McDormand": [
+    "Nomadland"
+  ],
+  "Movies directed by Sian Heder": [
+    "CODA"
+  ],
+  "Movies featuring Emilia Jones": [
+    "CODA"
+  ],
+  "Movies featuring Marlee Matlin": [
+    "CODA"
+  ],
+  "Movies featuring Troy Kotsur": [
+    "CODA"
+  ],
+  "Movies directed by Daniel Kwan": [
+    "Everything Everywhere All at Once"
+  ],
+  "Movies featuring Jamie Lee Curtis": [
+    "Everything Everywhere All at Once"
+  ],
+  "Movies featuring Ke Huy Quan": [
+    "Everything Everywhere All at Once"
+  ],
+  "Movies featuring Michelle Yeoh": [
+    "Everything Everywhere All at Once"
+  ],
+  "Movies featuring Cillian Murphy": [
+    "Oppenheimer"
   ],
   "Astronomers": [
     "Galileo",
@@ -501,6 +1668,10 @@
   "Norse Gods": [
     "Loki",
     "Thor"
+  ],
+  "Movies featuring Danny DeVito": [
+    "Hercules",
+    "One Flew Over the Cuckoo's Nest"
   ],
   "Organizations": [
     "NASA",
@@ -526,13 +1697,13 @@
     "Musk",
     "Rank"
   ],
-  "War Films": [
+  "Movies directed by Michael Curtiz": [
     "Casablanca",
-    "Inglourious Basterds"
+    "White Christmas"
   ],
-  "Movies featuring Robert De Niro": [
-    "The Godfather Part II",
-    "The Irishman"
+  "Movies featuring Tom Hanks": [
+    "Forrest Gump",
+    "The Polar Express"
   ],
   "Movies directed by Gorō Miyazaki": [
     "Tales from Earthsea",
@@ -562,21 +1733,117 @@
     "The Last Jedi",
     "Looper"
   ],
+  "Movies directed by Ron Howard": [
+    "Solo",
+    "A Beautiful Mind"
+  ],
   "Movies directed by Spielberg": [
     "Schindler's List",
     "Jurassic Park"
   ],
-  "Movies directed by Ridley Scott": [
-    "Blade Runner",
-    "Alien"
+  "Movies featuring Jamie Foxx": [
+    "Soul",
+    "Django Unchained"
+  ],
+  "Movies featuring Rachel House": [
+    "Soul",
+    "Moana"
+  ],
+  "Movies directed by David Hand": [
+    "Snow White and the Seven Dwarfs",
+    "Bambi"
+  ],
+  "Movies directed by Ben Sharpsteen": [
+    "Pinocchio",
+    "Dumbo"
+  ],
+  "Movies featuring Cliff Edwards": [
+    "Pinocchio",
+    "Dumbo"
+  ],
+  "Movies directed by James Algar": [
+    "Fantasia",
+    "Fantasia 2000"
+  ],
+  "Movies featuring Eleanor Audley": [
+    "Cinderella",
+    "Sleeping Beauty"
+  ],
+  "Movies featuring Kathryn Beaumont": [
+    "Alice in Wonderland",
+    "Peter Pan"
+  ],
+  "Movies featuring Bill Thompson": [
+    "Peter Pan",
+    "Lady and the Tramp"
+  ],
+  "Movies featuring Junius Matthews": [
+    "The Sword in the Stone",
+    "The Many Adventures of Winnie the Pooh"
+  ],
+  "Movies featuring Sebastian Cabot": [
+    "The Sword in the Stone",
+    "The Jungle Book"
+  ],
+  "Movies featuring Bob Newhart": [
+    "The Rescuers",
+    "The Rescuers Down Under"
+  ],
+  "Movies directed by Ted Berman": [
+    "The Fox and the Hound",
+    "The Black Cauldron"
+  ],
+  "Movies directed by Gary Trousdale": [
+    "Beauty and the Beast",
+    "The Hunchback of Notre Dame"
+  ],
+  "Movies featuring Robin Williams": [
+    "Aladdin",
+    "Insomnia"
+  ],
+  "Movies featuring David Ogden Stiers": [
+    "Pocahontas",
+    "Lilo & Stitch"
+  ],
+  "Movies featuring Mel Gibson": [
+    "Pocahontas",
+    "Braveheart"
+  ],
+  "Movies featuring Tom Hulce": [
+    "The Hunchback of Notre Dame",
+    "Amadeus"
+  ],
+  "Movies featuring John Goodman": [
+    "The Emperor's New Groove",
+    "The Artist"
+  ],
+  "Movies featuring Keith David": [
+    "The Princess and the Frog",
+    "The Thing"
+  ],
+  "Movies featuring Oprah Winfrey": [
+    "The Princess and the Frog",
+    "A Wrinkle in Time"
+  ],
+  "Movies featuring Ariana DeBose": [
+    "Wish",
+    "West Side Story"
+  ],
+  "Movies featuring Chris Pine": [
+    "Wish",
+    "Rise of the Guardians"
   ],
   "Film Noir": [
     "The Big Sleep",
     "The Maltese Falcon"
   ],
-  "Movies directed by Chris Columbus": [
-    "Harry Potter and the Sorcerer's Stone",
-    "Harry Potter and the Chamber of Secrets"
+  "Movies directed by John Huston": [
+    "The Maltese Falcon",
+    "Annie"
+  ],
+  "Movies directed by Victor Fleming": [
+    "Gone with the Wind",
+    "The Wizard of Oz"
   ],
   "Movies featuring Maggie Smith": [
     "Harry Potter and the Sorcerer's Stone",
@@ -594,6 +1861,10 @@
     "Galaxy Quest",
     "Red 2"
   ],
+  "Movies featuring Kevin Costner": [
+    "Robin Hood: Prince of Thieves",
+    "Dances with Wolves"
+  ],
   "Movies directed by Ang Lee": [
     "Sense and Sensibility",
     "The Ice Storm"
@@ -606,13 +1877,25 @@
     "Love Actually",
     "About Time"
   ],
-  "Movies featuring Johnny Depp": [
+  "Movies featuring Helena Bonham Carter": [
     "Sweeney Todd: The Demon Barber of Fleet Street",
-    "Donnie Brasco"
+    "The King's Speech"
+  ],
+  "Movies featuring Michelle Pfeiffer": [
+    "Scarface",
+    "Hairspray"
   ],
   "Movies directed by Sidney Lumet": [
     "Serpico",
     "Dog Day Afternoon"
+  ],
+  "Movies featuring Hilary Swank": [
+    "Insomnia",
+    "Million Dollar Baby"
+  ],
+  "Movies directed by Martin Scorsese": [
+    "The Irishman",
+    "The Departed"
   ],
   "Movies featuring Tim Roth": [
     "Reservoir Dogs",
@@ -634,10 +1917,6 @@
     "Inglourious Basterds",
     "Django Unchained"
   ],
-  "Movies featuring Leonardo DiCaprio": [
-    "Django Unchained",
-    "Once Upon a Time in Hollywood"
-  ],
   "Movies directed by Ivan Reitman": [
     "Ghostbusters",
     "Ghostbusters II"
@@ -654,29 +1933,126 @@
     "Sin City",
     "Sin City: A Dame to Kill For"
   ],
-  "Movies featuring Arnold Schwarzenegger": [
-    "The Terminator",
-    "Terminator 2: Judgment Day"
+  "Movies featuring Bill Murray": [
+    "Groundhog Day",
+    "Scrooged"
   ],
   "Movies featuring Linda Hamilton": [
     "The Terminator",
     "Terminator 2: Judgment Day"
   ],
+  "Movies featuring Anne Hathaway": [
+    "Interstellar",
+    "Les Misérables"
+  ],
   "Movies featuring Jake Gyllenhaal": [
     "Source Code",
     "Donnie Darko"
   ],
-  "Movies featuring Hugh Jackman": [
-    "Kate & Leopold",
-    "X-Men: Days of Future Past"
+  "Movies featuring Tom Cruise": [
+    "Edge of Tomorrow",
+    "Rain Man"
+  ],
+  "Movies featuring Rachel McAdams": [
+    "About Time",
+    "Spotlight"
+  ],
+  "Movies featuring Sandra Bullock": [
+    "The Lake House",
+    "Crash"
+  ],
+  "Movies directed by Randal Kleiser": [
+    "Flight of the Navigator",
+    "Grease"
   ],
   "Movies featuring Alex Winter": [
     "Bill & Ted's Excellent Adventure",
     "Bill & Ted's Bogus Journey"
   ],
+  "Movies featuring Robert Downey Jr.": [
+    "Avengers: Endgame",
+    "Oppenheimer"
+  ],
+  "Movies featuring Reese Witherspoon": [
+    "A Wrinkle in Time",
+    "Four Christmases"
+  ],
   "Comedy Stories": [
     "The Hitchhiker's Guide to the Galaxy",
     "To Say Nothing of the Dog"
+  ],
+  "Movies featuring Natalie Wood": [
+    "Miracle on 34th Street",
+    "West Side Story"
+  ],
+  "Movies featuring Daniel Stern": [
+    "Home Alone",
+    "Home Alone 2: Lost in New York"
+  ],
+  "Movies featuring Macaulay Culkin": [
+    "Home Alone",
+    "Home Alone 2: Lost in New York"
+  ],
+  "Movies directed by Michael Lembeck": [
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause"
+  ],
+  "Movies featuring Julie Andrews": [
+    "Mary Poppins",
+    "The Sound of Music"
+  ],
+  "Movies directed by Robert Wise": [
+    "The Sound of Music",
+    "West Side Story"
+  ],
+  "Movies directed by Norman Jewison": [
+    "Fiddler on the Roof",
+    "Jesus Christ Superstar"
+  ],
+  "Movies featuring Emma Stone": [
+    "La La Land",
+    "Birdman"
+  ],
+  "Movies directed by Tom Hooper": [
+    "Les Misérables",
+    "The King's Speech"
+  ],
+  "Movies directed by John Carpenter": [
+    "The Thing",
+    "Escape from New York"
+  ],
+  "Movies featuring Javier Bardem": [
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "No Country for Old Men"
+  ],
+  "Movies directed by Milos Forman": [
+    "One Flew Over the Cuckoo's Nest",
+    "Amadeus"
+  ],
+  "Movies featuring Dustin Hoffman": [
+    "Kramer vs. Kramer",
+    "Rain Man"
+  ],
+  "Movies directed by Clint Eastwood": [
+    "Unforgiven",
+    "Million Dollar Baby"
+  ],
+  "Movies featuring Clint Eastwood": [
+    "Unforgiven",
+    "Million Dollar Baby"
+  ],
+  "Movies featuring Michael Keaton": [
+    "Birdman",
+    "Spotlight"
+  ],
+  "Movies featuring Mahershala Ali": [
+    "Moonlight",
+    "Green Book"
+  ],
+  "Movies featuring Kate Winslet": [
+    "Titanic",
+    "Sense and Sensibility",
+    "The Holiday"
   ],
   "Star": [
     "Milky Way",
@@ -733,6 +2109,16 @@
     "The Godfather Part II",
     "The Godfather Part III"
   ],
+  "Movies featuring Robert De Niro": [
+    "The Godfather Part II",
+    "The Irishman",
+    "The Deer Hunter"
+  ],
+  "Movies featuring John Travolta": [
+    "Pulp Fiction",
+    "Grease",
+    "Hairspray"
+  ],
   "Cult Classics": [
     "The Matrix",
     "Akira",
@@ -742,11 +2128,6 @@
     "The Empire Strikes Back",
     "Return of the Jedi",
     "The Rise of Skywalker"
-  ],
-  "Movies featuring Ewan McGregor": [
-    "The Phantom Menace",
-    "Attack of the Clones",
-    "Revenge of the Sith"
   ],
   "Movies featuring Natalie Portman": [
     "The Phantom Menace",
@@ -768,44 +2149,99 @@
     "The Last Jedi",
     "The Rise of Skywalker"
   ],
+  "Movies featuring Verna Felton": [
+    "Dumbo",
+    "Cinderella",
+    "Sleeping Beauty"
+  ],
+  "Movies featuring Phil Harris": [
+    "The Jungle Book",
+    "The Aristocats",
+    "Robin Hood"
+  ],
+  "Movies featuring Eva Gabor": [
+    "The Aristocats",
+    "The Rescuers",
+    "The Rescuers Down Under"
+  ],
+  "Movies directed by Chris Buck": [
+    "Tarzan",
+    "Frozen",
+    "Wish"
+  ],
+  "Movies directed by Ridley Scott": [
+    "Blade Runner",
+    "Alien",
+    "Gladiator"
+  ],
   "Coming of Age Stories": [
     "The Catcher in the Rye",
     "Anne of Green Gables",
     "Little Women"
-  ],
-  "Biographical Films": [
-    "Serpico",
-    "Donnie Brasco",
-    "The Irishman"
   ],
   "Movies featuring Michael Madsen": [
     "Donnie Brasco",
     "Reservoir Dogs",
     "Kill Bill: Volume 2"
   ],
-  "Movies directed by Christopher Nolan": [
-    "Insomnia",
-    "Interstellar",
-    "Tenet"
-  ],
-  "Movies featuring Kurt Russell": [
-    "Death Proof",
-    "The Hateful Eight",
-    "Once Upon a Time in Hollywood"
-  ],
-  "Western Films": [
-    "Django Unchained",
-    "The Hateful Eight",
-    "Back to the Future Part III"
-  ],
-  "Movies featuring Christopher Lloyd": [
-    "Back to the Future",
-    "Back to the Future Part II",
-    "Back to the Future Part III"
+  "Movies featuring Joe Pesci": [
+    "The Irishman",
+    "Home Alone",
+    "Home Alone 2: Lost in New York"
   ],
   "Movies featuring Michael J. Fox": [
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III"
+  ],
+  "Movies featuring Arnold Schwarzenegger": [
+    "The Terminator",
+    "Terminator 2: Judgment Day",
+    "Jingle All the Way"
+  ],
+  "Movies featuring Russell Crowe": [
+    "Les Misérables",
+    "Gladiator",
+    "A Beautiful Mind"
+  ],
+  "Movies directed by Gore Verbinski": [
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: At World's End"
+  ],
+  "Movies featuring Keira Knightley": [
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: At World's End"
+  ],
+  "Movies featuring Orlando Bloom": [
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: At World's End"
+  ],
+  "Movies featuring Jack Nicholson": [
+    "One Flew Over the Cuckoo's Nest",
+    "Terms of Endearment",
+    "The Departed"
+  ],
+  "Sports Films": [
+    "Rocky",
+    "Chariots of Fire",
+    "Million Dollar Baby"
+  ],
+  "Movies directed by Peter Jackson": [
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Two Towers",
+    "The Lord of the Rings: The Return of the King"
+  ],
+  "Movies featuring Elijah Wood": [
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Two Towers",
+    "The Lord of the Rings: The Return of the King"
+  ],
+  "Movies featuring Sean Astin": [
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Two Towers",
+    "The Lord of the Rings: The Return of the King"
   ]
 }
