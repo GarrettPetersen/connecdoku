@@ -8,6 +8,12 @@
   "Movies featuring Kathy Bates": [
     "Titanic"
   ],
+  "White Star Line": [
+    "Titanic"
+  ],
+  "Cruise Ships": [
+    "Queen Mary"
+  ],
   "Enlightenment Figures": [
     "Newton"
   ],
@@ -19,6 +25,9 @@
   ],
   "Movies directed by Robert Schwentke": [
     "Red"
+  ],
+  "Things Georgian": [
+    "Georgia"
   ],
   "Movies directed by Orson Welles": [
     "Othello"
@@ -34,6 +43,15 @@
   ],
   "Movies featuring Tate Donovan": [
     "Hercules"
+  ],
+  "Things Jordanian": [
+    "Jordan"
+  ],
+  "Things New Zealand": [
+    "New Zealand"
+  ],
+  "Things South African": [
+    "South Africa"
   ],
   "Movies featuring Catherine Zeta-Jones": [
     "Chicago"
@@ -113,11 +131,272 @@
   "Events": [
     "CON"
   ],
+  "Things Greenlandic": [
+    "Greenland"
+  ],
   "Chemicals": [
     "Ammonia"
   ],
+  "Things Afghan": [
+    "Afghanistan"
+  ],
+  "Things Albanian": [
+    "Albania"
+  ],
+  "Things Algerian": [
+    "Algeria"
+  ],
+  "Things Antiguan": [
+    "Antigua and Barbuda"
+  ],
+  "Things Azerbaijani": [
+    "Azerbaijan"
+  ],
+  "Things Bahraini": [
+    "Bahrain"
+  ],
+  "Things Bangladeshi": [
+    "Bangladesh"
+  ],
+  "Things Barbadian": [
+    "Barbados"
+  ],
+  "Things Belarusian": [
+    "Belarus"
+  ],
+  "Things Belgian": [
+    "Belgium"
+  ],
+  "Things Bhutanese": [
+    "Bhutan"
+  ],
+  "Things Bolivian": [
+    "Bolivia"
+  ],
+  "Things Bosnian": [
+    "Bosnia and Herzegovina"
+  ],
+  "Things Bruneian": [
+    "Brunei"
+  ],
+  "Things Bulgarian": [
+    "Bulgaria"
+  ],
+  "Things Burundian": [
+    "Burundi"
+  ],
+  "Things Cameroonian": [
+    "Cameroon"
+  ],
+  "Things Central African": [
+    "Central African Republic"
+  ],
+  "Things Chadian": [
+    "Chad"
+  ],
+  "Things Costa Rican": [
+    "Costa Rica"
+  ],
+  "Things Croatian": [
+    "Croatia"
+  ],
+  "Things Cuban": [
+    "Cuba"
+  ],
+  "Things Salvadoran": [
+    "El Salvador"
+  ],
+  "Things Estonian": [
+    "Estonia"
+  ],
+  "Things Finnish": [
+    "Finland"
+  ],
+  "Things Gambian": [
+    "Gambia"
+  ],
+  "Things Ghanaian": [
+    "Ghana"
+  ],
+  "Things Grenadian": [
+    "Grenada"
+  ],
+  "Things Guatemalan": [
+    "Guatemala"
+  ],
+  "Things Guinea-Bissauan": [
+    "Guinea-Bissau"
+  ],
+  "Things Haitian": [
+    "Haiti"
+  ],
+  "Things Honduran": [
+    "Honduras"
+  ],
+  "Things Hungarian": [
+    "Hungary"
+  ],
+  "Things Icelandic": [
+    "Iceland"
+  ],
+  "Things Ivorian": [
+    "Ivory Coast"
+  ],
+  "Things Jamaican": [
+    "Jamaica"
+  ],
+  "Things Kazakh": [
+    "Kazakhstan"
+  ],
+  "Things Kuwaiti": [
+    "Kuwait"
+  ],
+  "Things Kyrgyz": [
+    "Kyrgyzstan"
+  ],
+  "Things Laotian": [
+    "Laos"
+  ],
+  "Things Latvian": [
+    "Latvia"
+  ],
+  "Things Lebanese": [
+    "Lebanon"
+  ],
+  "Things Liberian": [
+    "Liberia"
+  ],
+  "Things Lithuanian": [
+    "Lithuania"
+  ],
+  "Things Maldivian": [
+    "Maldives"
+  ],
+  "Things Malian": [
+    "Mali"
+  ],
+  "Things Mongolian": [
+    "Mongolia"
+  ],
+  "Things Montenegrin": [
+    "Montenegro"
+  ],
+  "Things Moroccan": [
+    "Morocco"
+  ],
+  "Things Namibian": [
+    "Namibia"
+  ],
+  "Things Nicaraguan": [
+    "Nicaragua"
+  ],
+  "Things Nigerien": [
+    "Niger"
+  ],
+  "Things Nigerian": [
+    "Nigeria"
+  ],
+  "Things North Korean": [
+    "North Korea"
+  ],
+  "Things Omani": [
+    "Oman"
+  ],
+  "Things Panamanian": [
+    "Panama"
+  ],
+  "Things Paraguayan": [
+    "Paraguay"
+  ],
+  "Things Qatari": [
+    "Qatar"
+  ],
+  "Things Romanian": [
+    "Romania"
+  ],
+  "Things Rwandan": [
+    "Rwanda"
+  ],
+  "Things Saint Kittsian": [
+    "Saint Kitts and Nevis"
+  ],
+  "Things Saint Lucian": [
+    "Saint Lucia"
+  ],
+  "Things Saint Vincentian": [
+    "Saint Vincent and the Grenadines"
+  ],
+  "Things Senegalese": [
+    "Senegal"
+  ],
+  "Things Serbian": [
+    "Serbia"
+  ],
+  "Things Sierra Leonean": [
+    "Sierra Leone"
+  ],
+  "Things Singaporean": [
+    "Singapore"
+  ],
+  "Things Slovak": [
+    "Slovakia"
+  ],
+  "Things Slovenian": [
+    "Slovenia"
+  ],
+  "Things South Korean": [
+    "South Korea"
+  ],
+  "Things Surinamese": [
+    "Suriname"
+  ],
+  "Things Syrian": [
+    "Syria"
+  ],
+  "Things Tajik": [
+    "Tajikistan"
+  ],
+  "Things Tongan": [
+    "Tonga"
+  ],
+  "Things Trinidadian": [
+    "Trinidad and Tobago"
+  ],
+  "Things Tunisian": [
+    "Tunisia"
+  ],
+  "Things Turkmen": [
+    "Turkmenistan"
+  ],
+  "Things Ugandan": [
+    "Uganda"
+  ],
+  "Things Emirati": [
+    "United Arab Emirates"
+  ],
+  "Things Uruguayan": [
+    "Uruguay"
+  ],
+  "Things Uzbek": [
+    "Uzbekistan"
+  ],
+  "Things Venezuelan": [
+    "Venezuela"
+  ],
   "Former Russian Colonies": [
     "Persia"
+  ],
+  "Things Vanuatuan": [
+    "New Hebrides"
+  ],
+  "Things East Timorese": [
+    "Portuguese Timor"
+  ],
+  "Things Abkhazian": [
+    "Abkhazia"
+  ],
+  "Things South Ossetian": [
+    "South Ossetia"
   ],
   "Movies featuring Ingrid Bergman": [
     "Casablanca"
@@ -1661,6 +1940,12 @@
   "Movies featuring Cillian Murphy": [
     "Oppenheimer"
   ],
+  "Things Marshall Islander": [
+    "Saipan"
+  ],
+  "Things Libyan": [
+    "Libya"
+  ],
   "Military Stories": [
     "Romance of the Three Kingdoms"
   ],
@@ -1691,33 +1976,43 @@
   "Flatbreads": [
     "Pizza"
   ],
-  "Things Peruvian": [
-    "Pisco"
-  ],
-  "Things Czech": [
-    "Pilsner"
-  ],
   "Things Scottish": [
     "Scotch"
   ],
   "Things Caribbean": [
     "Rum"
   ],
-  "Things Taiwanese": [
-    "Bubble Tea"
-  ],
-  "Things Turkish": [
-    "Ayran"
-  ],
-  "Things Dutch": [
-    "Speed Skating"
-  ],
-  "Things Swiss": [
-    "Bobsled"
+  "Luxury Ships": [
+    "Titanic",
+    "Queen Mary"
   ],
   "Maritime Stories": [
     "Titanic",
     "Moby Dick"
+  ],
+  "World War I": [
+    "Lusitania",
+    "Hood"
+  ],
+  "Battleships": [
+    "Bismarck",
+    "Hood"
+  ],
+  "Kriegsmarine": [
+    "Bismarck",
+    "Graf Zeppelin"
+  ],
+  "Aircraft Carriers": [
+    "Enterprise",
+    "Ark Royal"
+  ],
+  "Things Ukrainian": [
+    "Chernobyl",
+    "Ukraine"
+  ],
+  "Things Australian": [
+    "Sydney",
+    "Australia"
   ],
   "Golf Terms": [
     "Green",
@@ -1726,6 +2021,10 @@
   "Animals": [
     "Turkey",
     "Pinky"
+  ],
+  "Things Turkish": [
+    "Turkey",
+    "Ayran"
   ],
   "Cities in South America": [
     "Brasilia",
@@ -1743,6 +2042,18 @@
     "Hercules",
     "One Flew Over the Cuckoo's Nest"
   ],
+  "Things Iraqi": [
+    "Baghdad",
+    "Iraq"
+  ],
+  "Things Pakistani": [
+    "Karachi",
+    "Pakistan"
+  ],
+  "Things Saudi": [
+    "Mecca",
+    "Saudi Arabia"
+  ],
   "Organizations": [
     "NASA",
     "NATO"
@@ -1750,10 +2061,6 @@
   "Religious Titles": [
     "Cardinal",
     "Bishop"
-  ],
-  "Things Irish": [
-    "Whiskey",
-    "Stout"
   ],
   "Comedians": [
     "Joker",
@@ -1766,6 +2073,130 @@
   "Smells": [
     "Musk",
     "Rank"
+  ],
+  "Things Armenian": [
+    "Armenia",
+    "Artsakh"
+  ],
+  "Things Belizean": [
+    "Belize",
+    "British Honduras"
+  ],
+  "Things Beninese": [
+    "Benin",
+    "Dahomey"
+  ],
+  "Things Botswanan": [
+    "Botswana",
+    "Bechuanaland"
+  ],
+  "Things Burkina Fasoan": [
+    "Burkina Faso",
+    "Upper Volta"
+  ],
+  "Things Cambodian": [
+    "Cambodia",
+    "Kampuchea"
+  ],
+  "Things Chilean": [
+    "Chile",
+    "Robinson Crusoe"
+  ],
+  "Things Czech": [
+    "Czech Republic",
+    "Pilsner"
+  ],
+  "Things Danish": [
+    "Denmark",
+    "Bornholm"
+  ],
+  "Things Djiboutian": [
+    "Djibouti",
+    "French Somaliland"
+  ],
+  "Things Dominican": [
+    "Dominica",
+    "Dominican Republic"
+  ],
+  "Things Ecuadorian": [
+    "Ecuador",
+    "Galapagos"
+  ],
+  "Things Ethiopian": [
+    "Ethiopia",
+    "Abyssinia"
+  ],
+  "Things Guinean": [
+    "Guinea",
+    "Portuguese Guinea"
+  ],
+  "Things Iranian": [
+    "Iran",
+    "Persia"
+  ],
+  "Things Kenyan": [
+    "Kenya",
+    "British East Africa"
+  ],
+  "Things Malawian": [
+    "Malawi",
+    "Nyasaland"
+  ],
+  "Things Malaysian": [
+    "Malaysia",
+    "British Malaya"
+  ],
+  "Things Moldovan": [
+    "Moldova",
+    "Transnistria"
+  ],
+  "Things Mozambican": [
+    "Mozambique",
+    "Portuguese East Africa"
+  ],
+  "Things Burmese": [
+    "Myanmar",
+    "Burma"
+  ],
+  "Things Dutch": [
+    "Netherlands",
+    "Speed Skating"
+  ],
+  "Things Macedonian": [
+    "North Macedonia",
+    "Macedonia"
+  ],
+  "Things Peruvian": [
+    "Peru",
+    "Pisco"
+  ],
+  "Things Samoan": [
+    "Samoa",
+    "Western Samoa"
+  ],
+  "Things Sri Lankan": [
+    "Sri Lanka",
+    "Ceylon"
+  ],
+  "Things Swedish": [
+    "Sweden",
+    "Gotland"
+  ],
+  "Things Taiwanese": [
+    "Taiwan",
+    "Bubble Tea"
+  ],
+  "Things Togolese": [
+    "Togo",
+    "German West Africa"
+  ],
+  "Things Zambian": [
+    "Zambia",
+    "Northern Rhodesia"
+  ],
+  "Things Eritrean": [
+    "Italian East Africa",
+    "Eritrea"
   ],
   "Movies directed by Michael Curtiz": [
     "Casablanca",
@@ -2127,6 +2558,10 @@
     "Moonlight",
     "Green Book"
   ],
+  "Things Faroese": [
+    "Faroe Islands",
+    "Faroe"
+  ],
   "WWII Leaders": [
     "Winston Churchill",
     "Franklin D. Roosevelt"
@@ -2139,14 +2574,20 @@
     "Smarties",
     "Coffee Crisp"
   ],
-  "Things Norwegian": [
-    "Biathlon",
-    "Cross Country Skiing"
-  ],
   "Movies featuring Kate Winslet": [
     "Titanic",
     "Sense and Sensibility",
     "The Holiday"
+  ],
+  "Cunard Line": [
+    "Lusitania",
+    "Queen Mary",
+    "Mauretania"
+  ],
+  "Things Nepalese": [
+    "Everest",
+    "Annapurna",
+    "Nepal"
   ],
   "Nobel Prize Winners": [
     "Einstein",
@@ -2167,6 +2608,11 @@
     "Crow",
     "Ant",
     "Hare"
+  ],
+  "Things Swiss": [
+    "Matterhorn",
+    "Switzerland",
+    "Bobsled"
   ],
   "Norse Mythology": [
     "Loki",
@@ -2193,10 +2639,20 @@
     "Saint Patrick",
     "Joan of Arc"
   ],
+  "Things Congolese": [
+    "Congo",
+    "Democratic Republic of the Congo",
+    "Belgian Congo"
+  ],
   "Epic Poems": [
     "Inferno",
     "The Odyssey",
     "The Iliad"
+  ],
+  "Things Israeli": [
+    "Temple Mount",
+    "Jerusalem",
+    "Israel"
   ],
   "Dances": [
     "Foxtrot",
@@ -2208,15 +2664,40 @@
     "Sapphire",
     "Ruby"
   ],
-  "Things Austrian": [
-    "Mozart",
-    "Skiing",
-    "Sledding"
-  ],
   "Coffee": [
     "Java",
     "Coffee",
     "Starbuck"
+  ],
+  "Things Guyanese": [
+    "Guyana",
+    "Dutch Guiana",
+    "British Guiana"
+  ],
+  "Things Somali": [
+    "Somalia",
+    "British Somaliland",
+    "Italian Somaliland"
+  ],
+  "Things Sudanese": [
+    "South Sudan",
+    "Anglo-Egyptian Sudan",
+    "Sudan"
+  ],
+  "Things Tanzanian": [
+    "Tanzania",
+    "Tanganyika",
+    "Zanzibar"
+  ],
+  "Things Yemeni": [
+    "Yemen",
+    "South Yemen",
+    "North Yemen"
+  ],
+  "Things Zimbabwean": [
+    "Zimbabwe",
+    "Rhodesia",
+    "Southern Rhodesia"
   ],
   "Movies featuring Humphrey Bogart": [
     "Casablanca",
@@ -2357,6 +2838,11 @@
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Two Towers",
     "The Lord of the Rings: The Return of the King"
+  ],
+  "Things Hawaiian": [
+    "Hawaii",
+    "Oahu",
+    "Kauai"
   ],
   "Ancient Figures": [
     "Socrates",

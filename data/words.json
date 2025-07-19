@@ -11,10 +11,12 @@
   ],
   "Titanic": [
     "Best Picture Winners",
+    "Civilian Ships",
     "Disaster Movies",
     "Disasters",
     "Drama Stories",
     "Ends with NIC",
+    "Luxury Ships",
     "Maritime Stories",
     "Movies",
     "Movies directed by James Cameron",
@@ -22,27 +24,36 @@
     "Movies featuring Kate Winslet",
     "Movies featuring Kathy Bates",
     "Movies featuring Leonardo DiCaprio",
+    "Oceanliners",
     "Oscar Winners",
     "Period Stories",
     "Romance Stories",
     "Ships",
     "Shipwrecks",
     "Starts with TIT",
-    "Synonyms for Big"
+    "Synonyms for Big",
+    "White Star Line"
   ],
   "Lusitania": [
+    "Civilian Ships",
+    "Cunard Line",
     "Disasters",
     "Ends with NIA",
+    "Oceanliners",
     "Ships",
     "Shipwrecks",
-    "Starts with LUS"
+    "Starts with LUS",
+    "World War I"
   ],
   "Bismarck": [
+    "Battleships",
     "Cities",
     "Cities in North America",
     "Cities in USA",
     "Ends with RCK",
+    "Kriegsmarine",
     "Locations in North America",
+    "Military Ships",
     "National Leaders",
     "People",
     "Place Names",
@@ -50,28 +61,43 @@
     "Ships",
     "Shipwrecks",
     "Starts with BIS",
-    "State Capitals"
+    "State Capitals",
+    "Things German",
+    "Warships",
+    "World War II"
   ],
   "Andrea Doria": [
+    "Civilian Ships",
     "Ends with RIA",
+    "Oceanliners",
     "Ships",
     "Shipwrecks",
-    "Starts with AND"
+    "Starts with AND",
+    "Things Italian"
   ],
   "Queen Mary": [
     "British Monarchs",
     "British Royals",
+    "Civilian Ships",
+    "Cruise Ships",
+    "Cunard Line",
     "Ends with ARY",
+    "Luxury Ships",
     "Monarchs",
+    "Oceanliners",
     "People",
     "Queens",
     "Real People",
     "Ships",
     "Shipwrecks",
-    "Starts with QUE"
+    "Starts with QUE",
+    "Things British",
+    "World War II"
   ],
   "Santa Maria": [
+    "Age of Sail",
     "Ends with RIA",
+    "Exploration Ships",
     "Female Names",
     "Islands",
     "Locations in Europe",
@@ -80,49 +106,76 @@
     "Saints",
     "Ships",
     "Spanish Ships",
-    "Starts with SAN"
+    "Starts with SAN",
+    "Things Spanish"
   ],
   "Mayflower": [
+    "Age of Sail",
     "Ends with WER",
+    "Exploration Ships",
     "Flowers",
     "Plants",
     "Ships",
-    "Starts with MAY"
+    "Starts with MAY",
+    "Things British"
   ],
   "Enterprise": [
+    "Aircraft Carriers",
+    "Cold War",
     "Ends with ISE",
     "Fictional Spaceships",
+    "Military Ships",
     "Ships",
     "Star Trek",
-    "Starts with ENT"
+    "Starts with ENT",
+    "Things American",
+    "US Navy",
+    "Warships",
+    "World War II"
   ],
   "Ark Royal": [
+    "Aircraft Carriers",
     "Ends with YAL",
+    "Military Ships",
+    "Royal Navy",
     "Ships",
-    "Starts with ARK"
+    "Starts with ARK",
+    "Things British",
+    "Warships",
+    "World War II"
   ],
   "Victory": [
+    "Age of Sail",
     "Ends with ORY",
+    "Military Ships",
+    "Royal Navy",
     "Ships",
     "Shipwrecks",
-    "Starts with VIC"
+    "Starts with VIC",
+    "Things British",
+    "Warships"
   ],
   "Edmund Fitzgerald": [
     "Ends with ALD",
     "Ships",
     "Shipwrecks",
-    "Starts with EDM"
+    "Starts with EDM",
+    "Things American",
+    "Things Canadian"
   ],
   "Mary Rose": [
+    "Age of Sail",
     "British Monarchs",
     "British Royals",
     "Ends with OSE",
     "People",
     "Queens",
     "Real People",
+    "Royal Navy",
     "Ships",
     "Shipwrecks",
-    "Starts with MAR"
+    "Starts with MAR",
+    "Things British"
   ],
   "Hindenburg": [
     "Airships",
@@ -155,6 +208,7 @@
     "Movies",
     "Place Names",
     "Starts with KRA",
+    "Things Indonesian",
     "Volcanoes"
   ],
   "Tambora": [
@@ -164,6 +218,7 @@
     "Mountains",
     "Place Names",
     "Starts with TAM",
+    "Things Indonesian",
     "Volcanoes"
   ],
   "Chernobyl": [
@@ -173,7 +228,8 @@
     "Ends with BYL",
     "Locations in Europe",
     "Place Names",
-    "Starts with CHE"
+    "Starts with CHE",
+    "Things Ukrainian"
   ],
   "Fukushima": [
     "Cities",
@@ -204,10 +260,12 @@
     "Airships",
     "Ends with LIN",
     "Inventors",
+    "Kriegsmarine",
     "People",
     "Real People",
     "Ships",
-    "Starts with GRA"
+    "Starts with GRA",
+    "Things German"
   ],
   "Akron": [
     "Airships",
@@ -241,18 +299,22 @@
     "Place Names",
     "Roman Cities",
     "Roman Empire",
-    "Starts with ROM"
+    "Starts with ROM",
+    "Things Italian"
   ],
   "Los Angeles": [
     "Airships",
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Cold War",
     "Ends with LES",
     "Locations in North America",
     "Place Names",
     "Ships",
-    "Starts with LOS"
+    "Starts with LOS",
+    "Things American",
+    "US Navy"
   ],
   "Vesuvius": [
     "Ends with IUS",
@@ -278,6 +340,7 @@
     "Mountains",
     "Place Names",
     "Starts with PIN",
+    "Things Indonesian",
     "Volcanoes"
   ],
   "Eyjafjallajokull": [
@@ -291,6 +354,7 @@
     "Mountains",
     "Place Names",
     "Starts with ETN",
+    "Things Italian",
     "Volcanoes"
   ],
   "Thera": [
@@ -426,7 +490,8 @@
     "Ends with ONA",
     "Locations in Europe",
     "Place Names",
-    "Starts with VER"
+    "Starts with VER",
+    "Things Italian"
   ],
   "Bologna": [
     "Cities",
@@ -499,7 +564,8 @@
     "Mountains",
     "Movies",
     "Place Names",
-    "Starts with EVE"
+    "Starts with EVE",
+    "Things Nepalese"
   ],
   "Apollo 13": [
     "Ends with  13",
@@ -555,6 +621,7 @@
     "Real People",
     "Starts with LIN",
     "State Capitals",
+    "Things American",
     "US Presidents"
   ],
   "Washington": [
@@ -570,6 +637,7 @@
     "Real People",
     "Starts with WAS",
     "State Capitals",
+    "Things American",
     "US Presidents",
     "US States"
   ],
@@ -589,7 +657,8 @@
     "Queens",
     "Real People",
     "Starts with VIC",
-    "Things British"
+    "Things British",
+    "Things Canadian"
   ],
   "Elizabeth": [
     "British Monarchs",
@@ -736,7 +805,8 @@
     "Ends with LIN",
     "Locations in Europe",
     "Place Names",
-    "Starts with DUB"
+    "Starts with DUB",
+    "Things Irish"
   ],
   "Madrid": [
     "Ends with RID",
@@ -755,7 +825,8 @@
   "Sydney": [
     "Ends with NEY",
     "Place Names",
-    "Starts with SYD"
+    "Starts with SYD",
+    "Things Australian"
   ],
   "Toronto": [
     "Cities",
@@ -763,7 +834,8 @@
     "Ends with NTO",
     "Locations in North America",
     "Place Names",
-    "Starts with TOR"
+    "Starts with TOR",
+    "Things Canadian"
   ],
   "Seattle": [
     "Cities",
@@ -772,7 +844,8 @@
     "Ends with TLE",
     "Locations in North America",
     "Place Names",
-    "Starts with SEA"
+    "Starts with SEA",
+    "Things American"
   ],
   "Boston": [
     "Cities",
@@ -782,7 +855,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with BOS",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Hydrogen": [
     "Elements",
@@ -1147,7 +1221,8 @@
     "Fruits",
     "Place Names",
     "Plant-Based Colors",
-    "Starts with ORA"
+    "Starts with ORA",
+    "Things American"
   ],
   "Yellow": [
     "Colors",
@@ -1434,6 +1509,7 @@
     "NATO Members",
     "Place Names",
     "Starts with CAN",
+    "Things Canadian",
     "WWII Allied Powers"
   ],
   "Germany": [
@@ -1449,6 +1525,7 @@
     "Place Names",
     "Republics",
     "Starts with GER",
+    "Things German",
     "WWII Axis Powers"
   ],
   "France": [
@@ -1464,6 +1541,7 @@
     "Place Names",
     "Republics",
     "Starts with FRA",
+    "Things French",
     "UN Security Council Permanent Members",
     "WWII Allied Powers"
   ],
@@ -1479,6 +1557,7 @@
     "Place Names",
     "Republics",
     "Starts with ITA",
+    "Things Italian",
     "WWII Axis Powers"
   ],
   "Spain": [
@@ -1491,7 +1570,8 @@
     "NATO Countries",
     "NATO Members",
     "Place Names",
-    "Starts with SPA"
+    "Starts with SPA",
+    "Things Spanish"
   ],
   "Japan": [
     "Constitutional Monarchies",
@@ -1503,6 +1583,7 @@
     "Modern Countries",
     "Place Names",
     "Starts with JAP",
+    "Things Japanese",
     "WWII Axis Powers"
   ],
   "China": [
@@ -1519,6 +1600,7 @@
     "Place Names",
     "Republics",
     "Starts with CHI",
+    "Things Chinese",
     "UN Security Council Permanent Members",
     "WWII Allied Powers"
   ],
@@ -1537,6 +1619,7 @@
     "Place Names",
     "Republics",
     "Starts with BRA",
+    "Things Brazilian",
     "WWII Allied Powers"
   ],
   "India": [
@@ -1556,6 +1639,7 @@
     "Place Names",
     "Republics",
     "Starts with IND",
+    "Things Indian",
     "WWII Allied Powers"
   ],
   "Mexico": [
@@ -1570,6 +1654,7 @@
     "Most Populous Countries (Top 10)",
     "Place Names",
     "Starts with MEX",
+    "Things Mexican",
     "WWII Allied Powers"
   ],
   "Greece": [
@@ -1582,6 +1667,7 @@
     "NATO Members",
     "Place Names",
     "Starts with GRE",
+    "Things Greek",
     "WWII Allied Powers"
   ],
   "Turkey": [
@@ -1598,6 +1684,7 @@
     "Place Names",
     "Republics",
     "Starts with TUR",
+    "Things Turkish",
     "WWII Allied Powers"
   ],
   "Ottawa": [
@@ -1632,7 +1719,8 @@
     "Locations in South America",
     "National Capitals",
     "Place Names",
-    "Starts with BRA"
+    "Starts with BRA",
+    "Things Brazilian"
   ],
   "Delhi": [
     "Cities",
@@ -1654,7 +1742,8 @@
     "Locations in Europe",
     "Mountains",
     "Place Names",
-    "Starts with ELB"
+    "Starts with ELB",
+    "Things Russian"
   ],
   "Kilimanjaro": [
     "Ends with ARO",
@@ -1668,21 +1757,24 @@
     "Locations in South America",
     "Mountains",
     "Place Names",
-    "Starts with ACO"
+    "Starts with ACO",
+    "Things Argentine"
   ],
   "Matterhorn": [
     "Ends with ORN",
     "Locations in Europe",
     "Mountains",
     "Place Names",
-    "Starts with MAT"
+    "Starts with MAT",
+    "Things Swiss"
   ],
   "Mont Blanc": [
     "Ends with ANC",
     "Locations in Europe",
     "Mountains",
     "Place Names",
-    "Starts with MON"
+    "Starts with MON",
+    "Things French"
   ],
   "K2": [
     "Locations in Asia",
@@ -1694,7 +1786,8 @@
     "Locations in Asia",
     "Mountains",
     "Place Names",
-    "Starts with ANN"
+    "Starts with ANN",
+    "Things Nepalese"
   ],
   "Nile": [
     "Ends with ILE",
@@ -1709,7 +1802,8 @@
     "Rainforests",
     "Rivers",
     "Starts with AMA",
-    "Tech Companies"
+    "Tech Companies",
+    "Things Brazilian"
   ],
   "Yangtze": [
     "Ends with TZE",
@@ -1872,6 +1966,7 @@
     "Real People",
     "Starts with JAC",
     "State Capitals",
+    "Things American",
     "US Presidents"
   ],
   "Wilson": [
@@ -1899,12 +1994,14 @@
     "Place Names",
     "Republics",
     "Starts with GEO",
+    "Things Georgian",
     "US States"
   ],
   "Florida": [
     "Ends with IDA",
     "Place Names",
     "Starts with FLO",
+    "Things American",
     "US States"
   ],
   "Texas": [
@@ -1912,12 +2009,14 @@
     "Ends with XAS",
     "Place Names",
     "Starts with TEX",
+    "Things American",
     "US States"
   ],
   "California": [
     "Ends with NIA",
     "Place Names",
     "Starts with CAL",
+    "Things American",
     "US States"
   ],
   "New York": [
@@ -1955,7 +2054,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with ATL",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Austin": [
     "Cities",
@@ -1965,7 +2065,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with AUS",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Denver": [
     "Cities",
@@ -1975,7 +2076,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with DEN",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Olympia": [
     "Cities",
@@ -1986,7 +2088,8 @@
     "Place Names",
     "Starts with OLY",
     "State Capitals",
-    "State Capitals on Rivers"
+    "State Capitals on Rivers",
+    "Things American"
   ],
   "Phoenix": [
     "Birds",
@@ -2003,6 +2106,7 @@
     "Starts with PHO",
     "State Capitals",
     "Superheroes",
+    "Things American",
     "Video Games",
     "X-Men Characters"
   ],
@@ -2015,7 +2119,8 @@
     "Place Names",
     "Starts with SAC",
     "State Capitals",
-    "State Capitals on Rivers"
+    "State Capitals on Rivers",
+    "Things American"
   ],
   "Lansing": [
     "Cities",
@@ -2026,7 +2131,8 @@
     "Place Names",
     "Starts with LAN",
     "State Capitals",
-    "State Capitals on Rivers"
+    "State Capitals on Rivers",
+    "Things American"
   ],
   "Albany": [
     "Cities",
@@ -3058,6 +3164,7 @@
     "Modern Countries",
     "Place Names",
     "Starts with AUS",
+    "Things Australian",
     "WWII Allied Powers"
   ],
   "United Kingdom": [
@@ -3074,6 +3181,7 @@
     "NATO Members",
     "Place Names",
     "Starts with UNI",
+    "Things British",
     "UN Security Council Permanent Members",
     "WWII Allied Powers"
   ],
@@ -3405,39 +3513,51 @@
     "Starts with PIN"
   ],
   "Pinta": [
+    "Age of Sail",
     "Ends with NTA",
+    "Exploration Ships",
     "Ships",
     "Spanish Ships",
     "Spanish Words",
-    "Starts with PIN"
+    "Starts with PIN",
+    "Things Spanish"
   ],
   "Nina": [
+    "Age of Sail",
     "Ends with INA",
+    "Exploration Ships",
     "Female Names",
     "Fictional People",
     "People",
     "Ships",
     "Spanish Ships",
-    "Starts with NIN"
+    "Starts with NIN",
+    "Things Spanish"
   ],
   "San Juan": [
     "Cities",
     "Cities in North America",
+    "Cold War",
     "Ends with UAN",
     "Locations in North America",
     "Place Names",
     "Saints",
     "Ships",
     "Spanish Ships",
-    "Starts with SAN"
+    "Starts with SAN",
+    "Things American",
+    "US Navy"
   ],
   "San Pedro": [
+    "Cold War",
     "Ends with DRO",
     "Place Names",
     "Saints",
     "Ships",
     "Spanish Ships",
-    "Starts with SAN"
+    "Starts with SAN",
+    "Things American",
+    "US Navy"
   ],
   "Concordia": [
     "Board Games",
@@ -3706,23 +3826,29 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Cold War",
     "Ends with OSE",
     "Locations in North America",
     "Place Names",
     "Ships",
     "Spanish Ships",
-    "Starts with SAN"
+    "Starts with SAN",
+    "Things American",
+    "US Navy"
   ],
   "San Diego": [
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Cold War",
     "Ends with EGO",
     "Locations in North America",
     "Place Names",
     "Ships",
     "Spanish Ships",
-    "Starts with SAN"
+    "Starts with SAN",
+    "Things American",
+    "US Navy"
   ],
   "Iris": [
     "Colors",
@@ -3875,7 +4001,8 @@
     "People",
     "Place Names",
     "Real People",
-    "Starts with JOR"
+    "Starts with JOR",
+    "Things Jordanian"
   ],
   "Baghdad": [
     "Ancient Cities",
@@ -3885,7 +4012,8 @@
     "Historic Trade Cities",
     "Locations in Asia",
     "Place Names",
-    "Starts with BAG"
+    "Starts with BAG",
+    "Things Iraqi"
   ],
   "Samarkand": [
     "Ancient Cities",
@@ -3895,7 +4023,8 @@
     "Historic Trade Cities",
     "Locations in Asia",
     "Place Names",
-    "Starts with SAM"
+    "Starts with SAM",
+    "Things Russian"
   ],
   "Athena": [
     "Ends with ENA",
@@ -3919,12 +4048,14 @@
     "Ends with ADA",
     "Place Names",
     "Starts with NEV",
+    "Things American",
     "US States"
   ],
   "Alaska": [
     "Ends with SKA",
     "Place Names",
     "Starts with ALA",
+    "Things American",
     "US States"
   ],
   "Carson City": [
@@ -3936,6 +4067,7 @@
     "Place Names",
     "Starts with CAR",
     "State Capitals",
+    "Things American",
     "US States"
   ],
   "Juneau": [
@@ -3947,6 +4079,7 @@
     "Place Names",
     "Starts with JUN",
     "State Capitals",
+    "Things American",
     "US States"
   ],
   "Nickel": [
@@ -4065,6 +4198,7 @@
     "Modern Countries",
     "Place Names",
     "Starts with NEW",
+    "Things New Zealand",
     "WWII Allied Powers"
   ],
   "South Africa": [
@@ -4082,6 +4216,7 @@
     "Place Names",
     "Republics",
     "Starts with SOU",
+    "Things South African",
     "WWII Allied Powers"
   ],
   "Seoul": [
@@ -4091,7 +4226,8 @@
     "Locations in Asia",
     "National Capitals",
     "Place Names",
-    "Starts with SEO"
+    "Starts with SEO",
+    "Things Korean"
   ],
   "Karachi": [
     "Cities",
@@ -4099,7 +4235,8 @@
     "Ends with CHI",
     "Locations in Asia",
     "Place Names",
-    "Starts with KAR"
+    "Starts with KAR",
+    "Things Pakistani"
   ],
   "Choir": [
     "Ends with OIR",
@@ -4268,6 +4405,7 @@
     "Place Names",
     "Plants",
     "Starts with BIR",
+    "Things Canadian",
     "Trees"
   ],
   "Cedar": [
@@ -4275,6 +4413,7 @@
     "Place Names",
     "Plants",
     "Starts with CED",
+    "Things Canadian",
     "Trees"
   ],
   "Tuna": [
@@ -4476,7 +4615,8 @@
     "Musical Films",
     "Oscar Winners",
     "Place Names",
-    "Starts with CHI"
+    "Starts with CHI",
+    "Things American"
   ],
   "Miami": [
     "Cities",
@@ -4485,7 +4625,8 @@
     "Ends with AMI",
     "Locations in North America",
     "Place Names",
-    "Starts with MIA"
+    "Starts with MIA",
+    "Things American"
   ],
   "Dallas": [
     "Cities",
@@ -4494,7 +4635,8 @@
     "Ends with LAS",
     "Locations in North America",
     "Place Names",
-    "Starts with DAL"
+    "Starts with DAL",
+    "Things American"
   ],
   "Gucci": [
     "Companies",
@@ -4546,7 +4688,8 @@
     "Place Names",
     "Rainforests",
     "Republics",
-    "Starts with CON"
+    "Starts with CON",
+    "Things Congolese"
   ],
   "Daintree": [
     "Ends with REE",
@@ -4632,7 +4775,8 @@
     "Locations in North America",
     "Place Names",
     "Rivers",
-    "Starts with HUD"
+    "Starts with HUD",
+    "Things Canadian"
   ],
   "Helios": [
     "Astronomical Objects",
@@ -4656,7 +4800,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with MON",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Little Rock": [
     "Cities",
@@ -4666,7 +4811,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with LIT",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Hartford": [
     "Cities",
@@ -4676,7 +4822,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with HAR",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Dover": [
     "Cities",
@@ -4686,7 +4833,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with DOV",
-    "State Capitals"
+    "State Capitals",
+    "Things British"
   ],
   "Tallahassee": [
     "Cities",
@@ -4696,7 +4844,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with TAL",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Honolulu": [
     "Cities",
@@ -4706,7 +4855,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with HON",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Boise": [
     "Cities",
@@ -4716,7 +4866,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with BOI",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Springfield": [
     "Cities",
@@ -4726,7 +4877,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with SPR",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Indianapolis": [
     "Cities",
@@ -4736,7 +4888,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with IND",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Des Moines": [
     "Cities",
@@ -4746,7 +4899,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with DES",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Topeka": [
     "Cities",
@@ -4756,7 +4910,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with TOP",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Frankfort": [
     "Cities",
@@ -4776,7 +4931,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with BAT",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Augusta": [
     "Cities",
@@ -4786,7 +4942,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with AUG",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Annapolis": [
     "Cities",
@@ -4796,7 +4953,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with ANN",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Saint Paul": [
     "Cities",
@@ -4806,7 +4964,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with SAI",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Jefferson City": [
     "Cities",
@@ -4816,7 +4975,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with JEF",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Helena": [
     "Cities",
@@ -4826,7 +4986,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with HEL",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Concord": [
     "Cities",
@@ -4836,7 +4997,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with CON",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Trenton": [
     "Cities",
@@ -4846,7 +5008,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with TRE",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Santa Fe": [
     "Cities",
@@ -4856,7 +5019,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with SAN",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Raleigh": [
     "Cities",
@@ -4866,7 +5030,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with RAL",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Columbus": [
     "Cities",
@@ -4876,7 +5041,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with COL",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Oklahoma City": [
     "Cities",
@@ -4886,7 +5052,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with OKL",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Salem": [
     "Books",
@@ -4897,7 +5064,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with SAL",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Harrisburg": [
     "Cities",
@@ -4907,7 +5075,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with HAR",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Providence": [
     "Cities",
@@ -4917,7 +5086,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with PRO",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Columbia": [
     "Cities",
@@ -4937,7 +5107,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with PIE",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Nashville": [
     "Cities",
@@ -4947,7 +5118,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with NAS",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Salt Lake City": [
     "Cities",
@@ -4957,7 +5129,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with SAL",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Montpelier": [
     "Cities",
@@ -4967,7 +5140,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with MON",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Richmond": [
     "Cities",
@@ -4977,7 +5151,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with RIC",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Charleston": [
     "Cities",
@@ -4987,7 +5162,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with CHA",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Cheyenne": [
     "Cities",
@@ -4997,7 +5173,8 @@
     "Locations in North America",
     "Place Names",
     "Starts with CHE",
-    "State Capitals"
+    "State Capitals",
+    "Things American"
   ],
   "Halo": [
     "Astronomical Objects",
@@ -5189,7 +5366,8 @@
     "Ends with ANA",
     "Locations in North America",
     "Place Names",
-    "Starts with TIJ"
+    "Starts with TIJ",
+    "Things Mexican"
   ],
   "Cancun": [
     "Cities",
@@ -5197,7 +5375,8 @@
     "Ends with CUN",
     "Locations in North America",
     "Place Names",
-    "Starts with CAN"
+    "Starts with CAN",
+    "Things Mexican"
   ],
   "Mecca": [
     "Ancient Cities",
@@ -5205,13 +5384,15 @@
     "Ends with CCA",
     "Place Names",
     "Religious Sites",
-    "Starts with MEC"
+    "Starts with MEC",
+    "Things Saudi"
   ],
   "Temple Mount": [
     "Ends with UNT",
     "Place Names",
     "Religious Sites",
-    "Starts with TEM"
+    "Starts with TEM",
+    "Things Israeli"
   ],
   "Voyager": [
     "Astronomical Objects",
@@ -5231,7 +5412,8 @@
     "Deserts",
     "Ends with OBI",
     "Place Names",
-    "Starts with GOB"
+    "Starts with GOB",
+    "Things Chinese"
   ],
   "Kalahari": [
     "Deserts",
@@ -5678,7 +5860,8 @@
     "Ends with BEC",
     "NATO Phonetic Alphabet",
     "Place Names",
-    "Starts with QUE"
+    "Starts with QUE",
+    "Things Canadian"
   ],
   "Romeo": [
     "Ends with MEO",
@@ -7008,7 +7191,8 @@
     "Islands",
     "Place Names",
     "Programming Languages",
-    "Starts with JAV"
+    "Starts with JAV",
+    "Things Indonesian"
   ],
   "Coffee": [
     "Black Things",
@@ -7328,12 +7512,19 @@
     "Starts with STA"
   ],
   "Hood": [
+    "Battleships",
     "Cars",
     "Clothing",
     "Ends with OOD",
+    "Military Ships",
+    "Royal Navy",
     "Ships",
     "Shipwrecks",
-    "Starts with HOO"
+    "Starts with HOO",
+    "Things British",
+    "Warships",
+    "World War I",
+    "World War II"
   ],
   "Arm": [
     "Body Parts",
@@ -7398,7 +7589,8 @@
     "Place Names",
     "Religious Sites",
     "Roman Cities",
-    "Starts with JER"
+    "Starts with JER",
+    "Things Israeli"
   ],
   "Battery": [
     "Crime",
@@ -7513,6 +7705,7 @@
     "Place Names",
     "Roman Empire",
     "Starts with HER",
+    "Things Italian",
     "Volcanoes"
   ],
   "Red Hood": [
@@ -7570,7 +7763,8 @@
     "Ends with AND",
     "Islands",
     "Place Names",
-    "Starts with GRE"
+    "Starts with GRE",
+    "Things Greenlandic"
   ],
   "Pinto": [
     "Ends with NTO",
@@ -7643,7 +7837,10 @@
     "Starts with AMM"
   ],
   "Mauretania": [
+    "Civilian Ships",
+    "Cunard Line",
     "Ends with NIA",
+    "Oceanliners",
     "Roman Empire",
     "Ships",
     "Starts with MAU"
@@ -7657,7 +7854,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with AFG"
+    "Starts with AFG",
+    "Things Afghan"
   ],
   "Albania": [
     "Countries",
@@ -7671,6 +7869,7 @@
     "Place Names",
     "Republics",
     "Starts with ALB",
+    "Things Albanian",
     "WWII Allied Powers"
   ],
   "Algeria": [
@@ -7685,7 +7884,8 @@
     "OPEC Members",
     "Place Names",
     "Republics",
-    "Starts with ALG"
+    "Starts with ALG",
+    "Things Algerian"
   ],
   "Andorra": [
     "Countries",
@@ -7724,7 +7924,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with ANT"
+    "Starts with ANT",
+    "Things Antiguan"
   ],
   "Argentina": [
     "Countries",
@@ -7738,6 +7939,7 @@
     "Place Names",
     "Republics",
     "Starts with ARG",
+    "Things Argentine",
     "WWII Allied Powers"
   ],
   "Armenia": [
@@ -7751,7 +7953,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with ARM"
+    "Starts with ARM",
+    "Things Armenian"
   ],
   "Austria": [
     "Countries",
@@ -7763,7 +7966,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with AUS"
+    "Starts with AUS",
+    "Things Austrian"
   ],
   "Azerbaijan": [
     "Countries",
@@ -7776,7 +7980,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with AZE"
+    "Starts with AZE",
+    "Things Azerbaijani"
   ],
   "Bahamas": [
     "Archipelagos",
@@ -7799,7 +8004,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with BAH"
+    "Starts with BAH",
+    "Things Bahraini"
   ],
   "Bangladesh": [
     "Countries",
@@ -7811,7 +8017,8 @@
     "Most Populous Countries (Top 10)",
     "Place Names",
     "Republics",
-    "Starts with BAN"
+    "Starts with BAN",
+    "Things Bangladeshi"
   ],
   "Barbados": [
     "Countries",
@@ -7824,7 +8031,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with BAR"
+    "Starts with BAR",
+    "Things Barbadian"
   ],
   "Belarus": [
     "Countries",
@@ -7837,7 +8045,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with BEL"
+    "Starts with BEL",
+    "Things Belarusian"
   ],
   "Belgium": [
     "Constitutional Monarchies",
@@ -7851,6 +8060,7 @@
     "NATO Members",
     "Place Names",
     "Starts with BEL",
+    "Things Belgian",
     "WWII Allied Powers"
   ],
   "Belize": [
@@ -7861,7 +8071,8 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
-    "Starts with BEL"
+    "Starts with BEL",
+    "Things Belizean"
   ],
   "Benin": [
     "Countries",
@@ -7873,7 +8084,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with BEN"
+    "Starts with BEN",
+    "Things Beninese"
   ],
   "Bhutan": [
     "Countries",
@@ -7883,7 +8095,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with BHU"
+    "Starts with BHU",
+    "Things Bhutanese"
   ],
   "Bolivia": [
     "Countries",
@@ -7896,6 +8109,7 @@
     "Place Names",
     "Republics",
     "Starts with BOL",
+    "Things Bolivian",
     "WWII Allied Powers"
   ],
   "Bosnia and Herzegovina": [
@@ -7905,7 +8119,8 @@
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
-    "Starts with BOS"
+    "Starts with BOS",
+    "Things Bosnian"
   ],
   "Botswana": [
     "Countries",
@@ -7918,14 +8133,16 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with BOT"
+    "Starts with BOT",
+    "Things Botswanan"
   ],
   "Brunei": [
     "Countries",
     "Ends with NEI",
     "Modern Countries",
     "Place Names",
-    "Starts with BRU"
+    "Starts with BRU",
+    "Things Bruneian"
   ],
   "Bulgaria": [
     "Countries",
@@ -7938,6 +8155,7 @@
     "Place Names",
     "Republics",
     "Starts with BUL",
+    "Things Bulgarian",
     "WWII Axis Powers"
   ],
   "Burkina Faso": [
@@ -7951,7 +8169,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with BUR"
+    "Starts with BUR",
+    "Things Burkina Fasoan"
   ],
   "Burundi": [
     "Countries",
@@ -7965,7 +8184,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with BUR"
+    "Starts with BUR",
+    "Things Burundian"
   ],
   "Cabo Verde": [
     "Countries",
@@ -7986,7 +8206,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with CAM"
+    "Starts with CAM",
+    "Things Cambodian"
   ],
   "Cameroon": [
     "Countries",
@@ -8000,7 +8221,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with CAM"
+    "Starts with CAM",
+    "Things Cameroonian"
   ],
   "Central African Republic": [
     "Countries",
@@ -8013,7 +8235,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with CEN"
+    "Starts with CEN",
+    "Things Central African"
   ],
   "Chad": [
     "Countries",
@@ -8029,7 +8252,8 @@
     "People",
     "Place Names",
     "Republics",
-    "Starts with CHA"
+    "Starts with CHA",
+    "Things Chadian"
   ],
   "Chile": [
     "Countries",
@@ -8041,6 +8265,7 @@
     "Place Names",
     "Republics",
     "Starts with CHI",
+    "Things Chilean",
     "WWII Allied Powers"
   ],
   "Colombia": [
@@ -8053,6 +8278,7 @@
     "Place Names",
     "Republics",
     "Starts with COL",
+    "Things Colombian",
     "WWII Allied Powers"
   ],
   "Comoros": [
@@ -8078,6 +8304,7 @@
     "Place Names",
     "Republics",
     "Starts with COS",
+    "Things Costa Rican",
     "WWII Allied Powers"
   ],
   "Croatia": [
@@ -8092,6 +8319,7 @@
     "Place Names",
     "Republics",
     "Starts with CRO",
+    "Things Croatian",
     "WWII Axis Powers"
   ],
   "Cuba": [
@@ -8105,6 +8333,7 @@
     "Modern Countries",
     "Place Names",
     "Starts with CUB",
+    "Things Cuban",
     "WWII Allied Powers"
   ],
   "Cyprus": [
@@ -8130,7 +8359,8 @@
     "NATO Members",
     "Place Names",
     "Republics",
-    "Starts with CZE"
+    "Starts with CZE",
+    "Things Czech"
   ],
   "Democratic Republic of the Congo": [
     "Countries",
@@ -8144,7 +8374,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with DEM"
+    "Starts with DEM",
+    "Things Congolese"
   ],
   "Denmark": [
     "Constitutional Monarchies",
@@ -8157,6 +8388,7 @@
     "NATO Members",
     "Place Names",
     "Starts with DEN",
+    "Things Danish",
     "WWII Allied Powers"
   ],
   "Djibouti": [
@@ -8168,7 +8400,8 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
-    "Starts with DJI"
+    "Starts with DJI",
+    "Things Djiboutian"
   ],
   "Dominica": [
     "Countries",
@@ -8183,7 +8416,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with DOM"
+    "Starts with DOM",
+    "Things Dominican"
   ],
   "Dominican Republic": [
     "Countries",
@@ -8197,6 +8431,7 @@
     "Place Names",
     "Republics",
     "Starts with DOM",
+    "Things Dominican",
     "WWII Allied Powers"
   ],
   "Ecuador": [
@@ -8209,6 +8444,7 @@
     "Place Names",
     "Republics",
     "Starts with ECU",
+    "Things Ecuadorian",
     "WWII Allied Powers"
   ],
   "Egypt": [
@@ -8222,6 +8458,7 @@
     "Place Names",
     "Republics",
     "Starts with EGY",
+    "Things Egyptian",
     "WWII Allied Powers"
   ],
   "El Salvador": [
@@ -8234,6 +8471,7 @@
     "Place Names",
     "Republics",
     "Starts with EL ",
+    "Things Salvadoran",
     "WWII Allied Powers"
   ],
   "Equatorial Guinea": [
@@ -8260,7 +8498,8 @@
     "NATO Members",
     "Place Names",
     "Republics",
-    "Starts with EST"
+    "Starts with EST",
+    "Things Estonian"
   ],
   "Eswatini": [
     "Countries",
@@ -8286,6 +8525,7 @@
     "Place Names",
     "Republics",
     "Starts with ETH",
+    "Things Ethiopian",
     "WWII Allied Powers"
   ],
   "Fiji": [
@@ -8298,7 +8538,8 @@
     "Locations in Oceania",
     "Modern Countries",
     "Place Names",
-    "Starts with FIJ"
+    "Starts with FIJ",
+    "Things Melanesian"
   ],
   "Finland": [
     "Countries",
@@ -8311,6 +8552,7 @@
     "Place Names",
     "Republics",
     "Starts with FIN",
+    "Things Finnish",
     "WWII Axis Powers"
   ],
   "Gabon": [
@@ -8335,7 +8577,8 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
-    "Starts with GAM"
+    "Starts with GAM",
+    "Things Gambian"
   ],
   "Ghana": [
     "Countries",
@@ -8347,7 +8590,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with GHA"
+    "Starts with GHA",
+    "Things Ghanaian"
   ],
   "Grenada": [
     "Countries",
@@ -8360,7 +8604,8 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
-    "Starts with GRE"
+    "Starts with GRE",
+    "Things Grenadian"
   ],
   "Guatemala": [
     "Countries",
@@ -8372,6 +8617,7 @@
     "Place Names",
     "Republics",
     "Starts with GUA",
+    "Things Guatemalan",
     "WWII Allied Powers"
   ],
   "Guinea": [
@@ -8384,7 +8630,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with GUI"
+    "Starts with GUI",
+    "Things Guinean"
   ],
   "Guinea-Bissau": [
     "Countries",
@@ -8396,7 +8643,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with GUI"
+    "Starts with GUI",
+    "Things Guinea-Bissauan"
   ],
   "Guyana": [
     "Countries",
@@ -8409,7 +8657,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with GUY"
+    "Starts with GUY",
+    "Things Guyanese"
   ],
   "Haiti": [
     "Countries",
@@ -8422,6 +8671,7 @@
     "Place Names",
     "Republics",
     "Starts with HAI",
+    "Things Haitian",
     "WWII Allied Powers"
   ],
   "Honduras": [
@@ -8434,6 +8684,7 @@
     "Place Names",
     "Republics",
     "Starts with HON",
+    "Things Honduran",
     "WWII Allied Powers"
   ],
   "Hungary": [
@@ -8448,6 +8699,7 @@
     "Place Names",
     "Republics",
     "Starts with HUN",
+    "Things Hungarian",
     "WWII Axis Powers"
   ],
   "Iceland": [
@@ -8461,7 +8713,8 @@
     "NATO Countries",
     "NATO Members",
     "Place Names",
-    "Starts with ICE"
+    "Starts with ICE",
+    "Things Icelandic"
   ],
   "Indonesia": [
     "Archipelagos",
@@ -8476,7 +8729,8 @@
     "Most Populous Countries (Top 10)",
     "Place Names",
     "Republics",
-    "Starts with IND"
+    "Starts with IND",
+    "Things Indonesian"
   ],
   "Iran": [
     "Countries",
@@ -8489,6 +8743,7 @@
     "Place Names",
     "Republics",
     "Starts with IRA",
+    "Things Iranian",
     "WWII Allied Powers"
   ],
   "Iraq": [
@@ -8503,6 +8758,7 @@
     "Place Names",
     "Republics",
     "Starts with IRA",
+    "Things Iraqi",
     "WWII Allied Powers"
   ],
   "Ireland": [
@@ -8515,7 +8771,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with IRE"
+    "Starts with IRE",
+    "Things Irish"
   ],
   "Israel": [
     "Countries",
@@ -8527,7 +8784,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with ISR"
+    "Starts with ISR",
+    "Things Israeli"
   ],
   "Ivory Coast": [
     "Countries",
@@ -8539,7 +8797,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with IVO"
+    "Starts with IVO",
+    "Things Ivorian"
   ],
   "Jamaica": [
     "Countries",
@@ -8551,7 +8810,8 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
-    "Starts with JAM"
+    "Starts with JAM",
+    "Things Jamaican"
   ],
   "Kazakhstan": [
     "Countries",
@@ -8565,7 +8825,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with KAZ"
+    "Starts with KAZ",
+    "Things Kazakh"
   ],
   "Kenya": [
     "Countries",
@@ -8577,7 +8838,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with KEN"
+    "Starts with KEN",
+    "Things Kenyan"
   ],
   "Kiribati": [
     "Archipelagos",
@@ -8590,7 +8852,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with KIR"
+    "Starts with KIR",
+    "Things Micronesian"
   ],
   "Kuwait": [
     "Countries",
@@ -8601,7 +8864,8 @@
     "Modern Countries",
     "OPEC Members",
     "Place Names",
-    "Starts with KUW"
+    "Starts with KUW",
+    "Things Kuwaiti"
   ],
   "Kyrgyzstan": [
     "Countries",
@@ -8614,7 +8878,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with KYR"
+    "Starts with KYR",
+    "Things Kyrgyz"
   ],
   "Laos": [
     "Countries",
@@ -8626,7 +8891,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with LAO"
+    "Starts with LAO",
+    "Things Laotian"
   ],
   "Latvia": [
     "Countries",
@@ -8640,7 +8906,8 @@
     "NATO Members",
     "Place Names",
     "Republics",
-    "Starts with LAT"
+    "Starts with LAT",
+    "Things Latvian"
   ],
   "Lebanon": [
     "Countries",
@@ -8651,7 +8918,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with LEB"
+    "Starts with LEB",
+    "Things Lebanese"
   ],
   "Lesotho": [
     "Countries",
@@ -8675,6 +8943,7 @@
     "Place Names",
     "Republics",
     "Starts with LIB",
+    "Things Liberian",
     "WWII Allied Powers"
   ],
   "Liechtenstein": [
@@ -8702,7 +8971,8 @@
     "NATO Members",
     "Place Names",
     "Republics",
-    "Starts with LIT"
+    "Starts with LIT",
+    "Things Lithuanian"
   ],
   "Luxembourg": [
     "Constitutional Monarchies",
@@ -8743,7 +9013,8 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
-    "Starts with MAL"
+    "Starts with MAL",
+    "Things Malawian"
   ],
   "Malaysia": [
     "Constitutional Monarchies",
@@ -8756,7 +9027,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with MAL"
+    "Starts with MAL",
+    "Things Malaysian"
   ],
   "Maldives": [
     "Archipelagos",
@@ -8769,7 +9041,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with MAL"
+    "Starts with MAL",
+    "Things Maldivian"
   ],
   "Mali": [
     "Countries",
@@ -8782,7 +9055,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with MAL"
+    "Starts with MAL",
+    "Things Malian"
   ],
   "Malta": [
     "Countries",
@@ -8809,7 +9083,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with MAR"
+    "Starts with MAR",
+    "Things Micronesian"
   ],
   "Mauritania": [
     "Countries",
@@ -8846,7 +9121,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with MIC"
+    "Starts with MIC",
+    "Things Micronesian"
   ],
   "Moldova": [
     "Countries",
@@ -8859,7 +9135,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with MOL"
+    "Starts with MOL",
+    "Things Moldovan"
   ],
   "Monaco": [
     "Cities",
@@ -8885,7 +9162,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with MON"
+    "Starts with MON",
+    "Things Mongolian"
   ],
   "Montenegro": [
     "Countries",
@@ -8897,7 +9175,8 @@
     "NATO Countries",
     "NATO Members",
     "Place Names",
-    "Starts with MON"
+    "Starts with MON",
+    "Things Montenegrin"
   ],
   "Morocco": [
     "Countries",
@@ -8908,7 +9187,8 @@
     "Locations in Africa",
     "Modern Countries",
     "Place Names",
-    "Starts with MOR"
+    "Starts with MOR",
+    "Things Moroccan"
   ],
   "Mozambique": [
     "Countries",
@@ -8920,7 +9200,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with MOZ"
+    "Starts with MOZ",
+    "Things Mozambican"
   ],
   "Myanmar": [
     "Countries",
@@ -8931,7 +9212,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with MYA"
+    "Starts with MYA",
+    "Things Burmese"
   ],
   "Namibia": [
     "Countries",
@@ -8944,7 +9226,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with NAM"
+    "Starts with NAM",
+    "Things Namibian"
   ],
   "Nauru": [
     "Countries",
@@ -8959,7 +9242,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with NAU"
+    "Starts with NAU",
+    "Things Micronesian"
   ],
   "Nepal": [
     "Countries",
@@ -8970,7 +9254,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with NEP"
+    "Starts with NEP",
+    "Things Nepalese"
   ],
   "Netherlands": [
     "Constitutional Monarchies",
@@ -8983,6 +9268,7 @@
     "NATO Members",
     "Place Names",
     "Starts with NET",
+    "Things Dutch",
     "WWII Allied Powers"
   ],
   "Nicaragua": [
@@ -8994,6 +9280,7 @@
     "Modern Countries",
     "Place Names",
     "Starts with NIC",
+    "Things Nicaraguan",
     "WWII Allied Powers"
   ],
   "Niger": [
@@ -9007,7 +9294,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with NIG"
+    "Starts with NIG",
+    "Things Nigerien"
   ],
   "Nigeria": [
     "Countries",
@@ -9022,7 +9310,8 @@
     "OPEC Members",
     "Place Names",
     "Republics",
-    "Starts with NIG"
+    "Starts with NIG",
+    "Things Nigerian"
   ],
   "North Korea": [
     "Countries",
@@ -9032,7 +9321,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with NOR"
+    "Starts with NOR",
+    "Things North Korean"
   ],
   "North Macedonia": [
     "Countries",
@@ -9044,7 +9334,8 @@
     "NATO Countries",
     "NATO Members",
     "Place Names",
-    "Starts with NOR"
+    "Starts with NOR",
+    "Things Macedonian"
   ],
   "Norway": [
     "Constitutional Monarchies",
@@ -9057,6 +9348,7 @@
     "NATO Members",
     "Place Names",
     "Starts with NOR",
+    "Things Norwegian",
     "WWII Allied Powers"
   ],
   "Oman": [
@@ -9067,7 +9359,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with OMA"
+    "Starts with OMA",
+    "Things Omani"
   ],
   "Pakistan": [
     "Countries",
@@ -9081,7 +9374,8 @@
     "Most Populous Countries (Top 10)",
     "Place Names",
     "Republics",
-    "Starts with PAK"
+    "Starts with PAK",
+    "Things Pakistani"
   ],
   "Palau": [
     "Countries",
@@ -9096,7 +9390,8 @@
     "Locations in Oceania",
     "Modern Countries",
     "Place Names",
-    "Starts with PAL"
+    "Starts with PAL",
+    "Things Micronesian"
   ],
   "Panama": [
     "Countries",
@@ -9108,6 +9403,7 @@
     "Place Names",
     "Republics",
     "Starts with PAN",
+    "Things Panamanian",
     "WWII Allied Powers"
   ],
   "Papua New Guinea": [
@@ -9121,7 +9417,8 @@
     "Locations in Oceania",
     "Modern Countries",
     "Place Names",
-    "Starts with PAP"
+    "Starts with PAP",
+    "Things Melanesian"
   ],
   "Paraguay": [
     "Countries",
@@ -9134,6 +9431,7 @@
     "Place Names",
     "Republics",
     "Starts with PAR",
+    "Things Paraguayan",
     "WWII Allied Powers"
   ],
   "Peru": [
@@ -9147,6 +9445,7 @@
     "Place Names",
     "Republics",
     "Starts with PER",
+    "Things Peruvian",
     "WWII Allied Powers"
   ],
   "Philippines": [
@@ -9162,6 +9461,7 @@
     "Place Names",
     "Republics",
     "Starts with PHI",
+    "Things Filipino",
     "WWII Allied Powers"
   ],
   "Poland": [
@@ -9175,6 +9475,7 @@
     "Place Names",
     "Republics",
     "Starts with POL",
+    "Things Polish",
     "WWII Allied Powers"
   ],
   "Portugal": [
@@ -9187,7 +9488,8 @@
     "NATO Members",
     "Place Names",
     "Republics",
-    "Starts with POR"
+    "Starts with POR",
+    "Things Portuguese"
   ],
   "Qatar": [
     "Countries",
@@ -9197,7 +9499,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with QAT"
+    "Starts with QAT",
+    "Things Qatari"
   ],
   "Romania": [
     "Countries",
@@ -9210,6 +9513,7 @@
     "Place Names",
     "Republics",
     "Starts with ROM",
+    "Things Romanian",
     "WWII Axis Powers"
   ],
   "Russia": [
@@ -9229,6 +9533,7 @@
     "Most Populous Countries (Top 10)",
     "Place Names",
     "Starts with RUS",
+    "Things Russian",
     "UN Security Council Permanent Members"
   ],
   "Rwanda": [
@@ -9243,7 +9548,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with RWA"
+    "Starts with RWA",
+    "Things Rwandan"
   ],
   "Saint Kitts and Nevis": [
     "Countries",
@@ -9258,7 +9564,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with SAI"
+    "Starts with SAI",
+    "Things Saint Kittsian"
   ],
   "Saint Lucia": [
     "Countries",
@@ -9272,7 +9579,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with SAI"
+    "Starts with SAI",
+    "Things Saint Lucian"
   ],
   "Saint Vincent and the Grenadines": [
     "Countries",
@@ -9286,7 +9594,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with SAI"
+    "Starts with SAI",
+    "Things Saint Vincentian"
   ],
   "Samoa": [
     "Archipelagos",
@@ -9299,7 +9608,8 @@
     "Locations in Oceania",
     "Modern Countries",
     "Place Names",
-    "Starts with SAM"
+    "Starts with SAM",
+    "Things Samoan"
   ],
   "San Marino": [
     "Cities",
@@ -9337,6 +9647,7 @@
     "OPEC Members",
     "Place Names",
     "Starts with SAU",
+    "Things Saudi",
     "WWII Allied Powers"
   ],
   "Senegal": [
@@ -9349,7 +9660,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with SEN"
+    "Starts with SEN",
+    "Things Senegalese"
   ],
   "Serbia": [
     "Countries",
@@ -9360,7 +9672,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with SER"
+    "Starts with SER",
+    "Things Serbian"
   ],
   "Seychelles": [
     "Countries",
@@ -9386,7 +9699,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with SIE"
+    "Starts with SIE",
+    "Things Sierra Leonean"
   ],
   "Singapore": [
     "Cities",
@@ -9402,7 +9716,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with SIN"
+    "Starts with SIN",
+    "Things Singaporean"
   ],
   "Slovakia": [
     "Countries",
@@ -9416,6 +9731,7 @@
     "Place Names",
     "Republics",
     "Starts with SLO",
+    "Things Slovak",
     "WWII Axis Powers"
   ],
   "Slovenia": [
@@ -9429,7 +9745,8 @@
     "NATO Members",
     "Place Names",
     "Republics",
-    "Starts with SLO"
+    "Starts with SLO",
+    "Things Slovenian"
   ],
   "Solomon Islands": [
     "Archipelagos",
@@ -9441,7 +9758,8 @@
     "Locations in Oceania",
     "Modern Countries",
     "Place Names",
-    "Starts with SOL"
+    "Starts with SOL",
+    "Things Melanesian"
   ],
   "Somalia": [
     "Countries",
@@ -9453,7 +9771,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with SOM"
+    "Starts with SOM",
+    "Things Somali"
   ],
   "South Korea": [
     "Countries",
@@ -9462,7 +9781,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with SOU"
+    "Starts with SOU",
+    "Things South Korean"
   ],
   "South Sudan": [
     "Countries",
@@ -9475,7 +9795,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with SOU"
+    "Starts with SOU",
+    "Things Sudanese"
   ],
   "Sri Lanka": [
     "Countries",
@@ -9489,7 +9810,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with SRI"
+    "Starts with SRI",
+    "Things Sri Lankan"
   ],
   "Suriname": [
     "Countries",
@@ -9501,7 +9823,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with SUR"
+    "Starts with SUR",
+    "Things Surinamese"
   ],
   "Sweden": [
     "Constitutional Monarchies",
@@ -9512,7 +9835,8 @@
     "Modern Countries",
     "NATO Countries",
     "Place Names",
-    "Starts with SWE"
+    "Starts with SWE",
+    "Things Swedish"
   ],
   "Switzerland": [
     "Countries",
@@ -9523,7 +9847,8 @@
     "Locations in Europe",
     "Modern Countries",
     "Place Names",
-    "Starts with SWI"
+    "Starts with SWI",
+    "Things Swiss"
   ],
   "Syria": [
     "Countries",
@@ -9534,7 +9859,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with SYR"
+    "Starts with SYR",
+    "Things Syrian"
   ],
   "Taiwan": [
     "Countries",
@@ -9546,7 +9872,8 @@
     "Locations in Asia",
     "Modern Countries",
     "Place Names",
-    "Starts with TAI"
+    "Starts with TAI",
+    "Things Taiwanese"
   ],
   "Tajikistan": [
     "Countries",
@@ -9559,7 +9886,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with TAJ"
+    "Starts with TAJ",
+    "Things Tajik"
   ],
   "Tanzania": [
     "Countries",
@@ -9572,7 +9900,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with TAN"
+    "Starts with TAN",
+    "Things Tanzanian"
   ],
   "Thailand": [
     "Constitutional Monarchies",
@@ -9583,6 +9912,7 @@
     "Modern Countries",
     "Place Names",
     "Starts with THA",
+    "Things Thai",
     "WWII Axis Powers"
   ],
   "Togo": [
@@ -9596,7 +9926,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with TOG"
+    "Starts with TOG",
+    "Things Togolese"
   ],
   "Tonga": [
     "Archipelagos",
@@ -9609,7 +9940,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with TON"
+    "Starts with TON",
+    "Things Tongan"
   ],
   "Trinidad and Tobago": [
     "Countries",
@@ -9622,7 +9954,8 @@
     "Locations in North America",
     "Modern Countries",
     "Place Names",
-    "Starts with TRI"
+    "Starts with TRI",
+    "Things Trinidadian"
   ],
   "Tunisia": [
     "Countries",
@@ -9634,7 +9967,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with TUN"
+    "Starts with TUN",
+    "Things Tunisian"
   ],
   "Turkmenistan": [
     "Countries",
@@ -9647,7 +9981,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with TUR"
+    "Starts with TUR",
+    "Things Turkmen"
   ],
   "Tuvalu": [
     "Countries",
@@ -9661,7 +9996,8 @@
     "Modern Countries",
     "Place Names",
     "Small Countries",
-    "Starts with TUV"
+    "Starts with TUV",
+    "Things Micronesian"
   ],
   "Uganda": [
     "Countries",
@@ -9674,7 +10010,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with UGA"
+    "Starts with UGA",
+    "Things Ugandan"
   ],
   "Ukraine": [
     "Countries",
@@ -9686,7 +10023,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with UKR"
+    "Starts with UKR",
+    "Things Ukrainian"
   ],
   "United Arab Emirates": [
     "Countries",
@@ -9697,7 +10035,8 @@
     "Modern Countries",
     "OPEC Members",
     "Place Names",
-    "Starts with UNI"
+    "Starts with UNI",
+    "Things Emirati"
   ],
   "United States": [
     "Countries",
@@ -9715,6 +10054,7 @@
     "NATO Members",
     "Place Names",
     "Starts with UNI",
+    "Things American",
     "UN Security Council Permanent Members",
     "WWII Allied Powers"
   ],
@@ -9728,6 +10068,7 @@
     "Place Names",
     "Republics",
     "Starts with URU",
+    "Things Uruguayan",
     "WWII Allied Powers"
   ],
   "Uzbekistan": [
@@ -9741,7 +10082,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with UZB"
+    "Starts with UZB",
+    "Things Uzbek"
   ],
   "Vanuatu": [
     "Countries",
@@ -9753,7 +10095,8 @@
     "Locations in Oceania",
     "Modern Countries",
     "Place Names",
-    "Starts with VAN"
+    "Starts with VAN",
+    "Things Melanesian"
   ],
   "Vatican City": [
     "Cities",
@@ -9783,6 +10126,7 @@
     "Place Names",
     "Republics",
     "Starts with VEN",
+    "Things Venezuelan",
     "WWII Allied Powers"
   ],
   "Vietnam": [
@@ -9794,7 +10138,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with VIE"
+    "Starts with VIE",
+    "Things Vietnamese"
   ],
   "Yemen": [
     "Countries",
@@ -9805,7 +10150,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with YEM"
+    "Starts with YEM",
+    "Things Yemeni"
   ],
   "Zambia": [
     "Countries",
@@ -9818,7 +10164,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with ZAM"
+    "Starts with ZAM",
+    "Things Zambian"
   ],
   "Zimbabwe": [
     "Countries",
@@ -9831,7 +10178,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with ZIM"
+    "Starts with ZIM",
+    "Things Zimbabwean"
   ],
   "Warsaw Pact": [
     "Alliances",
@@ -9846,7 +10194,8 @@
     "Ends with ANY",
     "Locations in Europe",
     "Place Names",
-    "Starts with EAS"
+    "Starts with EAS",
+    "Things German"
   ],
   "Rhodesia": [
     "Countries",
@@ -9856,7 +10205,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with RHO"
+    "Starts with RHO",
+    "Things Zimbabwean"
   ],
   "South Vietnam": [
     "Countries",
@@ -9866,7 +10216,8 @@
     "Former French Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with SOU"
+    "Starts with SOU",
+    "Things Vietnamese"
   ],
   "North Vietnam": [
     "Countries",
@@ -9876,7 +10227,8 @@
     "Former French Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with NOR"
+    "Starts with NOR",
+    "Things Vietnamese"
   ],
   "South Yemen": [
     "Countries",
@@ -9886,7 +10238,8 @@
     "Former British Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with SOU"
+    "Starts with SOU",
+    "Things Yemeni"
   ],
   "North Yemen": [
     "Countries",
@@ -9896,7 +10249,8 @@
     "Former British Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with NOR"
+    "Starts with NOR",
+    "Things Yemeni"
   ],
   "Tanganyika": [
     "Countries",
@@ -9906,7 +10260,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with TAN"
+    "Starts with TAN",
+    "Things Tanzanian"
   ],
   "Zanzibar": [
     "Countries",
@@ -9917,7 +10272,8 @@
     "Islands",
     "Locations in Africa",
     "Place Names",
-    "Starts with ZAN"
+    "Starts with ZAN",
+    "Things Tanzanian"
   ],
   "Upper Volta": [
     "Countries",
@@ -9927,7 +10283,8 @@
     "Former French Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with UPP"
+    "Starts with UPP",
+    "Things Burkina Fasoan"
   ],
   "Dahomey": [
     "Countries",
@@ -9937,7 +10294,8 @@
     "Former French Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with DAH"
+    "Starts with DAH",
+    "Things Beninese"
   ],
   "Siam": [
     "Countries",
@@ -9948,7 +10306,8 @@
     "Former French Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with SIA"
+    "Starts with SIA",
+    "Things Thai"
   ],
   "Burma": [
     "Countries",
@@ -9958,7 +10317,8 @@
     "Former British Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with BUR"
+    "Starts with BUR",
+    "Things Burmese"
   ],
   "Ceylon": [
     "Countries",
@@ -9968,7 +10328,8 @@
     "Former British Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with CEY"
+    "Starts with CEY",
+    "Things Sri Lankan"
   ],
   "Kampuchea": [
     "Countries",
@@ -9978,7 +10339,8 @@
     "Former French Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with KAM"
+    "Starts with KAM",
+    "Things Cambodian"
   ],
   "Persia": [
     "Countries",
@@ -9989,7 +10351,8 @@
     "Former Russian Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with PER"
+    "Starts with PER",
+    "Things Iranian"
   ],
   "Abyssinia": [
     "Countries",
@@ -9999,7 +10362,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with ABY"
+    "Starts with ABY",
+    "Things Ethiopian"
   ],
   "British Honduras": [
     "Countries",
@@ -10009,7 +10373,8 @@
     "Former British Colonies",
     "Locations in North America",
     "Place Names",
-    "Starts with BRI"
+    "Starts with BRI",
+    "Things Belizean"
   ],
   "Dutch Guiana": [
     "Countries",
@@ -10019,7 +10384,8 @@
     "Former Dutch Colonies",
     "Locations in South America",
     "Place Names",
-    "Starts with DUT"
+    "Starts with DUT",
+    "Things Guyanese"
   ],
   "British Guiana": [
     "Countries",
@@ -10029,7 +10395,8 @@
     "Former British Colonies",
     "Locations in South America",
     "Place Names",
-    "Starts with BRI"
+    "Starts with BRI",
+    "Things Guyanese"
   ],
   "New Hebrides": [
     "Archipelagos",
@@ -10041,7 +10408,8 @@
     "Former French Colonies",
     "Locations in Oceania",
     "Place Names",
-    "Starts with NEW"
+    "Starts with NEW",
+    "Things Vanuatuan"
   ],
   "Western Samoa": [
     "Countries",
@@ -10053,7 +10421,8 @@
     "Islands",
     "Locations in Oceania",
     "Place Names",
-    "Starts with WES"
+    "Starts with WES",
+    "Things Samoan"
   ],
   "Portuguese Timor": [
     "Archipelagos",
@@ -10064,7 +10433,8 @@
     "Former Portuguese Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with POR"
+    "Starts with POR",
+    "Things East Timorese"
   ],
   "Netherlands East Indies": [
     "Archipelagos",
@@ -10096,7 +10466,8 @@
     "Former British Colonies",
     "Locations in Asia",
     "Place Names",
-    "Starts with BRI"
+    "Starts with BRI",
+    "Things Malaysian"
   ],
   "French West Africa": [
     "Countries",
@@ -10126,7 +10497,8 @@
     "Former Belgian Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with BEL"
+    "Starts with BEL",
+    "Things Congolese"
   ],
   "Northern Rhodesia": [
     "Countries",
@@ -10136,7 +10508,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with NOR"
+    "Starts with NOR",
+    "Things Zambian"
   ],
   "Southern Rhodesia": [
     "Countries",
@@ -10146,7 +10519,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with SOU"
+    "Starts with SOU",
+    "Things Zimbabwean"
   ],
   "Nyasaland": [
     "Countries",
@@ -10156,7 +10530,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with NYA"
+    "Starts with NYA",
+    "Things Malawian"
   ],
   "Bechuanaland": [
     "Countries",
@@ -10166,7 +10541,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with BEC"
+    "Starts with BEC",
+    "Things Botswanan"
   ],
   "Basutoland": [
     "Countries",
@@ -10186,7 +10562,8 @@
     "Former Portuguese Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with POR"
+    "Starts with POR",
+    "Things Guinean"
   ],
   "Spanish Guinea": [
     "Countries",
@@ -10206,7 +10583,8 @@
     "Former French Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with FRE"
+    "Starts with FRE",
+    "Things Djiboutian"
   ],
   "British Somaliland": [
     "Countries",
@@ -10216,7 +10594,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with BRI"
+    "Starts with BRI",
+    "Things Somali"
   ],
   "Italian Somaliland": [
     "Countries",
@@ -10226,7 +10605,8 @@
     "Former Italian Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with ITA"
+    "Starts with ITA",
+    "Things Somali"
   ],
   "Anglo-Egyptian Sudan": [
     "Countries",
@@ -10236,7 +10616,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with ANG"
+    "Starts with ANG",
+    "Things Sudanese"
   ],
   "British East Africa": [
     "Countries",
@@ -10246,7 +10627,8 @@
     "Former British Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with BRI"
+    "Starts with BRI",
+    "Things Kenyan"
   ],
   "German East Africa": [
     "Countries",
@@ -10276,7 +10658,8 @@
     "Former Portuguese Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with POR"
+    "Starts with POR",
+    "Things Mozambican"
   ],
   "Spanish East Africa": [
     "Countries",
@@ -10296,7 +10679,8 @@
     "Former Italian Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with ITA"
+    "Starts with ITA",
+    "Things Eritrean"
   ],
   "French East Africa": [
     "Countries",
@@ -10326,7 +10710,8 @@
     "Former German Colonies",
     "Locations in Africa",
     "Place Names",
-    "Starts with GER"
+    "Starts with GER",
+    "Things Togolese"
   ],
   "Belgian West Africa": [
     "Countries",
@@ -10375,7 +10760,8 @@
     "Ends with RIA",
     "Locations in Europe",
     "Place Names",
-    "Starts with TRA"
+    "Starts with TRA",
+    "Things Moldovan"
   ],
   "Abkhazia": [
     "Breakaway Regions",
@@ -10384,7 +10770,8 @@
     "Ends with ZIA",
     "Locations in Asia",
     "Place Names",
-    "Starts with ABK"
+    "Starts with ABK",
+    "Things Abkhazian"
   ],
   "South Ossetia": [
     "Breakaway Regions",
@@ -10393,7 +10780,8 @@
     "Ends with TIA",
     "Locations in Asia",
     "Place Names",
-    "Starts with SOU"
+    "Starts with SOU",
+    "Things South Ossetian"
   ],
   "Artsakh": [
     "Breakaway Regions",
@@ -10402,7 +10790,8 @@
     "Ends with AKH",
     "Locations in Asia",
     "Place Names",
-    "Starts with ART"
+    "Starts with ART",
+    "Things Armenian"
   ],
   "Dune": [
     "Adventure Stories",
@@ -14919,168 +15308,192 @@
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with CRE"
+    "Starts with CRE",
+    "Things Greek"
   ],
   "Sicily": [
     "Ends with ILY",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with SIC"
+    "Starts with SIC",
+    "Things Italian"
   ],
   "Sardinia": [
     "Ends with NIA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with SAR"
+    "Starts with SAR",
+    "Things Italian"
   ],
   "Corsica": [
     "Ends with ICA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with COR"
+    "Starts with COR",
+    "Things French"
   ],
   "Majorca": [
     "Ends with RCA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with MAJ"
+    "Starts with MAJ",
+    "Things Spanish"
   ],
   "Ibiza": [
     "Ends with IZA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with IBI"
+    "Starts with IBI",
+    "Things Spanish"
   ],
   "Rhodes": [
     "Ends with DES",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with RHO"
+    "Starts with RHO",
+    "Things Greek"
   ],
   "Hainan": [
     "Ends with NAN",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with HAI"
+    "Starts with HAI",
+    "Things Chinese"
   ],
   "Hokkaido": [
     "Ends with IDO",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with HOK"
+    "Starts with HOK",
+    "Things Japanese"
   ],
   "Honshu": [
     "Ends with SHU",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with HON"
+    "Starts with HON",
+    "Things Japanese"
   ],
   "Kyushu": [
     "Ends with SHU",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with KYU"
+    "Starts with KYU",
+    "Things Japanese"
   ],
   "Shikoku": [
     "Ends with OKU",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with SHI"
+    "Starts with SHI",
+    "Things Japanese"
   ],
   "Jeju": [
     "Ends with EJU",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with JEJ"
+    "Starts with JEJ",
+    "Things Korean"
   ],
   "Phuket": [
     "Ends with KET",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with PHU"
+    "Starts with PHU",
+    "Things Thai"
   ],
   "Bali": [
     "Ends with ALI",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with BAL"
+    "Starts with BAL",
+    "Things Indonesian"
   ],
   "Lombok": [
     "Ends with BOK",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with LOM"
+    "Starts with LOM",
+    "Things Indonesian"
   ],
   "Sumatra": [
     "Ends with TRA",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with SUM"
+    "Starts with SUM",
+    "Things Indonesian"
   ],
   "Sulawesi": [
     "Ends with ESI",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with SUL"
+    "Starts with SUL",
+    "Things Indonesian"
   ],
   "Luzon": [
     "Ends with ZON",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with LUZ"
+    "Starts with LUZ",
+    "Things Filipino"
   ],
   "Mindanao": [
     "Ends with NAO",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with MIN"
+    "Starts with MIN",
+    "Things Filipino"
   ],
   "Cebu": [
     "Ends with EBU",
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with CEB"
+    "Starts with CEB",
+    "Things Filipino"
   ],
   "Andaman": [
     "Archipelagos",
     "Ends with MAN",
     "Locations in Asia",
     "Place Names",
-    "Starts with AND"
+    "Starts with AND",
+    "Things Indian"
   ],
   "Nicobar": [
     "Archipelagos",
     "Ends with BAR",
     "Locations in Asia",
     "Place Names",
-    "Starts with NIC"
+    "Starts with NIC",
+    "Things Indian"
   ],
   "Lakshadweep": [
     "Archipelagos",
     "Ends with EEP",
     "Locations in Asia",
     "Place Names",
-    "Starts with LAK"
+    "Starts with LAK",
+    "Things Indian"
   ],
   "Ryukyu": [
     "Archipelagos",
@@ -15094,35 +15507,40 @@
     "Islands",
     "Locations in Asia",
     "Place Names",
-    "Starts with OKI"
+    "Starts with OKI",
+    "Things Japanese"
   ],
   "Hawaii": [
     "Ends with AII",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with HAW"
+    "Starts with HAW",
+    "Things Hawaiian"
   ],
   "Oahu": [
     "Ends with AHU",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with OAH"
+    "Starts with OAH",
+    "Things Hawaiian"
   ],
   "Kauai": [
     "Ends with UAI",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with KAU"
+    "Starts with KAU",
+    "Things Hawaiian"
   ],
   "Manhattan": [
     "Ends with TAN",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with MAN"
+    "Starts with MAN",
+    "Things American"
   ],
   "Long Island": [
     "Drinks",
@@ -15130,77 +15548,88 @@
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with LON"
+    "Starts with LON",
+    "Things American"
   ],
   "Staten Island": [
     "Ends with AND",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with STA"
+    "Starts with STA",
+    "Things American"
   ],
   "Martha's Vineyard": [
     "Ends with ARD",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with MAR"
+    "Starts with MAR",
+    "Things American"
   ],
   "Nantucket": [
     "Ends with KET",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with NAN"
+    "Starts with NAN",
+    "Things American"
   ],
   "Key West": [
     "Ends with EST",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with KEY"
+    "Starts with KEY",
+    "Things American"
   ],
   "Galapagos": [
     "Archipelagos",
     "Ends with GOS",
     "Locations in South America",
     "Place Names",
-    "Starts with GAL"
+    "Starts with GAL",
+    "Things Ecuadorian"
   ],
   "Easter Island": [
     "Ends with AND",
     "Islands",
     "Locations in South America",
     "Place Names",
-    "Starts with EAS"
+    "Starts with EAS",
+    "Things Polynesian"
   ],
   "Robinson Crusoe": [
     "Ends with SOE",
     "Islands",
     "Locations in South America",
     "Place Names",
-    "Starts with ROB"
+    "Starts with ROB",
+    "Things Chilean"
   ],
   "Tahiti": [
     "Ends with ITI",
     "Islands",
     "Locations in Oceania",
     "Place Names",
-    "Starts with TAH"
+    "Starts with TAH",
+    "Things Polynesian"
   ],
   "Bora Bora": [
     "Ends with ORA",
     "Islands",
     "Locations in Oceania",
     "Place Names",
-    "Starts with BOR"
+    "Starts with BOR",
+    "Things Polynesian"
   ],
   "Moorea": [
     "Ends with REA",
     "Islands",
     "Locations in Oceania",
     "Place Names",
-    "Starts with MOO"
+    "Starts with MOO",
+    "Things Polynesian"
   ],
   "Guam": [
     "Ends with UAM",
@@ -15214,35 +15643,40 @@
     "Islands",
     "Locations in Oceania",
     "Place Names",
-    "Starts with SAI"
+    "Starts with SAI",
+    "Things Marshall Islander"
   ],
   "Yap": [
     "Ends with YAP",
     "Islands",
     "Locations in Oceania",
     "Place Names",
-    "Starts with YAP"
+    "Starts with YAP",
+    "Things Micronesian"
   ],
   "Pohnpei": [
     "Ends with PEI",
     "Islands",
     "Locations in Oceania",
     "Place Names",
-    "Starts with POH"
+    "Starts with POH",
+    "Things Micronesian"
   ],
   "Kosrae": [
     "Ends with RAE",
     "Islands",
     "Locations in Oceania",
     "Place Names",
-    "Starts with KOS"
+    "Starts with KOS",
+    "Things Micronesian"
   ],
   "Chuuk": [
     "Ends with UUK",
     "Islands",
     "Locations in Oceania",
     "Place Names",
-    "Starts with CHU"
+    "Starts with CHU",
+    "Things Micronesian"
   ],
   "Madeira": [
     "Archipelagos",
@@ -15258,63 +15692,72 @@
     "Ends with RES",
     "Locations in Europe",
     "Place Names",
-    "Starts with AZO"
+    "Starts with AZO",
+    "Things Portuguese"
   ],
   "Canary Islands": [
     "Archipelagos",
     "Ends with NDS",
     "Locations in Europe",
     "Place Names",
-    "Starts with CAN"
+    "Starts with CAN",
+    "Things Spanish"
   ],
   "Tenerife": [
     "Ends with IFE",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with TEN"
+    "Starts with TEN",
+    "Things Spanish"
   ],
   "Gran Canaria": [
     "Ends with RIA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with GRA"
+    "Starts with GRA",
+    "Things Spanish"
   ],
   "Lanzarote": [
     "Ends with OTE",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with LAN"
+    "Starts with LAN",
+    "Things Spanish"
   ],
   "Fuerteventura": [
     "Ends with URA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with FUE"
+    "Starts with FUE",
+    "Things Spanish"
   ],
   "La Palma": [
     "Ends with LMA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with LA "
+    "Starts with LA ",
+    "Things Spanish"
   ],
   "El Hierro": [
     "Ends with RRO",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with EL "
+    "Starts with EL ",
+    "Things Spanish"
   ],
   "La Gomera": [
     "Ends with ERA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with LA "
+    "Starts with LA ",
+    "Things Spanish"
   ],
   "Gozo": [
     "Ends with OZO",
@@ -15335,154 +15778,176 @@
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with SAN"
+    "Starts with SAN",
+    "Things Greek"
   ],
   "Mykonos": [
     "Ends with NOS",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with MYK"
+    "Starts with MYK",
+    "Things Greek"
   ],
   "Corfu": [
     "Ends with RFU",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with COR"
+    "Starts with COR",
+    "Things Greek"
   ],
   "Menorca": [
     "Ends with RCA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with MEN"
+    "Starts with MEN",
+    "Things Spanish"
   ],
   "Formentera": [
     "Ends with ERA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with FOR"
+    "Starts with FOR",
+    "Things Spanish"
   ],
   "Capri": [
     "Ends with PRI",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with CAP"
+    "Starts with CAP",
+    "Things Italian"
   ],
   "Ischia": [
     "Ends with HIA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with ISC"
+    "Starts with ISC",
+    "Things Italian"
   ],
   "Elba": [
     "Ends with LBA",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with ELB"
+    "Starts with ELB",
+    "Things Italian"
   ],
   "Isle of Man": [
     "Ends with MAN",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with ISL"
+    "Starts with ISL",
+    "Things British"
   ],
   "Jersey": [
     "Ends with SEY",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with JER"
+    "Starts with JER",
+    "Things British"
   ],
   "Guernsey": [
     "Ends with SEY",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with GUE"
+    "Starts with GUE",
+    "Things British"
   ],
   "Alderney": [
     "Ends with NEY",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with ALD"
+    "Starts with ALD",
+    "Things British"
   ],
   "Sark": [
     "Ends with ARK",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with SAR"
+    "Starts with SAR",
+    "Things British"
   ],
   "Isle of Wight": [
     "Ends with GHT",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with ISL"
+    "Starts with ISL",
+    "Things British"
   ],
   "Skye": [
     "Ends with KYE",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with SKY"
+    "Starts with SKY",
+    "Things British"
   ],
   "Orkney": [
     "Archipelagos",
     "Ends with NEY",
     "Locations in Europe",
     "Place Names",
-    "Starts with ORK"
+    "Starts with ORK",
+    "Things British"
   ],
   "Shetland": [
     "Archipelagos",
     "Ends with AND",
     "Locations in Europe",
     "Place Names",
-    "Starts with SHE"
+    "Starts with SHE",
+    "Things British"
   ],
   "Hebrides": [
     "Archipelagos",
     "Ends with DES",
     "Locations in Europe",
     "Place Names",
-    "Starts with HEB"
+    "Starts with HEB",
+    "Things British"
   ],
   "Faroe Islands": [
     "Archipelagos",
     "Ends with NDS",
     "Locations in Europe",
     "Place Names",
-    "Starts with FAR"
+    "Starts with FAR",
+    "Things Faroese"
   ],
   "Svalbard": [
     "Archipelagos",
     "Ends with ARD",
     "Locations in Europe",
     "Place Names",
-    "Starts with SVA"
+    "Starts with SVA",
+    "Things Norwegian"
   ],
   "Gotland": [
     "Ends with AND",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with GOT"
+    "Starts with GOT",
+    "Things Swedish"
   ],
   "Bornholm": [
     "Ends with OLM",
     "Islands",
     "Locations in Europe",
     "Place Names",
-    "Starts with BOR"
+    "Starts with BOR",
+    "Things Danish"
   ],
   "Aland": [
     "Archipelagos",
@@ -15496,70 +15961,80 @@
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with BAF"
+    "Starts with BAF",
+    "Things Canadian"
   ],
   "Ellesmere": [
     "Ends with ERE",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with ELL"
+    "Starts with ELL",
+    "Things Canadian"
   ],
   "Devon": [
     "Ends with VON",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with DEV"
+    "Starts with DEV",
+    "Things Canadian"
   ],
   "Banks": [
     "Ends with NKS",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with BAN"
+    "Starts with BAN",
+    "Things Canadian"
   ],
   "Melville": [
     "Ends with LLE",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with MEL"
+    "Starts with MEL",
+    "Things Canadian"
   ],
   "Axel Heiberg": [
     "Ends with ERG",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with AXE"
+    "Starts with AXE",
+    "Things Canadian"
   ],
   "Southampton": [
     "Ends with TON",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with SOU"
+    "Starts with SOU",
+    "Things British"
   ],
   "Prince of Wales": [
     "Ends with LES",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with PRI"
+    "Starts with PRI",
+    "Things Canadian"
   ],
   "King William": [
     "Ends with IAM",
     "Islands",
     "Locations in North America",
     "Place Names",
-    "Starts with KIN"
+    "Starts with KIN",
+    "Things Canadian"
   ],
   "Faroe": [
     "Archipelagos",
     "Ends with ROE",
     "Locations in Europe",
     "Place Names",
-    "Starts with FAR"
+    "Starts with FAR",
+    "Things Faroese"
   ],
   "Canary": [
     "Archipelagos",
@@ -15717,7 +16192,8 @@
     "OPEC Members",
     "Place Names",
     "Republics",
-    "Starts with LIB"
+    "Starts with LIB",
+    "Things Libyan"
   ],
   "Eritrea": [
     "Countries",
@@ -15727,7 +16203,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with ERI"
+    "Starts with ERI",
+    "Things Eritrean"
   ],
   "Macedonia": [
     "Countries",
@@ -15737,7 +16214,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with MAC"
+    "Starts with MAC",
+    "Things Macedonian"
   ],
   "Sudan": [
     "Countries",
@@ -15747,7 +16225,8 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with SUD"
+    "Starts with SUD",
+    "Things Sudanese"
   ],
   "Marco Polo": [
     "Ends with OLO",
@@ -18692,5 +19171,21 @@
     "Sports",
     "Starts with ULT",
     "Things American"
+  ],
+  "Empress of Ireland": [
+    "Disasters",
+    "Ends with AND",
+    "Oceanliners",
+    "Ships",
+    "Shipwrecks",
+    "Starts with EMP",
+    "Things Canadian"
+  ],
+  "Empress of Asia": [
+    "Ends with SIA",
+    "Oceanliners",
+    "Ships",
+    "Starts with EMP",
+    "Things Canadian"
   ]
 }

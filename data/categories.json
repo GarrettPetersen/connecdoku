@@ -252,6 +252,18 @@
     "Water Margin",
     "X-Men: Days of Future Past"
   ],
+  "Age of Sail": [
+    "Mary Rose",
+    "Mayflower",
+    "Nina",
+    "Pinta",
+    "Santa Maria",
+    "Victory"
+  ],
+  "Aircraft Carriers": [
+    "Ark Royal",
+    "Enterprise"
+  ],
   "Airships": [
     "Akron",
     "Graf Zeppelin",
@@ -501,6 +513,10 @@
     "James",
     "Jordan",
     "Kobe"
+  ],
+  "Battleships": [
+    "Bismarck",
+    "Hood"
   ],
   "Battlestar Galactica": [
     "Apollo",
@@ -1398,6 +1414,13 @@
     "Trenton",
     "Washington"
   ],
+  "Civilian Ships": [
+    "Andrea Doria",
+    "Lusitania",
+    "Mauretania",
+    "Queen Mary",
+    "Titanic"
+  ],
   "Classic Literature": [
     "1984",
     "Brave New World",
@@ -1448,6 +1471,14 @@
     "Coffee",
     "Java",
     "Starbuck"
+  ],
+  "Cold War": [
+    "Enterprise",
+    "Los Angeles",
+    "San Diego",
+    "San Jose",
+    "San Juan",
+    "San Pedro"
   ],
   "Colors": [
     "Aurora",
@@ -2330,6 +2361,9 @@
   "Criminals": [
     "Rogue"
   ],
+  "Cruise Ships": [
+    "Queen Mary"
+  ],
   "Crypto": [
     "Coin",
     "DEX",
@@ -2340,6 +2374,11 @@
     "Akira",
     "Blade Runner",
     "The Matrix"
+  ],
+  "Cunard Line": [
+    "Lusitania",
+    "Mauretania",
+    "Queen Mary"
   ],
   "D&D Stats": [
     "CHA",
@@ -2454,6 +2493,7 @@
     "Challenger",
     "Chernobyl",
     "Deepwater Horizon",
+    "Empress of Ireland",
     "Fallout",
     "Fukushima",
     "Herculaneum",
@@ -3136,6 +3176,7 @@
     "Bechuanaland",
     "British Somaliland",
     "Easter Island",
+    "Empress of Ireland",
     "Finland",
     "French Somaliland",
     "Gotland",
@@ -6350,6 +6391,7 @@
     "Kyushu"
   ],
   "Ends with SIA": [
+    "Empress of Asia",
     "Fantasia",
     "Indonesia",
     "Malaysia",
@@ -7064,6 +7106,12 @@
   ],
   "Events": [
     "CON"
+  ],
+  "Exploration Ships": [
+    "Mayflower",
+    "Nina",
+    "Pinta",
+    "Santa Maria"
   ],
   "Explorers": [
     "Christopher Columbus",
@@ -8701,6 +8749,10 @@
     "Xia",
     "iKON"
   ],
+  "Kriegsmarine": [
+    "Bismarck",
+    "Graf Zeppelin"
+  ],
   "Landlocked Countries": [
     "Afghanistan",
     "Andorra",
@@ -9262,6 +9314,10 @@
     "Uruguay",
     "Venezuela"
   ],
+  "Luxury Ships": [
+    "Queen Mary",
+    "Titanic"
+  ],
   "MLB Players": [
     "Cobb",
     "Mantle",
@@ -9510,6 +9566,13 @@
     "Napoleon Bonaparte",
     "William the Conqueror",
     "Winston Churchill"
+  ],
+  "Military Ships": [
+    "Ark Royal",
+    "Bismarck",
+    "Enterprise",
+    "Hood",
+    "Victory"
   ],
   "Military Stories": [
     "Romance of the Three Kingdoms"
@@ -12879,6 +12942,15 @@
     "United Arab Emirates",
     "Venezuela"
   ],
+  "Oceanliners": [
+    "Andrea Doria",
+    "Empress of Asia",
+    "Empress of Ireland",
+    "Lusitania",
+    "Mauretania",
+    "Queen Mary",
+    "Titanic"
+  ],
   "Organizations": [
     "NASA",
     "NATO"
@@ -14260,6 +14332,12 @@
   "Rooms": [
     "Darkroom"
   ],
+  "Royal Navy": [
+    "Ark Royal",
+    "Hood",
+    "Mary Rose",
+    "Victory"
+  ],
   "Royalty": [
     "King",
     "King Lear",
@@ -14623,6 +14701,8 @@
     "Buttercup",
     "Cog",
     "Edmund Fitzgerald",
+    "Empress of Asia",
+    "Empress of Ireland",
     "Enterprise",
     "Graf Zeppelin",
     "Heather",
@@ -14650,6 +14730,7 @@
     "Bismarck",
     "Concordia",
     "Edmund Fitzgerald",
+    "Empress of Ireland",
     "Hood",
     "Lusitania",
     "Mary Rose",
@@ -16077,7 +16158,9 @@
     "Emerald"
   ],
   "Starts with EMP": [
-    "Empanada"
+    "Empanada",
+    "Empress of Asia",
+    "Empress of Ireland"
   ],
   "Starts with ENC": [
     "Encanto",
@@ -19457,77 +19540,163 @@
     "Mariner",
     "Ocean"
   ],
+  "Things Abkhazian": [
+    "Abkhazia"
+  ],
+  "Things Afghan": [
+    "Afghanistan"
+  ],
+  "Things Albanian": [
+    "Albania"
+  ],
+  "Things Algerian": [
+    "Algeria"
+  ],
   "Things American": [
+    "Alaska",
     "American Football",
+    "Annapolis",
     "Apple Pie",
+    "Atlanta",
+    "Augusta",
+    "Austin",
     "Auto Racing",
     "BBQ",
     "Baseball",
     "Basketball",
+    "Baton Rouge",
     "Beach Volleyball",
     "Beyonce",
+    "Boise",
+    "Boston",
     "Bourbon",
     "Brownie",
+    "California",
+    "Carson City",
+    "Charleston",
     "Cheesecake",
+    "Cheyenne",
+    "Chicago",
     "Chocolate Chip Cookie",
     "Cider",
     "Cocoa",
     "Coffee",
     "Cola",
+    "Columbus",
+    "Concord",
     "Craft Beer",
+    "Dallas",
+    "Denver",
+    "Des Moines",
     "Disney",
     "Diving",
+    "Edmund Fitzgerald",
     "Einstein",
     "Elvis",
+    "Enterprise",
     "Figure Skating",
+    "Florida",
     "Franklin D. Roosevelt",
     "Fried Chicken",
     "George Washington",
     "Gymnastics",
     "Hamburger",
+    "Harrisburg",
+    "Hartford",
+    "Helena",
+    "Honolulu",
     "Hot Chocolate",
     "Hot Dog",
     "Iced Tea",
+    "Indianapolis",
+    "Jackson",
+    "Jefferson City",
     "Juice",
+    "Juneau",
     "Ketchup",
+    "Key West",
+    "Lansing",
     "Lemonade",
+    "Lincoln",
+    "Little Rock",
     "Little Women",
+    "Long Island",
+    "Los Angeles",
     "Mac and Cheese",
     "Madonna",
+    "Manhattan",
+    "Martha's Vineyard",
     "Mayo",
     "Met",
+    "Miami",
     "Milk",
     "Milkshake",
     "Moby Dick",
+    "Montgomery",
+    "Montpelier",
     "Motocross",
     "Mustard",
     "NASA",
+    "Nantucket",
+    "Nashville",
+    "Nevada",
     "New York",
     "New York Bagel",
+    "Oklahoma City",
+    "Olympia",
+    "Orange",
+    "Phoenix",
+    "Pierre",
     "Prince",
+    "Providence",
+    "Raleigh",
     "Ranch",
+    "Richmond",
     "Rock Climbing",
     "Root Beer",
     "Rye Whiskey",
+    "Sacramento",
+    "Saint Paul",
+    "Salem",
+    "Salt Lake City",
+    "San Diego",
+    "San Jose",
+    "San Juan",
+    "San Pedro",
+    "Santa Fe",
+    "Seattle",
     "Smoothie",
     "Sourdough",
+    "Springfield",
+    "Staten Island",
     "Surfing",
     "Swimming",
+    "Tallahassee",
+    "Texas",
     "The Grapes of Wrath",
     "The Great Gatsby",
     "Thomas Edison",
     "To Kill a Mockingbird",
+    "Topeka",
     "Track and Field",
+    "Trenton",
     "Ultimate Frisbee",
+    "United States",
     "Usher",
     "Volleyball",
+    "Washington",
     "Water Polo",
     "Weightlifting",
     "Wrestling",
     "Wright"
   ],
+  "Things Antiguan": [
+    "Antigua and Barbuda"
+  ],
   "Things Argentine": [
+    "Aconcagua",
     "Alfajor",
+    "Argentina",
     "Asado",
     "Chimichurri",
     "Locro",
@@ -19535,12 +19704,63 @@
     "Milanesa",
     "Tango"
   ],
+  "Things Armenian": [
+    "Armenia",
+    "Artsakh"
+  ],
+  "Things Australian": [
+    "Australia",
+    "Sydney"
+  ],
   "Things Austrian": [
+    "Austria",
     "Mozart",
     "Skiing",
     "Sledding"
   ],
+  "Things Azerbaijani": [
+    "Azerbaijan"
+  ],
+  "Things Bahraini": [
+    "Bahrain"
+  ],
+  "Things Bangladeshi": [
+    "Bangladesh"
+  ],
+  "Things Barbadian": [
+    "Barbados"
+  ],
+  "Things Belarusian": [
+    "Belarus"
+  ],
+  "Things Belgian": [
+    "Belgium"
+  ],
+  "Things Belizean": [
+    "Belize",
+    "British Honduras"
+  ],
+  "Things Beninese": [
+    "Benin",
+    "Dahomey"
+  ],
+  "Things Bhutanese": [
+    "Bhutan"
+  ],
+  "Things Bolivian": [
+    "Bolivia"
+  ],
+  "Things Bosnian": [
+    "Bosnia and Herzegovina"
+  ],
+  "Things Botswanan": [
+    "Bechuanaland",
+    "Botswana"
+  ],
   "Things Brazilian": [
+    "Amazon",
+    "Brasilia",
+    "Brazil",
     "Brigadeiro",
     "Cachaça",
     "Feijoada",
@@ -19549,8 +19769,10 @@
   ],
   "Things British": [
     "1984",
+    "Alderney",
     "Alice's Adventures in Wonderland",
     "Archery",
+    "Ark Royal",
     "Bangers and Mash",
     "Beatles",
     "Boxing",
@@ -19558,6 +19780,7 @@
     "Bubble and Squeak",
     "Cricket",
     "Darwin",
+    "Dover",
     "Dracula",
     "Earl Grey",
     "Elizabeth",
@@ -19566,21 +19789,35 @@
     "Frankenstein",
     "Gin",
     "Golf",
+    "Guernsey",
+    "Hebrides",
+    "Hood",
     "Horse Racing",
+    "Isle of Man",
+    "Isle of Wight",
     "Jane Eyre",
+    "Jersey",
     "London",
+    "Mary Rose",
+    "Mayflower",
     "Mead",
     "Newton",
+    "Orkney",
     "Polo",
     "Pride and Prejudice",
     "Queen",
+    "Queen Mary",
     "Rowing",
     "Rugby",
     "Sailing",
+    "Sark",
     "Scones",
     "Shakespeare",
     "Shepherd's Pie",
+    "Shetland",
+    "Skye",
     "Soccer",
+    "Southampton",
     "Sticky Toffee Pudding",
     "Tea",
     "Tennis",
@@ -19590,7 +19827,9 @@
     "The Tale of Peter Rabbit",
     "The Wind in the Willows",
     "Trifle",
+    "United Kingdom",
     "Victoria",
+    "Victory",
     "William the Conqueror",
     "Winnie-the-Pooh",
     "Winston Churchill",
@@ -19598,35 +19837,87 @@
     "Yorkshire Pudding",
     "Zeppelin"
   ],
+  "Things Bruneian": [
+    "Brunei"
+  ],
+  "Things Bulgarian": [
+    "Bulgaria"
+  ],
+  "Things Burkina Fasoan": [
+    "Burkina Faso",
+    "Upper Volta"
+  ],
+  "Things Burmese": [
+    "Burma",
+    "Myanmar"
+  ],
+  "Things Burundian": [
+    "Burundi"
+  ],
+  "Things Cambodian": [
+    "Cambodia",
+    "Kampuchea"
+  ],
+  "Things Cameroonian": [
+    "Cameroon"
+  ],
   "Things Canadian": [
     "All Dressed Chips",
+    "Axel Heiberg",
+    "Baffin",
+    "Banks",
     "Bannock",
     "Beaver Tail",
+    "Birch",
     "Butter Tart",
     "Caesar Cocktail",
+    "Canada",
+    "Cedar",
     "Coffee Crisp",
     "Curling",
+    "Devon",
     "Drake",
+    "Edmund Fitzgerald",
+    "Ellesmere",
+    "Empress of Asia",
+    "Empress of Ireland",
     "Hawaiian Pizza",
     "Hockey",
+    "Hudson",
     "Ice Hockey",
     "Ice Wine",
     "Ketchup Chips",
+    "King William",
     "Kraft Dinner",
     "Lacrosse",
     "Maple Syrup",
+    "Melville",
     "Montreal Bagel",
     "Montreal Smoked Meat",
     "Nanaimo Bar",
     "Pouding Chomeur",
     "Poutine",
+    "Prince of Wales",
+    "Quebec",
     "Smarties",
     "Split Pea Soup",
     "Tarte au Sucre",
-    "Tourtiere"
+    "Toronto",
+    "Tourtiere",
+    "Victoria"
   ],
   "Things Caribbean": [
     "Rum"
+  ],
+  "Things Central African": [
+    "Central African Republic"
+  ],
+  "Things Chadian": [
+    "Chad"
+  ],
+  "Things Chilean": [
+    "Chile",
+    "Robinson Crusoe"
   ],
   "Things Chinese": [
     "Badminton",
@@ -19634,6 +19925,7 @@
     "Bao",
     "Beijing",
     "Char Siu",
+    "China",
     "Chow Fun",
     "Chow Mein",
     "Congee",
@@ -19644,7 +19936,9 @@
     "Dumpling",
     "Egg Foo Young",
     "General Tso",
+    "Gobi",
     "Gong Bao Ji Ding",
+    "Hainan",
     "Hoisin",
     "Hot Pot",
     "Hui Guo Rou",
@@ -19677,20 +19971,84 @@
     "Ajiaco",
     "Arepa",
     "Bandeja Paisa",
+    "Colombia",
     "One Hundred Years of Solitude",
     "Tres Leches"
   ],
+  "Things Congolese": [
+    "Belgian Congo",
+    "Congo",
+    "Democratic Republic of the Congo"
+  ],
+  "Things Costa Rican": [
+    "Costa Rica"
+  ],
+  "Things Croatian": [
+    "Croatia"
+  ],
+  "Things Cuban": [
+    "Cuba"
+  ],
   "Things Czech": [
+    "Czech Republic",
     "Pilsner"
   ],
+  "Things Danish": [
+    "Bornholm",
+    "Denmark"
+  ],
+  "Things Djiboutian": [
+    "Djibouti",
+    "French Somaliland"
+  ],
+  "Things Dominican": [
+    "Dominica",
+    "Dominican Republic"
+  ],
   "Things Dutch": [
+    "Netherlands",
     "Speed Skating"
+  ],
+  "Things East Timorese": [
+    "Portuguese Timor"
+  ],
+  "Things Ecuadorian": [
+    "Ecuador",
+    "Galapagos"
   ],
   "Things Egyptian": [
     "Alexandria",
     "Cleopatra",
+    "Egypt",
     "Nile",
     "Pharaoh"
+  ],
+  "Things Emirati": [
+    "United Arab Emirates"
+  ],
+  "Things Eritrean": [
+    "Eritrea",
+    "Italian East Africa"
+  ],
+  "Things Estonian": [
+    "Estonia"
+  ],
+  "Things Ethiopian": [
+    "Abyssinia",
+    "Ethiopia"
+  ],
+  "Things Faroese": [
+    "Faroe",
+    "Faroe Islands"
+  ],
+  "Things Filipino": [
+    "Cebu",
+    "Luzon",
+    "Mindanao",
+    "Philippines"
+  ],
+  "Things Finnish": [
+    "Finland"
   ],
   "Things French": [
     "Absinthe",
@@ -19707,6 +20065,7 @@
     "Champagne",
     "Charlemagne",
     "Coq au Vin",
+    "Corsica",
     "Crepe",
     "Croissant",
     "Croque Monsieur",
@@ -19716,6 +20075,7 @@
     "Escargot",
     "Espagnole",
     "Fencing",
+    "France",
     "French Onion Soup",
     "Hollandaise",
     "Joan of Arc",
@@ -19724,6 +20084,7 @@
     "Macaron",
     "Madeleine",
     "Marie Curie",
+    "Mont Blanc",
     "Napoleon Bonaparte",
     "Paris",
     "Profiterole",
@@ -19739,17 +20100,27 @@
     "William the Conqueror",
     "Wine"
   ],
+  "Things Gambian": [
+    "Gambia"
+  ],
+  "Things Georgian": [
+    "Georgia"
+  ],
   "Things German": [
     "Apfelstrudel",
     "Bach",
     "Beer",
     "Beethoven",
     "Berlin",
+    "Bismarck",
     "Black Forest Cake",
     "Bratwurst",
     "Brezel",
     "Charlemagne",
+    "East Germany",
     "Einstein",
+    "Germany",
+    "Graf Zeppelin",
     "Handel",
     "Kartoffelsalat",
     "Käsespätzle",
@@ -19765,20 +20136,29 @@
     "Spätzle",
     "Weissbier"
   ],
+  "Things Ghanaian": [
+    "Ghana"
+  ],
   "Things Greek": [
     "Aristotle",
     "Athena",
     "Athens",
     "Baklava",
     "Cleopatra",
+    "Corfu",
+    "Crete",
     "Dolmades",
     "Galaktoboureko",
+    "Greece",
     "Gyro",
     "Homer",
     "Moussaka",
+    "Mykonos",
     "Olympus",
     "Pastitsio",
     "Plato",
+    "Rhodes",
+    "Santorini",
     "Socrates",
     "Souvlaki",
     "Spanakopita",
@@ -19787,7 +20167,46 @@
     "Tzatziki",
     "Zeus"
   ],
+  "Things Greenlandic": [
+    "Greenland"
+  ],
+  "Things Grenadian": [
+    "Grenada"
+  ],
+  "Things Guatemalan": [
+    "Guatemala"
+  ],
+  "Things Guinea-Bissauan": [
+    "Guinea-Bissau"
+  ],
+  "Things Guinean": [
+    "Guinea",
+    "Portuguese Guinea"
+  ],
+  "Things Guyanese": [
+    "British Guiana",
+    "Dutch Guiana",
+    "Guyana"
+  ],
+  "Things Haitian": [
+    "Haiti"
+  ],
+  "Things Hawaiian": [
+    "Hawaii",
+    "Kauai",
+    "Oahu"
+  ],
+  "Things Honduran": [
+    "Honduras"
+  ],
+  "Things Hungarian": [
+    "Hungary"
+  ],
+  "Things Icelandic": [
+    "Iceland"
+  ],
   "Things Indian": [
+    "Andaman",
     "Biryani",
     "Butter Chicken",
     "Chai",
@@ -19795,11 +20214,14 @@
     "Curry",
     "Dal",
     "Gulab Jamun",
+    "India",
     "Jalebi",
     "Korma",
     "Kulfi",
+    "Lakshadweep",
     "Lassi",
     "Naan",
+    "Nicobar",
     "Palak Paneer",
     "Rogan Josh",
     "Roti",
@@ -19810,29 +20232,62 @@
     "Tikka Masala",
     "Vindaloo"
   ],
+  "Things Indonesian": [
+    "Bali",
+    "Indonesia",
+    "Java",
+    "Krakatoa",
+    "Lombok",
+    "Pinatubo",
+    "Sulawesi",
+    "Sumatra",
+    "Tambora"
+  ],
+  "Things Iranian": [
+    "Iran",
+    "Persia"
+  ],
+  "Things Iraqi": [
+    "Baghdad",
+    "Iraq"
+  ],
   "Things Irish": [
+    "Dublin",
+    "Ireland",
     "Stout",
     "Whiskey"
+  ],
+  "Things Israeli": [
+    "Israel",
+    "Jerusalem",
+    "Temple Mount"
   ],
   "Things Italian": [
     "Affogato",
     "Alfredo",
+    "Andrea Doria",
     "Bolognese",
     "Bruschetta",
     "Caesar",
     "Cannoli",
     "Caprese",
+    "Capri",
     "Carbonara",
     "Chianti",
     "Christopher Columbus",
     "Ciabatta",
     "Da Vinci",
     "Dante",
+    "Elba",
+    "Etna",
     "Fettuccine",
     "Florence",
     "Focaccia",
     "Galileo",
     "Gelato",
+    "Herculaneum",
+    "Ischia",
+    "Italy",
     "Lasagna",
     "Linguine",
     "Marco Polo",
@@ -19850,7 +20305,10 @@
     "Prosecco",
     "Ravioli",
     "Risotto",
+    "Roma",
     "Rome",
+    "Sardinia",
+    "Sicily",
     "Spaghetti",
     "The Divine Comedy",
     "Tiramisu",
@@ -19858,7 +20316,14 @@
     "Tortellini",
     "Uffizi",
     "Venice",
+    "Verona",
     "Vesuvius"
+  ],
+  "Things Ivorian": [
+    "Ivory Coast"
+  ],
+  "Things Jamaican": [
+    "Jamaica"
   ],
   "Things Japanese": [
     "Akira",
@@ -19872,18 +20337,23 @@
     "Grave of the Fireflies",
     "Gyoza",
     "High and Low",
+    "Hokkaido",
     "Honda",
+    "Honshu",
     "Howl's Moving Castle",
     "Ikiru",
+    "Japan",
     "Judo",
     "Kagemusha",
     "Karate",
     "Kiki's Delivery Service",
+    "Kyushu",
     "Matcha",
     "Miso",
     "Mochi",
     "My Neighbor Totoro",
     "Oden",
+    "Okinawa",
     "Okonomiyaki",
     "Onigiri",
     "Only Yesterday",
@@ -19901,6 +20371,7 @@
     "Sashimi",
     "Seven Samurai",
     "Shabu Shabu",
+    "Shikoku",
     "Soba",
     "Sony",
     "Soy Sauce",
@@ -19951,6 +20422,16 @@
     "Schmaltz",
     "Tzimmes"
   ],
+  "Things Jordanian": [
+    "Jordan"
+  ],
+  "Things Kazakh": [
+    "Kazakhstan"
+  ],
+  "Things Kenyan": [
+    "British East Africa",
+    "Kenya"
+  ],
   "Things Korean": [
     "(G)I-DLE",
     "2PM",
@@ -19963,11 +20444,13 @@
     "GOT7",
     "Hotteok",
     "Japchae",
+    "Jeju",
     "Jjajangmyeon",
     "Kimchi",
     "Naengmyeon",
     "Red Velvet",
     "Samgyeopsal",
+    "Seoul",
     "Seventeen",
     "Soju",
     "Super Junior",
@@ -19976,12 +20459,64 @@
     "Xia",
     "iKON"
   ],
+  "Things Kuwaiti": [
+    "Kuwait"
+  ],
+  "Things Kyrgyz": [
+    "Kyrgyzstan"
+  ],
+  "Things Laotian": [
+    "Laos"
+  ],
   "Things Latin American": [
     "One Hundred Years of Solitude"
+  ],
+  "Things Latvian": [
+    "Latvia"
+  ],
+  "Things Lebanese": [
+    "Lebanon"
+  ],
+  "Things Liberian": [
+    "Liberia"
+  ],
+  "Things Libyan": [
+    "Libya"
+  ],
+  "Things Lithuanian": [
+    "Lithuania"
+  ],
+  "Things Macedonian": [
+    "Macedonia",
+    "North Macedonia"
+  ],
+  "Things Malawian": [
+    "Malawi",
+    "Nyasaland"
+  ],
+  "Things Malaysian": [
+    "British Malaya",
+    "Malaysia"
+  ],
+  "Things Maldivian": [
+    "Maldives"
+  ],
+  "Things Malian": [
+    "Mali"
+  ],
+  "Things Marshall Islander": [
+    "Saipan"
+  ],
+  "Things Melanesian": [
+    "Fiji",
+    "Papua New Guinea",
+    "Solomon Islands",
+    "Vanuatu"
   ],
   "Things Mexican": [
     "Agua Fresca",
     "Burrito",
+    "Cancun",
     "Ceviche",
     "Chile Relleno",
     "Chimichanga",
@@ -19989,6 +20524,7 @@
     "Fajita",
     "Guacamole",
     "Horchata",
+    "Mexico",
     "Mezcal",
     "Mole",
     "Mole Poblano",
@@ -19997,7 +20533,20 @@
     "Taco",
     "Tamale",
     "Tequila",
+    "Tijuana",
     "Tortilla"
+  ],
+  "Things Micronesian": [
+    "Chuuk",
+    "Kiribati",
+    "Kosrae",
+    "Marshall Islands",
+    "Micronesia",
+    "Nauru",
+    "Palau",
+    "Pohnpei",
+    "Tuvalu",
+    "Yap"
   ],
   "Things Middle Eastern": [
     "Baba Ganoush",
@@ -20012,11 +20561,67 @@
     "Tabouleh",
     "Tahini"
   ],
+  "Things Moldovan": [
+    "Moldova",
+    "Transnistria"
+  ],
+  "Things Mongolian": [
+    "Mongolia"
+  ],
+  "Things Montenegrin": [
+    "Montenegro"
+  ],
+  "Things Moroccan": [
+    "Morocco"
+  ],
+  "Things Mozambican": [
+    "Mozambique",
+    "Portuguese East Africa"
+  ],
+  "Things Namibian": [
+    "Namibia"
+  ],
+  "Things Nepalese": [
+    "Annapurna",
+    "Everest",
+    "Nepal"
+  ],
+  "Things New Zealand": [
+    "New Zealand"
+  ],
+  "Things Nicaraguan": [
+    "Nicaragua"
+  ],
+  "Things Nigerian": [
+    "Nigeria"
+  ],
+  "Things Nigerien": [
+    "Niger"
+  ],
+  "Things North Korean": [
+    "North Korea"
+  ],
   "Things Norwegian": [
     "Biathlon",
-    "Cross Country Skiing"
+    "Cross Country Skiing",
+    "Norway",
+    "Svalbard"
+  ],
+  "Things Omani": [
+    "Oman"
+  ],
+  "Things Pakistani": [
+    "Karachi",
+    "Pakistan"
+  ],
+  "Things Panamanian": [
+    "Panama"
+  ],
+  "Things Paraguayan": [
+    "Paraguay"
   ],
   "Things Peruvian": [
+    "Peru",
     "Pisco"
   ],
   "Things Polish": [
@@ -20030,9 +20635,17 @@
     "Marie Curie",
     "Paczki",
     "Pierogi",
+    "Poland",
     "Zurek"
   ],
+  "Things Polynesian": [
+    "Bora Bora",
+    "Easter Island",
+    "Moorea",
+    "Tahiti"
+  ],
   "Things Portuguese": [
+    "Azores",
     "Bacalhau",
     "Caldo Verde",
     "Ferdinand Magellan",
@@ -20040,19 +20653,29 @@
     "Madeira",
     "Pastel de Nata",
     "Port",
+    "Portugal",
     "Vasco da Gama"
+  ],
+  "Things Qatari": [
+    "Qatar"
+  ],
+  "Things Romanian": [
+    "Romania"
   ],
   "Things Russian": [
     "Blini",
     "Borscht",
     "Caviar",
     "Crime and Punishment",
+    "Elbrus",
     "Kefir",
     "Kotleti",
     "Kvass",
     "Medovik",
     "Olivier Salad",
     "Pelmeni",
+    "Russia",
+    "Samarkand",
     "Shashlik",
     "Solyanka",
     "The Brothers Karamazov",
@@ -20061,28 +20684,129 @@
     "Volga",
     "War and Peace"
   ],
+  "Things Rwandan": [
+    "Rwanda"
+  ],
+  "Things Saint Kittsian": [
+    "Saint Kitts and Nevis"
+  ],
+  "Things Saint Lucian": [
+    "Saint Lucia"
+  ],
+  "Things Saint Vincentian": [
+    "Saint Vincent and the Grenadines"
+  ],
+  "Things Salvadoran": [
+    "El Salvador"
+  ],
+  "Things Samoan": [
+    "Samoa",
+    "Western Samoa"
+  ],
+  "Things Saudi": [
+    "Mecca",
+    "Saudi Arabia"
+  ],
   "Things Scottish": [
     "Scotch"
   ],
+  "Things Senegalese": [
+    "Senegal"
+  ],
+  "Things Serbian": [
+    "Serbia"
+  ],
+  "Things Sierra Leonean": [
+    "Sierra Leone"
+  ],
+  "Things Singaporean": [
+    "Singapore"
+  ],
+  "Things Slovak": [
+    "Slovakia"
+  ],
+  "Things Slovenian": [
+    "Slovenia"
+  ],
+  "Things Somali": [
+    "British Somaliland",
+    "Italian Somaliland",
+    "Somalia"
+  ],
+  "Things South African": [
+    "South Africa"
+  ],
+  "Things South Korean": [
+    "South Korea"
+  ],
+  "Things South Ossetian": [
+    "South Ossetia"
+  ],
   "Things Spanish": [
+    "Canary Islands",
     "Christopher Columbus",
     "Churro",
     "Don Quixote",
+    "El Hierro",
     "Empanada",
     "Ferdinand Magellan",
     "Flan",
+    "Formentera",
+    "Fuerteventura",
     "Gazpacho",
+    "Gran Canaria",
+    "Ibiza",
+    "La Gomera",
+    "La Palma",
+    "Lanzarote",
+    "Majorca",
+    "Menorca",
+    "Nina",
     "Paella",
+    "Pinta",
     "Prado",
     "Sangria",
+    "Santa Maria",
     "Sherry",
-    "Tapas"
+    "Spain",
+    "Tapas",
+    "Tenerife"
+  ],
+  "Things Sri Lankan": [
+    "Ceylon",
+    "Sri Lanka"
+  ],
+  "Things Sudanese": [
+    "Anglo-Egyptian Sudan",
+    "South Sudan",
+    "Sudan"
+  ],
+  "Things Surinamese": [
+    "Suriname"
+  ],
+  "Things Swedish": [
+    "Gotland",
+    "Sweden"
   ],
   "Things Swiss": [
-    "Bobsled"
+    "Bobsled",
+    "Matterhorn",
+    "Switzerland"
+  ],
+  "Things Syrian": [
+    "Syria"
   ],
   "Things Taiwanese": [
-    "Bubble Tea"
+    "Bubble Tea",
+    "Taiwan"
+  ],
+  "Things Tajik": [
+    "Tajikistan"
+  ],
+  "Things Tanzanian": [
+    "Tanganyika",
+    "Tanzania",
+    "Zanzibar"
   ],
   "Things Thai": [
     "Fish Sauce",
@@ -20091,14 +20815,53 @@
     "Mango Sticky Rice",
     "Massaman",
     "Pad Thai",
+    "Phuket",
     "Red Curry",
+    "Siam",
     "Som Tam",
     "Sriracha",
+    "Thailand",
     "Tom Yum",
     "Yellow Curry"
   ],
+  "Things Togolese": [
+    "German West Africa",
+    "Togo"
+  ],
+  "Things Tongan": [
+    "Tonga"
+  ],
+  "Things Trinidadian": [
+    "Trinidad and Tobago"
+  ],
+  "Things Tunisian": [
+    "Tunisia"
+  ],
   "Things Turkish": [
-    "Ayran"
+    "Ayran",
+    "Turkey"
+  ],
+  "Things Turkmen": [
+    "Turkmenistan"
+  ],
+  "Things Ugandan": [
+    "Uganda"
+  ],
+  "Things Ukrainian": [
+    "Chernobyl",
+    "Ukraine"
+  ],
+  "Things Uruguayan": [
+    "Uruguay"
+  ],
+  "Things Uzbek": [
+    "Uzbekistan"
+  ],
+  "Things Vanuatuan": [
+    "New Hebrides"
+  ],
+  "Things Venezuelan": [
+    "Venezuela"
   ],
   "Things Vietnamese": [
     "Banh Mi",
@@ -20107,8 +20870,25 @@
     "Che",
     "Com Tam",
     "Goi Cuon",
+    "North Vietnam",
     "Nuoc Cham",
-    "Pho"
+    "Pho",
+    "South Vietnam",
+    "Vietnam"
+  ],
+  "Things Yemeni": [
+    "North Yemen",
+    "South Yemen",
+    "Yemen"
+  ],
+  "Things Zambian": [
+    "Northern Rhodesia",
+    "Zambia"
+  ],
+  "Things Zimbabwean": [
+    "Rhodesia",
+    "Southern Rhodesia",
+    "Zimbabwe"
   ],
   "Thriller Films": [
     "12 Monkeys",
@@ -20393,6 +21173,14 @@
     "United Kingdom",
     "United States"
   ],
+  "US Navy": [
+    "Enterprise",
+    "Los Angeles",
+    "San Diego",
+    "San Jose",
+    "San Juan",
+    "San Pedro"
+  ],
   "US Presidents": [
     "Adams",
     "Ford",
@@ -20582,6 +21370,13 @@
   "Wars": [
     "Total War"
   ],
+  "Warships": [
+    "Ark Royal",
+    "Bismarck",
+    "Enterprise",
+    "Hood",
+    "Victory"
+  ],
   "Watercraft": [
     "Canoe",
     "Kayak",
@@ -20624,6 +21419,9 @@
     "No Country for Old Men",
     "The Hateful Eight",
     "Unforgiven"
+  ],
+  "White Star Line": [
+    "Titanic"
   ],
   "White Things": [
     "Aioli",
@@ -20670,6 +21468,17 @@
     "Saw",
     "Spear",
     "Stick"
+  ],
+  "World War I": [
+    "Hood",
+    "Lusitania"
+  ],
+  "World War II": [
+    "Ark Royal",
+    "Bismarck",
+    "Enterprise",
+    "Hood",
+    "Queen Mary"
   ],
   "Writers": [
     "Aristotle",
