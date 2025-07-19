@@ -308,6 +308,7 @@
     "Place Names",
     "Starts with FUJ",
     "Tech Companies",
+    "Things Japanese",
     "Volcanoes"
   ],
   "Rome": [
@@ -2514,7 +2515,8 @@
     "Associated with Edgar Allan Poe",
     "Ends with HER",
     "Musicians",
-    "Starts with USH"
+    "Starts with USH",
+    "Things American"
   ],
   "Amontillado": [
     "Associated with Edgar Allan Poe",
@@ -3125,7 +3127,10 @@
     "Ends with NCH",
     "Foods",
     "Salad Dressings",
-    "Starts with RAN"
+    "Sauces",
+    "Starts with RAN",
+    "Things American",
+    "White Things"
   ],
   "French": [
     "Ends with NCH",
@@ -3239,44 +3244,58 @@
     "Condiments",
     "Ends with HUP",
     "Foods",
+    "Red Things",
     "Sauces",
-    "Starts with KET"
+    "Starts with KET",
+    "Things American"
   ],
   "Mustard": [
     "Condiments",
     "Ends with ARD",
     "Foods",
     "Sauces",
-    "Starts with MUS"
+    "Starts with MUS",
+    "Things American",
+    "Yellow Things"
   ],
   "Salsa": [
     "Condiments",
     "Ends with LSA",
+    "Foods",
     "Mexican Food",
+    "Red Things",
     "Sauces",
-    "Starts with SAL"
+    "Starts with SAL",
+    "Things Mexican"
   ],
   "Soy Sauce": [
     "Condiments",
     "Ends with UCE",
     "Foods",
     "Sauces",
-    "Starts with SOY"
+    "Starts with SOY",
+    "Things Japanese"
   ],
   "Taco": [
     "Ends with ACO",
+    "Foods",
     "Mexican Food",
-    "Starts with TAC"
+    "Starts with TAC",
+    "Things Mexican"
   ],
   "Burrito": [
     "Ends with ITO",
+    "Foods",
     "Mexican Food",
-    "Starts with BUR"
+    "Starts with BUR",
+    "Things Mexican"
   ],
   "Enchilada": [
     "Ends with ADA",
+    "Foods",
     "Mexican Food",
-    "Starts with ENC"
+    "Starts with ENC",
+    "Things Mexican"
   ],
   "Lasso": [
     "Cowboy Terms",
@@ -3438,19 +3457,22 @@
     "Art Museums",
     "Ends with ADO",
     "Museums",
-    "Starts with PRA"
+    "Starts with PRA",
+    "Things Spanish"
   ],
   "Met": [
     "Art Museums",
     "Ends with MET",
     "Museums",
-    "Starts with MET"
+    "Starts with MET",
+    "Things American"
   ],
   "Uffizi": [
     "Art Museums",
     "Ends with IZI",
     "Museums",
-    "Starts with UFF"
+    "Starts with UFF",
+    "Things Italian"
   ],
   "Vast": [
     "Ends with AST",
@@ -3487,7 +3509,9 @@
     "Ingredients in Cobb Salad",
     "Ingredients in a BLT",
     "Red Things",
+    "Sauces",
     "Starts with TOM",
+    "Things Italian",
     "Vegetables"
   ],
   "Bread": [
@@ -3618,8 +3642,10 @@
     "Cities in Italy",
     "Ends with ESE",
     "Eponymous Salads",
+    "Foods",
     "Salads",
-    "Starts with CAP"
+    "Starts with CAP",
+    "Things Italian"
   ],
   "Elmo": [
     "Ends with LMO",
@@ -4537,7 +4563,9 @@
     "Ends with AYO",
     "Foods",
     "Sauces",
-    "Starts with MAY"
+    "Starts with MAY",
+    "Things American",
+    "White Things"
   ],
   "Bronco": [
     "Cars",
@@ -5244,7 +5272,9 @@
     "People",
     "Real People",
     "Spices & Herbs",
-    "Starts with CUR"
+    "Spicy Foods",
+    "Starts with CUR",
+    "Things Indian"
   ],
   "Kobe": [
     "Athletes",
@@ -5348,6 +5378,7 @@
     "Real People",
     "Sailors",
     "Starts with DRA",
+    "Things Canadian",
     "Types of Animals"
   ],
   "Boar": [
@@ -5664,7 +5695,8 @@
     "Dances",
     "Ends with NGO",
     "NATO Phonetic Alphabet",
-    "Starts with TAN"
+    "Starts with TAN",
+    "Things Argentine"
   ],
   "Uniform": [
     "Clothing",
@@ -5685,7 +5717,8 @@
     "Drinks",
     "Ends with KEY",
     "NATO Phonetic Alphabet",
-    "Starts with WHI"
+    "Starts with WHI",
+    "Things Irish"
   ],
   "X-ray": [
     "Ends with RAY",
@@ -5705,7 +5738,8 @@
     "Music",
     "Musicians",
     "Royalty",
-    "Starts with QUE"
+    "Starts with QUE",
+    "Things British"
   ],
   "Bishop": [
     "Board Game Equipment",
@@ -5727,7 +5761,8 @@
     "Female Names",
     "Musicians",
     "People",
-    "Starts with MAD"
+    "Starts with MAD",
+    "Things American"
   ],
   "Prince": [
     "Ends with NCE",
@@ -5735,14 +5770,16 @@
     "Musicians",
     "People",
     "Royalty",
-    "Starts with PRI"
+    "Starts with PRI",
+    "Things American"
   ],
   "Beyonce": [
     "Ends with NCE",
     "Female Names",
     "Musicians",
     "People",
-    "Starts with BEY"
+    "Starts with BEY",
+    "Things American"
   ],
   "Beta": [
     "Ends with ETA",
@@ -5871,43 +5908,50 @@
     "Ends with XIA",
     "K-pop",
     "Musicians",
-    "Starts with XIA"
+    "Starts with XIA",
+    "Things Korean"
   ],
   "BTS": [
     "Acronyms",
     "Ends with BTS",
     "K-pop",
-    "Starts with BTS"
+    "Starts with BTS",
+    "Things Korean"
   ],
   "EXO": [
     "Acronyms",
     "Ends with EXO",
     "K-pop",
-    "Starts with EXO"
+    "Starts with EXO",
+    "Things Korean"
   ],
   "BLACKPINK": [
     "Black Things",
     "Ends with INK",
     "K-pop",
     "Pink Things",
-    "Starts with BLA"
+    "Starts with BLA",
+    "Things Korean"
   ],
   "Seventeen": [
     "Ends with EEN",
     "K-pop",
-    "Starts with SEV"
+    "Starts with SEV",
+    "Things Korean"
   ],
   "2PM": [
     "Acronyms",
     "Ends with 2PM",
     "K-pop",
-    "Starts with 2PM"
+    "Starts with 2PM",
+    "Things Korean"
   ],
   "GOT7": [
     "Acronyms",
     "Ends with OT7",
     "K-pop",
-    "Starts with GOT"
+    "Starts with GOT",
+    "Things Korean"
   ],
   "Red Velvet": [
     "Colors",
@@ -5915,24 +5959,28 @@
     "Foods",
     "K-pop",
     "Red Things",
-    "Starts with RED"
+    "Starts with RED",
+    "Things Korean"
   ],
   "Super Junior": [
     "Ends with IOR",
     "K-pop",
-    "Starts with SUP"
+    "Starts with SUP",
+    "Things Korean"
   ],
   "(G)I-DLE": [
     "Acronyms",
     "Ends with DLE",
     "K-pop",
-    "Starts with (G)"
+    "Starts with (G)",
+    "Things Korean"
   ],
   "iKON": [
     "Acronyms",
     "Ends with KON",
     "K-pop",
-    "Starts with IKO"
+    "Starts with IKO",
+    "Things Korean"
   ],
   "Fire Truck": [
     "Ends with UCK",
@@ -6428,6 +6476,7 @@
     "Ends with ILK",
     "Foods",
     "Starts with MIL",
+    "Things American",
     "White Things"
   ],
   "Swan": [
@@ -6691,7 +6740,8 @@
     "Music",
     "People",
     "Real People",
-    "Starts with MOZ"
+    "Starts with MOZ",
+    "Things Austrian"
   ],
   "Beethoven": [
     "Classical Composers",
@@ -6715,7 +6765,8 @@
     "Music",
     "People",
     "Real People",
-    "Starts with HAN"
+    "Starts with HAN",
+    "Things German"
   ],
   "Melody": [
     "Ends with ODY",
@@ -6956,11 +7007,13 @@
   "Coffee": [
     "Black Things",
     "Breakfast",
+    "Brown Things",
     "Coffee",
     "Drinks",
     "Ends with FEE",
     "Hot Beverages",
-    "Starts with COF"
+    "Starts with COF",
+    "Things American"
   ],
   "Python": [
     "Ends with HON",
@@ -7293,7 +7346,8 @@
     "Drinks",
     "Ends with ICE",
     "OJ Simpson",
-    "Starts with JUI"
+    "Starts with JUI",
+    "Things American"
   ],
   "Hash": [
     "Breakfast",
@@ -7407,9 +7461,11 @@
     "3D Animated Films",
     "Ends with LLE",
     "Family Stories",
+    "Foods",
     "Movies",
     "Pixar",
-    "Starts with RAT"
+    "Starts with RAT",
+    "Things French"
   ],
   "Rat": [
     "Ends with RAT",
@@ -7572,7 +7628,8 @@
     "Band Namesakes",
     "Ends with LIN",
     "Musicians",
-    "Starts with ZEP"
+    "Starts with ZEP",
+    "Things British"
   ],
   "Ammonia": [
     "Chemicals",
@@ -10427,12 +10484,12 @@
     "Ends with WAY",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hayao Miyazaki",
     "Oscar Winners",
     "Starts with SPI",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "My Neighbor Totoro": [
     "2D Animated Films",
@@ -10440,11 +10497,11 @@
     "Ends with ORO",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hayao Miyazaki",
     "Starts with MY ",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Castle in the Sky": [
     "2D Animated Films",
@@ -10452,11 +10509,11 @@
     "Ends with SKY",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hayao Miyazaki",
     "Starts with CAS",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Kiki's Delivery Service": [
     "2D Animated Films",
@@ -10464,11 +10521,11 @@
     "Ends with ICE",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hayao Miyazaki",
     "Starts with KIK",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Porco Rosso": [
     "2D Animated Films",
@@ -10476,11 +10533,11 @@
     "Ends with SSO",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hayao Miyazaki",
     "Starts with POR",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Princess Mononoke": [
     "2D Animated Films",
@@ -10488,11 +10545,11 @@
     "Ends with OKE",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hayao Miyazaki",
     "Starts with PRI",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Howl's Moving Castle": [
     "2D Animated Films",
@@ -10500,11 +10557,11 @@
     "Ends with TLE",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hayao Miyazaki",
     "Starts with HOW",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Ponyo": [
     "2D Animated Films",
@@ -10512,44 +10569,44 @@
     "Ends with NYO",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hayao Miyazaki",
     "Starts with PON",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "The Wind Rises": [
     "2D Animated Films",
     "Anime",
     "Ends with SES",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hayao Miyazaki",
     "Starts with THE",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Grave of the Fireflies": [
     "2D Animated Films",
     "Anime",
     "Ends with IES",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Isao Takahata",
     "Starts with GRA",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Only Yesterday": [
     "2D Animated Films",
     "Anime",
     "Ends with DAY",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Isao Takahata",
     "Starts with ONL",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Pom Poko": [
     "2D Animated Films",
@@ -10557,22 +10614,22 @@
     "Ends with OKO",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Isao Takahata",
     "Starts with POM",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Whisper of the Heart": [
     "2D Animated Films",
     "Anime",
     "Ends with ART",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Yoshifumi Kondo",
     "Starts with WHI",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "The Cat Returns": [
     "2D Animated Films",
@@ -10580,11 +10637,11 @@
     "Ends with RNS",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hiroyuki Morita",
     "Starts with THE",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Tales from Earthsea": [
     "2D Animated Films",
@@ -10592,11 +10649,11 @@
     "Ends with SEA",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Gorō Miyazaki",
     "Starts with TAL",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Arrietty": [
     "2D Animated Films",
@@ -10604,22 +10661,22 @@
     "Ends with TTY",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hiromasa Yonebayashi",
     "Starts with ARR",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "From Up on Poppy Hill": [
     "2D Animated Films",
     "Anime",
     "Ends with ILL",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Gorō Miyazaki",
     "Starts with FRO",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "The Tale of the Princess Kaguya": [
     "2D Animated Films",
@@ -10627,11 +10684,11 @@
     "Ends with UYA",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Isao Takahata",
     "Starts with THE",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "When Marnie Was There": [
     "2D Animated Films",
@@ -10639,11 +10696,11 @@
     "Ends with ERE",
     "Fantasy Stories",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Hiromasa Yonebayashi",
     "Starts with WHE",
-    "Studio Ghibli"
+    "Studio Ghibli",
+    "Things Japanese"
   ],
   "Akira": [
     "2D Animated Films",
@@ -10651,10 +10708,10 @@
     "Cult Classics",
     "Ends with IRA",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Sci-fi Stories",
-    "Starts with AKI"
+    "Starts with AKI",
+    "Things Japanese"
   ],
   "Star Wars": [
     "Adventure Stories",
@@ -11711,12 +11768,12 @@
     "Drama Stories",
     "Ends with RAI",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
     "Period Stories",
     "Samurai Stories",
     "Starts with SEV",
+    "Things Japanese",
     "War Stories"
   ],
   "Rashomon": [
@@ -11725,11 +11782,11 @@
     "Drama Stories",
     "Ends with MON",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
     "Period Stories",
-    "Starts with RAS"
+    "Starts with RAS",
+    "Things Japanese"
   ],
   "Yojimbo": [
     "Black and White",
@@ -11737,12 +11794,12 @@
     "Drama Stories",
     "Ends with MBO",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
     "Period Stories",
     "Samurai Stories",
-    "Starts with YOJ"
+    "Starts with YOJ",
+    "Things Japanese"
   ],
   "Sanjuro": [
     "Black and White",
@@ -11750,12 +11807,12 @@
     "Drama Stories",
     "Ends with URO",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
     "Period Stories",
     "Samurai Stories",
-    "Starts with SAN"
+    "Starts with SAN",
+    "Things Japanese"
   ],
   "Throne of Blood": [
     "Black and White",
@@ -11763,12 +11820,12 @@
     "Drama Stories",
     "Ends with OOD",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
     "Period Stories",
     "Samurai Stories",
-    "Starts with THR"
+    "Starts with THR",
+    "Things Japanese"
   ],
   "The Hidden Fortress": [
     "Black and White",
@@ -11776,12 +11833,12 @@
     "Drama Stories",
     "Ends with ESS",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
     "Period Stories",
     "Samurai Stories",
     "Starts with THE",
+    "Things Japanese",
     "War Stories"
   ],
   "Ikiru": [
@@ -11790,10 +11847,10 @@
     "Drama Stories",
     "Ends with IRU",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
-    "Starts with IKI"
+    "Starts with IKI",
+    "Things Japanese"
   ],
   "High and Low": [
     "Black and White",
@@ -11801,10 +11858,10 @@
     "Drama Stories",
     "Ends with LOW",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
-    "Starts with HIG"
+    "Starts with HIG",
+    "Things Japanese"
   ],
   "Red Beard": [
     "Black and White",
@@ -11812,23 +11869,23 @@
     "Drama Stories",
     "Ends with ARD",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
     "Period Stories",
     "Red Things",
-    "Starts with RED"
+    "Starts with RED",
+    "Things Japanese"
   ],
   "Ran": [
     "Drama Stories",
     "Ends with RAN",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
     "Period Stories",
     "Samurai Stories",
     "Starts with RAN",
+    "Things Japanese",
     "War Stories"
   ],
   "Kagemusha": [
@@ -11837,22 +11894,22 @@
     "Drama Stories",
     "Ends with SHA",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
     "Period Stories",
     "Samurai Stories",
     "Starts with KAG",
+    "Things Japanese",
     "War Stories"
   ],
   "Dreams": [
     "Drama Stories",
     "Ends with AMS",
     "Japanese Films",
-    "Japanese Things",
     "Movies",
     "Movies directed by Akira Kurosawa",
-    "Starts with DRE"
+    "Starts with DRE",
+    "Things Japanese"
   ],
   "The Big Sleep": [
     "Black and White",
@@ -15183,10 +15240,12 @@
   ],
   "Madeira": [
     "Archipelagos",
+    "Drinks",
     "Ends with IRA",
     "Locations in Europe",
     "Place Names",
-    "Starts with MAD"
+    "Starts with MAD",
+    "Things Portuguese"
   ],
   "Azores": [
     "Archipelagos",
@@ -16047,5 +16106,2117 @@
     "Religious Stories",
     "Starts with THE",
     "Things Indian"
+  ],
+  "Gyoza": [
+    "Dumplings",
+    "Ends with OZA",
+    "Foods",
+    "Starts with GYO",
+    "Things Japanese"
+  ],
+  "Pierogi": [
+    "Dumplings",
+    "Ends with OGI",
+    "Foods",
+    "Starts with PIE",
+    "Things Polish"
+  ],
+  "Dumpling": [
+    "Dumplings",
+    "Ends with ING",
+    "Foods",
+    "Starts with DUM",
+    "Things Chinese"
+  ],
+  "Wonton": [
+    "Dumplings",
+    "Ends with TON",
+    "Foods",
+    "Starts with WON",
+    "Things Chinese"
+  ],
+  "Ravioli": [
+    "Dumplings",
+    "Ends with OLI",
+    "Foods",
+    "Starts with RAV",
+    "Things Italian"
+  ],
+  "Tortellini": [
+    "Dumplings",
+    "Ends with INI",
+    "Foods",
+    "Starts with TOR",
+    "Things Italian"
+  ],
+  "Ramen": [
+    "Ends with MEN",
+    "Foods",
+    "Noodles",
+    "Starts with RAM",
+    "Things Japanese"
+  ],
+  "Udon": [
+    "Ends with DON",
+    "Foods",
+    "Noodles",
+    "Starts with UDO",
+    "Things Japanese"
+  ],
+  "Soba": [
+    "Ends with OBA",
+    "Foods",
+    "Noodles",
+    "Starts with SOB",
+    "Things Japanese"
+  ],
+  "Spaghetti": [
+    "Ends with TTI",
+    "Foods",
+    "Noodles",
+    "Starts with SPA",
+    "Things Italian"
+  ],
+  "Fettuccine": [
+    "Ends with INE",
+    "Foods",
+    "Noodles",
+    "Starts with FET",
+    "Things Italian"
+  ],
+  "Penne": [
+    "Ends with NNE",
+    "Foods",
+    "Noodles",
+    "Starts with PEN",
+    "Things Italian"
+  ],
+  "Linguine": [
+    "Ends with INE",
+    "Foods",
+    "Noodles",
+    "Starts with LIN",
+    "Things Italian"
+  ],
+  "Lasagna": [
+    "Ends with GNA",
+    "Foods",
+    "Noodles",
+    "Starts with LAS",
+    "Things Italian"
+  ],
+  "Lo Mein": [
+    "Ends with EIN",
+    "Foods",
+    "Noodles",
+    "Starts with LO ",
+    "Things Chinese"
+  ],
+  "Chow Mein": [
+    "Ends with EIN",
+    "Foods",
+    "Noodles",
+    "Starts with CHO",
+    "Things Chinese"
+  ],
+  "Pad Thai": [
+    "Ends with HAI",
+    "Foods",
+    "Noodles",
+    "Starts with PAD",
+    "Things Thai"
+  ],
+  "Marinara": [
+    "Ends with ARA",
+    "Foods",
+    "Red Things",
+    "Sauces",
+    "Starts with MAR",
+    "Things Italian"
+  ],
+  "Pesto": [
+    "Ends with STO",
+    "Foods",
+    "Green Things",
+    "Sauces",
+    "Starts with PES",
+    "Things Italian"
+  ],
+  "Alfredo": [
+    "Ends with EDO",
+    "Foods",
+    "Sauces",
+    "Starts with ALF",
+    "Things Italian",
+    "White Things"
+  ],
+  "Bolognese": [
+    "Ends with ESE",
+    "Foods",
+    "Red Things",
+    "Sauces",
+    "Starts with BOL",
+    "Things Italian"
+  ],
+  "Carbonara": [
+    "Ends with ARA",
+    "Foods",
+    "Sauces",
+    "Starts with CAR",
+    "Things Italian",
+    "White Things"
+  ],
+  "Teriyaki": [
+    "Ends with AKI",
+    "Foods",
+    "Sauces",
+    "Starts with TER",
+    "Things Japanese"
+  ],
+  "Miso": [
+    "Ends with ISO",
+    "Foods",
+    "Sauces",
+    "Starts with MIS",
+    "Things Japanese"
+  ],
+  "Wasabi": [
+    "Ends with ABI",
+    "Foods",
+    "Green Things",
+    "Sauces",
+    "Starts with WAS",
+    "Things Japanese"
+  ],
+  "Sriracha": [
+    "Ends with CHA",
+    "Foods",
+    "Red Things",
+    "Sauces",
+    "Starts with SRI",
+    "Things Thai"
+  ],
+  "Hoisin": [
+    "Ends with SIN",
+    "Foods",
+    "Sauces",
+    "Starts with HOI",
+    "Things Chinese"
+  ],
+  "Oyster Sauce": [
+    "Ends with UCE",
+    "Foods",
+    "Sauces",
+    "Starts with OYS",
+    "Things Chinese"
+  ],
+  "Fish Sauce": [
+    "Ends with UCE",
+    "Foods",
+    "Sauces",
+    "Starts with FIS",
+    "Things Thai"
+  ],
+  "Nuoc Cham": [
+    "Ends with HAM",
+    "Foods",
+    "Sauces",
+    "Starts with NUO",
+    "Things Vietnamese"
+  ],
+  "Chimichurri": [
+    "Ends with RRI",
+    "Foods",
+    "Green Things",
+    "Sauces",
+    "Starts with CHI",
+    "Things Argentine"
+  ],
+  "Mole": [
+    "Ends with OLE",
+    "Foods",
+    "Sauces",
+    "Starts with MOL",
+    "Things Mexican"
+  ],
+  "Guacamole": [
+    "Ends with OLE",
+    "Foods",
+    "Green Things",
+    "Sauces",
+    "Starts with GUA",
+    "Things Mexican"
+  ],
+  "Hummus": [
+    "Ends with MUS",
+    "Foods",
+    "Sauces",
+    "Starts with HUM",
+    "Things Middle Eastern"
+  ],
+  "Tahini": [
+    "Ends with INI",
+    "Foods",
+    "Sauces",
+    "Starts with TAH",
+    "Things Middle Eastern"
+  ],
+  "Tzatziki": [
+    "Ends with IKI",
+    "Foods",
+    "Sauces",
+    "Starts with TZA",
+    "Things Greek"
+  ],
+  "Aioli": [
+    "Ends with OLI",
+    "Foods",
+    "Sauces",
+    "Starts with AIO",
+    "Things French",
+    "White Things"
+  ],
+  "Bechamel": [
+    "Ends with MEL",
+    "Foods",
+    "Sauces",
+    "Starts with BEC",
+    "Things French",
+    "White Things"
+  ],
+  "Hollandaise": [
+    "Ends with ISE",
+    "Foods",
+    "Sauces",
+    "Starts with HOL",
+    "Things French",
+    "Yellow Things"
+  ],
+  "Bearnaise": [
+    "Ends with ISE",
+    "Foods",
+    "Sauces",
+    "Starts with BEA",
+    "Things French"
+  ],
+  "Veloute": [
+    "Ends with UTE",
+    "Foods",
+    "Sauces",
+    "Starts with VEL",
+    "Things French",
+    "White Things"
+  ],
+  "Espagnole": [
+    "Brown Things",
+    "Ends with OLE",
+    "Foods",
+    "Sauces",
+    "Starts with ESP",
+    "Things French"
+  ],
+  "Pizza": [
+    "Breads",
+    "Ends with ZZA",
+    "Flatbreads",
+    "Foods",
+    "Starts with PIZ",
+    "Things Italian"
+  ],
+  "Focaccia": [
+    "Breads",
+    "Ends with CIA",
+    "Foods",
+    "Starts with FOC",
+    "Things Italian"
+  ],
+  "Ciabatta": [
+    "Breads",
+    "Ends with TTA",
+    "Foods",
+    "Starts with CIA",
+    "Things Italian"
+  ],
+  "Baguette": [
+    "Breads",
+    "Ends with TTE",
+    "Foods",
+    "Starts with BAG",
+    "Things French"
+  ],
+  "Croissant": [
+    "Breads",
+    "Ends with ANT",
+    "Foods",
+    "Starts with CRO",
+    "Things French"
+  ],
+  "Brioche": [
+    "Breads",
+    "Ends with CHE",
+    "Foods",
+    "Starts with BRI",
+    "Things French"
+  ],
+  "Challah": [
+    "Breads",
+    "Ends with LAH",
+    "Foods",
+    "Starts with CHA",
+    "Things Jewish"
+  ],
+  "Bagel": [
+    "Breads",
+    "Ends with GEL",
+    "Foods",
+    "Starts with BAG",
+    "Things Jewish"
+  ],
+  "Pita": [
+    "Breads",
+    "Ends with ITA",
+    "Foods",
+    "Starts with PIT",
+    "Things Middle Eastern"
+  ],
+  "Naan": [
+    "Breads",
+    "Ends with AAN",
+    "Foods",
+    "Starts with NAA",
+    "Things Indian"
+  ],
+  "Roti": [
+    "Breads",
+    "Ends with OTI",
+    "Foods",
+    "Starts with ROT",
+    "Things Indian"
+  ],
+  "Tortilla": [
+    "Breads",
+    "Ends with LLA",
+    "Foods",
+    "Starts with TOR",
+    "Things Mexican"
+  ],
+  "Arepa": [
+    "Breads",
+    "Ends with EPA",
+    "Foods",
+    "Starts with ARE",
+    "Things Colombian"
+  ],
+  "Empanada": [
+    "Ends with ADA",
+    "Foods",
+    "Starts with EMP",
+    "Things Spanish"
+  ],
+  "Pretzel": [
+    "Breads",
+    "Brown Things",
+    "Ends with ZEL",
+    "Foods",
+    "Starts with PRE",
+    "Things German"
+  ],
+  "Brezel": [
+    "Breads",
+    "Brown Things",
+    "Ends with ZEL",
+    "Foods",
+    "Starts with BRE",
+    "Things German"
+  ],
+  "Sourdough": [
+    "Breads",
+    "Ends with UGH",
+    "Foods",
+    "Starts with SOU",
+    "Things American"
+  ],
+  "Rye": [
+    "Breads",
+    "Brown Things",
+    "Ends with RYE",
+    "Foods",
+    "Starts with RYE",
+    "Things German"
+  ],
+  "Pumpernickel": [
+    "Breads",
+    "Brown Things",
+    "Ends with KEL",
+    "Foods",
+    "Starts with PUM",
+    "Things German"
+  ],
+  "Mapo Tofu": [
+    "Ends with OFU",
+    "Foods",
+    "Sichuan Dishes",
+    "Spicy Foods",
+    "Starts with MAP",
+    "Things Chinese"
+  ],
+  "Kung Pao Chicken": [
+    "Ends with KEN",
+    "Foods",
+    "Sichuan Dishes",
+    "Spicy Foods",
+    "Starts with KUN",
+    "Things Chinese"
+  ],
+  "Dan Dan Noodles": [
+    "Ends with LES",
+    "Foods",
+    "Noodles",
+    "Sichuan Dishes",
+    "Spicy Foods",
+    "Starts with DAN",
+    "Things Chinese"
+  ],
+  "Twice Cooked Pork": [
+    "Ends with ORK",
+    "Foods",
+    "Sichuan Dishes",
+    "Starts with TWI",
+    "Things Chinese"
+  ],
+  "Gong Bao Ji Ding": [
+    "Ends with ING",
+    "Foods",
+    "Sichuan Dishes",
+    "Spicy Foods",
+    "Starts with GON",
+    "Things Chinese"
+  ],
+  "Ma La Tang": [
+    "Ends with ANG",
+    "Foods",
+    "Sichuan Dishes",
+    "Spicy Foods",
+    "Starts with MA ",
+    "Things Chinese"
+  ],
+  "Hui Guo Rou": [
+    "Ends with ROU",
+    "Foods",
+    "Sichuan Dishes",
+    "Starts with HUI",
+    "Things Chinese"
+  ],
+  "Yu Xiang Qie Zi": [
+    "Ends with  ZI",
+    "Foods",
+    "Sichuan Dishes",
+    "Starts with YU ",
+    "Things Chinese"
+  ],
+  "Lox": [
+    "Ends with LOX",
+    "Foods",
+    "Jewish Foods",
+    "Starts with LOX",
+    "Things Jewish"
+  ],
+  "Schmaltz": [
+    "Ends with LTZ",
+    "Foods",
+    "Jewish Foods",
+    "Starts with SCH",
+    "Things Jewish"
+  ],
+  "Gefilte Fish": [
+    "Ends with ISH",
+    "Foods",
+    "Jewish Foods",
+    "Starts with GEF",
+    "Things Jewish"
+  ],
+  "Matzo Ball": [
+    "Ends with ALL",
+    "Foods",
+    "Jewish Foods",
+    "Starts with MAT",
+    "Things Jewish"
+  ],
+  "Kugel": [
+    "Ends with GEL",
+    "Foods",
+    "Jewish Foods",
+    "Starts with KUG",
+    "Things Jewish"
+  ],
+  "Latke": [
+    "Ends with TKE",
+    "Foods",
+    "Jewish Foods",
+    "Starts with LAT",
+    "Things Jewish"
+  ],
+  "Brisket": [
+    "Ends with KET",
+    "Foods",
+    "Jewish Foods",
+    "Starts with BRI",
+    "Things Jewish"
+  ],
+  "Pastrami": [
+    "Ends with AMI",
+    "Foods",
+    "Jewish Foods",
+    "Starts with PAS",
+    "Things Jewish"
+  ],
+  "Corned Beef": [
+    "Ends with EEF",
+    "Foods",
+    "Jewish Foods",
+    "Starts with COR",
+    "Things Jewish"
+  ],
+  "Kishka": [
+    "Ends with HKA",
+    "Foods",
+    "Jewish Foods",
+    "Starts with KIS",
+    "Things Jewish"
+  ],
+  "Kreplach": [
+    "Ends with ACH",
+    "Foods",
+    "Jewish Foods",
+    "Starts with KRE",
+    "Things Jewish"
+  ],
+  "Kasha": [
+    "Ends with SHA",
+    "Foods",
+    "Jewish Foods",
+    "Starts with KAS",
+    "Things Jewish"
+  ],
+  "Tzimmes": [
+    "Ends with MES",
+    "Foods",
+    "Jewish Foods",
+    "Starts with TZI",
+    "Things Jewish"
+  ],
+  "Rugelach": [
+    "Desserts",
+    "Ends with ACH",
+    "Foods",
+    "Jewish Foods",
+    "Starts with RUG",
+    "Things Jewish"
+  ],
+  "Hamantaschen": [
+    "Desserts",
+    "Ends with HEN",
+    "Foods",
+    "Jewish Foods",
+    "Starts with HAM",
+    "Things Jewish"
+  ],
+  "Pasta": [
+    "Ends with STA",
+    "Foods",
+    "Noodles",
+    "Starts with PAS",
+    "Things Italian"
+  ],
+  "Risotto": [
+    "Ends with TTO",
+    "Foods",
+    "Starts with RIS",
+    "Things Italian"
+  ],
+  "Osso Buco": [
+    "Ends with UCO",
+    "Foods",
+    "Starts with OSS",
+    "Things Italian"
+  ],
+  "Bruschetta": [
+    "Ends with TTA",
+    "Foods",
+    "Starts with BRU",
+    "Things Italian"
+  ],
+  "Minestrone": [
+    "Ends with ONE",
+    "Foods",
+    "Starts with MIN",
+    "Things Italian"
+  ],
+  "Tiramisu": [
+    "Desserts",
+    "Ends with ISU",
+    "Foods",
+    "Starts with TIR",
+    "Things Italian"
+  ],
+  "Gelato": [
+    "Desserts",
+    "Ends with ATO",
+    "Foods",
+    "Starts with GEL",
+    "Things Italian"
+  ],
+  "Cannoli": [
+    "Desserts",
+    "Ends with OLI",
+    "Foods",
+    "Starts with CAN",
+    "Things Italian"
+  ],
+  "Panna Cotta": [
+    "Desserts",
+    "Ends with TTA",
+    "Foods",
+    "Starts with PAN",
+    "Things Italian"
+  ],
+  "Affogato": [
+    "Desserts",
+    "Ends with ATO",
+    "Foods",
+    "Starts with AFF",
+    "Things Italian"
+  ],
+  "Escargot": [
+    "Ends with GOT",
+    "Foods",
+    "Starts with ESC",
+    "Things French"
+  ],
+  "Coq au Vin": [
+    "Ends with VIN",
+    "Foods",
+    "Starts with COQ",
+    "Things French"
+  ],
+  "Bouillabaisse": [
+    "Ends with SSE",
+    "Foods",
+    "Starts with BOU",
+    "Things French"
+  ],
+  "Cassoulet": [
+    "Ends with LET",
+    "Foods",
+    "Starts with CAS",
+    "Things French"
+  ],
+  "Quiche": [
+    "Ends with CHE",
+    "Foods",
+    "Starts with QUI",
+    "Things French"
+  ],
+  "Croque Monsieur": [
+    "Ends with EUR",
+    "Foods",
+    "Starts with CRO",
+    "Things French"
+  ],
+  "French Onion Soup": [
+    "Ends with OUP",
+    "Foods",
+    "Starts with FRE",
+    "Things French"
+  ],
+  "Beef Bourguignon": [
+    "Ends with NON",
+    "Foods",
+    "Starts with BEE",
+    "Things French"
+  ],
+  "Duck Confit": [
+    "Ends with FIT",
+    "Foods",
+    "Starts with DUC",
+    "Things French"
+  ],
+  "Souffle": [
+    "Ends with FLE",
+    "Foods",
+    "Starts with SOU",
+    "Things French"
+  ],
+  "Crepe": [
+    "Ends with EPE",
+    "Foods",
+    "Starts with CRE",
+    "Things French"
+  ],
+  "Macaron": [
+    "Desserts",
+    "Ends with RON",
+    "Foods",
+    "Starts with MAC",
+    "Things French"
+  ],
+  "Eclair": [
+    "Desserts",
+    "Ends with AIR",
+    "Foods",
+    "Starts with ECL",
+    "Things French"
+  ],
+  "Madeleine": [
+    "Desserts",
+    "Ends with INE",
+    "Foods",
+    "Starts with MAD",
+    "Things French"
+  ],
+  "Profiterole": [
+    "Desserts",
+    "Ends with OLE",
+    "Foods",
+    "Starts with PRO",
+    "Things French"
+  ],
+  "Sauerkraut": [
+    "Ends with AUT",
+    "Foods",
+    "Starts with SAU",
+    "Things German"
+  ],
+  "Bratwurst": [
+    "Ends with RST",
+    "Foods",
+    "Starts with BRA",
+    "Things German"
+  ],
+  "Schnitzel": [
+    "Ends with ZEL",
+    "Foods",
+    "Starts with SCH",
+    "Things German"
+  ],
+  "Sauerbraten": [
+    "Ends with TEN",
+    "Foods",
+    "Starts with SAU",
+    "Things German"
+  ],
+  "Kartoffelsalat": [
+    "Ends with LAT",
+    "Foods",
+    "Starts with KAR",
+    "Things German"
+  ],
+  "Spätzle": [
+    "Ends with ZLE",
+    "Foods",
+    "Starts with SPÄ",
+    "Things German"
+  ],
+  "Rouladen": [
+    "Ends with DEN",
+    "Foods",
+    "Starts with ROU",
+    "Things German"
+  ],
+  "Käsespätzle": [
+    "Ends with ZLE",
+    "Foods",
+    "Starts with KÄS",
+    "Things German"
+  ],
+  "Apfelstrudel": [
+    "Desserts",
+    "Ends with DEL",
+    "Foods",
+    "Starts with APF",
+    "Things German"
+  ],
+  "Black Forest Cake": [
+    "Desserts",
+    "Ends with AKE",
+    "Foods",
+    "Starts with BLA",
+    "Things German"
+  ],
+  "Kielbasa": [
+    "Ends with ASA",
+    "Foods",
+    "Starts with KIE",
+    "Things Polish"
+  ],
+  "Bigos": [
+    "Ends with GOS",
+    "Foods",
+    "Starts with BIG",
+    "Things Polish"
+  ],
+  "Golabki": [
+    "Ends with BKI",
+    "Foods",
+    "Starts with GOL",
+    "Things Polish"
+  ],
+  "Kotlet Schabowy": [
+    "Ends with OWY",
+    "Foods",
+    "Starts with KOT",
+    "Things Polish"
+  ],
+  "Zurek": [
+    "Ends with REK",
+    "Foods",
+    "Starts with ZUR",
+    "Things Polish"
+  ],
+  "Barszcz": [
+    "Ends with ZCZ",
+    "Foods",
+    "Red Things",
+    "Starts with BAR",
+    "Things Polish"
+  ],
+  "Paczki": [
+    "Desserts",
+    "Ends with ZKI",
+    "Foods",
+    "Starts with PAC",
+    "Things Polish"
+  ],
+  "Makowiec": [
+    "Desserts",
+    "Ends with IEC",
+    "Foods",
+    "Starts with MAK",
+    "Things Polish"
+  ],
+  "Borscht": [
+    "Ends with CHT",
+    "Foods",
+    "Red Things",
+    "Starts with BOR",
+    "Things Russian"
+  ],
+  "Pelmeni": [
+    "Dumplings",
+    "Ends with ENI",
+    "Foods",
+    "Starts with PEL",
+    "Things Russian"
+  ],
+  "Vareniki": [
+    "Dumplings",
+    "Ends with IKI",
+    "Foods",
+    "Starts with VAR",
+    "Things Russian"
+  ],
+  "Blini": [
+    "Ends with INI",
+    "Foods",
+    "Starts with BLI",
+    "Things Russian"
+  ],
+  "Caviar": [
+    "Ends with IAR",
+    "Foods",
+    "Starts with CAV",
+    "Things Russian"
+  ],
+  "Shashlik": [
+    "Ends with LIK",
+    "Foods",
+    "Starts with SHA",
+    "Things Russian"
+  ],
+  "Olivier Salad": [
+    "Ends with LAD",
+    "Foods",
+    "Starts with OLI",
+    "Things Russian"
+  ],
+  "Kotleti": [
+    "Ends with ETI",
+    "Foods",
+    "Starts with KOT",
+    "Things Russian"
+  ],
+  "Solyanka": [
+    "Ends with NKA",
+    "Foods",
+    "Starts with SOL",
+    "Things Russian"
+  ],
+  "Medovik": [
+    "Desserts",
+    "Ends with VIK",
+    "Foods",
+    "Starts with MED",
+    "Things Russian"
+  ],
+  "Dim Sum": [
+    "Ends with SUM",
+    "Foods",
+    "Starts with DIM",
+    "Things Chinese"
+  ],
+  "Peking Duck": [
+    "Ends with UCK",
+    "Foods",
+    "Starts with PEK",
+    "Things Chinese"
+  ],
+  "Sweet and Sour": [
+    "Ends with OUR",
+    "Foods",
+    "Starts with SWE",
+    "Things Chinese"
+  ],
+  "General Tso": [
+    "Ends with TSO",
+    "Foods",
+    "Starts with GEN",
+    "Things Chinese"
+  ],
+  "Orange Chicken": [
+    "Ends with KEN",
+    "Foods",
+    "Starts with ORA",
+    "Things Chinese"
+  ],
+  "Egg Foo Young": [
+    "Ends with UNG",
+    "Foods",
+    "Starts with EGG",
+    "Things Chinese"
+  ],
+  "Chow Fun": [
+    "Ends with FUN",
+    "Foods",
+    "Noodles",
+    "Starts with CHO",
+    "Things Chinese"
+  ],
+  "Hot Pot": [
+    "Ends with POT",
+    "Foods",
+    "Starts with HOT",
+    "Things Chinese"
+  ],
+  "Xiaolongbao": [
+    "Dumplings",
+    "Ends with BAO",
+    "Foods",
+    "Starts with XIA",
+    "Things Chinese"
+  ],
+  "Char Siu": [
+    "Ends with SIU",
+    "Foods",
+    "Starts with CHA",
+    "Things Chinese"
+  ],
+  "Congee": [
+    "Ends with GEE",
+    "Foods",
+    "Starts with CON",
+    "Things Chinese"
+  ],
+  "Jiaozi": [
+    "Dumplings",
+    "Ends with OZI",
+    "Foods",
+    "Starts with JIA",
+    "Things Chinese"
+  ],
+  "Bao": [
+    "Breads",
+    "Ends with BAO",
+    "Foods",
+    "Starts with BAO",
+    "Things Chinese"
+  ],
+  "Mooncake": [
+    "Desserts",
+    "Ends with AKE",
+    "Foods",
+    "Starts with MOO",
+    "Things Chinese"
+  ],
+  "Sushi": [
+    "Ends with SHI",
+    "Foods",
+    "Starts with SUS",
+    "Things Japanese"
+  ],
+  "Sashimi": [
+    "Ends with IMI",
+    "Foods",
+    "Starts with SAS",
+    "Things Japanese"
+  ],
+  "Tempura": [
+    "Ends with URA",
+    "Foods",
+    "Starts with TEM",
+    "Things Japanese"
+  ],
+  "Tonkatsu": [
+    "Ends with TSU",
+    "Foods",
+    "Starts with TON",
+    "Things Japanese"
+  ],
+  "Okonomiyaki": [
+    "Ends with AKI",
+    "Foods",
+    "Starts with OKO",
+    "Things Japanese"
+  ],
+  "Takoyaki": [
+    "Ends with AKI",
+    "Foods",
+    "Starts with TAK",
+    "Things Japanese"
+  ],
+  "Yakitori": [
+    "Ends with ORI",
+    "Foods",
+    "Starts with YAK",
+    "Things Japanese"
+  ],
+  "Sukiyaki": [
+    "Ends with AKI",
+    "Foods",
+    "Starts with SUK",
+    "Things Japanese"
+  ],
+  "Shabu Shabu": [
+    "Ends with ABU",
+    "Foods",
+    "Starts with SHA",
+    "Things Japanese"
+  ],
+  "Oden": [
+    "Ends with DEN",
+    "Foods",
+    "Starts with ODE",
+    "Things Japanese"
+  ],
+  "Onigiri": [
+    "Ends with IRI",
+    "Foods",
+    "Starts with ONI",
+    "Things Japanese"
+  ],
+  "Mochi": [
+    "Desserts",
+    "Ends with CHI",
+    "Foods",
+    "Starts with MOC",
+    "Things Japanese"
+  ],
+  "Dorayaki": [
+    "Desserts",
+    "Ends with AKI",
+    "Foods",
+    "Starts with DOR",
+    "Things Japanese"
+  ],
+  "Taiyaki": [
+    "Desserts",
+    "Ends with AKI",
+    "Foods",
+    "Starts with TAI",
+    "Things Japanese"
+  ],
+  "Dango": [
+    "Desserts",
+    "Ends with NGO",
+    "Foods",
+    "Starts with DAN",
+    "Things Japanese"
+  ],
+  "Tandoori": [
+    "Ends with ORI",
+    "Foods",
+    "Starts with TAN",
+    "Things Indian"
+  ],
+  "Biryani": [
+    "Ends with ANI",
+    "Foods",
+    "Starts with BIR",
+    "Things Indian"
+  ],
+  "Tikka Masala": [
+    "Ends with ALA",
+    "Foods",
+    "Starts with TIK",
+    "Things Indian"
+  ],
+  "Vindaloo": [
+    "Ends with LOO",
+    "Foods",
+    "Spicy Foods",
+    "Starts with VIN",
+    "Things Indian"
+  ],
+  "Korma": [
+    "Ends with RMA",
+    "Foods",
+    "Starts with KOR",
+    "Things Indian"
+  ],
+  "Rogan Josh": [
+    "Ends with OSH",
+    "Foods",
+    "Starts with ROG",
+    "Things Indian"
+  ],
+  "Butter Chicken": [
+    "Ends with KEN",
+    "Foods",
+    "Starts with BUT",
+    "Things Indian"
+  ],
+  "Palak Paneer": [
+    "Ends with EER",
+    "Foods",
+    "Green Things",
+    "Starts with PAL",
+    "Things Indian"
+  ],
+  "Dal": [
+    "Ends with DAL",
+    "Foods",
+    "Starts with DAL",
+    "Things Indian"
+  ],
+  "Chutney": [
+    "Ends with NEY",
+    "Foods",
+    "Sauces",
+    "Starts with CHU",
+    "Things Indian"
+  ],
+  "Gulab Jamun": [
+    "Desserts",
+    "Ends with MUN",
+    "Foods",
+    "Starts with GUL",
+    "Things Indian"
+  ],
+  "Kulfi": [
+    "Desserts",
+    "Ends with LFI",
+    "Foods",
+    "Starts with KUL",
+    "Things Indian"
+  ],
+  "Jalebi": [
+    "Desserts",
+    "Ends with EBI",
+    "Foods",
+    "Starts with JAL",
+    "Things Indian"
+  ],
+  "Tom Yum": [
+    "Ends with YUM",
+    "Foods",
+    "Spicy Foods",
+    "Starts with TOM",
+    "Things Thai"
+  ],
+  "Green Curry": [
+    "Ends with RRY",
+    "Foods",
+    "Green Things",
+    "Spicy Foods",
+    "Starts with GRE",
+    "Things Thai"
+  ],
+  "Red Curry": [
+    "Ends with RRY",
+    "Foods",
+    "Red Things",
+    "Spicy Foods",
+    "Starts with RED",
+    "Things Thai"
+  ],
+  "Yellow Curry": [
+    "Ends with RRY",
+    "Foods",
+    "Spicy Foods",
+    "Starts with YEL",
+    "Things Thai",
+    "Yellow Things"
+  ],
+  "Massaman": [
+    "Ends with MAN",
+    "Foods",
+    "Starts with MAS",
+    "Things Thai"
+  ],
+  "Som Tam": [
+    "Ends with TAM",
+    "Foods",
+    "Starts with SOM",
+    "Things Thai"
+  ],
+  "Larb": [
+    "Ends with ARB",
+    "Foods",
+    "Starts with LAR",
+    "Things Thai"
+  ],
+  "Mango Sticky Rice": [
+    "Desserts",
+    "Ends with ICE",
+    "Foods",
+    "Starts with MAN",
+    "Things Thai"
+  ],
+  "Pho": [
+    "Ends with PHO",
+    "Foods",
+    "Starts with PHO",
+    "Things Vietnamese"
+  ],
+  "Banh Mi": [
+    "Ends with  MI",
+    "Foods",
+    "Starts with BAN",
+    "Things Vietnamese"
+  ],
+  "Banh Xeo": [
+    "Ends with XEO",
+    "Foods",
+    "Starts with BAN",
+    "Things Vietnamese"
+  ],
+  "Goi Cuon": [
+    "Ends with UON",
+    "Foods",
+    "Starts with GOI",
+    "Things Vietnamese"
+  ],
+  "Bun Cha": [
+    "Ends with CHA",
+    "Foods",
+    "Starts with BUN",
+    "Things Vietnamese"
+  ],
+  "Com Tam": [
+    "Ends with TAM",
+    "Foods",
+    "Starts with COM",
+    "Things Vietnamese"
+  ],
+  "Che": [
+    "Desserts",
+    "Ends with CHE",
+    "Foods",
+    "Starts with CHE",
+    "Things Vietnamese"
+  ],
+  "Bibimbap": [
+    "Ends with BAP",
+    "Foods",
+    "Starts with BIB",
+    "Things Korean"
+  ],
+  "Bulgogi": [
+    "Ends with OGI",
+    "Foods",
+    "Starts with BUL",
+    "Things Korean"
+  ],
+  "Kimchi": [
+    "Ends with CHI",
+    "Foods",
+    "Starts with KIM",
+    "Things Korean"
+  ],
+  "Japchae": [
+    "Ends with HAE",
+    "Foods",
+    "Starts with JAP",
+    "Things Korean"
+  ],
+  "Tteokbokki": [
+    "Ends with KKI",
+    "Foods",
+    "Spicy Foods",
+    "Starts with TTE",
+    "Things Korean"
+  ],
+  "Samgyeopsal": [
+    "Ends with SAL",
+    "Foods",
+    "Starts with SAM",
+    "Things Korean"
+  ],
+  "Jjajangmyeon": [
+    "Ends with EON",
+    "Foods",
+    "Noodles",
+    "Starts with JJA",
+    "Things Korean"
+  ],
+  "Naengmyeon": [
+    "Ends with EON",
+    "Foods",
+    "Noodles",
+    "Starts with NAE",
+    "Things Korean"
+  ],
+  "Hotteok": [
+    "Desserts",
+    "Ends with EOK",
+    "Foods",
+    "Starts with HOT",
+    "Things Korean"
+  ],
+  "Bingsu": [
+    "Desserts",
+    "Ends with GSU",
+    "Foods",
+    "Starts with BIN",
+    "Things Korean"
+  ],
+  "Quesadilla": [
+    "Ends with LLA",
+    "Foods",
+    "Starts with QUE",
+    "Things Mexican"
+  ],
+  "Chimichanga": [
+    "Ends with NGA",
+    "Foods",
+    "Starts with CHI",
+    "Things Mexican"
+  ],
+  "Fajita": [
+    "Ends with ITA",
+    "Foods",
+    "Starts with FAJ",
+    "Things Mexican"
+  ],
+  "Tamale": [
+    "Ends with ALE",
+    "Foods",
+    "Starts with TAM",
+    "Things Mexican"
+  ],
+  "Chile Relleno": [
+    "Ends with ENO",
+    "Foods",
+    "Starts with CHI",
+    "Things Mexican"
+  ],
+  "Mole Poblano": [
+    "Ends with ANO",
+    "Foods",
+    "Starts with MOL",
+    "Things Mexican"
+  ],
+  "Ceviche": [
+    "Ends with CHE",
+    "Foods",
+    "Starts with CEV",
+    "Things Mexican"
+  ],
+  "Churro": [
+    "Desserts",
+    "Ends with RRO",
+    "Foods",
+    "Starts with CHU",
+    "Things Spanish"
+  ],
+  "Flan": [
+    "Desserts",
+    "Ends with LAN",
+    "Foods",
+    "Starts with FLA",
+    "Things Spanish"
+  ],
+  "Tres Leches": [
+    "Desserts",
+    "Ends with HES",
+    "Foods",
+    "Starts with TRE",
+    "Things Colombian"
+  ],
+  "Falafel": [
+    "Ends with FEL",
+    "Foods",
+    "Starts with FAL",
+    "Things Middle Eastern"
+  ],
+  "Shawarma": [
+    "Ends with RMA",
+    "Foods",
+    "Starts with SHA",
+    "Things Middle Eastern"
+  ],
+  "Kebab": [
+    "Ends with BAB",
+    "Foods",
+    "Starts with KEB",
+    "Things Middle Eastern"
+  ],
+  "Tabouleh": [
+    "Ends with LEH",
+    "Foods",
+    "Green Things",
+    "Starts with TAB",
+    "Things Middle Eastern"
+  ],
+  "Baba Ganoush": [
+    "Ends with USH",
+    "Foods",
+    "Starts with BAB",
+    "Things Middle Eastern"
+  ],
+  "Fattoush": [
+    "Ends with USH",
+    "Foods",
+    "Starts with FAT",
+    "Things Middle Eastern"
+  ],
+  "Mansaf": [
+    "Ends with SAF",
+    "Foods",
+    "Starts with MAN",
+    "Things Middle Eastern"
+  ],
+  "Knafeh": [
+    "Desserts",
+    "Ends with FEH",
+    "Foods",
+    "Starts with KNA",
+    "Things Middle Eastern"
+  ],
+  "Baklava": [
+    "Desserts",
+    "Ends with AVA",
+    "Foods",
+    "Starts with BAK",
+    "Things Greek"
+  ],
+  "Moussaka": [
+    "Ends with AKA",
+    "Foods",
+    "Starts with MOU",
+    "Things Greek"
+  ],
+  "Souvlaki": [
+    "Ends with AKI",
+    "Foods",
+    "Starts with SOU",
+    "Things Greek"
+  ],
+  "Spanakopita": [
+    "Ends with ITA",
+    "Foods",
+    "Starts with SPA",
+    "Things Greek"
+  ],
+  "Dolmades": [
+    "Ends with DES",
+    "Foods",
+    "Starts with DOL",
+    "Things Greek"
+  ],
+  "Pastitsio": [
+    "Ends with SIO",
+    "Foods",
+    "Starts with PAS",
+    "Things Greek"
+  ],
+  "Gyro": [
+    "Ends with YRO",
+    "Foods",
+    "Starts with GYR",
+    "Things Greek"
+  ],
+  "Galaktoboureko": [
+    "Desserts",
+    "Ends with EKO",
+    "Foods",
+    "Starts with GAL",
+    "Things Greek"
+  ],
+  "Paella": [
+    "Ends with LLA",
+    "Foods",
+    "Starts with PAE",
+    "Things Spanish"
+  ],
+  "Tapas": [
+    "Ends with PAS",
+    "Foods",
+    "Starts with TAP",
+    "Things Spanish"
+  ],
+  "Gazpacho": [
+    "Ends with CHO",
+    "Foods",
+    "Starts with GAZ",
+    "Things Spanish"
+  ],
+  "Bacalhau": [
+    "Ends with HAU",
+    "Foods",
+    "Starts with BAC",
+    "Things Portuguese"
+  ],
+  "Francesinha": [
+    "Ends with NHA",
+    "Foods",
+    "Starts with FRA",
+    "Things Portuguese"
+  ],
+  "Caldo Verde": [
+    "Ends with RDE",
+    "Foods",
+    "Starts with CAL",
+    "Things Portuguese"
+  ],
+  "Pastel de Nata": [
+    "Desserts",
+    "Ends with ATA",
+    "Foods",
+    "Starts with PAS",
+    "Things Portuguese"
+  ],
+  "Feijoada": [
+    "Ends with ADA",
+    "Foods",
+    "Starts with FEI",
+    "Things Brazilian"
+  ],
+  "Moqueca": [
+    "Ends with ECA",
+    "Foods",
+    "Starts with MOQ",
+    "Things Brazilian"
+  ],
+  "Pao de Queijo": [
+    "Breads",
+    "Ends with IJO",
+    "Foods",
+    "Starts with PAO",
+    "Things Brazilian"
+  ],
+  "Brigadeiro": [
+    "Desserts",
+    "Ends with IRO",
+    "Foods",
+    "Starts with BRI",
+    "Things Brazilian"
+  ],
+  "Asado": [
+    "Ends with ADO",
+    "Foods",
+    "Starts with ASA",
+    "Things Argentine"
+  ],
+  "Milanesa": [
+    "Ends with ESA",
+    "Foods",
+    "Starts with MIL",
+    "Things Argentine"
+  ],
+  "Locro": [
+    "Ends with CRO",
+    "Foods",
+    "Starts with LOC",
+    "Things Argentine"
+  ],
+  "Alfajor": [
+    "Desserts",
+    "Ends with JOR",
+    "Foods",
+    "Starts with ALF",
+    "Things Argentine"
+  ],
+  "Bandeja Paisa": [
+    "Ends with ISA",
+    "Foods",
+    "Starts with BAN",
+    "Things Colombian"
+  ],
+  "Ajiaco": [
+    "Ends with ACO",
+    "Foods",
+    "Starts with AJI",
+    "Things Colombian"
+  ],
+  "Hamburger": [
+    "Ends with GER",
+    "Foods",
+    "Starts with HAM",
+    "Things American"
+  ],
+  "Hot Dog": [
+    "Ends with DOG",
+    "Foods",
+    "Starts with HOT",
+    "Things American"
+  ],
+  "BBQ": [
+    "Ends with BBQ",
+    "Foods",
+    "Starts with BBQ",
+    "Things American"
+  ],
+  "Fried Chicken": [
+    "Ends with KEN",
+    "Foods",
+    "Starts with FRI",
+    "Things American"
+  ],
+  "Mac and Cheese": [
+    "Ends with ESE",
+    "Foods",
+    "Starts with MAC",
+    "Things American"
+  ],
+  "Apple Pie": [
+    "Desserts",
+    "Ends with PIE",
+    "Foods",
+    "Starts with APP",
+    "Things American"
+  ],
+  "Cheesecake": [
+    "Desserts",
+    "Ends with AKE",
+    "Foods",
+    "Starts with CHE",
+    "Things American"
+  ],
+  "Brownie": [
+    "Desserts",
+    "Ends with NIE",
+    "Foods",
+    "Starts with BRO",
+    "Things American"
+  ],
+  "Chocolate Chip Cookie": [
+    "Desserts",
+    "Ends with KIE",
+    "Foods",
+    "Starts with CHO",
+    "Things American"
+  ],
+  "Fish and Chips": [
+    "Ends with IPS",
+    "Foods",
+    "Starts with FIS",
+    "Things British"
+  ],
+  "Bangers and Mash": [
+    "Ends with ASH",
+    "Foods",
+    "Starts with BAN",
+    "Things British"
+  ],
+  "Shepherd's Pie": [
+    "Ends with PIE",
+    "Foods",
+    "Starts with SHE",
+    "Things British"
+  ],
+  "Yorkshire Pudding": [
+    "Ends with ING",
+    "Foods",
+    "Starts with YOR",
+    "Things British"
+  ],
+  "Bubble and Squeak": [
+    "Ends with EAK",
+    "Foods",
+    "Starts with BUB",
+    "Things British"
+  ],
+  "Trifle": [
+    "Desserts",
+    "Ends with FLE",
+    "Foods",
+    "Starts with TRI",
+    "Things British"
+  ],
+  "Sticky Toffee Pudding": [
+    "Desserts",
+    "Ends with ING",
+    "Foods",
+    "Starts with STI",
+    "Things British"
+  ],
+  "Scones": [
+    "Desserts",
+    "Ends with NES",
+    "Foods",
+    "Starts with SCO",
+    "Things British"
+  ],
+  "Sake": [
+    "Drinks",
+    "Ends with AKE",
+    "Starts with SAK",
+    "Things Japanese"
+  ],
+  "Soju": [
+    "Drinks",
+    "Ends with OJU",
+    "Starts with SOJ",
+    "Things Korean"
+  ],
+  "Baijiu": [
+    "Drinks",
+    "Ends with JIU",
+    "Starts with BAI",
+    "Things Chinese"
+  ],
+  "Tequila": [
+    "Drinks",
+    "Ends with ILA",
+    "Starts with TEQ",
+    "Things Mexican"
+  ],
+  "Mezcal": [
+    "Drinks",
+    "Ends with CAL",
+    "Starts with MEZ",
+    "Things Mexican"
+  ],
+  "Pisco": [
+    "Drinks",
+    "Ends with SCO",
+    "Starts with PIS",
+    "Things Peruvian"
+  ],
+  "Cachaça": [
+    "Drinks",
+    "Ends with AÇA",
+    "Starts with CAC",
+    "Things Brazilian"
+  ],
+  "Absinthe": [
+    "Drinks",
+    "Ends with THE",
+    "Green Things",
+    "Starts with ABS",
+    "Things French"
+  ],
+  "Champagne": [
+    "Drinks",
+    "Ends with GNE",
+    "Starts with CHA",
+    "Things French"
+  ],
+  "Bordeaux": [
+    "Drinks",
+    "Ends with AUX",
+    "Starts with BOR",
+    "Things French"
+  ],
+  "Burgundy": [
+    "Drinks",
+    "Ends with NDY",
+    "Starts with BUR",
+    "Things French"
+  ],
+  "Chianti": [
+    "Drinks",
+    "Ends with NTI",
+    "Starts with CHI",
+    "Things Italian"
+  ],
+  "Prosecco": [
+    "Drinks",
+    "Ends with CCO",
+    "Starts with PRO",
+    "Things Italian"
+  ],
+  "Port": [
+    "Drinks",
+    "Ends with ORT",
+    "Starts with POR",
+    "Things Portuguese"
+  ],
+  "Sherry": [
+    "Drinks",
+    "Ends with RRY",
+    "Starts with SHE",
+    "Things Spanish"
+  ],
+  "Sangria": [
+    "Drinks",
+    "Ends with RIA",
+    "Starts with SAN",
+    "Things Spanish"
+  ],
+  "Vodka": [
+    "Drinks",
+    "Ends with DKA",
+    "Starts with VOD",
+    "Things Russian"
+  ],
+  "Beer": [
+    "Drinks",
+    "Ends with EER",
+    "Starts with BEE",
+    "Things German"
+  ],
+  "Weissbier": [
+    "Drinks",
+    "Ends with IER",
+    "Starts with WEI",
+    "Things German"
+  ],
+  "Pilsner": [
+    "Drinks",
+    "Ends with NER",
+    "Starts with PIL",
+    "Things Czech"
+  ],
+  "Stout": [
+    "Black Things",
+    "Drinks",
+    "Ends with OUT",
+    "Starts with STO",
+    "Things Irish"
+  ],
+  "Scotch": [
+    "Drinks",
+    "Ends with TCH",
+    "Starts with SCO",
+    "Things Scottish"
+  ],
+  "Gin": [
+    "Drinks",
+    "Ends with GIN",
+    "Starts with GIN",
+    "Things British"
+  ],
+  "Rum": [
+    "Drinks",
+    "Ends with RUM",
+    "Starts with RUM",
+    "Things Caribbean"
+  ],
+  "Bourbon": [
+    "Drinks",
+    "Ends with BON",
+    "Starts with BOU",
+    "Things American"
+  ],
+  "Rye Whiskey": [
+    "Drinks",
+    "Ends with KEY",
+    "Starts with RYE",
+    "Things American"
+  ],
+  "Craft Beer": [
+    "Drinks",
+    "Ends with EER",
+    "Starts with CRA",
+    "Things American"
+  ],
+  "Root Beer": [
+    "Drinks",
+    "Ends with EER",
+    "Starts with ROO",
+    "Things American"
+  ],
+  "Cola": [
+    "Brown Things",
+    "Drinks",
+    "Ends with OLA",
+    "Starts with COL",
+    "Things American"
+  ],
+  "Lemonade": [
+    "Drinks",
+    "Ends with ADE",
+    "Starts with LEM",
+    "Things American",
+    "Yellow Things"
+  ],
+  "Iced Tea": [
+    "Drinks",
+    "Ends with TEA",
+    "Starts with ICE",
+    "Things American"
+  ],
+  "Tea": [
+    "Drinks",
+    "Ends with TEA",
+    "Starts with TEA",
+    "Things British"
+  ],
+  "Earl Grey": [
+    "Drinks",
+    "Ends with REY",
+    "Starts with EAR",
+    "Things British"
+  ],
+  "Chai": [
+    "Drinks",
+    "Ends with HAI",
+    "Starts with CHA",
+    "Things Indian"
+  ],
+  "Matcha": [
+    "Drinks",
+    "Ends with CHA",
+    "Green Things",
+    "Starts with MAT",
+    "Things Japanese"
+  ],
+  "Bubble Tea": [
+    "Drinks",
+    "Ends with TEA",
+    "Starts with BUB",
+    "Things Taiwanese"
+  ],
+  "Horchata": [
+    "Drinks",
+    "Ends with ATA",
+    "Starts with HOR",
+    "Things Mexican"
+  ],
+  "Agua Fresca": [
+    "Drinks",
+    "Ends with SCA",
+    "Starts with AGU",
+    "Things Mexican"
+  ],
+  "Mate": [
+    "Drinks",
+    "Ends with ATE",
+    "Starts with MAT",
+    "Things Argentine"
+  ],
+  "Kombucha": [
+    "Drinks",
+    "Ends with CHA",
+    "Starts with KOM",
+    "Things Chinese"
+  ],
+  "Kefir": [
+    "Drinks",
+    "Ends with FIR",
+    "Starts with KEF",
+    "Things Russian"
+  ],
+  "Kvass": [
+    "Drinks",
+    "Ends with ASS",
+    "Starts with KVA",
+    "Things Russian"
+  ],
+  "Ayran": [
+    "Drinks",
+    "Ends with RAN",
+    "Starts with AYR",
+    "Things Turkish"
+  ],
+  "Lassi": [
+    "Drinks",
+    "Ends with SSI",
+    "Starts with LAS",
+    "Things Indian"
+  ],
+  "Smoothie": [
+    "Drinks",
+    "Ends with HIE",
+    "Starts with SMO",
+    "Things American"
+  ],
+  "Milkshake": [
+    "Drinks",
+    "Ends with AKE",
+    "Starts with MIL",
+    "Things American"
+  ],
+  "Hot Chocolate": [
+    "Brown Things",
+    "Drinks",
+    "Ends with ATE",
+    "Starts with HOT",
+    "Things American"
+  ],
+  "Cocoa": [
+    "Brown Things",
+    "Drinks",
+    "Ends with COA",
+    "Starts with COC",
+    "Things American"
+  ],
+  "Cider": [
+    "Drinks",
+    "Ends with DER",
+    "Starts with CID",
+    "Things American"
+  ],
+  "Mead": [
+    "Drinks",
+    "Ends with EAD",
+    "Starts with MEA",
+    "Things British"
+  ],
+  "Wine": [
+    "Drinks",
+    "Ends with INE",
+    "Starts with WIN",
+    "Things French"
+  ],
+  "Red Wine": [
+    "Drinks",
+    "Ends with INE",
+    "Red Things",
+    "Starts with RED",
+    "Things French"
+  ],
+  "White Wine": [
+    "Drinks",
+    "Ends with INE",
+    "Starts with WHI",
+    "Things French",
+    "White Things"
+  ],
+  "Rosé": [
+    "Drinks",
+    "Ends with OSÉ",
+    "Pink Things",
+    "Starts with ROS",
+    "Things French"
+  ],
+  "Sparkling Wine": [
+    "Drinks",
+    "Ends with INE",
+    "Starts with SPA",
+    "Things French"
+  ],
+  "Ice Wine": [
+    "Drinks",
+    "Ends with INE",
+    "Starts with ICE",
+    "Things Canadian"
+  ],
+  "Maple Syrup": [
+    "Drinks",
+    "Ends with RUP",
+    "Starts with MAP",
+    "Things Canadian"
   ]
 }

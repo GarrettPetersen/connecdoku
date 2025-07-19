@@ -627,6 +627,7 @@
     "Nick Fury",
     "Panther",
     "Raven",
+    "Stout",
     "Venom"
   ],
   "Black and White": [
@@ -855,6 +856,28 @@
     "Winnie-the-Pooh",
     "Wuthering Heights"
   ],
+  "Breads": [
+    "Arepa",
+    "Bagel",
+    "Baguette",
+    "Bao",
+    "Brezel",
+    "Brioche",
+    "Challah",
+    "Ciabatta",
+    "Croissant",
+    "Focaccia",
+    "Naan",
+    "Pao de Queijo",
+    "Pita",
+    "Pizza",
+    "Pretzel",
+    "Pumpernickel",
+    "Roti",
+    "Rye",
+    "Sourdough",
+    "Tortilla"
+  ],
   "Breakaway Regions": [
     "Abkhazia",
     "Artsakh",
@@ -880,6 +903,17 @@
     "Mary Rose",
     "Queen Mary",
     "Victoria"
+  ],
+  "Brown Things": [
+    "Brezel",
+    "Cocoa",
+    "Coffee",
+    "Cola",
+    "Espagnole",
+    "Hot Chocolate",
+    "Pretzel",
+    "Pumpernickel",
+    "Rye"
   ],
   "Burger Toppings": [
     "Avocado",
@@ -2311,11 +2345,55 @@
     "Sahara"
   ],
   "Desserts": [
+    "Affogato",
+    "Alfajor",
+    "Apfelstrudel",
+    "Apple Pie",
+    "Baklava",
+    "Bingsu",
+    "Black Forest Cake",
+    "Brigadeiro",
+    "Brownie",
     "Cake",
+    "Cannoli",
+    "Che",
+    "Cheesecake",
+    "Chocolate Chip Cookie",
+    "Churro",
     "Cotton Candy",
+    "Dango",
+    "Dorayaki",
+    "Eclair",
+    "Flan",
+    "Galaktoboureko",
+    "Gelato",
+    "Gulab Jamun",
+    "Hamantaschen",
+    "Hotteok",
+    "Jalebi",
+    "Knafeh",
+    "Kulfi",
+    "Macaron",
+    "Madeleine",
+    "Makowiec",
+    "Mango Sticky Rice",
+    "Medovik",
+    "Mochi",
+    "Mooncake",
+    "Paczki",
+    "Panna Cotta",
+    "Pastel de Nata",
     "Pie",
+    "Profiterole",
+    "Rugelach",
+    "Scones",
+    "Sticky Toffee Pudding",
     "Sundae",
-    "Tart"
+    "Taiyaki",
+    "Tart",
+    "Tiramisu",
+    "Tres Leches",
+    "Trifle"
   ],
   "Dinosaurs": [
     "Raptor"
@@ -2594,16 +2672,86 @@
     "Yojimbo"
   ],
   "Drinks": [
+    "Absinthe",
+    "Agua Fresca",
     "Amontillado",
+    "Ayran",
+    "Baijiu",
+    "Beer",
+    "Bordeaux",
+    "Bourbon",
+    "Bubble Tea",
+    "Burgundy",
     "CHA",
+    "Cachaça",
+    "Chai",
+    "Champagne",
+    "Chianti",
+    "Cider",
+    "Cocoa",
     "Coffee",
+    "Cola",
+    "Craft Beer",
+    "Earl Grey",
+    "Gin",
     "Green Tea",
+    "Horchata",
+    "Hot Chocolate",
+    "Ice Wine",
+    "Iced Tea",
     "Java",
     "Juice",
+    "Kefir",
+    "Kombucha",
     "Kraken",
+    "Kvass",
+    "Lassi",
+    "Lemonade",
     "Long Island",
+    "Madeira",
+    "Maple Syrup",
+    "Matcha",
+    "Mate",
+    "Mead",
+    "Mezcal",
     "Milk",
-    "Whiskey"
+    "Milkshake",
+    "Pilsner",
+    "Pisco",
+    "Port",
+    "Prosecco",
+    "Red Wine",
+    "Root Beer",
+    "Rosé",
+    "Rum",
+    "Rye Whiskey",
+    "Sake",
+    "Sangria",
+    "Scotch",
+    "Sherry",
+    "Smoothie",
+    "Soju",
+    "Sparkling Wine",
+    "Stout",
+    "Tea",
+    "Tequila",
+    "Vodka",
+    "Weissbier",
+    "Whiskey",
+    "White Wine",
+    "Wine"
+  ],
+  "Dumplings": [
+    "Dumpling",
+    "Gyoza",
+    "Jiaozi",
+    "Pelmeni",
+    "Pierogi",
+    "Ravioli",
+    "Tortellini",
+    "Vareniki",
+    "Wonton",
+    "Xiaolongbao"
   ],
   "Dune": [
     "Desert",
@@ -2695,11 +2843,17 @@
     "Ghostbusters II",
     "The Godfather Part II"
   ],
+  "Ends with  MI": [
+    "Banh Mi"
+  ],
   "Ends with  OZ": [
     "The Wizard of Oz"
   ],
   "Ends with  VU": [
     "Deja Vu"
+  ],
+  "Ends with  ZI": [
+    "Yu Xiang Qie Zi"
   ],
   "Ends with /63": [
     "11/22/63"
@@ -2716,6 +2870,15 @@
   "Ends with 984": [
     "1984"
   ],
+  "Ends with AAN": [
+    "Naan"
+  ],
+  "Ends with ABI": [
+    "Wasabi"
+  ],
+  "Ends with ABU": [
+    "Shabu Shabu"
+  ],
   "Ends with ABY": [
     "Million Dollar Baby"
   ],
@@ -2727,7 +2890,9 @@
   ],
   "Ends with ACH": [
     "Bach",
-    "Peach"
+    "Kreplach",
+    "Peach",
+    "Rugelach"
   ],
   "Ends with ACK": [
     "Backpack",
@@ -2735,6 +2900,7 @@
     "The Empire Strikes Back"
   ],
   "Ends with ACO": [
+    "Ajiaco",
     "Draco",
     "Monaco",
     "Taco"
@@ -2744,17 +2910,21 @@
   ],
   "Ends with ADA": [
     "Canada",
+    "Empanada",
     "Enchilada",
+    "Feijoada",
     "Grenada",
     "Nevada",
     "Prada"
   ],
   "Ends with ADE": [
     "Jade",
+    "Lemonade",
     "Witchblade"
   ],
   "Ends with ADO": [
     "Amontillado",
+    "Asado",
     "Avocado",
     "Prado"
   ],
@@ -2796,21 +2966,40 @@
     "Spain"
   ],
   "Ends with AIR": [
-    "Chair"
+    "Chair",
+    "Eclair"
   ],
   "Ends with AIT": [
     "Kuwait"
   ],
+  "Ends with AKA": [
+    "Moussaka"
+  ],
   "Ends with AKE": [
+    "Black Forest Cake",
     "Cake",
+    "Cheesecake",
     "Drake",
-    "Makemake"
+    "Makemake",
+    "Milkshake",
+    "Mooncake",
+    "Sake"
   ],
   "Ends with AKH": [
     "Artsakh"
   ],
+  "Ends with AKI": [
+    "Dorayaki",
+    "Okonomiyaki",
+    "Souvlaki",
+    "Sukiyaki",
+    "Taiyaki",
+    "Takoyaki",
+    "Teriyaki"
+  ],
   "Ends with ALA": [
-    "Guatemala"
+    "Guatemala",
+    "Tikka Masala"
   ],
   "Ends with ALD": [
     "Donald",
@@ -2819,6 +3008,7 @@
   ],
   "Ends with ALE": [
     "Blue Whale",
+    "Tamale",
     "Tell‑Tale",
     "The Handmaid's Tale",
     "Whale"
@@ -2831,7 +3021,8 @@
   "Ends with ALL": [
     "Ball",
     "Dragon Ball",
-    "Football"
+    "Football",
+    "Matzo Ball"
   ],
   "Ends with ALO": [
     "Buffalo",
@@ -2858,6 +3049,7 @@
   ],
   "Ends with AMI": [
     "Miami",
+    "Pastrami",
     "Sami"
   ],
   "Ends with AMP": [
@@ -2913,12 +3105,17 @@
     "Wand"
   ],
   "Ends with ANG": [
+    "Ma La Tang",
     "Tang"
+  ],
+  "Ends with ANI": [
+    "Biryani"
   ],
   "Ends with ANK": [
     "Rank"
   ],
   "Ends with ANO": [
+    "Mole Poblano",
     "Piano",
     "Volcano"
   ],
@@ -2931,6 +3128,7 @@
   "Ends with ANT": [
     "Ant",
     "Cormorant",
+    "Croissant",
     "Eggplant",
     "Elephant",
     "Giant",
@@ -2957,7 +3155,12 @@
     "Snape"
   ],
   "Ends with ARA": [
+    "Carbonara",
+    "Marinara",
     "Sahara"
+  ],
+  "Ends with ARB": [
+    "Larb"
   ],
   "Ends with ARC": [
     "Joan of Arc"
@@ -3027,6 +3230,7 @@
     "Queen Mary"
   ],
   "Ends with ASA": [
+    "Kielbasa",
     "NASA"
   ],
   "Ends with ASE": [
@@ -3034,6 +3238,7 @@
     "Suitcase"
   ],
   "Ends with ASH": [
+    "Bangers and Mash",
     "Crash",
     "Flash",
     "Hash"
@@ -3042,7 +3247,8 @@
     "Burkina Faso"
   ],
   "Ends with ASS": [
-    "Glass"
+    "Glass",
+    "Kvass"
   ],
   "Ends with AST": [
     "Beast",
@@ -3053,10 +3259,14 @@
   ],
   "Ends with ATA": [
     "Data",
+    "Horchata",
+    "Pastel de Nata",
     "Pinata",
     "The Mahabharata"
   ],
   "Ends with ATE": [
+    "Hot Chocolate",
+    "Mate",
     "Skate",
     "Stargate",
     "The Devil's Advocate"
@@ -3069,6 +3279,8 @@
     "Kiribati"
   ],
   "Ends with ATO": [
+    "Affogato",
+    "Gelato",
     "NATO",
     "Plato",
     "Tomato"
@@ -3098,9 +3310,14 @@
     "Minotaur"
   ],
   "Ends with AUT": [
-    "Juggernaut"
+    "Juggernaut",
+    "Sauerkraut"
+  ],
+  "Ends with AUX": [
+    "Bordeaux"
   ],
   "Ends with AVA": [
+    "Baklava",
     "Java"
   ],
   "Ends with AVE": [
@@ -3143,8 +3360,21 @@
   "Ends with AZZ": [
     "Jazz"
   ],
+  "Ends with AÇA": [
+    "Cachaça"
+  ],
+  "Ends with BAB": [
+    "Kebab"
+  ],
   "Ends with BAN": [
     "Harry Potter and the Prisoner of Azkaban"
+  ],
+  "Ends with BAO": [
+    "Bao",
+    "Xiaolongbao"
+  ],
+  "Ends with BAP": [
+    "Bibimbap"
   ],
   "Ends with BAR": [
     "Nicobar",
@@ -3152,6 +3382,9 @@
   ],
   "Ends with BAT": [
     "Bat"
+  ],
+  "Ends with BBQ": [
+    "BBQ"
   ],
   "Ends with BDA": [
     "Lambda"
@@ -3194,6 +3427,9 @@
     "The Hobbit",
     "The Tale of Peter Rabbit"
   ],
+  "Ends with BKI": [
+    "Golabki"
+  ],
   "Ends with BLE": [
     "Hubble",
     "Scrabble",
@@ -3207,6 +3443,7 @@
     "Lombok"
   ],
   "Ends with BON": [
+    "Bourbon",
     "Carbon",
     "Gabon"
   ],
@@ -3243,6 +3480,9 @@
   "Ends with BYL": [
     "Chernobyl"
   ],
+  "Ends with CAL": [
+    "Mezcal"
+  ],
   "Ends with CAN": [
     "Pelican"
   ],
@@ -3265,7 +3505,8 @@
     "Gucci"
   ],
   "Ends with CCO": [
-    "Morocco"
+    "Morocco",
+    "Prosecco"
   ],
   "Ends with CER": [
     "Cancer"
@@ -3274,19 +3515,34 @@
     "Pisces"
   ],
   "Ends with CHA": [
-    "CHA"
+    "Bun Cha",
+    "CHA",
+    "Kombucha",
+    "Matcha",
+    "Sriracha"
+  ],
+  "Ends with CHE": [
+    "Brioche",
+    "Ceviche",
+    "Che",
+    "Quiche"
   ],
   "Ends with CHI": [
     "Chi",
-    "Karachi"
+    "Karachi",
+    "Kimchi",
+    "Mochi"
   ],
   "Ends with CHO": [
-    "Echo"
+    "Echo",
+    "Gazpacho"
   ],
   "Ends with CHT": [
+    "Borscht",
     "Yacht"
   ],
   "Ends with CIA": [
+    "Focaccia",
     "Saint Lucia"
   ],
   "Ends with CIL": [
@@ -3298,6 +3554,9 @@
   ],
   "Ends with CNN": [
     "CNN"
+  ],
+  "Ends with COA": [
+    "Cocoa"
   ],
   "Ends with COG": [
     "Cog"
@@ -3312,6 +3571,9 @@
   ],
   "Ends with COW": [
     "Cow"
+  ],
+  "Ends with CRO": [
+    "Locro"
   ],
   "Ends with CUN": [
     "Cancun"
@@ -3331,6 +3593,9 @@
   ],
   "Ends with DAE": [
     "Sundae"
+  ],
+  "Ends with DAL": [
+    "Dal"
   ],
   "Ends with DAM": [
     "Dam"
@@ -3352,9 +3617,12 @@
     "The Holiday"
   ],
   "Ends with DEL": [
+    "Apfelstrudel",
     "Handel"
   ],
   "Ends with DEN": [
+    "Oden",
+    "Rouladen",
     "Sweden",
     "The Secret Garden"
   ],
@@ -3362,6 +3630,7 @@
     "Rodeo"
   ],
   "Ends with DER": [
+    "Cider",
     "Lavender",
     "Murder",
     "Outlander",
@@ -3371,6 +3640,7 @@
     "Vader"
   ],
   "Ends with DES": [
+    "Dolmades",
     "Hades",
     "Hebrides",
     "New Hebrides",
@@ -3403,6 +3673,9 @@
   "Ends with DIT": [
     "Reddit"
   ],
+  "Ends with DKA": [
+    "Vodka"
+  ],
   "Ends with DLE": [
     "(G)I-DLE"
   ],
@@ -3411,6 +3684,7 @@
   ],
   "Ends with DOG": [
     "Dog",
+    "Hot Dog",
     "To Say Nothing of the Dog"
   ],
   "Ends with DOM": [
@@ -3421,7 +3695,8 @@
     "Armageddon",
     "London",
     "Poseidon",
-    "Radon"
+    "Radon",
+    "Udon"
   ],
   "Ends with DOO": [
     "Scooby-Doo",
@@ -3454,9 +3729,11 @@
     "The Santa Clause 2"
   ],
   "Ends with EAD": [
-    "Bread"
+    "Bread",
+    "Mead"
   ],
   "Ends with EAK": [
+    "Bubble and Squeak",
     "Dante's Peak"
   ],
   "Ends with EAL": [
@@ -3482,8 +3759,14 @@
   "Ends with EAU": [
     "Juneau"
   ],
+  "Ends with EBI": [
+    "Jalebi"
+  ],
   "Ends with EBU": [
     "Cebu"
+  ],
+  "Ends with ECA": [
+    "Moqueca"
   ],
   "Ends with ECE": [
     "Greece",
@@ -3499,12 +3782,18 @@
     "Return of the Jedi",
     "The Last Jedi"
   ],
+  "Ends with EDO": [
+    "Alfredo"
+  ],
   "Ends with EDY": [
     "Kennedy",
     "The Divine Comedy"
   ],
   "Ends with EED": [
     "Safety Not Guaranteed"
+  ],
+  "Ends with EEF": [
+    "Corned Beef"
   ],
   "Ends with EEK": [
     "Greek"
@@ -3523,6 +3812,12 @@
     "Lakshadweep",
     "Sheep",
     "The Big Sleep"
+  ],
+  "Ends with EER": [
+    "Beer",
+    "Craft Beer",
+    "Palak Paneer",
+    "Root Beer"
   ],
   "Ends with EET": [
     "Miracle on 34th Street",
@@ -3545,15 +3840,20 @@
     "Pompeii"
   ],
   "Ends with EIN": [
+    "Chow Mein",
     "Einstein",
     "Frankenstein",
-    "Liechtenstein"
+    "Liechtenstein",
+    "Lo Mein"
   ],
   "Ends with EJU": [
     "Jeju"
   ],
   "Ends with EKA": [
     "Topeka"
+  ],
+  "Ends with EKO": [
+    "Galaktoboureko"
   ],
   "Ends with ELA": [
     "Venezuela"
@@ -3589,6 +3889,12 @@
   "Ends with END": [
     "Pirates of the Caribbean: At World's End"
   ],
+  "Ends with ENI": [
+    "Pelmeni"
+  ],
+  "Ends with ENO": [
+    "Chile Relleno"
+  ],
   "Ends with ENS": [
     "Aliens",
     "Athens",
@@ -3605,8 +3911,19 @@
     "The Fifth Element",
     "The Philadelphia Experiment"
   ],
+  "Ends with EOK": [
+    "Hotteok"
+  ],
   "Ends with EON": [
+    "Jjajangmyeon",
+    "Naengmyeon",
     "Neon"
+  ],
+  "Ends with EPA": [
+    "Arepa"
+  ],
+  "Ends with EPE": [
+    "Crepe"
   ],
   "Ends with ER!": [
     "Oliver!"
@@ -3657,12 +3974,15 @@
     "Montgomery"
   ],
   "Ends with ESA": [
+    "Milanesa",
     "Teresa"
   ],
   "Ends with ESE": [
     "Bleu Cheese",
+    "Bolognese",
     "Caprese",
-    "Cheese"
+    "Cheese",
+    "Mac and Cheese"
   ],
   "Ends with ESH": [
     "Bangladesh",
@@ -3701,6 +4021,9 @@
     "Elizabeth",
     "Macbeth"
   ],
+  "Ends with ETI": [
+    "Kotleti"
+  ],
   "Ends with ETO": [
     "Magneto"
   ],
@@ -3712,6 +4035,9 @@
   ],
   "Ends with EUM": [
     "Herculaneum"
+  ],
+  "Ends with EUR": [
+    "Croque Monsieur"
   ],
   "Ends with EUS": [
     "Amadeus",
@@ -3741,8 +4067,12 @@
   "Ends with FEE": [
     "Coffee"
   ],
+  "Ends with FEH": [
+    "Knafeh"
+  ],
   "Ends with FEL": [
-    "Duffel"
+    "Duffel",
+    "Falafel"
   ],
   "Ends with FFE": [
     "Giraffe"
@@ -3752,8 +4082,16 @@
     "Griffin",
     "Puffin"
   ],
+  "Ends with FIR": [
+    "Kefir"
+  ],
+  "Ends with FIT": [
+    "Duck Confit"
+  ],
   "Ends with FLE": [
-    "Rifle"
+    "Rifle",
+    "Souffle",
+    "Trifle"
   ],
   "Ends with FLY": [
     "Butterfly"
@@ -3763,6 +4101,9 @@
   ],
   "Ends with FOX": [
     "Fox"
+  ],
+  "Ends with FUN": [
+    "Chow Fun"
   ],
   "Ends with GAL": [
     "Portugal",
@@ -3777,8 +4118,13 @@
   "Ends with GED": [
     "Scrooged"
   ],
+  "Ends with GEE": [
+    "Congee"
+  ],
   "Ends with GEL": [
-    "Angel"
+    "Angel",
+    "Bagel",
+    "Kugel"
   ],
   "Ends with GEN": [
     "Halogen",
@@ -3790,6 +4136,7 @@
     "Butterfinger",
     "Challenger",
     "Dagger",
+    "Hamburger",
     "Niger",
     "Tiger",
     "Voyager"
@@ -3819,6 +4166,7 @@
     "Magic"
   ],
   "Ends with GIN": [
+    "Gin",
     "Water Margin"
   ],
   "Ends with GLE": [
@@ -3832,9 +4180,11 @@
     "GMC"
   ],
   "Ends with GNA": [
-    "Bologna"
+    "Bologna",
+    "Lasagna"
   ],
   "Ends with GNE": [
+    "Champagne",
     "Charlemagne"
   ],
   "Ends with GO!": [
@@ -3847,10 +4197,17 @@
     "Raya and the Last Dragon"
   ],
   "Ends with GOS": [
+    "Bigos",
     "Galapagos"
+  ],
+  "Ends with GOT": [
+    "Escargot"
   ],
   "Ends with GRO": [
     "Montenegro"
+  ],
+  "Ends with GSU": [
+    "Bingsu"
   ],
   "Ends with GUA": [
     "Aconcagua",
@@ -3865,13 +4222,24 @@
   "Ends with HAD": [
     "Chad"
   ],
+  "Ends with HAE": [
+    "Japchae"
+  ],
+  "Ends with HAI": [
+    "Chai",
+    "Pad Thai"
+  ],
   "Ends with HAM": [
-    "Green Eggs and Ham"
+    "Green Eggs and Ham",
+    "Nuoc Cham"
   ],
   "Ends with HAN": [
     "Han",
     "Khan",
     "Leviathan"
+  ],
+  "Ends with HAU": [
+    "Bacalhau"
   ],
   "Ends with HEA": [
     "Kampuchea"
@@ -3880,6 +4248,7 @@
     "Banshee"
   ],
   "Ends with HEN": [
+    "Hamantaschen",
     "Hen",
     "Peahen"
   ],
@@ -3891,6 +4260,9 @@
     "The Godfather",
     "Usher"
   ],
+  "Ends with HES": [
+    "Tres Leches"
+  ],
   "Ends with HEY": [
     "Hershey"
   ],
@@ -3900,12 +4272,18 @@
   "Ends with HID": [
     "Orchid"
   ],
+  "Ends with HIE": [
+    "Smoothie"
+  ],
   "Ends with HIN": [
     "Dolphin"
   ],
   "Ends with HIO": [
     "Pinnochio",
     "Pinocchio"
+  ],
+  "Ends with HKA": [
+    "Kishka"
   ],
   "Ends with HNE": [
     "Daphne"
@@ -3945,6 +4323,9 @@
     "Italian",
     "Marvin the Martian"
   ],
+  "Ends with IAR": [
+    "Caviar"
+  ],
   "Ends with IAS": [
     "Ozymandias"
   ],
@@ -3982,6 +4363,7 @@
     "Ice",
     "Juice",
     "Kiki's Delivery Service",
+    "Mango Sticky Rice",
     "Pride and Prejudice",
     "Spice",
     "Venice"
@@ -4005,11 +4387,15 @@
   "Ends with IDO": [
     "Hokkaido"
   ],
+  "Ends with IEC": [
+    "Makowiec"
+  ],
   "Ends with IEN": [
     "Alien"
   ],
   "Ends with IER": [
-    "Montpelier"
+    "Montpelier",
+    "Weissbier"
   ],
   "Ends with IES": [
     "Aries",
@@ -4046,12 +4432,22 @@
   "Ends with IJI": [
     "Fiji"
   ],
+  "Ends with IJO": [
+    "Pao de Queijo"
+  ],
   "Ends with IKA": [
     "Tanganyika"
   ],
   "Ends with IKE": [
     "Mike",
     "The Tale of the Heike"
+  ],
+  "Ends with IKI": [
+    "Tzatziki",
+    "Vareniki"
+  ],
+  "Ends with ILA": [
+    "Tequila"
   ],
   "Ends with ILE": [
     "Chile",
@@ -4085,6 +4481,9 @@
     "Somewhere in Time",
     "The Map of Time"
   ],
+  "Ends with IMI": [
+    "Sashimi"
+  ],
   "Ends with INA": [
     "Argentina",
     "Bosnia and Herzegovina",
@@ -4102,35 +4501,50 @@
   ],
   "Ends with INE": [
     "Catherine",
+    "Fettuccine",
     "Fluorine",
     "Hot Tub Time Machine",
+    "Ice Wine",
+    "Linguine",
+    "Madeleine",
     "Magazine",
     "Palpatine",
     "Pine",
+    "Red Wine",
     "Rhine",
     "Seine",
+    "Sparkling Wine",
     "The Time Machine",
     "Ukraine",
+    "White Wine",
+    "Wine",
     "Wolverine"
   ],
   "Ends with ING": [
     "Beijing",
+    "Dumpling",
+    "Gong Bao Ji Ding",
     "Hawking",
     "King",
     "Lansing",
     "Ming",
     "Nothing",
+    "Sticky Toffee Pudding",
     "The Lion King",
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Return of the King",
     "The Shining",
     "The Thing",
-    "X-Wing"
+    "X-Wing",
+    "Yorkshire Pudding"
   ],
   "Ends with INI": [
+    "Blini",
     "Eswatini",
     "Gemini",
-    "Santorini"
+    "Santorini",
+    "Tahini",
+    "Tortellini"
   ],
   "Ends with INK": [
     "BLACKPINK"
@@ -4175,6 +4589,7 @@
     "Sao Tome and Principe"
   ],
   "Ends with IPS": [
+    "Fish and Chips",
     "The Time Ships"
   ],
   "Ends with IRA": [
@@ -4194,6 +4609,9 @@
     "Slumdog Millionaire",
     "Solitaire"
   ],
+  "Ends with IRI": [
+    "Onigiri"
+  ],
   "Ends with IRK": [
     "Kirk"
   ],
@@ -4201,24 +4619,34 @@
     "Gone Girl",
     "Working Girl"
   ],
+  "Ends with IRO": [
+    "Brigadeiro"
+  ],
   "Ends with IRU": [
     "Ikiru"
   ],
   "Ends with ISA": [
+    "Bandeja Paisa",
     "Pisa"
   ],
   "Ends with ISE": [
+    "Bearnaise",
     "Boise",
     "Enterprise",
+    "Hollandaise",
     "Nicoise"
   ],
   "Ends with ISH": [
     "Death Wish",
+    "Gefilte Fish",
     "Wish"
   ],
   "Ends with ISK": [
     "Basilisk",
     "Risk"
+  ],
+  "Ends with ISO": [
+    "Miso"
   ],
   "Ends with IST": [
     "Schindler's List",
@@ -4226,12 +4654,18 @@
     "The Artist",
     "Whist"
   ],
+  "Ends with ISU": [
+    "Tiramisu"
+  ],
   "Ends with ISY": [
     "Daisy",
     "Driving Miss Daisy"
   ],
   "Ends with ITA": [
-    "Evita"
+    "Evita",
+    "Fajita",
+    "Pita",
+    "Spanakopita"
   ],
   "Ends with ITE": [
     "Aphrodite",
@@ -4305,7 +4739,11 @@
   "Ends with JAY": [
     "Blue Jay"
   ],
+  "Ends with JIU": [
+    "Baijiu"
+  ],
   "Ends with JOR": [
+    "Alfajor",
     "Ursa Major"
   ],
   "Ends with KAT": [
@@ -4315,11 +4753,16 @@
     "Yankee"
   ],
   "Ends with KEL": [
-    "Nickel"
+    "Nickel",
+    "Pumpernickel"
   ],
   "Ends with KEN": [
+    "Butter Chicken",
     "Chicken",
-    "Kraken"
+    "Fried Chicken",
+    "Kraken",
+    "Kung Pao Chicken",
+    "Orange Chicken"
   ],
   "Ends with KER": [
     "Joker",
@@ -4331,6 +4774,7 @@
     "The Rise of Skywalker"
   ],
   "Ends with KET": [
+    "Brisket",
     "Nantucket",
     "Phuket"
   ],
@@ -4338,6 +4782,7 @@
     "Key",
     "Mickey",
     "Monkey",
+    "Rye Whiskey",
     "Turkey",
     "Whiskey"
   ],
@@ -4345,10 +4790,14 @@
     "Slovakia"
   ],
   "Ends with KIE": [
+    "Chocolate Chip Cookie",
     "Cookie"
   ],
   "Ends with KIN": [
     "Napkin"
+  ],
+  "Ends with KKI": [
+    "Tteokbokki"
   ],
   "Ends with KLE": [
     "Pickle"
@@ -4372,11 +4821,18 @@
   "Ends with LAC": [
     "Cadillac"
   ],
+  "Ends with LAD": [
+    "Olivier Salad"
+  ],
   "Ends with LAF": [
     "Olaf"
   ],
+  "Ends with LAH": [
+    "Challah"
+  ],
   "Ends with LAN": [
     "Ferdinand Magellan",
+    "Flan",
     "Milan",
     "Mulan"
   ],
@@ -4386,6 +4842,9 @@
   ],
   "Ends with LAS": [
     "Dallas"
+  ],
+  "Ends with LAT": [
+    "Kartoffelsalat"
   ],
   "Ends with LAU": [
     "Palau"
@@ -4399,6 +4858,9 @@
   "Ends with LED": [
     "LED",
     "Tangled"
+  ],
+  "Ends with LEH": [
+    "Tabouleh"
   ],
   "Ends with LEM": [
     "Jerusalem",
@@ -4424,6 +4886,7 @@
     "Achilles",
     "Anne of Green Gables",
     "Beatles",
+    "Dan Dan Noodles",
     "Hercules",
     "Holes",
     "Les Misérables",
@@ -4436,8 +4899,12 @@
     "The Incredibles"
   ],
   "Ends with LET": [
+    "Cassoulet",
     "Hamlet",
     "Violet"
+  ],
+  "Ends with LFI": [
+    "Kulfi"
   ],
   "Ends with LGA": [
     "Volga"
@@ -4459,6 +4926,9 @@
   "Ends with LIE": [
     "Charlie"
   ],
+  "Ends with LIK": [
+    "Shashlik"
+  ],
   "Ends with LIN": [
     "Berlin",
     "Dublin",
@@ -4475,7 +4945,10 @@
     "Indianapolis"
   ],
   "Ends with LLA": [
-    "Cinderella"
+    "Cinderella",
+    "Paella",
+    "Quesadilla",
+    "Tortilla"
   ],
   "Ends with LLE": [
     "Belle",
@@ -4505,12 +4978,18 @@
     "Teflon",
     "Upsilon"
   ],
+  "Ends with LOO": [
+    "Vindaloo"
+  ],
   "Ends with LOT": [
     "Salem's Lot"
   ],
   "Ends with LOW": [
     "High and Low",
     "Yellow"
+  ],
+  "Ends with LOX": [
+    "Lox"
   ],
   "Ends with LPH": [
     "Wreck-It Ralph"
@@ -4523,6 +5002,9 @@
     "Delta",
     "Malta",
     "Upper Volta"
+  ],
+  "Ends with LTZ": [
+    "Schmaltz"
   ],
   "Ends with LUB": [
     "Club"
@@ -4542,6 +5024,7 @@
     "Iceman",
     "Iron Man",
     "Isle of Man",
+    "Massaman",
     "Oman",
     "Rain Man",
     "Scent of a Woman",
@@ -4580,10 +5063,14 @@
   "Ends with MEG": [
     "Nutmeg"
   ],
+  "Ends with MEL": [
+    "Bechamel"
+  ],
   "Ends with MEN": [
     "Little Women",
     "No Country for Old Men",
     "North Yemen",
+    "Ramen",
     "South Yemen",
     "Yemen"
   ],
@@ -4602,7 +5089,8 @@
     "Hermes",
     "James",
     "Thames",
-    "The Hunger Games"
+    "The Hunger Games",
+    "Tzimmes"
   ],
   "Ends with MET": [
     "Met"
@@ -4632,6 +5120,12 @@
   ],
   "Ends with MOS": [
     "Deimos"
+  ],
+  "Ends with MUN": [
+    "Gulab Jamun"
+  ],
+  "Ends with MUS": [
+    "Hummus"
   ],
   "Ends with N 3": [
     "Alien 3"
@@ -4714,6 +5208,7 @@
     "Solomon Islands"
   ],
   "Ends with NDY": [
+    "Burgundy",
     "Cotton Candy"
   ],
   "Ends with NEA": [
@@ -4739,13 +5234,15 @@
   "Ends with NER": [
     "Blade Runner",
     "Mariner",
+    "Pilsner",
     "Road Runner"
   ],
   "Ends with NES": [
     "Attack of the Clones",
     "Des Moines",
     "Philippines",
-    "Saint Vincent and the Grenadines"
+    "Saint Vincent and the Grenadines",
+    "Scones"
   ],
   "Ends with NET": [
     "Gannet",
@@ -4756,12 +5253,14 @@
   "Ends with NEY": [
     "Alderney",
     "Bill & Ted's Bogus Journey",
+    "Chutney",
     "Disney",
     "Orkney",
     "Sydney",
     "Whitney"
   ],
   "Ends with NGA": [
+    "Chimichanga",
     "Tonga"
   ],
   "Ends with NGE": [
@@ -4771,12 +5270,16 @@
   "Ends with NGO": [
     "Belgian Congo",
     "Congo",
+    "Dango",
     "Democratic Republic of the Congo",
     "Flamingo",
     "Tango"
   ],
   "Ends with NGS": [
     "The Lord of the Rings"
+  ],
+  "Ends with NHA": [
+    "Francesinha"
   ],
   "Ends with NIA": [
     "Abyssinia",
@@ -4808,6 +5311,7 @@
   ],
   "Ends with NIE": [
     "Annie",
+    "Brownie",
     "Minnie"
   ],
   "Ends with NIN": [
@@ -4824,6 +5328,7 @@
     "The Tale of Genji"
   ],
   "Ends with NKA": [
+    "Solyanka",
     "Sri Lanka"
   ],
   "Ends with NKS": [
@@ -4838,7 +5343,8 @@
   ],
   "Ends with NNE": [
     "Carcassonne",
-    "Cheyenne"
+    "Cheyenne",
+    "Penne"
   ],
   "Ends with NNY": [
     "Bugs Bunny",
@@ -4854,6 +5360,7 @@
     "Venom"
   ],
   "Ends with NON": [
+    "Beef Bourguignon",
     "Canon",
     "Lebanon",
     "Xenon"
@@ -4880,6 +5387,9 @@
   ],
   "Ends with NTE": [
     "Dante"
+  ],
+  "Ends with NTI": [
+    "Chianti"
   ],
   "Ends with NTO": [
     "Encanto",
@@ -4918,6 +5428,9 @@
   ],
   "Ends with OAT": [
     "Goat"
+  ],
+  "Ends with OBA": [
+    "Soba"
   ],
   "Ends with OBB": [
     "Cobb"
@@ -4963,8 +5476,15 @@
   "Ends with OFT": [
     "Microsoft"
   ],
+  "Ends with OFU": [
+    "Mapo Tofu"
+  ],
   "Ends with OFY": [
     "Goofy"
+  ],
+  "Ends with OGI": [
+    "Bulgogi",
+    "Pierogi"
   ],
   "Ends with OGO": [
     "Togo"
@@ -4984,6 +5504,9 @@
   "Ends with OIR": [
     "Choir"
   ],
+  "Ends with OJU": [
+    "Soju"
+  ],
   "Ends with OKE": [
     "Princess Mononoke"
   ],
@@ -4997,18 +5520,28 @@
     "Shikoku"
   ],
   "Ends with OLA": [
-    "Angola"
+    "Angola",
+    "Cola"
   ],
   "Ends with OLD": [
     "Gold",
     "Kate & Leopold"
   ],
   "Ends with OLE": [
-    "Black Hole"
+    "Black Hole",
+    "Espagnole",
+    "Guacamole",
+    "Mole",
+    "Profiterole"
   ],
   "Ends with OLF": [
     "Golf",
     "Wolf"
+  ],
+  "Ends with OLI": [
+    "Aioli",
+    "Cannoli",
+    "Ravioli"
   ],
   "Ends with OLM": [
     "Bornholm"
@@ -5052,6 +5585,7 @@
     "Harry Potter and the Sorcerer's Stone",
     "Hermione",
     "Home Alone",
+    "Minestrone",
     "Rogue One",
     "Sierra Leone",
     "The Sword in the Stone",
@@ -5132,10 +5666,15 @@
   "Ends with ORF": [
     "Waldorf"
   ],
+  "Ends with ORI": [
+    "Tandoori",
+    "Yakitori"
+  ],
   "Ends with ORK": [
     "Escape from New York",
     "Home Alone 2: Lost in New York",
-    "New York"
+    "New York",
+    "Twice Cooked Pork"
   ],
   "Ends with ORM": [
     "Storm",
@@ -5157,6 +5696,7 @@
   ],
   "Ends with ORT": [
     "Frankfort",
+    "Port",
     "Voldemort"
   ],
   "Ends with ORY": [
@@ -5170,8 +5710,14 @@
     "Rose",
     "San Jose"
   ],
+  "Ends with OSH": [
+    "Rogan Josh"
+  ],
   "Ends with OSS": [
     "Albatross"
+  ],
+  "Ends with OSÉ": [
+    "Rosé"
   ],
   "Ends with OT7": [
     "GOT7"
@@ -5193,6 +5739,9 @@
     "Moth",
     "Sabretooth"
   ],
+  "Ends with OTI": [
+    "Roti"
+  ],
   "Ends with OTT": [
     "Marriott"
   ],
@@ -5203,12 +5752,19 @@
     "Seoul",
     "Soul"
   ],
+  "Ends with OUP": [
+    "French Onion Soup"
+  ],
+  "Ends with OUR": [
+    "Sweet and Sour"
+  ],
   "Ends with OUS": [
     "Enormous"
   ],
   "Ends with OUT": [
     "Fallout",
-    "Inside Out"
+    "Inside Out",
+    "Stout"
   ],
   "Ends with OVA": [
     "Moldova"
@@ -5228,6 +5784,15 @@
     "Harry Potter and the Deathly Hallows",
     "The Wind in the Willows"
   ],
+  "Ends with OWY": [
+    "Kotlet Schabowy"
+  ],
+  "Ends with OZA": [
+    "Gyoza"
+  ],
+  "Ends with OZI": [
+    "Jiaozi"
+  ],
   "Ends with OZO": [
     "Gozo"
   ],
@@ -5238,6 +5803,9 @@
     "Japan",
     "Peter Pan",
     "Saipan"
+  ],
+  "Ends with PAS": [
+    "Tapas"
   ],
   "Ends with PEI": [
     "Pohnpei"
@@ -5261,14 +5829,19 @@
   "Ends with PHI": [
     "Phi"
   ],
+  "Ends with PHO": [
+    "Pho"
+  ],
   "Ends with PIA": [
     "Ethiopia",
     "Olympia",
     "Zootopia"
   ],
   "Ends with PIE": [
+    "Apple Pie",
     "Magpie",
-    "Pie"
+    "Pie",
+    "Shepherd's Pie"
   ],
   "Ends with PIG": [
     "Porky Pig"
@@ -5286,6 +5859,9 @@
   ],
   "Ends with POE": [
     "Poe"
+  ],
+  "Ends with POT": [
+    "Hot Pot"
   ],
   "Ends with PPA": [
     "Kappa"
@@ -5335,6 +5911,7 @@
     "Ram"
   ],
   "Ends with RAN": [
+    "Ayran",
     "Iran",
     "Ran"
   ],
@@ -5368,7 +5945,8 @@
     "Bismarck"
   ],
   "Ends with RDE": [
-    "Cabo Verde"
+    "Cabo Verde",
+    "Caldo Verde"
   ],
   "Ends with RDS": [
     "Inglourious Basterds"
@@ -5388,6 +5966,9 @@
   "Ends with REE": [
     "Daintree"
   ],
+  "Ends with REK": [
+    "Zurek"
+  ],
   "Ends with REL": [
     "Petrel"
   ],
@@ -5403,6 +5984,7 @@
     "Cabaret"
   ],
   "Ends with REY": [
+    "Earl Grey",
     "Jean Grey"
   ],
   "Ends with RFS": [
@@ -5431,6 +6013,7 @@
     "Illyria",
     "Liberia",
     "Nigeria",
+    "Sangria",
     "Santa Maria",
     "Syria",
     "Transnistria",
@@ -5467,7 +6050,9 @@
     "Dreamgirls"
   ],
   "Ends with RMA": [
-    "Burma"
+    "Burma",
+    "Korma",
+    "Shawarma"
   ],
   "Ends with RNA": [
     "Annapurna"
@@ -5492,6 +6077,7 @@
     "Akron",
     "Boron",
     "Iron",
+    "Macaron",
     "Omicron",
     "Ron",
     "The Black Cauldron"
@@ -5505,6 +6091,9 @@
   ],
   "Ends with ROT": [
     "Foxtrot"
+  ],
+  "Ends with ROU": [
+    "Hui Guo Rou"
   ],
   "Ends with ROW": [
     "Crow",
@@ -5522,19 +6111,30 @@
   "Ends with RRE": [
     "Pierre"
   ],
+  "Ends with RRI": [
+    "Chimichurri"
+  ],
   "Ends with RRO": [
+    "Churro",
     "El Hierro"
   ],
   "Ends with RRY": [
     "Blueberry",
     "Curry",
     "Ferry",
+    "Green Curry",
     "Harry",
-    "Tom and Jerry"
+    "Red Curry",
+    "Sherry",
+    "Tom and Jerry",
+    "Yellow Curry"
   ],
   "Ends with RSE": [
     "Horse",
     "Morse"
+  ],
+  "Ends with RST": [
+    "Bratwurst"
   ],
   "Ends with RTE": [
     "Napoleon Bonaparte"
@@ -5546,7 +6146,11 @@
     "Hearts"
   ],
   "Ends with RUM": [
-    "Drum"
+    "Drum",
+    "Rum"
+  ],
+  "Ends with RUP": [
+    "Maple Syrup"
   ],
   "Ends with RUS": [
     "Belarus",
@@ -5558,10 +6162,15 @@
     "Walrus"
   ],
   "Ends with RYE": [
+    "Rye",
     "The Catcher in the Rye"
   ],
+  "Ends with SAF": [
+    "Mansaf"
+  ],
   "Ends with SAL": [
-    "Colossal"
+    "Colossal",
+    "Samgyeopsal"
   ],
   "Ends with SAM": [
     "Sam",
@@ -5582,8 +6191,12 @@
   "Ends with SBY": [
     "The Great Gatsby"
   ],
+  "Ends with SCA": [
+    "Agua Fresca"
+  ],
   "Ends with SCO": [
-    "Donnie Brasco"
+    "Donnie Brasco",
+    "Pisco"
   ],
   "Ends with SEA": [
     "Tales from Earthsea"
@@ -5608,7 +6221,11 @@
     "The Odyssey"
   ],
   "Ends with SHA": [
-    "Kagemusha"
+    "Kagemusha",
+    "Kasha"
+  ],
+  "Ends with SHI": [
+    "Sushi"
   ],
   "Ends with SHU": [
     "Honshu",
@@ -5631,6 +6248,15 @@
   ],
   "Ends with SIL": [
     "Basil"
+  ],
+  "Ends with SIN": [
+    "Hoisin"
+  ],
+  "Ends with SIO": [
+    "Pastitsio"
+  ],
+  "Ends with SIU": [
+    "Char Siu"
   ],
   "Ends with SKA": [
     "Alaska"
@@ -5657,14 +6283,22 @@
   "Ends with SOW": [
     "Sow"
   ],
+  "Ends with SSE": [
+    "Bouillabaisse"
+  ],
+  "Ends with SSI": [
+    "Lassi"
+  ],
   "Ends with SSO": [
     "Lasso",
     "Porco Rosso"
   ],
   "Ends with STA": [
-    "Augusta"
+    "Augusta",
+    "Pasta"
   ],
   "Ends with STO": [
+    "Pesto",
     "The Count of Monte Cristo"
   ],
   "Ends with STR": [
@@ -5672,6 +6306,9 @@
   ],
   "Ends with SUE": [
     "Tissue"
+  ],
+  "Ends with SUM": [
+    "Dim Sum"
   ],
   "Ends with SUN": [
     "Sun"
@@ -5690,6 +6327,10 @@
     "Elemental",
     "Monumental",
     "Portal"
+  ],
+  "Ends with TAM": [
+    "Com Tam",
+    "Som Tam"
   ],
   "Ends with TAN": [
     "Afghanistan",
@@ -5721,10 +6362,14 @@
   ],
   "Ends with TCH": [
     "Lilo & Stitch",
-    "Overwatch"
+    "Overwatch",
+    "Scotch"
   ],
   "Ends with TEA": [
-    "Green Tea"
+    "Bubble Tea",
+    "Green Tea",
+    "Iced Tea",
+    "Tea"
   ],
   "Ends with TED": [
     "The Departed"
@@ -5735,6 +6380,9 @@
   "Ends with TEL": [
     "Hotel",
     "Intel"
+  ],
+  "Ends with TEN": [
+    "Sauerbraten"
   ],
   "Ends with TER": [
     "Avatar: The Way of Water",
@@ -5756,6 +6404,9 @@
     "United Arab Emirates",
     "United States"
   ],
+  "Ends with THE": [
+    "Absinthe"
+  ],
   "Ends with THO": [
     "Lesotho"
   ],
@@ -5772,6 +6423,9 @@
   ],
   "Ends with TIS": [
     "Atlantis"
+  ],
+  "Ends with TKE": [
+    "Latke"
   ],
   "Ends with TLE": [
     "Aristotle",
@@ -5801,7 +6455,8 @@
     "Piston",
     "Southampton",
     "Trenton",
-    "Washington"
+    "Washington",
+    "Wonton"
   ],
   "Ends with TOO": [
     "The Girl with the Dragon Tattoo"
@@ -5818,8 +6473,26 @@
     "Cleopatra",
     "Sumatra"
   ],
+  "Ends with TSO": [
+    "General Tso"
+  ],
+  "Ends with TSU": [
+    "Tonkatsu"
+  ],
+  "Ends with TTA": [
+    "Bruschetta",
+    "Ciabatta",
+    "Panna Cotta"
+  ],
   "Ends with TTE": [
+    "Baguette",
     "Gazette"
+  ],
+  "Ends with TTI": [
+    "Spaghetti"
+  ],
+  "Ends with TTO": [
+    "Risotto"
   ],
   "Ends with TTY": [
     "Arrietty"
@@ -5863,7 +6536,9 @@
     "Luca"
   ],
   "Ends with UCE": [
+    "Fish Sauce",
     "Lettuce",
+    "Oyster Sauce",
     "Soy Sauce"
   ],
   "Ends with UCK": [
@@ -5871,8 +6546,12 @@
     "Canuck",
     "Daffy Duck",
     "Fire Truck",
+    "Peking Duck",
     "Puck",
     "Starbuck"
+  ],
+  "Ends with UCO": [
+    "Osso Buco"
   ],
   "Ends with UDA": [
     "Antigua and Barbuda"
@@ -5888,7 +6567,8 @@
     "Huge"
   ],
   "Ends with UGH": [
-    "Dough"
+    "Dough",
+    "Sourdough"
   ],
   "Ends with UIN": [
     "Bruin",
@@ -5940,6 +6620,9 @@
     "Neptune",
     "Tune"
   ],
+  "Ends with UNG": [
+    "Egg Foo Young"
+  ],
   "Ends with UNK": [
     "Skunk"
   ],
@@ -5950,8 +6633,12 @@
     "Count",
     "Temple Mount"
   ],
+  "Ends with UON": [
+    "Goi Cuon"
+  ],
   "Ends with URA": [
-    "Fuerteventura"
+    "Fuerteventura",
+    "Tempura"
   ],
   "Ends with URE": [
     "Aperture",
@@ -5982,12 +6669,19 @@
     "The Santa Clause",
     "The Santa Clause 3: The Escape Clause"
   ],
+  "Ends with USH": [
+    "Baba Ganoush",
+    "Fattoush"
+  ],
   "Ends with USK": [
     "Musk"
   ],
   "Ends with UST": [
     "Rust",
     "The First Fifteen Lives of Harry August"
+  ],
+  "Ends with UTE": [
+    "Veloute"
   ],
   "Ends with UTH": [
     "Ruth"
@@ -6041,8 +6735,14 @@
     "Bolivia",
     "Latvia"
   ],
+  "Ends with VIK": [
+    "Medovik"
+  ],
   "Ends with VIL": [
     "Devil"
+  ],
+  "Ends with VIN": [
+    "Coq au Vin"
   ],
   "Ends with VIS": [
     "Elvis",
@@ -6090,6 +6790,9 @@
   "Ends with XAS": [
     "Texas"
   ],
+  "Ends with XEO": [
+    "Banh Xeo"
+  ],
   "Ends with XIA": [
     "Xia"
   ],
@@ -6126,11 +6829,23 @@
   "Ends with YRE": [
     "Jane Eyre"
   ],
+  "Ends with YRO": [
+    "Gyro"
+  ],
+  "Ends with YUM": [
+    "Tom Yum"
+  ],
   "Ends with ZAN": [
     "Tarzan"
   ],
+  "Ends with ZCZ": [
+    "Barszcz"
+  ],
   "Ends with ZEL": [
-    "Hazel"
+    "Brezel",
+    "Hazel",
+    "Pretzel",
+    "Schnitzel"
   ],
   "Ends with ZEN": [
     "Frozen"
@@ -6144,6 +6859,13 @@
   "Ends with ZIL": [
     "Brazil"
   ],
+  "Ends with ZKI": [
+    "Paczki"
+  ],
+  "Ends with ZLE": [
+    "Käsespätzle",
+    "Spätzle"
+  ],
   "Ends with ZON": [
     "Amazon",
     "Deepwater Horizon",
@@ -6154,6 +6876,9 @@
   ],
   "Ends with ZOV": [
     "The Brothers Karamazov"
+  ],
+  "Ends with ZZA": [
+    "Pizza"
   ],
   "Engineering Structures": [
     "Bridge",
@@ -6588,6 +7313,9 @@
     "Shark",
     "Tuna"
   ],
+  "Flatbreads": [
+    "Pizza"
+  ],
   "Flower-class Corvettes": [
     "Buttercup",
     "Heather",
@@ -6621,57 +7349,327 @@
     "Robin Hood"
   ],
   "Foods": [
+    "Affogato",
+    "Aioli",
+    "Ajiaco",
     "Albatross",
+    "Alfajor",
+    "Alfredo",
+    "Apfelstrudel",
     "Apple",
+    "Apple Pie",
+    "Arepa",
+    "Asado",
     "Avocado",
+    "BBQ",
+    "Baba Ganoush",
+    "Bacalhau",
     "Bacon",
+    "Bagel",
+    "Baguette",
+    "Baklava",
     "Banana",
+    "Bandeja Paisa",
+    "Bangers and Mash",
+    "Banh Mi",
+    "Banh Xeo",
+    "Bao",
+    "Barszcz",
+    "Bearnaise",
+    "Bechamel",
+    "Beef Bourguignon",
+    "Bibimbap",
+    "Bigos",
+    "Bingsu",
+    "Biryani",
+    "Black Forest Cake",
     "Bleu Cheese",
+    "Blini",
+    "Bolognese",
+    "Borscht",
+    "Bouillabaisse",
+    "Bratwurst",
     "Bread",
+    "Brezel",
+    "Brigadeiro",
+    "Brioche",
+    "Brisket",
+    "Brownie",
+    "Bruschetta",
+    "Bubble and Squeak",
+    "Bulgogi",
+    "Bun Cha",
+    "Burrito",
+    "Butter Chicken",
     "Caesar",
     "Cake",
+    "Caldo Verde",
+    "Cannoli",
+    "Caprese",
+    "Carbonara",
+    "Cassoulet",
+    "Caviar",
+    "Ceviche",
+    "Challah",
+    "Char Siu",
+    "Che",
     "Cheese",
+    "Cheesecake",
     "Chicken",
+    "Chile Relleno",
+    "Chimichanga",
+    "Chimichurri",
+    "Chocolate Chip Cookie",
+    "Chow Fun",
+    "Chow Mein",
+    "Churro",
+    "Chutney",
+    "Ciabatta",
     "Cinnamon",
     "Cobb",
+    "Com Tam",
+    "Congee",
     "Cookie",
+    "Coq au Vin",
+    "Corned Beef",
     "Cotton Candy",
     "Crab",
+    "Crepe",
+    "Croissant",
+    "Croque Monsieur",
     "Curry",
+    "Dal",
+    "Dan Dan Noodles",
+    "Dango",
+    "Dim Sum",
+    "Dolmades",
+    "Dorayaki",
+    "Duck Confit",
+    "Dumpling",
+    "Eclair",
     "Egg",
+    "Egg Foo Young",
     "Eggplant",
+    "Empanada",
+    "Enchilada",
+    "Escargot",
+    "Espagnole",
+    "Fajita",
+    "Falafel",
+    "Fattoush",
+    "Feijoada",
+    "Fettuccine",
+    "Fish Sauce",
+    "Fish and Chips",
+    "Flan",
+    "Focaccia",
+    "Francesinha",
+    "French Onion Soup",
+    "Fried Chicken",
+    "Galaktoboureko",
+    "Gazpacho",
+    "Gefilte Fish",
+    "Gelato",
+    "General Tso",
+    "Goi Cuon",
+    "Golabki",
+    "Gong Bao Ji Ding",
     "Grape",
+    "Green Curry",
+    "Guacamole",
+    "Gulab Jamun",
+    "Gyoza",
+    "Gyro",
+    "Hamantaschen",
+    "Hamburger",
     "Hash",
+    "Hoisin",
+    "Hollandaise",
+    "Hot Dog",
+    "Hot Pot",
+    "Hotteok",
+    "Hui Guo Rou",
+    "Hummus",
+    "Jalebi",
+    "Japchae",
+    "Jiaozi",
+    "Jjajangmyeon",
+    "Kartoffelsalat",
+    "Kasha",
+    "Kebab",
     "Ketchup",
+    "Kielbasa",
+    "Kimchi",
+    "Kishka",
     "Kiwi",
+    "Knafeh",
+    "Korma",
+    "Kotlet Schabowy",
+    "Kotleti",
+    "Kreplach",
+    "Kugel",
+    "Kulfi",
+    "Kung Pao Chicken",
+    "Käsespätzle",
+    "Larb",
+    "Lasagna",
+    "Latke",
     "Lemon",
     "Lettuce",
     "Lima",
+    "Linguine",
+    "Lo Mein",
     "Lobster",
+    "Locro",
+    "Lox",
+    "Ma La Tang",
+    "Mac and Cheese",
+    "Macaron",
+    "Madeleine",
+    "Makowiec",
+    "Mango Sticky Rice",
+    "Mansaf",
+    "Mapo Tofu",
+    "Marinara",
+    "Massaman",
+    "Matzo Ball",
     "Mayo",
+    "Medovik",
+    "Milanesa",
     "Milk",
+    "Minestrone",
+    "Miso",
+    "Mochi",
+    "Mole",
+    "Mole Poblano",
+    "Mooncake",
+    "Moqueca",
+    "Moussaka",
     "Mustard",
+    "Naan",
+    "Naengmyeon",
     "Nugget",
+    "Nuoc Cham",
     "Nutmeg",
+    "Oden",
+    "Okonomiyaki",
     "Olive",
+    "Olivier Salad",
+    "Onigiri",
     "Onion",
     "Orange",
+    "Orange Chicken",
+    "Osso Buco",
+    "Oyster Sauce",
+    "Paczki",
+    "Pad Thai",
+    "Paella",
+    "Palak Paneer",
+    "Panna Cotta",
+    "Pao de Queijo",
+    "Pasta",
+    "Pastel de Nata",
+    "Pastitsio",
+    "Pastrami",
     "Peach",
+    "Peking Duck",
+    "Pelmeni",
+    "Penne",
     "Pepper",
+    "Pesto",
+    "Pho",
     "Pickle",
     "Pie",
+    "Pierogi",
     "Pinto",
+    "Pita",
+    "Pizza",
+    "Pretzel",
+    "Profiterole",
+    "Pumpernickel",
+    "Quesadilla",
+    "Quiche",
+    "Ramen",
     "Ranch",
+    "Ratatouille",
+    "Ravioli",
+    "Red Curry",
     "Red Velvet",
+    "Risotto",
+    "Rogan Josh",
     "Roma",
+    "Roti",
+    "Rouladen",
+    "Rugelach",
+    "Rye",
     "Salmon",
+    "Salsa",
+    "Samgyeopsal",
+    "Sashimi",
+    "Sauerbraten",
+    "Sauerkraut",
+    "Schmaltz",
+    "Schnitzel",
+    "Scones",
+    "Shabu Shabu",
+    "Shashlik",
+    "Shawarma",
+    "Shepherd's Pie",
+    "Soba",
+    "Solyanka",
+    "Som Tam",
+    "Souffle",
+    "Sourdough",
+    "Souvlaki",
     "Soy Sauce",
+    "Spaghetti",
+    "Spanakopita",
     "Spice",
+    "Spätzle",
+    "Sriracha",
+    "Sticky Toffee Pudding",
+    "Sukiyaki",
+    "Sushi",
+    "Sweet and Sour",
+    "Tabouleh",
+    "Taco",
+    "Tahini",
+    "Taiyaki",
+    "Takoyaki",
+    "Tamale",
+    "Tandoori",
     "Tang",
+    "Tapas",
     "Tart",
+    "Tempura",
+    "Teriyaki",
+    "Tikka Masala",
+    "Tiramisu",
+    "Tom Yum",
     "Tomato",
+    "Tonkatsu",
+    "Tortellini",
+    "Tortilla",
+    "Tres Leches",
+    "Trifle",
+    "Tteokbokki",
     "Turkey",
-    "Waldorf"
+    "Twice Cooked Pork",
+    "Tzatziki",
+    "Tzimmes",
+    "Udon",
+    "Vareniki",
+    "Veloute",
+    "Vindaloo",
+    "Waldorf",
+    "Wasabi",
+    "Wonton",
+    "Xiaolongbao",
+    "Yakitori",
+    "Yellow Curry",
+    "Yorkshire Pudding",
+    "Yu Xiang Qie Zi",
+    "Zurek"
   ],
   "Former Belgian Colonies": [
     "Belgian Congo",
@@ -7080,21 +8078,30 @@
     "Troy"
   ],
   "Green Things": [
+    "Absinthe",
+    "Chimichurri",
     "Emerald",
     "Green Apple",
     "Green Arrow",
     "Green Bean",
+    "Green Curry",
     "Green Goblin",
     "Green Lantern",
     "Green Light",
     "Green Tea",
+    "Guacamole",
     "Hulk",
     "Jade",
     "Kiwi",
+    "Matcha",
     "Olive",
+    "Palak Paneer",
+    "Pesto",
     "Riddler",
     "Sage",
-    "Saint Patrick"
+    "Saint Patrick",
+    "Tabouleh",
+    "Wasabi"
   ],
   "Harry Potter Characters": [
     "Draco",
@@ -7518,39 +8525,22 @@
     "Whisper of the Heart",
     "Yojimbo"
   ],
-  "Japanese Things": [
-    "Akira",
-    "Arrietty",
-    "Castle in the Sky",
-    "Dreams",
-    "From Up on Poppy Hill",
-    "Grave of the Fireflies",
-    "High and Low",
-    "Howl's Moving Castle",
-    "Ikiru",
-    "Kagemusha",
-    "Kiki's Delivery Service",
-    "My Neighbor Totoro",
-    "Only Yesterday",
-    "Pom Poko",
-    "Ponyo",
-    "Porco Rosso",
-    "Princess Mononoke",
-    "Ran",
-    "Rashomon",
-    "Red Beard",
-    "Sanjuro",
-    "Seven Samurai",
-    "Spirited Away",
-    "Tales from Earthsea",
-    "The Cat Returns",
-    "The Hidden Fortress",
-    "The Tale of the Princess Kaguya",
-    "The Wind Rises",
-    "Throne of Blood",
-    "When Marnie Was There",
-    "Whisper of the Heart",
-    "Yojimbo"
+  "Jewish Foods": [
+    "Brisket",
+    "Corned Beef",
+    "Gefilte Fish",
+    "Hamantaschen",
+    "Kasha",
+    "Kishka",
+    "Kreplach",
+    "Kugel",
+    "Latke",
+    "Lox",
+    "Matzo Ball",
+    "Pastrami",
+    "Rugelach",
+    "Schmaltz",
+    "Tzimmes"
   ],
   "K-pop": [
     "(G)I-DLE",
@@ -11694,6 +12684,24 @@
     "Radon",
     "Xenon"
   ],
+  "Noodles": [
+    "Chow Fun",
+    "Chow Mein",
+    "Dan Dan Noodles",
+    "Fettuccine",
+    "Jjajangmyeon",
+    "Lasagna",
+    "Linguine",
+    "Lo Mein",
+    "Naengmyeon",
+    "Pad Thai",
+    "Pasta",
+    "Penne",
+    "Ramen",
+    "Soba",
+    "Spaghetti",
+    "Udon"
+  ],
   "Norse Gods": [
     "Loki",
     "Thor"
@@ -12033,6 +13041,7 @@
     "Cotton Candy",
     "Flamingo",
     "Pink Panther",
+    "Rosé",
     "Salmon"
   ],
   "Pirate Terms": [
@@ -12773,7 +13782,10 @@
   ],
   "Red Things": [
     "Apple",
+    "Barszcz",
     "Blood",
+    "Bolognese",
+    "Borscht",
     "Canon",
     "Cardinal",
     "Crab",
@@ -12782,17 +13794,23 @@
     "Flash",
     "Gambit",
     "Iron Man",
+    "Ketchup",
     "Lobster",
     "Magneto",
+    "Marinara",
     "Phoenix",
     "Red",
     "Red Beard",
+    "Red Curry",
     "Red Hood",
     "Red Riding Hood",
     "Red Velvet",
+    "Red Wine",
     "Rose",
     "Ruby",
     "Rust",
+    "Salsa",
+    "Sriracha",
     "Stop Sign",
     "Tomato",
     "Wonder Woman"
@@ -13157,11 +14175,39 @@
     "Don Quixote"
   ],
   "Sauces": [
+    "Aioli",
+    "Alfredo",
+    "Bearnaise",
+    "Bechamel",
+    "Bolognese",
+    "Carbonara",
+    "Chimichurri",
+    "Chutney",
+    "Espagnole",
+    "Fish Sauce",
+    "Guacamole",
+    "Hoisin",
+    "Hollandaise",
+    "Hummus",
     "Ketchup",
+    "Marinara",
     "Mayo",
+    "Miso",
+    "Mole",
     "Mustard",
+    "Nuoc Cham",
+    "Oyster Sauce",
+    "Pesto",
+    "Ranch",
     "Salsa",
-    "Soy Sauce"
+    "Soy Sauce",
+    "Sriracha",
+    "Tahini",
+    "Teriyaki",
+    "Tomato",
+    "Tzatziki",
+    "Veloute",
+    "Wasabi"
   ],
   "School": [
     "Apple",
@@ -13458,6 +14504,16 @@
     "Titanic",
     "Victory"
   ],
+  "Sichuan Dishes": [
+    "Dan Dan Noodles",
+    "Gong Bao Ji Ding",
+    "Hui Guo Rou",
+    "Kung Pao Chicken",
+    "Ma La Tang",
+    "Mapo Tofu",
+    "Twice Cooked Pork",
+    "Yu Xiang Qie Zi"
+  ],
   "Silver Things": [
     "Colossus"
   ],
@@ -13565,6 +14621,20 @@
     "Nutmeg",
     "Pepper",
     "Sage"
+  ],
+  "Spicy Foods": [
+    "Curry",
+    "Dan Dan Noodles",
+    "Gong Bao Ji Ding",
+    "Green Curry",
+    "Kung Pao Chicken",
+    "Ma La Tang",
+    "Mapo Tofu",
+    "Red Curry",
+    "Tom Yum",
+    "Tteokbokki",
+    "Vindaloo",
+    "Yellow Curry"
   ],
   "Spider-Verse Villains": [
     "Doctor Octopus",
@@ -13689,6 +14759,9 @@
   "Starts with ABO": [
     "About Time"
   ],
+  "Starts with ABS": [
+    "Absinthe"
+  ],
   "Starts with ABY": [
     "Abyssinia"
   ],
@@ -13701,8 +14774,20 @@
   "Starts with ADA": [
     "Adams"
   ],
+  "Starts with AFF": [
+    "Affogato"
+  ],
   "Starts with AFG": [
     "Afghanistan"
+  ],
+  "Starts with AGU": [
+    "Agua Fresca"
+  ],
+  "Starts with AIO": [
+    "Aioli"
+  ],
+  "Starts with AJI": [
+    "Ajiaco"
   ],
   "Starts with AKI": [
     "Akira"
@@ -13725,6 +14810,10 @@
   ],
   "Starts with ALE": [
     "Alexandria"
+  ],
+  "Starts with ALF": [
+    "Alfajor",
+    "Alfredo"
   ],
   "Starts with ALG": [
     "Algeria"
@@ -13793,6 +14882,9 @@
   "Starts with APE": [
     "Aperture"
   ],
+  "Starts with APF": [
+    "Apfelstrudel"
+  ],
   "Starts with APH": [
     "Aphrodite"
   ],
@@ -13801,12 +14893,14 @@
     "Apollo 13"
   ],
   "Starts with APP": [
-    "Apple"
+    "Apple",
+    "Apple Pie"
   ],
   "Starts with AQU": [
     "Aquarius"
   ],
   "Starts with ARE": [
+    "Arepa",
     "Ares"
   ],
   "Starts with ARG": [
@@ -13834,6 +14928,9 @@
   "Starts with ART": [
     "Arthur Christmas",
     "Artsakh"
+  ],
+  "Starts with ASA": [
+    "Asado"
   ],
   "Starts with ATH": [
     "Athena",
@@ -13872,6 +14969,9 @@
     "Axe",
     "Axel Heiberg"
   ],
+  "Starts with AYR": [
+    "Ayran"
+  ],
   "Starts with AZE": [
     "Azerbaijan"
   ],
@@ -13879,9 +14979,11 @@
     "Azores"
   ],
   "Starts with BAB": [
+    "Baba Ganoush",
     "Baba Yaga"
   ],
   "Starts with BAC": [
+    "Bacalhau",
     "Bach",
     "Back to the Future",
     "Back to the Future Part II",
@@ -13896,11 +14998,19 @@
     "Baffin"
   ],
   "Starts with BAG": [
-    "Baghdad"
+    "Bagel",
+    "Baghdad",
+    "Baguette"
   ],
   "Starts with BAH": [
     "Bahamas",
     "Bahrain"
+  ],
+  "Starts with BAI": [
+    "Baijiu"
+  ],
+  "Starts with BAK": [
+    "Baklava"
   ],
   "Starts with BAL": [
     "Bali",
@@ -13911,13 +15021,21 @@
   ],
   "Starts with BAN": [
     "Banana",
+    "Bandeja Paisa",
+    "Bangers and Mash",
     "Bangladesh",
+    "Banh Mi",
+    "Banh Xeo",
     "Banks",
     "Banshee"
   ],
+  "Starts with BAO": [
+    "Bao"
+  ],
   "Starts with BAR": [
     "Barbados",
-    "Bari"
+    "Bari",
+    "Barszcz"
   ],
   "Starts with BAS": [
     "Basil",
@@ -13932,14 +15050,19 @@
     "Battery",
     "Battlefield"
   ],
+  "Starts with BBQ": [
+    "BBQ"
+  ],
   "Starts with BEA": [
     "Bear",
+    "Bearnaise",
     "Beast",
     "Beat",
     "Beatles",
     "Beauty and the Beast"
   ],
   "Starts with BEC": [
+    "Bechamel",
     "Bechuanaland"
   ],
   "Starts with BED": [
@@ -13947,6 +15070,8 @@
   ],
   "Starts with BEE": [
     "Bee",
+    "Beef Bourguignon",
+    "Beer",
     "Beethoven",
     "Beetle"
   ],
@@ -13991,18 +15116,26 @@
   "Starts with BHU": [
     "Bhutan"
   ],
+  "Starts with BIB": [
+    "Bibimbap"
+  ],
   "Starts with BIG": [
     "Big",
     "Big Bird",
-    "Big Hero 6"
+    "Big Hero 6",
+    "Bigos"
   ],
   "Starts with BIL": [
     "Bill & Ted's Bogus Journey",
     "Bill & Ted's Excellent Adventure"
   ],
+  "Starts with BIN": [
+    "Bingsu"
+  ],
   "Starts with BIR": [
     "Birch",
-    "Birdman"
+    "Birdman",
+    "Biryani"
   ],
   "Starts with BIS": [
     "Bishop",
@@ -14011,6 +15144,7 @@
   "Starts with BLA": [
     "BLACKPINK",
     "Black Cat",
+    "Black Forest Cake",
     "Black Hole",
     "Black Panther",
     "Black Widow",
@@ -14018,6 +15152,9 @@
   ],
   "Starts with BLE": [
     "Bleu Cheese"
+  ],
+  "Starts with BLI": [
+    "Blini"
   ],
   "Starts with BLO": [
     "Blood"
@@ -14040,6 +15177,7 @@
   "Starts with BOL": [
     "Bolivia",
     "Bologna",
+    "Bolognese",
     "Bolt"
   ],
   "Starts with BON": [
@@ -14047,9 +15185,11 @@
   ],
   "Starts with BOR": [
     "Bora Bora",
+    "Bordeaux",
     "Borneo",
     "Bornholm",
-    "Boron"
+    "Boron",
+    "Borscht"
   ],
   "Starts with BOS": [
     "Bosnia and Herzegovina",
@@ -14059,13 +15199,16 @@
     "Botswana"
   ],
   "Starts with BOU": [
-    "Bounty"
+    "Bouillabaisse",
+    "Bounty",
+    "Bourbon"
   ],
   "Starts with BOW": [
     "Bow"
   ],
   "Starts with BRA": [
     "Brasilia",
+    "Bratwurst",
     "Brave",
     "Brave New World",
     "Braveheart",
@@ -14073,10 +15216,14 @@
     "Brazil"
   ],
   "Starts with BRE": [
-    "Bread"
+    "Bread",
+    "Brezel"
   ],
   "Starts with BRI": [
     "Bridge",
+    "Brigadeiro",
+    "Brioche",
+    "Brisket",
     "Britannia",
     "British East Africa",
     "British Guiana",
@@ -14087,14 +15234,20 @@
   ],
   "Starts with BRO": [
     "Bronco",
-    "Brother Bear"
+    "Brother Bear",
+    "Brownie"
   ],
   "Starts with BRU": [
     "Bruin",
-    "Brunei"
+    "Brunei",
+    "Bruschetta"
   ],
   "Starts with BTS": [
     "BTS"
+  ],
+  "Starts with BUB": [
+    "Bubble Tea",
+    "Bubble and Squeak"
   ],
   "Starts with BUC": [
     "Buck"
@@ -14110,15 +15263,21 @@
   ],
   "Starts with BUL": [
     "Bulgaria",
+    "Bulgogi",
     "Bull"
   ],
+  "Starts with BUN": [
+    "Bun Cha"
+  ],
   "Starts with BUR": [
+    "Burgundy",
     "Burkina Faso",
     "Burma",
     "Burrito",
     "Burundi"
   ],
   "Starts with BUT": [
+    "Butter Chicken",
     "Buttercup",
     "Butterfinger",
     "Butterfly"
@@ -14130,6 +15289,9 @@
     "Cabaret",
     "Cabo Verde"
   ],
+  "Starts with CAC": [
+    "Cachaça"
+  ],
   "Starts with CAD": [
     "Cadillac"
   ],
@@ -14140,6 +15302,7 @@
     "Cake"
   ],
   "Starts with CAL": [
+    "Caldo Verde",
     "California"
   ],
   "Starts with CAM": [
@@ -14154,6 +15317,7 @@
     "Canary Islands",
     "Cancer",
     "Cancun",
+    "Cannoli",
     "Canoe",
     "Canon",
     "Canuck"
@@ -14166,6 +15330,7 @@
   ],
   "Starts with CAR": [
     "Carbon",
+    "Carbonara",
     "Carcassonne",
     "Card",
     "Cardinal",
@@ -14177,6 +15342,7 @@
   "Starts with CAS": [
     "Casablanca",
     "Cassiopeia",
+    "Cassoulet",
     "Castle in the Sky"
   ],
   "Starts with CAT": [
@@ -14186,6 +15352,9 @@
   ],
   "Starts with CAU": [
     "Causeway"
+  ],
+  "Starts with CAV": [
+    "Caviar"
   ],
   "Starts with CEB": [
     "Cebu"
@@ -14201,15 +15370,22 @@
     "Cerberus",
     "Ceres"
   ],
+  "Starts with CEV": [
+    "Ceviche"
+  ],
   "Starts with CEY": [
     "Ceylon"
   ],
   "Starts with CHA": [
     "CHA",
     "Chad",
+    "Chai",
     "Chair",
+    "Challah",
     "Challenger",
+    "Champagne",
     "Chanel",
+    "Char Siu",
     "Chariots of Fire",
     "Charlemagne",
     "Charleston",
@@ -14217,8 +15393,10 @@
     "Charlotte's Web"
   ],
   "Starts with CHE": [
+    "Che",
     "Checkers",
     "Cheese",
+    "Cheesecake",
     "Chernobyl",
     "Chess",
     "Chessboard",
@@ -14227,23 +15405,38 @@
   ],
   "Starts with CHI": [
     "Chi",
+    "Chianti",
     "Chicago",
     "Chicken",
     "Chicken Little",
     "Chile",
+    "Chile Relleno",
+    "Chimichanga",
+    "Chimichurri",
     "China",
     "Chisel"
   ],
   "Starts with CHO": [
+    "Chocolate Chip Cookie",
     "Choir",
-    "Chorus"
+    "Chorus",
+    "Chow Fun",
+    "Chow Mein"
   ],
   "Starts with CHR": [
     "Christopher Columbus",
     "Chrysler"
   ],
   "Starts with CHU": [
+    "Churro",
+    "Chutney",
     "Chuuk"
+  ],
+  "Starts with CIA": [
+    "Ciabatta"
+  ],
+  "Starts with CID": [
+    "Cider"
   ],
   "Starts with CIN": [
     "Cinderella",
@@ -14268,7 +15461,8 @@
     "Cobra"
   ],
   "Starts with COC": [
-    "Coco"
+    "Coco",
+    "Cocoa"
   ],
   "Starts with COD": [
     "CODA"
@@ -14283,6 +15477,7 @@
     "Coin"
   ],
   "Starts with COL": [
+    "Cola",
     "Colombia",
     "Colossal",
     "Colossus",
@@ -14290,6 +15485,7 @@
     "Columbus"
   ],
   "Starts with COM": [
+    "Com Tam",
     "Comino",
     "Comoros"
   ],
@@ -14297,6 +15493,7 @@
     "CON",
     "Concord",
     "Concordia",
+    "Congee",
     "Congo",
     "Constantinople"
   ],
@@ -14309,10 +15506,14 @@
     "Copper",
     "Copycat"
   ],
+  "Starts with COQ": [
+    "Coq au Vin"
+  ],
   "Starts with COR": [
     "Coral",
     "Corfu",
     "Cormorant",
+    "Corned Beef",
     "Corsica"
   ],
   "Starts with COS": [
@@ -14333,10 +15534,12 @@
   ],
   "Starts with CRA": [
     "Crab",
+    "Craft Beer",
     "Crash",
     "Crayon"
   ],
   "Starts with CRE": [
+    "Crepe",
     "Crete"
   ],
   "Starts with CRI": [
@@ -14344,6 +15547,8 @@
   ],
   "Starts with CRO": [
     "Croatia",
+    "Croissant",
+    "Croque Monsieur",
     "Crow"
   ],
   "Starts with CRU": [
@@ -14388,6 +15593,7 @@
     "Daisy"
   ],
   "Starts with DAL": [
+    "Dal",
     "Dallas"
   ],
   "Starts with DAM": [
@@ -14395,7 +15601,9 @@
     "Damnation"
   ],
   "Starts with DAN": [
+    "Dan Dan Noodles",
     "Dances with Wolves",
+    "Dango",
     "Dante",
     "Dante's Peak",
     "Danube"
@@ -14459,6 +15667,9 @@
     "Die Hard 2",
     "Die Hard with a Vengeance"
   ],
+  "Starts with DIM": [
+    "Dim Sum"
+  ],
   "Starts with DIR": [
     "Dirac"
   ],
@@ -14486,6 +15697,7 @@
     "Dog Day Afternoon"
   ],
   "Starts with DOL": [
+    "Dolmades",
     "Dolphin"
   ],
   "Starts with DOM": [
@@ -14500,6 +15712,9 @@
   ],
   "Starts with DOO": [
     "Doom"
+  ],
+  "Starts with DOR": [
+    "Dorayaki"
   ],
   "Starts with DOU": [
     "Dough"
@@ -14529,6 +15744,9 @@
   "Starts with DUB": [
     "Dublin"
   ],
+  "Starts with DUC": [
+    "Duck Confit"
+  ],
   "Starts with DUF": [
     "Duffel"
   ],
@@ -14540,7 +15758,8 @@
   ],
   "Starts with DUM": [
     "Dumbledore",
-    "Dumbo"
+    "Dumbo",
+    "Dumpling"
   ],
   "Starts with DUN": [
     "Dune"
@@ -14552,6 +15771,7 @@
     "Eagle"
   ],
   "Starts with EAR": [
+    "Earl Grey",
     "Earth"
   ],
   "Starts with EAS": [
@@ -14560,6 +15780,9 @@
   ],
   "Starts with ECH": [
     "Echo"
+  ],
+  "Starts with ECL": [
+    "Eclair"
   ],
   "Starts with ECU": [
     "Ecuador"
@@ -14575,6 +15798,7 @@
   ],
   "Starts with EGG": [
     "Egg",
+    "Egg Foo Young",
     "Eggplant"
   ],
   "Starts with EGY": [
@@ -14617,6 +15841,9 @@
   "Starts with EME": [
     "Emerald"
   ],
+  "Starts with EMP": [
+    "Empanada"
+  ],
   "Starts with ENC": [
     "Encanto",
     "Enchilada"
@@ -14641,7 +15868,11 @@
     "Eritrea"
   ],
   "Starts with ESC": [
-    "Escape from New York"
+    "Escape from New York",
+    "Escargot"
+  ],
+  "Starts with ESP": [
+    "Espagnole"
   ],
   "Starts with EST": [
     "Estonia"
@@ -14683,7 +15914,11 @@
   "Starts with FAH": [
     "Fahrenheit 451"
   ],
+  "Starts with FAJ": [
+    "Fajita"
+  ],
   "Starts with FAL": [
+    "Falafel",
     "Falcon",
     "Fallout"
   ],
@@ -14697,12 +15932,21 @@
     "Faroe",
     "Faroe Islands"
   ],
+  "Starts with FAT": [
+    "Fattoush"
+  ],
   "Starts with FED": [
     "Federation"
+  ],
+  "Starts with FEI": [
+    "Feijoada"
   ],
   "Starts with FER": [
     "Ferdinand Magellan",
     "Ferry"
+  ],
+  "Starts with FET": [
+    "Fettuccine"
   ],
   "Starts with FEY": [
     "Feynman"
@@ -14723,8 +15967,13 @@
   "Starts with FIR": [
     "Fire Truck"
   ],
+  "Starts with FIS": [
+    "Fish Sauce",
+    "Fish and Chips"
+  ],
   "Starts with FLA": [
     "Flamingo",
+    "Flan",
     "Flash"
   ],
   "Starts with FLI": [
@@ -14740,6 +15989,9 @@
   ],
   "Starts with FLY": [
     "Flyer"
+  ],
+  "Starts with FOC": [
+    "Focaccia"
   ],
   "Starts with FOG": [
     "Foghorn Leghorn"
@@ -14761,6 +16013,7 @@
   ],
   "Starts with FRA": [
     "France",
+    "Francesinha",
     "Frankenstein",
     "Frankfort",
     "Franklin D. Roosevelt",
@@ -14773,12 +16026,14 @@
     "French East Africa",
     "French Equatorial Africa",
     "French Indochina",
+    "French Onion Soup",
     "French Somaliland",
     "French West Africa",
     "Frequency"
   ],
   "Starts with FRI": [
-    "Fridge"
+    "Fridge",
+    "Fried Chicken"
   ],
   "Starts with FRO": [
     "From Up on Poppy Hill",
@@ -14798,6 +16053,7 @@
   ],
   "Starts with GAL": [
     "Galactica",
+    "Galaktoboureko",
     "Galapagos",
     "Galaxy",
     "Galaxy Quest",
@@ -14823,15 +16079,23 @@
     "Gaul"
   ],
   "Starts with GAZ": [
-    "Gazette"
+    "Gazette",
+    "Gazpacho"
   ],
   "Starts with GEA": [
     "Gear"
+  ],
+  "Starts with GEF": [
+    "Gefilte Fish"
+  ],
+  "Starts with GEL": [
+    "Gelato"
   ],
   "Starts with GEM": [
     "Gemini"
   ],
   "Starts with GEN": [
+    "General Tso",
     "Genoa"
   ],
   "Starts with GEO": [
@@ -14861,6 +16125,9 @@
   "Starts with GIL": [
     "Gilgamesh"
   ],
+  "Starts with GIN": [
+    "Gin"
+  ],
   "Starts with GIR": [
     "Giraffe"
   ],
@@ -14883,14 +16150,19 @@
   "Starts with GOD": [
     "Godspell"
   ],
+  "Starts with GOI": [
+    "Goi Cuon"
+  ],
   "Starts with GOL": [
+    "Golabki",
     "Gold",
     "Golf",
     "Goliath"
   ],
   "Starts with GON": [
     "Gone Girl",
-    "Gone with the Wind"
+    "Gone with the Wind",
+    "Gong Bao Ji Ding"
   ],
   "Starts with GOO": [
     "Good",
@@ -14922,6 +16194,7 @@
     "Green Arrow",
     "Green Bean",
     "Green Book",
+    "Green Curry",
     "Green Eggs and Ham",
     "Green Goblin",
     "Green Lantern",
@@ -14938,6 +16211,7 @@
     "Grover"
   ],
   "Starts with GUA": [
+    "Guacamole",
     "Guam",
     "Guatemala"
   ],
@@ -14953,6 +16227,7 @@
     "Guitar"
   ],
   "Starts with GUL": [
+    "Gulab Jamun",
     "Gull"
   ],
   "Starts with GUM": [
@@ -14960,6 +16235,12 @@
   ],
   "Starts with GUY": [
     "Guyana"
+  ],
+  "Starts with GYO": [
+    "Gyoza"
+  ],
+  "Starts with GYR": [
+    "Gyro"
   ],
   "Starts with HAD": [
     "Hades"
@@ -14978,6 +16259,8 @@
     "Halogen"
   ],
   "Starts with HAM": [
+    "Hamantaschen",
+    "Hamburger",
     "Hamlet",
     "Hammer"
   ],
@@ -15057,11 +16340,15 @@
   "Starts with HIS": [
     "Hispania"
   ],
+  "Starts with HOI": [
+    "Hoisin"
+  ],
   "Starts with HOK": [
     "Hokkaido"
   ],
   "Starts with HOL": [
-    "Holes"
+    "Holes",
+    "Hollandaise"
   ],
   "Starts with HOM": [
     "Home Alone",
@@ -15080,11 +16367,16 @@
     "Hoover"
   ],
   "Starts with HOR": [
+    "Horchata",
     "Horse"
   ],
   "Starts with HOT": [
+    "Hot Chocolate",
+    "Hot Dog",
+    "Hot Pot",
     "Hot Tub Time Machine",
-    "Hotel"
+    "Hotel",
+    "Hotteok"
   ],
   "Starts with HOW": [
     "How the Grinch Stole Christmas",
@@ -15099,11 +16391,15 @@
   "Starts with HUG": [
     "Huge"
   ],
+  "Starts with HUI": [
+    "Hui Guo Rou"
+  ],
   "Starts with HUL": [
     "Hulk"
   ],
   "Starts with HUM": [
-    "Hummingbird"
+    "Hummingbird",
+    "Hummus"
   ],
   "Starts with HUN": [
     "Hungary"
@@ -15125,6 +16421,8 @@
     "Ice",
     "Ice Age",
     "Ice Pack",
+    "Ice Wine",
+    "Iced Tea",
     "Iceland",
     "Iceman"
   ],
@@ -15237,6 +16535,9 @@
   "Starts with JAI": [
     "Jaipur"
   ],
+  "Starts with JAL": [
+    "Jalebi"
+  ],
   "Starts with JAM": [
     "Jamaica",
     "James"
@@ -15245,7 +16546,8 @@
     "Jane Eyre"
   ],
   "Starts with JAP": [
-    "Japan"
+    "Japan",
+    "Japchae"
   ],
   "Starts with JAV": [
     "Java"
@@ -15273,8 +16575,14 @@
   "Starts with JES": [
     "Jesus Christ Superstar"
   ],
+  "Starts with JIA": [
+    "Jiaozi"
+  ],
   "Starts with JIN": [
     "Jingle All the Way"
+  ],
+  "Starts with JJA": [
+    "Jjajangmyeon"
   ],
   "Starts with JOA": [
     "Joan of Arc"
@@ -15332,7 +16640,11 @@
     "Kappa"
   ],
   "Starts with KAR": [
-    "Karachi"
+    "Karachi",
+    "Kartoffelsalat"
+  ],
+  "Starts with KAS": [
+    "Kasha"
   ],
   "Starts with KAT": [
     "Kate & Leopold",
@@ -15346,6 +16658,12 @@
   ],
   "Starts with KAZ": [
     "Kazakhstan"
+  ],
+  "Starts with KEB": [
+    "Kebab"
+  ],
+  "Starts with KEF": [
+    "Kefir"
   ],
   "Starts with KEN": [
     "Kennedy",
@@ -15365,6 +16683,9 @@
   "Starts with KHA": [
     "Khan"
   ],
+  "Starts with KIE": [
+    "Kielbasa"
+  ],
   "Starts with KIK": [
     "Kiki's Delivery Service"
   ],
@@ -15373,6 +16694,9 @@
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
     "Kilo"
+  ],
+  "Starts with KIM": [
+    "Kimchi"
   ],
   "Starts with KIN": [
     "Kindred",
@@ -15384,11 +16708,17 @@
     "Kiribati",
     "Kirk"
   ],
+  "Starts with KIS": [
+    "Kishka"
+  ],
   "Starts with KIT": [
     "KitKat"
   ],
   "Starts with KIW": [
     "Kiwi"
+  ],
+  "Starts with KNA": [
+    "Knafeh"
   ],
   "Starts with KNI": [
     "Knife"
@@ -15396,25 +16726,53 @@
   "Starts with KOB": [
     "Kobe"
   ],
+  "Starts with KOM": [
+    "Kombucha"
+  ],
+  "Starts with KOR": [
+    "Korma"
+  ],
   "Starts with KOS": [
     "Kosrae"
+  ],
+  "Starts with KOT": [
+    "Kotlet Schabowy",
+    "Kotleti"
   ],
   "Starts with KRA": [
     "Krakatoa",
     "Kraken",
     "Kramer vs. Kramer"
   ],
+  "Starts with KRE": [
+    "Kreplach"
+  ],
   "Starts with KRY": [
     "Krypton"
   ],
+  "Starts with KUG": [
+    "Kugel"
+  ],
+  "Starts with KUL": [
+    "Kulfi"
+  ],
+  "Starts with KUN": [
+    "Kung Pao Chicken"
+  ],
   "Starts with KUW": [
     "Kuwait"
+  ],
+  "Starts with KVA": [
+    "Kvass"
   ],
   "Starts with KYR": [
     "Kyrgyzstan"
   ],
   "Starts with KYU": [
     "Kyushu"
+  ],
+  "Starts with KÄS": [
+    "Käsespätzle"
   ],
   "Starts with LA ": [
     "La Gomera",
@@ -15440,10 +16798,16 @@
   "Starts with LAO": [
     "Laos"
   ],
+  "Starts with LAR": [
+    "Larb"
+  ],
   "Starts with LAS": [
+    "Lasagna",
+    "Lassi",
     "Lasso"
   ],
   "Starts with LAT": [
+    "Latke",
     "Latvia"
   ],
   "Starts with LAV": [
@@ -15460,7 +16824,8 @@
     "Leica"
   ],
   "Starts with LEM": [
-    "Lemon"
+    "Lemon",
+    "Lemonade"
   ],
   "Starts with LEN": [
     "Lenore",
@@ -15499,7 +16864,8 @@
     "Lima"
   ],
   "Starts with LIN": [
-    "Lincoln"
+    "Lincoln",
+    "Linguine"
   ],
   "Starts with LIO": [
     "Lion"
@@ -15514,11 +16880,15 @@
   "Starts with LIV": [
     "Live Free or Die Hard"
   ],
+  "Starts with LO ": [
+    "Lo Mein"
+  ],
   "Starts with LOB": [
     "Lobster"
   ],
   "Starts with LOC": [
-    "Locker"
+    "Locker",
+    "Locro"
   ],
   "Starts with LOK": [
     "Loki"
@@ -15542,6 +16912,9 @@
   "Starts with LOV": [
     "Love Actually"
   ],
+  "Starts with LOX": [
+    "Lox"
+  ],
   "Starts with LUC": [
     "Luca"
   ],
@@ -15560,7 +16933,12 @@
   "Starts with LYR": [
     "Lyra"
   ],
+  "Starts with MA ": [
+    "Ma La Tang"
+  ],
   "Starts with MAC": [
+    "Mac and Cheese",
+    "Macaron",
     "Macbeth",
     "Mace",
     "Macedonia",
@@ -15569,6 +16947,7 @@
   "Starts with MAD": [
     "Madagascar",
     "Madeira",
+    "Madeleine",
     "Madison",
     "Madonna",
     "Madrid"
@@ -15584,7 +16963,8 @@
     "Majorca"
   ],
   "Starts with MAK": [
-    "Makemake"
+    "Makemake",
+    "Makowiec"
   ],
   "Starts with MAL": [
     "Malawi",
@@ -15598,13 +16978,20 @@
   ],
   "Starts with MAN": [
     "Manatee",
+    "Mango Sticky Rice",
     "Manhattan",
+    "Mansaf",
     "Mantle"
+  ],
+  "Starts with MAP": [
+    "Maple Syrup",
+    "Mapo Tofu"
   ],
   "Starts with MAR": [
     "Marco Polo",
     "Mare",
     "Marie Curie",
+    "Marinara",
     "Mariner",
     "Marker",
     "Marriott",
@@ -15619,11 +17006,15 @@
     "Mary Rose"
   ],
   "Starts with MAS": [
+    "Massaman",
     "Massive"
   ],
   "Starts with MAT": [
+    "Matcha",
+    "Mate",
     "Matilda",
-    "Matterhorn"
+    "Matterhorn",
+    "Matzo Ball"
   ],
   "Starts with MAU": [
     "Maui",
@@ -15636,8 +17027,14 @@
     "Mayo",
     "Mays"
   ],
+  "Starts with MEA": [
+    "Mead"
+  ],
   "Starts with MEC": [
     "Mecca"
+  ],
+  "Starts with MED": [
+    "Medovik"
   ],
   "Starts with MEE": [
     "Meet the Robinsons"
@@ -15659,6 +17056,9 @@
   "Starts with MEX": [
     "Mexico"
   ],
+  "Starts with MEZ": [
+    "Mezcal"
+  ],
   "Starts with MIA": [
     "Miami"
   ],
@@ -15674,13 +17074,16 @@
   ],
   "Starts with MIL": [
     "Milan",
+    "Milanesa",
     "Milk",
+    "Milkshake",
     "Milky Way",
     "Millennium Falcon",
     "Million Dollar Baby"
   ],
   "Starts with MIN": [
     "Mindanao",
+    "Minestrone",
     "Ming",
     "Minnie",
     "Minotaur"
@@ -15689,6 +17092,7 @@
     "Miracle on 34th Street"
   ],
   "Starts with MIS": [
+    "Miso",
     "Mississippi"
   ],
   "Starts with MOA": [
@@ -15697,8 +17101,13 @@
   "Starts with MOB": [
     "Moby Dick"
   ],
+  "Starts with MOC": [
+    "Mochi"
+  ],
   "Starts with MOL": [
-    "Moldova"
+    "Moldova",
+    "Mole",
+    "Mole Poblano"
   ],
   "Starts with MON": [
     "Monaco",
@@ -15715,9 +17124,13 @@
   ],
   "Starts with MOO": [
     "Moon",
+    "Mooncake",
     "Moonlight",
     "Moonrise Kingdom",
     "Moorea"
+  ],
+  "Starts with MOQ": [
+    "Moqueca"
   ],
   "Starts with MOR": [
     "Morocco",
@@ -15727,7 +17140,8 @@
     "Moth"
   ],
   "Starts with MOU": [
-    "Moulin Rouge!"
+    "Moulin Rouge!",
+    "Moussaka"
   ],
   "Starts with MOZ": [
     "Mozambique",
@@ -15758,6 +17172,12 @@
   ],
   "Starts with MYS": [
     "Mystique"
+  ],
+  "Starts with NAA": [
+    "Naan"
+  ],
+  "Starts with NAE": [
+    "Naengmyeon"
   ],
   "Starts with NAM": [
     "Namibia"
@@ -15858,6 +17278,9 @@
   "Starts with NUG": [
     "Nugget"
   ],
+  "Starts with NUO": [
+    "Nuoc Cham"
+  ],
   "Starts with NUT": [
     "Nutmeg"
   ],
@@ -15879,6 +17302,9 @@
   "Starts with OCE": [
     "Ocean"
   ],
+  "Starts with ODE": [
+    "Oden"
+  ],
   "Starts with ODY": [
     "Odysseus",
     "Odyssey"
@@ -15892,13 +17318,17 @@
   "Starts with OKL": [
     "Oklahoma City"
   ],
+  "Starts with OKO": [
+    "Okonomiyaki"
+  ],
   "Starts with OLA": [
     "Olaf"
   ],
   "Starts with OLI": [
     "Olive",
     "Oliver & Company",
-    "Oliver!"
+    "Oliver!",
+    "Olivier Salad"
   ],
   "Starts with OLY": [
     "Olympia",
@@ -15922,6 +17352,7 @@
     "One Piece"
   ],
   "Starts with ONI": [
+    "Onigiri",
     "Onion"
   ],
   "Starts with ONL": [
@@ -15931,7 +17362,8 @@
     "Oppenheimer"
   ],
   "Starts with ORA": [
-    "Orange"
+    "Orange",
+    "Orange Chicken"
   ],
   "Starts with ORB": [
     "Orbit"
@@ -15955,6 +17387,9 @@
   "Starts with OSC": [
     "Oscar"
   ],
+  "Starts with OSS": [
+    "Osso Buco"
+  ],
   "Starts with OTH": [
     "Othello"
   ],
@@ -15974,13 +17409,26 @@
   "Starts with OXY": [
     "Oxygen"
   ],
+  "Starts with OYS": [
+    "Oyster Sauce"
+  ],
   "Starts with OZY": [
     "Ozymandias"
+  ],
+  "Starts with PAC": [
+    "Paczki"
+  ],
+  "Starts with PAD": [
+    "Pad Thai"
+  ],
+  "Starts with PAE": [
+    "Paella"
   ],
   "Starts with PAK": [
     "Pakistan"
   ],
   "Starts with PAL": [
+    "Palak Paneer",
     "Palau",
     "Palpatine"
   ],
@@ -15989,7 +17437,11 @@
     "Panasonic",
     "Panda",
     "Pandemic",
+    "Panna Cotta",
     "Panther"
+  ],
+  "Starts with PAO": [
+    "Pao de Queijo"
   ],
   "Starts with PAP": [
     "Papa",
@@ -16001,6 +17453,12 @@
     "Paraguay",
     "Parasite",
     "Paris"
+  ],
+  "Starts with PAS": [
+    "Pasta",
+    "Pastel de Nata",
+    "Pastitsio",
+    "Pastrami"
   ],
   "Starts with PAU": [
     "Paul"
@@ -16016,13 +17474,18 @@
   "Starts with PEG": [
     "Pegasus"
   ],
+  "Starts with PEK": [
+    "Peking Duck"
+  ],
   "Starts with PEL": [
-    "Pelican"
+    "Pelican",
+    "Pelmeni"
   ],
   "Starts with PEN": [
     "Pen",
     "Pencil",
-    "Penguin"
+    "Penguin",
+    "Penne"
   ],
   "Starts with PEP": [
     "Pepe Le Pew",
@@ -16034,6 +17497,9 @@
     "Persia",
     "Persona",
     "Peru"
+  ],
+  "Starts with PES": [
+    "Pesto"
   ],
   "Starts with PET": [
     "Peter",
@@ -16048,6 +17514,7 @@
     "Philippines"
   ],
   "Starts with PHO": [
+    "Pho",
     "Phobos",
     "Phoenix"
   ],
@@ -16063,7 +17530,11 @@
   ],
   "Starts with PIE": [
     "Pie",
+    "Pierogi",
     "Pierre"
+  ],
+  "Starts with PIL": [
+    "Pilsner"
   ],
   "Starts with PIN": [
     "Pinata",
@@ -16087,10 +17558,17 @@
   "Starts with PIS": [
     "Pisa",
     "Pisces",
+    "Pisco",
     "Piston"
+  ],
+  "Starts with PIT": [
+    "Pita"
   ],
   "Starts with PIX": [
     "Pixar"
+  ],
+  "Starts with PIZ": [
+    "Pizza"
   ],
   "Starts with PLA": [
     "Planet",
@@ -16132,6 +17610,7 @@
   "Starts with POR": [
     "Porco Rosso",
     "Porky Pig",
+    "Port",
     "Portal",
     "Portugal",
     "Portuguese East Africa",
@@ -16147,7 +17626,8 @@
     "Prado"
   ],
   "Starts with PRE": [
-    "Predestination"
+    "Predestination",
+    "Pretzel"
   ],
   "Starts with PRI": [
     "Pride and Prejudice",
@@ -16158,6 +17638,8 @@
   ],
   "Starts with PRO": [
     "Professor X",
+    "Profiterole",
+    "Prosecco",
     "Providence"
   ],
   "Starts with PSI": [
@@ -16172,6 +17654,9 @@
   "Starts with PUL": [
     "Pulp Fiction",
     "Pulsar"
+  ],
+  "Starts with PUM": [
+    "Pumpernickel"
   ],
   "Starts with PUR": [
     "Purple"
@@ -16191,7 +17676,11 @@
   "Starts with QUE": [
     "Quebec",
     "Queen",
-    "Queen Mary"
+    "Queen Mary",
+    "Quesadilla"
+  ],
+  "Starts with QUI": [
+    "Quiche"
   ],
   "Starts with RAB": [
     "Rabbit"
@@ -16211,7 +17700,8 @@
     "Raleigh"
   ],
   "Starts with RAM": [
-    "Ram"
+    "Ram",
+    "Ramen"
   ],
   "Starts with RAN": [
     "Ran",
@@ -16229,7 +17719,8 @@
     "Ratatouille"
   ],
   "Starts with RAV": [
-    "Raven"
+    "Raven",
+    "Ravioli"
   ],
   "Starts with RAY": [
     "Ray",
@@ -16239,9 +17730,11 @@
     "Red",
     "Red 2",
     "Red Beard",
+    "Red Curry",
     "Red Hood",
     "Red Riding Hood",
     "Red Velvet",
+    "Red Wine",
     "Reddit"
   ],
   "Starts with REN": [
@@ -16276,7 +17769,8 @@
   ],
   "Starts with RIS": [
     "Rise of the Guardians",
-    "Risk"
+    "Risk",
+    "Risotto"
   ],
   "Starts with ROA": [
     "Road Runner"
@@ -16296,6 +17790,7 @@
     "Rodeo"
   ],
   "Starts with ROG": [
+    "Rogan Josh",
     "Rogue",
     "Rogue One"
   ],
@@ -16311,13 +17806,27 @@
   ],
   "Starts with ROO": [
     "Roosevelt",
-    "Rooster"
+    "Rooster",
+    "Root Beer"
   ],
   "Starts with ROS": [
-    "Rose"
+    "Rose",
+    "Rosé"
+  ],
+  "Starts with ROT": [
+    "Roti"
+  ],
+  "Starts with ROU": [
+    "Rouladen"
   ],
   "Starts with RUB": [
     "Ruby"
+  ],
+  "Starts with RUG": [
+    "Rugelach"
+  ],
+  "Starts with RUM": [
+    "Rum"
   ],
   "Starts with RUS": [
     "Russia",
@@ -16328,6 +17837,10 @@
   ],
   "Starts with RWA": [
     "Rwanda"
+  ],
+  "Starts with RYE": [
+    "Rye",
+    "Rye Whiskey"
   ],
   "Starts with RYU": [
     "Ryukyu"
@@ -16356,6 +17869,9 @@
     "Saint Vincent and the Grenadines",
     "Saipan"
   ],
+  "Starts with SAK": [
+    "Sake"
+  ],
   "Starts with SAL": [
     "Salem",
     "Salem's Lot",
@@ -16366,6 +17882,7 @@
   "Starts with SAM": [
     "Sam",
     "Samarkand",
+    "Samgyeopsal",
     "Sami",
     "Samoa"
   ],
@@ -16375,6 +17892,7 @@
     "San Juan",
     "San Marino",
     "San Pedro",
+    "Sangria",
     "Sanjuro",
     "Santa Fe",
     "Santa Maria",
@@ -16390,11 +17908,16 @@
     "Sardinia",
     "Sark"
   ],
+  "Starts with SAS": [
+    "Sashimi"
+  ],
   "Starts with SAT": [
     "Saturn"
   ],
   "Starts with SAU": [
-    "Saudi Arabia"
+    "Saudi Arabia",
+    "Sauerbraten",
+    "Sauerkraut"
   ],
   "Starts with SAW": [
     "Saw"
@@ -16406,13 +17929,17 @@
     "Scent of a Woman"
   ],
   "Starts with SCH": [
-    "Schindler's List"
+    "Schindler's List",
+    "Schmaltz",
+    "Schnitzel"
   ],
   "Starts with SCO": [
+    "Scones",
     "Scooby-Doo",
     "Scorpio",
     "Scorpion",
-    "Scorpius"
+    "Scorpius",
+    "Scotch"
   ],
   "Starts with SCR": [
     "Scrabble",
@@ -16447,15 +17974,20 @@
     "Seychelles"
   ],
   "Starts with SHA": [
+    "Shabu Shabu",
     "Shadowcat",
     "Shaggy",
     "Shakespeare",
     "Shakespeare in Love",
-    "Shark"
+    "Shark",
+    "Shashlik",
+    "Shawarma"
   ],
   "Starts with SHE": [
     "Sheep",
     "Shenandoah",
+    "Shepherd's Pie",
+    "Sherry",
     "Shetland"
   ],
   "Starts with SHI": [
@@ -16510,6 +18042,9 @@
   "Starts with SLU": [
     "Slumdog Millionaire"
   ],
+  "Starts with SMO": [
+    "Smoothie"
+  ],
   "Starts with SNA": [
     "Snap",
     "Snape"
@@ -16522,18 +18057,26 @@
     "Snow White and the Seven Dwarfs",
     "Snowman"
   ],
+  "Starts with SOB": [
+    "Soba"
+  ],
   "Starts with SOC": [
     "Socrates"
   ],
   "Starts with SOF": [
     "Sofa"
   ],
+  "Starts with SOJ": [
+    "Soju"
+  ],
   "Starts with SOL": [
     "Solitaire",
     "Solo",
-    "Solomon Islands"
+    "Solomon Islands",
+    "Solyanka"
   ],
   "Starts with SOM": [
+    "Som Tam",
     "Somalia",
     "Somewhere in Time"
   ],
@@ -16542,8 +18085,10 @@
     "Sony"
   ],
   "Starts with SOU": [
+    "Souffle",
     "Soul",
     "Source Code",
+    "Sourdough",
     "South Africa",
     "South Korea",
     "South Ossetia",
@@ -16551,7 +18096,8 @@
     "South Vietnam",
     "South Yemen",
     "Southampton",
-    "Southern Rhodesia"
+    "Southern Rhodesia",
+    "Souvlaki"
   ],
   "Starts with SOW": [
     "Sow"
@@ -16561,10 +18107,13 @@
   ],
   "Starts with SPA": [
     "Spades",
+    "Spaghetti",
     "Spain",
+    "Spanakopita",
     "Spanish East Africa",
     "Spanish Guinea",
     "Spanish West Africa",
+    "Sparkling Wine",
     "Sparrow"
   ],
   "Starts with SPE": [
@@ -16586,8 +18135,12 @@
   "Starts with SPR": [
     "Springfield"
   ],
+  "Starts with SPÄ": [
+    "Spätzle"
+  ],
   "Starts with SRI": [
-    "Sri Lanka"
+    "Sri Lanka",
+    "Sriracha"
   ],
   "Starts with ST.": [
     "St. Helens"
@@ -16606,11 +18159,13 @@
     "Steel"
   ],
   "Starts with STI": [
-    "Stick"
+    "Stick",
+    "Sticky Toffee Pudding"
   ],
   "Starts with STO": [
     "Stop Sign",
-    "Storm"
+    "Storm",
+    "Stout"
   ],
   "Starts with STR": [
     "STR",
@@ -16624,6 +18179,9 @@
   ],
   "Starts with SUI": [
     "Suitcase"
+  ],
+  "Starts with SUK": [
+    "Sukiyaki"
   ],
   "Starts with SUL": [
     "Sulawesi",
@@ -16644,6 +18202,9 @@
   "Starts with SUR": [
     "Suriname"
   ],
+  "Starts with SUS": [
+    "Sushi"
+  ],
   "Starts with SVA": [
     "Svalbard"
   ],
@@ -16652,7 +18213,8 @@
   ],
   "Starts with SWE": [
     "Sweden",
-    "Sweeney Todd: The Demon Barber of Fleet Street"
+    "Sweeney Todd: The Demon Barber of Fleet Street",
+    "Sweet and Sour"
   ],
   "Starts with SWI": [
     "Switzerland"
@@ -16670,33 +18232,44 @@
     "Syria"
   ],
   "Starts with TAB": [
-    "Table"
+    "Table",
+    "Tabouleh"
   ],
   "Starts with TAC": [
     "Taco"
   ],
   "Starts with TAH": [
+    "Tahini",
     "Tahiti"
   ],
   "Starts with TAI": [
-    "Taiwan"
+    "Taiwan",
+    "Taiyaki"
   ],
   "Starts with TAJ": [
     "Tajikistan"
+  ],
+  "Starts with TAK": [
+    "Takoyaki"
   ],
   "Starts with TAL": [
     "Tales from Earthsea",
     "Tallahassee"
   ],
   "Starts with TAM": [
+    "Tamale",
     "Tambora"
   ],
   "Starts with TAN": [
+    "Tandoori",
     "Tang",
     "Tanganyika",
     "Tangled",
     "Tango",
     "Tanzania"
+  ],
+  "Starts with TAP": [
+    "Tapas"
   ],
   "Starts with TAR": [
     "TARDIS",
@@ -16712,6 +18285,7 @@
     "Taz"
   ],
   "Starts with TEA": [
+    "Tea",
     "Teal"
   ],
   "Starts with TEF": [
@@ -16721,14 +18295,19 @@
     "Tell‑Tale"
   ],
   "Starts with TEM": [
-    "Temple Mount"
+    "Temple Mount",
+    "Tempura"
   ],
   "Starts with TEN": [
     "Tenerife",
     "Tenet"
   ],
+  "Starts with TEQ": [
+    "Tequila"
+  ],
   "Starts with TER": [
     "Teresa",
+    "Teriyaki",
     "Terminator 2: Judgment Day",
     "Terms of Endearment",
     "Tern"
@@ -16879,10 +18458,14 @@
     "Tijuana"
   ],
   "Starts with TIK": [
-    "TikTok"
+    "TikTok",
+    "Tikka Masala"
   ],
   "Starts with TIM": [
     "Time Bandits"
+  ],
+  "Starts with TIR": [
+    "Tiramisu"
   ],
   "Starts with TIS": [
     "Tissue"
@@ -16908,17 +18491,21 @@
     "Tokyo"
   ],
   "Starts with TOM": [
+    "Tom Yum",
     "Tom and Jerry",
     "Tomato"
   ],
   "Starts with TON": [
-    "Tonga"
+    "Tonga",
+    "Tonkatsu"
   ],
   "Starts with TOP": [
     "Topeka"
   ],
   "Starts with TOR": [
-    "Toronto"
+    "Toronto",
+    "Tortellini",
+    "Tortilla"
   ],
   "Starts with TOT": [
     "Total War"
@@ -16932,9 +18519,11 @@
   ],
   "Starts with TRE": [
     "Treasure Planet",
-    "Trenton"
+    "Trenton",
+    "Tres Leches"
   ],
   "Starts with TRI": [
+    "Trifle",
     "Trinidad and Tobago"
   ],
   "Starts with TRO": [
@@ -16946,6 +18535,9 @@
   ],
   "Starts with TSA": [
     "Tsar"
+  ],
+  "Starts with TTE": [
+    "Tteokbokki"
   ],
   "Starts with TUL": [
     "Tulip"
@@ -16969,8 +18561,18 @@
     "Tweety"
   ],
   "Starts with TWI": [
+    "Twice Cooked Pork",
     "Twilight",
     "Twix"
+  ],
+  "Starts with TZA": [
+    "Tzatziki"
+  ],
+  "Starts with TZI": [
+    "Tzimmes"
+  ],
+  "Starts with UDO": [
+    "Udon"
   ],
   "Starts with UFF": [
     "Uffizi"
@@ -17026,6 +18628,9 @@
     "Vantage Point",
     "Vanuatu"
   ],
+  "Starts with VAR": [
+    "Vareniki"
+  ],
   "Starts with VAS": [
     "Vasco da Gama",
     "Vast"
@@ -17034,7 +18639,8 @@
     "Vatican City"
   ],
   "Starts with VEL": [
-    "Velma"
+    "Velma",
+    "Veloute"
   ],
   "Starts with VEN": [
     "Venezuela",
@@ -17056,6 +18662,9 @@
   "Starts with VIE": [
     "Vietnam"
   ],
+  "Starts with VIN": [
+    "Vindaloo"
+  ],
   "Starts with VIO": [
     "Violet",
     "Violin"
@@ -17063,6 +18672,9 @@
   "Starts with VIR": [
     "Virginia",
     "Virgo"
+  ],
+  "Starts with VOD": [
+    "Vodka"
   ],
   "Starts with VOI": [
     "Void"
@@ -17092,10 +18704,14 @@
     "Warsaw Pact"
   ],
   "Starts with WAS": [
+    "Wasabi",
     "Washington"
   ],
   "Starts with WAT": [
     "Water Margin"
+  ],
+  "Starts with WEI": [
+    "Weissbier"
   ],
   "Starts with WES": [
     "West Side Story",
@@ -17114,6 +18730,7 @@
     "Whisper of the Heart",
     "Whist",
     "White Christmas",
+    "White Wine",
     "Whitney"
   ],
   "Starts with WIL": [
@@ -17122,6 +18739,7 @@
     "Wilson"
   ],
   "Starts with WIN": [
+    "Wine",
     "Winnie the Pooh",
     "Winnie-the-Pooh",
     "Winston Churchill"
@@ -17141,7 +18759,8 @@
     "Wolverine"
   ],
   "Starts with WON": [
-    "Wonder Woman"
+    "Wonder Woman",
+    "Wonton"
   ],
   "Starts with WOR": [
     "Working Girl",
@@ -17169,10 +18788,14 @@
     "Xenon"
   ],
   "Starts with XIA": [
-    "Xia"
+    "Xia",
+    "Xiaolongbao"
   ],
   "Starts with YAC": [
     "Yacht"
+  ],
+  "Starts with YAK": [
+    "Yakitori"
   ],
   "Starts with YAN": [
     "Yangtze",
@@ -17182,7 +18805,8 @@
     "Yap"
   ],
   "Starts with YEL": [
-    "Yellow"
+    "Yellow",
+    "Yellow Curry"
   ],
   "Starts with YEM": [
     "Yemen"
@@ -17196,8 +18820,14 @@
   "Starts with YOJ": [
     "Yojimbo"
   ],
+  "Starts with YOR": [
+    "Yorkshire Pudding"
+  ],
   "Starts with YOS": [
     "Yosemite Sam"
+  ],
+  "Starts with YU ": [
+    "Yu Xiang Qie Zi"
   ],
   "Starts with YUG": [
     "Yugioh"
@@ -17234,6 +18864,9 @@
   ],
   "Starts with ZUL": [
     "Zulu"
+  ],
+  "Starts with ZUR": [
+    "Zurek"
   ],
   "State Capitals": [
     "Albany",
@@ -17498,60 +19131,172 @@
     "Ocean"
   ],
   "Things American": [
+    "Apple Pie",
+    "BBQ",
+    "Beyonce",
+    "Bourbon",
+    "Brownie",
+    "Cheesecake",
+    "Chocolate Chip Cookie",
+    "Cider",
+    "Cocoa",
+    "Coffee",
+    "Cola",
+    "Craft Beer",
     "Disney",
     "Einstein",
     "Elvis",
     "Franklin D. Roosevelt",
+    "Fried Chicken",
     "George Washington",
+    "Hamburger",
+    "Hot Chocolate",
+    "Hot Dog",
+    "Iced Tea",
+    "Juice",
+    "Ketchup",
+    "Lemonade",
     "Little Women",
+    "Mac and Cheese",
+    "Madonna",
+    "Mayo",
+    "Met",
+    "Milk",
+    "Milkshake",
     "Moby Dick",
+    "Mustard",
     "NASA",
     "New York",
+    "Prince",
+    "Ranch",
+    "Root Beer",
+    "Rye Whiskey",
+    "Smoothie",
+    "Sourdough",
     "The Grapes of Wrath",
     "The Great Gatsby",
     "Thomas Edison",
     "To Kill a Mockingbird",
+    "Usher",
     "Wright"
+  ],
+  "Things Argentine": [
+    "Alfajor",
+    "Asado",
+    "Chimichurri",
+    "Locro",
+    "Mate",
+    "Milanesa",
+    "Tango"
+  ],
+  "Things Austrian": [
+    "Mozart"
+  ],
+  "Things Brazilian": [
+    "Brigadeiro",
+    "Cachaça",
+    "Feijoada",
+    "Moqueca",
+    "Pao de Queijo"
   ],
   "Things British": [
     "1984",
     "Alice's Adventures in Wonderland",
+    "Bangers and Mash",
     "Beatles",
     "Brave New World",
+    "Bubble and Squeak",
     "Darwin",
     "Dracula",
+    "Earl Grey",
     "Elizabeth",
+    "Fish and Chips",
     "Frankenstein",
+    "Gin",
     "Jane Eyre",
     "London",
+    "Mead",
     "Newton",
     "Pride and Prejudice",
+    "Queen",
+    "Scones",
     "Shakespeare",
+    "Shepherd's Pie",
+    "Sticky Toffee Pudding",
+    "Tea",
     "Thames",
     "The Jungle Book",
     "The Secret Garden",
     "The Tale of Peter Rabbit",
     "The Wind in the Willows",
+    "Trifle",
     "Victoria",
     "William the Conqueror",
     "Winnie-the-Pooh",
     "Winston Churchill",
-    "Wuthering Heights"
+    "Wuthering Heights",
+    "Yorkshire Pudding",
+    "Zeppelin"
+  ],
+  "Things Canadian": [
+    "Drake",
+    "Ice Wine",
+    "Maple Syrup"
+  ],
+  "Things Caribbean": [
+    "Rum"
   ],
   "Things Chinese": [
+    "Baijiu",
+    "Bao",
     "Beijing",
+    "Char Siu",
+    "Chow Fun",
+    "Chow Mein",
+    "Congee",
+    "Dan Dan Noodles",
+    "Dim Sum",
     "Dragon",
     "Dream of the Red Chamber",
+    "Dumpling",
+    "Egg Foo Young",
+    "General Tso",
+    "Gong Bao Ji Ding",
+    "Hoisin",
+    "Hot Pot",
+    "Hui Guo Rou",
+    "Jiaozi",
     "Journey to the West",
+    "Kombucha",
+    "Kung Pao Chicken",
+    "Lo Mein",
+    "Ma La Tang",
+    "Mapo Tofu",
     "Marco Polo",
     "Ming",
+    "Mooncake",
+    "Orange Chicken",
+    "Oyster Sauce",
     "Panda",
+    "Peking Duck",
     "Romance of the Three Kingdoms",
+    "Sweet and Sour",
+    "Twice Cooked Pork",
     "Water Margin",
+    "Wonton",
+    "Xiaolongbao",
+    "Yu Xiang Qie Zi",
     "Zheng He"
   ],
   "Things Colombian": [
-    "One Hundred Years of Solitude"
+    "Ajiaco",
+    "Arepa",
+    "Bandeja Paisa",
+    "One Hundred Years of Solitude",
+    "Tres Leches"
+  ],
+  "Things Czech": [
+    "Pilsner"
   ],
   "Things Egyptian": [
     "Alexandria",
@@ -17560,88 +19305,406 @@
     "Pharaoh"
   ],
   "Things French": [
+    "Absinthe",
+    "Aioli",
+    "Baguette",
+    "Bearnaise",
+    "Bechamel",
+    "Beef Bourguignon",
+    "Bordeaux",
+    "Bouillabaisse",
+    "Brioche",
+    "Burgundy",
+    "Cassoulet",
+    "Champagne",
     "Charlemagne",
+    "Coq au Vin",
+    "Crepe",
+    "Croissant",
+    "Croque Monsieur",
+    "Duck Confit",
+    "Eclair",
+    "Escargot",
+    "Espagnole",
+    "French Onion Soup",
+    "Hollandaise",
     "Joan of Arc",
     "Les Misérables",
     "Louvre",
+    "Macaron",
+    "Madeleine",
     "Marie Curie",
     "Napoleon Bonaparte",
     "Paris",
+    "Profiterole",
+    "Quiche",
+    "Ratatouille",
+    "Red Wine",
+    "Rosé",
+    "Souffle",
+    "Sparkling Wine",
     "The Count of Monte Cristo",
-    "William the Conqueror"
+    "Veloute",
+    "White Wine",
+    "William the Conqueror",
+    "Wine"
   ],
   "Things German": [
+    "Apfelstrudel",
     "Bach",
+    "Beer",
     "Beethoven",
     "Berlin",
+    "Black Forest Cake",
+    "Bratwurst",
+    "Brezel",
     "Charlemagne",
     "Einstein",
-    "Rhine"
+    "Handel",
+    "Kartoffelsalat",
+    "Käsespätzle",
+    "Pretzel",
+    "Pumpernickel",
+    "Rhine",
+    "Rouladen",
+    "Rye",
+    "Sauerbraten",
+    "Sauerkraut",
+    "Schnitzel",
+    "Spätzle",
+    "Weissbier"
   ],
   "Things Greek": [
     "Aristotle",
     "Athena",
     "Athens",
+    "Baklava",
     "Cleopatra",
+    "Dolmades",
+    "Galaktoboureko",
+    "Gyro",
     "Homer",
+    "Moussaka",
     "Olympus",
+    "Pastitsio",
     "Plato",
     "Socrates",
+    "Souvlaki",
+    "Spanakopita",
     "The Iliad",
     "The Odyssey",
+    "Tzatziki",
     "Zeus"
   ],
   "Things Indian": [
+    "Biryani",
+    "Butter Chicken",
+    "Chai",
+    "Chutney",
+    "Curry",
+    "Dal",
+    "Gulab Jamun",
+    "Jalebi",
+    "Korma",
+    "Kulfi",
+    "Lassi",
+    "Naan",
+    "Palak Paneer",
+    "Rogan Josh",
+    "Roti",
+    "Tandoori",
     "The Jungle Book",
     "The Mahabharata",
-    "The Ramayana"
+    "The Ramayana",
+    "Tikka Masala",
+    "Vindaloo"
+  ],
+  "Things Irish": [
+    "Stout",
+    "Whiskey"
   ],
   "Things Italian": [
+    "Affogato",
+    "Alfredo",
+    "Bolognese",
+    "Bruschetta",
     "Caesar",
+    "Cannoli",
+    "Caprese",
+    "Carbonara",
+    "Chianti",
     "Christopher Columbus",
+    "Ciabatta",
     "Da Vinci",
     "Dante",
+    "Fettuccine",
     "Florence",
+    "Focaccia",
     "Galileo",
+    "Gelato",
+    "Lasagna",
+    "Linguine",
     "Marco Polo",
+    "Marinara",
     "Michelangelo",
+    "Minestrone",
     "Naples",
+    "Osso Buco",
+    "Panna Cotta",
+    "Pasta",
+    "Penne",
+    "Pesto",
+    "Pizza",
     "Pompeii",
+    "Prosecco",
+    "Ravioli",
+    "Risotto",
     "Rome",
+    "Spaghetti",
     "The Divine Comedy",
+    "Tiramisu",
+    "Tomato",
+    "Tortellini",
+    "Uffizi",
     "Venice",
     "Vesuvius"
   ],
   "Things Japanese": [
+    "Akira",
+    "Arrietty",
+    "Castle in the Sky",
+    "Dango",
+    "Dorayaki",
+    "Dreams",
+    "From Up on Poppy Hill",
+    "Fuji",
+    "Grave of the Fireflies",
+    "Gyoza",
+    "High and Low",
     "Honda",
+    "Howl's Moving Castle",
+    "Ikiru",
+    "Kagemusha",
+    "Kiki's Delivery Service",
+    "Matcha",
+    "Miso",
+    "Mochi",
+    "My Neighbor Totoro",
+    "Oden",
+    "Okonomiyaki",
+    "Onigiri",
+    "Only Yesterday",
     "Pokemon",
+    "Pom Poko",
+    "Ponyo",
+    "Porco Rosso",
+    "Princess Mononoke",
+    "Ramen",
+    "Ran",
+    "Rashomon",
+    "Red Beard",
+    "Sake",
+    "Sanjuro",
+    "Sashimi",
+    "Seven Samurai",
+    "Shabu Shabu",
+    "Soba",
     "Sony",
+    "Soy Sauce",
+    "Spirited Away",
+    "Sukiyaki",
+    "Sushi",
+    "Taiyaki",
+    "Takoyaki",
+    "Tales from Earthsea",
+    "Tempura",
+    "Teriyaki",
+    "The Cat Returns",
+    "The Hidden Fortress",
     "The Tale of Genji",
     "The Tale of the Heike",
+    "The Tale of the Princess Kaguya",
+    "The Wind Rises",
+    "Throne of Blood",
     "Tokyo",
-    "Toyota"
+    "Tonkatsu",
+    "Toyota",
+    "Udon",
+    "Wasabi",
+    "When Marnie Was There",
+    "Whisper of the Heart",
+    "Yakitori",
+    "Yojimbo"
+  ],
+  "Things Jewish": [
+    "Bagel",
+    "Brisket",
+    "Challah",
+    "Corned Beef",
+    "Gefilte Fish",
+    "Hamantaschen",
+    "Kasha",
+    "Kishka",
+    "Kreplach",
+    "Kugel",
+    "Latke",
+    "Lox",
+    "Matzo Ball",
+    "Pastrami",
+    "Rugelach",
+    "Schmaltz",
+    "Tzimmes"
+  ],
+  "Things Korean": [
+    "(G)I-DLE",
+    "2PM",
+    "BLACKPINK",
+    "BTS",
+    "Bibimbap",
+    "Bingsu",
+    "Bulgogi",
+    "EXO",
+    "GOT7",
+    "Hotteok",
+    "Japchae",
+    "Jjajangmyeon",
+    "Kimchi",
+    "Naengmyeon",
+    "Red Velvet",
+    "Samgyeopsal",
+    "Seventeen",
+    "Soju",
+    "Super Junior",
+    "Tteokbokki",
+    "Xia",
+    "iKON"
   ],
   "Things Latin American": [
     "One Hundred Years of Solitude"
   ],
+  "Things Mexican": [
+    "Agua Fresca",
+    "Burrito",
+    "Ceviche",
+    "Chile Relleno",
+    "Chimichanga",
+    "Enchilada",
+    "Fajita",
+    "Guacamole",
+    "Horchata",
+    "Mezcal",
+    "Mole",
+    "Mole Poblano",
+    "Quesadilla",
+    "Salsa",
+    "Taco",
+    "Tamale",
+    "Tequila",
+    "Tortilla"
+  ],
+  "Things Middle Eastern": [
+    "Baba Ganoush",
+    "Falafel",
+    "Fattoush",
+    "Hummus",
+    "Kebab",
+    "Knafeh",
+    "Mansaf",
+    "Pita",
+    "Shawarma",
+    "Tabouleh",
+    "Tahini"
+  ],
+  "Things Peruvian": [
+    "Pisco"
+  ],
   "Things Polish": [
+    "Barszcz",
+    "Bigos",
     "Copernicus",
-    "Marie Curie"
+    "Golabki",
+    "Kielbasa",
+    "Kotlet Schabowy",
+    "Makowiec",
+    "Marie Curie",
+    "Paczki",
+    "Pierogi",
+    "Zurek"
   ],
   "Things Portuguese": [
+    "Bacalhau",
+    "Caldo Verde",
     "Ferdinand Magellan",
+    "Francesinha",
+    "Madeira",
+    "Pastel de Nata",
+    "Port",
     "Vasco da Gama"
   ],
   "Things Russian": [
+    "Blini",
+    "Borscht",
+    "Caviar",
     "Crime and Punishment",
+    "Kefir",
+    "Kotleti",
+    "Kvass",
+    "Medovik",
+    "Olivier Salad",
+    "Pelmeni",
+    "Shashlik",
+    "Solyanka",
     "The Brothers Karamazov",
+    "Vareniki",
+    "Vodka",
     "Volga",
     "War and Peace"
   ],
+  "Things Scottish": [
+    "Scotch"
+  ],
   "Things Spanish": [
     "Christopher Columbus",
+    "Churro",
     "Don Quixote",
-    "Ferdinand Magellan"
+    "Empanada",
+    "Ferdinand Magellan",
+    "Flan",
+    "Gazpacho",
+    "Paella",
+    "Prado",
+    "Sangria",
+    "Sherry",
+    "Tapas"
+  ],
+  "Things Taiwanese": [
+    "Bubble Tea"
+  ],
+  "Things Thai": [
+    "Fish Sauce",
+    "Green Curry",
+    "Larb",
+    "Mango Sticky Rice",
+    "Massaman",
+    "Pad Thai",
+    "Red Curry",
+    "Som Tam",
+    "Sriracha",
+    "Tom Yum",
+    "Yellow Curry"
+  ],
+  "Things Turkish": [
+    "Ayran"
+  ],
+  "Things Vietnamese": [
+    "Banh Mi",
+    "Banh Xeo",
+    "Bun Cha",
+    "Che",
+    "Com Tam",
+    "Goi Cuon",
+    "Nuoc Cham",
+    "Pho"
   ],
   "Thriller Films": [
     "12 Monkeys",
@@ -18159,17 +20222,25 @@
     "Unforgiven"
   ],
   "White Things": [
+    "Aioli",
     "Albatross",
+    "Alfredo",
+    "Bechamel",
+    "Carbonara",
     "Cloud",
     "Egg",
     "Ice",
     "Iceman",
+    "Mayo",
     "Milk",
     "Mr. Freeze",
     "Paper",
     "Polar Bear",
+    "Ranch",
     "Snow",
-    "Swan"
+    "Swan",
+    "Veloute",
+    "White Wine"
   ],
   "Wooden Objects": [
     "Bat",
@@ -18222,10 +20293,14 @@
   "Yellow Things": [
     "Banana",
     "Gold",
+    "Hollandaise",
     "Lemon",
+    "Lemonade",
+    "Mustard",
     "Pencil",
     "Sunflower",
-    "Wolverine"
+    "Wolverine",
+    "Yellow Curry"
   ],
   "Zodiac Signs": [
     "Aquarius",
