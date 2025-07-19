@@ -43,6 +43,7 @@
     "Ships",
     "Shipwrecks",
     "Starts with LUS",
+    "Things Portuguese",
     "World War I"
   ],
   "Bismarck": [
@@ -402,27 +403,33 @@
     "Ends with PLE",
     "Roman Cities",
     "Roman Empire",
-    "Starts with CON"
+    "Starts with CON",
+    "Things Greek",
+    "Things Turkish"
   ],
   "Gaul": [
     "Ends with AUL",
     "Roman Empire",
-    "Starts with GAU"
+    "Starts with GAU",
+    "Things French"
   ],
   "Britannia": [
     "Ends with NIA",
     "Roman Empire",
-    "Starts with BRI"
+    "Starts with BRI",
+    "Things British"
   ],
   "Hispania": [
     "Ends with NIA",
     "Roman Empire",
-    "Starts with HIS"
+    "Starts with HIS",
+    "Things Spanish"
   ],
   "Germania": [
     "Ends with NIA",
     "Roman Empire",
-    "Starts with GER"
+    "Starts with GER",
+    "Things German"
   ],
   "Illyria": [
     "Ends with RIA",
@@ -7843,7 +7850,8 @@
     "Oceanliners",
     "Roman Empire",
     "Ships",
-    "Starts with MAU"
+    "Starts with MAU",
+    "Things Moroccan"
   ],
   "Afghanistan": [
     "Countries",

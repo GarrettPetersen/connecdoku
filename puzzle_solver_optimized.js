@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { Matrix } = require('ml-matrix');
 const { execSync } = require('child_process');
 
 // Start timing the entire process
@@ -31,18 +32,20 @@ console.log(`Loaded ${categoryNames.length} categories and ${Object.keys(words).
 // Step 1: Compute intersection matrix, excluding subsets and identical categories
 console.log('Step 1: Computing intersection matrix...');
 const intersectionStart = Date.now();
-const intersectionMatrix = [];
 const subsetMap = new Map(); // Maps category to set of categories it's a subset of
 
+// Initialize subset map
 for (let i = 0; i < categoryNames.length; i++) {
-    intersectionMatrix[i] = [];
     subsetMap.set(categoryNames[i], new Set());
 }
+
+// Build intersection matrix using ml-matrix
+const intersectionMatrix = new Matrix(categoryNames.length, categoryNames.length);
 
 for (let i = 0; i < categoryNames.length; i++) {
     for (let j = 0; j < categoryNames.length; j++) {
         if (i === j) {
-            intersectionMatrix[i][j] = 0; // Self-intersection not allowed
+            intersectionMatrix.set(i, j, 0); // Self-intersection not allowed
             continue;
         }
 
@@ -60,13 +63,13 @@ for (let i = 0; i < categoryNames.length; i++) {
         }
 
         if (isSubset) {
-            intersectionMatrix[i][j] = 0;
+            intersectionMatrix.set(i, j, 0);
             subsetMap.get(cat1).add(cat2);
             subsetMap.get(cat2).add(cat1);
         } else {
             // Check for intersection
             const intersection = [...words1].filter(word => words2.has(word));
-            intersectionMatrix[i][j] = intersection.length > 0 ? 1 : 0;
+            intersectionMatrix.set(i, j, intersection.length > 0 ? 1 : 0);
         }
     }
 }
@@ -74,34 +77,30 @@ for (let i = 0; i < categoryNames.length; i++) {
 intersectionTime = Date.now() - intersectionStart;
 console.log(`Intersection matrix computed (${intersectionTime}ms)`);
 
-// Step 2: Compute 2-away matrix by squaring the intersection matrix
+// Step 2: Compute 2-away matrix using optimized matrix multiplication
 console.log('Step 2: Computing 2-away matrix...');
 const twoAwayStart = Date.now();
-const twoAwayMatrix = [];
 
+// Use ml-matrix's optimized matrix multiplication
+const twoAwayMatrix = intersectionMatrix.mmul(intersectionMatrix);
+
+// Apply subset exclusions to the result
 for (let i = 0; i < categoryNames.length; i++) {
-    twoAwayMatrix[i] = [];
     for (let j = 0; j < categoryNames.length; j++) {
         if (i === j) {
-            twoAwayMatrix[i][j] = 0; // Self-2-away not allowed
+            twoAwayMatrix.set(i, j, 0); // Self-2-away not allowed
             continue;
         }
 
-        // Square the intersection matrix: (A²)ᵢⱼ = Σₖ Aᵢₖ × Aₖⱼ
-        let sum = 0;
-        for (let k = 0; k < categoryNames.length; k++) {
-            sum += intersectionMatrix[i][k] * intersectionMatrix[k][j];
-        }
-        
         // Zero out if either category is a subset of the other
         const cat1 = categoryNames[i];
         const cat2 = categoryNames[j];
         if (subsetMap.get(cat1).has(cat2) || subsetMap.get(cat2).has(cat1)) {
-            twoAwayMatrix[i][j] = 0;
+            twoAwayMatrix.set(i, j, 0);
         } else {
             // For 4x4 puzzles, we need at least 4 paths between categories in the same dimension
-            // The sum represents the number of intermediate categories connecting cat1 to cat2
-            twoAwayMatrix[i][j] = sum >= 4 ? 1 : 0;
+            const pathCount = twoAwayMatrix.get(i, j);
+            twoAwayMatrix.set(i, j, pathCount >= 4 ? 1 : 0);
         }
     }
 }
@@ -113,7 +112,7 @@ console.log(`2-away matrix computed (${twoAwayTime}ms)`);
 let twoAwayConnections = 0;
 for (let i = 0; i < categoryNames.length; i++) {
     for (let j = 0; j < categoryNames.length; j++) {
-        if (twoAwayMatrix[i][j] === 1) {
+        if (twoAwayMatrix.get(i, j) === 1) {
             twoAwayConnections++;
         }
     }
@@ -184,26 +183,26 @@ function solvePuzzle(rows, cols) {
 
 // Function to check if two categories can be in the same dimension using 2-away matrix
 function canBeInSameDimension(cat1Index, cat2Index) {
-    return twoAwayMatrix[cat1Index][cat2Index] === 1;
+    return twoAwayMatrix.get(cat1Index, cat2Index) === 1;
 }
 
 // Function to check if a category can be added to existing categories in the other dimension
 function canAddToOtherDimension(catIndex, existingOtherCategories) {
     for (const existingCat of existingOtherCategories) {
-        if (intersectionMatrix[catIndex][existingCat] === 0) {
+        if (intersectionMatrix.get(catIndex, existingCat) === 0) {
             return false;
         }
     }
     return true;
 }
 
-// Main search function using the new 2-away approach
+// Main search function using the optimized 2-away approach
 function findPuzzles() {
     const candidates = [];
     const maxRows = 4;
     const maxCols = 4;
 
-    console.log('Starting 2-away matrix search...');
+    console.log('Starting optimized 2-away matrix search...');
     const searchStart = Date.now();
 
     // Get terminal width for truncation
@@ -211,6 +210,7 @@ function findPuzzles() {
     const maxCategoryLength = Math.max(20, Math.floor(terminalWidth * 0.6));
 
     // Try each category as the first row
+    const searchStartTime = Date.now();
     for (let firstRow = 0; firstRow < categoryNames.length; firstRow++) {
         // Initialize state
         let rows = [firstRow];
@@ -239,10 +239,17 @@ function findPuzzles() {
 
             const progressPercent = ((firstRow + 1) / categoryNames.length * 100).toFixed(1);
             const progressBar = '█'.repeat(Math.floor(progressPercent / 2)) + '░'.repeat(50 - Math.floor(progressPercent / 2));
+            
+            // Calculate ETA
+            const elapsed = Date.now() - searchStartTime;
+            const progress = (firstRow + 1) / categoryNames.length;
+            const eta = progress > 0 ? (elapsed / progress) - elapsed : 0;
+            const etaMinutes = Math.floor(eta / 60000);
+            const etaSeconds = Math.floor((eta % 60000) / 1000);
 
             process.stdout.write('\r\x1b[K');
             process.stdout.write('\x1b[1A\x1b[K');
-            process.stdout.write(`Progress: [${progressBar}] ${progressPercent}% (${firstRow + 1}/${categoryNames.length})\n`);
+            process.stdout.write(`Progress: [${progressBar}] ${progressPercent}% (${firstRow + 1}/${categoryNames.length}) - ETA: ${etaMinutes}m ${etaSeconds}s\n`);
             process.stdout.write(`Candidates: ${candidates.length} | Categories: ${truncatedCategories} | Dim: ${currentDimension} | Index: ${currentIndex} | Iter: ${iterationsOnThisCategory}`);
 
             // If we haven't computed valid options for this state yet
@@ -250,7 +257,9 @@ function findPuzzles() {
                 if (currentDimension === 'col') {
                     // Looking for columns - need 2-away with existing columns and 1-away with existing rows
                     validOptions = [];
-                    for (let i = 0; i < categoryNames.length; i++) {
+                    // Only search forward from the highest existing category index to maintain lexicographical order
+                    const maxExistingIndex = Math.max(...rows, ...cols, -1);
+                    for (let i = maxExistingIndex + 1; i < categoryNames.length; i++) {
                         if (rows.includes(i) || cols.includes(i)) continue;
                         if (cols.length >= maxCols) continue;
                         
@@ -288,7 +297,9 @@ function findPuzzles() {
                 } else {
                     // Looking for rows - use 2-away matrix if we have columns, 1-away if we don't
                     validOptions = [];
-                    for (let i = 0; i < categoryNames.length; i++) {
+                    // Only search forward from the highest existing category index to maintain lexicographical order
+                    const maxExistingIndex = Math.max(...rows, ...cols, -1);
+                    for (let i = maxExistingIndex + 1; i < categoryNames.length; i++) {
                         if (rows.includes(i) || cols.includes(i)) continue;
                         if (rows.length >= maxRows) continue;
                         
@@ -419,6 +430,8 @@ function findPuzzles() {
 
     let solvedCount = 0;
     const solveStart = Date.now();
+    const solveStartTime = Date.now();
+    
     for (const candidate of candidates) {
         const solutions = solvePuzzle(candidate.rows, candidate.cols);
 
@@ -448,10 +461,25 @@ function findPuzzles() {
         }
 
         solvedCount++;
-        if (solvedCount % 1000 === 0) {
-            console.log(`Solved ${solvedCount}/${candidates.length} candidates`);
+        
+        // Update progress every 1000 candidates or at the end
+        if (solvedCount % 1000 === 0 || solvedCount === candidates.length) {
+            const elapsed = Date.now() - solveStartTime;
+            const progress = solvedCount / candidates.length;
+            const eta = progress > 0 ? (elapsed / progress) - elapsed : 0;
+            const etaMinutes = Math.floor(eta / 60000);
+            const etaSeconds = Math.floor((eta % 60000) / 1000);
+            
+            const progressBar = '█'.repeat(Math.floor(progress * 50)) + '░'.repeat(50 - Math.floor(progress * 50));
+            const percent = (progress * 100).toFixed(1);
+            
+            process.stdout.write('\r\x1b[K');
+            process.stdout.write(`Solving: [${progressBar}] ${percent}% (${solvedCount}/${candidates.length}) - ETA: ${etaMinutes}m ${etaSeconds}s`);
         }
     }
+    
+    // Clear the progress line
+    process.stdout.write('\r\x1b[K\n');
     const solveTime = Date.now() - solveStart;
 
     // Save results to separate files
@@ -479,5 +507,5 @@ function findPuzzles() {
     }
 }
 
-// Run the solver
+// Run the optimized solver
 findPuzzles(); 
