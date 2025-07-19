@@ -8,11 +8,14 @@
   "Movies featuring Kathy Bates": [
     "Titanic"
   ],
-  "White Star Line": [
-    "Titanic"
-  ],
   "Cruise Ships": [
     "Queen Mary"
+  ],
+  "Pilgrim Fathers": [
+    "Mayflower"
+  ],
+  "Scientific Research": [
+    "Challenger"
   ],
   "Enlightenment Figures": [
     "Newton"
@@ -370,6 +373,9 @@
   ],
   "Things Emirati": [
     "United Arab Emirates"
+  ],
+  "United States Lines": [
+    "United States"
   ],
   "Things Uruguayan": [
     "Uruguay"
@@ -1979,29 +1985,27 @@
   "Things Caribbean": [
     "Rum"
   ],
-  "Luxury Ships": [
-    "Titanic",
-    "Queen Mary"
+  "Spanish Navy": [
+    "Santissima Trinidad"
+  ],
+  "French Line": [
+    "Normandie"
+  ],
+  "Pirates": [
+    "Golden Hind"
+  ],
+  "Charles Darwin": [
+    "Beagle"
+  ],
+  "Arctic Exploration": [
+    "Fram"
+  ],
+  "Pacific Islands": [
+    "Midway Island"
   ],
   "Maritime Stories": [
     "Titanic",
     "Moby Dick"
-  ],
-  "World War I": [
-    "Lusitania",
-    "Hood"
-  ],
-  "Battleships": [
-    "Bismarck",
-    "Hood"
-  ],
-  "Kriegsmarine": [
-    "Bismarck",
-    "Graf Zeppelin"
-  ],
-  "Aircraft Carriers": [
-    "Enterprise",
-    "Ark Royal"
   ],
   "Things Ukrainian": [
     "Chernobyl",
@@ -2571,15 +2575,36 @@
     "Smarties",
     "Coffee Crisp"
   ],
+  "French Navy": [
+    "Bucentaure",
+    "Redoutable"
+  ],
+  "Italian Line": [
+    "Rex",
+    "Conte di Savoia"
+  ],
+  "Captain Cook": [
+    "Endeavour",
+    "Resolution"
+  ],
+  "Antarctic Exploration": [
+    "Discovery",
+    "Terra Nova"
+  ],
   "Movies featuring Kate Winslet": [
     "Titanic",
     "Sense and Sensibility",
     "The Holiday"
   ],
-  "Cunard Line": [
+  "White Star Line": [
+    "Titanic",
+    "Olympic",
+    "Britannic"
+  ],
+  "World War I": [
     "Lusitania",
-    "Queen Mary",
-    "Mauretania"
+    "Hood",
+    "Britannic"
   ],
   "Things Turkish": [
     "Constantinople",

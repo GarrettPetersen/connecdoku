@@ -253,16 +253,50 @@
     "X-Men: Days of Future Past"
   ],
   "Age of Sail": [
+    "Beagle",
+    "Bellerophon",
+    "Bucentaure",
+    "Challenger",
+    "Concepcion",
+    "Discovery",
+    "Endeavour",
+    "Fram",
+    "Golden Hind",
     "Mary Rose",
     "Mayflower",
     "Nina",
     "Pinta",
+    "Redoutable",
+    "Resolution",
+    "San Antonio",
     "Santa Maria",
+    "Santiago",
+    "Santissima Trinidad",
+    "Temeraire",
+    "Terra Nova",
+    "Trinidad",
+    "Victoria",
     "Victory"
   ],
   "Aircraft Carriers": [
+    "Akagi",
     "Ark Royal",
-    "Enterprise"
+    "Bush",
+    "Carl Vinson",
+    "Eisenhower",
+    "Enterprise",
+    "Hiryu",
+    "Hornet",
+    "Kaga",
+    "Lincoln",
+    "Nimitz",
+    "Reagan",
+    "Roosevelt",
+    "Soryu",
+    "Stennis",
+    "Truman",
+    "Washington",
+    "Yorktown"
   ],
   "Airships": [
     "Akron",
@@ -345,6 +379,10 @@
     "Whisper of the Heart",
     "Yugioh"
   ],
+  "Antarctic Exploration": [
+    "Discovery",
+    "Terra Nova"
+  ],
   "Appliances": [
     "Cooler",
     "Freezer",
@@ -387,6 +425,9 @@
   ],
   "Arctic Animals": [
     "Polar Bear"
+  ],
+  "Arctic Exploration": [
+    "Fram"
   ],
   "Art Museums": [
     "Louvre",
@@ -514,9 +555,32 @@
     "Jordan",
     "Kobe"
   ],
+  "Battle of Midway": [
+    "Akagi",
+    "Enterprise",
+    "Hiryu",
+    "Hornet",
+    "Kaga",
+    "Midway Island",
+    "Soryu",
+    "Yorktown"
+  ],
   "Battleships": [
+    "Bellerophon",
     "Bismarck",
-    "Hood"
+    "Bucentaure",
+    "Gneisenau",
+    "Hood",
+    "Musashi",
+    "Prince of Wales",
+    "Redoutable",
+    "Repulse",
+    "Santissima Trinidad",
+    "Scharnhorst",
+    "Temeraire",
+    "Tirpitz",
+    "Victory",
+    "Yamato"
   ],
   "Battlestar Galactica": [
     "Apollo",
@@ -989,6 +1053,10 @@
     "Coffee Crisp",
     "Smarties"
   ],
+  "Captain Cook": [
+    "Endeavour",
+    "Resolution"
+  ],
   "Car Brands": [
     "Buick",
     "Cadillac",
@@ -1041,6 +1109,9 @@
     "Subaru",
     "Tesla",
     "Toyota"
+  ],
+  "Charles Darwin": [
+    "Beagle"
   ],
   "Checkout Items": [
     "Batteries",
@@ -1416,10 +1487,18 @@
   ],
   "Civilian Ships": [
     "Andrea Doria",
+    "Britannic",
+    "Conte di Savoia",
     "Lusitania",
     "Mauretania",
+    "Normandie",
+    "Olympic",
+    "Queen Elizabeth",
+    "Queen Elizabeth 2",
     "Queen Mary",
-    "Titanic"
+    "Rex",
+    "Titanic",
+    "United States"
   ],
   "Classic Literature": [
     "1984",
@@ -1473,12 +1552,24 @@
     "Starbuck"
   ],
   "Cold War": [
+    "Bush",
+    "Carl Vinson",
+    "Eisenhower",
     "Enterprise",
+    "Lincoln",
     "Los Angeles",
+    "Nimitz",
+    "Queen Elizabeth 2",
+    "Reagan",
+    "Roosevelt",
     "San Diego",
     "San Jose",
     "San Juan",
-    "San Pedro"
+    "San Pedro",
+    "Stennis",
+    "Truman",
+    "United States",
+    "Washington"
   ],
   "Colors": [
     "Aurora",
@@ -2378,6 +2469,8 @@
   "Cunard Line": [
     "Lusitania",
     "Mauretania",
+    "Queen Elizabeth",
+    "Queen Elizabeth 2",
     "Queen Mary"
   ],
   "D&D Stats": [
@@ -3022,7 +3115,8 @@
     "Raft"
   ],
   "Ends with AGA": [
-    "Baba Yaga"
+    "Baba Yaga",
+    "Kaga"
   ],
   "Ends with AGE": [
     "Carthage",
@@ -3030,8 +3124,12 @@
     "Sage",
     "The Village"
   ],
+  "Ends with AGI": [
+    "Akagi"
+  ],
   "Ends with AGO": [
     "Chicago",
+    "Santiago",
     "Trinidad and Tobago"
   ],
   "Ends with AHU": [
@@ -3186,6 +3284,7 @@
     "Italian Somaliland",
     "La La Land",
     "Long Island",
+    "Midway Island",
     "New Zealand",
     "Nomadland",
     "Nyasaland",
@@ -3379,7 +3478,8 @@
     "Gelato",
     "NATO",
     "Plato",
-    "Tomato"
+    "Tomato",
+    "Yamato"
   ],
   "Ends with ATS": [
     "The Aristocats"
@@ -3530,6 +3630,7 @@
   ],
   "Ends with BLE": [
     "Hubble",
+    "Redoutable",
     "Scrabble",
     "Table",
     "Unbreakable"
@@ -3691,7 +3792,9 @@
     "Red 2"
   ],
   "Ends with DAD": [
-    "Baghdad"
+    "Baghdad",
+    "Santissima Trinidad",
+    "Trinidad"
   ],
   "Ends with DAE": [
     "Sundae"
@@ -3765,6 +3868,9 @@
     "Cambodia",
     "Concordia",
     "India"
+  ],
+  "Ends with DIE": [
+    "Normandie"
   ],
   "Ends with DIN": [
     "Aladdin"
@@ -4077,6 +4183,7 @@
   "Ends with ERY": [
     "Archery",
     "Battery",
+    "Discovery",
     "Montgomery"
   ],
   "Ends with ESA": [
@@ -4125,7 +4232,8 @@
   ],
   "Ends with ETH": [
     "Elizabeth",
-    "Macbeth"
+    "Macbeth",
+    "Queen Elizabeth"
   ],
   "Ends with ETI": [
     "Kotleti"
@@ -4217,7 +4325,8 @@
     "Senegal"
   ],
   "Ends with GAN": [
-    "Michigan"
+    "Michigan",
+    "Reagan"
   ],
   "Ends with GBY": [
     "Rugby"
@@ -4282,6 +4391,7 @@
     "Water Margin"
   ],
   "Ends with GLE": [
+    "Beagle",
     "Eagle",
     "Google"
   ],
@@ -4330,6 +4440,9 @@
   ],
   "Ends with GUM": [
     "Gum"
+  ],
+  "Ends with H 2": [
+    "Queen Elizabeth 2"
   ],
   "Ends with HAD": [
     "Chad"
@@ -4401,6 +4514,7 @@
     "Daphne"
   ],
   "Ends with HON": [
+    "Bellerophon",
     "Python"
   ],
   "Ends with HOP": [
@@ -4613,6 +4727,7 @@
   ],
   "Ends with IND": [
     "A Beautiful Mind",
+    "Golden Hind",
     "Gone with the Wind"
   ],
   "Ends with INE": [
@@ -4702,6 +4817,7 @@
   ],
   "Ends with ION": [
     "Alien: Resurrection",
+    "Concepcion",
     "Damnation",
     "Federation",
     "Lion",
@@ -4711,6 +4827,7 @@
     "Pinion",
     "Predestination",
     "Pulp Fiction",
+    "Resolution",
     "Scorpion",
     "Stallion"
   ],
@@ -4745,7 +4862,8 @@
     "Harry Potter and the Goblet of Fire",
     "Sapphire",
     "Slumdog Millionaire",
-    "Solitaire"
+    "Solitaire",
+    "Temeraire"
   ],
   "Ends with IRI": [
     "Onigiri"
@@ -4836,6 +4954,10 @@
     "Sin City",
     "The End of Eternity",
     "Vatican City"
+  ],
+  "Ends with ITZ": [
+    "Nimitz",
+    "Tirpitz"
   ],
   "Ends with IUM": [
     "Belgium",
@@ -5144,6 +5266,9 @@
     "Elsa",
     "Salsa"
   ],
+  "Ends with LSE": [
+    "Repulse"
+  ],
   "Ends with LTA": [
     "Delta",
     "Malta",
@@ -5179,6 +5304,7 @@
     "Superman",
     "The Greatest Showman",
     "The Irishman",
+    "Truman",
     "Wonder Woman"
   ],
   "Ends with MAR": [
@@ -5299,6 +5425,9 @@
   "Ends with NAP": [
     "Snap"
   ],
+  "Ends with NAU": [
+    "Gneisenau"
+  ],
   "Ends with NCA": [
     "Casablanca"
   ],
@@ -5394,6 +5523,7 @@
   ],
   "Ends with NET": [
     "Gannet",
+    "Hornet",
     "Planet",
     "Tenet",
     "Treasure Planet"
@@ -5454,6 +5584,7 @@
     "Virginia"
   ],
   "Ends with NIC": [
+    "Britannic",
     "Panasonic",
     "Titanic"
   ],
@@ -5465,10 +5596,14 @@
   "Ends with NIN": [
     "Benin"
   ],
+  "Ends with NIO": [
+    "San Antonio"
+  ],
   "Ends with NIR": [
     "Sleipnir"
   ],
   "Ends with NIS": [
+    "Stennis",
     "Table Tennis",
     "Tennis"
   ],
@@ -5647,6 +5782,9 @@
   ],
   "Ends with OHN": [
     "John"
+  ],
+  "Ends with OIA": [
+    "Conte di Savoia"
   ],
   "Ends with OID": [
     "Void"
@@ -5915,6 +6053,7 @@
     "Split Pea Soup"
   ],
   "Ends with OUR": [
+    "Endeavour",
     "Sweet and Sour"
   ],
   "Ends with OUS": [
@@ -5926,7 +6065,8 @@
     "Stout"
   ],
   "Ends with OVA": [
-    "Moldova"
+    "Moldova",
+    "Terra Nova"
   ],
   "Ends with OVE": [
     "Glove",
@@ -5937,7 +6077,8 @@
     "Owl"
   ],
   "Ends with OWN": [
-    "Jackie Brown"
+    "Jackie Brown",
+    "Yorktown"
   ],
   "Ends with OWS": [
     "Harry Potter and the Deathly Hallows",
@@ -5995,6 +6136,9 @@
     "Ethiopia",
     "Olympia",
     "Zootopia"
+  ],
+  "Ends with PIC": [
+    "Olympic"
   ],
   "Ends with PIE": [
     "Apple Pie",
@@ -6067,6 +6211,7 @@
     "Coral"
   ],
   "Ends with RAM": [
+    "Fram",
     "Ram"
   ],
   "Ends with RAN": [
@@ -6141,6 +6286,9 @@
   ],
   "Ends with RET": [
     "Cabaret"
+  ],
+  "Ends with REX": [
+    "Rex"
   ],
   "Ends with REY": [
     "Earl Grey",
@@ -6293,7 +6441,8 @@
     "Morse"
   ],
   "Ends with RST": [
-    "Bratwurst"
+    "Bratwurst",
+    "Scharnhorst"
   ],
   "Ends with RTE": [
     "Napoleon Bonaparte"
@@ -6323,6 +6472,10 @@
   "Ends with RYE": [
     "Rye",
     "The Catcher in the Rye"
+  ],
+  "Ends with RYU": [
+    "Hiryu",
+    "Soryu"
   ],
   "Ends with SAF": [
     "Mansaf"
@@ -6384,6 +6537,7 @@
     "Kasha"
   ],
   "Ends with SHI": [
+    "Musashi",
     "Sushi"
   ],
   "Ends with SHU": [
@@ -6432,6 +6586,7 @@
     "Robinson Crusoe"
   ],
   "Ends with SON": [
+    "Carl Vinson",
     "Edison",
     "Hudson",
     "Jackson",
@@ -6813,6 +6968,7 @@
     "Aperture",
     "Back to the Future",
     "Bill & Ted's Excellent Adventure",
+    "Bucentaure",
     "Vulture"
   ],
   "Ends with URG": [
@@ -6840,6 +6996,7 @@
   ],
   "Ends with USH": [
     "Baba Ganoush",
+    "Bush",
     "Fattoush"
   ],
   "Ends with USK": [
@@ -6941,6 +7098,7 @@
     "Charlotte's Web"
   ],
   "Ends with WER": [
+    "Eisenhower",
     "Mayflower",
     "Sunflower"
   ],
@@ -7108,10 +7266,23 @@
     "CON"
   ],
   "Exploration Ships": [
+    "Beagle",
+    "Challenger",
+    "Concepcion",
+    "Discovery",
+    "Endeavour",
+    "Fram",
+    "Golden Hind",
     "Mayflower",
     "Nina",
     "Pinta",
-    "Santa Maria"
+    "Resolution",
+    "San Antonio",
+    "Santa Maria",
+    "Santiago",
+    "Terra Nova",
+    "Trinidad",
+    "Victoria"
   ],
   "Explorers": [
     "Christopher Columbus",
@@ -7237,6 +7408,22 @@
     "Wish",
     "Wreck-It Ralph",
     "Zootopia"
+  ],
+  "Famous Shipwrecks": [
+    "Bismarck",
+    "Britannic",
+    "Gneisenau",
+    "Hood",
+    "Lusitania",
+    "Musashi",
+    "Prince of Wales",
+    "Repulse",
+    "Scharnhorst",
+    "Terra Nova",
+    "Tirpitz",
+    "Titanic",
+    "Victory",
+    "Yamato"
   ],
   "Fantasy": [
     "Elf",
@@ -7481,6 +7668,13 @@
   "Film Noir": [
     "The Big Sleep",
     "The Maltese Falcon"
+  ],
+  "First Circumnavigation": [
+    "Concepcion",
+    "San Antonio",
+    "Santiago",
+    "Trinidad",
+    "Victoria"
   ],
   "Fish": [
     "Carp",
@@ -8157,6 +8351,13 @@
     "Zambia",
     "Zimbabwe"
   ],
+  "French Line": [
+    "Normandie"
+  ],
+  "French Navy": [
+    "Bucentaure",
+    "Redoutable"
+  ],
   "Fruits": [
     "Apple",
     "Banana",
@@ -8482,6 +8683,14 @@
     "Mr. Freeze",
     "Snowman"
   ],
+  "Imperial Japanese Navy": [
+    "Akagi",
+    "Hiryu",
+    "Kaga",
+    "Musashi",
+    "Soryu",
+    "Yamato"
+  ],
   "Ingredients in Cobb Salad": [
     "Avocado",
     "Bacon",
@@ -8634,6 +8843,7 @@
     "Mauritius",
     "Melville",
     "Menorca",
+    "Midway Island",
     "Mindanao",
     "Moorea",
     "Mykonos",
@@ -8677,6 +8887,10 @@
     "Western Samoa",
     "Yap",
     "Zanzibar"
+  ],
+  "Italian Line": [
+    "Conte di Savoia",
+    "Rex"
   ],
   "James Bond Characters": [
     "Bond",
@@ -8751,7 +8965,10 @@
   ],
   "Kriegsmarine": [
     "Bismarck",
-    "Graf Zeppelin"
+    "Gneisenau",
+    "Graf Zeppelin",
+    "Scharnhorst",
+    "Tirpitz"
   ],
   "Landlocked Countries": [
     "Afghanistan",
@@ -9315,8 +9532,17 @@
     "Venezuela"
   ],
   "Luxury Ships": [
+    "Britannic",
+    "Conte di Savoia",
+    "Mauretania",
+    "Normandie",
+    "Olympic",
+    "Queen Elizabeth",
+    "Queen Elizabeth 2",
     "Queen Mary",
-    "Titanic"
+    "Rex",
+    "Titanic",
+    "United States"
   ],
   "MLB Players": [
     "Cobb",
@@ -9568,11 +9794,39 @@
     "Winston Churchill"
   ],
   "Military Ships": [
+    "Akagi",
     "Ark Royal",
+    "Bellerophon",
     "Bismarck",
+    "Bucentaure",
+    "Bush",
+    "Carl Vinson",
+    "Eisenhower",
     "Enterprise",
+    "Gneisenau",
+    "Hiryu",
     "Hood",
-    "Victory"
+    "Hornet",
+    "Kaga",
+    "Lincoln",
+    "Musashi",
+    "Nimitz",
+    "Prince of Wales",
+    "Reagan",
+    "Redoutable",
+    "Repulse",
+    "Roosevelt",
+    "Santissima Trinidad",
+    "Scharnhorst",
+    "Soryu",
+    "Stennis",
+    "Temeraire",
+    "Tirpitz",
+    "Truman",
+    "Victory",
+    "Washington",
+    "Yamato",
+    "Yorktown"
   ],
   "Military Stories": [
     "Romance of the Three Kingdoms"
@@ -12838,6 +13092,14 @@
     "Penguin",
     "Shark"
   ],
+  "Napoleonic Wars": [
+    "Bellerophon",
+    "Bucentaure",
+    "Redoutable",
+    "Santissima Trinidad",
+    "Temeraire",
+    "Victory"
+  ],
   "National Capitals": [
     "Athens",
     "Beijing",
@@ -12944,12 +13206,20 @@
   ],
   "Oceanliners": [
     "Andrea Doria",
+    "Britannic",
+    "Conte di Savoia",
     "Empress of Asia",
     "Empress of Ireland",
     "Lusitania",
     "Mauretania",
+    "Normandie",
+    "Olympic",
+    "Queen Elizabeth",
+    "Queen Elizabeth 2",
     "Queen Mary",
-    "Titanic"
+    "Rex",
+    "Titanic",
+    "United States"
   ],
   "Organizations": [
     "NASA",
@@ -13023,6 +13293,9 @@
   ],
   "Outlaw Stories": [
     "Water Margin"
+  ],
+  "Pacific Islands": [
+    "Midway Island"
   ],
   "Parts of a Song": [
     "Beat",
@@ -13251,6 +13524,9 @@
     "Nothing",
     "Portal"
   ],
+  "Pilgrim Fathers": [
+    "Mayflower"
+  ],
   "Pink Panther Characters": [
     "Pink Panther"
   ],
@@ -13264,6 +13540,9 @@
   ],
   "Pirate Terms": [
     "One Piece"
+  ],
+  "Pirates": [
+    "Golden Hind"
   ],
   "Pixar": [
     "A Bug's Life",
@@ -13566,6 +13845,7 @@
     "Mexico",
     "Miami",
     "Micronesia",
+    "Midway Island",
     "Mindanao",
     "Moldova",
     "Monaco",
@@ -14334,8 +14614,19 @@
   ],
   "Royal Navy": [
     "Ark Royal",
+    "Beagle",
+    "Bellerophon",
+    "Challenger",
+    "Discovery",
+    "Endeavour",
+    "Golden Hind",
     "Hood",
     "Mary Rose",
+    "Prince of Wales",
+    "Repulse",
+    "Resolution",
+    "Temeraire",
+    "Terra Nova",
     "Victory"
   ],
   "Royalty": [
@@ -14563,6 +14854,9 @@
     "WALL-E",
     "X-Men: Days of Future Past"
   ],
+  "Scientific Research": [
+    "Challenger"
+  ],
   "Scientists": [
     "Aristotle",
     "Copernicus",
@@ -14694,49 +14988,99 @@
     "Romeo"
   ],
   "Ships": [
+    "Akagi",
     "Albatross",
     "Andrea Doria",
     "Ark Royal",
+    "Beagle",
+    "Bellerophon",
     "Bismarck",
+    "Britannic",
+    "Bucentaure",
+    "Bush",
     "Buttercup",
+    "Carl Vinson",
     "Cog",
+    "Concepcion",
+    "Conte di Savoia",
+    "Discovery",
     "Edmund Fitzgerald",
+    "Eisenhower",
     "Empress of Asia",
     "Empress of Ireland",
+    "Endeavour",
     "Enterprise",
+    "Fram",
+    "Gneisenau",
+    "Golden Hind",
     "Graf Zeppelin",
     "Heather",
+    "Hiryu",
     "Hood",
+    "Hornet",
     "Iris",
+    "Kaga",
     "Los Angeles",
     "Lusitania",
     "Mary Rose",
     "Mauretania",
     "Mayflower",
+    "Musashi",
+    "Nimitz",
     "Nina",
+    "Normandie",
+    "Olympic",
     "Pinta",
+    "Queen Elizabeth",
+    "Queen Elizabeth 2",
     "Queen Mary",
+    "Reagan",
+    "Redoutable",
+    "Repulse",
+    "Resolution",
+    "Rex",
+    "San Antonio",
     "San Diego",
     "San Jose",
     "San Juan",
     "San Pedro",
     "Santa Maria",
+    "Santiago",
+    "Santissima Trinidad",
+    "Scharnhorst",
+    "Soryu",
+    "Stennis",
+    "Temeraire",
+    "Terra Nova",
+    "Tirpitz",
     "Titanic",
+    "Trinidad",
+    "Truman",
     "Victory",
-    "Violet"
+    "Violet",
+    "Yamato",
+    "Yorktown"
   ],
   "Shipwrecks": [
+    "Akagi",
     "Andrea Doria",
     "Bismarck",
+    "Bucentaure",
     "Concordia",
     "Edmund Fitzgerald",
     "Empress of Ireland",
+    "Hiryu",
     "Hood",
+    "Kaga",
     "Lusitania",
     "Mary Rose",
     "Queen Mary",
+    "Redoutable",
+    "Santissima Trinidad",
+    "Soryu",
     "Titanic",
-    "Victory"
+    "Victory",
+    "Yorktown"
   ],
   "Sichuan Dishes": [
     "Dan Dan Noodles",
@@ -14832,14 +15176,22 @@
     "Kepler",
     "Voyager"
   ],
+  "Spanish Navy": [
+    "Santissima Trinidad"
+  ],
   "Spanish Ships": [
+    "Concepcion",
     "Nina",
     "Pinta",
+    "San Antonio",
     "San Diego",
     "San Jose",
     "San Juan",
     "San Pedro",
-    "Santa Maria"
+    "Santa Maria",
+    "Santiago",
+    "Trinidad",
+    "Victoria"
   ],
   "Spanish Words": [
     "Diablo",
@@ -15071,6 +15423,9 @@
   ],
   "Starts with AJI": [
     "Ajiaco"
+  ],
+  "Starts with AKA": [
+    "Akagi"
   ],
   "Starts with AKI": [
     "Akira"
@@ -15350,6 +15705,7 @@
   ],
   "Starts with BEA": [
     "Beach Volleyball",
+    "Beagle",
     "Bear",
     "Bearnaise",
     "Beast",
@@ -15387,6 +15743,7 @@
     "Belize",
     "Bell",
     "Belle",
+    "Bellerophon",
     "Beloved"
   ],
   "Starts with BEN": [
@@ -15531,6 +15888,7 @@
     "Brioche",
     "Brisket",
     "Britannia",
+    "Britannic",
     "British East Africa",
     "British Guiana",
     "British Honduras",
@@ -15556,6 +15914,7 @@
     "Bubble and Squeak"
   ],
   "Starts with BUC": [
+    "Bucentaure",
     "Buck"
   ],
   "Starts with BUF": [
@@ -15581,6 +15940,9 @@
     "Burma",
     "Burrito",
     "Burundi"
+  ],
+  "Starts with BUS": [
+    "Bush"
   ],
   "Starts with BUT": [
     "Butter Chicken",
@@ -15642,6 +16004,7 @@
     "Carcassonne",
     "Card",
     "Cardinal",
+    "Carl Vinson",
     "Carp",
     "Cars",
     "Carson City",
@@ -15800,11 +16163,13 @@
   ],
   "Starts with CON": [
     "CON",
+    "Concepcion",
     "Concord",
     "Concordia",
     "Congee",
     "Congo",
-    "Constantinople"
+    "Constantinople",
+    "Conte di Savoia"
   ],
   "Starts with COO": [
     "Cookie",
@@ -15987,6 +16352,7 @@
     "Dirac"
   ],
   "Starts with DIS": [
+    "Discovery",
     "Discovery One",
     "Disney"
   ],
@@ -16123,6 +16489,9 @@
   "Starts with EIN": [
     "Einstein"
   ],
+  "Starts with EIS": [
+    "Eisenhower"
+  ],
   "Starts with EL ": [
     "El Hierro",
     "El Salvador"
@@ -16165,6 +16534,9 @@
   "Starts with ENC": [
     "Encanto",
     "Enchilada"
+  ],
+  "Starts with END": [
+    "Endeavour"
   ],
   "Starts with ENO": [
     "Enormous"
@@ -16337,6 +16709,7 @@
     "Foxtrot"
   ],
   "Starts with FRA": [
+    "Fram",
     "France",
     "Francesinha",
     "Frankenstein",
@@ -16466,6 +16839,9 @@
   "Starts with GMC": [
     "GMC"
   ],
+  "Starts with GNE": [
+    "Gneisenau"
+  ],
   "Starts with GOA": [
     "Goat"
   ],
@@ -16481,6 +16857,7 @@
   "Starts with GOL": [
     "Golabki",
     "Gold",
+    "Golden Hind",
     "Golf",
     "Goliath"
   ],
@@ -16666,6 +17043,9 @@
   "Starts with HIN": [
     "Hindenburg"
   ],
+  "Starts with HIR": [
+    "Hiryu"
+  ],
   "Starts with HIS": [
     "Hispania"
   ],
@@ -16700,6 +17080,7 @@
   ],
   "Starts with HOR": [
     "Horchata",
+    "Hornet",
     "Horse",
     "Horse Racing"
   ],
@@ -16965,6 +17346,7 @@
     "Jörmungandr"
   ],
   "Starts with KAG": [
+    "Kaga",
     "Kagemusha"
   ],
   "Starts with KAL": [
@@ -17415,6 +17797,9 @@
     "Micronesia",
     "Microsoft"
   ],
+  "Starts with MID": [
+    "Midway Island"
+  ],
   "Starts with MIK": [
     "Mike"
   ],
@@ -17506,6 +17891,7 @@
     "Murder"
   ],
   "Starts with MUS": [
+    "Musashi",
     "Musk",
     "Mustard"
   ],
@@ -17597,6 +17983,9 @@
   "Starts with NIL": [
     "Nile"
   ],
+  "Starts with NIM": [
+    "Nimitz"
+  ],
   "Starts with NIN": [
     "Nina"
   ],
@@ -17611,6 +18000,7 @@
     "Nomadland"
   ],
   "Starts with NOR": [
+    "Normandie",
     "North Korea",
     "North Macedonia",
     "North Vietnam",
@@ -17683,6 +18073,7 @@
   ],
   "Starts with OLY": [
     "Olympia",
+    "Olympic",
     "Olympus"
   ],
   "Starts with OMA": [
@@ -18033,6 +18424,8 @@
   "Starts with QUE": [
     "Quebec",
     "Queen",
+    "Queen Elizabeth",
+    "Queen Elizabeth 2",
     "Queen Mary",
     "Quesadilla"
   ],
@@ -18083,6 +18476,9 @@
     "Ray",
     "Raya and the Last Dragon"
   ],
+  "Starts with REA": [
+    "Reagan"
+  ],
   "Starts with RED": [
     "Red",
     "Red 2",
@@ -18092,19 +18488,27 @@
     "Red Riding Hood",
     "Red Velvet",
     "Red Wine",
-    "Reddit"
+    "Reddit",
+    "Redoutable"
   ],
   "Starts with REN": [
     "Rent"
   ],
+  "Starts with REP": [
+    "Repulse"
+  ],
   "Starts with RES": [
-    "Reservoir Dogs"
+    "Reservoir Dogs",
+    "Resolution"
   ],
   "Starts with RET": [
     "Return of the Jedi"
   ],
   "Starts with REV": [
     "Revenge of the Sith"
+  ],
+  "Starts with REX": [
+    "Rex"
   ],
   "Starts with RHI": [
     "Rhine",
@@ -18250,6 +18654,7 @@
     "Samoa"
   ],
   "Starts with SAN": [
+    "San Antonio",
     "San Diego",
     "San Jose",
     "San Juan",
@@ -18259,6 +18664,8 @@
     "Sanjuro",
     "Santa Fe",
     "Santa Maria",
+    "Santiago",
+    "Santissima Trinidad",
     "Santorini"
   ],
   "Starts with SAO": [
@@ -18292,6 +18699,7 @@
     "Scent of a Woman"
   ],
   "Starts with SCH": [
+    "Scharnhorst",
     "Schindler's List",
     "Schmaltz",
     "Schnitzel"
@@ -18455,6 +18863,9 @@
     "Song",
     "Sony"
   ],
+  "Starts with SOR": [
+    "Soryu"
+  ],
   "Starts with SOU": [
     "Souffle",
     "Soul",
@@ -18531,7 +18942,8 @@
     "Statler"
   ],
   "Starts with STE": [
-    "Steel"
+    "Steel",
+    "Stennis"
   ],
   "Starts with STI": [
     "Stick",
@@ -18678,6 +19090,7 @@
     "Tell‑Tale"
   ],
   "Starts with TEM": [
+    "Temeraire",
     "Temple Mount",
     "Tempura"
   ],
@@ -18694,7 +19107,8 @@
     "Teriyaki",
     "Terminator 2: Judgment Day",
     "Terms of Endearment",
-    "Tern"
+    "Tern",
+    "Terra Nova"
   ],
   "Starts with TES": [
     "Tesla"
@@ -18849,7 +19263,8 @@
     "Time Bandits"
   ],
   "Starts with TIR": [
-    "Tiramisu"
+    "Tiramisu",
+    "Tirpitz"
   ],
   "Starts with TIS": [
     "Tissue"
@@ -18912,6 +19327,7 @@
   ],
   "Starts with TRI": [
     "Trifle",
+    "Trinidad",
     "Trinidad and Tobago"
   ],
   "Starts with TRO": [
@@ -18919,6 +19335,7 @@
     "Troyes"
   ],
   "Starts with TRU": [
+    "Truman",
     "Trump"
   ],
   "Starts with TSA": [
@@ -19192,6 +19609,9 @@
   "Starts with YAK": [
     "Yakitori"
   ],
+  "Starts with YAM": [
+    "Yamato"
+  ],
   "Starts with YAN": [
     "Yangtze",
     "Yankee"
@@ -19216,7 +19636,8 @@
     "Yojimbo"
   ],
   "Starts with YOR": [
-    "Yorkshire Pudding"
+    "Yorkshire Pudding",
+    "Yorktown"
   ],
   "Starts with YOS": [
     "Yosemite Sam"
@@ -19571,7 +19992,9 @@
     "Boston",
     "Bourbon",
     "Brownie",
+    "Bush",
     "California",
+    "Carl Vinson",
     "Carson City",
     "Charleston",
     "Cheesecake",
@@ -19592,6 +20015,7 @@
     "Diving",
     "Edmund Fitzgerald",
     "Einstein",
+    "Eisenhower",
     "Elvis",
     "Enterprise",
     "Figure Skating",
@@ -19605,6 +20029,7 @@
     "Hartford",
     "Helena",
     "Honolulu",
+    "Hornet",
     "Hot Chocolate",
     "Hot Dog",
     "Iced Tea",
@@ -19629,6 +20054,7 @@
     "Mayo",
     "Met",
     "Miami",
+    "Midway Island",
     "Milk",
     "Milkshake",
     "Moby Dick",
@@ -19642,6 +20068,7 @@
     "Nevada",
     "New York",
     "New York Bagel",
+    "Nimitz",
     "Oklahoma City",
     "Olympia",
     "Orange",
@@ -19651,8 +20078,10 @@
     "Providence",
     "Raleigh",
     "Ranch",
+    "Reagan",
     "Richmond",
     "Rock Climbing",
+    "Roosevelt",
     "Root Beer",
     "Rye Whiskey",
     "Sacramento",
@@ -19669,6 +20098,7 @@
     "Sourdough",
     "Springfield",
     "Staten Island",
+    "Stennis",
     "Surfing",
     "Swimming",
     "Tallahassee",
@@ -19680,6 +20110,7 @@
     "Topeka",
     "Track and Field",
     "Trenton",
+    "Truman",
     "Ultimate Frisbee",
     "United States",
     "Usher",
@@ -19688,7 +20119,8 @@
     "Water Polo",
     "Weightlifting",
     "Wrestling",
-    "Wright"
+    "Wright",
+    "Yorktown"
   ],
   "Things Antiguan": [
     "Antigua and Barbuda"
@@ -19774,21 +20206,28 @@
     "Archery",
     "Ark Royal",
     "Bangers and Mash",
+    "Beagle",
     "Beatles",
+    "Bellerophon",
     "Boxing",
     "Brave New World",
     "Britannia",
+    "Britannic",
     "Bubble and Squeak",
+    "Challenger",
     "Cricket",
     "Darwin",
+    "Discovery",
     "Dover",
     "Dracula",
     "Earl Grey",
     "Elizabeth",
+    "Endeavour",
     "Fish and Chips",
     "Formula One",
     "Frankenstein",
     "Gin",
+    "Golden Hind",
     "Golf",
     "Guernsey",
     "Hebrides",
@@ -19799,15 +20238,23 @@
     "Jane Eyre",
     "Jersey",
     "London",
+    "Lusitania",
     "Mary Rose",
+    "Mauretania",
     "Mayflower",
     "Mead",
     "Newton",
+    "Olympic",
     "Orkney",
     "Polo",
     "Pride and Prejudice",
+    "Prince of Wales",
     "Queen",
+    "Queen Elizabeth",
+    "Queen Elizabeth 2",
     "Queen Mary",
+    "Repulse",
+    "Resolution",
     "Rowing",
     "Rugby",
     "Sailing",
@@ -19821,12 +20268,15 @@
     "Southampton",
     "Sticky Toffee Pudding",
     "Tea",
+    "Temeraire",
     "Tennis",
+    "Terra Nova",
     "Thames",
     "The Jungle Book",
     "The Secret Garden",
     "The Tale of Peter Rabbit",
     "The Wind in the Willows",
+    "Titanic",
     "Trifle",
     "United Kingdom",
     "Victoria",
@@ -20061,6 +20511,7 @@
     "Bordeaux",
     "Bouillabaisse",
     "Brioche",
+    "Bucentaure",
     "Burgundy",
     "Cassoulet",
     "Champagne",
@@ -20088,11 +20539,13 @@
     "Marie Curie",
     "Mont Blanc",
     "Napoleon Bonaparte",
+    "Normandie",
     "Paris",
     "Profiterole",
     "Quiche",
     "Ratatouille",
     "Red Wine",
+    "Redoutable",
     "Rosé",
     "Souffle",
     "Sparkling Wine",
@@ -20123,6 +20576,7 @@
     "Einstein",
     "Germania",
     "Germany",
+    "Gneisenau",
     "Graf Zeppelin",
     "Handel",
     "Kartoffelsalat",
@@ -20135,8 +20589,10 @@
     "Rye",
     "Sauerbraten",
     "Sauerkraut",
+    "Scharnhorst",
     "Schnitzel",
     "Spätzle",
+    "Tirpitz",
     "Weissbier"
   ],
   "Things Ghanaian": [
@@ -20280,6 +20736,7 @@
     "Chianti",
     "Christopher Columbus",
     "Ciabatta",
+    "Conte di Savoia",
     "Da Vinci",
     "Dante",
     "Elba",
@@ -20308,6 +20765,7 @@
     "Pompeii",
     "Prosecco",
     "Ravioli",
+    "Rex",
     "Risotto",
     "Roma",
     "Rome",
@@ -20330,6 +20788,7 @@
     "Jamaica"
   ],
   "Things Japanese": [
+    "Akagi",
     "Akira",
     "Arrietty",
     "Castle in the Sky",
@@ -20341,6 +20800,7 @@
     "Grave of the Fireflies",
     "Gyoza",
     "High and Low",
+    "Hiryu",
     "Hokkaido",
     "Honda",
     "Honshu",
@@ -20348,6 +20808,7 @@
     "Ikiru",
     "Japan",
     "Judo",
+    "Kaga",
     "Kagemusha",
     "Karate",
     "Kiki's Delivery Service",
@@ -20355,6 +20816,7 @@
     "Matcha",
     "Miso",
     "Mochi",
+    "Musashi",
     "My Neighbor Totoro",
     "Oden",
     "Okinawa",
@@ -20378,6 +20840,7 @@
     "Shikoku",
     "Soba",
     "Sony",
+    "Soryu",
     "Soy Sauce",
     "Spirited Away",
     "Sukiyaki",
@@ -20403,6 +20866,7 @@
     "When Marnie Was There",
     "Whisper of the Heart",
     "Yakitori",
+    "Yamato",
     "Yojimbo"
   ],
   "Things Jewish": [
@@ -20609,6 +21073,7 @@
   "Things Norwegian": [
     "Biathlon",
     "Cross Country Skiing",
+    "Fram",
     "Norway",
     "Svalbard"
   ],
@@ -20752,6 +21217,7 @@
     "Canary Islands",
     "Christopher Columbus",
     "Churro",
+    "Concepcion",
     "Don Quixote",
     "El Hierro",
     "Empanada",
@@ -20772,12 +21238,17 @@
     "Paella",
     "Pinta",
     "Prado",
+    "San Antonio",
     "Sangria",
     "Santa Maria",
+    "Santiago",
+    "Santissima Trinidad",
     "Sherry",
     "Spain",
     "Tapas",
-    "Tenerife"
+    "Tenerife",
+    "Trinidad",
+    "Victoria"
   ],
   "Things Sri Lankan": [
     "Ceylon",
@@ -21182,12 +21653,24 @@
     "United States"
   ],
   "US Navy": [
+    "Bush",
+    "Carl Vinson",
+    "Eisenhower",
     "Enterprise",
+    "Hornet",
+    "Lincoln",
     "Los Angeles",
+    "Nimitz",
+    "Reagan",
+    "Roosevelt",
     "San Diego",
     "San Jose",
     "San Juan",
-    "San Pedro"
+    "San Pedro",
+    "Stennis",
+    "Truman",
+    "Washington",
+    "Yorktown"
   ],
   "US Presidents": [
     "Adams",
@@ -21226,6 +21709,9 @@
   ],
   "USA": [
     "Captain America"
+  ],
+  "United States Lines": [
+    "United States"
   ],
   "Units of Measurement": [
     "Kilo"
@@ -21379,11 +21865,39 @@
     "Total War"
   ],
   "Warships": [
+    "Akagi",
     "Ark Royal",
+    "Bellerophon",
     "Bismarck",
+    "Bucentaure",
+    "Bush",
+    "Carl Vinson",
+    "Eisenhower",
     "Enterprise",
+    "Gneisenau",
+    "Hiryu",
     "Hood",
-    "Victory"
+    "Hornet",
+    "Kaga",
+    "Lincoln",
+    "Musashi",
+    "Nimitz",
+    "Prince of Wales",
+    "Reagan",
+    "Redoutable",
+    "Repulse",
+    "Roosevelt",
+    "Santissima Trinidad",
+    "Scharnhorst",
+    "Soryu",
+    "Stennis",
+    "Temeraire",
+    "Tirpitz",
+    "Truman",
+    "Victory",
+    "Washington",
+    "Yamato",
+    "Yorktown"
   ],
   "Watercraft": [
     "Canoe",
@@ -21429,6 +21943,8 @@
     "Unforgiven"
   ],
   "White Star Line": [
+    "Britannic",
+    "Olympic",
     "Titanic"
   ],
   "White Things": [
@@ -21478,15 +21994,31 @@
     "Stick"
   ],
   "World War I": [
+    "Britannic",
     "Hood",
     "Lusitania"
   ],
   "World War II": [
+    "Akagi",
     "Ark Royal",
     "Bismarck",
     "Enterprise",
+    "Gneisenau",
+    "Hiryu",
     "Hood",
-    "Queen Mary"
+    "Hornet",
+    "Kaga",
+    "Musashi",
+    "Normandie",
+    "Prince of Wales",
+    "Queen Elizabeth",
+    "Queen Mary",
+    "Repulse",
+    "Scharnhorst",
+    "Soryu",
+    "Tirpitz",
+    "Yamato",
+    "Yorktown"
   ],
   "Writers": [
     "Aristotle",
