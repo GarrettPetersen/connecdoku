@@ -233,6 +233,7 @@
     "The Jungle Book",
     "The Last Jedi",
     "The Lion King",
+    "The Little Prince",
     "The Lord of the Rings",
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Return of the King",
@@ -245,6 +246,7 @@
     "The Rescuers",
     "The Rescuers Down Under",
     "The Rise of Skywalker",
+    "The Secret Garden",
     "The Wizard of Oz",
     "Time Bandits",
     "Water Margin",
@@ -1486,7 +1488,10 @@
   "Coming of Age Stories": [
     "Anne of Green Gables",
     "Little Women",
-    "The Catcher in the Rye"
+    "The Catcher in the Rye",
+    "The Fault in Our Stars",
+    "The Hunger Games",
+    "Twilight"
   ],
   "Commonwealth Nations": [
     "Australia",
@@ -2243,9 +2248,12 @@
   "Crime Stories": [
     "Chicago",
     "Crime and Punishment",
+    "Gone Girl",
     "Pulp Fiction",
+    "The Girl with the Dragon Tattoo",
     "The Godfather",
-    "The Godfather Part II"
+    "The Godfather Part II",
+    "The Silence of the Lambs"
   ],
   "Criminals": [
     "Rogue"
@@ -2540,8 +2548,10 @@
     "Spotlight",
     "Tenet",
     "Terms of Endearment",
+    "The Alchemist",
     "The Artist",
     "The Butterfly Effect",
+    "The Catcher in the Rye",
     "The Color Purple",
     "The Deer Hunter",
     "The Departed",
@@ -2566,6 +2576,7 @@
     "The Last Emperor",
     "The Man in the High Castle",
     "The Phantom of the Opera",
+    "The Road",
     "The Shape of Water",
     "The Sixth Sense",
     "The Sound of Music",
@@ -7507,6 +7518,40 @@
     "Whisper of the Heart",
     "Yojimbo"
   ],
+  "Japanese Things": [
+    "Akira",
+    "Arrietty",
+    "Castle in the Sky",
+    "Dreams",
+    "From Up on Poppy Hill",
+    "Grave of the Fireflies",
+    "High and Low",
+    "Howl's Moving Castle",
+    "Ikiru",
+    "Kagemusha",
+    "Kiki's Delivery Service",
+    "My Neighbor Totoro",
+    "Only Yesterday",
+    "Pom Poko",
+    "Ponyo",
+    "Porco Rosso",
+    "Princess Mononoke",
+    "Ran",
+    "Rashomon",
+    "Red Beard",
+    "Sanjuro",
+    "Seven Samurai",
+    "Spirited Away",
+    "Tales from Earthsea",
+    "The Cat Returns",
+    "The Hidden Fortress",
+    "The Tale of the Princess Kaguya",
+    "The Wind Rises",
+    "Throne of Blood",
+    "When Marnie Was There",
+    "Whisper of the Heart",
+    "Yojimbo"
+  ],
   "K-pop": [
     "(G)I-DLE",
     "2PM",
@@ -11423,6 +11468,7 @@
     "Zeppelin"
   ],
   "Mystery Stories": [
+    "The Da Vinci Code",
     "The Secret Garden"
   ],
   "Mythical Creatures": [
@@ -13027,6 +13073,7 @@
     "The English Patient",
     "The Fault in Our Stars",
     "The Holiday",
+    "The Hunger Games",
     "The Lake House",
     "The Parent Trap",
     "The Shape of Water",
