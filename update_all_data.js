@@ -37,6 +37,28 @@ for (const [word, categories] of Object.entries(wordsData)) {
     wordsData[word] = newCategories.sort();
 }
 
+// Step 1.25: Remove duplicate categories within each word
+console.log('1.25. Removing duplicate categories within words...');
+let duplicateCategoriesRemoved = 0;
+
+for (const [word, categories] of Object.entries(wordsData)) {
+    // Remove duplicates while preserving order
+    const uniqueCategories = [];
+    const seen = new Set();
+    
+    for (const category of categories) {
+        if (!seen.has(category)) {
+            uniqueCategories.push(category);
+            seen.add(category);
+        } else {
+            duplicateCategoriesRemoved++;
+        }
+    }
+    
+    // Update the word's categories with deduplicated list
+    wordsData[word] = uniqueCategories.sort();
+}
+
 // Step 1.5: Handle duplicate words and merge their categories
 console.log('1.5. Handling duplicate words and merging categories...');
 const mergedWordsData = {};
@@ -193,6 +215,7 @@ fs.writeFileSync(path.join(__dirname, 'data', 'thin_categories.json'), JSON.stri
 
 console.log('All data files updated successfully!');
 console.log(`- Updated ${updatedCount} words with patterns`);
+console.log(`- Removed ${duplicateCategoriesRemoved} duplicate categories within words`);
 console.log(`- Found and merged ${duplicateWordsFound} duplicate words`);
 console.log(`- Generated ${Object.keys(finalCategories).length} categories`);
 console.log(`- Extracted ${sortedWords.length} words and ${sortedCategoriesList.length} categories`);
