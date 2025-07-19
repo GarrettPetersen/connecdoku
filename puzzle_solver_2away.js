@@ -1,39 +1,48 @@
 const fs = require('fs');
 const { execSync } = require('child_process');
 
+// Start timing the entire process
+const startTime = Date.now();
+let updateTime, loadTime, intersectionTime, twoAwayTime;
+
 // Step 1: Run update_all_data to ensure data is current
 console.log('Step 1: Updating all data files...');
+const updateStart = Date.now();
 try {
     execSync('node update_all_data.js', { stdio: 'inherit' });
-    console.log('Data files updated successfully!\n');
+    updateTime = Date.now() - updateStart;
+    console.log(`Data files updated successfully! (${updateTime}ms)\n`);
 } catch (error) {
     console.error('Error updating data files:', error.message);
     process.exit(1);
 }
 
 // Load data
+const loadStart = Date.now();
 const categories = JSON.parse(fs.readFileSync('data/categories.json', 'utf8'));
 const words = JSON.parse(fs.readFileSync('data/words.json', 'utf8'));
+loadTime = Date.now() - loadStart;
 
 // Get category names in consistent order
 const categoryNames = Object.keys(categories).sort();
 
-console.log(`Loaded ${categoryNames.length} categories and ${Object.keys(words).length} words`);
+console.log(`Loaded ${categoryNames.length} categories and ${Object.keys(words).length} words (${loadTime}ms)`);
 
-// Precompute overlap matrix
-console.log('Precomputing overlap matrix...');
-const overlapMatrix = [];
-const strictSubsetMap = new Map();
+// Step 1: Compute intersection matrix, excluding subsets and identical categories
+console.log('Step 1: Computing intersection matrix...');
+const intersectionStart = Date.now();
+const intersectionMatrix = [];
+const subsetMap = new Map(); // Maps category to set of categories it's a subset of
 
 for (let i = 0; i < categoryNames.length; i++) {
-    overlapMatrix[i] = [];
-    strictSubsetMap.set(categoryNames[i], new Set());
+    intersectionMatrix[i] = [];
+    subsetMap.set(categoryNames[i], new Set());
 }
 
 for (let i = 0; i < categoryNames.length; i++) {
     for (let j = 0; j < categoryNames.length; j++) {
         if (i === j) {
-            overlapMatrix[i][j] = 0; // Self-overlap not allowed
+            intersectionMatrix[i][j] = 0; // Self-intersection not allowed
             continue;
         }
 
@@ -42,78 +51,74 @@ for (let i = 0; i < categoryNames.length; i++) {
         const words1 = new Set(categories[cat1]);
         const words2 = new Set(categories[cat2]);
 
-        // Check for strict subset relationship
-        let isStrictSubset = false;
-        if (words1.size < words2.size) {
-            isStrictSubset = [...words1].every(word => words2.has(word));
-        } else if (words2.size < words1.size) {
-            isStrictSubset = [...words2].every(word => words1.has(word));
-        }
-
-        if (isStrictSubset) {
-            overlapMatrix[i][j] = 0;
-            strictSubsetMap.get(cat1).add(cat2);
-            strictSubsetMap.get(cat2).add(cat1);
+        // Check for subset relationship (including identical)
+        let isSubset = false;
+        if (words1.size <= words2.size) {
+            isSubset = [...words1].every(word => words2.has(word));
         } else {
-            // Check for overlap
+            isSubset = [...words2].every(word => words1.has(word));
+        }
+
+        if (isSubset) {
+            intersectionMatrix[i][j] = 0;
+            subsetMap.get(cat1).add(cat2);
+            subsetMap.get(cat2).add(cat1);
+        } else {
+            // Check for intersection
             const intersection = [...words1].filter(word => words2.has(word));
-            overlapMatrix[i][j] = intersection.length > 0 ? 1 : 0;
+            intersectionMatrix[i][j] = intersection.length > 0 ? 1 : 0;
         }
     }
 }
 
-console.log('Overlap matrix computed');
+intersectionTime = Date.now() - intersectionStart;
+console.log(`Intersection matrix computed (${intersectionTime}ms)`);
 
-// Function to find valid next categories (lexicographical - only forward)
-function findValidNextCategories(currentCategories, otherCategories, maxSize, minIndex = 0) {
-    const valid = [];
+// Step 2: Compute 2-away matrix by squaring the intersection matrix
+console.log('Step 2: Computing 2-away matrix...');
+const twoAwayStart = Date.now();
+const twoAwayMatrix = [];
 
-    for (let i = minIndex; i < categoryNames.length; i++) {
-        // Skip if already used
-        if (currentCategories.includes(i) || otherCategories.includes(i)) continue;
-
-        // Skip if would exceed max size
-        if (currentCategories.length >= maxSize) continue;
-
-        // Skip if this category is a strict subset of any existing category
-        const catName = categoryNames[i];
-        let isStrictSubset = false;
-        for (const existingCat of [...currentCategories, ...otherCategories]) {
-            const existingCatName = categoryNames[existingCat];
-            if (strictSubsetMap.get(catName).has(existingCatName)) {
-                isStrictSubset = true;
-                break;
-            }
-        }
-        if (isStrictSubset) continue;
-
-        // Check if this category overlaps with all categories in the other dimension
-        let isValid = true;
-        for (const existingCat of otherCategories) {
-            if (overlapMatrix[i][existingCat] === 0) {
-                isValid = false;
-                break;
-            }
+for (let i = 0; i < categoryNames.length; i++) {
+    twoAwayMatrix[i] = [];
+    for (let j = 0; j < categoryNames.length; j++) {
+        if (i === j) {
+            twoAwayMatrix[i][j] = 0; // Self-2-away not allowed
+            continue;
         }
 
-        if (isValid) {
-            // Test if adding this category would create a valid puzzle
-            const testCategories = [...currentCategories, i];
-            const testOtherCategories = [...otherCategories];
-
-            // Create test puzzle
-            const testRows = testCategories.map(idx => categoryNames[idx]);
-            const testCols = testOtherCategories.map(idx => categoryNames[idx]);
-
-            // Check if this would create a valid puzzle
-            if (isValidPuzzle(testRows, testCols)) {
-                valid.push(i);
-            }
+        // Square the intersection matrix: (A²)ᵢⱼ = Σₖ Aᵢₖ × Aₖⱼ
+        let sum = 0;
+        for (let k = 0; k < categoryNames.length; k++) {
+            sum += intersectionMatrix[i][k] * intersectionMatrix[k][j];
+        }
+        
+        // Zero out if either category is a subset of the other
+        const cat1 = categoryNames[i];
+        const cat2 = categoryNames[j];
+        if (subsetMap.get(cat1).has(cat2) || subsetMap.get(cat2).has(cat1)) {
+            twoAwayMatrix[i][j] = 0;
+        } else {
+            // For 4x4 puzzles, we need at least 4 paths between categories in the same dimension
+            // The sum represents the number of intermediate categories connecting cat1 to cat2
+            twoAwayMatrix[i][j] = sum >= 4 ? 1 : 0;
         }
     }
-
-    return valid;
 }
+
+twoAwayTime = Date.now() - twoAwayStart;
+console.log(`2-away matrix computed (${twoAwayTime}ms)`);
+
+// Count 2-away connections for analysis
+let twoAwayConnections = 0;
+for (let i = 0; i < categoryNames.length; i++) {
+    for (let j = 0; j < categoryNames.length; j++) {
+        if (twoAwayMatrix[i][j] === 1) {
+            twoAwayConnections++;
+        }
+    }
+}
+console.log(`Found ${twoAwayConnections} 2-away connections (with minimum 4 paths requirement)`);
 
 // Function to validate that a puzzle has unique solutions (each word fits exactly one cell)
 function isValidPuzzle(rows, cols) {
@@ -177,13 +182,29 @@ function solvePuzzle(rows, cols) {
     return solutions;
 }
 
-// Main search function using simple pointers
+// Function to check if two categories can be in the same dimension using 2-away matrix
+function canBeInSameDimension(cat1Index, cat2Index) {
+    return twoAwayMatrix[cat1Index][cat2Index] === 1;
+}
+
+// Function to check if a category can be added to existing categories in the other dimension
+function canAddToOtherDimension(catIndex, existingOtherCategories) {
+    for (const existingCat of existingOtherCategories) {
+        if (intersectionMatrix[catIndex][existingCat] === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Main search function using the new 2-away approach
 function findPuzzles() {
     const candidates = [];
     const maxRows = 4;
     const maxCols = 4;
 
-    console.log('Starting systematic search...');
+    console.log('Starting 2-away matrix search...');
+    const searchStart = Date.now();
 
     // Get terminal width for truncation
     const terminalWidth = process.stdout.columns || 80;
@@ -191,7 +212,7 @@ function findPuzzles() {
 
     // Try each category as the first row
     for (let firstRow = 0; firstRow < categoryNames.length; firstRow++) {
-        // Initialize state with simple pointers
+        // Initialize state
         let rows = [firstRow];
         let cols = [];
         let currentDimension = 'col'; // Start with column after first row
@@ -202,37 +223,108 @@ function findPuzzles() {
         while (true) {
             iterationsOnThisCategory++;
 
-            // Update progress display (two lines)
+            // Update progress display
             const currentCategories = [...rows.map(i => categoryNames[i]), ...cols.map(i => categoryNames[i])];
             const categoryString = currentCategories.join(', ');
 
-            // Calculate available space for categories (accounting for other display elements)
             const otherElements = `Candidates: ${candidates.length} | Categories:  | Dim: ${currentDimension} | Index: ${currentIndex} | Iter: ${iterationsOnThisCategory}`;
-            const availableSpace = process.stdout.columns - otherElements.length - 10; // 10 for safety margin
+            const availableSpace = process.stdout.columns - otherElements.length - 10;
 
             let truncatedCategories;
             if (categoryString.length <= availableSpace) {
                 truncatedCategories = categoryString;
             } else {
-                // Truncate more aggressively to ensure it fits
                 truncatedCategories = categoryString.substring(0, availableSpace - 3) + '...';
             }
 
             const progressPercent = ((firstRow + 1) / categoryNames.length * 100).toFixed(1);
             const progressBar = '█'.repeat(Math.floor(progressPercent / 2)) + '░'.repeat(50 - Math.floor(progressPercent / 2));
 
-            // Clear both lines and write new content
-            process.stdout.write('\r\x1b[K'); // Clear current line
-            process.stdout.write('\x1b[1A\x1b[K'); // Move up and clear previous line
+            process.stdout.write('\r\x1b[K');
+            process.stdout.write('\x1b[1A\x1b[K');
             process.stdout.write(`Progress: [${progressBar}] ${progressPercent}% (${firstRow + 1}/${categoryNames.length})\n`);
             process.stdout.write(`Candidates: ${candidates.length} | Categories: ${truncatedCategories} | Dim: ${currentDimension} | Index: ${currentIndex} | Iter: ${iterationsOnThisCategory}`);
 
             // If we haven't computed valid options for this state yet
             if (validOptions.length === 0) {
                 if (currentDimension === 'col') {
-                    validOptions = findValidNextCategories(cols, rows, maxCols, currentIndex);
+                    // Looking for columns - need 2-away with existing columns and 1-away with existing rows
+                    validOptions = [];
+                    for (let i = 0; i < categoryNames.length; i++) {
+                        if (rows.includes(i) || cols.includes(i)) continue;
+                        if (cols.length >= maxCols) continue;
+                        
+                        // Skip if this category is a subset of any existing category
+                        const catName = categoryNames[i];
+                        let isSubset = false;
+                        for (const existingCat of [...rows, ...cols]) {
+                            const existingCatName = categoryNames[existingCat];
+                            if (subsetMap.get(catName).has(existingCatName)) {
+                                isSubset = true;
+                                break;
+                            }
+                        }
+                        if (isSubset) continue;
+
+                        let isValid = true;
+                        
+                        // Check 2-away with existing columns (same dimension)
+                        for (const existingCol of cols) {
+                            if (!canBeInSameDimension(i, existingCol)) {
+                                isValid = false;
+                                break;
+                            }
+                        }
+                        
+                        // Check 1-away with existing rows (different dimension)
+                        if (isValid && !canAddToOtherDimension(i, rows)) {
+                            isValid = false;
+                        }
+                        
+                        if (isValid) {
+                            validOptions.push(i);
+                        }
+                    }
                 } else {
-                    validOptions = findValidNextCategories(rows, cols, maxRows, currentIndex);
+                    // Looking for rows - use 2-away matrix if we have columns, 1-away if we don't
+                    validOptions = [];
+                    for (let i = 0; i < categoryNames.length; i++) {
+                        if (rows.includes(i) || cols.includes(i)) continue;
+                        if (rows.length >= maxRows) continue;
+                        
+                        // Skip if this category is a subset of any existing category
+                        const catName = categoryNames[i];
+                        let isSubset = false;
+                        for (const existingCat of [...rows, ...cols]) {
+                            const existingCatName = categoryNames[existingCat];
+                            if (subsetMap.get(catName).has(existingCatName)) {
+                                isSubset = true;
+                                break;
+                            }
+                        }
+                        if (isSubset) continue;
+
+                        let isValid = true;
+                        
+                        if (cols.length === 0) {
+                            // No columns yet - use 2-away matrix to check if this row can be added
+                            for (const existingRow of rows) {
+                                if (!canBeInSameDimension(i, existingRow)) {
+                                    isValid = false;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // We have columns - use 1-away matrix to check if this row can be added
+                            if (!canAddToOtherDimension(i, cols)) {
+                                isValid = false;
+                            }
+                        }
+                        
+                        if (isValid) {
+                            validOptions.push(i);
+                        }
+                    }
                 }
             }
 
@@ -299,12 +391,10 @@ function findPuzzles() {
                 }
                 validOptions = [];
 
-                // Safety check: if we've tried too many options without progress, move to next category
+                // Safety checks
                 if (currentIndex > categoryNames.length) {
                     break;
                 }
-
-                // Additional safety: if we're stuck in a loop, force move to next category
                 if (iterationsOnThisCategory > 1000) {
                     break;
                 }
@@ -313,8 +403,9 @@ function findPuzzles() {
     }
 
     // Clear the progress lines
-    process.stdout.write('\r\x1b[K\n\x1b[K'); // Clear both lines
-    console.log(`Found ${candidates.length} candidate puzzles`);
+    process.stdout.write('\r\x1b[K\n\x1b[K');
+    const searchTime = Date.now() - searchStart;
+    console.log(`Found ${candidates.length} candidate puzzles (${searchTime}ms)`);
 
     // Solve each candidate and categorize by size
     const solvedPuzzles = {
@@ -327,6 +418,7 @@ function findPuzzles() {
     };
 
     let solvedCount = 0;
+    const solveStart = Date.now();
     for (const candidate of candidates) {
         const solutions = solvePuzzle(candidate.rows, candidate.cols);
 
@@ -360,19 +452,28 @@ function findPuzzles() {
             console.log(`Solved ${solvedCount}/${candidates.length} candidates`);
         }
     }
+    const solveTime = Date.now() - solveStart;
 
     // Save results to separate files
     for (const [size, puzzles] of Object.entries(solvedPuzzles)) {
         if (puzzles.length > 0) {
-            // Clear the file first, then write new contents
             fs.writeFileSync(`puzzles_${size}.json`, '');
             fs.writeFileSync(`puzzles_${size}.json`, JSON.stringify(puzzles, null, 2));
             console.log(`Saved ${puzzles.length} ${size} puzzles to puzzles_${size}.json`);
         }
     }
 
-    // Print summary
-    console.log('\nSummary:');
+    // Print summary with timing
+    const totalTime = Date.now() - startTime;
+    console.log('\n=== TIMING SUMMARY ===');
+    console.log(`Data update: ${updateTime}ms`);
+    console.log(`Data loading: ${loadTime}ms`);
+    console.log(`Intersection matrix: ${intersectionTime}ms`);
+    console.log(`2-away matrix: ${twoAwayTime}ms`);
+    console.log(`Search phase: ${searchTime}ms`);
+    console.log(`Solve phase: ${solveTime}ms`);
+    console.log(`Total time: ${totalTime}ms`);
+    console.log('\n=== RESULTS SUMMARY ===');
     for (const [size, puzzles] of Object.entries(solvedPuzzles)) {
         console.log(`${size}: ${puzzles.length} puzzles`);
     }

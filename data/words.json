@@ -3863,6 +3863,7 @@
   ],
   "Jordan": [
     "Athletes",
+    "Basketball Players",
     "Countries",
     "Countries in Asia",
     "Ends with DAN",
@@ -4375,6 +4376,8 @@
     "Storage"
   ],
   "James": [
+    "Athletes",
+    "Basketball Players",
     "Ends with MES",
     "James Bond Characters",
     "Male Names",
@@ -5265,6 +5268,7 @@
   ],
   "Curry": [
     "Athletes",
+    "Basketball Players",
     "Ends with RRY",
     "Foods",
     "Male Names",
@@ -5278,6 +5282,7 @@
   ],
   "Kobe": [
     "Athletes",
+    "Basketball Players",
     "Ends with OBE",
     "Male Names",
     "NBA Players",
@@ -5604,7 +5609,8 @@
     "NATO Phonetic Alphabet",
     "Sports",
     "Sports Equipment",
-    "Starts with GOL"
+    "Starts with GOL",
+    "Things British"
   ],
   "Football": [
     "Ends with ALL",
@@ -18218,5 +18224,473 @@
     "Ends with RUP",
     "Starts with MAP",
     "Things Canadian"
+  ],
+  "Poutine": [
+    "Ends with INE",
+    "Foods",
+    "Starts with POU",
+    "Things Canadian"
+  ],
+  "Nanaimo Bar": [
+    "Desserts",
+    "Ends with BAR",
+    "Foods",
+    "Starts with NAN",
+    "Things Canadian"
+  ],
+  "Tourtiere": [
+    "Ends with ERE",
+    "Foods",
+    "Starts with TOU",
+    "Things Canadian"
+  ],
+  "Butter Tart": [
+    "Desserts",
+    "Ends with ART",
+    "Foods",
+    "Starts with BUT",
+    "Things Canadian"
+  ],
+  "Beaver Tail": [
+    "Desserts",
+    "Ends with AIL",
+    "Foods",
+    "Starts with BEA",
+    "Things Canadian"
+  ],
+  "Montreal Bagel": [
+    "Breads",
+    "Ends with GEL",
+    "Foods",
+    "Starts with MON",
+    "Things Canadian",
+    "Things Jewish"
+  ],
+  "Montreal Smoked Meat": [
+    "Ends with EAT",
+    "Foods",
+    "Starts with MON",
+    "Things Canadian"
+  ],
+  "Pouding Chomeur": [
+    "Desserts",
+    "Ends with EUR",
+    "Foods",
+    "Starts with POU",
+    "Things Canadian"
+  ],
+  "Tarte au Sucre": [
+    "Desserts",
+    "Ends with CRE",
+    "Foods",
+    "Starts with TAR",
+    "Things Canadian"
+  ],
+  "Split Pea Soup": [
+    "Ends with OUP",
+    "Foods",
+    "Starts with SPL",
+    "Things Canadian"
+  ],
+  "Bannock": [
+    "Breads",
+    "Ends with OCK",
+    "Foods",
+    "Starts with BAN",
+    "Things Canadian"
+  ],
+  "Kraft Dinner": [
+    "Ends with NER",
+    "Foods",
+    "Starts with KRA",
+    "Things Canadian"
+  ],
+  "Smarties": [
+    "Candy",
+    "Ends with IES",
+    "Foods",
+    "Starts with SMA",
+    "Things Canadian"
+  ],
+  "Coffee Crisp": [
+    "Candy",
+    "Ends with ISP",
+    "Foods",
+    "Starts with COF",
+    "Things Canadian"
+  ],
+  "Ketchup Chips": [
+    "Ends with IPS",
+    "Foods",
+    "Starts with KET",
+    "Things Canadian"
+  ],
+  "All Dressed Chips": [
+    "Ends with IPS",
+    "Foods",
+    "Starts with ALL",
+    "Things Canadian"
+  ],
+  "Hawaiian Pizza": [
+    "Ends with ZZA",
+    "Foods",
+    "Starts with HAW",
+    "Things Canadian"
+  ],
+  "Caesar Cocktail": [
+    "Drinks",
+    "Ends with AIL",
+    "Starts with CAE",
+    "Things Canadian"
+  ],
+  "New York Bagel": [
+    "Breads",
+    "Ends with GEL",
+    "Foods",
+    "Starts with NEW",
+    "Things American",
+    "Things Jewish"
+  ],
+  "Baseball": [
+    "Ball Sports",
+    "Ends with ALL",
+    "Sports",
+    "Starts with BAS",
+    "Things American"
+  ],
+  "Basketball": [
+    "Ball Sports",
+    "Ends with ALL",
+    "Sports",
+    "Starts with BAS",
+    "Things American"
+  ],
+  "American Football": [
+    "Ends with ALL",
+    "Sports",
+    "Starts with AME",
+    "Things American"
+  ],
+  "Hockey": [
+    "Ends with KEY",
+    "Sports",
+    "Starts with HOC",
+    "Things Canadian"
+  ],
+  "Lacrosse": [
+    "Ends with SSE",
+    "Sports",
+    "Starts with LAC",
+    "Things Canadian"
+  ],
+  "Cricket": [
+    "Ball Sports",
+    "Ends with KET",
+    "Sports",
+    "Starts with CRI",
+    "Things British"
+  ],
+  "Rugby": [
+    "Ball Sports",
+    "Ends with GBY",
+    "Sports",
+    "Starts with RUG",
+    "Things British"
+  ],
+  "Tennis": [
+    "Ball Sports",
+    "Ends with NIS",
+    "Sports",
+    "Starts with TEN",
+    "Things British"
+  ],
+  "Boxing": [
+    "Combat Sports",
+    "Ends with ING",
+    "Sports",
+    "Starts with BOX",
+    "Things British"
+  ],
+  "Soccer": [
+    "Ball Sports",
+    "Ends with CER",
+    "Sports",
+    "Starts with SOC",
+    "Things British"
+  ],
+  "Formula One": [
+    "Ends with ONE",
+    "Racing Sports",
+    "Sports",
+    "Starts with FOR",
+    "Things British"
+  ],
+  "Cycling": [
+    "Ends with ING",
+    "Racing Sports",
+    "Sports",
+    "Starts with CYC",
+    "Things French"
+  ],
+  "Fencing": [
+    "Combat Sports",
+    "Ends with ING",
+    "Sports",
+    "Starts with FEN",
+    "Things French"
+  ],
+  "Skiing": [
+    "Ends with ING",
+    "Sports",
+    "Starts with SKI",
+    "Things Austrian",
+    "Winter Olympic Sports"
+  ],
+  "Sledding": [
+    "Ends with ING",
+    "Sports",
+    "Starts with SLE",
+    "Things Austrian",
+    "Winter Olympic Sports"
+  ],
+  "Sumo": [
+    "Combat Sports",
+    "Ends with UMO",
+    "Sports",
+    "Starts with SUM",
+    "Things Japanese"
+  ],
+  "Karate": [
+    "Combat Sports",
+    "Ends with ATE",
+    "Sports",
+    "Starts with KAR",
+    "Things Japanese"
+  ],
+  "Judo": [
+    "Combat Sports",
+    "Ends with UDO",
+    "Sports",
+    "Starts with JUD",
+    "Things Japanese"
+  ],
+  "Table Tennis": [
+    "Ball Sports",
+    "Ends with NIS",
+    "Sports",
+    "Starts with TAB",
+    "Things Chinese"
+  ],
+  "Badminton": [
+    "Ball Sports",
+    "Ends with TON",
+    "Sports",
+    "Starts with BAD",
+    "Things Chinese"
+  ],
+  "Swimming": [
+    "Ends with ING",
+    "Sports",
+    "Starts with SWI",
+    "Summer Olympic Sports",
+    "Things American"
+  ],
+  "Track and Field": [
+    "Ends with ELD",
+    "Sports",
+    "Starts with TRA",
+    "Summer Olympic Sports",
+    "Things American"
+  ],
+  "Gymnastics": [
+    "Ends with ICS",
+    "Sports",
+    "Starts with GYM",
+    "Summer Olympic Sports",
+    "Things American"
+  ],
+  "Volleyball": [
+    "Ball Sports",
+    "Ends with ALL",
+    "Sports",
+    "Starts with VOL",
+    "Summer Olympic Sports",
+    "Things American"
+  ],
+  "Beach Volleyball": [
+    "Ball Sports",
+    "Ends with ALL",
+    "Sports",
+    "Starts with BEA",
+    "Summer Olympic Sports",
+    "Things American"
+  ],
+  "Diving": [
+    "Ends with ING",
+    "Sports",
+    "Starts with DIV",
+    "Summer Olympic Sports",
+    "Things American"
+  ],
+  "Water Polo": [
+    "Ball Sports",
+    "Ends with OLO",
+    "Sports",
+    "Starts with WAT",
+    "Summer Olympic Sports",
+    "Things American"
+  ],
+  "Rowing": [
+    "Ends with ING",
+    "Sports",
+    "Starts with ROW",
+    "Summer Olympic Sports",
+    "Things British"
+  ],
+  "Sailing": [
+    "Ends with ING",
+    "Sports",
+    "Starts with SAI",
+    "Summer Olympic Sports",
+    "Things British"
+  ],
+  "Archery": [
+    "Ends with ERY",
+    "Sports",
+    "Starts with ARC",
+    "Summer Olympic Sports",
+    "Things British"
+  ],
+  "Weightlifting": [
+    "Ends with ING",
+    "Sports",
+    "Starts with WEI",
+    "Summer Olympic Sports",
+    "Things American"
+  ],
+  "Wrestling": [
+    "Combat Sports",
+    "Ends with ING",
+    "Sports",
+    "Starts with WRE",
+    "Summer Olympic Sports",
+    "Things American"
+  ],
+  "Taekwondo": [
+    "Combat Sports",
+    "Ends with NDO",
+    "Sports",
+    "Starts with TAE",
+    "Summer Olympic Sports",
+    "Things Korean"
+  ],
+  "Ice Hockey": [
+    "Ends with KEY",
+    "Sports",
+    "Starts with ICE",
+    "Things Canadian",
+    "Winter Olympic Sports"
+  ],
+  "Figure Skating": [
+    "Ends with ING",
+    "Sports",
+    "Starts with FIG",
+    "Things American",
+    "Winter Olympic Sports"
+  ],
+  "Speed Skating": [
+    "Ends with ING",
+    "Sports",
+    "Starts with SPE",
+    "Things Dutch",
+    "Winter Olympic Sports"
+  ],
+  "Curling": [
+    "Ends with ING",
+    "Sports",
+    "Starts with CUR",
+    "Things Canadian",
+    "Winter Olympic Sports"
+  ],
+  "Bobsled": [
+    "Ends with LED",
+    "Sports",
+    "Starts with BOB",
+    "Things Swiss",
+    "Winter Olympic Sports"
+  ],
+  "Luge": [
+    "Ends with UGE",
+    "Sports",
+    "Starts with LUG",
+    "Things German",
+    "Winter Olympic Sports"
+  ],
+  "Biathlon": [
+    "Ends with LON",
+    "Sports",
+    "Starts with BIA",
+    "Things Norwegian",
+    "Winter Olympic Sports"
+  ],
+  "Cross Country Skiing": [
+    "Ends with ING",
+    "Sports",
+    "Starts with CRO",
+    "Things Norwegian",
+    "Winter Olympic Sports"
+  ],
+  "Ping Pong": [
+    "Ball Sports",
+    "Ends with ONG",
+    "Sports",
+    "Starts with PIN",
+    "Things Chinese"
+  ],
+  "Polo": [
+    "Ends with OLO",
+    "Sports",
+    "Starts with POL",
+    "Things British"
+  ],
+  "Horse Racing": [
+    "Ends with ING",
+    "Racing Sports",
+    "Sports",
+    "Starts with HOR",
+    "Things British"
+  ],
+  "Auto Racing": [
+    "Ends with ING",
+    "Racing Sports",
+    "Sports",
+    "Starts with AUT",
+    "Things American"
+  ],
+  "Motocross": [
+    "Ends with OSS",
+    "Racing Sports",
+    "Sports",
+    "Starts with MOT",
+    "Things American"
+  ],
+  "Surfing": [
+    "Ends with ING",
+    "Sports",
+    "Starts with SUR",
+    "Things American"
+  ],
+  "Rock Climbing": [
+    "Ends with ING",
+    "Sports",
+    "Starts with ROC",
+    "Things American"
+  ],
+  "Ultimate Frisbee": [
+    "Ball Sports",
+    "Ends with BEE",
+    "Sports",
+    "Starts with ULT",
+    "Things American"
   ]
 }

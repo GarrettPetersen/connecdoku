@@ -57,14 +57,98 @@
   },
   {
     "rows": [
+      "Ends with GHT",
+      "Action Stories",
+      "Cities",
+      "Ends with AND"
+    ],
+    "cols": [
+      "Best Picture Winners",
+      "Books",
+      "Movies"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Moonlight",
+      "Twilight",
+      "The Hateful Eight",
+      "Braveheart",
+      "All You Need Is Kill",
+      "A Good Day to Die Hard",
+      "Chicago",
+      "Salem",
+      "Pompeii",
+      "Nomadland",
+      "Alice's Adventures in Wonderland",
+      "Alice in Wonderland"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with MAN",
+      "Countries",
+      "Drinks",
+      "Ends with ARD"
+    ],
+    "cols": [
+      "Archipelagos",
+      "Foods",
+      "Islands"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Andaman",
+      "Massaman",
+      "Isle of Man",
+      "Bahamas",
+      "Turkey",
+      "Antigua and Barbuda",
+      "Madeira",
+      "Milk",
+      "Java",
+      "Svalbard",
+      "Mustard",
+      "Martha's Vineyard"
+    ]
+  },
+  {
+    "rows": [
+      "Ends with MER",
+      "Action Stories",
+      "Cities",
+      "Ends with AND"
+    ],
+    "cols": [
+      "Best Picture Winners",
+      "Books",
+      "Movies"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Kramer vs. Kramer",
+      "The Door into Summer",
+      "Primer",
+      "Braveheart",
+      "All You Need Is Kill",
+      "A Good Day to Die Hard",
+      "Chicago",
+      "Salem",
+      "Pompeii",
+      "Nomadland",
+      "Alice's Adventures in Wonderland",
+      "Alice in Wonderland"
+    ]
+  },
+  {
+    "rows": [
       "Ends with RED",
-      "Adventure Films",
+      "Adventure Stories",
       "Blockbusters",
       "Starts with BRA"
     ],
     "cols": [
       "3D Animated Films",
-      "Action Films",
+      "Action Stories",
       "Books"
     ],
     "size": "4x3",
@@ -74,41 +158,13 @@
       "Kindred",
       "Frozen",
       "Avatar",
-      "Peter Pan",
+      "Don Quixote",
       "Toy Story",
       "Die Hard",
       "Harry Potter and the Chamber of Secrets",
       "Brave",
       "Braveheart",
       "Brave New World"
-    ]
-  },
-  {
-    "rows": [
-      "Former French Colonies",
-      "Countries in Asia",
-      "Locations in North America",
-      "Starts with SAM"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with AND",
-      "People"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "New Hebrides",
-      "French Somaliland",
-      "Chad",
-      "British Malaya",
-      "Thailand",
-      "Jordan",
-      "Bahamas",
-      "Long Island",
-      "Bismarck",
-      "Samoa",
-      "Samarkand",
-      "Sam"
     ]
   },
   {
@@ -221,6 +277,34 @@
       "British Guiana",
       "Venezuela",
       "Brasilia"
+    ]
+  },
+  {
+    "rows": [
+      "Movies featuring Hugh Jackman",
+      "Blockbusters",
+      "Comedy Stories",
+      "Disney"
+    ],
+    "cols": [
+      "3D Animated Films",
+      "Action Stories",
+      "Books"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Rise of the Guardians",
+      "X-Men: Days of Future Past",
+      "Les Misérables",
+      "Toy Story",
+      "Die Hard",
+      "Harry Potter and the Chamber of Secrets",
+      "The Grinch",
+      "Everything Everywhere All at Once",
+      "Don Quixote",
+      "Big Hero 6",
+      "Pirates of the Caribbean: At World's End",
+      "Peter Pan"
     ]
   },
   {
@@ -393,2786 +477,1750 @@
   },
   {
     "rows": [
-      "Starts with AND",
-      "Former British Colonies",
-      "Large Countries",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
+      "2D Animated Films",
+      "Movies featuring Alan Rickman",
+      "Classic Literature",
+      "Movies featuring Keanu Reeves"
     ],
     "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
+      "Sci-fi Stories",
+      "Adventure Stories",
+      "Romance Stories"
     ],
     "size": "4x3",
     "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with AND",
-      "Large Countries",
-      "Former British Colonies",
-      "WWII Allied Powers"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with RIA",
-      "Landlocked Countries"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Andaman",
-      "Andrea Doria",
-      "Andorra",
-      "Indonesia",
-      "Algeria",
-      "Chad",
-      "Bahamas",
-      "Nigeria",
-      "Botswana",
-      "Philippines",
-      "Liberia",
-      "Bolivia"
+      "Akira",
+      "Galaxy Quest",
+      "1984",
+      "The Matrix",
+      "Aladdin",
+      "Robin Hood: Prince of Thieves",
+      "Don Quixote",
+      "Bill & Ted's Bogus Journey",
+      "Lady and the Tramp",
+      "Love Actually",
+      "Jane Eyre",
+      "The Lake House"
     ]
   },
   {
     "rows": [
       "Starts with BRA",
-      "Adventure Films",
+      "Adventure Stories",
       "Blockbusters",
       "Ends with RED"
     ],
     "cols": [
       "3D Animated Films",
-      "Action Films",
+      "Action Stories",
       "Books"
     ],
     "size": "4x3",
@@ -3182,7 +2230,7 @@
       "Brave New World",
       "Frozen",
       "Avatar",
-      "Peter Pan",
+      "Don Quixote",
       "Toy Story",
       "Die Hard",
       "Harry Potter and the Chamber of Secrets",
@@ -3193,86 +2241,86 @@
   },
   {
     "rows": [
-      "Starts with DRA",
-      "Ends with ILL",
-      "Ends with TLE",
-      "Starts with PRI"
+      "Starts with MAR",
+      "Countries in Asia",
+      "Drinks",
+      "Ends with BAR"
     ],
     "cols": [
-      "Anime",
-      "Books",
-      "People"
+      "Archipelagos",
+      "Foods",
+      "Islands"
     ],
     "size": "4x3",
     "solutions": [
-      "Dragon Ball",
-      "Dracula",
-      "Drake",
-      "From Up on Poppy Hill",
-      "All You Need Is Kill",
-      "Winston Churchill",
-      "Howl's Moving Castle",
-      "The Man in the High Castle",
-      "Aristotle",
-      "Princess Mononoke",
-      "Pride and Prejudice",
-      "Prince"
+      "Marshall Islands",
+      "Marinara",
+      "Martha's Vineyard",
+      "British Malaya",
+      "Turkey",
+      "Palau",
+      "Madeira",
+      "Milk",
+      "Java",
+      "Nicobar",
+      "Nanaimo Bar",
+      "Zanzibar"
     ]
   },
   {
     "rows": [
-      "Starts with QUE",
-      "Airships",
-      "Birds",
-      "Ends with TLE"
+      "Starts with MAR",
+      "Countries in Asia",
+      "Drinks",
+      "Ends with BAR"
     ],
     "cols": [
-      "Band Namesakes",
-      "People",
-      "Place Names"
+      "Archipelagos",
+      "Foods",
+      "Islands"
     ],
     "size": "4x3",
     "solutions": [
-      "Queen",
-      "Queen Mary",
-      "Quebec",
-      "Zeppelin",
-      "Graf Zeppelin",
-      "Akron",
-      "Crow",
-      "Drake",
+      "Marshall Islands",
+      "Marinara",
+      "Martha's Vineyard",
+      "British Malaya",
+      "Turkey",
+      "Palau",
+      "Madeira",
+      "Milk",
+      "Java",
+      "Nicobar",
+      "Nanaimo Bar",
+      "Zanzibar"
+    ]
+  },
+  {
+    "rows": [
+      "Black and White",
+      "Cities in North America",
+      "Countries",
+      "People"
+    ],
+    "cols": [
+      "Starts with SAN",
+      "Starts with NEW",
+      "Birds"
+    ],
+    "size": "4x3",
+    "solutions": [
+      "Sanjuro",
+      "San Diego",
+      "San Marino",
+      "Santa Maria",
+      "Newspaper",
+      "New York",
+      "New Hebrides",
+      "Newton",
+      "Magpie",
       "Phoenix",
-      "Beetle",
-      "Aristotle",
-      "Seattle"
-    ]
-  },
-  {
-    "rows": [
-      "Things Italian",
-      "Airships",
-      "Starts with HER",
-      "Trojan War"
-    ],
-    "cols": [
-      "Ancient Cities",
-      "Ends with LES",
-      "People"
-    ],
-    "size": "4x3",
-    "solutions": [
-      "Pompeii",
-      "Naples",
-      "Caesar",
-      "Roma",
-      "Los Angeles",
-      "Graf Zeppelin",
-      "Herculaneum",
-      "Hercules",
-      "Hermes",
-      "Paris",
-      "Achilles",
-      "Helen"
+      "Turkey",
+      "Drake"
     ]
   },
   {

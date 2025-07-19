@@ -435,6 +435,7 @@
   "Athletes": [
     "Cobb",
     "Curry",
+    "James",
     "Jordan",
     "Kobe",
     "Mantle",
@@ -469,6 +470,21 @@
     "Pie",
     "Tart"
   ],
+  "Ball Sports": [
+    "Badminton",
+    "Baseball",
+    "Basketball",
+    "Beach Volleyball",
+    "Cricket",
+    "Ping Pong",
+    "Rugby",
+    "Soccer",
+    "Table Tennis",
+    "Tennis",
+    "Ultimate Frisbee",
+    "Volleyball",
+    "Water Polo"
+  ],
   "Band Namesakes": [
     "Animal",
     "Beatles",
@@ -479,6 +495,12 @@
     "Queen",
     "Scorpion",
     "Zeppelin"
+  ],
+  "Basketball Players": [
+    "Curry",
+    "James",
+    "Jordan",
+    "Kobe"
   ],
   "Battlestar Galactica": [
     "Apollo",
@@ -860,6 +882,7 @@
     "Arepa",
     "Bagel",
     "Baguette",
+    "Bannock",
     "Bao",
     "Brezel",
     "Brioche",
@@ -867,7 +890,9 @@
     "Ciabatta",
     "Croissant",
     "Focaccia",
+    "Montreal Bagel",
     "Naan",
+    "New York Bagel",
     "Pao de Queijo",
     "Pita",
     "Pizza",
@@ -943,6 +968,10 @@
     "Olympus",
     "Red",
     "Sony"
+  ],
+  "Candy": [
+    "Coffee Crisp",
+    "Smarties"
   ],
   "Car Brands": [
     "Buick",
@@ -1447,6 +1476,15 @@
     "Teal",
     "Violet",
     "Yellow"
+  ],
+  "Combat Sports": [
+    "Boxing",
+    "Fencing",
+    "Judo",
+    "Karate",
+    "Sumo",
+    "Taekwondo",
+    "Wrestling"
   ],
   "Comedians": [
     "Joker",
@@ -2350,10 +2388,12 @@
     "Apfelstrudel",
     "Apple Pie",
     "Baklava",
+    "Beaver Tail",
     "Bingsu",
     "Black Forest Cake",
     "Brigadeiro",
     "Brownie",
+    "Butter Tart",
     "Cake",
     "Cannoli",
     "Che",
@@ -2380,10 +2420,12 @@
     "Medovik",
     "Mochi",
     "Mooncake",
+    "Nanaimo Bar",
     "Paczki",
     "Panna Cotta",
     "Pastel de Nata",
     "Pie",
+    "Pouding Chomeur",
     "Profiterole",
     "Rugelach",
     "Scones",
@@ -2391,6 +2433,7 @@
     "Sundae",
     "Taiyaki",
     "Tart",
+    "Tarte au Sucre",
     "Tiramisu",
     "Tres Leches",
     "Trifle"
@@ -2684,6 +2727,7 @@
     "Burgundy",
     "CHA",
     "Cachaça",
+    "Caesar Cocktail",
     "Chai",
     "Champagne",
     "Chianti",
@@ -2959,6 +3003,10 @@
   "Ends with AII": [
     "Hawaii"
   ],
+  "Ends with AIL": [
+    "Beaver Tail",
+    "Caesar Cocktail"
+  ],
   "Ends with AIN": [
     "Bahrain",
     "Rain",
@@ -3019,10 +3067,15 @@
     "Mali"
   ],
   "Ends with ALL": [
+    "American Football",
     "Ball",
+    "Baseball",
+    "Basketball",
+    "Beach Volleyball",
     "Dragon Ball",
     "Football",
-    "Matzo Ball"
+    "Matzo Ball",
+    "Volleyball"
   ],
   "Ends with ALO": [
     "Buffalo",
@@ -3216,6 +3269,7 @@
   ],
   "Ends with ART": [
     "Braveheart",
+    "Butter Tart",
     "Mozart",
     "Tart",
     "Whisper of the Heart"
@@ -3266,6 +3320,7 @@
   ],
   "Ends with ATE": [
     "Hot Chocolate",
+    "Karate",
     "Mate",
     "Skate",
     "Stargate",
@@ -3377,6 +3432,7 @@
     "Bibimbap"
   ],
   "Ends with BAR": [
+    "Nanaimo Bar",
     "Nicobar",
     "Zanzibar"
   ],
@@ -3396,7 +3452,8 @@
     "Bed"
   ],
   "Ends with BEE": [
-    "Bee"
+    "Bee",
+    "Ultimate Frisbee"
   ],
   "Ends with BEL": [
     "Annabel"
@@ -3509,7 +3566,8 @@
     "Prosecco"
   ],
   "Ends with CER": [
-    "Cancer"
+    "Cancer",
+    "Soccer"
   ],
   "Ends with CES": [
     "Pisces"
@@ -3571,6 +3629,9 @@
   ],
   "Ends with COW": [
     "Cow"
+  ],
+  "Ends with CRE": [
+    "Tarte au Sucre"
   ],
   "Ends with CRO": [
     "Locro"
@@ -3754,7 +3815,8 @@
   ],
   "Ends with EAT": [
     "Beat",
-    "Heat"
+    "Heat",
+    "Montreal Smoked Meat"
   ],
   "Ends with EAU": [
     "Juneau"
@@ -3861,7 +3923,8 @@
   "Ends with ELD": [
     "Battlefield",
     "Shield",
-    "Springfield"
+    "Springfield",
+    "Track and Field"
   ],
   "Ends with ELF": [
     "Elf"
@@ -3941,6 +4004,7 @@
   ],
   "Ends with ERE": [
     "Ellesmere",
+    "Tourtiere",
     "When Marnie Was There"
   ],
   "Ends with ERG": [
@@ -3970,6 +4034,7 @@
     "Peru"
   ],
   "Ends with ERY": [
+    "Archery",
     "Battery",
     "Montgomery"
   ],
@@ -4037,7 +4102,8 @@
     "Herculaneum"
   ],
   "Ends with EUR": [
-    "Croque Monsieur"
+    "Croque Monsieur",
+    "Pouding Chomeur"
   ],
   "Ends with EUS": [
     "Amadeus",
@@ -4112,6 +4178,9 @@
   "Ends with GAN": [
     "Michigan"
   ],
+  "Ends with GBY": [
+    "Rugby"
+  ],
   "Ends with GE!": [
     "Moulin Rouge!"
   ],
@@ -4124,7 +4193,9 @@
   "Ends with GEL": [
     "Angel",
     "Bagel",
-    "Kugel"
+    "Kugel",
+    "Montreal Bagel",
+    "New York Bagel"
   ],
   "Ends with GEN": [
     "Halogen",
@@ -4378,6 +4449,9 @@
     "Mexico",
     "Serpico"
   ],
+  "Ends with ICS": [
+    "Gymnastics"
+  ],
   "Ends with ICT": [
     "Benedict"
   ],
@@ -4401,7 +4475,8 @@
     "Aries",
     "Batteries",
     "Grave of the Fireflies",
-    "Netherlands East Indies"
+    "Netherlands East Indies",
+    "Smarties"
   ],
   "Ends with IET": [
     "Juliet"
@@ -4510,6 +4585,7 @@
     "Magazine",
     "Palpatine",
     "Pine",
+    "Poutine",
     "Red Wine",
     "Rhine",
     "Seine",
@@ -4521,20 +4597,39 @@
     "Wolverine"
   ],
   "Ends with ING": [
+    "Auto Racing",
     "Beijing",
+    "Boxing",
+    "Cross Country Skiing",
+    "Curling",
+    "Cycling",
+    "Diving",
     "Dumpling",
+    "Fencing",
+    "Figure Skating",
     "Gong Bao Ji Ding",
     "Hawking",
+    "Horse Racing",
     "King",
     "Lansing",
     "Ming",
     "Nothing",
+    "Rock Climbing",
+    "Rowing",
+    "Sailing",
+    "Skiing",
+    "Sledding",
+    "Speed Skating",
     "Sticky Toffee Pudding",
+    "Surfing",
+    "Swimming",
     "The Lion King",
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Return of the King",
     "The Shining",
     "The Thing",
+    "Weightlifting",
+    "Wrestling",
     "X-Wing",
     "Yorkshire Pudding"
   ],
@@ -4589,7 +4684,9 @@
     "Sao Tome and Principe"
   ],
   "Ends with IPS": [
+    "All Dressed Chips",
     "Fish and Chips",
+    "Ketchup Chips",
     "The Time Ships"
   ],
   "Ends with IRA": [
@@ -4647,6 +4744,9 @@
   ],
   "Ends with ISO": [
     "Miso"
+  ],
+  "Ends with ISP": [
+    "Coffee Crisp"
   ],
   "Ends with IST": [
     "Schindler's List",
@@ -4775,10 +4875,13 @@
   ],
   "Ends with KET": [
     "Brisket",
+    "Cricket",
     "Nantucket",
     "Phuket"
   ],
   "Ends with KEY": [
+    "Hockey",
+    "Ice Hockey",
     "Key",
     "Mickey",
     "Monkey",
@@ -4856,6 +4959,7 @@
     "Matilda"
   ],
   "Ends with LED": [
+    "Bobsled",
     "LED",
     "Tangled"
   ],
@@ -4972,6 +5076,7 @@
     "Elmo"
   ],
   "Ends with LON": [
+    "Biathlon",
     "Ceylon",
     "Epsilon",
     "Nylon",
@@ -5195,7 +5300,8 @@
     "Burundi"
   ],
   "Ends with NDO": [
-    "Lando"
+    "Lando",
+    "Taekwondo"
   ],
   "Ends with NDR": [
     "Jörmungandr"
@@ -5233,6 +5339,7 @@
   ],
   "Ends with NER": [
     "Blade Runner",
+    "Kraft Dinner",
     "Mariner",
     "Pilsner",
     "Road Runner"
@@ -5319,6 +5426,10 @@
   ],
   "Ends with NIR": [
     "Sleipnir"
+  ],
+  "Ends with NIS": [
+    "Table Tennis",
+    "Tennis"
   ],
   "Ends with NIX": [
     "Harry Potter and the Order of the Phoenix",
@@ -5449,6 +5560,7 @@
     "Antioch"
   ],
   "Ends with OCK": [
+    "Bannock",
     "Little Rock",
     "Peacock",
     "Spock"
@@ -5551,7 +5663,9 @@
   ],
   "Ends with OLO": [
     "Marco Polo",
-    "Solo"
+    "Polo",
+    "Solo",
+    "Water Polo"
   ],
   "Ends with OLT": [
     "Bolt"
@@ -5582,6 +5696,7 @@
   ],
   "Ends with ONE": [
     "Discovery One",
+    "Formula One",
     "Harry Potter and the Sorcerer's Stone",
     "Hermione",
     "Home Alone",
@@ -5593,6 +5708,7 @@
   ],
   "Ends with ONG": [
     "Dugong",
+    "Ping Pong",
     "Song"
   ],
   "Ends with ONS": [
@@ -5714,7 +5830,8 @@
     "Rogan Josh"
   ],
   "Ends with OSS": [
-    "Albatross"
+    "Albatross",
+    "Motocross"
   ],
   "Ends with OSÉ": [
     "Rosé"
@@ -5753,7 +5870,8 @@
     "Soul"
   ],
   "Ends with OUP": [
-    "French Onion Soup"
+    "French Onion Soup",
+    "Split Pea Soup"
   ],
   "Ends with OUR": [
     "Sweet and Sour"
@@ -6284,7 +6402,8 @@
     "Sow"
   ],
   "Ends with SSE": [
-    "Bouillabaisse"
+    "Bouillabaisse",
+    "Lacrosse"
   ],
   "Ends with SSI": [
     "Lassi"
@@ -6446,6 +6565,7 @@
     "TikTok"
   ],
   "Ends with TON": [
+    "Badminton",
     "Boston",
     "Charleston",
     "George Washington",
@@ -6562,9 +6682,13 @@
   "Ends with UDE": [
     "One Hundred Years of Solitude"
   ],
+  "Ends with UDO": [
+    "Judo"
+  ],
   "Ends with UGE": [
     "Baton Rouge",
-    "Huge"
+    "Huge",
+    "Luge"
   ],
   "Ends with UGH": [
     "Dough",
@@ -6604,6 +6728,9 @@
     "Honolulu",
     "Sulu",
     "Zulu"
+  ],
+  "Ends with UMO": [
+    "Sumo"
   ],
   "Ends with UMP": [
     "Forrest Gump",
@@ -6878,6 +7005,7 @@
     "The Brothers Karamazov"
   ],
   "Ends with ZZA": [
+    "Hawaiian Pizza",
     "Pizza"
   ],
   "Engineering Structures": [
@@ -7355,6 +7483,7 @@
     "Albatross",
     "Alfajor",
     "Alfredo",
+    "All Dressed Chips",
     "Apfelstrudel",
     "Apple",
     "Apple Pie",
@@ -7373,9 +7502,11 @@
     "Bangers and Mash",
     "Banh Mi",
     "Banh Xeo",
+    "Bannock",
     "Bao",
     "Barszcz",
     "Bearnaise",
+    "Beaver Tail",
     "Bechamel",
     "Beef Bourguignon",
     "Bibimbap",
@@ -7401,6 +7532,7 @@
     "Bun Cha",
     "Burrito",
     "Butter Chicken",
+    "Butter Tart",
     "Caesar",
     "Cake",
     "Caldo Verde",
@@ -7427,6 +7559,7 @@
     "Ciabatta",
     "Cinnamon",
     "Cobb",
+    "Coffee Crisp",
     "Com Tam",
     "Congee",
     "Cookie",
@@ -7483,6 +7616,7 @@
     "Hamantaschen",
     "Hamburger",
     "Hash",
+    "Hawaiian Pizza",
     "Hoisin",
     "Hollandaise",
     "Hot Dog",
@@ -7498,6 +7632,7 @@
     "Kasha",
     "Kebab",
     "Ketchup",
+    "Ketchup Chips",
     "Kielbasa",
     "Kimchi",
     "Kishka",
@@ -7506,6 +7641,7 @@
     "Korma",
     "Kotlet Schabowy",
     "Kotleti",
+    "Kraft Dinner",
     "Kreplach",
     "Kugel",
     "Kulfi",
@@ -7542,12 +7678,16 @@
     "Mochi",
     "Mole",
     "Mole Poblano",
+    "Montreal Bagel",
+    "Montreal Smoked Meat",
     "Mooncake",
     "Moqueca",
     "Moussaka",
     "Mustard",
     "Naan",
     "Naengmyeon",
+    "Nanaimo Bar",
+    "New York Bagel",
     "Nugget",
     "Nuoc Cham",
     "Nutmeg",
@@ -7584,6 +7724,8 @@
     "Pinto",
     "Pita",
     "Pizza",
+    "Pouding Chomeur",
+    "Poutine",
     "Pretzel",
     "Profiterole",
     "Pumpernickel",
@@ -7615,6 +7757,7 @@
     "Shashlik",
     "Shawarma",
     "Shepherd's Pie",
+    "Smarties",
     "Soba",
     "Solyanka",
     "Som Tam",
@@ -7625,6 +7768,7 @@
     "Spaghetti",
     "Spanakopita",
     "Spice",
+    "Split Pea Soup",
     "Spätzle",
     "Sriracha",
     "Sticky Toffee Pudding",
@@ -7641,6 +7785,7 @@
     "Tang",
     "Tapas",
     "Tart",
+    "Tarte au Sucre",
     "Tempura",
     "Teriyaki",
     "Tikka Masala",
@@ -7650,6 +7795,7 @@
     "Tonkatsu",
     "Tortellini",
     "Tortilla",
+    "Tourtiere",
     "Tres Leches",
     "Trifle",
     "Tteokbokki",
@@ -13673,6 +13819,13 @@
     "Queen Mary",
     "Victoria"
   ],
+  "Racing Sports": [
+    "Auto Racing",
+    "Cycling",
+    "Formula One",
+    "Horse Racing",
+    "Motocross"
+  ],
   "Radio Terms": [
     "AM",
     "FM",
@@ -14647,8 +14800,57 @@
     "Spider-Man"
   ],
   "Sports": [
+    "American Football",
+    "Archery",
+    "Auto Racing",
+    "Badminton",
+    "Baseball",
+    "Basketball",
+    "Beach Volleyball",
+    "Biathlon",
+    "Bobsled",
+    "Boxing",
+    "Cricket",
+    "Cross Country Skiing",
+    "Curling",
+    "Cycling",
+    "Diving",
+    "Fencing",
+    "Figure Skating",
     "Football",
-    "Golf"
+    "Formula One",
+    "Golf",
+    "Gymnastics",
+    "Hockey",
+    "Horse Racing",
+    "Ice Hockey",
+    "Judo",
+    "Karate",
+    "Lacrosse",
+    "Luge",
+    "Motocross",
+    "Ping Pong",
+    "Polo",
+    "Rock Climbing",
+    "Rowing",
+    "Rugby",
+    "Sailing",
+    "Skiing",
+    "Sledding",
+    "Soccer",
+    "Speed Skating",
+    "Sumo",
+    "Surfing",
+    "Swimming",
+    "Table Tennis",
+    "Taekwondo",
+    "Tennis",
+    "Track and Field",
+    "Ultimate Frisbee",
+    "Volleyball",
+    "Water Polo",
+    "Weightlifting",
+    "Wrestling"
   ],
   "Sports Equipment": [
     "Ball",
@@ -14827,6 +15029,7 @@
     "Aliens"
   ],
   "Starts with ALL": [
+    "All Dressed Chips",
     "All You Need Is Kill",
     "Alliance"
   ],
@@ -14841,7 +15044,8 @@
     "Amazon"
   ],
   "Starts with AME": [
-    "American Beauty"
+    "American Beauty",
+    "American Football"
   ],
   "Starts with AMM": [
     "Ammonia"
@@ -14899,6 +15103,9 @@
   "Starts with AQU": [
     "Aquarius"
   ],
+  "Starts with ARC": [
+    "Archery"
+  ],
   "Starts with ARE": [
     "Arepa",
     "Ares"
@@ -14954,6 +15161,9 @@
     "Australia",
     "Austria"
   ],
+  "Starts with AUT": [
+    "Auto Racing"
+  ],
   "Starts with AVA": [
     "Avatar",
     "Avatar: Frontiers of Pandora",
@@ -14992,7 +15202,8 @@
     "Bacon"
   ],
   "Starts with BAD": [
-    "Bad Santa"
+    "Bad Santa",
+    "Badminton"
   ],
   "Starts with BAF": [
     "Baffin"
@@ -15027,6 +15238,7 @@
     "Banh Mi",
     "Banh Xeo",
     "Banks",
+    "Bannock",
     "Banshee"
   ],
   "Starts with BAO": [
@@ -15038,8 +15250,10 @@
     "Barszcz"
   ],
   "Starts with BAS": [
+    "Baseball",
     "Basil",
     "Basilisk",
+    "Basketball",
     "Basutoland"
   ],
   "Starts with BAT": [
@@ -15054,12 +15268,14 @@
     "BBQ"
   ],
   "Starts with BEA": [
+    "Beach Volleyball",
     "Bear",
     "Bearnaise",
     "Beast",
     "Beat",
     "Beatles",
-    "Beauty and the Beast"
+    "Beauty and the Beast",
+    "Beaver Tail"
   ],
   "Starts with BEC": [
     "Bechamel",
@@ -15116,6 +15332,9 @@
   "Starts with BHU": [
     "Bhutan"
   ],
+  "Starts with BIA": [
+    "Biathlon"
+  ],
   "Starts with BIB": [
     "Bibimbap"
   ],
@@ -15171,6 +15390,9 @@
     "Boar",
     "Board"
   ],
+  "Starts with BOB": [
+    "Bobsled"
+  ],
   "Starts with BOI": [
     "Boise"
   ],
@@ -15205,6 +15427,9 @@
   ],
   "Starts with BOW": [
     "Bow"
+  ],
+  "Starts with BOX": [
+    "Boxing"
   ],
   "Starts with BRA": [
     "Brasilia",
@@ -15278,6 +15503,7 @@
   ],
   "Starts with BUT": [
     "Butter Chicken",
+    "Butter Tart",
     "Buttercup",
     "Butterfinger",
     "Butterfly"
@@ -15296,7 +15522,8 @@
     "Cadillac"
   ],
   "Starts with CAE": [
-    "Caesar"
+    "Caesar",
+    "Caesar Cocktail"
   ],
   "Starts with CAK": [
     "Cake"
@@ -15468,7 +15695,8 @@
     "CODA"
   ],
   "Starts with COF": [
-    "Coffee"
+    "Coffee",
+    "Coffee Crisp"
   ],
   "Starts with COG": [
     "Cog"
@@ -15543,12 +15771,14 @@
     "Crete"
   ],
   "Starts with CRI": [
+    "Cricket",
     "Crime and Punishment"
   ],
   "Starts with CRO": [
     "Croatia",
     "Croissant",
     "Croque Monsieur",
+    "Cross Country Skiing",
     "Crow"
   ],
   "Starts with CRU": [
@@ -15559,12 +15789,14 @@
   ],
   "Starts with CUR": [
     "Curie",
+    "Curling",
     "Curry"
   ],
   "Starts with CYA": [
     "Cyan"
   ],
   "Starts with CYC": [
+    "Cycling",
     "Cyclops"
   ],
   "Starts with CYG": [
@@ -15676,6 +15908,9 @@
   "Starts with DIS": [
     "Discovery One",
     "Disney"
+  ],
+  "Starts with DIV": [
+    "Diving"
   ],
   "Starts with DJA": [
     "Django Unchained"
@@ -15941,6 +16176,9 @@
   "Starts with FEI": [
     "Feijoada"
   ],
+  "Starts with FEN": [
+    "Fencing"
+  ],
   "Starts with FER": [
     "Ferdinand Magellan",
     "Ferry"
@@ -15953,6 +16191,9 @@
   ],
   "Starts with FID": [
     "Fiddler on the Roof"
+  ],
+  "Starts with FIG": [
+    "Figure Skating"
   ],
   "Starts with FIJ": [
     "Fiji"
@@ -16002,6 +16243,7 @@
   "Starts with FOR": [
     "Ford",
     "Formentera",
+    "Formula One",
     "Forrest Gump"
   ],
   "Starts with FOU": [
@@ -16236,6 +16478,9 @@
   "Starts with GUY": [
     "Guyana"
   ],
+  "Starts with GYM": [
+    "Gymnastics"
+  ],
   "Starts with GYO": [
     "Gyoza"
   ],
@@ -16292,6 +16537,7 @@
   ],
   "Starts with HAW": [
     "Hawaii",
+    "Hawaiian Pizza",
     "Hawk",
     "Hawkeye",
     "Hawking"
@@ -16340,6 +16586,9 @@
   "Starts with HIS": [
     "Hispania"
   ],
+  "Starts with HOC": [
+    "Hockey"
+  ],
   "Starts with HOI": [
     "Hoisin"
   ],
@@ -16368,7 +16617,8 @@
   ],
   "Starts with HOR": [
     "Horchata",
-    "Horse"
+    "Horse",
+    "Horse Racing"
   ],
   "Starts with HOT": [
     "Hot Chocolate",
@@ -16420,6 +16670,7 @@
   "Starts with ICE": [
     "Ice",
     "Ice Age",
+    "Ice Hockey",
     "Ice Pack",
     "Ice Wine",
     "Iced Tea",
@@ -16603,6 +16854,9 @@
     "Journal",
     "Journey to the West"
   ],
+  "Starts with JUD": [
+    "Judo"
+  ],
   "Starts with JUG": [
     "Juggernaut"
   ],
@@ -16641,6 +16895,7 @@
   ],
   "Starts with KAR": [
     "Karachi",
+    "Karate",
     "Kartoffelsalat"
   ],
   "Starts with KAS": [
@@ -16674,7 +16929,8 @@
     "Kepler"
   ],
   "Starts with KET": [
-    "Ketchup"
+    "Ketchup",
+    "Ketchup Chips"
   ],
   "Starts with KEY": [
     "Key",
@@ -16740,6 +16996,7 @@
     "Kotleti"
   ],
   "Starts with KRA": [
+    "Kraft Dinner",
     "Krakatoa",
     "Kraken",
     "Kramer vs. Kramer"
@@ -16778,6 +17035,9 @@
     "La Gomera",
     "La La Land",
     "La Palma"
+  ],
+  "Starts with LAC": [
+    "Lacrosse"
   ],
   "Starts with LAD": [
     "Lady and the Tramp"
@@ -16917,6 +17177,9 @@
   ],
   "Starts with LUC": [
     "Luca"
+  ],
+  "Starts with LUG": [
+    "Luge"
   ],
   "Starts with LUK": [
     "Luke"
@@ -17120,6 +17383,8 @@
     "Montenegro",
     "Montgomery",
     "Montpelier",
+    "Montreal Bagel",
+    "Montreal Smoked Meat",
     "Monumental"
   ],
   "Starts with MOO": [
@@ -17137,7 +17402,8 @@
     "Morse"
   ],
   "Starts with MOT": [
-    "Moth"
+    "Moth",
+    "Motocross"
   ],
   "Starts with MOU": [
     "Moulin Rouge!",
@@ -17183,6 +17449,7 @@
     "Namibia"
   ],
   "Starts with NAN": [
+    "Nanaimo Bar",
     "Nantucket"
   ],
   "Starts with NAP": [
@@ -17224,6 +17491,7 @@
   "Starts with NEW": [
     "New Hebrides",
     "New York",
+    "New York Bagel",
     "New Zealand",
     "Newspaper",
     "Newton"
@@ -17540,6 +17808,7 @@
     "Pinata",
     "Pinatubo",
     "Pine",
+    "Ping Pong",
     "Pinion",
     "Pink Panther",
     "Pinky",
@@ -17597,6 +17866,7 @@
     "Poland",
     "Polar Bear",
     "Police Car",
+    "Polo",
     "Polyester"
   ],
   "Starts with POM": [
@@ -17620,6 +17890,10 @@
   ],
   "Starts with POS": [
     "Poseidon"
+  ],
+  "Starts with POU": [
+    "Pouding Chomeur",
+    "Poutine"
   ],
   "Starts with PRA": [
     "Prada",
@@ -17782,6 +18056,7 @@
     "Robinson Crusoe"
   ],
   "Starts with ROC": [
+    "Rock Climbing",
     "Rockefeller",
     "Rocky",
     "Rocky Horror Picture Show"
@@ -17819,10 +18094,14 @@
   "Starts with ROU": [
     "Rouladen"
   ],
+  "Starts with ROW": [
+    "Rowing"
+  ],
   "Starts with RUB": [
     "Ruby"
   ],
   "Starts with RUG": [
+    "Rugby",
     "Rugelach"
   ],
   "Starts with RUM": [
@@ -17862,6 +18141,7 @@
     "Sahara"
   ],
   "Starts with SAI": [
+    "Sailing",
     "Saint Kitts and Nevis",
     "Saint Lucia",
     "Saint Patrick",
@@ -18022,6 +18302,9 @@
   "Starts with SKA": [
     "Skate"
   ],
+  "Starts with SKI": [
+    "Skiing"
+  ],
   "Starts with SKU": [
     "Skunk"
   ],
@@ -18032,6 +18315,7 @@
     "Slaughterhouse-Five"
   ],
   "Starts with SLE": [
+    "Sledding",
     "Sleeping Beauty",
     "Sleipnir"
   ],
@@ -18041,6 +18325,9 @@
   ],
   "Starts with SLU": [
     "Slumdog Millionaire"
+  ],
+  "Starts with SMA": [
+    "Smarties"
   ],
   "Starts with SMO": [
     "Smoothie"
@@ -18061,6 +18348,7 @@
     "Soba"
   ],
   "Starts with SOC": [
+    "Soccer",
     "Socrates"
   ],
   "Starts with SOF": [
@@ -18119,6 +18407,7 @@
   "Starts with SPE": [
     "Spear",
     "Speed Limit Sign",
+    "Speed Skating",
     "Speedy Gonzales",
     "Spell"
   ],
@@ -18127,6 +18416,9 @@
     "Spider",
     "Spider-Man",
     "Spirited Away"
+  ],
+  "Starts with SPL": [
+    "Split Pea Soup"
   ],
   "Starts with SPO": [
     "Spock",
@@ -18188,7 +18480,8 @@
     "Sulu"
   ],
   "Starts with SUM": [
-    "Sumatra"
+    "Sumatra",
+    "Sumo"
   ],
   "Starts with SUN": [
     "Sun",
@@ -18200,6 +18493,7 @@
     "Superman"
   ],
   "Starts with SUR": [
+    "Surfing",
     "Suriname"
   ],
   "Starts with SUS": [
@@ -18217,6 +18511,7 @@
     "Sweet and Sour"
   ],
   "Starts with SWI": [
+    "Swimming",
     "Switzerland"
   ],
   "Starts with SWO": [
@@ -18233,10 +18528,14 @@
   ],
   "Starts with TAB": [
     "Table",
+    "Table Tennis",
     "Tabouleh"
   ],
   "Starts with TAC": [
     "Taco"
+  ],
+  "Starts with TAE": [
+    "Taekwondo"
   ],
   "Starts with TAH": [
     "Tahini",
@@ -18275,6 +18574,7 @@
     "TARDIS",
     "Tarantula",
     "Tart",
+    "Tarte au Sucre",
     "Tarzan"
   ],
   "Starts with TAU": [
@@ -18300,7 +18600,8 @@
   ],
   "Starts with TEN": [
     "Tenerife",
-    "Tenet"
+    "Tenet",
+    "Tennis"
   ],
   "Starts with TEQ": [
     "Tequila"
@@ -18510,11 +18811,15 @@
   "Starts with TOT": [
     "Total War"
   ],
+  "Starts with TOU": [
+    "Tourtiere"
+  ],
   "Starts with TOY": [
     "Toy Story",
     "Toyota"
   ],
   "Starts with TRA": [
+    "Track and Field",
     "Transnistria"
   ],
   "Starts with TRE": [
@@ -18582,6 +18887,9 @@
   ],
   "Starts with UKR": [
     "Ukraine"
+  ],
+  "Starts with ULT": [
+    "Ultimate Frisbee"
   ],
   "Starts with UNB": [
     "Unbreakable"
@@ -18682,7 +18990,8 @@
   "Starts with VOL": [
     "Volcano",
     "Voldemort",
-    "Volga"
+    "Volga",
+    "Volleyball"
   ],
   "Starts with VOY": [
     "Voyager"
@@ -18708,9 +19017,11 @@
     "Washington"
   ],
   "Starts with WAT": [
-    "Water Margin"
+    "Water Margin",
+    "Water Polo"
   ],
   "Starts with WEI": [
+    "Weightlifting",
     "Weissbier"
   ],
   "Starts with WES": [
@@ -18767,7 +19078,8 @@
     "Worm"
   ],
   "Starts with WRE": [
-    "Wreck-It Ralph"
+    "Wreck-It Ralph",
+    "Wrestling"
   ],
   "Starts with WRI": [
     "Wright"
@@ -18970,6 +19282,21 @@
     "When Marnie Was There",
     "Whisper of the Heart"
   ],
+  "Summer Olympic Sports": [
+    "Archery",
+    "Beach Volleyball",
+    "Diving",
+    "Gymnastics",
+    "Rowing",
+    "Sailing",
+    "Swimming",
+    "Taekwondo",
+    "Track and Field",
+    "Volleyball",
+    "Water Polo",
+    "Weightlifting",
+    "Wrestling"
+  ],
   "Sun": [
     "Halo",
     "Helios",
@@ -19131,8 +19458,13 @@
     "Ocean"
   ],
   "Things American": [
+    "American Football",
     "Apple Pie",
+    "Auto Racing",
     "BBQ",
+    "Baseball",
+    "Basketball",
+    "Beach Volleyball",
     "Beyonce",
     "Bourbon",
     "Brownie",
@@ -19144,11 +19476,14 @@
     "Cola",
     "Craft Beer",
     "Disney",
+    "Diving",
     "Einstein",
     "Elvis",
+    "Figure Skating",
     "Franklin D. Roosevelt",
     "Fried Chicken",
     "George Washington",
+    "Gymnastics",
     "Hamburger",
     "Hot Chocolate",
     "Hot Dog",
@@ -19164,20 +19499,31 @@
     "Milk",
     "Milkshake",
     "Moby Dick",
+    "Motocross",
     "Mustard",
     "NASA",
     "New York",
+    "New York Bagel",
     "Prince",
     "Ranch",
+    "Rock Climbing",
     "Root Beer",
     "Rye Whiskey",
     "Smoothie",
     "Sourdough",
+    "Surfing",
+    "Swimming",
     "The Grapes of Wrath",
     "The Great Gatsby",
     "Thomas Edison",
     "To Kill a Mockingbird",
+    "Track and Field",
+    "Ultimate Frisbee",
     "Usher",
+    "Volleyball",
+    "Water Polo",
+    "Weightlifting",
+    "Wrestling",
     "Wright"
   ],
   "Things Argentine": [
@@ -19190,7 +19536,9 @@
     "Tango"
   ],
   "Things Austrian": [
-    "Mozart"
+    "Mozart",
+    "Skiing",
+    "Sledding"
   ],
   "Things Brazilian": [
     "Brigadeiro",
@@ -19202,28 +19550,40 @@
   "Things British": [
     "1984",
     "Alice's Adventures in Wonderland",
+    "Archery",
     "Bangers and Mash",
     "Beatles",
+    "Boxing",
     "Brave New World",
     "Bubble and Squeak",
+    "Cricket",
     "Darwin",
     "Dracula",
     "Earl Grey",
     "Elizabeth",
     "Fish and Chips",
+    "Formula One",
     "Frankenstein",
     "Gin",
+    "Golf",
+    "Horse Racing",
     "Jane Eyre",
     "London",
     "Mead",
     "Newton",
+    "Polo",
     "Pride and Prejudice",
     "Queen",
+    "Rowing",
+    "Rugby",
+    "Sailing",
     "Scones",
     "Shakespeare",
     "Shepherd's Pie",
+    "Soccer",
     "Sticky Toffee Pudding",
     "Tea",
+    "Tennis",
     "Thames",
     "The Jungle Book",
     "The Secret Garden",
@@ -19239,14 +19599,37 @@
     "Zeppelin"
   ],
   "Things Canadian": [
+    "All Dressed Chips",
+    "Bannock",
+    "Beaver Tail",
+    "Butter Tart",
+    "Caesar Cocktail",
+    "Coffee Crisp",
+    "Curling",
     "Drake",
+    "Hawaiian Pizza",
+    "Hockey",
+    "Ice Hockey",
     "Ice Wine",
-    "Maple Syrup"
+    "Ketchup Chips",
+    "Kraft Dinner",
+    "Lacrosse",
+    "Maple Syrup",
+    "Montreal Bagel",
+    "Montreal Smoked Meat",
+    "Nanaimo Bar",
+    "Pouding Chomeur",
+    "Poutine",
+    "Smarties",
+    "Split Pea Soup",
+    "Tarte au Sucre",
+    "Tourtiere"
   ],
   "Things Caribbean": [
     "Rum"
   ],
   "Things Chinese": [
+    "Badminton",
     "Baijiu",
     "Bao",
     "Beijing",
@@ -19279,8 +19662,10 @@
     "Oyster Sauce",
     "Panda",
     "Peking Duck",
+    "Ping Pong",
     "Romance of the Three Kingdoms",
     "Sweet and Sour",
+    "Table Tennis",
     "Twice Cooked Pork",
     "Water Margin",
     "Wonton",
@@ -19297,6 +19682,9 @@
   ],
   "Things Czech": [
     "Pilsner"
+  ],
+  "Things Dutch": [
+    "Speed Skating"
   ],
   "Things Egyptian": [
     "Alexandria",
@@ -19322,10 +19710,12 @@
     "Crepe",
     "Croissant",
     "Croque Monsieur",
+    "Cycling",
     "Duck Confit",
     "Eclair",
     "Escargot",
     "Espagnole",
+    "Fencing",
     "French Onion Soup",
     "Hollandaise",
     "Joan of Arc",
@@ -19363,6 +19753,7 @@
     "Handel",
     "Kartoffelsalat",
     "Käsespätzle",
+    "Luge",
     "Pretzel",
     "Pumpernickel",
     "Rhine",
@@ -19484,7 +19875,9 @@
     "Honda",
     "Howl's Moving Castle",
     "Ikiru",
+    "Judo",
     "Kagemusha",
+    "Karate",
     "Kiki's Delivery Service",
     "Matcha",
     "Miso",
@@ -19513,6 +19906,7 @@
     "Soy Sauce",
     "Spirited Away",
     "Sukiyaki",
+    "Sumo",
     "Sushi",
     "Taiyaki",
     "Takoyaki",
@@ -19550,6 +19944,8 @@
     "Latke",
     "Lox",
     "Matzo Ball",
+    "Montreal Bagel",
+    "New York Bagel",
     "Pastrami",
     "Rugelach",
     "Schmaltz",
@@ -19575,6 +19971,7 @@
     "Seventeen",
     "Soju",
     "Super Junior",
+    "Taekwondo",
     "Tteokbokki",
     "Xia",
     "iKON"
@@ -19614,6 +20011,10 @@
     "Shawarma",
     "Tabouleh",
     "Tahini"
+  ],
+  "Things Norwegian": [
+    "Biathlon",
+    "Cross Country Skiing"
   ],
   "Things Peruvian": [
     "Pisco"
@@ -19676,6 +20077,9 @@
     "Sangria",
     "Sherry",
     "Tapas"
+  ],
+  "Things Swiss": [
+    "Bobsled"
   ],
   "Things Taiwanese": [
     "Bubble Tea"
@@ -20241,6 +20645,18 @@
     "Swan",
     "Veloute",
     "White Wine"
+  ],
+  "Winter Olympic Sports": [
+    "Biathlon",
+    "Bobsled",
+    "Cross Country Skiing",
+    "Curling",
+    "Figure Skating",
+    "Ice Hockey",
+    "Luge",
+    "Skiing",
+    "Sledding",
+    "Speed Skating"
   ],
   "Wooden Objects": [
     "Bat",
