@@ -121,64 +121,64 @@ console.log(`Found ${twoAwayConnections} 2-away connections (with minimum 4 path
 
 // Function to validate that a puzzle has unique solutions (each word fits exactly one cell)
 function isValidPuzzle(rows, cols) {
-    const wordToCells = new Map(); // Maps each word to the cells it can fit in
-
-    // Check each cell and record which words can fit where
-    for (let i = 0; i < rows.length; i++) {
-        for (let j = 0; j < cols.length; j++) {
-            const rowWords = categories[rows[i]];
-            const colWords = categories[cols[j]];
-
-            // Find intersection
-            const intersection = rowWords.filter(word => colWords.includes(word));
-
-            // Record each word and which cell it can fit in
-            for (const word of intersection) {
-                if (!wordToCells.has(word)) {
-                    wordToCells.set(word, []);
-                }
-                wordToCells.get(word).push([i, j]);
-            }
-        }
-    }
-
-    // Check for words that can fit in multiple cells
-    for (const [word, cells] of wordToCells.entries()) {
-        if (cells.length > 1) {
-            return false; // Word can fit in multiple cells - invalid puzzle
-        }
-    }
-
-    return true; // All words fit in exactly one cell
+    // Try to find a valid solution by testing different word combinations
+    return solvePuzzle(rows, cols).length > 0;
 }
 
 // Function to solve a puzzle with given row and column categories
 function solvePuzzle(rows, cols) {
-    if (!isValidPuzzle(rows, cols)) {
-        return []; // Invalid puzzle
-    }
-
+    // Try to find a valid solution by testing different word combinations
     const solutions = [];
     const usedWords = new Set();
 
+    // Create a matrix of available words for each cell
+    const availableWordsMatrix = [];
     for (let i = 0; i < rows.length; i++) {
+        availableWordsMatrix[i] = [];
         for (let j = 0; j < cols.length; j++) {
             const rowWords = categories[rows[i]];
             const colWords = categories[cols[j]];
 
             // Find intersection
             const intersection = rowWords.filter(word => colWords.includes(word));
-
-            // Find available word
-            const availableWords = intersection.filter(word => !usedWords.has(word));
-            const selectedWord = availableWords[0];
-
-            solutions.push(selectedWord);
-            usedWords.add(selectedWord);
+            availableWordsMatrix[i][j] = intersection;
         }
     }
 
-    return solutions;
+    // Try to find a valid solution using backtracking
+    function trySolve(row, col) {
+        if (row >= rows.length) {
+            return true; // All cells filled successfully
+        }
+
+        const nextRow = col + 1 >= cols.length ? row + 1 : row;
+        const nextCol = col + 1 >= cols.length ? 0 : col + 1;
+
+        // Try each available word for this cell
+        for (const word of availableWordsMatrix[row][col]) {
+            if (!usedWords.has(word)) {
+                usedWords.add(word);
+                solutions[row * cols.length + col] = word;
+
+                if (trySolve(nextRow, nextCol)) {
+                    return true; // Found a valid solution
+                }
+
+                // Backtrack
+                usedWords.delete(word);
+                solutions[row * cols.length + col] = undefined;
+            }
+        }
+
+        return false; // No valid solution found
+    }
+
+    // Try to solve the puzzle
+    if (trySolve(0, 0)) {
+        return solutions.filter(word => word !== undefined);
+    }
+
+    return []; // No valid solution found
 }
 
 // Function to check if two categories can be in the same dimension using 2-away matrix
@@ -485,7 +485,6 @@ function findPuzzles() {
     // Save results to separate files
     for (const [size, puzzles] of Object.entries(solvedPuzzles)) {
         if (puzzles.length > 0) {
-            fs.writeFileSync(`puzzles_${size}.json`, '');
             fs.writeFileSync(`puzzles_${size}.json`, JSON.stringify(puzzles, null, 2));
             console.log(`Saved ${puzzles.length} ${size} puzzles to puzzles_${size}.json`);
         }
@@ -508,4 +507,4 @@ function findPuzzles() {
 }
 
 // Run the optimized solver
-findPuzzles(); 
+findPuzzles();

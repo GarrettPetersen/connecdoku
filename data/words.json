@@ -9,14 +9,24 @@
     "Starts with 198",
     "Things British"
   ],
+  "2046": [
+    "Ends with 046",
+    "Movies",
+    "Science Fiction Films",
+    "Starts with 204",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
   "Titanic": [
     "Best Picture Winners",
     "Civilian Ships",
+    "Disaster Films",
     "Disaster Movies",
     "Disasters",
     "Drama Stories",
     "Ends with NIC",
     "Famous Shipwrecks",
+    "James Cameron",
     "Luxury Ships",
     "Maritime Stories",
     "Movies",
@@ -28,11 +38,13 @@
     "Oceanliners",
     "Oscar Winners",
     "Period Stories",
+    "Romance Films",
     "Romance Stories",
     "Ships",
     "Shipwrecks",
     "Starts with TIT",
     "Synonyms for Big",
+    "Things American",
     "Things British",
     "White Star Line"
   ],
@@ -10856,27 +10868,34 @@
     "Best Picture Winners",
     "Black and White",
     "Black and White Films",
+    "Classic Films",
     "Ends with NCA",
     "Movies",
     "Movies directed by Michael Curtiz",
     "Movies featuring Humphrey Bogart",
     "Movies featuring Ingrid Bergman",
     "Oscar Winners",
+    "Romance Films",
     "Romance Stories",
     "Starts with CAS",
+    "Things American",
+    "War Films",
     "War Stories"
   ],
   "The Godfather": [
     "Best Picture Winners",
+    "Crime Films",
     "Crime Stories",
     "Ends with HER",
     "Family Sagas",
+    "Francis Ford Coppola",
     "Movies",
     "Movies directed by Francis Ford Coppola",
     "Movies featuring Al Pacino",
     "Movies featuring Marlon Brando",
     "Oscar Winners",
-    "Starts with THE"
+    "Starts with THE",
+    "Things American"
   ],
   "The Godfather Part II": [
     "Best Picture Winners",
@@ -10892,6 +10911,7 @@
     "Starts with THE"
   ],
   "Pulp Fiction": [
+    "Crime Films",
     "Crime Stories",
     "Drama Stories",
     "Ends with ION",
@@ -10900,20 +10920,26 @@
     "Movies featuring Bruce Willis",
     "Movies featuring John Travolta",
     "Movies featuring Samuel L. Jackson",
+    "Quentin Tarantino",
     "Starts with PUL",
+    "Things American",
     "Thriller Stories"
   ],
   "Forrest Gump": [
     "Best Picture Winners",
+    "Drama Films",
     "Drama Stories",
     "Ends with UMP",
     "Movies",
     "Movies directed by Robert Zemeckis",
     "Movies featuring Tom Hanks",
     "Oscar Winners",
-    "Starts with FOR"
+    "Robert Zemeckis",
+    "Starts with FOR",
+    "Things American"
   ],
   "The Matrix": [
+    "Action Films",
     "Action Stories",
     "Cult Classics",
     "Ends with RIX",
@@ -10923,7 +10949,10 @@
     "Movies featuring Laurence Fishburne",
     "Oscar Winners",
     "Sci-fi Stories",
-    "Starts with THE"
+    "Science Fiction Films",
+    "Starts with THE",
+    "Things American",
+    "Wachowskis"
   ],
   "Spirited Away": [
     "2D Animated Films",
@@ -11164,6 +11193,7 @@
     "Adventure Stories",
     "Ends with ARS",
     "Epic Stories",
+    "George Lucas",
     "Movies",
     "Movies directed by George Lucas",
     "Movies featuring Alec Guinness",
@@ -11172,8 +11202,11 @@
     "Movies featuring Mark Hamill",
     "Movies featuring Peter Cushing",
     "Sci-fi Stories",
+    "Science Fiction Films",
+    "Space Films",
     "Star Wars Movies",
-    "Starts with STA"
+    "Starts with STA",
+    "Things American"
   ],
   "The Empire Strikes Back": [
     "Adventure Stories",
@@ -11336,13 +11369,17 @@
     "Starts with SCH"
   ],
   "Jurassic Park": [
+    "Adventure Films",
     "Adventure Stories",
     "Blockbusters",
     "Ends with ARK",
     "Movies",
     "Movies directed by Spielberg",
     "Sci-fi Stories",
-    "Starts with JUR"
+    "Science Fiction Films",
+    "Starts with JUR",
+    "Steven Spielberg",
+    "Things American"
   ],
   "Toy Story": [
     "3D Animated Films",
@@ -12197,8 +12234,11 @@
     "Adventure Stories",
     "Books",
     "Ends with NGS",
+    "Fantasy Literature",
     "Fantasy Stories",
-    "Starts with THE"
+    "J.R.R. Tolkien",
+    "Starts with THE",
+    "Things British"
   ],
   "Blade Runner": [
     "Cult Classics",
@@ -12389,6 +12429,9 @@
     "Black and White",
     "Black and White Films",
     "Books",
+    "Civil War Films",
+    "Classic Films",
+    "Drama Films",
     "Drama Stories",
     "Ends with IND",
     "Family Sagas",
@@ -12397,7 +12440,8 @@
     "Movies featuring Vivien Leigh",
     "Oscar Winners",
     "Romance Stories",
-    "Starts with GON"
+    "Starts with GON",
+    "Things American"
   ],
   "To Kill a Mockingbird": [
     "Black and White",
@@ -12438,8 +12482,11 @@
     "Adventure Stories",
     "Books",
     "Ends with BIT",
+    "Fantasy Literature",
     "Fantasy Stories",
-    "Starts with THE"
+    "J.R.R. Tolkien",
+    "Starts with THE",
+    "Things British"
   ],
   "The Catcher in the Rye": [
     "Books",
@@ -12613,9 +12660,12 @@
   "The Chronicles of Narnia": [
     "Adventure Stories",
     "Books",
+    "C.S. Lewis",
     "Ends with NIA",
+    "Fantasy Literature",
     "Fantasy Stories",
-    "Starts with THE"
+    "Starts with THE",
+    "Things British"
   ],
   "The Da Vinci Code": [
     "Books",
@@ -12643,8 +12693,13 @@
     "Books",
     "Crime Stories",
     "Ends with MBS",
+    "Horror Films",
+    "Jonathan Demme",
+    "Movies",
     "Oscar Winners",
     "Starts with THE",
+    "Things American",
+    "Thriller Films",
     "Thriller Stories"
   ],
   "The Stand": [
@@ -12934,6 +12989,7 @@
     "Starts with ROB"
   ],
   "Sense and Sensibility": [
+    "Ang Lee",
     "Drama Stories",
     "Ends with ITY",
     "Movies",
@@ -12941,9 +12997,12 @@
     "Movies featuring Alan Rickman",
     "Movies featuring Emma Thompson",
     "Movies featuring Kate Winslet",
+    "Period Films",
     "Period Stories",
+    "Romance Films",
     "Romance Stories",
-    "Starts with SEN"
+    "Starts with SEN",
+    "Things British"
   ],
   "Love Actually": [
     "Christmas Stories",
@@ -14439,14 +14498,18 @@
   ],
   "The Wizard of Oz": [
     "Adventure Stories",
+    "Classic Films",
     "Ends with  OZ",
     "Family Stories",
+    "Fantasy Films",
     "Fantasy Stories",
+    "Movies",
     "Movies directed by Victor Fleming",
     "Movies featuring Judy Garland",
     "Movies featuring Ray Bolger",
     "Musical Films",
-    "Starts with THE"
+    "Starts with THE",
+    "Things American"
   ],
   "Annie": [
     "Comedy Stories",
@@ -14791,27 +14854,35 @@
   ],
   "One Flew Over the Cuckoo's Nest": [
     "Best Picture Winners",
+    "Drama Films",
     "Drama Stories",
     "Ends with EST",
+    "Milos Forman",
+    "Movies",
     "Movies directed by Milos Forman",
     "Movies featuring Christopher Lloyd",
     "Movies featuring Danny DeVito",
     "Movies featuring Jack Nicholson",
     "Movies featuring Louise Fletcher",
     "Oscar Winners",
-    "Starts with ONE"
+    "Starts with ONE",
+    "Things American"
   ],
   "Rocky": [
     "Best Picture Winners",
+    "Drama Films",
     "Drama Stories",
     "Ends with CKY",
+    "John G. Avildsen",
+    "Movies",
     "Movies directed by John G. Avildsen",
     "Movies featuring Burgess Meredith",
     "Movies featuring Sylvester Stallone",
     "Movies featuring Talia Shire",
     "Oscar Winners",
     "Sports Films",
-    "Starts with ROC"
+    "Starts with ROC",
+    "Things American"
   ],
   "The Deer Hunter": [
     "Best Picture Winners",
@@ -14998,42 +15069,56 @@
     "War Stories"
   ],
   "The English Patient": [
+    "Anthony Minghella",
     "Best Picture Winners",
     "Drama Stories",
     "Ends with ENT",
+    "Movies",
     "Movies directed by Anthony Minghella",
     "Movies featuring Juliette Binoche",
     "Movies featuring Kristin Scott Thomas",
     "Movies featuring Ralph Fiennes",
     "Oscar Winners",
     "Period Stories",
+    "Romance Films",
     "Romance Stories",
     "Starts with THE",
+    "Things British",
+    "War Films",
     "War Stories"
   ],
   "Shakespeare in Love": [
     "Best Picture Winners",
     "Comedy Stories",
     "Ends with OVE",
+    "John Madden",
+    "Movies",
     "Movies directed by John Madden",
     "Movies featuring Gwyneth Paltrow",
     "Movies featuring Joseph Fiennes",
     "Movies featuring Judi Dench",
     "Oscar Winners",
+    "Period Films",
     "Period Stories",
+    "Romance Films",
     "Romance Stories",
-    "Starts with SHA"
+    "Starts with SHA",
+    "Things British"
   ],
   "American Beauty": [
     "Best Picture Winners",
+    "Drama Films",
     "Drama Stories",
     "Ends with UTY",
+    "Movies",
     "Movies directed by Sam Mendes",
     "Movies featuring Annette Bening",
     "Movies featuring Kevin Spacey",
     "Movies featuring Thora Birch",
     "Oscar Winners",
-    "Starts with AME"
+    "Sam Mendes",
+    "Starts with AME",
+    "Things American"
   ],
   "Gladiator": [
     "Action Stories",
@@ -15587,12 +15672,16 @@
     "Things Hawaiian"
   ],
   "Manhattan": [
+    "Comedy Films",
     "Ends with TAN",
     "Islands",
     "Locations in North America",
+    "Movies",
     "Place Names",
+    "Romance Films",
     "Starts with MAN",
-    "Things American"
+    "Things American",
+    "Woody Allen"
   ],
   "Long Island": [
     "Drinks",
@@ -19729,5 +19818,849 @@
     "Place Names",
     "Starts with MID",
     "Things American"
+  ],
+  "The Killer": [
+    "Action Movies",
+    "Ends with LER",
+    "Hong Kong Cinema",
+    "John Woo",
+    "Movies",
+    "Starts with THE",
+    "Things Chinese"
+  ],
+  "Hard Boiled": [
+    "Action Movies",
+    "Ends with LED",
+    "Hong Kong Cinema",
+    "John Woo",
+    "Movies",
+    "Starts with HAR",
+    "Things Chinese"
+  ],
+  "A Better Tomorrow": [
+    "Action Movies",
+    "Ends with ROW",
+    "Hong Kong Cinema",
+    "John Woo",
+    "Movies",
+    "Starts with A B",
+    "Things Chinese"
+  ],
+  "Crouching Tiger, Hidden Dragon": [
+    "Ends with GON",
+    "Martial Arts Films",
+    "Movies",
+    "Oscar Winners",
+    "Starts with CRO",
+    "Things Chinese"
+  ],
+  "Hero": [
+    "Ends with ERO",
+    "Martial Arts Films",
+    "Movies",
+    "Starts with HER",
+    "Things Chinese",
+    "Zhang Yimou"
+  ],
+  "House of Flying Daggers": [
+    "Ends with ERS",
+    "Martial Arts Films",
+    "Movies",
+    "Starts with HOU",
+    "Things Chinese",
+    "Zhang Yimou"
+  ],
+  "Farewell My Concubine": [
+    "Drama Films",
+    "Ends with INE",
+    "Movies",
+    "Palme d'Or Winners",
+    "Starts with FAR",
+    "Things Chinese"
+  ],
+  "In the Mood for Love": [
+    "Ends with OVE",
+    "Movies",
+    "Romance Films",
+    "Starts with IN ",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "Chungking Express": [
+    "Ends with ESS",
+    "Movies",
+    "Romance Films",
+    "Starts with CHU",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "Raise the Red Lantern": [
+    "Drama Films",
+    "Ends with ERN",
+    "Movies",
+    "Starts with RAI",
+    "Things Chinese",
+    "Zhang Yimou"
+  ],
+  "Miyazaki": [
+    "Anime Directors",
+    "Ends with AKI",
+    "Film Directors",
+    "People",
+    "Starts with MIY",
+    "Things Japanese"
+  ],
+  "Kurosawa": [
+    "Akira Kurosawa",
+    "Ends with AWA",
+    "Film Directors",
+    "People",
+    "Starts with KUR",
+    "Things Japanese"
+  ],
+  "Ozu": [
+    "Ends with OZU",
+    "Film Directors",
+    "People",
+    "Starts with OZU",
+    "Things Japanese",
+    "Yasujiro Ozu"
+  ],
+  "Mifune": [
+    "Actors",
+    "Ends with UNE",
+    "People",
+    "Starts with MIF",
+    "Things Japanese",
+    "Toshiro Mifune"
+  ],
+  "Matsui": [
+    "Baseball Players",
+    "Ends with SUI",
+    "Hideki Matsui",
+    "People",
+    "Starts with MAT",
+    "Things Japanese"
+  ],
+  "Ichiro": [
+    "Baseball Players",
+    "Ends with IRO",
+    "Ichiro Suzuki",
+    "People",
+    "Starts with ICH",
+    "Things Japanese"
+  ],
+  "Ohtani": [
+    "Baseball Players",
+    "Ends with ANI",
+    "People",
+    "Shohei Ohtani",
+    "Starts with OHT",
+    "Things Japanese"
+  ],
+  "Tanaka": [
+    "Baseball Players",
+    "Ends with AKA",
+    "Masahiro Tanaka",
+    "People",
+    "Starts with TAN",
+    "Things Japanese"
+  ],
+  "Nakamura": [
+    "Chess Players",
+    "Ends with URA",
+    "Hikaru Nakamura",
+    "People",
+    "Starts with NAK",
+    "Things Japanese"
+  ],
+  "Fujita": [
+    "Ends with ITA",
+    "Katsuhiko Fujita",
+    "People",
+    "Scientists",
+    "Starts with FUJ",
+    "Things Japanese"
+  ],
+  "Citizen Kane": [
+    "Classic Films",
+    "Drama Films",
+    "Ends with ANE",
+    "Movies",
+    "Orson Welles",
+    "Starts with CIT",
+    "Things American"
+  ],
+  "Jaws": [
+    "Ends with AWS",
+    "Horror Films",
+    "Movies",
+    "Starts with JAW",
+    "Steven Spielberg",
+    "Things American",
+    "Thriller Films"
+  ],
+  "E.T.": [
+    "Ends with .T.",
+    "Family Films",
+    "Movies",
+    "Science Fiction Films",
+    "Starts with E.T",
+    "Steven Spielberg",
+    "Things American"
+  ],
+  "Lawrence of Arabia": [
+    "Biographical Films",
+    "David Lean",
+    "Ends with BIA",
+    "Movies",
+    "Starts with LAW",
+    "Things British",
+    "War Films"
+  ],
+  "The Bridge on the River Kwai": [
+    "David Lean",
+    "Ends with WAI",
+    "Movies",
+    "Starts with THE",
+    "Things British",
+    "War Films"
+  ],
+  "Dr. Strangelove": [
+    "Comedy Films",
+    "Ends with OVE",
+    "Movies",
+    "Stanley Kubrick",
+    "Starts with DR.",
+    "Things British",
+    "War Films"
+  ],
+  "A Clockwork Orange": [
+    "Ends with NGE",
+    "Movies",
+    "Science Fiction Films",
+    "Stanley Kubrick",
+    "Starts with A C",
+    "Things British"
+  ],
+  "2001: A Space Odyssey": [
+    "Ends with SEY",
+    "Movies",
+    "Science Fiction Films",
+    "Stanley Kubrick",
+    "Starts with 200",
+    "Things British"
+  ],
+  "The Third Man": [
+    "Carol Reed",
+    "Ends with MAN",
+    "Film Noir",
+    "Movies",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Brief Encounter": [
+    "David Lean",
+    "Ends with TER",
+    "Movies",
+    "Romance Films",
+    "Starts with BRI",
+    "Things British"
+  ],
+  "The Red Shoes": [
+    "Dance Films",
+    "Ends with OES",
+    "Movies",
+    "Musical Films",
+    "Starts with THE",
+    "Things British"
+  ],
+  "The Ladykillers": [
+    "Comedy Films",
+    "Ealing Comedies",
+    "Ends with ERS",
+    "Movies",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Kind Hearts and Coronets": [
+    "Comedy Films",
+    "Ealing Comedies",
+    "Ends with ETS",
+    "Movies",
+    "Starts with KIN",
+    "Things British"
+  ],
+  "The Scarlet Letter": [
+    "Books",
+    "Classic Literature",
+    "Ends with TER",
+    "Nathaniel Hawthorne",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Adventures of Tom Sawyer": [
+    "Books",
+    "Classic Literature",
+    "Ends with YER",
+    "Mark Twain",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Call of the Wild": [
+    "Adventure Stories",
+    "Books",
+    "Ends with ILD",
+    "Jack London",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Red Badge of Courage": [
+    "Books",
+    "Ends with AGE",
+    "Starts with THE",
+    "Stephen Crane",
+    "Things American",
+    "War Stories"
+  ],
+  "The Age of Innocence": [
+    "Books",
+    "Classic Literature",
+    "Edith Wharton",
+    "Ends with NCE",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Shawshank Redemption": [
+    "Drama Films",
+    "Ends with ION",
+    "Frank Darabont",
+    "Movies",
+    "Prison Films",
+    "Starts with THE",
+    "Things American"
+  ],
+  "Goodfellas": [
+    "Crime Films",
+    "Ends with LAS",
+    "Gangster Films",
+    "Martin Scorsese",
+    "Movies",
+    "Starts with GOO",
+    "Things American"
+  ],
+  "Fight Club": [
+    "David Fincher",
+    "Drama Films",
+    "Ends with LUB",
+    "Movies",
+    "Starts with FIG",
+    "Things American"
+  ],
+  "The Green Mile": [
+    "Drama Films",
+    "Ends with ILE",
+    "Frank Darabont",
+    "Movies",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Usual Suspects": [
+    "Bryan Singer",
+    "Crime Films",
+    "Ends with CTS",
+    "Movies",
+    "Starts with THE",
+    "Things American",
+    "Thriller Films"
+  ],
+  "The Full Monty": [
+    "Comedy Films",
+    "Dance Films",
+    "Ends with NTY",
+    "Movies",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Trainspotting": [
+    "Danny Boyle",
+    "Drama Films",
+    "Drug Films",
+    "Ends with ING",
+    "Movies",
+    "Starts with TRA",
+    "Things British"
+  ],
+  "Four Weddings and a Funeral": [
+    "Comedy Films",
+    "Ends with RAL",
+    "Movies",
+    "Richard Curtis",
+    "Romance Films",
+    "Starts with FOU",
+    "Things British"
+  ],
+  "The Remains of the Day": [
+    "Drama Films",
+    "Ends with DAY",
+    "James Ivory",
+    "Movies",
+    "Period Films",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Howard's End": [
+    "Drama Films",
+    "Ends with END",
+    "James Ivory",
+    "Movies",
+    "Period Films",
+    "Starts with HOW",
+    "Things British"
+  ],
+  "The Madness of King George": [
+    "Drama Films",
+    "Ends with RGE",
+    "Movies",
+    "Nicholas Hytner",
+    "Period Films",
+    "Starts with THE",
+    "Things British"
+  ],
+  "The Crying Game": [
+    "Drama Films",
+    "Ends with AME",
+    "Movies",
+    "Neil Jordan",
+    "Starts with THE",
+    "Things British",
+    "Thriller Films"
+  ],
+  "Norwegian Wood": [
+    "Books",
+    "Contemporary Literature",
+    "Ends with OOD",
+    "Haruki Murakami",
+    "Starts with NOR",
+    "Things Japanese"
+  ],
+  "The Wind-Up Bird Chronicle": [
+    "Books",
+    "Contemporary Literature",
+    "Ends with CLE",
+    "Haruki Murakami",
+    "Starts with THE",
+    "Things Japanese"
+  ],
+  "Kafka on the Shore": [
+    "Books",
+    "Contemporary Literature",
+    "Ends with ORE",
+    "Haruki Murakami",
+    "Starts with KAF",
+    "Things Japanese"
+  ],
+  "1Q84": [
+    "Books",
+    "Contemporary Literature",
+    "Ends with Q84",
+    "Haruki Murakami",
+    "Starts with 1Q8",
+    "Things Japanese"
+  ],
+  "Colorless Tsukuru Tazaki": [
+    "Books",
+    "Contemporary Literature",
+    "Ends with AKI",
+    "Haruki Murakami",
+    "Starts with COL",
+    "Things Japanese"
+  ],
+  "The Three-Body Problem": [
+    "Books",
+    "Ends with LEM",
+    "Liu Cixin",
+    "Science Fiction",
+    "Starts with THE",
+    "Things Chinese"
+  ],
+  "The Dark Forest": [
+    "Books",
+    "Ends with EST",
+    "Liu Cixin",
+    "Science Fiction",
+    "Starts with THE",
+    "Things Chinese"
+  ],
+  "Death's End": [
+    "Books",
+    "Ends with END",
+    "Liu Cixin",
+    "Science Fiction",
+    "Starts with DEA",
+    "Things Chinese"
+  ],
+  "The Wandering Earth": [
+    "Books",
+    "Ends with RTH",
+    "Liu Cixin",
+    "Science Fiction",
+    "Starts with THE",
+    "Things Chinese"
+  ],
+  "Ball Lightning": [
+    "Books",
+    "Ends with ING",
+    "Liu Cixin",
+    "Science Fiction",
+    "Starts with BAL",
+    "Things Chinese"
+  ],
+  "The Grandmaster": [
+    "Ends with TER",
+    "Martial Arts Films",
+    "Movies",
+    "Starts with THE",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "Happy Together": [
+    "Ends with HER",
+    "Movies",
+    "Romance Films",
+    "Starts with HAP",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "Fallen Angels": [
+    "Crime Films",
+    "Ends with ELS",
+    "Movies",
+    "Starts with FAL",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "Days of Being Wild": [
+    "Drama Films",
+    "Ends with ILD",
+    "Movies",
+    "Starts with DAY",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "Ashes of Time": [
+    "Ends with IME",
+    "Martial Arts Films",
+    "Movies",
+    "Starts with ASH",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "The Hand": [
+    "Ends with AND",
+    "Martial Arts Films",
+    "Movies",
+    "Starts with THE",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "My Blueberry Nights": [
+    "Ends with HTS",
+    "Movies",
+    "Romance Films",
+    "Starts with MY ",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "The Revenant": [
+    "Drama Films",
+    "Ends with ANT",
+    "Movies",
+    "Starts with THE",
+    "Things Chinese",
+    "Wong Kar-wai"
+  ],
+  "The Grand Budapest Hotel": [
+    "Comedy Films",
+    "Ends with TEL",
+    "Movies",
+    "Starts with THE",
+    "Things Chinese",
+    "Wes Anderson"
+  ],
+  "The Sound and the Fury": [
+    "Books",
+    "Classic Literature",
+    "Ends with URY",
+    "Starts with THE",
+    "Things American",
+    "William Faulkner"
+  ],
+  "As I Lay Dying": [
+    "Books",
+    "Classic Literature",
+    "Ends with ING",
+    "Starts with AS ",
+    "Things American",
+    "William Faulkner"
+  ],
+  "Light in August": [
+    "Books",
+    "Classic Literature",
+    "Ends with UST",
+    "Starts with LIG",
+    "Things American",
+    "William Faulkner"
+  ],
+  "Absalom, Absalom!": [
+    "Books",
+    "Classic Literature",
+    "Ends with OM!",
+    "Starts with ABS",
+    "Things American",
+    "William Faulkner"
+  ],
+  "The Sun Also Rises": [
+    "Books",
+    "Classic Literature",
+    "Ends with SES",
+    "Ernest Hemingway",
+    "Starts with THE",
+    "Things American"
+  ],
+  "A Farewell to Arms": [
+    "Books",
+    "Classic Literature",
+    "Ends with RMS",
+    "Ernest Hemingway",
+    "Starts with A F",
+    "Things American"
+  ],
+  "For Whom the Bell Tolls": [
+    "Books",
+    "Classic Literature",
+    "Ends with LLS",
+    "Ernest Hemingway",
+    "Starts with FOR",
+    "Things American"
+  ],
+  "The Old Man and the Sea": [
+    "Books",
+    "Classic Literature",
+    "Ends with SEA",
+    "Ernest Hemingway",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Bell Jar": [
+    "Books",
+    "Contemporary Literature",
+    "Ends with JAR",
+    "Starts with THE",
+    "Sylvia Plath",
+    "Things American"
+  ],
+  "On the Road": [
+    "Books",
+    "Contemporary Literature",
+    "Ends with OAD",
+    "Jack Kerouac",
+    "Starts with ON ",
+    "Things American"
+  ],
+  "The Graduate": [
+    "Comedy Films",
+    "Drama Films",
+    "Ends with ATE",
+    "Mike Nichols",
+    "Movies",
+    "Starts with THE",
+    "Things American"
+  ],
+  "Easy Rider": [
+    "Dennis Hopper",
+    "Drama Films",
+    "Ends with DER",
+    "Movies",
+    "Road Movies",
+    "Starts with EAS",
+    "Things American"
+  ],
+  "Midnight Cowboy": [
+    "Drama Films",
+    "Ends with BOY",
+    "John Schlesinger",
+    "Movies",
+    "Oscar Winners",
+    "Starts with MID",
+    "Things American"
+  ],
+  "The French Connection": [
+    "Crime Films",
+    "Ends with ION",
+    "Movies",
+    "Starts with THE",
+    "Things American",
+    "Thriller Films",
+    "William Friedkin"
+  ],
+  "The Exorcist": [
+    "Ends with IST",
+    "Horror Films",
+    "Movies",
+    "Starts with THE",
+    "Things American",
+    "William Friedkin"
+  ],
+  "Chinatown": [
+    "Crime Films",
+    "Ends with OWN",
+    "Film Noir",
+    "Movies",
+    "Roman Polanski",
+    "Starts with CHI",
+    "Things American"
+  ],
+  "Annie Hall": [
+    "Comedy Films",
+    "Ends with ALL",
+    "Movies",
+    "Romance Films",
+    "Starts with ANN",
+    "Things American",
+    "Woody Allen"
+  ],
+  "The Silmarillion": [
+    "Books",
+    "Ends with ION",
+    "Fantasy Literature",
+    "J.R.R. Tolkien",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Animal Farm": [
+    "Books",
+    "Ends with ARM",
+    "George Orwell",
+    "Political Satire",
+    "Starts with ANI",
+    "Things British"
+  ],
+  "Lord of the Flies": [
+    "Books",
+    "Contemporary Literature",
+    "Ends with IES",
+    "Starts with LOR",
+    "Things British",
+    "William Golding"
+  ],
+  "The Lion, the Witch and the Wardrobe": [
+    "Books",
+    "C.S. Lewis",
+    "Ends with OBE",
+    "Fantasy Literature",
+    "Starts with THE",
+    "Things British"
+  ],
+  "The Magician's Nephew": [
+    "Books",
+    "C.S. Lewis",
+    "Ends with HEW",
+    "Fantasy Literature",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Prince Caspian": [
+    "Books",
+    "C.S. Lewis",
+    "Ends with IAN",
+    "Fantasy Literature",
+    "Starts with PRI",
+    "Things British"
+  ],
+  "The Italian Job": [
+    "Crime Films",
+    "Ends with JOB",
+    "Heist Films",
+    "Movies",
+    "Peter Collinson",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Get Carter": [
+    "Crime Films",
+    "Ends with TER",
+    "Mike Hodges",
+    "Movies",
+    "Starts with GET",
+    "Things British",
+    "Thriller Films"
+  ],
+  "Performance": [
+    "Crime Films",
+    "Donald Cammell",
+    "Drama Films",
+    "Ends with NCE",
+    "Movies",
+    "Starts with PER",
+    "Things British"
+  ],
+  "If....": [
+    "Drama Films",
+    "Ends with ...",
+    "Lindsay Anderson",
+    "Movies",
+    "Starts with IF.",
+    "Things British"
+  ],
+  "O Lucky Man!": [
+    "Drama Films",
+    "Ends with AN!",
+    "Lindsay Anderson",
+    "Movies",
+    "Starts with O L",
+    "Things British"
+  ],
+  "Britannia Hospital": [
+    "Drama Films",
+    "Ends with TAL",
+    "Lindsay Anderson",
+    "Movies",
+    "Starts with BRI",
+    "Things British"
+  ],
+  "The Wicker Man": [
+    "Ends with MAN",
+    "Folk Horror",
+    "Horror Films",
+    "Movies",
+    "Robin Hardy",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Don't Look Now": [
+    "Ends with NOW",
+    "Horror Films",
+    "Movies",
+    "Nicolas Roeg",
+    "Starts with DON",
+    "Things British",
+    "Thriller Films"
+  ],
+  "The Man Who Fell to Earth": [
+    "Ends with RTH",
+    "Movies",
+    "Nicolas Roeg",
+    "Science Fiction Films",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Walkabout": [
+    "Drama Films",
+    "Ends with OUT",
+    "Movies",
+    "Nicolas Roeg",
+    "Starts with WAL",
+    "Things British"
   ]
 }

@@ -1,98 +1,50 @@
 [
   {
     "rows": [
-      "Ends with MAN",
-      "Countries",
-      "Drinks"
+      "Ends with AUL",
+      "Luxury Ships",
+      "Republics"
     ],
     "cols": [
-      "Archipelagos",
-      "Foods",
-      "Islands"
+      "Locations in North America",
+      "People",
+      "Things French"
     ],
     "size": "3x3",
     "solutions": [
-      "Andaman",
-      "Massaman",
-      "Isle of Man",
-      "Bahamas",
-      "Turkey",
-      "Antigua and Barbuda",
-      "Madeira",
-      "Milk",
-      "Java"
-    ]
-  },
-  {
-    "rows": [
-      "Ends with RED",
-      "Adventure Stories",
-      "Blockbusters"
-    ],
-    "cols": [
-      "3D Animated Films",
-      "Action Stories",
-      "Books"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Turning Red",
-      "Red",
-      "Kindred",
-      "Frozen",
-      "Avatar",
-      "Don Quixote",
-      "Toy Story",
-      "Die Hard",
-      "Harry Potter and the Chamber of Secrets"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with BRA",
-      "Adventure Stories",
-      "Blockbusters"
-    ],
-    "cols": [
-      "3D Animated Films",
-      "Action Stories",
-      "Books"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Brave",
-      "Braveheart",
-      "Brave New World",
-      "Frozen",
-      "Avatar",
-      "Don Quixote",
-      "Toy Story",
-      "Die Hard",
-      "Harry Potter and the Chamber of Secrets"
-    ]
-  },
-  {
-    "rows": [
-      "Starts with GAL",
-      "Countries",
-      "Locations in Europe"
-    ],
-    "cols": [
-      "Archipelagos",
-      "Ends with ICA",
-      "People"
-    ],
-    "size": "3x3",
-    "solutions": [
-      "Galapagos",
-      "Galactica",
-      "Galileo",
-      "Bahamas",
-      "Belgian East Africa",
+      "Saint Paul",
+      "Paul",
+      "Gaul",
+      "United States",
+      "Queen Mary",
+      "Normandie",
+      "Costa Rica",
       "Chad",
-      "Aland",
-      "Corsica",
-      "Santa Maria"
+      "France"
+    ]
+  },
+  {
+    "rows": [
+      "Foods",
+      "Historical Figures",
+      "Marvel Characters"
+    ],
+    "cols": [
+      "Green Things",
+      "Male Names",
+      "Place Names"
+    ],
+    "size": "3x3",
+    "solutions": [
+      "Chimichurri",
+      "Curry",
+      "Orange",
+      "Saint Patrick",
+      "Bach",
+      "Victoria",
+      "Green Goblin",
+      "Professor X",
+      "Phoenix"
     ]
   }
 ]

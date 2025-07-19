@@ -2,6 +2,12 @@
   "Political Fiction": [
     "1984"
   ],
+  "Disaster Films": [
+    "Titanic"
+  ],
+  "James Cameron": [
+    "Titanic"
+  ],
   "Movies featuring Billy Zane": [
     "Titanic"
   ],
@@ -404,13 +410,28 @@
   "Movies featuring Ingrid Bergman": [
     "Casablanca"
   ],
+  "Francis Ford Coppola": [
+    "The Godfather"
+  ],
   "Movies featuring Marlon Brando": [
     "The Godfather"
+  ],
+  "Quentin Tarantino": [
+    "Pulp Fiction"
+  ],
+  "Robert Zemeckis": [
+    "Forrest Gump"
+  ],
+  "Action Films": [
+    "The Matrix"
   ],
   "Movies directed by Wachowskis": [
     "The Matrix"
   ],
   "Movies featuring Laurence Fishburne": [
+    "The Matrix"
+  ],
+  "Wachowskis": [
     "The Matrix"
   ],
   "Movies directed by Yoshifumi Kondo": [
@@ -419,10 +440,16 @@
   "Movies directed by Hiroyuki Morita": [
     "The Cat Returns"
   ],
+  "George Lucas": [
+    "Star Wars"
+  ],
   "Movies featuring Alec Guinness": [
     "Star Wars"
   ],
   "Movies featuring Peter Cushing": [
+    "Star Wars"
+  ],
+  "Space Films": [
     "Star Wars"
   ],
   "Movies directed by Irvin Kershner": [
@@ -466,6 +493,9 @@
   ],
   "Movies featuring Woody Harrelson": [
     "Solo"
+  ],
+  "Adventure Films": [
+    "Jurassic Park"
   ],
   "Movies directed by Andrew Stanton": [
     "WALL-E"
@@ -872,11 +902,17 @@
   "Movies directed by Howard Hawks": [
     "The Big Sleep"
   ],
+  "Civil War Films": [
+    "Gone with the Wind"
+  ],
   "Movies featuring Vivien Leigh": [
     "Gone with the Wind"
   ],
   "Legal Stories": [
     "To Kill a Mockingbird"
+  ],
+  "Jonathan Demme": [
+    "The Silence of the Lambs"
   ],
   "Movies directed by Alfonso Cuarón": [
     "Harry Potter and the Prisoner of Azkaban"
@@ -886,6 +922,9 @@
   ],
   "Movies directed by Kevin Reynolds": [
     "Robin Hood: Prince of Thieves"
+  ],
+  "Ang Lee": [
+    "Sense and Sensibility"
   ],
   "Movies featuring Hugh Grant": [
     "Love Actually"
@@ -1319,6 +1358,9 @@
   "Movies featuring Rex Harrison": [
     "My Fair Lady"
   ],
+  "Fantasy Films": [
+    "The Wizard of Oz"
+  ],
   "Movies featuring Judy Garland": [
     "The Wizard of Oz"
   ],
@@ -1583,8 +1625,14 @@
   "Movies featuring Kaya Scodelario": [
     "Pirates of the Caribbean: Dead Men Tell No Tales"
   ],
+  "Milos Forman": [
+    "One Flew Over the Cuckoo's Nest"
+  ],
   "Movies featuring Louise Fletcher": [
     "One Flew Over the Cuckoo's Nest"
+  ],
+  "John G. Avildsen": [
+    "Rocky"
   ],
   "Movies directed by John G. Avildsen": [
     "Rocky"
@@ -1730,6 +1778,9 @@
   "Movies featuring Sophie Marceau": [
     "Braveheart"
   ],
+  "Anthony Minghella": [
+    "The English Patient"
+  ],
   "Movies directed by Anthony Minghella": [
     "The English Patient"
   ],
@@ -1738,6 +1789,9 @@
   ],
   "Movies featuring Kristin Scott Thomas": [
     "The English Patient"
+  ],
+  "John Madden": [
+    "Shakespeare in Love"
   ],
   "Movies directed by John Madden": [
     "Shakespeare in Love"
@@ -1761,6 +1815,9 @@
     "American Beauty"
   ],
   "Movies featuring Thora Birch": [
+    "American Beauty"
+  ],
+  "Sam Mendes": [
     "American Beauty"
   ],
   "Movies featuring Connie Nielsen": [
@@ -2002,6 +2059,153 @@
   ],
   "Pacific Islands": [
     "Midway Island"
+  ],
+  "Palme d'Or Winners": [
+    "Farewell My Concubine"
+  ],
+  "Anime Directors": [
+    "Miyazaki"
+  ],
+  "Akira Kurosawa": [
+    "Kurosawa"
+  ],
+  "Yasujiro Ozu": [
+    "Ozu"
+  ],
+  "Actors": [
+    "Mifune"
+  ],
+  "Toshiro Mifune": [
+    "Mifune"
+  ],
+  "Hideki Matsui": [
+    "Matsui"
+  ],
+  "Ichiro Suzuki": [
+    "Ichiro"
+  ],
+  "Shohei Ohtani": [
+    "Ohtani"
+  ],
+  "Masahiro Tanaka": [
+    "Tanaka"
+  ],
+  "Chess Players": [
+    "Nakamura"
+  ],
+  "Hikaru Nakamura": [
+    "Nakamura"
+  ],
+  "Katsuhiko Fujita": [
+    "Fujita"
+  ],
+  "Orson Welles": [
+    "Citizen Kane"
+  ],
+  "Family Films": [
+    "E.T."
+  ],
+  "Biographical Films": [
+    "Lawrence of Arabia"
+  ],
+  "Carol Reed": [
+    "The Third Man"
+  ],
+  "Nathaniel Hawthorne": [
+    "The Scarlet Letter"
+  ],
+  "Mark Twain": [
+    "The Adventures of Tom Sawyer"
+  ],
+  "Jack London": [
+    "The Call of the Wild"
+  ],
+  "Stephen Crane": [
+    "The Red Badge of Courage"
+  ],
+  "Edith Wharton": [
+    "The Age of Innocence"
+  ],
+  "Prison Films": [
+    "The Shawshank Redemption"
+  ],
+  "Gangster Films": [
+    "Goodfellas"
+  ],
+  "Martin Scorsese": [
+    "Goodfellas"
+  ],
+  "David Fincher": [
+    "Fight Club"
+  ],
+  "Bryan Singer": [
+    "The Usual Suspects"
+  ],
+  "Danny Boyle": [
+    "Trainspotting"
+  ],
+  "Drug Films": [
+    "Trainspotting"
+  ],
+  "Richard Curtis": [
+    "Four Weddings and a Funeral"
+  ],
+  "Nicholas Hytner": [
+    "The Madness of King George"
+  ],
+  "Neil Jordan": [
+    "The Crying Game"
+  ],
+  "Wes Anderson": [
+    "The Grand Budapest Hotel"
+  ],
+  "Sylvia Plath": [
+    "The Bell Jar"
+  ],
+  "Jack Kerouac": [
+    "On the Road"
+  ],
+  "Mike Nichols": [
+    "The Graduate"
+  ],
+  "Dennis Hopper": [
+    "Easy Rider"
+  ],
+  "Road Movies": [
+    "Easy Rider"
+  ],
+  "John Schlesinger": [
+    "Midnight Cowboy"
+  ],
+  "Roman Polanski": [
+    "Chinatown"
+  ],
+  "George Orwell": [
+    "Animal Farm"
+  ],
+  "Political Satire": [
+    "Animal Farm"
+  ],
+  "William Golding": [
+    "Lord of the Flies"
+  ],
+  "Heist Films": [
+    "The Italian Job"
+  ],
+  "Peter Collinson": [
+    "The Italian Job"
+  ],
+  "Mike Hodges": [
+    "Get Carter"
+  ],
+  "Donald Cammell": [
+    "Performance"
+  ],
+  "Folk Horror": [
+    "The Wicker Man"
+  ],
+  "Robin Hardy": [
+    "The Wicker Man"
   ],
   "Maritime Stories": [
     "Titanic",
@@ -2339,10 +2543,6 @@
     "Wish",
     "Rise of the Guardians"
   ],
-  "Film Noir": [
-    "The Big Sleep",
-    "The Maltese Falcon"
-  ],
   "Movies directed by John Huston": [
     "The Maltese Falcon",
     "Annie"
@@ -2559,6 +2759,10 @@
     "Moonlight",
     "Green Book"
   ],
+  "Woody Allen": [
+    "Manhattan",
+    "Annie Hall"
+  ],
   "Things Faroese": [
     "Faroe Islands",
     "Faroe"
@@ -2590,6 +2794,26 @@
   "Antarctic Exploration": [
     "Discovery",
     "Terra Nova"
+  ],
+  "Dance Films": [
+    "The Red Shoes",
+    "The Full Monty"
+  ],
+  "Ealing Comedies": [
+    "The Ladykillers",
+    "Kind Hearts and Coronets"
+  ],
+  "Frank Darabont": [
+    "The Shawshank Redemption",
+    "The Green Mile"
+  ],
+  "James Ivory": [
+    "The Remains of the Day",
+    "Howard's End"
+  ],
+  "William Friedkin": [
+    "The French Connection",
+    "The Exorcist"
   ],
   "Movies featuring Kate Winslet": [
     "Titanic",
@@ -2776,6 +3000,11 @@
     "The Last Jedi",
     "The Rise of Skywalker"
   ],
+  "Steven Spielberg": [
+    "Jurassic Park",
+    "Jaws",
+    "E.T."
+  ],
   "Movies featuring Verna Felton": [
     "Dumbo",
     "Cinderella",
@@ -2795,6 +3024,11 @@
     "Tarzan",
     "Frozen",
     "Wish"
+  ],
+  "J.R.R. Tolkien": [
+    "The Lord of the Rings",
+    "The Hobbit",
+    "The Silmarillion"
   ],
   "Movies directed by Ridley Scott": [
     "Blade Runner",
@@ -2880,5 +3114,50 @@
     "Socrates",
     "Plato",
     "Aristotle"
+  ],
+  "Action Movies": [
+    "The Killer",
+    "Hard Boiled",
+    "A Better Tomorrow"
+  ],
+  "Hong Kong Cinema": [
+    "The Killer",
+    "Hard Boiled",
+    "A Better Tomorrow"
+  ],
+  "John Woo": [
+    "The Killer",
+    "Hard Boiled",
+    "A Better Tomorrow"
+  ],
+  "Zhang Yimou": [
+    "Hero",
+    "House of Flying Daggers",
+    "Raise the Red Lantern"
+  ],
+  "Film Directors": [
+    "Miyazaki",
+    "Kurosawa",
+    "Ozu"
+  ],
+  "David Lean": [
+    "Lawrence of Arabia",
+    "The Bridge on the River Kwai",
+    "Brief Encounter"
+  ],
+  "Stanley Kubrick": [
+    "Dr. Strangelove",
+    "A Clockwork Orange",
+    "2001: A Space Odyssey"
+  ],
+  "Lindsay Anderson": [
+    "If....",
+    "O Lucky Man!",
+    "Britannia Hospital"
+  ],
+  "Nicolas Roeg": [
+    "Don't Look Now",
+    "The Man Who Fell to Earth",
+    "Walkabout"
   ]
 }
