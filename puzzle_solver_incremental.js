@@ -9,55 +9,132 @@ const words = JSON.parse(fs.readFileSync('data/words.json', 'utf8'));
 const categories = JSON.parse(fs.readFileSync('data/categories.json', 'utf8'));
 
 const loadTime = Date.now() - startTime;
-console.log(`Loaded ${Object.keys(categories).length} categories and ${Object.keys(words).length} words (${loadTime}ms)`);
 
 // Extract category names and create mapping
 const categoryNames = Object.keys(categories);
 const categoryToIndex = new Map();
 categoryNames.forEach((name, index) => categoryToIndex.set(name, index));
 
+// Pre-filter categories to only include those with at least 4 words
+const filteredCategoryNames = categoryNames.filter(name => categories[name].length >= 4);
+console.log(`Loaded ${filteredCategoryNames.length} categories and ${Object.keys(words).length} words (${loadTime}ms)`);
+console.log(`Pre-filtered from ${categoryNames.length} to ${filteredCategoryNames.length} categories (removed ${categoryNames.length - filteredCategoryNames.length} with <4 words)`);
+
+// Update categoryToIndex mapping for filtered categories
+const filteredCategoryToIndex = new Map();
+filteredCategoryNames.forEach((name, index) => filteredCategoryToIndex.set(name, index));
+
 console.log('Step 1: Computing intersection matrix...');
 const intersectionStart = Date.now();
 
-// Compute intersection matrix
-const intersectionMatrix = new Matrix(categoryNames.length, categoryNames.length);
-for (let i = 0; i < categoryNames.length; i++) {
-    for (let j = 0; j < categoryNames.length; j++) {
-        const cat1Words = categories[categoryNames[i]];
-        const cat2Words = categories[categoryNames[j]];
+// Initialize working category list
+let workingCategoryNames = [...filteredCategoryNames];
+let categoriesRemoved = true;
+let iterationCount = 0;
+
+// Global matrices that will be updated in each iteration
+let intersectionMatrix;
+let twoAwayMatrix;
+
+while (categoriesRemoved) {
+    iterationCount++;
+    console.log(`\n--- Iteration ${iterationCount} ---`);
+    console.log(`Working with ${workingCategoryNames.length} categories...`);
+    
+    // Update category to index mapping for current working set
+    const workingCategoryToIndex = new Map();
+    workingCategoryNames.forEach((name, index) => workingCategoryToIndex.set(name, index));
+    
+    // Compute intersection matrix using current working categories
+    intersectionMatrix = new Matrix(workingCategoryNames.length, workingCategoryNames.length);
+    for (let i = 0; i < workingCategoryNames.length; i++) {
+        for (let j = 0; j < workingCategoryNames.length; j++) {
+            const cat1Words = categories[workingCategoryNames[i]];
+            const cat2Words = categories[workingCategoryNames[j]];
+            
+            const intersection = cat1Words.filter(word => cat2Words.includes(word));
+            intersectionMatrix.set(i, j, intersection.length);
+        }
+    }
+
+    console.log('Computing 2-away matrix...');
+    const twoAwayStart = Date.now();
+
+    // Compute 2-away matrix using matrix multiplication
+    twoAwayMatrix = intersectionMatrix.mmul(intersectionMatrix);
+
+    // Apply minimum path count threshold (≥4 for 4x4 puzzles)
+    const minPaths = 4;
+    let twoAwayCount = 0;
+    for (let i = 0; i < workingCategoryNames.length; i++) {
+        for (let j = 0; j < workingCategoryNames.length; j++) {
+            const paths = twoAwayMatrix.get(i, j);
+            if (paths >= minPaths) {
+                twoAwayMatrix.set(i, j, 1);
+                twoAwayCount++;
+            } else {
+                twoAwayMatrix.set(i, j, 0);
+            }
+        }
+    }
+
+    const twoAwayTime = Date.now() - twoAwayStart;
+    console.log(`2-away matrix computed (${twoAwayTime}ms)`);
+    console.log(`Found ${twoAwayCount} 2-away connections (with minimum ${minPaths} paths requirement)`);
+
+    // Check each category against the two criteria
+    const categoriesToRemove = [];
+    
+    for (let i = 0; i < workingCategoryNames.length; i++) {
+        const categoryName = workingCategoryNames[i];
         
-        const intersection = cat1Words.filter(word => cat2Words.includes(word));
-        intersectionMatrix.set(i, j, intersection.length);
+        // Criterion 1: Check if category is 1-away from at least 4 other categories
+        let oneAwayCount = 0;
+        for (let j = 0; j < workingCategoryNames.length; j++) {
+            if (i !== j && intersectionMatrix.get(i, j) > 0) {
+                oneAwayCount++;
+            }
+        }
+        
+        // Criterion 2: Check if category is 2-away from at least 3 other categories via at least 4 different routes
+        let twoAwayCount = 0;
+        let twoAwayDetails = [];
+        for (let j = 0; j < workingCategoryNames.length; j++) {
+            if (i !== j && twoAwayMatrix.get(i, j) === 1) {
+                twoAwayCount++;
+                // Get the actual path count from the original matrix multiplication result
+                const actualPaths = intersectionMatrix.mmul(intersectionMatrix).get(i, j);
+                twoAwayDetails.push(`${workingCategoryNames[j]}(${actualPaths} paths)`);
+            }
+        }
+        
+        // Check if category meets both criteria
+        if (oneAwayCount < 4 || twoAwayCount < 3) {
+            categoriesToRemove.push(i);
+            console.log(`Removing ${categoryName}: 1-away=${oneAwayCount}, 2-away=${twoAwayCount} [${twoAwayDetails.join(', ')}]`);
+        }
+    }
+    
+    // Remove categories that don't meet criteria
+    if (categoriesToRemove.length > 0) {
+        console.log(`Removing ${categoriesToRemove.length} categories that don't meet criteria`);
+        workingCategoryNames = workingCategoryNames.filter((_, index) => !categoriesToRemove.includes(index));
+        categoriesRemoved = true;
+    } else {
+        console.log('No categories removed - all remaining categories meet criteria');
+        categoriesRemoved = false;
     }
 }
 
 const intersectionTime = Date.now() - intersectionStart;
-console.log(`Intersection matrix computed (${intersectionTime}ms)`);
+console.log(`\nFinal intersection matrix computed (${intersectionTime}ms)`);
+console.log(`Final category count: ${workingCategoryNames.length} (down from ${filteredCategoryNames.length})`);
 
-console.log('Step 2: Computing 2-away matrix...');
-const twoAwayStart = Date.now();
-
-// Compute 2-away matrix using matrix multiplication
-const twoAwayMatrix = intersectionMatrix.mmul(intersectionMatrix);
-
-// Apply minimum path count threshold (≥4 for 4x4 puzzles)
-const minPaths = 4;
-let twoAwayCount = 0;
-for (let i = 0; i < categoryNames.length; i++) {
-    for (let j = 0; j < categoryNames.length; j++) {
-        const paths = twoAwayMatrix.get(i, j);
-        if (paths >= minPaths) {
-            twoAwayMatrix.set(i, j, 1);
-            twoAwayCount++;
-        } else {
-            twoAwayMatrix.set(i, j, 0);
-        }
-    }
-}
-
-const twoAwayTime = Date.now() - twoAwayStart;
-console.log(`2-away matrix computed (${twoAwayTime}ms)`);
-console.log(`Found ${twoAwayCount} 2-away connections (with minimum ${minPaths} paths requirement)`);
+// Update the main category list to use the filtered working categories
+filteredCategoryNames.length = 0;
+filteredCategoryNames.push(...workingCategoryNames);
+filteredCategoryToIndex.clear();
+filteredCategoryNames.forEach((name, index) => filteredCategoryToIndex.set(name, index));
 
 // Function to check if two categories can be in the same dimension using 2-away matrix
 function canBeInSameDimension(cat1Index, cat2Index) {
@@ -159,7 +236,7 @@ function findPuzzles() {
     // Create a list of all possible category positions
     // Each category can be either a row or column, so we have 2 * categoryNames.length positions
     const allPositions = [];
-    for (let i = 0; i < categoryNames.length; i++) {
+    for (let i = 0; i < filteredCategoryNames.length; i++) {
         allPositions.push({ categoryIndex: i, isRow: true });
         allPositions.push({ categoryIndex: i, isRow: false });
     }
@@ -185,9 +262,9 @@ function findPuzzles() {
             for (const pointer of pointers) {
                 const position = allPositions[pointer];
                 if (position.isRow) {
-                    rows.push(categoryNames[position.categoryIndex]);
+                    rows.push(filteredCategoryNames[position.categoryIndex]);
                 } else {
-                    cols.push(categoryNames[position.categoryIndex]);
+                    cols.push(filteredCategoryNames[position.categoryIndex]);
                 }
             }
             
@@ -316,7 +393,7 @@ function findPuzzles() {
         if (searchCount - lastProgressUpdate >= 1000) {
             const currentCategories = pointers.map(p => {
                 const pos = allPositions[p];
-                return `${categoryNames[pos.categoryIndex]}(${pos.isRow ? 'R' : 'C'})`;
+                return `${filteredCategoryNames[pos.categoryIndex]}(${pos.isRow ? 'R' : 'C'})`;
             }).join(', ');
             
             // Calculate available space more conservatively
