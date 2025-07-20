@@ -35,9 +35,6 @@
   "Things Georgian": [
     "Georgia"
   ],
-  "Movies directed by Orson Welles": [
-    "Othello"
-  ],
   "Movies featuring Orson Welles": [
     "Othello"
   ],
@@ -2006,6 +2003,9 @@
   "Pacific Islands": [
     "Midway Island"
   ],
+  "Movies directed by Chen Kaige": [
+    "Farewell My Concubine"
+  ],
   "Palme d'Or Winners": [
     "Farewell My Concubine"
   ],
@@ -2053,6 +2053,9 @@
   ],
   "Biographical Films": [
     "Lawrence of Arabia"
+  ],
+  "Movies directed by Michael Powell": [
+    "The Red Shoes"
   ],
   "Nathaniel Hawthorne": [
     "The Scarlet Letter"
@@ -2156,6 +2159,10 @@
   "Artists": [
     "Da Vinci",
     "Michelangelo"
+  ],
+  "Movies directed by Orson Welles": [
+    "Othello",
+    "Citizen Kane"
   ],
   "Norse Gods": [
     "Loki",
@@ -2365,10 +2372,6 @@
     "The Last Jedi",
     "Looper"
   ],
-  "Movies directed by Ron Howard": [
-    "Solo",
-    "A Beautiful Mind"
-  ],
   "Movies directed by Spielberg": [
     "Schindler's List",
     "Jurassic Park"
@@ -2501,10 +2504,6 @@
     "Robin Hood: Prince of Thieves",
     "Dances with Wolves"
   ],
-  "Movies directed by Ang Lee": [
-    "Sense and Sensibility",
-    "The Ice Storm"
-  ],
   "Movies featuring Emma Thompson": [
     "Sense and Sensibility",
     "Love Actually"
@@ -2544,10 +2543,6 @@
   "Movies featuring Christoph Waltz": [
     "Inglourious Basterds",
     "Django Unchained"
-  ],
-  "Movies directed by David Fincher": [
-    "Alien 3",
-    "Fight Club"
   ],
   "Movies directed by Ivan Reitman": [
     "Ghostbusters",
@@ -2778,6 +2773,11 @@
     "Annapurna",
     "Nepal"
   ],
+  "Movies directed by Ron Howard": [
+    "Apollo 13",
+    "Solo",
+    "A Beautiful Mind"
+  ],
   "Nobel Prize Winners": [
     "Einstein",
     "Marie Curie",
@@ -2968,6 +2968,16 @@
     "Alien",
     "Gladiator"
   ],
+  "Movies directed by David Fincher": [
+    "Gone Girl",
+    "Alien 3",
+    "Fight Club"
+  ],
+  "Movies directed by Ang Lee": [
+    "Sense and Sensibility",
+    "The Ice Storm",
+    "Crouching Tiger, Hidden Dragon"
+  ],
   "Movies directed by Richard Curtis": [
     "Love Actually",
     "About Time",
@@ -3087,11 +3097,6 @@
     "Lawrence of Arabia",
     "The Bridge on the River Kwai",
     "Brief Encounter"
-  ],
-  "Movies directed by Stanley Kubrick": [
-    "Dr. Strangelove",
-    "A Clockwork Orange",
-    "2001: A Space Odyssey"
   ],
   "Movies directed by Lindsay Anderson": [
     "If....",
