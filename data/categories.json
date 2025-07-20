@@ -120,15 +120,8 @@
     "NATO",
     "iKON"
   ],
-  "Action Films": [
-    "The Matrix"
-  ],
-  "Action Movies": [
-    "A Better Tomorrow",
-    "Hard Boiled",
-    "The Killer"
-  ],
   "Action Stories": [
+    "A Better Tomorrow",
     "A Good Day to Die Hard",
     "Aliens",
     "All You Need Is Kill",
@@ -149,6 +142,7 @@
     "Escape from New York",
     "Everything Everywhere All at Once",
     "Gladiator",
+    "Hard Boiled",
     "Home Alone",
     "Home Alone 2: Lost in New York",
     "Inglourious Basterds",
@@ -173,6 +167,7 @@
     "Terminator 2: Judgment Day",
     "The Fifth Element",
     "The Hurt Locker",
+    "The Killer",
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Return of the King",
     "The Lord of the Rings: The Two Towers",
@@ -184,9 +179,6 @@
   ],
   "Actors": [
     "Mifune"
-  ],
-  "Adventure Films": [
-    "Jurassic Park"
   ],
   "Adventure Stories": [
     "A Wrinkle in Time",
@@ -680,9 +672,6 @@
     "Panther",
     "Tiger"
   ],
-  "Biographical Films": [
-    "Lawrence of Arabia"
-  ],
   "Biographical Stories": [
     "12 Years a Slave",
     "A Beautiful Mind",
@@ -691,6 +680,7 @@
     "Evita",
     "Gandhi",
     "Green Book",
+    "Lawrence of Arabia",
     "Oppenheimer",
     "Serpico",
     "The Greatest Showman",
@@ -1702,23 +1692,13 @@
     "Joker",
     "Riddler"
   ],
-  "Comedy Films": [
-    "Annie Hall",
-    "Dr. Strangelove",
-    "Four Weddings and a Funeral",
-    "Kind Hearts and Coronets",
-    "Manhattan",
-    "The Full Monty",
-    "The Graduate",
-    "The Grand Budapest Hotel",
-    "The Ladykillers"
-  ],
   "Comedy Stories": [
     "101 Dalmatians",
     "A Charlie Brown Christmas",
     "A Christmas Story",
     "About Time",
     "Annie",
+    "Annie Hall",
     "Arthur Christmas",
     "Back to the Future",
     "Back to the Future Part II",
@@ -1729,9 +1709,11 @@
     "Birdman",
     "CODA",
     "Don Quixote",
+    "Dr. Strangelove",
     "Driving Miss Daisy",
     "Everything Everywhere All at Once",
     "Four Christmases",
+    "Four Weddings and a Funeral",
     "Galaxy Quest",
     "Ghostbusters",
     "Ghostbusters II",
@@ -1746,9 +1728,11 @@
     "How the Grinch Stole Christmas",
     "Jingle All the Way",
     "Kate & Leopold",
+    "Kind Hearts and Coronets",
     "Lilo & Stitch",
     "Little Shop of Horrors",
     "Love Actually",
+    "Manhattan",
     "Moonrise Kingdom",
     "My Fair Lady",
     "National Lampoon's Christmas Vacation",
@@ -1766,9 +1750,13 @@
     "The Aristocats",
     "The Artist",
     "The Emperor's New Groove",
+    "The Full Monty",
+    "The Graduate",
+    "The Grand Budapest Hotel",
     "The Grinch",
     "The Hitchhiker's Guide to the Galaxy",
     "The Holiday",
+    "The Ladykillers",
     "The Many Adventures of Winnie the Pooh",
     "The Muppet Christmas Carol",
     "The Parent Trap",
@@ -2525,17 +2513,20 @@
     "Murder",
     "Police Car"
   ],
-  "Crime Films": [
+  "Crime Stories": [
     "Bad Santa",
+    "Chicago",
     "Chinatown",
     "Copycat",
     "Crash",
+    "Crime and Punishment",
     "Death Wish",
     "Deja Vu",
     "Dog Day Afternoon",
     "Donnie Brasco",
     "Fallen Angels",
     "Get Carter",
+    "Gone Girl",
     "Goodfellas",
     "Insomnia",
     "Jackie Brown",
@@ -2552,23 +2543,16 @@
     "Sin City: A Dame to Kill For",
     "The Departed",
     "The French Connection",
+    "The Girl with the Dragon Tattoo",
     "The Godfather",
+    "The Godfather Part II",
     "The Godfather Part III",
     "The Hateful Eight",
     "The Irishman",
     "The Italian Job",
+    "The Silence of the Lambs",
     "The Usual Suspects",
     "Vantage Point"
-  ],
-  "Crime Stories": [
-    "Chicago",
-    "Crime and Punishment",
-    "Gone Girl",
-    "Pulp Fiction",
-    "The Girl with the Dragon Tattoo",
-    "The Godfather",
-    "The Godfather Part II",
-    "The Silence of the Lambs"
   ],
   "Criminals": [
     "Rogue"
@@ -2698,10 +2682,7 @@
   "Dinosaurs": [
     "Raptor"
   ],
-  "Disaster Films": [
-    "Titanic"
-  ],
-  "Disaster Movies": [
+  "Disaster Stories": [
     "Armageddon",
     "Dante's Peak",
     "Everest",
@@ -2817,34 +2798,6 @@
     "Horse",
     "Sheep"
   ],
-  "Drama Films": [
-    "American Beauty",
-    "Britannia Hospital",
-    "Citizen Kane",
-    "Days of Being Wild",
-    "Easy Rider",
-    "Farewell My Concubine",
-    "Fight Club",
-    "Forrest Gump",
-    "Gone with the Wind",
-    "Howard's End",
-    "If....",
-    "Midnight Cowboy",
-    "O Lucky Man!",
-    "One Flew Over the Cuckoo's Nest",
-    "Performance",
-    "Raise the Red Lantern",
-    "Rocky",
-    "The Crying Game",
-    "The Graduate",
-    "The Green Mile",
-    "The Madness of King George",
-    "The Remains of the Day",
-    "The Revenant",
-    "The Shawshank Redemption",
-    "Trainspotting",
-    "Walkabout"
-  ],
   "Drama Stories": [
     "11/22/63",
     "12 Monkeys",
@@ -2861,13 +2814,16 @@
     "Beloved",
     "Birdman",
     "Braveheart",
+    "Britannia Hospital",
     "CODA",
     "Cabaret",
     "Chariots of Fire",
     "Chicago",
+    "Citizen Kane",
     "Copycat",
     "Crash",
     "Dances with Wolves",
+    "Days of Being Wild",
     "Death Wish",
     "Deja Vu",
     "Django Unchained",
@@ -2878,9 +2834,12 @@
     "Dreams",
     "Driving Miss Daisy",
     "Dumbo",
+    "Easy Rider",
     "Everything Everywhere All at Once",
     "Evita",
+    "Farewell My Concubine",
     "Fiddler on the Roof",
+    "Fight Club",
     "Forrest Gump",
     "Four Christmases",
     "Frequency",
@@ -2893,6 +2852,8 @@
     "Groundhog Day",
     "Hedwig and the Angry Inch",
     "High and Low",
+    "Howard's End",
+    "If....",
     "Ikiru",
     "In the Heights",
     "Inglourious Basterds",
@@ -2913,6 +2874,7 @@
     "Little Women",
     "Looper",
     "Love Actually",
+    "Midnight Cowboy",
     "Million Dollar Baby",
     "Miracle on 34th Street",
     "Moonlight",
@@ -2920,6 +2882,7 @@
     "Moulin Rouge!",
     "No Country for Old Men",
     "Nomadland",
+    "O Lucky Man!",
     "Oliver!",
     "Once Upon a Time in Hollywood",
     "One Flew Over the Cuckoo's Nest",
@@ -2929,11 +2892,13 @@
     "Out of Africa",
     "Outlander",
     "Parasite",
+    "Performance",
     "Platoon",
     "Predestination",
     "Primer",
     "Pulp Fiction",
     "Rain Man",
+    "Raise the Red Lantern",
     "Ran",
     "Rashomon",
     "Red Beard",
@@ -2963,6 +2928,7 @@
     "The Butterfly Effect",
     "The Catcher in the Rye",
     "The Color Purple",
+    "The Crying Game",
     "The Deer Hunter",
     "The Departed",
     "The Devil's Advocate",
@@ -2971,9 +2937,11 @@
     "The First Fifteen Lives of Harry August",
     "The Fox and the Hound",
     "The Godfather Part III",
+    "The Graduate",
     "The Grapes of Wrath",
     "The Great Gatsby",
     "The Greatest Showman",
+    "The Green Mile",
     "The Hateful Eight",
     "The Hidden Fortress",
     "The Holiday",
@@ -2984,10 +2952,14 @@
     "The King's Speech",
     "The Lake House",
     "The Last Emperor",
+    "The Madness of King George",
     "The Man in the High Castle",
     "The Phantom of the Opera",
+    "The Remains of the Day",
+    "The Revenant",
     "The Road",
     "The Shape of Water",
+    "The Shawshank Redemption",
     "The Sixth Sense",
     "The Sound of Music",
     "The Time Traveler's Wife",
@@ -2996,8 +2968,10 @@
     "Tick, Tick... Boom!",
     "Titanic",
     "To Kill a Mockingbird",
+    "Trainspotting",
     "Unbreakable",
     "Unforgiven",
+    "Walkabout",
     "West Side Story",
     "Working Girl",
     "Wuthering Heights",
@@ -3074,7 +3048,7 @@
     "White Wine",
     "Wine"
   ],
-  "Drug Films": [
+  "Drug Stories": [
     "Trainspotting"
   ],
   "Dumplings": [
@@ -7611,9 +7585,6 @@
     "Crow",
     "Hare"
   ],
-  "Family Films": [
-    "E.T."
-  ],
   "Family Sagas": [
     "Dream of the Red Chamber",
     "Gone with the Wind",
@@ -7651,6 +7622,7 @@
     "Cinderella",
     "Coco",
     "Dumbo",
+    "E.T.",
     "Elemental",
     "Encanto",
     "Fantasia",
@@ -7749,9 +7721,6 @@
     "Spell",
     "Wand",
     "Wizard"
-  ],
-  "Fantasy Films": [
-    "The Wizard of Oz"
   ],
   "Fantasy Literature": [
     "Prince Caspian",
@@ -8978,7 +8947,7 @@
     "Hard Boiled",
     "The Killer"
   ],
-  "Horror Films": [
+  "Horror Stories": [
     "Alien",
     "Alien 3",
     "Alien: Resurrection",
@@ -8986,42 +8955,27 @@
     "Death Proof",
     "Don't Look Now",
     "Donnie Darko",
+    "Dracula",
+    "Frankenstein",
     "Glass",
+    "IT",
     "Jaws",
     "Little Shop of Horrors",
     "Rocky Horror Picture Show",
+    "Salem's Lot",
     "Sweeney Todd: The Demon Barber of Fleet Street",
     "The Butterfly Effect",
     "The Devil's Advocate",
     "The Exorcist",
     "The Phantom of the Opera",
+    "The Shining",
     "The Silence of the Lambs",
     "The Sixth Sense",
+    "The Stand",
     "The Terminator",
     "The Thing",
     "The Village",
     "The Wicker Man"
-  ],
-  "Horror Stories": [
-    "Alien",
-    "Alien 3",
-    "Alien: Resurrection",
-    "Aliens",
-    "Death Proof",
-    "Donnie Darko",
-    "Dracula",
-    "Frankenstein",
-    "Glass",
-    "IT",
-    "Salem's Lot",
-    "Sweeney Todd: The Demon Barber of Fleet Street",
-    "The Butterfly Effect",
-    "The Devil's Advocate",
-    "The Shining",
-    "The Sixth Sense",
-    "The Stand",
-    "The Terminator",
-    "The Village"
   ],
   "Hot Beverages": [
     "CHA",
@@ -10061,7 +10015,7 @@
   "Martial Arts": [
     "Dragon Ball"
   ],
-  "Martial Arts Films": [
+  "Martial Arts Stories": [
     "Ashes of Time",
     "Crouching Tiger, Hidden Dragon",
     "Hero",
@@ -14053,13 +14007,6 @@
     "Wright",
     "Zheng He"
   ],
-  "Period Films": [
-    "Howard's End",
-    "Sense and Sensibility",
-    "Shakespeare in Love",
-    "The Madness of King George",
-    "The Remains of the Day"
-  ],
   "Period Stories": [
     "12 Years a Slave",
     "Amadeus",
@@ -14068,6 +14015,7 @@
     "Gandhi",
     "Gladiator",
     "Green Book",
+    "Howard's End",
     "Kagemusha",
     "Les Misérables",
     "Once Upon a Time in Hollywood",
@@ -14087,6 +14035,8 @@
     "The Hidden Fortress",
     "The King's Speech",
     "The Last Emperor",
+    "The Madness of King George",
+    "The Remains of the Day",
     "Throne of Blood",
     "Titanic",
     "Yojimbo"
@@ -14753,7 +14703,7 @@
     "Wolf",
     "Wolverine"
   ],
-  "Prison Films": [
+  "Prison Stories": [
     "The Shawshank Redemption"
   ],
   "Programming Languages": [
@@ -15196,36 +15146,29 @@
     "V",
     "X"
   ],
-  "Romance Films": [
+  "Romance Stories": [
+    "About Time",
     "Annie Hall",
     "Brief Encounter",
     "Casablanca",
     "Chungking Express",
-    "Four Weddings and a Funeral",
-    "Happy Together",
-    "In the Mood for Love",
-    "Manhattan",
-    "My Blueberry Nights",
-    "Sense and Sensibility",
-    "Shakespeare in Love",
-    "The English Patient",
-    "Titanic"
-  ],
-  "Romance Stories": [
-    "About Time",
-    "Casablanca",
     "Four Christmases",
+    "Four Weddings and a Funeral",
     "Gone with the Wind",
     "Grease",
     "Groundhog Day",
     "Hairspray",
+    "Happy Together",
+    "In the Mood for Love",
     "Jane Eyre",
     "Kate & Leopold",
     "La La Land",
     "Lady and the Tramp",
     "Love Actually",
+    "Manhattan",
     "Moonrise Kingdom",
     "Moulin Rouge!",
+    "My Blueberry Nights",
     "My Fair Lady",
     "Out of Africa",
     "Outlander",
@@ -15393,6 +15336,9 @@
   "Sci-fi Stories": [
     "12 Monkeys",
     "1984",
+    "2001: A Space Odyssey",
+    "2046",
+    "A Clockwork Orange",
     "A Wrinkle in Time",
     "Akira",
     "Alien",
@@ -15410,15 +15356,20 @@
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III",
+    "Ball Lightning",
     "Blade Runner",
     "Brave New World",
+    "Death's End",
     "Deja Vu",
+    "Dracula",
     "Dune",
+    "E.T.",
     "Edge of Tomorrow",
     "Escape from New York",
     "Everything Everywhere All at Once",
     "Fahrenheit 451",
     "Flight of the Navigator",
+    "Frankenstein",
     "Galaxy Quest",
     "Interstellar",
     "Jurassic Park",
@@ -15436,6 +15387,7 @@
     "Stargate",
     "Tenet",
     "Terminator 2: Judgment Day",
+    "The Dark Forest",
     "The Door into Summer",
     "The Empire Strikes Back",
     "The End of Eternity",
@@ -15444,6 +15396,7 @@
     "The Force Awakens",
     "The Hitchhiker's Guide to the Galaxy",
     "The Last Jedi",
+    "The Man Who Fell to Earth",
     "The Man in the High Castle",
     "The Matrix",
     "The Phantom Menace",
@@ -15452,66 +15405,15 @@
     "The Shape of Water",
     "The Terminator",
     "The Thing",
+    "The Three-Body Problem",
     "The Time Machine",
     "The Time Ships",
     "The Time Traveler's Almanac",
+    "The Wandering Earth",
     "Time Bandits",
     "To Say Nothing of the Dog",
     "WALL-E",
     "X-Men: Days of Future Past"
-  ],
-  "Science Fiction": [
-    "12 Monkeys",
-    "A Wrinkle in Time",
-    "Alien",
-    "Alien 3",
-    "Alien: Resurrection",
-    "Aliens",
-    "Armageddon",
-    "Arrival",
-    "Avatar",
-    "Avatar: Frontiers of Pandora",
-    "Avatar: The Way of Water",
-    "Avengers: Endgame",
-    "Back to the Future",
-    "Back to the Future Part II",
-    "Back to the Future Part III",
-    "Ball Lightning",
-    "Brave New World",
-    "Death's End",
-    "Deja Vu",
-    "Dracula",
-    "Edge of Tomorrow",
-    "Flight of the Navigator",
-    "Frankenstein",
-    "Galaxy Quest",
-    "Interstellar",
-    "Lilo & Stitch",
-    "Looper",
-    "Predestination",
-    "Primer",
-    "Source Code",
-    "Tenet",
-    "Terminator 2: Judgment Day",
-    "The Dark Forest",
-    "The Fifth Element",
-    "The Philadelphia Experiment",
-    "The Terminator",
-    "The Three-Body Problem",
-    "The Wandering Earth",
-    "Time Bandits",
-    "WALL-E",
-    "X-Men: Days of Future Past"
-  ],
-  "Science Fiction Films": [
-    "2001: A Space Odyssey",
-    "2046",
-    "A Clockwork Orange",
-    "E.T.",
-    "Jurassic Park",
-    "Star Wars",
-    "The Man Who Fell to Earth",
-    "The Matrix"
   ],
   "Scientific Research": [
     "Challenger"
@@ -15821,9 +15723,6 @@
     "INT",
     "Key"
   ],
-  "Space Films": [
-    "Star Wars"
-  ],
   "Space Missions": [
     "Apollo",
     "Apollo 13",
@@ -15835,6 +15734,9 @@
     "Mercury",
     "NASA",
     "Voyager"
+  ],
+  "Space Stories": [
+    "Star Wars"
   ],
   "Space Telescopes": [
     "Galileo",

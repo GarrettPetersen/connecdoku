@@ -1,0 +1,420 @@
+const fs = require('fs');
+const { Matrix } = require('ml-matrix');
+
+console.log('Loading main dataset...');
+const startTime = Date.now();
+
+// Load main data
+const words = JSON.parse(fs.readFileSync('data/words.json', 'utf8'));
+const categories = JSON.parse(fs.readFileSync('data/categories.json', 'utf8'));
+
+const loadTime = Date.now() - startTime;
+console.log(`Loaded ${Object.keys(categories).length} categories and ${Object.keys(words).length} words (${loadTime}ms)`);
+
+// Extract category names and create mapping
+const categoryNames = Object.keys(categories);
+const categoryToIndex = new Map();
+categoryNames.forEach((name, index) => categoryToIndex.set(name, index));
+
+console.log('Step 1: Computing intersection matrix...');
+const intersectionStart = Date.now();
+
+// Compute intersection matrix
+const intersectionMatrix = new Matrix(categoryNames.length, categoryNames.length);
+for (let i = 0; i < categoryNames.length; i++) {
+    for (let j = 0; j < categoryNames.length; j++) {
+        const cat1Words = categories[categoryNames[i]];
+        const cat2Words = categories[categoryNames[j]];
+        
+        const intersection = cat1Words.filter(word => cat2Words.includes(word));
+        intersectionMatrix.set(i, j, intersection.length);
+    }
+}
+
+const intersectionTime = Date.now() - intersectionStart;
+console.log(`Intersection matrix computed (${intersectionTime}ms)`);
+
+console.log('Step 2: Computing 2-away matrix...');
+const twoAwayStart = Date.now();
+
+// Compute 2-away matrix using matrix multiplication
+const twoAwayMatrix = intersectionMatrix.mmul(intersectionMatrix);
+
+// Apply minimum path count threshold (≥4 for 4x4 puzzles)
+const minPaths = 4;
+let twoAwayCount = 0;
+for (let i = 0; i < categoryNames.length; i++) {
+    for (let j = 0; j < categoryNames.length; j++) {
+        const paths = twoAwayMatrix.get(i, j);
+        if (paths >= minPaths) {
+            twoAwayMatrix.set(i, j, 1);
+            twoAwayCount++;
+        } else {
+            twoAwayMatrix.set(i, j, 0);
+        }
+    }
+}
+
+const twoAwayTime = Date.now() - twoAwayStart;
+console.log(`2-away matrix computed (${twoAwayTime}ms)`);
+console.log(`Found ${twoAwayCount} 2-away connections (with minimum ${minPaths} paths requirement)`);
+
+// Function to check if two categories can be in the same dimension using 2-away matrix
+function canBeInSameDimension(cat1Index, cat2Index) {
+    return twoAwayMatrix.get(cat1Index, cat2Index) === 1;
+}
+
+// Function to check if a category can be added to existing categories in the other dimension
+function canAddToOtherDimension(catIndex, existingOtherCategories) {
+    for (const existingCat of existingOtherCategories) {
+        if (intersectionMatrix.get(catIndex, existingCat) === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Function to solve a puzzle with given row and column categories
+function solvePuzzle(rows, cols) {
+    // Simple set intersection approach: find one word per intersection that's unique
+    const solution = [];
+    const usedWords = new Set();
+    
+    // For each of the 16 intersections (4x4 grid)
+    for (let row = 0; row < rows.length; row++) {
+        for (let col = 0; col < cols.length; col++) {
+            const rowWords = categories[rows[row]];
+            const colWords = categories[cols[col]];
+            
+            // Find intersection of row and column categories
+            const intersection = rowWords.filter(word => colWords.includes(word));
+            
+            // Filter out words that are already used
+            const availableWords = intersection.filter(word => !usedWords.has(word));
+            
+            // If no valid words for this intersection, puzzle is impossible
+            if (availableWords.length === 0) {
+                return [];
+            }
+            
+            // Pick one word randomly from available options
+            const selectedWord = availableWords[Math.floor(Math.random() * availableWords.length)];
+            solution.push(selectedWord);
+            usedWords.add(selectedWord);
+        }
+    }
+    
+    return solution;
+}
+
+// Function to check if a new category is compatible with existing categories
+function isCompatible(newCatIndex, existingRows, existingCols) {
+    // Check compatibility with existing rows (2-away relationship)
+    for (const rowIndex of existingRows) {
+        if (!canBeInSameDimension(newCatIndex, rowIndex)) {
+            return false;
+        }
+    }
+    
+    // Check compatibility with existing columns (2-away relationship)
+    for (const colIndex of existingCols) {
+        if (!canBeInSameDimension(newCatIndex, colIndex)) {
+            return false;
+        }
+    }
+    
+    // Check compatibility with opposite dimension (1-away relationship)
+    if (existingRows.length > 0 && existingCols.length > 0) {
+        // If adding a row, check it has 1-away with all existing columns
+        if (existingRows.length < 4) {
+            if (!canAddToOtherDimension(newCatIndex, existingCols)) {
+                return false;
+            }
+        }
+        // If adding a column, check it has 1-away with all existing rows
+        else if (existingCols.length < 4) {
+            if (!canAddToOtherDimension(newCatIndex, existingRows)) {
+                return false;
+            }
+        }
+    }
+    
+    return true;
+}
+
+// Function to create a unique key for a puzzle
+function createPuzzleKey(rows, cols) {
+    return `${rows.sort().join(',')}-${cols.sort().join(',')}`;
+}
+
+// Incremental search function that builds combinations step by step
+function findPuzzles() {
+    const candidates = [];
+    const maxCandidates = 100000;
+    const seenPuzzles = new Set(); // Track seen puzzles to prevent duplicates
+
+    console.log('Starting incremental search...');
+    const searchStart = Date.now();
+
+    // Create a list of all possible category positions
+    // Each category can be either a row or column, so we have 2 * categoryNames.length positions
+    const allPositions = [];
+    for (let i = 0; i < categoryNames.length; i++) {
+        allPositions.push({ categoryIndex: i, isRow: true });
+        allPositions.push({ categoryIndex: i, isRow: false });
+    }
+
+    // Initialize pointers: start with first position (which must be a row)
+    let pointers = [0]; // Start with first position (first category as row)
+    let searchCount = 0;
+    let lastProgressUpdate = 0;
+
+    // Get terminal width for truncation
+    const terminalWidth = process.stdout.columns || 80;
+    const maxCategoryLength = Math.max(20, Math.floor(terminalWidth * 0.6));
+
+    while (true) {
+        searchCount++;
+        
+        // Check if we have a complete 4x4 puzzle (4 rows + 4 columns = 8 pointers)
+        if (pointers.length === 8) {
+            // Extract rows and columns from pointers
+            const rows = [];
+            const cols = [];
+            
+            for (const pointer of pointers) {
+                const position = allPositions[pointer];
+                if (position.isRow) {
+                    rows.push(categoryNames[position.categoryIndex]);
+                } else {
+                    cols.push(categoryNames[position.categoryIndex]);
+                }
+            }
+            
+            // Check that we have exactly 4 rows and 4 columns
+            if (rows.length === 4 && cols.length === 4) {
+                const puzzleKey = createPuzzleKey(rows, cols);
+                
+                // Check for duplicates
+                if (seenPuzzles.has(puzzleKey)) {
+                    console.log('ERROR: Duplicate puzzle detected!', puzzleKey);
+                    process.exit(1);
+                }
+                
+                seenPuzzles.add(puzzleKey);
+                
+                const puzzle = {
+                    rows: rows,
+                    cols: cols,
+                    size: '4x4'
+                };
+                candidates.push(puzzle);
+                
+                // Check if this is our simple puzzle
+                const isSimplePuzzle = rows.includes("Things Chinese") && 
+                                     rows.includes("Things American") &&
+                                     rows.includes("Things British") &&
+                                     rows.includes("Things Japanese") &&
+                                     cols.includes("People") &&
+                                     cols.includes("Foods") &&
+                                     cols.includes("Movies") &&
+                                     cols.includes("Books");
+                if (isSimplePuzzle) {
+                    console.log('\n🎉 FOUND THE SIMPLE PUZZLE!');
+                    console.log('Rows:', rows);
+                    console.log('Cols:', cols);
+                }
+                
+                if (candidates.length >= maxCandidates) {
+                    console.log(`\nReached maximum candidate limit (${maxCandidates})`);
+                    break;
+                }
+            }
+        }
+        
+        // Try to add next pointer
+        let addedPointer = false;
+        
+        // Find next compatible position
+        let nextPointerIndex = pointers.length > 0 ? 
+            pointers[pointers.length - 1] + 1 : 0;
+        
+        while (nextPointerIndex < allPositions.length) {
+            const nextPosition = allPositions[nextPointerIndex];
+            
+            // Constraint: First pointer can only be a row position
+            if (pointers.length === 0 && !nextPosition.isRow) {
+                nextPointerIndex++;
+                continue;
+            }
+            
+            // Extract current rows and columns from existing pointers
+            const currentRows = [];
+            const currentCols = [];
+            
+            for (const pointer of pointers) {
+                const position = allPositions[pointer];
+                if (position.isRow) {
+                    currentRows.push(position.categoryIndex);
+                } else {
+                    currentCols.push(position.categoryIndex);
+                }
+            }
+            
+            // Check if we can add this position
+            let canAdd = true;
+            
+            // Check that we don't already have this category
+            if (currentRows.includes(nextPosition.categoryIndex) || 
+                currentCols.includes(nextPosition.categoryIndex)) {
+                canAdd = false;
+            }
+            
+            // Check that we don't exceed 4 rows or 4 columns
+            if (nextPosition.isRow && currentRows.length >= 4) {
+                canAdd = false;
+            }
+            if (!nextPosition.isRow && currentCols.length >= 4) {
+                canAdd = false;
+            }
+            
+            // Check compatibility with existing categories
+            if (canAdd) {
+                canAdd = isCompatible(nextPosition.categoryIndex, currentRows, currentCols);
+            }
+            
+            if (canAdd) {
+                // Add this pointer
+                pointers.push(nextPointerIndex);
+                addedPointer = true;
+                break;
+            }
+            
+            nextPointerIndex++;
+        }
+        
+        // If we couldn't add a pointer, backtrack
+        if (!addedPointer) {
+            // Remove last pointer
+            pointers.pop();
+            
+            // If we've backtracked to the beginning, we're done
+            if (pointers.length === 0) {
+                break;
+            }
+            
+            // Advance the pointer of the last remaining pointer
+            // Special case: first pointer increments by 2 to skip column positions
+            if (pointers.length === 1) {
+                pointers[pointers.length - 1] += 2;
+            } else {
+                pointers[pointers.length - 1]++;
+            }
+        }
+        
+        // Update progress with nice progress bars
+        if (searchCount - lastProgressUpdate >= 1000) {
+            const currentCategories = pointers.map(p => {
+                const pos = allPositions[p];
+                return `${categoryNames[pos.categoryIndex]}(${pos.isRow ? 'R' : 'C'})`;
+            }).join(', ');
+            
+            const otherElements = `Candidates: ${candidates.length} | Search: ${searchCount}`;
+            const availableSpace = process.stdout.columns - otherElements.length - 10;
+            
+            let truncatedCategories;
+            if (currentCategories.length <= availableSpace) {
+                truncatedCategories = currentCategories;
+            } else {
+                truncatedCategories = currentCategories.substring(0, availableSpace - 3) + '...';
+            }
+            
+            // Calculate progress based on first pointer position
+            const firstPointerPos = pointers.length > 0 ? pointers[0] : 0;
+            const progressPercent = (firstPointerPos / allPositions.length * 100).toFixed(1);
+            const progressBar = '█'.repeat(Math.floor(progressPercent / 2)) + '░'.repeat(50 - Math.floor(progressPercent / 2));
+            
+            // Calculate ETA
+            const elapsed = Date.now() - searchStart;
+            const progress = firstPointerPos / allPositions.length;
+            const eta = progress > 0 ? (elapsed / progress) - elapsed : 0;
+            const etaMinutes = Math.floor(eta / 60000);
+            const etaSeconds = Math.floor((eta % 60000) / 1000);
+            
+            process.stdout.write('\r\x1b[K');
+            process.stdout.write('\x1b[1A\x1b[K');
+            process.stdout.write(`Progress: [${progressBar}] ${progressPercent}% (${firstPointerPos}/${allPositions.length}) - ETA: ${etaMinutes}m ${etaSeconds}s\n`);
+            process.stdout.write(`Candidates: ${candidates.length} | Categories: ${truncatedCategories} | Search: ${searchCount}`);
+            
+            lastProgressUpdate = searchCount;
+        }
+    }
+
+    const searchTime = Date.now() - searchStart;
+    console.log(`\nFound ${candidates.length} candidate puzzles (${searchTime}ms)`);
+    
+    // Save candidate puzzles for inspection
+    if (candidates.length > 0) {
+        fs.writeFileSync('candidate_puzzles_incremental_4x4.json', JSON.stringify(candidates, null, 2));
+        console.log(`Saved ${candidates.length} candidate puzzles to candidate_puzzles_incremental_4x4.json`);
+    }
+
+    // Solve each candidate with progress bars
+    const solvedPuzzles = [];
+    let solvedCount = 0;
+    const solveStart = Date.now();
+    const solveStartTime = Date.now();
+    
+    for (const candidate of candidates) {
+        const solutions = solvePuzzle(candidate.rows, candidate.cols);
+        if (solutions.length > 0) {
+            const solvedPuzzle = {
+                ...candidate,
+                solutions: solutions
+            };
+            solvedPuzzles.push(solvedPuzzle);
+        }
+
+        solvedCount++;
+        
+        // Update progress every 1000 candidates or at the end
+        if (solvedCount % 1000 === 0 || solvedCount === candidates.length) {
+            const elapsed = Date.now() - solveStartTime;
+            const progress = solvedCount / candidates.length;
+            const eta = progress > 0 ? (elapsed / progress) - elapsed : 0;
+            const etaMinutes = Math.floor(eta / 60000);
+            const etaSeconds = Math.floor((eta % 60000) / 1000);
+            
+            const progressBar = '█'.repeat(Math.floor(progress * 50)) + '░'.repeat(50 - Math.floor(progress * 50));
+            const percent = (progress * 100).toFixed(1);
+            
+            process.stdout.write('\r\x1b[K');
+            process.stdout.write(`Solving: [${progressBar}] ${percent}% (${solvedCount}/${candidates.length}) - ETA: ${etaMinutes}m ${etaSeconds}s`);
+        }
+    }
+    
+    // Clear the progress line
+    process.stdout.write('\r\x1b[K\n');
+    const solveTime = Date.now() - solveStart;
+
+    // Save results to file
+    if (solvedPuzzles.length > 0) {
+        fs.writeFileSync('puzzles_incremental_4x4.json', JSON.stringify(solvedPuzzles, null, 2));
+        console.log(`Saved ${solvedPuzzles.length} 4x4 puzzles to puzzles_incremental_4x4.json`);
+    }
+
+    // Print summary with timing
+    const totalTime = Date.now() - startTime;
+    console.log('\n=== TIMING SUMMARY ===');
+    console.log(`Data loading: ${loadTime}ms`);
+    console.log(`Intersection matrix: ${intersectionTime}ms`);
+    console.log(`2-away matrix: ${twoAwayTime}ms`);
+    console.log(`Search phase: ${searchTime}ms`);
+    console.log(`Solve phase: ${solveTime}ms`);
+    console.log(`Total time: ${totalTime}ms`);
+    console.log('\n=== RESULTS SUMMARY ===');
+    console.log(`4x4: ${solvedPuzzles.length} puzzles`);
+}
+
+// Run the incremental solver
+findPuzzles(); 
