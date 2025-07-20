@@ -61,19 +61,24 @@ while (categoriesRemoved) {
     const twoAwayStart = Date.now();
 
     // Compute 2-away matrix using matrix multiplication
-    twoAwayMatrix = intersectionMatrix.mmul(intersectionMatrix);
+    const twoAwayMatrixRaw = intersectionMatrix.mmul(intersectionMatrix);
+    twoAwayMatrix = new Matrix(workingCategoryNames.length, workingCategoryNames.length);
 
-    // Apply minimum path count threshold (≥4 for 4x4 puzzles)
+    // Apply minimum path count threshold (≥4 for 4x4 puzzles) and set diagonal to 0
     const minPaths = 4;
     let twoAwayCount = 0;
     for (let i = 0; i < workingCategoryNames.length; i++) {
         for (let j = 0; j < workingCategoryNames.length; j++) {
-            const paths = twoAwayMatrix.get(i, j);
-            if (paths >= minPaths) {
-                twoAwayMatrix.set(i, j, 1);
-                twoAwayCount++;
+            if (i === j) {
+                twoAwayMatrix.set(i, j, 0); // Diagonal entries are 0
             } else {
-                twoAwayMatrix.set(i, j, 0);
+                const paths = twoAwayMatrixRaw.get(i, j);
+                if (paths >= minPaths) {
+                    twoAwayMatrix.set(i, j, 1);
+                    twoAwayCount++;
+                } else {
+                    twoAwayMatrix.set(i, j, 0);
+                }
             }
         }
     }
@@ -98,20 +103,14 @@ while (categoriesRemoved) {
         
         // Criterion 2: Check if category is 2-away from at least 3 other categories via at least 4 different routes
         let twoAwayCount = 0;
-        let twoAwayDetails = [];
         for (let j = 0; j < workingCategoryNames.length; j++) {
-            if (i !== j && twoAwayMatrix.get(i, j) === 1) {
-                twoAwayCount++;
-                // Get the actual path count from the original matrix multiplication result
-                const actualPaths = intersectionMatrix.mmul(intersectionMatrix).get(i, j);
-                twoAwayDetails.push(`${workingCategoryNames[j]}(${actualPaths} paths)`);
-            }
+            twoAwayCount += twoAwayMatrix.get(i, j);
         }
         
         // Check if category meets both criteria
         if (oneAwayCount < 4 || twoAwayCount < 3) {
             categoriesToRemove.push(i);
-            console.log(`Removing ${categoryName}: 1-away=${oneAwayCount}, 2-away=${twoAwayCount} [${twoAwayDetails.join(', ')}]`);
+            console.log(`Removing ${categoryName}: 1-away=${oneAwayCount}, 2-away=${twoAwayCount}`);
         }
     }
     
