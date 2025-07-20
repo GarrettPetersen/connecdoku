@@ -605,12 +605,9 @@ function findPuzzles() {
             
             // Check if the new state violates constraints
             if (newRows.length > 4 || newCols.length > 4 || pointers.length > 8) {
-                console.error(`\n🚨 INVALID STATE AFTER BACKTRACKING: ${newRows.length} rows, ${newCols.length} cols, ${pointers.length} pointers`);
-                console.error(`Pointers: [${pointers.join(', ')}]`);
-                console.error(`Rows: [${newRows.join(', ')}]`);
-                console.error(`Cols: [${newCols.join(', ')}]`);
-                process.exit(1);
-            }
+                // If the new state still violates the limits, keep back-tracking/advancing
+                continue;               // let the while-loop iterate; it will either
+            }                           // advance this pointer further or pop again
             
             // Continue to next iteration to try the advanced pointer
             continue;
