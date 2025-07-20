@@ -127,58 +127,35 @@ function isValidPuzzle(rows, cols) {
 
 // Function to solve a puzzle with given row and column categories
 function solvePuzzle(rows, cols) {
-    // Try to find a valid solution by testing different word combinations
-    const solutions = [];
+    // Simple set intersection approach: find one word per intersection that's unique
+    const solution = [];
     const usedWords = new Set();
-
-    // Create a matrix of available words for each cell
-    const availableWordsMatrix = [];
-    for (let i = 0; i < rows.length; i++) {
-        availableWordsMatrix[i] = [];
-        for (let j = 0; j < cols.length; j++) {
-            const rowWords = categories[rows[i]];
-            const colWords = categories[cols[j]];
-
-            // Find intersection
+    
+    // For each of the 16 intersections (4x4 grid)
+    for (let row = 0; row < rows.length; row++) {
+        for (let col = 0; col < cols.length; col++) {
+            const rowWords = categories[rows[row]];
+            const colWords = categories[cols[col]];
+            
+            // Find intersection of row and column categories
             const intersection = rowWords.filter(word => colWords.includes(word));
-            availableWordsMatrix[i][j] = intersection;
-        }
-    }
-
-    // Try to find a valid solution using backtracking
-    function trySolve(row, col) {
-        if (row >= rows.length) {
-            return true; // All cells filled successfully
-        }
-
-        const nextRow = col + 1 >= cols.length ? row + 1 : row;
-        const nextCol = col + 1 >= cols.length ? 0 : col + 1;
-
-        // Try each available word for this cell
-        for (const word of availableWordsMatrix[row][col]) {
-            if (!usedWords.has(word)) {
-                usedWords.add(word);
-                solutions[row * cols.length + col] = word;
-
-                if (trySolve(nextRow, nextCol)) {
-                    return true; // Found a valid solution
-                }
-
-                // Backtrack
-                usedWords.delete(word);
-                solutions[row * cols.length + col] = undefined;
+            
+            // Filter out words that are already used
+            const availableWords = intersection.filter(word => !usedWords.has(word));
+            
+            // If no valid words for this intersection, puzzle is impossible
+            if (availableWords.length === 0) {
+                return [];
             }
+            
+            // Pick one word randomly from available options
+            const selectedWord = availableWords[Math.floor(Math.random() * availableWords.length)];
+            solution.push(selectedWord);
+            usedWords.add(selectedWord);
         }
-
-        return false; // No valid solution found
     }
-
-    // Try to solve the puzzle
-    if (trySolve(0, 0)) {
-        return solutions.filter(word => word !== undefined);
-    }
-
-    return []; // No valid solution found
+    
+    return solution;
 }
 
 // Function to check if two categories can be in the same dimension using 2-away matrix

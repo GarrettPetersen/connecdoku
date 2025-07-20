@@ -5,9 +5,6 @@
   "Disaster Films": [
     "Titanic"
   ],
-  "James Cameron": [
-    "Titanic"
-  ],
   "Movies featuring Billy Zane": [
     "Titanic"
   ],
@@ -410,17 +407,8 @@
   "Movies featuring Ingrid Bergman": [
     "Casablanca"
   ],
-  "Francis Ford Coppola": [
-    "The Godfather"
-  ],
   "Movies featuring Marlon Brando": [
     "The Godfather"
-  ],
-  "Quentin Tarantino": [
-    "Pulp Fiction"
-  ],
-  "Robert Zemeckis": [
-    "Forrest Gump"
   ],
   "Action Films": [
     "The Matrix"
@@ -439,9 +427,6 @@
   ],
   "Movies directed by Hiroyuki Morita": [
     "The Cat Returns"
-  ],
-  "George Lucas": [
-    "Star Wars"
   ],
   "Movies featuring Alec Guinness": [
     "Star Wars"
@@ -911,7 +896,7 @@
   "Legal Stories": [
     "To Kill a Mockingbird"
   ],
-  "Jonathan Demme": [
+  "Movies directed by Jonathan Demme": [
     "The Silence of the Lambs"
   ],
   "Movies directed by Alfonso Cuarón": [
@@ -922,9 +907,6 @@
   ],
   "Movies directed by Kevin Reynolds": [
     "Robin Hood: Prince of Thieves"
-  ],
-  "Ang Lee": [
-    "Sense and Sensibility"
   ],
   "Movies featuring Hugh Grant": [
     "Love Actually"
@@ -983,14 +965,8 @@
   "Movies featuring Margot Robbie": [
     "Once Upon a Time in Hollywood"
   ],
-  "Movies directed by David Fincher": [
-    "Alien 3"
-  ],
   "Movies directed by Jean-Pierre Jeunet": [
     "Alien: Resurrection"
-  ],
-  "Movies directed by Mike Nichols": [
-    "Working Girl"
   ],
   "Movies directed by Jon Amiel": [
     "Copycat"
@@ -1018,9 +994,6 @@
   ],
   "Movies directed by Michael Bay": [
     "Armageddon"
-  ],
-  "Movies directed by Wes Anderson": [
-    "Moonrise Kingdom"
   ],
   "Movies directed by Eli Roth": [
     "Death Wish"
@@ -1132,9 +1105,6 @@
   ],
   "Movies featuring John Cusack": [
     "Hot Tub Time Machine"
-  ],
-  "Movies directed by Bryan Singer": [
-    "X-Men: Days of Future Past"
   ],
   "Movies featuring Patrick Stewart": [
     "X-Men: Days of Future Past"
@@ -1331,9 +1301,6 @@
   "Movies featuring Gene Kelly": [
     "Singin' in the Rain"
   ],
-  "Movies directed by Steven Spielberg": [
-    "West Side Story"
-  ],
   "Movies featuring Ansel Elgort": [
     "West Side Story"
   ],
@@ -1372,9 +1339,6 @@
   ],
   "Movies featuring Carol Burnett": [
     "Annie"
-  ],
-  "Movies directed by Carol Reed": [
-    "Oliver!"
   ],
   "Movies featuring Oliver Reed": [
     "Oliver!"
@@ -1625,14 +1589,8 @@
   "Movies featuring Kaya Scodelario": [
     "Pirates of the Caribbean: Dead Men Tell No Tales"
   ],
-  "Milos Forman": [
-    "One Flew Over the Cuckoo's Nest"
-  ],
   "Movies featuring Louise Fletcher": [
     "One Flew Over the Cuckoo's Nest"
-  ],
-  "John G. Avildsen": [
-    "Rocky"
   ],
   "Movies directed by John G. Avildsen": [
     "Rocky"
@@ -1778,9 +1736,6 @@
   "Movies featuring Sophie Marceau": [
     "Braveheart"
   ],
-  "Anthony Minghella": [
-    "The English Patient"
-  ],
   "Movies directed by Anthony Minghella": [
     "The English Patient"
   ],
@@ -1789,9 +1744,6 @@
   ],
   "Movies featuring Kristin Scott Thomas": [
     "The English Patient"
-  ],
-  "John Madden": [
-    "Shakespeare in Love"
   ],
   "Movies directed by John Madden": [
     "Shakespeare in Love"
@@ -1815,9 +1767,6 @@
     "American Beauty"
   ],
   "Movies featuring Thora Birch": [
-    "American Beauty"
-  ],
-  "Sam Mendes": [
     "American Beauty"
   ],
   "Movies featuring Connie Nielsen": [
@@ -1852,9 +1801,6 @@
   ],
   "Movies featuring Tommy Lee Jones": [
     "No Country for Old Men"
-  ],
-  "Movies directed by Danny Boyle": [
-    "Slumdog Millionaire"
   ],
   "Movies featuring Anil Kapoor": [
     "Slumdog Millionaire"
@@ -2108,9 +2054,6 @@
   "Biographical Films": [
     "Lawrence of Arabia"
   ],
-  "Carol Reed": [
-    "The Third Man"
-  ],
   "Nathaniel Hawthorne": [
     "The Scarlet Letter"
   ],
@@ -2132,32 +2075,14 @@
   "Gangster Films": [
     "Goodfellas"
   ],
-  "Martin Scorsese": [
-    "Goodfellas"
-  ],
-  "David Fincher": [
-    "Fight Club"
-  ],
-  "Bryan Singer": [
-    "The Usual Suspects"
-  ],
-  "Danny Boyle": [
-    "Trainspotting"
-  ],
   "Drug Films": [
     "Trainspotting"
   ],
-  "Richard Curtis": [
-    "Four Weddings and a Funeral"
-  ],
-  "Nicholas Hytner": [
+  "Movies directed by Nicholas Hytner": [
     "The Madness of King George"
   ],
-  "Neil Jordan": [
+  "Movies directed by Neil Jordan": [
     "The Crying Game"
-  ],
-  "Wes Anderson": [
-    "The Grand Budapest Hotel"
   ],
   "Sylvia Plath": [
     "The Bell Jar"
@@ -2165,19 +2090,16 @@
   "Jack Kerouac": [
     "On the Road"
   ],
-  "Mike Nichols": [
-    "The Graduate"
-  ],
-  "Dennis Hopper": [
+  "Movies directed by Dennis Hopper": [
     "Easy Rider"
   ],
   "Road Movies": [
     "Easy Rider"
   ],
-  "John Schlesinger": [
+  "Movies directed by John Schlesinger": [
     "Midnight Cowboy"
   ],
-  "Roman Polanski": [
+  "Movies directed by Roman Polanski": [
     "Chinatown"
   ],
   "George Orwell": [
@@ -2192,19 +2114,19 @@
   "Heist Films": [
     "The Italian Job"
   ],
-  "Peter Collinson": [
+  "Movies directed by Peter Collinson": [
     "The Italian Job"
   ],
-  "Mike Hodges": [
+  "Movies directed by Mike Hodges": [
     "Get Carter"
   ],
-  "Donald Cammell": [
+  "Movies directed by Donald Cammell": [
     "Performance"
   ],
   "Folk Horror": [
     "The Wicker Man"
   ],
-  "Robin Hardy": [
+  "Movies directed by Robin Hardy": [
     "The Wicker Man"
   ],
   "Maritime Stories": [
@@ -2587,10 +2509,6 @@
     "Sense and Sensibility",
     "Love Actually"
   ],
-  "Movies directed by Richard Curtis": [
-    "Love Actually",
-    "About Time"
-  ],
   "Movies featuring Helena Bonham Carter": [
     "Sweeney Todd: The Demon Barber of Fleet Street",
     "The King's Speech"
@@ -2606,10 +2524,6 @@
   "Movies featuring Hilary Swank": [
     "Insomnia",
     "Million Dollar Baby"
-  ],
-  "Movies directed by Martin Scorsese": [
-    "The Irishman",
-    "The Departed"
   ],
   "Movies featuring Tim Roth": [
     "Reservoir Dogs",
@@ -2631,9 +2545,17 @@
     "Inglourious Basterds",
     "Django Unchained"
   ],
+  "Movies directed by David Fincher": [
+    "Alien 3",
+    "Fight Club"
+  ],
   "Movies directed by Ivan Reitman": [
     "Ghostbusters",
     "Ghostbusters II"
+  ],
+  "Movies directed by Mike Nichols": [
+    "Working Girl",
+    "The Graduate"
   ],
   "Movies directed by Terry Gilliam": [
     "12 Monkeys",
@@ -2646,6 +2568,10 @@
   "Movies directed by Robert Rodriguez": [
     "Sin City",
     "Sin City: A Dame to Kill For"
+  ],
+  "Movies directed by Wes Anderson": [
+    "Moonrise Kingdom",
+    "The Grand Budapest Hotel"
   ],
   "Movies featuring Bill Murray": [
     "Groundhog Day",
@@ -2683,6 +2609,10 @@
     "Bill & Ted's Excellent Adventure",
     "Bill & Ted's Bogus Journey"
   ],
+  "Movies directed by Bryan Singer": [
+    "X-Men: Days of Future Past",
+    "The Usual Suspects"
+  ],
   "Movies featuring Robert Downey Jr.": [
     "Avengers: Endgame",
     "Oppenheimer"
@@ -2714,6 +2644,10 @@
   "Movies directed by Robert Wise": [
     "The Sound of Music",
     "West Side Story"
+  ],
+  "Movies directed by Carol Reed": [
+    "Oliver!",
+    "The Third Man"
   ],
   "Movies directed by Norman Jewison": [
     "Fiddler on the Roof",
@@ -2751,6 +2685,10 @@
     "Unforgiven",
     "Million Dollar Baby"
   ],
+  "Movies directed by Danny Boyle": [
+    "Slumdog Millionaire",
+    "Trainspotting"
+  ],
   "Movies featuring Michael Keaton": [
     "Birdman",
     "Spotlight"
@@ -2759,7 +2697,7 @@
     "Moonlight",
     "Green Book"
   ],
-  "Woody Allen": [
+  "Movies directed by Woody Allen": [
     "Manhattan",
     "Annie Hall"
   ],
@@ -2803,15 +2741,15 @@
     "The Ladykillers",
     "Kind Hearts and Coronets"
   ],
-  "Frank Darabont": [
+  "Movies directed by Frank Darabont": [
     "The Shawshank Redemption",
     "The Green Mile"
   ],
-  "James Ivory": [
+  "Movies directed by James Ivory": [
     "The Remains of the Day",
     "Howard's End"
   ],
-  "William Friedkin": [
+  "Movies directed by William Friedkin": [
     "The French Connection",
     "The Exorcist"
   ],
@@ -3000,11 +2938,6 @@
     "The Last Jedi",
     "The Rise of Skywalker"
   ],
-  "Steven Spielberg": [
-    "Jurassic Park",
-    "Jaws",
-    "E.T."
-  ],
   "Movies featuring Verna Felton": [
     "Dumbo",
     "Cinderella",
@@ -3035,10 +2968,20 @@
     "Alien",
     "Gladiator"
   ],
+  "Movies directed by Richard Curtis": [
+    "Love Actually",
+    "About Time",
+    "Four Weddings and a Funeral"
+  ],
   "Movies featuring Michael Madsen": [
     "Donnie Brasco",
     "Reservoir Dogs",
     "Kill Bill: Volume 2"
+  ],
+  "Movies directed by Martin Scorsese": [
+    "The Irishman",
+    "The Departed",
+    "Goodfellas"
   ],
   "Movies featuring Joe Pesci": [
     "The Irishman",
@@ -3125,12 +3068,12 @@
     "Hard Boiled",
     "A Better Tomorrow"
   ],
-  "John Woo": [
+  "Movies directed by John Woo": [
     "The Killer",
     "Hard Boiled",
     "A Better Tomorrow"
   ],
-  "Zhang Yimou": [
+  "Movies directed by Zhang Yimou": [
     "Hero",
     "House of Flying Daggers",
     "Raise the Red Lantern"
@@ -3140,22 +3083,22 @@
     "Kurosawa",
     "Ozu"
   ],
-  "David Lean": [
+  "Movies directed by David Lean": [
     "Lawrence of Arabia",
     "The Bridge on the River Kwai",
     "Brief Encounter"
   ],
-  "Stanley Kubrick": [
+  "Movies directed by Stanley Kubrick": [
     "Dr. Strangelove",
     "A Clockwork Orange",
     "2001: A Space Odyssey"
   ],
-  "Lindsay Anderson": [
+  "Movies directed by Lindsay Anderson": [
     "If....",
     "O Lucky Man!",
     "Britannia Hospital"
   ],
-  "Nicolas Roeg": [
+  "Movies directed by Nicolas Roeg": [
     "Don't Look Now",
     "The Man Who Fell to Earth",
     "Walkabout"

@@ -360,9 +360,6 @@
     "Pharaoh",
     "Tsar"
   ],
-  "Ang Lee": [
-    "Sense and Sensibility"
-  ],
   "Animal Stories": [
     "The Jungle Book",
     "The Tale of Peter Rabbit",
@@ -406,9 +403,6 @@
   "Antarctic Exploration": [
     "Discovery",
     "Terra Nova"
-  ],
-  "Anthony Minghella": [
-    "The English Patient"
   ],
   "Appliances": [
     "Cooler",
@@ -1087,9 +1081,6 @@
     "Pumpernickel",
     "Rye"
   ],
-  "Bryan Singer": [
-    "The Usual Suspects"
-  ],
   "Burger Toppings": [
     "Avocado",
     "Bacon",
@@ -1166,9 +1157,6 @@
     "Uno",
     "Whist",
     "Yugioh"
-  ],
-  "Carol Reed": [
-    "The Third Man"
   ],
   "Cars": [
     "Bronco",
@@ -2640,24 +2628,10 @@
     "Foxtrot",
     "Tango"
   ],
-  "Danny Boyle": [
-    "Trainspotting"
-  ],
-  "David Fincher": [
-    "Fight Club"
-  ],
-  "David Lean": [
-    "Brief Encounter",
-    "Lawrence of Arabia",
-    "The Bridge on the River Kwai"
-  ],
   "Demigods": [
     "Achilles",
     "Perseus",
     "Theseus"
-  ],
-  "Dennis Hopper": [
-    "Easy Rider"
   ],
   "Deserts": [
     "Gobi",
@@ -2842,9 +2816,6 @@
     "Goat",
     "Horse",
     "Sheep"
-  ],
-  "Donald Cammell": [
-    "Performance"
   ],
   "Drama Films": [
     "American Beauty",
@@ -8720,13 +8691,6 @@
     "Zambia",
     "Zimbabwe"
   ],
-  "Francis Ford Coppola": [
-    "The Godfather"
-  ],
-  "Frank Darabont": [
-    "The Green Mile",
-    "The Shawshank Redemption"
-  ],
   "French Line": [
     "Normandie"
   ],
@@ -8776,9 +8740,6 @@
     "Emerald",
     "Ruby",
     "Sapphire"
-  ],
-  "George Lucas": [
-    "Star Wars"
   ],
   "George Orwell": [
     "Animal Farm"
@@ -9324,13 +9285,6 @@
     "Moneypenny",
     "Q"
   ],
-  "James Cameron": [
-    "Titanic"
-  ],
-  "James Ivory": [
-    "Howard's End",
-    "The Remains of the Day"
-  ],
   "Japanese Films": [
     "Akira",
     "Arrietty",
@@ -9381,23 +9335,6 @@
     "Rugelach",
     "Schmaltz",
     "Tzimmes"
-  ],
-  "John G. Avildsen": [
-    "Rocky"
-  ],
-  "John Madden": [
-    "Shakespeare in Love"
-  ],
-  "John Schlesinger": [
-    "Midnight Cowboy"
-  ],
-  "John Woo": [
-    "A Better Tomorrow",
-    "Hard Boiled",
-    "The Killer"
-  ],
-  "Jonathan Demme": [
-    "The Silence of the Lambs"
   ],
   "K-pop": [
     "(G)I-DLE",
@@ -9523,11 +9460,6 @@
     "LED",
     "Neon",
     "Xenon"
-  ],
-  "Lindsay Anderson": [
-    "Britannia Hospital",
-    "If....",
-    "O Lucky Man!"
   ],
   "Liu Cixin": [
     "Ball Lightning",
@@ -10137,9 +10069,6 @@
     "The Grandmaster",
     "The Hand"
   ],
-  "Martin Scorsese": [
-    "Goodfellas"
-  ],
   "Marvel Characters": [
     "Angel",
     "Beast",
@@ -10266,12 +10195,6 @@
     "San Marino",
     "Vatican City"
   ],
-  "Mike Hodges": [
-    "Get Carter"
-  ],
-  "Mike Nichols": [
-    "The Graduate"
-  ],
   "Military Leaders": [
     "George Washington",
     "Grant",
@@ -10323,9 +10246,6 @@
     "NATO",
     "Overwatch",
     "Uniform"
-  ],
-  "Milos Forman": [
-    "One Flew Over the Cuckoo's Nest"
   ],
   "Modern Countries": [
     "Afghanistan",
@@ -11006,10 +10926,12 @@
     "Driving Miss Daisy"
   ],
   "Movies directed by Bryan Singer": [
+    "The Usual Suspects",
     "X-Men: Days of Future Past"
   ],
   "Movies directed by Carol Reed": [
-    "Oliver!"
+    "Oliver!",
+    "The Third Man"
   ],
   "Movies directed by Chloé Zhao": [
     "Nomadland"
@@ -11059,10 +10981,12 @@
     "Everything Everywhere All at Once"
   ],
   "Movies directed by Danny Boyle": [
-    "Slumdog Millionaire"
+    "Slumdog Millionaire",
+    "Trainspotting"
   ],
   "Movies directed by David Fincher": [
-    "Alien 3"
+    "Alien 3",
+    "Fight Club"
   ],
   "Movies directed by David Greene": [
     "Godspell"
@@ -11070,6 +10994,11 @@
   "Movies directed by David Hand": [
     "Bambi",
     "Snow White and the Seven Dwarfs"
+  ],
+  "Movies directed by David Lean": [
+    "Brief Encounter",
+    "Lawrence of Arabia",
+    "The Bridge on the River Kwai"
   ],
   "Movies directed by David Yates": [
     "Harry Potter and the Deathly Hallows: Part 1",
@@ -11083,6 +11012,12 @@
   ],
   "Movies directed by Denis Villeneuve": [
     "Arrival"
+  ],
+  "Movies directed by Dennis Hopper": [
+    "Easy Rider"
+  ],
+  "Movies directed by Donald Cammell": [
+    "Performance"
   ],
   "Movies directed by Doug Liman": [
     "Edge of Tomorrow"
@@ -11103,6 +11038,10 @@
   ],
   "Movies directed by Frank Capra": [
     "It's a Wonderful Life"
+  ],
+  "Movies directed by Frank Darabont": [
+    "The Green Mile",
+    "The Shawshank Redemption"
   ],
   "Movies directed by Frank Miller": [
     "Sin City",
@@ -11217,6 +11156,10 @@
     "The Terminator",
     "Titanic"
   ],
+  "Movies directed by James Ivory": [
+    "Howard's End",
+    "The Remains of the Day"
+  ],
   "Movies directed by James L. Brooks": [
     "Terms of Endearment"
   ],
@@ -11277,6 +11220,14 @@
   "Movies directed by John Pasquin": [
     "The Santa Clause"
   ],
+  "Movies directed by John Schlesinger": [
+    "Midnight Cowboy"
+  ],
+  "Movies directed by John Woo": [
+    "A Better Tomorrow",
+    "Hard Boiled",
+    "The Killer"
+  ],
   "Movies directed by Jon Amiel": [
     "Copycat"
   ],
@@ -11285,6 +11236,9 @@
   ],
   "Movies directed by Jon M. Chu": [
     "In the Heights"
+  ],
+  "Movies directed by Jonathan Demme": [
+    "The Silence of the Lambs"
   ],
   "Movies directed by Kathryn Bigelow": [
     "The Hurt Locker"
@@ -11304,6 +11258,11 @@
   "Movies directed by Lin-Manuel Miranda": [
     "Tick, Tick... Boom!"
   ],
+  "Movies directed by Lindsay Anderson": [
+    "Britannia Hospital",
+    "If....",
+    "O Lucky Man!"
+  ],
   "Movies directed by Luc Besson": [
     "The Fifth Element"
   ],
@@ -11320,6 +11279,7 @@
     "Scent of a Woman"
   ],
   "Movies directed by Martin Scorsese": [
+    "Goodfellas",
     "The Departed",
     "The Irishman"
   ],
@@ -11352,11 +11312,15 @@
   "Movies directed by Mike Gabriel": [
     "Pocahontas"
   ],
+  "Movies directed by Mike Hodges": [
+    "Get Carter"
+  ],
   "Movies directed by Mike Newell": [
     "Donnie Brasco",
     "Harry Potter and the Goblet of Fire"
   ],
   "Movies directed by Mike Nichols": [
+    "The Graduate",
     "Working Girl"
   ],
   "Movies directed by Milos Forman": [
@@ -11368,6 +11332,17 @@
   ],
   "Movies directed by Nathan Greno": [
     "Tangled"
+  ],
+  "Movies directed by Neil Jordan": [
+    "The Crying Game"
+  ],
+  "Movies directed by Nicholas Hytner": [
+    "The Madness of King George"
+  ],
+  "Movies directed by Nicolas Roeg": [
+    "Don't Look Now",
+    "The Man Who Fell to Earth",
+    "Walkabout"
   ],
   "Movies directed by Norman Jewison": [
     "Fiddler on the Roof",
@@ -11390,6 +11365,9 @@
   ],
   "Movies directed by Pete Travis": [
     "Vantage Point"
+  ],
+  "Movies directed by Peter Collinson": [
+    "The Italian Job"
   ],
   "Movies directed by Peter Farrelly": [
     "Green Book"
@@ -11434,6 +11412,7 @@
   ],
   "Movies directed by Richard Curtis": [
     "About Time",
+    "Four Weddings and a Funeral",
     "Love Actually"
   ],
   "Movies directed by Richard Donner": [
@@ -11483,11 +11462,17 @@
     "Forrest Gump",
     "The Polar Express"
   ],
+  "Movies directed by Robin Hardy": [
+    "The Wicker Man"
+  ],
   "Movies directed by Roger Allers": [
     "The Lion King"
   ],
   "Movies directed by Roland Emmerich": [
     "Stargate"
+  ],
+  "Movies directed by Roman Polanski": [
+    "Chinatown"
   ],
   "Movies directed by Ron Clements": [
     "Aladdin",
@@ -11530,6 +11515,11 @@
     "Jurassic Park",
     "Schindler's List"
   ],
+  "Movies directed by Stanley Kubrick": [
+    "2001: A Space Odyssey",
+    "A Clockwork Orange",
+    "Dr. Strangelove"
+  ],
   "Movies directed by Stephen Anderson": [
     "Winnie the Pooh"
   ],
@@ -11543,6 +11533,9 @@
     "Hot Tub Time Machine"
   ],
   "Movies directed by Steven Spielberg": [
+    "E.T.",
+    "Jaws",
+    "Jurassic Park",
     "West Side Story"
   ],
   "Movies directed by Stewart Raffill": [
@@ -11589,7 +11582,12 @@
     "The Matrix"
   ],
   "Movies directed by Wes Anderson": [
-    "Moonrise Kingdom"
+    "Moonrise Kingdom",
+    "The Grand Budapest Hotel"
+  ],
+  "Movies directed by William Friedkin": [
+    "The Exorcist",
+    "The French Connection"
   ],
   "Movies directed by Wolfgang Reitherman": [
     "101 Dalmatians",
@@ -11600,8 +11598,30 @@
     "The Rescuers",
     "The Sword in the Stone"
   ],
+  "Movies directed by Wong Kar-wai": [
+    "2046",
+    "Ashes of Time",
+    "Chungking Express",
+    "Days of Being Wild",
+    "Fallen Angels",
+    "Happy Together",
+    "In the Mood for Love",
+    "My Blueberry Nights",
+    "The Grandmaster",
+    "The Hand",
+    "The Revenant"
+  ],
+  "Movies directed by Woody Allen": [
+    "Annie Hall",
+    "Manhattan"
+  ],
   "Movies directed by Yoshifumi Kondo": [
     "Whisper of the Heart"
+  ],
+  "Movies directed by Zhang Yimou": [
+    "Hero",
+    "House of Flying Daggers",
+    "Raise the Red Lantern"
   ],
   "Movies featuring Adam Driver": [
     "The Force Awakens",
@@ -13703,17 +13723,6 @@
     "Washington",
     "Wilson"
   ],
-  "Neil Jordan": [
-    "The Crying Game"
-  ],
-  "Nicholas Hytner": [
-    "The Madness of King George"
-  ],
-  "Nicolas Roeg": [
-    "Don't Look Now",
-    "The Man Who Fell to Earth",
-    "Walkabout"
-  ],
   "Ninja Terms": [
     "Naruto"
   ],
@@ -14077,9 +14086,6 @@
     "Journal",
     "Magazine",
     "Newspaper"
-  ],
-  "Peter Collinson": [
-    "The Italian Job"
   ],
   "Philosophers": [
     "Aristotle",
@@ -14780,9 +14786,6 @@
     "Queen Mary",
     "Victoria"
   ],
-  "Quentin Tarantino": [
-    "Pulp Fiction"
-  ],
   "Racing Sports": [
     "Auto Racing",
     "Cycling",
@@ -15103,9 +15106,6 @@
   "Rhythm": [
     "Beat"
   ],
-  "Richard Curtis": [
-    "Four Weddings and a Funeral"
-  ],
   "River Crossings": [
     "Bridge",
     "Causeway",
@@ -15137,12 +15137,6 @@
     "Speed Limit Sign",
     "Stop Sign",
     "Yield Sign"
-  ],
-  "Robert Zemeckis": [
-    "Forrest Gump"
-  ],
-  "Robin Hardy": [
-    "The Wicker Man"
   ],
   "Roman Cities": [
     "Alexandria",
@@ -15190,9 +15184,6 @@
     "R",
     "V",
     "X"
-  ],
-  "Roman Polanski": [
-    "Chinatown"
   ],
   "Romance Films": [
     "Annie Hall",
@@ -15319,9 +15310,6 @@
     "Lettuce",
     "Nicoise",
     "Waldorf"
-  ],
-  "Sam Mendes": [
-    "American Beauty"
   ],
   "Samurai Stories": [
     "Kagemusha",
@@ -15970,11 +15958,6 @@
   ],
   "Sports Terms": [
     "Overwatch"
-  ],
-  "Stanley Kubrick": [
-    "2001: A Space Odyssey",
-    "A Clockwork Orange",
-    "Dr. Strangelove"
   ],
   "Star": [
     "Black Hole",
@@ -20590,11 +20573,6 @@
   "Stephen Crane": [
     "The Red Badge of Courage"
   ],
-  "Steven Spielberg": [
-    "E.T.",
-    "Jaws",
-    "Jurassic Park"
-  ],
   "Stop-Motion Animated Films": [
     "The Nightmare Before Christmas"
   ],
@@ -22920,9 +22898,6 @@
     "Thor",
     "Thunder"
   ],
-  "Wes Anderson": [
-    "The Grand Budapest Hotel"
-  ],
   "Western Films": [
     "Back to the Future Part III",
     "Dances with Wolves",
@@ -22963,10 +22938,6 @@
     "Light in August",
     "The Sound and the Fury"
   ],
-  "William Friedkin": [
-    "The Exorcist",
-    "The French Connection"
-  ],
   "William Golding": [
     "Lord of the Flies"
   ],
@@ -22982,19 +22953,6 @@
     "Sledding",
     "Speed Skating"
   ],
-  "Wong Kar-wai": [
-    "2046",
-    "Ashes of Time",
-    "Chungking Express",
-    "Days of Being Wild",
-    "Fallen Angels",
-    "Happy Together",
-    "In the Mood for Love",
-    "My Blueberry Nights",
-    "The Grandmaster",
-    "The Hand",
-    "The Revenant"
-  ],
   "Wooden Objects": [
     "Bat",
     "Board",
@@ -23007,10 +22965,6 @@
     "Saw",
     "Spear",
     "Stick"
-  ],
-  "Woody Allen": [
-    "Annie Hall",
-    "Manhattan"
   ],
   "World War I": [
     "Britannic",
@@ -23088,11 +23042,6 @@
     "Sunflower",
     "Wolverine",
     "Yellow Curry"
-  ],
-  "Zhang Yimou": [
-    "Hero",
-    "House of Flying Daggers",
-    "Raise the Red Lantern"
   ],
   "Zodiac Signs": [
     "Aquarius",
