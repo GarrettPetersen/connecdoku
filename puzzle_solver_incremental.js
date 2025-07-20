@@ -319,8 +319,12 @@ function findPuzzles() {
                 return `${categoryNames[pos.categoryIndex]}(${pos.isRow ? 'R' : 'C'})`;
             }).join(', ');
             
-            const otherElements = `Candidates: ${candidates.length} | Search: ${searchCount}`;
-            const availableSpace = process.stdout.columns - otherElements.length - 10;
+            // Calculate available space more conservatively
+            const otherElements = `Candidates: ${candidates.length} | `;
+            
+            // Category list is on a separate line, so we can use most of the terminal width
+            // But account for the "Candidates: 262 | " prefix
+            const availableSpace = process.stdout.columns - otherElements.length - 20;
             
             let truncatedCategories;
             if (currentCategories.length <= availableSpace) {
@@ -329,22 +333,40 @@ function findPuzzles() {
                 truncatedCategories = currentCategories.substring(0, availableSpace - 3) + '...';
             }
             
-            // Calculate progress based on first pointer position
+            // Calculate progress based on first two pointer positions
             const firstPointerPos = pointers.length > 0 ? pointers[0] : 0;
-            const progressPercent = (firstPointerPos / allPositions.length * 100).toFixed(1);
-            const progressBar = '█'.repeat(Math.floor(progressPercent / 2)) + '░'.repeat(50 - Math.floor(progressPercent / 2));
+            const secondPointerPos = pointers.length > 1 ? pointers[1] : 0;
             
-            // Calculate ETA
+            // Calculate progress as a weighted combination of first two pointers
+            // First pointer has more weight because it explores the largest space
+            const firstWeight = 0.7;
+            const secondWeight = 0.3;
+            const progress = (firstPointerPos * firstWeight + secondPointerPos * secondWeight) / allPositions.length;
+            const progressPercent = (progress * 100).toFixed(1);
+            const progressBar = '█'.repeat(Math.floor(progress * 50)) + '░'.repeat(50 - Math.floor(progress * 50));
+            
+            // Calculate ETA based on this more accurate progress
             const elapsed = Date.now() - searchStart;
-            const progress = firstPointerPos / allPositions.length;
             const eta = progress > 0 ? (elapsed / progress) - elapsed : 0;
-            const etaMinutes = Math.floor(eta / 60000);
+            const etaHours = Math.floor(eta / 3600000);
+            const etaMinutes = Math.floor((eta % 3600000) / 60000);
             const etaSeconds = Math.floor((eta % 60000) / 1000);
+            
+            // Dynamic line checking - count actual lines printed
+            const categoryLine = `Candidates: ${candidates.length} | Categories: ${truncatedCategories}`;
+            const linesNeeded = Math.ceil(categoryLine.length / process.stdout.columns);
             
             process.stdout.write('\r\x1b[K');
             process.stdout.write('\x1b[1A\x1b[K');
-            process.stdout.write(`Progress: [${progressBar}] ${progressPercent}% (${firstPointerPos}/${allPositions.length}) - ETA: ${etaMinutes}m ${etaSeconds}s\n`);
-            process.stdout.write(`Candidates: ${candidates.length} | Categories: ${truncatedCategories} | Search: ${searchCount}`);
+            process.stdout.write(`Progress: [${progressBar}] ${progressPercent}% (P1:${firstPointerPos}, P2:${secondPointerPos}/${allPositions.length}) - ETA: ${etaHours}h ${etaMinutes}m ${etaSeconds}s\n`);
+            process.stdout.write(`Candidates: ${candidates.length} | Categories: ${truncatedCategories}`);
+            
+            // If category line wraps to multiple lines, clear extra lines
+            if (linesNeeded > 1) {
+                for (let i = 1; i < linesNeeded; i++) {
+                    process.stdout.write('\x1b[1A\x1b[K');
+                }
+            }
             
             lastProgressUpdate = searchCount;
         }
