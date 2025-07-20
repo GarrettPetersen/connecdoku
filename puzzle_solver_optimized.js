@@ -327,15 +327,15 @@ function findPuzzles() {
                     rows.push(nextCategory);
                 }
 
-                // Check if we should record this as a candidate
-                if (rows.length >= 2 && cols.length >= 2) {
-                    const puzzle = {
-                        rows: rows.map(i => categoryNames[i]),
-                        cols: cols.map(i => categoryNames[i]),
-                        size: `${rows.length}x${cols.length}`
-                    };
-                    candidates.push(puzzle);
-                }
+                    // Check if we should record this as a candidate (only 4x4)
+    if (rows.length === 4 && cols.length === 4) {
+        const puzzle = {
+            rows: rows.map(i => categoryNames[i]),
+            cols: cols.map(i => categoryNames[i]),
+            size: '4x4'
+        };
+        candidates.push(puzzle);
+    }
 
                 // Check if we've reached max size in one dimension
                 if (rows.length === maxRows || cols.length === maxCols) {
@@ -395,15 +395,8 @@ function findPuzzles() {
     const searchTime = Date.now() - searchStart;
     console.log(`Found ${candidates.length} candidate puzzles (${searchTime}ms)`);
 
-    // Solve each candidate and categorize by size
-    const solvedPuzzles = {
-        '2x4': [],
-        '3x4': [],
-        '4x2': [],
-        '4x3': [],
-        '3x3': [],
-        '4x4': []
-    };
+    // Solve each candidate (only 4x4)
+    const solvedPuzzles = [];
 
     let solvedCount = 0;
     const solveStart = Date.now();
@@ -417,24 +410,7 @@ function findPuzzles() {
                 ...candidate,
                 solutions: solutions
             };
-
-            // Determine size and transpose if needed
-            let size = candidate.size;
-            if (size === '2x4') {
-                size = '4x2';
-                solvedPuzzle.rows = candidate.cols;
-                solvedPuzzle.cols = candidate.rows;
-                solvedPuzzle.size = size;
-            } else if (size === '3x4') {
-                size = '4x3';
-                solvedPuzzle.rows = candidate.cols;
-                solvedPuzzle.cols = candidate.rows;
-                solvedPuzzle.size = size;
-            }
-
-            if (solvedPuzzles[size]) {
-                solvedPuzzles[size].push(solvedPuzzle);
-            }
+            solvedPuzzles.push(solvedPuzzle);
         }
 
         solvedCount++;
@@ -459,12 +435,10 @@ function findPuzzles() {
     process.stdout.write('\r\x1b[K\n');
     const solveTime = Date.now() - solveStart;
 
-    // Save results to separate files
-    for (const [size, puzzles] of Object.entries(solvedPuzzles)) {
-        if (puzzles.length > 0) {
-            fs.writeFileSync(`puzzles_${size}.json`, JSON.stringify(puzzles, null, 2));
-            console.log(`Saved ${puzzles.length} ${size} puzzles to puzzles_${size}.json`);
-        }
+    // Save results to file
+    if (solvedPuzzles.length > 0) {
+        fs.writeFileSync('puzzles_4x4.json', JSON.stringify(solvedPuzzles, null, 2));
+        console.log(`Saved ${solvedPuzzles.length} 4x4 puzzles to puzzles_4x4.json`);
     }
 
     // Print summary with timing
@@ -478,9 +452,7 @@ function findPuzzles() {
     console.log(`Solve phase: ${solveTime}ms`);
     console.log(`Total time: ${totalTime}ms`);
     console.log('\n=== RESULTS SUMMARY ===');
-    for (const [size, puzzles] of Object.entries(solvedPuzzles)) {
-        console.log(`${size}: ${puzzles.length} puzzles`);
-    }
+    console.log(`4x4: ${solvedPuzzles.length} puzzles`);
 }
 
 // Run the optimized solver
