@@ -288,18 +288,59 @@ function isCompatible(idx, rows, cols, newIsRow) {
 }
 
 function fastSolve(rows, cols) {
-    const used = new Set();
-    for (const r of rows) {
-        const rCat = cats[r];
-        for (const c of cols) {
-            const cCat = cats[c];
-            const rWords = words[rCat] || [];
-            const cWords = words[cCat] || [];
-            const ints = rWords.filter(w => cWords.includes(w)).filter(w => !used.has(w));
-            if (ints.length === 0) return false;
-            used.add(ints[0]);
+    // First, get all categories we need to avoid (not in current row/col)
+    const allCategories = new Set();
+    rows.forEach(r => allCategories.add(r));
+    cols.forEach(c => allCategories.add(c));
+
+    // For each intersection, find all valid words
+    const intersections = [];
+    for (let i = 0; i < rows.length; i++) {
+        const r = rows[i];
+        const rowIntersections = [];
+        for (let j = 0; j < cols.length; j++) {
+            const c = cols[j];
+
+            // Get words that are in both categories
+            const rWords = new Set(words[cats[r]] || []);
+            const cWords = new Set(words[cats[c]] || []);
+            let validWords = new Set([...rWords].filter(x => cWords.has(x)));
+
+            // Remove words that appear in any other category
+            for (const catIdx of allCategories) {
+                if (catIdx !== r && catIdx !== c) {
+                    const otherWords = new Set(words[cats[catIdx]] || []);
+                    validWords = new Set([...validWords].filter(x => !otherWords.has(x)));
+                }
+            }
+
+            // If any intersection has no valid words, puzzle is impossible
+            if (validWords.size === 0) return false;
+
+            rowIntersections.push({
+                row: cats[r],
+                col: cats[c],
+                words: [...validWords]
+            });
         }
+        intersections.push(rowIntersections);
     }
+
+    // Save the puzzle with all valid words for each intersection
+    const puzzleKey = sha(rows.map(i => cats[i]).sort().join(',') + cols.map(i => cats[i]).sort().join(','));
+    try {
+        fs.writeFileSync(
+            path.join(PUZZLE_DIR, `${puzzleKey}.json`),
+            JSON.stringify({
+                rows: rows.map(i => cats[i]),
+                cols: cols.map(i => cats[i]),
+                size: '4x4',
+                intersections: intersections
+            }, null, 2),
+            { flag: 'wx' }
+        );
+    } catch { }
+
     return true;
 }
 
