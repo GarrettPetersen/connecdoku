@@ -56,6 +56,9 @@ while (categoriesRemoved) {
         }
     }
 
+    // Zero out subset relationships in the intersection matrix
+    zeroOutSubsets(intersectionMatrix, workingCategoryNames);
+
     console.log('Computing 2-away matrix...');
     const twoAwayStart = Date.now();
 
@@ -147,6 +150,9 @@ for (let i = 0; i < filteredCategoryNames.length; i++) {
     }
 }
 
+// Zero out subset relationships in the intersection matrix
+zeroOutSubsets(intersectionMatrix, filteredCategoryNames);
+
 // Zero out the diagonal (categories don't intersect with themselves)
 for (let i = 0; i < filteredCategoryNames.length; i++) {
     intersectionMatrix.set(i, i, 0);
@@ -194,15 +200,19 @@ function canAddToOtherDimension(catIndex, existingOtherCategories) {
 
 // Function to solve a puzzle with given row and column categories
 function solvePuzzle(rows, cols) {
-    // Simple set intersection approach: find one word per intersection that's unique
+    // Proper solver that ensures "no red herrings" rule
+    // Each word must ONLY appear in its assigned row and column categories
+    
     const solution = [];
     const usedWords = new Set();
     
     // For each of the 16 intersections (4x4 grid)
     for (let row = 0; row < rows.length; row++) {
         for (let col = 0; col < cols.length; col++) {
-            const rowWords = categories[rows[row]];
-            const colWords = categories[cols[col]];
+            const rowCategory = rows[row];
+            const colCategory = cols[col];
+            const rowWords = categories[rowCategory];
+            const colWords = categories[colCategory];
             
             // Find intersection of row and column categories
             const intersection = rowWords.filter(word => colWords.includes(word));
@@ -210,13 +220,40 @@ function solvePuzzle(rows, cols) {
             // Filter out words that are already used
             const availableWords = intersection.filter(word => !usedWords.has(word));
             
+            // For each available word, check if it violates the "no red herrings" rule
+            const validWords = availableWords.filter(word => {
+                // Check if this word appears in any OTHER row categories
+                for (let otherRow = 0; otherRow < rows.length; otherRow++) {
+                    if (otherRow !== row) {
+                        const otherRowCategory = rows[otherRow];
+                        const otherRowWords = categories[otherRowCategory];
+                        if (otherRowWords.includes(word)) {
+                            return false; // Word appears in another row - violates rule
+                        }
+                    }
+                }
+                
+                // Check if this word appears in any OTHER column categories
+                for (let otherCol = 0; otherCol < cols.length; otherCol++) {
+                    if (otherCol !== col) {
+                        const otherColCategory = cols[otherCol];
+                        const otherColWords = categories[otherColCategory];
+                        if (otherColWords.includes(word)) {
+                            return false; // Word appears in another column - violates rule
+                        }
+                    }
+                }
+                
+                return true; // Word is unique to this row/column combination
+            });
+            
             // If no valid words for this intersection, puzzle is impossible
-            if (availableWords.length === 0) {
+            if (validWords.length === 0) {
                 return [];
             }
             
-            // Pick one word randomly from available options
-            const selectedWord = availableWords[Math.floor(Math.random() * availableWords.length)];
+            // Pick one word randomly from valid options
+            const selectedWord = validWords[Math.floor(Math.random() * validWords.length)];
             solution.push(selectedWord);
             usedWords.add(selectedWord);
         }
@@ -263,6 +300,33 @@ function isCompatible(newCatIndex, existingRows, existingCols) {
 // Function to create a unique key for a puzzle
 function createPuzzleKey(rows, cols) {
     return `${rows.sort().join(',')}-${cols.sort().join(',')}`;
+}
+
+// Function to check if category A is a subset of category B
+function isSubset(catA, catB) {
+    if (catA === catB) return false; // Same category is not a subset of itself
+    const wordsA = categories[catA];
+    const wordsB = categories[catB];
+    
+    // Check if all words in A are also in B
+    return wordsA.every(word => wordsB.includes(word));
+}
+
+// Function to zero out subset relationships in a matrix
+function zeroOutSubsets(matrix, categoryNames) {
+    for (let i = 0; i < categoryNames.length; i++) {
+        for (let j = 0; j < categoryNames.length; j++) {
+            if (i !== j) {
+                const catA = categoryNames[i];
+                const catB = categoryNames[j];
+                
+                // If A is a subset of B or B is a subset of A, zero out the relationship
+                if (isSubset(catA, catB) || isSubset(catB, catA)) {
+                    matrix.set(i, j, 0);
+                }
+            }
+        }
+    }
 }
 
 // Incremental search function that builds combinations step by step
