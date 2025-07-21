@@ -78,5 +78,45 @@
         "Chungking Express"
       ]
     ]
+  },
+  {
+    "rows": [
+      "2D Animated Films",
+      "Action Stories",
+      "Romance Stories",
+      "Things British"
+    ],
+    "cols": [
+      "Comedy Stories",
+      "Sci-fi Stories",
+      "Starts with THE",
+      "War Stories"
+    ],
+    "words": [
+      [
+        "Winnie the Pooh",
+        "Akira",
+        "The Little Mermaid",
+        "Mulan"
+      ],
+      [
+        "Home Alone",
+        "Aliens",
+        "The Lord of the Rings: The Fellowship of the Ring",
+        "Inglourious Basterds"
+      ],
+      [
+        "Annie Hall",
+        "Her",
+        "The Time Traveler's Wife",
+        "Casablanca"
+      ],
+      [
+        "Kind Hearts and Coronets",
+        "A Clockwork Orange",
+        "The Lion, the Witch and the Wardrobe",
+        "Lawrence of Arabia"
+      ]
+    ]
   }
 ]
