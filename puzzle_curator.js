@@ -163,8 +163,8 @@ while (fileIdx < rawFiles.length) {
 
     const approve = await prompts.confirm({ message: "Approve this puzzle?" });
     if (approve) {
-        const today = new Date().toISOString().slice(0, 10);
-        db.push({ date: today, rows, cols, words: chosen });
+        // Add puzzle to database without a date
+        db.push({ rows, cols, words: chosen });
         fs.writeFileSync(DB_FILE, JSON.stringify(db, null, 2));
         fs.renameSync(path.join(RAW_DIR, file),
             path.join(RAW_DIR, `used_${file}`));
