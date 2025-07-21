@@ -38,8 +38,7 @@ let twoAwayMatrix;
 
 while (categoriesRemoved) {
     iterationCount++;
-    console.log(`\n--- Iteration ${iterationCount} ---`);
-    console.log(`Working with ${workingCategoryNames.length} categories...`);
+            // Working with ${workingCategoryNames.length} categories...
     
     // Update category to index mapping for current working set
     const workingCategoryToIndex = new Map();
@@ -85,7 +84,7 @@ while (categoriesRemoved) {
 
     const twoAwayTime = Date.now() - twoAwayStart;
     console.log(`2-away matrix computed (${twoAwayTime}ms)`);
-    console.log(`Found ${twoAwayCount} 2-away connections (with minimum ${minPaths} paths requirement)`);
+    
 
     // Check each category against the two criteria
     const categoriesToRemove = [];
@@ -268,8 +267,7 @@ function createPuzzleKey(rows, cols) {
 
 // Incremental search function that builds combinations step by step
 function findPuzzles() {
-    const candidates = [];
-    const maxCandidates = 100000;
+    const solvedPuzzles = [];
     const seenPuzzles = new Set(); // Track seen puzzles to prevent duplicates
 
     console.log('Starting incremental search...');
@@ -299,36 +297,6 @@ function findPuzzles() {
     while (true) {
         searchCount++;
         
-        // Debug: Print current state every 100k iterations
-        if (searchCount % 100000 === 0) {
-            const currentRows = [];
-            const currentCols = [];
-            for (const pointer of pointers) {
-                // Check if pointer is valid
-                if (pointer >= allPositions.length) {
-                    console.error(`\n🚨 INVALID POINTER: ${pointer} >= ${allPositions.length}`);
-                    console.error(`Pointers: [${pointers.join(', ')}]`);
-                    process.exit(1);
-                }
-                const position = allPositions[pointer];
-                if (!position) {
-                    console.error(`\n🚨 NULL POSITION: pointer ${pointer} returned null`);
-                    console.error(`Pointers: [${pointers.join(', ')}]`);
-                    process.exit(1);
-                }
-                if (position.isRow) {
-                    currentRows.push(filteredCategoryNames[position.categoryIndex]);
-                } else {
-                    currentCols.push(filteredCategoryNames[position.categoryIndex]);
-                }
-            }
-            console.log(`\n--- Iteration ${searchCount} ---`);
-            console.log(`Pointers: [${pointers.join(', ')}]`);
-            console.log(`Rows (${currentRows.length}): [${currentRows.join(', ')}]`);
-            console.log(`Cols (${currentCols.length}): [${currentCols.join(', ')}]`);
-            console.log(`Candidates found so far: ${candidates.length}`);
-        }
-        
         // Infinite loop circuit breaker
         if (searchCount % circuitBreakerInterval === 0) {
             const pointerState = pointers.join(',');
@@ -337,7 +305,7 @@ function findPuzzles() {
                 console.error(`Current pointer state: [${pointers.join(', ')}]`);
                 console.error(`This state was seen before at iteration ${searchCount - circuitBreakerInterval}`);
                 console.error(`Total iterations: ${searchCount}`);
-                console.error(`Candidates found: ${candidates.length}`);
+                console.error(`Candidates found: ${solvedPuzzles.length}`);
                 process.exit(1);
             }
             seenPointerStates.add(pointerState);
@@ -394,32 +362,22 @@ function findPuzzles() {
                     cols: cols,
                     size: '4x4'
                 };
-                candidates.push(puzzle);
                 
-                // Check if this is our simple puzzle
-                const isSimplePuzzle = rows.includes("Things Chinese") && 
-                                     rows.includes("Things American") &&
-                                     rows.includes("Things British") &&
-                                     rows.includes("Things Japanese") &&
-                                     cols.includes("People") &&
-                                     cols.includes("Foods") &&
-                                     cols.includes("Movies") &&
-                                     cols.includes("Books");
-                if (isSimplePuzzle) {
-                    console.log('\n🎉 FOUND THE SIMPLE PUZZLE!');
-                    console.log('Rows:', rows);
-                    console.log('Cols:', cols);
-                }
+                                 const solutions = solvePuzzle(rows, cols);
+                 if (solutions.length > 0) {
+                     const solvedPuzzle = {
+                         ...puzzle,
+                         solutions: solutions
+                     };
+                     solvedPuzzles.push(solvedPuzzle);
+                 }
                 
-                if (candidates.length >= maxCandidates) {
-                    console.log(`\nReached maximum candidate limit (${maxCandidates})`);
-                    break;
-                }
+
             }
             
             // After recording a valid 8-pointer combination, advance the search position
             // This ensures we don't find the same combination again
-            console.log(`Found valid combination! Advancing search position...`);
+
             
             // Use the same backtracking logic as the main search
             // Remove last pointer and advance the previous one
@@ -465,11 +423,6 @@ function findPuzzles() {
         
         while (nextPointerIndex < allPositions.length) {
             const nextPosition = allPositions[nextPointerIndex];
-            
-            // Debug: Print what we're checking every 100k iterations
-            if (searchCount % 100000 === 0 && nextPointerIndex < 10) {
-                console.log(`  Checking position ${nextPointerIndex}: ${filteredCategoryNames[nextPosition.categoryIndex]} (${nextPosition.isRow ? 'row' : 'col'})`);
-            }
             
             // Constraint: First pointer can only be a row position
             if (pointers.length === 0 && !nextPosition.isRow) {
@@ -523,13 +476,6 @@ function findPuzzles() {
                 canAdd = false;
             }
             
-            // Debug: Log when we're about to add a pointer
-            if (canAdd) {
-                console.log(`Adding ${nextPosition.isRow ? 'row' : 'col'} ${filteredCategoryNames[nextPosition.categoryIndex]} (${currentRows.length} rows, ${currentCols.length} cols)`);
-                console.log(`  Current rows: [${currentRows.map(i => filteredCategoryNames[i]).join(', ')}]`);
-                console.log(`  Current cols: [${currentCols.map(i => filteredCategoryNames[i]).join(', ')}]`);
-            }
-            
             // Check compatibility with existing categories
             if (canAdd) {
                 canAdd = isCompatible(nextPosition.categoryIndex, currentRows, currentCols);
@@ -560,11 +506,11 @@ function findPuzzles() {
             const removedPosition = allPositions[removedPointer];
             const removedCategory = filteredCategoryNames[removedPosition.categoryIndex];
             
-            console.log(`Backtracking: Removed ${removedCategory} (${removedPosition.isRow ? 'row' : 'col'}) at pointer ${removedPointer}`);
+
             
             // If we've backtracked to the beginning, we're done
             if (pointers.length === 0) {
-                console.log('Backtracking: Reached beginning, search complete');
+    
                 break;
             }
             
@@ -578,7 +524,7 @@ function findPuzzles() {
             }
             const newPointer = pointers[pointers.length - 1];
             
-            console.log(`Backtracking: Advanced pointer ${pointers.length - 1} from ${oldPointer} to ${newPointer}`);
+
             
             // Check if the advanced pointer is still valid
             if (pointers[pointers.length - 1] >= allPositions.length) {
@@ -615,53 +561,13 @@ function findPuzzles() {
         
         // Update progress with nice progress bars
         if (searchCount - lastProgressUpdate >= 1000) {
-            // Debug: Check for invalid pointer states
-            const currentRows = [];
-            const currentCols = [];
-            for (const pointer of pointers) {
-                // Check if pointer is valid
-                if (pointer >= allPositions.length) {
-                    console.error(`\n🚨 INVALID POINTER: ${pointer} >= ${allPositions.length}`);
-                    console.error(`Pointers: [${pointers.join(', ')}]`);
-                    process.exit(1);
-                }
-                const position = allPositions[pointer];
-                if (!position) {
-                    console.error(`\n🚨 NULL POSITION: pointer ${pointer} returned null`);
-                    console.error(`Pointers: [${pointers.join(', ')}]`);
-                    process.exit(1);
-                }
-                if (position.isRow) {
-                    currentRows.push(position.categoryIndex);
-                } else {
-                    currentCols.push(position.categoryIndex);
-                }
-            }
-            
-            // Debug: Log if we have too many rows or columns
-            if (currentRows.length > 4 || currentCols.length > 4) {
-                console.error(`\n🚨 INVALID STATE: ${currentRows.length} rows, ${currentCols.length} columns`);
-                console.error(`Pointers: [${pointers.join(', ')}]`);
-                console.error(`Rows: [${currentRows.join(', ')}]`);
-                console.error(`Cols: [${currentCols.join(', ')}]`);
-                
-                // Debug: Check what position 164 actually contains
-                if (164 < allPositions.length) {
-                    const pos164 = allPositions[164];
-                    console.error(`Position 164: ${JSON.stringify(pos164)}`);
-                    console.error(`Position 164 isRow: ${pos164.isRow}`);
-                }
-                
-                process.exit(1);
-            }
-            
             const currentCategories = pointers.map(p => {
                 const pos = allPositions[p];
                 return `${filteredCategoryNames[pos.categoryIndex]}(${pos.isRow ? 'R' : 'C'})`;
             }).join(', ');
             
             // Calculate available space more conservatively
-            const otherElements = `Candidates: ${candidates.length} | `;
+            const otherElements = `Solved: ${solvedPuzzles.length} | `;
             
             // Category list is on a separate line, so we can use most of the terminal width
             // But account for the "Candidates: 262 | " prefix
@@ -694,13 +600,13 @@ function findPuzzles() {
             const etaSeconds = Math.floor((eta % 60000) / 1000);
             
             // Dynamic line checking - count actual lines printed
-            const categoryLine = `Candidates: ${candidates.length} | Categories: ${truncatedCategories}`;
+            const categoryLine = `Solved: ${solvedPuzzles.length} | Categories: ${truncatedCategories}`;
             const linesNeeded = Math.ceil(categoryLine.length / process.stdout.columns);
             
             process.stdout.write('\r\x1b[K');
             process.stdout.write('\x1b[1A\x1b[K');
             process.stdout.write(`Progress: [${progressBar}] ${progressPercent}% (P1:${firstPointerPos}, P2:${secondPointerPos}/${allPositions.length}) - ETA: ${etaHours}h ${etaMinutes}m ${etaSeconds}s\n`);
-            process.stdout.write(`Candidates: ${candidates.length} | Categories: ${truncatedCategories}`);
+            process.stdout.write(`Solved: ${solvedPuzzles.length} | Categories: ${truncatedCategories}`);
             
             // If category line wraps to multiple lines, clear extra lines
             if (linesNeeded > 1) {
@@ -714,56 +620,12 @@ function findPuzzles() {
     }
 
     const searchTime = Date.now() - searchStart;
-    console.log(`\nFound ${candidates.length} candidate puzzles (${searchTime}ms)`);
+    console.log(`\nFound ${solvedPuzzles.length} solved puzzles (${searchTime}ms)`);
     
-    // Save candidate puzzles for inspection
-    if (candidates.length > 0) {
-        fs.writeFileSync('candidate_puzzles_incremental_4x4.json', JSON.stringify(candidates, null, 2));
-        console.log(`Saved ${candidates.length} candidate puzzles to candidate_puzzles_incremental_4x4.json`);
-    }
-
-    // Solve each candidate with progress bars
-    const solvedPuzzles = [];
-    let solvedCount = 0;
-    const solveStart = Date.now();
-    const solveStartTime = Date.now();
-    
-    for (const candidate of candidates) {
-        const solutions = solvePuzzle(candidate.rows, candidate.cols);
-        if (solutions.length > 0) {
-            const solvedPuzzle = {
-                ...candidate,
-                solutions: solutions
-            };
-            solvedPuzzles.push(solvedPuzzle);
-        }
-
-        solvedCount++;
-        
-        // Update progress every 1000 candidates or at the end
-        if (solvedCount % 1000 === 0 || solvedCount === candidates.length) {
-            const elapsed = Date.now() - solveStartTime;
-            const progress = solvedCount / candidates.length;
-            const eta = progress > 0 ? (elapsed / progress) - elapsed : 0;
-            const etaMinutes = Math.floor(eta / 60000);
-            const etaSeconds = Math.floor((eta % 60000) / 1000);
-            
-            const progressBar = '█'.repeat(Math.floor(progress * 50)) + '░'.repeat(50 - Math.floor(progress * 50));
-            const percent = (progress * 100).toFixed(1);
-            
-            process.stdout.write('\r\x1b[K');
-            process.stdout.write(`Solving: [${progressBar}] ${percent}% (${solvedCount}/${candidates.length}) - ETA: ${etaMinutes}m ${etaSeconds}s`);
-        }
-    }
-    
-    // Clear the progress line
-    process.stdout.write('\r\x1b[K\n');
-    const solveTime = Date.now() - solveStart;
-
-    // Save results to file
+    // Save solved puzzles to file
     if (solvedPuzzles.length > 0) {
         fs.writeFileSync('puzzles_incremental_4x4.json', JSON.stringify(solvedPuzzles, null, 2));
-        console.log(`Saved ${solvedPuzzles.length} 4x4 puzzles to puzzles_incremental_4x4.json`);
+        console.log(`Saved ${solvedPuzzles.length} solved puzzles to puzzles_incremental_4x4.json`);
     }
 
     // Print summary with timing
@@ -771,9 +633,7 @@ function findPuzzles() {
     console.log('\n=== TIMING SUMMARY ===');
     console.log(`Data loading: ${loadTime}ms`);
     console.log(`Intersection matrix: ${intersectionTime}ms`);
-    console.log(`2-away matrix: ${twoAwayTime}ms`);
-    console.log(`Search phase: ${searchTime}ms`);
-    console.log(`Solve phase: ${solveTime}ms`);
+    console.log(`Search and solve phase: ${searchTime}ms`);
     console.log(`Total time: ${totalTime}ms`);
     console.log('\n=== RESULTS SUMMARY ===');
     console.log(`4x4: ${solvedPuzzles.length} puzzles`);
