@@ -1,6 +1,9 @@
-const fs = require('fs');
-const path = require('path');
-const { execSync } = require('child_process');
+import fs from 'fs';
+import path from 'path';
+import { execSync } from 'child_process';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 console.log('Updating all data files...');
 
@@ -45,7 +48,7 @@ for (const [word, categories] of Object.entries(wordsData)) {
     // Remove duplicates while preserving order
     const uniqueCategories = [];
     const seen = new Set();
-    
+
     for (const category of categories) {
         if (!seen.has(category)) {
             uniqueCategories.push(category);
@@ -54,7 +57,7 @@ for (const [word, categories] of Object.entries(wordsData)) {
             duplicateCategoriesRemoved++;
         }
     }
-    
+
     // Update the word's categories with deduplicated list
     wordsData[word] = uniqueCategories.sort();
 }

@@ -1,5 +1,9 @@
 {
+  "name": "connecdoku",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
     "ml-matrix": "^6.12.1"
   }
 }
