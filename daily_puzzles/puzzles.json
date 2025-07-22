@@ -318,5 +318,45 @@
         "Gaul"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Books",
+      "Drinks",
+      "Movies",
+      "WWII Allied Powers"
+    ],
+    "cols": [
+      "Locations in North America",
+      "Starts with GRE",
+      "Things Chinese",
+      "Things French"
+    ],
+    "words": [
+      [
+        "Salem",
+        "Green Eggs and Ham",
+        "Water Margin",
+        "The Count of Monte Cristo"
+      ],
+      [
+        "Long Island",
+        "Green Tea",
+        "Baijiu",
+        "Absinthe"
+      ],
+      [
+        "Manhattan",
+        "Grease",
+        "Crouching Tiger, Hidden Dragon",
+        "Ratatouille"
+      ],
+      [
+        "United States",
+        "Greece",
+        "China",
+        "France"
+      ]
+    ]
   }
 ]
