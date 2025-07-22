@@ -61,12 +61,12 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
 
 <!-- share popup -->
 <div id="sharePop" class="modalBg">
- <div class="modalCard">
-   <button class="min" id="minShare">×</button>
+  <div class="modalCard">
+    <button class="min" id="minShare">×</button>
     <h3 id="popTitle"></h3><pre id="shareGrid"></pre>
-   <div id="unsolved"></div>
-   <button class="action" id="copy">Copy to clipboard</button>
- </div>
+    <div id="unsolved"></div>
+    <button class="action" id="copy">Copy to clipboard</button>
+  </div>
 </div>
 
 <!-- help popup -->
@@ -76,9 +76,9 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
     <h3>How to Play</h3>
     <p>Swap words by selecting two tiles.<br>
        When you think an entire <strong>row</strong> or <strong>column</strong> matches a hidden category, hit its ✓ button.<br>
-      • Correct lines lock (colour depends on your strike count).<br>
-      • Wrong checks give a strike — after <strong>three</strong> you lose.<br>
-      Solve every row <em>and</em> column to win!
+       • Correct lines lock (colour depends on your strike count).<br>
+       • Wrong checks give a strike — after <strong>three</strong> you lose.<br>
+       Solve every row <em>and</em> column to win!
     </p>
     <button class="action" id="helpOK">Got it!</button>
   </div>
@@ -148,7 +148,7 @@ function init(puz){
     }
   }
   function makeTile(r,c){
-        const d=document.createElement('div');
+    const d=document.createElement('div');
     d.className='tile'; d.textContent=G[r][c]; d.dataset.rc=`${r},${c}`;
     return d;
   }
@@ -265,7 +265,7 @@ function init(puz){
     for (let c = 0; c < 4; c++) {
       const cat = wordToColCat[G[refRow][c]];
       catToCol[cat] = c;
-  }
+    }
 
     // move words until each category sits under its target column
     for (let pass = 0; pass < 2; pass++) {
@@ -345,9 +345,9 @@ function init(puz){
               if(G[r2][c2]===canonicalGrid[row][col]){
                 swapCells(row,col,r2,c2,true);
                 break;
-      }
-    }
-  }
+              }
+            }
+          }
         }
       }
     }
@@ -454,11 +454,9 @@ function init(puz){
 
   /* collect all swaps needed */
   const moves = [];
-  const currentGrid = G.map(row => [...row]); // Copy current grid state
-  
   for (let r = 0; r < 4; r++) {
     for (let c = 0; c < 4; c++) {
-      const wHere = currentGrid[r][c];
+      const wHere = G[r][c];
       const [tr, tc] = target[wHere];
 
       if (r !== tr || c !== tc) {
@@ -467,18 +465,18 @@ function init(puz){
           w => target[w][0] === r && target[w][1] === c
         );
 
-        /* locate that word's current coordinates */
+        /* locate that word’s current coordinates */
         let r2, c2;
         outer: for (let i = 0; i < 4; i++) {
           for (let j = 0; j < 4; j++) {
-            if (currentGrid[i][j] === want) { r2 = i; c2 = j; break outer; }
+            if (G[i][j] === want) { r2 = i; c2 = j; break outer; }
           }
         }
 
         moves.push([r, c, r2, c2]);
 
-        /* update the working copy so later searches stay correct */
-        [currentGrid[r][c], currentGrid[r2][c2]] = [currentGrid[r2][c2], currentGrid[r][c]];
+        /* update in-memory grid so later searches stay correct */
+        [G[r][c], G[r2][c2]] = [G[r2][c2], G[r][c]];
       }
     }
   }
