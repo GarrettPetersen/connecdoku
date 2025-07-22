@@ -147,6 +147,50 @@ const finalCategories = sortedCategories;
 const outputPath = path.join(__dirname, 'data', 'categories.json');
 fs.writeFileSync(outputPath, JSON.stringify(finalCategories, null, 2), 'utf8');
 
+// Step 2.75: Manage category emojis
+console.log('2.75. Managing category emojis...');
+const categoryEmojisPath = path.join(__dirname, 'data', 'category_emojis.json');
+let existingEmojis = {};
+
+// Try to read existing emojis file
+try {
+    existingEmojis = JSON.parse(fs.readFileSync(categoryEmojisPath, 'utf8'));
+} catch (err) {
+    // File doesn't exist or is invalid, start fresh
+    console.log('Creating new category_emojis.json file');
+}
+
+// Create new emojis object with all current categories
+const updatedEmojis = {};
+let newCategoriesCount = 0;
+let removedCategoriesCount = 0;
+
+// Get all current categories
+const currentCategories = Object.keys(finalCategories);
+
+// Update emojis
+currentCategories.forEach(category => {
+    if (existingEmojis[category]) {
+        // Keep existing emoji
+        updatedEmojis[category] = existingEmojis[category];
+    } else {
+        // Add new category with default emoji
+        updatedEmojis[category] = '☑️';
+        newCategoriesCount++;
+    }
+});
+
+// Count removed categories
+removedCategoriesCount = Object.keys(existingEmojis).length -
+    Object.keys(existingEmojis).filter(cat => currentCategories.includes(cat)).length;
+
+// Write updated emojis to file
+fs.writeFileSync(categoryEmojisPath, JSON.stringify(updatedEmojis, null, 2), 'utf8');
+
+console.log(`- Added ${newCategoriesCount} new categories with default emoji`);
+console.log(`- Removed ${removedCategoriesCount} obsolete categories`);
+console.log(`- Total categories with emojis: ${Object.keys(updatedEmojis).length}`);
+
 // Step 3: Extract words and categories (from extract_words_and_categories.js)
 console.log('3. Extracting words and categories...');
 
