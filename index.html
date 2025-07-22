@@ -158,7 +158,12 @@ function init(puz){
     d.innerHTML='<button>✓</button>'; return d;
   }
   const tile=(r,c)=>$(`.tile[data-rc="${r},${c}"]`);
-  const lockColour=(r,c,lvl)=>tile(r,c).classList.add(clr[lvl]);
+  const lockColour=(r,c,lvl)=>{
+    const t=tile(r,c);
+    // Only apply color if it's better (lower strike count) than existing
+    const hasBetter=t.classList.contains('lock0')||(lvl>0&&t.classList.contains('lock1'))||(lvl>1&&t.classList.contains('lock2'));
+    if(!hasBetter) t.classList.add(clr[lvl]);
+  };
   const freezeTile=(r,c)=>tile(r,c).classList.add('frozen');
 
   // return a string like "StarWars|Pokemon|Fruits|Cities"
@@ -326,19 +331,40 @@ function init(puz){
     if(solvedRows.size+solvedCols.size!==6) return;
     const r=[0,1,2,3].find(i=>!solvedRows.has(i));
     const c=[0,1,2,3].find(i=>!solvedCols.has(i));
+    
+    // Force rearrange to canonical order
+    const canonicalGrid = puz.words;
+    
+    // Rearrange the entire grid to canonical order
+    for(let row=0;row<4;row++){
+      for(let col=0;col<4;col++){
+        if(G[row][col]!==canonicalGrid[row][col]){
+          // Find where the correct word is
+          for(let r2=0;r2<4;r2++){
+            for(let c2=0;c2<4;c2++){
+              if(G[r2][c2]===canonicalGrid[row][col]){
+                swapCells(row,col,r2,c2,true);
+                break;
+              }
+            }
+          }
+        }
+      }
+    }
+    
     setTimeout(()=>{
       const rh=$(`.hdr[data-row="${r}"]`);
       const ch=$(`.hdr[data-col="${c}"]`);
       if(rh) checkLine('row',r,rh,true);
       if(ch) checkLine('col',c,ch,true);
-    },300);
+    },500);
   }
 
   /* ---------- strikes / misc ---------- */
   function badAttempt(hdr){
     strikes++; hdr.classList.add(strikes===1?'used1':'used2'); shake();
     updateStrike();
-    if(strikes===3){ revealUnsolved(); setTimeout(()=>finish(false),1e3); }
+    if(strikes===3){ revealUnsolved(); solveCompletely(); setTimeout(()=>finish(false),1e3); }
   }
   function updateStrike(){ $('#strikeTxt').textContent=`Strikes ${strikes}/3`; }
   const shake=()=>{ $('#shell').classList.add('shake');
@@ -367,25 +393,61 @@ function init(puz){
     }
   }
 
-  function finish(won){
-    finished=true;
-    for(let r=0;r<4;r++)for(let c=0;c<4;c++){
-      tile(r,c).textContent=puz.words[r][c]; freezeTile(r,c);
+  function finish(won) {
+    finished = true;
+
+    // just freeze everything; leave the current board text untouched
+    for (let r = 0; r < 4; r++)
+      for (let c = 0; c < 4; c++)
+        freezeTile(r, c);
+
+    setTimeout(() => showShare(won), 600);
+  }
+
+  /* ------------------------------------------------------------ */
+  function solveCompletely() {
+    const canonical = puz.words;
+    for (let r = 0; r < 4; r++) {
+      for (let c = 0; c < 4; c++) {
+        if (G[r][c] !== canonical[r][c]) {
+          // find the tile that belongs here
+          outer: for (let r2 = 0; r2 < 4; r2++) {
+            for (let c2 = 0; c2 < 4; c2++) {
+              if (G[r2][c2] === canonical[r][c]) {
+                swapCells(r, c, r2, c2, true);
+                break outer;
+              }
+            }
+          }
+        }
+      }
     }
-    setTimeout(()=>showShare(won),600);
   }
 
   /* ---------- reveal on loss ---------- */
   function revealUnsolved(){
-    const curR=G.map(hash), curC=[0,1,2,3].map(c=>hash(G.map(r=>r[c])));
-    const unsR=puz.rows.filter((l,i)=>!solvedRows.has(i)&&ans[curR[i]]!==l);
-    const unsC=puz.cols.filter((l,i)=>!solvedCols.has(i)&&ans[curC[i]]!==l);
+    // Get current grid state and find what categories each line represents
+    const currentRows = G.map(row => hash(row));
+    const currentCols = Array(4).fill().map((_,i) => hash(G.map(r => r[i])));
+    
+    // Find which categories are actually unsolved
+    const unsR = puz.rows.filter((label, i) => !solvedRows.has(i) && ans[currentRows[i]] !== label);
+    const unsC = puz.cols.filter((label, i) => !solvedCols.has(i) && ans[currentCols[i]] !== label);
+    
     for(let i=0;i<4;i++){
       if(!solvedRows.has(i)){
-        const h=$(`.hdr[data-row="${i}"]`); if(h){ h.textContent=unsR.shift()||''; h.style.color='#666'; }
+        const h=$(`.hdr[data-row="${i}"]`); 
+        if(h){ 
+          h.textContent=unsR.shift()||''; 
+          h.style.color='#666'; 
+        }
       }
       if(!solvedCols.has(i)){
-        const h=$(`.hdr[data-col="${i}"]`); if(h){ h.textContent=unsC.shift()||''; h.style.color='#666'; }
+        const h=$(`.hdr[data-col="${i}"]`); 
+        if(h){ 
+          h.textContent=unsC.shift()||''; 
+          h.style.color='#666'; 
+        }
       }
     }
   }
@@ -407,9 +469,14 @@ function init(puz){
     $('#shareGrid').textContent=gridEmoji();
     if(won) $('#unsolved').innerHTML='';
     else{
-      const curR=G.map(hash), curC=[0,1,2,3].map(c=>hash(G.map(r=>r[c])));
-      const unsR=puz.rows.filter((l,i)=>!solvedRows.has(i)&&ans[curR[i]]!==l);
-      const unsC=puz.cols.filter((l,i)=>!solvedCols.has(i)&&ans[curC[i]]!==l);
+      // Get current grid state and find what categories each line represents
+      const currentRows = G.map(row => hash(row));
+      const currentCols = Array(4).fill().map((_,i) => hash(G.map(r => r[i])));
+      
+      // Find which categories are actually unsolved
+      const unsR = puz.rows.filter((label, i) => !solvedRows.has(i) && ans[currentRows[i]] !== label);
+      const unsC = puz.cols.filter((label, i) => !solvedCols.has(i) && ans[currentCols[i]] !== label);
+      
       $('#unsolved').innerHTML=
         `<p><strong>Unsolved rows:</strong><br>${unsR.join('<br>')}</p>
          <p><strong>Unsolved cols:</strong><br>${unsC.join('<br>')}</p>`;
