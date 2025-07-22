@@ -360,12 +360,30 @@ function init(puz){
     },500);
   }
 
-  /* ---------- strikes / misc ---------- */
-  function badAttempt(hdr){
-    strikes++; hdr.classList.add(strikes===1?'used1':'used2'); shake();
+  /* ───────────────── strikes / misc ───────────────── */
+  function badAttempt(hdr) {
+
+    /* mark header, add strike, shake */
+    strikes++;
+    hdr.classList.add(strikes === 1 ? 'used1' : 'used2');
+    shake();
     updateStrike();
-    if(strikes===3){ revealUnsolved(); solveCompletely(); setTimeout(()=>finish(false),1e3); }
+
+    /* third strike ⇒ auto-solve, reveal labels, end game */
+    if (strikes === 3) {
+
+      // put every word in its true final position
+      const animTime = solveCompletely();   // may be 0 ms if nothing moved
+
+      // after swaps finish, show missing headers & freeze board
+      setTimeout(() => {
+        revealUnsolved();
+        finish(false);
+      }, 1000 + animTime);                  // 1 s pause + animation
+    }
   }
+
+
   function updateStrike(){ $('#strikeTxt').textContent=`Strikes ${strikes}/3`; }
   const shake=()=>{ $('#shell').classList.add('shake');
                     setTimeout(()=>$('#shell').classList.remove('shake'),1200); };
@@ -404,36 +422,71 @@ function init(puz){
     setTimeout(() => showShare(won), 600);
   }
 
-  /* ------------------------------------------------------------ */
+  /* ------------------------------------------------------------
+    solveCompletely()
+    ─────────────────
+    • Works after any combination of solved rows / columns.
+    • Uses your staggered 100 ms swap animation.
+    • Returns total animation time so the caller can wait.
+  ---------------------------------------------------------------- */
   function solveCompletely() {
-    const canonical = puz.words;
-    
-    // Create a mapping of current positions to target positions
-    const moves = [];
-    for (let r = 0; r < 4; r++) {
-      for (let c = 0; c < 4; c++) {
-        const currentWord = G[r][c];
-        const targetWord = canonical[r][c];
-        if (currentWord !== targetWord) {
-          // Find where the target word currently is
-          for (let r2 = 0; r2 < 4; r2++) {
-            for (let c2 = 0; c2 < 4; c2++) {
-              if (G[r2][c2] === targetWord) {
-                moves.push([r, c, r2, c2]);
-                break;
-              }
-            }
+
+  /* utility: canonical row/col position of every word */
+  const canonPos = {};
+  for (let r = 0; r < 4; r++)
+    for (let c = 0; c < 4; c++)
+      canonPos[puz.words[r][c]] = [r, c];
+
+  /* utility: final row / col for a given word */
+  const finalRow = w =>
+    (rowPos && rowPos[w] !== undefined)        ? rowPos[w] :
+    (rowPos)                                   ? rowIdx[wordToRowCat[w]] :
+                                                canonPos[w][0];
+
+  const finalCol = w =>
+    (colPos && colPos[w] !== undefined)        ? colPos[w] :
+    (colPos)                                   ? colIdx[wordToColCat[w]] :
+                                                canonPos[w][1];
+
+  /* build a map word → [targetR, targetC] */
+  const target = {};
+  for (const w of puz.words.flat()) target[w] = [finalRow(w), finalCol(w)];
+
+  /* collect all swaps needed */
+  const moves = [];
+  for (let r = 0; r < 4; r++) {
+    for (let c = 0; c < 4; c++) {
+      const wHere = G[r][c];
+      const [tr, tc] = target[wHere];
+
+      if (r !== tr || c !== tc) {
+        /* find the word that *should* be at [r,c] */
+        const want = Object.keys(target).find(
+          w => target[w][0] === r && target[w][1] === c
+        );
+
+        /* locate that word’s current coordinates */
+        let r2, c2;
+        outer: for (let i = 0; i < 4; i++) {
+          for (let j = 0; j < 4; j++) {
+            if (G[i][j] === want) { r2 = i; c2 = j; break outer; }
           }
         }
+
+        moves.push([r, c, r2, c2]);
+
+        /* update in-memory grid so later searches stay correct */
+        [G[r][c], G[r2][c2]] = [G[r2][c2], G[r][c]];
       }
     }
-    
-    // Execute moves with animation
-    moves.forEach((move, index) => {
-      setTimeout(() => {
-        swapCells(move[0], move[1], move[2], move[3], true);
-      }, index * 100); // Stagger the animations
-    });
+  }
+
+  /* play swaps with a cascade animation (100 ms apart) */
+  moves.forEach((m, i) => {
+    setTimeout(() => swapCells(m[0], m[1], m[2], m[3], true), i * 100);
+  });
+
+  return moves.length * 100;           // total animation duration
   }
 
   /* ---------- reveal on loss ---------- */
