@@ -3,108 +3,70 @@
 <head>
 <meta charset="utf-8">
 <title>Connecdoku</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
-<!-- pretty headline font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-
 <style>
-:root{
-  --tile:#f6f7f8; --tile-b:#d4d5d6;
-  --s0:#b6e7b2;  --s1:#ffe680;  --s2:#ffb06a;
-  --txt:#222;
-  --btn1:#4caf50; --btn2:#ffb300; --btn3:#e53935;
-}
-
+/* --- styles unchanged from earlier versions --- */
+:root{--tile:#f6f7f8;--tile-b:#d4d5d6;--s0:#b6e7b2;--s1:#ffe680;--s2:#ffb06a;
+       --txt:#222;--btn1:#4caf50;--btn2:#ffb300;--btn3:#e53935}
 body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
      margin:0;background:#fafafa;color:var(--txt)}
-
 #shell{max-width:850px;margin:60px auto 40px;padding:0 12px;position:relative}
-
 #logo{font-family:'Fredoka One',cursive;font-size:48px;margin:10px 0 28px;
       text-align:center;letter-spacing:1px;color:#222}
-
-.grid{display:grid;grid-template-columns:repeat(5,1fr);grid-gap:10px}
-
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
 .tile,.hdr{border:2px solid var(--tile-b);border-radius:12px;box-sizing:border-box}
 .tile{background:var(--tile);padding:6px 8px;display:flex;align-items:center;
-      justify-content:center;text-align:center;min-height:90px;
-      cursor:pointer;user-select:none;transition:background-color .3s ease}
+      justify-content:center;min-height:90px;text-align:center;cursor:pointer;
+      user-select:none;transition:background-color .3s ease}
 .hdr{min-height:34px;display:flex;align-items:center;justify-content:center}
 .hdr button{all:unset;cursor:pointer;color:var(--txt)}
 .hdr.solved{font-weight:600;border:none}
 .hdr.solved.pop{animation:pop .3s ease-out}
-
 .rowCredit{margin-top:22px;font-size:13px;text-align:center;color:#777}
-
-#helpIcon{position:absolute;top:-38px;right:16px;font-size:24px;
-          cursor:pointer;user-select:none}
-
+#helpIcon{position:absolute;top:-38px;right:16px;font-size:24px;cursor:pointer}
 .strike{margin:16px 0;text-align:center;font-size:18px}
-
-/* state colours */
-.lock0{background:var(--s0)}
-.lock1{background:var(--s1)}
-.lock2{background:var(--s2)}
-.frozen{cursor:default}
-.selected{outline:3px solid #2196f3}
-.used1{background:var(--btn2)}
-.used2{background:var(--btn3)}
-
-/* animations */
+.lock0{background:var(--s0)}.lock1{background:var(--s1)}.lock2{background:var(--s2)}
+.frozen{cursor:default}.selected{outline:3px solid #2196f3}
+.used1{background:var(--btn2)}.used2{background:var(--btn3)}
+.disabled{opacity:.5;cursor:default}.disabled button{display:none}
 @keyframes pop{0%{transform:scale(.9)}70%{transform:scale(1.05)}100%{transform:scale(1)}}
 @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}
                  40%,80%{transform:translateX(8px)}}
-
-.hdr.solved.pop{animation:pop 1s cubic-bezier(0.34,1.56,0.64,1)}
-.shake{animation:shake 1.2s cubic-bezier(0.36,0,0.66,-0.56)}
-
-/* pop-ups */
+.hdr.solved.pop{animation:pop 1s cubic-bezier(.34,1.56,.64,1)}
+.shake{animation:shake 1.2s cubic-bezier(.36,0,.66,-.56)}
 .modalBg{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;
          align-items:center;justify-content:center;z-index:20}
 .modalBg.show{display:flex}
-.modalCard{background:#fff;border-radius:10px;padding:26px 30px;max-width:360px;
-           position:relative}
+.modalCard{background:#fff;border-radius:10px;padding:26px 30px;max-width:360px}
 .modalCard h3{margin-top:0}
-.modalCard button.min{position:absolute;top:8px;right:10px;border:none;
-                      background:transparent;font-size:22px;cursor:pointer}
-.modalCard button.action{margin-top:18px;padding:8px 14px;border:none;
-                         border-radius:6px;background:#4caf50;color:#fff;cursor:pointer}
-
-#shareBtn{position:fixed;bottom:22px;right:22px;background:#4caf50;
-          color:#fff;padding:10px 14px;border-radius:50px;display:none;
-          cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25);z-index:15}
-
+.modalCard button.min{position:absolute;top:8px;right:10px;border:none;background:0;font-size:22px;cursor:pointer}
+.modalCard button.action{margin-top:18px;padding:8px 14px;border:none;border-radius:6px;background:#4caf50;color:#fff;cursor:pointer}
+#shareBtn{position:fixed;bottom:22px;right:22px;background:#4caf50;color:#fff;
+          padding:10px 14px;border-radius:50px;display:none;cursor:pointer;
+          box-shadow:0 2px 6px rgba(0,0,0,.25);z-index:15}
 pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
 </style>
 </head>
 <body>
-
 <div id="shell">
-  <div id="helpIcon">❓</div>
-  <h1 id="logo">Connecdoku</h1>
-
+  <div id="helpIcon">❓</div><h1 id="logo">Connecdoku</h1>
   <div class="strike" id="strikeTxt"></div>
   <div id="board" class="grid"></div>
-
-  <p class="rowCredit">
-    Connecdoku was created by
-    <a href="https://x.com/GarrettPetersen" target="_blank">@GarrettPetersen</a>
-  </p>
+  <p class="rowCredit">Connecdoku was created by <a href="https://x.com/GarrettPetersen" target="_blank">@GarrettPetersen</a></p>
 </div>
 
 <!-- share popup -->
 <div id="sharePop" class="modalBg">
- <div class="modalCard">
-   <button class="min" id="minShare">×</button>
-   <h3 id="popTitle"></h3>
-   <pre id="shareGrid"></pre>
-   <div id="unsolved"></div>
-   <button class="action" id="copy">Copy to clipboard</button>
- </div>
+  <div class="modalCard">
+    <button class="min" id="minShare">×</button>
+    <h3 id="popTitle"></h3><pre id="shareGrid"></pre>
+    <div id="unsolved"></div>
+    <button class="action" id="copy">Copy to clipboard</button>
+  </div>
 </div>
 
 <!-- help popup -->
@@ -112,13 +74,11 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
   <div class="modalCard">
     <button class="min" id="minHelp">×</button>
     <h3>How to Play</h3>
-    <p>
-      Swap words by selecting two tiles.<br>
-      When you think an entire <strong>row</strong> or <strong>column</strong>
-      matches a hidden category, hit its ✓ button.<br>
-      • Correct lines lock (colour depends on your strike count).<br>
-      • Wrong checks give a strike — after <strong>three</strong> you lose.<br>
-      Solve every row <em>and</em> column to win!
+    <p>Swap words by selecting two tiles.<br>
+       When you think an entire <strong>row</strong> or <strong>column</strong> matches a hidden category, hit its ✓ button.<br>
+       • Correct lines lock (colour depends on your strike count).<br>
+       • Wrong checks give a strike — after <strong>three</strong> you lose.<br>
+       Solve every row <em>and</em> column to win!
     </p>
     <button class="action" id="helpOK">Got it!</button>
   </div>
@@ -127,331 +87,345 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
 <div id="shareBtn">Share</div>
 
 <script>
-  /* ---------- tiny helpers ---------- */
-  const $  = q => document.querySelector(q);
-  const $$ = q => document.querySelectorAll(q);
-  const start = new Date('2025-07-21');
-  const todayIdx = () => Math.floor((Date.now() - start) / 864e5);
+/* ---------- tiny helpers ---------- */
+const $=q=>document.querySelector(q);
+const $$=q=>document.querySelectorAll(q);
+const start=new Date('2025-07-21');
+const todayIdx=()=>Math.floor((Date.now()-start)/864e5);
+const clr=['lock0','lock1','lock2'], emj=['🟩','🟨','🟧'];
 
-  /* strike-tier → colour-class / emoji */
-  const clr = ['lock0', 'lock1', 'lock2'];
-  const emj = ['🟩', '🟨', '🟧'];
+/* ---------- load puzzle ---------- */
+fetch('daily_puzzles/puzzles.json')
+  .then(r=>r.json())
+  .then(all=>init(all[todayIdx()%all.length]));
 
-  /* ---------------------------------------------------------------------- */
-  fetch('daily_puzzles/puzzles.json')
-    .then(r => r.json())
-    .then(all => init(all[todayIdx() % all.length]));
+function init(puz){
 
-  function init(puz) {
-    /* ---------- answer lookup ---------- */
-    const hash = a => [...a].sort().join('|');
-    const ans  = {};
-    puz.rows.forEach((l, i) => (ans[hash(puz.words[i])] = l));
-    for (let c = 0; c < 4; c++)
-      ans[hash(puz.words.map(r => r[c]))] = puz.cols[c];
+  const wordToColCat = {};          // use column labels
+  const wordToRowCat = {};          // use row labels
 
-    const rowIdx = Object.fromEntries(puz.rows.map((l, i) => [l, i]));
-    const colIdx = Object.fromEntries(puz.cols.map((l, i) => [l, i]));
-
-    /* ---------- board state ---------- */
-    const flat = [...puz.words.flat()]
-      .map(v => [Math.random(), v])
-      .sort((a, b) => a[0] - b[0])
-      .map(v => v[1]);
-    const G = [[], [], [], []];
-    let k = 0;
-    for (let r = 0; r < 4; r++) for (let c = 0; c < 4; c++) G[r][c] = flat[k++];
-
-    let strikes     = 0;
-    const solvedRows = new Map();   // row-idx → strike-level
-    const solvedCols = new Map();   // col-idx → strike-level
-    let sel         = null;
-    let finished    = false;
-
-    renderBoard();
-    updateStrike();
-
-    /* === DOM BUILD ======================================================= */
-    function renderBoard() {
-      const board = $('#board');
-      board.innerHTML = '';
-
-      /* column-header strip */
-      for (let c = 0; c < 4; c++) board.appendChild(makeHdr('col', c));
-      board.appendChild(document.createElement('div')); // spacer
-
-      /* 4 rows of tiles + row headers */
-      for (let r = 0; r < 4; r++) {
-        for (let c = 0; c < 4; c++) board.appendChild(makeTile(r, c));
-        board.appendChild(makeHdr('row', r));
-      }
+  for (let r = 0; r < 4; r++) {
+    for (let c = 0; c < 4; c++) {
+      const w = puz.words[r][c];
+      wordToRowCat[w] = puz.rows[r];    // category of its *row*
+      wordToColCat[w] = puz.cols[c];    // category of its *column*
     }
-
-    function makeTile(r, c) {
-      const d = document.createElement('div');
-      d.className   = 'tile';
-      d.textContent = G[r][c];
-      d.dataset.rc  = `${r},${c}`;
-      return d;
-    }
-
-    function makeHdr(kind, idx) {
-      const d = document.createElement('div');
-      d.className = 'hdr clickHdr';
-      d.dataset[kind] = idx;
-      d.innerHTML = '<button>✓</button>';
-      return d;
-    }
-
-    /* === SHARED DOM HELPERS ============================================= */
-    const tile = (r, c) => $(`.tile[data-rc="${r},${c}"]`);
-
-    function lockColour(r, c, lvl) {
-      const t = tile(r, c);
-      if (!t.classList.contains(clr[lvl])) t.classList.add(clr[lvl]);
-    }
-
-    function freezeTile(r, c) {
-      tile(r, c).classList.add('frozen');
-    }
-
-    /* === CLICK HANDLERS ================================================== */
-    $('#board').addEventListener('click', e => {
-      if (finished) return;
-
-      const t = e.target.closest('.tile');
-      const h = e.target.closest('.clickHdr');
-
-      /* tile --- */
-      if (t && !t.classList.contains('frozen')) handleTileClick(t);
-
-      /* header --- */
-      if (h) {
-        const r = h.dataset.row !== undefined ? +h.dataset.row : null;
-        const c = h.dataset.col !== undefined ? +h.dataset.col : null;
-        if (r !== null) checkLine('row', r, h);
-        if (c !== null) checkLine('col', c, h);
-      }
-    });
-
-    function handleTileClick(td) {
-      if (sel === td) {
-        td.classList.remove('selected');
-        sel = null;
-        return;
-      }
-      if (!sel) {
-        td.classList.add('selected');
-        sel = td;
-        return;
-      }
-
-      const [r1, c1] = sel.dataset.rc.split(',').map(Number);
-      const [r2, c2] = td.dataset.rc.split(',').map(Number);
-      if (cantSwap(r1, c1, r2, c2)) return;
-
-      swapCells(r1, c1, r2, c2, /*animate=*/true);
-      sel.classList.remove('selected');
-      sel = null;
-    }
-
-    function cantSwap(r1, c1, r2, c2) {
-      if (solvedRows.has(r1) || solvedRows.has(r2)) return true;
-      if (solvedCols.has(c1) || solvedCols.has(c2)) return true;
-      return false;
-    }
-
-    /* === LINE CHECK ====================================================== */
-    function checkLine(kind, idx, hdr) {
-      if (hdr.classList.contains('solved')) return;
-
-      /* rule-of-3: once 3 rows OR 3 cols solved, the rest must be the opposite dimension */
-      if (
-        (kind === 'row' && solvedRows.size >= 3 && solvedCols.size < 4) ||
-        (kind === 'col' && solvedCols.size >= 3 && solvedRows.size < 4)
-      )
-        return;
-
-      const words = kind === 'row' ? G[idx] : G.map(r => r[idx]);
-      const label = ans[hash(words)];
-      if (!label) return badAttempt(hdr);
-
-      const lvl = strikes;
-      hdr.replaceWith(makeSolvedLabel(label, lvl));
-      if (kind === 'row') solvedRows.set(idx, lvl);
-      else solvedCols.set(idx, lvl);
-
-      colourAndFreeze(kind, idx, lvl);
-      autoRealign(kind, idx, label);
-      freezeIntersections();
-      if (!finished) autoEndIfObvious();
-      if (solvedRows.size === 4 && solvedCols.size === 4) finish(true);
-    }
-
-    function makeSolvedLabel(text, lvl) {
-      const d = document.createElement('div');
-      d.className = `hdr solved ${clr[lvl]} pop`;
-      d.textContent = text;
-      d.style.background = 'var(--tile)';
-      return d;
-    }
-
-    /* ---------- NEW: colour & freeze whole line ---------- */
-    function colourAndFreeze(kind, idx, lvl) {
-      if (kind === 'row') {
-        for (let c = 0; c < 4; c++) {
-          lockColour(idx, c, lvl);
-          freezeTile(idx, c);
-        }
-      } else {
-        for (let r = 0; r < 4; r++) {
-          lockColour(r, idx, lvl);
-          freezeTile(r, idx);
-        }
-      }
-    }
-
-    /* === auto realign ==================================================== */
-    function autoRealign(kind, idx, label) {
-      if (kind === 'row') {
-        const canon = puz.words[rowIdx[label]];
-        for (let c = 0; c < 4; c++) {
-          if (solvedCols.has(c)) continue;
-          const want = canon[c];
-          if (G[idx][c] === want) continue;
-          const c2 = G[idx].indexOf(want);
-          swapCells(idx, c, idx, c2, false);
-        }
-      } else {
-        const canon = puz.words.map(r => r[colIdx[label]]);
-        for (let r = 0; r < 4; r++) {
-          if (solvedRows.has(r)) continue;
-          const want = canon[r];
-          if (G[r][idx] === want) continue;
-          const r2 = G.findIndex(row => row[idx] === want);
-          swapCells(r, idx, r2, idx, false);
-        }
-      }
-    }
-
-    /* === freeze intersections =========================================== */
-    function freezeIntersections() {
-      for (const r of solvedRows.keys())
-        for (const c of solvedCols.keys()) freezeTile(r, c);
-    }
-
-    /* === strike handling ================================================= */
-    function badAttempt(hdr) {
-      strikes++;
-      hdr.classList.add(strikes === 1 ? 'used1' : 'used2');
-      shake();
-      updateStrike();
-      if (strikes >= 3) finish(false);
-    }
-
-    function updateStrike() {
-      $('#strikeTxt').textContent = `Strikes ${strikes}/3`;
-    }
-
-    function shake() {
-      $('#shell').style.animation = 'shake .45s';
-      setTimeout(() => ($('#shell').style.animation = ''), 450);
-    }
-
-    /* === swap helper (Web-Animations FLIP) ============================== */
-    function swapCells(r1, c1, r2, c2, animate) {
-      const t1 = tile(r1, c1);
-      const t2 = tile(r2, c2);
-
-      if (animate) animateSwap(t1, t2);
-
-      requestAnimationFrame(() => {
-        const temp = t1.textContent;
-        t1.textContent = t2.textContent;
-        t2.textContent = temp;
-        [G[r1][c1], G[r2][c2]] = [G[r2][c2], G[r1][c1]];
-      });
-    }
-
-    function animateSwap(a, b) {
-      const ra = a.getBoundingClientRect();
-      const rb = b.getBoundingClientRect();
-      const dx = rb.left - ra.left;
-      const dy = rb.top  - ra.top;
-      const opts = {duration:500,easing:'cubic-bezier(0.4,0,0.2,1)'};
-      a.animate([{transform:`translate(${ dx}px,${ dy}px)`},{transform:'translate(0,0)'}],opts);
-      b.animate([{transform:`translate(${-dx}px,${-dy}px)`},{transform:'translate(0,0)'}],opts);
-    }
-
-    /* === auto-complete logic ============================================ */
-    function autoEndIfObvious() {
-      if (solvedRows.size === 3 && solvedCols.size < 4) {
-        const r = [0,1,2,3].find(i => !solvedRows.has(i));
-        checkLine('row', r, $(`.hdr[data-row="${r}"]`));
-      } else if (solvedCols.size === 3 && solvedRows.size < 4) {
-        const c = [0,1,2,3].find(i => !solvedCols.has(i));
-        checkLine('col', c, $(`.hdr[data-col="${c}"]`));
-      }
-    }
-
-    /* === finish sequence ================================================ */
-    function finish(won) {
-      finished = true;
-      for (let r = 0; r < 4; r++) {
-        for (let c = 0; c < 4; c++) {
-          tile(r, c).textContent = puz.words[r][c];
-          freezeTile(r, c);
-        }
-      }
-      setTimeout(() => showShare(won), 600);
-    }
-
-    /* -------------------------------------------------------------------- */
-    function emojiFor(td) {
-      if (td.classList.contains('lock0')) return emj[0];
-      if (td.classList.contains('lock1')) return emj[1];
-      if (td.classList.contains('lock2')) return emj[2];
-      return '⬛';
-    }
-
-    function gridEmoji() {
-      const rows = [[], [], [], []];
-      $$('.tile').forEach(t => {
-        const [r, c] = t.dataset.rc.split(',').map(Number);
-        rows[r][c] = emojiFor(t);
-      });
-      return rows.map(r => r.join('')).join('\n');
-    }
-
-    /* share-popup --------------------------------------------------------- */
-    function showShare(won) {
-      $('#popTitle').textContent = won ? 'Puzzle solved!' : 'Out of guesses';
-      $('#shareGrid').textContent = gridEmoji();
-
-      if (won) $('#unsolved').innerHTML = '';
-      else {
-        const unsR = puz.rows.filter((_, i) => !solvedRows.has(i));
-        const unsC = puz.cols.filter((_, i) => !solvedCols.has(i));
-        $('#unsolved').innerHTML =
-          `<p><strong>Unsolved rows:</strong><br>${unsR.join('<br>')}</p>
-           <p><strong>Unsolved cols:</strong><br>${unsC.join('<br>')}</p>`;
-      }
-      $('#sharePop').classList.add('show');
-    }
-
-    $('#copy').onclick = () => {
-      navigator.clipboard.writeText($('#shareGrid').textContent);
-      $('#copy').textContent = 'Copied!';
-    };
-    $('#minShare').onclick = () =>
-      ($('#sharePop').classList.remove('show'), ($('#shareBtn').style.display = 'block'));
-    $('#shareBtn').onclick = () =>
-      ($('#shareBtn').style.display = 'none', $('#sharePop').classList.add('show'));
-
-    $('#helpIcon').onclick = () => $('#helpPop').classList.add('show');
-    $('#minHelp').onclick = $('#helpOK').onclick = () =>
-      $('#helpPop').classList.remove('show');
   }
+
+  /* answer lookup */
+  const hash=a=>[...a].sort().join('|');
+  const ans={};
+  puz.rows.forEach((l,i)=>ans[hash(puz.words[i])]=l);
+  for(let c=0;c<4;c++) ans[hash(puz.words.map(r=>r[c]))]=puz.cols[c];
+
+  const rowIdx=Object.fromEntries(puz.rows.map((l,i)=>[l,i]));
+  const colIdx=Object.fromEntries(puz.cols.map((l,i)=>[l,i]));
+
+  /* board state */
+  const flat=[...puz.words.flat()].map(v=>[Math.random(),v])
+               .sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
+  const G=[[],[],[],[]]; let k=0;
+  for(let r=0;r<4;r++)for(let c=0;c<4;c++)G[r][c]=flat[k++];
+
+  /* dynamic canonical maps (created on first solve) */
+  let colPos=null; // word → target column   (defined when first row category solved)
+  let rowPos=null; // word → target row      (defined when first column category solved)
+
+  /* game vars */
+  let strikes=0, finished=false, sel=null;
+  const solvedRows=new Map(), solvedCols=new Map(); // idx → strike tier
+
+  renderBoard(); updateStrike();
+
+  /* ---------- DOM ---------- */
+  function renderBoard(){
+    const bd=$('#board'); bd.innerHTML='';
+    for(let c=0;c<4;c++) bd.appendChild(makeHdr('col',c));
+    bd.appendChild(document.createElement('div'));
+    for(let r=0;r<4;r++){
+      for(let c=0;c<4;c++) bd.appendChild(makeTile(r,c));
+      bd.appendChild(makeHdr('row',r));
+    }
+  }
+  function makeTile(r,c){
+    const d=document.createElement('div');
+    d.className='tile'; d.textContent=G[r][c]; d.dataset.rc=`${r},${c}`;
+    return d;
+  }
+  function makeHdr(kind,idx){
+    const d=document.createElement('div');
+    d.className='hdr clickHdr'; d.dataset[kind]=idx;
+    d.innerHTML='<button>✓</button>'; return d;
+  }
+  const tile=(r,c)=>$(`.tile[data-rc="${r},${c}"]`);
+  const lockColour=(r,c,lvl)=>tile(r,c).classList.add(clr[lvl]);
+  const freezeTile=(r,c)=>tile(r,c).classList.add('frozen');
+
+  // return a string like "StarWars|Pokemon|Fruits|Cities"
+  function categorySignature(words) {
+    return words     // words = 4-item array
+      .map(w => ans[[...w].sort().join('|')])  // look up its category
+      .join('|');
+  }
+
+  /* ---------- click handling ---------- */
+  $('#board').addEventListener('click',e=>{
+    if(finished) return;
+    const t=e.target.closest('.tile');
+    const h=e.target.closest('.clickHdr');
+    if(t && !t.classList.contains('frozen')) handleTileClick(t);
+    if(h){
+      const r=h.dataset.row!==undefined?+h.dataset.row:null;
+      const c=h.dataset.col!==undefined?+h.dataset.col:null;
+      if(r!==null) checkLine('row',r,h);
+      if(c!==null) checkLine('col',c,h);
+    }
+  });
+
+  function handleTileClick(td){
+    if(sel===td){ td.classList.remove('selected'); sel=null; return; }
+    if(!sel){ td.classList.add('selected'); sel=td; return; }
+
+    const [r1,c1]=sel.dataset.rc.split(',').map(Number);
+    const [r2,c2]=td.dataset.rc.split(',').map(Number);
+    if(solvedRows.has(r1)||solvedRows.has(r2)||solvedCols.has(c1)||solvedCols.has(c2)) return;
+    swapCells(r1,c1,r2,c2,true);
+    sel.classList.remove('selected'); sel=null;
+  }
+
+  /* ---------- solving logic ---------- */
+  function checkLine(kind,idx,hdr,auto=false){
+    if(hdr.classList.contains('solved')) return;
+
+    if(!auto && (
+      (kind==='row'&&solvedRows.size>=3&&solvedCols.size<4)||
+      (kind==='col'&&solvedCols.size>=3&&solvedRows.size<4))) return;
+
+    const words=kind==='row'?G[idx]:G.map(r=>r[idx]);
+    const label=ans[hash(words)];
+    if(!label) return badAttempt(hdr);
+
+    /* ---- create canonical maps on first solve ---- */
+    if(colPos===null && rowIdx[label]!==undefined){        // first ROW category solved
+      colPos={};                                           // build from this line’s order
+      if(kind==='row') for(let c=0;c<4;c++) colPos[G[idx][c]]=c;
+      else              for(let r=0;r<4;r++) colPos[G[r][idx]]=r; // row category solved vertically (transpose)
+    }
+    if(rowPos===null && colIdx[label]!==undefined){        // first COLUMN category solved
+      rowPos={};
+      if(kind==='col') for(let r=0;r<4;r++) rowPos[G[r][idx]]=r;
+      else              for(let c=0;c<4;c++) rowPos[G[idx][c]]=c; // column category solved horizontally
+    }
+
+    /* ---- update UI ---- */
+    const lvl=strikes;
+    const solved=kind==='row'?solvedRows:solvedCols;
+    hdr.replaceWith(makeSolvedLabel(label,lvl));
+    solved.set(idx,lvl);
+    colourAndFreeze(kind,idx,lvl);
+
+    if(kind==='row' && colPos) alignRow(idx);
+    if(kind==='col' && rowPos) alignCol(idx);
+
+    freezeIntersections();
+    if((kind==='row'&&solvedRows.size===3)||(kind==='col'&&solvedCols.size===3))
+      disableSameHeaders(kind);
+
+    if(!finished) autoEndIfObvious();
+    if(solvedRows.size===4&&solvedCols.size===4) finish(true);
+  }
+
+  function makeSolvedLabel(txt,lvl){
+    const d=document.createElement('div');
+    d.className=`hdr solved ${clr[lvl]} pop`; d.textContent=txt; return d;
+  }
+  const colourAndFreeze=(k,i,l)=>{
+    if(k==='row') for(let c=0;c<4;c++){ lockColour(i,c,l); freezeTile(i,c); }
+    else          for(let r=0;r<4;r++){ lockColour(r,i,l); freezeTile(r,i); }
+  };
+
+  /* ---------------------------------------------------------------
+    alignRow(r)
+    ───────────
+    Rotate the newly-solved row `r` so that its four *categories*
+    appear in the same left-to-right order as the very first row
+    that was locked.
+  ---------------------------------------------------------------- */
+  function alignRow(r) {
+    if (solvedRows.size === 0) return;            // no reference row yet
+    const refRow = [...solvedRows.keys()][0];     // first frozen row
+
+    // category → column position in the reference row
+    const catToCol = {};
+    for (let c = 0; c < 4; c++) {
+      const cat = wordToColCat[G[refRow][c]];
+      catToCol[cat] = c;
+    }
+
+    // move words until each category sits under its target column
+    for (let pass = 0; pass < 2; pass++) {
+      for (let c = 0; c < 4; c++) {
+        if (solvedCols.has(c)) continue;
+        const cat  = wordToColCat[G[r][c]];
+        const want = catToCol[cat];
+        if (want !== undefined && want !== c && !solvedCols.has(want)) {
+          swapCells(r, c, r, want, true);
+        }
+      }
+    }
+  }
+
+  /* ---------------------------------------------------------------
+    alignCol(c)
+    ───────────
+    Rotate the newly-solved column `c` so that its four *categories*
+    appear in the same top-to-bottom order as the very first column
+    that was locked.
+  ---------------------------------------------------------------- */
+  function alignCol(c) {
+    if (solvedCols.size === 0) return;            // no reference column yet
+    const refCol = [...solvedCols.keys()][0];     // first frozen column
+
+    // category → row position in the reference column
+    const catToRow = {};
+    for (let r = 0; r < 4; r++) {
+      const cat = wordToRowCat[G[r][refCol]];
+      catToRow[cat] = r;
+    }
+
+    // move words until each category sits in its target row
+    for (let pass = 0; pass < 2; pass++) {
+      for (let r = 0; r < 4; r++) {
+        if (solvedRows.has(r)) continue;
+        const cat  = wordToRowCat[G[r][c]];
+        const want = catToRow[cat];
+        if (want !== undefined && want !== r && !solvedRows.has(want)) {
+          swapCells(r, c, want, c, true);
+        }
+      }
+    }
+  }
+
+
+  function freezeIntersections(){
+    for(const r of solvedRows.keys())
+      for(const c of solvedCols.keys()) freezeTile(r,c);
+  }
+
+  function disableSameHeaders(kind){
+    const solvedMap=kind==='row'?solvedRows:solvedCols;
+    for(let i=0;i<4;i++){
+      if(solvedMap.has(i)) continue;
+      const hdr=$(`.hdr[data-${kind}="${i}"]`);
+      if(hdr){ hdr.classList.add('disabled'); hdr.innerHTML=''; }
+    }
+    checkAutoSolve();
+  }
+
+  function checkAutoSolve(){
+    if(solvedRows.size+solvedCols.size!==6) return;
+    const r=[0,1,2,3].find(i=>!solvedRows.has(i));
+    const c=[0,1,2,3].find(i=>!solvedCols.has(i));
+    setTimeout(()=>{
+      const rh=$(`.hdr[data-row="${r}"]`);
+      const ch=$(`.hdr[data-col="${c}"]`);
+      if(rh) checkLine('row',r,rh,true);
+      if(ch) checkLine('col',c,ch,true);
+    },300);
+  }
+
+  /* ---------- strikes / misc ---------- */
+  function badAttempt(hdr){
+    strikes++; hdr.classList.add(strikes===1?'used1':'used2'); shake();
+    updateStrike();
+    if(strikes===3){ revealUnsolved(); setTimeout(()=>finish(false),1e3); }
+  }
+  function updateStrike(){ $('#strikeTxt').textContent=`Strikes ${strikes}/3`; }
+  const shake=()=>{ $('#shell').classList.add('shake');
+                    setTimeout(()=>$('#shell').classList.remove('shake'),1200); };
+
+  function swapCells(r1,c1,r2,c2,anim){
+    if(r1===r2&&c1===c2) return;
+    const t1=tile(r1,c1), t2=tile(r2,c2); if(!t1||!t2) return;
+    if(anim){
+      const a=t1.getBoundingClientRect(), b=t2.getBoundingClientRect();
+      const dx=b.left-a.left, dy=b.top-a.top, opt={duration:500,easing:'cubic-bezier(.4,0,.2,1)'};
+      t1.animate([{transform:`translate(${dx}px,${dy}px)`},{transform:'none'}],opt);
+      t2.animate([{transform:`translate(${-dx}px,${-dy}px)`},{transform:'none'}],opt);
+    }
+    [G[r1][c1],G[r2][c2]]=[G[r2][c2],G[r1][c1]];
+    [t1.textContent,t2.textContent]=[t2.textContent,t1.textContent];
+  }
+
+  function autoEndIfObvious(){
+    if(solvedRows.size===3&&solvedCols.size<4){
+      const r=[0,1,2,3].find(i=>!solvedRows.has(i));
+      checkLine('row',r,$(`.hdr[data-row="${r}"]`));
+    }else if(solvedCols.size===3&&solvedRows.size<4){
+      const c=[0,1,2,3].find(i=>!solvedCols.has(i));
+      checkLine('col',c,$(`.hdr[data-col="${c}"]`));
+    }
+  }
+
+  function finish(won){
+    finished=true;
+    for(let r=0;r<4;r++)for(let c=0;c<4;c++){
+      tile(r,c).textContent=puz.words[r][c]; freezeTile(r,c);
+    }
+    setTimeout(()=>showShare(won),600);
+  }
+
+  /* ---------- reveal on loss ---------- */
+  function revealUnsolved(){
+    const curR=G.map(hash), curC=[0,1,2,3].map(c=>hash(G.map(r=>r[c])));
+    const unsR=puz.rows.filter((l,i)=>!solvedRows.has(i)&&ans[curR[i]]!==l);
+    const unsC=puz.cols.filter((l,i)=>!solvedCols.has(i)&&ans[curC[i]]!==l);
+    for(let i=0;i<4;i++){
+      if(!solvedRows.has(i)){
+        const h=$(`.hdr[data-row="${i}"]`); if(h){ h.textContent=unsR.shift()||''; h.style.color='#666'; }
+      }
+      if(!solvedCols.has(i)){
+        const h=$(`.hdr[data-col="${i}"]`); if(h){ h.textContent=unsC.shift()||''; h.style.color='#666'; }
+      }
+    }
+  }
+
+  /* ---------- share popup ---------- */
+  function emojiFor(td){ return td.classList.contains('lock0')?emj[0]:
+                               td.classList.contains('lock1')?emj[1]:
+                               td.classList.contains('lock2')?emj[2]:'⬛'; }
+  function gridEmoji(){
+    const rows=[[],[],[],[]];
+    $$('.tile').forEach(t=>{
+      const [r,c]=t.dataset.rc.split(',').map(Number);
+      rows[r][c]=emojiFor(t);
+    });
+    return rows.map(r=>r.join('')).join('\n');
+  }
+  function showShare(won){
+    $('#popTitle').textContent=won?'Puzzle solved!':'Out of guesses';
+    $('#shareGrid').textContent=gridEmoji();
+    if(won) $('#unsolved').innerHTML='';
+    else{
+      const curR=G.map(hash), curC=[0,1,2,3].map(c=>hash(G.map(r=>r[c])));
+      const unsR=puz.rows.filter((l,i)=>!solvedRows.has(i)&&ans[curR[i]]!==l);
+      const unsC=puz.cols.filter((l,i)=>!solvedCols.has(i)&&ans[curC[i]]!==l);
+      $('#unsolved').innerHTML=
+        `<p><strong>Unsolved rows:</strong><br>${unsR.join('<br>')}</p>
+         <p><strong>Unsolved cols:</strong><br>${unsC.join('<br>')}</p>`;
+    }
+    $('#sharePop').classList.add('show');
+  }
+  $('#copy').onclick=()=>{ navigator.clipboard.writeText($('#shareGrid').textContent);
+                           $('#copy').textContent='Copied!'; };
+  $('#minShare').onclick=()=>{ $('#sharePop').classList.remove('show');
+                               $('#shareBtn').style.display='block'; };
+  $('#shareBtn').onclick=()=>{ $('#shareBtn').style.display='none';
+                               $('#sharePop').classList.add('show'); };
+
+  $('#helpIcon').onclick=()=>$('#helpPop').classList.add('show');
+  $('#minHelp').onclick=$('#helpOK').onclick=()=>$('#helpPop').classList.remove('show');
+}
 </script>
 </body>
 </html>
