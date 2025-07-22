@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Connecdoku</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <!-- pretty headline font -->
@@ -54,9 +55,12 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 .used2{background:var(--btn3)}
 
 /* animations */
-@keyframes pop{0%{transform:scale(.9)}70%{transform:1.05)}100%{transform:1}}
+@keyframes pop{0%{transform:scale(.9)}70%{transform:scale(1.05)}100%{transform:scale(1)}}
 @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}
                  40%,80%{transform:translateX(8px)}}
+
+.hdr.solved.pop{animation:pop 1s cubic-bezier(0.34, 1.56, 0.64, 1)}
+.shake{animation:shake 1.2s cubic-bezier(0.36, 0, 0.66, -0.56)}
 
 /* pop-ups */
 .modalBg{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;
