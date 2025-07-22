@@ -16,24 +16,44 @@ import path from "path";
 import { fileURLToPath } from "url";
 import * as prompts from "@inquirer/prompts";
 
+console.log("Starting puzzle curator...");
+
 // ──────────────── paths ───────────────────────────────────────────
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const RAW_DIR = path.join(__dirname, "puzzles_matrix");
 const OUT_DIR = path.join(__dirname, "daily_puzzles");
 const DB_FILE = path.join(OUT_DIR, "puzzles.json");
-if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR);
+
+console.log("Directories:");
+console.log("  RAW_DIR:", RAW_DIR);
+console.log("  OUT_DIR:", OUT_DIR);
+console.log("  DB_FILE:", DB_FILE);
+
+if (!fs.existsSync(OUT_DIR)) {
+    console.log("Creating output directory...");
+    fs.mkdirSync(OUT_DIR);
+}
 
 // ──────────────── load / init database ───────────────────────────
+console.log("Loading database...");
 let db = [];
-if (fs.existsSync(DB_FILE)) db = JSON.parse(fs.readFileSync(DB_FILE, "utf8"));
+if (fs.existsSync(DB_FILE)) {
+    console.log("Database file exists, loading...");
+    db = JSON.parse(fs.readFileSync(DB_FILE, "utf8"));
+    console.log(`Loaded ${db.length} existing puzzles`);
+} else {
+    console.log("No existing database file found");
+}
 
 const canon = arr => [...arr].sort().join("|");
 const makeKey = (rows, cols) => canon(rows) + "::" + canon(cols);
 const used = new Set(
     db.flatMap(p => [makeKey(p.rows, p.cols), makeKey(p.cols, p.rows)])
 );
+console.log(`Built used puzzle set with ${used.size} keys`);
 
 // ──────────────── usage tracking ──────────────────────────────────
+console.log("Building usage counts...");
 function buildUsageCounts() {
     const categoryUsage = {};
     const wordUsage = {};
@@ -57,11 +77,15 @@ function buildUsageCounts() {
 }
 
 const { categoryUsage, wordUsage } = buildUsageCounts();
+console.log(`Usage tracking built: ${Object.keys(categoryUsage).length} categories, ${Object.keys(wordUsage).length} words`);
 
 // ──────────────── word look-ups ──────────────────────────────────
+console.log("Loading categories...");
 const categoriesJson = JSON.parse(
     fs.readFileSync(path.join(__dirname, "data", "categories.json"))
 );
+console.log(`Loaded ${Object.keys(categoriesJson).length} categories`);
+
 const catSet = {};  // category → Set of words
 for (const [cat, words] of Object.entries(categoriesJson)) {
     catSet[cat] = new Set(words);
@@ -95,55 +119,136 @@ function formatWithUsage(item, usageCount) {
 }
 
 // ──────────────── gather unseen raw layouts ─────────────────────
+console.log("Checking for raw puzzle files...");
 function unseenFiles() {
-    return fs.readdirSync(RAW_DIR)
-        .filter(f => f.endsWith(".json"))
-        .filter(f => {
-            const { rows, cols } = JSON.parse(fs.readFileSync(path.join(RAW_DIR, f)));
-            return !used.has(makeKey(rows, cols)) &&
-                !used.has(makeKey(cols, rows));
+    if (!fs.existsSync(RAW_DIR)) {
+        console.log("RAW_DIR does not exist:", RAW_DIR);
+        return [];
+    }
+    
+    const files = fs.readdirSync(RAW_DIR);
+    console.log(`Found ${files.length} files in RAW_DIR`);
+    
+    const jsonFiles = files.filter(f => f.endsWith(".json"));
+    console.log(`Found ${jsonFiles.length} JSON files`);
+    
+    // If there are too many files, we need a more efficient approach
+    if (jsonFiles.length > 1000) {
+        console.log("Too many files, using batch processing...");
+        
+        // Process files in batches to avoid hanging
+        const batchSize = 100;
+        const unseen = [];
+        
+        for (let i = 0; i < jsonFiles.length; i += batchSize) {
+            const batch = jsonFiles.slice(i, i + batchSize);
+            console.log(`Processing batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(jsonFiles.length/batchSize)} (${batch.length} files)`);
+            
+            for (const f of batch) {
+                try {
+                    const { rows, cols } = JSON.parse(fs.readFileSync(path.join(RAW_DIR, f)));
+                    const isUsed = used.has(makeKey(rows, cols)) || used.has(makeKey(cols, rows));
+                    if (!isUsed) {
+                        unseen.push(f);
+                        // Limit to first 10 unseen files to avoid overwhelming the curator
+                        if (unseen.length >= 10) {
+                            console.log(`Found ${unseen.length} unseen files, limiting to first 10 for this session`);
+                            return unseen;
+                        }
+                    }
+                } catch (error) {
+                    console.log(`  Error reading ${f}:`, error.message);
+                }
+            }
+        }
+        
+        console.log(`Found ${unseen.length} unseen puzzle files (limited to first 10)`);
+        return unseen;
+    } else {
+        // Original approach for smaller file counts
+        const unseen = jsonFiles.filter(f => {
+            try {
+                const { rows, cols } = JSON.parse(fs.readFileSync(path.join(RAW_DIR, f)));
+                const isUsed = used.has(makeKey(rows, cols)) || used.has(makeKey(cols, rows));
+                if (isUsed) {
+                    console.log(`  Skipping ${f} (already used)`);
+                }
+                return !isUsed;
+            } catch (error) {
+                console.log(`  Error reading ${f}:`, error.message);
+                return false;
+            }
         });
+        
+        console.log(`Found ${unseen.length} unseen puzzle files`);
+        return unseen;
+    }
 }
 
 // ──────────────── interactive loop ──────────────────────────────
+console.log("Starting interactive loop...");
 let rawFiles = unseenFiles();
 if (!rawFiles.length) {
     console.log("No unseen puzzles available. Bye!");
     process.exit(0);
 }
 
+console.log(`Ready to curate ${rawFiles.length} puzzles`);
 let fileIdx = 0;
 while (fileIdx < rawFiles.length) {
 
     const file = rawFiles[fileIdx];
+    console.log(`\nProcessing file ${fileIdx + 1}/${rawFiles.length}: ${file}`);
+    
     const { rows, cols } = JSON.parse(fs.readFileSync(path.join(RAW_DIR, file)));
     const allCats = [...rows, ...cols];
+    console.log(`Puzzle has ${rows.length} rows and ${cols.length} columns`);
 
     // ---- show categories upfront ----------------------------------------
     console.clear();
     console.log("Categories for this puzzle:\n");
     console.log("Rows:", rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
     console.log("\nCols:", cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
-    console.log("\nPress Enter to start choosing words...");
-    await prompts.input({ message: '' });
+
+    // ---- ask if user wants to skip this puzzle ------------------------
+    console.log("\nDo you want to continue with this puzzle?");
+    const continuePuzzle = await prompts.confirm({ 
+        message: "Continue with this puzzle?", 
+        default: true 
+    });
+    
+    if (!continuePuzzle) {
+        console.log("Skipping puzzle...");
+        fs.renameSync(path.join(RAW_DIR, file),
+            path.join(RAW_DIR, `skip_${file}`));
+        rawFiles = unseenFiles();
+        continue;
+    }
 
     // ---- build viable-word matrix, abort if any cell empty ----------
+    console.log("Building viable word matrix...");
     const viableGrid = Array.from({ length: 4 }, () => Array(4));
     let cellOk = true;
     for (let r = 0; r < 4 && cellOk; ++r)
         for (let c = 0; c < 4; ++c) {
             const opts = uniqueWords(rows[r], cols[c], allCats);
-            if (!opts.length) { cellOk = false; break; }
+            if (!opts.length) { 
+                console.log(`  Cell [${r}][${c}] has no valid words`);
+                cellOk = false; 
+                break; 
+            }
             viableGrid[r][c] = opts;
         }
 
     if (!cellOk) {                         // skip invalid grid
+        console.log(`⚠️  skipped ${file} (red-herring violation)`);
         fs.renameSync(path.join(RAW_DIR, file),
             path.join(RAW_DIR, `bad_${file}`));
-        console.log(`⚠️  skipped ${file} (red-herring violation)`);
         rawFiles = unseenFiles();
         continue;
     }
+
+    console.log("Viable word matrix built successfully");
 
     // ---- curator chooses a word for each intersection ---------------
     const chosen = Array.from({ length: 4 }, () => Array(4));
@@ -166,11 +271,13 @@ while (fileIdx < rawFiles.length) {
                 pick = opts[0];
                 console.log(`auto: ${formatWithUsage(rows[r], categoryUsage)} × ${formatWithUsage(cols[c], categoryUsage)}  →  ${formatWithUsage(pick, wordUsage)}`);
             } else {
+                console.log(`Showing ${opts.length} options for selection...`);
+                
                 pick = await prompts.select({
                     message: `Pick word for ${formatWithUsage(rows[r], categoryUsage)} × ${formatWithUsage(cols[c], categoryUsage)}`,
                     choices: opts.map(w => ({ 
                         value: w, 
-                        label: formatWithUsage(w, wordUsage) 
+                        name: formatWithUsage(w, wordUsage)
                     }))
                 });
             }
@@ -196,8 +303,10 @@ while (fileIdx < rawFiles.length) {
     console.log("\nCompleted puzzle:");
     console.table(chosen);
 
+    console.log("Asking for approval...");
     const approve = await prompts.confirm({ message: "Approve this puzzle?" });
     if (approve) {
+        console.log("Puzzle approved, saving...");
         // Add puzzle to database without a date
         db.push({ rows, cols, words: chosen });
         fs.writeFileSync(DB_FILE, JSON.stringify(db, null, 2));
@@ -218,15 +327,21 @@ while (fileIdx < rawFiles.length) {
         
         console.log(`✅ Added (total approved: ${db.length})`);
     } else {
+        console.log("Puzzle rejected, skipping...");
         fs.renameSync(path.join(RAW_DIR, file),
             path.join(RAW_DIR, `skip_${file}`));
         console.log("⏭️  skipped");
     }
 
     // ---- continue? --------------------------------------------------
+    console.log("Asking if user wants to continue...");
     const cont = await prompts.confirm({ message: "Curate another puzzle?" });
-    if (!cont) break;
+    if (!cont) {
+        console.log("User chose to stop");
+        break;
+    }
 
+    console.log("User chose to continue, refreshing file list...");
     rawFiles = unseenFiles();
     fileIdx = 0;
 }
