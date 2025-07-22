@@ -32,7 +32,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 .tile,.hdr{border:2px solid var(--tile-b);border-radius:12px;box-sizing:border-box}
 .tile{background:var(--tile);padding:6px 8px;display:flex;align-items:center;
       justify-content:center;text-align:center;min-height:90px;
-      cursor:pointer;user-select:none;transition:background .15s,transform .25s}
+      cursor:pointer;user-select:none;transition:background-color .3s ease}
 .hdr{min-height:34px;display:flex;align-items:center;justify-content:center}
 .hdr button{all:unset;cursor:pointer;color:var(--txt)}
 .hdr.solved{font-weight:600;border:none}
@@ -59,8 +59,8 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}
                  40%,80%{transform:translateX(8px)}}
 
-.hdr.solved.pop{animation:pop 1s cubic-bezier(0.34, 1.56, 0.64, 1)}
-.shake{animation:shake 1.2s cubic-bezier(0.36, 0, 0.66, -0.56)}
+.hdr.solved.pop{animation:pop 1s cubic-bezier(0.34,1.56,0.64,1)}
+.shake{animation:shake 1.2s cubic-bezier(0.36,0,0.66,-0.56)}
 
 /* pop-ups */
 .modalBg{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;
@@ -132,16 +132,16 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
   const $$ = q => document.querySelectorAll(q);
   const start = new Date('2025-07-21');
   const todayIdx = () => Math.floor((Date.now() - start) / 864e5);
-  
+
   /* strike-tier → colour-class / emoji */
   const clr = ['lock0', 'lock1', 'lock2'];
   const emj = ['🟩', '🟨', '🟧'];
-  
+
   /* ---------------------------------------------------------------------- */
   fetch('daily_puzzles/puzzles.json')
     .then(r => r.json())
     .then(all => init(all[todayIdx() % all.length]));
-  
+
   function init(puz) {
     /* ---------- answer lookup ---------- */
     const hash = a => [...a].sort().join('|');
@@ -149,10 +149,10 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
     puz.rows.forEach((l, i) => (ans[hash(puz.words[i])] = l));
     for (let c = 0; c < 4; c++)
       ans[hash(puz.words.map(r => r[c]))] = puz.cols[c];
-  
+
     const rowIdx = Object.fromEntries(puz.rows.map((l, i) => [l, i]));
     const colIdx = Object.fromEntries(puz.cols.map((l, i) => [l, i]));
-  
+
     /* ---------- board state ---------- */
     const flat = [...puz.words.flat()]
       .map(v => [Math.random(), v])
@@ -161,32 +161,32 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
     const G = [[], [], [], []];
     let k = 0;
     for (let r = 0; r < 4; r++) for (let c = 0; c < 4; c++) G[r][c] = flat[k++];
-  
+
     let strikes     = 0;
     const solvedRows = new Map();   // row-idx → strike-level
     const solvedCols = new Map();   // col-idx → strike-level
     let sel         = null;
     let finished    = false;
-  
-    renderBoard();                   // initial paint
+
+    renderBoard();
     updateStrike();
-  
+
     /* === DOM BUILD ======================================================= */
     function renderBoard() {
       const board = $('#board');
       board.innerHTML = '';
-  
+
       /* column-header strip */
       for (let c = 0; c < 4; c++) board.appendChild(makeHdr('col', c));
       board.appendChild(document.createElement('div')); // spacer
-  
+
       /* 4 rows of tiles + row headers */
       for (let r = 0; r < 4; r++) {
         for (let c = 0; c < 4; c++) board.appendChild(makeTile(r, c));
         board.appendChild(makeHdr('row', r));
       }
     }
-  
+
     function makeTile(r, c) {
       const d = document.createElement('div');
       d.className   = 'tile';
@@ -194,38 +194,37 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
       d.dataset.rc  = `${r},${c}`;
       return d;
     }
-  
+
     function makeHdr(kind, idx) {
       const d = document.createElement('div');
       d.className = 'hdr clickHdr';
       d.dataset[kind] = idx;
-      /* large hit-box, button only for visuals */
       d.innerHTML = '<button>✓</button>';
       return d;
     }
-  
+
     /* === SHARED DOM HELPERS ============================================= */
     const tile = (r, c) => $(`.tile[data-rc="${r},${c}"]`);
-  
+
     function lockColour(r, c, lvl) {
       const t = tile(r, c);
       if (!t.classList.contains(clr[lvl])) t.classList.add(clr[lvl]);
     }
-  
+
     function freezeTile(r, c) {
       tile(r, c).classList.add('frozen');
     }
-  
+
     /* === CLICK HANDLERS ================================================== */
     $('#board').addEventListener('click', e => {
       if (finished) return;
-  
+
       const t = e.target.closest('.tile');
       const h = e.target.closest('.clickHdr');
-  
+
       /* tile --- */
       if (t && !t.classList.contains('frozen')) handleTileClick(t);
-  
+
       /* header --- */
       if (h) {
         const r = h.dataset.row !== undefined ? +h.dataset.row : null;
@@ -234,7 +233,7 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
         if (c !== null) checkLine('col', c, h);
       }
     });
-  
+
     function handleTileClick(td) {
       if (sel === td) {
         td.classList.remove('selected');
@@ -246,65 +245,73 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
         sel = td;
         return;
       }
-  
+
       const [r1, c1] = sel.dataset.rc.split(',').map(Number);
       const [r2, c2] = td.dataset.rc.split(',').map(Number);
       if (cantSwap(r1, c1, r2, c2)) return;
-  
+
       swapCells(r1, c1, r2, c2, /*animate=*/true);
       sel.classList.remove('selected');
       sel = null;
     }
-  
+
     function cantSwap(r1, c1, r2, c2) {
-      /* NO swaps if *either* coordinate is in a solved set           */
       if (solvedRows.has(r1) || solvedRows.has(r2)) return true;
       if (solvedCols.has(c1) || solvedCols.has(c2)) return true;
       return false;
     }
-  
+
     /* === LINE CHECK ====================================================== */
     function checkLine(kind, idx, hdr) {
       if (hdr.classList.contains('solved')) return;
-  
-      /* rule-of-3: once 3 rows OR 3 cols solved, the rest must be the
-         opposite dimension --------------------------------------------- */
+
+      /* rule-of-3: once 3 rows OR 3 cols solved, the rest must be the opposite dimension */
       if (
         (kind === 'row' && solvedRows.size >= 3 && solvedCols.size < 4) ||
         (kind === 'col' && solvedCols.size >= 3 && solvedRows.size < 4)
       )
-        return; // ignore taps on the “wrong” direction
-  
+        return;
+
       const words = kind === 'row' ? G[idx] : G.map(r => r[idx]);
       const label = ans[hash(words)];
       if (!label) return badAttempt(hdr);
-  
+
       const lvl = strikes;
-      hdr.replaceWith(makeSolvedLabel(label, lvl)); // drop click target
+      hdr.replaceWith(makeSolvedLabel(label, lvl));
       if (kind === 'row') solvedRows.set(idx, lvl);
       else solvedCols.set(idx, lvl);
-  
-      colourLock(kind, idx, lvl);
+
+      colourAndFreeze(kind, idx, lvl);
       autoRealign(kind, idx, label);
       freezeIntersections();
-  
-      /* auto finish when 3-of-4 rows (or cols) and only one unsolved
-         column (or row) remains ------------------------------------- */
       if (!finished) autoEndIfObvious();
-  
       if (solvedRows.size === 4 && solvedCols.size === 4) finish(true);
     }
-  
+
     function makeSolvedLabel(text, lvl) {
       const d = document.createElement('div');
-      d.className = `hdr solved`;
+      d.className = `hdr solved ${clr[lvl]} pop`;
       d.textContent = text;
       d.style.background = 'var(--tile)';
-      d.classList.add(clr[lvl], 'pop');
       return d;
     }
-  
-    /* === auto realign (same as before but with fixed swaps) ============= */
+
+    /* ---------- NEW: colour & freeze whole line ---------- */
+    function colourAndFreeze(kind, idx, lvl) {
+      if (kind === 'row') {
+        for (let c = 0; c < 4; c++) {
+          lockColour(idx, c, lvl);
+          freezeTile(idx, c);
+        }
+      } else {
+        for (let r = 0; r < 4; r++) {
+          lockColour(r, idx, lvl);
+          freezeTile(r, idx);
+        }
+      }
+    }
+
+    /* === auto realign ==================================================== */
     function autoRealign(kind, idx, label) {
       if (kind === 'row') {
         const canon = puz.words[rowIdx[label]];
@@ -313,7 +320,7 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
           const want = canon[c];
           if (G[idx][c] === want) continue;
           const c2 = G[idx].indexOf(want);
-          swapCells(idx, c, idx, c2, /*animate=*/false);
+          swapCells(idx, c, idx, c2, false);
         }
       } else {
         const canon = puz.words.map(r => r[colIdx[label]]);
@@ -322,18 +329,18 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
           const want = canon[r];
           if (G[r][idx] === want) continue;
           const r2 = G.findIndex(row => row[idx] === want);
-          swapCells(r, idx, r2, idx, /*animate=*/false);
+          swapCells(r, idx, r2, idx, false);
         }
       }
     }
-  
-    /* === freeze where row+col intersect ================================ */
+
+    /* === freeze intersections =========================================== */
     function freezeIntersections() {
       for (const r of solvedRows.keys())
         for (const c of solvedCols.keys()) freezeTile(r, c);
     }
-  
-    /* === strike handling =============================================== */
+
+    /* === strike handling ================================================= */
     function badAttempt(hdr) {
       strikes++;
       hdr.classList.add(strikes === 1 ? 'used1' : 'used2');
@@ -341,91 +348,72 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
       updateStrike();
       if (strikes >= 3) finish(false);
     }
-  
+
     function updateStrike() {
       $('#strikeTxt').textContent = `Strikes ${strikes}/3`;
     }
-  
+
     function shake() {
       $('#shell').style.animation = 'shake .45s';
       setTimeout(() => ($('#shell').style.animation = ''), 450);
     }
-  
-    /* === swap helper (FLIP) ============================================ */
+
+    /* === swap helper (Web-Animations FLIP) ============================== */
     function swapCells(r1, c1, r2, c2, animate) {
       const t1 = tile(r1, c1);
       const t2 = tile(r2, c2);
-  
-      if (animate) animateSwap(t1, t2);          // ① animation
-  
-      /* swap content *after* first frame so text travels with tile --- */
+
+      if (animate) animateSwap(t1, t2);
+
       requestAnimationFrame(() => {
         const temp = t1.textContent;
         t1.textContent = t2.textContent;
         t2.textContent = temp;
-  
         [G[r1][c1], G[r2][c2]] = [G[r2][c2], G[r1][c1]];
       });
     }
-  
+
     function animateSwap(a, b) {
       const ra = a.getBoundingClientRect();
       const rb = b.getBoundingClientRect();
-      const dx = ra.left - rb.left;
-      const dy = ra.top - rb.top;
-  
-      /* initial inverted state */
-      a.style.transform = `translate(${-dx}px,${-dy}px)`;
-      b.style.transform = `translate(${dx}px,${dy}px)`;
-  
-      /* two rAFs → ensure the browser snapshots the inverted state */
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          a.style.transition = b.style.transition = 'transform .3s';
-          a.style.transform = b.style.transform = '';
-          const clear = e => (e.target.style.transition = '');
-          a.addEventListener('transitionend', clear, { once: true });
-          b.addEventListener('transitionend', clear, { once: true });
-        });
-      });
+      const dx = rb.left - ra.left;
+      const dy = rb.top  - ra.top;
+      const opts = {duration:500,easing:'cubic-bezier(0.4,0,0.2,1)'};
+      a.animate([{transform:`translate(${ dx}px,${ dy}px)`},{transform:'translate(0,0)'}],opts);
+      b.animate([{transform:`translate(${-dx}px,${-dy}px)`},{transform:'translate(0,0)'}],opts);
     }
-  
-    /* === auto-complete logic =========================================== */
+
+    /* === auto-complete logic ============================================ */
     function autoEndIfObvious() {
-      /* stop when only one unsolved line remains and its perpendicular
-         partner set is full.  ------------------------------------------- */
       if (solvedRows.size === 3 && solvedCols.size < 4) {
-        const r = [0, 1, 2, 3].find(i => !solvedRows.has(i));
+        const r = [0,1,2,3].find(i => !solvedRows.has(i));
         checkLine('row', r, $(`.hdr[data-row="${r}"]`));
       } else if (solvedCols.size === 3 && solvedRows.size < 4) {
-        const c = [0, 1, 2, 3].find(i => !solvedCols.has(i));
+        const c = [0,1,2,3].find(i => !solvedCols.has(i));
         checkLine('col', c, $(`.hdr[data-col="${c}"]`));
       }
     }
-  
-    /* === finish sequence =============================================== */
+
+    /* === finish sequence ================================================ */
     function finish(won) {
       finished = true;
-  
-      /* snap whole grid to canonical answer ---------------------------- */
       for (let r = 0; r < 4; r++) {
         for (let c = 0; c < 4; c++) {
           tile(r, c).textContent = puz.words[r][c];
           freezeTile(r, c);
         }
       }
-  
-      setTimeout(() => showShare(won), 600); // small delay feels nicer
+      setTimeout(() => showShare(won), 600);
     }
-  
-    /* ------------------------------------------------------------------ */
+
+    /* -------------------------------------------------------------------- */
     function emojiFor(td) {
       if (td.classList.contains('lock0')) return emj[0];
       if (td.classList.contains('lock1')) return emj[1];
       if (td.classList.contains('lock2')) return emj[2];
       return '⬛';
     }
-  
+
     function gridEmoji() {
       const rows = [[], [], [], []];
       $$('.tile').forEach(t => {
@@ -434,12 +422,12 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
       });
       return rows.map(r => r.join('')).join('\n');
     }
-  
-    /* share-popup -------------------------------------------------------- */
+
+    /* share-popup --------------------------------------------------------- */
     function showShare(won) {
       $('#popTitle').textContent = won ? 'Puzzle solved!' : 'Out of guesses';
       $('#shareGrid').textContent = gridEmoji();
-  
+
       if (won) $('#unsolved').innerHTML = '';
       else {
         const unsR = puz.rows.filter((_, i) => !solvedRows.has(i));
@@ -448,11 +436,9 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
           `<p><strong>Unsolved rows:</strong><br>${unsR.join('<br>')}</p>
            <p><strong>Unsolved cols:</strong><br>${unsC.join('<br>')}</p>`;
       }
-  
       $('#sharePop').classList.add('show');
     }
-  
-    /* copy + minimise + help popups ------------------------------------- */
+
     $('#copy').onclick = () => {
       navigator.clipboard.writeText($('#shareGrid').textContent);
       $('#copy').textContent = 'Copied!';
@@ -461,11 +447,11 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
       ($('#sharePop').classList.remove('show'), ($('#shareBtn').style.display = 'block'));
     $('#shareBtn').onclick = () =>
       ($('#shareBtn').style.display = 'none', $('#sharePop').classList.add('show'));
-  
+
     $('#helpIcon').onclick = () => $('#helpPop').classList.add('show');
     $('#minHelp').onclick = $('#helpOK').onclick = () =>
       $('#helpPop').classList.remove('show');
   }
-  </script>  
+</script>
 </body>
 </html>
