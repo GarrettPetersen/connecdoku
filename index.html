@@ -1,27 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Connecdoku – Daily Puzzle</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <title>Connecdoku</title>
+  <style>
+    :root {
+      --tile: #f6f7f8;
+      --tile-border: #d4d5d6;
+      --tile-text: #222;
+      --btn-bg: #4caf50;
+      --btn-bg2: #ffb300;
+      --btn-bg3: #e53935;
+      --btn-text: #fff;
+      --green: #7cc66c;
+      --locked: #c1e8b9;
+    }
+    body{font-family:system-ui,Segoe UI,Helvetica,Arial,sans-serif;display:flex;justify-content:center;padding:40px;background:#fafafa}
+    table{border-collapse:collapse;margin:auto}
+    td{width:140px;height:85px;text-align:center;vertical-align:middle;font-size:14px;padding:6px;border:2px solid var(--tile-border);border-radius:12px;background:var(--tile);cursor:pointer;user-select:none;transition:background .15s}
+    td.selected{outline:3px solid #2196f3}
+    td.locked{background:var(--locked);cursor:default;color:#000}
+    td.frozen{background:var(--green);color:#000;cursor:default}
+    .controls{display:flex;justify-content:center;gap:12px;margin-bottom:12px}
+    .row-btn,.col-btn{width:140px;height:28px;border:none;border-radius:6px;background:var(--btn-bg);color:var(--btn-text);cursor:pointer}
+    .strike-count{margin:12px auto;text-align:center;font-size:18px}
+    .row-btn.used1,.col-btn.used1{background:var(--btn-bg2)}
+    .row-btn.used2,.col-btn.used2{background:var(--btn-bg3)}
+    .row-btn.solved,.col-btn.solved{background:transparent;border:none;color:#222;font-weight:600;cursor:default}
+    #popup{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center}
+    #popup>div{background:#fff;padding:24px 28px;border-radius:10px;max-width:320px;text-align:center}
+    #popup button{margin-top:18px;padding:8px 14px;border:none;border-radius:6px;background:#4caf50;color:#fff;cursor:pointer}
+  </style>
 </head>
 <body>
-  <h1>Connecdoku</h1>
+  <div id="game"></div>
 
-  <div id="grid" class="grid"></div>
-
-  <button id="submitBtn" class="submit attempt-1">Submit (3 left)</button>
-
-  <!-- Win modal -->
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <h2>🎉 Puzzle Complete!</h2>
-      <textarea id="shareText" readonly></textarea>
-      <button id="copyBtn">Copy to clipboard</button>
+  <!-- share popup -->
+  <div id="popup">
+    <div>
+      <h3 id="popupTitle"></h3>
+      <pre id="shareText" style="white-space:pre-wrap;font-size:20px;margin:16px auto"></pre>
+      <button id="copyBtn">Copy</button>
     </div>
   </div>
 
-  <script type="module" src="main.js"></script>
+  <script>
+  // ---------- helpers ----------
+  const $ = sel => document.querySelector(sel);
+  const startDate = new Date('2025-07-21');          // day-zero for puzzle rotation
+  const dayIndex = () => Math.floor((Date.now() - startDate)/86400000);
+
+  const shuffle = arr => arr.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
+  const sortedKey = arr => [...arr].sort().join('|');
+
+  // ---------- load puzzle ----------
+  fetch('daily_puzzles/puzzles.json')
+    .then(r => r.json())
+    .then(puzzles => {
+      const idx = dayIndex() % puzzles.length;
+      initGame(puzzles[idx]);
+    });
+
+  function initGame(puz){
+    const solvedRows=new Set(),solvedCols=new Set();
+    let strikes=0, maxStrikes=3, selected=null;
+
+    // map every solution-set (rows **and** cols) → label
+    const answerMap={};
+    puz.words.forEach((r,i)=>answerMap[sortedKey(r)]=puz.rows[i]);
+    for(let c=0;c<4;c++){
+      const colWords=puz.words.map(r=>r[c]);
+      answerMap[sortedKey(colWords)]=puz.cols[c];
+    }
+
+    // create scrambled grid
+    const flat=shuffle(puz.words.flat());
+    const grid=[[],[],[],[]];
+    let idx=0;for(let r=0;r<4;r++)for(let c=0;c<4;c++)grid[r][c]=flat[idx++];
+
+    const root=document.createElement('div');
+    root.innerHTML=buildTable(grid,puz);
+    $('#game').replaceChildren(root);
+
+    const strikeEl=$('.strike-count');
+    updateStrike();
+
+    // ---------- tile click behaviour ----------
+    document.querySelectorAll('td.tile').forEach(td=>{
+      td.addEventListener('click',()=>{
+        if(td.classList.contains('locked')||td.classList.contains('frozen'))return;
+        if(selected===td){td.classList.remove('selected');selected=null;return;}
+        if(!selected){td.classList.add('selected');selected=td;return;}
+        // second tile clicked → attempt swap
+        const [r1,c1]=selected.dataset.rc.split(',').map(Number);
+        const [r2,c2]=td.dataset.rc.split(',').map(Number);
+
+        // can’t move between solved lines
+        const rowLocked = solvedRows.has(r1)||solvedRows.has(r2);
+        const colLocked = solvedCols.has(c1)||solvedCols.has(c2);
+        if((rowLocked && r1!==r2) || (colLocked && c1!==c2)){selected.classList.remove('selected');selected=null;return;}
+
+        swapText(selected,td);
+        grid[r1][c1]=td.textContent;
+        grid[r2][c2]=selected.textContent;
+        selected.classList.remove('selected'); selected=null;
+      });
+    });
+
+    // ---------- line buttons ----------
+    document.querySelectorAll('.row-btn').forEach((btn,row)=>{
+      btn.addEventListener('click',()=>checkLine('row',row));
+    });
+    document.querySelectorAll('.col-btn').forEach((btn,col)=>{
+      btn.addEventListener('click',()=>checkLine('col',col));
+    });
+
+    function checkLine(type,index){
+      const btn = type==='row'
+            ? document.querySelector(`.row-btn[data-row="${index}"]`)
+            : document.querySelector(`.col-btn[data-col="${index}"]`);
+      if(btn.classList.contains('solved'))return;
+
+      const words = type==='row'
+            ? grid[index]
+            : grid.map(r=>r[index]);
+
+      if(answerMap[sortedKey(words)]){
+        const label=answerMap[sortedKey(words)];
+        btn.textContent=label;
+        btn.className=btn.className.split(' ')[0]+' solved';   // preserve row-btn/col-btn
+        type==='row' ? solvedRows.add(index) : solvedCols.add(index);
+        lockLine(type,index);
+        maybeFreezeIntersections();
+        maybeWin();
+      }else{
+        btn.classList.toggle('used1',!btn.classList.contains('used1'));
+        btn.classList.toggle('used2',btn.classList.contains('used1')&&!btn.classList.contains('used2'));
+        strikes++; updateStrike();
+        if(strikes>=maxStrikes) endGame(false);
+      }
+    }
+
+    function lockLine(type,i){
+      if(type==='row'){
+        for(let c=0;c<4;c++) lockCell(i,c);
+      }else{
+        for(let r=0;r<4;r++) lockCell(r,i);
+      }
+    }
+    function lockCell(r,c){
+      const td=document.querySelector(`td.tile[data-rc="${r},${c}"]`);
+      if(!td.classList.contains('frozen')) td.classList.add('locked');
+    }
+    function maybeFreezeIntersections(){
+      for(let r=0;r<4;r++)for(let c=0;c<4;c++){
+        if(solvedRows.has(r)&&solvedCols.has(c)){
+          const td=document.querySelector(`td.tile[data-rc="${r},${c}"]`);
+          td.classList.add('frozen'); td.classList.remove('locked');
+        }
+      }
+    }
+    function updateStrike(){strikeEl.textContent=`Strikes: ${strikes}/${maxStrikes}`;}
+    function maybeWin(){
+      if(solvedRows.size===4 && solvedCols.size===4) endGame(true);
+    }
+    function endGame(won){
+      document.querySelectorAll('td.tile').forEach(td=>td.classList.add('frozen'));
+      showShare(won);
+    }
+
+    // ---------- share popup ----------
+    function showShare(won){
+      const triesGrid=[...Array(4)].map(_=>Array(4).fill('⬛'));
+      // if a row solved on n-th attempt, we don't track attempt number here (for brevity)
+      solvedRows.forEach(r=>{for(let c=0;c<4;c++)triesGrid[r][c]='🟩';});
+      solvedCols.forEach(c=>{for(let r=0;r<4;r++)triesGrid[r][c]='🟩';});
+      $('#popupTitle').textContent = won ? 'Puzzle Solved!' : 'Out of guesses';
+      $('#shareText').textContent = triesGrid.map(r=>r.join('')).join('\n');
+      $('#popup').style.display='flex';
+      $('#copyBtn').onclick = () => {
+        navigator.clipboard.writeText($('#shareText').textContent);
+        $('#copyBtn').textContent='Copied!';
+      };
+    }
+  }
+
+  function buildTable(grid,puz){
+    let html=`<div class="strike-count"></div><table>`;
+    // column header buttons
+    html+='<tr><td></td>';
+    for(let c=0;c<4;c++){
+      html+=`<td><button class="col-btn" data-col="${c}">✓</button></td>`;
+    }
+    html+='</tr>';
+    for(let r=0;r<4;r++){
+      html+='<tr>';
+      // row of tiles + row button at end
+      for(let c=0;c<4;c++){
+        html+=`<td class="tile" data-rc="${r},${c}">${grid[r][c]}</td>`;
+      }
+      html+=`<td><button class="row-btn" data-row="${r}">✓</button></td></tr>`;
+    }
+    html+='</table>';
+    return html;
+  }
+  function swapText(a,b){const t=a.textContent;a.textContent=b.textContent;b.textContent=t;}
+  </script>
 </body>
 </html>
