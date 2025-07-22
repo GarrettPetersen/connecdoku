@@ -238,5 +238,125 @@
         "Zheng He"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Desserts",
+      "Drinks",
+      "Islands",
+      "Ships"
+    ],
+    "cols": [
+      "Things British",
+      "Things Canadian",
+      "Things French",
+      "Things Japanese"
+    ],
+    "words": [
+      [
+        "Trifle",
+        "Nanaimo Bar",
+        "Eclair",
+        "Mochi"
+      ],
+      [
+        "Earl Grey",
+        "Ice Wine",
+        "Champagne",
+        "Sake"
+      ],
+      [
+        "Skye",
+        "Baffin",
+        "Corsica",
+        "Kyushu"
+      ],
+      [
+        "Olympic",
+        "Empress of Ireland",
+        "Normandie",
+        "Yamato"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Classic Literature",
+      "Foods",
+      "Modern Countries",
+      "People"
+    ],
+    "cols": [
+      "Movies",
+      "Things American",
+      "Things British",
+      "Things Italian"
+    ],
+    "words": [
+      [
+        "Les Misérables",
+        "To Kill a Mockingbird",
+        "Wuthering Heights",
+        "The Divine Comedy"
+      ],
+      [
+        "Ratatouille",
+        "Mac and Cheese",
+        "Bangers and Mash",
+        "Risotto"
+      ],
+      [
+        "Madagascar",
+        "United States",
+        "United Kingdom",
+        "Italy"
+      ],
+      [
+        "Beethoven",
+        "Washington",
+        "Darwin",
+        "Marco Polo"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Military Ships",
+      "Movies",
+      "Place Names",
+      "Roman Empire"
+    ],
+    "cols": [
+      "Real People",
+      "Starts with CAR",
+      "Things British",
+      "Things French"
+    ],
+    "words": [
+      [
+        "Roosevelt",
+        "Carl Vinson",
+        "Hood",
+        "Redoutable"
+      ],
+      [
+        "Beethoven",
+        "Cars",
+        "The Bridge on the River Kwai",
+        "Ratatouille"
+      ],
+      [
+        "Madison",
+        "Carson City",
+        "Dover",
+        "Mont Blanc"
+      ],
+      [
+        "Caesar",
+        "Carthage",
+        "Britannia",
+        "Gaul"
+      ]
+    ]
   }
 ]
