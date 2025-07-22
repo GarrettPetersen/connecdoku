@@ -118,5 +118,125 @@
         "Lawrence of Arabia"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Ends with LES",
+      "Romance Stories",
+      "Starts with THE",
+      "Thriller Films"
+    ],
+    "cols": [
+      "Movies featuring Sigourney Weaver",
+      "Period Stories",
+      "Things American",
+      "Things British"
+    ],
+    "words": [
+      [
+        "Holes",
+        "Les Misérables",
+        "Los Angeles",
+        "Prince of Wales"
+      ],
+      [
+        "Working Girl",
+        "Out of Africa",
+        "Gone with the Wind",
+        "Pride and Prejudice"
+      ],
+      [
+        "The Ice Storm",
+        "The King's Speech",
+        "The Great Gatsby",
+        "The Chronicles of Narnia"
+      ],
+      [
+        "Alien",
+        "Oppenheimer",
+        "Jaws",
+        "Don't Look Now"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Ends with LES",
+      "Movies",
+      "NATO Phonetic Alphabet",
+      "Starts with FRA"
+    ],
+    "cols": [
+      "Foods",
+      "Locations in North America",
+      "Modern Countries",
+      "Things British"
+    ],
+    "words": [
+      [
+        "Dan Dan Noodles",
+        "Los Angeles",
+        "Seychelles",
+        "Beatles"
+      ],
+      [
+        "Ratatouille",
+        "Chicago",
+        "Madagascar",
+        "Dr. Strangelove"
+      ],
+      [
+        "Lima",
+        "Sierra",
+        "India",
+        "Golf"
+      ],
+      [
+        "Francesinha",
+        "Frankfort",
+        "France",
+        "Frankenstein"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Cities",
+      "Countries",
+      "Foods",
+      "Real People"
+    ],
+    "cols": [
+      "Starts with FRA",
+      "Starts with NEW",
+      "Things Canadian",
+      "Things Chinese"
+    ],
+    "words": [
+      [
+        "Frankfort",
+        "New York",
+        "Toronto",
+        "Beijing"
+      ],
+      [
+        "France",
+        "New Zealand",
+        "Canada",
+        "China"
+      ],
+      [
+        "Francesinha",
+        "New York Bagel",
+        "Hawaiian Pizza",
+        "Dim Sum"
+      ],
+      [
+        "Franklin D. Roosevelt",
+        "Newton",
+        "Drake",
+        "Zheng He"
+      ]
+    ]
   }
 ]
