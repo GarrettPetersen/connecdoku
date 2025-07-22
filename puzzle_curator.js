@@ -8,6 +8,7 @@
    • Stores every approved puzzle as an element of
        daily_puzzles/puzzles.json
    • Guarantees no duplicate (rows,cols) or (cols,rows) ever saved
+   • Shows usage counts for categories and words
    -----------------------------------------------------------------*/
 
 import fs from "fs";
@@ -31,6 +32,31 @@ const makeKey = (rows, cols) => canon(rows) + "::" + canon(cols);
 const used = new Set(
     db.flatMap(p => [makeKey(p.rows, p.cols), makeKey(p.cols, p.rows)])
 );
+
+// ──────────────── usage tracking ──────────────────────────────────
+function buildUsageCounts() {
+    const categoryUsage = {};
+    const wordUsage = {};
+    
+    // Count usage from existing database
+    for (const puzzle of db) {
+        // Count categories
+        for (const category of [...puzzle.rows, ...puzzle.cols]) {
+            categoryUsage[category] = (categoryUsage[category] || 0) + 1;
+        }
+        
+        // Count words
+        for (const row of puzzle.words) {
+            for (const word of row) {
+                wordUsage[word] = (wordUsage[word] || 0) + 1;
+            }
+        }
+    }
+    
+    return { categoryUsage, wordUsage };
+}
+
+const { categoryUsage, wordUsage } = buildUsageCounts();
 
 // ──────────────── word look-ups ──────────────────────────────────
 const categoriesJson = JSON.parse(
@@ -62,6 +88,12 @@ function uniqueWords(rCat, cCat, allCats) {
     return v;
 }
 
+// ──────────────── display helpers ──────────────────────────────────
+function formatWithUsage(item, usageCount) {
+    const count = usageCount[item] || 0;
+    return `${item} (${count})`;
+}
+
 // ──────────────── gather unseen raw layouts ─────────────────────
 function unseenFiles() {
     return fs.readdirSync(RAW_DIR)
@@ -90,8 +122,8 @@ while (fileIdx < rawFiles.length) {
     // ---- show categories upfront ----------------------------------------
     console.clear();
     console.log("Categories for this puzzle:\n");
-    console.log("Rows:", rows.map((cat, i) => `${i + 1}. ${cat}`).join('\n     '));
-    console.log("\nCols:", cols.map((cat, i) => `${i + 1}. ${cat}`).join('\n     '));
+    console.log("Rows:", rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+    console.log("\nCols:", cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
     console.log("\nPress Enter to start choosing words...");
     await prompts.input({ message: '' });
 
@@ -121,22 +153,25 @@ while (fileIdx < rawFiles.length) {
         for (let c = 0; c < 4; ++c) {
             // Show current progress
             console.clear();
-            console.log("Rows:", rows.map((cat, i) => `${i + 1}. ${cat}`).join('\n     '));
-            console.log("\nCols:", cols.map((cat, i) => `${i + 1}. ${cat}`).join('\n     '));
+            console.log("Rows:", rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+            console.log("\nCols:", cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
             console.log("\nCurrent puzzle state:");
             console.table(chosen);
-            console.log(`\nChoosing word for: ${rows[r]} × ${cols[c]}\n`);
+            console.log(`\nChoosing word for: ${formatWithUsage(rows[r], categoryUsage)} × ${formatWithUsage(cols[c], categoryUsage)}\n`);
 
             const opts = viableGrid[r][c].filter(w => !usedWords.has(w));
 
             let pick;
             if (opts.length === 1) {
                 pick = opts[0];
-                console.log(`auto: ${rows[r]} × ${cols[c]}  →  ${pick}`);
+                console.log(`auto: ${formatWithUsage(rows[r], categoryUsage)} × ${formatWithUsage(cols[c], categoryUsage)}  →  ${formatWithUsage(pick, wordUsage)}`);
             } else {
                 pick = await prompts.select({
-                    message: `Pick word for ${rows[r]} × ${cols[c]}`,
-                    choices: opts.map(w => ({ value: w, label: w }))
+                    message: `Pick word for ${formatWithUsage(rows[r], categoryUsage)} × ${formatWithUsage(cols[c], categoryUsage)}`,
+                    choices: opts.map(w => ({ 
+                        value: w, 
+                        label: formatWithUsage(w, wordUsage) 
+                    }))
                 });
             }
             chosen[r][c] = pick;
@@ -156,8 +191,8 @@ while (fileIdx < rawFiles.length) {
     // ---- preview & approval ----------------------------------------
     console.clear();
     console.log("Final Puzzle Review:\n");
-    console.log("Rows:", rows.map((cat, i) => `${i + 1}. ${cat}`).join('\n     '));
-    console.log("\nCols:", cols.map((cat, i) => `${i + 1}. ${cat}`).join('\n     '));
+    console.log("Rows:", rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+    console.log("\nCols:", cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
     console.log("\nCompleted puzzle:");
     console.table(chosen);
 
@@ -170,6 +205,17 @@ while (fileIdx < rawFiles.length) {
             path.join(RAW_DIR, `used_${file}`));
         used.add(makeKey(rows, cols));
         used.add(makeKey(cols, rows));
+        
+        // Update usage counts for this session
+        for (const category of [...rows, ...cols]) {
+            categoryUsage[category] = (categoryUsage[category] || 0) + 1;
+        }
+        for (const row of chosen) {
+            for (const word of row) {
+                wordUsage[word] = (wordUsage[word] || 0) + 1;
+            }
+        }
+        
         console.log(`✅ Added (total approved: ${db.length})`);
     } else {
         fs.renameSync(path.join(RAW_DIR, file),
