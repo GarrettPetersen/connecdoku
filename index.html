@@ -108,8 +108,8 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
 /* ---------- tiny helpers ---------- */
 const $=q=>document.querySelector(q);
 const $$=q=>document.querySelectorAll(q);
-const start=new Date('2025-07-21');
-const todayIdx=()=>Math.floor((Date.now()-start)/864e5);
+const start=new Date('2025-07-21T00:00:00');
+const todayIdx=()=>Math.floor((new Date().getTime()-start.getTime())/864e5);
 const clr=['lock0','lock1','lock2'], emj=['🟩','🟨','🟧'];
 
 /* ---------- cookie management ---------- */
@@ -537,7 +537,8 @@ function init(puz){
     alignRow(r)                 –  same-orientation anchoring
     ------------------------------------------------------------- */
     function alignRow(r) {
-  if (solvedRows.size === 0) return;
+      const refRows = [...solvedRows.keys()].filter(row => row !== r);
+      if (refRows.length === 0) return;
 
   // Step 1: Infer the column category order based on solved rows
   const catOrder = [];
@@ -587,16 +588,17 @@ function init(puz){
   alignCol(c)                 –  same-orientation anchoring
   ------------------------------------------------------------- */
   function alignCol(c) {
-  if (solvedCols.size === 0) return;
+  // reference columns = solved columns *except* the one we're aligning
+  const refCols = [...solvedCols.keys()].filter(col => col !== c);
+  if (refCols.length === 0) return;
 
-  // Step 1: Infer the row category order based on solved columns
+  // build catOrder from *previously* solved columns
   const catOrder = [];
   const seen = new Set();
 
-  for (const col of solvedCols.keys()) {
+  for (const col of refCols) {
     for (let r = 0; r < 4; r++) {
-      const word = G[r][col];
-      const cat = wordToRowCat[word];
+      const cat = wordToRowCat[G[r][col]];
       if (!seen.has(cat)) {
         seen.add(cat);
         catOrder.push(cat);
