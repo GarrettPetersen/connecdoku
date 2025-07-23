@@ -718,23 +718,25 @@ function init(puz){
   function badAttempt(hdr) {
 
     /* mark header, add strike, shake */
-    strikes++;
-    hdr.classList.add(strikes === 1 ? 'used1' : 'used2');
-    shake();
-    updateStrike();
-    saveGameState();
+    if (strikes < 3) {
+      strikes++;
+      hdr.classList.add(strikes === 1 ? 'used1' : 'used2');
+      shake();
+      updateStrike();
+      saveGameState();
 
-    /* third strike ⇒ auto-solve, reveal labels, end game */
-    if (strikes >= 3) {
+      /* third strike ⇒ auto-solve, reveal labels, end game */
+      if (strikes >= 3) {
 
-      // put every word in its true final position
-      const animTime = solveCompletely();   // may be 0 ms if nothing moved
+        // put every word in its true final position
+        const animTime = solveCompletely();   // may be 0 ms if nothing moved
 
-      // after swaps finish, show missing headers & freeze board
-      setTimeout(() => {
-        relabelAllHeaders();
-        finish(false);
-      }, 1000 + animTime);                  // 1 s pause + animation
+        // after swaps finish, show missing headers & freeze board
+        setTimeout(() => {
+          relabelAllHeaders();
+          finish(false);
+        }, 1000 + animTime);                  // 1 s pause + animation
+      }
     }
   }
 
