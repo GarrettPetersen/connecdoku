@@ -325,6 +325,26 @@
     "NATO",
     "Warsaw Pact"
   ],
+  "American Architecture": [
+    "Empire State Building"
+  ],
+  "Ancient Buildings": [
+    "Acropolis",
+    "Chichen Itza",
+    "Colosseum",
+    "Colossus of Rhodes",
+    "Great Wall",
+    "Hanging Gardens",
+    "Lighthouse of Alexandria",
+    "Machu Picchu",
+    "Mausoleum",
+    "Parthenon",
+    "Petra",
+    "Pyramids",
+    "Statue of Zeus",
+    "Stonehenge",
+    "Temple of Artemis"
+  ],
   "Ancient Cities": [
     "Alexandria",
     "Antioch",
@@ -510,6 +530,9 @@
     "Ming",
     "Ruth"
   ],
+  "Australian Architecture": [
+    "Sydney Opera House"
+  ],
   "Avengers": [
     "Black Panther",
     "Black Widow",
@@ -529,6 +552,9 @@
     "India",
     "Russia",
     "South Africa"
+  ],
+  "Babylonian Architecture": [
+    "Hanging Gardens"
   ],
   "Baked Goods": [
     "Bread",
@@ -1011,6 +1037,9 @@
     "Winnie-the-Pooh",
     "Wuthering Heights"
   ],
+  "Brazilian Architecture": [
+    "Christ the Redeemer"
+  ],
   "Breads": [
     "Arepa",
     "Bagel",
@@ -1049,6 +1078,10 @@
     "Java",
     "Juice",
     "Toaster"
+  ],
+  "British Architecture": [
+    "Buckingham Palace",
+    "Stonehenge"
   ],
   "British Monarchs": [
     "Elizabeth",
@@ -1093,11 +1126,17 @@
     "Musk",
     "Rockefeller"
   ],
+  "Byzantine Architecture": [
+    "Hagia Sophia"
+  ],
   "C.S. Lewis": [
     "Prince Caspian",
     "The Chronicles of Narnia",
     "The Lion, the Witch and the Wardrobe",
     "The Magician's Nephew"
+  ],
+  "Cambodian Architecture": [
+    "Angkor Wat"
   ],
   "Camera Companies": [
     "Canon",
@@ -1215,6 +1254,10 @@
     "The Wind in the Willows",
     "Where the Wild Things Are",
     "Winnie-the-Pooh"
+  ],
+  "Chinese Architecture": [
+    "Forbidden City",
+    "Great Wall"
   ],
   "Chinese Dynasties": [
     "Han",
@@ -2932,6 +2975,10 @@
   "Edith Wharton": [
     "The Age of Innocence"
   ],
+  "Egyptian Architecture": [
+    "Lighthouse of Alexandria",
+    "Pyramids"
+  ],
   "Electronics": [
     "AC",
     "AM",
@@ -3035,7 +3082,9 @@
     "Million Dollar Baby"
   ],
   "Ends with ACE": [
+    "Buckingham Palace",
     "Mace",
+    "Potala Palace",
     "Scarface",
     "The Phantom Menace",
     "War and Peace"
@@ -3192,6 +3241,7 @@
     "Beach Volleyball",
     "Dragon Ball",
     "Football",
+    "Great Wall",
     "Matzo Ball",
     "Volleyball"
   ],
@@ -3215,6 +3265,7 @@
   ],
   "Ends with AME": [
     "Avengers: Endgame",
+    "Notre Dame",
     "Suriname",
     "The Crying Game",
     "The Hunchback of Notre Dame"
@@ -3654,6 +3705,7 @@
     "Midnight Cowboy"
   ],
   "Ends with BRA": [
+    "Alhambra",
     "Cobra",
     "Libra",
     "Zebra"
@@ -3738,6 +3790,9 @@
   "Ends with CHT": [
     "Borscht",
     "Yacht"
+  ],
+  "Ends with CHU": [
+    "Machu Picchu"
   ],
   "Ends with CIA": [
     "Focaccia",
@@ -3851,6 +3906,7 @@
     "Vader"
   ],
   "Ends with DES": [
+    "Colossus of Rhodes",
     "Dolmades",
     "Hades",
     "Hebrides",
@@ -4119,6 +4175,7 @@
   "Ends with ENS": [
     "Aliens",
     "Athens",
+    "Hanging Gardens",
     "Lens",
     "St. Helens",
     "The Force Awakens"
@@ -4266,7 +4323,9 @@
     "Tweety"
   ],
   "Ends with EUM": [
-    "Herculaneum"
+    "Colosseum",
+    "Herculaneum",
+    "Mausoleum"
   ],
   "Ends with EUR": [
     "Croque Monsieur",
@@ -4276,6 +4335,7 @@
     "Amadeus",
     "Odysseus",
     "Perseus",
+    "Statue of Zeus",
     "Theseus",
     "Zeus"
   ],
@@ -4473,6 +4533,9 @@
     "Chai",
     "Pad Thai"
   ],
+  "Ends with HAL": [
+    "Taj Mahal"
+  ],
   "Ends with HAM": [
     "Green Eggs and Ham",
     "Nuoc Cham"
@@ -4490,6 +4553,9 @@
   ],
   "Ends with HEE": [
     "Banshee"
+  ],
+  "Ends with HEL": [
+    "Mont Saint-Michel"
   ],
   "Ends with HEN": [
     "Hamantaschen",
@@ -4516,6 +4582,7 @@
     "Hershey"
   ],
   "Ends with HIA": [
+    "Hagia Sophia",
     "Ischia"
   ],
   "Ends with HID": [
@@ -4608,7 +4675,8 @@
     "Portuguese West Africa",
     "South Africa",
     "Spanish East Africa",
-    "Spanish West Africa"
+    "Spanish West Africa",
+    "St. Peter's Basilica"
   ],
   "Ends with ICE": [
     "Dice",
@@ -4641,6 +4709,9 @@
   ],
   "Ends with IDO": [
     "Hokkaido"
+  ],
+  "Ends with IDS": [
+    "Pyramids"
   ],
   "Ends with IEC": [
     "Makowiec"
@@ -4797,6 +4868,7 @@
     "Cycling",
     "Diving",
     "Dumpling",
+    "Empire State Building",
     "Fencing",
     "Figure Skating",
     "Gong Bao Ji Ding",
@@ -4988,6 +5060,7 @@
   ],
   "Ends with ITY": [
     "Carson City",
+    "Forbidden City",
     "Infinity",
     "Jefferson City",
     "Oklahoma City",
@@ -5216,7 +5289,8 @@
     "Prince of Wales",
     "Seychelles",
     "Speedy Gonzales",
-    "The Incredibles"
+    "The Incredibles",
+    "Versailles"
   ],
   "Ends with LET": [
     "Cassoulet",
@@ -5236,6 +5310,7 @@
     "Australia",
     "Brasilia",
     "Mongolia",
+    "Sagrada Familia",
     "Somalia"
   ],
   "Ends with LIC": [
@@ -5261,6 +5336,7 @@
     "Tulip"
   ],
   "Ends with LIS": [
+    "Acropolis",
     "Annapolis",
     "Indianapolis"
   ],
@@ -5409,6 +5485,7 @@
     "Romeo"
   ],
   "Ends with MER": [
+    "Christ the Redeemer",
     "Hammer",
     "Homer",
     "Kramer vs. Kramer",
@@ -5431,6 +5508,9 @@
   ],
   "Ends with MIC": [
     "Pandemic"
+  ],
+  "Ends with MIS": [
+    "Temple of Artemis"
   ],
   "Ends with MMA": [
     "Gamma"
@@ -5605,7 +5685,8 @@
   "Ends with NGE": [
     "A Clockwork Orange",
     "Home on the Range",
-    "Orange"
+    "Orange",
+    "Stonehenge"
   ],
   "Ends with NGO": [
     "Belgian Congo",
@@ -5712,6 +5793,7 @@
     "Beef Bourguignon",
     "Canon",
     "Lebanon",
+    "Parthenon",
     "Xenon"
   ],
   "Ends with NOS": [
@@ -6271,6 +6353,7 @@
     "1Q84"
   ],
   "Ends with QUE": [
+    "Blue Mosque",
     "Mozambique",
     "Mystique"
   ],
@@ -6403,6 +6486,7 @@
     "Gran Canaria",
     "Illyria",
     "Liberia",
+    "Lighthouse of Alexandria",
     "Nigeria",
     "Sangria",
     "Santa Maria",
@@ -6890,6 +6974,7 @@
   ],
   "Ends with TRA": [
     "Cleopatra",
+    "Petra",
     "Sumatra"
   ],
   "Ends with TSO": [
@@ -6918,6 +7003,9 @@
   ],
   "Ends with TUS": [
     "Invictus"
+  ],
+  "Ends with TZA": [
+    "Chichen Itza"
   ],
   "Ends with TZE": [
     "Yangtze"
@@ -7095,6 +7183,7 @@
     "The Sound and the Fury"
   ],
   "Ends with USE": [
+    "Sydney Opera House",
     "The Lake House",
     "The Santa Clause",
     "The Santa Clause 3: The Escape Clause"
@@ -7196,6 +7285,9 @@
   "Ends with WAR": [
     "Total War"
   ],
+  "Ends with WAT": [
+    "Angkor Wat"
+  ],
   "Ends with WAY": [
     "Causeway",
     "Jingle All the Way",
@@ -7207,6 +7299,7 @@
     "Charlotte's Web"
   ],
   "Ends with WER": [
+    "Eiffel Tower",
     "Eisenhower",
     "Mayflower",
     "Sunflower"
@@ -8496,6 +8589,11 @@
     "Zambia",
     "Zimbabwe"
   ],
+  "French Architecture": [
+    "Eiffel Tower",
+    "Mont Saint-Michel",
+    "Versailles"
+  ],
   "French Line": [
     "Normandie"
   ],
@@ -8553,11 +8651,22 @@
     "Club",
     "Green"
   ],
+  "Gothic Architecture": [
+    "Notre Dame"
+  ],
   "Gothic Fiction": [
     "Dracula",
     "Frankenstein",
     "Jane Eyre",
     "Wuthering Heights"
+  ],
+  "Greek Architecture": [
+    "Acropolis",
+    "Colossus of Rhodes",
+    "Mausoleum",
+    "Parthenon",
+    "Statue of Zeus",
+    "Temple of Artemis"
   ],
   "Greek Gods": [
     "Aphrodite",
@@ -8856,6 +8965,9 @@
     "Soryu",
     "Yamato"
   ],
+  "Incan Architecture": [
+    "Machu Picchu"
+  ],
   "Ingredients in Cobb Salad": [
     "Avocado",
     "Bacon",
@@ -8891,6 +9003,10 @@
     "Thomas Edison",
     "Whitney",
     "Wright"
+  ],
+  "Islamic Architecture": [
+    "Alhambra",
+    "Blue Mosque"
   ],
   "Island Nations": [
     "Antigua and Barbuda",
@@ -9125,6 +9241,9 @@
     "Rugelach",
     "Schmaltz",
     "Tzimmes"
+  ],
+  "Jordanian Architecture": [
+    "Petra"
   ],
   "K-pop": [
     "(G)I-DLE",
@@ -9921,6 +10040,9 @@
   "Mathematicians": [
     "Newton"
   ],
+  "Mayan Architecture": [
+    "Chichen Itza"
+  ],
   "Mechanical Parts": [
     "Cog",
     "Gear",
@@ -9934,6 +10056,19 @@
     "Disney",
     "Fox",
     "Pixar"
+  ],
+  "Medieval Buildings": [
+    "Alhambra",
+    "Angkor Wat",
+    "Blue Mosque",
+    "Forbidden City",
+    "Hagia Sophia",
+    "Mont Saint-Michel",
+    "Notre Dame",
+    "Potala Palace",
+    "St. Peter's Basilica",
+    "Taj Mahal",
+    "Versailles"
   ],
   "Medieval Figures": [
     "Charlemagne",
@@ -10036,6 +10171,14 @@
     "NATO",
     "Overwatch",
     "Uniform"
+  ],
+  "Modern Buildings": [
+    "Buckingham Palace",
+    "Christ the Redeemer",
+    "Eiffel Tower",
+    "Empire State Building",
+    "Sagrada Familia",
+    "Sydney Opera House"
   ],
   "Modern Countries": [
     "Afghanistan",
@@ -13277,6 +13420,9 @@
   "Movies featuring Zendaya": [
     "The Greatest Showman"
   ],
+  "Mughal Architecture": [
+    "Taj Mahal"
+  ],
   "Muppet Characters": [
     "Animal",
     "Big Bird",
@@ -13640,6 +13786,15 @@
     "Victoria",
     "Washington",
     "Wilson"
+  ],
+  "New Seven Wonders": [
+    "Chichen Itza",
+    "Christ the Redeemer",
+    "Colosseum",
+    "Great Wall",
+    "Machu Picchu",
+    "Petra",
+    "Taj Mahal"
   ],
   "Ninja Terms": [
     "Naruto"
@@ -14856,9 +15011,23 @@
     "Teresa"
   ],
   "Religious Sites": [
+    "Angkor Wat",
+    "Blue Mosque",
+    "Christ the Redeemer",
+    "Hagia Sophia",
     "Jerusalem",
     "Mecca",
+    "Mont Saint-Michel",
+    "Notre Dame",
+    "Parthenon",
+    "Potala Palace",
+    "Pyramids",
+    "Sagrada Familia",
+    "St. Peter's Basilica",
+    "Statue of Zeus",
+    "Taj Mahal",
     "Temple Mount",
+    "Temple of Artemis",
     "Vatican City"
   ],
   "Religious Stories": [
@@ -15053,6 +15222,9 @@
     "Stop Sign",
     "Yield Sign"
   ],
+  "Roman Architecture": [
+    "Colosseum"
+  ],
   "Roman Cities": [
     "Alexandria",
     "Antioch",
@@ -15067,6 +15239,7 @@
     "Britannia",
     "Caesar",
     "Carthage",
+    "Colosseum",
     "Constantinople",
     "Gaul",
     "Germania",
@@ -15489,6 +15662,16 @@
     "Grover",
     "Roosevelt"
   ],
+  "Seven Wonders": [
+    "Colossus of Rhodes",
+    "Great Wall",
+    "Hanging Gardens",
+    "Lighthouse of Alexandria",
+    "Mausoleum",
+    "Pyramids",
+    "Statue of Zeus",
+    "Temple of Artemis"
+  ],
   "Shades of Green": [
     "Emerald",
     "Jade",
@@ -15699,6 +15882,9 @@
     "Hubble",
     "Kepler",
     "Voyager"
+  ],
+  "Spanish Architecture": [
+    "Sagrada Familia"
   ],
   "Spanish Navy": [
     "Santissima Trinidad"
@@ -15945,6 +16131,9 @@
   "Starts with ACO": [
     "Aconcagua"
   ],
+  "Starts with ACR": [
+    "Acropolis"
+  ],
   "Starts with ADA": [
     "Adams"
   ],
@@ -15995,6 +16184,9 @@
   "Starts with ALG": [
     "Algeria"
   ],
+  "Starts with ALH": [
+    "Alhambra"
+  ],
   "Starts with ALI": [
     "Alice in Wonderland",
     "Alice's Adventures in Wonderland",
@@ -16038,6 +16230,7 @@
   ],
   "Starts with ANG": [
     "Angel",
+    "Angkor Wat",
     "Anglo-Egyptian Sudan",
     "Angola"
   ],
@@ -16368,6 +16561,7 @@
     "Blue",
     "Blue Jay",
     "Blue Jeans",
+    "Blue Mosque",
     "Blue Whale",
     "Blueberry",
     "Bluebird"
@@ -16465,7 +16659,8 @@
   ],
   "Starts with BUC": [
     "Bucentaure",
-    "Buck"
+    "Buck",
+    "Buckingham Palace"
   ],
   "Starts with BUF": [
     "Buffalo"
@@ -16628,6 +16823,7 @@
     "Chi",
     "Chianti",
     "Chicago",
+    "Chichen Itza",
     "Chicken",
     "Chicken Little",
     "Chile",
@@ -16646,6 +16842,7 @@
     "Chow Mein"
   ],
   "Starts with CHR": [
+    "Christ the Redeemer",
     "Christopher Columbus",
     "Chrysler"
   ],
@@ -16708,7 +16905,9 @@
     "Colombia",
     "Colorless Tsukuru Tazaki",
     "Colossal",
+    "Colosseum",
     "Colossus",
+    "Colossus of Rhodes",
     "Columbia",
     "Columbus"
   ],
@@ -17055,6 +17254,9 @@
   "Starts with EGY": [
     "Egypt"
   ],
+  "Starts with EIF": [
+    "Eiffel Tower"
+  ],
   "Starts with EIN": [
     "Einstein"
   ],
@@ -17097,6 +17299,7 @@
   ],
   "Starts with EMP": [
     "Empanada",
+    "Empire State Building",
     "Empress of Asia",
     "Empress of Ireland"
   ],
@@ -17269,6 +17472,7 @@
   ],
   "Starts with FOR": [
     "For Whom the Bell Tolls",
+    "Forbidden City",
     "Ford",
     "Formentera",
     "Formula One",
@@ -17468,6 +17672,7 @@
   ],
   "Starts with GRE": [
     "Grease",
+    "Great Wall",
     "Greece",
     "Greek",
     "Green",
@@ -17530,6 +17735,7 @@
     "Hades"
   ],
   "Starts with HAG": [
+    "Hagia Sophia",
     "Hagrid"
   ],
   "Starts with HAI": [
@@ -17550,7 +17756,8 @@
   ],
   "Starts with HAN": [
     "Han",
-    "Handel"
+    "Handel",
+    "Hanging Gardens"
   ],
   "Starts with HAP": [
     "Happy Together"
@@ -18191,7 +18398,8 @@
     "Liechtenstein"
   ],
   "Starts with LIG": [
-    "Light in August"
+    "Light in August",
+    "Lighthouse of Alexandria"
   ],
   "Starts with LIL": [
     "Lilo & Stitch",
@@ -18285,6 +18493,7 @@
     "Macbeth",
     "Mace",
     "Macedonia",
+    "Machu Picchu",
     "Macon"
   ],
   "Starts with MAD": [
@@ -18364,7 +18573,8 @@
     "Maui",
     "Mauretania",
     "Mauritania",
-    "Mauritius"
+    "Mauritius",
+    "Mausoleum"
   ],
   "Starts with MAY": [
     "Mayflower",
@@ -18471,6 +18681,7 @@
     "Monopoly",
     "Monsters Inc",
     "Mont Blanc",
+    "Mont Saint-Michel",
     "Montenegro",
     "Montgomery",
     "Montpelier",
@@ -18639,7 +18850,8 @@
   "Starts with NOT": [
     "Note",
     "Notebook",
-    "Nothing"
+    "Nothing",
+    "Notre Dame"
   ],
   "Starts with NOV": [
     "November"
@@ -18834,7 +19046,8 @@
     "Paradox",
     "Paraguay",
     "Parasite",
-    "Paris"
+    "Paris",
+    "Parthenon"
   ],
   "Starts with PAS": [
     "Pasta",
@@ -18887,6 +19100,7 @@
   "Starts with PET": [
     "Peter",
     "Peter Pan",
+    "Petra",
     "Petrel"
   ],
   "Starts with PHA": [
@@ -19006,6 +19220,9 @@
   "Starts with POS": [
     "Poseidon"
   ],
+  "Starts with POT": [
+    "Potala Palace"
+  ],
   "Starts with POU": [
     "Pouding Chomeur",
     "Poutine"
@@ -19053,6 +19270,9 @@
   ],
   "Starts with PVC": [
     "PVC"
+  ],
+  "Starts with PYR": [
+    "Pyramids"
   ],
   "Starts with PYT": [
     "Python"
@@ -19265,7 +19485,8 @@
   ],
   "Starts with SAG": [
     "Sage",
-    "Sagittarius"
+    "Sagittarius",
+    "Sagrada Familia"
   ],
   "Starts with SAH": [
     "Sahara"
@@ -19572,7 +19793,8 @@
     "Sriracha"
   ],
   "Starts with ST.": [
-    "St. Helens"
+    "St. Helens",
+    "St. Peter's Basilica"
   ],
   "Starts with STA": [
     "Stallion",
@@ -19582,7 +19804,8 @@
     "Starbuck",
     "Stargate",
     "Staten Island",
-    "Statler"
+    "Statler",
+    "Statue of Zeus"
   ],
   "Starts with STE": [
     "Steel",
@@ -19593,6 +19816,7 @@
     "Sticky Toffee Pudding"
   ],
   "Starts with STO": [
+    "Stonehenge",
     "Stop Sign",
     "Storm",
     "Stout"
@@ -19656,7 +19880,8 @@
     "Sword"
   ],
   "Starts with SYD": [
-    "Sydney"
+    "Sydney",
+    "Sydney Opera House"
   ],
   "Starts with SYL": [
     "Sylvester"
@@ -19684,6 +19909,7 @@
     "Taiyaki"
   ],
   "Starts with TAJ": [
+    "Taj Mahal",
     "Tajikistan"
   ],
   "Starts with TAK": [
@@ -19736,6 +19962,7 @@
   "Starts with TEM": [
     "Temeraire",
     "Temple Mount",
+    "Temple of Artemis",
     "Tempura"
   ],
   "Starts with TEN": [
@@ -20140,7 +20367,8 @@
     "Venus"
   ],
   "Starts with VER": [
-    "Verona"
+    "Verona",
+    "Versailles"
   ],
   "Starts with VES": [
     "Vesuvius"
@@ -20717,6 +20945,7 @@
     "Einstein",
     "Eisenhower",
     "Elvis",
+    "Empire State Building",
     "Enterprise",
     "Fight Club",
     "Figure Skating",
@@ -20877,7 +21106,8 @@
   ],
   "Things Australian": [
     "Australia",
-    "Sydney"
+    "Sydney",
+    "Sydney Opera House"
   ],
   "Things Austrian": [
     "Austria",
@@ -20930,6 +21160,7 @@
     "Brazil",
     "Brigadeiro",
     "Cachaça",
+    "Christ the Redeemer",
     "Feijoada",
     "Moqueca",
     "Pao de Queijo"
@@ -20954,6 +21185,7 @@
     "Britannia Hospital",
     "Britannic",
     "Bubble and Squeak",
+    "Buckingham Palace",
     "Challenger",
     "Cricket",
     "Darwin",
@@ -21021,6 +21253,7 @@
     "Soccer",
     "Southampton",
     "Sticky Toffee Pudding",
+    "Stonehenge",
     "Tea",
     "Temeraire",
     "Tennis",
@@ -21169,9 +21402,11 @@
     "Egg Foo Young",
     "Fallen Angels",
     "Farewell My Concubine",
+    "Forbidden City",
     "General Tso",
     "Gobi",
     "Gong Bao Ji Ding",
+    "Great Wall",
     "Hainan",
     "Happy Together",
     "Hard Boiled",
@@ -21267,7 +21502,8 @@
     "Cleopatra",
     "Egypt",
     "Nile",
-    "Pharaoh"
+    "Pharaoh",
+    "Pyramids"
   ],
   "Things Emirati": [
     "United Arab Emirates"
@@ -21319,6 +21555,7 @@
     "Cycling",
     "Duck Confit",
     "Eclair",
+    "Eiffel Tower",
     "Escargot",
     "Espagnole",
     "Fencing",
@@ -21333,8 +21570,10 @@
     "Madeleine",
     "Marie Curie",
     "Mont Blanc",
+    "Mont Saint-Michel",
     "Napoleon Bonaparte",
     "Normandie",
+    "Notre Dame",
     "Paris",
     "Profiterole",
     "Quiche",
@@ -21346,6 +21585,7 @@
     "Sparkling Wine",
     "The Count of Monte Cristo",
     "Veloute",
+    "Versailles",
     "White Wine",
     "William the Conqueror",
     "Wine"
@@ -21394,6 +21634,7 @@
     "Ghana"
   ],
   "Things Greek": [
+    "Acropolis",
     "Aristotle",
     "Athena",
     "Athens",
@@ -21410,6 +21651,7 @@
     "Moussaka",
     "Mykonos",
     "Olympus",
+    "Parthenon",
     "Pastitsio",
     "Plato",
     "Rhodes",
@@ -21480,6 +21722,7 @@
     "Palak Paneer",
     "Rogan Josh",
     "Roti",
+    "Taj Mahal",
     "Tandoori",
     "The Jungle Book",
     "The Mahabharata",
@@ -21531,6 +21774,7 @@
     "Chianti",
     "Christopher Columbus",
     "Ciabatta",
+    "Colosseum",
     "Conte di Savoia",
     "Da Vinci",
     "Dante",
@@ -21567,6 +21811,7 @@
     "Sardinia",
     "Sicily",
     "Spaghetti",
+    "St. Peter's Basilica",
     "The Divine Comedy",
     "Tiramisu",
     "Tomato",
@@ -21701,7 +21946,8 @@
     "Tzimmes"
   ],
   "Things Jordanian": [
-    "Jordan"
+    "Jordan",
+    "Petra"
   ],
   "Things Kazakh": [
     "Kazakhstan"
@@ -21796,6 +22042,7 @@
     "Burrito",
     "Cancun",
     "Ceviche",
+    "Chichen Itza",
     "Chile Relleno",
     "Chimichanga",
     "Enchilada",
@@ -21901,6 +22148,7 @@
     "Paraguay"
   ],
   "Things Peruvian": [
+    "Machu Picchu",
     "Peru",
     "Pisco"
   ],
@@ -21956,7 +22204,6 @@
     "Olivier Salad",
     "Pelmeni",
     "Russia",
-    "Samarkand",
     "Shashlik",
     "Solyanka",
     "The Brothers Karamazov",
@@ -22024,6 +22271,7 @@
     "South Ossetia"
   ],
   "Things Spanish": [
+    "Alhambra",
     "Canary Islands",
     "Christopher Columbus",
     "Churro",
@@ -22048,6 +22296,7 @@
     "Paella",
     "Pinta",
     "Prado",
+    "Sagrada Familia",
     "San Antonio",
     "Sangria",
     "Santa Maria",
@@ -22127,7 +22376,9 @@
   ],
   "Things Turkish": [
     "Ayran",
+    "Blue Mosque",
     "Constantinople",
+    "Hagia Sophia",
     "Turkey"
   ],
   "Things Turkmen": [
@@ -22144,6 +22395,7 @@
     "Uruguay"
   ],
   "Things Uzbek": [
+    "Samarkand",
     "Uzbekistan"
   ],
   "Things Vanuatuan": [
@@ -22287,6 +22539,9 @@
     "The Village",
     "Unbreakable",
     "Vantage Point"
+  ],
+  "Tibetan Architecture": [
+    "Potala Palace"
   ],
   "Time Travel Stories": [
     "11/22/63",

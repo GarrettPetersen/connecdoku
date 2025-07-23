@@ -598,5 +598,45 @@
         "Death Proof"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Comedy Stories",
+      "Sequels",
+      "Starts with THE",
+      "Things American"
+    ],
+    "cols": [
+      "Ends with EST",
+      "Ends with NCE",
+      "Family Stories",
+      "Movies directed by Quentin Tarantino"
+    ],
+    "words": [
+      [
+        "Galaxy Quest",
+        "Everything Everywhere All at Once",
+        "Back to the Future",
+        "Once Upon a Time in Hollywood"
+      ],
+      [
+        "Pirates of the Caribbean: Dead Man's Chest",
+        "Die Hard with a Vengeance",
+        "Mary Poppins Returns",
+        "Kill Bill: Volume 2"
+      ],
+      [
+        "The Dark Forest",
+        "The Little Prince",
+        "The Jungle Book",
+        "The Hateful Eight"
+      ],
+      [
+        "Key West",
+        "Providence",
+        "E.T.",
+        "Pulp Fiction"
+      ]
+    ]
   }
 ]

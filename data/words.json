@@ -4075,7 +4075,7 @@
     "Locations in Asia",
     "Place Names",
     "Starts with SAM",
-    "Things Russian"
+    "Things Uzbek"
   ],
   "Athena": [
     "Ends with ENA",
@@ -20596,5 +20596,250 @@
     "Sci-fi Stories",
     "Starts with HER",
     "Things American"
+  ],
+  "Parthenon": [
+    "Ancient Buildings",
+    "Ends with NON",
+    "Greek Architecture",
+    "Religious Sites",
+    "Starts with PAR",
+    "Things Greek"
+  ],
+  "Colosseum": [
+    "Ancient Buildings",
+    "Ends with EUM",
+    "New Seven Wonders",
+    "Roman Architecture",
+    "Roman Empire",
+    "Starts with COL",
+    "Things Italian"
+  ],
+  "Pyramids": [
+    "Ancient Buildings",
+    "Egyptian Architecture",
+    "Ends with IDS",
+    "Religious Sites",
+    "Seven Wonders",
+    "Starts with PYR",
+    "Things Egyptian"
+  ],
+  "Petra": [
+    "Ancient Buildings",
+    "Ends with TRA",
+    "Jordanian Architecture",
+    "New Seven Wonders",
+    "Starts with PET",
+    "Things Jordanian"
+  ],
+  "Notre Dame": [
+    "Ends with AME",
+    "Gothic Architecture",
+    "Medieval Buildings",
+    "Religious Sites",
+    "Starts with NOT",
+    "Things French"
+  ],
+  "Taj Mahal": [
+    "Ends with HAL",
+    "Medieval Buildings",
+    "Mughal Architecture",
+    "New Seven Wonders",
+    "Religious Sites",
+    "Starts with TAJ",
+    "Things Indian"
+  ],
+  "Alhambra": [
+    "Ends with BRA",
+    "Islamic Architecture",
+    "Medieval Buildings",
+    "Starts with ALH",
+    "Things Spanish"
+  ],
+  "Hagia Sophia": [
+    "Byzantine Architecture",
+    "Ends with HIA",
+    "Medieval Buildings",
+    "Religious Sites",
+    "Starts with HAG",
+    "Things Turkish"
+  ],
+  "Eiffel Tower": [
+    "Ends with WER",
+    "French Architecture",
+    "Modern Buildings",
+    "Starts with EIF",
+    "Things French"
+  ],
+  "Empire State Building": [
+    "American Architecture",
+    "Ends with ING",
+    "Modern Buildings",
+    "Starts with EMP",
+    "Things American"
+  ],
+  "Sagrada Familia": [
+    "Ends with LIA",
+    "Modern Buildings",
+    "Religious Sites",
+    "Spanish Architecture",
+    "Starts with SAG",
+    "Things Spanish"
+  ],
+  "Sydney Opera House": [
+    "Australian Architecture",
+    "Ends with USE",
+    "Modern Buildings",
+    "Starts with SYD",
+    "Things Australian"
+  ],
+  "Great Wall": [
+    "Ancient Buildings",
+    "Chinese Architecture",
+    "Ends with ALL",
+    "New Seven Wonders",
+    "Seven Wonders",
+    "Starts with GRE",
+    "Things Chinese"
+  ],
+  "Machu Picchu": [
+    "Ancient Buildings",
+    "Ends with CHU",
+    "Incan Architecture",
+    "New Seven Wonders",
+    "Starts with MAC",
+    "Things Peruvian"
+  ],
+  "Christ the Redeemer": [
+    "Brazilian Architecture",
+    "Ends with MER",
+    "Modern Buildings",
+    "New Seven Wonders",
+    "Religious Sites",
+    "Starts with CHR",
+    "Things Brazilian"
+  ],
+  "Chichen Itza": [
+    "Ancient Buildings",
+    "Ends with TZA",
+    "Mayan Architecture",
+    "New Seven Wonders",
+    "Starts with CHI",
+    "Things Mexican"
+  ],
+  "Buckingham Palace": [
+    "British Architecture",
+    "Ends with ACE",
+    "Modern Buildings",
+    "Starts with BUC",
+    "Things British"
+  ],
+  "Versailles": [
+    "Ends with LES",
+    "French Architecture",
+    "Medieval Buildings",
+    "Starts with VER",
+    "Things French"
+  ],
+  "Angkor Wat": [
+    "Cambodian Architecture",
+    "Ends with WAT",
+    "Medieval Buildings",
+    "Religious Sites",
+    "Starts with ANG"
+  ],
+  "Stonehenge": [
+    "Ancient Buildings",
+    "British Architecture",
+    "Ends with NGE",
+    "Starts with STO",
+    "Things British"
+  ],
+  "Acropolis": [
+    "Ancient Buildings",
+    "Ends with LIS",
+    "Greek Architecture",
+    "Starts with ACR",
+    "Things Greek"
+  ],
+  "Forbidden City": [
+    "Chinese Architecture",
+    "Ends with ITY",
+    "Medieval Buildings",
+    "Starts with FOR",
+    "Things Chinese"
+  ],
+  "St. Peter's Basilica": [
+    "Ends with ICA",
+    "Medieval Buildings",
+    "Religious Sites",
+    "Starts with ST.",
+    "Things Italian"
+  ],
+  "Blue Mosque": [
+    "Ends with QUE",
+    "Islamic Architecture",
+    "Medieval Buildings",
+    "Religious Sites",
+    "Starts with BLU",
+    "Things Turkish"
+  ],
+  "Potala Palace": [
+    "Ends with ACE",
+    "Medieval Buildings",
+    "Religious Sites",
+    "Starts with POT",
+    "Tibetan Architecture"
+  ],
+  "Mont Saint-Michel": [
+    "Ends with HEL",
+    "French Architecture",
+    "Medieval Buildings",
+    "Religious Sites",
+    "Starts with MON",
+    "Things French"
+  ],
+  "Hanging Gardens": [
+    "Ancient Buildings",
+    "Babylonian Architecture",
+    "Ends with ENS",
+    "Seven Wonders",
+    "Starts with HAN"
+  ],
+  "Temple of Artemis": [
+    "Ancient Buildings",
+    "Ends with MIS",
+    "Greek Architecture",
+    "Religious Sites",
+    "Seven Wonders",
+    "Starts with TEM"
+  ],
+  "Statue of Zeus": [
+    "Ancient Buildings",
+    "Ends with EUS",
+    "Greek Architecture",
+    "Religious Sites",
+    "Seven Wonders",
+    "Starts with STA"
+  ],
+  "Mausoleum": [
+    "Ancient Buildings",
+    "Ends with EUM",
+    "Greek Architecture",
+    "Seven Wonders",
+    "Starts with MAU"
+  ],
+  "Colossus of Rhodes": [
+    "Ancient Buildings",
+    "Ends with DES",
+    "Greek Architecture",
+    "Seven Wonders",
+    "Starts with COL"
+  ],
+  "Lighthouse of Alexandria": [
+    "Ancient Buildings",
+    "Egyptian Architecture",
+    "Ends with RIA",
+    "Seven Wonders",
+    "Starts with LIG"
   ]
 }

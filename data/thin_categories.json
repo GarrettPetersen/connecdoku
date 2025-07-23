@@ -44,9 +44,6 @@
   "Movies featuring Tate Donovan": [
     "Hercules"
   ],
-  "Things Jordanian": [
-    "Jordan"
-  ],
   "Things New Zealand": [
     "New Zealand"
   ],
@@ -376,9 +373,6 @@
   ],
   "Things Uruguayan": [
     "Uruguay"
-  ],
-  "Things Uzbek": [
-    "Uzbekistan"
   ],
   "Things Venezuelan": [
     "Venezuela"
@@ -2111,6 +2105,48 @@
   "Movies directed by Spike Jonze": [
     "Her"
   ],
+  "Roman Architecture": [
+    "Colosseum"
+  ],
+  "Jordanian Architecture": [
+    "Petra"
+  ],
+  "Gothic Architecture": [
+    "Notre Dame"
+  ],
+  "Mughal Architecture": [
+    "Taj Mahal"
+  ],
+  "Byzantine Architecture": [
+    "Hagia Sophia"
+  ],
+  "American Architecture": [
+    "Empire State Building"
+  ],
+  "Spanish Architecture": [
+    "Sagrada Familia"
+  ],
+  "Australian Architecture": [
+    "Sydney Opera House"
+  ],
+  "Incan Architecture": [
+    "Machu Picchu"
+  ],
+  "Brazilian Architecture": [
+    "Christ the Redeemer"
+  ],
+  "Mayan Architecture": [
+    "Chichen Itza"
+  ],
+  "Cambodian Architecture": [
+    "Angkor Wat"
+  ],
+  "Tibetan Architecture": [
+    "Potala Palace"
+  ],
+  "Babylonian Architecture": [
+    "Hanging Gardens"
+  ],
   "Maritime Stories": [
     "Titanic",
     "Moby Dick"
@@ -2118,10 +2154,6 @@
   "Things Ukrainian": [
     "Chernobyl",
     "Ukraine"
-  ],
-  "Things Australian": [
-    "Sydney",
-    "Australia"
   ],
   "Golf Terms": [
     "Green",
@@ -2151,9 +2183,17 @@
     "Hercules",
     "One Flew Over the Cuckoo's Nest"
   ],
+  "Things Jordanian": [
+    "Jordan",
+    "Petra"
+  ],
   "Things Iraqi": [
     "Baghdad",
     "Iraq"
+  ],
+  "Things Uzbek": [
+    "Samarkand",
+    "Uzbekistan"
   ],
   "Things Pakistani": [
     "Karachi",
@@ -2278,10 +2318,6 @@
   "Things Macedonian": [
     "North Macedonia",
     "Macedonia"
-  ],
-  "Things Peruvian": [
-    "Peru",
-    "Pisco"
   ],
   "Things Samoan": [
     "Samoa",
@@ -2735,6 +2771,22 @@
     "The French Connection",
     "The Exorcist"
   ],
+  "Egyptian Architecture": [
+    "Pyramids",
+    "Lighthouse of Alexandria"
+  ],
+  "Islamic Architecture": [
+    "Alhambra",
+    "Blue Mosque"
+  ],
+  "Chinese Architecture": [
+    "Great Wall",
+    "Forbidden City"
+  ],
+  "British Architecture": [
+    "Buckingham Palace",
+    "Stonehenge"
+  ],
   "Movies featuring Kate Winslet": [
     "Titanic",
     "Sense and Sensibility",
@@ -2749,11 +2801,6 @@
     "Lusitania",
     "Hood",
     "Britannic"
-  ],
-  "Things Turkish": [
-    "Constantinople",
-    "Turkey",
-    "Ayran"
   ],
   "Things Nepalese": [
     "Everest",
@@ -2774,6 +2821,11 @@
     "Galileo",
     "Kepler",
     "Copernicus"
+  ],
+  "Things Australian": [
+    "Sydney",
+    "Australia",
+    "Sydney Opera House"
   ],
   "Star": [
     "Milky Way",
@@ -2849,6 +2901,11 @@
     "Guyana",
     "Dutch Guiana",
     "British Guiana"
+  ],
+  "Things Peruvian": [
+    "Peru",
+    "Pisco",
+    "Machu Picchu"
   ],
   "Things Somali": [
     "Somalia",
@@ -3089,5 +3146,10 @@
     "Don't Look Now",
     "The Man Who Fell to Earth",
     "Walkabout"
+  ],
+  "French Architecture": [
+    "Eiffel Tower",
+    "Versailles",
+    "Mont Saint-Michel"
   ]
 }

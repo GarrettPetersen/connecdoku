@@ -166,16 +166,15 @@ function getJsonFileAtIndex(index) {
 
 function calculateCategoryOverlap(puzzleCategories, usedCategories) {
     const puzzleSet = new Set(puzzleCategories);
-    const usedSet = new Set(usedCategories);
-    let overlap = 0;
+    let totalOverlap = 0;
 
+    // Count how many times each puzzle category appears in used categories
     for (const cat of puzzleSet) {
-        if (usedSet.has(cat)) {
-            overlap++;
-        }
+        const count = usedCategories.filter(usedCat => usedCat === cat).length;
+        totalOverlap += count;
     }
 
-    return overlap;
+    return totalOverlap;
 }
 
 function findBestPuzzle() {
