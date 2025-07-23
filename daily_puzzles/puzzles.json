@@ -878,5 +878,205 @@
         "Brazil"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Breads",
+      "Cities",
+      "Countries",
+      "Desserts"
+    ],
+    "cols": [
+      "Things Brazilian",
+      "Things Chinese",
+      "Things German",
+      "Things Italian"
+    ],
+    "words": [
+      [
+        "Pao de Queijo",
+        "Bao",
+        "Pumpernickel",
+        "Focaccia"
+      ],
+      [
+        "Brasilia",
+        "Beijing",
+        "Berlin",
+        "Naples"
+      ],
+      [
+        "Brazil",
+        "China",
+        "Germany",
+        "Italy"
+      ],
+      [
+        "Brigadeiro",
+        "Mooncake",
+        "Apfelstrudel",
+        "Gelato"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Cities",
+      "Ends with AND",
+      "Male Names",
+      "NATO Members"
+    ],
+    "cols": [
+      "Landlocked Countries",
+      "Locations in Asia",
+      "Things American",
+      "Things Canadian"
+    ],
+    "words": [
+      [
+        "San Marino",
+        "Jaipur",
+        "Atlanta",
+        "Toronto"
+      ],
+      [
+        "Switzerland",
+        "Thailand",
+        "Staten Island",
+        "Empress of Ireland"
+      ],
+      [
+        "Chad",
+        "Jordan",
+        "Elvis",
+        "Drake"
+      ],
+      [
+        "Czech Republic",
+        "Turkey",
+        "United States",
+        "Canada"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Archipelagos",
+      "Locations in Africa",
+      "Locations in North America",
+      "Locations in South America"
+    ],
+    "cols": [
+      "Ends with AND",
+      "Former French Colonies",
+      "Most Populous Countries (Top 10)",
+      "Starts with BRI"
+    ],
+    "words": [
+      [
+        "Shetland",
+        "New Hebrides",
+        "Indonesia",
+        "British Malaya"
+      ],
+      [
+        "Basutoland",
+        "Burkina Faso",
+        "Nigeria",
+        "British East Africa"
+      ],
+      [
+        "Long Island",
+        "Haiti",
+        "United States",
+        "British Honduras"
+      ],
+      [
+        "Easter Island",
+        "Suriname",
+        "Brazil",
+        "British Guiana"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Countries that No Longer Exist",
+      "Former German Colonies",
+      "Locations in Europe",
+      "Movies"
+    ],
+    "cols": [
+      "Ends with BIA",
+      "Ends with NIA",
+      "Ends with SIA",
+      "Islands"
+    ],
+    "words": [
+      [
+        "Gran Colombia",
+        "Abyssinia",
+        "Prussia",
+        "Zanzibar"
+      ],
+      [
+        "Namibia",
+        "Tanzania",
+        "Micronesia",
+        "Palau"
+      ],
+      [
+        "Serbia",
+        "Macedonia",
+        "Russia",
+        "Corfu"
+      ],
+      [
+        "Lawrence of Arabia",
+        "Insomnia",
+        "Fantasia",
+        "Madagascar"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Black and White Films",
+      "Classic Literature",
+      "Comedy Stories",
+      "Ends with TER"
+    ],
+    "cols": [
+      "Crime Stories",
+      "Oscar Winners",
+      "Red Things",
+      "Romance Stories"
+    ],
+    "words": [
+      [
+        "The Maltese Falcon",
+        "Schindler's List",
+        "Red Beard",
+        "White Christmas"
+      ],
+      [
+        "Crime and Punishment",
+        "Little Women",
+        "Dream of the Red Chamber",
+        "Jane Eyre"
+      ],
+      [
+        "Bad Santa",
+        "Everything Everywhere All at Once",
+        "Red",
+        "Groundhog Day"
+      ],
+      [
+        "Get Carter",
+        "The Deer Hunter",
+        "Lobster",
+        "Brief Encounter"
+      ]
+    ]
   }
 ]
