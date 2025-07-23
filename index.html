@@ -299,10 +299,10 @@ function init(puz){
   /* board state */
   if (!savedState) {
     // Only shuffle and initialize if we don't have saved state
-    const flat=[...puz.words.flat()].map(v=>[Math.random(),v])
-                 .sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
+  const flat=[...puz.words.flat()].map(v=>[Math.random(),v])
+               .sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
     let k=0;
-    for(let r=0;r<4;r++)for(let c=0;c<4;c++)G[r][c]=flat[k++];
+  for(let r=0;r<4;r++)for(let c=0;c<4;c++)G[r][c]=flat[k++];
   }
 
   /* dynamic canonical maps (created on first solve) */
@@ -536,7 +536,7 @@ function init(puz){
   /* ---------------------------------------------------------------
     alignRow(r)                 –  same-orientation anchoring
     ------------------------------------------------------------- */
-    function alignRow(r) {
+  function alignRow(r) {
       const refRows = [...solvedRows.keys()];
       if (refRows.length === 0) return;
 
@@ -559,7 +559,7 @@ function init(puz){
 
   // Step 2: Compute desired column positions for the current row's words
   const entries = [];
-  for (let c = 0; c < 4; c++) {
+      for (let c = 0; c < 4; c++) {
     const word = G[r][c];
     const cat = wordToColCat[word];
     entries.push({ word, from: c, to: catToIndex[cat] });
@@ -578,15 +578,15 @@ function init(puz){
       // Find tgtWord in current row
       const src = G[r].indexOf(tgtWord);
       swapCells(r, c, r, src, true);
+      }
     }
   }
-}
 
 
 
   /* ---------------------------------------------------------------
-  alignCol(c)                 –  same-orientation anchoring
-  ------------------------------------------------------------- */
+    alignCol(c)                 –  same-orientation anchoring
+    ------------------------------------------------------------- */
   function alignCol(c) {
     console.log(`alignCol(${c}) called, solvedCols:`, [...solvedCols.keys()]);
     
@@ -603,7 +603,7 @@ function init(puz){
     console.log(`Checking column ${col}:`);
     for (let r = 0; r < 4; r++) {
       const word = G[r][col];
-      const cat = wordToColCat[word];  // Use column category, not row category
+      const cat = wordToColCat[word];  // Use column category to determine row order
       console.log(`  Row ${r}: ${word} -> ${cat}`);
       if (!seen.has(cat)) {
         seen.add(cat);
@@ -617,9 +617,9 @@ function init(puz){
 
   // Step 2: Compute desired row positions for the current column’s words
   const entries = [];
-  for (let r = 0; r < 4; r++) {
+      for (let r = 0; r < 4; r++) {
     const word = G[r][c];
-    const cat = wordToColCat[word];  // Use column category, not row category
+    const cat = wordToColCat[word];  // Use column category to determine row order
     entries.push({ word, from: r, to: catToIndex[cat] });
   }
 
