@@ -10903,6 +10903,7 @@
     "Movies featuring Al Pacino",
     "Movies featuring Robert De Niro",
     "Oscar Winners",
+    "Prequels",
     "Sequels",
     "Starts with THE"
   ],
@@ -11233,8 +11234,8 @@
     "Movies featuring Jake Lloyd",
     "Movies featuring Liam Neeson",
     "Movies featuring Natalie Portman",
+    "Prequels",
     "Sci-fi Stories",
-    "Sequels",
     "Star Wars Movies",
     "Starts with THE"
   ],
@@ -11247,8 +11248,8 @@
     "Movies featuring Ewan McGregor",
     "Movies featuring Hayden Christensen",
     "Movies featuring Natalie Portman",
+    "Prequels",
     "Sci-fi Stories",
-    "Sequels",
     "Star Wars Movies",
     "Starts with ATT"
   ],
@@ -11261,8 +11262,8 @@
     "Movies featuring Hayden Christensen",
     "Movies featuring Ian McDiarmid",
     "Movies featuring Natalie Portman",
+    "Prequels",
     "Sci-fi Stories",
-    "Sequels",
     "Star Wars Movies",
     "Starts with REV"
   ],
@@ -11324,6 +11325,7 @@
     "Movies featuring Donnie Yen",
     "Movies featuring Felicity Jones",
     "Movies featuring Forest Whitaker",
+    "Prequels",
     "Sci-fi Stories",
     "Star Wars Movies",
     "Starts with ROG"
@@ -12449,6 +12451,7 @@
   "The Hobbit": [
     "Adventure Stories",
     "Books",
+    "Children's Books",
     "Ends with BIT",
     "Fantasy Literature",
     "Fantasy Stories",
@@ -20460,6 +20463,7 @@
     "Ends with ION",
     "Fantasy Literature",
     "J.R.R. Tolkien",
+    "Prequels",
     "Starts with THE",
     "Things British"
   ],
@@ -20841,5 +20845,68 @@
     "Ends with RIA",
     "Seven Wonders",
     "Starts with LIG"
+  ],
+  "Monsters University": [
+    "3D Animated Films",
+    "Adventure Stories",
+    "Comedy Stories",
+    "Disney",
+    "Ends with ITY",
+    "Movies",
+    "Movies directed by Dan Scanlon",
+    "Movies featuring Billy Crystal",
+    "Movies featuring John Goodman",
+    "Pixar",
+    "Prequels",
+    "Starts with MON",
+    "Things American"
+  ],
+  "X-Men: First Class": [
+    "Action Stories",
+    "Adventure Stories",
+    "Ends with ASS",
+    "Movies",
+    "Movies directed by Matthew Vaughn",
+    "Movies featuring James McAvoy",
+    "Movies featuring Michael Fassbender",
+    "Prequels",
+    "Sci-fi Stories",
+    "Starts with X-M"
+  ],
+  "The Good, the Bad and the Ugly": [
+    "Action Stories",
+    "Adventure Stories",
+    "Ends with GLY",
+    "Movies",
+    "Movies directed by Sergio Leone",
+    "Movies featuring Clint Eastwood",
+    "Movies featuring Eli Wallach",
+    "Movies featuring Lee Van Cleef",
+    "Prequels",
+    "Starts with THE",
+    "Things Italian",
+    "Western Films"
+  ],
+  "The Chronicles of Narnia: The Magician's Nephew": [
+    "Adventure Stories",
+    "Books",
+    "Children's Books",
+    "Ends with HEW",
+    "Fantasy Literature",
+    "Prequels",
+    "Starts with THE",
+    "Things British"
+  ],
+  "Red Dragon": [
+    "Crime Stories",
+    "Ends with GON",
+    "Movies",
+    "Movies directed by Brett Ratner",
+    "Movies featuring Anthony Hopkins",
+    "Movies featuring Edward Norton",
+    "Prequels",
+    "Starts with RED",
+    "Things American",
+    "Thriller Stories"
   ]
 }

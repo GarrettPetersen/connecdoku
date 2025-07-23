@@ -16,6 +16,8 @@
        --txt:#222;--btn1:#4caf50;--btn2:#ffb300;--btn3:#e53935}
 body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
      margin:0;background:#fafafa;color:var(--txt)}
+/* Add emoji font support for compound emojis */
+.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
 #shell{max-width:850px;margin:60px auto 40px;padding:0 12px;position:relative}
 @media (max-width: 768px) {
   #shell { margin: 20px auto 20px; padding: 0 8px; }
@@ -38,6 +40,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 @media (max-width: 768px) {
   .hdr { min-height: 28px; font-size: 14px; }
 }
+.hdr.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
 .hdr:hover{filter:brightness(0.9)}
 .hdr button{all:unset;cursor:pointer;color:var(--txt)}
 .hdr.solved{font-weight:600;border:none;cursor:default}
@@ -61,7 +64,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 .modalBg{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;
          align-items:center;justify-content:center;z-index:20}
 .modalBg.show{display:flex}
-.modalCard{background:#fff;border-radius:10px;padding:26px 30px;max-width:360px}
+.modalCard{background:#fff;border-radius:10px;padding:26px 30px;max-width:360px;position:relative}
 .modalCard h3{margin-top:0}
 .modalCard button.min{position:absolute;top:8px;right:10px;border:none;background:0;font-size:22px;cursor:pointer}
 .modalCard button.action{margin-top:18px;padding:8px 14px;border:none;border-radius:6px;background:#4caf50;color:#fff;cursor:pointer}
@@ -75,6 +78,7 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
 @media (max-width: 768px) {
   pre { font-size: 16px; margin: 8px 0; }
 }
+pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
 </style>
 </head>
 <body>
@@ -373,8 +377,10 @@ function init(puz){
       const label = ans[hash(G[r])];
       if (label) {
         hdr.textContent = label;
+        hdr.classList.add('emoji'); // Add emoji class for compound emoji support
       } else {
         hdr.textContent = '❓';
+        hdr.classList.add('emoji'); // Add emoji class for compound emoji support
         console.warn(
           `Row ${r}: [${G[r].join(', ')}] → these four words don't make a category`
         );
@@ -394,8 +400,10 @@ function init(puz){
       const label = ans[hash(colWords)];
       if (label) {
         hdr.textContent = label;
+        hdr.classList.add('emoji'); // Add emoji class for compound emoji support
       } else {
         hdr.textContent = '❓';
+        hdr.classList.add('emoji'); // Add emoji class for compound emoji support
         console.warn(
           `Col ${c}: [${colWords.join(', ')}] → these four words don't make a category`
         );
@@ -551,7 +559,7 @@ function init(puz){
 
   function makeSolvedLabel(txt,lvl){
     const d=document.createElement('div');
-    d.className=`hdr solved ${clr[lvl]} pop`; d.textContent=txt; return d;
+    d.className=`hdr solved ${clr[lvl]} pop emoji`; d.textContent=txt; return d;
   }
   const colourAndFreeze=(k,i,l)=>{
     if(k==='row') for(let c=0;c<4;c++){ lockColour(i,c,l); freezeTile(i,c); }
@@ -1040,6 +1048,7 @@ function init(puz){
     
     $('#popTitle').textContent = `Connecdoku ${dateStr}`;
     $('#shareGrid').textContent = createEmojiGrid();
+    $('#shareGrid').classList.add('emoji'); // Add emoji class for compound emoji support
     
     // Add statistics
     const winRate = stats.totalGames > 0 ? Math.round((stats.totalWins / stats.totalGames) * 100) : 0;

@@ -81,6 +81,7 @@
     "Meet the Robinsons",
     "Moana",
     "Monsters Inc",
+    "Monsters University",
     "Ratatouille",
     "Raya and the Last Dragon",
     "Rise of the Guardians",
@@ -166,6 +167,7 @@
     "Tenet",
     "Terminator 2: Judgment Day",
     "The Fifth Element",
+    "The Good, the Bad and the Ugly",
     "The Hurt Locker",
     "The Killer",
     "The Lord of the Rings: The Fellowship of the Ring",
@@ -175,7 +177,8 @@
     "The Philadelphia Experiment",
     "The Terminator",
     "Vantage Point",
-    "X-Men: Days of Future Past"
+    "X-Men: Days of Future Past",
+    "X-Men: First Class"
   ],
   "Actors": [
     "Mifune"
@@ -207,6 +210,7 @@
     "Jurassic Park",
     "Moana",
     "Moby Dick",
+    "Monsters University",
     "Mulan",
     "Percy Jackson & the Olympians",
     "Peter Pan",
@@ -230,10 +234,12 @@
     "The Alchemist",
     "The Call of the Wild",
     "The Chronicles of Narnia",
+    "The Chronicles of Narnia: The Magician's Nephew",
     "The Count of Monte Cristo",
     "The Empire Strikes Back",
     "The Fifth Element",
     "The Force Awakens",
+    "The Good, the Bad and the Ugly",
     "The Great Mouse Detective",
     "The Hobbit",
     "The Hunger Games",
@@ -258,7 +264,8 @@
     "The Wizard of Oz",
     "Time Bandits",
     "Water Margin",
-    "X-Men: Days of Future Past"
+    "X-Men: Days of Future Past",
+    "X-Men: First Class"
   ],
   "Age of Sail": [
     "Beagle",
@@ -976,6 +983,7 @@
     "The Call of the Wild",
     "The Catcher in the Rye",
     "The Chronicles of Narnia",
+    "The Chronicles of Narnia: The Magician's Nephew",
     "The Color Purple",
     "The Count of Monte Cristo",
     "The Da Vinci Code",
@@ -1233,6 +1241,8 @@
   ],
   "Children's Books": [
     "Alice's Adventures in Wonderland",
+    "The Chronicles of Narnia: The Magician's Nephew",
+    "The Hobbit",
     "The Jungle Book",
     "The Secret Garden",
     "The Tale of Peter Rabbit",
@@ -1778,6 +1788,7 @@
     "Little Shop of Horrors",
     "Love Actually",
     "Manhattan",
+    "Monsters University",
     "Moonrise Kingdom",
     "My Fair Lady",
     "National Lampoon's Christmas Vacation",
@@ -2581,6 +2592,7 @@
     "No Country for Old Men",
     "Performance",
     "Pulp Fiction",
+    "Red Dragon",
     "Reservoir Dogs",
     "Scarface",
     "Serpico",
@@ -2781,6 +2793,7 @@
     "Mary Poppins Returns",
     "Meet the Robinsons",
     "Moana",
+    "Monsters University",
     "Mulan",
     "Oliver & Company",
     "Peter Pan",
@@ -3484,7 +3497,8 @@
   ],
   "Ends with ASS": [
     "Glass",
-    "Kvass"
+    "Kvass",
+    "X-Men: First Class"
   ],
   "Ends with AST": [
     "Beast",
@@ -4473,6 +4487,9 @@
     "Eagle",
     "Google"
   ],
+  "Ends with GLY": [
+    "The Good, the Bad and the Ugly"
+  ],
   "Ends with GMA": [
     "Sigma"
   ],
@@ -4495,7 +4512,8 @@
     "Crouching Tiger, Hidden Dragon",
     "Dragon",
     "Oregon",
-    "Raya and the Last Dragon"
+    "Raya and the Last Dragon",
+    "Red Dragon"
   ],
   "Ends with GOS": [
     "Bigos",
@@ -4576,6 +4594,7 @@
     "Tres Leches"
   ],
   "Ends with HEW": [
+    "The Chronicles of Narnia: The Magician's Nephew",
     "The Magician's Nephew"
   ],
   "Ends with HEY": [
@@ -5063,6 +5082,7 @@
     "Forbidden City",
     "Infinity",
     "Jefferson City",
+    "Monsters University",
     "Oklahoma City",
     "Salt Lake City",
     "Sense and Sensibility",
@@ -7653,6 +7673,7 @@
   "Fantasy Literature": [
     "Prince Caspian",
     "The Chronicles of Narnia",
+    "The Chronicles of Narnia: The Magician's Nephew",
     "The Hobbit",
     "The Lion, the Witch and the Wardrobe",
     "The Lord of the Rings",
@@ -10662,6 +10683,7 @@
     "Miracle on 34th Street",
     "Moana",
     "Monsters Inc",
+    "Monsters University",
     "Moonlight",
     "Moonrise Kingdom",
     "Moulin Rouge!",
@@ -10714,6 +10736,7 @@
     "Red",
     "Red 2",
     "Red Beard",
+    "Red Dragon",
     "Rent",
     "Reservoir Dogs",
     "Return of the Jedi",
@@ -10782,6 +10805,7 @@
     "The Godfather",
     "The Godfather Part II",
     "The Godfather Part III",
+    "The Good, the Bad and the Ugly",
     "The Graduate",
     "The Grand Budapest Hotel",
     "The Grandmaster",
@@ -10873,6 +10897,7 @@
     "Working Girl",
     "Wreck-It Ralph",
     "X-Men: Days of Future Past",
+    "X-Men: First Class",
     "Yojimbo",
     "Zootopia",
     "Zulu"
@@ -10958,6 +10983,9 @@
   "Movies directed by Bong Joon-ho": [
     "Parasite"
   ],
+  "Movies directed by Brett Ratner": [
+    "Red Dragon"
+  ],
   "Movies directed by Brian De Palma": [
     "Scarface"
   ],
@@ -11021,6 +11049,9 @@
   ],
   "Movies directed by Damien Chazelle": [
     "La La Land"
+  ],
+  "Movies directed by Dan Scanlon": [
+    "Monsters University"
   ],
   "Movies directed by Daniel Kwan": [
     "Everything Everywhere All at Once"
@@ -11329,6 +11360,9 @@
     "The Departed",
     "The Irishman"
   ],
+  "Movies directed by Matthew Vaughn": [
+    "X-Men: First Class"
+  ],
   "Movies directed by Mel Gibson": [
     "Braveheart"
   ],
@@ -11548,6 +11582,9 @@
   ],
   "Movies directed by Scott Mosier": [
     "The Grinch"
+  ],
+  "Movies directed by Sergio Leone": [
+    "The Good, the Bad and the Ugly"
   ],
   "Movies directed by Seth Gordon": [
     "Four Christmases"
@@ -11793,6 +11830,9 @@
   "Movies featuring Anthony Gonzalez": [
     "Coco"
   ],
+  "Movies featuring Anthony Hopkins": [
+    "Red Dragon"
+  ],
   "Movies featuring Anthony Mackie": [
     "The Hurt Locker"
   ],
@@ -11884,6 +11924,9 @@
   ],
   "Movies featuring Billy Bob Thornton": [
     "Bad Santa"
+  ],
+  "Movies featuring Billy Crystal": [
+    "Monsters University"
   ],
   "Movies featuring Billy Dee Williams": [
     "Return of the Jedi",
@@ -12066,6 +12109,7 @@
   ],
   "Movies featuring Clint Eastwood": [
     "Million Dollar Baby",
+    "The Good, the Bad and the Ugly",
     "Unforgiven"
   ],
   "Movies featuring Colin Firth": [
@@ -12221,11 +12265,15 @@
     "Dumbo"
   ],
   "Movies featuring Edward Norton": [
-    "Birdman"
+    "Birdman",
+    "Red Dragon"
   ],
   "Movies featuring Eleanor Audley": [
     "Cinderella",
     "Sleeping Beauty"
+  ],
+  "Movies featuring Eli Wallach": [
+    "The Good, the Bad and the Ugly"
   ],
   "Movies featuring Elijah Wood": [
     "The Lord of the Rings: The Fellowship of the Ring",
@@ -12465,7 +12513,8 @@
     "Fantasia 2000"
   ],
   "Movies featuring James McAvoy": [
-    "Arthur Christmas"
+    "Arthur Christmas",
+    "X-Men: First Class"
   ],
   "Movies featuring James Spader": [
     "Stargate"
@@ -12577,6 +12626,7 @@
     "The Many Adventures of Winnie the Pooh"
   ],
   "Movies featuring John Goodman": [
+    "Monsters University",
     "The Artist",
     "The Emperor's New Groove"
   ],
@@ -12731,7 +12781,8 @@
     "Parasite"
   ],
   "Movies featuring Lee Van Cleef": [
-    "Escape from New York"
+    "Escape from New York",
+    "The Good, the Bad and the Ugly"
   ],
   "Movies featuring Leonardo DiCaprio": [
     "Django Unchained",
@@ -12877,7 +12928,8 @@
     "The Muppet Christmas Carol"
   ],
   "Movies featuring Michael Fassbender": [
-    "12 Years a Slave"
+    "12 Years a Slave",
+    "X-Men: First Class"
   ],
   "Movies featuring Michael J. Fox": [
     "Back to the Future",
@@ -14233,6 +14285,7 @@
     "Inside Out",
     "Luca",
     "Monsters Inc",
+    "Monsters University",
     "Ratatouille",
     "Soul",
     "The Incredibles",
@@ -14811,6 +14864,19 @@
     "Tiger",
     "Wolf",
     "Wolverine"
+  ],
+  "Prequels": [
+    "Attack of the Clones",
+    "Monsters University",
+    "Red Dragon",
+    "Revenge of the Sith",
+    "Rogue One",
+    "The Chronicles of Narnia: The Magician's Nephew",
+    "The Godfather Part II",
+    "The Good, the Bad and the Ugly",
+    "The Phantom Menace",
+    "The Silmarillion",
+    "X-Men: First Class"
   ],
   "Prison Stories": [
     "The Shawshank Redemption"
@@ -15542,7 +15608,8 @@
     "Time Bandits",
     "To Say Nothing of the Dog",
     "WALL-E",
-    "X-Men: Days of Future Past"
+    "X-Men: Days of Future Past",
+    "X-Men: First Class"
   ],
   "Scientific Research": [
     "Challenger"
@@ -15609,7 +15676,6 @@
     "Alien 3",
     "Alien: Resurrection",
     "Aliens",
-    "Attack of the Clones",
     "Avatar: The Way of Water",
     "Avengers: Endgame",
     "Back to the Future Part II",
@@ -15637,7 +15703,6 @@
     "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Red 2",
     "Return of the Jedi",
-    "Revenge of the Sith",
     "Sin City: A Dame to Kill For",
     "Terminator 2: Judgment Day",
     "The Empire Strikes Back",
@@ -15648,7 +15713,6 @@
     "The Lord of the Rings",
     "The Lord of the Rings: The Return of the King",
     "The Lord of the Rings: The Two Towers",
-    "The Phantom Menace",
     "The Rescuers Down Under",
     "The Rise of Skywalker",
     "The Santa Clause 2",
@@ -18680,6 +18744,7 @@
     "Monkey",
     "Monopoly",
     "Monsters Inc",
+    "Monsters University",
     "Mont Blanc",
     "Mont Saint-Michel",
     "Montenegro",
@@ -19347,6 +19412,7 @@
     "Red 2",
     "Red Beard",
     "Red Curry",
+    "Red Dragon",
     "Red Hood",
     "Red Riding Hood",
     "Red Velvet",
@@ -20009,6 +20075,7 @@
     "The Cat Returns",
     "The Catcher in the Rye",
     "The Chronicles of Narnia",
+    "The Chronicles of Narnia: The Magician's Nephew",
     "The Color Purple",
     "The Count of Monte Cristo",
     "The Crying Game",
@@ -20035,6 +20102,7 @@
     "The Godfather",
     "The Godfather Part II",
     "The Godfather Part III",
+    "The Good, the Bad and the Ugly",
     "The Graduate",
     "The Grand Budapest Hotel",
     "The Grandmaster",
@@ -20500,7 +20568,8 @@
     "Wuthering Heights"
   ],
   "Starts with X-M": [
-    "X-Men: Days of Future Past"
+    "X-Men: Days of Future Past",
+    "X-Men: First Class"
   ],
   "Starts with X-R": [
     "X-ray"
@@ -20997,6 +21066,7 @@
     "Milk",
     "Milkshake",
     "Moby Dick",
+    "Monsters University",
     "Montgomery",
     "Montpelier",
     "Motocross",
@@ -21021,6 +21091,7 @@
     "Raleigh",
     "Ranch",
     "Reagan",
+    "Red Dragon",
     "Richmond",
     "Rock Climbing",
     "Rocky",
@@ -21261,6 +21332,7 @@
     "Thames",
     "The Bridge on the River Kwai",
     "The Chronicles of Narnia",
+    "The Chronicles of Narnia: The Magician's Nephew",
     "The Crying Game",
     "The English Patient",
     "The Full Monty",
@@ -21813,6 +21885,7 @@
     "Spaghetti",
     "St. Peter's Basilica",
     "The Divine Comedy",
+    "The Good, the Bad and the Ugly",
     "Tiramisu",
     "Tomato",
     "Tortellini",
@@ -22517,6 +22590,7 @@
     "Predestination",
     "Primer",
     "Pulp Fiction",
+    "Red Dragon",
     "Reservoir Dogs",
     "Scarface",
     "Sin City",
@@ -23077,6 +23151,7 @@
     "Dances with Wolves",
     "Django Unchained",
     "No Country for Old Men",
+    "The Good, the Bad and the Ugly",
     "The Hateful Eight",
     "Unforgiven"
   ],

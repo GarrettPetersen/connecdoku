@@ -168,10 +168,10 @@ let removedCategoriesCount = 0;
 // Get all current categories
 const currentCategories = Object.keys(finalCategories);
 
-// Update emojis
+// Update emojis - keep existing emojis as they are, no trimming
 currentCategories.forEach(category => {
     if (existingEmojis[category]) {
-        // Keep existing emoji
+        // Keep existing emoji exactly as it is
         updatedEmojis[category] = existingEmojis[category];
     } else {
         // Add new category with default emoji

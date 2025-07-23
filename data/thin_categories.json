@@ -1247,9 +1247,6 @@
   "Movies featuring Hugh Laurie": [
     "Arthur Christmas"
   ],
-  "Movies featuring James McAvoy": [
-    "Arthur Christmas"
-  ],
   "Movies directed by Peter Ramsey": [
     "Rise of the Guardians"
   ],
@@ -1530,9 +1527,6 @@
     "Escape from New York"
   ],
   "Movies featuring Ernest Borgnine": [
-    "Escape from New York"
-  ],
-  "Movies featuring Lee Van Cleef": [
     "Escape from New York"
   ],
   "Movies directed by Roland Emmerich": [
@@ -1828,12 +1822,6 @@
   ],
   "Movies featuring Lupita Nyong'o": [
     "12 Years a Slave"
-  ],
-  "Movies featuring Michael Fassbender": [
-    "12 Years a Slave"
-  ],
-  "Movies featuring Edward Norton": [
-    "Birdman"
   ],
   "Movies directed by Tom McCarthy": [
     "Spotlight"
@@ -2147,6 +2135,27 @@
   "Babylonian Architecture": [
     "Hanging Gardens"
   ],
+  "Movies directed by Dan Scanlon": [
+    "Monsters University"
+  ],
+  "Movies featuring Billy Crystal": [
+    "Monsters University"
+  ],
+  "Movies directed by Matthew Vaughn": [
+    "X-Men: First Class"
+  ],
+  "Movies directed by Sergio Leone": [
+    "The Good, the Bad and the Ugly"
+  ],
+  "Movies featuring Eli Wallach": [
+    "The Good, the Bad and the Ugly"
+  ],
+  "Movies directed by Brett Ratner": [
+    "Red Dragon"
+  ],
+  "Movies featuring Anthony Hopkins": [
+    "Red Dragon"
+  ],
   "Maritime Stories": [
     "Titanic",
     "Moby Dick"
@@ -2459,10 +2468,6 @@
     "The Hunchback of Notre Dame",
     "Amadeus"
   ],
-  "Movies featuring John Goodman": [
-    "The Emperor's New Groove",
-    "The Artist"
-  ],
   "Movies featuring Keith David": [
     "The Princess and the Frog",
     "The Thing"
@@ -2647,6 +2652,10 @@
     "The Santa Clause 2",
     "The Santa Clause 3: The Escape Clause"
   ],
+  "Movies featuring James McAvoy": [
+    "Arthur Christmas",
+    "X-Men: First Class"
+  ],
   "Movies featuring Julie Andrews": [
     "Mary Poppins",
     "The Sound of Music"
@@ -2675,6 +2684,10 @@
     "The Thing",
     "Escape from New York"
   ],
+  "Movies featuring Lee Van Cleef": [
+    "Escape from New York",
+    "The Good, the Bad and the Ugly"
+  ],
   "Movies featuring Javier Bardem": [
     "Pirates of the Caribbean: Dead Men Tell No Tales",
     "No Country for Old Men"
@@ -2691,10 +2704,6 @@
     "Unforgiven",
     "Million Dollar Baby"
   ],
-  "Movies featuring Clint Eastwood": [
-    "Unforgiven",
-    "Million Dollar Baby"
-  ],
   "Movies featuring Joaquin Phoenix": [
     "Gladiator",
     "Her"
@@ -2703,9 +2712,17 @@
     "Slumdog Millionaire",
     "Trainspotting"
   ],
+  "Movies featuring Michael Fassbender": [
+    "12 Years a Slave",
+    "X-Men: First Class"
+  ],
   "Movies directed by Alejandro G. Iñárritu": [
     "Birdman",
     "The Revenant"
+  ],
+  "Movies featuring Edward Norton": [
+    "Birdman",
+    "Red Dragon"
   ],
   "Movies featuring Michael Keaton": [
     "Birdman",
@@ -3002,6 +3019,11 @@
     "Frozen",
     "Wish"
   ],
+  "Movies featuring John Goodman": [
+    "The Emperor's New Groove",
+    "The Artist",
+    "Monsters University"
+  ],
   "J.R.R. Tolkien": [
     "The Lord of the Rings",
     "The Hobbit",
@@ -3081,6 +3103,11 @@
     "Rocky",
     "Chariots of Fire",
     "Million Dollar Baby"
+  ],
+  "Movies featuring Clint Eastwood": [
+    "Unforgiven",
+    "Million Dollar Baby",
+    "The Good, the Bad and the Ugly"
   ],
   "Movies directed by Peter Jackson": [
     "The Lord of the Rings: The Fellowship of the Ring",
