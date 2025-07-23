@@ -209,9 +209,12 @@ function updateStats(date, strikes, won) {
   if (won) {
     stats.totalWins++;
     stats.currentStreak++;
-    stats.currentAttemptStreak = 0;
+    stats.currentAttemptStreak++;
     if (stats.currentStreak > stats.longestStreak) {
       stats.longestStreak = stats.currentStreak;
+    }
+    if (stats.currentAttemptStreak > stats.longestAttemptStreak) {
+      stats.longestAttemptStreak = stats.currentAttemptStreak;
     }
   } else {
     stats.currentStreak = 0;
