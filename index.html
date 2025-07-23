@@ -664,32 +664,14 @@ function init(puz){
     const r=[0,1,2,3].find(i=>!solvedRows.has(i));
     const c=[0,1,2,3].find(i=>!solvedCols.has(i));
     
-    // Force rearrange to canonical order
-    const canonicalGrid = puz.words;
-    
-    // Rearrange the entire grid to canonical order
-    for(let row=0;row<4;row++){
-      for(let col=0;col<4;col++){
-        if(G[row][col]!==canonicalGrid[row][col]){
-          // Find where the correct word is
-          for(let r2=0;r2<4;r2++){
-            for(let c2=0;c2<4;c2++){
-              if(G[r2][c2]===canonicalGrid[row][col]){
-                swapCells(row,col,r2,c2,true);
-                break;
-              }
-            }
-          }
-        }
-      }
-    }
-    
+    // With 6 solved lines, the last row and column must already be correct
+    // No need to rearrange - just auto-solve the remaining headers
     setTimeout(()=>{
       const rh=$(`.hdr[data-row="${r}"]`);
       const ch=$(`.hdr[data-col="${c}"]`);
       if(rh) checkLine('row',r,rh,true);
       if(ch) checkLine('col',c,ch,true);
-    },500);
+    },100);
   }
 
   /* ───────────────── strikes / misc ───────────────── */
