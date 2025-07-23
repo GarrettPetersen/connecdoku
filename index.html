@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1401790448375434"
+     crossorigin="anonymous"></script>
 <style>
 /* --- styles unchanged from earlier versions --- */
 :root{--tile:#f6f7f8;--tile-b:#d4d5d6;--s0:#b6e7b2;--s1:#ffe680;--s2:#ffb06a;
@@ -71,6 +73,20 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
   </div>
 </div>
 
+<!-- GDPR popup -->
+<div id="gdprPop" class="modalBg">
+  <div class="modalCard">
+    <h3>Cookie Consent</h3>
+    <p>This website uses cookies to save your game progress and statistics. 
+       This helps you continue where you left off and track your performance over time.</p>
+    <p>We only use essential cookies for game functionality. No tracking or advertising cookies are used.</p>
+    <div style="display:flex;gap:10px;margin-top:20px;">
+      <button class="action" id="acceptCookies">Accept</button>
+      <button class="action" style="background:#666" id="declineCookies">Decline</button>
+    </div>
+  </div>
+</div>
+
 <!-- help popup -->
 <div id="helpPop" class="modalBg">
   <div class="modalCard">
@@ -96,12 +112,137 @@ const start=new Date('2025-07-21');
 const todayIdx=()=>Math.floor((Date.now()-start)/864e5);
 const clr=['lock0','lock1','lock2'], emj=['🟩','🟨','🟧'];
 
+/* ---------- cookie management ---------- */
+let cookiesAccepted = false;
+
+function setCookie(name, value, days = 365) {
+  if (!cookiesAccepted) return;
+  const expires = new Date();
+  expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+  document.cookie = `${name}=${JSON.stringify(value)};expires=${expires.toUTCString()};path=/`;
+}
+
+function getCookie(name) {
+  if (!cookiesAccepted) return null;
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) {
+      try {
+        return JSON.parse(c.substring(nameEQ.length, c.length));
+      } catch (e) {
+        return null;
+      }
+    }
+  }
+  return null;
+}
+
+function checkGDPR() {
+  // Check for consent cookie directly without using getCookie (which requires cookiesAccepted)
+  const nameEQ = 'connecdoku_consent=';
+  const ca = document.cookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) {
+      try {
+        const consent = JSON.parse(c.substring(nameEQ.length, c.length));
+        cookiesAccepted = consent;
+        return;
+      } catch (e) {
+        // Invalid cookie, continue
+      }
+    }
+  }
+  // No consent cookie found, show popup
+  $('#gdprPop').classList.add('show');
+}
+
+/* ---------- statistics tracking ---------- */
+let stats = {
+  games: {}, // date -> strikes
+  currentStreak: 0,
+  longestStreak: 0,
+  currentAttemptStreak: 0,
+  longestAttemptStreak: 0,
+  totalGames: 0,
+  totalWins: 0
+};
+
+function loadStats() {
+  const savedStats = getCookie('connecdoku_stats');
+  if (savedStats) {
+    stats = { ...stats, ...savedStats };
+  }
+}
+
+function saveStats() {
+  setCookie('connecdoku_stats', stats);
+}
+
+function updateStats(date, strikes, won) {
+  stats.games[date] = strikes;
+  stats.totalGames++;
+  
+  if (won) {
+    stats.totalWins++;
+    stats.currentStreak++;
+    stats.currentAttemptStreak = 0;
+    if (stats.currentStreak > stats.longestStreak) {
+      stats.longestStreak = stats.currentStreak;
+    }
+  } else {
+    stats.currentStreak = 0;
+    stats.currentAttemptStreak++;
+    if (stats.currentAttemptStreak > stats.longestAttemptStreak) {
+      stats.longestAttemptStreak = stats.currentAttemptStreak;
+    }
+  }
+  
+  saveStats();
+}
+
+function getStrikeDistribution() {
+  const distribution = [0, 0, 0, 0]; // 0, 1, 2, 3 strikes
+  Object.values(stats.games).forEach(strikes => {
+    if (strikes >= 0 && strikes <= 3) {
+      distribution[strikes]++;
+    }
+  });
+  return distribution;
+}
+
 /* ---------- load puzzle ---------- */
+function loadGameState() {
+  const savedState = getCookie('connecdoku_state');
+  if (savedState && savedState.date === todayIdx()) {
+    return savedState;
+  }
+  return null;
+}
+
+function saveGameStateTemplate() {
+  // This is a template - the actual function will be defined inside init()
+  console.warn('saveGameState called before init');
+}
+
+// Initialize GDPR and stats
+checkGDPR();
+loadStats();
+
 fetch('daily_puzzles/puzzles.json')
   .then(r=>r.json())
   .then(all=>init(all[todayIdx()%all.length]));
 
 function init(puz){
+
+  /* game vars - declare first so they can be accessed by loadGameState */
+  let strikes=0, finished=false, sel=null;
+  let solvedRows=new Map(), solvedCols=new Map(); // idx → strike tier
+  let G=[[],[],[],[]]; // board state
 
   const wordToColCat = {};          // use column labels
   const wordToRowCat = {};          // use row labels
@@ -114,6 +255,38 @@ function init(puz){
     }
   }
 
+  // Try to load saved game state
+  const savedState = loadGameState();
+  console.log('Loaded saved state:', savedState);
+  if (savedState) {
+    strikes = savedState.strikes;
+    finished = savedState.finished;
+    // Reconstruct Maps with proper values (strike levels)
+    solvedRows = new Map();
+    solvedCols = new Map();
+    if (savedState.solvedRows && savedState.solvedRows.length > 0) {
+      // New format: array of [key, value] pairs
+      if (Array.isArray(savedState.solvedRows[0])) {
+        savedState.solvedRows.forEach(([r, level]) => solvedRows.set(r, level));
+        savedState.solvedCols.forEach(([c, level]) => solvedCols.set(c, level));
+      } else {
+        // Old format: just keys, use current strikes as level
+        savedState.solvedRows.forEach(r => solvedRows.set(r, strikes));
+        savedState.solvedCols.forEach(c => solvedCols.set(c, strikes));
+      }
+    } else if (savedState.solvedCols && savedState.solvedCols.length > 0) {
+      // Handle case where only solvedCols has data
+      if (Array.isArray(savedState.solvedCols[0])) {
+        savedState.solvedCols.forEach(([c, level]) => solvedCols.set(c, level));
+      } else {
+        savedState.solvedCols.forEach(c => solvedCols.set(c, strikes));
+      }
+    }
+    console.log('After loading - solvedRows:', solvedRows, 'solvedCols:', solvedCols);
+    G = savedState.grid;
+    sel = savedState.sel ? $(`.tile[data-rc="${savedState.sel}"]`) : null;
+  }
+
   /* answer lookup */
   const hash=a=>[...a].sort().join('|');
   const ans={};
@@ -124,20 +297,37 @@ function init(puz){
   const colIdx=Object.fromEntries(puz.cols.map((l,i)=>[l,i]));
 
   /* board state */
-  const flat=[...puz.words.flat()].map(v=>[Math.random(),v])
-               .sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
-  const G=[[],[],[],[]]; let k=0;
-  for(let r=0;r<4;r++)for(let c=0;c<4;c++)G[r][c]=flat[k++];
+  if (!savedState) {
+    // Only shuffle and initialize if we don't have saved state
+    const flat=[...puz.words.flat()].map(v=>[Math.random(),v])
+                 .sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
+    let k=0;
+    for(let r=0;r<4;r++)for(let c=0;c<4;c++)G[r][c]=flat[k++];
+  }
 
   /* dynamic canonical maps (created on first solve) */
   let colPos=null; // word → target column   (defined when first row category solved)
   let rowPos=null; // word → target row      (defined when first column category solved)
 
-  /* game vars */
-  let strikes=0, finished=false, sel=null;
-  const solvedRows=new Map(), solvedCols=new Map(); // idx → strike tier
+  // Define saveGameState function inside init scope
+  function saveGameState() {
+    const state = {
+      date: todayIdx(),
+      strikes: strikes,
+      finished: finished,
+      solvedRows: Array.from(solvedRows.entries()),
+      solvedCols: Array.from(solvedCols.entries()),
+      grid: G,
+      sel: sel ? sel.dataset.rc : null
+    };
+    console.log('Saving state:', state);
+    setCookie('connecdoku_state', state);
+  }
 
   renderBoard(); updateStrike();
+  
+  // Save state periodically and on key events
+  setInterval(saveGameState, 30000); // Save every 30 seconds
 
   /* ------------------------------------------------------------
     relabelAllHeaders()  –  hash-based, orientation-agnostic
@@ -264,8 +454,18 @@ function init(puz){
     const [r1,c1]=sel.dataset.rc.split(',').map(Number);
     const [r2,c2]=td.dataset.rc.split(',').map(Number);
     if(solvedRows.has(r1)||solvedRows.has(r2)||solvedCols.has(c1)||solvedCols.has(c2)) return;
+    
+    // Clear selection immediately
+    sel.classList.remove('selected'); 
+    const oldSel = sel;
+    sel = null;
+    
     swapCells(r1,c1,r2,c2,true);
-    sel.classList.remove('selected'); sel=null;
+    
+    // Ensure selection is cleared after animation
+    setTimeout(() => {
+      if (oldSel) oldSel.classList.remove('selected');
+    }, 500);
 
     integrityCheck();
   }
@@ -297,12 +497,21 @@ function init(puz){
     /* ---- update UI ---- */
     const lvl=strikes;
     const solved=kind==='row'?solvedRows:solvedCols;
+    
+    // Check if we should align before adding the current solve
+    const shouldAlign = (kind === 'row' && solvedRows.size >= 1) || (kind === 'col' && solvedCols.size >= 1);
+    
     hdr.replaceWith(makeSolvedLabel(label,lvl));
     solved.set(idx,lvl);
     colourAndFreeze(kind,idx,lvl);
 
-    if(kind==='row' && colPos) alignRow(idx);
-    if(kind==='col' && rowPos) alignCol(idx);
+    if(shouldAlign) {
+      console.log(`Aligning ${kind} ${idx}, solvedRows: ${solvedRows.size}, solvedCols: ${solvedCols.size}`);
+      if(kind==='row') alignRow(idx);
+      if(kind==='col') alignCol(idx);
+    } else {
+      console.log(`Not aligning ${kind} ${idx}, solvedRows: ${solvedRows.size}, solvedCols: ${solvedCols.size}`);
+    }
 
     freezeIntersections();
     if((kind==='row'&&solvedRows.size===3)||(kind==='col'&&solvedCols.size===3))
@@ -311,6 +520,7 @@ function init(puz){
     if(!finished) autoEndIfObvious();
     if(solvedRows.size===4&&solvedCols.size===4) finish(true);
 
+    saveGameState();
     integrityCheck();
   }
 
@@ -360,27 +570,35 @@ function init(puz){
     alignCol(c)                 –  same-orientation anchoring
     ------------------------------------------------------------- */
   function alignCol(c) {
+    console.log(`alignCol(${c}) called, solvedCols.size: ${solvedCols.size}`);
     /* nothing to align against if this is the very first solved col */
-    if (solvedCols.size === 0) return;
+    if (solvedCols.size === 0) {
+      console.log('alignCol: no solved columns to align against');
+      return;
+    }
 
     /* use the first frozen column as the template for row order */
     const refCol = [...solvedCols.keys()][0];
+    console.log(`alignCol: using refCol ${refCol} as template`);
 
-    /* category  →  row index, as dictated by that template column */
-    const catToRow = {};
+    /* word → row index, as dictated by that template column */
+    const wordToRow = {};
     for (let r = 0; r < 4; r++) {
-      const cat = wordToRowCat[G[r][refCol]];   // row-category of that word
-      catToRow[cat] = r;
+      const word = G[r][refCol];   // word in the reference column
+      wordToRow[word] = r;
     }
+    console.log('alignCol: wordToRow mapping:', wordToRow);
 
     /* walk top-to-bottom twice, swapping into the right slots
       (second pass mops up knock-on effects)                   */
     for (let pass = 0; pass < 2; pass++) {
       for (let r = 0; r < 4; r++) {
         if (solvedRows.has(r)) continue;                       // frozen row
-        const cat  = wordToRowCat[G[r][c]];
-        const want = catToRow[cat];
+        const word = G[r][c];
+        const want = wordToRow[word];
+        console.log(`alignCol: row ${r}, word: ${word}, want: ${want}`);
         if (want !== undefined && want !== r && !solvedRows.has(want)) {
+          console.log(`alignCol: swapping row ${r} to row ${want}`);
           swapCells(r, c, want, c, true);                      // visual swap
         }
       }
@@ -398,7 +616,17 @@ function init(puz){
     for(let i=0;i<4;i++){
       if(solvedMap.has(i)) continue;
       const hdr=$(`.hdr[data-${kind}="${i}"]`);
-      if(hdr){ hdr.classList.add('disabled'); hdr.innerHTML=''; }
+      if(hdr){ 
+        hdr.classList.add('disabled'); 
+        hdr.innerHTML=''; 
+        // Make the last unsolved header more visually obvious
+        if(solvedMap.size === 3) {
+          hdr.style.background = '#ffeb3b';
+          hdr.style.color = '#333';
+          hdr.style.fontWeight = 'bold';
+          hdr.style.border = '2px solid #ffc107';
+        }
+      }
     }
     checkAutoSolve();
   }
@@ -444,6 +672,7 @@ function init(puz){
     hdr.classList.add(strikes === 1 ? 'used1' : 'used2');
     shake();
     updateStrike();
+    saveGameState();
 
     /* third strike ⇒ auto-solve, reveal labels, end game */
     if (strikes >= 3) {
@@ -517,6 +746,10 @@ function init(puz){
     for (let r = 0; r < 4; r++)
       for (let c = 0; c < 4; c++)
         freezeTile(r, c);
+
+    // Update statistics
+    const today = new Date().toISOString().split('T')[0];
+    updateStats(today, strikes, won);
 
     setTimeout(() => {
       showShare(won);
@@ -732,8 +965,11 @@ function init(puz){
       }
     }
     
-    // Create the grid
-    let grid = cols.join('') + '\n';  // Column categories at top
+    // Create the grid with title
+    const today = new Date();
+    const dateStr = today.toISOString().split('T')[0].replace(/-/g, '-');
+    let grid = `Connecdoku ${dateStr}\n\n`;
+    grid += cols.join('') + '\n';  // Column categories at top
     for (let r = 0; r < 4; r++) {
       let row = '';
       for (let c = 0; c < 4; c++) {
@@ -752,7 +988,49 @@ function init(puz){
     
     $('#popTitle').textContent = `Connecdoku ${dateStr}`;
     $('#shareGrid').textContent = createEmojiGrid();
-    $('#unsolved').innerHTML = ''; // Remove unsolved rows/cols section
+    
+    // Add statistics
+    const winRate = stats.totalGames > 0 ? Math.round((stats.totalWins / stats.totalGames) * 100) : 0;
+    const distribution = getStrikeDistribution();
+    const maxStrikes = Math.max(...distribution);
+    
+    let statsHtml = `
+      <div style="margin-top:20px;padding-top:20px;border-top:1px solid #eee;">
+        <h4 style="margin:0 0 10px 0;">Statistics</h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;font-size:14px;">
+          <div>Current Win Streak: <strong>${stats.currentStreak}</strong></div>
+          <div>Current Attempt Streak: <strong>${stats.currentAttemptStreak}</strong></div>
+          <div>Longest Win Streak: <strong>${stats.longestStreak}</strong></div>
+          <div>Longest Attempt Streak: <strong>${stats.longestAttemptStreak}</strong></div>
+          <div>Win Rate: <strong>${winRate}%</strong></div>
+          <div>Total Games: <strong>${stats.totalGames}</strong></div>
+        </div>
+        <div style="margin-top:15px;">
+          <div style="font-size:12px;margin-bottom:5px;">Strikes Distribution:</div>
+          <div style="display:flex;gap:2px;height:20px;align-items:end;">
+    `;
+    
+    for (let i = 0; i < 4; i++) {
+      const height = maxStrikes > 0 ? (distribution[i] / maxStrikes) * 100 : 0;
+      const color = ['#4caf50', '#ffb300', '#ff9800', '#e53935'][i];
+      statsHtml += `
+        <div style="flex:1;background:${color};height:${height}%;min-height:2px;border-radius:1px;" title="${i} strikes: ${distribution[i]} games"></div>
+      `;
+    }
+    
+    statsHtml += `
+          </div>
+          <div style="display:flex;gap:2px;font-size:10px;margin-top:2px;">
+            <div style="flex:1;text-align:center;">0</div>
+            <div style="flex:1;text-align:center;">1</div>
+            <div style="flex:1;text-align:center;">2</div>
+            <div style="flex:1;text-align:center;">3</div>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    $('#unsolved').innerHTML = statsHtml;
     $('#sharePop').classList.add('show');
   }
   $('#copy').onclick=()=>{ navigator.clipboard.writeText($('#shareGrid').textContent);
@@ -763,6 +1041,67 @@ function init(puz){
 
   $('#helpIcon').onclick=()=>$('#helpPop').classList.add('show');
   $('#minHelp').onclick=$('#helpOK').onclick=()=>$('#helpPop').classList.remove('show');
+  
+  // GDPR popup handlers
+  $('#acceptCookies').onclick=()=>{
+    cookiesAccepted = true;
+    setCookie('connecdoku_consent', true);
+    $('#gdprPop').classList.remove('show');
+  };
+  $('#declineCookies').onclick=()=>{
+    cookiesAccepted = false;
+    setCookie('connecdoku_consent', false);
+    $('#gdprPop').classList.remove('show');
+  };
+  
+  // Restore visual state if we loaded saved state (after all functions are defined)
+  if (savedState) {
+    console.log('Restoring saved state:', savedState);
+    console.log('solvedRows:', solvedRows);
+    console.log('solvedCols:', solvedCols);
+    
+    // Restore solved headers
+    solvedRows.forEach((level, r) => {
+      console.log(`Restoring row ${r} with level ${level}`);
+      const hdr = $(`.hdr[data-row="${r}"]`);
+      if (hdr) {
+        const words = G[r];
+        const label = ans[hash(words)];
+        if (label) {
+          hdr.replaceWith(makeSolvedLabel(label, level));
+        }
+      }
+    });
+    
+    solvedCols.forEach((level, c) => {
+      console.log(`Restoring col ${c} with level ${level}`);
+      const hdr = $(`.hdr[data-col="${c}"]`);
+      if (hdr) {
+        const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
+        const label = ans[hash(colWords)];
+        if (label) {
+          hdr.replaceWith(makeSolvedLabel(label, level));
+        }
+      }
+    });
+    
+    // Freeze solved tiles
+    solvedRows.forEach((level, r) => {
+      for (let c = 0; c < 4; c++) {
+        lockColour(r, c, level);
+        freezeTile(r, c);
+      }
+    });
+    
+    solvedCols.forEach((level, c) => {
+      for (let r = 0; r < 4; r++) {
+        lockColour(r, c, level);
+        freezeTile(r, c);
+      }
+    });
+    
+    freezeIntersections();
+  }
 }
 </script>
 </body>
