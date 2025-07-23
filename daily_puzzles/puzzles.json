@@ -1158,5 +1158,85 @@
         "The Crying Game"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Action Stories",
+      "Place Names",
+      "Prequels",
+      "Starts with FOR"
+    ],
+    "cols": [
+      "Books",
+      "Ends with ITY",
+      "Ends with ONE",
+      "Oscar Winners"
+    ],
+    "words": [
+      [
+        "All You Need Is Kill",
+        "Sin City",
+        "Home Alone",
+        "Gladiator"
+      ],
+      [
+        "Salem",
+        "Vatican City",
+        "Sierra Leone",
+        "Chicago"
+      ],
+      [
+        "The Silmarillion",
+        "Monsters University",
+        "Rogue One",
+        "The Godfather Part II"
+      ],
+      [
+        "For Whom the Bell Tolls",
+        "Forbidden City",
+        "Formula One",
+        "Forrest Gump"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Books",
+      "Countries",
+      "National Capitals",
+      "People"
+    ],
+    "cols": [
+      "Starts with BRA",
+      "Things Chinese",
+      "Things Greek",
+      "Things Japanese"
+    ],
+    "words": [
+      [
+        "Brave New World",
+        "Journey to the West",
+        "The Iliad",
+        "The Tale of Genji"
+      ],
+      [
+        "Brazil",
+        "China",
+        "Greece",
+        "Japan"
+      ],
+      [
+        "Brasilia",
+        "Beijing",
+        "Athens",
+        "Tokyo"
+      ],
+      [
+        "Bravo",
+        "Zheng He",
+        "Socrates",
+        "Kurosawa"
+      ]
+    ]
   }
 ]
