@@ -444,7 +444,7 @@ function init(puz){
     updateStrike();
 
     /* third strike ⇒ auto-solve, reveal labels, end game */
-    if (strikes === 3) {
+    if (strikes >= 3) {
 
       // put every word in its true final position
       const animTime = solveCompletely();   // may be 0 ms if nothing moved
@@ -516,7 +516,10 @@ function init(puz){
       for (let c = 0; c < 4; c++)
         freezeTile(r, c);
 
-    setTimeout(() => showShare(won), 600);
+    setTimeout(() => {
+      showShare(won);
+      $('#shareBtn').style.display = 'block';
+    }, 600);
 
     integrityCheck();
   }
@@ -678,42 +681,83 @@ function init(puz){
   }
 
   /* ---------- share popup ---------- */
+  let categoryEmojis = {};
+  
+  // Load category emojis
+  fetch('data/category_emojis.json')
+    .then(r => r.json())
+    .then(data => { categoryEmojis = data; })
+    .catch(err => console.warn('Could not load category emojis:', err));
+
   function emojiFor(td){ return td.classList.contains('lock0')?emj[0]:
                                td.classList.contains('lock1')?emj[1]:
                                td.classList.contains('lock2')?emj[2]:'⬛'; }
-  function gridEmoji(){
-    const rows=[[],[],[],[]];
-    $$('.tile').forEach(t=>{
-      const [r,c]=t.dataset.rc.split(',').map(Number);
-      rows[r][c]=emojiFor(t);
-    });
-    return rows.map(r=>r.join('')).join('\n');
+  
+  function getCategoryEmoji(category) {
+    return categoryEmojis[category] || '❓';
   }
-  function showShare(won){
-    $('#popTitle').textContent=won?'Puzzle solved!':'Out of guesses';
-    $('#shareGrid').textContent=gridEmoji();
-    if(won) $('#unsolved').innerHTML='';
-    else{
-      // Get current grid state and find what categories each line represents
-      const currentRows = G.map(row => hash(row));
-      const currentCols = Array(4).fill().map((_,i) => hash(G.map(r => r[i])));
-      
-      // Find which categories are actually unsolved
-      const unsR = puz.rows.filter((label, i) => !solvedRows.has(i) && ans[currentRows[i]] !== label);
-      const unsC = puz.cols.filter((label, i) => !solvedCols.has(i) && ans[currentCols[i]] !== label);
-      
-      $('#unsolved').innerHTML=
-        `<p><strong>Unsolved rows:</strong><br>${unsR.join('<br>')}</p>
-         <p><strong>Unsolved cols:</strong><br>${unsC.join('<br>')}</p>`;
+  
+  function createEmojiGrid() {
+    const hash = a => [...a].sort().join('|');
+    const rows = [];
+    const cols = [];
+    
+    // Get row categories (either solved or current state)
+    for (let r = 0; r < 4; r++) {
+      if (solvedRows.has(r)) {
+        // Use the solved category
+        const cat = ans[hash(G[r])];
+        rows.push(getCategoryEmoji(cat));
+      } else {
+        // Use current state to determine category
+        const cat = ans[hash(G[r])];
+        rows.push(getCategoryEmoji(cat));
+      }
     }
+    
+    // Get column categories (either solved or current state)
+    for (let c = 0; c < 4; c++) {
+      if (solvedCols.has(c)) {
+        // Use the solved category
+        const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
+        const cat = ans[hash(colWords)];
+        cols.push(getCategoryEmoji(cat));
+      } else {
+        // Use current state to determine category
+        const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
+        const cat = ans[hash(colWords)];
+        cols.push(getCategoryEmoji(cat));
+      }
+    }
+    
+    // Create the grid
+    let grid = rows.join('') + '\n';
+    for (let r = 0; r < 4; r++) {
+      let row = '';
+      for (let c = 0; c < 4; c++) {
+        row += emojiFor(tile(r, c));
+      }
+      row += cols[r];
+      grid += row + '\n';
+    }
+    
+    return grid;
+  }
+  
+  function showShare(won){
+    const today = new Date();
+    const dateStr = today.toISOString().split('T')[0].replace(/-/g, '-');
+    
+    $('#popTitle').textContent = `Connecdoku ${dateStr}`;
+    $('#shareGrid').textContent = createEmojiGrid();
+    $('#unsolved').innerHTML = ''; // Remove unsolved rows/cols section
     $('#sharePop').classList.add('show');
   }
   $('#copy').onclick=()=>{ navigator.clipboard.writeText($('#shareGrid').textContent);
                            $('#copy').textContent='Copied!'; };
   $('#minShare').onclick=()=>{ $('#sharePop').classList.remove('show');
                                $('#shareBtn').style.display='block'; };
-  $('#shareBtn').onclick=()=>{ $('#shareBtn').style.display='none';
-                               $('#sharePop').classList.add('show'); };
+  $('#shareBtn').onclick=()=>{ $('#sharePop').classList.add('show'); };
 
   $('#helpIcon').onclick=()=>$('#helpPop').classList.add('show');
   $('#minHelp').onclick=$('#helpOK').onclick=()=>$('#helpPop').classList.remove('show');
