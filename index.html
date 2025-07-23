@@ -636,8 +636,13 @@ function init(puz){
     const tgtWord = newCol[r];
     if (curWord !== tgtWord) {
       const src = G.findIndex(row => row[c] === tgtWord);
-      console.log(`swapping ${curWord} at row ${r} with ${tgtWord} at row ${src}`);
-      swapCells(r, c, src, c, true);
+      // Don't swap if either row is already solved
+      if (!solvedRows.has(r) && !solvedRows.has(src)) {
+        console.log(`swapping ${curWord} at row ${r} with ${tgtWord} at row ${src}`);
+        swapCells(r, c, src, c, true);
+      } else {
+        console.log(`skipping swap - row ${r} or ${src} is solved`);
+      }
     }
   }
 }
