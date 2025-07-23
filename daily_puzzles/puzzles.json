@@ -638,5 +638,125 @@
         "Pulp Fiction"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Countries",
+      "Locations in North America",
+      "Shipwrecks",
+      "Things Italian"
+    ],
+    "cols": [
+      "Movies",
+      "Starts with CON",
+      "Starts with MAR",
+      "Things Spanish"
+    ],
+    "words": [
+      [
+        "Madagascar",
+        "Congo",
+        "Marshall Islands",
+        "Spain"
+      ],
+      [
+        "Chicago",
+        "Concord",
+        "Martha's Vineyard",
+        "Victoria"
+      ],
+      [
+        "Titanic",
+        "Concordia",
+        "Mary Rose",
+        "Santissima Trinidad"
+      ],
+      [
+        "Pompeii",
+        "Conte di Savoia",
+        "Marco Polo",
+        "Christopher Columbus"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Countries in Asia",
+      "Countries in Europe",
+      "Former Spanish Colonies",
+      "Locations in North America"
+    ],
+    "cols": [
+      "Countries that No Longer Exist",
+      "Ends with BIA",
+      "Federal Republics",
+      "Island Nations"
+    ],
+    "words": [
+      [
+        "South Vietnam",
+        "Saudi Arabia",
+        "Pakistan",
+        "Taiwan"
+      ],
+      [
+        "East Germany",
+        "Serbia",
+        "Switzerland",
+        "Ireland"
+      ],
+      [
+        "Spanish Guinea",
+        "Colombia",
+        "Venezuela",
+        "Mauritius"
+      ],
+      [
+        "British Honduras",
+        "Columbia",
+        "Canada",
+        "Barbados"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Crime Stories",
+      "Horror Stories",
+      "Romance Stories",
+      "Sequels"
+    ],
+    "cols": [
+      "Movies featuring Bruce Willis",
+      "Movies featuring Sigourney Weaver",
+      "Starts with THE",
+      "Time Travel Stories"
+    ],
+    "words": [
+      [
+        "Sin City",
+        "Vantage Point",
+        "The Godfather",
+        "Deja Vu"
+      ],
+      [
+        "Glass",
+        "Alien",
+        "The Shining",
+        "Donnie Darko"
+      ],
+      [
+        "Moonrise Kingdom",
+        "Working Girl",
+        "The Tale of Genji",
+        "About Time"
+      ],
+      [
+        "Die Hard 2",
+        "Avatar: The Way of Water",
+        "The Empire Strikes Back",
+        "Back to the Future Part II"
+      ]
+    ]
   }
 ]
