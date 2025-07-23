@@ -215,7 +215,24 @@ function init(puz){
     const hasBetter=t.classList.contains('lock0')||(lvl>0&&t.classList.contains('lock1'))||(lvl>1&&t.classList.contains('lock2'));
     if(!hasBetter) t.classList.add(clr[lvl]);
   };
-  const freezeTile=(r,c)=>tile(r,c).classList.add('frozen');
+  
+  /* ────────────────────────────────────────────────────────────────
+    freezeTile(r,c)  – v2
+    • Marks the tile as frozen
+    • Guarantees a frozen tile can never remain selected
+    • Clears the global `sel` pointer when necessary
+  ───────────────────────────────────────────────────────────────── */
+  const freezeTile = (r, c) => {
+    const t = tile(r, c);
+    if (!t) return;
+
+    t.classList.add('frozen');
+
+    if (t.classList.contains('selected')) {
+      t.classList.remove('selected');
+      if (sel === t) sel = null;
+    }
+  };
 
   // return a string like "StarWars|Pokemon|Fruits|Cities"
   function categorySignature(words) {
@@ -305,62 +322,64 @@ function init(puz){
   };
 
   /* ---------------------------------------------------------------
-    alignRow(r)
-    ───────────
-    Rotate the newly-solved row `r` so that its four *categories*
-    appear in the same left-to-right order as the very first row
-    that was locked.
-  ---------------------------------------------------------------- */
+    alignRow(r)                 –  same-orientation anchoring
+    ------------------------------------------------------------- */
   function alignRow(r) {
-    if (solvedRows.size === 0) return;            // no reference row yet
-    const refRow = [...solvedRows.keys()][0];     // first frozen row
+    /* nothing to align against if this is the very first solved row */
+    if (solvedRows.size === 0) return;
 
-    // category → column position in the reference row
+    /* use the first frozen row as the template for column order */
+    const refRow = [...solvedRows.keys()][0];
+
+    /* category  →  column index, as dictated by that template row */
     const catToCol = {};
     for (let c = 0; c < 4; c++) {
-      const cat = wordToColCat[G[refRow][c]];
+      const cat = wordToColCat[G[refRow][c]];   // column-category of that word
       catToCol[cat] = c;
     }
 
-    // move words until each category sits under its target column
+    /* walk left-to-right twice, swapping into the right slots
+      (second pass mops up knock-on effects)                    */
     for (let pass = 0; pass < 2; pass++) {
       for (let c = 0; c < 4; c++) {
-        if (solvedCols.has(c)) continue;
+        if (solvedCols.has(c)) continue;                       // frozen column
         const cat  = wordToColCat[G[r][c]];
         const want = catToCol[cat];
         if (want !== undefined && want !== c && !solvedCols.has(want)) {
-          swapCells(r, c, r, want, true);
+          swapCells(r, c, r, want, true);                      // visual swap
         }
       }
     }
   }
 
-  /* ---------------------------------------------------------------
-    alignCol(c)
-    ───────────
-    Rotate the newly-solved column `c` so that its four *categories*
-    appear in the same top-to-bottom order as the very first column
-    that was locked.
-  ---------------------------------------------------------------- */
-  function alignCol(c) {
-    if (solvedCols.size === 0) return;            // no reference column yet
-    const refCol = [...solvedCols.keys()][0];     // first frozen column
 
-    // category → row position in the reference column
+
+  /* ---------------------------------------------------------------
+    alignCol(c)                 –  same-orientation anchoring
+    ------------------------------------------------------------- */
+  function alignCol(c) {
+    /* nothing to align against if this is the very first solved col */
+    if (solvedCols.size === 0) return;
+
+    /* use the first frozen column as the template for row order */
+    const refCol = [...solvedCols.keys()][0];
+
+    /* category  →  row index, as dictated by that template column */
     const catToRow = {};
     for (let r = 0; r < 4; r++) {
-      const cat = wordToRowCat[G[r][refCol]];
+      const cat = wordToRowCat[G[r][refCol]];   // row-category of that word
       catToRow[cat] = r;
     }
 
-    // move words until each category sits in its target row
+    /* walk top-to-bottom twice, swapping into the right slots
+      (second pass mops up knock-on effects)                   */
     for (let pass = 0; pass < 2; pass++) {
       for (let r = 0; r < 4; r++) {
-        if (solvedRows.has(r)) continue;
+        if (solvedRows.has(r)) continue;                       // frozen row
         const cat  = wordToRowCat[G[r][c]];
         const want = catToRow[cat];
         if (want !== undefined && want !== r && !solvedRows.has(want)) {
-          swapCells(r, c, want, c, true);
+          swapCells(r, c, want, c, true);                      // visual swap
         }
       }
     }
