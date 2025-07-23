@@ -267,6 +267,9 @@
     "X-Men: Days of Future Past",
     "X-Men: First Class"
   ],
+  "African Countries": [
+    "Carthage"
+  ],
   "Age of Sail": [
     "Beagle",
     "Bellerophon",
@@ -369,6 +372,9 @@
     "Samarkand",
     "Troy"
   ],
+  "Ancient Empires": [
+    "Carthage"
+  ],
   "Ancient Figures": [
     "Aristotle",
     "Plato",
@@ -431,6 +437,9 @@
     "Lamp",
     "Toaster"
   ],
+  "Arab Countries": [
+    "United Arab Republic"
+  ],
   "Archipelagos": [
     "Aland",
     "Andaman",
@@ -490,6 +499,11 @@
   "Artists": [
     "Da Vinci",
     "Michelangelo"
+  ],
+  "Asian Countries": [
+    "Korea",
+    "Manchukuo",
+    "Tibet"
   ],
   "Associated with Edgar Allan Poe": [
     "Amontillado",
@@ -569,6 +583,9 @@
     "Cookie",
     "Pie",
     "Tart"
+  ],
+  "Balkan Countries": [
+    "Yugoslavia"
   ],
   "Ball Sports": [
     "Badminton",
@@ -1114,6 +1131,9 @@
     "Pumpernickel",
     "Rye"
   ],
+  "Buddhist Countries": [
+    "Tibet"
+  ],
   "Burger Toppings": [
     "Avocado",
     "Bacon",
@@ -1215,6 +1235,10 @@
     "Subaru",
     "Tesla",
     "Toyota"
+  ],
+  "Central European Countries": [
+    "Austria-Hungary",
+    "Czechoslovakia"
   ],
   "Charles Darwin": [
     "Beagle"
@@ -1706,6 +1730,11 @@
     "United States",
     "Washington"
   ],
+  "Cold War Powers": [
+    "East Germany",
+    "Soviet Union",
+    "West Germany"
+  ],
   "Colors": [
     "Aurora",
     "Blue",
@@ -1964,6 +1993,7 @@
     "Artsakh",
     "Australia",
     "Austria",
+    "Austria-Hungary",
     "Azerbaijan",
     "Bahamas",
     "Bahrain",
@@ -1998,6 +2028,7 @@
     "Cambodia",
     "Cameroon",
     "Canada",
+    "Carthage",
     "Central African Republic",
     "Ceylon",
     "Chad",
@@ -2011,6 +2042,7 @@
     "Cuba",
     "Cyprus",
     "Czech Republic",
+    "Czechoslovakia",
     "Dahomey",
     "Democratic Republic of the Congo",
     "Denmark",
@@ -2042,6 +2074,7 @@
     "German West Africa",
     "Germany",
     "Ghana",
+    "Gran Colombia",
     "Greece",
     "Greek",
     "Grenada",
@@ -2071,6 +2104,7 @@
     "Kazakhstan",
     "Kenya",
     "Kiribati",
+    "Korea",
     "Kuwait",
     "Kyrgyzstan",
     "Laos",
@@ -2089,6 +2123,7 @@
     "Maldives",
     "Mali",
     "Malta",
+    "Manchukuo",
     "Marshall Islands",
     "Mauritania",
     "Mauritius",
@@ -2119,6 +2154,7 @@
     "Norway",
     "Nyasaland",
     "Oman",
+    "Ottoman Empire",
     "Pakistan",
     "Palau",
     "Panama",
@@ -2133,6 +2169,7 @@
     "Portuguese Guinea",
     "Portuguese Timor",
     "Portuguese West Africa",
+    "Prussia",
     "Qatar",
     "Rhodesia",
     "Romania",
@@ -2162,6 +2199,7 @@
     "South Vietnam",
     "South Yemen",
     "Southern Rhodesia",
+    "Soviet Union",
     "Spain",
     "Spanish East Africa",
     "Spanish Guinea",
@@ -2177,6 +2215,7 @@
     "Tanganyika",
     "Tanzania",
     "Thailand",
+    "Tibet",
     "Togo",
     "Tonga",
     "Transnistria",
@@ -2188,6 +2227,7 @@
     "Uganda",
     "Ukraine",
     "United Arab Emirates",
+    "United Arab Republic",
     "United Kingdom",
     "United States",
     "Upper Volta",
@@ -2197,8 +2237,10 @@
     "Vatican City",
     "Venezuela",
     "Vietnam",
+    "West Germany",
     "Western Samoa",
     "Yemen",
+    "Yugoslavia",
     "Zambia",
     "Zanzibar",
     "Zimbabwe"
@@ -2488,6 +2530,7 @@
   "Countries that No Longer Exist": [
     "Abyssinia",
     "Anglo-Egyptian Sudan",
+    "Austria-Hungary",
     "Basutoland",
     "Bechuanaland",
     "Belgian Congo",
@@ -2500,7 +2543,9 @@
     "British Somaliland",
     "British West Africa",
     "Burma",
+    "Carthage",
     "Ceylon",
+    "Czechoslovakia",
     "Dahomey",
     "Dutch Guiana",
     "East Germany",
@@ -2511,32 +2556,42 @@
     "French West Africa",
     "German East Africa",
     "German West Africa",
+    "Gran Colombia",
     "Italian East Africa",
     "Italian Somaliland",
     "Italian West Africa",
     "Kampuchea",
+    "Korea",
+    "Manchukuo",
     "Netherlands East Indies",
     "New Hebrides",
     "North Vietnam",
     "North Yemen",
     "Northern Rhodesia",
     "Nyasaland",
+    "Ottoman Empire",
     "Persia",
     "Portuguese East Africa",
     "Portuguese Guinea",
     "Portuguese Timor",
     "Portuguese West Africa",
+    "Prussia",
     "Rhodesia",
     "Siam",
     "South Vietnam",
     "South Yemen",
     "Southern Rhodesia",
+    "Soviet Union",
     "Spanish East Africa",
     "Spanish Guinea",
     "Spanish West Africa",
     "Tanganyika",
+    "Tibet",
+    "United Arab Republic",
     "Upper Volta",
+    "West Germany",
     "Western Samoa",
+    "Yugoslavia",
     "Zanzibar"
   ],
   "Countries with Nuclear Weapons": [
@@ -2972,6 +3027,9 @@
     "Kind Hearts and Coronets",
     "The Ladykillers"
   ],
+  "East Asian Countries": [
+    "Korea"
+  ],
   "Economics": [
     "Bond",
     "Coin",
@@ -3385,7 +3443,8 @@
     "Albany",
     "East Germany",
     "Germany",
-    "Oliver & Company"
+    "Oliver & Company",
+    "West Germany"
   ],
   "Ends with AOH": [
     "Pharaoh"
@@ -3473,6 +3532,7 @@
     "Subaru"
   ],
   "Ends with ARY": [
+    "Austria-Hungary",
     "Canary",
     "Hungary",
     "Mary",
@@ -3664,10 +3724,14 @@
     "Dream of the Red Chamber",
     "November"
   ],
+  "Ends with BET": [
+    "Tibet"
+  ],
   "Ends with BIA": [
     "Colombia",
     "Columbia",
     "Gambia",
+    "Gran Colombia",
     "Lawrence of Arabia",
     "Namibia",
     "Saudi Arabia",
@@ -4957,6 +5021,7 @@
     "Pulp Fiction",
     "Resolution",
     "Scorpion",
+    "Soviet Union",
     "Stallion",
     "The French Connection",
     "The Shawshank Redemption",
@@ -4991,6 +5056,7 @@
   "Ends with IRE": [
     "Chariots of Fire",
     "Harry Potter and the Goblet of Fire",
+    "Ottoman Empire",
     "Sapphire",
     "Slumdog Millionaire",
     "Solitaire",
@@ -5195,6 +5261,7 @@
     "Whiskey"
   ],
   "Ends with KIA": [
+    "Czechoslovakia",
     "Slovakia"
   ],
   "Ends with KIE": [
@@ -5213,6 +5280,9 @@
   "Ends with KON": [
     "Nikon",
     "iKON"
+  ],
+  "Ends with KUO": [
+    "Manchukuo"
   ],
   "Ends with KYE": [
     "Skye"
@@ -5336,7 +5406,8 @@
   "Ends with LIC": [
     "Central African Republic",
     "Czech Republic",
-    "Dominican Republic"
+    "Dominican Republic",
+    "United Arab Republic"
   ],
   "Ends with LIE": [
     "Charlie"
@@ -6443,6 +6514,7 @@
   ],
   "Ends with REA": [
     "Eritrea",
+    "Korea",
     "Moorea",
     "North Korea",
     "South Korea"
@@ -6749,6 +6821,7 @@
     "Micronesia",
     "Northern Rhodesia",
     "Persia",
+    "Prussia",
     "Rhodesia",
     "Russia",
     "Southern Rhodesia",
@@ -7274,7 +7347,8 @@
   ],
   "Ends with VIA": [
     "Bolivia",
-    "Latvia"
+    "Latvia",
+    "Yugoslavia"
   ],
   "Ends with VIK": [
     "Medovik"
@@ -7498,6 +7572,13 @@
     "Inuit",
     "Sami",
     "Zulu"
+  ],
+  "European Countries": [
+    "Czechoslovakia",
+    "East Germany",
+    "Prussia",
+    "West Germany",
+    "Yugoslavia"
   ],
   "Events": [
     "CON"
@@ -8416,6 +8497,12 @@
     "Zanzibar",
     "Zimbabwe"
   ],
+  "Former Communist States": [
+    "Czechoslovakia",
+    "East Germany",
+    "Soviet Union",
+    "Yugoslavia"
+  ],
   "Former Dutch Colonies": [
     "Brazil",
     "Dutch Guiana",
@@ -8429,6 +8516,14 @@
     "Sri Lanka",
     "Suriname",
     "Taiwan"
+  ],
+  "Former Empires": [
+    "Austria-Hungary",
+    "Carthage",
+    "Gran Colombia",
+    "Ottoman Empire",
+    "Prussia",
+    "Soviet Union"
   ],
   "Former French Colonies": [
     "Algeria",
@@ -8518,6 +8613,9 @@
     "Portuguese Timor",
     "Portuguese West Africa",
     "Sao Tome and Principe"
+  ],
+  "Former Puppet States": [
+    "Manchukuo"
   ],
   "Former Russian Colonies": [
     "Persia"
@@ -8667,6 +8765,11 @@
   ],
   "George Orwell": [
     "Animal Farm"
+  ],
+  "German States": [
+    "East Germany",
+    "Prussia",
+    "West Germany"
   ],
   "Golf Terms": [
     "Club",
@@ -9028,6 +9131,9 @@
   "Islamic Architecture": [
     "Alhambra",
     "Blue Mosque"
+  ],
+  "Islamic Empires": [
+    "Ottoman Empire"
   ],
   "Island Nations": [
     "Antigua and Barbuda",
@@ -10140,6 +10246,26 @@
     "Monaco",
     "San Marino",
     "Vatican City"
+  ],
+  "Middle Eastern Countries": [
+    "Bahrain",
+    "Cyprus",
+    "Egypt",
+    "Iran",
+    "Iraq",
+    "Israel",
+    "Jordan",
+    "Kuwait",
+    "Lebanon",
+    "Oman",
+    "Ottoman Empire",
+    "Qatar",
+    "Saudi Arabia",
+    "Syria",
+    "Turkey",
+    "United Arab Emirates",
+    "United Arab Republic",
+    "Yemen"
   ],
   "Military Leaders": [
     "George Washington",
@@ -13891,6 +14017,9 @@
     "Sleipnir",
     "Thor"
   ],
+  "Nuclear Powers": [
+    "Soviet Union"
+  ],
   "OJ Simpson": [
     "Bronco",
     "Football",
@@ -15926,6 +16055,9 @@
     "INT",
     "Key"
   ],
+  "South American Countries": [
+    "Gran Colombia"
+  ],
   "Space Missions": [
     "Apollo",
     "Apollo 13",
@@ -15949,6 +16081,9 @@
   ],
   "Spanish Architecture": [
     "Sagrada Familia"
+  ],
+  "Spanish Colonies": [
+    "Gran Colombia"
   ],
   "Spanish Navy": [
     "Santissima Trinidad"
@@ -16399,7 +16534,8 @@
   "Starts with AUS": [
     "Austin",
     "Australia",
-    "Austria"
+    "Austria",
+    "Austria-Hungary"
   ],
   "Starts with AUT": [
     "Auto Racing"
@@ -17072,7 +17208,8 @@
     "Cyprus"
   ],
   "Starts with CZE": [
-    "Czech Republic"
+    "Czech Republic",
+    "Czechoslovakia"
   ],
   "Starts with DA ": [
     "Da Vinci"
@@ -17729,6 +17866,7 @@
   "Starts with GRA": [
     "Graf Zeppelin",
     "Gran Canaria",
+    "Gran Colombia",
     "Grand Theft Auto",
     "Grant",
     "Grape",
@@ -18325,6 +18463,7 @@
     "Kombucha"
   ],
   "Starts with KOR": [
+    "Korea",
     "Korma"
   ],
   "Starts with KOS": [
@@ -18594,6 +18733,7 @@
   ],
   "Starts with MAN": [
     "Manatee",
+    "Manchukuo",
     "Mango Sticky Rice",
     "Manhattan",
     "Mansaf",
@@ -19050,7 +19190,8 @@
     "Othello"
   ],
   "Starts with OTT": [
-    "Ottawa"
+    "Ottawa",
+    "Ottoman Empire"
   ],
   "Starts with OUT": [
     "Out of Africa",
@@ -19313,6 +19454,9 @@
     "Profiterole",
     "Prosecco",
     "Providence"
+  ],
+  "Starts with PRU": [
+    "Prussia"
   ],
   "Starts with PSI": [
     "Psi"
@@ -19811,6 +19955,9 @@
     "Southern Rhodesia",
     "Souvlaki"
   ],
+  "Starts with SOV": [
+    "Soviet Union"
+  ],
   "Starts with SOW": [
     "Sow"
   ],
@@ -20223,6 +20370,9 @@
   "Starts with THU": [
     "Thunder"
   ],
+  "Starts with TIB": [
+    "Tibet"
+  ],
   "Starts with TIC": [
     "Tick, Tick... Boom!"
   ],
@@ -20379,6 +20529,7 @@
     "Unicorn",
     "Uniform",
     "United Arab Emirates",
+    "United Arab Republic",
     "United Kingdom",
     "United States"
   ],
@@ -20505,6 +20656,7 @@
     "Weissbier"
   ],
   "Starts with WES": [
+    "West Germany",
     "West Side Story",
     "Western Samoa"
   ],
@@ -20627,7 +20779,8 @@
     "Yu Xiang Qie Zi"
   ],
   "Starts with YUG": [
-    "Yugioh"
+    "Yugioh",
+    "Yugoslavia"
   ],
   "Starts with ZAM": [
     "Zambia"
@@ -22953,6 +23106,9 @@
     "Thera",
     "Vesuvius"
   ],
+  "WWI Powers": [
+    "Austria-Hungary"
+  ],
   "WWII Allied Powers": [
     "Albania",
     "Argentina",
@@ -23015,6 +23171,9 @@
   "WWII Leaders": [
     "Franklin D. Roosevelt",
     "Winston Churchill"
+  ],
+  "WWII Powers": [
+    "Manchukuo"
   ],
   "Wachowskis": [
     "The Matrix"

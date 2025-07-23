@@ -17,6 +17,12 @@
   "Scientific Research": [
     "Challenger"
   ],
+  "African Countries": [
+    "Carthage"
+  ],
+  "Ancient Empires": [
+    "Carthage"
+  ],
   "Enlightenment Figures": [
     "Newton"
   ],
@@ -2156,6 +2162,39 @@
   "Movies featuring Anthony Hopkins": [
     "Red Dragon"
   ],
+  "WWI Powers": [
+    "Austria-Hungary"
+  ],
+  "Former Puppet States": [
+    "Manchukuo"
+  ],
+  "WWII Powers": [
+    "Manchukuo"
+  ],
+  "Islamic Empires": [
+    "Ottoman Empire"
+  ],
+  "Balkan Countries": [
+    "Yugoslavia"
+  ],
+  "Nuclear Powers": [
+    "Soviet Union"
+  ],
+  "Buddhist Countries": [
+    "Tibet"
+  ],
+  "East Asian Countries": [
+    "Korea"
+  ],
+  "South American Countries": [
+    "Gran Colombia"
+  ],
+  "Spanish Colonies": [
+    "Gran Colombia"
+  ],
+  "Arab Countries": [
+    "United Arab Republic"
+  ],
   "Maritime Stories": [
     "Titanic",
     "Moby Dick"
@@ -2804,6 +2843,10 @@
     "Buckingham Palace",
     "Stonehenge"
   ],
+  "Central European Countries": [
+    "Austria-Hungary",
+    "Czechoslovakia"
+  ],
   "Movies featuring Kate Winslet": [
     "Titanic",
     "Sense and Sensibility",
@@ -2948,6 +2991,16 @@
     "Zimbabwe",
     "Rhodesia",
     "Southern Rhodesia"
+  ],
+  "Cold War Powers": [
+    "East Germany",
+    "Soviet Union",
+    "West Germany"
+  ],
+  "German States": [
+    "East Germany",
+    "Prussia",
+    "West Germany"
   ],
   "Movies featuring Humphrey Bogart": [
     "Casablanca",
@@ -3178,5 +3231,10 @@
     "Eiffel Tower",
     "Versailles",
     "Mont Saint-Michel"
+  ],
+  "Asian Countries": [
+    "Manchukuo",
+    "Tibet",
+    "Korea"
   ]
 }
