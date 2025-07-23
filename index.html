@@ -137,6 +137,57 @@ function init(puz){
 
   renderBoard(); updateStrike();
 
+  /* ------------------------------------------------------------
+    relabelAllHeaders()  –  hash-based, orientation-agnostic
+    • Works after solveCompletely() finishes (every line is a set)
+    • Reads the category from the *whole 4-word line*
+    • Leaves solved headers untouched; greys unsolved ones
+  ---------------------------------------------------------------- */
+  function relabelAllHeaders() {
+    const hash = a => [...a].sort().join('|');
+
+    /* ── rows ────────────────────────────────────────── */
+    for (let r = 0; r < 4; r++) {
+      if (solvedRows.has(r)) continue;
+
+      const hdr = document.querySelector(`.hdr[data-row="${r}"]`);
+      if (!hdr) continue;
+
+      const label = ans[hash(G[r])];
+      if (label) {
+        hdr.textContent = label;
+      } else {
+        hdr.textContent = '❓';
+        console.warn(
+          `Row ${r}: [${G[r].join(', ')}] → these four words don't make a category`
+        );
+      }
+      hdr.classList.add('disabled');
+      hdr.style.color = '#666';
+    }
+
+    /* ── columns ─────────────────────────────────────── */
+    for (let c = 0; c < 4; c++) {
+      if (solvedCols.has(c)) continue;
+
+      const hdr = document.querySelector(`.hdr[data-col="${c}"]`);
+      if (!hdr) continue;
+
+      const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
+      const label = ans[hash(colWords)];
+      if (label) {
+        hdr.textContent = label;
+      } else {
+        hdr.textContent = '❓';
+        console.warn(
+          `Col ${c}: [${colWords.join(', ')}] → these four words don't make a category`
+        );
+      }
+      hdr.classList.add('disabled');
+      hdr.style.color = '#666';
+    }
+  }
+
   /* ---------- DOM ---------- */
   function renderBoard(){
     const bd=$('#board'); bd.innerHTML='';
@@ -196,6 +247,8 @@ function init(puz){
     if(solvedRows.has(r1)||solvedRows.has(r2)||solvedCols.has(c1)||solvedCols.has(c2)) return;
     swapCells(r1,c1,r2,c2,true);
     sel.classList.remove('selected'); sel=null;
+
+    integrityCheck();
   }
 
   /* ---------- solving logic ---------- */
@@ -238,6 +291,8 @@ function init(puz){
 
     if(!finished) autoEndIfObvious();
     if(solvedRows.size===4&&solvedCols.size===4) finish(true);
+
+    integrityCheck();
   }
 
   function makeSolvedLabel(txt,lvl){
@@ -377,7 +432,7 @@ function init(puz){
 
       // after swaps finish, show missing headers & freeze board
       setTimeout(() => {
-        revealUnsolved();
+        relabelAllHeaders();
         finish(false);
       }, 1000 + animTime);                  // 1 s pause + animation
     }
@@ -388,17 +443,40 @@ function init(puz){
   const shake=()=>{ $('#shell').classList.add('shake');
                     setTimeout(()=>$('#shell').classList.remove('shake'),1200); };
 
-  function swapCells(r1,c1,r2,c2,anim){
-    if(r1===r2&&c1===c2) return;
-    const t1=tile(r1,c1), t2=tile(r2,c2); if(!t1||!t2) return;
-    if(anim){
-      const a=t1.getBoundingClientRect(), b=t2.getBoundingClientRect();
-      const dx=b.left-a.left, dy=b.top-a.top, opt={duration:500,easing:'cubic-bezier(.4,0,.2,1)'};
-      t1.animate([{transform:`translate(${dx}px,${dy}px)`},{transform:'none'}],opt);
-      t2.animate([{transform:`translate(${-dx}px,${-dy}px)`},{transform:'none'}],opt);
+  /* -------------------------------------------------
+    swapCells(r1, c1, r2, c2, animate = false, animOnly = false)
+    ----------------------------------------------------------- */
+  function swapCells(r1, c1, r2, c2, animate = false, animOnly = false) {
+    if (r1 === r2 && c1 === c2) return;
+
+    const t1 = tile(r1, c1);
+    const t2 = tile(r2, c2);
+    if (!t1 || !t2) return;
+
+    /* ── visual animation ───────────────────────── */
+    if (animate) {
+      const a = t1.getBoundingClientRect();
+      const b = t2.getBoundingClientRect();
+      const dx = b.left - a.left;
+      const dy = b.top - a.top;
+      const opt = { duration: 500, easing: 'cubic-bezier(.4,0,.2,1)' };
+
+      t1.animate([{ transform: `translate(${dx}px,${dy}px)` }, { transform: 'none' }], opt);
+      t2.animate([{ transform: `translate(${-dx}px,${-dy}px)` }, { transform: 'none' }], opt);
+
+      /* update the text **after** the slide completes so it looks natural */
+      setTimeout(() => {
+        t1.textContent = G[r1][c1];
+        t2.textContent = G[r2][c2];
+      }, opt.duration);
     }
-    [G[r1][c1],G[r2][c2]]=[G[r2][c2],G[r1][c1]];
-    [t1.textContent,t2.textContent]=[t2.textContent,t1.textContent];
+
+    /* ── logical swap (unless we’re only animating) ───────────── */
+    if (!animOnly) {
+      [G[r1][c1], G[r2][c2]] = [G[r2][c2], G[r1][c1]];
+      [t1.textContent, t2.textContent] = [t2.textContent, t1.textContent];
+      integrityCheck();
+    }
   }
 
   function autoEndIfObvious(){
@@ -420,101 +498,187 @@ function init(puz){
         freezeTile(r, c);
 
     setTimeout(() => showShare(won), 600);
+
+    integrityCheck();
   }
 
   /* ------------------------------------------------------------
-    solveCompletely()
+    getOrientation()
     ─────────────────
-    • Works after any combination of solved rows / columns.
-    • Uses your staggered 100 ms swap animation.
-    • Returns total animation time so the caller can wait.
+    Inspect the *first* solved line (row or column). If its
+    category lives in puz.rows => normal orientation,
+    otherwise we treat the puzzle as transposed.
+  ---------------------------------------------------------------- */
+  function getOrientation() {
+    if (solvedRows.size) {
+      const r   = [...solvedRows.keys()][0];
+      const cat = ans[hash(G[r])];                 // category of that row
+      return puz.rows.includes(cat) ? 'normal' : 'transposed';
+    }
+    if (solvedCols.size) {
+      const c   = [...solvedCols.keys()][0];
+      const cat = ans[hash(G.map(r => r[c]))];     // category of that col
+      return puz.cols.includes(cat) ? 'normal' : 'transposed';
+    }
+    return 'normal';                               // fallback until something is solved
+  }
+
+  /* ───────────────── integrity guard v3 ───────────────────────── */
+  const solvedPositions = new Map();   // word → { r, c }
+
+  function integrityCheck() {
+    /* 1-a. solved words may never move */
+    for (let r = 0; r < 4; r++) {
+      for (let c = 0; c < 4; c++) {
+        if (!solvedRows.has(r) && !solvedCols.has(c)) continue;
+        const w   = G[r][c];
+        const pos = solvedPositions.get(w);
+        if (!pos) solvedPositions.set(w, { r, c });
+        else if (pos.r !== r || pos.c !== c) {
+          throw new Error(`Solved word "${w}" moved from [${pos.r},${pos.c}] to [${r},${c}]`);
+        }
+      }
+    }
+
+    /* 1-b. every fully-solved line must hash to a known category */
+    const hash = a => [...a].sort().join('|');
+    for (const r of solvedRows.keys()) {
+      if (!ans[hash(G[r])]) throw new Error(`Row ${r} claims solved but is not a valid set`);
+    }
+    for (const c of solvedCols.keys()) {
+      const col = [G[0][c], G[1][c], G[2][c], G[3][c]];
+      if (!ans[hash(col)]) throw new Error(`Column ${c} claims solved but is not a valid set`);
+    }
+  }
+
+  /* ------------------------------------------------------------
+    solveCompletely()  –  “reconstruct-then-swap” solver  v5
   ---------------------------------------------------------------- */
   function solveCompletely() {
 
-  /* utility: canonical row/col position of every word */
-  const canonPos = {};
-  for (let r = 0; r < 4; r++)
-    for (let c = 0; c < 4; c++)
-      canonPos[puz.words[r][c]] = [r, c];
+    const hash = a => [...a].sort().join('|');
 
-  /* utility: final row / col for a given word */
-  const finalRow = w =>
-    (rowPos && rowPos[w] !== undefined)        ? rowPos[w] :
-    (rowPos)                                   ? rowIdx[wordToRowCat[w]] :
-                                                canonPos[w][0];
+    /* ─────────────────────────────────────────────
+      0.  Nothing solved? ⇒ return to canonical grid
+    ───────────────────────────────────────────── */
+    if (!solvedRows.size && !solvedCols.size) {
+      const moves = [];
+      for (let r = 0; r < 4; r++)
+        for (let c = 0; c < 4; c++) {
+          const want = puz.words[r][c];
+          if (G[r][c] === want) continue;
 
-  const finalCol = w =>
-    (colPos && colPos[w] !== undefined)        ? colPos[w] :
-    (colPos)                                   ? colIdx[wordToColCat[w]] :
-                                                canonPos[w][1];
-
-  /* build a map word → [targetR, targetC] */
-  const target = {};
-  for (const w of puz.words.flat()) target[w] = [finalRow(w), finalCol(w)];
-
-  /* collect all swaps needed */
-  const moves = [];
-  for (let r = 0; r < 4; r++) {
-    for (let c = 0; c < 4; c++) {
-      const wHere = G[r][c];
-      const [tr, tc] = target[wHere];
-
-      if (r !== tr || c !== tc) {
-        /* find the word that *should* be at [r,c] */
-        const want = Object.keys(target).find(
-          w => target[w][0] === r && target[w][1] === c
-        );
-
-        /* locate that word’s current coordinates */
-        let r2, c2;
-        outer: for (let i = 0; i < 4; i++) {
-          for (let j = 0; j < 4; j++) {
-            if (G[i][j] === want) { r2 = i; c2 = j; break outer; }
-          }
+          outer: for (let r2 = 0; r2 < 4; r2++)
+            for (let c2 = 0; c2 < 4; c2++)
+              if (G[r2][c2] === want) {
+                moves.push([r, c, r2, c2]);
+                [G[r][c], G[r2][c2]] = [G[r2][c2], G[r][c]];
+                break outer;
+              }
         }
+      moves.forEach((m, i) => setTimeout(() => swapCells(...m, true, true), i * 100));
+      return moves.length * 100;
+    }
+
+    /* ─────────────────────────────────────────────
+      1.  Detect orientation  (normal / transposed)
+    ───────────────────────────────────────────── */
+    const firstCat = solvedRows.size
+        ? ans[hash(G[[...solvedRows.keys()][0]])]
+        : ans[hash(G.map(r => r[[...solvedCols.keys()][0]]))];
+
+    const transposed = puz.cols.includes(firstCat);
+
+    const ROW_LABELS = transposed ? puz.cols : puz.rows;
+    const COL_LABELS = transposed ? puz.rows : puz.cols;
+
+    const rowCatOf   = w => transposed ? wordToColCat[w] : wordToRowCat[w];
+    const colCatOf   = w => transposed ? wordToRowCat[w] : wordToColCat[w];
+    const rowIdxOf   = cat => (transposed ? colIdx : rowIdx)[cat];
+    const colIdxOf   = cat => (transposed ? rowIdx : colIdx)[cat];
+
+    /* ─────────────────────────────────────────────
+      2.  Row / column category → index maps
+    ─────────────────────────────────────── */
+    const rowCatToIdx = {};      // category → row#
+    const colCatToIdx = {};      // category → col#
+
+    solvedRows.forEach((_, r) => {
+      const cat = ans[hash(G[r])];                // look at the whole 4-word row
+      if (cat) rowCatToIdx[cat] = r;
+    });
+
+    solvedCols.forEach((_, c) => {
+      const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
+      const cat = ans[hash(colWords)];            // whole 4-word column
+      if (cat) colCatToIdx[cat] = c;
+    });
+
+    /* assign remaining categories to free indices (canonical order) */
+    const freeRows = [0,1,2,3].filter(i => !Object.values(rowCatToIdx).includes(i));
+    const freeCols = [0,1,2,3].filter(i => !Object.values(colCatToIdx).includes(i));
+
+    ROW_LABELS.forEach(cat => {
+      if (rowCatToIdx[cat] === undefined) rowCatToIdx[cat] = freeRows.shift();
+    });
+    COL_LABELS.forEach(cat => {
+      if (colCatToIdx[cat] === undefined) colCatToIdx[cat] = freeCols.shift();
+    });
+
+    /* idx → category arrays (no nulls) */
+    const idxToRowCat = Array(4).fill('').map((_,i)=>
+          Object.keys(rowCatToIdx).find(k=>rowCatToIdx[k]===i));
+    const idxToColCat = Array(4).fill('').map((_,i)=>
+          Object.keys(colCatToIdx).find(k=>colCatToIdx[k]===i));
+
+    /* ─────────────────────────────────────────────
+      3.  Build the target 4×4 grid
+    ───────────────────────────────────────────── */
+    const target = Array.from({length:4},()=>Array(4));
+
+    for (let r = 0; r < 4; r++) {
+      const rowCat = idxToRowCat[r];
+      for (let c = 0; c < 4; c++) {
+        const colCat = idxToColCat[c];
+
+        const canonRow = transposed ? colIdx[rowCat] : rowIdx[rowCat];
+        const canonCol = transposed ? rowIdx[colCat] : colIdx[colCat];
+
+        target[r][c] = puz.words[canonRow][canonCol];
+      }
+    }
+
+    /* ─────────────────────────────────────────────
+      4.  Swap current grid → target grid (skip anchors)
+    ───────────────────────────────────────────── */
+    const locate = new Map();                // word → [r,c]
+    for (let r=0;r<4;r++)for(let c=0;c<4;c++) locate.set(G[r][c],[r,c]);
+
+    const moves = [];
+
+    for (let r = 0; r < 4; r++) {
+      for (let c = 0; c < 4; c++) {
+
+        if (solvedRows.has(r) || solvedCols.has(c)) continue;   // frozen
+
+        const want = target[r][c];
+        if (G[r][c] === want) continue;
+
+        const [r2, c2] = locate.get(want);
+        if (solvedRows.has(r2) || solvedCols.has(c2)) continue; // would move anchor
 
         moves.push([r, c, r2, c2]);
 
-        /* update in-memory grid so later searches stay correct */
+        /* update bookkeeping & virtual grid */
+        locate.set(G[r][c], [r2, c2]);
+        locate.set(want,    [r , c ]);
         [G[r][c], G[r2][c2]] = [G[r2][c2], G[r][c]];
       }
     }
-  }
 
-  /* play swaps with a cascade animation (100 ms apart) */
-  moves.forEach((m, i) => {
-    setTimeout(() => swapCells(m[0], m[1], m[2], m[3], true), i * 100);
-  });
-
-  return moves.length * 100;           // total animation duration
-  }
-
-  /* ---------- reveal on loss ---------- */
-  function revealUnsolved(){
-    // Get current grid state and find what categories each line represents
-    const currentRows = G.map(row => hash(row));
-    const currentCols = Array(4).fill().map((_,i) => hash(G.map(r => r[i])));
-    
-    // Find which categories are actually unsolved
-    const unsR = puz.rows.filter((label, i) => !solvedRows.has(i) && ans[currentRows[i]] !== label);
-    const unsC = puz.cols.filter((label, i) => !solvedCols.has(i) && ans[currentCols[i]] !== label);
-    
-    for(let i=0;i<4;i++){
-      if(!solvedRows.has(i)){
-        const h=$(`.hdr[data-row="${i}"]`); 
-        if(h){ 
-          h.textContent=unsR.shift()||''; 
-          h.style.color='#666'; 
-        }
-      }
-      if(!solvedCols.has(i)){
-        const h=$(`.hdr[data-col="${i}"]`); 
-        if(h){ 
-          h.textContent=unsC.shift()||''; 
-          h.style.color='#666'; 
-        }
-      }
-    }
+    /* animate the swaps in a 100 ms cascade */
+    moves.forEach((m,i)=>setTimeout(()=>swapCells(...m,true), i*100));
+    return moves.length * 100;          // total animation time
   }
 
   /* ---------- share popup ---------- */
