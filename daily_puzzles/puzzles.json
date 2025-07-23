@@ -758,5 +758,125 @@
         "Back to the Future Part II"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Drinks",
+      "Events",
+      "Historical Figures",
+      "Republics"
+    ],
+    "cols": [
+      "Ends with INE",
+      "Islands",
+      "Starts with CHA",
+      "Things Italian"
+    ],
+    "words": [
+      [
+        "Wine",
+        "Java",
+        "Chai",
+        "Prosecco"
+      ],
+      [
+        "The Russian Invasion of Ukraine",
+        "Krakatoa",
+        "Challenger",
+        "The Italian Wars"
+      ],
+      [
+        "Catherine",
+        "Victoria",
+        "Charlemagne",
+        "Da Vinci"
+      ],
+      [
+        "Ukraine",
+        "Haiti",
+        "Chad",
+        "Italy"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "3D Animated Films",
+      "Books",
+      "Fantasy Stories",
+      "Place Names"
+    ],
+    "cols": [
+      "Ends with IFE",
+      "Ends with LES",
+      "Ends with TLE",
+      "Musical Films"
+    ],
+    "words": [
+      [
+        "A Bug's Life",
+        "The Incredibles",
+        "Chicken Little",
+        "Moana"
+      ],
+      [
+        "The Time Traveler's Wife",
+        "Anne of Green Gables",
+        "The Man in the High Castle",
+        "The Jungle Book"
+      ],
+      [
+        "It's a Wonderful Life",
+        "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "Howl's Moving Castle",
+        "Fantasia"
+      ],
+      [
+        "Tenerife",
+        "Los Angeles",
+        "Seattle",
+        "Chicago"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Countries that No Longer Exist",
+      "Islands",
+      "Mountains",
+      "WWII Allied Powers"
+    ],
+    "cols": [
+      "Locations in Africa",
+      "Locations in Asia",
+      "Locations in Europe",
+      "Locations in South America"
+    ],
+    "words": [
+      [
+        "Rhodesia",
+        "Siam",
+        "East Germany",
+        "Dutch Guiana"
+      ],
+      [
+        "Mauritius",
+        "Jeju",
+        "Sicily",
+        "Easter Island"
+      ],
+      [
+        "Kilimanjaro",
+        "Everest",
+        "Matterhorn",
+        "Aconcagua"
+      ],
+      [
+        "Egypt",
+        "China",
+        "United Kingdom",
+        "Brazil"
+      ]
+    ]
   }
 ]
