@@ -1101,54 +1101,62 @@ function init(puz){
     $('#gdprPop').classList.remove('show');
   };
   
-  // Restore visual state if we loaded saved state (after all functions are defined)
-  if (savedState) {
-    console.log('Restoring saved state:', savedState);
-    console.log('solvedRows:', solvedRows);
-    console.log('solvedCols:', solvedCols);
-    
-    // Restore solved headers
-    solvedRows.forEach((level, r) => {
-      console.log(`Restoring row ${r} with level ${level}`);
-      const hdr = $(`.hdr[data-row="${r}"]`);
-      if (hdr) {
-        const words = G[r];
-        const label = ans[hash(words)];
-        if (label) {
-          hdr.replaceWith(makeSolvedLabel(label, level));
+      // Restore visual state if we loaded saved state (after all functions are defined)
+    if (savedState) {
+      console.log('Restoring saved state:', savedState);
+      console.log('solvedRows:', solvedRows);
+      console.log('solvedCols:', solvedCols);
+      
+      // Restore solved headers
+      solvedRows.forEach((level, r) => {
+        console.log(`Restoring row ${r} with level ${level}`);
+        const hdr = $(`.hdr[data-row="${r}"]`);
+        if (hdr) {
+          const words = G[r];
+          const label = ans[hash(words)];
+          if (label) {
+            hdr.replaceWith(makeSolvedLabel(label, level));
+          }
         }
-      }
-    });
-    
-    solvedCols.forEach((level, c) => {
-      console.log(`Restoring col ${c} with level ${level}`);
-      const hdr = $(`.hdr[data-col="${c}"]`);
-      if (hdr) {
-        const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
-        const label = ans[hash(colWords)];
-        if (label) {
-          hdr.replaceWith(makeSolvedLabel(label, level));
+      });
+      
+      solvedCols.forEach((level, c) => {
+        console.log(`Restoring col ${c} with level ${level}`);
+        const hdr = $(`.hdr[data-col="${c}"]`);
+        if (hdr) {
+          const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
+          const label = ans[hash(colWords)];
+          if (label) {
+            hdr.replaceWith(makeSolvedLabel(label, level));
+          }
         }
+      });
+      
+      // Freeze solved tiles
+      solvedRows.forEach((level, r) => {
+        for (let c = 0; c < 4; c++) {
+          lockColour(r, c, level);
+          freezeTile(r, c);
+        }
+      });
+      
+      solvedCols.forEach((level, c) => {
+        for (let r = 0; r < 4; r++) {
+          lockColour(r, c, level);
+          freezeTile(r, c);
+        }
+      });
+      
+      freezeIntersections();
+      
+      // If puzzle is already solved, show share popup
+      if (solvedRows.size === 4 && solvedCols.size === 4) {
+        setTimeout(() => {
+          showShare(true);
+          $('#shareBtn').style.display = 'block';
+        }, 500);
       }
-    });
-    
-    // Freeze solved tiles
-    solvedRows.forEach((level, r) => {
-      for (let c = 0; c < 4; c++) {
-        lockColour(r, c, level);
-        freezeTile(r, c);
-      }
-    });
-    
-    solvedCols.forEach((level, c) => {
-      for (let r = 0; r < 4; r++) {
-        lockColour(r, c, level);
-        freezeTile(r, c);
-      }
-    });
-    
-    freezeIntersections();
-  }
+    }
 }
 </script>
 </body>
