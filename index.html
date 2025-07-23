@@ -501,10 +501,6 @@ function init(puz){
     // Check if we should align before adding the current solve
     const shouldAlign = (kind === 'row' && solvedRows.size >= 1) || (kind === 'col' && solvedCols.size >= 1);
     
-    hdr.replaceWith(makeSolvedLabel(label,lvl));
-    solved.set(idx,lvl);
-    colourAndFreeze(kind,idx,lvl);
-
     if(shouldAlign) {
       console.log(`Aligning ${kind} ${idx}, solvedRows: ${solvedRows.size}, solvedCols: ${solvedCols.size}`);
       if(kind==='row') alignRow(idx);
@@ -512,6 +508,10 @@ function init(puz){
     } else {
       console.log(`Not aligning ${kind} ${idx}, solvedRows: ${solvedRows.size}, solvedCols: ${solvedCols.size}`);
     }
+    
+    hdr.replaceWith(makeSolvedLabel(label,lvl));
+    solved.set(idx,lvl);
+    colourAndFreeze(kind,idx,lvl);
 
     freezeIntersections();
     if((kind==='row'&&solvedRows.size===3)||(kind==='col'&&solvedCols.size===3))
