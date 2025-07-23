@@ -23,6 +23,7 @@
     "Disaster Stories",
     "Disasters",
     "Ends with NIC",
+    "Events",
     "Famous Shipwrecks",
     "Luxury Ships",
     "Maritime Stories",
@@ -49,6 +50,7 @@
     "Cunard Line",
     "Disasters",
     "Ends with NIA",
+    "Events",
     "Famous Shipwrecks",
     "Oceanliners",
     "Ships",
@@ -200,6 +202,7 @@
     "Airships",
     "Disasters",
     "Ends with URG",
+    "Events",
     "Starts with HIN"
   ],
   "Pompeii": [
@@ -209,6 +212,7 @@
     "Disaster Stories",
     "Disasters",
     "Ends with EII",
+    "Events",
     "Movies",
     "Place Names",
     "Roman Cities",
@@ -221,6 +225,7 @@
     "Disaster Stories",
     "Disasters",
     "Ends with TOA",
+    "Events",
     "Islands",
     "Locations in Asia",
     "Mountains",
@@ -233,6 +238,7 @@
   "Tambora": [
     "Disasters",
     "Ends with ORA",
+    "Events",
     "Locations in Asia",
     "Mountains",
     "Place Names",
@@ -245,6 +251,7 @@
     "Cities in Europe",
     "Disasters",
     "Ends with BYL",
+    "Events",
     "Locations in Europe",
     "Place Names",
     "Starts with CHE",
@@ -255,12 +262,14 @@
     "Cities in Asia",
     "Disasters",
     "Ends with IMA",
+    "Events",
     "Locations in Asia",
     "Starts with FUK"
   ],
   "Katrina": [
     "Disasters",
     "Ends with INA",
+    "Events",
     "Female Names",
     "People",
     "Starts with KAT"
@@ -269,6 +278,7 @@
     "Age of Sail",
     "Disasters",
     "Ends with GER",
+    "Events",
     "Exploration Ships",
     "Royal Navy",
     "Scientific Research",
@@ -278,6 +288,7 @@
   "Deepwater Horizon": [
     "Disasters",
     "Ends with ZON",
+    "Events",
     "Starts with DEE"
   ],
   "Graf Zeppelin": [
@@ -603,11 +614,15 @@
     "Things Nepalese"
   ],
   "Apollo 13": [
+    "1970s",
+    "20th Century",
+    "Disaster Stories",
     "Ends with  13",
     "Movies",
     "Movies directed by Ron Howard",
     "Space Missions",
-    "Starts with APO"
+    "Starts with APO",
+    "Things American"
   ],
   "Volcano": [
     "Disaster Stories",
@@ -783,6 +798,8 @@
     "Things British"
   ],
   "Galileo": [
+    "1600s",
+    "17th Century",
     "Astronomers",
     "Ends with LEO",
     "Historical Figures",
@@ -964,10 +981,13 @@
     "Starts with NEO"
   ],
   "Mercury": [
+    "1960s",
+    "20th Century",
     "Astronomical Objects",
     "Ends with URY",
     "Space Missions",
-    "Starts with MER"
+    "Starts with MER",
+    "Things American"
   ],
   "Titanium": [
     "Elements",
@@ -2267,11 +2287,14 @@
     "Zodiac Signs"
   ],
   "Gemini": [
+    "1960s",
+    "20th Century",
     "Astronomical Objects",
     "Constellations",
     "Ends with INI",
     "Space Missions",
-    "Starts with GEM"
+    "Starts with GEM",
+    "Things American"
   ],
   "Cancer": [
     "Constellations",
@@ -4094,12 +4117,16 @@
     "Things Greek"
   ],
   "Apollo": [
+    "1960s",
+    "1970s",
+    "20th Century",
     "Battlestar Galactica",
     "Ends with LLO",
     "Greek Gods",
     "Music",
     "Space Missions",
-    "Starts with APO"
+    "Starts with APO",
+    "Things American"
   ],
   "Nevada": [
     "Deserts",
@@ -5318,6 +5345,7 @@
   "Fallout": [
     "Disasters",
     "Ends with OUT",
+    "Events",
     "Radio Terms",
     "Starts with FAL",
     "TV Shows",
@@ -5453,12 +5481,15 @@
     "Things Israeli"
   ],
   "Voyager": [
+    "1970s",
+    "20th Century",
     "Astronomical Objects",
     "Ends with GER",
     "Space Missions",
     "Space Telescopes",
     "Star Trek",
-    "Starts with VOY"
+    "Starts with VOY",
+    "Things American"
   ],
   "Sahara": [
     "Deserts",
@@ -5579,6 +5610,8 @@
     "Starts with PVC"
   ],
   "NASA": [
+    "1950s",
+    "20th Century",
     "Acronyms",
     "Ends with ASA",
     "Organizations",
@@ -6951,15 +6984,20 @@
     "Starts with SLE"
   ],
   "Hubble": [
+    "1990s",
+    "20th Century",
     "Ends with BLE",
     "People",
     "Real People",
     "Scientists",
     "Space Missions",
     "Space Telescopes",
-    "Starts with HUB"
+    "Starts with HUB",
+    "Things American"
   ],
   "Kepler": [
+    "1600s",
+    "17th Century",
     "Astronomers",
     "Ends with LER",
     "People",
@@ -6967,7 +7005,8 @@
     "Scientists",
     "Space Missions",
     "Space Telescopes",
-    "Starts with KEP"
+    "Starts with KEP",
+    "Things German"
   ],
   "Bach": [
     "Classical Composers",
@@ -7747,11 +7786,15 @@
     "The Rime of the Ancient Mariner"
   ],
   "Mariner": [
+    "1960s",
+    "1970s",
+    "20th Century",
     "Ends with NER",
     "MLB Teams",
     "Space Missions",
     "Starts with MAR",
-    "The Rime of the Ancient Mariner"
+    "The Rime of the Ancient Mariner",
+    "Things American"
   ],
   "Witchblade": [
     "Ends with ADE",
@@ -7764,6 +7807,7 @@
     "Cities",
     "Disasters",
     "Ends with EUM",
+    "Events",
     "Place Names",
     "Roman Empire",
     "Starts with HER",
@@ -19278,6 +19322,7 @@
   "Empress of Ireland": [
     "Disasters",
     "Ends with AND",
+    "Events",
     "Oceanliners",
     "Ships",
     "Shipwrecks",
@@ -21039,5 +21084,815 @@
     "Ends with LIC",
     "Middle Eastern Countries",
     "Starts with UNI"
+  ],
+  "9/11": [
+    "2000s",
+    "21st Century",
+    "Ends with /11",
+    "Events",
+    "Political Events",
+    "Starts with 9/1",
+    "Terrorist Attacks"
+  ],
+  "The American Civil War": [
+    "19th Century",
+    "Civil Wars",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The American Revolution": [
+    "18th Century",
+    "Ends with ION",
+    "Events",
+    "Independence Movements",
+    "Revolutions",
+    "Starts with THE"
+  ],
+  "The Arab Spring": [
+    "2010s",
+    "21st Century",
+    "Ends with ING",
+    "Events",
+    "Political Events",
+    "Revolutions",
+    "Starts with THE"
+  ],
+  "The Black Death": [
+    "14th Century",
+    "Ends with ATH",
+    "Events",
+    "Pandemics",
+    "Starts with THE"
+  ],
+  "The Boer War": [
+    "19th Century",
+    "Colonial Wars",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Boxer Rebellion": [
+    "19th Century",
+    "Anti-Colonial Movements",
+    "Colonial Wars",
+    "Ends with ION",
+    "Events",
+    "Rebellions",
+    "Starts with THE"
+  ],
+  "The Bronze Age Collapse": [
+    "12th Century BCE",
+    "Collapses",
+    "Ends with PSE",
+    "Events",
+    "Starts with THE"
+  ],
+  "The COVID-19 Pandemic": [
+    "2020s",
+    "21st Century",
+    "Ends with MIC",
+    "Events",
+    "Health Crises",
+    "Pandemics",
+    "Starts with THE"
+  ],
+  "The Cold War": [
+    "20th Century",
+    "Ends with WAR",
+    "Events",
+    "Political Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Cuban Missile Crisis": [
+    "1960s",
+    "20th Century",
+    "Crises",
+    "Ends with SIS",
+    "Events",
+    "Political Events",
+    "Starts with THE"
+  ],
+  "The English Civil War": [
+    "17th Century",
+    "Civil Wars",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Fall of Rome": [
+    "5th Century",
+    "Collapses",
+    "Empire Collapses",
+    "Ends with OME",
+    "Events",
+    "Starts with THE"
+  ],
+  "The Fall of the Berlin Wall": [
+    "1980s",
+    "20th Century",
+    "Empire Collapses",
+    "Ends with ALL",
+    "Events",
+    "Political Events",
+    "Reunifications",
+    "Starts with THE"
+  ],
+  "The First Crusade": [
+    "11th Century",
+    "Ends with ADE",
+    "Events",
+    "Religious Wars",
+    "Starts with THE"
+  ],
+  "The Franco-Prussian War": [
+    "19th Century",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The French Revolution": [
+    "18th Century",
+    "Ends with ION",
+    "Events",
+    "Political Events",
+    "Revolutions",
+    "Starts with THE"
+  ],
+  "The Glorious Revolution": [
+    "17th Century",
+    "Ends with ION",
+    "Events",
+    "Political Events",
+    "Revolutions",
+    "Starts with THE"
+  ],
+  "The Great Depression": [
+    "1930s",
+    "20th Century",
+    "Depressions",
+    "Economic Events",
+    "Ends with ION",
+    "Events",
+    "Starts with THE"
+  ],
+  "The Gulf War": [
+    "1990s",
+    "20th Century",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Holocaust": [
+    "1940s",
+    "20th Century",
+    "Ends with UST",
+    "Events",
+    "Genocides",
+    "Starts with THE",
+    "War Crimes"
+  ],
+  "The Hundred Years War": [
+    "14th Century",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Industrial Revolution": [
+    "18th Century",
+    "Economic Events",
+    "Ends with ION",
+    "Events",
+    "Industrialization",
+    "Starts with THE"
+  ],
+  "The Iraq War": [
+    "2000s",
+    "21st Century",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Korean War": [
+    "1950s",
+    "20th Century",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Moon Landing": [
+    "1960s",
+    "20th Century",
+    "Ends with ING",
+    "Events",
+    "Scientific Events",
+    "Space Exploration",
+    "Space Missions",
+    "Starts with THE"
+  ],
+  "The Napoleonic Wars": [
+    "19th Century",
+    "Empire Building",
+    "Ends with ARS",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Protestant Reformation": [
+    "16th Century",
+    "Ends with ION",
+    "Events",
+    "Reformations",
+    "Religious Movements",
+    "Starts with THE"
+  ],
+  "The Russian Revolution": [
+    "1910s",
+    "20th Century",
+    "Ends with ION",
+    "Events",
+    "Political Events",
+    "Revolutions",
+    "Starts with THE"
+  ],
+  "The Russo-Japanese War": [
+    "20th Century",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Spanish-American War": [
+    "19th Century",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Thirty Years War": [
+    "17th Century",
+    "Ends with WAR",
+    "Events",
+    "Religious Wars",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Vietnam War": [
+    "1960s",
+    "20th Century",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "World War I": [
+    "1910s",
+    "20th Century",
+    "Ends with R I",
+    "Events",
+    "Starts with WOR",
+    "Wars",
+    "World Wars"
+  ],
+  "World War II": [
+    "1940s",
+    "20th Century",
+    "Ends with  II",
+    "Events",
+    "Starts with WOR",
+    "Wars",
+    "World Wars"
+  ],
+  "The Trojan War": [
+    "12th Century BCE",
+    "Ends with WAR",
+    "Starts with THE"
+  ],
+  "The Sack of Rome": [
+    "5th Century",
+    "Ends with OME",
+    "Starts with THE"
+  ],
+  "The Norman Conquest": [
+    "11th Century",
+    "Ends with EST",
+    "Starts with THE"
+  ],
+  "The Peasants' Revolt": [
+    "14th Century",
+    "Ends with OLT",
+    "Events",
+    "Rebellions",
+    "Starts with THE",
+    "Things British"
+  ],
+  "The Spanish Armada": [
+    "16th Century",
+    "Ends with ADA",
+    "Events",
+    "Starts with THE",
+    "Things British",
+    "Things Spanish",
+    "Wars"
+  ],
+  "The Italian Wars": [
+    "16th Century",
+    "Ends with ARS",
+    "Events",
+    "Starts with THE",
+    "Things Italian",
+    "Wars"
+  ],
+  "The Great Fire of London": [
+    "17th Century",
+    "Ends with DON",
+    "Starts with THE"
+  ],
+  "The Seven Years' War": [
+    "18th Century",
+    "Ends with WAR",
+    "Starts with THE"
+  ],
+  "The Crimean War": [
+    "19th Century",
+    "Ends with WAR",
+    "Starts with THE"
+  ],
+  "The War on Terror": [
+    "2000s",
+    "21st Century",
+    "Ends with ROR",
+    "Starts with THE"
+  ],
+  "The Titanic Disaster": [
+    "1910s",
+    "Ends with TER",
+    "Starts with THE"
+  ],
+  "The Mexican Revolution": [
+    "1910s",
+    "Ends with ION",
+    "Starts with THE"
+  ],
+  "The Dust Bowl": [
+    "1930s",
+    "20th Century",
+    "Disasters",
+    "Ends with OWL",
+    "Events",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Spanish Civil War": [
+    "1930s",
+    "20th Century",
+    "Civil Wars",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Things Spanish",
+    "Wars"
+  ],
+  "The Manhattan Project": [
+    "1940s",
+    "Ends with ECT",
+    "Scientific Events",
+    "Starts with THE"
+  ],
+  "The Battle of Stalingrad": [
+    "1940s",
+    "Ends with RAD",
+    "Starts with THE"
+  ],
+  "The Space Race": [
+    "1950s",
+    "20th Century",
+    "Ends with ACE",
+    "Events",
+    "Scientific Events",
+    "Space Exploration",
+    "Space Missions",
+    "Starts with THE",
+    "Things American",
+    "Things Russian"
+  ],
+  "The Cuban Revolution": [
+    "1950s",
+    "20th Century",
+    "Ends with ION",
+    "Events",
+    "Revolutions",
+    "Starts with THE",
+    "Things Cuban"
+  ],
+  "The Civil Rights Movement": [
+    "1960s",
+    "Ends with ENT",
+    "Starts with THE"
+  ],
+  "The Chernobyl Disaster": [
+    "1980s",
+    "20th Century",
+    "Disasters",
+    "Ends with TER",
+    "Events",
+    "Starts with THE",
+    "Things Ukrainian"
+  ],
+  "The Iran-Iraq War": [
+    "1980s",
+    "20th Century",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Things Iranian",
+    "Things Iraqi",
+    "Wars"
+  ],
+  "The Yugoslav Wars": [
+    "1990s",
+    "20th Century",
+    "Civil Wars",
+    "Ends with ARS",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Rwandan Genocide": [
+    "1990s",
+    "20th Century",
+    "Ends with IDE",
+    "Events",
+    "Genocides",
+    "Starts with THE",
+    "War Crimes"
+  ],
+  "The Great Recession": [
+    "2000s",
+    "21st Century",
+    "Depressions",
+    "Economic Events",
+    "Ends with ION",
+    "Events",
+    "Starts with THE"
+  ],
+  "The Syrian Civil War": [
+    "2010s",
+    "21st Century",
+    "Civil Wars",
+    "Ends with WAR",
+    "Events",
+    "Starts with THE",
+    "Wars"
+  ],
+  "The Brexit Vote": [
+    "2010s",
+    "21st Century",
+    "Ends with OTE",
+    "Events",
+    "Political Events",
+    "Starts with THE",
+    "Things British"
+  ],
+  "The Russian Invasion of Ukraine": [
+    "2020s",
+    "21st Century",
+    "Ends with INE",
+    "Events",
+    "Starts with THE",
+    "Things Russian",
+    "Things Ukrainian",
+    "Wars"
+  ],
+  "The January 6th Insurrection": [
+    "2020s",
+    "21st Century",
+    "Ends with ION",
+    "Events",
+    "Political Events",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Russian Civil War": [
+    "Civil Wars",
+    "Ends with WAR",
+    "Starts with THE"
+  ],
+  "The Albigensian Crusade": [
+    "Ends with ADE",
+    "Religious Wars",
+    "Starts with THE"
+  ],
+  "The Hussite Wars": [
+    "Ends with ARS",
+    "Religious Wars",
+    "Starts with THE"
+  ],
+  "The Indian Rebellion": [
+    "Colonial Wars",
+    "Ends with ION",
+    "Starts with THE"
+  ],
+  "The Sepoy Mutiny": [
+    "Colonial Wars",
+    "Ends with INY",
+    "Starts with THE"
+  ],
+  "The Haitian Revolution": [
+    "Ends with ION",
+    "Independence Movements",
+    "Revolutions",
+    "Starts with THE"
+  ],
+  "The Wall Street Crash": [
+    "Economic Events",
+    "Ends with ASH",
+    "Starts with THE"
+  ],
+  "The Discovery of Penicillin": [
+    "Ends with LIN",
+    "Scientific Events",
+    "Starts with THE"
+  ],
+  "The Human Genome Project": [
+    "Ends with ECT",
+    "Scientific Events",
+    "Starts with THE"
+  ],
+  "The Apollo Program": [
+    "Ends with RAM",
+    "Space Exploration",
+    "Starts with THE"
+  ],
+  "The Hubble Telescope": [
+    "Ends with OPE",
+    "Space Exploration",
+    "Starts with THE"
+  ],
+  "The Spanish Flu": [
+    "Ends with FLU",
+    "Pandemics",
+    "Starts with THE"
+  ],
+  "The Plague of Justinian": [
+    "Ends with IAN",
+    "Pandemics",
+    "Starts with THE"
+  ],
+  "The AIDS Crisis": [
+    "1980s",
+    "20th Century",
+    "Ends with SIS",
+    "Events",
+    "Health Crises",
+    "Pandemics",
+    "Starts with THE"
+  ],
+  "The Opioid Epidemic": [
+    "2010s",
+    "21st Century",
+    "Ends with MIC",
+    "Events",
+    "Health Crises",
+    "Starts with THE"
+  ],
+  "The Watergate Scandal": [
+    "1970s",
+    "20th Century",
+    "Ends with DAL",
+    "Events",
+    "Political Events",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Iran Hostage Crisis": [
+    "1970s",
+    "20th Century",
+    "Crises",
+    "Ends with SIS",
+    "Events",
+    "Political Events",
+    "Starts with THE",
+    "Things American",
+    "Things Iranian"
+  ],
+  "The Oklahoma City Bombing": [
+    "1990s",
+    "20th Century",
+    "Ends with ING",
+    "Events",
+    "Starts with THE",
+    "Terrorist Attacks"
+  ],
+  "The London Bombings": [
+    "2000s",
+    "21st Century",
+    "Ends with NGS",
+    "Events",
+    "Starts with THE",
+    "Terrorist Attacks",
+    "Things British"
+  ],
+  "The Roman Empire": [
+    "Empire Building",
+    "Ends with IRE",
+    "Starts with THE"
+  ],
+  "The British Empire": [
+    "Empire Building",
+    "Ends with IRE",
+    "Starts with THE"
+  ],
+  "The Mongol Empire": [
+    "Empire Building",
+    "Ends with IRE",
+    "Starts with THE"
+  ],
+  "The Fall of Constantinople": [
+    "Collapses",
+    "Empire Collapses",
+    "Ends with PLE",
+    "Starts with THE"
+  ],
+  "The Collapse of the Soviet Union": [
+    "Collapses",
+    "Empire Collapses",
+    "Ends with ION",
+    "Starts with THE"
+  ],
+  "The Catholic Counter-Reformation": [
+    "16th Century",
+    "Ends with ION",
+    "Events",
+    "Reformations",
+    "Religious Movements",
+    "Starts with THE"
+  ],
+  "The English Reformation": [
+    "16th Century",
+    "Ends with ION",
+    "Events",
+    "Reformations",
+    "Religious Movements",
+    "Starts with THE",
+    "Things British"
+  ],
+  "The Great Awakening": [
+    "18th Century",
+    "Ends with ING",
+    "Events",
+    "Religious Movements",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Second Great Awakening": [
+    "19th Century",
+    "Ends with ING",
+    "Events",
+    "Religious Movements",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Armenian Genocide": [
+    "Ends with IDE",
+    "Genocides",
+    "Starts with THE"
+  ],
+  "The Cambodian Genocide": [
+    "Ends with IDE",
+    "Genocides",
+    "Starts with THE"
+  ],
+  "The My Lai Massacre": [
+    "1960s",
+    "20th Century",
+    "Ends with CRE",
+    "Events",
+    "Starts with THE",
+    "Things American",
+    "Things Vietnamese",
+    "War Crimes"
+  ],
+  "The Nanjing Massacre": [
+    "1930s",
+    "20th Century",
+    "Ends with CRE",
+    "Events",
+    "Starts with THE",
+    "Things Chinese",
+    "Things Japanese",
+    "War Crimes"
+  ],
+  "The Indian Independence Movement": [
+    "Anti-Colonial Movements",
+    "Ends with ENT",
+    "Starts with THE"
+  ],
+  "The Algerian War": [
+    "Anti-Colonial Movements",
+    "Ends with WAR",
+    "Starts with THE"
+  ],
+  "The Mau Mau Uprising": [
+    "Anti-Colonial Movements",
+    "Ends with ING",
+    "Starts with THE"
+  ],
+  "The Latin American Wars of Independence": [
+    "Ends with NCE",
+    "Independence Movements",
+    "Starts with THE"
+  ],
+  "The Greek War of Independence": [
+    "Ends with NCE",
+    "Independence Movements",
+    "Starts with THE"
+  ],
+  "The Second Industrial Revolution": [
+    "19th Century",
+    "Economic Events",
+    "Ends with ION",
+    "Events",
+    "Industrialization",
+    "Starts with THE"
+  ],
+  "The Digital Revolution": [
+    "1990s",
+    "20th Century",
+    "Economic Events",
+    "Ends with ION",
+    "Events",
+    "Industrialization",
+    "Starts with THE"
+  ],
+  "The Long Depression": [
+    "19th Century",
+    "Depressions",
+    "Economic Events",
+    "Ends with ION",
+    "Events",
+    "Starts with THE"
+  ],
+  "The German Reunification": [
+    "1990s",
+    "20th Century",
+    "Ends with ION",
+    "Events",
+    "Reunifications",
+    "Starts with THE",
+    "Things German"
+  ],
+  "The Italian Unification": [
+    "19th Century",
+    "Ends with ION",
+    "Events",
+    "Reunifications",
+    "Starts with THE",
+    "Things Italian"
+  ],
+  "The Whiskey Rebellion": [
+    "Ends with ION",
+    "Rebellions",
+    "Starts with THE"
+  ],
+  "The Shays' Rebellion": [
+    "Ends with ION",
+    "Rebellions",
+    "Starts with THE"
+  ],
+  "The Taiping Rebellion": [
+    "Ends with ION",
+    "Rebellions",
+    "Starts with THE"
+  ],
+  "The 1970s": [
+    "1970s",
+    "Ends with 70S",
+    "Starts with THE"
+  ],
+  "1970s": [
+    "Ends with 70S",
+    "Starts with 197",
+    "The Iran Hostage Crisis",
+    "The Watergate Scandal"
+  ],
+  "Woodstock": [
+    "1960s",
+    "20th Century",
+    "Cultural Events",
+    "Ends with OCK",
+    "Events",
+    "Music Festivals",
+    "Starts with WOO",
+    "Things American"
   ]
 }

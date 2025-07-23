@@ -1,4 +1,188 @@
 {
+  "11th Century": [
+    "The First Crusade",
+    "The Norman Conquest"
+  ],
+  "12th Century BCE": [
+    "The Bronze Age Collapse",
+    "The Trojan War"
+  ],
+  "14th Century": [
+    "The Black Death",
+    "The Hundred Years War",
+    "The Peasants' Revolt"
+  ],
+  "1600s": [
+    "Galileo",
+    "Kepler"
+  ],
+  "16th Century": [
+    "The Catholic Counter-Reformation",
+    "The English Reformation",
+    "The Italian Wars",
+    "The Protestant Reformation",
+    "The Spanish Armada"
+  ],
+  "17th Century": [
+    "Galileo",
+    "Kepler",
+    "The English Civil War",
+    "The Glorious Revolution",
+    "The Great Fire of London",
+    "The Thirty Years War"
+  ],
+  "18th Century": [
+    "The American Revolution",
+    "The French Revolution",
+    "The Great Awakening",
+    "The Industrial Revolution",
+    "The Seven Years' War"
+  ],
+  "1910s": [
+    "The Mexican Revolution",
+    "The Russian Revolution",
+    "The Titanic Disaster",
+    "World War I"
+  ],
+  "1930s": [
+    "The Dust Bowl",
+    "The Great Depression",
+    "The Nanjing Massacre",
+    "The Spanish Civil War"
+  ],
+  "1940s": [
+    "The Battle of Stalingrad",
+    "The Holocaust",
+    "The Manhattan Project",
+    "World War II"
+  ],
+  "1950s": [
+    "NASA",
+    "The Cuban Revolution",
+    "The Korean War",
+    "The Space Race"
+  ],
+  "1960s": [
+    "Apollo",
+    "Gemini",
+    "Mariner",
+    "Mercury",
+    "The Civil Rights Movement",
+    "The Cuban Missile Crisis",
+    "The Moon Landing",
+    "The My Lai Massacre",
+    "The Vietnam War",
+    "Woodstock"
+  ],
+  "1970s": [
+    "Apollo",
+    "Apollo 13",
+    "Mariner",
+    "The 1970s",
+    "The Iran Hostage Crisis",
+    "The Watergate Scandal",
+    "Voyager"
+  ],
+  "1980s": [
+    "The AIDS Crisis",
+    "The Chernobyl Disaster",
+    "The Fall of the Berlin Wall",
+    "The Iran-Iraq War"
+  ],
+  "1990s": [
+    "Hubble",
+    "The Digital Revolution",
+    "The German Reunification",
+    "The Gulf War",
+    "The Oklahoma City Bombing",
+    "The Rwandan Genocide",
+    "The Yugoslav Wars"
+  ],
+  "19th Century": [
+    "The American Civil War",
+    "The Boer War",
+    "The Boxer Rebellion",
+    "The Crimean War",
+    "The Franco-Prussian War",
+    "The Italian Unification",
+    "The Long Depression",
+    "The Napoleonic Wars",
+    "The Second Great Awakening",
+    "The Second Industrial Revolution",
+    "The Spanish-American War"
+  ],
+  "2000s": [
+    "9/11",
+    "The Great Recession",
+    "The Iraq War",
+    "The London Bombings",
+    "The War on Terror"
+  ],
+  "2010s": [
+    "The Arab Spring",
+    "The Brexit Vote",
+    "The Opioid Epidemic",
+    "The Syrian Civil War"
+  ],
+  "2020s": [
+    "The COVID-19 Pandemic",
+    "The January 6th Insurrection",
+    "The Russian Invasion of Ukraine"
+  ],
+  "20th Century": [
+    "Apollo",
+    "Apollo 13",
+    "Gemini",
+    "Hubble",
+    "Mariner",
+    "Mercury",
+    "NASA",
+    "The AIDS Crisis",
+    "The Chernobyl Disaster",
+    "The Cold War",
+    "The Cuban Missile Crisis",
+    "The Cuban Revolution",
+    "The Digital Revolution",
+    "The Dust Bowl",
+    "The Fall of the Berlin Wall",
+    "The German Reunification",
+    "The Great Depression",
+    "The Gulf War",
+    "The Holocaust",
+    "The Iran Hostage Crisis",
+    "The Iran-Iraq War",
+    "The Korean War",
+    "The Moon Landing",
+    "The My Lai Massacre",
+    "The Nanjing Massacre",
+    "The Oklahoma City Bombing",
+    "The Russian Revolution",
+    "The Russo-Japanese War",
+    "The Rwandan Genocide",
+    "The Space Race",
+    "The Spanish Civil War",
+    "The Vietnam War",
+    "The Watergate Scandal",
+    "The Yugoslav Wars",
+    "Voyager",
+    "Woodstock",
+    "World War I",
+    "World War II"
+  ],
+  "21st Century": [
+    "9/11",
+    "The Arab Spring",
+    "The Brexit Vote",
+    "The COVID-19 Pandemic",
+    "The Great Recession",
+    "The Iraq War",
+    "The January 6th Insurrection",
+    "The London Bombings",
+    "The Opioid Epidemic",
+    "The Russian Invasion of Ukraine",
+    "The Syrian Civil War",
+    "The War on Terror"
+  ],
   "2D Animated Films": [
     "101 Dalmatians",
     "A Charlie Brown Christmas",
@@ -98,6 +282,10 @@
     "Wish",
     "Wreck-It Ralph",
     "Zootopia"
+  ],
+  "5th Century": [
+    "The Fall of Rome",
+    "The Sack of Rome"
   ],
   "Abstract Concepts": [
     "INT",
@@ -429,6 +617,12 @@
   "Antarctic Exploration": [
     "Discovery",
     "Terra Nova"
+  ],
+  "Anti-Colonial Movements": [
+    "The Algerian War",
+    "The Boxer Rebellion",
+    "The Indian Independence Movement",
+    "The Mau Mau Uprising"
   ],
   "Appliances": [
     "Cooler",
@@ -1627,6 +1821,14 @@
   "Civil War Stories": [
     "Gone with the Wind"
   ],
+  "Civil Wars": [
+    "The American Civil War",
+    "The English Civil War",
+    "The Russian Civil War",
+    "The Spanish Civil War",
+    "The Syrian Civil War",
+    "The Yugoslav Wars"
+  ],
   "Civilian Ships": [
     "Andrea Doria",
     "Britannic",
@@ -1734,6 +1936,18 @@
     "East Germany",
     "Soviet Union",
     "West Germany"
+  ],
+  "Collapses": [
+    "The Bronze Age Collapse",
+    "The Collapse of the Soviet Union",
+    "The Fall of Constantinople",
+    "The Fall of Rome"
+  ],
+  "Colonial Wars": [
+    "The Boer War",
+    "The Boxer Rebellion",
+    "The Indian Rebellion",
+    "The Sepoy Mutiny"
   ],
   "Colors": [
     "Aurora",
@@ -2672,6 +2886,10 @@
   "Criminals": [
     "Rogue"
   ],
+  "Crises": [
+    "The Cuban Missile Crisis",
+    "The Iran Hostage Crisis"
+  ],
   "Cruise Ships": [
     "Queen Mary"
   ],
@@ -2685,6 +2903,9 @@
     "Akira",
     "Blade Runner",
     "The Matrix"
+  ],
+  "Cultural Events": [
+    "Woodstock"
   ],
   "Cunard Line": [
     "Lusitania",
@@ -2731,6 +2952,11 @@
     "Achilles",
     "Perseus",
     "Theseus"
+  ],
+  "Depressions": [
+    "The Great Depression",
+    "The Great Recession",
+    "The Long Depression"
   ],
   "Deserts": [
     "Gobi",
@@ -2798,6 +3024,7 @@
     "Raptor"
   ],
   "Disaster Stories": [
+    "Apollo 13",
     "Armageddon",
     "Dante's Peak",
     "Everest",
@@ -2820,6 +3047,8 @@
     "Lusitania",
     "Pompeii",
     "Tambora",
+    "The Chernobyl Disaster",
+    "The Dust Bowl",
     "Titanic"
   ],
   "Disney": [
@@ -3030,6 +3259,15 @@
   "East Asian Countries": [
     "Korea"
   ],
+  "Economic Events": [
+    "The Digital Revolution",
+    "The Great Depression",
+    "The Great Recession",
+    "The Industrial Revolution",
+    "The Long Depression",
+    "The Second Industrial Revolution",
+    "The Wall Street Crash"
+  ],
   "Economics": [
     "Bond",
     "Coin",
@@ -3090,6 +3328,18 @@
     "Uranium",
     "Xenon"
   ],
+  "Empire Building": [
+    "The British Empire",
+    "The Mongol Empire",
+    "The Napoleonic Wars",
+    "The Roman Empire"
+  ],
+  "Empire Collapses": [
+    "The Collapse of the Soviet Union",
+    "The Fall of Constantinople",
+    "The Fall of Rome",
+    "The Fall of the Berlin Wall"
+  ],
   "Ends with  13": [
     "Apollo 13"
   ],
@@ -3102,7 +3352,8 @@
   "Ends with  II": [
     "Back to the Future Part II",
     "Ghostbusters II",
-    "The Godfather Part II"
+    "The Godfather Part II",
+    "World War II"
   ],
   "Ends with  MI": [
     "Banh Mi"
@@ -3122,6 +3373,9 @@
   "Ends with .T.": [
     "E.T."
   ],
+  "Ends with /11": [
+    "9/11"
+  ],
   "Ends with /63": [
     "11/22/63"
   ],
@@ -3136,6 +3390,10 @@
   ],
   "Ends with 451": [
     "Fahrenheit 451"
+  ],
+  "Ends with 70S": [
+    "1970s",
+    "The 1970s"
   ],
   "Ends with 984": [
     "1984"
@@ -3158,6 +3416,7 @@
     "Potala Palace",
     "Scarface",
     "The Phantom Menace",
+    "The Space Race",
     "War and Peace"
   ],
   "Ends with ACH": [
@@ -3187,11 +3446,14 @@
     "Feijoada",
     "Grenada",
     "Nevada",
-    "Prada"
+    "Prada",
+    "The Spanish Armada"
   ],
   "Ends with ADE": [
     "Jade",
     "Lemonade",
+    "The Albigensian Crusade",
+    "The First Crusade",
     "Witchblade"
   ],
   "Ends with ADO": [
@@ -3314,6 +3576,7 @@
     "Football",
     "Great Wall",
     "Matzo Ball",
+    "The Fall of the Berlin Wall",
     "Volleyball"
   ],
   "Ends with ALO": [
@@ -3519,7 +3782,11 @@
     "Cars",
     "Mars",
     "Star Wars",
-    "The Fault in Our Stars"
+    "The Fault in Our Stars",
+    "The Hussite Wars",
+    "The Italian Wars",
+    "The Napoleonic Wars",
+    "The Yugoslav Wars"
   ],
   "Ends with ART": [
     "Braveheart",
@@ -3550,7 +3817,8 @@
     "Bangers and Mash",
     "Crash",
     "Flash",
-    "Hash"
+    "Hash",
+    "The Wall Street Crash"
   ],
   "Ends with ASO": [
     "Burkina Faso"
@@ -3585,6 +3853,7 @@
   ],
   "Ends with ATH": [
     "Goliath",
+    "The Black Death",
     "The Grapes of Wrath"
   ],
   "Ends with ATI": [
@@ -3907,7 +4176,9 @@
     "Cow"
   ],
   "Ends with CRE": [
-    "Tarte au Sucre"
+    "Tarte au Sucre",
+    "The My Lai Massacre",
+    "The Nanjing Massacre"
   ],
   "Ends with CRO": [
     "Locro"
@@ -3937,7 +4208,8 @@
     "Sundae"
   ],
   "Ends with DAL": [
-    "Dal"
+    "Dal",
+    "The Watergate Scandal"
   ],
   "Ends with DAM": [
     "Dam"
@@ -4044,6 +4316,7 @@
     "London",
     "Poseidon",
     "Radon",
+    "The Great Fire of London",
     "Udon"
   ],
   "Ends with DOO": [
@@ -4125,7 +4398,9 @@
     "The King's Speech"
   ],
   "Ends with ECT": [
-    "The Butterfly Effect"
+    "The Butterfly Effect",
+    "The Human Genome Project",
+    "The Manhattan Project"
   ],
   "Ends with EDI": [
     "Return of the Jedi",
@@ -4263,8 +4538,10 @@
     "Fluorescent",
     "Rent",
     "Terms of Endearment",
+    "The Civil Rights Movement",
     "The English Patient",
     "The Fifth Element",
+    "The Indian Independence Movement",
     "The Philadelphia Experiment"
   ],
   "Ends with EOK": [
@@ -4370,7 +4647,8 @@
     "Key West",
     "One Flew Over the Cuckoo's Nest",
     "Pirates of the Caribbean: Dead Man's Chest",
-    "The Dark Forest"
+    "The Dark Forest",
+    "The Norman Conquest"
   ],
   "Ends with ETA": [
     "Beta",
@@ -4463,6 +4741,9 @@
     "Rifle",
     "Souffle",
     "Trifle"
+  ],
+  "Ends with FLU": [
+    "The Spanish Flu"
   ],
   "Ends with FLY": [
     "Butterfly"
@@ -4723,7 +5004,8 @@
   "Ends with IAN": [
     "Italian",
     "Marvin the Martian",
-    "Prince Caspian"
+    "Prince Caspian",
+    "The Plague of Justinian"
   ],
   "Ends with IAR": [
     "Caviar"
@@ -4789,6 +5071,11 @@
   ],
   "Ends with IDA": [
     "Florida"
+  ],
+  "Ends with IDE": [
+    "The Armenian Genocide",
+    "The Cambodian Genocide",
+    "The Rwandan Genocide"
   ],
   "Ends with IDO": [
     "Hokkaido"
@@ -4934,6 +5221,7 @@
     "Rhine",
     "Seine",
     "Sparkling Wine",
+    "The Russian Invasion of Ukraine",
     "The Time Machine",
     "Ukraine",
     "White Wine",
@@ -4970,9 +5258,15 @@
     "Sticky Toffee Pudding",
     "Surfing",
     "Swimming",
+    "The Arab Spring",
+    "The Great Awakening",
     "The Lion King",
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Return of the King",
+    "The Mau Mau Uprising",
+    "The Moon Landing",
+    "The Oklahoma City Bombing",
+    "The Second Great Awakening",
     "The Shining",
     "The Thing",
     "Trainspotting",
@@ -5004,6 +5298,9 @@
     "INT",
     "Vantage Point"
   ],
+  "Ends with INY": [
+    "The Sepoy Mutiny"
+  ],
   "Ends with IOH": [
     "Yugioh"
   ],
@@ -5023,9 +5320,34 @@
     "Scorpion",
     "Soviet Union",
     "Stallion",
+    "The American Revolution",
+    "The Boxer Rebellion",
+    "The Catholic Counter-Reformation",
+    "The Collapse of the Soviet Union",
+    "The Cuban Revolution",
+    "The Digital Revolution",
+    "The English Reformation",
     "The French Connection",
+    "The French Revolution",
+    "The German Reunification",
+    "The Glorious Revolution",
+    "The Great Depression",
+    "The Great Recession",
+    "The Haitian Revolution",
+    "The Indian Rebellion",
+    "The Industrial Revolution",
+    "The Italian Unification",
+    "The January 6th Insurrection",
+    "The Long Depression",
+    "The Mexican Revolution",
+    "The Protestant Reformation",
+    "The Russian Revolution",
+    "The Second Industrial Revolution",
     "The Shawshank Redemption",
-    "The Silmarillion"
+    "The Shays' Rebellion",
+    "The Silmarillion",
+    "The Taiping Rebellion",
+    "The Whiskey Rebellion"
   ],
   "Ends with IOR": [
     "Super Junior",
@@ -5060,7 +5382,10 @@
     "Sapphire",
     "Slumdog Millionaire",
     "Solitaire",
-    "Temeraire"
+    "Temeraire",
+    "The British Empire",
+    "The Mongol Empire",
+    "The Roman Empire"
   ],
   "Ends with IRI": [
     "Onigiri"
@@ -5420,6 +5745,7 @@
     "Dublin",
     "Graf Zeppelin",
     "Green Goblin",
+    "The Discovery of Penicillin",
     "Violin",
     "Zeppelin"
   ],
@@ -5598,7 +5924,9 @@
     "Dahomey"
   ],
   "Ends with MIC": [
-    "Pandemic"
+    "Pandemic",
+    "The COVID-19 Pandemic",
+    "The Opioid Epidemic"
   ],
   "Ends with MIS": [
     "Temple of Artemis"
@@ -5673,6 +6001,8 @@
     "Prince",
     "Providence",
     "The Age of Innocence",
+    "The Greek War of Independence",
+    "The Latin American Wars of Independence",
     "The Little Prince"
   ],
   "Ends with NCH": [
@@ -5788,6 +6118,7 @@
     "Tango"
   ],
   "Ends with NGS": [
+    "The London Bombings",
     "The Lord of the Rings"
   ],
   "Ends with NHA": [
@@ -5978,7 +6309,8 @@
     "Bannock",
     "Little Rock",
     "Peacock",
-    "Spock"
+    "Spock",
+    "Woodstock"
   ],
   "Ends with OCO": [
     "Coco"
@@ -6089,7 +6421,8 @@
     "Water Polo"
   ],
   "Ends with OLT": [
-    "Bolt"
+    "Bolt",
+    "The Peasants' Revolt"
   ],
   "Ends with OLY": [
     "Monopoly"
@@ -6102,7 +6435,9 @@
     "Roma"
   ],
   "Ends with OME": [
-    "Rome"
+    "Rome",
+    "The Fall of Rome",
+    "The Sack of Rome"
   ],
   "Ends with OMS": [
     "Romance of the Three Kingdoms"
@@ -6180,7 +6515,8 @@
     "Europa"
   ],
   "Ends with OPE": [
-    "Envelope"
+    "Envelope",
+    "The Hubble Telescope"
   ],
   "Ends with OPS": [
     "Cyclops"
@@ -6272,6 +6608,7 @@
     "Don Quixote",
     "Lanzarote",
     "Note",
+    "The Brexit Vote",
     "Wile E. Coyote"
   ],
   "Ends with OTH": [
@@ -6322,7 +6659,8 @@
     "The Emperor's New Groove"
   ],
   "Ends with OWL": [
-    "Owl"
+    "Owl",
+    "The Dust Bowl"
   ],
   "Ends with OWN": [
     "Chinatown",
@@ -6410,7 +6748,8 @@
     "Green Apple",
     "Ordinary People",
     "Purple",
-    "The Color Purple"
+    "The Color Purple",
+    "The Fall of Constantinople"
   ],
   "Ends with POE": [
     "Poe"
@@ -6426,6 +6765,9 @@
   ],
   "Ends with PRI": [
     "Capri"
+  ],
+  "Ends with PSE": [
+    "The Bronze Age Collapse"
   ],
   "Ends with PSI": [
     "Psi"
@@ -6448,6 +6790,9 @@
     "Mozambique",
     "Mystique"
   ],
+  "Ends with R I": [
+    "World War I"
+  ],
   "Ends with R X": [
     "Professor X"
   ],
@@ -6456,6 +6801,9 @@
   ],
   "Ends with RAC": [
     "Dirac"
+  ],
+  "Ends with RAD": [
+    "The Battle of Stalingrad"
   ],
   "Ends with RAE": [
     "Kosrae"
@@ -6469,7 +6817,8 @@
   ],
   "Ends with RAM": [
     "Fram",
-    "Ram"
+    "Ram",
+    "The Apollo Program"
   ],
   "Ends with RAN": [
     "Ayran",
@@ -6654,6 +7003,7 @@
   ],
   "Ends with ROR": [
     "The Last Emperor",
+    "The War on Terror",
     "William the Conqueror"
   ],
   "Ends with ROS": [
@@ -6839,6 +7189,11 @@
   "Ends with SIO": [
     "Pastitsio"
   ],
+  "Ends with SIS": [
+    "The AIDS Crisis",
+    "The Cuban Missile Crisis",
+    "The Iran Hostage Crisis"
+  ],
   "Ends with SIU": [
     "Char Siu"
   ],
@@ -6986,10 +7341,12 @@
     "Polyester",
     "Rooster",
     "Sylvester",
+    "The Chernobyl Disaster",
     "The Deer Hunter",
     "The Grandmaster",
     "The Scarlet Letter",
     "The Shape of Water",
+    "The Titanic Disaster",
     "Toaster"
   ],
   "Ends with TES": [
@@ -7292,7 +7649,8 @@
   "Ends with UST": [
     "Light in August",
     "Rust",
-    "The First Fifteen Lives of Harry August"
+    "The First Fifteen Lives of Harry August",
+    "The Holocaust"
   ],
   "Ends with UTE": [
     "Veloute"
@@ -7377,6 +7735,27 @@
     "Taiwan"
   ],
   "Ends with WAR": [
+    "The Algerian War",
+    "The American Civil War",
+    "The Boer War",
+    "The Cold War",
+    "The Crimean War",
+    "The English Civil War",
+    "The Franco-Prussian War",
+    "The Gulf War",
+    "The Hundred Years War",
+    "The Iran-Iraq War",
+    "The Iraq War",
+    "The Korean War",
+    "The Russian Civil War",
+    "The Russo-Japanese War",
+    "The Seven Years' War",
+    "The Spanish Civil War",
+    "The Spanish-American War",
+    "The Syrian Civil War",
+    "The Thirty Years War",
+    "The Trojan War",
+    "The Vietnam War",
     "Total War"
   ],
   "Ends with WAT": [
@@ -7581,7 +7960,90 @@
     "Yugoslavia"
   ],
   "Events": [
-    "CON"
+    "9/11",
+    "CON",
+    "Challenger",
+    "Chernobyl",
+    "Deepwater Horizon",
+    "Empress of Ireland",
+    "Fallout",
+    "Fukushima",
+    "Herculaneum",
+    "Hindenburg",
+    "Katrina",
+    "Krakatoa",
+    "Lusitania",
+    "Pompeii",
+    "Tambora",
+    "The AIDS Crisis",
+    "The American Civil War",
+    "The American Revolution",
+    "The Arab Spring",
+    "The Black Death",
+    "The Boer War",
+    "The Boxer Rebellion",
+    "The Brexit Vote",
+    "The Bronze Age Collapse",
+    "The COVID-19 Pandemic",
+    "The Catholic Counter-Reformation",
+    "The Chernobyl Disaster",
+    "The Cold War",
+    "The Cuban Missile Crisis",
+    "The Cuban Revolution",
+    "The Digital Revolution",
+    "The Dust Bowl",
+    "The English Civil War",
+    "The English Reformation",
+    "The Fall of Rome",
+    "The Fall of the Berlin Wall",
+    "The First Crusade",
+    "The Franco-Prussian War",
+    "The French Revolution",
+    "The German Reunification",
+    "The Glorious Revolution",
+    "The Great Awakening",
+    "The Great Depression",
+    "The Great Recession",
+    "The Gulf War",
+    "The Holocaust",
+    "The Hundred Years War",
+    "The Industrial Revolution",
+    "The Iran Hostage Crisis",
+    "The Iran-Iraq War",
+    "The Iraq War",
+    "The Italian Unification",
+    "The Italian Wars",
+    "The January 6th Insurrection",
+    "The Korean War",
+    "The London Bombings",
+    "The Long Depression",
+    "The Moon Landing",
+    "The My Lai Massacre",
+    "The Nanjing Massacre",
+    "The Napoleonic Wars",
+    "The Oklahoma City Bombing",
+    "The Opioid Epidemic",
+    "The Peasants' Revolt",
+    "The Protestant Reformation",
+    "The Russian Invasion of Ukraine",
+    "The Russian Revolution",
+    "The Russo-Japanese War",
+    "The Rwandan Genocide",
+    "The Second Great Awakening",
+    "The Second Industrial Revolution",
+    "The Space Race",
+    "The Spanish Armada",
+    "The Spanish Civil War",
+    "The Spanish-American War",
+    "The Syrian Civil War",
+    "The Thirty Years War",
+    "The Vietnam War",
+    "The Watergate Scandal",
+    "The Yugoslav Wars",
+    "Titanic",
+    "Woodstock",
+    "World War I",
+    "World War II"
   ],
   "Exploration Ships": [
     "Beagle",
@@ -8763,6 +9225,12 @@
     "Ruby",
     "Sapphire"
   ],
+  "Genocides": [
+    "The Armenian Genocide",
+    "The Cambodian Genocide",
+    "The Holocaust",
+    "The Rwandan Genocide"
+  ],
   "George Orwell": [
     "Animal Farm"
   ],
@@ -8908,6 +9376,11 @@
     "Kafka on the Shore",
     "Norwegian Wood",
     "The Wind-Up Bird Chronicle"
+  ],
+  "Health Crises": [
+    "The AIDS Crisis",
+    "The COVID-19 Pandemic",
+    "The Opioid Epidemic"
   ],
   "Heist Films": [
     "The Italian Job"
@@ -9091,6 +9564,17 @@
   ],
   "Incan Architecture": [
     "Machu Picchu"
+  ],
+  "Independence Movements": [
+    "The American Revolution",
+    "The Greek War of Independence",
+    "The Haitian Revolution",
+    "The Latin American Wars of Independence"
+  ],
+  "Industrialization": [
+    "The Digital Revolution",
+    "The Industrial Revolution",
+    "The Second Industrial Revolution"
   ],
   "Ingredients in Cobb Salad": [
     "Avocado",
@@ -13643,6 +14127,9 @@
     "Tune",
     "Violin"
   ],
+  "Music Festivals": [
+    "Woodstock"
+  ],
   "Musical Films": [
     "101 Dalmatians",
     "Aladdin",
@@ -14143,6 +14630,13 @@
   ],
   "Palme d'Or Winners": [
     "Farewell My Concubine"
+  ],
+  "Pandemics": [
+    "The AIDS Crisis",
+    "The Black Death",
+    "The COVID-19 Pandemic",
+    "The Plague of Justinian",
+    "The Spanish Flu"
   ],
   "Parts of a Song": [
     "Beat",
@@ -14950,6 +15444,20 @@
     "Poe",
     "Shakespeare"
   ],
+  "Political Events": [
+    "9/11",
+    "The Arab Spring",
+    "The Brexit Vote",
+    "The Cold War",
+    "The Cuban Missile Crisis",
+    "The Fall of the Berlin Wall",
+    "The French Revolution",
+    "The Glorious Revolution",
+    "The Iran Hostage Crisis",
+    "The January 6th Insurrection",
+    "The Russian Revolution",
+    "The Watergate Scandal"
+  ],
   "Political Fiction": [
     "1984"
   ],
@@ -15165,6 +15673,13 @@
     "Wright",
     "Zheng He"
   ],
+  "Rebellions": [
+    "The Boxer Rebellion",
+    "The Peasants' Revolt",
+    "The Shays' Rebellion",
+    "The Taiping Rebellion",
+    "The Whiskey Rebellion"
+  ],
   "Red Things": [
     "Apple",
     "Barszcz",
@@ -15200,10 +15715,22 @@
     "Tomato",
     "Wonder Woman"
   ],
+  "Reformations": [
+    "The Catholic Counter-Reformation",
+    "The English Reformation",
+    "The Protestant Reformation"
+  ],
   "Religious Figures": [
     "Joan of Arc",
     "Saint Patrick",
     "Teresa"
+  ],
+  "Religious Movements": [
+    "The Catholic Counter-Reformation",
+    "The English Reformation",
+    "The Great Awakening",
+    "The Protestant Reformation",
+    "The Second Great Awakening"
   ],
   "Religious Sites": [
     "Angkor Wat",
@@ -15244,6 +15771,12 @@
   "Religious Titles": [
     "Bishop",
     "Cardinal"
+  ],
+  "Religious Wars": [
+    "The Albigensian Crusade",
+    "The First Crusade",
+    "The Hussite Wars",
+    "The Thirty Years War"
   ],
   "Remakes": [
     "West Side Story"
@@ -15379,8 +15912,22 @@
     "Zambia",
     "Zimbabwe"
   ],
+  "Reunifications": [
+    "The Fall of the Berlin Wall",
+    "The German Reunification",
+    "The Italian Unification"
+  ],
   "Revenge Stories": [
     "The Count of Monte Cristo"
+  ],
+  "Revolutions": [
+    "The American Revolution",
+    "The Arab Spring",
+    "The Cuban Revolution",
+    "The French Revolution",
+    "The Glorious Revolution",
+    "The Haitian Revolution",
+    "The Russian Revolution"
   ],
   "Rhythm": [
     "Beat"
@@ -15740,6 +16287,13 @@
     "X-Men: Days of Future Past",
     "X-Men: First Class"
   ],
+  "Scientific Events": [
+    "The Discovery of Penicillin",
+    "The Human Genome Project",
+    "The Manhattan Project",
+    "The Moon Landing",
+    "The Space Race"
+  ],
   "Scientific Research": [
     "Challenger"
   ],
@@ -16058,6 +16612,12 @@
   "South American Countries": [
     "Gran Colombia"
   ],
+  "Space Exploration": [
+    "The Apollo Program",
+    "The Hubble Telescope",
+    "The Moon Landing",
+    "The Space Race"
+  ],
   "Space Missions": [
     "Apollo",
     "Apollo 13",
@@ -16068,6 +16628,8 @@
     "Mariner",
     "Mercury",
     "NASA",
+    "The Moon Landing",
+    "The Space Race",
     "Voyager"
   ],
   "Space Stories": [
@@ -16274,6 +16836,9 @@
     "12 Monkeys",
     "12 Years a Slave"
   ],
+  "Starts with 197": [
+    "1970s"
+  ],
   "Starts with 198": [
     "1984"
   ],
@@ -16288,6 +16853,9 @@
   ],
   "Starts with 2PM": [
     "2PM"
+  ],
+  "Starts with 9/1": [
+    "9/11"
   ],
   "Starts with A B": [
     "A Beautiful Mind",
@@ -20206,46 +20774,85 @@
     "Thanos"
   ],
   "Starts with THE": [
+    "The 1970s",
+    "The AIDS Crisis",
     "The Adventures of Tom Sawyer",
     "The Age of Innocence",
+    "The Albigensian Crusade",
     "The Alchemist",
+    "The Algerian War",
+    "The American Civil War",
+    "The American Revolution",
     "The Anubis Gates",
+    "The Apollo Program",
+    "The Arab Spring",
     "The Aristocats",
+    "The Armenian Genocide",
     "The Artist",
+    "The Battle of Stalingrad",
     "The Bell Jar",
     "The Big Sleep",
     "The Black Cauldron",
+    "The Black Death",
+    "The Boer War",
+    "The Boxer Rebellion",
+    "The Brexit Vote",
     "The Bridge on the River Kwai",
+    "The British Empire",
+    "The Bronze Age Collapse",
     "The Brothers Karamazov",
     "The Butterfly Effect",
+    "The COVID-19 Pandemic",
     "The Call of the Wild",
+    "The Cambodian Genocide",
     "The Cat Returns",
     "The Catcher in the Rye",
+    "The Catholic Counter-Reformation",
+    "The Chernobyl Disaster",
     "The Chronicles of Narnia",
     "The Chronicles of Narnia: The Magician's Nephew",
+    "The Civil Rights Movement",
+    "The Cold War",
+    "The Collapse of the Soviet Union",
     "The Color Purple",
     "The Count of Monte Cristo",
+    "The Crimean War",
     "The Crying Game",
+    "The Cuban Missile Crisis",
+    "The Cuban Revolution",
     "The Da Vinci Code",
     "The Dark Forest",
     "The Deer Hunter",
     "The Departed",
     "The Devil's Advocate",
+    "The Digital Revolution",
+    "The Discovery of Penicillin",
     "The Divine Comedy",
     "The Door into Summer",
+    "The Dust Bowl",
     "The Emperor's New Groove",
     "The Empire Strikes Back",
     "The End of Eternity",
+    "The English Civil War",
     "The English Patient",
+    "The English Reformation",
     "The Exorcist",
+    "The Fall of Constantinople",
+    "The Fall of Rome",
+    "The Fall of the Berlin Wall",
     "The Fault in Our Stars",
     "The Fifth Element",
+    "The First Crusade",
     "The First Fifteen Lives of Harry August",
     "The Force Awakens",
     "The Fox and the Hound",
+    "The Franco-Prussian War",
     "The French Connection",
+    "The French Revolution",
     "The Full Monty",
+    "The German Reunification",
     "The Girl with the Dragon Tattoo",
+    "The Glorious Revolution",
     "The Godfather",
     "The Godfather Part II",
     "The Godfather Part III",
@@ -20254,11 +20861,18 @@
     "The Grand Budapest Hotel",
     "The Grandmaster",
     "The Grapes of Wrath",
+    "The Great Awakening",
+    "The Great Depression",
+    "The Great Fire of London",
     "The Great Gatsby",
     "The Great Mouse Detective",
+    "The Great Recession",
     "The Greatest Showman",
+    "The Greek War of Independence",
     "The Green Mile",
     "The Grinch",
+    "The Gulf War",
+    "The Haitian Revolution",
     "The Hand",
     "The Handmaid's Tale",
     "The Hateful Eight",
@@ -20266,25 +20880,43 @@
     "The Hitchhiker's Guide to the Galaxy",
     "The Hobbit",
     "The Holiday",
+    "The Holocaust",
+    "The Hubble Telescope",
+    "The Human Genome Project",
     "The Hunchback of Notre Dame",
+    "The Hundred Years War",
     "The Hunger Games",
     "The Hurt Locker",
+    "The Hussite Wars",
     "The Ice Storm",
     "The Iliad",
     "The Incredibles",
+    "The Indian Independence Movement",
+    "The Indian Rebellion",
+    "The Industrial Revolution",
+    "The Iran Hostage Crisis",
+    "The Iran-Iraq War",
+    "The Iraq War",
     "The Irishman",
     "The Italian Job",
+    "The Italian Unification",
+    "The Italian Wars",
+    "The January 6th Insurrection",
     "The Jungle Book",
     "The Killer",
     "The King's Speech",
+    "The Korean War",
     "The Ladykillers",
     "The Lake House",
     "The Last Emperor",
     "The Last Jedi",
+    "The Latin American Wars of Independence",
     "The Lion King",
     "The Lion, the Witch and the Wardrobe",
     "The Little Mermaid",
     "The Little Prince",
+    "The London Bombings",
+    "The Long Depression",
     "The Lord of the Rings",
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Return of the King",
@@ -20295,21 +20927,35 @@
     "The Maltese Falcon",
     "The Man Who Fell to Earth",
     "The Man in the High Castle",
+    "The Manhattan Project",
     "The Many Adventures of Winnie the Pooh",
     "The Map of Chaos",
     "The Map of Time",
     "The Map of the Sky",
     "The Matrix",
+    "The Mau Mau Uprising",
+    "The Mexican Revolution",
+    "The Mongol Empire",
+    "The Moon Landing",
     "The Muppet Christmas Carol",
+    "The My Lai Massacre",
+    "The Nanjing Massacre",
+    "The Napoleonic Wars",
     "The Nightmare Before Christmas",
+    "The Norman Conquest",
     "The Odyssey",
+    "The Oklahoma City Bombing",
     "The Old Man and the Sea",
+    "The Opioid Epidemic",
     "The Parent Trap",
+    "The Peasants' Revolt",
     "The Phantom Menace",
     "The Phantom of the Opera",
     "The Philadelphia Experiment",
+    "The Plague of Justinian",
     "The Polar Express",
     "The Princess and the Frog",
+    "The Protestant Reformation",
     "The Ramayana",
     "The Red Badge of Courage",
     "The Red Shoes",
@@ -20319,22 +20965,41 @@
     "The Revenant",
     "The Rise of Skywalker",
     "The Road",
+    "The Roman Empire",
+    "The Russian Civil War",
+    "The Russian Invasion of Ukraine",
+    "The Russian Revolution",
+    "The Russo-Japanese War",
+    "The Rwandan Genocide",
+    "The Sack of Rome",
     "The Santa Clause",
     "The Santa Clause 2",
     "The Santa Clause 3: The Escape Clause",
     "The Scarlet Letter",
+    "The Second Great Awakening",
+    "The Second Industrial Revolution",
     "The Secret Garden",
+    "The Sepoy Mutiny",
+    "The Seven Years' War",
     "The Shape of Water",
     "The Shawshank Redemption",
+    "The Shays' Rebellion",
     "The Shining",
     "The Silence of the Lambs",
     "The Silmarillion",
     "The Sixth Sense",
     "The Sound and the Fury",
     "The Sound of Music",
+    "The Space Race",
+    "The Spanish Armada",
+    "The Spanish Civil War",
+    "The Spanish Flu",
+    "The Spanish-American War",
     "The Stand",
     "The Sun Also Rises",
     "The Sword in the Stone",
+    "The Syrian Civil War",
+    "The Taiping Rebellion",
     "The Tale of Genji",
     "The Tale of Peter Rabbit",
     "The Tale of the Heike",
@@ -20342,20 +21007,29 @@
     "The Terminator",
     "The Thing",
     "The Third Man",
+    "The Thirty Years War",
     "The Three-Body Problem",
     "The Time Machine",
     "The Time Ships",
     "The Time Traveler's Almanac",
     "The Time Traveler's Wife",
+    "The Titanic Disaster",
+    "The Trojan War",
     "The Usual Suspects",
     "The Very Hungry Caterpillar",
+    "The Vietnam War",
     "The Village",
+    "The Wall Street Crash",
     "The Wandering Earth",
+    "The War on Terror",
+    "The Watergate Scandal",
+    "The Whiskey Rebellion",
     "The Wicker Man",
     "The Wind Rises",
     "The Wind in the Willows",
     "The Wind-Up Bird Chronicle",
     "The Wizard of Oz",
+    "The Yugoslav Wars",
     "Thera",
     "Theseus",
     "Theta"
@@ -20705,8 +21379,13 @@
     "Wonder Woman",
     "Wonton"
   ],
+  "Starts with WOO": [
+    "Woodstock"
+  ],
   "Starts with WOR": [
     "Working Girl",
+    "World War I",
+    "World War II",
     "Worm"
   ],
   "Starts with WRE": [
@@ -21071,6 +21750,11 @@
     "Jobs",
     "Musk"
   ],
+  "Terrorist Attacks": [
+    "9/11",
+    "The London Bombings",
+    "The Oklahoma City Bombing"
+  ],
   "The Bad Place": [
     "Cerberus",
     "Damnation",
@@ -21095,11 +21779,17 @@
     "Harp",
     "Soul"
   ],
+  "The Iran Hostage Crisis": [
+    "1970s"
+  ],
   "The Rime of the Ancient Mariner": [
     "Albatross",
     "Board",
     "Mariner",
     "Ocean"
+  ],
+  "The Watergate Scandal": [
+    "1970s"
   ],
   "Things Abkhazian": [
     "Abkhazia"
@@ -21121,6 +21811,8 @@
     "American Football",
     "Annapolis",
     "Annie Hall",
+    "Apollo",
+    "Apollo 13",
     "Apple Pie",
     "As I Lay Dying",
     "Atlanta",
@@ -21176,6 +21868,7 @@
     "Forrest Gump",
     "Franklin D. Roosevelt",
     "Fried Chicken",
+    "Gemini",
     "George Washington",
     "Gone with the Wind",
     "Goodfellas",
@@ -21189,6 +21882,7 @@
     "Hornet",
     "Hot Chocolate",
     "Hot Dog",
+    "Hubble",
     "Iced Tea",
     "Indianapolis",
     "Jackson",
@@ -21210,8 +21904,10 @@
     "Mac and Cheese",
     "Madonna",
     "Manhattan",
+    "Mariner",
     "Martha's Vineyard",
     "Mayo",
+    "Mercury",
     "Met",
     "Miami",
     "Midnight Cowboy",
@@ -21275,22 +21971,30 @@
     "The Age of Innocence",
     "The Bell Jar",
     "The Call of the Wild",
+    "The Dust Bowl",
     "The Exorcist",
     "The French Connection",
     "The Godfather",
     "The Graduate",
     "The Grapes of Wrath",
+    "The Great Awakening",
     "The Great Gatsby",
     "The Green Mile",
+    "The Iran Hostage Crisis",
+    "The January 6th Insurrection",
     "The Matrix",
+    "The My Lai Massacre",
     "The Old Man and the Sea",
     "The Red Badge of Courage",
     "The Scarlet Letter",
+    "The Second Great Awakening",
     "The Shawshank Redemption",
     "The Silence of the Lambs",
     "The Sound and the Fury",
+    "The Space Race",
     "The Sun Also Rises",
     "The Usual Suspects",
+    "The Watergate Scandal",
     "The Wizard of Oz",
     "Thomas Edison",
     "Titanic",
@@ -21303,9 +22007,11 @@
     "United States",
     "Usher",
     "Volleyball",
+    "Voyager",
     "Washington",
     "Water Polo",
     "Weightlifting",
+    "Woodstock",
     "Wrestling",
     "Wright",
     "Yorktown"
@@ -21483,25 +22189,30 @@
     "Tennis",
     "Terra Nova",
     "Thames",
+    "The Brexit Vote",
     "The Bridge on the River Kwai",
     "The Chronicles of Narnia",
     "The Chronicles of Narnia: The Magician's Nephew",
     "The Crying Game",
     "The English Patient",
+    "The English Reformation",
     "The Full Monty",
     "The Hobbit",
     "The Italian Job",
     "The Jungle Book",
     "The Ladykillers",
     "The Lion, the Witch and the Wardrobe",
+    "The London Bombings",
     "The Lord of the Rings",
     "The Madness of King George",
     "The Magician's Nephew",
     "The Man Who Fell to Earth",
+    "The Peasants' Revolt",
     "The Red Shoes",
     "The Remains of the Day",
     "The Secret Garden",
     "The Silmarillion",
+    "The Spanish Armada",
     "The Tale of Peter Rabbit",
     "The Third Man",
     "The Wicker Man",
@@ -21664,6 +22375,7 @@
     "The Grandmaster",
     "The Hand",
     "The Killer",
+    "The Nanjing Massacre",
     "The Three-Body Problem",
     "The Wandering Earth",
     "Twice Cooked Pork",
@@ -21693,7 +22405,8 @@
     "Croatia"
   ],
   "Things Cuban": [
-    "Cuba"
+    "Cuba",
+    "The Cuban Revolution"
   ],
   "Things Czech": [
     "Czech Republic",
@@ -21840,6 +22553,7 @@
     "Graf Zeppelin",
     "Handel",
     "Kartoffelsalat",
+    "Kepler",
     "Käsespätzle",
     "Luge",
     "Pretzel",
@@ -21852,6 +22566,7 @@
     "Scharnhorst",
     "Schnitzel",
     "Spätzle",
+    "The German Reunification",
     "Tirpitz",
     "Weissbier"
   ],
@@ -21968,11 +22683,14 @@
   ],
   "Things Iranian": [
     "Iran",
-    "Persia"
+    "Persia",
+    "The Iran Hostage Crisis",
+    "The Iran-Iraq War"
   ],
   "Things Iraqi": [
     "Baghdad",
-    "Iraq"
+    "Iraq",
+    "The Iran-Iraq War"
   ],
   "Things Irish": [
     "Dublin",
@@ -22039,6 +22757,8 @@
     "St. Peter's Basilica",
     "The Divine Comedy",
     "The Good, the Bad and the Ugly",
+    "The Italian Unification",
+    "The Italian Wars",
     "Tiramisu",
     "Tomato",
     "Tortellini",
@@ -22133,6 +22853,7 @@
     "Teriyaki",
     "The Cat Returns",
     "The Hidden Fortress",
+    "The Nanjing Massacre",
     "The Tale of Genji",
     "The Tale of the Heike",
     "The Tale of the Princess Kaguya",
@@ -22433,6 +23154,8 @@
     "Shashlik",
     "Solyanka",
     "The Brothers Karamazov",
+    "The Russian Invasion of Ukraine",
+    "The Space Race",
     "Vareniki",
     "Vodka",
     "Volga",
@@ -22532,6 +23255,8 @@
     "Spain",
     "Tapas",
     "Tenerife",
+    "The Spanish Armada",
+    "The Spanish Civil War",
     "Trinidad",
     "Victoria"
   ],
@@ -22615,6 +23340,8 @@
   ],
   "Things Ukrainian": [
     "Chernobyl",
+    "The Chernobyl Disaster",
+    "The Russian Invasion of Ukraine",
     "Ukraine"
   ],
   "Things Uruguayan": [
@@ -22641,6 +23368,7 @@
     "Nuoc Cham",
     "Pho",
     "South Vietnam",
+    "The My Lai Massacre",
     "Vietnam"
   ],
   "Things Yemeni": [
@@ -23178,6 +23906,12 @@
   "Wachowskis": [
     "The Matrix"
   ],
+  "War Crimes": [
+    "The Holocaust",
+    "The My Lai Massacre",
+    "The Nanjing Massacre",
+    "The Rwandan Genocide"
+  ],
   "War Films": [
     "Casablanca",
     "Dr. Strangelove",
@@ -23233,7 +23967,30 @@
     "Yosemite Sam"
   ],
   "Wars": [
-    "Total War"
+    "The American Civil War",
+    "The Boer War",
+    "The Cold War",
+    "The English Civil War",
+    "The Franco-Prussian War",
+    "The Gulf War",
+    "The Hundred Years War",
+    "The Iran-Iraq War",
+    "The Iraq War",
+    "The Italian Wars",
+    "The Korean War",
+    "The Napoleonic Wars",
+    "The Russian Invasion of Ukraine",
+    "The Russo-Japanese War",
+    "The Spanish Armada",
+    "The Spanish Civil War",
+    "The Spanish-American War",
+    "The Syrian Civil War",
+    "The Thirty Years War",
+    "The Vietnam War",
+    "The Yugoslav Wars",
+    "Total War",
+    "World War I",
+    "World War II"
   ],
   "Warships": [
     "Akagi",
@@ -23400,6 +24157,10 @@
     "Tirpitz",
     "Yamato",
     "Yorktown"
+  ],
+  "World Wars": [
+    "World War I",
+    "World War II"
   ],
   "Writers": [
     "Aristotle",

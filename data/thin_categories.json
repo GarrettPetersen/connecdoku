@@ -71,9 +71,6 @@
   "Psychology Terms": [
     "Persona"
   ],
-  "Wars": [
-    "Total War"
-  ],
   "Sports Terms": [
     "Overwatch"
   ],
@@ -130,9 +127,6 @@
   ],
   "Rhythm": [
     "Beat"
-  ],
-  "Events": [
-    "CON"
   ],
   "Things Greenlandic": [
     "Greenland"
@@ -202,9 +196,6 @@
   ],
   "Things Croatian": [
     "Croatia"
-  ],
-  "Things Cuban": [
-    "Cuba"
   ],
   "Things Salvadoran": [
     "El Salvador"
@@ -2195,13 +2186,25 @@
   "Arab Countries": [
     "United Arab Republic"
   ],
+  "The Iran Hostage Crisis": [
+    "1970s"
+  ],
+  "The Watergate Scandal": [
+    "1970s"
+  ],
+  "Cultural Events": [
+    "Woodstock"
+  ],
+  "Music Festivals": [
+    "Woodstock"
+  ],
   "Maritime Stories": [
     "Titanic",
     "Moby Dick"
   ],
-  "Things Ukrainian": [
-    "Chernobyl",
-    "Ukraine"
+  "1600s": [
+    "Galileo",
+    "Kepler"
   ],
   "Golf Terms": [
     "Green",
@@ -2234,10 +2237,6 @@
   "Things Jordanian": [
     "Jordan",
     "Petra"
-  ],
-  "Things Iraqi": [
-    "Baghdad",
-    "Iraq"
   ],
   "Things Uzbek": [
     "Samarkand",
@@ -2303,6 +2302,10 @@
     "Chile",
     "Robinson Crusoe"
   ],
+  "Things Cuban": [
+    "Cuba",
+    "The Cuban Revolution"
+  ],
   "Things Czech": [
     "Czech Republic",
     "Pilsner"
@@ -2330,10 +2333,6 @@
   "Things Guinean": [
     "Guinea",
     "Portuguese Guinea"
-  ],
-  "Things Iranian": [
-    "Iran",
-    "Persia"
   ],
   "Things Kenyan": [
     "Kenya",
@@ -2847,6 +2846,26 @@
     "Austria-Hungary",
     "Czechoslovakia"
   ],
+  "12th Century BCE": [
+    "The Bronze Age Collapse",
+    "The Trojan War"
+  ],
+  "Crises": [
+    "The Cuban Missile Crisis",
+    "The Iran Hostage Crisis"
+  ],
+  "5th Century": [
+    "The Fall of Rome",
+    "The Sack of Rome"
+  ],
+  "11th Century": [
+    "The First Crusade",
+    "The Norman Conquest"
+  ],
+  "World Wars": [
+    "World War I",
+    "World War II"
+  ],
   "Movies featuring Kate Winslet": [
     "Titanic",
     "Sense and Sensibility",
@@ -2926,6 +2945,11 @@
     "Teresa",
     "Saint Patrick",
     "Joan of Arc"
+  ],
+  "Things Iraqi": [
+    "Baghdad",
+    "Iraq",
+    "The Iran-Iraq War"
   ],
   "Things Congolese": [
     "Congo",
@@ -3236,5 +3260,45 @@
     "Manchukuo",
     "Tibet",
     "Korea"
+  ],
+  "Terrorist Attacks": [
+    "9/11",
+    "The Oklahoma City Bombing",
+    "The London Bombings"
+  ],
+  "14th Century": [
+    "The Black Death",
+    "The Hundred Years War",
+    "The Peasants' Revolt"
+  ],
+  "2020s": [
+    "The COVID-19 Pandemic",
+    "The Russian Invasion of Ukraine",
+    "The January 6th Insurrection"
+  ],
+  "Health Crises": [
+    "The COVID-19 Pandemic",
+    "The AIDS Crisis",
+    "The Opioid Epidemic"
+  ],
+  "Reunifications": [
+    "The Fall of the Berlin Wall",
+    "The German Reunification",
+    "The Italian Unification"
+  ],
+  "Depressions": [
+    "The Great Depression",
+    "The Great Recession",
+    "The Long Depression"
+  ],
+  "Industrialization": [
+    "The Industrial Revolution",
+    "The Second Industrial Revolution",
+    "The Digital Revolution"
+  ],
+  "Reformations": [
+    "The Protestant Reformation",
+    "The Catholic Counter-Reformation",
+    "The English Reformation"
   ]
 }
