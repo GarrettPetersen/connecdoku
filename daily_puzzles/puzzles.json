@@ -478,5 +478,45 @@
         "The Brothers Karamazov"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Ends with ING",
+      "Ends with NEY",
+      "Starts with CHA",
+      "Starts with GRA"
+    ],
+    "cols": [
+      "Foods",
+      "Movies",
+      "People",
+      "Place Names"
+    ],
+    "words": [
+      [
+        "Dumpling",
+        "The Thing",
+        "Hawking",
+        "Lansing"
+      ],
+      [
+        "Chutney",
+        "Bill & Ted's Bogus Journey",
+        "Whitney",
+        "Orkney"
+      ],
+      [
+        "Challah",
+        "Chariots of Fire",
+        "Charlemagne",
+        "Charleston"
+      ],
+      [
+        "Grape",
+        "Grave of the Fireflies",
+        "Graf Zeppelin",
+        "Gran Canaria"
+      ]
+    ]
   }
 ]
