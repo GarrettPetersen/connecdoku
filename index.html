@@ -536,74 +536,100 @@ function init(puz){
   /* ---------------------------------------------------------------
     alignRow(r)                 –  same-orientation anchoring
     ------------------------------------------------------------- */
-  function alignRow(r) {
-    /* nothing to align against if this is the very first solved row */
-    if (solvedRows.size === 0) return;
+    function alignRow(r) {
+  if (solvedRows.size === 0) return;
 
-    /* use the first frozen row as the template for column order */
-    const refRow = [...solvedRows.keys()][0];
+  // Step 1: Infer the column category order based on solved rows
+  const catOrder = [];
+  const seen = new Set();
 
-    /* category  →  column index, as dictated by that template row */
-    const catToCol = {};
+  for (const row of solvedRows.keys()) {
     for (let c = 0; c < 4; c++) {
-      const cat = wordToColCat[G[refRow][c]];   // column-category of that word
-      catToCol[cat] = c;
-    }
-
-    /* walk left-to-right twice, swapping into the right slots
-      (second pass mops up knock-on effects)                    */
-    for (let pass = 0; pass < 2; pass++) {
-      for (let c = 0; c < 4; c++) {
-        if (solvedCols.has(c)) continue;                       // frozen column
-        const cat  = wordToColCat[G[r][c]];
-        const want = catToCol[cat];
-        if (want !== undefined && want !== c && !solvedCols.has(want)) {
-          swapCells(r, c, r, want, true);                      // visual swap
-        }
+      const word = G[row][c];
+      const cat = wordToColCat[word];
+      if (!seen.has(cat)) {
+        seen.add(cat);
+        catOrder.push(cat);
       }
     }
   }
+
+  const catToIndex = Object.fromEntries(catOrder.map((cat, i) => [cat, i]));
+
+  // Step 2: Compute desired column positions for the current row's words
+  const entries = [];
+  for (let c = 0; c < 4; c++) {
+    const word = G[r][c];
+    const cat = wordToColCat[word];
+    entries.push({ word, from: c, to: catToIndex[cat] });
+  }
+
+  // Step 3: Sort entries by target column index
+  entries.sort((a, b) => a.to - b.to);
+
+  // Step 4: Move words into desired order
+  const newRow = entries.map(e => e.word);
+
+  for (let c = 0; c < 4; c++) {
+    const curWord = G[r][c];
+    const tgtWord = newRow[c];
+    if (curWord !== tgtWord) {
+      // Find tgtWord in current row
+      const src = G[r].indexOf(tgtWord);
+      swapCells(r, c, r, src, true);
+    }
+  }
+}
 
 
 
   /* ---------------------------------------------------------------
-    alignCol(c)                 –  same-orientation anchoring
-    ------------------------------------------------------------- */
+  alignCol(c)                 –  same-orientation anchoring
+  ------------------------------------------------------------- */
   function alignCol(c) {
-    console.log(`alignCol(${c}) called, solvedCols.size: ${solvedCols.size}`);
-    /* nothing to align against if this is the very first solved col */
-    if (solvedCols.size === 0) {
-      console.log('alignCol: no solved columns to align against');
-      return;
-    }
+  if (solvedCols.size === 0) return;
 
-    /* use the first frozen column as the template for row order */
-    const refCol = [...solvedCols.keys()][0];
-    console.log(`alignCol: using refCol ${refCol} as template`);
+  // Step 1: Infer the row category order based on solved columns
+  const catOrder = [];
+  const seen = new Set();
 
-    /* word → row index, as dictated by that template column */
-    const wordToRow = {};
+  for (const col of solvedCols.keys()) {
     for (let r = 0; r < 4; r++) {
-      const word = G[r][refCol];   // word in the reference column
-      wordToRow[word] = r;
-    }
-    console.log('alignCol: wordToRow mapping:', wordToRow);
-
-    /* walk top-to-bottom twice, swapping into the right slots
-      (second pass mops up knock-on effects)                   */
-    for (let pass = 0; pass < 2; pass++) {
-      for (let r = 0; r < 4; r++) {
-        if (solvedRows.has(r)) continue;                       // frozen row
-        const word = G[r][c];
-        const want = wordToRow[word];
-        console.log(`alignCol: row ${r}, word: ${word}, want: ${want}`);
-        if (want !== undefined && want !== r && !solvedRows.has(want)) {
-          console.log(`alignCol: swapping row ${r} to row ${want}`);
-          swapCells(r, c, want, c, true);                      // visual swap
-        }
+      const word = G[r][col];
+      const cat = wordToRowCat[word];
+      if (!seen.has(cat)) {
+        seen.add(cat);
+        catOrder.push(cat);
       }
     }
   }
+
+  const catToIndex = Object.fromEntries(catOrder.map((cat, i) => [cat, i]));
+
+  // Step 2: Compute desired row positions for the current column’s words
+  const entries = [];
+  for (let r = 0; r < 4; r++) {
+    const word = G[r][c];
+    const cat = wordToRowCat[word];
+    entries.push({ word, from: r, to: catToIndex[cat] });
+  }
+
+  // Step 3: Sort entries by target row index
+  entries.sort((a, b) => a.to - b.to);
+
+  // Step 4: Move words into desired order
+  const newCol = entries.map(e => e.word);
+
+  for (let r = 0; r < 4; r++) {
+    const curWord = G[r][c];
+    const tgtWord = newCol[r];
+    if (curWord !== tgtWord) {
+      const src = G.findIndex(row => row[c] === tgtWord);
+      swapCells(r, c, src, c, true);
+    }
+  }
+}
+
 
 
   function freezeIntersections(){
