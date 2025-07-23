@@ -571,14 +571,17 @@ function init(puz){
   }
 
   /* ------------------------------------------------------------
-    solveCompletely()  –  “reconstruct-then-swap” solver  v5
-  ---------------------------------------------------------------- */
+    solveCompletely()  –  v6
+    Reconstruct the final grid, then animate the difference.
+  -------------------------------------------------------------- */
   function solveCompletely() {
 
     const hash = a => [...a].sort().join('|');
+    const orientation = getOrientation();                 // 'normal' | 'transposed'
+    const transposed  = orientation === 'transposed';
 
     /* ─────────────────────────────────────────────
-      0.  Nothing solved? ⇒ return to canonical grid
+      0.  Nothing solved? → snap to canonical grid
     ───────────────────────────────────────────── */
     if (!solvedRows.size && !solvedCols.size) {
       const moves = [];
@@ -600,40 +603,35 @@ function init(puz){
     }
 
     /* ─────────────────────────────────────────────
-      1.  Detect orientation  (normal / transposed)
+      1.  Helpers for category / index lookup
     ───────────────────────────────────────────── */
-    const firstCat = solvedRows.size
-        ? ans[hash(G[[...solvedRows.keys()][0]])]
-        : ans[hash(G.map(r => r[[...solvedCols.keys()][0]]))];
-
-    const transposed = puz.cols.includes(firstCat);
+    const rowCatOf = w => transposed ? wordToColCat[w] : wordToRowCat[w];
+    const colCatOf = w => transposed ? wordToRowCat[w] : wordToColCat[w];
+    const rowIdxOf = cat => (transposed ? colIdx : rowIdx)[cat];
+    const colIdxOf = cat => (transposed ? rowIdx : colIdx)[cat];
 
     const ROW_LABELS = transposed ? puz.cols : puz.rows;
     const COL_LABELS = transposed ? puz.rows : puz.cols;
 
-    const rowCatOf   = w => transposed ? wordToColCat[w] : wordToRowCat[w];
-    const colCatOf   = w => transposed ? wordToRowCat[w] : wordToColCat[w];
-    const rowIdxOf   = cat => (transposed ? colIdx : rowIdx)[cat];
-    const colIdxOf   = cat => (transposed ? rowIdx : colIdx)[cat];
-
     /* ─────────────────────────────────────────────
-      2.  Row / column category → index maps
-    ─────────────────────────────────────── */
-    const rowCatToIdx = {};      // category → row#
-    const colCatToIdx = {};      // category → col#
+      2.  Build category → index anchor maps
+          (only from lines of the *same* orientation)
+    ───────────────────────────────────────────── */
+    const rowCatToIdx = {};   // category → current row index
+    const colCatToIdx = {};   // category → current col index
 
     solvedRows.forEach((_, r) => {
-      const cat = ans[hash(G[r])];                // look at the whole 4-word row
+      const cat = ans[hash(G[r])];
       if (cat) rowCatToIdx[cat] = r;
     });
 
     solvedCols.forEach((_, c) => {
       const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
-      const cat = ans[hash(colWords)];            // whole 4-word column
+      const cat = ans[hash(colWords)];
       if (cat) colCatToIdx[cat] = c;
     });
 
-    /* assign remaining categories to free indices (canonical order) */
+    /* add the remaining categories in canonical order */
     const freeRows = [0,1,2,3].filter(i => !Object.values(rowCatToIdx).includes(i));
     const freeCols = [0,1,2,3].filter(i => !Object.values(colCatToIdx).includes(i));
 
@@ -644,41 +642,43 @@ function init(puz){
       if (colCatToIdx[cat] === undefined) colCatToIdx[cat] = freeCols.shift();
     });
 
-    /* idx → category arrays (no nulls) */
-    const idxToRowCat = Array(4).fill('').map((_,i)=>
-          Object.keys(rowCatToIdx).find(k=>rowCatToIdx[k]===i));
-    const idxToColCat = Array(4).fill('').map((_,i)=>
-          Object.keys(colCatToIdx).find(k=>colCatToIdx[k]===i));
+    /* idx → category lookup */
+    const idxToRowCat = Array(4).fill('').map((_, i) =>
+          Object.keys(rowCatToIdx).find(k => rowCatToIdx[k] === i));
+    const idxToColCat = Array(4).fill('').map((_, i) =>
+          Object.keys(colCatToIdx).find(k => colCatToIdx[k] === i));
 
     /* ─────────────────────────────────────────────
-      3.  Build the target 4×4 grid
+      3.  Build the *target* 4×4 grid
     ───────────────────────────────────────────── */
-    const target = Array.from({length:4},()=>Array(4));
+    const target = Array.from({ length: 4 }, () => Array(4));
 
     for (let r = 0; r < 4; r++) {
       const rowCat = idxToRowCat[r];
       for (let c = 0; c < 4; c++) {
         const colCat = idxToColCat[c];
 
-        const canonRow = transposed ? colIdx[rowCat] : rowIdx[rowCat];
-        const canonCol = transposed ? rowIdx[colCat] : colIdx[colCat];
+        const canonRow = rowIdxOf(rowCat);   // where this row lives in puz.words
+        const canonCol = colIdxOf(colCat);   // where this col lives in puz.words
 
         target[r][c] = puz.words[canonRow][canonCol];
       }
     }
 
     /* ─────────────────────────────────────────────
-      4.  Swap current grid → target grid (skip anchors)
+      4.  Plan swaps (never touch frozen rows/cols)
     ───────────────────────────────────────────── */
-    const locate = new Map();                // word → [r,c]
-    for (let r=0;r<4;r++)for(let c=0;c<4;c++) locate.set(G[r][c],[r,c]);
+    const locate = new Map();                       // word → [r,c]
+    for (let r = 0; r < 4; r++)
+      for (let c = 0; c < 4; c++)
+        locate.set(G[r][c], [r, c]);
 
     const moves = [];
 
     for (let r = 0; r < 4; r++) {
       for (let c = 0; c < 4; c++) {
 
-        if (solvedRows.has(r) || solvedCols.has(c)) continue;   // frozen
+        if (solvedRows.has(r) || solvedCols.has(c)) continue;  // anchored cell
 
         const want = target[r][c];
         if (G[r][c] === want) continue;
@@ -688,16 +688,21 @@ function init(puz){
 
         moves.push([r, c, r2, c2]);
 
-        /* update bookkeeping & virtual grid */
+        /* bookkeeping (virtual grid) */
         locate.set(G[r][c], [r2, c2]);
         locate.set(want,    [r , c ]);
         [G[r][c], G[r2][c2]] = [G[r2][c2], G[r][c]];
       }
     }
 
-    /* animate the swaps in a 100 ms cascade */
-    moves.forEach((m,i)=>setTimeout(()=>swapCells(...m,true), i*100));
-    return moves.length * 100;          // total animation time
+    /* ─────────────────────────────────────────────
+      5.  Animate the swaps (100 ms cascade)
+    ───────────────────────────────────────────── */
+    moves.forEach((m, i) =>
+      setTimeout(() => swapCells(m[0], m[1], m[2], m[3], true, true), i * 100)
+    );
+
+    return moves.length * 100;        // total animation time
   }
 
   /* ---------- share popup ---------- */
