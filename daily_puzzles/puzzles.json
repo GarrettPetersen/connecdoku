@@ -398,5 +398,85 @@
         "France"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Comedy Stories",
+      "Foods",
+      "Place Names",
+      "Starts with THE"
+    ],
+    "cols": [
+      "Ends with LES",
+      "Ends with MAN",
+      "Ends with ONE",
+      "Things American"
+    ],
+    "words": [
+      [
+        "Holes",
+        "Birdman",
+        "Home Alone",
+        "Annie Hall"
+      ],
+      [
+        "Dan Dan Noodles",
+        "Massaman",
+        "Minestrone",
+        "Apple Pie"
+      ],
+      [
+        "Seychelles",
+        "Oman",
+        "Sierra Leone",
+        "Boise"
+      ],
+      [
+        "The Incredibles",
+        "The Wicker Man",
+        "The Sword in the Stone",
+        "The Grapes of Wrath"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Desserts",
+      "Drinks",
+      "Place Names",
+      "Starts with THE"
+    ],
+    "cols": [
+      "Things American",
+      "Things Indian",
+      "Things Japanese",
+      "Things Russian"
+    ],
+    "words": [
+      [
+        "Apple Pie",
+        "Gulab Jamun",
+        "Taiyaki",
+        "Medovik"
+      ],
+      [
+        "Root Beer",
+        "Lassi",
+        "Matcha",
+        "Vodka"
+      ],
+      [
+        "Salt Lake City",
+        "India",
+        "Hokkaido",
+        "Russia"
+      ],
+      [
+        "The Scarlet Letter",
+        "The Mahabharata",
+        "The Hidden Fortress",
+        "The Brothers Karamazov"
+      ]
+    ]
   }
 ]
