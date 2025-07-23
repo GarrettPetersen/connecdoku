@@ -543,11 +543,12 @@ function init(puz){
   // Step 1: Infer the column category order based on solved rows
   const catOrder = [];
   const seen = new Set();
+  const orientation = getOrientation();
 
   for (const row of refRows) {
     for (let c = 0; c < 4; c++) {
       const word = G[row][c];
-      const cat = wordToColCat[word];
+      const cat = orientation === 'normal' ? wordToColCat[word] : wordToRowCat[word];
       if (!seen.has(cat)) {
         seen.add(cat);
         catOrder.push(cat);
@@ -561,7 +562,7 @@ function init(puz){
   const entries = [];
       for (let c = 0; c < 4; c++) {
     const word = G[r][c];
-    const cat = wordToColCat[word];
+    const cat = orientation === 'normal' ? wordToColCat[word] : wordToRowCat[word];
     entries.push({ word, from: c, to: catToIndex[cat] });
   }
 
@@ -598,12 +599,13 @@ function init(puz){
   // build catOrder from *previously* solved columns
   const catOrder = [];
   const seen = new Set();
+  const orientation = getOrientation();
 
   for (const col of refCols) {
     console.log(`Checking column ${col}:`);
     for (let r = 0; r < 4; r++) {
       const word = G[r][col];
-      const cat = wordToColCat[word];  // Use column category to determine row order
+      const cat = orientation === 'normal' ? wordToColCat[word] : wordToRowCat[word];
       console.log(`  Row ${r}: ${word} -> ${cat}`);
       if (!seen.has(cat)) {
         seen.add(cat);
@@ -619,7 +621,7 @@ function init(puz){
   const entries = [];
       for (let r = 0; r < 4; r++) {
     const word = G[r][c];
-    const cat = wordToColCat[word];  // Use column category to determine row order
+    const cat = orientation === 'normal' ? wordToColCat[word] : wordToRowCat[word];
     entries.push({ word, from: r, to: catToIndex[cat] });
   }
 
