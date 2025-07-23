@@ -276,6 +276,10 @@ function init(puz){
   const wordToColCat = {};          // use column labels
   const wordToRowCat = {};          // use row labels
 
+  // add next to the other game-level variables
+  let colCatToIdx = null;   // { column-category → column # }
+  let rowCatToIdx = null;   // { row-category    → row #    }
+
   for (let r = 0; r < 4; r++) {
     for (let c = 0; c < 4; c++) {
       const w = puz.words[r][c];
@@ -515,16 +519,45 @@ function init(puz){
     const label=ans[hash(words)];
     if(!label) return badAttempt(hdr);
 
-    /* ---- create canonical maps on first solve ---- */
-    if(colPos===null && rowIdx[label]!==undefined){        // first ROW category solved
-      colPos={};                                           // build from this line’s order
-      if(kind==='row') for(let c=0;c<4;c++) colPos[G[idx][c]]=c;
-      else              for(let r=0;r<4;r++) colPos[G[r][idx]]=r; // row category solved vertically (transpose)
+    /* ─────────────── first *row-category* solved ─────────────── */
+    if (colCatToIdx === null && rowIdx[label] !== undefined) {
+      // Whether we just solved a *row* or a *column* doesn’t matter.
+      // We only care that `label` belongs to puz.rows → its line shows
+      // us the order of the four *column* categories.
+      colCatToIdx = {};
+
+      if (kind === 'row') {
+        // row solved horizontally : categories vary left → right
+        for (let c = 0; c < 4; c++) {
+          const cat = wordToColCat[G[idx][c]];
+          colCatToIdx[cat] = c;
+        }
+      } else {
+        // row-category solved vertically (transpose case)
+        for (let r = 0; r < 4; r++) {
+          const cat = wordToColCat[G[r][idx]];
+          colCatToIdx[cat] = r;    // here the *row* index is the x-coord
+        }
+      }
     }
-    if(rowPos===null && colIdx[label]!==undefined){        // first COLUMN category solved
-      rowPos={};
-      if(kind==='col') for(let r=0;r<4;r++) rowPos[G[r][idx]]=r;
-      else              for(let c=0;c<4;c++) rowPos[G[idx][c]]=c; // column category solved horizontally
+
+    /* ─────────────── first *column-category* solved ───────────── */
+    if (rowCatToIdx === null && colIdx[label] !== undefined) {
+      rowCatToIdx = {};
+
+      if (kind === 'col') {
+        // column solved vertically : row categories vary top → bottom
+        for (let r = 0; r < 4; r++) {
+          const cat = wordToRowCat[G[r][idx]];
+          rowCatToIdx[cat] = r;
+        }
+      } else {
+        // column-category solved horizontally (transpose case)
+        for (let c = 0; c < 4; c++) {
+          const cat = wordToRowCat[G[idx][c]];
+          rowCatToIdx[cat] = c;    // column index is the y-coord here
+        }
+      }
     }
 
     /* ---- update UI ---- */
@@ -566,121 +599,55 @@ function init(puz){
     else          for(let r=0;r<4;r++){ lockColour(r,i,l); freezeTile(r,i); }
   };
 
-  /* ---------------------------------------------------------------
-    alignRow(r)                 –  same-orientation anchoring
-    ------------------------------------------------------------- */
+  /* -----------------------------------------------
+    alignRow(r)  – put every movable word in row r
+                    into the column fixed for *its*
+                    column-category.
+    --------------------------------------------- */
   function alignRow(r) {
-      const refRows = [...solvedRows.keys()];
-      if (refRows.length === 0) return;
+    if (!colCatToIdx) return;                 // no column order yet
 
-  // Step 1: Infer the column category order based on solved rows
-  const catOrder = [];
-  const seen = new Set();
-
-  for (const row of refRows) {
-    for (let c = 0; c < 4; c++) {
-      const word = G[row][c];
-      const cat = wordToColCat[word];
-      if (!seen.has(cat)) {
-        seen.add(cat);
-        catOrder.push(cat);
-      }
-    }
-  }
-
-  const catToIndex = Object.fromEntries(catOrder.map((cat, i) => [cat, i]));
-
-  // Step 2: Compute desired column positions for the current row's words
-  const entries = [];
+    let moved;
+    do {
+      moved = false;
       for (let c = 0; c < 4; c++) {
-    const word = G[r][c];
-    const cat = wordToColCat[word];
-    entries.push({ word, from: c, to: catToIndex[cat] });
-  }
+        const w       = G[r][c];
+        const wantCol = colCatToIdx[wordToColCat[w]];
+        if (wantCol === c ||
+            solvedCols.has(c) || solvedCols.has(wantCol)) continue;
 
-  // Step 3: Sort entries by target column index
-  entries.sort((a, b) => a.to - b.to);
-
-  // Step 4: Move words into desired order
-  const newRow = entries.map(e => e.word);
-
-  for (let c = 0; c < 4; c++) {
-    const curWord = G[r][c];
-    const tgtWord = newRow[c];
-    if (curWord !== tgtWord) {
-      // Find tgtWord in current row
-      const src = G[r].indexOf(tgtWord);
-      swapCells(r, c, r, src, true);
+        swapCells(r, c, r, wantCol, true);
+        moved = true;
       }
-    }
+    } while (moved);
+
+    integrityCheck();
   }
 
-
-
-  /* ---------------------------------------------------------------
-    alignCol(c)                 –  same-orientation anchoring
-    ------------------------------------------------------------- */
+  /* -----------------------------------------------
+    alignCol(c)  – put every movable word in col c
+                    into the row fixed for *its*
+                    row-category.
+    --------------------------------------------- */
   function alignCol(c) {
-    console.log(`alignCol(${c}) called, solvedCols:`, [...solvedCols.keys()]);
-    
-    // reference columns = all solved columns (current column isn't solved yet)
-    const refCols = [...solvedCols.keys()];
-    console.log(`refCols:`, refCols);
-    if (refCols.length === 0) return;
+    if (!rowCatToIdx) return;                 // no row order yet
 
-  // build catOrder from *previously* solved columns
-  const catOrder = [];
-  const seen = new Set();
-
-  for (const col of refCols) {
-    console.log(`Checking column ${col}:`);
-    for (let r = 0; r < 4; r++) {
-      const word = G[r][col];
-      const cat = wordToColCat[word];  // Use column category to determine row order
-      console.log(`  Row ${r}: ${word} -> ${cat}`);
-      if (!seen.has(cat)) {
-        seen.add(cat);
-        catOrder.push(cat);
-      }
-    }
-  }
-  console.log(`catOrder:`, catOrder);
-
-  const catToIndex = Object.fromEntries(catOrder.map((cat, i) => [cat, i]));
-
-  // Step 2: Compute desired row positions for the current column’s words
-  const entries = [];
+    let moved;
+    do {
+      moved = false;
       for (let r = 0; r < 4; r++) {
-    const word = G[r][c];
-    const cat = wordToColCat[word];  // Use column category to determine row order
-    entries.push({ word, from: r, to: catToIndex[cat] });
-  }
+        const w       = G[r][c];
+        const wantRow = rowCatToIdx[wordToRowCat[w]];
+        if (wantRow === r ||
+            solvedRows.has(r) || solvedRows.has(wantRow)) continue;
 
-  // Step 3: Sort entries by target row index
-  entries.sort((a, b) => a.to - b.to);
-  console.log(`sorted entries:`, entries);
-
-  // Step 4: Move words into desired order
-  const newCol = entries.map(e => e.word);
-  console.log(`newCol:`, newCol);
-
-  for (let r = 0; r < 4; r++) {
-    const curWord = G[r][c];
-    const tgtWord = newCol[r];
-    if (curWord !== tgtWord) {
-      const src = G.findIndex(row => row[c] === tgtWord);
-      // Don't swap if either row is already solved
-      if (!solvedRows.has(r) && !solvedRows.has(src)) {
-        console.log(`swapping ${curWord} at row ${r} with ${tgtWord} at row ${src}`);
-        swapCells(r, c, src, c, true);
-      } else {
-        console.log(`skipping swap - row ${r} or ${src} is solved`);
+        swapCells(r, c, wantRow, c, true);
+        moved = true;
       }
-    }
+    } while (moved);
+
+    integrityCheck();
   }
-}
-
-
 
   function freezeIntersections(){
     for(const r of solvedRows.keys())
@@ -1182,3 +1149,4 @@ function init(puz){
 </script>
 </body>
 </html>
+
