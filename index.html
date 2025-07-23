@@ -571,104 +571,78 @@ function init(puz){
   }
 
   /* ------------------------------------------------------------
-    solveCompletely()  –  v6
-    Reconstruct the final grid, then animate the difference.
-  -------------------------------------------------------------- */
+    solveCompletely()  –  v7  (“brute-force like a human”)
+    -----------------------------------------------------------
+    • A valid Connecdoku grid is just the canonical puzzle grid
+      after (optional) transpose + a permutation of its rows +
+      a permutation of its columns  →  2 × 24 × 24 = 1 152.
+    • For each candidate grid:
+        – all words in already-solved rows/cols must match
+        – otherwise skip
+      The first match becomes the target.  We then swap every
+      non-frozen tile into its target square and animate the lot.
+  ------------------------------------------------------------ */
   function solveCompletely() {
 
     const hash = a => [...a].sort().join('|');
-    const orientation = getOrientation();                 // 'normal' | 'transposed'
-    const transposed  = orientation === 'transposed';
+    const isFrozen = (r, c) => solvedRows.has(r) || solvedCols.has(c);
 
-    /* ─────────────────────────────────────────────
-      0.  Nothing solved? → snap to canonical grid
-    ───────────────────────────────────────────── */
-    if (!solvedRows.size && !solvedCols.size) {
-      const moves = [];
-      for (let r = 0; r < 4; r++)
-        for (let c = 0; c < 4; c++) {
-          const want = puz.words[r][c];
-          if (G[r][c] === want) continue;
-
-          outer: for (let r2 = 0; r2 < 4; r2++)
-            for (let c2 = 0; c2 < 4; c2++)
-              if (G[r2][c2] === want) {
-                moves.push([r, c, r2, c2]);
-                [G[r][c], G[r2][c2]] = [G[r2][c2], G[r][c]];
-                break outer;
-              }
+    /* ── helper: generate all 24 permutations of [0,1,2,3] ─────── */
+    function allPerms() {
+      const res = [];
+      function perm(a, l) {
+        if (l === 4) res.push(a.slice());
+        else for (let i = l; i < 4; i++) {
+          [a[l], a[i]] = [a[i], a[l]];
+          perm(a, l + 1);
+          [a[l], a[i]] = [a[i], a[l]];
         }
-      moves.forEach((m, i) => setTimeout(() => swapCells(...m, true, true), i * 100));
-      return moves.length * 100;
+      }
+      perm([0, 1, 2, 3], 0);
+      return res;
     }
+    const PERMS = allPerms();               // cached once
 
-    /* ─────────────────────────────────────────────
-      1.  Helpers for category / index lookup
-    ───────────────────────────────────────────── */
-    const rowCatOf = w => transposed ? wordToColCat[w] : wordToRowCat[w];
-    const colCatOf = w => transposed ? wordToRowCat[w] : wordToColCat[w];
-    const rowIdxOf = cat => (transposed ? colIdx : rowIdx)[cat];
-    const colIdxOf = cat => (transposed ? rowIdx : colIdx)[cat];
+    /* ── build the two “base” grids: normal & transposed ───────── */
+    const BASE_NORMAL = puz.words;          // rows = row categories
+    const BASE_TRANS  = Array.from({ length: 4 }, (_, r) =>
+                            Array.from({ length: 4 }, (_, c) => puz.words[c][r]));
 
-    const ROW_LABELS = transposed ? puz.cols : puz.rows;
-    const COL_LABELS = transposed ? puz.rows : puz.cols;
+    /* ── try every orientation / row-perm / col-perm combo ─────── */
+    let target = null;
 
-    /* ─────────────────────────────────────────────
-      2.  Build category → index anchor maps
-          (only from lines of the *same* orientation)
-    ───────────────────────────────────────────── */
-    const rowCatToIdx = {};   // category → current row index
-    const colCatToIdx = {};   // category → current col index
+    outer: for (const base of [BASE_NORMAL, BASE_TRANS]) {
+      for (const rows of PERMS) {
+        for (const cols of PERMS) {
 
-    solvedRows.forEach((_, r) => {
-      const cat = ans[hash(G[r])];
-      if (cat) rowCatToIdx[cat] = r;
-    });
+          /* quick reject: must respect every frozen word */
+          let ok = true;
+          for (let r = 0; r < 4 && ok; r++) {
+            for (let c = 0; c < 4 && ok; c++) {
+              if (!isFrozen(r, c)) continue;
+              const want = base[rows[r]][cols[c]];
+              if (G[r][c] !== want) ok = false;
+            }
+          }
+          if (!ok) continue;
 
-    solvedCols.forEach((_, c) => {
-      const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
-      const cat = ans[hash(colWords)];
-      if (cat) colCatToIdx[cat] = c;
-    });
-
-    /* add the remaining categories in canonical order */
-    const freeRows = [0,1,2,3].filter(i => !Object.values(rowCatToIdx).includes(i));
-    const freeCols = [0,1,2,3].filter(i => !Object.values(colCatToIdx).includes(i));
-
-    ROW_LABELS.forEach(cat => {
-      if (rowCatToIdx[cat] === undefined) rowCatToIdx[cat] = freeRows.shift();
-    });
-    COL_LABELS.forEach(cat => {
-      if (colCatToIdx[cat] === undefined) colCatToIdx[cat] = freeCols.shift();
-    });
-
-    /* idx → category lookup */
-    const idxToRowCat = Array(4).fill('').map((_, i) =>
-          Object.keys(rowCatToIdx).find(k => rowCatToIdx[k] === i));
-    const idxToColCat = Array(4).fill('').map((_, i) =>
-          Object.keys(colCatToIdx).find(k => colCatToIdx[k] === i));
-
-    /* ─────────────────────────────────────────────
-      3.  Build the *target* 4×4 grid
-    ───────────────────────────────────────────── */
-    const target = Array.from({ length: 4 }, () => Array(4));
-
-    for (let r = 0; r < 4; r++) {
-      const rowCat = idxToRowCat[r];
-      for (let c = 0; c < 4; c++) {
-        const colCat = idxToColCat[c];
-
-        const canonRow = rowIdxOf(rowCat);   // where this row lives in puz.words
-        const canonCol = colIdxOf(colCat);   // where this col lives in puz.words
-
-        target[r][c] = puz.words[canonRow][canonCol];
+          /* this candidate fits all anchors → accept */
+          target = Array.from({ length: 4 }, (_, r) =>
+                    Array.from({ length: 4 }, (_, c) =>
+                      base[rows[r]][cols[c]]));
+          break outer;
+        }
       }
     }
 
-    /* ─────────────────────────────────────────────
-      4.  Plan swaps (never touch frozen rows/cols)
-    ───────────────────────────────────────────── */
-    const locate = new Map();                       // word → [r,c]
+    /* fallback (should never happen) */
+    if (!target) {
+      console.warn('solveCompletely: no compatible layout found – falling back');
+      return 0;
+    }
+
+    /* ── plan swaps from current grid → target grid ────────────── */
+    const locate = new Map();                    // word → [r,c]
     for (let r = 0; r < 4; r++)
       for (let c = 0; c < 4; c++)
         locate.set(G[r][c], [r, c]);
@@ -678,31 +652,29 @@ function init(puz){
     for (let r = 0; r < 4; r++) {
       for (let c = 0; c < 4; c++) {
 
-        if (solvedRows.has(r) || solvedCols.has(c)) continue;  // anchored cell
+        if (isFrozen(r, c)) continue;
 
         const want = target[r][c];
         if (G[r][c] === want) continue;
 
         const [r2, c2] = locate.get(want);
-        if (solvedRows.has(r2) || solvedCols.has(c2)) continue; // would move anchor
+        if (isFrozen(r2, c2)) continue;          // shouldn’t happen
 
         moves.push([r, c, r2, c2]);
 
-        /* bookkeeping (virtual grid) */
+        /* update virtual grid + locator */
         locate.set(G[r][c], [r2, c2]);
         locate.set(want,    [r , c ]);
         [G[r][c], G[r2][c2]] = [G[r2][c2], G[r][c]];
       }
     }
 
-    /* ─────────────────────────────────────────────
-      5.  Animate the swaps (100 ms cascade)
-    ───────────────────────────────────────────── */
+    /* ── animate (logical swaps already done) ──────────────────── */
     moves.forEach((m, i) =>
       setTimeout(() => swapCells(m[0], m[1], m[2], m[3], true, true), i * 100)
     );
 
-    return moves.length * 100;        // total animation time
+    return moves.length * 100;         // total animation time
   }
 
   /* ---------- share popup ---------- */
