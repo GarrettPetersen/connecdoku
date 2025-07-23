@@ -22,9 +22,11 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 .tile{background:var(--tile);padding:6px 8px;display:flex;align-items:center;
       justify-content:center;min-height:90px;text-align:center;cursor:pointer;
       user-select:none;transition:background-color .3s ease}
-.hdr{min-height:34px;display:flex;align-items:center;justify-content:center}
+.hdr{min-height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:filter .2s ease}
+.hdr:hover{filter:brightness(0.9)}
 .hdr button{all:unset;cursor:pointer;color:var(--txt)}
-.hdr.solved{font-weight:600;border:none}
+.hdr.solved{font-weight:600;border:none;cursor:default}
+.hdr.solved:hover{filter:none}
 .hdr.solved.pop{animation:pop .3s ease-out}
 .rowCredit{margin-top:22px;font-size:13px;text-align:center;color:#777}
 #helpIcon{position:absolute;top:-38px;right:16px;font-size:24px;cursor:pointer}
@@ -731,13 +733,13 @@ function init(puz){
     }
     
     // Create the grid
-    let grid = rows.join('') + '\n';
+    let grid = cols.join('') + '\n';  // Column categories at top
     for (let r = 0; r < 4; r++) {
       let row = '';
       for (let c = 0; c < 4; c++) {
         row += emojiFor(tile(r, c));
       }
-      row += cols[r];
+      row += rows[r];  // Row category at end of each row
       grid += row + '\n';
     }
     
