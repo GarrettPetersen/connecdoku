@@ -358,5 +358,45 @@
         "France"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Cities",
+      "Ends with LES",
+      "Real People",
+      "WWII Allied Powers"
+    ],
+    "cols": [
+      "Foods",
+      "Former British Colonies",
+      "Things British",
+      "Things French"
+    ],
+    "words": [
+      [
+        "Roma",
+        "Singapore",
+        "London",
+        "Paris"
+      ],
+      [
+        "Dan Dan Noodles",
+        "Seychelles",
+        "Beatles",
+        "Les Misérables"
+      ],
+      [
+        "Caesar",
+        "Jordan",
+        "Shakespeare",
+        "Joan of Arc"
+      ],
+      [
+        "Turkey",
+        "Australia",
+        "United Kingdom",
+        "France"
+      ]
+    ]
   }
 ]
