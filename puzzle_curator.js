@@ -57,14 +57,14 @@ console.log("Building usage counts...");
 function buildUsageCounts() {
     const categoryUsage = {};
     const wordUsage = {};
-    
+
     // Count usage from existing database
     for (const puzzle of db) {
         // Count categories
         for (const category of [...puzzle.rows, ...puzzle.cols]) {
             categoryUsage[category] = (categoryUsage[category] || 0) + 1;
         }
-        
+
         // Count words
         for (const row of puzzle.words) {
             for (const word of row) {
@@ -72,7 +72,7 @@ function buildUsageCounts() {
             }
         }
     }
-    
+
     return { categoryUsage, wordUsage };
 }
 
@@ -120,87 +120,173 @@ function formatWithUsage(item, usageCount) {
 
 // ──────────────── gather unseen raw layouts ─────────────────────
 console.log("Checking for raw puzzle files...");
-function unseenFiles() {
+function getJsonFileCount() {
     if (!fs.existsSync(RAW_DIR)) {
         console.log("RAW_DIR does not exist:", RAW_DIR);
-        return [];
+        return 0;
     }
-    
+
     const files = fs.readdirSync(RAW_DIR);
-    console.log(`Found ${files.length} files in RAW_DIR`);
-    
     const jsonFiles = files.filter(f => f.endsWith(".json"));
-    console.log(`Found ${jsonFiles.length} JSON files`);
-    
-    // If there are too many files, we need a more efficient approach
-    if (jsonFiles.length > 1000) {
-        console.log("Too many files, using batch processing...");
-        
-        // Process files in batches to avoid hanging
-        const batchSize = 100;
-        const unseen = [];
-        
-        for (let i = 0; i < jsonFiles.length; i += batchSize) {
-            const batch = jsonFiles.slice(i, i + batchSize);
-            console.log(`Processing batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(jsonFiles.length/batchSize)} (${batch.length} files)`);
-            
-            for (const f of batch) {
-                try {
-                    const { rows, cols } = JSON.parse(fs.readFileSync(path.join(RAW_DIR, f)));
-                    const isUsed = used.has(makeKey(rows, cols)) || used.has(makeKey(cols, rows));
-                    if (!isUsed) {
-                        unseen.push(f);
-                        // Limit to first 10 unseen files to avoid overwhelming the curator
-                        if (unseen.length >= 10) {
-                            console.log(`Found ${unseen.length} unseen files, limiting to first 10 for this session`);
-                            return unseen;
-                        }
-                    }
-                } catch (error) {
-                    console.log(`  Error reading ${f}:`, error.message);
-                }
-            }
-        }
-        
-        console.log(`Found ${unseen.length} unseen puzzle files (limited to first 10)`);
-        return unseen;
-    } else {
-        // Original approach for smaller file counts
-        const unseen = jsonFiles.filter(f => {
-            try {
-                const { rows, cols } = JSON.parse(fs.readFileSync(path.join(RAW_DIR, f)));
-                const isUsed = used.has(makeKey(rows, cols)) || used.has(makeKey(cols, rows));
-                if (isUsed) {
-                    console.log(`  Skipping ${f} (already used)`);
-                }
-                return !isUsed;
-            } catch (error) {
-                console.log(`  Error reading ${f}:`, error.message);
-                return false;
-            }
-        });
-        
-        console.log(`Found ${unseen.length} unseen puzzle files`);
-        return unseen;
+    console.log(`Found ${jsonFiles.length} JSON files in RAW_DIR`);
+    return jsonFiles.length;
+}
+
+function getRandomJsonFile() {
+    if (!fs.existsSync(RAW_DIR)) {
+        return null;
     }
+
+    const files = fs.readdirSync(RAW_DIR);
+    const jsonFiles = files.filter(f => f.endsWith(".json"));
+
+    if (jsonFiles.length === 0) {
+        return null;
+    }
+
+    // Pick a random file
+    const randomIndex = Math.floor(Math.random() * jsonFiles.length);
+    return jsonFiles[randomIndex];
+}
+
+function getJsonFileAtIndex(index) {
+    if (!fs.existsSync(RAW_DIR)) {
+        return null;
+    }
+
+    const files = fs.readdirSync(RAW_DIR);
+    const jsonFiles = files.filter(f => f.endsWith(".json"));
+
+    if (index >= jsonFiles.length) {
+        return null;
+    }
+
+    return jsonFiles[index];
+}
+
+function calculateCategoryOverlap(puzzleCategories, usedCategories) {
+    const puzzleSet = new Set(puzzleCategories);
+    const usedSet = new Set(usedCategories);
+    let overlap = 0;
+
+    for (const cat of puzzleSet) {
+        if (usedSet.has(cat)) {
+            overlap++;
+        }
+    }
+
+    return overlap;
+}
+
+function findBestPuzzle() {
+    const totalFiles = getJsonFileCount();
+    if (totalFiles === 0) {
+        return null;
+    }
+
+    // Get all used categories from existing puzzles
+    const usedCategories = [];
+    for (const puzzle of db) {
+        usedCategories.push(...puzzle.rows, ...puzzle.cols);
+    }
+
+    console.log(`Searching through ${totalFiles} files for puzzle with minimal category overlap...`);
+    console.log(`Used categories: ${usedCategories.length} unique categories`);
+
+    let bestPuzzle = null;
+    let bestOverlap = Infinity;
+    let puzzlesChecked = 0;
+    const maxChecks = 1000;
+
+    // Use a more efficient sampling approach
+    const sampleSize = Math.min(maxChecks, Math.min(100, totalFiles)); // Search only 100 files for speed
+    console.log(`Sampling ${sampleSize} files randomly...`);
+
+    // Track which indices we've already checked to avoid duplicates
+    const checkedIndices = new Set();
+
+    while (puzzlesChecked < sampleSize) {
+        // Pick a random file we haven't checked yet
+        let randomIndex;
+        let attempts = 0;
+        const maxAttempts = 100; // Prevent infinite loops
+
+        do {
+            randomIndex = Math.floor(Math.random() * totalFiles);
+            attempts++;
+        } while (checkedIndices.has(randomIndex) && attempts < maxAttempts);
+
+        if (attempts >= maxAttempts) {
+            console.log("  Reached maximum attempts, stopping search");
+            break;
+        }
+
+        checkedIndices.add(randomIndex);
+
+        const file = getJsonFileAtIndex(randomIndex);
+        if (!file) {
+            continue;
+        }
+
+        try {
+            const { rows, cols } = JSON.parse(fs.readFileSync(path.join(RAW_DIR, file)));
+
+            // Check if this puzzle layout has been used before
+            const isUsed = used.has(makeKey(rows, cols)) || used.has(makeKey(cols, rows));
+            if (isUsed) {
+                continue; // Skip already used puzzle layouts
+            }
+
+            puzzlesChecked++;
+
+            // Calculate category overlap
+            const allCategories = [...rows, ...cols];
+            const overlap = calculateCategoryOverlap(allCategories, usedCategories);
+
+            if (puzzlesChecked % 20 === 0) {
+                console.log(`  Checked ${puzzlesChecked}/${sampleSize} files, best overlap so far: ${bestOverlap}`);
+            }
+
+            // If we find a puzzle with 0 overlap, use it immediately
+            if (overlap === 0) {
+                console.log(`✅ Found puzzle with 0 overlap: ${file}`);
+                return { file, rows, cols };
+            }
+
+            // Keep track of the puzzle with the lowest overlap so far
+            if (overlap < bestOverlap) {
+                bestOverlap = overlap;
+                bestPuzzle = { file, rows, cols };
+                console.log(`  New best: ${file} with ${overlap} overlaps`);
+            }
+
+        } catch (error) {
+            console.log(`  Error reading ${file}:`, error.message);
+        }
+    }
+
+    if (bestPuzzle) {
+        console.log(`🏆 Best puzzle found: ${bestPuzzle.file} with ${bestOverlap} category overlaps`);
+        return bestPuzzle;
+    }
+
+    console.log("❌ No suitable puzzles found");
+    return null;
 }
 
 // ──────────────── interactive loop ──────────────────────────────
 console.log("Starting interactive loop...");
-let rawFiles = unseenFiles();
-if (!rawFiles.length) {
-    console.log("No unseen puzzles available. Bye!");
-    process.exit(0);
-}
 
-console.log(`Ready to curate ${rawFiles.length} puzzles`);
-let fileIdx = 0;
-while (fileIdx < rawFiles.length) {
+while (true) {
+    const puzzleData = findBestPuzzle();
+    if (!puzzleData) {
+        console.log("No unseen puzzles available. Bye!");
+        process.exit(0);
+    }
 
-    const file = rawFiles[fileIdx];
-    console.log(`\nProcessing file ${fileIdx + 1}/${rawFiles.length}: ${file}`);
-    
-    const { rows, cols } = JSON.parse(fs.readFileSync(path.join(RAW_DIR, file)));
+    const { file, rows, cols } = puzzleData;
+    console.log(`\nProcessing file: ${file}`);
+
     const allCats = [...rows, ...cols];
     console.log(`Puzzle has ${rows.length} rows and ${cols.length} columns`);
 
@@ -212,16 +298,15 @@ while (fileIdx < rawFiles.length) {
 
     // ---- ask if user wants to skip this puzzle ------------------------
     console.log("\nDo you want to continue with this puzzle?");
-    const continuePuzzle = await prompts.confirm({ 
-        message: "Continue with this puzzle?", 
-        default: true 
+    const continuePuzzle = await prompts.confirm({
+        message: "Continue with this puzzle?",
+        default: true
     });
-    
+
     if (!continuePuzzle) {
         console.log("Skipping puzzle...");
         fs.renameSync(path.join(RAW_DIR, file),
             path.join(RAW_DIR, `skip_${file}`));
-        rawFiles = unseenFiles();
         continue;
     }
 
@@ -232,10 +317,10 @@ while (fileIdx < rawFiles.length) {
     for (let r = 0; r < 4 && cellOk; ++r)
         for (let c = 0; c < 4; ++c) {
             const opts = uniqueWords(rows[r], cols[c], allCats);
-            if (!opts.length) { 
+            if (!opts.length) {
                 console.log(`  Cell [${r}][${c}] has no valid words`);
-                cellOk = false; 
-                break; 
+                cellOk = false;
+                break;
             }
             viableGrid[r][c] = opts;
         }
@@ -244,7 +329,6 @@ while (fileIdx < rawFiles.length) {
         console.log(`⚠️  skipped ${file} (red-herring violation)`);
         fs.renameSync(path.join(RAW_DIR, file),
             path.join(RAW_DIR, `bad_${file}`));
-        rawFiles = unseenFiles();
         continue;
     }
 
@@ -272,11 +356,11 @@ while (fileIdx < rawFiles.length) {
                 console.log(`auto: ${formatWithUsage(rows[r], categoryUsage)} × ${formatWithUsage(cols[c], categoryUsage)}  →  ${formatWithUsage(pick, wordUsage)}`);
             } else {
                 console.log(`Showing ${opts.length} options for selection...`);
-                
+
                 pick = await prompts.select({
                     message: `Pick word for ${formatWithUsage(rows[r], categoryUsage)} × ${formatWithUsage(cols[c], categoryUsage)}`,
-                    choices: opts.map(w => ({ 
-                        value: w, 
+                    choices: opts.map(w => ({
+                        value: w,
                         name: formatWithUsage(w, wordUsage)
                     }))
                 });
@@ -291,7 +375,6 @@ while (fileIdx < rawFiles.length) {
         console.log("❌ Duplicate word detected—skip puzzle.");
         fs.renameSync(path.join(RAW_DIR, file),
             path.join(RAW_DIR, `dup_${file}`));
-        rawFiles = unseenFiles();
         continue;
     }
 
@@ -314,7 +397,7 @@ while (fileIdx < rawFiles.length) {
             path.join(RAW_DIR, `used_${file}`));
         used.add(makeKey(rows, cols));
         used.add(makeKey(cols, rows));
-        
+
         // Update usage counts for this session
         for (const category of [...rows, ...cols]) {
             categoryUsage[category] = (categoryUsage[category] || 0) + 1;
@@ -324,7 +407,7 @@ while (fileIdx < rawFiles.length) {
                 wordUsage[word] = (wordUsage[word] || 0) + 1;
             }
         }
-        
+
         console.log(`✅ Added (total approved: ${db.length})`);
     } else {
         console.log("Puzzle rejected, skipping...");
@@ -341,9 +424,7 @@ while (fileIdx < rawFiles.length) {
         break;
     }
 
-    console.log("User chose to continue, refreshing file list...");
-    rawFiles = unseenFiles();
-    fileIdx = 0;
+    console.log("User chose to continue, searching for next puzzle...");
 }
 
 console.log("🎉  Curator session ended.");

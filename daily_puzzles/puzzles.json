@@ -518,5 +518,85 @@
         "Gran Canaria"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Ends with AND",
+      "Ends with BIA",
+      "Federal Republics",
+      "Former British Colonies"
+    ],
+    "cols": [
+      "Locations in Asia",
+      "Locations in Europe",
+      "Locations in North America",
+      "Locations in South America"
+    ],
+    "words": [
+      [
+        "Samarkand",
+        "Poland",
+        "Staten Island",
+        "Easter Island"
+      ],
+      [
+        "Saudi Arabia",
+        "Serbia",
+        "Columbia",
+        "Colombia"
+      ],
+      [
+        "Nepal",
+        "Germany",
+        "Mexico",
+        "Argentina"
+      ],
+      [
+        "British Malaya",
+        "Malta",
+        "British Honduras",
+        "British Guiana"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Adventure Stories",
+      "Comedy Stories",
+      "Musical Films",
+      "Thriller Stories"
+    ],
+    "cols": [
+      "Best Picture Winners",
+      "Books",
+      "Christmas Stories",
+      "Movies featuring Kurt Russell"
+    ],
+    "words": [
+      [
+        "The Lord of the Rings: The Return of the King",
+        "The Hobbit",
+        "The Polar Express",
+        "Stargate"
+      ],
+      [
+        "Everything Everywhere All at Once",
+        "The Hitchhiker's Guide to the Galaxy",
+        "National Lampoon's Christmas Vacation",
+        "Once Upon a Time in Hollywood"
+      ],
+      [
+        "Chicago",
+        "Les Misérables",
+        "The Nightmare Before Christmas",
+        "The Fox and the Hound"
+      ],
+      [
+        "The Departed",
+        "The Da Vinci Code",
+        "Die Hard",
+        "Death Proof"
+      ]
+    ]
   }
 ]
