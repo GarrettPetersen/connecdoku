@@ -1152,10 +1152,17 @@ function init(puz){
       
       freezeIntersections();
       
-      // If puzzle is already solved, show share popup
-      if (solvedRows.size === 4 && solvedCols.size === 4) {
+      // If puzzle is already completed (either solved or failed), show share popup
+      if (finished || (solvedRows.size === 4 && solvedCols.size === 4)) {
+        // If finished due to 3 strikes, we need to show the correct category labels
+        if (finished && strikes >= 3) {
+          relabelAllHeaders();
+        }
+        
         setTimeout(() => {
-          showShare(true);
+          // Determine if it was a win or loss
+          const won = solvedRows.size === 4 && solvedCols.size === 4;
+          showShare(won);
           $('#shareBtn').style.display = 'block';
         }, 500);
       }
