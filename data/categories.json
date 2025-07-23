@@ -565,11 +565,18 @@
   ],
   "Ancient Figures": [
     "Aristotle",
+    "Confucius",
+    "Emperor Qin Shi Huang",
+    "Emperor Wu of Han",
+    "Guan Yu",
     "Plato",
-    "Socrates"
+    "Socrates",
+    "Sun Tzu"
   ],
   "Ancient Rulers": [
     "Cleopatra",
+    "Emperor Qin Shi Huang",
+    "Emperor Wu of Han",
     "Ming",
     "Pharaoh",
     "Tsar"
@@ -3346,6 +3353,9 @@
   "Ends with  FE": [
     "Santa Fe"
   ],
+  "Ends with  FU": [
+    "Du Fu"
+  ],
   "Ends with  HE": [
     "Zheng He"
   ],
@@ -3363,6 +3373,9 @@
   ],
   "Ends with  VU": [
     "Deja Vu"
+  ],
+  "Ends with  YU": [
+    "Guan Yu"
   ],
   "Ends with  ZI": [
     "Yu Xiang Qie Zi"
@@ -3671,8 +3684,10 @@
     "Citizen Kane"
   ],
   "Ends with ANG": [
+    "Emperor Qin Shi Huang",
     "Ma La Tang",
-    "Tang"
+    "Tang",
+    "Zhu Yuanzhang"
   ],
   "Ends with ANI": [
     "Biryani",
@@ -3951,6 +3966,9 @@
   ],
   "Ends with BAB": [
     "Kebab"
+  ],
+  "Ends with BAI": [
+    "Li Bai"
   ],
   "Ends with BAN": [
     "Harry Potter and the Prisoner of Azkaban"
@@ -4904,6 +4922,7 @@
     "Nuoc Cham"
   ],
   "Ends with HAN": [
+    "Emperor Wu of Han",
     "Han",
     "Khan",
     "Leviathan"
@@ -5497,6 +5516,7 @@
   ],
   "Ends with IUS": [
     "Aquarius",
+    "Confucius",
     "Mauritius",
     "Sagittarius",
     "Scorpius",
@@ -7459,6 +7479,9 @@
   ],
   "Ends with TZE": [
     "Yangtze"
+  ],
+  "Ends with TZU": [
+    "Sun Tzu"
   ],
   "Ends with UAI": [
     "Kauai"
@@ -9433,21 +9456,27 @@
     "Charlemagne",
     "Christopher Columbus",
     "Cleopatra",
+    "Confucius",
     "Copernicus",
     "Da Vinci",
     "Dante",
     "Drake",
+    "Du Fu",
     "Einstein",
     "Elizabeth",
+    "Emperor Qin Shi Huang",
+    "Emperor Wu of Han",
     "Ferdinand Magellan",
     "Franklin D. Roosevelt",
     "Galileo",
     "George Washington",
     "Grant",
+    "Guan Yu",
     "Handel",
     "Homer",
     "Joan of Arc",
     "Khan",
+    "Li Bai",
     "Marco Polo",
     "Marie Curie",
     "Mary",
@@ -9463,6 +9492,7 @@
     "Saint Patrick",
     "Shakespeare",
     "Socrates",
+    "Sun Tzu",
     "Teresa",
     "The Mahabharata",
     "Thomas Edison",
@@ -9472,7 +9502,8 @@
     "William the Conqueror",
     "Winston Churchill",
     "Wright",
-    "Zheng He"
+    "Zheng He",
+    "Zhu Yuanzhang"
   ],
   "Historical Weapons": [
     "Axe",
@@ -10683,15 +10714,19 @@
   ],
   "Medieval Figures": [
     "Charlemagne",
+    "Du Fu",
     "Joan of Arc",
+    "Li Bai",
     "Marco Polo",
     "William the Conqueror",
-    "Zheng He"
+    "Zheng He",
+    "Zhu Yuanzhang"
   ],
   "Medieval Rulers": [
     "Charlemagne",
     "Khan",
-    "William the Conqueror"
+    "William the Conqueror",
+    "Zhu Yuanzhang"
   ],
   "Metallic Colors": [
     "Cobalt",
@@ -10752,12 +10787,17 @@
     "Yemen"
   ],
   "Military Leaders": [
+    "Emperor Qin Shi Huang",
+    "Emperor Wu of Han",
     "George Washington",
     "Grant",
+    "Guan Yu",
     "Joan of Arc",
     "Napoleon Bonaparte",
+    "Sun Tzu",
     "William the Conqueror",
-    "Winston Churchill"
+    "Winston Churchill",
+    "Zhu Yuanzhang"
   ],
   "Military Ships": [
     "Akagi",
@@ -11022,11 +11062,14 @@
   "Modern Rulers": [
     "Catherine",
     "Elizabeth",
+    "Emperor Qin Shi Huang",
+    "Emperor Wu of Han",
     "Franklin D. Roosevelt",
     "George Washington",
     "Napoleon Bonaparte",
     "Victoria",
-    "Winston Churchill"
+    "Winston Churchill",
+    "Zhu Yuanzhang"
   ],
   "Monarchs": [
     "Duke",
@@ -14667,6 +14710,7 @@
     "Christopher Columbus",
     "Cleopatra",
     "Cobb",
+    "Confucius",
     "Copernicus",
     "Count",
     "Curie",
@@ -14678,12 +14722,15 @@
     "Darwin",
     "Dirac",
     "Drake",
+    "Du Fu",
     "Duke",
     "Edison",
     "Einstein",
     "Elizabeth",
     "Elsa",
     "Elvis",
+    "Emperor Qin Shi Huang",
+    "Emperor Wu of Han",
     "Faraday",
     "Ferdinand Magellan",
     "Feynman",
@@ -14696,6 +14743,7 @@
     "Graf Zeppelin",
     "Grant",
     "Grover",
+    "Guan Yu",
     "Handel",
     "Hawking",
     "Heather",
@@ -14726,6 +14774,7 @@
     "Lando",
     "Lenore",
     "Leo",
+    "Li Bai",
     "Lincoln",
     "Madison",
     "Madonna",
@@ -14772,6 +14821,7 @@
     "Siren",
     "Socrates",
     "Sulu",
+    "Sun Tzu",
     "Tanaka",
     "Teresa",
     "Tesla",
@@ -14789,7 +14839,8 @@
     "Wilson",
     "Winston Churchill",
     "Wright",
-    "Zheng He"
+    "Zheng He",
+    "Zhu Yuanzhang"
   ],
   "Period Stories": [
     "12 Years a Slave",
@@ -14834,6 +14885,7 @@
   ],
   "Philosophers": [
     "Aristotle",
+    "Confucius",
     "Plato",
     "Socrates"
   ],
@@ -15440,7 +15492,9 @@
   ],
   "Poets": [
     "Dante",
+    "Du Fu",
     "Homer",
+    "Li Bai",
     "Poe",
     "Shakespeare"
   ],
@@ -15593,6 +15647,7 @@
     "Christopher Columbus",
     "Cleopatra",
     "Cobb",
+    "Confucius",
     "Copernicus",
     "Curie",
     "Curry",
@@ -15601,10 +15656,13 @@
     "Darwin",
     "Dirac",
     "Drake",
+    "Du Fu",
     "Duke",
     "Edison",
     "Einstein",
     "Elizabeth",
+    "Emperor Qin Shi Huang",
+    "Emperor Wu of Han",
     "Faraday",
     "Ferdinand Magellan",
     "Feynman",
@@ -15615,6 +15673,7 @@
     "Graf Zeppelin",
     "Grant",
     "Grover",
+    "Guan Yu",
     "Handel",
     "Hawking",
     "Homer",
@@ -15632,6 +15691,7 @@
     "Kobe",
     "Lando",
     "Leo",
+    "Li Bai",
     "Lincoln",
     "Madison",
     "Mantle",
@@ -15658,6 +15718,7 @@
     "Saint Patrick",
     "Shakespeare",
     "Socrates",
+    "Sun Tzu",
     "Teresa",
     "Tesla",
     "Thomas Edison",
@@ -15671,7 +15732,8 @@
     "Wilson",
     "Winston Churchill",
     "Wright",
-    "Zheng He"
+    "Zheng He",
+    "Zhu Yuanzhang"
   ],
   "Rebellions": [
     "The Boxer Rebellion",
@@ -15721,6 +15783,8 @@
     "The Protestant Reformation"
   ],
   "Religious Figures": [
+    "Confucius",
+    "Guan Yu",
     "Joan of Arc",
     "Saint Patrick",
     "Teresa"
@@ -17688,6 +17752,7 @@
     "Concepcion",
     "Concord",
     "Concordia",
+    "Confucius",
     "Congee",
     "Congo",
     "Constantinople",
@@ -17955,6 +18020,9 @@
   "Starts with DRU": [
     "Drum"
   ],
+  "Starts with DU ": [
+    "Du Fu"
+  ],
   "Starts with DUB": [
     "Dublin"
   ],
@@ -18067,6 +18135,8 @@
   ],
   "Starts with EMP": [
     "Empanada",
+    "Emperor Qin Shi Huang",
+    "Emperor Wu of Han",
     "Empire State Building",
     "Empress of Asia",
     "Empress of Ireland"
@@ -18468,6 +18538,7 @@
   "Starts with GUA": [
     "Guacamole",
     "Guam",
+    "Guan Yu",
     "Guatemala"
   ],
   "Starts with GUC": [
@@ -19158,6 +19229,9 @@
   ],
   "Starts with LEX": [
     "Lex Luthor"
+  ],
+  "Starts with LI ": [
+    "Li Bai"
   ],
   "Starts with LIB": [
     "Liberia",
@@ -20627,6 +20701,7 @@
   ],
   "Starts with SUN": [
     "Sun",
+    "Sun Tzu",
     "Sundae",
     "Sunflower"
   ],
@@ -21484,6 +21559,9 @@
   "Starts with ZHE": [
     "Zheng He"
   ],
+  "Starts with ZHU": [
+    "Zhu Yuanzhang"
+  ],
   "Starts with ZIM": [
     "Zimbabwe"
   ],
@@ -22325,6 +22403,7 @@
     "Chow Fun",
     "Chow Mein",
     "Chungking Express",
+    "Confucius",
     "Congee",
     "Crouching Tiger, Hidden Dragon",
     "Dan Dan Noodles",
@@ -22333,8 +22412,11 @@
     "Dim Sum",
     "Dragon",
     "Dream of the Red Chamber",
+    "Du Fu",
     "Dumpling",
     "Egg Foo Young",
+    "Emperor Qin Shi Huang",
+    "Emperor Wu of Han",
     "Fallen Angels",
     "Farewell My Concubine",
     "Forbidden City",
@@ -22342,6 +22424,7 @@
     "Gobi",
     "Gong Bao Ji Ding",
     "Great Wall",
+    "Guan Yu",
     "Hainan",
     "Happy Together",
     "Hard Boiled",
@@ -22354,6 +22437,7 @@
     "Jiaozi",
     "Journey to the West",
     "Kung Pao Chicken",
+    "Li Bai",
     "Lo Mein",
     "Ma La Tang",
     "Mapo Tofu",
@@ -22368,6 +22452,7 @@
     "Ping Pong",
     "Raise the Red Lantern",
     "Romance of the Three Kingdoms",
+    "Sun Tzu",
     "Sweet and Sour",
     "Table Tennis",
     "The Dark Forest",
@@ -22382,7 +22467,8 @@
     "Wonton",
     "Xiaolongbao",
     "Yu Xiang Qie Zi",
-    "Zheng He"
+    "Zheng He",
+    "Zhu Yuanzhang"
   ],
   "Things Colombian": [
     "Ajiaco",
@@ -24163,11 +24249,15 @@
   ],
   "Writers": [
     "Aristotle",
+    "Confucius",
     "Dante",
+    "Du Fu",
     "Homer",
+    "Li Bai",
     "Plato",
     "Poe",
     "Shakespeare",
+    "Sun Tzu",
     "Winston Churchill"
   ],
   "Writing Instruments": [
