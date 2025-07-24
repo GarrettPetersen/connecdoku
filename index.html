@@ -1604,6 +1604,19 @@ function init(puz){
           showShare(won);
           $('#shareBtn').style.display = 'block';
         }, 500);
+      } else if (strikes >= 3) {
+        // Handle case where game was finished with 3 strikes but finished flag wasn't set
+        finished = true;
+        
+        // Rearrange words into proper solved positions (like after 3rd strike)
+        const animTime = solveCompletely();
+        
+        // After swaps finish, show missing headers & freeze board
+        setTimeout(() => {
+          relabelAllHeaders();
+          showShare(false); // false = lost
+          $('#shareBtn').style.display = 'block';
+        }, 1000 + animTime); // 1 s pause + animation
       }
     }
 }
