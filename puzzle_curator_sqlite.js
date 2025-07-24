@@ -70,14 +70,27 @@ function getAllPuzzles(db) {
     });
 }
 
-function getRandomPuzzle(db) {
+function getRandomPuzzle(db, targetCategory = null) {
     return new Promise((resolve, reject) => {
-        db.get(`
+        let query = `
             SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp
             FROM puzzles
-            ORDER BY RANDOM()
-            LIMIT 1
-        `, (err, row) => {
+        `;
+
+        let params = [];
+
+        if (targetCategory) {
+            query += `
+                WHERE row0 = ? OR row1 = ? OR row2 = ? OR row3 = ? 
+                   OR col0 = ? OR col1 = ? OR col2 = ? OR col3 = ?
+            `;
+            params = [targetCategory, targetCategory, targetCategory, targetCategory,
+                targetCategory, targetCategory, targetCategory, targetCategory];
+        }
+
+        query += ` ORDER BY RANDOM() LIMIT 1`;
+
+        db.get(query, params, (err, row) => {
             if (err) {
                 reject(err);
             } else if (row) {
@@ -158,32 +171,47 @@ function uniqueWords(rCat, cCat, allCats) {
     if (!rowWords || !colWords) return [];
 
     // Find words that appear in both categories
-    const intersection = new Set();
-    for (const word of rowWords) {
-        if (colWords.has(word)) {
-            intersection.add(word);
-        }
-    }
+    let v = [...rowWords].filter(w => colWords.has(w));
 
-    // Filter out words that appear in any of the other 6 categories
-    const otherCats = allCats.filter(cat => cat !== rCat && cat !== cCat);
-    const uniqueWords = [];
-
-    for (const word of intersection) {
-        let isUnique = true;
-        for (const otherCat of otherCats) {
+    // Filter out any words that appear in ANY other category
+    for (const otherCat of allCats) {
+        if (otherCat !== rCat && otherCat !== cCat) {
             const otherWords = catSet[otherCat];
-            if (otherWords && otherWords.has(word)) {
-                isUnique = false;
-                break;
+            if (otherWords) {
+                v = v.filter(w => !otherWords.has(w));
             }
         }
-        if (isUnique) {
-            uniqueWords.push(word);
+    }
+    return v;
+}
+
+function validatePuzzle(puzzle) {
+    const allCategories = [...puzzle.rows, ...puzzle.cols];
+
+    // Check if all categories exist in our current word list
+    for (const category of allCategories) {
+        if (!catSet[category]) {
+            console.log(`❌ Category "${category}" not found in current word list`);
+            return false;
         }
     }
 
-    return uniqueWords;
+    // Generate words for each cell and check if they're valid
+    const words = [];
+    for (let i = 0; i < 4; i++) {
+        const row = [];
+        for (let j = 0; j < 4; j++) {
+            const unique = uniqueWords(puzzle.rows[i], puzzle.cols[j], allCategories);
+            if (unique.length === 0) {
+                console.log(`❌ No valid word found for cell (${i},${j}): ${puzzle.rows[i]} × ${puzzle.cols[j]}`);
+                return false;
+            }
+            row.push(unique[0]);
+        }
+        words.push(row);
+    }
+
+    return true;
 }
 
 function formatWithUsage(item, usageCount) {
@@ -191,15 +219,39 @@ function formatWithUsage(item, usageCount) {
     return `${item} (${count})`;
 }
 
+function findCommonPrefix(strings) {
+    if (strings.length === 0) return "";
+    if (strings.length === 1) return strings[0];
+
+    const first = strings[0];
+    let commonPrefix = "";
+
+    for (let i = 0; i < first.length; i++) {
+        const char = first[i];
+        for (let j = 1; j < strings.length; j++) {
+            if (strings[j][i] !== char) {
+                return commonPrefix;
+            }
+        }
+        commonPrefix += char;
+    }
+
+    return commonPrefix;
+}
+
 // ──────────────── puzzle selection ────────────────────────────────
-async function findBestPuzzle() {
+async function findBestPuzzle(targetCategory = null) {
     const sqliteDb = await openDatabase();
 
     try {
         // Get a random puzzle from the database
-        const puzzle = await getRandomPuzzle(sqliteDb);
+        const puzzle = await getRandomPuzzle(sqliteDb, targetCategory);
         if (!puzzle) {
-            console.log("No puzzles found in database");
+            if (targetCategory) {
+                console.log(`No puzzles found containing category "${targetCategory}"`);
+            } else {
+                console.log("No puzzles found in database");
+            }
             return null;
         }
 
@@ -237,71 +289,241 @@ async function main() {
     let curated = 0;
     const maxAttempts = 1000;
     let attempts = 0;
+    let targetCategory = null;
 
     while (attempts < maxAttempts) {
         attempts++;
 
-        const result = await findBestPuzzle();
+        // Ask user if they want to search for a specific category
+        if (curated === 0 || targetCategory === null) {
+            const searchChoice = await prompts.select({
+                message: "What would you like to do?",
+                choices: [
+                    { name: "🎲 Find a random puzzle", value: "random" },
+                    { name: "🔍 Search for puzzle with specific category", value: "search" },
+                    { name: "🛑 Stop curating", value: "stop" }
+                ]
+            });
+
+            if (searchChoice === "stop") {
+                break;
+            }
+
+            if (searchChoice === "search") {
+                // Get all available categories for tab completion
+                const allCategories = Object.keys(categoriesJson).sort();
+
+                // Show random example categories (sorted alphabetically)
+                const shuffledCategories = [...allCategories].sort(() => Math.random() - 0.5);
+                const exampleCategories = shuffledCategories.slice(0, 10).sort();
+
+                console.log("\nExample categories:");
+                exampleCategories.forEach(cat => console.log(`  ${cat}`));
+                console.log("  ... and many more\n");
+
+                // Custom tab completion input
+                let categoryInput = "";
+                let suggestions = [];
+                let lastSuggestionLines = 0;
+
+                while (true) {
+                    // Clear previous suggestions
+                    if (lastSuggestionLines > 0) {
+                        for (let i = 0; i < lastSuggestionLines; i++) {
+                            process.stdout.write('\x1b[1A\x1b[2K'); // Move up and clear line
+                        }
+                    }
+
+                    const input = await prompts.input({
+                        message: `Enter category name: ${categoryInput}`,
+                        validate: (input) => {
+                            if (!input.trim()) return "Please enter a category name";
+                            if (!allCategories.includes(input.trim())) {
+                                return `Category "${input.trim()}" not found.`;
+                            }
+                            return true;
+                        }
+                    });
+
+                    // Check if input contains tab character
+                    if (input.includes('\t')) {
+                        const beforeTab = input.split('\t')[0];
+                        const currentInput = categoryInput + beforeTab;
+
+                        // Find matching categories
+                        suggestions = allCategories.filter(cat =>
+                            cat.toLowerCase().includes(currentInput.toLowerCase())
+                        );
+
+                        if (suggestions.length === 1) {
+                            // Single match - complete it
+                            categoryInput = suggestions[0];
+                            console.log(`Completed: ${categoryInput}`);
+                            lastSuggestionLines = 1;
+                        } else if (suggestions.length > 1) {
+                            // Multiple matches - show common prefix
+                            const commonPrefix = findCommonPrefix(suggestions);
+                            if (commonPrefix.length > currentInput.length) {
+                                categoryInput = commonPrefix;
+                                console.log(`Partial completion: ${categoryInput}`);
+                                lastSuggestionLines = 1;
+                            } else {
+                                console.log("\nSuggestions:");
+                                suggestions.slice(0, 10).forEach(s => console.log(`  ${s}`));
+                                lastSuggestionLines = 11; // 1 for "Suggestions:" + 10 for items
+                            }
+                        } else {
+                            console.log("No matches found");
+                            lastSuggestionLines = 1;
+                        }
+                    } else {
+                        // No tab - treat as normal input
+                        categoryInput = input.trim();
+                        break;
+                    }
+                }
+
+                targetCategory = categoryInput.trim();
+                console.log(`🔍 Searching for puzzles containing "${targetCategory}"...`);
+            } else {
+                targetCategory = null;
+            }
+        }
+
+        const result = await findBestPuzzle(targetCategory);
         if (!result) {
-            console.log("No suitable puzzle found, trying again...");
+            if (targetCategory) {
+                console.log(`No puzzles found containing category "${targetCategory}"`);
+            } else {
+                console.log("No suitable puzzle found, trying again...");
+            }
             continue;
         }
 
         const { puzzle, overlap } = result;
+
+        // Validate that the puzzle is still valid with current word list
+        if (!validatePuzzle(puzzle)) {
+            console.log("❌ Puzzle is no longer valid with current word list, skipping...");
+            continue;
+        }
+
         const allCategories = [...puzzle.rows, ...puzzle.cols];
 
         console.log(`\n--- Puzzle ${curated + 1} (Attempt ${attempts}) ---`);
         console.log(`Overlap with previous puzzles: ${overlap}`);
         console.log(`Categories: ${allCategories.join(", ")}`);
 
-        // Generate words for each cell
+        // Generate words for each cell (we know they exist because validatePuzzle passed)
         const words = [];
         for (let i = 0; i < 4; i++) {
             const row = [];
             for (let j = 0; j < 4; j++) {
                 const unique = uniqueWords(puzzle.rows[i], puzzle.cols[j], allCategories);
-                row.push(unique.length > 0 ? unique[0] : "NO_WORD");
+                row.push(unique[0]); // We know this exists because validatePuzzle passed
             }
             words.push(row);
         }
 
-        // Display the puzzle
-        console.log("\nPuzzle:");
-        console.log("Rows:", puzzle.rows);
-        console.log("Cols:", puzzle.cols);
-        console.log("\nWords:");
-        for (let i = 0; i < 4; i++) {
-            console.log(`  ${puzzle.rows[i]}: ${words[i].join(" | ")}`);
-        }
-        console.log("  " + puzzle.cols.map(c => c.padEnd(20)).join(" | "));
+        // Display the puzzle categories
+        console.log("\nPuzzle Categories:");
+        console.log("Rows:", puzzle.rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+        console.log("\nCols:", puzzle.cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
 
-        // Check if puzzle is valid (has at least one word in each cell)
-        const hasEmptyCells = words.some(row => row.some(word => word === "NO_WORD"));
-        if (hasEmptyCells) {
+        // Ask user if they want to continue with this puzzle
+        const continuePuzzle = await prompts.confirm({
+            message: "Continue with this puzzle?",
+            default: true
+        });
+
+        if (!continuePuzzle) {
+            console.log("Skipping puzzle...");
+            continue;
+        }
+
+        // Build viable word matrix and check if any cell is empty
+        console.log("Building viable word matrix...");
+        const viableGrid = Array.from({ length: 4 }, () => Array(4));
+        let cellOk = true;
+
+        for (let r = 0; r < 4 && cellOk; ++r) {
+            for (let c = 0; c < 4; ++c) {
+                const opts = uniqueWords(puzzle.rows[r], puzzle.cols[c], allCategories);
+                if (!opts.length) {
+                    console.log(`  Cell [${r}][${c}] has no valid words`);
+                    cellOk = false;
+                    break;
+                }
+                viableGrid[r][c] = opts;
+            }
+        }
+
+        if (!cellOk) {
             console.log("❌ Puzzle has empty cells, skipping...");
             continue;
         }
 
-        // Ask user if they want to keep this puzzle
-        const answer = await prompts.select({
-            message: "Keep this puzzle?",
-            choices: [
-                { name: "✅ Yes, keep it", value: "yes" },
-                { name: "❌ No, skip it", value: "no" },
-                { name: "🛑 Stop curating", value: "stop" }
-            ]
-        });
+        console.log("Viable word matrix built successfully");
 
-        if (answer === "stop") {
-            break;
+        // Curator chooses a word for each intersection
+        const chosen = Array.from({ length: 4 }, () => Array(4));
+        const usedWords = new Set();
+
+        for (let r = 0; r < 4; ++r) {
+            for (let c = 0; c < 4; ++c) {
+                // Show current progress
+                console.clear();
+                console.log("Rows:", puzzle.rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+                console.log("\nCols:", puzzle.cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+                console.log("\nCurrent puzzle state:");
+                console.table(chosen);
+                console.log(`\nChoosing word for: ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)}\n`);
+
+                const opts = viableGrid[r][c].filter(w => !usedWords.has(w));
+
+                let pick;
+                if (opts.length === 1) {
+                    pick = opts[0];
+                    console.log(`auto: ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)}  →  ${formatWithUsage(pick, wordUsage)}`);
+                } else {
+                    console.log(`Showing ${opts.length} options for selection...`);
+
+                    pick = await prompts.select({
+                        message: `Pick word for ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)}`,
+                        choices: opts.map(w => ({
+                            value: w,
+                            name: formatWithUsage(w, wordUsage)
+                        }))
+                    });
+                }
+                chosen[r][c] = pick;
+                usedWords.add(pick);
+            }
         }
 
-        if (answer === "yes") {
-            // Add to database
+        // Final duplicate check (paranoia)
+        if (usedWords.size !== 16) {
+            console.log("❌ Duplicate word detected—skip puzzle.");
+            continue;
+        }
+
+        // Preview & approval
+        console.clear();
+        console.log("Final Puzzle Review:\n");
+        console.log("Rows:", puzzle.rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+        console.log("\nCols:", puzzle.cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+        console.log("\nCompleted puzzle:");
+        console.table(chosen);
+
+        console.log("Asking for approval...");
+        const approve = await prompts.confirm({ message: "Approve this puzzle?" });
+        if (approve) {
+            console.log("Puzzle approved, saving...");
+            // Add puzzle to database
             const newPuzzle = {
                 rows: puzzle.rows,
                 cols: puzzle.cols,
-                words: words
+                words: chosen
             };
 
             db.push(newPuzzle);
@@ -313,7 +535,7 @@ async function main() {
                 categoryUsage[category] = (categoryUsage[category] || 0) + 1;
             }
 
-            for (const row of words) {
+            for (const row of chosen) {
                 for (const word of row) {
                     wordUsage[word] = (wordUsage[word] || 0) + 1;
                 }
@@ -327,16 +549,32 @@ async function main() {
         }
 
         // Ask if they want to continue
+        let continueChoices = [
+            { name: "🔄 Continue with new search", value: "continue" },
+            { name: "🛑 Stop", value: "stop" }
+        ];
+
+        // If we were searching for a specific category, offer to find another with same category
+        if (targetCategory) {
+            continueChoices.unshift({
+                name: `🔍 Find another puzzle with "${targetCategory}"`,
+                value: "same_category"
+            });
+        }
+
         const continueAnswer = await prompts.select({
             message: `Continue curating? (${curated} puzzles saved)`,
-            choices: [
-                { name: "🔄 Continue", value: "continue" },
-                { name: "🛑 Stop", value: "stop" }
-            ]
+            choices: continueChoices
         });
 
         if (continueAnswer === "stop") {
             break;
+        } else if (continueAnswer === "same_category") {
+            // Keep the same target category and continue
+            console.log(`🔍 Searching for another puzzle containing "${targetCategory}"...`);
+        } else {
+            // Reset target category for new search
+            targetCategory = null;
         }
     }
 
