@@ -82,12 +82,12 @@ function getRandomPuzzle(db, targetCategory = null) {
 
         if (targetCategory) {
             query += `
-                WHERE LOWER(row0) LIKE ? OR LOWER(row1) LIKE ? OR LOWER(row2) LIKE ? OR LOWER(row3) LIKE ? 
-                   OR LOWER(col0) LIKE ? OR LOWER(col1) LIKE ? OR LOWER(col2) LIKE ? OR LOWER(col3) LIKE ?
+                WHERE LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
+                   OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?
             `;
-            const likePattern = `%${targetCategory.toLowerCase()}%`;
-            params = [likePattern, likePattern, likePattern, likePattern,
-                likePattern, likePattern, likePattern, likePattern];
+            const lowerCategory = targetCategory.toLowerCase();
+            params = [lowerCategory, lowerCategory, lowerCategory, lowerCategory,
+                lowerCategory, lowerCategory, lowerCategory, lowerCategory];
         }
 
         query += ` ORDER BY RANDOM() LIMIT 1`;
