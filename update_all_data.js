@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
+import sqlite3 from 'sqlite3';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -281,4 +282,38 @@ for (const [category, emoji] of Object.entries(updatedEmojisData)) {
 
 console.log(`- Found ${checkmarkCount} categories with ☑️ emoji`);
 console.log(`- Total categories: ${Object.keys(updatedEmojisData).length}`);
-console.log(`- Percentage with ☑️: ${((checkmarkCount / Object.keys(updatedEmojisData).length) * 100).toFixed(1)}%`); 
+console.log(`- Percentage with ☑️: ${((checkmarkCount / Object.keys(updatedEmojisData).length) * 100).toFixed(1)}%`);
+
+// Step 6: Count candidate puzzles in SQLite database
+console.log('6. Counting candidate puzzles in SQLite database...');
+const dbPath = path.join(__dirname, 'puzzles.db');
+
+function countPuzzlesInDatabase() {
+    return new Promise((resolve, reject) => {
+        if (!fs.existsSync(dbPath)) {
+            resolve(0);
+            return;
+        }
+
+        const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READONLY, (err) => {
+            if (err) {
+                console.log(`- SQLite database not accessible: ${err.message}`);
+                resolve(0);
+                return;
+            }
+
+            db.get('SELECT COUNT(*) as count FROM puzzles', (err, row) => {
+                if (err) {
+                    console.log(`- Error counting puzzles: ${err.message}`);
+                    resolve(0);
+                } else {
+                    resolve(row ? row.count : 0);
+                }
+                db.close();
+            });
+        });
+    });
+}
+
+const puzzleCount = await countPuzzlesInDatabase();
+console.log(`- Found ${puzzleCount} candidate puzzles in SQLite database`); 
