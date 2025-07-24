@@ -1318,5 +1318,45 @@
         "Hispania"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1960s",
+      "1980s",
+      "1990s",
+      "2000s"
+    ],
+    "cols": [
+      "Biographical Stories",
+      "Events",
+      "Japanese Films",
+      "Time Travel Stories"
+    ],
+    "words": [
+      [
+        "Lawrence of Arabia",
+        "The Moon Landing",
+        "Yojimbo",
+        "Slaughterhouse-Five"
+      ],
+      [
+        "Amadeus",
+        "The Chernobyl Disaster",
+        "My Neighbor Totoro",
+        "Back to the Future"
+      ],
+      [
+        "Evita",
+        "The Oklahoma City Bombing",
+        "Princess Mononoke",
+        "Back to the Future Part III"
+      ],
+      [
+        "A Beautiful Mind",
+        "9/11",
+        "Spirited Away",
+        "Donnie Darko"
+      ]
+    ]
   }
 ]

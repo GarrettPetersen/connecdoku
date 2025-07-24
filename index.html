@@ -634,6 +634,8 @@ function init(puz){
 
     saveGameState();
     integrityCheck();
+    validatePuzzleState();
+    validatePuzzleSolvability();
   }
 
   function makeSolvedLabel(txt,lvl){
@@ -653,20 +655,38 @@ function init(puz){
   function alignRow(r) {
     if (!colCatToIdx) return;                 // no column order yet
 
+    console.log(`Aligning row ${r}:`, G[r]);
+    console.log('Column category mapping:', colCatToIdx);
+    
+    // Instead of trying every possible move, let's be more strategic
+    // Only make moves that improve the alignment toward a valid solution
+    
     let moved;
     do {
       moved = false;
-    for (let c = 0; c < 4; c++) {
-        const w       = G[r][c];
-        const wantCol = colCatToIdx[wordToColCat[w]];
-        if (wantCol === c ||
-            solvedCols.has(c) || solvedCols.has(wantCol)) continue;
-
-        swapCells(r, c, r, wantCol, true);
-        moved = true;
+      
+      // For each word in this row, check if it's in the right category column
+      for (let c = 0; c < 4; c++) {
+        if (solvedCols.has(c)) continue; // Can't move words in solved columns
+        
+        const w = G[r][c];
+        const wordCategory = wordToColCat[w];
+        
+        // Check if this word is in the right column for its category
+        // (based on the canonical mapping we learned from solved lines)
+        const canonicalCol = colCatToIdx[wordCategory];
+        
+        if (canonicalCol !== undefined && canonicalCol !== c && !solvedCols.has(canonicalCol)) {
+          // This word should be in a different column
+          console.log(`Moving "${w}" from column ${c} to canonical column ${canonicalCol}`);
+          swapCells(r, c, r, canonicalCol, true);
+          moved = true;
+          break; // Only make one move at a time to avoid loops
+        }
       }
     } while (moved);
 
+    console.log(`Row ${r} after alignment:`, G[r]);
     integrityCheck();
   }
 
@@ -678,20 +698,38 @@ function init(puz){
   function alignCol(c) {
     if (!rowCatToIdx) return;                 // no row order yet
 
+    console.log(`Aligning column ${c}:`, [G[0][c], G[1][c], G[2][c], G[3][c]]);
+    console.log('Row category mapping:', rowCatToIdx);
+    
+    // Instead of trying every possible move, let's be more strategic
+    // Only make moves that improve the alignment toward a valid solution
+    
     let moved;
     do {
       moved = false;
-    for (let r = 0; r < 4; r++) {
-        const w       = G[r][c];
-        const wantRow = rowCatToIdx[wordToRowCat[w]];
-        if (wantRow === r ||
-            solvedRows.has(r) || solvedRows.has(wantRow)) continue;
-
-        swapCells(r, c, wantRow, c, true);
-        moved = true;
+      
+      // For each word in this column, check if it's in the right category row
+      for (let r = 0; r < 4; r++) {
+        if (solvedRows.has(r)) continue; // Can't move words in solved rows
+        
+        const w = G[r][c];
+        const wordCategory = wordToRowCat[w];
+        
+        // Check if this word is in the right row for its category
+        // (based on the canonical mapping we learned from solved lines)
+        const canonicalRow = rowCatToIdx[wordCategory];
+        
+        if (canonicalRow !== undefined && canonicalRow !== r && !solvedRows.has(canonicalRow)) {
+          // This word should be in a different row
+          console.log(`Moving "${w}" from row ${r} to canonical row ${canonicalRow}`);
+          swapCells(r, c, canonicalRow, c, true);
+          moved = true;
+          break; // Only make one move at a time to avoid loops
+        }
       }
     } while (moved);
 
+    console.log(`Column ${c} after alignment:`, [G[0][c], G[1][c], G[2][c], G[3][c]]);
     integrityCheck();
   }
 
@@ -878,6 +916,130 @@ function init(puz){
     for (const c of solvedCols.keys()) {
       const col = [G[0][c], G[1][c], G[2][c], G[3][c]];
       if (!ans[hash(col)]) throw new Error(`Column ${c} claims solved but is not a valid set`);
+    }
+  }
+
+  function validatePuzzleState() {
+    console.log('=== PUZZLE STATE VALIDATION ===');
+    
+    // Check if all words are still present
+    const allWords = new Set();
+    for (let r = 0; r < 4; r++) {
+      for (let c = 0; c < 4; c++) {
+        allWords.add(G[r][c]);
+      }
+    }
+    
+    const expectedWords = new Set(puz.words.flat());
+    if (allWords.size !== expectedWords.size) {
+      console.error('Word count mismatch!', allWords.size, 'vs', expectedWords.size);
+      return false;
+    }
+    
+    for (const word of expectedWords) {
+      if (!allWords.has(word)) {
+        console.error('Missing word:', word);
+        return false;
+      }
+    }
+    
+    // Check alignment maps
+    if (colCatToIdx) {
+      console.log('Column category mapping:', colCatToIdx);
+    }
+    if (rowCatToIdx) {
+      console.log('Row category mapping:', rowCatToIdx);
+    }
+    
+    // Check solved state
+    console.log('Solved rows:', Array.from(solvedRows.keys()));
+    console.log('Solved cols:', Array.from(solvedCols.keys()));
+    
+    // Validate that solved lines are actually correct
+    const hash = a => [...a].sort().join('|');
+    for (const r of solvedRows.keys()) {
+      const rowWords = G[r];
+      const category = ans[hash(rowWords)];
+      if (!category) {
+        console.error(`Row ${r} claims solved but doesn't match any category:`, rowWords);
+        return false;
+      }
+      console.log(`Row ${r} solved as:`, category);
+    }
+    
+    for (const c of solvedCols.keys()) {
+      const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
+      const category = ans[hash(colWords)];
+      if (!category) {
+        console.error(`Column ${c} claims solved but doesn't match any category:`, colWords);
+        return false;
+      }
+      console.log(`Column ${c} solved as:`, category);
+    }
+    
+    console.log('Puzzle state validation passed');
+    return true;
+  }
+
+  function validatePuzzleSolvability() {
+    console.log('=== CHECKING PUZZLE SOLVABILITY ===');
+    
+    const hash = a => [...a].sort().join('|');
+    const isFrozen = (r, c) => solvedRows.has(r) || solvedCols.has(c);
+
+    /* ── helper: generate all 24 permutations of [0,1,2,3] ─────── */
+    function allPerms() {
+      const res = [];
+      function perm(a, l) {
+        if (l === 4) res.push(a.slice());
+        else for (let i = l; i < 4; i++) {
+          [a[l], a[i]] = [a[i], a[l]];
+          perm(a, l + 1);
+          [a[l], a[i]] = [a[i], a[l]];
+              }
+        }
+      perm([0, 1, 2, 3], 0);
+      return res;
+    }
+    const PERMS = allPerms();               // cached once
+
+    /* ── build the two "base" grids: normal & transposed ───────── */
+    const BASE_NORMAL = puz.words;          // rows = row categories
+    const BASE_TRANS  = Array.from({ length: 4 }, (_, r) =>
+                            Array.from({ length: 4 }, (_, c) => puz.words[c][r]));
+
+    /* ── try every orientation / row-perm / col-perm combo ─────── */
+    let foundValidSolution = false;
+
+    outer: for (const base of [BASE_NORMAL, BASE_TRANS]) {
+      for (const rows of PERMS) {
+        for (const cols of PERMS) {
+
+          /* quick reject: must respect every frozen word */
+          let ok = true;
+          for (let r = 0; r < 4 && ok; r++) {
+            for (let c = 0; c < 4 && ok; c++) {
+              if (!isFrozen(r, c)) continue;
+              const want = base[rows[r]][cols[c]];
+              if (G[r][c] !== want) ok = false;
+            }
+          }
+          if (!ok) continue;
+
+          /* this candidate fits all anchors → puzzle is solvable */
+          foundValidSolution = true;
+          console.log('Found valid solution with permutation:', { rows, cols });
+          break outer;
+        }
+      }
+    }
+
+    if (foundValidSolution) {
+      console.log('✅ Puzzle is solvable');
+      return true;
+    } else {
+      console.error('❌ Puzzle is NOT solvable - no valid permutation found');
+      return false;
     }
   }
 
