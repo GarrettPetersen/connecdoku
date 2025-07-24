@@ -87,7 +87,7 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
     <div class="strike" id="strikeTxt"></div>
     <div id="board" class="grid"></div>
     <div id="hintContainer" style="text-align:center;margin:15px 0;display:none;">
-      <button id="hintBtn" style="padding:10px 20px;border:none;border-radius:20px;background:#666;color:#fff;cursor:pointer;font-size:14px;font-weight:500;">hint</button>
+      <button id="hintBtn" style="padding:10px 20px;border:none;border-radius:20px;background:#999;color:#fff;cursor:pointer;font-size:14px;font-weight:500;">hint</button>
     </div>
     <p class="rowCredit">Connecdoku was created by <a href="https://x.com/GarrettPetersen" target="_blank">@GarrettPetersen</a></p>
   </div>
@@ -1393,10 +1393,17 @@ function init(puz){
   // Hint button handler
   $('#hintBtn').onclick=()=>{
     const hintBtn = $('#hintBtn');
-    const categoryEmojis = getPuzzleCategoryEmojis();
-    hintBtn.textContent = categoryEmojis;
-    hintBtn.classList.add('emoji'); // Add emoji class for compound emoji support
-    hintBtn.disabled = true; // Disable the button after showing hint
+    
+    if (hintBtn.textContent === 'hint') {
+      // Show hint
+      const categoryEmojis = getPuzzleCategoryEmojis();
+      hintBtn.textContent = categoryEmojis;
+      hintBtn.classList.add('emoji'); // Add emoji class for compound emoji support
+    } else {
+      // Hide hint
+      hintBtn.textContent = 'hint';
+      hintBtn.classList.remove('emoji'); // Remove emoji class
+    }
   };
   
       // Restore visual state if we loaded saved state (after all functions are defined)
