@@ -266,4 +266,19 @@ console.log(`- Removed ${duplicateCategoriesRemoved} duplicate categories within
 console.log(`- Found and merged ${duplicateWordsFound} duplicate words`);
 console.log(`- Generated ${Object.keys(finalCategories).length} categories`);
 console.log(`- Extracted ${sortedWords.length} words and ${sortedCategoriesList.length} categories`);
-console.log(`- Found ${Object.keys(thinCategories).length} thin categories`); 
+console.log(`- Found ${Object.keys(thinCategories).length} thin categories`);
+
+// Step 5: Count ☑️ emojis in the updated emoji file
+console.log('5. Counting ☑️ emojis...');
+const updatedEmojisData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'category_emojis.json'), 'utf8'));
+let checkmarkCount = 0;
+
+for (const [category, emoji] of Object.entries(updatedEmojisData)) {
+    if (emoji === '☑️') {
+        checkmarkCount++;
+    }
+}
+
+console.log(`- Found ${checkmarkCount} categories with ☑️ emoji`);
+console.log(`- Total categories: ${Object.keys(updatedEmojisData).length}`);
+console.log(`- Percentage with ☑️: ${((checkmarkCount / Object.keys(updatedEmojisData).length) * 100).toFixed(1)}%`); 
