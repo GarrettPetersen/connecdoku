@@ -321,6 +321,52 @@ async function findBestPuzzle(targetCategory = null) {
     }
 }
 
+async function findTrulyRandomPuzzle() {
+    const sqliteDb = await openDatabase();
+
+    try {
+        console.log("Finding a truly random puzzle...");
+
+        let puzzlesChecked = 0;
+        const maxChecks = 100; // Check up to 100 random puzzles
+
+        while (puzzlesChecked < maxChecks) {
+            // Get a random puzzle from the database
+            const puzzle = await getRandomPuzzle(sqliteDb);
+            if (!puzzle) {
+                console.log("No puzzles found in database");
+                return null;
+            }
+
+            // Check if this puzzle has already been used
+            const key = makeKey(puzzle.rows, puzzle.cols);
+            const reverseKey = makeKey(puzzle.cols, puzzle.rows);
+
+            if (used.has(key) || used.has(reverseKey)) {
+                puzzlesChecked++;
+                continue; // Skip already used puzzles
+            }
+
+            // Calculate overlap with previously used categories (for display only)
+            const allCategories = [...puzzle.rows, ...puzzle.cols];
+            let overlap = 0;
+            for (const category of allCategories) {
+                if (categoryUsage[category]) {
+                    overlap += categoryUsage[category];
+                }
+            }
+
+            console.log(`🎲 Found truly random puzzle with ${overlap} category overlaps`);
+            return { puzzle, overlap: overlap };
+        }
+
+        console.log("❌ No unused puzzles found after checking 100 puzzles");
+        return null;
+    } finally {
+        sqliteDb.close();
+    }
+}
+
 // ──────────────── main curation loop ─────────────────────────────
 async function main() {
     console.log("\nStarting puzzle curation...");
@@ -329,16 +375,18 @@ async function main() {
     const maxAttempts = 1000;
     let attempts = 0;
     let targetCategory = null;
+    let searchChoice = null;
 
     while (attempts < maxAttempts) {
         attempts++;
 
         // Ask user if they want to search for a specific category
         if (curated === 0 || targetCategory === null) {
-            const searchChoice = await prompts.select({
+            searchChoice = await prompts.select({
                 message: "What would you like to do?",
                 choices: [
-                    { name: "🎲 Find a random puzzle", value: "random" },
+                    { name: "🎯 Find a puzzle with low overlap to past categories", value: "low_overlap" },
+                    { name: "🎲 Find a truly random puzzle", value: "truly_random" },
                     { name: "🔍 Search for puzzle with specific category", value: "search" },
                     { name: "🛑 Stop curating", value: "stop" }
                 ]
@@ -449,12 +497,19 @@ async function main() {
 
                 targetCategory = categoryInput.trim();
                 console.log(`🔍 Searching for puzzles containing "${targetCategory}"...`);
+            } else if (searchChoice === "truly_random") {
+                targetCategory = null;
             } else {
                 targetCategory = null;
             }
         }
 
-        const result = await findBestPuzzle(targetCategory);
+        let result;
+        if (searchChoice === "truly_random") {
+            result = await findTrulyRandomPuzzle();
+        } else {
+            result = await findBestPuzzle(targetCategory);
+        }
         if (!result) {
             if (targetCategory) {
                 console.log(`❌ No puzzles found containing category "${targetCategory}"`);

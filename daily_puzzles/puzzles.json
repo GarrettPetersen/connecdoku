@@ -1438,5 +1438,125 @@
         "The Iraq War"
       ]
     ]
+  },
+  {
+    "rows": [
+      "17th Century",
+      "1930s",
+      "2000s",
+      "2010s"
+    ],
+    "cols": [
+      "Adventure Stories",
+      "Ends with ION",
+      "Ends with ING",
+      "Ends with WAR"
+    ],
+    "words": [
+      [
+        "Don Quixote",
+        "The Glorious Revolution",
+        "Ming",
+        "The English Civil War"
+      ],
+      [
+        "The Wizard of Oz",
+        "The Great Depression",
+        "As I Lay Dying",
+        "The Spanish Civil War"
+      ],
+      [
+        "The Hunger Games",
+        "The Great Recession",
+        "Ball Lightning",
+        "The Iraq War"
+      ],
+      [
+        "Avengers: Endgame",
+        "Predestination",
+        "The Arab Spring",
+        "The Syrian Civil War"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "17th Century",
+      "Ends with LES",
+      "Movies",
+      "National Capitals"
+    ],
+    "cols": [
+      "Cities in USA",
+      "Things Chinese",
+      "Things British",
+      "Things Italian"
+    ],
+    "words": [
+      [
+        "Salem",
+        "Ming",
+        "Shakespeare",
+        "Galileo"
+      ],
+      [
+        "Los Angeles",
+        "Dan Dan Noodles",
+        "Beatles",
+        "Naples"
+      ],
+      [
+        "Chicago",
+        "Hero",
+        "The Bridge on the River Kwai",
+        "The Good, the Bad and the Ugly"
+      ],
+      [
+        "Washington",
+        "Beijing",
+        "London",
+        "Rome"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "16th Century",
+      "Ends with AND",
+      "Ends with LES",
+      "Things Spanish"
+    ],
+    "cols": [
+      "21st Century",
+      "Starts with THE",
+      "Classic Literature",
+      "Things Canadian"
+    ],
+    "words": [
+      [
+        "Elizabeth",
+        "The Protestant Reformation",
+        "Journey to the West",
+        "Drake"
+      ],
+      [
+        "La La Land",
+        "The Stand",
+        "Alice's Adventures in Wonderland",
+        "Empress of Ireland"
+      ],
+      [
+        "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "The Incredibles",
+        "Anne of Green Gables",
+        "Prince of Wales"
+      ],
+      [
+        "Nina",
+        "The Spanish Civil War",
+        "Don Quixote",
+        "Victoria"
+      ]
+    ]
   }
 ]
