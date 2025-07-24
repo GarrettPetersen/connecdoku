@@ -135,7 +135,12 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
 const $=q=>document.querySelector(q);
 const $$=q=>document.querySelectorAll(q);
 const start=new Date('2025-07-21T00:00:00');
-const todayIdx=()=>Math.floor((new Date().getTime()-start.getTime())/864e5);
+const todayIdx=()=>{
+  const now = new Date();
+  const localMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const startMidnight = new Date(start.getFullYear(), start.getMonth(), start.getDate());
+  return Math.floor((localMidnight.getTime()-startMidnight.getTime())/864e5);
+};
 const clr=['lock0','lock1','lock2'], emj=['🟩','🟨','🟧'];
 
 /* ---------- cookie management ---------- */
@@ -247,7 +252,10 @@ function getStrikeDistribution() {
 /* ---------- load puzzle ---------- */
 function loadGameState() {
   const savedState = getCookie('connecdoku_state');
-  if (savedState && savedState.date === todayIdx()) {
+  const currentDate = todayIdx();
+  console.log('Current date index:', currentDate);
+  console.log('Saved state date:', savedState ? savedState.date : 'none');
+  if (savedState && savedState.date === currentDate) {
     return savedState;
   }
   return null;
