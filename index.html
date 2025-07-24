@@ -128,6 +128,19 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
   </div>
 </div>
 
+<!-- unsolvable puzzle popup -->
+<div id="unsolvablePop" class="modalBg">
+  <div class="modalCard">
+    <h3>⚠️ Puzzle Error</h3>
+    <p>Your puzzle has become unsolvable. This is a bug in the game.</p>
+    <p>Please tweet at <a href="https://x.com/GarrettPetersen" target="_blank">@GarrettPetersen</a> on X to report this issue.</p>
+    <div style="display:flex;gap:10px;margin-top:20px;">
+      <button class="action" id="resetPuzzle">Reset Puzzle</button>
+      <button class="action" style="background:#666" id="closeUnsolvable">Close</button>
+    </div>
+  </div>
+</div>
+
 <div id="shareBtn">Share</div>
 
 <script>
@@ -364,6 +377,21 @@ function init(puz){
     console.log('After loading - solvedRows:', solvedRows, 'solvedCols:', solvedCols);
     G = savedState.grid;
     sel = savedState.sel ? $(`.tile[data-rc="${savedState.sel}"]`) : null;
+    
+    // Validate the loaded state immediately
+    setTimeout(() => {
+      if (!validatePuzzleState()) {
+        console.error('Loaded puzzle state is invalid - clearing and restarting');
+        setCookie('connecdoku_state', null, -1);
+        window.location.reload();
+        return;
+      }
+      
+      if (!validatePuzzleSolvability()) {
+        console.error('Loaded puzzle state is unsolvable - showing popup');
+        // The popup will be shown by validatePuzzleSolvability()
+      }
+    }, 100); // Small delay to ensure DOM is ready
   }
 
   /* answer lookup */
@@ -981,6 +1009,13 @@ function init(puz){
     return true;
   }
 
+  function showUnsolvablePopup() {
+    // Only show the popup if it's not already showing and the game isn't finished
+    if (!finished && !document.getElementById('unsolvablePop').classList.contains('show')) {
+      $('#unsolvablePop').classList.add('show');
+    }
+  }
+
   function validatePuzzleSolvability() {
     console.log('=== CHECKING PUZZLE SOLVABILITY ===');
     
@@ -1028,17 +1063,18 @@ function init(puz){
 
           /* this candidate fits all anchors → puzzle is solvable */
           foundValidSolution = true;
-          console.log('Found valid solution with permutation:', { rows, cols });
-          break outer;
+            console.log('Found valid solution with permutation:', { rows, cols });
+            break outer;
+          }
         }
       }
-    }
 
     if (foundValidSolution) {
       console.log('✅ Puzzle is solvable');
       return true;
     } else {
       console.error('❌ Puzzle is NOT solvable - no valid permutation found');
+      showUnsolvablePopup();
       return false;
     }
   }
@@ -1315,6 +1351,17 @@ function init(puz){
     cookiesAccepted = false;
     setCookie('connecdoku_consent', false);
     $('#gdprPop').classList.remove('show');
+  };
+  
+  // Unsolvable puzzle popup handlers
+  $('#resetPuzzle').onclick=()=>{
+    // Delete the current puzzle state cookie
+    setCookie('connecdoku_state', null, -1);
+    // Reload the page to start fresh
+    window.location.reload();
+  };
+  $('#closeUnsolvable').onclick=()=>{
+    $('#unsolvablePop').classList.remove('show');
   };
   
       // Restore visual state if we loaded saved state (after all functions are defined)
