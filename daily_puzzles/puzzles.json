@@ -1398,5 +1398,45 @@
         "Honshu"
       ]
     ]
+  },
+  {
+    "rows": [
+      "14th Century",
+      "1990s",
+      "19th Century",
+      "2000s"
+    ],
+    "cols": [
+      "Adventure Stories",
+      "Ends with ING",
+      "Historical Fiction",
+      "Wars"
+    ],
+    "words": [
+      [
+        "Water Margin",
+        "Ming",
+        "Romance of the Three Kingdoms",
+        "The Hundred Years War"
+      ],
+      [
+        "Jurassic Park",
+        "The Oklahoma City Bombing",
+        "Schindler's List",
+        "The Gulf War"
+      ],
+      [
+        "Moby Dick",
+        "The Second Great Awakening",
+        "War and Peace",
+        "The American Civil War"
+      ],
+      [
+        "Attack of the Clones",
+        "Ball Lightning",
+        "Troy",
+        "The Iraq War"
+      ]
+    ]
   }
 ]

@@ -16,6 +16,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import * as prompts from "@inquirer/prompts";
 import sqlite3 from "sqlite3";
+import readline from "readline";
 
 console.log("Starting puzzle curator (SQLite version)...");
 
@@ -244,39 +245,76 @@ async function findBestPuzzle(targetCategory = null) {
     const sqliteDb = await openDatabase();
 
     try {
-        // Get a random puzzle from the database
-        const puzzle = await getRandomPuzzle(sqliteDb, targetCategory);
-        if (!puzzle) {
-            if (targetCategory) {
-                console.log(`No puzzles found containing category "${targetCategory}"`);
-            } else {
-                console.log("No puzzles found in database");
+        console.log("Searching for puzzle with minimal category overlap...");
+
+        let bestPuzzle = null;
+        let bestOverlap = Infinity;
+        let puzzlesChecked = 0;
+        const maxChecks = 100; // Check up to 100 random puzzles
+
+        while (puzzlesChecked < maxChecks) {
+            // Get a random puzzle from the database
+            const puzzle = await getRandomPuzzle(sqliteDb, targetCategory);
+            if (!puzzle) {
+                // If we've checked some puzzles but found none, return null
+                if (puzzlesChecked > 0) {
+                    console.log(`No more puzzles found after checking ${puzzlesChecked} puzzles`);
+                    return null;
+                }
+                // If we haven't found any puzzles at all, return null immediately
+                if (targetCategory) {
+                    console.log(`No puzzles found containing category "${targetCategory}"`);
+                } else {
+                    console.log("No puzzles found in database");
+                }
+                return null;
             }
-            return null;
-        }
 
-        // Check if this puzzle has already been used
-        const key = makeKey(puzzle.rows, puzzle.cols);
-        const reverseKey = makeKey(puzzle.cols, puzzle.rows);
+            // Check if this puzzle has already been used
+            const key = makeKey(puzzle.rows, puzzle.cols);
+            const reverseKey = makeKey(puzzle.cols, puzzle.rows);
 
-        if (used.has(key) || used.has(reverseKey)) {
-            console.log("Puzzle already used, trying another...");
-            return null;
-        }
+            if (used.has(key) || used.has(reverseKey)) {
+                continue; // Skip already used puzzles
+            }
 
-        // Calculate overlap with previously used categories
-        const allCategories = [...puzzle.rows, ...puzzle.cols];
-        let overlap = 0;
-        for (const category of allCategories) {
-            if (categoryUsage[category]) {
-                overlap += categoryUsage[category];
+            // Calculate overlap with previously used categories
+            const allCategories = [...puzzle.rows, ...puzzle.cols];
+            let overlap = 0;
+            for (const category of allCategories) {
+                if (categoryUsage[category]) {
+                    overlap += categoryUsage[category];
+                }
+            }
+
+            puzzlesChecked++;
+
+            // If we find a puzzle with 0 overlap, use it immediately
+            if (overlap === 0) {
+                console.log(`✅ Found puzzle with 0 overlap after checking ${puzzlesChecked} puzzles`);
+                return { puzzle, overlap: 0 };
+            }
+
+            // Keep track of the puzzle with the lowest overlap so far
+            if (overlap < bestOverlap) {
+                bestOverlap = overlap;
+                bestPuzzle = puzzle;
+                console.log(`  New best: puzzle with ${overlap} overlaps (checked ${puzzlesChecked})`);
+            }
+
+            // Show progress every 20 puzzles
+            if (puzzlesChecked % 20 === 0) {
+                console.log(`  Checked ${puzzlesChecked}/${maxChecks} puzzles, best overlap so far: ${bestOverlap}`);
             }
         }
 
-        return {
-            puzzle,
-            overlap
-        };
+        if (bestPuzzle) {
+            console.log(`🏆 Best puzzle found: ${bestOverlap} category overlaps after checking ${puzzlesChecked} puzzles`);
+            return { puzzle: bestPuzzle, overlap: bestOverlap };
+        }
+
+        console.log("❌ No suitable puzzles found");
+        return null;
     } finally {
         sqliteDb.close();
     }
@@ -321,67 +359,92 @@ async function main() {
                 exampleCategories.forEach(cat => console.log(`  ${cat}`));
                 console.log("  ... and many more\n");
 
-                // Custom tab completion input
+                // Custom input with TAB completion using readline
+                const rl = readline.createInterface({
+                    input: process.stdin,
+                    output: process.stdout
+                });
+
                 let categoryInput = "";
-                let suggestions = [];
-                let lastSuggestionLines = 0;
 
-                while (true) {
-                    // Clear previous suggestions
-                    if (lastSuggestionLines > 0) {
-                        for (let i = 0; i < lastSuggestionLines; i++) {
-                            process.stdout.write('\x1b[1A\x1b[2K'); // Move up and clear line
-                        }
-                    }
+                const getInputWithTabCompletion = () => {
+                    return new Promise((resolve) => {
+                        // Set up raw mode to capture TAB key
+                        process.stdin.setRawMode(true);
+                        process.stdin.resume();
+                        process.stdin.setEncoding('utf8');
 
-                    const input = await prompts.input({
-                        message: `Enter category name: ${categoryInput}`,
-                        validate: (input) => {
-                            if (!input.trim()) return "Please enter a category name";
-                            if (!allCategories.includes(input.trim())) {
-                                return `Category "${input.trim()}" not found.`;
+                        let input = categoryInput;
+                        let cursorPos = input.length;
+
+                        const displayInput = () => {
+                            process.stdout.write('\r\x1b[K'); // Clear line
+                            process.stdout.write(`Enter category name: ${input}`);
+                            // Position cursor
+                            process.stdout.write('\r');
+                            process.stdout.write(`Enter category name: ${input.substring(0, cursorPos)}`);
+                        };
+
+                        displayInput();
+
+                        const handleKey = (key) => {
+                            if (key === '\u0003') { // Ctrl+C
+                                process.exit();
+                            } else if (key === '\r' || key === '\n') { // Enter
+                                process.stdin.setRawMode(false);
+                                process.stdin.pause();
+                                resolve(input);
+                            } else if (key === '\u007f') { // Backspace
+                                if (cursorPos > 0) {
+                                    input = input.substring(0, cursorPos - 1) + input.substring(cursorPos);
+                                    cursorPos--;
+                                    displayInput();
+                                }
+                            } else if (key === '\t') { // TAB
+                                // Find matching categories (case-insensitive)
+                                const matches = allCategories.filter(cat =>
+                                    cat.toLowerCase().startsWith(input.toLowerCase())
+                                );
+
+                                if (matches.length === 1) {
+                                    // Single match - complete it with correct case
+                                    input = matches[0];
+                                    cursorPos = input.length;
+                                    displayInput();
+                                } else if (matches.length > 1) {
+                                    // Multiple matches - find common prefix
+                                    const commonPrefix = findCommonPrefix(matches);
+                                    if (commonPrefix.length > input.length) {
+                                        // Extend to common prefix
+                                        input = commonPrefix;
+                                        cursorPos = input.length;
+                                        displayInput();
+                                    } else {
+                                        // Show suggestions only if we can't extend further
+                                        process.stdout.write('\n');
+                                        console.log("Suggestions:");
+                                        matches.slice(0, 5).forEach(match => {
+                                            console.log(`  ${match}`);
+                                        });
+                                        if (matches.length > 5) {
+                                            console.log(`  ... and ${matches.length - 5} more`);
+                                        }
+                                        displayInput();
+                                    }
+                                }
+                            } else if (key.length === 1) { // Regular character
+                                input = input.substring(0, cursorPos) + key + input.substring(cursorPos);
+                                cursorPos++;
+                                displayInput();
                             }
-                            return true;
-                        }
+                        };
+
+                        process.stdin.on('data', handleKey);
                     });
+                };
 
-                    // Check if input contains tab character
-                    if (input.includes('\t')) {
-                        const beforeTab = input.split('\t')[0];
-                        const currentInput = categoryInput + beforeTab;
-
-                        // Find matching categories
-                        suggestions = allCategories.filter(cat =>
-                            cat.toLowerCase().includes(currentInput.toLowerCase())
-                        );
-
-                        if (suggestions.length === 1) {
-                            // Single match - complete it
-                            categoryInput = suggestions[0];
-                            console.log(`Completed: ${categoryInput}`);
-                            lastSuggestionLines = 1;
-                        } else if (suggestions.length > 1) {
-                            // Multiple matches - show common prefix
-                            const commonPrefix = findCommonPrefix(suggestions);
-                            if (commonPrefix.length > currentInput.length) {
-                                categoryInput = commonPrefix;
-                                console.log(`Partial completion: ${categoryInput}`);
-                                lastSuggestionLines = 1;
-                            } else {
-                                console.log("\nSuggestions:");
-                                suggestions.slice(0, 10).forEach(s => console.log(`  ${s}`));
-                                lastSuggestionLines = 11; // 1 for "Suggestions:" + 10 for items
-                            }
-                        } else {
-                            console.log("No matches found");
-                            lastSuggestionLines = 1;
-                        }
-                    } else {
-                        // No tab - treat as normal input
-                        categoryInput = input.trim();
-                        break;
-                    }
-                }
+                categoryInput = await getInputWithTabCompletion();
+                rl.close();
 
                 targetCategory = categoryInput.trim();
                 console.log(`🔍 Searching for puzzles containing "${targetCategory}"...`);
@@ -393,7 +456,10 @@ async function main() {
         const result = await findBestPuzzle(targetCategory);
         if (!result) {
             if (targetCategory) {
-                console.log(`No puzzles found containing category "${targetCategory}"`);
+                console.log(`❌ No puzzles found containing category "${targetCategory}"`);
+                console.log("💡 Try searching for a different category or use random puzzles");
+                // Reset target category to avoid infinite loop
+                targetCategory = null;
             } else {
                 console.log("No suitable puzzle found, trying again...");
             }
