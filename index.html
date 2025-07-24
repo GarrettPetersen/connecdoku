@@ -250,15 +250,53 @@ function getStrikeDistribution() {
 }
 
 /* ---------- load puzzle ---------- */
-function loadGameState() {
+function loadGameState(currentPuzzle) {
   const savedState = getCookie('connecdoku_state');
   const currentDate = todayIdx();
   console.log('Current date index:', currentDate);
   console.log('Saved state date:', savedState ? savedState.date : 'none');
   if (savedState && savedState.date === currentDate) {
-    return savedState;
+    // Additional validation: check if the saved state matches the current puzzle
+    if (validateSavedState(savedState, currentPuzzle)) {
+      return savedState;
+    } else {
+      console.log('Saved state validation failed - clearing invalid state');
+      // Clear the invalid saved state
+      setCookie('connecdoku_state', null, -1);
+      return null;
+    }
   }
   return null;
+}
+
+function validateSavedState(savedState, currentPuzzle) {
+  if (!savedState || !currentPuzzle) return false;
+  
+  // Check if the saved state has the expected structure
+  if (!savedState.grid || !Array.isArray(savedState.grid) || savedState.grid.length !== 4) {
+    console.log('Saved state has invalid grid structure');
+    return false;
+  }
+  
+  // Flatten the current puzzle words and saved grid for comparison
+  const currentWords = currentPuzzle.words.flat().sort();
+  const savedWords = savedState.grid.flat().sort();
+  
+  // Check if all words match
+  if (currentWords.length !== savedWords.length) {
+    console.log('Word count mismatch:', currentWords.length, 'vs', savedWords.length);
+    return false;
+  }
+  
+  for (let i = 0; i < currentWords.length; i++) {
+    if (currentWords[i] !== savedWords[i]) {
+      console.log('Word mismatch at index', i, ':', currentWords[i], 'vs', savedWords[i]);
+      return false;
+    }
+  }
+  
+  console.log('Saved state validation passed');
+  return true;
 }
 
 function saveGameStateTemplate() {
@@ -297,7 +335,7 @@ function init(puz){
   }
 
   // Try to load saved game state
-  const savedState = loadGameState();
+  const savedState = loadGameState(puz);
   console.log('Loaded saved state:', savedState);
   if (savedState) {
     strikes = savedState.strikes;
