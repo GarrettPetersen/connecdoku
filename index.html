@@ -600,6 +600,8 @@ function init(puz){
     const words=kind==='row'?G[idx]:G.map(r=>r[idx]);
     const label=ans[hash(words)];
     if(!label) return badAttempt(hdr);
+    
+    console.log(`Solved ${kind} ${idx} as category: "${label}"`);
 
     /* ─────────────── first *row-category* solved ─────────────── */
     if (colCatToIdx === null && rowIdx[label] !== undefined) {
@@ -689,17 +691,46 @@ function init(puz){
                     column-category.
     --------------------------------------------- */
   function alignRow(r) {
-    if (!colCatToIdx) return;                 // no column order yet
+    if (!colCatToIdx && !rowCatToIdx) return; // no mappings yet
 
     console.log(`Aligning row ${r}:`, G[r]);
     console.log('Column category mapping:', colCatToIdx);
+    console.log('Row category mapping:', rowCatToIdx);
+    
+    // Check if this row contains column categories (transposed case)
+    const rowCategories = G[r].map(w => ({
+      word: w,
+      rowCat: wordToRowCat[w],
+      colCat: wordToColCat[w]
+    }));
+    const uniqueRowCats = new Set(rowCategories.map(item => item.rowCat));
+    const uniqueColCats = new Set(rowCategories.map(item => item.colCat));
+    
+    // A row is transposed if it has multiple column categories but only one row category
+    // (indicating it's a row category that contains column categories)
+    const isTransposedRow = uniqueColCats.size > 1 && uniqueRowCats.size === 1;
+    
+    console.log(`Row appears to be ${isTransposedRow ? 'transposed (contains column categories)' : 'normal (contains row categories)'}`);
+    console.log(`Row word categories:`, rowCategories);
+    console.log(`Unique row categories: ${Array.from(uniqueRowCats).join(', ')}`);
+    console.log(`Unique column categories: ${Array.from(uniqueColCats).join(', ')}`);
+    console.log(`Row category count: ${uniqueRowCats.size}, Column category count: ${uniqueColCats.size}`);
     
     // Instead of trying every possible move, let's be more strategic
     // Only make moves that improve the alignment toward a valid solution
     
     let moved;
+    let attempts = 0;
+    const maxAttempts = 20; // Circuit breaker to prevent infinite loops
+    
     do {
       moved = false;
+      attempts++;
+      
+      if (attempts > maxAttempts) {
+        console.warn(`Alignment loop detected for row ${r}, stopping after ${maxAttempts} attempts`);
+        break;
+      }
       
       // For each word in this row, check if it's in the right category column
       for (let c = 0; c < 4; c++) {
@@ -710,11 +741,39 @@ function init(puz){
         
         // Check if this word is in the right column for its category
         // (based on the canonical mapping we learned from solved lines)
-        const canonicalCol = colCatToIdx[wordCategory];
+        let canonicalCol = colCatToIdx ? colCatToIdx[wordCategory] : undefined;
+        
+        console.log(`Word "${w}" has column category "${wordCategory}", canonical col: ${canonicalCol}`);
+        
+        // If we don't have column mappings but we have row mappings, 
+        // we might be in a transposed situation where row categories are actually column categories
+        if (canonicalCol === undefined && rowCatToIdx) {
+          // Check if this word belongs to a row category that we've mapped
+          const rowCategory = wordToRowCat[w];
+          const mappedRow = rowCatToIdx[rowCategory];
+          if (mappedRow !== undefined) {
+            // In transposed case, row position maps to column position
+            canonicalCol = mappedRow;
+            console.log(`Using transposed mapping: "${w}" (row category "${rowCategory}") -> col ${canonicalCol}`);
+          }
+        }
+        
+        // Additional check: if we're aligning a row and have both mappings,
+        // we might need to use the column mapping for transposed cases
+        if (canonicalCol === undefined && colCatToIdx && rowCatToIdx) {
+          // This could be a case where we're aligning a row that contains column categories
+          const colCategory = wordToColCat[w];
+          const mappedCol = colCatToIdx[colCategory];
+          if (mappedCol !== undefined) {
+            canonicalCol = mappedCol;
+          }
+        }
         
         if (canonicalCol !== undefined && canonicalCol !== c && !solvedCols.has(canonicalCol)) {
           // This word should be in a different column
           console.log(`Moving "${w}" from column ${c} to canonical column ${canonicalCol}`);
+          
+          console.log(`Executing move: "${w}" from column ${c} to column ${canonicalCol}`);
           swapCells(r, c, r, canonicalCol, true);
           moved = true;
           break; // Only make one move at a time to avoid loops
@@ -732,17 +791,46 @@ function init(puz){
                     row-category.
     --------------------------------------------- */
   function alignCol(c) {
-    if (!rowCatToIdx) return;                 // no row order yet
+    if (!rowCatToIdx && !colCatToIdx) return; // no mappings yet
 
     console.log(`Aligning column ${c}:`, [G[0][c], G[1][c], G[2][c], G[3][c]]);
     console.log('Row category mapping:', rowCatToIdx);
+    console.log('Column category mapping:', colCatToIdx);
+    
+    // Debug: show what categories are in this column
+    const colCategories = [G[0][c], G[1][c], G[2][c], G[3][c]].map(w => ({
+      word: w,
+      rowCat: wordToRowCat[w],
+      colCat: wordToColCat[w]
+    }));
+    console.log('Column categories:', colCategories);
+    
+    // Check if this column contains row categories (transposed case)
+    const uniqueRowCats = new Set(colCategories.map(item => item.rowCat));
+    const uniqueColCats = new Set(colCategories.map(item => item.colCat));
+    
+    // If all words have the same row category, it's likely transposed
+    const isTransposedColumn = uniqueRowCats.size === 1 && uniqueRowCats.size < uniqueColCats.size;
+    
+    console.log(`Column appears to be ${isTransposedColumn ? 'transposed (contains row categories)' : 'normal (contains column categories)'}`);
+    console.log(`Unique row categories: ${Array.from(uniqueRowCats).join(', ')}`);
+    console.log(`Unique column categories: ${Array.from(uniqueColCats).join(', ')}`);
     
     // Instead of trying every possible move, let's be more strategic
     // Only make moves that improve the alignment toward a valid solution
     
     let moved;
+    let attempts = 0;
+    const maxAttempts = 20; // Circuit breaker to prevent infinite loops
+    
     do {
       moved = false;
+      attempts++;
+      
+      if (attempts > maxAttempts) {
+        console.warn(`Alignment loop detected for column ${c}, stopping after ${maxAttempts} attempts`);
+        break;
+      }
       
       // For each word in this column, check if it's in the right category row
       for (let r = 0; r < 4; r++) {
@@ -753,11 +841,60 @@ function init(puz){
         
         // Check if this word is in the right row for its category
         // (based on the canonical mapping we learned from solved lines)
-        const canonicalRow = rowCatToIdx[wordCategory];
+        let canonicalRow = rowCatToIdx ? rowCatToIdx[wordCategory] : undefined;
+        
+        console.log(`Word "${w}" has row category "${wordCategory}", canonical row: ${canonicalRow}`);
+        
+        // If we don't have row mappings but we have column mappings, 
+        // we might be in a transposed situation where column categories are actually row categories
+        if (canonicalRow === undefined && colCatToIdx) {
+          // Check if this word belongs to a column category that we've mapped
+          const colCategory = wordToColCat[w];
+          const mappedCol = colCatToIdx[colCategory];
+          if (mappedCol !== undefined) {
+            // In transposed case, column position maps to row position
+            canonicalRow = mappedCol;
+            console.log(`Using transposed mapping: "${w}" (col category "${colCategory}") -> row ${canonicalRow}`);
+          }
+        }
+        
+        // Additional check: if we're aligning a column and have both mappings,
+        // we might need to use the row mapping for transposed cases
+        if (canonicalRow === undefined && rowCatToIdx && colCatToIdx) {
+          // This could be a case where we're aligning a column that contains row categories
+          const rowCategory = wordToRowCat[w];
+          const mappedRow = rowCatToIdx[rowCategory];
+          if (mappedRow !== undefined) {
+            canonicalRow = mappedRow;
+            console.log(`Using row mapping for column alignment: "${w}" (row category "${rowCategory}") -> row ${canonicalRow}`);
+          }
+        }
+        
+        // Special case: if we're aligning a column that was just solved and it's a row category,
+        // we should prioritize using the row category mapping over the column category mapping
+        if (canonicalRow === undefined && rowCatToIdx) {
+          const rowCategory = wordToRowCat[w];
+          const mappedRow = rowCatToIdx[rowCategory];
+          if (mappedRow !== undefined) {
+            canonicalRow = mappedRow;
+            console.log(`Using row mapping for transposed column: "${w}" (row category "${rowCategory}") -> row ${canonicalRow}`);
+          }
+        }
+        
+        // If this is a transposed column, prioritize row category mapping
+        if (isTransposedColumn && canonicalRow === undefined && rowCatToIdx) {
+          const rowCategory = wordToRowCat[w];
+          const mappedRow = rowCatToIdx[rowCategory];
+          if (mappedRow !== undefined) {
+            canonicalRow = mappedRow;
+            console.log(`Using row mapping for detected transposed column: "${w}" (row category "${rowCategory}") -> row ${canonicalRow}`);
+          }
+        }
         
         if (canonicalRow !== undefined && canonicalRow !== r && !solvedRows.has(canonicalRow)) {
           // This word should be in a different row
           console.log(`Moving "${w}" from row ${r} to canonical row ${canonicalRow}`);
+          
           swapCells(r, c, canonicalRow, c, true);
           moved = true;
           break; // Only make one move at a time to avoid loops
