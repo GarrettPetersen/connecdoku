@@ -673,7 +673,20 @@ function init(puz){
     saveGameState();
     integrityCheck();
     validatePuzzleState();
-    validatePuzzleSolvability();
+    
+    // Check if puzzle is still solvable after alignment
+    if (!validatePuzzleSolvability(true)) {
+      console.log(`🔧 Puzzle became unsolvable after ${kind} ${idx} alignment, trying brute-force fallback...`);
+      
+      // Try brute-force on the row/column that was just solved
+      if (kind === 'row') {
+        tryBruteForceRow(idx);
+      } else if (kind === 'col') {
+        tryBruteForceCol(idx);
+      }
+    } else {
+      validatePuzzleSolvability(); // Show popup if needed
+    }
   }
 
   function makeSolvedLabel(txt,lvl){
@@ -781,7 +794,7 @@ function init(puz){
       }
     } while (moved);
 
-    console.log(`Row ${r} after alignment:`, G[r]);
+        console.log(`Row ${r} after alignment:`, G[r]);
     integrityCheck();
   }
 
@@ -902,8 +915,168 @@ function init(puz){
       }
     } while (moved);
 
-    console.log(`Column ${c} after alignment:`, [G[0][c], G[1][c], G[2][c], G[3][c]]);
+        console.log(`Column ${c} after alignment:`, [G[0][c], G[1][c], G[2][c], G[3][c]]);
     integrityCheck();
+  }
+
+  /* -----------------------------------------------
+    tryBruteForceRow(r)  –  brute-force fallback for row alignment
+    --------------------------------------------- */
+  function tryBruteForceRow(r) {
+    console.log(`🔧 Row ${r} alignment failed, trying brute-force fallback...`);
+    console.log(`🔧 Current row ${r}: [${G[r].join(', ')}]`);
+    
+    // Generate all 24 permutations of [0,1,2,3]
+    const permutations = [];
+    function generatePerms(arr, start) {
+      if (start === 4) {
+        permutations.push([...arr]);
+        return;
+      }
+      for (let i = start; i < 4; i++) {
+        [arr[start], arr[i]] = [arr[i], arr[start]];
+        generatePerms(arr, start + 1);
+        [arr[start], arr[i]] = [arr[i], arr[start]];
+      }
+    }
+    generatePerms([0, 1, 2, 3], 0);
+    
+    // Try each permutation
+    console.log(`🔧 Testing ${permutations.length} permutations for row ${r}...`);
+    for (let permIndex = 0; permIndex < permutations.length; permIndex++) {
+      const perm = permutations[permIndex];
+      
+      // Create a copy of the current row
+      const originalRow = [...G[r]];
+      
+      // Apply the permutation to the row
+      for (let i = 0; i < 4; i++) {
+        G[r][i] = originalRow[perm[i]];
+      }
+      
+      // Update the visual display
+      for (let c = 0; c < 4; c++) {
+        const tile = $(`.tile[data-rc="${r},${c}"]`);
+        if (tile) tile.textContent = G[r][c];
+      }
+      
+      // Check if this permutation makes the puzzle valid
+      if (validatePuzzleSolvability(true)) {
+        console.log(`✅ Brute-force found valid permutation for row ${r} (permutation ${permIndex + 1}/24):`, perm);
+        console.log(`✅ New row ${r}: [${G[r].join(', ')}]`);
+        
+        // Update solved positions tracking for any words that moved
+        for (let c = 0; c < 4; c++) {
+          const word = G[r][c];
+          const oldPos = solvedPositions.get(word);
+          if (oldPos && (oldPos.r !== r || oldPos.c !== c)) {
+            console.log(`🔧 Updating solved position for "${word}" from [${oldPos.r},${oldPos.c}] to [${r},${c}]`);
+            solvedPositions.set(word, { r, c });
+          }
+        }
+        
+        integrityCheck();
+        return;
+      }
+      
+      // Log progress every 6 permutations
+      if ((permIndex + 1) % 6 === 0) {
+        console.log(`🔧 Tested ${permIndex + 1}/24 permutations for row ${r}...`);
+      }
+      
+      // Revert the permutation
+      for (let i = 0; i < 4; i++) {
+        G[r][i] = originalRow[i];
+      }
+      
+      // Update the visual display back
+      for (let c = 0; c < 4; c++) {
+        const tile = $(`.tile[data-rc="${r},${c}"]`);
+        if (tile) tile.textContent = G[r][c];
+      }
+    }
+    
+    console.warn(`❌ Brute-force failed to find valid permutation for row ${r} after testing all 24 permutations`);
+  }
+
+  /* -----------------------------------------------
+    tryBruteForceCol(c)  –  brute-force fallback for column alignment
+    --------------------------------------------- */
+  function tryBruteForceCol(c) {
+    console.log(`🔧 Column ${c} alignment failed, trying brute-force fallback...`);
+    console.log(`🔧 Current column ${c}: [${G[0][c]}, ${G[1][c]}, ${G[2][c]}, ${G[3][c]}]`);
+    
+    // Generate all 24 permutations of [0,1,2,3]
+    const permutations = [];
+    function generatePerms(arr, start) {
+      if (start === 4) {
+        permutations.push([...arr]);
+        return;
+      }
+      for (let i = start; i < 4; i++) {
+        [arr[start], arr[i]] = [arr[i], arr[start]];
+        generatePerms(arr, start + 1);
+        [arr[start], arr[i]] = [arr[i], arr[start]];
+      }
+    }
+    generatePerms([0, 1, 2, 3], 0);
+    
+    // Try each permutation
+    console.log(`🔧 Testing ${permutations.length} permutations for column ${c}...`);
+    for (let permIndex = 0; permIndex < permutations.length; permIndex++) {
+      const perm = permutations[permIndex];
+      
+      // Create a copy of the current column
+      const originalCol = [G[0][c], G[1][c], G[2][c], G[3][c]];
+      
+      // Apply the permutation to the column
+      for (let i = 0; i < 4; i++) {
+        G[i][c] = originalCol[perm[i]];
+      }
+      
+      // Update the visual display
+      for (let r = 0; r < 4; r++) {
+        const tile = $(`.tile[data-rc="${r},${c}"]`);
+        if (tile) tile.textContent = G[r][c];
+      }
+      
+      // Check if this permutation makes the puzzle valid
+      if (validatePuzzleSolvability(true)) {
+        console.log(`✅ Brute-force found valid permutation for column ${c} (permutation ${permIndex + 1}/24):`, perm);
+        console.log(`✅ New column ${c}: [${G[0][c]}, ${G[1][c]}, ${G[2][c]}, ${G[3][c]}]`);
+        
+        // Update solved positions tracking for any words that moved
+        for (let r = 0; r < 4; r++) {
+          const word = G[r][c];
+          const oldPos = solvedPositions.get(word);
+          if (oldPos && (oldPos.r !== r || oldPos.c !== c)) {
+            console.log(`🔧 Updating solved position for "${word}" from [${oldPos.r},${oldPos.c}] to [${r},${c}]`);
+            solvedPositions.set(word, { r, c });
+          }
+        }
+        
+        integrityCheck();
+        return;
+      }
+      
+      // Log progress every 6 permutations
+      if ((permIndex + 1) % 6 === 0) {
+        console.log(`🔧 Tested ${permIndex + 1}/24 permutations for column ${c}...`);
+      }
+      
+      // Revert the permutation
+      for (let i = 0; i < 4; i++) {
+        G[i][c] = originalCol[i];
+      }
+      
+      // Update the visual display back
+      for (let r = 0; r < 4; r++) {
+        const tile = $(`.tile[data-rc="${r},${c}"]`);
+        if (tile) tile.textContent = G[r][c];
+      }
+    }
+    
+    console.warn(`❌ Brute-force failed to find valid permutation for column ${c} after testing all 24 permutations`);
   }
 
   function freezeIntersections(){
@@ -1169,8 +1342,8 @@ function init(puz){
     }
   }
 
-  function validatePuzzleSolvability() {
-    console.log('=== CHECKING PUZZLE SOLVABILITY ===');
+  function validatePuzzleSolvability(silent = false) {
+    if (!silent) console.log('=== CHECKING PUZZLE SOLVABILITY ===');
     
     const hash = a => [...a].sort().join('|');
     const isFrozen = (r, c) => solvedRows.has(r) || solvedCols.has(c);
@@ -1216,18 +1389,20 @@ function init(puz){
 
           /* this candidate fits all anchors → puzzle is solvable */
           foundValidSolution = true;
-            console.log('Found valid solution with permutation:', { rows, cols });
+            if (!silent) console.log('Found valid solution with permutation:', { rows, cols });
             break outer;
           }
         }
       }
 
     if (foundValidSolution) {
-      console.log('✅ Puzzle is solvable');
+      if (!silent) console.log('✅ Puzzle is solvable');
       return true;
     } else {
-      console.error('❌ Puzzle is NOT solvable - no valid permutation found');
-      showUnsolvablePopup();
+      if (!silent) {
+        console.error('❌ Puzzle is NOT solvable - no valid permutation found');
+        showUnsolvablePopup();
+      }
       return false;
     }
   }
