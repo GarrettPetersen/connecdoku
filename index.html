@@ -1009,11 +1009,38 @@ function init(puz){
     return grid;
   }
   
+  function getCustomTitle(won, strikes) {
+    if (won) {
+      if (strikes === 0) {
+        const messages = ["🎉 Amazing!", "🎊 Perfect!", "🌟 Flawless!", "✨ Incredible!", "🏆 Masterpiece!"];
+        return messages[Math.floor(Math.random() * messages.length)];
+      } else if (strikes === 1) {
+        const messages = ["Good job!", "Well done!", "Nice work!", "Great solve!", "Solid performance!"];
+        return messages[Math.floor(Math.random() * messages.length)];
+      } else if (strikes === 2) {
+        const messages = ["Phew! Close one.", "That was tight!", "Just made it!", "Narrow escape!", "Cutting it close!"];
+        return messages[Math.floor(Math.random() * messages.length)];
+      }
+    } else {
+      if (strikes === 3) {
+        const solvedCount = solvedRows.size + solvedCols.size;
+        if (solvedCount === 0) {
+          const messages = ["🤦‍♂️ Maybe try again?", "😅 That was... something.", "🤷‍♂️ At least you tried?", "💀 Brutal."];
+          return messages[Math.floor(Math.random() * messages.length)];
+        } else {
+          const messages = ["You'll beat it next time!", "Good try!", "Almost had it!", "Better luck next time!", "Keep practicing!"];
+          return messages[Math.floor(Math.random() * messages.length)];
+        }
+      }
+    }
+    return "Connecdoku"; // fallback
+  }
+
   function showShare(won){
     const today = new Date();
     const dateStr = today.toISOString().split('T')[0].replace(/-/g, '-');
     
-    $('#popTitle').textContent = `Connecdoku ${dateStr}`;
+    $('#popTitle').textContent = getCustomTitle(won, strikes);
     $('#shareGrid').textContent = createEmojiGrid();
     $('#shareGrid').classList.add('emoji'); // Add emoji class for compound emoji support
     
