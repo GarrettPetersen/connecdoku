@@ -2,4 +2,5 @@ puzzles_matrix/*
 node_modules/*
 .wrangler/*
 puzzles.db
+puzzles.db-journal
 .DS_Store

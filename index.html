@@ -734,7 +734,9 @@ function init(puz){
     
     let moved;
     let attempts = 0;
+    let swaps = 0;
     const maxAttempts = 20; // Circuit breaker to prevent infinite loops
+    const maxSwaps = 20; // Circuit breaker to prevent infinite swap loops
     
     do {
       moved = false;
@@ -742,6 +744,11 @@ function init(puz){
       
       if (attempts > maxAttempts) {
         console.warn(`Alignment loop detected for row ${r}, stopping after ${maxAttempts} attempts`);
+        break;
+      }
+      
+      if (swaps >= maxSwaps) {
+        console.warn(`Too many swaps for row ${r}, stopping after ${maxSwaps} swaps`);
         break;
       }
       
@@ -783,13 +790,107 @@ function init(puz){
         }
         
         if (canonicalCol !== undefined && canonicalCol !== c && !solvedCols.has(canonicalCol)) {
-          // This word should be in a different column
-          console.log(`Moving "${w}" from column ${c} to canonical column ${canonicalCol}`);
+          // This word should be in a different column within this row
+          // Find the word that should be in column c
+          for (let otherC = 0; otherC < 4; otherC++) {
+            if (otherC === c || solvedCols.has(otherC)) continue;
+            
+            const otherWord = G[r][otherC];
+            const otherWordCategory = wordToColCat[otherWord];
+            let otherCanonicalCol = colCatToIdx ? colCatToIdx[otherWordCategory] : undefined;
+            
+            // Apply the same transposed logic for the other word
+            if (otherCanonicalCol === undefined && rowCatToIdx) {
+              const otherRowCategory = wordToRowCat[otherWord];
+              const otherMappedRow = rowCatToIdx[otherRowCategory];
+              if (otherMappedRow !== undefined) {
+                otherCanonicalCol = otherMappedRow;
+              }
+            }
+            
+            if (otherCanonicalCol === c) {
+              // Swap these two words within the row
+              console.log(`Swapping "${w}" and "${otherWord}" within row ${r} (cols ${c} and ${otherC})`);
+              swapCells(r, c, r, otherC, true);
+              moved = true;
+              break;
+            }
+          }
           
-          console.log(`Executing move: "${w}" from column ${c} to column ${canonicalCol}`);
-          swapCells(r, c, r, canonicalCol, true);
-          moved = true;
-          break; // Only make one move at a time to avoid loops
+          if (moved) break; // Only make one move at a time to avoid loops
+        }
+        
+                // Always try cross-references from other solved rows AND columns
+        if (!moved) {
+          console.log(`🔍 Trying cross-reference alignment for "${w}" in row ${r}`);
+          
+          // Try row cross-references first (look at other solved rows)
+          for (const solvedRow of solvedRows.keys()) {
+            if (solvedRow === r) continue;
+            
+            // Find a word in the solved row that has the same row category as our word
+            for (let solvedC = 0; solvedC < 4; solvedC++) {
+              const solvedWord = G[solvedRow][solvedC];
+              const solvedWordCategory = wordToRowCat[solvedWord];
+              const ourWordCategory = wordToRowCat[w];
+              
+              if (solvedWordCategory === ourWordCategory) {
+                // Found a word with the same row category in a solved row
+                // Our word should be in the same column as this solved word
+                console.log(`🔍 Found row cross-reference: "${w}" (${ourWordCategory}) should align with "${solvedWord}" at column ${solvedC}`);
+                
+                // Find the word currently in column solvedC of our row
+                const currentWordInTargetCol = G[r][solvedC];
+                const currentWordCategory = wordToRowCat[currentWordInTargetCol];
+                
+                // If the current word in that column has a different row category, swap them
+                if (currentWordCategory !== ourWordCategory) {
+                  console.log(`🔍 Swapping "${w}" (col ${c}) with "${currentWordInTargetCol}" (col ${solvedC}) in row ${r}`);
+                  swapCells(r, c, r, solvedC, true);
+                  moved = true;
+                  swaps++;
+                  // Don't break - continue looking for more swaps
+                }
+              }
+            }
+            // Don't break - continue looking for more swaps
+          }
+          
+          // Try column cross-references (look at other solved columns)
+          if (!moved) {
+            for (const solvedCol of solvedCols.keys()) {
+              if (solvedCol === c) continue;
+              
+              // Find a word in the solved column that has the same column category as our word
+              for (let solvedR = 0; solvedR < 4; solvedR++) {
+                const solvedWord = G[solvedR][solvedCol];
+                const solvedWordCategory = wordToColCat[solvedWord];
+                const ourWordCategory = wordToColCat[w];
+                
+                if (solvedWordCategory === ourWordCategory) {
+                  // Found a word with the same column category in a solved column
+                  // Our word should be in the same row as this solved word
+                  console.log(`🔍 Found column cross-reference: "${w}" (${ourWordCategory}) should align with "${solvedWord}" at row ${solvedR}`);
+                  
+                  // Find the word currently in row solvedR of our column
+                  const currentWordInTargetRow = G[solvedR][c];
+                  const currentWordCategory = wordToColCat[currentWordInTargetRow];
+                  
+                  // If the current word in that row has a different column category, swap them
+                  if (currentWordCategory !== ourWordCategory) {
+                    console.log(`🔍 Swapping "${w}" (col ${c}) with "${currentWordInTargetRow}" (col ${c}) in row ${r} (moving to row ${solvedR})`);
+                    swapCells(r, c, solvedR, c, true);
+                    moved = true;
+                    swaps++;
+                    // Don't break - continue looking for more swaps
+                  }
+                }
+              }
+              // Don't break - continue looking for more swaps
+            }
+          }
+          
+          // Don't break - continue looking for more swaps
         }
       }
     } while (moved);
@@ -834,7 +935,9 @@ function init(puz){
     
     let moved;
     let attempts = 0;
+    let swaps = 0;
     const maxAttempts = 20; // Circuit breaker to prevent infinite loops
+    const maxSwaps = 20; // Circuit breaker to prevent infinite swap loops
     
     do {
       moved = false;
@@ -842,6 +945,11 @@ function init(puz){
       
       if (attempts > maxAttempts) {
         console.warn(`Alignment loop detected for column ${c}, stopping after ${maxAttempts} attempts`);
+        break;
+      }
+      
+      if (swaps >= maxSwaps) {
+        console.warn(`Too many swaps for column ${c}, stopping after ${maxSwaps} swaps`);
         break;
       }
       
@@ -905,12 +1013,108 @@ function init(puz){
         }
         
         if (canonicalRow !== undefined && canonicalRow !== r && !solvedRows.has(canonicalRow)) {
-          // This word should be in a different row
-          console.log(`Moving "${w}" from row ${r} to canonical row ${canonicalRow}`);
+          // This word should be in a different row within this column
+          // Find the word that should be in row r
+          for (let otherR = 0; otherR < 4; otherR++) {
+            if (otherR === r || solvedRows.has(otherR)) continue;
+            
+            const otherWord = G[otherR][c];
+            const otherWordCategory = wordToRowCat[otherWord];
+            let otherCanonicalRow = rowCatToIdx ? rowCatToIdx[otherWordCategory] : undefined;
+            
+            // Apply the same transposed logic for the other word
+            if (otherCanonicalRow === undefined && colCatToIdx) {
+              const otherColCategory = wordToColCat[otherWord];
+              const otherMappedCol = colCatToIdx[otherColCategory];
+              if (otherMappedCol !== undefined) {
+                otherCanonicalRow = otherMappedCol;
+              }
+            }
+            
+                            if (otherCanonicalRow === r) {
+                  // Swap these two words within the column
+                  console.log(`Swapping "${w}" and "${otherWord}" within column ${c} (rows ${r} and ${otherR})`);
+                  swapCells(r, c, otherR, c, true);
+                  moved = true;
+                  swaps++;
+                  break;
+                }
+          }
           
-          swapCells(r, c, canonicalRow, c, true);
-          moved = true;
-          break; // Only make one move at a time to avoid loops
+          if (moved) break; // Only make one move at a time to avoid loops
+        }
+        
+        // Always try cross-references from other solved columns AND rows
+        if (!moved) {
+          console.log(`🔍 Trying cross-reference alignment for "${w}" in column ${c}`);
+          
+          // Try column cross-references first (look at other solved columns)
+          for (const solvedCol of solvedCols.keys()) {
+            if (solvedCol === c) continue;
+            
+            // Find a word in the solved column that has the same column category as our word
+            for (let solvedR = 0; solvedR < 4; solvedR++) {
+              const solvedWord = G[solvedR][solvedCol];
+              const solvedWordCategory = wordToColCat[solvedWord];
+              const ourWordCategory = wordToColCat[w];
+              
+              if (solvedWordCategory === ourWordCategory) {
+                // Found a word with the same column category in a solved column
+                // Our word should be in the same row as this solved word
+                console.log(`🔍 Found column cross-reference: "${w}" (${ourWordCategory}) should align with "${solvedWord}" at row ${solvedR}`);
+                
+                // Find the word currently in row solvedR of our column
+                const currentWordInTargetRow = G[solvedR][c];
+                const currentWordCategory = wordToColCat[currentWordInTargetRow];
+                
+                // If the current word in that row has a different column category, swap them
+                if (currentWordCategory !== ourWordCategory) {
+                  console.log(`🔍 Swapping "${w}" (row ${r}) with "${currentWordInTargetRow}" (row ${solvedR}) in column ${c}`);
+                  swapCells(r, c, solvedR, c, true);
+                  moved = true;
+                  swaps++;
+                  // Don't break - continue looking for more swaps
+                }
+              }
+            }
+            // Don't break - continue looking for more swaps
+          }
+          
+          // Try row cross-references (look at other solved rows)
+          if (!moved) {
+            for (const solvedRow of solvedRows.keys()) {
+              if (solvedRow === r) continue;
+              
+              // Find a word in the solved row that has the same row category as our word
+              for (let solvedC = 0; solvedC < 4; solvedC++) {
+                const solvedWord = G[solvedRow][solvedC];
+                const solvedWordCategory = wordToRowCat[solvedWord];
+                const ourWordCategory = wordToRowCat[w];
+                
+                if (solvedWordCategory === ourWordCategory) {
+                  // Found a word with the same row category in a solved row
+                  // Our word should be in the same column as this solved word
+                  console.log(`🔍 Found row cross-reference: "${w}" (${ourWordCategory}) should align with "${solvedWord}" at column ${solvedC}`);
+                  
+                  // Find the word currently in column solvedC of our row
+                  const currentWordInTargetCol = G[r][solvedC];
+                  const currentWordCategory = wordToRowCat[currentWordInTargetCol];
+                  
+                  // If the current word in that column has a different row category, swap them
+                  if (currentWordCategory !== ourWordCategory) {
+                    console.log(`🔍 Swapping "${w}" (row ${r}) with "${currentWordInTargetCol}" (row ${r}) in column ${c} (moving to column ${solvedC})`);
+                    swapCells(r, c, r, solvedC, true);
+                    moved = true;
+                    swaps++;
+                    // Don't break - continue looking for more swaps
+                  }
+                }
+              }
+              // Don't break - continue looking for more swaps
+            }
+          }
+          
+          // Don't break - continue looking for more swaps
         }
       }
     } while (moved);
