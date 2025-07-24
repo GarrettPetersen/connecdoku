@@ -82,12 +82,15 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
 </style>
 </head>
 <body>
-<div id="shell">
-  <div id="helpIcon">❓</div><h1 id="logo">Connecdoku</h1>
-  <div class="strike" id="strikeTxt"></div>
-  <div id="board" class="grid"></div>
-  <p class="rowCredit">Connecdoku was created by <a href="https://x.com/GarrettPetersen" target="_blank">@GarrettPetersen</a></p>
-</div>
+  <div id="shell">
+    <div id="helpIcon">❓</div><h1 id="logo">Connecdoku</h1>
+    <div class="strike" id="strikeTxt"></div>
+    <div id="hintContainer" style="text-align:center;margin:10px 0;display:none;">
+      <button id="hintBtn" style="padding:8px 16px;border:none;border-radius:6px;background:#4caf50;color:#fff;cursor:pointer;font-size:14px;">hint</button>
+    </div>
+    <div id="board" class="grid"></div>
+    <p class="rowCredit">Connecdoku was created by <a href="https://x.com/GarrettPetersen" target="_blank">@GarrettPetersen</a></p>
+  </div>
 
 <!-- share popup -->
 <div id="sharePop" class="modalBg">
@@ -377,6 +380,11 @@ function init(puz){
     console.log('After loading - solvedRows:', solvedRows, 'solvedCols:', solvedCols);
     G = savedState.grid;
     sel = savedState.sel ? $(`.tile[data-rc="${savedState.sel}"]`) : null;
+    
+    // Show hint button if there are already strikes
+    if (strikes >= 1) {
+      $('#hintContainer').style.display = 'block';
+    }
     
     // Validate the loaded state immediately
     setTimeout(() => {
@@ -810,7 +818,12 @@ function init(puz){
     hdr.classList.add(strikes === 1 ? 'used1' : 'used2');
     shake();
     updateStrike();
-      saveGameState();
+    saveGameState();
+
+    // Show hint button after first strike
+    if (strikes === 1) {
+      $('#hintContainer').style.display = 'block';
+    }
 
     /* third strike ⇒ auto-solve, reveal labels, end game */
       if (strikes >= 3) {
@@ -885,6 +898,9 @@ function init(puz){
     for (let r = 0; r < 4; r++)
       for (let c = 0; c < 4; c++)
         freezeTile(r, c);
+
+    // Hide hint button when game is finished
+    $('#hintContainer').style.display = 'none';
 
     // Update statistics
     const today = new Date().toISOString().split('T')[0];
@@ -1203,6 +1219,16 @@ function init(puz){
     return categoryEmojis[category] || '❓';
   }
   
+  function getPuzzleCategoryEmojis() {
+    // Get the 4 row categories and 4 column categories from the puzzle
+    const rowEmojis = puz.rows.map(category => getCategoryEmoji(category));
+    const colEmojis = puz.cols.map(category => getCategoryEmoji(category));
+    
+    // Return all 8 emojis in the order they appear in the final grid
+    // (column categories first, then row categories)
+    return colEmojis.join('') + rowEmojis.join('');
+  }
+  
   function createEmojiGrid() {
     const hash = a => [...a].sort().join('|');
     const rows = [];
@@ -1362,6 +1388,15 @@ function init(puz){
   };
   $('#closeUnsolvable').onclick=()=>{
     $('#unsolvablePop').classList.remove('show');
+  };
+  
+  // Hint button handler
+  $('#hintBtn').onclick=()=>{
+    const hintBtn = $('#hintBtn');
+    const categoryEmojis = getPuzzleCategoryEmojis();
+    hintBtn.textContent = categoryEmojis;
+    hintBtn.classList.add('emoji'); // Add emoji class for compound emoji support
+    hintBtn.disabled = true; // Disable the button after showing hint
   };
   
       // Restore visual state if we loaded saved state (after all functions are defined)
