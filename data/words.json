@@ -1,5 +1,7 @@
 {
   "1984": [
+    "1940s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Dystopian Stories",
@@ -10,6 +12,8 @@
     "Things British"
   ],
   "2046": [
+    "2000s",
+    "21st Century",
     "Ends with 046",
     "Movies",
     "Movies directed by Wong Kar-wai",
@@ -18,6 +22,8 @@
     "Things Chinese"
   ],
   "Titanic": [
+    "1910s",
+    "20th Century",
     "Best Picture Winners",
     "Civilian Ships",
     "Disaster Stories",
@@ -46,6 +52,8 @@
     "White Star Line"
   ],
   "Lusitania": [
+    "1910s",
+    "20th Century",
     "Civilian Ships",
     "Cunard Line",
     "Disasters",
@@ -61,6 +69,7 @@
     "World War I"
   ],
   "Bismarck": [
+    "19th Century",
     "Battleships",
     "Cities",
     "Cities in North America",
@@ -83,6 +92,8 @@
     "World War II"
   ],
   "Andrea Doria": [
+    "1950s",
+    "20th Century",
     "Civilian Ships",
     "Ends with RIA",
     "Oceanliners",
@@ -92,6 +103,7 @@
     "Things Italian"
   ],
   "Queen Mary": [
+    "16th Century",
     "British Monarchs",
     "British Royals",
     "Civilian Ships",
@@ -111,6 +123,8 @@
     "World War II"
   ],
   "Santa Maria": [
+    "1490s",
+    "15th Century",
     "Age of Sail",
     "Ends with RIA",
     "Exploration Ships",
@@ -126,6 +140,8 @@
     "Things Spanish"
   ],
   "Mayflower": [
+    "1620s",
+    "17th Century",
     "Age of Sail",
     "Ends with WER",
     "Exploration Ships",
@@ -185,6 +201,7 @@
     "Things Canadian"
   ],
   "Mary Rose": [
+    "16th Century",
     "Age of Sail",
     "British Monarchs",
     "British Royals",
@@ -199,6 +216,8 @@
     "Things British"
   ],
   "Hindenburg": [
+    "1930s",
+    "20th Century",
     "Airships",
     "Disasters",
     "Ends with URG",
@@ -206,6 +225,7 @@
     "Starts with HIN"
   ],
   "Pompeii": [
+    "1st Century",
     "Ancient Cities",
     "Cities",
     "Cities in Italy",
@@ -222,6 +242,8 @@
     "Volcanoes"
   ],
   "Krakatoa": [
+    "1880s",
+    "19th Century",
     "Disaster Stories",
     "Disasters",
     "Ends with TOA",
@@ -236,6 +258,8 @@
     "Volcanoes"
   ],
   "Tambora": [
+    "1810s",
+    "19th Century",
     "Disasters",
     "Ends with ORA",
     "Events",
@@ -247,6 +271,8 @@
     "Volcanoes"
   ],
   "Chernobyl": [
+    "1980s",
+    "20th Century",
     "Cities",
     "Cities in Europe",
     "Disasters",
@@ -258,6 +284,8 @@
     "Things Ukrainian"
   ],
   "Fukushima": [
+    "2010s",
+    "21st Century",
     "Cities",
     "Cities in Asia",
     "Disasters",
@@ -267,6 +295,8 @@
     "Starts with FUK"
   ],
   "Katrina": [
+    "2000s",
+    "21st Century",
     "Disasters",
     "Ends with INA",
     "Events",
@@ -275,6 +305,10 @@
     "Starts with KAT"
   ],
   "Challenger": [
+    "1870s",
+    "1980s",
+    "19th Century",
+    "20th Century",
     "Age of Sail",
     "Disasters",
     "Ends with GER",
@@ -286,12 +320,15 @@
     "Things British"
   ],
   "Deepwater Horizon": [
+    "2010s",
+    "21st Century",
     "Disasters",
     "Ends with ZON",
     "Events",
     "Starts with DEE"
   ],
   "Graf Zeppelin": [
+    "20th Century",
     "Airships",
     "Ends with LIN",
     "Inventors",
@@ -604,11 +641,16 @@
     "Synonyms for Big"
   ],
   "Everest": [
+    "1950s",
+    "20th Century",
     "Disaster Stories",
     "Ends with EST",
     "Locations in Asia",
     "Mountains",
     "Movies",
+    "Movies directed by Robert Wise",
+    "Movies featuring Edmund Hillary",
+    "Movies featuring Tenzing Norgay",
     "Place Names",
     "Starts with EVE",
     "Things Nepalese"
@@ -625,28 +667,40 @@
     "Things American"
   ],
   "Volcano": [
+    "1990s",
+    "20th Century",
     "Disaster Stories",
     "Ends with ANO",
     "Movies",
     "Starts with VOL"
   ],
   "Poseidon": [
+    "1970s",
+    "20th Century",
     "Ends with DON",
     "Greek Gods",
     "Movies",
     "Starts with POS"
   ],
   "Troy": [
+    "2000s",
+    "21st Century",
     "Ancient Cities",
     "Cities",
     "Ends with ROY",
     "Greek Mythology",
     "Historical Fiction",
     "Movies",
+    "Movies directed by Wolfgang Petersen",
+    "Movies featuring Brad Pitt",
+    "Movies featuring Eric Bana",
+    "Movies featuring Orlando Bloom",
     "Starts with TRO",
     "Trojan War"
   ],
   "Tesla": [
+    "19th Century",
+    "20th Century",
     "Car Brands",
     "Cars",
     "Companies",
@@ -659,6 +713,7 @@
     "Tech Companies"
   ],
   "Lincoln": [
+    "19th Century",
     "Aircraft Carriers",
     "Car Brands",
     "Cars",
@@ -681,6 +736,7 @@
     "Warships"
   ],
   "Washington": [
+    "18th Century",
     "Aircraft Carriers",
     "Cities",
     "Cities in North America",
@@ -703,6 +759,7 @@
     "Warships"
   ],
   "Victoria": [
+    "19th Century",
     "Age of Sail",
     "British Monarchs",
     "British Royals",
@@ -727,6 +784,9 @@
     "Things Spanish"
   ],
   "Elizabeth": [
+    "16th Century",
+    "20th Century",
+    "21st Century",
     "British Monarchs",
     "British Royals",
     "Ends with ETH",
@@ -742,6 +802,8 @@
     "Things British"
   ],
   "Newton": [
+    "17th Century",
+    "18th Century",
     "Ends with TON",
     "Enlightenment Figures",
     "Historical Figures",
@@ -754,6 +816,8 @@
     "Things British"
   ],
   "Einstein": [
+    "19th Century",
+    "20th Century",
     "Ends with EIN",
     "Historical Figures",
     "Modern Figures",
@@ -767,6 +831,7 @@
     "Things German"
   ],
   "Feynman": [
+    "20th Century",
     "Ends with MAN",
     "People",
     "Physicists",
@@ -775,6 +840,8 @@
     "Starts with FEY"
   ],
   "Edison": [
+    "19th Century",
+    "20th Century",
     "Ends with SON",
     "Inventors",
     "People",
@@ -782,6 +849,8 @@
     "Starts with EDI"
   ],
   "Curie": [
+    "19th Century",
+    "20th Century",
     "Ends with RIE",
     "People",
     "Physicists",
@@ -790,6 +859,7 @@
     "Starts with CUR"
   ],
   "Darwin": [
+    "19th Century",
     "Ends with WIN",
     "People",
     "Real People",
@@ -798,7 +868,6 @@
     "Things British"
   ],
   "Galileo": [
-    "1600s",
     "17th Century",
     "Astronomers",
     "Ends with LEO",
@@ -815,6 +884,7 @@
     "Things Italian"
   ],
   "Faraday": [
+    "19th Century",
     "Ends with DAY",
     "Inventors",
     "People",
@@ -824,6 +894,7 @@
     "Starts with FAR"
   ],
   "Wright": [
+    "20th Century",
     "Aviation Pioneers",
     "Ends with GHT",
     "Historical Figures",
@@ -1017,6 +1088,8 @@
     "Yellow Things"
   ],
   "Silver": [
+    "20th Century",
+    "21st Century",
     "Colors",
     "Economics",
     "Elements",
@@ -1105,8 +1178,8 @@
     "Fashion Brands",
     "Fictional People",
     "Greek Gods",
+    "Greek Mythology",
     "Male Names",
-    "People",
     "Starts with HER"
   ],
   "Aphrodite": [
@@ -1145,6 +1218,7 @@
     "Trojan War"
   ],
   "Ford": [
+    "20th Century",
     "Businesspeople",
     "Car Brands",
     "Cars",
@@ -1271,6 +1345,8 @@
     "Starts with HER"
   ],
   "Red": [
+    "20th Century",
+    "21st Century",
     "Action Stories",
     "Camera Companies",
     "Colors",
@@ -1318,6 +1394,8 @@
     "Starts with IND"
   ],
   "Violet": [
+    "20th Century",
+    "21st Century",
     "Colors",
     "Ends with LET",
     "Female Names",
@@ -1921,6 +1999,7 @@
     "Starts with SEI"
   ],
   "Dirac": [
+    "20th Century",
     "Ends with RAC",
     "People",
     "Physicists",
@@ -1929,6 +2008,8 @@
     "Starts with DIR"
   ],
   "Hawking": [
+    "20th Century",
+    "21st Century",
     "Ends with ING",
     "People",
     "Real People",
@@ -1936,6 +2017,7 @@
     "Starts with HAW"
   ],
   "Bell": [
+    "19th Century",
     "Ends with ELL",
     "Inventors",
     "Male Names",
@@ -1944,6 +2026,7 @@
     "Starts with BEL"
   ],
   "Morse": [
+    "19th Century",
     "Ends with RSE",
     "Inventors",
     "Male Names",
@@ -1952,6 +2035,8 @@
     "Starts with MOR"
   ],
   "Whitney": [
+    "18th Century",
+    "19th Century",
     "Ends with NEY",
     "Inventors",
     "People",
@@ -1959,6 +2044,8 @@
     "Starts with WHI"
   ],
   "Da Vinci": [
+    "15th Century",
+    "16th Century",
     "Artists",
     "Ends with NCI",
     "Historical Figures",
@@ -1971,6 +2058,8 @@
     "Things Italian"
   ],
   "Adams": [
+    "18th Century",
+    "19th Century",
     "Ends with AMS",
     "National Leaders",
     "People",
@@ -1979,6 +2068,8 @@
     "US Presidents"
   ],
   "Jefferson": [
+    "18th Century",
+    "19th Century",
     "Ends with SON",
     "National Leaders",
     "People",
@@ -1987,6 +2078,8 @@
     "US Presidents"
   ],
   "Roosevelt": [
+    "19th Century",
+    "20th Century",
     "Aircraft Carriers",
     "Cold War",
     "Ends with ELT",
@@ -2003,6 +2096,7 @@
     "Warships"
   ],
   "Kennedy": [
+    "20th Century",
     "Ends with EDY",
     "National Leaders",
     "People",
@@ -2011,6 +2105,7 @@
     "US Presidents"
   ],
   "Obama": [
+    "21st Century",
     "Ends with AMA",
     "National Leaders",
     "People",
@@ -2019,6 +2114,8 @@
     "US Presidents"
   ],
   "Madison": [
+    "18th Century",
+    "19th Century",
     "Cities",
     "Cities in North America",
     "Cities in USA",
@@ -2033,6 +2130,7 @@
     "US Presidents"
   ],
   "Jackson": [
+    "19th Century",
     "Cities",
     "Cities in North America",
     "Cities in USA",
@@ -2048,6 +2146,8 @@
     "US Presidents"
   ],
   "Wilson": [
+    "19th Century",
+    "20th Century",
     "Ends with SON",
     "National Leaders",
     "People",
@@ -2244,6 +2344,8 @@
     "Starts with GOO"
   ],
   "Daisy": [
+    "20th Century",
+    "21st Century",
     "Disney Characters",
     "Ends with ISY",
     "Female Names",
@@ -2259,6 +2361,7 @@
     "Starts with OLA"
   ],
   "Elsa": [
+    "21st Century",
     "Disney Characters",
     "Ends with LSA",
     "Female Names",
@@ -2267,6 +2370,7 @@
     "Starts with ELS"
   ],
   "Anna": [
+    "21st Century",
     "Disney Characters",
     "Ends with NNA",
     "Female Names",
@@ -2303,6 +2407,8 @@
     "Zodiac Signs"
   ],
   "Leo": [
+    "20th Century",
+    "21st Century",
     "Constellations",
     "Ends with LEO",
     "Male Names",
@@ -2386,9 +2492,18 @@
     "Starts with SCR"
   ],
   "Clue": [
+    "1980s",
+    "20th Century",
     "Board Games",
     "Ends with LUE",
     "Movies",
+    "Movies directed by Jonathan Lynn",
+    "Movies featuring Christopher Lloyd",
+    "Movies featuring Eileen Brennan",
+    "Movies featuring Lesley Ann Warren",
+    "Movies featuring Madeline Kahn",
+    "Movies featuring Martin Mull",
+    "Movies featuring Tim Curry",
     "Starts with CLU"
   ],
   "Carcassonne": [
@@ -2403,12 +2518,18 @@
     "Starts with PAN"
   ],
   "Othello": [
+    "1990s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Board Games",
     "Ends with LLO",
     "Movies",
+    "Movies directed by Oliver Parker",
     "Movies directed by Orson Welles",
+    "Movies featuring Irène Jacob",
+    "Movies featuring Kenneth Branagh",
+    "Movies featuring Laurence Fishburne",
     "Movies featuring Orson Welles",
     "Period Stories",
     "Shakespeare Characters",
@@ -2584,6 +2705,8 @@
     "Starts with KEN"
   ],
   "Lando": [
+    "20th Century",
+    "21st Century",
     "Ends with NDO",
     "Fictional People",
     "Male Names",
@@ -2690,6 +2813,7 @@
     "Things British"
   ],
   "Lenore": [
+    "19th Century",
     "Associated with Edgar Allan Poe",
     "Ends with ORE",
     "Female Names",
@@ -2716,6 +2840,7 @@
     "Starts with TEL"
   ],
   "Ozymandias": [
+    "19th Century",
     "DC Characters",
     "Ends with IAS",
     "Fictional People",
@@ -2901,8 +3026,14 @@
     "Wooden Objects"
   ],
   "Saw": [
+    "2000s",
+    "21st Century",
     "Ends with SAW",
     "Movies",
+    "Movies directed by James Wan",
+    "Movies featuring Cary Elwes",
+    "Movies featuring Danny Glover",
+    "Movies featuring Leigh Whannell",
     "Starts with SAW",
     "Tools",
     "Wooden Objects"
@@ -2926,6 +3057,8 @@
     "Wooden Objects"
   ],
   "John": [
+    "20th Century",
+    "21st Century",
     "Ends with OHN",
     "Male Names",
     "People",
@@ -2935,6 +3068,8 @@
     "Starts with JOH"
   ],
   "Paul": [
+    "20th Century",
+    "21st Century",
     "Ends with AUL",
     "Male Names",
     "People",
@@ -2944,6 +3079,8 @@
     "Starts with PAU"
   ],
   "Peter": [
+    "20th Century",
+    "21st Century",
     "Ends with TER",
     "Male Names",
     "People",
@@ -2953,6 +3090,7 @@
     "Starts with PET"
   ],
   "Homer": [
+    "8th Century BC",
     "Ends with MER",
     "Historical Figures",
     "Male Names",
@@ -2966,6 +3104,7 @@
     "Writers"
   ],
   "Mary": [
+    "1st Century",
     "Ends with ARY",
     "Female Names",
     "Historical Figures",
@@ -2974,6 +3113,7 @@
     "Starts with MAR"
   ],
   "Annabel": [
+    "19th Century",
     "Ends with BEL",
     "Female Names",
     "Fictional People",
@@ -2981,6 +3121,7 @@
     "Starts with ANN"
   ],
   "Cleopatra": [
+    "1st Century BC",
     "Ancient Rulers",
     "Ends with TRA",
     "Female Names",
@@ -2994,6 +3135,7 @@
     "Things Greek"
   ],
   "Poe": [
+    "19th Century",
     "Ends with POE",
     "Historical Figures",
     "People",
@@ -3004,6 +3146,8 @@
     "Writers"
   ],
   "Dante": [
+    "13th Century",
+    "14th Century",
     "Ends with NTE",
     "Historical Figures",
     "People",
@@ -3016,6 +3160,8 @@
     "Writers"
   ],
   "Shakespeare": [
+    "16th Century",
+    "17th Century",
     "Ends with ARE",
     "Historical Figures",
     "People",
@@ -3126,6 +3272,8 @@
     "Starts with TAR"
   ],
   "Benedict": [
+    "20th Century",
+    "21st Century",
     "Ends with ICT",
     "People",
     "Popes",
@@ -3266,6 +3414,7 @@
     "WWII Allied Powers"
   ],
   "Caesar": [
+    "1st Century BC",
     "Ends with SAR",
     "Eponymous Salads",
     "Foods",
@@ -3291,6 +3440,8 @@
     "Starts with WAL"
   ],
   "Cobb": [
+    "20th Century",
+    "21st Century",
     "Athletes",
     "Ends with OBB",
     "Eponymous Salads",
@@ -3346,6 +3497,9 @@
     "Starts with HYA"
   ],
   "Ruth": [
+    "1920s",
+    "1930s",
+    "20th Century",
     "Athletes",
     "Ends with UTH",
     "MLB Players",
@@ -3354,6 +3508,9 @@
     "Starts with RUT"
   ],
   "Mantle": [
+    "1950s",
+    "1960s",
+    "20th Century",
     "Athletes",
     "Ends with TLE",
     "MLB Players",
@@ -3362,6 +3519,7 @@
     "Starts with MAN"
   ],
   "Mays": [
+    "20th Century",
     "Athletes",
     "Ends with AYS",
     "MLB Players",
@@ -3370,6 +3528,7 @@
     "Starts with MAY"
   ],
   "Khan": [
+    "13th Century",
     "Ends with HAN",
     "Fictional People",
     "Historical Figures",
@@ -3382,12 +3541,12 @@
     "Titles of Rank"
   ],
   "Pharaoh": [
+    "Ancient Figures",
     "Ancient Rulers",
     "Ends with AOH",
     "Fictional People",
     "Historical Figures",
     "Monarchs",
-    "People",
     "Real People",
     "Rulers",
     "Starts with PHA",
@@ -3399,8 +3558,9 @@
     "Ends with SAR",
     "Fictional People",
     "Historical Figures",
+    "Medieval Rulers",
+    "Modern Rulers",
     "Monarchs",
-    "People",
     "Real People",
     "Rulers",
     "Starts with TSA",
@@ -3409,8 +3569,9 @@
   "Duke": [
     "Ends with UKE",
     "Fictional People",
+    "Medieval Rulers",
+    "Modern Rulers",
     "Monarchs",
-    "People",
     "Real People",
     "Rulers",
     "Starts with DUK",
@@ -3420,8 +3581,9 @@
     "Board Game Equipment",
     "Ends with ING",
     "Fictional People",
+    "Medieval Rulers",
+    "Modern Rulers",
     "Monarchs",
-    "People",
     "Real People",
     "Royalty",
     "Rulers",
@@ -3501,6 +3663,7 @@
     "Starts with COW"
   ],
   "Kirk": [
+    "20th Century",
     "Ends with IRK",
     "Fictional People",
     "Male Names",
@@ -3603,6 +3766,8 @@
     "Things Spanish"
   ],
   "Nina": [
+    "20th Century",
+    "21st Century",
     "Age of Sail",
     "Ends with INA",
     "Exploration Ships",
@@ -3781,6 +3946,8 @@
     "Starts with RAF"
   ],
   "Grover": [
+    "20th Century",
+    "21st Century",
     "Ends with VER",
     "Male Names",
     "Muppet Characters",
@@ -3812,14 +3979,16 @@
     "Fictional People",
     "Male Names",
     "Math Terms",
+    "Medieval Rulers",
+    "Modern Rulers",
     "Muppet Characters",
-    "People",
     "Puppet Characters",
     "Sesame Street Characters",
     "Starts with COU",
     "Titles of Rank"
   ],
   "Sam": [
+    "20th Century",
     "Birds",
     "Birds of Prey",
     "Ends with SAM",
@@ -3863,6 +4032,7 @@
     "Starts with BIG"
   ],
   "Hoover": [
+    "20th Century",
     "Companies",
     "Ends with VER",
     "National Leaders",
@@ -3872,6 +4042,7 @@
     "US Presidents"
   ],
   "Grant": [
+    "19th Century",
     "Ends with ANT",
     "Historical Figures",
     "Military Leaders",
@@ -3882,6 +4053,7 @@
     "US Presidents"
   ],
   "Catherine": [
+    "18th Century",
     "Ends with INE",
     "Female Names",
     "Historical Figures",
@@ -3893,6 +4065,8 @@
     "Starts with CAT"
   ],
   "Teresa": [
+    "20th Century",
+    "21st Century",
     "Ends with ESA",
     "Female Names",
     "Historical Figures",
@@ -3931,6 +4105,8 @@
     "US Navy"
   ],
   "Iris": [
+    "20th Century",
+    "21st Century",
     "Colors",
     "Ends with RIS",
     "Female Names",
@@ -3943,6 +4119,8 @@
     "Starts with IRI"
   ],
   "Ivy": [
+    "20th Century",
+    "21st Century",
     "Ends with IVY",
     "Female Names",
     "Fictional People",
@@ -3951,6 +4129,8 @@
     "Starts with IVY"
   ],
   "Olive": [
+    "20th Century",
+    "21st Century",
     "Colors",
     "Ends with IVE",
     "Female Names",
@@ -3965,6 +4145,8 @@
     "Trees"
   ],
   "Sulu": [
+    "20th Century",
+    "21st Century",
     "Ends with ULU",
     "Fictional People",
     "Male Names",
@@ -3986,6 +4168,10 @@
     "Starts with SON"
   ],
   "Ming": [
+    "14th Century",
+    "15th Century",
+    "16th Century",
+    "17th Century",
     "Ancient Rulers",
     "Athletes",
     "Chinese Dynasties",
@@ -4068,6 +4254,8 @@
     "TV Shows"
   ],
   "Jordan": [
+    "20th Century",
+    "21st Century",
     "Athletes",
     "Basketball Players",
     "Countries",
@@ -4112,7 +4300,7 @@
     "Female Names",
     "Fictional People",
     "Greek Gods",
-    "People",
+    "Greek Mythology",
     "Starts with ATH",
     "Things Greek"
   ],
@@ -4186,6 +4374,7 @@
     "Starts with COB"
   ],
   "Belle": [
+    "18th Century",
     "Disney Characters",
     "Ends with LLE",
     "Female Names",
@@ -4194,6 +4383,7 @@
     "Starts with BEL"
   ],
   "Aurora": [
+    "16th Century",
     "Astronomical Objects",
     "Colors",
     "Disney Characters",
@@ -4345,8 +4535,8 @@
     "Ends with REN",
     "Female Names",
     "Fictional People",
+    "Greek Mythology",
     "Mythical Creatures",
-    "People",
     "Sea Monsters",
     "Starts with SIR"
   ],
@@ -4391,6 +4581,8 @@
     "Types of Animals"
   ],
   "Heather": [
+    "20th Century",
+    "21st Century",
     "Ends with HER",
     "Female Names",
     "Fictional People",
@@ -4402,6 +4594,8 @@
     "Starts with HEA"
   ],
   "Buttercup": [
+    "20th Century",
+    "21st Century",
     "Colors",
     "Ends with CUP",
     "Female Names",
@@ -4415,10 +4609,16 @@
     "Starts with BUT"
   ],
   "Dante's Peak": [
+    "1990s",
+    "20th Century",
     "Disaster Stories",
     "Ends with EAK",
     "Mountains",
     "Movies",
+    "Movies directed by Roger Donaldson",
+    "Movies featuring Charles Hallahan",
+    "Movies featuring Linda Hamilton",
+    "Movies featuring Pierce Brosnan",
     "Starts with DAN",
     "The Bad Place",
     "Volcanoes"
@@ -4600,6 +4800,7 @@
     "Storage"
   ],
   "James": [
+    "17th Century",
     "Athletes",
     "Basketball Players",
     "Ends with MES",
@@ -4684,6 +4885,8 @@
     "Starts with HAL"
   ],
   "Chicago": [
+    "2000s",
+    "21st Century",
     "Best Picture Winners",
     "Cities",
     "Cities in North America",
@@ -5141,6 +5344,7 @@
     "Things American"
   ],
   "Salem": [
+    "17th Century",
     "Books",
     "Cities",
     "Cities in North America",
@@ -5273,11 +5477,17 @@
     "Video Games"
   ],
   "Pokemon": [
+    "1990s",
+    "20th Century",
     "Anime",
     "Card Games",
     "Ends with MON",
     "Manga",
     "Movies",
+    "Movies directed by Kunihiko Yuyama",
+    "Movies featuring Eric Stuart",
+    "Movies featuring Rachael Lillis",
+    "Movies featuring Veronica Taylor",
     "Mythical Creatures",
     "Starts with POK",
     "TV Shows",
@@ -5334,8 +5544,14 @@
     "Video Games"
   ],
   "Doom": [
+    "2000s",
+    "21st Century",
     "Ends with OOM",
     "Movies",
+    "Movies directed by Andrzej Bartkowiak",
+    "Movies featuring Dwayne Johnson",
+    "Movies featuring Karl Urban",
+    "Movies featuring Rosamund Pike",
     "Religious Terms",
     "Starts with DOO",
     "TV Shows",
@@ -5386,6 +5602,7 @@
     "The Bad Place"
   ],
   "Inferno": [
+    "14th Century",
     "Books",
     "Ends with RNO",
     "Epic Poems",
@@ -5435,9 +5652,15 @@
     "Starts with SAM"
   ],
   "Zulu": [
+    "1960s",
+    "20th Century",
     "Ends with ULU",
     "Ethnic Groups",
     "Movies",
+    "Movies directed by Cy Endfield",
+    "Movies featuring Jack Hawkins",
+    "Movies featuring Michael Caine",
+    "Movies featuring Stanley Baker",
     "NATO Phonetic Alphabet",
     "Starts with ZUL"
   ],
@@ -5538,6 +5761,7 @@
     "Starts with CIN"
   ],
   "Curry": [
+    "21st Century",
     "Athletes",
     "Basketball Players",
     "Ends with RRY",
@@ -5552,6 +5776,8 @@
     "Things Indian"
   ],
   "Kobe": [
+    "20th Century",
+    "21st Century",
     "Athletes",
     "Basketball Players",
     "Ends with OBE",
@@ -5646,6 +5872,7 @@
     "Types of Animals"
   ],
   "Drake": [
+    "16th Century",
     "Birds",
     "Ends with AKE",
     "Historical Figures",
@@ -5762,9 +5989,14 @@
     "Starts with NUG"
   ],
   "Heat": [
+    "1990s",
+    "20th Century",
     "Ends with EAT",
     "Movies",
+    "Movies directed by Michael Mann",
     "Movies featuring Al Pacino",
+    "Movies featuring Robert De Niro",
+    "Movies featuring Val Kilmer",
     "NBA Teams",
     "Starts with HEA",
     "Weather"
@@ -5847,6 +6079,8 @@
     "Starts with ALP"
   ],
   "Bravo": [
+    "20th Century",
+    "21st Century",
     "Ends with AVO",
     "Fictional People",
     "Male Names",
@@ -5899,6 +6133,7 @@
     "Starts with HOT"
   ],
   "Juliet": [
+    "16th Century",
     "Ends with IET",
     "Female Names",
     "Fictional People",
@@ -5932,6 +6167,7 @@
     "Starts with NOV"
   ],
   "Oscar": [
+    "19th Century",
     "Ends with CAR",
     "Fictional People",
     "Male Names",
@@ -5941,6 +6177,7 @@
     "Starts with OSC"
   ],
   "Papa": [
+    "20th Century",
     "Ends with APA",
     "Fictional People",
     "Male Names",
@@ -5956,6 +6193,7 @@
     "Things Canadian"
   ],
   "Romeo": [
+    "16th Century",
     "Ends with MEO",
     "Fictional People",
     "Male Names",
@@ -5987,6 +6225,7 @@
     "Starts with UNI"
   ],
   "Victor": [
+    "19th Century",
     "Ends with TOR",
     "Fictional People",
     "Male Names",
@@ -6030,6 +6269,7 @@
     "Starts with BIS"
   ],
   "Elvis": [
+    "20th Century",
     "Ends with VIS",
     "Male Names",
     "Musicians",
@@ -6038,6 +6278,8 @@
     "Things American"
   ],
   "Madonna": [
+    "20th Century",
+    "21st Century",
     "Ends with NNA",
     "Female Names",
     "Musicians",
@@ -6046,6 +6288,8 @@
     "Things American"
   ],
   "Prince": [
+    "20th Century",
+    "21st Century",
     "Ends with NCE",
     "Male Names",
     "Musicians",
@@ -6055,6 +6299,8 @@
     "Things American"
   ],
   "Beyonce": [
+    "20th Century",
+    "21st Century",
     "Ends with NCE",
     "Female Names",
     "Musicians",
@@ -6319,6 +6565,8 @@
     "Starts with NOT"
   ],
   "Elf": [
+    "2000s",
+    "21st Century",
     "Christmas Stories",
     "Ends with ELF",
     "Fantasy",
@@ -6326,6 +6574,7 @@
     "Movies directed by Jon Favreau",
     "Movies featuring James Caan",
     "Movies featuring Will Ferrell",
+    "Movies featuring Zooey Deschanel",
     "Mythical Creatures",
     "Starts with ELF"
   ],
@@ -6541,6 +6790,8 @@
     "Starts with DAR"
   ],
   "Film": [
+    "20th Century",
+    "21st Century",
     "Ends with ILM",
     "Materials",
     "Movies",
@@ -6957,6 +7208,8 @@
     "Technology"
   ],
   "Professor X": [
+    "20th Century",
+    "21st Century",
     "Ends with R X",
     "Fictional People",
     "Male Names",
@@ -6967,6 +7220,8 @@
     "X-Men Characters"
   ],
   "Jean Grey": [
+    "20th Century",
+    "21st Century",
     "Ends with REY",
     "Female Names",
     "Fictional People",
@@ -6996,7 +7251,6 @@
     "Things American"
   ],
   "Kepler": [
-    "1600s",
     "17th Century",
     "Astronomers",
     "Ends with LER",
@@ -7009,6 +7263,8 @@
     "Things German"
   ],
   "Bach": [
+    "17th Century",
+    "18th Century",
     "Classical Composers",
     "Composers",
     "Ends with ACH",
@@ -7021,6 +7277,7 @@
     "Things German"
   ],
   "Mozart": [
+    "18th Century",
     "Classical Composers",
     "Composers",
     "Ends with ART",
@@ -7033,6 +7290,8 @@
     "Things Austrian"
   ],
   "Beethoven": [
+    "18th Century",
+    "19th Century",
     "Classical Composers",
     "Composers",
     "Ends with VEN",
@@ -7046,6 +7305,8 @@
     "Things German"
   ],
   "Handel": [
+    "17th Century",
+    "18th Century",
     "Classical Composers",
     "Composers",
     "Ends with DEL",
@@ -7266,6 +7527,8 @@
     "Two-Letter Words"
   ],
   "IT": [
+    "1980s",
+    "20th Century",
     "Books",
     "Horror Stories"
   ],
@@ -7384,15 +7647,26 @@
     "Starts with SOF"
   ],
   "Snowman": [
+    "1980s",
+    "20th Century",
     "Ends with MAN",
     "Ice-themed",
     "Movies",
+    "Movies directed by Dianne Jackson",
+    "Movies featuring David Bowie",
+    "Movies featuring Raymond Briggs",
     "Starts with SNO"
   ],
   "Ice Age": [
+    "2000s",
+    "21st Century",
     "Ends with AGE",
     "Ice-themed",
     "Movies",
+    "Movies directed by Chris Wedge",
+    "Movies featuring Denis Leary",
+    "Movies featuring John Leguizamo",
+    "Movies featuring Ray Romano",
     "Starts with ICE"
   ],
   "Pelican": [
@@ -7545,7 +7819,6 @@
     "Female Names",
     "Fictional People",
     "Greek Mythology",
-    "People",
     "Starts with HEL",
     "Trojan War"
   ],
@@ -7591,8 +7864,14 @@
     "Starts with CHA"
   ],
   "Big": [
+    "1980s",
+    "20th Century",
     "Ends with BIG",
     "Movies",
+    "Movies directed by Penny Marshall",
+    "Movies featuring Elizabeth Perkins",
+    "Movies featuring Robert Loggia",
+    "Movies featuring Tom Hanks",
     "Starts with BIG",
     "Synonyms for Big",
     "Synonyms for Good"
@@ -7735,6 +8014,7 @@
     "Types of Animals"
   ],
   "Iliad": [
+    "8th Century BC",
     "Books",
     "Ends with IAD",
     "Greek Mythology",
@@ -7742,6 +8022,7 @@
     "Trojan War"
   ],
   "Odyssey": [
+    "8th Century BC",
     "Books",
     "Cars",
     "Ends with SEY",
@@ -7830,6 +8111,7 @@
     "Starts with RED"
   ],
   "Saint Patrick": [
+    "5th Century",
     "Ends with ICK",
     "Green Things",
     "Historical Figures",
@@ -7840,6 +8122,8 @@
     "Starts with SAI"
   ],
   "Trump": [
+    "20th Century",
+    "21st Century",
     "Board Game Equipment",
     "Ends with UMP",
     "National Leaders",
@@ -7923,9 +8207,15 @@
     "Starts with COG"
   ],
   "Pinnochio": [
+    "1940s",
+    "20th Century",
     "Ends with HIO",
     "Folklore Figures",
     "Movies",
+    "Movies directed by Ben Sharpsteen",
+    "Movies featuring Christian Rub",
+    "Movies featuring Cliff Edwards",
+    "Movies featuring Dickie Jones",
     "Starts with PIN",
     "Wooden Objects"
   ],
@@ -8349,6 +8639,8 @@
     "Things Central African"
   ],
   "Chad": [
+    "20th Century",
+    "21st Century",
     "Countries",
     "Countries in Africa",
     "Ends with HAD",
@@ -9106,6 +9398,8 @@
     "WWII Allied Powers"
   ],
   "Madagascar": [
+    "2000s",
+    "21st Century",
     "Countries",
     "Countries in Africa",
     "Ends with CAR",
@@ -9116,6 +9410,10 @@
     "Locations in Africa",
     "Modern Countries",
     "Movies",
+    "Movies directed by Eric Darnell",
+    "Movies featuring Ben Stiller",
+    "Movies featuring Chris Rock",
+    "Movies featuring David Schwimmer",
     "Place Names",
     "Republics",
     "Starts with MAD"
@@ -10315,6 +10613,7 @@
     "Starts with WAR"
   ],
   "East Germany": [
+    "20th Century",
     "Cold War Powers",
     "Countries",
     "Countries in Europe",
@@ -10330,6 +10629,7 @@
     "Things German"
   ],
   "Rhodesia": [
+    "20th Century",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -10341,6 +10641,7 @@
     "Things Zimbabwean"
   ],
   "South Vietnam": [
+    "20th Century",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -10352,6 +10653,7 @@
     "Things Vietnamese"
   ],
   "North Vietnam": [
+    "20th Century",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -10363,6 +10665,7 @@
     "Things Vietnamese"
   ],
   "South Yemen": [
+    "20th Century",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -10374,6 +10677,7 @@
     "Things Yemeni"
   ],
   "North Yemen": [
+    "20th Century",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -10385,6 +10689,8 @@
     "Things Yemeni"
   ],
   "Tanganyika": [
+    "1960s",
+    "20th Century",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -10396,6 +10702,8 @@
     "Things Tanzanian"
   ],
   "Zanzibar": [
+    "1960s",
+    "20th Century",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -10408,6 +10716,7 @@
     "Things Tanzanian"
   ],
   "Upper Volta": [
+    "20th Century",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -10419,6 +10728,7 @@
     "Things Burkina Fasoan"
   ],
   "Dahomey": [
+    "20th Century",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -10464,6 +10774,9 @@
     "Things Sri Lankan"
   ],
   "Kampuchea": [
+    "1970s",
+    "1980s",
+    "20th Century",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -10926,6 +11239,8 @@
     "Things Armenian"
   ],
   "Dune": [
+    "1960s",
+    "20th Century",
     "Adventure Stories",
     "Books",
     "Ends with UNE",
@@ -10933,6 +11248,8 @@
     "Starts with DUN"
   ],
   "Casablanca": [
+    "1940s",
+    "20th Century",
     "Best Picture Winners",
     "Black and White",
     "Black and White Films",
@@ -10950,6 +11267,8 @@
     "War Stories"
   ],
   "The Godfather": [
+    "1970s",
+    "20th Century",
     "Best Picture Winners",
     "Crime Stories",
     "Ends with HER",
@@ -10963,6 +11282,8 @@
     "Things American"
   ],
   "The Godfather Part II": [
+    "1970s",
+    "20th Century",
     "Best Picture Winners",
     "Crime Stories",
     "Ends with  II",
@@ -10977,6 +11298,8 @@
     "Starts with THE"
   ],
   "Pulp Fiction": [
+    "1990s",
+    "20th Century",
     "Crime Stories",
     "Ends with ION",
     "Movies",
@@ -10989,6 +11312,8 @@
     "Thriller Stories"
   ],
   "Forrest Gump": [
+    "1990s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with UMP",
     "Movies",
@@ -10999,6 +11324,8 @@
     "Things American"
   ],
   "The Matrix": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Cult Classics",
     "Ends with RIX",
@@ -11013,6 +11340,8 @@
     "Wachowskis"
   ],
   "Spirited Away": [
+    "2000s",
+    "21st Century",
     "2D Animated Films",
     "Anime",
     "Ends with WAY",
@@ -11026,6 +11355,8 @@
     "Things Japanese"
   ],
   "My Neighbor Totoro": [
+    "1980s",
+    "20th Century",
     "2D Animated Films",
     "Anime",
     "Ends with ORO",
@@ -11038,6 +11369,8 @@
     "Things Japanese"
   ],
   "Castle in the Sky": [
+    "1980s",
+    "20th Century",
     "2D Animated Films",
     "Anime",
     "Ends with SKY",
@@ -11050,6 +11383,8 @@
     "Things Japanese"
   ],
   "Kiki's Delivery Service": [
+    "1980s",
+    "20th Century",
     "2D Animated Films",
     "Anime",
     "Ends with ICE",
@@ -11062,6 +11397,8 @@
     "Things Japanese"
   ],
   "Porco Rosso": [
+    "1990s",
+    "20th Century",
     "2D Animated Films",
     "Anime",
     "Ends with SSO",
@@ -11074,6 +11411,8 @@
     "Things Japanese"
   ],
   "Princess Mononoke": [
+    "1990s",
+    "20th Century",
     "2D Animated Films",
     "Anime",
     "Ends with OKE",
@@ -11248,6 +11587,8 @@
     "Things Japanese"
   ],
   "Star Wars": [
+    "1970s",
+    "20th Century",
     "Adventure Stories",
     "Ends with ARS",
     "Epic Stories",
@@ -11265,6 +11606,8 @@
     "Things American"
   ],
   "The Empire Strikes Back": [
+    "1980s",
+    "20th Century",
     "Adventure Stories",
     "Ends with ACK",
     "Movies",
@@ -11280,6 +11623,8 @@
     "Starts with THE"
   ],
   "Return of the Jedi": [
+    "1980s",
+    "20th Century",
     "Adventure Stories",
     "Ends with EDI",
     "Movies",
@@ -11295,6 +11640,8 @@
     "Starts with RET"
   ],
   "The Phantom Menace": [
+    "1990s",
+    "20th Century",
     "Adventure Stories",
     "Ends with ACE",
     "Movies",
@@ -11309,6 +11656,8 @@
     "Starts with THE"
   ],
   "Attack of the Clones": [
+    "2000s",
+    "21st Century",
     "Adventure Stories",
     "Ends with NES",
     "Movies",
@@ -11323,6 +11672,8 @@
     "Starts with ATT"
   ],
   "Revenge of the Sith": [
+    "2000s",
+    "21st Century",
     "Adventure Stories",
     "Ends with ITH",
     "Movies",
@@ -11337,6 +11688,8 @@
     "Starts with REV"
   ],
   "The Force Awakens": [
+    "2010s",
+    "21st Century",
     "Adventure Stories",
     "Disney",
     "Ends with ENS",
@@ -11354,6 +11707,8 @@
     "Starts with THE"
   ],
   "The Last Jedi": [
+    "2010s",
+    "21st Century",
     "Adventure Stories",
     "Disney",
     "Ends with EDI",
@@ -11370,6 +11725,8 @@
     "Starts with THE"
   ],
   "The Rise of Skywalker": [
+    "2010s",
+    "21st Century",
     "Adventure Stories",
     "Disney",
     "Ends with KER",
@@ -11385,6 +11742,8 @@
     "Starts with THE"
   ],
   "Rogue One": [
+    "2010s",
+    "21st Century",
     "Adventure Stories",
     "Disney",
     "Ends with ONE",
@@ -11400,6 +11759,8 @@
     "Starts with ROG"
   ],
   "Solo": [
+    "2010s",
+    "21st Century",
     "Adventure Stories",
     "Disney",
     "Ends with OLO",
@@ -11414,6 +11775,8 @@
     "Starts with SOL"
   ],
   "Schindler's List": [
+    "1990s",
+    "20th Century",
     "Best Picture Winners",
     "Black and White",
     "Black and White Films",
@@ -11421,16 +11784,25 @@
     "Historical Fiction",
     "Movies",
     "Movies directed by Spielberg",
+    "Movies directed by Steven Spielberg",
+    "Movies featuring Ben Kingsley",
+    "Movies featuring Liam Neeson",
+    "Movies featuring Ralph Fiennes",
     "Oscar Winners",
     "Starts with SCH"
   ],
   "Jurassic Park": [
+    "1990s",
+    "20th Century",
     "Adventure Stories",
     "Blockbusters",
     "Ends with ARK",
     "Movies",
     "Movies directed by Spielberg",
     "Movies directed by Steven Spielberg",
+    "Movies featuring Jeff Goldblum",
+    "Movies featuring Laura Dern",
+    "Movies featuring Sam Neill",
     "Sci-fi Stories",
     "Starts with JUR",
     "Things American"
@@ -12281,6 +12653,8 @@
     "Starts with WIS"
   ],
   "The Lord of the Rings": [
+    "1950s",
+    "20th Century",
     "Adventure Stories",
     "Books",
     "Ends with NGS",
@@ -12292,21 +12666,29 @@
     "Things British"
   ],
   "Blade Runner": [
+    "1980s",
+    "20th Century",
     "Cult Classics",
     "Ends with NER",
     "Movies",
     "Movies directed by Ridley Scott",
     "Movies featuring Harrison Ford",
+    "Movies featuring Rutger Hauer",
+    "Movies featuring Sean Young",
     "Sci-fi Stories",
     "Starts with BLA"
   ],
   "Seven Samurai": [
+    "1950s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with RAI",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Takashi Shimura",
+    "Movies featuring Toshiro Mifune",
     "Period Stories",
     "Samurai Stories",
     "Starts with SEV",
@@ -12314,59 +12696,77 @@
     "War Stories"
   ],
   "Rashomon": [
+    "1950s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with MON",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Machiko Kyō",
+    "Movies featuring Toshiro Mifune",
     "Period Stories",
     "Starts with RAS",
     "Things Japanese"
   ],
   "Yojimbo": [
+    "1960s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with MBO",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Toshiro Mifune",
     "Period Stories",
     "Samurai Stories",
     "Starts with YOJ",
     "Things Japanese"
   ],
   "Sanjuro": [
+    "1960s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with URO",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Toshiro Mifune",
     "Period Stories",
     "Samurai Stories",
     "Starts with SAN",
     "Things Japanese"
   ],
   "Throne of Blood": [
+    "1950s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with OOD",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Isuzu Yamada",
+    "Movies featuring Toshiro Mifune",
     "Period Stories",
     "Samurai Stories",
     "Starts with THR",
     "Things Japanese"
   ],
   "The Hidden Fortress": [
+    "1950s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with ESS",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Minoru Chiaki",
+    "Movies featuring Toshiro Mifune",
     "Period Stories",
     "Samurai Stories",
     "Starts with THE",
@@ -12374,42 +12774,57 @@
     "War Stories"
   ],
   "Ikiru": [
+    "1950s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with IRU",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Takashi Shimura",
     "Starts with IKI",
     "Things Japanese"
   ],
   "High and Low": [
+    "1960s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with LOW",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Tatsuya Nakadai",
+    "Movies featuring Toshiro Mifune",
     "Starts with HIG",
     "Things Japanese"
   ],
   "Red Beard": [
+    "1960s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with ARD",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Toshiro Mifune",
+    "Movies featuring Yūzō Kayama",
     "Period Stories",
     "Red Things",
     "Starts with RED",
     "Things Japanese"
   ],
   "Ran": [
+    "1980s",
+    "20th Century",
     "Ends with RAN",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Akira Terao",
+    "Movies featuring Tatsuya Nakadai",
     "Period Stories",
     "Samurai Stories",
     "Starts with RAN",
@@ -12417,12 +12832,16 @@
     "War Stories"
   ],
   "Kagemusha": [
+    "1980s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Ends with SHA",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Tatsuya Nakadai",
+    "Movies featuring Tsutomu Yamazaki",
     "Period Stories",
     "Samurai Stories",
     "Starts with KAG",
@@ -12430,14 +12849,20 @@
     "War Stories"
   ],
   "Dreams": [
+    "1990s",
+    "20th Century",
     "Ends with AMS",
     "Japanese Films",
     "Movies",
     "Movies directed by Akira Kurosawa",
+    "Movies featuring Akira Terao",
+    "Movies featuring Mitsunori Isaki",
     "Starts with DRE",
     "Things Japanese"
   ],
   "The Big Sleep": [
+    "1940s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Crime Stories",
@@ -12446,9 +12871,12 @@
     "Movies",
     "Movies directed by Howard Hawks",
     "Movies featuring Humphrey Bogart",
+    "Movies featuring Lauren Bacall",
     "Starts with THE"
   ],
   "The Maltese Falcon": [
+    "1940s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Crime Stories",
@@ -12457,17 +12885,25 @@
     "Movies",
     "Movies directed by John Huston",
     "Movies featuring Humphrey Bogart",
+    "Movies featuring Mary Astor",
+    "Movies featuring Peter Lorre",
     "Starts with THE"
   ],
   "The Shining": [
+    "1980s",
+    "20th Century",
     "Books",
     "Ends with ING",
     "Horror Stories",
     "Movies",
     "Movies directed by Stanley Kubrick",
+    "Movies featuring Jack Nicholson",
+    "Movies featuring Shelley Duvall",
     "Starts with THE"
   ],
   "Gone with the Wind": [
+    "1930s",
+    "20th Century",
     "Best Picture Winners",
     "Black and White",
     "Black and White Films",
@@ -12478,6 +12914,8 @@
     "Family Sagas",
     "Movies",
     "Movies directed by Victor Fleming",
+    "Movies featuring Clark Gable",
+    "Movies featuring Olivia de Havilland",
     "Movies featuring Vivien Leigh",
     "Oscar Winners",
     "Romance Stories",
@@ -12485,6 +12923,8 @@
     "Things American"
   ],
   "To Kill a Mockingbird": [
+    "1960s",
+    "20th Century",
     "Black and White",
     "Black and White Films",
     "Books",
@@ -12496,6 +12936,8 @@
     "Things American"
   ],
   "The Great Gatsby": [
+    "1920s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with SBY",
@@ -12504,6 +12946,8 @@
     "Things American"
   ],
   "Harry Potter and the Sorcerer's Stone": [
+    "2000s",
+    "21st Century",
     "Blockbusters",
     "Books",
     "Ends with ONE",
@@ -12518,6 +12962,8 @@
     "Starts with HAR"
   ],
   "The Hobbit": [
+    "1930s",
+    "20th Century",
     "Adventure Stories",
     "Books",
     "Children's Books",
@@ -12529,12 +12975,16 @@
     "Things British"
   ],
   "The Catcher in the Rye": [
+    "1950s",
+    "20th Century",
     "Books",
     "Coming of Age Stories",
     "Ends with RYE",
     "Starts with THE"
   ],
   "Brave New World": [
+    "1930s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Dystopian Stories",
@@ -12544,6 +12994,8 @@
     "Things British"
   ],
   "Fahrenheit 451": [
+    "1950s",
+    "20th Century",
     "Books",
     "Dystopian Stories",
     "Ends with 451",
@@ -12551,6 +13003,8 @@
     "Starts with FAH"
   ],
   "Pride and Prejudice": [
+    "1810s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Ends with ICE",
@@ -12560,6 +13014,8 @@
     "Things British"
   ],
   "Moby Dick": [
+    "1850s",
+    "19th Century",
     "Adventure Stories",
     "Books",
     "Classic Literature",
@@ -12569,6 +13025,8 @@
     "Things American"
   ],
   "The Grapes of Wrath": [
+    "1930s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with ATH",
@@ -12577,6 +13035,7 @@
     "Things American"
   ],
   "The Odyssey": [
+    "8th Century BC",
     "Adventure Stories",
     "Books",
     "Classic Literature",
@@ -12589,6 +13048,7 @@
     "Things Greek"
   ],
   "The Iliad": [
+    "8th Century BC",
     "Adventure Stories",
     "Books",
     "Classic Literature",
@@ -12602,40 +13062,54 @@
     "War Stories"
   ],
   "Salem's Lot": [
+    "1970s",
+    "20th Century",
     "Books",
     "Ends with LOT",
     "Horror Stories",
     "Starts with SAL"
   ],
   "The Road": [
+    "2000s",
+    "21st Century",
     "Books",
     "Dystopian Stories",
     "Ends with OAD",
     "Starts with THE"
   ],
   "The Handmaid's Tale": [
+    "1980s",
+    "20th Century",
     "Books",
     "Dystopian Stories",
     "Ends with ALE",
     "Starts with THE"
   ],
   "The Color Purple": [
+    "1980s",
+    "20th Century",
     "Books",
     "Ends with PLE",
     "Starts with THE"
   ],
   "Beloved": [
+    "1980s",
+    "20th Century",
     "Books",
     "Ends with VED",
     "Starts with BEL"
   ],
   "The Alchemist": [
+    "1980s",
+    "20th Century",
     "Adventure Stories",
     "Books",
     "Ends with IST",
     "Starts with THE"
   ],
   "The Little Prince": [
+    "1940s",
+    "20th Century",
     "Adventure Stories",
     "Books",
     "Ends with NCE",
@@ -12643,24 +13117,32 @@
     "Starts with THE"
   ],
   "Charlotte's Web": [
+    "1950s",
+    "20th Century",
     "Books",
     "Children's Stories",
     "Ends with WEB",
     "Starts with CHA"
   ],
   "Matilda": [
+    "1980s",
+    "20th Century",
     "Books",
     "Children's Stories",
     "Ends with LDA",
     "Starts with MAT"
   ],
   "Anne of Green Gables": [
+    "1900s",
+    "20th Century",
     "Books",
     "Coming of Age Stories",
     "Ends with LES",
     "Starts with ANN"
   ],
   "The Hunger Games": [
+    "2000s",
+    "21st Century",
     "Adventure Stories",
     "Books",
     "Coming of Age Stories",
@@ -12670,6 +13152,8 @@
     "Starts with THE"
   ],
   "Twilight": [
+    "2000s",
+    "21st Century",
     "Books",
     "Coming of Age Stories",
     "Ends with GHT",
@@ -12678,6 +13162,8 @@
     "Starts with TWI"
   ],
   "The Fault in Our Stars": [
+    "2010s",
+    "21st Century",
     "Books",
     "Coming of Age Stories",
     "Ends with ARS",
@@ -12685,6 +13171,8 @@
     "Starts with THE"
   ],
   "Percy Jackson & the Olympians": [
+    "2000s",
+    "21st Century",
     "Adventure Stories",
     "Books",
     "Ends with ANS",
@@ -12692,6 +13180,8 @@
     "Starts with PER"
   ],
   "The Chronicles of Narnia": [
+    "1950s",
+    "20th Century",
     "Adventure Stories",
     "Books",
     "C.S. Lewis",
@@ -12702,6 +13192,8 @@
     "Things British"
   ],
   "The Da Vinci Code": [
+    "2000s",
+    "21st Century",
     "Books",
     "Ends with ODE",
     "Mystery Stories",
@@ -12709,6 +13201,8 @@
     "Thriller Stories"
   ],
   "The Girl with the Dragon Tattoo": [
+    "2000s",
+    "21st Century",
     "Books",
     "Crime Stories",
     "Ends with TOO",
@@ -12716,15 +13210,22 @@
     "Thriller Stories"
   ],
   "Gone Girl": [
+    "2010s",
+    "21st Century",
     "Books",
     "Crime Stories",
     "Ends with IRL",
     "Movies",
     "Movies directed by David Fincher",
+    "Movies featuring Ben Affleck",
+    "Movies featuring Neil Patrick Harris",
+    "Movies featuring Rosamund Pike",
     "Starts with GON",
     "Thriller Stories"
   ],
   "The Silence of the Lambs": [
+    "1990s",
+    "20th Century",
     "Best Picture Winners",
     "Books",
     "Crime Stories",
@@ -12732,6 +13233,9 @@
     "Horror Stories",
     "Movies",
     "Movies directed by Jonathan Demme",
+    "Movies featuring Anthony Hopkins",
+    "Movies featuring Jodie Foster",
+    "Movies featuring Scott Glenn",
     "Oscar Winners",
     "Starts with THE",
     "Things American",
@@ -12739,12 +13243,16 @@
     "Thriller Stories"
   ],
   "The Stand": [
+    "1970s",
+    "20th Century",
     "Books",
     "Ends with AND",
     "Horror Stories",
     "Starts with THE"
   ],
   "Dracula": [
+    "1890s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Ends with ULA",
@@ -12755,6 +13263,8 @@
     "Things British"
   ],
   "Frankenstein": [
+    "1810s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Ends with EIN",
@@ -12765,6 +13275,8 @@
     "Things British"
   ],
   "Jane Eyre": [
+    "1840s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Ends with YRE",
@@ -12774,6 +13286,8 @@
     "Things British"
   ],
   "Wuthering Heights": [
+    "1840s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Ends with HTS",
@@ -12783,6 +13297,8 @@
     "Things British"
   ],
   "Little Women": [
+    "1860s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Coming of Age Stories",
@@ -12793,6 +13309,8 @@
     "Things American"
   ],
   "The Secret Garden": [
+    "1910s",
+    "20th Century",
     "Adventure Stories",
     "Books",
     "Children's Books",
@@ -12803,6 +13321,8 @@
     "Things British"
   ],
   "Alice's Adventures in Wonderland": [
+    "1860s",
+    "19th Century",
     "Books",
     "Children's Books",
     "Children's Stories",
@@ -12812,6 +13332,8 @@
     "Things British"
   ],
   "The Wind in the Willows": [
+    "1900s",
+    "20th Century",
     "Animal Stories",
     "Books",
     "Children's Books",
@@ -12821,6 +13343,8 @@
     "Things British"
   ],
   "Winnie-the-Pooh": [
+    "1920s",
+    "20th Century",
     "Animal Stories",
     "Books",
     "Children's Books",
@@ -12830,6 +13354,8 @@
     "Things British"
   ],
   "The Tale of Peter Rabbit": [
+    "1900s",
+    "20th Century",
     "Animal Stories",
     "Books",
     "Children's Books",
@@ -12839,36 +13365,48 @@
     "Things British"
   ],
   "The Very Hungry Caterpillar": [
+    "1960s",
+    "20th Century",
     "Books",
     "Children's Stories",
     "Ends with LAR",
     "Starts with THE"
   ],
   "Where the Wild Things Are": [
+    "1960s",
+    "20th Century",
     "Books",
     "Children's Stories",
     "Ends with ARE",
     "Starts with WHE"
   ],
   "Goodnight Moon": [
+    "1940s",
+    "20th Century",
     "Books",
     "Children's Stories",
     "Ends with OON",
     "Starts with GOO"
   ],
   "Green Eggs and Ham": [
+    "1960s",
+    "20th Century",
     "Books",
     "Children's Stories",
     "Ends with HAM",
     "Starts with GRE"
   ],
   "Oh, the Places You'll Go!": [
+    "1990s",
+    "20th Century",
     "Books",
     "Children's Stories",
     "Ends with GO!",
     "Starts with OH,"
   ],
   "Harry Potter and the Chamber of Secrets": [
+    "2000s",
+    "21st Century",
     "Blockbusters",
     "Books",
     "Ends with ETS",
@@ -12885,6 +13423,8 @@
     "Starts with HAR"
   ],
   "Harry Potter and the Prisoner of Azkaban": [
+    "2000s",
+    "21st Century",
     "Blockbusters",
     "Books",
     "Ends with BAN",
@@ -12901,6 +13441,8 @@
     "Starts with HAR"
   ],
   "Harry Potter and the Goblet of Fire": [
+    "2000s",
+    "21st Century",
     "Blockbusters",
     "Books",
     "Ends with IRE",
@@ -12917,6 +13459,8 @@
     "Starts with HAR"
   ],
   "Harry Potter and the Order of the Phoenix": [
+    "2000s",
+    "21st Century",
     "Blockbusters",
     "Books",
     "Ends with NIX",
@@ -12933,6 +13477,8 @@
     "Starts with HAR"
   ],
   "Harry Potter and the Half-Blood Prince": [
+    "2000s",
+    "21st Century",
     "Blockbusters",
     "Books",
     "Ends with NCE",
@@ -12949,6 +13495,8 @@
     "Starts with HAR"
   ],
   "Harry Potter and the Deathly Hallows": [
+    "2000s",
+    "21st Century",
     "Books",
     "Ends with OWS",
     "Fantasy Stories",
@@ -12957,6 +13505,8 @@
     "Starts with HAR"
   ],
   "Harry Potter and the Deathly Hallows: Part 1": [
+    "2010s",
+    "21st Century",
     "Blockbusters",
     "Ends with T 1",
     "Fantasy Stories",
@@ -12972,6 +13522,8 @@
     "Starts with HAR"
   ],
   "Harry Potter and the Deathly Hallows: Part 2": [
+    "2010s",
+    "21st Century",
     "Blockbusters",
     "Ends with T 2",
     "Fantasy Stories",
@@ -12987,6 +13539,8 @@
     "Starts with HAR"
   ],
   "Die Hard": [
+    "1980s",
+    "20th Century",
     "Action Stories",
     "Blockbusters",
     "Christmas Stories",
@@ -12994,12 +13548,15 @@
     "Movies",
     "Movies directed by John McTiernan",
     "Movies featuring Alan Rickman",
+    "Movies featuring Bonnie Bedelia",
     "Movies featuring Bruce Willis",
     "Starts with DIE",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Galaxy Quest": [
+    "1990s",
+    "20th Century",
     "Comedy Stories",
     "Ends with EST",
     "Movies",
@@ -13011,6 +13568,8 @@
     "Starts with GAL"
   ],
   "Robin Hood: Prince of Thieves": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with VES",
@@ -13022,11 +13581,14 @@
     "Starts with ROB"
   ],
   "Sense and Sensibility": [
+    "1990s",
+    "20th Century",
     "Ends with ITY",
     "Movies",
     "Movies directed by Ang Lee",
     "Movies featuring Alan Rickman",
     "Movies featuring Emma Thompson",
+    "Movies featuring Hugh Grant",
     "Movies featuring Kate Winslet",
     "Period Stories",
     "Romance Stories",
@@ -13034,6 +13596,8 @@
     "Things British"
   ],
   "Love Actually": [
+    "2000s",
+    "21st Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with LLY",
@@ -13047,6 +13611,8 @@
     "Starts with LOV"
   ],
   "Sweeney Todd: The Demon Barber of Fleet Street": [
+    "2000s",
+    "21st Century",
     "Ends with EET",
     "Horror Stories",
     "Movies",
@@ -13059,6 +13625,8 @@
     "Starts with SWE"
   ],
   "The Godfather Part III": [
+    "1990s",
+    "20th Century",
     "Crime Stories",
     "Ends with III",
     "Family Sagas",
@@ -13071,44 +13639,59 @@
     "Starts with THE"
   ],
   "Scarface": [
+    "1980s",
+    "20th Century",
     "Crime Stories",
     "Ends with ACE",
     "Movies",
     "Movies directed by Brian De Palma",
     "Movies featuring Al Pacino",
     "Movies featuring Michelle Pfeiffer",
+    "Movies featuring Steven Bauer",
     "Starts with SCA",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Serpico": [
+    "1970s",
+    "20th Century",
     "Biographical Stories",
     "Crime Stories",
     "Ends with ICO",
     "Movies",
     "Movies directed by Sidney Lumet",
     "Movies featuring Al Pacino",
+    "Movies featuring Jack Kehoe",
+    "Movies featuring John Randolph",
     "Starts with SER"
   ],
   "Dog Day Afternoon": [
+    "1970s",
+    "20th Century",
     "Crime Stories",
     "Ends with OON",
     "Movies",
     "Movies directed by Sidney Lumet",
     "Movies featuring Al Pacino",
+    "Movies featuring Charles Durning",
     "Movies featuring John Cazale",
     "Starts with DOG"
   ],
   "Scent of a Woman": [
+    "1990s",
+    "20th Century",
     "Ends with MAN",
     "Movies",
     "Movies directed by Martin Brest",
     "Movies featuring Al Pacino",
     "Movies featuring Chris O'Donnell",
+    "Movies featuring Gabrielle Anwar",
     "Oscar Winners",
     "Starts with SCE"
   ],
   "The Devil's Advocate": [
+    "1990s",
+    "20th Century",
     "Ends with ATE",
     "Horror Stories",
     "Movies",
@@ -13121,6 +13704,8 @@
     "Thriller Stories"
   ],
   "Donnie Brasco": [
+    "1990s",
+    "20th Century",
     "Biographical Stories",
     "Crime Stories",
     "Ends with SCO",
@@ -13132,6 +13717,8 @@
     "Starts with DON"
   ],
   "Insomnia": [
+    "2000s",
+    "21st Century",
     "Crime Stories",
     "Ends with NIA",
     "Movies",
@@ -13144,6 +13731,8 @@
     "Thriller Stories"
   ],
   "The Irishman": [
+    "2010s",
+    "21st Century",
     "Biographical Stories",
     "Crime Stories",
     "Ends with MAN",
@@ -13156,6 +13745,8 @@
     "Starts with THE"
   ],
   "Reservoir Dogs": [
+    "1990s",
+    "20th Century",
     "Crime Stories",
     "Ends with OGS",
     "Movies",
@@ -13169,6 +13760,8 @@
     "Thriller Stories"
   ],
   "Jackie Brown": [
+    "1990s",
+    "20th Century",
     "Crime Stories",
     "Ends with OWN",
     "Movies",
@@ -13181,6 +13774,8 @@
     "Thriller Stories"
   ],
   "Kill Bill: Volume 1": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Crime Stories",
     "Ends with E 1",
@@ -13189,14 +13784,18 @@
     "Movies featuring David Carradine",
     "Movies featuring Lucy Liu",
     "Movies featuring Uma Thurman",
+    "Movies featuring Vivica A. Fox",
     "Starts with KIL"
   ],
   "Kill Bill: Volume 2": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Crime Stories",
     "Ends with E 2",
     "Movies",
     "Movies directed by Quentin Tarantino",
+    "Movies featuring Daryl Hannah",
     "Movies featuring David Carradine",
     "Movies featuring Michael Madsen",
     "Movies featuring Uma Thurman",
@@ -13204,6 +13803,8 @@
     "Starts with KIL"
   ],
   "Death Proof": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Ends with OOF",
     "Horror Stories",
@@ -13211,11 +13812,14 @@
     "Movies directed by Quentin Tarantino",
     "Movies featuring Kurt Russell",
     "Movies featuring Rosario Dawson",
+    "Movies featuring Rose McGowan",
     "Starts with DEA",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Inglourious Basterds": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Ends with RDS",
     "Movies",
@@ -13227,6 +13831,8 @@
     "War Stories"
   ],
   "Django Unchained": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Ends with NED",
     "Movies",
@@ -13240,6 +13846,8 @@
     "Western Films"
   ],
   "The Hateful Eight": [
+    "2010s",
+    "21st Century",
     "Crime Stories",
     "Ends with GHT",
     "Movies",
@@ -13252,6 +13860,8 @@
     "Western Films"
   ],
   "Once Upon a Time in Hollywood": [
+    "2010s",
+    "21st Century",
     "Comedy Stories",
     "Ends with OOD",
     "Movies",
@@ -13266,11 +13876,15 @@
     "Starts with ONC"
   ],
   "Alien": [
+    "1970s",
+    "20th Century",
     "Ends with IEN",
     "Horror Stories",
     "Movies",
     "Movies directed by Ridley Scott",
+    "Movies featuring John Hurt",
     "Movies featuring Sigourney Weaver",
+    "Movies featuring Tom Skerritt",
     "Sci-fi Stories",
     "Star Wars Universe",
     "Starts with ALI",
@@ -13278,11 +13892,15 @@
     "Thriller Stories"
   ],
   "Aliens": [
+    "1980s",
+    "20th Century",
     "Action Stories",
     "Ends with ENS",
     "Horror Stories",
     "Movies",
     "Movies directed by James Cameron",
+    "Movies featuring Carrie Henn",
+    "Movies featuring Michael Biehn",
     "Movies featuring Sigourney Weaver",
     "Sci-fi Stories",
     "Sequels",
@@ -13292,10 +13910,14 @@
     "Thriller Stories"
   ],
   "Alien 3": [
+    "1990s",
+    "20th Century",
     "Ends with N 3",
     "Horror Stories",
     "Movies",
     "Movies directed by David Fincher",
+    "Movies featuring Charles Dance",
+    "Movies featuring Charles S. Dutton",
     "Movies featuring Sigourney Weaver",
     "Sci-fi Stories",
     "Sequels",
@@ -13304,11 +13926,15 @@
     "Thriller Stories"
   ],
   "Alien: Resurrection": [
+    "1990s",
+    "20th Century",
     "Ends with ION",
     "Horror Stories",
     "Movies",
     "Movies directed by Jean-Pierre Jeunet",
+    "Movies featuring Ron Perlman",
     "Movies featuring Sigourney Weaver",
+    "Movies featuring Winona Ryder",
     "Sci-fi Stories",
     "Sequels",
     "Starts with ALI",
@@ -13316,170 +13942,241 @@
     "Thriller Stories"
   ],
   "Avatar": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with TAR",
     "Epic Stories",
     "Movies",
     "Movies directed by James Cameron",
+    "Movies featuring Sam Worthington",
     "Movies featuring Sigourney Weaver",
+    "Movies featuring Zoe Saldana",
     "Oscar Winners",
     "Sci-fi Stories",
     "Starts with AVA"
   ],
   "Avatar: The Way of Water": [
+    "2020s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with TER",
     "Movies",
     "Movies directed by James Cameron",
+    "Movies featuring Kate Winslet",
+    "Movies featuring Sam Worthington",
     "Movies featuring Sigourney Weaver",
+    "Movies featuring Zoe Saldana",
     "Sci-fi Stories",
     "Sequels",
     "Starts with AVA"
   ],
   "Ghostbusters": [
+    "1980s",
+    "20th Century",
     "Comedy Stories",
     "Ends with ERS",
     "Fantasy Stories",
     "Movies",
     "Movies directed by Ivan Reitman",
+    "Movies featuring Bill Murray",
+    "Movies featuring Dan Aykroyd",
     "Movies featuring Sigourney Weaver",
     "Starts with GHO"
   ],
   "Ghostbusters II": [
+    "1980s",
+    "20th Century",
     "Comedy Stories",
     "Ends with  II",
     "Fantasy Stories",
     "Movies",
     "Movies directed by Ivan Reitman",
+    "Movies featuring Bill Murray",
+    "Movies featuring Dan Aykroyd",
     "Movies featuring Sigourney Weaver",
     "Sequels",
     "Starts with GHO"
   ],
   "Working Girl": [
+    "1980s",
+    "20th Century",
     "Comedy Stories",
     "Ends with IRL",
     "Movies",
     "Movies directed by Mike Nichols",
+    "Movies featuring Harrison Ford",
+    "Movies featuring Melanie Griffith",
     "Movies featuring Sigourney Weaver",
     "Romance Stories",
     "Starts with WOR"
   ],
   "Copycat": [
+    "1990s",
+    "20th Century",
     "Crime Stories",
     "Ends with CAT",
     "Movies",
     "Movies directed by Jon Amiel",
+    "Movies featuring Dermot Mulroney",
+    "Movies featuring Holly Hunter",
     "Movies featuring Sigourney Weaver",
     "Starts with COP",
     "Thriller Films",
     "Thriller Stories"
   ],
   "The Ice Storm": [
+    "1990s",
+    "20th Century",
     "Ends with ORM",
     "Movies",
     "Movies directed by Ang Lee",
+    "Movies featuring Joan Allen",
+    "Movies featuring Kevin Kline",
     "Movies featuring Sigourney Weaver",
     "Starts with THE"
   ],
   "A Map of the World": [
+    "1990s",
+    "20th Century",
     "Ends with RLD",
     "Movies",
     "Movies directed by Scott Elliott",
+    "Movies featuring David Strathairn",
+    "Movies featuring Julianne Moore",
     "Movies featuring Sigourney Weaver",
     "Starts with A M"
   ],
   "Holes": [
+    "2000s",
+    "21st Century",
     "Adventure Stories",
     "Comedy Stories",
     "Ends with LES",
     "Family Stories",
     "Movies",
     "Movies directed by Andrew Davis",
+    "Movies featuring Jon Voight",
+    "Movies featuring Shia LaBeouf",
     "Movies featuring Sigourney Weaver",
     "Starts with HOL"
   ],
   "The Village": [
+    "2000s",
+    "21st Century",
     "Ends with AGE",
     "Horror Stories",
     "Movies",
     "Movies directed by M. Night Shyamalan",
+    "Movies featuring Adrien Brody",
+    "Movies featuring Bryce Dallas Howard",
+    "Movies featuring Joaquin Phoenix",
     "Movies featuring Sigourney Weaver",
     "Starts with THE",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Vantage Point": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Crime Stories",
     "Ends with INT",
     "Movies",
     "Movies directed by Pete Travis",
+    "Movies featuring Dennis Quaid",
+    "Movies featuring Forest Whitaker",
+    "Movies featuring Matthew Fox",
     "Movies featuring Sigourney Weaver",
     "Starts with VAN",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Avatar: Frontiers of Pandora": [
+    "2020s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with ORA",
     "Movies",
     "Movies directed by James Cameron",
+    "Movies featuring Sam Worthington",
     "Movies featuring Sigourney Weaver",
+    "Movies featuring Zoe Saldana",
     "Sci-fi Stories",
     "Starts with AVA"
   ],
   "Die Hard 2": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Ends with D 2",
     "Movies",
     "Movies directed by Renny Harlin",
+    "Movies featuring Bonnie Bedelia",
     "Movies featuring Bruce Willis",
+    "Movies featuring William Atherton",
     "Sequels",
     "Starts with DIE",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Die Hard with a Vengeance": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Ends with NCE",
     "Movies",
     "Movies directed by John McTiernan",
     "Movies featuring Bruce Willis",
+    "Movies featuring Jeremy Irons",
+    "Movies featuring Samuel L. Jackson",
     "Sequels",
     "Starts with DIE",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Live Free or Die Hard": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Ends with ARD",
     "Movies",
     "Movies directed by Len Wiseman",
     "Movies featuring Bruce Willis",
+    "Movies featuring Justin Long",
+    "Movies featuring Timothy Olyphant",
     "Sequels",
     "Starts with LIV",
     "Thriller Films",
     "Thriller Stories"
   ],
   "A Good Day to Die Hard": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Ends with ARD",
     "Movies",
     "Movies directed by John Moore",
     "Movies featuring Bruce Willis",
+    "Movies featuring Jai Courtney",
+    "Movies featuring Sebastian Koch",
     "Sequels",
     "Starts with A G",
     "Thriller Films",
     "Thriller Stories"
   ],
   "12 Monkeys": [
+    "1990s",
+    "20th Century",
     "Ends with EYS",
     "Movies",
     "Movies directed by Terry Gilliam",
+    "Movies featuring Brad Pitt",
     "Movies featuring Bruce Willis",
+    "Movies featuring Madeleine Stowe",
     "Sci-fi Stories",
     "Starts with 12 ",
     "Thriller Films",
@@ -13487,45 +14184,63 @@
     "Time Travel Stories"
   ],
   "The Fifth Element": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with ENT",
     "Movies",
     "Movies directed by Luc Besson",
     "Movies featuring Bruce Willis",
+    "Movies featuring Gary Oldman",
+    "Movies featuring Milla Jovovich",
     "Sci-fi Stories",
     "Starts with THE"
   ],
   "Armageddon": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Disaster Stories",
     "Ends with DON",
     "Movies",
     "Movies directed by Michael Bay",
+    "Movies featuring Ben Affleck",
     "Movies featuring Bruce Willis",
+    "Movies featuring Liv Tyler",
     "Sci-fi Stories",
     "Starts with ARM"
   ],
   "The Sixth Sense": [
+    "1990s",
+    "20th Century",
     "Ends with NSE",
     "Horror Stories",
     "Movies",
     "Movies directed by M. Night Shyamalan",
     "Movies featuring Bruce Willis",
+    "Movies featuring Haley Joel Osment",
+    "Movies featuring Toni Collette",
     "Starts with THE",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Unbreakable": [
+    "2000s",
+    "20th Century",
     "Ends with BLE",
     "Movies",
     "Movies directed by M. Night Shyamalan",
     "Movies featuring Bruce Willis",
+    "Movies featuring Robin Wright",
+    "Movies featuring Samuel L. Jackson",
     "Starts with UNB",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Sin City": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Crime Stories",
     "Ends with ITY",
@@ -13534,11 +14249,15 @@
     "Movies directed by Quentin Tarantino",
     "Movies directed by Robert Rodriguez",
     "Movies featuring Bruce Willis",
+    "Movies featuring Jessica Alba",
+    "Movies featuring Mickey Rourke",
     "Starts with SIN",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Sin City: A Dame to Kill For": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Crime Stories",
     "Ends with FOR",
@@ -13546,18 +14265,25 @@
     "Movies directed by Frank Miller",
     "Movies directed by Robert Rodriguez",
     "Movies featuring Bruce Willis",
+    "Movies featuring Eva Green",
+    "Movies featuring Jessica Alba",
+    "Movies featuring Mickey Rourke",
     "Sequels",
     "Starts with SIN",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Looper": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Crime Stories",
     "Ends with PER",
     "Movies",
     "Movies directed by Rian Johnson",
     "Movies featuring Bruce Willis",
+    "Movies featuring Emily Blunt",
+    "Movies featuring Joseph Gordon-Levitt",
     "Sci-fi Stories",
     "Starts with LOO",
     "Thriller Films",
@@ -13565,46 +14291,66 @@
     "Time Travel Stories"
   ],
   "Red 2": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Comedy Stories",
     "Ends with D 2",
     "Movies",
     "Movies directed by Dean Parisot",
     "Movies featuring Bruce Willis",
+    "Movies featuring Helen Mirren",
+    "Movies featuring John Malkovich",
     "Sequels",
     "Starts with RED"
   ],
   "Moonrise Kingdom": [
+    "2010s",
+    "21st Century",
     "Comedy Stories",
     "Ends with DOM",
     "Movies",
     "Movies directed by Wes Anderson",
     "Movies featuring Bruce Willis",
+    "Movies featuring Jared Gilman",
+    "Movies featuring Kara Hayward",
     "Romance Stories",
     "Starts with MOO"
   ],
   "Death Wish": [
+    "1970s",
+    "20th Century",
     "Action Stories",
     "Crime Stories",
     "Ends with ISH",
     "Movies",
     "Movies directed by Eli Roth",
+    "Movies directed by Michael Winner",
     "Movies featuring Bruce Willis",
+    "Movies featuring Charles Bronson",
+    "Movies featuring Hope Lange",
+    "Movies featuring Vincent Gardenia",
     "Starts with DEA",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Glass": [
+    "2010s",
+    "21st Century",
     "Ends with ASS",
     "Horror Stories",
     "Movies",
     "Movies directed by M. Night Shyamalan",
     "Movies featuring Bruce Willis",
+    "Movies featuring James McAvoy",
+    "Movies featuring Samuel L. Jackson",
     "Starts with GLA",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Groundhog Day": [
+    "1990s",
+    "20th Century",
     "Comedy Stories",
     "Ends with DAY",
     "Fantasy Stories",
@@ -13612,11 +14358,14 @@
     "Movies directed by Harold Ramis",
     "Movies featuring Andie MacDowell",
     "Movies featuring Bill Murray",
+    "Movies featuring Chris Elliott",
     "Romance Stories",
     "Starts with GRO",
     "Time Travel Stories"
   ],
   "Back to the Future": [
+    "1980s",
+    "20th Century",
     "Adventure Stories",
     "Comedy Stories",
     "Ends with URE",
@@ -13624,12 +14373,15 @@
     "Movies",
     "Movies directed by Robert Zemeckis",
     "Movies featuring Christopher Lloyd",
+    "Movies featuring Lea Thompson",
     "Movies featuring Michael J. Fox",
     "Sci-fi Stories",
     "Starts with BAC",
     "Time Travel Stories"
   ],
   "Back to the Future Part II": [
+    "1980s",
+    "20th Century",
     "Adventure Stories",
     "Comedy Stories",
     "Ends with  II",
@@ -13637,6 +14389,7 @@
     "Movies",
     "Movies directed by Robert Zemeckis",
     "Movies featuring Christopher Lloyd",
+    "Movies featuring Lea Thompson",
     "Movies featuring Michael J. Fox",
     "Sci-fi Stories",
     "Sequels",
@@ -13644,6 +14397,8 @@
     "Time Travel Stories"
   ],
   "Back to the Future Part III": [
+    "1990s",
+    "20th Century",
     "Adventure Stories",
     "Comedy Stories",
     "Ends with III",
@@ -13651,6 +14406,7 @@
     "Movies",
     "Movies directed by Robert Zemeckis",
     "Movies featuring Christopher Lloyd",
+    "Movies featuring Lea Thompson",
     "Movies featuring Michael J. Fox",
     "Sci-fi Stories",
     "Sequels",
@@ -13659,6 +14415,8 @@
     "Western Films"
   ],
   "The Terminator": [
+    "1980s",
+    "20th Century",
     "Action Stories",
     "Ends with TOR",
     "Horror Stories",
@@ -13666,6 +14424,7 @@
     "Movies directed by James Cameron",
     "Movies featuring Arnold Schwarzenegger",
     "Movies featuring Linda Hamilton",
+    "Movies featuring Michael Biehn",
     "Sci-fi Stories",
     "Starts with THE",
     "Thriller Films",
@@ -13673,11 +14432,14 @@
     "Time Travel Stories"
   ],
   "Terminator 2: Judgment Day": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Ends with DAY",
     "Movies",
     "Movies directed by James Cameron",
     "Movies featuring Arnold Schwarzenegger",
+    "Movies featuring Edward Furlong",
     "Movies featuring Linda Hamilton",
     "Sci-fi Stories",
     "Sequels",
@@ -13687,20 +14449,28 @@
     "Time Travel Stories"
   ],
   "Interstellar": [
+    "2010s",
+    "21st Century",
     "Adventure Stories",
     "Ends with LAR",
     "Movies",
     "Movies directed by Christopher Nolan",
     "Movies featuring Anne Hathaway",
+    "Movies featuring Jessica Chastain",
     "Movies featuring Matthew McConaughey",
     "Sci-fi Stories",
     "Starts with INT",
     "Time Travel Stories"
   ],
   "Primer": [
+    "2000s",
+    "21st Century",
     "Ends with MER",
     "Movies",
     "Movies directed by Shane Carruth",
+    "Movies featuring Casey Gooden",
+    "Movies featuring David Sullivan",
+    "Movies featuring Shane Carruth",
     "Sci-fi Stories",
     "Starts with PRI",
     "Thriller Films",
@@ -13708,11 +14478,15 @@
     "Time Travel Stories"
   ],
   "Source Code": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Ends with ODE",
     "Movies",
     "Movies directed by Duncan Jones",
     "Movies featuring Jake Gyllenhaal",
+    "Movies featuring Michelle Monaghan",
+    "Movies featuring Vera Farmiga",
     "Sci-fi Stories",
     "Starts with SOU",
     "Thriller Films",
@@ -13720,11 +14494,14 @@
     "Time Travel Stories"
   ],
   "Edge of Tomorrow": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with ROW",
     "Movies",
     "Movies directed by Doug Liman",
+    "Movies featuring Bill Paxton",
     "Movies featuring Emily Blunt",
     "Movies featuring Tom Cruise",
     "Sci-fi Stories",
@@ -13732,10 +14509,14 @@
     "Time Travel Stories"
   ],
   "Arrival": [
+    "2010s",
+    "21st Century",
     "Ends with VAL",
     "Movies",
     "Movies directed by Denis Villeneuve",
     "Movies featuring Amy Adams",
+    "Movies featuring Forest Whitaker",
+    "Movies featuring Jeremy Renner",
     "Sci-fi Stories",
     "Starts with ARR",
     "Thriller Films",
@@ -13743,10 +14524,13 @@
     "Time Travel Stories"
   ],
   "Tenet": [
+    "2020s",
+    "21st Century",
     "Action Stories",
     "Ends with NET",
     "Movies",
     "Movies directed by Christopher Nolan",
+    "Movies featuring Elizabeth Debicki",
     "Movies featuring John David Washington",
     "Movies featuring Robert Pattinson",
     "Sci-fi Stories",
@@ -13756,11 +14540,15 @@
     "Time Travel Stories"
   ],
   "Predestination": [
+    "2010s",
+    "21st Century",
     "Ends with ION",
     "Movies",
     "Movies directed by Michael Spierig",
     "Movies directed by Peter Spierig",
     "Movies featuring Ethan Hawke",
+    "Movies featuring Noah Taylor",
+    "Movies featuring Sarah Snook",
     "Sci-fi Stories",
     "Starts with PRE",
     "Thriller Films",
@@ -13768,10 +14556,13 @@
     "Time Travel Stories"
   ],
   "About Time": [
+    "2010s",
+    "21st Century",
     "Comedy Stories",
     "Ends with IME",
     "Movies",
     "Movies directed by Richard Curtis",
+    "Movies featuring Bill Nighy",
     "Movies featuring Domhnall Gleeson",
     "Movies featuring Rachel McAdams",
     "Romance Stories",
@@ -13779,42 +14570,57 @@
     "Time Travel Stories"
   ],
   "Safety Not Guaranteed": [
+    "2010s",
+    "21st Century",
     "Comedy Stories",
     "Ends with EED",
     "Movies",
     "Movies directed by Colin Trevorrow",
     "Movies featuring Aubrey Plaza",
+    "Movies featuring Jake Johnson",
+    "Movies featuring Mark Duplass",
     "Romance Stories",
     "Starts with SAF",
     "Time Travel Stories"
   ],
   "The Butterfly Effect": [
+    "2000s",
+    "21st Century",
     "Ends with ECT",
     "Horror Stories",
     "Movies",
     "Movies directed by Eric Bress",
     "Movies directed by J. Mackye Gruber",
+    "Movies featuring Amy Smart",
     "Movies featuring Ashton Kutcher",
+    "Movies featuring Melora Walters",
     "Starts with THE",
     "Thriller Films",
     "Thriller Stories",
     "Time Travel Stories"
   ],
   "Donnie Darko": [
+    "2000s",
+    "21st Century",
     "Ends with RKO",
     "Horror Stories",
     "Movies",
     "Movies directed by Richard Kelly",
     "Movies featuring Jake Gyllenhaal",
+    "Movies featuring Jena Malone",
+    "Movies featuring Mary McDonnell",
     "Starts with DON",
     "Thriller Films",
     "Thriller Stories",
     "Time Travel Stories"
   ],
   "Frequency": [
+    "2000s",
+    "21st Century",
     "Ends with NCY",
     "Movies",
     "Movies directed by Gregory Hoblit",
+    "Movies featuring Andre Braugher",
     "Movies featuring Dennis Quaid",
     "Movies featuring Jim Caviezel",
     "Starts with FRE",
@@ -13823,12 +14629,16 @@
     "Time Travel Stories"
   ],
   "Deja Vu": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Crime Stories",
     "Ends with  VU",
     "Movies",
     "Movies directed by Tony Scott",
     "Movies featuring Denzel Washington",
+    "Movies featuring Paula Patton",
+    "Movies featuring Val Kilmer",
     "Sci-fi Stories",
     "Starts with DEJ",
     "Thriller Films",
@@ -13836,9 +14646,12 @@
     "Time Travel Stories"
   ],
   "The Lake House": [
+    "2000s",
+    "21st Century",
     "Ends with USE",
     "Movies",
     "Movies directed by Alejandro Agresti",
+    "Movies featuring Christopher Plummer",
     "Movies featuring Keanu Reeves",
     "Movies featuring Sandra Bullock",
     "Romance Stories",
@@ -13846,20 +14659,26 @@
     "Time Travel Stories"
   ],
   "Kate & Leopold": [
+    "2000s",
+    "21st Century",
     "Comedy Stories",
     "Ends with OLD",
     "Movies",
     "Movies directed by James Mangold",
     "Movies featuring Hugh Jackman",
+    "Movies featuring Liev Schreiber",
     "Movies featuring Meg Ryan",
     "Romance Stories",
     "Starts with KAT",
     "Time Travel Stories"
   ],
   "Somewhere in Time": [
+    "1980s",
+    "20th Century",
     "Ends with IME",
     "Movies",
     "Movies directed by Jeannot Szwarc",
+    "Movies featuring Christopher Plummer",
     "Movies featuring Christopher Reeve",
     "Movies featuring Jane Seymour",
     "Romance Stories",
@@ -13867,37 +14686,54 @@
     "Time Travel Stories"
   ],
   "The Philadelphia Experiment": [
+    "1980s",
+    "20th Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with ENT",
     "Movies",
     "Movies directed by Stewart Raffill",
+    "Movies featuring Eric Christmas",
+    "Movies featuring Michael Paré",
+    "Movies featuring Nancy Allen",
     "Sci-fi Stories",
     "Starts with THE",
     "Time Travel Stories"
   ],
   "Flight of the Navigator": [
+    "1980s",
+    "20th Century",
     "Adventure Stories",
     "Ends with TOR",
     "Family Stories",
     "Movies",
     "Movies directed by Randal Kleiser",
+    "Movies featuring Joey Cramer",
+    "Movies featuring Paul Reubens",
+    "Movies featuring Veronica Cartwright",
     "Sci-fi Stories",
     "Starts with FLI",
     "Time Travel Stories"
   ],
   "Time Bandits": [
+    "1980s",
+    "20th Century",
     "Adventure Stories",
     "Comedy Stories",
     "Ends with ITS",
     "Fantasy Stories",
     "Movies",
     "Movies directed by Terry Gilliam",
+    "Movies featuring John Cleese",
+    "Movies featuring Sean Connery",
+    "Movies featuring Shelley Duvall",
     "Sci-fi Stories",
     "Starts with TIM",
     "Time Travel Stories"
   ],
   "Bill & Ted's Excellent Adventure": [
+    "1980s",
+    "20th Century",
     "Adventure Stories",
     "Comedy Stories",
     "Ends with URE",
@@ -13905,11 +14741,14 @@
     "Movies",
     "Movies directed by Stephen Herek",
     "Movies featuring Alex Winter",
+    "Movies featuring George Carlin",
     "Movies featuring Keanu Reeves",
     "Starts with BIL",
     "Time Travel Stories"
   ],
   "Bill & Ted's Bogus Journey": [
+    "1990s",
+    "20th Century",
     "Adventure Stories",
     "Comedy Stories",
     "Ends with NEY",
@@ -13918,11 +14757,14 @@
     "Movies directed by Pete Hewitt",
     "Movies featuring Alex Winter",
     "Movies featuring Keanu Reeves",
+    "Movies featuring William Sadler",
     "Sequels",
     "Starts with BIL",
     "Time Travel Stories"
   ],
   "The Time Traveler's Wife": [
+    "2000s",
+    "21st Century",
     "Books",
     "Ends with IFE",
     "Romance Stories",
@@ -13930,15 +14772,21 @@
     "Time Travel Stories"
   ],
   "Hot Tub Time Machine": [
+    "2010s",
+    "21st Century",
     "Comedy Stories",
     "Ends with INE",
     "Movies",
     "Movies directed by Steve Pink",
+    "Movies featuring Craig Robinson",
     "Movies featuring John Cusack",
+    "Movies featuring Rob Corddry",
     "Starts with HOT",
     "Time Travel Stories"
   ],
   "X-Men: Days of Future Past": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with AST",
@@ -13946,6 +14794,8 @@
     "Movies directed by Bryan Singer",
     "Movies featuring Hugh Jackman",
     "Movies featuring Ian McKellen",
+    "Movies featuring James McAvoy",
+    "Movies featuring Michael Fassbender",
     "Movies featuring Patrick Stewart",
     "Sci-fi Stories",
     "Sequels",
@@ -13953,6 +14803,8 @@
     "Time Travel Stories"
   ],
   "Avengers: Endgame": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with AME",
@@ -13960,6 +14812,7 @@
     "Movies directed by Anthony Russo",
     "Movies directed by Joe Russo",
     "Movies featuring Chris Evans",
+    "Movies featuring Mark Ruffalo",
     "Movies featuring Robert Downey Jr.",
     "Movies featuring Scarlett Johansson",
     "Sci-fi Stories",
@@ -13968,6 +14821,8 @@
     "Time Travel Stories"
   ],
   "A Wrinkle in Time": [
+    "2010s",
+    "21st Century",
     "Adventure Stories",
     "Ends with IME",
     "Family Stories",
@@ -13976,11 +14831,14 @@
     "Movies directed by Ava DuVernay",
     "Movies featuring Oprah Winfrey",
     "Movies featuring Reese Witherspoon",
+    "Movies featuring Storm Reid",
     "Sci-fi Stories",
     "Starts with A W",
     "Time Travel Stories"
   ],
   "The Time Machine": [
+    "1890s",
+    "19th Century",
     "Books",
     "Ends with INE",
     "Sci-fi Stories",
@@ -13988,6 +14846,8 @@
     "Time Travel Stories"
   ],
   "Slaughterhouse-Five": [
+    "1960s",
+    "20th Century",
     "Books",
     "Ends with IVE",
     "Sci-fi Stories",
@@ -13995,6 +14855,8 @@
     "Time Travel Stories"
   ],
   "The Hitchhiker's Guide to the Galaxy": [
+    "1970s",
+    "20th Century",
     "Books",
     "Comedy Stories",
     "Ends with AXY",
@@ -14003,12 +14865,16 @@
     "Time Travel Stories"
   ],
   "Kindred": [
+    "1970s",
+    "20th Century",
     "Books",
     "Ends with RED",
     "Starts with KIN",
     "Time Travel Stories"
   ],
   "Outlander": [
+    "1990s",
+    "20th Century",
     "Books",
     "Ends with DER",
     "Romance Stories",
@@ -14016,6 +14882,8 @@
     "Time Travel Stories"
   ],
   "11/22/63": [
+    "2010s",
+    "21st Century",
     "Books",
     "Ends with /63",
     "Starts with 11/",
@@ -14023,6 +14891,8 @@
     "Time Travel Stories"
   ],
   "The Man in the High Castle": [
+    "1960s",
+    "20th Century",
     "Books",
     "Ends with TLE",
     "Sci-fi Stories",
@@ -14030,6 +14900,8 @@
     "Time Travel Stories"
   ],
   "The First Fifteen Lives of Harry August": [
+    "2010s",
+    "21st Century",
     "Books",
     "Ends with UST",
     "Sci-fi Stories",
@@ -14037,6 +14909,8 @@
     "Time Travel Stories"
   ],
   "All You Need Is Kill": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Books",
     "Ends with ILL",
@@ -14045,6 +14919,8 @@
     "Time Travel Stories"
   ],
   "The End of Eternity": [
+    "1950s",
+    "20th Century",
     "Books",
     "Ends with ITY",
     "Sci-fi Stories",
@@ -14052,6 +14928,8 @@
     "Time Travel Stories"
   ],
   "The Door into Summer": [
+    "1950s",
+    "20th Century",
     "Books",
     "Ends with MER",
     "Sci-fi Stories",
@@ -14059,6 +14937,8 @@
     "Time Travel Stories"
   ],
   "The Anubis Gates": [
+    "1980s",
+    "20th Century",
     "Books",
     "Ends with TES",
     "Fantasy Stories",
@@ -14066,6 +14946,8 @@
     "Time Travel Stories"
   ],
   "To Say Nothing of the Dog": [
+    "1990s",
+    "20th Century",
     "Books",
     "Comedy Stories",
     "Ends with DOG",
@@ -14074,6 +14956,8 @@
     "Time Travel Stories"
   ],
   "The Time Ships": [
+    "1990s",
+    "20th Century",
     "Books",
     "Ends with IPS",
     "Sci-fi Stories",
@@ -14081,6 +14965,8 @@
     "Time Travel Stories"
   ],
   "The Time Traveler's Almanac": [
+    "2010s",
+    "21st Century",
     "Books",
     "Ends with NAC",
     "Sci-fi Stories",
@@ -14088,6 +14974,8 @@
     "Time Travel Stories"
   ],
   "The Map of Time": [
+    "2000s",
+    "21st Century",
     "Books",
     "Ends with IME",
     "Fantasy Stories",
@@ -14095,6 +14983,8 @@
     "Time Travel Stories"
   ],
   "The Map of the Sky": [
+    "2010s",
+    "21st Century",
     "Books",
     "Ends with SKY",
     "Fantasy Stories",
@@ -14102,6 +14992,8 @@
     "Time Travel Stories"
   ],
   "The Map of Chaos": [
+    "2010s",
+    "21st Century",
     "Books",
     "Ends with AOS",
     "Fantasy Stories",
@@ -14109,12 +15001,15 @@
     "Time Travel Stories"
   ],
   "The Muppet Christmas Carol": [
+    "1990s",
+    "20th Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with ROL",
     "Family Stories",
     "Fantasy Stories",
     "Movies",
+    "Movies directed by Brian Henson",
     "Movies featuring Kermit the Frog",
     "Movies featuring Michael Caine",
     "Movies featuring Miss Piggy",
@@ -14122,6 +15017,8 @@
     "Starts with THE"
   ],
   "It's a Wonderful Life": [
+    "1940s",
+    "20th Century",
     "Black and White Films",
     "Christmas Stories",
     "Ends with IFE",
@@ -14130,20 +15027,27 @@
     "Movies directed by Frank Capra",
     "Movies featuring Donna Reed",
     "Movies featuring James Stewart",
+    "Movies featuring Lionel Barrymore",
     "Starts with IT'"
   ],
   "Miracle on 34th Street": [
+    "1940s",
+    "20th Century",
     "Christmas Stories",
     "Ends with EET",
     "Family Stories",
     "Fantasy Stories",
     "Movies",
     "Movies directed by George Seaton",
+    "Movies featuring Edmund Gwenn",
+    "Movies featuring John Payne",
     "Movies featuring Maureen O'Hara",
     "Movies featuring Natalie Wood",
     "Starts with MIR"
   ],
   "Home Alone": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Christmas Stories",
     "Comedy Stories",
@@ -14157,6 +15061,8 @@
     "Starts with HOM"
   ],
   "Home Alone 2: Lost in New York": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Christmas Stories",
     "Comedy Stories",
@@ -14171,6 +15077,8 @@
     "Starts with HOM"
   ],
   "A Christmas Story": [
+    "1980s",
+    "20th Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with ORY",
@@ -14178,10 +15086,13 @@
     "Movies",
     "Movies directed by Bob Clark",
     "Movies featuring Darren McGavin",
+    "Movies featuring Melinda Dillon",
     "Movies featuring Peter Billingsley",
     "Starts with A C"
   ],
   "National Lampoon's Christmas Vacation": [
+    "1980s",
+    "20th Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with ION",
@@ -14206,12 +15117,15 @@
     "Starts with THE"
   ],
   "The Nightmare Before Christmas": [
+    "1990s",
+    "20th Century",
     "Christmas Stories",
     "Ends with MAS",
     "Family Stories",
     "Fantasy Stories",
     "Movies",
     "Movies directed by Henry Selick",
+    "Movies featuring Catherine O'Hara",
     "Movies featuring Chris Sarandon",
     "Movies featuring Danny Elfman",
     "Musical Films",
@@ -14219,6 +15133,8 @@
     "Stop-Motion Animated Films"
   ],
   "White Christmas": [
+    "1950s",
+    "20th Century",
     "Black and White Films",
     "Christmas Stories",
     "Ends with MAS",
@@ -14267,6 +15183,8 @@
     "Starts with THE"
   ],
   "The Santa Clause": [
+    "1990s",
+    "20th Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with USE",
@@ -14276,9 +15194,12 @@
     "Movies directed by John Pasquin",
     "Movies featuring Judge Reinhold",
     "Movies featuring Tim Allen",
+    "Movies featuring Wendy Crewson",
     "Starts with THE"
   ],
   "The Santa Clause 2": [
+    "2000s",
+    "21st Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with E 2",
@@ -14286,12 +15207,15 @@
     "Fantasy Stories",
     "Movies",
     "Movies directed by Michael Lembeck",
+    "Movies featuring David Krumholtz",
     "Movies featuring Elizabeth Mitchell",
     "Movies featuring Tim Allen",
     "Sequels",
     "Starts with THE"
   ],
   "The Santa Clause 3: The Escape Clause": [
+    "2000s",
+    "21st Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with USE",
@@ -14299,12 +15223,15 @@
     "Fantasy Stories",
     "Movies",
     "Movies directed by Michael Lembeck",
+    "Movies featuring Elizabeth Mitchell",
     "Movies featuring Martin Short",
     "Movies featuring Tim Allen",
     "Sequels",
     "Starts with THE"
   ],
   "Jingle All the Way": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Christmas Stories",
     "Comedy Stories",
@@ -14318,6 +15245,8 @@
     "Starts with JIN"
   ],
   "Scrooged": [
+    "1980s",
+    "20th Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with GED",
@@ -14325,10 +15254,13 @@
     "Movies",
     "Movies directed by Richard Donner",
     "Movies featuring Bill Murray",
+    "Movies featuring John Forsythe",
     "Movies featuring Karen Allen",
     "Starts with SCR"
   ],
   "Bad Santa": [
+    "2000s",
+    "21st Century",
     "Christmas Stories",
     "Comedy Stories",
     "Crime Stories",
@@ -14337,9 +15269,12 @@
     "Movies directed by Terry Zwigoff",
     "Movies featuring Billy Bob Thornton",
     "Movies featuring Lauren Graham",
+    "Movies featuring Tony Cox",
     "Starts with BAD"
   ],
   "The Holiday": [
+    "2000s",
+    "21st Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with DAY",
@@ -14353,12 +15288,15 @@
     "Starts with THE"
   ],
   "Four Christmases": [
+    "2000s",
+    "21st Century",
     "Christmas Stories",
     "Comedy Stories",
     "Ends with SES",
     "Movies",
     "Movies directed by Seth Gordon",
     "Movies featuring Reese Witherspoon",
+    "Movies featuring Robert Duvall",
     "Movies featuring Vince Vaughn",
     "Romance Stories",
     "Starts with FOU"
@@ -14401,24 +15339,30 @@
     "Starts with THE"
   ],
   "Mary Poppins": [
+    "1960s",
+    "20th Century",
     "Disney",
     "Ends with INS",
     "Family Stories",
     "Fantasy Stories",
     "Movies",
     "Movies directed by Robert Stevenson",
+    "Movies featuring David Tomlinson",
     "Movies featuring Dick Van Dyke",
     "Movies featuring Julie Andrews",
     "Musical Films",
     "Starts with MAR"
   ],
   "Mary Poppins Returns": [
+    "2010s",
+    "21st Century",
     "Disney",
     "Ends with RNS",
     "Family Stories",
     "Fantasy Stories",
     "Movies",
     "Movies directed by Rob Marshall",
+    "Movies featuring Ben Whishaw",
     "Movies featuring Emily Blunt",
     "Movies featuring Lin-Manuel Miranda",
     "Musical Films",
@@ -14426,39 +15370,50 @@
     "Starts with MAR"
   ],
   "The Sound of Music": [
+    "1960s",
+    "20th Century",
     "Ends with SIC",
     "Family Stories",
     "Movies",
     "Movies directed by Robert Wise",
     "Movies featuring Christopher Plummer",
+    "Movies featuring Eleanor Parker",
     "Movies featuring Julie Andrews",
     "Musical Films",
     "Starts with THE"
   ],
   "Grease": [
+    "1970s",
+    "20th Century",
     "Comedy Stories",
     "Ends with ASE",
     "Movies",
     "Movies directed by Randal Kleiser",
     "Movies featuring John Travolta",
     "Movies featuring Olivia Newton-John",
+    "Movies featuring Stockard Channing",
     "Musical Films",
     "Romance Stories",
     "Starts with GRE"
   ],
   "Singin' in the Rain": [
+    "1950s",
+    "20th Century",
     "Black and White Films",
     "Comedy Stories",
     "Ends with AIN",
     "Movies",
     "Movies directed by Gene Kelly",
     "Movies featuring Debbie Reynolds",
+    "Movies featuring Donald O'Connor",
     "Movies featuring Gene Kelly",
     "Musical Films",
     "Romance Stories",
     "Starts with SIN"
   ],
   "West Side Story": [
+    "1960s",
+    "20th Century",
     "Ends with ORY",
     "Movies",
     "Movies directed by Robert Wise",
@@ -14468,6 +15423,7 @@
     "Movies featuring David Alvarez",
     "Movies featuring Natalie Wood",
     "Movies featuring Rachel Zegler",
+    "Movies featuring Richard Beymer",
     "Movies featuring Rita Moreno",
     "Musical Films",
     "Remakes",
@@ -14475,17 +15431,22 @@
     "Starts with WES"
   ],
   "My Fair Lady": [
+    "1960s",
+    "20th Century",
     "Comedy Stories",
     "Ends with ADY",
     "Movies",
     "Movies directed by George Cukor",
     "Movies featuring Audrey Hepburn",
     "Movies featuring Rex Harrison",
+    "Movies featuring Stanley Holloway",
     "Musical Films",
     "Romance Stories",
     "Starts with MY "
   ],
   "The Wizard of Oz": [
+    "1930s",
+    "20th Century",
     "Adventure Stories",
     "Classic Films",
     "Ends with  OZ",
@@ -14493,6 +15454,7 @@
     "Fantasy Stories",
     "Movies",
     "Movies directed by Victor Fleming",
+    "Movies featuring Bert Lahr",
     "Movies featuring Judy Garland",
     "Movies featuring Ray Bolger",
     "Musical Films",
@@ -14500,59 +15462,78 @@
     "Things American"
   ],
   "Annie": [
+    "1980s",
+    "20th Century",
     "Comedy Stories",
     "Ends with NIE",
     "Family Stories",
     "Movies",
     "Movies directed by John Huston",
+    "Movies featuring Aileen Quinn",
     "Movies featuring Albert Finney",
     "Movies featuring Carol Burnett",
     "Musical Films",
     "Starts with ANN"
   ],
   "Oliver!": [
+    "1960s",
+    "20th Century",
     "Ends with ER!",
     "Family Stories",
     "Movies",
     "Movies directed by Carol Reed",
+    "Movies featuring Mark Lester",
     "Movies featuring Oliver Reed",
     "Movies featuring Ron Moody",
+    "Movies featuring Shani Wallis",
     "Musical Films",
     "Starts with OLI"
   ],
   "Fiddler on the Roof": [
+    "1970s",
+    "20th Century",
     "Ends with OOF",
     "Movies",
     "Movies directed by Norman Jewison",
+    "Movies featuring Leonard Frey",
     "Movies featuring Norma Crane",
     "Movies featuring Topol",
     "Musical Films",
     "Starts with FID"
   ],
   "Cabaret": [
+    "1970s",
+    "20th Century",
     "Ends with RET",
     "Movies",
     "Movies directed by Bob Fosse",
     "Movies featuring Joel Grey",
     "Movies featuring Liza Minnelli",
+    "Movies featuring Michael York",
     "Musical Films",
     "Starts with CAB"
   ],
   "Moulin Rouge!": [
+    "2000s",
+    "21st Century",
     "Ends with GE!",
     "Movies",
     "Movies directed by Baz Luhrmann",
     "Movies featuring Ewan McGregor",
+    "Movies featuring John Leguizamo",
     "Movies featuring Nicole Kidman",
     "Musical Films",
     "Romance Stories",
     "Starts with MOU"
   ],
   "La La Land": [
+    "2010s",
+    "21st Century",
     "Ends with AND",
     "Movies",
     "Movies directed by Damien Chazelle",
     "Movies featuring Emma Stone",
+    "Movies featuring John Legend",
     "Movies featuring Ryan Gosling",
     "Musical Films",
     "Oscar Winners",
@@ -14560,6 +15541,8 @@
     "Starts with LA "
   ],
   "The Greatest Showman": [
+    "2010s",
+    "21st Century",
     "Biographical Stories",
     "Ends with MAN",
     "Movies",
@@ -14573,36 +15556,49 @@
     "Starts with THE"
   ],
   "Rent": [
+    "2000s",
+    "21st Century",
     "Economics",
     "Ends with ENT",
     "Movies",
     "Movies directed by Chris Columbus",
     "Movies featuring Adam Pascal",
     "Movies featuring Anthony Rapp",
+    "Movies featuring Rosario Dawson",
     "Musical Films",
     "Starts with REN"
   ],
   "Hairspray": [
+    "2000s",
+    "21st Century",
     "Comedy Stories",
     "Ends with RAY",
     "Movies",
     "Movies directed by Adam Shankman",
     "Movies featuring John Travolta",
     "Movies featuring Michelle Pfeiffer",
+    "Movies featuring Nikki Blonsky",
     "Musical Films",
     "Romance Stories",
     "Starts with HAI"
   ],
   "Dreamgirls": [
+    "2000s",
+    "21st Century",
     "Ends with RLS",
     "Movies",
     "Movies directed by Bill Condon",
     "Movies featuring Beyoncé",
+    "Movies featuring Jamie Foxx",
     "Movies featuring Jennifer Hudson",
     "Musical Films",
     "Starts with DRE"
   ],
   "Les Misérables": [
+    "1860s",
+    "19th Century",
+    "2010s",
+    "21st Century",
     "Books",
     "Classic Literature",
     "Ends with LES",
@@ -14620,6 +15616,8 @@
     "Things French"
   ],
   "Into the Woods": [
+    "2010s",
+    "21st Century",
     "Adventure Stories",
     "Ends with ODS",
     "Fantasy Stories",
@@ -14633,6 +15631,8 @@
     "Starts with INT"
   ],
   "The Phantom of the Opera": [
+    "2000s",
+    "21st Century",
     "Ends with ERA",
     "Horror Stories",
     "Movies",
@@ -14645,6 +15645,8 @@
     "Starts with THE"
   ],
   "Evita": [
+    "1990s",
+    "20th Century",
     "Biographical Stories",
     "Ends with ITA",
     "Movies",
@@ -14657,6 +15659,8 @@
     "Starts with EVI"
   ],
   "Jesus Christ Superstar": [
+    "1970s",
+    "20th Century",
     "Ends with TAR",
     "Movies",
     "Movies directed by Norman Jewison",
@@ -14668,6 +15672,8 @@
     "Starts with JES"
   ],
   "Godspell": [
+    "1970s",
+    "20th Century",
     "Ends with ELL",
     "Movies",
     "Movies directed by David Greene",
@@ -14679,6 +15685,8 @@
     "Starts with GOD"
   ],
   "Rocky Horror Picture Show": [
+    "1970s",
+    "20th Century",
     "Comedy Stories",
     "Ends with HOW",
     "Horror Stories",
@@ -14692,6 +15700,8 @@
     "Starts with ROC"
   ],
   "Little Shop of Horrors": [
+    "1980s",
+    "20th Century",
     "Comedy Stories",
     "Ends with ORS",
     "Horror Stories",
@@ -14705,6 +15715,8 @@
     "Starts with LIT"
   ],
   "Hedwig and the Angry Inch": [
+    "2000s",
+    "21st Century",
     "Ends with NCH",
     "Movies",
     "Movies directed by John Cameron Mitchell",
@@ -14716,6 +15728,8 @@
     "Starts with HED"
   ],
   "Tick, Tick... Boom!": [
+    "2020s",
+    "21st Century",
     "Biographical Stories",
     "Ends with OM!",
     "Movies",
@@ -14728,6 +15742,8 @@
     "Starts with TIC"
   ],
   "In the Heights": [
+    "2020s",
+    "21st Century",
     "Ends with HTS",
     "Movies",
     "Movies directed by Jon M. Chu",
@@ -14739,6 +15755,8 @@
     "Starts with IN "
   ],
   "The Thing": [
+    "1980s",
+    "20th Century",
     "Ends with ING",
     "Horror Stories",
     "Movies",
@@ -14751,6 +15769,8 @@
     "Starts with THE"
   ],
   "Escape from New York": [
+    "1980s",
+    "20th Century",
     "Action Stories",
     "Ends with ORK",
     "Movies",
@@ -14763,6 +15783,8 @@
     "Starts with ESC"
   ],
   "Stargate": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with ATE",
@@ -14776,6 +15798,8 @@
     "Starts with STA"
   ],
   "Pirates of the Caribbean: The Curse of the Black Pearl": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Disney",
@@ -14791,6 +15815,8 @@
     "Starts with PIR"
   ],
   "Pirates of the Caribbean: Dead Man's Chest": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Disney",
@@ -14807,6 +15833,8 @@
     "Starts with PIR"
   ],
   "Pirates of the Caribbean: At World's End": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Disney",
@@ -14823,6 +15851,8 @@
     "Starts with PIR"
   ],
   "Pirates of the Caribbean: On Stranger Tides": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Disney",
@@ -14838,6 +15868,8 @@
     "Starts with PIR"
   ],
   "Pirates of the Caribbean: Dead Men Tell No Tales": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Disney",
@@ -14853,6 +15885,8 @@
     "Starts with PIR"
   ],
   "One Flew Over the Cuckoo's Nest": [
+    "1970s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with EST",
     "Movies",
@@ -14861,11 +15895,14 @@
     "Movies featuring Danny DeVito",
     "Movies featuring Jack Nicholson",
     "Movies featuring Louise Fletcher",
+    "Movies featuring Will Sampson",
     "Oscar Winners",
     "Starts with ONE",
     "Things American"
   ],
   "Rocky": [
+    "1970s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with CKY",
     "Movies",
@@ -14879,6 +15916,8 @@
     "Things American"
   ],
   "The Deer Hunter": [
+    "1970s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with TER",
     "Movies",
@@ -14891,6 +15930,8 @@
     "War Stories"
   ],
   "Kramer vs. Kramer": [
+    "1970s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with MER",
     "Movies",
@@ -14902,6 +15943,8 @@
     "Starts with KRA"
   ],
   "Ordinary People": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with PLE",
     "Movies",
@@ -14913,6 +15956,8 @@
     "Starts with ORD"
   ],
   "Chariots of Fire": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with IRE",
     "Movies",
@@ -14926,6 +15971,8 @@
     "Starts with CHA"
   ],
   "Gandhi": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Biographical Stories",
     "Ends with DHI",
@@ -14933,12 +15980,15 @@
     "Movies directed by Richard Attenborough",
     "Movies featuring Ben Kingsley",
     "Movies featuring Candice Bergen",
+    "Movies featuring Edward Fox",
     "Movies featuring Martin Sheen",
     "Oscar Winners",
     "Period Stories",
     "Starts with GAN"
   ],
   "Terms of Endearment": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Comedy Stories",
     "Ends with ENT",
@@ -14951,6 +16001,8 @@
     "Starts with TER"
   ],
   "Amadeus": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Biographical Stories",
     "Ends with EUS",
@@ -14964,6 +16016,8 @@
     "Starts with AMA"
   ],
   "Out of Africa": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with ICA",
     "Movies",
@@ -14977,6 +16031,8 @@
     "Starts with OUT"
   ],
   "Platoon": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with OON",
     "Movies",
@@ -14989,6 +16045,8 @@
     "War Stories"
   ],
   "The Last Emperor": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Biographical Stories",
     "Ends with ROR",
@@ -15002,6 +16060,8 @@
     "Starts with THE"
   ],
   "Rain Man": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with MAN",
     "Movies",
@@ -15013,6 +16073,8 @@
     "Starts with RAI"
   ],
   "Driving Miss Daisy": [
+    "1980s",
+    "20th Century",
     "Best Picture Winners",
     "Comedy Stories",
     "Ends with ISY",
@@ -15025,6 +16087,8 @@
     "Starts with DRI"
   ],
   "Dances with Wolves": [
+    "1990s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with VES",
     "Movies",
@@ -15037,6 +16101,8 @@
     "Western Films"
   ],
   "Unforgiven": [
+    "1990s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with VEN",
     "Movies",
@@ -15049,6 +16115,8 @@
     "Western Films"
   ],
   "Braveheart": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Best Picture Winners",
     "Ends with ART",
@@ -15063,6 +16131,8 @@
     "War Stories"
   ],
   "The English Patient": [
+    "1990s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with ENT",
     "Movies",
@@ -15079,11 +16149,14 @@
     "War Stories"
   ],
   "Shakespeare in Love": [
+    "1990s",
+    "20th Century",
     "Best Picture Winners",
     "Comedy Stories",
     "Ends with OVE",
     "Movies",
     "Movies directed by John Madden",
+    "Movies featuring Geoffrey Rush",
     "Movies featuring Gwyneth Paltrow",
     "Movies featuring Joseph Fiennes",
     "Movies featuring Judi Dench",
@@ -15094,6 +16167,8 @@
     "Things British"
   ],
   "American Beauty": [
+    "1990s",
+    "20th Century",
     "Best Picture Winners",
     "Ends with UTY",
     "Movies",
@@ -15106,6 +16181,8 @@
     "Things American"
   ],
   "Gladiator": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Best Picture Winners",
     "Ends with TOR",
@@ -15119,6 +16196,8 @@
     "Starts with GLA"
   ],
   "A Beautiful Mind": [
+    "2000s",
+    "21st Century",
     "Best Picture Winners",
     "Biographical Stories",
     "Ends with IND",
@@ -15131,6 +16210,8 @@
     "Starts with A B"
   ],
   "The Lord of the Rings: The Fellowship of the Ring": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with ING",
@@ -15144,6 +16225,8 @@
     "Starts with THE"
   ],
   "The Lord of the Rings: The Two Towers": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with ERS",
@@ -15158,6 +16241,8 @@
     "Starts with THE"
   ],
   "The Lord of the Rings: The Return of the King": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Best Picture Winners",
@@ -15174,6 +16259,8 @@
     "Starts with THE"
   ],
   "Million Dollar Baby": [
+    "2000s",
+    "21st Century",
     "Best Picture Winners",
     "Ends with ABY",
     "Movies",
@@ -15186,6 +16273,8 @@
     "Starts with MIL"
   ],
   "Crash": [
+    "2000s",
+    "21st Century",
     "Best Picture Winners",
     "Crime Stories",
     "Ends with ASH",
@@ -15198,6 +16287,8 @@
     "Starts with CRA"
   ],
   "The Departed": [
+    "2000s",
+    "21st Century",
     "Best Picture Winners",
     "Crime Stories",
     "Ends with TED",
@@ -15212,6 +16303,8 @@
     "Thriller Stories"
   ],
   "No Country for Old Men": [
+    "2000s",
+    "21st Century",
     "Best Picture Winners",
     "Crime Stories",
     "Ends with MEN",
@@ -15227,6 +16320,8 @@
     "Western Films"
   ],
   "Slumdog Millionaire": [
+    "2000s",
+    "21st Century",
     "Best Picture Winners",
     "Ends with IRE",
     "Movies",
@@ -15239,6 +16334,8 @@
     "Starts with SLU"
   ],
   "The Hurt Locker": [
+    "2000s",
+    "21st Century",
     "Action Stories",
     "Best Picture Winners",
     "Ends with KER",
@@ -15252,6 +16349,8 @@
     "War Stories"
   ],
   "The King's Speech": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Biographical Stories",
     "Ends with ECH",
@@ -15265,6 +16364,8 @@
     "Starts with THE"
   ],
   "The Artist": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Comedy Stories",
     "Ends with IST",
@@ -15279,6 +16380,8 @@
     "Starts with THE"
   ],
   "Argo": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Ends with RGO",
     "Movies",
@@ -15292,6 +16395,8 @@
     "Thriller Stories"
   ],
   "12 Years a Slave": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Biographical Stories",
     "Ends with AVE",
@@ -15305,6 +16410,8 @@
     "Starts with 12 "
   ],
   "Birdman": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Comedy Stories",
     "Ends with MAN",
@@ -15317,6 +16424,8 @@
     "Starts with BIR"
   ],
   "Spotlight": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Ends with GHT",
     "Movies",
@@ -15330,10 +16439,13 @@
     "Thriller Stories"
   ],
   "Moonlight": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Ends with GHT",
     "Movies",
     "Movies directed by Barry Jenkins",
+    "Movies featuring Ashton Sanders",
     "Movies featuring Mahershala Ali",
     "Movies featuring Naomie Harris",
     "Movies featuring Trevante Rhodes",
@@ -15341,6 +16453,8 @@
     "Starts with MOO"
   ],
   "The Shape of Water": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Ends with TER",
     "Fantasy Stories",
@@ -15355,6 +16469,8 @@
     "Starts with THE"
   ],
   "Green Book": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Biographical Stories",
     "Comedy Stories",
@@ -15369,6 +16485,8 @@
     "Starts with GRE"
   ],
   "Parasite": [
+    "2010s",
+    "21st Century",
     "Best Picture Winners",
     "Comedy Stories",
     "Ends with ITE",
@@ -15383,16 +16501,21 @@
     "Thriller Stories"
   ],
   "Nomadland": [
+    "2020s",
+    "21st Century",
     "Best Picture Winners",
     "Ends with AND",
     "Movies",
     "Movies directed by Chloé Zhao",
     "Movies featuring David Strathairn",
     "Movies featuring Frances McDormand",
+    "Movies featuring Linda May",
     "Oscar Winners",
     "Starts with NOM"
   ],
   "CODA": [
+    "2020s",
+    "21st Century",
     "Best Picture Winners",
     "Comedy Stories",
     "Ends with ODA",
@@ -15405,6 +16528,8 @@
     "Starts with COD"
   ],
   "Everything Everywhere All at Once": [
+    "2020s",
+    "21st Century",
     "Action Stories",
     "Best Picture Winners",
     "Comedy Stories",
@@ -15414,11 +16539,14 @@
     "Movies featuring Jamie Lee Curtis",
     "Movies featuring Ke Huy Quan",
     "Movies featuring Michelle Yeoh",
+    "Movies featuring Stephanie Hsu",
     "Oscar Winners",
     "Sci-fi Stories",
     "Starts with EVE"
   ],
   "Oppenheimer": [
+    "2020s",
+    "21st Century",
     "Best Picture Winners",
     "Biographical Stories",
     "Ends with MER",
@@ -15665,12 +16793,17 @@
     "Things Hawaiian"
   ],
   "Manhattan": [
+    "1970s",
+    "20th Century",
     "Comedy Stories",
     "Ends with TAN",
     "Islands",
     "Locations in North America",
     "Movies",
     "Movies directed by Woody Allen",
+    "Movies featuring Diane Keaton",
+    "Movies featuring Mariel Hemingway",
+    "Movies featuring Woody Allen",
     "Place Names",
     "Romance Stories",
     "Starts with MAN",
@@ -16282,6 +17415,8 @@
     "Warner Bros. Characters"
   ],
   "Shaggy": [
+    "20th Century",
+    "21st Century",
     "Ends with GGY",
     "Fictional Characters",
     "Fictional People",
@@ -16291,6 +17426,8 @@
     "Warner Bros. Characters"
   ],
   "Fred": [
+    "20th Century",
+    "21st Century",
     "Ends with RED",
     "Fictional Characters",
     "Fictional People",
@@ -16300,6 +17437,8 @@
     "Warner Bros. Characters"
   ],
   "Daphne": [
+    "20th Century",
+    "21st Century",
     "Ends with HNE",
     "Fictional Characters",
     "Fictional People",
@@ -16309,6 +17448,8 @@
     "Warner Bros. Characters"
   ],
   "Velma": [
+    "20th Century",
+    "21st Century",
     "Ends with LMA",
     "Fictional Characters",
     "Fictional People",
@@ -16370,6 +17511,7 @@
     "Things Sudanese"
   ],
   "Marco Polo": [
+    "13th Century",
     "Ends with OLO",
     "Explorers",
     "Historical Figures",
@@ -16381,6 +17523,7 @@
     "Things Italian"
   ],
   "Christopher Columbus": [
+    "15th Century",
     "Ends with BUS",
     "Explorers",
     "Historical Figures",
@@ -16393,6 +17536,7 @@
     "Things Spanish"
   ],
   "Socrates": [
+    "5th Century BC",
     "Ancient Figures",
     "Ends with TES",
     "Historical Figures",
@@ -16403,6 +17547,7 @@
     "Things Greek"
   ],
   "Vasco da Gama": [
+    "15th Century",
     "Ends with AMA",
     "Explorers",
     "Historical Figures",
@@ -16414,6 +17559,8 @@
     "Things Portuguese"
   ],
   "Ferdinand Magellan": [
+    "15th Century",
+    "16th Century",
     "Ends with LAN",
     "Explorers",
     "Historical Figures",
@@ -16426,6 +17573,8 @@
     "Things Spanish"
   ],
   "Zheng He": [
+    "14th Century",
+    "15th Century",
     "Ends with  HE",
     "Explorers",
     "Historical Figures",
@@ -16437,6 +17586,8 @@
     "Things Chinese"
   ],
   "Plato": [
+    "4th Century BC",
+    "5th Century BC",
     "Ancient Figures",
     "Ends with ATO",
     "Historical Figures",
@@ -16448,6 +17599,7 @@
     "Writers"
   ],
   "Aristotle": [
+    "4th Century BC",
     "Ancient Figures",
     "Ends with TLE",
     "Historical Figures",
@@ -16460,6 +17612,8 @@
     "Writers"
   ],
   "Michelangelo": [
+    "15th Century",
+    "16th Century",
     "Artists",
     "Ends with ELO",
     "Historical Figures",
@@ -16470,6 +17624,8 @@
     "Things Italian"
   ],
   "Copernicus": [
+    "15th Century",
+    "16th Century",
     "Astronomers",
     "Ends with CUS",
     "Historical Figures",
@@ -16481,6 +17637,8 @@
     "Things Polish"
   ],
   "Charlemagne": [
+    "8th Century",
+    "9th Century",
     "Ends with GNE",
     "Historical Figures",
     "Medieval Figures",
@@ -16492,6 +17650,7 @@
     "Things German"
   ],
   "William the Conqueror": [
+    "11th Century",
     "Ends with ROR",
     "Historical Figures",
     "Medieval Figures",
@@ -16504,6 +17663,7 @@
     "Things French"
   ],
   "Joan of Arc": [
+    "15th Century",
     "Ends with ARC",
     "Historical Figures",
     "Medieval Figures",
@@ -16515,6 +17675,8 @@
     "Things French"
   ],
   "Napoleon Bonaparte": [
+    "18th Century",
+    "19th Century",
     "Ends with RTE",
     "Historical Figures",
     "Military Leaders",
@@ -16526,6 +17688,7 @@
     "Things French"
   ],
   "George Washington": [
+    "18th Century",
     "Ends with TON",
     "Historical Figures",
     "Military Leaders",
@@ -16538,6 +17701,8 @@
     "US Presidents"
   ],
   "Marie Curie": [
+    "19th Century",
+    "20th Century",
     "Ends with RIE",
     "Historical Figures",
     "Modern Figures",
@@ -16551,6 +17716,7 @@
     "Things Polish"
   ],
   "Winston Churchill": [
+    "20th Century",
     "Ends with ILL",
     "Historical Figures",
     "Military Leaders",
@@ -16565,6 +17731,7 @@
     "Writers"
   ],
   "Franklin D. Roosevelt": [
+    "20th Century",
     "Ends with ELT",
     "Historical Figures",
     "Modern Figures",
@@ -16577,6 +17744,8 @@
     "WWII Leaders"
   ],
   "Thomas Edison": [
+    "19th Century",
+    "20th Century",
     "Ends with SON",
     "Historical Figures",
     "Inventors",
@@ -16588,6 +17757,7 @@
     "Things American"
   ],
   "Romance of the Three Kingdoms": [
+    "14th Century",
     "Books",
     "Classic Literature",
     "Ends with OMS",
@@ -16601,6 +17771,7 @@
     "War Stories"
   ],
   "Dream of the Red Chamber": [
+    "18th Century",
     "Books",
     "Classic Literature",
     "Ends with BER",
@@ -16610,6 +17781,7 @@
     "Things Chinese"
   ],
   "Journey to the West": [
+    "16th Century",
     "Adventure Stories",
     "Books",
     "Classic Literature",
@@ -16620,6 +17792,7 @@
     "Things Chinese"
   ],
   "Water Margin": [
+    "14th Century",
     "Adventure Stories",
     "Books",
     "Classic Literature",
@@ -16629,6 +17802,7 @@
     "Things Chinese"
   ],
   "The Tale of Genji": [
+    "11th Century",
     "Books",
     "Classic Literature",
     "Court Stories",
@@ -16638,6 +17812,7 @@
     "Things Japanese"
   ],
   "Don Quixote": [
+    "17th Century",
     "Adventure Stories",
     "Books",
     "Classic Literature",
@@ -16648,6 +17823,8 @@
     "Things Spanish"
   ],
   "One Hundred Years of Solitude": [
+    "1960s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with UDE",
@@ -16659,6 +17836,7 @@
     "Things Latin American"
   ],
   "The Divine Comedy": [
+    "14th Century",
     "Books",
     "Classic Literature",
     "Ends with EDY",
@@ -16669,6 +17847,8 @@
     "Things Italian"
   ],
   "War and Peace": [
+    "1860s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Ends with ACE",
@@ -16680,6 +17860,8 @@
     "War Stories"
   ],
   "Crime and Punishment": [
+    "1860s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Crime Stories",
@@ -16689,6 +17871,8 @@
     "Things Russian"
   ],
   "The Brothers Karamazov": [
+    "1880s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Ends with ZOV",
@@ -16698,6 +17882,8 @@
     "Things Russian"
   ],
   "The Count of Monte Cristo": [
+    "1840s",
+    "19th Century",
     "Adventure Stories",
     "Books",
     "Classic Literature",
@@ -16707,6 +17893,7 @@
     "Things French"
   ],
   "The Tale of the Heike": [
+    "13th Century",
     "Books",
     "Classic Literature",
     "Ends with IKE",
@@ -16718,6 +17905,7 @@
     "War Stories"
   ],
   "The Mahabharata": [
+    "4th Century BC",
     "Books",
     "Classic Literature",
     "Ends with ATA",
@@ -16730,6 +17918,7 @@
     "War Stories"
   ],
   "The Ramayana": [
+    "5th Century BC",
     "Adventure Stories",
     "Books",
     "Classic Literature",
@@ -19819,89 +21008,142 @@
     "Things American"
   ],
   "The Killer": [
+    "2020s",
+    "21st Century",
     "Action Stories",
     "Ends with LER",
     "Hong Kong Cinema",
     "Movies",
+    "Movies directed by David Fincher",
     "Movies directed by John Woo",
+    "Movies featuring Arliss Howard",
+    "Movies featuring Michael Fassbender",
+    "Movies featuring Tilda Swinton",
     "Starts with THE",
     "Things Chinese"
   ],
   "Hard Boiled": [
+    "1990s",
+    "20th Century",
     "Action Stories",
     "Ends with LED",
     "Hong Kong Cinema",
     "Movies",
     "Movies directed by John Woo",
+    "Movies featuring Chow Yun-fat",
+    "Movies featuring Teresa Mo",
+    "Movies featuring Tony Leung",
     "Starts with HAR",
     "Things Chinese"
   ],
   "A Better Tomorrow": [
+    "1980s",
+    "20th Century",
     "Action Stories",
     "Ends with ROW",
     "Hong Kong Cinema",
     "Movies",
     "Movies directed by John Woo",
+    "Movies featuring Chow Yun-fat",
+    "Movies featuring Leslie Cheung",
+    "Movies featuring Ti Lung",
     "Starts with A B",
     "Things Chinese"
   ],
   "Crouching Tiger, Hidden Dragon": [
+    "2000s",
+    "21st Century",
     "Ends with GON",
     "Martial Arts Stories",
     "Movies",
     "Movies directed by Ang Lee",
+    "Movies featuring Chow Yun-fat",
+    "Movies featuring Michelle Yeoh",
+    "Movies featuring Zhang Ziyi",
     "Oscar Winners",
     "Starts with CRO",
     "Things Chinese"
   ],
   "Hero": [
+    "2000s",
+    "21st Century",
     "Ends with ERO",
     "Martial Arts Stories",
     "Movies",
     "Movies directed by Zhang Yimou",
+    "Movies featuring Jet Li",
+    "Movies featuring Maggie Cheung",
+    "Movies featuring Tony Leung",
     "Starts with HER",
     "Things Chinese"
   ],
   "House of Flying Daggers": [
+    "2000s",
+    "21st Century",
     "Ends with ERS",
     "Martial Arts Stories",
     "Movies",
     "Movies directed by Zhang Yimou",
+    "Movies featuring Andy Lau",
+    "Movies featuring Takeshi Kaneshiro",
+    "Movies featuring Zhang Ziyi",
     "Starts with HOU",
     "Things Chinese"
   ],
   "Farewell My Concubine": [
+    "1990s",
+    "20th Century",
     "Ends with INE",
     "Movies",
     "Movies directed by Chen Kaige",
+    "Movies featuring Gong Li",
+    "Movies featuring Leslie Cheung",
+    "Movies featuring Zhang Fengyi",
     "Palme d'Or Winners",
     "Starts with FAR",
     "Things Chinese"
   ],
   "In the Mood for Love": [
+    "2000s",
+    "21st Century",
     "Ends with OVE",
     "Movies",
     "Movies directed by Wong Kar-wai",
+    "Movies featuring Maggie Cheung",
+    "Movies featuring Rebecca Pan",
+    "Movies featuring Tony Leung",
     "Romance Stories",
     "Starts with IN ",
     "Things Chinese"
   ],
   "Chungking Express": [
+    "1990s",
+    "20th Century",
     "Ends with ESS",
     "Movies",
     "Movies directed by Wong Kar-wai",
+    "Movies featuring Brigitte Lin",
+    "Movies featuring Faye Wong",
+    "Movies featuring Tony Leung",
     "Romance Stories",
     "Starts with CHU",
     "Things Chinese"
   ],
   "Raise the Red Lantern": [
+    "1990s",
+    "20th Century",
     "Ends with ERN",
     "Movies",
     "Movies directed by Zhang Yimou",
+    "Movies featuring Cao Cuifen",
+    "Movies featuring Gong Li",
+    "Movies featuring He Saifei",
     "Starts with RAI",
     "Things Chinese"
   ],
   "Miyazaki": [
+    "20th Century",
+    "21st Century",
     "Anime Directors",
     "Ends with AKI",
     "Film Directors",
@@ -19910,6 +21152,7 @@
     "Things Japanese"
   ],
   "Kurosawa": [
+    "20th Century",
     "Akira Kurosawa",
     "Ends with AWA",
     "Film Directors",
@@ -19918,6 +21161,7 @@
     "Things Japanese"
   ],
   "Ozu": [
+    "20th Century",
     "Ends with OZU",
     "Film Directors",
     "People",
@@ -19926,6 +21170,7 @@
     "Yasujiro Ozu"
   ],
   "Mifune": [
+    "20th Century",
     "Actors",
     "Ends with UNE",
     "People",
@@ -19934,6 +21179,8 @@
     "Toshiro Mifune"
   ],
   "Matsui": [
+    "20th Century",
+    "21st Century",
     "Baseball Players",
     "Ends with SUI",
     "Hideki Matsui",
@@ -19942,6 +21189,8 @@
     "Things Japanese"
   ],
   "Ichiro": [
+    "20th Century",
+    "21st Century",
     "Baseball Players",
     "Ends with IRO",
     "Ichiro Suzuki",
@@ -19950,6 +21199,7 @@
     "Things Japanese"
   ],
   "Ohtani": [
+    "21st Century",
     "Baseball Players",
     "Ends with ANI",
     "People",
@@ -19958,6 +21208,8 @@
     "Things Japanese"
   ],
   "Tanaka": [
+    "20th Century",
+    "21st Century",
     "Baseball Players",
     "Ends with AKA",
     "Masahiro Tanaka",
@@ -19966,6 +21218,8 @@
     "Things Japanese"
   ],
   "Nakamura": [
+    "20th Century",
+    "21st Century",
     "Chess Players",
     "Ends with URA",
     "Hikaru Nakamura",
@@ -19974,6 +21228,8 @@
     "Things Japanese"
   ],
   "Fujita": [
+    "20th Century",
+    "21st Century",
     "Ends with ITA",
     "Katsuhiko Fujita",
     "People",
@@ -19982,121 +21238,190 @@
     "Things Japanese"
   ],
   "Citizen Kane": [
+    "1940s",
+    "20th Century",
     "Classic Films",
     "Ends with ANE",
     "Movies",
     "Movies directed by Orson Welles",
+    "Movies featuring Dorothy Comingore",
+    "Movies featuring Joseph Cotten",
+    "Movies featuring Orson Welles",
     "Orson Welles",
     "Starts with CIT",
     "Things American"
   ],
   "Jaws": [
+    "1970s",
+    "20th Century",
     "Ends with AWS",
     "Horror Stories",
     "Movies",
     "Movies directed by Steven Spielberg",
+    "Movies featuring Richard Dreyfuss",
+    "Movies featuring Robert Shaw",
+    "Movies featuring Roy Scheider",
     "Starts with JAW",
     "Things American",
     "Thriller Films",
     "Thriller Stories"
   ],
   "E.T.": [
+    "1980s",
+    "20th Century",
     "Ends with .T.",
     "Family Stories",
     "Movies",
     "Movies directed by Steven Spielberg",
+    "Movies featuring Dee Wallace",
+    "Movies featuring Drew Barrymore",
+    "Movies featuring Henry Thomas",
     "Sci-fi Stories",
     "Starts with E.T",
     "Things American"
   ],
   "Lawrence of Arabia": [
+    "1960s",
+    "20th Century",
     "Biographical Stories",
     "Ends with BIA",
     "Movies",
     "Movies directed by David Lean",
+    "Movies featuring Alec Guinness",
+    "Movies featuring Omar Sharif",
+    "Movies featuring Peter O'Toole",
     "Starts with LAW",
     "Things British",
     "War Films",
     "War Stories"
   ],
   "The Bridge on the River Kwai": [
+    "1950s",
+    "20th Century",
     "Ends with WAI",
     "Movies",
     "Movies directed by David Lean",
+    "Movies featuring Alec Guinness",
+    "Movies featuring Jack Hawkins",
+    "Movies featuring William Holden",
     "Starts with THE",
     "Things British",
     "War Films",
     "War Stories"
   ],
   "Dr. Strangelove": [
+    "1960s",
+    "20th Century",
     "Comedy Stories",
     "Ends with OVE",
     "Movies",
     "Movies directed by Stanley Kubrick",
+    "Movies featuring George C. Scott",
+    "Movies featuring Peter Sellers",
+    "Movies featuring Sterling Hayden",
     "Starts with DR.",
     "Things British",
     "War Films",
     "War Stories"
   ],
   "A Clockwork Orange": [
+    "1970s",
+    "20th Century",
     "Ends with NGE",
     "Movies",
     "Movies directed by Stanley Kubrick",
+    "Movies featuring Malcolm McDowell",
+    "Movies featuring Michael Bates",
+    "Movies featuring Patrick Magee",
     "Sci-fi Stories",
     "Starts with A C",
     "Things British"
   ],
   "2001: A Space Odyssey": [
+    "1960s",
+    "20th Century",
     "Ends with SEY",
     "Movies",
     "Movies directed by Stanley Kubrick",
+    "Movies featuring Gary Lockwood",
+    "Movies featuring Keir Dullea",
+    "Movies featuring William Sylvester",
     "Sci-fi Stories",
     "Starts with 200",
     "Things British"
   ],
   "The Third Man": [
+    "1940s",
+    "20th Century",
     "Crime Stories",
     "Ends with MAN",
     "Film Noir",
     "Movies",
     "Movies directed by Carol Reed",
+    "Movies featuring Alida Valli",
+    "Movies featuring Joseph Cotten",
+    "Movies featuring Orson Welles",
     "Starts with THE",
     "Things British"
   ],
   "Brief Encounter": [
+    "1940s",
+    "20th Century",
     "Ends with TER",
     "Movies",
     "Movies directed by David Lean",
+    "Movies featuring Celia Johnson",
+    "Movies featuring Stanley Holloway",
+    "Movies featuring Trevor Howard",
     "Romance Stories",
     "Starts with BRI",
     "Things British"
   ],
   "The Red Shoes": [
+    "1940s",
+    "20th Century",
     "Dance Films",
     "Ends with OES",
     "Movies",
     "Movies directed by Michael Powell",
+    "Movies featuring Anton Walbrook",
+    "Movies featuring Marius Goring",
+    "Movies featuring Moira Shearer",
     "Musical Films",
     "Starts with THE",
     "Things British"
   ],
   "The Ladykillers": [
+    "1950s",
+    "20th Century",
     "Comedy Stories",
     "Ealing Comedies",
     "Ends with ERS",
     "Movies",
+    "Movies directed by Alexander Mackendrick",
+    "Movies featuring Alec Guinness",
+    "Movies featuring Katie Johnson",
+    "Movies featuring Peter Sellers",
     "Starts with THE",
     "Things British"
   ],
   "Kind Hearts and Coronets": [
+    "1940s",
+    "20th Century",
     "Comedy Stories",
     "Ealing Comedies",
     "Ends with ETS",
     "Movies",
+    "Movies directed by Robert Hamer",
+    "Movies featuring Dennis Price",
+    "Movies featuring Joan Greenwood",
+    "Movies featuring Valerie Hobson",
     "Starts with KIN",
     "Things British"
   ],
   "The Scarlet Letter": [
+    "1850s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Ends with TER",
@@ -20105,6 +21430,8 @@
     "Things American"
   ],
   "The Adventures of Tom Sawyer": [
+    "1870s",
+    "19th Century",
     "Books",
     "Classic Literature",
     "Ends with YER",
@@ -20113,6 +21440,8 @@
     "Things American"
   ],
   "The Call of the Wild": [
+    "1900s",
+    "20th Century",
     "Adventure Stories",
     "Books",
     "Ends with ILD",
@@ -20121,6 +21450,8 @@
     "Things American"
   ],
   "The Red Badge of Courage": [
+    "1890s",
+    "19th Century",
     "Books",
     "Ends with AGE",
     "Starts with THE",
@@ -20129,6 +21460,8 @@
     "War Stories"
   ],
   "The Age of Innocence": [
+    "1920s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Edith Wharton",
@@ -20137,106 +21470,170 @@
     "Things American"
   ],
   "The Shawshank Redemption": [
+    "1990s",
+    "20th Century",
     "Ends with ION",
     "Movies",
     "Movies directed by Frank Darabont",
+    "Movies featuring Bob Gunton",
+    "Movies featuring Morgan Freeman",
+    "Movies featuring Tim Robbins",
     "Prison Stories",
     "Starts with THE",
     "Things American"
   ],
   "Goodfellas": [
+    "1990s",
+    "20th Century",
     "Crime Stories",
     "Ends with LAS",
     "Gangster Films",
     "Movies",
     "Movies directed by Martin Scorsese",
+    "Movies featuring Joe Pesci",
+    "Movies featuring Ray Liotta",
+    "Movies featuring Robert De Niro",
     "Starts with GOO",
     "Things American"
   ],
   "Fight Club": [
+    "1990s",
+    "20th Century",
     "Ends with LUB",
     "Movies",
     "Movies directed by David Fincher",
+    "Movies featuring Brad Pitt",
+    "Movies featuring Edward Norton",
+    "Movies featuring Helena Bonham Carter",
     "Starts with FIG",
     "Things American"
   ],
   "The Green Mile": [
+    "1990s",
+    "20th Century",
     "Ends with ILE",
     "Movies",
     "Movies directed by Frank Darabont",
+    "Movies featuring David Morse",
+    "Movies featuring Michael Clarke Duncan",
+    "Movies featuring Tom Hanks",
     "Starts with THE",
     "Things American"
   ],
   "The Usual Suspects": [
+    "1990s",
+    "20th Century",
     "Crime Stories",
     "Ends with CTS",
     "Movies",
     "Movies directed by Bryan Singer",
+    "Movies featuring Chazz Palminteri",
+    "Movies featuring Gabriel Byrne",
+    "Movies featuring Kevin Spacey",
     "Starts with THE",
     "Things American",
     "Thriller Films",
     "Thriller Stories"
   ],
   "The Full Monty": [
+    "1990s",
+    "20th Century",
     "Comedy Stories",
     "Dance Films",
     "Ends with NTY",
     "Movies",
+    "Movies directed by Peter Cattaneo",
+    "Movies featuring Mark Addy",
+    "Movies featuring Robert Carlyle",
+    "Movies featuring William Snape",
     "Musical Films",
     "Starts with THE",
     "Things British"
   ],
   "Trainspotting": [
+    "1990s",
+    "20th Century",
     "Drug Stories",
     "Ends with ING",
     "Movies",
     "Movies directed by Danny Boyle",
+    "Movies featuring Ewan McGregor",
+    "Movies featuring Ewen Bremner",
+    "Movies featuring Jonny Lee Miller",
     "Starts with TRA",
     "Things British"
   ],
   "Four Weddings and a Funeral": [
+    "1990s",
+    "20th Century",
     "Comedy Stories",
     "Ends with RAL",
     "Movies",
+    "Movies directed by Mike Newell",
     "Movies directed by Richard Curtis",
+    "Movies featuring Andie MacDowell",
+    "Movies featuring Hugh Grant",
+    "Movies featuring Kristin Scott Thomas",
     "Romance Stories",
     "Starts with FOU",
     "Things British"
   ],
   "The Remains of the Day": [
+    "1990s",
+    "20th Century",
     "Ends with DAY",
     "Movies",
     "Movies directed by James Ivory",
+    "Movies featuring Anthony Hopkins",
+    "Movies featuring Emma Thompson",
+    "Movies featuring James Fox",
     "Period Stories",
     "Starts with THE",
     "Things British"
   ],
   "Howard's End": [
+    "1990s",
+    "20th Century",
     "Ends with END",
     "Movies",
     "Movies directed by James Ivory",
+    "Movies featuring Anthony Hopkins",
+    "Movies featuring Emma Thompson",
+    "Movies featuring Vanessa Redgrave",
     "Period Stories",
     "Starts with HOW",
     "Things British"
   ],
   "The Madness of King George": [
+    "1990s",
+    "20th Century",
     "Ends with RGE",
     "Movies",
     "Movies directed by Nicholas Hytner",
+    "Movies featuring Helen Mirren",
+    "Movies featuring Ian Holm",
+    "Movies featuring Nigel Hawthorne",
     "Period Stories",
     "Starts with THE",
     "Things British"
   ],
   "The Crying Game": [
+    "1990s",
+    "20th Century",
     "Ends with AME",
     "Movies",
     "Movies directed by Neil Jordan",
+    "Movies featuring Forest Whitaker",
+    "Movies featuring Jaye Davidson",
+    "Movies featuring Stephen Rea",
     "Starts with THE",
     "Things British",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Norwegian Wood": [
+    "1980s",
+    "20th Century",
     "Books",
     "Contemporary Literature",
     "Ends with OOD",
@@ -20245,6 +21642,8 @@
     "Things Japanese"
   ],
   "The Wind-Up Bird Chronicle": [
+    "1990s",
+    "20th Century",
     "Books",
     "Contemporary Literature",
     "Ends with CLE",
@@ -20253,6 +21652,8 @@
     "Things Japanese"
   ],
   "Kafka on the Shore": [
+    "2000s",
+    "21st Century",
     "Books",
     "Contemporary Literature",
     "Ends with ORE",
@@ -20261,6 +21662,8 @@
     "Things Japanese"
   ],
   "1Q84": [
+    "2000s",
+    "21st Century",
     "Books",
     "Contemporary Literature",
     "Ends with Q84",
@@ -20269,6 +21672,8 @@
     "Things Japanese"
   ],
   "Colorless Tsukuru Tazaki": [
+    "2010s",
+    "21st Century",
     "Books",
     "Contemporary Literature",
     "Ends with AKI",
@@ -20277,6 +21682,8 @@
     "Things Japanese"
   ],
   "The Three-Body Problem": [
+    "2000s",
+    "21st Century",
     "Books",
     "Ends with LEM",
     "Liu Cixin",
@@ -20285,6 +21692,8 @@
     "Things Chinese"
   ],
   "The Dark Forest": [
+    "2000s",
+    "21st Century",
     "Books",
     "Ends with EST",
     "Liu Cixin",
@@ -20293,6 +21702,8 @@
     "Things Chinese"
   ],
   "Death's End": [
+    "2010s",
+    "21st Century",
     "Books",
     "Ends with END",
     "Liu Cixin",
@@ -20301,6 +21712,8 @@
     "Things Chinese"
   ],
   "The Wandering Earth": [
+    "2000s",
+    "21st Century",
     "Books",
     "Ends with RTH",
     "Liu Cixin",
@@ -20309,6 +21722,8 @@
     "Things Chinese"
   ],
   "Ball Lightning": [
+    "2000s",
+    "21st Century",
     "Books",
     "Ends with ING",
     "Liu Cixin",
@@ -20317,76 +21732,122 @@
     "Things Chinese"
   ],
   "The Grandmaster": [
+    "2010s",
+    "21st Century",
     "Ends with TER",
     "Martial Arts Stories",
     "Movies",
     "Movies directed by Wong Kar-wai",
+    "Movies featuring Chang Chen",
+    "Movies featuring Tony Leung",
+    "Movies featuring Zhang Ziyi",
     "Starts with THE",
     "Things Chinese"
   ],
   "Happy Together": [
+    "1990s",
+    "20th Century",
     "Ends with HER",
     "Movies",
     "Movies directed by Wong Kar-wai",
+    "Movies featuring Chang Chen",
+    "Movies featuring Leslie Cheung",
+    "Movies featuring Tony Leung",
     "Romance Stories",
     "Starts with HAP",
     "Things Chinese"
   ],
   "Fallen Angels": [
+    "1990s",
+    "20th Century",
     "Crime Stories",
     "Ends with ELS",
     "Movies",
     "Movies directed by Wong Kar-wai",
+    "Movies featuring Leon Lai",
+    "Movies featuring Michelle Reis",
+    "Movies featuring Takeshi Kaneshiro",
     "Starts with FAL",
     "Things Chinese"
   ],
   "Days of Being Wild": [
+    "1990s",
+    "20th Century",
     "Ends with ILD",
     "Movies",
     "Movies directed by Wong Kar-wai",
+    "Movies featuring Andy Lau",
+    "Movies featuring Leslie Cheung",
+    "Movies featuring Maggie Cheung",
     "Starts with DAY",
     "Things Chinese"
   ],
   "Ashes of Time": [
+    "1990s",
+    "20th Century",
     "Ends with IME",
     "Martial Arts Stories",
     "Movies",
     "Movies directed by Wong Kar-wai",
+    "Movies featuring Brigitte Lin",
+    "Movies featuring Leslie Cheung",
+    "Movies featuring Tony Leung",
     "Starts with ASH",
     "Things Chinese"
   ],
   "The Hand": [
+    "1980s",
+    "20th Century",
     "Ends with AND",
     "Martial Arts Stories",
     "Movies",
+    "Movies directed by Oliver Stone",
     "Movies directed by Wong Kar-wai",
+    "Movies featuring Andrea Marcovicci",
+    "Movies featuring Annie McEnroe",
+    "Movies featuring Michael Caine",
     "Starts with THE",
     "Things Chinese"
   ],
   "My Blueberry Nights": [
+    "2000s",
+    "21st Century",
     "Ends with HTS",
     "Movies",
     "Movies directed by Wong Kar-wai",
+    "Movies featuring Jude Law",
+    "Movies featuring Natalie Portman",
+    "Movies featuring Norah Jones",
     "Romance Stories",
     "Starts with MY ",
     "Things Chinese"
   ],
   "The Revenant": [
+    "2010s",
+    "21st Century",
     "Ends with ANT",
     "Movies",
     "Movies directed by Alejandro G. Iñárritu",
+    "Movies featuring Domhnall Gleeson",
     "Movies featuring Leonardo DiCaprio",
     "Movies featuring Tom Hardy",
     "Starts with THE"
   ],
   "The Grand Budapest Hotel": [
+    "2010s",
+    "21st Century",
     "Comedy Stories",
     "Ends with TEL",
     "Movies",
     "Movies directed by Wes Anderson",
+    "Movies featuring Ralph Fiennes",
+    "Movies featuring Saoirse Ronan",
+    "Movies featuring Tony Revolori",
     "Starts with THE"
   ],
   "The Sound and the Fury": [
+    "1920s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with URY",
@@ -20395,6 +21856,8 @@
     "William Faulkner"
   ],
   "As I Lay Dying": [
+    "1930s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with ING",
@@ -20403,6 +21866,8 @@
     "William Faulkner"
   ],
   "Light in August": [
+    "1930s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with UST",
@@ -20411,6 +21876,8 @@
     "William Faulkner"
   ],
   "Absalom, Absalom!": [
+    "1930s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with OM!",
@@ -20419,6 +21886,8 @@
     "William Faulkner"
   ],
   "The Sun Also Rises": [
+    "1920s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with SES",
@@ -20427,6 +21896,8 @@
     "Things American"
   ],
   "A Farewell to Arms": [
+    "1920s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with RMS",
@@ -20435,6 +21906,8 @@
     "Things American"
   ],
   "For Whom the Bell Tolls": [
+    "1940s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with LLS",
@@ -20443,6 +21916,8 @@
     "Things American"
   ],
   "The Old Man and the Sea": [
+    "1950s",
+    "20th Century",
     "Books",
     "Classic Literature",
     "Ends with SEA",
@@ -20451,6 +21926,8 @@
     "Things American"
   ],
   "The Bell Jar": [
+    "1960s",
+    "20th Century",
     "Books",
     "Contemporary Literature",
     "Ends with JAR",
@@ -20459,6 +21936,8 @@
     "Things American"
   ],
   "On the Road": [
+    "1950s",
+    "20th Century",
     "Books",
     "Contemporary Literature",
     "Ends with OAD",
@@ -20467,67 +21946,104 @@
     "Things American"
   ],
   "The Graduate": [
+    "1960s",
+    "20th Century",
     "Comedy Stories",
     "Ends with ATE",
     "Movies",
     "Movies directed by Mike Nichols",
+    "Movies featuring Anne Bancroft",
+    "Movies featuring Dustin Hoffman",
+    "Movies featuring Katharine Ross",
     "Starts with THE",
     "Things American"
   ],
   "Easy Rider": [
+    "1960s",
+    "20th Century",
     "Adventure Stories",
     "Ends with DER",
     "Movies",
     "Movies directed by Dennis Hopper",
+    "Movies featuring Dennis Hopper",
+    "Movies featuring Jack Nicholson",
+    "Movies featuring Peter Fonda",
     "Road Movies",
     "Starts with EAS",
     "Things American"
   ],
   "Midnight Cowboy": [
+    "1960s",
+    "20th Century",
     "Ends with BOY",
     "Movies",
     "Movies directed by John Schlesinger",
+    "Movies featuring Dustin Hoffman",
+    "Movies featuring Jon Voight",
+    "Movies featuring Sylvia Miles",
     "Oscar Winners",
     "Starts with MID",
     "Things American"
   ],
   "The French Connection": [
+    "1970s",
+    "20th Century",
     "Crime Stories",
     "Ends with ION",
     "Movies",
     "Movies directed by William Friedkin",
+    "Movies featuring Fernando Rey",
+    "Movies featuring Gene Hackman",
+    "Movies featuring Roy Scheider",
     "Starts with THE",
     "Things American",
     "Thriller Films",
     "Thriller Stories"
   ],
   "The Exorcist": [
+    "1970s",
+    "20th Century",
     "Ends with IST",
     "Horror Stories",
     "Movies",
     "Movies directed by William Friedkin",
+    "Movies featuring Ellen Burstyn",
+    "Movies featuring Linda Blair",
+    "Movies featuring Max von Sydow",
     "Starts with THE",
     "Things American"
   ],
   "Chinatown": [
+    "1970s",
+    "20th Century",
     "Crime Stories",
     "Ends with OWN",
     "Film Noir",
     "Movies",
     "Movies directed by Roman Polanski",
+    "Movies featuring Faye Dunaway",
+    "Movies featuring Jack Nicholson",
+    "Movies featuring John Huston",
     "Starts with CHI",
     "Things American"
   ],
   "Annie Hall": [
+    "1970s",
+    "20th Century",
     "Comedy Stories",
     "Ends with ALL",
     "Movies",
     "Movies directed by Woody Allen",
+    "Movies featuring Diane Keaton",
+    "Movies featuring Tony Roberts",
+    "Movies featuring Woody Allen",
     "Romance Stories",
     "Starts with ANN",
     "Things American"
   ],
   "The Silmarillion": [
+    "1970s",
+    "20th Century",
     "Books",
     "Ends with ION",
     "Fantasy Literature",
@@ -20537,6 +22053,8 @@
     "Things British"
   ],
   "Animal Farm": [
+    "1940s",
+    "20th Century",
     "Books",
     "Ends with ARM",
     "George Orwell",
@@ -20545,6 +22063,8 @@
     "Things British"
   ],
   "Lord of the Flies": [
+    "1950s",
+    "20th Century",
     "Books",
     "Contemporary Literature",
     "Ends with IES",
@@ -20553,6 +22073,8 @@
     "William Golding"
   ],
   "The Lion, the Witch and the Wardrobe": [
+    "1950s",
+    "20th Century",
     "Books",
     "C.S. Lewis",
     "Ends with OBE",
@@ -20561,6 +22083,8 @@
     "Things British"
   ],
   "The Magician's Nephew": [
+    "1950s",
+    "20th Century",
     "Books",
     "C.S. Lewis",
     "Ends with HEW",
@@ -20569,6 +22093,8 @@
     "Things British"
   ],
   "Prince Caspian": [
+    "1950s",
+    "20th Century",
     "Books",
     "C.S. Lewis",
     "Ends with IAN",
@@ -20577,91 +22103,144 @@
     "Things British"
   ],
   "The Italian Job": [
+    "1960s",
+    "20th Century",
     "Crime Stories",
     "Ends with JOB",
     "Heist Films",
     "Movies",
     "Movies directed by Peter Collinson",
+    "Movies featuring Benny Hill",
+    "Movies featuring Michael Caine",
+    "Movies featuring Noel Coward",
     "Starts with THE",
     "Things British"
   ],
   "Get Carter": [
+    "1970s",
+    "20th Century",
     "Crime Stories",
     "Ends with TER",
     "Movies",
     "Movies directed by Mike Hodges",
+    "Movies featuring Britt Ekland",
+    "Movies featuring Ian Hendry",
+    "Movies featuring Michael Caine",
     "Starts with GET",
     "Things British",
     "Thriller Films",
     "Thriller Stories"
   ],
   "Performance": [
+    "1970s",
+    "20th Century",
     "Crime Stories",
     "Ends with NCE",
     "Movies",
     "Movies directed by Donald Cammell",
+    "Movies featuring Anita Pallenberg",
+    "Movies featuring James Fox",
+    "Movies featuring Mick Jagger",
     "Starts with PER",
     "Things British"
   ],
   "If....": [
+    "1960s",
+    "20th Century",
     "Ends with ...",
     "Movies",
     "Movies directed by Lindsay Anderson",
+    "Movies featuring David Wood",
+    "Movies featuring Malcolm McDowell",
+    "Movies featuring Richard Warwick",
     "Starts with IF.",
     "Things British"
   ],
   "O Lucky Man!": [
+    "1970s",
+    "20th Century",
     "Ends with AN!",
     "Movies",
     "Movies directed by Lindsay Anderson",
+    "Movies featuring Malcolm McDowell",
+    "Movies featuring Rachel Roberts",
+    "Movies featuring Ralph Richardson",
     "Starts with O L",
     "Things British"
   ],
   "Britannia Hospital": [
+    "1980s",
+    "20th Century",
     "Ends with TAL",
     "Movies",
     "Movies directed by Lindsay Anderson",
+    "Movies featuring Graham Crowden",
+    "Movies featuring Joan Plowright",
+    "Movies featuring Leonard Rossiter",
     "Starts with BRI",
     "Things British"
   ],
   "The Wicker Man": [
+    "1970s",
+    "20th Century",
     "Ends with MAN",
     "Folk Horror",
     "Horror Stories",
     "Movies",
     "Movies directed by Robin Hardy",
+    "Movies featuring Britt Ekland",
+    "Movies featuring Christopher Lee",
+    "Movies featuring Edward Woodward",
     "Starts with THE",
     "Things British"
   ],
   "Don't Look Now": [
+    "1970s",
+    "20th Century",
     "Ends with NOW",
     "Horror Stories",
     "Movies",
     "Movies directed by Nicolas Roeg",
+    "Movies featuring Donald Sutherland",
+    "Movies featuring Hilary Mason",
+    "Movies featuring Julie Christie",
     "Starts with DON",
     "Things British",
     "Thriller Films",
     "Thriller Stories"
   ],
   "The Man Who Fell to Earth": [
+    "1970s",
+    "20th Century",
     "Ends with RTH",
     "Movies",
     "Movies directed by Nicolas Roeg",
+    "Movies featuring Candy Clark",
+    "Movies featuring David Bowie",
+    "Movies featuring Rip Torn",
     "Sci-fi Stories",
     "Starts with THE",
     "Things British"
   ],
   "Walkabout": [
+    "1970s",
+    "20th Century",
     "Ends with OUT",
     "Movies",
     "Movies directed by Nicolas Roeg",
+    "Movies featuring David Gulpilil",
+    "Movies featuring Jenny Agutter",
+    "Movies featuring Luc Roeg",
     "Starts with WAL",
     "Things British"
   ],
   "Her": [
+    "2010s",
+    "21st Century",
     "Ends with HER",
     "Movies",
     "Movies directed by Spike Jonze",
+    "Movies featuring Amy Adams",
     "Movies featuring Joaquin Phoenix",
     "Movies featuring Scarlett Johansson",
     "Oscar Winners",
@@ -20931,18 +22510,23 @@
     "Things American"
   ],
   "X-Men: First Class": [
+    "2010s",
+    "21st Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with ASS",
     "Movies",
     "Movies directed by Matthew Vaughn",
     "Movies featuring James McAvoy",
+    "Movies featuring Jennifer Lawrence",
     "Movies featuring Michael Fassbender",
     "Prequels",
     "Sci-fi Stories",
     "Starts with X-M"
   ],
   "The Good, the Bad and the Ugly": [
+    "1960s",
+    "20th Century",
     "Action Stories",
     "Adventure Stories",
     "Ends with GLY",
@@ -20957,6 +22541,8 @@
     "Western Films"
   ],
   "The Chronicles of Narnia: The Magician's Nephew": [
+    "1950s",
+    "20th Century",
     "Adventure Stories",
     "Books",
     "Children's Books",
@@ -20967,12 +22553,15 @@
     "Things British"
   ],
   "Red Dragon": [
+    "2000s",
+    "21st Century",
     "Crime Stories",
     "Ends with GON",
     "Movies",
     "Movies directed by Brett Ratner",
     "Movies featuring Anthony Hopkins",
     "Movies featuring Edward Norton",
+    "Movies featuring Ralph Fiennes",
     "Prequels",
     "Starts with RED",
     "Things American",
@@ -20997,12 +22586,16 @@
     "Starts with PRU"
   ],
   "Manchukuo": [
+    "1930s",
+    "1940s",
+    "20th Century",
     "Asian Countries",
     "Countries",
     "Countries that No Longer Exist",
     "Ends with KUO",
     "Former Puppet States",
     "Starts with MAN",
+    "WWII Axis Powers",
     "WWII Powers"
   ],
   "Ottoman Empire": [
@@ -21024,6 +22617,7 @@
     "Starts with YUG"
   ],
   "Czechoslovakia": [
+    "20th Century",
     "Central European Countries",
     "Countries",
     "Countries that No Longer Exist",
@@ -21033,6 +22627,7 @@
     "Starts with CZE"
   ],
   "Soviet Union": [
+    "20th Century",
     "Cold War Powers",
     "Countries",
     "Countries that No Longer Exist",
@@ -21043,6 +22638,7 @@
     "Starts with SOV"
   ],
   "West Germany": [
+    "20th Century",
     "Cold War Powers",
     "Countries",
     "Countries that No Longer Exist",
@@ -21068,6 +22664,7 @@
     "Starts with KOR"
   ],
   "Gran Colombia": [
+    "19th Century",
     "Countries",
     "Countries that No Longer Exist",
     "Ends with BIA",
@@ -21077,6 +22674,9 @@
     "Starts with GRA"
   ],
   "United Arab Republic": [
+    "1950s",
+    "1960s",
+    "20th Century",
     "Arab Countries",
     "Countries",
     "Countries that No Longer Exist",
@@ -21143,7 +22743,7 @@
     "Starts with THE"
   ],
   "The Bronze Age Collapse": [
-    "12th Century BCE",
+    "12th Century BC",
     "Collapses",
     "Ends with PSE",
     "Events",
@@ -21372,7 +22972,7 @@
     "World Wars"
   ],
   "The Trojan War": [
-    "12th Century BCE",
+    "12th Century BC",
     "Ends with WAR",
     "Starts with THE"
   ],
@@ -21895,6 +23495,7 @@
     "Things American"
   ],
   "Guan Yu": [
+    "3rd Century",
     "Ancient Figures",
     "Ends with  YU",
     "Historical Figures",
@@ -21906,6 +23507,8 @@
     "Things Chinese"
   ],
   "Confucius": [
+    "5th Century BC",
+    "6th Century BC",
     "Ancient Figures",
     "Ends with IUS",
     "Historical Figures",
@@ -21918,6 +23521,8 @@
     "Writers"
   ],
   "Sun Tzu": [
+    "5th Century BC",
+    "6th Century BC",
     "Ancient Figures",
     "Ends with TZU",
     "Historical Figures",
@@ -21929,6 +23534,7 @@
     "Writers"
   ],
   "Emperor Qin Shi Huang": [
+    "3rd Century BC",
     "Ancient Figures",
     "Ancient Rulers",
     "Ends with ANG",
@@ -21941,6 +23547,8 @@
     "Things Chinese"
   ],
   "Emperor Wu of Han": [
+    "1st Century BC",
+    "2nd Century BC",
     "Ancient Figures",
     "Ancient Rulers",
     "Ends with HAN",
@@ -21953,6 +23561,7 @@
     "Things Chinese"
   ],
   "Li Bai": [
+    "8th Century",
     "Ends with BAI",
     "Historical Figures",
     "Medieval Figures",
@@ -21964,6 +23573,7 @@
     "Writers"
   ],
   "Du Fu": [
+    "8th Century",
     "Ends with  FU",
     "Historical Figures",
     "Medieval Figures",
@@ -21975,6 +23585,7 @@
     "Writers"
   ],
   "Zhu Yuanzhang": [
+    "14th Century",
     "Ends with ANG",
     "Historical Figures",
     "Medieval Figures",

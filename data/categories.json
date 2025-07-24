@@ -1,22 +1,66 @@
 {
   "11th Century": [
     "The First Crusade",
-    "The Norman Conquest"
+    "The Norman Conquest",
+    "The Tale of Genji",
+    "William the Conqueror"
   ],
-  "12th Century BCE": [
+  "12th Century BC": [
     "The Bronze Age Collapse",
     "The Trojan War"
   ],
-  "14th Century": [
-    "The Black Death",
-    "The Hundred Years War",
-    "The Peasants' Revolt"
+  "13th Century": [
+    "Dante",
+    "Khan",
+    "Marco Polo",
+    "The Tale of the Heike"
   ],
-  "1600s": [
-    "Galileo",
-    "Kepler"
+  "1490s": [
+    "Santa Maria"
+  ],
+  "14th Century": [
+    "Dante",
+    "Inferno",
+    "Ming",
+    "Romance of the Three Kingdoms",
+    "The Black Death",
+    "The Divine Comedy",
+    "The Hundred Years War",
+    "The Peasants' Revolt",
+    "Water Margin",
+    "Zheng He",
+    "Zhu Yuanzhang"
+  ],
+  "15th Century": [
+    "Christopher Columbus",
+    "Copernicus",
+    "Da Vinci",
+    "Ferdinand Magellan",
+    "Joan of Arc",
+    "Michelangelo",
+    "Ming",
+    "Santa Maria",
+    "Vasco da Gama",
+    "Zheng He"
+  ],
+  "1620s": [
+    "Mayflower"
   ],
   "16th Century": [
+    "Aurora",
+    "Copernicus",
+    "Da Vinci",
+    "Drake",
+    "Elizabeth",
+    "Ferdinand Magellan",
+    "Journey to the West",
+    "Juliet",
+    "Mary Rose",
+    "Michelangelo",
+    "Ming",
+    "Queen Mary",
+    "Romeo",
+    "Shakespeare",
     "The Catholic Counter-Reformation",
     "The English Reformation",
     "The Italian Wars",
@@ -24,164 +68,1271 @@
     "The Spanish Armada"
   ],
   "17th Century": [
+    "Bach",
+    "Don Quixote",
     "Galileo",
+    "Handel",
+    "James",
     "Kepler",
+    "Mayflower",
+    "Ming",
+    "Newton",
+    "Salem",
+    "Shakespeare",
     "The English Civil War",
     "The Glorious Revolution",
     "The Great Fire of London",
     "The Thirty Years War"
   ],
+  "1810s": [
+    "Frankenstein",
+    "Pride and Prejudice",
+    "Tambora"
+  ],
+  "1840s": [
+    "Jane Eyre",
+    "The Count of Monte Cristo",
+    "Wuthering Heights"
+  ],
+  "1850s": [
+    "Moby Dick",
+    "The Scarlet Letter"
+  ],
+  "1860s": [
+    "Alice's Adventures in Wonderland",
+    "Crime and Punishment",
+    "Les Misérables",
+    "Little Women",
+    "War and Peace"
+  ],
+  "1870s": [
+    "Challenger",
+    "The Adventures of Tom Sawyer"
+  ],
+  "1880s": [
+    "Krakatoa",
+    "The Brothers Karamazov"
+  ],
+  "1890s": [
+    "Dracula",
+    "The Red Badge of Courage",
+    "The Time Machine"
+  ],
   "18th Century": [
+    "Adams",
+    "Bach",
+    "Beethoven",
+    "Belle",
+    "Catherine",
+    "Dream of the Red Chamber",
+    "George Washington",
+    "Handel",
+    "Jefferson",
+    "Madison",
+    "Mozart",
+    "Napoleon Bonaparte",
+    "Newton",
     "The American Revolution",
     "The French Revolution",
     "The Great Awakening",
     "The Industrial Revolution",
-    "The Seven Years' War"
+    "The Seven Years' War",
+    "Washington",
+    "Whitney"
+  ],
+  "1900s": [
+    "Anne of Green Gables",
+    "The Call of the Wild",
+    "The Tale of Peter Rabbit",
+    "The Wind in the Willows"
   ],
   "1910s": [
+    "Lusitania",
     "The Mexican Revolution",
     "The Russian Revolution",
+    "The Secret Garden",
     "The Titanic Disaster",
+    "Titanic",
     "World War I"
   ],
+  "1920s": [
+    "A Farewell to Arms",
+    "Ruth",
+    "The Age of Innocence",
+    "The Great Gatsby",
+    "The Sound and the Fury",
+    "The Sun Also Rises",
+    "Winnie-the-Pooh"
+  ],
   "1930s": [
+    "Absalom, Absalom!",
+    "As I Lay Dying",
+    "Brave New World",
+    "Gone with the Wind",
+    "Hindenburg",
+    "Light in August",
+    "Manchukuo",
+    "Ruth",
     "The Dust Bowl",
+    "The Grapes of Wrath",
     "The Great Depression",
+    "The Hobbit",
     "The Nanjing Massacre",
-    "The Spanish Civil War"
+    "The Spanish Civil War",
+    "The Wizard of Oz"
   ],
   "1940s": [
+    "1984",
+    "Animal Farm",
+    "Brief Encounter",
+    "Casablanca",
+    "Citizen Kane",
+    "For Whom the Bell Tolls",
+    "Goodnight Moon",
+    "It's a Wonderful Life",
+    "Kind Hearts and Coronets",
+    "Manchukuo",
+    "Miracle on 34th Street",
+    "Pinnochio",
     "The Battle of Stalingrad",
+    "The Big Sleep",
     "The Holocaust",
+    "The Little Prince",
+    "The Maltese Falcon",
     "The Manhattan Project",
+    "The Red Shoes",
+    "The Third Man",
     "World War II"
   ],
   "1950s": [
+    "Andrea Doria",
+    "Charlotte's Web",
+    "Everest",
+    "Fahrenheit 451",
+    "Ikiru",
+    "Lord of the Flies",
+    "Mantle",
     "NASA",
+    "On the Road",
+    "Prince Caspian",
+    "Rashomon",
+    "Seven Samurai",
+    "Singin' in the Rain",
+    "The Bridge on the River Kwai",
+    "The Catcher in the Rye",
+    "The Chronicles of Narnia",
+    "The Chronicles of Narnia: The Magician's Nephew",
     "The Cuban Revolution",
+    "The Door into Summer",
+    "The End of Eternity",
+    "The Hidden Fortress",
     "The Korean War",
-    "The Space Race"
+    "The Ladykillers",
+    "The Lion, the Witch and the Wardrobe",
+    "The Lord of the Rings",
+    "The Magician's Nephew",
+    "The Old Man and the Sea",
+    "The Space Race",
+    "Throne of Blood",
+    "United Arab Republic",
+    "White Christmas"
   ],
   "1960s": [
+    "2001: A Space Odyssey",
     "Apollo",
+    "Dr. Strangelove",
+    "Dune",
+    "Easy Rider",
     "Gemini",
+    "Green Eggs and Ham",
+    "High and Low",
+    "If....",
+    "Lawrence of Arabia",
+    "Mantle",
     "Mariner",
+    "Mary Poppins",
     "Mercury",
+    "Midnight Cowboy",
+    "My Fair Lady",
+    "Oliver!",
+    "One Hundred Years of Solitude",
+    "Red Beard",
+    "Sanjuro",
+    "Slaughterhouse-Five",
+    "Tanganyika",
+    "The Bell Jar",
     "The Civil Rights Movement",
     "The Cuban Missile Crisis",
+    "The Good, the Bad and the Ugly",
+    "The Graduate",
+    "The Italian Job",
+    "The Man in the High Castle",
     "The Moon Landing",
     "The My Lai Massacre",
+    "The Sound of Music",
+    "The Very Hungry Caterpillar",
     "The Vietnam War",
-    "Woodstock"
+    "To Kill a Mockingbird",
+    "United Arab Republic",
+    "West Side Story",
+    "Where the Wild Things Are",
+    "Woodstock",
+    "Yojimbo",
+    "Zanzibar",
+    "Zulu"
   ],
   "1970s": [
+    "A Clockwork Orange",
+    "Alien",
+    "Annie Hall",
     "Apollo",
     "Apollo 13",
+    "Cabaret",
+    "Chinatown",
+    "Death Wish",
+    "Dog Day Afternoon",
+    "Don't Look Now",
+    "Fiddler on the Roof",
+    "Get Carter",
+    "Godspell",
+    "Grease",
+    "Jaws",
+    "Jesus Christ Superstar",
+    "Kampuchea",
+    "Kindred",
+    "Kramer vs. Kramer",
+    "Manhattan",
     "Mariner",
+    "O Lucky Man!",
+    "One Flew Over the Cuckoo's Nest",
+    "Performance",
+    "Poseidon",
+    "Rocky",
+    "Rocky Horror Picture Show",
+    "Salem's Lot",
+    "Serpico",
+    "Star Wars",
     "The 1970s",
+    "The Deer Hunter",
+    "The Exorcist",
+    "The French Connection",
+    "The Godfather",
+    "The Godfather Part II",
+    "The Hitchhiker's Guide to the Galaxy",
     "The Iran Hostage Crisis",
+    "The Man Who Fell to Earth",
+    "The Silmarillion",
+    "The Stand",
     "The Watergate Scandal",
-    "Voyager"
+    "The Wicker Man",
+    "Voyager",
+    "Walkabout"
   ],
   "1980s": [
+    "A Better Tomorrow",
+    "A Christmas Story",
+    "Aliens",
+    "Amadeus",
+    "Annie",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Beloved",
+    "Big",
+    "Bill & Ted's Excellent Adventure",
+    "Blade Runner",
+    "Britannia Hospital",
+    "Castle in the Sky",
+    "Challenger",
+    "Chariots of Fire",
+    "Chernobyl",
+    "Clue",
+    "Die Hard",
+    "Driving Miss Daisy",
+    "E.T.",
+    "Escape from New York",
+    "Flight of the Navigator",
+    "Gandhi",
+    "Ghostbusters",
+    "Ghostbusters II",
+    "IT",
+    "Kagemusha",
+    "Kampuchea",
+    "Kiki's Delivery Service",
+    "Little Shop of Horrors",
+    "Matilda",
+    "My Neighbor Totoro",
+    "National Lampoon's Christmas Vacation",
+    "Norwegian Wood",
+    "Ordinary People",
+    "Out of Africa",
+    "Platoon",
+    "Rain Man",
+    "Ran",
+    "Return of the Jedi",
+    "Scarface",
+    "Scrooged",
+    "Snowman",
+    "Somewhere in Time",
+    "Terms of Endearment",
     "The AIDS Crisis",
+    "The Alchemist",
+    "The Anubis Gates",
     "The Chernobyl Disaster",
+    "The Color Purple",
+    "The Empire Strikes Back",
     "The Fall of the Berlin Wall",
-    "The Iran-Iraq War"
+    "The Hand",
+    "The Handmaid's Tale",
+    "The Iran-Iraq War",
+    "The Last Emperor",
+    "The Philadelphia Experiment",
+    "The Shining",
+    "The Terminator",
+    "The Thing",
+    "Time Bandits",
+    "Working Girl"
   ],
   "1990s": [
+    "12 Monkeys",
+    "A Map of the World",
+    "Alien 3",
+    "Alien: Resurrection",
+    "American Beauty",
+    "Armageddon",
+    "Ashes of Time",
+    "Back to the Future Part III",
+    "Bill & Ted's Bogus Journey",
+    "Braveheart",
+    "Chungking Express",
+    "Copycat",
+    "Dances with Wolves",
+    "Dante's Peak",
+    "Days of Being Wild",
+    "Die Hard 2",
+    "Die Hard with a Vengeance",
+    "Donnie Brasco",
+    "Dreams",
+    "Evita",
+    "Fallen Angels",
+    "Farewell My Concubine",
+    "Fight Club",
+    "Forrest Gump",
+    "Four Weddings and a Funeral",
+    "Galaxy Quest",
+    "Goodfellas",
+    "Groundhog Day",
+    "Happy Together",
+    "Hard Boiled",
+    "Heat",
+    "Home Alone",
+    "Home Alone 2: Lost in New York",
+    "Howard's End",
     "Hubble",
+    "Jackie Brown",
+    "Jingle All the Way",
+    "Jurassic Park",
+    "Oh, the Places You'll Go!",
+    "Othello",
+    "Outlander",
+    "Pokemon",
+    "Porco Rosso",
+    "Princess Mononoke",
+    "Pulp Fiction",
+    "Raise the Red Lantern",
+    "Reservoir Dogs",
+    "Robin Hood: Prince of Thieves",
+    "Scent of a Woman",
+    "Schindler's List",
+    "Sense and Sensibility",
+    "Shakespeare in Love",
+    "Stargate",
+    "Terminator 2: Judgment Day",
+    "The Crying Game",
+    "The Devil's Advocate",
     "The Digital Revolution",
+    "The English Patient",
+    "The Fifth Element",
+    "The Full Monty",
     "The German Reunification",
+    "The Godfather Part III",
+    "The Green Mile",
     "The Gulf War",
+    "The Ice Storm",
+    "The Madness of King George",
+    "The Matrix",
+    "The Muppet Christmas Carol",
+    "The Nightmare Before Christmas",
     "The Oklahoma City Bombing",
+    "The Phantom Menace",
+    "The Remains of the Day",
     "The Rwandan Genocide",
-    "The Yugoslav Wars"
+    "The Santa Clause",
+    "The Shawshank Redemption",
+    "The Silence of the Lambs",
+    "The Sixth Sense",
+    "The Time Ships",
+    "The Usual Suspects",
+    "The Wind-Up Bird Chronicle",
+    "The Yugoslav Wars",
+    "To Say Nothing of the Dog",
+    "Trainspotting",
+    "Unforgiven",
+    "Volcano"
   ],
   "19th Century": [
+    "Adams",
+    "Alice's Adventures in Wonderland",
+    "Annabel",
+    "Beethoven",
+    "Bell",
+    "Bismarck",
+    "Challenger",
+    "Crime and Punishment",
+    "Curie",
+    "Darwin",
+    "Dracula",
+    "Edison",
+    "Einstein",
+    "Faraday",
+    "Frankenstein",
+    "Gran Colombia",
+    "Grant",
+    "Jackson",
+    "Jane Eyre",
+    "Jefferson",
+    "Krakatoa",
+    "Lenore",
+    "Les Misérables",
+    "Lincoln",
+    "Little Women",
+    "Madison",
+    "Marie Curie",
+    "Moby Dick",
+    "Morse",
+    "Napoleon Bonaparte",
+    "Oscar",
+    "Ozymandias",
+    "Poe",
+    "Pride and Prejudice",
+    "Roosevelt",
+    "Tambora",
+    "Tesla",
+    "The Adventures of Tom Sawyer",
     "The American Civil War",
     "The Boer War",
     "The Boxer Rebellion",
+    "The Brothers Karamazov",
+    "The Count of Monte Cristo",
     "The Crimean War",
     "The Franco-Prussian War",
     "The Italian Unification",
     "The Long Depression",
     "The Napoleonic Wars",
+    "The Red Badge of Courage",
+    "The Scarlet Letter",
     "The Second Great Awakening",
     "The Second Industrial Revolution",
-    "The Spanish-American War"
+    "The Spanish-American War",
+    "The Time Machine",
+    "Thomas Edison",
+    "Victor",
+    "Victoria",
+    "War and Peace",
+    "Whitney",
+    "Wilson",
+    "Wuthering Heights"
+  ],
+  "1st Century": [
+    "Mary",
+    "Pompeii"
+  ],
+  "1st Century BC": [
+    "Caesar",
+    "Cleopatra",
+    "Emperor Wu of Han"
   ],
   "2000s": [
+    "1Q84",
+    "2046",
     "9/11",
+    "A Beautiful Mind",
+    "All You Need Is Kill",
+    "Attack of the Clones",
+    "Avatar",
+    "Bad Santa",
+    "Ball Lightning",
+    "Chicago",
+    "Crash",
+    "Crouching Tiger, Hidden Dragon",
+    "Death Proof",
+    "Deja Vu",
+    "Donnie Darko",
+    "Doom",
+    "Dreamgirls",
+    "Elf",
+    "Four Christmases",
+    "Frequency",
+    "Gladiator",
+    "Hairspray",
+    "Harry Potter and the Chamber of Secrets",
+    "Harry Potter and the Deathly Hallows",
+    "Harry Potter and the Goblet of Fire",
+    "Harry Potter and the Half-Blood Prince",
+    "Harry Potter and the Order of the Phoenix",
+    "Harry Potter and the Prisoner of Azkaban",
+    "Harry Potter and the Sorcerer's Stone",
+    "Hedwig and the Angry Inch",
+    "Hero",
+    "Holes",
+    "House of Flying Daggers",
+    "Ice Age",
+    "In the Mood for Love",
+    "Inglourious Basterds",
+    "Insomnia",
+    "Kafka on the Shore",
+    "Kate & Leopold",
+    "Katrina",
+    "Kill Bill: Volume 1",
+    "Kill Bill: Volume 2",
+    "Live Free or Die Hard",
+    "Love Actually",
+    "Madagascar",
+    "Million Dollar Baby",
+    "Moulin Rouge!",
+    "My Blueberry Nights",
+    "No Country for Old Men",
+    "Percy Jackson & the Olympians",
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Primer",
+    "Red Dragon",
+    "Rent",
+    "Revenge of the Sith",
+    "Saw",
+    "Sin City",
+    "Slumdog Millionaire",
+    "Spirited Away",
+    "Sweeney Todd: The Demon Barber of Fleet Street",
+    "The Butterfly Effect",
+    "The Da Vinci Code",
+    "The Dark Forest",
+    "The Departed",
+    "The Girl with the Dragon Tattoo",
     "The Great Recession",
+    "The Holiday",
+    "The Hunger Games",
+    "The Hurt Locker",
     "The Iraq War",
+    "The Lake House",
     "The London Bombings",
-    "The War on Terror"
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers",
+    "The Map of Time",
+    "The Phantom of the Opera",
+    "The Road",
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause",
+    "The Three-Body Problem",
+    "The Time Traveler's Wife",
+    "The Village",
+    "The Wandering Earth",
+    "The War on Terror",
+    "Troy",
+    "Twilight",
+    "Unbreakable",
+    "Vantage Point"
   ],
   "2010s": [
+    "11/22/63",
+    "12 Years a Slave",
+    "A Good Day to Die Hard",
+    "A Wrinkle in Time",
+    "About Time",
+    "Argo",
+    "Arrival",
+    "Avengers: Endgame",
+    "Birdman",
+    "Colorless Tsukuru Tazaki",
+    "Death's End",
+    "Deepwater Horizon",
+    "Django Unchained",
+    "Edge of Tomorrow",
+    "Fukushima",
+    "Glass",
+    "Gone Girl",
+    "Green Book",
+    "Harry Potter and the Deathly Hallows: Part 1",
+    "Harry Potter and the Deathly Hallows: Part 2",
+    "Her",
+    "Hot Tub Time Machine",
+    "Interstellar",
+    "Into the Woods",
+    "La La Land",
+    "Les Misérables",
+    "Looper",
+    "Mary Poppins Returns",
+    "Moonlight",
+    "Moonrise Kingdom",
+    "Once Upon a Time in Hollywood",
+    "Parasite",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Predestination",
+    "Red 2",
+    "Rogue One",
+    "Safety Not Guaranteed",
+    "Sin City: A Dame to Kill For",
+    "Solo",
+    "Source Code",
+    "Spotlight",
     "The Arab Spring",
+    "The Artist",
     "The Brexit Vote",
+    "The Fault in Our Stars",
+    "The First Fifteen Lives of Harry August",
+    "The Force Awakens",
+    "The Grand Budapest Hotel",
+    "The Grandmaster",
+    "The Greatest Showman",
+    "The Hateful Eight",
+    "The Irishman",
+    "The King's Speech",
+    "The Last Jedi",
+    "The Map of Chaos",
+    "The Map of the Sky",
     "The Opioid Epidemic",
-    "The Syrian Civil War"
+    "The Revenant",
+    "The Rise of Skywalker",
+    "The Shape of Water",
+    "The Syrian Civil War",
+    "The Time Traveler's Almanac",
+    "X-Men: Days of Future Past",
+    "X-Men: First Class"
   ],
   "2020s": [
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water",
+    "CODA",
+    "Everything Everywhere All at Once",
+    "In the Heights",
+    "Nomadland",
+    "Oppenheimer",
+    "Tenet",
     "The COVID-19 Pandemic",
     "The January 6th Insurrection",
-    "The Russian Invasion of Ukraine"
+    "The Killer",
+    "The Russian Invasion of Ukraine",
+    "Tick, Tick... Boom!"
   ],
   "20th Century": [
+    "12 Monkeys",
+    "1984",
+    "2001: A Space Odyssey",
+    "A Better Tomorrow",
+    "A Christmas Story",
+    "A Clockwork Orange",
+    "A Farewell to Arms",
+    "A Map of the World",
+    "Absalom, Absalom!",
+    "Alien",
+    "Alien 3",
+    "Alien: Resurrection",
+    "Aliens",
+    "Amadeus",
+    "American Beauty",
+    "Andrea Doria",
+    "Animal Farm",
+    "Anne of Green Gables",
+    "Annie",
+    "Annie Hall",
     "Apollo",
     "Apollo 13",
+    "Armageddon",
+    "As I Lay Dying",
+    "Ashes of Time",
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III",
+    "Beloved",
+    "Benedict",
+    "Beyonce",
+    "Big",
+    "Bill & Ted's Bogus Journey",
+    "Bill & Ted's Excellent Adventure",
+    "Blade Runner",
+    "Brave New World",
+    "Braveheart",
+    "Bravo",
+    "Brief Encounter",
+    "Britannia Hospital",
+    "Buttercup",
+    "Cabaret",
+    "Casablanca",
+    "Castle in the Sky",
+    "Chad",
+    "Challenger",
+    "Chariots of Fire",
+    "Charlotte's Web",
+    "Chernobyl",
+    "Chinatown",
+    "Chungking Express",
+    "Citizen Kane",
+    "Clue",
+    "Cobb",
+    "Copycat",
+    "Curie",
+    "Czechoslovakia",
+    "Dahomey",
+    "Daisy",
+    "Dances with Wolves",
+    "Dante's Peak",
+    "Daphne",
+    "Days of Being Wild",
+    "Death Wish",
+    "Die Hard",
+    "Die Hard 2",
+    "Die Hard with a Vengeance",
+    "Dirac",
+    "Dog Day Afternoon",
+    "Don't Look Now",
+    "Donnie Brasco",
+    "Dr. Strangelove",
+    "Dreams",
+    "Driving Miss Daisy",
+    "Dune",
+    "E.T.",
+    "East Germany",
+    "Easy Rider",
+    "Edison",
+    "Einstein",
+    "Elizabeth",
+    "Elvis",
+    "Escape from New York",
+    "Everest",
+    "Evita",
+    "Fahrenheit 451",
+    "Fallen Angels",
+    "Farewell My Concubine",
+    "Feynman",
+    "Fiddler on the Roof",
+    "Fight Club",
+    "Film",
+    "Flight of the Navigator",
+    "For Whom the Bell Tolls",
+    "Ford",
+    "Forrest Gump",
+    "Four Weddings and a Funeral",
+    "Franklin D. Roosevelt",
+    "Fred",
+    "Fujita",
+    "Galaxy Quest",
+    "Gandhi",
     "Gemini",
+    "Get Carter",
+    "Ghostbusters",
+    "Ghostbusters II",
+    "Godspell",
+    "Gone with the Wind",
+    "Goodfellas",
+    "Goodnight Moon",
+    "Graf Zeppelin",
+    "Grease",
+    "Green Eggs and Ham",
+    "Groundhog Day",
+    "Grover",
+    "Happy Together",
+    "Hard Boiled",
+    "Hawking",
+    "Heat",
+    "Heather",
+    "High and Low",
+    "Hindenburg",
+    "Home Alone",
+    "Home Alone 2: Lost in New York",
+    "Hoover",
+    "Howard's End",
     "Hubble",
+    "IT",
+    "Ichiro",
+    "If....",
+    "Ikiru",
+    "Iris",
+    "It's a Wonderful Life",
+    "Ivy",
+    "Jackie Brown",
+    "Jaws",
+    "Jean Grey",
+    "Jesus Christ Superstar",
+    "Jingle All the Way",
+    "John",
+    "Jordan",
+    "Jurassic Park",
+    "Kagemusha",
+    "Kampuchea",
+    "Kennedy",
+    "Kiki's Delivery Service",
+    "Kind Hearts and Coronets",
+    "Kindred",
+    "Kirk",
+    "Kobe",
+    "Kramer vs. Kramer",
+    "Kurosawa",
+    "Lando",
+    "Lawrence of Arabia",
+    "Leo",
+    "Light in August",
+    "Little Shop of Horrors",
+    "Lord of the Flies",
+    "Lusitania",
+    "Madonna",
+    "Manchukuo",
+    "Manhattan",
+    "Mantle",
+    "Marie Curie",
     "Mariner",
+    "Mary Poppins",
+    "Matilda",
+    "Matsui",
+    "Mays",
     "Mercury",
+    "Midnight Cowboy",
+    "Mifune",
+    "Miracle on 34th Street",
+    "Miyazaki",
+    "My Fair Lady",
+    "My Neighbor Totoro",
     "NASA",
+    "Nakamura",
+    "National Lampoon's Christmas Vacation",
+    "Nina",
+    "North Vietnam",
+    "North Yemen",
+    "Norwegian Wood",
+    "O Lucky Man!",
+    "Oh, the Places You'll Go!",
+    "Olive",
+    "Oliver!",
+    "On the Road",
+    "One Flew Over the Cuckoo's Nest",
+    "One Hundred Years of Solitude",
+    "Ordinary People",
+    "Othello",
+    "Out of Africa",
+    "Outlander",
+    "Ozu",
+    "Papa",
+    "Paul",
+    "Performance",
+    "Peter",
+    "Pinnochio",
+    "Platoon",
+    "Pokemon",
+    "Porco Rosso",
+    "Poseidon",
+    "Prince",
+    "Prince Caspian",
+    "Princess Mononoke",
+    "Professor X",
+    "Pulp Fiction",
+    "Rain Man",
+    "Raise the Red Lantern",
+    "Ran",
+    "Rashomon",
+    "Red",
+    "Red Beard",
+    "Reservoir Dogs",
+    "Return of the Jedi",
+    "Rhodesia",
+    "Robin Hood: Prince of Thieves",
+    "Rocky",
+    "Rocky Horror Picture Show",
+    "Roosevelt",
+    "Ruth",
+    "Salem's Lot",
+    "Sam",
+    "Sanjuro",
+    "Scarface",
+    "Scent of a Woman",
+    "Schindler's List",
+    "Scrooged",
+    "Sense and Sensibility",
+    "Serpico",
+    "Seven Samurai",
+    "Shaggy",
+    "Shakespeare in Love",
+    "Silver",
+    "Singin' in the Rain",
+    "Slaughterhouse-Five",
+    "Snowman",
+    "Somewhere in Time",
+    "South Vietnam",
+    "South Yemen",
+    "Soviet Union",
+    "Star Wars",
+    "Stargate",
+    "Sulu",
+    "Tanaka",
+    "Tanganyika",
+    "Teresa",
+    "Terminator 2: Judgment Day",
+    "Terms of Endearment",
+    "Tesla",
     "The AIDS Crisis",
+    "The Age of Innocence",
+    "The Alchemist",
+    "The Anubis Gates",
+    "The Bell Jar",
+    "The Big Sleep",
+    "The Bridge on the River Kwai",
+    "The Call of the Wild",
+    "The Catcher in the Rye",
     "The Chernobyl Disaster",
+    "The Chronicles of Narnia",
+    "The Chronicles of Narnia: The Magician's Nephew",
     "The Cold War",
+    "The Color Purple",
+    "The Crying Game",
     "The Cuban Missile Crisis",
     "The Cuban Revolution",
+    "The Deer Hunter",
+    "The Devil's Advocate",
     "The Digital Revolution",
+    "The Door into Summer",
     "The Dust Bowl",
+    "The Empire Strikes Back",
+    "The End of Eternity",
+    "The English Patient",
+    "The Exorcist",
     "The Fall of the Berlin Wall",
+    "The Fifth Element",
+    "The French Connection",
+    "The Full Monty",
     "The German Reunification",
+    "The Godfather",
+    "The Godfather Part II",
+    "The Godfather Part III",
+    "The Good, the Bad and the Ugly",
+    "The Graduate",
+    "The Grapes of Wrath",
     "The Great Depression",
+    "The Great Gatsby",
+    "The Green Mile",
     "The Gulf War",
+    "The Hand",
+    "The Handmaid's Tale",
+    "The Hidden Fortress",
+    "The Hitchhiker's Guide to the Galaxy",
+    "The Hobbit",
     "The Holocaust",
+    "The Ice Storm",
     "The Iran Hostage Crisis",
     "The Iran-Iraq War",
+    "The Italian Job",
     "The Korean War",
+    "The Ladykillers",
+    "The Last Emperor",
+    "The Lion, the Witch and the Wardrobe",
+    "The Little Prince",
+    "The Lord of the Rings",
+    "The Madness of King George",
+    "The Magician's Nephew",
+    "The Maltese Falcon",
+    "The Man Who Fell to Earth",
+    "The Man in the High Castle",
+    "The Matrix",
     "The Moon Landing",
+    "The Muppet Christmas Carol",
     "The My Lai Massacre",
     "The Nanjing Massacre",
+    "The Nightmare Before Christmas",
     "The Oklahoma City Bombing",
+    "The Old Man and the Sea",
+    "The Phantom Menace",
+    "The Philadelphia Experiment",
+    "The Red Shoes",
+    "The Remains of the Day",
     "The Russian Revolution",
     "The Russo-Japanese War",
     "The Rwandan Genocide",
+    "The Santa Clause",
+    "The Secret Garden",
+    "The Shawshank Redemption",
+    "The Shining",
+    "The Silence of the Lambs",
+    "The Silmarillion",
+    "The Sixth Sense",
+    "The Sound and the Fury",
+    "The Sound of Music",
     "The Space Race",
     "The Spanish Civil War",
+    "The Stand",
+    "The Sun Also Rises",
+    "The Tale of Peter Rabbit",
+    "The Terminator",
+    "The Thing",
+    "The Third Man",
+    "The Time Ships",
+    "The Usual Suspects",
+    "The Very Hungry Caterpillar",
     "The Vietnam War",
     "The Watergate Scandal",
+    "The Wicker Man",
+    "The Wind in the Willows",
+    "The Wind-Up Bird Chronicle",
+    "The Wizard of Oz",
     "The Yugoslav Wars",
+    "Thomas Edison",
+    "Throne of Blood",
+    "Time Bandits",
+    "Titanic",
+    "To Kill a Mockingbird",
+    "To Say Nothing of the Dog",
+    "Trainspotting",
+    "Trump",
+    "Unbreakable",
+    "Unforgiven",
+    "United Arab Republic",
+    "Upper Volta",
+    "Velma",
+    "Violet",
+    "Volcano",
     "Voyager",
+    "Walkabout",
+    "West Germany",
+    "West Side Story",
+    "Where the Wild Things Are",
+    "White Christmas",
+    "Wilson",
+    "Winnie-the-Pooh",
+    "Winston Churchill",
     "Woodstock",
+    "Working Girl",
     "World War I",
-    "World War II"
+    "World War II",
+    "Wright",
+    "Yojimbo",
+    "Zanzibar",
+    "Zulu"
   ],
   "21st Century": [
+    "11/22/63",
+    "12 Years a Slave",
+    "1Q84",
+    "2046",
     "9/11",
+    "A Beautiful Mind",
+    "A Good Day to Die Hard",
+    "A Wrinkle in Time",
+    "About Time",
+    "All You Need Is Kill",
+    "Anna",
+    "Argo",
+    "Arrival",
+    "Attack of the Clones",
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water",
+    "Avengers: Endgame",
+    "Bad Santa",
+    "Ball Lightning",
+    "Benedict",
+    "Beyonce",
+    "Birdman",
+    "Bravo",
+    "Buttercup",
+    "CODA",
+    "Chad",
+    "Chicago",
+    "Cobb",
+    "Colorless Tsukuru Tazaki",
+    "Crash",
+    "Crouching Tiger, Hidden Dragon",
+    "Curry",
+    "Daisy",
+    "Daphne",
+    "Death Proof",
+    "Death's End",
+    "Deepwater Horizon",
+    "Deja Vu",
+    "Django Unchained",
+    "Donnie Darko",
+    "Doom",
+    "Dreamgirls",
+    "Edge of Tomorrow",
+    "Elf",
+    "Elizabeth",
+    "Elsa",
+    "Everything Everywhere All at Once",
+    "Film",
+    "Four Christmases",
+    "Fred",
+    "Frequency",
+    "Fujita",
+    "Fukushima",
+    "Gladiator",
+    "Glass",
+    "Gone Girl",
+    "Green Book",
+    "Grover",
+    "Hairspray",
+    "Harry Potter and the Chamber of Secrets",
+    "Harry Potter and the Deathly Hallows",
+    "Harry Potter and the Deathly Hallows: Part 1",
+    "Harry Potter and the Deathly Hallows: Part 2",
+    "Harry Potter and the Goblet of Fire",
+    "Harry Potter and the Half-Blood Prince",
+    "Harry Potter and the Order of the Phoenix",
+    "Harry Potter and the Prisoner of Azkaban",
+    "Harry Potter and the Sorcerer's Stone",
+    "Hawking",
+    "Heather",
+    "Hedwig and the Angry Inch",
+    "Her",
+    "Hero",
+    "Holes",
+    "Hot Tub Time Machine",
+    "House of Flying Daggers",
+    "Ice Age",
+    "Ichiro",
+    "In the Heights",
+    "In the Mood for Love",
+    "Inglourious Basterds",
+    "Insomnia",
+    "Interstellar",
+    "Into the Woods",
+    "Iris",
+    "Ivy",
+    "Jean Grey",
+    "John",
+    "Jordan",
+    "Kafka on the Shore",
+    "Kate & Leopold",
+    "Katrina",
+    "Kill Bill: Volume 1",
+    "Kill Bill: Volume 2",
+    "Kobe",
+    "La La Land",
+    "Lando",
+    "Leo",
+    "Les Misérables",
+    "Live Free or Die Hard",
+    "Looper",
+    "Love Actually",
+    "Madagascar",
+    "Madonna",
+    "Mary Poppins Returns",
+    "Matsui",
+    "Million Dollar Baby",
+    "Miyazaki",
+    "Moonlight",
+    "Moonrise Kingdom",
+    "Moulin Rouge!",
+    "My Blueberry Nights",
+    "Nakamura",
+    "Nina",
+    "No Country for Old Men",
+    "Nomadland",
+    "Obama",
+    "Ohtani",
+    "Olive",
+    "Once Upon a Time in Hollywood",
+    "Oppenheimer",
+    "Parasite",
+    "Paul",
+    "Percy Jackson & the Olympians",
+    "Peter",
+    "Pirates of the Caribbean: At World's End",
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Pirates of the Caribbean: On Stranger Tides",
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Predestination",
+    "Primer",
+    "Prince",
+    "Professor X",
+    "Red",
+    "Red 2",
+    "Red Dragon",
+    "Rent",
+    "Revenge of the Sith",
+    "Rogue One",
+    "Safety Not Guaranteed",
+    "Saw",
+    "Shaggy",
+    "Silver",
+    "Sin City",
+    "Sin City: A Dame to Kill For",
+    "Slumdog Millionaire",
+    "Solo",
+    "Source Code",
+    "Spirited Away",
+    "Spotlight",
+    "Sulu",
+    "Sweeney Todd: The Demon Barber of Fleet Street",
+    "Tanaka",
+    "Tenet",
+    "Teresa",
     "The Arab Spring",
+    "The Artist",
     "The Brexit Vote",
+    "The Butterfly Effect",
     "The COVID-19 Pandemic",
+    "The Da Vinci Code",
+    "The Dark Forest",
+    "The Departed",
+    "The Fault in Our Stars",
+    "The First Fifteen Lives of Harry August",
+    "The Force Awakens",
+    "The Girl with the Dragon Tattoo",
+    "The Grand Budapest Hotel",
+    "The Grandmaster",
     "The Great Recession",
+    "The Greatest Showman",
+    "The Hateful Eight",
+    "The Holiday",
+    "The Hunger Games",
+    "The Hurt Locker",
     "The Iraq War",
+    "The Irishman",
     "The January 6th Insurrection",
+    "The Killer",
+    "The King's Speech",
+    "The Lake House",
+    "The Last Jedi",
     "The London Bombings",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers",
+    "The Map of Chaos",
+    "The Map of Time",
+    "The Map of the Sky",
     "The Opioid Epidemic",
+    "The Phantom of the Opera",
+    "The Revenant",
+    "The Rise of Skywalker",
+    "The Road",
     "The Russian Invasion of Ukraine",
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause",
+    "The Shape of Water",
     "The Syrian Civil War",
-    "The War on Terror"
+    "The Three-Body Problem",
+    "The Time Traveler's Almanac",
+    "The Time Traveler's Wife",
+    "The Village",
+    "The Wandering Earth",
+    "The War on Terror",
+    "Tick, Tick... Boom!",
+    "Troy",
+    "Trump",
+    "Twilight",
+    "Vantage Point",
+    "Velma",
+    "Violet",
+    "X-Men: Days of Future Past",
+    "X-Men: First Class"
   ],
   "2D Animated Films": [
     "101 Dalmatians",
@@ -248,6 +1399,9 @@
     "Whisper of the Heart",
     "Winnie the Pooh"
   ],
+  "2nd Century BC": [
+    "Emperor Wu of Han"
+  ],
   "3D Animated Films": [
     "A Bug's Life",
     "Big Hero 6",
@@ -283,9 +1437,47 @@
     "Wreck-It Ralph",
     "Zootopia"
   ],
+  "3rd Century": [
+    "Guan Yu"
+  ],
+  "3rd Century BC": [
+    "Emperor Qin Shi Huang"
+  ],
+  "4th Century BC": [
+    "Aristotle",
+    "Plato",
+    "The Mahabharata"
+  ],
   "5th Century": [
+    "Saint Patrick",
     "The Fall of Rome",
     "The Sack of Rome"
+  ],
+  "5th Century BC": [
+    "Confucius",
+    "Plato",
+    "Socrates",
+    "Sun Tzu",
+    "The Ramayana"
+  ],
+  "6th Century BC": [
+    "Confucius",
+    "Sun Tzu"
+  ],
+  "8th Century": [
+    "Charlemagne",
+    "Du Fu",
+    "Li Bai"
+  ],
+  "8th Century BC": [
+    "Homer",
+    "Iliad",
+    "Odyssey",
+    "The Iliad",
+    "The Odyssey"
+  ],
+  "9th Century": [
+    "Charlemagne"
   ],
   "Abstract Concepts": [
     "INT",
@@ -569,6 +1761,7 @@
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
     "Guan Yu",
+    "Pharaoh",
     "Plato",
     "Socrates",
     "Sun Tzu"
@@ -9337,14 +10530,17 @@
     "Minotaur"
   ],
   "Greek Mythology": [
+    "Athena",
     "Cyclops",
     "Europa",
     "Helen",
     "Hera",
+    "Hermes",
     "Horse",
     "Iliad",
     "Odyssey",
     "Paris",
+    "Siren",
     "Troy"
   ],
   "Green Things": [
@@ -10724,7 +11920,11 @@
   ],
   "Medieval Rulers": [
     "Charlemagne",
+    "Count",
+    "Duke",
     "Khan",
+    "King",
+    "Tsar",
     "William the Conqueror",
     "Zhu Yuanzhang"
   ],
@@ -11061,12 +12261,16 @@
   ],
   "Modern Rulers": [
     "Catherine",
+    "Count",
+    "Duke",
     "Elizabeth",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
     "Franklin D. Roosevelt",
     "George Washington",
+    "King",
     "Napoleon Bonaparte",
+    "Tsar",
     "Victoria",
     "Winston Churchill",
     "Zhu Yuanzhang"
@@ -11582,6 +12786,9 @@
     "Birdman",
     "The Revenant"
   ],
+  "Movies directed by Alexander Mackendrick": [
+    "The Ladykillers"
+  ],
   "Movies directed by Alfonso Cuarón": [
     "Harry Potter and the Prisoner of Azkaban"
   ],
@@ -11590,6 +12797,9 @@
   ],
   "Movies directed by Andrew Stanton": [
     "WALL-E"
+  ],
+  "Movies directed by Andrzej Bartkowiak": [
+    "Doom"
   ],
   "Movies directed by Ang Lee": [
     "Crouching Tiger, Hidden Dragon",
@@ -11619,6 +12829,7 @@
   ],
   "Movies directed by Ben Sharpsteen": [
     "Dumbo",
+    "Pinnochio",
     "Pinocchio"
   ],
   "Movies directed by Bernardo Bertolucci": [
@@ -11641,6 +12852,9 @@
   ],
   "Movies directed by Brian De Palma": [
     "Scarface"
+  ],
+  "Movies directed by Brian Henson": [
+    "The Muppet Christmas Carol"
   ],
   "Movies directed by Brian Levant": [
     "Jingle All the Way"
@@ -11677,6 +12891,9 @@
   "Movies directed by Chris Sanders": [
     "Lilo & Stitch"
   ],
+  "Movies directed by Chris Wedge": [
+    "Ice Age"
+  ],
   "Movies directed by Christopher Nolan": [
     "Insomnia",
     "Interstellar",
@@ -11700,6 +12917,9 @@
   "Movies directed by Colin Trevorrow": [
     "Safety Not Guaranteed"
   ],
+  "Movies directed by Cy Endfield": [
+    "Zulu"
+  ],
   "Movies directed by Damien Chazelle": [
     "La La Land"
   ],
@@ -11716,7 +12936,8 @@
   "Movies directed by David Fincher": [
     "Alien 3",
     "Fight Club",
-    "Gone Girl"
+    "Gone Girl",
+    "The Killer"
   ],
   "Movies directed by David Greene": [
     "Godspell"
@@ -11746,6 +12967,9 @@
   "Movies directed by Dennis Hopper": [
     "Easy Rider"
   ],
+  "Movies directed by Dianne Jackson": [
+    "Snowman"
+  ],
   "Movies directed by Donald Cammell": [
     "Performance"
   ],
@@ -11760,6 +12984,9 @@
   ],
   "Movies directed by Eric Bress": [
     "The Butterfly Effect"
+  ],
+  "Movies directed by Eric Darnell": [
+    "Madagascar"
   ],
   "Movies directed by Francis Ford Coppola": [
     "The Godfather",
@@ -11896,6 +13123,9 @@
   "Movies directed by James Mangold": [
     "Kate & Leopold"
   ],
+  "Movies directed by James Wan": [
+    "Saw"
+  ],
   "Movies directed by Jared Bush": [
     "Encanto"
   ],
@@ -11970,6 +13200,9 @@
   "Movies directed by Jonathan Demme": [
     "The Silence of the Lambs"
   ],
+  "Movies directed by Jonathan Lynn": [
+    "Clue"
+  ],
   "Movies directed by Kathryn Bigelow": [
     "The Hurt Locker"
   ],
@@ -11978,6 +13211,9 @@
   ],
   "Movies directed by Kevin Reynolds": [
     "Robin Hood: Prince of Thieves"
+  ],
+  "Movies directed by Kunihiko Yuyama": [
+    "Pokemon"
   ],
   "Movies directed by Lee Unkrich": [
     "Coco"
@@ -12036,11 +13272,17 @@
     "The Santa Clause 2",
     "The Santa Clause 3: The Escape Clause"
   ],
+  "Movies directed by Michael Mann": [
+    "Heat"
+  ],
   "Movies directed by Michael Powell": [
     "The Red Shoes"
   ],
   "Movies directed by Michael Spierig": [
     "Predestination"
+  ],
+  "Movies directed by Michael Winner": [
+    "Death Wish"
   ],
   "Movies directed by Michel Hazanavicius": [
     "The Artist"
@@ -12053,6 +13295,7 @@
   ],
   "Movies directed by Mike Newell": [
     "Donnie Brasco",
+    "Four Weddings and a Funeral",
     "Harry Potter and the Goblet of Fire"
   ],
   "Movies directed by Mike Nichols": [
@@ -12084,8 +13327,12 @@
     "Fiddler on the Roof",
     "Jesus Christ Superstar"
   ],
+  "Movies directed by Oliver Parker": [
+    "Othello"
+  ],
   "Movies directed by Oliver Stone": [
-    "Platoon"
+    "Platoon",
+    "The Hand"
   ],
   "Movies directed by Orson Welles": [
     "Citizen Kane",
@@ -12093,6 +13340,9 @@
   ],
   "Movies directed by Paul Haggis": [
     "Crash"
+  ],
+  "Movies directed by Penny Marshall": [
+    "Big"
   ],
   "Movies directed by Pete Docter": [
     "Soul"
@@ -12102,6 +13352,9 @@
   ],
   "Movies directed by Pete Travis": [
     "Vantage Point"
+  ],
+  "Movies directed by Peter Cattaneo": [
+    "The Full Monty"
   ],
   "Movies directed by Peter Collinson": [
     "The Italian Job"
@@ -12175,6 +13428,9 @@
   "Movies directed by Robert Benton": [
     "Kramer vs. Kramer"
   ],
+  "Movies directed by Robert Hamer": [
+    "Kind Hearts and Coronets"
+  ],
   "Movies directed by Robert Redford": [
     "Ordinary People"
   ],
@@ -12189,6 +13445,7 @@
     "Mary Poppins"
   ],
   "Movies directed by Robert Wise": [
+    "Everest",
     "The Sound of Music",
     "West Side Story"
   ],
@@ -12204,6 +13461,9 @@
   ],
   "Movies directed by Roger Allers": [
     "The Lion King"
+  ],
+  "Movies directed by Roger Donaldson": [
+    "Dante's Peak"
   ],
   "Movies directed by Roland Emmerich": [
     "Stargate"
@@ -12281,6 +13541,7 @@
     "E.T.",
     "Jaws",
     "Jurassic Park",
+    "Schindler's List",
     "West Side Story"
   ],
   "Movies directed by Stewart Raffill": [
@@ -12334,6 +13595,9 @@
     "The Exorcist",
     "The French Connection"
   ],
+  "Movies directed by Wolfgang Petersen": [
+    "Troy"
+  ],
   "Movies directed by Wolfgang Reitherman": [
     "101 Dalmatians",
     "Robin Hood",
@@ -12377,6 +13641,16 @@
   ],
   "Movies featuring Adriana Caselotti": [
     "Snow White and the Seven Dwarfs"
+  ],
+  "Movies featuring Adrien Brody": [
+    "The Village"
+  ],
+  "Movies featuring Aileen Quinn": [
+    "Annie"
+  ],
+  "Movies featuring Akira Terao": [
+    "Dreams",
+    "Ran"
   ],
   "Movies featuring Al Pacino": [
     "Dog Day Afternoon",
@@ -12428,7 +13702,10 @@
     "Rise of the Guardians"
   ],
   "Movies featuring Alec Guinness": [
-    "Star Wars"
+    "Lawrence of Arabia",
+    "Star Wars",
+    "The Bridge on the River Kwai",
+    "The Ladykillers"
   ],
   "Movies featuring Alex Winter": [
     "Bill & Ted's Bogus Journey",
@@ -12437,14 +13714,28 @@
   "Movies featuring Alexandra Shipp": [
     "Tick, Tick... Boom!"
   ],
+  "Movies featuring Alida Valli": [
+    "The Third Man"
+  ],
   "Movies featuring Amanda Seyfried": [
     "Les Misérables"
   ],
   "Movies featuring Amy Adams": [
-    "Arrival"
+    "Arrival",
+    "Her"
+  ],
+  "Movies featuring Amy Smart": [
+    "The Butterfly Effect"
   ],
   "Movies featuring Andie MacDowell": [
+    "Four Weddings and a Funeral",
     "Groundhog Day"
+  ],
+  "Movies featuring Andre Braugher": [
+    "Frequency"
+  ],
+  "Movies featuring Andrea Marcovicci": [
+    "The Hand"
   ],
   "Movies featuring Andrea Martin": [
     "Hedwig and the Angry Inch"
@@ -12454,6 +13745,10 @@
   ],
   "Movies featuring Andy Garcia": [
     "The Godfather Part III"
+  ],
+  "Movies featuring Andy Lau": [
+    "Days of Being Wild",
+    "House of Flying Daggers"
   ],
   "Movies featuring Angela Lansbury": [
     "Beauty and the Beast"
@@ -12467,8 +13762,14 @@
   "Movies featuring Anil Kapoor": [
     "Slumdog Millionaire"
   ],
+  "Movies featuring Anita Pallenberg": [
+    "Performance"
+  ],
   "Movies featuring Anna Kendrick": [
     "Into the Woods"
+  ],
+  "Movies featuring Anne Bancroft": [
+    "The Graduate"
   ],
   "Movies featuring Anne Hathaway": [
     "Interstellar",
@@ -12477,6 +13778,9 @@
   "Movies featuring Annette Bening": [
     "American Beauty"
   ],
+  "Movies featuring Annie McEnroe": [
+    "The Hand"
+  ],
   "Movies featuring Ansel Elgort": [
     "West Side Story"
   ],
@@ -12484,7 +13788,10 @@
     "Coco"
   ],
   "Movies featuring Anthony Hopkins": [
-    "Red Dragon"
+    "Howard's End",
+    "Red Dragon",
+    "The Remains of the Day",
+    "The Silence of the Lambs"
   ],
   "Movies featuring Anthony Mackie": [
     "The Hurt Locker"
@@ -12495,12 +13802,18 @@
   "Movies featuring Anthony Rapp": [
     "Rent"
   ],
+  "Movies featuring Anton Walbrook": [
+    "The Red Shoes"
+  ],
   "Movies featuring Antonio Banderas": [
     "Evita"
   ],
   "Movies featuring Ariana DeBose": [
     "West Side Story",
     "Wish"
+  ],
+  "Movies featuring Arliss Howard": [
+    "The Killer"
   ],
   "Movies featuring Arnold Schwarzenegger": [
     "Jingle All the Way",
@@ -12509,6 +13822,9 @@
   ],
   "Movies featuring Ashton Kutcher": [
     "The Butterfly Effect"
+  ],
+  "Movies featuring Ashton Sanders": [
+    "Moonlight"
   ],
   "Movies featuring Aubrey Plaza": [
     "Safety Not Guaranteed"
@@ -12535,19 +13851,34 @@
     "Jesus Christ Superstar"
   ],
   "Movies featuring Ben Affleck": [
-    "Argo"
+    "Argo",
+    "Armageddon",
+    "Gone Girl"
   ],
   "Movies featuring Ben Cross": [
     "Chariots of Fire"
   ],
   "Movies featuring Ben Kingsley": [
-    "Gandhi"
+    "Gandhi",
+    "Schindler's List"
+  ],
+  "Movies featuring Ben Stiller": [
+    "Madagascar"
+  ],
+  "Movies featuring Ben Whishaw": [
+    "Mary Poppins Returns"
   ],
   "Movies featuring Benedict Cumberbatch": [
     "The Grinch"
   ],
   "Movies featuring Benjamin Bratt": [
     "Coco"
+  ],
+  "Movies featuring Benny Hill": [
+    "The Italian Job"
+  ],
+  "Movies featuring Bert Lahr": [
+    "The Wizard of Oz"
   ],
   "Movies featuring Betty Lou Gerson": [
     "101 Dalmatians"
@@ -12559,14 +13890,20 @@
     "Dreamgirls"
   ],
   "Movies featuring Bill Murray": [
+    "Ghostbusters",
+    "Ghostbusters II",
     "Groundhog Day",
     "Scrooged"
   ],
   "Movies featuring Bill Nighy": [
+    "About Time",
     "Arthur Christmas",
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
     "Pirates of the Caribbean: The Curse of the Black Pearl"
+  ],
+  "Movies featuring Bill Paxton": [
+    "Edge of Tomorrow"
   ],
   "Movies featuring Bill Shirley": [
     "Sleeping Beauty"
@@ -12595,6 +13932,9 @@
   "Movies featuring Bing Crosby": [
     "White Christmas"
   ],
+  "Movies featuring Bob Gunton": [
+    "The Shawshank Redemption"
+  ],
   "Movies featuring Bob Newhart": [
     "The Rescuers",
     "The Rescuers Down Under"
@@ -12602,12 +13942,19 @@
   "Movies featuring Bobby Driscoll": [
     "Peter Pan"
   ],
+  "Movies featuring Bonnie Bedelia": [
+    "Die Hard",
+    "Die Hard 2"
+  ],
   "Movies featuring Boris Karloff": [
     "How the Grinch Stole Christmas"
   ],
   "Movies featuring Brad Pitt": [
+    "12 Monkeys",
+    "Fight Club",
     "Inglourious Basterds",
-    "Once Upon a Time in Hollywood"
+    "Once Upon a Time in Hollywood",
+    "Troy"
   ],
   "Movies featuring Brenton Thwaites": [
     "Pirates of the Caribbean: Dead Men Tell No Tales"
@@ -12620,6 +13967,14 @@
   ],
   "Movies featuring Brian Geraghty": [
     "The Hurt Locker"
+  ],
+  "Movies featuring Brigitte Lin": [
+    "Ashes of Time",
+    "Chungking Express"
+  ],
+  "Movies featuring Britt Ekland": [
+    "Get Carter",
+    "The Wicker Man"
   ],
   "Movies featuring Bruce Willis": [
     "12 Monkeys",
@@ -12648,6 +14003,9 @@
   "Movies featuring Bryan Cranston": [
     "Argo"
   ],
+  "Movies featuring Bryce Dallas Howard": [
+    "The Village"
+  ],
   "Movies featuring Bud Luckey": [
     "Winnie the Pooh"
   ],
@@ -12666,6 +14024,12 @@
   "Movies featuring Candy Candido": [
     "The Great Mouse Detective"
   ],
+  "Movies featuring Candy Clark": [
+    "The Man Who Fell to Earth"
+  ],
+  "Movies featuring Cao Cuifen": [
+    "Raise the Red Lantern"
+  ],
   "Movies featuring Carl Anderson": [
     "Jesus Christ Superstar"
   ],
@@ -12679,11 +14043,45 @@
     "The Force Awakens",
     "The Last Jedi"
   ],
+  "Movies featuring Carrie Henn": [
+    "Aliens"
+  ],
+  "Movies featuring Cary Elwes": [
+    "Saw"
+  ],
+  "Movies featuring Casey Gooden": [
+    "Primer"
+  ],
   "Movies featuring Cate Bauer": [
     "101 Dalmatians"
   ],
+  "Movies featuring Catherine O'Hara": [
+    "The Nightmare Before Christmas"
+  ],
   "Movies featuring Catherine Zeta-Jones": [
     "Chicago"
+  ],
+  "Movies featuring Celia Johnson": [
+    "Brief Encounter"
+  ],
+  "Movies featuring Chang Chen": [
+    "Happy Together",
+    "The Grandmaster"
+  ],
+  "Movies featuring Charles Bronson": [
+    "Death Wish"
+  ],
+  "Movies featuring Charles Dance": [
+    "Alien 3"
+  ],
+  "Movies featuring Charles Durning": [
+    "Dog Day Afternoon"
+  ],
+  "Movies featuring Charles Hallahan": [
+    "Dante's Peak"
+  ],
+  "Movies featuring Charles S. Dutton": [
+    "Alien 3"
   ],
   "Movies featuring Charlie Brown": [
     "A Charlie Brown Christmas"
@@ -12693,6 +14091,9 @@
   ],
   "Movies featuring Charlize Theron": [
     "The Devil's Advocate"
+  ],
+  "Movies featuring Chazz Palminteri": [
+    "The Usual Suspects"
   ],
   "Movies featuring Cheech Marin": [
     "Oliver & Company"
@@ -12706,6 +14107,14 @@
   "Movies featuring Cho Yeo-jeong": [
     "Parasite"
   ],
+  "Movies featuring Chow Yun-fat": [
+    "A Better Tomorrow",
+    "Crouching Tiger, Hidden Dragon",
+    "Hard Boiled"
+  ],
+  "Movies featuring Chris Elliott": [
+    "Groundhog Day"
+  ],
   "Movies featuring Chris Evans": [
     "Avengers: Endgame"
   ],
@@ -12715,6 +14124,9 @@
   "Movies featuring Chris Pine": [
     "Rise of the Guardians",
     "Wish"
+  ],
+  "Movies featuring Chris Rock": [
+    "Madagascar"
   ],
   "Movies featuring Chris Sanders": [
     "Lilo & Stitch"
@@ -12726,6 +14138,7 @@
     "Pocahontas"
   ],
   "Movies featuring Christian Rub": [
+    "Pinnochio",
     "Pinocchio"
   ],
   "Movies featuring Christoph Waltz": [
@@ -12736,15 +14149,19 @@
     "The Little Mermaid"
   ],
   "Movies featuring Christopher Lee": [
-    "Attack of the Clones"
+    "Attack of the Clones",
+    "The Wicker Man"
   ],
   "Movies featuring Christopher Lloyd": [
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III",
+    "Clue",
     "One Flew Over the Cuckoo's Nest"
   ],
   "Movies featuring Christopher Plummer": [
+    "Somewhere in Time",
+    "The Lake House",
     "The Sound of Music"
   ],
   "Movies featuring Christopher Reeve": [
@@ -12756,8 +14173,12 @@
   "Movies featuring Cillian Murphy": [
     "Oppenheimer"
   ],
+  "Movies featuring Clark Gable": [
+    "Gone with the Wind"
+  ],
   "Movies featuring Cliff Edwards": [
     "Dumbo",
+    "Pinnochio",
     "Pinocchio"
   ],
   "Movies featuring Clint Eastwood": [
@@ -12777,13 +14198,18 @@
   "Movies featuring Craig Ferguson": [
     "Winnie the Pooh"
   ],
+  "Movies featuring Craig Robinson": [
+    "Hot Tub Time Machine"
+  ],
   "Movies featuring Daisy Ridley": [
     "The Force Awakens",
     "The Last Jedi",
     "The Rise of Skywalker"
   ],
   "Movies featuring Dan Aykroyd": [
-    "Driving Miss Daisy"
+    "Driving Miss Daisy",
+    "Ghostbusters",
+    "Ghostbusters II"
   ],
   "Movies featuring Daniel Radcliffe": [
     "Harry Potter and the Chamber of Secrets",
@@ -12806,11 +14232,17 @@
   "Movies featuring Danny Elfman": [
     "The Nightmare Before Christmas"
   ],
+  "Movies featuring Danny Glover": [
+    "Saw"
+  ],
   "Movies featuring Danny Kaye": [
     "White Christmas"
   ],
   "Movies featuring Darren McGavin": [
     "A Christmas Story"
+  ],
+  "Movies featuring Daryl Hannah": [
+    "Kill Bill: Volume 2"
   ],
   "Movies featuring Daveigh Chase": [
     "Lilo & Stitch"
@@ -12818,22 +14250,48 @@
   "Movies featuring David Alvarez": [
     "West Side Story"
   ],
+  "Movies featuring David Bowie": [
+    "Snowman",
+    "The Man Who Fell to Earth"
+  ],
   "Movies featuring David Carradine": [
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2"
   ],
+  "Movies featuring David Gulpilil": [
+    "Walkabout"
+  ],
   "Movies featuring David Haskell": [
     "Godspell"
+  ],
+  "Movies featuring David Krumholtz": [
+    "The Santa Clause 2"
+  ],
+  "Movies featuring David Morse": [
+    "The Green Mile"
   ],
   "Movies featuring David Ogden Stiers": [
     "Lilo & Stitch",
     "Pocahontas"
   ],
+  "Movies featuring David Schwimmer": [
+    "Madagascar"
+  ],
   "Movies featuring David Spade": [
     "The Emperor's New Groove"
   ],
   "Movies featuring David Strathairn": [
+    "A Map of the World",
     "Nomadland"
+  ],
+  "Movies featuring David Sullivan": [
+    "Primer"
+  ],
+  "Movies featuring David Tomlinson": [
+    "Mary Poppins"
+  ],
+  "Movies featuring David Wood": [
+    "If...."
   ],
   "Movies featuring Debbie Reynolds": [
     "Singin' in the Rain"
@@ -12841,14 +14299,30 @@
   "Movies featuring Debra Winger": [
     "Terms of Endearment"
   ],
+  "Movies featuring Dee Wallace": [
+    "E.T."
+  ],
   "Movies featuring Demi Moore": [
     "The Hunchback of Notre Dame"
   ],
+  "Movies featuring Denis Leary": [
+    "Ice Age"
+  ],
+  "Movies featuring Dennis Hopper": [
+    "Easy Rider"
+  ],
+  "Movies featuring Dennis Price": [
+    "Kind Hearts and Coronets"
+  ],
   "Movies featuring Dennis Quaid": [
-    "Frequency"
+    "Frequency",
+    "Vantage Point"
   ],
   "Movies featuring Denzel Washington": [
     "Deja Vu"
+  ],
+  "Movies featuring Dermot Mulroney": [
+    "Copycat"
   ],
   "Movies featuring Dev Patel": [
     "Slumdog Millionaire"
@@ -12857,19 +14331,23 @@
     "Encanto"
   ],
   "Movies featuring Diane Keaton": [
+    "Annie Hall",
+    "Manhattan",
     "The Godfather Part III"
   ],
   "Movies featuring Dick Van Dyke": [
     "Mary Poppins"
   ],
   "Movies featuring Dickie Jones": [
+    "Pinnochio",
     "Pinocchio"
   ],
   "Movies featuring Diego Luna": [
     "Rogue One"
   ],
   "Movies featuring Domhnall Gleeson": [
-    "About Time"
+    "About Time",
+    "The Revenant"
   ],
   "Movies featuring Don Cheadle": [
     "Crash"
@@ -12880,10 +14358,14 @@
   "Movies featuring Donald Moffat": [
     "The Thing"
   ],
+  "Movies featuring Donald O'Connor": [
+    "Singin' in the Rain"
+  ],
   "Movies featuring Donald Pleasence": [
     "Escape from New York"
   ],
   "Movies featuring Donald Sutherland": [
+    "Don't Look Now",
     "Ordinary People"
   ],
   "Movies featuring Donna Murphy": [
@@ -12895,11 +14377,20 @@
   "Movies featuring Donnie Yen": [
     "Rogue One"
   ],
+  "Movies featuring Dorothy Comingore": [
+    "Citizen Kane"
+  ],
+  "Movies featuring Drew Barrymore": [
+    "E.T."
+  ],
   "Movies featuring Dustin Hoffman": [
     "Kramer vs. Kramer",
-    "Rain Man"
+    "Midnight Cowboy",
+    "Rain Man",
+    "The Graduate"
   ],
   "Movies featuring Dwayne Johnson": [
+    "Doom",
     "Moana"
   ],
   "Movies featuring Eartha Kitt": [
@@ -12914,16 +14405,38 @@
   "Movies featuring Eddie Murphy": [
     "Mulan"
   ],
+  "Movies featuring Edmund Gwenn": [
+    "Miracle on 34th Street"
+  ],
+  "Movies featuring Edmund Hillary": [
+    "Everest"
+  ],
   "Movies featuring Edward Brophy": [
     "Dumbo"
   ],
+  "Movies featuring Edward Fox": [
+    "Gandhi"
+  ],
+  "Movies featuring Edward Furlong": [
+    "Terminator 2: Judgment Day"
+  ],
   "Movies featuring Edward Norton": [
     "Birdman",
+    "Fight Club",
     "Red Dragon"
+  ],
+  "Movies featuring Edward Woodward": [
+    "The Wicker Man"
+  ],
+  "Movies featuring Eileen Brennan": [
+    "Clue"
   ],
   "Movies featuring Eleanor Audley": [
     "Cinderella",
     "Sleeping Beauty"
+  ],
+  "Movies featuring Eleanor Parker": [
+    "The Sound of Music"
   ],
   "Movies featuring Eli Wallach": [
     "The Good, the Bad and the Ugly"
@@ -12936,8 +14449,18 @@
   "Movies featuring Elizabeth Berridge": [
     "Amadeus"
   ],
+  "Movies featuring Elizabeth Debicki": [
+    "Tenet"
+  ],
   "Movies featuring Elizabeth Mitchell": [
-    "The Santa Clause 2"
+    "The Santa Clause 2",
+    "The Santa Clause 3: The Escape Clause"
+  ],
+  "Movies featuring Elizabeth Perkins": [
+    "Big"
+  ],
+  "Movies featuring Ellen Burstyn": [
+    "The Exorcist"
   ],
   "Movies featuring Ellen Greene": [
     "Little Shop of Horrors"
@@ -12951,6 +14474,7 @@
   "Movies featuring Emily Blunt": [
     "Edge of Tomorrow",
     "Into the Woods",
+    "Looper",
     "Mary Poppins Returns",
     "Oppenheimer"
   ],
@@ -12959,8 +14483,10 @@
     "La La Land"
   ],
   "Movies featuring Emma Thompson": [
+    "Howard's End",
     "Love Actually",
-    "Sense and Sensibility"
+    "Sense and Sensibility",
+    "The Remains of the Day"
   ],
   "Movies featuring Emma Watson": [
     "Harry Potter and the Chamber of Secrets",
@@ -12975,6 +14501,15 @@
   "Movies featuring Emmy Rossum": [
     "The Phantom of the Opera"
   ],
+  "Movies featuring Eric Bana": [
+    "Troy"
+  ],
+  "Movies featuring Eric Christmas": [
+    "The Philadelphia Experiment"
+  ],
+  "Movies featuring Eric Stuart": [
+    "Pokemon"
+  ],
   "Movies featuring Ernest Borgnine": [
     "Escape from New York"
   ],
@@ -12986,6 +14521,9 @@
     "The Rescuers",
     "The Rescuers Down Under"
   ],
+  "Movies featuring Eva Green": [
+    "Sin City: A Dame to Kill For"
+  ],
   "Movies featuring Evelyn Venable": [
     "Pinocchio"
   ],
@@ -12993,16 +14531,32 @@
     "Attack of the Clones",
     "Moulin Rouge!",
     "Revenge of the Sith",
-    "The Phantom Menace"
+    "The Phantom Menace",
+    "Trainspotting"
+  ],
+  "Movies featuring Ewen Bremner": [
+    "Trainspotting"
   ],
   "Movies featuring F. Murray Abraham": [
     "Amadeus"
   ],
+  "Movies featuring Faye Dunaway": [
+    "Chinatown"
+  ],
+  "Movies featuring Faye Wong": [
+    "Chungking Express"
+  ],
   "Movies featuring Felicity Jones": [
     "Rogue One"
   ],
+  "Movies featuring Fernando Rey": [
+    "The French Connection"
+  ],
   "Movies featuring Forest Whitaker": [
-    "Rogue One"
+    "Arrival",
+    "Rogue One",
+    "The Crying Game",
+    "Vantage Point"
   ],
   "Movies featuring Frances McDormand": [
     "Nomadland"
@@ -13017,13 +14571,24 @@
   "Movies featuring Freida Pinto": [
     "Slumdog Millionaire"
   ],
+  "Movies featuring Gabriel Byrne": [
+    "The Usual Suspects"
+  ],
+  "Movies featuring Gabrielle Anwar": [
+    "Scent of a Woman"
+  ],
   "Movies featuring Gael García Bernal": [
     "Coco"
   ],
+  "Movies featuring Gary Lockwood": [
+    "2001: A Space Odyssey"
+  ],
   "Movies featuring Gary Oldman": [
-    "Harry Potter and the Prisoner of Azkaban"
+    "Harry Potter and the Prisoner of Azkaban",
+    "The Fifth Element"
   ],
   "Movies featuring Gene Hackman": [
+    "The French Connection",
     "Unforgiven"
   ],
   "Movies featuring Gene Kelly": [
@@ -13033,10 +14598,15 @@
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: On Stranger Tides",
     "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Shakespeare in Love",
     "The King's Speech"
   ],
   "Movies featuring George C. Scott": [
+    "Dr. Strangelove",
     "The Rescuers Down Under"
+  ],
+  "Movies featuring George Carlin": [
+    "Bill & Ted's Excellent Adventure"
   ],
   "Movies featuring George Sanders": [
     "The Jungle Book"
@@ -13050,6 +14620,13 @@
   "Movies featuring Glenn Close": [
     "Tarzan"
   ],
+  "Movies featuring Gong Li": [
+    "Farewell My Concubine",
+    "Raise the Red Lantern"
+  ],
+  "Movies featuring Graham Crowden": [
+    "Britannia Hospital"
+  ],
   "Movies featuring Graham Greene": [
     "Dances with Wolves"
   ],
@@ -13062,6 +14639,9 @@
   "Movies featuring Gwyneth Paltrow": [
     "Shakespeare in Love"
   ],
+  "Movies featuring Haley Joel Osment": [
+    "The Sixth Sense"
+  ],
   "Movies featuring Hans Conried": [
     "Peter Pan"
   ],
@@ -13073,7 +14653,8 @@
     "Return of the Jedi",
     "Star Wars",
     "The Empire Strikes Back",
-    "The Force Awakens"
+    "The Force Awakens",
+    "Working Girl"
   ],
   "Movies featuring Harvey Keitel": [
     "Reservoir Dogs"
@@ -13082,16 +14663,38 @@
     "Attack of the Clones",
     "Revenge of the Sith"
   ],
+  "Movies featuring He Saifei": [
+    "Raise the Red Lantern"
+  ],
+  "Movies featuring Helen Mirren": [
+    "Red 2",
+    "The Madness of King George"
+  ],
   "Movies featuring Helena Bonham Carter": [
+    "Fight Club",
     "Sweeney Todd: The Demon Barber of Fleet Street",
     "The King's Speech"
+  ],
+  "Movies featuring Henry Thomas": [
+    "E.T."
+  ],
+  "Movies featuring Hilary Mason": [
+    "Don't Look Now"
   ],
   "Movies featuring Hilary Swank": [
     "Insomnia",
     "Million Dollar Baby"
   ],
+  "Movies featuring Holly Hunter": [
+    "Copycat"
+  ],
+  "Movies featuring Hope Lange": [
+    "Death Wish"
+  ],
   "Movies featuring Hugh Grant": [
-    "Love Actually"
+    "Four Weddings and a Funeral",
+    "Love Actually",
+    "Sense and Sensibility"
   ],
   "Movies featuring Hugh Jackman": [
     "Kate & Leopold",
@@ -13110,6 +14713,12 @@
   ],
   "Movies featuring Ian Charleson": [
     "Chariots of Fire"
+  ],
+  "Movies featuring Ian Hendry": [
+    "Get Carter"
+  ],
+  "Movies featuring Ian Holm": [
+    "The Madness of King George"
   ],
   "Movies featuring Ian McDiarmid": [
     "Revenge of the Sith"
@@ -13135,20 +14744,42 @@
   "Movies featuring Irene Bedard": [
     "Pocahontas"
   ],
+  "Movies featuring Irène Jacob": [
+    "Othello"
+  ],
+  "Movies featuring Isuzu Yamada": [
+    "Throne of Blood"
+  ],
   "Movies featuring Jack Albertson": [
     "The Fox and the Hound"
   ],
   "Movies featuring Jack Black": [
     "The Holiday"
   ],
+  "Movies featuring Jack Hawkins": [
+    "The Bridge on the River Kwai",
+    "Zulu"
+  ],
+  "Movies featuring Jack Kehoe": [
+    "Serpico"
+  ],
   "Movies featuring Jack Nicholson": [
+    "Chinatown",
+    "Easy Rider",
     "One Flew Over the Cuckoo's Nest",
     "Terms of Endearment",
-    "The Departed"
+    "The Departed",
+    "The Shining"
+  ],
+  "Movies featuring Jai Courtney": [
+    "A Good Day to Die Hard"
   ],
   "Movies featuring Jake Gyllenhaal": [
     "Donnie Darko",
     "Source Code"
+  ],
+  "Movies featuring Jake Johnson": [
+    "Safety Not Guaranteed"
   ],
   "Movies featuring Jake Lloyd": [
     "The Phantom Menace"
@@ -13162,11 +14793,17 @@
   "Movies featuring James Earl Jones": [
     "The Lion King"
   ],
+  "Movies featuring James Fox": [
+    "Performance",
+    "The Remains of the Day"
+  ],
   "Movies featuring James Levine": [
     "Fantasia 2000"
   ],
   "Movies featuring James McAvoy": [
     "Arthur Christmas",
+    "Glass",
+    "X-Men: Days of Future Past",
     "X-Men: First Class"
   ],
   "Movies featuring James Spader": [
@@ -13180,6 +14817,7 @@
   ],
   "Movies featuring Jamie Foxx": [
     "Django Unchained",
+    "Dreamgirls",
     "Soul"
   ],
   "Movies featuring Jamie Lee Curtis": [
@@ -13188,15 +14826,25 @@
   "Movies featuring Jane Seymour": [
     "Somewhere in Time"
   ],
+  "Movies featuring Jared Gilman": [
+    "Moonrise Kingdom"
+  ],
   "Movies featuring Javier Bardem": [
     "No Country for Old Men",
     "Pirates of the Caribbean: Dead Men Tell No Tales"
   ],
   "Movies featuring Jaye Davidson": [
-    "Stargate"
+    "Stargate",
+    "The Crying Game"
   ],
   "Movies featuring Jean Dujardin": [
     "The Artist"
+  ],
+  "Movies featuring Jeff Goldblum": [
+    "Jurassic Park"
+  ],
+  "Movies featuring Jena Malone": [
+    "Donnie Darko"
   ],
   "Movies featuring Jennifer Connelly": [
     "A Beautiful Mind"
@@ -13207,17 +14855,35 @@
   "Movies featuring Jennifer Jason Leigh": [
     "The Hateful Eight"
   ],
+  "Movies featuring Jennifer Lawrence": [
+    "X-Men: First Class"
+  ],
+  "Movies featuring Jenny Agutter": [
+    "Walkabout"
+  ],
   "Movies featuring Jeremy Irons": [
+    "Die Hard with a Vengeance",
     "The Lion King"
   ],
   "Movies featuring Jeremy Renner": [
+    "Arrival",
     "The Hurt Locker"
   ],
   "Movies featuring Jerry Orbach": [
     "Beauty and the Beast"
   ],
+  "Movies featuring Jessica Alba": [
+    "Sin City",
+    "Sin City: A Dame to Kill For"
+  ],
+  "Movies featuring Jessica Chastain": [
+    "Interstellar"
+  ],
   "Movies featuring Jessica Tandy": [
     "Driving Miss Daisy"
+  ],
+  "Movies featuring Jet Li": [
+    "Hero"
   ],
   "Movies featuring Jim Caviezel": [
     "Frequency"
@@ -13228,26 +14894,43 @@
   "Movies featuring Jimmy Nail": [
     "Evita"
   ],
+  "Movies featuring Joan Allen": [
+    "The Ice Storm"
+  ],
   "Movies featuring Joan Chen": [
     "The Last Emperor"
   ],
+  "Movies featuring Joan Greenwood": [
+    "Kind Hearts and Coronets"
+  ],
+  "Movies featuring Joan Plowright": [
+    "Britannia Hospital"
+  ],
   "Movies featuring Joaquin Phoenix": [
     "Gladiator",
-    "Her"
+    "Her",
+    "The Village"
   ],
   "Movies featuring Jodi Benson": [
     "The Little Mermaid"
+  ],
+  "Movies featuring Jodie Foster": [
+    "The Silence of the Lambs"
   ],
   "Movies featuring Joe Flynn": [
     "The Rescuers"
   ],
   "Movies featuring Joe Pesci": [
+    "Goodfellas",
     "Home Alone",
     "Home Alone 2: Lost in New York",
     "The Irishman"
   ],
   "Movies featuring Joel Grey": [
     "Cabaret"
+  ],
+  "Movies featuring Joey Cramer": [
+    "Flight of the Navigator"
   ],
   "Movies featuring Joey Lawrence": [
     "Oliver & Company"
@@ -13267,6 +14950,7 @@
     "Dog Day Afternoon"
   ],
   "Movies featuring John Cleese": [
+    "Time Bandits",
     "Winnie the Pooh"
   ],
   "Movies featuring John Cusack": [
@@ -13278,16 +14962,39 @@
   "Movies featuring John Fiedler": [
     "The Many Adventures of Winnie the Pooh"
   ],
+  "Movies featuring John Forsythe": [
+    "Scrooged"
+  ],
   "Movies featuring John Goodman": [
     "Monsters University",
     "The Artist",
     "The Emperor's New Groove"
   ],
+  "Movies featuring John Hurt": [
+    "Alien"
+  ],
+  "Movies featuring John Huston": [
+    "Chinatown"
+  ],
+  "Movies featuring John Legend": [
+    "La La Land"
+  ],
   "Movies featuring John Leguizamo": [
-    "Encanto"
+    "Encanto",
+    "Ice Age",
+    "Moulin Rouge!"
   ],
   "Movies featuring John Lone": [
     "The Last Emperor"
+  ],
+  "Movies featuring John Malkovich": [
+    "Red 2"
+  ],
+  "Movies featuring John Payne": [
+    "Miracle on 34th Street"
+  ],
+  "Movies featuring John Randolph": [
+    "Serpico"
   ],
   "Movies featuring John Travolta": [
     "Grease",
@@ -13303,6 +15010,10 @@
     "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
+  "Movies featuring Jon Voight": [
+    "Holes",
+    "Midnight Cowboy"
+  ],
   "Movies featuring Jonathan Freeman": [
     "Aladdin"
   ],
@@ -13312,8 +15023,18 @@
   "Movies featuring Jonathan Pryce": [
     "Evita"
   ],
+  "Movies featuring Jonny Lee Miller": [
+    "Trainspotting"
+  ],
+  "Movies featuring Joseph Cotten": [
+    "Citizen Kane",
+    "The Third Man"
+  ],
   "Movies featuring Joseph Fiennes": [
     "Shakespeare in Love"
+  ],
+  "Movies featuring Joseph Gordon-Levitt": [
+    "Looper"
   ],
   "Movies featuring Josh Brolin": [
     "No Country for Old Men"
@@ -13322,6 +15043,7 @@
     "Frozen"
   ],
   "Movies featuring Jude Law": [
+    "My Blueberry Nights",
     "The Holiday"
   ],
   "Movies featuring Judge Reinhold": [
@@ -13333,9 +15055,15 @@
   "Movies featuring Judy Garland": [
     "The Wizard of Oz"
   ],
+  "Movies featuring Julianne Moore": [
+    "A Map of the World"
+  ],
   "Movies featuring Julie Andrews": [
     "Mary Poppins",
     "The Sound of Music"
+  ],
+  "Movies featuring Julie Christie": [
+    "Don't Look Now"
   ],
   "Movies featuring Juliette Binoche": [
     "The English Patient"
@@ -13347,16 +15075,29 @@
   "Movies featuring Justin Henry": [
     "Kramer vs. Kramer"
   ],
+  "Movies featuring Justin Long": [
+    "Live Free or Die Hard"
+  ],
+  "Movies featuring Kara Hayward": [
+    "Moonrise Kingdom"
+  ],
   "Movies featuring Karen Allen": [
     "Scrooged"
   ],
   "Movies featuring Karl Swenson": [
     "The Sword in the Stone"
   ],
+  "Movies featuring Karl Urban": [
+    "Doom"
+  ],
   "Movies featuring Kate Winslet": [
+    "Avatar: The Way of Water",
     "Sense and Sensibility",
     "The Holiday",
     "Titanic"
+  ],
+  "Movies featuring Katharine Ross": [
+    "The Graduate"
   ],
   "Movies featuring Kathryn Beaumont": [
     "Alice in Wonderland",
@@ -13367,6 +15108,9 @@
   ],
   "Movies featuring Katie Hanley": [
     "Godspell"
+  ],
+  "Movies featuring Katie Johnson": [
+    "The Ladykillers"
   ],
   "Movies featuring Kaya Scodelario": [
     "Pirates of the Caribbean: Dead Men Tell No Tales"
@@ -13381,6 +15125,9 @@
     "The Lake House",
     "The Matrix"
   ],
+  "Movies featuring Keir Dullea": [
+    "2001: A Space Odyssey"
+  ],
   "Movies featuring Keira Knightley": [
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
@@ -13390,6 +15137,9 @@
     "The Princess and the Frog",
     "The Thing"
   ],
+  "Movies featuring Kenneth Branagh": [
+    "Othello"
+  ],
   "Movies featuring Kermit the Frog": [
     "The Muppet Christmas Carol"
   ],
@@ -13398,10 +15148,12 @@
     "Robin Hood: Prince of Thieves"
   ],
   "Movies featuring Kevin Kline": [
-    "The Hunchback of Notre Dame"
+    "The Hunchback of Notre Dame",
+    "The Ice Storm"
   ],
   "Movies featuring Kevin Spacey": [
-    "American Beauty"
+    "American Beauty",
+    "The Usual Suspects"
   ],
   "Movies featuring Klaus Maria Brandauer": [
     "Out of Africa"
@@ -13410,6 +15162,7 @@
     "Frozen"
   ],
   "Movies featuring Kristin Scott Thomas": [
+    "Four Weddings and a Funeral",
     "The English Patient"
   ],
   "Movies featuring Kurt Russell": [
@@ -13424,11 +15177,23 @@
   "Movies featuring Larry Roberts": [
     "Lady and the Tramp"
   ],
+  "Movies featuring Laura Dern": [
+    "Jurassic Park"
+  ],
+  "Movies featuring Lauren Bacall": [
+    "The Big Sleep"
+  ],
   "Movies featuring Lauren Graham": [
     "Bad Santa"
   ],
   "Movies featuring Laurence Fishburne": [
+    "Othello",
     "The Matrix"
+  ],
+  "Movies featuring Lea Thompson": [
+    "Back to the Future",
+    "Back to the Future Part II",
+    "Back to the Future Part III"
   ],
   "Movies featuring Lee Sun-kyun": [
     "Parasite"
@@ -13436,6 +15201,18 @@
   "Movies featuring Lee Van Cleef": [
     "Escape from New York",
     "The Good, the Bad and the Ugly"
+  ],
+  "Movies featuring Leigh Whannell": [
+    "Saw"
+  ],
+  "Movies featuring Leon Lai": [
+    "Fallen Angels"
+  ],
+  "Movies featuring Leonard Frey": [
+    "Fiddler on the Roof"
+  ],
+  "Movies featuring Leonard Rossiter": [
+    "Britannia Hospital"
   ],
   "Movies featuring Leonardo DiCaprio": [
     "Django Unchained",
@@ -13447,28 +15224,55 @@
   "Movies featuring Leopold Stokowski": [
     "Fantasia"
   ],
+  "Movies featuring Lesley Ann Warren": [
+    "Clue"
+  ],
+  "Movies featuring Leslie Cheung": [
+    "A Better Tomorrow",
+    "Ashes of Time",
+    "Days of Being Wild",
+    "Farewell My Concubine",
+    "Happy Together"
+  ],
   "Movies featuring Leslie Grace": [
     "In the Heights"
   ],
   "Movies featuring Liam Neeson": [
     "Love Actually",
+    "Schindler's List",
     "The Phantom Menace"
+  ],
+  "Movies featuring Liev Schreiber": [
+    "Kate & Leopold"
   ],
   "Movies featuring Lin-Manuel Miranda": [
     "Mary Poppins Returns"
+  ],
+  "Movies featuring Linda Blair": [
+    "The Exorcist"
   ],
   "Movies featuring Linda Cardellini": [
     "Green Book"
   ],
   "Movies featuring Linda Hamilton": [
+    "Dante's Peak",
     "Terminator 2: Judgment Day",
     "The Terminator"
   ],
   "Movies featuring Linda Larkin": [
     "Aladdin"
   ],
+  "Movies featuring Linda May": [
+    "Nomadland"
+  ],
+  "Movies featuring Lionel Barrymore": [
+    "It's a Wonderful Life"
+  ],
   "Movies featuring Lisa Davis": [
     "101 Dalmatians"
+  ],
+  "Movies featuring Liv Tyler": [
+    "Armageddon"
   ],
   "Movies featuring Liza Minnelli": [
     "Cabaret"
@@ -13478,6 +15282,9 @@
   ],
   "Movies featuring Louise Fletcher": [
     "One Flew Over the Cuckoo's Nest"
+  ],
+  "Movies featuring Luc Roeg": [
+    "Walkabout"
   ],
   "Movies featuring Lucille La Verne": [
     "Snow White and the Seven Dwarfs"
@@ -13495,8 +15302,22 @@
     "Home Alone",
     "Home Alone 2: Lost in New York"
   ],
+  "Movies featuring Machiko Kyō": [
+    "Rashomon"
+  ],
+  "Movies featuring Madeleine Stowe": [
+    "12 Monkeys"
+  ],
+  "Movies featuring Madeline Kahn": [
+    "Clue"
+  ],
   "Movies featuring Madonna": [
     "Evita"
+  ],
+  "Movies featuring Maggie Cheung": [
+    "Days of Being Wild",
+    "Hero",
+    "In the Mood for Love"
   ],
   "Movies featuring Maggie Smith": [
     "Harry Potter and the Chamber of Secrets",
@@ -13506,11 +15327,28 @@
     "Green Book",
     "Moonlight"
   ],
+  "Movies featuring Malcolm McDowell": [
+    "A Clockwork Orange",
+    "If....",
+    "O Lucky Man!"
+  ],
   "Movies featuring Mandy Moore": [
     "Tangled"
   ],
   "Movies featuring Margot Robbie": [
     "Once Upon a Time in Hollywood"
+  ],
+  "Movies featuring Mariel Hemingway": [
+    "Manhattan"
+  ],
+  "Movies featuring Marius Goring": [
+    "The Red Shoes"
+  ],
+  "Movies featuring Mark Addy": [
+    "The Full Monty"
+  ],
+  "Movies featuring Mark Duplass": [
+    "Safety Not Guaranteed"
   ],
   "Movies featuring Mark Hamill": [
     "Return of the Jedi",
@@ -13519,7 +15357,11 @@
     "The Force Awakens",
     "The Last Jedi"
   ],
+  "Movies featuring Mark Lester": [
+    "Oliver!"
+  ],
   "Movies featuring Mark Ruffalo": [
+    "Avengers: Endgame",
     "Spotlight"
   ],
   "Movies featuring Marlee Matlin": [
@@ -13528,17 +15370,24 @@
   "Movies featuring Marlon Brando": [
     "The Godfather"
   ],
+  "Movies featuring Martin Mull": [
+    "Clue"
+  ],
   "Movies featuring Martin Sheen": [
     "Gandhi"
   ],
   "Movies featuring Martin Short": [
     "The Santa Clause 3: The Escape Clause"
   ],
+  "Movies featuring Mary Astor": [
+    "The Maltese Falcon"
+  ],
   "Movies featuring Mary Costa": [
     "Sleeping Beauty"
   ],
   "Movies featuring Mary McDonnell": [
-    "Dances with Wolves"
+    "Dances with Wolves",
+    "Donnie Darko"
   ],
   "Movies featuring Mary Tyler Moore": [
     "Ordinary People"
@@ -13555,11 +15404,17 @@
   "Movies featuring Matthew Broderick": [
     "The Lion King"
   ],
+  "Movies featuring Matthew Fox": [
+    "Vantage Point"
+  ],
   "Movies featuring Matthew McConaughey": [
     "Interstellar"
   ],
   "Movies featuring Maureen O'Hara": [
     "Miracle on 34th Street"
+  ],
+  "Movies featuring Max von Sydow": [
+    "The Exorcist"
   ],
   "Movies featuring Meg Ryan": [
     "Kate & Leopold"
@@ -13568,8 +15423,17 @@
     "Braveheart",
     "Pocahontas"
   ],
+  "Movies featuring Melanie Griffith": [
+    "Working Girl"
+  ],
+  "Movies featuring Melinda Dillon": [
+    "A Christmas Story"
+  ],
   "Movies featuring Melissa Barrera": [
     "In the Heights"
+  ],
+  "Movies featuring Melora Walters": [
+    "The Butterfly Effect"
   ],
   "Movies featuring Meryl Streep": [
     "Into the Woods",
@@ -13577,11 +15441,27 @@
     "Out of Africa",
     "The Deer Hunter"
   ],
+  "Movies featuring Michael Bates": [
+    "A Clockwork Orange"
+  ],
+  "Movies featuring Michael Biehn": [
+    "Aliens",
+    "The Terminator"
+  ],
   "Movies featuring Michael Caine": [
-    "The Muppet Christmas Carol"
+    "Get Carter",
+    "The Hand",
+    "The Italian Job",
+    "The Muppet Christmas Carol",
+    "Zulu"
+  ],
+  "Movies featuring Michael Clarke Duncan": [
+    "The Green Mile"
   ],
   "Movies featuring Michael Fassbender": [
     "12 Years a Slave",
+    "The Killer",
+    "X-Men: Days of Future Past",
     "X-Men: First Class"
   ],
   "Movies featuring Michael J. Fox": [
@@ -13598,33 +15478,59 @@
     "Kill Bill: Volume 2",
     "Reservoir Dogs"
   ],
+  "Movies featuring Michael Paré": [
+    "The Philadelphia Experiment"
+  ],
   "Movies featuring Michael Pitt": [
     "Hedwig and the Angry Inch"
   ],
   "Movies featuring Michael Shannon": [
     "The Shape of Water"
   ],
+  "Movies featuring Michael York": [
+    "Cabaret"
+  ],
+  "Movies featuring Michelle Monaghan": [
+    "Source Code"
+  ],
   "Movies featuring Michelle Pfeiffer": [
     "Hairspray",
     "Scarface"
+  ],
+  "Movies featuring Michelle Reis": [
+    "Fallen Angels"
   ],
   "Movies featuring Michelle Williams": [
     "The Greatest Showman"
   ],
   "Movies featuring Michelle Yeoh": [
+    "Crouching Tiger, Hidden Dragon",
     "Everything Everywhere All at Once"
+  ],
+  "Movies featuring Mick Jagger": [
+    "Performance"
   ],
   "Movies featuring Mickey Rooney": [
     "The Fox and the Hound"
   ],
+  "Movies featuring Mickey Rourke": [
+    "Sin City",
+    "Sin City: A Dame to Kill For"
+  ],
   "Movies featuring Miguel Ferrer": [
     "Mulan"
+  ],
+  "Movies featuring Milla Jovovich": [
+    "The Fifth Element"
   ],
   "Movies featuring Ming-Na Wen": [
     "Mulan"
   ],
   "Movies featuring Minnie Driver": [
     "Tarzan"
+  ],
+  "Movies featuring Minoru Chiaki": [
+    "The Hidden Fortress"
   ],
   "Movies featuring Miranda Richardson": [
     "The Phantom of the Opera"
@@ -13635,14 +15541,24 @@
   "Movies featuring Miss Piggy": [
     "The Muppet Christmas Carol"
   ],
+  "Movies featuring Mitsunori Isaki": [
+    "Dreams"
+  ],
+  "Movies featuring Moira Shearer": [
+    "The Red Shoes"
+  ],
   "Movies featuring Morgan Freeman": [
     "Driving Miss Daisy",
     "Million Dollar Baby",
     "Robin Hood: Prince of Thieves",
+    "The Shawshank Redemption",
     "Unforgiven"
   ],
   "Movies featuring Mélanie Laurent": [
     "Inglourious Basterds"
+  ],
+  "Movies featuring Nancy Allen": [
+    "The Philadelphia Experiment"
   ],
   "Movies featuring Naomie Harris": [
     "Moonlight"
@@ -13652,6 +15568,7 @@
   ],
   "Movies featuring Natalie Portman": [
     "Attack of the Clones",
+    "My Blueberry Nights",
     "Revenge of the Sith",
     "The Phantom Menace"
   ],
@@ -13662,6 +15579,9 @@
   "Movies featuring Nathan Lane": [
     "The Lion King"
   ],
+  "Movies featuring Neil Patrick Harris": [
+    "Gone Girl"
+  ],
   "Movies featuring Nicole Kidman": [
     "Moulin Rouge!"
   ],
@@ -13669,7 +15589,20 @@
     "Chariots of Fire"
   ],
   "Movies featuring Nigel Hawthorne": [
-    "The Black Cauldron"
+    "The Black Cauldron",
+    "The Madness of King George"
+  ],
+  "Movies featuring Nikki Blonsky": [
+    "Hairspray"
+  ],
+  "Movies featuring Noah Taylor": [
+    "Predestination"
+  ],
+  "Movies featuring Noel Coward": [
+    "The Italian Job"
+  ],
+  "Movies featuring Norah Jones": [
+    "My Blueberry Nights"
   ],
   "Movies featuring Norma Crane": [
     "Fiddler on the Roof"
@@ -13680,6 +15613,12 @@
   "Movies featuring Olivia Newton-John": [
     "Grease"
   ],
+  "Movies featuring Olivia de Havilland": [
+    "Gone with the Wind"
+  ],
+  "Movies featuring Omar Sharif": [
+    "Lawrence of Arabia"
+  ],
   "Movies featuring Oprah Winfrey": [
     "A Wrinkle in Time",
     "The Princess and the Frog"
@@ -13687,10 +15626,13 @@
   "Movies featuring Orlando Bloom": [
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
-    "Pirates of the Caribbean: The Curse of the Black Pearl"
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Troy"
   ],
   "Movies featuring Orson Welles": [
-    "Othello"
+    "Citizen Kane",
+    "Othello",
+    "The Third Man"
   ],
   "Movies featuring Paige O'Hara": [
     "Beauty and the Beast"
@@ -13700,6 +15642,9 @@
   ],
   "Movies featuring Pat Carroll": [
     "The Little Mermaid"
+  ],
+  "Movies featuring Patrick Magee": [
+    "A Clockwork Orange"
   ],
   "Movies featuring Patrick McGoohan": [
     "Braveheart"
@@ -13713,8 +15658,14 @@
   "Movies featuring Patrick Wilson": [
     "The Phantom of the Opera"
   ],
+  "Movies featuring Paul Reubens": [
+    "Flight of the Navigator"
+  ],
   "Movies featuring Paul Winchell": [
     "The Many Adventures of Winnie the Pooh"
+  ],
+  "Movies featuring Paula Patton": [
+    "Deja Vu"
   ],
   "Movies featuring Pearl Bailey": [
     "The Fox and the Hound"
@@ -13734,8 +15685,19 @@
   "Movies featuring Peter Cushing": [
     "Star Wars"
   ],
+  "Movies featuring Peter Fonda": [
+    "Easy Rider"
+  ],
+  "Movies featuring Peter Lorre": [
+    "The Maltese Falcon"
+  ],
   "Movies featuring Peter O'Toole": [
+    "Lawrence of Arabia",
     "The Last Emperor"
+  ],
+  "Movies featuring Peter Sellers": [
+    "Dr. Strangelove",
+    "The Ladykillers"
   ],
   "Movies featuring Peter Ustinov": [
     "Robin Hood"
@@ -13748,11 +15710,17 @@
   "Movies featuring Phil Hartman": [
     "Jingle All the Way"
   ],
+  "Movies featuring Pierce Brosnan": [
+    "Dante's Peak"
+  ],
   "Movies featuring Pinto Colvig": [
     "Snow White and the Seven Dwarfs"
   ],
   "Movies featuring Queen Latifah": [
     "Chicago"
+  ],
+  "Movies featuring Rachael Lillis": [
+    "Pokemon"
   ],
   "Movies featuring Rachel House": [
     "Moana",
@@ -13761,6 +15729,9 @@
   "Movies featuring Rachel McAdams": [
     "About Time",
     "Spotlight"
+  ],
+  "Movies featuring Rachel Roberts": [
+    "O Lucky Man!"
   ],
   "Movies featuring Rachel Zegler": [
     "West Side Story"
@@ -13771,13 +15742,31 @@
     "Harry Potter and the Goblet of Fire",
     "Harry Potter and the Half-Blood Prince",
     "Harry Potter and the Order of the Phoenix",
-    "The English Patient"
+    "Red Dragon",
+    "Schindler's List",
+    "The English Patient",
+    "The Grand Budapest Hotel"
+  ],
+  "Movies featuring Ralph Richardson": [
+    "O Lucky Man!"
   ],
   "Movies featuring Randy Quaid": [
     "National Lampoon's Christmas Vacation"
   ],
   "Movies featuring Ray Bolger": [
     "The Wizard of Oz"
+  ],
+  "Movies featuring Ray Liotta": [
+    "Goodfellas"
+  ],
+  "Movies featuring Ray Romano": [
+    "Ice Age"
+  ],
+  "Movies featuring Raymond Briggs": [
+    "Snowman"
+  ],
+  "Movies featuring Rebecca Pan": [
+    "In the Mood for Love"
   ],
   "Movies featuring Reese Witherspoon": [
     "A Wrinkle in Time",
@@ -13792,6 +15781,12 @@
   "Movies featuring Rhoda Williams": [
     "Cinderella"
   ],
+  "Movies featuring Richard Beymer": [
+    "West Side Story"
+  ],
+  "Movies featuring Richard Dreyfuss": [
+    "Jaws"
+  ],
   "Movies featuring Richard Gere": [
     "Chicago"
   ],
@@ -13804,19 +15799,33 @@
   "Movies featuring Richard O'Brien": [
     "Rocky Horror Picture Show"
   ],
+  "Movies featuring Richard Warwick": [
+    "If...."
+  ],
   "Movies featuring Rick Moranis": [
     "Little Shop of Horrors"
   ],
   "Movies featuring Rickie Sorensen": [
     "The Sword in the Stone"
   ],
+  "Movies featuring Rip Torn": [
+    "The Man Who Fell to Earth"
+  ],
   "Movies featuring Rita Moreno": [
     "West Side Story"
+  ],
+  "Movies featuring Rob Corddry": [
+    "Hot Tub Time Machine"
   ],
   "Movies featuring Robby Benson": [
     "Beauty and the Beast"
   ],
+  "Movies featuring Robert Carlyle": [
+    "The Full Monty"
+  ],
   "Movies featuring Robert De Niro": [
+    "Goodfellas",
+    "Heat",
     "The Deer Hunter",
     "The Godfather Part II",
     "The Irishman"
@@ -13825,8 +15834,14 @@
     "Avengers: Endgame",
     "Oppenheimer"
   ],
+  "Movies featuring Robert Duvall": [
+    "Four Christmases"
+  ],
   "Movies featuring Robert Forster": [
     "Jackie Brown"
+  ],
+  "Movies featuring Robert Loggia": [
+    "Big"
   ],
   "Movies featuring Robert Pattinson": [
     "Tenet"
@@ -13834,9 +15849,15 @@
   "Movies featuring Robert Redford": [
     "Out of Africa"
   ],
+  "Movies featuring Robert Shaw": [
+    "Jaws"
+  ],
   "Movies featuring Robin Williams": [
     "Aladdin",
     "Insomnia"
+  ],
+  "Movies featuring Robin Wright": [
+    "Unbreakable"
   ],
   "Movies featuring Robin de Jesús": [
     "Tick, Tick... Boom!"
@@ -13848,9 +15869,18 @@
     "Oliver!"
   ],
   "Movies featuring Ron Perlman": [
+    "Alien: Resurrection",
     "Tangled"
   ],
+  "Movies featuring Rosamund Pike": [
+    "Doom",
+    "Gone Girl"
+  ],
   "Movies featuring Rosario Dawson": [
+    "Death Proof",
+    "Rent"
+  ],
+  "Movies featuring Rose McGowan": [
     "Death Proof"
   ],
   "Movies featuring Rosemary Clooney": [
@@ -13858,6 +15888,10 @@
   ],
   "Movies featuring Roy Atwell": [
     "Snow White and the Seven Dwarfs"
+  ],
+  "Movies featuring Roy Scheider": [
+    "Jaws",
+    "The French Connection"
   ],
   "Movies featuring Rupert Grint": [
     "Harry Potter and the Chamber of Secrets",
@@ -13874,24 +15908,44 @@
     "Gladiator",
     "Les Misérables"
   ],
+  "Movies featuring Rutger Hauer": [
+    "Blade Runner"
+  ],
   "Movies featuring Ryan Gosling": [
     "La La Land"
   ],
   "Movies featuring Sally Hawkins": [
     "The Shape of Water"
   ],
+  "Movies featuring Sam Neill": [
+    "Jurassic Park"
+  ],
+  "Movies featuring Sam Worthington": [
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water"
+  ],
   "Movies featuring Samuel E. Wright": [
     "The Little Mermaid"
   ],
   "Movies featuring Samuel L. Jackson": [
+    "Die Hard with a Vengeance",
     "Django Unchained",
+    "Glass",
     "Jackie Brown",
     "Pulp Fiction",
-    "The Hateful Eight"
+    "The Hateful Eight",
+    "Unbreakable"
   ],
   "Movies featuring Sandra Bullock": [
     "Crash",
     "The Lake House"
+  ],
+  "Movies featuring Saoirse Ronan": [
+    "The Grand Budapest Hotel"
+  ],
+  "Movies featuring Sarah Snook": [
+    "Predestination"
   ],
   "Movies featuring Scarlett Johansson": [
     "Avengers: Endgame",
@@ -13899,6 +15953,9 @@
   ],
   "Movies featuring Scatman Crothers": [
     "The Aristocats"
+  ],
+  "Movies featuring Scott Glenn": [
+    "The Silence of the Lambs"
   ],
   "Movies featuring Scott Weinger": [
     "Aladdin"
@@ -13908,9 +15965,31 @@
     "The Lord of the Rings: The Return of the King",
     "The Lord of the Rings: The Two Towers"
   ],
+  "Movies featuring Sean Connery": [
+    "Time Bandits"
+  ],
+  "Movies featuring Sean Young": [
+    "Blade Runner"
+  ],
   "Movies featuring Sebastian Cabot": [
     "The Jungle Book",
     "The Sword in the Stone"
+  ],
+  "Movies featuring Sebastian Koch": [
+    "A Good Day to Die Hard"
+  ],
+  "Movies featuring Shane Carruth": [
+    "Primer"
+  ],
+  "Movies featuring Shani Wallis": [
+    "Oliver!"
+  ],
+  "Movies featuring Shelley Duvall": [
+    "The Shining",
+    "Time Bandits"
+  ],
+  "Movies featuring Shia LaBeouf": [
+    "Holes"
   ],
   "Movies featuring Shirley MacLaine": [
     "Terms of Endearment"
@@ -13950,11 +16029,27 @@
   "Movies featuring Stan Alexander": [
     "Bambi"
   ],
+  "Movies featuring Stanley Baker": [
+    "Zulu"
+  ],
+  "Movies featuring Stanley Holloway": [
+    "Brief Encounter",
+    "My Fair Lady"
+  ],
   "Movies featuring Stellan Skarsgård": [
     "Pirates of the Caribbean: Dead Man's Chest"
   ],
   "Movies featuring Stephanie Beatriz": [
     "Encanto"
+  ],
+  "Movies featuring Stephanie Hsu": [
+    "Everything Everywhere All at Once"
+  ],
+  "Movies featuring Stephen Rea": [
+    "The Crying Game"
+  ],
+  "Movies featuring Sterling Hayden": [
+    "Dr. Strangelove"
   ],
   "Movies featuring Sterling Holloway": [
     "Alice in Wonderland",
@@ -13968,6 +16063,15 @@
   "Movies featuring Steve Martin": [
     "Little Shop of Horrors"
   ],
+  "Movies featuring Steven Bauer": [
+    "Scarface"
+  ],
+  "Movies featuring Stockard Channing": [
+    "Grease"
+  ],
+  "Movies featuring Storm Reid": [
+    "A Wrinkle in Time"
+  ],
   "Movies featuring Susan Egan": [
     "Hercules"
   ],
@@ -13980,11 +16084,27 @@
   "Movies featuring Sylvester Stallone": [
     "Rocky"
   ],
+  "Movies featuring Sylvia Miles": [
+    "Midnight Cowboy"
+  ],
+  "Movies featuring Takashi Shimura": [
+    "Ikiru",
+    "Seven Samurai"
+  ],
+  "Movies featuring Takeshi Kaneshiro": [
+    "Fallen Angels",
+    "House of Flying Daggers"
+  ],
   "Movies featuring Talia Shire": [
     "Rocky"
   ],
   "Movies featuring Tate Donovan": [
     "Hercules"
+  ],
+  "Movies featuring Tatsuya Nakadai": [
+    "High and Low",
+    "Kagemusha",
+    "Ran"
   ],
   "Movies featuring Ted Neeley": [
     "Jesus Christ Superstar"
@@ -13992,14 +16112,26 @@
   "Movies featuring Temuera Morrison": [
     "Moana"
   ],
+  "Movies featuring Tenzing Norgay": [
+    "Everest"
+  ],
+  "Movies featuring Teresa Mo": [
+    "Hard Boiled"
+  ],
   "Movies featuring Terry-Thomas": [
     "Robin Hood"
   ],
   "Movies featuring Thora Birch": [
     "American Beauty"
   ],
+  "Movies featuring Ti Lung": [
+    "A Better Tomorrow"
+  ],
   "Movies featuring Tia Carrere": [
     "Lilo & Stitch"
+  ],
+  "Movies featuring Tilda Swinton": [
+    "The Killer"
   ],
   "Movies featuring Tim Allen": [
     "Galaxy Quest",
@@ -14008,10 +16140,14 @@
     "The Santa Clause 3: The Escape Clause"
   ],
   "Movies featuring Tim Curry": [
+    "Clue",
     "Rocky Horror Picture Show"
   ],
   "Movies featuring Tim Davis": [
     "Bambi"
+  ],
+  "Movies featuring Tim Robbins": [
+    "The Shawshank Redemption"
   ],
   "Movies featuring Tim Roth": [
     "Reservoir Dogs",
@@ -14019,6 +16155,9 @@
   ],
   "Movies featuring Timothy Hutton": [
     "Ordinary People"
+  ],
+  "Movies featuring Timothy Olyphant": [
+    "Live Free or Die Hard"
   ],
   "Movies featuring Tina Fey": [
     "Soul"
@@ -14031,7 +16170,9 @@
     "Rain Man"
   ],
   "Movies featuring Tom Hanks": [
+    "Big",
     "Forrest Gump",
+    "The Green Mile",
     "The Polar Express"
   ],
   "Movies featuring Tom Hardy": [
@@ -14041,8 +16182,17 @@
     "Amadeus",
     "The Hunchback of Notre Dame"
   ],
+  "Movies featuring Tom Skerritt": [
+    "Alien"
+  ],
   "Movies featuring Tommy Lee Jones": [
     "No Country for Old Men"
+  ],
+  "Movies featuring Toni Collette": [
+    "The Sixth Sense"
+  ],
+  "Movies featuring Tony Cox": [
+    "Bad Santa"
   ],
   "Movies featuring Tony Goldwyn": [
     "Tarzan"
@@ -14050,14 +16200,45 @@
   "Movies featuring Tony Jay": [
     "The Hunchback of Notre Dame"
   ],
+  "Movies featuring Tony Leung": [
+    "Ashes of Time",
+    "Chungking Express",
+    "Happy Together",
+    "Hard Boiled",
+    "Hero",
+    "In the Mood for Love",
+    "The Grandmaster"
+  ],
+  "Movies featuring Tony Revolori": [
+    "The Grand Budapest Hotel"
+  ],
+  "Movies featuring Tony Roberts": [
+    "Annie Hall"
+  ],
   "Movies featuring Topol": [
     "Fiddler on the Roof"
+  ],
+  "Movies featuring Toshiro Mifune": [
+    "High and Low",
+    "Rashomon",
+    "Red Beard",
+    "Sanjuro",
+    "Seven Samurai",
+    "The Hidden Fortress",
+    "Throne of Blood",
+    "Yojimbo"
   ],
   "Movies featuring Trevante Rhodes": [
     "Moonlight"
   ],
+  "Movies featuring Trevor Howard": [
+    "Brief Encounter"
+  ],
   "Movies featuring Troy Kotsur": [
     "CODA"
+  ],
+  "Movies featuring Tsutomu Yamazaki": [
+    "Kagemusha"
   ],
   "Movies featuring Uma Thurman": [
     "Kill Bill: Volume 1",
@@ -14066,16 +16247,35 @@
   "Movies featuring Val Bettin": [
     "The Great Mouse Detective"
   ],
+  "Movies featuring Val Kilmer": [
+    "Deja Vu",
+    "Heat"
+  ],
   "Movies featuring Valeria Golino": [
     "Rain Man"
   ],
+  "Movies featuring Valerie Hobson": [
+    "Kind Hearts and Coronets"
+  ],
   "Movies featuring Vanessa Hudgens": [
     "Tick, Tick... Boom!"
+  ],
+  "Movies featuring Vanessa Redgrave": [
+    "Howard's End"
+  ],
+  "Movies featuring Vera Farmiga": [
+    "Source Code"
   ],
   "Movies featuring Verna Felton": [
     "Cinderella",
     "Dumbo",
     "Sleeping Beauty"
+  ],
+  "Movies featuring Veronica Cartwright": [
+    "Flight of the Navigator"
+  ],
+  "Movies featuring Veronica Taylor": [
+    "Pokemon"
   ],
   "Movies featuring Victor Garber": [
     "Godspell"
@@ -14090,6 +16290,7 @@
     "Four Christmases"
   ],
   "Movies featuring Vincent Gardenia": [
+    "Death Wish",
     "Little Shop of Horrors"
   ],
   "Movies featuring Vincent Price": [
@@ -14098,8 +16299,14 @@
   "Movies featuring Viveca Lindfors": [
     "Stargate"
   ],
+  "Movies featuring Vivica A. Fox": [
+    "Kill Bill: Volume 1"
+  ],
   "Movies featuring Vivien Leigh": [
     "Gone with the Wind"
+  ],
+  "Movies featuring Wendy Crewson": [
+    "The Santa Clause"
   ],
   "Movies featuring Wilford Brimley": [
     "The Thing"
@@ -14107,14 +16314,42 @@
   "Movies featuring Will Ferrell": [
     "Elf"
   ],
+  "Movies featuring Will Sampson": [
+    "One Flew Over the Cuckoo's Nest"
+  ],
   "Movies featuring Willem Dafoe": [
     "Platoon"
+  ],
+  "Movies featuring William Atherton": [
+    "Die Hard 2"
+  ],
+  "Movies featuring William Holden": [
+    "The Bridge on the River Kwai"
+  ],
+  "Movies featuring William Sadler": [
+    "Bill & Ted's Bogus Journey"
+  ],
+  "Movies featuring William Snape": [
+    "The Full Monty"
+  ],
+  "Movies featuring William Sylvester": [
+    "2001: A Space Odyssey"
+  ],
+  "Movies featuring Winona Ryder": [
+    "Alien: Resurrection"
+  ],
+  "Movies featuring Woody Allen": [
+    "Annie Hall",
+    "Manhattan"
   ],
   "Movies featuring Woody Harrelson": [
     "Solo"
   ],
   "Movies featuring Yvonne Elliman": [
     "Jesus Christ Superstar"
+  ],
+  "Movies featuring Yūzō Kayama": [
+    "Red Beard"
   ],
   "Movies featuring Zac Efron": [
     "The Greatest Showman"
@@ -14124,6 +16359,22 @@
   ],
   "Movies featuring Zendaya": [
     "The Greatest Showman"
+  ],
+  "Movies featuring Zhang Fengyi": [
+    "Farewell My Concubine"
+  ],
+  "Movies featuring Zhang Ziyi": [
+    "Crouching Tiger, Hidden Dragon",
+    "House of Flying Daggers",
+    "The Grandmaster"
+  ],
+  "Movies featuring Zoe Saldana": [
+    "Avatar",
+    "Avatar: Frontiers of Pandora",
+    "Avatar: The Way of Water"
+  ],
+  "Movies featuring Zooey Deschanel": [
+    "Elf"
   ],
   "Mughal Architecture": [
     "Taj Mahal"
@@ -14692,7 +16943,6 @@
     "Anna",
     "Annabel",
     "Aristotle",
-    "Athena",
     "Aurora",
     "Bach",
     "Beethoven",
@@ -14712,7 +16962,6 @@
     "Cobb",
     "Confucius",
     "Copernicus",
-    "Count",
     "Curie",
     "Curry",
     "Da Vinci",
@@ -14723,7 +16972,6 @@
     "Dirac",
     "Drake",
     "Du Fu",
-    "Duke",
     "Edison",
     "Einstein",
     "Elizabeth",
@@ -14747,8 +16995,6 @@
     "Handel",
     "Hawking",
     "Heather",
-    "Helen",
-    "Hermes",
     "Homer",
     "Hoover",
     "Hubble",
@@ -14767,7 +17013,6 @@
     "Kennedy",
     "Kepler",
     "Khan",
-    "King",
     "Kirk",
     "Kobe",
     "Kurosawa",
@@ -14804,7 +17049,6 @@
     "Papa",
     "Paul",
     "Peter",
-    "Pharaoh",
     "Plato",
     "Poe",
     "Prince",
@@ -14818,7 +17062,6 @@
     "Santa Maria",
     "Shaggy",
     "Shakespeare",
-    "Siren",
     "Socrates",
     "Sulu",
     "Sun Tzu",
@@ -14827,7 +17070,6 @@
     "Tesla",
     "Thomas Edison",
     "Trump",
-    "Tsar",
     "Vasco da Gama",
     "Velma",
     "Victor",
@@ -23977,6 +26219,7 @@
     "Hungary",
     "Italy",
     "Japan",
+    "Manchukuo",
     "Romania",
     "Slovakia",
     "Thailand"
