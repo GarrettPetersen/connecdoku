@@ -562,6 +562,7 @@
     "Bad Santa",
     "Ball Lightning",
     "Chicago",
+    "Concordia",
     "Crash",
     "Crouching Tiger, Hidden Dragon",
     "Death Proof",
@@ -601,11 +602,13 @@
     "Moulin Rouge!",
     "My Blueberry Nights",
     "No Country for Old Men",
+    "Oasis of the Seas",
     "Percy Jackson & the Olympians",
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
     "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Primer",
+    "Queen Mary 2",
     "Red Dragon",
     "Rent",
     "Revenge of the Sith",
@@ -650,11 +653,14 @@
     "A Good Day to Die Hard",
     "A Wrinkle in Time",
     "About Time",
+    "Anthem of the Seas",
     "Argo",
     "Arrival",
     "Avengers: Endgame",
     "Birdman",
+    "Boaty McBoatface",
     "Colorless Tsukuru Tazaki",
+    "Costa Smeralda",
     "Death's End",
     "Deepwater Horizon",
     "Django Unchained",
@@ -663,6 +669,7 @@
     "Glass",
     "Gone Girl",
     "Green Book",
+    "Harmony of the Seas",
     "Harry Potter and the Deathly Hallows: Part 1",
     "Harry Potter and the Deathly Hallows: Part 2",
     "Her",
@@ -672,9 +679,12 @@
     "La La Land",
     "Les Misérables",
     "Looper",
+    "MSC Meraviglia",
     "Mary Poppins Returns",
     "Moonlight",
     "Moonrise Kingdom",
+    "Norwegian Bliss",
+    "Odyssey",
     "Once Upon a Time in Hollywood",
     "Parasite",
     "Pirates of the Caribbean: Dead Men Tell No Tales",
@@ -708,6 +718,9 @@
     "The Shape of Water",
     "The Syrian Civil War",
     "The Time Traveler's Almanac",
+    "USS Gerald R. Ford",
+    "USS Michael Monsoor",
+    "USS Zumwalt",
     "X-Men: Days of Future Past",
     "X-Men: First Class"
   ],
@@ -724,7 +737,9 @@
     "The January 6th Insurrection",
     "The Killer",
     "The Russian Invasion of Ukraine",
-    "Tick, Tick... Boom!"
+    "Tick, Tick... Boom!",
+    "USS John Lewis",
+    "Wonder"
   ],
   "20th Century": [
     "12 Monkeys",
@@ -1128,6 +1143,7 @@
     "About Time",
     "All You Need Is Kill",
     "Anna",
+    "Anthem of the Seas",
     "Argo",
     "Arrival",
     "Attack of the Clones",
@@ -1140,6 +1156,7 @@
     "Benedict",
     "Beyonce",
     "Birdman",
+    "Boaty McBoatface",
     "Bravo",
     "Buttercup",
     "CODA",
@@ -1147,6 +1164,8 @@
     "Chicago",
     "Cobb",
     "Colorless Tsukuru Tazaki",
+    "Concordia",
+    "Costa Smeralda",
     "Crash",
     "Crouching Tiger, Hidden Dragon",
     "Curry",
@@ -1177,6 +1196,7 @@
     "Green Book",
     "Grover",
     "Hairspray",
+    "Harmony of the Seas",
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Deathly Hallows",
     "Harry Potter and the Deathly Hallows: Part 1",
@@ -1220,6 +1240,7 @@
     "Live Free or Die Hard",
     "Looper",
     "Love Actually",
+    "MSC Meraviglia",
     "Madagascar",
     "Madonna",
     "Mary Poppins Returns",
@@ -1234,7 +1255,10 @@
     "Nina",
     "No Country for Old Men",
     "Nomadland",
+    "Norwegian Bliss",
+    "Oasis of the Seas",
     "Obama",
+    "Odyssey",
     "Ohtani",
     "Olive",
     "Once Upon a Time in Hollywood",
@@ -1252,6 +1276,7 @@
     "Primer",
     "Prince",
     "Professor X",
+    "Queen Mary 2",
     "Red",
     "Red 2",
     "Red Dragon",
@@ -1328,9 +1353,14 @@
     "Troy",
     "Trump",
     "Twilight",
+    "USS Gerald R. Ford",
+    "USS John Lewis",
+    "USS Michael Monsoor",
+    "USS Zumwalt",
     "Vantage Point",
     "Velma",
     "Violet",
+    "Wonder",
     "X-Men: Days of Future Past",
     "X-Men: First Class"
   ],
@@ -1693,6 +1723,7 @@
     "Soryu",
     "Stennis",
     "Truman",
+    "USS Gerald R. Ford",
     "Washington",
     "Yorktown"
   ],
@@ -2498,6 +2529,9 @@
     "Juice",
     "Toaster"
   ],
+  "British Antarctic Survey": [
+    "Boaty McBoatface"
+  ],
   "British Architecture": [
     "Buckingham Palace",
     "Stonehenge"
@@ -3031,18 +3065,29 @@
   ],
   "Civilian Ships": [
     "Andrea Doria",
+    "Anthem of the Seas",
+    "Boaty McBoatface",
     "Britannic",
+    "Concordia",
     "Conte di Savoia",
+    "Costa Smeralda",
+    "Harmony of the Seas",
     "Lusitania",
+    "MSC Meraviglia",
     "Mauretania",
     "Normandie",
+    "Norwegian Bliss",
+    "Oasis of the Seas",
+    "Odyssey",
     "Olympic",
     "Queen Elizabeth",
     "Queen Elizabeth 2",
     "Queen Mary",
+    "Queen Mary 2",
     "Rex",
     "Titanic",
-    "United States"
+    "United States",
+    "Wonder"
   ],
   "Classic Films": [
     "Casablanca",
@@ -3404,6 +3449,10 @@
     "Fridge",
     "Ice Pack",
     "Radiator"
+  ],
+  "Costa Cruises": [
+    "Concordia",
+    "Costa Smeralda"
   ],
   "Countries": [
     "Abkhazia",
@@ -4104,7 +4153,17 @@
     "The Iran Hostage Crisis"
   ],
   "Cruise Ships": [
-    "Queen Mary"
+    "Anthem of the Seas",
+    "Concordia",
+    "Costa Smeralda",
+    "Harmony of the Seas",
+    "MSC Meraviglia",
+    "Norwegian Bliss",
+    "Oasis of the Seas",
+    "Odyssey",
+    "Queen Mary",
+    "Queen Mary 2",
+    "Wonder"
   ],
   "Crypto": [
     "Coin",
@@ -4125,7 +4184,8 @@
     "Mauretania",
     "Queen Elizabeth",
     "Queen Elizabeth 2",
-    "Queen Mary"
+    "Queen Mary",
+    "Queen Mary 2"
   ],
   "D&D Stats": [
     "CHA",
@@ -4249,6 +4309,7 @@
   "Disasters": [
     "Challenger",
     "Chernobyl",
+    "Concordia",
     "Deepwater Horizon",
     "Empress of Ireland",
     "Fallout",
@@ -4630,6 +4691,7 @@
     "Million Dollar Baby"
   ],
   "Ends with ACE": [
+    "Boaty McBoatface",
     "Buckingham Palace",
     "Mace",
     "Potala Palace",
@@ -4803,7 +4865,8 @@
     "Halo"
   ],
   "Ends with ALT": [
-    "Cobalt"
+    "Cobalt",
+    "USS Zumwalt"
   ],
   "Ends with ALU": [
     "Tuvalu"
@@ -5477,7 +5540,8 @@
     "Spider",
     "The Rescuers Down Under",
     "Thunder",
-    "Vader"
+    "Vader",
+    "Wonder"
   ],
   "Ends with DES": [
     "Colossus of Rhodes",
@@ -5596,6 +5660,11 @@
     "King Lear",
     "Polar Bear",
     "Spear"
+  ],
+  "Ends with EAS": [
+    "Anthem of the Seas",
+    "Harmony of the Seas",
+    "Oasis of the Seas"
   ],
   "Ends with EAT": [
     "Beat",
@@ -6655,6 +6724,9 @@
   "Ends with ISP": [
     "Coffee Crisp"
   ],
+  "Ends with ISS": [
+    "Norwegian Bliss"
+  ],
   "Ends with IST": [
     "Schindler's List",
     "The Alchemist",
@@ -6883,6 +6955,7 @@
     "Elba"
   ],
   "Ends with LDA": [
+    "Costa Smeralda",
     "Matilda"
   ],
   "Ends with LED": [
@@ -6950,6 +7023,7 @@
   "Ends with LIA": [
     "Australia",
     "Brasilia",
+    "MSC Meraviglia",
     "Mongolia",
     "Sagrada Familia",
     "Somalia"
@@ -7737,6 +7811,9 @@
     "Platoon",
     "Pontoon"
   ],
+  "Ends with OOR": [
+    "USS Michael Monsoor"
+  ],
   "Ends with OPA": [
     "Europa"
   ],
@@ -7757,7 +7834,8 @@
     "Concord",
     "Ford",
     "Hartford",
-    "Sword"
+    "Sword",
+    "USS Gerald R. Ford"
   ],
   "Ends with ORE": [
     "Dumbledore",
@@ -9010,6 +9088,7 @@
     "Darwin"
   ],
   "Ends with WIS": [
+    "USS John Lewis",
     "WIS"
   ],
   "Ends with WIX": [
@@ -9026,6 +9105,9 @@
   ],
   "Ends with XIA": [
     "Xia"
+  ],
+  "Ends with Y 2": [
+    "Queen Mary 2"
   ],
   "Ends with YAK": [
     "Kayak"
@@ -9276,6 +9358,7 @@
   ],
   "Exploration Ships": [
     "Beagle",
+    "Boaty McBoatface",
     "Challenger",
     "Concepcion",
     "Discovery",
@@ -9422,6 +9505,7 @@
   "Famous Shipwrecks": [
     "Bismarck",
     "Britannic",
+    "Concordia",
     "Gneisenau",
     "Hood",
     "Lusitania",
@@ -11688,17 +11772,26 @@
     "Venezuela"
   ],
   "Luxury Ships": [
+    "Anthem of the Seas",
     "Britannic",
     "Conte di Savoia",
+    "Costa Smeralda",
+    "Harmony of the Seas",
+    "MSC Meraviglia",
     "Mauretania",
     "Normandie",
+    "Norwegian Bliss",
+    "Oasis of the Seas",
+    "Odyssey",
     "Olympic",
     "Queen Elizabeth",
     "Queen Elizabeth 2",
     "Queen Mary",
+    "Queen Mary 2",
     "Rex",
     "Titanic",
-    "United States"
+    "United States",
+    "Wonder"
   ],
   "MLB Players": [
     "Cobb",
@@ -11715,6 +11808,9 @@
     "Ray",
     "Tiger",
     "Yankee"
+  ],
+  "MSC Cruises": [
+    "MSC Meraviglia"
   ],
   "Magic": [
     "Dragon",
@@ -12042,6 +12138,10 @@
     "Temeraire",
     "Tirpitz",
     "Truman",
+    "USS Gerald R. Ford",
+    "USS John Lewis",
+    "USS Michael Monsoor",
+    "USS Zumwalt",
     "Victory",
     "Washington",
     "Yamato",
@@ -16819,6 +16919,9 @@
     "Sleipnir",
     "Thor"
   ],
+  "Norwegian Cruise Line": [
+    "Norwegian Bliss"
+  ],
   "Nuclear Powers": [
     "Soviet Union"
   ],
@@ -18396,6 +18499,13 @@
   "Rooms": [
     "Darkroom"
   ],
+  "Royal Caribbean": [
+    "Anthem of the Seas",
+    "Harmony of the Seas",
+    "Oasis of the Seas",
+    "Odyssey",
+    "Wonder"
+  ],
   "Royal Navy": [
     "Ark Royal",
     "Beagle",
@@ -18765,10 +18875,12 @@
     "Akagi",
     "Albatross",
     "Andrea Doria",
+    "Anthem of the Seas",
     "Ark Royal",
     "Beagle",
     "Bellerophon",
     "Bismarck",
+    "Boaty McBoatface",
     "Britannic",
     "Bucentaure",
     "Bush",
@@ -18776,7 +18888,9 @@
     "Carl Vinson",
     "Cog",
     "Concepcion",
+    "Concordia",
     "Conte di Savoia",
+    "Costa Smeralda",
     "Discovery",
     "Edmund Fitzgerald",
     "Eisenhower",
@@ -18788,6 +18902,7 @@
     "Gneisenau",
     "Golden Hind",
     "Graf Zeppelin",
+    "Harmony of the Seas",
     "Heather",
     "Hiryu",
     "Hood",
@@ -18796,6 +18911,7 @@
     "Kaga",
     "Los Angeles",
     "Lusitania",
+    "MSC Meraviglia",
     "Mary Rose",
     "Mauretania",
     "Mayflower",
@@ -18803,11 +18919,15 @@
     "Nimitz",
     "Nina",
     "Normandie",
+    "Norwegian Bliss",
+    "Oasis of the Seas",
+    "Odyssey",
     "Olympic",
     "Pinta",
     "Queen Elizabeth",
     "Queen Elizabeth 2",
     "Queen Mary",
+    "Queen Mary 2",
     "Reagan",
     "Redoutable",
     "Repulse",
@@ -18830,8 +18950,13 @@
     "Titanic",
     "Trinidad",
     "Truman",
+    "USS Gerald R. Ford",
+    "USS John Lewis",
+    "USS Michael Monsoor",
+    "USS Zumwalt",
     "Victory",
     "Violet",
+    "Wonder",
     "Yamato",
     "Yorktown"
   ],
@@ -19342,6 +19467,7 @@
   ],
   "Starts with ANT": [
     "Ant",
+    "Anthem of the Seas",
     "Antigua and Barbuda",
     "Antioch",
     "Antwerp"
@@ -19662,7 +19788,8 @@
   ],
   "Starts with BOA": [
     "Boar",
-    "Board"
+    "Board",
+    "Boaty McBoatface"
   ],
   "Starts with BOB": [
     "Bobsled"
@@ -20041,7 +20168,8 @@
     "Corsica"
   ],
   "Starts with COS": [
-    "Costa Rica"
+    "Costa Rica",
+    "Costa Smeralda"
   ],
   "Starts with COT": [
     "Cotton Candy"
@@ -20868,6 +20996,7 @@
   "Starts with HAR": [
     "Hard Boiled",
     "Hare",
+    "Harmony of the Seas",
     "Harp",
     "Harrisburg",
     "Harry",
@@ -21827,6 +21956,9 @@
   "Starts with MR.": [
     "Mr. Freeze"
   ],
+  "Starts with MSC": [
+    "MSC Meraviglia"
+  ],
   "Starts with MUL": [
     "Mulan"
   ],
@@ -21954,6 +22086,7 @@
     "North Yemen",
     "Northern Rhodesia",
     "Norway",
+    "Norwegian Bliss",
     "Norwegian Wood"
   ],
   "Starts with NOT": [
@@ -21988,6 +22121,9 @@
   ],
   "Starts with OAK": [
     "Oak"
+  ],
+  "Starts with OAS": [
+    "Oasis of the Seas"
   ],
   "Starts with OBA": [
     "Obama"
@@ -22402,6 +22538,7 @@
     "Queen Elizabeth",
     "Queen Elizabeth 2",
     "Queen Mary",
+    "Queen Mary 2",
     "Quesadilla"
   ],
   "Starts with QUI": [
@@ -23566,6 +23703,12 @@
   "Starts with USH": [
     "Usher"
   ],
+  "Starts with USS": [
+    "USS Gerald R. Ford",
+    "USS John Lewis",
+    "USS Michael Monsoor",
+    "USS Zumwalt"
+  ],
   "Starts with UZB": [
     "Uzbekistan"
   ],
@@ -23713,6 +23856,7 @@
     "Wolverine"
   ],
   "Starts with WON": [
+    "Wonder",
     "Wonder Woman",
     "Wonton"
   ],
@@ -24151,6 +24295,7 @@
     "American Football",
     "Annapolis",
     "Annie Hall",
+    "Anthem of the Seas",
     "Apollo",
     "Apollo 13",
     "Apple Pie",
@@ -24214,6 +24359,7 @@
     "Goodfellas",
     "Gymnastics",
     "Hamburger",
+    "Harmony of the Seas",
     "Harrisburg",
     "Hartford",
     "Helena",
@@ -24267,6 +24413,9 @@
     "New York",
     "New York Bagel",
     "Nimitz",
+    "Norwegian Bliss",
+    "Oasis of the Seas",
+    "Odyssey",
     "Oklahoma City",
     "Olympia",
     "On the Road",
@@ -24343,6 +24492,10 @@
     "Track and Field",
     "Trenton",
     "Truman",
+    "USS Gerald R. Ford",
+    "USS John Lewis",
+    "USS Michael Monsoor",
+    "USS Zumwalt",
     "Ultimate Frisbee",
     "United States",
     "Usher",
@@ -24351,6 +24504,7 @@
     "Washington",
     "Water Polo",
     "Weightlifting",
+    "Wonder",
     "Woodstock",
     "Wrestling",
     "Wright",
@@ -24437,7 +24591,6 @@
   ],
   "Things British": [
     "1984",
-    "2001: A Space Odyssey",
     "A Clockwork Orange",
     "Alderney",
     "Alice's Adventures in Wonderland",
@@ -24448,6 +24601,7 @@
     "Beagle",
     "Beatles",
     "Bellerophon",
+    "Boaty McBoatface",
     "Boxing",
     "Brave New World",
     "Brief Encounter",
@@ -24507,6 +24661,7 @@
     "Queen Elizabeth",
     "Queen Elizabeth 2",
     "Queen Mary",
+    "Queen Mary 2",
     "Repulse",
     "Resolution",
     "Rowing",
@@ -25066,7 +25221,9 @@
     "Christopher Columbus",
     "Ciabatta",
     "Colosseum",
+    "Concordia",
     "Conte di Savoia",
+    "Costa Smeralda",
     "Da Vinci",
     "Dante",
     "Elba",
@@ -25081,6 +25238,7 @@
     "Italy",
     "Lasagna",
     "Linguine",
+    "MSC Meraviglia",
     "Marco Polo",
     "Marinara",
     "Michelangelo",
@@ -26096,6 +26254,10 @@
     "San Pedro",
     "Stennis",
     "Truman",
+    "USS Gerald R. Ford",
+    "USS John Lewis",
+    "USS Michael Monsoor",
+    "USS Zumwalt",
     "Washington",
     "Yorktown"
   ],
@@ -26371,6 +26533,10 @@
     "Temeraire",
     "Tirpitz",
     "Truman",
+    "USS Gerald R. Ford",
+    "USS John Lewis",
+    "USS Michael Monsoor",
+    "USS Zumwalt",
     "Victory",
     "Washington",
     "Yamato",

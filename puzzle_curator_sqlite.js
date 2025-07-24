@@ -377,6 +377,10 @@ async function main() {
     let targetCategory = null;
     let searchChoice = null;
 
+    // Display initial total count
+    const totalPuzzles = db.length;
+    console.log(`📊 Total puzzles in daily_puzzles/puzzles.json: ${totalPuzzles}`);
+
     while (attempts < maxAttempts) {
         attempts++;
 
@@ -667,7 +671,9 @@ async function main() {
             fs.writeFileSync(DB_FILE, JSON.stringify(db, null, 2));
 
             curated++;
+            const newTotal = db.length;
             console.log(`✅ Puzzle ${curated} saved!`);
+            console.log(`📊 Total puzzles in daily_puzzles/puzzles.json: ${newTotal}`);
         }
 
         // Ask if they want to continue
@@ -685,7 +691,7 @@ async function main() {
         }
 
         const continueAnswer = await prompts.select({
-            message: `Continue curating? (${curated} puzzles saved)`,
+            message: `Continue curating? (${curated} puzzles saved this session, ${db.length} total in file)`,
             choices: continueChoices
         });
 
