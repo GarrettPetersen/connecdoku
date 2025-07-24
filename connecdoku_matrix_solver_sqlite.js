@@ -204,7 +204,7 @@ async function main() {
     let totalFound = 0;
 
     for (let i = startI; i < n; ++i) {
-        pbar(i + 1, n, "Search", `${saved} puzzles`);
+        pbar(i + 1, n, "Search", `${totalFound} found, ${saved} new`);
 
         for (const j of neigh2[i]) if (j > i) {
             const jStart = (i === startI) ? Math.max(j, startJ) : j;
