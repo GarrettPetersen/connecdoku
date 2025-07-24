@@ -74,7 +74,7 @@ function setupDatabase() {
 function savePuzzle(db, puzzleHash, rows, cols, wordListHash, iterators) {
     return new Promise((resolve, reject) => {
         const stmt = db.prepare(`
-            INSERT OR REPLACE INTO puzzles 
+            INSERT OR IGNORE INTO puzzles 
             (puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, word_list_hash, iterators)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         `);
@@ -90,7 +90,8 @@ function savePuzzle(db, puzzleHash, rows, cols, wordListHash, iterators) {
                 console.error('Error saving puzzle:', err.message);
                 reject(err);
             } else {
-                resolve(this.lastID);
+                // this.changes will be 1 if INSERT succeeded, 0 if IGNORE (already existed)
+                resolve(this.changes === 1);
             }
         });
 
@@ -200,6 +201,7 @@ async function main() {
 
     begin("Search");
     let saved = 0;
+    let totalFound = 0;
 
     for (let i = startI; i < n; ++i) {
         pbar(i + 1, n, "Search", `${saved} puzzles`);
@@ -257,15 +259,20 @@ async function main() {
                                         const rows = R.map(v => cats[v]), cols = C.map(v => cats[v]);
                                         const puzzleHash = sha256(rows.join("|") + cols.join("|"));
 
+                                        // Count total found
+                                        ++totalFound;
+
                                         // Save to database
                                         try {
-                                            await savePuzzle(db, puzzleHash, rows, cols, wordListHash, {
+                                            const wasNew = await savePuzzle(db, puzzleHash, rows, cols, wordListHash, {
                                                 i, j: jj, k, l, a, b, c, d
                                             });
-                                            ++saved;
+                                            if (wasNew) {
+                                                ++saved;
+                                            }
 
                                             // Update progress bar immediately when a puzzle is found
-                                            pbar(i + 1, n, "Search", `${saved} puzzles`, true);
+                                            pbar(i + 1, n, "Search", `${totalFound} found, ${saved} new`, true);
 
                                             // Save current position every 100 puzzles
                                             if (saved % 100 === 0) {
@@ -286,8 +293,8 @@ async function main() {
         }
     }
 
-    pbar(n, n, "Search", `${saved} puzzles`, true); end();
-    console.log(`\nSaved ${saved} puzzles to database`);
+    pbar(n, n, "Search", `${totalFound} found, ${saved} new`, true); end();
+    console.log(`\n${totalFound} puzzles found, ${saved} new puzzles saved to database`);
 
     db.close((err) => {
         if (err) {
