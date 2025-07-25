@@ -794,7 +794,6 @@
     "British Royals",
     "Ends with ETH",
     "Female Names",
-    "Historical Figures",
     "Modern Rulers",
     "Monarchs",
     "National Leaders",
@@ -3110,7 +3109,6 @@
     "1st Century",
     "Ends with ARY",
     "Female Names",
-    "Historical Figures",
     "People",
     "Saints",
     "Starts with MAR"
@@ -3534,13 +3532,13 @@
     "13th Century",
     "Ends with HAN",
     "Fictional People",
-    "Historical Figures",
     "Medieval Rulers",
     "People",
     "Real People",
     "Rulers",
     "Star Trek",
     "Starts with KHA",
+    "Things Mongolian",
     "Titles of Rank"
   ],
   "Pharaoh": [
@@ -3548,7 +3546,6 @@
     "Ancient Rulers",
     "Ends with AOH",
     "Fictional People",
-    "Historical Figures",
     "Monarchs",
     "Real People",
     "Rulers",
@@ -3560,7 +3557,6 @@
     "Ancient Rulers",
     "Ends with SAR",
     "Fictional People",
-    "Historical Figures",
     "Medieval Rulers",
     "Modern Rulers",
     "Monarchs",
@@ -4056,7 +4052,6 @@
   "Grant": [
     "19th Century",
     "Ends with ANT",
-    "Historical Figures",
     "Military Leaders",
     "National Leaders",
     "People",
@@ -4068,7 +4063,6 @@
     "18th Century",
     "Ends with INE",
     "Female Names",
-    "Historical Figures",
     "Modern Rulers",
     "National Leaders",
     "People",
@@ -17797,7 +17791,6 @@
     "Epic Novels",
     "Epic Stories",
     "Historical Fiction",
-    "Historical Figures",
     "Military Stories",
     "Starts with ROM",
     "Things Chinese",
@@ -17944,7 +17937,6 @@
     "Ends with ATA",
     "Epic Poetry",
     "Epic Stories",
-    "Historical Figures",
     "Religious Stories",
     "Starts with THE",
     "Things Indian",
@@ -18960,7 +18952,8 @@
     "Ends with POT",
     "Foods",
     "Starts with HOT",
-    "Things Chinese"
+    "Things Chinese",
+    "Things Mongolian"
   ],
   "Xiaolongbao": [
     "Dumplings",
@@ -23008,17 +23001,21 @@
   "The Trojan War": [
     "12th Century BC",
     "Ends with WAR",
+    "Events",
     "Starts with THE"
   ],
   "The Sack of Rome": [
     "5th Century",
     "Ends with OME",
+    "Events",
     "Starts with THE"
   ],
   "The Norman Conquest": [
     "11th Century",
     "Ends with EST",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things British"
   ],
   "The Peasants' Revolt": [
     "14th Century",
@@ -23048,33 +23045,45 @@
   "The Great Fire of London": [
     "17th Century",
     "Ends with DON",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things British"
   ],
   "The Seven Years' War": [
     "18th Century",
     "Ends with WAR",
+    "Events",
     "Starts with THE"
   ],
   "The Crimean War": [
     "19th Century",
     "Ends with WAR",
+    "Events",
     "Starts with THE"
   ],
   "The War on Terror": [
     "2000s",
     "21st Century",
     "Ends with ROR",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things American"
   ],
   "The Titanic Disaster": [
     "1910s",
+    "20th Century",
+    "Disasters",
     "Ends with TER",
+    "Events",
     "Starts with THE"
   ],
   "The Mexican Revolution": [
     "1910s",
+    "20th Century",
     "Ends with ION",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things Mexican"
   ],
   "The Dust Bowl": [
     "1930s",
@@ -23097,14 +23106,21 @@
   ],
   "The Manhattan Project": [
     "1940s",
+    "20th Century",
     "Ends with ECT",
+    "Events",
     "Scientific Events",
-    "Starts with THE"
+    "Starts with THE",
+    "Things American"
   ],
   "The Battle of Stalingrad": [
     "1940s",
+    "20th Century",
     "Ends with RAD",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things German",
+    "Things Russian"
   ],
   "The Space Race": [
     "1950s",
@@ -23129,8 +23145,11 @@
   ],
   "The Civil Rights Movement": [
     "1960s",
+    "20th Century",
     "Ends with ENT",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things American"
   ],
   "The Chernobyl Disaster": [
     "1980s",
@@ -23139,6 +23158,7 @@
     "Ends with TER",
     "Events",
     "Starts with THE",
+    "Things Russian",
     "Things Ukrainian"
   ],
   "The Iran-Iraq War": [
@@ -23167,6 +23187,7 @@
     "Events",
     "Genocides",
     "Starts with THE",
+    "Things Rwandan",
     "War Crimes"
   ],
   "The Great Recession": [
@@ -23185,6 +23206,7 @@
     "Ends with WAR",
     "Events",
     "Starts with THE",
+    "Things Syrian",
     "Wars"
   ],
   "The Brexit Vote": [
@@ -23216,70 +23238,121 @@
     "Things American"
   ],
   "The Russian Civil War": [
+    "1910s",
+    "20th Century",
     "Civil Wars",
     "Ends with WAR",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things Russian"
   ],
   "The Albigensian Crusade": [
+    "13th Century",
     "Ends with ADE",
+    "Events",
     "Religious Wars",
-    "Starts with THE"
+    "Starts with THE",
+    "Things French"
   ],
   "The Hussite Wars": [
+    "15th Century",
     "Ends with ARS",
+    "Events",
     "Religious Wars",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Czech"
   ],
   "The Indian Rebellion": [
+    "1850s",
+    "19th Century",
     "Colonial Wars",
     "Ends with ION",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things British",
+    "Things Indian"
   ],
   "The Sepoy Mutiny": [
+    "1850s",
+    "19th Century",
     "Colonial Wars",
     "Ends with INY",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things British",
+    "Things Indian"
   ],
   "The Haitian Revolution": [
+    "1790s",
+    "18th Century",
     "Ends with ION",
+    "Events",
     "Independence Movements",
     "Revolutions",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Haitian"
   ],
   "The Wall Street Crash": [
+    "1920s",
+    "20th Century",
     "Economic Events",
     "Ends with ASH",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things American"
   ],
   "The Discovery of Penicillin": [
+    "1920s",
+    "20th Century",
     "Ends with LIN",
+    "Events",
     "Scientific Events",
-    "Starts with THE"
+    "Starts with THE",
+    "Things British"
   ],
   "The Human Genome Project": [
+    "1990s",
+    "20th Century",
     "Ends with ECT",
+    "Events",
     "Scientific Events",
-    "Starts with THE"
+    "Starts with THE",
+    "Things American"
   ],
   "The Apollo Program": [
+    "1960s",
+    "20th Century",
     "Ends with RAM",
+    "Events",
     "Space Exploration",
-    "Starts with THE"
+    "Starts with THE",
+    "Things American"
   ],
   "The Hubble Telescope": [
+    "1990s",
+    "20th Century",
     "Ends with OPE",
+    "Events",
     "Space Exploration",
-    "Starts with THE"
+    "Starts with THE",
+    "Things American"
   ],
   "The Spanish Flu": [
+    "1910s",
+    "20th Century",
     "Ends with FLU",
+    "Events",
     "Pandemics",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Spanish"
   ],
   "The Plague of Justinian": [
+    "6th Century",
     "Ends with IAN",
+    "Events",
     "Pandemics",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Byzantine"
   ],
   "The AIDS Crisis": [
     "1980s",
@@ -23296,7 +23369,8 @@
     "Ends with MIC",
     "Events",
     "Health Crises",
-    "Starts with THE"
+    "Starts with THE",
+    "Things American"
   ],
   "The Watergate Scandal": [
     "1970s",
@@ -23324,7 +23398,8 @@
     "Ends with ING",
     "Events",
     "Starts with THE",
-    "Terrorist Attacks"
+    "Terrorist Attacks",
+    "Things American"
   ],
   "The London Bombings": [
     "2000s",
@@ -23336,31 +23411,58 @@
     "Things British"
   ],
   "The Roman Empire": [
+    "1st Century",
+    "1st Century BC",
+    "2nd Century",
+    "3rd Century",
+    "4th Century",
+    "5th Century",
     "Empire Building",
     "Ends with IRE",
-    "Starts with THE"
+    "Events",
+    "Roman Empire",
+    "Starts with THE",
+    "Things Italian"
   ],
   "The British Empire": [
+    "16th Century",
+    "17th Century",
+    "18th Century",
+    "19th Century",
+    "20th Century",
     "Empire Building",
     "Ends with IRE",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things British"
   ],
   "The Mongol Empire": [
+    "13th Century",
     "Empire Building",
     "Ends with IRE",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things Mongolian"
   ],
   "The Fall of Constantinople": [
+    "15th Century",
     "Collapses",
     "Empire Collapses",
     "Ends with PLE",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things Greek",
+    "Things Turkish"
   ],
   "The Collapse of the Soviet Union": [
+    "1990s",
+    "20th Century",
     "Collapses",
     "Empire Collapses",
     "Ends with ION",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things Russian"
   ],
   "The Catholic Counter-Reformation": [
     "16th Century",
@@ -23368,7 +23470,8 @@
     "Events",
     "Reformations",
     "Religious Movements",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Italian"
   ],
   "The English Reformation": [
     "16th Century",
@@ -23396,14 +23499,23 @@
     "Things American"
   ],
   "The Armenian Genocide": [
+    "1910s",
+    "20th Century",
     "Ends with IDE",
+    "Events",
     "Genocides",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Armenian",
+    "Things Turkish"
   ],
   "The Cambodian Genocide": [
+    "1970s",
+    "20th Century",
     "Ends with IDE",
+    "Events",
     "Genocides",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Cambodian"
   ],
   "The My Lai Massacre": [
     "1960s",
@@ -23426,29 +23538,52 @@
     "War Crimes"
   ],
   "The Indian Independence Movement": [
+    "1940s",
+    "20th Century",
     "Anti-Colonial Movements",
     "Ends with ENT",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things British",
+    "Things Indian"
   ],
   "The Algerian War": [
+    "1950s",
+    "20th Century",
     "Anti-Colonial Movements",
     "Ends with WAR",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things Algerian",
+    "Things French"
   ],
   "The Mau Mau Uprising": [
+    "1950s",
+    "20th Century",
     "Anti-Colonial Movements",
     "Ends with ING",
-    "Starts with THE"
+    "Events",
+    "Starts with THE",
+    "Things British",
+    "Things Kenyan"
   ],
   "The Latin American Wars of Independence": [
+    "1810s",
+    "19th Century",
     "Ends with NCE",
+    "Events",
     "Independence Movements",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Latin American"
   ],
   "The Greek War of Independence": [
+    "1820s",
+    "19th Century",
     "Ends with NCE",
+    "Events",
     "Independence Movements",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Greek"
   ],
   "The Second Industrial Revolution": [
     "19th Century",
@@ -23468,6 +23603,7 @@
     "Starts with THE"
   ],
   "The Long Depression": [
+    "1870s",
     "19th Century",
     "Depressions",
     "Economic Events",
@@ -23485,6 +23621,7 @@
     "Things German"
   ],
   "The Italian Unification": [
+    "1860s",
     "19th Century",
     "Ends with ION",
     "Events",
@@ -23493,19 +23630,31 @@
     "Things Italian"
   ],
   "The Whiskey Rebellion": [
+    "1790s",
+    "18th Century",
     "Ends with ION",
+    "Events",
     "Rebellions",
-    "Starts with THE"
+    "Starts with THE",
+    "Things American"
   ],
   "The Shays' Rebellion": [
+    "1780s",
+    "18th Century",
     "Ends with ION",
+    "Events",
     "Rebellions",
-    "Starts with THE"
+    "Starts with THE",
+    "Things American"
   ],
   "The Taiping Rebellion": [
+    "1850s",
+    "19th Century",
     "Ends with ION",
+    "Events",
     "Rebellions",
-    "Starts with THE"
+    "Starts with THE",
+    "Things Chinese"
   ],
   "The 1970s": [
     "1970s",
@@ -23782,5 +23931,124 @@
     "Ships",
     "Starts with BOA",
     "Things British"
+  ],
+  "Genghis Khan": [
+    "12th Century",
+    "13th Century",
+    "Ends with HAN",
+    "Historical Figures",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Rulers",
+    "Starts with GEN",
+    "Things Mongolian"
+  ],
+  "Kublai Khan": [
+    "13th Century",
+    "Ends with HAN",
+    "Historical Figures",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Rulers",
+    "Starts with KUB",
+    "Things Mongolian"
+  ],
+  "Ögedei Khan": [
+    "13th Century",
+    "Ends with HAN",
+    "Historical Figures",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Rulers",
+    "Starts with ÖGE",
+    "Things Mongolian"
+  ],
+  "Möngke Khan": [
+    "13th Century",
+    "Ends with HAN",
+    "Historical Figures",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Rulers",
+    "Starts with MÖN",
+    "Things Mongolian"
+  ],
+  "Temüjin": [
+    "12th Century",
+    "Ends with JIN",
+    "Historical Figures",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Rulers",
+    "Starts with TEM",
+    "Things Mongolian"
+  ],
+  "Subutai": [
+    "12th Century",
+    "13th Century",
+    "Ends with TAI",
+    "Historical Figures",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Starts with SUB",
+    "Things Mongolian"
+  ],
+  "Jebe": [
+    "12th Century",
+    "13th Century",
+    "Ends with EBE",
+    "Historical Figures",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Starts with JEB",
+    "Things Mongolian"
+  ],
+  "Batu Khan": [
+    "13th Century",
+    "Ends with HAN",
+    "Historical Figures",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Rulers",
+    "Starts with BAT",
+    "Things Mongolian"
+  ],
+  "Hulagu Khan": [
+    "13th Century",
+    "Ends with HAN",
+    "Historical Figures",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Rulers",
+    "Starts with HUL",
+    "Things Mongolian"
+  ],
+  "Tolui": [
+    "13th Century",
+    "Ends with LUI",
+    "Historical Figures",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Rulers",
+    "Starts with TOL",
+    "Things Mongolian"
   ]
 }

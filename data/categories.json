@@ -5,15 +5,32 @@
     "The Tale of Genji",
     "William the Conqueror"
   ],
+  "12th Century": [
+    "Genghis Khan",
+    "Jebe",
+    "Subutai",
+    "Temüjin"
+  ],
   "12th Century BC": [
     "The Bronze Age Collapse",
     "The Trojan War"
   ],
   "13th Century": [
+    "Batu Khan",
     "Dante",
+    "Genghis Khan",
+    "Hulagu Khan",
+    "Jebe",
     "Khan",
+    "Kublai Khan",
     "Marco Polo",
-    "The Tale of the Heike"
+    "Möngke Khan",
+    "Subutai",
+    "The Albigensian Crusade",
+    "The Mongol Empire",
+    "The Tale of the Heike",
+    "Tolui",
+    "Ögedei Khan"
   ],
   "1490s": [
     "Santa Maria"
@@ -40,6 +57,8 @@
     "Michelangelo",
     "Ming",
     "Santa Maria",
+    "The Fall of Constantinople",
+    "The Hussite Wars",
     "Vasco da Gama",
     "Zheng He"
   ],
@@ -61,11 +80,19 @@
     "Queen Mary",
     "Romeo",
     "Shakespeare",
+    "The British Empire",
     "The Catholic Counter-Reformation",
     "The English Reformation",
     "The Italian Wars",
     "The Protestant Reformation",
     "The Spanish Armada"
+  ],
+  "1780s": [
+    "The Shays' Rebellion"
+  ],
+  "1790s": [
+    "The Haitian Revolution",
+    "The Whiskey Rebellion"
   ],
   "17th Century": [
     "Bach",
@@ -79,6 +106,7 @@
     "Newton",
     "Salem",
     "Shakespeare",
+    "The British Empire",
     "The English Civil War",
     "The Glorious Revolution",
     "The Great Fire of London",
@@ -87,7 +115,11 @@
   "1810s": [
     "Frankenstein",
     "Pride and Prejudice",
-    "Tambora"
+    "Tambora",
+    "The Latin American Wars of Independence"
+  ],
+  "1820s": [
+    "The Greek War of Independence"
   ],
   "1840s": [
     "Jane Eyre",
@@ -96,18 +128,23 @@
   ],
   "1850s": [
     "Moby Dick",
-    "The Scarlet Letter"
+    "The Indian Rebellion",
+    "The Scarlet Letter",
+    "The Sepoy Mutiny",
+    "The Taiping Rebellion"
   ],
   "1860s": [
     "Alice's Adventures in Wonderland",
     "Crime and Punishment",
     "Les Misérables",
     "Little Women",
+    "The Italian Unification",
     "War and Peace"
   ],
   "1870s": [
     "Challenger",
-    "The Adventures of Tom Sawyer"
+    "The Adventures of Tom Sawyer",
+    "The Long Depression"
   ],
   "1880s": [
     "Krakatoa",
@@ -133,10 +170,14 @@
     "Napoleon Bonaparte",
     "Newton",
     "The American Revolution",
+    "The British Empire",
     "The French Revolution",
     "The Great Awakening",
+    "The Haitian Revolution",
     "The Industrial Revolution",
     "The Seven Years' War",
+    "The Shays' Rebellion",
+    "The Whiskey Rebellion",
     "Washington",
     "Whitney"
   ],
@@ -148,9 +189,12 @@
   ],
   "1910s": [
     "Lusitania",
+    "The Armenian Genocide",
     "The Mexican Revolution",
+    "The Russian Civil War",
     "The Russian Revolution",
     "The Secret Garden",
+    "The Spanish Flu",
     "The Titanic Disaster",
     "Titanic",
     "World War I"
@@ -159,9 +203,11 @@
     "A Farewell to Arms",
     "Ruth",
     "The Age of Innocence",
+    "The Discovery of Penicillin",
     "The Great Gatsby",
     "The Sound and the Fury",
     "The Sun Also Rises",
+    "The Wall Street Crash",
     "Winnie-the-Pooh"
   ],
   "1930s": [
@@ -197,6 +243,7 @@
     "The Battle of Stalingrad",
     "The Big Sleep",
     "The Holocaust",
+    "The Indian Independence Movement",
     "The Little Prince",
     "The Maltese Falcon",
     "The Manhattan Project",
@@ -218,6 +265,7 @@
     "Rashomon",
     "Seven Samurai",
     "Singin' in the Rain",
+    "The Algerian War",
     "The Bridge on the River Kwai",
     "The Catcher in the Rye",
     "The Chronicles of Narnia",
@@ -231,6 +279,7 @@
     "The Lion, the Witch and the Wardrobe",
     "The Lord of the Rings",
     "The Magician's Nephew",
+    "The Mau Mau Uprising",
     "The Old Man and the Sea",
     "The Space Race",
     "Throne of Blood",
@@ -260,6 +309,7 @@
     "Sanjuro",
     "Slaughterhouse-Five",
     "Tanganyika",
+    "The Apollo Program",
     "The Bell Jar",
     "The Civil Rights Movement",
     "The Cuban Missile Crisis",
@@ -313,6 +363,7 @@
     "Serpico",
     "Star Wars",
     "The 1970s",
+    "The Cambodian Genocide",
     "The Deer Hunter",
     "The Exorcist",
     "The French Connection",
@@ -447,6 +498,7 @@
     "Shakespeare in Love",
     "Stargate",
     "Terminator 2: Judgment Day",
+    "The Collapse of the Soviet Union",
     "The Crying Game",
     "The Devil's Advocate",
     "The Digital Revolution",
@@ -457,6 +509,8 @@
     "The Godfather Part III",
     "The Green Mile",
     "The Gulf War",
+    "The Hubble Telescope",
+    "The Human Genome Project",
     "The Ice Storm",
     "The Madness of King George",
     "The Matrix",
@@ -521,18 +575,24 @@
     "The American Civil War",
     "The Boer War",
     "The Boxer Rebellion",
+    "The British Empire",
     "The Brothers Karamazov",
     "The Count of Monte Cristo",
     "The Crimean War",
     "The Franco-Prussian War",
+    "The Greek War of Independence",
+    "The Indian Rebellion",
     "The Italian Unification",
+    "The Latin American Wars of Independence",
     "The Long Depression",
     "The Napoleonic Wars",
     "The Red Badge of Courage",
     "The Scarlet Letter",
     "The Second Great Awakening",
     "The Second Industrial Revolution",
+    "The Sepoy Mutiny",
     "The Spanish-American War",
+    "The Taiping Rebellion",
     "The Time Machine",
     "Thomas Edison",
     "Victor",
@@ -544,12 +604,14 @@
   ],
   "1st Century": [
     "Mary",
-    "Pompeii"
+    "Pompeii",
+    "The Roman Empire"
   ],
   "1st Century BC": [
     "Caesar",
     "Cleopatra",
-    "Emperor Wu of Han"
+    "Emperor Wu of Han",
+    "The Roman Empire"
   ],
   "2000s": [
     "1Q84",
@@ -997,16 +1059,24 @@
     "The AIDS Crisis",
     "The Age of Innocence",
     "The Alchemist",
+    "The Algerian War",
     "The Anubis Gates",
+    "The Apollo Program",
+    "The Armenian Genocide",
+    "The Battle of Stalingrad",
     "The Bell Jar",
     "The Big Sleep",
     "The Bridge on the River Kwai",
+    "The British Empire",
     "The Call of the Wild",
+    "The Cambodian Genocide",
     "The Catcher in the Rye",
     "The Chernobyl Disaster",
     "The Chronicles of Narnia",
     "The Chronicles of Narnia: The Magician's Nephew",
+    "The Civil Rights Movement",
     "The Cold War",
+    "The Collapse of the Soviet Union",
     "The Color Purple",
     "The Crying Game",
     "The Cuban Missile Crisis",
@@ -1014,6 +1084,7 @@
     "The Deer Hunter",
     "The Devil's Advocate",
     "The Digital Revolution",
+    "The Discovery of Penicillin",
     "The Door into Summer",
     "The Dust Bowl",
     "The Empire Strikes Back",
@@ -1041,7 +1112,10 @@
     "The Hitchhiker's Guide to the Galaxy",
     "The Hobbit",
     "The Holocaust",
+    "The Hubble Telescope",
+    "The Human Genome Project",
     "The Ice Storm",
+    "The Indian Independence Movement",
     "The Iran Hostage Crisis",
     "The Iran-Iraq War",
     "The Italian Job",
@@ -1056,7 +1130,10 @@
     "The Maltese Falcon",
     "The Man Who Fell to Earth",
     "The Man in the High Castle",
+    "The Manhattan Project",
     "The Matrix",
+    "The Mau Mau Uprising",
+    "The Mexican Revolution",
     "The Moon Landing",
     "The Muppet Christmas Carol",
     "The My Lai Massacre",
@@ -1068,6 +1145,7 @@
     "The Philadelphia Experiment",
     "The Red Shoes",
     "The Remains of the Day",
+    "The Russian Civil War",
     "The Russian Revolution",
     "The Russo-Japanese War",
     "The Rwandan Genocide",
@@ -1082,6 +1160,7 @@
     "The Sound of Music",
     "The Space Race",
     "The Spanish Civil War",
+    "The Spanish Flu",
     "The Stand",
     "The Sun Also Rises",
     "The Tale of Peter Rabbit",
@@ -1089,9 +1168,11 @@
     "The Thing",
     "The Third Man",
     "The Time Ships",
+    "The Titanic Disaster",
     "The Usual Suspects",
     "The Very Hungry Caterpillar",
     "The Vietnam War",
+    "The Wall Street Crash",
     "The Watergate Scandal",
     "The Wicker Man",
     "The Wind in the Willows",
@@ -1429,6 +1510,9 @@
     "Whisper of the Heart",
     "Winnie the Pooh"
   ],
+  "2nd Century": [
+    "The Roman Empire"
+  ],
   "2nd Century BC": [
     "Emperor Wu of Han"
   ],
@@ -1468,10 +1552,14 @@
     "Zootopia"
   ],
   "3rd Century": [
-    "Guan Yu"
+    "Guan Yu",
+    "The Roman Empire"
   ],
   "3rd Century BC": [
     "Emperor Qin Shi Huang"
+  ],
+  "4th Century": [
+    "The Roman Empire"
   ],
   "4th Century BC": [
     "Aristotle",
@@ -1481,6 +1569,7 @@
   "5th Century": [
     "Saint Patrick",
     "The Fall of Rome",
+    "The Roman Empire",
     "The Sack of Rome"
   ],
   "5th Century BC": [
@@ -1489,6 +1578,9 @@
     "Socrates",
     "Sun Tzu",
     "The Ramayana"
+  ],
+  "6th Century": [
+    "The Plague of Justinian"
   ],
   "6th Century BC": [
     "Confucius",
@@ -4323,6 +4415,7 @@
     "Tambora",
     "The Chernobyl Disaster",
     "The Dust Bowl",
+    "The Titanic Disaster",
     "Titanic"
   ],
   "Disney": [
@@ -5674,6 +5767,9 @@
   "Ends with EAU": [
     "Juneau"
   ],
+  "Ends with EBE": [
+    "Jebe"
+  ],
   "Ends with EBI": [
     "Jalebi"
   ],
@@ -6197,10 +6293,16 @@
     "Nuoc Cham"
   ],
   "Ends with HAN": [
+    "Batu Khan",
     "Emperor Wu of Han",
+    "Genghis Khan",
     "Han",
+    "Hulagu Khan",
     "Khan",
-    "Leviathan"
+    "Kublai Khan",
+    "Leviathan",
+    "Möngke Khan",
+    "Ögedei Khan"
   ],
   "Ends with HAU": [
     "Bacalhau"
@@ -6830,6 +6932,9 @@
   "Ends with JAY": [
     "Blue Jay"
   ],
+  "Ends with JIN": [
+    "Temüjin"
+  ],
   "Ends with JIU": [
     "Baijiu"
   ],
@@ -7133,6 +7238,9 @@
   "Ends with LUE": [
     "Blue",
     "Clue"
+  ],
+  "Ends with LUI": [
+    "Tolui"
   ],
   "Ends with MAL": [
     "Animal"
@@ -8571,6 +8679,9 @@
   "Ends with T 2": [
     "Harry Potter and the Deathly Hallows: Part 2"
   ],
+  "Ends with TAI": [
+    "Subutai"
+  ],
   "Ends with TAL": [
     "Britannia Hospital",
     "Elemental",
@@ -9287,24 +9398,36 @@
     "Pompeii",
     "Tambora",
     "The AIDS Crisis",
+    "The Albigensian Crusade",
+    "The Algerian War",
     "The American Civil War",
     "The American Revolution",
+    "The Apollo Program",
     "The Arab Spring",
+    "The Armenian Genocide",
+    "The Battle of Stalingrad",
     "The Black Death",
     "The Boer War",
     "The Boxer Rebellion",
     "The Brexit Vote",
+    "The British Empire",
     "The Bronze Age Collapse",
     "The COVID-19 Pandemic",
+    "The Cambodian Genocide",
     "The Catholic Counter-Reformation",
     "The Chernobyl Disaster",
+    "The Civil Rights Movement",
     "The Cold War",
+    "The Collapse of the Soviet Union",
+    "The Crimean War",
     "The Cuban Missile Crisis",
     "The Cuban Revolution",
     "The Digital Revolution",
+    "The Discovery of Penicillin",
     "The Dust Bowl",
     "The English Civil War",
     "The English Reformation",
+    "The Fall of Constantinople",
     "The Fall of Rome",
     "The Fall of the Berlin Wall",
     "The First Crusade",
@@ -9314,10 +9437,18 @@
     "The Glorious Revolution",
     "The Great Awakening",
     "The Great Depression",
+    "The Great Fire of London",
     "The Great Recession",
+    "The Greek War of Independence",
     "The Gulf War",
+    "The Haitian Revolution",
     "The Holocaust",
+    "The Hubble Telescope",
+    "The Human Genome Project",
     "The Hundred Years War",
+    "The Hussite Wars",
+    "The Indian Independence Movement",
+    "The Indian Rebellion",
     "The Industrial Revolution",
     "The Iran Hostage Crisis",
     "The Iran-Iraq War",
@@ -9326,30 +9457,50 @@
     "The Italian Wars",
     "The January 6th Insurrection",
     "The Korean War",
+    "The Latin American Wars of Independence",
     "The London Bombings",
     "The Long Depression",
+    "The Manhattan Project",
+    "The Mau Mau Uprising",
+    "The Mexican Revolution",
+    "The Mongol Empire",
     "The Moon Landing",
     "The My Lai Massacre",
     "The Nanjing Massacre",
     "The Napoleonic Wars",
+    "The Norman Conquest",
     "The Oklahoma City Bombing",
     "The Opioid Epidemic",
     "The Peasants' Revolt",
+    "The Plague of Justinian",
     "The Protestant Reformation",
+    "The Roman Empire",
+    "The Russian Civil War",
     "The Russian Invasion of Ukraine",
     "The Russian Revolution",
     "The Russo-Japanese War",
     "The Rwandan Genocide",
+    "The Sack of Rome",
     "The Second Great Awakening",
     "The Second Industrial Revolution",
+    "The Sepoy Mutiny",
+    "The Seven Years' War",
+    "The Shays' Rebellion",
     "The Space Race",
     "The Spanish Armada",
     "The Spanish Civil War",
+    "The Spanish Flu",
     "The Spanish-American War",
     "The Syrian Civil War",
+    "The Taiping Rebellion",
     "The Thirty Years War",
+    "The Titanic Disaster",
+    "The Trojan War",
     "The Vietnam War",
+    "The Wall Street Crash",
+    "The War on Terror",
     "The Watergate Scandal",
+    "The Whiskey Rebellion",
     "The Yugoslav Wars",
     "Titanic",
     "Woodstock",
@@ -10744,8 +10895,8 @@
   "Historical Figures": [
     "Aristotle",
     "Bach",
+    "Batu Khan",
     "Beethoven",
-    "Catherine",
     "Charlemagne",
     "Christopher Columbus",
     "Cleopatra",
@@ -10756,47 +10907,48 @@
     "Drake",
     "Du Fu",
     "Einstein",
-    "Elizabeth",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
     "Ferdinand Magellan",
     "Franklin D. Roosevelt",
     "Galileo",
+    "Genghis Khan",
     "George Washington",
-    "Grant",
     "Guan Yu",
     "Handel",
     "Homer",
+    "Hulagu Khan",
+    "Jebe",
     "Joan of Arc",
-    "Khan",
+    "Kublai Khan",
     "Li Bai",
     "Marco Polo",
     "Marie Curie",
-    "Mary",
     "Michelangelo",
     "Ming",
     "Mozart",
+    "Möngke Khan",
     "Napoleon Bonaparte",
     "Newton",
-    "Pharaoh",
     "Plato",
     "Poe",
-    "Romance of the Three Kingdoms",
     "Saint Patrick",
     "Shakespeare",
     "Socrates",
+    "Subutai",
     "Sun Tzu",
+    "Temüjin",
     "Teresa",
-    "The Mahabharata",
     "Thomas Edison",
-    "Tsar",
+    "Tolui",
     "Vasco da Gama",
     "Victoria",
     "William the Conqueror",
     "Winston Churchill",
     "Wright",
     "Zheng He",
-    "Zhu Yuanzhang"
+    "Zhu Yuanzhang",
+    "Ögedei Khan"
   ],
   "Historical Weapons": [
     "Axe",
@@ -12096,17 +12248,27 @@
     "Yemen"
   ],
   "Military Leaders": [
+    "Batu Khan",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
+    "Genghis Khan",
     "George Washington",
     "Grant",
     "Guan Yu",
+    "Hulagu Khan",
+    "Jebe",
     "Joan of Arc",
+    "Kublai Khan",
+    "Möngke Khan",
     "Napoleon Bonaparte",
+    "Subutai",
     "Sun Tzu",
+    "Temüjin",
+    "Tolui",
     "William the Conqueror",
     "Winston Churchill",
-    "Zhu Yuanzhang"
+    "Zhu Yuanzhang",
+    "Ögedei Khan"
   ],
   "Military Ships": [
     "Akagi",
@@ -16846,26 +17008,34 @@
   ],
   "National Leaders": [
     "Adams",
+    "Batu Khan",
     "Bismarck",
     "Caesar",
     "Catherine",
     "Elizabeth",
     "Ford",
+    "Genghis Khan",
     "Grant",
     "Grover",
     "Hoover",
+    "Hulagu Khan",
     "Jackson",
     "Jefferson",
     "Kennedy",
+    "Kublai Khan",
     "Lincoln",
     "Madison",
+    "Möngke Khan",
     "Obama",
     "Ozymandias",
     "Roosevelt",
+    "Temüjin",
+    "Tolui",
     "Trump",
     "Victoria",
     "Washington",
-    "Wilson"
+    "Wilson",
+    "Ögedei Khan"
   ],
   "New Seven Wonders": [
     "Chichen Itza",
@@ -17069,6 +17239,7 @@
     "Aristotle",
     "Aurora",
     "Bach",
+    "Batu Khan",
     "Beethoven",
     "Bell",
     "Belle",
@@ -17111,6 +17282,7 @@
     "Fred",
     "Fujita",
     "Galileo",
+    "Genghis Khan",
     "George Washington",
     "Graf Zeppelin",
     "Grant",
@@ -17122,12 +17294,14 @@
     "Homer",
     "Hoover",
     "Hubble",
+    "Hulagu Khan",
     "Ichiro",
     "Iris",
     "Ivy",
     "Jackson",
     "James",
     "Jean Grey",
+    "Jebe",
     "Jefferson",
     "Joan of Arc",
     "John",
@@ -17139,6 +17313,7 @@
     "Khan",
     "Kirk",
     "Kobe",
+    "Kublai Khan",
     "Kurosawa",
     "Lando",
     "Lenore",
@@ -17160,6 +17335,7 @@
     "Miyazaki",
     "Morse",
     "Mozart",
+    "Möngke Khan",
     "Nakamura",
     "Napoleon Bonaparte",
     "Newton",
@@ -17187,12 +17363,15 @@
     "Shaggy",
     "Shakespeare",
     "Socrates",
+    "Subutai",
     "Sulu",
     "Sun Tzu",
     "Tanaka",
+    "Temüjin",
     "Teresa",
     "Tesla",
     "Thomas Edison",
+    "Tolui",
     "Trump",
     "Vasco da Gama",
     "Velma",
@@ -17206,7 +17385,8 @@
     "Winston Churchill",
     "Wright",
     "Zheng He",
-    "Zhu Yuanzhang"
+    "Zhu Yuanzhang",
+    "Ögedei Khan"
   ],
   "Period Stories": [
     "12 Years a Slave",
@@ -18003,6 +18183,7 @@
     "Adams",
     "Aristotle",
     "Bach",
+    "Batu Khan",
     "Beethoven",
     "Bell",
     "Benedict",
@@ -18035,6 +18216,7 @@
     "Ford",
     "Franklin D. Roosevelt",
     "Galileo",
+    "Genghis Khan",
     "George Washington",
     "Graf Zeppelin",
     "Grant",
@@ -18045,7 +18227,9 @@
     "Homer",
     "Hoover",
     "Hubble",
+    "Hulagu Khan",
     "Jackson",
+    "Jebe",
     "Jefferson",
     "Joan of Arc",
     "John",
@@ -18055,6 +18239,7 @@
     "Khan",
     "King",
     "Kobe",
+    "Kublai Khan",
     "Lando",
     "Leo",
     "Li Bai",
@@ -18069,6 +18254,7 @@
     "Ming",
     "Morse",
     "Mozart",
+    "Möngke Khan",
     "Napoleon Bonaparte",
     "Newton",
     "Obama",
@@ -18084,10 +18270,13 @@
     "Saint Patrick",
     "Shakespeare",
     "Socrates",
+    "Subutai",
     "Sun Tzu",
+    "Temüjin",
     "Teresa",
     "Tesla",
     "Thomas Edison",
+    "Tolui",
     "Trump",
     "Tsar",
     "Vasco da Gama",
@@ -18099,7 +18288,8 @@
     "Winston Churchill",
     "Wright",
     "Zheng He",
-    "Zhu Yuanzhang"
+    "Zhu Yuanzhang",
+    "Ögedei Khan"
   ],
   "Rebellions": [
     "The Boxer Rebellion",
@@ -18422,6 +18612,7 @@
     "Pompeii",
     "Roma",
     "Rome",
+    "The Roman Empire",
     "Vesuvius"
   ],
   "Roman Gods": [
@@ -18530,11 +18721,19 @@
     "Queen"
   ],
   "Rulers": [
+    "Batu Khan",
     "Duke",
+    "Genghis Khan",
+    "Hulagu Khan",
     "Khan",
     "King",
+    "Kublai Khan",
+    "Möngke Khan",
     "Pharaoh",
-    "Tsar"
+    "Temüjin",
+    "Tolui",
+    "Tsar",
+    "Ögedei Khan"
   ],
   "Sailors": [
     "Christopher Columbus",
@@ -19659,7 +19858,8 @@
     "Baton Rouge",
     "Batteries",
     "Battery",
-    "Battlefield"
+    "Battlefield",
+    "Batu Khan"
   ],
   "Starts with BBQ": [
     "BBQ"
@@ -20802,6 +21002,7 @@
   ],
   "Starts with GEN": [
     "General Tso",
+    "Genghis Khan",
     "Genoa"
   ],
   "Starts with GEO": [
@@ -21137,6 +21338,7 @@
     "Hui Guo Rou"
   ],
   "Starts with HUL": [
+    "Hulagu Khan",
     "Hulk"
   ],
   "Starts with HUM": [
@@ -21310,6 +21512,9 @@
   ],
   "Starts with JEA": [
     "Jean Grey"
+  ],
+  "Starts with JEB": [
+    "Jebe"
   ],
   "Starts with JEE": [
     "Jeep"
@@ -21514,6 +21719,9 @@
   ],
   "Starts with KRY": [
     "Krypton"
+  ],
+  "Starts with KUB": [
+    "Kublai Khan"
   ],
   "Starts with KUG": [
     "Kugel"
@@ -21983,6 +22191,9 @@
   ],
   "Starts with MYS": [
     "Mystique"
+  ],
+  "Starts with MÖN": [
+    "Möngke Khan"
   ],
   "Starts with NAA": [
     "Naan"
@@ -23080,7 +23291,8 @@
     "Strange World"
   ],
   "Starts with SUB": [
-    "Subaru"
+    "Subaru",
+    "Subutai"
   ],
   "Starts with SUD": [
     "Sudan"
@@ -23218,7 +23430,8 @@
     "Temeraire",
     "Temple Mount",
     "Temple of Artemis",
-    "Tempura"
+    "Tempura",
+    "Temüjin"
   ],
   "Starts with TEN": [
     "Tenerife",
@@ -23563,6 +23776,9 @@
   ],
   "Starts with TOK": [
     "Tokyo"
+  ],
+  "Starts with TOL": [
+    "Tolui"
   ],
   "Starts with TOM": [
     "Tom Yum",
@@ -23981,6 +24197,9 @@
   "Starts with ZUR": [
     "Zurek"
   ],
+  "Starts with ÖGE": [
+    "Ögedei Khan"
+  ],
   "State Capitals": [
     "Albany",
     "Annapolis",
@@ -24285,7 +24504,8 @@
     "Albania"
   ],
   "Things Algerian": [
-    "Algeria"
+    "Algeria",
+    "The Algerian War"
   ],
   "Things American": [
     "A Farewell to Arms",
@@ -24458,8 +24678,10 @@
     "Texas",
     "The Adventures of Tom Sawyer",
     "The Age of Innocence",
+    "The Apollo Program",
     "The Bell Jar",
     "The Call of the Wild",
+    "The Civil Rights Movement",
     "The Dust Bowl",
     "The Exorcist",
     "The French Connection",
@@ -24469,21 +24691,30 @@
     "The Great Awakening",
     "The Great Gatsby",
     "The Green Mile",
+    "The Hubble Telescope",
+    "The Human Genome Project",
     "The Iran Hostage Crisis",
     "The January 6th Insurrection",
+    "The Manhattan Project",
     "The Matrix",
     "The My Lai Massacre",
+    "The Oklahoma City Bombing",
     "The Old Man and the Sea",
+    "The Opioid Epidemic",
     "The Red Badge of Courage",
     "The Scarlet Letter",
     "The Second Great Awakening",
     "The Shawshank Redemption",
+    "The Shays' Rebellion",
     "The Silence of the Lambs",
     "The Sound and the Fury",
     "The Space Race",
     "The Sun Also Rises",
     "The Usual Suspects",
+    "The Wall Street Crash",
+    "The War on Terror",
     "The Watergate Scandal",
+    "The Whiskey Rebellion",
     "The Wizard of Oz",
     "Thomas Edison",
     "Titanic",
@@ -24526,7 +24757,8 @@
   ],
   "Things Armenian": [
     "Armenia",
-    "Artsakh"
+    "Artsakh",
+    "The Armenian Genocide"
   ],
   "Things Australian": [
     "Australia",
@@ -24685,13 +24917,18 @@
     "Thames",
     "The Brexit Vote",
     "The Bridge on the River Kwai",
+    "The British Empire",
     "The Chronicles of Narnia",
     "The Chronicles of Narnia: The Magician's Nephew",
     "The Crying Game",
+    "The Discovery of Penicillin",
     "The English Patient",
     "The English Reformation",
     "The Full Monty",
+    "The Great Fire of London",
     "The Hobbit",
+    "The Indian Independence Movement",
+    "The Indian Rebellion",
     "The Italian Job",
     "The Jungle Book",
     "The Ladykillers",
@@ -24701,10 +24938,13 @@
     "The Madness of King George",
     "The Magician's Nephew",
     "The Man Who Fell to Earth",
+    "The Mau Mau Uprising",
+    "The Norman Conquest",
     "The Peasants' Revolt",
     "The Red Shoes",
     "The Remains of the Day",
     "The Secret Garden",
+    "The Sepoy Mutiny",
     "The Silmarillion",
     "The Spanish Armada",
     "The Tale of Peter Rabbit",
@@ -24742,9 +24982,13 @@
   "Things Burundian": [
     "Burundi"
   ],
+  "Things Byzantine": [
+    "The Plague of Justinian"
+  ],
   "Things Cambodian": [
     "Cambodia",
-    "Kampuchea"
+    "Kampuchea",
+    "The Cambodian Genocide"
   ],
   "Things Cameroonian": [
     "Cameroon"
@@ -24877,6 +25121,7 @@
     "The Hand",
     "The Killer",
     "The Nanjing Massacre",
+    "The Taiping Rebellion",
     "The Three-Body Problem",
     "The Wandering Earth",
     "Twice Cooked Pork",
@@ -24912,7 +25157,8 @@
   ],
   "Things Czech": [
     "Czech Republic",
-    "Pilsner"
+    "Pilsner",
+    "The Hussite Wars"
   ],
   "Things Danish": [
     "Bornholm",
@@ -25023,6 +25269,8 @@
     "Rosé",
     "Souffle",
     "Sparkling Wine",
+    "The Albigensian Crusade",
+    "The Algerian War",
     "The Count of Monte Cristo",
     "Veloute",
     "Versailles",
@@ -25068,6 +25316,7 @@
     "Scharnhorst",
     "Schnitzel",
     "Spätzle",
+    "The Battle of Stalingrad",
     "The German Reunification",
     "Tirpitz",
     "Weissbier"
@@ -25101,6 +25350,8 @@
     "Socrates",
     "Souvlaki",
     "Spanakopita",
+    "The Fall of Constantinople",
+    "The Greek War of Independence",
     "The Iliad",
     "The Odyssey",
     "Tzatziki",
@@ -25128,7 +25379,8 @@
     "Guyana"
   ],
   "Things Haitian": [
-    "Haiti"
+    "Haiti",
+    "The Haitian Revolution"
   ],
   "Things Hawaiian": [
     "Hawaii",
@@ -25166,9 +25418,12 @@
     "Roti",
     "Taj Mahal",
     "Tandoori",
+    "The Indian Independence Movement",
+    "The Indian Rebellion",
     "The Jungle Book",
     "The Mahabharata",
     "The Ramayana",
+    "The Sepoy Mutiny",
     "Tikka Masala",
     "Vindaloo"
   ],
@@ -25260,10 +25515,12 @@
     "Sicily",
     "Spaghetti",
     "St. Peter's Basilica",
+    "The Catholic Counter-Reformation",
     "The Divine Comedy",
     "The Good, the Bad and the Ugly",
     "The Italian Unification",
     "The Italian Wars",
+    "The Roman Empire",
     "Tiramisu",
     "Tomato",
     "Tortellini",
@@ -25406,7 +25663,8 @@
   ],
   "Things Kenyan": [
     "British East Africa",
-    "Kenya"
+    "Kenya",
+    "The Mau Mau Uprising"
   ],
   "Things Korean": [
     "(G)I-DLE",
@@ -25445,7 +25703,8 @@
     "Laos"
   ],
   "Things Latin American": [
-    "One Hundred Years of Solitude"
+    "One Hundred Years of Solitude",
+    "The Latin American Wars of Independence"
   ],
   "Things Latvian": [
     "Latvia"
@@ -25510,6 +25769,7 @@
     "Taco",
     "Tamale",
     "Tequila",
+    "The Mexican Revolution",
     "Tijuana",
     "Tortilla"
   ],
@@ -25543,7 +25803,20 @@
     "Transnistria"
   ],
   "Things Mongolian": [
-    "Mongolia"
+    "Batu Khan",
+    "Genghis Khan",
+    "Hot Pot",
+    "Hulagu Khan",
+    "Jebe",
+    "Khan",
+    "Kublai Khan",
+    "Mongolia",
+    "Möngke Khan",
+    "Subutai",
+    "Temüjin",
+    "The Mongol Empire",
+    "Tolui",
+    "Ögedei Khan"
   ],
   "Things Montenegrin": [
     "Montenegro"
@@ -25658,7 +25931,11 @@
     "Russia",
     "Shashlik",
     "Solyanka",
+    "The Battle of Stalingrad",
     "The Brothers Karamazov",
+    "The Chernobyl Disaster",
+    "The Collapse of the Soviet Union",
+    "The Russian Civil War",
     "The Russian Invasion of Ukraine",
     "The Space Race",
     "Vareniki",
@@ -25667,7 +25944,8 @@
     "War and Peace"
   ],
   "Things Rwandan": [
-    "Rwanda"
+    "Rwanda",
+    "The Rwandan Genocide"
   ],
   "Things Saint Kittsian": [
     "Saint Kitts and Nevis"
@@ -25762,6 +26040,7 @@
     "Tenerife",
     "The Spanish Armada",
     "The Spanish Civil War",
+    "The Spanish Flu",
     "Trinidad",
     "Victoria"
   ],
@@ -25787,7 +26066,8 @@
     "Switzerland"
   ],
   "Things Syrian": [
-    "Syria"
+    "Syria",
+    "The Syrian Civil War"
   ],
   "Things Taiwanese": [
     "Bubble Tea",
@@ -25835,6 +26115,8 @@
     "Blue Mosque",
     "Constantinople",
     "Hagia Sophia",
+    "The Armenian Genocide",
+    "The Fall of Constantinople",
     "Turkey"
   ],
   "Things Turkmen": [

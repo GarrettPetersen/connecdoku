@@ -175,8 +175,14 @@ currentCategories.forEach(category => {
         // Keep existing emoji exactly as it is
         updatedEmojis[category] = existingEmojis[category];
     } else {
-        // Add new category with default emoji
-        updatedEmojis[category] = '☑️';
+        // Add new category with appropriate emoji
+        if (category.startsWith('Starts with ') || category.startsWith('Ends with ')) {
+            // Assign 🔤 emoji to "Starts with" and "Ends with" categories
+            updatedEmojis[category] = '🔤';
+        } else {
+            // Add new category with default emoji
+            updatedEmojis[category] = '☑️';
+        }
         newCategoriesCount++;
     }
 });

@@ -251,9 +251,6 @@
   "Things Albanian": [
     "Albania"
   ],
-  "Things Algerian": [
-    "Algeria"
-  ],
   "Things Antiguan": [
     "Antigua and Barbuda"
   ],
@@ -332,9 +329,6 @@
   "Things Guinea-Bissauan": [
     "Guinea-Bissau"
   ],
-  "Things Haitian": [
-    "Haiti"
-  ],
   "Things Honduran": [
     "Honduras"
   ],
@@ -392,9 +386,6 @@
   "Things Malian": [
     "Mali"
   ],
-  "Things Mongolian": [
-    "Mongolia"
-  ],
   "Things Montenegrin": [
     "Montenegro"
   ],
@@ -428,9 +419,6 @@
   "Things Romanian": [
     "Romania"
   ],
-  "Things Rwandan": [
-    "Rwanda"
-  ],
   "Things Saint Kittsian": [
     "Saint Kitts and Nevis"
   ],
@@ -463,9 +451,6 @@
   ],
   "Things Surinamese": [
     "Suriname"
-  ],
-  "Things Syrian": [
-    "Syria"
   ],
   "Things Tajik": [
     "Tajikistan"
@@ -2291,9 +2276,6 @@
   "Magical Realism": [
     "One Hundred Years of Solitude"
   ],
-  "Things Latin American": [
-    "One Hundred Years of Solitude"
-  ],
   "Psychological Fiction": [
     "Crime and Punishment"
   ],
@@ -2828,6 +2810,24 @@
   "Arab Countries": [
     "United Arab Republic"
   ],
+  "6th Century": [
+    "The Plague of Justinian"
+  ],
+  "Things Byzantine": [
+    "The Plague of Justinian"
+  ],
+  "2nd Century": [
+    "The Roman Empire"
+  ],
+  "4th Century": [
+    "The Roman Empire"
+  ],
+  "1820s": [
+    "The Greek War of Independence"
+  ],
+  "1780s": [
+    "The Shays' Rebellion"
+  ],
   "The Iran Hostage Crisis": [
     "1970s"
   ],
@@ -2839,9 +2839,6 @@
   ],
   "Music Festivals": [
     "Woodstock"
-  ],
-  "3rd Century": [
-    "Guan Yu"
   ],
   "3rd Century BC": [
     "Emperor Qin Shi Huang"
@@ -2862,17 +2859,9 @@
     "Titanic",
     "Moby Dick"
   ],
-  "1st Century": [
-    "Pompeii",
-    "Mary"
-  ],
   "1880s": [
     "Krakatoa",
     "The Brothers Karamazov"
-  ],
-  "1870s": [
-    "Challenger",
-    "The Adventures of Tom Sawyer"
   ],
   "Golf Terms": [
     "Green",
@@ -2982,9 +2971,9 @@
     "Mauretania",
     "Morocco"
   ],
-  "Things Armenian": [
-    "Armenia",
-    "Artsakh"
+  "Things Algerian": [
+    "Algeria",
+    "The Algerian War"
   ],
   "Things Belizean": [
     "Belize",
@@ -3002,10 +2991,6 @@
     "Burkina Faso",
     "Upper Volta"
   ],
-  "Things Cambodian": [
-    "Cambodia",
-    "Kampuchea"
-  ],
   "Things Chilean": [
     "Chile",
     "Robinson Crusoe"
@@ -3013,10 +2998,6 @@
   "Things Cuban": [
     "Cuba",
     "The Cuban Revolution"
-  ],
-  "Things Czech": [
-    "Czech Republic",
-    "Pilsner"
   ],
   "Things Danish": [
     "Denmark",
@@ -3042,9 +3023,9 @@
     "Guinea",
     "Portuguese Guinea"
   ],
-  "Things Kenyan": [
-    "Kenya",
-    "British East Africa"
+  "Things Haitian": [
+    "Haiti",
+    "The Haitian Revolution"
   ],
   "Things Malawian": [
     "Malawi",
@@ -3074,6 +3055,10 @@
     "North Macedonia",
     "Macedonia"
   ],
+  "Things Rwandan": [
+    "Rwanda",
+    "The Rwandan Genocide"
+  ],
   "Things Samoan": [
     "Samoa",
     "Western Samoa"
@@ -3085,6 +3070,10 @@
   "Things Swedish": [
     "Sweden",
     "Gotland"
+  ],
+  "Things Syrian": [
+    "Syria",
+    "The Syrian Civil War"
   ],
   "Things Taiwanese": [
     "Taiwan",
@@ -3265,10 +3254,6 @@
   "Movies featuring Maggie Smith": [
     "Harry Potter and the Sorcerer's Stone",
     "Harry Potter and the Chamber of Secrets"
-  ],
-  "1850s": [
-    "Moby Dick",
-    "The Scarlet Letter"
   ],
   "Mythology": [
     "The Odyssey",
@@ -3590,6 +3575,10 @@
     "Romance of the Three Kingdoms",
     "War and Peace"
   ],
+  "Things Latin American": [
+    "One Hundred Years of Solitude",
+    "The Latin American Wars of Independence"
+  ],
   "Candy": [
     "Smarties",
     "Coffee Crisp"
@@ -3702,6 +3691,14 @@
     "World War I",
     "World War II"
   ],
+  "1790s": [
+    "The Haitian Revolution",
+    "The Whiskey Rebellion"
+  ],
+  "3rd Century": [
+    "The Roman Empire",
+    "Guan Yu"
+  ],
   "6th Century BC": [
     "Confucius",
     "Sun Tzu"
@@ -3716,10 +3713,15 @@
     "Hood",
     "Britannic"
   ],
-  "1810s": [
-    "Tambora",
-    "Pride and Prejudice",
-    "Frankenstein"
+  "1st Century": [
+    "Pompeii",
+    "Mary",
+    "The Roman Empire"
+  ],
+  "1870s": [
+    "Challenger",
+    "The Adventures of Tom Sawyer",
+    "The Long Depression"
   ],
   "Movies directed by Robert Wise": [
     "Everest",
@@ -3776,11 +3778,6 @@
     "Thor",
     "Sleipnir"
   ],
-  "1st Century BC": [
-    "Cleopatra",
-    "Caesar",
-    "Emperor Wu of Han"
-  ],
   "Demigods": [
     "Achilles",
     "Perseus",
@@ -3836,11 +3833,6 @@
     "Encanto",
     "Moulin Rouge!"
   ],
-  "5th Century": [
-    "Saint Patrick",
-    "The Fall of Rome",
-    "The Sack of Rome"
-  ],
   "Movies directed by Ben Sharpsteen": [
     "Pinnochio",
     "Pinocchio",
@@ -3851,10 +3843,30 @@
     "Pinocchio",
     "Dumbo"
   ],
+  "Things Armenian": [
+    "Armenia",
+    "Artsakh",
+    "The Armenian Genocide"
+  ],
+  "Things Cambodian": [
+    "Cambodia",
+    "Kampuchea",
+    "The Cambodian Genocide"
+  ],
+  "Things Czech": [
+    "Czech Republic",
+    "Pilsner",
+    "The Hussite Wars"
+  ],
   "Things Guyanese": [
     "Guyana",
     "Dutch Guiana",
     "British Guiana"
+  ],
+  "Things Kenyan": [
+    "Kenya",
+    "British East Africa",
+    "The Mau Mau Uprising"
   ],
   "Things Peruvian": [
     "Peru",
