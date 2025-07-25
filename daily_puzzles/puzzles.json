@@ -1598,5 +1598,85 @@
         "Arrival"
       ]
     ]
+  },
+  {
+    "rows": [
+      "21st Century",
+      "Books",
+      "Desserts",
+      "Shipwrecks"
+    ],
+    "cols": [
+      "Things American",
+      "Things British",
+      "Things Italian",
+      "Things Spanish"
+    ],
+    "words": [
+      [
+        "The Opioid Epidemic",
+        "The London Bombings",
+        "Costa Smeralda",
+        "Nina"
+      ],
+      [
+        "Gone with the Wind",
+        "The Chronicles of Narnia",
+        "The Divine Comedy",
+        "Don Quixote"
+      ],
+      [
+        "Apple Pie",
+        "Sticky Toffee Pudding",
+        "Tiramisu",
+        "Flan"
+      ],
+      [
+        "Edmund Fitzgerald",
+        "Lusitania",
+        "Andrea Doria",
+        "Santissima Trinidad"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1990s",
+      "2010s",
+      "Romance Stories",
+      "Sci-fi Stories"
+    ],
+    "cols": [
+      "Musical Films",
+      "Things Chinese",
+      "Things Japanese",
+      "Time Travel Stories"
+    ],
+    "words": [
+      [
+        "Evita",
+        "Hard Boiled",
+        "Princess Mononoke",
+        "Bill & Ted's Bogus Journey"
+      ],
+      [
+        "The Greatest Showman",
+        "The Grandmaster",
+        "Colorless Tsukuru Tazaki",
+        "Hot Tub Time Machine"
+      ],
+      [
+        "Grease",
+        "My Blueberry Nights",
+        "The Tale of Genji",
+        "The Time Traveler's Wife"
+      ],
+      [
+        "Lilo & Stitch",
+        "The Three-Body Problem",
+        "Akira",
+        "Tenet"
+      ]
+    ]
   }
 ]
