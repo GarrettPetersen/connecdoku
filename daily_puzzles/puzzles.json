@@ -1718,5 +1718,45 @@
         "South Africa"
       ]
     ]
+  },
+  {
+    "rows": [
+      "19th Century",
+      "Comedy Stories",
+      "Movies directed by Wong Kar-wai",
+      "Things Japanese"
+    ],
+    "cols": [
+      "2010s",
+      "20th Century",
+      "Romance Stories",
+      "Sci-fi Stories"
+    ],
+    "words": [
+      [
+        "Les Misérables",
+        "The British Empire",
+        "Pride and Prejudice",
+        "The Time Machine"
+      ],
+      [
+        "Hot Tub Time Machine",
+        "Home Alone",
+        "The Parent Trap",
+        "Everything Everywhere All at Once"
+      ],
+      [
+        "The Grandmaster",
+        "Days of Being Wild",
+        "In the Mood for Love",
+        "2046"
+      ],
+      [
+        "Colorless Tsukuru Tazaki",
+        "Kiki's Delivery Service",
+        "The Tale of Genji",
+        "Akira"
+      ]
+    ]
   }
 ]
