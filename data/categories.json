@@ -53,6 +53,7 @@
     "Copernicus",
     "Da Vinci",
     "Ferdinand Magellan",
+    "Henry VII",
     "Joan of Arc",
     "Michelangelo",
     "Ming",
@@ -66,14 +67,25 @@
     "Mayflower"
   ],
   "16th Century": [
+    "Anne Boleyn",
+    "Anne of Cleves",
     "Aurora",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
     "Copernicus",
     "Da Vinci",
     "Drake",
+    "Edward VI",
     "Elizabeth",
+    "Elizabeth I",
     "Ferdinand Magellan",
+    "Henry VIII",
+    "Jane Seymour",
     "Journey to the West",
     "Juliet",
+    "Lady Jane Grey",
+    "Mary I",
     "Mary Rose",
     "Michelangelo",
     "Ming",
@@ -4731,6 +4743,9 @@
   "Ends with  OZ": [
     "The Wizard of Oz"
   ],
+  "Ends with  VI": [
+    "Edward VI"
+  ],
   "Ends with  VU": [
     "Deja Vu"
   ],
@@ -5115,6 +5130,7 @@
     "A Good Day to Die Hard",
     "Board",
     "Card",
+    "Catherine Howard",
     "Chessboard",
     "Die Hard",
     "Live Free or Die Hard",
@@ -5154,6 +5170,9 @@
   "Ends with ARP": [
     "Carp",
     "Harp"
+  ],
+  "Ends with ARR": [
+    "Catherine Parr"
   ],
   "Ends with ARS": [
     "Cars",
@@ -6093,6 +6112,9 @@
   "Ends with EYE": [
     "Hawkeye"
   ],
+  "Ends with EYN": [
+    "Anne Boleyn"
+  ],
   "Ends with EYS": [
     "12 Monkeys"
   ],
@@ -6243,6 +6265,7 @@
   ],
   "Ends with GON": [
     "Argon",
+    "Catherine of Aragon",
     "Crouching Tiger, Hidden Dragon",
     "Dragon",
     "Oregon",
@@ -6274,6 +6297,9 @@
   ],
   "Ends with H 2": [
     "Queen Elizabeth 2"
+  ],
+  "Ends with H I": [
+    "Elizabeth I"
   ],
   "Ends with HAD": [
     "Chad"
@@ -6521,6 +6547,7 @@
   ],
   "Ends with III": [
     "Back to the Future Part III",
+    "Henry VIII",
     "The Godfather Part III"
   ],
   "Ends with IJI": [
@@ -8048,6 +8075,7 @@
   ],
   "Ends with OUR": [
     "Endeavour",
+    "Jane Seymour",
     "Sweet and Sour"
   ],
   "Ends with OUS": [
@@ -8311,7 +8339,8 @@
   ],
   "Ends with REY": [
     "Earl Grey",
-    "Jean Grey"
+    "Jean Grey",
+    "Lady Jane Grey"
   ],
   "Ends with RFS": [
     "Snow White and the Seven Dwarfs"
@@ -9114,6 +9143,7 @@
     "Silver"
   ],
   "Ends with VES": [
+    "Anne of Cleves",
     "Dances with Wolves",
     "Maldives",
     "Robin Hood: Prince of Thieves"
@@ -9125,6 +9155,9 @@
     "Bolivia",
     "Latvia",
     "Yugoslavia"
+  ],
+  "Ends with VII": [
+    "Henry VII"
   ],
   "Ends with VIK": [
     "Medovik"
@@ -9219,6 +9252,9 @@
   ],
   "Ends with Y 2": [
     "Queen Mary 2"
+  ],
+  "Ends with Y I": [
+    "Mary I"
   ],
   "Ends with YAK": [
     "Kayak"
@@ -9816,26 +9852,35 @@
   "Female Names": [
     "Anna",
     "Annabel",
+    "Anne Boleyn",
+    "Anne of Cleves",
     "Athena",
     "Aurora",
     "Belle",
     "Beyonce",
     "Buttercup",
     "Catherine",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
     "Cleopatra",
     "Daisy",
     "Elizabeth",
+    "Elizabeth I",
     "Elsa",
     "Heather",
     "Helen",
     "Iris",
     "Ivy",
+    "Jane Seymour",
     "Jean Grey",
     "Juliet",
     "Katrina",
+    "Lady Jane Grey",
     "Lenore",
     "Madonna",
     "Mary",
+    "Mary I",
     "Nina",
     "Olive",
     "Santa Maria",
@@ -10893,10 +10938,15 @@
     "War and Peace"
   ],
   "Historical Figures": [
+    "Anne Boleyn",
+    "Anne of Cleves",
     "Aristotle",
     "Bach",
     "Batu Khan",
     "Beethoven",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
     "Charlemagne",
     "Christopher Columbus",
     "Cleopatra",
@@ -10906,7 +10956,9 @@
     "Dante",
     "Drake",
     "Du Fu",
+    "Edward VI",
     "Einstein",
+    "Elizabeth I",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
     "Ferdinand Magellan",
@@ -10916,14 +10968,19 @@
     "George Washington",
     "Guan Yu",
     "Handel",
+    "Henry VII",
+    "Henry VIII",
     "Homer",
     "Hulagu Khan",
+    "Jane Seymour",
     "Jebe",
     "Joan of Arc",
     "Kublai Khan",
+    "Lady Jane Grey",
     "Li Bai",
     "Marco Polo",
     "Marie Curie",
+    "Mary I",
     "Michelangelo",
     "Ming",
     "Mozart",
@@ -11995,9 +12052,12 @@
     "Count",
     "Curry",
     "Drake",
+    "Edward VI",
     "Elvis",
     "Grover",
     "Handel",
+    "Henry VII",
+    "Henry VIII",
     "Hermes",
     "Homer",
     "James",
@@ -12535,15 +12595,27 @@
     "Wright"
   ],
   "Modern Rulers": [
+    "Anne Boleyn",
+    "Anne of Cleves",
     "Catherine",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
     "Count",
     "Duke",
+    "Edward VI",
     "Elizabeth",
+    "Elizabeth I",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
     "Franklin D. Roosevelt",
     "George Washington",
+    "Henry VII",
+    "Henry VIII",
+    "Jane Seymour",
     "King",
+    "Lady Jane Grey",
+    "Mary I",
     "Napoleon Bonaparte",
     "Tsar",
     "Victoria",
@@ -17008,23 +17080,35 @@
   ],
   "National Leaders": [
     "Adams",
+    "Anne Boleyn",
+    "Anne of Cleves",
     "Batu Khan",
     "Bismarck",
     "Caesar",
     "Catherine",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
+    "Edward VI",
     "Elizabeth",
+    "Elizabeth I",
     "Ford",
     "Genghis Khan",
     "Grant",
     "Grover",
+    "Henry VII",
+    "Henry VIII",
     "Hoover",
     "Hulagu Khan",
     "Jackson",
+    "Jane Seymour",
     "Jefferson",
     "Kennedy",
     "Kublai Khan",
+    "Lady Jane Grey",
     "Lincoln",
     "Madison",
+    "Mary I",
     "Möngke Khan",
     "Obama",
     "Ozymandias",
@@ -17236,6 +17320,8 @@
     "Adams",
     "Anna",
     "Annabel",
+    "Anne Boleyn",
+    "Anne of Cleves",
     "Aristotle",
     "Aurora",
     "Bach",
@@ -17250,6 +17336,9 @@
     "Buttercup",
     "Caesar",
     "Catherine",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
     "Chad",
     "Charlemagne",
     "Christopher Columbus",
@@ -17268,8 +17357,10 @@
     "Drake",
     "Du Fu",
     "Edison",
+    "Edward VI",
     "Einstein",
     "Elizabeth",
+    "Elizabeth I",
     "Elsa",
     "Elvis",
     "Emperor Qin Shi Huang",
@@ -17291,6 +17382,8 @@
     "Handel",
     "Hawking",
     "Heather",
+    "Henry VII",
+    "Henry VIII",
     "Homer",
     "Hoover",
     "Hubble",
@@ -17300,6 +17393,7 @@
     "Ivy",
     "Jackson",
     "James",
+    "Jane Seymour",
     "Jean Grey",
     "Jebe",
     "Jefferson",
@@ -17315,6 +17409,7 @@
     "Kobe",
     "Kublai Khan",
     "Kurosawa",
+    "Lady Jane Grey",
     "Lando",
     "Lenore",
     "Leo",
@@ -17326,6 +17421,7 @@
     "Marco Polo",
     "Marie Curie",
     "Mary",
+    "Mary I",
     "Mary Rose",
     "Matsui",
     "Mays",
@@ -18181,6 +18277,8 @@
   ],
   "Real People": [
     "Adams",
+    "Anne Boleyn",
+    "Anne of Cleves",
     "Aristotle",
     "Bach",
     "Batu Khan",
@@ -18190,6 +18288,9 @@
     "Bismarck",
     "Caesar",
     "Catherine",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
     "Charlemagne",
     "Christopher Columbus",
     "Cleopatra",
@@ -18206,8 +18307,10 @@
     "Du Fu",
     "Duke",
     "Edison",
+    "Edward VI",
     "Einstein",
     "Elizabeth",
+    "Elizabeth I",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
     "Faraday",
@@ -18224,11 +18327,14 @@
     "Guan Yu",
     "Handel",
     "Hawking",
+    "Henry VII",
+    "Henry VIII",
     "Homer",
     "Hoover",
     "Hubble",
     "Hulagu Khan",
     "Jackson",
+    "Jane Seymour",
     "Jebe",
     "Jefferson",
     "Joan of Arc",
@@ -18240,6 +18346,7 @@
     "King",
     "Kobe",
     "Kublai Khan",
+    "Lady Jane Grey",
     "Lando",
     "Leo",
     "Li Bai",
@@ -18248,6 +18355,7 @@
     "Mantle",
     "Marco Polo",
     "Marie Curie",
+    "Mary I",
     "Mary Rose",
     "Mays",
     "Michelangelo",
@@ -18715,8 +18823,20 @@
     "Victory"
   ],
   "Royalty": [
+    "Anne Boleyn",
+    "Anne of Cleves",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
+    "Edward VI",
+    "Elizabeth I",
+    "Henry VII",
+    "Henry VIII",
+    "Jane Seymour",
     "King",
     "King Lear",
+    "Lady Jane Grey",
+    "Mary I",
     "Prince",
     "Queen"
   ],
@@ -19660,6 +19780,8 @@
     "Annabel",
     "Annapolis",
     "Annapurna",
+    "Anne Boleyn",
+    "Anne of Cleves",
     "Anne of Green Gables",
     "Annie",
     "Annie Hall"
@@ -20185,7 +20307,10 @@
   "Starts with CAT": [
     "Cat",
     "Catan",
-    "Catherine"
+    "Catherine",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon"
   ],
   "Starts with CAU": [
     "Causeway"
@@ -20673,6 +20798,9 @@
   "Starts with EDM": [
     "Edmund Fitzgerald"
   ],
+  "Starts with EDW": [
+    "Edward VI"
+  ],
   "Starts with EGG": [
     "Egg",
     "Egg Foo Young",
@@ -20706,7 +20834,8 @@
     "Elf"
   ],
   "Starts with ELI": [
-    "Elizabeth"
+    "Elizabeth",
+    "Elizabeth I"
   ],
   "Starts with ELL": [
     "Ellesmere"
@@ -21247,7 +21376,9 @@
     "Hell"
   ],
   "Starts with HEN": [
-    "Hen"
+    "Hen",
+    "Henry VII",
+    "Henry VIII"
   ],
   "Starts with HER": [
     "Her",
@@ -21495,7 +21626,8 @@
     "James"
   ],
   "Starts with JAN": [
-    "Jane Eyre"
+    "Jane Eyre",
+    "Jane Seymour"
   ],
   "Starts with JAP": [
     "Japan",
@@ -21759,6 +21891,7 @@
     "Lacrosse"
   ],
   "Starts with LAD": [
+    "Lady Jane Grey",
     "Lady and the Tramp"
   ],
   "Starts with LAK": [
@@ -21998,6 +22131,7 @@
     "Martha's Vineyard",
     "Marvin the Martian",
     "Mary",
+    "Mary I",
     "Mary Poppins",
     "Mary Poppins Returns",
     "Mary Rose"
@@ -24501,7 +24635,8 @@
     "Afghanistan"
   ],
   "Things Albanian": [
-    "Albania"
+    "Albania",
+    "Teresa"
   ],
   "Things Algerian": [
     "Algeria",
@@ -24522,6 +24657,7 @@
     "A Map of the World",
     "A Wrinkle in Time",
     "Absalom, Absalom!",
+    "Adams",
     "Aladdin",
     "Alaska",
     "Alice in Wonderland",
@@ -24532,6 +24668,8 @@
     "Amadeus",
     "American Beauty",
     "American Football",
+    "Anna",
+    "Annabel",
     "Annapolis",
     "Annie",
     "Annie Hall",
@@ -24547,6 +24685,7 @@
     "Atlantis",
     "Attack of the Clones",
     "Augusta",
+    "Aurora",
     "Austin",
     "Auto Racing",
     "Avatar",
@@ -24564,7 +24703,9 @@
     "Baton Rouge",
     "Beach Volleyball",
     "Beauty and the Beast",
+    "Bell",
     "Beloved",
+    "Benedict",
     "Beyonce",
     "Big",
     "Big Hero 6",
@@ -24578,9 +24719,11 @@
     "Bourbon",
     "Brave",
     "Braveheart",
+    "Bravo",
     "Brother Bear",
     "Brownie",
     "Bush",
+    "Buttercup",
     "CODA",
     "Cabaret",
     "California",
@@ -24600,6 +24743,7 @@
     "Cinderella",
     "Citizen Kane",
     "Clue",
+    "Cobb",
     "Coco",
     "Cocoa",
     "Coffee",
@@ -24609,9 +24753,11 @@
     "Copycat",
     "Craft Beer",
     "Crash",
+    "Daisy",
     "Dallas",
     "Dances with Wolves",
     "Dante's Peak",
+    "Daphne",
     "Death Proof",
     "Death Wish",
     "Deja Vu",
@@ -24635,11 +24781,13 @@
     "E.T.",
     "Easy Rider",
     "Edge of Tomorrow",
+    "Edison",
     "Edmund Fitzgerald",
     "Einstein",
     "Eisenhower",
     "Elemental",
     "Elf",
+    "Elsa",
     "Elvis",
     "Empire State Building",
     "Encanto",
@@ -24650,6 +24798,7 @@
     "Fahrenheit 451",
     "Fantasia",
     "Fantasia 2000",
+    "Feynman",
     "Fiddler on the Roof",
     "Fight Club",
     "Figure Skating",
@@ -24658,9 +24807,11 @@
     "Flight of the Navigator",
     "Florida",
     "For Whom the Bell Tolls",
+    "Ford",
     "Forrest Gump",
     "Four Christmases",
     "Franklin D. Roosevelt",
+    "Fred",
     "Frequency",
     "Fried Chicken",
     "Frozen",
@@ -24676,10 +24827,12 @@
     "Gone with the Wind",
     "Goodfellas",
     "Goodnight Moon",
+    "Grant",
     "Grease",
     "Green Book",
     "Green Eggs and Ham",
     "Groundhog Day",
+    "Grover",
     "Gymnastics",
     "Hairspray",
     "Hamburger",
@@ -24687,6 +24840,7 @@
     "Harrisburg",
     "Hartford",
     "Heat",
+    "Heather",
     "Hedwig and the Angry Inch",
     "Helena",
     "Her",
@@ -24696,6 +24850,7 @@
     "Home Alone 2: Lost in New York",
     "Home on the Range",
     "Honolulu",
+    "Hoover",
     "Hornet",
     "Hot Chocolate",
     "Hot Dog",
@@ -24712,27 +24867,40 @@
     "Insomnia",
     "Interstellar",
     "Into the Woods",
+    "Iris",
     "It's a Wonderful Life",
+    "Ivy",
     "Jackie Brown",
     "Jackson",
+    "James",
     "Jaws",
+    "Jean Grey",
+    "Jefferson",
     "Jefferson City",
     "Jesus Christ Superstar",
     "Jingle All the Way",
+    "John",
     "Juice",
     "Juneau",
     "Jurassic Park",
     "Kate & Leopold",
+    "Katrina",
+    "Kennedy",
     "Ketchup",
     "Key West",
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
     "Kindred",
+    "Kirk",
+    "Kobe",
     "Kramer vs. Kramer",
     "La La Land",
     "Lady and the Tramp",
+    "Lando",
     "Lansing",
     "Lemonade",
+    "Lenore",
+    "Leo",
     "Light in August",
     "Lilo & Stitch",
     "Lincoln",
@@ -24746,13 +24914,17 @@
     "Luca",
     "Mac and Cheese",
     "Madagascar",
+    "Madison",
     "Madonna",
     "Manhattan",
+    "Mantle",
     "Mariner",
     "Martha's Vineyard",
+    "Mary",
     "Mary Poppins",
     "Mary Poppins Returns",
     "Mayo",
+    "Mays",
     "Meet the Robinsons",
     "Mercury",
     "Met",
@@ -24771,6 +24943,7 @@
     "Montpelier",
     "Moonlight",
     "Moonrise Kingdom",
+    "Morse",
     "Motocross",
     "Mulan",
     "Mustard",
@@ -24787,9 +24960,11 @@
     "Nomadland",
     "Norwegian Bliss",
     "Oasis of the Seas",
+    "Obama",
     "Odyssey",
     "Oh, the Places You'll Go!",
     "Oklahoma City",
+    "Olive",
     "Oliver & Company",
     "Olympia",
     "On the Road",
@@ -24802,7 +24977,10 @@
     "Othello",
     "Out of Africa",
     "Outlander",
+    "Papa",
+    "Paul",
     "Percy Jackson & the Olympians",
+    "Peter",
     "Phoenix",
     "Pierre",
     "Pinnochio",
@@ -24814,9 +24992,11 @@
     "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Platoon",
     "Pocahontas",
+    "Poe",
     "Poseidon",
     "Primer",
     "Prince",
+    "Professor X",
     "Providence",
     "Pulp Fiction",
     "Rain Man",
@@ -24841,6 +25021,7 @@
     "Rogue One",
     "Roosevelt",
     "Root Beer",
+    "Ruth",
     "Rye Whiskey",
     "Sacramento",
     "Safety Not Guaranteed",
@@ -24848,6 +25029,7 @@
     "Salem",
     "Salem's Lot",
     "Salt Lake City",
+    "Sam",
     "San Diego",
     "San Jose",
     "San Juan",
@@ -24860,6 +25042,7 @@
     "Scrooged",
     "Seattle",
     "Serpico",
+    "Shaggy",
     "Silver",
     "Sin City",
     "Sin City: A Dame to Kill For",
@@ -24880,6 +25063,7 @@
     "Staten Island",
     "Stennis",
     "Strange World",
+    "Sulu",
     "Surfing",
     "Swimming",
     "Tallahassee",
@@ -25009,6 +25193,7 @@
     "Trenton",
     "Troy",
     "Truman",
+    "Trump",
     "Turning Red",
     "Twilight",
     "USS Gerald R. Ford",
@@ -25022,6 +25207,9 @@
     "Up",
     "Usher",
     "Vantage Point",
+    "Velma",
+    "Victor",
+    "Violet",
     "Volcano",
     "Volleyball",
     "Voyager",
@@ -25032,6 +25220,8 @@
     "West Side Story",
     "Where the Wild Things Are",
     "White Christmas",
+    "Whitney",
+    "Wilson",
     "Winnie the Pooh",
     "Wish",
     "Wonder",
@@ -25135,6 +25325,7 @@
     "Alderney",
     "Alice's Adventures in Wonderland",
     "Animal Farm",
+    "Anne Boleyn",
     "Archery",
     "Ark Royal",
     "Arthur Christmas",
@@ -25151,17 +25342,23 @@
     "Britannic",
     "Bubble and Squeak",
     "Buckingham Palace",
+    "Catherine Howard",
+    "Catherine Parr",
     "Challenger",
     "Chariots of Fire",
     "Cricket",
     "Darwin",
+    "Dirac",
     "Discovery",
     "Don't Look Now",
     "Dover",
     "Dracula",
     "Earl Grey",
+    "Edward VI",
     "Elizabeth",
+    "Elizabeth I",
     "Endeavour",
+    "Faraday",
     "Fish and Chips",
     "Formula One",
     "Four Weddings and a Funeral",
@@ -25181,7 +25378,10 @@
     "Harry Potter and the Order of the Phoenix",
     "Harry Potter and the Prisoner of Azkaban",
     "Harry Potter and the Sorcerer's Stone",
+    "Hawking",
     "Hebrides",
+    "Henry VII",
+    "Henry VIII",
     "Hood",
     "Horse Racing",
     "Howard's End",
@@ -25189,13 +25389,16 @@
     "Isle of Man",
     "Isle of Wight",
     "Jane Eyre",
+    "Jane Seymour",
     "Jersey",
     "Kind Hearts and Coronets",
+    "Lady Jane Grey",
     "Lawrence of Arabia",
     "London",
     "Lord of the Flies",
     "Love Actually",
     "Lusitania",
+    "Mary I",
     "Mary Rose",
     "Matilda",
     "Mauretania",
@@ -25206,6 +25409,7 @@
     "Oliver!",
     "Olympic",
     "Orkney",
+    "Ozymandias",
     "Performance",
     "Peter Pan",
     "Polo",
@@ -25563,6 +25767,7 @@
     "Bearnaise",
     "Bechamel",
     "Beef Bourguignon",
+    "Belle",
     "Bordeaux",
     "Bouillabaisse",
     "Brioche",
@@ -25626,6 +25831,7 @@
     "Georgia"
   ],
   "Things German": [
+    "Anne of Cleves",
     "Apfelstrudel",
     "Bach",
     "Beer",
@@ -25794,6 +26000,7 @@
   "Things Irish": [
     "Dublin",
     "Ireland",
+    "Saint Patrick",
     "Stout",
     "Whiskey"
   ],
@@ -25833,6 +26040,7 @@
     "Inferno",
     "Ischia",
     "Italy",
+    "Juliet",
     "Lasagna",
     "Linguine",
     "MSC Meraviglia",
@@ -25854,6 +26062,7 @@
     "Risotto",
     "Roma",
     "Rome",
+    "Romeo",
     "Sardinia",
     "Sicily",
     "Spaghetti",
@@ -26226,6 +26435,7 @@
     "Barszcz",
     "Bigos",
     "Copernicus",
+    "Curie",
     "Golabki",
     "Kielbasa",
     "Kotlet Schabowy",
@@ -26264,6 +26474,7 @@
   "Things Russian": [
     "Blini",
     "Borscht",
+    "Catherine",
     "Caviar",
     "Crime and Punishment",
     "Elbrus",
@@ -26319,7 +26530,8 @@
     "Senegal"
   ],
   "Things Serbian": [
-    "Serbia"
+    "Serbia",
+    "Tesla"
   ],
   "Things Sierra Leonean": [
     "Sierra Leone"
@@ -26350,6 +26562,7 @@
   "Things Spanish": [
     "Alhambra",
     "Canary Islands",
+    "Catherine of Aragon",
     "Christopher Columbus",
     "Churro",
     "Concepcion",
@@ -26752,6 +26965,22 @@
     "Odyssey",
     "Paris",
     "Troy"
+  ],
+  "Tudor Dynasty": [
+    "Anne Boleyn",
+    "Anne of Cleves",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
+    "Edward VI",
+    "Elizabeth",
+    "Elizabeth I",
+    "Henry VII",
+    "Henry VIII",
+    "Jane Seymour",
+    "Lady Jane Grey",
+    "Mary I",
+    "Queen Mary"
   ],
   "Two-Letter Words": [
     "AB",
@@ -27262,6 +27491,14 @@
     "Skiing",
     "Sledding",
     "Speed Skating"
+  ],
+  "Wives of Henry VIII": [
+    "Anne Boleyn",
+    "Anne of Cleves",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
+    "Jane Seymour"
   ],
   "Wooden Objects": [
     "Bat",
