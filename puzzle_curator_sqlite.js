@@ -39,7 +39,7 @@ if (!fs.existsSync(OUT_DIR)) {
 // ──────────────── database operations ─────────────────────────────
 function openDatabase() {
     return new Promise((resolve, reject) => {
-        const db = new sqlite3.Database(DB_PATH, sqlite3.OPEN_READONLY, (err) => {
+        const db = new sqlite3.Database(DB_PATH, sqlite3.OPEN_READWRITE, (err) => {
             if (err) {
                 console.error('Error opening database:', err.message);
                 reject(err);
@@ -149,7 +149,7 @@ function getMultipleRandomPuzzles(db, count, targetCategory = null) {
 
 function deletePuzzleFromDatabase(db, puzzleHash) {
     return new Promise((resolve, reject) => {
-        db.run("DELETE FROM puzzles WHERE puzzle_hash = ?", [puzzleHash], function(err) {
+        db.run("DELETE FROM puzzles WHERE puzzle_hash = ?", [puzzleHash], function (err) {
             if (err) {
                 console.error("Error deleting puzzle:", err.message);
                 reject(err);
@@ -312,7 +312,7 @@ async function findBestPuzzle(targetCategory = null) {
             // Get a batch of random puzzles from the database
             const puzzlesToCheck = Math.min(batchSize, maxChecks - puzzlesChecked);
             const puzzles = await getMultipleRandomPuzzles(sqliteDb, puzzlesToCheck, targetCategory);
-            
+
             if (!puzzles || puzzles.length === 0) {
                 // If we've checked some puzzles but found none, return null
                 if (puzzlesChecked > 0) {
@@ -331,7 +331,7 @@ async function findBestPuzzle(targetCategory = null) {
             // Process each puzzle in the batch
             for (const puzzle of puzzles) {
                 puzzlesChecked++;
-                
+
                 // Check if this puzzle has already been used
                 const key = makeKey(puzzle.rows, puzzle.cols);
                 const reverseKey = makeKey(puzzle.cols, puzzle.rows);
@@ -344,10 +344,10 @@ async function findBestPuzzle(targetCategory = null) {
                 if (!validatePuzzle(puzzle)) {
                     invalidPuzzlesFound++;
                     console.log(`⚠️  Found invalid puzzle (${invalidPuzzlesFound}/${maxInvalidPuzzles}), deleting from database...`);
-                    
+
                     // Delete the invalid puzzle from database
                     await deletePuzzleFromDatabase(sqliteDb, puzzle.hash);
-                    
+
                     if (invalidPuzzlesFound >= maxInvalidPuzzles) {
                         console.log("❌ Too many invalid puzzles found, stopping search");
                         return null;
@@ -412,10 +412,10 @@ async function findTrulyRandomPuzzle() {
 
         while (attempts < maxAttempts && invalidPuzzlesFound < maxInvalidPuzzles) {
             attempts++;
-            
+
             // Get a single random puzzle from the database
             const puzzle = await getRandomPuzzle(sqliteDb);
-            
+
             if (!puzzle) {
                 console.log("No puzzles found in database");
                 return null;
@@ -433,10 +433,10 @@ async function findTrulyRandomPuzzle() {
             if (!validatePuzzle(puzzle)) {
                 invalidPuzzlesFound++;
                 console.log(`⚠️  Found invalid puzzle (${invalidPuzzlesFound}/${maxInvalidPuzzles}), deleting from database...`);
-                
+
                 // Delete the invalid puzzle from database
                 await deletePuzzleFromDatabase(sqliteDb, puzzle.hash);
-                
+
                 if (invalidPuzzlesFound >= maxInvalidPuzzles) {
                     console.log("❌ Too many invalid puzzles found, stopping search");
                     return null;
