@@ -1678,5 +1678,45 @@
         "Tenet"
       ]
     ]
+  },
+  {
+    "rows": [
+      "2000s",
+      "Ends with AND",
+      "Ends with ANY",
+      "Starts with SOU"
+    ],
+    "cols": [
+      "20th Century",
+      "Disney",
+      "Locations in North America",
+      "Republics"
+    ],
+    "words": [
+      [
+        "Unbreakable",
+        "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "Chicago",
+        "Madagascar"
+      ],
+      [
+        "The Stand",
+        "Alice in Wonderland",
+        "Staten Island",
+        "Finland"
+      ],
+      [
+        "West Germany",
+        "Oliver & Company",
+        "Albany",
+        "Germany"
+      ],
+      [
+        "South Vietnam",
+        "Soul",
+        "Southampton",
+        "South Africa"
+      ]
+    ]
   }
 ]

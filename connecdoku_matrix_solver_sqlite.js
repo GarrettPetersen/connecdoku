@@ -131,12 +131,22 @@ async function main() {
          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
     );
 
-    // all inserts happen in one big transaction
-    await new Promise((res, rej) => db.run("BEGIN TRANSACTION", err => (err ? rej(err) : res())));
+    // Use smaller transactions for better resumability
+    let transactionCount = 0;
+    const BATCH_SIZE = 100; // Commit every 100 puzzles
 
     // Create word-list hash
     const wordListHash = sha256(JSON.stringify(categoriesJson));
     console.log(`Word list hash: ${wordListHash}`);
+    
+    // Check how many puzzles are already in the database
+    const existingCount = await new Promise((resolve, reject) => {
+        db.get("SELECT COUNT(*) as count FROM puzzles", (err, row) => {
+            if (err) reject(err);
+            else resolve(row ? row.count : 0);
+        });
+    });
+    console.log(`Existing puzzles in database: ${existingCount}`);
 
     // ── resume logic ───────────────────────────────────────────────────────
     function getLastIterators() {
@@ -172,16 +182,42 @@ async function main() {
             [puzzleHash, ...rows, ...cols, wordListHash, JSON.stringify(iter)],
             function (err) {
                 if (err) reject(err);
-                else resolve(this.changes === 1);   // true on actual insert
+                else {
+                    const wasInserted = this.changes === 1;
+                    resolve(wasInserted);
+                }
             }
         );
     });
 
+    // helper to commit transaction and start new one
+    const commitTransaction = () => new Promise((resolve, reject) => {
+        db.run("COMMIT", (err) => {
+            if (err) reject(err);
+            else {
+                db.run("BEGIN TRANSACTION", (err2) => {
+                    if (err2) reject(err2);
+                    else resolve();
+                });
+            }
+        });
+    });
+
+    // Start first transaction
+    await new Promise((res, rej) => db.run("BEGIN TRANSACTION", err => (err ? rej(err) : res())));
+
     begin("Search");
-    let saved = 0, totalFound = 0;
+    let saved = 0, totalFound = 0, committedNew = 0;
+    const foundInThisRun = new Set(); // Track unique puzzles found in current run
+    let firstPuzzleShown = false; // Track if we've shown the first puzzle example
 
     for (let i = startI; i < n; ++i) {
-        pbar(i + 1, n, "Search", `${totalFound} found, ${saved} new`);
+        if (totalFound === 0) {
+            // Don't show progress bar until we find the first puzzle
+            process.stdout.write('\r');
+        } else {
+            pbar(i, n, "Search", `${totalFound} found, ${committedNew} new inserted`);
+        }
 
         // second row: all 2-away neighbours of i that are > i (sorted)
         const jList = [...neigh2[i]].filter(j => j > i).sort((a, b) => a - b);
@@ -243,15 +279,58 @@ async function main() {
                                     }
                                 if (!ok) continue;
 
+                                // Create puzzle hash to check if we've found this before
+                                const puzzleHash = sha256(R.map(v => cats[v]).join("|") + C.map(v => cats[v]).join("|"));
+                                
+                                // Count all puzzles found (including database duplicates)
                                 ++totalFound;
+                                
+                                // Track unique puzzles in current run for debugging
+                                if (!foundInThisRun.has(puzzleHash)) {
+                                    foundInThisRun.add(puzzleHash);
+                                }
+                                
+                                // Debug: log some puzzle details to understand the search space
+                                if (totalFound === 1 && !firstPuzzleShown) {
+                                    // Show first puzzle example before progress bar
+                                    process.stdout.write(`🔍 Found puzzle #1:\n`);
+                                    process.stdout.write(`   Rows: ${R.map(v => cats[v]).join(", ")}\n`);
+                                    process.stdout.write(`   Cols: ${C.map(v => cats[v]).join(", ")}\n`);
+                                    process.stdout.write(`   Hash: ${puzzleHash.substring(0, 8)}...\n\n`);
+                                    firstPuzzleShown = true;
+                                } else if (totalFound % 1000 === 0 && totalFound > 1) {
+                                    // Clear previous puzzle example (4 lines up)
+                                    process.stdout.write('\r\x1b[4A\x1b[0K');
+                                    // Show new puzzle example
+                                    process.stdout.write(`🔍 Found puzzle #${totalFound}:\n`);
+                                    process.stdout.write(`   Rows: ${R.map(v => cats[v]).join(", ")}\n`);
+                                    process.stdout.write(`   Cols: ${C.map(v => cats[v]).join(", ")}\n`);
+                                    process.stdout.write(`   Hash: ${puzzleHash.substring(0, 8)}...\n`);
+                                }
+                                
                                 try {
                                     const wasNew = await savePuzzle(
                                         R.map(v => cats[v]),
                                         C.map(v => cats[v]),
                                         { i, j, k, l, a, b, c, d }
                                     );
-                                    if (wasNew) ++saved;
-                                    pbar(i + 1, n, "Search", `${totalFound} found, ${saved} new`, true);
+                                    if (wasNew) {
+                                        ++saved;
+                                        ++transactionCount;
+                                        
+                                        // Commit transaction periodically
+                                        if (transactionCount % BATCH_SIZE === 0) {
+                                            await commitTransaction();
+                                            committedNew = saved; // Update committed count after commit
+                                            process.stdout.write(`\r💾 Committed batch of ${BATCH_SIZE} puzzles (${committedNew} total new inserted)`);
+                                        }
+                                                    } else {
+                    // Database duplicate - this is expected behavior
+                }
+                                    // Only update progress bar if we're not showing the first puzzle
+                                    if (totalFound > 1 || firstPuzzleShown) {
+                                        pbar(i, n, "Search", `${totalFound} found, ${committedNew} new inserted`, true);
+                                    }
                                 } catch (err) {
                                     console.error("Error saving puzzle:", err);
                                 }
@@ -263,7 +342,7 @@ async function main() {
         }
     }
 
-    pbar(n, n, "Search", `${totalFound} found, ${saved} new`, true); end();
+    pbar(n, n, "Search", `${totalFound} found, ${committedNew} new inserted`, true); end();
     console.log(`\n${totalFound} puzzles found, ${saved} new puzzles saved to database`);
 
     // commit and clean up
