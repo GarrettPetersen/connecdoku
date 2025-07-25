@@ -131,14 +131,15 @@ async function main() {
          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
     );
 
-    // Use smaller transactions for better resumability
-    let transactionCount = 0;
-    const BATCH_SIZE = 100; // Commit every 100 puzzles
+    // Use batched inserts for better performance
+    let puzzleBatch = [];      // Collect puzzles for batch insert  
+    let processedTotal = 0;    // Count all puzzles processed
+    const BATCH_SIZE = 1000;   // Process in batches of 1000
 
     // Create word-list hash
     const wordListHash = sha256(JSON.stringify(categoriesJson));
     console.log(`Word list hash: ${wordListHash}`);
-    
+
     // Check how many puzzles are already in the database
     const existingCount = await new Promise((resolve, reject) => {
         db.get("SELECT COUNT(*) as count FROM puzzles", (err, row) => {
@@ -171,23 +172,32 @@ async function main() {
     let startA = 0, startB = 0, startC = 0, startD = 0;
     if (last) {
         console.log("Resuming from", last);
-        ({ i: startI = 0, j: startJ = 0, k: startK = 0, l: startL = 0,
-           a: startA = 0, b: startB = 0, c: startC = 0, d: startD = 0 } = last);
+        ({
+            i: startI = 0, j: startJ = 0, k: startK = 0, l: startL = 0,
+            a: startA = 0, b: startB = 0, c: startC = 0, d: startD = 0
+        } = last);
     }
 
-    // helper to run the prepared insert stmt and return whether it wrote
-    const savePuzzle = (rows, cols, iter) => new Promise((resolve, reject) => {
-        const puzzleHash = sha256(rows.join("|") + cols.join("|"));
-        insertStmt.run(
-            [puzzleHash, ...rows, ...cols, wordListHash, JSON.stringify(iter)],
-            function (err) {
-                if (err) reject(err);
-                else {
-                    const wasInserted = this.changes === 1;
-                    resolve(wasInserted);
+    // helper to batch insert puzzles and return count of successful inserts
+    const batchInsertPuzzles = (puzzleBatch) => new Promise((resolve, reject) => {
+        let totalInserted = 0;
+        let completed = 0;
+
+        if (puzzleBatch.length === 0) return resolve(0);
+
+        puzzleBatch.forEach(({ rows, cols, iter }) => {
+            const puzzleHash = sha256(rows.join("|") + cols.join("|"));
+            insertStmt.run(
+                [puzzleHash, ...rows, ...cols, wordListHash, JSON.stringify(iter)],
+                function (err) {
+                    if (err) return reject(err);
+                    if (this.changes === 1) totalInserted++;
+                    if (++completed === puzzleBatch.length) {
+                        resolve(totalInserted);
+                    }
                 }
-            }
-        );
+            );
+        });
     });
 
     // helper to commit transaction and start new one
@@ -207,7 +217,7 @@ async function main() {
     await new Promise((res, rej) => db.run("BEGIN TRANSACTION", err => (err ? rej(err) : res())));
 
     begin("Search");
-    let saved = 0, totalFound = 0, committedNew = 0;
+    let saved = 0, totalFound = 0;
     const foundInThisRun = new Set(); // Track unique puzzles found in current run
     let firstPuzzleShown = false; // Track if we've shown the first puzzle example
 
@@ -216,7 +226,7 @@ async function main() {
             // Don't show progress bar until we find the first puzzle
             process.stdout.write('\r');
         } else {
-            pbar(i, n, "Search", `${totalFound} found, ${committedNew} new inserted`);
+            pbar(i, n, "Search", `${totalFound} found, ${saved} new inserted`);
         }
 
         // second row: all 2-away neighbours of i that are > i (sorted)
@@ -249,100 +259,113 @@ async function main() {
                     const m = cArr.length;
 
                     for (let a = (i === startI && j === startJ && k === startK && l === startL) ? startA : 0; a < m; ++a)
-                    for (let b = (i === startI && j === startJ && k === startK && l === startL && a === startA) ? Math.max(startB, a + 1) : a + 1; b < m; ++b) {
-                        const x = cArr[a], y = cArr[b];
-                        if (!B[x][y]) continue;
+                        for (let b = (i === startI && j === startJ && k === startK && l === startL && a === startA) ? Math.max(startB, a + 1) : a + 1; b < m; ++b) {
+                            const x = cArr[a], y = cArr[b];
+                            if (!B[x][y]) continue;
 
-                        for (let c = (i === startI && j === startJ && k === startK && l === startL && a === startA && b === startB) ? Math.max(startC, b + 1) : b + 1; c < m; ++c) {
-                            const z = cArr[c];
-                            if (!(B[x][z] && B[y][z])) continue;
+                            for (let c = (i === startI && j === startJ && k === startK && l === startL && a === startA && b === startB) ? Math.max(startC, b + 1) : b + 1; c < m; ++c) {
+                                const z = cArr[c];
+                                if (!(B[x][z] && B[y][z])) continue;
 
-                            for (let d = (i === startI && j === startJ && k === startK && l === startL && a === startA && b === startB && c === startC) ? Math.max(startD, c + 1) : c + 1; d < m; ++d) {
-                                const w = cArr[d];
-                                if (!isC4(B, x, y, z, w)) continue;
+                                for (let d = (i === startI && j === startJ && k === startK && l === startL && a === startA && b === startB && c === startC) ? Math.max(startD, c + 1) : c + 1; d < m; ++d) {
+                                    const w = cArr[d];
+                                    if (!isC4(B, x, y, z, w)) continue;
 
-                                const C = [x, y, z, w];           // columns ascending
+                                    const C = [x, y, z, w];           // columns ascending
 
-                                // orientation rule: R[0] must be lexicographically ≤ C[0]
-                                if (cats[R[0]] > cats[C[0]]) continue;
+                                    // orientation rule: R[0] must be lexicographically ≤ C[0]
+                                    if (cats[R[0]] > cats[C[0]]) continue;
 
-                                // red-herring test
-                                const all = new Set([...R, ...C]);
-                                let ok = true;
-                                outer: for (const r of R)
-                                    for (const cc of C) {
-                                        let v = intersectSet(wordSets[r], wordSets[cc]);
-                                        for (const o of all)
-                                            if (o !== r && o !== cc)
-                                                v = new Set([...v].filter(wd => !wordSets[o].has(wd)));
-                                        if (!v.size) { ok = false; break outer; }
-                                    }
-                                if (!ok) continue;
-
-                                // Create puzzle hash to check if we've found this before
-                                const puzzleHash = sha256(R.map(v => cats[v]).join("|") + C.map(v => cats[v]).join("|"));
-                                
-                                // Count all puzzles found (including database duplicates)
-                                ++totalFound;
-                                
-                                // Track unique puzzles in current run for debugging
-                                if (!foundInThisRun.has(puzzleHash)) {
-                                    foundInThisRun.add(puzzleHash);
-                                }
-                                
-                                // Debug: log some puzzle details to understand the search space
-                                if (totalFound === 1 && !firstPuzzleShown) {
-                                    // Show first puzzle example before progress bar
-                                    process.stdout.write(`🔍 Found puzzle #1:\n`);
-                                    process.stdout.write(`   Rows: ${R.map(v => cats[v]).join(", ")}\n`);
-                                    process.stdout.write(`   Cols: ${C.map(v => cats[v]).join(", ")}\n`);
-                                    process.stdout.write(`   Hash: ${puzzleHash.substring(0, 8)}...\n\n`);
-                                    firstPuzzleShown = true;
-                                } else if (totalFound % 1000 === 0 && totalFound > 1) {
-                                    // Clear previous puzzle example (4 lines up)
-                                    process.stdout.write('\r\x1b[4A\x1b[0K');
-                                    // Show new puzzle example
-                                    process.stdout.write(`🔍 Found puzzle #${totalFound}:\n`);
-                                    process.stdout.write(`   Rows: ${R.map(v => cats[v]).join(", ")}\n`);
-                                    process.stdout.write(`   Cols: ${C.map(v => cats[v]).join(", ")}\n`);
-                                    process.stdout.write(`   Hash: ${puzzleHash.substring(0, 8)}...\n`);
-                                }
-                                
-                                try {
-                                    const wasNew = await savePuzzle(
-                                        R.map(v => cats[v]),
-                                        C.map(v => cats[v]),
-                                        { i, j, k, l, a, b, c, d }
-                                    );
-                                    if (wasNew) {
-                                        ++saved;
-                                        ++transactionCount;
-                                        
-                                        // Commit transaction periodically
-                                        if (transactionCount % BATCH_SIZE === 0) {
-                                            await commitTransaction();
-                                            committedNew = saved; // Update committed count after commit
-                                            process.stdout.write(`\r💾 Committed batch of ${BATCH_SIZE} puzzles (${committedNew} total new inserted)`);
+                                    // red-herring test
+                                    const all = new Set([...R, ...C]);
+                                    let ok = true;
+                                    outer: for (const r of R)
+                                        for (const cc of C) {
+                                            let v = intersectSet(wordSets[r], wordSets[cc]);
+                                            for (const o of all)
+                                                if (o !== r && o !== cc)
+                                                    v = new Set([...v].filter(wd => !wordSets[o].has(wd)));
+                                            if (!v.size) { ok = false; break outer; }
                                         }
-                                                    } else {
-                    // Database duplicate - this is expected behavior
-                }
-                                    // Only update progress bar if we're not showing the first puzzle
-                                    if (totalFound > 1 || firstPuzzleShown) {
-                                        pbar(i, n, "Search", `${totalFound} found, ${committedNew} new inserted`, true);
+                                    if (!ok) continue;
+
+                                    // Create puzzle hash to check if we've found this before
+                                    const puzzleHash = sha256(R.map(v => cats[v]).join("|") + C.map(v => cats[v]).join("|"));
+
+                                    // Count all puzzles found (including database duplicates)
+                                    ++totalFound;
+
+                                    // Track unique puzzles in current run for debugging
+                                    if (!foundInThisRun.has(puzzleHash)) {
+                                        foundInThisRun.add(puzzleHash);
                                     }
-                                } catch (err) {
-                                    console.error("Error saving puzzle:", err);
+
+                                    // Debug: log some puzzle details to understand the search space
+                                    if (totalFound === 1 && !firstPuzzleShown) {
+                                        // Show first puzzle example before progress bar
+                                        process.stdout.write(`🔍 Found puzzle #1:\n`);
+                                        process.stdout.write(`   Rows: ${R.map(v => cats[v]).join(", ")}\n`);
+                                        process.stdout.write(`   Cols: ${C.map(v => cats[v]).join(", ")}\n`);
+                                        process.stdout.write(`   Hash: ${puzzleHash.substring(0, 8)}...\n`);
+                                        firstPuzzleShown = true;
+                                    } else if (totalFound % 1000 === 0 && totalFound > 1) {
+                                        // Clear previous puzzle example (4 lines up)
+                                        process.stdout.write('\r\x1b[4A\x1b[0K\x1b[1B\x1b[0K\x1b[1B\x1b[0K\x1b[1B\x1b[0K\x1b[1A\x1b[1A\x1b[1A');
+                                        // Show new puzzle example
+                                        process.stdout.write(`🔍 Found puzzle #${totalFound}:\n`);
+                                        process.stdout.write(`   Rows: ${R.map(v => cats[v]).join(", ")}\n`);
+                                        process.stdout.write(`   Cols: ${C.map(v => cats[v]).join(", ")}\n`);
+                                        process.stdout.write(`   Hash: ${puzzleHash.substring(0, 8)}...\n`);
+                                    }
+
+                                    // Add puzzle to batch
+                                    puzzleBatch.push({
+                                        rows: R.map(v => cats[v]),
+                                        cols: C.map(v => cats[v]),
+                                        iter: { i, j, k, l, a, b, c, d }
+                                    });
+
+                                    // Process batch when full
+                                    if (puzzleBatch.length >= BATCH_SIZE) {
+                                        try {
+                                            const newlyInserted = await batchInsertPuzzles(puzzleBatch);
+                                            saved += newlyInserted;
+                                            processedTotal += puzzleBatch.length;
+
+                                            await commitTransaction();
+                                            process.stdout.write(`\r💾 Batch: ${puzzleBatch.length} processed, ${newlyInserted} new inserted (${saved} total new) `);
+
+                                            puzzleBatch = []; // Reset batch
+                                        } catch (err) {
+                                            console.error("Error processing batch:", err);
+                                        }
+                                    }
+
+                                    // Update progress bar
+                                    if (totalFound > 1 || firstPuzzleShown) {
+                                        pbar(i, n, "Search", `${totalFound} found, ${saved} new inserted`, true);
+                                    }
                                 }
                             }
                         }
-                    }
                 }
             }
         }
     }
 
-    pbar(n, n, "Search", `${totalFound} found, ${committedNew} new inserted`, true); end();
+    // Process any remaining puzzles in the final batch
+    if (puzzleBatch.length > 0) {
+        try {
+            const newlyInserted = await batchInsertPuzzles(puzzleBatch);
+            saved += newlyInserted;
+            processedTotal += puzzleBatch.length;
+            process.stdout.write(`\r💾 Final batch: ${puzzleBatch.length} processed, ${newlyInserted} new inserted (${saved} total new) `);
+        } catch (err) {
+            console.error("Error processing final batch:", err);
+        }
+    }
+
+    pbar(n, n, "Search", `${totalFound} found, ${saved} new inserted`, true); end();
     console.log(`\n${totalFound} puzzles found, ${saved} new puzzles saved to database`);
 
     // commit and clean up
@@ -350,7 +373,7 @@ async function main() {
     insertStmt.finalize();
     db.close(err => {
         if (err) console.error("Error closing database:", err.message);
-        else     console.log("Database connection closed");
+        else console.log("Database connection closed");
     });
 }
 
