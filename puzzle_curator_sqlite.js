@@ -109,6 +109,43 @@ function getRandomPuzzle(db, targetCategory = null) {
     });
 }
 
+function getMultipleRandomPuzzles(db, count, targetCategory = null) {
+    return new Promise((resolve, reject) => {
+        let query = `
+            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp
+            FROM puzzles
+        `;
+
+        let params = [];
+
+        if (targetCategory) {
+            query += `
+                WHERE LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
+                   OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?
+            `;
+            const lowerCategory = targetCategory.toLowerCase();
+            params = [lowerCategory, lowerCategory, lowerCategory, lowerCategory,
+                lowerCategory, lowerCategory, lowerCategory, lowerCategory];
+        }
+
+        query += ` ORDER BY RANDOM() LIMIT ?`;
+        params.push(count);
+
+        db.all(query, params, (err, rows) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve(rows.map(row => ({
+                    rows: [row.row0, row.row1, row.row2, row.row3],
+                    cols: [row.col0, row.col1, row.col2, row.col3],
+                    hash: row.puzzle_hash,
+                    timestamp: row.timestamp
+                })));
+            }
+        });
+    });
+}
+
 // ──────────────── load / init database ───────────────────────────
 console.log("Loading database...");
 let db = [];
@@ -252,11 +289,14 @@ async function findBestPuzzle(targetCategory = null) {
         let bestOverlap = Infinity;
         let puzzlesChecked = 0;
         const maxChecks = 100; // Check up to 100 random puzzles
+        const batchSize = 20; // Fetch 20 puzzles at a time
 
         while (puzzlesChecked < maxChecks) {
-            // Get a random puzzle from the database
-            const puzzle = await getRandomPuzzle(sqliteDb, targetCategory);
-            if (!puzzle) {
+            // Get a batch of random puzzles from the database
+            const puzzlesToCheck = Math.min(batchSize, maxChecks - puzzlesChecked);
+            const puzzles = await getMultipleRandomPuzzles(sqliteDb, puzzlesToCheck, targetCategory);
+            
+            if (!puzzles || puzzles.length === 0) {
                 // If we've checked some puzzles but found none, return null
                 if (puzzlesChecked > 0) {
                     console.log(`No more puzzles found after checking ${puzzlesChecked} puzzles`);
@@ -271,42 +311,43 @@ async function findBestPuzzle(targetCategory = null) {
                 return null;
             }
 
-            // Check if this puzzle has already been used
-            const key = makeKey(puzzle.rows, puzzle.cols);
-            const reverseKey = makeKey(puzzle.cols, puzzle.rows);
+            // Process each puzzle in the batch
+            for (const puzzle of puzzles) {
+                // Check if this puzzle has already been used
+                const key = makeKey(puzzle.rows, puzzle.cols);
+                const reverseKey = makeKey(puzzle.cols, puzzle.rows);
 
-            if (used.has(key) || used.has(reverseKey)) {
-                continue; // Skip already used puzzles
-            }
+                if (used.has(key) || used.has(reverseKey)) {
+                    continue; // Skip already used puzzles
+                }
 
-            // Calculate overlap with previously used categories
-            const allCategories = [...puzzle.rows, ...puzzle.cols];
-            let overlap = 0;
-            for (const category of allCategories) {
-                if (categoryUsage[category]) {
-                    overlap += categoryUsage[category];
+                // Calculate overlap with previously used categories
+                const allCategories = [...puzzle.rows, ...puzzle.cols];
+                let overlap = 0;
+                for (const category of allCategories) {
+                    if (categoryUsage[category]) {
+                        overlap += categoryUsage[category];
+                    }
+                }
+
+                puzzlesChecked++;
+
+                // If we find a puzzle with 0 overlap, use it immediately
+                if (overlap === 0) {
+                    console.log(`✅ Found puzzle with 0 overlap after checking ${puzzlesChecked} puzzles`);
+                    return { puzzle, overlap: 0 };
+                }
+
+                // Keep track of the puzzle with the lowest overlap so far
+                if (overlap < bestOverlap) {
+                    bestOverlap = overlap;
+                    bestPuzzle = puzzle;
+                    console.log(`  New best: puzzle with ${overlap} overlaps (checked ${puzzlesChecked})`);
                 }
             }
 
-            puzzlesChecked++;
-
-            // If we find a puzzle with 0 overlap, use it immediately
-            if (overlap === 0) {
-                console.log(`✅ Found puzzle with 0 overlap after checking ${puzzlesChecked} puzzles`);
-                return { puzzle, overlap: 0 };
-            }
-
-            // Keep track of the puzzle with the lowest overlap so far
-            if (overlap < bestOverlap) {
-                bestOverlap = overlap;
-                bestPuzzle = puzzle;
-                console.log(`  New best: puzzle with ${overlap} overlaps (checked ${puzzlesChecked})`);
-            }
-
-            // Show progress every 20 puzzles
-            if (puzzlesChecked % 20 === 0) {
-                console.log(`  Checked ${puzzlesChecked}/${maxChecks} puzzles, best overlap so far: ${bestOverlap}`);
-            }
+            // Show progress after each batch
+            console.log(`  Checked ${puzzlesChecked}/${maxChecks} puzzles, best overlap so far: ${bestOverlap}`);
         }
 
         if (bestPuzzle) {
@@ -329,35 +370,43 @@ async function findTrulyRandomPuzzle() {
 
         let puzzlesChecked = 0;
         const maxChecks = 100; // Check up to 100 random puzzles
+        const batchSize = 20; // Fetch 20 puzzles at a time
 
         while (puzzlesChecked < maxChecks) {
-            // Get a random puzzle from the database
-            const puzzle = await getRandomPuzzle(sqliteDb);
-            if (!puzzle) {
+            // Get a batch of random puzzles from the database
+            const puzzlesToCheck = Math.min(batchSize, maxChecks - puzzlesChecked);
+            const puzzles = await getMultipleRandomPuzzles(sqliteDb, puzzlesToCheck);
+            
+            if (!puzzles || puzzles.length === 0) {
                 console.log("No puzzles found in database");
                 return null;
             }
 
-            // Check if this puzzle has already been used
-            const key = makeKey(puzzle.rows, puzzle.cols);
-            const reverseKey = makeKey(puzzle.cols, puzzle.rows);
+            // Process each puzzle in the batch
+            for (const puzzle of puzzles) {
+                // Check if this puzzle has already been used
+                const key = makeKey(puzzle.rows, puzzle.cols);
+                const reverseKey = makeKey(puzzle.cols, puzzle.rows);
 
-            if (used.has(key) || used.has(reverseKey)) {
-                puzzlesChecked++;
-                continue; // Skip already used puzzles
-            }
-
-            // Calculate overlap with previously used categories (for display only)
-            const allCategories = [...puzzle.rows, ...puzzle.cols];
-            let overlap = 0;
-            for (const category of allCategories) {
-                if (categoryUsage[category]) {
-                    overlap += categoryUsage[category];
+                if (used.has(key) || used.has(reverseKey)) {
+                    puzzlesChecked++;
+                    continue; // Skip already used puzzles
                 }
+
+                // Calculate overlap with previously used categories (for display only)
+                const allCategories = [...puzzle.rows, ...puzzle.cols];
+                let overlap = 0;
+                for (const category of allCategories) {
+                    if (categoryUsage[category]) {
+                        overlap += categoryUsage[category];
+                    }
+                }
+
+                console.log(`🎲 Found truly random puzzle with ${overlap} category overlaps`);
+                return { puzzle, overlap: overlap };
             }
 
-            console.log(`🎲 Found truly random puzzle with ${overlap} category overlaps`);
-            return { puzzle, overlap: overlap };
+            puzzlesChecked += puzzles.length;
         }
 
         console.log("❌ No unused puzzles found after checking 100 puzzles");
