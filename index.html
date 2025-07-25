@@ -121,11 +121,22 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
   <div class="modalCard">
     <button class="min" id="minHelp">×</button>
     <h3>How to Play</h3>
-    <p>Swap words by selecting two tiles.<br>
-       When you think an entire <strong>row</strong> or <strong>column</strong> matches a hidden category, hit its ✓ button.<br>
-       • Correct lines lock (colour depends on your strike count).<br>
-       • Wrong checks give a strike — after <strong>three</strong> you lose.<br>
-       Solve every row <em>and</em> column to win!
+    <p><strong>Goal:</strong> Organize the 16 words into a 4×4 grid where each row and column forms a category.</p>
+    
+    <p><strong>How to play:</strong></p>
+    <ul style="margin: 10px 0; padding-left: 20px;">
+      <li><strong>Swap words:</strong> Click two tiles to swap their positions</li>
+      <li><strong>Check categories:</strong> When you think a row or column matches a category, click its ✓ button</li>
+      <li><strong>Correct guesses:</strong> Lock in place with a color (green → yellow → orange based on strikes)</li>
+      <li><strong>Wrong guesses:</strong> Add a strike (❌) — 3 strikes and you lose!</li>
+    </ul>
+    
+    <p><strong>Auto-alignment:</strong> When you solve multiple rows, they automatically rearrange to align with each other, revealing hints about the column categories. The same happens with columns!</p>
+    
+    <p><strong>Win condition:</strong> Solve all 4 rows AND all 4 columns to win!</p>
+    
+    <p style="margin-top: 15px; font-size: 14px; color: #666;">
+      💡 <strong>Tip:</strong> Start by looking for obvious word groups, then use the ✓ buttons to test your hunches!
     </p>
     <button class="action" id="helpOK">Got it!</button>
   </div>
@@ -1888,11 +1899,15 @@ function init(puz){
     cookiesAccepted = true;
     setCookie('connecdoku_consent', true);
     $('#gdprPop').classList.remove('show');
+    // Show rules popup after cookie consent
+    setTimeout(() => $('#helpPop').classList.add('show'), 300);
   };
   $('#declineCookies').onclick=()=>{
     cookiesAccepted = false;
     setCookie('connecdoku_consent', false);
     $('#gdprPop').classList.remove('show');
+    // Show rules popup after cookie consent
+    setTimeout(() => $('#helpPop').classList.add('show'), 300);
   };
   
   // Unsolvable puzzle popup handlers
