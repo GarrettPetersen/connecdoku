@@ -250,19 +250,15 @@ function validatePuzzle(puzzle) {
         }
     }
 
-    // Generate words for each cell and check if they're valid
-    const words = [];
+    // Check that each cell intersection has at least one valid word  
     for (let i = 0; i < 4; i++) {
-        const row = [];
         for (let j = 0; j < 4; j++) {
             const unique = uniqueWords(puzzle.rows[i], puzzle.cols[j], allCategories);
             if (unique.length === 0) {
                 console.log(`❌ No valid word found for cell (${i},${j}): ${puzzle.rows[i]} × ${puzzle.cols[j]}`);
                 return false;
             }
-            row.push(unique[0]);
         }
-        words.push(row);
     }
 
     return true;
@@ -305,7 +301,7 @@ async function findBestPuzzle(targetCategory = null) {
         let puzzlesChecked = 0;
         let invalidPuzzlesFound = 0;
         const maxChecks = 100; // Check up to 100 random puzzles
-        const maxInvalidPuzzles = 10; // Circuit breaker for invalid puzzles
+        const maxInvalidPuzzles = 1000; // Circuit breaker for invalid puzzles (high limit since we're explicitly checking many to find the best)
         const batchSize = 20; // Fetch 20 puzzles at a time
 
         while (puzzlesChecked < maxChecks && invalidPuzzlesFound < maxInvalidPuzzles) {
@@ -408,7 +404,7 @@ async function findTrulyRandomPuzzle() {
         let attempts = 0;
         let invalidPuzzlesFound = 0;
         const maxAttempts = 100; // Try up to 100 random puzzles
-        const maxInvalidPuzzles = 10; // Circuit breaker for invalid puzzles
+        const maxInvalidPuzzles = 10; // Circuit breaker for invalid puzzles (reasonable limit when just looking for 1 random puzzle)
 
         while (attempts < maxAttempts && invalidPuzzlesFound < maxInvalidPuzzles) {
             attempts++;
