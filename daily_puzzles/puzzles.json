@@ -1798,5 +1798,45 @@
         "The Village"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1980s",
+      "1990s",
+      "Comedy Stories",
+      "Starts with THE"
+    ],
+    "cols": [
+      "Ends with MAN",
+      "Movies featuring Kurt Russell",
+      "Things British",
+      "Time Travel Stories"
+    ],
+    "words": [
+      [
+        "Rain Man",
+        "Escape from New York",
+        "Britannia Hospital",
+        "Somewhere in Time"
+      ],
+      [
+        "Scent of a Woman",
+        "Stargate",
+        "Trainspotting",
+        "12 Monkeys"
+      ],
+      [
+        "Birdman",
+        "Once Upon a Time in Hollywood",
+        "Love Actually",
+        "Hot Tub Time Machine"
+      ],
+      [
+        "The Irishman",
+        "The Hateful Eight",
+        "The Great Fire of London",
+        "The Time Traveler's Almanac"
+      ]
+    ]
   }
 ]
