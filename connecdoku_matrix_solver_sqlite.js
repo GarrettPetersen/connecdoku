@@ -226,7 +226,9 @@ async function main() {
             // Don't show progress bar until we find the first puzzle
             process.stdout.write('\r');
         } else {
-            pbar(i, n, "Search", `${totalFound} found, ${saved} new inserted`);
+            // Better progress estimate based on triangular search space
+            const triangularProgress = i * (2 * n - i - 1) / (n * (n - 1));
+            pbar(triangularProgress, 1, "Search", `${totalFound} found, ${saved} new inserted`);
         }
 
         // second row: all 2-away neighbours of i that are > i (sorted)
@@ -343,7 +345,8 @@ async function main() {
 
                                     // Update progress bar
                                     if (totalFound > 1 || firstPuzzleShown) {
-                                        pbar(i, n, "Search", `${totalFound} found, ${saved} new inserted`, true);
+                                        const triangularProgress = i * (2 * n - i - 1) / (n * (n - 1));
+                                        pbar(triangularProgress, 1, "Search", `${totalFound} found, ${saved} new inserted`, true);
                                     }
                                 }
                             }
@@ -365,7 +368,7 @@ async function main() {
         }
     }
 
-    pbar(n, n, "Search", `${totalFound} found, ${saved} new inserted`, true); end();
+    pbar(1, 1, "Search", `${totalFound} found, ${saved} new inserted`, true); end();
     console.log(`\n${totalFound} puzzles found, ${saved} new puzzles saved to database`);
 
     // commit and clean up
