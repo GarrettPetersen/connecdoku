@@ -90,7 +90,8 @@ function getRandomPuzzle(db, targetCategory = null) {
                 lowerCategory, lowerCategory, lowerCategory, lowerCategory];
         }
 
-        query += ` ORDER BY RANDOM() LIMIT 1`;
+        // Use random offset approach for better performance on large tables
+        query += ` WHERE ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles)) LIMIT 1`;
 
         db.get(query, params, (err, row) => {
             if (err) {
@@ -141,6 +142,20 @@ function getMultipleRandomPuzzles(db, count, targetCategory = null) {
                     hash: row.puzzle_hash,
                     timestamp: row.timestamp
                 })));
+            }
+        });
+    });
+}
+
+function deletePuzzleFromDatabase(db, puzzleHash) {
+    return new Promise((resolve, reject) => {
+        db.run("DELETE FROM puzzles WHERE puzzle_hash = ?", [puzzleHash], function(err) {
+            if (err) {
+                console.error("Error deleting puzzle:", err.message);
+                reject(err);
+            } else {
+                console.log(`🗑️  Deleted invalid puzzle ${puzzleHash.substring(0, 8)}...`);
+                resolve(this.changes);
             }
         });
     });
@@ -288,10 +303,12 @@ async function findBestPuzzle(targetCategory = null) {
         let bestPuzzle = null;
         let bestOverlap = Infinity;
         let puzzlesChecked = 0;
+        let invalidPuzzlesFound = 0;
         const maxChecks = 100; // Check up to 100 random puzzles
+        const maxInvalidPuzzles = 10; // Circuit breaker for invalid puzzles
         const batchSize = 20; // Fetch 20 puzzles at a time
 
-        while (puzzlesChecked < maxChecks) {
+        while (puzzlesChecked < maxChecks && invalidPuzzlesFound < maxInvalidPuzzles) {
             // Get a batch of random puzzles from the database
             const puzzlesToCheck = Math.min(batchSize, maxChecks - puzzlesChecked);
             const puzzles = await getMultipleRandomPuzzles(sqliteDb, puzzlesToCheck, targetCategory);
@@ -313,12 +330,29 @@ async function findBestPuzzle(targetCategory = null) {
 
             // Process each puzzle in the batch
             for (const puzzle of puzzles) {
+                puzzlesChecked++;
+                
                 // Check if this puzzle has already been used
                 const key = makeKey(puzzle.rows, puzzle.cols);
                 const reverseKey = makeKey(puzzle.cols, puzzle.rows);
 
                 if (used.has(key) || used.has(reverseKey)) {
                     continue; // Skip already used puzzles
+                }
+
+                // Validate the puzzle first
+                if (!validatePuzzle(puzzle)) {
+                    invalidPuzzlesFound++;
+                    console.log(`⚠️  Found invalid puzzle (${invalidPuzzlesFound}/${maxInvalidPuzzles}), deleting from database...`);
+                    
+                    // Delete the invalid puzzle from database
+                    await deletePuzzleFromDatabase(sqliteDb, puzzle.hash);
+                    
+                    if (invalidPuzzlesFound >= maxInvalidPuzzles) {
+                        console.log("❌ Too many invalid puzzles found, stopping search");
+                        return null;
+                    }
+                    continue; // Try next puzzle
                 }
 
                 // Calculate overlap with previously used categories
@@ -329,8 +363,6 @@ async function findBestPuzzle(targetCategory = null) {
                         overlap += categoryUsage[category];
                     }
                 }
-
-                puzzlesChecked++;
 
                 // If we find a puzzle with 0 overlap, use it immediately
                 if (overlap === 0) {
@@ -348,6 +380,11 @@ async function findBestPuzzle(targetCategory = null) {
 
             // Show progress after each batch
             console.log(`  Checked ${puzzlesChecked}/${maxChecks} puzzles, best overlap so far: ${bestOverlap}`);
+        }
+
+        if (invalidPuzzlesFound >= maxInvalidPuzzles) {
+            console.log("❌ Too many invalid puzzles found, stopping search");
+            return null;
         }
 
         if (bestPuzzle) {
@@ -368,48 +405,63 @@ async function findTrulyRandomPuzzle() {
     try {
         console.log("Finding a truly random puzzle...");
 
-        let puzzlesChecked = 0;
-        const maxChecks = 100; // Check up to 100 random puzzles
-        const batchSize = 20; // Fetch 20 puzzles at a time
+        let attempts = 0;
+        let invalidPuzzlesFound = 0;
+        const maxAttempts = 100; // Try up to 100 random puzzles
+        const maxInvalidPuzzles = 10; // Circuit breaker for invalid puzzles
 
-        while (puzzlesChecked < maxChecks) {
-            // Get a batch of random puzzles from the database
-            const puzzlesToCheck = Math.min(batchSize, maxChecks - puzzlesChecked);
-            const puzzles = await getMultipleRandomPuzzles(sqliteDb, puzzlesToCheck);
+        while (attempts < maxAttempts && invalidPuzzlesFound < maxInvalidPuzzles) {
+            attempts++;
             
-            if (!puzzles || puzzles.length === 0) {
+            // Get a single random puzzle from the database
+            const puzzle = await getRandomPuzzle(sqliteDb);
+            
+            if (!puzzle) {
                 console.log("No puzzles found in database");
                 return null;
             }
 
-            // Process each puzzle in the batch
-            for (const puzzle of puzzles) {
-                // Check if this puzzle has already been used
-                const key = makeKey(puzzle.rows, puzzle.cols);
-                const reverseKey = makeKey(puzzle.cols, puzzle.rows);
+            // Check if this puzzle has already been used
+            const key = makeKey(puzzle.rows, puzzle.cols);
+            const reverseKey = makeKey(puzzle.cols, puzzle.rows);
 
-                if (used.has(key) || used.has(reverseKey)) {
-                    puzzlesChecked++;
-                    continue; // Skip already used puzzles
-                }
-
-                // Calculate overlap with previously used categories (for display only)
-                const allCategories = [...puzzle.rows, ...puzzle.cols];
-                let overlap = 0;
-                for (const category of allCategories) {
-                    if (categoryUsage[category]) {
-                        overlap += categoryUsage[category];
-                    }
-                }
-
-                console.log(`🎲 Found truly random puzzle with ${overlap} category overlaps`);
-                return { puzzle, overlap: overlap };
+            if (used.has(key) || used.has(reverseKey)) {
+                continue; // Skip already used puzzles
             }
 
-            puzzlesChecked += puzzles.length;
+            // Validate the puzzle
+            if (!validatePuzzle(puzzle)) {
+                invalidPuzzlesFound++;
+                console.log(`⚠️  Found invalid puzzle (${invalidPuzzlesFound}/${maxInvalidPuzzles}), deleting from database...`);
+                
+                // Delete the invalid puzzle from database
+                await deletePuzzleFromDatabase(sqliteDb, puzzle.hash);
+                
+                if (invalidPuzzlesFound >= maxInvalidPuzzles) {
+                    console.log("❌ Too many invalid puzzles found, stopping search");
+                    return null;
+                }
+                continue; // Try next puzzle
+            }
+
+            // Calculate overlap with previously used categories (for display only)
+            const allCategories = [...puzzle.rows, ...puzzle.cols];
+            let overlap = 0;
+            for (const category of allCategories) {
+                if (categoryUsage[category]) {
+                    overlap += categoryUsage[category];
+                }
+            }
+
+            console.log(`🎲 Found truly random puzzle with ${overlap} category overlaps`);
+            return { puzzle, overlap: overlap };
         }
 
-        console.log("❌ No unused puzzles found after checking 100 puzzles");
+        if (invalidPuzzlesFound >= maxInvalidPuzzles) {
+            console.log("❌ Too many invalid puzzles found, stopping search");
+        } else {
+            console.log("❌ No unused puzzles found after checking 100 puzzles");
+        }
         return null;
     } finally {
         sqliteDb.close();
