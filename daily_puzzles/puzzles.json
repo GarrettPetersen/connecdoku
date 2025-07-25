@@ -1758,5 +1758,45 @@
         "Akira"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1940s",
+      "19th Century",
+      "Movies featuring Hugh Jackman",
+      "Movies featuring Sigourney Weaver"
+    ],
+    "cols": [
+      "Fantasy Stories",
+      "Sci-fi Stories",
+      "Romance Stories",
+      "Starts with THE"
+    ],
+    "words": [
+      [
+        "Miracle on 34th Street",
+        "1984",
+        "Casablanca",
+        "The Battle of Stalingrad"
+      ],
+      [
+        "Alice's Adventures in Wonderland",
+        "Frankenstein",
+        "Pride and Prejudice",
+        "The Boer War"
+      ],
+      [
+        "Rise of the Guardians",
+        "X-Men: Days of Future Past",
+        "Kate & Leopold",
+        "The Greatest Showman"
+      ],
+      [
+        "Ghostbusters",
+        "Alien",
+        "Working Girl",
+        "The Village"
+      ]
+    ]
   }
 ]
