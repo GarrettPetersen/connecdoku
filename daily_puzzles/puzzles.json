@@ -1558,5 +1558,45 @@
         "Victoria"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1940s",
+      "1980s",
+      "1990s",
+      "21st Century"
+    ],
+    "cols": [
+      "Best Picture Winners",
+      "Ends with MAN",
+      "Fantasy Stories",
+      "Sci-fi Stories"
+    ],
+    "words": [
+      [
+        "Casablanca",
+        "The Third Man",
+        "It's a Wonderful Life",
+        "1984"
+      ],
+      [
+        "Gandhi",
+        "Snowman",
+        "Ghostbusters",
+        "Blade Runner"
+      ],
+      [
+        "American Beauty",
+        "Scent of a Woman",
+        "The Nightmare Before Christmas",
+        "Galaxy Quest"
+      ],
+      [
+        "12 Years a Slave",
+        "The Irishman",
+        "Twilight",
+        "Arrival"
+      ]
+    ]
   }
 ]
