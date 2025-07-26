@@ -82,16 +82,19 @@ function getRandomPuzzle(db, targetCategory = null) {
 
         if (targetCategory) {
             query += `
-                WHERE LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
-                   OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?
+                WHERE (LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
+                   OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)
+                   AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
             `;
             const lowerCategory = targetCategory.toLowerCase();
             params = [lowerCategory, lowerCategory, lowerCategory, lowerCategory,
                 lowerCategory, lowerCategory, lowerCategory, lowerCategory];
+        } else {
+            // Use random offset approach for better performance on large tables
+            query += ` WHERE ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))`;
         }
 
-        // Use random offset approach for better performance on large tables
-        query += ` WHERE ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles)) LIMIT 1`;
+        query += ` LIMIT 1`;
 
         db.get(query, params, (err, row) => {
             if (err) {
@@ -395,6 +398,75 @@ async function findBestPuzzle(targetCategory = null) {
     }
 }
 
+async function findAnyPuzzleWithCategory(targetCategory) {
+    const sqliteDb = await openDatabase();
+
+    try {
+        console.log(`Finding any puzzle with category "${targetCategory}"...`);
+
+        let attempts = 0;
+        let invalidPuzzlesFound = 0;
+        const maxAttempts = 50; // Try up to 50 random puzzles with this category
+        const maxInvalidPuzzles = 10; // Circuit breaker for invalid puzzles
+
+        while (attempts < maxAttempts && invalidPuzzlesFound < maxInvalidPuzzles) {
+            attempts++;
+
+            // Get a single random puzzle with this category from the database
+            const puzzle = await getRandomPuzzle(sqliteDb, targetCategory);
+
+            if (!puzzle) {
+                console.log(`No puzzles found containing category "${targetCategory}"`);
+                return null;
+            }
+
+            // Check if this puzzle has already been used
+            const key = makeKey(puzzle.rows, puzzle.cols);
+            const reverseKey = makeKey(puzzle.cols, puzzle.rows);
+
+            if (used.has(key) || used.has(reverseKey)) {
+                continue; // Skip already used puzzles
+            }
+
+            // Validate the puzzle
+            if (!validatePuzzle(puzzle)) {
+                invalidPuzzlesFound++;
+                console.log(`⚠️  Found invalid puzzle (${invalidPuzzlesFound}/${maxInvalidPuzzles}), deleting from database...`);
+
+                // Delete the invalid puzzle from database
+                await deletePuzzleFromDatabase(sqliteDb, puzzle.hash);
+
+                if (invalidPuzzlesFound >= maxInvalidPuzzles) {
+                    console.log("❌ Too many invalid puzzles found, stopping search");
+                    return null;
+                }
+                continue; // Try next puzzle
+            }
+
+            // Calculate overlap with previously used categories (for display only)
+            const allCategories = [...puzzle.rows, ...puzzle.cols];
+            let overlap = 0;
+            for (const category of allCategories) {
+                if (categoryUsage[category]) {
+                    overlap += categoryUsage[category];
+                }
+            }
+
+            console.log(`🎲 Found puzzle with "${targetCategory}" (${overlap} category overlaps)`);
+            return { puzzle, overlap: overlap };
+        }
+
+        if (invalidPuzzlesFound >= maxInvalidPuzzles) {
+            console.log("❌ Too many invalid puzzles found, stopping search");
+        } else {
+            console.log(`❌ No unused puzzles found with category "${targetCategory}" after checking ${maxAttempts} puzzles`);
+        }
+        return null;
+    } finally {
+        sqliteDb.close();
+    }
+}
+
 async function findTrulyRandomPuzzle() {
     const sqliteDb = await openDatabase();
 
@@ -601,6 +673,18 @@ async function main() {
 
                 targetCategory = categoryInput.trim();
                 console.log(`🔍 Searching for puzzles containing "${targetCategory}"...`);
+                
+                // Ask user if they want to find the best (low overlap) or any puzzle with this category
+                const searchType = await prompts.select({
+                    message: "What type of search?",
+                    choices: [
+                        { name: "🎯 Find puzzle with lowest overlap to past categories", value: "low_overlap" },
+                        { name: "🎲 Find any puzzle with this category (faster)", value: "any" }
+                    ]
+                });
+                
+                // Store the search type for later use
+                searchChoice = searchType;
             } else if (searchChoice === "truly_random") {
                 targetCategory = null;
             } else {
@@ -611,6 +695,8 @@ async function main() {
         let result;
         if (searchChoice === "truly_random") {
             result = await findTrulyRandomPuzzle();
+        } else if (searchChoice === "any") {
+            result = await findAnyPuzzleWithCategory(targetCategory);
         } else {
             result = await findBestPuzzle(targetCategory);
         }
