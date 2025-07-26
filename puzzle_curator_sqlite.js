@@ -541,8 +541,11 @@ async function main() {
                             if (key === '\u0003') { // Ctrl+C
                                 process.exit();
                             } else if (key === '\r' || key === '\n') { // Enter
+                                // Clean up raw mode properly
                                 process.stdin.setRawMode(false);
                                 process.stdin.pause();
+                                // Remove only our specific event listener
+                                process.stdin.off('data', handleKey);
                                 resolve(input);
                             } else if (key === '\u007f') { // Backspace
                                 if (cursorPos > 0) {
