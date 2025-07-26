@@ -2158,5 +2158,45 @@
         "Staten Island"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1950s",
+      "Crime Stories",
+      "Fantasy Stories",
+      "Oscar Winners"
+    ],
+    "cols": [
+      "Black and White Films",
+      "Classic Literature",
+      "Sci-fi Stories",
+      "Things British"
+    ],
+    "words": [
+      [
+        "Seven Samurai",
+        "The Old Man and the Sea",
+        "Fahrenheit 451",
+        "The Lion, the Witch and the Wardrobe"
+      ],
+      [
+        "The Big Sleep",
+        "Crime and Punishment",
+        "Looper",
+        "The Italian Job"
+      ],
+      [
+        "It's a Wonderful Life",
+        "Journey to the West",
+        "A Wrinkle in Time",
+        "Harry Potter and the Sorcerer's Stone"
+      ],
+      [
+        "Schindler's List",
+        "Little Women",
+        "Avatar",
+        "Shakespeare in Love"
+      ]
+    ]
   }
 ]
