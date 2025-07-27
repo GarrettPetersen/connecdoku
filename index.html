@@ -60,7 +60,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 }
 .hdr.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
 .hdr:hover{filter:brightness(0.9)}
-.hdr button{all:unset;cursor:pointer;color:var(--txt)}
+.hdr button{all:unset;cursor:pointer;color:var(--txt);font-size:16px;font-weight:bold;transition:all .2s ease}
 .hdr.solved{font-weight:600;border:none;cursor:default}
 .hdr.solved:hover{filter:none}
 .hdr.solved.pop{animation:pop .3s ease-out}
@@ -74,6 +74,16 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 .frozen{cursor:default}.selected{outline:3px solid #2196f3}
 .used1{background:var(--btn2)}.used2{background:var(--btn3)}
 .disabled{opacity:.5;cursor:default}.disabled button{display:none}
+
+/* New styles for arrow buttons and confirmation flow */
+.hdr.confirming{background:#e3f2fd;border-color:#2196f3}
+.hdr.confirming button{color:#1976d2;font-weight:bold}
+.tile.row-confirming{background:#e1f5fe !important;border-color:#03a9f4 !important}
+.tile.col-confirming{background:#e1f5fe !important;border-color:#03a9f4 !important}
+.confirm-btn{color:#1976d2 !important;font-weight:bold !important;font-size:14px !important}
+.arrow-btn{font-size:18px !important;font-weight:bold !important;transition:all .2s ease !important}
+.arrow-btn:hover{transform:scale(1.1) !important}
+
 @keyframes pop{0%{transform:scale(.9)}70%{transform:scale(1.05)}100%{transform:scale(1)}}
 @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}
                  40%,80%{transform:translateX(8px)}}
@@ -151,7 +161,8 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
     <p><strong>How to play:</strong></p>
     <ul style="margin: 10px 0; padding-left: 20px;">
       <li><strong>Swap words:</strong> Click two tiles to swap their positions</li>
-      <li><strong>Check categories:</strong> When you think a row or column matches a category, click its ✓ button</li>
+      <li><strong>Check categories:</strong> When you think a row or column matches a category, click its arrow button (← for rows, ↓ for columns)</li>
+      <li><strong>Confirm guesses:</strong> The arrow changes to "confirm" and highlights the row/column. Click "confirm" to submit your guess</li>
       <li><strong>Correct guesses:</strong> Lock in place with a color (green → yellow → orange based on strikes)</li>
       <li><strong>Wrong guesses:</strong> Add a strike (❌) — 3 strikes and you lose!</li>
     </ul>
@@ -161,7 +172,7 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
     <p><strong>Win condition:</strong> Solve all 4 rows AND all 4 columns to win!</p>
     
     <p style="margin-top: 15px; font-size: 14px; color: #666;">
-      💡 <strong>Tip:</strong> Start by looking for obvious word groups, then use the ✓ buttons to test your hunches!
+      💡 <strong>Tip:</strong> Start by looking for obvious word groups, then use the arrow buttons to test your hunches!
     </p>
     <button class="action" id="helpOK">Got it!</button>
   </div>
@@ -370,6 +381,7 @@ function init(puz){
   let strikes=0, finished=false, sel=null;
   let solvedRows=new Map(), solvedCols=new Map(); // idx → strike tier
   let G=[[],[],[],[]]; // board state
+  let confirmingHeader=null; // tracks which header is in confirmation mode
 
   const wordToColCat = {};          // use column labels
   const wordToRowCat = {};          // use row labels
@@ -553,7 +565,8 @@ function init(puz){
   function makeHdr(kind,idx){
     const d=document.createElement('div');
     d.className='hdr clickHdr'; d.dataset[kind]=idx;
-    d.innerHTML='<button>✓</button>'; return d;
+    const arrow = kind === 'row' ? '←' : '↓';
+    d.innerHTML=`<button class="arrow-btn">${arrow}</button>`; return d;
   }
   const tile=(r,c)=>$(`.tile[data-rc="${r},${c}"]`);
   const lockColour=(r,c,lvl)=>{
@@ -593,12 +606,30 @@ function init(puz){
     if(finished) return;
     const t=e.target.closest('.tile');
     const h=e.target.closest('.clickHdr');
+    
+    // Handle tile clicks
     if(t && !t.classList.contains('frozen')) handleTileClick(t);
+    
+    // Handle header clicks
     if(h){
       const r=h.dataset.row!==undefined?+h.dataset.row:null;
       const c=h.dataset.col!==undefined?+h.dataset.col:null;
-      if(r!==null) checkLine('row',r,h);
-      if(c!==null) checkLine('col',c,h);
+      
+      // If we're already in confirmation mode for a different header
+      if(confirmingHeader && confirmingHeader !== h){
+        // Cancel the current confirmation first
+        cancelConfirmation();
+        // Then start confirmation for the new header
+        if(r!==null) handleHeaderClick('row',r,h);
+        if(c!==null) handleHeaderClick('col',c,h);
+        return;
+      }
+      
+      if(r!==null) handleHeaderClick('row',r,h);
+      if(c!==null) handleHeaderClick('col',c,h);
+    } else {
+      // Clicked outside headers - cancel confirmation if active
+      if(confirmingHeader) cancelConfirmation();
     }
   });
 
@@ -625,6 +656,80 @@ function init(puz){
     integrityCheck();
   }
 
+  function handleHeaderClick(kind, idx, hdr) {
+    if(hdr.classList.contains('solved')) return;
+    
+    // If not in confirmation mode, start confirmation
+    if(!confirmingHeader) {
+      startConfirmation(kind, idx, hdr);
+    } else {
+      // Already in confirmation mode for this header - execute the guess
+      executeGuess(kind, idx, hdr);
+    }
+  }
+
+  function startConfirmation(kind, idx, hdr) {
+    // Cancel any existing confirmation
+    if(confirmingHeader) cancelConfirmation();
+    
+    // Set up confirmation state
+    confirmingHeader = hdr;
+    hdr.classList.add('confirming');
+    hdr.querySelector('button').textContent = 'confirm';
+    hdr.querySelector('button').classList.add('confirm-btn');
+    
+    // Highlight the row/column being guessed
+    if(kind === 'row') {
+      for(let c = 0; c < 4; c++) {
+        const tile = $(`.tile[data-rc="${idx},${c}"]`);
+        if(tile) tile.classList.add('row-confirming');
+      }
+    } else {
+      for(let r = 0; r < 4; r++) {
+        const tile = $(`.tile[data-rc="${r},${idx}"]`);
+        if(tile) tile.classList.add('col-confirming');
+      }
+    }
+  }
+
+  function cancelConfirmation() {
+    if(!confirmingHeader) return;
+    
+    const hdr = confirmingHeader;
+    const kind = hdr.dataset.row !== undefined ? 'row' : 'col';
+    const idx = kind === 'row' ? +hdr.dataset.row : +hdr.dataset.col;
+    
+    // Reset header
+    hdr.classList.remove('confirming');
+    const arrow = kind === 'row' ? '←' : '↓';
+    hdr.querySelector('button').textContent = arrow;
+    hdr.querySelector('button').classList.remove('confirm-btn');
+    hdr.querySelector('button').classList.add('arrow-btn');
+    
+    // Remove highlighting
+    if(kind === 'row') {
+      for(let c = 0; c < 4; c++) {
+        const tile = $(`.tile[data-rc="${idx},${c}"]`);
+        if(tile) tile.classList.remove('row-confirming');
+      }
+    } else {
+      for(let r = 0; r < 4; r++) {
+        const tile = $(`.tile[data-rc="${r},${idx}"]`);
+        if(tile) tile.classList.remove('col-confirming');
+      }
+    }
+    
+    confirmingHeader = null;
+  }
+
+  function executeGuess(kind, idx, hdr) {
+    // Cancel confirmation state
+    cancelConfirmation();
+    
+    // Execute the actual guess
+    checkLine(kind, idx, hdr);
+  }
+
   /* ---------- solving logic ---------- */
   function checkLine(kind,idx,hdr,auto=false){
     if(hdr.classList.contains('solved')) return;
@@ -641,7 +746,7 @@ function init(puz){
 
     /* ─────────────── first *row-category* solved ─────────────── */
     if (colCatToIdx === null && rowIdx[label] !== undefined) {
-      // Whether we just solved a *row* or a *column* doesn’t matter.
+      // Whether we just solved a *row* or a *column* doesn't matter.
       // We only care that `label` belongs to puz.rows → its line shows
       // us the order of the four *column* categories.
       colCatToIdx = {};
@@ -1388,6 +1493,9 @@ function init(puz){
       }, 1000 + animTime);                  // 1 s pause + animation
       }
     }
+    
+    // Clear any active confirmation state
+    if(confirmingHeader) cancelConfirmation();
   }
 
 
@@ -1423,7 +1531,7 @@ function init(puz){
       }, opt.duration);
     }
 
-    /* ── logical swap (unless we’re only animating) ───────────── */
+    /* ── logical swap (unless we're only animating) ───────────── */
     if (!animOnly) {
       [G[r1][c1], G[r2][c2]] = [G[r2][c2], G[r1][c1]];
       [t1.textContent, t2.textContent] = [t2.textContent, t1.textContent];
@@ -1443,6 +1551,9 @@ function init(puz){
 
   function finish(won) {
     finished = true;
+
+    // Cancel any active confirmation
+    if(confirmingHeader) cancelConfirmation();
 
     // just freeze everything; leave the current board text untouched
     for (let r = 0; r < 4; r++)
@@ -1680,7 +1791,7 @@ function init(puz){
     }
     const PERMS = allPerms();               // cached once
 
-    /* ── build the two “base” grids: normal & transposed ───────── */
+    /* ── build the two "base" grids: normal & transposed ───────── */
     const BASE_NORMAL = puz.words;          // rows = row categories
     const BASE_TRANS  = Array.from({ length: 4 }, (_, r) =>
                             Array.from({ length: 4 }, (_, c) => puz.words[c][r]));
@@ -1735,7 +1846,7 @@ function init(puz){
         if (G[r][c] === want) continue;
 
         const [r2, c2] = locate.get(want);
-        if (isFrozen(r2, c2)) continue;          // shouldn’t happen
+        if (isFrozen(r2, c2)) continue;          // shouldn't happen
 
         moves.push([r, c, r2, c2]);
 
