@@ -12712,6 +12712,7 @@
     "Akira",
     "Aladdin",
     "Alice in Wonderland",
+    "Alice's Adventures in Wonderland",
     "Alien",
     "Alien 3",
     "Alien: Resurrection",
@@ -12785,6 +12786,7 @@
     "Donnie Darko",
     "Doom",
     "Dr. Strangelove",
+    "Dracula",
     "Dreamgirls",
     "Dreams",
     "Driving Miss Daisy",
@@ -12811,6 +12813,7 @@
     "Forrest Gump",
     "Four Christmases",
     "Four Weddings and a Funeral",
+    "Frankenstein",
     "Frequency",
     "From Up on Poppy Hill",
     "Frozen",
@@ -12867,6 +12870,7 @@
     "Into the Woods",
     "It's a Wonderful Life",
     "Jackie Brown",
+    "Jane Eyre",
     "Jaws",
     "Jesus Christ Superstar",
     "Jingle All the Way",
@@ -12885,6 +12889,7 @@
     "Les Misérables",
     "Lilo & Stitch",
     "Little Shop of Horrors",
+    "Little Women",
     "Live Free or Die Hard",
     "Looper",
     "Love Actually",
@@ -12898,6 +12903,7 @@
     "Million Dollar Baby",
     "Miracle on 34th Street",
     "Moana",
+    "Moby Dick",
     "Monsters Inc",
     "Monsters University",
     "Moonlight",
@@ -12940,6 +12946,7 @@
     "Porco Rosso",
     "Poseidon",
     "Predestination",
+    "Pride and Prejudice",
     "Primer",
     "Princess Mononoke",
     "Pulp Fiction",
@@ -13006,7 +13013,9 @@
     "The Bridge on the River Kwai",
     "The Butterfly Effect",
     "The Cat Returns",
+    "The Color Purple",
     "The Crying Game",
+    "The Da Vinci Code",
     "The Deer Hunter",
     "The Departed",
     "The Devil's Advocate",
@@ -13019,6 +13028,7 @@
     "The Fox and the Hound",
     "The French Connection",
     "The Full Monty",
+    "The Girl with the Dragon Tattoo",
     "The Godfather",
     "The Godfather Part II",
     "The Godfather Part III",
@@ -13026,6 +13036,8 @@
     "The Graduate",
     "The Grand Budapest Hotel",
     "The Grandmaster",
+    "The Grapes of Wrath",
+    "The Great Gatsby",
     "The Great Mouse Detective",
     "The Greatest Showman",
     "The Green Mile",
@@ -13035,6 +13047,7 @@
     "The Hidden Fortress",
     "The Holiday",
     "The Hunchback of Notre Dame",
+    "The Hunger Games",
     "The Hurt Locker",
     "The Ice Storm",
     "The Incredibles",
@@ -13073,6 +13086,7 @@
     "The Santa Clause",
     "The Santa Clause 2",
     "The Santa Clause 3: The Escape Clause",
+    "The Secret Garden",
     "The Shape of Water",
     "The Shawshank Redemption",
     "The Shining",
@@ -13099,6 +13113,7 @@
     "Treasure Planet",
     "Troy",
     "Turning Red",
+    "Twilight",
     "Unbreakable",
     "Unforgiven",
     "Up",
@@ -13114,6 +13129,7 @@
     "Wish",
     "Working Girl",
     "Wreck-It Ralph",
+    "Wuthering Heights",
     "X-Men: Days of Future Past",
     "X-Men: First Class",
     "Yojimbo",
@@ -13186,7 +13202,8 @@
     "Rain Man"
   ],
   "Movies directed by Baz Luhrmann": [
-    "Moulin Rouge!"
+    "Moulin Rouge!",
+    "The Great Gatsby"
   ],
   "Movies directed by Ben Affleck": [
     "Argo"
@@ -13233,6 +13250,9 @@
   "Movies directed by Carol Reed": [
     "Oliver!",
     "The Third Man"
+  ],
+  "Movies directed by Catherine Hardwicke": [
+    "Twilight"
   ],
   "Movies directed by Chen Kaige": [
     "Farewell My Concubine"
@@ -13301,6 +13321,7 @@
     "Alien 3",
     "Fight Club",
     "Gone Girl",
+    "The Girl with the Dragon Tattoo",
     "The Killer"
   ],
   "Movies directed by David Greene": [
@@ -13373,6 +13394,9 @@
   ],
   "Movies directed by Gareth Edwards": [
     "Rogue One"
+  ],
+  "Movies directed by Gary Ross": [
+    "The Hunger Games"
   ],
   "Movies directed by Gary Trousdale": [
     "Beauty and the Beast",
@@ -13490,6 +13514,9 @@
   "Movies directed by James Wan": [
     "Saw"
   ],
+  "Movies directed by James Whale": [
+    "Frankenstein"
+  ],
   "Movies directed by Jared Bush": [
     "Encanto"
   ],
@@ -13511,6 +13538,9 @@
   "Movies directed by Joe Russo": [
     "Avengers: Endgame"
   ],
+  "Movies directed by Joe Wright": [
+    "Pride and Prejudice"
+  ],
   "Movies directed by Joel Coen": [
     "No Country for Old Men"
   ],
@@ -13524,11 +13554,15 @@
     "Escape from New York",
     "The Thing"
   ],
+  "Movies directed by John Ford": [
+    "The Grapes of Wrath"
+  ],
   "Movies directed by John G. Avildsen": [
     "Rocky"
   ],
   "Movies directed by John Huston": [
     "Annie",
+    "Moby Dick",
     "The Maltese Falcon"
   ],
   "Movies directed by John Madden": [
@@ -13849,7 +13883,8 @@
   "Movies directed by Ron Howard": [
     "A Beautiful Mind",
     "Apollo 13",
-    "Solo"
+    "Solo",
+    "The Da Vinci Code"
   ],
   "Movies directed by Sam Mendes": [
     "American Beauty"
@@ -13909,6 +13944,7 @@
     "Jaws",
     "Jurassic Park",
     "Schindler's List",
+    "The Color Purple",
     "West Side Story"
   ],
   "Movies directed by Stewart Raffill": [
@@ -13932,7 +13968,11 @@
     "Bad Santa"
   ],
   "Movies directed by Tim Burton": [
+    "Alice's Adventures in Wonderland",
     "Sweeney Todd: The Demon Barber of Fleet Street"
+  ],
+  "Movies directed by Tod Browning": [
+    "Dracula"
   ],
   "Movies directed by Tom Hooper": [
     "Les Misérables",
@@ -14199,6 +14239,9 @@
   "Movies featuring Audrey Hepburn": [
     "My Fair Lady"
   ],
+  "Movies featuring Audrey Tautou": [
+    "The Da Vinci Code"
+  ],
   "Movies featuring Auli'i Cravalho": [
     "Moana"
   ],
@@ -14216,6 +14259,9 @@
   ],
   "Movies featuring Barry Dennen": [
     "Jesus Christ Superstar"
+  ],
+  "Movies featuring Bela Lugosi": [
+    "Dracula"
   ],
   "Movies featuring Ben Affleck": [
     "Argo",
@@ -14314,6 +14360,7 @@
     "Die Hard 2"
   ],
   "Movies featuring Boris Karloff": [
+    "Frankenstein",
     "How the Grinch Stole Christmas"
   ],
   "Movies featuring Brad Pitt": [
@@ -14396,6 +14443,9 @@
   ],
   "Movies featuring Cao Cuifen": [
     "Raise the Red Lantern"
+  ],
+  "Movies featuring Carey Mulligan": [
+    "The Great Gatsby"
   ],
   "Movies featuring Carl Anderson": [
     "Jesus Christ Superstar"
@@ -14578,6 +14628,9 @@
     "Ghostbusters",
     "Ghostbusters II"
   ],
+  "Movies featuring Daniel Craig": [
+    "The Girl with the Dragon Tattoo"
+  ],
   "Movies featuring Daniel Radcliffe": [
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Deathly Hallows: Part 1",
@@ -14600,7 +14653,8 @@
     "The Nightmare Before Christmas"
   ],
   "Movies featuring Danny Glover": [
-    "Saw"
+    "Saw",
+    "The Color Purple"
   ],
   "Movies featuring Danny Kaye": [
     "White Christmas"
@@ -15007,6 +15061,7 @@
     "The Black Cauldron"
   ],
   "Movies featuring Gregory Peck": [
+    "Moby Dick",
     "To Kill a Mockingbird"
   ],
   "Movies featuring Gwyneth Paltrow": [
@@ -15044,9 +15099,13 @@
     "The Madness of King George"
   ],
   "Movies featuring Helena Bonham Carter": [
+    "Alice's Adventures in Wonderland",
     "Fight Club",
     "Sweeney Todd: The Demon Barber of Fleet Street",
     "The King's Speech"
+  ],
+  "Movies featuring Henry Fonda": [
+    "The Grapes of Wrath"
   ],
   "Movies featuring Henry Thomas": [
     "E.T."
@@ -15197,6 +15256,9 @@
   "Movies featuring Jamie Lee Curtis": [
     "Everything Everywhere All at Once"
   ],
+  "Movies featuring Jane Darwell": [
+    "The Grapes of Wrath"
+  ],
   "Movies featuring Jane Seymour": [
     "Somewhere in Time"
   ],
@@ -15230,6 +15292,7 @@
     "The Hateful Eight"
   ],
   "Movies featuring Jennifer Lawrence": [
+    "The Hunger Games",
     "X-Men: First Class"
   ],
   "Movies featuring Jenny Agutter": [
@@ -15376,6 +15439,7 @@
     "Pulp Fiction"
   ],
   "Movies featuring Johnny Depp": [
+    "Alice's Adventures in Wonderland",
     "Donnie Brasco",
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
@@ -15415,6 +15479,9 @@
   ],
   "Movies featuring Josh Gad": [
     "Frozen"
+  ],
+  "Movies featuring Josh Hutcherson": [
+    "The Hunger Games"
   ],
   "Movies featuring Jude Law": [
     "My Blueberry Nights",
@@ -15505,7 +15572,8 @@
   "Movies featuring Keira Knightley": [
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
-    "Pirates of the Caribbean: The Curse of the Black Pearl"
+    "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Pride and Prejudice"
   ],
   "Movies featuring Keith David": [
     "The Princess and the Frog",
@@ -15534,6 +15602,9 @@
   ],
   "Movies featuring Kristen Bell": [
     "Frozen"
+  ],
+  "Movies featuring Kristen Stewart": [
+    "Twilight"
   ],
   "Movies featuring Kristin Scott Thomas": [
     "Four Weddings and a Funeral",
@@ -15592,6 +15663,7 @@
     "Django Unchained",
     "Once Upon a Time in Hollywood",
     "The Departed",
+    "The Great Gatsby",
     "The Revenant",
     "Titanic"
   ],
@@ -15783,6 +15855,9 @@
   ],
   "Movies featuring Matthew Fox": [
     "Vantage Point"
+  ],
+  "Movies featuring Matthew Macfadyen": [
+    "Pride and Prejudice"
   ],
   "Movies featuring Matthew McConaughey": [
     "Interstellar"
@@ -15998,6 +16073,7 @@
   ],
   "Movies featuring Oprah Winfrey": [
     "A Wrinkle in Time",
+    "The Color Purple",
     "The Princess and the Frog"
   ],
   "Movies featuring Orlando Bloom": [
@@ -16227,7 +16303,8 @@
     "Big"
   ],
   "Movies featuring Robert Pattinson": [
-    "Tenet"
+    "Tenet",
+    "Twilight"
   ],
   "Movies featuring Robert Redford": [
     "Out of Africa"
@@ -16254,6 +16331,9 @@
   "Movies featuring Ron Perlman": [
     "Alien: Resurrection",
     "Tangled"
+  ],
+  "Movies featuring Rooney Mara": [
+    "The Girl with the Dragon Tattoo"
   ],
   "Movies featuring Rosamund Pike": [
     "Doom",
@@ -16558,6 +16638,7 @@
   "Movies featuring Tom Hanks": [
     "Big",
     "Forrest Gump",
+    "The Da Vinci Code",
     "The Green Mile",
     "The Polar Express"
   ],
@@ -16693,6 +16774,9 @@
   ],
   "Movies featuring Wendy Crewson": [
     "The Santa Clause"
+  ],
+  "Movies featuring Whoopi Goldberg": [
+    "The Color Purple"
   ],
   "Movies featuring Wilford Brimley": [
     "The Thing"
@@ -17315,11 +17399,13 @@
     "Spotlight",
     "Terms of Endearment",
     "The Artist",
+    "The Color Purple",
     "The Deer Hunter",
     "The Departed",
     "The English Patient",
     "The Godfather",
     "The Godfather Part II",
+    "The Grapes of Wrath",
     "The Greatest Showman",
     "The Hurt Locker",
     "The Irishman",

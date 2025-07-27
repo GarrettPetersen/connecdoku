@@ -83,9 +83,6 @@
   "Movies featuring Cary Elwes": [
     "Saw"
   ],
-  "Movies featuring Danny Glover": [
-    "Saw"
-  ],
   "Movies featuring Leigh Whannell": [
     "Saw"
   ],
@@ -998,14 +995,53 @@
   "Movies directed by Robert Mulligan": [
     "To Kill a Mockingbird"
   ],
-  "Movies featuring Gregory Peck": [
-    "To Kill a Mockingbird"
-  ],
   "Movies featuring Mary Badham": [
     "To Kill a Mockingbird"
   ],
   "Movies featuring Phillip Alford": [
     "To Kill a Mockingbird"
+  ],
+  "Movies featuring Carey Mulligan": [
+    "The Great Gatsby"
+  ],
+  "Movies directed by Joe Wright": [
+    "Pride and Prejudice"
+  ],
+  "Movies featuring Matthew Macfadyen": [
+    "Pride and Prejudice"
+  ],
+  "Movies directed by John Ford": [
+    "The Grapes of Wrath"
+  ],
+  "Movies featuring Henry Fonda": [
+    "The Grapes of Wrath"
+  ],
+  "Movies featuring Jane Darwell": [
+    "The Grapes of Wrath"
+  ],
+  "Movies featuring Whoopi Goldberg": [
+    "The Color Purple"
+  ],
+  "Movies directed by Gary Ross": [
+    "The Hunger Games"
+  ],
+  "Movies featuring Josh Hutcherson": [
+    "The Hunger Games"
+  ],
+  "Movies directed by Catherine Hardwicke": [
+    "Twilight"
+  ],
+  "Movies featuring Kristen Stewart": [
+    "Twilight"
+  ],
+  "Movies featuring Audrey Tautou": [
+    "The Da Vinci Code"
+  ],
+  "Movies featuring Daniel Craig": [
+    "The Girl with the Dragon Tattoo"
+  ],
+  "Movies featuring Rooney Mara": [
+    "The Girl with the Dragon Tattoo"
   ],
   "Movies featuring Neil Patrick Harris": [
     "Gone Girl"
@@ -1019,14 +1055,20 @@
   "Movies featuring Scott Glenn": [
     "The Silence of the Lambs"
   ],
+  "Movies directed by Tod Browning": [
+    "Dracula"
+  ],
+  "Movies featuring Bela Lugosi": [
+    "Dracula"
+  ],
+  "Movies directed by James Whale": [
+    "Frankenstein"
+  ],
   "Movies directed by Alfonso Cuarón": [
     "Harry Potter and the Prisoner of Azkaban"
   ],
   "Movies directed by Kevin Reynolds": [
     "Robin Hood: Prince of Thieves"
-  ],
-  "Movies directed by Tim Burton": [
-    "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
   "Movies featuring Andy Garcia": [
     "The Godfather Part III"
@@ -1283,9 +1325,6 @@
   "Movies featuring John David Washington": [
     "Tenet"
   ],
-  "Movies featuring Robert Pattinson": [
-    "Tenet"
-  ],
   "Movies directed by Michael Spierig": [
     "Predestination"
   ],
@@ -1526,9 +1565,6 @@
   "Movies directed by Chuck Jones": [
     "How the Grinch Stole Christmas"
   ],
-  "Movies featuring Boris Karloff": [
-    "How the Grinch Stole Christmas"
-  ],
   "Movies directed by Scott Mosier": [
     "The Grinch"
   ],
@@ -1723,9 +1759,6 @@
   ],
   "Movies featuring Michael York": [
     "Cabaret"
-  ],
-  "Movies directed by Baz Luhrmann": [
-    "Moulin Rouge!"
   ],
   "Movies featuring Nicole Kidman": [
     "Moulin Rouge!"
@@ -2780,9 +2813,6 @@
   "Movies directed by Matthew Vaughn": [
     "X-Men: First Class"
   ],
-  "Movies featuring Jennifer Lawrence": [
-    "X-Men: First Class"
-  ],
   "Movies directed by Sergio Leone": [
     "The Good, the Bad and the Ugly"
   ],
@@ -2913,6 +2943,10 @@
   "Norse Gods": [
     "Loki",
     "Thor"
+  ],
+  "Movies featuring Danny Glover": [
+    "Saw",
+    "The Color Purple"
   ],
   "Movies featuring Danny DeVito": [
     "Hercules",
@@ -3230,10 +3264,6 @@
     "The Princess and the Frog",
     "The Thing"
   ],
-  "Movies featuring Oprah Winfrey": [
-    "The Princess and the Frog",
-    "A Wrinkle in Time"
-  ],
   "Movies featuring Ron Perlman": [
     "Tangled",
     "Alien: Resurrection"
@@ -3262,10 +3292,6 @@
     "Ran",
     "Dreams"
   ],
-  "Movies directed by John Huston": [
-    "The Maltese Falcon",
-    "Annie"
-  ],
   "Movies featuring Shelley Duvall": [
     "The Shining",
     "Time Bandits"
@@ -3273,6 +3299,14 @@
   "Movies directed by Victor Fleming": [
     "Gone with the Wind",
     "The Wizard of Oz"
+  ],
+  "Movies featuring Gregory Peck": [
+    "To Kill a Mockingbird",
+    "Moby Dick"
+  ],
+  "Movies directed by Baz Luhrmann": [
+    "The Great Gatsby",
+    "Moulin Rouge!"
   ],
   "Movies featuring Maggie Smith": [
     "Harry Potter and the Sorcerer's Stone",
@@ -3282,9 +3316,25 @@
     "The Odyssey",
     "The Iliad"
   ],
+  "Movies featuring Jennifer Lawrence": [
+    "The Hunger Games",
+    "X-Men: First Class"
+  ],
+  "Movies featuring Robert Pattinson": [
+    "Twilight",
+    "Tenet"
+  ],
   "Mystery Stories": [
     "The Da Vinci Code",
     "The Secret Garden"
+  ],
+  "Movies featuring Boris Karloff": [
+    "Frankenstein",
+    "How the Grinch Stole Christmas"
+  ],
+  "Movies directed by Tim Burton": [
+    "Alice's Adventures in Wonderland",
+    "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
   "Movies featuring Gary Oldman": [
     "Harry Potter and the Prisoner of Azkaban",
@@ -3756,11 +3806,6 @@
     "Annapurna",
     "Nepal"
   ],
-  "Movies directed by Ron Howard": [
-    "Apollo 13",
-    "Solo",
-    "A Beautiful Mind"
-  ],
   "Nobel Prize Winners": [
     "Einstein",
     "Marie Curie",
@@ -4006,6 +4051,11 @@
     "The Artist",
     "Monsters University"
   ],
+  "Movies featuring Oprah Winfrey": [
+    "The Princess and the Frog",
+    "The Color Purple",
+    "A Wrinkle in Time"
+  ],
   "J.R.R. Tolkien": [
     "The Lord of the Rings",
     "The Hobbit",
@@ -4020,6 +4070,11 @@
     "High and Low",
     "Ran",
     "Kagemusha"
+  ],
+  "Movies directed by John Huston": [
+    "The Maltese Falcon",
+    "Moby Dick",
+    "Annie"
   ],
   "Movies featuring Ben Affleck": [
     "Gone Girl",
@@ -4055,11 +4110,6 @@
     "Love Actually",
     "About Time",
     "Four Weddings and a Funeral"
-  ],
-  "Movies featuring Helena Bonham Carter": [
-    "Sweeney Todd: The Demon Barber of Fleet Street",
-    "The King's Speech",
-    "Fight Club"
   ],
   "Movies featuring Diane Keaton": [
     "The Godfather Part III",
@@ -4122,11 +4172,6 @@
     "A Beautiful Mind"
   ],
   "Movies directed by Gore Verbinski": [
-    "Pirates of the Caribbean: The Curse of the Black Pearl",
-    "Pirates of the Caribbean: Dead Man's Chest",
-    "Pirates of the Caribbean: At World's End"
-  ],
-  "Movies featuring Keira Knightley": [
     "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Pirates of the Caribbean: Dead Man's Chest",
     "Pirates of the Caribbean: At World's End"
