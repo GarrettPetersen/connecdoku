@@ -45,18 +45,20 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
       text-align:center;letter-spacing:1px;color:#222}
 .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
 @media (max-width: 768px) {
-  .grid { gap: 6px; }
+  .grid { gap: 4px; }
+  .grid { grid-template-columns: 1fr 1fr 1fr 1fr 0.8fr; } /* Make row headers narrower */
 }
 .tile,.hdr{border:2px solid var(--tile-b);border-radius:12px;box-sizing:border-box}
 .tile{background:var(--tile);padding:6px 8px;display:flex;align-items:center;
       justify-content:center;min-height:90px;text-align:center;cursor:pointer;
       user-select:none;transition:background-color .3s ease}
 @media (max-width: 768px) {
-  .tile { min-height: 70px; padding: 4px 6px; font-size: 14px; }
+  .tile { min-height: 65px; padding: 3px 4px; font-size: 13px; }
 }
 .hdr{min-height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:filter .2s ease;text-align:center;white-space:normal;word-spacing:normal}
 @media (max-width: 768px) {
   .hdr { min-height: 28px; font-size: 14px; text-align: center; white-space: normal; word-spacing: normal; }
+  .hdr[data-row] { min-width: 50px; padding: 2px 4px; } /* Compact row headers for mobile */
 }
 .hdr.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
 .hdr:hover{filter:brightness(0.9)}
@@ -81,8 +83,43 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 .tile.row-confirming{background:#e1f5fe !important;border-color:#03a9f4 !important}
 .tile.col-confirming{background:#e1f5fe !important;border-color:#03a9f4 !important}
 .confirm-btn{color:#1976d2 !important;font-weight:bold !important;font-size:14px !important}
+@media (max-width: 768px) {
+  .confirm-btn{font-size:11px !important}
+}
 .arrow-btn{font-size:18px !important;font-weight:bold !important;transition:all .2s ease !important}
 .arrow-btn:hover{transform:scale(1.1) !important}
+
+/* Disabled header message styles */
+.disabled-message{
+  position:absolute;
+  background:#333;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:6px;
+  font-size:14px;
+  font-weight:500;
+  z-index:100;
+  pointer-events:none;
+  opacity:0;
+  transform:translateY(-10px);
+  transition:opacity .2s ease,transform .2s ease;
+  white-space:nowrap;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+.disabled-message.show{
+  opacity:1;
+  transform:translateY(0);
+}
+.disabled-message::after{
+  content:'';
+  position:absolute;
+  bottom:-4px;
+  left:50%;
+  transform:translateX(-50%);
+  border-left:4px solid transparent;
+  border-right:4px solid transparent;
+  border-top:4px solid #333;
+}
 
 @keyframes pop{0%{transform:scale(.9)}70%{transform:scale(1.05)}100%{transform:scale(1)}}
 @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}
@@ -167,6 +204,7 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
       <li><strong>Confirm guesses:</strong> The arrow changes to "confirm" and highlights the row/column. Click "confirm" to submit your guess</li>
       <li><strong>Correct guesses:</strong> Lock in place with a color (green → yellow → orange based on strikes)</li>
       <li><strong>Wrong guesses:</strong> Add a strike (❌) — 3 strikes and you lose!</li>
+      <li><strong>Solving order:</strong> When you solve 3 rows, you must complete the puzzle by solving columns, and vice versa</li>
     </ul>
     
     <p><strong>Auto-alignment:</strong> When you solve multiple rows, they automatically rearrange to align with each other, revealing hints about the column categories. The same happens with columns!</p>
@@ -617,6 +655,12 @@ function init(puz){
       const r=h.dataset.row!==undefined?+h.dataset.row:null;
       const c=h.dataset.col!==undefined?+h.dataset.col:null;
       
+      // Check if header is disabled and show helpful message
+      if(h.classList.contains('disabled')){
+        showDisabledMessage(h, r !== null ? 'row' : 'col');
+        return;
+      }
+      
       // If we're already in confirmation mode for a different header
       if(confirmingHeader && confirmingHeader !== h){
         // Cancel the current confirmation first
@@ -730,6 +774,44 @@ function init(puz){
     
     // Execute the actual guess
     checkLine(kind, idx, hdr);
+  }
+
+  function showDisabledMessage(header, dimension) {
+    // Remove any existing message
+    const existingMessage = document.querySelector('.disabled-message');
+    if (existingMessage) {
+      existingMessage.remove();
+    }
+    
+    // Create new message - say the opposite dimension
+    const oppositeDimension = dimension === 'row' ? 'column' : 'row';
+    const message = document.createElement('div');
+    message.className = 'disabled-message';
+    message.textContent = `You must solve a ${oppositeDimension}`;
+    
+    // Position the message above the header
+    const rect = header.getBoundingClientRect();
+    message.style.left = `${rect.left + rect.width/2}px`;
+    message.style.top = `${rect.top - 10}px`;
+    message.style.transform = 'translateX(-50%) translateY(-10px)';
+    
+    // Add to document
+    document.body.appendChild(message);
+    
+    // Show the message
+    setTimeout(() => {
+      message.classList.add('show');
+    }, 10);
+    
+    // Hide after 2 seconds
+    setTimeout(() => {
+      message.classList.remove('show');
+      setTimeout(() => {
+        if (message.parentNode) {
+          message.remove();
+        }
+      }, 200);
+    }, 2000);
   }
 
   /* ---------- solving logic ---------- */
