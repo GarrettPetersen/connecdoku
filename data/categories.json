@@ -12807,7 +12807,6 @@
     "Farewell My Concubine",
     "Fiddler on the Roof",
     "Fight Club",
-    "Film",
     "Finding Nemo",
     "Flight of the Navigator",
     "Forrest Gump",
@@ -13136,8 +13135,14 @@
     "Zootopia",
     "Zulu"
   ],
+  "Movies directed by Aaron Blaise": [
+    "Brother Bear"
+  ],
   "Movies directed by Adam Shankman": [
     "Hairspray"
+  ],
+  "Movies directed by Agnieszka Holland": [
+    "The Secret Garden"
   ],
   "Movies directed by Akira Kurosawa": [
     "Dreams",
@@ -13172,10 +13177,14 @@
   "Movies directed by Alfred Hitchcock": [
     "Rear Window"
   ],
+  "Movies directed by Andrea Arnold": [
+    "Wuthering Heights"
+  ],
   "Movies directed by Andrew Davis": [
     "Holes"
   ],
   "Movies directed by Andrew Stanton": [
+    "Finding Nemo",
     "WALL-E"
   ],
   "Movies directed by Andrzej Bartkowiak": [
@@ -13213,6 +13222,9 @@
     "Pinnochio",
     "Pinocchio"
   ],
+  "Movies directed by Bernard L. Kowalski": [
+    "Krakatoa"
+  ],
   "Movies directed by Bernardo Bertolucci": [
     "The Last Emperor"
   ],
@@ -13228,6 +13240,10 @@
   "Movies directed by Bong Joon-ho": [
     "Parasite"
   ],
+  "Movies directed by Brad Bird": [
+    "Ratatouille",
+    "The Incredibles"
+  ],
   "Movies directed by Brett Ratner": [
     "Red Dragon"
   ],
@@ -13238,6 +13254,7 @@
     "The Muppet Christmas Carol"
   ],
   "Movies directed by Brian Levant": [
+    "Beethoven",
     "Jingle All the Way"
   ],
   "Movies directed by Bruce Beresford": [
@@ -13247,9 +13264,15 @@
     "The Usual Suspects",
     "X-Men: Days of Future Past"
   ],
+  "Movies directed by Byron Howard": [
+    "Zootopia"
+  ],
   "Movies directed by Carol Reed": [
     "Oliver!",
     "The Third Man"
+  ],
+  "Movies directed by Cary Fukunaga": [
+    "Jane Eyre"
   ],
   "Movies directed by Catherine Hardwicke": [
     "Twilight"
@@ -13277,6 +13300,9 @@
   ],
   "Movies directed by Chris Wedge": [
     "Ice Age"
+  ],
+  "Movies directed by Chris Williams": [
+    "Bolt"
   ],
   "Movies directed by Christopher Nolan": [
     "Insomnia",
@@ -13355,6 +13381,14 @@
   "Movies directed by Dianne Jackson": [
     "Snowman"
   ],
+  "Movies directed by Domee Shi": [
+    "Turning Red"
+  ],
+  "Movies directed by Don Hall": [
+    "Big Hero 6",
+    "Raya and the Last Dragon",
+    "Strange World"
+  ],
   "Movies directed by Donald Cammell": [
     "Performance"
   ],
@@ -13366,6 +13400,9 @@
   ],
   "Movies directed by Eli Roth": [
     "Death Wish"
+  ],
+  "Movies directed by Enrico Casarosa": [
+    "Luca"
   ],
   "Movies directed by Eric Bress": [
     "The Butterfly Effect"
@@ -13399,6 +13436,7 @@
     "The Hunger Games"
   ],
   "Movies directed by Gary Trousdale": [
+    "Atlantis",
     "Beauty and the Beast",
     "The Hunchback of Notre Dame"
   ],
@@ -13431,6 +13469,9 @@
   ],
   "Movies directed by Gregory Hoblit": [
     "Frequency"
+  ],
+  "Movies directed by Greta Gerwig": [
+    "Little Women"
   ],
   "Movies directed by Guillermo del Toro": [
     "The Shape of Water"
@@ -13565,6 +13606,14 @@
     "Moby Dick",
     "The Maltese Falcon"
   ],
+  "Movies directed by John Landis": [
+    "Oscar"
+  ],
+  "Movies directed by John Lasseter": [
+    "A Bug's Life",
+    "Cars",
+    "Toy Story"
+  ],
   "Movies directed by John Madden": [
     "Shakespeare in Love"
   ],
@@ -13604,6 +13653,9 @@
   "Movies directed by Kathryn Bigelow": [
     "The Hurt Locker"
   ],
+  "Movies directed by Katsuhiro Otomo": [
+    "Akira"
+  ],
   "Movies directed by Kevin Costner": [
     "Dances with Wolves"
   ],
@@ -13636,7 +13688,11 @@
     "The Village",
     "Unbreakable"
   ],
+  "Movies directed by Mark Andrews": [
+    "Brave"
+  ],
   "Movies directed by Mark Dindal": [
+    "Chicken Little",
     "The Emperor's New Groove"
   ],
   "Movies directed by Martin Brest": [
@@ -13684,6 +13740,9 @@
   ],
   "Movies directed by Michel Hazanavicius": [
     "The Artist"
+  ],
+  "Movies directed by Mick Jackson": [
+    "Volcano"
   ],
   "Movies directed by Mike Gabriel": [
     "Pocahontas"
@@ -13739,11 +13798,17 @@
   "Movies directed by Paul Haggis": [
     "Crash"
   ],
+  "Movies directed by Paul W.S. Anderson": [
+    "Pompeii"
+  ],
   "Movies directed by Penny Marshall": [
     "Big"
   ],
   "Movies directed by Pete Docter": [
-    "Soul"
+    "Inside Out",
+    "Monsters Inc",
+    "Soul",
+    "Up"
   ],
   "Movies directed by Pete Hewitt": [
     "Bill & Ted's Bogus Journey"
@@ -13768,8 +13833,14 @@
   "Movies directed by Peter Ramsey": [
     "Rise of the Guardians"
   ],
+  "Movies directed by Peter Sohn": [
+    "Elemental"
+  ],
   "Movies directed by Peter Spierig": [
     "Predestination"
+  ],
+  "Movies directed by Phillip Noyce": [
+    "Silver"
   ],
   "Movies directed by Quentin Tarantino": [
     "Death Proof",
@@ -13794,6 +13865,9 @@
   "Movies directed by Rian Johnson": [
     "Looper",
     "The Last Jedi"
+  ],
+  "Movies directed by Rich Moore": [
+    "Wreck-It Ralph"
   ],
   "Movies directed by Richard Attenborough": [
     "Gandhi"
@@ -13878,13 +13952,17 @@
     "Moana",
     "The Great Mouse Detective",
     "The Little Mermaid",
-    "The Princess and the Frog"
+    "The Princess and the Frog",
+    "Treasure Planet"
   ],
   "Movies directed by Ron Howard": [
     "A Beautiful Mind",
     "Apollo 13",
     "Solo",
     "The Da Vinci Code"
+  ],
+  "Movies directed by Ronald Neame": [
+    "Poseidon"
   ],
   "Movies directed by Sam Mendes": [
     "American Beauty"
@@ -13928,6 +14006,7 @@
     "The Shining"
   ],
   "Movies directed by Stephen Anderson": [
+    "Meet the Robinsons",
     "Winnie the Pooh"
   ],
   "Movies directed by Stephen Herek": [
@@ -13997,6 +14076,9 @@
   "Movies directed by Wes Anderson": [
     "Moonrise Kingdom",
     "The Grand Budapest Hotel"
+  ],
+  "Movies directed by Will Finn": [
+    "Home on the Range"
   ],
   "Movies directed by William Friedkin": [
     "The Exorcist",
@@ -14099,6 +14181,9 @@
   "Movies featuring Alanna Ubach": [
     "Coco"
   ],
+  "Movies featuring Albert Brooks": [
+    "Finding Nemo"
+  ],
   "Movies featuring Albert Finney": [
     "Annie"
   ],
@@ -14130,6 +14215,9 @@
   "Movies featuring Amy Adams": [
     "Arrival",
     "Her"
+  ],
+  "Movies featuring Amy Poehler": [
+    "Inside Out"
   ],
   "Movies featuring Amy Smart": [
     "The Butterfly Effect"
@@ -14181,6 +14269,9 @@
   "Movies featuring Anne Hathaway": [
     "Interstellar",
     "Les Misérables"
+  ],
+  "Movies featuring Anne Heche": [
+    "Volcano"
   ],
   "Movies featuring Annette Bening": [
     "American Beauty"
@@ -14245,6 +14336,9 @@
   "Movies featuring Auli'i Cravalho": [
     "Moana"
   ],
+  "Movies featuring Awkwafina": [
+    "Raya and the Last Dragon"
+  ],
   "Movies featuring BD Wong": [
     "Mulan"
   ],
@@ -14302,6 +14396,9 @@
   "Movies featuring Beyoncé": [
     "Dreamgirls"
   ],
+  "Movies featuring Bill Hader": [
+    "Inside Out"
+  ],
   "Movies featuring Bill Murray": [
     "Ghostbusters",
     "Ghostbusters II",
@@ -14329,6 +14426,7 @@
     "Bad Santa"
   ],
   "Movies featuring Billy Crystal": [
+    "Monsters Inc",
     "Monsters University"
   ],
   "Movies featuring Billy Dee Williams": [
@@ -14358,6 +14456,9 @@
   "Movies featuring Bonnie Bedelia": [
     "Die Hard",
     "Die Hard 2"
+  ],
+  "Movies featuring Bonnie Hunt": [
+    "Beethoven"
   ],
   "Movies featuring Boris Karloff": [
     "Frankenstein",
@@ -14494,6 +14595,9 @@
   "Movies featuring Charles Durning": [
     "Dog Day Afternoon"
   ],
+  "Movies featuring Charles Grodin": [
+    "Beethoven"
+  ],
   "Movies featuring Charles Hallahan": [
     "Dante's Peak"
   ],
@@ -14579,7 +14683,8 @@
   "Movies featuring Christopher Plummer": [
     "Somewhere in Time",
     "The Lake House",
-    "The Sound of Music"
+    "The Sound of Music",
+    "Up"
   ],
   "Movies featuring Christopher Reeve": [
     "Somewhere in Time"
@@ -14618,6 +14723,12 @@
   "Movies featuring Craig Robinson": [
     "Hot Tub Time Machine"
   ],
+  "Movies featuring Craig T. Nelson": [
+    "The Incredibles"
+  ],
+  "Movies featuring Cree Summer": [
+    "Atlantis"
+  ],
   "Movies featuring Daisy Ridley": [
     "The Force Awakens",
     "The Last Jedi",
@@ -14630,6 +14741,9 @@
   ],
   "Movies featuring Daniel Craig": [
     "The Girl with the Dragon Tattoo"
+  ],
+  "Movies featuring Daniel Hansen": [
+    "Meet the Robinsons"
   ],
   "Movies featuring Daniel Radcliffe": [
     "Harry Potter and the Chamber of Secrets",
@@ -14664,6 +14778,9 @@
   ],
   "Movies featuring Daryl Hannah": [
     "Kill Bill: Volume 2"
+  ],
+  "Movies featuring Dave Foley": [
+    "A Bug's Life"
   ],
   "Movies featuring Daveigh Chase": [
     "Lilo & Stitch"
@@ -14748,6 +14865,9 @@
   "Movies featuring Dev Patel": [
     "Slumdog Millionaire"
   ],
+  "Movies featuring Diane Baker": [
+    "Krakatoa"
+  ],
   "Movies featuring Diane Guerrero": [
     "Encanto"
   ],
@@ -14817,6 +14937,9 @@
   "Movies featuring Eartha Kitt": [
     "The Emperor's New Groove"
   ],
+  "Movies featuring Ed Asner": [
+    "Up"
+  ],
   "Movies featuring Ed Harris": [
     "A Beautiful Mind"
   ],
@@ -14883,6 +15006,9 @@
   "Movies featuring Ellen Burstyn": [
     "The Exorcist"
   ],
+  "Movies featuring Ellen DeGeneres": [
+    "Finding Nemo"
+  ],
   "Movies featuring Ellen Greene": [
     "Little Shop of Horrors"
   ],
@@ -14899,15 +15025,20 @@
     "Mary Poppins Returns",
     "Oppenheimer"
   ],
+  "Movies featuring Emily Browning": [
+    "Pompeii"
+  ],
   "Movies featuring Emma Stone": [
     "Birdman",
     "La La Land"
   ],
   "Movies featuring Emma Thompson": [
+    "Brave",
     "Howard's End",
     "Love Actually",
     "Sense and Sensibility",
-    "The Remains of the Day"
+    "The Remains of the Day",
+    "Treasure Planet"
   ],
   "Movies featuring Emma Watson": [
     "Harry Potter and the Chamber of Secrets",
@@ -14917,7 +15048,8 @@
     "Harry Potter and the Half-Blood Prince",
     "Harry Potter and the Order of the Phoenix",
     "Harry Potter and the Prisoner of Azkaban",
-    "Harry Potter and the Sorcerer's Stone"
+    "Harry Potter and the Sorcerer's Stone",
+    "Little Women"
   ],
   "Movies featuring Emmy Rossum": [
     "The Phantom of the Opera"
@@ -14932,7 +15064,8 @@
     "Pokemon"
   ],
   "Movies featuring Ernest Borgnine": [
-    "Escape from New York"
+    "Escape from New York",
+    "Poseidon"
   ],
   "Movies featuring Ethan Hawke": [
     "Predestination"
@@ -14973,6 +15106,9 @@
   "Movies featuring Fernando Rey": [
     "The French Connection"
   ],
+  "Movies featuring Florence Pugh": [
+    "Little Women"
+  ],
   "Movies featuring Forest Whitaker": [
     "Arrival",
     "Rogue One",
@@ -14998,6 +15134,9 @@
   "Movies featuring Gabrielle Anwar": [
     "Scent of a Woman"
   ],
+  "Movies featuring Gabrielle Union": [
+    "Strange World"
+  ],
   "Movies featuring Gael García Bernal": [
     "Coco"
   ],
@@ -15009,6 +15148,7 @@
     "The Fifth Element"
   ],
   "Movies featuring Gene Hackman": [
+    "Poseidon",
     "The French Connection",
     "Unforgiven"
   ],
@@ -15037,6 +15177,9 @@
   ],
   "Movies featuring Gerard Butler": [
     "The Phantom of the Opera"
+  ],
+  "Movies featuring Ginnifer Goodwin": [
+    "Zootopia"
   ],
   "Movies featuring Glenn Close": [
     "Tarzan"
@@ -15110,6 +15253,9 @@
   "Movies featuring Henry Thomas": [
     "E.T."
   ],
+  "Movies featuring Heydon Prowse": [
+    "The Secret Garden"
+  ],
   "Movies featuring Hilary Mason": [
     "Don't Look Now"
   ],
@@ -15118,7 +15264,8 @@
     "Million Dollar Baby"
   ],
   "Movies featuring Holly Hunter": [
-    "Copycat"
+    "Copycat",
+    "The Incredibles"
   ],
   "Movies featuring Hope Lange": [
     "Death Wish"
@@ -15150,6 +15297,7 @@
     "Get Carter"
   ],
   "Movies featuring Ian Holm": [
+    "Ratatouille",
     "The Madness of King George"
   ],
   "Movies featuring Ian McDiarmid": [
@@ -15188,6 +15336,9 @@
   "Movies featuring Jack Black": [
     "The Holiday"
   ],
+  "Movies featuring Jack Dylan Grazer": [
+    "Luca"
+  ],
   "Movies featuring Jack Hawkins": [
     "The Bridge on the River Kwai",
     "Zulu"
@@ -15203,12 +15354,16 @@
     "The Departed",
     "The Shining"
   ],
+  "Movies featuring Jacob Tremblay": [
+    "Luca"
+  ],
   "Movies featuring Jai Courtney": [
     "A Good Day to Die Hard"
   ],
   "Movies featuring Jake Gyllenhaal": [
     "Donnie Darko",
-    "Source Code"
+    "Source Code",
+    "Strange World"
   ],
   "Movies featuring Jake Johnson": [
     "Safety Not Guaranteed"
@@ -15228,6 +15383,9 @@
   "Movies featuring James Fox": [
     "Performance",
     "The Remains of the Day"
+  ],
+  "Movies featuring James Howson": [
+    "Wuthering Heights"
   ],
   "Movies featuring James Levine": [
     "Fantasia 2000"
@@ -15264,6 +15422,9 @@
   ],
   "Movies featuring Jared Gilman": [
     "Moonrise Kingdom"
+  ],
+  "Movies featuring Jason Bateman": [
+    "Zootopia"
   ],
   "Movies featuring Javier Bardem": [
     "No Country for Old Men",
@@ -15306,6 +15467,9 @@
     "Arrival",
     "The Hurt Locker"
   ],
+  "Movies featuring Jeremy Suarez": [
+    "Brother Bear"
+  ],
   "Movies featuring Jerry Orbach": [
     "Beauty and the Beast"
   ],
@@ -15337,6 +15501,9 @@
   "Movies featuring Joan Chen": [
     "The Last Emperor"
   ],
+  "Movies featuring Joan Cusack": [
+    "Chicken Little"
+  ],
   "Movies featuring Joan Greenwood": [
     "Kind Hearts and Coronets"
   ],
@@ -15344,6 +15511,7 @@
     "Britannia Hospital"
   ],
   "Movies featuring Joaquin Phoenix": [
+    "Brother Bear",
     "Gladiator",
     "Her",
     "The Village"
@@ -15377,6 +15545,9 @@
     "The Last Jedi",
     "The Rise of Skywalker"
   ],
+  "Movies featuring John C. Reilly": [
+    "Wreck-It Ralph"
+  ],
   "Movies featuring John Cameron Mitchell": [
     "Hedwig and the Angry Inch"
   ],
@@ -15403,6 +15574,7 @@
     "Scrooged"
   ],
   "Movies featuring John Goodman": [
+    "Monsters Inc",
     "Monsters University",
     "The Artist",
     "The Emperor's New Groove"
@@ -15434,6 +15606,7 @@
     "Serpico"
   ],
   "Movies featuring John Travolta": [
+    "Bolt",
     "Grease",
     "Hairspray",
     "Pulp Fiction"
@@ -15472,7 +15645,8 @@
     "Shakespeare in Love"
   ],
   "Movies featuring Joseph Gordon-Levitt": [
-    "Looper"
+    "Looper",
+    "Treasure Planet"
   ],
   "Movies featuring Josh Brolin": [
     "No Country for Old Men"
@@ -15491,6 +15665,7 @@
     "The Santa Clause"
   ],
   "Movies featuring Judi Dench": [
+    "Home on the Range",
     "Shakespeare in Love"
   ],
   "Movies featuring Judy Garland": [
@@ -15531,6 +15706,9 @@
   "Movies featuring Karl Urban": [
     "Doom"
   ],
+  "Movies featuring Kate Maberly": [
+    "The Secret Garden"
+  ],
   "Movies featuring Kate Winslet": [
     "Avatar: The Way of Water",
     "Sense and Sensibility",
@@ -15554,7 +15732,8 @@
     "The Ladykillers"
   ],
   "Movies featuring Kaya Scodelario": [
-    "Pirates of the Caribbean: Dead Men Tell No Tales"
+    "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "Wuthering Heights"
   ],
   "Movies featuring Ke Huy Quan": [
     "Everything Everywhere All at Once"
@@ -15579,6 +15758,12 @@
     "The Princess and the Frog",
     "The Thing"
   ],
+  "Movies featuring Kelly Macdonald": [
+    "Brave"
+  ],
+  "Movies featuring Kelly Marie Tran": [
+    "Raya and the Last Dragon"
+  ],
   "Movies featuring Kenneth Branagh": [
     "Othello"
   ],
@@ -15594,8 +15779,12 @@
     "The Ice Storm"
   ],
   "Movies featuring Kevin Spacey": [
+    "A Bug's Life",
     "American Beauty",
     "The Usual Suspects"
+  ],
+  "Movies featuring Kit Harington": [
+    "Pompeii"
   ],
   "Movies featuring Klaus Maria Brandauer": [
     "Out of Africa"
@@ -15639,6 +15828,9 @@
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III"
+  ],
+  "Movies featuring Leah Lewis": [
+    "Elemental"
   ],
   "Movies featuring Lee Sun-kyun": [
     "Parasite"
@@ -15778,6 +15970,9 @@
     "If....",
     "O Lucky Man!"
   ],
+  "Movies featuring Mamoudou Athie": [
+    "Elemental"
+  ],
   "Movies featuring Mandy Moore": [
     "Tangled"
   ],
@@ -15868,6 +16063,9 @@
   "Movies featuring Max von Sydow": [
     "The Exorcist"
   ],
+  "Movies featuring Maximilian Schell": [
+    "Krakatoa"
+  ],
   "Movies featuring Meg Ryan": [
     "Kate & Leopold"
   ],
@@ -15893,6 +16091,9 @@
     "Out of Africa",
     "The Deer Hunter"
   ],
+  "Movies featuring Mia Wasikowska": [
+    "Jane Eyre"
+  ],
   "Movies featuring Michael Bates": [
     "A Clockwork Orange"
   ],
@@ -15912,11 +16113,13 @@
   ],
   "Movies featuring Michael Fassbender": [
     "12 Years a Slave",
+    "Jane Eyre",
     "The Killer",
     "X-Men: Days of Future Past",
     "X-Men: First Class"
   ],
   "Movies featuring Michael J. Fox": [
+    "Atlantis",
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III"
@@ -15971,6 +16174,9 @@
   ],
   "Movies featuring Miguel Ferrer": [
     "Mulan"
+  ],
+  "Movies featuring Miley Cyrus": [
+    "Bolt"
   ],
   "Movies featuring Milla Jovovich": [
     "The Fifth Element"
@@ -16082,10 +16288,16 @@
     "Pirates of the Caribbean: The Curse of the Black Pearl",
     "Troy"
   ],
+  "Movies featuring Ornella Muti": [
+    "Oscar"
+  ],
   "Movies featuring Orson Welles": [
     "Citizen Kane",
     "Othello",
     "The Third Man"
+  ],
+  "Movies featuring Owen Wilson": [
+    "Cars"
   ],
   "Movies featuring Paige O'Hara": [
     "Beauty and the Beast"
@@ -16110,6 +16322,12 @@
   ],
   "Movies featuring Patrick Wilson": [
     "The Phantom of the Opera"
+  ],
+  "Movies featuring Patton Oswalt": [
+    "Ratatouille"
+  ],
+  "Movies featuring Paul Newman": [
+    "Cars"
   ],
   "Movies featuring Paul Reubens": [
     "Flight of the Navigator"
@@ -16335,6 +16553,9 @@
   "Movies featuring Rooney Mara": [
     "The Girl with the Dragon Tattoo"
   ],
+  "Movies featuring Rosalie Chiang": [
+    "Turning Red"
+  ],
   "Movies featuring Rosamund Pike": [
     "Doom",
     "Gone Girl"
@@ -16345,6 +16566,9 @@
   ],
   "Movies featuring Rose McGowan": [
     "Death Proof"
+  ],
+  "Movies featuring Roseanne Barr": [
+    "Home on the Range"
   ],
   "Movies featuring Rosemary Clooney": [
     "White Christmas"
@@ -16377,6 +16601,9 @@
   "Movies featuring Ryan Gosling": [
     "La La Land"
   ],
+  "Movies featuring Ryan Potter": [
+    "Big Hero 6"
+  ],
   "Movies featuring Sally Hawkins": [
     "The Shape of Water"
   ],
@@ -16404,8 +16631,15 @@
     "Crash",
     "The Lake House"
   ],
+  "Movies featuring Sandra Oh": [
+    "Turning Red"
+  ],
   "Movies featuring Saoirse Ronan": [
+    "Little Women",
     "The Grand Budapest Hotel"
+  ],
+  "Movies featuring Sarah Silverman": [
+    "Wreck-It Ralph"
   ],
   "Movies featuring Sarah Snook": [
     "Predestination"
@@ -16416,6 +16650,9 @@
   ],
   "Movies featuring Scatman Crothers": [
     "The Aristocats"
+  ],
+  "Movies featuring Scott Adsit": [
+    "Big Hero 6"
   ],
   "Movies featuring Scott Glenn": [
     "The Silence of the Lambs"
@@ -16446,6 +16683,9 @@
   ],
   "Movies featuring Shani Wallis": [
     "Oliver!"
+  ],
+  "Movies featuring Sharon Stone": [
+    "Silver"
   ],
   "Movies featuring Shelley Duvall": [
     "The Shining",
@@ -16545,6 +16785,7 @@
     "The Black Cauldron"
   ],
   "Movies featuring Sylvester Stallone": [
+    "Oscar",
     "Rocky"
   ],
   "Movies featuring Sylvia Miles": [
@@ -16603,7 +16844,8 @@
     "Galaxy Quest",
     "The Santa Clause",
     "The Santa Clause 2",
-    "The Santa Clause 3: The Escape Clause"
+    "The Santa Clause 3: The Escape Clause",
+    "Toy Story"
   ],
   "Movies featuring Tim Curry": [
     "Clue",
@@ -16640,7 +16882,8 @@
     "Forrest Gump",
     "The Da Vinci Code",
     "The Green Mile",
-    "The Polar Express"
+    "The Polar Express",
+    "Toy Story"
   ],
   "Movies featuring Tom Hardy": [
     "The Revenant"
@@ -16653,7 +16896,8 @@
     "Alien"
   ],
   "Movies featuring Tommy Lee Jones": [
-    "No Country for Old Men"
+    "No Country for Old Men",
+    "Volcano"
   ],
   "Movies featuring Toni Collette": [
     "The Sixth Sense"
@@ -16775,6 +17019,9 @@
   "Movies featuring Wendy Crewson": [
     "The Santa Clause"
   ],
+  "Movies featuring Wesley Singerman": [
+    "Meet the Robinsons"
+  ],
   "Movies featuring Whoopi Goldberg": [
     "The Color Purple"
   ],
@@ -16792,6 +17039,9 @@
   ],
   "Movies featuring William Atherton": [
     "Die Hard 2"
+  ],
+  "Movies featuring William Baldwin": [
+    "Silver"
   ],
   "Movies featuring William Holden": [
     "The Bridge on the River Kwai"
@@ -16823,6 +17073,9 @@
   ],
   "Movies featuring Zac Efron": [
     "The Greatest Showman"
+  ],
+  "Movies featuring Zach Braff": [
+    "Chicken Little"
   ],
   "Movies featuring Zachary Levi": [
     "Tangled"
