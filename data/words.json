@@ -11380,8 +11380,6 @@
   ],
   "Transnistria": [
     "Breakaway Regions",
-    "Countries",
-    "Countries in Europe",
     "Ends with RIA",
     "Locations in Europe",
     "Place Names",
@@ -11390,8 +11388,6 @@
   ],
   "Abkhazia": [
     "Breakaway Regions",
-    "Countries",
-    "Countries in Asia",
     "Ends with ZIA",
     "Locations in Asia",
     "Place Names",
@@ -11400,8 +11396,6 @@
   ],
   "South Ossetia": [
     "Breakaway Regions",
-    "Countries",
-    "Countries in Asia",
     "Ends with TIA",
     "Locations in Asia",
     "Place Names",
@@ -11410,8 +11404,6 @@
   ],
   "Artsakh": [
     "Breakaway Regions",
-    "Countries",
-    "Countries in Asia",
     "Ends with AKH",
     "Locations in Asia",
     "Place Names",
@@ -25957,6 +25949,7 @@
     "US Presidents"
   ],
   "Palestine": [
+    "Breakaway Regions",
     "Ends with INE",
     "Locations in Asia",
     "Mentioned in We Didn't Start the Fire",
