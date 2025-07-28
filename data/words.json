@@ -848,6 +848,7 @@
     "20th Century",
     "Ends with EIN",
     "Historical Figures",
+    "Mentioned in We Didn't Start the Fire",
     "Modern Figures",
     "Nobel Prize Winners",
     "People",
@@ -855,7 +856,6 @@
     "Real People",
     "Scientists",
     "Starts with EIN",
-    "Things American",
     "Things German"
   ],
   "Feynman": [
@@ -965,6 +965,7 @@
     "Cities in Europe",
     "Ends with LIN",
     "Locations in Europe",
+    "Mentioned in We Didn't Start the Fire",
     "National Capitals",
     "Place Names",
     "Starts with BER",
@@ -1256,6 +1257,11 @@
   "Ford": [
     "1970s",
     "20th Century",
+    "Businesspeople",
+    "Car Brands",
+    "Car Companies",
+    "Cars",
+    "Companies",
     "Ends with ORD",
     "National Leaders",
     "People",
@@ -1779,6 +1785,7 @@
     "Household Items",
     "Large Countries",
     "Locations in Asia",
+    "Mentioned in We Didn't Start the Fire",
     "Modern Countries",
     "Most Populous Countries (Top 10)",
     "Place Names",
@@ -2147,6 +2154,7 @@
     "1960s",
     "20th Century",
     "Ends with EDY",
+    "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
     "Real People",
@@ -3608,6 +3616,7 @@
     "Athletes",
     "Ends with TLE",
     "MLB Players",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Real People",
     "Starts with MAN",
@@ -7327,7 +7336,9 @@
     "Businesspeople",
     "Companies",
     "Ends with LER",
-    "Starts with ROC"
+    "Mentioned in We Didn't Start the Fire",
+    "Starts with ROC",
+    "Things American"
   ],
   "Musk": [
     "Businesspeople",
@@ -9486,6 +9497,7 @@
     "Ends with NON",
     "Former French Colonies",
     "Locations in Asia",
+    "Mentioned in We Didn't Start the Fire",
     "Middle Eastern Countries",
     "Modern Countries",
     "Place Names",
@@ -9899,6 +9911,7 @@
     "Countries with Nuclear Weapons",
     "Ends with REA",
     "Locations in Asia",
+    "Mentioned in We Didn't Start the Fire",
     "Modern Countries",
     "Place Names",
     "Starts with NOR",
@@ -10362,6 +10375,7 @@
     "Countries in Asia",
     "Ends with REA",
     "Locations in Asia",
+    "Mentioned in We Didn't Start the Fire",
     "Modern Countries",
     "Place Names",
     "Starts with SOU",
@@ -11106,6 +11120,7 @@
     "Ends with NGO",
     "Former Belgian Colonies",
     "Locations in Africa",
+    "Mentioned in We Didn't Start the Fire",
     "Place Names",
     "Starts with BEL",
     "Things Congolese"
@@ -12295,6 +12310,7 @@
     "Ends with PAN",
     "Family Stories",
     "Fantasy Stories",
+    "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Movies directed by Clyde Geronimi",
     "Movies featuring Bill Thompson",
@@ -13329,6 +13345,7 @@
     "Books",
     "Coming of Age Stories",
     "Ends with RYE",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with THE",
     "Things American"
   ],
@@ -21514,6 +21531,7 @@
     "Aircraft Carriers",
     "Cold War",
     "Ends with WER",
+    "Mentioned in We Didn't Start the Fire",
     "Military Leaders",
     "Military Ships",
     "National Leaders",
@@ -21555,6 +21573,7 @@
     "Aircraft Carriers",
     "Cold War",
     "Ends with MAN",
+    "Mentioned in We Didn't Start the Fire",
     "Military Ships",
     "National Leaders",
     "People",
@@ -21572,6 +21591,7 @@
     "Aircraft Carriers",
     "Cold War",
     "Ends with GAN",
+    "Mentioned in We Didn't Start the Fire",
     "Military Ships",
     "National Leaders",
     "People",
@@ -21962,6 +21982,7 @@
     "Biographical Stories",
     "Black and White Films",
     "Ends with BIA",
+    "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Movies directed by David Lean",
     "Movies featuring Alec Guinness",
@@ -21976,13 +21997,13 @@
     "1960s",
     "20th Century",
     "Ends with WAI",
+    "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Movies directed by David Lean",
     "Movies featuring Alec Guinness",
     "Movies featuring Jack Hawkins",
     "Movies featuring William Holden",
     "Starts with BRI",
-    "Things American",
     "Things British",
     "War Films",
     "War Stories"
@@ -24335,6 +24356,7 @@
     "Cultural Events",
     "Ends with OCK",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Music Festivals",
     "Starts with WOO",
     "Things American"
@@ -24892,6 +24914,7 @@
     "20th Century",
     "Ends with DAY",
     "Female Names",
+    "Mentioned in We Didn't Start the Fire",
     "Music",
     "Musicians",
     "People",
@@ -24903,6 +24926,7 @@
     "20th Century",
     "Ends with RAY",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "Music",
     "Musicians",
     "People",
@@ -24913,6 +24937,7 @@
     "1950s",
     "20th Century",
     "Ends with FIC",
+    "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Starts with SOU",
     "Things American"
@@ -24922,6 +24947,7 @@
     "20th Century",
     "Ends with GIO",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with JOE",
     "Things American"
@@ -24931,6 +24957,7 @@
     "20th Century",
     "Ends with THY",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with JOE",
@@ -24943,6 +24970,7 @@
     "20th Century",
     "Ends with XON",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
     "Political Figures",
@@ -24954,8 +24982,12 @@
   "Studebaker": [
     "1950s",
     "20th Century",
+    "Car Brands",
+    "Car Companies",
+    "Cars",
+    "Companies",
     "Ends with KER",
-    "People",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with STU",
     "Things American"
   ],
@@ -24963,6 +24995,7 @@
     "1950s",
     "20th Century",
     "Ends with ION",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with TEL",
     "Technology",
     "Things American"
@@ -24972,6 +25005,7 @@
     "20th Century",
     "Ends with ROE",
     "Female Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with MAR",
     "Things American"
@@ -24980,9 +25014,11 @@
     "1950s",
     "20th Century",
     "Ends with OMB",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with H-B",
     "Technology",
-    "Things American"
+    "Things American",
+    "Weapons"
   ],
   "Sugar Ray": [
     "1950s",
@@ -24990,6 +25026,7 @@
     "Athletes",
     "Ends with RAY",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Sports",
     "Starts with SUG",
@@ -25000,6 +25037,7 @@
     "20th Century",
     "Countries",
     "Ends with JOM",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with PAN",
     "Things American"
@@ -25009,6 +25047,7 @@
     "20th Century",
     "Ends with NDO",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with BRA",
     "Things American"
@@ -25017,6 +25056,7 @@
     "1950s",
     "20th Century",
     "Ends with D I",
+    "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Starts with THE",
     "Things American"
@@ -25024,17 +25064,19 @@
   "Vaccine": [
     "Ends with INE",
     "Medical Terms",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with VAC",
-    "Technology"
+    "Technology",
+    "Things American"
   ],
   "Coronation of Elizabeth II": [
     "1950s",
     "20th Century",
     "Ends with  II",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with COR",
-    "Things American",
     "Things British"
   ],
   "Marciano": [
@@ -25043,6 +25085,7 @@
     "Athletes",
     "Ends with ANO",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Sports",
     "Starts with MAR",
@@ -25053,6 +25096,7 @@
     "20th Century",
     "Ends with ACE",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "Music",
     "Musicians",
     "People",
@@ -25063,6 +25107,7 @@
     "1950s",
     "20th Century",
     "Ends with ANA",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with SAN",
     "Things American"
@@ -25072,16 +25117,18 @@
     "20th Century",
     "Ends with LIN",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with JOS",
-    "Things American"
+    "Things Russian"
   ],
   "Malenkov": [
     "1960s",
     "20th Century",
     "Ends with KOV",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with MAL",
@@ -25092,25 +25139,28 @@
     "20th Century",
     "Ends with SER",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with NAS",
-    "Things American"
+    "Things Egyptian"
   ],
   "Prokofiev": [
     "1960s",
     "20th Century",
     "Ends with IEV",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with PRO",
-    "Things American"
+    "Things Russian"
   ],
   "Campanella": [
     "1960s",
     "20th Century",
     "Ends with LLA",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with CAM",
     "Things American"
@@ -25120,6 +25170,7 @@
     "20th Century",
     "Countries",
     "Ends with LOC",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with COM",
     "Things American"
   ],
@@ -25128,6 +25179,7 @@
     "20th Century",
     "Ends with OHN",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with ROY",
@@ -25138,6 +25190,7 @@
     "20th Century",
     "Ends with RON",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with JUA",
@@ -25148,6 +25201,7 @@
     "20th Century",
     "Ends with INI",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with TOS",
     "Things American"
@@ -25156,6 +25210,7 @@
     "1960s",
     "20th Century",
     "Ends with RON",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with DAC",
     "Technology",
     "Things American"
@@ -25165,21 +25220,25 @@
     "20th Century",
     "Ends with PHU",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with BAT",
     "Things American"
   ],
   "Rock Around the Clock": [
     "Ends with OCK",
+    "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Music",
-    "Starts with ROC"
+    "Starts with ROC",
+    "Things American"
   ],
   "1955 World Series": [
-    "1960s",
+    "1950s",
     "20th Century",
     "Ends with IES",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Sports",
     "Sports Events",
     "Starts with 195",
@@ -25190,6 +25249,7 @@
     "20th Century",
     "Ends with ETT",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with DAV",
     "Things American"
@@ -25198,34 +25258,45 @@
     "1960s",
     "20th Century",
     "Ends with DOT",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with BAR",
     "Things American"
   ],
   "Budapest": [
-    "Countries",
+    "Cities",
+    "Cities in Europe",
     "Ends with EST",
-    "Starts with BUD"
+    "Locations in Europe",
+    "Mentioned in We Didn't Start the Fire",
+    "Place Names",
+    "Starts with BUD",
+    "Things Hungarian"
   ],
   "Alabama": [
-    "Countries",
     "Ends with AMA",
+    "Locations in North America",
+    "Mentioned in We Didn't Start the Fire",
+    "Place Names",
     "Starts with ALA",
-    "Things American"
+    "Things American",
+    "US States"
   ],
   "Krushchev": [
     "1960s",
     "20th Century",
     "Ends with HEV",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with KRU",
-    "Things American"
+    "Things Russian"
   ],
   "Peyton Place": [
     "1960s",
     "20th Century",
     "Ends with ACE",
+    "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Starts with PEY",
     "Things American"
@@ -25235,6 +25306,7 @@
     "20th Century",
     "Ends with SIS",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with SUE",
     "Things American"
@@ -25244,6 +25316,7 @@
     "20th Century",
     "Ends with UAC",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with KER",
     "Things American"
@@ -25252,23 +25325,26 @@
     "1960s",
     "20th Century",
     "Ends with NIK",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with SPU",
     "Technology",
-    "Things American"
+    "Things Russian"
   ],
   "Chou En-Lai": [
     "1960s",
     "20th Century",
     "Ends with LAI",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with CHO",
-    "Things American"
+    "Things Chinese"
   ],
   "California Baseball": [
     "1960s",
     "20th Century",
     "Ends with ALL",
+    "Mentioned in We Didn't Start the Fire",
     "Sports",
     "Starts with CAL",
     "Things American"
@@ -25280,6 +25356,7 @@
     "Events",
     "Medical Events",
     "Medical Terms",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with THA",
     "Things American"
   ],
@@ -25288,6 +25365,7 @@
     "20th Century",
     "Ends with LLY",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "Music",
     "Musicians",
     "People",
@@ -25299,6 +25377,7 @@
     "20th Century",
     "Ends with HUR",
     "Epic Films",
+    "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Movies directed by William Wyler",
     "Movies featuring Charlton Heston",
@@ -25312,14 +25391,16 @@
     "1960s",
     "20th Century",
     "Ends with IKA",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with LAI",
     "Technology",
-    "Things American"
+    "Things Russian"
   ],
   "Mafia": [
     "1960s",
     "20th Century",
     "Ends with FIA",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with MAF",
     "Things American"
   ],
@@ -25336,14 +25417,16 @@
     "20th Century",
     "Ends with TRO",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with CAS",
-    "Things American"
+    "Things Cuban"
   ],
   "U-2 Spy Plane Incident": [
     "Ends with ENT",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with U-2",
     "Things American"
@@ -25353,15 +25436,17 @@
     "20th Century",
     "Ends with HEE",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with SYN",
-    "Things American"
+    "Things South Korean"
   ],
   "Payola Scandal": [
     "1960s",
     "20th Century",
     "Ends with DAL",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with PAY",
     "Things American"
   ],
@@ -25370,6 +25455,7 @@
     "20th Century",
     "Ends with KER",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "Music",
     "Musicians",
     "People",
@@ -25381,6 +25467,7 @@
     "20th Century",
     "Ends with CHO",
     "Horror Films",
+    "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Movies directed by Alfred Hitchcock",
     "Movies featuring Anthony Perkins",
@@ -25404,16 +25491,18 @@
     "20th Century",
     "Ends with ANN",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with EIC",
-    "Things American"
+    "Things German"
   ],
   "Stranger in a Strange Land": [
     "1960s",
     "20th Century",
     "Books",
     "Ends with AND",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with STR",
     "Things American"
   ],
@@ -25422,6 +25511,7 @@
     "20th Century",
     "Ends with LAN",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "Music",
     "Musicians",
     "People",
@@ -25433,6 +25523,7 @@
     "20th Century",
     "Ends with ION",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with BAY",
     "Things American"
@@ -25442,6 +25533,7 @@
     "20th Century",
     "Ends with AIR",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with PRO",
     "Things American"
@@ -25451,6 +25543,7 @@
     "20th Century",
     "Ends with ILL",
     "Medical Terms",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with BIR",
     "Things American"
   ],
@@ -25458,6 +25551,7 @@
     "1970s",
     "20th Century",
     "Ends with ION",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with 197",
     "Things American"
   ],
@@ -25466,6 +25560,7 @@
     "20th Century",
     "Ends with ATE",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with WAT",
     "Things American"
@@ -25474,6 +25569,7 @@
     "1970s",
     "20th Century",
     "Ends with OCK",
+    "Mentioned in We Didn't Start the Fire",
     "Music",
     "Music Genres",
     "Starts with PUN",
@@ -25484,6 +25580,7 @@
     "20th Century",
     "Ends with GIN",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Political Figures",
     "Starts with BEG",
@@ -25494,6 +25591,7 @@
     "20th Century",
     "Ends with ING",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with ENT",
     "Things American"
   ],
@@ -25502,6 +25600,7 @@
     "20th Century",
     "Ends with ION",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with IRA",
     "Things American"
@@ -25511,6 +25610,7 @@
     "20th Century",
     "Ends with WAR",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with SOV",
     "Things American"
@@ -25519,6 +25619,7 @@
     "1970s",
     "20th Century",
     "Ends with UNE",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with WHE",
     "TV Shows",
     "Things American"
@@ -25527,6 +25628,7 @@
     "1970s",
     "20th Century",
     "Ends with IDE",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with SAL",
     "Things American"
   ],
@@ -25534,6 +25636,7 @@
     "1970s",
     "20th Century",
     "Ends with SIS",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with FOR",
     "Things American"
   ],
@@ -25541,6 +25644,7 @@
     "1970s",
     "20th Century",
     "Ends with SIS",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with HOM",
     "Things American"
   ],
@@ -25549,6 +25653,7 @@
     "20th Century",
     "Ends with IDS",
     "Medical Terms",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with AID",
     "Technology",
     "Things American"
@@ -25558,6 +25663,7 @@
     "20th Century",
     "Ends with MIC",
     "Medical Terms",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with CRA",
     "Technology",
     "Things American"
@@ -25567,6 +25673,7 @@
     "20th Century",
     "Ends with ETZ",
     "Male Names",
+    "Mentioned in We Didn't Start the Fire",
     "People",
     "Starts with BER",
     "Things American"
@@ -25576,6 +25683,7 @@
     "20th Century",
     "Ends with CRE",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with TIA",
     "Things American"
@@ -25585,6 +25693,7 @@
     "20th Century",
     "Ends with STS",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with 198",
     "Things American"
@@ -25593,6 +25702,7 @@
     "1970s",
     "20th Century",
     "Ends with OLL",
+    "Mentioned in We Didn't Start the Fire",
     "Music",
     "Music Genres",
     "Starts with ROC",
@@ -25603,6 +25713,7 @@
     "20th Century",
     "Ends with ARS",
     "Events",
+    "Mentioned in We Didn't Start the Fire",
     "Starts with COL",
     "Things American"
   ],
@@ -25611,6 +25722,7 @@
     "1820s",
     "19th Century",
     "Ends with ROE",
+    "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
     "Real People",
@@ -25843,5 +25955,14 @@
     "Starts with CLI",
     "Things American",
     "US Presidents"
+  ],
+  "Palestine": [
+    "Ends with INE",
+    "Locations in Asia",
+    "Mentioned in We Didn't Start the Fire",
+    "Place Names",
+    "Roman Empire",
+    "Starts with PAL",
+    "Things Middle Eastern"
   ]
 }
