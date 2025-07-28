@@ -764,8 +764,12 @@
     "Cities in USA",
     "Cold War",
     "Ends with TON",
+    "Historical Figures",
     "Locations in North America",
+    "Military Leaders",
     "Military Ships",
+    "Modern Figures",
+    "Modern Rulers",
     "National Capitals",
     "National Leaders",
     "People",
@@ -1248,15 +1252,10 @@
   ],
   "Ford": [
     "20th Century",
-    "Businesspeople",
-    "Car Brands",
-    "Cars",
-    "Companies",
     "Ends with ORD",
     "National Leaders",
     "People",
     "Real People",
-    "River Crossings",
     "Starts with FOR",
     "Things American",
     "US Presidents"
@@ -2117,11 +2116,11 @@
     "US Presidents"
   ],
   "Roosevelt": [
-    "19th Century",
     "20th Century",
     "Aircraft Carriers",
     "Cold War",
     "Ends with ELT",
+    "Military Leaders",
     "Military Ships",
     "Muppet Characters",
     "National Leaders",
@@ -2178,6 +2177,7 @@
     "Cities in USA",
     "Ends with SON",
     "Locations in North America",
+    "Military Leaders",
     "National Leaders",
     "People",
     "Place Names",
@@ -4107,7 +4107,6 @@
   ],
   "Hoover": [
     "20th Century",
-    "Companies",
     "Ends with VER",
     "National Leaders",
     "People",
@@ -18309,19 +18308,6 @@
     "Starts with NAP",
     "Things French"
   ],
-  "George Washington": [
-    "18th Century",
-    "Ends with TON",
-    "Historical Figures",
-    "Military Leaders",
-    "Modern Figures",
-    "Modern Rulers",
-    "People",
-    "Real People",
-    "Starts with GEO",
-    "Things American",
-    "US Presidents"
-  ],
   "Marie Curie": [
     "19th Century",
     "20th Century",
@@ -21484,14 +21470,20 @@
     "Warships"
   ],
   "Eisenhower": [
+    "20th Century",
     "Aircraft Carriers",
     "Cold War",
     "Ends with WER",
+    "Military Leaders",
     "Military Ships",
+    "National Leaders",
+    "People",
+    "Real People",
     "Ships",
     "Starts with EIS",
     "Things American",
     "US Navy",
+    "US Presidents",
     "Warships"
   ],
   "Carl Vinson": [
@@ -21517,36 +21509,51 @@
     "Warships"
   ],
   "Truman": [
+    "20th Century",
     "Aircraft Carriers",
     "Cold War",
     "Ends with MAN",
     "Military Ships",
+    "National Leaders",
+    "People",
+    "Real People",
     "Ships",
     "Starts with TRU",
     "Things American",
     "US Navy",
+    "US Presidents",
     "Warships"
   ],
   "Reagan": [
+    "20th Century",
     "Aircraft Carriers",
     "Cold War",
     "Ends with GAN",
     "Military Ships",
+    "National Leaders",
+    "People",
+    "Real People",
     "Ships",
     "Starts with REA",
     "Things American",
     "US Navy",
+    "US Presidents",
     "Warships"
   ],
   "Bush": [
+    "20th Century",
     "Aircraft Carriers",
     "Cold War",
     "Ends with USH",
     "Military Ships",
+    "National Leaders",
+    "People",
+    "Real People",
     "Ships",
     "Starts with BUS",
     "Things American",
     "US Navy",
+    "US Presidents",
     "Warships"
   ],
   "Golden Hind": [
@@ -24832,5 +24839,942 @@
     "Starts with LAD",
     "Things British",
     "Tudor Dynasty"
+  ],
+  "Doris Day": [
+    "1950s",
+    "20th Century",
+    "Ends with DAY",
+    "Female Names",
+    "Music",
+    "Musicians",
+    "People",
+    "Starts with DOR",
+    "Things American"
+  ],
+  "Johnnie Ray": [
+    "1950s",
+    "20th Century",
+    "Ends with RAY",
+    "Male Names",
+    "Music",
+    "Musicians",
+    "People",
+    "Starts with JOH",
+    "Things American"
+  ],
+  "South Pacific": [
+    "1950s",
+    "20th Century",
+    "Ends with FIC",
+    "Movies",
+    "Starts with SOU",
+    "Things American"
+  ],
+  "Joe DiMaggio": [
+    "1950s",
+    "20th Century",
+    "Ends with GIO",
+    "Male Names",
+    "People",
+    "Starts with JOE",
+    "Things American"
+  ],
+  "Joe McCarthy": [
+    "1950s",
+    "20th Century",
+    "Ends with THY",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with JOE",
+    "Things American"
+  ],
+  "Nixon": [
+    "1950s",
+    "20th Century",
+    "Ends with XON",
+    "Male Names",
+    "National Leaders",
+    "People",
+    "Political Figures",
+    "Real People",
+    "Starts with NIX",
+    "Things American",
+    "US Presidents"
+  ],
+  "Studebaker": [
+    "1950s",
+    "20th Century",
+    "Ends with KER",
+    "People",
+    "Starts with STU",
+    "Things American"
+  ],
+  "Television": [
+    "1950s",
+    "20th Century",
+    "Ends with ION",
+    "Starts with TEL",
+    "Technology",
+    "Things American"
+  ],
+  "Marilyn Monroe": [
+    "1950s",
+    "20th Century",
+    "Ends with ROE",
+    "Female Names",
+    "People",
+    "Starts with MAR",
+    "Things American"
+  ],
+  "H-bomb": [
+    "1950s",
+    "20th Century",
+    "Ends with OMB",
+    "Starts with H-B",
+    "Technology",
+    "Things American"
+  ],
+  "Sugar Ray": [
+    "1950s",
+    "20th Century",
+    "Athletes",
+    "Ends with RAY",
+    "Male Names",
+    "People",
+    "Sports",
+    "Starts with SUG",
+    "Things American"
+  ],
+  "Panmunjom": [
+    "1950s",
+    "20th Century",
+    "Countries",
+    "Ends with JOM",
+    "People",
+    "Starts with PAN",
+    "Things American"
+  ],
+  "Brando": [
+    "1950s",
+    "20th Century",
+    "Ends with NDO",
+    "Male Names",
+    "People",
+    "Starts with BRA",
+    "Things American"
+  ],
+  "The King and I": [
+    "1950s",
+    "20th Century",
+    "Ends with D I",
+    "Movies",
+    "Starts with THE",
+    "Things American"
+  ],
+  "Vaccine": [
+    "Ends with INE",
+    "Medical Terms",
+    "Starts with VAC",
+    "Technology"
+  ],
+  "Coronation of Elizabeth II": [
+    "1950s",
+    "20th Century",
+    "Ends with  II",
+    "Events",
+    "Political Events",
+    "Starts with COR",
+    "Things American",
+    "Things British"
+  ],
+  "Marciano": [
+    "1950s",
+    "20th Century",
+    "Athletes",
+    "Ends with ANO",
+    "Male Names",
+    "People",
+    "Sports",
+    "Starts with MAR",
+    "Things American"
+  ],
+  "Liberace": [
+    "1950s",
+    "20th Century",
+    "Ends with ACE",
+    "Male Names",
+    "Music",
+    "Musicians",
+    "People",
+    "Starts with LIB",
+    "Things American"
+  ],
+  "Santayana": [
+    "1950s",
+    "20th Century",
+    "Ends with ANA",
+    "People",
+    "Starts with SAN",
+    "Things American"
+  ],
+  "Joseph Stalin": [
+    "1960s",
+    "20th Century",
+    "Ends with LIN",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with JOS",
+    "Things American"
+  ],
+  "Malenkov": [
+    "1960s",
+    "20th Century",
+    "Ends with KOV",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with MAL",
+    "Things American"
+  ],
+  "Nasser": [
+    "1960s",
+    "20th Century",
+    "Ends with SER",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with NAS",
+    "Things American"
+  ],
+  "Prokofiev": [
+    "1960s",
+    "20th Century",
+    "Ends with IEV",
+    "Male Names",
+    "People",
+    "Starts with PRO",
+    "Things American"
+  ],
+  "Campanella": [
+    "1960s",
+    "20th Century",
+    "Ends with LLA",
+    "Male Names",
+    "People",
+    "Starts with CAM",
+    "Things American"
+  ],
+  "Communist Bloc": [
+    "1960s",
+    "20th Century",
+    "Countries",
+    "Ends with LOC",
+    "Starts with COM",
+    "Things American"
+  ],
+  "Roy Cohn": [
+    "1960s",
+    "20th Century",
+    "Ends with OHN",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with ROY",
+    "Things American"
+  ],
+  "Juan Peron": [
+    "1960s",
+    "20th Century",
+    "Ends with RON",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with JUA",
+    "Things American"
+  ],
+  "Toscanini": [
+    "1960s",
+    "20th Century",
+    "Ends with INI",
+    "Male Names",
+    "People",
+    "Starts with TOS",
+    "Things American"
+  ],
+  "Dacron": [
+    "1960s",
+    "20th Century",
+    "Ends with RON",
+    "Starts with DAC",
+    "Technology",
+    "Things American"
+  ],
+  "Battle of Dien Bien Phu": [
+    "1960s",
+    "20th Century",
+    "Ends with PHU",
+    "Events",
+    "Political Events",
+    "Starts with BAT",
+    "Things American"
+  ],
+  "Rock Around the Clock": [
+    "Ends with OCK",
+    "Movies",
+    "Music",
+    "Starts with ROC"
+  ],
+  "1955 World Series": [
+    "1960s",
+    "20th Century",
+    "Ends with IES",
+    "Events",
+    "Sports",
+    "Sports Events",
+    "Starts with 195",
+    "Things American"
+  ],
+  "Davy Crockett": [
+    "1960s",
+    "20th Century",
+    "Ends with ETT",
+    "Male Names",
+    "People",
+    "Starts with DAV",
+    "Things American"
+  ],
+  "Bardot": [
+    "1960s",
+    "20th Century",
+    "Ends with DOT",
+    "Starts with BAR",
+    "Things American"
+  ],
+  "Budapest": [
+    "Countries",
+    "Ends with EST",
+    "Starts with BUD"
+  ],
+  "Alabama": [
+    "Countries",
+    "Ends with AMA",
+    "Starts with ALA",
+    "Things American"
+  ],
+  "Krushchev": [
+    "1960s",
+    "20th Century",
+    "Ends with HEV",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with KRU",
+    "Things American"
+  ],
+  "Peyton Place": [
+    "1960s",
+    "20th Century",
+    "Ends with ACE",
+    "Movies",
+    "Starts with PEY",
+    "Things American"
+  ],
+  "Suez Crisis": [
+    "1960s",
+    "20th Century",
+    "Ends with SIS",
+    "Events",
+    "Political Events",
+    "Starts with SUE",
+    "Things American"
+  ],
+  "Kerouac": [
+    "1960s",
+    "20th Century",
+    "Ends with UAC",
+    "Male Names",
+    "People",
+    "Starts with KER",
+    "Things American"
+  ],
+  "Sputnik": [
+    "1960s",
+    "20th Century",
+    "Ends with NIK",
+    "Starts with SPU",
+    "Technology",
+    "Things American"
+  ],
+  "Chou En-Lai": [
+    "1960s",
+    "20th Century",
+    "Ends with LAI",
+    "Male Names",
+    "People",
+    "Starts with CHO",
+    "Things American"
+  ],
+  "Bridge on the River Kwai": [
+    "1960s",
+    "20th Century",
+    "Ends with WAI",
+    "Movies",
+    "Movies directed by David Lean",
+    "Movies featuring Alec Guinness",
+    "Movies featuring Jack Hawkins",
+    "Movies featuring William Holden",
+    "Starts with BRI",
+    "Things American",
+    "Things British",
+    "War Films",
+    "War Stories"
+  ],
+  "California Baseball": [
+    "1960s",
+    "20th Century",
+    "Ends with ALL",
+    "Sports",
+    "Starts with CAL",
+    "Things American"
+  ],
+  "Thalidomide Scandal": [
+    "1960s",
+    "20th Century",
+    "Ends with DAL",
+    "Events",
+    "Medical Events",
+    "Medical Terms",
+    "Starts with THA",
+    "Things American"
+  ],
+  "Buddy Holly": [
+    "1960s",
+    "20th Century",
+    "Ends with LLY",
+    "Male Names",
+    "Music",
+    "Musicians",
+    "People",
+    "Starts with BUD",
+    "Things American"
+  ],
+  "Ben Hur": [
+    "1960s",
+    "20th Century",
+    "Ends with HUR",
+    "Epic Films",
+    "Movies",
+    "Movies directed by William Wyler",
+    "Movies featuring Charlton Heston",
+    "Movies featuring Jack Hawkins",
+    "Movies featuring Stephen Boyd",
+    "Period Stories",
+    "Starts with BEN",
+    "Things American"
+  ],
+  "Laika": [
+    "1960s",
+    "20th Century",
+    "Ends with IKA",
+    "Starts with LAI",
+    "Technology",
+    "Things American"
+  ],
+  "Mafia": [
+    "1960s",
+    "20th Century",
+    "Ends with FIA",
+    "Starts with MAF",
+    "Things American"
+  ],
+  "Hula Hoop": [
+    "1960s",
+    "20th Century",
+    "Ends with OOP",
+    "Starts with HUL",
+    "Things American",
+    "Toys"
+  ],
+  "Castro": [
+    "1960s",
+    "20th Century",
+    "Ends with TRO",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with CAS",
+    "Things American"
+  ],
+  "U-2 Spy Plane Incident": [
+    "Ends with ENT",
+    "Events",
+    "Political Events",
+    "Starts with U-2",
+    "Things American"
+  ],
+  "Syngman Rhee": [
+    "1960s",
+    "20th Century",
+    "Ends with HEE",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with SYN",
+    "Things American"
+  ],
+  "Payola Scandal": [
+    "1960s",
+    "20th Century",
+    "Ends with DAL",
+    "Starts with PAY",
+    "Things American"
+  ],
+  "Chubby Checker": [
+    "1960s",
+    "20th Century",
+    "Ends with KER",
+    "Male Names",
+    "Music",
+    "Musicians",
+    "People",
+    "Starts with CHU",
+    "Things American"
+  ],
+  "Psycho": [
+    "1960s",
+    "20th Century",
+    "Ends with CHO",
+    "Horror Films",
+    "Movies",
+    "Movies directed by Alfred Hitchcock",
+    "Movies featuring Anthony Perkins",
+    "Movies featuring Janet Leigh",
+    "Movies featuring Vera Miles",
+    "Starts with PSY",
+    "Things American",
+    "Thriller Stories"
+  ],
+  "Congo Crisis": [
+    "1960s",
+    "20th Century",
+    "Ends with SIS",
+    "Events",
+    "Political Events",
+    "Starts with CON",
+    "Things American"
+  ],
+  "Eichmann": [
+    "1960s",
+    "20th Century",
+    "Ends with ANN",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with EIC",
+    "Things American"
+  ],
+  "Stranger in a Strange Land": [
+    "1960s",
+    "20th Century",
+    "Books",
+    "Ends with AND",
+    "Starts with STR",
+    "Things American"
+  ],
+  "Dylan": [
+    "1960s",
+    "20th Century",
+    "Ends with LAN",
+    "Male Names",
+    "Music",
+    "Musicians",
+    "People",
+    "Starts with DYL",
+    "Things American"
+  ],
+  "Bay of Pigs Invasion": [
+    "1960s",
+    "20th Century",
+    "Ends with ION",
+    "Events",
+    "Political Events",
+    "Starts with BAY",
+    "Things American"
+  ],
+  "Profumo Affair": [
+    "1960s",
+    "20th Century",
+    "Ends with AIR",
+    "Events",
+    "Political Events",
+    "Starts with PRO",
+    "Things American"
+  ],
+  "Birth Control Pill": [
+    "1970s",
+    "20th Century",
+    "Ends with ILL",
+    "Medical Terms",
+    "Starts with BIR",
+    "Things American"
+  ],
+  "1972 Presidential Election": [
+    "1970s",
+    "20th Century",
+    "Ends with ION",
+    "Starts with 197",
+    "Things American"
+  ],
+  "Watergate": [
+    "1970s",
+    "20th Century",
+    "Ends with ATE",
+    "Events",
+    "Political Events",
+    "Starts with WAT",
+    "Things American"
+  ],
+  "Punk Rock": [
+    "1970s",
+    "20th Century",
+    "Ends with OCK",
+    "Music",
+    "Music Genres",
+    "Starts with PUN",
+    "Things American"
+  ],
+  "Begin": [
+    "1970s",
+    "20th Century",
+    "Ends with GIN",
+    "Male Names",
+    "People",
+    "Political Figures",
+    "Starts with BEG",
+    "Things American"
+  ],
+  "Entebbe Hijacking": [
+    "1970s",
+    "20th Century",
+    "Ends with ING",
+    "Events",
+    "Starts with ENT",
+    "Things American"
+  ],
+  "Iranian Revolution": [
+    "1970s",
+    "20th Century",
+    "Ends with ION",
+    "Events",
+    "Political Events",
+    "Starts with IRA",
+    "Things American"
+  ],
+  "Soviet-Afghan War": [
+    "1970s",
+    "20th Century",
+    "Ends with WAR",
+    "Events",
+    "Political Events",
+    "Starts with SOV",
+    "Things American"
+  ],
+  "Wheel of Fortune": [
+    "1970s",
+    "20th Century",
+    "Ends with UNE",
+    "Starts with WHE",
+    "TV Shows",
+    "Things American"
+  ],
+  "Sally Ride": [
+    "1970s",
+    "20th Century",
+    "Ends with IDE",
+    "Starts with SAL",
+    "Things American"
+  ],
+  "Foreign Debt Crisis": [
+    "1970s",
+    "20th Century",
+    "Ends with SIS",
+    "Starts with FOR",
+    "Things American"
+  ],
+  "Homeless Veterans Crisis": [
+    "1970s",
+    "20th Century",
+    "Ends with SIS",
+    "Starts with HOM",
+    "Things American"
+  ],
+  "AIDS": [
+    "1970s",
+    "20th Century",
+    "Ends with IDS",
+    "Medical Terms",
+    "Starts with AID",
+    "Technology",
+    "Things American"
+  ],
+  "Crack Epidemic": [
+    "1970s",
+    "20th Century",
+    "Ends with MIC",
+    "Medical Terms",
+    "Starts with CRA",
+    "Technology",
+    "Things American"
+  ],
+  "Bernie Goetz": [
+    "1970s",
+    "20th Century",
+    "Ends with ETZ",
+    "Male Names",
+    "People",
+    "Starts with BER",
+    "Things American"
+  ],
+  "Tiananmen Square Massacre": [
+    "1970s",
+    "20th Century",
+    "Ends with CRE",
+    "Events",
+    "Political Events",
+    "Starts with TIA",
+    "Things American"
+  ],
+  "1989 Chinese Protests": [
+    "1970s",
+    "20th Century",
+    "Ends with STS",
+    "Events",
+    "Political Events",
+    "Starts with 198",
+    "Things American"
+  ],
+  "Rock and Roll": [
+    "1970s",
+    "20th Century",
+    "Ends with OLL",
+    "Music",
+    "Music Genres",
+    "Starts with ROC",
+    "Things American"
+  ],
+  "Cola Wars": [
+    "1970s",
+    "20th Century",
+    "Ends with ARS",
+    "Events",
+    "Starts with COL",
+    "Things American"
+  ],
+  "Monroe": [
+    "19th Century",
+    "Ends with ROE",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with MON",
+    "Things American",
+    "US Presidents"
+  ],
+  "Van Buren": [
+    "19th Century",
+    "Ends with REN",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with VAN",
+    "Things American",
+    "US Presidents"
+  ],
+  "Harrison": [
+    "19th Century",
+    "Ends with SON",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with HAR",
+    "Things American",
+    "US Presidents"
+  ],
+  "Tyler": [
+    "19th Century",
+    "Ends with LER",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with TYL",
+    "Things American",
+    "US Presidents"
+  ],
+  "Polk": [
+    "19th Century",
+    "Ends with OLK",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with POL",
+    "Things American",
+    "US Presidents"
+  ],
+  "Taylor": [
+    "19th Century",
+    "Ends with LOR",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with TAY",
+    "Things American",
+    "US Presidents"
+  ],
+  "Fillmore": [
+    "19th Century",
+    "Ends with ORE",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with FIL",
+    "Things American",
+    "US Presidents"
+  ],
+  "Pierce": [
+    "19th Century",
+    "Ends with RCE",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with PIE",
+    "Things American",
+    "US Presidents"
+  ],
+  "Buchanan": [
+    "19th Century",
+    "Ends with NAN",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with BUC",
+    "Things American",
+    "US Presidents"
+  ],
+  "Johnson": [
+    "19th Century",
+    "Ends with SON",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with JOH",
+    "Things American",
+    "US Presidents"
+  ],
+  "Hayes": [
+    "19th Century",
+    "Ends with YES",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with HAY",
+    "Things American",
+    "US Presidents"
+  ],
+  "Garfield": [
+    "19th Century",
+    "Ends with ELD",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with GAR",
+    "Things American",
+    "US Presidents"
+  ],
+  "Arthur": [
+    "19th Century",
+    "Ends with HUR",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with ART",
+    "Things American",
+    "US Presidents"
+  ],
+  "Cleveland": [
+    "19th Century",
+    "Ends with AND",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with CLE",
+    "Things American",
+    "US Presidents"
+  ],
+  "McKinley": [
+    "19th Century",
+    "Ends with LEY",
+    "Military Leaders",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with MCK",
+    "Things American",
+    "US Presidents"
+  ],
+  "Taft": [
+    "20th Century",
+    "Ends with AFT",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with TAF",
+    "Things American",
+    "US Presidents"
+  ],
+  "Harding": [
+    "20th Century",
+    "Ends with ING",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with HAR",
+    "Things American",
+    "US Presidents"
+  ],
+  "Coolidge": [
+    "20th Century",
+    "Ends with DGE",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with COO",
+    "Things American",
+    "US Presidents"
+  ],
+  "Carter": [
+    "20th Century",
+    "Ends with TER",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with CAR",
+    "Things American",
+    "US Presidents"
+  ],
+  "Clinton": [
+    "20th Century",
+    "Ends with TON",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with CLI",
+    "Things American",
+    "US Presidents"
   ]
 }

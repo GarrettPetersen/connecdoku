@@ -1112,9 +1112,6 @@
   "Movies featuring Minoru Chiaki": [
     "The Hidden Fortress"
   ],
-  "Movies directed by Alfred Hitchcock": [
-    "Rear Window"
-  ],
   "Movies featuring Grace Kelly": [
     "Rear Window"
   ],
@@ -2627,9 +2624,6 @@
   "Movies featuring Omar Sharif": [
     "Lawrence of Arabia"
   ],
-  "Movies featuring William Holden": [
-    "The Bridge on the River Kwai"
-  ],
   "Movies featuring Sterling Hayden": [
     "Dr. Strangelove"
   ],
@@ -3062,6 +3056,39 @@
   "British Antarctic Survey": [
     "Boaty McBoatface"
   ],
+  "Sports Events": [
+    "1955 World Series"
+  ],
+  "Medical Events": [
+    "Thalidomide Scandal"
+  ],
+  "Epic Films": [
+    "Ben Hur"
+  ],
+  "Movies directed by William Wyler": [
+    "Ben Hur"
+  ],
+  "Movies featuring Charlton Heston": [
+    "Ben Hur"
+  ],
+  "Movies featuring Stephen Boyd": [
+    "Ben Hur"
+  ],
+  "Toys": [
+    "Hula Hoop"
+  ],
+  "Horror Films": [
+    "Psycho"
+  ],
+  "Movies featuring Anthony Perkins": [
+    "Psycho"
+  ],
+  "Movies featuring Janet Leigh": [
+    "Psycho"
+  ],
+  "Movies featuring Vera Miles": [
+    "Psycho"
+  ],
   "Maritime Stories": [
     "Titanic",
     "Moby Dick"
@@ -3149,10 +3176,6 @@
   "Movies featuring Rosamund Pike": [
     "Doom",
     "Gone Girl"
-  ],
-  "Movies featuring Jack Hawkins": [
-    "Zulu",
-    "The Bridge on the River Kwai"
   ],
   "Things Saudi": [
     "Mecca",
@@ -3493,6 +3516,10 @@
   "Movies featuring Takashi Shimura": [
     "Seven Samurai",
     "Ikiru"
+  ],
+  "Movies directed by Alfred Hitchcock": [
+    "Rear Window",
+    "Psycho"
   ],
   "Movies featuring James Stewart": [
     "Rear Window",
@@ -3902,6 +3929,10 @@
     "Jaws",
     "The French Connection"
   ],
+  "Movies featuring William Holden": [
+    "The Bridge on the River Kwai",
+    "Bridge on the River Kwai"
+  ],
   "Movies featuring Peter Sellers": [
     "Dr. Strangelove",
     "The Ladykillers"
@@ -3981,6 +4012,10 @@
   "6th Century BC": [
     "Confucius",
     "Sun Tzu"
+  ],
+  "Music Genres": [
+    "Punk Rock",
+    "Rock and Roll"
   ],
   "White Star Line": [
     "Titanic",
@@ -4466,11 +4501,6 @@
     "Miyazaki",
     "Kurosawa",
     "Ozu"
-  ],
-  "Movies directed by David Lean": [
-    "Lawrence of Arabia",
-    "The Bridge on the River Kwai",
-    "Brief Encounter"
   ],
   "Movies featuring Malcolm McDowell": [
     "A Clockwork Orange",
