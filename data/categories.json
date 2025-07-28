@@ -100,11 +100,14 @@
     "The Spanish Armada"
   ],
   "1780s": [
-    "The Shays' Rebellion"
+    "The Shays' Rebellion",
+    "Washington"
   ],
   "1790s": [
+    "Adams",
     "The Haitian Revolution",
-    "The Whiskey Rebellion"
+    "The Whiskey Rebellion",
+    "Washington"
   ],
   "17th Century": [
     "Bach",
@@ -124,22 +127,44 @@
     "The Great Fire of London",
     "The Thirty Years War"
   ],
+  "1800s": [
+    "Adams",
+    "Jefferson",
+    "Madison"
+  ],
   "1810s": [
     "Frankenstein",
+    "Madison",
+    "Monroe",
     "Pride and Prejudice",
     "Tambora",
     "The Latin American Wars of Independence"
   ],
   "1820s": [
+    "Jackson",
+    "Monroe",
     "The Greek War of Independence"
   ],
+  "1830s": [
+    "Jackson",
+    "Van Buren"
+  ],
   "1840s": [
+    "Harrison",
     "Jane Eyre",
+    "Polk",
+    "Taylor",
     "The Count of Monte Cristo",
+    "Tyler",
+    "Van Buren",
     "Wuthering Heights"
   ],
   "1850s": [
+    "Buchanan",
+    "Fillmore",
     "Moby Dick",
+    "Pierce",
+    "Taylor",
     "The Indian Rebellion",
     "The Scarlet Letter",
     "The Sepoy Mutiny",
@@ -147,23 +172,37 @@
   ],
   "1860s": [
     "Alice's Adventures in Wonderland",
+    "Buchanan",
     "Crime and Punishment",
+    "Grant",
+    "Johnson",
     "Les Misérables",
+    "Lincoln",
     "Little Women",
     "The Italian Unification",
     "War and Peace"
   ],
   "1870s": [
     "Challenger",
+    "Grant",
+    "Hayes",
     "The Adventures of Tom Sawyer",
     "The Long Depression"
   ],
   "1880s": [
+    "Arthur",
+    "Cleveland",
+    "Garfield",
+    "Harrison",
+    "Hayes",
     "Krakatoa",
     "The Brothers Karamazov"
   ],
   "1890s": [
+    "Cleveland",
     "Dracula",
+    "Harrison",
+    "McKinley",
     "The Red Badge of Courage",
     "The Time Machine"
   ],
@@ -194,12 +233,16 @@
   ],
   "1900s": [
     "Anne of Green Gables",
+    "McKinley",
+    "Roosevelt",
+    "Taft",
     "The Call of the Wild",
     "The Tale of Peter Rabbit",
     "The Wind in the Willows"
   ],
   "1910s": [
     "Lusitania",
+    "Taft",
     "The Armenian Genocide",
     "The Mexican Revolution",
     "The Russian Civil War",
@@ -208,10 +251,14 @@
     "The Spanish Flu",
     "The Titanic Disaster",
     "Titanic",
+    "Wilson",
     "World War I"
   ],
   "1920s": [
     "A Farewell to Arms",
+    "Coolidge",
+    "Harding",
+    "Hoover",
     "Ruth",
     "The Age of Innocence",
     "The Discovery of Penicillin",
@@ -219,6 +266,7 @@
     "The Sound and the Fury",
     "The Sun Also Rises",
     "The Wall Street Crash",
+    "Wilson",
     "Winnie-the-Pooh"
   ],
   "1930s": [
@@ -227,8 +275,10 @@
     "Brave New World",
     "Gone with the Wind",
     "Hindenburg",
+    "Hoover",
     "Light in August",
     "Manchukuo",
+    "Roosevelt",
     "Ruth",
     "The Dust Bowl",
     "The Grapes of Wrath",
@@ -251,6 +301,7 @@
     "Manchukuo",
     "Miracle on 34th Street",
     "Pinnochio",
+    "Roosevelt",
     "The Battle of Stalingrad",
     "The Big Sleep",
     "The Holocaust",
@@ -260,6 +311,7 @@
     "The Manhattan Project",
     "The Red Shoes",
     "The Third Man",
+    "Truman",
     "World War II"
   ],
   "1950s": [
@@ -268,6 +320,7 @@
     "Charlotte's Web",
     "Coronation of Elizabeth II",
     "Doris Day",
+    "Eisenhower",
     "Everest",
     "Fahrenheit 451",
     "H-bomb",
@@ -313,6 +366,7 @@
     "The Old Man and the Sea",
     "The Space Race",
     "Throne of Blood",
+    "Truman",
     "United Arab Republic",
     "White Christmas"
   ],
@@ -340,13 +394,16 @@
     "Dylan",
     "Easy Rider",
     "Eichmann",
+    "Eisenhower",
     "Gemini",
     "Green Eggs and Ham",
     "High and Low",
     "Hula Hoop",
     "If....",
+    "Johnson",
     "Joseph Stalin",
     "Juan Peron",
+    "Kennedy",
     "Kerouac",
     "Krushchev",
     "Laika",
@@ -360,6 +417,7 @@
     "Midnight Cowboy",
     "My Fair Lady",
     "Nasser",
+    "Nixon",
     "Oliver!",
     "One Hundred Years of Solitude",
     "Payola Scandal",
@@ -413,6 +471,7 @@
     "Bernie Goetz",
     "Birth Control Pill",
     "Cabaret",
+    "Carter",
     "Chinatown",
     "Cola Wars",
     "Crack Epidemic",
@@ -421,6 +480,7 @@
     "Don't Look Now",
     "Entebbe Hijacking",
     "Fiddler on the Roof",
+    "Ford",
     "Foreign Debt Crisis",
     "Get Carter",
     "Godspell",
@@ -434,6 +494,7 @@
     "Kramer vs. Kramer",
     "Manhattan",
     "Mariner",
+    "Nixon",
     "O Lucky Man!",
     "One Flew Over the Cuckoo's Nest",
     "Performance",
@@ -480,6 +541,8 @@
     "Bill & Ted's Excellent Adventure",
     "Blade Runner",
     "Britannia Hospital",
+    "Bush",
+    "Carter",
     "Castle in the Sky",
     "Challenger",
     "Chariots of Fire",
@@ -507,6 +570,7 @@
     "Platoon",
     "Rain Man",
     "Ran",
+    "Reagan",
     "Return of the Jedi",
     "Scarface",
     "Scrooged",
@@ -542,7 +606,9 @@
     "Back to the Future Part III",
     "Bill & Ted's Bogus Journey",
     "Braveheart",
+    "Bush",
     "Chungking Express",
+    "Clinton",
     "Copycat",
     "Dances with Wolves",
     "Dante's Peak",
@@ -725,7 +791,9 @@
     "Avatar",
     "Bad Santa",
     "Ball Lightning",
+    "Bush",
     "Chicago",
+    "Clinton",
     "Concordia",
     "Crash",
     "Crouching Tiger, Hidden Dragon",
@@ -767,6 +835,7 @@
     "My Blueberry Nights",
     "No Country for Old Men",
     "Oasis of the Seas",
+    "Obama",
     "Percy Jackson & the Olympians",
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
@@ -848,6 +917,7 @@
     "Moonlight",
     "Moonrise Kingdom",
     "Norwegian Bliss",
+    "Obama",
     "Odyssey",
     "Once Upon a Time in Hollywood",
     "Parasite",
@@ -882,6 +952,7 @@
     "The Shape of Water",
     "The Syrian Civil War",
     "The Time Traveler's Almanac",
+    "Trump",
     "USS Gerald R. Ford",
     "USS Michael Monsoor",
     "USS Zumwalt",
@@ -902,6 +973,7 @@
     "The Killer",
     "The Russian Invasion of Ukraine",
     "Tick, Tick... Boom!",
+    "Trump",
     "USS John Lewis",
     "Wonder"
   ],
@@ -1427,6 +1499,7 @@
     "Birdman",
     "Boaty McBoatface",
     "Bravo",
+    "Bush",
     "Buttercup",
     "CODA",
     "Chad",
