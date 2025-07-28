@@ -122,6 +122,18 @@
   "Movies featuring Leigh Whannell": [
     "Saw"
   ],
+  "Historical Epics": [
+    "Cleopatra"
+  ],
+  "Movies directed by Joseph L. Mankiewicz": [
+    "Cleopatra"
+  ],
+  "Movies featuring Elizabeth Taylor": [
+    "Cleopatra"
+  ],
+  "Movies featuring Richard Burton": [
+    "Cleopatra"
+  ],
   "Movies featuring James Woods": [
     "Hercules"
   ],
@@ -1889,9 +1901,6 @@
   "Movies featuring Audrey Hepburn": [
     "My Fair Lady"
   ],
-  "Movies featuring Rex Harrison": [
-    "My Fair Lady"
-  ],
   "Movies featuring Bert Lahr": [
     "The Wizard of Oz"
   ],
@@ -2624,6 +2633,9 @@
   "Movies featuring Omar Sharif": [
     "Lawrence of Arabia"
   ],
+  "Movies featuring William Holden": [
+    "Bridge on the River Kwai"
+  ],
   "Movies featuring Sterling Hayden": [
     "Dr. Strangelove"
   ],
@@ -3142,6 +3154,10 @@
   "Movies featuring Danny Glover": [
     "Saw",
     "The Color Purple"
+  ],
+  "Movies featuring Rex Harrison": [
+    "Cleopatra",
+    "My Fair Lady"
   ],
   "Movies featuring Danny DeVito": [
     "Hercules",
@@ -3927,10 +3943,6 @@
     "Jaws",
     "The French Connection"
   ],
-  "Movies featuring William Holden": [
-    "The Bridge on the River Kwai",
-    "Bridge on the River Kwai"
-  ],
   "Movies featuring Peter Sellers": [
     "Dr. Strangelove",
     "The Ladykillers"
@@ -4115,6 +4127,11 @@
     "Inferno",
     "The Odyssey",
     "The Iliad"
+  ],
+  "Movies featuring Jack Hawkins": [
+    "Zulu",
+    "Bridge on the River Kwai",
+    "Ben Hur"
   ],
   "Things Israeli": [
     "Temple Mount",
@@ -4490,6 +4507,11 @@
     "Miyazaki",
     "Kurosawa",
     "Ozu"
+  ],
+  "Movies directed by David Lean": [
+    "Lawrence of Arabia",
+    "Bridge on the River Kwai",
+    "Brief Encounter"
   ],
   "Movies featuring Malcolm McDowell": [
     "A Clockwork Orange",
