@@ -1533,6 +1533,9 @@ function init(puz){
           hdr.style.color = '#333';
           hdr.style.fontWeight = 'bold';
           hdr.style.border = '2px solid #ffc107';
+          // Add padlock icon to make it clear this is locked
+          hdr.innerHTML = '🔒';
+          hdr.classList.add('emoji'); // Add emoji class for compound emoji support
         }
       }
     }
