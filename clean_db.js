@@ -1,0 +1,285 @@
+#!/usr/bin/env node
+// clean_db.js - Validate all puzzles in database against current word list
+"use strict";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import crypto from "crypto";
+import sqlite3 from "sqlite3";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// ───────── paths ────────────────────────────────────────────────────────────
+const DATA_DIR = path.join(__dirname, "data");
+const WORDS_F = path.join(DATA_DIR, "words.json");
+const CATS_F = path.join(DATA_DIR, "categories.json");
+const DB_PATH = path.join(__dirname, "puzzles.db");
+
+// ───────── helpers ──────────────────────────────────────────────────────────
+const sha256 = b => crypto.createHash("sha256").update(b).digest("hex");
+
+// simple progress bar (copied from solver)
+const BAR_W = 40, start = new Map();
+let last = 0;
+function fmt(s) {
+    if (!isFinite(s)) return "??";
+    const h = s / 3600 | 0, m = s / 60 % 60 | 0;
+    return h ? `${h}h ${m}m` : m ? `${m}m` : `${s | 0}s`;
+}
+function pbar(done, total, stage, extra = "", force = false) {
+    const now = Date.now();
+    if (!force && now - last < 120) return;
+    last = now;
+    const pct = total ? done / total : 0, fill = Math.round(pct * BAR_W);
+    const bar = "█".repeat(fill) + "░".repeat(BAR_W - fill);
+    const el = (now - start.get(stage)) / 1000;
+    const eta = pct ? el / pct - el : Infinity;
+    process.stdout.write(
+        `\r[${bar}] ${(pct * 100).toFixed(1).padStart(5)}% ${extra}  [${fmt(el)}/${fmt(eta)}] `
+    );
+}
+function begin(stage) { start.set(stage, Date.now()); console.log(`\n${stage}...`); }
+function end() { process.stdout.write("\n"); }
+
+// ───────── validation functions ─────────────────────────────────────────────────────────────
+const intersectSet = (a, b) => {
+    const r = new Set();
+    const s = a.size < b.size ? a : b, t = s === a ? b : a;
+    for (const x of s) if (t.has(x)) r.add(x);
+    return r;
+};
+
+function validatePuzzle(puzzle, categoriesJson) {
+    const { row0, row1, row2, row3, col0, col1, col2, col3 } = puzzle;
+    const rows = [row0, row1, row2, row3];
+    const cols = [col0, col1, col2, col3];
+    
+    // Check if all categories exist in current word list
+    for (const category of [...rows, ...cols]) {
+        if (!categoriesJson[category]) {
+            return { valid: false, reason: `Category "${category}" not found in current word list` };
+        }
+    }
+    
+    // Create word sets for all categories
+    const wordSets = {};
+    for (const category of [...rows, ...cols]) {
+        wordSets[category] = new Set(categoriesJson[category]);
+    }
+    
+    // Red-herring test: each cell must have at least one unique word
+    const all = new Set([...rows, ...cols]);
+    for (const row of rows) {
+        for (const col of cols) {
+            // Find intersection of row and column
+            let intersection = intersectSet(wordSets[row], wordSets[col]);
+            
+            // Remove words that appear in any other category
+            for (const other of all) {
+                if (other !== row && other !== col) {
+                    intersection = new Set([...intersection].filter(word => !wordSets[other].has(word)));
+                }
+            }
+            
+            // If no unique word exists for this cell, puzzle is invalid
+            if (intersection.size === 0) {
+                return { 
+                    valid: false, 
+                    reason: `No unique word exists for cell (${row}, ${col}) - intersection is empty after removing words from other categories` 
+                };
+            }
+        }
+    }
+    
+    return { valid: true };
+}
+
+// ───────── database functions ───────────────────────────────────────────────
+function setupDatabase() {
+    return new Promise((resolve, reject) => {
+        const db = new sqlite3.Database(DB_PATH, err => {
+            if (err) return reject(err);
+            resolve(db);
+        });
+    });
+}
+
+async function countPuzzles(db) {
+    return new Promise((resolve, reject) => {
+        db.get("SELECT COUNT(*) as count FROM puzzles", (err, row) => {
+            if (err) reject(err);
+            else resolve(row ? row.count : 0);
+        });
+    });
+}
+
+async function getPuzzleBatch(db, minHash, maxHash) {
+    return new Promise((resolve, reject) => {
+        db.all(
+            `SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3 
+             FROM puzzles 
+             WHERE puzzle_hash > ? AND puzzle_hash <= ?
+             ORDER BY puzzle_hash`,
+            [minHash, maxHash],
+            (err, rows) => {
+                if (err) reject(err);
+                else resolve(rows || []);
+            }
+        );
+    });
+}
+
+async function getHashRange(db) {
+    return new Promise((resolve, reject) => {
+        db.get(
+            `SELECT MIN(puzzle_hash) as min_hash, MAX(puzzle_hash) as max_hash 
+             FROM puzzles`,
+            (err, row) => {
+                if (err) reject(err);
+                else resolve(row ? { min: row.min_hash, max: row.max_hash } : null);
+            }
+        );
+    });
+}
+
+async function deletePuzzleBatch(db, puzzleHashes) {
+    if (puzzleHashes.length === 0) return 0;
+    
+    return new Promise((resolve, reject) => {
+        const placeholders = puzzleHashes.map(() => '?').join(',');
+        const stmt = db.prepare(`DELETE FROM puzzles WHERE puzzle_hash IN (${placeholders})`);
+        
+        stmt.run(puzzleHashes, function(err) {
+            if (err) reject(err);
+            else resolve(this.changes);
+        });
+        
+        stmt.finalize();
+    });
+}
+
+// ───────── main validation function ─────────────────────────────────────────
+async function main() {
+    console.log("🔍 Puzzle Validator - Checking database against current word list");
+    console.log("=" * 60);
+    
+    // Load current word list and categories
+    begin("Loading word list and categories");
+    const wordsJson = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
+    const categoriesJson = JSON.parse(fs.readFileSync(CATS_F, "utf8"));
+    console.log(`Loaded ${Object.keys(categoriesJson).length} categories`);
+    console.log(`Loaded ${Object.keys(wordsJson).length} words`);
+    end();
+    
+    // Setup database
+    begin("Connecting to database");
+    const db = await setupDatabase();
+    console.log(`Database connected: ${DB_PATH}`);
+    end();
+    
+    // Count total puzzles
+    begin("Counting puzzles");
+    const totalPuzzles = await countPuzzles(db);
+    console.log(`Total puzzles in database: ${totalPuzzles}`);
+    if (totalPuzzles === 0) {
+        console.log("No puzzles to validate. Exiting.");
+        db.close();
+        return;
+    }
+    end();
+    
+    // Get hash range for batching
+    begin("Getting hash range");
+    const hashRange = await getHashRange(db);
+    if (!hashRange) {
+        console.log("No puzzles found in database.");
+        db.close();
+        return;
+    }
+    console.log(`Hash range: ${hashRange.min.substring(0, 8)}... to ${hashRange.max.substring(0, 8)}...`);
+    end();
+    
+    // Validate puzzles in hash-based batches
+    begin("Validating puzzles");
+    const validPuzzles = [];
+    let processed = 0;
+    let totalInvalid = 0;
+    const BATCH_COUNT = 100; // Split hash range into 100 batches
+    const hashStep = (BigInt("0x" + hashRange.max) - BigInt("0x" + hashRange.min)) / BigInt(BATCH_COUNT);
+    let currentHash = BigInt("0x" + hashRange.min);
+    
+    for (let i = 0; i < BATCH_COUNT; i++) {
+        const nextHash = i === BATCH_COUNT - 1 ? hashRange.max : 
+                        (BigInt("0x" + hashRange.min) + hashStep * BigInt(i + 1)).toString(16).padStart(64, '0');
+        const currentHashStr = currentHash.toString(16).padStart(64, '0');
+        
+        const puzzles = await getPuzzleBatch(db, currentHashStr, nextHash);
+        
+        const batchInvalidHashes = [];
+        
+        for (const puzzle of puzzles) {
+            const validation = validatePuzzle(puzzle, categoriesJson);
+            
+            if (validation.valid) {
+                validPuzzles.push(puzzle.puzzle_hash);
+            } else {
+                batchInvalidHashes.push(puzzle.puzzle_hash);
+            }
+            
+            processed++;
+            pbar(processed, totalPuzzles, "Validating puzzles", 
+                  `${validPuzzles.length} valid, ${totalInvalid + batchInvalidHashes.length} invalid`);
+        }
+        
+        // Delete invalid puzzles from this batch
+        if (batchInvalidHashes.length > 0) {
+            const deleted = await deletePuzzleBatch(db, batchInvalidHashes);
+            totalInvalid += deleted;
+            pbar(processed, totalPuzzles, "Validating puzzles", 
+                  `${validPuzzles.length} valid, ${totalInvalid} deleted`, true);
+        }
+        
+        currentHash = BigInt("0x" + nextHash);
+    }
+    
+    pbar(totalPuzzles, totalPuzzles, "Validating puzzles", 
+          `${validPuzzles.length} valid, ${totalInvalid} deleted`, true);
+    end();
+    
+    // Report results
+    console.log(`\n📊 Validation Results:`);
+    console.log(`   Total puzzles: ${totalPuzzles}`);
+    console.log(`   Valid puzzles: ${validPuzzles.length}`);
+    console.log(`   Invalid puzzles deleted: ${totalInvalid}`);
+    console.log(`   Invalid percentage: ${((totalInvalid / totalPuzzles) * 100).toFixed(2)}%`);
+    
+    if (totalInvalid === 0) {
+        console.log("\n✅ All puzzles are valid! No cleanup needed.");
+    } else {
+        console.log(`\n✅ Cleanup Complete!`);
+        console.log(`   Deleted ${totalInvalid} invalid puzzles`);
+        console.log(`   Remaining valid puzzles: ${validPuzzles.length}`);
+    }
+    
+    // Verify final count
+    const finalCount = await countPuzzles(db);
+    console.log(`   Final database count: ${finalCount}`);
+    
+    if (finalCount !== validPuzzles.length) {
+        console.log(`   ⚠️  Warning: Expected ${validPuzzles.length} puzzles, but database has ${finalCount}`);
+    } else {
+        console.log(`   ✅ Database count matches expected count`);
+    }
+    
+    // Clean up
+    db.close(err => {
+        if (err) console.error("Error closing database:", err.message);
+        else console.log("Database connection closed");
+    });
+}
+
+// Run the validation
+main().catch(err => {
+    console.error("Error during validation:", err);
+    process.exit(1);
+});
