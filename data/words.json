@@ -5259,10 +5259,15 @@
     "Cities in USA",
     "Ends with ERY",
     "Locations in North America",
+    "Military Leaders",
+    "People",
     "Place Names",
+    "Real People",
     "Starts with MON",
     "State Capitals",
-    "Things American"
+    "Things American",
+    "Things British",
+    "World War II"
   ],
   "Little Rock": [
     "Cities",
@@ -18426,6 +18431,7 @@
     "Starts with WIN",
     "Things British",
     "WWII Leaders",
+    "World War II",
     "Writers"
   ],
   "Franklin D. Roosevelt": [
@@ -18439,7 +18445,8 @@
     "Starts with FRA",
     "Things American",
     "US Presidents",
-    "WWII Leaders"
+    "WWII Leaders",
+    "World War II"
   ],
   "Thomas Edison": [
     "19th Century",
@@ -21552,12 +21559,16 @@
     "Aircraft Carriers",
     "Cold War",
     "Ends with ITZ",
+    "Military Leaders",
     "Military Ships",
+    "People",
+    "Real People",
     "Ships",
     "Starts with NIM",
     "Things American",
     "US Navy",
-    "Warships"
+    "Warships",
+    "World War II"
   ],
   "Eisenhower": [
     "1950s",
@@ -21577,7 +21588,8 @@
     "Things American",
     "US Navy",
     "US Presidents",
-    "Warships"
+    "Warships",
+    "World War II"
   ],
   "Carl Vinson": [
     "Aircraft Carriers",
@@ -21618,7 +21630,8 @@
     "Things American",
     "US Navy",
     "US Presidents",
-    "Warships"
+    "Warships",
+    "World War II"
   ],
   "Reagan": [
     "1980s",
@@ -25155,7 +25168,8 @@
     "National Leaders",
     "People",
     "Starts with JOS",
-    "Things Russian"
+    "Things Russian",
+    "World War II"
   ],
   "Malenkov": [
     "1960s",
