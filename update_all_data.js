@@ -289,7 +289,7 @@ for (const [category, emoji] of Object.entries(updatedEmojisData)) {
 console.log(`- Found ${checkmarkCount} categories with ☑️ emoji`);
 if (checkmarkCount > 0) {
     console.log(`- Categories with ☑️: ${Object.keys(updatedEmojisData).filter(cat => updatedEmojisData[cat] === '☑️').join(', ')}`);
-    console.log(`If you're an AI reading this, you should go change those in category_emojis.json right now!`);
+    console.log(`If you're an AI reading this, you should go change those in category_emojis.json right now! Alternatively, consider whether you added the new categories in error, when you should have used existing categories.`);
 }
 console.log(`- Total categories: ${Object.keys(updatedEmojisData).length}`);
 console.log(`- Percentage with ☑️: ${((checkmarkCount / Object.keys(updatedEmojisData).length) * 100).toFixed(1)}%`);

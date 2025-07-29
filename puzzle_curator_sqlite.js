@@ -785,9 +785,10 @@ async function main() {
         // Curator chooses a word for each intersection
         const chosen = Array.from({ length: 4 }, () => Array(4));
         const usedWords = new Set();
+        let puzzleAbandoned = false;
 
-        for (let r = 0; r < 4; ++r) {
-            for (let c = 0; c < 4; ++c) {
+        for (let r = 0; r < 4 && !puzzleAbandoned; ++r) {
+            for (let c = 0; c < 4 && !puzzleAbandoned; ++c) {
                 // Show current progress
                 console.clear();
                 console.log("Rows:", puzzle.rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
@@ -802,22 +803,49 @@ async function main() {
 
                 let pick;
                 if (opts.length === 1) {
-                    pick = opts[0];
-                    console.log(`auto: ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}  →  ${formatWithUsage(pick, wordUsage)}`);
+                    // Even with only one option, still show selection with "None" option
+                    console.log(`Showing 1 option for selection...`);
+
+                    pick = await prompts.select({
+                        message: `Pick word for ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}`,
+                        choices: [
+                            ...opts.map(w => ({
+                                value: w,
+                                name: formatWithUsage(w, wordUsage)
+                            })),
+                            { value: "NONE", name: "❌ None - abandon this puzzle" }
+                        ]
+                    });
                 } else {
                     console.log(`Showing ${opts.length} options for selection...`);
 
                     pick = await prompts.select({
                         message: `Pick word for ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}`,
-                        choices: opts.map(w => ({
-                            value: w,
-                            name: formatWithUsage(w, wordUsage)
-                        }))
+                        choices: [
+                            ...opts.map(w => ({
+                                value: w,
+                                name: formatWithUsage(w, wordUsage)
+                            })),
+                            { value: "NONE", name: "❌ None - abandon this puzzle" }
+                        ]
                     });
                 }
+
+                // Check if user selected "None"
+                if (pick === "NONE") {
+                    console.log("❌ Puzzle abandoned by user. Returning to main selection...");
+                    puzzleAbandoned = true;
+                    break; // Exit the word selection loop and continue to main loop
+                }
+
                 chosen[r][c] = pick;
                 usedWords.add(pick);
             }
+        }
+
+        // If puzzle was abandoned, skip to next iteration of main loop
+        if (puzzleAbandoned) {
+            continue;
         }
 
         // Final duplicate check (paranoia)
