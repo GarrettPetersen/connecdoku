@@ -251,6 +251,7 @@
     "The Wind in the Willows"
   ],
   "1910s": [
+    "June 28th, 1914",
     "Lusitania",
     "Taft",
     "The Armenian Genocide",
@@ -1200,6 +1201,7 @@
     "Jordan",
     "Joseph Stalin",
     "Juan Peron",
+    "June 28th, 1914",
     "June 4th, 1942",
     "Jurassic Park",
     "Kagemusha",
@@ -2424,6 +2426,13 @@
     "Manchukuo",
     "Tibet"
   ],
+  "Assassination of Archduke Franz Ferdinand": [
+    "Archduke Franz Ferdinand",
+    "Gavrilo Princip",
+    "June 28th, 1914",
+    "Sarajevo",
+    "Sophie, Duchess of Hohenberg"
+  ],
   "Assassination of JFK": [
     "Carcano Model 38",
     "Dallas",
@@ -2433,6 +2442,7 @@
     "Texas Book Depository"
   ],
   "Assassins": [
+    "Gavrilo Princip",
     "Lee Harvey Oswald"
   ],
   "Associated with Edgar Allan Poe": [
@@ -3447,6 +3457,7 @@
     "San Juan",
     "San Marino",
     "Santa Fe",
+    "Sarajevo",
     "Seattle",
     "Seoul",
     "Singapore",
@@ -3487,6 +3498,7 @@
     "Monaco",
     "Paris",
     "San Marino",
+    "Sarajevo",
     "Vatican City",
     "Verona"
   ],
@@ -4847,6 +4859,7 @@
   ],
   "Dates": [
     "December 7th, 1941",
+    "June 28th, 1914",
     "June 4th, 1942",
     "November 22nd, 1963"
   ],
@@ -5349,6 +5362,9 @@
   "Ends with 747": [
     "747"
   ],
+  "Ends with 914": [
+    "June 28th, 1914"
+  ],
   "Ends with 941": [
     "December 7th, 1941"
   ],
@@ -5621,6 +5637,7 @@
     "Aland",
     "Alice in Wonderland",
     "Alice's Adventures in Wonderland",
+    "Archduke Franz Ferdinand",
     "Basutoland",
     "Bechuanaland",
     "British Somaliland",
@@ -6160,6 +6177,9 @@
   "Ends with CIL": [
     "Pencil"
   ],
+  "Ends with CIP": [
+    "Gavrilo Princip"
+  ],
   "Ends with CKY": [
     "Jabberwocky",
     "Rocky"
@@ -6626,7 +6646,8 @@
     "When Marnie Was There"
   ],
   "Ends with ERG": [
-    "Axel Heiberg"
+    "Axel Heiberg",
+    "Sophie, Duchess of Hohenberg"
   ],
   "Ends with ERN": [
     "Green Lantern",
@@ -6750,6 +6771,9 @@
     "Statue of Zeus",
     "Theseus",
     "Zeus"
+  ],
+  "Ends with EVO": [
+    "Sarajevo"
   ],
   "Ends with EWE": [
     "Ewe"
@@ -12754,6 +12778,7 @@
     "San Marino",
     "Santa Maria",
     "Santorini",
+    "Sarajevo",
     "Sardinia",
     "Sark",
     "Serbia",
@@ -18752,6 +18777,7 @@
     "Adams",
     "Anne Boleyn",
     "Anne of Cleves",
+    "Archduke Franz Ferdinand",
     "Arthur",
     "Batu Khan",
     "Begin",
@@ -19035,6 +19061,7 @@
     "Annabel",
     "Anne Boleyn",
     "Anne of Cleves",
+    "Archduke Franz Ferdinand",
     "Aristotle",
     "Arthur",
     "Aurora",
@@ -19108,6 +19135,7 @@
     "Fujita",
     "Galileo",
     "Garfield",
+    "Gavrilo Princip",
     "Genghis Khan",
     "Graf Zeppelin",
     "Grant",
@@ -19222,6 +19250,7 @@
     "Shaggy",
     "Shakespeare",
     "Socrates",
+    "Sophie, Duchess of Hohenberg",
     "Subutai",
     "Sugar Ray",
     "Sulu",
@@ -19781,6 +19810,7 @@
     "Santa Maria",
     "Santorini",
     "Sao Tome and Principe",
+    "Sarajevo",
     "Sardinia",
     "Sark",
     "Saudi Arabia",
@@ -20097,6 +20127,7 @@
     "Adams",
     "Anne Boleyn",
     "Anne of Cleves",
+    "Archduke Franz Ferdinand",
     "Aristotle",
     "Arthur",
     "Bach",
@@ -20147,6 +20178,7 @@
     "Franklin D. Roosevelt",
     "Galileo",
     "Garfield",
+    "Gavrilo Princip",
     "Genghis Khan",
     "Graf Zeppelin",
     "Grant",
@@ -20218,6 +20250,7 @@
     "Saint Patrick",
     "Shakespeare",
     "Socrates",
+    "Sophie, Duchess of Hohenberg",
     "Subutai",
     "Sun Tzu",
     "Taft",
@@ -20689,6 +20722,7 @@
   "Royalty": [
     "Anne Boleyn",
     "Anne of Cleves",
+    "Archduke Franz Ferdinand",
     "Catherine Howard",
     "Catherine Parr",
     "Catherine of Aragon",
@@ -20702,7 +20736,8 @@
     "Lady Jane Grey",
     "Mary I",
     "Prince",
-    "Queen"
+    "Queen",
+    "Sophie, Duchess of Hohenberg"
   ],
   "Rulers": [
     "Batu Khan",
@@ -21722,6 +21757,7 @@
     "Aquarius"
   ],
   "Starts with ARC": [
+    "Archduke Franz Ferdinand",
     "Archery"
   ],
   "Starts with ARE": [
@@ -23126,6 +23162,9 @@
   "Starts with GAU": [
     "Gaul"
   ],
+  "Starts with GAV": [
+    "Gavrilo Princip"
+  ],
   "Starts with GAZ": [
     "Gazette",
     "Gazpacho"
@@ -23778,6 +23817,7 @@
     "Jumbo"
   ],
   "Starts with JUN": [
+    "June 28th, 1914",
     "June 4th, 1942",
     "Juneau"
   ],
@@ -25296,6 +25336,7 @@
     "Sapphire"
   ],
   "Starts with SAR": [
+    "Sarajevo",
     "Sardinia",
     "Sark"
   ],
@@ -25487,6 +25528,9 @@
   "Starts with SON": [
     "Song",
     "Sony"
+  ],
+  "Starts with SOP": [
+    "Sophie, Duchess of Hohenberg"
   ],
   "Starts with SOR": [
     "Soryu"
@@ -27658,10 +27702,12 @@
     "Sydney Opera House"
   ],
   "Things Austrian": [
+    "Archduke Franz Ferdinand",
     "Austria",
     "Mozart",
     "Skiing",
-    "Sledding"
+    "Sledding",
+    "Sophie, Duchess of Hohenberg"
   ],
   "Things Azerbaijani": [
     "Azerbaijan"
@@ -27696,7 +27742,8 @@
     "Bolivia"
   ],
   "Things Bosnian": [
-    "Bosnia and Herzegovina"
+    "Bosnia and Herzegovina",
+    "Sarajevo"
   ],
   "Things Botswanan": [
     "Bechuanaland",
@@ -28990,6 +29037,7 @@
     "Senegal"
   ],
   "Things Serbian": [
+    "Gavrilo Princip",
     "Serbia",
     "Tesla"
   ],
@@ -30021,6 +30069,7 @@
   "World War I": [
     "Britannic",
     "Hood",
+    "June 28th, 1914",
     "Lusitania"
   ],
   "World War II": [
