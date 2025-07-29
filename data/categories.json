@@ -2140,6 +2140,44 @@
   "Akira Kurosawa": [
     "Kurosawa"
   ],
+  "Alcoholic Drinks": [
+    "Absinthe",
+    "Baijiu",
+    "Beer",
+    "Bordeaux",
+    "Bourbon",
+    "Burgundy",
+    "Cachaça",
+    "Champagne",
+    "Chianti",
+    "Cider",
+    "Craft Beer",
+    "Gin",
+    "Ice Wine",
+    "Mead",
+    "Mezcal",
+    "Pilsner",
+    "Pisco",
+    "Port",
+    "Prosecco",
+    "Red Wine",
+    "Rosé",
+    "Rum",
+    "Rye Whiskey",
+    "Sake",
+    "Sangria",
+    "Scotch",
+    "Sherry",
+    "Soju",
+    "Sparkling Wine",
+    "Stout",
+    "Tequila",
+    "Vodka",
+    "Weissbier",
+    "Whiskey",
+    "White Wine",
+    "Wine"
+  ],
   "Alliances": [
     "Alliance",
     "Federation",
@@ -27104,6 +27142,7 @@
     "West Side Story",
     "Wheel of Fortune",
     "Where the Wild Things Are",
+    "Whiskey",
     "White Christmas",
     "Whitney",
     "Wilson",
@@ -28454,7 +28493,8 @@
     "Saudi Arabia"
   ],
   "Things Scottish": [
-    "Scotch"
+    "Scotch",
+    "Whiskey"
   ],
   "Things Senegalese": [
     "Senegal"
