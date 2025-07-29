@@ -6426,11 +6426,14 @@
     "Things American"
   ],
   "Whiskey": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with KEY",
     "NATO Phonetic Alphabet",
     "Starts with WHI",
-    "Things Irish"
+    "Things American",
+    "Things Irish",
+    "Things Scottish"
   ],
   "X-ray": [
     "Ends with RAY",
@@ -20401,48 +20404,56 @@
     "Things British"
   ],
   "Sake": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with AKE",
     "Starts with SAK",
     "Things Japanese"
   ],
   "Soju": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with OJU",
     "Starts with SOJ",
     "Things Korean"
   ],
   "Baijiu": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with JIU",
     "Starts with BAI",
     "Things Chinese"
   ],
   "Tequila": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with ILA",
     "Starts with TEQ",
     "Things Mexican"
   ],
   "Mezcal": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with CAL",
     "Starts with MEZ",
     "Things Mexican"
   ],
   "Pisco": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with SCO",
     "Starts with PIS",
     "Things Peruvian"
   ],
   "Cachaça": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with AÇA",
     "Starts with CAC",
     "Things Brazilian"
   ],
   "Absinthe": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with THE",
     "Green Things",
@@ -20450,78 +20461,91 @@
     "Things French"
   ],
   "Champagne": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with GNE",
     "Starts with CHA",
     "Things French"
   ],
   "Bordeaux": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with AUX",
     "Starts with BOR",
     "Things French"
   ],
   "Burgundy": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with NDY",
     "Starts with BUR",
     "Things French"
   ],
   "Chianti": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with NTI",
     "Starts with CHI",
     "Things Italian"
   ],
   "Prosecco": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with CCO",
     "Starts with PRO",
     "Things Italian"
   ],
   "Port": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with ORT",
     "Starts with POR",
     "Things Portuguese"
   ],
   "Sherry": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with RRY",
     "Starts with SHE",
     "Things Spanish"
   ],
   "Sangria": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with RIA",
     "Starts with SAN",
     "Things Spanish"
   ],
   "Vodka": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with DKA",
     "Starts with VOD",
     "Things Russian"
   ],
   "Beer": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with EER",
     "Starts with BEE",
     "Things German"
   ],
   "Weissbier": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with IER",
     "Starts with WEI",
     "Things German"
   ],
   "Pilsner": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with NER",
     "Starts with PIL",
     "Things Czech"
   ],
   "Stout": [
+    "Alcoholic Drinks",
     "Black Things",
     "Drinks",
     "Ends with OUT",
@@ -20529,36 +20553,42 @@
     "Things Irish"
   ],
   "Scotch": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with TCH",
     "Starts with SCO",
     "Things Scottish"
   ],
   "Gin": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with GIN",
     "Starts with GIN",
     "Things British"
   ],
   "Rum": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with RUM",
     "Starts with RUM",
     "Things Caribbean"
   ],
   "Bourbon": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with BON",
     "Starts with BOU",
     "Things American"
   ],
   "Rye Whiskey": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with KEY",
     "Starts with RYE",
     "Things American"
   ],
   "Craft Beer": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with EER",
     "Starts with CRA",
@@ -20699,24 +20729,28 @@
     "Things American"
   ],
   "Cider": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with DER",
     "Starts with CID",
     "Things American"
   ],
   "Mead": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with EAD",
     "Starts with MEA",
     "Things British"
   ],
   "Wine": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with INE",
     "Starts with WIN",
     "Things French"
   ],
   "Red Wine": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with INE",
     "Red Things",
@@ -20724,6 +20758,7 @@
     "Things French"
   ],
   "White Wine": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with INE",
     "Starts with WHI",
@@ -20731,6 +20766,7 @@
     "White Things"
   ],
   "Rosé": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with OSÉ",
     "Pink Things",
@@ -20738,12 +20774,14 @@
     "Things French"
   ],
   "Sparkling Wine": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with INE",
     "Starts with SPA",
     "Things French"
   ],
   "Ice Wine": [
+    "Alcoholic Drinks",
     "Drinks",
     "Ends with INE",
     "Starts with ICE",
