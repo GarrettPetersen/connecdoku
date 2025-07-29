@@ -6861,7 +6861,10 @@
     "Ends with TEA",
     "Green Things",
     "Hot Beverages",
-    "Starts with GRE"
+    "Starts with GRE",
+    "Things Chinese",
+    "Things Japanese",
+    "Things Korean"
   ],
   "Emerald": [
     "Ends with ALD",
@@ -7767,7 +7770,10 @@
     "Ends with FEE",
     "Hot Beverages",
     "Starts with COF",
-    "Things American"
+    "Things American",
+    "Things Brazilian",
+    "Things Colombian",
+    "Things Ethiopian"
   ],
   "Python": [
     "Ends with HON",
@@ -20588,7 +20594,10 @@
     "Drinks",
     "Ends with TEA",
     "Starts with TEA",
-    "Things British"
+    "Things British",
+    "Things Chinese",
+    "Things Indian",
+    "Things Sri Lankan"
   ],
   "Earl Grey": [
     "Drinks",
@@ -20636,7 +20645,8 @@
   "Kombucha": [
     "Drinks",
     "Ends with CHA",
-    "Starts with KOM"
+    "Starts with KOM",
+    "Things Chinese"
   ],
   "Kefir": [
     "Drinks",
