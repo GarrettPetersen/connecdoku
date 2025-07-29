@@ -804,11 +804,15 @@
     "The Roman Empire"
   ],
   "1st Century BC": [
-    "Beware the Ides of March",
+    "Brutus",
     "Caesar",
+    "Cassius",
     "Cleopatra",
+    "Curia",
     "Emperor Wu of Han",
+    "Et tu, Brute?",
     "Friends, Romans, countrymen",
+    "Ides of March",
     "The Roman Empire",
     "Veni, vidi, vici"
   ],
@@ -2259,6 +2263,7 @@
     "Chichen Itza",
     "Colosseum",
     "Colossus of Rhodes",
+    "Curia",
     "Great Wall",
     "Hanging Gardens",
     "Lighthouse of Alexandria",
@@ -2297,6 +2302,9 @@
   ],
   "Ancient Figures": [
     "Aristotle",
+    "Brutus",
+    "Caesar",
+    "Cassius",
     "Confucius",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
@@ -2450,6 +2458,15 @@
     "Sarajevo",
     "Sophie, Duchess of Hohenberg"
   ],
+  "Assassination of Caesar": [
+    "Brutus",
+    "Caesar",
+    "Cassius",
+    "Curia",
+    "Et tu, Brute?",
+    "Ides of March",
+    "Rome"
+  ],
   "Assassination of JFK": [
     "Carcano Model 38",
     "Dallas",
@@ -2466,6 +2483,8 @@
     "Washington"
   ],
   "Assassins": [
+    "Brutus",
+    "Cassius",
     "Gavrilo Princip",
     "John Wilkes Booth",
     "Lee Harvey Oswald"
@@ -3142,6 +3161,7 @@
     "Christ the Redeemer",
     "Colosseum",
     "Colossus of Rhodes",
+    "Curia",
     "Eiffel Tower",
     "Empire State Building",
     "Forbidden City",
@@ -4888,6 +4908,7 @@
   "Dates": [
     "April 14th, 1865",
     "December 7th, 1941",
+    "Ides of March",
     "June 28th, 1914",
     "June 4th, 1942",
     "November 22nd, 1963"
@@ -7681,6 +7702,7 @@
   ],
   "Ends with IUS": [
     "Aquarius",
+    "Cassius",
     "Confucius",
     "Mauritius",
     "Sagittarius",
@@ -9131,8 +9153,8 @@
     "Pierce"
   ],
   "Ends with RCH": [
-    "Beware the Ides of March",
-    "Birch"
+    "Birch",
+    "Ides of March"
   ],
   "Ends with RCK": [
     "Bismarck"
@@ -9210,6 +9232,7 @@
     "Andrea Doria",
     "Austria",
     "Bulgaria",
+    "Curia",
     "Gran Canaria",
     "Illyria",
     "Liberia",
@@ -9622,6 +9645,9 @@
     "Overwatch",
     "Scotch"
   ],
+  "Ends with TE?": [
+    "Et tu, Brute?"
+  ],
   "Ends with TEA": [
     "Bubble Tea",
     "Green Tea",
@@ -9778,6 +9804,7 @@
     "Arrietty"
   ],
   "Ends with TUS": [
+    "Brutus",
     "Invictus"
   ],
   "Ends with TZA": [
@@ -10617,11 +10644,11 @@
   "Famous Quotes": [
     "All the world's a stage",
     "Ask not what your country can do for you",
-    "Beware the Ides of March",
     "Blood, toil, tears and sweat",
     "Call me Ishmael",
     "December 7th, 1941",
     "Elementary, my dear Watson",
+    "Et tu, Brute?",
     "Four score and seven years ago",
     "Frankly, my dear, I don't give a damn",
     "Friends, Romans, countrymen",
@@ -11928,6 +11955,9 @@
   "Historical Epics": [
     "Cleopatra"
   ],
+  "Historical Events": [
+    "Ides of March"
+  ],
   "Historical Fiction": [
     "Les Misérables",
     "Romance of the Three Kingdoms",
@@ -11943,6 +11973,9 @@
     "Bach",
     "Batu Khan",
     "Beethoven",
+    "Brutus",
+    "Caesar",
+    "Cassius",
     "Catherine Howard",
     "Catherine Parr",
     "Catherine of Aragon",
@@ -12010,6 +12043,7 @@
     "Ögedei Khan"
   ],
   "Historical Sites": [
+    "Curia",
     "Ford's Theatre",
     "Globe Theatre"
   ],
@@ -12537,6 +12571,7 @@
     "All the world's a stage",
     "Call me Ishmael",
     "Elementary, my dear Watson",
+    "Et tu, Brute?",
     "Give me liberty or give me death",
     "It was the best of times",
     "The realm, long divided, must unite",
@@ -19132,6 +19167,7 @@
     "Bismarck",
     "Brando",
     "Bravo",
+    "Brutus",
     "Buchanan",
     "Buddy Holly",
     "Bush",
@@ -19139,6 +19175,7 @@
     "Caesar",
     "Campanella",
     "Carter",
+    "Cassius",
     "Castro",
     "Catherine",
     "Catherine Howard",
@@ -20195,10 +20232,12 @@
     "Bell",
     "Benedict",
     "Bismarck",
+    "Brutus",
     "Buchanan",
     "Bush",
     "Caesar",
     "Carter",
+    "Cassius",
     "Catherine",
     "Catherine Howard",
     "Catherine Parr",
@@ -20652,18 +20691,22 @@
     "Rome"
   ],
   "Roman Empire": [
-    "Beware the Ides of March",
     "Britannia",
+    "Brutus",
     "Caesar",
     "Carthage",
+    "Cassius",
     "Cleopatra",
     "Colosseum",
     "Constantinople",
+    "Curia",
+    "Et tu, Brute?",
     "Friends, Romans, countrymen",
     "Gaul",
     "Germania",
     "Herculaneum",
     "Hispania",
+    "Ides of March",
     "Illyria",
     "Mauretania",
     "Palestine",
@@ -21158,7 +21201,6 @@
     "Othello",
     "Puck",
     "Romeo",
-    "Something is rotten in Denmark",
     "The play's the thing"
   ],
   "Ships": [
@@ -22074,9 +22116,6 @@
   "Starts with BET": [
     "Beta"
   ],
-  "Starts with BEW": [
-    "Beware the Ides of March"
-  ],
   "Starts with BEY": [
     "Beyonce"
   ],
@@ -22232,7 +22271,8 @@
   "Starts with BRU": [
     "Bruin",
     "Brunei",
-    "Bruschetta"
+    "Bruschetta",
+    "Brutus"
   ],
   "Starts with BTS": [
     "BTS"
@@ -22352,6 +22392,7 @@
   "Starts with CAS": [
     "Casablanca",
     "Cassiopeia",
+    "Cassius",
     "Cassoulet",
     "Castle in the Sky",
     "Castro"
@@ -22612,6 +22653,7 @@
     "Cuba"
   ],
   "Starts with CUR": [
+    "Curia",
     "Curie",
     "Curling",
     "Curry"
@@ -22999,6 +23041,9 @@
   ],
   "Starts with ESW": [
     "Eswatini"
+  ],
+  "Starts with ET ": [
+    "Et tu, Brute?"
   ],
   "Starts with ETA": [
     "Eta"
@@ -23660,6 +23705,9 @@
   ],
   "Starts with ICH": [
     "Ichiro"
+  ],
+  "Starts with IDE": [
+    "Ides of March"
   ],
   "Starts with IF.": [
     "If...."
@@ -26997,7 +27045,7 @@
   ],
   "Theater Quotes": [
     "All the world's a stage",
-    "Beware the Ides of March",
+    "Et tu, Brute?",
     "Friends, Romans, countrymen",
     "Something is rotten in Denmark",
     "The play's the thing",
@@ -27891,6 +27939,7 @@
     "Elizabeth",
     "Elizabeth I",
     "Endeavour",
+    "Et tu, Brute?",
     "Faraday",
     "Fish and Chips",
     "Formula One",

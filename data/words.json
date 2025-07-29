@@ -468,6 +468,7 @@
   ],
   "Rome": [
     "Ancient Cities",
+    "Assassination of Caesar",
     "Cities",
     "Cities in Italy",
     "Ends with OME",
@@ -1020,6 +1021,16 @@
     "Starts with TOR",
     "Things Canadian"
   ],
+  "Curia": [
+    "1st Century BC",
+    "Ancient Buildings",
+    "Assassination of Caesar",
+    "Buildings",
+    "Ends with RIA",
+    "Historical Sites",
+    "Roman Empire",
+    "Starts with CUR"
+  ],
   "Seattle": [
     "Cities",
     "Cities in North America",
@@ -1394,6 +1405,18 @@
     "Chocolate Bars",
     "Ends with NTY",
     "Starts with BOU"
+  ],
+  "Brutus": [
+    "1st Century BC",
+    "Ancient Figures",
+    "Assassination of Caesar",
+    "Assassins",
+    "Ends with TUS",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Roman Empire",
+    "Starts with BRU"
   ],
   "KitKat": [
     "Chocolate Bars",
@@ -3596,9 +3619,12 @@
   ],
   "Caesar": [
     "1st Century BC",
+    "Ancient Figures",
+    "Assassination of Caesar",
     "Ends with SAR",
     "Eponymous Salads",
     "Foods",
+    "Historical Figures",
     "National Leaders",
     "People",
     "Real People",
@@ -6029,6 +6055,17 @@
     "Satellites",
     "Starts with DEI"
   ],
+  "Et tu, Brute?": [
+    "1st Century BC",
+    "Assassination of Caesar",
+    "Ends with TE?",
+    "Famous Quotes",
+    "Literature Quotes",
+    "Roman Empire",
+    "Starts with ET ",
+    "Theater Quotes",
+    "Things British"
+  ],
   "Europa": [
     "Astronomical Objects",
     "Ends with OPA",
@@ -7260,6 +7297,15 @@
     "Weather",
     "White Things"
   ],
+  "Ides of March": [
+    "1st Century BC",
+    "Assassination of Caesar",
+    "Dates",
+    "Ends with RCH",
+    "Historical Events",
+    "Roman Empire",
+    "Starts with IDE"
+  ],
   "Milk": [
     "Drinks",
     "Ends with ILK",
@@ -7629,6 +7675,18 @@
     "Ends with DOG",
     "Starts with DOG",
     "Types of Animals"
+  ],
+  "Cassius": [
+    "1st Century BC",
+    "Ancient Figures",
+    "Assassination of Caesar",
+    "Assassins",
+    "Ends with IUS",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Roman Empire",
+    "Starts with CAS"
   ],
   "Cat": [
     "Domesticated Animals",
@@ -26528,18 +26586,9 @@
     "16th Century",
     "Ends with ARK",
     "Famous Quotes",
-    "Shakespeare Characters",
     "Starts with SOM",
     "Theater Quotes",
     "Things British"
-  ],
-  "Beware the Ides of March": [
-    "1st Century BC",
-    "Ends with RCH",
-    "Famous Quotes",
-    "Roman Empire",
-    "Starts with BEW",
-    "Theater Quotes"
   ],
   "Friends, Romans, countrymen": [
     "1st Century BC",
