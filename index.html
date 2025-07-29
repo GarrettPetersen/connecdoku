@@ -2222,6 +2222,13 @@ function init(puz){
       
       freezeIntersections();
       
+      // Apply locking mechanism if 3 rows or 3 columns are solved
+      if (solvedRows.size === 3 && solvedCols.size < 4) {
+        disableSameHeaders('row');
+      } else if (solvedCols.size === 3 && solvedRows.size < 4) {
+        disableSameHeaders('col');
+      }
+      
       // If puzzle is already completed (either solved or failed), show share popup
       if (finished || (solvedRows.size === 4 && solvedCols.size === 4)) {
         // If finished due to 3 strikes, we need to show the correct category labels
