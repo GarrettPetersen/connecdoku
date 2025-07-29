@@ -24950,8 +24950,8 @@
     "Ends with THY",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with JOE",
     "Things American"
   ],
@@ -24965,7 +24965,6 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
-    "Political Figures",
     "Real People",
     "Starts with NIX",
     "Things American",
@@ -25110,8 +25109,8 @@
     "Ends with LIN",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with JOS",
     "Things Russian"
   ],
@@ -25121,8 +25120,8 @@
     "Ends with KOV",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with MAL",
     "Things American"
   ],
@@ -25132,8 +25131,8 @@
     "Ends with SER",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with NAS",
     "Things Egyptian"
   ],
@@ -25172,8 +25171,8 @@
     "Ends with OHN",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with ROY",
     "Things American"
   ],
@@ -25183,8 +25182,8 @@
     "Ends with RON",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with JUA",
     "Things American"
   ],
@@ -25279,8 +25278,8 @@
     "Ends with HEV",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with KRU",
     "Things Russian"
   ],
@@ -25316,8 +25315,10 @@
   "Sputnik": [
     "1960s",
     "20th Century",
+    "Cold War",
     "Ends with NIK",
     "Mentioned in We Didn't Start the Fire",
+    "Space Exploration",
     "Starts with SPU",
     "Technology",
     "Things Russian"
@@ -25410,8 +25411,8 @@
     "Ends with TRO",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with CAS",
     "Things Cuban"
   ],
@@ -25429,8 +25430,8 @@
     "Ends with HEE",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with SYN",
     "Things South Korean"
   ],
@@ -25484,8 +25485,8 @@
     "Ends with ANN",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with EIC",
     "Things German"
   ],
@@ -25573,8 +25574,8 @@
     "Ends with GIN",
     "Male Names",
     "Mentioned in We Didn't Start the Fire",
+    "National Leaders",
     "People",
-    "Political Figures",
     "Starts with BEG",
     "Things American"
   ],
@@ -25957,5 +25958,415 @@
     "Roman Empire",
     "Starts with PAL",
     "Things Middle Eastern"
+  ],
+  "I'll be back": [
+    "20th Century",
+    "Ends with ACK",
+    "Famous Quotes",
+    "Movie Lines",
+    "Sci-fi Stories",
+    "Starts with I'L",
+    "Things American"
+  ],
+  "May the Force be with you": [
+    "20th Century",
+    "Ends with YOU",
+    "Famous Quotes",
+    "Movie Lines",
+    "Star Wars Universe",
+    "Starts with MAY",
+    "Things American"
+  ],
+  "I am your father": [
+    "20th Century",
+    "Ends with HER",
+    "Famous Quotes",
+    "Movie Lines",
+    "Star Wars Universe",
+    "Starts with I A",
+    "Things American"
+  ],
+  "Here's looking at you, kid": [
+    "20th Century",
+    "Classic Films",
+    "Ends with KID",
+    "Famous Quotes",
+    "Movie Lines",
+    "Romance Stories",
+    "Starts with HER",
+    "Things American"
+  ],
+  "Frankly, my dear, I don't give a damn": [
+    "20th Century",
+    "Classic Films",
+    "Ends with AMN",
+    "Famous Quotes",
+    "Movie Lines",
+    "Romance Stories",
+    "Starts with FRA",
+    "Things American"
+  ],
+  "I'm the king of the world": [
+    "20th Century",
+    "Ends with RLD",
+    "Famous Quotes",
+    "Movie Lines",
+    "Romance Stories",
+    "Starts with I'M",
+    "Things American"
+  ],
+  "Houston, we have a problem": [
+    "20th Century",
+    "Cold War",
+    "Ends with LEM",
+    "Famous Quotes",
+    "Movie Lines",
+    "Sci-fi Stories",
+    "Space Exploration",
+    "Starts with HOU",
+    "Things American"
+  ],
+  "Life is like a box of chocolates": [
+    "20th Century",
+    "Coming of Age Stories",
+    "Ends with TES",
+    "Famous Quotes",
+    "Movie Lines",
+    "Romance Stories",
+    "Starts with LIF",
+    "Things American"
+  ],
+  "You had me at hello": [
+    "20th Century",
+    "Ends with LLO",
+    "Famous Quotes",
+    "Movie Lines",
+    "Romance Stories",
+    "Starts with YOU",
+    "Things American"
+  ],
+  "I see dead people": [
+    "20th Century",
+    "Ends with PLE",
+    "Famous Quotes",
+    "Horror Stories",
+    "Movie Lines",
+    "Starts with I S",
+    "Things American"
+  ],
+  "Ask not what your country can do for you": [
+    "20th Century",
+    "Ends with YOU",
+    "Famous Quotes",
+    "Political Speeches",
+    "Presidential Speeches",
+    "Starts with ASK",
+    "Things American"
+  ],
+  "Nothing to fear but fear itself": [
+    "20th Century",
+    "Ends with ELF",
+    "Famous Quotes",
+    "Political Speeches",
+    "Presidential Speeches",
+    "Starts with NOT",
+    "Things American"
+  ],
+  "Four score and seven years ago": [
+    "19th Century",
+    "Ends with AGO",
+    "Famous Quotes",
+    "Political Speeches",
+    "Presidential Speeches",
+    "Starts with FOU",
+    "Things American"
+  ],
+  "I have a dream": [
+    "20th Century",
+    "Civil Rights",
+    "Ends with EAM",
+    "Famous Quotes",
+    "Political Speeches",
+    "Starts with I H",
+    "Things American"
+  ],
+  "Tear down this wall": [
+    "20th Century",
+    "Cold War",
+    "Ends with ALL",
+    "Famous Quotes",
+    "Political Speeches",
+    "Presidential Speeches",
+    "Starts with TEA",
+    "Things American"
+  ],
+  "December 7th, 1941": [
+    "20th Century",
+    "Dates",
+    "Ends with 941",
+    "Famous Quotes",
+    "Political Speeches",
+    "Presidential Speeches",
+    "Starts with DEC",
+    "Things American",
+    "World War II"
+  ],
+  "To be or not to be": [
+    "16th Century",
+    "Ends with  BE",
+    "Famous Quotes",
+    "Literature Quotes",
+    "Starts with TO ",
+    "Theater Quotes",
+    "Things British"
+  ],
+  "All the world's a stage": [
+    "16th Century",
+    "Ends with AGE",
+    "Famous Quotes",
+    "Literature Quotes",
+    "Starts with ALL",
+    "Theater Quotes",
+    "Things British"
+  ],
+  "Water, water everywhere": [
+    "19th Century",
+    "Ends with ERE",
+    "Famous Quotes",
+    "Literature Quotes",
+    "Rime of the Ancient Mariner",
+    "Starts with WAT",
+    "Things British"
+  ],
+  "It was the best of times": [
+    "19th Century",
+    "Classic Literature",
+    "Ends with MES",
+    "Famous Quotes",
+    "Literature Quotes",
+    "Starts with IT ",
+    "Things British"
+  ],
+  "Call me Ishmael": [
+    "19th Century",
+    "Classic Literature",
+    "Ends with AEL",
+    "Famous Quotes",
+    "Literature Quotes",
+    "Starts with CAL",
+    "Things American"
+  ],
+  "Elementary, my dear Watson": [
+    "19th Century",
+    "Classic Literature",
+    "Ends with SON",
+    "Famous Quotes",
+    "Literature Quotes",
+    "Starts with ELE",
+    "Things British"
+  ],
+  "Give me liberty or give me death": [
+    "18th Century",
+    "Classic Literature",
+    "Ends with ATH",
+    "Famous Quotes",
+    "Literature Quotes",
+    "Starts with GIV",
+    "Things American"
+  ],
+  "Veni, vidi, vici": [
+    "1st Century BC",
+    "Ends with ICI",
+    "Famous Quotes",
+    "Historical Speeches",
+    "Roman Empire",
+    "Starts with VEN"
+  ],
+  "We will fight them on the beaches": [
+    "20th Century",
+    "Ends with HES",
+    "Famous Quotes",
+    "Historical Speeches",
+    "Starts with WE ",
+    "Things British",
+    "World War II"
+  ],
+  "Blood, toil, tears and sweat": [
+    "20th Century",
+    "Ends with EAT",
+    "Famous Quotes",
+    "Historical Speeches",
+    "Starts with BLO",
+    "Things British",
+    "World War II"
+  ],
+  "I think, therefore I am": [
+    "17th Century",
+    "Ends with  AM",
+    "Famous Quotes",
+    "Philosophers",
+    "Philosophy Quotes",
+    "Starts with I T",
+    "Things French"
+  ],
+  "The unexamined life is not worth living": [
+    "5th Century BC",
+    "Ends with ING",
+    "Famous Quotes",
+    "Philosophers",
+    "Philosophy Quotes",
+    "Starts with THE",
+    "Things Greek"
+  ],
+  "Know thyself": [
+    "5th Century BC",
+    "Ends with ELF",
+    "Famous Quotes",
+    "Philosophers",
+    "Philosophy Quotes",
+    "Starts with KNO",
+    "Things Greek"
+  ],
+  "Render unto Caesar": [
+    "1st Century",
+    "Bible",
+    "Ends with SAR",
+    "Famous Quotes",
+    "Philosophy Quotes",
+    "Roman Empire",
+    "Starts with REN",
+    "Things Middle Eastern"
+  ],
+  "Let there be light": [
+    "Ancient Times",
+    "Bible",
+    "Ends with GHT",
+    "Famous Quotes",
+    "Philosophy Quotes",
+    "Starts with LET",
+    "Things Middle Eastern"
+  ],
+  "One small step for man": [
+    "20th Century",
+    "Cold War",
+    "Ends with MAN",
+    "Famous Quotes",
+    "Science Quotes",
+    "Space Exploration",
+    "Starts with ONE",
+    "Things American"
+  ],
+  "The Eagle has landed": [
+    "20th Century",
+    "Cold War",
+    "Ends with DED",
+    "Famous Quotes",
+    "Science Quotes",
+    "Space Exploration",
+    "Starts with THE",
+    "Things American"
+  ],
+  "We shall never surrender": [
+    "20th Century",
+    "Ends with DER",
+    "Famous Quotes",
+    "Starts with WE ",
+    "Things British",
+    "War Quotes",
+    "World War II"
+  ],
+  "The play's the thing": [
+    "16th Century",
+    "Ends with ING",
+    "Famous Quotes",
+    "Shakespeare Characters",
+    "Starts with THE",
+    "Theater Quotes",
+    "Things British"
+  ],
+  "Something is rotten in Denmark": [
+    "16th Century",
+    "Ends with ARK",
+    "Famous Quotes",
+    "Shakespeare Characters",
+    "Starts with SOM",
+    "Theater Quotes",
+    "Things British"
+  ],
+  "Beware the Ides of March": [
+    "1st Century BC",
+    "Ends with RCH",
+    "Famous Quotes",
+    "Roman Empire",
+    "Starts with BEW",
+    "Theater Quotes"
+  ],
+  "Friends, Romans, countrymen": [
+    "1st Century BC",
+    "Ends with MEN",
+    "Famous Quotes",
+    "Roman Empire",
+    "Starts with FRI",
+    "Theater Quotes"
+  ],
+  "We didn't start the fire": [
+    "Ends with IRE",
+    "Mentioned in We Didn't Start the Fire",
+    "Music",
+    "Song Lyrics",
+    "Starts with WE ",
+    "Things American"
+  ],
+  "The realm, long divided, must unite": [
+    "14th Century",
+    "Classic Literature",
+    "Ends with ITE",
+    "Famous Quotes",
+    "Literature Quotes",
+    "Starts with THE",
+    "Things Chinese"
+  ],
+  "L'etat c'est moi": [
+    "17th Century",
+    "Ends with MOI",
+    "Famous Quotes",
+    "Historical Speeches",
+    "Political Speeches",
+    "Starts with L'E",
+    "Things French"
+  ],
+  "Qin": [
+    "3rd Century BC",
+    "Ancient Empires",
+    "Ancient Times",
+    "Chinese Dynasties",
+    "Ends with QIN",
+    "Starts with QIN",
+    "Things Chinese"
+  ],
+  "Sui": [
+    "6th Century",
+    "Ancient Empires",
+    "Chinese Dynasties",
+    "Ends with SUI",
+    "Starts with SUI",
+    "Things Chinese"
+  ],
+  "Yuan": [
+    "13th Century",
+    "Ancient Empires",
+    "Chinese Dynasties",
+    "Currency",
+    "Ends with UAN",
+    "Starts with YUA",
+    "Things Chinese"
+  ],
+  "Qing": [
+    "17th Century",
+    "Ancient Empires",
+    "Chinese Dynasties",
+    "Ends with ING",
+    "Starts with QIN",
+    "Things Chinese"
   ]
 }

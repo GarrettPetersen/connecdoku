@@ -30,6 +30,7 @@
     "The Mongol Empire",
     "The Tale of the Heike",
     "Tolui",
+    "Yuan",
     "Ögedei Khan"
   ],
   "1490s": [
@@ -44,6 +45,7 @@
     "The Divine Comedy",
     "The Hundred Years War",
     "The Peasants' Revolt",
+    "The realm, long divided, must unite",
     "Water Margin",
     "Zheng He",
     "Zhu Yuanzhang"
@@ -67,6 +69,7 @@
     "Mayflower"
   ],
   "16th Century": [
+    "All the world's a stage",
     "Anne Boleyn",
     "Anne of Cleves",
     "Aurora",
@@ -92,12 +95,15 @@
     "Queen Mary",
     "Romeo",
     "Shakespeare",
+    "Something is rotten in Denmark",
     "The British Empire",
     "The Catholic Counter-Reformation",
     "The English Reformation",
     "The Italian Wars",
     "The Protestant Reformation",
-    "The Spanish Armada"
+    "The Spanish Armada",
+    "The play's the thing",
+    "To be or not to be"
   ],
   "1780s": [
     "The Shays' Rebellion",
@@ -114,11 +120,14 @@
     "Don Quixote",
     "Galileo",
     "Handel",
+    "I think, therefore I am",
     "James",
     "Kepler",
+    "L'etat c'est moi",
     "Mayflower",
     "Ming",
     "Newton",
+    "Qing",
     "Salem",
     "Shakespeare",
     "The British Empire",
@@ -213,6 +222,7 @@
     "Belle",
     "Catherine",
     "Dream of the Red Chamber",
+    "Give me liberty or give me death",
     "Handel",
     "Jefferson",
     "Madison",
@@ -696,6 +706,7 @@
     "Bell",
     "Bismarck",
     "Buchanan",
+    "Call me Ishmael",
     "Challenger",
     "Cleveland",
     "Crime and Punishment",
@@ -704,14 +715,17 @@
     "Dracula",
     "Edison",
     "Einstein",
+    "Elementary, my dear Watson",
     "Faraday",
     "Fillmore",
+    "Four score and seven years ago",
     "Frankenstein",
     "Garfield",
     "Gran Colombia",
     "Grant",
     "Harrison",
     "Hayes",
+    "It was the best of times",
     "Jackson",
     "Jane Eyre",
     "Jefferson",
@@ -766,6 +780,7 @@
     "Victor",
     "Victoria",
     "War and Peace",
+    "Water, water everywhere",
     "Whitney",
     "Wilson",
     "Wuthering Heights"
@@ -773,13 +788,17 @@
   "1st Century": [
     "Mary",
     "Pompeii",
+    "Render unto Caesar",
     "The Roman Empire"
   ],
   "1st Century BC": [
+    "Beware the Ides of March",
     "Caesar",
     "Cleopatra",
     "Emperor Wu of Han",
-    "The Roman Empire"
+    "Friends, Romans, countrymen",
+    "The Roman Empire",
+    "Veni, vidi, vici"
   ],
   "2000s": [
     "1Q84",
@@ -1007,6 +1026,7 @@
     "Armageddon",
     "As I Lay Dying",
     "Ashes of Time",
+    "Ask not what your country can do for you",
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III",
@@ -1024,6 +1044,7 @@
     "Bill & Ted's Excellent Adventure",
     "Birth Control Pill",
     "Blade Runner",
+    "Blood, toil, tears and sweat",
     "Brando",
     "Brave New World",
     "Braveheart",
@@ -1073,6 +1094,7 @@
     "Davy Crockett",
     "Days of Being Wild",
     "Death Wish",
+    "December 7th, 1941",
     "Die Hard",
     "Die Hard 2",
     "Die Hard with a Vengeance",
@@ -1113,6 +1135,7 @@
     "Forrest Gump",
     "Four Weddings and a Funeral",
     "Franklin D. Roosevelt",
+    "Frankly, my dear, I don't give a damn",
     "Fred",
     "Fujita",
     "Galaxy Quest",
@@ -1137,15 +1160,22 @@
     "Hawking",
     "Heat",
     "Heather",
+    "Here's looking at you, kid",
     "High and Low",
     "Hindenburg",
     "Home Alone",
     "Home Alone 2: Lost in New York",
     "Homeless Veterans Crisis",
     "Hoover",
+    "Houston, we have a problem",
     "Howard's End",
     "Hubble",
     "Hula Hoop",
+    "I am your father",
+    "I have a dream",
+    "I see dead people",
+    "I'll be back",
+    "I'm the king of the world",
     "IT",
     "Ichiro",
     "If....",
@@ -1184,6 +1214,7 @@
     "Lawrence of Arabia",
     "Leo",
     "Liberace",
+    "Life is like a box of chocolates",
     "Light in August",
     "Little Shop of Horrors",
     "Lord of the Flies",
@@ -1201,6 +1232,7 @@
     "Mary Poppins",
     "Matilda",
     "Matsui",
+    "May the Force be with you",
     "Mays",
     "Mercury",
     "Midnight Cowboy",
@@ -1218,6 +1250,7 @@
     "North Vietnam",
     "North Yemen",
     "Norwegian Wood",
+    "Nothing to fear but fear itself",
     "O Lucky Man!",
     "Oh, the Places You'll Go!",
     "Olive",
@@ -1225,6 +1258,7 @@
     "On the Road",
     "One Flew Over the Cuckoo's Nest",
     "One Hundred Years of Solitude",
+    "One small step for man",
     "Ordinary People",
     "Othello",
     "Out of Africa",
@@ -1305,6 +1339,7 @@
     "Taft",
     "Tanaka",
     "Tanganyika",
+    "Tear down this wall",
     "Television",
     "Teresa",
     "Terminator 2: Judgment Day",
@@ -1341,6 +1376,7 @@
     "The Discovery of Penicillin",
     "The Door into Summer",
     "The Dust Bowl",
+    "The Eagle has landed",
     "The Empire Strikes Back",
     "The End of Eternity",
     "The English Patient",
@@ -1455,6 +1491,8 @@
     "Voyager",
     "Walkabout",
     "Watergate",
+    "We shall never surrender",
+    "We will fight them on the beaches",
     "West Germany",
     "West Side Story",
     "Wheel of Fortune",
@@ -1469,6 +1507,7 @@
     "World War II",
     "Wright",
     "Yojimbo",
+    "You had me at hello",
     "Zanzibar",
     "Zulu"
   ],
@@ -1817,7 +1856,8 @@
     "The Roman Empire"
   ],
   "3rd Century BC": [
-    "Emperor Qin Shi Huang"
+    "Emperor Qin Shi Huang",
+    "Qin"
   ],
   "4th Century": [
     "The Roman Empire"
@@ -1835,12 +1875,15 @@
   ],
   "5th Century BC": [
     "Confucius",
+    "Know thyself",
     "Plato",
     "Socrates",
     "Sun Tzu",
-    "The Ramayana"
+    "The Ramayana",
+    "The unexamined life is not worth living"
   ],
   "6th Century": [
+    "Sui",
     "The Plague of Justinian"
   ],
   "6th Century BC": [
@@ -2137,7 +2180,11 @@
     "Troy"
   ],
   "Ancient Empires": [
-    "Carthage"
+    "Carthage",
+    "Qin",
+    "Qing",
+    "Sui",
+    "Yuan"
   ],
   "Ancient Figures": [
     "Aristotle",
@@ -2157,6 +2204,10 @@
     "Ming",
     "Pharaoh",
     "Tsar"
+  ],
+  "Ancient Times": [
+    "Let there be light",
+    "Qin"
   ],
   "Animal Stories": [
     "The Jungle Book",
@@ -2497,6 +2548,10 @@
     "The Silence of the Lambs",
     "Titanic",
     "Unforgiven"
+  ],
+  "Bible": [
+    "Let there be light",
+    "Render unto Caesar"
   ],
   "Big Cats": [
     "Jaguar",
@@ -3094,9 +3149,13 @@
   "Chinese Dynasties": [
     "Han",
     "Ming",
+    "Qin",
+    "Qing",
     "Song",
+    "Sui",
     "Tang",
-    "Xia"
+    "Xia",
+    "Yuan"
   ],
   "Chocolate Bars": [
     "Bounty",
@@ -3424,6 +3483,9 @@
     "Trenton",
     "Washington"
   ],
+  "Civil Rights": [
+    "I have a dream"
+  ],
   "Civil War Stories": [
     "Gone with the Wind"
   ],
@@ -3465,7 +3527,9 @@
     "Casablanca",
     "Citizen Kane",
     "Cleopatra",
+    "Frankly, my dear, I don't give a damn",
     "Gone with the Wind",
+    "Here's looking at you, kid",
     "The Wizard of Oz"
   ],
   "Classic Literature": [
@@ -3477,13 +3541,17 @@
     "Anne of Green Gables",
     "As I Lay Dying",
     "Brave New World",
+    "Call me Ishmael",
     "Crime and Punishment",
     "Don Quixote",
     "Dracula",
     "Dream of the Red Chamber",
+    "Elementary, my dear Watson",
     "For Whom the Bell Tolls",
     "Frankenstein",
+    "Give me liberty or give me death",
     "Gone with the Wind",
+    "It was the best of times",
     "Jane Eyre",
     "Journey to the West",
     "Les Misérables",
@@ -3518,6 +3586,7 @@
     "The Tale of the Heike",
     "The Time Machine",
     "The Wind in the Willows",
+    "The realm, long divided, must unite",
     "To Kill a Mockingbird",
     "War and Peace",
     "Water Margin",
@@ -3548,9 +3617,11 @@
     "Carl Vinson",
     "Eisenhower",
     "Enterprise",
+    "Houston, we have a problem",
     "Lincoln",
     "Los Angeles",
     "Nimitz",
+    "One small step for man",
     "Queen Elizabeth 2",
     "Reagan",
     "Roosevelt",
@@ -3558,7 +3629,10 @@
     "San Jose",
     "San Juan",
     "San Pedro",
+    "Sputnik",
     "Stennis",
+    "Tear down this wall",
+    "The Eagle has landed",
     "Truman",
     "United States",
     "Washington"
@@ -3700,6 +3774,7 @@
   ],
   "Coming of Age Stories": [
     "Anne of Green Gables",
+    "Life is like a box of chocolates",
     "Little Women",
     "The Catcher in the Rye",
     "The Fault in Our Stars",
@@ -4555,6 +4630,9 @@
     "Queen Mary",
     "Queen Mary 2"
   ],
+  "Currency": [
+    "Yuan"
+  ],
   "D&D Stats": [
     "CHA",
     "CON",
@@ -4588,6 +4666,9 @@
     "CHA",
     "Foxtrot",
     "Tango"
+  ],
+  "Dates": [
+    "December 7th, 1941"
   ],
   "Demigods": [
     "Achilles",
@@ -4986,6 +5067,12 @@
   "Ends with  13": [
     "Apollo 13"
   ],
+  "Ends with  AM": [
+    "I think, therefore I am"
+  ],
+  "Ends with  BE": [
+    "To be or not to be"
+  ],
   "Ends with  FE": [
     "Santa Fe"
   ],
@@ -5048,6 +5135,9 @@
     "1970s",
     "The 1970s"
   ],
+  "Ends with 941": [
+    "December 7th, 1941"
+  ],
   "Ends with 984": [
     "1984"
   ],
@@ -5083,6 +5173,7 @@
   ],
   "Ends with ACK": [
     "Backpack",
+    "I'll be back",
     "Ice Pack",
     "The Empire Strikes Back"
   ],
@@ -5122,6 +5213,7 @@
     "My Fair Lady"
   ],
   "Ends with AEL": [
+    "Call me Ishmael",
     "Israel"
   ],
   "Ends with AFT": [
@@ -5133,6 +5225,7 @@
     "Kaga"
   ],
   "Ends with AGE": [
+    "All the world's a stage",
     "Carthage",
     "Ice Age",
     "Sage",
@@ -5144,6 +5237,7 @@
   ],
   "Ends with AGO": [
     "Chicago",
+    "Four score and seven years ago",
     "Santiago",
     "Trinidad and Tobago"
   ],
@@ -5235,6 +5329,7 @@
     "Football",
     "Great Wall",
     "Matzo Ball",
+    "Tear down this wall",
     "The Fall of the Berlin Wall",
     "Volleyball"
   ],
@@ -5269,6 +5364,9 @@
     "Miami",
     "Pastrami",
     "Sami"
+  ],
+  "Ends with AMN": [
+    "Frankly, my dear, I don't give a damn"
   ],
   "Ends with AMP": [
     "Lady and the Tramp",
@@ -5433,7 +5531,8 @@
     "Denmark",
     "Jurassic Park",
     "Sark",
-    "Shark"
+    "Shark",
+    "Something is rotten in Denmark"
   ],
   "Ends with ARL": [
     "Pirates of the Caribbean: The Curse of the Black Pearl"
@@ -5528,6 +5627,7 @@
     "Watergate"
   ],
   "Ends with ATH": [
+    "Give me liberty or give me death",
     "Goliath",
     "The Black Death",
     "The Grapes of Wrath"
@@ -5918,6 +6018,9 @@
     "The Holiday",
     "The Remains of the Day"
   ],
+  "Ends with DED": [
+    "The Eagle has landed"
+  ],
   "Ends with DEL": [
     "Apfelstrudel",
     "Handel"
@@ -5941,6 +6044,7 @@
     "The Rescuers Down Under",
     "Thunder",
     "Vader",
+    "We shall never surrender",
     "Wonder"
   ],
   "Ends with DES": [
@@ -6054,6 +6158,9 @@
     "Seal",
     "Teal"
   ],
+  "Ends with EAM": [
+    "I have a dream"
+  ],
   "Ends with EAN": [
     "Green Bean",
     "Ocean"
@@ -6073,6 +6180,7 @@
   ],
   "Ends with EAT": [
     "Beat",
+    "Blood, toil, tears and sweat",
     "Heat",
     "Montreal Smoked Meat"
   ],
@@ -6191,7 +6299,9 @@
     "Track and Field"
   ],
   "Ends with ELF": [
-    "Elf"
+    "Elf",
+    "Know thyself",
+    "Nothing to fear but fear itself"
   ],
   "Ends with ELL": [
     "Bell",
@@ -6278,6 +6388,7 @@
   "Ends with ERE": [
     "Ellesmere",
     "Tourtiere",
+    "Water, water everywhere",
     "When Marnie Was There"
   ],
   "Ends with ERG": [
@@ -6530,6 +6641,7 @@
   "Ends with GHT": [
     "Green Light",
     "Isle of Wight",
+    "Let there be light",
     "Moonlight",
     "Spotlight",
     "The Hateful Eight",
@@ -6665,13 +6777,15 @@
     "Happy Together",
     "Heather",
     "Her",
+    "I am your father",
     "Panther",
     "Pink Panther",
     "The Godfather",
     "Usher"
   ],
   "Ends with HES": [
-    "Tres Leches"
+    "Tres Leches",
+    "We will fight them on the beaches"
   ],
   "Ends with HEV": [
     "Krushchev"
@@ -6794,6 +6908,9 @@
     "Pride and Prejudice",
     "Spice",
     "Venice"
+  ],
+  "Ends with ICI": [
+    "Veni, vidi, vici"
   ],
   "Ends with ICK": [
     "Buick",
@@ -7004,6 +7121,7 @@
     "Lansing",
     "Ming",
     "Nothing",
+    "Qing",
     "Rock Climbing",
     "Rowing",
     "Sailing",
@@ -7024,6 +7142,8 @@
     "The Second Great Awakening",
     "The Shining",
     "The Thing",
+    "The play's the thing",
+    "The unexamined life is not worth living",
     "Trainspotting",
     "Weightlifting",
     "Wrestling",
@@ -7145,7 +7265,8 @@
     "Temeraire",
     "The British Empire",
     "The Mongol Empire",
-    "The Roman Empire"
+    "The Roman Empire",
+    "We didn't start the fire"
   ],
   "Ends with IRI": [
     "Onigiri"
@@ -7216,7 +7337,8 @@
   ],
   "Ends with ITE": [
     "Aphrodite",
-    "Parasite"
+    "Parasite",
+    "The realm, long divided, must unite"
   ],
   "Ends with ITH": [
     "Revenge of the Sith"
@@ -7361,6 +7483,9 @@
     "Czechoslovakia",
     "Slovakia"
   ],
+  "Ends with KID": [
+    "Here's looking at you, kid"
+  ],
   "Ends with KIE": [
     "Chocolate Chip Cookie",
     "Cookie"
@@ -7449,6 +7574,7 @@
     "Tabouleh"
   ],
   "Ends with LEM": [
+    "Houston, we have a problem",
     "Jerusalem",
     "Salem",
     "The Three-Body Problem"
@@ -7559,7 +7685,8 @@
   ],
   "Ends with LLO": [
     "Apollo",
-    "Othello"
+    "Othello",
+    "You had me at hello"
   ],
   "Ends with LLS": [
     "For Whom the Bell Tolls"
@@ -7644,6 +7771,7 @@
     "Isle of Man",
     "Massaman",
     "Oman",
+    "One small step for man",
     "Rain Man",
     "Scent of a Woman",
     "Snowman",
@@ -7688,6 +7816,7 @@
     "Bechamel"
   ],
   "Ends with MEN": [
+    "Friends, Romans, countrymen",
     "Little Women",
     "No Country for Old Men",
     "North Yemen",
@@ -7709,6 +7838,7 @@
   ],
   "Ends with MES": [
     "Hermes",
+    "It was the best of times",
     "James",
     "Thames",
     "The Hunger Games",
@@ -7735,6 +7865,9 @@
   "Ends with MOA": [
     "Samoa",
     "Western Samoa"
+  ],
+  "Ends with MOI": [
+    "L'etat c'est moi"
   ],
   "Ends with MON": [
     "Cinnamon",
@@ -8573,6 +8706,7 @@
     "Apple",
     "Constantinople",
     "Green Apple",
+    "I see dead people",
     "Ordinary People",
     "Purple",
     "The Color Purple",
@@ -8611,6 +8745,9 @@
   ],
   "Ends with Q84": [
     "1Q84"
+  ],
+  "Ends with QIN": [
+    "Qin"
   ],
   "Ends with QUE": [
     "Blue Mosque",
@@ -8681,6 +8818,7 @@
     "Pierce"
   ],
   "Ends with RCH": [
+    "Beware the Ides of March",
     "Birch"
   ],
   "Ends with RCK": [
@@ -8794,6 +8932,7 @@
   "Ends with RLD": [
     "A Map of the World",
     "Brave New World",
+    "I'm the king of the world",
     "Strange World"
   ],
   "Ends with RLS": [
@@ -8946,6 +9085,7 @@
     "Caesar",
     "Pulsar",
     "Quasar",
+    "Render unto Caesar",
     "Tsar"
   ],
   "Ends with SAU": [
@@ -9056,6 +9196,7 @@
   "Ends with SON": [
     "Carl Vinson",
     "Edison",
+    "Elementary, my dear Watson",
     "Harrison",
     "Hudson",
     "Jackson",
@@ -9097,7 +9238,8 @@
     "Tissue"
   ],
   "Ends with SUI": [
-    "Matsui"
+    "Matsui",
+    "Sui"
   ],
   "Ends with SUM": [
     "Dim Sum"
@@ -9203,6 +9345,7 @@
   ],
   "Ends with TES": [
     "Gates",
+    "Life is like a box of chocolates",
     "Socrates",
     "The Anubis Gates",
     "United Arab Emirates",
@@ -9332,7 +9475,8 @@
   ],
   "Ends with UAN": [
     "Gargantuan",
-    "San Juan"
+    "San Juan",
+    "Yuan"
   ],
   "Ends with UAR": [
     "Jaguar"
@@ -9700,6 +9844,10 @@
   ],
   "Ends with YON": [
     "Crayon"
+  ],
+  "Ends with YOU": [
+    "Ask not what your country can do for you",
+    "May the Force be with you"
   ],
   "Ends with YPT": [
     "Egypt"
@@ -10130,6 +10278,48 @@
     "Wish",
     "Wreck-It Ralph",
     "Zootopia"
+  ],
+  "Famous Quotes": [
+    "All the world's a stage",
+    "Ask not what your country can do for you",
+    "Beware the Ides of March",
+    "Blood, toil, tears and sweat",
+    "Call me Ishmael",
+    "December 7th, 1941",
+    "Elementary, my dear Watson",
+    "Four score and seven years ago",
+    "Frankly, my dear, I don't give a damn",
+    "Friends, Romans, countrymen",
+    "Give me liberty or give me death",
+    "Here's looking at you, kid",
+    "Houston, we have a problem",
+    "I am your father",
+    "I have a dream",
+    "I see dead people",
+    "I think, therefore I am",
+    "I'll be back",
+    "I'm the king of the world",
+    "It was the best of times",
+    "Know thyself",
+    "L'etat c'est moi",
+    "Let there be light",
+    "Life is like a box of chocolates",
+    "May the Force be with you",
+    "Nothing to fear but fear itself",
+    "One small step for man",
+    "Render unto Caesar",
+    "Something is rotten in Denmark",
+    "Tear down this wall",
+    "The Eagle has landed",
+    "The play's the thing",
+    "The realm, long divided, must unite",
+    "The unexamined life is not worth living",
+    "To be or not to be",
+    "Veni, vidi, vici",
+    "Water, water everywhere",
+    "We shall never surrender",
+    "We will fight them on the beaches",
+    "You had me at hello"
   ],
   "Famous Shipwrecks": [
     "Bismarck",
@@ -11454,6 +11644,12 @@
     "Zhu Yuanzhang",
     "Ögedei Khan"
   ],
+  "Historical Speeches": [
+    "Blood, toil, tears and sweat",
+    "L'etat c'est moi",
+    "Veni, vidi, vici",
+    "We will fight them on the beaches"
+  ],
   "Historical Weapons": [
     "Axe",
     "Bow",
@@ -11483,6 +11679,7 @@
     "Dracula",
     "Frankenstein",
     "Glass",
+    "I see dead people",
     "IT",
     "Jaws",
     "Little Shop of Horrors",
@@ -11963,6 +12160,16 @@
     "LED",
     "Neon",
     "Xenon"
+  ],
+  "Literature Quotes": [
+    "All the world's a stage",
+    "Call me Ishmael",
+    "Elementary, my dear Watson",
+    "Give me liberty or give me death",
+    "It was the best of times",
+    "The realm, long divided, must unite",
+    "To be or not to be",
+    "Water, water everywhere"
   ],
   "Liu Cixin": [
     "Ball Lightning",
@@ -12837,6 +13044,7 @@
     "U-2 Spy Plane Incident",
     "Vaccine",
     "Watergate",
+    "We didn't start the fire",
     "Wheel of Fortune",
     "Woodstock"
   ],
@@ -13272,6 +13480,18 @@
     "St. Helens",
     "Tambora",
     "Vesuvius"
+  ],
+  "Movie Lines": [
+    "Frankly, my dear, I don't give a damn",
+    "Here's looking at you, kid",
+    "Houston, we have a problem",
+    "I am your father",
+    "I see dead people",
+    "I'll be back",
+    "I'm the king of the world",
+    "Life is like a box of chocolates",
+    "May the Force be with you",
+    "You had me at hello"
   ],
   "Movie Ratings": [
     "G",
@@ -17783,7 +18003,8 @@
     "Song",
     "Soul",
     "Tune",
-    "Violin"
+    "Violin",
+    "We didn't start the fire"
   ],
   "Music Festivals": [
     "Woodstock"
@@ -18102,11 +18323,13 @@
     "Anne of Cleves",
     "Arthur",
     "Batu Khan",
+    "Begin",
     "Bismarck",
     "Buchanan",
     "Bush",
     "Caesar",
     "Carter",
+    "Castro",
     "Catherine",
     "Catherine Howard",
     "Catherine Parr",
@@ -18115,6 +18338,7 @@
     "Clinton",
     "Coolidge",
     "Edward VI",
+    "Eichmann",
     "Eisenhower",
     "Elizabeth",
     "Elizabeth I",
@@ -18134,16 +18358,22 @@
     "Jackson",
     "Jane Seymour",
     "Jefferson",
+    "Joe McCarthy",
     "Johnson",
+    "Joseph Stalin",
+    "Juan Peron",
     "Kennedy",
+    "Krushchev",
     "Kublai Khan",
     "Lady Jane Grey",
     "Lincoln",
     "Madison",
+    "Malenkov",
     "Mary I",
     "McKinley",
     "Monroe",
     "Möngke Khan",
+    "Nasser",
     "Nixon",
     "Obama",
     "Ozymandias",
@@ -18151,6 +18381,8 @@
     "Polk",
     "Reagan",
     "Roosevelt",
+    "Roy Cohn",
+    "Syngman Rhee",
     "Taft",
     "Taylor",
     "Temüjin",
@@ -18631,8 +18863,11 @@
   "Philosophers": [
     "Aristotle",
     "Confucius",
+    "I think, therefore I am",
+    "Know thyself",
     "Plato",
-    "Socrates"
+    "Socrates",
+    "The unexamined life is not worth living"
   ],
   "Philosophical Concepts": [
     "Infinity",
@@ -18642,6 +18877,13 @@
   ],
   "Philosophical Fiction": [
     "The Brothers Karamazov"
+  ],
+  "Philosophy Quotes": [
+    "I think, therefore I am",
+    "Know thyself",
+    "Let there be light",
+    "Render unto Caesar",
+    "The unexamined life is not worth living"
   ],
   "Photography Terms": [
     "Aperture",
@@ -19275,22 +19517,17 @@
   "Political Fiction": [
     "1984"
   ],
-  "Political Figures": [
-    "Begin",
-    "Castro",
-    "Eichmann",
-    "Joe McCarthy",
-    "Joseph Stalin",
-    "Juan Peron",
-    "Krushchev",
-    "Malenkov",
-    "Nasser",
-    "Nixon",
-    "Roy Cohn",
-    "Syngman Rhee"
-  ],
   "Political Satire": [
     "Animal Farm"
+  ],
+  "Political Speeches": [
+    "Ask not what your country can do for you",
+    "December 7th, 1941",
+    "Four score and seven years ago",
+    "I have a dream",
+    "L'etat c'est moi",
+    "Nothing to fear but fear itself",
+    "Tear down this wall"
   ],
   "Polymers": [
     "Nylon",
@@ -19342,6 +19579,13 @@
     "The Phantom Menace",
     "The Silmarillion",
     "X-Men: First Class"
+  ],
+  "Presidential Speeches": [
+    "Ask not what your country can do for you",
+    "December 7th, 1941",
+    "Four score and seven years ago",
+    "Nothing to fear but fear itself",
+    "Tear down this wall"
   ],
   "Prison Stories": [
     "The Shawshank Redemption"
@@ -19816,6 +20060,9 @@
   "Rhythm": [
     "Beat"
   ],
+  "Rime of the Ancient Mariner": [
+    "Water, water everywhere"
+  ],
   "River Crossings": [
     "Bridge",
     "Causeway",
@@ -19861,12 +20108,14 @@
     "Rome"
   ],
   "Roman Empire": [
+    "Beware the Ides of March",
     "Britannia",
     "Caesar",
     "Carthage",
     "Cleopatra",
     "Colosseum",
     "Constantinople",
+    "Friends, Romans, countrymen",
     "Gaul",
     "Germania",
     "Herculaneum",
@@ -19875,9 +20124,11 @@
     "Mauretania",
     "Palestine",
     "Pompeii",
+    "Render unto Caesar",
     "Roma",
     "Rome",
     "The Roman Empire",
+    "Veni, vidi, vici",
     "Vesuvius"
   ],
   "Roman Gods": [
@@ -19910,17 +20161,21 @@
     "Cleopatra",
     "Four Christmases",
     "Four Weddings and a Funeral",
+    "Frankly, my dear, I don't give a damn",
     "Gone with the Wind",
     "Grease",
     "Groundhog Day",
     "Hairspray",
     "Happy Together",
     "Her",
+    "Here's looking at you, kid",
+    "I'm the king of the world",
     "In the Mood for Love",
     "Jane Eyre",
     "Kate & Leopold",
     "La La Land",
     "Lady and the Tramp",
+    "Life is like a box of chocolates",
     "Love Actually",
     "Manhattan",
     "Moonrise Kingdom",
@@ -19951,7 +20206,8 @@
     "West Side Story",
     "White Christmas",
     "Working Girl",
-    "Wuthering Heights"
+    "Wuthering Heights",
+    "You had me at hello"
   ],
   "Rooms": [
     "Darkroom"
@@ -20156,6 +20412,8 @@
     "Frankenstein",
     "Galaxy Quest",
     "Her",
+    "Houston, we have a problem",
+    "I'll be back",
     "Interstellar",
     "Jurassic Park",
     "Lilo & Stitch",
@@ -20200,6 +20458,10 @@
     "WALL-E",
     "X-Men: Days of Future Past",
     "X-Men: First Class"
+  ],
+  "Science Quotes": [
+    "One small step for man",
+    "The Eagle has landed"
   ],
   "Scientific Events": [
     "The Discovery of Penicillin",
@@ -20346,7 +20608,9 @@
     "Macbeth",
     "Othello",
     "Puck",
-    "Romeo"
+    "Romeo",
+    "Something is rotten in Denmark",
+    "The play's the thing"
   ],
   "Ships": [
     "Akagi",
@@ -20537,11 +20801,18 @@
     "INT",
     "Key"
   ],
+  "Song Lyrics": [
+    "We didn't start the fire"
+  ],
   "South American Countries": [
     "Gran Colombia"
   ],
   "Space Exploration": [
+    "Houston, we have a problem",
+    "One small step for man",
+    "Sputnik",
     "The Apollo Program",
+    "The Eagle has landed",
     "The Hubble Telescope",
     "The Moon Landing",
     "The Space Race"
@@ -20747,10 +21018,12 @@
     "Chewbacca",
     "Desert",
     "Han",
+    "I am your father",
     "Kenobi",
     "Lando",
     "Leia",
     "Luke",
+    "May the Force be with you",
     "Millennium Falcon",
     "Palpatine",
     "Planet",
@@ -20909,6 +21182,7 @@
   "Starts with ALL": [
     "All Dressed Chips",
     "All You Need Is Kill",
+    "All the world's a stage",
     "Alliance"
   ],
   "Starts with ALM": [
@@ -21029,6 +21303,9 @@
   ],
   "Starts with ASH": [
     "Ashes of Time"
+  ],
+  "Starts with ASK": [
+    "Ask not what your country can do for you"
   ],
   "Starts with ATH": [
     "Athena",
@@ -21229,6 +21506,9 @@
   "Starts with BET": [
     "Beta"
   ],
+  "Starts with BEW": [
+    "Beware the Ides of March"
+  ],
   "Starts with BEY": [
     "Beyonce"
   ],
@@ -21283,7 +21563,8 @@
     "Blini"
   ],
   "Starts with BLO": [
-    "Blood"
+    "Blood",
+    "Blood, toil, tears and sweat"
   ],
   "Starts with BLU": [
     "Blue",
@@ -21455,7 +21736,8 @@
   "Starts with CAL": [
     "Caldo Verde",
     "California",
-    "California Baseball"
+    "California Baseball",
+    "Call me Ishmael"
   ],
   "Starts with CAM": [
     "Cambodia",
@@ -21824,6 +22106,9 @@
     "Death Wish",
     "Death's End"
   ],
+  "Starts with DEC": [
+    "December 7th, 1941"
+  ],
   "Starts with DEE": [
     "Deepwater Horizon"
   ],
@@ -22050,6 +22335,7 @@
   ],
   "Starts with ELE": [
     "Elemental",
+    "Elementary, my dear Watson",
     "Elephant"
   ],
   "Starts with ELF": [
@@ -22263,7 +22549,8 @@
   ],
   "Starts with FOU": [
     "Four Christmases",
-    "Four Weddings and a Funeral"
+    "Four Weddings and a Funeral",
+    "Four score and seven years ago"
   ],
   "Starts with FOX": [
     "Fox",
@@ -22276,6 +22563,7 @@
     "Frankenstein",
     "Frankfort",
     "Franklin D. Roosevelt",
+    "Frankly, my dear, I don't give a damn",
     "Fraud"
   ],
   "Starts with FRE": [
@@ -22292,7 +22580,8 @@
   ],
   "Starts with FRI": [
     "Fridge",
-    "Fried Chicken"
+    "Fried Chicken",
+    "Friends, Romans, countrymen"
   ],
   "Starts with FRO": [
     "From Up on Poppy Hill",
@@ -22394,6 +22683,9 @@
   ],
   "Starts with GIR": [
     "Giraffe"
+  ],
+  "Starts with GIV": [
+    "Give me liberty or give me death"
   ],
   "Starts with GLA": [
     "Gladiator",
@@ -22618,6 +22910,7 @@
     "Hera",
     "Herculaneum",
     "Hercules",
+    "Here's looking at you, kid",
     "Hermes",
     "Hermione",
     "Hero",
@@ -22683,7 +22976,8 @@
     "Hotteok"
   ],
   "Starts with HOU": [
-    "House of Flying Daggers"
+    "House of Flying Daggers",
+    "Houston, we have a problem"
   ],
   "Starts with HOW": [
     "How the Grinch Stole Christmas",
@@ -22720,6 +23014,24 @@
   "Starts with HYD": [
     "Hydra",
     "Hydrogen"
+  ],
+  "Starts with I A": [
+    "I am your father"
+  ],
+  "Starts with I H": [
+    "I have a dream"
+  ],
+  "Starts with I S": [
+    "I see dead people"
+  ],
+  "Starts with I T": [
+    "I think, therefore I am"
+  ],
+  "Starts with I'L": [
+    "I'll be back"
+  ],
+  "Starts with I'M": [
+    "I'm the king of the world"
   ],
   "Starts with IBI": [
     "Ibiza"
@@ -22821,6 +23133,9 @@
   ],
   "Starts with IST": [
     "Istanbul"
+  ],
+  "Starts with IT ": [
+    "It was the best of times"
   ],
   "Starts with IT'": [
     "It's a Wonderful Life"
@@ -23074,6 +23389,9 @@
   "Starts with KNI": [
     "Knife"
   ],
+  "Starts with KNO": [
+    "Know thyself"
+  ],
   "Starts with KOB": [
     "Kobe"
   ],
@@ -23135,6 +23453,9 @@
   ],
   "Starts with KÄS": [
     "Käsespätzle"
+  ],
+  "Starts with L'E": [
+    "L'etat c'est moi"
   ],
   "Starts with LA ": [
     "La Gomera",
@@ -23211,6 +23532,7 @@
     "Lesotho"
   ],
   "Starts with LET": [
+    "Let there be light",
     "Lettuce"
   ],
   "Starts with LEV": [
@@ -23231,6 +23553,9 @@
   ],
   "Starts with LIE": [
     "Liechtenstein"
+  ],
+  "Starts with LIF": [
+    "Life is like a box of chocolates"
   ],
   "Starts with LIG": [
     "Light in August",
@@ -23420,6 +23745,7 @@
     "Mausoleum"
   ],
   "Starts with MAY": [
+    "May the Force be with you",
     "Mayflower",
     "Mayo",
     "Mays"
@@ -23710,6 +24036,7 @@
     "Note",
     "Notebook",
     "Nothing",
+    "Nothing to fear but fear itself",
     "Notre Dame"
   ],
   "Starts with NOV": [
@@ -23802,7 +24129,8 @@
   "Starts with ONE": [
     "One Flew Over the Cuckoo's Nest",
     "One Hundred Years of Solitude",
-    "One Piece"
+    "One Piece",
+    "One small step for man"
   ],
   "Starts with ONI": [
     "Onigiri",
@@ -24164,6 +24492,10 @@
   "Starts with QAT": [
     "Qatar"
   ],
+  "Starts with QIN": [
+    "Qin",
+    "Qing"
+  ],
   "Starts with QUA": [
     "Quasar"
   ],
@@ -24242,6 +24574,7 @@
     "Redoutable"
   ],
   "Starts with REN": [
+    "Render unto Caesar",
     "Rent"
   ],
   "Starts with REP": [
@@ -24615,6 +24948,7 @@
   "Starts with SOM": [
     "Som Tam",
     "Somalia",
+    "Something is rotten in Denmark",
     "Somewhere in Time"
   ],
   "Starts with SON": [
@@ -24745,6 +25079,7 @@
     "Sugar Ray"
   ],
   "Starts with SUI": [
+    "Sui",
     "Suitcase"
   ],
   "Starts with SUK": [
@@ -24874,7 +25209,8 @@
   ],
   "Starts with TEA": [
     "Tea",
-    "Teal"
+    "Teal",
+    "Tear down this wall"
   ],
   "Starts with TEF": [
     "Teflon"
@@ -24974,6 +25310,7 @@
     "The Divine Comedy",
     "The Door into Summer",
     "The Dust Bowl",
+    "The Eagle has landed",
     "The Emperor's New Groove",
     "The Empire Strikes Back",
     "The End of Eternity",
@@ -25175,6 +25512,9 @@
     "The Wind-Up Bird Chronicle",
     "The Wizard of Oz",
     "The Yugoslav Wars",
+    "The play's the thing",
+    "The realm, long divided, must unite",
+    "The unexamined life is not worth living",
     "Thera",
     "Theseus",
     "Theta"
@@ -25224,7 +25564,8 @@
   ],
   "Starts with TO ": [
     "To Kill a Mockingbird",
-    "To Say Nothing of the Dog"
+    "To Say Nothing of the Dog",
+    "To be or not to be"
   ],
   "Starts with TOA": [
     "Toaster"
@@ -25425,6 +25766,7 @@
   ],
   "Starts with VEN": [
     "Venezuela",
+    "Veni, vidi, vici",
     "Venice",
     "Venom",
     "Venus"
@@ -25494,7 +25836,13 @@
   "Starts with WAT": [
     "Water Margin",
     "Water Polo",
+    "Water, water everywhere",
     "Watergate"
+  ],
+  "Starts with WE ": [
+    "We didn't start the fire",
+    "We shall never surrender",
+    "We will fight them on the beaches"
   ],
   "Starts with WEI": [
     "Weightlifting",
@@ -25627,8 +25975,14 @@
   "Starts with YOS": [
     "Yosemite Sam"
   ],
+  "Starts with YOU": [
+    "You had me at hello"
+  ],
   "Starts with YU ": [
     "Yu Xiang Qie Zi"
+  ],
+  "Starts with YUA": [
+    "Yuan"
   ],
   "Starts with YUG": [
     "Yugioh",
@@ -25979,6 +26333,14 @@
   "The Watergate Scandal": [
     "1970s"
   ],
+  "Theater Quotes": [
+    "All the world's a stage",
+    "Beware the Ides of March",
+    "Friends, Romans, countrymen",
+    "Something is rotten in Denmark",
+    "The play's the thing",
+    "To be or not to be"
+  ],
   "Things Abkhazian": [
     "Abkhazia"
   ],
@@ -26038,6 +26400,7 @@
     "Arrival",
     "Arthur",
     "As I Lay Dying",
+    "Ask not what your country can do for you",
     "Atlanta",
     "Atlantis",
     "Attack of the Clones",
@@ -26095,6 +26458,7 @@
     "Cabaret",
     "California",
     "California Baseball",
+    "Call me Ishmael",
     "Campanella",
     "Carl Vinson",
     "Cars",
@@ -26141,6 +26505,7 @@
     "Davy Crockett",
     "Death Proof",
     "Death Wish",
+    "December 7th, 1941",
     "Deja Vu",
     "Denver",
     "Des Moines",
@@ -26195,7 +26560,9 @@
     "Foreign Debt Crisis",
     "Forrest Gump",
     "Four Christmases",
+    "Four score and seven years ago",
     "Franklin D. Roosevelt",
+    "Frankly, my dear, I don't give a damn",
     "Fred",
     "Frequency",
     "Fried Chicken",
@@ -26205,6 +26572,7 @@
     "Gemini",
     "Ghostbusters",
     "Ghostbusters II",
+    "Give me liberty or give me death",
     "Gladiator",
     "Glass",
     "Godspell",
@@ -26234,6 +26602,7 @@
     "Helena",
     "Her",
     "Hercules",
+    "Here's looking at you, kid",
     "Holes",
     "Home Alone",
     "Home Alone 2: Lost in New York",
@@ -26245,9 +26614,15 @@
     "Hot Chocolate",
     "Hot Dog",
     "Hot Tub Time Machine",
+    "Houston, we have a problem",
     "How the Grinch Stole Christmas",
     "Hubble",
     "Hula Hoop",
+    "I am your father",
+    "I have a dream",
+    "I see dead people",
+    "I'll be back",
+    "I'm the king of the world",
     "IT",
     "Ice Age",
     "Iced Tea",
@@ -26300,6 +26675,7 @@
     "Lenore",
     "Leo",
     "Liberace",
+    "Life is like a box of chocolates",
     "Light in August",
     "Lilo & Stitch",
     "Lincoln",
@@ -26326,6 +26702,7 @@
     "Mary",
     "Mary Poppins",
     "Mary Poppins Returns",
+    "May the Force be with you",
     "Mayo",
     "Mays",
     "McKinley",
@@ -26365,6 +26742,7 @@
     "No Country for Old Men",
     "Nomadland",
     "Norwegian Bliss",
+    "Nothing to fear but fear itself",
     "Oasis of the Seas",
     "Obama",
     "Odyssey",
@@ -26376,6 +26754,7 @@
     "On the Road",
     "Once Upon a Time in Hollywood",
     "One Flew Over the Cuckoo's Nest",
+    "One small step for man",
     "Oppenheimer",
     "Orange",
     "Ordinary People",
@@ -26498,6 +26877,7 @@
     "Tangled",
     "Tarzan",
     "Taylor",
+    "Tear down this wall",
     "Television",
     "Tenet",
     "Terminator 2: Judgment Day",
@@ -26522,6 +26902,7 @@
     "The Devil's Advocate",
     "The Door into Summer",
     "The Dust Bowl",
+    "The Eagle has landed",
     "The Emperor's New Groove",
     "The Empire Strikes Back",
     "The End of Eternity",
@@ -26655,6 +27036,7 @@
     "Washington",
     "Water Polo",
     "Watergate",
+    "We didn't start the fire",
     "Weightlifting",
     "West Side Story",
     "Wheel of Fortune",
@@ -26673,6 +27055,7 @@
     "X-Men: Days of Future Past",
     "X-Men: First Class",
     "Yorktown",
+    "You had me at hello",
     "Zootopia"
   ],
   "Things Antiguan": [
@@ -26764,6 +27147,7 @@
     "About Time",
     "Alderney",
     "Alice's Adventures in Wonderland",
+    "All the world's a stage",
     "Animal Farm",
     "Anne Boleyn",
     "Archery",
@@ -26773,6 +27157,7 @@
     "Beagle",
     "Beatles",
     "Bellerophon",
+    "Blood, toil, tears and sweat",
     "Boaty McBoatface",
     "Boxing",
     "Brave New World",
@@ -26797,6 +27182,7 @@
     "Dracula",
     "Earl Grey",
     "Edward VI",
+    "Elementary, my dear Watson",
     "Elizabeth",
     "Elizabeth I",
     "Endeavour",
@@ -26830,6 +27216,7 @@
     "If....",
     "Isle of Man",
     "Isle of Wight",
+    "It was the best of times",
     "Jane Eyre",
     "Jane Seymour",
     "Jersey",
@@ -26879,6 +27266,7 @@
     "Slumdog Millionaire",
     "Snowman",
     "Soccer",
+    "Something is rotten in Denmark",
     "Southampton",
     "Sticky Toffee Pudding",
     "Stonehenge",
@@ -26929,15 +27317,20 @@
     "The Time Ships",
     "The Wicker Man",
     "The Wind in the Willows",
+    "The play's the thing",
     "Time Bandits",
     "Titanic",
     "To Say Nothing of the Dog",
+    "To be or not to be",
     "Trainspotting",
     "Trifle",
     "United Kingdom",
     "Victoria",
     "Victory",
     "Walkabout",
+    "Water, water everywhere",
+    "We shall never surrender",
+    "We will fight them on the beaches",
     "William the Conqueror",
     "Winnie-the-Pooh",
     "Winston Churchill",
@@ -27095,8 +27488,11 @@
     "Panda",
     "Peking Duck",
     "Ping Pong",
+    "Qin",
+    "Qing",
     "Raise the Red Lantern",
     "Romance of the Three Kingdoms",
+    "Sui",
     "Sun Tzu",
     "Sweet and Sour",
     "Table Tennis",
@@ -27108,11 +27504,13 @@
     "The Taiping Rebellion",
     "The Three-Body Problem",
     "The Wandering Earth",
+    "The realm, long divided, must unite",
     "Twice Cooked Pork",
     "Water Margin",
     "Wonton",
     "Xiaolongbao",
     "Yu Xiang Qie Zi",
+    "Yuan",
     "Zheng He",
     "Zhu Yuanzhang"
   ],
@@ -27236,7 +27634,9 @@
     "French Onion Soup",
     "Gaul",
     "Hollandaise",
+    "I think, therefore I am",
     "Joan of Arc",
+    "L'etat c'est moi",
     "Les Misérables",
     "Louvre",
     "Macaron",
@@ -27332,6 +27732,7 @@
     "Gyro",
     "Homer",
     "Iliad",
+    "Know thyself",
     "Moussaka",
     "Mykonos",
     "Olympus",
@@ -27347,6 +27748,7 @@
     "The Greek War of Independence",
     "The Iliad",
     "The Odyssey",
+    "The unexamined life is not worth living",
     "Tzatziki",
     "Zeus"
   ],
@@ -27792,9 +28194,11 @@
     "Hummus",
     "Kebab",
     "Knafeh",
+    "Let there be light",
     "Mansaf",
     "Palestine",
     "Pita",
+    "Render unto Caesar",
     "Shawarma",
     "Tabouleh",
     "Tahini"
@@ -28773,6 +29177,9 @@
     "Lawrence of Arabia",
     "The English Patient"
   ],
+  "War Quotes": [
+    "We shall never surrender"
+  ],
   "War Stories": [
     "Braveheart",
     "Bridge on the River Kwai",
@@ -29007,6 +29414,8 @@
     "Akagi",
     "Ark Royal",
     "Bismarck",
+    "Blood, toil, tears and sweat",
+    "December 7th, 1941",
     "Enterprise",
     "Gneisenau",
     "Hiryu",
@@ -29022,6 +29431,8 @@
     "Scharnhorst",
     "Soryu",
     "Tirpitz",
+    "We shall never surrender",
+    "We will fight them on the beaches",
     "Yamato",
     "Yorktown"
   ],
