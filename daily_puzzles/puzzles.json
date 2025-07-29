@@ -2238,5 +2238,45 @@
         "Hispania"
       ]
     ]
+  },
+  {
+    "rows": [
+      "14th Century",
+      "16th Century",
+      "17th Century",
+      "18th Century"
+    ],
+    "cols": [
+      "Books",
+      "Events",
+      "Famous Quotes",
+      "Historical Figures"
+    ],
+    "words": [
+      [
+        "Romance of the Three Kingdoms",
+        "The Black Death",
+        "The realm, long divided, must unite",
+        "Dante"
+      ],
+      [
+        "Journey to the West",
+        "The Protestant Reformation",
+        "To be or not to be",
+        "Anne Boleyn"
+      ],
+      [
+        "Don Quixote",
+        "The Thirty Years War",
+        "L'etat c'est moi",
+        "Galileo"
+      ],
+      [
+        "Dream of the Red Chamber",
+        "The American Revolution",
+        "Give me liberty or give me death",
+        "Mozart"
+      ]
+    ]
   }
 ]
