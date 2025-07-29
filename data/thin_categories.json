@@ -80,8 +80,32 @@
   "Movies featuring William Baldwin": [
     "Silver"
   ],
+  "French Words": [
+    "Chocolat"
+  ],
+  "Movies directed by Lasse Hallström": [
+    "Chocolat"
+  ],
+  "Movies featuring Alfred Molina": [
+    "Chocolat"
+  ],
+  "Movies featuring Carrie-Anne Moss": [
+    "Chocolat"
+  ],
   "Movies directed by Robert Schwentke": [
     "Red"
+  ],
+  "Movies directed by Max Barbakow": [
+    "Palm Springs"
+  ],
+  "Movies featuring Andy Samberg": [
+    "Palm Springs"
+  ],
+  "Movies featuring Cristin Milioti": [
+    "Palm Springs"
+  ],
+  "Movies featuring J.K. Simmons": [
+    "Palm Springs"
   ],
   "Things Georgian": [
     "Georgia"
@@ -2288,9 +2312,6 @@
   "Movies directed by Anthony Minghella": [
     "The English Patient"
   ],
-  "Movies featuring Juliette Binoche": [
-    "The English Patient"
-  ],
   "Movies directed by John Madden": [
     "Shakespeare in Love"
   ],
@@ -3122,6 +3143,14 @@
     "Ford",
     "Studebaker"
   ],
+  "Movies featuring Juliette Binoche": [
+    "Chocolat",
+    "The English Patient"
+  ],
+  "Movies named after foods": [
+    "Chocolat",
+    "Ratatouille"
+  ],
   "Golf Terms": [
     "Green",
     "Club"
@@ -3509,10 +3538,6 @@
   "Movies featuring Joseph Gordon-Levitt": [
     "Treasure Planet",
     "Looper"
-  ],
-  "Movies featuring Judi Dench": [
-    "Home on the Range",
-    "Shakespeare in Love"
   ],
   "Movies directed by Stephen Anderson": [
     "Meet the Robinsons",
@@ -4088,6 +4113,11 @@
     "Galileo",
     "Kepler",
     "Copernicus"
+  ],
+  "Movies featuring Judi Dench": [
+    "Chocolat",
+    "Home on the Range",
+    "Shakespeare in Love"
   ],
   "Star": [
     "Milky Way",

@@ -812,6 +812,7 @@
     "Ball Lightning",
     "Bush",
     "Chicago",
+    "Chocolat",
     "Clinton",
     "Concordia",
     "Crash",
@@ -986,6 +987,7 @@
     "In the Heights",
     "Nomadland",
     "Oppenheimer",
+    "Palm Springs",
     "Tenet",
     "The COVID-19 Pandemic",
     "The January 6th Insurrection",
@@ -1543,6 +1545,7 @@
     "CODA",
     "Chad",
     "Chicago",
+    "Chocolat",
     "Cobb",
     "Colorless Tsukuru Tazaki",
     "Concordia",
@@ -1644,6 +1647,7 @@
     "Olive",
     "Once Upon a Time in Hollywood",
     "Oppenheimer",
+    "Palm Springs",
     "Parasite",
     "Paul",
     "Percy Jackson & the Olympians",
@@ -3160,6 +3164,7 @@
   "Chocolate Bars": [
     "Bounty",
     "Butterfinger",
+    "Chocolat",
     "Crunch",
     "Galaxy",
     "Hershey",
@@ -3272,6 +3277,7 @@
     "New York",
     "Oklahoma City",
     "Olympia",
+    "Palm Springs",
     "Paris",
     "Phoenix",
     "Pierre",
@@ -3395,6 +3401,7 @@
     "New York",
     "Oklahoma City",
     "Olympia",
+    "Palm Springs",
     "Phoenix",
     "Pierre",
     "Providence",
@@ -3464,6 +3471,7 @@
     "New York",
     "Oklahoma City",
     "Olympia",
+    "Palm Springs",
     "Phoenix",
     "Pierre",
     "Providence",
@@ -3711,6 +3719,7 @@
     "Bill & Ted's Excellent Adventure",
     "Birdman",
     "CODA",
+    "Chocolat",
     "Don Quixote",
     "Dr. Strangelove",
     "Driving Miss Daisy",
@@ -3742,6 +3751,7 @@
     "National Lampoon's Christmas Vacation",
     "Oliver & Company",
     "Once Upon a Time in Hollywood",
+    "Palm Springs",
     "Parasite",
     "Red",
     "Red 2",
@@ -7552,6 +7562,7 @@
     "Goodfellas"
   ],
   "Ends with LAT": [
+    "Chocolat",
     "Kartoffelsalat"
   ],
   "Ends with LAU": [
@@ -8051,6 +8062,7 @@
     "Tango"
   ],
   "Ends with NGS": [
+    "Palm Springs",
     "The London Bombings",
     "The Lord of the Rings"
   ],
@@ -10738,6 +10750,7 @@
     "Chile Relleno",
     "Chimichanga",
     "Chimichurri",
+    "Chocolat",
     "Chocolate Chip Cookie",
     "Chow Fun",
     "Chow Mein",
@@ -11324,6 +11337,9 @@
   "French Navy": [
     "Bucentaure",
     "Redoutable"
+  ],
+  "French Words": [
+    "Chocolat"
   ],
   "Fruits": [
     "Apple",
@@ -12557,6 +12573,7 @@
     "Oahu",
     "Oklahoma City",
     "Olympia",
+    "Palm Springs",
     "Panama",
     "Phoenix",
     "Pierre",
@@ -13571,6 +13588,7 @@
     "Chicago",
     "Chicken Little",
     "Chinatown",
+    "Chocolat",
     "Chungking Express",
     "Cinderella",
     "Citizen Kane",
@@ -13736,6 +13754,7 @@
     "Oscar",
     "Othello",
     "Out of Africa",
+    "Palm Springs",
     "Parasite",
     "Performance",
     "Peter Pan",
@@ -14483,6 +14502,9 @@
   "Movies directed by Kunihiko Yuyama": [
     "Pokemon"
   ],
+  "Movies directed by Lasse Hallström": [
+    "Chocolat"
+  ],
   "Movies directed by Lee Unkrich": [
     "Coco"
   ],
@@ -14523,6 +14545,9 @@
   ],
   "Movies directed by Matthew Vaughn": [
     "X-Men: First Class"
+  ],
+  "Movies directed by Max Barbakow": [
+    "Palm Springs"
   ],
   "Movies directed by Mel Gibson": [
     "Braveheart"
@@ -15027,6 +15052,9 @@
   "Movies featuring Alexandra Shipp": [
     "Tick, Tick... Boom!"
   ],
+  "Movies featuring Alfred Molina": [
+    "Chocolat"
+  ],
   "Movies featuring Alida Valli": [
     "The Third Man"
   ],
@@ -15065,6 +15093,9 @@
   "Movies featuring Andy Lau": [
     "Days of Being Wild",
     "House of Flying Daggers"
+  ],
+  "Movies featuring Andy Samberg": [
+    "Palm Springs"
   ],
   "Movies featuring Angela Lansbury": [
     "Beauty and the Beast"
@@ -15388,6 +15419,9 @@
   "Movies featuring Carrie Henn": [
     "Aliens"
   ],
+  "Movies featuring Carrie-Anne Moss": [
+    "Chocolat"
+  ],
   "Movies featuring Cary Elwes": [
     "Saw"
   ],
@@ -15555,6 +15589,9 @@
   ],
   "Movies featuring Cree Summer": [
     "Atlantis"
+  ],
+  "Movies featuring Cristin Milioti": [
+    "Palm Springs"
   ],
   "Movies featuring Daisy Ridley": [
     "The Force Awakens",
@@ -16160,6 +16197,9 @@
   "Movies featuring Isuzu Yamada": [
     "Throne of Blood"
   ],
+  "Movies featuring J.K. Simmons": [
+    "Palm Springs"
+  ],
   "Movies featuring Jack Albertson": [
     "The Fox and the Hound"
   ],
@@ -16447,6 +16487,7 @@
   ],
   "Movies featuring Johnny Depp": [
     "Alice's Adventures in Wonderland",
+    "Chocolat",
     "Donnie Brasco",
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
@@ -16499,6 +16540,7 @@
     "The Santa Clause"
   ],
   "Movies featuring Judi Dench": [
+    "Chocolat",
     "Home on the Range",
     "Shakespeare in Love"
   ],
@@ -16516,6 +16558,7 @@
     "Don't Look Now"
   ],
   "Movies featuring Juliette Binoche": [
+    "Chocolat",
     "The English Patient"
   ],
   "Movies featuring Junius Matthews": [
@@ -17943,12 +17986,17 @@
   "Movies featuring Zooey Deschanel": [
     "Elf"
   ],
+  "Movies named after foods": [
+    "Chocolat",
+    "Ratatouille"
+  ],
   "Movies named after places": [
     "Chicago",
     "Everest",
     "Krakatoa",
     "Madagascar",
     "Manhattan",
+    "Palm Springs",
     "Pompeii"
   ],
   "Mughal Architecture": [
@@ -19288,6 +19336,7 @@
     "Pakistan",
     "Palau",
     "Palestine",
+    "Palm Springs",
     "Panama",
     "Papua New Guinea",
     "Paraguay",
@@ -20157,6 +20206,7 @@
     "Annie Hall",
     "Brief Encounter",
     "Casablanca",
+    "Chocolat",
     "Chungking Express",
     "Cleopatra",
     "Four Christmases",
@@ -20184,6 +20234,7 @@
     "My Fair Lady",
     "Out of Africa",
     "Outlander",
+    "Palm Springs",
     "Pride and Prejudice",
     "Safety Not Guaranteed",
     "Sense and Sensibility",
@@ -20418,6 +20469,7 @@
     "Jurassic Park",
     "Lilo & Stitch",
     "Looper",
+    "Palm Springs",
     "Predestination",
     "Primer",
     "Return of the Jedi",
@@ -21860,6 +21912,7 @@
     "Chisel"
   ],
   "Starts with CHO": [
+    "Chocolat",
     "Chocolate Chip Cookie",
     "Choir",
     "Chorus",
@@ -24216,6 +24269,7 @@
     "Palak Paneer",
     "Palau",
     "Palestine",
+    "Palm Springs",
     "Palpatine"
   ],
   "Starts with PAN": [
@@ -26762,6 +26816,7 @@
     "Othello",
     "Out of Africa",
     "Outlander",
+    "Palm Springs",
     "Panmunjom",
     "Papa",
     "Paul",
@@ -27618,6 +27673,7 @@
     "Cassoulet",
     "Champagne",
     "Charlemagne",
+    "Chocolat",
     "Coq au Vin",
     "Corsica",
     "Crepe",
@@ -28732,6 +28788,7 @@
     "Kindred",
     "Looper",
     "Outlander",
+    "Palm Springs",
     "Predestination",
     "Primer",
     "Safety Not Guaranteed",
