@@ -2278,5 +2278,45 @@
         "Mozart"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1970s",
+      "1980s",
+      "Musical Films",
+      "Place Names"
+    ],
+    "cols": [
+      "Comedy Stories",
+      "Ends with AND",
+      "Ends with MAN",
+      "Mentioned in We Didn't Start the Fire"
+    ],
+    "words": [
+      [
+        "The Hitchhiker's Guide to the Galaxy",
+        "The Stand",
+        "The Wicker Man",
+        "Cola Wars"
+      ],
+      [
+        "Bill & Ted's Excellent Adventure",
+        "The Hand",
+        "Rain Man",
+        "Reagan"
+      ],
+      [
+        "Hairspray",
+        "La La Land",
+        "The Greatest Showman",
+        "Peter Pan"
+      ],
+      [
+        "Palm Springs",
+        "Greenland",
+        "Isle of Man",
+        "Belgian Congo"
+      ]
+    ]
   }
 ]
