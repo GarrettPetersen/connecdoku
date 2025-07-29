@@ -242,6 +242,11 @@ function uniqueWords(rCat, cCat, allCats) {
     return v;
 }
 
+function getExcludedCategories(rCat, cCat, allCats) {
+    // Return the list of categories that are being excluded for this intersection
+    return allCats.filter(cat => cat !== rCat && cat !== cCat);
+}
+
 function validatePuzzle(puzzle) {
     const allCategories = [...puzzle.rows, ...puzzle.cols];
 
@@ -789,19 +794,21 @@ async function main() {
                 console.log("\nCols:", puzzle.cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
                 console.log("\nCurrent puzzle state:");
                 console.table(chosen);
-                console.log(`\nChoosing word for: ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)}\n`);
+                const excludedCats = getExcludedCategories(puzzle.rows[r], puzzle.cols[c], allCategories);
+                const excludedList = excludedCats.map(cat => formatWithUsage(cat, categoryUsage)).join(', ');
+                console.log(`\nChoosing word for: ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}\n`);
 
                 const opts = viableGrid[r][c].filter(w => !usedWords.has(w));
 
                 let pick;
                 if (opts.length === 1) {
                     pick = opts[0];
-                    console.log(`auto: ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)}  →  ${formatWithUsage(pick, wordUsage)}`);
+                    console.log(`auto: ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}  →  ${formatWithUsage(pick, wordUsage)}`);
                 } else {
                     console.log(`Showing ${opts.length} options for selection...`);
 
                     pick = await prompts.select({
-                        message: `Pick word for ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)}`,
+                        message: `Pick word for ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}`,
                         choices: opts.map(w => ({
                             value: w,
                             name: formatWithUsage(w, wordUsage)
