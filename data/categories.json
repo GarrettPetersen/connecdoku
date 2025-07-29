@@ -83,6 +83,7 @@
     "Elizabeth",
     "Elizabeth I",
     "Ferdinand Magellan",
+    "Globe Theatre",
     "Henry VIII",
     "Jane Seymour",
     "Journey to the West",
@@ -119,6 +120,7 @@
     "Bach",
     "Don Quixote",
     "Galileo",
+    "Globe Theatre",
     "Handel",
     "I think, therefore I am",
     "James",
@@ -181,9 +183,12 @@
   ],
   "1860s": [
     "Alice's Adventures in Wonderland",
+    "April 14th, 1865",
     "Buchanan",
     "Crime and Punishment",
+    "Ford's Theatre",
     "Grant",
+    "John Wilkes Booth",
     "Johnson",
     "Les Misérables",
     "Lincoln",
@@ -704,6 +709,7 @@
     "Adams",
     "Alice's Adventures in Wonderland",
     "Annabel",
+    "April 14th, 1865",
     "Arthur",
     "Beethoven",
     "Bell",
@@ -721,6 +727,7 @@
     "Elementary, my dear Watson",
     "Faraday",
     "Fillmore",
+    "Ford's Theatre",
     "Four score and seven years ago",
     "Frankenstein",
     "Garfield",
@@ -732,6 +739,7 @@
     "Jackson",
     "Jane Eyre",
     "Jefferson",
+    "John Wilkes Booth",
     "Johnson",
     "Krakatoa",
     "Lenore",
@@ -2450,8 +2458,16 @@
     "November 22nd, 1963",
     "Texas Book Depository"
   ],
+  "Assassination of Lincoln": [
+    "April 14th, 1865",
+    "Ford's Theatre",
+    "John Wilkes Booth",
+    "Lincoln",
+    "Washington"
+  ],
   "Assassins": [
     "Gavrilo Princip",
+    "John Wilkes Booth",
     "Lee Harvey Oswald"
   ],
   "Associated with Edgar Allan Poe": [
@@ -3129,6 +3145,8 @@
     "Eiffel Tower",
     "Empire State Building",
     "Forbidden City",
+    "Ford's Theatre",
+    "Globe Theatre",
     "Great Wall",
     "Hagia Sophia",
     "Hanging Gardens",
@@ -4868,6 +4886,7 @@
     "Tango"
   ],
   "Dates": [
+    "April 14th, 1865",
     "December 7th, 1941",
     "June 28th, 1914",
     "June 4th, 1942",
@@ -5371,6 +5390,9 @@
   ],
   "Ends with 747": [
     "747"
+  ],
+  "Ends with 865": [
+    "April 14th, 1865"
   ],
   "Ends with 914": [
     "June 28th, 1914"
@@ -8858,6 +8880,7 @@
   ],
   "Ends with OTH": [
     "Behemoth",
+    "John Wilkes Booth",
     "Mammoth",
     "Moth",
     "Sabretooth"
@@ -9722,6 +9745,10 @@
     "Cleopatra",
     "Petra",
     "Sumatra"
+  ],
+  "Ends with TRE": [
+    "Ford's Theatre",
+    "Globe Theatre"
   ],
   "Ends with TRO": [
     "Castro"
@@ -11946,6 +11973,7 @@
     "Jane Seymour",
     "Jebe",
     "Joan of Arc",
+    "John Wilkes Booth",
     "Kublai Khan",
     "Lady Jane Grey",
     "Li Bai",
@@ -11980,6 +12008,10 @@
     "Zheng He",
     "Zhu Yuanzhang",
     "Ögedei Khan"
+  ],
+  "Historical Sites": [
+    "Ford's Theatre",
+    "Globe Theatre"
   ],
   "Historical Speeches": [
     "Blood, toil, tears and sweat",
@@ -13333,6 +13365,7 @@
     "Angkor Wat",
     "Blue Mosque",
     "Forbidden City",
+    "Globe Theatre",
     "Hagia Sophia",
     "Mont Saint-Michel",
     "Notre Dame",
@@ -13634,6 +13667,7 @@
     "Christ the Redeemer",
     "Eiffel Tower",
     "Empire State Building",
+    "Ford's Theatre",
     "Sagrada Familia",
     "Sydney Opera House",
     "Texas Book Depository"
@@ -13839,6 +13873,7 @@
   "Modern Figures": [
     "Einstein",
     "Franklin D. Roosevelt",
+    "John Wilkes Booth",
     "Marie Curie",
     "Napoleon Bonaparte",
     "Sir John A. Macdonald",
@@ -19186,6 +19221,7 @@
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
+    "John Wilkes Booth",
     "Johnnie Ray",
     "Johnson",
     "Jordan",
@@ -20224,6 +20260,7 @@
     "Jefferson",
     "Joan of Arc",
     "John",
+    "John Wilkes Booth",
     "Johnson",
     "Jordan",
     "Kennedy",
@@ -21779,6 +21816,9 @@
     "Apple",
     "Apple Pie"
   ],
+  "Starts with APR": [
+    "April 14th, 1865"
+  ],
   "Starts with AQU": [
     "Aquarius"
   ],
@@ -23102,6 +23142,7 @@
     "For Whom the Bell Tolls",
     "Forbidden City",
     "Ford",
+    "Ford's Theatre",
     "Foreign Debt Crisis",
     "Formentera",
     "Formula One",
@@ -23255,6 +23296,7 @@
     "Glass"
   ],
   "Starts with GLO": [
+    "Globe Theatre",
     "Glove"
   ],
   "Starts with GMC": [
@@ -23807,6 +23849,7 @@
   ],
   "Starts with JOH": [
     "John",
+    "John Wilkes Booth",
     "Johnnie Ray",
     "Johnson"
   ],
@@ -26960,6 +27003,12 @@
     "The play's the thing",
     "To be or not to be"
   ],
+  "Theaters": [
+    "Colosseum",
+    "Ford's Theatre",
+    "Globe Theatre",
+    "Sydney Opera House"
+  ],
   "Things Abkhazian": [
     "Abkhazia"
   ],
@@ -27193,6 +27242,7 @@
     "Florida",
     "For Whom the Bell Tolls",
     "Ford",
+    "Ford's Theatre",
     "Foreign Debt Crisis",
     "Forrest Gump",
     "Four Christmases",
@@ -27286,6 +27336,7 @@
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
+    "John Wilkes Booth",
     "Johnnie Ray",
     "Johnson",
     "Juan Peron",
@@ -27848,6 +27899,7 @@
     "Gandhi",
     "Get Carter",
     "Gin",
+    "Globe Theatre",
     "Golden Hind",
     "Golf",
     "Guernsey",

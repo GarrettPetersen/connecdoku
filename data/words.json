@@ -746,6 +746,7 @@
     "1860s",
     "19th Century",
     "Aircraft Carriers",
+    "Assassination of Lincoln",
     "Car Brands",
     "Cars",
     "Cities",
@@ -771,6 +772,7 @@
     "1790s",
     "18th Century",
     "Aircraft Carriers",
+    "Assassination of Lincoln",
     "Cities",
     "Cities in North America",
     "Cities in USA",
@@ -1279,6 +1281,18 @@
     "Things American",
     "US Presidents"
   ],
+  "Ford's Theatre": [
+    "1860s",
+    "19th Century",
+    "Assassination of Lincoln",
+    "Buildings",
+    "Ends with TRE",
+    "Historical Sites",
+    "Modern Buildings",
+    "Starts with FOR",
+    "Theaters",
+    "Things American"
+  ],
   "Honda": [
     "Car Brands",
     "Cars",
@@ -1401,6 +1415,17 @@
     "Chocolate Bars",
     "Ends with AXY",
     "Starts with GAL"
+  ],
+  "Globe Theatre": [
+    "16th Century",
+    "17th Century",
+    "Buildings",
+    "Ends with TRE",
+    "Historical Sites",
+    "Medieval Buildings",
+    "Starts with GLO",
+    "Theaters",
+    "Things British"
   ],
   "Toblerone": [
     "Chocolate Bars",
@@ -4495,6 +4520,14 @@
     "Space Missions",
     "Starts with APO",
     "Things American"
+  ],
+  "April 14th, 1865": [
+    "1860s",
+    "19th Century",
+    "Assassination of Lincoln",
+    "Dates",
+    "Ends with 865",
+    "Starts with APR"
   ],
   "Nevada": [
     "Deserts",
@@ -23126,6 +23159,7 @@
     "Roman Architecture",
     "Roman Empire",
     "Starts with COL",
+    "Theaters",
     "Things Italian"
   ],
   "Pyramids": [
@@ -23214,6 +23248,7 @@
     "Ends with USE",
     "Modern Buildings",
     "Starts with SYD",
+    "Theaters",
     "Things Australian"
   ],
   "Great Wall": [
@@ -25113,6 +25148,19 @@
     "Music",
     "Musicians",
     "People",
+    "Starts with JOH",
+    "Things American"
+  ],
+  "John Wilkes Booth": [
+    "1860s",
+    "19th Century",
+    "Assassination of Lincoln",
+    "Assassins",
+    "Ends with OTH",
+    "Historical Figures",
+    "Modern Figures",
+    "People",
+    "Real People",
     "Starts with JOH",
     "Things American"
   ],
