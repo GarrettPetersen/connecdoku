@@ -2206,6 +2206,7 @@
   "Kennedy": [
     "1960s",
     "20th Century",
+    "Assassination of JFK",
     "Ends with EDY",
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
@@ -5101,6 +5102,7 @@
     "Things American"
   ],
   "Dallas": [
+    "Assassination of JFK",
     "Cities",
     "Cities in North America",
     "Cities in USA",
@@ -23075,6 +23077,7 @@
   ],
   "Parthenon": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with NON",
     "Greek Architecture",
     "Religious Sites",
@@ -23083,6 +23086,7 @@
   ],
   "Colosseum": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with EUM",
     "New Seven Wonders",
     "Roman Architecture",
@@ -23092,6 +23096,7 @@
   ],
   "Pyramids": [
     "Ancient Buildings",
+    "Buildings",
     "Egyptian Architecture",
     "Ends with IDS",
     "Religious Sites",
@@ -23101,6 +23106,7 @@
   ],
   "Petra": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with TRA",
     "Jordanian Architecture",
     "New Seven Wonders",
@@ -23108,6 +23114,7 @@
     "Things Jordanian"
   ],
   "Notre Dame": [
+    "Buildings",
     "Ends with AME",
     "Gothic Architecture",
     "Medieval Buildings",
@@ -23116,6 +23123,7 @@
     "Things French"
   ],
   "Taj Mahal": [
+    "Buildings",
     "Ends with HAL",
     "Medieval Buildings",
     "Mughal Architecture",
@@ -23125,6 +23133,7 @@
     "Things Indian"
   ],
   "Alhambra": [
+    "Buildings",
     "Ends with BRA",
     "Islamic Architecture",
     "Medieval Buildings",
@@ -23132,6 +23141,7 @@
     "Things Spanish"
   ],
   "Hagia Sophia": [
+    "Buildings",
     "Byzantine Architecture",
     "Ends with HIA",
     "Medieval Buildings",
@@ -23140,6 +23150,7 @@
     "Things Turkish"
   ],
   "Eiffel Tower": [
+    "Buildings",
     "Ends with WER",
     "French Architecture",
     "Modern Buildings",
@@ -23148,12 +23159,14 @@
   ],
   "Empire State Building": [
     "American Architecture",
+    "Buildings",
     "Ends with ING",
     "Modern Buildings",
     "Starts with EMP",
     "Things American"
   ],
   "Sagrada Familia": [
+    "Buildings",
     "Ends with LIA",
     "Modern Buildings",
     "Religious Sites",
@@ -23163,6 +23176,7 @@
   ],
   "Sydney Opera House": [
     "Australian Architecture",
+    "Buildings",
     "Ends with USE",
     "Modern Buildings",
     "Starts with SYD",
@@ -23170,6 +23184,7 @@
   ],
   "Great Wall": [
     "Ancient Buildings",
+    "Buildings",
     "Chinese Architecture",
     "Ends with ALL",
     "New Seven Wonders",
@@ -23179,6 +23194,7 @@
   ],
   "Machu Picchu": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with CHU",
     "Incan Architecture",
     "New Seven Wonders",
@@ -23187,6 +23203,7 @@
   ],
   "Christ the Redeemer": [
     "Brazilian Architecture",
+    "Buildings",
     "Ends with MER",
     "Modern Buildings",
     "New Seven Wonders",
@@ -23196,6 +23213,7 @@
   ],
   "Chichen Itza": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with TZA",
     "Mayan Architecture",
     "New Seven Wonders",
@@ -23204,12 +23222,14 @@
   ],
   "Buckingham Palace": [
     "British Architecture",
+    "Buildings",
     "Ends with ACE",
     "Modern Buildings",
     "Starts with BUC",
     "Things British"
   ],
   "Versailles": [
+    "Buildings",
     "Ends with LES",
     "French Architecture",
     "Medieval Buildings",
@@ -23217,6 +23237,7 @@
     "Things French"
   ],
   "Angkor Wat": [
+    "Buildings",
     "Cambodian Architecture",
     "Ends with WAT",
     "Medieval Buildings",
@@ -23226,18 +23247,21 @@
   "Stonehenge": [
     "Ancient Buildings",
     "British Architecture",
+    "Buildings",
     "Ends with NGE",
     "Starts with STO",
     "Things British"
   ],
   "Acropolis": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with LIS",
     "Greek Architecture",
     "Starts with ACR",
     "Things Greek"
   ],
   "Forbidden City": [
+    "Buildings",
     "Chinese Architecture",
     "Ends with ITY",
     "Medieval Buildings",
@@ -23245,6 +23269,7 @@
     "Things Chinese"
   ],
   "St. Peter's Basilica": [
+    "Buildings",
     "Ends with ICA",
     "Medieval Buildings",
     "Religious Sites",
@@ -23252,6 +23277,7 @@
     "Things Italian"
   ],
   "Blue Mosque": [
+    "Buildings",
     "Ends with QUE",
     "Islamic Architecture",
     "Medieval Buildings",
@@ -23260,6 +23286,7 @@
     "Things Turkish"
   ],
   "Potala Palace": [
+    "Buildings",
     "Ends with ACE",
     "Medieval Buildings",
     "Religious Sites",
@@ -23267,6 +23294,7 @@
     "Tibetan Architecture"
   ],
   "Mont Saint-Michel": [
+    "Buildings",
     "Ends with HEL",
     "French Architecture",
     "Medieval Buildings",
@@ -23277,12 +23305,14 @@
   "Hanging Gardens": [
     "Ancient Buildings",
     "Babylonian Architecture",
+    "Buildings",
     "Ends with ENS",
     "Seven Wonders",
     "Starts with HAN"
   ],
   "Temple of Artemis": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with MIS",
     "Greek Architecture",
     "Religious Sites",
@@ -23291,6 +23321,7 @@
   ],
   "Statue of Zeus": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with EUS",
     "Greek Architecture",
     "Religious Sites",
@@ -23299,6 +23330,7 @@
   ],
   "Mausoleum": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with EUM",
     "Greek Architecture",
     "Seven Wonders",
@@ -23306,6 +23338,7 @@
   ],
   "Colossus of Rhodes": [
     "Ancient Buildings",
+    "Buildings",
     "Ends with DES",
     "Greek Architecture",
     "Seven Wonders",
@@ -23313,6 +23346,7 @@
   ],
   "Lighthouse of Alexandria": [
     "Ancient Buildings",
+    "Buildings",
     "Egyptian Architecture",
     "Ends with RIA",
     "Seven Wonders",
@@ -26854,5 +26888,35 @@
     "Things Japanese",
     "Torpedo Bomber",
     "World War II"
+  ],
+  "Lee Harvey Oswald": [
+    "Assassination of JFK",
+    "Assassins",
+    "Ends with ALD",
+    "People",
+    "Real People",
+    "Starts with LEE"
+  ],
+  "Carcano Model 38": [
+    "Assassination of JFK",
+    "Ends with  38",
+    "Firearms",
+    "Rifles",
+    "Starts with CAR",
+    "Weapons"
+  ],
+  "Texas Book Depository": [
+    "Assassination of JFK",
+    "Buildings",
+    "Ends with ORY",
+    "Modern Buildings",
+    "Starts with TEX"
+  ],
+  "November 22nd, 1963": [
+    "1960s",
+    "Assassination of JFK",
+    "Dates",
+    "Ends with 963",
+    "Starts with NOV"
   ]
 }

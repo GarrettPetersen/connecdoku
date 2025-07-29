@@ -429,6 +429,7 @@
     "My Fair Lady",
     "Nasser",
     "Nixon",
+    "November 22nd, 1963",
     "Oliver!",
     "One Hundred Years of Solitude",
     "Payola Scandal",
@@ -2423,6 +2424,17 @@
     "Manchukuo",
     "Tibet"
   ],
+  "Assassination of JFK": [
+    "Carcano Model 38",
+    "Dallas",
+    "Kennedy",
+    "Lee Harvey Oswald",
+    "November 22nd, 1963",
+    "Texas Book Depository"
+  ],
+  "Assassins": [
+    "Lee Harvey Oswald"
+  ],
   "Associated with Edgar Allan Poe": [
     "Amontillado",
     "Lenore",
@@ -3083,6 +3095,41 @@
   ],
   "Buddhist Countries": [
     "Tibet"
+  ],
+  "Buildings": [
+    "Acropolis",
+    "Alhambra",
+    "Angkor Wat",
+    "Blue Mosque",
+    "Buckingham Palace",
+    "Chichen Itza",
+    "Christ the Redeemer",
+    "Colosseum",
+    "Colossus of Rhodes",
+    "Eiffel Tower",
+    "Empire State Building",
+    "Forbidden City",
+    "Great Wall",
+    "Hagia Sophia",
+    "Hanging Gardens",
+    "Lighthouse of Alexandria",
+    "Machu Picchu",
+    "Mausoleum",
+    "Mont Saint-Michel",
+    "Notre Dame",
+    "Parthenon",
+    "Petra",
+    "Potala Palace",
+    "Pyramids",
+    "Sagrada Familia",
+    "St. Peter's Basilica",
+    "Statue of Zeus",
+    "Stonehenge",
+    "Sydney Opera House",
+    "Taj Mahal",
+    "Temple of Artemis",
+    "Texas Book Depository",
+    "Versailles"
   ],
   "Burger Toppings": [
     "Avocado",
@@ -4800,7 +4847,8 @@
   ],
   "Dates": [
     "December 7th, 1941",
-    "June 4th, 1942"
+    "June 4th, 1942",
+    "November 22nd, 1963"
   ],
   "Demigods": [
     "Achilles",
@@ -5206,6 +5254,9 @@
   "Ends with  13": [
     "Apollo 13"
   ],
+  "Ends with  38": [
+    "Carcano Model 38"
+  ],
   "Ends with  AM": [
     "I think, therefore I am"
   ],
@@ -5303,6 +5354,9 @@
   ],
   "Ends with 942": [
     "June 4th, 1942"
+  ],
+  "Ends with 963": [
+    "November 22nd, 1963"
   ],
   "Ends with 984": [
     "1984"
@@ -5470,7 +5524,8 @@
   "Ends with ALD": [
     "Donald",
     "Edmund Fitzgerald",
-    "Emerald"
+    "Emerald",
+    "Lee Harvey Oswald"
   ],
   "Ends with ALE": [
     "Blue Whale",
@@ -8730,6 +8785,7 @@
   ],
   "Ends with ORY": [
     "A Christmas Story",
+    "Texas Book Depository",
     "Toy Story",
     "Victory",
     "West Side Story"
@@ -10838,6 +10894,9 @@
     "The Big Sleep",
     "The Maltese Falcon",
     "The Third Man"
+  ],
+  "Firearms": [
+    "Carcano Model 38"
   ],
   "First Circumnavigation": [
     "Concepcion",
@@ -13531,7 +13590,8 @@
     "Eiffel Tower",
     "Empire State Building",
     "Sagrada Familia",
-    "Sydney Opera House"
+    "Sydney Opera House",
+    "Texas Book Depository"
   ],
   "Modern Countries": [
     "Afghanistan",
@@ -19096,6 +19156,7 @@
     "Kurosawa",
     "Lady Jane Grey",
     "Lando",
+    "Lee Harvey Oswald",
     "Lenore",
     "Leo",
     "Li Bai",
@@ -20118,6 +20179,7 @@
     "Kublai Khan",
     "Lady Jane Grey",
     "Lando",
+    "Lee Harvey Oswald",
     "Leo",
     "Li Bai",
     "Lincoln",
@@ -20442,6 +20504,9 @@
   ],
   "Rhythm": [
     "Beat"
+  ],
+  "Rifles": [
+    "Carcano Model 38"
   ],
   "Rime of the Ancient Mariner": [
     "Water, water everywhere"
@@ -22171,6 +22236,7 @@
   "Starts with CAR": [
     "Carbon",
     "Carbonara",
+    "Carcano Model 38",
     "Carcassonne",
     "Card",
     "Cardinal",
@@ -23958,6 +24024,9 @@
   "Starts with LED": [
     "LED"
   ],
+  "Starts with LEE": [
+    "Lee Harvey Oswald"
+  ],
   "Starts with LEI": [
     "Leia",
     "Leica"
@@ -24496,7 +24565,8 @@
     "Notre Dame"
   ],
   "Starts with NOV": [
-    "November"
+    "November",
+    "November 22nd, 1963"
   ],
   "Starts with NUG": [
     "Nugget"
@@ -25711,7 +25781,8 @@
     "Tesla"
   ],
   "Starts with TEX": [
-    "Texas"
+    "Texas",
+    "Texas Book Depository"
   ],
   "Starts with THA": [
     "Thailand",
@@ -29840,6 +29911,7 @@
   "Weapons": [
     "Arm",
     "Bow",
+    "Carcano Model 38",
     "Cobra",
     "Dagger",
     "Green Arrow",

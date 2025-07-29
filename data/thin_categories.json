@@ -3170,6 +3170,15 @@
   "Manufactured by Yokosuka": [
     "Judy"
   ],
+  "Assassins": [
+    "Lee Harvey Oswald"
+  ],
+  "Firearms": [
+    "Carcano Model 38"
+  ],
+  "Rifles": [
+    "Carcano Model 38"
+  ],
   "Passenger Aircraft": [
     "747",
     "DC-3"
@@ -4118,10 +4127,6 @@
     "Punk Rock",
     "Rock and Roll"
   ],
-  "Dates": [
-    "December 7th, 1941",
-    "June 4th, 1942"
-  ],
   "Bible": [
     "Render unto Caesar",
     "Let there be light"
@@ -4710,6 +4715,11 @@
     "The Protestant Reformation",
     "The Catholic Counter-Reformation",
     "The English Reformation"
+  ],
+  "Dates": [
+    "December 7th, 1941",
+    "June 4th, 1942",
+    "November 22nd, 1963"
   ],
   "Manufactured by Douglas": [
     "DC-3",
