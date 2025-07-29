@@ -307,6 +307,7 @@
     "For Whom the Bell Tolls",
     "Goodnight Moon",
     "It's a Wonderful Life",
+    "June 4th, 1942",
     "Kind Hearts and Coronets",
     "Manchukuo",
     "Miracle on 34th Street",
@@ -1198,6 +1199,7 @@
     "Jordan",
     "Joseph Stalin",
     "Juan Peron",
+    "June 4th, 1942",
     "Jurassic Park",
     "Kagemusha",
     "Kampuchea",
@@ -2106,6 +2108,38 @@
     "Victoria",
     "Victory"
   ],
+  "Aircraft": [
+    "747",
+    "Apache",
+    "B-17",
+    "B-29",
+    "Black Hawk",
+    "Chinook",
+    "Concorde",
+    "Corsair",
+    "DC-3",
+    "Dauntless",
+    "Devastator",
+    "F-16",
+    "F-22",
+    "F-35",
+    "Hurricane",
+    "Jill",
+    "Judy",
+    "Kate",
+    "Lancaster",
+    "Learjet",
+    "Messerschmitt",
+    "MiG-15",
+    "MiG-21",
+    "Mustang",
+    "Spitfire",
+    "Stuka",
+    "Thunderbolt",
+    "Val",
+    "Wildcat",
+    "Zero"
+  ],
   "Aircraft Carriers": [
     "Akagi",
     "Ark Royal",
@@ -2126,6 +2160,19 @@
     "USS Gerald R. Ford",
     "Washington",
     "Yorktown"
+  ],
+  "Aircraft Manufacturers": [
+    "Airbus",
+    "Bell",
+    "Boeing",
+    "Cessna",
+    "Cirrus",
+    "Douglas",
+    "Gulfstream",
+    "Lockheed",
+    "MiG",
+    "Piper",
+    "Sikorsky"
   ],
   "Airships": [
     "Akron",
@@ -2500,13 +2547,21 @@
   ],
   "Battle of Midway": [
     "Akagi",
+    "Dauntless",
+    "Devastator",
     "Enterprise",
     "Hiryu",
     "Hornet",
+    "Jill",
+    "Judy",
+    "June 4th, 1942",
     "Kaga",
+    "Kate",
     "Midway Island",
     "Nimitz",
     "Soryu",
+    "Val",
+    "Wildcat",
     "Yorktown",
     "Zero"
   ],
@@ -2813,6 +2868,11 @@
     "Hearts",
     "Pinky"
   ],
+  "Bomber Aircraft": [
+    "B-17",
+    "B-29",
+    "Lancaster"
+  ],
   "Books": [
     "11/22/63",
     "1984",
@@ -3034,6 +3094,9 @@
     "Pickle",
     "Roma",
     "Tomato"
+  ],
+  "Business Aircraft": [
+    "Learjet"
   ],
   "Businesspeople": [
     "Bezos",
@@ -3667,6 +3730,8 @@
     "Houston, we have a problem",
     "Lincoln",
     "Los Angeles",
+    "MiG-15",
+    "MiG-21",
     "Nimitz",
     "One small step for man",
     "Queen Elizabeth 2",
@@ -3830,6 +3895,11 @@
     "The Hunger Games",
     "Twilight"
   ],
+  "Commercial Aircraft": [
+    "747",
+    "Concorde",
+    "DC-3"
+  ],
   "Commonwealth Nations": [
     "Australia",
     "Canada",
@@ -3839,24 +3909,34 @@
     "United Kingdom"
   ],
   "Companies": [
+    "Airbus",
     "Amazon",
     "Apple",
+    "Bell",
     "Bezos",
+    "Boeing",
     "CNN",
     "Canon",
+    "Cessna",
     "Chanel",
+    "Cirrus",
     "Disney",
+    "Douglas",
     "Ford",
     "Fuji",
     "Gates",
     "Google",
     "Gucci",
+    "Gulfstream",
     "Honda",
     "IBM",
     "Intel",
     "Jobs",
     "Leica",
+    "Lockheed",
+    "Messerschmitt",
     "Meta",
+    "MiG",
     "Microsoft",
     "Musk",
     "Nikon",
@@ -3864,11 +3944,13 @@
     "Orange",
     "Panasonic",
     "Paradox",
+    "Piper",
     "Pixar",
     "Prada",
     "Red",
     "Reddit",
     "Rockefeller",
+    "Sikorsky",
     "Snap",
     "Sony",
     "Studebaker",
@@ -4717,7 +4799,8 @@
     "Tango"
   ],
   "Dates": [
-    "December 7th, 1941"
+    "December 7th, 1941",
+    "June 4th, 1942"
   ],
   "Demigods": [
     "Achilles",
@@ -4907,6 +4990,12 @@
     "Minnie",
     "Olaf",
     "Pluto"
+  ],
+  "Dive Bomber": [
+    "Dauntless",
+    "Judy",
+    "Stuka",
+    "Val"
   ],
   "Domesticated Animals": [
     "Cat",
@@ -5157,6 +5246,27 @@
   "Ends with  ZI": [
     "Yu Xiang Qie Zi"
   ],
+  "Ends with -15": [
+    "MiG-15"
+  ],
+  "Ends with -16": [
+    "F-16"
+  ],
+  "Ends with -17": [
+    "B-17"
+  ],
+  "Ends with -21": [
+    "MiG-21"
+  ],
+  "Ends with -22": [
+    "F-22"
+  ],
+  "Ends with -29": [
+    "B-29"
+  ],
+  "Ends with -35": [
+    "F-35"
+  ],
   "Ends with ...": [
     "If...."
   ],
@@ -5185,8 +5295,14 @@
     "1970s",
     "The 1970s"
   ],
+  "Ends with 747": [
+    "747"
+  ],
   "Ends with 941": [
     "December 7th, 1941"
+  ],
+  "Ends with 942": [
+    "June 4th, 1942"
   ],
   "Ends with 984": [
     "1984"
@@ -5312,6 +5428,7 @@
   ],
   "Ends with AIR": [
     "Chair",
+    "Corsair",
     "Eclair",
     "Profumo Affair"
   ],
@@ -5480,11 +5597,13 @@
     "Wand"
   ],
   "Ends with ANE": [
-    "Citizen Kane"
+    "Citizen Kane",
+    "Hurricane"
   ],
   "Ends with ANG": [
     "Emperor Qin Shi Huang",
     "Ma La Tang",
+    "Mustang",
     "Tang",
     "Zhu Yuanzhang"
   ],
@@ -5669,6 +5788,7 @@
   "Ends with ATE": [
     "Hot Chocolate",
     "Karate",
+    "Kate",
     "Mate",
     "Skate",
     "Stargate",
@@ -5744,6 +5864,7 @@
     "Malawi"
   ],
   "Ends with AWK": [
+    "Black Hawk",
     "Hawk",
     "Seahawk"
   ],
@@ -5893,6 +6014,7 @@
     "Istanbul"
   ],
   "Ends with BUS": [
+    "Airbus",
     "Christopher Columbus",
     "Columbus"
   ],
@@ -5904,6 +6026,9 @@
   ],
   "Ends with BYL": [
     "Chernobyl"
+  ],
+  "Ends with C-3": [
+    "DC-3"
   ],
   "Ends with CAL": [
     "Mezcal"
@@ -5920,7 +6045,8 @@
     "Black Cat",
     "Cat",
     "Copycat",
-    "Shadowcat"
+    "Shadowcat",
+    "Wildcat"
   ],
   "Ends with CCA": [
     "Chewbacca",
@@ -5948,6 +6074,7 @@
     "Sriracha"
   ],
   "Ends with CHE": [
+    "Apache",
     "Brioche",
     "Ceviche",
     "Che",
@@ -6209,6 +6336,7 @@
     "Teal"
   ],
   "Ends with EAM": [
+    "Gulfstream",
     "I have a dream"
   ],
   "Ends with EAN": [
@@ -6273,6 +6401,7 @@
     "The Divine Comedy"
   ],
   "Ends with EED": [
+    "Lockheed",
     "Safety Not Guaranteed"
   ],
   "Ends with EEF": [
@@ -6501,6 +6630,7 @@
   "Ends with ESS": [
     "Chess",
     "Chungking Express",
+    "Dauntless",
     "The Hidden Fortress",
     "The Polar Express"
   ],
@@ -7080,6 +7210,7 @@
     "All You Need Is Kill",
     "Birth Control Pill",
     "From Up on Poppy Hill",
+    "Jill",
     "Winston Churchill"
   ],
   "Ends with ILM": [
@@ -7153,6 +7284,7 @@
     "Auto Racing",
     "Ball Lightning",
     "Beijing",
+    "Boeing",
     "Boxing",
     "Cross Country Skiing",
     "Curling",
@@ -7312,6 +7444,7 @@
     "Sapphire",
     "Slumdog Millionaire",
     "Solitaire",
+    "Spitfire",
     "Temeraire",
     "The British Empire",
     "The Mongol Empire",
@@ -7403,6 +7536,9 @@
   "Ends with ITS": [
     "Time Bandits"
   ],
+  "Ends with ITT": [
+    "Messerschmitt"
+  ],
   "Ends with ITY": [
     "Carson City",
     "Forbidden City",
@@ -7467,6 +7603,9 @@
   ],
   "Ends with JAY": [
     "Blue Jay"
+  ],
+  "Ends with JET": [
+    "Learjet"
   ],
   "Ends with JIN": [
     "Temüjin"
@@ -7599,6 +7738,7 @@
   ],
   "Ends with LAS": [
     "Dallas",
+    "Douglas",
     "Goodfellas"
   ],
   "Ends with LAT": [
@@ -7906,6 +8046,9 @@
     "Pandemic",
     "The COVID-19 Pandemic",
     "The Opioid Epidemic"
+  ],
+  "Ends with MIG": [
+    "MiG"
   ],
   "Ends with MIS": [
     "Temple of Artemis"
@@ -8419,7 +8562,8 @@
   ],
   "Ends with OLT": [
     "Bolt",
-    "The Peasants' Revolt"
+    "The Peasants' Revolt",
+    "Thunderbolt"
   ],
   "Ends with OLY": [
     "Monopoly"
@@ -8495,6 +8639,7 @@
     "Winnie-the-Pooh"
   ],
   "Ends with OOK": [
+    "Chinook",
     "Green Book",
     "Notebook",
     "The Jungle Book"
@@ -8717,7 +8862,8 @@
     "Looper",
     "Newspaper",
     "Paper",
-    "Pepper"
+    "Pepper",
+    "Piper"
   ],
   "Ends with PEW": [
     "Pepe Le Pew"
@@ -8878,7 +9024,8 @@
   ],
   "Ends with RDE": [
     "Cabo Verde",
-    "Caldo Verde"
+    "Caldo Verde",
+    "Concorde"
   ],
   "Ends with RDS": [
     "Inglourious Basterds"
@@ -9109,6 +9256,7 @@
     "Belarus",
     "Cerberus",
     "Chorus",
+    "Cirrus",
     "Cyprus",
     "Elbrus",
     "Taurus",
@@ -9237,10 +9385,14 @@
   ],
   "Ends with SKY": [
     "Castle in the Sky",
+    "Sikorsky",
     "The Map of the Sky"
   ],
   "Ends with SLA": [
     "Tesla"
+  ],
+  "Ends with SNA": [
+    "Cessna"
   ],
   "Ends with SOE": [
     "Robinson Crusoe"
@@ -9382,6 +9534,7 @@
     "Demeter",
     "Get Carter",
     "Jupiter",
+    "Lancaster",
     "Lobster",
     "Peter",
     "Polyester",
@@ -9465,6 +9618,7 @@
     "The Girl with the Dragon Tattoo"
   ],
   "Ends with TOR": [
+    "Devastator",
     "Flight of the Navigator",
     "Gladiator",
     "Radiator",
@@ -9582,6 +9736,9 @@
   "Ends with UDO": [
     "Judo"
   ],
+  "Ends with UDY": [
+    "Judy"
+  ],
   "Ends with UGE": [
     "Baton Rouge",
     "Huge",
@@ -9600,6 +9757,9 @@
   ],
   "Ends with UJI": [
     "Fuji"
+  ],
+  "Ends with UKA": [
+    "Stuka"
   ],
   "Ends with UKE": [
     "Duke",
@@ -9738,7 +9898,8 @@
     "The Tale of the Princess Kaguya"
   ],
   "Ends with VAL": [
-    "Arrival"
+    "Arrival",
+    "Val"
   ],
   "Ends with VED": [
     "Beloved"
@@ -10651,6 +10812,21 @@
     "Serenity",
     "TARDIS",
     "X-Wing"
+  ],
+  "Fighter Aircraft": [
+    "Corsair",
+    "F-16",
+    "F-22",
+    "F-35",
+    "Hurricane",
+    "Messerschmitt",
+    "MiG-15",
+    "MiG-21",
+    "Mustang",
+    "Spitfire",
+    "Thunderbolt",
+    "Wildcat",
+    "Zero"
   ],
   "Film Directors": [
     "Kurosawa",
@@ -11586,6 +11762,11 @@
   ],
   "Heist Films": [
     "The Italian Job"
+  ],
+  "Helicopters": [
+    "Apache",
+    "Black Hawk",
+    "Chinook"
   ],
   "Herbivores": [
     "Buffalo",
@@ -12864,6 +13045,78 @@
     "Pokemon",
     "Yugioh"
   ],
+  "Manufactured by Aichi": [
+    "Val"
+  ],
+  "Manufactured by Avro": [
+    "Lancaster"
+  ],
+  "Manufactured by BAC/Aerospatiale": [
+    "Concorde"
+  ],
+  "Manufactured by Boeing": [
+    "747",
+    "Apache",
+    "B-17",
+    "B-29",
+    "Chinook"
+  ],
+  "Manufactured by Bombardier": [
+    "Learjet"
+  ],
+  "Manufactured by Douglas": [
+    "DC-3",
+    "Dauntless",
+    "Devastator"
+  ],
+  "Manufactured by General Dynamics": [
+    "F-16"
+  ],
+  "Manufactured by Grumman": [
+    "Wildcat"
+  ],
+  "Manufactured by Hawker": [
+    "Hurricane"
+  ],
+  "Manufactured by Junkers": [
+    "Stuka"
+  ],
+  "Manufactured by Lockheed": [
+    "F-22",
+    "F-35"
+  ],
+  "Manufactured by Messerschmitt": [
+    "Messerschmitt"
+  ],
+  "Manufactured by MiG": [
+    "MiG-15",
+    "MiG-21"
+  ],
+  "Manufactured by Mitsubishi": [
+    "Zero"
+  ],
+  "Manufactured by Nakajima": [
+    "Jill",
+    "Kate"
+  ],
+  "Manufactured by North American": [
+    "Mustang"
+  ],
+  "Manufactured by Republic": [
+    "Thunderbolt"
+  ],
+  "Manufactured by Sikorsky": [
+    "Black Hawk"
+  ],
+  "Manufactured by Supermarine": [
+    "Spitfire"
+  ],
+  "Manufactured by Vought": [
+    "Corsair"
+  ],
+  "Manufactured by Yokosuka": [
+    "Judy"
+  ],
   "Maritime Stories": [
     "Moby Dick",
     "Titanic"
@@ -13162,6 +13415,34 @@
     "United Arab Emirates",
     "United Arab Republic",
     "Yemen"
+  ],
+  "Military Aircraft": [
+    "Apache",
+    "B-17",
+    "B-29",
+    "Black Hawk",
+    "Chinook",
+    "Corsair",
+    "Dauntless",
+    "Devastator",
+    "F-16",
+    "F-22",
+    "F-35",
+    "Hurricane",
+    "Jill",
+    "Judy",
+    "Kate",
+    "Lancaster",
+    "Messerschmitt",
+    "MiG-15",
+    "MiG-21",
+    "Mustang",
+    "Spitfire",
+    "Stuka",
+    "Thunderbolt",
+    "Val",
+    "Wildcat",
+    "Zero"
   ],
   "Military Leaders": [
     "Batu Khan",
@@ -18684,6 +18965,10 @@
     "Chorus",
     "Melody"
   ],
+  "Passenger Aircraft": [
+    "747",
+    "DC-3"
+  ],
   "People": [
     "Adams",
     "Anna",
@@ -19682,6 +19967,9 @@
   ],
   "Prison Stories": [
     "The Shawshank Redemption"
+  ],
+  "Private Aircraft": [
+    "Learjet"
   ],
   "Programming Languages": [
     "C",
@@ -21165,6 +21453,9 @@
   "Starts with 2PM": [
     "2PM"
   ],
+  "Starts with 747": [
+    "747"
+  ],
   "Starts with 9/1": [
     "9/11"
   ],
@@ -21229,6 +21520,9 @@
   ],
   "Starts with AIO": [
     "Aioli"
+  ],
+  "Starts with AIR": [
+    "Airbus"
   ],
   "Starts with AJI": [
     "Ajiaco"
@@ -21338,6 +21632,9 @@
     "Antigua and Barbuda",
     "Antioch",
     "Antwerp"
+  ],
+  "Starts with APA": [
+    "Apache"
   ],
   "Starts with APE": [
     "Aperture"
@@ -21454,6 +21751,12 @@
   ],
   "Starts with AZO": [
     "Azores"
+  ],
+  "Starts with B-1": [
+    "B-17"
+  ],
+  "Starts with B-2": [
+    "B-29"
   ],
   "Starts with BAB": [
     "Baba Ganoush",
@@ -21649,6 +21952,7 @@
     "BLACKPINK",
     "Black Cat",
     "Black Forest Cake",
+    "Black Hawk",
     "Black Hole",
     "Black Panther",
     "Black Widow",
@@ -21680,6 +21984,9 @@
   ],
   "Starts with BOB": [
     "Bobsled"
+  ],
+  "Starts with BOE": [
+    "Boeing"
   ],
   "Starts with BOI": [
     "Boise"
@@ -21909,6 +22216,9 @@
     "Cerberus",
     "Ceres"
   ],
+  "Starts with CES": [
+    "Cessna"
+  ],
   "Starts with CEV": [
     "Ceviche"
   ],
@@ -21955,6 +22265,7 @@
     "Chimichurri",
     "China",
     "Chinatown",
+    "Chinook",
     "Chisel"
   ],
   "Starts with CHO": [
@@ -21987,6 +22298,9 @@
   "Starts with CIN": [
     "Cinderella",
     "Cinnamon"
+  ],
+  "Starts with CIR": [
+    "Cirrus"
   ],
   "Starts with CIT": [
     "Citizen Kane"
@@ -22052,6 +22366,7 @@
     "CON",
     "Concepcion",
     "Concord",
+    "Concorde",
     "Concordia",
     "Confucius",
     "Congee",
@@ -22079,6 +22394,7 @@
     "Cormorant",
     "Corned Beef",
     "Coronation of Elizabeth II",
+    "Corsair",
     "Corsica"
   ],
   "Starts with COS": [
@@ -22194,11 +22510,17 @@
   "Starts with DAT": [
     "Data"
   ],
+  "Starts with DAU": [
+    "Dauntless"
+  ],
   "Starts with DAV": [
     "Davy Crockett"
   ],
   "Starts with DAY": [
     "Days of Being Wild"
+  ],
+  "Starts with DC-": [
+    "DC-3"
   ],
   "Starts with DEA": [
     "Death Proof",
@@ -22236,6 +22558,7 @@
     "Desk"
   ],
   "Starts with DEV": [
+    "Devastator",
     "Devil",
     "Devon"
   ],
@@ -22309,7 +22632,8 @@
     "Doris Day"
   ],
   "Starts with DOU": [
-    "Dough"
+    "Dough",
+    "Douglas"
   ],
   "Starts with DOV": [
     "Dover"
@@ -22538,6 +22862,15 @@
   ],
   "Starts with EYJ": [
     "Eyjafjallajokull"
+  ],
+  "Starts with F-1": [
+    "F-16"
+  ],
+  "Starts with F-2": [
+    "F-22"
+  ],
+  "Starts with F-3": [
+    "F-35"
   ],
   "Starts with FAH": [
     "Fahrenheit 451"
@@ -22891,6 +23224,7 @@
   ],
   "Starts with GUL": [
     "Gulab Jamun",
+    "Gulfstream",
     "Gull"
   ],
   "Starts with GUM": [
@@ -23107,6 +23441,9 @@
   "Starts with HUN": [
     "Hungary"
   ],
+  "Starts with HUR": [
+    "Hurricane"
+  ],
   "Starts with HYA": [
     "Hyatt"
   ],
@@ -23318,6 +23655,9 @@
   "Starts with JIA": [
     "Jiaozi"
   ],
+  "Starts with JIL": [
+    "Jill"
+  ],
   "Starts with JIN": [
     "Jingle All the Way"
   ],
@@ -23356,7 +23696,8 @@
     "Juan Peron"
   ],
   "Starts with JUD": [
-    "Judo"
+    "Judo",
+    "Judy"
   ],
   "Starts with JUG": [
     "Juggernaut"
@@ -23371,6 +23712,7 @@
     "Jumbo"
   ],
   "Starts with JUN": [
+    "June 4th, 1942",
     "Juneau"
   ],
   "Starts with JUP": [
@@ -23407,6 +23749,7 @@
     "Kasha"
   ],
   "Starts with KAT": [
+    "Kate",
     "Kate & Leopold",
     "Katrina"
   ],
@@ -23580,6 +23923,7 @@
     "Lamp"
   ],
   "Starts with LAN": [
+    "Lancaster",
     "Lando",
     "Lansing",
     "Lanzarote"
@@ -23604,6 +23948,9 @@
   ],
   "Starts with LAW": [
     "Lawrence of Arabia"
+  ],
+  "Starts with LEA": [
+    "Learjet"
   ],
   "Starts with LEB": [
     "Lebanon"
@@ -23692,6 +24039,7 @@
   ],
   "Starts with LOC": [
     "Locker",
+    "Lockheed",
     "Locro"
   ],
   "Starts with LOK": [
@@ -23874,6 +24222,9 @@
   "Starts with MER": [
     "Mercury"
   ],
+  "Starts with MES": [
+    "Messerschmitt"
+  ],
   "Starts with MET": [
     "Met",
     "Meta"
@@ -23900,6 +24251,11 @@
   ],
   "Starts with MIF": [
     "Mifune"
+  ],
+  "Starts with MIG": [
+    "MiG",
+    "MiG-15",
+    "MiG-21"
   ],
   "Starts with MIK": [
     "Mike"
@@ -24003,6 +24359,7 @@
   "Starts with MUS": [
     "Musashi",
     "Musk",
+    "Mustang",
     "Mustard"
   ],
   "Starts with MY ": [
@@ -24445,6 +24802,9 @@
     "Pinocchio",
     "Pinta",
     "Pinto"
+  ],
+  "Starts with PIP": [
+    "Piper"
   ],
   "Starts with PIR": [
     "Pirates of the Caribbean: At World's End",
@@ -24969,6 +25329,9 @@
   "Starts with SIG": [
     "Sigma"
   ],
+  "Starts with SIK": [
+    "Sikorsky"
+  ],
   "Starts with SIL": [
     "Silver"
   ],
@@ -25106,7 +25469,8 @@
     "Spice",
     "Spider",
     "Spider-Man",
-    "Spirited Away"
+    "Spirited Away",
+    "Spitfire"
   ],
   "Starts with SPL": [
     "Split Pea Soup"
@@ -25163,7 +25527,8 @@
     "Stranger in a Strange Land"
   ],
   "Starts with STU": [
-    "Studebaker"
+    "Studebaker",
+    "Stuka"
   ],
   "Starts with SUB": [
     "Subaru",
@@ -25627,7 +25992,8 @@
     "Throne of Blood"
   ],
   "Starts with THU": [
-    "Thunder"
+    "Thunder",
+    "Thunderbolt"
   ],
   "Starts with TIA": [
     "Tiananmen Square Massacre"
@@ -25845,6 +26211,9 @@
   "Starts with VAD": [
     "Vader"
   ],
+  "Starts with VAL": [
+    "Val"
+  ],
   "Starts with VAN": [
     "Van Buren",
     "Vantage Point",
@@ -25971,6 +26340,7 @@
     "Whitney"
   ],
   "Starts with WIL": [
+    "Wildcat",
     "Wile E. Coyote",
     "William the Conqueror",
     "Wilson"
@@ -26291,6 +26661,9 @@
     "Wolverine",
     "Wonder Woman"
   ],
+  "Supersonic Aircraft": [
+    "Concorde"
+  ],
   "Supervillains": [
     "Doctor Octopus",
     "Green Goblin",
@@ -26464,6 +26837,7 @@
     "1972 Presidential Election",
     "1989 Chinese Protests",
     "2001: A Space Odyssey",
+    "747",
     "A Beautiful Mind",
     "A Bug's Life",
     "A Charlie Brown Christmas",
@@ -26492,6 +26866,7 @@
     "Annie",
     "Annie Hall",
     "Anthem of the Seas",
+    "Apache",
     "Apollo",
     "Apollo 13",
     "Apple Pie",
@@ -26512,6 +26887,8 @@
     "Avatar: Frontiers of Pandora",
     "Avatar: The Way of Water",
     "Avengers: Endgame",
+    "B-17",
+    "B-29",
     "BBQ",
     "Back to the Future",
     "Back to the Future Part II",
@@ -26539,7 +26916,9 @@
     "Bill & Ted's Excellent Adventure",
     "Birdman",
     "Birth Control Pill",
+    "Black Hawk",
     "Blade Runner",
+    "Boeing",
     "Boise",
     "Bolt",
     "Boston",
@@ -26565,6 +26944,7 @@
     "Carson City",
     "Carter",
     "Casablanca",
+    "Cessna",
     "Charleston",
     "Charlotte's Web",
     "Cheesecake",
@@ -26572,10 +26952,12 @@
     "Chicago",
     "Chicken Little",
     "Chinatown",
+    "Chinook",
     "Chocolate Chip Cookie",
     "Chubby Checker",
     "Cider",
     "Cinderella",
+    "Cirrus",
     "Citizen Kane",
     "Cleopatra",
     "Cleveland",
@@ -26593,15 +26975,18 @@
     "Congo Crisis",
     "Coolidge",
     "Copycat",
+    "Corsair",
     "Crack Epidemic",
     "Craft Beer",
     "Crash",
+    "DC-3",
     "Dacron",
     "Daisy",
     "Dallas",
     "Dances with Wolves",
     "Dante's Peak",
     "Daphne",
+    "Dauntless",
     "Davy Crockett",
     "Death Proof",
     "Death Wish",
@@ -26609,6 +26994,7 @@
     "Deja Vu",
     "Denver",
     "Des Moines",
+    "Devastator",
     "Die Hard",
     "Die Hard 2",
     "Die Hard with a Vengeance",
@@ -26620,6 +27006,7 @@
     "Donnie Darko",
     "Doom",
     "Doris Day",
+    "Douglas",
     "Dr. Strangelove",
     "Dreamgirls",
     "Driving Miss Daisy",
@@ -26643,6 +27030,9 @@
     "Escape from New York",
     "Everything Everywhere All at Once",
     "Evita",
+    "F-16",
+    "F-22",
+    "F-35",
     "Fahrenheit 451",
     "Fantasia",
     "Fantasia 2000",
@@ -26686,6 +27076,7 @@
     "Green Eggs and Ham",
     "Groundhog Day",
     "Grover",
+    "Gulfstream",
     "Gymnastics",
     "H-bomb",
     "Hairspray",
@@ -26771,6 +27162,7 @@
     "Lady and the Tramp",
     "Lando",
     "Lansing",
+    "Learjet",
     "Lemonade",
     "Lenore",
     "Leo",
@@ -26783,6 +27175,7 @@
     "Little Shop of Horrors",
     "Little Women",
     "Live Free or Die Hard",
+    "Lockheed",
     "Long Island",
     "Looper",
     "Los Angeles",
@@ -26828,6 +27221,7 @@
     "Morse",
     "Motocross",
     "Mulan",
+    "Mustang",
     "Mustard",
     "My Fair Lady",
     "NASA",
@@ -26875,6 +27269,7 @@
     "Pierre",
     "Pinnochio",
     "Pinocchio",
+    "Piper",
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
     "Pirates of the Caribbean: Dead Men Tell No Tales",
@@ -26944,6 +27339,7 @@
     "Seattle",
     "Serpico",
     "Shaggy",
+    "Sikorsky",
     "Silver",
     "Sin City",
     "Sin City: A Dame to Kill For",
@@ -27097,6 +27493,7 @@
     "The Whiskey Rebellion",
     "The Wizard of Oz",
     "Thomas Edison",
+    "Thunderbolt",
     "Tiananmen Square Massacre",
     "Tick, Tick... Boom!",
     "Titanic",
@@ -27145,6 +27542,7 @@
     "Whiskey",
     "White Christmas",
     "Whitney",
+    "Wildcat",
     "Wilson",
     "Winnie the Pooh",
     "Wish",
@@ -27248,6 +27646,7 @@
     "1984",
     "A Clockwork Orange",
     "About Time",
+    "Airbus",
     "Alderney",
     "Alice's Adventures in Wonderland",
     "All the world's a stage",
@@ -27275,6 +27674,7 @@
     "Catherine Parr",
     "Challenger",
     "Chariots of Fire",
+    "Concorde",
     "Coronation of Elizabeth II",
     "Cricket",
     "Darwin",
@@ -27316,6 +27716,7 @@
     "Hood",
     "Horse Racing",
     "Howard's End",
+    "Hurricane",
     "If....",
     "Isle of Man",
     "Isle of Wight",
@@ -27325,6 +27726,7 @@
     "Jersey",
     "Kind Hearts and Coronets",
     "Lady Jane Grey",
+    "Lancaster",
     "Lawrence of Arabia",
     "London",
     "Lord of the Flies",
@@ -27372,6 +27774,7 @@
     "Soccer",
     "Something is rotten in Denmark",
     "Southampton",
+    "Spitfire",
     "Sticky Toffee Pudding",
     "Stonehenge",
     "Sweeney Todd: The Demon Barber of Fleet Street",
@@ -27714,6 +28117,7 @@
   "Things French": [
     "Absinthe",
     "Aioli",
+    "Airbus",
     "Baguette",
     "Bearnaise",
     "Bechamel",
@@ -27728,6 +28132,7 @@
     "Champagne",
     "Charlemagne",
     "Chocolat",
+    "Concorde",
     "Coq au Vin",
     "Corsica",
     "Crepe",
@@ -27785,6 +28190,7 @@
     "Georgia"
   ],
   "Things German": [
+    "Airbus",
     "Anne of Cleves",
     "Apfelstrudel",
     "Bach",
@@ -27808,6 +28214,7 @@
     "Kepler",
     "Käsespätzle",
     "Luge",
+    "Messerschmitt",
     "Pretzel",
     "Pumpernickel",
     "Rhine",
@@ -27818,6 +28225,7 @@
     "Scharnhorst",
     "Schnitzel",
     "Spätzle",
+    "Stuka",
     "The Battle of Stalingrad",
     "The German Reunification",
     "Tirpitz",
@@ -28072,11 +28480,14 @@
     "Ichiro",
     "Ikiru",
     "Japan",
+    "Jill",
     "Judo",
+    "Judy",
     "Kafka on the Shore",
     "Kaga",
     "Kagemusha",
     "Karate",
+    "Kate",
     "Kiki's Delivery Service",
     "Kurosawa",
     "Kyushu",
@@ -28139,12 +28550,14 @@
     "Tonkatsu",
     "Toyota",
     "Udon",
+    "Val",
     "Wasabi",
     "When Marnie Was There",
     "Whisper of the Heart",
     "Yakitori",
     "Yamato",
-    "Yojimbo"
+    "Yojimbo",
+    "Zero"
   ],
   "Things Jewish": [
     "Bagel",
@@ -28449,6 +28862,9 @@
     "Kvass",
     "Laika",
     "Medovik",
+    "MiG",
+    "MiG-15",
+    "MiG-21",
     "Olivier Salad",
     "Pelmeni",
     "Prokofiev",
@@ -28531,6 +28947,7 @@
     "South Ossetia"
   ],
   "Things Spanish": [
+    "Airbus",
     "Alhambra",
     "Canary Islands",
     "Catherine of Aragon",
@@ -28898,6 +29315,11 @@
     "Pen",
     "Saw",
     "Stamp"
+  ],
+  "Torpedo Bomber": [
+    "Devastator",
+    "Jill",
+    "Kate"
   ],
   "Toshiro Mifune": [
     "Mifune"
@@ -29529,9 +29951,14 @@
   "World War II": [
     "Akagi",
     "Ark Royal",
+    "B-17",
+    "B-29",
     "Bismarck",
     "Blood, toil, tears and sweat",
+    "Corsair",
+    "Dauntless",
     "December 7th, 1941",
+    "Devastator",
     "Eisenhower",
     "Enterprise",
     "Franklin D. Roosevelt",
@@ -29539,10 +29966,18 @@
     "Hiryu",
     "Hood",
     "Hornet",
+    "Hurricane",
+    "Jill",
     "Joseph Stalin",
+    "Judy",
+    "June 4th, 1942",
     "Kaga",
+    "Kate",
+    "Lancaster",
+    "Messerschmitt",
     "Montgomery",
     "Musashi",
+    "Mustang",
     "Nimitz",
     "Normandie",
     "Prince of Wales",
@@ -29551,13 +29986,19 @@
     "Repulse",
     "Scharnhorst",
     "Soryu",
+    "Spitfire",
+    "Stuka",
+    "Thunderbolt",
     "Tirpitz",
     "Truman",
+    "Val",
     "We shall never surrender",
     "We will fight them on the beaches",
+    "Wildcat",
     "Winston Churchill",
     "Yamato",
-    "Yorktown"
+    "Yorktown",
+    "Zero"
   ],
   "World Wars": [
     "World War I",

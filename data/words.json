@@ -1,4 +1,13 @@
 {
+  "747": [
+    "Aircraft",
+    "Commercial Aircraft",
+    "Ends with 747",
+    "Manufactured by Boeing",
+    "Passenger Aircraft",
+    "Starts with 747",
+    "Things American"
+  ],
   "1984": [
     "1940s",
     "20th Century",
@@ -2104,6 +2113,8 @@
   ],
   "Bell": [
     "19th Century",
+    "Aircraft Manufacturers",
+    "Companies",
     "Ends with ELL",
     "Inventors",
     "Male Names",
@@ -6746,11 +6757,17 @@
   ],
   "Zero": [
     "Abstract Concepts",
+    "Aircraft",
     "Battle of Midway",
     "Ends with ERO",
+    "Fighter Aircraft",
+    "Manufactured by Mitsubishi",
     "Math Terms",
+    "Military Aircraft",
     "Philosophical Concepts",
-    "Starts with ZER"
+    "Starts with ZER",
+    "Things Japanese",
+    "World War II"
   ],
   "Nothing": [
     "Abstract Concepts",
@@ -26475,5 +26492,367 @@
     "Ends with ING",
     "Starts with QIN",
     "Things Chinese"
+  ],
+  "June 4th, 1942": [
+    "1940s",
+    "20th Century",
+    "Battle of Midway",
+    "Dates",
+    "Ends with 942",
+    "Starts with JUN",
+    "World War II"
+  ],
+  "Spitfire": [
+    "Aircraft",
+    "Ends with IRE",
+    "Fighter Aircraft",
+    "Manufactured by Supermarine",
+    "Military Aircraft",
+    "Starts with SPI",
+    "Things British",
+    "World War II"
+  ],
+  "Mustang": [
+    "Aircraft",
+    "Ends with ANG",
+    "Fighter Aircraft",
+    "Manufactured by North American",
+    "Military Aircraft",
+    "Starts with MUS",
+    "Things American",
+    "World War II"
+  ],
+  "Messerschmitt": [
+    "Aircraft",
+    "Companies",
+    "Ends with ITT",
+    "Fighter Aircraft",
+    "Manufactured by Messerschmitt",
+    "Military Aircraft",
+    "Starts with MES",
+    "Things German",
+    "World War II"
+  ],
+  "Boeing": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with ING",
+    "Starts with BOE",
+    "Things American"
+  ],
+  "Airbus": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with BUS",
+    "Starts with AIR",
+    "Things British",
+    "Things French",
+    "Things German",
+    "Things Spanish"
+  ],
+  "Concorde": [
+    "Aircraft",
+    "Commercial Aircraft",
+    "Ends with RDE",
+    "Manufactured by BAC/Aerospatiale",
+    "Starts with CON",
+    "Supersonic Aircraft",
+    "Things British",
+    "Things French"
+  ],
+  "Cessna": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with SNA",
+    "Starts with CES",
+    "Things American"
+  ],
+  "Piper": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with PER",
+    "Starts with PIP",
+    "Things American"
+  ],
+  "Lockheed": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with EED",
+    "Starts with LOC",
+    "Things American"
+  ],
+  "Douglas": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with LAS",
+    "Starts with DOU",
+    "Things American"
+  ],
+  "DC-3": [
+    "Aircraft",
+    "Commercial Aircraft",
+    "Ends with C-3",
+    "Manufactured by Douglas",
+    "Passenger Aircraft",
+    "Starts with DC-",
+    "Things American"
+  ],
+  "Black Hawk": [
+    "Aircraft",
+    "Ends with AWK",
+    "Helicopters",
+    "Manufactured by Sikorsky",
+    "Military Aircraft",
+    "Starts with BLA",
+    "Things American"
+  ],
+  "Apache": [
+    "Aircraft",
+    "Ends with CHE",
+    "Helicopters",
+    "Manufactured by Boeing",
+    "Military Aircraft",
+    "Starts with APA",
+    "Things American"
+  ],
+  "Chinook": [
+    "Aircraft",
+    "Ends with OOK",
+    "Helicopters",
+    "Manufactured by Boeing",
+    "Military Aircraft",
+    "Starts with CHI",
+    "Things American"
+  ],
+  "Learjet": [
+    "Aircraft",
+    "Business Aircraft",
+    "Ends with JET",
+    "Manufactured by Bombardier",
+    "Private Aircraft",
+    "Starts with LEA",
+    "Things American"
+  ],
+  "Gulfstream": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with EAM",
+    "Starts with GUL",
+    "Things American"
+  ],
+  "Cirrus": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with RUS",
+    "Starts with CIR",
+    "Things American"
+  ],
+  "Sikorsky": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with SKY",
+    "Starts with SIK",
+    "Things American"
+  ],
+  "F-16": [
+    "Aircraft",
+    "Ends with -16",
+    "Fighter Aircraft",
+    "Manufactured by General Dynamics",
+    "Military Aircraft",
+    "Starts with F-1",
+    "Things American"
+  ],
+  "F-22": [
+    "Aircraft",
+    "Ends with -22",
+    "Fighter Aircraft",
+    "Manufactured by Lockheed",
+    "Military Aircraft",
+    "Starts with F-2",
+    "Things American"
+  ],
+  "F-35": [
+    "Aircraft",
+    "Ends with -35",
+    "Fighter Aircraft",
+    "Manufactured by Lockheed",
+    "Military Aircraft",
+    "Starts with F-3",
+    "Things American"
+  ],
+  "MiG": [
+    "Aircraft Manufacturers",
+    "Companies",
+    "Ends with MIG",
+    "Starts with MIG",
+    "Things Russian"
+  ],
+  "MiG-15": [
+    "Aircraft",
+    "Cold War",
+    "Ends with -15",
+    "Fighter Aircraft",
+    "Manufactured by MiG",
+    "Military Aircraft",
+    "Starts with MIG",
+    "Things Russian"
+  ],
+  "MiG-21": [
+    "Aircraft",
+    "Cold War",
+    "Ends with -21",
+    "Fighter Aircraft",
+    "Manufactured by MiG",
+    "Military Aircraft",
+    "Starts with MIG",
+    "Things Russian"
+  ],
+  "B-17": [
+    "Aircraft",
+    "Bomber Aircraft",
+    "Ends with -17",
+    "Manufactured by Boeing",
+    "Military Aircraft",
+    "Starts with B-1",
+    "Things American",
+    "World War II"
+  ],
+  "B-29": [
+    "Aircraft",
+    "Bomber Aircraft",
+    "Ends with -29",
+    "Manufactured by Boeing",
+    "Military Aircraft",
+    "Starts with B-2",
+    "Things American",
+    "World War II"
+  ],
+  "Lancaster": [
+    "Aircraft",
+    "Bomber Aircraft",
+    "Ends with TER",
+    "Manufactured by Avro",
+    "Military Aircraft",
+    "Starts with LAN",
+    "Things British",
+    "World War II"
+  ],
+  "Stuka": [
+    "Aircraft",
+    "Dive Bomber",
+    "Ends with UKA",
+    "Manufactured by Junkers",
+    "Military Aircraft",
+    "Starts with STU",
+    "Things German",
+    "World War II"
+  ],
+  "Hurricane": [
+    "Aircraft",
+    "Ends with ANE",
+    "Fighter Aircraft",
+    "Manufactured by Hawker",
+    "Military Aircraft",
+    "Starts with HUR",
+    "Things British",
+    "World War II"
+  ],
+  "Thunderbolt": [
+    "Aircraft",
+    "Ends with OLT",
+    "Fighter Aircraft",
+    "Manufactured by Republic",
+    "Military Aircraft",
+    "Starts with THU",
+    "Things American",
+    "World War II"
+  ],
+  "Corsair": [
+    "Aircraft",
+    "Ends with AIR",
+    "Fighter Aircraft",
+    "Manufactured by Vought",
+    "Military Aircraft",
+    "Starts with COR",
+    "Things American",
+    "World War II"
+  ],
+  "Wildcat": [
+    "Aircraft",
+    "Battle of Midway",
+    "Ends with CAT",
+    "Fighter Aircraft",
+    "Manufactured by Grumman",
+    "Military Aircraft",
+    "Starts with WIL",
+    "Things American",
+    "World War II"
+  ],
+  "Dauntless": [
+    "Aircraft",
+    "Battle of Midway",
+    "Dive Bomber",
+    "Ends with ESS",
+    "Manufactured by Douglas",
+    "Military Aircraft",
+    "Starts with DAU",
+    "Things American",
+    "World War II"
+  ],
+  "Devastator": [
+    "Aircraft",
+    "Battle of Midway",
+    "Ends with TOR",
+    "Manufactured by Douglas",
+    "Military Aircraft",
+    "Starts with DEV",
+    "Things American",
+    "Torpedo Bomber",
+    "World War II"
+  ],
+  "Kate": [
+    "Aircraft",
+    "Battle of Midway",
+    "Ends with ATE",
+    "Manufactured by Nakajima",
+    "Military Aircraft",
+    "Starts with KAT",
+    "Things Japanese",
+    "Torpedo Bomber",
+    "World War II"
+  ],
+  "Val": [
+    "Aircraft",
+    "Battle of Midway",
+    "Dive Bomber",
+    "Ends with VAL",
+    "Manufactured by Aichi",
+    "Military Aircraft",
+    "Starts with VAL",
+    "Things Japanese",
+    "World War II"
+  ],
+  "Judy": [
+    "Aircraft",
+    "Battle of Midway",
+    "Dive Bomber",
+    "Ends with UDY",
+    "Manufactured by Yokosuka",
+    "Military Aircraft",
+    "Starts with JUD",
+    "Things Japanese",
+    "World War II"
+  ],
+  "Jill": [
+    "Aircraft",
+    "Battle of Midway",
+    "Ends with ILL",
+    "Manufactured by Nakajima",
+    "Military Aircraft",
+    "Starts with JIL",
+    "Things Japanese",
+    "Torpedo Bomber",
+    "World War II"
   ]
 }

@@ -251,6 +251,9 @@
   "Biology": [
     "Blood"
   ],
+  "Manufactured by Mitsubishi": [
+    "Zero"
+  ],
   "Movies directed by Jon Favreau": [
     "Elf"
   ],
@@ -3101,9 +3104,6 @@
   "Civil Rights": [
     "I have a dream"
   ],
-  "Dates": [
-    "December 7th, 1941"
-  ],
   "Rime of the Ancient Mariner": [
     "Water, water everywhere"
   ],
@@ -3115,6 +3115,64 @@
   ],
   "Currency": [
     "Yuan"
+  ],
+  "Manufactured by Supermarine": [
+    "Spitfire"
+  ],
+  "Manufactured by North American": [
+    "Mustang"
+  ],
+  "Manufactured by Messerschmitt": [
+    "Messerschmitt"
+  ],
+  "Manufactured by BAC/Aerospatiale": [
+    "Concorde"
+  ],
+  "Supersonic Aircraft": [
+    "Concorde"
+  ],
+  "Manufactured by Sikorsky": [
+    "Black Hawk"
+  ],
+  "Business Aircraft": [
+    "Learjet"
+  ],
+  "Manufactured by Bombardier": [
+    "Learjet"
+  ],
+  "Private Aircraft": [
+    "Learjet"
+  ],
+  "Manufactured by General Dynamics": [
+    "F-16"
+  ],
+  "Manufactured by Avro": [
+    "Lancaster"
+  ],
+  "Manufactured by Junkers": [
+    "Stuka"
+  ],
+  "Manufactured by Hawker": [
+    "Hurricane"
+  ],
+  "Manufactured by Republic": [
+    "Thunderbolt"
+  ],
+  "Manufactured by Vought": [
+    "Corsair"
+  ],
+  "Manufactured by Grumman": [
+    "Wildcat"
+  ],
+  "Manufactured by Aichi": [
+    "Val"
+  ],
+  "Manufactured by Yokosuka": [
+    "Judy"
+  ],
+  "Passenger Aircraft": [
+    "747",
+    "DC-3"
   ],
   "Maritime Stories": [
     "Titanic",
@@ -4060,6 +4118,10 @@
     "Punk Rock",
     "Rock and Roll"
   ],
+  "Dates": [
+    "December 7th, 1941",
+    "June 4th, 1942"
+  ],
   "Bible": [
     "Render unto Caesar",
     "Let there be light"
@@ -4071,6 +4133,23 @@
   "Science Quotes": [
     "One small step for man",
     "The Eagle has landed"
+  ],
+  "Manufactured by Lockheed": [
+    "F-22",
+    "F-35"
+  ],
+  "Manufactured by MiG": [
+    "MiG-15",
+    "MiG-21"
+  ],
+  "Manufactured by Nakajima": [
+    "Kate",
+    "Jill"
+  ],
+  "Commercial Aircraft": [
+    "747",
+    "Concorde",
+    "DC-3"
   ],
   "White Star Line": [
     "Titanic",
@@ -4631,5 +4710,25 @@
     "The Protestant Reformation",
     "The Catholic Counter-Reformation",
     "The English Reformation"
+  ],
+  "Manufactured by Douglas": [
+    "DC-3",
+    "Dauntless",
+    "Devastator"
+  ],
+  "Helicopters": [
+    "Black Hawk",
+    "Apache",
+    "Chinook"
+  ],
+  "Bomber Aircraft": [
+    "B-17",
+    "B-29",
+    "Lancaster"
+  ],
+  "Torpedo Bomber": [
+    "Devastator",
+    "Kate",
+    "Jill"
   ]
 }
