@@ -1935,6 +1935,9 @@
     "Confucius",
     "Sun Tzu"
   ],
+  "7th Century": [
+    "July 2nd, 626"
+  ],
   "8th Century": [
     "Charlemagne",
     "Du Fu",
@@ -2297,6 +2300,7 @@
     "Athens",
     "Baghdad",
     "Carthage",
+    "Chang'an",
     "Constantinople",
     "Herculaneum",
     "Jerusalem",
@@ -2409,6 +2413,7 @@
     "British Malaya",
     "Canary",
     "Canary Islands",
+    "Falkland Islands",
     "Faroe",
     "Faroe Islands",
     "Fiji",
@@ -2480,6 +2485,7 @@
     "Curia",
     "Et tu, Brute?",
     "Ides of March",
+    "Pugio",
     "Rome"
   ],
   "Assassination of JFK": [
@@ -3212,7 +3218,8 @@
     "Taj Mahal",
     "Temple of Artemis",
     "Texas Book Depository",
-    "Versailles"
+    "Versailles",
+    "Xuanwu Gate"
   ],
   "Burger Toppings": [
     "Avocado",
@@ -3460,6 +3467,7 @@
     "Caprese",
     "Carson City",
     "Carthage",
+    "Chang'an",
     "Charleston",
     "Chernobyl",
     "Cheyenne",
@@ -3550,27 +3558,48 @@
     "Washington",
     "Waterloo"
   ],
+  "Cities in Africa": [
+    "Alexandria",
+    "Carthage"
+  ],
   "Cities in Asia": [
+    "Antioch",
     "Baghdad",
     "Beijing",
+    "Chang'an",
     "Delhi",
     "Fukushima",
     "Jaipur",
     "Jerusalem",
     "Karachi",
+    "Mecca",
     "Samarkand",
     "Seoul",
     "Singapore",
-    "Tokyo"
+    "Tokyo",
+    "Troy"
   ],
   "Cities in Europe": [
+    "Athens",
     "Berlin",
+    "Bologna",
     "Budapest",
+    "Caprese",
     "Chernobyl",
+    "Constantinople",
     "Dublin",
+    "Florence",
+    "Genoa",
+    "Herculaneum",
     "London",
+    "Milan",
     "Monaco",
+    "Naples",
     "Paris",
+    "Pisa",
+    "Pompeii",
+    "Roma",
+    "Rome",
     "San Marino",
     "Sarajevo",
     "Vatican City",
@@ -3659,6 +3688,9 @@
     "Toronto",
     "Trenton",
     "Washington"
+  ],
+  "Cities in Oceania": [
+    "Honolulu"
   ],
   "Cities in South America": [
     "Brasilia",
@@ -4936,6 +4968,7 @@
     "April 14th, 1865",
     "December 7th, 1941",
     "Ides of March",
+    "July 2nd, 626",
     "June 18th, 1815",
     "June 28th, 1914",
     "June 4th, 1942",
@@ -5330,6 +5363,11 @@
     "Uranium",
     "Xenon"
   ],
+  "Emperors": [
+    "Li Jiancheng",
+    "Li Shimin",
+    "Li Yuanji"
+  ],
   "Empire Building": [
     "The British Empire",
     "The Mongol Empire",
@@ -5388,6 +5426,9 @@
   "Ends with  ZI": [
     "Yu Xiang Qie Zi"
   ],
+  "Ends with 'AN": [
+    "Chang'an"
+  ],
   "Ends with -15": [
     "MiG-15"
   ],
@@ -5432,6 +5473,9 @@
   ],
   "Ends with 451": [
     "Fahrenheit 451"
+  ],
+  "Ends with 626": [
+    "July 2nd, 626"
   ],
   "Ends with 70S": [
     "1970s",
@@ -5954,7 +5998,8 @@
     "Stargate",
     "The Devil's Advocate",
     "The Graduate",
-    "Watergate"
+    "Watergate",
+    "Xuanwu Gate"
   ],
   "Ends with ATH": [
     "Give me liberty or give me death",
@@ -6676,6 +6721,9 @@
     "Howard's End",
     "Pirates of the Caribbean: At World's End"
   ],
+  "Ends with ENG": [
+    "Li Jiancheng"
+  ],
   "Ends with ENI": [
     "Pelmeni"
   ],
@@ -7011,7 +7059,8 @@
     "Water Margin"
   ],
   "Ends with GIO": [
-    "Joe DiMaggio"
+    "Joe DiMaggio",
+    "Pugio"
   ],
   "Ends with GLE": [
     "Beagle",
@@ -8224,6 +8273,9 @@
   "Ends with MIG": [
     "MiG"
   ],
+  "Ends with MIN": [
+    "Li Shimin"
+  ],
   "Ends with MIS": [
     "Temple of Artemis"
   ],
@@ -8341,6 +8393,7 @@
   ],
   "Ends with NDS": [
     "Canary Islands",
+    "Falkland Islands",
     "Faroe Islands",
     "Marshall Islands",
     "Netherlands",
@@ -8483,6 +8536,7 @@
     "Phoenix"
   ],
   "Ends with NJI": [
+    "Li Yuanji",
     "The Tale of Genji"
   ],
   "Ends with NKA": [
@@ -11791,6 +11845,9 @@
     "Saturn",
     "Uranus"
   ],
+  "Gates": [
+    "Xuanwu Gate"
+  ],
   "Gemstones": [
     "Emerald",
     "Ruby",
@@ -12054,6 +12111,9 @@
     "Kublai Khan",
     "Lady Jane Grey",
     "Li Bai",
+    "Li Jiancheng",
+    "Li Shimin",
+    "Li Yuanji",
     "Marco Polo",
     "Marie Curie",
     "Mary I",
@@ -12093,7 +12153,8 @@
     "Curia",
     "Ford's Theatre",
     "Globe Theatre",
-    "Waterloo"
+    "Waterloo",
+    "Xuanwu Gate"
   ],
   "Historical Speeches": [
     "Blood, toil, tears and sweat",
@@ -12108,6 +12169,7 @@
     "Dagger",
     "Halberd",
     "Mace",
+    "Pugio",
     "Spear",
     "Sword"
   ],
@@ -12635,6 +12697,7 @@
   ],
   "Locations in Africa": [
     "Abyssinia",
+    "Alexandria",
     "Algeria",
     "Anglo-Egyptian Sudan",
     "Angola",
@@ -12652,6 +12715,7 @@
     "Burundi",
     "Cabo Verde",
     "Cameroon",
+    "Carthage",
     "Central African Republic",
     "Chad",
     "Comoros",
@@ -12728,6 +12792,7 @@
     "Afghanistan",
     "Andaman",
     "Annapurna",
+    "Antioch",
     "Armenia",
     "Artsakh",
     "Azerbaijan",
@@ -12742,6 +12807,7 @@
     "Cambodia",
     "Cebu",
     "Ceylon",
+    "Chang'an",
     "China",
     "Delhi",
     "Everest",
@@ -12776,6 +12842,7 @@
     "Luzon",
     "Malaysia",
     "Maldives",
+    "Mecca",
     "Mindanao",
     "Mongolia",
     "Myanmar",
@@ -12817,6 +12884,7 @@
     "Tambora",
     "Thailand",
     "Tokyo",
+    "Troy",
     "Turkey",
     "Turkmenistan",
     "United Arab Emirates",
@@ -12829,20 +12897,24 @@
     "Albania",
     "Alderney",
     "Andorra",
+    "Athens",
     "Austria",
     "Azores",
     "Belarus",
     "Belgium",
     "Berlin",
+    "Bologna",
     "Bornholm",
     "Bosnia and Herzegovina",
     "Budapest",
     "Bulgaria",
     "Canary",
     "Canary Islands",
+    "Caprese",
     "Capri",
     "Chernobyl",
     "Comino",
+    "Constantinople",
     "Corfu",
     "Corsica",
     "Crete",
@@ -12860,9 +12932,11 @@
     "Faroe",
     "Faroe Islands",
     "Finland",
+    "Florence",
     "Formentera",
     "France",
     "Fuerteventura",
+    "Genoa",
     "Georgia",
     "Germany",
     "Gotland",
@@ -12871,6 +12945,7 @@
     "Greece",
     "Guernsey",
     "Hebrides",
+    "Herculaneum",
     "Hungary",
     "Ibiza",
     "Iceland",
@@ -12894,21 +12969,27 @@
     "Malta",
     "Matterhorn",
     "Menorca",
+    "Milan",
     "Moldova",
     "Monaco",
     "Mont Blanc",
     "Montenegro",
     "Mykonos",
+    "Naples",
     "Netherlands",
     "North Macedonia",
     "Norway",
     "Olympus",
     "Orkney",
     "Paris",
+    "Pisa",
     "Poland",
+    "Pompeii",
     "Portugal",
     "Rhodes",
+    "Roma",
     "Romania",
+    "Rome",
     "Russia",
     "San Marino",
     "Santa Maria",
@@ -13055,6 +13136,7 @@
     "Chuuk",
     "Fiji",
     "Guam",
+    "Honolulu",
     "Kiribati",
     "Kosrae",
     "Marshall Islands",
@@ -13088,6 +13170,7 @@
     "Dutch Guiana",
     "Easter Island",
     "Ecuador",
+    "Falkland Islands",
     "Galapagos",
     "Guyana",
     "Lima",
@@ -19344,6 +19427,9 @@
     "Lenore",
     "Leo",
     "Li Bai",
+    "Li Jiancheng",
+    "Li Shimin",
+    "Li Yuanji",
     "Liberace",
     "Lincoln",
     "Madison",
@@ -19678,6 +19764,7 @@
     "Central African Republic",
     "Ceylon",
     "Chad",
+    "Chang'an",
     "Charleston",
     "Chernobyl",
     "Cheyenne",
@@ -19732,6 +19819,7 @@
     "Etna",
     "Europa",
     "Everest",
+    "Falkland Islands",
     "Faroe",
     "Faroe Islands",
     "Fiji",
@@ -20380,6 +20468,9 @@
     "Lee Harvey Oswald",
     "Leo",
     "Li Bai",
+    "Li Jiancheng",
+    "Li Shimin",
+    "Li Yuanji",
     "Lincoln",
     "Madison",
     "Mantle",
@@ -20781,6 +20872,7 @@
     "Mauretania",
     "Palestine",
     "Pompeii",
+    "Pugio",
     "Render unto Caesar",
     "Roma",
     "Rome",
@@ -22513,6 +22605,7 @@
     "Challenger",
     "Champagne",
     "Chanel",
+    "Chang'an",
     "Char Siu",
     "Chariots of Fire",
     "Charlemagne",
@@ -23164,6 +23257,7 @@
   "Starts with FAL": [
     "Falafel",
     "Falcon",
+    "Falkland Islands",
     "Fallen Angels",
     "Fallout"
   ],
@@ -23998,7 +24092,8 @@
     "Juice"
   ],
   "Starts with JUL": [
-    "Juliet"
+    "Juliet",
+    "July 2nd, 626"
   ],
   "Starts with JUM": [
     "Jumbo"
@@ -24287,7 +24382,10 @@
     "Lex Luthor"
   ],
   "Starts with LI ": [
-    "Li Bai"
+    "Li Bai",
+    "Li Jiancheng",
+    "Li Shimin",
+    "Li Yuanji"
   ],
   "Starts with LIB": [
     "Liberace",
@@ -25227,6 +25325,9 @@
   ],
   "Starts with PUF": [
     "Puffin"
+  ],
+  "Starts with PUG": [
+    "Pugio"
   ],
   "Starts with PUL": [
     "Pulp Fiction",
@@ -26724,6 +26825,9 @@
     "Xia",
     "Xiaolongbao"
   ],
+  "Starts with XUA": [
+    "Xuanwu Gate"
+  ],
   "Starts with YAC": [
     "Yacht"
   ],
@@ -28022,6 +28126,7 @@
     "Elizabeth I",
     "Endeavour",
     "Et tu, Brute?",
+    "Falkland Islands",
     "Faraday",
     "Fish and Chips",
     "Formula One",
@@ -28280,6 +28385,7 @@
     "Ball Lightning",
     "Bao",
     "Beijing",
+    "Chang'an",
     "Char Siu",
     "China",
     "Chou En-Lai",
@@ -28320,9 +28426,13 @@
     "In the Mood for Love",
     "Jiaozi",
     "Journey to the West",
+    "July 2nd, 626",
     "Kombucha",
     "Kung Pao Chicken",
     "Li Bai",
+    "Li Jiancheng",
+    "Li Shimin",
+    "Li Yuanji",
     "Lo Mein",
     "Ma La Tang",
     "Mapo Tofu",
@@ -28357,6 +28467,7 @@
     "Water Margin",
     "Wonton",
     "Xiaolongbao",
+    "Xuanwu Gate",
     "Yu Xiang Qie Zi",
     "Yuan",
     "Zheng He",
@@ -29403,6 +29514,7 @@
     "Trinidad and Tobago"
   ],
   "Things Tunisian": [
+    "Carthage",
     "Tunisia"
   ],
   "Things Turkish": [
@@ -29412,6 +29524,7 @@
     "Hagia Sophia",
     "The Armenian Genocide",
     "The Fall of Constantinople",
+    "Troy",
     "Turkey"
   ],
   "Things Turkmen": [
@@ -30194,6 +30307,7 @@
     "Hawkeye",
     "Knife",
     "Magazine",
+    "Pugio",
     "Rifle",
     "Shield",
     "Spear",
@@ -30389,6 +30503,15 @@
     "Shadowcat",
     "Storm",
     "Wolverine"
+  ],
+  "Xuanwu Gate Incident": [
+    "Chang'an",
+    "July 2nd, 626",
+    "Li Jiancheng",
+    "Li Shimin",
+    "Li Yuanji",
+    "Tang",
+    "Xuanwu Gate"
   ],
   "Yasujiro Ozu": [
     "Ozu"

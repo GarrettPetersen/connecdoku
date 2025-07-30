@@ -197,6 +197,9 @@
   "Movies featuring Richard Gere": [
     "Chicago"
   ],
+  "Cities in Oceania": [
+    "Honolulu"
+  ],
   "Movies directed by Kunihiko Yuyama": [
     "Pokemon"
   ],
@@ -535,9 +538,6 @@
   ],
   "Things Trinidadian": [
     "Trinidad and Tobago"
-  ],
-  "Things Tunisian": [
-    "Tunisia"
   ],
   "Things Turkmen": [
     "Turkmenistan"
@@ -3185,6 +3185,12 @@
   "Rifles": [
     "Carcano Model 38"
   ],
+  "Gates": [
+    "Xuanwu Gate"
+  ],
+  "7th Century": [
+    "July 2nd, 626"
+  ],
   "Passenger Aircraft": [
     "747",
     "DC-3"
@@ -3192,6 +3198,14 @@
   "Maritime Stories": [
     "Titanic",
     "Moby Dick"
+  ],
+  "Cities in Africa": [
+    "Carthage",
+    "Alexandria"
+  ],
+  "Things Tunisian": [
+    "Carthage",
+    "Tunisia"
   ],
   "Movies featuring Tommy Lee Jones": [
     "Volcano",
@@ -4746,5 +4760,10 @@
     "Devastator",
     "Kate",
     "Jill"
+  ],
+  "Emperors": [
+    "Li Shimin",
+    "Li Jiancheng",
+    "Li Yuanji"
   ]
 }

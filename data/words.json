@@ -238,11 +238,13 @@
     "1st Century",
     "Ancient Cities",
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Disaster Stories",
     "Disasters",
     "Ends with EII",
     "Events",
+    "Locations in Europe",
     "Movies",
     "Movies directed by Paul W.S. Anderson",
     "Movies featuring Emily Browning",
@@ -381,11 +383,13 @@
     "Ancient Cities",
     "Burger Toppings",
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Ends with OMA",
     "Foods",
     "Ingredients in Cobb Salad",
     "Ingredients in a BLT",
+    "Locations in Europe",
     "National Capitals",
     "Place Names",
     "Roman Cities",
@@ -470,8 +474,10 @@
     "Ancient Cities",
     "Assassination of Caesar",
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Ends with OME",
+    "Locations in Europe",
     "National Capitals",
     "Place Names",
     "Roman Cities",
@@ -484,19 +490,24 @@
     "Ancient Cities",
     "Ancient Empires",
     "Cities",
+    "Cities in Africa",
     "Countries",
     "Countries that No Longer Exist",
     "Ends with AGE",
     "Former Empires",
     "Historic Trade Cities",
+    "Locations in Africa",
     "Roman Cities",
     "Roman Empire",
-    "Starts with CAR"
+    "Starts with CAR",
+    "Things Tunisian"
   ],
   "Constantinople": [
     "Ancient Cities",
     "Cities",
+    "Cities in Europe",
     "Ends with PLE",
+    "Locations in Europe",
     "Roman Cities",
     "Roman Empire",
     "Starts with CON",
@@ -543,22 +554,28 @@
   ],
   "Florence": [
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Ends with NCE",
+    "Locations in Europe",
     "Place Names",
     "Starts with FLO",
     "Things Italian"
   ],
   "Milan": [
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Ends with LAN",
+    "Locations in Europe",
     "Starts with MIL"
   ],
   "Naples": [
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Ends with LES",
+    "Locations in Europe",
     "Starts with NAP",
     "Things Italian"
   ],
@@ -570,14 +587,18 @@
   ],
   "Pisa": [
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Ends with ISA",
+    "Locations in Europe",
     "Starts with PIS"
   ],
   "Genoa": [
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Ends with NOA",
+    "Locations in Europe",
     "Starts with GEN"
   ],
   "Bari": [
@@ -598,8 +619,10 @@
   ],
   "Bologna": [
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Ends with GNA",
+    "Locations in Europe",
     "Starts with BOL"
   ],
   "Colossal": [
@@ -716,9 +739,11 @@
     "21st Century",
     "Ancient Cities",
     "Cities",
+    "Cities in Asia",
     "Ends with ROY",
     "Greek Mythology",
     "Historical Fiction",
+    "Locations in Asia",
     "Movies",
     "Movies directed by Wolfgang Petersen",
     "Movies featuring Brad Pitt",
@@ -726,6 +751,7 @@
     "Movies featuring Orlando Bloom",
     "Starts with TRO",
     "Things American",
+    "Things Turkish",
     "Trojan War"
   ],
   "Tesla": [
@@ -1033,7 +1059,9 @@
   "Athens": [
     "Ancient Cities",
     "Cities",
+    "Cities in Europe",
     "Ends with ENS",
+    "Locations in Europe",
     "National Capitals",
     "Place Names",
     "Starts with ATH",
@@ -3118,6 +3146,14 @@
     "Starts with DAG",
     "Weapons"
   ],
+  "Pugio": [
+    "Assassination of Caesar",
+    "Ends with GIO",
+    "Historical Weapons",
+    "Roman Empire",
+    "Starts with PUG",
+    "Weapons"
+  ],
   "Bow": [
     "Ends with BOW",
     "Historical Weapons",
@@ -3148,8 +3184,10 @@
   "Alexandria": [
     "Ancient Cities",
     "Cities",
+    "Cities in Africa",
     "Ends with RIA",
     "Historic Trade Cities",
+    "Locations in Africa",
     "Roman Cities",
     "Starts with ALE",
     "Things Egyptian"
@@ -3157,7 +3195,9 @@
   "Antioch": [
     "Ancient Cities",
     "Cities",
+    "Cities in Asia",
     "Ends with OCH",
+    "Locations in Asia",
     "Roman Cities",
     "Starts with ANT"
   ],
@@ -4272,10 +4312,12 @@
   ],
   "Caprese": [
     "Cities",
+    "Cities in Europe",
     "Cities in Italy",
     "Ends with ESE",
     "Eponymous Salads",
     "Foods",
+    "Locations in Europe",
     "Salads",
     "Starts with CAP",
     "Things Italian"
@@ -4432,7 +4474,8 @@
     "Condiments",
     "Ends with ANG",
     "Foods",
-    "Starts with TAN"
+    "Starts with TAN",
+    "Xuanwu Gate Incident"
   ],
   "Song": [
     "Chinese Dynasties",
@@ -5432,9 +5475,11 @@
   "Honolulu": [
     "Cities",
     "Cities in North America",
+    "Cities in Oceania",
     "Cities in USA",
     "Ends with ULU",
     "Locations in North America",
+    "Locations in Oceania",
     "Place Names",
     "Starts with HON",
     "State Capitals",
@@ -5987,7 +6032,9 @@
   "Mecca": [
     "Ancient Cities",
     "Cities",
+    "Cities in Asia",
     "Ends with CCA",
+    "Locations in Asia",
     "Place Names",
     "Religious Sites",
     "Starts with MEC",
@@ -8503,9 +8550,11 @@
   "Herculaneum": [
     "Ancient Cities",
     "Cities",
+    "Cities in Europe",
     "Disasters",
     "Ends with EUM",
     "Events",
+    "Locations in Europe",
     "Place Names",
     "Roman Empire",
     "Starts with HER",
@@ -27185,5 +27234,71 @@
     "Ends with 914",
     "Starts with JUN",
     "World War I"
+  ],
+  "Li Shimin": [
+    "Emperors",
+    "Ends with MIN",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Starts with LI ",
+    "Things Chinese",
+    "Xuanwu Gate Incident"
+  ],
+  "Li Jiancheng": [
+    "Emperors",
+    "Ends with ENG",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Starts with LI ",
+    "Things Chinese",
+    "Xuanwu Gate Incident"
+  ],
+  "Li Yuanji": [
+    "Emperors",
+    "Ends with NJI",
+    "Historical Figures",
+    "People",
+    "Real People",
+    "Starts with LI ",
+    "Things Chinese",
+    "Xuanwu Gate Incident"
+  ],
+  "Xuanwu Gate": [
+    "Buildings",
+    "Ends with ATE",
+    "Gates",
+    "Historical Sites",
+    "Starts with XUA",
+    "Things Chinese",
+    "Xuanwu Gate Incident"
+  ],
+  "July 2nd, 626": [
+    "7th Century",
+    "Dates",
+    "Ends with 626",
+    "Starts with JUL",
+    "Things Chinese",
+    "Xuanwu Gate Incident"
+  ],
+  "Chang'an": [
+    "Ancient Cities",
+    "Cities",
+    "Cities in Asia",
+    "Ends with 'AN",
+    "Locations in Asia",
+    "Place Names",
+    "Starts with CHA",
+    "Things Chinese",
+    "Xuanwu Gate Incident"
+  ],
+  "Falkland Islands": [
+    "Archipelagos",
+    "Ends with NDS",
+    "Locations in South America",
+    "Place Names",
+    "Starts with FAL",
+    "Things British"
   ]
 }
