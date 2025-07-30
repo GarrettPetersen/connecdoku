@@ -213,15 +213,19 @@ function hasExclusiveWord(rows){
   // Calculate total work: sum of (n-1) + (n-2) + ... + 1 = n*(n-1)/2
   const totalWork = n * (n - 1) / 2;
   
-  // Calculate work progress: completed work = sum of (n-1) + (n-2) + ... + (n-i) + j
+  // Estimate starting position based on resume rank
+  let estimatedCompletedWork = 0;
+  if (startRank > 0) {
+    // Rough estimate: assume puzzles are distributed evenly across work
+    // This is approximate but better than starting from 0
+    estimatedCompletedWork = (startRank / 1000000) * totalWork; // Assume ~1M total puzzles
+  }
+  
+  // Calculate work progress: simple formula based on i and j position
   function getWorkProgress(i, jIdx, jListLength) {
-    // Work completed up to iteration i: sum of (n-1) + (n-2) + ... + (n-i+1)
-    // This equals: n*(n-1)/2 - (n-i)*(n-i+1)/2
-    const completedUpToI = totalWork - (n - i) * (n - i + 1) / 2;
-    // Add progress within current i iteration
-    const currentIProgress = jIdx / jListLength;
-    const currentIWork = n - i - 1; // Number of j's for current i
-    const totalProgress = (completedUpToI + currentIProgress * currentIWork) / totalWork;
+    // Work completed = sum of (n-1) + (n-2) + ... + (n-i) + j progress
+    const workCompleted = i * (n - 1) - i * (i - 1) / 2 + (jIdx / jListLength) * (n - i - 1);
+    const totalProgress = (estimatedCompletedWork + workCompleted) / totalWork;
     return Math.min(totalProgress, 1.0);
   }
   
@@ -344,7 +348,7 @@ function hasExclusiveWord(rows){
 
   // final commit
   await new Promise((res,rej)=>commit(e=>e?rej(e):res()));
-  drawBar(1, seen, saved, (performance.now()-t0)/1000); process.stdout.write("\n");
+  drawBar(getWorkProgress(n-1, 0, 1), seen, saved, (performance.now()-t0)/1000); process.stdout.write("\n");
 
   insertStmt.finalize();
   db.close(()=>console.log(`Done.  ${seen} puzzles visited, ${saved} new.`));
