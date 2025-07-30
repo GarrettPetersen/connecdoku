@@ -1,358 +1,252 @@
 #!/usr/bin/env node
-// connecdoku_matrix_solver_sqlite.js  –  bit-vector edition
+// connecdoku_matrix_solver_sqlite.js – parallel bit-vector edition
 //
-//  • bit-vectors for every category (fast  ∩ / ⊆ / ≠∅)
-//  • memoised row–pair → third-row list
-//  • early red-herring reject
-//  • single “rank” for fast resume
-//  • progress bar clocked once per i-loop
+// main thread:
+//   • sets up DB (WAL, sync=OFF) and spawns one worker per CPU
+//   • receives puzzles, inserts in 1 000-row batches
+//   • draws a progress-bar line per worker
 //
-//  Committing every 500 puzzles (INSERT OR IGNORE, one per row)
+// worker thread:
+//   • runs the full solver but only for i ≡ id (mod nWorkers)
+//   • posts {puzzle}, {tick}, {done} messages
+//
+// ---------------------------------------------------------------
 
 "use strict";
+import os from "os";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import crypto from "crypto";
-import { Matrix } from "ml-matrix";
+import { Worker, isMainThread, parentPort, workerData } from "worker_threads";
 import sqlite3 from "sqlite3";
+import { Matrix } from "ml-matrix";
 import { performance } from "perf_hooks";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const DATA_DIR  = path.join(__dirname, "data");
+const WORDS_F   = path.join(DATA_DIR, "words.json");
+const CATS_F    = path.join(DATA_DIR, "categories.json");
+const DB_PATH   = path.join(__dirname, "puzzles.db");
 
-// ───────── paths ────────────────────────────────────────────────────────────
-const DATA_DIR = path.join(__dirname, "data");
-const WORDS_F = path.join(DATA_DIR, "words.json");
-const CATS_F = path.join(DATA_DIR, "categories.json");
-const DB_PATH = path.join(__dirname, "puzzles.db");
+// ───────── helpers ──────────────────────────────────────────────
+const sha256 = buf => crypto.createHash("sha256").update(buf).digest("hex");
+const BAR_W = 30;
+function bar(p) { const f = Math.round(p * BAR_W); return "█".repeat(f) + "░".repeat(BAR_W - f); }
+function fmt(s) { if (!isFinite(s)) return "??"; const h = s/3600|0, m = s/60%60|0; return h?`${h}h${m.toString().padStart(2,"0")}m`:m?`${m}m`:`${s|0}s`; }
 
-// ───────── helpers ──────────────────────────────────────────────────────────
-const sha256 = b => crypto.createHash("sha256").update(b).digest("hex");
+/*─────────────────────────── MAIN THREAD ──────────────────────────*/
+if (isMainThread) {
+  const nWorkers = os.cpus().length;
+  console.log(`Launching ${nWorkers} workers…`);
 
-function fmtTime(s) {
-  if (!isFinite(s)) return "??";
-  const h = s / 3600 | 0, m = s / 60 % 60 | 0;
-  return h ? `${h}h ${m}m` : m ? `${m}m` : `${s | 0}s`;
-}
-const BAR_W = 40;
-function drawBar(pct, found, saved, elapsed) {
-  const clampedPct = Math.min(pct, 1.0); // Clamp to 100%
-  const fill = Math.round(clampedPct * BAR_W);
-  const bar  = "█".repeat(fill) + "░".repeat(BAR_W - fill);
-  const eta  = pct ? elapsed / pct - elapsed : Infinity;
-  process.stdout.write(
-    `\r[${bar}] ${(pct*100).toFixed(1).padStart(5)}%  ${found} seen, ${saved} new  [${fmtTime(elapsed)}/${fmtTime(eta)}] `
-  );
-}
-
-// ───────── database ─────────────────────────────────────────────────────────
-function setupDatabase() {
-  return new Promise((resolve, reject) => {
-    const db = new sqlite3.Database(DB_PATH, err => {
-      if (err) return reject(err);
-      db.run(
-        `CREATE TABLE IF NOT EXISTS puzzles (
-           puzzle_hash      TEXT PRIMARY KEY,
-           row0  TEXT, row1 TEXT, row2 TEXT, row3 TEXT,
-           col0  TEXT, col1 TEXT, col2 TEXT, col3 TEXT,
-           word_list_hash   TEXT,
-           timestamp        DATETIME DEFAULT CURRENT_TIMESTAMP,
-           rank             INTEGER
-         )`, e2 => (e2 ? reject(e2) : resolve(db))
-      );
-    });
+  // ── DB setup ──
+  const db = new sqlite3.Database(DB_PATH);
+  db.serialize(() => {
+    db.run("PRAGMA journal_mode=WAL");
+    db.run("PRAGMA synchronous=OFF");
+    db.run(`CREATE TABLE IF NOT EXISTS puzzles (
+              puzzle_hash TEXT PRIMARY KEY,
+              row0 TEXT,row1 TEXT,row2 TEXT,row3 TEXT,
+              col0 TEXT,col1 TEXT,col2 TEXT,col3 TEXT,
+              word_list_hash TEXT,
+              timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+              rank INTEGER
+            )`);
   });
-}
+  const wordListHash = sha256(fs.readFileSync(CATS_F));
 
-// ───────── load data ────────────────────────────────────────────────────────
-const wordsJson      = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
-const categoriesJson = JSON.parse(fs.readFileSync(CATS_F, "utf8"));
+  // prepared statement template for multi-row insert
+  const insert = (rows, cb) => {
+    if (!rows.length) return cb && cb();
+    const ph = rows.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
+    const flat = rows.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
+    db.run(`INSERT OR IGNORE INTO puzzles
+            (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash)
+            VALUES ${ph}`, flat, cb);
+  };
 
-// master word list & indices
-const ALL_WORDS = Object.keys(wordsJson);
-const WORD_IDX  = new Map(ALL_WORDS.map((w,i) => [w,i]));
-const W         = ALL_WORDS.length;
-const CHUNK     = 32;
-const MASK_LEN  = Math.ceil(W / CHUNK);
+  const BATCH_SZ = 1000;
+  let batch = [];
 
-// bit-vector helpers
-const pop32 = n => n - ((n >>> 1) & 0x55555555) -
-                     ((n >>> 2) & 0x33333333) -
-                     ((n >>> 3) & 0x11111111)  >>> 0 & 0x0F0F0F0F;
-
-function makeMask(wordArray) {
-  const m = new Uint32Array(MASK_LEN);
-  for (const w of wordArray) {
-    const idx = WORD_IDX.get(w);
-    if (idx === undefined) continue;
-    m[idx >>> 5] |= 1 << (idx & 31);
-  }
-  return m;
-}
-function intersects(a,b){
-  for (let i=0;i<MASK_LEN;i++) if (a[i] & b[i]) return true;
-  return false;
-}
-function isSubsetMask(a,b){
-  for (let i=0;i<MASK_LEN;i++) if ((a[i] & ~b[i]) !== 0) return false;
-  return true;
-}
-
-// categories with ≥4 words
-const cats = Object.keys(categoriesJson)
-  .filter(k => categoriesJson[k].length >= 4)
-  .sort();                       // canonical order
-const n = cats.length;
-console.log(`Total usable categories: ${n}`);
-
-// bit-vector per category
-const bitMasks = cats.map(c => makeMask(categoriesJson[c]));
-
-// ───────── subset mask S  (using bit-vectors) ───────────────────────────────
-console.log("Subset mask…");
-const S = Array.from({length:n}, () => Array(n).fill(false));
-for (let i=0;i<n;i++){
-  for (let j=i+1;j<n;j++){
-    if (isSubsetMask(bitMasks[i], bitMasks[j]) ||
-        isSubsetMask(bitMasks[j], bitMasks[i]))
-      S[i][j] = S[j][i] = true;
-  }
-}
-
-// ───────── 1-away (A) and 2-away (B) matrices ──────────────────────────────
-console.log("1-away matrix…");
-const A = Matrix.zeros(n,n);
-for (let i=0;i<n;i++){
-  for (let j=i+1;j<n;j++){
-    if (S[i][j]) continue;
-    if (intersects(bitMasks[i], bitMasks[j])){
-      A.set(i,j,1); A.set(j,i,1);
-    }
-  }
-}
-const neigh1 = Array.from({length:n},(_,i) =>
-  new Set(A.getRow(i).flatMap((v,idx)=>v?idx:[]))
-);
-
-console.log("2-away matrix…");
-const A2 = A.mmul(A);
-const B  = Array.from({length:n}, () => Array(n).fill(false));
-for (let i=0;i<n;i++){
-  for (let j=i+1;j<n;j++){
-    if (!S[i][j] && A2.get(i,j) >= 4) B[i][j]=B[j][i]=true;
-  }
-}
-const neigh2 = Array.from({length:n},(_,i)=>
-  new Set(B[i].flatMap((v,idx)=>v?idx:[]))
-);
-
-// memoised (i,j) → list(k) where k>j & k∈neigh2[i]∩neigh2[j]
-const pairCache = new Map();
-function tripleList(i,j){
-  const key = (i<<11)|j;               // n<2048
-  const cached = pairCache.get(key);
-  if (cached) return cached;
-  const arr = [...neigh2[i]].filter(k => k>j && neigh2[j].has(k))
-                             .sort((a,b)=>a-b);
-  pairCache.set(key,arr);
-  return arr;
-}
-
-// ───────── utility for early red-herring prune ─────────────────────────────
-function hasExclusiveWord(rows){
-  // For each row, check it owns at least one word not in other rows
-  for (let r=0;r<rows.length;r++){
-    const mask = bitMasks[rows[r]];
-    let others = new Uint32Array(MASK_LEN);
-    for (let o=0;o<rows.length;o++){
-      if (o===r) continue;
-      for (let k=0;k<MASK_LEN;k++) others[k] |= bitMasks[rows[o]][k];
-    }
-    let ok=false;
-    for (let k=0;k<MASK_LEN;k++){
-      if (mask[k] & ~others[k]) { ok=true; break; }
-    }
-    if(!ok) return false;
-  }
-  return true;
-}
-
-// ───────── search ──────────────────────────────────────────────────────────
-(async function main(){
-
-  const db = await setupDatabase();
-  console.log(`Database initialised at ${DB_PATH}`);
-
-  const insertStmt = db.prepare(
-    `INSERT OR IGNORE INTO puzzles
-       (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash,rank)
-     VALUES (?,?,?,?,?,?,?,?,?,?,?)`
-  );
-
-  const wordListHash = sha256(JSON.stringify(categoriesJson));
-
-  // resume rank
-  const startRank = await new Promise(res=>{
-    db.get(
-      `SELECT rank FROM puzzles
-         WHERE word_list_hash = ?
-         ORDER BY rank DESC LIMIT 1`,
-      [wordListHash], (e,row)=> res(row? row.rank : -1)
-    );
-  });
-  if (startRank>=0) console.log(`Resuming from rank ${startRank}`);
-
-  // begin first txn
-  await new Promise((r,j)=>db.run("BEGIN TRANSACTION",e=>e?j(e):r()));
-
-  const BATCH_SIZE = 500;
-  let batchCnt = 0, saved   = 0, seen   = 0, rank = -1;
-  let currentJIdx = 0; // Track current j progress globally
+  // ── progress bookkeeping ──
+  const status = Array.from({ length: nWorkers }, () => ({ i: 0, total: 1, done: false }));
   const t0 = performance.now();
-  
-  // Calculate total work: sum of (n-1) + (n-2) + ... + 1 = n*(n-1)/2
-  const totalWork = n * (n - 1) / 2;
-  
-  // Estimate starting position based on resume rank
-  let estimatedCompletedWork = 0;
-  if (startRank > 0) {
-    // Rough estimate: assume puzzles are distributed evenly across work
-    // This is approximate but better than starting from 0
-    estimatedCompletedWork = (startRank / 1000000) * totalWork; // Assume ~1M total puzzles
-  }
-  
-  // Calculate work progress: simple formula based on i and j position
-  function getWorkProgress(i, jIdx, jListLength) {
-    // Work completed = sum of (n-1) + (n-2) + ... + (n-i) + j progress
-    const workCompleted = i * (n - 1) - i * (i - 1) / 2 + (jIdx / jListLength) * (n - i - 1);
-    const totalProgress = (estimatedCompletedWork + workCompleted) / totalWork;
-    return Math.min(totalProgress, 1.0);
-  }
-  
-  // Helper function to update progress with current state
-  function updateProgress(i, jIdx, jListLength) {
-    drawBar(getWorkProgress(i, jIdx, jListLength), seen, saved, (performance.now()-t0)/1000);
-  }
-
-  function commit(cb){
-    db.run("COMMIT", err=>{
-      if(err) return cb(err);
-      db.run("BEGIN TRANSACTION", cb);
+  function redraw() {
+    const elapsed = (performance.now() - t0) / 1000;
+    let out = "";
+    status.forEach((st, idx) => {
+      const pct = Math.min(st.i / st.total, 1);
+      out += `\nW${idx} [${bar(pct)}] ${(pct*100).toFixed(1).padStart(6)}%${st.done?" ✓":""}`;
     });
+    out += `\nBatch ${batch.length}/${BATCH_SZ}   elapsed ${fmt(elapsed)}`;
+    process.stdout.write("\x1b[H\x1b[J" + out);  // clear + write
+  }
+  process.stdout.write("\x1b[2J\x1b[H");        // clear screen once
+
+  // ── spawn workers ──
+  let active = nWorkers;
+  for (let id = 0; id < nWorkers; id++) {
+    const w = new Worker(fileURLToPath(import.meta.url), { workerData: { id, nWorkers } });
+    w.on("message", msg => {
+      if (msg.type === "puzzle") {
+        batch.push(msg);
+        if (batch.length >= BATCH_SZ) insert(batch.splice(0, BATCH_SZ), redraw);
+      } else if (msg.type === "tick") {
+        status[msg.id] = { ...status[msg.id], i: msg.i, total: msg.total };
+        redraw();
+      } else if (msg.type === "done") {
+        status[msg.id].done = true;
+        active--;
+        redraw();
+        if (active === 0) insert(batch, () => db.close(() => console.log("\nAll done.")));
+      }
+    });
+    w.on("error", e => console.error("worker error:", e));
   }
 
-  // ----------- main nested loops (fixed ordering, rank only) --------------
-  outer:
-  for (let i=0;i<n;i++){
-    const tLoop = performance.now();
+/*────────────────────────── WORKER THREAD ─────────────────────────*/
+} else {
 
-    const jList=[...neigh2[i]].filter(j=>j>i).sort((a,b)=>a-b);
-    for (let jIdx = 0; jIdx < jList.length; jIdx++){
-      const j = jList[jIdx];
-      currentJIdx = jIdx; // Update global tracker
+  const { id: WID, nWorkers: NW } = workerData;
 
-      const kList = tripleList(i,j);
-      for (const k of kList){
+  // ── load data ──
+  const wordsJson      = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
+  const categoriesJson = JSON.parse(fs.readFileSync(CATS_F,  "utf8"));
+  const ALL_WORDS      = Object.keys(wordsJson);
+  const WORD_IDX       = new Map(ALL_WORDS.map((w, i) => [w, i]));
+  const MASK_LEN       = Math.ceil(ALL_WORDS.length / 32);
 
-        const lList = kList.filter(l=>l>k && neigh2[k].has(l));
-        for (const l of lList){
+  function makeMask(arr) {
+    const m = new Uint32Array(MASK_LEN);
+    for (const w of arr) {
+      const idx = WORD_IDX.get(w);
+      if (idx !== undefined) m[idx >>> 5] |= 1 << (idx & 31);
+    }
+    return m;
+  }
+  function intersects(a, b) { for (let i = 0; i < MASK_LEN; i++) if (a[i] & b[i]) return true; return false; }
+  function subset(a, b)      { for (let i = 0; i < MASK_LEN; i++) if ((a[i] & ~b[i]) !== 0) return false; return true; }
 
-          const rows = [i,j,k,l];  // already ascending
-          if (!hasExclusiveWord(rows)) continue;          // early red-herring
+  const cats = Object.keys(categoriesJson).filter(k => categoriesJson[k].length >= 4).sort();
+  const n    = cats.length;
+  const mask = cats.map(c => makeMask(categoriesJson[c]));
 
-          // candidate columns: intersection of 1-away sets w/ rows
-          let cand = new Set(neigh1[i]);
-          for (let r=1;r<4;r++){
+  // subset mask
+  const S = Array.from({ length: n }, () => Array(n).fill(false));
+  for (let i = 0; i < n; i++)
+    for (let j = i + 1; j < n; j++)
+      if (subset(mask[i], mask[j]) || subset(mask[j], mask[i])) S[i][j] = S[j][i] = true;
+
+  // 1-away
+  const A = Matrix.zeros(n, n);
+  for (let i = 0; i < n; i++)
+    for (let j = i + 1; j < n; j++)
+      if (!S[i][j] && intersects(mask[i], mask[j])) A.set(i, j, 1), A.set(j, i, 1);
+  const N1 = Array.from({ length: n }, (_, i) =>
+    new Set(A.getRow(i).flatMap((v, idx) => v ? idx : []))
+  );
+
+  // 2-away
+  const A2 = A.mmul(A);
+  const B  = Array.from({ length: n }, () => Array(n).fill(false));
+  for (let i = 0; i < n; i++)
+    for (let j = i + 1; j < n; j++)
+      if (!S[i][j] && A2.get(i, j) >= 4) B[i][j] = B[j][i] = true;
+  const N2 = Array.from({ length: n }, (_, i) =>
+    new Set(B[i].flatMap((v, idx) => v ? idx : []))
+  );
+
+  // memoised pair → third-row list
+  const cache = new Map();
+  const tList = (i, j) => {
+    const key = (i << 11) | j;
+    if (cache.has(key)) return cache.get(key);
+    const arr = [...N2[i]].filter(k => k > j && N2[j].has(k)).sort((a, b) => a - b);
+    cache.set(key, arr);
+    return arr;
+  };
+  const excl = rows => {               // early row red-herring
+    for (let r = 0; r < 4; r++) {
+      const m = mask[rows[r]];
+      let other = new Uint32Array(MASK_LEN);
+      for (let o = 0; o < 4; o++) if (o !== r)
+        for (let k = 0; k < MASK_LEN; k++) other[k] |= mask[rows[o]][k];
+      let ok = false;
+      for (let k = 0; k < MASK_LEN; k++) if (m[k] & ~other[k]) { ok = true; break; }
+      if (!ok) return false;
+    }
+    return true;
+  };
+
+  /*──── search (only i ≡ WID mod NW) ────*/
+  const totalOuter = Math.ceil((n - WID) / NW);
+  let outer = 0;
+
+  for (let i = WID; i < n; i += NW) {
+    const jList = [...N2[i]].filter(j => j > i).sort((a, b) => a - b);
+    for (const j of jList) {
+      const kList = tList(i, j);
+      for (const k of kList) {
+        const lList = kList.filter(l => l > k && N2[k].has(l));
+        for (const l of lList) {
+
+          const rows = [i, j, k, l];
+          if (!excl(rows)) continue;
+
+          // column candidates
+          let cand = new Set(N1[i]);
+          for (let r = 1; r < 4; r++) {
             const tmp = new Set();
-            for (const x of cand) if (neigh1[rows[r]].has(x)) tmp.add(x);
+            for (const x of cand) if (N1[rows[r]].has(x)) tmp.add(x);
             cand = tmp;
           }
           for (const r of rows) cand.delete(r);
-          cand = new Set([...cand].filter(c=>!rows.some(r=>S[r][c])));
-          if (cand.size<4) continue;
+          cand = new Set([...cand].filter(c => !rows.some(r => S[r][c])));
+          if (cand.size < 4 || Math.min(...cand) <= rows[0]) continue;
 
-          const cArr = [...cand].sort((a,b)=>a-b);
-          const m = cArr.length;
-
-          // quick transpose-dedup: require smallest column > smallest row
-          if (m < 4 || cArr[0] <= rows[0]) continue;
-
-          for (let a=0;a<m-3;a++)
-            for (let b=a+1;b<m-2;b++){
-              const x=cArr[a], y=cArr[b];
+          const cArr = [...cand].sort((a, b) => a - b), m = cArr.length;
+          for (let a = 0; a < m - 3; a++)
+            for (let b = a + 1; b < m - 2; b++) {
+              const x = cArr[a], y = cArr[b];
               if (!B[x][y]) continue;
-              for (let c=b+1;c<m-1;c++){
-                const z=cArr[c];
+              for (let c = b + 1; c < m - 1; c++) {
+                const z = cArr[c];
                 if (!(B[x][z] && B[y][z])) continue;
-                for (let d=c+1;d<m;d++){
-                  const w=cArr[d];
+                for (let d = c + 1; d < m; d++) {
+                  const w = cArr[d];
                   if (!(B[x][w] && B[y][w] && B[z][w])) continue;
+                  const cols = [x, y, z, w];
 
-                  const cols=[x,y,z,w];
-                  if (cats[rows[0]] > cats[cols[0]])  continue; // orientation
-
-                  // full red-herring test (rows vs cols)
-                  let ok=true;
-                  const all = new Set([...rows,...cols]);
+                  // full uniqueness check
+                  let ok = true;
+                  const all = new Set([...rows, ...cols]);
                   outerRH:
                   for (const r of rows)
-                    for (const cc of cols){
-                      let own = bitMasks[r].map((v,idx)=>v & bitMasks[cc][idx]);
-                      for (const o of all) if (o!==r && o!==cc)
-                        for (let k=0;k<MASK_LEN;k++)
-                          own[k] &= ~bitMasks[o][k];
-                      let nonEmpty=false;
-                      for (let k=0;k<MASK_LEN;k++) if (own[k]) {nonEmpty=true; break;}
-                      if(!nonEmpty){ok=false;break outerRH;}
+                    for (const cc of cols) {
+                      const own = mask[r].map((v, idx) => v & mask[cc][idx]);
+                      for (const o of all) if (o !== r && o !== cc)
+                        for (let k = 0; k < MASK_LEN; k++) own[k] &= ~mask[o][k];
+                      let nz = false;
+                      for (let k = 0; k < MASK_LEN; k++) if (own[k]) { nz = true; break; }
+                      if (!nz) { ok = false; break outerRH; }
                     }
-                  if(!ok) continue;
+                  if (!ok) continue;
 
-                  // ---------- puzzle accepted ----------
-                  rank++;
-                  if(rank<=startRank) continue;   // skip until resume point
-
-                  seen++;
-
-                  const rowsNames = rows.map(v=>cats[v]);
-                  const colsNames = cols.map(v=>cats[v]);
-                  const puzzleHash = sha256(rowsNames.join("|")+colsNames.join("|"));
-
-                  insertStmt.run(
-                    [puzzleHash,...rowsNames,...colsNames,wordListHash,rank],
-                    function(err){
-                      if(err){ console.error(err); return; }
-                      if(this.changes===1) saved++;
-                    }
-                  );
-                  batchCnt++;
-
-                  if (batchCnt>=BATCH_SIZE){
-                    await new Promise((res,rej)=>commit(e=>e?rej(e):res()));
-                    batchCnt=0;
-                    
-                    // Progress update on batch commit - use accurate work-based progress
-                    updateProgress(i, currentJIdx, jList.length);
-                  }
+                  parentPort.postMessage({
+                    type: "puzzle",
+                    hash: sha256(rows.map(v => cats[v]).join("|") + cols.map(v => cats[v]).join("|")),
+                    rows: rows.map(v => cats[v]),
+                    cols: cols.map(v => cats[v])
+                  });
                 }
               }
             }
         }
       }
     }
-
-    // progress update once per i-loop
-    updateProgress(i, currentJIdx, jList.length);
-    
-    // More frequent progress updates within the j-loop
-    if (currentJIdx % 10 === 0 && jList.length > 0) {
-      updateProgress(i, currentJIdx, jList.length);
-    }
+    outer++;
+    parentPort.postMessage({ type: "tick", id: WID, i: outer, total: totalOuter });
   }
-
-  // final commit
-  await new Promise((res,rej)=>commit(e=>e?rej(e):res()));
-  drawBar(getWorkProgress(n-1, 0, 1), seen, saved, (performance.now()-t0)/1000); process.stdout.write("\n");
-
-  insertStmt.finalize();
-  db.close(()=>console.log(`Done.  ${seen} puzzles visited, ${saved} new.`));
-})().catch(console.error);
+  parentPort.postMessage({ type: "done", id: WID });
+}
