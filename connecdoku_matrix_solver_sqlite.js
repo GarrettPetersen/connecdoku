@@ -36,7 +36,8 @@ function fmtTime(s) {
 }
 const BAR_W = 40;
 function drawBar(pct, found, saved, elapsed) {
-  const fill = Math.round(pct * BAR_W);
+  const clampedPct = Math.min(pct, 1.0); // Clamp to 100%
+  const fill = Math.round(clampedPct * BAR_W);
   const bar  = "█".repeat(fill) + "░".repeat(BAR_W - fill);
   const eta  = pct ? elapsed / pct - elapsed : Infinity;
   process.stdout.write(
@@ -298,7 +299,6 @@ function hasExclusiveWord(rows){
                   if (batchCnt>=BATCH_SIZE){
                     await new Promise((res,rej)=>commit(e=>e?rej(e):res()));
                     batchCnt=0;
-                    drawBar(rank/1e6, seen, saved, (performance.now()-t0)/1000); // rough pct
                   }
                 }
               }
