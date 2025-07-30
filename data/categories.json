@@ -145,11 +145,15 @@
   ],
   "1810s": [
     "Frankenstein",
+    "June 18th, 1815",
+    "La Garde meurt, elle ne se rend pas!",
     "Madison",
+    "Merde!",
     "Monroe",
     "Pride and Prejudice",
     "Tambora",
-    "The Latin American Wars of Independence"
+    "The Latin American Wars of Independence",
+    "Waterloo"
   ],
   "1820s": [
     "Jackson",
@@ -231,6 +235,7 @@
     "Handel",
     "Jefferson",
     "Madison",
+    "Michel Ney",
     "Mozart",
     "Napoleon Bonaparte",
     "Newton",
@@ -243,6 +248,7 @@
     "The Seven Years' War",
     "The Shays' Rebellion",
     "The Whiskey Rebellion",
+    "Von Blucher",
     "Washington",
     "Whitney"
   ],
@@ -544,6 +550,7 @@
     "Voyager",
     "Walkabout",
     "Watergate",
+    "Waterloo",
     "Wheel of Fortune"
   ],
   "1980s": [
@@ -741,7 +748,9 @@
     "Jefferson",
     "John Wilkes Booth",
     "Johnson",
+    "June 18th, 1815",
     "Krakatoa",
+    "La Garde meurt, elle ne se rend pas!",
     "Lenore",
     "Les Misérables",
     "Lincoln",
@@ -749,6 +758,8 @@
     "Madison",
     "Marie Curie",
     "McKinley",
+    "Merde!",
+    "Michel Ney",
     "Moby Dick",
     "Monroe",
     "Morse",
@@ -791,8 +802,11 @@
     "Van Buren",
     "Victor",
     "Victoria",
+    "Von Blucher",
     "War and Peace",
     "Water, water everywhere",
+    "Waterloo",
+    "Wellington",
     "Whitney",
     "Wilson",
     "Wuthering Heights"
@@ -1514,6 +1528,7 @@
     "Voyager",
     "Walkabout",
     "Watergate",
+    "Waterloo",
     "Wayne Gretzky",
     "We shall never surrender",
     "We will fight them on the beaches",
@@ -2632,6 +2647,16 @@
     "Yorktown",
     "Zero"
   ],
+  "Battle of Waterloo": [
+    "June 18th, 1815",
+    "La Garde meurt, elle ne se rend pas!",
+    "Merde!",
+    "Michel Ney",
+    "Napoleon Bonaparte",
+    "Von Blucher",
+    "Waterloo",
+    "Wellington"
+  ],
   "Battleships": [
     "Bellerophon",
     "Bismarck",
@@ -3522,7 +3547,8 @@
     "Venice",
     "Verona",
     "Victoria",
-    "Washington"
+    "Washington",
+    "Waterloo"
   ],
   "Cities in Asia": [
     "Baghdad",
@@ -3548,7 +3574,8 @@
     "San Marino",
     "Sarajevo",
     "Vatican City",
-    "Verona"
+    "Verona",
+    "Waterloo"
   ],
   "Cities in Italy": [
     "Bari",
@@ -4909,6 +4936,7 @@
     "April 14th, 1865",
     "December 7th, 1941",
     "Ides of March",
+    "June 18th, 1815",
     "June 28th, 1914",
     "June 4th, 1942",
     "November 22nd, 1963"
@@ -5412,6 +5440,9 @@
   "Ends with 747": [
     "747"
   ],
+  "Ends with 815": [
+    "June 18th, 1815"
+  ],
   "Ends with 865": [
     "April 14th, 1865"
   ],
@@ -5874,6 +5905,9 @@
     "Mary",
     "Queen Mary"
   ],
+  "Ends with AS!": [
+    "La Garde meurt, elle ne se rend pas!"
+  ],
   "Ends with ASA": [
     "Kielbasa",
     "NASA"
@@ -6323,6 +6357,9 @@
     "Terminator 2: Judgment Day",
     "The Holiday",
     "The Remains of the Day"
+  ],
+  "Ends with DE!": [
+    "Merde!"
   ],
   "Ends with DED": [
     "The Eagle has landed"
@@ -7095,7 +7132,8 @@
     "Panther",
     "Pink Panther",
     "The Godfather",
-    "Usher"
+    "Usher",
+    "Von Blucher"
   ],
   "Ends with HES": [
     "Tres Leches",
@@ -8040,7 +8078,8 @@
     "Upsilon"
   ],
   "Ends with LOO": [
-    "Vindaloo"
+    "Vindaloo",
+    "Waterloo"
   ],
   "Ends with LOR": [
     "Taylor"
@@ -8357,6 +8396,7 @@
     "Bill & Ted's Bogus Journey",
     "Chutney",
     "Disney",
+    "Michel Ney",
     "Orkney",
     "Sydney",
     "Whitney"
@@ -9753,6 +9793,7 @@
     "Southampton",
     "Trenton",
     "Washington",
+    "Wellington",
     "Wonton"
   ],
   "Ends with TOO": [
@@ -10664,9 +10705,11 @@
     "It was the best of times",
     "Know thyself",
     "L'etat c'est moi",
+    "La Garde meurt, elle ne se rend pas!",
     "Let there be light",
     "Life is like a box of chocolates",
     "May the Force be with you",
+    "Merde!",
     "Nothing to fear but fear itself",
     "One small step for man",
     "Render unto Caesar",
@@ -11377,6 +11420,7 @@
     "Vindaloo",
     "Waldorf",
     "Wasabi",
+    "Wellington",
     "Wonton",
     "Xiaolongbao",
     "Yakitori",
@@ -12013,6 +12057,7 @@
     "Marco Polo",
     "Marie Curie",
     "Mary I",
+    "Michel Ney",
     "Michelangelo",
     "Ming",
     "Mozart",
@@ -12034,7 +12079,9 @@
     "Tolui",
     "Vasco da Gama",
     "Victoria",
+    "Von Blucher",
     "Washington",
+    "Wellington",
     "William the Conqueror",
     "Winston Churchill",
     "Wright",
@@ -12045,7 +12092,8 @@
   "Historical Sites": [
     "Curia",
     "Ford's Theatre",
-    "Globe Theatre"
+    "Globe Theatre",
+    "Waterloo"
   ],
   "Historical Speeches": [
     "Blood, toil, tears and sweat",
@@ -12884,7 +12932,8 @@
     "United Kingdom",
     "Vatican City",
     "Verona",
-    "Vesuvius"
+    "Vesuvius",
+    "Waterloo"
   ],
   "Locations in North America": [
     "Alabama",
@@ -13633,6 +13682,7 @@
     "Joan of Arc",
     "Kublai Khan",
     "McKinley",
+    "Michel Ney",
     "Montgomery",
     "Möngke Khan",
     "Napoleon Bonaparte",
@@ -13643,7 +13693,9 @@
     "Taylor",
     "Temüjin",
     "Tolui",
+    "Von Blucher",
     "Washington",
+    "Wellington",
     "William the Conqueror",
     "Winston Churchill",
     "Zhu Yuanzhang",
@@ -13910,12 +13962,15 @@
     "Franklin D. Roosevelt",
     "John Wilkes Booth",
     "Marie Curie",
+    "Michel Ney",
     "Napoleon Bonaparte",
     "Sir John A. Macdonald",
     "Terry Fox",
     "Thomas Edison",
+    "Von Blucher",
     "Washington",
     "Wayne Gretzky",
+    "Wellington",
     "Winston Churchill",
     "Wright"
   ],
@@ -14453,6 +14508,7 @@
     "Volcano",
     "WALL-E",
     "Walkabout",
+    "Waterloo",
     "West Side Story",
     "When Marnie Was There",
     "Whisper of the Heart",
@@ -15319,6 +15375,9 @@
   "Movies directed by Scott Mosier": [
     "The Grinch"
   ],
+  "Movies directed by Sergei Bondarchuk": [
+    "Waterloo"
+  ],
   "Movies directed by Sergio Leone": [
     "The Good, the Bad and the Ugly"
   ],
@@ -16044,7 +16103,8 @@
     "Somewhere in Time",
     "The Lake House",
     "The Sound of Music",
-    "Up"
+    "Up",
+    "Waterloo"
   ],
   "Movies featuring Christopher Reeve": [
     "Somewhere in Time"
@@ -17918,6 +17978,9 @@
   "Movies featuring Robin de Jesús": [
     "Tick, Tick... Boom!"
   ],
+  "Movies featuring Rod Steiger": [
+    "Waterloo"
+  ],
   "Movies featuring Rod Taylor": [
     "101 Dalmatians"
   ],
@@ -19297,6 +19360,7 @@
     "Matsui",
     "Mays",
     "McKinley",
+    "Michel Ney",
     "Michelangelo",
     "Mifune",
     "Ming",
@@ -19369,8 +19433,10 @@
     "Victor",
     "Victoria",
     "Violet",
+    "Von Blucher",
     "Washington",
     "Wayne Gretzky",
+    "Wellington",
     "Whitney",
     "William the Conqueror",
     "Wilson",
@@ -19993,6 +20059,7 @@
     "Victoria",
     "Vietnam",
     "Washington",
+    "Waterloo",
     "Western Samoa",
     "Yap",
     "Yemen",
@@ -20322,6 +20389,7 @@
     "Mary Rose",
     "Mays",
     "McKinley",
+    "Michel Ney",
     "Michelangelo",
     "Ming",
     "Monroe",
@@ -20368,8 +20436,10 @@
     "Van Buren",
     "Vasco da Gama",
     "Victoria",
+    "Von Blucher",
     "Washington",
     "Wayne Gretzky",
+    "Wellington",
     "Whitney",
     "William the Conqueror",
     "Wilson",
@@ -23934,6 +24004,7 @@
     "Jumbo"
   ],
   "Starts with JUN": [
+    "June 18th, 1815",
     "June 28th, 1914",
     "June 4th, 1942",
     "Juneau"
@@ -24123,6 +24194,7 @@
     "L'etat c'est moi"
   ],
   "Starts with LA ": [
+    "La Garde meurt, elle ne se rend pas!",
     "La Gomera",
     "La La Land",
     "La Palma"
@@ -24446,7 +24518,8 @@
     "Menorca"
   ],
   "Starts with MER": [
-    "Mercury"
+    "Mercury",
+    "Merde!"
   ],
   "Starts with MES": [
     "Messerschmitt"
@@ -24465,6 +24538,7 @@
     "Miami"
   ],
   "Starts with MIC": [
+    "Michel Ney",
     "Michelangelo",
     "Michigan",
     "Mickey",
@@ -26512,6 +26586,9 @@
     "Volga",
     "Volleyball"
   ],
+  "Starts with VON": [
+    "Von Blucher"
+  ],
   "Starts with VOY": [
     "Voyager"
   ],
@@ -26540,7 +26617,8 @@
     "Water Margin",
     "Water Polo",
     "Water, water everywhere",
-    "Watergate"
+    "Watergate",
+    "Waterloo"
   ],
   "Starts with WAY": [
     "Wayne Gretzky"
@@ -26553,6 +26631,9 @@
   "Starts with WEI": [
     "Weightlifting",
     "Weissbier"
+  ],
+  "Starts with WEL": [
+    "Wellington"
   ],
   "Starts with WES": [
     "West Germany",
@@ -27855,7 +27936,8 @@
     "Belarus"
   ],
   "Things Belgian": [
-    "Belgium"
+    "Belgium",
+    "Waterloo"
   ],
   "Things Belizean": [
     "Belize",
@@ -28090,6 +28172,7 @@
     "Water, water everywhere",
     "We shall never surrender",
     "We will fight them on the beaches",
+    "Wellington",
     "William the Conqueror",
     "Winnie-the-Pooh",
     "Winston Churchill",
@@ -28407,11 +28490,14 @@
     "I think, therefore I am",
     "Joan of Arc",
     "L'etat c'est moi",
+    "La Garde meurt, elle ne se rend pas!",
     "Les Misérables",
     "Louvre",
     "Macaron",
     "Madeleine",
     "Marie Curie",
+    "Merde!",
+    "Michel Ney",
     "Mont Blanc",
     "Mont Saint-Michel",
     "Napoleon Bonaparte",
@@ -28484,6 +28570,7 @@
     "The Battle of Stalingrad",
     "The German Reunification",
     "Tirpitz",
+    "Von Blucher",
     "Weissbier"
   ],
   "Things Ghanaian": [
@@ -29996,7 +30083,8 @@
     "The Mahabharata",
     "The Red Badge of Courage",
     "The Tale of the Heike",
-    "War and Peace"
+    "War and Peace",
+    "Waterloo"
   ],
   "Warner Bros. Characters": [
     "Bugs Bunny",
