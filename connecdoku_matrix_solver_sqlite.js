@@ -274,6 +274,9 @@ function hasExclusiveWord(rows){
           const cArr = [...cand].sort((a,b)=>a-b);
           const m = cArr.length;
 
+          // quick transpose-dedup: require smallest column > smallest row
+          if (m < 4 || cArr[0] <= rows[0]) continue;
+
           for (let a=0;a<m-3;a++)
             for (let b=a+1;b<m-2;b++){
               const x=cArr[a], y=cArr[b];
