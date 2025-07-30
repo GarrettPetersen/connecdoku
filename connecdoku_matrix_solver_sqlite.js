@@ -208,6 +208,21 @@ function hasExclusiveWord(rows){
   const BATCH_SIZE = 500;
   let batchCnt = 0, saved   = 0, seen   = 0, rank = -1;
   const t0 = performance.now();
+  
+  // Calculate total work: sum of (n-1) + (n-2) + ... + 1 = n*(n-1)/2
+  const totalWork = n * (n - 1) / 2;
+  
+  // Calculate work progress: completed work = sum of (n-1) + (n-2) + ... + (n-i) + j
+  function getWorkProgress(i, jIdx, jListLength) {
+    // Work completed up to iteration i: sum of (n-1) + (n-2) + ... + (n-i+1)
+    // This equals: n*(n-1)/2 - (n-i)*(n-i+1)/2
+    const completedUpToI = totalWork - (n - i) * (n - i + 1) / 2;
+    // Add progress within current i iteration
+    const currentIProgress = jIdx / jListLength;
+    const currentIWork = n - i - 1; // Number of j's for current i
+    const totalProgress = (completedUpToI + currentIProgress * currentIWork) / totalWork;
+    return Math.min(totalProgress, 1.0);
+  }
 
   function commit(cb){
     db.run("COMMIT", err=>{
@@ -222,7 +237,8 @@ function hasExclusiveWord(rows){
     const tLoop = performance.now();
 
     const jList=[...neigh2[i]].filter(j=>j>i).sort((a,b)=>a-b);
-    for (const j of jList){
+    for (let jIdx = 0; jIdx < jList.length; jIdx++){
+      const j = jList[jIdx];
 
       const kList = tripleList(i,j);
       for (const k of kList){
@@ -299,6 +315,9 @@ function hasExclusiveWord(rows){
                   if (batchCnt>=BATCH_SIZE){
                     await new Promise((res,rej)=>commit(e=>e?rej(e):res()));
                     batchCnt=0;
+                    
+                    // Progress update on batch commit - use accurate work-based progress
+                    drawBar(getWorkProgress(i, jIdx, jList.length), seen, saved, (performance.now()-t0)/1000);
                   }
                 }
               }
@@ -308,7 +327,12 @@ function hasExclusiveWord(rows){
     }
 
     // progress update once per i-loop
-    drawBar((i+1)/n, seen, saved, (performance.now()-t0)/1000);
+    drawBar(getWorkProgress(i, jIdx, jList.length), seen, saved, (performance.now()-t0)/1000);
+    
+    // More frequent progress updates within the j-loop
+    if (jIdx % 10 === 0 && jList.length > 0) {
+      drawBar(getWorkProgress(i, jIdx, jList.length), seen, saved, (performance.now()-t0)/1000);
+    }
   }
 
   // final commit
