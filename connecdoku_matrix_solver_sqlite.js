@@ -207,6 +207,7 @@ function hasExclusiveWord(rows){
 
   const BATCH_SIZE = 500;
   let batchCnt = 0, saved   = 0, seen   = 0, rank = -1;
+  let currentJIdx = 0; // Track current j progress globally
   const t0 = performance.now();
   
   // Calculate total work: sum of (n-1) + (n-2) + ... + 1 = n*(n-1)/2
@@ -222,6 +223,11 @@ function hasExclusiveWord(rows){
     const currentIWork = n - i - 1; // Number of j's for current i
     const totalProgress = (completedUpToI + currentIProgress * currentIWork) / totalWork;
     return Math.min(totalProgress, 1.0);
+  }
+  
+  // Helper function to update progress with current state
+  function updateProgress(i, jIdx, jListLength) {
+    drawBar(getWorkProgress(i, jIdx, jListLength), seen, saved, (performance.now()-t0)/1000);
   }
 
   function commit(cb){
@@ -239,6 +245,7 @@ function hasExclusiveWord(rows){
     const jList=[...neigh2[i]].filter(j=>j>i).sort((a,b)=>a-b);
     for (let jIdx = 0; jIdx < jList.length; jIdx++){
       const j = jList[jIdx];
+      currentJIdx = jIdx; // Update global tracker
 
       const kList = tripleList(i,j);
       for (const k of kList){
@@ -317,7 +324,7 @@ function hasExclusiveWord(rows){
                     batchCnt=0;
                     
                     // Progress update on batch commit - use accurate work-based progress
-                    drawBar(getWorkProgress(i, jIdx, jList.length), seen, saved, (performance.now()-t0)/1000);
+                    updateProgress(i, currentJIdx, jList.length);
                   }
                 }
               }
@@ -327,11 +334,11 @@ function hasExclusiveWord(rows){
     }
 
     // progress update once per i-loop
-    drawBar(getWorkProgress(i, jIdx, jList.length), seen, saved, (performance.now()-t0)/1000);
+    updateProgress(i, currentJIdx, jList.length);
     
     // More frequent progress updates within the j-loop
-    if (jIdx % 10 === 0 && jList.length > 0) {
-      drawBar(getWorkProgress(i, jIdx, jList.length), seen, saved, (performance.now()-t0)/1000);
+    if (currentJIdx % 10 === 0 && jList.length > 0) {
+      updateProgress(i, currentJIdx, jList.length);
     }
   }
 
