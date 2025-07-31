@@ -150,6 +150,42 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
 @media (max-width: 768px) {
   pre { font-size: 16px; margin: 8px 0; }
+  
+  /* Mobile optimization for sharing modal statistics */
+  #sharePop .modalCard {
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    padding: 20px 24px;
+  }
+  
+  #sharePop .modalCard h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  #sharePop .modalCard h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  #sharePop .modalCard .stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    font-size: 13px !important;
+  }
+  
+  #sharePop .modalCard .stats-grid div {
+    padding: 4px 0;
+  }
+  
+  #sharePop .modalCard .strikes-chart {
+    height: 16px !important;
+    gap: 1px !important;
+  }
+  
+  #sharePop .modalCard .strikes-chart + div {
+    font-size: 9px !important;
+  }
 }
 pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
 </style>
@@ -177,8 +213,9 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
   <div class="modalCard">
     <button class="min" id="minShare">×</button>
     <h3 id="popTitle"></h3><pre id="shareGrid"></pre>
-    <div id="unsolved"></div>
     <button class="action" id="copy">Copy to clipboard</button>
+    <div id="unsolved"></div>
+    <button class="action" id="returnToPuzzle" style="background:#666">Return to puzzle</button>
   </div>
 </div>
 
@@ -2078,7 +2115,7 @@ function init(puz){
     let statsHtml = `
       <div style="margin-top:20px;padding-top:20px;border-top:1px solid #eee;">
         <h4 style="margin:0 0 10px 0;">Statistics</h4>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;font-size:14px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;font-size:14px;" class="stats-grid">
           <div>Current Win Streak: <strong>${stats.currentStreak}</strong></div>
           <div>Current Attempt Streak: <strong>${stats.currentAttemptStreak}</strong></div>
           <div>Longest Win Streak: <strong>${stats.longestStreak}</strong></div>
@@ -2088,7 +2125,7 @@ function init(puz){
         </div>
         <div style="margin-top:15px;">
           <div style="font-size:12px;margin-bottom:5px;">Strikes Distribution:</div>
-          <div style="display:flex;gap:2px;height:20px;align-items:end;">
+          <div style="display:flex;gap:2px;height:20px;align-items:end;" class="strikes-chart">
     `;
     
     for (let i = 0; i < 4; i++) {
@@ -2119,6 +2156,8 @@ function init(puz){
   $('#minShare').onclick=()=>{ $('#sharePop').classList.remove('show');
                                $('#shareBtn').style.display='block'; };
   $('#shareBtn').onclick=()=>{ $('#sharePop').classList.add('show'); };
+  $('#returnToPuzzle').onclick=()=>{ $('#sharePop').classList.remove('show');
+                                     $('#shareBtn').style.display='block'; };
 
   $('#helpIcon').onclick=()=>$('#helpPop').classList.add('show');
   $('#minHelp').onclick=$('#helpOK').onclick=()=>$('#helpPop').classList.remove('show');
