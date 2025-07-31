@@ -2558,5 +2558,85 @@
         "Doom"
       ]
     ]
+  },
+  {
+    "rows": [
+      "19th Century",
+      "Desserts",
+      "Dumplings",
+      "Place Names"
+    ],
+    "cols": [
+      "Ends with ING",
+      "Starts with PIE",
+      "Things Italian",
+      "Things Russian"
+    ],
+    "words": [
+      [
+        "The Second Great Awakening",
+        "Pierce",
+        "The Italian Unification",
+        "The Brothers Karamazov"
+      ],
+      [
+        "Sticky Toffee Pudding",
+        "Pie",
+        "Tiramisu",
+        "Medovik"
+      ],
+      [
+        "Dumpling",
+        "Pierogi",
+        "Tortellini",
+        "Vareniki"
+      ],
+      [
+        "Beijing",
+        "Pierre",
+        "Venice",
+        "Elbrus"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Ancient Cities",
+      "Buildings",
+      "Foods",
+      "Historical Figures"
+    ],
+    "cols": [
+      "Things American",
+      "Things French",
+      "Things Greek",
+      "Xuanwu Gate Incident"
+    ],
+    "words": [
+      [
+        "Troy",
+        "Paris",
+        "Athens",
+        "Chang'an"
+      ],
+      [
+        "Empire State Building",
+        "Eiffel Tower",
+        "Parthenon",
+        "Xuanwu Gate"
+      ],
+      [
+        "Hamburger",
+        "Brioche",
+        "Moussaka",
+        "Tang"
+      ],
+      [
+        "Thomas Edison",
+        "Michel Ney",
+        "Plato",
+        "Li Shimin"
+      ]
+    ]
   }
 ]
