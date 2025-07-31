@@ -1,6 +1,17 @@
-puzzles_matrix/*
-node_modules/*
-.wrangler/*
-puzzles.db
-puzzles.db-journal
+# Database files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Node.js dependencies
+node_modules/
+
+# Cloudflare Wrangler
+.wrangler/
+
+# macOS system files
 .DS_Store
+
+# Puzzle data (if you want to exclude this directory)
+puzzles_matrix/
