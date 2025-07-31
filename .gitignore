@@ -12,6 +12,3 @@ node_modules/
 
 # macOS system files
 .DS_Store
-
-# Puzzle data (if you want to exclude this directory)
-puzzles_matrix/

@@ -51,9 +51,19 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 .tile,.hdr{border:2px solid var(--tile-b);border-radius:12px;box-sizing:border-box}
 .tile{background:var(--tile);padding:6px 8px;display:flex;align-items:center;
       justify-content:center;min-height:90px;text-align:center;cursor:pointer;
-      user-select:none;transition:background-color .3s ease}
+      user-select:none;transition:background-color .3s ease;
+      word-wrap:break-word;overflow-wrap:break-word;hyphens:auto;
+      white-space:normal;word-spacing:normal;line-height:1.2;
+      lang:auto;
+      font-size:clamp(11px, 4vw, 16px)}
 @media (max-width: 768px) {
-  .tile { min-height: 65px; padding: 3px 4px; font-size: 13px; }
+  .tile { min-height: 65px; padding: 3px 4px; font-size: 13px; line-height: 1.1; }
+}
+@media (max-width: 480px) {
+  .tile { font-size: 11px; padding: 2px 3px; line-height: 1.0; }
+}
+@media (max-width: 360px) {
+  .tile { font-size: 10px; padding: 1px 2px; line-height: 0.9; }
 }
 .hdr{min-height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:filter .2s ease;text-align:center;white-space:normal;word-spacing:normal}
 @media (max-width: 768px) {
@@ -643,6 +653,22 @@ function init(puz){
   function makeTile(r,c){
     const d=document.createElement('div');
     d.className='tile'; d.textContent=G[r][c]; d.dataset.rc=`${r},${c}`;
+    
+    // Add language attribute for better hyphenation
+    const text = G[r][c];
+    if (text.includes('é') || text.includes('è') || text.includes('à') || text.includes('ç') || 
+        text.includes('ù') || text.includes('â') || text.includes('ê') || text.includes('î') || 
+        text.includes('ô') || text.includes('û') || text.includes('ë') || text.includes('ï') || 
+        text.includes('ü') || text.includes('ÿ')) {
+      d.setAttribute('lang', 'fr');
+    } else if (text.includes('ñ') || text.includes('á') || text.includes('é') || 
+               text.includes('í') || text.includes('ó') || text.includes('ú') || 
+               text.includes('ü') || text.includes('¿') || text.includes('¡')) {
+      d.setAttribute('lang', 'es');
+    } else {
+      d.setAttribute('lang', 'en');
+    }
+    
     return d;
   }
   function makeHdr(kind,idx){
