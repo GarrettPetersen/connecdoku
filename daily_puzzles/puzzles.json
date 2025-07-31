@@ -2398,5 +2398,45 @@
         "Normandie"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1860s",
+      "Assassination of JFK",
+      "Roman Empire",
+      "Things Chinese"
+    ],
+    "cols": [
+      "1960s",
+      "Buildings",
+      "Cities",
+      "Things Italian"
+    ],
+    "words": [
+      [
+        "Johnson",
+        "Ford's Theatre",
+        "Lincoln",
+        "The Italian Unification"
+      ],
+      [
+        "November 22nd, 1963",
+        "Texas Book Depository",
+        "Dallas",
+        "Carcano Model 38"
+      ],
+      [
+        "Cleopatra",
+        "Curia",
+        "Constantinople",
+        "Vesuvius"
+      ],
+      [
+        "Chou En-Lai",
+        "Xuanwu Gate",
+        "Chang'an",
+        "Marco Polo"
+      ]
+    ]
   }
 ]
