@@ -171,6 +171,12 @@ async function main() {
     console.log(`Loaded ${Object.keys(wordsJson).length} words`);
     end();
     
+    // Initialize category tally
+    const categoryTally = {};
+    for (const category of Object.keys(categoriesJson)) {
+        categoryTally[category] = 0;
+    }
+    
     // Setup database
     begin("Connecting to database");
     const db = await setupDatabase();
@@ -222,6 +228,15 @@ async function main() {
             
             if (validation.valid) {
                 validPuzzles.push(puzzle.puzzle_hash);
+                
+                // Tally categories for valid puzzles
+                const { row0, row1, row2, row3, col0, col1, col2, col3 } = puzzle;
+                const categories = [row0, row1, row2, row3, col0, col1, col2, col3];
+                for (const category of categories) {
+                    if (categoryTally.hasOwnProperty(category)) {
+                        categoryTally[category]++;
+                    }
+                }
             } else {
                 batchInvalidHashes.push(puzzle.puzzle_hash);
             }
@@ -270,6 +285,40 @@ async function main() {
     } else {
         console.log(`   ✅ Database count matches expected count`);
     }
+    
+    // Save category tally to JSON file
+    begin("Saving category tally");
+    const tallyOutputPath = path.join(DATA_DIR, "category_tally.json");
+    
+    // Sort categories by usage count (descending)
+    const sortedTally = Object.entries(categoryTally)
+        .sort(([,a], [,b]) => b - a)
+        .reduce((obj, [key, value]) => {
+            obj[key] = value;
+            return obj;
+        }, {});
+    
+    // Add summary statistics
+    const totalValidPuzzles = validPuzzles.length;
+    const totalCategoryUsages = Object.values(categoryTally).reduce((sum, count) => sum + count, 0);
+    const averageCategoriesPerPuzzle = totalCategoryUsages / totalValidPuzzles;
+    
+    const tallyData = {
+        summary: {
+            totalValidPuzzles,
+            totalCategoryUsages,
+            averageCategoriesPerPuzzle: Math.round(averageCategoriesPerPuzzle * 100) / 100,
+            totalCategories: Object.keys(categoriesJson).length,
+            categoriesWithZeroUsage: Object.values(categoryTally).filter(count => count === 0).length
+        },
+        categoryUsage: sortedTally
+    };
+    
+    fs.writeFileSync(tallyOutputPath, JSON.stringify(tallyData, null, 2));
+    console.log(`Category tally saved to: ${tallyOutputPath}`);
+    console.log(`   Most used category: ${Object.keys(sortedTally)[0]} (${Object.values(sortedTally)[0]} times)`);
+    console.log(`   Categories with zero usage: ${tallyData.summary.categoriesWithZeroUsage}`);
+    end();
     
     // Clean up
     db.close(err => {
