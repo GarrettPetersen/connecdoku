@@ -2358,5 +2358,45 @@
         "Enterprise"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1860s",
+      "Battle of Waterloo",
+      "Roman Empire",
+      "World War II"
+    ],
+    "cols": [
+      "Cities",
+      "Dates",
+      "Historical Figures",
+      "Things French"
+    ],
+    "words": [
+      [
+        "Lincoln",
+        "April 14th, 1865",
+        "John Wilkes Booth",
+        "Les Misérables"
+      ],
+      [
+        "Waterloo",
+        "June 18th, 1815",
+        "Wellington",
+        "La Garde meurt, elle ne se rend pas!"
+      ],
+      [
+        "Herculaneum",
+        "Ides of March",
+        "Cleopatra",
+        "Gaul"
+      ],
+      [
+        "Montgomery",
+        "December 7th, 1941",
+        "Winston Churchill",
+        "Normandie"
+      ]
+    ]
   }
 ]
