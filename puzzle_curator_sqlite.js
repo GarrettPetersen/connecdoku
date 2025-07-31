@@ -403,7 +403,7 @@ async function findBestPuzzle(targetCategory = null) {
     }
 }
 
-async function findAnyPuzzleWithCategory(targetCategory) {
+async function findAnyPuzzleWithCategory(targetCategory, excludedHash = null) {
     const sqliteDb = await openDatabase();
 
     try {
@@ -431,6 +431,11 @@ async function findAnyPuzzleWithCategory(targetCategory) {
 
             if (used.has(key) || used.has(reverseKey)) {
                 continue; // Skip already used puzzles
+            }
+
+            // Check if this is the puzzle we want to exclude
+            if (excludedHash && puzzle.hash === excludedHash) {
+                continue; // Skip the excluded puzzle
             }
 
             // Validate the puzzle
@@ -550,6 +555,8 @@ async function main() {
     let attempts = 0;
     let targetCategory = null;
     let searchChoice = null;
+    let tryingDifferentPuzzle = false;
+    let excludedPuzzleHash = null;
 
     // Display initial total count
     const totalPuzzles = db.length;
@@ -559,7 +566,9 @@ async function main() {
         attempts++;
 
         // Ask user if they want to search for a specific category
-        if (curated === 0 || targetCategory === null) {
+        // Only reset search choice if we're starting fresh or if targetCategory is null
+        // Don't reset if we're trying a different puzzle
+        if (!tryingDifferentPuzzle && (curated === 0 || (targetCategory === null && searchChoice === null))) {
             searchChoice = await prompts.select({
                 message: "What would you like to do?",
                 choices: [
@@ -573,6 +582,10 @@ async function main() {
             if (searchChoice === "stop") {
                 break;
             }
+
+            // Reset the flag when starting a new search
+            tryingDifferentPuzzle = false;
+            excludedPuzzleHash = null;
 
             if (searchChoice === "search") {
                 // Get all available categories for tab completion
@@ -678,6 +691,8 @@ async function main() {
 
                 targetCategory = categoryInput.trim();
                 console.log(`🔍 Searching for puzzles containing "${targetCategory}"...`);
+                tryingDifferentPuzzle = false;
+                excludedPuzzleHash = null;
                 
                 // Ask user if they want to find the best (low overlap) or any puzzle with this category
                 const searchType = await prompts.select({
@@ -701,7 +716,7 @@ async function main() {
         if (searchChoice === "truly_random") {
             result = await findTrulyRandomPuzzle();
         } else if (searchChoice === "any") {
-            result = await findAnyPuzzleWithCategory(targetCategory);
+            result = await findAnyPuzzleWithCategory(targetCategory, excludedPuzzleHash);
         } else {
             result = await findBestPuzzle(targetCategory);
         }
@@ -748,14 +763,50 @@ async function main() {
         console.log("\nCols:", puzzle.cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
 
         // Ask user if they want to continue with this puzzle
-        const continuePuzzle = await prompts.confirm({
-            message: "Continue with this puzzle?",
-            default: true
-        });
+        let puzzleChoices = [
+            { name: "✅ Continue with this puzzle", value: "continue" },
+            { name: "🔄 Try a different puzzle", value: "different" },
+            { name: "❌ Skip this puzzle", value: "skip" }
+        ];
 
-        if (!continuePuzzle) {
-            console.log("Skipping puzzle...");
-            continue;
+        // Only show "Try a different puzzle" option if we're searching for a specific category
+        if (targetCategory && searchChoice === "any") {
+            const continuePuzzle = await prompts.select({
+                message: "What would you like to do?",
+                choices: puzzleChoices
+            });
+
+            if (continuePuzzle === "skip") {
+                console.log("Skipping puzzle...");
+                // Reset search context and go back to main menu
+                targetCategory = null;
+                searchChoice = null;
+                tryingDifferentPuzzle = false;
+                excludedPuzzleHash = null;
+                continue;
+            } else if (continuePuzzle === "different") {
+                console.log(`🔄 Finding another puzzle with "${targetCategory}"...`);
+                tryingDifferentPuzzle = true;
+                excludedPuzzleHash = puzzle.hash; // Store the current puzzle hash to exclude it
+                continue; // Go back to the main loop to find another puzzle
+            }
+            // If continuePuzzle === "continue", fall through to the rest of the code
+        } else {
+            // For other search types, use the simple confirm dialog
+            const continuePuzzle = await prompts.confirm({
+                message: "Continue with this puzzle?",
+                default: true
+            });
+
+            if (!continuePuzzle) {
+                console.log("Skipping puzzle...");
+                // Reset search context and go back to main menu
+                targetCategory = null;
+                searchChoice = null;
+                tryingDifferentPuzzle = false;
+                excludedPuzzleHash = null;
+                continue;
+            }
         }
 
         // Build viable word matrix and check if any cell is empty
