@@ -364,6 +364,19 @@ function loadStats() {
   if (savedStats) {
     stats = { ...stats, ...savedStats };
   }
+  
+  // Fix any inconsistencies in the stats
+  fixStatsInconsistencies();
+}
+
+function fixStatsInconsistencies() {
+  // Recalculate totalGames from actual games data
+  const actualTotalGames = Object.keys(stats.games).length;
+  if (stats.totalGames !== actualTotalGames) {
+    console.log(`Fixing stats inconsistency: totalGames was ${stats.totalGames}, should be ${actualTotalGames}`);
+    stats.totalGames = actualTotalGames;
+    saveStats();
+  }
 }
 
 function saveStats() {
@@ -371,28 +384,31 @@ function saveStats() {
 }
 
 function updateStats(date, strikes, won) {
-  stats.games[date] = strikes;
-  stats.totalGames++;
-  
-  if (won) {
-    stats.totalWins++;
-    stats.currentStreak++;
-    stats.currentAttemptStreak++;
-    if (stats.currentStreak > stats.longestStreak) {
-      stats.longestStreak = stats.currentStreak;
+  // Only update if this date hasn't been recorded yet
+  if (!(date in stats.games)) {
+    stats.games[date] = strikes;
+    stats.totalGames++;
+    
+    if (won) {
+      stats.totalWins++;
+      stats.currentStreak++;
+      stats.currentAttemptStreak++;
+      if (stats.currentStreak > stats.longestStreak) {
+        stats.longestStreak = stats.currentStreak;
+      }
+      if (stats.currentAttemptStreak > stats.longestAttemptStreak) {
+        stats.longestAttemptStreak = stats.currentAttemptStreak;
+      }
+    } else {
+      stats.currentStreak = 0;
+      stats.currentAttemptStreak++;
+      if (stats.currentAttemptStreak > stats.longestAttemptStreak) {
+        stats.longestAttemptStreak = stats.currentAttemptStreak;
+      }
     }
-    if (stats.currentAttemptStreak > stats.longestAttemptStreak) {
-      stats.longestAttemptStreak = stats.currentAttemptStreak;
-    }
-  } else {
-    stats.currentStreak = 0;
-    stats.currentAttemptStreak++;
-    if (stats.currentAttemptStreak > stats.longestAttemptStreak) {
-      stats.longestAttemptStreak = stats.currentAttemptStreak;
-    }
+    
+    saveStats();
   }
-  
-  saveStats();
 }
 
 function getStrikeDistribution() {
@@ -403,6 +419,11 @@ function getStrikeDistribution() {
     }
   });
   return distribution;
+}
+
+function getTotalGamesFromDistribution() {
+  const distribution = getStrikeDistribution();
+  return distribution.reduce((sum, count) => sum + count, 0);
 }
 
 /* ---------- load puzzle ---------- */
@@ -2133,8 +2154,9 @@ function init(puz){
     $('#shareGrid').classList.add('emoji'); // Add emoji class for compound emoji support
     
     // Add statistics
-    const winRate = stats.totalGames > 0 ? Math.round((stats.totalWins / stats.totalGames) * 100) : 0;
     const distribution = getStrikeDistribution();
+    const totalGamesFromDistribution = getTotalGamesFromDistribution();
+    const winRate = totalGamesFromDistribution > 0 ? Math.round((stats.totalWins / totalGamesFromDistribution) * 100) : 0;
     const maxStrikes = Math.max(...distribution);
     
     let statsHtml = `
@@ -2146,7 +2168,7 @@ function init(puz){
           <div>Longest Win Streak: <strong>${stats.longestStreak}</strong></div>
           <div>Longest Attempt Streak: <strong>${stats.longestAttemptStreak}</strong></div>
           <div>Win Rate: <strong>${winRate}%</strong></div>
-          <div>Total Games: <strong>${stats.totalGames}</strong></div>
+          <div>Total Games: <strong>${totalGamesFromDistribution}</strong></div>
         </div>
         <div style="margin-top:15px;">
           <div style="font-size:12px;margin-bottom:5px;">Strikes Distribution:</div>
