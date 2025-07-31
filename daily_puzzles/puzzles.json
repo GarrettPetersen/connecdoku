@@ -2638,5 +2638,45 @@
         "Li Shimin"
       ]
     ]
+  },
+  {
+    "rows": [
+      "20th Century",
+      "Countries",
+      "Movies",
+      "Noodles"
+    ],
+    "cols": [
+      "Ends with EIN",
+      "Ends with LES",
+      "Things Italian",
+      "Things Japanese"
+    ],
+    "words": [
+      [
+        "Einstein",
+        "Anne of Green Gables",
+        "Andrea Doria",
+        "Kurosawa"
+      ],
+      [
+        "Liechtenstein",
+        "Seychelles",
+        "Italy",
+        "Japan"
+      ],
+      [
+        "Frankenstein",
+        "Hercules",
+        "Pompeii",
+        "Ponyo"
+      ],
+      [
+        "Chow Mein",
+        "Dan Dan Noodles",
+        "Fettuccine",
+        "Soba"
+      ]
+    ]
   }
 ]

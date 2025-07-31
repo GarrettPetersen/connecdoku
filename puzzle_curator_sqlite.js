@@ -973,8 +973,11 @@ async function main() {
             // Keep the same target category and continue
             console.log(`🔍 Searching for another puzzle containing "${targetCategory}"...`);
         } else {
-            // Reset target category for new search
+            // Reset all search context for new search
             targetCategory = null;
+            searchChoice = null;
+            tryingDifferentPuzzle = false;
+            excludedPuzzleHash = null;
         }
     }
 
