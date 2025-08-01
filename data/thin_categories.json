@@ -158,6 +158,12 @@
   "Chemicals": [
     "Ammonia"
   ],
+  "Multiplayer Games": [
+    "Among Us"
+  ],
+  "Social Deduction": [
+    "Among Us"
+  ],
   "Cambodian Architecture": [
     "Angkor Wat"
   ],
@@ -424,6 +430,12 @@
   ],
   "Movies featuring Michael York": [
     "Cabaret"
+  ],
+  "First-Person Shooters": [
+    "Call of Duty"
+  ],
+  "Military Games": [
+    "Call of Duty"
   ],
   "Things Cameroonian": [
     "Cameroon"
@@ -877,6 +889,9 @@
   ],
   "Movies featuring Veronica Cartwright": [
     "Flight of the Navigator"
+  ],
+  "Battle Royale": [
+    "Fortnite"
   ],
   "Movies directed by Seth Gordon": [
     "Four Christmases"
@@ -1346,6 +1361,9 @@
   "Movies featuring Omar Sharif": [
     "Lawrence of Arabia"
   ],
+  "Multiplayer Online Battle Arena": [
+    "League of Legends"
+  ],
   "Business Aircraft": [
     "Learjet"
   ],
@@ -1487,6 +1505,9 @@
   "Manufactured by Messerschmitt": [
     "Messerschmitt"
   ],
+  "Stealth Games": [
+    "Metal Gear"
+  ],
   "Movies directed by John Schlesinger": [
     "Midnight Cowboy"
   ],
@@ -1501,6 +1522,9 @@
   ],
   "Toshiro Mifune": [
     "Mifune"
+  ],
+  "Sandbox Games": [
+    "Minecraft"
   ],
   "Movies directed by George Seaton": [
     "Miracle on 34th Street"
@@ -1754,6 +1778,9 @@
   "Yasujiro Ozu": [
     "Ozu"
   ],
+  "Arcade Games": [
+    "Pac-Man"
+  ],
   "Movies directed by Max Barbakow": [
     "Palm Springs"
   ],
@@ -1976,6 +2003,9 @@
   "Movies featuring Yūzō Kayama": [
     "Red Beard"
   ],
+  "Western Stories": [
+    "Red Dead Redemption"
+  ],
   "Movies directed by Brett Ratner": [
     "Red Dragon"
   ],
@@ -1990,6 +2020,9 @@
   ],
   "Movies featuring Steve Buscemi": [
     "Reservoir Dogs"
+  ],
+  "Survival Horror": [
+    "Resident Evil"
   ],
   "Movies directed by Richard Marquand": [
     "Return of the Jedi"
@@ -2288,6 +2321,12 @@
   "Movies featuring Gabrielle Union": [
     "Strange World"
   ],
+  "Combat Games": [
+    "Street Fighter"
+  ],
+  "Fighting Games": [
+    "Street Fighter"
+  ],
   "Manufactured by Junkers": [
     "Stuka"
   ],
@@ -2350,6 +2389,9 @@
   ],
   "Movies featuring Shirley MacLaine": [
     "Terms of Endearment"
+  ],
+  "Puzzle Games": [
+    "Tetris"
   ],
   "Medical Events": [
     "Thalidomide Scandal"
@@ -3137,6 +3179,9 @@
   "Movies featuring Melanie Griffith": [
     "Working Girl"
   ],
+  "Massively Multiplayer Online": [
+    "World of Warcraft"
+  ],
   "Movies directed by Rich Moore": [
     "Wreck-It Ralph"
   ],
@@ -3559,6 +3604,10 @@
   "Movies featuring Tom Cruise": [
     "Edge of Tomorrow",
     "Rain Man"
+  ],
+  "Action Role-Playing Games": [
+    "Elden Ring",
+    "The Witcher"
   ],
   "3rd Century BC": [
     "Emperor Qin Shi Huang",
@@ -4048,6 +4097,10 @@
     "Snowman",
     "The Man Who Fell to Earth"
   ],
+  "Platform Games": [
+    "Sonic",
+    "Super Mario"
+  ],
   "Things South Korean": [
     "South Korea",
     "Syngman Rhee"
@@ -4453,6 +4506,11 @@
     "House of Flying Daggers",
     "The Grandmaster"
   ],
+  "Role-Playing Games": [
+    "Cyberpunk",
+    "Final Fantasy",
+    "World of Warcraft"
+  ],
   "Things Czech": [
     "Czech Republic",
     "Pilsner",
@@ -4578,15 +4636,15 @@
     "Serbia",
     "Tesla"
   ],
+  "Action-Adventure Games": [
+    "God of War",
+    "Red Dead Redemption",
+    "The Legend of Zelda"
+  ],
   "Movies directed by Martin Scorsese": [
     "Goodfellas",
     "The Departed",
     "The Irishman"
-  ],
-  "Things Swedish": [
-    "Gotland",
-    "Sweden",
-    "The Girl with the Dragon Tattoo"
   ],
   "Things Hawaiian": [
     "Hawaii",

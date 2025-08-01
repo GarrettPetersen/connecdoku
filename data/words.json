@@ -826,6 +826,17 @@
     "Ends with NIA",
     "Starts with AMM"
   ],
+  "Among Us": [
+    "2010s",
+    "21st Century",
+    "Ends with  US",
+    "Horror Stories",
+    "Multiplayer Games",
+    "Social Deduction",
+    "Starts with AMO",
+    "Things American",
+    "Video Games"
+  ],
   "Amontillado": [
     "Associated with Edgar Allan Poe",
     "Drinks",
@@ -2138,7 +2149,8 @@
     "Ends with ELD",
     "Military Terms",
     "Starts with BAT",
-    "Video Games"
+    "Video Games",
+    "War Stories"
   ],
   "Batu Khan": [
     "13th Century",
@@ -3804,6 +3816,17 @@
     "Literature Quotes",
     "Starts with CAL",
     "Things American"
+  ],
+  "Call of Duty": [
+    "2000s",
+    "21st Century",
+    "Ends with UTY",
+    "First-Person Shooters",
+    "Military Games",
+    "Starts with CAL",
+    "Things American",
+    "Video Games",
+    "War Stories"
   ],
   "Cambodia": [
     "Countries",
@@ -5661,6 +5684,16 @@
     "Ends with YAN",
     "Starts with CYA"
   ],
+  "Cyberpunk": [
+    "2020s",
+    "21st Century",
+    "Ends with UNK",
+    "Role-Playing Games",
+    "Sci-fi Stories",
+    "Starts with CYB",
+    "Things Polish",
+    "Video Games"
+  ],
   "Cycling": [
     "Ends with ING",
     "Racing Sports",
@@ -6173,6 +6206,8 @@
   ],
   "Diablo": [
     "Ends with BLO",
+    "Fantasy Stories",
+    "Horror Stories",
     "Mythical Creatures",
     "Spanish Words",
     "Starts with DIA",
@@ -6455,6 +6490,7 @@
     "2000s",
     "21st Century",
     "Ends with OOM",
+    "Horror Stories",
     "Movies",
     "Movies directed by Andrzej Bartkowiak",
     "Movies featuring Dwayne Johnson",
@@ -7026,6 +7062,16 @@
     "Starts with ELB",
     "Things Russian"
   ],
+  "Elden Ring": [
+    "2020s",
+    "21st Century",
+    "Action Role-Playing Games",
+    "Ends with ING",
+    "Fantasy Stories",
+    "Starts with ELD",
+    "Things Japanese",
+    "Video Games"
+  ],
   "Elemental": [
     "3D Animated Films",
     "Ends with TAL",
@@ -7565,6 +7611,7 @@
     "Ends with OUT",
     "Events",
     "Radio Terms",
+    "Sci-fi Stories",
     "Starts with FAL",
     "TV Shows",
     "Video Games"
@@ -7765,6 +7812,16 @@
     "Photography Terms",
     "Starts with FIL",
     "Things American"
+  ],
+  "Final Fantasy": [
+    "1980s",
+    "20th Century",
+    "Ends with ASY",
+    "Fantasy Stories",
+    "Role-Playing Games",
+    "Starts with FIN",
+    "Things Japanese",
+    "Video Games"
   ],
   "Finding Nemo": [
     "3D Animated Films",
@@ -7983,6 +8040,16 @@
     "Oscar Winners",
     "Starts with FOR",
     "Things American"
+  ],
+  "Fortnite": [
+    "2010s",
+    "21st Century",
+    "Battle Royale",
+    "Ends with ITE",
+    "Sci-fi Stories",
+    "Starts with FOR",
+    "Things American",
+    "Video Games"
   ],
   "Four Christmases": [
     "2000s",
@@ -8808,6 +8875,16 @@
     "Starts with GOB",
     "Things Chinese"
   ],
+  "God of War": [
+    "2000s",
+    "21st Century",
+    "Action-Adventure Games",
+    "Ends with WAR",
+    "Fantasy Stories",
+    "Starts with GOD",
+    "Things American",
+    "Video Games"
+  ],
   "Godspell": [
     "1970s",
     "20th Century",
@@ -9457,11 +9534,13 @@
     "Ends with ALO",
     "Lighting",
     "Religious Terms",
+    "Sci-fi Stories",
     "Starts with HAL",
     "Sun",
     "TV Shows",
     "The Good Place",
-    "Video Games"
+    "Video Games",
+    "War Stories"
   ],
   "Halogen": [
     "Electronics",
@@ -12816,6 +12895,16 @@
     "War Films",
     "War Stories"
   ],
+  "League of Legends": [
+    "2000s",
+    "21st Century",
+    "Ends with NDS",
+    "Fantasy Stories",
+    "Multiplayer Online Battle Arena",
+    "Starts with LEA",
+    "Things American",
+    "Video Games"
+  ],
   "Learjet": [
     "Aircraft",
     "Business Aircraft",
@@ -14314,6 +14403,15 @@
     "Starts with MET",
     "Tech Companies"
   ],
+  "Metal Gear": [
+    "1980s",
+    "20th Century",
+    "Ends with EAR",
+    "Starts with MET",
+    "Stealth Games",
+    "Things Japanese",
+    "Video Games"
+  ],
   "Mexico": [
     "Countries",
     "Countries in North America",
@@ -14528,6 +14626,16 @@
     "Place Names",
     "Starts with MIN",
     "Things Filipino"
+  ],
+  "Minecraft": [
+    "2010s",
+    "21st Century",
+    "Adventure Stories",
+    "Ends with AFT",
+    "Sandbox Games",
+    "Starts with MIN",
+    "Things Swedish",
+    "Video Games"
   ],
   "Minestrone": [
     "Ends with ONE",
@@ -16320,6 +16428,7 @@
   "Overwatch": [
     "Ends with TCH",
     "Military Terms",
+    "Sci-fi Stories",
     "Sports Terms",
     "Starts with OVE",
     "Video Games"
@@ -16374,6 +16483,15 @@
     "Materials",
     "Polymers",
     "Starts with PVC"
+  ],
+  "Pac-Man": [
+    "1980s",
+    "20th Century",
+    "Arcade Games",
+    "Ends with MAN",
+    "Starts with PAC",
+    "Things Japanese",
+    "Video Games"
   ],
   "Paczki": [
     "Desserts",
@@ -17373,6 +17491,7 @@
     "Anime",
     "Card Games",
     "Ends with MON",
+    "Fantasy Stories",
     "Manga",
     "Movies",
     "Movies directed by Kunihiko Yuyama",
@@ -17528,6 +17647,7 @@
     "Ends with TAL",
     "Magic",
     "Physics Terms",
+    "Sci-fi Stories",
     "Starts with POR",
     "Video Games"
   ],
@@ -18325,6 +18445,17 @@
     "Starts with RED",
     "Things Thai"
   ],
+  "Red Dead Redemption": [
+    "2010s",
+    "21st Century",
+    "Action-Adventure Games",
+    "Ends with ION",
+    "Period Stories",
+    "Starts with RED",
+    "Things American",
+    "Video Games",
+    "Western Stories"
+  ],
   "Red Dragon": [
     "2000s",
     "21st Century",
@@ -18443,6 +18574,16 @@
     "Things American",
     "Thriller Films",
     "Thriller Stories"
+  ],
+  "Resident Evil": [
+    "1990s",
+    "20th Century",
+    "Ends with VIL",
+    "Horror Stories",
+    "Starts with RES",
+    "Survival Horror",
+    "Things Japanese",
+    "Video Games"
   ],
   "Resolution": [
     "Age of Sail",
@@ -18770,6 +18911,7 @@
     "Military Stories",
     "Starts with ROM",
     "Things Chinese",
+    "Video Games",
     "War Stories"
   ],
   "Romania": [
@@ -20415,6 +20557,15 @@
     "Music",
     "Starts with SON"
   ],
+  "Sonic": [
+    "1990s",
+    "20th Century",
+    "Ends with NIC",
+    "Platform Games",
+    "Starts with SON",
+    "Things Japanese",
+    "Video Games"
+  ],
   "Sony": [
     "Camera Companies",
     "Companies",
@@ -20925,7 +21076,8 @@
     "Space Stories",
     "Star Wars Movies",
     "Starts with STA",
-    "Things American"
+    "Things American",
+    "War Stories"
   ],
   "Starboard": [
     "Ends with ARD",
@@ -21067,6 +21219,16 @@
     "Mentioned in We Didn't Start the Fire",
     "Starts with STR",
     "Things American"
+  ],
+  "Street Fighter": [
+    "1980s",
+    "20th Century",
+    "Combat Games",
+    "Ends with TER",
+    "Fighting Games",
+    "Starts with STR",
+    "Things Japanese",
+    "Video Games"
   ],
   "Studebaker": [
     "1950s",
@@ -21232,6 +21394,15 @@
     "K-pop",
     "Starts with SUP",
     "Things Korean"
+  ],
+  "Super Mario": [
+    "1980s",
+    "20th Century",
+    "Ends with RIO",
+    "Platform Games",
+    "Starts with SUP",
+    "Things Japanese",
+    "Video Games"
   ],
   "Superman": [
     "DC Characters",
@@ -21919,6 +22090,15 @@
     "Starts with TES",
     "Tech Companies",
     "Things Serbian"
+  ],
+  "Tetris": [
+    "1980s",
+    "20th Century",
+    "Ends with RIS",
+    "Puzzle Games",
+    "Starts with TET",
+    "Things Russian",
+    "Video Games"
   ],
   "Texas": [
     "Card Games",
@@ -23555,6 +23735,17 @@
     "Starts with THE",
     "Things Latin American"
   ],
+  "The Legend of Zelda": [
+    "1980s",
+    "20th Century",
+    "Action-Adventure Games",
+    "Adventure Stories",
+    "Ends with LDA",
+    "Fantasy Stories",
+    "Starts with THE",
+    "Things Japanese",
+    "Video Games"
+  ],
   "The Lion King": [
     "2D Animated Films",
     "Adventure Stories",
@@ -24928,6 +25119,16 @@
     "Starts with THE",
     "Things Japanese"
   ],
+  "The Witcher": [
+    "2000s",
+    "21st Century",
+    "Action Role-Playing Games",
+    "Ends with HER",
+    "Fantasy Stories",
+    "Starts with THE",
+    "Things Polish",
+    "Video Games"
+  ],
   "The Wizard of Oz": [
     "1930s",
     "20th Century",
@@ -25201,6 +25402,18 @@
     "Things British",
     "White Star Line"
   ],
+  "Titanic: Adventure Out of Time": [
+    "1990s",
+    "20th Century",
+    "Adventure Stories",
+    "Ends with IME",
+    "Period Stories",
+    "Starts with TIT",
+    "The Sinking of RMS Titanic",
+    "Things American",
+    "Time Travel Stories",
+    "Video Games"
+  ],
   "Titanium": [
     "Elements",
     "Ends with IUM",
@@ -25385,8 +25598,10 @@
   ],
   "Total War": [
     "Ends with WAR",
+    "Period Stories",
     "Starts with TOT",
     "Video Games",
+    "War Stories",
     "Wars"
   ],
   "Tourtiere": [
@@ -27009,6 +27224,17 @@
     "Starts with WOR",
     "Wars",
     "World Wars"
+  ],
+  "World of Warcraft": [
+    "2000s",
+    "21st Century",
+    "Ends with AFT",
+    "Fantasy Stories",
+    "Massively Multiplayer Online",
+    "Role-Playing Games",
+    "Starts with WOR",
+    "Things American",
+    "Video Games"
   ],
   "Worm": [
     "Dune",
