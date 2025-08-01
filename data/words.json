@@ -387,6 +387,9 @@
     "Ends with LES",
     "Epic Heroes",
     "Greek Heroes",
+    "Men",
+    "People",
+    "Real People",
     "Starts with ACH",
     "Tragic Heroes",
     "Trojan War"
@@ -517,6 +520,8 @@
     "Ends with DIN",
     "Family Stories",
     "Fantasy Stories",
+    "Fictional People",
+    "Men",
     "Movies",
     "Movies directed by Ron Clements",
     "Movies featuring Jonathan Freeman",
@@ -524,6 +529,7 @@
     "Movies featuring Robin Williams",
     "Movies featuring Scott Weinger",
     "Musical Films",
+    "People",
     "Starts with ALA",
     "Things American"
   ],
@@ -1023,8 +1029,11 @@
     "Classic Literature",
     "Coming of Age Stories",
     "Ends with LES",
+    "Fictional People",
+    "People",
     "Starts with ANN",
-    "Things Canadian"
+    "Things Canadian",
+    "Women"
   ],
   "Annie": [
     "1980s",
@@ -1032,14 +1041,17 @@
     "Comedy Stories",
     "Ends with NIE",
     "Family Stories",
+    "Fictional People",
     "Movies",
     "Movies directed by John Huston",
     "Movies featuring Aileen Quinn",
     "Movies featuring Albert Finney",
     "Movies featuring Carol Burnett",
     "Musical Films",
+    "People",
     "Starts with ANN",
-    "Things American"
+    "Things American",
+    "Women"
   ],
   "Annie Hall": [
     "1970s",
@@ -1335,12 +1347,15 @@
     "Anime",
     "Ends with TTY",
     "Fantasy Stories",
+    "Fictional People",
     "Japanese Films",
     "Movies",
     "Movies directed by Hiromasa Yonebayashi",
+    "People",
     "Starts with ARR",
     "Studio Ghibli",
-    "Things Japanese"
+    "Things Japanese",
+    "Women"
   ],
   "Arrival": [
     "2010s",
@@ -2336,6 +2351,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with BEG",
     "Things American"
   ],
@@ -2538,6 +2554,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with BER",
     "Things American"
   ],
@@ -2557,6 +2574,7 @@
     "Ends with NCE",
     "Musicians",
     "People",
+    "Real People",
     "Starts with BEY",
     "Things American",
     "Women"
@@ -3103,6 +3121,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with BRA",
     "Things American"
   ],
@@ -3503,6 +3522,7 @@
     "Music",
     "Musicians",
     "People",
+    "Real People",
     "Starts with BUD",
     "Things American"
   ],
@@ -3878,6 +3898,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with CAM",
     "Things American"
   ],
@@ -4192,6 +4213,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with CAS",
     "Things Cuban"
   ],
@@ -4363,6 +4385,7 @@
     "Modern Countries",
     "People",
     "Place Names",
+    "Real People",
     "Republics",
     "Starts with CHA",
     "Things Chadian"
@@ -4741,6 +4764,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with CHO",
     "Things Chinese"
   ],
@@ -4797,6 +4821,7 @@
     "Music",
     "Musicians",
     "People",
+    "Real People",
     "Starts with CHU",
     "Things American"
   ],
@@ -4855,6 +4880,7 @@
     "Ends with LLA",
     "Family Stories",
     "Fantasy Stories",
+    "Fictional People",
     "Movies",
     "Movies directed by Clyde Geronimi",
     "Movies featuring Eleanor Audley",
@@ -4862,8 +4888,10 @@
     "Movies featuring Rhoda Williams",
     "Movies featuring Verna Felton",
     "Musical Films",
+    "People",
     "Starts with CIN",
-    "Things American"
+    "Things American",
+    "Women"
   ],
   "Cinnamon": [
     "Ends with MON",
@@ -6007,6 +6035,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with DAV",
     "Things American"
   ],
@@ -6545,6 +6574,7 @@
     "Music",
     "Musicians",
     "People",
+    "Real People",
     "Starts with DOR",
     "Things American",
     "Women"
@@ -6808,6 +6838,7 @@
     "Music",
     "Musicians",
     "People",
+    "Real People",
     "Starts with DYL",
     "Things American"
   ],
@@ -7007,6 +7038,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with EIC",
     "Things German"
   ],
@@ -7215,6 +7247,7 @@
     "Men",
     "Musicians",
     "People",
+    "Real People",
     "Starts with ELV",
     "Things American"
   ],
@@ -8409,6 +8442,7 @@
     "Katsuhiko Fujita",
     "Men",
     "People",
+    "Real People",
     "Scientists",
     "Starts with FUJ",
     "Things Japanese"
@@ -10879,6 +10913,7 @@
     "Ichiro Suzuki",
     "Men",
     "People",
+    "Real People",
     "Starts with ICH",
     "Things Japanese"
   ],
@@ -11481,6 +11516,7 @@
     "Men",
     "NBA Players",
     "People",
+    "Real People",
     "Saints",
     "Starts with JAM",
     "Things American"
@@ -11737,6 +11773,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with JOE",
     "Things American"
   ],
@@ -11748,6 +11785,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with JOE",
     "Things American"
   ],
@@ -11798,6 +11836,7 @@
     "Music",
     "Musicians",
     "People",
+    "Real People",
     "Starts with JOH",
     "Things American"
   ],
@@ -11851,6 +11890,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with JOS",
     "Things Russian",
     "World War II"
@@ -11879,6 +11919,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with JUA",
     "Things American"
   ],
@@ -12148,6 +12189,7 @@
     "Ends with INA",
     "Events",
     "People",
+    "Real People",
     "Starts with KAT",
     "Things American",
     "Women"
@@ -12249,6 +12291,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with KER",
     "Things American"
   ],
@@ -12606,6 +12649,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with KRU",
     "Things Russian"
   ],
@@ -12656,6 +12700,7 @@
     "Film Directors",
     "Men",
     "People",
+    "Real People",
     "Starts with KUR",
     "Things Japanese"
   ],
@@ -13187,6 +13232,7 @@
     "Music",
     "Musicians",
     "People",
+    "Real People",
     "Starts with LIB",
     "Things American"
   ],
@@ -13770,6 +13816,7 @@
     "Ends with NNA",
     "Musicians",
     "People",
+    "Real People",
     "Starts with MAD",
     "Things American",
     "Women"
@@ -13893,6 +13940,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with MAL",
     "Things American"
   ],
@@ -14019,6 +14067,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Sports",
     "Starts with MAR",
     "Things American"
@@ -14064,6 +14113,7 @@
     "Ends with ROE",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with MAR",
     "Things American",
     "Women"
@@ -14144,6 +14194,7 @@
     "1st Century",
     "Ends with ARY",
     "People",
+    "Real People",
     "Saints",
     "Starts with MAR",
     "Things American",
@@ -14258,6 +14309,7 @@
     "Hideki Matsui",
     "Men",
     "People",
+    "Real People",
     "Starts with MAT",
     "Things Japanese"
   ],
@@ -14637,6 +14689,7 @@
     "Ends with UNE",
     "Men",
     "People",
+    "Real People",
     "Starts with MIF",
     "Things Japanese",
     "Toshiro Mifune"
@@ -14786,6 +14839,7 @@
     "Film Directors",
     "Men",
     "People",
+    "Real People",
     "Starts with MIY",
     "Things Japanese"
   ],
@@ -14795,6 +14849,7 @@
     "Disney",
     "Ends with ANA",
     "Family Stories",
+    "Fictional People",
     "Movies",
     "Movies directed by Ron Clements",
     "Movies featuring Auli'i Cravalho",
@@ -14802,8 +14857,10 @@
     "Movies featuring Rachel House",
     "Movies featuring Temuera Morrison",
     "Musical Films",
+    "People",
     "Starts with MOA",
-    "Things American"
+    "Things American",
+    "Women"
   ],
   "Moby Dick": [
     "1850s",
@@ -15358,6 +15415,7 @@
     "Hikaru Nakamura",
     "Men",
     "People",
+    "Real People",
     "Starts with NAK",
     "Things Japanese"
   ],
@@ -15446,6 +15504,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with NAS",
     "Things Egyptian"
   ],
@@ -16108,6 +16167,7 @@
     "Ends with ANI",
     "Men",
     "People",
+    "Real People",
     "Shohei Ohtani",
     "Starts with OHT",
     "Things Japanese"
@@ -16551,6 +16611,7 @@
     "Film Directors",
     "Men",
     "People",
+    "Real People",
     "Starts with OZU",
     "Things Japanese",
     "Yasujiro Ozu"
@@ -16723,6 +16784,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with PAN",
     "Things American"
   ],
@@ -17080,6 +17142,8 @@
     "Ends with PAN",
     "Family Stories",
     "Fantasy Stories",
+    "Fictional People",
+    "Men",
     "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Movies directed by Clyde Geronimi",
@@ -17088,6 +17152,7 @@
     "Movies featuring Hans Conried",
     "Movies featuring Kathryn Beaumont",
     "Musical Films",
+    "People",
     "Starts with PET",
     "Things British"
   ],
@@ -17319,6 +17384,8 @@
     "Ends with HIO",
     "Family Stories",
     "Fantasy Stories",
+    "Fictional People",
+    "Men",
     "Movies",
     "Movies directed by Ben Sharpsteen",
     "Movies featuring Christian Rub",
@@ -17326,6 +17393,7 @@
     "Movies featuring Dickie Jones",
     "Movies featuring Evelyn Venable",
     "Musical Films",
+    "People",
     "Starts with PIN",
     "Things American"
   ],
@@ -17915,6 +17983,7 @@
     "Men",
     "Musicians",
     "People",
+    "Real People",
     "Royalty",
     "Starts with PRI",
     "Things American"
@@ -17995,6 +18064,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with PRO",
     "Things Russian"
   ],
@@ -19139,6 +19209,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with ROY",
     "Things American"
   ],
@@ -19651,6 +19722,7 @@
     "Locations in Europe",
     "People",
     "Place Names",
+    "Real People",
     "Saints",
     "Ships",
     "Spanish Ships",
@@ -19665,6 +19737,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with SAN",
     "Things American"
   ],
@@ -20412,6 +20485,7 @@
     "Ends with UTY",
     "Family Stories",
     "Fantasy Stories",
+    "Fictional People",
     "Movies",
     "Movies directed by Clyde Geronimi",
     "Movies featuring Bill Shirley",
@@ -20419,8 +20493,10 @@
     "Movies featuring Mary Costa",
     "Movies featuring Verna Felton",
     "Musical Films",
+    "People",
     "Starts with SLE",
-    "Things American"
+    "Things American",
+    "Women"
   ],
   "Sleipnir": [
     "Ends with NIR",
@@ -21408,6 +21484,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Sports",
     "Starts with SUG",
     "Things American"
@@ -21648,6 +21725,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Real People",
     "Starts with SYN",
     "Things South Korean"
   ],
@@ -21839,6 +21917,7 @@
     "Masahiro Tanaka",
     "Men",
     "People",
+    "Real People",
     "Starts with TAN",
     "Things Japanese"
   ],
@@ -25712,6 +25791,7 @@
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "People",
+    "Real People",
     "Starts with TOS",
     "Things American"
   ],
