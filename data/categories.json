@@ -5322,6 +5322,7 @@
   ],
   "Economics": [
     "Bond",
+    "Boom",
     "Coin",
     "Copper",
     "Fraud",
@@ -5555,6 +5556,7 @@
     "Backpack",
     "I'll be back",
     "Ice Pack",
+    "Tack",
     "The Empire Strikes Back"
   ],
   "Ends with ACO": [
@@ -5632,7 +5634,8 @@
   ],
   "Ends with AIL": [
     "Beaver Tail",
-    "Caesar Cocktail"
+    "Caesar Cocktail",
+    "Sail"
   ],
   "Ends with AIN": [
     "Bahrain",
@@ -5900,6 +5903,7 @@
     "Mustard",
     "Picard",
     "Red Beard",
+    "Starboard",
     "Svalbard",
     "Wizard"
   ],
@@ -5995,6 +5999,7 @@
     "Beast",
     "Beauty and the Beast",
     "Ivory Coast",
+    "Mast",
     "Vast",
     "X-Men: Days of Future Past"
   ],
@@ -6006,6 +6011,7 @@
     "The Mahabharata"
   ],
   "Ends with ATE": [
+    "Frigate",
     "Hot Chocolate",
     "Karate",
     "Kate",
@@ -6186,6 +6192,7 @@
     "Big"
   ],
   "Ends with BIN": [
+    "Cabin",
     "Robin"
   ],
   "Ends with BIT": [
@@ -6448,6 +6455,7 @@
     "Lavender",
     "Murder",
     "Outlander",
+    "Rudder",
     "Spider",
     "The Rescuers Down Under",
     "Thunder",
@@ -6615,6 +6623,9 @@
   "Ends with ECH": [
     "The King's Speech"
   ],
+  "Ends with ECK": [
+    "Deck"
+  ],
   "Ends with ECT": [
     "The Butterfly Effect",
     "The Human Genome Project",
@@ -6642,6 +6653,7 @@
     "Greek"
   ],
   "Ends with EEL": [
+    "Keel",
     "Steel",
     "Wheel"
   ],
@@ -6812,6 +6824,7 @@
   "Ends with ERN": [
     "Green Lantern",
     "Raise the Red Lantern",
+    "Stern",
     "Tern"
   ],
   "Ends with ERO": [
@@ -7253,6 +7266,7 @@
     "Bishop"
   ],
   "Ends with HOR": [
+    "Anchor",
     "Lex Luthor",
     "Thor"
   ],
@@ -7854,6 +7868,9 @@
   "Ends with JET": [
     "Learjet"
   ],
+  "Ends with JIB": [
+    "Jib"
+  ],
   "Ends with JIN": [
     "Temüjin"
   ],
@@ -8058,6 +8075,7 @@
     "Violet"
   ],
   "Ends with LEY": [
+    "Galley",
     "McKinley"
   ],
   "Ends with LFI": [
@@ -8065,6 +8083,9 @@
   ],
   "Ends with LGA": [
     "Volga"
+  ],
+  "Ends with LGE": [
+    "Bilge"
   ],
   "Ends with LHI": [
     "Delhi"
@@ -8453,7 +8474,8 @@
     "Kraft Dinner",
     "Mariner",
     "Pilsner",
-    "Road Runner"
+    "Road Runner",
+    "Schooner"
   ],
   "Ends with NES": [
     "Attack of the Clones",
@@ -8606,6 +8628,9 @@
   "Ends with NOS": [
     "Mykonos",
     "Thanos"
+  ],
+  "Ends with NOT": [
+    "Knot"
   ],
   "Ends with NOW": [
     "Don't Look Now",
@@ -8899,6 +8924,7 @@
     "The Jungle Book"
   ],
   "Ends with OOM": [
+    "Boom",
     "Darkroom",
     "Doom"
   ],
@@ -9371,6 +9397,9 @@
   "Ends with RIE": [
     "Curie",
     "Marie Curie"
+  ],
+  "Ends with RIG": [
+    "Brig"
   ],
   "Ends with RIN": [
     "Turin"
@@ -10048,7 +10077,8 @@
   "Ends with ULL": [
     "Bull",
     "Eyjafjallajokull",
-    "Gull"
+    "Gull",
+    "Hull"
   ],
   "Ends with ULU": [
     "Honolulu",
@@ -10930,6 +10960,10 @@
     "Gucci",
     "Hermes",
     "Prada"
+  ],
+  "Fastening": [
+    "Knot",
+    "Tack"
   ],
   "Federal Republics": [
     "Argentina",
@@ -12597,6 +12631,9 @@
   "Katsuhiko Fujita": [
     "Fujita"
   ],
+  "Kitchens": [
+    "Galley"
+  ],
   "Kriegsmarine": [
     "Bismarck",
     "Gneisenau",
@@ -13863,6 +13900,7 @@
   ],
   "Military Terms": [
     "Battlefield",
+    "Brig",
     "NATO",
     "Overwatch",
     "Uniform"
@@ -19118,9 +19156,29 @@
   ],
   "Nautical Terms": [
     "Albatross",
+    "Anchor",
+    "Bilge",
+    "Boom",
+    "Bow",
+    "Brig",
+    "Cabin",
     "Cog",
+    "Deck",
+    "Frigate",
+    "Galley",
+    "Hull",
     "Iceberg",
-    "Port"
+    "Jib",
+    "Keel",
+    "Knot",
+    "Mast",
+    "Port",
+    "Rudder",
+    "Sail",
+    "Schooner",
+    "Starboard",
+    "Stern",
+    "Tack"
   ],
   "New Seven Wonders": [
     "Chichen Itza",
@@ -19616,6 +19674,9 @@
     "Journal",
     "Magazine",
     "Newspaper"
+  ],
+  "Personality Traits": [
+    "Stern"
   ],
   "Philosophers": [
     "Aristotle",
@@ -22014,6 +22075,9 @@
   "Starts with ANA": [
     "Anansi"
   ],
+  "Starts with ANC": [
+    "Anchor"
+  ],
   "Starts with AND": [
     "Andaman",
     "Andorra",
@@ -22348,6 +22412,7 @@
     "Bigos"
   ],
   "Starts with BIL": [
+    "Bilge",
     "Bill & Ted's Bogus Journey",
     "Bill & Ted's Excellent Adventure"
   ],
@@ -22416,6 +22481,9 @@
   "Starts with BON": [
     "Bond"
   ],
+  "Starts with BOO": [
+    "Boom"
+  ],
   "Starts with BOR": [
     "Bora Bora",
     "Bordeaux",
@@ -22460,6 +22528,7 @@
     "Bridge",
     "Bridge on the River Kwai",
     "Brief Encounter",
+    "Brig",
     "Brigadeiro",
     "Brioche",
     "Brisket",
@@ -22540,6 +22609,7 @@
   ],
   "Starts with CAB": [
     "Cabaret",
+    "Cabin",
     "Cabo Verde"
   ],
   "Starts with CAC": [
@@ -22950,7 +23020,8 @@
     "Death's End"
   ],
   "Starts with DEC": [
-    "December 7th, 1941"
+    "December 7th, 1941",
+    "Deck"
   ],
   "Starts with DEE": [
     "Deepwater Horizon"
@@ -23440,7 +23511,8 @@
   "Starts with FRI": [
     "Fridge",
     "Fried Chicken",
-    "Friends, Romans, countrymen"
+    "Friends, Romans, countrymen",
+    "Frigate"
   ],
   "Starts with FRO": [
     "From Up on Poppy Hill",
@@ -23465,7 +23537,8 @@
     "Galapagos",
     "Galaxy",
     "Galaxy Quest",
-    "Galileo"
+    "Galileo",
+    "Galley"
   ],
   "Starts with GAM": [
     "Gambia",
@@ -23863,7 +23936,8 @@
   "Starts with HUL": [
     "Hula Hoop",
     "Hulagu Khan",
-    "Hulk"
+    "Hulk",
+    "Hull"
   ],
   "Starts with HUM": [
     "Hummingbird",
@@ -24096,6 +24170,9 @@
   "Starts with JIA": [
     "Jiaozi"
   ],
+  "Starts with JIB": [
+    "Jib"
+  ],
   "Starts with JIL": [
     "Jill"
   ],
@@ -24211,6 +24288,9 @@
   "Starts with KEB": [
     "Kebab"
   ],
+  "Starts with KEE": [
+    "Keel"
+  ],
   "Starts with KEF": [
     "Kefir"
   ],
@@ -24278,6 +24358,7 @@
     "Knife"
   ],
   "Starts with KNO": [
+    "Knot",
     "Know thyself"
   ],
   "Starts with KOB": [
@@ -24627,7 +24708,8 @@
   ],
   "Starts with MAS": [
     "Massaman",
-    "Massive"
+    "Massive",
+    "Mast"
   ],
   "Starts with MAT": [
     "Matcha",
@@ -25595,6 +25677,9 @@
   "Starts with RUB": [
     "Ruby"
   ],
+  "Starts with RUD": [
+    "Rudder"
+  ],
   "Starts with RUG": [
     "Rugby",
     "Rugelach"
@@ -25637,6 +25722,7 @@
     "Sahara"
   ],
   "Starts with SAI": [
+    "Sail",
     "Sailing",
     "Saint Kitts and Nevis",
     "Saint Lucia",
@@ -25714,7 +25800,8 @@
     "Scharnhorst",
     "Schindler's List",
     "Schmaltz",
-    "Schnitzel"
+    "Schnitzel",
+    "Schooner"
   ],
   "Starts with SCO": [
     "Scones",
@@ -25966,6 +26053,7 @@
     "Stamp",
     "Star",
     "Star Wars",
+    "Starboard",
     "Starbuck",
     "Stargate",
     "Staten Island",
@@ -25974,7 +26062,8 @@
   ],
   "Starts with STE": [
     "Steel",
-    "Stennis"
+    "Stennis",
+    "Stern"
   ],
   "Starts with STI": [
     "Stick",
@@ -26077,6 +26166,7 @@
     "Tabouleh"
   ],
   "Starts with TAC": [
+    "Tack",
     "Taco"
   ],
   "Starts with TAE": [
