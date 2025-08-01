@@ -532,7 +532,6 @@
     "Serpico",
     "Soviet-Afghan War",
     "Star Wars",
-    "The 1970s",
     "The Cambodian Genocide",
     "The Deer Hunter",
     "The Exorcist",
@@ -3332,7 +3331,7 @@
     "Tesla",
     "Toyota"
   ],
-  "Central European Countries": [
+  "Central Countries in Europe": [
     "Austria-Hungary",
     "Czechoslovakia"
   ],
@@ -4625,6 +4624,7 @@
     "Croatia",
     "Cyprus",
     "Czech Republic",
+    "Czechoslovakia",
     "Denmark",
     "East Germany",
     "Estonia",
@@ -4651,6 +4651,7 @@
     "Norway",
     "Poland",
     "Portugal",
+    "Prussia",
     "Romania",
     "Russia",
     "San Marino",
@@ -4662,7 +4663,9 @@
     "Switzerland",
     "Ukraine",
     "United Kingdom",
-    "Vatican City"
+    "Vatican City",
+    "West Germany",
+    "Yugoslavia"
   ],
   "Countries in North America": [
     "Antigua and Barbuda",
@@ -5477,10 +5480,6 @@
   ],
   "Ends with 626": [
     "July 2nd, 626"
-  ],
-  "Ends with 70S": [
-    "1970s",
-    "The 1970s"
   ],
   "Ends with 747": [
     "747"
@@ -10441,13 +10440,6 @@
     "Inuit",
     "Sami",
     "Zulu"
-  ],
-  "European Countries": [
-    "Czechoslovakia",
-    "East Germany",
-    "Prussia",
-    "West Germany",
-    "Yugoslavia"
   ],
   "Events": [
     "1955 World Series",
@@ -21794,7 +21786,6 @@
     "1955 World Series"
   ],
   "Starts with 197": [
-    "1970s",
     "1972 Presidential Election"
   ],
   "Starts with 198": [
@@ -26122,7 +26113,6 @@
     "Thanos"
   ],
   "Starts with THE": [
-    "The 1970s",
     "The AIDS Crisis",
     "The Adventures of Tom Sawyer",
     "The Age of Innocence",
@@ -27209,17 +27199,11 @@
     "Harp",
     "Soul"
   ],
-  "The Iran Hostage Crisis": [
-    "1970s"
-  ],
   "The Rime of the Ancient Mariner": [
     "Albatross",
     "Board",
     "Mariner",
     "Ocean"
-  ],
-  "The Watergate Scandal": [
-    "1970s"
   ],
   "Theater Quotes": [
     "All the world's a stage",
@@ -30148,9 +30132,6 @@
   ],
   "WWII Powers": [
     "Manchukuo"
-  ],
-  "Wachowskis": [
-    "The Matrix"
   ],
   "War Crimes": [
     "The Holocaust",

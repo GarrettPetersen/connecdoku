@@ -294,8 +294,200 @@ if (checkmarkCount > 0) {
 console.log(`- Total categories: ${Object.keys(updatedEmojisData).length}`);
 console.log(`- Percentage with ☑️: ${((checkmarkCount / Object.keys(updatedEmojisData).length) * 100).toFixed(1)}%`);
 
-// Step 6: Count candidate puzzles in SQLite database
-console.log('6. Counting candidate puzzles in SQLite database...');
+// Step 6: Manage meta categories
+console.log('6. Managing meta categories...');
+const metaCategoriesPath = path.join(__dirname, 'data', 'meta_categories.json');
+let existingMetaCategories = {};
+
+// Try to read existing meta categories file
+try {
+    existingMetaCategories = JSON.parse(fs.readFileSync(metaCategoriesPath, 'utf8'));
+} catch (err) {
+    // File doesn't exist or is invalid, start fresh
+    console.log('Creating new meta_categories.json file');
+    existingMetaCategories = {
+        "Letter Patterns": [],
+        "Movie Makers": [],
+        "No Meta Category": []
+    };
+}
+
+// Get all current categories from categories.json
+const allCurrentCategories = Object.keys(finalCategories);
+
+// Initialize new meta categories structure with all existing meta categories
+const updatedMetaCategories = {};
+// Copy all existing meta categories to preserve them
+for (const [metaCategory, categories] of Object.entries(existingMetaCategories)) {
+    updatedMetaCategories[metaCategory] = [];
+}
+
+// Track which categories have been processed to avoid duplicates
+const processedCategories = new Set();
+
+// First, collect all categories that are in any meta category (except No Meta Category)
+const categorizedCategories = new Set();
+for (const [metaCategory, categories] of Object.entries(existingMetaCategories)) {
+    if (metaCategory !== "No Meta Category") {
+        for (const category of categories) {
+            categorizedCategories.add(category);
+        }
+    }
+}
+
+// Process each current category
+let letterPatternCount = 0;
+let movieMakerCount = 0;
+let timePeriodCount = 0;
+let locationCount = 0;
+let manufacturerCount = 0;
+let genreCount = 0;
+let countryTypeCount = 0;
+let nationalityCount = 0;
+let noMetaCount = 0;
+
+// First, process all categories from existing meta categories to preserve manual categorizations
+for (const [metaCategory, categories] of Object.entries(existingMetaCategories)) {
+    for (const category of categories) {
+        if (processedCategories.has(category)) {
+            continue;
+        }
+        
+        // If it's in a manual meta category, keep it there
+        if (metaCategory === "Historical Events") {
+            updatedMetaCategories[metaCategory].push(category);
+            processedCategories.add(category);
+        }
+        // Don't preserve categories in "No Meta Category" - let them be reprocessed
+    }
+}
+
+// Now process all current categories for automatic categorization
+for (const category of allCurrentCategories) {
+    // Skip if already processed
+    if (processedCategories.has(category)) {
+        continue;
+    }
+    
+    let categorized = false;
+    
+    // Check automatic categorization rules first
+    if (category.startsWith('Starts with ') || category.startsWith('Ends with ')) {
+        updatedMetaCategories["Letter Patterns"].push(category);
+        letterPatternCount++;
+        categorized = true;
+        processedCategories.add(category);
+    } else if (category.startsWith('Movies featuring ') || category.startsWith('Movies directed by ')) {
+        updatedMetaCategories["Movie Makers"].push(category);
+        movieMakerCount++;
+        categorized = true;
+        processedCategories.add(category);
+    } else if (category.includes('Century') || category.includes('s') && /^\d{4}s$/.test(category) || /^\d{1,2}th Century/.test(category)) {
+        updatedMetaCategories["Time Periods"] = updatedMetaCategories["Time Periods"] || [];
+        updatedMetaCategories["Time Periods"].push(category);
+        timePeriodCount++;
+        categorized = true;
+        processedCategories.add(category);
+    } else if (category.startsWith('Cities in ') || category.startsWith('Locations in ') || category.startsWith('Countries in ')) {
+        updatedMetaCategories["Locations"] = updatedMetaCategories["Locations"] || [];
+        updatedMetaCategories["Locations"].push(category);
+        locationCount++;
+        categorized = true;
+        processedCategories.add(category);
+    } else if (category.startsWith('Manufactured by ')) {
+        updatedMetaCategories["Manufacturers"] = updatedMetaCategories["Manufacturers"] || [];
+        updatedMetaCategories["Manufacturers"].push(category);
+        manufacturerCount++;
+        categorized = true;
+        processedCategories.add(category);
+    } else if (category.endsWith(' Stories') || category.endsWith(' Films')) {
+        updatedMetaCategories["Genres"] = updatedMetaCategories["Genres"] || [];
+        updatedMetaCategories["Genres"].push(category);
+        genreCount++;
+        categorized = true;
+        processedCategories.add(category);
+    } else if (category.startsWith('Former ') || category.includes('Countries') || category.includes('Nations') || category.includes('Powers') || category.includes('UN Security Council Permanent Members')) {
+        updatedMetaCategories["Country Types"] = updatedMetaCategories["Country Types"] || [];
+        updatedMetaCategories["Country Types"].push(category);
+        countryTypeCount++;
+        categorized = true;
+        processedCategories.add(category);
+    } else if (category.startsWith('Things ')) {
+        // All "Things " categories are nationalities
+        updatedMetaCategories["Nationalities"] = updatedMetaCategories["Nationalities"] || [];
+        updatedMetaCategories["Nationalities"].push(category);
+        nationalityCount++;
+        categorized = true;
+        processedCategories.add(category);
+    }
+    
+    // If not automatically categorized, add to No Meta Category (but only if not already categorized elsewhere)
+    if (!categorized) {
+        // Only add to No Meta Category if it's not already in another meta category
+        if (!categorizedCategories.has(category)) {
+            updatedMetaCategories["No Meta Category"] = updatedMetaCategories["No Meta Category"] || [];
+            updatedMetaCategories["No Meta Category"].push(category);
+            noMetaCount++;
+        }
+        processedCategories.add(category);
+    }
+}
+
+// Sort categories within each meta category
+for (const metaCategory in updatedMetaCategories) {
+    updatedMetaCategories[metaCategory].sort();
+}
+
+// Remove categories from "No Meta Category" if they should be automatically categorized
+const noMetaCategory = updatedMetaCategories["No Meta Category"] || [];
+const remainingNoMeta = [];
+
+for (const category of noMetaCategory) {
+    let shouldBeRemoved = false;
+    
+    // Check if it should be automatically categorized
+    if (category.startsWith('Starts with ') || category.startsWith('Ends with ')) {
+        shouldBeRemoved = true;
+    } else if (category.startsWith('Movies featuring ') || category.startsWith('Movies directed by ')) {
+        shouldBeRemoved = true;
+    } else if (category.includes('Century') || category.includes('s') && /^\d{4}s$/.test(category) || /^\d{1,2}th Century/.test(category)) {
+        shouldBeRemoved = true;
+    } else if (category.startsWith('Cities in ') || category.startsWith('Locations in ') || category.startsWith('Countries in ')) {
+        shouldBeRemoved = true;
+    } else if (category.startsWith('Manufactured by ')) {
+        shouldBeRemoved = true;
+    } else if (category.endsWith(' Stories') || category.endsWith(' Films')) {
+        shouldBeRemoved = true;
+    } else if (category.startsWith('Former ') || category.includes('Countries') || category.includes('Nations') || category.includes('Powers') || category.includes('UN Security Council Permanent Members')) {
+        shouldBeRemoved = true;
+    } else if (category.startsWith('Things ')) {
+        // All "Things " categories are nationalities
+        shouldBeRemoved = true;
+    }
+    
+    if (!shouldBeRemoved) {
+        remainingNoMeta.push(category);
+    }
+}
+
+updatedMetaCategories["No Meta Category"] = remainingNoMeta;
+
+// Write updated meta categories to file
+fs.writeFileSync(metaCategoriesPath, JSON.stringify(updatedMetaCategories, null, 2), 'utf8');
+
+console.log(`- Added ${letterPatternCount} categories to Letter Patterns`);
+console.log(`- Added ${movieMakerCount} categories to Movie Makers`);
+console.log(`- Added ${timePeriodCount} categories to Time Periods`);
+console.log(`- Added ${locationCount} categories to Locations`);
+console.log(`- Added ${manufacturerCount} categories to Manufacturers`);
+console.log(`- Added ${genreCount} categories to Genres`);
+console.log(`- Added ${countryTypeCount} categories to Country Types`);
+console.log(`- Added ${nationalityCount} categories to Nationalities`);
+console.log(`- Added ${noMetaCount} categories to No Meta Category`);
+console.log(`- Total meta categories: ${Object.keys(updatedMetaCategories).length}`);
+
+// Step 7: Count candidate puzzles in SQLite database
+// console.log('7. Counting candidate puzzles in SQLite database...');
 const dbPath = path.join(__dirname, 'puzzles.db');
 
 function countPuzzlesInDatabase() {
