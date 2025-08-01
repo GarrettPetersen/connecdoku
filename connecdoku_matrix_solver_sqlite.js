@@ -1,14 +1,16 @@
 #!/usr/bin/env node
-// connecdoku_matrix_solver_sqlite.js – parallel bit-vector edition
+// connecdoku_matrix_solver_sqlite.js – parallel bit-vector edition with dynamic work stealing
 //
 // main thread:
 //   • sets up DB (WAL, sync=OFF) and spawns one worker per CPU
+//   • manages work queue and distributes chunks dynamically
 //   • receives puzzles, inserts in 1 000-row batches
 //   • draws a progress-bar line per worker
 //
 // worker thread:
-//   • runs the full solver but only for i ≡ id (mod nWorkers)
-//   • posts {puzzle}, {tick}, {done} messages
+//   • requests work chunks from main thread
+//   • processes assigned work and posts results
+//   • requests more work when done
 //
 // ---------------------------------------------------------------
 
@@ -70,25 +72,53 @@ if (isMainThread) {
   const BATCH_SZ = 1000;
   let batch = [];
 
+  // ── work queue management ──
+  const workQueue = [];
+  const CHUNK_SIZE = 10; // Process 10 indices at a time
+  
+  // Initialize work queue with all indices
+  const categoriesJson = JSON.parse(fs.readFileSync(CATS_F, "utf8"));
+  const cats = Object.keys(categoriesJson).filter(k => categoriesJson[k].length >= 4).sort();
+  const n = cats.length;
+  
+  for (let i = 0; i < n; i += CHUNK_SIZE) {
+    workQueue.push({
+      start: i,
+      end: Math.min(i + CHUNK_SIZE, n),
+      id: workQueue.length
+    });
+  }
+  
+  console.log(`Total work: ${n} indices in ${workQueue.length} chunks`);
+
   // ── progress bookkeeping ──
-  const status = Array.from({ length: nWorkers }, () => ({ i: 0, total: 1, done: false }));
+  const status = Array.from({ length: nWorkers }, () => ({ 
+    i: 0, total: 1, done: false, currentChunk: null, chunksCompleted: 0 
+  }));
   const t0 = performance.now();
   function redraw() {
     const elapsed = (performance.now() - t0) / 1000;
     let out = "";
     status.forEach((st, idx) => {
       const pct = Math.min(st.i / st.total, 1);
-      out += `\nW${idx} [${bar(pct)}] ${(pct*100).toFixed(1).padStart(6)}%${st.done?" ✓":""}`;
+      const chunkInfo = st.currentChunk ? ` (chunk ${st.currentChunk.id})` : "";
+      out += `\nW${idx} [${bar(pct)}] ${(pct*100).toFixed(1).padStart(6)}%${st.done?" ✓":""}${chunkInfo}`;
     });
-    out += `\nBatch ${batch.length}/${BATCH_SZ}   elapsed ${fmt(elapsed)}`;
+    out += `\nQueue: ${workQueue.length} chunks remaining   Batch: ${batch.length}/${BATCH_SZ}   elapsed: ${fmt(elapsed)}`;
     process.stdout.write("\x1b[H\x1b[J" + out);  // clear + write
   }
   process.stdout.write("\x1b[2J\x1b[H");        // clear screen once
 
   // ── spawn workers ──
   let active = nWorkers;
+  const workers = [];
+  
   for (let id = 0; id < nWorkers; id++) {
-    const w = new Worker(fileURLToPath(import.meta.url), { workerData: { id, nWorkers } });
+    const w = new Worker(fileURLToPath(import.meta.url), { 
+      workerData: { id, nWorkers, cats, n } 
+    });
+    workers.push(w);
+    
     w.on("message", msg => {
       if (msg.type === "puzzle") {
         batch.push(msg);
@@ -96,6 +126,22 @@ if (isMainThread) {
       } else if (msg.type === "tick") {
         status[msg.id] = { ...status[msg.id], i: msg.i, total: msg.total };
         redraw();
+      } else if (msg.type === "request_work") {
+        // Worker finished current chunk, give it more work
+        if (workQueue.length > 0) {
+          const chunk = workQueue.shift();
+          status[msg.id].currentChunk = chunk;
+          status[msg.id].chunksCompleted++;
+          w.postMessage({ type: "work", chunk });
+        } else {
+          // No more work, mark worker as done
+          status[msg.id].done = true;
+          active--;
+          redraw();
+          if (active === 0) {
+            insert(batch, () => db.close(() => console.log("\nAll done.")));
+          }
+        }
       } else if (msg.type === "done") {
         status[msg.id].done = true;
         active--;
@@ -104,12 +150,19 @@ if (isMainThread) {
       }
     });
     w.on("error", e => console.error("worker error:", e));
+    
+    // Give initial work to worker
+    if (workQueue.length > 0) {
+      const chunk = workQueue.shift();
+      status[id].currentChunk = chunk;
+      w.postMessage({ type: "work", chunk });
+    }
   }
 
 /*────────────────────────── WORKER THREAD ─────────────────────────*/
 } else {
 
-  const { id: WID, nWorkers: NW } = workerData;
+  const { id: WID, nWorkers: NW, cats, n } = workerData;
 
   // ── load data ──
   const wordsJson      = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
@@ -154,8 +207,6 @@ if (isMainThread) {
   function intersects(a, b) { for (let i = 0; i < MASK_LEN; i++) if (a[i] & b[i]) return true; return false; }
   function subset(a, b)      { for (let i = 0; i < MASK_LEN; i++) if ((a[i] & ~b[i]) !== 0) return false; return true; }
 
-  const cats = Object.keys(categoriesJson).filter(k => categoriesJson[k].length >= 4).sort();
-  const n    = cats.length;
   const mask = cats.map(c => makeMask(categoriesJson[c]));
 
   // subset mask
@@ -205,82 +256,93 @@ if (isMainThread) {
     return true;
   };
 
-  /*──── search (only i ≡ WID mod NW) ────*/
-  const totalOuter = Math.ceil((n - WID) / NW);
-  let outer = 0;
+  // ── work processing function ──
+  function processChunk(chunk) {
+    const { start, end } = chunk;
+    let outer = 0;
+    const totalOuter = end - start;
 
-  for (let i = WID; i < n; i += NW) {
-    const jList = [...N2[i]].filter(j => j > i).sort((a, b) => a - b);
-    for (const j of jList) {
-      const kList = tList(i, j);
-      for (const k of kList) {
-        const lList = kList.filter(l => l > k && N2[k].has(l));
-        for (const l of lList) {
+    for (let i = start; i < end; i++) {
+      const jList = [...N2[i]].filter(j => j > i).sort((a, b) => a - b);
+      for (const j of jList) {
+        const kList = tList(i, j);
+        for (const k of kList) {
+          const lList = kList.filter(l => l > k && N2[k].has(l));
+          for (const l of lList) {
 
-          const rows = [i, j, k, l];
-          if (!excl(rows)) continue;
-          
-          // Check meta-category constraint for rows
-          const rowCategories = rows.map(idx => cats[idx]);
-          if (!checkMetaCategoryConstraint(rowCategories)) continue;
+            const rows = [i, j, k, l];
+            if (!excl(rows)) continue;
+            
+            // Check meta-category constraint for rows
+            const rowCategories = rows.map(idx => cats[idx]);
+            if (!checkMetaCategoryConstraint(rowCategories)) continue;
 
-          // column candidates
-          let cand = new Set(N1[i]);
-          for (let r = 1; r < 4; r++) {
-            const tmp = new Set();
-            for (const x of cand) if (N1[rows[r]].has(x)) tmp.add(x);
-            cand = tmp;
-          }
-          for (const r of rows) cand.delete(r);
-          cand = new Set([...cand].filter(c => !rows.some(r => S[r][c])));
-          if (cand.size < 4 || Math.min(...cand) <= rows[0]) continue;
+            // column candidates
+            let cand = new Set(N1[i]);
+            for (let r = 1; r < 4; r++) {
+              const tmp = new Set();
+              for (const x of cand) if (N1[rows[r]].has(x)) tmp.add(x);
+              cand = tmp;
+            }
+            for (const r of rows) cand.delete(r);
+            cand = new Set([...cand].filter(c => !rows.some(r => S[r][c])));
+            if (cand.size < 4 || Math.min(...cand) <= rows[0]) continue;
 
-          const cArr = [...cand].sort((a, b) => a - b), m = cArr.length;
-          for (let a = 0; a < m - 3; a++)
-            for (let b = a + 1; b < m - 2; b++) {
-              const x = cArr[a], y = cArr[b];
-              if (!B[x][y]) continue;
-              for (let c = b + 1; c < m - 1; c++) {
-                const z = cArr[c];
-                if (!(B[x][z] && B[y][z])) continue;
-                for (let d = c + 1; d < m; d++) {
-                  const w = cArr[d];
-                  if (!(B[x][w] && B[y][w] && B[z][w])) continue;
-                  const cols = [x, y, z, w];
+            const cArr = [...cand].sort((a, b) => a - b), m = cArr.length;
+            for (let a = 0; a < m - 3; a++)
+              for (let b = a + 1; b < m - 2; b++) {
+                const x = cArr[a], y = cArr[b];
+                if (!B[x][y]) continue;
+                for (let c = b + 1; c < m - 1; c++) {
+                  const z = cArr[c];
+                  if (!(B[x][z] && B[y][z])) continue;
+                  for (let d = c + 1; d < m; d++) {
+                    const w = cArr[d];
+                    if (!(B[x][w] && B[y][w] && B[z][w])) continue;
+                    const cols = [x, y, z, w];
 
-                  // Check meta-category constraint for complete puzzle (rows + columns)
-                  const allCategories = [...rowCategories, ...cols.map(idx => cats[idx])];
-                  if (!checkMetaCategoryConstraint(allCategories)) continue;
+                    // Check meta-category constraint for complete puzzle (rows + columns)
+                    const allCategories = [...rowCategories, ...cols.map(idx => cats[idx])];
+                    if (!checkMetaCategoryConstraint(allCategories)) continue;
 
-                  // full uniqueness check
-                  let ok = true;
-                  const all = new Set([...rows, ...cols]);
-                  outerRH:
-                  for (const r of rows)
-                    for (const cc of cols) {
-                      const own = mask[r].map((v, idx) => v & mask[cc][idx]);
-                      for (const o of all) if (o !== r && o !== cc)
-                        for (let k = 0; k < MASK_LEN; k++) own[k] &= ~mask[o][k];
-                      let nz = false;
-                      for (let k = 0; k < MASK_LEN; k++) if (own[k]) { nz = true; break; }
-                      if (!nz) { ok = false; break outerRH; }
-                    }
-                  if (!ok) continue;
+                    // full uniqueness check
+                    let ok = true;
+                    const all = new Set([...rows, ...cols]);
+                    outerRH:
+                    for (const r of rows)
+                      for (const cc of cols) {
+                        const own = mask[r].map((v, idx) => v & mask[cc][idx]);
+                        for (const o of all) if (o !== r && o !== cc)
+                          for (let k = 0; k < MASK_LEN; k++) own[k] &= ~mask[o][k];
+                        let nz = false;
+                        for (let k = 0; k < MASK_LEN; k++) if (own[k]) { nz = true; break; }
+                        if (!nz) { ok = false; break outerRH; }
+                      }
+                    if (!ok) continue;
 
-                  parentPort.postMessage({
-                    type: "puzzle",
-                    hash: sha256(rows.map(v => cats[v]).join("|") + cols.map(v => cats[v]).join("|")),
-                    rows: rows.map(v => cats[v]),
-                    cols: cols.map(v => cats[v])
-                  });
+                    parentPort.postMessage({
+                      type: "puzzle",
+                      hash: sha256(rows.map(v => cats[v]).join("|") + cols.map(v => cats[v]).join("|")),
+                      rows: rows.map(v => cats[v]),
+                      cols: cols.map(v => cats[v])
+                    });
+                  }
                 }
               }
-            }
+          }
         }
       }
+      outer++;
+      parentPort.postMessage({ type: "tick", id: WID, i: outer, total: totalOuter });
     }
-    outer++;
-    parentPort.postMessage({ type: "tick", id: WID, i: outer, total: totalOuter });
   }
-  parentPort.postMessage({ type: "done", id: WID });
+
+  // ── message handling ──
+  parentPort.on("message", msg => {
+    if (msg.type === "work") {
+      processChunk(msg.chunk);
+      // Request more work when done
+      parentPort.postMessage({ type: "request_work", id: WID });
+    }
+  });
 }
