@@ -159,17 +159,30 @@ async function getHashRange(db) {
 async function deletePuzzleBatch(db, puzzleHashes) {
     if (puzzleHashes.length === 0) return 0;
     
-    return new Promise((resolve, reject) => {
-        const placeholders = puzzleHashes.map(() => '?').join(',');
-        const stmt = db.prepare(`DELETE FROM puzzles WHERE puzzle_hash IN (${placeholders})`);
+    // SQLite has a limit of 999 parameters per statement, so we need to batch deletions
+    const MAX_PARAMS = 900; // Leave some buffer
+    let totalDeleted = 0;
+    
+    for (let i = 0; i < puzzleHashes.length; i += MAX_PARAMS) {
+        const batch = puzzleHashes.slice(i, i + MAX_PARAMS);
         
-        stmt.run(puzzleHashes, function(err) {
-            if (err) reject(err);
-            else resolve(this.changes);
+        await new Promise((resolve, reject) => {
+            const placeholders = batch.map(() => '?').join(',');
+            const stmt = db.prepare(`DELETE FROM puzzles WHERE puzzle_hash IN (${placeholders})`);
+            
+            stmt.run(batch, function(err) {
+                if (err) reject(err);
+                else {
+                    totalDeleted += this.changes;
+                    resolve();
+                }
+            });
+            
+            stmt.finalize();
         });
-        
-        stmt.finalize();
-    });
+    }
+    
+    return totalDeleted;
 }
 
 // ───────── main validation function ─────────────────────────────────────────
