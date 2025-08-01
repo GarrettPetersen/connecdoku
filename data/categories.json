@@ -262,6 +262,11 @@
     "The Wind in the Willows"
   ],
   "1910s": [
+    "April 15th, 1912",
+    "Captain Smith",
+    "Ida Straus",
+    "Isidor Straus",
+    "John Jacob Astor",
     "June 28th, 1914",
     "Lusitania",
     "Taft",
@@ -272,6 +277,8 @@
     "The Secret Garden",
     "The Spanish Flu",
     "The Titanic Disaster",
+    "The Unsinkable Molly Brown",
+    "Thomas Andrews",
     "Titanic",
     "Wilson",
     "World War I"
@@ -1054,6 +1061,7 @@
     "Annie Hall",
     "Apollo",
     "Apollo 13",
+    "April 15th, 1912",
     "Armageddon",
     "As I Lay Dying",
     "Ashes of Time",
@@ -1089,6 +1097,7 @@
     "Cabaret",
     "California Baseball",
     "Campanella",
+    "Captain Smith",
     "Carter",
     "Casablanca",
     "Castle in the Sky",
@@ -1209,10 +1218,12 @@
     "I'm the king of the world",
     "IT",
     "Ichiro",
+    "Ida Straus",
     "If....",
     "Ikiru",
     "Iranian Revolution",
     "Iris",
+    "Isidor Straus",
     "It's a Wonderful Life",
     "Ivy",
     "Jackie Brown",
@@ -1223,6 +1234,7 @@
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
+    "John Jacob Astor",
     "Johnnie Ray",
     "Jordan",
     "Joseph Stalin",
@@ -1495,6 +1507,7 @@
     "The Third Man",
     "The Time Ships",
     "The Titanic Disaster",
+    "The Unsinkable Molly Brown",
     "The Usual Suspects",
     "The Very Hungry Caterpillar",
     "The Vietnam War",
@@ -1505,6 +1518,7 @@
     "The Wind-Up Bird Chronicle",
     "The Wizard of Oz",
     "The Yugoslav Wars",
+    "Thomas Andrews",
     "Thomas Edison",
     "Throne of Blood",
     "Tiananmen Square Massacre",
@@ -3331,10 +3345,6 @@
     "Tesla",
     "Toyota"
   ],
-  "Central Countries in Europe": [
-    "Austria-Hungary",
-    "Czechoslovakia"
-  ],
   "Charles Darwin": [
     "Beagle"
   ],
@@ -4972,6 +4982,7 @@
   "Dates": [
     "1984",
     "April 14th, 1865",
+    "April 15th, 1912",
     "December 7th, 1941",
     "Ides of March",
     "July 2nd, 626",
@@ -5491,6 +5502,9 @@
   ],
   "Ends with 865": [
     "April 14th, 1865"
+  ],
+  "Ends with 912": [
+    "April 15th, 1912"
   ],
   "Ends with 914": [
     "June 28th, 1914"
@@ -6043,6 +6057,10 @@
   "Ends with AUR": [
     "Centaur",
     "Minotaur"
+  ],
+  "Ends with AUS": [
+    "Ida Straus",
+    "Isidor Straus"
   ],
   "Ends with AUT": [
     "Juggernaut",
@@ -6788,6 +6806,7 @@
   ],
   "Ends with ERG": [
     "Axel Heiberg",
+    "Iceberg",
     "Sophie, Duchess of Hohenberg"
   ],
   "Ends with ERN": [
@@ -6918,6 +6937,9 @@
   ],
   "Ends with EWE": [
     "Ewe"
+  ],
+  "Ends with EWS": [
+    "Thomas Andrews"
   ],
   "Ends with EXO": [
     "EXO"
@@ -7747,6 +7769,7 @@
     "The realm, long divided, must unite"
   ],
   "Ends with ITH": [
+    "Captain Smith",
     "Revenge of the Sith"
   ],
   "Ends with ITI": [
@@ -9052,6 +9075,7 @@
   "Ends with OWN": [
     "Chinatown",
     "Jackie Brown",
+    "The Unsinkable Molly Brown",
     "Yorktown"
   ],
   "Ends with OWS": [
@@ -9808,6 +9832,7 @@
   ],
   "Ends with TIC": [
     "Gigantic",
+    "North Atlantic",
     "Plastic"
   ],
   "Ends with TIN": [
@@ -9859,6 +9884,7 @@
     "Devastator",
     "Flight of the Navigator",
     "Gladiator",
+    "John Jacob Astor",
     "Radiator",
     "Raptor",
     "The Terminator",
@@ -10957,6 +10983,7 @@
     "Elsa",
     "Heather",
     "Helen",
+    "Ida Straus",
     "Iris",
     "Ivy",
     "Jane Seymour",
@@ -10974,6 +11001,7 @@
     "Santa Maria",
     "Siren",
     "Teresa",
+    "The Unsinkable Molly Brown",
     "Victoria",
     "Violet"
   ],
@@ -12071,6 +12099,7 @@
     "Beethoven",
     "Brutus",
     "Caesar",
+    "Captain Smith",
     "Cassius",
     "Catherine Howard",
     "Catherine Parr",
@@ -12099,9 +12128,12 @@
     "Henry VIII",
     "Homer",
     "Hulagu Khan",
+    "Ida Straus",
+    "Isidor Straus",
     "Jane Seymour",
     "Jebe",
     "Joan of Arc",
+    "John Jacob Astor",
     "John Wilkes Booth",
     "Kublai Khan",
     "Lady Jane Grey",
@@ -12130,6 +12162,8 @@
     "Temüjin",
     "Teresa",
     "Terry Fox",
+    "The Unsinkable Molly Brown",
+    "Thomas Andrews",
     "Thomas Edison",
     "Tolui",
     "Vasco da Gama",
@@ -13250,6 +13284,7 @@
     "Bravo",
     "Buddy Holly",
     "Campanella",
+    "Captain Smith",
     "Castro",
     "Chad",
     "Chou En-Lai",
@@ -13268,10 +13303,12 @@
     "Henry VIII",
     "Hermes",
     "Homer",
+    "Isidor Straus",
     "James",
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
+    "John Jacob Astor",
     "Johnnie Ray",
     "Jordan",
     "Joseph Stalin",
@@ -13302,6 +13339,7 @@
     "Sugar Ray",
     "Sulu",
     "Syngman Rhee",
+    "Thomas Andrews",
     "Toscanini",
     "Victor"
   ],
@@ -13746,6 +13784,7 @@
   ],
   "Military Leaders": [
     "Batu Khan",
+    "Captain Smith",
     "Eisenhower",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
@@ -19077,6 +19116,12 @@
     "Wilson",
     "Ögedei Khan"
   ],
+  "Nautical Terms": [
+    "Albatross",
+    "Cog",
+    "Iceberg",
+    "Port"
+  ],
   "New Seven Wonders": [
     "Chichen Itza",
     "Christ the Redeemer",
@@ -19173,6 +19218,9 @@
     "Rex",
     "Titanic",
     "United States"
+  ],
+  "Oceans": [
+    "North Atlantic"
   ],
   "Organizations": [
     "NASA",
@@ -19308,6 +19356,7 @@
     "Buttercup",
     "Caesar",
     "Campanella",
+    "Captain Smith",
     "Carter",
     "Cassius",
     "Castro",
@@ -19380,7 +19429,9 @@
     "Hubble",
     "Hulagu Khan",
     "Ichiro",
+    "Ida Straus",
     "Iris",
+    "Isidor Straus",
     "Ivy",
     "Jackson",
     "James",
@@ -19392,6 +19443,7 @@
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
+    "John Jacob Astor",
     "John Wilkes Booth",
     "Johnnie Ray",
     "Johnson",
@@ -19495,6 +19547,8 @@
     "Teresa",
     "Terry Fox",
     "Tesla",
+    "The Unsinkable Molly Brown",
+    "Thomas Andrews",
     "Thomas Edison",
     "Tolui",
     "Toscanini",
@@ -19975,6 +20029,7 @@
     "Nicobar",
     "Niger",
     "Nigeria",
+    "North Atlantic",
     "North Korea",
     "North Macedonia",
     "North Vietnam",
@@ -20379,6 +20434,7 @@
     "Buchanan",
     "Bush",
     "Caesar",
+    "Captain Smith",
     "Carter",
     "Cassius",
     "Catherine",
@@ -20436,12 +20492,15 @@
     "Hoover",
     "Hubble",
     "Hulagu Khan",
+    "Ida Straus",
+    "Isidor Straus",
     "Jackson",
     "Jane Seymour",
     "Jebe",
     "Jefferson",
     "Joan of Arc",
     "John",
+    "John Jacob Astor",
     "John Wilkes Booth",
     "Johnson",
     "Jordan",
@@ -20506,6 +20565,8 @@
     "Teresa",
     "Terry Fox",
     "Tesla",
+    "The Unsinkable Molly Brown",
+    "Thomas Andrews",
     "Thomas Edison",
     "Tolui",
     "Truman",
@@ -21011,6 +21072,7 @@
     "Ögedei Khan"
   ],
   "Sailors": [
+    "Captain Smith",
     "Christopher Columbus",
     "Drake",
     "Ferdinand Magellan",
@@ -21355,7 +21417,6 @@
   ],
   "Ships": [
     "Akagi",
-    "Albatross",
     "Andrea Doria",
     "Anthem of the Seas",
     "Ark Royal",
@@ -21368,7 +21429,6 @@
     "Bush",
     "Buttercup",
     "Carl Vinson",
-    "Cog",
     "Concepcion",
     "Concordia",
     "Conte di Savoia",
@@ -22008,7 +22068,8 @@
     "Apple Pie"
   ],
   "Starts with APR": [
-    "April 14th, 1865"
+    "April 14th, 1865",
+    "April 15th, 1912"
   ],
   "Starts with AQU": [
     "Aquarius"
@@ -22522,7 +22583,8 @@
     "Caprese",
     "Capri",
     "Capricorn",
-    "Captain America"
+    "Captain America",
+    "Captain Smith"
   ],
   "Starts with CAR": [
     "Carbon",
@@ -23850,12 +23912,16 @@
     "Ice Hockey",
     "Ice Pack",
     "Ice Wine",
+    "Iceberg",
     "Iced Tea",
     "Iceland",
     "Iceman"
   ],
   "Starts with ICH": [
     "Ichiro"
+  ],
+  "Starts with IDA": [
+    "Ida Straus"
   ],
   "Starts with IDE": [
     "Ides of March"
@@ -23931,6 +23997,9 @@
   ],
   "Starts with ISC": [
     "Ischia"
+  ],
+  "Starts with ISI": [
+    "Isidor Straus"
   ],
   "Starts with ISL": [
     "Isle of Man",
@@ -24048,6 +24117,7 @@
   ],
   "Starts with JOH": [
     "John",
+    "John Jacob Astor",
     "John Wilkes Booth",
     "Johnnie Ray",
     "Johnson"
@@ -24864,6 +24934,7 @@
   ],
   "Starts with NOR": [
     "Normandie",
+    "North Atlantic",
     "North Korea",
     "North Macedonia",
     "North Vietnam",
@@ -26357,6 +26428,7 @@
     "The Time Traveler's Wife",
     "The Titanic Disaster",
     "The Trojan War",
+    "The Unsinkable Molly Brown",
     "The Usual Suspects",
     "The Very Hungry Caterpillar",
     "The Vietnam War",
@@ -26380,6 +26452,7 @@
     "Theta"
   ],
   "Starts with THO": [
+    "Thomas Andrews",
     "Thomas Edison",
     "Thor"
   ],
@@ -27208,6 +27281,17 @@
     "Mariner",
     "Ocean"
   ],
+  "The Sinking of RMS Titanic": [
+    "Captain Smith",
+    "Iceberg",
+    "Ida Straus",
+    "Isidor Straus",
+    "John Jacob Astor",
+    "North Atlantic",
+    "The Unsinkable Molly Brown",
+    "Thomas Andrews",
+    "Titanic"
+  ],
   "Theater Quotes": [
     "All the world's a stage",
     "Et tu, Brute?",
@@ -27347,6 +27431,7 @@
     "California Baseball",
     "Call me Ishmael",
     "Campanella",
+    "Captain America",
     "Carl Vinson",
     "Cars",
     "Carson City",
@@ -27526,6 +27611,7 @@
     "IT",
     "Ice Age",
     "Iced Tea",
+    "Ida Straus",
     "In the Heights",
     "Indianapolis",
     "Inglourious Basterds",
@@ -27535,6 +27621,7 @@
     "Into the Woods",
     "Iranian Revolution",
     "Iris",
+    "Isidor Straus",
     "It's a Wonderful Life",
     "Ivy",
     "Jackie Brown",
@@ -27549,6 +27636,7 @@
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
+    "John Jacob Astor",
     "John Wilkes Booth",
     "Johnnie Ray",
     "Johnson",
@@ -27896,6 +27984,7 @@
     "The Thing",
     "The Time Traveler's Almanac",
     "The Time Traveler's Wife",
+    "The Unsinkable Molly Brown",
     "The Usual Suspects",
     "The Very Hungry Caterpillar",
     "The Village",
@@ -28086,6 +28175,7 @@
     "Britannic",
     "Bubble and Squeak",
     "Buckingham Palace",
+    "Captain Smith",
     "Catherine Howard",
     "Catherine Parr",
     "Challenger",
@@ -28244,6 +28334,7 @@
     "The Wicker Man",
     "The Wind in the Willows",
     "The play's the thing",
+    "Thomas Andrews",
     "Time Bandits",
     "Titanic",
     "To Say Nothing of the Dog",
@@ -30018,9 +30109,6 @@
     "Texas",
     "Virginia",
     "Washington"
-  ],
-  "USA": [
-    "Captain America"
   ],
   "United States Lines": [
     "United States"
