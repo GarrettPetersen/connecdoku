@@ -13,6 +13,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, "data");
 const WORDS_F = path.join(DATA_DIR, "words.json");
 const CATS_F = path.join(DATA_DIR, "categories.json");
+const META_CATS_F = path.join(DATA_DIR, "meta_categories.json");
 const DB_PATH = path.join(__dirname, "puzzles.db");
 
 // ───────── helpers ──────────────────────────────────────────────────────────
@@ -49,7 +50,7 @@ const intersectSet = (a, b) => {
     return r;
 };
 
-function validatePuzzle(puzzle, categoriesJson) {
+function validatePuzzle(puzzle, categoriesJson, categoryToMeta) {
     const { row0, row1, row2, row3, col0, col1, col2, col3 } = puzzle;
     const rows = [row0, row1, row2, row3];
     const cols = [col0, col1, col2, col3];
@@ -58,6 +59,19 @@ function validatePuzzle(puzzle, categoriesJson) {
     for (const category of [...rows, ...cols]) {
         if (!categoriesJson[category]) {
             return { valid: false, reason: `Category "${category}" not found in current word list` };
+        }
+    }
+    
+    // Check meta-category constraint (max 2 per meta-category, excluding "No Meta Category")
+    const metaCounts = new Map();
+    for (const category of [...rows, ...cols]) {
+        const metaCat = categoryToMeta.get(category);
+        if (metaCat) {  // Skip categories not in any meta-category or in "No Meta Category"
+            const count = metaCounts.get(metaCat) || 0;
+            if (count >= 2) {
+                return { valid: false, reason: `Meta-category constraint violated: "${metaCat}" appears ${count + 1} times (max 2 allowed)` };
+            }
+            metaCounts.set(metaCat, count + 1);
         }
     }
     
@@ -163,12 +177,26 @@ async function main() {
     console.log("🔍 Puzzle Validator - Checking database against current word list");
     console.log("=" * 60);
     
-    // Load current word list and categories
-    begin("Loading word list and categories");
+    // Load current word list, categories, and meta-categories
+    begin("Loading word list, categories, and meta-categories");
     const wordsJson = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
     const categoriesJson = JSON.parse(fs.readFileSync(CATS_F, "utf8"));
+    const metaCatsJson = JSON.parse(fs.readFileSync(META_CATS_F, "utf8"));
+    
+    // Build category to meta-category mapping
+    const categoryToMeta = new Map();
+    for (const [metaCat, categories] of Object.entries(metaCatsJson)) {
+        if (metaCat !== "No Meta Category") {  // Skip "No Meta Category" for constraint checking
+            for (const category of categories) {
+                categoryToMeta.set(category, metaCat);
+            }
+        }
+    }
+    
     console.log(`Loaded ${Object.keys(categoriesJson).length} categories`);
     console.log(`Loaded ${Object.keys(wordsJson).length} words`);
+    console.log(`Loaded ${Object.keys(metaCatsJson).length} meta-categories`);
+    console.log(`Built mapping for ${categoryToMeta.size} categorized categories`);
     end();
     
     // Initialize category tally
@@ -224,7 +252,7 @@ async function main() {
         const batchInvalidHashes = [];
         
         for (const puzzle of puzzles) {
-            const validation = validatePuzzle(puzzle, categoriesJson);
+            const validation = validatePuzzle(puzzle, categoriesJson, categoryToMeta);
             
             if (validation.valid) {
                 validPuzzles.push(puzzle.puzzle_hash);

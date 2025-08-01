@@ -27,6 +27,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR  = path.join(__dirname, "data");
 const WORDS_F   = path.join(DATA_DIR, "words.json");
 const CATS_F    = path.join(DATA_DIR, "categories.json");
+const META_CATS_F = path.join(DATA_DIR, "meta_categories.json");
 const DB_PATH   = path.join(__dirname, "puzzles.db");
 
 // ───────── helpers ──────────────────────────────────────────────
@@ -113,9 +114,34 @@ if (isMainThread) {
   // ── load data ──
   const wordsJson      = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
   const categoriesJson = JSON.parse(fs.readFileSync(CATS_F,  "utf8"));
+  const metaCatsJson   = JSON.parse(fs.readFileSync(META_CATS_F, "utf8"));
   const ALL_WORDS      = Object.keys(wordsJson);
   const WORD_IDX       = new Map(ALL_WORDS.map((w, i) => [w, i]));
   const MASK_LEN       = Math.ceil(ALL_WORDS.length / 32);
+
+  // Build category to meta-category mapping
+  const categoryToMeta = new Map();
+  for (const [metaCat, categories] of Object.entries(metaCatsJson)) {
+    if (metaCat !== "No Meta Category") {  // Skip "No Meta Category" for constraint checking
+      for (const category of categories) {
+        categoryToMeta.set(category, metaCat);
+      }
+    }
+  }
+
+  // Check if a set of categories violates the meta-category constraint (max 2 per meta-category)
+  function checkMetaCategoryConstraint(categories) {
+    const metaCounts = new Map();
+    for (const category of categories) {
+      const metaCat = categoryToMeta.get(category);
+      if (metaCat) {
+        const count = metaCounts.get(metaCat) || 0;
+        if (count >= 2) return false;  // Already have 2 from this meta-category
+        metaCounts.set(metaCat, count + 1);
+      }
+    }
+    return true;
+  }
 
   function makeMask(arr) {
     const m = new Uint32Array(MASK_LEN);
@@ -193,6 +219,10 @@ if (isMainThread) {
 
           const rows = [i, j, k, l];
           if (!excl(rows)) continue;
+          
+          // Check meta-category constraint for rows
+          const rowCategories = rows.map(idx => cats[idx]);
+          if (!checkMetaCategoryConstraint(rowCategories)) continue;
 
           // column candidates
           let cand = new Set(N1[i]);
@@ -217,6 +247,10 @@ if (isMainThread) {
                   const w = cArr[d];
                   if (!(B[x][w] && B[y][w] && B[z][w])) continue;
                   const cols = [x, y, z, w];
+
+                  // Check meta-category constraint for complete puzzle (rows + columns)
+                  const allCategories = [...rowCategories, ...cols.map(idx => cats[idx])];
+                  if (!checkMetaCategoryConstraint(allCategories)) continue;
 
                   // full uniqueness check
                   let ok = true;
