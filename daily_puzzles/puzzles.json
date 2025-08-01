@@ -2278,5 +2278,45 @@
         "The realm, long divided, must unite"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1950s",
+      "2010s",
+      "Ends with ION",
+      "Oscar Winners"
+    ],
+    "cols": [
+      "Comedy Stories",
+      "Prequels",
+      "Ships",
+      "Thriller Films"
+    ],
+    "words": [
+      [
+        "Singin' in the Rain",
+        "The Chronicles of Narnia: The Magician's Nephew",
+        "Andrea Doria",
+        "Rear Window"
+      ],
+      [
+        "The Grand Budapest Hotel",
+        "Rogue One",
+        "Boaty McBoatface",
+        "Arrival"
+      ],
+      [
+        "National Lampoon's Christmas Vacation",
+        "The Silmarillion",
+        "Resolution",
+        "The French Connection"
+      ],
+      [
+        "Everything Everywhere All at Once",
+        "The Godfather Part II",
+        "Titanic",
+        "No Country for Old Men"
+      ]
+    ]
   }
 ]
