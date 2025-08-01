@@ -10095,11 +10095,14 @@
     "Cities in North America",
     "Cities in USA",
     "Ends with ENA",
+    "Fictional People",
     "Locations in North America",
+    "People",
     "Place Names",
     "Starts with HEL",
     "State Capitals",
-    "Things American"
+    "Things American",
+    "Women"
   ],
   "Helios": [
     "Astronomical Objects",
@@ -27006,6 +27009,9 @@
     "Movies featuring Christopher Plummer",
     "Movies featuring Rod Steiger",
     "Place Names",
+    "Pop Songs",
+    "Songs",
+    "Songs by ABBA",
     "Starts with WAT",
     "Things Belgian",
     "War Stories"
@@ -27027,7 +27033,10 @@
     "Ends with IRE",
     "Mentioned in We Didn't Start the Fire",
     "Music",
+    "Rock Songs",
     "Song Lyrics",
+    "Songs",
+    "Songs by Billy Joel",
     "Starts with WE ",
     "Things American"
   ],
@@ -27923,5 +27932,329 @@
     "Rulers",
     "Starts with ÖGE",
     "Things Mongolian"
+  ],
+  "Bohemian Rhapsody": [
+    "1970s",
+    "20th Century",
+    "Ends with ODY",
+    "Rock Songs",
+    "Songs",
+    "Songs by Queen",
+    "Starts with BOH"
+  ],
+  "Hotel California": [
+    "1970s",
+    "20th Century",
+    "Ends with NIA",
+    "Rock Songs",
+    "Songs",
+    "Songs by Eagles",
+    "Starts with HOT"
+  ],
+  "Imagine": [
+    "1970s",
+    "20th Century",
+    "Ends with INE",
+    "Rock Songs",
+    "Songs",
+    "Songs by John Lennon",
+    "Starts with IMA"
+  ],
+  "Yesterday": [
+    "1960s",
+    "20th Century",
+    "Ends with DAY",
+    "Rock Songs",
+    "Songs",
+    "Songs by The Beatles",
+    "Starts with YES"
+  ],
+  "Stairway to Heaven": [
+    "1970s",
+    "20th Century",
+    "Ends with VEN",
+    "Rock Songs",
+    "Songs",
+    "Songs by Led Zeppelin",
+    "Starts with STA"
+  ],
+  "Sweet Child O' Mine": [
+    "1980s",
+    "20th Century",
+    "Ends with INE",
+    "Rock Songs",
+    "Songs",
+    "Songs by Guns N' Roses",
+    "Starts with SWE"
+  ],
+  "Billie Jean": [
+    "1980s",
+    "20th Century",
+    "Ends with EAN",
+    "Fictional People",
+    "People",
+    "Pop Songs",
+    "Songs",
+    "Songs by Michael Jackson",
+    "Starts with BIL",
+    "Women"
+  ],
+  "Wonderwall": [
+    "1990s",
+    "20th Century",
+    "Ends with ALL",
+    "Rock Songs",
+    "Songs",
+    "Songs by Oasis",
+    "Starts with WON"
+  ],
+  "Creep": [
+    "1990s",
+    "20th Century",
+    "Ends with EEP",
+    "Rock Songs",
+    "Songs",
+    "Songs by Radiohead",
+    "Starts with CRE"
+  ],
+  "Smells Like Teen Spirit": [
+    "1990s",
+    "20th Century",
+    "Ends with RIT",
+    "Rock Songs",
+    "Songs",
+    "Songs by Nirvana",
+    "Starts with SME"
+  ],
+  "Like a Rolling Stone": [
+    "1960s",
+    "20th Century",
+    "Ends with ONE",
+    "Rock Songs",
+    "Songs",
+    "Songs by Bob Dylan",
+    "Starts with LIK"
+  ],
+  "Respect": [
+    "1960s",
+    "20th Century",
+    "Ends with ECT",
+    "Songs",
+    "Songs by Aretha Franklin",
+    "Soul Songs",
+    "Starts with RES"
+  ],
+  "Good Vibrations": [
+    "1960s",
+    "20th Century",
+    "Ends with ONS",
+    "Pop Songs",
+    "Songs",
+    "Songs by The Beach Boys",
+    "Starts with GOO"
+  ],
+  "Purple Haze": [
+    "1960s",
+    "20th Century",
+    "Ends with AZE",
+    "Rock Songs",
+    "Songs",
+    "Songs by Jimi Hendrix",
+    "Starts with PUR"
+  ],
+  "Hey Jude": [
+    "1960s",
+    "20th Century",
+    "Ends with UDE",
+    "Fictional People",
+    "Men",
+    "People",
+    "Rock Songs",
+    "Songs",
+    "Songs by The Beatles",
+    "Starts with HEY"
+  ],
+  "Johnny B. Goode": [
+    "1950s",
+    "20th Century",
+    "Ends with ODE",
+    "Fictional People",
+    "Men",
+    "People",
+    "Rock Songs",
+    "Songs",
+    "Songs by Chuck Berry",
+    "Starts with JOH"
+  ],
+  "Hound Dog": [
+    "1950s",
+    "20th Century",
+    "Ends with DOG",
+    "Rock Songs",
+    "Songs",
+    "Songs by Elvis Presley",
+    "Starts with HOU"
+  ],
+  "My Generation": [
+    "1960s",
+    "20th Century",
+    "Ends with ION",
+    "Rock Songs",
+    "Songs",
+    "Songs by The Who",
+    "Starts with MY "
+  ],
+  "Light My Fire": [
+    "1960s",
+    "20th Century",
+    "Ends with IRE",
+    "Rock Songs",
+    "Songs",
+    "Songs by The Doors",
+    "Starts with LIG"
+  ],
+  "Bridge Over Troubled Water": [
+    "1970s",
+    "20th Century",
+    "Ends with TER",
+    "Folk Songs",
+    "Songs",
+    "Songs by Simon & Garfunkel",
+    "Starts with BRI"
+  ],
+  "Superstition": [
+    "1970s",
+    "20th Century",
+    "Ends with ION",
+    "Songs",
+    "Songs by Stevie Wonder",
+    "Soul Songs",
+    "Starts with SUP"
+  ],
+  "Dancing Queen": [
+    "1970s",
+    "20th Century",
+    "Disco Songs",
+    "Ends with EEN",
+    "Songs",
+    "Songs by ABBA",
+    "Starts with DAN"
+  ],
+  "Stayin' Alive": [
+    "1970s",
+    "20th Century",
+    "Disco Songs",
+    "Ends with IVE",
+    "Songs",
+    "Songs by Bee Gees",
+    "Starts with STA"
+  ],
+  "Another Brick in the Wall": [
+    "1970s",
+    "20th Century",
+    "Ends with ALL",
+    "Rock Songs",
+    "Songs",
+    "Songs by Pink Floyd",
+    "Starts with ANO"
+  ],
+  "Comfortably Numb": [
+    "1970s",
+    "20th Century",
+    "Ends with UMB",
+    "Rock Songs",
+    "Songs",
+    "Songs by Pink Floyd",
+    "Starts with COM"
+  ],
+  "Every Breath You Take": [
+    "1980s",
+    "20th Century",
+    "Ends with AKE",
+    "Rock Songs",
+    "Songs",
+    "Songs by The Police",
+    "Starts with EVE"
+  ],
+  "With or Without You": [
+    "1980s",
+    "20th Century",
+    "Ends with YOU",
+    "Rock Songs",
+    "Songs",
+    "Songs by U2",
+    "Starts with WIT"
+  ],
+  "Like a Prayer": [
+    "1980s",
+    "20th Century",
+    "Ends with YER",
+    "Pop Songs",
+    "Songs",
+    "Songs by Madonna",
+    "Starts with LIK"
+  ],
+  "Nothing Compares 2 U": [
+    "1990s",
+    "20th Century",
+    "Ends with 2 U",
+    "Pop Songs",
+    "Songs",
+    "Songs by Sinead O'Connor",
+    "Starts with NOT"
+  ],
+  "Zombie": [
+    "1990s",
+    "20th Century",
+    "Ends with BIE",
+    "Rock Songs",
+    "Songs",
+    "Songs by The Cranberries",
+    "Starts with ZOM"
+  ],
+  "Basket Case": [
+    "1990s",
+    "20th Century",
+    "Ends with ASE",
+    "Rock Songs",
+    "Songs",
+    "Songs by Green Day",
+    "Starts with BAS"
+  ],
+  "Black": [
+    "1990s",
+    "20th Century",
+    "Ends with ACK",
+    "Rock Songs",
+    "Songs",
+    "Songs by Pearl Jam",
+    "Starts with BLA"
+  ],
+  "Losing My Religion": [
+    "1990s",
+    "20th Century",
+    "Ends with ION",
+    "Rock Songs",
+    "Songs",
+    "Songs by R.E.M.",
+    "Starts with LOS"
+  ],
+  "Under the Bridge": [
+    "1990s",
+    "20th Century",
+    "Ends with DGE",
+    "Rock Songs",
+    "Songs",
+    "Songs by Red Hot Chili Peppers",
+    "Starts with UND"
+  ],
+  "Say It Ain't So": [
+    "1990s",
+    "20th Century",
+    "Ends with  SO",
+    "Rock Songs",
+    "Songs",
+    "Songs by Weezer",
+    "Starts with SAY"
   ]
 }

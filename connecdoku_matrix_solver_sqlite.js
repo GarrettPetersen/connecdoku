@@ -66,7 +66,36 @@ if (isMainThread) {
     const flat = rows.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
     db.run(`INSERT OR IGNORE INTO puzzles
             (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash)
-            VALUES ${ph}`, flat, cb);
+            VALUES ${ph}`, flat, (err) => {
+      if (err) {
+        console.error("Insert error:", err);
+        return cb && cb();
+      }
+      // Count how many were actually inserted (not duplicates)
+      db.get("SELECT changes() as count", (err, row) => {
+        if (!err && row) {
+          // Distribute the insertion count among workers who contributed to this batch
+          const insertedCount = row.count;
+          if (insertedCount > 0) {
+            // Simple distribution - could be improved with more detailed tracking
+            const workersInBatch = new Set(rows.map(r => r.workerId).filter(id => id !== undefined));
+            if (workersInBatch.size > 0) {
+              const perWorker = Math.floor(insertedCount / workersInBatch.size);
+              const remainder = insertedCount % workersInBatch.size;
+              let distributed = 0;
+              for (const workerId of workersInBatch) {
+                const toAdd = perWorker + (distributed < remainder ? 1 : 0);
+                if (status[workerId]) {
+                  status[workerId].puzzlesInserted += toAdd;
+                }
+                distributed++;
+              }
+            }
+          }
+        }
+        cb && cb();
+      });
+    });
   };
 
   const BATCH_SZ = 1000;
@@ -74,7 +103,7 @@ if (isMainThread) {
 
   // ── work queue management ──
   const workQueue = [];
-  const CHUNK_SIZE = 10; // Process 10 indices at a time
+  const CHUNK_SIZE = 2; // Much smaller chunks for better balance
   
   // Initialize work queue with all indices
   const categoriesJson = JSON.parse(fs.readFileSync(CATS_F, "utf8"));
@@ -93,19 +122,37 @@ if (isMainThread) {
 
   // ── progress bookkeeping ──
   const status = Array.from({ length: nWorkers }, () => ({ 
-    i: 0, total: 1, done: false, currentChunk: null, chunksCompleted: 0 
+    i: 0, total: 1, done: false, currentChunk: null, chunksCompleted: 0,
+    puzzlesFound: 0, puzzlesInserted: 0
   }));
   const t0 = performance.now();
+  let redrawTimeout = null;
   function redraw() {
-    const elapsed = (performance.now() - t0) / 1000;
-    let out = "";
-    status.forEach((st, idx) => {
-      const pct = Math.min(st.i / st.total, 1);
-      const chunkInfo = st.currentChunk ? ` (chunk ${st.currentChunk.id})` : "";
-      out += `\nW${idx} [${bar(pct)}] ${(pct*100).toFixed(1).padStart(6)}%${st.done?" ✓":""}${chunkInfo}`;
-    });
-    out += `\nQueue: ${workQueue.length} chunks remaining   Batch: ${batch.length}/${BATCH_SZ}   elapsed: ${fmt(elapsed)}`;
-    process.stdout.write("\x1b[H\x1b[J" + out);  // clear + write
+    // Debounce rapid redraws
+    if (redrawTimeout) {
+      clearTimeout(redrawTimeout);
+    }
+    redrawTimeout = setTimeout(() => {
+      const elapsed = (performance.now() - t0) / 1000;
+      let out = "";
+      
+      // Overall progress bar
+      const totalChunks = workQueue.length + status.reduce((sum, st) => sum + st.chunksCompleted, 0);
+      const completedChunks = status.reduce((sum, st) => sum + st.chunksCompleted, 0);
+      const overallProgress = totalChunks > 0 ? completedChunks / totalChunks : 0;
+      out += `\nOverall: [${bar(overallProgress)}] ${(overallProgress*100).toFixed(1)}% (${completedChunks}/${totalChunks} chunks)`;
+      
+      status.forEach((st, idx) => {
+        const pct = Math.min(st.i / st.total, 1);
+        const chunkInfo = st.currentChunk ? ` (chunk ${st.currentChunk.id})` : "";
+        const stats = st.done ? 
+          ` [${st.puzzlesFound} found, ${st.puzzlesInserted} inserted]` : 
+          ` [${st.puzzlesFound} found]`;
+        out += `\nW${idx} [${bar(pct)}] ${(pct*100).toFixed(1).padStart(6)}%${st.done?" ✓":""}${chunkInfo}${stats}`;
+      });
+      out += `\nQueue: ${workQueue.length} chunks remaining   Batch: ${batch.length}/${BATCH_SZ}   elapsed: ${fmt(elapsed)}`;
+      process.stdout.write("\x1b[H\x1b[J" + out);  // clear + write
+    }, 50); // 50ms debounce
   }
   process.stdout.write("\x1b[2J\x1b[H");        // clear screen once
 
@@ -122,6 +169,7 @@ if (isMainThread) {
     w.on("message", msg => {
       if (msg.type === "puzzle") {
         batch.push(msg);
+        status[msg.id].puzzlesFound++;
         if (batch.length >= BATCH_SZ) insert(batch.splice(0, BATCH_SZ), redraw);
       } else if (msg.type === "tick") {
         status[msg.id] = { ...status[msg.id], i: msg.i, total: msg.total };
@@ -139,7 +187,18 @@ if (isMainThread) {
           active--;
           redraw();
           if (active === 0) {
-            insert(batch, () => db.close(() => console.log("\nAll done.")));
+            insert(batch, () => {
+              // Update final insertion counts
+              const finalBatch = batch.length;
+              if (finalBatch > 0) {
+                console.log(`\nFinal batch: ${finalBatch} puzzles`);
+              }
+              db.close(() => {
+                const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
+                const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
+                console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
+              });
+            });
           }
         }
       } else if (msg.type === "done") {
@@ -324,7 +383,8 @@ if (isMainThread) {
                       type: "puzzle",
                       hash: sha256(rows.map(v => cats[v]).join("|") + cols.map(v => cats[v]).join("|")),
                       rows: rows.map(v => cats[v]),
-                      cols: cols.map(v => cats[v])
+                      cols: cols.map(v => cats[v]),
+                      workerId: WID
                     });
                   }
                 }
