@@ -150,6 +150,82 @@ function getMultipleRandomPuzzles(db, count, targetCategory = null) {
     });
 }
 
+function getCategoriesFromLast7Days() {
+    const sevenDaysAgo = new Date();
+    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+    
+    const recentCategories = new Set();
+    
+    // Get the last 7 days of puzzles from the daily puzzles file
+    for (const puzzle of db) {
+        // Since we don't have timestamps in the daily puzzles file, 
+        // we'll use the last 7 puzzles as a proxy for "recent"
+        // This is a reasonable approximation for daily puzzles
+    }
+    
+    // For now, let's use the last 7 puzzles as "recent"
+    const recentPuzzles = db.slice(-7);
+    for (const puzzle of recentPuzzles) {
+        for (const category of [...puzzle.rows, ...puzzle.cols]) {
+            recentCategories.add(category);
+        }
+    }
+    
+    return Array.from(recentCategories);
+}
+
+function findPuzzleWithNoRecentCategories(db, recentCategories) {
+    return new Promise((resolve, reject) => {
+        if (recentCategories.length === 0) {
+            // If no recent categories, just get a random puzzle
+            return getRandomPuzzle(db);
+        }
+        
+        // Use CTE to create a temporary table of recent categories
+        // Properly escape category names for SQL
+        const recentCategoriesValues = recentCategories.map(cat => {
+            const escaped = cat.toLowerCase().replace(/'/g, "''"); // Escape single quotes
+            return `('${escaped}')`;
+        }).join(',');
+        
+        const query = `
+            WITH recent_categories(category) AS (
+                VALUES ${recentCategoriesValues}
+            )
+            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp
+            FROM puzzles
+            WHERE NOT EXISTS (
+                SELECT 1 FROM recent_categories 
+                WHERE LOWER(puzzles.row0) = recent_categories.category
+                   OR LOWER(puzzles.row1) = recent_categories.category
+                   OR LOWER(puzzles.row2) = recent_categories.category
+                   OR LOWER(puzzles.row3) = recent_categories.category
+                   OR LOWER(puzzles.col0) = recent_categories.category
+                   OR LOWER(puzzles.col1) = recent_categories.category
+                   OR LOWER(puzzles.col2) = recent_categories.category
+                   OR LOWER(puzzles.col3) = recent_categories.category
+            )
+            ORDER BY RANDOM()
+            LIMIT 1
+        `;
+        
+        db.get(query, (err, row) => {
+            if (err) {
+                reject(err);
+            } else if (row) {
+                resolve({
+                    rows: [row.row0, row.row1, row.row2, row.row3],
+                    cols: [row.col0, row.col1, row.col2, row.col3],
+                    hash: row.puzzle_hash,
+                    timestamp: row.timestamp
+                });
+            } else {
+                resolve(null);
+            }
+        });
+    });
+}
+
 function deletePuzzleFromDatabase(db, puzzleHash) {
     return new Promise((resolve, reject) => {
         db.run("DELETE FROM puzzles WHERE puzzle_hash = ?", [puzzleHash], function (err) {
@@ -575,6 +651,7 @@ async function main() {
                     { name: "🎯 Find a puzzle with low overlap to past categories", value: "low_overlap" },
                     { name: "🎲 Find a truly random puzzle", value: "truly_random" },
                     { name: "🔍 Search for puzzle with specific category", value: "search" },
+                    { name: "🌶️ Secret Sauce: Find puzzle with NO categories from last 7 days", value: "secret_sauce" },
                     { name: "🛑 Stop curating", value: "stop" }
                 ]
             });
@@ -717,6 +794,47 @@ async function main() {
             result = await findTrulyRandomPuzzle();
         } else if (searchChoice === "any") {
             result = await findAnyPuzzleWithCategory(targetCategory, excludedPuzzleHash);
+        } else if (searchChoice === "secret_sauce") {
+            console.log("🌶️ Secret Sauce: Finding puzzle with NO categories from last 7 days...");
+            const recentCategories = getCategoriesFromLast7Days();
+            console.log(`Recent categories to avoid: ${recentCategories.join(", ")}`);
+            
+            const sqliteDb = await openDatabase();
+            try {
+                // Try multiple times with increasing batch sizes if needed
+                let attempts = 0;
+                const maxAttempts = 3;
+                
+                while (attempts < maxAttempts) {
+                    attempts++;
+                    console.log(`Attempt ${attempts}/${maxAttempts} to find secret sauce puzzle...`);
+                    
+                    result = await findPuzzleWithNoRecentCategories(sqliteDb, recentCategories);
+                    if (result) {
+                        // Calculate overlap for display (should be 0 for secret sauce)
+                        const allCategories = [...result.rows, ...result.cols];
+                        let overlap = 0;
+                        for (const category of allCategories) {
+                            if (categoryUsage[category]) {
+                                overlap += categoryUsage[category];
+                            }
+                        }
+                        result = { puzzle: result, overlap: overlap };
+                        console.log(`✅ Found secret sauce puzzle on attempt ${attempts}`);
+                        break;
+                    }
+                    
+                    if (attempts < maxAttempts) {
+                        console.log(`No valid puzzle found, trying again...`);
+                    }
+                }
+                
+                if (!result) {
+                    console.log("❌ Could not find a puzzle with no recent categories after multiple attempts");
+                }
+            } finally {
+                sqliteDb.close();
+            }
         } else {
             result = await findBestPuzzle(targetCategory);
         }

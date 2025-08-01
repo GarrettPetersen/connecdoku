@@ -2198,5 +2198,45 @@
         "Dante"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1980s",
+      "2000s",
+      "Sci-fi Stories",
+      "Things British"
+    ],
+    "cols": [
+      "Ends with ENT",
+      "Ends with IME",
+      "Horror Stories",
+      "Sequels"
+    ],
+    "words": [
+      [
+        "Terms of Endearment",
+        "Somewhere in Time",
+        "The Shining",
+        "Ghostbusters II"
+      ],
+      [
+        "Rent",
+        "The Map of Time",
+        "The Village",
+        "The Lord of the Rings: The Two Towers"
+      ],
+      [
+        "The Fifth Element",
+        "A Wrinkle in Time",
+        "Alien",
+        "Terminator 2: Judgment Day"
+      ],
+      [
+        "The English Patient",
+        "About Time",
+        "The Wicker Man",
+        "The Lord of the Rings"
+      ]
+    ]
   }
 ]
