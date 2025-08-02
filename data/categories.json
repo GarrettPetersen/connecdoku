@@ -162,7 +162,8 @@
   ],
   "1830s": [
     "Jackson",
-    "Van Buren"
+    "Van Buren",
+    "Victoria"
   ],
   "1840s": [
     "Harrison",
@@ -255,6 +256,7 @@
   "1900s": [
     "Anne of Green Gables",
     "McKinley",
+    "Rasputin",
     "Roosevelt",
     "Taft",
     "The Call of the Wild",
@@ -263,6 +265,7 @@
   ],
   "1910s": [
     "April 15th, 1912",
+    "Archibald Butt",
     "Captain Smith",
     "Ida Straus",
     "Isidor Straus",
@@ -347,6 +350,7 @@
   "1950s": [
     "1955 World Series",
     "Andrea Doria",
+    "Big Iron",
     "Brando",
     "Charlotte's Web",
     "Coronation of Elizabeth II",
@@ -513,6 +517,7 @@
     "Bernie Goetz",
     "Birth Control Pill",
     "Bohemian Rhapsody",
+    "Boston",
     "Bridge Over Troubled Water",
     "Cabaret",
     "Carter",
@@ -650,6 +655,7 @@
     "The Iran-Iraq War",
     "The Last Emperor",
     "The Legend of Zelda",
+    "The Naked Gun",
     "The Philadelphia Experiment",
     "The Shining",
     "The Terminator",
@@ -699,10 +705,12 @@
     "Home Alone 2: Lost in New York",
     "Howard's End",
     "Hubble",
+    "If the glove don't fit you must acquit",
     "Jackie Brown",
     "Jingle All the Way",
     "Jurassic Park",
     "Losing My Religion",
+    "Nicole Brown Simpson",
     "Nothing Compares 2 U",
     "Oh, the Places You'll Go!",
     "Othello",
@@ -757,6 +765,7 @@
     "Titanic: Adventure Out of Time",
     "To Say Nothing of the Dog",
     "Trainspotting",
+    "Uncharted Waters",
     "Under the Bridge",
     "Unforgiven",
     "Volcano",
@@ -1119,6 +1128,7 @@
     "Apollo",
     "Apollo 13",
     "April 15th, 1912",
+    "Archibald Butt",
     "Armageddon",
     "As I Lay Dying",
     "Ashes of Time",
@@ -1137,6 +1147,7 @@
     "Bernie Goetz",
     "Beyonce",
     "Big",
+    "Big Iron",
     "Bill & Ted's Bogus Journey",
     "Bill & Ted's Excellent Adventure",
     "Billie Jean",
@@ -1145,6 +1156,7 @@
     "Blade Runner",
     "Blood, toil, tears and sweat",
     "Bohemian Rhapsody",
+    "Boston",
     "Brando",
     "Brave New World",
     "Braveheart",
@@ -1290,6 +1302,7 @@
     "IT",
     "Ichiro",
     "Ida Straus",
+    "If the glove don't fit you must acquit",
     "If....",
     "Ikiru",
     "Imagine",
@@ -1369,6 +1382,7 @@
     "Nakamura",
     "Nasser",
     "National Lampoon's Christmas Vacation",
+    "Nicole Brown Simpson",
     "Nina",
     "Nixon",
     "North Vietnam",
@@ -1417,6 +1431,7 @@
     "Raise the Red Lantern",
     "Ran",
     "Rashomon",
+    "Rasputin",
     "Reagan",
     "Rear Window",
     "Red",
@@ -1570,6 +1585,7 @@
     "The Moon Landing",
     "The Muppet Christmas Carol",
     "The My Lai Massacre",
+    "The Naked Gun",
     "The Nanjing Massacre",
     "The Nightmare Before Christmas",
     "The Oklahoma City Bombing",
@@ -1627,6 +1643,7 @@
     "Truman",
     "Trump",
     "Unbreakable",
+    "Uncharted Waters",
     "Under the Bridge",
     "Unforgiven",
     "United Arab Republic",
@@ -2254,6 +2271,7 @@
     "The Wizard of Oz",
     "Time Bandits",
     "Titanic: Adventure Out of Time",
+    "Uncharted Waters",
     "Water Margin",
     "X-Men: Days of Future Past",
     "X-Men: First Class"
@@ -2754,6 +2772,7 @@
     "Animal",
     "Beatles",
     "Beetle",
+    "Boston",
     "Byrd",
     "Crow",
     "Monkey",
@@ -3114,6 +3133,9 @@
     "B-29",
     "Lancaster"
   ],
+  "Boney M": [
+    "Rasputin"
+  ],
   "Books": [
     "11/22/63",
     "1984",
@@ -3382,10 +3404,13 @@
     "Bezos",
     "Ford",
     "Gates",
+    "Isidor Straus",
     "Jobs",
+    "John Jacob Astor",
     "Lex Luthor",
     "Musk",
-    "Rockefeller"
+    "Rockefeller",
+    "Thomas Andrews"
   ],
   "Byzantine Architecture": [
     "Hagia Sophia"
@@ -3828,6 +3853,7 @@
     "Topeka",
     "Toronto",
     "Trenton",
+    "Victoria",
     "Washington"
   ],
   "Cities in Oceania": [
@@ -3846,7 +3872,6 @@
     "Baton Rouge",
     "Bismarck",
     "Boise",
-    "Boston",
     "Carson City",
     "Charleston",
     "Cheyenne",
@@ -4187,6 +4212,7 @@
     "The Ladykillers",
     "The Many Adventures of Winnie the Pooh",
     "The Muppet Christmas Carol",
+    "The Naked Gun",
     "The Parent Trap",
     "The Santa Clause",
     "The Santa Clause 2",
@@ -4967,6 +4993,9 @@
     "Russia",
     "United Kingdom",
     "United States"
+  ],
+  "Country Music": [
+    "Big Iron"
   ],
   "Court Stories": [
     "The Tale of Genji"
@@ -7011,7 +7040,8 @@
     "Snickers",
     "The Ladykillers",
     "The Lord of the Rings: The Two Towers",
-    "The Rescuers"
+    "The Rescuers",
+    "Uncharted Waters"
   ],
   "Ends with ERT": [
     "Desert"
@@ -7325,6 +7355,9 @@
   ],
   "Ends with GUM": [
     "Gum"
+  ],
+  "Ends with GUN": [
+    "The Naked Gun"
   ],
   "Ends with H 2": [
     "Queen Elizabeth 2"
@@ -9653,6 +9686,7 @@
   ],
   "Ends with RON": [
     "Akron",
+    "Big Iron",
     "Boron",
     "Dacron",
     "Iron",
@@ -9892,6 +9926,7 @@
     "Jefferson",
     "Johnson",
     "Madison",
+    "Nicole Brown Simpson",
     "Thomas Edison",
     "Wilson"
   ],
@@ -10065,7 +10100,8 @@
     "Plastic"
   ],
   "Ends with TIN": [
-    "Austin"
+    "Austin",
+    "Rasputin"
   ],
   "Ends with TIS": [
     "Atlantis"
@@ -10252,6 +10288,7 @@
     "Penguin"
   ],
   "Ends with UIT": [
+    "If the glove don't fit you must acquit",
     "Inuit"
   ],
   "Ends with UJI": [
@@ -10390,6 +10427,9 @@
     "Grand Theft Auto",
     "Naruto",
     "Pluto"
+  ],
+  "Ends with UTT": [
+    "Archibald Butt"
   ],
   "Ends with UTY": [
     "American Beauty",
@@ -11018,6 +11058,7 @@
     "I think, therefore I am",
     "I'll be back",
     "I'm the king of the world",
+    "If the glove don't fit you must acquit",
     "It was the best of times",
     "Know thyself",
     "L'etat c'est moi",
@@ -12325,6 +12366,7 @@
   "Historical Figures": [
     "Anne Boleyn",
     "Anne of Cleves",
+    "Archibald Butt",
     "Aristotle",
     "Bach",
     "Batu Khan",
@@ -12383,8 +12425,10 @@
     "Möngke Khan",
     "Napoleon Bonaparte",
     "Newton",
+    "Nicole Brown Simpson",
     "Plato",
     "Poe",
+    "Rasputin",
     "Saint Patrick",
     "Shakespeare",
     "Sir John A. Macdonald",
@@ -13642,6 +13686,9 @@
     "The Grandmaster",
     "The Hand"
   ],
+  "Marty Robbins": [
+    "Big Iron"
+  ],
   "Marvel Characters": [
     "Angel",
     "Beast",
@@ -13773,6 +13820,7 @@
     "Adams",
     "Aladdin",
     "Archduke Franz Ferdinand",
+    "Archibald Butt",
     "Aristotle",
     "Arthur",
     "Bach",
@@ -13930,6 +13978,7 @@
     "Prince",
     "Professor X",
     "Prokofiev",
+    "Rasputin",
     "Reagan",
     "Romeo",
     "Roosevelt",
@@ -14467,6 +14516,7 @@
     "Marie Curie",
     "Michel Ney",
     "Napoleon Bonaparte",
+    "Nicole Brown Simpson",
     "Sir John A. Macdonald",
     "Terry Fox",
     "Thomas Edison",
@@ -14953,6 +15003,7 @@
     "The Many Adventures of Winnie the Pooh",
     "The Matrix",
     "The Muppet Christmas Carol",
+    "The Naked Gun",
     "The Nightmare Before Christmas",
     "The Phantom Menace",
     "The Phantom of the Opera",
@@ -15252,6 +15303,9 @@
     "Harry Potter and the Deathly Hallows: Part 2",
     "Harry Potter and the Half-Blood Prince",
     "Harry Potter and the Order of the Phoenix"
+  ],
+  "Movies directed by David Zucker": [
+    "The Naked Gun"
   ],
   "Movies directed by Dean Parisot": [
     "Galaxy Quest",
@@ -17804,6 +17858,9 @@
   "Movies featuring Leslie Grace": [
     "In the Heights"
   ],
+  "Movies featuring Leslie Nielsen": [
+    "The Naked Gun"
+  ],
   "Movies featuring Liam Neeson": [
     "Love Actually",
     "Schindler's List",
@@ -18193,6 +18250,9 @@
   ],
   "Movies featuring Norma Crane": [
     "Fiddler on the Roof"
+  ],
+  "Movies featuring OJ Simpson": [
+    "The Naked Gun"
   ],
   "Movies featuring Oliver Reed": [
     "Oliver!"
@@ -19085,6 +19145,7 @@
     "Bach",
     "Beat",
     "Beethoven",
+    "Big Iron",
     "Bridge",
     "Buddy Holly",
     "Canon",
@@ -19107,6 +19168,7 @@
     "Piano",
     "Punk Rock",
     "Queen",
+    "Rasputin",
     "Rock Around the Clock",
     "Rock and Roll",
     "Song",
@@ -19531,7 +19593,8 @@
     "Schooner",
     "Starboard",
     "Stern",
-    "Tack"
+    "Tack",
+    "Uncharted Waters"
   ],
   "New Seven Wonders": [
     "Chichen Itza",
@@ -19595,8 +19658,11 @@
     "Bronco",
     "Football",
     "Glove",
+    "If the glove don't fit you must acquit",
     "Juice",
-    "Murder"
+    "Murder",
+    "Nicole Brown Simpson",
+    "The Naked Gun"
   ],
   "OPEC Members": [
     "Algeria",
@@ -19749,6 +19815,7 @@
     "Anne of Green Gables",
     "Annie",
     "Archduke Franz Ferdinand",
+    "Archibald Butt",
     "Aristotle",
     "Arrietty",
     "Arthur",
@@ -19921,6 +19988,7 @@
     "Napoleon Bonaparte",
     "Nasser",
     "Newton",
+    "Nicole Brown Simpson",
     "Nimitz",
     "Nina",
     "Nixon",
@@ -19944,6 +20012,7 @@
     "Professor X",
     "Prokofiev",
     "Queen Mary",
+    "Rasputin",
     "Reagan",
     "Romeo",
     "Roosevelt",
@@ -20838,8 +20907,7 @@
   "Queens": [
     "Elizabeth",
     "Mary Rose",
-    "Queen Mary",
-    "Victoria"
+    "Queen Mary"
   ],
   "Racing Sports": [
     "Auto Racing",
@@ -20867,6 +20935,7 @@
     "Anne Boleyn",
     "Anne of Cleves",
     "Archduke Franz Ferdinand",
+    "Archibald Butt",
     "Aristotle",
     "Arthur",
     "Bach",
@@ -21019,6 +21088,7 @@
     "Napoleon Bonaparte",
     "Nasser",
     "Newton",
+    "Nicole Brown Simpson",
     "Nimitz",
     "Nixon",
     "Obama",
@@ -21036,6 +21106,7 @@
     "Prince",
     "Prokofiev",
     "Queen Mary",
+    "Rasputin",
     "Reagan",
     "Roosevelt",
     "Roy Cohn",
@@ -21381,6 +21452,9 @@
     "Stop Sign",
     "Yield Sign"
   ],
+  "Rock Bands": [
+    "Boston"
+  ],
   "Rock Songs": [
     "Another Brick in the Wall",
     "Basket Case",
@@ -21597,6 +21671,7 @@
     "Temüjin",
     "Tolui",
     "Tsar",
+    "Victoria",
     "Ögedei Khan"
   ],
   "Sailors": [
@@ -22148,6 +22223,7 @@
   "Songs": [
     "Another Brick in the Wall",
     "Basket Case",
+    "Big Iron",
     "Billie Jean",
     "Black",
     "Bohemian Rhapsody",
@@ -22169,6 +22245,7 @@
     "My Generation",
     "Nothing Compares 2 U",
     "Purple Haze",
+    "Rasputin",
     "Respect",
     "Say It Ain't So",
     "Smells Like Teen Spirit",
@@ -22349,8 +22426,7 @@
     "San Pedro",
     "Santa Maria",
     "Santiago",
-    "Trinidad",
-    "Victoria"
+    "Trinidad"
   ],
   "Spanish Words": [
     "Diablo",
@@ -22771,7 +22847,8 @@
   ],
   "Starts with ARC": [
     "Archduke Franz Ferdinand",
-    "Archery"
+    "Archery",
+    "Archibald Butt"
   ],
   "Starts with ARE": [
     "Arepa",
@@ -23041,6 +23118,7 @@
     "Big",
     "Big Bird",
     "Big Hero 6",
+    "Big Iron",
     "Bigos"
   ],
   "Starts with BIL": [
@@ -24658,6 +24736,9 @@
   "Starts with IDE": [
     "Ides of March"
   ],
+  "Starts with IF ": [
+    "If the glove don't fit you must acquit"
+  ],
   "Starts with IF.": [
     "If...."
   ],
@@ -25654,7 +25735,8 @@
     "Nick Fury",
     "Nickel",
     "Nicobar",
-    "Nicoise"
+    "Nicoise",
+    "Nicole Brown Simpson"
   ],
   "Starts with NIG": [
     "Niger",
@@ -26219,7 +26301,8 @@
     "Raptor"
   ],
   "Starts with RAS": [
-    "Rashomon"
+    "Rashomon",
+    "Rasputin"
   ],
   "Starts with RAT": [
     "Rat",
@@ -27137,6 +27220,7 @@
     "The Moon Landing",
     "The Muppet Christmas Carol",
     "The My Lai Massacre",
+    "The Naked Gun",
     "The Nanjing Massacre",
     "The Napoleonic Wars",
     "The Nightmare Before Christmas",
@@ -27417,6 +27501,9 @@
   ],
   "Starts with UNB": [
     "Unbreakable"
+  ],
+  "Starts with UNC": [
+    "Uncharted Waters"
   ],
   "Starts with UND": [
     "Under the Bridge"
@@ -27789,7 +27876,6 @@
     "Baton Rouge",
     "Bismarck",
     "Boise",
-    "Boston",
     "Carson City",
     "Charleston",
     "Cheyenne",
@@ -28087,6 +28173,7 @@
     "Ocean"
   ],
   "The Sinking of RMS Titanic": [
+    "Archibald Butt",
     "Captain Smith",
     "Iceberg",
     "Ida Straus",
@@ -28169,6 +28256,7 @@
     "Apollo",
     "Apollo 13",
     "Apple Pie",
+    "Archibald Butt",
     "Argo",
     "Armageddon",
     "Arrival",
@@ -28211,6 +28299,7 @@
     "Beyonce",
     "Big",
     "Big Hero 6",
+    "Big Iron",
     "Bill & Ted's Bogus Journey",
     "Bill & Ted's Excellent Adventure",
     "Birdman",
@@ -28422,6 +28511,7 @@
     "Ice Age",
     "Iced Tea",
     "Ida Straus",
+    "If the glove don't fit you must acquit",
     "In the Heights",
     "Indianapolis",
     "Inglourious Basterds",
@@ -28541,6 +28631,7 @@
     "Nevada",
     "New York",
     "New York Bagel",
+    "Nicole Brown Simpson",
     "Nimitz",
     "Nixon",
     "No Country for Old Men",
@@ -28760,6 +28851,7 @@
     "The Matrix",
     "The Muppet Christmas Carol",
     "The My Lai Massacre",
+    "The Naked Gun",
     "The Nightmare Before Christmas",
     "The Oklahoma City Bombing",
     "The Old Man and the Sea",
@@ -28831,6 +28923,7 @@
     "USS Zumwalt",
     "Ultimate Frisbee",
     "Unbreakable",
+    "Uncharted Waters",
     "Unforgiven",
     "United States",
     "Up",
@@ -30219,6 +30312,7 @@
     "Olivier Salad",
     "Pelmeni",
     "Prokofiev",
+    "Rasputin",
     "Russia",
     "Shashlik",
     "Solyanka",
@@ -30343,8 +30437,7 @@
     "The Spanish Armada",
     "The Spanish Civil War",
     "The Spanish Flu",
-    "Trinidad",
-    "Victoria"
+    "Trinidad"
   ],
   "Things Sri Lankan": [
     "Ceylon",
@@ -30987,6 +31080,8 @@
     "The Witcher",
     "Titanic: Adventure Out of Time",
     "Total War",
+    "Uncharted Waters",
+    "Victoria",
     "World of Warcraft",
     "X-Wing"
   ],
@@ -31256,6 +31351,7 @@
     "Unforgiven"
   ],
   "Western Stories": [
+    "Big Iron",
     "Red Dead Redemption"
   ],
   "White Star Line": [
@@ -31359,6 +31455,7 @@
     "Mary I",
     "Mary Rose",
     "Moana",
+    "Nicole Brown Simpson",
     "Nina",
     "Olive",
     "Queen Mary",
