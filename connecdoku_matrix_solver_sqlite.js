@@ -169,21 +169,29 @@ if (isMainThread) {
     w.on("message", msg => {
       if (msg.type === "puzzle") {
         batch.push(msg);
-        status[msg.id].puzzlesFound++;
+        if (status[msg.id]) {
+          status[msg.id].puzzlesFound++;
+        }
         if (batch.length >= BATCH_SZ) insert(batch.splice(0, BATCH_SZ), redraw);
       } else if (msg.type === "tick") {
-        status[msg.id] = { ...status[msg.id], i: msg.i, total: msg.total };
+        if (status[msg.id]) {
+          status[msg.id] = { ...status[msg.id], i: msg.i, total: msg.total };
+        }
         redraw();
       } else if (msg.type === "request_work") {
         // Worker finished current chunk, give it more work
         if (workQueue.length > 0) {
           const chunk = workQueue.shift();
-          status[msg.id].currentChunk = chunk;
-          status[msg.id].chunksCompleted++;
+          if (status[msg.id]) {
+            status[msg.id].currentChunk = chunk;
+            status[msg.id].chunksCompleted++;
+          }
           w.postMessage({ type: "work", chunk });
         } else {
           // No more work, mark worker as done
-          status[msg.id].done = true;
+          if (status[msg.id]) {
+            status[msg.id].done = true;
+          }
           active--;
           redraw();
           if (active === 0) {
@@ -202,7 +210,9 @@ if (isMainThread) {
           }
         }
       } else if (msg.type === "done") {
-        status[msg.id].done = true;
+        if (status[msg.id]) {
+          status[msg.id].done = true;
+        }
         active--;
         redraw();
         if (active === 0) insert(batch, () => db.close(() => console.log("\nAll done.")));
