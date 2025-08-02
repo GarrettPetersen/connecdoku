@@ -410,6 +410,14 @@
     "Starts with ACR",
     "Things Greek"
   ],
+  "Acura": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with URA",
+    "Starts with ACU",
+    "Things American"
+  ],
   "Adams": [
     "1790s",
     "1800s",
@@ -601,6 +609,14 @@
     "Roman Cities",
     "Starts with ALE",
     "Things Egyptian"
+  ],
+  "Alfa Romeo": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with MEO",
+    "Starts with ALF",
+    "Things Italian"
   ],
   "Alfajor": [
     "Desserts",
@@ -1466,6 +1482,14 @@
     "Starts with ASK",
     "Things American"
   ],
+  "Aston Martin": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with TIN",
+    "Starts with AST",
+    "Things British"
+  ],
   "Athena": [
     "Ends with ENA",
     "Fictional People",
@@ -1525,6 +1549,14 @@
     "Star Wars Movies",
     "Starts with ATT",
     "Things American"
+  ],
+  "Audi": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with UDI",
+    "Starts with AUD",
+    "Things German"
   ],
   "Augusta": [
     "Cities",
@@ -1758,6 +1790,14 @@
     "Pink Things",
     "Starts with BLA",
     "Things Korean"
+  ],
+  "BMW": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with BMW",
+    "Starts with BMW",
+    "Things German"
   ],
   "BTS": [
     "Acronyms",
@@ -2559,6 +2599,14 @@
     "Starts with BEN",
     "Things Beninese"
   ],
+  "Bentley": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with LEY",
+    "Starts with BEN",
+    "Things British"
+  ],
   "Beowulf": [
     "Ends with ULF",
     "Epic Heroes",
@@ -3300,13 +3348,15 @@
     "Things German"
   ],
   "Bridge": [
+    "19th Century",
     "Card Games",
     "Ends with DGE",
     "Engineering Structures",
     "Music",
     "Parts of a Song",
     "River Crossings",
-    "Starts with BRI"
+    "Starts with BRI",
+    "Things British"
   ],
   "Bridge Over Troubled Water": [
     "1970s",
@@ -3470,11 +3520,14 @@
     "Starts with BRI"
   ],
   "Bronco": [
+    "20th Century",
+    "Car Models",
     "Cars",
     "Cowboy Terms",
     "Ends with NCO",
     "OJ Simpson",
-    "Starts with BRO"
+    "Starts with BRO",
+    "Things American"
   ],
   "Brother Bear": [
     "2D Animated Films",
@@ -3622,10 +3675,12 @@
     "Warner Bros. Characters"
   ],
   "Buick": [
+    "19th Century",
     "Car Brands",
     "Cars",
     "Ends with ICK",
-    "Starts with BUI"
+    "Starts with BUI",
+    "Things American"
   ],
   "Bulgaria": [
     "Countries",
@@ -3862,10 +3917,12 @@
     "Things Brazilian"
   ],
   "Cadillac": [
+    "19th Century",
     "Car Brands",
     "Cars",
     "Ends with LAC",
-    "Starts with CAD"
+    "Starts with CAD",
+    "Things American"
   ],
   "Caesar": [
     "1st Century BC",
@@ -4144,10 +4201,12 @@
     "Starts with CAR"
   ],
   "Card": [
+    "14th Century",
     "Board Game Equipment",
     "Card Games",
     "Ends with ARD",
-    "Starts with CAR"
+    "Starts with CAR",
+    "Things European"
   ],
   "Cardinal": [
     "Birds",
@@ -4497,6 +4556,7 @@
     "19th Century",
     "20th Century",
     "Age of Sail",
+    "Car Models",
     "Disasters",
     "Ends with GER",
     "Events",
@@ -4504,6 +4564,7 @@
     "Royal Navy",
     "Scientific Research",
     "Starts with CHA",
+    "Things American",
     "Things British"
   ],
   "Champagne": [
@@ -4890,10 +4951,12 @@
     "Things Spanish"
   ],
   "Chrysler": [
+    "20th Century",
     "Car Brands",
     "Cars",
     "Ends with LER",
-    "Starts with CHR"
+    "Starts with CHR",
+    "Things American"
   ],
   "Chubby Checker": [
     "1960s",
@@ -5003,6 +5066,14 @@
     "Orson Welles",
     "Starts with CIT",
     "Things American"
+  ],
+  "Citroën": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with OËN",
+    "Starts with CIT",
+    "Things French"
   ],
   "Cleopatra": [
     "1960s",
@@ -6516,10 +6587,12 @@
     "Types of Animals"
   ],
   "Dodge": [
+    "20th Century",
     "Car Brands",
     "Cars",
     "Ends with DGE",
-    "Starts with DOD"
+    "Starts with DOD",
+    "Things American"
   ],
   "Doe": [
     "Ends with DOE",
@@ -7624,9 +7697,11 @@
     "Volcanoes"
   ],
   "Euchre": [
+    "19th Century",
     "Card Games",
     "Ends with HRE",
-    "Starts with EUC"
+    "Starts with EUC",
+    "Things American"
   ],
   "Europa": [
     "Astronomical Objects",
@@ -7913,6 +7988,14 @@
     "Things Portuguese",
     "Things Spanish"
   ],
+  "Ferrari": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with ARI",
+    "Starts with FER",
+    "Things Italian"
+  ],
   "Ferry": [
     "Ends with RRY",
     "River Crossings",
@@ -7935,6 +8018,14 @@
     "Scientists",
     "Starts with FEY",
     "Things American"
+  ],
+  "Fiat": [
+    "19th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with IAT",
+    "Starts with FIA",
+    "Things Italian"
   ],
   "Fiddler on the Roof": [
     "1970s",
@@ -8169,6 +8260,7 @@
   ],
   "Ford": [
     "1970s",
+    "19th Century",
     "20th Century",
     "Businesspeople",
     "Car Brands",
@@ -8581,10 +8673,12 @@
     "Movie Ratings"
   ],
   "GMC": [
+    "20th Century",
     "Car Brands",
     "Cars",
     "Ends with GMC",
-    "Starts with GMC"
+    "Starts with GMC",
+    "Things American"
   ],
   "GOT7": [
     "Acronyms",
@@ -9287,7 +9381,6 @@
   ],
   "Grand Theft Auto": [
     "Car Brands",
-    "Cars",
     "Crime",
     "Ends with UTO",
     "Starts with GRA",
@@ -10160,10 +10253,12 @@
     "Trees"
   ],
   "Hearts": [
+    "19th Century",
     "Body Parts",
     "Card Games",
     "Ends with RTS",
-    "Starts with HEA"
+    "Starts with HEA",
+    "Things American"
   ],
   "Heat": [
     "1990s",
@@ -10557,6 +10652,7 @@
     "Writers"
   ],
   "Honda": [
+    "20th Century",
     "Car Brands",
     "Cars",
     "Companies",
@@ -10600,7 +10696,6 @@
   ],
   "Hood": [
     "Battleships",
-    "Cars",
     "Clothing",
     "Ends with OOD",
     "Famous Shipwrecks",
@@ -10911,6 +11006,14 @@
     "Elements",
     "Ends with GEN",
     "Starts with HYD"
+  ],
+  "Hyundai": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with DAI",
+    "Starts with HYU",
+    "Things Korean"
   ],
   "I": [
     "Roman Numerals"
@@ -11255,6 +11358,14 @@
     "Starts with INF",
     "The Bad Place",
     "Things Italian"
+  ],
+  "Infiniti": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with ITI",
+    "Starts with INF",
+    "Things American"
   ],
   "Infinity": [
     "Abstract Concepts",
@@ -11657,12 +11768,17 @@
     "Starts with JAD"
   ],
   "Jaguar": [
+    "20th Century",
+    "Animals",
     "Big Cats",
+    "Car Brands",
+    "Cars",
     "Ends with UAR",
     "Mammals",
     "NFL Teams",
     "Predators",
     "Starts with JAG",
+    "Things British",
     "Types of Animals"
   ],
   "Jaipur": [
@@ -12053,13 +12169,15 @@
     "US Presidents"
   ],
   "Joker": [
+    "19th Century",
     "Card Games",
     "Comedians",
     "DC Characters",
     "Ends with KER",
     "Oscar Winners",
     "Starts with JOK",
-    "Supervillains"
+    "Supervillains",
+    "Things American"
   ],
   "Jordan": [
     "20th Century",
@@ -12537,6 +12655,14 @@
     "Starts with KHA",
     "Things Mongolian",
     "Titles of Rank"
+  ],
+  "Kia": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with KIA",
+    "Starts with KIA",
+    "Things Korean"
   ],
   "Kielbasa": [
     "Ends with ASA",
@@ -13073,6 +13199,14 @@
     "Greek Letters",
     "Starts with LAM"
   ],
+  "Lamborghini": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with INI",
+    "Starts with LAM",
+    "Things Italian"
+  ],
   "Lamp": [
     "Appliances",
     "Electronics",
@@ -13089,6 +13223,14 @@
     "Starts with LAN",
     "Things British",
     "World War II"
+  ],
+  "Land Rover": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with VER",
+    "Starts with LAN",
+    "Things British"
   ],
   "Lando": [
     "20th Century",
@@ -13376,6 +13518,14 @@
     "Starts with LEX",
     "Supervillains"
   ],
+  "Lexus": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with XUS",
+    "Starts with LEX",
+    "Things American"
+  ],
   "Li Bai": [
     "8th Century",
     "Ends with BAI",
@@ -13569,6 +13719,7 @@
   "Lincoln": [
     "1860s",
     "19th Century",
+    "20th Century",
     "Aircraft Carriers",
     "Assassination of Lincoln",
     "Car Brands",
@@ -13810,6 +13961,14 @@
     "Songs",
     "Songs by R.E.M.",
     "Starts with LOS"
+  ],
+  "Lotus": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with TUS",
+    "Starts with LOT",
+    "Things British"
   ],
   "Louvre": [
     "Art Museums",
@@ -14497,6 +14656,14 @@
     "Things British",
     "Women"
   ],
+  "Maserati": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with ATI",
+    "Starts with MAS",
+    "Things Italian"
+  ],
   "Massaman": [
     "Ends with MAN",
     "Foods",
@@ -14654,6 +14821,14 @@
     "Starts with MAY",
     "Things American"
   ],
+  "Mazda": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with ZDA",
+    "Starts with MAZ",
+    "Things Japanese"
+  ],
   "McKinley": [
     "1890s",
     "1900s",
@@ -14667,6 +14842,14 @@
     "Starts with MCK",
     "Things American",
     "US Presidents"
+  ],
+  "McLaren": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with REN",
+    "Starts with MCL",
+    "Things British"
   ],
   "Mead": [
     "Alcoholic Drinks",
@@ -14726,6 +14909,14 @@
     "Place Names",
     "Starts with MEN",
     "Things Spanish"
+  ],
+  "Mercedes": [
+    "19th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with DES",
+    "Starts with MER",
+    "Things German"
   ],
   "Mercury": [
     "1960s",
@@ -15027,6 +15218,14 @@
     "Starts with MIN",
     "Things Chinese"
   ],
+  "Mini": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with INI",
+    "Starts with MIN",
+    "Things British"
+  ],
   "Minnie": [
     "Disney Characters",
     "Ends with NIE",
@@ -15064,6 +15263,14 @@
     "Ends with PPI",
     "Rivers",
     "Starts with MIS"
+  ],
+  "Mitsubishi": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with SHI",
+    "Starts with MIT",
+    "Things Japanese"
   ],
   "Miyazaki": [
     "20th Century",
@@ -15503,7 +15710,9 @@
     "Technology"
   ],
   "Mustang": [
+    "20th Century",
     "Aircraft",
+    "Car Models",
     "Ends with ANG",
     "Fighter Aircraft",
     "Manufactured by North American",
@@ -16063,6 +16272,14 @@
     "Things Spanish",
     "Women"
   ],
+  "Nissan": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with SAN",
+    "Starts with NIS",
+    "Things Japanese"
+  ],
   "Nitrogen": [
     "Elements",
     "Ends with GEN",
@@ -16411,6 +16628,7 @@
   ],
   "Odyssey": [
     "2010s",
+    "20th Century",
     "21st Century",
     "8th Century BC",
     "Books",
@@ -16424,6 +16642,7 @@
     "Ships",
     "Starts with ODY",
     "Things American",
+    "Things Japanese",
     "Trojan War"
   ],
   "Oh, the Places You'll Go!": [
@@ -16684,6 +16903,14 @@
     "Starts with ONL",
     "Studio Ghibli",
     "Things Japanese"
+  ],
+  "Opel": [
+    "19th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with PEL",
+    "Starts with OPE",
+    "Things German"
   ],
   "Oppenheimer": [
     "2020s",
@@ -17449,6 +17676,14 @@
     "Starts with PET",
     "Types of Animals"
   ],
+  "Peugeot": [
+    "19th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with EOT",
+    "Starts with PEU",
+    "Things French"
+  ],
   "Peyton Place": [
     "1960s",
     "20th Century",
@@ -17947,9 +18182,11 @@
     "Video Games"
   ],
   "Poker": [
+    "19th Century",
     "Card Games",
     "Ends with KER",
-    "Starts with POK"
+    "Starts with POK",
+    "Things American"
   ],
   "Poland": [
     "Countries",
@@ -18077,6 +18314,14 @@
     "Fictional Characters",
     "Starts with POR",
     "Warner Bros. Characters"
+  ],
+  "Porsche": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with CHE",
+    "Starts with POR",
+    "Things German"
   ],
   "Port": [
     "Alcoholic Drinks",
@@ -18993,6 +19238,14 @@
     "Things French",
     "Warships"
   ],
+  "Renault": [
+    "19th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with ULT",
+    "Starts with REN",
+    "Things French"
+  ],
   "Render unto Caesar": [
     "1st Century",
     "Bible",
@@ -19360,6 +19613,14 @@
     "Starts with ROG",
     "Things American"
   ],
+  "Rolls-Royce": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with YCE",
+    "Starts with ROL",
+    "Things British"
+  ],
   "Roma": [
     "Airships",
     "Ancient Cities",
@@ -19638,6 +19899,14 @@
     "D&D Stats",
     "Ends with STR",
     "Starts with STR"
+  ],
+  "Saab": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with AAB",
+    "Starts with SAA",
+    "Things Swedish"
   ],
   "Sabretooth": [
     "Ends with OTH",
@@ -20347,6 +20616,14 @@
     "Starts with SEA",
     "Types of Animals"
   ],
+  "Seat": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with EAT",
+    "Starts with SEA",
+    "Things Spanish"
+  ],
   "Seattle": [
     "Cities",
     "Cities in North America",
@@ -20766,6 +21043,14 @@
     "Things Austrian",
     "Winter Olympic Sports"
   ],
+  "Skoda": [
+    "19th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with ODA",
+    "Starts with SKO",
+    "Things Czech"
+  ],
   "Skunk": [
     "Black and White",
     "Ends with UNK",
@@ -20866,6 +21151,14 @@
     "Romance Stories",
     "Starts with SLU",
     "Things British"
+  ],
+  "Smart": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with ART",
+    "Starts with SMA",
+    "Things German"
   ],
   "Smarties": [
     "Candy",
@@ -20981,9 +21274,11 @@
     "Things Korean"
   ],
   "Solitaire": [
+    "18th Century",
     "Card Games",
     "Ends with IRE",
-    "Starts with SOL"
+    "Starts with SOL",
+    "Things French"
   ],
   "Solo": [
     "2010s",
@@ -21308,9 +21603,11 @@
     "Things Japanese"
   ],
   "Spades": [
+    "19th Century",
     "Card Games",
     "Ends with DES",
-    "Starts with SPA"
+    "Starts with SPA",
+    "Things American"
   ],
   "Spaghetti": [
     "Ends with TTI",
@@ -21762,6 +22059,7 @@
   ],
   "Studebaker": [
     "1950s",
+    "19th Century",
     "20th Century",
     "Car Brands",
     "Car Companies",
@@ -21783,10 +22081,12 @@
     "World War II"
   ],
   "Subaru": [
+    "20th Century",
     "Car Brands",
     "Cars",
     "Ends with ARU",
-    "Starts with SUB"
+    "Starts with SUB",
+    "Things Japanese"
   ],
   "Subutai": [
     "12th Century",
@@ -22636,6 +22936,7 @@
   "Tesla": [
     "19th Century",
     "20th Century",
+    "21st Century",
     "Car Brands",
     "Cars",
     "Companies",
@@ -22647,6 +22948,7 @@
     "Scientists",
     "Starts with TES",
     "Tech Companies",
+    "Things American",
     "Things Serbian"
   ],
   "Tetris": [
@@ -26214,6 +26516,7 @@
     "Things American"
   ],
   "Toyota": [
+    "20th Century",
     "Car Brands",
     "Cars",
     "Companies",
@@ -26975,6 +27278,14 @@
     "Small Countries",
     "Starts with VAT"
   ],
+  "Vauxhall": [
+    "19th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with ALL",
+    "Starts with VAU",
+    "Things British"
+  ],
   "Velma": [
     "20th Century",
     "21st Century",
@@ -27207,6 +27518,14 @@
     "Starts with VOL",
     "Things Russian"
   ],
+  "Volkswagen": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with GEN",
+    "Starts with VOL",
+    "Things German"
+  ],
   "Volleyball": [
     "Ball Sports",
     "Ends with ALL",
@@ -27214,6 +27533,14 @@
     "Starts with VOL",
     "Summer Olympic Sports",
     "Things American"
+  ],
+  "Volvo": [
+    "20th Century",
+    "Car Brands",
+    "Cars",
+    "Ends with LVO",
+    "Starts with VOL",
+    "Things Swedish"
   ],
   "Von Blucher": [
     "18th Century",
@@ -27603,9 +27930,11 @@
     "Things Japanese"
   ],
   "Whist": [
+    "18th Century",
     "Card Games",
     "Ends with IST",
-    "Starts with WHI"
+    "Starts with WHI",
+    "Things British"
   ],
   "White Christmas": [
     "1950s",

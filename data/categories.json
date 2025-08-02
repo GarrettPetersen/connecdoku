@@ -37,6 +37,7 @@
     "Santa Maria"
   ],
   "14th Century": [
+    "Card",
     "Dante",
     "Inferno",
     "Ming",
@@ -241,6 +242,7 @@
     "Mozart",
     "Napoleon Bonaparte",
     "Newton",
+    "Solitaire",
     "The American Revolution",
     "The British Empire",
     "The French Revolution",
@@ -252,6 +254,7 @@
     "The Whiskey Rebellion",
     "Von Blucher",
     "Washington",
+    "Whist",
     "Whitney"
   ],
   "1900s": [
@@ -793,7 +796,10 @@
     "Beethoven",
     "Bell",
     "Bismarck",
+    "Bridge",
     "Buchanan",
+    "Buick",
+    "Cadillac",
     "Call me Ishmael",
     "Challenger",
     "Cleveland",
@@ -804,8 +810,11 @@
     "Edison",
     "Einstein",
     "Elementary, my dear Watson",
+    "Euchre",
     "Faraday",
+    "Fiat",
     "Fillmore",
+    "Ford",
     "Ford's Theatre",
     "Four score and seven years ago",
     "Frankenstein",
@@ -814,12 +823,14 @@
     "Grant",
     "Harrison",
     "Hayes",
+    "Hearts",
     "It was the best of times",
     "Jackson",
     "Jane Eyre",
     "Jefferson",
     "John Wilkes Booth",
     "Johnson",
+    "Joker",
     "June 18th, 1815",
     "Krakatoa",
     "La Garde meurt, elle ne se rend pas!",
@@ -830,19 +841,27 @@
     "Madison",
     "Marie Curie",
     "McKinley",
+    "Mercedes",
     "Merde!",
     "Michel Ney",
     "Moby Dick",
     "Monroe",
     "Morse",
     "Napoleon Bonaparte",
+    "Opel",
     "Oscar",
     "Ozymandias",
+    "Peugeot",
     "Pierce",
     "Poe",
+    "Poker",
     "Polk",
     "Pride and Prejudice",
+    "Renault",
     "Sir John A. Macdonald",
+    "Skoda",
+    "Spades",
+    "Studebaker",
     "Tambora",
     "Taylor",
     "Tesla",
@@ -873,6 +892,7 @@
     "Thomas Edison",
     "Tyler",
     "Van Buren",
+    "Vauxhall",
     "Victor",
     "Victoria",
     "Von Blucher",
@@ -1128,6 +1148,8 @@
     "A Map of the World",
     "AIDS",
     "Absalom, Absalom!",
+    "Acura",
+    "Alfa Romeo",
     "Alien",
     "Alien 3",
     "Alien: Resurrection",
@@ -1148,6 +1170,9 @@
     "As I Lay Dying",
     "Ashes of Time",
     "Ask not what your country can do for you",
+    "Aston Martin",
+    "Audi",
+    "BMW",
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III",
@@ -1159,6 +1184,7 @@
     "Beloved",
     "Ben Hur",
     "Benedict",
+    "Bentley",
     "Bernie Goetz",
     "Beyonce",
     "Big",
@@ -1180,6 +1206,7 @@
     "Bridge on the River Kwai",
     "Brief Encounter",
     "Britannia Hospital",
+    "Bronco",
     "Buddy Holly",
     "Bush",
     "Buttercup",
@@ -1198,9 +1225,11 @@
     "Chernobyl",
     "Chinatown",
     "Chou En-Lai",
+    "Chrysler",
     "Chubby Checker",
     "Chungking Express",
     "Citizen Kane",
+    "Citroën",
     "Cleopatra",
     "Clinton",
     "Clue",
@@ -1231,6 +1260,7 @@
     "Die Hard 2",
     "Die Hard with a Vengeance",
     "Dirac",
+    "Dodge",
     "Dog Day Afternoon",
     "Don't Look Now",
     "Donnie Brasco",
@@ -1257,6 +1287,7 @@
     "Fahrenheit 451",
     "Fallen Angels",
     "Farewell My Concubine",
+    "Ferrari",
     "Feynman",
     "Fiddler on the Roof",
     "Fight Club",
@@ -1272,6 +1303,7 @@
     "Frankly, my dear, I don't give a damn",
     "Fred",
     "Fujita",
+    "GMC",
     "Galaxy Quest",
     "Gandhi",
     "Gemini",
@@ -1305,6 +1337,7 @@
     "Home Alone",
     "Home Alone 2: Lost in New York",
     "Homeless Veterans Crisis",
+    "Honda",
     "Hoover",
     "Hotel California",
     "Hound Dog",
@@ -1312,6 +1345,7 @@
     "Howard's End",
     "Hubble",
     "Hula Hoop",
+    "Hyundai",
     "I am your father",
     "I have a dream",
     "I see dead people",
@@ -1324,12 +1358,14 @@
     "If....",
     "Ikiru",
     "Imagine",
+    "Infiniti",
     "Iranian Revolution",
     "Iris",
     "Isidor Straus",
     "It's a Wonderful Life",
     "Ivy",
     "Jackie Brown",
+    "Jaguar",
     "Jaws",
     "Jean Grey",
     "Jesus Christ Superstar",
@@ -1350,6 +1386,7 @@
     "Kampuchea",
     "Kennedy",
     "Kerouac",
+    "Kia",
     "Kiki's Delivery Service",
     "Kind Hearts and Coronets",
     "Kindred",
@@ -1359,18 +1396,23 @@
     "Krushchev",
     "Kurosawa",
     "Laika",
+    "Lamborghini",
+    "Land Rover",
     "Lando",
     "Lawrence of Arabia",
     "Leo",
+    "Lexus",
     "Liberace",
     "Life is like a box of chocolates",
     "Light My Fire",
     "Light in August",
     "Like a Prayer",
     "Like a Rolling Stone",
+    "Lincoln",
     "Little Shop of Horrors",
     "Lord of the Flies",
     "Losing My Religion",
+    "Lotus",
     "Lusitania",
     "Madonna",
     "Mafia",
@@ -1383,16 +1425,22 @@
     "Marilyn Monroe",
     "Mariner",
     "Mary Poppins",
+    "Maserati",
     "Matilda",
     "Matsui",
     "May the Force be with you",
     "Mays",
+    "Mazda",
+    "McLaren",
     "Mercury",
     "Metal Gear",
     "Midnight Cowboy",
     "Mifune",
+    "Mini",
     "Miracle on 34th Street",
+    "Mitsubishi",
     "Miyazaki",
+    "Mustang",
     "My Fair Lady",
     "My Generation",
     "My Neighbor Totoro",
@@ -1402,6 +1450,7 @@
     "National Lampoon's Christmas Vacation",
     "Nicole Brown Simpson",
     "Nina",
+    "Nissan",
     "Nixon",
     "North Vietnam",
     "North Yemen",
@@ -1409,6 +1458,7 @@
     "Nothing Compares 2 U",
     "Nothing to fear but fear itself",
     "O Lucky Man!",
+    "Odyssey",
     "Oh, the Places You'll Go!",
     "Olive",
     "Oliver!",
@@ -1434,6 +1484,7 @@
     "Platoon",
     "Pokemon",
     "Porco Rosso",
+    "Porsche",
     "Poseidon",
     "Prince",
     "Prince Caspian",
@@ -1464,9 +1515,11 @@
     "Rock and Roll",
     "Rocky",
     "Rocky Horror Picture Show",
+    "Rolls-Royce",
     "Roosevelt",
     "Roy Cohn",
     "Ruth",
+    "Saab",
     "Salem's Lot",
     "Sally Ride",
     "Sam",
@@ -1477,6 +1530,7 @@
     "Scent of a Woman",
     "Schindler's List",
     "Scrooged",
+    "Seat",
     "Sense and Sensibility",
     "Serpico",
     "Seven Samurai",
@@ -1485,6 +1539,7 @@
     "Silver",
     "Singin' in the Rain",
     "Slaughterhouse-Five",
+    "Smart",
     "Smells Like Teen Spirit",
     "Snowman",
     "Somewhere in Time",
@@ -1502,6 +1557,7 @@
     "Stranger in a Strange Land",
     "Street Fighter",
     "Studebaker",
+    "Subaru",
     "Suez Crisis",
     "Sugar Ray",
     "Sulu",
@@ -1661,6 +1717,7 @@
     "To Kill a Mockingbird",
     "To Say Nothing of the Dog",
     "Toscanini",
+    "Toyota",
     "Trainspotting",
     "Truman",
     "Trump",
@@ -1674,6 +1731,8 @@
     "Velma",
     "Violet",
     "Volcano",
+    "Volkswagen",
+    "Volvo",
     "Voyager",
     "Walkabout",
     "Watergate",
@@ -1886,6 +1945,7 @@
     "Tanaka",
     "Tenet",
     "Teresa",
+    "Tesla",
     "The Arab Spring",
     "The Artist",
     "The Brexit Vote",
@@ -2531,6 +2591,7 @@
     "Winnie-the-Pooh"
   ],
   "Animals": [
+    "Jaguar",
     "Pinky",
     "Turkey"
   ],
@@ -3469,26 +3530,67 @@
     "Resolution"
   ],
   "Car Brands": [
+    "Acura",
+    "Alfa Romeo",
+    "Aston Martin",
+    "Audi",
+    "BMW",
+    "Bentley",
     "Buick",
     "Cadillac",
     "Chrysler",
+    "Citroën",
     "Cobra",
     "Dodge",
+    "Ferrari",
+    "Fiat",
     "Ford",
     "GMC",
     "Grand Theft Auto",
     "Honda",
+    "Hyundai",
+    "Infiniti",
+    "Jaguar",
     "Jeep",
+    "Kia",
+    "Lamborghini",
+    "Land Rover",
+    "Lexus",
     "Lincoln",
+    "Lotus",
+    "Maserati",
+    "Mazda",
+    "McLaren",
+    "Mercedes",
+    "Mini",
+    "Mitsubishi",
+    "Nissan",
+    "Opel",
+    "Peugeot",
+    "Porsche",
+    "Renault",
+    "Rolls-Royce",
+    "Saab",
     "Saturn",
+    "Seat",
+    "Skoda",
+    "Smart",
     "Studebaker",
     "Subaru",
     "Tesla",
-    "Toyota"
+    "Toyota",
+    "Vauxhall",
+    "Volkswagen",
+    "Volvo"
   ],
   "Car Companies": [
     "Ford",
     "Studebaker"
+  ],
+  "Car Models": [
+    "Bronco",
+    "Challenger",
+    "Mustang"
   ],
   "Card Games": [
     "Bridge",
@@ -3508,24 +3610,58 @@
     "Yugioh"
   ],
   "Cars": [
+    "Acura",
+    "Alfa Romeo",
+    "Aston Martin",
+    "Audi",
+    "BMW",
+    "Bentley",
     "Bronco",
     "Buick",
     "Cadillac",
     "Chrysler",
+    "Citroën",
     "Dodge",
+    "Ferrari",
+    "Fiat",
     "Ford",
     "GMC",
-    "Grand Theft Auto",
     "Honda",
-    "Hood",
+    "Hyundai",
+    "Infiniti",
+    "Jaguar",
     "Jeep",
+    "Kia",
+    "Lamborghini",
+    "Land Rover",
+    "Lexus",
     "Lincoln",
+    "Lotus",
+    "Maserati",
+    "Mazda",
+    "McLaren",
+    "Mercedes",
+    "Mini",
+    "Mitsubishi",
+    "Nissan",
     "Odyssey",
+    "Opel",
+    "Peugeot",
+    "Porsche",
+    "Renault",
+    "Rolls-Royce",
+    "Saab",
     "Saturn",
+    "Seat",
+    "Skoda",
+    "Smart",
     "Studebaker",
     "Subaru",
     "Tesla",
-    "Toyota"
+    "Toyota",
+    "Vauxhall",
+    "Volkswagen",
+    "Volvo"
   ],
   "Charles Darwin": [
     "Beagle"
@@ -5725,6 +5861,9 @@
   "Ends with 984": [
     "1984"
   ],
+  "Ends with AAB": [
+    "Saab"
+  ],
   "Ends with AAN": [
     "Naan"
   ],
@@ -5925,6 +6064,7 @@
     "Matzo Ball",
     "Tear down this wall",
     "The Fall of the Berlin Wall",
+    "Vauxhall",
     "Volleyball",
     "Wonderwall"
   ],
@@ -6124,6 +6264,7 @@
   ],
   "Ends with ARI": [
     "Bari",
+    "Ferrari",
     "Kalahari"
   ],
   "Ends with ARK": [
@@ -6165,6 +6306,7 @@
     "Braveheart",
     "Butter Tart",
     "Mozart",
+    "Smart",
     "Tart",
     "Whisper of the Heart"
   ],
@@ -6243,7 +6385,8 @@
     "The Grapes of Wrath"
   ],
   "Ends with ATI": [
-    "Kiribati"
+    "Kiribati",
+    "Maserati"
   ],
   "Ends with ATO": [
     "Affogato",
@@ -6434,6 +6577,9 @@
   "Ends with BLO": [
     "Diablo"
   ],
+  "Ends with BMW": [
+    "BMW"
+  ],
   "Ends with BOK": [
     "Lombok"
   ],
@@ -6529,6 +6675,7 @@
     "Brioche",
     "Ceviche",
     "Che",
+    "Porsche",
     "Quiche"
   ],
   "Ends with CHI": [
@@ -6622,6 +6769,9 @@
   "Ends with DAE": [
     "Sundae"
   ],
+  "Ends with DAI": [
+    "Hyundai"
+  ],
   "Ends with DAL": [
     "Dal",
     "Payola Scandal",
@@ -6688,6 +6838,7 @@
     "Dolmades",
     "Hades",
     "Hebrides",
+    "Mercedes",
     "New Hebrides",
     "Pirates of the Caribbean: On Stranger Tides",
     "Rhodes",
@@ -6823,7 +6974,8 @@
     "Beat",
     "Blood, toil, tears and sweat",
     "Heat",
-    "Montreal Smoked Meat"
+    "Montreal Smoked Meat",
+    "Seat"
   ],
   "Ends with EAU": [
     "Juneau"
@@ -7016,6 +7168,9 @@
     "Jjajangmyeon",
     "Naengmyeon",
     "Neon"
+  ],
+  "Ends with EOT": [
+    "Peugeot"
   ],
   "Ends with EPA": [
     "Arepa"
@@ -7282,7 +7437,8 @@
     "Halogen",
     "Hydrogen",
     "Nitrogen",
-    "Oxygen"
+    "Oxygen",
+    "Volkswagen"
   ],
   "Ends with GER": [
     "Butterfinger",
@@ -7539,6 +7695,9 @@
   ],
   "Ends with IAS": [
     "Ozymandias"
+  ],
+  "Ends with IAT": [
+    "Fiat"
   ],
   "Ends with IBM": [
     "IBM"
@@ -7831,6 +7990,8 @@
     "Blini",
     "Eswatini",
     "Gemini",
+    "Lamborghini",
+    "Mini",
     "Santorini",
     "Tahini",
     "Tortellini",
@@ -8030,6 +8191,7 @@
   ],
   "Ends with ITI": [
     "Haiti",
+    "Infiniti",
     "Tahiti"
   ],
   "Ends with ITO": [
@@ -8177,6 +8339,7 @@
   ],
   "Ends with KIA": [
     "Czechoslovakia",
+    "Kia",
     "Slovakia"
   ],
   "Ends with KID": [
@@ -8319,6 +8482,7 @@
     "Violet"
   ],
   "Ends with LEY": [
+    "Bentley",
     "Galley",
     "McKinley"
   ],
@@ -8462,6 +8626,9 @@
   "Ends with LUI": [
     "Tolui"
   ],
+  "Ends with LVO": [
+    "Volvo"
+  ],
   "Ends with MAL": [
     "Animal"
   ],
@@ -8530,6 +8697,7 @@
     "Yemen"
   ],
   "Ends with MEO": [
+    "Alfa Romeo",
     "Romeo"
   ],
   "Ends with MER": [
@@ -8977,6 +9145,7 @@
   ],
   "Ends with ODA": [
     "CODA",
+    "Skoda",
     "Yoda"
   ],
   "Ends with ODE": [
@@ -9375,6 +9544,9 @@
   "Ends with OZU": [
     "Ozu"
   ],
+  "Ends with OËN": [
+    "Citroën"
+  ],
   "Ends with PAL": [
     "Nepal"
   ],
@@ -9388,6 +9560,9 @@
   ],
   "Ends with PEI": [
     "Pohnpei"
+  ],
+  "Ends with PEL": [
+    "Opel"
   ],
   "Ends with PEN": [
     "Pen"
@@ -9588,6 +9763,7 @@
     "Petrel"
   ],
   "Ends with REN": [
+    "McLaren",
     "Siren",
     "Van Buren"
   ],
@@ -9828,6 +10004,9 @@
     "Sam",
     "Yosemite Sam"
   ],
+  "Ends with SAN": [
+    "Nissan"
+  ],
   "Ends with SAR": [
     "Caesar",
     "Pulsar",
@@ -9882,6 +10061,7 @@
     "Kasha"
   ],
   "Ends with SHI": [
+    "Mitsubishi",
     "Musashi",
     "Sushi"
   ],
@@ -10128,6 +10308,7 @@
     "Plastic"
   ],
   "Ends with TIN": [
+    "Aston Martin",
     "Austin",
     "Rasputin"
   ],
@@ -10221,7 +10402,8 @@
   ],
   "Ends with TUS": [
     "Brutus",
-    "Invictus"
+    "Invictus",
+    "Lotus"
   ],
   "Ends with TZA": [
     "Chichen Itza"
@@ -10296,6 +10478,9 @@
     "Hey Jude",
     "One Hundred Years of Solitude"
   ],
+  "Ends with UDI": [
+    "Audi"
+  ],
   "Ends with UDO": [
     "Judo"
   ],
@@ -10346,6 +10531,9 @@
     "Gull",
     "Hull"
   ],
+  "Ends with ULT": [
+    "Renault"
+  ],
   "Ends with ULU": [
     "Honolulu",
     "Sulu",
@@ -10392,6 +10580,7 @@
     "Goi Cuon"
   ],
   "Ends with URA": [
+    "Acura",
     "Fuerteventura",
     "Nakamura",
     "Tempura"
@@ -10488,6 +10677,7 @@
     "Dover",
     "Grover",
     "Hoover",
+    "Land Rover",
     "Lever",
     "Silver"
   ],
@@ -10605,6 +10795,9 @@
   "Ends with XON": [
     "Nixon"
   ],
+  "Ends with XUS": [
+    "Lexus"
+  ],
   "Ends with Y 2": [
     "Queen Mary 2"
   ],
@@ -10622,6 +10815,9 @@
   ],
   "Ends with YAP": [
     "Yap"
+  ],
+  "Ends with YCE": [
+    "Rolls-Royce"
   ],
   "Ends with YER": [
     "Flyer",
@@ -10663,6 +10859,9 @@
   ],
   "Ends with ZCZ": [
     "Barszcz"
+  ],
+  "Ends with ZDA": [
+    "Mazda"
   ],
   "Ends with ZEL": [
     "Brezel",
@@ -22714,6 +22913,9 @@
   "Starts with ACR": [
     "Acropolis"
   ],
+  "Starts with ACU": [
+    "Acura"
+  ],
   "Starts with ADA": [
     "Adams"
   ],
@@ -22765,6 +22967,7 @@
     "Alexandria"
   ],
   "Starts with ALF": [
+    "Alfa Romeo",
     "Alfajor",
     "Alfredo"
   ],
@@ -22926,6 +23129,9 @@
   "Starts with ASK": [
     "Ask not what your country can do for you"
   ],
+  "Starts with AST": [
+    "Aston Martin"
+  ],
   "Starts with ATH": [
     "Athena",
     "Athens"
@@ -22936,6 +23142,9 @@
   ],
   "Starts with ATT": [
     "Attack of the Clones"
+  ],
+  "Starts with AUD": [
+    "Audi"
   ],
   "Starts with AUG": [
     "Augusta"
@@ -23119,7 +23328,8 @@
     "Ben Hur",
     "Bench",
     "Benedict",
-    "Benin"
+    "Benin",
+    "Bentley"
   ],
   "Starts with BEO": [
     "Beowulf"
@@ -23202,6 +23412,9 @@
     "Blue Whale",
     "Blueberry",
     "Bluebird"
+  ],
+  "Starts with BMW": [
+    "BMW"
   ],
   "Starts with BOA": [
     "Boar",
@@ -23544,7 +23757,8 @@
     "Cirrus"
   ],
   "Starts with CIT": [
-    "Citizen Kane"
+    "Citizen Kane",
+    "Citroën"
   ],
   "Starts with CLE": [
     "Cleopatra",
@@ -24166,6 +24380,7 @@
   ],
   "Starts with FER": [
     "Ferdinand Magellan",
+    "Ferrari",
     "Ferry"
   ],
   "Starts with FET": [
@@ -24173,6 +24388,9 @@
   ],
   "Starts with FEY": [
     "Feynman"
+  ],
+  "Starts with FIA": [
+    "Fiat"
   ],
   "Starts with FID": [
     "Fiddler on the Roof"
@@ -24725,6 +24943,9 @@
     "Hydra",
     "Hydrogen"
   ],
+  "Starts with HYU": [
+    "Hyundai"
+  ],
   "Starts with I A": [
     "I am your father"
   ],
@@ -24805,6 +25026,7 @@
   ],
   "Starts with INF": [
     "Inferno",
+    "Infiniti",
     "Infinity"
   ],
   "Starts with ING": [
@@ -25092,6 +25314,9 @@
   "Starts with KHA": [
     "Khan"
   ],
+  "Starts with KIA": [
+    "Kia"
+  ],
   "Starts with KIE": [
     "Kielbasa"
   ],
@@ -25224,10 +25449,12 @@
   ],
   "Starts with LAM": [
     "Lambda",
+    "Lamborghini",
     "Lamp"
   ],
   "Starts with LAN": [
     "Lancaster",
+    "Land Rover",
     "Lando",
     "Lansing",
     "Lanzarote"
@@ -25294,7 +25521,8 @@
     "Leviathan"
   ],
   "Starts with LEX": [
-    "Lex Luthor"
+    "Lex Luthor",
+    "Lexus"
   ],
   "Starts with LI ": [
     "Li Bai",
@@ -25377,6 +25605,9 @@
   "Starts with LOS": [
     "Los Angeles",
     "Losing My Religion"
+  ],
+  "Starts with LOT": [
+    "Lotus"
   ],
   "Starts with LOU": [
     "Louvre"
@@ -25490,6 +25721,7 @@
     "Mary Rose"
   ],
   "Starts with MAS": [
+    "Maserati",
     "Massaman",
     "Massive",
     "Mast"
@@ -25515,8 +25747,14 @@
     "Mayo",
     "Mays"
   ],
+  "Starts with MAZ": [
+    "Mazda"
+  ],
   "Starts with MCK": [
     "McKinley"
+  ],
+  "Starts with MCL": [
+    "McLaren"
   ],
   "Starts with MEA": [
     "Mead"
@@ -25538,6 +25776,7 @@
     "Menorca"
   ],
   "Starts with MER": [
+    "Mercedes",
     "Mercury",
     "Merde!"
   ],
@@ -25595,6 +25834,7 @@
     "Minecraft",
     "Minestrone",
     "Ming",
+    "Mini",
     "Minnie",
     "Minotaur"
   ],
@@ -25604,6 +25844,9 @@
   "Starts with MIS": [
     "Miso",
     "Mississippi"
+  ],
+  "Starts with MIT": [
+    "Mitsubishi"
   ],
   "Starts with MIY": [
     "Miyazaki"
@@ -25788,6 +26031,9 @@
   "Starts with NIN": [
     "Nina"
   ],
+  "Starts with NIS": [
+    "Nissan"
+  ],
   "Starts with NIT": [
     "Nitrogen"
   ],
@@ -25921,6 +26167,9 @@
   ],
   "Starts with ONL": [
     "Only Yesterday"
+  ],
+  "Starts with OPE": [
+    "Opel"
   ],
   "Starts with OPP": [
     "Oppenheimer"
@@ -26084,6 +26333,9 @@
     "Petra",
     "Petrel"
   ],
+  "Starts with PEU": [
+    "Peugeot"
+  ],
   "Starts with PEY": [
     "Peyton Place"
   ],
@@ -26198,6 +26450,7 @@
   "Starts with POR": [
     "Porco Rosso",
     "Porky Pig",
+    "Porsche",
     "Port",
     "Portal",
     "Portugal",
@@ -26368,6 +26621,7 @@
     "Redoutable"
   ],
   "Starts with REN": [
+    "Renault",
     "Render unto Caesar",
     "Rent"
   ],
@@ -26437,6 +26691,9 @@
     "Rogue",
     "Rogue One"
   ],
+  "Starts with ROL": [
+    "Rolls-Royce"
+  ],
   "Starts with ROM": [
     "Roma",
     "Romance of the Three Kingdoms",
@@ -26497,6 +26754,9 @@
   ],
   "Starts with RYU": [
     "Ryukyu"
+  ],
+  "Starts with SAA": [
+    "Saab"
   ],
   "Starts with SAB": [
     "Sabretooth"
@@ -26616,6 +26876,7 @@
   "Starts with SEA": [
     "Seahawk",
     "Seal",
+    "Seat",
     "Seattle"
   ],
   "Starts with SEI": [
@@ -26696,6 +26957,9 @@
   "Starts with SKI": [
     "Skiing"
   ],
+  "Starts with SKO": [
+    "Skoda"
+  ],
   "Starts with SKU": [
     "Skunk"
   ],
@@ -26718,6 +26982,7 @@
     "Slumdog Millionaire"
   ],
   "Starts with SMA": [
+    "Smart",
     "Smarties"
   ],
   "Starts with SME": [
@@ -27607,6 +27872,9 @@
   "Starts with VAT": [
     "Vatican City"
   ],
+  "Starts with VAU": [
+    "Vauxhall"
+  ],
   "Starts with VEL": [
     "Velma",
     "Veloute"
@@ -27654,7 +27922,9 @@
     "Volcano",
     "Voldemort",
     "Volga",
-    "Volleyball"
+    "Volkswagen",
+    "Volleyball",
+    "Volvo"
   ],
   "Starts with VON": [
     "Von Blucher"
@@ -28266,6 +28536,7 @@
     "A Wrinkle in Time",
     "AIDS",
     "Absalom, Absalom!",
+    "Acura",
     "Adams",
     "Alabama",
     "Aladdin",
@@ -28348,14 +28619,17 @@
     "Brave",
     "Braveheart",
     "Bravo",
+    "Bronco",
     "Brother Bear",
     "Brownie",
     "Buchanan",
     "Buddy Holly",
+    "Buick",
     "Bush",
     "Buttercup",
     "CODA",
     "Cabaret",
+    "Cadillac",
     "California",
     "California Baseball",
     "Call me Ishmael",
@@ -28368,6 +28642,7 @@
     "Carter",
     "Casablanca",
     "Cessna",
+    "Challenger",
     "Charleston",
     "Charlotte's Web",
     "Cheesecake",
@@ -28377,6 +28652,7 @@
     "Chinatown",
     "Chinook",
     "Chocolate Chip Cookie",
+    "Chrysler",
     "Chubby Checker",
     "Cider",
     "Cinderella",
@@ -28424,6 +28700,7 @@
     "Disney",
     "Diving",
     "Django Unchained",
+    "Dodge",
     "Dog Day Afternoon",
     "Donnie Brasco",
     "Donnie Darko",
@@ -28451,6 +28728,7 @@
     "Entebbe Hijacking",
     "Enterprise",
     "Escape from New York",
+    "Euchre",
     "Everything Everywhere All at Once",
     "Evita",
     "F-16",
@@ -28482,6 +28760,7 @@
     "Frequency",
     "Fried Chicken",
     "Frozen",
+    "GMC",
     "Galaxy Quest",
     "Garfield",
     "Gemini",
@@ -28513,6 +28792,7 @@
     "Harrison",
     "Hartford",
     "Hayes",
+    "Hearts",
     "Heat",
     "Heather",
     "Hedwig and the Angry Inch",
@@ -28547,6 +28827,7 @@
     "If the glove don't fit you must acquit",
     "In the Heights",
     "Indianapolis",
+    "Infiniti",
     "Inglourious Basterds",
     "Inside Out",
     "Insomnia",
@@ -28573,6 +28854,7 @@
     "John Wilkes Booth",
     "Johnnie Ray",
     "Johnson",
+    "Joker",
     "Juan Peron",
     "Juice",
     "Juneau",
@@ -28599,6 +28881,7 @@
     "Lemonade",
     "Lenore",
     "Leo",
+    "Lexus",
     "Liberace",
     "Life is like a box of chocolates",
     "Light in August",
@@ -28712,6 +28995,7 @@
     "Platoon",
     "Pocahontas",
     "Poe",
+    "Poker",
     "Polk",
     "Poseidon",
     "Primer",
@@ -28790,6 +29074,7 @@
     "Sourdough",
     "South Pacific",
     "Soviet-Afghan War",
+    "Spades",
     "Spotlight",
     "Springfield",
     "Star Wars",
@@ -28814,6 +29099,7 @@
     "Tenet",
     "Terminator 2: Judgment Day",
     "Terms of Endearment",
+    "Tesla",
     "Texas",
     "Texas Book Depository",
     "Thalidomide Scandal",
@@ -29100,14 +29386,17 @@
     "Archery",
     "Ark Royal",
     "Arthur Christmas",
+    "Aston Martin",
     "Bangers and Mash",
     "Beagle",
     "Beatles",
     "Bellerophon",
+    "Bentley",
     "Blood, toil, tears and sweat",
     "Boaty McBoatface",
     "Boxing",
     "Brave New World",
+    "Bridge",
     "Bridge on the River Kwai",
     "Brief Encounter",
     "Britannia",
@@ -29170,15 +29459,18 @@
     "Isle of Man",
     "Isle of Wight",
     "It was the best of times",
+    "Jaguar",
     "Jane Eyre",
     "Jane Seymour",
     "Jersey",
     "Kind Hearts and Coronets",
     "Lady Jane Grey",
     "Lancaster",
+    "Land Rover",
     "Lawrence of Arabia",
     "London",
     "Lord of the Flies",
+    "Lotus",
     "Love Actually",
     "Lusitania",
     "Mary I",
@@ -29186,7 +29478,9 @@
     "Matilda",
     "Mauretania",
     "Mayflower",
+    "McLaren",
     "Mead",
+    "Mini",
     "Montgomery",
     "Newton",
     "O Lucky Man!",
@@ -29207,6 +29501,7 @@
     "Queen Mary 2",
     "Repulse",
     "Resolution",
+    "Rolls-Royce",
     "Rowing",
     "Rugby",
     "Sailing",
@@ -29282,6 +29577,7 @@
     "Trainspotting",
     "Trifle",
     "United Kingdom",
+    "Vauxhall",
     "Victoria",
     "Victory",
     "Walkabout",
@@ -29289,6 +29585,7 @@
     "We shall never surrender",
     "We will fight them on the beaches",
     "Wellington",
+    "Whist",
     "William the Conqueror",
     "Winnie-the-Pooh",
     "Winston Churchill",
@@ -29513,6 +29810,7 @@
   "Things Czech": [
     "Czech Republic",
     "Pilsner",
+    "Skoda",
     "The Hussite Wars"
   ],
   "Things Danish": [
@@ -29562,6 +29860,9 @@
     "Coffee",
     "Ethiopia"
   ],
+  "Things European": [
+    "Card"
+  ],
   "Things Faroese": [
     "Faroe",
     "Faroe Islands"
@@ -29593,6 +29894,7 @@
     "Champagne",
     "Charlemagne",
     "Chocolat",
+    "Citroën",
     "Concorde",
     "Coq au Vin",
     "Corsica",
@@ -29627,12 +29929,15 @@
     "Normandie",
     "Notre Dame",
     "Paris",
+    "Peugeot",
     "Profiterole",
     "Quiche",
     "Ratatouille",
     "Red Wine",
     "Redoutable",
+    "Renault",
     "Rosé",
+    "Solitaire",
     "Souffle",
     "Sparkling Wine",
     "The Albigensian Crusade",
@@ -29657,6 +29962,8 @@
     "Airbus",
     "Anne of Cleves",
     "Apfelstrudel",
+    "Audi",
+    "BMW",
     "Bach",
     "Beer",
     "Beethoven",
@@ -29678,7 +29985,10 @@
     "Kepler",
     "Käsespätzle",
     "Luge",
+    "Mercedes",
     "Messerschmitt",
+    "Opel",
+    "Porsche",
     "Pretzel",
     "Pumpernickel",
     "Rhine",
@@ -29688,11 +29998,13 @@
     "Sauerkraut",
     "Scharnhorst",
     "Schnitzel",
+    "Smart",
     "Spätzle",
     "Stuka",
     "The Battle of Stalingrad",
     "The German Reunification",
     "Tirpitz",
+    "Volkswagen",
     "Von Blucher",
     "Weissbier"
   ],
@@ -29843,6 +30155,7 @@
   ],
   "Things Italian": [
     "Affogato",
+    "Alfa Romeo",
     "Alfredo",
     "Andrea Doria",
     "Bolognese",
@@ -29864,7 +30177,9 @@
     "Dante",
     "Elba",
     "Etna",
+    "Ferrari",
     "Fettuccine",
+    "Fiat",
     "Florence",
     "Focaccia",
     "Galileo",
@@ -29874,11 +30189,13 @@
     "Ischia",
     "Italy",
     "Juliet",
+    "Lamborghini",
     "Lasagna",
     "Linguine",
     "MSC Meraviglia",
     "Marco Polo",
     "Marinara",
+    "Maserati",
     "Michelangelo",
     "Minestrone",
     "Naples",
@@ -29961,16 +30278,20 @@
     "Kyushu",
     "Matcha",
     "Matsui",
+    "Mazda",
     "Metal Gear",
     "Mifune",
     "Miso",
+    "Mitsubishi",
     "Miyazaki",
     "Mochi",
     "Musashi",
     "My Neighbor Totoro",
     "Nakamura",
+    "Nissan",
     "Norwegian Wood",
     "Oden",
+    "Odyssey",
     "Ohtani",
     "Okinawa",
     "Okonomiyaki",
@@ -30001,6 +30322,7 @@
     "Soy Sauce",
     "Spirited Away",
     "Street Fighter",
+    "Subaru",
     "Sukiyaki",
     "Sumo",
     "Super Mario",
@@ -30079,9 +30401,11 @@
     "GOT7",
     "Green Tea",
     "Hotteok",
+    "Hyundai",
     "Japchae",
     "Jeju",
     "Jjajangmyeon",
+    "Kia",
     "Kimchi",
     "Naengmyeon",
     "Parasite",
@@ -30460,6 +30784,7 @@
     "Santa Maria",
     "Santiago",
     "Santissima Trinidad",
+    "Seat",
     "Sherry",
     "Spain",
     "Tapas",
@@ -30488,8 +30813,10 @@
   "Things Swedish": [
     "Gotland",
     "Minecraft",
+    "Saab",
     "Sweden",
-    "The Girl with the Dragon Tattoo"
+    "The Girl with the Dragon Tattoo",
+    "Volvo"
   ],
   "Things Swiss": [
     "Bobsled",
