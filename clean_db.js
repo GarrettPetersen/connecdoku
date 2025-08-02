@@ -321,10 +321,13 @@ async function main() {
     const finalCount = await countPuzzles(db);
     console.log(`   Final database count: ${finalCount}`);
     
-    if (finalCount !== validPuzzles.length) {
-        console.log(`   ⚠️  Warning: Expected ${validPuzzles.length} puzzles, but database has ${finalCount}`);
+    // Account for the fact that database count includes a metadata row
+    const expectedDatabaseCount = validPuzzles.length + 1;
+    
+    if (finalCount !== expectedDatabaseCount) {
+        console.log(`   ⚠️  Warning: Expected ${expectedDatabaseCount} total rows, but database has ${finalCount}`);
     } else {
-        console.log(`   ✅ Database count matches expected count`);
+        console.log(`   ✅ Database count matches expected count (${validPuzzles.length} puzzles + 1 metadata row)`);
     }
     
     // Save category tally to JSON file
