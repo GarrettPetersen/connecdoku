@@ -169,8 +169,8 @@ if (isMainThread) {
     w.on("message", msg => {
       if (msg.type === "puzzle") {
         batch.push(msg);
-        if (status[msg.id]) {
-          status[msg.id].puzzlesFound++;
+        if (status[msg.workerId]) {
+          status[msg.workerId].puzzlesFound++;
         }
         if (batch.length >= BATCH_SZ) insert(batch.splice(0, BATCH_SZ), redraw);
       } else if (msg.type === "tick") {
@@ -205,6 +205,7 @@ if (isMainThread) {
                 const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
                 const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
                 console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
+                process.exit(0);
               });
             });
           }
@@ -215,7 +216,10 @@ if (isMainThread) {
         }
         active--;
         redraw();
-        if (active === 0) insert(batch, () => db.close(() => console.log("\nAll done.")));
+        if (active === 0) insert(batch, () => db.close(() => {
+          console.log("\nAll done.");
+          process.exit(0);
+        }));
       }
     });
     w.on("error", e => console.error("worker error:", e));
