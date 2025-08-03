@@ -103,27 +103,28 @@ if (isMainThread) {
 
   // ── work queue management ──
   const workQueue = [];
-  const CHUNK_SIZE = 2; // Much smaller chunks for better balance
   
   // Initialize work queue with all indices
   const categoriesJson = JSON.parse(fs.readFileSync(CATS_F, "utf8"));
   const cats = Object.keys(categoriesJson).filter(k => categoriesJson[k].length >= 4).sort();
   const n = cats.length;
   
-  for (let i = 0; i < n; i += CHUNK_SIZE) {
+  // Each i value is its own chunk
+  for (let i = 0; i < n; i++) {
     workQueue.push({
       start: i,
-      end: Math.min(i + CHUNK_SIZE, n),
-      id: workQueue.length
+      end: i + 1, // Single i value per chunk
+      id: workQueue.length,
+      totalJ: n - i - 1 // j goes from i+1 to n-1, so n-i-1 total j values
     });
   }
   
-  console.log(`Total work: ${n} indices in ${workQueue.length} chunks`);
+  console.log(`Total work: ${n} i-values in ${workQueue.length} chunks`);
 
   // ── progress bookkeeping ──
   const status = Array.from({ length: nWorkers }, () => ({ 
     i: 0, total: 1, done: false, currentChunk: null, chunksCompleted: 0,
-    puzzlesFound: 0, puzzlesInserted: 0
+    puzzlesFound: 0, puzzlesInserted: 0, jProgress: 0, totalJ: 0
   }));
   const t0 = performance.now();
   let redrawTimeout = null;
@@ -136,15 +137,16 @@ if (isMainThread) {
       const elapsed = (performance.now() - t0) / 1000;
       let out = "";
       
-      // Overall progress bar
-      const totalChunks = workQueue.length + status.reduce((sum, st) => sum + st.chunksCompleted, 0);
-      const completedChunks = status.reduce((sum, st) => sum + st.chunksCompleted, 0);
-      const overallProgress = totalChunks > 0 ? completedChunks / totalChunks : 0;
-      out += `\nOverall: [${bar(overallProgress)}] ${(overallProgress*100).toFixed(1)}% (${completedChunks}/${totalChunks} chunks)`;
+      // Overall progress bar - account for variable j ranges
+      const totalWork = status.reduce((sum, st) => sum + st.totalJ, 0) + 
+                       workQueue.reduce((sum, chunk) => sum + chunk.totalJ, 0);
+      const completedWork = status.reduce((sum, st) => sum + st.jProgress, 0);
+      const overallProgress = totalWork > 0 ? completedWork / totalWork : 0;
+      out += `\nOverall: [${bar(overallProgress)}] ${(overallProgress*100).toFixed(1)}% (${completedWork}/${totalWork} j-steps)`;
       
       status.forEach((st, idx) => {
-        const pct = Math.min(st.i / st.total, 1);
-        const chunkInfo = st.currentChunk ? ` (chunk ${st.currentChunk.id})` : "";
+        const pct = st.totalJ > 0 ? Math.min(st.jProgress / st.totalJ, 1) : 0;
+        const chunkInfo = st.currentChunk ? ` (i=${st.currentChunk.start}, j=${st.jProgress}/${st.totalJ})` : "";
         const stats = st.done ? 
           ` [${st.puzzlesFound} found, ${st.puzzlesInserted} inserted]` : 
           ` [${st.puzzlesFound} found]`;
@@ -175,7 +177,7 @@ if (isMainThread) {
         if (batch.length >= BATCH_SZ) insert(batch.splice(0, BATCH_SZ), redraw);
       } else if (msg.type === "tick") {
         if (status[msg.id]) {
-          status[msg.id] = { ...status[msg.id], i: msg.i, total: msg.total };
+          status[msg.id] = { ...status[msg.id], jProgress: msg.jProgress, totalJ: msg.totalJ };
         }
         redraw();
       } else if (msg.type === "request_work") {
@@ -185,6 +187,8 @@ if (isMainThread) {
           if (status[msg.id]) {
             status[msg.id].currentChunk = chunk;
             status[msg.id].chunksCompleted++;
+            status[msg.id].jProgress = 0;
+            status[msg.id].totalJ = chunk.totalJ;
           }
           w.postMessage({ type: "work", chunk });
         } else {
@@ -331,12 +335,13 @@ if (isMainThread) {
 
   // ── work processing function ──
   function processChunk(chunk) {
-    const { start, end } = chunk;
-    let outer = 0;
-    const totalOuter = end - start;
-
+    const { start, end, totalJ } = chunk;
+    
+    // Process single i value
     for (let i = start; i < end; i++) {
       const jList = [...N2[i]].filter(j => j > i).sort((a, b) => a - b);
+      let jProgress = 0;
+      
       for (const j of jList) {
         const kList = tList(i, j);
         for (const k of kList) {
@@ -405,9 +410,17 @@ if (isMainThread) {
               }
           }
         }
+        jProgress++;
+        // Send tick every few j steps to avoid too many messages
+        if (jProgress % 10 === 0 || jProgress === totalJ) {
+          parentPort.postMessage({ 
+            type: "tick", 
+            id: WID, 
+            jProgress: jProgress, 
+            totalJ: totalJ 
+          });
+        }
       }
-      outer++;
-      parentPort.postMessage({ type: "tick", id: WID, i: outer, total: totalOuter });
     }
   }
 
