@@ -31,12 +31,39 @@ const WORDS_F   = path.join(DATA_DIR, "words.json");
 const CATS_F    = path.join(DATA_DIR, "categories.json");
 const META_CATS_F = path.join(DATA_DIR, "meta_categories.json");
 const DB_PATH   = path.join(__dirname, "puzzles.db");
+const PROGRESS_FILE = path.join(__dirname, "progress.json");
 
 // ───────── helpers ──────────────────────────────────────────────
 const sha256 = buf => crypto.createHash("sha256").update(buf).digest("hex");
 const BAR_W = 30;
 function bar(p) { const f = Math.round(p * BAR_W); return "█".repeat(f) + "░".repeat(BAR_W - f); }
 function fmt(s) { if (!isFinite(s)) return "??"; const h = s/3600|0, m = s/60%60|0; return h?`${h}h${m.toString().padStart(2,"0")}m`:m?`${m}m`:`${s|0}s`; }
+
+// Progress file management
+function saveProgress(wordListHash, completedChunks) {
+  const progress = {
+    wordListHash,
+    completedChunks,
+    timestamp: new Date().toISOString()
+  };
+  fs.writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2));
+}
+
+function loadProgress() {
+  if (!fs.existsSync(PROGRESS_FILE)) {
+    return { wordListHash: null, completedChunks: [] };
+  }
+  try {
+    const data = JSON.parse(fs.readFileSync(PROGRESS_FILE, "utf8"));
+    return {
+      wordListHash: data.wordListHash,
+      completedChunks: data.completedChunks || []
+    };
+  } catch (e) {
+    console.log("Invalid progress file, starting fresh");
+    return { wordListHash: null, completedChunks: [] };
+  }
+}
 
 /*─────────────────────────── MAIN THREAD ──────────────────────────*/
 if (isMainThread) {
@@ -58,48 +85,23 @@ if (isMainThread) {
             )`);
   });
   const wordListHash = sha256(fs.readFileSync(CATS_F));
-
-  // prepared statement template for multi-row insert
-  const insert = (rows, cb) => {
-    if (!rows.length) return cb && cb();
-    const ph = rows.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
-    const flat = rows.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
-    db.run(`INSERT OR IGNORE INTO puzzles
-            (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash)
-            VALUES ${ph}`, flat, (err) => {
-      if (err) {
-        console.error("Insert error:", err);
-        return cb && cb();
-      }
-      // Count how many were actually inserted (not duplicates)
-      db.get("SELECT changes() as count", (err, row) => {
-        if (!err && row) {
-          // Distribute the insertion count among workers who contributed to this batch
-          const insertedCount = row.count;
-          if (insertedCount > 0) {
-            // Simple distribution - could be improved with more detailed tracking
-            const workersInBatch = new Set(rows.map(r => r.workerId).filter(id => id !== undefined));
-            if (workersInBatch.size > 0) {
-              const perWorker = Math.floor(insertedCount / workersInBatch.size);
-              const remainder = insertedCount % workersInBatch.size;
-              let distributed = 0;
-              for (const workerId of workersInBatch) {
-                const toAdd = perWorker + (distributed < remainder ? 1 : 0);
-                if (status[workerId]) {
-                  status[workerId].puzzlesInserted += toAdd;
-                }
-                distributed++;
-              }
-            }
-          }
-        }
-        cb && cb();
-      });
-    });
-  };
-
-  const BATCH_SZ = 1000;
-  let batch = [];
+  
+  // Check for existing progress
+  const savedProgress = loadProgress();
+  let completedChunks = new Set();
+  
+  if (savedProgress.wordListHash === wordListHash) {
+    completedChunks = new Set(savedProgress.completedChunks);
+    console.log(`Resuming from previous run. Found ${completedChunks.size} completed chunks.`);
+  } else if (savedProgress.wordListHash !== null) {
+    console.log("Word list hash changed, starting fresh.");
+    // Clear the progress file since hash doesn't match
+    if (fs.existsSync(PROGRESS_FILE)) {
+      fs.unlinkSync(PROGRESS_FILE);
+    }
+  } else {
+    console.log("No previous progress found, starting fresh.");
+  }
 
   // ── work queue management ──
   const workQueue = [];
@@ -111,6 +113,10 @@ if (isMainThread) {
   
   // Each i value is its own chunk
   for (let i = 0; i < n; i++) {
+    // Skip if this chunk was already completed
+    if (completedChunks.has(i)) {
+      continue;
+    }
     workQueue.push({
       start: i,
       end: i + 1, // Single i value per chunk
@@ -119,13 +125,14 @@ if (isMainThread) {
     });
   }
   
-  console.log(`Total work: ${n} i-values in ${workQueue.length} chunks`);
+  console.log(`Total work: ${n} i-values in ${workQueue.length} chunks (${completedChunks.size} already completed)`);
 
   // ── progress bookkeeping ──
   const status = Array.from({ length: nWorkers }, () => ({ 
     i: 0, total: 1, done: false, currentChunk: null, chunksCompleted: 0,
     puzzlesFound: 0, puzzlesInserted: 0, jProgress: 0, totalJ: 0
   }));
+  let totalCompletedWork = 0; // Track total completed j-steps across all workers
   const t0 = performance.now();
   let redrawTimeout = null;
   function redraw() {
@@ -137,12 +144,20 @@ if (isMainThread) {
       const elapsed = (performance.now() - t0) / 1000;
       let out = "";
       
-      // Overall progress bar - account for variable j ranges
-      const totalWork = status.reduce((sum, st) => sum + st.totalJ, 0) + 
+      // Overall progress bar - account for completed work + current progress
+      const totalWork = totalCompletedWork + 
+                       status.reduce((sum, st) => sum + st.jProgress, 0) + 
                        workQueue.reduce((sum, chunk) => sum + chunk.totalJ, 0);
-      const completedWork = status.reduce((sum, st) => sum + st.jProgress, 0);
-      const overallProgress = totalWork > 0 ? completedWork / totalWork : 0;
-      out += `\nOverall: [${bar(overallProgress)}] ${(overallProgress*100).toFixed(1)}% (${completedWork}/${totalWork} j-steps)`;
+      const completedWork = totalCompletedWork + status.reduce((sum, st) => sum + st.jProgress, 0);
+      
+      // Add j-steps from previously completed chunks
+      const completedChunksWork = Array.from(completedChunks).reduce((sum, i) => sum + (n - i - 1), 0);
+      const totalWorkWithCompleted = totalWork + completedChunksWork;
+      const completedWorkWithCompleted = completedWork + completedChunksWork;
+      
+      const overallProgress = totalWorkWithCompleted > 0 ? completedWorkWithCompleted / totalWorkWithCompleted : 0;
+      out += `\nOverall: [${bar(overallProgress)}] ${(overallProgress*100).toFixed(1)}% (${completedWorkWithCompleted}/${totalWorkWithCompleted} j-steps)`;
+      out += `\nCompleted chunks: ${completedChunks.size}/${n} i-values`;
       
       status.forEach((st, idx) => {
         const pct = st.totalJ > 0 ? Math.min(st.jProgress / st.totalJ, 1) : 0;
@@ -152,9 +167,9 @@ if (isMainThread) {
           ` [${st.puzzlesFound} found]`;
         out += `\nW${idx} [${bar(pct)}] ${(pct*100).toFixed(1).padStart(6)}%${st.done?" ✓":""}${chunkInfo}${stats}`;
       });
-      out += `\nQueue: ${workQueue.length} chunks remaining   Batch: ${batch.length}/${BATCH_SZ}   elapsed: ${fmt(elapsed)}`;
+      out += `\nQueue: ${workQueue.length} chunks remaining   elapsed: ${fmt(elapsed)}`;
       process.stdout.write("\x1b[H\x1b[J" + out);  // clear + write
-    }, 50); // 50ms debounce
+    }, 25); // 25ms debounce for more responsive updates
   }
   process.stdout.write("\x1b[2J\x1b[H");        // clear screen once
 
@@ -164,18 +179,12 @@ if (isMainThread) {
   
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(fileURLToPath(import.meta.url), { 
-      workerData: { id, nWorkers, cats, n } 
+      workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH } 
     });
     workers.push(w);
     
     w.on("message", msg => {
-      if (msg.type === "puzzle") {
-        batch.push(msg);
-        if (status[msg.workerId]) {
-          status[msg.workerId].puzzlesFound++;
-        }
-        if (batch.length >= BATCH_SZ) insert(batch.splice(0, BATCH_SZ), redraw);
-      } else if (msg.type === "tick") {
+      if (msg.type === "tick") {
         if (status[msg.id]) {
           status[msg.id] = { ...status[msg.id], jProgress: msg.jProgress, totalJ: msg.totalJ };
         }
@@ -185,45 +194,55 @@ if (isMainThread) {
         if (workQueue.length > 0) {
           const chunk = workQueue.shift();
           if (status[msg.id]) {
+            // Add the completed work to the total
+            totalCompletedWork += status[msg.id].totalJ;
+            // Mark this chunk as completed
+            completedChunks.add(status[msg.id].currentChunk.start);
+            // Save progress
+            saveProgress(wordListHash, Array.from(completedChunks));
+            
             status[msg.id].currentChunk = chunk;
             status[msg.id].chunksCompleted++;
             status[msg.id].jProgress = 0;
             status[msg.id].totalJ = chunk.totalJ;
+            status[msg.id].puzzlesFound = msg.puzzlesFound || 0;
+            status[msg.id].puzzlesInserted = msg.puzzlesInserted || 0;
           }
           w.postMessage({ type: "work", chunk });
         } else {
           // No more work, mark worker as done
           if (status[msg.id]) {
             status[msg.id].done = true;
+            status[msg.id].puzzlesFound = msg.puzzlesFound || 0;
+            status[msg.id].puzzlesInserted = msg.puzzlesInserted || 0;
           }
           active--;
           redraw();
           if (active === 0) {
-            insert(batch, () => {
-              // Update final insertion counts
-              const finalBatch = batch.length;
-              if (finalBatch > 0) {
-                console.log(`\nFinal batch: ${finalBatch} puzzles`);
-              }
-              db.close(() => {
-                const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
-                const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
-                console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
-                process.exit(0);
-              });
+            db.close(() => {
+              const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
+              const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
+              console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
+              process.exit(0);
             });
           }
         }
       } else if (msg.type === "done") {
         if (status[msg.id]) {
           status[msg.id].done = true;
+          status[msg.id].puzzlesFound = msg.puzzlesFound || 0;
+          status[msg.id].puzzlesInserted = msg.puzzlesInserted || 0;
         }
         active--;
         redraw();
-        if (active === 0) insert(batch, () => db.close(() => {
-          console.log("\nAll done.");
-          process.exit(0);
-        }));
+        if (active === 0) {
+          db.close(() => {
+            const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
+            const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
+            console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
+            process.exit(0);
+          });
+        }
       }
     });
     w.on("error", e => console.error("worker error:", e));
@@ -239,7 +258,7 @@ if (isMainThread) {
 /*────────────────────────── WORKER THREAD ─────────────────────────*/
 } else {
 
-  const { id: WID, nWorkers: NW, cats, n } = workerData;
+  const { id: WID, nWorkers: NW, cats, n, wordListHash, dbPath } = workerData;
 
   // ── load data ──
   const wordsJson      = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
@@ -248,6 +267,41 @@ if (isMainThread) {
   const ALL_WORDS      = Object.keys(wordsJson);
   const WORD_IDX       = new Map(ALL_WORDS.map((w, i) => [w, i]));
   const MASK_LEN       = Math.ceil(ALL_WORDS.length / 32);
+
+  // ── worker database setup ──
+  const db = new sqlite3.Database(dbPath);
+  db.serialize(() => {
+    db.run("PRAGMA journal_mode=WAL");
+    db.run("PRAGMA synchronous=OFF");
+  });
+  
+  // Batch management
+  const BATCH_SIZE = 100;
+  let puzzleBatch = [];
+  let puzzlesFound = 0;
+  let puzzlesInserted = 0;
+  
+  function flushBatch() {
+    if (puzzleBatch.length === 0) return;
+    
+    const ph = puzzleBatch.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
+    const flat = puzzleBatch.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
+    
+    db.run(`INSERT OR IGNORE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`, flat, (err) => {
+      if (err) {
+        console.error("Batch insert error:", err);
+        return;
+      }
+      // Count how many were actually inserted
+      db.get("SELECT changes() as count", (err, row) => {
+        if (!err && row) {
+          puzzlesInserted += row.count;
+        }
+      });
+    });
+    
+    puzzleBatch = [];
+  }
 
   // Build category to meta-category mapping
   const categoryToMeta = new Map();
@@ -398,21 +452,26 @@ if (isMainThread) {
                       }
                     if (!ok) continue;
 
-                    parentPort.postMessage({
-                      type: "puzzle",
-                      hash: sha256(rows.map(v => cats[v]).join("|") + cols.map(v => cats[v]).join("|")),
+                    // Add to batch
+                    const puzzleHash = sha256(rows.map(v => cats[v]).join("|") + cols.map(v => cats[v]).join("|"));
+                    puzzleBatch.push({
+                      hash: puzzleHash,
                       rows: rows.map(v => cats[v]),
-                      cols: cols.map(v => cats[v]),
-                      workerId: WID
+                      cols: cols.map(v => cats[v])
                     });
+                    puzzlesFound++;
+
+                    if (puzzleBatch.length >= BATCH_SIZE) {
+                      flushBatch();
+                    }
                   }
                 }
               }
           }
         }
         jProgress++;
-        // Send tick every few j steps to avoid too many messages
-        if (jProgress % 10 === 0 || jProgress === totalJ) {
+        // Send tick more frequently for better progress updates
+        if (jProgress % 2 === 0 || jProgress === totalJ) {
           parentPort.postMessage({ 
             type: "tick", 
             id: WID, 
@@ -422,14 +481,22 @@ if (isMainThread) {
         }
       }
     }
+    
+    // Flush any remaining puzzles in batch
+    flushBatch();
   }
 
   // ── message handling ──
   parentPort.on("message", msg => {
     if (msg.type === "work") {
       processChunk(msg.chunk);
-      // Request more work when done
-      parentPort.postMessage({ type: "request_work", id: WID });
+      // Request more work when done, sending current statistics
+      parentPort.postMessage({ 
+        type: "request_work", 
+        id: WID, 
+        puzzlesFound: puzzlesFound,
+        puzzlesInserted: puzzlesInserted
+      });
     }
   });
 }
