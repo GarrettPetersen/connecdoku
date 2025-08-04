@@ -403,29 +403,11 @@ if (isMainThread) {
           redraw();
           if (active === 0) {
             // Send cleanup message to all workers
+            console.log("\nAll work completed. Sending cleanup messages to workers...");
             workers.forEach(w => w.postMessage({ type: "cleanup" }));
           }
         }
-      } else if (msg.type === "done") {
-        if (status[msg.id]) {
-          status[msg.id].done = true;
-          status[msg.id].puzzlesFound = msg.puzzlesFound || 0;
-          status[msg.id].puzzlesInserted = msg.puzzlesInserted || 0;
-        }
-        active--;
-        redraw();
-        if (active === 0) {
-          // Wait a moment for any final database writes to complete
-          setTimeout(() => {
-            db.close(() => {
-              const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
-              const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
-              console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
-              process.exit(0);
-            });
-          }, 1000); // Wait 1 second for final writes
-        }
-      } else if (msg.type === "cleanup") {
+            } else if (msg.type === "cleanup") {
         // Worker is cleaning up, close its database connection
         if (status[msg.id]) {
           status[msg.id].done = true;
@@ -436,12 +418,30 @@ if (isMainThread) {
         redraw();
         if (active === 0) {
           // Wait a moment for any final database writes to complete
+          console.log("All workers cleaned up. Closing database...");
           setTimeout(() => {
             db.close(() => {
               const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
               const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
               console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
-              process.exit(0);
+              
+              // Run database cleanup
+              console.log("Running database cleanup...");
+              import('child_process').then(({ spawn }) => {
+                const cleanup = spawn('node', ['clean_db.js'], { 
+                  stdio: 'inherit',
+                  cwd: __dirname 
+                });
+                
+                cleanup.on('close', (code) => {
+                  if (code === 0) {
+                    console.log("Database cleanup completed successfully.");
+                  } else {
+                    console.log(`Database cleanup failed with code ${code}.`);
+                  }
+                  process.exit(0);
+                });
+              });
             });
           }, 1000); // Wait 1 second for final writes
         }
