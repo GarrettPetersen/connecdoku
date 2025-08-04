@@ -407,7 +407,7 @@ if (isMainThread) {
             workers.forEach(w => w.postMessage({ type: "cleanup" }));
           }
         }
-            } else if (msg.type === "cleanup") {
+      } else if (msg.type === "cleanup") {
         // Worker is cleaning up, close its database connection
         if (status[msg.id]) {
           status[msg.id].done = true;
