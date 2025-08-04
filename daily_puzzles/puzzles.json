@@ -723,7 +723,7 @@
     "rows": [
       "Cities",
       "Ends with AND",
-      "Male Names",
+      "Men",
       "NATO Members"
     ],
     "cols": [
@@ -796,46 +796,6 @@
         "Suriname",
         "Brazil",
         "British Guiana"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "Black and White Films",
-      "Classic Literature",
-      "Comedy Stories",
-      "Ends with TER"
-    ],
-    "cols": [
-      "Crime Stories",
-      "Oscar Winners",
-      "Red Things",
-      "Romance Stories"
-    ],
-    "words": [
-      [
-        "The Maltese Falcon",
-        "Schindler's List",
-        "Red Beard",
-        "White Christmas"
-      ],
-      [
-        "Crime and Punishment",
-        "Little Women",
-        "Dream of the Red Chamber",
-        "Jane Eyre"
-      ],
-      [
-        "Bad Santa",
-        "Everything Everywhere All at Once",
-        "Red",
-        "Groundhog Day"
-      ],
-      [
-        "Get Carter",
-        "The Deer Hunter",
-        "Lobster",
-        "Brief Encounter"
       ]
     ]
   },
@@ -1108,7 +1068,7 @@
       [
         "Chicago",
         "Hero",
-        "The Bridge on the River Kwai",
+        "Bridge on the River Kwai",
         "The Good, the Bad and the Ugly"
       ],
       [
