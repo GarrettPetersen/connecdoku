@@ -40,11 +40,12 @@ function bar(p) { const f = Math.round(p * BAR_W); return "█".repeat(f) + "░
 function fmt(s) { if (!isFinite(s)) return "??"; const h = s/3600|0, m = s/60%60|0; return h?`${h}h${m.toString().padStart(2,"0")}m`:m?`${m}m`:`${s|0}s`; }
 
 // Progress file management
-function saveProgress(wordListHash, completedChunks, completedChunkWork) {
+function saveProgress(wordListHash, completedChunks, completedChunkWork, partialChunkProgress) {
   const progress = {
     wordListHash,
     completedChunks,
     completedChunkWork, // Store actual j-step counts for completed chunks
+    partialChunkProgress: Array.from(partialChunkProgress.entries()).map(([i, chunks]) => [i, Array.from(chunks)]),
     timestamp: new Date().toISOString()
   };
   fs.writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2));
@@ -52,18 +53,19 @@ function saveProgress(wordListHash, completedChunks, completedChunkWork) {
 
 function loadProgress() {
   if (!fs.existsSync(PROGRESS_FILE)) {
-    return { wordListHash: null, completedChunks: [], completedChunkWork: 0 };
+    return { wordListHash: null, completedChunks: [], completedChunkWork: 0, partialChunkProgress: [] };
   }
   try {
     const data = JSON.parse(fs.readFileSync(PROGRESS_FILE, "utf8"));
     return {
       wordListHash: data.wordListHash,
       completedChunks: data.completedChunks || [],
-      completedChunkWork: data.completedChunkWork || 0
+      completedChunkWork: data.completedChunkWork || 0,
+      partialChunkProgress: data.partialChunkProgress || []
     };
   } catch (e) {
     console.log("Invalid progress file, starting fresh");
-    return { wordListHash: null, completedChunks: [], completedChunkWork: 0 };
+    return { wordListHash: null, completedChunks: [], completedChunkWork: 0, partialChunkProgress: [] };
   }
 }
 
@@ -90,10 +92,18 @@ if (isMainThread) {
   
   // Check for existing progress and initialize completed work
   const savedProgress = loadProgress();
-  let completedChunks = new Set();
+  let completedChunks = new Set(savedProgress.completedChunks);
   let completedChunkWork = 0;
   let totalWorkEstimate = 0; // Track total work estimate from all chunks
   let totalCompletedWork = 0; // Track total completed j-steps across all workers
+  let partialChunkProgress = new Map(); // Track progress on split chunks: i -> Set of completed chunk indices
+  
+  // Restore partial chunk progress
+  if (savedProgress.partialChunkProgress) {
+    for (const [i, chunks] of savedProgress.partialChunkProgress) {
+      partialChunkProgress.set(i, new Set(chunks));
+    }
+  }
   
   // Calculate total work by building the complete 2-away matrix
   console.log("Calculating total work...");
@@ -197,19 +207,71 @@ if (isMainThread) {
   // ── work queue management ──
   const workQueue = [];
   
-  // Initialize work queue with all indices
+  // Calculate difficulty of each i value (number of valid j connections)
+  const iDifficulties = [];
   for (let i = 0; i < n; i++) {
+    let validJCount = 0;
+    for (let j = i + 1; j < n; j++) {
+      if (A2[i][j] >= 4) {
+        validJCount++;
+      }
+    }
+    iDifficulties.push({ i, difficulty: validJCount });
+  }
+  
+  // Sort by difficulty (hardest first) and create adaptive chunks
+  iDifficulties.sort((a, b) => b.difficulty - a.difficulty);
+  
+  for (const { i } of iDifficulties) {
     // Skip if this chunk was already completed
     if (completedChunks.has(i)) {
       continue;
     }
     
-    workQueue.push({
-      start: i,
-      end: i + 1, // Single i value per chunk
-      id: workQueue.length,
-      totalJ: 0 // Will be updated by worker when it starts processing
-    });
+    // For very hard chunks (difficulty > 50), create multiple smaller chunks
+    const difficulty = iDifficulties.find(d => d.i === i).difficulty;
+    if (difficulty > 50) {
+      // Split into 4 smaller chunks for very hard i values
+      const chunkSize = Math.ceil(difficulty / 4);
+      for (let chunk = 0; chunk < 4; chunk++) {
+        // Skip if this sub-chunk was already completed
+        if (partialChunkProgress.has(i) && partialChunkProgress.get(i).has(chunk)) {
+          continue;
+        }
+        
+        workQueue.push({
+          start: i,
+          end: i + 1, // Still single i value
+          jStart: chunk * chunkSize,
+          jEnd: Math.min((chunk + 1) * chunkSize, difficulty),
+          chunkIndex: chunk,
+          totalChunks: 4,
+          id: workQueue.length,
+          totalJ: 0 // Will be updated by worker when it starts processing
+        });
+      }
+    } else {
+      // Regular chunk for easier i values
+      workQueue.push({
+        start: i,
+        end: i + 1, // Single i value per chunk
+        id: workQueue.length,
+        totalJ: 0 // Will be updated by worker when it starts processing
+      });
+    }
+  }
+  
+  // Shuffle the work queue to distribute hard/easy chunks evenly
+  for (let i = workQueue.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [workQueue[i], workQueue[j]] = [workQueue[j], workQueue[i]];
+  }
+  
+  // Log which chunks are being split
+  const splitChunks = workQueue.filter(chunk => chunk.chunkIndex !== undefined);
+  const splitIValues = [...new Set(splitChunks.map(chunk => chunk.start))];
+  if (splitIValues.length > 0) {
+    console.log(`Split ${splitIValues.length} hard i-values into ${splitChunks.length} smaller chunks: ${splitIValues.join(', ')}`);
   }
   
   console.log(`Total work: ${n} i-values in ${workQueue.length} chunks (${completedChunks.size} already completed)`);
@@ -249,7 +311,10 @@ if (isMainThread) {
           pct = Math.min(st.jProgress / st.totalJ, 1);
         }
         
-        const chunkInfo = st.currentChunk ? ` (i=${st.currentChunk.start}, j=${st.jProgress}/${st.totalJ})` : "";
+        const chunkInfo = st.currentChunk ? 
+          (st.currentChunk.chunkIndex !== undefined ? 
+            ` (i=${st.currentChunk.start}, chunk=${st.currentChunk.chunkIndex + 1}/${st.currentChunk.totalChunks}, j=${st.jProgress}/${st.totalJ})` :
+            ` (i=${st.currentChunk.start}, j=${st.jProgress}/${st.totalJ})`) : "";
         const stats = st.done ? 
           ` [${st.puzzlesFound} found, ${st.puzzlesInserted} inserted]` : 
           ` [${st.puzzlesFound} found]`;
@@ -281,10 +346,7 @@ if (isMainThread) {
     w.on("message", msg => {
       if (msg.type === "tick") {
         if (status[msg.id]) {
-          // If this is the first tick for this worker, accumulate the total work
-          if (status[msg.id].totalJ === 0 && msg.totalJ > 0) {
-            totalWorkEstimate += msg.totalJ;
-          }
+          // Update worker status with current progress
           status[msg.id] = { ...status[msg.id], jProgress: msg.jProgress, totalJ: msg.totalJ };
         }
         redraw();
@@ -295,12 +357,32 @@ if (isMainThread) {
           if (status[msg.id]) {
             // Add the completed work to the total
             totalCompletedWork += status[msg.id].totalJ;
-            // Mark this chunk as completed
-            completedChunks.add(status[msg.id].currentChunk.start);
-            // Add the completed work to the total
-            completedChunkWork += status[msg.id].totalJ;
+            
+            // Handle partial chunk completion
+            const currentChunk = status[msg.id].currentChunk;
+            if (currentChunk.chunkIndex !== undefined) {
+              // For partial chunks, track which chunks of this i value are completed
+              const i = currentChunk.start;
+              if (!partialChunkProgress.has(i)) {
+                partialChunkProgress.set(i, new Set());
+              }
+              partialChunkProgress.get(i).add(currentChunk.chunkIndex);
+              
+              // If all chunks for this i value are completed, mark it as done
+              if (partialChunkProgress.get(i).size === currentChunk.totalChunks) {
+                completedChunks.add(i);
+                partialChunkProgress.delete(i); // Clean up
+              }
+              
+              completedChunkWork += status[msg.id].totalJ;
+            } else {
+              // For regular chunks, mark the i value as completed
+              completedChunks.add(currentChunk.start);
+              completedChunkWork += status[msg.id].totalJ;
+            }
+            
             // Save progress
-            saveProgress(wordListHash, Array.from(completedChunks), completedChunkWork);
+            saveProgress(wordListHash, Array.from(completedChunks), completedChunkWork, partialChunkProgress);
             
             status[msg.id].currentChunk = chunk;
             status[msg.id].chunksCompleted++;
@@ -509,15 +591,27 @@ if (isMainThread) {
 
   // ── work processing function ──
   function processChunk(chunk) {
-    const { start, end } = chunk;
+    const { start, end, jStart, jEnd } = chunk;
     
     // Process single i value
     for (let i = start; i < end; i++) {
       const jList = [...N2[i]].filter(j => j > i).sort((a, b) => a - b);
-      const actualTotalJ = jList.length; // Calculate actual number of j values
-      let jProgress = 0;
       
-      // Report the actual totalJ to main thread
+      // Handle partial chunks for hard i values
+      let actualTotalJ, jProgress = 0;
+      let processStart = 0, processEnd = jList.length;
+      
+      if (jStart !== undefined && jEnd !== undefined) {
+        // Process only a portion of the j values for this chunk
+        processStart = jStart;
+        processEnd = jEnd;
+        actualTotalJ = processEnd - processStart;
+      } else {
+        // Process all j values for regular chunks
+        actualTotalJ = jList.length;
+      }
+      
+      // Report initial progress to main thread
       parentPort.postMessage({ 
         type: "tick", 
         id: WID, 
@@ -525,7 +619,9 @@ if (isMainThread) {
         totalJ: actualTotalJ 
       });
       
-      for (const j of jList) {
+      // Process j values in the assigned range
+      for (let jIdx = processStart; jIdx < processEnd; jIdx++) {
+        const j = jList[jIdx];
         const kList = tList(i, j);
         for (const k of kList) {
           const lList = kList.filter(l => l > k && N2[k].has(l));
