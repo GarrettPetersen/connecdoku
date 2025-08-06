@@ -23,9 +23,6 @@
   "Movies featuring Chiwetel Ejiofor": [
     "12 Years a Slave"
   ],
-  "Movies featuring Lupita Nyong'o": [
-    "12 Years a Slave"
-  ],
   "Sports Events": [
     "1955 World Series"
   ],
@@ -269,6 +266,9 @@
   "Songs by Green Day": [
     "Basket Case"
   ],
+  "Movies featuring Kim Basinger": [
+    "Batman"
+  ],
   "Charles Darwin": [
     "Beagle"
   ],
@@ -349,6 +349,15 @@
   ],
   "Manufactured by Sikorsky": [
     "Black Hawk"
+  ],
+  "Movies directed by Ryan Coogler": [
+    "Black Panther"
+  ],
+  "Movies featuring Chadwick Boseman": [
+    "Black Panther"
+  ],
+  "Movies featuring Michael B. Jordan": [
+    "Black Panther"
   ],
   "Movies featuring Rutger Hauer": [
     "Blade Runner"
@@ -1937,9 +1946,6 @@
   "Movies featuring Tom Berenger": [
     "Platoon"
   ],
-  "Movies featuring Willem Dafoe": [
-    "Platoon"
-  ],
   "Movies directed by Mike Gabriel": [
     "Pocahontas"
   ],
@@ -2228,9 +2234,6 @@
   "Movies featuring Gabrielle Anwar": [
     "Scent of a Woman"
   ],
-  "Movies directed by Richard Donner": [
-    "Scrooged"
-  ],
   "Movies featuring John Forsythe": [
     "Scrooged"
   ],
@@ -2342,9 +2345,6 @@
   "Movies directed by Jeannot Szwarc": [
     "Somewhere in Time"
   ],
-  "Movies featuring Christopher Reeve": [
-    "Somewhere in Time"
-  ],
   "Movies featuring Jane Seymour": [
     "Somewhere in Time"
   ],
@@ -2374,6 +2374,15 @@
   ],
   "Language": [
     "Spell"
+  ],
+  "Movies directed by Sam Raimi": [
+    "Spider-Man"
+  ],
+  "Movies featuring Kirsten Dunst": [
+    "Spider-Man"
+  ],
+  "Movies featuring Tobey Maguire": [
+    "Spider-Man"
   ],
   "Manufactured by Supermarine": [
     "Spitfire"
@@ -2417,14 +2426,14 @@
   "Manufactured by Junkers": [
     "Stuka"
   ],
+  "Movies featuring Margot Kidder": [
+    "Superman"
+  ],
   "Songs by Stevie Wonder": [
     "Superstition"
   ],
   "Things Surinamese": [
     "Suriname"
-  ],
-  "Movies directed by Tim Burton": [
-    "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
   "Songs by Guns N' Roses": [
     "Sweet Child O' Mine"
@@ -3355,6 +3364,10 @@
     "12 Monkeys",
     "Time Bandits"
   ],
+  "Movies featuring Lupita Nyong'o": [
+    "12 Years a Slave",
+    "Black Panther"
+  ],
   "Movies featuring David Strathairn": [
     "A Map of the World",
     "Nomadland"
@@ -3463,6 +3476,10 @@
     "Bambi",
     "Snow White and the Seven Dwarfs"
   ],
+  "Movies directed by Tim Burton": [
+    "Batman",
+    "Sweeney Todd: The Demon Barber of Fleet Street"
+  ],
   "Things Botswanan": [
     "Bechuanaland",
     "Botswana"
@@ -3498,10 +3515,6 @@
   "Movies featuring Emma Stone": [
     "Birdman",
     "La La Land"
-  ],
-  "Movies featuring Michael Keaton": [
-    "Birdman",
-    "Spotlight"
   ],
   "Religious Titles": [
     "Bishop",
@@ -4143,6 +4156,10 @@
     "Platoon",
     "The Hand"
   ],
+  "Movies featuring Willem Dafoe": [
+    "Platoon",
+    "Spider-Man"
+  ],
   "Movies directed by Alfred Hitchcock": [
     "Psycho",
     "Rear Window"
@@ -4203,6 +4220,10 @@
     "Scotch",
     "Whiskey"
   ],
+  "Movies directed by Richard Donner": [
+    "Scrooged",
+    "Superman"
+  ],
   "Movies directed by Frank Miller": [
     "Sin City",
     "Sin City: A Dame to Kill For"
@@ -4226,6 +4247,10 @@
   "Movies featuring David Bowie": [
     "Snowman",
     "The Man Who Fell to Earth"
+  ],
+  "Movies featuring Christopher Reeve": [
+    "Somewhere in Time",
+    "Superman"
   ],
   "Platform Games": [
     "Sonic",
@@ -4501,6 +4526,11 @@
     "Baghdad",
     "Iraq",
     "The Iran-Iraq War"
+  ],
+  "Movies featuring Michael Keaton": [
+    "Batman",
+    "Birdman",
+    "Spotlight"
   ],
   "Things Congolese": [
     "Belgian Congo",
@@ -4861,11 +4891,6 @@
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
     "Pirates of the Caribbean: The Curse of the Black Pearl"
-  ],
-  "Movies featuring Gene Hackman": [
-    "Poseidon",
-    "The French Connection",
-    "Unforgiven"
   ],
   "Movies featuring Billy Dee Williams": [
     "Return of the Jedi",
