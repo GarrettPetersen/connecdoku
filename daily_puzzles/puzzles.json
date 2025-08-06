@@ -1798,5 +1798,85 @@
         "Arrietty"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1860s",
+      "18th Century",
+      "Ends with ARK",
+      "Roman Empire"
+    ],
+    "cols": [
+      "Assassins",
+      "Movies",
+      "Place Names",
+      "Things British"
+    ],
+    "words": [
+      [
+        "John Wilkes Booth",
+        "Little Women",
+        "Lincoln",
+        "Alice's Adventures in Wonderland"
+      ],
+      [
+        "Charlotte Corday",
+        "Beethoven",
+        "Washington",
+        "Newton"
+      ],
+      [
+        "Arya Stark",
+        "Jurassic Park",
+        "Denmark",
+        "Something is rotten in Denmark"
+      ],
+      [
+        "Brutus",
+        "Cleopatra",
+        "Herculaneum",
+        "Britannia"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "20th Century",
+      "Foods",
+      "Former British Colonies",
+      "Islands"
+    ],
+    "cols": [
+      "Ends with INI",
+      "Republics",
+      "Things American",
+      "Things Canadian"
+    ],
+    "words": [
+      [
+        "Lamborghini",
+        "Chad",
+        "Ask not what your country can do for you",
+        "Anne of Green Gables"
+      ],
+      [
+        "Tortellini",
+        "Turkey",
+        "Apple Pie",
+        "Poutine"
+      ],
+      [
+        "Eswatini",
+        "India",
+        "United States",
+        "Canada"
+      ],
+      [
+        "Santorini",
+        "Ireland",
+        "Staten Island",
+        "Baffin"
+      ]
+    ]
   }
 ]
