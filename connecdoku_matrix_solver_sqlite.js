@@ -207,64 +207,71 @@ if (isMainThread) {
   // ── work queue management ──
   const workQueue = [];
   
-  // Calculate difficulty of each i value (number of valid j connections)
-  const iDifficulties = [];
+  // First, calculate difficulties and create initial chunks
+  const difficulties = new Map();
+  
   for (let i = 0; i < n; i++) {
+    // Skip if this chunk was already completed
+    if (completedChunks.has(i)) {
+      continue;
+    }
+
+    // Calculate difficulty (number of valid j connections)
     let validJCount = 0;
     for (let j = i + 1; j < n; j++) {
       if (A2[i][j] >= 4) {
         validJCount++;
       }
     }
-    iDifficulties.push({ i, difficulty: validJCount });
-  }
-  
-  // Sort by difficulty (hardest first) and create adaptive chunks
-  iDifficulties.sort((a, b) => b.difficulty - a.difficulty);
-  
-  for (const { i } of iDifficulties) {
-    // Skip if this chunk was already completed
-    if (completedChunks.has(i)) {
-      continue;
-    }
+    difficulties.set(i, validJCount);
     
-    // For very hard chunks (difficulty > 50), create multiple smaller chunks
-    const difficulty = iDifficulties.find(d => d.i === i).difficulty;
-    if (difficulty > 50) {
-      // Split into 4 smaller chunks for very hard i values
-      const chunkSize = Math.ceil(difficulty / 4);
-      for (let chunk = 0; chunk < 4; chunk++) {
-        // Skip if this sub-chunk was already completed
-        if (partialChunkProgress.has(i) && partialChunkProgress.get(i).has(chunk)) {
-          continue;
-        }
-        
-        workQueue.push({
-          start: i,
-          end: i + 1, // Still single i value
-          jStart: chunk * chunkSize,
-          jEnd: Math.min((chunk + 1) * chunkSize, difficulty),
-          chunkIndex: chunk,
-          totalChunks: 4,
-          id: workQueue.length,
-          totalJ: 0 // Will be updated by worker when it starts processing
-        });
-      }
-    } else {
-      // Regular chunk for easier i values
-      workQueue.push({
-        start: i,
-        end: i + 1, // Single i value per chunk
-        id: workQueue.length,
-        totalJ: 0 // Will be updated by worker when it starts processing
-      });
-    }
+    // Create initial chunk
+    workQueue.push({
+      start: i,
+      end: i + 1,
+      id: workQueue.length,
+      difficulty: validJCount,
+      totalJ: 0
+    });
   }
   
-  // Shuffle the work queue to distribute hard/easy chunks evenly
+  // Shuffle all chunks first
   for (let i = workQueue.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [workQueue[i], workQueue[j]] = [workQueue[j], workQueue[i]];
+  }
+  
+  // Then split hard chunks in place
+  for (let i = 0; i < workQueue.length; i++) {
+    const chunk = workQueue[i];
+    if (chunk.difficulty > 50) {
+      // Remove this chunk
+      workQueue.splice(i, 1);
+      i--; // Adjust index since we removed an item
+      
+      // Split into 4 smaller chunks
+      const chunkSize = Math.ceil(chunk.difficulty / 4);
+      for (let subChunk = 0; subChunk < 4; subChunk++) {
+        // Skip if this sub-chunk was already completed
+        if (partialChunkProgress.has(chunk.start) && 
+            partialChunkProgress.get(chunk.start).has(subChunk)) {
+          continue;
+        }
+        
+        // Insert the sub-chunk at a random position
+        const insertPos = Math.floor(Math.random() * (workQueue.length + 1));
+        workQueue.splice(insertPos, 0, {
+          start: chunk.start,
+          end: chunk.end,
+          jStart: subChunk * chunkSize,
+          jEnd: Math.min((subChunk + 1) * chunkSize, chunk.difficulty),
+          chunkIndex: subChunk,
+          totalChunks: 4,
+          id: workQueue.length,
+          totalJ: 0
+        });
+      }
+    }
   }
   
   // Log which chunks are being split
@@ -293,8 +300,8 @@ if (isMainThread) {
       const elapsed = (performance.now() - t0) / 1000;
       let out = "";
       
-      // Overall progress bar - account for completed work + current progress
-      const completedWork = totalCompletedWork + status.reduce((sum, st) => sum + st.jProgress, 0);
+      // Overall progress bar - account for completed chunks + current progress
+      const completedWork = completedChunkWork + status.reduce((sum, st) => sum + st.jProgress, 0);
       
       // Use the exact total work calculated upfront
       const overallProgress = totalWorkEstimate > 0 ? completedWork / totalWorkEstimate : 0;
@@ -393,19 +400,15 @@ if (isMainThread) {
           }
           w.postMessage({ type: "work", chunk });
         } else {
-          // No more work, mark worker as done
+          // No more work, mark worker as done and send cleanup
           if (status[msg.id]) {
             status[msg.id].done = true;
             status[msg.id].puzzlesFound = msg.puzzlesFound || 0;
             status[msg.id].puzzlesInserted = msg.puzzlesInserted || 0;
           }
-          active--;
+          // Send cleanup message to this worker immediately
+          w.postMessage({ type: "cleanup" });
           redraw();
-          if (active === 0) {
-            // Send cleanup message to all workers
-            console.log("\nAll work completed. Sending cleanup messages to workers...");
-            workers.forEach(w => w.postMessage({ type: "cleanup" }));
-          }
         }
       } else if (msg.type === "cleanup") {
         // Worker is cleaning up, close its database connection
@@ -416,7 +419,10 @@ if (isMainThread) {
         }
         active--;
         redraw();
-        if (active === 0) {
+        
+        // Check if all workers have cleaned up
+        const allDone = status.every(st => st.done);
+        if (allDone) {
           // Wait a moment for any final database writes to complete
           console.log("All workers cleaned up. Closing database...");
           setTimeout(() => {
