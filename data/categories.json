@@ -113,6 +113,7 @@
   ],
   "1790s": [
     "Adams",
+    "Charlotte Corday",
     "The Haitian Revolution",
     "The Whiskey Rebellion",
     "Washington"
@@ -233,6 +234,7 @@
     "Beethoven",
     "Belle",
     "Catherine",
+    "Charlotte Corday",
     "Dream of the Red Chamber",
     "Give me liberty or give me death",
     "Handel",
@@ -313,6 +315,7 @@
     "Gone with the Wind",
     "Hindenburg",
     "Hoover",
+    "King Kong",
     "Light in August",
     "Manchukuo",
     "Roosevelt",
@@ -478,6 +481,7 @@
     "Respect",
     "Roy Cohn",
     "Sanjuro",
+    "Sirhan Sirhan",
     "Slaughterhouse-Five",
     "Sputnik",
     "Stranger in a Strange Land",
@@ -633,6 +637,7 @@
     "Like a Prayer",
     "Little Shop of Horrors",
     "Matilda",
+    "Mehmet Ali Agca",
     "Metal Gear",
     "My Neighbor Totoro",
     "National Lampoon's Christmas Vacation",
@@ -1057,6 +1062,7 @@
     "Glass",
     "Gone Girl",
     "Green Book",
+    "Harambe",
     "Harmony of the Seas",
     "Harry Potter and the Deathly Hallows: Part 1",
     "Harry Potter and the Deathly Hallows: Part 2",
@@ -1395,6 +1401,7 @@
     "Kiki's Delivery Service",
     "Kind Hearts and Coronets",
     "Kindred",
+    "King Kong",
     "Kirk",
     "Kobe",
     "Kramer vs. Kramer",
@@ -1437,6 +1444,7 @@
     "Mays",
     "Mazda",
     "McLaren",
+    "Mehmet Ali Agca",
     "Mercury",
     "Metal Gear",
     "Midnight Cowboy",
@@ -1543,6 +1551,7 @@
     "Shakespeare in Love",
     "Silver",
     "Singin' in the Rain",
+    "Sirhan Sirhan",
     "Slaughterhouse-Five",
     "Smart",
     "Smells Like Teen Spirit",
@@ -1844,6 +1853,7 @@
     "Green Book",
     "Grover",
     "Hairspray",
+    "Harambe",
     "Harmony of the Seas",
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Deathly Hallows",
@@ -2244,6 +2254,7 @@
     "Jingle All the Way",
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
+    "King Kong",
     "Live Free or Die Hard",
     "Looper",
     "Pirates of the Caribbean: At World's End",
@@ -2332,6 +2343,7 @@
     "Jurassic Park",
     "Kagemusha",
     "Kiki's Delivery Service",
+    "King Kong",
     "Krakatoa",
     "Light in August",
     "Lilo & Stitch",
@@ -2832,12 +2844,18 @@
     "Washington"
   ],
   "Assassins": [
+    "Agent 47",
+    "Arya Stark",
     "Black Widow",
     "Brutus",
     "Cassius",
+    "Charlotte Corday",
+    "Ezio Auditore",
     "Gavrilo Princip",
     "John Wilkes Booth",
-    "Lee Harvey Oswald"
+    "Lee Harvey Oswald",
+    "Mehmet Ali Agca",
+    "Sirhan Sirhan"
   ],
   "Associated with Edgar Allan Poe": [
     "Amontillado",
@@ -3209,6 +3227,7 @@
     "It's a Wonderful Life",
     "Kagemusha",
     "Kind Hearts and Coronets",
+    "King Kong",
     "Lawrence of Arabia",
     "Othello",
     "Rashomon",
@@ -3321,6 +3340,7 @@
     "All You Need Is Kill",
     "Animal Farm",
     "Anne of Green Gables",
+    "Arya Stark",
     "As I Lay Dying",
     "Ball Lightning",
     "Beloved",
@@ -4224,6 +4244,7 @@
     "Frankly, my dear, I don't give a damn",
     "Gone with the Wind",
     "Here's looking at you, kid",
+    "King Kong",
     "The Wizard of Oz"
   ],
   "Classic Literature": [
@@ -5806,6 +5827,7 @@
     "Kill Bill: Volume 1",
     "Kind Hearts and Coronets",
     "Kindred",
+    "King Kong",
     "Krakatoa",
     "Kramer vs. Kramer",
     "La La Land",
@@ -6278,6 +6300,9 @@
   "Ends with  38": [
     "Carcano Model 38"
   ],
+  "Ends with  47": [
+    "Agent 47"
+  ],
   "Ends with  AM": [
     "I think, therefore I am"
   ],
@@ -6436,6 +6461,7 @@
     "Bach",
     "Kreplach",
     "Peach",
+    "Princess Peach",
     "Rugelach"
   ],
   "Ends with ACK": [
@@ -6812,6 +6838,7 @@
     "Kalahari"
   ],
   "Ends with ARK": [
+    "Arya Stark",
     "Denmark",
     "Jurassic Park",
     "Sark",
@@ -7335,6 +7362,7 @@
     "Cedar"
   ],
   "Ends with DAY": [
+    "Charlotte Corday",
     "Doris Day",
     "Faraday",
     "Groundhog Day",
@@ -7961,6 +7989,9 @@
   "Ends with GBY": [
     "Rugby"
   ],
+  "Ends with GCA": [
+    "Mehmet Ali Agca"
+  ],
   "Ends with GE!": [
     "Moulin Rouge!"
   ],
@@ -8120,6 +8151,7 @@
     "Kublai Khan",
     "Leviathan",
     "Möngke Khan",
+    "Sirhan Sirhan",
     "Ögedei Khan"
   ],
   "Ends with HAU": [
@@ -8352,6 +8384,9 @@
   ],
   "Ends with IGH": [
     "Raleigh"
+  ],
+  "Ends with IGI": [
+    "Luigi"
   ],
   "Ends with IGN": [
     "No Parking Sign",
@@ -9211,6 +9246,9 @@
     "The Nightmare Before Christmas",
     "White Christmas"
   ],
+  "Ends with MBE": [
+    "Harambe"
+  ],
   "Ends with MBI": [
     "Bambi"
   ],
@@ -9755,6 +9793,7 @@
     "Loki"
   ],
   "Ends with OKO": [
+    "Koko",
     "Pom Poko"
   ],
   "Ends with OKU": [
@@ -9851,7 +9890,9 @@
     "Toblerone"
   ],
   "Ends with ONG": [
+    "Donkey Kong",
     "Dugong",
+    "King Kong",
     "Ping Pong",
     "Song"
   ],
@@ -9932,6 +9973,7 @@
   ],
   "Ends with ORE": [
     "Dumbledore",
+    "Ezio Auditore",
     "Fillmore",
     "Kafka on the Shore",
     "Lenore",
@@ -10377,6 +10419,7 @@
     "Turin"
   ],
   "Ends with RIO": [
+    "Mario",
     "Super Mario"
   ],
   "Ends with RIS": [
@@ -10585,6 +10628,7 @@
     "Chisel"
   ],
   "Ends with SER": [
+    "Bowser",
     "Dresser",
     "Nasser"
   ],
@@ -11852,6 +11896,10 @@
     "Wreck-It Ralph",
     "Zootopia"
   ],
+  "Famous Animals": [
+    "Harambe",
+    "Koko"
+  ],
   "Famous Quotes": [
     "All the world's a stage",
     "Ask not what your country can do for you",
@@ -12077,6 +12125,11 @@
     "Peahen",
     "Sow"
   ],
+  "Fictional Animals": [
+    "Bowser",
+    "Donkey Kong",
+    "King Kong"
+  ],
   "Fictional Characters": [
     "Bugs Bunny",
     "Daffy Duck",
@@ -12101,6 +12154,7 @@
     "Yosemite Sam"
   ],
   "Fictional People": [
+    "Agent 47",
     "Aladdin",
     "Angel",
     "Anna",
@@ -12108,6 +12162,7 @@
     "Anne of Green Gables",
     "Annie",
     "Arrietty",
+    "Arya Stark",
     "Athena",
     "Aurora",
     "Batman",
@@ -12116,6 +12171,7 @@
     "Billie Jean",
     "Black Panther",
     "Black Widow",
+    "Bowser",
     "Bravo",
     "Buttercup",
     "Captain America",
@@ -12128,8 +12184,10 @@
     "Daisy",
     "Daphne",
     "Doctor Octopus",
+    "Donkey Kong",
     "Duke",
     "Elsa",
+    "Ezio Auditore",
     "Flash",
     "Fred",
     "Gambit",
@@ -12154,12 +12212,15 @@
     "Juliet",
     "Khan",
     "King",
+    "King Kong",
     "Kirk",
     "Lando",
     "Lenore",
     "Lex Luthor",
     "Loki",
+    "Luigi",
     "Magneto",
+    "Mario",
     "Moana",
     "Mr. Freeze",
     "Mystique",
@@ -12175,6 +12236,7 @@
     "Pharaoh",
     "Phoenix",
     "Pinocchio",
+    "Princess Peach",
     "Professor X",
     "Red Hood",
     "Riddler",
@@ -13026,9 +13088,18 @@
     "Prussia",
     "West Germany"
   ],
+  "Giant Monsters": [
+    "King Kong"
+  ],
   "Golf Terms": [
     "Club",
     "Green"
+  ],
+  "Gorillas": [
+    "Donkey Kong",
+    "Harambe",
+    "King Kong",
+    "Koko"
   ],
   "Gothic Architecture": [
     "Notre Dame"
@@ -13368,6 +13439,7 @@
     "I see dead people",
     "IT",
     "Jaws",
+    "King Kong",
     "Little Shop of Horrors",
     "Psycho",
     "Resident Evil",
@@ -14681,6 +14753,7 @@
   "Men": [
     "Achilles",
     "Adams",
+    "Agent 47",
     "Aladdin",
     "Angel",
     "Archduke Franz Ferdinand",
@@ -14698,6 +14771,7 @@
     "Bernie Goetz",
     "Bismarck",
     "Black Panther",
+    "Bowser",
     "Brando",
     "Bravo",
     "Brutus",
@@ -14733,6 +14807,7 @@
     "Davy Crockett",
     "Dirac",
     "Doctor Octopus",
+    "Donkey Kong",
     "Drake",
     "Du Fu",
     "Dylan",
@@ -14744,6 +14819,7 @@
     "Elvis",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
+    "Ezio Auditore",
     "Faraday",
     "Ferdinand Magellan",
     "Feynman",
@@ -14766,6 +14842,7 @@
     "Grover",
     "Guan Yu",
     "Handel",
+    "Harambe",
     "Harding",
     "Harrison",
     "Hawkeye",
@@ -14805,6 +14882,7 @@
     "Kepler",
     "Kerouac",
     "Khan",
+    "King Kong",
     "Kirk",
     "Kobe",
     "Krushchev",
@@ -14821,15 +14899,18 @@
     "Liberace",
     "Lincoln",
     "Loki",
+    "Luigi",
     "Madison",
     "Magneto",
     "Malenkov",
     "Mantle",
     "Marciano",
     "Marco Polo",
+    "Mario",
     "Matsui",
     "Mays",
     "McKinley",
+    "Mehmet Ali Agca",
     "Michel Ney",
     "Michelangelo",
     "Mifune",
@@ -14883,6 +14964,7 @@
     "Shaggy",
     "Shakespeare",
     "Sir John A. Macdonald",
+    "Sirhan Sirhan",
     "Socrates",
     "Spider-Man",
     "Subutai",
@@ -15467,6 +15549,9 @@
     "Nugget",
     "Spice"
   ],
+  "Monster Movies": [
+    "King Kong"
+  ],
   "Most Populous Countries (Top 10)": [
     "Bangladesh",
     "Brazil",
@@ -15711,6 +15796,7 @@
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
     "Kind Hearts and Coronets",
+    "King Kong",
     "Krakatoa",
     "Kramer vs. Kramer",
     "La La Land",
@@ -16258,6 +16344,9 @@
   "Movies directed by Eric Darnell": [
     "Madagascar"
   ],
+  "Movies directed by Ernest B. Schoedsack": [
+    "King Kong"
+  ],
   "Movies directed by Francis Ford Coppola": [
     "The Godfather",
     "The Godfather Part II",
@@ -16565,6 +16654,9 @@
   ],
   "Movies directed by Mel Gibson": [
     "Braveheart"
+  ],
+  "Movies directed by Merian C. Cooper": [
+    "King Kong"
   ],
   "Movies directed by Michael Bay": [
     "Armageddon"
@@ -17989,6 +18081,9 @@
   ],
   "Movies featuring F. Murray Abraham": [
     "Amadeus"
+  ],
+  "Movies featuring Fay Wray": [
+    "King Kong"
   ],
   "Movies featuring Faye Dunaway": [
     "Chinatown"
@@ -20694,6 +20789,13 @@
   "Ninja Terms": [
     "Naruto"
   ],
+  "Nintendo Characters": [
+    "Bowser",
+    "Donkey Kong",
+    "Luigi",
+    "Mario",
+    "Princess Peach"
+  ],
   "Nobel Prize Winners": [
     "Einstein",
     "Marie Curie",
@@ -20909,6 +21011,7 @@
   "People": [
     "Achilles",
     "Adams",
+    "Agent 47",
     "Aladdin",
     "Angel",
     "Anna",
@@ -20922,6 +21025,7 @@
     "Aristotle",
     "Arrietty",
     "Arthur",
+    "Arya Stark",
     "Aurora",
     "Bach",
     "Batman",
@@ -20938,6 +21042,7 @@
     "Bismarck",
     "Black Panther",
     "Black Widow",
+    "Bowser",
     "Brando",
     "Bravo",
     "Brutus",
@@ -20958,6 +21063,7 @@
     "Catherine of Aragon",
     "Chad",
     "Charlemagne",
+    "Charlotte Corday",
     "Chou En-Lai",
     "Christopher Columbus",
     "Chubby Checker",
@@ -20981,6 +21087,7 @@
     "Davy Crockett",
     "Dirac",
     "Doctor Octopus",
+    "Donkey Kong",
     "Doris Day",
     "Drake",
     "Du Fu",
@@ -20996,6 +21103,7 @@
     "Elvis",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
+    "Ezio Auditore",
     "Faraday",
     "Ferdinand Magellan",
     "Feynman",
@@ -21018,6 +21126,7 @@
     "Grover",
     "Guan Yu",
     "Handel",
+    "Harambe",
     "Harding",
     "Harrison",
     "Hawkeye",
@@ -21066,8 +21175,10 @@
     "Kepler",
     "Kerouac",
     "Khan",
+    "King Kong",
     "Kirk",
     "Kobe",
+    "Koko",
     "Krushchev",
     "Kublai Khan",
     "Kurosawa",
@@ -21084,6 +21195,7 @@
     "Liberace",
     "Lincoln",
     "Loki",
+    "Luigi",
     "Madison",
     "Madonna",
     "Magneto",
@@ -21093,12 +21205,14 @@
     "Marco Polo",
     "Marie Curie",
     "Marilyn Monroe",
+    "Mario",
     "Mary",
     "Mary I",
     "Mary Rose",
     "Matsui",
     "Mays",
     "McKinley",
+    "Mehmet Ali Agca",
     "Michel Ney",
     "Michelangelo",
     "Mifune",
@@ -21140,6 +21254,7 @@
     "Poe",
     "Polk",
     "Prince",
+    "Princess Peach",
     "Professor X",
     "Prokofiev",
     "Queen Mary",
@@ -21162,6 +21277,7 @@
     "Shaggy",
     "Shakespeare",
     "Sir John A. Macdonald",
+    "Sirhan Sirhan",
     "Sleeping Beauty",
     "Socrates",
     "Sophie, Duchess of Hohenberg",
@@ -22013,6 +22129,9 @@
     "Nothing to fear but fear itself",
     "Tear down this wall"
   ],
+  "Princesses": [
+    "Princess Peach"
+  ],
   "Prison Stories": [
     "The Shawshank Redemption"
   ],
@@ -22082,6 +22201,109 @@
     "Congo",
     "Daintree"
   ],
+  "Real Animals": [
+    "Albatross",
+    "Animal",
+    "Basilisk",
+    "Bear",
+    "Beast",
+    "Beetle",
+    "Black Cat",
+    "Black Panther",
+    "Black Widow",
+    "Blue Jay",
+    "Boar",
+    "Bruin",
+    "Buck",
+    "Buffalo",
+    "Bull",
+    "Cardinal",
+    "Carp",
+    "Cat",
+    "Cobra",
+    "Coral",
+    "Cormorant",
+    "Cow",
+    "Crab",
+    "Crow",
+    "Doctor Octopus",
+    "Doe",
+    "Dog",
+    "Dolphin",
+    "Drake",
+    "Dugong",
+    "Eagle",
+    "Elephant",
+    "Ewe",
+    "Falcon",
+    "Flamingo",
+    "Fox",
+    "Gannet",
+    "Giraffe",
+    "Goat",
+    "Gull",
+    "Harambe",
+    "Hawk",
+    "Hen",
+    "Horse",
+    "Hummingbird",
+    "Jaguar",
+    "K9",
+    "Kiwi",
+    "Koko",
+    "Lion",
+    "Lobster",
+    "Magpie",
+    "Mammoth",
+    "Manatee",
+    "Mare",
+    "Monkey",
+    "Moth",
+    "Orca",
+    "Owl",
+    "Panda",
+    "Panther",
+    "Peacock",
+    "Peahen",
+    "Pelican",
+    "Penguin",
+    "Petrel",
+    "Pink Panther",
+    "Polar Bear",
+    "Puffin",
+    "Python",
+    "Rabbit",
+    "Ram",
+    "Raptor",
+    "Rat",
+    "Raven",
+    "Ray",
+    "Rhino",
+    "Robin",
+    "Rooster",
+    "Sabretooth",
+    "Salmon",
+    "Sam",
+    "Scorpion",
+    "Seahawk",
+    "Seal",
+    "Shadowcat",
+    "Shark",
+    "Sheep",
+    "Skunk",
+    "Sow",
+    "Sparrow",
+    "Stallion",
+    "Swan",
+    "Tern",
+    "Tiger",
+    "Walrus",
+    "Whale",
+    "Wolf",
+    "Wolverine",
+    "Worm",
+    "Zebra"
+  ],
   "Real People": [
     "Achilles",
     "Adams",
@@ -22117,6 +22339,7 @@
     "Catherine of Aragon",
     "Chad",
     "Charlemagne",
+    "Charlotte Corday",
     "Chou En-Lai",
     "Christopher Columbus",
     "Chubby Checker",
@@ -22165,6 +22388,7 @@
     "Grover",
     "Guan Yu",
     "Handel",
+    "Harambe",
     "Harding",
     "Harrison",
     "Hawking",
@@ -22201,6 +22425,7 @@
     "Khan",
     "King",
     "Kobe",
+    "Koko",
     "Krushchev",
     "Kublai Khan",
     "Kurosawa",
@@ -22228,6 +22453,7 @@
     "Matsui",
     "Mays",
     "McKinley",
+    "Mehmet Ali Agca",
     "Michel Ney",
     "Michelangelo",
     "Mifune",
@@ -22269,6 +22495,7 @@
     "Santayana",
     "Shakespeare",
     "Sir John A. Macdonald",
+    "Sirhan Sirhan",
     "Socrates",
     "Sophie, Duchess of Hohenberg",
     "Subutai",
@@ -22424,6 +22651,7 @@
     "Christopher Columbus",
     "Copernicus",
     "Da Vinci",
+    "Ezio Auditore",
     "Ferdinand Magellan",
     "Galileo",
     "Michelangelo",
@@ -23917,6 +24145,9 @@
   "Starts with AFG": [
     "Afghanistan"
   ],
+  "Starts with AGE": [
+    "Agent 47"
+  ],
   "Starts with AGU": [
     "Agua Fresca"
   ],
@@ -24108,6 +24339,9 @@
     "Arthur",
     "Arthur Christmas",
     "Artsakh"
+  ],
+  "Starts with ARY": [
+    "Arya Stark"
   ],
   "Starts with AS ": [
     "As I Lay Dying"
@@ -24458,7 +24692,8 @@
     "Bourbon"
   ],
   "Starts with BOW": [
-    "Bow"
+    "Bow",
+    "Bowser"
   ],
   "Starts with BOX": [
     "Boxing"
@@ -24685,6 +24920,7 @@
     "Charlemagne",
     "Charleston",
     "Charlie",
+    "Charlotte Corday",
     "Charlotte's Web"
   ],
   "Starts with CHE": [
@@ -25076,6 +25312,7 @@
     "Don Quixote",
     "Don't Look Now",
     "Donald",
+    "Donkey Kong",
     "Donnie Brasco",
     "Donnie Darko"
   ],
@@ -25324,6 +25561,9 @@
   ],
   "Starts with EYJ": [
     "Eyjafjallajokull"
+  ],
+  "Starts with EZI": [
+    "Ezio Auditore"
   ],
   "Starts with F-1": [
     "F-16"
@@ -25755,6 +25995,7 @@
     "Happy Together"
   ],
   "Starts with HAR": [
+    "Harambe",
     "Hard Boiled",
     "Harding",
     "Hare",
@@ -26328,6 +26569,7 @@
     "Kind Hearts and Coronets",
     "Kindred",
     "King",
+    "King Kong",
     "King Lear",
     "King William"
   ],
@@ -26356,6 +26598,9 @@
   ],
   "Starts with KOB": [
     "Kobe"
+  ],
+  "Starts with KOK": [
+    "Koko"
   ],
   "Starts with KOM": [
     "Kombucha"
@@ -26616,6 +26861,9 @@
   "Starts with LUG": [
     "Luge"
   ],
+  "Starts with LUI": [
+    "Luigi"
+  ],
   "Starts with LUK": [
     "Luke"
   ],
@@ -26699,6 +26947,7 @@
     "Marilyn Monroe",
     "Marinara",
     "Mariner",
+    "Mario",
     "Marker",
     "Marriott",
     "Mars",
@@ -26759,6 +27008,9 @@
   ],
   "Starts with MEE": [
     "Meet the Robinsons"
+  ],
+  "Starts with MEH": [
+    "Mehmet Ali Agca"
   ],
   "Starts with MEL": [
     "Melody",
@@ -27475,7 +27727,8 @@
     "Prince",
     "Prince Caspian",
     "Prince of Wales",
-    "Princess Mononoke"
+    "Princess Mononoke",
+    "Princess Peach"
   ],
   "Starts with PRO": [
     "Professor X",
@@ -27941,7 +28194,8 @@
   ],
   "Starts with SIR": [
     "Sir John A. Macdonald",
-    "Siren"
+    "Siren",
+    "Sirhan Sirhan"
   ],
   "Starts with SKA": [
     "Skate"
@@ -29972,6 +30226,7 @@
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2",
     "Kindred",
+    "King Kong",
     "Kirk",
     "Kobe",
     "Kramer vs. Kramer",
@@ -30997,6 +31252,7 @@
     "Cassoulet",
     "Champagne",
     "Charlemagne",
+    "Charlotte Corday",
     "Chocolat",
     "Citroën",
     "Concorde",
@@ -31282,6 +31538,7 @@
     "Dante",
     "Elba",
     "Etna",
+    "Ezio Auditore",
     "Ferrari",
     "Fettuccine",
     "Fiat",
@@ -31297,9 +31554,11 @@
     "Lamborghini",
     "Lasagna",
     "Linguine",
+    "Luigi",
     "MSC Meraviglia",
     "Marco Polo",
     "Marinara",
+    "Mario",
     "Maserati",
     "Michelangelo",
     "Minestrone",
@@ -31311,6 +31570,7 @@
     "Pesto",
     "Pizza",
     "Pompeii",
+    "Princess Peach",
     "Prosecco",
     "Ravioli",
     "Rex",
@@ -31979,6 +32239,7 @@
     "Blue Mosque",
     "Constantinople",
     "Hagia Sophia",
+    "Mehmet Ali Agca",
     "The Armenian Genocide",
     "The Fall of Constantinople",
     "Troy",
@@ -32363,6 +32624,7 @@
     "Doe",
     "Dog",
     "Dolphin",
+    "Donkey Kong",
     "Drake",
     "Dugong",
     "Eagle",
@@ -32375,13 +32637,16 @@
     "Giraffe",
     "Goat",
     "Gull",
+    "Harambe",
     "Hawk",
     "Hen",
     "Horse",
     "Hummingbird",
     "Jaguar",
     "K9",
+    "King Kong",
     "Kiwi",
+    "Koko",
     "Lion",
     "Lobster",
     "Magpie",
@@ -32538,12 +32803,24 @@
     "Pickle",
     "Tomato"
   ],
+  "Video Game Characters": [
+    "Agent 47",
+    "Bowser",
+    "Donkey Kong",
+    "Ezio Auditore",
+    "Luigi",
+    "Mario",
+    "Pac-Man",
+    "Princess Peach",
+    "Sonic"
+  ],
   "Video Games": [
     "Among Us",
     "Battlefield",
     "Call of Duty",
     "Cyberpunk",
     "Diablo",
+    "Donkey Kong",
     "Doom",
     "Elden Ring",
     "Europa",
@@ -32554,6 +32831,7 @@
     "Grand Theft Auto",
     "Halo",
     "League of Legends",
+    "Mario",
     "Metal Gear",
     "Minecraft",
     "Overwatch",
@@ -32579,6 +32857,9 @@
     "Victoria",
     "World of Warcraft",
     "X-Wing"
+  ],
+  "Villains": [
+    "Bowser"
   ],
   "Volcanoes": [
     "Dante's Peak",
@@ -32908,6 +33189,7 @@
     "Anne of Green Gables",
     "Annie",
     "Arrietty",
+    "Arya Stark",
     "Athena",
     "Aurora",
     "Belle",
@@ -32919,6 +33201,7 @@
     "Catherine Howard",
     "Catherine Parr",
     "Catherine of Aragon",
+    "Charlotte Corday",
     "Cinderella",
     "Cleopatra",
     "Daisy",
@@ -32938,6 +33221,7 @@
     "Joan of Arc",
     "Juliet",
     "Katrina",
+    "Koko",
     "Lady Jane Grey",
     "Lenore",
     "Madonna",
@@ -32952,6 +33236,7 @@
     "Nina",
     "Olive",
     "Phoenix",
+    "Princess Peach",
     "Queen Mary",
     "Rogue",
     "Santa Maria",
