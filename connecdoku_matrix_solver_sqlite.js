@@ -155,8 +155,9 @@ if (isMainThread) {
   }
 
   // Calculate total work for all i values
+  // Only consider i values that can form valid puzzles (need at least 8 categories total)
   let totalWork = 0;
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < n - 7; i++) {
     let validJCount = 0;
     for (let j = i + 1; j < n; j++) {
       if (A2[i][j] >= 4) {
@@ -180,14 +181,17 @@ if (isMainThread) {
     if (completedChunkWork === 0 && completedChunks.size > 0) {
       console.log("Estimating work from completed chunks...");
       // Calculate work for completed chunks using the same method as total work
+      // Only count chunks that could have been valid (i < n - 7)
       for (const i of completedChunks) {
-        let validJCount = 0;
-        for (let j = i + 1; j < n; j++) {
-          if (A2[i][j] >= 4) {
-            validJCount++;
+        if (i < n - 7) {
+          let validJCount = 0;
+          for (let j = i + 1; j < n; j++) {
+            if (A2[i][j] >= 4) {
+              validJCount++;
+            }
           }
+          completedChunkWork += validJCount;
         }
-        completedChunkWork += validJCount;
       }
       console.log(`Estimated ${completedChunkWork} j-steps from ${completedChunks.size} completed chunks`);
     }
@@ -210,7 +214,8 @@ if (isMainThread) {
   // First, calculate difficulties and create initial chunks
   const difficulties = new Map();
 
-  for (let i = 0; i < n; i++) {
+  // Only create chunks for i values that can form valid puzzles (need at least 8 categories total)
+  for (let i = 0; i < n - 7; i++) {
     // Skip if this chunk was already completed
     if (completedChunks.has(i)) {
       continue;
@@ -281,7 +286,7 @@ if (isMainThread) {
     console.log(`Split ${splitIValues.length} hard i-values into ${splitChunks.length} smaller chunks: ${splitIValues.join(', ')}`);
   }
 
-  console.log(`Total work: ${n} i-values in ${workQueue.length} chunks (${completedChunks.size} already completed)`);
+  console.log(`Total work: ${n - 7} valid i-values in ${workQueue.length} chunks (${completedChunks.size} already completed)`);
 
   // ── progress bookkeeping ──
   const status = Array.from({ length: nWorkers }, () => ({
@@ -306,7 +311,7 @@ if (isMainThread) {
       // Use the exact total work calculated upfront
       const overallProgress = totalWorkEstimate > 0 ? completedWork / totalWorkEstimate : 0;
       out += `\nOverall: [${bar(overallProgress)}] ${(overallProgress * 100).toFixed(1)}% (${completedWork}/${totalWorkEstimate} j-steps)`;
-      out += `\nCompleted chunks: ${completedChunks.size}/${n} i-values`;
+      out += `\nCompleted chunks: ${completedChunks.size}/${n - 7} i-values`;
 
       status.forEach((st, idx) => {
         let pct;
