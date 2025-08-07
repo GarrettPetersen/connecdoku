@@ -150,27 +150,24 @@ function getMultipleRandomPuzzles(db, count, targetCategory = null) {
     });
 }
 
-function getCategoriesFromLast7Days() {
-    const sevenDaysAgo = new Date();
-    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-    
+function getCategoriesFromLastNDays(numDays) {
     const recentCategories = new Set();
-    
-    // Get the last 7 days of puzzles from the daily puzzles file
+
+    // Get the last N days of puzzles from the daily puzzles file
     for (const puzzle of db) {
         // Since we don't have timestamps in the daily puzzles file, 
-        // we'll use the last 7 puzzles as a proxy for "recent"
+        // we'll use the last N puzzles as a proxy for "recent"
         // This is a reasonable approximation for daily puzzles
     }
-    
-    // For now, let's use the last 7 puzzles as "recent"
-    const recentPuzzles = db.slice(-7);
+
+    // For now, let's use the last N puzzles as "recent"
+    const recentPuzzles = db.slice(-numDays);
     for (const puzzle of recentPuzzles) {
         for (const category of [...puzzle.rows, ...puzzle.cols]) {
             recentCategories.add(category);
         }
     }
-    
+
     return Array.from(recentCategories);
 }
 
@@ -180,14 +177,14 @@ function findPuzzleWithNoRecentCategories(db, recentCategories) {
             // If no recent categories, just get a random puzzle
             return getRandomPuzzle(db);
         }
-        
+
         // Use CTE to create a temporary table of recent categories
         // Properly escape category names for SQL
         const recentCategoriesValues = recentCategories.map(cat => {
             const escaped = cat.toLowerCase().replace(/'/g, "''"); // Escape single quotes
             return `('${escaped}')`;
         }).join(',');
-        
+
         const query = `
             WITH recent_categories(category) AS (
                 VALUES ${recentCategoriesValues}
@@ -208,7 +205,7 @@ function findPuzzleWithNoRecentCategories(db, recentCategories) {
             ORDER BY RANDOM()
             LIMIT 1
         `;
-        
+
         db.get(query, (err, row) => {
             if (err) {
                 reject(err);
@@ -651,7 +648,7 @@ async function main() {
                     { name: "🎯 Find a puzzle with low overlap to past categories", value: "low_overlap" },
                     { name: "🎲 Find a truly random puzzle", value: "truly_random" },
                     { name: "🔍 Search for puzzle with specific category", value: "search" },
-                    { name: "🌶️ Secret Sauce: Find puzzle with NO categories from last 7 days", value: "secret_sauce" },
+                    { name: "🌶️ Secret Sauce: Find puzzle with NO categories from recent days", value: "secret_sauce" },
                     { name: "🛑 Stop curating", value: "stop" }
                 ]
             });
@@ -770,7 +767,7 @@ async function main() {
                 console.log(`🔍 Searching for puzzles containing "${targetCategory}"...`);
                 tryingDifferentPuzzle = false;
                 excludedPuzzleHash = null;
-                
+
                 // Ask user if they want to find the best (low overlap) or any puzzle with this category
                 const searchType = await prompts.select({
                     message: "What type of search?",
@@ -779,7 +776,7 @@ async function main() {
                         { name: "🎲 Find any puzzle with this category (faster)", value: "any" }
                     ]
                 });
-                
+
                 // Store the search type for later use
                 searchChoice = searchType;
             } else if (searchChoice === "truly_random") {
@@ -795,20 +792,32 @@ async function main() {
         } else if (searchChoice === "any") {
             result = await findAnyPuzzleWithCategory(targetCategory, excludedPuzzleHash);
         } else if (searchChoice === "secret_sauce") {
-            console.log("🌶️ Secret Sauce: Finding puzzle with NO categories from last 7 days...");
-            const recentCategories = getCategoriesFromLast7Days();
+            // Ask user for number of days
+            const numDays = await prompts.input({
+                message: "How many days of non-overlap would you like? (e.g., 7 for last 7 days)",
+                initial: "7"
+            });
+
+            const days = parseInt(numDays);
+            if (isNaN(days) || days < 1) {
+                console.log("❌ Invalid number of days. Please enter a positive number.");
+                continue;
+            }
+
+            console.log(`🌶️ Secret Sauce: Finding puzzle with NO categories from last ${days} days...`);
+            const recentCategories = getCategoriesFromLastNDays(days);
             console.log(`Recent categories to avoid: ${recentCategories.join(", ")}`);
-            
+
             const sqliteDb = await openDatabase();
             try {
                 // Try multiple times with increasing batch sizes if needed
                 let attempts = 0;
                 const maxAttempts = 3;
-                
+
                 while (attempts < maxAttempts) {
                     attempts++;
                     console.log(`Attempt ${attempts}/${maxAttempts} to find secret sauce puzzle...`);
-                    
+
                     result = await findPuzzleWithNoRecentCategories(sqliteDb, recentCategories);
                     if (result) {
                         // Calculate overlap for display (should be 0 for secret sauce)
@@ -823,12 +832,12 @@ async function main() {
                         console.log(`✅ Found secret sauce puzzle on attempt ${attempts}`);
                         break;
                     }
-                    
+
                     if (attempts < maxAttempts) {
                         console.log(`No valid puzzle found, trying again...`);
                     }
                 }
-                
+
                 if (!result) {
                     console.log("❌ Could not find a puzzle with no recent categories after multiple attempts");
                 }

@@ -1,5 +1,6 @@
 {
   "11th Century": [
+    "Avicenna",
     "The First Crusade",
     "The Norman Conquest",
     "The Tale of Genji",
@@ -94,6 +95,7 @@
     "Mary Rose",
     "Michelangelo",
     "Ming",
+    "Paracelsus",
     "Queen Mary",
     "Romeo",
     "Shakespeare",
@@ -138,12 +140,8 @@
     "The English Civil War",
     "The Glorious Revolution",
     "The Great Fire of London",
-    "The Thirty Years War"
-  ],
-  "1800s": [
-    "Adams",
-    "Jefferson",
-    "Madison"
+    "The Thirty Years War",
+    "William Harvey"
   ],
   "1810s": [
     "Frankenstein",
@@ -168,6 +166,7 @@
     "Victoria"
   ],
   "1840s": [
+    "Elizabeth Blackwell",
     "Harrison",
     "Jane Eyre",
     "Polk",
@@ -197,6 +196,7 @@
     "Grant",
     "John Wilkes Booth",
     "Johnson",
+    "Joseph Lister",
     "Les Misérables",
     "Lincoln",
     "Little Women",
@@ -207,6 +207,7 @@
     "Challenger",
     "Grant",
     "Hayes",
+    "Robert Koch",
     "The Adventures of Tom Sawyer",
     "The Long Depression"
   ],
@@ -236,6 +237,7 @@
     "Catherine",
     "Charlotte Corday",
     "Dream of the Red Chamber",
+    "Edward Jenner",
     "Give me liberty or give me death",
     "Handel",
     "Jefferson",
@@ -258,17 +260,6 @@
     "Washington",
     "Whist",
     "Whitney"
-  ],
-  "1900s": [
-    "Anne of Green Gables",
-    "McKinley",
-    "Peter Pan",
-    "Rasputin",
-    "Roosevelt",
-    "Taft",
-    "The Call of the Wild",
-    "The Tale of Peter Rabbit",
-    "The Wind in the Willows"
   ],
   "1910s": [
     "April 15th, 1912",
@@ -846,9 +837,11 @@
     "Zombie"
   ],
   "19th Century": [
+    "Ada Lovelace",
     "Adams",
     "Alice's Adventures in Wonderland",
     "Annabel",
+    "Annie Oakley",
     "April 14th, 1865",
     "Arthur",
     "Beethoven",
@@ -858,36 +851,55 @@
     "Buchanan",
     "Buick",
     "Cadillac",
+    "Calamity Jane",
     "Call me Ishmael",
     "Challenger",
+    "Charlotte Brontë",
+    "Clara Barton",
+    "Clara Schumann",
     "Cleveland",
     "Crime and Punishment",
     "Curie",
     "Darwin",
+    "Dorothea Dix",
     "Dracula",
     "Edison",
     "Einstein",
     "Elementary, my dear Watson",
+    "Elizabeth Barrett Browning",
+    "Elizabeth Blackwell",
+    "Elizabeth Cady Stanton",
+    "Emily Brontë",
+    "Emily Dickinson",
     "Euchre",
+    "Fanny Mendelssohn",
     "Faraday",
     "Fiat",
     "Fillmore",
+    "Florence Nightingale",
     "Ford",
     "Ford's Theatre",
     "Four score and seven years ago",
     "Frankenstein",
     "Garfield",
+    "George Eliot",
     "Gran Colombia",
     "Grant",
+    "Harriet Beecher Stowe",
+    "Harriet Tubman",
     "Harrison",
     "Hayes",
     "Hearts",
+    "Hetty Green",
+    "Isabella Bird",
     "It was the best of times",
     "Jackson",
+    "Jane Austen",
     "Jane Eyre",
     "Jefferson",
     "John Wilkes Booth",
     "Johnson",
+    "Joseph Lister",
     "June 18th, 1815",
     "Krakatoa",
     "La Garde meurt, elle ne se rend pas!",
@@ -895,8 +907,15 @@
     "Les Misérables",
     "Lincoln",
     "Little Women",
+    "Lola Montez",
+    "Louis Pasteur",
+    "Louisa May Alcott",
+    "Madame C.J. Walker",
     "Madison",
     "Marie Curie",
+    "Mary Cassatt",
+    "Mary Kingsley",
+    "Mary Shelley",
     "McKinley",
     "Mercedes",
     "Merde!",
@@ -916,10 +935,15 @@
     "Polk",
     "Pride and Prejudice",
     "Renault",
+    "Robert Koch",
+    "Rosa Bonheur",
+    "Sarah Bernhardt",
     "Sir John A. Macdonald",
     "Skoda",
+    "Sojourner Truth",
     "Spades",
     "Studebaker",
+    "Susan B. Anthony",
     "Tambora",
     "Taylor",
     "Tesla",
@@ -953,6 +977,7 @@
     "Vauxhall",
     "Victor",
     "Victoria",
+    "Victoria Woodhull",
     "Von Blucher",
     "War and Peace",
     "Water, water everywhere",
@@ -980,116 +1005,6 @@
     "Ides of March",
     "The Roman Empire",
     "Veni, vidi, vici"
-  ],
-  "2000s": [
-    "1Q84",
-    "2046",
-    "9/11",
-    "A Beautiful Mind",
-    "Agent 47",
-    "All You Need Is Kill",
-    "Attack of the Clones",
-    "Avatar",
-    "Bad Santa",
-    "Ball Lightning",
-    "Bush",
-    "Call of Duty",
-    "Chicago",
-    "Chocolat",
-    "Clinton",
-    "Concordia",
-    "Crash",
-    "Crouching Tiger, Hidden Dragon",
-    "Death Proof",
-    "Deja Vu",
-    "Donnie Darko",
-    "Doom",
-    "Dreamgirls",
-    "Elf",
-    "Ezio Auditore",
-    "Four Christmases",
-    "Frequency",
-    "Gladiator",
-    "God of War",
-    "Hairspray",
-    "Harry Potter and the Chamber of Secrets",
-    "Harry Potter and the Deathly Hallows",
-    "Harry Potter and the Goblet of Fire",
-    "Harry Potter and the Half-Blood Prince",
-    "Harry Potter and the Order of the Phoenix",
-    "Harry Potter and the Prisoner of Azkaban",
-    "Harry Potter and the Sorcerer's Stone",
-    "Hedwig and the Angry Inch",
-    "Hero",
-    "Holes",
-    "House of Flying Daggers",
-    "Ice Age",
-    "In the Mood for Love",
-    "Inglourious Basterds",
-    "Insomnia",
-    "Kafka on the Shore",
-    "Kate & Leopold",
-    "Katrina",
-    "Kill Bill: Volume 1",
-    "Kill Bill: Volume 2",
-    "League of Legends",
-    "Live Free or Die Hard",
-    "Love Actually",
-    "Madagascar",
-    "Million Dollar Baby",
-    "Moulin Rouge!",
-    "My Blueberry Nights",
-    "No Country for Old Men",
-    "Oasis of the Seas",
-    "Obama",
-    "Percy Jackson & the Olympians",
-    "Pirates of the Caribbean: At World's End",
-    "Pirates of the Caribbean: Dead Man's Chest",
-    "Pirates of the Caribbean: The Curse of the Black Pearl",
-    "Primer",
-    "Queen Mary 2",
-    "Red Dragon",
-    "Red Hood",
-    "Rent",
-    "Revenge of the Sith",
-    "Saw",
-    "Sin City",
-    "Slumdog Millionaire",
-    "Spider-Man",
-    "Spirited Away",
-    "Sweeney Todd: The Demon Barber of Fleet Street",
-    "The Butterfly Effect",
-    "The Da Vinci Code",
-    "The Dark Forest",
-    "The Departed",
-    "The Girl with the Dragon Tattoo",
-    "The Great Recession",
-    "The Holiday",
-    "The Hunger Games",
-    "The Hurt Locker",
-    "The Iraq War",
-    "The Lake House",
-    "The London Bombings",
-    "The Lord of the Rings: The Fellowship of the Ring",
-    "The Lord of the Rings: The Return of the King",
-    "The Lord of the Rings: The Two Towers",
-    "The Map of Time",
-    "The Phantom of the Opera",
-    "The Polar Express",
-    "The Road",
-    "The Santa Clause 2",
-    "The Santa Clause 3: The Escape Clause",
-    "The Three-Body Problem",
-    "The Time Traveler's Wife",
-    "The Village",
-    "The Wandering Earth",
-    "The War on Terror",
-    "The Witcher",
-    "Troy",
-    "Twilight",
-    "Unbreakable",
-    "Vantage Point",
-    "World of Warcraft"
   ],
   "2010s": [
     "11/22/63",
@@ -1527,6 +1442,7 @@
     "May the Force be with you",
     "Mays",
     "Mazda",
+    "McKinley",
     "McLaren",
     "Mehmet Ali Agca",
     "Mercury",
@@ -1921,6 +1837,7 @@
     "Chad",
     "Chicago",
     "Chocolat",
+    "Clinton",
     "Cobb",
     "Colorless Tsukuru Tazaki",
     "Concordia",
@@ -2134,6 +2051,7 @@
     "USS John Lewis",
     "USS Michael Monsoor",
     "USS Zumwalt",
+    "Unbreakable",
     "Usher",
     "Vantage Point",
     "Velma",
@@ -2210,6 +2128,7 @@
     "Winnie the Pooh"
   ],
   "2nd Century": [
+    "Galen",
     "The Roman Empire"
   ],
   "2nd Century BC": [
@@ -2274,6 +2193,7 @@
   ],
   "5th Century BC": [
     "Confucius",
+    "Hippocrates",
     "Know thyself",
     "Plato",
     "Socrates",
@@ -2403,7 +2323,8 @@
     "The Legend of Zelda"
   ],
   "Actors": [
-    "Mifune"
+    "Mifune",
+    "Sarah Bernhardt"
   ],
   "Adventure Stories": [
     "A Bug's Life",
@@ -2914,7 +2835,9 @@
   ],
   "Artists": [
     "Da Vinci",
-    "Michelangelo"
+    "Mary Cassatt",
+    "Michelangelo",
+    "Rosa Bonheur"
   ],
   "Asian Countries": [
     "Korea",
@@ -3712,10 +3635,12 @@
     "Bezos",
     "Ford",
     "Gates",
+    "Hetty Green",
     "Isidor Straus",
     "Jobs",
     "John Jacob Astor",
     "Lex Luthor",
+    "Madame C.J. Walker",
     "Musk",
     "Rockefeller",
     "Thomas Andrews"
@@ -4368,21 +4293,27 @@
     "As I Lay Dying",
     "Brave New World",
     "Call me Ishmael",
+    "Charlotte Brontë",
     "Crime and Punishment",
     "Don Quixote",
     "Dracula",
     "Dream of the Red Chamber",
     "Elementary, my dear Watson",
+    "Emily Brontë",
     "For Whom the Bell Tolls",
     "Frankenstein",
+    "George Eliot",
     "Give me liberty or give me death",
     "Gone with the Wind",
     "It was the best of times",
+    "Jane Austen",
     "Jane Eyre",
     "Journey to the West",
     "Les Misérables",
     "Light in August",
     "Little Women",
+    "Louisa May Alcott",
+    "Mary Shelley",
     "Moby Dick",
     "One Hundred Years of Solitude",
     "Pride and Prejudice",
@@ -4687,6 +4618,8 @@
   "Composers": [
     "Bach",
     "Beethoven",
+    "Clara Schumann",
+    "Fanny Mendelssohn",
     "Handel",
     "Mozart"
   ],
@@ -5528,6 +5461,9 @@
   "Dance Films": [
     "The Full Monty",
     "The Red Shoes"
+  ],
+  "Dancers": [
+    "Lola Montez"
   ],
   "Dances": [
     "CHA",
@@ -6557,6 +6493,7 @@
     "Million Dollar Baby"
   ],
   "Ends with ACE": [
+    "Ada Lovelace",
     "Boaty McBoatface",
     "Buckingham Palace",
     "Liberace",
@@ -6720,6 +6657,7 @@
   ],
   "Ends with ALE": [
     "Blue Whale",
+    "Florence Nightingale",
     "Tamale",
     "Tell‑Tale",
     "The Handmaid's Tale",
@@ -6847,6 +6785,7 @@
     "Wand"
   ],
   "Ends with ANE": [
+    "Calamity Jane",
     "Citizen Kane",
     "Hurricane"
   ],
@@ -6865,6 +6804,7 @@
     "Rank"
   ],
   "Ends with ANN": [
+    "Clara Schumann",
     "Eichmann"
   ],
   "Ends with ANO": [
@@ -7082,7 +7022,8 @@
     "The Aristocats"
   ],
   "Ends with ATT": [
-    "Hyatt"
+    "Hyatt",
+    "Mary Cassatt"
   ],
   "Ends with ATU": [
     "Vanuatu"
@@ -7557,6 +7498,9 @@
   "Ends with DIT": [
     "Reddit"
   ],
+  "Ends with DIX": [
+    "Dorothea Dix"
+  ],
   "Ends with DKA": [
     "Vodka"
   ],
@@ -7720,6 +7664,7 @@
   "Ends with EEN": [
     "Dancing Queen",
     "Green",
+    "Hetty Green",
     "Queen",
     "Seventeen"
   ],
@@ -7789,6 +7734,7 @@
   ],
   "Ends with ELL": [
     "Bell",
+    "Elizabeth Blackwell",
     "Godspell",
     "Hell",
     "Spell"
@@ -8001,7 +7947,9 @@
   ],
   "Ends with EUR": [
     "Croque Monsieur",
-    "Pouding Chomeur"
+    "Louis Pasteur",
+    "Pouding Chomeur",
+    "Rosa Bonheur"
   ],
   "Ends with EUS": [
     "Amadeus",
@@ -8635,6 +8583,7 @@
     "Diving",
     "Dumpling",
     "Elden Ring",
+    "Elizabeth Barrett Browning",
     "Empire State Building",
     "Entebbe Hijacking",
     "Fencing",
@@ -8768,6 +8717,9 @@
   "Ends with IOS": [
     "Helios"
   ],
+  "Ends with IOT": [
+    "George Eliot"
+  ],
   "Ends with IPE": [
     "Sao Tome and Principe"
   ],
@@ -8785,6 +8737,7 @@
     "Big Bird",
     "Bluebird",
     "Hummingbird",
+    "Isabella Bird",
     "To Kill a Mockingbird"
   ],
   "Ends with IRE": [
@@ -9005,6 +8958,7 @@
     "Joker",
     "Laker",
     "Locker",
+    "Madame C.J. Walker",
     "Marker",
     "Poker",
     "Studebaker",
@@ -9132,6 +9086,7 @@
     "The Three-Body Problem"
   ],
   "Ends with LEN": [
+    "Galen",
     "Helen"
   ],
   "Ends with LEO": [
@@ -9172,8 +9127,11 @@
     "Violet"
   ],
   "Ends with LEY": [
+    "Annie Oakley",
     "Bentley",
     "Galley",
+    "Mary Kingsley",
+    "Mary Shelley",
     "McKinley"
   ],
   "Ends with LFI": [
@@ -9327,6 +9285,7 @@
     "Batman",
     "Birdman",
     "Feynman",
+    "Harriet Tubman",
     "Iceman",
     "Iron Man",
     "Isle of Man",
@@ -9578,6 +9537,7 @@
   ],
   "Ends with NER": [
     "Blade Runner",
+    "Edward Jenner",
     "Kraft Dinner",
     "Mariner",
     "Pilsner",
@@ -9707,6 +9667,7 @@
   ],
   "Ends with NNA": [
     "Anna",
+    "Avicenna",
     "Madonna"
   ],
   "Ends with NNE": [
@@ -9774,6 +9735,10 @@
     "Bounty",
     "The Full Monty"
   ],
+  "Ends with NTË": [
+    "Charlotte Brontë",
+    "Emily Brontë"
+  ],
   "Ends with NUS": [
     "Cygnus",
     "Uranus",
@@ -9822,7 +9787,8 @@
     "Jobs"
   ],
   "Ends with OCH": [
-    "Antioch"
+    "Antioch",
+    "Robert Koch"
   ],
   "Ends with OCK": [
     "Bannock",
@@ -9879,6 +9845,7 @@
     "Reservoir Dogs"
   ],
   "Ends with OHN": [
+    "Fanny Mendelssohn",
     "John",
     "Roy Cohn"
   ],
@@ -10012,7 +9979,8 @@
     "Meet the Robinsons"
   ],
   "Ends with ONY": [
-    "Sony"
+    "Sony",
+    "Susan B. Anthony"
   ],
   "Ends with OOD": [
     "Blood",
@@ -10174,6 +10142,7 @@
     "Roti"
   ],
   "Ends with OTT": [
+    "Louisa May Alcott",
     "Marriott"
   ],
   "Ends with OUD": [
@@ -10211,6 +10180,9 @@
     "In the Mood for Love",
     "Shakespeare in Love",
     "The Emperor's New Groove"
+  ],
+  "Ends with OWE": [
+    "Harriet Beecher Stowe"
   ],
   "Ends with OWL": [
     "Owl",
@@ -10436,6 +10408,9 @@
   ],
   "Ends with RDS": [
     "Inglourious Basterds"
+  ],
+  "Ends with RDT": [
+    "Sarah Bernhardt"
   ],
   "Ends with REA": [
     "Eritrea",
@@ -10827,6 +10802,7 @@
     "Carl Vinson",
     "Edison",
     "Elementary, my dear Watson",
+    "Emily Dickinson",
     "Harrison",
     "Hudson",
     "Jackson",
@@ -10880,6 +10856,7 @@
   ],
   "Ends with SUS": [
     "Colossus",
+    "Paracelsus",
     "Pegasus"
   ],
   "Ends with T 1": [
@@ -10955,6 +10932,7 @@
     "The Grand Budapest Hotel"
   ],
   "Ends with TEN": [
+    "Jane Austen",
     "Sauerbraten"
   ],
   "Ends with TER": [
@@ -10964,6 +10942,7 @@
     "Carter",
     "Demeter",
     "Get Carter",
+    "Joseph Lister",
     "Jupiter",
     "Lancaster",
     "Lobster",
@@ -10982,11 +10961,15 @@
   ],
   "Ends with TES": [
     "Gates",
+    "Hippocrates",
     "Life is like a box of chocolates",
     "Socrates",
     "The Anubis Gates",
     "United Arab Emirates",
     "United States"
+  ],
+  "Ends with TEZ": [
+    "Lola Montez"
   ],
   "Ends with THE": [
     "Absinthe"
@@ -11039,7 +11022,9 @@
     "Badminton",
     "Boston",
     "Charleston",
+    "Clara Barton",
     "Clinton",
+    "Elizabeth Cady Stanton",
     "Hilton",
     "Krypton",
     "Newton",
@@ -11228,7 +11213,8 @@
     "Bull",
     "Eyjafjallajokull",
     "Gull",
-    "Hull"
+    "Hull",
+    "Victoria Woodhull"
   ],
   "Ends with ULT": [
     "Renault"
@@ -11334,7 +11320,8 @@
     "Veloute"
   ],
   "Ends with UTH": [
-    "Ruth"
+    "Ruth",
+    "Sojourner Truth"
   ],
   "Ends with UTI": [
     "Djibouti"
@@ -11388,6 +11375,9 @@
   ],
   "Ends with VET": [
     "Red Velvet"
+  ],
+  "Ends with VEY": [
+    "William Harvey"
   ],
   "Ends with VIA": [
     "Bolivia",
@@ -11843,7 +11833,9 @@
   "Explorers": [
     "Christopher Columbus",
     "Ferdinand Magellan",
+    "Isabella Bird",
     "Marco Polo",
+    "Mary Kingsley",
     "Vasco da Gama",
     "Zheng He"
   ],
@@ -13405,15 +13397,19 @@
     "War and Peace"
   ],
   "Historical Figures": [
+    "Ada Lovelace",
     "Anne Boleyn",
     "Anne of Cleves",
+    "Annie Oakley",
     "Archibald Butt",
     "Aristotle",
+    "Avicenna",
     "Bach",
     "Batu Khan",
     "Beethoven",
     "Brutus",
     "Caesar",
+    "Calamity Jane",
     "Captain Smith",
     "Cassius",
     "Catherine",
@@ -13421,45 +13417,73 @@
     "Catherine Parr",
     "Catherine of Aragon",
     "Charlemagne",
+    "Charlotte Brontë",
     "Christopher Columbus",
+    "Clara Barton",
+    "Clara Schumann",
     "Cleopatra",
     "Confucius",
     "Copernicus",
     "Da Vinci",
     "Dante",
+    "Dorothea Dix",
     "Drake",
     "Du Fu",
+    "Edward Jenner",
     "Edward VI",
     "Einstein",
+    "Elizabeth Barrett Browning",
+    "Elizabeth Blackwell",
+    "Elizabeth Cady Stanton",
     "Elizabeth I",
+    "Emily Brontë",
+    "Emily Dickinson",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
+    "Fanny Mendelssohn",
     "Ferdinand Magellan",
+    "Florence Nightingale",
     "Franklin D. Roosevelt",
+    "Galen",
     "Galileo",
     "Genghis Khan",
+    "George Eliot",
     "Guan Yu",
     "Handel",
+    "Harriet Beecher Stowe",
+    "Harriet Tubman",
     "Henry VII",
     "Henry VIII",
+    "Hetty Green",
+    "Hippocrates",
     "Homer",
     "Hulagu Khan",
     "Ida Straus",
+    "Isabella Bird",
     "Isidor Straus",
+    "Jane Austen",
     "Jane Seymour",
     "Jebe",
     "Joan of Arc",
     "John Jacob Astor",
     "John Wilkes Booth",
+    "Joseph Lister",
     "Kublai Khan",
     "Lady Jane Grey",
     "Li Bai",
     "Li Jiancheng",
     "Li Shimin",
     "Li Yuanji",
+    "Lola Montez",
+    "Louis Pasteur",
+    "Louisa May Alcott",
+    "Madame C.J. Walker",
     "Marco Polo",
     "Marie Curie",
+    "Mary Cassatt",
     "Mary I",
+    "Mary Kingsley",
+    "Mary Shelley",
     "Michel Ney",
     "Michelangelo",
     "Ming",
@@ -13468,15 +13492,21 @@
     "Napoleon Bonaparte",
     "Newton",
     "Nicole Brown Simpson",
+    "Paracelsus",
     "Plato",
     "Poe",
     "Rasputin",
+    "Robert Koch",
+    "Rosa Bonheur",
     "Saint Patrick",
+    "Sarah Bernhardt",
     "Shakespeare",
     "Sir John A. Macdonald",
     "Socrates",
+    "Sojourner Truth",
     "Subutai",
     "Sun Tzu",
+    "Susan B. Anthony",
     "Temüjin",
     "Teresa",
     "Terry Fox",
@@ -13486,9 +13516,11 @@
     "Tolui",
     "Vasco da Gama",
     "Victoria",
+    "Victoria Woodhull",
     "Von Blucher",
     "Washington",
     "Wellington",
+    "William Harvey",
     "William the Conqueror",
     "Winston Churchill",
     "Wright",
@@ -14797,6 +14829,7 @@
     "Zero"
   ],
   "Mathematicians": [
+    "Ada Lovelace",
     "Newton"
   ],
   "Mayan Architecture": [
@@ -14818,6 +14851,18 @@
   ],
   "Medical Events": [
     "Thalidomide Scandal"
+  ],
+  "Medical Professionals": [
+    "Avicenna",
+    "Edward Jenner",
+    "Elizabeth Blackwell",
+    "Galen",
+    "Hippocrates",
+    "Joseph Lister",
+    "Louis Pasteur",
+    "Paracelsus",
+    "Robert Koch",
+    "William Harvey"
   ],
   "Medical Terms": [
     "AIDS",
@@ -14870,6 +14915,7 @@
     "Archibald Butt",
     "Aristotle",
     "Arthur",
+    "Avicenna",
     "Bach",
     "Batman",
     "Batu Khan",
@@ -14922,6 +14968,7 @@
     "Du Fu",
     "Dylan",
     "Edison",
+    "Edward Jenner",
     "Edward VI",
     "Eichmann",
     "Einstein",
@@ -14939,6 +14986,7 @@
     "Franklin D. Roosevelt",
     "Fred",
     "Fujita",
+    "Galen",
     "Galileo",
     "Gambit",
     "Garfield",
@@ -14962,6 +15010,7 @@
     "Henry VIII",
     "Hermes",
     "Hey Jude",
+    "Hippocrates",
     "Homer",
     "Hoover",
     "Hubble",
@@ -14985,6 +15034,7 @@
     "Johnson",
     "Joker",
     "Jordan",
+    "Joseph Lister",
     "Joseph Stalin",
     "Juan Peron",
     "Juggernaut",
@@ -15009,6 +15059,7 @@
     "Liberace",
     "Lincoln",
     "Loki",
+    "Louis Pasteur",
     "Luigi",
     "Madison",
     "Magneto",
@@ -15046,6 +15097,7 @@
     "Ozymandias",
     "Panmunjom",
     "Papa",
+    "Paracelsus",
     "Paul",
     "Penguin",
     "Peter",
@@ -15062,6 +15114,7 @@
     "Reagan",
     "Red Hood",
     "Riddler",
+    "Robert Koch",
     "Robin",
     "Romeo",
     "Roosevelt",
@@ -15109,6 +15162,7 @@
     "Wayne Gretzky",
     "Wellington",
     "Whitney",
+    "William Harvey",
     "William the Conqueror",
     "Wilson",
     "Winston Churchill",
@@ -15248,6 +15302,10 @@
     "Enchilada",
     "Salsa",
     "Taco"
+  ],
+  "Microbiologists": [
+    "Louis Pasteur",
+    "Robert Koch"
   ],
   "Microstates": [
     "Andorra",
@@ -20561,10 +20619,12 @@
     "Boston",
     "Buddy Holly",
     "Chubby Checker",
+    "Clara Schumann",
     "Doris Day",
     "Drake",
     "Dylan",
     "Elvis",
+    "Fanny Mendelssohn",
     "Handel",
     "Johnnie Ray",
     "Liberace",
@@ -20952,6 +21012,10 @@
   "Nuclear Powers": [
     "Soviet Union"
   ],
+  "Nurses": [
+    "Clara Barton",
+    "Florence Nightingale"
+  ],
   "OJ Simpson": [
     "Bronco",
     "Football",
@@ -21120,6 +21184,7 @@
   ],
   "People": [
     "Achilles",
+    "Ada Lovelace",
     "Adams",
     "Agent 47",
     "Aladdin",
@@ -21130,6 +21195,7 @@
     "Anne of Cleves",
     "Anne of Green Gables",
     "Annie",
+    "Annie Oakley",
     "Archduke Franz Ferdinand",
     "Archibald Butt",
     "Aristotle",
@@ -21137,6 +21203,7 @@
     "Arthur",
     "Arya Stark",
     "Aurora",
+    "Avicenna",
     "Bach",
     "Batman",
     "Batu Khan",
@@ -21161,6 +21228,7 @@
     "Bush",
     "Buttercup",
     "Caesar",
+    "Calamity Jane",
     "Campanella",
     "Captain America",
     "Captain Smith",
@@ -21173,11 +21241,14 @@
     "Catherine of Aragon",
     "Chad",
     "Charlemagne",
+    "Charlotte Brontë",
     "Charlotte Corday",
     "Chou En-Lai",
     "Christopher Columbus",
     "Chubby Checker",
     "Cinderella",
+    "Clara Barton",
+    "Clara Schumann",
     "Cleopatra",
     "Cleveland",
     "Clinton",
@@ -21198,35 +21269,46 @@
     "Dirac",
     "Doctor Octopus",
     "Doris Day",
+    "Dorothea Dix",
     "Drake",
     "Du Fu",
     "Dylan",
     "Edison",
+    "Edward Jenner",
     "Edward VI",
     "Eichmann",
     "Einstein",
     "Eisenhower",
     "Elizabeth",
+    "Elizabeth Barrett Browning",
+    "Elizabeth Blackwell",
+    "Elizabeth Cady Stanton",
     "Elizabeth I",
     "Elsa",
     "Elvis",
+    "Emily Brontë",
+    "Emily Dickinson",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
     "Ezio Auditore",
+    "Fanny Mendelssohn",
     "Faraday",
     "Ferdinand Magellan",
     "Feynman",
     "Fillmore",
     "Flash",
+    "Florence Nightingale",
     "Ford",
     "Franklin D. Roosevelt",
     "Fred",
     "Fujita",
+    "Galen",
     "Galileo",
     "Gambit",
     "Garfield",
     "Gavrilo Princip",
     "Genghis Khan",
+    "George Eliot",
     "Graf Zeppelin",
     "Grant",
     "Green Arrow",
@@ -21237,6 +21319,8 @@
     "Handel",
     "Harambe",
     "Harding",
+    "Harriet Beecher Stowe",
+    "Harriet Tubman",
     "Harrison",
     "Hawkeye",
     "Hawking",
@@ -21245,7 +21329,9 @@
     "Helena",
     "Henry VII",
     "Henry VIII",
+    "Hetty Green",
     "Hey Jude",
+    "Hippocrates",
     "Homer",
     "Hoover",
     "Hubble",
@@ -21256,10 +21342,12 @@
     "Ida Straus",
     "Iris",
     "Iron Man",
+    "Isabella Bird",
     "Isidor Straus",
     "Ivy",
     "Jackson",
     "James",
+    "Jane Austen",
     "Jane Seymour",
     "Jean Grey",
     "Jebe",
@@ -21275,6 +21363,7 @@
     "Johnson",
     "Joker",
     "Jordan",
+    "Joseph Lister",
     "Joseph Stalin",
     "Juan Peron",
     "Juggernaut",
@@ -21304,7 +21393,11 @@
     "Liberace",
     "Lincoln",
     "Loki",
+    "Lola Montez",
+    "Louis Pasteur",
+    "Louisa May Alcott",
     "Luigi",
+    "Madame C.J. Walker",
     "Madison",
     "Madonna",
     "Magneto",
@@ -21316,8 +21409,11 @@
     "Marilyn Monroe",
     "Mario",
     "Mary",
+    "Mary Cassatt",
     "Mary I",
+    "Mary Kingsley",
     "Mary Rose",
+    "Mary Shelley",
     "Matsui",
     "Mays",
     "McKinley",
@@ -21352,6 +21448,7 @@
     "Ozymandias",
     "Panmunjom",
     "Papa",
+    "Paracelsus",
     "Paul",
     "Penguin",
     "Peter",
@@ -21371,10 +21468,12 @@
     "Reagan",
     "Red Hood",
     "Riddler",
+    "Robert Koch",
     "Robin",
     "Rogue",
     "Romeo",
     "Roosevelt",
+    "Rosa Bonheur",
     "Roy Cohn",
     "Ruth",
     "Sabretooth",
@@ -21382,6 +21481,7 @@
     "Sam",
     "Santa Maria",
     "Santayana",
+    "Sarah Bernhardt",
     "Shadowcat",
     "Shaggy",
     "Shakespeare",
@@ -21389,6 +21489,7 @@
     "Sirhan Sirhan",
     "Sleeping Beauty",
     "Socrates",
+    "Sojourner Truth",
     "Sophie, Duchess of Hohenberg",
     "Spider-Man",
     "Storm",
@@ -21397,6 +21498,7 @@
     "Sulu",
     "Sun Tzu",
     "Superman",
+    "Susan B. Anthony",
     "Syngman Rhee",
     "Taft",
     "Tanaka",
@@ -21422,6 +21524,7 @@
     "Venom",
     "Victor",
     "Victoria",
+    "Victoria Woodhull",
     "Violet",
     "Von Blucher",
     "Vulture",
@@ -21429,6 +21532,7 @@
     "Wayne Gretzky",
     "Wellington",
     "Whitney",
+    "William Harvey",
     "William the Conqueror",
     "Wilson",
     "Winston Churchill",
@@ -21530,6 +21634,16 @@
     "Red",
     "Sony",
     "Xenon"
+  ],
+  "Physicians": [
+    "Avicenna",
+    "Edward Jenner",
+    "Elizabeth Blackwell",
+    "Galen",
+    "Hippocrates",
+    "Joseph Lister",
+    "Paracelsus",
+    "William Harvey"
   ],
   "Physicists": [
     "Curie",
@@ -22123,6 +22237,8 @@
   "Poets": [
     "Dante",
     "Du Fu",
+    "Elizabeth Barrett Browning",
+    "Emily Dickinson",
     "Homer",
     "Li Bai",
     "Poe",
@@ -22415,13 +22531,16 @@
   ],
   "Real People": [
     "Achilles",
+    "Ada Lovelace",
     "Adams",
     "Anne Boleyn",
     "Anne of Cleves",
+    "Annie Oakley",
     "Archduke Franz Ferdinand",
     "Archibald Butt",
     "Aristotle",
     "Arthur",
+    "Avicenna",
     "Bach",
     "Batu Khan",
     "Beethoven",
@@ -22437,6 +22556,7 @@
     "Buddy Holly",
     "Bush",
     "Caesar",
+    "Calamity Jane",
     "Campanella",
     "Captain Smith",
     "Carter",
@@ -22448,10 +22568,13 @@
     "Catherine of Aragon",
     "Chad",
     "Charlemagne",
+    "Charlotte Brontë",
     "Charlotte Corday",
     "Chou En-Lai",
     "Christopher Columbus",
     "Chubby Checker",
+    "Clara Barton",
+    "Clara Schumann",
     "Cleopatra",
     "Cleveland",
     "Clinton",
@@ -22467,31 +22590,42 @@
     "Davy Crockett",
     "Dirac",
     "Doris Day",
+    "Dorothea Dix",
     "Drake",
     "Du Fu",
     "Duke",
     "Dylan",
     "Edison",
+    "Edward Jenner",
     "Edward VI",
     "Eichmann",
     "Einstein",
     "Eisenhower",
     "Elizabeth",
+    "Elizabeth Barrett Browning",
+    "Elizabeth Blackwell",
+    "Elizabeth Cady Stanton",
     "Elizabeth I",
     "Elvis",
+    "Emily Brontë",
+    "Emily Dickinson",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
+    "Fanny Mendelssohn",
     "Faraday",
     "Ferdinand Magellan",
     "Feynman",
     "Fillmore",
+    "Florence Nightingale",
     "Ford",
     "Franklin D. Roosevelt",
     "Fujita",
+    "Galen",
     "Galileo",
     "Garfield",
     "Gavrilo Princip",
     "Genghis Khan",
+    "George Eliot",
     "Graf Zeppelin",
     "Grant",
     "Grover",
@@ -22499,20 +22633,26 @@
     "Handel",
     "Harambe",
     "Harding",
+    "Harriet Beecher Stowe",
+    "Harriet Tubman",
     "Harrison",
     "Hawking",
     "Hayes",
     "Henry VII",
     "Henry VIII",
+    "Hetty Green",
+    "Hippocrates",
     "Homer",
     "Hoover",
     "Hubble",
     "Hulagu Khan",
     "Ichiro",
     "Ida Straus",
+    "Isabella Bird",
     "Isidor Straus",
     "Jackson",
     "James",
+    "Jane Austen",
     "Jane Seymour",
     "Jebe",
     "Jefferson",
@@ -22525,6 +22665,7 @@
     "Johnnie Ray",
     "Johnson",
     "Jordan",
+    "Joseph Lister",
     "Joseph Stalin",
     "Juan Peron",
     "Katrina",
@@ -22548,7 +22689,11 @@
     "Li Yuanji",
     "Liberace",
     "Lincoln",
+    "Lola Montez",
+    "Louis Pasteur",
+    "Louisa May Alcott",
     "Luigi",
+    "Madame C.J. Walker",
     "Madison",
     "Madonna",
     "Malenkov",
@@ -22558,8 +22703,11 @@
     "Marie Curie",
     "Marilyn Monroe",
     "Mary",
+    "Mary Cassatt",
     "Mary I",
+    "Mary Kingsley",
     "Mary Rose",
+    "Mary Shelley",
     "Matsui",
     "Mays",
     "McKinley",
@@ -22585,6 +22733,7 @@
     "Ozu",
     "Ozymandias",
     "Panmunjom",
+    "Paracelsus",
     "Paul",
     "Peter",
     "Pharaoh",
@@ -22597,20 +22746,25 @@
     "Queen Mary",
     "Rasputin",
     "Reagan",
+    "Robert Koch",
     "Roosevelt",
+    "Rosa Bonheur",
     "Roy Cohn",
     "Ruth",
     "Saint Patrick",
     "Santa Maria",
     "Santayana",
+    "Sarah Bernhardt",
     "Shakespeare",
     "Sir John A. Macdonald",
     "Sirhan Sirhan",
     "Socrates",
+    "Sojourner Truth",
     "Sophie, Duchess of Hohenberg",
     "Subutai",
     "Sugar Ray",
     "Sun Tzu",
+    "Susan B. Anthony",
     "Syngman Rhee",
     "Taft",
     "Tanaka",
@@ -22631,11 +22785,13 @@
     "Van Buren",
     "Vasco da Gama",
     "Victoria",
+    "Victoria Woodhull",
     "Von Blucher",
     "Washington",
     "Wayne Gretzky",
     "Wellington",
     "Whitney",
+    "William Harvey",
     "William the Conqueror",
     "Wilson",
     "Winston Churchill",
@@ -23399,23 +23555,32 @@
   ],
   "Scientists": [
     "Aristotle",
+    "Avicenna",
     "Copernicus",
     "Curie",
     "Da Vinci",
     "Darwin",
     "Dirac",
+    "Edward Jenner",
     "Einstein",
     "Faraday",
     "Feynman",
     "Fujita",
+    "Galen",
     "Galileo",
     "Hawking",
+    "Hippocrates",
     "Hubble",
+    "Joseph Lister",
     "Kepler",
+    "Louis Pasteur",
     "Marie Curie",
     "Newton",
+    "Paracelsus",
+    "Robert Koch",
     "Tesla",
-    "Thomas Edison"
+    "Thomas Edison",
+    "William Harvey"
   ],
   "Scooby-Doo Characters": [
     "Daphne",
@@ -23588,6 +23753,9 @@
     "Puck",
     "Romeo",
     "The play's the thing"
+  ],
+  "Sharpshooters": [
+    "Annie Oakley"
   ],
   "Ships": [
     "Akagi",
@@ -24247,6 +24415,7 @@
     "Acura"
   ],
   "Starts with ADA": [
+    "Ada Lovelace",
     "Adams"
   ],
   "Starts with AFF": [
@@ -24375,7 +24544,8 @@
     "Anne of Cleves",
     "Anne of Green Gables",
     "Annie",
-    "Annie Hall"
+    "Annie Hall",
+    "Annie Oakley"
   ],
   "Starts with ANO": [
     "Another Brick in the Wall"
@@ -24504,6 +24674,9 @@
   ],
   "Starts with AVE": [
     "Avengers: Endgame"
+  ],
+  "Starts with AVI": [
+    "Avicenna"
   ],
   "Starts with AVO": [
     "Avocado"
@@ -24925,6 +25098,7 @@
     "Cake"
   ],
   "Starts with CAL": [
+    "Calamity Jane",
     "Caldo Verde",
     "California",
     "California Baseball",
@@ -25030,6 +25204,7 @@
     "Charlemagne",
     "Charleston",
     "Charlie",
+    "Charlotte Brontë",
     "Charlotte Corday",
     "Charlotte's Web"
   ],
@@ -25097,6 +25272,10 @@
   "Starts with CIT": [
     "Citizen Kane",
     "Citroën"
+  ],
+  "Starts with CLA": [
+    "Clara Barton",
+    "Clara Schumann"
   ],
   "Starts with CLE": [
     "Cleopatra",
@@ -25431,7 +25610,8 @@
   ],
   "Starts with DOR": [
     "Dorayaki",
-    "Doris Day"
+    "Doris Day",
+    "Dorothea Dix"
   ],
   "Starts with DOU": [
     "Dough",
@@ -25528,6 +25708,7 @@
     "Edmund Fitzgerald"
   ],
   "Starts with EDW": [
+    "Edward Jenner",
     "Edward VI"
   ],
   "Starts with EGG": [
@@ -25571,6 +25752,9 @@
   ],
   "Starts with ELI": [
     "Elizabeth",
+    "Elizabeth Barrett Browning",
+    "Elizabeth Blackwell",
+    "Elizabeth Cady Stanton",
     "Elizabeth I"
   ],
   "Starts with ELL": [
@@ -25588,6 +25772,10 @@
   ],
   "Starts with EME": [
     "Emerald"
+  ],
+  "Starts with EMI": [
+    "Emily Brontë",
+    "Emily Dickinson"
   ],
   "Starts with EMP": [
     "Empanada",
@@ -25699,6 +25887,7 @@
   ],
   "Starts with FAN": [
     "Fan",
+    "Fanny Mendelssohn",
     "Fantasia",
     "Fantasia 2000"
   ],
@@ -25770,6 +25959,7 @@
   ],
   "Starts with FLO": [
     "Florence",
+    "Florence Nightingale",
     "Florida"
   ],
   "Starts with FLU": [
@@ -25859,6 +26049,7 @@
     "Galapagos",
     "Galaxy",
     "Galaxy Quest",
+    "Galen",
     "Galileo",
     "Galley"
   ],
@@ -25908,6 +26099,7 @@
   ],
   "Starts with GEO": [
     "George",
+    "George Eliot",
     "Georgia"
   ],
   "Starts with GER": [
@@ -26111,6 +26303,8 @@
     "Hare",
     "Harmony of the Seas",
     "Harp",
+    "Harriet Beecher Stowe",
+    "Harriet Tubman",
     "Harrisburg",
     "Harrison",
     "Harry",
@@ -26178,6 +26372,9 @@
     "Hero",
     "Hershey"
   ],
+  "Starts with HET": [
+    "Hetty Green"
+  ],
   "Starts with HEY": [
     "Hey Jude"
   ],
@@ -26189,6 +26386,9 @@
   ],
   "Starts with HIN": [
     "Hindenburg"
+  ],
+  "Starts with HIP": [
+    "Hippocrates"
   ],
   "Starts with HIR": [
     "Hiryu"
@@ -26409,6 +26609,9 @@
     "Iron",
     "Iron Man"
   ],
+  "Starts with ISA": [
+    "Isabella Bird"
+  ],
   "Starts with ISC": [
     "Ischia"
   ],
@@ -26468,6 +26671,7 @@
     "James"
   ],
   "Starts with JAN": [
+    "Jane Austen",
     "Jane Eyre",
     "Jane Seymour"
   ],
@@ -26547,6 +26751,7 @@
     "Jordan"
   ],
   "Starts with JOS": [
+    "Joseph Lister",
     "Joseph Stalin"
   ],
   "Starts with JOU": [
@@ -26936,6 +27141,9 @@
   "Starts with LOK": [
     "Loki"
   ],
+  "Starts with LOL": [
+    "Lola Montez"
+  ],
   "Starts with LOM": [
     "Lombok"
   ],
@@ -26957,6 +27165,8 @@
     "Lotus"
   ],
   "Starts with LOU": [
+    "Louis Pasteur",
+    "Louisa May Alcott",
     "Louvre"
   ],
   "Starts with LOV": [
@@ -27003,6 +27213,7 @@
   ],
   "Starts with MAD": [
     "Madagascar",
+    "Madame C.J. Walker",
     "Madeira",
     "Madeleine",
     "Madison",
@@ -27066,10 +27277,13 @@
     "Martha's Vineyard",
     "Marvin the Martian",
     "Mary",
+    "Mary Cassatt",
     "Mary I",
+    "Mary Kingsley",
     "Mary Poppins",
     "Mary Poppins Returns",
-    "Mary Rose"
+    "Mary Rose",
+    "Mary Shelley"
   ],
   "Starts with MAS": [
     "Maserati",
@@ -27624,6 +27838,7 @@
     "Papua New Guinea"
   ],
   "Starts with PAR": [
+    "Paracelsus",
     "Paradox",
     "Paraguay",
     "Parasite",
@@ -28025,6 +28240,7 @@
     "Road Runner"
   ],
   "Starts with ROB": [
+    "Robert Koch",
     "Robin",
     "Robin Hood",
     "Robin Hood: Prince of Thieves",
@@ -28065,6 +28281,7 @@
     "Root Beer"
   ],
   "Starts with ROS": [
+    "Rosa Bonheur",
     "Rose",
     "Rosé"
   ],
@@ -28181,6 +28398,7 @@
     "Sapphire"
   ],
   "Starts with SAR": [
+    "Sarah Bernhardt",
     "Sarajevo",
     "Sardinia",
     "Sark"
@@ -28370,6 +28588,7 @@
     "Sofa"
   ],
   "Starts with SOJ": [
+    "Sojourner Truth",
     "Soju"
   ],
   "Starts with SOL": [
@@ -28554,6 +28773,7 @@
     "Suriname"
   ],
   "Starts with SUS": [
+    "Susan B. Anthony",
     "Sushi"
   ],
   "Starts with SVA": [
@@ -29252,6 +29472,7 @@
   "Starts with VIC": [
     "Victor",
     "Victoria",
+    "Victoria Woodhull",
     "Victory"
   ],
   "Starts with VIE": [
@@ -29356,6 +29577,7 @@
   "Starts with WIL": [
     "Wildcat",
     "Wile E. Coyote",
+    "William Harvey",
     "William the Conqueror",
     "Wilson"
   ],
@@ -30021,6 +30243,7 @@
     "Annapolis",
     "Annie",
     "Annie Hall",
+    "Annie Oakley",
     "Anthem of the Seas",
     "Apache",
     "Apollo",
@@ -30098,6 +30321,7 @@
     "CODA",
     "Cabaret",
     "Cadillac",
+    "Calamity Jane",
     "California",
     "California Baseball",
     "Call me Ishmael",
@@ -30126,6 +30350,7 @@
     "Cinderella",
     "Cirrus",
     "Citizen Kane",
+    "Clara Barton",
     "Cleopatra",
     "Cleveland",
     "Clinton",
@@ -30174,6 +30399,7 @@
     "Donnie Darko",
     "Doom",
     "Doris Day",
+    "Dorothea Dix",
     "Douglas",
     "Dr. Strangelove",
     "Dreamgirls",
@@ -30189,8 +30415,11 @@
     "Eisenhower",
     "Elemental",
     "Elf",
+    "Elizabeth Blackwell",
+    "Elizabeth Cady Stanton",
     "Elsa",
     "Elvis",
+    "Emily Dickinson",
     "Empire State Building",
     "Encanto",
     "Entebbe Hijacking",
@@ -30256,6 +30485,8 @@
     "Hamburger",
     "Harding",
     "Harmony of the Seas",
+    "Harriet Beecher Stowe",
+    "Harriet Tubman",
     "Harrisburg",
     "Harrison",
     "Hartford",
@@ -30268,6 +30499,7 @@
     "Her",
     "Hercules",
     "Here's looking at you, kid",
+    "Hetty Green",
     "Holes",
     "Home Alone",
     "Home Alone 2: Lost in New York",
@@ -30364,9 +30596,11 @@
     "Long Island",
     "Looper",
     "Los Angeles",
+    "Louisa May Alcott",
     "Luca",
     "Mac and Cheese",
     "Madagascar",
+    "Madame C.J. Walker",
     "Madison",
     "Madonna",
     "Mafia",
@@ -30378,6 +30612,7 @@
     "Mariner",
     "Martha's Vineyard",
     "Mary",
+    "Mary Cassatt",
     "Mary Poppins",
     "Mary Poppins Returns",
     "May the Force be with you",
@@ -30536,6 +30771,7 @@
     "Sleeping Beauty",
     "Smoothie",
     "Snow White and the Seven Dwarfs",
+    "Sojourner Truth",
     "Solo",
     "Somewhere in Time",
     "Soul",
@@ -30559,6 +30795,7 @@
     "Sulu",
     "Superman",
     "Surfing",
+    "Susan B. Anthony",
     "Swimming",
     "Taft",
     "Tallahassee",
@@ -30723,6 +30960,7 @@
     "Vantage Point",
     "Velma",
     "Victor",
+    "Victoria Woodhull",
     "Violet",
     "Volcano",
     "Volleyball",
@@ -30848,6 +31086,7 @@
     "1984",
     "A Clockwork Orange",
     "About Time",
+    "Ada Lovelace",
     "Airbus",
     "Alderney",
     "Alice's Adventures in Wonderland",
@@ -30880,6 +31119,7 @@
     "Catherine Parr",
     "Challenger",
     "Chariots of Fire",
+    "Charlotte Brontë",
     "Concorde",
     "Coronation of Elizabeth II",
     "Cricket",
@@ -30890,19 +31130,24 @@
     "Dover",
     "Dracula",
     "Earl Grey",
+    "Edward Jenner",
     "Edward VI",
     "Elementary, my dear Watson",
     "Elizabeth",
+    "Elizabeth Barrett Browning",
     "Elizabeth I",
+    "Emily Brontë",
     "Endeavour",
     "Et tu, Brute?",
     "Falkland Islands",
     "Faraday",
     "Fish and Chips",
+    "Florence Nightingale",
     "Formula One",
     "Four Weddings and a Funeral",
     "Frankenstein",
     "Gandhi",
+    "George Eliot",
     "Get Carter",
     "Gin",
     "Globe Theatre",
@@ -30927,13 +31172,16 @@
     "Howard's End",
     "Hurricane",
     "If....",
+    "Isabella Bird",
     "Isle of Man",
     "Isle of Wight",
     "It was the best of times",
     "Jaguar",
+    "Jane Austen",
     "Jane Eyre",
     "Jane Seymour",
     "Jersey",
+    "Joseph Lister",
     "Kind Hearts and Coronets",
     "Lady Jane Grey",
     "Lancaster",
@@ -30945,7 +31193,9 @@
     "Love Actually",
     "Lusitania",
     "Mary I",
+    "Mary Kingsley",
     "Mary Rose",
+    "Mary Shelley",
     "Matilda",
     "Mauretania",
     "Mayflower",
@@ -31057,6 +31307,7 @@
     "We will fight them on the beaches",
     "Wellington",
     "Whist",
+    "William Harvey",
     "William the Conqueror",
     "Winnie-the-Pooh",
     "Winston Churchill",
@@ -31387,6 +31638,7 @@
     "L'etat c'est moi",
     "La Garde meurt, elle ne se rend pas!",
     "Les Misérables",
+    "Louis Pasteur",
     "Louvre",
     "Macaron",
     "Madeleine",
@@ -31406,7 +31658,9 @@
     "Red Wine",
     "Redoutable",
     "Renault",
+    "Rosa Bonheur",
     "Rosé",
+    "Sarah Bernhardt",
     "Solitaire",
     "Souffle",
     "Sparkling Wine",
@@ -31443,9 +31697,11 @@
     "Bratwurst",
     "Brezel",
     "Charlemagne",
+    "Clara Schumann",
     "East Germany",
     "Eichmann",
     "Einstein",
+    "Fanny Mendelssohn",
     "Germania",
     "Germany",
     "Gneisenau",
@@ -31462,6 +31718,7 @@
     "Pretzel",
     "Pumpernickel",
     "Rhine",
+    "Robert Koch",
     "Rouladen",
     "Rye",
     "Sauerbraten",
@@ -31493,8 +31750,10 @@
     "Crete",
     "Dolmades",
     "Galaktoboureko",
+    "Galen",
     "Greece",
     "Gyro",
+    "Hippocrates",
     "Homer",
     "Iliad",
     "Know thyself",
@@ -31601,6 +31860,7 @@
     "Tambora"
   ],
   "Things Iranian": [
+    "Avicenna",
     "Iran",
     "Persia",
     "The Iran Hostage Crisis",
@@ -31614,6 +31874,7 @@
   "Things Irish": [
     "Dublin",
     "Ireland",
+    "Lola Montez",
     "Saint Patrick",
     "Stout",
     "Whiskey"
@@ -32296,6 +32557,7 @@
   "Things Swiss": [
     "Bobsled",
     "Matterhorn",
+    "Paracelsus",
     "Switzerland"
   ],
   "Things Syrian": [
@@ -33292,12 +33554,14 @@
     "Jane Seymour"
   ],
   "Women": [
+    "Ada Lovelace",
     "Anna",
     "Annabel",
     "Anne Boleyn",
     "Anne of Cleves",
     "Anne of Green Gables",
     "Annie",
+    "Annie Oakley",
     "Arrietty",
     "Arya Stark",
     "Athena",
@@ -33307,25 +33571,43 @@
     "Billie Jean",
     "Black Widow",
     "Buttercup",
+    "Calamity Jane",
     "Catherine",
     "Catherine Howard",
     "Catherine Parr",
     "Catherine of Aragon",
+    "Charlotte Brontë",
     "Charlotte Corday",
     "Cinderella",
+    "Clara Barton",
+    "Clara Schumann",
     "Cleopatra",
     "Daisy",
     "Daphne",
     "Doris Day",
+    "Dorothea Dix",
     "Elizabeth",
+    "Elizabeth Barrett Browning",
+    "Elizabeth Blackwell",
+    "Elizabeth Cady Stanton",
     "Elizabeth I",
     "Elsa",
+    "Emily Brontë",
+    "Emily Dickinson",
+    "Fanny Mendelssohn",
+    "Florence Nightingale",
+    "George Eliot",
+    "Harriet Beecher Stowe",
+    "Harriet Tubman",
     "Heather",
     "Helen",
     "Helena",
+    "Hetty Green",
     "Ida Straus",
     "Iris",
+    "Isabella Bird",
     "Ivy",
+    "Jane Austen",
     "Jane Seymour",
     "Jean Grey",
     "Joan of Arc",
@@ -33334,12 +33616,18 @@
     "Koko",
     "Lady Jane Grey",
     "Lenore",
+    "Lola Montez",
+    "Louisa May Alcott",
+    "Madame C.J. Walker",
     "Madonna",
     "Marie Curie",
     "Marilyn Monroe",
     "Mary",
+    "Mary Cassatt",
     "Mary I",
+    "Mary Kingsley",
     "Mary Rose",
+    "Mary Shelley",
     "Moana",
     "Mystique",
     "Nicole Brown Simpson",
@@ -33349,16 +33637,21 @@
     "Princess Peach",
     "Queen Mary",
     "Rogue",
+    "Rosa Bonheur",
     "Santa Maria",
+    "Sarah Bernhardt",
     "Shadowcat",
     "Siren",
     "Sleeping Beauty",
+    "Sojourner Truth",
     "Sophie, Duchess of Hohenberg",
     "Storm",
+    "Susan B. Anthony",
     "Teresa",
     "The Unsinkable Molly Brown",
     "Velma",
     "Victoria",
+    "Victoria Woodhull",
     "Violet",
     "Witchblade",
     "Wonder Woman"
@@ -33440,11 +33733,18 @@
   ],
   "Writers": [
     "Aristotle",
+    "Charlotte Brontë",
     "Confucius",
     "Dante",
     "Du Fu",
+    "Emily Brontë",
+    "George Eliot",
+    "Harriet Beecher Stowe",
     "Homer",
+    "Jane Austen",
     "Li Bai",
+    "Louisa May Alcott",
+    "Mary Shelley",
     "Plato",
     "Poe",
     "Shakespeare",
