@@ -1878,5 +1878,45 @@
         "Baffin"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1910s",
+      "Things Italian",
+      "Things Russian",
+      "Video Games"
+    ],
+    "cols": [
+      "Classic Literature",
+      "Disasters",
+      "Historical Figures",
+      "Wars"
+    ],
+    "words": [
+      [
+        "The Secret Garden",
+        "Lusitania",
+        "Isidor Straus",
+        "World War I"
+      ],
+      [
+        "The Divine Comedy",
+        "Pompeii",
+        "Michelangelo",
+        "The Italian Wars"
+      ],
+      [
+        "War and Peace",
+        "The Chernobyl Disaster",
+        "Catherine",
+        "The Russian Invasion of Ukraine"
+      ],
+      [
+        "Romance of the Three Kingdoms",
+        "Fallout",
+        "Victoria",
+        "Total War"
+      ]
+    ]
   }
 ]
