@@ -753,6 +753,8 @@ if (isMainThread) {
           puzzlesFound: puzzlesFound,
           puzzlesInserted: puzzlesInserted
         });
+        // Exit the worker process after sending cleanup message
+        process.exit(0);
       });
     }
   });
