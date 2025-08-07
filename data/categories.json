@@ -7756,6 +7756,7 @@
   ],
   "Ends with EAD": [
     "Bread",
+    "Butterhead",
     "Mead"
   ],
   "Ends with EAK": [
@@ -8751,6 +8752,7 @@
     "Poutine",
     "Red Wine",
     "Rhine",
+    "Romaine",
     "Seine",
     "Sparkling Wine",
     "Sweet Child O' Mine",
@@ -12715,6 +12717,7 @@
     "Burrito",
     "Butter Chicken",
     "Butter Tart",
+    "Butterhead",
     "Caesar",
     "Cake",
     "Caldo Verde",
@@ -12807,6 +12810,7 @@
     "Hotteok",
     "Hui Guo Rou",
     "Hummus",
+    "Iceberg",
     "Jalebi",
     "Japchae",
     "Jiaozi",
@@ -12923,6 +12927,7 @@
     "Risotto",
     "Rogan Josh",
     "Roma",
+    "Romaine",
     "Roti",
     "Rouladen",
     "Rugelach",
@@ -13856,6 +13861,7 @@
     "Bleu Cheese",
     "Chicken",
     "Egg",
+    "Iceberg",
     "Lettuce",
     "Roma",
     "Tomato"
@@ -13863,6 +13869,7 @@
   "Ingredients in a BLT": [
     "Bacon",
     "Bread",
+    "Iceberg",
     "Lettuce",
     "Roma",
     "Tomato"
@@ -23554,12 +23561,15 @@
     "Ranch"
   ],
   "Salads": [
+    "Butterhead",
     "Caesar",
     "Caprese",
     "Cobb",
     "Greek",
+    "Iceberg",
     "Lettuce",
     "Nicoise",
+    "Romaine",
     "Waldorf"
   ],
   "Samurai Stories": [
@@ -25266,7 +25276,8 @@
     "Butter Tart",
     "Buttercup",
     "Butterfinger",
-    "Butterfly"
+    "Butterfly",
+    "Butterhead"
   ],
   "Starts with BYR": [
     "Byrd"
@@ -28459,6 +28470,7 @@
   ],
   "Starts with ROM": [
     "Roma",
+    "Romaine",
     "Romance of the Three Kingdoms",
     "Romania",
     "Rome",
@@ -33263,6 +33275,11 @@
     "Worm",
     "Zebra"
   ],
+  "Types of Lettuce": [
+    "Butterhead",
+    "Iceberg",
+    "Romaine"
+  ],
   "UN Security Council Permanent Members": [
     "China",
     "France",
@@ -33361,9 +33378,12 @@
     "Kilo"
   ],
   "Vegetables": [
+    "Butterhead",
+    "Iceberg",
     "Lettuce",
     "Onion",
     "Pickle",
+    "Romaine",
     "Tomato"
   ],
   "Video Game Characters": [

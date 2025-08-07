@@ -110,8 +110,16 @@ for (const [normalized, variants] of Object.entries(normalizedNames)) {
 // Replace the original data with merged data
 wordsData = mergedWordsData;
 
+// Alphabetize the words
+const alphabetizedWordsData = {};
+Object.keys(wordsData)
+    .sort()
+    .forEach(word => {
+        alphabetizedWordsData[word] = wordsData[word];
+    });
+
 // Write the updated data back to the file
-fs.writeFileSync(path.join(__dirname, 'data', 'words.json'), JSON.stringify(wordsData, null, 2), 'utf8');
+fs.writeFileSync(path.join(__dirname, 'data', 'words.json'), JSON.stringify(alphabetizedWordsData, null, 2), 'utf8');
 
 // Step 2: Generate categories (from generate_categories.js)
 console.log('2. Generating categories...');
@@ -191,8 +199,16 @@ currentCategories.forEach(category => {
 removedCategoriesCount = Object.keys(existingEmojis).length -
     Object.keys(existingEmojis).filter(cat => currentCategories.includes(cat)).length;
 
+// Alphabetize the category emojis
+const alphabetizedEmojis = {};
+Object.keys(updatedEmojis)
+    .sort()
+    .forEach(category => {
+        alphabetizedEmojis[category] = updatedEmojis[category];
+    });
+
 // Write updated emojis to file
-fs.writeFileSync(categoryEmojisPath, JSON.stringify(updatedEmojis, null, 2), 'utf8');
+fs.writeFileSync(categoryEmojisPath, JSON.stringify(alphabetizedEmojis, null, 2), 'utf8');
 
 console.log(`- Added ${newCategoriesCount} new categories with default emoji`);
 console.log(`- Removed ${removedCategoriesCount} obsolete categories`);
@@ -352,7 +368,7 @@ for (const [metaCategory, categories] of Object.entries(existingMetaCategories))
         if (processedCategories.has(category)) {
             continue;
         }
-        
+
         // If it's in a manual meta category, keep it there
         if (metaCategory === "Historical Events") {
             updatedMetaCategories[metaCategory].push(category);
@@ -368,9 +384,9 @@ for (const category of allCurrentCategories) {
     if (processedCategories.has(category)) {
         continue;
     }
-    
+
     let categorized = false;
-    
+
     // Check automatic categorization rules first
     if (category.startsWith('Starts with ') || category.startsWith('Ends with ')) {
         updatedMetaCategories["Letter Patterns"].push(category);
@@ -420,7 +436,7 @@ for (const category of allCurrentCategories) {
         categorized = true;
         processedCategories.add(category);
     }
-    
+
     // If not automatically categorized, add to No Meta Category (but only if not already categorized elsewhere)
     if (!categorized) {
         // Only add to No Meta Category if it's not already in another meta category
@@ -444,7 +460,7 @@ const remainingNoMeta = [];
 
 for (const category of noMetaCategory) {
     let shouldBeRemoved = false;
-    
+
     // Check if it should be automatically categorized
     if (category.startsWith('Starts with ') || category.startsWith('Ends with ')) {
         shouldBeRemoved = true;
@@ -464,7 +480,7 @@ for (const category of noMetaCategory) {
         // All "Things " categories are nationalities
         shouldBeRemoved = true;
     }
-    
+
     if (!shouldBeRemoved) {
         remainingNoMeta.push(category);
     }
