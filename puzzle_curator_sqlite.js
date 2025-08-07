@@ -71,7 +71,7 @@ function getAllPuzzles(db) {
     });
 }
 
-function getRandomPuzzle(db, targetCategory = null) {
+function getRandomPuzzle(db, targetCategories = null) {
     return new Promise((resolve, reject) => {
         let query = `
             SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp
@@ -80,15 +80,33 @@ function getRandomPuzzle(db, targetCategory = null) {
 
         let params = [];
 
-        if (targetCategory) {
-            query += `
-                WHERE (LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
-                   OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)
-                   AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
-            `;
-            const lowerCategory = targetCategory.toLowerCase();
-            params = [lowerCategory, lowerCategory, lowerCategory, lowerCategory,
-                lowerCategory, lowerCategory, lowerCategory, lowerCategory];
+        if (targetCategories) {
+            // Handle both single category (string) and multiple categories (array)
+            const categories = Array.isArray(targetCategories) ? targetCategories : [targetCategories];
+
+            if (categories.length === 1) {
+                // Single category - use OR across all positions
+                const lowerCategory = categories[0].toLowerCase();
+                query += `
+                    WHERE (LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
+                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)
+                       AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
+                `;
+                params = [lowerCategory, lowerCategory, lowerCategory, lowerCategory,
+                    lowerCategory, lowerCategory, lowerCategory, lowerCategory];
+            } else {
+                // Multiple categories - each category must appear in at least one position
+                const conditions = [];
+                for (const category of categories) {
+                    const lowerCategory = category.toLowerCase();
+                    conditions.push(`(LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
+                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)`);
+                    params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
+                        lowerCategory, lowerCategory, lowerCategory, lowerCategory);
+                }
+
+                query += ` WHERE (${conditions.join(' AND ')}) AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))`;
+            }
         } else {
             // Use random offset approach for better performance on large tables
             query += ` WHERE ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))`;
@@ -113,7 +131,7 @@ function getRandomPuzzle(db, targetCategory = null) {
     });
 }
 
-function getMultipleRandomPuzzles(db, count, targetCategory = null) {
+function getMultipleRandomPuzzles(db, count, targetCategories = null) {
     return new Promise((resolve, reject) => {
         let query = `
             SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp
@@ -122,14 +140,32 @@ function getMultipleRandomPuzzles(db, count, targetCategory = null) {
 
         let params = [];
 
-        if (targetCategory) {
-            query += `
-                WHERE LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
-                   OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?
-            `;
-            const lowerCategory = targetCategory.toLowerCase();
-            params = [lowerCategory, lowerCategory, lowerCategory, lowerCategory,
-                lowerCategory, lowerCategory, lowerCategory, lowerCategory];
+        if (targetCategories) {
+            // Handle both single category (string) and multiple categories (array)
+            const categories = Array.isArray(targetCategories) ? targetCategories : [targetCategories];
+
+            if (categories.length === 1) {
+                // Single category - use OR across all positions
+                const lowerCategory = categories[0].toLowerCase();
+                query += `
+                    WHERE LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
+                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?
+                `;
+                params = [lowerCategory, lowerCategory, lowerCategory, lowerCategory,
+                    lowerCategory, lowerCategory, lowerCategory, lowerCategory];
+            } else {
+                // Multiple categories - each category must appear in at least one position
+                const conditions = [];
+                for (const category of categories) {
+                    const lowerCategory = category.toLowerCase();
+                    conditions.push(`(LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
+                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)`);
+                    params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
+                        lowerCategory, lowerCategory, lowerCategory, lowerCategory);
+                }
+
+                query += ` WHERE ${conditions.join(' AND ')}`;
+            }
         }
 
         query += ` ORDER BY RANDOM() LIMIT ?`;
@@ -371,7 +407,7 @@ function findCommonPrefix(strings) {
 }
 
 // ──────────────── puzzle selection ────────────────────────────────
-async function findBestPuzzle(targetCategory = null) {
+async function findBestPuzzle(targetCategories = null) {
     const sqliteDb = await openDatabase();
 
     try {
@@ -388,7 +424,7 @@ async function findBestPuzzle(targetCategory = null) {
         while (puzzlesChecked < maxChecks && invalidPuzzlesFound < maxInvalidPuzzles) {
             // Get a batch of random puzzles from the database
             const puzzlesToCheck = Math.min(batchSize, maxChecks - puzzlesChecked);
-            const puzzles = await getMultipleRandomPuzzles(sqliteDb, puzzlesToCheck, targetCategory);
+            const puzzles = await getMultipleRandomPuzzles(sqliteDb, puzzlesToCheck, targetCategories);
 
             if (!puzzles || puzzles.length === 0) {
                 // If we've checked some puzzles but found none, return null
@@ -397,8 +433,10 @@ async function findBestPuzzle(targetCategory = null) {
                     return null;
                 }
                 // If we haven't found any puzzles at all, return null immediately
-                if (targetCategory) {
-                    console.log(`No puzzles found containing category "${targetCategory}"`);
+                if (targetCategories) {
+                    const categories = Array.isArray(targetCategories) ? targetCategories : [targetCategories];
+                    const categoryDisplay = categories.join('", "');
+                    console.log(`No puzzles found containing ALL categories: "${categoryDisplay}"`);
                 } else {
                     console.log("No puzzles found in database");
                 }
@@ -476,25 +514,28 @@ async function findBestPuzzle(targetCategory = null) {
     }
 }
 
-async function findAnyPuzzleWithCategory(targetCategory, excludedHash = null) {
+async function findAnyPuzzleWithCategory(targetCategories, excludedHash = null) {
     const sqliteDb = await openDatabase();
 
     try {
-        console.log(`Finding any puzzle with category "${targetCategory}"...`);
+        // Handle both single category (string) and multiple categories (array)
+        const categories = Array.isArray(targetCategories) ? targetCategories : [targetCategories];
+        const categoryDisplay = categories.join('", "');
+        console.log(`Finding any puzzle with ALL categories: "${categoryDisplay}"...`);
 
         let attempts = 0;
         let invalidPuzzlesFound = 0;
-        const maxAttempts = 50; // Try up to 50 random puzzles with this category
+        const maxAttempts = 50; // Try up to 50 random puzzles with these categories
         const maxInvalidPuzzles = 10; // Circuit breaker for invalid puzzles
 
         while (attempts < maxAttempts && invalidPuzzlesFound < maxInvalidPuzzles) {
             attempts++;
 
-            // Get a single random puzzle with this category from the database
-            const puzzle = await getRandomPuzzle(sqliteDb, targetCategory);
+            // Get a single random puzzle with these categories from the database
+            const puzzle = await getRandomPuzzle(sqliteDb, targetCategories);
 
             if (!puzzle) {
-                console.log(`No puzzles found containing category "${targetCategory}"`);
+                console.log(`No puzzles found containing ALL categories: "${categoryDisplay}"`);
                 return null;
             }
 
@@ -535,14 +576,14 @@ async function findAnyPuzzleWithCategory(targetCategory, excludedHash = null) {
                 }
             }
 
-            console.log(`🎲 Found puzzle with "${targetCategory}" (${overlap} category overlaps)`);
+            console.log(`🎲 Found puzzle with ALL categories: "${categoryDisplay}" (${overlap} category overlaps)`);
             return { puzzle, overlap: overlap };
         }
 
         if (invalidPuzzlesFound >= maxInvalidPuzzles) {
             console.log("❌ Too many invalid puzzles found, stopping search");
         } else {
-            console.log(`❌ No unused puzzles found with category "${targetCategory}" after checking ${maxAttempts} puzzles`);
+            console.log(`❌ No unused puzzles found with ALL categories: "${categoryDisplay}" after checking ${maxAttempts} puzzles`);
         }
         return null;
     } finally {
@@ -673,107 +714,156 @@ async function main() {
                 exampleCategories.forEach(cat => console.log(`  ${cat}`));
                 console.log("  ... and many more\n");
 
-                // Custom input with TAB completion using readline
-                const rl = readline.createInterface({
-                    input: process.stdin,
-                    output: process.stdout
-                });
+                // Collect multiple categories
+                const selectedCategories = [];
+                let categoryNumber = 1;
 
-                let categoryInput = "";
+                while (true) {
+                    console.log(`\nCategory ${categoryNumber}:`);
 
-                const getInputWithTabCompletion = () => {
-                    return new Promise((resolve) => {
-                        // Set up raw mode to capture TAB key
-                        process.stdin.setRawMode(true);
-                        process.stdin.resume();
-                        process.stdin.setEncoding('utf8');
+                    // Custom input with TAB completion using readline
+                    const rl = readline.createInterface({
+                        input: process.stdin,
+                        output: process.stdout
+                    });
 
-                        let input = categoryInput;
-                        let cursorPos = input.length;
+                    let categoryInput = "";
 
-                        const displayInput = () => {
-                            process.stdout.write('\r\x1b[K'); // Clear line
-                            process.stdout.write(`Enter category name: ${input}`);
-                            // Position cursor
-                            process.stdout.write('\r');
-                            process.stdout.write(`Enter category name: ${input.substring(0, cursorPos)}`);
-                        };
+                    const getInputWithTabCompletion = () => {
+                        return new Promise((resolve) => {
+                            // Set up raw mode to capture TAB key
+                            process.stdin.setRawMode(true);
+                            process.stdin.resume();
+                            process.stdin.setEncoding('utf8');
 
-                        displayInput();
+                            let input = categoryInput;
+                            let cursorPos = input.length;
 
-                        const handleKey = (key) => {
-                            if (key === '\u0003') { // Ctrl+C
-                                process.exit();
-                            } else if (key === '\r' || key === '\n') { // Enter
-                                // Clean up raw mode properly
-                                process.stdin.setRawMode(false);
-                                process.stdin.pause();
-                                // Remove only our specific event listener
-                                process.stdin.off('data', handleKey);
-                                resolve(input);
-                            } else if (key === '\u007f') { // Backspace
-                                if (cursorPos > 0) {
-                                    input = input.substring(0, cursorPos - 1) + input.substring(cursorPos);
-                                    cursorPos--;
-                                    displayInput();
-                                }
-                            } else if (key === '\t') { // TAB
-                                // Find matching categories (case-insensitive)
-                                const matches = allCategories.filter(cat =>
-                                    cat.toLowerCase().startsWith(input.toLowerCase())
-                                );
+                            const displayInput = () => {
+                                process.stdout.write('\r\x1b[K'); // Clear line
+                                process.stdout.write(`Enter category name (or press Enter when done): ${input}`);
+                                // Position cursor
+                                process.stdout.write('\r');
+                                process.stdout.write(`Enter category name (or press Enter when done): ${input.substring(0, cursorPos)}`);
+                            };
 
-                                if (matches.length === 1) {
-                                    // Single match - complete it with correct case
-                                    input = matches[0];
-                                    cursorPos = input.length;
-                                    displayInput();
-                                } else if (matches.length > 1) {
-                                    // Multiple matches - find common prefix
-                                    const commonPrefix = findCommonPrefix(matches);
-                                    if (commonPrefix.length > input.length) {
-                                        // Extend to common prefix
-                                        input = commonPrefix;
-                                        cursorPos = input.length;
-                                        displayInput();
-                                    } else {
-                                        // Show suggestions only if we can't extend further
-                                        process.stdout.write('\n');
-                                        console.log("Suggestions:");
-                                        matches.slice(0, 5).forEach(match => {
-                                            console.log(`  ${match}`);
-                                        });
-                                        if (matches.length > 5) {
-                                            console.log(`  ... and ${matches.length - 5} more`);
-                                        }
+                            displayInput();
+
+                            const handleKey = (key) => {
+                                if (key === '\u0003') { // Ctrl+C
+                                    process.exit();
+                                } else if (key === '\r' || key === '\n') { // Enter
+                                    // Clean up raw mode properly
+                                    process.stdin.setRawMode(false);
+                                    process.stdin.pause();
+                                    // Remove only our specific event listener
+                                    process.stdin.off('data', handleKey);
+                                    resolve(input);
+                                } else if (key === '\u007f') { // Backspace
+                                    if (cursorPos > 0) {
+                                        input = input.substring(0, cursorPos - 1) + input.substring(cursorPos);
+                                        cursorPos--;
                                         displayInput();
                                     }
+                                } else if (key === '\t') { // TAB
+                                    // Find matching categories (case-insensitive)
+                                    const matches = allCategories.filter(cat =>
+                                        cat.toLowerCase().startsWith(input.toLowerCase())
+                                    );
+
+                                    if (matches.length === 1) {
+                                        // Single match - complete it with correct case
+                                        input = matches[0];
+                                        cursorPos = input.length;
+                                        displayInput();
+                                    } else if (matches.length > 1) {
+                                        // Multiple matches - find common prefix
+                                        const commonPrefix = findCommonPrefix(matches);
+                                        if (commonPrefix.length > input.length) {
+                                            // Extend to common prefix
+                                            input = commonPrefix;
+                                            cursorPos = input.length;
+                                            displayInput();
+                                        } else {
+                                            // Show suggestions only if we can't extend further
+                                            process.stdout.write('\n');
+                                            console.log("Suggestions:");
+                                            matches.slice(0, 5).forEach(match => {
+                                                console.log(`  ${match}`);
+                                            });
+                                            if (matches.length > 5) {
+                                                console.log(`  ... and ${matches.length - 5} more`);
+                                            }
+                                            displayInput();
+                                        }
+                                    }
+                                } else if (key.length === 1) { // Regular character
+                                    input = input.substring(0, cursorPos) + key + input.substring(cursorPos);
+                                    cursorPos++;
+                                    displayInput();
                                 }
-                            } else if (key.length === 1) { // Regular character
-                                input = input.substring(0, cursorPos) + key + input.substring(cursorPos);
-                                cursorPos++;
-                                displayInput();
-                            }
-                        };
+                            };
 
-                        process.stdin.on('data', handleKey);
-                    });
-                };
+                            process.stdin.on('data', handleKey);
+                        });
+                    };
 
-                categoryInput = await getInputWithTabCompletion();
-                rl.close();
+                    categoryInput = await getInputWithTabCompletion();
+                    rl.close();
 
-                targetCategory = categoryInput.trim();
-                console.log(`🔍 Searching for puzzles containing "${targetCategory}"...`);
+                    const input = categoryInput.trim();
+
+                    if (input === "") {
+                        if (selectedCategories.length === 0) {
+                            console.log("❌ Please enter at least one category.");
+                            continue;
+                        }
+                        break;
+                    }
+
+                    if (input.toLowerCase() === "that's all" || input.toLowerCase() === "thats all") {
+                        if (selectedCategories.length === 0) {
+                            console.log("❌ Please enter at least one category.");
+                            continue;
+                        }
+                        break;
+                    }
+
+                    // Check if category exists
+                    if (!allCategories.includes(input)) {
+                        console.log(`❌ Category "${input}" not found. Please enter a valid category.`);
+                        continue;
+                    }
+
+                    // Check if category already selected
+                    if (selectedCategories.includes(input)) {
+                        console.log(`❌ Category "${input}" already selected.`);
+                        continue;
+                    }
+
+                    selectedCategories.push(input);
+                    console.log(`✅ Added: ${input}`);
+                    console.log(`Selected categories (${selectedCategories.length}): ${selectedCategories.join(", ")}`);
+
+                    categoryNumber++;
+
+                    if (selectedCategories.length >= 8) {
+                        console.log("✅ Maximum of 8 categories reached.");
+                        break;
+                    }
+                }
+
+                targetCategory = selectedCategories; // Now it's an array
+                console.log(`🔍 Searching for puzzles containing ALL categories: ${selectedCategories.join(", ")}...`);
                 tryingDifferentPuzzle = false;
                 excludedPuzzleHash = null;
 
-                // Ask user if they want to find the best (low overlap) or any puzzle with this category
+                // Ask user if they want to find the best (low overlap) or any puzzle with these categories
                 const searchType = await prompts.select({
                     message: "What type of search?",
                     choices: [
                         { name: "🎯 Find puzzle with lowest overlap to past categories", value: "low_overlap" },
-                        { name: "🎲 Find any puzzle with this category (faster)", value: "any" }
+                        { name: "🎲 Find any puzzle with these categories (faster)", value: "any" }
                     ]
                 });
 
