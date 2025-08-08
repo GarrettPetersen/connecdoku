@@ -64,6 +64,11 @@
     "Vasco da Gama",
     "Zheng He"
   ],
+  "1600s": [
+    "Guy Fawkes",
+    "Remember, remember",
+    "Robert Catesby"
+  ],
   "1620s": [
     "Mayflower"
   ],
@@ -125,6 +130,7 @@
     "Don Quixote",
     "Galileo",
     "Globe Theatre",
+    "Guy Fawkes",
     "Handel",
     "I think, therefore I am",
     "James",
@@ -134,6 +140,8 @@
     "Ming",
     "Newton",
     "Qing",
+    "Remember, remember",
+    "Robert Catesby",
     "Salem",
     "Shakespeare",
     "The British Empire",
@@ -395,8 +403,10 @@
     "Kind Hearts and Coronets",
     "Land Rover",
     "Lex Luthor",
+    "Los Alamos",
     "Manchukuo",
     "Miracle on 34th Street",
+    "Oppenheimer",
     "Penguin",
     "Pinnochio",
     "Riddler",
@@ -412,6 +422,7 @@
     "The Manhattan Project",
     "The Red Shoes",
     "The Third Man",
+    "Trinity",
     "Truman",
     "We shall never surrender",
     "We will fight them on the beaches",
@@ -484,6 +495,7 @@
   ],
   "1960s": [
     "2001: A Space Odyssey",
+    "Abbey Road",
     "Apollo",
     "Ask not what your country can do for you",
     "Bardot",
@@ -567,6 +579,7 @@
     "Respect",
     "Roy Cohn",
     "Sanjuro",
+    "Sgt. Pepper's Lonely Hearts Club Band",
     "Sirhan Sirhan",
     "Slaughterhouse-Five",
     "Sputnik",
@@ -628,6 +641,7 @@
     "Comfortably Numb",
     "Crack Epidemic",
     "Dancing Queen",
+    "Dark Side of the Moon",
     "Death Wish",
     "Dog Day Afternoon",
     "Don't Look Now",
@@ -686,6 +700,7 @@
     "The Shining",
     "The Silmarillion",
     "The Stand",
+    "The Wall",
     "The Watergate Scandal",
     "The Wicker Man",
     "Tiananmen Square Massacre",
@@ -786,6 +801,7 @@
     "The Silence of the Lambs",
     "The Terminator",
     "The Thing",
+    "Thriller",
     "Time Bandits",
     "V",
     "Venom",
@@ -795,6 +811,7 @@
   "1990s": [
     "12 Monkeys",
     "A Map of the World",
+    "Agent Smith",
     "Aladdin",
     "Alien 3",
     "Alien: Resurrection",
@@ -809,6 +826,7 @@
     "Belle",
     "Bill & Ted's Bogus Journey",
     "Black",
+    "Blue Pill",
     "Braveheart",
     "Bush",
     "Chungking Express",
@@ -850,6 +868,9 @@
     "Jurassic Park",
     "Life is like a box of chocolates",
     "Losing My Religion",
+    "Morpheus",
+    "Neo",
+    "Nevermind",
     "Nicole Brown Simpson",
     "Nothing Compares 2 U",
     "Oh, the Places You'll Go!",
@@ -860,6 +881,7 @@
     "Princess Mononoke",
     "Pulp Fiction",
     "Raise the Red Lantern",
+    "Red Pill",
     "Reservoir Dogs",
     "Resident Evil",
     "Robin Hood: Prince of Thieves",
@@ -1287,6 +1309,7 @@
     "X-Men: First Class"
   ],
   "2020s": [
+    "10/7",
     "Avatar: Frontiers of Pandora",
     "Avatar: The Way of Water",
     "CODA",
@@ -1320,8 +1343,10 @@
     "A Farewell to Arms",
     "A Map of the World",
     "AIDS",
+    "Abbey Road",
     "Absalom, Absalom!",
     "Acura",
+    "Agent Smith",
     "Aladdin",
     "Alfa Romeo",
     "Alien",
@@ -1376,6 +1401,7 @@
     "Black Widow",
     "Blade Runner",
     "Blood, toil, tears and sweat",
+    "Blue Pill",
     "Bohemian Rhapsody",
     "Boston",
     "Bowser",
@@ -1437,6 +1463,7 @@
     "Dancing Queen",
     "Dante's Peak",
     "Daphne",
+    "Dark Side of the Moon",
     "Davy Crockett",
     "Days of Being Wild",
     "Death Wish",
@@ -1612,6 +1639,7 @@
     "Little Shop of Horrors",
     "Loki",
     "Lord of the Flies",
+    "Los Alamos",
     "Losing My Religion",
     "Lotus",
     "Luigi",
@@ -1646,6 +1674,7 @@
     "Miracle on 34th Street",
     "Mitsubishi",
     "Miyazaki",
+    "Morpheus",
     "Mr. Freeze",
     "Mustang",
     "My Fair Lady",
@@ -1656,6 +1685,8 @@
     "Nakamura",
     "Nasser",
     "National Lampoon's Christmas Vacation",
+    "Neo",
+    "Nevermind",
     "Nick Fury",
     "Nicole Brown Simpson",
     "Nina",
@@ -1674,6 +1705,7 @@
     "One Flew Over the Cuckoo's Nest",
     "One Hundred Years of Solitude",
     "One small step for man",
+    "Oppenheimer",
     "Ordinary People",
     "Othello",
     "Out of Africa",
@@ -1716,6 +1748,7 @@
     "Rear Window",
     "Red",
     "Red Beard",
+    "Red Pill",
     "Reservoir Dogs",
     "Resident Evil",
     "Respect",
@@ -1748,6 +1781,7 @@
     "Sense and Sensibility",
     "Serpico",
     "Seven Samurai",
+    "Sgt. Pepper's Lonely Hearts Club Band",
     "Shadowcat",
     "Shaggy",
     "Shakespeare in Love",
@@ -1920,6 +1954,7 @@
     "The Usual Suspects",
     "The Very Hungry Caterpillar",
     "The Vietnam War",
+    "The Wall",
     "The Wall Street Crash",
     "The Watergate Scandal",
     "The Wicker Man",
@@ -1930,6 +1965,7 @@
     "Thomas Andrews",
     "Thomas Edison",
     "Thor",
+    "Thriller",
     "Throne of Blood",
     "Tiananmen Square Massacre",
     "Time Bandits",
@@ -1940,6 +1976,7 @@
     "Toscanini",
     "Toyota",
     "Trainspotting",
+    "Trinity",
     "Truman",
     "Trump",
     "Unbreakable",
@@ -1991,6 +2028,7 @@
     "Zulu"
   ],
   "21st Century": [
+    "10/7",
     "11/22/63",
     "12 Years a Slave",
     "1Q84",
@@ -2418,6 +2456,10 @@
   "9th Century": [
     "Charlemagne"
   ],
+  "ABBA": [
+    "Dancing Queen",
+    "Waterloo"
+  ],
   "Abstract Concepts": [
     "INT",
     "Infinity",
@@ -2787,6 +2829,16 @@
   "Akira Kurosawa": [
     "Kurosawa"
   ],
+  "Albums": [
+    "Abbey Road",
+    "Bridge Over Troubled Water",
+    "Dark Side of the Moon",
+    "Hotel California",
+    "Nevermind",
+    "Sgt. Pepper's Lonely Hearts Club Band",
+    "The Wall",
+    "Thriller"
+  ],
   "Alcoholic Drinks": [
     "Absinthe",
     "Baijiu",
@@ -3007,6 +3059,9 @@
   "Arctic Exploration": [
     "Fram"
   ],
+  "Aretha Franklin": [
+    "Respect"
+  ],
   "Art Museums": [
     "Louvre",
     "Met",
@@ -3076,10 +3131,12 @@
     "Charlotte Corday",
     "Ezio Auditore",
     "Gavrilo Princip",
+    "Guy Fawkes",
     "John Wilkes Booth",
     "Lee Harvey Oswald",
     "Luigi",
     "Mehmet Ali Agca",
+    "Robert Catesby",
     "Sirhan Sirhan"
   ],
   "Associated with Edgar Allan Poe": [
@@ -3268,6 +3325,9 @@
   "Bear": [
     "Bruin"
   ],
+  "Bee Gees": [
+    "Stayin' Alive"
+  ],
   "Best Picture Winners": [
     "12 Years a Slave",
     "A Beautiful Mind",
@@ -3295,7 +3355,6 @@
     "No Country for Old Men",
     "Nomadland",
     "One Flew Over the Cuckoo's Nest",
-    "Oppenheimer",
     "Ordinary People",
     "Out of Africa",
     "Parasite",
@@ -3324,13 +3383,17 @@
   ],
   "Bible": [
     "Let there be light",
-    "Render unto Caesar"
+    "Render unto Caesar",
+    "Trinity"
   ],
   "Big Cats": [
     "Jaguar",
     "Lion",
     "Panther",
     "Tiger"
+  ],
+  "Billy Joel": [
+    "We didn't start the fire"
   ],
   "Biographical Stories": [
     "12 Years a Slave",
@@ -3495,6 +3558,7 @@
     "Beast",
     "Blue Jay",
     "Blue Jeans",
+    "Blue Pill",
     "Blue Whale",
     "Blueberry",
     "Bluebird",
@@ -3540,6 +3604,9 @@
     "Istanbul",
     "Jaipur",
     "Troyes"
+  ],
+  "Bob Dylan": [
+    "Like a Rolling Stone"
   ],
   "Body Parts": [
     "Achilles",
@@ -3793,6 +3860,7 @@
     "Mausoleum",
     "Mont Saint-Michel",
     "Notre Dame",
+    "Palace of Westminster",
     "Parthenon",
     "Petra",
     "Potala Palace",
@@ -4105,6 +4173,9 @@
     "The Santa Clause 2",
     "The Santa Clause 3: The Escape Clause",
     "White Christmas"
+  ],
+  "Chuck Berry": [
+    "Johnny B. Goode"
   ],
   "Cities": [
     "Albany",
@@ -4804,6 +4875,7 @@
     "Tesla",
     "TikTok",
     "Toyota",
+    "Virgin",
     "X"
   ],
   "Composers": [
@@ -5662,7 +5734,11 @@
     "Tango"
   ],
   "Dates": [
+    "10/7",
+    "11/22/63",
     "1984",
+    "2046",
+    "9/11",
     "April 14th, 1865",
     "April 15th, 1912",
     "December 7th, 1941",
@@ -5671,7 +5747,8 @@
     "June 18th, 1815",
     "June 28th, 1914",
     "June 4th, 1942",
-    "November 22nd, 1963"
+    "November 22nd, 1963",
+    "The 5th of November"
   ],
   "Demigods": [
     "Achilles",
@@ -6515,6 +6592,9 @@
     "Uranium",
     "Xenon"
   ],
+  "Elvis Presley": [
+    "Hound Dog"
+  ],
   "Emperors": [
     "Li Jiancheng",
     "Li Shimin",
@@ -6622,6 +6702,9 @@
   ],
   "Ends with /63": [
     "11/22/63"
+  ],
+  "Ends with 0/7": [
+    "10/7"
   ],
   "Ends with 000": [
     "Fantasia 2000"
@@ -6874,6 +6957,7 @@
     "Matzo Ball",
     "Tear down this wall",
     "The Fall of the Berlin Wall",
+    "The Wall",
     "Vauxhall",
     "Volleyball",
     "Wonderwall"
@@ -6966,6 +7050,7 @@
     "Nyasaland",
     "Poland",
     "Samarkand",
+    "Sgt. Pepper's Lonely Hearts Club Band",
     "Shetland",
     "Staten Island",
     "Stranger in a Strange Land",
@@ -7345,7 +7430,9 @@
   ],
   "Ends with BER": [
     "Dream of the Red Chamber",
-    "November"
+    "November",
+    "Remember, remember",
+    "The 5th of November"
   ],
   "Ends with BET": [
     "Tibet"
@@ -7637,6 +7724,7 @@
   "Ends with DER": [
     "Cider",
     "Easy Rider",
+    "Gunpowder",
     "Lavender",
     "Murder",
     "Outlander",
@@ -8145,6 +8233,7 @@
   ],
   "Ends with EUS": [
     "Amadeus",
+    "Morpheus",
     "Odysseus",
     "Perseus",
     "Statue of Zeus",
@@ -8303,6 +8392,7 @@
   "Ends with GIN": [
     "Begin",
     "Gin",
+    "Virgin",
     "Water Margin"
   ],
   "Ends with GIO": [
@@ -8689,8 +8779,10 @@
   "Ends with ILL": [
     "All You Need Is Kill",
     "Birth Control Pill",
+    "Blue Pill",
     "From Up on Poppy Hill",
     "Jill",
+    "Red Pill",
     "Winston Churchill"
   ],
   "Ends with ILM": [
@@ -8732,7 +8824,8 @@
   "Ends with IND": [
     "A Beautiful Mind",
     "Golden Hind",
-    "Gone with the Wind"
+    "Gone with the Wind",
+    "Nevermind"
   ],
   "Ends with INE": [
     "Catherine",
@@ -9022,6 +9115,7 @@
     "The realm, long divided, must unite"
   ],
   "Ends with ITH": [
+    "Agent Smith",
     "Captain Smith",
     "Revenge of the Sith"
   ],
@@ -9051,6 +9145,7 @@
     "Serenity",
     "Sin City",
     "The End of Eternity",
+    "Trinity",
     "Vatican City"
   ],
   "Ends with ITZ": [
@@ -9157,6 +9252,9 @@
     "Studebaker",
     "The Hurt Locker",
     "The Rise of Skywalker"
+  ],
+  "Ends with KES": [
+    "Guy Fawkes"
   ],
   "Ends with KET": [
     "Brisket",
@@ -9295,6 +9393,7 @@
     "Rockefeller",
     "Statler",
     "The Killer",
+    "Thriller",
     "Tyler"
   ],
   "Ends with LES": [
@@ -9604,7 +9703,8 @@
     "Portuguese Timor"
   ],
   "Ends with MOS": [
-    "Deimos"
+    "Deimos",
+    "Los Alamos"
   ],
   "Ends with MUN": [
     "Gulab Jamun"
@@ -9726,7 +9826,8 @@
     "Tunnel"
   ],
   "Ends with NEO": [
-    "Borneo"
+    "Borneo",
+    "Neo"
   ],
   "Ends with NER": [
     "Blade Runner",
@@ -9947,6 +10048,7 @@
     "Big Hero 6"
   ],
   "Ends with OAD": [
+    "Abbey Road",
     "On the Road",
     "The Road"
   ],
@@ -10208,6 +10310,7 @@
   ],
   "Ends with OON": [
     "Cameroon",
+    "Dark Side of the Moon",
     "Dog Day Afternoon",
     "Goodnight Moon",
     "Moon",
@@ -10887,6 +10990,7 @@
     "Saw"
   ],
   "Ends with SBY": [
+    "Robert Catesby",
     "The Great Gatsby"
   ],
   "Ends with SCA": [
@@ -11139,6 +11243,7 @@
     "Jupiter",
     "Lancaster",
     "Lobster",
+    "Palace of Westminster",
     "Peter",
     "Polyester",
     "Rooster",
@@ -11862,6 +11967,7 @@
     "Zulu"
   ],
   "Events": [
+    "10/7",
     "1955 World Series",
     "1989 Chinese Protests",
     "9/11",
@@ -12031,6 +12137,9 @@
     "Mary Kingsley",
     "Vasco da Gama",
     "Zheng He"
+  ],
+  "Explosives": [
+    "Gunpowder"
   ],
   "Fable Characters": [
     "Ant",
@@ -12227,6 +12336,7 @@
     "Merde!",
     "Nothing to fear but fear itself",
     "One small step for man",
+    "Remember, remember",
     "Render unto Caesar",
     "Something is rotten in Denmark",
     "Tear down this wall",
@@ -12451,6 +12561,7 @@
   ],
   "Fictional People": [
     "Agent 47",
+    "Agent Smith",
     "Aladdin",
     "Angel",
     "Anna",
@@ -12517,8 +12628,10 @@
     "Magneto",
     "Mario",
     "Moana",
+    "Morpheus",
     "Mr. Freeze",
     "Mystique",
+    "Neo",
     "Nick Fury",
     "Nightcrawler",
     "Nina",
@@ -13129,6 +13242,7 @@
     "Gran Colombia",
     "Ottoman Empire",
     "Prussia",
+    "Rome",
     "Soviet Union"
   ],
   "Former French Colonies": [
@@ -13139,7 +13253,6 @@
     "Cambodia",
     "Cameroon",
     "Central African Republic",
-    "Chad",
     "Comoros",
     "Congo",
     "Dahomey",
@@ -13254,7 +13367,6 @@
     "Burundi",
     "Cameroon",
     "Central African Republic",
-    "Chad",
     "Chile",
     "Colombia",
     "Comoros",
@@ -13478,10 +13590,14 @@
     "Hermes",
     "Horse",
     "Iliad",
+    "Morpheus",
     "Odyssey",
     "Paris",
     "Siren",
     "Troy"
+  ],
+  "Green Day": [
+    "Basket Case"
   ],
   "Green Things": [
     "Absinthe",
@@ -13508,6 +13624,12 @@
     "Saint Patrick",
     "Tabouleh",
     "Wasabi"
+  ],
+  "Grunge": [
+    "Nevermind"
+  ],
+  "Guns N' Roses": [
+    "Sweet Child O' Mine"
   ],
   "Harry Potter Characters": [
     "Draco",
@@ -13645,6 +13767,7 @@
     "Genghis Khan",
     "George Eliot",
     "Guan Yu",
+    "Guy Fawkes",
     "Handel",
     "Harriet Beecher Stowe",
     "Harriet Tubman",
@@ -13688,10 +13811,12 @@
     "Napoleon Bonaparte",
     "Newton",
     "Nicole Brown Simpson",
+    "Oppenheimer",
     "Paracelsus",
     "Plato",
     "Poe",
     "Rasputin",
+    "Robert Catesby",
     "Robert Koch",
     "Rosa Bonheur",
     "Saint Patrick",
@@ -13842,6 +13967,13 @@
   ],
   "Incan Architecture": [
     "Machu Picchu"
+  ],
+  "Incel Terminology": [
+    "Blue Pill",
+    "Chad",
+    "Red Pill",
+    "The Wall",
+    "Virgin"
   ],
   "Independence Movements": [
     "The American Revolution",
@@ -14133,6 +14265,12 @@
     "Schmaltz",
     "Tzimmes"
   ],
+  "Jimi Hendrix": [
+    "Purple Haze"
+  ],
+  "John Lennon": [
+    "Imagine"
+  ],
   "Jordanian Architecture": [
     "Petra"
   ],
@@ -14175,7 +14313,6 @@
     "Burkina Faso",
     "Burundi",
     "Central African Republic",
-    "Chad",
     "Czech Republic",
     "Eswatini",
     "Ethiopia",
@@ -14217,7 +14354,6 @@
     "Australia",
     "Brazil",
     "Canada",
-    "Chad",
     "China",
     "Democratic Republic of the Congo",
     "India",
@@ -14242,6 +14378,9 @@
     "San Marino",
     "Tuvalu",
     "Vatican City"
+  ],
+  "Led Zeppelin": [
+    "Stairway to Heaven"
   ],
   "Legal Stories": [
     "To Kill a Mockingbird"
@@ -14480,6 +14619,7 @@
     "Yemen"
   ],
   "Locations in Europe": [
+    "Abbey Road",
     "Aland",
     "Albania",
     "Alderney",
@@ -14568,6 +14708,7 @@
     "Norway",
     "Olympus",
     "Orkney",
+    "Palace of Westminster",
     "Paris",
     "Pisa",
     "Poland",
@@ -14667,6 +14808,7 @@
     "Lincoln",
     "Little Rock",
     "Long Island",
+    "Los Alamos",
     "Los Angeles",
     "Madison",
     "Manhattan",
@@ -14810,6 +14952,9 @@
   "MSC Cruises": [
     "MSC Meraviglia"
   ],
+  "Madonna": [
+    "Like a Prayer"
+  ],
   "Magic": [
     "Dragon",
     "Magic",
@@ -14870,6 +15015,12 @@
     "One Piece",
     "Pokemon",
     "Yugioh"
+  ],
+  "Manhattan Project": [
+    "Los Alamos",
+    "Oppenheimer",
+    "Plutonium",
+    "Trinity"
   ],
   "Manufactured by Aichi": [
     "Val"
@@ -15107,6 +15258,7 @@
     "Achilles",
     "Adams",
     "Agent 47",
+    "Agent Smith",
     "Aladdin",
     "Angel",
     "Archduke Franz Ferdinand",
@@ -15197,6 +15349,7 @@
     "Green Lantern",
     "Grover",
     "Guan Yu",
+    "Guy Fawkes",
     "Handel",
     "Harambe",
     "Harding",
@@ -15276,6 +15429,7 @@
     "Miyazaki",
     "Monroe",
     "Montgomery",
+    "Morpheus",
     "Morse",
     "Mozart",
     "Mr. Freeze",
@@ -15283,6 +15437,7 @@
     "Nakamura",
     "Napoleon Bonaparte",
     "Nasser",
+    "Neo",
     "Newton",
     "Nick Fury",
     "Nightcrawler",
@@ -15290,6 +15445,7 @@
     "Nixon",
     "Obama",
     "Ohtani",
+    "Oppenheimer",
     "Oscar",
     "Ozu",
     "Ozymandias",
@@ -15312,6 +15468,7 @@
     "Reagan",
     "Red Hood",
     "Riddler",
+    "Robert Catesby",
     "Robert Koch",
     "Robin",
     "Romeo",
@@ -15500,6 +15657,9 @@
     "Enchilada",
     "Salsa",
     "Taco"
+  ],
+  "Michael Jackson": [
+    "Billie Jean"
   ],
   "Microbiologists": [
     "Louis Pasteur",
@@ -17902,7 +18062,8 @@
     "Aliens"
   ],
   "Movies featuring Carrie-Anne Moss": [
-    "Chocolat"
+    "Chocolat",
+    "The Matrix"
   ],
   "Movies featuring Cary Elwes": [
     "Saw"
@@ -18464,7 +18625,8 @@
     "The French Connection"
   ],
   "Movies featuring Florence Pugh": [
-    "Little Women"
+    "Little Women",
+    "Oppenheimer"
   ],
   "Movies featuring Forest Whitaker": [
     "Arrival",
@@ -19421,6 +19583,7 @@
     "Encanto"
   ],
   "Movies featuring Matt Damon": [
+    "Oppenheimer",
     "The Departed"
   ],
   "Movies featuring Matt Dillon": [
@@ -20548,6 +20711,7 @@
   ],
   "Music": [
     "101 Dalmatians",
+    "Abbey Road",
     "Aladdin",
     "Alice in Wonderland",
     "Animal",
@@ -20584,6 +20748,7 @@
     "Creep",
     "Crow",
     "Dancing Queen",
+    "Dark Side of the Moon",
     "Doris Day",
     "Drake",
     "Dreamgirls",
@@ -20638,6 +20803,7 @@
     "Mulan",
     "My Fair Lady",
     "My Generation",
+    "Nevermind",
     "Note",
     "Nothing Compares 2 U",
     "Oliver & Company",
@@ -20660,6 +20826,7 @@
     "Rocky Horror Picture Show",
     "Say It Ain't So",
     "Scorpion",
+    "Sgt. Pepper's Lonely Hearts Club Band",
     "Singin' in the Rain",
     "Sleeping Beauty",
     "Smells Like Teen Spirit",
@@ -20694,7 +20861,9 @@
     "The Rescuers",
     "The Sound of Music",
     "The Sword in the Stone",
+    "The Wall",
     "The Wizard of Oz",
+    "Thriller",
     "Tick, Tick... Boom!",
     "Tune",
     "Under the Bridge",
@@ -21077,6 +21246,7 @@
     "Hoover",
     "Hulagu Khan",
     "Jackson",
+    "James",
     "Jane Seymour",
     "Jefferson",
     "Joe McCarthy",
@@ -21164,6 +21334,10 @@
     "Mario",
     "Princess Peach"
   ],
+  "Nirvana": [
+    "Nevermind",
+    "Smells Like Teen Spirit"
+  ],
   "Nobel Prize Winners": [
     "Einstein",
     "Marie Curie",
@@ -21210,6 +21384,9 @@
   "Nuclear Powers": [
     "Soviet Union"
   ],
+  "Nuclear Tests": [
+    "Trinity"
+  ],
   "Nurses": [
     "Clara Barton",
     "Florence Nightingale"
@@ -21253,6 +21430,9 @@
     "Saudi Arabia",
     "United Arab Emirates",
     "Venezuela"
+  ],
+  "Oasis": [
+    "Wonderwall"
   ],
   "Oceanliners": [
     "Andrea Doria",
@@ -21319,7 +21499,6 @@
     "Nomadland",
     "Once Upon a Time in Hollywood",
     "One Flew Over the Cuckoo's Nest",
-    "Oppenheimer",
     "Ordinary People",
     "Out of Africa",
     "Parasite",
@@ -21379,6 +21558,9 @@
   "Passenger Aircraft": [
     "747",
     "DC-3"
+  ],
+  "Pearl Jam": [
+    "Black"
   ],
   "People": [
     "Achilles",
@@ -21514,6 +21696,7 @@
     "Green Lantern",
     "Grover",
     "Guan Yu",
+    "Guy Fawkes",
     "Handel",
     "Harambe",
     "Harding",
@@ -21641,6 +21824,7 @@
     "Obama",
     "Ohtani",
     "Olive",
+    "Oppenheimer",
     "Oscar",
     "Ozu",
     "Ozymandias",
@@ -21666,6 +21850,7 @@
     "Reagan",
     "Red Hood",
     "Riddler",
+    "Robert Catesby",
     "Robert Koch",
     "Robin",
     "Rogue",
@@ -21757,7 +21942,6 @@
     "Kagemusha",
     "Les Misérables",
     "Once Upon a Time in Hollywood",
-    "Oppenheimer",
     "Othello",
     "Out of Africa",
     "Ran",
@@ -21851,7 +22035,8 @@
     "Feynman",
     "Galileo",
     "Marie Curie",
-    "Newton"
+    "Newton",
+    "Oppenheimer"
   ],
   "Physics Terms": [
     "Aperture",
@@ -21861,6 +22046,12 @@
   ],
   "Pilgrim Fathers": [
     "Mayflower"
+  ],
+  "Pink Floyd": [
+    "Another Brick in the Wall",
+    "Comfortably Numb",
+    "Dark Side of the Moon",
+    "The Wall"
   ],
   "Pink Panther Characters": [
     "Pink Panther"
@@ -21899,6 +22090,7 @@
     "WALL-E"
   ],
   "Place Names": [
+    "Abbey Road",
     "Abkhazia",
     "Abyssinia",
     "Aconcagua",
@@ -22159,6 +22351,7 @@
     "Lombok",
     "London",
     "Long Island",
+    "Los Alamos",
     "Los Angeles",
     "Luxembourg",
     "Luzon",
@@ -22231,6 +22424,7 @@
     "Orange",
     "Orkney",
     "Pakistan",
+    "Palace of Westminster",
     "Palau",
     "Palestine",
     "Palm Springs",
@@ -22443,6 +22637,7 @@
     "Shakespeare"
   ],
   "Political Events": [
+    "10/7",
     "1989 Chinese Protests",
     "9/11",
     "Battle of Dien Bien Phu",
@@ -22599,10 +22794,16 @@
   "Puzzle Games": [
     "Tetris"
   ],
+  "Queen": [
+    "Bohemian Rhapsody"
+  ],
   "Queens": [
     "Elizabeth",
     "Mary Rose",
     "Queen Mary"
+  ],
+  "R.E.M.": [
+    "Losing My Religion"
   ],
   "Racing Sports": [
     "Auto Racing",
@@ -22617,6 +22818,9 @@
     "Fallout",
     "Pulsar",
     "Quasar"
+  ],
+  "Radiohead": [
+    "Creep"
   ],
   "Rainforests": [
     "Amazon",
@@ -22828,6 +23032,7 @@
     "Grant",
     "Grover",
     "Guan Yu",
+    "Guy Fawkes",
     "Handel",
     "Harambe",
     "Harding",
@@ -22928,6 +23133,7 @@
     "Nixon",
     "Obama",
     "Ohtani",
+    "Oppenheimer",
     "Ozu",
     "Ozymandias",
     "Panmunjom",
@@ -22944,6 +23150,7 @@
     "Queen Mary",
     "Rasputin",
     "Reagan",
+    "Robert Catesby",
     "Robert Koch",
     "Roosevelt",
     "Rosa Bonheur",
@@ -23005,6 +23212,9 @@
     "The Taiping Rebellion",
     "The Whiskey Rebellion"
   ],
+  "Red Hot Chili Peppers": [
+    "Under the Bridge"
+  ],
   "Red Things": [
     "Apple",
     "Barszcz",
@@ -23028,6 +23238,7 @@
     "Red Beard",
     "Red Curry",
     "Red Hood",
+    "Red Pill",
     "Red Riding Hood",
     "Red Velvet",
     "Red Wine",
@@ -23096,7 +23307,8 @@
     "Devil",
     "Doom",
     "Halo",
-    "Hell"
+    "Hell",
+    "Trinity"
   ],
   "Religious Titles": [
     "Bishop",
@@ -23312,7 +23524,6 @@
     "Creep",
     "Every Breath You Take",
     "Hey Jude",
-    "Hotel California",
     "Hound Dog",
     "Imagine",
     "Johnny B. Goode",
@@ -24084,6 +24295,9 @@
   "Silver Things": [
     "Colossus"
   ],
+  "Sinead O'Connor": [
+    "Nothing Compares 2 U"
+  ],
   "Single Letters": [
     "A",
     "B",
@@ -24160,14 +24374,12 @@
     "Billie Jean",
     "Black",
     "Bohemian Rhapsody",
-    "Bridge Over Troubled Water",
     "Comfortably Numb",
     "Creep",
     "Dancing Queen",
     "Every Breath You Take",
     "Good Vibrations",
     "Hey Jude",
-    "Hotel California",
     "Hound Dog",
     "Imagine",
     "Johnny B. Goode",
@@ -24212,9 +24424,6 @@
   ],
   "Songs by Chuck Berry": [
     "Johnny B. Goode"
-  ],
-  "Songs by Eagles": [
-    "Hotel California"
   ],
   "Songs by Elvis Presley": [
     "Hound Dog"
@@ -24264,9 +24473,6 @@
   ],
   "Songs by Red Hot Chili Peppers": [
     "Under the Bridge"
-  ],
-  "Songs by Simon & Garfunkel": [
-    "Bridge Over Troubled Water"
   ],
   "Songs by Sinead O'Connor": [
     "Nothing Compares 2 U"
@@ -24530,6 +24736,9 @@
   "Starts with (G)": [
     "(G)I-DLE"
   ],
+  "Starts with 10/": [
+    "10/7"
+  ],
   "Starts with 101": [
     "101 Dalmatians"
   ],
@@ -24590,6 +24799,9 @@
   "Starts with A W": [
     "A Wrinkle in Time"
   ],
+  "Starts with ABB": [
+    "Abbey Road"
+  ],
   "Starts with ABK": [
     "Abkhazia"
   ],
@@ -24626,7 +24838,8 @@
     "Afghanistan"
   ],
   "Starts with AGE": [
-    "Agent 47"
+    "Agent 47",
+    "Agent Smith"
   ],
   "Starts with AGU": [
     "Agua Fresca"
@@ -25119,6 +25332,7 @@
     "Blue Jay",
     "Blue Jeans",
     "Blue Mosque",
+    "Blue Pill",
     "Blue Whale",
     "Blueberry",
     "Bluebird"
@@ -25685,6 +25899,7 @@
     "Daphne"
   ],
   "Starts with DAR": [
+    "Dark Side of the Moon",
     "Darkroom",
     "Darwin"
   ],
@@ -26452,7 +26667,11 @@
   "Starts with GUM": [
     "Gum"
   ],
+  "Starts with GUN": [
+    "Gunpowder"
+  ],
   "Starts with GUY": [
+    "Guy Fawkes",
     "Guyana"
   ],
   "Starts with GYM": [
@@ -27360,6 +27579,7 @@
     "Lord of the Flies"
   ],
   "Starts with LOS": [
+    "Los Alamos",
     "Los Angeles",
     "Losing My Religion"
   ],
@@ -27665,6 +27885,7 @@
   ],
   "Starts with MOR": [
     "Morocco",
+    "Morpheus",
     "Morse"
   ],
   "Starts with MOT": [
@@ -27755,6 +27976,7 @@
     "Nebula"
   ],
   "Starts with NEO": [
+    "Neo",
     "Neon"
   ],
   "Starts with NEP": [
@@ -27766,7 +27988,8 @@
     "Netherlands East Indies"
   ],
   "Starts with NEV": [
-    "Nevada"
+    "Nevada",
+    "Nevermind"
   ],
   "Starts with NEW": [
     "New Hebrides",
@@ -28016,6 +28239,7 @@
     "Pakistan"
   ],
   "Starts with PAL": [
+    "Palace of Westminster",
     "Palak Paneer",
     "Palau",
     "Palestine",
@@ -28386,11 +28610,15 @@
     "Red Dead Redemption",
     "Red Dragon",
     "Red Hood",
+    "Red Pill",
     "Red Riding Hood",
     "Red Velvet",
     "Red Wine",
     "Reddit",
     "Redoutable"
+  ],
+  "Starts with REM": [
+    "Remember, remember"
   ],
   "Starts with REN": [
     "Renault",
@@ -28442,6 +28670,7 @@
     "Road Runner"
   ],
   "Starts with ROB": [
+    "Robert Catesby",
     "Robert Koch",
     "Robin",
     "Robin Hood",
@@ -28676,6 +28905,9 @@
   ],
   "Starts with SEY": [
     "Seychelles"
+  ],
+  "Starts with SGT": [
+    "Sgt. Pepper's Lonely Hearts Club Band"
   ],
   "Starts with SHA": [
     "Shabu Shabu",
@@ -29131,6 +29363,7 @@
     "Thanos"
   ],
   "Starts with THE": [
+    "The 5th of November",
     "The AIDS Crisis",
     "The Adventures of Tom Sawyer",
     "The Age of Innocence",
@@ -29379,6 +29612,7 @@
     "The Very Hungry Caterpillar",
     "The Vietnam War",
     "The Village",
+    "The Wall",
     "The Wall Street Crash",
     "The Wandering Earth",
     "The War on Terror",
@@ -29404,6 +29638,7 @@
     "Thor"
   ],
   "Starts with THR": [
+    "Thriller",
     "Throne of Blood"
   ],
   "Starts with THU": [
@@ -29507,7 +29742,8 @@
   "Starts with TRI": [
     "Trifle",
     "Trinidad",
-    "Trinidad and Tobago"
+    "Trinidad and Tobago",
+    "Trinity"
   ],
   "Starts with TRO": [
     "Troy",
@@ -29689,6 +29925,7 @@
     "Violin"
   ],
   "Starts with VIR": [
+    "Virgin",
     "Virginia",
     "Virgo"
   ],
@@ -30028,6 +30265,9 @@
   "Stephen Crane": [
     "The Red Badge of Courage"
   ],
+  "Stevie Wonder": [
+    "Superstition"
+  ],
   "Stop-Motion Animated Films": [
     "The Nightmare Before Christmas"
   ],
@@ -30332,6 +30572,7 @@
     "Vaccine"
   ],
   "Terrorist Attacks": [
+    "10/7",
     "9/11",
     "The London Bombings",
     "The Oklahoma City Bombing"
@@ -30350,6 +30591,21 @@
     "Pluto",
     "Soul"
   ],
+  "The Beach Boys": [
+    "Good Vibrations"
+  ],
+  "The Beatles": [
+    "Abbey Road",
+    "Hey Jude",
+    "Sgt. Pepper's Lonely Hearts Club Band",
+    "Yesterday"
+  ],
+  "The Cranberries": [
+    "Zombie"
+  ],
+  "The Doors": [
+    "Light My Fire"
+  ],
   "The Good Place": [
     "Angel",
     "Chorus",
@@ -30359,6 +30615,26 @@
     "Halo",
     "Harp",
     "Soul"
+  ],
+  "The Gunpowder Plot": [
+    "Gunpowder",
+    "Guy Fawkes",
+    "James",
+    "Palace of Westminster",
+    "Remember, remember",
+    "Robert Catesby",
+    "The 5th of November"
+  ],
+  "The Matrix": [
+    "Agent Smith",
+    "Blue Pill",
+    "Morpheus",
+    "Neo",
+    "Red Pill",
+    "The Matrix"
+  ],
+  "The Police": [
+    "Every Breath You Take"
   ],
   "The Rime of the Ancient Mariner": [
     "Albatross",
@@ -30378,6 +30654,9 @@
     "Thomas Andrews",
     "Titanic",
     "Titanic: Adventure Out of Time"
+  ],
+  "The Who": [
+    "My Generation"
   ],
   "Theater Quotes": [
     "All the world's a stage",
@@ -30513,6 +30792,7 @@
     "Brave",
     "Braveheart",
     "Bravo",
+    "Bridge Over Troubled Water",
     "Bronco",
     "Brother Bear",
     "Brownie",
@@ -30714,6 +30994,7 @@
     "Hot Chocolate",
     "Hot Dog",
     "Hot Tub Time Machine",
+    "Hotel California",
     "Houston, we have a problem",
     "How the Grinch Stole Christmas",
     "Hubble",
@@ -30798,6 +31079,7 @@
     "Lockheed",
     "Long Island",
     "Looper",
+    "Los Alamos",
     "Los Angeles",
     "Louisa May Alcott",
     "Luca",
@@ -30873,7 +31155,6 @@
     "Once Upon a Time in Hollywood",
     "One Flew Over the Cuckoo's Nest",
     "One small step for man",
-    "Oppenheimer",
     "Orange",
     "Ordinary People",
     "Oscar",
@@ -31128,6 +31409,7 @@
     "The Whiskey Rebellion",
     "The Wizard of Oz",
     "Thomas Edison",
+    "Thriller",
     "Thunderbolt",
     "Tiananmen Square Massacre",
     "Tick, Tick... Boom!",
@@ -31288,6 +31570,7 @@
   "Things British": [
     "1984",
     "A Clockwork Orange",
+    "Abbey Road",
     "About Time",
     "Ada Lovelace",
     "Airbus",
@@ -31357,6 +31640,7 @@
     "Golden Hind",
     "Golf",
     "Guernsey",
+    "Guy Fawkes",
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Deathly Hallows",
     "Harry Potter and the Deathly Hallows: Part 1",
@@ -31412,6 +31696,7 @@
     "Olympic",
     "Orkney",
     "Ozymandias",
+    "Palace of Westminster",
     "Performance",
     "Peter Pan",
     "Polo",
@@ -31423,8 +31708,10 @@
     "Queen Elizabeth 2",
     "Queen Mary",
     "Queen Mary 2",
+    "Remember, remember",
     "Repulse",
     "Resolution",
+    "Robert Catesby",
     "Rolls-Royce",
     "Rowing",
     "Rugby",
@@ -31451,6 +31738,7 @@
     "Tennis",
     "Terra Nova",
     "Thames",
+    "The 5th of November",
     "The Anubis Gates",
     "The Brexit Vote",
     "The British Empire",
@@ -31504,6 +31792,7 @@
     "Vauxhall",
     "Victoria",
     "Victory",
+    "Virgin",
     "Walkabout",
     "Water, water everywhere",
     "We shall never surrender",
@@ -32902,7 +33191,6 @@
     "Looper",
     "Nightcrawler",
     "No Country for Old Men",
-    "Oppenheimer",
     "Parasite",
     "Predestination",
     "Primer",
@@ -32976,7 +33264,6 @@
     "Looper",
     "Nightcrawler",
     "No Country for Old Men",
-    "Oppenheimer",
     "Parasite",
     "Predestination",
     "Primer",
@@ -33071,6 +33358,16 @@
     "Titanic: Adventure Out of Time",
     "To Say Nothing of the Dog",
     "X-Men: Days of Future Past"
+  ],
+  "Title Tracks": [
+    "Abbey Road",
+    "Bridge Over Troubled Water",
+    "Dark Side of the Moon",
+    "Hotel California",
+    "Nevermind",
+    "Sgt. Pepper's Lonely Hearts Club Band",
+    "The Wall",
+    "Thriller"
   ],
   "Titles of Rank": [
     "Count",
@@ -33278,6 +33575,9 @@
     "Butterhead",
     "Iceberg",
     "Romaine"
+  ],
+  "U2": [
+    "With or Without You"
   ],
   "UN Security Council Permanent Members": [
     "China",
@@ -33674,6 +33974,7 @@
     "Cobra",
     "Dagger",
     "Green Arrow",
+    "Gunpowder",
     "H-bomb",
     "Hammer",
     "Hawkeye",
@@ -33697,6 +33998,9 @@
     "Storm",
     "Thor",
     "Thunder"
+  ],
+  "Weezer": [
+    "Say It Ain't So"
   ],
   "Western Stories": [
     "Back to the Future Part III",

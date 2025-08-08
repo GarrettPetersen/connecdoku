@@ -761,6 +761,46 @@
   },
   {
     "rows": [
+      "20th Century",
+      "Astronomical Objects",
+      "Battlestar Galactica",
+      "Place Names"
+    ],
+    "cols": [
+      "Women",
+      "Greek Gods",
+      "Starts with GAL",
+      "Starts with STA"
+    ],
+    "words": [
+      [
+        "Madonna",
+        "Poseidon",
+        "Galaxy Quest",
+        "Stargate"
+      ],
+      [
+        "Aurora",
+        "Helios",
+        "Galaxy",
+        "Star"
+      ],
+      [
+        "Helen",
+        "Hera",
+        "Galactica",
+        "Starbuck"
+      ],
+      [
+        "Victoria",
+        "Olympus",
+        "Galapagos",
+        "Staten Island"
+      ]
+    ]
+  },
+  {
+    "rows": [
       "Archipelagos",
       "Locations in Africa",
       "Locations in North America",
@@ -1116,46 +1156,6 @@
         "Dr. Strangelove",
         "The Iliad",
         "Lawrence of Arabia"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "20th Century",
-      "Astronomical Objects",
-      "Battlestar Galactica",
-      "Place Names"
-    ],
-    "cols": [
-      "Women",
-      "Greek Gods",
-      "Starts with GAL",
-      "Starts with STA"
-    ],
-    "words": [
-      [
-        "Madonna",
-        "Poseidon",
-        "Galaxy Quest",
-        "Stargate"
-      ],
-      [
-        "Aurora",
-        "Helios",
-        "Galaxy",
-        "Star"
-      ],
-      [
-        "Helen",
-        "Hera",
-        "Galactica",
-        "Starbuck"
-      ],
-      [
-        "Victoria",
-        "Olympus",
-        "Galapagos",
-        "Staten Island"
       ]
     ]
   },
