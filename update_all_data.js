@@ -502,6 +502,61 @@ console.log(`- Added ${nationalityCount} categories to Nationalities`);
 console.log(`- Added ${noMetaCount} categories to No Meta Category`);
 console.log(`- Total meta categories: ${Object.keys(updatedMetaCategories).length}`);
 
+// Step 6.9: Compile categories that appear in the tally but not in daily puzzles (excluding Letter Patterns)
+console.log('6.9. Compiling categories missing from daily puzzles...');
+try {
+    const tallyPath = path.join(__dirname, 'data', 'category_tally.json');
+    const dailyPuzzlesPath = path.join(__dirname, 'daily_puzzles', 'puzzles.json');
+
+    const tallyData = JSON.parse(fs.readFileSync(tallyPath, 'utf8'));
+    const puzzlesData = JSON.parse(fs.readFileSync(dailyPuzzlesPath, 'utf8'));
+
+    // Build set of categories used in daily puzzles (rows and cols)
+    const categoriesInDailyPuzzles = new Set();
+    for (const puzzle of puzzlesData) {
+        if (Array.isArray(puzzle.rows)) {
+            for (const category of puzzle.rows) {
+                categoriesInDailyPuzzles.add(category);
+            }
+        }
+        if (Array.isArray(puzzle.cols)) {
+            for (const category of puzzle.cols) {
+                categoriesInDailyPuzzles.add(category);
+            }
+        }
+    }
+
+    // Build set of categories used in tally with count > 0
+    const categoriesInTally = new Set();
+    if (tallyData && tallyData.categoryUsage) {
+        for (const [category, count] of Object.entries(tallyData.categoryUsage)) {
+            if (typeof count === 'number' && count > 0) {
+                categoriesInTally.add(category);
+            }
+        }
+    }
+
+    // Exclude categories belonging to the Letter Patterns meta category
+    const letterPatterns = new Set((updatedMetaCategories['Letter Patterns'] || []));
+
+    // Compute difference: in tally but not in daily puzzles, excluding letter patterns
+    const missingFromDaily = [];
+    for (const category of categoriesInTally) {
+        if (!categoriesInDailyPuzzles.has(category) && !letterPatterns.has(category)) {
+            missingFromDaily.push(category);
+        }
+    }
+
+    missingFromDaily.sort();
+
+    const missingOutputPath = path.join(__dirname, 'data', 'categories_missing_from_daily_puzzles.json');
+    fs.writeFileSync(missingOutputPath, JSON.stringify(missingFromDaily, null, 2), 'utf8');
+
+    console.log(`- Wrote ${missingFromDaily.length} categories to ${missingOutputPath}`);
+} catch (err) {
+    console.log(`- Error compiling categories missing from daily puzzles: ${err.message}`);
+}
+
 // Step 7: Count candidate puzzles in SQLite database
 // console.log('7. Counting candidate puzzles in SQLite database...');
 const dbPath = path.join(__dirname, 'puzzles.db');
