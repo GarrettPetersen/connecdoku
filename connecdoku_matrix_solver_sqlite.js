@@ -88,21 +88,42 @@ if (isMainThread) {
               rank INTEGER
             )`);
   });
-  const wordListHash = sha256(fs.readFileSync(CATS_F));
+  const wordListHash = sha256(fs.readFileSync(WORDS_F));
 
   // Check for existing progress and initialize completed work
   const savedProgress = loadProgress();
-  let completedChunks = new Set(savedProgress.completedChunks);
+
+  // Check hash first before initializing progress variables
+  console.log(`Current word list hash: ${wordListHash}`);
+  console.log(`Saved word list hash: ${savedProgress.wordListHash}`);
+
+  let completedChunks = new Set();
   let completedChunkWork = 0;
   let totalWorkEstimate = 0; // Track total work estimate from all chunks
   let totalCompletedWork = 0; // Track total completed j-steps across all workers
   let partialChunkProgress = new Map(); // Track progress on split chunks: i -> Set of completed chunk indices
 
-  // Restore partial chunk progress
-  if (savedProgress.partialChunkProgress) {
-    for (const [i, chunks] of savedProgress.partialChunkProgress) {
-      partialChunkProgress.set(i, new Set(chunks));
+  // Only restore progress if hash matches
+  if (savedProgress.wordListHash === wordListHash) {
+    completedChunks = new Set(savedProgress.completedChunks);
+    completedChunkWork = savedProgress.completedChunkWork || 0;
+
+    // Restore partial chunk progress
+    if (savedProgress.partialChunkProgress) {
+      for (const [i, chunks] of savedProgress.partialChunkProgress) {
+        partialChunkProgress.set(i, new Set(chunks));
+      }
     }
+  } else if (savedProgress.wordListHash !== null) {
+    console.log("Word list hash changed, starting fresh.");
+    console.log(`Hash mismatch: saved="${savedProgress.wordListHash}" vs current="${wordListHash}"`);
+    // Clear the progress file since hash doesn't match
+    if (fs.existsSync(PROGRESS_FILE)) {
+      console.log(`Deleting progress file: ${PROGRESS_FILE}`);
+      fs.unlinkSync(PROGRESS_FILE);
+    }
+  } else {
+    console.log("No previous progress found, starting fresh.");
   }
 
   // Calculate total work by building the complete 2-away matrix
@@ -172,41 +193,27 @@ if (isMainThread) {
   // Initialize total work estimate with the calculated total
   totalWorkEstimate = totalWork;
 
-  // Check for existing progress and initialize completed work
-  if (savedProgress.wordListHash === wordListHash) {
-    completedChunks = new Set(savedProgress.completedChunks);
-    completedChunkWork = savedProgress.completedChunkWork || 0;
-
-    // If completedChunkWork is missing (old progress file), estimate it
-    if (completedChunkWork === 0 && completedChunks.size > 0) {
-      console.log("Estimating work from completed chunks...");
-      // Calculate work for completed chunks using the same method as total work
-      // Only count chunks that could have been valid (i < n - 7)
-      for (const i of completedChunks) {
-        if (i < n - 7) {
-          let validJCount = 0;
-          for (let j = i + 1; j < n; j++) {
-            if (A2[i][j] >= 4) {
-              validJCount++;
-            }
+  // If completedChunkWork is missing (old progress file), estimate it
+  if (completedChunkWork === 0 && completedChunks.size > 0) {
+    console.log("Estimating work from completed chunks...");
+    // Calculate work for completed chunks using the same method as total work
+    // Only count chunks that could have been valid (i < n - 7)
+    for (const i of completedChunks) {
+      if (i < n - 7) {
+        let validJCount = 0;
+        for (let j = i + 1; j < n; j++) {
+          if (A2[i][j] >= 4) {
+            validJCount++;
           }
-          completedChunkWork += validJCount;
         }
+        completedChunkWork += validJCount;
       }
-      console.log(`Estimated ${completedChunkWork} j-steps from ${completedChunks.size} completed chunks`);
     }
-
-    totalCompletedWork = completedChunkWork; // Initialize with completed work
-    console.log(`Resuming from previous run. Found ${completedChunks.size} completed chunks with ${completedChunkWork} j-steps.`);
-  } else if (savedProgress.wordListHash !== null) {
-    console.log("Word list hash changed, starting fresh.");
-    // Clear the progress file since hash doesn't match
-    if (fs.existsSync(PROGRESS_FILE)) {
-      fs.unlinkSync(PROGRESS_FILE);
-    }
-  } else {
-    console.log("No previous progress found, starting fresh.");
+    console.log(`Estimated ${completedChunkWork} j-steps from ${completedChunks.size} completed chunks`);
   }
+
+  totalCompletedWork = completedChunkWork; // Initialize with completed work
+  console.log(`Resuming from previous run. Found ${completedChunks.size} completed chunks with ${completedChunkWork} j-steps.`);
 
   // ── work queue management ──
   const workQueue = [];
@@ -302,8 +309,8 @@ if (isMainThread) {
       clearTimeout(redrawTimeout);
     }
     redrawTimeout = setTimeout(() => {
-    const elapsed = (performance.now() - t0) / 1000;
-    let out = "";
+      const elapsed = (performance.now() - t0) / 1000;
+      let out = "";
 
       // Overall progress bar - account for completed chunks + current progress
       const completedWork = completedChunkWork + status.reduce((sum, st) => sum + st.jProgress, 0);
@@ -313,7 +320,7 @@ if (isMainThread) {
       out += `\nOverall: [${bar(overallProgress)}] ${(overallProgress * 100).toFixed(1)}% (${completedWork}/${totalWorkEstimate} j-steps)`;
       out += `\nCompleted chunks: ${completedChunks.size}/${n - 7} i-values`;
 
-    status.forEach((st, idx) => {
+      status.forEach((st, idx) => {
         let pct;
         if (st.done) {
           pct = 1; // Done workers show 100%
@@ -339,7 +346,7 @@ if (isMainThread) {
         process.stdout.write("\n".repeat(14) + out);  // Add 20 blank lines + progress
         isFirstRedraw = false;
       } else {
-    process.stdout.write("\x1b[H\x1b[J" + out);  // clear + write
+        process.stdout.write("\x1b[H\x1b[J" + out);  // clear + write
       }
     }, 25); // 25ms debounce for more responsive updates
   }
@@ -481,7 +488,7 @@ if (isMainThread) {
     }
   }
 
-/*────────────────────────── WORKER THREAD ─────────────────────────*/
+  /*────────────────────────── WORKER THREAD ─────────────────────────*/
 } else {
 
   const { id: WID, nWorkers: NW, cats, n, wordListHash, dbPath } = workerData;
@@ -619,7 +626,7 @@ if (isMainThread) {
 
     // Process single i value
     for (let i = start; i < end; i++) {
-    const jList = [...N2[i]].filter(j => j > i).sort((a, b) => a - b);
+      const jList = [...N2[i]].filter(j => j > i).sort((a, b) => a - b);
 
       // Handle partial chunks for hard i values
       let actualTotalJ, jProgress = 0;
@@ -646,68 +653,68 @@ if (isMainThread) {
       // Process j values in the assigned range
       for (let jIdx = processStart; jIdx < processEnd; jIdx++) {
         const j = jList[jIdx];
-      const kList = tList(i, j);
-      for (const k of kList) {
-        const lList = kList.filter(l => l > k && N2[k].has(l));
-        for (const l of lList) {
+        const kList = tList(i, j);
+        for (const k of kList) {
+          const lList = kList.filter(l => l > k && N2[k].has(l));
+          for (const l of lList) {
 
-          const rows = [i, j, k, l];
-          if (!excl(rows)) continue;
-          
-          // Check meta-category constraint for rows
-          const rowCategories = rows.map(idx => cats[idx]);
-          if (!checkMetaCategoryConstraint(rowCategories)) continue;
+            const rows = [i, j, k, l];
+            if (!excl(rows)) continue;
 
-          // column candidates
-          let cand = new Set(N1[i]);
-          for (let r = 1; r < 4; r++) {
-            const tmp = new Set();
-            for (const x of cand) if (N1[rows[r]].has(x)) tmp.add(x);
-            cand = tmp;
-          }
-          for (const r of rows) cand.delete(r);
-          cand = new Set([...cand].filter(c => !rows.some(r => S[r][c])));
-          if (cand.size < 4 || Math.min(...cand) <= rows[0]) continue;
+            // Check meta-category constraint for rows
+            const rowCategories = rows.map(idx => cats[idx]);
+            if (!checkMetaCategoryConstraint(rowCategories)) continue;
 
-          const cArr = [...cand].sort((a, b) => a - b), m = cArr.length;
-          for (let a = 0; a < m - 3; a++)
-            for (let b = a + 1; b < m - 2; b++) {
-              const x = cArr[a], y = cArr[b];
-              if (!B[x][y]) continue;
-              for (let c = b + 1; c < m - 1; c++) {
-                const z = cArr[c];
-                if (!(B[x][z] && B[y][z])) continue;
-                for (let d = c + 1; d < m; d++) {
-                  const w = cArr[d];
-                  if (!(B[x][w] && B[y][w] && B[z][w])) continue;
-                  const cols = [x, y, z, w];
+            // column candidates
+            let cand = new Set(N1[i]);
+            for (let r = 1; r < 4; r++) {
+              const tmp = new Set();
+              for (const x of cand) if (N1[rows[r]].has(x)) tmp.add(x);
+              cand = tmp;
+            }
+            for (const r of rows) cand.delete(r);
+            cand = new Set([...cand].filter(c => !rows.some(r => S[r][c])));
+            if (cand.size < 4 || Math.min(...cand) <= rows[0]) continue;
 
-                  // Check meta-category constraint for complete puzzle (rows + columns)
-                  const allCategories = [...rowCategories, ...cols.map(idx => cats[idx])];
-                  if (!checkMetaCategoryConstraint(allCategories)) continue;
+            const cArr = [...cand].sort((a, b) => a - b), m = cArr.length;
+            for (let a = 0; a < m - 3; a++)
+              for (let b = a + 1; b < m - 2; b++) {
+                const x = cArr[a], y = cArr[b];
+                if (!B[x][y]) continue;
+                for (let c = b + 1; c < m - 1; c++) {
+                  const z = cArr[c];
+                  if (!(B[x][z] && B[y][z])) continue;
+                  for (let d = c + 1; d < m; d++) {
+                    const w = cArr[d];
+                    if (!(B[x][w] && B[y][w] && B[z][w])) continue;
+                    const cols = [x, y, z, w];
 
-                  // full uniqueness check
-                  let ok = true;
-                  const all = new Set([...rows, ...cols]);
-                  outerRH:
-                  for (const r of rows)
-                    for (const cc of cols) {
-                      const own = mask[r].map((v, idx) => v & mask[cc][idx]);
-                      for (const o of all) if (o !== r && o !== cc)
-                        for (let k = 0; k < MASK_LEN; k++) own[k] &= ~mask[o][k];
-                      let nz = false;
-                      for (let k = 0; k < MASK_LEN; k++) if (own[k]) { nz = true; break; }
-                      if (!nz) { ok = false; break outerRH; }
-                    }
-                  if (!ok) continue;
+                    // Check meta-category constraint for complete puzzle (rows + columns)
+                    const allCategories = [...rowCategories, ...cols.map(idx => cats[idx])];
+                    if (!checkMetaCategoryConstraint(allCategories)) continue;
+
+                    // full uniqueness check
+                    let ok = true;
+                    const all = new Set([...rows, ...cols]);
+                    outerRH:
+                    for (const r of rows)
+                      for (const cc of cols) {
+                        const own = mask[r].map((v, idx) => v & mask[cc][idx]);
+                        for (const o of all) if (o !== r && o !== cc)
+                          for (let k = 0; k < MASK_LEN; k++) own[k] &= ~mask[o][k];
+                        let nz = false;
+                        for (let k = 0; k < MASK_LEN; k++) if (own[k]) { nz = true; break; }
+                        if (!nz) { ok = false; break outerRH; }
+                      }
+                    if (!ok) continue;
 
                     // Add to batch
                     const puzzleHash = sha256(rows.map(v => cats[v]).join("|") + cols.map(v => cats[v]).join("|"));
                     puzzleBatch.push({
                       hash: puzzleHash,
-                    rows: rows.map(v => cats[v]),
-                    cols: cols.map(v => cats[v])
-                  });
+                      rows: rows.map(v => cats[v]),
+                      cols: cols.map(v => cats[v])
+                    });
                     puzzlesFound++;
 
                     if (puzzleBatch.length >= BATCH_SIZE) {
@@ -768,7 +775,7 @@ if (isMainThread) {
         });
         // Allow the worker to exit naturally
         if (parentPort && parentPort.close) {
-          try { parentPort.close(); } catch {}
+          try { parentPort.close(); } catch { }
         }
       });
     }
