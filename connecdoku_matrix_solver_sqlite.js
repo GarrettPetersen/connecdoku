@@ -773,10 +773,8 @@ if (isMainThread) {
           puzzlesFound: puzzlesFound,
           puzzlesInserted: puzzlesInserted
         });
-        // Allow the worker to exit naturally
-        if (parentPort && parentPort.close) {
-          try { parentPort.close(); } catch { }
-        }
+        // Exit the worker process after sending cleanup message
+        process.exit(0);
       });
     }
   });
