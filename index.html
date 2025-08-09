@@ -223,6 +223,10 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
   <div class="modalCard">
     <button class="min" id="minShare">×</button>
     <h3 id="popTitle"></h3><pre id="shareGrid"></pre>
+    <div id="shareOptions" style="margin:8px 0 0 0; display:flex; align-items:center; gap:8px; font-size:13px;">
+      <input type="checkbox" id="includeLinkToggle" checked>
+      <label for="includeLinkToggle">Include link</label>
+    </div>
     <button class="action" id="copy">Copy to clipboard</button>
     <div id="unsolved"></div>
     <button class="action" id="returnToPuzzle" style="background:#666">Return to puzzle</button>
@@ -481,9 +485,20 @@ function saveGameStateTemplate() {
   console.warn('saveGameState called before init');
 }
 
-// Initialize GDPR and stats
+  // Initialize GDPR and stats
 checkGDPR();
 loadStats();
+
+  // Initialize share preferences (include link toggle)
+  (function initSharePreferences(){
+    const toggle = document.getElementById('includeLinkToggle');
+    if (!toggle) return;
+    const pref = getCookie('connecdoku_share_include_link');
+    toggle.checked = (pref === null ? true : !!pref);
+    toggle.addEventListener('change', () => {
+      setCookie('connecdoku_share_include_link', toggle.checked);
+    });
+  })();
 
 fetch('daily_puzzles/puzzles.json')
   .then(r=>r.json())
@@ -2198,7 +2213,10 @@ function init(puz){
     $('#unsolved').innerHTML = statsHtml;
     $('#sharePop').classList.add('show');
   }
-  $('#copy').onclick=()=>{ navigator.clipboard.writeText($('#shareGrid').textContent);
+  $('#copy').onclick=()=>{ const include = ($('#includeLinkToggle') && $('#includeLinkToggle').checked) ? true : false;
+                           let text = $('#shareGrid').textContent;
+                           if (include) text += '\nconnecdoku.com';
+                           navigator.clipboard.writeText(text);
                            $('#copy').textContent='Copied!'; };
   $('#minShare').onclick=()=>{ $('#sharePop').classList.remove('show');
                                $('#shareBtn').style.display='block'; };
