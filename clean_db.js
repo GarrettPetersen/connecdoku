@@ -14,6 +14,7 @@ const DATA_DIR = path.join(__dirname, "data");
 const WORDS_F = path.join(DATA_DIR, "words.json");
 const CATS_F = path.join(DATA_DIR, "categories.json");
 const META_CATS_F = path.join(DATA_DIR, "meta_categories.json");
+const CAT_SCORES_F = path.join(DATA_DIR, "category_scores.json");
 const DB_PATH = path.join(__dirname, "puzzles.db");
 
 // ───────── helpers ──────────────────────────────────────────────────────────
@@ -185,16 +186,62 @@ async function deletePuzzleBatch(db, puzzleHashes) {
     return totalDeleted;
 }
 
+async function ensureQualityScoreColumn(db) {
+    return new Promise((resolve, reject) => {
+        db.all("PRAGMA table_info(puzzles)", (err, rows) => {
+            if (err) { reject(err); return; }
+            const hasCol = rows && rows.some(r => r.name === 'puzzle_quality_score');
+            if (hasCol) { resolve(false); return; }
+            db.run("ALTER TABLE puzzles ADD COLUMN puzzle_quality_score REAL", err2 => {
+                if (err2) reject(err2); else resolve(true);
+            });
+        });
+    });
+}
+
+async function updatePuzzleScoresBatch(db, updates) {
+    if (!updates || updates.length === 0) return 0;
+    const MAX_PARAMS = 900; // stay under sqlite limit
+    // each row contributes 3 params (WHEN hash THEN score, and IN hash)
+    const BATCH_SIZE = Math.max(1, Math.floor(MAX_PARAMS / 3));
+    let totalUpdated = 0;
+    for (let i = 0; i < updates.length; i += BATCH_SIZE) {
+        const batch = updates.slice(i, i + BATCH_SIZE);
+        const cases = batch.map(() => "WHEN ? THEN ?").join(" ");
+        const inPh = batch.map(() => "?").join(",");
+        const sql = `UPDATE puzzles SET puzzle_quality_score = CASE puzzle_hash ${cases} END WHERE puzzle_hash IN (${inPh})`;
+        const params = [];
+        for (const u of batch) { params.push(u.hash, u.score); }
+        for (const u of batch) { params.push(u.hash); }
+        // Wrap run in a promise and use changes() afterwards
+        // SQLite's run doesn't return changes directly in this mode, so do a SELECT count(*) afterwards
+        await new Promise((resolve, reject) => {
+            db.run(sql, params, function(err) {
+                if (err) reject(err); else resolve();
+            });
+        });
+        totalUpdated += batch.length;
+    }
+    return totalUpdated;
+}
+
 // ───────── main validation function ─────────────────────────────────────────
 async function main() {
     console.log("🔍 Puzzle Validator - Checking database against current word list");
     console.log("=" * 60);
     
-    // Load current word list, categories, and meta-categories
-    begin("Loading word list, categories, and meta-categories");
+    // Load current word list, categories, meta-categories, and category scores
+    begin("Loading word list, categories, meta-categories, and scores");
     const wordsJson = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
     const categoriesJson = JSON.parse(fs.readFileSync(CATS_F, "utf8"));
     const metaCatsJson = JSON.parse(fs.readFileSync(META_CATS_F, "utf8"));
+    let categoryScores = {};
+    try {
+        categoryScores = JSON.parse(fs.readFileSync(CAT_SCORES_F, "utf8"));
+    } catch (e) {
+        console.log(`Category scores file not found or invalid at ${CAT_SCORES_F}. All categories will score as 0.`);
+        categoryScores = {};
+    }
     
     // Build category to meta-category mapping
     const categoryToMeta = new Map();
@@ -209,6 +256,7 @@ async function main() {
     console.log(`Loaded ${Object.keys(categoriesJson).length} categories`);
     console.log(`Loaded ${Object.keys(wordsJson).length} words`);
     console.log(`Loaded ${Object.keys(metaCatsJson).length} meta-categories`);
+    console.log(`Loaded ${Object.keys(categoryScores).length} category scores`);
     console.log(`Built mapping for ${categoryToMeta.size} categorized categories`);
     end();
     
@@ -222,6 +270,13 @@ async function main() {
     begin("Connecting to database");
     const db = await setupDatabase();
     console.log(`Database connected: ${DB_PATH}`);
+    // Ensure score column exists
+    try {
+        const added = await ensureQualityScoreColumn(db);
+        if (added) console.log("Added column: puzzle_quality_score");
+    } catch (e) {
+        console.log(`Warning: could not ensure puzzle_quality_score column: ${e.message}`);
+    }
     end();
     
     // Count total puzzles
@@ -249,6 +304,7 @@ async function main() {
     // Validate puzzles in hash-based batches
     begin("Validating puzzles");
     const validPuzzles = [];
+    const unknownCategories = new Set();
     let processed = 0;
     let totalInvalid = 0;
     const BATCH_COUNT = 100; // Split hash range into 100 batches
@@ -263,6 +319,7 @@ async function main() {
         const puzzles = await getPuzzleBatch(db, currentHashStr, nextHash);
         
         const batchInvalidHashes = [];
+        const batchScoreUpdates = [];
         
         for (const puzzle of puzzles) {
             const validation = validatePuzzle(puzzle, categoriesJson, categoryToMeta);
@@ -277,7 +334,14 @@ async function main() {
                     if (categoryTally.hasOwnProperty(category)) {
                         categoryTally[category]++;
                     }
+                    // Build score and track unknowns
+                    if (!(category in categoryScores)) {
+                        unknownCategories.add(category);
+                    }
                 }
+                // Compute score as sum of category scores (default 0)
+                const puzzleScore = categories.reduce((sum, c) => sum + (categoryScores[c] || 0), 0);
+                batchScoreUpdates.push({ hash: puzzle.puzzle_hash, score: puzzleScore });
             } else {
                 batchInvalidHashes.push(puzzle.puzzle_hash);
             }
@@ -294,6 +358,15 @@ async function main() {
             pbar(processed, totalPuzzles, "Validating puzzles", 
                   `${validPuzzles.length} valid, ${totalInvalid} deleted`, true);
         }
+
+        // Update quality scores for valid puzzles from this batch
+        if (batchScoreUpdates.length > 0) {
+            try {
+                await updatePuzzleScoresBatch(db, batchScoreUpdates);
+            } catch (e) {
+                console.log(`Error updating puzzle scores for batch: ${e.message}`);
+            }
+        }
         
         currentHash = BigInt("0x" + nextHash);
     }
@@ -308,6 +381,11 @@ async function main() {
     console.log(`   Valid puzzles: ${validPuzzles.length}`);
     console.log(`   Invalid puzzles deleted: ${totalInvalid}`);
     console.log(`   Invalid percentage: ${((totalInvalid / totalPuzzles) * 100).toFixed(2)}%`);
+
+    if (unknownCategories.size > 0) {
+        console.error(`\n⚠️  Categories missing from category_scores.json (${unknownCategories.size}):`);
+        console.error(Array.from(unknownCategories).sort().join("\n"));
+    }
     
     if (totalInvalid === 0) {
         console.log("\n✅ All puzzles are valid! No cleanup needed.");

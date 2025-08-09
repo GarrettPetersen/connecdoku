@@ -502,6 +502,61 @@ console.log(`- Added ${nationalityCount} categories to Nationalities`);
 console.log(`- Added ${noMetaCount} categories to No Meta Category`);
 console.log(`- Total meta categories: ${Object.keys(updatedMetaCategories).length}`);
 
+// Step 6.6: Compute category scores (Letter Patterns = 0, others inversely by size; 4 -> 5 pts, max -> 0 pts)
+console.log('6.6. Computing category scores...');
+try {
+    const categoryScoresPath = path.join(__dirname, 'data', 'category_scores.json');
+
+    // Use the in-memory categories and meta categories we just produced
+    const categoriesJson = finalCategories; // category -> [words]
+    const letterPatterns = new Set(updatedMetaCategories['Letter Patterns'] || []);
+
+    // Determine the maximum category size among non-letter-pattern categories
+    let maxSize = 4; // baseline (minimum for puzzles)
+    for (const [category, words] of Object.entries(categoriesJson)) {
+        if (letterPatterns.has(category)) continue;
+        if (Array.isArray(words)) {
+            const size = words.length;
+            if (size > maxSize) maxSize = size;
+        }
+    }
+
+    // Map sizes in [4, maxSize] -> points in [5, 0] linearly
+    const minSize = 4;
+    const minPoints = 5;
+    const maxPoints = 0;
+    const span = maxSize - minSize; // how many sizes above 4 exist
+
+    const scores = {};
+    for (const [category, words] of Object.entries(categoriesJson)) {
+        if (letterPatterns.has(category)) {
+            scores[category] = 0;
+            continue;
+        }
+        const rawSize = Array.isArray(words) ? words.length : 0;
+        const clampedSize = Math.max(minSize, rawSize);
+        let pts;
+        if (span <= 0) {
+            // If max size is 4 (no larger categories), give full points to all non-letter-patterns
+            pts = minPoints;
+        } else {
+            const t = (maxSize - clampedSize) / span; // 1 at 4 items, 0 at maxSize
+            pts = minPoints * t + maxPoints * (1 - t); // linear map to [5..0]
+        }
+        scores[category] = Math.round(pts * 100) / 100; // 2 decimal places
+    }
+
+    // Alphabetize keys for readability
+    const alphabetizedScores = {};
+    Object.keys(scores).sort().forEach(k => { alphabetizedScores[k] = scores[k]; });
+
+    fs.writeFileSync(categoryScoresPath, JSON.stringify(alphabetizedScores, null, 2), 'utf8');
+    console.log(`- Wrote ${Object.keys(alphabetizedScores).length} category scores to ${categoryScoresPath}`);
+    console.log(`- Scoring range: size ${minSize} -> ${minPoints} pts, size ${maxSize} -> ${maxPoints} pts`);
+} catch (err) {
+    console.log(`- Error computing category scores: ${err.message}`);
+}
+
 // Step 6.9: Compile categories that appear in the tally but not in daily puzzles (excluding Letter Patterns)
 console.log('6.9. Compiling categories missing from daily puzzles...');
 try {
