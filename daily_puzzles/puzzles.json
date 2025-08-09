@@ -1558,5 +1558,85 @@
         "Les Misérables"
       ]
     ]
+  },
+  {
+    "rows": [
+      "17th Century",
+      "1st Century BC",
+      "Ends with TER",
+      "Things Turkish"
+    ],
+    "cols": [
+      "Buildings",
+      "Drama Stories",
+      "Events",
+      "Men"
+    ],
+    "words": [
+      [
+        "Globe Theatre",
+        "Don Quixote",
+        "The Great Fire of London",
+        "Guy Fawkes"
+      ],
+      [
+        "Curia",
+        "Cleopatra",
+        "The Roman Empire",
+        "Brutus"
+      ],
+      [
+        "Palace of Westminster",
+        "Avatar: The Way of Water",
+        "The Chernobyl Disaster",
+        "Carter"
+      ],
+      [
+        "Hagia Sophia",
+        "Troy",
+        "The Fall of Constantinople",
+        "Mehmet Ali Agca"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Alcoholic Drinks",
+      "DC Characters",
+      "Marvel Characters",
+      "Types of Animals"
+    ],
+    "cols": [
+      "Black Things",
+      "Green Things",
+      "Red Things",
+      "White Things"
+    ],
+    "words": [
+      [
+        "Stout",
+        "Absinthe",
+        "Red Wine",
+        "White Wine"
+      ],
+      [
+        "Batman",
+        "Riddler",
+        "Flash",
+        "Mr. Freeze"
+      ],
+      [
+        "Venom",
+        "Hulk",
+        "Iron Man",
+        "Iceman"
+      ],
+      [
+        "Raven",
+        "Kiwi",
+        "Lobster",
+        "Swan"
+      ]
+    ]
   }
 ]

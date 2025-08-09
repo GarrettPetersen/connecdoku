@@ -13,6 +13,7 @@
 
 import fs from "fs";
 import path from "path";
+import crypto from "crypto";
 import { fileURLToPath } from "url";
 import * as prompts from "@inquirer/prompts";
 import sqlite3 from "sqlite3";
@@ -29,11 +30,17 @@ const DEFAULT_QUALITY_SAMPLE = Number(process.env.CURATOR_QUALITY_SAMPLE || 500)
 const DEFAULT_MIN_QUALITY = Number(process.env.CURATOR_MIN_QUALITY || 0);
 const GOOD_THRESHOLD = Number(process.env.PUZZLE_SCORE_GOOD || 12);
 const MEDIUM_THRESHOLD = Number(process.env.PUZZLE_SCORE_MED || 6);
+const HIGH_QUALITY_MIN = Number(process.env.CURATOR_HIGH_QUALITY_MIN || 20);
 
 function scoreEmoji(score) {
     if (score >= GOOD_THRESHOLD) return '🟢';
     if (score >= MEDIUM_THRESHOLD) return '🟡';
     return '🔴';
+}
+
+function computePuzzleHash(rows, cols) {
+    const s = rows.join("|") + cols.join("|");
+    return crypto.createHash("sha256").update(s).digest("hex");
 }
 
 console.log("Directories:");
@@ -133,6 +140,11 @@ function getRandomPuzzle(db, targetCategories = null) {
             if (err) {
                 reject(err);
             } else if (row) {
+                // Skip if already curated by hash
+                if (usedHashes.has(row.puzzle_hash)) {
+                    resolve(null);
+                    return;
+                }
                 resolve({
                     rows: [row.row0, row.row1, row.row2, row.row3],
                     cols: [row.col0, row.col1, row.col2, row.col3],
@@ -198,7 +210,8 @@ function getMultipleRandomPuzzles(db, count, targetCategories = null) {
             if (err) {
                 reject(err);
             } else {
-                resolve(rows.map(row => ({
+                const filtered = rows.filter(r => !usedHashes.has(r.puzzle_hash));
+                resolve(filtered.map(row => ({
                     rows: [row.row0, row.row1, row.row2, row.row3],
                     cols: [row.col0, row.col1, row.col2, row.col3],
                     hash: row.puzzle_hash,
@@ -278,6 +291,10 @@ function findPuzzleWithNoRecentCategories(db, recentCategories) {
             if (err) {
                 reject(err);
             } else if (row) {
+                if (usedHashes.has(row.puzzle_hash)) {
+                    resolve(null);
+                    return;
+                }
                 resolve({
                     rows: [row.row0, row.row1, row.row2, row.row3],
                     cols: [row.col0, row.col1, row.col2, row.col3],
@@ -290,6 +307,46 @@ function findPuzzleWithNoRecentCategories(db, recentCategories) {
             }
         });
     });
+}
+
+async function findHighQualityPuzzle() {
+    const sqliteDb = await openDatabase();
+    try {
+        const sampleSize = DEFAULT_QUALITY_SAMPLE * 2;
+        const query = `
+            WITH sample AS (
+                SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp,
+                       COALESCE(puzzle_quality_score, 0) AS q
+                FROM puzzles
+                WHERE COALESCE(puzzle_quality_score, 0) >= ?
+                AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
+                LIMIT ${sampleSize}
+            )
+            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp, q
+            FROM sample
+            ORDER BY q DESC
+            LIMIT 20
+        `;
+        return await new Promise((resolve, reject) => {
+            sqliteDb.all(query, [HIGH_QUALITY_MIN], (err, rows) => {
+                if (err) return reject(err);
+                if (!rows || rows.length === 0) return resolve(null);
+                for (const row of rows) {
+                    if (usedHashes.has(row.puzzle_hash)) continue;
+                    return resolve({
+                        rows: [row.row0, row.row1, row.row2, row.row3],
+                        cols: [row.col0, row.col1, row.col2, row.col3],
+                        hash: row.puzzle_hash,
+                        timestamp: row.timestamp,
+                        qualityScore: row.q
+                    });
+                }
+                resolve(null);
+            });
+        });
+    } finally {
+        sqliteDb.close();
+    }
 }
 
 function deletePuzzleFromDatabase(db, puzzleHash) {
@@ -323,6 +380,15 @@ const used = new Set(
     db.flatMap(p => [makeKey(p.rows, p.cols), makeKey(p.cols, p.rows)])
 );
 console.log(`Built used puzzle set with ${used.size} keys`);
+
+// Build set of used hashes from existing daily puzzles to skip duplicates across sessions
+const usedHashes = new Set();
+for (const p of db) {
+    const h = computePuzzleHash(p.rows, p.cols);
+    usedHashes.add(h);
+    usedHashes.add(computePuzzleHash(p.cols, p.rows)); // symmetric
+}
+console.log(`Built used hash set with ${usedHashes.size} entries`);
 
 // ──────────────── usage tracking ──────────────────────────────────
 console.log("Building usage counts...");
@@ -719,7 +785,7 @@ async function main() {
             searchChoice = await prompts.select({
                 message: "What would you like to do?",
                 choices: [
-                    { name: "🎯 Find a puzzle with low overlap to past categories", value: "low_overlap" },
+                    { name: "🏆 Find a high-quality puzzle (score ≥ 20)", value: "high_quality" },
                     { name: "🎲 Find a truly random puzzle", value: "truly_random" },
                     { name: "🔍 Search for puzzle with specific category", value: "search" },
                     { name: "🌶️ Secret Sauce: Find puzzle with NO categories from recent days", value: "secret_sauce" },
@@ -735,7 +801,20 @@ async function main() {
             tryingDifferentPuzzle = false;
             excludedPuzzleHash = null;
 
-            if (searchChoice === "search") {
+            if (searchChoice === "high_quality") {
+                console.log("Searching for a high-quality puzzle...");
+                const hq = await findHighQualityPuzzle();
+                if (!hq) {
+                    console.log("❌ No unused high-quality puzzles found right now");
+                    // Reset to continue loop and offer menu again
+                    searchChoice = null;
+                    continue;
+                }
+                // Set result directly and skip the rest of menu setup
+                targetCategory = null;
+                result = { puzzle: hq, overlap: 0 };
+                // fall through; after menu we will skip to display section
+            } else if (searchChoice === "search") {
                 // Get all available categories for tab completion
                 const allCategories = Object.keys(categoriesJson).sort();
 
@@ -891,11 +970,10 @@ async function main() {
                 tryingDifferentPuzzle = false;
                 excludedPuzzleHash = null;
 
-                // Ask user if they want to find the best (low overlap) or any puzzle with these categories
+                // Only offer the simple option
                 const searchType = await prompts.select({
                     message: "What type of search?",
                     choices: [
-                        { name: "🎯 Find puzzle with lowest overlap to past categories", value: "low_overlap" },
                         { name: "🎲 Find any puzzle with these categories (faster)", value: "any" }
                     ]
                 });
@@ -1181,6 +1259,13 @@ async function main() {
             db.push(newPuzzle);
             used.add(makeKey(puzzle.rows, puzzle.cols));
             used.add(makeKey(puzzle.cols, puzzle.rows));
+            // Also add to usedHashes so subsequent selections in this session skip it
+            try {
+                const forwardHash = computePuzzleHash(puzzle.rows, puzzle.cols);
+                const reverseHash = computePuzzleHash(puzzle.cols, puzzle.rows);
+                usedHashes.add(forwardHash);
+                usedHashes.add(reverseHash);
+            } catch {}
 
             // Update usage counts
             for (const category of allCategories) {
