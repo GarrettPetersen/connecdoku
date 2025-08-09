@@ -502,7 +502,7 @@ console.log(`- Added ${nationalityCount} categories to Nationalities`);
 console.log(`- Added ${noMetaCount} categories to No Meta Category`);
 console.log(`- Total meta categories: ${Object.keys(updatedMetaCategories).length}`);
 
-// Step 6.6: Compute category scores (Letter Patterns = 0, others inversely by size; 4 -> 5 pts, max -> 0 pts)
+// Step 6.6: Compute category scores with a curve (Letter Patterns = 0; 4 -> 5 pts, max -> 0 pts, median -> 3 pts)
 console.log('6.6. Computing category scores...');
 try {
     const categoryScoresPath = path.join(__dirname, 'data', 'category_scores.json');
@@ -511,13 +511,34 @@ try {
     const categoriesJson = finalCategories; // category -> [words]
     const letterPatterns = new Set(updatedMetaCategories['Letter Patterns'] || []);
 
-    // Determine the maximum category size among non-letter-pattern categories
+    // Determine the maximum category size among non-letter-pattern categories and sizes list for median
     let maxSize = 4; // baseline (minimum for puzzles)
+    const nonLetterSizes = [];
     for (const [category, words] of Object.entries(categoriesJson)) {
         if (letterPatterns.has(category)) continue;
-        if (Array.isArray(words)) {
-            const size = words.length;
-            if (size > maxSize) maxSize = size;
+        const rawSize = Array.isArray(words) ? words.length : 0;
+        const clamped = Math.max(4, rawSize);
+        nonLetterSizes.push(clamped);
+        if (clamped > maxSize) maxSize = clamped;
+    }
+
+    // Compute median of non-letter sizes (clamped at 4) and choose a percentile pivot > 4 if possible
+    let medianSize = 4;
+    let pivotSize = 4; // size we target for 3 points
+    let pivotPercentile = 0.7; // 70th percentile to handle long tail of small categories
+    if (nonLetterSizes.length > 0) {
+        const sorted = nonLetterSizes.slice().sort((a, b) => a - b);
+        const mid = Math.floor(sorted.length / 2);
+        medianSize = sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
+
+        // Prefer pivot from sizes strictly > 4 using percentile
+        const gtMin = sorted.filter(s => s > 4);
+        if (gtMin.length > 0) {
+            const idx = Math.max(0, Math.min(gtMin.length - 1, Math.floor((gtMin.length - 1) * pivotPercentile)));
+            pivotSize = gtMin[idx];
+        } else {
+            // Fallbacks
+            pivotSize = Math.max(4, medianSize);
         }
     }
 
@@ -526,6 +547,18 @@ try {
     const minPoints = 5;
     const maxPoints = 0;
     const span = maxSize - minSize; // how many sizes above 4 exist
+
+    // Determine exponent gamma so that pivot maps to 3
+    // t(size) = (maxSize - size) / span in [0,1]; score = minPoints * t^gamma
+    let gamma = 1;
+    if (span > 0) {
+        const tPivot = Math.max(0, Math.min(1, (maxSize - pivotSize) / span));
+        const target = 3 / 5; // 3 points when top is 5
+        if (tPivot > 0 && tPivot < 1) {
+            gamma = Math.log(target) / Math.log(tPivot);
+            if (!isFinite(gamma) || gamma <= 0) gamma = 1;
+        }
+    }
 
     const scores = {};
     for (const [category, words] of Object.entries(categoriesJson)) {
@@ -540,8 +573,8 @@ try {
             // If max size is 4 (no larger categories), give full points to all non-letter-patterns
             pts = minPoints;
         } else {
-            const t = (maxSize - clampedSize) / span; // 1 at 4 items, 0 at maxSize
-            pts = minPoints * t + maxPoints * (1 - t); // linear map to [5..0]
+            const t = Math.max(0, Math.min(1, (maxSize - clampedSize) / span)); // 1 at 4 items, 0 at maxSize
+            pts = minPoints * Math.pow(t, gamma) + maxPoints * (1 - Math.pow(t, gamma));
         }
         scores[category] = Math.round(pts * 100) / 100; // 2 decimal places
     }
@@ -552,7 +585,7 @@ try {
 
     fs.writeFileSync(categoryScoresPath, JSON.stringify(alphabetizedScores, null, 2), 'utf8');
     console.log(`- Wrote ${Object.keys(alphabetizedScores).length} category scores to ${categoryScoresPath}`);
-    console.log(`- Scoring range: size ${minSize} -> ${minPoints} pts, size ${maxSize} -> ${maxPoints} pts`);
+    console.log(`- Scoring curve: size ${minSize} -> ${minPoints} pts, size ${maxSize} -> ${maxPoints} pts, pivot size ${pivotSize} at p=${pivotPercentile} (median ${medianSize}) -> 3 pts`);
 } catch (err) {
     console.log(`- Error computing category scores: ${err.message}`);
 }
