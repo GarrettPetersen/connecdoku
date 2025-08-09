@@ -437,6 +437,13 @@ if (isMainThread) {
           }
           redraw();
         }
+      } else if (msg.type === "stats") {
+        // Incremental stats from worker after a batch flush
+        if (status[msg.id]) {
+          status[msg.id].puzzlesFound = msg.puzzlesFound || status[msg.id].puzzlesFound;
+          status[msg.id].puzzlesInserted = msg.puzzlesInserted || status[msg.id].puzzlesInserted;
+        }
+        redraw();
       } else if (msg.type === "cleanup_done") {
         // Worker acknowledged cleanup
         if (!cleanupAcked[msg.id]) {
@@ -539,6 +546,13 @@ if (isMainThread) {
       db.get("SELECT changes() as count", (err, row) => {
         if (!err && row) {
           puzzlesInserted += row.count;
+          // Report incremental stats to main thread
+          parentPort.postMessage({
+            type: "stats",
+            id: WID,
+            puzzlesFound,
+            puzzlesInserted
+          });
         }
       });
     });
