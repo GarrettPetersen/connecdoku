@@ -237,6 +237,13 @@ if (isMainThread) {
     }
     difficulties.set(i, validJCount);
 
+    // If there are zero valid j-steps for this i, mark it complete immediately
+    if (validJCount === 0) {
+      completedChunks.add(i);
+      // No j-steps to add to completedChunkWork
+      continue;
+    }
+
     // Create initial chunk
     workQueue.push({
       start: i,
@@ -294,6 +301,9 @@ if (isMainThread) {
   }
 
   console.log(`Total work: ${n - 7} valid i-values in ${workQueue.length} chunks (${completedChunks.size} already completed)`);
+
+  // Persist progress after marking zero-work i values as completed
+  saveProgress(wordListHash, Array.from(completedChunks), completedChunkWork, partialChunkProgress);
 
   // ── progress bookkeeping ──
   const status = Array.from({ length: nWorkers }, () => ({
