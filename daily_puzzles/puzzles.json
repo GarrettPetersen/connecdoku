@@ -1918,5 +1918,85 @@
         "Total War"
       ]
     ]
+  },
+  {
+    "rows": [
+      "19th Century",
+      "20th Century",
+      "Birds",
+      "Drinks"
+    ],
+    "cols": [
+      "Associated with Edgar Allan Poe",
+      "Foods",
+      "Place Names",
+      "Things Canadian"
+    ],
+    "words": [
+      [
+        "Lenore",
+        "Wellington",
+        "Bismarck",
+        "Sir John A. Macdonald"
+      ],
+      [
+        "Usher",
+        "Cobb",
+        "South Vietnam",
+        "The Handmaid's Tale"
+      ],
+      [
+        "Raven",
+        "Chicken",
+        "Phoenix",
+        "Drake"
+      ],
+      [
+        "Amontillado",
+        "Milk",
+        "Java",
+        "Ice Wine"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1990s",
+      "19th Century",
+      "Fictional People",
+      "Western Stories"
+    ],
+    "cols": [
+      "Adventure Stories",
+      "Oscar Winners",
+      "Songs",
+      "Video Games"
+    ],
+    "words": [
+      [
+        "The Phantom Menace",
+        "Schindler's List",
+        "Creep",
+        "Sonic"
+      ],
+      [
+        "Moby Dick",
+        "Little Women",
+        "Waterloo",
+        "Victoria"
+      ],
+      [
+        "Moana",
+        "Joker",
+        "Johnny B. Goode",
+        "Mario"
+      ],
+      [
+        "The Good, the Bad and the Ugly",
+        "Django Unchained",
+        "Big Iron",
+        "Red Dead Redemption"
+      ]
+    ]
   }
 ]
