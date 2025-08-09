@@ -1627,6 +1627,16 @@
     "Starts with ASK",
     "Things American"
   ],
+  "Assassination of Caesar": [
+    "1st Century BC",
+    "Assassination of Caesar",
+    "Ends with SAR",
+    "Events",
+    "Political Events",
+    "Roman Republic",
+    "Starts with ASS",
+    "Things Roman"
+  ],
   "Aston Martin": [
     "1910s",
     "20th Century",
@@ -2417,6 +2427,34 @@
     "Ends with ERY",
     "Starts with BAT"
   ],
+  "Battle of Actium": [
+    "1st Century BC",
+    "Civil Wars",
+    "Ends with IUM",
+    "Events",
+    "Roman Republic",
+    "Starts with BAT",
+    "Things Roman",
+    "Wars"
+  ],
+  "Battle of Alesia": [
+    "1st Century BC",
+    "Ends with SIA",
+    "Events",
+    "Roman Republic",
+    "Starts with BAT",
+    "Things Roman",
+    "Wars"
+  ],
+  "Battle of Carrhae": [
+    "1st Century BC",
+    "Ends with HAE",
+    "Events",
+    "Roman Republic",
+    "Starts with BAT",
+    "Things Roman",
+    "Wars"
+  ],
   "Battle of Dien Bien Phu": [
     "1960s",
     "20th Century",
@@ -2426,6 +2464,34 @@
     "Political Events",
     "Starts with BAT",
     "Things American"
+  ],
+  "Battle of Pharsalus": [
+    "1st Century BC",
+    "Civil Wars",
+    "Ends with LUS",
+    "Events",
+    "Roman Republic",
+    "Starts with BAT",
+    "Things Roman",
+    "Wars"
+  ],
+  "Battle of Philippi": [
+    "1st Century BC",
+    "Civil Wars",
+    "Ends with PPI",
+    "Events",
+    "Roman Republic",
+    "Starts with BAT",
+    "Things Roman",
+    "Wars"
+  ],
+  "Battle of Zhizhi": [
+    "1st Century BC",
+    "Ends with ZHI",
+    "Events",
+    "Starts with BAT",
+    "Things Chinese",
+    "Wars"
   ],
   "Battlefield": [
     "Ends with ELD",
@@ -2577,6 +2643,21 @@
     "Ends with BEE",
     "Insects",
     "Starts with BEE"
+  ],
+  "Bee Gees": [
+    "1960s",
+    "1970s",
+    "1980s",
+    "20th Century",
+    "Bands",
+    "Disco",
+    "Ends with EES",
+    "Music",
+    "Musicians",
+    "Pop Bands",
+    "Starts with BEE",
+    "Things British",
+    "Trios"
   ],
   "Beef Bourguignon": [
     "Ends with NON",
@@ -3446,6 +3527,7 @@
     "1970s",
     "20th Century",
     "Band Namesakes",
+    "Bands",
     "Cities",
     "Cities in North America",
     "Ends with TON",
@@ -3716,7 +3798,8 @@
     "Ends with NIA",
     "Roman Empire",
     "Starts with BRI",
-    "Things British"
+    "Things British",
+    "Things Roman"
   ],
   "Britannia Hospital": [
     "1980s",
@@ -3874,8 +3957,9 @@
     "Men",
     "People",
     "Real People",
-    "Roman Empire",
-    "Starts with BRU"
+    "Roman Republic",
+    "Starts with BRU",
+    "Things Roman"
   ],
   "Bubble Tea": [
     "Drinks",
@@ -4250,18 +4334,28 @@
     "National Leaders",
     "People",
     "Real People",
-    "Roman Empire",
+    "Roman Republic",
     "Salad Dressings",
     "Salads",
     "Shakespeare Characters",
     "Starts with CAE",
-    "Things Italian"
+    "Things Italian",
+    "Things Roman"
   ],
   "Caesar Cocktail": [
     "Drinks",
     "Ends with AIL",
     "Starts with CAE",
     "Things Canadian"
+  ],
+  "Caesar crosses the Rubicon": [
+    "1st Century BC",
+    "Ends with CON",
+    "Events",
+    "Political Events",
+    "Roman Republic",
+    "Starts with CAE",
+    "Things Roman"
   ],
   "Cake": [
     "Baked Goods",
@@ -4621,6 +4715,7 @@
     "Roman Cities",
     "Roman Empire",
     "Starts with CAR",
+    "Things Roman",
     "Things Tunisian"
   ],
   "Casablanca": [
@@ -4657,8 +4752,9 @@
     "Men",
     "People",
     "Real People",
-    "Roman Empire",
-    "Starts with CAS"
+    "Roman Republic",
+    "Starts with CAS",
+    "Things Roman"
   ],
   "Cassoulet": [
     "Ends with LET",
@@ -5375,12 +5471,33 @@
     "Starts with CHU",
     "Things Micronesian"
   ],
+  "Chu–Han Contention": [
+    "2nd Century BC",
+    "Civil Wars",
+    "Ends with ION",
+    "Events",
+    "Starts with CHU",
+    "Things Chinese",
+    "Wars"
+  ],
   "Ciabatta": [
     "Breads",
     "Ends with TTA",
     "Foods",
     "Starts with CIA",
     "Things Italian"
+  ],
+  "Cicero": [
+    "1st Century BC",
+    "Ancient Figures",
+    "Ends with ERO",
+    "Historical Figures",
+    "Men",
+    "People",
+    "Real People",
+    "Roman Republic",
+    "Starts with CIC",
+    "Things Roman"
   ],
   "Cider": [
     "Alcoholic Drinks",
@@ -5491,13 +5608,14 @@
     "People",
     "Period Stories",
     "Real People",
-    "Roman Empire",
+    "Roman Republic",
     "Romance Stories",
     "Shakespeare Characters",
     "Starts with CLE",
     "Things American",
     "Things Egyptian",
     "Things Greek",
+    "Things Roman",
     "Women"
   ],
   "Cleveland": [
@@ -5710,7 +5828,8 @@
     "Roman Empire",
     "Starts with COL",
     "Theaters",
-    "Things Italian"
+    "Things Italian",
+    "Things Roman"
   ],
   "Colossus": [
     "1970s",
@@ -5778,6 +5897,16 @@
     "Locations in Europe",
     "Place Names",
     "Starts with COM"
+  ],
+  "Commentarii de Bello Gallico": [
+    "1st Century BC",
+    "Books",
+    "Classic Literature",
+    "Drama Stories",
+    "Ends with ICO",
+    "Epic Stories",
+    "Starts with COM",
+    "Things Roman"
   ],
   "Communist Bloc": [
     "1960s",
@@ -5903,6 +6032,7 @@
     "Roman Empire",
     "Starts with CON",
     "Things Greek",
+    "Things Roman",
     "Things Turkish"
   ],
   "Conte di Savoia": [
@@ -6157,6 +6287,18 @@
     "Stationery",
     "Writing Instruments"
   ],
+  "Cream": [
+    "1960s",
+    "20th Century",
+    "Bands",
+    "Ends with EAM",
+    "Music",
+    "Musicians",
+    "Rock Bands",
+    "Starts with CRE",
+    "Things British",
+    "Trios"
+  ],
   "Creep": [
     "1990s",
     "20th Century",
@@ -6288,8 +6430,9 @@
     "Buildings",
     "Ends with RIA",
     "Historical Sites",
-    "Roman Empire",
-    "Starts with CUR"
+    "Roman Republic",
+    "Starts with CUR",
+    "Things Roman"
   ],
   "Curie": [
     "19th Century",
@@ -8259,10 +8402,11 @@
     "Ends with TE?",
     "Famous Quotes",
     "Literature Quotes",
-    "Roman Empire",
+    "Roman Republic",
     "Starts with ET ",
     "Theater Quotes",
-    "Things British"
+    "Things British",
+    "Things Roman"
   ],
   "Eta": [
     "Ends with ETA",
@@ -8781,6 +8925,16 @@
     "Red Things",
     "Starts with FIR"
   ],
+  "First Triumvirate": [
+    "1st Century BC",
+    "Ends with ATE",
+    "Events",
+    "Political Events",
+    "Roman Republic",
+    "Starts with FIR",
+    "Things Roman",
+    "Trios"
+  ],
   "Fish Sauce": [
     "Ends with UCE",
     "Foods",
@@ -9266,9 +9420,10 @@
     "1st Century BC",
     "Ends with MEN",
     "Famous Quotes",
-    "Roman Empire",
+    "Roman Republic",
     "Starts with FRI",
-    "Theater Quotes"
+    "Theater Quotes",
+    "Things Roman"
   ],
   "Frigate": [
     "Ends with ATE",
@@ -9554,7 +9709,8 @@
     "Ends with AUL",
     "Roman Empire",
     "Starts with GAU",
-    "Things French"
+    "Things French",
+    "Things Roman"
   ],
   "Gavrilo Princip": [
     "1910s",
@@ -9692,7 +9848,8 @@
     "Ends with NIA",
     "Roman Empire",
     "Starts with GER",
-    "Things German"
+    "Things German",
+    "Things Roman"
   ],
   "Germany": [
     "Countries",
@@ -11285,6 +11442,7 @@
     "Roman Empire",
     "Starts with HER",
     "Things Italian",
+    "Things Roman",
     "Volcanoes"
   ],
   "Hercules": [
@@ -11437,6 +11595,7 @@
     "Ends with NIA",
     "Roman Empire",
     "Starts with HIS",
+    "Things Roman",
     "Things Spanish"
   ],
   "Hockey": [
@@ -12149,8 +12308,9 @@
     "Dates",
     "Ends with RCH",
     "Historical Events",
-    "Roman Empire",
-    "Starts with IDE"
+    "Roman Republic",
+    "Starts with IDE",
+    "Things Roman"
   ],
   "If the glove don't fit you must acquit": [
     "1990s",
@@ -12203,7 +12363,8 @@
   "Illyria": [
     "Ends with RIA",
     "Roman Empire",
-    "Starts with ILL"
+    "Starts with ILL",
+    "Things Roman"
   ],
   "Imagine": [
     "1970s",
@@ -16025,7 +16186,8 @@
     "Ships",
     "Starts with MAU",
     "Things British",
-    "Things Moroccan"
+    "Things Moroccan",
+    "Things Roman"
   ],
   "Mauritania": [
     "Countries",
@@ -18654,7 +18816,8 @@
     "Place Names",
     "Roman Empire",
     "Starts with PAL",
-    "Things Middle Eastern"
+    "Things Middle Eastern",
+    "Things Roman"
   ],
   "Palm Springs": [
     "2020s",
@@ -19777,6 +19940,7 @@
     "Roman Empire",
     "Starts with POM",
     "Things Italian",
+    "Things Roman",
     "Volcanoes"
   ],
   "Pontoon": [
@@ -20199,6 +20363,7 @@
     "Historical Weapons",
     "Roman Empire",
     "Starts with PUG",
+    "Things Roman",
     "Weapons"
   ],
   "Pulp Fiction": [
@@ -20326,6 +20491,7 @@
   "Queen": [
     "20th Century",
     "Band Namesakes",
+    "Bands",
     "Board Game Equipment",
     "Ends with EEN",
     "Music",
@@ -20842,7 +21008,8 @@
     "Philosophy Quotes",
     "Roman Empire",
     "Starts with REN",
-    "Things Middle Eastern"
+    "Things Middle Eastern",
+    "Things Roman"
   ],
   "Rent": [
     "2000s",
@@ -21294,7 +21461,8 @@
     "Roman Cities",
     "Roman Empire",
     "Starts with ROM",
-    "Things Italian"
+    "Things Italian",
+    "Things Roman"
   ],
   "Romaine": [
     "Ends with INE",
@@ -21316,6 +21484,7 @@
     "Military Stories",
     "Starts with ROM",
     "Things Chinese",
+    "Trios",
     "Video Games",
     "War Stories"
   ],
@@ -21347,7 +21516,8 @@
     "Roman Cities",
     "Roman Empire",
     "Starts with ROM",
-    "Things Italian"
+    "Things Italian",
+    "Things Roman"
   ],
   "Romeo": [
     "16th Century",
@@ -21493,6 +21663,20 @@
     "Ends with RUM",
     "Starts with RUM",
     "Things Caribbean"
+  ],
+  "Rush": [
+    "1970s",
+    "1980s",
+    "1990s",
+    "20th Century",
+    "Bands",
+    "Ends with USH",
+    "Music",
+    "Musicians",
+    "Rock Bands",
+    "Starts with RUS",
+    "Things Canadian",
+    "Trios"
   ],
   "Russia": [
     "BRICS Nations",
@@ -22350,6 +22534,16 @@
     "Place Names",
     "Starts with SEA",
     "Things American"
+  ],
+  "Second Triumvirate": [
+    "1st Century BC",
+    "Ends with ATE",
+    "Events",
+    "Political Events",
+    "Roman Republic",
+    "Starts with SEC",
+    "Things Roman",
+    "Trios"
   ],
   "Seine": [
     "Ends with INE",
@@ -27200,6 +27394,19 @@
     "Stories about Families",
     "Things American"
   ],
+  "The Police": [
+    "1970s",
+    "1980s",
+    "20th Century",
+    "Bands",
+    "Ends with ICE",
+    "Music",
+    "Musicians",
+    "Rock Bands",
+    "Starts with THE",
+    "Things British",
+    "Trios"
+  ],
   "The Princess and the Frog": [
     "2D Animated Films",
     "Disney",
@@ -27371,9 +27578,10 @@
     "Empire Building",
     "Ends with IRE",
     "Events",
-    "Roman Empire",
+    "Roman Republic",
     "Starts with THE",
-    "Things Italian"
+    "Things Italian",
+    "Things Roman"
   ],
   "The Russian Civil War": [
     "1910s",
@@ -27894,6 +28102,40 @@
     "Starts with THE",
     "Wars"
   ],
+  "The Three Little Pigs": [
+    "1930s",
+    "20th Century",
+    "2D Animated Films",
+    "Disney",
+    "Ends with IGS",
+    "Fairy Tales",
+    "Family-Friendly Stories",
+    "Movies",
+    "Starts with THE",
+    "Things American",
+    "Trios"
+  ],
+  "The Three Musketeers": [
+    "19th Century",
+    "Adventure Stories",
+    "Books",
+    "Classic Literature",
+    "Drama Stories",
+    "Ends with ERS",
+    "Historical Fiction",
+    "Starts with THE",
+    "Things French",
+    "Trios"
+  ],
+  "The Three Stooges": [
+    "20th Century",
+    "Comedy Stories",
+    "Ends with GES",
+    "Entertainment",
+    "Starts with THE",
+    "TV Shows",
+    "Trios"
+  ],
   "The Three-Body Problem": [
     "2000s",
     "21st Century",
@@ -27904,7 +28146,8 @@
     "Sci-fi Stories",
     "Series",
     "Starts with THE",
-    "Things Chinese"
+    "Things Chinese",
+    "Trios"
   ],
   "The Time Machine": [
     "1890s",
@@ -28221,6 +28464,16 @@
     "Greek Letters",
     "Starts with THE"
   ],
+  "Third Servile War": [
+    "1st Century BC",
+    "Ends with WAR",
+    "Events",
+    "Rebellions",
+    "Roman Republic",
+    "Starts with THI",
+    "Things Roman",
+    "Wars"
+  ],
   "Thomas Andrews": [
     "1910s",
     "20th Century",
@@ -28263,6 +28516,27 @@
     "Starts with THO",
     "Superheroes",
     "Weather"
+  ],
+  "Three Amigos": [
+    "1980s",
+    "20th Century",
+    "Comedy Stories",
+    "Ends with GOS",
+    "Movies",
+    "Movies directed by John Landis",
+    "Movies featuring Chevy Chase",
+    "Movies featuring Martin Short",
+    "Movies featuring Steve Martin",
+    "Starts with THR",
+    "Things American",
+    "Trios"
+  ],
+  "Three Wise Men": [
+    "Bible",
+    "Ends with MEN",
+    "Religious Terms",
+    "Starts with THR",
+    "Trios"
   ],
   "Thriller": [
     "1980s",
@@ -28784,7 +29058,31 @@
     "Manhattan Project",
     "Nuclear Tests",
     "Religious Terms",
-    "Starts with TRI"
+    "Starts with TRI",
+    "Trios"
+  ],
+  "Triple Alliance": [
+    "19th Century",
+    "20th Century",
+    "Alliances",
+    "Ends with NCE",
+    "Events",
+    "Political Events",
+    "Starts with TRI",
+    "Trios",
+    "World War I"
+  ],
+  "Triple Entente": [
+    "1900s",
+    "1910s",
+    "20th Century",
+    "Alliances",
+    "Ends with NTE",
+    "Events",
+    "Political Events",
+    "Starts with TRI",
+    "Trios",
+    "World War I"
   ],
   "Troy": [
     "2000s",
@@ -29520,8 +29818,9 @@
     "Ends with ICI",
     "Famous Quotes",
     "Historical Speeches",
-    "Roman Empire",
-    "Starts with VEN"
+    "Roman Republic",
+    "Starts with VEN",
+    "Things Roman"
   ],
   "Venice": [
     "Cities",
@@ -29577,6 +29876,7 @@
     "Roman Empire",
     "Starts with VES",
     "Things Italian",
+    "Things Roman",
     "Volcanoes"
   ],
   "Victor": [
@@ -29858,6 +30158,14 @@
     "Fantasy",
     "Magic",
     "Starts with WAN"
+  ],
+  "Wang Mang Usurpation": [
+    "1st Century",
+    "Ends with ION",
+    "Events",
+    "Political Events",
+    "Starts with WAN",
+    "Things Chinese"
   ],
   "War and Peace": [
     "1860s",
@@ -30891,6 +31199,7 @@
     "20th Century",
     "Airships",
     "Band Namesakes",
+    "Bands",
     "Ends with LIN",
     "Music",
     "Musicians",

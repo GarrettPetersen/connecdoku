@@ -370,7 +370,8 @@ for (const [metaCategory, categories] of Object.entries(existingMetaCategories))
         }
 
         // If it's in a manual meta category, keep it there
-        if (metaCategory === "Historical Events") {
+        if (metaCategory === "Historical Events" || metaCategory === "Colours") {
+            updatedMetaCategories[metaCategory] = updatedMetaCategories[metaCategory] || [];
             updatedMetaCategories[metaCategory].push(category);
             processedCategories.add(category);
         }
@@ -433,6 +434,12 @@ for (const category of allCurrentCategories) {
         updatedMetaCategories["Nationalities"] = updatedMetaCategories["Nationalities"] || [];
         updatedMetaCategories["Nationalities"].push(category);
         nationalityCount++;
+        categorized = true;
+        processedCategories.add(category);
+    } else if (/^(Black|Blue|Brown|Green|Pink|Purple|Red|Silver|White|Yellow|Orange|Gold|Grey|Gray) Things$/.test(category) || category === 'Black and White Things') {
+        // Colour-based Things categories
+        updatedMetaCategories["Colours"] = updatedMetaCategories["Colours"] || [];
+        updatedMetaCategories["Colours"].push(category);
         categorized = true;
         processedCategories.add(category);
     }

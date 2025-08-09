@@ -293,6 +293,12 @@
   "Movies featuring Robby Benson": [
     "Beauty and the Beast"
   ],
+  "Disco": [
+    "Bee Gees"
+  ],
+  "Pop Bands": [
+    "Bee Gees"
+  ],
   "Movies featuring Bonnie Hunt": [
     "Beethoven"
   ],
@@ -397,9 +403,6 @@
   ],
   "Movies featuring Miley Cyrus": [
     "Bolt"
-  ],
-  "Rock Bands": [
-    "Boston"
   ],
   "Villains": [
     "Bowser"
@@ -835,9 +838,6 @@
   ],
   "Movies featuring Zooey Deschanel": [
     "Elf"
-  ],
-  "2nd Century BC": [
-    "Emperor Wu of Han"
   ],
   "American Architecture": [
     "Empire State Building"
@@ -1532,9 +1532,6 @@
   "Movies featuring Rick Moranis": [
     "Little Shop of Horrors"
   ],
-  "Movies featuring Steve Martin": [
-    "Little Shop of Horrors"
-  ],
   "Movies directed by Greta Gerwig": [
     "Little Women"
   ],
@@ -1751,9 +1748,6 @@
   "Movies featuring Beverly D'Angelo": [
     "National Lampoon's Christmas Vacation"
   ],
-  "Movies featuring Chevy Chase": [
-    "National Lampoon's Christmas Vacation"
-  ],
   "Movies featuring Randy Quaid": [
     "National Lampoon's Christmas Vacation"
   ],
@@ -1888,9 +1882,6 @@
   ],
   "Movies featuring Timothy Hutton": [
     "Ordinary People"
-  ],
-  "Movies directed by John Landis": [
-    "Oscar"
   ],
   "Movies featuring Ornella Muti": [
     "Oscar"
@@ -3056,9 +3047,6 @@
   "Movies featuring David Krumholtz": [
     "The Santa Clause 2"
   ],
-  "Movies featuring Martin Short": [
-    "The Santa Clause 3: The Escape Clause"
-  ],
   "Nathaniel Hawthorne": [
     "The Scarlet Letter"
   ],
@@ -3127,6 +3115,12 @@
   ],
   "Movies featuring Alida Valli": [
     "The Third Man"
+  ],
+  "Fairy Tales": [
+    "The Three Little Pigs"
+  ],
+  "Entertainment": [
+    "The Three Stooges"
   ],
   "Movies featuring Chazz Palminteri": [
     "The Usual Suspects"
@@ -3700,6 +3694,10 @@
     "Chocolat",
     "Ratatouille"
   ],
+  "2nd Century BC": [
+    "Chu–Han Contention",
+    "Emperor Wu of Han"
+  ],
   "Movies featuring Eleanor Audley": [
     "Cinderella",
     "Sleeping Beauty"
@@ -4116,6 +4114,10 @@
     "Lilo & Stitch",
     "Pocahontas"
   ],
+  "Movies featuring Steve Martin": [
+    "Little Shop of Horrors",
+    "Three Amigos"
+  ],
   "Movies featuring Florence Pugh": [
     "Little Women",
     "Oppenheimer"
@@ -4224,6 +4226,10 @@
     "NASA",
     "NATO"
   ],
+  "Movies featuring Chevy Chase": [
+    "National Lampoon's Christmas Vacation",
+    "Three Amigos"
+  ],
   "Things Dutch": [
     "Netherlands",
     "Speed Skating"
@@ -4259,6 +4265,10 @@
   "Movies featuring Matt Damon": [
     "Oppenheimer",
     "The Departed"
+  ],
+  "Movies directed by John Landis": [
+    "Oscar",
+    "Three Amigos"
   ],
   "Movies featuring Sylvester Stallone": [
     "Oscar",
@@ -4479,6 +4489,10 @@
   "Movies featuring Elizabeth Mitchell": [
     "The Santa Clause 2",
     "The Santa Clause 3: The Escape Clause"
+  ],
+  "Movies featuring Martin Short": [
+    "The Santa Clause 3: The Escape Clause",
+    "Three Amigos"
   ],
   "1780s": [
     "The Shays' Rebellion",
@@ -4988,11 +5002,6 @@
     "Kurosawa",
     "Miyazaki",
     "Ozu"
-  ],
-  "Bible": [
-    "Let there be light",
-    "Render unto Caesar",
-    "Trinity"
   ],
   "Emperors": [
     "Li Jiancheng",
