@@ -307,6 +307,11 @@ async function main() {
     const unknownCategories = new Set();
     let processed = 0;
     let totalInvalid = 0;
+    // Streaming stats for puzzle_quality_score
+    let scoreMin = Infinity;
+    let scoreMax = -Infinity;
+    let scoreSum = 0;
+    let scoreCount = 0;
     const BATCH_COUNT = 100; // Split hash range into 100 batches
     const hashStep = (BigInt("0x" + hashRange.max) - BigInt("0x" + hashRange.min)) / BigInt(BATCH_COUNT);
     let currentHash = BigInt("0x" + hashRange.min);
@@ -342,6 +347,11 @@ async function main() {
                 // Compute score as sum of category scores (default 0)
                 const puzzleScore = categories.reduce((sum, c) => sum + (categoryScores[c] || 0), 0);
                 batchScoreUpdates.push({ hash: puzzle.puzzle_hash, score: puzzleScore });
+                // Update streaming stats
+                if (puzzleScore < scoreMin) scoreMin = puzzleScore;
+                if (puzzleScore > scoreMax) scoreMax = puzzleScore;
+                scoreSum += puzzleScore;
+                scoreCount += 1;
             } else {
                 batchInvalidHashes.push(puzzle.puzzle_hash);
             }
@@ -385,6 +395,18 @@ async function main() {
     if (unknownCategories.size > 0) {
         console.error(`\n⚠️  Categories missing from category_scores.json (${unknownCategories.size}):`);
         console.error(Array.from(unknownCategories).sort().join("\n"));
+    }
+
+    // Quality score summary (streaming, no full in-memory collection)
+    if (scoreCount > 0 && isFinite(scoreMin) && isFinite(scoreMax)) {
+        const scoreMean = scoreSum / scoreCount;
+        console.log(`\n📈 Quality score stats (valid puzzles):`);
+        console.log(`   Min: ${scoreMin.toFixed(2)}`);
+        console.log(`   Max: ${scoreMax.toFixed(2)}`);
+        console.log(`   Mean: ${scoreMean.toFixed(2)}`);
+        console.log(`   Median: (skipped)`);
+    } else {
+        console.log(`\n📈 Quality score stats: no valid puzzles scored`);
     }
     
     if (totalInvalid === 0) {
