@@ -1,8 +1,18 @@
 import fs from 'fs';
+import path from 'path';
 
 // Read the data files
-const wordsData = JSON.parse(fs.readFileSync('data/words.json', 'utf8'));
-const puzzlesData = JSON.parse(fs.readFileSync('daily_puzzles/puzzles.json', 'utf8'));
+const DATA_DIR = 'data';
+const DP_DIR = 'daily_puzzles';
+const wordsData = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'words.json'), 'utf8'));
+const puzzlesData = JSON.parse(fs.readFileSync(path.join(DP_DIR, 'puzzles.json'), 'utf8'));
+let categoryScores = {};
+try {
+  categoryScores = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'category_scores.json'), 'utf8'));
+} catch (e) {
+  console.log('Warning: data/category_scores.json not found; all categories will score as 0');
+  categoryScores = {};
+}
 
 // Function to check if a word belongs to a category
 function wordInCategory(word, category) {
@@ -10,6 +20,23 @@ function wordInCategory(word, category) {
     return false;
   }
   return wordsData[word].includes(category);
+}
+
+// Compute puzzle quality score by summing category scores for its 8 categories
+function computePuzzleScore(rows, cols) {
+  const allCats = [...rows, ...cols];
+  let sum = 0;
+  for (const c of allCats) sum += categoryScores[c] || 0;
+  return Math.round(sum * 100) / 100;
+}
+
+// Map score to emoji tier (defaults can be overridden via env)
+const GOOD_THRESHOLD = Number(process.env.PUZZLE_SCORE_GOOD || 12);
+const MEDIUM_THRESHOLD = Number(process.env.PUZZLE_SCORE_MED || 6);
+function scoreEmoji(score) {
+  if (score >= GOOD_THRESHOLD) return '🟢';
+  if (score >= MEDIUM_THRESHOLD) return '🟡';
+  return '🔴';
 }
 
 // Get current date to identify future puzzles
@@ -32,6 +59,9 @@ for (let i = currentPuzzleIndex; i < puzzlesData.length; i++) {
   console.log(`=== PUZZLE ${i} (Future) ===`);
   console.log(`Rows: ${rows.join(', ')}`);
   console.log(`Cols: ${cols.join(', ')}`);
+  const score = computePuzzleScore(rows, cols);
+  const emoji = scoreEmoji(score);
+  console.log(`Quality score: ${score.toFixed(2)} ${emoji}`);
   console.log('');
   
   let hasErrors = false;

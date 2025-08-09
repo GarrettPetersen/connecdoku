@@ -25,6 +25,16 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DB_PATH = path.join(__dirname, "puzzles.db");
 const OUT_DIR = path.join(__dirname, "daily_puzzles");
 const DB_FILE = path.join(OUT_DIR, "puzzles.json");
+const DEFAULT_QUALITY_SAMPLE = Number(process.env.CURATOR_QUALITY_SAMPLE || 500);
+const DEFAULT_MIN_QUALITY = Number(process.env.CURATOR_MIN_QUALITY || 0);
+const GOOD_THRESHOLD = Number(process.env.PUZZLE_SCORE_GOOD || 12);
+const MEDIUM_THRESHOLD = Number(process.env.PUZZLE_SCORE_MED || 6);
+
+function scoreEmoji(score) {
+    if (score >= GOOD_THRESHOLD) return '🟢';
+    if (score >= MEDIUM_THRESHOLD) return '🟡';
+    return '🔴';
+}
 
 console.log("Directories:");
 console.log("  DB_PATH:", DB_PATH);
@@ -73,29 +83,20 @@ function getAllPuzzles(db) {
 
 function getRandomPuzzle(db, targetCategories = null) {
     return new Promise((resolve, reject) => {
-        let query = `
-            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp
-            FROM puzzles
-        `;
-
+        const sampleSize = DEFAULT_QUALITY_SAMPLE;
         let params = [];
 
+        // Build WHERE conditions for categories
+        let whereClauses = [];
         if (targetCategories) {
-            // Handle both single category (string) and multiple categories (array)
             const categories = Array.isArray(targetCategories) ? targetCategories : [targetCategories];
-
             if (categories.length === 1) {
-                // Single category - use OR across all positions
                 const lowerCategory = categories[0].toLowerCase();
-                query += `
-                    WHERE (LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
-                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)
-                       AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
-                `;
-                params = [lowerCategory, lowerCategory, lowerCategory, lowerCategory,
-                    lowerCategory, lowerCategory, lowerCategory, lowerCategory];
+                whereClauses.push(`(LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
+                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)`);
+                params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
+                    lowerCategory, lowerCategory, lowerCategory, lowerCategory);
             } else {
-                // Multiple categories - each category must appear in at least one position
                 const conditions = [];
                 for (const category of categories) {
                     const lowerCategory = category.toLowerCase();
@@ -104,15 +105,29 @@ function getRandomPuzzle(db, targetCategories = null) {
                     params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
                         lowerCategory, lowerCategory, lowerCategory, lowerCategory);
                 }
-
-                query += ` WHERE (${conditions.join(' AND ')}) AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))`;
+                whereClauses.push(`(${conditions.join(' AND ')})`);
             }
-        } else {
-            // Use random offset approach for better performance on large tables
-            query += ` WHERE ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))`;
         }
+        // Min quality threshold
+        whereClauses.push(`COALESCE(puzzle_quality_score, 0) >= ?`);
+        params.push(DEFAULT_MIN_QUALITY);
 
-        query += ` LIMIT 1`;
+        const whereSQL = whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : '';
+
+        const query = `
+            WITH sample AS (
+                SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp,
+                       COALESCE(puzzle_quality_score, 0) AS q
+                FROM puzzles
+                ${whereSQL}
+                AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
+                LIMIT ${sampleSize}
+            )
+            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp, q
+            FROM sample
+            ORDER BY q DESC
+            LIMIT 1
+        `;
 
         db.get(query, params, (err, row) => {
             if (err) {
@@ -122,7 +137,8 @@ function getRandomPuzzle(db, targetCategories = null) {
                     rows: [row.row0, row.row1, row.row2, row.row3],
                     cols: [row.col0, row.col1, row.col2, row.col3],
                     hash: row.puzzle_hash,
-                    timestamp: row.timestamp
+                    timestamp: row.timestamp,
+                    qualityScore: row.q
                 });
             } else {
                 resolve(null);
@@ -133,28 +149,22 @@ function getRandomPuzzle(db, targetCategories = null) {
 
 function getMultipleRandomPuzzles(db, count, targetCategories = null) {
     return new Promise((resolve, reject) => {
-        let query = `
-            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp
-            FROM puzzles
-        `;
-
+        const sampleSize = Math.max(count * 5, DEFAULT_QUALITY_SAMPLE);
         let params = [];
 
-        if (targetCategories) {
-            // Handle both single category (string) and multiple categories (array)
-            const categories = Array.isArray(targetCategories) ? targetCategories : [targetCategories];
+        // Build WHERE conditions
+        let whereClauses = [`COALESCE(puzzle_quality_score, 0) >= ?`];
+        params.push(DEFAULT_MIN_QUALITY);
 
+        if (targetCategories) {
+            const categories = Array.isArray(targetCategories) ? targetCategories : [targetCategories];
             if (categories.length === 1) {
-                // Single category - use OR across all positions
                 const lowerCategory = categories[0].toLowerCase();
-                query += `
-                    WHERE LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
-                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?
-                `;
-                params = [lowerCategory, lowerCategory, lowerCategory, lowerCategory,
-                    lowerCategory, lowerCategory, lowerCategory, lowerCategory];
+                whereClauses.push(`(LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
+                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)`);
+                params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
+                    lowerCategory, lowerCategory, lowerCategory, lowerCategory);
             } else {
-                // Multiple categories - each category must appear in at least one position
                 const conditions = [];
                 for (const category of categories) {
                     const lowerCategory = category.toLowerCase();
@@ -163,12 +173,25 @@ function getMultipleRandomPuzzles(db, count, targetCategories = null) {
                     params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
                         lowerCategory, lowerCategory, lowerCategory, lowerCategory);
                 }
-
-                query += ` WHERE ${conditions.join(' AND ')}`;
+                whereClauses.push(`(${conditions.join(' AND ')})`);
             }
         }
+        const whereSQL = whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : '';
 
-        query += ` ORDER BY RANDOM() LIMIT ?`;
+        const query = `
+            WITH sample AS (
+                SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp,
+                       COALESCE(puzzle_quality_score, 0) AS q
+                FROM puzzles
+                ${whereSQL}
+                AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
+                LIMIT ${sampleSize}
+            )
+            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp, q
+            FROM sample
+            ORDER BY q DESC
+            LIMIT ?
+        `;
         params.push(count);
 
         db.all(query, params, (err, rows) => {
@@ -179,7 +202,8 @@ function getMultipleRandomPuzzles(db, count, targetCategories = null) {
                     rows: [row.row0, row.row1, row.row2, row.row3],
                     cols: [row.col0, row.col1, row.col2, row.col3],
                     hash: row.puzzle_hash,
-                    timestamp: row.timestamp
+                    timestamp: row.timestamp,
+                    qualityScore: row.q
                 })));
             }
         });
@@ -210,7 +234,7 @@ function getCategoriesFromLastNDays(numDays) {
 function findPuzzleWithNoRecentCategories(db, recentCategories) {
     return new Promise((resolve, reject) => {
         if (recentCategories.length === 0) {
-            // If no recent categories, just get a random puzzle
+            // If no recent categories, just get a quality-aware random puzzle
             return getRandomPuzzle(db);
         }
 
@@ -221,28 +245,36 @@ function findPuzzleWithNoRecentCategories(db, recentCategories) {
             return `('${escaped}')`;
         }).join(',');
 
+        const sampleSize = DEFAULT_QUALITY_SAMPLE;
         const query = `
             WITH recent_categories(category) AS (
                 VALUES ${recentCategoriesValues}
+            ), sample AS (
+                SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp,
+                       COALESCE(puzzle_quality_score, 0) AS q
+                FROM puzzles
+                WHERE NOT EXISTS (
+                    SELECT 1 FROM recent_categories 
+                    WHERE LOWER(puzzles.row0) = recent_categories.category
+                       OR LOWER(puzzles.row1) = recent_categories.category
+                       OR LOWER(puzzles.row2) = recent_categories.category
+                       OR LOWER(puzzles.row3) = recent_categories.category
+                       OR LOWER(puzzles.col0) = recent_categories.category
+                       OR LOWER(puzzles.col1) = recent_categories.category
+                       OR LOWER(puzzles.col2) = recent_categories.category
+                       OR LOWER(puzzles.col3) = recent_categories.category
+                )
+                AND COALESCE(puzzle_quality_score, 0) >= ?
+                AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
+                LIMIT ${sampleSize}
             )
-            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp
-            FROM puzzles
-            WHERE NOT EXISTS (
-                SELECT 1 FROM recent_categories 
-                WHERE LOWER(puzzles.row0) = recent_categories.category
-                   OR LOWER(puzzles.row1) = recent_categories.category
-                   OR LOWER(puzzles.row2) = recent_categories.category
-                   OR LOWER(puzzles.row3) = recent_categories.category
-                   OR LOWER(puzzles.col0) = recent_categories.category
-                   OR LOWER(puzzles.col1) = recent_categories.category
-                   OR LOWER(puzzles.col2) = recent_categories.category
-                   OR LOWER(puzzles.col3) = recent_categories.category
-            )
-            ORDER BY RANDOM()
+            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp, q
+            FROM sample
+            ORDER BY q DESC
             LIMIT 1
         `;
 
-        db.get(query, (err, row) => {
+        db.get(query, [DEFAULT_MIN_QUALITY], (err, row) => {
             if (err) {
                 reject(err);
             } else if (row) {
@@ -250,7 +282,8 @@ function findPuzzleWithNoRecentCategories(db, recentCategories) {
                     rows: [row.row0, row.row1, row.row2, row.row3],
                     cols: [row.col0, row.col1, row.col2, row.col3],
                     hash: row.puzzle_hash,
-                    timestamp: row.timestamp
+                    timestamp: row.timestamp,
+                    qualityScore: row.q
                 });
             } else {
                 resolve(null);
@@ -961,6 +994,10 @@ async function main() {
 
         console.log(`\n--- Puzzle ${curated + 1} (Attempt ${attempts}) ---`);
         console.log(`Overlap with previous puzzles: ${overlap}`);
+        if (typeof puzzle.qualityScore === 'number') {
+            const qs = Math.round(puzzle.qualityScore * 100) / 100;
+            console.log(`Quality score: ${qs.toFixed(2)} ${scoreEmoji(qs)}`);
+        }
         console.log(`Categories: ${allCategories.join(", ")}`);
 
         // Generate words for each cell (we know they exist because validatePuzzle passed)
