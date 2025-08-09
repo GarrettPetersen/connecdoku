@@ -841,46 +841,6 @@
   },
   {
     "rows": [
-      "Ends with INE",
-      "Modern Countries",
-      "National Capitals",
-      "Real People"
-    ],
-    "cols": [
-      "Starts with MAD",
-      "Things Chinese",
-      "Things German",
-      "Things Italian"
-    ],
-    "words": [
-      [
-        "Madeleine",
-        "Farewell My Concubine",
-        "Rhine",
-        "Fettuccine"
-      ],
-      [
-        "Madagascar",
-        "China",
-        "Germany",
-        "Italy"
-      ],
-      [
-        "Madrid",
-        "Beijing",
-        "Berlin",
-        "Rome"
-      ],
-      [
-        "Madison",
-        "Zheng He",
-        "Bach",
-        "Galileo"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "Adventure Stories",
       "Crime Stories",
       "Musical Films",
@@ -916,86 +876,6 @@
         "Death Proof",
         "Aliens",
         "The Crying Game"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "Books",
-      "Countries",
-      "National Capitals",
-      "People"
-    ],
-    "cols": [
-      "Starts with BRA",
-      "Things Chinese",
-      "Things Greek",
-      "Things Japanese"
-    ],
-    "words": [
-      [
-        "Brave New World",
-        "Journey to the West",
-        "The Iliad",
-        "The Tale of Genji"
-      ],
-      [
-        "Brazil",
-        "China",
-        "Greece",
-        "Japan"
-      ],
-      [
-        "Brasilia",
-        "Beijing",
-        "Athens",
-        "Tokyo"
-      ],
-      [
-        "Bravo",
-        "Zheng He",
-        "Socrates",
-        "Kurosawa"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "1990s",
-      "2010s",
-      "Romance Stories",
-      "Sci-fi Stories"
-    ],
-    "cols": [
-      "Musical Films",
-      "Things Chinese",
-      "Things Japanese",
-      "Time Travel Stories"
-    ],
-    "words": [
-      [
-        "Evita",
-        "Hard Boiled",
-        "Princess Mononoke",
-        "Bill & Ted's Bogus Journey"
-      ],
-      [
-        "The Greatest Showman",
-        "The Grandmaster",
-        "Colorless Tsukuru Tazaki",
-        "Hot Tub Time Machine"
-      ],
-      [
-        "Grease",
-        "My Blueberry Nights",
-        "The Tale of Genji",
-        "The Time Traveler's Wife"
-      ],
-      [
-        "Lilo & Stitch",
-        "The Three-Body Problem",
-        "Akira",
-        "Tenet"
       ]
     ]
   },
@@ -1041,46 +921,6 @@
   },
   {
     "rows": [
-      "17th Century",
-      "Cities",
-      "Classic Literature",
-      "Events"
-    ],
-    "cols": [
-      "18th Century",
-      "Ends with ING",
-      "Things British",
-      "Things Italian"
-    ],
-    "words": [
-      [
-        "Bach",
-        "Ming",
-        "Shakespeare",
-        "Galileo"
-      ],
-      [
-        "Madison",
-        "Beijing",
-        "London",
-        "Florence"
-      ],
-      [
-        "Dream of the Red Chamber",
-        "As I Lay Dying",
-        "Animal Farm",
-        "The Divine Comedy"
-      ],
-      [
-        "The French Revolution",
-        "The Moon Landing",
-        "The Norman Conquest",
-        "The Italian Wars"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "20th Century",
       "21st Century",
       "Place Names",
@@ -1121,86 +961,6 @@
   },
   {
     "rows": [
-      "2010s",
-      "Best Picture Winners",
-      "Horror Stories",
-      "War Stories"
-    ],
-    "cols": [
-      "Action Stories",
-      "Comedy Stories",
-      "Starts with THE",
-      "Things British"
-    ],
-    "words": [
-      [
-        "Edge of Tomorrow",
-        "Hot Tub Time Machine",
-        "The Arab Spring",
-        "Harry Potter and the Deathly Hallows: Part 1"
-      ],
-      [
-        "Gladiator",
-        "Driving Miss Daisy",
-        "The Godfather",
-        "Chariots of Fire"
-      ],
-      [
-        "Aliens",
-        "Little Shop of Horrors",
-        "The Exorcist",
-        "Dracula"
-      ],
-      [
-        "Inglourious Basterds",
-        "Dr. Strangelove",
-        "The Iliad",
-        "Lawrence of Arabia"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "1950s",
-      "Crime Stories",
-      "Fantasy Stories",
-      "Oscar Winners"
-    ],
-    "cols": [
-      "Black and White Films",
-      "Classic Literature",
-      "Sci-fi Stories",
-      "Things British"
-    ],
-    "words": [
-      [
-        "Seven Samurai",
-        "The Old Man and the Sea",
-        "Fahrenheit 451",
-        "The Lion, the Witch and the Wardrobe"
-      ],
-      [
-        "The Big Sleep",
-        "Crime and Punishment",
-        "Looper",
-        "The Italian Job"
-      ],
-      [
-        "It's a Wonderful Life",
-        "Journey to the West",
-        "A Wrinkle in Time",
-        "Harry Potter and the Sorcerer's Stone"
-      ],
-      [
-        "Schindler's List",
-        "Little Women",
-        "Avatar",
-        "Shakespeare in Love"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "21st Century",
       "Events",
       "Real People",
@@ -1236,46 +996,6 @@
         "Mauretania",
         "Colosseum",
         "Hispania"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "1970s",
-      "1980s",
-      "Musical Films",
-      "Place Names"
-    ],
-    "cols": [
-      "Comedy Stories",
-      "Ends with AND",
-      "Ends with MAN",
-      "Mentioned in We Didn't Start the Fire"
-    ],
-    "words": [
-      [
-        "The Hitchhiker's Guide to the Galaxy",
-        "The Stand",
-        "The Wicker Man",
-        "Cola Wars"
-      ],
-      [
-        "Bill & Ted's Excellent Adventure",
-        "The Hand",
-        "Rain Man",
-        "Reagan"
-      ],
-      [
-        "Hairspray",
-        "La La Land",
-        "The Greatest Showman",
-        "Peter Pan"
-      ],
-      [
-        "Palm Springs",
-        "Greenland",
-        "Isle of Man",
-        "Belgian Congo"
       ]
     ]
   },
@@ -1521,46 +1241,6 @@
   },
   {
     "rows": [
-      "20th Century",
-      "Countries",
-      "Movies",
-      "Noodles"
-    ],
-    "cols": [
-      "Ends with EIN",
-      "Ends with LES",
-      "Things Italian",
-      "Things Japanese"
-    ],
-    "words": [
-      [
-        "Einstein",
-        "Anne of Green Gables",
-        "Andrea Doria",
-        "Kurosawa"
-      ],
-      [
-        "Liechtenstein",
-        "Seychelles",
-        "Italy",
-        "Japan"
-      ],
-      [
-        "Frankenstein",
-        "Hercules",
-        "Pompeii",
-        "Ponyo"
-      ],
-      [
-        "Chow Mein",
-        "Dan Dan Noodles",
-        "Fettuccine",
-        "Soba"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "1970s",
       "21st Century",
       "Place Names",
@@ -1601,86 +1281,6 @@
   },
   {
     "rows": [
-      "1980s",
-      "2000s",
-      "Sci-fi Stories",
-      "Things British"
-    ],
-    "cols": [
-      "Ends with ENT",
-      "Ends with IME",
-      "Horror Stories",
-      "Sequels"
-    ],
-    "words": [
-      [
-        "Terms of Endearment",
-        "Somewhere in Time",
-        "The Shining",
-        "Ghostbusters II"
-      ],
-      [
-        "Rent",
-        "The Map of Time",
-        "The Village",
-        "The Lord of the Rings: The Two Towers"
-      ],
-      [
-        "The Fifth Element",
-        "A Wrinkle in Time",
-        "Alien",
-        "Terminator 2: Judgment Day"
-      ],
-      [
-        "The English Patient",
-        "About Time",
-        "The Wicker Man",
-        "The Lord of the Rings"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "1960s",
-      "1990s",
-      "Ends with AND",
-      "Things Chinese"
-    ],
-    "cols": [
-      "Fantasy Stories",
-      "People",
-      "Romance Stories",
-      "Starts with THE"
-    ],
-    "words": [
-      [
-        "Mary Poppins",
-        "Buddy Holly",
-        "My Fair Lady",
-        "The Apollo Program"
-      ],
-      [
-        "Porco Rosso",
-        "Clinton",
-        "Four Weddings and a Funeral",
-        "The Collapse of the Soviet Union"
-      ],
-      [
-        "Alice's Adventures in Wonderland",
-        "Archduke Franz Ferdinand",
-        "La La Land",
-        "The Stand"
-      ],
-      [
-        "Journey to the West",
-        "Emperor Qin Shi Huang",
-        "In the Mood for Love",
-        "The realm, long divided, must unite"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "1950s",
       "2010s",
       "Ends with ION",
@@ -1716,46 +1316,6 @@
         "The Godfather Part II",
         "Titanic",
         "No Country for Old Men"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "2020s",
-      "Ends with ING",
-      "Mentioned in We Didn't Start the Fire",
-      "Women"
-    ],
-    "cols": [
-      "Adventure Stories",
-      "Cities",
-      "Events",
-      "National Leaders"
-    ],
-    "words": [
-      [
-        "Avatar: Frontiers of Pandora",
-        "Palm Springs",
-        "The COVID-19 Pandemic",
-        "Trump"
-      ],
-      [
-        "The Lion King",
-        "Beijing",
-        "The Oklahoma City Bombing",
-        "Harding"
-      ],
-      [
-        "Peter Pan",
-        "Budapest",
-        "Woodstock",
-        "Syngman Rhee"
-      ],
-      [
-        "Moana",
-        "Helena",
-        "Katrina",
-        "Elizabeth I"
       ]
     ]
   },
@@ -1836,46 +1396,6 @@
         "Cleopatra",
         "Herculaneum",
         "Britannia"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "20th Century",
-      "Foods",
-      "Former British Colonies",
-      "Islands"
-    ],
-    "cols": [
-      "Ends with INI",
-      "Republics",
-      "Things American",
-      "Things Canadian"
-    ],
-    "words": [
-      [
-        "Lamborghini",
-        "Chad",
-        "Ask not what your country can do for you",
-        "Anne of Green Gables"
-      ],
-      [
-        "Tortellini",
-        "Turkey",
-        "Apple Pie",
-        "Poutine"
-      ],
-      [
-        "Eswatini",
-        "India",
-        "United States",
-        "Canada"
-      ],
-      [
-        "Santorini",
-        "Ireland",
-        "Staten Island",
-        "Baffin"
       ]
     ]
   },
