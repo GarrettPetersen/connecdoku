@@ -1,5 +1,6 @@
 {
   "11th Century": [
+    "1066",
     "Avicenna",
     "The First Crusade",
     "The Norman Conquest",
@@ -111,6 +112,9 @@
     "The play's the thing",
     "To be or not to be"
   ],
+  "1710s": [
+    "Puckle Gun"
+  ],
   "1770s": [
     "Give me liberty or give me death"
   ],
@@ -177,6 +181,7 @@
     "Elizabeth Blackwell",
     "Harrison",
     "Jane Eyre",
+    "Minié ball",
     "Polk",
     "Taylor",
     "The Count of Monte Cristo",
@@ -258,6 +263,7 @@
     "Mozart",
     "Napoleon Bonaparte",
     "Newton",
+    "Puckle Gun",
     "Solitaire",
     "The American Revolution",
     "The British Empire",
@@ -1033,6 +1039,7 @@
     "Mercedes",
     "Merde!",
     "Michel Ney",
+    "Minié ball",
     "Moby Dick",
     "Monroe",
     "Morse",
@@ -2929,6 +2936,14 @@
   "American Architecture": [
     "Empire State Building"
   ],
+  "American Civil War": [
+    "Four score and seven years ago",
+    "Gettysburg",
+    "Grant",
+    "Lincoln",
+    "Minié ball",
+    "The American Civil War"
+  ],
   "Ancient Buildings": [
     "Acropolis",
     "Chichen Itza",
@@ -4278,6 +4293,7 @@
     "Frankfort",
     "Fukushima",
     "Genoa",
+    "Gettysburg",
     "Harrisburg",
     "Hartford",
     "Helena",
@@ -4439,6 +4455,7 @@
     "Des Moines",
     "Dover",
     "Frankfort",
+    "Gettysburg",
     "Harrisburg",
     "Hartford",
     "Helena",
@@ -5801,6 +5818,7 @@
   ],
   "Dates": [
     "10/7",
+    "1066",
     "11/22/63",
     "1984",
     "2046",
@@ -5808,6 +5826,7 @@
     "April 14th, 1865",
     "April 15th, 1912",
     "December 7th, 1941",
+    "Four score and seven years ago",
     "Ides of March",
     "July 2nd, 626",
     "June 18th, 1815",
@@ -6784,6 +6803,9 @@
   "Ends with 046": [
     "2046"
   ],
+  "Ends with 066": [
+    "1066"
+  ],
   "Ends with 2 U": [
     "Nothing Compares 2 U"
   ],
@@ -7027,6 +7049,7 @@
     "Football",
     "Great Wall",
     "Matzo Ball",
+    "Minié ball",
     "Tear down this wall",
     "The Fall of the Berlin Wall",
     "The Wall",
@@ -8540,6 +8563,7 @@
     "Gum"
   ],
   "Ends with GUN": [
+    "Puckle Gun",
     "The Naked Gun"
   ],
   "Ends with H 2": [
@@ -11678,6 +11702,7 @@
     "Vulture"
   ],
   "Ends with URG": [
+    "Gettysburg",
     "Harrisburg",
     "Hindenburg",
     "Luxembourg"
@@ -13984,6 +14009,7 @@
   "Historical Sites": [
     "Curia",
     "Ford's Theatre",
+    "Gettysburg",
     "Globe Theatre",
     "Waterloo",
     "Xuanwu Gate"
@@ -14919,6 +14945,7 @@
     "El Salvador",
     "Ellesmere",
     "Frankfort",
+    "Gettysburg",
     "Grenada",
     "Guatemala",
     "Haiti",
@@ -22413,6 +22440,7 @@
     "German East Africa",
     "German West Africa",
     "Germany",
+    "Gettysburg",
     "Ghana",
     "Gobi",
     "Gotland",
@@ -24931,6 +24959,9 @@
   "Starts with 101": [
     "101 Dalmatians"
   ],
+  "Starts with 106": [
+    "1066"
+  ],
   "Starts with 11/": [
     "11/22/63"
   ],
@@ -26734,7 +26765,8 @@
     "Germany"
   ],
   "Starts with GET": [
-    "Get Carter"
+    "Get Carter",
+    "Gettysburg"
   ],
   "Starts with GHA": [
     "Ghana"
@@ -28033,6 +28065,7 @@
     "Minestrone",
     "Ming",
     "Mini",
+    "Minié ball",
     "Minnie",
     "Minotaur"
   ],
@@ -28707,7 +28740,8 @@
     "Psycho"
   ],
   "Starts with PUC": [
-    "Puck"
+    "Puck",
+    "Puckle Gun"
   ],
   "Starts with PUF": [
     "Puffin"
@@ -31164,6 +31198,7 @@
     "Galaxy Quest",
     "Garfield",
     "Gemini",
+    "Gettysburg",
     "Ghostbusters",
     "Ghostbusters II",
     "Give me liberty or give me death",
@@ -31930,6 +31965,7 @@
     "Pride and Prejudice",
     "Prince Caspian",
     "Prince of Wales",
+    "Puckle Gun",
     "Queen",
     "Queen Elizabeth",
     "Queen Elizabeth 2",
@@ -32180,7 +32216,6 @@
     "In the Mood for Love",
     "Jiaozi",
     "Journey to the West",
-    "July 2nd, 626",
     "Kombucha",
     "Kung Pao Chicken",
     "Li Bai",
@@ -32369,6 +32404,7 @@
     "Marie Curie",
     "Merde!",
     "Michel Ney",
+    "Minié ball",
     "Mont Blanc",
     "Mont Saint-Michel",
     "Napoleon Bonaparte",
@@ -34282,6 +34318,8 @@
     "Hawkeye",
     "Knife",
     "Magazine",
+    "Minié ball",
+    "Puckle Gun",
     "Pugio",
     "Rifle",
     "Shield",
