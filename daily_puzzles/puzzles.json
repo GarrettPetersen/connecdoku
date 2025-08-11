@@ -1003,7 +1003,7 @@
     "rows": [
       "1860s",
       "Battle of Waterloo",
-      "Things Roman",
+      "Roman Empire",
       "World War II"
     ],
     "cols": [
@@ -1043,7 +1043,7 @@
     "rows": [
       "1860s",
       "Assassination of JFK",
-      "Things Roman",
+      "Roman Empire",
       "Things Chinese"
     ],
     "cols": [
@@ -1364,7 +1364,7 @@
       "1860s",
       "18th Century",
       "Ends with ARK",
-      "Things Roman"
+      "Roman Empire"
     ],
     "cols": [
       "Assassins",
@@ -1796,6 +1796,166 @@
         "Brazil",
         "United States",
         "Greece"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1980s",
+      "21st Century",
+      "Action Stories",
+      "Movies featuring Al Pacino"
+    ],
+    "cols": [
+      "Best Picture Winners",
+      "Ends with MAN",
+      "Movies featuring Keanu Reeves",
+      "Sequels"
+    ],
+    "words": [
+      [
+        "Amadeus",
+        "Pac-Man",
+        "Bill & Ted's Excellent Adventure",
+        "The Empire Strikes Back"
+      ],
+      [
+        "A Beautiful Mind",
+        "The Greatest Showman",
+        "The Lake House",
+        "Harry Potter and the Chamber of Secrets"
+      ],
+      [
+        "Braveheart",
+        "Superman",
+        "The Matrix",
+        "Terminator 2: Judgment Day"
+      ],
+      [
+        "The Godfather",
+        "Scent of a Woman",
+        "The Devil's Advocate",
+        "The Godfather Part III"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1940s",
+      "Companies",
+      "Ends with ION",
+      "War Stories"
+    ],
+    "cols": [
+      "Comedy Stories",
+      "Mentioned in We Didn't Start the Fire",
+      "Religious Terms",
+      "Things Russian"
+    ],
+    "words": [
+      [
+        "Kind Hearts and Coronets",
+        "Truman",
+        "Trinity",
+        "The Battle of Stalingrad"
+      ],
+      [
+        "Red",
+        "Studebaker",
+        "Canon",
+        "MiG"
+      ],
+      [
+        "National Lampoon's Christmas Vacation",
+        "Bay of Pigs Invasion",
+        "Damnation",
+        "Soviet Union"
+      ],
+      [
+        "Dr. Strangelove",
+        "Bridge on the River Kwai",
+        "Halo",
+        "War and Peace"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1910s",
+      "2010s",
+      "Roman Republic",
+      "Things Chinese"
+    ],
+    "cols": [
+      "Civil Wars",
+      "Dates",
+      "Period Stories",
+      "Political Events"
+    ],
+    "words": [
+      [
+        "The Russian Civil War",
+        "June 28th, 1914",
+        "Titanic",
+        "Triple Entente"
+      ],
+      [
+        "The Syrian Civil War",
+        "11/22/63",
+        "The King's Speech",
+        "The Brexit Vote"
+      ],
+      [
+        "Battle of Actium",
+        "Ides of March",
+        "Cleopatra",
+        "First Triumvirate"
+      ],
+      [
+        "Chu–Han Contention",
+        "2046",
+        "Farewell My Concubine",
+        "Wang Mang Usurpation"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "16th Century",
+      "1860s",
+      "Movies",
+      "Things Roman"
+    ],
+    "cols": [
+      "Classic Literature",
+      "Historical Figures",
+      "Historical Sites",
+      "Things Italian"
+    ],
+    "words": [
+      [
+        "Journey to the West",
+        "Henry VIII",
+        "Globe Theatre",
+        "The Catholic Counter-Reformation"
+      ],
+      [
+        "Alice's Adventures in Wonderland",
+        "Robert E. Lee",
+        "Ford's Theatre",
+        "The Italian Unification"
+      ],
+      [
+        "Gone with the Wind",
+        "Beethoven",
+        "Waterloo",
+        "The Good, the Bad and the Ugly"
+      ],
+      [
+        "Commentarii de Bello Gallico",
+        "Cicero",
+        "Curia",
+        "Rome"
       ]
     ]
   }
