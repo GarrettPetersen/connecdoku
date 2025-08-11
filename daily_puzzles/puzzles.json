@@ -1958,5 +1958,125 @@
         "Rome"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1960s",
+      "Ends with TER",
+      "Starts with STA",
+      "Trojan War"
+    ],
+    "cols": [
+      "Adventure Stories",
+      "Battlestar Galactica",
+      "Place Names",
+      "Real Animals"
+    ],
+    "words": [
+      [
+        "Dune",
+        "Apollo",
+        "Abbey Road",
+        "Black Widow"
+      ],
+      [
+        "Avatar: The Way of Water",
+        "Toaster",
+        "Palace of Westminster",
+        "Rooster"
+      ],
+      [
+        "Star Wars",
+        "Starbuck",
+        "Staten Island",
+        "Stallion"
+      ],
+      [
+        "Odyssey",
+        "Helen",
+        "Paris",
+        "Horse"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "19th Century",
+      "1st Century BC",
+      "Things Indian",
+      "Things Turkish"
+    ],
+    "cols": [
+      "Buildings",
+      "Drama Stories",
+      "Events",
+      "Foods"
+    ],
+    "words": [
+      [
+        "Eiffel Tower",
+        "Dracula",
+        "The Crimean War",
+        "Wellington"
+      ],
+      [
+        "Curia",
+        "Commentarii de Bello Gallico",
+        "Caesar crosses the Rubicon",
+        "Caesar"
+      ],
+      [
+        "Taj Mahal",
+        "The Mahabharata",
+        "The Indian Independence Movement",
+        "Butter Chicken"
+      ],
+      [
+        "Blue Mosque",
+        "Troy",
+        "The Armenian Genocide",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "17th Century",
+      "20th Century",
+      "Modern Rulers",
+      "Ships"
+    ],
+    "cols": [
+      "Locations in North America",
+      "Saints",
+      "Things German",
+      "Things Spanish"
+    ],
+    "words": [
+      [
+        "Salem",
+        "James",
+        "Bach",
+        "Don Quixote"
+      ],
+      [
+        "Los Alamos",
+        "Teresa",
+        "Volkswagen",
+        "The Spanish Civil War"
+      ],
+      [
+        "Washington",
+        "Catherine",
+        "Anne of Cleves",
+        "Catherine of Aragon"
+      ],
+      [
+        "San Jose",
+        "San Pedro",
+        "Scharnhorst",
+        "Pinta"
+      ]
+    ]
   }
 ]
