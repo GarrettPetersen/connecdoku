@@ -6,7 +6,8 @@
     "Manufactured by Boeing",
     "Passenger Aircraft",
     "Starts with 747",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "1066": [
     "11th Century",
@@ -559,7 +560,8 @@
     "Things British",
     "Things French",
     "Things German",
-    "Things Spanish"
+    "Things Spanish",
+    "Things That Fly"
   ],
   "Ajiaco": [
     "Ends with ACO",
@@ -672,13 +674,19 @@
     "State Capitals on Rivers"
   ],
   "Albatross": [
+    "Animal Species",
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with OSS",
     "Nautical Terms",
     "Real Animals",
     "Rime of the Ancient Mariner",
+    "Saurischians",
     "Sea Birds",
     "Starts with ALB",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals",
     "White Things"
   ],
@@ -889,6 +897,18 @@
     "Star Wars Universe",
     "Starts with ALL"
   ],
+  "Allosaurus": [
+    "Animal Species",
+    "Carnivores",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Jurassic Period",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with ALL",
+    "Theropods"
+  ],
   "Almanac": [
     "Ends with NAC",
     "Periodicals",
@@ -952,6 +972,16 @@
   "Ammonia": [
     "Chemicals",
     "Ends with NIA",
+    "Starts with AMM"
+  ],
+  "Ammonites": [
+    "Animal Species",
+    "Carnivores",
+    "Ends with TES",
+    "Extinct Animals",
+    "Mesozoic Era",
+    "Mollusks",
+    "Prehistoric Life",
     "Starts with AMM"
   ],
   "Among Us": [
@@ -1027,6 +1057,7 @@
     "Starts with ANG",
     "Superheroes",
     "The Good Place",
+    "Things That Fly",
     "X-Men Characters"
   ],
   "Angkor Wat": [
@@ -1085,6 +1116,18 @@
     "Political Stories",
     "Starts with ANI",
     "Things British"
+  ],
+  "Ankylosaurus": [
+    "Animal Species",
+    "Ankylosaurs",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with ANK"
   ],
   "Anna": [
     "21st Century",
@@ -1278,7 +1321,20 @@
     "Manufactured by Boeing",
     "Military Aircraft",
     "Starts with APA",
-    "Things American"
+    "Things American",
+    "Things That Fly"
+  ],
+  "Apatosaurus": [
+    "Animal Species",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Jurassic Period",
+    "Prehistoric Life",
+    "Saurischians",
+    "Sauropods",
+    "Starts with APA"
   ],
   "Aperture": [
     "Ends with URE",
@@ -1373,6 +1429,26 @@
     "Things Italian",
     "Things Roman"
   ],
+  "Archaeopteryx": [
+    "Animal Species",
+    "Archaeopterygids",
+    "Bird-like Dinosaurs",
+    "Birds",
+    "Carnivores",
+    "Dinosaurs",
+    "Ends with RYX",
+    "Extinct Animals",
+    "Feathered Dinosaurs",
+    "First Birds",
+    "Jurassic Period",
+    "Prehistoric Life",
+    "Saurischians",
+    "Small Dinosaurs",
+    "Starts with ARC",
+    "Theropods",
+    "Things That Fly",
+    "Transitional Fossils"
+  ],
   "Archduke Franz Ferdinand": [
     "Assassination of Archduke Franz Ferdinand",
     "Ends with AND",
@@ -1429,6 +1505,18 @@
     "Starts with ARG",
     "Things Argentine",
     "WWII Allied Powers"
+  ],
+  "Argentinosaurus": [
+    "Animal Species",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Prehistoric Life",
+    "Saurischians",
+    "Sauropods",
+    "Starts with ARG"
   ],
   "Argo": [
     "2010s",
@@ -1966,6 +2054,7 @@
     "Military Aircraft",
     "Starts with B-1",
     "Things American",
+    "Things That Fly",
     "World War II"
   ],
   "B-29": [
@@ -1976,6 +2065,7 @@
     "Military Aircraft",
     "Starts with B-2",
     "Things American",
+    "Things That Fly",
     "World War II"
   ],
   "BBQ": [
@@ -2572,7 +2662,10 @@
     "Things British"
   ],
   "Bear": [
+    "Animal Species",
     "Black Things",
+    "Carnivores",
+    "Currently Living Animals",
     "Ends with EAR",
     "Mammals",
     "NFL Teams",
@@ -2669,10 +2762,16 @@
     "Starts with BED"
   ],
   "Bee": [
+    "Animal Species",
     "Arthropods",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with BEE",
     "Insects",
-    "Starts with BEE"
+    "Saurischians",
+    "Starts with BEE",
+    "Theropods",
+    "Things That Fly"
   ],
   "Bee Gees": [
     "1960s",
@@ -2842,7 +2941,8 @@
     "People",
     "Real People",
     "Starts with BEL",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Belle": [
     "1990s",
@@ -3033,12 +3133,20 @@
     "Things American"
   ],
   "Big Bird": [
+    "1960s",
+    "20th Century",
     "Birds",
+    "Dinosaurs",
     "Ends with IRD",
+    "Fictional Animals",
+    "Flightless Birds",
     "Muppet Characters",
+    "Omnivores",
     "Puppet Characters",
+    "Saurischians",
     "Sesame Street Characters",
-    "Starts with BIG"
+    "Starts with BIG",
+    "Theropods"
   ],
   "Big Hero 6": [
     "3D Animated Films",
@@ -3235,7 +3343,8 @@
     "Manufactured by Sikorsky",
     "Military Aircraft",
     "Starts with BLA",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Black Hole": [
     "Astronomical Objects",
@@ -3338,12 +3447,19 @@
     "Starts with BLU"
   ],
   "Blue Jay": [
+    "Animal Species",
     "Birds",
     "Blue Things",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with JAY",
     "MLB Teams",
+    "Omnivores",
     "Real Animals",
+    "Saurischians",
     "Starts with BLU",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Blue Jeans": [
@@ -3370,9 +3486,18 @@
     "The Matrix"
   ],
   "Blue Whale": [
+    "Animal Species",
     "Blue Things",
+    "Currently Living Animals",
     "Ends with ALE",
-    "Starts with BLU"
+    "Herbivores",
+    "Large Animals",
+    "Mammals",
+    "Ocean Animals",
+    "Sea Creatures",
+    "Sea Mammals",
+    "Starts with BLU",
+    "Whales"
   ],
   "Blueberry": [
     "Blue Things",
@@ -3421,7 +3546,8 @@
     "Companies",
     "Ends with ING",
     "Starts with BOE",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Bohemian Rhapsody": [
     "1970s",
@@ -3614,12 +3740,15 @@
   "Bowser": [
     "1980s",
     "20th Century",
+    "Carnivores",
     "Ends with SER",
     "Fictional Animals",
     "Fictional People",
+    "Fictional Reptiles",
     "Men",
     "Nintendo Characters",
     "People",
+    "Reptiles",
     "Starts with BOW",
     "Video Game Characters",
     "Villains"
@@ -3630,6 +3759,28 @@
     "Sports",
     "Starts with BOX",
     "Things British"
+  ],
+  "Brachchiopods": [
+    "Animal Species",
+    "Brachiopods",
+    "Ends with ODS",
+    "Extinct Animals",
+    "Filter Feeders",
+    "Paleozoic Era",
+    "Prehistoric Life",
+    "Starts with BRA"
+  ],
+  "Brachiosaurus": [
+    "Animal Species",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Jurassic Period",
+    "Prehistoric Life",
+    "Saurischians",
+    "Sauropods",
+    "Starts with BRA"
   ],
   "Brando": [
     "1950s",
@@ -4210,6 +4361,7 @@
     "Ships",
     "Starts with BUS",
     "Things American",
+    "Things That Fly",
     "US Navy",
     "US Presidents",
     "Warships"
@@ -4459,6 +4611,18 @@
     "Video Games",
     "War Stories"
   ],
+  "Camarasaurus": [
+    "Animal Species",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Jurassic Period",
+    "Prehistoric Life",
+    "Saurischians",
+    "Sauropods",
+    "Starts with CAM"
+  ],
   "Cambodia": [
     "Countries",
     "Countries in Asia",
@@ -4676,14 +4840,21 @@
     "Things Italian"
   ],
   "Cardinal": [
+    "Animal Species",
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with NAL",
     "MLB Teams",
     "NFL Teams",
+    "Omnivores",
     "Real Animals",
     "Red Things",
     "Religious Titles",
+    "Saurischians",
     "Starts with CAR",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Carl Vinson": [
@@ -4696,6 +4867,18 @@
     "Things American",
     "US Navy",
     "Warships"
+  ],
+  "Carnotaurus": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with CAR",
+    "Theropods"
   ],
   "Carp": [
     "Ends with ARP",
@@ -4804,6 +4987,18 @@
     "Starts with CAS",
     "Things French"
   ],
+  "Cassowary": [
+    "Animal Species",
+    "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
+    "Ends with ARY",
+    "Flightless Birds",
+    "Omnivores",
+    "Saurischians",
+    "Starts with CAS",
+    "Theropods"
+  ],
   "Castle in the Sky": [
     "1980s",
     "20th Century",
@@ -4833,6 +5028,9 @@
     "Things Cuban"
   ],
   "Cat": [
+    "Animal Species",
+    "Carnivores",
+    "Currently Living Animals",
     "Domesticated Animals",
     "Ends with CAT",
     "Real Animals",
@@ -4951,6 +5149,23 @@
     "Starts with CEN",
     "Things Central African"
   ],
+  "Cera": [
+    "1980s",
+    "20th Century",
+    "Animal Species",
+    "Ceratopsians",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with ERA",
+    "Extinct Animals",
+    "Fictional Animals",
+    "Fictional Dinosaurs",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with CER",
+    "The Land Before Time"
+  ],
   "Cerberus": [
     "Ends with RUS",
     "Greek Myth Monsters",
@@ -4968,7 +5183,8 @@
     "Companies",
     "Ends with SNA",
     "Starts with CES",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Ceviche": [
     "Ends with CHE",
@@ -5151,6 +5367,18 @@
     "Starts with CHA",
     "Things American"
   ],
+  "Chasmosaurus": [
+    "Animal Species",
+    "Ceratopsians",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with CHA"
+  ],
   "Che": [
     "Desserts",
     "Ends with CHE",
@@ -5264,11 +5492,18 @@
     "Things Mexican"
   ],
   "Chicken": [
+    "Animal Species",
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with KEN",
     "Foods",
     "Ingredients in Cobb Salad",
-    "Starts with CHI"
+    "Omnivores",
+    "Saurischians",
+    "Starts with CHI",
+    "Theropods",
+    "Things That Fly"
   ],
   "Chicken Little": [
     "3D Animated Films",
@@ -5358,7 +5593,8 @@
     "Manufactured by Boeing",
     "Military Aircraft",
     "Starts with CHI",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Chisel": [
     "Ends with SEL",
@@ -5398,6 +5634,23 @@
     "Ends with OIR",
     "Music",
     "Starts with CHO"
+  ],
+  "Chomper": [
+    "1980s",
+    "20th Century",
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with PER",
+    "Extinct Animals",
+    "Fictional Animals",
+    "Fictional Dinosaurs",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with CHO",
+    "The Land Before Time",
+    "Theropods"
   ],
   "Chorus": [
     "Ends with RUS",
@@ -5596,7 +5849,8 @@
     "Companies",
     "Ends with RUS",
     "Starts with CIR",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Citizen Kane": [
     "1940s",
@@ -6017,7 +6271,8 @@
     "Starts with CON",
     "Supersonic Aircraft",
     "Things British",
-    "Things French"
+    "Things French",
+    "Things That Fly"
   ],
   "Concordia": [
     "21st Century",
@@ -6049,6 +6304,25 @@
     "Starts with CON",
     "Things Chinese",
     "Writers"
+  ],
+  "Confuciusornis": [
+    "Animal Species",
+    "Bird-like Dinosaurs",
+    "Birds",
+    "Confuciusornithids",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with NIS",
+    "Extinct Animals",
+    "Feathered Dinosaurs",
+    "Omnivores",
+    "Prehistoric Life",
+    "Saurischians",
+    "Small Dinosaurs",
+    "Starts with CON",
+    "Theropods",
+    "Things That Fly",
+    "Transitional Fossils"
   ],
   "Congee": [
     "Ends with GEE",
@@ -6193,10 +6467,15 @@
   ],
   "Cormorant": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with ANT",
     "Real Animals",
+    "Saurischians",
     "Sea Birds",
     "Starts with COR",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Corned Beef": [
@@ -6224,6 +6503,7 @@
     "Military Aircraft",
     "Starts with COR",
     "Things American",
+    "Things That Fly",
     "World War II"
   ],
   "Corsica": [
@@ -6233,6 +6513,18 @@
     "Place Names",
     "Starts with COR",
     "Things French"
+  ],
+  "Corythosaurus": [
+    "Animal Species",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Hadrosaurs",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with COR"
   ],
   "Costa Rica": [
     "Countries",
@@ -6279,9 +6571,11 @@
     "Titles of Rank"
   ],
   "Cow": [
+    "Animal Species",
     "Domesticated Animals",
     "Ends with COW",
     "Female Animals",
+    "Herbivores",
     "Real Animals",
     "Starts with COW",
     "Types of Animals"
@@ -6453,14 +6747,21 @@
     "Things Chinese"
   ],
   "Crow": [
+    "Animal Species",
     "Band Namesakes",
     "Birds",
     "Black Things",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with ROW",
     "Fable Characters",
     "Music",
+    "Omnivores",
     "Real Animals",
+    "Saurischians",
     "Starts with CRO",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Crunch": [
@@ -6617,7 +6918,8 @@
     "Manufactured by Douglas",
     "Passenger Aircraft",
     "Starts with DC-",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "DEX": [
     "Crypto",
@@ -6855,6 +7157,7 @@
     "Military Aircraft",
     "Starts with DAU",
     "Things American",
+    "Things That Fly",
     "World War II"
   ],
   "Davy Crockett": [
@@ -6962,6 +7265,18 @@
     "Ends with MOS",
     "Satellites",
     "Starts with DEI"
+  ],
+  "Deinonychus": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with HUS",
+    "Extinct Animals",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with DEI",
+    "Theropods"
   ],
   "Deja Vu": [
     "2000s",
@@ -7080,6 +7395,7 @@
     "Military Aircraft",
     "Starts with DEV",
     "Things American",
+    "Things That Fly",
     "Torpedo Bomber",
     "World War II"
   ],
@@ -7175,6 +7491,28 @@
     "Starts with DIM",
     "Things Chinese"
   ],
+  "Dimetrodon": [
+    "Animal Species",
+    "Carnivores",
+    "Ends with DON",
+    "Extinct Animals",
+    "Permian Period",
+    "Prehistoric Life",
+    "Starts with DIM",
+    "Synapsids"
+  ],
+  "Diplodocus": [
+    "Animal Species",
+    "Dinosaurs",
+    "Ends with CUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Jurassic Period",
+    "Prehistoric Life",
+    "Saurischians",
+    "Sauropods",
+    "Starts with DIP"
+  ],
   "Dirac": [
     "20th Century",
     "Ends with RAC",
@@ -7186,6 +7524,16 @@
     "Starts with DIR",
     "Things British"
   ],
+  "Dire Wolf": [
+    "Animal Species",
+    "Carnivores",
+    "Ends with OLF",
+    "Extinct Animals",
+    "Mammals",
+    "Pleistocene Epoch",
+    "Prehistoric Life",
+    "Starts with DIR"
+  ],
   "Discovery": [
     "Age of Sail",
     "Antarctic Exploration",
@@ -7194,7 +7542,8 @@
     "Royal Navy",
     "Ships",
     "Starts with DIS",
-    "Things British"
+    "Things British",
+    "Things That Fly"
   ],
   "Discovery One": [
     "Ends with ONE",
@@ -7274,6 +7623,8 @@
     "Types of Animals"
   ],
   "Dog": [
+    "Animal Species",
+    "Currently Living Animals",
     "Domesticated Animals",
     "Ends with DOG",
     "Real Animals",
@@ -7301,10 +7652,12 @@
     "Things Greek"
   ],
   "Dolphin": [
+    "Animal Species",
     "Ends with HIN",
     "Mammals",
     "NFL Teams",
     "Real Animals",
+    "Sea Creatures",
     "Sea Mammals",
     "Starts with DOL",
     "Types of Animals"
@@ -7376,11 +7729,33 @@
     "Ends with ALD",
     "Starts with DON"
   ],
+  "Donald Duck": [
+    "1930s",
+    "20th Century",
+    "Birds",
+    "Dinosaurs",
+    "Ends with UCK",
+    "Fictional Animals",
+    "Fictional Birds",
+    "Fictional Ducks",
+    "Omnivores",
+    "Saurischians",
+    "Starts with DON",
+    "Theropods",
+    "Things That Fly"
+  ],
   "Donkey Kong": [
+    "1980s",
+    "20th Century",
     "Ends with ONG",
     "Fictional Animals",
+    "Fictional Primates",
     "Gorillas",
+    "Herbivores",
+    "Individual Animals",
+    "Mammals",
     "Nintendo Characters",
+    "Primates",
     "Starts with DON",
     "Video Game Characters",
     "Video Games"
@@ -7475,7 +7850,8 @@
     "Companies",
     "Ends with LAS",
     "Starts with DOU",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Dover": [
     "Cities",
@@ -7548,6 +7924,8 @@
     "2000s",
     "21st Century",
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with AKE",
     "Historical Figures",
     "Male Animals",
@@ -7558,7 +7936,9 @@
     "Real Animals",
     "Real People",
     "Sailors",
+    "Saurischians",
     "Starts with DRA",
+    "Theropods",
     "Things British",
     "Things Canadian",
     "Types of Animals"
@@ -7660,6 +8040,23 @@
     "Starts with DUC",
     "Things French"
   ],
+  "Ducky": [
+    "1980s",
+    "20th Century",
+    "Animal Species",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with CKY",
+    "Extinct Animals",
+    "Fictional Animals",
+    "Fictional Dinosaurs",
+    "Hadrosaurs",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with DUC",
+    "The Land Before Time"
+  ],
   "Duffel": [
     "Ends with FEL",
     "Starts with DUF",
@@ -7669,6 +8066,7 @@
     "Ends with ONG",
     "Mammals",
     "Real Animals",
+    "Sea Creatures",
     "Sea Mammals",
     "Starts with DUG",
     "Types of Animals"
@@ -7770,13 +8168,20 @@
     "Things Korean"
   ],
   "Eagle": [
+    "Animal Species",
     "Birds",
     "Birds of Prey",
+    "Carnivores",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with GLE",
     "NFL Teams",
     "Predators",
     "Real Animals",
+    "Saurischians",
     "Starts with EAG",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Earl Grey": [
@@ -7882,6 +8287,18 @@
     "Real People",
     "Starts with EDI",
     "Things American"
+  ],
+  "Edmontosaurus": [
+    "Animal Species",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Hadrosaurs",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with EDM"
   ],
   "Edmund Fitzgerald": [
     "Ends with ALD",
@@ -8036,6 +8453,17 @@
     "Things Salvadoran",
     "WWII Allied Powers"
   ],
+  "Elasmosaurus": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Marine Reptiles",
+    "Prehistoric Life",
+    "Sea Creatures",
+    "Starts with ELA"
+  ],
   "Elba": [
     "Ends with LBA",
     "Islands",
@@ -8086,6 +8514,8 @@
     "Things British"
   ],
   "Elephant": [
+    "Animal Species",
+    "Currently Living Animals",
     "Ends with ANT",
     "Herbivores",
     "Mammals",
@@ -8309,6 +8739,18 @@
     "Starts with EMP",
     "Things Canadian"
   ],
+  "Emu": [
+    "Animal Species",
+    "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
+    "Ends with EMU",
+    "Flightless Birds",
+    "Omnivores",
+    "Saurischians",
+    "Starts with EMU",
+    "Theropods"
+  ],
   "Encanto": [
     "3D Animated Films",
     "Disney",
@@ -8369,6 +8811,7 @@
     "Star Trek",
     "Starts with ENT",
     "Things American",
+    "Things That Fly",
     "US Navy",
     "Warships",
     "World War II"
@@ -8519,6 +8962,18 @@
     "Starts with EUC",
     "Things American"
   ],
+  "Euoplocephalus": [
+    "Animal Species",
+    "Ankylosaurs",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with LUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with EUO"
+  ],
   "Europa": [
     "Astronomical Objects",
     "Ends with OPA",
@@ -8626,7 +9081,8 @@
     "Manufactured by General Dynamics",
     "Military Aircraft",
     "Starts with F-1",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "F-22": [
     "Aircraft",
@@ -8635,7 +9091,8 @@
     "Manufactured by Lockheed",
     "Military Aircraft",
     "Starts with F-2",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "F-35": [
     "Aircraft",
@@ -8644,7 +9101,8 @@
     "Manufactured by Lockheed",
     "Military Aircraft",
     "Starts with F-3",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "FM": [
     "Acronyms",
@@ -8675,13 +9133,20 @@
     "Things Middle Eastern"
   ],
   "Falcon": [
+    "Animal Species",
     "Birds",
     "Birds of Prey",
+    "Carnivores",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with CON",
     "NFL Teams",
     "Predators",
     "Real Animals",
+    "Saurischians",
     "Starts with FAL",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Falkland Islands": [
@@ -9027,10 +9492,14 @@
   ],
   "Flamingo": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with NGO",
     "Pink Things",
     "Real Animals",
+    "Saurischians",
     "Starts with FLA",
+    "Theropods",
     "Types of Animals"
   ],
   "Flan": [
@@ -9053,6 +9522,7 @@
     "Red Things",
     "Starts with FLA",
     "Superheroes",
+    "Things That Fly",
     "Weather"
   ],
   "Flight of the Navigator": [
@@ -9279,6 +9749,8 @@
     "Things American"
   ],
   "Fox": [
+    "Animal Species",
+    "Carnivores",
     "Ends with FOX",
     "Mammals",
     "Media Companies",
@@ -9625,7 +10097,8 @@
     "Battlestar Galactica",
     "Ends with ICA",
     "Fictional Spaceships",
-    "Starts with GAL"
+    "Starts with GAL",
+    "Things That Fly"
   ],
   "Galaktoboureko": [
     "Desserts",
@@ -9725,6 +10198,19 @@
     "Superheroes",
     "X-Men Characters"
   ],
+  "Gamera": [
+    "1960s",
+    "20th Century",
+    "Carnivores",
+    "Ends with ERA",
+    "Fictional Animals",
+    "Fictional Monsters",
+    "Fictional Reptiles",
+    "Giant Monsters",
+    "Reptiles",
+    "Sea Creatures",
+    "Starts with GAM"
+  ],
   "Gamma": [
     "Ends with MMA",
     "Greek Letters",
@@ -9755,16 +10241,28 @@
   ],
   "Gannet": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with NET",
     "Real Animals",
+    "Saurischians",
     "Sea Birds",
     "Starts with GAN",
+    "Theropods",
     "Types of Animals"
   ],
   "Garfield": [
     "1880s",
+    "1970s",
     "19th Century",
+    "20th Century",
+    "Carnivores",
+    "Cats",
     "Ends with ELD",
+    "Fictional Animals",
+    "Fictional Cats",
+    "Fictional Mammals",
+    "Mammals",
     "Men",
     "Military Leaders",
     "National Leaders",
@@ -10030,6 +10528,18 @@
     "Starts with GIA",
     "Synonyms for Big"
   ],
+  "Giganotosaurus": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with GIG",
+    "Theropods"
+  ],
   "Gigantic": [
     "Ends with TIC",
     "Starts with GIG",
@@ -10133,8 +10643,10 @@
     "Two-Letter Words"
   ],
   "Goat": [
+    "Animal Species",
     "Domesticated Animals",
     "Ends with OAT",
+    "Herbivores",
     "Real Animals",
     "Starts with GOA",
     "Synonyms for Good",
@@ -10173,6 +10685,19 @@
     "Religious Stories",
     "Starts with GOD",
     "Things American"
+  ],
+  "Godzilla": [
+    "1950s",
+    "20th Century",
+    "Carnivores",
+    "Ends with LLA",
+    "Fictional Animals",
+    "Fictional Monsters",
+    "Fictional Reptiles",
+    "Giant Monsters",
+    "Reptiles",
+    "Sea Creatures",
+    "Starts with GOD"
   ],
   "Goi Cuon": [
     "Ends with UON",
@@ -10313,8 +10838,16 @@
     "Things American"
   ],
   "Goofy": [
+    "1930s",
+    "20th Century",
     "Disney Characters",
+    "Dogs",
     "Ends with OFY",
+    "Fictional Animals",
+    "Fictional Dogs",
+    "Fictional Mammals",
+    "Mammals",
+    "Omnivores",
     "Starts with GOO"
   ],
   "Google": [
@@ -10399,6 +10932,16 @@
     "Purple Things",
     "Starts with GRA"
   ],
+  "Graptolites": [
+    "Animal Species",
+    "Ends with TES",
+    "Extinct Animals",
+    "Filter Feeders",
+    "Hemichordates",
+    "Paleozoic Era",
+    "Prehistoric Life",
+    "Starts with GRA"
+  ],
   "Grave of the Fireflies": [
     "2D Animated Films",
     "Anime",
@@ -10438,6 +10981,17 @@
     "Seven Wonders",
     "Starts with GRE",
     "Things Chinese"
+  ],
+  "Great White Shark": [
+    "Animal Species",
+    "Carnivores",
+    "Currently Living Animals",
+    "Ends with ARK",
+    "Ocean Animals",
+    "Predators",
+    "Sea Creatures",
+    "Sharks",
+    "Starts with GRE"
   ],
   "Greece": [
     "Countries",
@@ -10548,7 +11102,8 @@
     "Men",
     "People",
     "Starts with GRE",
-    "Superheroes"
+    "Superheroes",
+    "Things That Fly"
   ],
   "Green Light": [
     "Ends with GHT",
@@ -10590,6 +11145,16 @@
     "Ends with FIN",
     "Mythical Creatures",
     "Starts with GRI"
+  ],
+  "Ground Sloth": [
+    "Animal Species",
+    "Ends with OTH",
+    "Extinct Animals",
+    "Herbivores",
+    "Mammals",
+    "Pleistocene Epoch",
+    "Prehistoric Life",
+    "Starts with GRO"
   ],
   "Groundhog Day": [
     "1990s",
@@ -10723,14 +11288,19 @@
     "Companies",
     "Ends with EAM",
     "Starts with GUL",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Gull": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with ULL",
     "Real Animals",
+    "Saurischians",
     "Sea Birds",
     "Starts with GUL",
+    "Theropods",
     "Types of Animals"
   ],
   "Gum": [
@@ -11332,12 +11902,19 @@
     "Things Canadian"
   ],
   "Hawk": [
+    "Animal Species",
     "Birds",
     "Birds of Prey",
+    "Carnivores",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with AWK",
     "Predators",
     "Real Animals",
+    "Saurischians",
     "Starts with HAW",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Hawkeye": [
@@ -11620,7 +12197,8 @@
     "Movies featuring Maggie Cheung",
     "Movies featuring Tony Leung",
     "Starts with HER",
-    "Things Chinese"
+    "Things Chinese",
+    "Things That Fly"
   ],
   "Hershey": [
     "Chocolate Bars",
@@ -11917,14 +12495,17 @@
     "Ships",
     "Starts with HOR",
     "Things American",
+    "Things That Fly",
     "US Navy",
     "Warships",
     "World War II"
   ],
   "Horse": [
+    "Animal Species",
     "Domesticated Animals",
     "Ends with RSE",
     "Greek Mythology",
+    "Herbivores",
     "Real Animals",
     "Starts with HOR",
     "Trojan War",
@@ -12156,9 +12737,13 @@
   ],
   "Hummingbird": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with IRD",
     "Real Animals",
+    "Saurischians",
     "Starts with HUM",
+    "Theropods",
     "Types of Animals"
   ],
   "Hummus": [
@@ -12167,6 +12752,18 @@
     "Sauces",
     "Starts with HUM",
     "Things Middle Eastern"
+  ],
+  "Humpback Whale": [
+    "Animal Species",
+    "Carnivores",
+    "Currently Living Animals",
+    "Ends with ALE",
+    "Mammals",
+    "Ocean Animals",
+    "Sea Creatures",
+    "Sea Mammals",
+    "Starts with HUM",
+    "Whales"
   ],
   "Hungary": [
     "Countries",
@@ -12191,6 +12788,7 @@
     "Military Aircraft",
     "Starts with HUR",
     "Things British",
+    "Things That Fly",
     "World War II"
   ],
   "Hyatt": [
@@ -12409,6 +13007,17 @@
     "Real People",
     "Starts with ICH",
     "Things Japanese"
+  ],
+  "Ichthyosaurus": [
+    "Animal Species",
+    "Carnivores",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Jurassic Period",
+    "Marine Reptiles",
+    "Prehistoric Life",
+    "Sea Creatures",
+    "Starts with ICH"
   ],
   "Ida Straus": [
     "1910s",
@@ -12802,7 +13411,8 @@
     "People",
     "Red Things",
     "Starts with IRO",
-    "Superheroes"
+    "Superheroes",
+    "Things That Fly"
   ],
   "Isabella Bird": [
     "19th Century",
@@ -13205,6 +13815,7 @@
     "Starts with JEA",
     "Superheroes",
     "Things American",
+    "Things That Fly",
     "Women",
     "X-Men Characters"
   ],
@@ -13314,6 +13925,7 @@
     "Military Aircraft",
     "Starts with JIL",
     "Things Japanese",
+    "Things That Fly",
     "Torpedo Bomber",
     "World War II"
   ],
@@ -13571,6 +14183,7 @@
     "Military Aircraft",
     "Starts with JUD",
     "Things Japanese",
+    "Things That Fly",
     "World War II"
   ],
   "Juggernaut": [
@@ -13668,6 +14281,7 @@
     "Blockbusters",
     "Drama Stories",
     "Ends with ARK",
+    "Jurassic Period",
     "Movies",
     "Movies directed by Spielberg",
     "Movies directed by Steven Spielberg",
@@ -13808,6 +14422,7 @@
     "Military Aircraft",
     "Starts with KAT",
     "Things Japanese",
+    "Things That Fly",
     "Torpedo Bomber",
     "World War II"
   ],
@@ -13900,6 +14515,18 @@
     "Ends with OBI",
     "Star Wars Universe",
     "Starts with KEN"
+  ],
+  "Kentrosaurus": [
+    "Animal Species",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Jurassic Period",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with KEN",
+    "Stegosaurs"
   ],
   "Kenya": [
     "Countries",
@@ -14055,6 +14682,19 @@
     "Things American",
     "Thriller Stories"
   ],
+  "Killer Whale": [
+    "Animal Species",
+    "Carnivores",
+    "Currently Living Animals",
+    "Ends with ALE",
+    "Mammals",
+    "Ocean Animals",
+    "Predators",
+    "Sea Creatures",
+    "Sea Mammals",
+    "Starts with KIL",
+    "Whales"
+  ],
   "Kilo": [
     "Ends with ILO",
     "NATO Phonetic Alphabet",
@@ -14105,6 +14745,20 @@
     "Starts with KIN",
     "Titles of Rank"
   ],
+  "King Ghidorah": [
+    "1960s",
+    "20th Century",
+    "Carnivores",
+    "Dragons",
+    "Ends with RAH",
+    "Fictional Animals",
+    "Fictional Monsters",
+    "Fictional Reptiles",
+    "Giant Monsters",
+    "Reptiles",
+    "Sea Creatures",
+    "Starts with KIN"
+  ],
   "King Kong": [
     "1930s",
     "20th Century",
@@ -14116,9 +14770,12 @@
     "Ends with ONG",
     "Fictional Animals",
     "Fictional People",
+    "Fictional Primates",
     "Giant Monsters",
     "Gorillas",
+    "Herbivores",
     "Horror Stories",
+    "Mammals",
     "Men",
     "Monster Movies",
     "Movies",
@@ -14126,6 +14783,7 @@
     "Movies directed by Merian C. Cooper",
     "Movies featuring Fay Wray",
     "People",
+    "Primates",
     "Starts with KIN",
     "Things American",
     "Types of Animals"
@@ -14183,12 +14841,20 @@
     "Starts with KIT"
   ],
   "Kiwi": [
+    "Animal Species",
+    "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with IWI",
+    "Flightless Birds",
     "Foods",
     "Fruits",
     "Green Things",
+    "Omnivores",
     "Real Animals",
+    "Saurischians",
     "Starts with KIW",
+    "Theropods",
     "Types of Animals"
   ],
   "Knafeh": [
@@ -14581,6 +15247,18 @@
     "Greek Letters",
     "Starts with LAM"
   ],
+  "Lambeosaurus": [
+    "Animal Species",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Hadrosaurs",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with LAM"
+  ],
   "Lamborghini": [
     "1960s",
     "20th Century",
@@ -14605,6 +15283,7 @@
     "Military Aircraft",
     "Starts with LAN",
     "Things British",
+    "Things That Fly",
     "World War II"
   ],
   "Land Rover": [
@@ -14749,7 +15428,8 @@
     "Manufactured by Bombardier",
     "Private Aircraft",
     "Starts with LEA",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Lebanon": [
     "Countries",
@@ -15159,7 +15839,10 @@
     "Things Italian"
   ],
   "Lion": [
+    "Animal Species",
     "Big Cats",
+    "Carnivores",
+    "Currently Living Animals",
     "Ends with ION",
     "Mammals",
     "NFL Teams",
@@ -15237,6 +15920,23 @@
     "Stories about Families",
     "Things American"
   ],
+  "Littlefoot": [
+    "1980s",
+    "20th Century",
+    "Animal Species",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with OOT",
+    "Extinct Animals",
+    "Fictional Animals",
+    "Fictional Dinosaurs",
+    "Herbivores",
+    "Prehistoric Life",
+    "Saurischians",
+    "Sauropods",
+    "Starts with LIT",
+    "The Land Before Time"
+  ],
   "Live Free or Die Hard": [
     "21st Century",
     "Action Stories",
@@ -15282,7 +15982,8 @@
     "Companies",
     "Ends with EED",
     "Starts with LOC",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Locro": [
     "Ends with CRO",
@@ -15595,6 +16296,18 @@
     "Starts with MAC",
     "Things French"
   ],
+  "Macaw": [
+    "Animal Species",
+    "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
+    "Ends with CAW",
+    "Omnivores",
+    "Saurischians",
+    "Starts with MAC",
+    "Theropods",
+    "Things That Fly"
+  ],
   "Macbeth": [
     "Ends with ETH",
     "Shakespeare Characters",
@@ -15768,9 +16481,13 @@
   "Magpie": [
     "Birds",
     "Black and White",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with PIE",
     "Real Animals",
+    "Saurischians",
     "Starts with MAG",
+    "Theropods",
     "Types of Animals"
   ],
   "Majorca": [
@@ -15875,9 +16592,13 @@
     "Starts with MAL"
   ],
   "Mammoth": [
+    "Animal Species",
     "Ends with OTH",
+    "Extinct Animals",
     "Herbivores",
     "Mammals",
+    "Pleistocene Epoch",
+    "Prehistoric Life",
     "Real Animals",
     "Starts with MAM",
     "Synonyms for Big",
@@ -15887,6 +16608,7 @@
     "Ends with TEE",
     "Mammals",
     "Real Animals",
+    "Sea Creatures",
     "Sea Mammals",
     "Starts with MAN",
     "Types of Animals"
@@ -16446,6 +17168,19 @@
     "Starts with MEC",
     "Things Saudi"
   ],
+  "MechaGodzilla": [
+    "1970s",
+    "20th Century",
+    "Carnivores",
+    "Ends with LLA",
+    "Fictional Animals",
+    "Fictional Monsters",
+    "Fictional Reptiles",
+    "Giant Monsters",
+    "Reptiles",
+    "Robots",
+    "Starts with MEC"
+  ],
   "Medovik": [
     "Desserts",
     "Ends with VIK",
@@ -16465,6 +17200,18 @@
     "Starts with MEE",
     "Stories about Families",
     "Things American"
+  ],
+  "Megalodon": [
+    "Animal Species",
+    "Carnivores",
+    "Cenozoic Era",
+    "Ends with DON",
+    "Extinct Animals",
+    "Giant Animals",
+    "Prehistoric Life",
+    "Sea Creatures",
+    "Sharks",
+    "Starts with MEG"
   ],
   "Mehmet Ali Agca": [
     "1980s",
@@ -16534,6 +17281,7 @@
     "Military Aircraft",
     "Starts with MES",
     "Things German",
+    "Things That Fly",
     "World War II"
   ],
   "Met": [
@@ -16586,7 +17334,8 @@
     "Companies",
     "Ends with MIG",
     "Starts with MIG",
-    "Things Russian"
+    "Things Russian",
+    "Things That Fly"
   ],
   "MiG-15": [
     "Aircraft",
@@ -16596,7 +17345,8 @@
     "Manufactured by MiG",
     "Military Aircraft",
     "Starts with MIG",
-    "Things Russian"
+    "Things Russian",
+    "Things That Fly"
   ],
   "MiG-21": [
     "Aircraft",
@@ -16606,7 +17356,8 @@
     "Manufactured by MiG",
     "Military Aircraft",
     "Starts with MIG",
-    "Things Russian"
+    "Things Russian",
+    "Things That Fly"
   ],
   "Miami": [
     "Cities",
@@ -16655,6 +17406,18 @@
     "Ends with KEY",
     "Starts with MIC"
   ],
+  "Mickey Mouse": [
+    "1920s",
+    "20th Century",
+    "Ends with USE",
+    "Fictional Animals",
+    "Fictional Mammals",
+    "Fictional Mice",
+    "Mammals",
+    "Mice",
+    "Omnivores",
+    "Starts with MIC"
+  ],
   "Micronesia": [
     "Archipelagos",
     "Countries",
@@ -16668,6 +17431,26 @@
     "Small Countries",
     "Starts with MIC",
     "Things Micronesian"
+  ],
+  "Microraptor": [
+    "Animal Species",
+    "Bird-like Dinosaurs",
+    "Birds",
+    "Black Things",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Dromaeosaurids",
+    "Ends with TOR",
+    "Extinct Animals",
+    "Feathered Dinosaurs",
+    "Prehistoric Life",
+    "Saurischians",
+    "Small Dinosaurs",
+    "Starts with MIC",
+    "Theropods",
+    "Things That Fly",
+    "Transitional Fossils"
   ],
   "Microsoft": [
     "Companies",
@@ -16750,11 +17533,11 @@
     "Starts with MIL"
   ],
   "Millennium Falcon": [
-    "Birds",
     "Ends with CON",
     "Fictional Spaceships",
     "Star Wars Universe",
-    "Starts with MIL"
+    "Starts with MIL",
+    "Things That Fly"
   ],
   "Million Dollar Baby": [
     "2000s",
@@ -16915,14 +17698,20 @@
     "19th Century",
     "Adventure Stories",
     "Books",
+    "Carnivores",
     "Classic Literature",
     "Drama Stories",
     "Ends with ICK",
     "Fictional Animals",
+    "Fictional Whales",
+    "Individual Animals",
+    "Mammals",
     "Maritime Stories",
     "Movies",
     "Movies directed by John Huston",
     "Movies featuring Gregory Peck",
+    "Sea Creatures",
+    "Sea Mammals",
     "Starts with MOB",
     "Things American",
     "Whales"
@@ -17222,12 +18011,36 @@
     "Starts with MOR",
     "Things American"
   ],
+  "Mosasaurus": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Marine Reptiles",
+    "Prehistoric Life",
+    "Sea Creatures",
+    "Starts with MOS"
+  ],
   "Moth": [
     "Ends with OTH",
     "Insects",
     "Real Animals",
     "Starts with MOT",
     "Types of Animals"
+  ],
+  "Mothra": [
+    "1960s",
+    "20th Century",
+    "Ends with HRA",
+    "Fictional Animals",
+    "Fictional Insects",
+    "Fictional Monsters",
+    "Giant Monsters",
+    "Insects",
+    "Omnivores",
+    "Starts with MOT",
+    "Things That Fly"
   ],
   "Motocross": [
     "Ends with OSS",
@@ -17360,6 +18173,7 @@
     "Military Aircraft",
     "Starts with MUS",
     "Things American",
+    "Things That Fly",
     "World War II"
   ],
   "Mustard": [
@@ -17525,6 +18339,18 @@
     "Real People",
     "Starts with NAK",
     "Things Japanese"
+  ],
+  "Nala": [
+    "1990s",
+    "20th Century",
+    "Carnivores",
+    "Ends with ALA",
+    "Fictional Animals",
+    "Fictional Lions",
+    "Fictional Mammals",
+    "Lions",
+    "Mammals",
+    "Starts with NAL"
   ],
   "Namibia": [
     "Countries",
@@ -18691,6 +19517,7 @@
     "Ends with RCA",
     "Mammals",
     "Real Animals",
+    "Sea Creatures",
     "Sea Mammals",
     "Starts with ORC",
     "Types of Animals"
@@ -18767,6 +19594,18 @@
     "Things Italian",
     "Things Roman"
   ],
+  "Ostrich": [
+    "Animal Species",
+    "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
+    "Ends with ICH",
+    "Flightless Birds",
+    "Herbivores",
+    "Saurischians",
+    "Starts with OST",
+    "Theropods"
+  ],
   "Othello": [
     "1990s",
     "20th Century",
@@ -18842,12 +19681,18 @@
     "Video Games"
   ],
   "Owl": [
+    "Animal Species",
     "Birds",
     "Birds of Prey",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with OWL",
     "Predators",
     "Real Animals",
+    "Saurischians",
     "Starts with OWL",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Oxygen": [
@@ -18901,6 +19746,7 @@
     "20th Century",
     "Arcade Games",
     "Ends with MAN",
+    "Individual Animals",
     "Starts with PAC",
     "Things Japanese",
     "Video Game Characters",
@@ -19160,6 +20006,18 @@
     "Things Paraguayan",
     "WWII Allied Powers"
   ],
+  "Parasaurolophus": [
+    "Animal Species",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with HUS",
+    "Extinct Animals",
+    "Hadrosaurs",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with PAR"
+  ],
   "Parasite": [
     "2010s",
     "21st Century",
@@ -19190,6 +20048,18 @@
     "Starts with PAR",
     "Things French",
     "Trojan War"
+  ],
+  "Parrot": [
+    "Animal Species",
+    "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
+    "Ends with ROT",
+    "Omnivores",
+    "Saurischians",
+    "Starts with PAR",
+    "Theropods",
+    "Things That Fly"
   ],
   "Parthenon": [
     "Ancient Buildings",
@@ -19288,11 +20158,15 @@
   ],
   "Pelican": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with CAN",
     "NBA Teams",
     "Real Animals",
+    "Saurischians",
     "Sea Birds",
     "Starts with PEL",
+    "Theropods",
     "Types of Animals"
   ],
   "Pelmeni": [
@@ -19322,18 +20196,26 @@
   "Penguin": [
     "1940s",
     "20th Century",
+    "Animal Species",
     "Birds",
     "Black and White",
+    "Carnivores",
+    "Currently Living Animals",
     "DC Characters",
+    "Dinosaurs",
     "Ends with UIN",
     "Fictional People",
+    "Flightless Birds",
     "Men",
     "NHL Teams",
     "People",
     "Real Animals",
+    "Saurischians",
     "Sea Birds",
     "Starts with PEN",
     "Supervillains",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Penne": [
@@ -19482,11 +20364,31 @@
   ],
   "Petrel": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with REL",
     "Real Animals",
+    "Saurischians",
     "Sea Birds",
     "Starts with PET",
+    "Theropods",
     "Types of Animals"
+  ],
+  "Petrie": [
+    "1980s",
+    "20th Century",
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Ends with RIE",
+    "Extinct Animals",
+    "Fictional Animals",
+    "Fictional Pterosaurs",
+    "Prehistoric Life",
+    "Pterosaurs",
+    "Starts with PET",
+    "The Land Before Time",
+    "Things That Fly"
   ],
   "Peugeot": [
     "19th Century",
@@ -19557,6 +20459,8 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with NIX",
     "Fictional People",
     "Locations in North America",
@@ -19566,10 +20470,13 @@
     "People",
     "Place Names",
     "Red Things",
+    "Saurischians",
     "Starts with PHO",
     "State Capitals",
     "Superheroes",
+    "Theropods",
     "Things American",
+    "Things That Fly",
     "Video Games",
     "Women",
     "X-Men Characters"
@@ -19756,7 +20663,8 @@
     "Companies",
     "Ends with PER",
     "Starts with PIP",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Pirates of the Caribbean: At World's End": [
     "2000s",
@@ -19943,6 +20851,17 @@
     "Starts with PLA",
     "Things American",
     "War Stories"
+  ],
+  "Plesiosaurus": [
+    "Animal Species",
+    "Carnivores",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Jurassic Period",
+    "Marine Reptiles",
+    "Prehistoric Life",
+    "Sea Creatures",
+    "Starts with PLE"
   ],
   "Pluto": [
     "Disney Characters",
@@ -20483,6 +21402,18 @@
     "Starts with PRO",
     "Things Italian"
   ],
+  "Protoceratops": [
+    "Animal Species",
+    "Ceratopsians",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with OPS",
+    "Extinct Animals",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with PRO"
+  ],
   "Providence": [
     "Cities",
     "Cities in North America",
@@ -20525,6 +21456,28 @@
     "Thriller Films",
     "Thriller Stories"
   ],
+  "Pteranodon": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Ends with DON",
+    "Extinct Animals",
+    "Prehistoric Life",
+    "Pterosaurs",
+    "Starts with PTE",
+    "Things That Fly"
+  ],
+  "Pterodactyl": [
+    "Animal Species",
+    "Carnivores",
+    "Ends with TYL",
+    "Extinct Animals",
+    "Jurassic Period",
+    "Prehistoric Life",
+    "Pterosaurs",
+    "Starts with PTE",
+    "Things That Fly"
+  ],
   "Puck": [
     "Ends with UCK",
     "Folklore Figures",
@@ -20543,10 +21496,14 @@
   ],
   "Puffin": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with FIN",
     "Real Animals",
+    "Saurischians",
     "Sea Birds",
     "Starts with PUF",
+    "Theropods",
     "Types of Animals"
   ],
   "Pugio": [
@@ -20579,6 +21536,18 @@
     "Ends with SAR",
     "Radio Terms",
     "Starts with PUL"
+  ],
+  "Pumbaa": [
+    "1990s",
+    "20th Century",
+    "Ends with BAA",
+    "Fictional Animals",
+    "Fictional Mammals",
+    "Fictional Warthogs",
+    "Herbivores",
+    "Mammals",
+    "Starts with PUM",
+    "Warthogs"
   ],
   "Pumpernickel": [
     "Breads",
@@ -20753,6 +21722,17 @@
     "Starts with QUE",
     "Things Mexican"
   ],
+  "Quetzalcoatlus": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Ends with LUS",
+    "Extinct Animals",
+    "Prehistoric Life",
+    "Pterosaurs",
+    "Starts with QUE",
+    "Things That Fly"
+  ],
   "Quiche": [
     "Ends with CHE",
     "Foods",
@@ -20765,6 +21745,7 @@
     "Roman Numerals"
   ],
   "Rabbit": [
+    "Animal Species",
     "Ends with BIT",
     "Herbivores",
     "Mammals",
@@ -20781,6 +21762,18 @@
     "Ends with DON",
     "Noble Gases",
     "Starts with RAD"
+  ],
+  "Rafiki": [
+    "1990s",
+    "20th Century",
+    "Ends with IKI",
+    "Fictional Animals",
+    "Fictional Mammals",
+    "Fictional Mandrills",
+    "Mammals",
+    "Mandrills",
+    "Omnivores",
+    "Starts with RAF"
   ],
   "Raft": [
     "Ends with AFT",
@@ -20924,8 +21917,10 @@
     "Things Russian"
   ],
   "Rat": [
+    "Animal Species",
     "Ends with RAT",
     "Mammals",
+    "Omnivores",
     "Real Animals",
     "Starts with RAT",
     "Types of Animals"
@@ -20947,15 +21942,22 @@
     "Things French"
   ],
   "Raven": [
+    "Animal Species",
     "Associated with Edgar Allan Poe",
     "Birds",
     "Black Things",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with VEN",
     "NFL Teams",
+    "Omnivores",
     "Poems",
     "Predators",
     "Real Animals",
+    "Saurischians",
     "Starts with RAV",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Ravioli": [
@@ -21336,6 +22338,18 @@
     "Starts with REX",
     "Things Italian"
   ],
+  "Rhea": [
+    "Animal Species",
+    "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
+    "Ends with HEA",
+    "Flightless Birds",
+    "Herbivores",
+    "Saurischians",
+    "Starts with RHE",
+    "Theropods"
+  ],
   "Rhine": [
     "Ends with INE",
     "Rivers",
@@ -21481,15 +22495,22 @@
   "Robin": [
     "1940s",
     "20th Century",
+    "Animal Species",
     "Birds",
+    "Currently Living Animals",
     "DC Characters",
+    "Dinosaurs",
     "Ends with BIN",
     "Fictional People",
     "Men",
+    "Omnivores",
     "People",
     "Real Animals",
+    "Saurischians",
     "Starts with ROB",
     "Superheroes",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals"
   ],
   "Robin Hood": [
@@ -21609,6 +22630,19 @@
     "Starts with ROC",
     "Stories about Families",
     "Things American"
+  ],
+  "Rodan": [
+    "1950s",
+    "20th Century",
+    "Carnivores",
+    "Ends with DAN",
+    "Fictional Animals",
+    "Fictional Monsters",
+    "Fictional Reptiles",
+    "Giant Monsters",
+    "Reptiles",
+    "Starts with ROD",
+    "Things That Fly"
   ],
   "Rodeo": [
     "Cowboy Terms",
@@ -21861,11 +22895,24 @@
     "Things American"
   ],
   "Ruby": [
+    "1980s",
+    "20th Century",
+    "Animal Species",
+    "Cretaceous Period",
+    "Dinosaurs",
     "Ends with UBY",
+    "Extinct Animals",
+    "Fictional Animals",
+    "Fictional Dinosaurs",
     "Gemstones",
+    "Omnivores",
+    "Prehistoric Life",
     "Programming Languages",
     "Red Things",
-    "Starts with RUB"
+    "Saurischians",
+    "Starts with RUB",
+    "The Land Before Time",
+    "Theropods"
   ],
   "Rudder": [
     "Ends with DER",
@@ -22237,6 +23284,8 @@
     "20th Century",
     "Birds",
     "Birds of Prey",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with SAM",
     "Fictional People",
     "Men",
@@ -22244,7 +23293,9 @@
     "People",
     "Puppet Characters",
     "Real Animals",
+    "Saurischians",
     "Starts with SAM",
+    "Theropods",
     "Things American",
     "Types of Animals"
   ],
@@ -22735,17 +23786,22 @@
   "Seahawk": [
     "Birds",
     "Birds of Prey",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with AWK",
     "NFL Teams",
     "Predators",
     "Real Animals",
+    "Saurischians",
     "Starts with SEA",
+    "Theropods",
     "Types of Animals"
   ],
   "Seal": [
     "Ends with EAL",
     "Mammals",
     "Real Animals",
+    "Sea Creatures",
     "Sea Mammals",
     "Starts with SEA",
     "Types of Animals"
@@ -22837,7 +23893,8 @@
   "Serenity": [
     "Ends with ITY",
     "Fictional Spaceships",
-    "Starts with SER"
+    "Starts with SER",
+    "Things That Fly"
   ],
   "Serpico": [
     "1970s",
@@ -22976,11 +24033,15 @@
     "Things British"
   ],
   "Shark": [
+    "Animal Species",
+    "Carnivores",
+    "Currently Living Animals",
     "Ends with ARK",
     "Fish",
     "NHL Teams",
     "Predators",
     "Real Animals",
+    "Sea Creatures",
     "Starts with SHA",
     "Types of Animals"
   ],
@@ -22997,8 +24058,10 @@
     "Things Middle Eastern"
   ],
   "Sheep": [
+    "Animal Species",
     "Domesticated Animals",
     "Ends with EEP",
+    "Herbivores",
     "Real Animals",
     "Starts with SHE",
     "Types of Animals"
@@ -23094,7 +24157,8 @@
     "Companies",
     "Ends with SKY",
     "Starts with SIK",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Silver": [
     "2000s",
@@ -23114,6 +24178,18 @@
     "Movies featuring William Baldwin",
     "Starts with SIL",
     "Things American"
+  ],
+  "Simba": [
+    "1990s",
+    "20th Century",
+    "Carnivores",
+    "Ends with MBA",
+    "Fictional Animals",
+    "Fictional Lions",
+    "Fictional Mammals",
+    "Lions",
+    "Mammals",
+    "Starts with SIM"
   ],
   "Sin City": [
     "2000s",
@@ -23190,6 +24266,25 @@
     "Romance Stories",
     "Starts with SIN",
     "Things American"
+  ],
+  "Sinornithosaurus": [
+    "Animal Species",
+    "Bird-like Dinosaurs",
+    "Birds",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Dromaeosaurids",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Feathered Dinosaurs",
+    "Prehistoric Life",
+    "Saurischians",
+    "Small Dinosaurs",
+    "Starts with SIN",
+    "Theropods",
+    "Things That Fly",
+    "Transitional Fossils"
   ],
   "Sir John A. Macdonald": [
     "19th Century",
@@ -23378,6 +24473,16 @@
     "Songs by Nirvana",
     "Starts with SME"
   ],
+  "Smilodon": [
+    "Animal Species",
+    "Carnivores",
+    "Ends with DON",
+    "Extinct Animals",
+    "Mammals",
+    "Pleistocene Epoch",
+    "Prehistoric Life",
+    "Starts with SMI"
+  ],
   "Smoothie": [
     "Drinks",
     "Ends with HIE",
@@ -23401,6 +24506,18 @@
     "Chocolate Bars",
     "Ends with ERS",
     "Starts with SNI"
+  ],
+  "Snoopy": [
+    "1950s",
+    "20th Century",
+    "Dogs",
+    "Ends with OPY",
+    "Fictional Animals",
+    "Fictional Dogs",
+    "Fictional Mammals",
+    "Mammals",
+    "Omnivores",
+    "Starts with SNO"
   ],
   "Snow": [
     "Ends with NOW",
@@ -23594,7 +24711,11 @@
     "20th Century",
     "Ends with NIC",
     "Fictional Animals",
+    "Fictional Hedgehogs",
     "Hedgehogs",
+    "Individual Animals",
+    "Mammals",
+    "Omnivores",
     "Platform Games",
     "Starts with SON",
     "Things Japanese",
@@ -23912,9 +25033,13 @@
   ],
   "Sparrow": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with ROW",
     "Real Animals",
+    "Saurischians",
     "Starts with SPA",
+    "Theropods",
     "Types of Animals"
   ],
   "Spear": [
@@ -23985,6 +25110,35 @@
     "Superheroes",
     "Things American"
   ],
+  "Spike": [
+    "1980s",
+    "20th Century",
+    "Animal Species",
+    "Dinosaurs",
+    "Ends with IKE",
+    "Extinct Animals",
+    "Fictional Animals",
+    "Fictional Dinosaurs",
+    "Herbivores",
+    "Jurassic Period",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with SPI",
+    "Stegosaurs",
+    "The Land Before Time"
+  ],
+  "Spinosaurus": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with SPI",
+    "Theropods"
+  ],
   "Spirited Away": [
     "2000s",
     "21st Century",
@@ -24010,6 +25164,7 @@
     "Military Aircraft",
     "Starts with SPI",
     "Things British",
+    "Things That Fly",
     "World War II"
   ],
   "Split Pea Soup": [
@@ -24229,6 +25384,18 @@
     "Metals",
     "Starts with STE"
   ],
+  "Stegosaurus": [
+    "Animal Species",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Jurassic Period",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with STE",
+    "Stegosaurs"
+  ],
   "Stennis": [
     "Aircraft Carriers",
     "Cold War",
@@ -24283,6 +25450,7 @@
     "People",
     "Starts with STO",
     "Superheroes",
+    "Things That Fly",
     "Weather",
     "Women",
     "X-Men Characters"
@@ -24351,7 +25519,20 @@
     "Military Aircraft",
     "Starts with STU",
     "Things German",
+    "Things That Fly",
     "World War II"
+  ],
+  "Styracosaurus": [
+    "Animal Species",
+    "Ceratopsians",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with STY"
   ],
   "Subaru": [
     "1950s",
@@ -24532,7 +25713,8 @@
     "Sci-fi Stories",
     "Starts with SUP",
     "Superheroes",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Superstition": [
     "1970s",
@@ -24588,10 +25770,16 @@
     "Things Norwegian"
   ],
   "Swan": [
+    "Animal Species",
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with WAN",
     "Real Animals",
+    "Saurischians",
     "Starts with SWA",
+    "Theropods",
+    "Things That Fly",
     "Types of Animals",
     "White Things"
   ],
@@ -24711,6 +25899,18 @@
     "Republics",
     "Starts with SYR",
     "Things Syrian"
+  ],
+  "T-Rex": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with REX",
+    "Extinct Animals",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with T-R",
+    "Theropods"
   ],
   "TARDIS": [
     "Ends with DIS",
@@ -25228,10 +26428,14 @@
   ],
   "Tern": [
     "Birds",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with ERN",
     "Real Animals",
+    "Saurischians",
     "Sea Birds",
     "Starts with TER",
+    "Theropods",
     "Types of Animals"
   ],
   "Terra Nova": [
@@ -27023,6 +28227,18 @@
     "Things American",
     "Time Travel Stories"
   ],
+  "The Land Before Time": [
+    "1980s",
+    "20th Century",
+    "Animated Films",
+    "Children's Stories",
+    "Dinosaur Stories",
+    "Ends with IME",
+    "Family-Friendly Stories",
+    "Movies",
+    "Prehistoric Stories",
+    "Starts with THE"
+  ],
   "The Last Emperor": [
     "1980s",
     "20th Century",
@@ -28536,6 +29752,9 @@
     "Ends with LAR",
     "Family-Friendly Stories",
     "Fictional Animals",
+    "Fictional Insects",
+    "Herbivores",
+    "Individual Animals",
     "Insects",
     "Starts with THE",
     "Stories about Families",
@@ -28815,6 +30034,7 @@
     "People",
     "Starts with THO",
     "Superheroes",
+    "Things That Fly",
     "Weather"
   ],
   "Three Amigos": [
@@ -28879,6 +30099,7 @@
     "Military Aircraft",
     "Starts with THU",
     "Things American",
+    "Things That Fly",
     "World War II"
   ],
   "Tiananmen Square Massacre": [
@@ -28917,7 +30138,10 @@
     "Things American"
   ],
   "Tiger": [
+    "Animal Species",
     "Big Cats",
+    "Carnivores",
+    "Currently Living Animals",
     "Ends with GER",
     "MLB Teams",
     "Mammals",
@@ -28965,6 +30189,18 @@
     "Starts with TIM",
     "Things British",
     "Time Travel Stories"
+  ],
+  "Timon": [
+    "1990s",
+    "20th Century",
+    "Ends with MON",
+    "Fictional Animals",
+    "Fictional Mammals",
+    "Fictional Meerkats",
+    "Mammals",
+    "Meerkats",
+    "Omnivores",
+    "Starts with TIM"
   ],
   "Tiramisu": [
     "Desserts",
@@ -29319,12 +30555,34 @@
     "Starts with TRE",
     "Things Colombian"
   ],
+  "Triceratops": [
+    "Animal Species",
+    "Ceratopsians",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with OPS",
+    "Extinct Animals",
+    "Herbivores",
+    "Ornithischians",
+    "Prehistoric Life",
+    "Starts with TRI"
+  ],
   "Trifle": [
     "Desserts",
     "Ends with FLE",
     "Foods",
     "Starts with TRI",
     "Things British"
+  ],
+  "Trilobites": [
+    "Animal Species",
+    "Arthropods",
+    "Ends with TES",
+    "Extinct Animals",
+    "Omnivores",
+    "Paleozoic Era",
+    "Prehistoric Life",
+    "Starts with TRI"
   ],
   "Trinidad": [
     "Age of Sail",
@@ -29505,10 +30763,13 @@
     "Starts with TUR"
   ],
   "Turkey": [
+    "Animal Species",
     "Animals",
     "Birds",
     "Countries",
     "Countries in Asia",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with KEY",
     "Foods",
     "Locations in Asia",
@@ -29516,9 +30777,13 @@
     "Modern Countries",
     "NATO Countries",
     "NATO Members",
+    "Omnivores",
     "Place Names",
     "Republics",
+    "Saurischians",
     "Starts with TUR",
+    "Theropods",
+    "Things That Fly",
     "Things Turkish",
     "WWII Allied Powers"
   ],
@@ -29936,6 +31201,18 @@
     "Starts with USH",
     "Things American"
   ],
+  "Utahraptor": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with TOR",
+    "Extinct Animals",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with UTA",
+    "Theropods"
+  ],
   "Uzbekistan": [
     "Countries",
     "Countries in Asia",
@@ -29982,6 +31259,7 @@
     "Military Aircraft",
     "Starts with VAL",
     "Things Japanese",
+    "Things That Fly",
     "World War II"
   ],
   "Van Buren": [
@@ -30097,6 +31375,18 @@
     "Things American",
     "Warner Bros. Characters",
     "Women"
+  ],
+  "Velociraptor": [
+    "Animal Species",
+    "Carnivores",
+    "Cretaceous Period",
+    "Dinosaurs",
+    "Ends with TOR",
+    "Extinct Animals",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with VEL",
+    "Theropods"
   ],
   "Veloute": [
     "Ends with UTE",
@@ -30397,20 +31687,29 @@
     "Space Telescopes",
     "Star Trek",
     "Starts with VOY",
-    "Things American"
+    "Things American",
+    "Things That Fly"
   ],
   "Vulture": [
     "1960s",
     "20th Century",
+    "Animal Species",
+    "Birds",
     "Birds of Prey",
+    "Carnivores",
+    "Currently Living Animals",
+    "Dinosaurs",
     "Ends with URE",
     "Fictional People",
     "Marvel Characters",
     "Men",
     "People",
+    "Saurischians",
     "Spider-Verse Villains",
     "Starts with VUL",
-    "Supervillains"
+    "Supervillains",
+    "Theropods",
+    "Things That Fly"
   ],
   "WALL-E": [
     "3D Animated Films",
@@ -30459,6 +31758,7 @@
     "Ends with RUS",
     "Mammals",
     "Real Animals",
+    "Sea Creatures",
     "Sea Mammals",
     "Starts with WAL",
     "Types of Animals"
@@ -30731,6 +32031,7 @@
     "Ends with ALE",
     "Mammals",
     "Real Animals",
+    "Sea Creatures",
     "Sea Mammals",
     "Sea Monsters",
     "Starts with WHA",
@@ -30855,6 +32156,7 @@
     "Military Aircraft",
     "Starts with WIL",
     "Things American",
+    "Things That Fly",
     "World War II"
   ],
   "Wile E. Coyote": [
@@ -30943,6 +32245,10 @@
     "Ends with OOH",
     "Family-Friendly Stories",
     "Fictional Animals",
+    "Fictional Bears",
+    "Individual Animals",
+    "Mammals",
+    "Omnivores",
     "Starts with WIN",
     "Stories about Families",
     "Things British"
@@ -31012,6 +32318,9 @@
     "Starts with WIZ"
   ],
   "Wolf": [
+    "Animal Species",
+    "Carnivores",
+    "Currently Living Animals",
     "Ends with OLF",
     "Mammals",
     "Predators",
@@ -31058,6 +32367,7 @@
     "Red Things",
     "Starts with WON",
     "Superheroes",
+    "Things That Fly",
     "Women"
   ],
   "Wonderwall": [
@@ -31089,6 +32399,16 @@
     "Music Festivals",
     "Starts with WOO",
     "Things American"
+  ],
+  "Woolly Rhinoceros": [
+    "Animal Species",
+    "Ends with ROS",
+    "Extinct Animals",
+    "Herbivores",
+    "Mammals",
+    "Pleistocene Epoch",
+    "Prehistoric Life",
+    "Starts with WOO"
   ],
   "Working Girl": [
     "1980s",
@@ -31248,6 +32568,7 @@
     "Fictional Spaceships",
     "Star Wars Universe",
     "Starts with X-W",
+    "Things That Fly",
     "Video Games"
   ],
   "X-ray": [
@@ -31504,7 +32825,23 @@
     "Starts with ZAN",
     "Things Tanzanian"
   ],
+  "Zazu": [
+    "1990s",
+    "20th Century",
+    "Birds",
+    "Dinosaurs",
+    "Ends with AZU",
+    "Fictional Animals",
+    "Fictional Birds",
+    "Fictional Hornbills",
+    "Omnivores",
+    "Saurischians",
+    "Starts with ZAZ",
+    "Theropods",
+    "Things That Fly"
+  ],
   "Zebra": [
+    "Animal Species",
     "Black and White",
     "Ends with BRA",
     "Herbivores",
@@ -31536,6 +32873,7 @@
     "Philosophical Concepts",
     "Starts with ZER",
     "Things Japanese",
+    "Things That Fly",
     "World War II"
   ],
   "Zeta": [
