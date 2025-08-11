@@ -2038,5 +2038,45 @@
         "Pinta"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1890s",
+      "1930s",
+      "Ends with ING",
+      "Things French"
+    ],
+    "cols": [
+      "Famous Quotes",
+      "Men",
+      "Musical Films",
+      "Sci-fi Stories"
+    ],
+    "words": [
+      [
+        "Elementary, my dear Watson",
+        "Cleveland",
+        "The Jungle Book",
+        "The Time Machine"
+      ],
+      [
+        "Nothing to fear but fear itself",
+        "Hoover",
+        "The Wizard of Oz",
+        "Brave New World"
+      ],
+      [
+        "The play's the thing",
+        "Hawking",
+        "The Lion King",
+        "The Thing"
+      ],
+      [
+        "L'etat c'est moi",
+        "Louis Pasteur",
+        "Les Misérables",
+        "The Fifth Element"
+      ]
+    ]
   }
 ]
