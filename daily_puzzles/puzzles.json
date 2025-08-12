@@ -2278,5 +2278,45 @@
         "Mary Poppins Returns"
       ]
     ]
+  },
+  {
+    "rows": [
+      "16th Century",
+      "19th Century",
+      "Things Greek",
+      "Things Italian"
+    ],
+    "cols": [
+      "Classic Literature",
+      "Events",
+      "Scientists",
+      "Single Name Writers"
+    ],
+    "words": [
+      [
+        "Journey to the West",
+        "The Protestant Reformation",
+        "Copernicus",
+        "Shakespeare"
+      ],
+      [
+        "Call me Ishmael",
+        "The Franco-Prussian War",
+        "Darwin",
+        "Poe"
+      ],
+      [
+        "The Iliad",
+        "The Fall of Constantinople",
+        "Aristotle",
+        "Homer"
+      ],
+      [
+        "The Divine Comedy",
+        "Caesar crosses the Rubicon",
+        "Galileo",
+        "Dante"
+      ]
+    ]
   }
 ]
