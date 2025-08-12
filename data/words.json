@@ -1043,6 +1043,17 @@
     "Starts with AND",
     "Things Italian"
   ],
+  "Andrew": [
+    "1st Century",
+    "Apostles",
+    "Ends with REW",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Saints",
+    "Starts with AND"
+  ],
   "Angel": [
     "1990s",
     "20th Century",
@@ -2447,6 +2458,17 @@
     "Starts with BAR",
     "Things Polish"
   ],
+  "Bartholomew": [
+    "1st Century",
+    "Apostles",
+    "Ends with MEW",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Saints",
+    "Starts with BAR"
+  ],
   "Baseball": [
     "Ball Sports",
     "Ends with ALL",
@@ -2705,10 +2727,11 @@
     "Starts with BEA"
   ],
   "Beatles": [
-    "Band Namesakes",
+    "Bands",
     "Ends with LES",
     "Music",
     "Starts with BEA",
+    "The Beatles",
     "Things British"
   ],
   "Beauty and the Beast": [
@@ -3073,6 +3096,7 @@
   ],
   "Beyonce": [
     "2000s",
+    "2010s",
     "20th Century",
     "21st Century",
     "Ends with NCE",
@@ -7920,6 +7944,8 @@
   "Drake": [
     "16th Century",
     "2000s",
+    "2010s",
+    "2020s",
     "21st Century",
     "Birds",
     "Currently Living Animals",
@@ -10363,12 +10389,21 @@
     "Cities in Italy",
     "Ends with NOA",
     "Locations in Europe",
-    "Starts with GEN"
+    "Starts with GEN",
+    "Things Italian"
   ],
   "George": [
+    "1960s",
+    "1970s",
+    "Beatles Members",
     "Ends with RGE",
+    "Music",
+    "Musicians",
+    "Rock",
     "Saints",
-    "Starts with GEO"
+    "Starts with GEO",
+    "The Beatles",
+    "Things British"
   ],
   "George Eliot": [
     "19th Century",
@@ -11166,7 +11201,7 @@
     "Time Travel Stories"
   ],
   "Grover": [
-    "2000s",
+    "1970s",
     "20th Century",
     "21st Century",
     "Ends with VER",
@@ -13697,6 +13732,17 @@
     "Things American",
     "Things British"
   ],
+  "James the Less": [
+    "1st Century",
+    "Apostles",
+    "Ends with ESS",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Saints",
+    "Starts with JAM"
+  ],
   "Jane Austen": [
     "19th Century",
     "Classic Literature",
@@ -13989,17 +14035,27 @@
     "Things American"
   ],
   "John": [
-    "2000s",
+    "1960s",
+    "1970s",
+    "1st Century",
     "20th Century",
     "21st Century",
+    "Apostles",
+    "Beatles Members",
     "Ends with OHN",
     "Men",
+    "Music",
+    "Musicians",
     "People",
     "Popes",
     "Real People",
+    "Religious Figures",
+    "Rock",
     "Saints",
     "Starts with JOH",
-    "Things American"
+    "The Beatles",
+    "Things American",
+    "Things British"
   ],
   "John Jacob Astor": [
     "1910s",
@@ -14084,6 +14140,8 @@
     "Things American"
   ],
   "Jordan": [
+    "1980s",
+    "1990s",
     "2000s",
     "20th Century",
     "21st Century",
@@ -14158,6 +14216,16 @@
     "Real People",
     "Starts with JUA",
     "Things American"
+  ],
+  "Judas Iscariot": [
+    "1st Century",
+    "Apostles",
+    "Ends with IOT",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Starts with JUD"
   ],
   "Judo": [
     "Combat Sports",
@@ -14880,6 +14948,7 @@
   ],
   "Kobe": [
     "2000s",
+    "2010s",
     "20th Century",
     "21st Century",
     "Athletes",
@@ -15493,8 +15562,10 @@
     "Tools"
   ],
   "Leo": [
-    "2000s",
-    "20th Century",
+    "1880s",
+    "1890s",
+    "19th Century",
+    "2020s",
     "21st Century",
     "Constellations",
     "Ends with LEO",
@@ -16411,6 +16482,8 @@
     "US Presidents"
   ],
   "Madonna": [
+    "1980s",
+    "1990s",
     "2000s",
     "20th Century",
     "21st Century",
@@ -16770,6 +16843,18 @@
     "Video Game Characters",
     "Video Games"
   ],
+  "Mark David Chapman": [
+    "1980s",
+    "20th Century",
+    "Assassins",
+    "Ends with MAN",
+    "Men",
+    "People",
+    "Real People",
+    "Starts with MAR",
+    "The Beatles",
+    "Things American"
+  ],
   "Marker": [
     "Ends with KER",
     "School",
@@ -17006,6 +17091,17 @@
     "Place Names",
     "Starts with MAT",
     "Things Swiss"
+  ],
+  "Matthew": [
+    "1st Century",
+    "Apostles",
+    "Ends with HEW",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Saints",
+    "Starts with MAT"
   ],
   "Matzo Ball": [
     "Ends with ALL",
@@ -19220,7 +19316,7 @@
     "Things British"
   ],
   "Olive": [
-    "2000s",
+    "1920s",
     "20th Century",
     "21st Century",
     "Colors",
@@ -20086,17 +20182,28 @@
     "Things Jewish"
   ],
   "Paul": [
-    "2000s",
+    "1960s",
+    "1970s",
+    "1980s",
+    "1st Century",
     "20th Century",
     "21st Century",
+    "Apostles",
+    "Beatles Members",
     "Ends with AUL",
     "Men",
+    "Music",
+    "Musicians",
     "People",
     "Popes",
     "Real People",
+    "Religious Figures",
+    "Rock",
     "Saints",
     "Starts with PAU",
-    "Things American"
+    "The Beatles",
+    "Things American",
+    "Things British"
   ],
   "Pawn": [
     "Board Game Equipment",
@@ -20300,15 +20407,32 @@
     "Starts with PES",
     "Things Italian"
   ],
+  "Pete Best": [
+    "1960s",
+    "Beatles Members",
+    "Ends with EST",
+    "Men",
+    "Music",
+    "Musicians",
+    "People",
+    "Real People",
+    "Rock",
+    "Starts with PET",
+    "The Beatles",
+    "Things British"
+  ],
   "Peter": [
+    "1st Century",
     "2000s",
     "20th Century",
     "21st Century",
+    "Apostles",
     "Ends with TER",
     "Men",
     "People",
     "Popes",
     "Real People",
+    "Religious Figures",
     "Saints",
     "Starts with PET",
     "Things American"
@@ -20412,6 +20536,17 @@
   "Phi": [
     "Ends with PHI",
     "Greek Letters",
+    "Starts with PHI"
+  ],
+  "Philip": [
+    "1st Century",
+    "Apostles",
+    "Ends with LIP",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Saints",
     "Starts with PHI"
   ],
   "Philippines": [
@@ -21266,6 +21401,8 @@
     "Time Travel Stories"
   ],
   "Prince": [
+    "1980s",
+    "1990s",
     "2000s",
     "20th Century",
     "21st Century",
@@ -22405,6 +22542,21 @@
     "Ends with FLE",
     "Starts with RIF",
     "Weapons"
+  ],
+  "Ringo": [
+    "1960s",
+    "1970s",
+    "Beatles Members",
+    "Ends with NGO",
+    "Men",
+    "Music",
+    "Musicians",
+    "People",
+    "Real People",
+    "Rock",
+    "Starts with RIN",
+    "The Beatles",
+    "Things British"
   ],
   "Rise of the Guardians": [
     "3D Animated Films",
@@ -23972,13 +24124,15 @@
     "X-Men Characters"
   ],
   "Shaggy": [
-    "2000s",
+    "1960s",
     "20th Century",
     "21st Century",
     "Ends with GGY",
     "Fictional Characters",
     "Fictional People",
     "Men",
+    "Music",
+    "Musicians",
     "People",
     "Scooby-Doo Characters",
     "Starts with SHA",
@@ -24176,6 +24330,17 @@
     "Fictional Mammals",
     "Lions",
     "Mammals",
+    "Starts with SIM"
+  ],
+  "Simon": [
+    "1st Century",
+    "Apostles",
+    "Ends with MON",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Saints",
     "Starts with SIM"
   ],
   "Sin City": [
@@ -26065,7 +26230,8 @@
     "Volcanoes"
   ],
   "Tanaka": [
-    "2000s",
+    "2010s",
+    "2020s",
     "20th Century",
     "21st Century",
     "Baseball Players",
@@ -26355,7 +26521,8 @@
     "Things Mexican"
   ],
   "Teresa": [
-    "2000s",
+    "1980s",
+    "1990s",
     "20th Century",
     "21st Century",
     "Ends with ESA",
@@ -26488,6 +26655,17 @@
     "Modern Buildings",
     "Starts with TEX",
     "Things American"
+  ],
+  "Thaddeus": [
+    "1st Century",
+    "Apostles",
+    "Ends with EUS",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Saints",
+    "Starts with THA"
   ],
   "Thailand": [
     "Constitutional Monarchies",
@@ -29977,6 +30155,17 @@
     "Things Roman",
     "Wars"
   ],
+  "Thomas": [
+    "1st Century",
+    "Apostles",
+    "Ends with MAS",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Saints",
+    "Starts with THO"
+  ],
   "Thomas Andrews": [
     "1910s",
     "20th Century",
@@ -31544,7 +31733,7 @@
     "Things Indian"
   ],
   "Violet": [
-    "2000s",
+    "1960s",
     "20th Century",
     "21st Century",
     "Colors",
@@ -31889,6 +32078,8 @@
     "War Stories"
   ],
   "Wayne Gretzky": [
+    "1980s",
+    "1990s",
     "2000s",
     "20th Century",
     "21st Century",
@@ -32466,10 +32657,10 @@
     "Summer Olympic Sports",
     "Things American"
   ],
-  "Wright": [
+  "Wright Brothers": [
     "20th Century",
     "Aviation Pioneers",
-    "Ends with GHT",
+    "Ends with ERS",
     "Historical Figures",
     "Inventors",
     "Men",
