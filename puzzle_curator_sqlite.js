@@ -295,13 +295,31 @@ function findPuzzleWithNoRecentCategories(db, recentCategories) {
                     resolve(null);
                     return;
                 }
-                resolve({
+
+                const puzzle = {
                     rows: [row.row0, row.row1, row.row2, row.row3],
                     cols: [row.col0, row.col1, row.col2, row.col3],
                     hash: row.puzzle_hash,
                     timestamp: row.timestamp,
                     qualityScore: row.q
-                });
+                };
+
+                // Validate the puzzle before returning it
+                if (!validatePuzzle(puzzle)) {
+                    console.log(`⚠️  Found invalid puzzle in secret sauce search, deleting from database...`);
+
+                    // Delete the invalid puzzle from database
+                    deletePuzzleFromDatabase(db, puzzle.hash).then(() => {
+                        console.log(`🗑️  Deleted invalid puzzle ${puzzle.hash.substring(0, 8)}...`);
+                        resolve(null); // Return null to indicate no valid puzzle found
+                    }).catch(err => {
+                        console.error("Error deleting invalid puzzle:", err.message);
+                        resolve(null); // Return null even if deletion fails
+                    });
+                    return;
+                }
+
+                resolve(puzzle);
             } else {
                 resolve(null);
             }
@@ -1265,7 +1283,7 @@ async function main() {
                 const reverseHash = computePuzzleHash(puzzle.cols, puzzle.rows);
                 usedHashes.add(forwardHash);
                 usedHashes.add(reverseHash);
-            } catch {}
+            } catch { }
 
             // Update usage counts
             for (const category of allCategories) {
