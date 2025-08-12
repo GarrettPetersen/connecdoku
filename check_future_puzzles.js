@@ -62,6 +62,27 @@ for (let i = currentPuzzleIndex; i < puzzlesData.length; i++) {
   const score = computePuzzleScore(rows, cols);
   const emoji = scoreEmoji(score);
   console.log(`Quality score: ${score.toFixed(2)} ${emoji}`);
+  
+  // Soft warning if any categories or words are shared with the previous day
+  if (i > 0) {
+    const prev = puzzlesData[i - 1];
+    if (prev) {
+      const prevCategories = new Set([...(prev.rows || []), ...(prev.cols || [])]);
+      const currCategories = new Set([...rows, ...cols]);
+      const sharedCategories = [...currCategories].filter(c => prevCategories.has(c));
+
+      const prevWords = new Set((prev.words || []).flat());
+      const currWords = new Set((words || []).flat());
+      const sharedWords = [...currWords].filter(w => prevWords.has(w));
+
+      if (sharedCategories.length > 0) {
+        console.log(`⚠️ Shares ${sharedCategories.length} categor${sharedCategories.length === 1 ? 'y' : 'ies'} with previous day: ${sharedCategories.join(', ')}`);
+      }
+      if (sharedWords.length > 0) {
+        console.log(`⚠️ Shares ${sharedWords.length} word${sharedWords.length === 1 ? '' : 's'} with previous day: ${sharedWords.join(', ')}`);
+      }
+    }
+  }
   console.log('');
   
   let hasErrors = false;
