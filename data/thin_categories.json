@@ -746,9 +746,6 @@
   "Movies featuring William Atherton": [
     "Die Hard 2"
   ],
-  "Permian Period": [
-    "Dimetrodon"
-  ],
   "Synapsids": [
     "Dimetrodon"
   ],
@@ -3116,9 +3113,6 @@
   "Movies featuring Tom Hardy": [
     "The Revenant"
   ],
-  "4th Century": [
-    "The Roman Empire"
-  ],
   "Movies directed by John Pasquin": [
     "The Santa Clause"
   ],
@@ -3633,6 +3627,10 @@
     "Another Brick in the Wall",
     "Comfortably Numb"
   ],
+  "Hominins": [
+    "Ardipithecus",
+    "Australopithecus"
+  ],
   "Movies directed by Hiromasa Yonebayashi": [
     "Arrietty",
     "When Marnie Was There"
@@ -3656,6 +3654,10 @@
   "Movies featuring Hayden Christensen": [
     "Attack of the Clones",
     "Revenge of the Sith"
+  ],
+  "Holocene Epoch": [
+    "Aurochs",
+    "Dodo"
   ],
   "Movies featuring Mark Ruffalo": [
     "Avengers: Endgame",
@@ -3833,6 +3835,10 @@
     "Concordia",
     "Costa Smeralda"
   ],
+  "4th Century": [
+    "Constantine the Great",
+    "The Roman Empire"
+  ],
   "Italian Line": [
     "Conte di Savoia",
     "Rex"
@@ -3897,6 +3903,10 @@
     "Die Hard with a Vengeance",
     "The Lion King"
   ],
+  "Permian Period": [
+    "Dimetrodon",
+    "Permian-Triassic Extinction"
+  ],
   "Antarctic Exploration": [
     "Discovery",
     "Terra Nova"
@@ -3926,10 +3936,6 @@
     "Zazu"
   ],
   "Fictional Primates": [
-    "Donkey Kong",
-    "King Kong"
-  ],
-  "Primates": [
     "Donkey Kong",
     "King Kong"
   ],
@@ -3964,10 +3970,6 @@
   "Action Role-Playing Games": [
     "Elden Ring",
     "The Witcher"
-  ],
-  "3rd Century BC": [
-    "Emperor Qin Shi Huang",
-    "Qin"
   ],
   "Captain Cook": [
     "Endeavour",
@@ -4144,6 +4146,10 @@
   "Movies directed by James Ivory": [
     "Howard's End",
     "The Remains of the Day"
+  ],
+  "Oligocene Epoch": [
+    "Hyaenodon",
+    "Paraceratherium"
   ],
   "Movies featuring Takashi Shimura": [
     "Ikiru",
@@ -4428,6 +4434,10 @@
   "Movies featuring Willem Dafoe": [
     "Platoon",
     "Spider-Man"
+  ],
+  "Paleocene Epoch": [
+    "Plesiadapis",
+    "Titanoboa"
   ],
   "Movies directed by Alfred Hitchcock": [
     "Psycho",
@@ -4820,11 +4830,6 @@
     "Milky Way",
     "Sun"
   ],
-  "Paleozoic Era": [
-    "Brachchiopods",
-    "Graptolites",
-    "Trilobites"
-  ],
   "Movies directed by David Lean": [
     "Bridge on the River Kwai",
     "Brief Encounter",
@@ -4935,6 +4940,11 @@
     "Othello",
     "The Third Man"
   ],
+  "Snakes": [
+    "Cobra",
+    "Python",
+    "Titanoboa"
+  ],
   "Coffee": [
     "Coffee",
     "Java",
@@ -4995,6 +5005,11 @@
     "The Man Who Fell to Earth",
     "Walkabout"
   ],
+  "Primates": [
+    "Donkey Kong",
+    "King Kong",
+    "Plesiadapis"
+  ],
   "Movies directed by Mike Newell": [
     "Donnie Brasco",
     "Four Weddings and a Funeral",
@@ -5049,6 +5064,16 @@
     "Emerald",
     "Ruby",
     "Sapphire"
+  ],
+  "3rd Century BC": [
+    "Emperor Qin Shi Huang",
+    "Jing Ke",
+    "Qin"
+  ],
+  "Warring States Period": [
+    "Emperor Qin Shi Huang",
+    "Jing Ke",
+    "Sun Tzu"
   ],
   "Movies featuring John Leguizamo": [
     "Encanto",
@@ -5154,11 +5179,6 @@
     "Kurosawa",
     "Miyazaki",
     "Ozu"
-  ],
-  "Emperors": [
-    "Li Jiancheng",
-    "Li Shimin",
-    "Li Yuanji"
   ],
   "Norse Mythology": [
     "Loki",

@@ -1151,7 +1151,11 @@
   "1st Century": [
     "Andrew",
     "Arch of Titus",
+    "Augustus",
     "Bartholomew",
+    "Caligula",
+    "Cassius Chaerea",
+    "Claudius",
     "Colosseum",
     "Herculaneum",
     "James the Less",
@@ -1159,6 +1163,7 @@
     "Judas Iscariot",
     "Mary",
     "Matthew",
+    "Nero",
     "Paul",
     "Peter",
     "Philip",
@@ -1168,7 +1173,9 @@
     "Thaddeus",
     "The Roman Empire",
     "Thomas",
+    "Tiberius",
     "Varus, give me back my legions",
+    "Vespasian",
     "Vesuvius",
     "Wang Mang Usurpation"
   ],
@@ -1194,7 +1201,10 @@
     "Friends, Romans, countrymen",
     "Han Wudi's Defeat of the Xiongnu",
     "Ides of March",
+    "Pompey",
     "Second Triumvirate",
+    "Servilius Casca",
+    "Sulla",
     "The Roman Empire",
     "Third Servile War",
     "Veni, vidi, vici"
@@ -2487,10 +2497,15 @@
   ],
   "2nd Century": [
     "Circus Maximus",
+    "Commodus",
     "Galen",
+    "Hadrian",
     "Hadrian's Wall",
+    "Marcus Aurelius",
+    "Narcissus the Wrestler",
     "Pantheon",
-    "The Roman Empire"
+    "The Roman Empire",
+    "Trajan"
   ],
   "2nd Century BC": [
     "Chu–Han Contention",
@@ -2539,9 +2554,11 @@
   ],
   "3rd Century BC": [
     "Emperor Qin Shi Huang",
+    "Jing Ke",
     "Qin"
   ],
   "4th Century": [
+    "Constantine the Great",
     "The Roman Empire"
   ],
   "4th Century BC": [
@@ -3086,18 +3103,35 @@
   ],
   "Ancient Figures": [
     "Aristotle",
+    "Augustus",
     "Brutus",
     "Caesar",
+    "Caligula",
     "Cassius",
+    "Cassius Chaerea",
     "Cicero",
+    "Claudius",
+    "Commodus",
     "Confucius",
+    "Constantine the Great",
     "Emperor Qin Shi Huang",
     "Emperor Wu of Han",
     "Guan Yu",
+    "Hadrian",
+    "Jing Ke",
+    "Marcus Aurelius",
+    "Narcissus the Wrestler",
+    "Nero",
     "Pharaoh",
     "Plato",
+    "Pompey",
+    "Servilius Casca",
     "Socrates",
-    "Sun Tzu"
+    "Sulla",
+    "Sun Tzu",
+    "Tiberius",
+    "Trajan",
+    "Vespasian"
   ],
   "Ancient Rulers": [
     "Cleopatra",
@@ -3114,11 +3148,17 @@
   "Animal Species": [
     "Albatross",
     "Allosaurus",
+    "Ambulocetus",
     "Ammonites",
     "Ankylosaurus",
+    "Anomalocaris",
     "Apatosaurus",
     "Archaeopteryx",
+    "Ardipithecus",
     "Argentinosaurus",
+    "Aurochs",
+    "Australopithecus",
+    "Basilosaurus",
     "Bear",
     "Bee",
     "Blue Jay",
@@ -3130,21 +3170,21 @@
     "Carnotaurus",
     "Cassowary",
     "Cat",
-    "Cera",
     "Chasmosaurus",
     "Chicken",
-    "Chomper",
+    "Coelophysis",
     "Confuciusornis",
     "Corythosaurus",
     "Cow",
     "Crow",
     "Deinonychus",
+    "Deinotherium",
     "Dimetrodon",
     "Diplodocus",
     "Dire Wolf",
+    "Dodo",
     "Dog",
     "Dolphin",
-    "Ducky",
     "Eagle",
     "Edmontosaurus",
     "Elasmosaurus",
@@ -3153,32 +3193,38 @@
     "Euoplocephalus",
     "Falcon",
     "Fox",
+    "Gastornis",
     "Giganotosaurus",
     "Goat",
     "Graptolites",
     "Great White Shark",
     "Ground Sloth",
+    "Hallucigenia",
     "Hawk",
     "Horse",
     "Humpback Whale",
+    "Hyaenodon",
     "Ichthyosaurus",
     "Kentrosaurus",
     "Killer Whale",
     "Kiwi",
     "Lambeosaurus",
     "Lion",
-    "Littlefoot",
+    "Livyatan",
     "Macaw",
     "Mammoth",
     "Megalodon",
     "Microraptor",
     "Mosasaurus",
+    "Opabinia",
     "Ostrich",
     "Owl",
+    "Paraceratherium",
     "Parasaurolophus",
     "Parrot",
     "Penguin",
-    "Petrie",
+    "Plateosaurus",
+    "Plesiadapis",
     "Plesiosaurus",
     "Protoceratops",
     "Pteranodon",
@@ -3189,19 +3235,21 @@
     "Raven",
     "Rhea",
     "Robin",
-    "Ruby",
     "Shark",
     "Sheep",
+    "Shonisaurus",
     "Sinornithosaurus",
     "Smilodon",
-    "Spike",
     "Spinosaurus",
     "Stegosaurus",
     "Styracosaurus",
     "Swan",
     "T-Rex",
+    "Tanystropheus",
     "Tiger",
+    "Titanoboa",
     "Triceratops",
+    "Trilobite",
     "Trilobites",
     "Turkey",
     "Utahraptor",
@@ -3354,10 +3402,12 @@
     "Beetle",
     "Butterfly",
     "Crab",
+    "Hallucigenia",
     "Lobster",
     "Scorpion",
     "Spider",
     "Tarantula",
+    "Trilobite",
     "Trilobites"
   ],
   "Artists": [
@@ -3387,7 +3437,8 @@
     "Et tu, Brute?",
     "Ides of March",
     "Pugio",
-    "Rome"
+    "Rome",
+    "Servilius Casca"
   ],
   "Assassination of JFK": [
     "Carcano Model 38",
@@ -3410,16 +3461,20 @@
     "Black Widow",
     "Brutus",
     "Cassius",
+    "Cassius Chaerea",
     "Charlotte Corday",
     "Ezio Auditore",
     "Gavrilo Princip",
     "Guy Fawkes",
+    "Jing Ke",
     "John Wilkes Booth",
     "Lee Harvey Oswald",
     "Luigi",
     "Mark David Chapman",
     "Mehmet Ali Agca",
+    "Narcissus the Wrestler",
     "Robert Catesby",
+    "Servilius Casca",
     "Sirhan Sirhan"
   ],
   "Associated with Edgar Allan Poe": [
@@ -3738,6 +3793,7 @@
     "Confuciusornis",
     "Cormorant",
     "Crow",
+    "Dodo",
     "Donald Duck",
     "Drake",
     "Eagle",
@@ -3745,6 +3801,7 @@
     "Falcon",
     "Flamingo",
     "Gannet",
+    "Gastornis",
     "Gull",
     "Hawk",
     "Hummingbird",
@@ -4252,6 +4309,13 @@
   "Cambodian Architecture": [
     "Angkor Wat"
   ],
+  "Cambrian Period": [
+    "Anomalocaris",
+    "Cambrian Explosion",
+    "Hallucigenia",
+    "Opabinia",
+    "Trilobite"
+  ],
   "Camera Companies": [
     "Canon",
     "Fuji",
@@ -4351,8 +4415,11 @@
   ],
   "Carnivores": [
     "Allosaurus",
+    "Ambulocetus",
     "Ammonites",
+    "Anomalocaris",
     "Archaeopteryx",
+    "Basilosaurus",
     "Bear",
     "Bowser",
     "Carnotaurus",
@@ -4367,15 +4434,18 @@
     "Fox",
     "Gamera",
     "Garfield",
+    "Gastornis",
     "Giganotosaurus",
     "Godzilla",
     "Great White Shark",
     "Hawk",
     "Humpback Whale",
+    "Hyaenodon",
     "Ichthyosaurus",
     "Killer Whale",
     "King Ghidorah",
     "Lion",
+    "Livyatan",
     "MechaGodzilla",
     "Megalodon",
     "Microraptor",
@@ -4390,12 +4460,15 @@
     "Quetzalcoatlus",
     "Rodan",
     "Shark",
+    "Shonisaurus",
     "Simba",
     "Sinornithosaurus",
     "Smilodon",
     "Spinosaurus",
     "T-Rex",
+    "Tanystropheus",
     "Tiger",
+    "Titanoboa",
     "Utahraptor",
     "Velociraptor",
     "Vulture",
@@ -6011,27 +6084,22 @@
     "Ankylosaurus",
     "Argentinosaurus",
     "Carnotaurus",
-    "Cera",
     "Chasmosaurus",
-    "Chomper",
+    "Chicxulub Impact",
     "Confuciusornis",
     "Corythosaurus",
     "Deinonychus",
-    "Ducky",
     "Edmontosaurus",
     "Elasmosaurus",
     "Euoplocephalus",
     "Giganotosaurus",
     "Lambeosaurus",
-    "Littlefoot",
     "Microraptor",
     "Mosasaurus",
     "Parasaurolophus",
-    "Petrie",
     "Protoceratops",
     "Pteranodon",
     "Quetzalcoatlus",
-    "Ruby",
     "Sinornithosaurus",
     "Spinosaurus",
     "Styracosaurus",
@@ -6346,6 +6414,7 @@
     "Chasmosaurus",
     "Chicken",
     "Chomper",
+    "Coelophysis",
     "Confuciusornis",
     "Cormorant",
     "Corythosaurus",
@@ -6381,6 +6450,7 @@
     "Penguin",
     "Petrel",
     "Phoenix",
+    "Plateosaurus",
     "Protoceratops",
     "Puffin",
     "Raptor",
@@ -6420,6 +6490,7 @@
   "Disasters": [
     "Challenger",
     "Chernobyl",
+    "Chicxulub Impact",
     "Concordia",
     "Deepwater Horizon",
     "Empress of Ireland",
@@ -6430,12 +6501,14 @@
     "Katrina",
     "Krakatoa",
     "Lusitania",
+    "Permian-Triassic Extinction",
     "Pompeii",
     "Tambora",
     "The Chernobyl Disaster",
     "The Dust Bowl",
     "The Titanic Disaster",
-    "Titanic"
+    "Titanic",
+    "Toba Supereruption"
   ],
   "Disco": [
     "Bee Gees"
@@ -7194,9 +7267,20 @@
     "Hound Dog"
   ],
   "Emperors": [
+    "Augustus",
+    "Caligula",
+    "Claudius",
+    "Commodus",
+    "Constantine the Great",
+    "Hadrian",
     "Li Jiancheng",
     "Li Shimin",
-    "Li Yuanji"
+    "Li Yuanji",
+    "Marcus Aurelius",
+    "Nero",
+    "Tiberius",
+    "Trajan",
+    "Vespasian"
   ],
   "Empire Building": [
     "The British Empire",
@@ -7240,6 +7324,9 @@
     "Ghostbusters II",
     "The Godfather Part II",
     "World War II"
+  ],
+  "Ends with  KE": [
+    "Jing Ke"
   ],
   "Ends with  MI": [
     "Banh Mi"
@@ -7403,6 +7490,7 @@
     "Taco"
   ],
   "Ends with ACT": [
+    "Chicxulub Impact",
     "Warsaw Pact"
   ],
   "Ends with ADA": [
@@ -8098,6 +8186,9 @@
   "Ends with BMW": [
     "BMW"
   ],
+  "Ends with BOA": [
+    "Titanoboa"
+  ],
   "Ends with BOK": [
     "Lombok"
   ],
@@ -8210,6 +8301,9 @@
     "Gazpacho",
     "Psycho"
   ],
+  "Ends with CHS": [
+    "Aurochs"
+  ],
   "Ends with CHT": [
     "Borscht",
     "Yacht"
@@ -8275,6 +8369,8 @@
     "Buttercup"
   ],
   "Ends with CUS": [
+    "Ardipithecus",
+    "Australopithecus",
     "Copernicus",
     "Diplodocus"
   ],
@@ -8311,6 +8407,9 @@
     "Rodan",
     "South Sudan",
     "Sudan"
+  ],
+  "Ends with DAO": [
+    "Guandao"
   ],
   "Ends with DAR": [
     "Cedar"
@@ -8427,6 +8526,7 @@
   "Ends with DON": [
     "Armageddon",
     "Dimetrodon",
+    "Hyaenodon",
     "London",
     "Megalodon",
     "Poseidon",
@@ -8462,6 +8562,9 @@
   ],
   "Ends with DRO": [
     "San Pedro"
+  ],
+  "Ends with DUS": [
+    "Commodus"
   ],
   "Ends with E 1": [
     "Kill Bill: Volume 1"
@@ -8510,6 +8613,7 @@
   "Ends with EAT": [
     "Beat",
     "Blood, toil, tears and sweat",
+    "Constantine the Great",
     "Heat",
     "Montreal Smoked Meat",
     "Seat"
@@ -8760,6 +8864,7 @@
   "Ends with ERO": [
     "Cicero",
     "Hero",
+    "Nero",
     "Zero"
   ],
   "Ends with ERP": [
@@ -8881,6 +8986,7 @@
     "Odysseus",
     "Perseus",
     "Statue of Zeus",
+    "Tanystropheus",
     "Thaddeus",
     "Theseus",
     "Zeus"
@@ -9262,10 +9368,12 @@
     "Siam"
   ],
   "Ends with IAN": [
+    "Hadrian",
     "Italian",
     "Marvin the Martian",
     "Prince Caspian",
-    "The Plague of Justinian"
+    "The Plague of Justinian",
+    "Vespasian"
   ],
   "Ends with IAR": [
     "Caviar"
@@ -9620,6 +9728,7 @@
     "1972 Presidential Election",
     "Alien: Resurrection",
     "Bay of Pigs Invasion",
+    "Cambrian Explosion",
     "Chu–Han Contention",
     "Concepcion",
     "Damnation",
@@ -9631,6 +9740,7 @@
     "National Lampoon's Christmas Vacation",
     "Onion",
     "Orion",
+    "Permian-Triassic Extinction",
     "Pinion",
     "Predestination",
     "Pulp Fiction",
@@ -9669,6 +9779,7 @@
     "The Silmarillion",
     "The Taiping Rebellion",
     "The Whiskey Rebellion",
+    "Toba Supereruption",
     "Wang Mang Usurpation"
   ],
   "Ends with IOR": [
@@ -9788,7 +9899,8 @@
     "Aphrodite",
     "Fortnite",
     "Parasite",
-    "The realm, long divided, must unite"
+    "The realm, long divided, must unite",
+    "Trilobite"
   ],
   "Ends with ITH": [
     "Agent Smith",
@@ -9832,8 +9944,10 @@
     "Battle of Actium",
     "Belgium",
     "Beryllium",
+    "Deinotherium",
     "Helium",
     "Lithium",
+    "Paraceratherium",
     "Plutonium",
     "Titanium",
     "Uranium"
@@ -9841,10 +9955,14 @@
   "Ends with IUS": [
     "Aquarius",
     "Cassius",
+    "Claudius",
     "Confucius",
+    "Gladius",
+    "Marcus Aurelius",
     "Mauritius",
     "Sagittarius",
     "Scorpius",
+    "Tiberius",
     "Vesuvius"
   ],
   "Ends with IVE": [
@@ -9870,7 +9988,8 @@
     "Uffizi"
   ],
   "Ends with JAN": [
-    "Azerbaijan"
+    "Azerbaijan",
+    "Trajan"
   ],
   "Ends with JAR": [
     "The Bell Jar"
@@ -10068,6 +10187,7 @@
     "Chrysler",
     "Cooler",
     "Kepler",
+    "Narcissus the Wrestler",
     "Nightcrawler",
     "Riddler",
     "Rockefeller",
@@ -10164,6 +10284,7 @@
     "MechaGodzilla",
     "Paella",
     "Quesadilla",
+    "Sulla",
     "Tortilla"
   ],
   "Ends with LLE": [
@@ -10248,6 +10369,9 @@
   ],
   "Ends with LUI": [
     "Tolui"
+  ],
+  "Ends with LUM": [
+    "Pilum"
   ],
   "Ends with LUS": [
     "Battle of Pharsalus",
@@ -10599,6 +10723,7 @@
     "California",
     "Estonia",
     "Germania",
+    "Hallucigenia",
     "Hispania",
     "Hotel California",
     "Insomnia",
@@ -10608,6 +10733,7 @@
     "Mauretania",
     "Mauritania",
     "North Macedonia",
+    "Opabinia",
     "Romania",
     "Sardinia",
     "Slovenia",
@@ -10640,6 +10766,7 @@
   ],
   "Ends with NIS": [
     "Confuciusornis",
+    "Gastornis",
     "Stennis",
     "Table Tennis",
     "Tennis"
@@ -10810,6 +10937,9 @@
     "Johnny B. Goode",
     "Source Code",
     "The Da Vinci Code"
+  ],
+  "Ends with ODO": [
+    "Dodo"
   ],
   "Ends with ODS": [
     "Brachchiopods",
@@ -11260,6 +11390,9 @@
   "Ends with PEW": [
     "Pepe Le Pew"
   ],
+  "Ends with PEY": [
+    "Pompey"
+  ],
   "Ends with PHA": [
     "Alpha"
   ],
@@ -11291,6 +11424,9 @@
   ],
   "Ends with PIO": [
     "Scorpio"
+  ],
+  "Ends with PIS": [
+    "Plesiadapis"
   ],
   "Ends with PLE": [
     "Apple",
@@ -11430,6 +11566,7 @@
     "Sarah Bernhardt"
   ],
   "Ends with REA": [
+    "Cassius Chaerea",
     "Eritrea",
     "Korea",
     "Moorea",
@@ -11531,6 +11668,7 @@
     "Super Mario"
   ],
   "Ends with RIS": [
+    "Anomalocaris",
     "Eris",
     "Iris",
     "Paris",
@@ -11678,6 +11816,7 @@
     "Ankylosaurus",
     "Apatosaurus",
     "Argentinosaurus",
+    "Basilosaurus",
     "Belarus",
     "Brachiosaurus",
     "Camarasaurus",
@@ -11696,7 +11835,9 @@
     "Kentrosaurus",
     "Lambeosaurus",
     "Mosasaurus",
+    "Plateosaurus",
     "Plesiosaurus",
+    "Shonisaurus",
     "Sinornithosaurus",
     "Spinosaurus",
     "Stegosaurus",
@@ -11748,7 +11889,8 @@
     "The Great Gatsby"
   ],
   "Ends with SCA": [
-    "Agua Fresca"
+    "Agua Fresca",
+    "Servilius Casca"
   ],
   "Ends with SCO": [
     "Donnie Brasco",
@@ -11822,6 +11964,7 @@
     "Pastitsio"
   ],
   "Ends with SIS": [
+    "Coelophysis",
     "Congo Crisis",
     "Foreign Debt Crisis",
     "Homeless Veterans Crisis",
@@ -11936,6 +12079,7 @@
     "Catan",
     "Kazakhstan",
     "Kyrgyzstan",
+    "Livyatan",
     "Manhattan",
     "Pakistan",
     "Tajikistan",
@@ -12026,6 +12170,9 @@
   ],
   "Ends with TEZ": [
     "Lola Montez"
+  ],
+  "Ends with THA": [
+    "Spatha"
   ],
   "Ends with THE": [
     "Absinthe"
@@ -12143,8 +12290,13 @@
   "Ends with TTY": [
     "Arrietty"
   ],
+  "Ends with TUM": [
+    "Scutum"
+  ],
   "Ends with TUS": [
+    "Ambulocetus",
     "Arch of Titus",
+    "Augustus",
     "Brutus",
     "Invictus",
     "Lotus"
@@ -12263,6 +12415,7 @@
     "Luke"
   ],
   "Ends with ULA": [
+    "Caligula",
     "Dracula",
     "Nebula",
     "Tarantula"
@@ -12681,6 +12834,13 @@
   "Entertainment": [
     "The Three Stooges"
   ],
+  "Eocene Epoch": [
+    "Ambulocetus",
+    "Basilosaurus",
+    "Gastornis",
+    "Hyaenodon",
+    "Paraceratherium"
+  ],
   "Epic Heroes": [
     "Achilles",
     "Beowulf",
@@ -12760,8 +12920,10 @@
     "Bay of Pigs Invasion",
     "CON",
     "Caesar crosses the Rubicon",
+    "Cambrian Explosion",
     "Challenger",
     "Chernobyl",
+    "Chicxulub Impact",
     "Chu–Han Contention",
     "Cola Wars",
     "Congo Crisis",
@@ -12779,6 +12941,7 @@
     "Katrina",
     "Krakatoa",
     "Lusitania",
+    "Permian-Triassic Extinction",
     "Pompeii",
     "Profumo Affair",
     "Second Triumvirate",
@@ -12894,6 +13057,7 @@
     "Third Servile War",
     "Tiananmen Square Massacre",
     "Titanic",
+    "Toba Supereruption",
     "Triple Alliance",
     "Triple Entente",
     "U-2 Spy Plane Incident",
@@ -12937,11 +13101,17 @@
   ],
   "Extinct Animals": [
     "Allosaurus",
+    "Ambulocetus",
     "Ammonites",
     "Ankylosaurus",
+    "Anomalocaris",
     "Apatosaurus",
     "Archaeopteryx",
+    "Ardipithecus",
     "Argentinosaurus",
+    "Aurochs",
+    "Australopithecus",
+    "Basilosaurus",
     "Brachchiopods",
     "Brachiosaurus",
     "Camarasaurus",
@@ -12949,43 +13119,57 @@
     "Cera",
     "Chasmosaurus",
     "Chomper",
+    "Coelophysis",
     "Confuciusornis",
     "Corythosaurus",
     "Deinonychus",
+    "Deinotherium",
     "Dimetrodon",
     "Diplodocus",
     "Dire Wolf",
+    "Dodo",
     "Ducky",
     "Edmontosaurus",
     "Elasmosaurus",
     "Euoplocephalus",
+    "Gastornis",
     "Giganotosaurus",
     "Graptolites",
     "Ground Sloth",
+    "Hallucigenia",
+    "Hyaenodon",
     "Ichthyosaurus",
     "Kentrosaurus",
     "Lambeosaurus",
     "Littlefoot",
+    "Livyatan",
     "Mammoth",
     "Megalodon",
     "Microraptor",
     "Mosasaurus",
+    "Opabinia",
+    "Paraceratherium",
     "Parasaurolophus",
     "Petrie",
+    "Plateosaurus",
+    "Plesiadapis",
     "Plesiosaurus",
     "Protoceratops",
     "Pteranodon",
     "Pterodactyl",
     "Quetzalcoatlus",
     "Ruby",
+    "Shonisaurus",
     "Sinornithosaurus",
     "Smilodon",
-    "Spike",
     "Spinosaurus",
     "Stegosaurus",
     "Styracosaurus",
     "T-Rex",
+    "Tanystropheus",
+    "Titanoboa",
     "Triceratops",
+    "Trilobite",
     "Trilobites",
     "Utahraptor",
     "Velociraptor",
@@ -14250,7 +14434,6 @@
     "Indonesia",
     "Malaysia",
     "Netherlands East Indies",
-    "Philippines",
     "Singapore",
     "South Africa",
     "Sri Lanka",
@@ -14377,74 +14560,27 @@
     "Uzbekistan"
   ],
   "Former Spanish Colonies": [
-    "Algeria",
-    "Angola",
     "Argentina",
-    "Benin",
     "Bolivia",
-    "Botswana",
-    "Burkina Faso",
-    "Burundi",
-    "Cameroon",
-    "Central African Republic",
     "Chile",
     "Colombia",
-    "Comoros",
-    "Congo",
     "Costa Rica",
     "Cuba",
-    "Democratic Republic of the Congo",
-    "Djibouti",
     "Dominican Republic",
     "Ecuador",
-    "Egypt",
     "El Salvador",
     "Equatorial Guinea",
-    "Eswatini",
-    "Gabon",
-    "Gambia",
-    "Ghana",
     "Guatemala",
-    "Guinea",
-    "Guinea-Bissau",
     "Honduras",
-    "Ivory Coast",
-    "Kenya",
-    "Lesotho",
-    "Liberia",
-    "Madagascar",
-    "Malawi",
-    "Mali",
-    "Mauritius",
     "Mexico",
     "Morocco",
-    "Mozambique",
-    "Namibia",
     "Nicaragua",
-    "Niger",
-    "Nigeria",
     "Panama",
     "Paraguay",
     "Peru",
     "Philippines",
-    "Rwanda",
-    "Senegal",
-    "Seychelles",
-    "Sierra Leone",
-    "Somalia",
-    "South Africa",
-    "South Sudan",
-    "Spanish East Africa",
-    "Spanish Guinea",
-    "Spanish West Africa",
-    "Tanzania",
-    "Togo",
-    "Tunisia",
-    "Uganda",
     "Uruguay",
-    "Venezuela",
-    "Zambia",
-    "Zimbabwe"
+    "Venezuela"
   ],
   "French Architecture": [
     "Eiffel Tower",
@@ -14722,6 +14858,7 @@
     "Chasmosaurus",
     "Corythosaurus",
     "Cow",
+    "Deinotherium",
     "Diplodocus",
     "Donkey Kong",
     "Ducky",
@@ -14739,6 +14876,7 @@
     "Mammoth",
     "Ostrich",
     "Panda",
+    "Paraceratherium",
     "Parasaurolophus",
     "Protoceratops",
     "Pumbaa",
@@ -14798,6 +14936,7 @@
     "Annie Oakley",
     "Archibald Butt",
     "Aristotle",
+    "Augustus",
     "Avicenna",
     "Bach",
     "Batu Khan",
@@ -14805,8 +14944,10 @@
     "Brutus",
     "Caesar",
     "Calamity Jane",
+    "Caligula",
     "Captain Smith",
     "Cassius",
+    "Cassius Chaerea",
     "Catherine",
     "Catherine Howard",
     "Catherine Parr",
@@ -14817,8 +14958,11 @@
     "Cicero",
     "Clara Barton",
     "Clara Schumann",
+    "Claudius",
     "Cleopatra",
+    "Commodus",
     "Confucius",
+    "Constantine the Great",
     "Copernicus",
     "Da Vinci",
     "Dante",
@@ -14846,6 +14990,7 @@
     "George Eliot",
     "Guan Yu",
     "Guy Fawkes",
+    "Hadrian",
     "Handel",
     "Harriet Beecher Stowe",
     "Harriet Tubman",
@@ -14861,6 +15006,7 @@
     "Jane Austen",
     "Jane Seymour",
     "Jebe",
+    "Jing Ke",
     "Joan of Arc",
     "John Jacob Astor",
     "John Wilkes Booth",
@@ -14876,6 +15022,7 @@
     "Louisa May Alcott",
     "Madame C.J. Walker",
     "Marco Polo",
+    "Marcus Aurelius",
     "Marie Curie",
     "Mary Cassatt",
     "Mary I",
@@ -14887,6 +15034,8 @@
     "Mozart",
     "Möngke Khan",
     "Napoleon Bonaparte",
+    "Narcissus the Wrestler",
+    "Nero",
     "Newton",
     "Nicole Brown Simpson",
     "Oppenheimer",
@@ -14894,6 +15043,7 @@
     "Plato",
     "Pocahontas",
     "Poe",
+    "Pompey",
     "Rasputin",
     "Robert Catesby",
     "Robert E. Lee",
@@ -14902,11 +15052,13 @@
     "Saint Patrick",
     "Sarah Bernhardt",
     "Serpico",
+    "Servilius Casca",
     "Shakespeare",
     "Sir John A. Macdonald",
     "Socrates",
     "Sojourner Truth",
     "Subutai",
+    "Sulla",
     "Sun Tzu",
     "Susan B. Anthony",
     "Temüjin",
@@ -14918,8 +15070,11 @@
     "The Unsinkable Molly Brown",
     "Thomas Andrews",
     "Thomas Edison",
+    "Tiberius",
     "Tolui",
+    "Trajan",
     "Vasco da Gama",
+    "Vespasian",
     "Victoria",
     "Victoria Woodhull",
     "Von Blucher",
@@ -14966,14 +15121,27 @@
     "Bow",
     "Club",
     "Dagger",
+    "Gladius",
+    "Guandao",
     "Halberd",
     "Mace",
+    "Pilum",
     "Pugio",
+    "Scutum",
+    "Spatha",
     "Spear",
     "Sword"
   ],
   "Hockey Players": [
     "Wayne Gretzky"
+  ],
+  "Holocene Epoch": [
+    "Aurochs",
+    "Dodo"
+  ],
+  "Hominins": [
+    "Ardipithecus",
+    "Australopithecus"
   ],
   "Hong Kong Cinema": [
     "A Better Tomorrow",
@@ -16109,12 +16277,18 @@
     "Stallion"
   ],
   "Mammals": [
+    "Ambulocetus",
+    "Ardipithecus",
+    "Aurochs",
+    "Australopithecus",
+    "Basilosaurus",
     "Bear",
     "Beast",
     "Black Cat",
     "Blue Whale",
     "Bruin",
     "Buffalo",
+    "Deinotherium",
     "Dire Wolf",
     "Dolphin",
     "Donkey Kong",
@@ -16126,11 +16300,13 @@
     "Goofy",
     "Ground Sloth",
     "Humpback Whale",
+    "Hyaenodon",
     "Jaguar",
     "K9",
     "Killer Whale",
     "King Kong",
     "Lion",
+    "Livyatan",
     "Mammoth",
     "Manatee",
     "Mickey Mouse",
@@ -16140,6 +16316,8 @@
     "Orca",
     "Panda",
     "Panther",
+    "Paraceratherium",
+    "Plesiadapis",
     "Polar Bear",
     "Pumbaa",
     "Rabbit",
@@ -16253,7 +16431,9 @@
     "Elasmosaurus",
     "Ichthyosaurus",
     "Mosasaurus",
-    "Plesiosaurus"
+    "Plesiosaurus",
+    "Shonisaurus",
+    "Tanystropheus"
   ],
   "Maritime Stories": [
     "Moby Dick",
@@ -16431,6 +16611,7 @@
     "Archibald Butt",
     "Aristotle",
     "Arthur",
+    "Augustus",
     "Avicenna",
     "Bach",
     "Bartholomew",
@@ -16452,11 +16633,13 @@
     "Buddy Holly",
     "Bush",
     "Caesar",
+    "Caligula",
     "Campanella",
     "Captain America",
     "Captain Smith",
     "Carter",
     "Cassius",
+    "Cassius Chaerea",
     "Castro",
     "Chad",
     "Charlemagne",
@@ -16464,11 +16647,14 @@
     "Christopher Columbus",
     "Chubby Checker",
     "Cicero",
+    "Claudius",
     "Cleveland",
     "Clinton",
     "Cobb",
     "Colossus",
+    "Commodus",
     "Confucius",
+    "Constantine the Great",
     "Coolidge",
     "Copernicus",
     "Count",
@@ -16521,6 +16707,7 @@
     "Grover",
     "Guan Yu",
     "Guy Fawkes",
+    "Hadrian",
     "Handel",
     "Harambe",
     "Harding",
@@ -16547,6 +16734,7 @@
     "James the Less",
     "Jebe",
     "Jefferson",
+    "Jing Ke",
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
@@ -16591,6 +16779,7 @@
     "Mantle",
     "Marciano",
     "Marco Polo",
+    "Marcus Aurelius",
     "Mario",
     "Mark David Chapman",
     "Matsui",
@@ -16611,8 +16800,10 @@
     "Möngke Khan",
     "Nakamura",
     "Napoleon Bonaparte",
+    "Narcissus the Wrestler",
     "Nasser",
     "Neo",
+    "Nero",
     "Newton",
     "Nick Fury",
     "Nightcrawler",
@@ -16638,6 +16829,7 @@
     "Plato",
     "Poe",
     "Polk",
+    "Pompey",
     "Prince",
     "Prince Caspian",
     "Professor X",
@@ -16664,6 +16856,7 @@
     "Santayana",
     "Scarface",
     "Serpico",
+    "Servilius Casca",
     "Shaggy",
     "Shakespeare",
     "Simon",
@@ -16675,6 +16868,7 @@
     "Spider-Man",
     "Subutai",
     "Sugar Ray",
+    "Sulla",
     "Sulu",
     "Sun Tzu",
     "Super Mario",
@@ -16705,8 +16899,10 @@
     "Thomas Andrews",
     "Thomas Edison",
     "Thor",
+    "Tiberius",
     "Tolui",
     "Toscanini",
+    "Trajan",
     "Truman",
     "Trump",
     "Tyler",
@@ -16714,6 +16910,7 @@
     "Van Buren",
     "Vasco da Gama",
     "Venom",
+    "Vespasian",
     "Victor",
     "Von Blucher",
     "Vulture",
@@ -16959,9 +17156,11 @@
     "Möngke Khan",
     "Napoleon Bonaparte",
     "Nimitz",
+    "Pompey",
     "Robert E. Lee",
     "Roosevelt",
     "Subutai",
+    "Sulla",
     "Sun Tzu",
     "Taylor",
     "Temüjin",
@@ -17022,6 +17221,13 @@
     "NATO",
     "Overwatch",
     "Uniform"
+  ],
+  "Miocene Epoch": [
+    "Ardipithecus",
+    "Deinotherium",
+    "Livyatan",
+    "Megalodon",
+    "Titanoboa"
   ],
   "Modern Buildings": [
     "Buckingham Palace",
@@ -22455,20 +22661,25 @@
     "Anne of Cleves",
     "Archduke Franz Ferdinand",
     "Arthur",
+    "Augustus",
     "Batu Khan",
     "Begin",
     "Bismarck",
     "Buchanan",
     "Bush",
     "Caesar",
+    "Caligula",
     "Carter",
     "Castro",
     "Catherine",
     "Catherine Howard",
     "Catherine Parr",
     "Catherine of Aragon",
+    "Claudius",
     "Cleveland",
     "Clinton",
+    "Commodus",
+    "Constantine the Great",
     "Coolidge",
     "Edward VI",
     "Eichmann",
@@ -22481,6 +22692,7 @@
     "Genghis Khan",
     "Grant",
     "Grover",
+    "Hadrian",
     "Harding",
     "Harrison",
     "Hayes",
@@ -22503,29 +22715,36 @@
     "Lincoln",
     "Madison",
     "Malenkov",
+    "Marcus Aurelius",
     "Mary I",
     "McKinley",
     "Monroe",
     "Möngke Khan",
     "Nasser",
+    "Nero",
     "Nixon",
     "Obama",
     "Ozymandias",
     "Pierce",
     "Polk",
+    "Pompey",
     "Reagan",
     "Roosevelt",
     "Roy Cohn",
     "Sir John A. Macdonald",
+    "Sulla",
     "Syngman Rhee",
     "Taft",
     "Taylor",
     "Temüjin",
+    "Tiberius",
     "Tolui",
+    "Trajan",
     "Truman",
     "Trump",
     "Tyler",
     "Van Buren",
+    "Vespasian",
     "Victoria",
     "Washington",
     "Wilson",
@@ -22703,6 +22922,10 @@
   "Oceans": [
     "North Atlantic"
   ],
+  "Oligocene Epoch": [
+    "Hyaenodon",
+    "Paraceratherium"
+  ],
   "Omnivores": [
     "Blue Jay",
     "Cardinal",
@@ -22746,6 +22969,7 @@
     "Kentrosaurus",
     "Lambeosaurus",
     "Parasaurolophus",
+    "Plateosaurus",
     "Protoceratops",
     "Spike",
     "Stegosaurus",
@@ -22834,9 +23058,15 @@
   "Pacific Islands": [
     "Midway Island"
   ],
+  "Paleocene Epoch": [
+    "Plesiadapis",
+    "Titanoboa"
+  ],
   "Paleozoic Era": [
     "Brachchiopods",
+    "Cambrian Explosion",
     "Graptolites",
+    "Permian-Triassic Extinction",
     "Trilobites"
   ],
   "Palme d'Or Winners": [
@@ -22883,6 +23113,7 @@
     "Arrietty",
     "Arthur",
     "Arya Stark",
+    "Augustus",
     "Aurora",
     "Avicenna",
     "Bach",
@@ -22911,11 +23142,13 @@
     "Buttercup",
     "Caesar",
     "Calamity Jane",
+    "Caligula",
     "Campanella",
     "Captain America",
     "Captain Smith",
     "Carter",
     "Cassius",
+    "Cassius Chaerea",
     "Castro",
     "Catherine",
     "Catherine Howard",
@@ -22932,12 +23165,15 @@
     "Cinderella",
     "Clara Barton",
     "Clara Schumann",
+    "Claudius",
     "Cleopatra",
     "Cleveland",
     "Clinton",
     "Cobb",
     "Colossus",
+    "Commodus",
     "Confucius",
+    "Constantine the Great",
     "Coolidge",
     "Copernicus",
     "Curie",
@@ -23004,6 +23240,7 @@
     "Grover",
     "Guan Yu",
     "Guy Fawkes",
+    "Hadrian",
     "Handel",
     "Harambe",
     "Harding",
@@ -23042,6 +23279,7 @@
     "Jean Grey",
     "Jebe",
     "Jefferson",
+    "Jing Ke",
     "Joan of Arc",
     "Joe DiMaggio",
     "Joe McCarthy",
@@ -23096,6 +23334,7 @@
     "Mantle",
     "Marciano",
     "Marco Polo",
+    "Marcus Aurelius",
     "Marie Curie",
     "Marilyn Monroe",
     "Mario",
@@ -23126,7 +23365,9 @@
     "Möngke Khan",
     "Nakamura",
     "Napoleon Bonaparte",
+    "Narcissus the Wrestler",
     "Nasser",
+    "Nero",
     "Newton",
     "Nick Fury",
     "Nicole Brown Simpson",
@@ -23157,6 +23398,7 @@
     "Pocahontas",
     "Poe",
     "Polk",
+    "Pompey",
     "Prince",
     "Prince Caspian",
     "Princess Peach",
@@ -23189,6 +23431,7 @@
     "Sarah Bernhardt",
     "Scarface",
     "Serpico",
+    "Servilius Casca",
     "Shadowcat",
     "Shaggy",
     "Shakespeare",
@@ -23205,6 +23448,7 @@
     "Storm",
     "Subutai",
     "Sugar Ray",
+    "Sulla",
     "Sulu",
     "Sun Tzu",
     "Super Mario",
@@ -23238,8 +23482,10 @@
     "Thomas Andrews",
     "Thomas Edison",
     "Thor",
+    "Tiberius",
     "Tolui",
     "Toscanini",
+    "Trajan",
     "Truman",
     "Trump",
     "Tyler",
@@ -23248,6 +23494,7 @@
     "Vasco da Gama",
     "Velma",
     "Venom",
+    "Vespasian",
     "Victor",
     "Victoria",
     "Victoria Woodhull",
@@ -23321,7 +23568,8 @@
     "Newspaper"
   ],
   "Permian Period": [
-    "Dimetrodon"
+    "Dimetrodon",
+    "Permian-Triassic Extinction"
   ],
   "Personality Traits": [
     "Stern"
@@ -23976,7 +24224,14 @@
     "Ground Sloth",
     "Mammoth",
     "Smilodon",
+    "Toba Supereruption",
     "Woolly Rhinoceros"
+  ],
+  "Pliocene Epoch": [
+    "Ardipithecus",
+    "Australopithecus",
+    "Deinotherium",
+    "Megalodon"
   ],
   "Poems": [
     "Invictus",
@@ -24099,11 +24354,17 @@
   ],
   "Prehistoric Life": [
     "Allosaurus",
+    "Ambulocetus",
     "Ammonites",
     "Ankylosaurus",
+    "Anomalocaris",
     "Apatosaurus",
     "Archaeopteryx",
+    "Ardipithecus",
     "Argentinosaurus",
+    "Aurochs",
+    "Australopithecus",
+    "Basilosaurus",
     "Brachchiopods",
     "Brachiosaurus",
     "Camarasaurus",
@@ -24111,35 +24372,47 @@
     "Cera",
     "Chasmosaurus",
     "Chomper",
+    "Coelophysis",
     "Confuciusornis",
     "Corythosaurus",
     "Deinonychus",
+    "Deinotherium",
     "Dimetrodon",
     "Diplodocus",
     "Dire Wolf",
+    "Dodo",
     "Ducky",
     "Edmontosaurus",
     "Elasmosaurus",
     "Euoplocephalus",
+    "Gastornis",
     "Giganotosaurus",
     "Graptolites",
     "Ground Sloth",
+    "Hallucigenia",
+    "Hyaenodon",
     "Ichthyosaurus",
     "Kentrosaurus",
     "Lambeosaurus",
     "Littlefoot",
+    "Livyatan",
     "Mammoth",
     "Megalodon",
     "Microraptor",
     "Mosasaurus",
+    "Opabinia",
+    "Paraceratherium",
     "Parasaurolophus",
     "Petrie",
+    "Plateosaurus",
+    "Plesiadapis",
     "Plesiosaurus",
     "Protoceratops",
     "Pteranodon",
     "Pterodactyl",
     "Quetzalcoatlus",
     "Ruby",
+    "Shonisaurus",
     "Sinornithosaurus",
     "Smilodon",
     "Spike",
@@ -24147,7 +24420,10 @@
     "Stegosaurus",
     "Styracosaurus",
     "T-Rex",
+    "Tanystropheus",
+    "Titanoboa",
     "Triceratops",
+    "Trilobite",
     "Trilobites",
     "Utahraptor",
     "Velociraptor",
@@ -24179,7 +24455,8 @@
   ],
   "Primates": [
     "Donkey Kong",
-    "King Kong"
+    "King Kong",
+    "Plesiadapis"
   ],
   "Princesses": [
     "Princess Peach"
@@ -24383,6 +24660,7 @@
     "Archibald Butt",
     "Aristotle",
     "Arthur",
+    "Augustus",
     "Avicenna",
     "Bach",
     "Bartholomew",
@@ -24401,10 +24679,12 @@
     "Bush",
     "Caesar",
     "Calamity Jane",
+    "Caligula",
     "Campanella",
     "Captain Smith",
     "Carter",
     "Cassius",
+    "Cassius Chaerea",
     "Castro",
     "Catherine",
     "Catherine Howard",
@@ -24420,11 +24700,14 @@
     "Cicero",
     "Clara Barton",
     "Clara Schumann",
+    "Claudius",
     "Cleopatra",
     "Cleveland",
     "Clinton",
     "Cobb",
+    "Commodus",
     "Confucius",
+    "Constantine the Great",
     "Coolidge",
     "Copernicus",
     "Curie",
@@ -24476,6 +24759,7 @@
     "Grover",
     "Guan Yu",
     "Guy Fawkes",
+    "Hadrian",
     "Handel",
     "Harambe",
     "Harding",
@@ -24503,6 +24787,7 @@
     "Jane Seymour",
     "Jebe",
     "Jefferson",
+    "Jing Ke",
     "Joan of Arc",
     "Joe DiMaggio",
     "Joe McCarthy",
@@ -24548,6 +24833,7 @@
     "Mantle",
     "Marciano",
     "Marco Polo",
+    "Marcus Aurelius",
     "Marie Curie",
     "Marilyn Monroe",
     "Mark David Chapman",
@@ -24573,7 +24859,9 @@
     "Möngke Khan",
     "Nakamura",
     "Napoleon Bonaparte",
+    "Narcissus the Wrestler",
     "Nasser",
+    "Nero",
     "Newton",
     "Nicole Brown Simpson",
     "Nimitz",
@@ -24595,6 +24883,7 @@
     "Pocahontas",
     "Poe",
     "Polk",
+    "Pompey",
     "Prince",
     "Prokofiev",
     "Queen Mary",
@@ -24613,6 +24902,7 @@
     "Santayana",
     "Sarah Bernhardt",
     "Serpico",
+    "Servilius Casca",
     "Shakespeare",
     "Simon",
     "Sir John A. Macdonald",
@@ -24622,6 +24912,7 @@
     "Sophie, Duchess of Hohenberg",
     "Subutai",
     "Sugar Ray",
+    "Sulla",
     "Sun Tzu",
     "Susan B. Anthony",
     "Syngman Rhee",
@@ -24640,14 +24931,17 @@
     "Thomas",
     "Thomas Andrews",
     "Thomas Edison",
+    "Tiberius",
     "Tolui",
     "Toscanini",
+    "Trajan",
     "Truman",
     "Trump",
     "Tsar",
     "Tyler",
     "Van Buren",
     "Vasco da Gama",
+    "Vespasian",
     "Victoria",
     "Victoria Woodhull",
     "Von Blucher",
@@ -24817,7 +25111,8 @@
     "King Ghidorah",
     "MechaGodzilla",
     "Python",
-    "Rodan"
+    "Rodan",
+    "Titanoboa"
   ],
   "Republics": [
     "Afghanistan",
@@ -25068,28 +25363,45 @@
   ],
   "Roman Empire": [
     "Arch of Titus",
+    "Augustus",
     "Britannia",
+    "Caligula",
     "Carthage",
+    "Cassius Chaerea",
     "Circus Maximus",
+    "Claudius",
     "Colosseum",
+    "Commodus",
+    "Constantine the Great",
     "Constantinople",
     "Gaul",
     "Germania",
+    "Gladius",
+    "Hadrian",
     "Hadrian's Wall",
     "Herculaneum",
     "Hispania",
     "Illyria",
+    "Marcus Aurelius",
     "Mauretania",
+    "Narcissus the Wrestler",
+    "Nero",
     "Ostia Antica",
     "Palestine",
     "Pantheon",
+    "Pilum",
     "Pompeii",
     "Pugio",
     "Render unto Caesar",
     "Roma",
     "Roman Forum",
     "Rome",
+    "Scutum",
+    "Spatha",
+    "Tiberius",
+    "Trajan",
     "Varus, give me back my legions",
+    "Vespasian",
     "Vesuvius"
   ],
   "Roman Gods": [
@@ -25130,8 +25442,14 @@
     "Et tu, Brute?",
     "First Triumvirate",
     "Friends, Romans, countrymen",
+    "Gladius",
     "Ides of March",
+    "Pilum",
+    "Pompey",
+    "Scutum",
     "Second Triumvirate",
+    "Servilius Casca",
+    "Sulla",
     "The Roman Empire",
     "Third Servile War",
     "Veni, vidi, vici"
@@ -25618,6 +25936,9 @@
     "Tern"
   ],
   "Sea Creatures": [
+    "Ambulocetus",
+    "Anomalocaris",
+    "Basilosaurus",
     "Blue Whale",
     "Dolphin",
     "Dugong",
@@ -25629,23 +25950,30 @@
     "Ichthyosaurus",
     "Killer Whale",
     "King Ghidorah",
+    "Livyatan",
     "Manatee",
     "Megalodon",
     "Moby Dick",
     "Mosasaurus",
+    "Opabinia",
     "Orca",
     "Plesiosaurus",
     "Seal",
     "Shark",
+    "Shonisaurus",
+    "Tanystropheus",
     "Walrus",
     "Whale"
   ],
   "Sea Mammals": [
+    "Ambulocetus",
+    "Basilosaurus",
     "Blue Whale",
     "Dolphin",
     "Dugong",
     "Humpback Whale",
     "Killer Whale",
+    "Livyatan",
     "Manatee",
     "Moby Dick",
     "Orca",
@@ -26023,6 +26351,11 @@
   "Smells": [
     "Musk",
     "Rank"
+  ],
+  "Snakes": [
+    "Cobra",
+    "Python",
+    "Titanoboa"
   ],
   "Social Commentary": [
     "Les Misérables",
@@ -26608,6 +26941,9 @@
     "Amadeus",
     "Amazon"
   ],
+  "Starts with AMB": [
+    "Ambulocetus"
+  ],
   "Starts with AME": [
     "American Beauty",
     "American Football"
@@ -26658,6 +26994,7 @@
     "Annie Oakley"
   ],
   "Starts with ANO": [
+    "Anomalocaris",
     "Another Brick in the Wall"
   ],
   "Starts with ANT": [
@@ -26701,6 +27038,9 @@
     "Archduke Franz Ferdinand",
     "Archery",
     "Archibald Butt"
+  ],
+  "Starts with ARD": [
+    "Ardipithecus"
   ],
   "Starts with ARE": [
     "Arepa",
@@ -26770,14 +27110,17 @@
     "Audi"
   ],
   "Starts with AUG": [
-    "Augusta"
+    "Augusta",
+    "Augustus"
   ],
   "Starts with AUR": [
+    "Aurochs",
     "Aurora"
   ],
   "Starts with AUS": [
     "Austin",
     "Australia",
+    "Australopithecus",
     "Austria",
     "Austria-Hungary"
   ],
@@ -26885,6 +27228,7 @@
     "Baseball",
     "Basil",
     "Basilisk",
+    "Basilosaurus",
     "Basket Case",
     "Basketball",
     "Basutoland"
@@ -27234,12 +27578,14 @@
     "Caldo Verde",
     "California",
     "California Baseball",
+    "Caligula",
     "Call me Ishmael",
     "Call of Duty"
   ],
   "Starts with CAM": [
     "Camarasaurus",
     "Cambodia",
+    "Cambrian Explosion",
     "Camera",
     "Cameroon",
     "Campanella"
@@ -27282,6 +27628,7 @@
     "Casablanca",
     "Cassiopeia",
     "Cassius",
+    "Cassius Chaerea",
     "Cassoulet",
     "Cassowary",
     "Castle in the Sky",
@@ -27363,6 +27710,7 @@
     "Chichen Itza",
     "Chicken",
     "Chicken Little",
+    "Chicxulub Impact",
     "Chile",
     "Chile Relleno",
     "Chimichanga",
@@ -27418,7 +27766,8 @@
   ],
   "Starts with CLA": [
     "Clara Barton",
-    "Clara Schumann"
+    "Clara Schumann",
+    "Claudius"
   ],
   "Starts with CLE": [
     "Cleopatra",
@@ -27449,6 +27798,9 @@
   "Starts with COD": [
     "CODA"
   ],
+  "Starts with COE": [
+    "Coelophysis"
+  ],
   "Starts with COF": [
     "Coffee",
     "Coffee Crisp"
@@ -27476,6 +27828,7 @@
     "Comfortably Numb",
     "Comino",
     "Commentarii de Bello Gallico",
+    "Commodus",
     "Communist Bloc",
     "Comoros"
   ],
@@ -27490,6 +27843,7 @@
     "Congee",
     "Congo",
     "Congo Crisis",
+    "Constantine the Great",
     "Constantinople",
     "Conte di Savoia"
   ],
@@ -27663,7 +28017,8 @@
   ],
   "Starts with DEI": [
     "Deimos",
-    "Deinonychus"
+    "Deinonychus",
+    "Deinotherium"
   ],
   "Starts with DEJ": [
     "Deja Vu"
@@ -27734,7 +28089,8 @@
     "Doctor Octopus"
   ],
   "Starts with DOD": [
-    "Dodge"
+    "Dodge",
+    "Dodo"
   ],
   "Starts with DOE": [
     "Doe"
@@ -28235,6 +28591,9 @@
     "Garfield",
     "Gargantuan"
   ],
+  "Starts with GAS": [
+    "Gastornis"
+  ],
   "Starts with GAT": [
     "Gates"
   ],
@@ -28308,6 +28667,7 @@
   ],
   "Starts with GLA": [
     "Gladiator",
+    "Gladius",
     "Glass"
   ],
   "Starts with GLO": [
@@ -28403,6 +28763,7 @@
     "Guacamole",
     "Guam",
     "Guan Yu",
+    "Guandao",
     "Guatemala"
   ],
   "Starts with GUC": [
@@ -28445,6 +28806,7 @@
   ],
   "Starts with HAD": [
     "Hades",
+    "Hadrian",
     "Hadrian's Wall"
   ],
   "Starts with HAG": [
@@ -28458,6 +28820,7 @@
   ],
   "Starts with HAL": [
     "Halberd",
+    "Hallucigenia",
     "Halo",
     "Halogen"
   ],
@@ -28661,6 +29024,7 @@
     "Hurricane"
   ],
   "Starts with HYA": [
+    "Hyaenodon",
     "Hyatt"
   ],
   "Starts with HYD": [
@@ -28904,6 +29268,7 @@
     "Jill"
   ],
   "Starts with JIN": [
+    "Jing Ke",
     "Jingle All the Way"
   ],
   "Starts with JJA": [
@@ -29314,7 +29679,8 @@
     "Littlefoot"
   ],
   "Starts with LIV": [
-    "Live Free or Die Hard"
+    "Live Free or Die Hard",
+    "Livyatan"
   ],
   "Starts with LO ": [
     "Lo Mein"
@@ -29454,6 +29820,7 @@
   "Starts with MAR": [
     "Marciano",
     "Marco Polo",
+    "Marcus Aurelius",
     "Mare",
     "Marie Curie",
     "Marilyn Monroe",
@@ -29743,6 +30110,7 @@
     "Napoleon Bonaparte"
   ],
   "Starts with NAR": [
+    "Narcissus the Wrestler",
     "Naruto"
   ],
   "Starts with NAS": [
@@ -29767,6 +30135,9 @@
   "Starts with NEP": [
     "Nepal",
     "Neptune"
+  ],
+  "Starts with NER": [
+    "Nero"
   ],
   "Starts with NET": [
     "Netherlands",
@@ -29949,6 +30320,9 @@
   "Starts with ONL": [
     "Only Yesterday"
   ],
+  "Starts with OPA": [
+    "Opabinia"
+  ],
   "Starts with OPE": [
     "Opel"
   ],
@@ -30058,6 +30432,7 @@
   ],
   "Starts with PAR": [
     "Paracelsus",
+    "Paraceratherium",
     "Paradox",
     "Paraguay",
     "Parasaurolophus",
@@ -30109,6 +30484,7 @@
   "Starts with PER": [
     "Percy Jackson & the Olympians",
     "Performance",
+    "Permian-Triassic Extinction",
     "Perseus",
     "Persia",
     "Persona",
@@ -30161,7 +30537,8 @@
     "Pierre"
   ],
   "Starts with PIL": [
-    "Pilsner"
+    "Pilsner",
+    "Pilum"
   ],
   "Starts with PIN": [
     "Pinata",
@@ -30204,10 +30581,12 @@
   "Starts with PLA": [
     "Planet",
     "Plastic",
+    "Plateosaurus",
     "Plato",
     "Platoon"
   ],
   "Starts with PLE": [
+    "Plesiadapis",
     "Plesiosaurus"
   ],
   "Starts with PLU": [
@@ -30237,7 +30616,8 @@
   ],
   "Starts with POM": [
     "Pom Poko",
-    "Pompeii"
+    "Pompeii",
+    "Pompey"
   ],
   "Starts with PON": [
     "Pontoon",
@@ -30698,6 +31078,9 @@
     "Scrappy-Doo",
     "Scrooged"
   ],
+  "Starts with SCU": [
+    "Scutum"
+  ],
   "Starts with SEA": [
     "Seahawk",
     "Seal",
@@ -30720,7 +31103,8 @@
   "Starts with SER": [
     "Serbia",
     "Serenity",
-    "Serpico"
+    "Serpico",
+    "Servilius Casca"
   ],
   "Starts with SEV": [
     "Seven Samurai",
@@ -30752,6 +31136,9 @@
   "Starts with SHI": [
     "Shield",
     "Shikoku"
+  ],
+  "Starts with SHO": [
+    "Shonisaurus"
   ],
   "Starts with SIA": [
     "Siam"
@@ -30916,7 +31303,8 @@
     "Spanish Guinea",
     "Spanish West Africa",
     "Sparkling Wine",
-    "Sparrow"
+    "Sparrow",
+    "Spatha"
   ],
   "Starts with SPE": [
     "Spear",
@@ -31023,6 +31411,7 @@
   ],
   "Starts with SUL": [
     "Sulawesi",
+    "Sulla",
     "Sulu"
   ],
   "Starts with SUM": [
@@ -31129,6 +31518,7 @@
     "Tanganyika",
     "Tangled",
     "Tango",
+    "Tanystropheus",
     "Tanzania"
   ],
   "Starts with TAP": [
@@ -31502,6 +31892,7 @@
     "Tiananmen Square Massacre"
   ],
   "Starts with TIB": [
+    "Tiberius",
     "Tibet"
   ],
   "Starts with TIC": [
@@ -31531,7 +31922,8 @@
   "Starts with TIT": [
     "Titanic",
     "Titanic: Adventure Out of Time",
-    "Titanium"
+    "Titanium",
+    "Titanoboa"
   ],
   "Starts with TO ": [
     "To Kill a Mockingbird",
@@ -31542,6 +31934,7 @@
     "Toaster"
   ],
   "Starts with TOB": [
+    "Toba Supereruption",
     "Toblerone"
   ],
   "Starts with TOG": [
@@ -31586,6 +31979,7 @@
   "Starts with TRA": [
     "Track and Field",
     "Trainspotting",
+    "Trajan",
     "Transnistria"
   ],
   "Starts with TRE": [
@@ -31596,6 +31990,7 @@
   "Starts with TRI": [
     "Triceratops",
     "Trifle",
+    "Trilobite",
     "Trilobites",
     "Trinidad",
     "Trinidad and Tobago",
@@ -31769,6 +32164,7 @@
     "Versailles"
   ],
   "Starts with VES": [
+    "Vespasian",
     "Vesuvius"
   ],
   "Starts with VIC": [
@@ -32571,6 +32967,7 @@
     "Cassowary",
     "Chicken",
     "Chomper",
+    "Coelophysis",
     "Confuciusornis",
     "Cormorant",
     "Crow",
@@ -33905,6 +34302,7 @@
     "Great Wall",
     "Green Tea",
     "Guan Yu",
+    "Guandao",
     "Hainan",
     "Han Wudi's Defeat of the Xiongnu",
     "Happy Together",
@@ -33916,6 +34314,7 @@
     "Hui Guo Rou",
     "In the Mood for Love",
     "Jiaozi",
+    "Jing Ke",
     "Journey to the West",
     "Kombucha",
     "Kung Pao Chicken",
@@ -34319,7 +34718,8 @@
     "Pinatubo",
     "Sulawesi",
     "Sumatra",
-    "Tambora"
+    "Tambora",
+    "Toba Supereruption"
   ],
   "Things Iranian": [
     "Avicenna",
@@ -34855,6 +35255,7 @@
   "Things Roman": [
     "Arch of Titus",
     "Assassination of Caesar",
+    "Augustus",
     "Battle of Actium",
     "Battle of Alesia",
     "Battle of Carrhae",
@@ -34864,13 +35265,18 @@
     "Brutus",
     "Caesar",
     "Caesar crosses the Rubicon",
+    "Caligula",
     "Carthage",
     "Cassius",
+    "Cassius Chaerea",
     "Cicero",
     "Circus Maximus",
+    "Claudius",
     "Cleopatra",
     "Colosseum",
     "Commentarii de Bello Gallico",
+    "Commodus",
+    "Constantine the Great",
     "Constantinople",
     "Curia",
     "Et tu, Brute?",
@@ -34878,26 +35284,40 @@
     "Friends, Romans, countrymen",
     "Gaul",
     "Germania",
+    "Gladius",
+    "Hadrian",
     "Hadrian's Wall",
     "Herculaneum",
     "Hispania",
     "Ides of March",
     "Illyria",
+    "Marcus Aurelius",
     "Mauretania",
+    "Narcissus the Wrestler",
+    "Nero",
     "Ostia Antica",
     "Palestine",
     "Pantheon",
+    "Pilum",
     "Pompeii",
+    "Pompey",
     "Pugio",
     "Render unto Caesar",
     "Roma",
     "Roman Forum",
     "Rome",
+    "Scutum",
     "Second Triumvirate",
+    "Servilius Casca",
+    "Spatha",
+    "Sulla",
     "The Roman Empire",
     "Third Servile War",
+    "Tiberius",
+    "Trajan",
     "Varus, give me back my legions",
     "Veni, vidi, vici",
+    "Vespasian",
     "Vesuvius"
   ],
   "Things Romanian": [
@@ -35555,6 +35975,13 @@
     "Hazel",
     "Olive"
   ],
+  "Triassic Period": [
+    "Coelophysis",
+    "Permian-Triassic Extinction",
+    "Plateosaurus",
+    "Shonisaurus",
+    "Tanystropheus"
+  ],
   "Tricksters": [
     "Anansi",
     "Coyote",
@@ -36043,6 +36470,11 @@
     "Wile E. Coyote",
     "Yosemite Sam"
   ],
+  "Warring States Period": [
+    "Emperor Qin Shi Huang",
+    "Jing Ke",
+    "Sun Tzu"
+  ],
   "Wars": [
     "Battle of Actium",
     "Battle of Alesia",
@@ -36133,7 +36565,9 @@
     "Carcano Model 38",
     "Cobra",
     "Dagger",
+    "Gladius",
     "Green Arrow",
+    "Guandao",
     "Gunpowder",
     "H-bomb",
     "Hammer",
@@ -36141,10 +36575,13 @@
     "Knife",
     "Magazine",
     "Minié ball",
+    "Pilum",
     "Puckle Gun",
     "Pugio",
     "Rifle",
+    "Scutum",
     "Shield",
+    "Spatha",
     "Spear",
     "Sword",
     "Witchblade"
@@ -36176,9 +36613,11 @@
     "Unforgiven"
   ],
   "Whales": [
+    "Basilosaurus",
     "Blue Whale",
     "Humpback Whale",
     "Killer Whale",
+    "Livyatan",
     "Moby Dick"
   ],
   "White Star Line": [
