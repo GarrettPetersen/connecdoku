@@ -329,6 +329,20 @@
     "Stories about Families",
     "Things American"
   ],
+  "A Midsummer Night's Dream": [
+    "16th Century",
+    "Books",
+    "Classic Literature",
+    "Drama Stories",
+    "Ends with EAM",
+    "Fictional People",
+    "Plays",
+    "Romance Stories",
+    "Shakespeare",
+    "Starts with A M",
+    "Things British",
+    "Tragic Heroes"
+  ],
   "A Wrinkle in Time": [
     "2010s",
     "21st Century",
@@ -886,6 +900,7 @@
     "Ends with AGE",
     "Famous Quotes",
     "Literature Quotes",
+    "Shakespeare",
     "Starts with ALL",
     "Theater Quotes",
     "Things British"
@@ -934,7 +949,8 @@
     "Oscar Winners",
     "Period Stories",
     "Starts with AMA",
-    "Things American"
+    "Things American",
+    "Wolfgang Amadeus Mozart"
   ],
   "Amazon": [
     "Companies",
@@ -4614,6 +4630,7 @@
     "1st Century BC",
     "Ancient Figures",
     "Assassination of Caesar",
+    "Drama Stories",
     "Ends with SAR",
     "Eponymous Salads",
     "Foods",
@@ -4625,6 +4642,7 @@
     "Roman Republic",
     "Salad Dressings",
     "Salads",
+    "Shakespeare",
     "Shakespeare Characters",
     "Starts with CAE",
     "Things Italian",
@@ -4983,6 +5001,20 @@
     "Things American",
     "US Navy",
     "Warships"
+  ],
+  "Carmen": [
+    "1870s",
+    "19th Century",
+    "Drama Stories",
+    "Ends with MEN",
+    "Fictional People",
+    "Georges Bizet",
+    "Literature",
+    "Music",
+    "Operas",
+    "Starts with CAR",
+    "Things French",
+    "Tragic Heroes"
   ],
   "Carnotaurus": [
     "Animal Species",
@@ -6065,6 +6097,7 @@
     "Real People",
     "Roman Republic",
     "Romance Stories",
+    "Shakespeare",
     "Shakespeare Characters",
     "Starts with CLE",
     "Things American",
@@ -7402,6 +7435,18 @@
     "Thriller Films",
     "Thriller Stories"
   ],
+  "Death of a Salesman": [
+    "1940s",
+    "20th Century",
+    "Drama Stories",
+    "Ends with MAN",
+    "Fictional People",
+    "Literature",
+    "Plays",
+    "Starts with DEA",
+    "Things American",
+    "Tragic Heroes"
+  ],
   "Death's End": [
     "2010s",
     "21st Century",
@@ -7892,13 +7937,28 @@
     "Things Dominican",
     "WWII Allied Powers"
   ],
+  "Don Giovanni": [
+    "1780s",
+    "18th Century",
+    "Drama Stories",
+    "Ends with NNI",
+    "Fictional People",
+    "Literature",
+    "Men",
+    "Music",
+    "Operas",
+    "People",
+    "Starts with DON",
+    "Things Austrian",
+    "Tragic Heroes",
+    "Wolfgang Amadeus Mozart"
+  ],
   "Don Quixote": [
     "17th Century",
     "Adventure Stories",
     "Books",
     "Classic Literature",
     "Comedy Stories",
-    "Drama Stories",
     "Ends with OTE",
     "Fictional People",
     "Men",
@@ -9115,6 +9175,7 @@
     "Famous Quotes",
     "Literature Quotes",
     "Roman Republic",
+    "Shakespeare",
     "Starts with ET ",
     "Theater Quotes",
     "Things British",
@@ -10167,6 +10228,7 @@
     "Ends with MEN",
     "Famous Quotes",
     "Roman Republic",
+    "Shakespeare",
     "Starts with FRI",
     "Theater Quotes",
     "Things Roman"
@@ -10832,6 +10894,7 @@
     "Ends with TRE",
     "Historical Sites",
     "Medieval Buildings",
+    "Shakespeare",
     "Starts with GLO",
     "Theaters",
     "Things British"
@@ -11732,9 +11795,17 @@
     "Things American"
   ],
   "Hamlet": [
+    "17th Century",
+    "Drama Stories",
     "Ends with LET",
+    "Fictional People",
+    "Men",
+    "Plays",
+    "Shakespeare",
     "Shakespeare Characters",
+    "Shakespeare Plays",
     "Starts with HAM",
+    "Things British",
     "Tragic Heroes"
   ],
   "Hammer": [
@@ -15088,10 +15159,18 @@
     "Types of Animals"
   ],
   "King Lear": [
+    "17th Century",
+    "Drama Stories",
     "Ends with EAR",
+    "Fictional People",
+    "Men",
+    "Plays",
     "Royalty",
+    "Shakespeare",
     "Shakespeare Characters",
+    "Shakespeare Plays",
     "Starts with KIN",
+    "Things British",
     "Tragic Heroes"
   ],
   "King William": [
@@ -15439,6 +15518,20 @@
     "Lighting Technologies",
     "Starts with LED"
   ],
+  "La Bohème": [
+    "1890s",
+    "19th Century",
+    "Drama Stories",
+    "Ends with ÈME",
+    "Fictional People",
+    "Giacomo Puccini",
+    "Literature",
+    "Music",
+    "Operas",
+    "Starts with LA ",
+    "Things Italian",
+    "Tragic Heroes"
+  ],
   "La Garde meurt, elle ne se rend pas!": [
     "1810s",
     "19th Century",
@@ -15480,6 +15573,20 @@
     "Place Names",
     "Starts with LA ",
     "Things Spanish"
+  ],
+  "La Traviata": [
+    "1850s",
+    "19th Century",
+    "Drama Stories",
+    "Ends with ATA",
+    "Fictional People",
+    "Giuseppe Verdi",
+    "Literature",
+    "Music",
+    "Operas",
+    "Starts with LA ",
+    "Things Italian",
+    "Tragic Heroes"
   ],
   "Lacrosse": [
     "Ends with SSE",
@@ -16620,9 +16727,17 @@
     "Things That Fly"
   ],
   "Macbeth": [
+    "17th Century",
+    "Drama Stories",
     "Ends with ETH",
+    "Fictional People",
+    "Men",
+    "Plays",
+    "Shakespeare",
     "Shakespeare Characters",
+    "Shakespeare Plays",
     "Starts with MAC",
+    "Things British",
     "Tragic Heroes"
   ],
   "Mace": [
@@ -16681,6 +16796,22 @@
     "Republics",
     "Starts with MAD",
     "Things American"
+  ],
+  "Madame Butterfly": [
+    "1900s",
+    "20th Century",
+    "Drama Stories",
+    "Ends with FLY",
+    "Fictional People",
+    "Giacomo Puccini",
+    "Literature",
+    "Music",
+    "Operas",
+    "People",
+    "Starts with MAD",
+    "Things Italian",
+    "Tragic Heroes",
+    "Women"
   ],
   "Madame C.J. Walker": [
     "19th Century",
@@ -18461,6 +18592,19 @@
   "Mu": [
     "Greek Letters"
   ],
+  "Much Ado About Nothing": [
+    "16th Century",
+    "Drama Stories",
+    "Ends with ING",
+    "Fictional People",
+    "Literature",
+    "Plays",
+    "Shakespeare",
+    "Shakespeare Plays",
+    "Starts with MUC",
+    "Things British",
+    "Tragic Heroes"
+  ],
   "Mulan": [
     "2D Animated Films",
     "Adventure Stories",
@@ -19535,6 +19679,20 @@
     "Things Japanese",
     "Trojan War"
   ],
+  "Of Mice and Men": [
+    "1930s",
+    "20th Century",
+    "Books",
+    "Classic Literature",
+    "Drama Stories",
+    "Ends with MEN",
+    "Fictional People",
+    "Literature",
+    "Plays",
+    "Starts with OF ",
+    "Things American",
+    "Tragic Heroes"
+  ],
   "Oh, the Places You'll Go!": [
     "1990s",
     "20th Century",
@@ -19983,6 +20141,7 @@
     "Theropods"
   ],
   "Othello": [
+    "17th Century",
     "1990s",
     "20th Century",
     "Black and White",
@@ -19990,6 +20149,8 @@
     "Board Games",
     "Drama Stories",
     "Ends with LLO",
+    "Fictional People",
+    "Men",
     "Movies",
     "Movies directed by Oliver Parker",
     "Movies directed by Orson Welles",
@@ -19998,9 +20159,13 @@
     "Movies featuring Laurence Fishburne",
     "Movies featuring Orson Welles",
     "Period Stories",
+    "Plays",
+    "Shakespeare",
     "Shakespeare Characters",
+    "Shakespeare Plays",
     "Starts with OTH",
     "Things American",
+    "Things British",
     "Tragedy Stories",
     "Tragic Heroes"
   ],
@@ -21956,11 +22121,16 @@
     "Things That Fly"
   ],
   "Puck": [
+    "16th Century",
     "Ends with UCK",
+    "Fictional People",
     "Folklore Figures",
+    "Men",
+    "Shakespeare",
     "Shakespeare Characters",
     "Sports Equipment",
     "Starts with PUC",
+    "Things British",
     "Tricksters"
   ],
   "Puckle Gun": [
@@ -22897,6 +23067,22 @@
     "Starts with RIF",
     "Weapons"
   ],
+  "Rigoletto": [
+    "1850s",
+    "19th Century",
+    "Drama Stories",
+    "Ends with TTO",
+    "Fictional People",
+    "Giuseppe Verdi",
+    "Literature",
+    "Men",
+    "Music",
+    "Operas",
+    "People",
+    "Starts with RIG",
+    "Things Italian",
+    "Tragic Heroes"
+  ],
   "Ringo": [
     "1960s",
     "1970s",
@@ -23278,11 +23464,13 @@
   ],
   "Romeo": [
     "16th Century",
+    "Drama Stories",
     "Ends with MEO",
     "Fictional People",
     "Men",
     "NATO Phonetic Alphabet",
     "People",
+    "Shakespeare",
     "Shakespeare Characters",
     "Starts with ROM",
     "Things Italian"
@@ -24520,6 +24708,7 @@
     "People",
     "Poets",
     "Real People",
+    "Shakespeare",
     "Single Name Writers",
     "Starts with SHA",
     "Things British",
@@ -24542,6 +24731,7 @@
     "Oscar Winners",
     "Period Stories",
     "Romance Stories",
+    "Shakespeare",
     "Starts with SHA",
     "Things British"
   ],
@@ -25214,6 +25404,7 @@
     "16th Century",
     "Ends with ARK",
     "Famous Quotes",
+    "Shakespeare",
     "Starts with SOM",
     "Theater Quotes",
     "Things British"
@@ -27277,6 +27468,20 @@
     "Starts with THE",
     "Things French"
   ],
+  "The Barber of Seville": [
+    "1810s",
+    "19th Century",
+    "Drama Stories",
+    "Ends with LLE",
+    "Fictional People",
+    "Gioachino Rossini",
+    "Literature",
+    "Music",
+    "Operas",
+    "Starts with THE",
+    "Things Italian",
+    "Tragic Heroes"
+  ],
   "The Battle of Stalingrad": [
     "1940s",
     "20th Century",
@@ -29040,6 +29245,20 @@
     "Starts with THE",
     "Things British"
   ],
+  "The Magic Flute": [
+    "1790s",
+    "18th Century",
+    "Drama Stories",
+    "Ends with UTE",
+    "Fictional People",
+    "Literature",
+    "Music",
+    "Operas",
+    "Starts with THE",
+    "Things Austrian",
+    "Tragic Heroes",
+    "Wolfgang Amadeus Mozart"
+  ],
   "The Magician's Nephew": [
     "1950s",
     "20th Century",
@@ -29201,6 +29420,19 @@
     "Starts with THE",
     "Things British",
     "Things Kenyan"
+  ],
+  "The Merchant of Venice": [
+    "16th Century",
+    "Drama Stories",
+    "Ends with ICE",
+    "Fictional People",
+    "Literature",
+    "Plays",
+    "Shakespeare",
+    "Shakespeare Plays",
+    "Starts with THE",
+    "Things British",
+    "Tragic Heroes"
   ],
   "The Mexican Revolution": [
     "1910s",
@@ -30114,6 +30346,19 @@
     "Studio Ghibli",
     "Things Japanese"
   ],
+  "The Tempest": [
+    "17th Century",
+    "Drama Stories",
+    "Ends with EST",
+    "Fictional People",
+    "Literature",
+    "Plays",
+    "Shakespeare",
+    "Shakespeare Plays",
+    "Starts with THE",
+    "Things British",
+    "Tragic Heroes"
+  ],
   "The Terminator": [
     "1980s",
     "20th Century",
@@ -30510,8 +30755,11 @@
   ],
   "The play's the thing": [
     "16th Century",
+    "17th Century",
     "Ends with ING",
     "Famous Quotes",
+    "Literature Quotes",
+    "Shakespeare",
     "Shakespeare Characters",
     "Starts with THE",
     "Theater Quotes",
@@ -30917,6 +31165,7 @@
     "Ends with  BE",
     "Famous Quotes",
     "Literature Quotes",
+    "Shakespeare",
     "Starts with TO ",
     "Theater Quotes",
     "Things British"
@@ -31056,6 +31305,22 @@
     "Foods",
     "Starts with TOR",
     "Things Mexican"
+  ],
+  "Tosca": [
+    "1900s",
+    "20th Century",
+    "Drama Stories",
+    "Ends with SCA",
+    "Fictional People",
+    "Giacomo Puccini",
+    "Literature",
+    "Music",
+    "Operas",
+    "People",
+    "Starts with TOS",
+    "Things Italian",
+    "Tragic Heroes",
+    "Women"
   ],
   "Toscanini": [
     "1960s",
@@ -31468,6 +31733,19 @@
     "Fictional Characters",
     "Starts with TWE",
     "Warner Bros. Characters"
+  ],
+  "Twelfth Night": [
+    "16th Century",
+    "Drama Stories",
+    "Ends with GHT",
+    "Fictional People",
+    "Literature",
+    "Plays",
+    "Shakespeare",
+    "Shakespeare Plays",
+    "Starts with TWE",
+    "Things British",
+    "Tragic Heroes"
   ],
   "Twice Cooked Pork": [
     "Ends with ORK",
