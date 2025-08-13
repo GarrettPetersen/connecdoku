@@ -1001,46 +1001,6 @@
   },
   {
     "rows": [
-      "1860s",
-      "Assassination of JFK",
-      "Things Roman",
-      "Things Chinese"
-    ],
-    "cols": [
-      "1960s",
-      "Buildings",
-      "Cities",
-      "Things Italian"
-    ],
-    "words": [
-      [
-        "Johnson",
-        "Ford's Theatre",
-        "Lincoln",
-        "The Italian Unification"
-      ],
-      [
-        "November 22nd, 1963",
-        "Texas Book Depository",
-        "Dallas",
-        "Carcano Model 38"
-      ],
-      [
-        "Cleopatra",
-        "Hadrian's Wall",
-        "Constantinople",
-        "Vesuvius"
-      ],
-      [
-        "Chou En-Lai",
-        "Xuanwu Gate",
-        "Chang'an",
-        "Marco Polo"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "20th Century",
       "Red Things",
       "The Good Place",
@@ -1281,46 +1241,6 @@
   },
   {
     "rows": [
-      "1860s",
-      "18th Century",
-      "Ends with ARK",
-      "Things Roman"
-    ],
-    "cols": [
-      "Assassins",
-      "Movies",
-      "Place Names",
-      "Things British"
-    ],
-    "words": [
-      [
-        "John Wilkes Booth",
-        "Little Women",
-        "Lincoln",
-        "Alice's Adventures in Wonderland"
-      ],
-      [
-        "Charlotte Corday",
-        "Beethoven",
-        "Washington",
-        "Newton"
-      ],
-      [
-        "Arya Stark",
-        "Jurassic Park",
-        "Denmark",
-        "Something is rotten in Denmark"
-      ],
-      [
-        "Brutus",
-        "Cleopatra",
-        "Herculaneum",
-        "Britannia"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "1910s",
       "Things Italian",
       "Things Russian",
@@ -1356,6 +1276,46 @@
         "Fallout",
         "Victoria",
         "Total War"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1860s",
+      "18th Century",
+      "Ends with ARK",
+      "Things Roman"
+    ],
+    "cols": [
+      "Assassins",
+      "Movies",
+      "Place Names",
+      "Things British"
+    ],
+    "words": [
+      [
+        "John Wilkes Booth",
+        "Little Women",
+        "Lincoln",
+        "Alice's Adventures in Wonderland"
+      ],
+      [
+        "Charlotte Corday",
+        "Beethoven",
+        "Washington",
+        "Newton"
+      ],
+      [
+        "Arya Stark",
+        "Jurassic Park",
+        "Denmark",
+        "Something is rotten in Denmark"
+      ],
+      [
+        "Brutus",
+        "Cleopatra",
+        "Herculaneum",
+        "Britannia"
       ]
     ]
   },
@@ -1495,7 +1455,7 @@
     "words": [
       [
         "Globe Theatre",
-        "Don Quixote",
+        "The Tempest",
         "The Great Fire of London",
         "Guy Fawkes"
       ],
@@ -1636,6 +1596,46 @@
         "Dante's Peak",
         "Soul",
         "Dante"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1860s",
+      "Assassination of JFK",
+      "Things Roman",
+      "Things Chinese"
+    ],
+    "cols": [
+      "1960s",
+      "Buildings",
+      "Cities",
+      "Things Italian"
+    ],
+    "words": [
+      [
+        "Johnson",
+        "Ford's Theatre",
+        "Lincoln",
+        "The Italian Unification"
+      ],
+      [
+        "November 22nd, 1963",
+        "Texas Book Depository",
+        "Dallas",
+        "Carcano Model 38"
+      ],
+      [
+        "Cleopatra",
+        "Hadrian's Wall",
+        "Constantinople",
+        "Vesuvius"
+      ],
+      [
+        "Chou En-Lai",
+        "Xuanwu Gate",
+        "Chang'an",
+        "Marco Polo"
       ]
     ]
   },
