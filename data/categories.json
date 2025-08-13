@@ -8312,6 +8312,9 @@
     "South Sudan",
     "Sudan"
   ],
+  "Ends with DAO": [
+    "Guandao"
+  ],
   "Ends with DAR": [
     "Cedar"
   ],
@@ -9842,6 +9845,7 @@
     "Aquarius",
     "Cassius",
     "Confucius",
+    "Gladius",
     "Mauritius",
     "Sagittarius",
     "Scorpius",
@@ -10248,6 +10252,9 @@
   ],
   "Ends with LUI": [
     "Tolui"
+  ],
+  "Ends with LUM": [
+    "Pilum"
   ],
   "Ends with LUS": [
     "Battle of Pharsalus",
@@ -12027,6 +12034,9 @@
   "Ends with TEZ": [
     "Lola Montez"
   ],
+  "Ends with THA": [
+    "Spatha"
+  ],
   "Ends with THE": [
     "Absinthe"
   ],
@@ -12142,6 +12152,9 @@
   ],
   "Ends with TTY": [
     "Arrietty"
+  ],
+  "Ends with TUM": [
+    "Scutum"
   ],
   "Ends with TUS": [
     "Arch of Titus",
@@ -14966,9 +14979,14 @@
     "Bow",
     "Club",
     "Dagger",
+    "Gladius",
+    "Guandao",
     "Halberd",
     "Mace",
+    "Pilum",
     "Pugio",
+    "Scutum",
+    "Spatha",
     "Spear",
     "Sword"
   ],
@@ -25075,6 +25093,7 @@
     "Constantinople",
     "Gaul",
     "Germania",
+    "Gladius",
     "Hadrian's Wall",
     "Herculaneum",
     "Hispania",
@@ -25083,12 +25102,15 @@
     "Ostia Antica",
     "Palestine",
     "Pantheon",
+    "Pilum",
     "Pompeii",
     "Pugio",
     "Render unto Caesar",
     "Roma",
     "Roman Forum",
     "Rome",
+    "Scutum",
+    "Spatha",
     "Varus, give me back my legions",
     "Vesuvius"
   ],
@@ -25130,7 +25152,10 @@
     "Et tu, Brute?",
     "First Triumvirate",
     "Friends, Romans, countrymen",
+    "Gladius",
     "Ides of March",
+    "Pilum",
+    "Scutum",
     "Second Triumvirate",
     "The Roman Empire",
     "Third Servile War",
@@ -28308,6 +28333,7 @@
   ],
   "Starts with GLA": [
     "Gladiator",
+    "Gladius",
     "Glass"
   ],
   "Starts with GLO": [
@@ -28403,6 +28429,7 @@
     "Guacamole",
     "Guam",
     "Guan Yu",
+    "Guandao",
     "Guatemala"
   ],
   "Starts with GUC": [
@@ -30161,7 +30188,8 @@
     "Pierre"
   ],
   "Starts with PIL": [
-    "Pilsner"
+    "Pilsner",
+    "Pilum"
   ],
   "Starts with PIN": [
     "Pinata",
@@ -30698,6 +30726,9 @@
     "Scrappy-Doo",
     "Scrooged"
   ],
+  "Starts with SCU": [
+    "Scutum"
+  ],
   "Starts with SEA": [
     "Seahawk",
     "Seal",
@@ -30916,7 +30947,8 @@
     "Spanish Guinea",
     "Spanish West Africa",
     "Sparkling Wine",
-    "Sparrow"
+    "Sparrow",
+    "Spatha"
   ],
   "Starts with SPE": [
     "Spear",
@@ -33905,6 +33937,7 @@
     "Great Wall",
     "Green Tea",
     "Guan Yu",
+    "Guandao",
     "Hainan",
     "Han Wudi's Defeat of the Xiongnu",
     "Happy Together",
@@ -34878,6 +34911,7 @@
     "Friends, Romans, countrymen",
     "Gaul",
     "Germania",
+    "Gladius",
     "Hadrian's Wall",
     "Herculaneum",
     "Hispania",
@@ -34887,13 +34921,16 @@
     "Ostia Antica",
     "Palestine",
     "Pantheon",
+    "Pilum",
     "Pompeii",
     "Pugio",
     "Render unto Caesar",
     "Roma",
     "Roman Forum",
     "Rome",
+    "Scutum",
     "Second Triumvirate",
+    "Spatha",
     "The Roman Empire",
     "Third Servile War",
     "Varus, give me back my legions",
@@ -36133,7 +36170,9 @@
     "Carcano Model 38",
     "Cobra",
     "Dagger",
+    "Gladius",
     "Green Arrow",
+    "Guandao",
     "Gunpowder",
     "H-bomb",
     "Hammer",
@@ -36141,10 +36180,13 @@
     "Knife",
     "Magazine",
     "Minié ball",
+    "Pilum",
     "Puckle Gun",
     "Pugio",
     "Rifle",
+    "Scutum",
     "Shield",
+    "Spatha",
     "Spear",
     "Sword",
     "Witchblade"
