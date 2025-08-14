@@ -244,11 +244,11 @@ function getCategoriesFromLastNDays(numDays) {
     return Array.from(recentCategories);
 }
 
-function findPuzzleWithNoRecentCategories(db, recentCategories) {
+function findPuzzlesWithNoRecentCategories(db, recentCategories, limit = 10) {
     return new Promise((resolve, reject) => {
         if (recentCategories.length === 0) {
-            // If no recent categories, just get a quality-aware random puzzle
-            return getRandomPuzzle(db);
+            // If no recent categories, just get quality-aware random puzzles
+            return getMultipleRandomPuzzles(db, limit);
         }
 
         // Use CTE to create a temporary table of recent categories
@@ -284,44 +284,50 @@ function findPuzzleWithNoRecentCategories(db, recentCategories) {
             SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp, q
             FROM sample
             ORDER BY q DESC
-            LIMIT 1
+            LIMIT ?
         `;
 
-        db.get(query, [DEFAULT_MIN_QUALITY], (err, row) => {
+        db.all(query, [DEFAULT_MIN_QUALITY, limit], (err, rows) => {
             if (err) {
                 reject(err);
-            } else if (row) {
-                if (usedHashes.has(row.puzzle_hash)) {
-                    resolve(null);
-                    return;
+            } else if (rows && rows.length > 0) {
+                const validPuzzles = [];
+                let invalidPuzzlesFound = 0;
+
+                for (const row of rows) {
+                    if (usedHashes.has(row.puzzle_hash)) {
+                        continue; // Skip already used puzzles
+                    }
+
+                    const puzzle = {
+                        rows: [row.row0, row.row1, row.row2, row.row3],
+                        cols: [row.col0, row.col1, row.col2, row.col3],
+                        hash: row.puzzle_hash,
+                        timestamp: row.timestamp,
+                        qualityScore: row.q
+                    };
+
+                    // Validate the puzzle
+                    if (!validatePuzzle(puzzle)) {
+                        invalidPuzzlesFound++;
+                        console.log(`⚠️  Found invalid puzzle in secret sauce search, deleting from database...`);
+
+                        // Delete the invalid puzzle from database
+                        deletePuzzleFromDatabase(db, puzzle.hash).then(() => {
+                            console.log(`🗑️  Deleted invalid puzzle ${puzzle.hash.substring(0, 8)}...`);
+                        }).catch(err => {
+                            console.error("Error deleting invalid puzzle:", err.message);
+                        });
+                        continue; // Skip this puzzle
+                    }
+
+                    validPuzzles.push(puzzle);
                 }
 
-                const puzzle = {
-                    rows: [row.row0, row.row1, row.row2, row.row3],
-                    cols: [row.col0, row.col1, row.col2, row.col3],
-                    hash: row.puzzle_hash,
-                    timestamp: row.timestamp,
-                    qualityScore: row.q
-                };
-
-                // Validate the puzzle before returning it
-                if (!validatePuzzle(puzzle)) {
-                    console.log(`⚠️  Found invalid puzzle in secret sauce search, deleting from database...`);
-
-                    // Delete the invalid puzzle from database
-                    deletePuzzleFromDatabase(db, puzzle.hash).then(() => {
-                        console.log(`🗑️  Deleted invalid puzzle ${puzzle.hash.substring(0, 8)}...`);
-                        resolve(null); // Return null to indicate no valid puzzle found
-                    }).catch(err => {
-                        console.error("Error deleting invalid puzzle:", err.message);
-                        resolve(null); // Return null even if deletion fails
-                    });
-                    return;
-                }
-
-                resolve(puzzle);
+                console.log(`Found ${validPuzzles.length} valid puzzles (${invalidPuzzlesFound} invalid ones deleted)`);
+                resolve(validPuzzles);
             } else {
-                resolve(null);
+                resolve([]);
             }
         });
     });
@@ -1029,36 +1035,55 @@ async function main() {
 
             const sqliteDb = await openDatabase();
             try {
-                // Try multiple times with increasing batch sizes if needed
-                let attempts = 0;
-                const maxAttempts = 3;
+                console.log("🌶️ Secret Sauce: Finding top 10 puzzles with NO categories from recent days...");
 
-                while (attempts < maxAttempts) {
-                    attempts++;
-                    console.log(`Attempt ${attempts}/${maxAttempts} to find secret sauce puzzle...`);
+                const puzzles = await findPuzzlesWithNoRecentCategories(sqliteDb, recentCategories, 10);
 
-                    result = await findPuzzleWithNoRecentCategories(sqliteDb, recentCategories);
-                    if (result) {
+                if (puzzles.length === 0) {
+                    console.log("❌ No valid puzzles found with no recent categories");
+                    result = null;
+                } else {
+                    console.log(`✅ Found ${puzzles.length} valid puzzles with no recent categories`);
+
+                    // Create menu choices for the puzzles
+                    const puzzleChoices = puzzles.map((puzzle, index) => {
+                        const allCategories = [...puzzle.rows, ...puzzle.cols];
+                        const qs = Math.round(puzzle.qualityScore * 100) / 100;
+                        const scoreIcon = scoreEmoji(puzzle.qualityScore);
+
+                        return {
+                            name: `${index + 1}. ${scoreIcon} Quality: ${qs.toFixed(2)} | Categories: ${allCategories.join(", ")}`,
+                            value: index
+                        };
+                    });
+
+                    // Add "None" option to go back to main menu
+                    puzzleChoices.push({
+                        name: "❌ None - return to main menu",
+                        value: "none"
+                    });
+
+                    const selectedIndex = await prompts.select({
+                        message: "Choose a puzzle from the top 10 (sorted by quality):",
+                        choices: puzzleChoices
+                    });
+
+                    if (selectedIndex === "none") {
+                        console.log("Returning to main menu...");
+                        result = null;
+                    } else {
+                        const selectedPuzzle = puzzles[selectedIndex];
                         // Calculate overlap for display (should be 0 for secret sauce)
-                        const allCategories = [...result.rows, ...result.cols];
+                        const allCategories = [...selectedPuzzle.rows, ...selectedPuzzle.cols];
                         let overlap = 0;
                         for (const category of allCategories) {
                             if (categoryUsage[category]) {
                                 overlap += categoryUsage[category];
                             }
                         }
-                        result = { puzzle: result, overlap: overlap };
-                        console.log(`✅ Found secret sauce puzzle on attempt ${attempts}`);
-                        break;
+                        result = { puzzle: selectedPuzzle, overlap: overlap };
+                        console.log(`✅ Selected puzzle ${selectedIndex + 1} of ${puzzles.length}`);
                     }
-
-                    if (attempts < maxAttempts) {
-                        console.log(`No valid puzzle found, trying again...`);
-                    }
-                }
-
-                if (!result) {
-                    console.log("❌ Could not find a puzzle with no recent categories after multiple attempts");
                 }
             } finally {
                 sqliteDb.close();
