@@ -35,6 +35,12 @@ function getPuzzleDate(index) {
 function getPuzzleByIndex(index) {
     try {
         const puzzlesData = JSON.parse(fs.readFileSync('daily_puzzles/puzzles.json', 'utf8'));
+
+        // Handle negative indexing (like Python)
+        if (index < 0) {
+            index = puzzlesData.length + index;
+        }
+
         return puzzlesData[index];
     } catch (error) {
         console.error(`Error reading puzzle at index ${index}:`, error.message);
