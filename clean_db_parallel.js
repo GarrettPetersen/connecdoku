@@ -107,16 +107,31 @@ async function getHashRange(db) {
   const nWorkers = os.cpus().length;
   const status = Array.from({ length: nWorkers }, () => ({ current: null }));
   const globalTally = Object.create(null);
+  let reservedPrinted = false;
+  const RESERVED_LINES = 2 + nWorkers; // overall + per-worker + spacer
   console.log(`- Spawning ${nWorkers} worker(s)`);
   function redraw() {
     const doneChunks = completed.size + status.filter(s => s.current && s.current.done).length;
     const pct = (doneChunks) / BATCH_COUNT;
-    process.stdout.write(`\nOverall: [${bar(pct)}] ${(pct*100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
+    const lines = [];
+    lines.push(`Overall: [${bar(pct)}] ${(pct*100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
     status.forEach((st, i) => {
       const s = st.current;
       const line = s ? `chunk ${s.idx}: ${s.processed}/${s.total}` : 'idle';
-      process.stdout.write(`\nW${i} ${line}`);
+      lines.push(`W${i} ${line}`);
     });
+    lines.push(""); // spacer
+
+    if (!reservedPrinted) {
+      process.stdout.write("\n".repeat(RESERVED_LINES));
+      reservedPrinted = true;
+    }
+    // Move cursor up and overwrite only our reserved block
+    process.stdout.write(`\x1b[${RESERVED_LINES}A`);
+    for (let i = 0; i < RESERVED_LINES; i++) {
+      const text = lines[i] || "";
+      process.stdout.write(`\x1b[2K\r${text}\n`); // clear line, write, newline
+    }
   }
 
   let active = nWorkers;
