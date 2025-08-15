@@ -92,10 +92,9 @@ fn excl(rows: &[usize; 4], state: &State) -> bool {
     true
 }
 
-fn run_work(state: &State, start: usize, end: usize, j_start: Option<usize>, j_end: Option<usize>) -> Vec<Out> {
-    let n = state.masks.len();
+fn run_work_streaming<W: Write>(state: &State, start: usize, end: usize, j_start: Option<usize>, j_end: Option<usize>, writer: &mut W) {
+    let _n = state.masks.len();
     let mask_len = state.masks[0].len();
-    let mut outs = Vec::new();
 
     for i in start..end {
         let mut j_list: Vec<usize> = state.n2[i].iter().copied().filter(|&j| j > i).collect();
@@ -182,7 +181,7 @@ fn run_work(state: &State, start: usize, end: usize, j_start: Option<usize>, j_e
                                     }
                                     if !ok { continue; }
 
-                                    outs.push(Out::Found { rows, cols });
+                                    let _ = writeln!(writer, "{}", serde_json::to_string(&Out::Found { rows, cols }).unwrap());
                                 }
                             }
                         }
@@ -190,13 +189,15 @@ fn run_work(state: &State, start: usize, end: usize, j_start: Option<usize>, j_e
                 }
             }
             j_progress += 1;
-            if j_progress % 2 == 0 || j_progress == total_j { outs.push(Out::Tick { jProgress: j_progress, totalJ: total_j }); }
+            if j_progress % 2 == 0 || j_progress == total_j {
+                let _ = writeln!(writer, "{}", serde_json::to_string(&Out::Tick { jProgress: j_progress, totalJ: total_j }).unwrap());
+            }
         }
-        if total_j == 0 || j_progress != total_j { outs.push(Out::Tick { jProgress: total_j, totalJ: total_j }); }
+        if total_j == 0 || j_progress != total_j {
+            let _ = writeln!(writer, "{}", serde_json::to_string(&Out::Tick { jProgress: total_j, totalJ: total_j }).unwrap());
+        }
     }
-
-    outs.push(Out::Done { totalJ: 0 });
-    outs
+    let _ = writeln!(writer, "{}", serde_json::to_string(&Out::Done { totalJ: 0 }).unwrap());
 }
 
 fn main() {
@@ -234,9 +235,8 @@ fn main() {
             }
             Msg::Work { start, end, jStart, jEnd } => {
                 if let Some(ref state) = state_opt {
-                    for out in run_work(state, start, end, jStart, jEnd) {
-                        let _ = writeln!(stdout, "{}", serde_json::to_string(&out).unwrap());
-                    }
+                    let mut handle = stdout.lock();
+                    run_work_streaming(state, start, end, jStart, jEnd, &mut handle);
                 } else {
                     let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: "not initialized".into()}).unwrap());
                 }
