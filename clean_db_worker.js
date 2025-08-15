@@ -30,7 +30,17 @@ async function ensureCleaner() {
 }
 async function readLine() { if (queue.length) return queue.shift(); await new Promise(res => waitResolve = res); return queue.shift(); }
 
-function setupDb() { const db = new sqlite3.Database(DB_PATH); db.serialize(() => { db.run('PRAGMA journal_mode=WAL'); db.run('PRAGMA synchronous=OFF'); }); return db; }
+function setupDb() {
+  return new Promise((resolve, reject) => {
+    const db = new sqlite3.Database(DB_PATH, err => {
+      if (err) return reject(err);
+      db.exec('PRAGMA journal_mode=WAL; PRAGMA synchronous=NORMAL; PRAGMA busy_timeout=30000;', err2 => {
+        if (err2) return reject(err2);
+        resolve(db);
+      });
+    });
+  });
+}
 
 async function acquireWriteLock() {
   while (true) {
@@ -47,7 +57,7 @@ parentPort.on('message', async msg => {
     parentPort.postMessage({ type: 'request_work', id: WID });
   } else if (msg.type === 'work') {
     const { job } = msg; await ensureCleaner();
-    const db = setupDb();
+    const db = await setupDb();
     const puzzles = await new Promise((resolve, reject) => {
       db.all(`SELECT puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3 FROM puzzles WHERE puzzle_hash > ? AND puzzle_hash <= ? ORDER BY puzzle_hash`, [job.minHash, job.maxHash], (err, rows) => err ? reject(err) : resolve(rows || []));
     });
@@ -78,8 +88,8 @@ parentPort.on('message', async msg => {
     // Serialize write phase to avoid SQLITE_BUSY across workers
     if (invalid.length > 0 || scoreUpdates.length > 0) {
       await acquireWriteLock();
-      // increase busy timeout during write window
-      db.serialize(() => { db.run('PRAGMA busy_timeout=30000'); });
+      // transaction for write window
+      await new Promise((resolve, reject) => { db.run('BEGIN IMMEDIATE', err => err ? reject(err) : resolve()); });
     }
     if (invalid.length > 0) {
       // delete in chunks under 900 params
@@ -106,6 +116,7 @@ parentPort.on('message', async msg => {
       }
     }
     if (invalid.length > 0 || scoreUpdates.length > 0) {
+      await new Promise((resolve, reject) => { db.run('COMMIT', err => err ? reject(err) : resolve()); });
       releaseWriteLock();
     }
     db.close();
