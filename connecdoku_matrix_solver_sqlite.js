@@ -24,6 +24,7 @@ import { Worker, isMainThread, parentPort, workerData } from "worker_threads";
 import sqlite3 from "sqlite3";
 import { Matrix } from "ml-matrix";
 import { performance } from "perf_hooks";
+import { spawnSync } from "child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, "data");
@@ -136,12 +137,12 @@ if (isMainThread) {
   const WORD_IDX = new Map(ALL_WORDS.map((w, i) => [w, i]));
   const MASK_LEN = Math.ceil(ALL_WORDS.length / 32);
 
+  // Build masks once using the already loaded word index
   const mask = cats.map(c => {
     const words = categoriesJson[c];
-    const m = new Uint32Array(Math.ceil(Object.keys(JSON.parse(fs.readFileSync(WORDS_F, "utf8"))).length / 32));
-    const wordIdx = new Map(Object.keys(JSON.parse(fs.readFileSync(WORDS_F, "utf8"))).map((w, i) => [w, i]));
+    const m = new Uint32Array(MASK_LEN);
     for (const w of words) {
-      const idx = wordIdx.get(w);
+      const idx = WORD_IDX.get(w);
       if (idx !== undefined) m[idx >>> 5] |= 1 << (idx & 31);
     }
     return m;
@@ -297,7 +298,9 @@ if (isMainThread) {
   const splitChunks = workQueue.filter(chunk => chunk.chunkIndex !== undefined);
   const splitIValues = [...new Set(splitChunks.map(chunk => chunk.start))];
   if (splitIValues.length > 0) {
-    console.log(`Split ${splitIValues.length} hard i-values into ${splitChunks.length} smaller chunks: ${splitIValues.join(', ')}`);
+    const displayValues = splitIValues.length <= 10 ? splitIValues.join(', ') : 
+      `${splitIValues.slice(0, 5).join(', ')}... and ${splitIValues.length - 5} more`;
+    console.log(`Split ${splitIValues.length} hard i-values into ${splitChunks.length} smaller chunks: ${displayValues}`);
   }
 
   console.log(`Total work: ${n - 7} valid i-values in ${workQueue.length} chunks (${completedChunks.size} already completed)`);
@@ -603,24 +606,55 @@ if (isMainThread) {
     for (let j = i + 1; j < n; j++)
       if (subset(mask[i], mask[j]) || subset(mask[j], mask[i])) S[i][j] = S[j][i] = true;
 
-  // 1-away
-  const A = Matrix.zeros(n, n);
-  for (let i = 0; i < n; i++)
-    for (let j = i + 1; j < n; j++)
-      if (!S[i][j] && intersects(mask[i], mask[j])) A.set(i, j, 1), A.set(j, i, 1);
-  const N1 = Array.from({ length: n }, (_, i) =>
-    new Set(A.getRow(i).flatMap((v, idx) => v ? idx : []))
-  );
+  // Build adjacency using Rust helper by default (if available). Opt-out with USE_RUST_HELPER=0
+  const rustOptOut = process.env.USE_RUST_HELPER === "0";
+  let N1, N2;
+  if (!rustOptOut) {
+    try {
+      const helperRelease = path.join(__dirname, "rust_helper", "target", "release", "cdx_helper");
+      const helperDebug = path.join(__dirname, "rust_helper", "target", "debug", "cdx_helper");
+      const helperPath = fs.existsSync(helperRelease) ? helperRelease : (fs.existsSync(helperDebug) ? helperDebug : null);
+      if (!helperPath) throw new Error("Rust helper binary not found");
 
-  // 2-away
-  const A2 = A.mmul(A);
+      const masksPlain = mask.map(m => Array.from(m));
+      const input = JSON.stringify({ masks: masksPlain });
+      const res = spawnSync(helperPath, [], { input, encoding: "utf8" });
+      if (res.status !== 0) throw new Error(`Rust helper failed: ${res.stderr || res.stdout || res.status}`);
+      const parsed = JSON.parse(res.stdout);
+      N1 = parsed.N1.map(arr => new Set(arr));
+      N2 = parsed.N2.map(arr => new Set(arr));
+    } catch (e) {
+      console.warn("Rust helper unavailable or failed, falling back to JS adjacency:", e.message);
+    }
+  }
+  if (!N1 || !N2) {
+    // JS fallback: 1-away
+    const A = Matrix.zeros(n, n);
+    for (let i = 0; i < n; i++)
+      for (let j = i + 1; j < n; j++)
+        if (!S[i][j] && intersects(mask[i], mask[j])) A.set(i, j, 1), A.set(j, i, 1);
+    N1 = Array.from({ length: n }, (_, i) =>
+      new Set(A.getRow(i).flatMap((v, idx) => v ? idx : []))
+    );
+
+    // JS fallback: 2-away
+    const A2 = A.mmul(A);
+    const B = Array.from({ length: n }, () => Array(n).fill(false));
+    for (let i = 0; i < n; i++)
+      for (let j = i + 1; j < n; j++)
+        if (!S[i][j] && A2.get(i, j) >= 4) B[i][j] = B[j][i] = true;
+    N2 = Array.from({ length: n }, (_, i) =>
+      new Set(B[i].flatMap((v, idx) => v ? idx : []))
+    );
+  }
+
+  // Build B matrix from N2 (needed for column validation regardless of whether we used Rust or JS)
   const B = Array.from({ length: n }, () => Array(n).fill(false));
-  for (let i = 0; i < n; i++)
-    for (let j = i + 1; j < n; j++)
-      if (!S[i][j] && A2.get(i, j) >= 4) B[i][j] = B[j][i] = true;
-  const N2 = Array.from({ length: n }, (_, i) =>
-    new Set(B[i].flatMap((v, idx) => v ? idx : []))
-  );
+  for (let i = 0; i < n; i++) {
+    for (const j of N2[i]) {
+      B[i][j] = B[j][i] = true;
+    }
+  }
 
   // memoised pair → third-row list
   const cache = new Map();

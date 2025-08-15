@@ -1,1 +1,23 @@
 Connecdoku is a word game. It features a 4x4 grid of words. The user may click a word followed by another word to swap them. The goal is to make valid semantic sets in every row and column.
+
+Rust helper (optional)
+----------------------
+By default the solver will use a small Rust helper for faster adjacency computation if the binary exists.
+
+Build once:
+
+```
+cd rust_helper && cargo build --release
+```
+
+Default run (uses helper if built):
+
+```
+node connecdoku_matrix_solver_sqlite.js
+
+Opt out of the helper:
+
+```
+USE_RUST_HELPER=0 node connecdoku_matrix_solver_sqlite.js
+```
+```
