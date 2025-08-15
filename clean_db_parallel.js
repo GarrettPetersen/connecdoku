@@ -82,12 +82,12 @@ async function getHashRange(db) {
   db.serialize(() => { db.run("PRAGMA journal_mode=WAL"); db.run("PRAGMA synchronous=OFF"); });
   console.log(`- Database opened: ${DB_PATH}`);
   console.log("- Skipping COUNT(*); using conservative chunking target.");
-  console.log("- Getting hash range…");
-  const tRange = Date.now();
-  const range = await getHashRange(db);
+  // Assume full SHA-256 range to avoid slow MIN/MAX scan
+  const MIN_HASH = '0'.repeat(64);
+  const MAX_HASH = 'f'.repeat(64);
+  const range = { min: MIN_HASH, max: MAX_HASH };
   db.close();
-  console.log(`  • Range fetched in ${((Date.now()-tRange)/1000).toFixed(2)}s`);
-  console.log(`- Hash range: ${range.min?.slice(0,8)}… → ${range.max?.slice(0,8)}…`);
+  console.log(`- Using assumed hash range: ${range.min.slice(0,8)}… → ${range.max.slice(0,8)}…`);
 
   const ASSUMED_TOTAL = 100_000_000n; // 100M
   const TARGET_PER_CHUNK = 50_000n;   // ~50k per chunk
