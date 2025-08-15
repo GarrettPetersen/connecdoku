@@ -24,7 +24,7 @@ import { Worker, isMainThread, parentPort, workerData } from "worker_threads";
 import sqlite3 from "sqlite3";
 import { Matrix } from "ml-matrix";
 import { performance } from "perf_hooks";
-import { spawnSync } from "child_process";
+import { spawn } from "child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, "data");
@@ -251,7 +251,7 @@ if (isMainThread) {
       end: i + 1,
       id: workQueue.length,
       difficulty: validJCount,
-      totalJ: 0
+      totalJ: validJCount
     });
   }
 
@@ -280,15 +280,17 @@ if (isMainThread) {
 
         // Insert the sub-chunk at a random position
         const insertPos = Math.floor(Math.random() * (workQueue.length + 1));
+        const sjStart = subChunk * chunkSize;
+        const sjEnd = Math.min((subChunk + 1) * chunkSize, chunk.difficulty);
         workQueue.splice(insertPos, 0, {
           start: chunk.start,
           end: chunk.end,
-          jStart: subChunk * chunkSize,
-          jEnd: Math.min((subChunk + 1) * chunkSize, chunk.difficulty),
+          jStart: sjStart,
+          jEnd: sjEnd,
           chunkIndex: subChunk,
           totalChunks: 4,
           id: workQueue.length,
-          totalJ: 0
+          totalJ: Math.max(0, sjEnd - sjStart)
         });
       }
     }
@@ -298,8 +300,7 @@ if (isMainThread) {
   const splitChunks = workQueue.filter(chunk => chunk.chunkIndex !== undefined);
   const splitIValues = [...new Set(splitChunks.map(chunk => chunk.start))];
   if (splitIValues.length > 0) {
-    const displayValues = splitIValues.length <= 10 ? splitIValues.join(', ') : 
-      `${splitIValues.slice(0, 5).join(', ')}... and ${splitIValues.length - 5} more`;
+    const displayValues = splitIValues.slice(0, 10).join(', ') + (splitIValues.length > 10 ? ', ...' : '');
     console.log(`Split ${splitIValues.length} hard i-values into ${splitChunks.length} smaller chunks: ${displayValues}`);
   }
 
@@ -307,6 +308,35 @@ if (isMainThread) {
 
   // Persist progress after marking zero-work i values as completed
   saveProgress(wordListHash, Array.from(completedChunks), completedChunkWork, partialChunkProgress);
+
+  // ── compute adjacency once (main thread) and share with workers ──
+  let N1Arr = null, N2Arr = null;
+  {
+    // JS build of adjacency: compute N1/N2 once in main thread
+    const S = Array.from({ length: n }, () => Array(n).fill(false));
+    const intersects = (a, b) => { for (let i = 0; i < a.length; i++) if (a[i] & b[i]) return true; return false; };
+    const subset = (a, b) => { for (let i = 0; i < a.length; i++) if ((a[i] & ~b[i]) !== 0) return false; return true; };
+    for (let i = 0; i < n; i++)
+      for (let j = i + 1; j < n; j++)
+        if (subset(mask[i], mask[j]) || subset(mask[j], mask[i])) S[i][j] = S[j][i] = true;
+
+    const A = Array.from({ length: n }, () => Array(n).fill(0));
+    for (let i = 0; i < n; i++)
+      for (let j = i + 1; j < n; j++)
+        if (!S[i][j] && intersects(mask[i], mask[j])) A[i][j] = A[j][i] = 1;
+
+    const A2 = Array.from({ length: n }, () => Array(n).fill(0));
+    for (let i = 0; i < n; i++)
+      for (let j = 0; j < n; j++)
+        for (let k = 0; k < n; k++) A2[i][j] += A[i][k] * A[k][j];
+
+    N1Arr = Array.from({ length: n }, (_, i) => A[i].map((v, idx) => v ? idx : -1).filter(x => x !== -1));
+    const B = Array.from({ length: n }, () => Array(n).fill(false));
+    for (let i = 0; i < n; i++)
+      for (let j = i + 1; j < n; j++)
+        if (!S[i][j] && A2[i][j] >= 4) B[i][j] = B[j][i] = true;
+    N2Arr = Array.from({ length: n }, (_, i) => B[i].map((v, idx) => v ? idx : -1).filter(x => x !== -1));
+  }
 
   // ── progress bookkeeping ──
   const status = Array.from({ length: nWorkers }, () => ({
@@ -375,7 +405,7 @@ if (isMainThread) {
 
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(fileURLToPath(import.meta.url), {
-      workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH }
+      workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH, N1Arr, N2Arr }
     });
     workers.push(w);
 
@@ -511,7 +541,7 @@ if (isMainThread) {
   /*────────────────────────── WORKER THREAD ─────────────────────────*/
 } else {
 
-  const { id: WID, nWorkers: NW, cats, n, wordListHash, dbPath } = workerData;
+  const { id: WID, nWorkers: NW, cats, n, wordListHash, dbPath, N1Arr, N2Arr } = workerData;
 
   // ── load data ──
   const wordsJson = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
@@ -606,47 +636,9 @@ if (isMainThread) {
     for (let j = i + 1; j < n; j++)
       if (subset(mask[i], mask[j]) || subset(mask[j], mask[i])) S[i][j] = S[j][i] = true;
 
-  // Build adjacency using Rust helper by default (if available). Opt-out with USE_RUST_HELPER=0
-  const rustOptOut = process.env.USE_RUST_HELPER === "0";
-  let N1, N2;
-  if (!rustOptOut) {
-    try {
-      const helperRelease = path.join(__dirname, "rust_helper", "target", "release", "cdx_helper");
-      const helperDebug = path.join(__dirname, "rust_helper", "target", "debug", "cdx_helper");
-      const helperPath = fs.existsSync(helperRelease) ? helperRelease : (fs.existsSync(helperDebug) ? helperDebug : null);
-      if (!helperPath) throw new Error("Rust helper binary not found");
-
-      const masksPlain = mask.map(m => Array.from(m));
-      const input = JSON.stringify({ masks: masksPlain });
-      const res = spawnSync(helperPath, [], { input, encoding: "utf8" });
-      if (res.status !== 0) throw new Error(`Rust helper failed: ${res.stderr || res.stdout || res.status}`);
-      const parsed = JSON.parse(res.stdout);
-      N1 = parsed.N1.map(arr => new Set(arr));
-      N2 = parsed.N2.map(arr => new Set(arr));
-    } catch (e) {
-      console.warn("Rust helper unavailable or failed, falling back to JS adjacency:", e.message);
-    }
-  }
-  if (!N1 || !N2) {
-    // JS fallback: 1-away
-    const A = Matrix.zeros(n, n);
-    for (let i = 0; i < n; i++)
-      for (let j = i + 1; j < n; j++)
-        if (!S[i][j] && intersects(mask[i], mask[j])) A.set(i, j, 1), A.set(j, i, 1);
-    N1 = Array.from({ length: n }, (_, i) =>
-      new Set(A.getRow(i).flatMap((v, idx) => v ? idx : []))
-    );
-
-    // JS fallback: 2-away
-    const A2 = A.mmul(A);
-    const B = Array.from({ length: n }, () => Array(n).fill(false));
-    for (let i = 0; i < n; i++)
-      for (let j = i + 1; j < n; j++)
-        if (!S[i][j] && A2.get(i, j) >= 4) B[i][j] = B[j][i] = true;
-    N2 = Array.from({ length: n }, (_, i) =>
-      new Set(B[i].flatMap((v, idx) => v ? idx : []))
-    );
-  }
+  // Use precomputed adjacency from main thread
+  const N1 = N1Arr.map(arr => new Set(arr));
+  const N2 = N2Arr.map(arr => new Set(arr));
 
   // Build B matrix from N2 (needed for column validation regardless of whether we used Rust or JS)
   const B = Array.from({ length: n }, () => Array(n).fill(false));
@@ -678,142 +670,57 @@ if (isMainThread) {
     return true;
   };
 
-  // ── work processing function ──
-  function processChunk(chunk) {
+  // ── Rust inner-loop integration ──
+  const rustPathRel = path.join(__dirname, "rust_helper", "target", "release", "cdx_worker");
+  const rustPathDbg = path.join(__dirname, "rust_helper", "target", "debug", "cdx_worker");
+  const rustPath = fs.existsSync(rustPathRel) ? rustPathRel : (fs.existsSync(rustPathDbg) ? rustPathDbg : null);
+  let rustProc = null;
+  let rustRL = null;
+  let currentResolve = null;
+
+  async function ensureRust() {
+    if (rustProc || !rustPath) return;
+    rustProc = spawn(rustPath, [], { stdio: ["pipe", "pipe", "inherit"] });
+    rustRL = (await import('readline')).createInterface({ input: rustProc.stdout });
+    const metaMap = cats.map(c => categoryToMeta.get(c) || null);
+    rustProc.stdin.write(JSON.stringify({ type: "Init", masks: mask.map(m => Array.from(m)), n1: N1Arr, n2: N2Arr, categories: cats, meta_map: metaMap }) + "\n");
+    rustRL.on("line", (line) => {
+      try {
+        const msg = JSON.parse(line);
+        if (msg.type === "Tick") {
+          parentPort.postMessage({ type: "tick", id: WID, jProgress: msg.jProgress, totalJ: msg.totalJ });
+        } else if (msg.type === "Found") {
+          const rowsCats = msg.rows.map((v) => cats[v]);
+          const colsCats = msg.cols.map((v) => cats[v]);
+          const puzzleHash = sha256(rowsCats.join("|") + colsCats.join("|"));
+          puzzleBatch.push({ hash: puzzleHash, rows: rowsCats, cols: colsCats });
+          puzzlesFound++;
+          if (puzzleBatch.length >= BATCH_SIZE) flushBatch();
+        } else if (msg.type === "Done") {
+          if (currentResolve) { const r = currentResolve; currentResolve = null; r(); }
+        }
+      } catch {}
+    });
+  }
+
+  async function processChunk(chunk) {
     const { start, end, jStart, jEnd } = chunk;
-
-    // Process single i value
-    for (let i = start; i < end; i++) {
-      const jList = [...N2[i]].filter(j => j > i).sort((a, b) => a - b);
-
-      // Handle partial chunks for hard i values
-      let actualTotalJ, jProgress = 0;
-      let processStart = 0, processEnd = jList.length;
-
-      if (jStart !== undefined && jEnd !== undefined) {
-        // Process only a portion of the j values for this chunk
-        processStart = Math.min(Math.max(0, jStart), jList.length);
-        processEnd = Math.min(Math.max(processStart, jEnd), jList.length);
-        actualTotalJ = Math.max(0, processEnd - processStart);
-      } else {
-        // Process all j values for regular chunks
-        actualTotalJ = jList.length;
-      }
-
-      // Report initial progress to main thread
-      parentPort.postMessage({
-        type: "tick",
-        id: WID,
-        jProgress: 0,
-        totalJ: actualTotalJ
-      });
-
-      // Process j values in the assigned range
-      for (let jIdx = processStart; jIdx < processEnd; jIdx++) {
-        const j = jList[jIdx];
-        const kList = tList(i, j);
-        for (const k of kList) {
-          const lList = kList.filter(l => l > k && N2[k].has(l));
-          for (const l of lList) {
-
-            const rows = [i, j, k, l];
-            if (!excl(rows)) continue;
-
-            // Check meta-category constraint for rows
-            const rowCategories = rows.map(idx => cats[idx]);
-            if (!checkMetaCategoryConstraint(rowCategories)) continue;
-
-            // column candidates
-            let cand = new Set(N1[i]);
-            for (let r = 1; r < 4; r++) {
-              const tmp = new Set();
-              for (const x of cand) if (N1[rows[r]].has(x)) tmp.add(x);
-              cand = tmp;
-            }
-            for (const r of rows) cand.delete(r);
-            cand = new Set([...cand].filter(c => !rows.some(r => S[r][c])));
-            if (cand.size < 4 || Math.min(...cand) <= rows[0]) continue;
-
-            const cArr = [...cand].sort((a, b) => a - b), m = cArr.length;
-            for (let a = 0; a < m - 3; a++)
-              for (let b = a + 1; b < m - 2; b++) {
-                const x = cArr[a], y = cArr[b];
-                if (!B[x][y]) continue;
-                for (let c = b + 1; c < m - 1; c++) {
-                  const z = cArr[c];
-                  if (!(B[x][z] && B[y][z])) continue;
-                  for (let d = c + 1; d < m; d++) {
-                    const w = cArr[d];
-                    if (!(B[x][w] && B[y][w] && B[z][w])) continue;
-                    const cols = [x, y, z, w];
-
-                    // Check meta-category constraint for complete puzzle (rows + columns)
-                    const allCategories = [...rowCategories, ...cols.map(idx => cats[idx])];
-                    if (!checkMetaCategoryConstraint(allCategories)) continue;
-
-                    // full uniqueness check
-                    let ok = true;
-                    const all = new Set([...rows, ...cols]);
-                    outerRH:
-                    for (const r of rows)
-                      for (const cc of cols) {
-                        const own = mask[r].map((v, idx) => v & mask[cc][idx]);
-                        for (const o of all) if (o !== r && o !== cc)
-                          for (let k = 0; k < MASK_LEN; k++) own[k] &= ~mask[o][k];
-                        let nz = false;
-                        for (let k = 0; k < MASK_LEN; k++) if (own[k]) { nz = true; break; }
-                        if (!nz) { ok = false; break outerRH; }
-                      }
-                    if (!ok) continue;
-
-                    // Add to batch
-                    const puzzleHash = sha256(rows.map(v => cats[v]).join("|") + cols.map(v => cats[v]).join("|"));
-                    puzzleBatch.push({
-                      hash: puzzleHash,
-                      rows: rows.map(v => cats[v]),
-                      cols: cols.map(v => cats[v])
-                    });
-                    puzzlesFound++;
-
-                    if (puzzleBatch.length >= BATCH_SIZE) {
-                      flushBatch();
-                    }
-                  }
-                }
-              }
-          }
-        }
-        jProgress++;
-        // Send tick more frequently for better progress updates
-        if (jProgress % 2 === 0 || jProgress === actualTotalJ) {
-          parentPort.postMessage({
-            type: "tick",
-            id: WID,
-            jProgress: jProgress,
-            totalJ: actualTotalJ
-          });
-        }
-      }
-
-      // Send final progress tick to ensure completion is reported, especially for chunks with 0 j-steps
-      if (actualTotalJ === 0 || jProgress !== actualTotalJ) {
-        parentPort.postMessage({
-          type: "tick",
-          id: WID,
-          jProgress: actualTotalJ,
-          totalJ: actualTotalJ
-        });
-      }
+    if (!rustPath) throw new Error("Rust inner worker binary not found");
+    if (!rustProc) {
+      // dynamic import for readline in ESM
+      await ensureRust();
     }
-
-    // Flush any remaining puzzles in batch
+    await new Promise((resolve) => {
+      currentResolve = resolve;
+      rustProc.stdin.write(JSON.stringify({ type: "Work", start, end, jStart, jEnd }) + "\n");
+    });
     flushBatch();
   }
 
   // ── message handling ──
-  parentPort.on("message", msg => {
+  parentPort.on("message", async msg => {
     if (msg.type === "work") {
-      processChunk(msg.chunk);
+      await processChunk(msg.chunk);
       // Request more work when done, sending current statistics
       parentPort.postMessage({
         type: "request_work",
