@@ -33,7 +33,8 @@ function setupDb() {
   return new Promise((resolve, reject) => {
     const db = new sqlite3.Database(DB_PATH, err => {
       if (err) return reject(err);
-      db.exec('PRAGMA journal_mode=WAL; PRAGMA synchronous=NORMAL; PRAGMA busy_timeout=30000;', err2 => {
+      // Only set connection-local busy timeout here. Global WAL/synchronous is set by the main thread.
+      db.exec('PRAGMA busy_timeout=30000;', err2 => {
         if (err2) return reject(err2);
         resolve(db);
       });
@@ -50,57 +51,80 @@ parentPort.on('message', async msg => {
   if (msg.type === 'request_work') {
     parentPort.postMessage({ type: 'request_work', id: WID });
   } else if (msg.type === 'work') {
-    const { job } = msg; await ensureCleaner();
-    const db = await setupDb();
-    const puzzles = await new Promise((resolve, reject) => {
-      db.all(`SELECT puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3 FROM puzzles WHERE puzzle_hash > ? AND puzzle_hash <= ? ORDER BY puzzle_hash`, [job.minHash, job.maxHash], (err, rows) => err ? reject(err) : resolve(rows || []));
-    });
-    const total = puzzles.length;
-    let processed = 0;
-    let invalid = [];
-    let scoreUpdates = [];
-    const localTally = Object.create(null);
-    // stats tracking
-    let validCount = 0, invalidCount = 0;
-    let validDelta = 0, invalidDelta = 0;
-
-    for (const p of puzzles) {
-      cleaner.stdin.write(JSON.stringify({ type: 'Validate', rows: [p.row0,p.row1,p.row2,p.row3], cols: [p.col0,p.col1,p.col2,p.col3] }) + '\n');
-      const resp = JSON.parse(await readLine());
-      if (resp.type === 'Valid') {
-        const cats = [p.row0,p.row1,p.row2,p.row3,p.col0,p.col1,p.col2,p.col3];
-        const score = cats.reduce((s,c) => s + (categoryScores[c] || 0), 0);
-        scoreUpdates.push({ hash: p.puzzle_hash, score });
-        // tally categories
-        for (const c of cats) {
-          localTally[c] = (localTally[c] || 0) + 1;
+    const { job } = msg;
+    try {
+      await ensureCleaner();
+      const db = await setupDb();
+      // SELECT with retry on SQLITE_BUSY
+      const selectWithRetry = async (attempts = 5) => {
+        for (let i = 0; i < attempts; i++) {
+          try {
+            return await new Promise((resolve, reject) => {
+              db.all(
+                `SELECT puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3 FROM puzzles WHERE puzzle_hash > ? AND puzzle_hash <= ? ORDER BY puzzle_hash`,
+                [job.minHash, job.maxHash],
+                (err, rows) => err ? reject(err) : resolve(rows || [])
+              );
+            });
+          } catch (e) {
+            if (e && e.code === 'SQLITE_BUSY' && i < attempts - 1) { await delay(50 + Math.random()*200); continue; }
+            throw e;
+          }
         }
-        validCount++; validDelta++;
-      } else if (resp.type === 'Invalid') {
-        invalid.push(p.puzzle_hash);
-        invalidCount++; invalidDelta++;
-      }
-      processed++;
-      if (processed % 200 === 0 || processed === total) {
-        parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta });
-        validDelta = 0; invalidDelta = 0;
-      }
-      // Periodically flush a small write batch to reduce contention
-      if (invalid.length + scoreUpdates.length >= 2000) {
-        await performWriteBatch(db, invalid, scoreUpdates);
-        invalid = [];
-        scoreUpdates = [];
-      }
-    }
+      };
+      const puzzles = await selectWithRetry();
+      const total = puzzles.length;
+      let processed = 0;
+      let invalid = [];
+      let scoreUpdates = [];
+      const localTally = Object.create(null);
+      // stats tracking
+      let validCount = 0, invalidCount = 0;
+      let validDelta = 0, invalidDelta = 0;
 
-    // Final flush
-    if (invalid.length > 0 || scoreUpdates.length > 0) await performWriteBatch(db, invalid, scoreUpdates);
-    db.close();
-    // Send tally for this chunk before signaling done
-    // flush any remaining deltas
-    if (validDelta || invalidDelta) parentPort.postMessage({ type: 'stats', id: WID, validDelta, invalidDelta });
-    parentPort.postMessage({ type: 'tally', id: WID, idx: job.idx, tally: localTally });
-    parentPort.postMessage({ type: 'done_chunk', id: WID, idx: job.idx, valid: validCount, invalid: invalidCount });
+      for (const p of puzzles) {
+        cleaner.stdin.write(JSON.stringify({ type: 'Validate', rows: [p.row0,p.row1,p.row2,p.row3], cols: [p.col0,p.col1,p.col2,p.col3] }) + '\n');
+        const resp = JSON.parse(await readLine());
+        if (resp.type === 'Valid') {
+          const cats = [p.row0,p.row1,p.row2,p.row3,p.col0,p.col1,p.col2,p.col3];
+          const score = cats.reduce((s,c) => s + (categoryScores[c] || 0), 0);
+          scoreUpdates.push({ hash: p.puzzle_hash, score });
+          // tally categories
+          for (const c of cats) {
+            localTally[c] = (localTally[c] || 0) + 1;
+          }
+          validCount++; validDelta++;
+        } else if (resp.type === 'Invalid') {
+          invalid.push(p.puzzle_hash);
+          invalidCount++; invalidDelta++;
+        }
+        processed++;
+        if (processed % 200 === 0 || processed === total) {
+          parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta });
+          validDelta = 0; invalidDelta = 0;
+        }
+        // Periodically flush a small write batch to reduce contention
+        if (invalid.length + scoreUpdates.length >= 2000) {
+          await performWriteBatch(db, invalid, scoreUpdates);
+          invalid = [];
+          scoreUpdates = [];
+        }
+      }
+
+      // Final flush
+      if (invalid.length > 0 || scoreUpdates.length > 0) await performWriteBatch(db, invalid, scoreUpdates);
+      db.close();
+      // Send tally for this chunk before signaling done
+      // flush any remaining deltas
+      if (validDelta || invalidDelta) parentPort.postMessage({ type: 'stats', id: WID, validDelta, invalidDelta });
+      parentPort.postMessage({ type: 'tally', id: WID, idx: job.idx, tally: localTally });
+      parentPort.postMessage({ type: 'done_chunk', id: WID, idx: job.idx, valid: validCount, invalid: invalidCount });
+    } catch (e) {
+      parentPort.postMessage({ type: 'error', id: WID, idx: msg?.job?.idx, message: e && e.message ? e.message : String(e) });
+      // Small delay before asking for new work to avoid hot error loop
+      await delay(200);
+      parentPort.postMessage({ type: 'request_work', id: WID });
+    }
   } else if (msg.type === 'cleanup') {
     parentPort.postMessage({ type: 'cleanup_done', id: WID });
   }

@@ -61,6 +61,9 @@ async function getHashRange(db) {
   }
   function saveProgress(obj) { fs.writeFileSync(PROGRESS_FILE, JSON.stringify(obj, null, 2)); }
 
+  let totalValid = 0, totalInvalid = 0;
+  const globalTally = Object.create(null);
+
   const saved = loadProgress();
   let completed = new Set();
   if (saved.wordListHash === wordListHash) {
@@ -110,11 +113,9 @@ async function getHashRange(db) {
 
   const nWorkers = os.cpus().length;
   const status = Array.from({ length: nWorkers }, () => ({ current: null, valid: 0, invalid: 0 }));
-  const globalTally = Object.create(null);
   let reservedPrinted = false;
   let progressStarted = false;
   const RESERVED_LINES = 3 + nWorkers; // overall + totals + per-worker + spacer
-  let totalValid = 0, totalInvalid = 0;
   console.log(`- Spawning ${nWorkers} worker(s)`);
   function redraw() {
     const doneChunks = completed.size + status.filter(s => s.current && s.current.done).length;
