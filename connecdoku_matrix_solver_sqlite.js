@@ -24,7 +24,7 @@ import { Worker, isMainThread, parentPort, workerData } from "worker_threads";
 import sqlite3 from "sqlite3";
 import { Matrix } from "ml-matrix";
 import { performance } from "perf_hooks";
-import { spawn } from "child_process";
+import { spawn, spawnSync } from "child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, "data");
@@ -74,6 +74,15 @@ function loadProgress() {
 if (isMainThread) {
   const nWorkers = os.cpus().length;
   console.log(`Launching ${nWorkers} workers…`);
+
+  // Pre-run data updater
+  try {
+    console.log("Running data update (pre)…");
+    const upd = spawnSync('node', ['update_all_data.js'], { cwd: __dirname, stdio: 'inherit', encoding: 'utf8' });
+    if (upd.status !== 0) console.warn('update_all_data.js (pre) exited non-zero');
+  } catch (e) {
+    console.warn('update_all_data.js (pre) failed:', e.message);
+  }
 
   // ── DB setup ──
   const db = new sqlite3.Database(DB_PATH);
@@ -502,9 +511,18 @@ if (isMainThread) {
               console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
 
               // Run database cleanup
-              console.log("Running database cleanup...");
+              // Post-run data updater
+              try {
+                console.log("Running data update (post)…");
+                const upd2 = spawnSync('node', ['update_all_data.js'], { cwd: __dirname, stdio: 'inherit', encoding: 'utf8' });
+                if (upd2.status !== 0) console.warn('update_all_data.js (post) exited non-zero');
+              } catch (e) {
+                console.warn('update_all_data.js (post) failed:', e.message);
+              }
+
+              console.log("Running database cleanup (parallel validator)...");
               import('child_process').then(({ spawn }) => {
-                const cleanup = spawn('node', ['clean_db.js'], {
+                const cleanup = spawn('node', ['clean_db_parallel.js'], {
                   stdio: 'inherit',
                   cwd: __dirname
                 });
@@ -694,7 +712,7 @@ if (isMainThread) {
           const colsCats = msg.cols.map((v) => cats[v]);
           const puzzleHash = sha256(rowsCats.join("|") + colsCats.join("|"));
           puzzleBatch.push({ hash: puzzleHash, rows: rowsCats, cols: colsCats });
-          puzzlesFound++;
+                    puzzlesFound++;
           if (puzzleBatch.length >= BATCH_SIZE) flushBatch();
         } else if (msg.type === "Done") {
           if (currentResolve) { const r = currentResolve; currentResolve = null; r(); }
