@@ -521,6 +521,13 @@ if (isMainThread) {
               }
 
               console.log("Running database cleanup (parallel validator)...");
+              // Always reset cleaner progress so it validates newly-found puzzles too
+              try {
+                const cleanProgress = path.join(__dirname, "progress_clean.json");
+                if (fs.existsSync(cleanProgress)) fs.unlinkSync(cleanProgress);
+              } catch (e) {
+                console.warn("Warning: could not remove progress_clean.json:", e.message);
+              }
               import('child_process').then(({ spawn }) => {
                 const cleanup = spawn('node', ['clean_db_parallel.js'], {
                   stdio: 'inherit',

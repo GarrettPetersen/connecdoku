@@ -66,6 +66,10 @@ async function getHashRange(db) {
   if (saved.wordListHash === wordListHash) {
     completed = new Set(saved.completed);
     console.log(`- Resuming: loaded ${completed.size} completed chunk(s) from progress file`);
+    // Restore running totals/tally if present
+    if (saved.totals && typeof saved.totals.valid === 'number') totalValid = saved.totals.valid;
+    if (saved.totals && typeof saved.totals.invalid === 'number') totalInvalid = saved.totals.invalid;
+    if (saved.tally && typeof saved.tally === 'object') Object.assign(globalTally, saved.tally);
   } else {
     if (fs.existsSync(PROGRESS_FILE)) {
       console.log("- Progress invalid (hash mismatch). Resetting progress file");
@@ -105,26 +109,30 @@ async function getHashRange(db) {
   console.log(`- Work queue ready: ${workQueue.length} chunk(s) to process`);
 
   const nWorkers = os.cpus().length;
-  const status = Array.from({ length: nWorkers }, () => ({ current: null }));
+  const status = Array.from({ length: nWorkers }, () => ({ current: null, valid: 0, invalid: 0 }));
   const globalTally = Object.create(null);
   let reservedPrinted = false;
-  const RESERVED_LINES = 2 + nWorkers; // overall + per-worker + spacer
+  let progressStarted = false;
+  const RESERVED_LINES = 3 + nWorkers; // overall + totals + per-worker + spacer
+  let totalValid = 0, totalInvalid = 0;
   console.log(`- Spawning ${nWorkers} worker(s)`);
   function redraw() {
     const doneChunks = completed.size + status.filter(s => s.current && s.current.done).length;
     const pct = (doneChunks) / BATCH_COUNT;
     const lines = [];
     lines.push(`Overall: [${bar(pct)}] ${(pct*100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
+    lines.push(`Totals: valid=${totalValid}, deleted=${totalInvalid}`);
     status.forEach((st, i) => {
       const s = st.current;
-      const line = s ? `chunk ${s.idx}: ${s.processed}/${s.total}` : 'idle';
-      lines.push(`W${i} ${line}`);
+      const base = s ? `chunk ${s.idx}: ${s.processed}/${s.total}` : 'idle';
+      lines.push(`W${i} ${base} | v=${st.valid}, d=${st.invalid}`);
     });
     lines.push(""); // spacer
 
     if (!reservedPrinted) {
       process.stdout.write("\n".repeat(RESERVED_LINES));
       reservedPrinted = true;
+      progressStarted = true;
     }
     // Move cursor up and overwrite only our reserved block
     process.stdout.write(`\x1b[${RESERVED_LINES}A`);
@@ -136,14 +144,33 @@ async function getHashRange(db) {
 
   let active = nWorkers;
   const workers = [];
+  // Limit concurrent writers to reduce lock contention
+  let writerPermits = Math.min(2, nWorkers);
+  const writerQueue = [];
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(new URL('./clean_db_worker.js', import.meta.url), { workerData: { id, DB_PATH, DATA_DIR, CAT_SCORES_F } });
     workers.push(w);
     w.on('message', msg => {
       if (msg.type === 'ready') {
-        console.log(`  • Worker ${msg.id} ready`);
+        if (!progressStarted) console.log(`  • Worker ${msg.id} ready`);
         w.postMessage({ type: 'request_work' });
+      } else if (msg.type === 'request_write_permit') {
+        if (writerPermits > 0) {
+          writerPermits--;
+          w.postMessage({ type: 'write_permit' });
+        } else {
+          writerQueue.push(w);
+        }
+      } else if (msg.type === 'release_write_permit') {
+        const next = writerQueue.shift();
+        if (next) {
+          next.postMessage({ type: 'write_permit' });
+        } else {
+          writerPermits++;
+        }
       } else if (msg.type === 'tick') {
+        if (typeof msg.validDelta === 'number') { status[msg.id].valid += msg.validDelta; totalValid += msg.validDelta; }
+        if (typeof msg.invalidDelta === 'number') { status[msg.id].invalid += msg.invalidDelta; totalInvalid += msg.invalidDelta; }
         status[msg.id].current = { idx: msg.idx, processed: msg.processed, total: msg.total };
         redraw();
       } else if (msg.type === 'request_work') {
@@ -160,15 +187,18 @@ async function getHashRange(db) {
         for (const k of Object.keys(t)) globalTally[k] = (globalTally[k] || 0) + t[k];
       } else if (msg.type === 'done_chunk') {
         completed.add(msg.idx);
-        saveProgress({ wordListHash, completed: Array.from(completed) });
-        console.log(`  • Worker ${msg.id} finished chunk ${msg.idx} (${completed.size}/${BATCH_COUNT})`);
+        saveProgress({ wordListHash, completed: Array.from(completed), totals: { valid: totalValid, invalid: totalInvalid }, tally: globalTally });
+        if (!progressStarted) console.log(`  • Worker ${msg.id} finished chunk ${msg.idx} (${completed.size}/${BATCH_COUNT})`);
         status[msg.id].current = { idx: msg.idx, processed: 1, total: 1, done: true };
+        if (typeof msg.valid === 'number') { status[msg.id].valid += msg.valid; totalValid += msg.valid; }
+        if (typeof msg.invalid === 'number') { status[msg.id].invalid += msg.invalid; totalInvalid += msg.invalid; }
         redraw();
         w.postMessage({ type: 'request_work' });
       } else if (msg.type === 'cleanup_done') {
         active--;
         if (active === 0) {
           console.log('\nAll workers finished.');
+          console.log(`Totals: valid=${totalValid}, deleted=${totalInvalid}`);
           // write tally
           try {
             const tallyOutputPath = path.join(DATA_DIR, 'category_tally.json');
