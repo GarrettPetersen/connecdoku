@@ -226,6 +226,8 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
     <div id="shareOptions" style="margin:8px 0 0 0; display:flex; align-items:center; gap:8px; font-size:13px;">
       <input type="checkbox" id="includeLinkToggle" checked>
       <label for="includeLinkToggle">Include link</label>
+      <input type="checkbox" id="spoilerFreeToggle">
+      <label for="spoilerFreeToggle">Spoiler-free sharing</label>
     </div>
     <button class="action" id="copy">Copy to clipboard</button>
     <div id="unsolved"></div>
@@ -491,13 +493,25 @@ loadStats();
 
   // Initialize share preferences (include link toggle)
   (function initSharePreferences(){
-    const toggle = document.getElementById('includeLinkToggle');
-    if (!toggle) return;
-    const pref = getCookie('connecdoku_share_include_link');
-    toggle.checked = (pref === null ? true : !!pref);
-    toggle.addEventListener('change', () => {
-      setCookie('connecdoku_share_include_link', toggle.checked);
-    });
+    const linkToggle = document.getElementById('includeLinkToggle');
+    if (linkToggle) {
+      const pref = getCookie('connecdoku_share_include_link');
+      linkToggle.checked = (pref === null ? true : !!pref);
+      linkToggle.addEventListener('change', () => {
+        setCookie('connecdoku_share_include_link', linkToggle.checked);
+      });
+    }
+
+    const spoilerToggle = document.getElementById('spoilerFreeToggle');
+    if (spoilerToggle) {
+      const prefSpoiler = getCookie('connecdoku_share_spoiler_free');
+      spoilerToggle.checked = (prefSpoiler === null ? false : !!prefSpoiler);
+      const savePrefOnly = () => {
+        setCookie('connecdoku_share_spoiler_free', spoilerToggle.checked);
+      };
+      spoilerToggle.addEventListener('change', savePrefOnly);
+      spoilerToggle.addEventListener('input', savePrefOnly);
+    }
   })();
 
 fetch('daily_puzzles/puzzles.json')
@@ -2084,7 +2098,7 @@ function init(puz){
     return colEmojis.join('') + rowEmojis.join('');
   }
   
-  function createEmojiGrid() {
+  function createEmojiGrid(spoilerFree = false) {
     const hash = a => [...a].sort().join('|');
     const rows = [];
     const cols = [];
@@ -2094,11 +2108,11 @@ function init(puz){
       if (solvedRows.has(r)) {
         // Use the solved category
         const cat = ans[hash(G[r])];
-        rows.push(getCategoryEmoji(cat));
+        rows.push(spoilerFree ? '❓' : getCategoryEmoji(cat));
       } else {
         // Use current state to determine category
         const cat = ans[hash(G[r])];
-        rows.push(getCategoryEmoji(cat));
+        rows.push(spoilerFree ? '❓' : getCategoryEmoji(cat));
       }
     }
     
@@ -2108,12 +2122,12 @@ function init(puz){
         // Use the solved category
         const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
         const cat = ans[hash(colWords)];
-        cols.push(getCategoryEmoji(cat));
+        cols.push(spoilerFree ? '❓' : getCategoryEmoji(cat));
       } else {
         // Use current state to determine category
         const colWords = [G[0][c], G[1][c], G[2][c], G[3][c]];
         const cat = ans[hash(colWords)];
-        cols.push(getCategoryEmoji(cat));
+        cols.push(spoilerFree ? '❓' : getCategoryEmoji(cat));
       }
     }
     
@@ -2165,8 +2179,21 @@ function init(puz){
     const currentDate = new Date().toISOString().split('T')[0].replace(/-/g, '-');
     
     $('#popTitle').textContent = getCustomTitle(won, strikes);
-    $('#shareGrid').textContent = createEmojiGrid();
+    const spoilerToggle = document.getElementById('spoilerFreeToggle');
+    const spoilerFree = spoilerToggle ? !!spoilerToggle.checked : !!getCookie('connecdoku_share_spoiler_free');
+    $('#shareGrid').textContent = createEmojiGrid(spoilerFree);
     $('#shareGrid').classList.add('emoji'); // Add emoji class for compound emoji support
+
+    // Hook spoiler toggle to instantly re-render the grid while modal is open
+    const spoilerToggleEl = document.getElementById('spoilerFreeToggle');
+    if (spoilerToggleEl) {
+      const updateShareGrid = () => {
+        setCookie('connecdoku_share_spoiler_free', !!spoilerToggleEl.checked);
+        $('#shareGrid').textContent = createEmojiGrid(!!spoilerToggleEl.checked);
+      };
+      spoilerToggleEl.oninput = updateShareGrid;
+      spoilerToggleEl.onchange = updateShareGrid;
+    }
     
     // Add statistics
     const distribution = getStrikeDistribution();
@@ -2220,7 +2247,13 @@ function init(puz){
                            $('#copy').textContent='Copied!'; };
   $('#minShare').onclick=()=>{ $('#sharePop').classList.remove('show');
                                $('#shareBtn').style.display='block'; };
-  $('#shareBtn').onclick=()=>{ $('#sharePop').classList.add('show'); };
+  $('#shareBtn').onclick=()=>{ 
+    const spoilerToggle = document.getElementById('spoilerFreeToggle');
+    const spoilerFree = spoilerToggle ? !!spoilerToggle.checked : !!getCookie('connecdoku_share_spoiler_free');
+    const gridEl = document.getElementById('shareGrid');
+    if (gridEl) gridEl.textContent = createEmojiGrid(spoilerFree);
+    $('#sharePop').classList.add('show'); 
+  };
   $('#returnToPuzzle').onclick=()=>{ $('#sharePop').classList.remove('show');
                                      $('#shareBtn').style.display='block'; };
 
