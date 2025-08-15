@@ -140,14 +140,13 @@
     "Things American"
   ],
   "1989 Chinese Protests": [
-    "1970s",
+    "1980s",
     "20th Century",
     "Ends with STS",
     "Events",
     "Mentioned in We Didn't Start the Fire",
     "Political Events",
-    "Starts with 198",
-    "Things American"
+    "Starts with 198"
   ],
   "1Q84": [
     "2000s",
@@ -371,7 +370,7 @@
     "Electronics"
   ],
   "AIDS": [
-    "1970s",
+    "1980s",
     "20th Century",
     "Ends with IDS",
     "Medical Terms",
@@ -616,6 +615,7 @@
     "Starts with AKR"
   ],
   "Alabama": [
+    "1960s",
     "Ends with AMA",
     "Locations in North America",
     "Mentioned in We Didn't Start the Fire",
@@ -2703,8 +2703,7 @@
     "Events",
     "Mentioned in We Didn't Start the Fire",
     "Political Events",
-    "Starts with BAT",
-    "Things American"
+    "Starts with BAT"
   ],
   "Battle of Pharsalus": [
     "1st Century BC",
@@ -2994,6 +2993,7 @@
     "Things Belarusian"
   ],
   "Belgian Congo": [
+    "1960s",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -3160,6 +3160,7 @@
     "Tragic Heroes"
   ],
   "Berlin": [
+    "1960s",
     "Cities",
     "Cities in Europe",
     "Ends with LIN",
@@ -3299,6 +3300,21 @@
     "Starts with BIG",
     "Things Polish"
   ],
+  "Bikini": [
+    "1940s",
+    "1950s",
+    "20th Century",
+    "Archipelagos",
+    "Clothing",
+    "Ends with INI",
+    "Events",
+    "Islands",
+    "Locations in Oceania",
+    "Nuclear Tests",
+    "Place Names",
+    "Starts with BIK",
+    "Things American"
+  ],
   "Bilge": [
     "Ends with LGE",
     "Nautical Terms",
@@ -3385,7 +3401,7 @@
     "Things American"
   ],
   "Birth Control Pill": [
-    "1970s",
+    "1960s",
     "20th Century",
     "Ends with ILL",
     "Medical Terms",
@@ -4328,6 +4344,7 @@
     "Things British"
   ],
   "Budapest": [
+    "1950s",
     "Cities",
     "Cities in Europe",
     "Ends with EST",
@@ -5149,6 +5166,17 @@
     "Starts with CAS",
     "Theropods"
   ],
+  "Castle Bravo": [
+    "1950s",
+    "20th Century",
+    "Ends with AVO",
+    "Events",
+    "Nuclear Tests",
+    "Nuclear Weapons",
+    "Starts with CAS",
+    "Things American",
+    "Weapons"
+  ],
   "Castle in the Sky": [
     "1980s",
     "20th Century",
@@ -5174,8 +5202,7 @@
     "National Leaders",
     "People",
     "Real People",
-    "Starts with CAS",
-    "Things Cuban"
+    "Starts with CAS"
   ],
   "Cat": [
     "Animal Species",
@@ -5700,6 +5727,8 @@
     "Things Argentine"
   ],
   "China": [
+    "1960s",
+    "1970s",
     "BRICS Nations",
     "Countries",
     "Countries in Asia",
@@ -5804,17 +5833,6 @@
     "Parts of a Song",
     "Starts with CHO",
     "The Good Place"
-  ],
-  "Chou En-Lai": [
-    "1960s",
-    "20th Century",
-    "Ends with LAI",
-    "Men",
-    "Mentioned in We Didn't Start the Fire",
-    "People",
-    "Real People",
-    "Starts with CHO",
-    "Things Chinese"
   ],
   "Chow Fun": [
     "Ends with FUN",
@@ -6527,8 +6545,7 @@
     "Ends with SIS",
     "Events",
     "Political Events",
-    "Starts with CON",
-    "Things American"
+    "Starts with CON"
   ],
   "Constantine the Great": [
     "4th Century",
@@ -6788,7 +6805,7 @@
     "Types of Animals"
   ],
   "Crack Epidemic": [
-    "1970s",
+    "1980s",
     "20th Century",
     "Ends with MIC",
     "Medical Terms",
@@ -7128,7 +7145,7 @@
     "Things Italian"
   ],
   "Dacron": [
-    "1960s",
+    "1950s",
     "20th Century",
     "Ends with RON",
     "Mentioned in We Didn't Start the Fire",
@@ -7345,15 +7362,25 @@
     "World War II"
   ],
   "Davy Crockett": [
-    "1960s",
+    "1820s",
+    "1830s",
+    "1950s",
+    "19th Century",
     "20th Century",
+    "Adventure Stories",
+    "Cold War",
+    "Disney",
     "Ends with ETT",
+    "Family-Friendly Stories",
     "Men",
     "Mentioned in We Didn't Start the Fire",
+    "Nuclear Weapons",
     "People",
     "Real People",
     "Starts with DAV",
-    "Things American"
+    "TV Shows",
+    "Things American",
+    "Weapons"
   ],
   "Days of Being Wild": [
     "1990s",
@@ -8361,6 +8388,7 @@
   ],
   "Dylan": [
     "1960s",
+    "1970s",
     "20th Century",
     "Ends with LAN",
     "Men",
@@ -8616,6 +8644,9 @@
     "Things French"
   ],
   "Einstein": [
+    "1900s",
+    "1910s",
+    "1920s",
     "20th Century",
     "Ends with EIN",
     "Men",
@@ -9003,6 +9034,22 @@
     "Ends with OUS",
     "Starts with ENO",
     "Synonyms for Big"
+  ],
+  "Enrico Fermi": [
+    "1930s",
+    "1940s",
+    "20th Century",
+    "Ends with RMI",
+    "Manhattan Project",
+    "Men",
+    "Nobel Prize Winners",
+    "People",
+    "Physicists",
+    "Real People",
+    "Scientists",
+    "Starts with ENR",
+    "Things American",
+    "Things Italian"
   ],
   "Entebbe Hijacking": [
     "1970s",
@@ -9484,6 +9531,18 @@
     "Place Names",
     "Starts with FAR",
     "Things Faroese"
+  ],
+  "Fat Man": [
+    "1940s",
+    "20th Century",
+    "Ends with MAN",
+    "Events",
+    "Manhattan Project",
+    "Nuclear Weapons",
+    "Starts with FAT",
+    "Things American",
+    "Weapons",
+    "World War II"
   ],
   "Fattoush": [
     "Ends with USH",
@@ -11604,6 +11663,7 @@
     "20th Century",
     "Ends with OMB",
     "Mentioned in We Didn't Start the Fire",
+    "Nuclear Weapons",
     "Starts with H-B",
     "Technology",
     "Things American",
@@ -13608,8 +13668,7 @@
     "Events",
     "Mentioned in We Didn't Start the Fire",
     "Political Events",
-    "Starts with IRA",
-    "Things American"
+    "Starts with IRA"
   ],
   "Iraq": [
     "Countries",
@@ -13844,6 +13903,17 @@
     "Starts with IVY",
     "Things American",
     "Women"
+  ],
+  "Ivy Mike": [
+    "1950s",
+    "20th Century",
+    "Ends with IKE",
+    "Events",
+    "Nuclear Tests",
+    "Nuclear Weapons",
+    "Starts with IVY",
+    "Things American",
+    "Weapons"
   ],
   "Ix": [
     "Dune",
@@ -14414,7 +14484,8 @@
     "Things British"
   ],
   "Joseph Stalin": [
-    "1960s",
+    "1940s",
+    "1950s",
     "20th Century",
     "Ends with LIN",
     "Men",
@@ -15512,7 +15583,6 @@
     "19th Century",
     "Drama Stories",
     "Ends with ATA",
-    "Fictional People",
     "Giuseppe Verdi",
     "Literature",
     "Music",
@@ -15771,6 +15841,8 @@
     "Things That Fly"
   ],
   "Lebanon": [
+    "1970s",
+    "1980s",
     "Countries",
     "Countries in Asia",
     "Ends with NON",
@@ -15781,8 +15853,7 @@
     "Modern Countries",
     "Place Names",
     "Republics",
-    "Starts with LEB",
-    "Things Lebanese"
+    "Starts with LEB"
   ],
   "Lee Harvey Oswald": [
     "1960s",
@@ -16205,6 +16276,18 @@
     "Republics",
     "Starts with LIT",
     "Things Lithuanian"
+  ],
+  "Little Boy": [
+    "1940s",
+    "20th Century",
+    "Ends with BOY",
+    "Events",
+    "Manhattan Project",
+    "Nuclear Weapons",
+    "Starts with LIT",
+    "Things American",
+    "Weapons",
+    "World War II"
   ],
   "Little Rock": [
     "Cities",
@@ -19291,6 +19374,8 @@
     "The Sinking of RMS Titanic"
   ],
   "North Korea": [
+    "1950s",
+    "1960s",
     "Countries",
     "Countries in Asia",
     "Countries with Nuclear Weapons",
@@ -19299,8 +19384,7 @@
     "Mentioned in We Didn't Start the Fire",
     "Modern Countries",
     "Place Names",
-    "Starts with NOR",
-    "Things North Korean"
+    "Starts with NOR"
   ],
   "North Macedonia": [
     "Countries",
@@ -20267,6 +20351,8 @@
     "Things Micronesian"
   ],
   "Palestine": [
+    "1940s",
+    "1950s",
     "Breakaway Regions",
     "Ends with INE",
     "Locations in Asia",
@@ -20274,7 +20360,6 @@
     "Place Names",
     "Roman Empire",
     "Starts with PAL",
-    "Things Middle Eastern",
     "Things Roman"
   ],
   "Palm Springs": [
@@ -21932,11 +22017,11 @@
     "Events",
     "Mentioned in We Didn't Start the Fire",
     "Political Events",
-    "Starts with PRO",
-    "Things American"
+    "Starts with PRO"
   ],
   "Prokofiev": [
-    "1960s",
+    "1940s",
+    "1950s",
     "20th Century",
     "Ends with IEV",
     "Men",
@@ -23144,11 +23229,15 @@
     "Things Chilean"
   ],
   "Rock Around the Clock": [
+    "1950s",
     "Ends with OCK",
     "Mentioned in We Didn't Start the Fire",
     "Movies",
     "Music",
     "Musical Films",
+    "Rock Songs",
+    "Song Lyrics",
+    "Songs",
     "Starts with ROC",
     "Stories about Families",
     "Things American"
@@ -23170,6 +23259,9 @@
     "Things American"
   ],
   "Rockefeller": [
+    "1900s",
+    "1910s",
+    "1920s",
     "Businesspeople",
     "Companies",
     "Ends with LER",
@@ -25439,6 +25531,8 @@
     "WWII Allied Powers"
   ],
   "South Korea": [
+    "1950s",
+    "1960s",
     "Countries",
     "Countries in Asia",
     "Ends with REA",
@@ -25446,8 +25540,7 @@
     "Mentioned in We Didn't Start the Fire",
     "Modern Countries",
     "Place Names",
-    "Starts with SOU",
-    "Things South Korean"
+    "Starts with SOU"
   ],
   "South Ossetia": [
     "Breakaway Regions",
@@ -25553,8 +25646,7 @@
     "Events",
     "Mentioned in We Didn't Start the Fire",
     "Political Events",
-    "Starts with SOV",
-    "Things American"
+    "Starts with SOV"
   ],
   "Sow": [
     "Ends with SOW",
@@ -26208,8 +26300,7 @@
     "Events",
     "Mentioned in We Didn't Start the Fire",
     "Political Events",
-    "Starts with SUE",
-    "Things American"
+    "Starts with SUE"
   ],
   "Sugar Ray": [
     "1950s",
@@ -26531,8 +26622,7 @@
     "National Leaders",
     "People",
     "Real People",
-    "Starts with SYN",
-    "Things South Korean"
+    "Starts with SYN"
   ],
   "Syria": [
     "Countries",
@@ -29158,7 +29248,6 @@
     "18th Century",
     "Drama Stories",
     "Ends with UTE",
-    "Fictional People",
     "Literature",
     "Music",
     "Operas",
@@ -29244,6 +29333,7 @@
     "20th Century",
     "Ends with ECT",
     "Events",
+    "Manhattan Project",
     "Scientific Events",
     "Starts with THE",
     "Things American"
@@ -30832,14 +30922,13 @@
     "World War II"
   ],
   "Tiananmen Square Massacre": [
-    "1970s",
+    "1980s",
     "20th Century",
     "Ends with CRE",
     "Events",
     "Mentioned in We Didn't Start the Fire",
     "Political Events",
-    "Starts with TIA",
-    "Things American"
+    "Starts with TIA"
   ],
   "Tiberius": [
     "1st Century",
@@ -31223,7 +31312,8 @@
     "Women"
   ],
   "Toscanini": [
-    "1960s",
+    "1940s",
+    "1950s",
     "20th Century",
     "Ends with INI",
     "Men",
@@ -31426,6 +31516,7 @@
     "Fictional People",
     "Manhattan Project",
     "Nuclear Tests",
+    "Nuclear Weapons",
     "People",
     "Religious Terms",
     "Starts with TRI",
@@ -31528,6 +31619,17 @@
     "Rulers",
     "Starts with TSA",
     "Titles of Rank"
+  ],
+  "Tsar Bomba": [
+    "1960s",
+    "20th Century",
+    "Ends with MBA",
+    "Events",
+    "Nuclear Tests",
+    "Nuclear Weapons",
+    "Starts with TSA",
+    "Things Russian",
+    "Weapons"
   ],
   "Tteokbokki": [
     "Ends with KKI",
@@ -31718,6 +31820,7 @@
     "Things Jewish"
   ],
   "U-2 Spy Plane Incident": [
+    "1960s",
     "Ends with ENT",
     "Events",
     "Mentioned in We Didn't Start the Fire",
@@ -31989,6 +32092,7 @@
   "Uranium": [
     "Elements",
     "Ends with IUM",
+    "Manhattan Project",
     "Starts with URA"
   ],
   "Uranus": [
@@ -32062,6 +32166,8 @@
     "Superheroes"
   ],
   "Vaccine": [
+    "1950s",
+    "1960s",
     "Ends with INE",
     "Medical Terms",
     "Mentioned in We Didn't Start the Fire",
@@ -32751,6 +32857,7 @@
     "Things Canadian"
   ],
   "We didn't start the fire": [
+    "1980s",
     "Billy Joel",
     "Ends with IRE",
     "Mentioned in We Didn't Start the Fire",
@@ -33719,6 +33826,17 @@
     "Real People",
     "Sailors",
     "Starts with ZHE",
+    "Things Chinese"
+  ],
+  "Zhou Enlai": [
+    "1960s",
+    "20th Century",
+    "Ends with LAI",
+    "Men",
+    "Mentioned in We Didn't Start the Fire",
+    "People",
+    "Real People",
+    "Starts with ZHO",
     "Things Chinese"
   ],
   "Zhu Yuanzhang": [

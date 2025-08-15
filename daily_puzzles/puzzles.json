@@ -2198,5 +2198,45 @@
         "Beethoven"
       ]
     ]
+  },
+  {
+    "rows": [
+      "17th Century",
+      "Roman Republic",
+      "Things American",
+      "Things Chinese"
+    ],
+    "cols": [
+      "Historical Sites",
+      "Literature Quotes",
+      "People",
+      "Political Events"
+    ],
+    "words": [
+      [
+        "Globe Theatre",
+        "The play's the thing",
+        "Kepler",
+        "The Glorious Revolution"
+      ],
+      [
+        "Curia",
+        "Et tu, Brute?",
+        "Spartacus",
+        "Second Triumvirate"
+      ],
+      [
+        "Gettysburg",
+        "Give me liberty or give me death",
+        "Annie Oakley",
+        "Watergate"
+      ],
+      [
+        "Bronze Bird Terrace",
+        "The realm, long divided, must unite",
+        "Confucius",
+        "Wang Mang Usurpation"
+      ]
+    ]
   }
 ]
