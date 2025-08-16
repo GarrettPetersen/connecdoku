@@ -103,8 +103,8 @@ parentPort.on('message', async msg => {
           parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta });
           validDelta = 0; invalidDelta = 0;
         }
-        // Periodically flush a small write batch to reduce contention
-        if (invalid.length + scoreUpdates.length >= 2000) {
+        // Flush only when enough invalids have accumulated to justify a write
+        if (invalid.length >= 500) {
           await performWriteBatch(db, invalid, scoreUpdates);
           invalid = [];
           scoreUpdates = [];
