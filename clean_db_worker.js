@@ -61,7 +61,7 @@ parentPort.on('message', async msg => {
           try {
             return await new Promise((resolve, reject) => {
               db.all(
-                `SELECT puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3 FROM puzzles WHERE puzzle_hash > ? AND puzzle_hash <= ? ORDER BY puzzle_hash`,
+                `SELECT puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3 FROM puzzles WHERE puzzle_hash > ? AND puzzle_hash <= ?`,
                 [job.minHash, job.maxHash],
                 (err, rows) => err ? reject(err) : resolve(rows || [])
               );
