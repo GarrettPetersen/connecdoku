@@ -103,12 +103,7 @@ parentPort.on('message', async msg => {
           parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta });
           validDelta = 0; invalidDelta = 0;
         }
-        // Flush only when enough invalids have accumulated to justify a write
-        if (invalid.length >= 500) {
-          await performWriteBatch(db, invalid, scoreUpdates);
-          invalid = [];
-          scoreUpdates = [];
-        }
+        // No mid-chunk flush; defer to a single transaction at the end of the chunk
       }
 
       // Final flush
@@ -165,30 +160,47 @@ async function performWriteBatch(db, invalid, scoreUpdates) {
 
   await runWithRetry(() => new Promise((resolve, reject) => db.run('BEGIN IMMEDIATE', err => err ? reject(err) : resolve())));
 
+  // Ensure TEMP tables exist for this connection
+  await runWithRetry(() => new Promise((resolve, reject) => db.exec(
+    `CREATE TEMP TABLE IF NOT EXISTS temp_to_delete(hash TEXT PRIMARY KEY);
+     CREATE TEMP TABLE IF NOT EXISTS temp_scores(hash TEXT PRIMARY KEY, score INTEGER);`,
+    err => err ? reject(err) : resolve()
+  )));
+
+  // Populate and apply deletes
   if (invalid.length > 0) {
-    const MAX = 900; for (let i = 0; i < invalid.length; i += MAX) {
-      const batch = invalid.slice(i, i + MAX);
-      await runWithRetry(() => new Promise((resolve, reject) => {
-        const placeholders = batch.map(() => '?').join(',');
-        const stmt = db.prepare(`DELETE FROM puzzles WHERE puzzle_hash IN (${placeholders})`);
-        stmt.run(batch, function(err){
-          if (err) return reject(err);
-          stmt.finalize(finalizeErr => finalizeErr ? reject(finalizeErr) : resolve());
-        });
-      }));
-    }
+    await runWithRetry(() => new Promise((resolve, reject) => {
+      const stmt = db.prepare('INSERT OR IGNORE INTO temp_to_delete(hash) VALUES (?)');
+      for (const h of invalid) stmt.run(h);
+      stmt.finalize(err => err ? reject(err) : resolve());
+    }));
+    await runWithRetry(() => new Promise((resolve, reject) => db.run(
+      'DELETE FROM puzzles WHERE puzzle_hash IN (SELECT hash FROM temp_to_delete)',
+      err => err ? reject(err) : resolve()
+    )));
+    // Clear temp table for next use
+    await runWithRetry(() => new Promise((resolve, reject) => db.run('DELETE FROM temp_to_delete', err => err ? reject(err) : resolve())));
   }
+
+  // Populate and apply score updates
   if (scoreUpdates.length > 0) {
-    const MAX = 900; const B = Math.max(1, Math.floor(MAX/3));
-    for (let i = 0; i < scoreUpdates.length; i += B) {
-      const batch = scoreUpdates.slice(i, i + B);
-      const cases = batch.map(() => 'WHEN ? THEN ?').join(' ');
-      const inPh = batch.map(() => '?').join(',');
-      const sql = `UPDATE puzzles SET puzzle_quality_score = CASE puzzle_hash ${cases} END WHERE puzzle_hash IN (${inPh})`;
-      const params = []; for (const u of batch) { params.push(u.hash, u.score); } for (const u of batch) { params.push(u.hash); }
-      await runWithRetry(() => new Promise((resolve, reject) => db.run(sql, params, function(err){ if (err) reject(err); else resolve(); })));
-    }
+    await runWithRetry(() => new Promise((resolve, reject) => {
+      const stmt = db.prepare('INSERT OR REPLACE INTO temp_scores(hash, score) VALUES (?, ?)');
+      for (const u of scoreUpdates) stmt.run(u.hash, u.score);
+      stmt.finalize(err => err ? reject(err) : resolve());
+    }));
+    await runWithRetry(() => new Promise((resolve, reject) => db.run(
+      `UPDATE puzzles
+         SET puzzle_quality_score = (
+           SELECT score FROM temp_scores WHERE temp_scores.hash = puzzles.puzzle_hash
+         )
+       WHERE puzzle_hash IN (SELECT hash FROM temp_scores)`,
+      err => err ? reject(err) : resolve()
+    )));
+    // Clear temp table for next use
+    await runWithRetry(() => new Promise((resolve, reject) => db.run('DELETE FROM temp_scores', err => err ? reject(err) : resolve())));
   }
+
   await runWithRetry(() => new Promise((resolve, reject) => db.run('COMMIT', err => err ? reject(err) : resolve())));
   releaseWritePermit();
 }

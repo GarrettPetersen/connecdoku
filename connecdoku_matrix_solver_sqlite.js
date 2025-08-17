@@ -526,37 +526,42 @@ if (isMainThread) {
   db.serialize(() => {
     db.run("PRAGMA journal_mode=WAL");
     db.run("PRAGMA synchronous=OFF");
+    db.run("PRAGMA busy_timeout=30000");
   });
 
   // Batch management
-  const BATCH_SIZE = 100;
+  // Each row insert uses 10 placeholders; SQLite default max variables is 999.
+  // Keep batch <= 99 rows to avoid prepare failures.
+  const BATCH_SIZE = 99;
   let puzzleBatch = [];
   let puzzlesFound = 0;
   let puzzlesInserted = 0;
 
-  function flushBatch() {
+  async function flushBatch() {
     if (puzzleBatch.length === 0) return;
 
     const ph = puzzleBatch.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
     const flat = puzzleBatch.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
+    const sql = `INSERT OR IGNORE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
 
-    db.run(`INSERT OR IGNORE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`, flat, (err) => {
-      if (err) {
-        console.error("Batch insert error:", err);
-        return;
-      }
-      // Count how many were actually inserted
-      db.get("SELECT changes() as count", (err, row) => {
-        if (!err && row) {
-          puzzlesInserted += row.count;
-          // Report incremental stats to main thread
-          parentPort.postMessage({
-            type: "stats",
-            id: WID,
-            puzzlesFound,
-            puzzlesInserted
-          });
+    await new Promise((resolve) => {
+      db.run(sql, flat, (err) => {
+        if (err) {
+          console.error("Batch insert error:", err);
+          return resolve();
         }
+        db.get("SELECT changes() as count", (err2, row) => {
+          if (!err2 && row) {
+            puzzlesInserted += row.count;
+            parentPort.postMessage({
+              type: "stats",
+              id: WID,
+              puzzlesFound,
+              puzzlesInserted
+            });
+          }
+          resolve();
+        });
       });
     });
 
@@ -654,7 +659,7 @@ if (isMainThread) {
     rustRL = (await import('readline')).createInterface({ input: rustProc.stdout });
     const metaMap = cats.map(c => categoryToMeta.get(c) || null);
     rustProc.stdin.write(JSON.stringify({ type: "Init", masks: mask.map(m => Array.from(m)), n1: N1Arr, n2: N2Arr, categories: cats, meta_map: metaMap }) + "\n");
-    rustRL.on("line", (line) => {
+    rustRL.on("line", async (line) => {
       try {
         const msg = JSON.parse(line);
         if (msg.type === "Tick") {
@@ -665,7 +670,7 @@ if (isMainThread) {
           const puzzleHash = sha256(rowsCats.join("|") + colsCats.join("|"));
           puzzleBatch.push({ hash: puzzleHash, rows: rowsCats, cols: colsCats });
                     puzzlesFound++;
-          if (puzzleBatch.length >= BATCH_SIZE) flushBatch();
+          if (puzzleBatch.length >= BATCH_SIZE) await flushBatch();
         } else if (msg.type === "Done") {
           if (currentResolve) { const r = currentResolve; currentResolve = null; r(); }
         }
@@ -684,7 +689,7 @@ if (isMainThread) {
       currentResolve = resolve;
       rustProc.stdin.write(JSON.stringify({ type: "Work", start, end, jStart, jEnd }) + "\n");
     });
-    flushBatch();
+    await flushBatch();
   }
 
   // ── message handling ──
@@ -699,8 +704,11 @@ if (isMainThread) {
         puzzlesInserted: puzzlesInserted
       });
     } else if (msg.type === "cleanup") {
+      // Stop Rust reader and process to avoid new lines during teardown
+      try { if (rustRL) { rustRL.removeAllListeners('line'); rustRL.close(); } } catch {}
+      try { if (rustProc) { rustProc.stdin.end(); } } catch {}
       // Flush any remaining puzzles and close database
-      flushBatch();
+      await flushBatch();
       db.close(() => {
         parentPort.postMessage({
           type: "cleanup_done",

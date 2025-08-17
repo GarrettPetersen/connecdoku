@@ -117,6 +117,8 @@ async function getHashRange(db) {
   let progressStarted = false;
   const RESERVED_LINES = 3 + nWorkers; // overall + totals + per-worker + spacer
   console.log(`- Spawning ${nWorkers} worker(s)`);
+  let shuttingDown = false;
+  let sigintCount = 0;
   function redraw() {
     const inProgress = status.filter(s => s.current && !s.current.done);
     const fractional = inProgress.reduce((sum, s) => sum + (s.current.total ? (s.current.processed / s.current.total) : 0), 0);
@@ -177,12 +179,16 @@ async function getHashRange(db) {
         status[msg.id].current = { idx: msg.idx, processed: msg.processed, total: msg.total };
         redraw();
       } else if (msg.type === 'request_work') {
-        const job = workQueue.shift();
-        if (job) {
-          status[msg.id].current = { idx: job.idx, processed: 0, total: 1 };
-          w.postMessage({ type: 'work', job });
-        } else {
+        if (shuttingDown) {
           w.postMessage({ type: 'cleanup' });
+        } else {
+          const job = workQueue.shift();
+          if (job) {
+            status[msg.id].current = { idx: job.idx, processed: 0, total: 1 };
+            w.postMessage({ type: 'work', job });
+          } else {
+            w.postMessage({ type: 'cleanup' });
+          }
         }
       } else if (msg.type === 'tally') {
         // merge local tally
@@ -219,6 +225,25 @@ async function getHashRange(db) {
       }
     });
   }
+
+  // Graceful Ctrl+C: finish current chunks, then cleanup
+  process.on('SIGINT', () => {
+    sigintCount++;
+    if (sigintCount === 1) {
+      shuttingDown = true;
+      console.log("\nSIGINT received: finishing current chunks then exiting (press Ctrl+C again to force)…");
+      // Immediately cleanup idle workers
+      workers.forEach((wk, i) => {
+        const st = status[i];
+        if (!st.current || st.current.done) {
+          try { wk.postMessage({ type: 'cleanup' }); } catch {}
+        }
+      });
+    } else {
+      console.log("Force exiting…");
+      process.exit(1);
+    }
+  });
 })();
 
 
