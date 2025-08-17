@@ -89,10 +89,6 @@ if (isMainThread) {
   db.serialize(() => {
     db.run("PRAGMA journal_mode=WAL");
     db.run("PRAGMA synchronous=OFF");
-    db.run("PRAGMA busy_timeout=30000");
-    db.exec("PRAGMA wal_checkpoint(TRUNCATE)", (err) => {
-      if (err) console.warn("wal_checkpoint(TRUNCATE) failed:", err.message);
-    });
     db.run(`CREATE TABLE IF NOT EXISTS puzzles (
               puzzle_hash TEXT PRIMARY KEY,
               row0 TEXT,row1 TEXT,row2 TEXT,row3 TEXT,
@@ -360,45 +356,6 @@ if (isMainThread) {
   const cleanupAcked = Array.from({ length: nWorkers }, () => false);
   let cleanedUpCount = 0;
   const workers = [];
-  // Main-thread insert queue (single writer)
-  const insertQueue = [];
-  let inserting = false;
-  const BATCH_SIZE_MAIN = 99; // 10 placeholders/row => 990 < 999
-  const runWithRetryMain = async (fn, attempts = 5) => {
-    for (let i = 0; i < attempts; i++) {
-      try { await fn(); return; } catch (e) { await new Promise(r => setTimeout(r, 50 + Math.random()*200)); }
-    }
-  };
-  async function processInsertQueue() {
-    if (inserting) return;
-    inserting = true;
-    while (insertQueue.length) {
-      const item = insertQueue.shift();
-      const { id: sourceId, rows } = item;
-      // chunk to stay under SQLite param limit
-      for (let i = 0; i < rows.length; i += BATCH_SIZE_MAIN) {
-        const chunk = rows.slice(i, i + BATCH_SIZE_MAIN);
-        const ph = chunk.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
-        const flat = chunk.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
-        const sql = `INSERT OR IGNORE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
-        await runWithRetryMain(() => new Promise((resolve) => {
-          db.run(sql, flat, function(err){
-            if (err) { console.error('Batch insert error (main):', err); return resolve(); }
-            const changed = typeof this.changes === 'number' ? this.changes : 0;
-            if (changed) {
-              status[sourceId].puzzlesInserted = (status[sourceId].puzzlesInserted || 0) + changed;
-            }
-            resolve();
-          });
-        }));
-      }
-      redraw();
-    }
-    inserting = false;
-  }
-
-  // Track shutdown state for request_work handler
-  let shuttingDown = false;
 
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(fileURLToPath(import.meta.url), {
@@ -414,8 +371,8 @@ if (isMainThread) {
         }
         redraw();
       } else if (msg.type === "request_work") {
-        // Worker finished current chunk
-        const assignNext = () => {
+        // Worker finished current chunk, give it more work
+        if (workQueue.length > 0) {
           const chunk = workQueue.shift();
           if (status[msg.id]) {
             // Add the completed work to the total
@@ -424,35 +381,39 @@ if (isMainThread) {
             // Handle partial chunk completion
             const currentChunk = status[msg.id].currentChunk;
             if (currentChunk.chunkIndex !== undefined) {
+              // For partial chunks, track which chunks of this i value are completed
               const i = currentChunk.start;
               if (!partialChunkProgress.has(i)) {
                 partialChunkProgress.set(i, new Set());
               }
               partialChunkProgress.get(i).add(currentChunk.chunkIndex);
+
+              // If all chunks for this i value are completed, mark it as done
               if (partialChunkProgress.get(i).size === currentChunk.totalChunks) {
                 completedChunks.add(i);
-                partialChunkProgress.delete(i);
+                partialChunkProgress.delete(i); // Clean up
               }
+
               completedChunkWork += status[msg.id].totalJ;
             } else {
+              // For regular chunks, mark the i value as completed
               completedChunks.add(currentChunk.start);
               completedChunkWork += status[msg.id].totalJ;
             }
+
             // Save progress
             saveProgress(wordListHash, Array.from(completedChunks), completedChunkWork, partialChunkProgress);
 
-            if (chunk && !shuttingDown) {
-              status[msg.id].currentChunk = chunk;
-              status[msg.id].chunksCompleted++;
-              status[msg.id].jProgress = 0;
-              status[msg.id].totalJ = chunk.totalJ;
-              status[msg.id].puzzlesFound = msg.puzzlesFound || 0;
-              status[msg.id].puzzlesInserted = msg.puzzlesInserted || 0;
-              w.postMessage({ type: "work", chunk });
-              return;
-            }
+            status[msg.id].currentChunk = chunk;
+            status[msg.id].chunksCompleted++;
+            status[msg.id].jProgress = 0;
+            status[msg.id].totalJ = chunk.totalJ;
+            status[msg.id].puzzlesFound = msg.puzzlesFound || 0;
+            status[msg.id].puzzlesInserted = msg.puzzlesInserted || 0;
           }
-          // Either no chunk or shutting down: cleanup
+          w.postMessage({ type: "work", chunk });
+        } else {
+          // No more work – send cleanup to this worker if not already sent
           if (!cleanupSent[msg.id]) {
             cleanupSent[msg.id] = true;
             if (status[msg.id]) {
@@ -462,19 +423,7 @@ if (isMainThread) {
             w.postMessage({ type: "cleanup" });
           }
           redraw();
-        };
-
-        if (shuttingDown) {
-          assignNext();
-        } else if (workQueue.length > 0) {
-          assignNext();
-        } else {
-          assignNext();
         }
-      } else if (msg.type === 'insert_batch') {
-        // Enqueue rows for main-thread insert
-        insertQueue.push({ id: msg.id, rows: msg.rows });
-        processInsertQueue();
       } else if (msg.type === "stats") {
         // Incremental stats from worker after a batch flush
         if (status[msg.id]) {
@@ -498,13 +447,9 @@ if (isMainThread) {
 
         // Check if all workers have cleaned up
         if (cleanedUpCount === nWorkers) {
-          // Drain any pending inserts before closing the DB
-          console.log("All workers cleaned up. Draining inserts and closing database...");
-          (async () => {
-            while (insertQueue.length > 0 || inserting) {
-              if (!inserting) processInsertQueue();
-              await new Promise(r => setTimeout(r, 25));
-            }
+          // Wait a moment for any final database writes to complete
+          console.log("All workers cleaned up. Closing database...");
+          setTimeout(() => {
             db.close(() => {
               const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
               const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
@@ -544,7 +489,7 @@ if (isMainThread) {
                 });
               });
             });
-          })();
+          }, 1000); // Wait 1 second for final writes
         }
       }
     });
@@ -563,8 +508,6 @@ if (isMainThread) {
     }
   }
 
-  // No custom SIGINT handler; allow Node's default behavior
-
   /*────────────────────────── WORKER THREAD ─────────────────────────*/
 } else {
 
@@ -578,7 +521,13 @@ if (isMainThread) {
   const WORD_IDX = new Map(ALL_WORDS.map((w, i) => [w, i]));
   const MASK_LEN = Math.ceil(ALL_WORDS.length / 32);
 
-  // Workers no longer write to the database directly; inserts are funneled to main thread
+  // ── worker database setup ──
+  const db = new sqlite3.Database(dbPath);
+  db.serialize(() => {
+    db.run("PRAGMA journal_mode=WAL");
+    db.run("PRAGMA synchronous=OFF");
+    db.run("PRAGMA busy_timeout=30000");
+  });
 
   // Batch management
   // Each row insert uses 10 placeholders; SQLite default max variables is 999.
@@ -588,12 +537,35 @@ if (isMainThread) {
   let puzzlesFound = 0;
   let puzzlesInserted = 0;
 
-  async function flushNow() {
+  async function flushBatch() {
     if (puzzleBatch.length === 0) return;
-    const localBatch = puzzleBatch;
+
+    const ph = puzzleBatch.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
+    const flat = puzzleBatch.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
+    const sql = `INSERT OR IGNORE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
+
+    await new Promise((resolve) => {
+      db.run(sql, flat, (err) => {
+        if (err) {
+          console.error("Batch insert error:", err);
+          return resolve();
+        }
+        db.get("SELECT changes() as count", (err2, row) => {
+          if (!err2 && row) {
+            puzzlesInserted += row.count;
+            parentPort.postMessage({
+              type: "stats",
+              id: WID,
+              puzzlesFound,
+              puzzlesInserted
+            });
+          }
+          resolve();
+        });
+      });
+    });
+
     puzzleBatch = [];
-    // Hand off to main thread for insertion
-    parentPort.postMessage({ type: 'insert_batch', id: WID, rows: localBatch });
   }
 
   // Build category to meta-category mapping
@@ -698,7 +670,7 @@ if (isMainThread) {
           const puzzleHash = sha256(rowsCats.join("|") + colsCats.join("|"));
           puzzleBatch.push({ hash: puzzleHash, rows: rowsCats, cols: colsCats });
                     puzzlesFound++;
-          if (puzzleBatch.length >= BATCH_SIZE) await flushNow();
+          if (puzzleBatch.length >= BATCH_SIZE) await flushBatch();
         } else if (msg.type === "Done") {
           if (currentResolve) { const r = currentResolve; currentResolve = null; r(); }
         }
@@ -717,7 +689,7 @@ if (isMainThread) {
       currentResolve = resolve;
       rustProc.stdin.write(JSON.stringify({ type: "Work", start, end, jStart, jEnd }) + "\n");
     });
-    await flushNow();
+    await flushBatch();
   }
 
   // ── message handling ──
@@ -735,18 +707,20 @@ if (isMainThread) {
       // Stop Rust reader and process to avoid new lines during teardown
       try { if (rustRL) { rustRL.removeAllListeners('line'); rustRL.close(); } } catch {}
       try { if (rustProc) { rustProc.stdin.end(); } } catch {}
-      // Flush any remaining puzzles
-      await flushNow();
-      parentPort.postMessage({
-        type: "cleanup_done",
-        id: WID,
-        puzzlesFound: puzzlesFound,
-        puzzlesInserted: puzzlesInserted
+      // Flush any remaining puzzles and close database
+      await flushBatch();
+      db.close(() => {
+        parentPort.postMessage({
+          type: "cleanup_done",
+          id: WID,
+          puzzlesFound: puzzlesFound,
+          puzzlesInserted: puzzlesInserted
+        });
+        // Allow worker to exit naturally
+        if (parentPort && parentPort.close) {
+          try { parentPort.close(); } catch {}
+        }
       });
-      // Allow worker to exit naturally
-      if (parentPort && parentPort.close) {
-        try { parentPort.close(); } catch {}
-      }
     }
   });
 }
