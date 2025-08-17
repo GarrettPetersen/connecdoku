@@ -89,6 +89,7 @@ if (isMainThread) {
   db.serialize(() => {
     db.run("PRAGMA journal_mode=WAL");
     db.run("PRAGMA synchronous=OFF");
+    db.run("PRAGMA busy_timeout=60000");
     db.run(`CREATE TABLE IF NOT EXISTS puzzles (
               puzzle_hash TEXT PRIMARY KEY,
               row0 TEXT,row1 TEXT,row2 TEXT,row3 TEXT,
@@ -356,6 +357,9 @@ if (isMainThread) {
   const cleanupAcked = Array.from({ length: nWorkers }, () => false);
   let cleanedUpCount = 0;
   const workers = [];
+  // Limit concurrent writers to avoid SQLITE_BUSY prepare fatals
+  let writerPermits = 1;
+  const writerQueue = [];
 
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(fileURLToPath(import.meta.url), {
@@ -423,6 +427,20 @@ if (isMainThread) {
             w.postMessage({ type: "cleanup" });
           }
           redraw();
+        }
+      } else if (msg.type === 'request_write_permit') {
+        if (writerPermits > 0) {
+          writerPermits--;
+          w.postMessage({ type: 'write_permit' });
+        } else {
+          writerQueue.push(w);
+        }
+      } else if (msg.type === 'release_write_permit') {
+        const next = writerQueue.shift();
+        if (next) {
+          next.postMessage({ type: 'write_permit' });
+        } else {
+          writerPermits++;
         }
       } else if (msg.type === "stats") {
         // Incremental stats from worker after a batch flush
@@ -526,7 +544,7 @@ if (isMainThread) {
   db.serialize(() => {
     db.run("PRAGMA journal_mode=WAL");
     db.run("PRAGMA synchronous=OFF");
-    db.run("PRAGMA busy_timeout=30000");
+    db.run("PRAGMA busy_timeout=60000");
   });
 
   // Batch management
@@ -539,6 +557,13 @@ if (isMainThread) {
 
   async function flushBatch() {
     if (puzzleBatch.length === 0) return;
+
+    // Request write permit from main to serialize prepare/exec
+    parentPort.postMessage({ type: 'request_write_permit', id: WID });
+    await new Promise((resolve) => {
+      const handler = (msg) => { if (msg && msg.type === 'write_permit') { try { parentPort.off('message', handler); } catch {} resolve(); } };
+      parentPort.on('message', handler);
+    });
 
     const ph = puzzleBatch.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
     const flat = puzzleBatch.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
@@ -566,6 +591,7 @@ if (isMainThread) {
     });
 
     puzzleBatch = [];
+    parentPort.postMessage({ type: 'release_write_permit', id: WID });
   }
 
   // Build category to meta-category mapping
