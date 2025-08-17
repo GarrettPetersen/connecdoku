@@ -8,6 +8,10 @@ import { setTimeout as delay } from 'timers/promises';
 
 const { id: WID, DB_PATH, DATA_DIR, CAT_SCORES_F } = workerData;
 
+// Extended timeouts to reduce false-positive stalls under load
+const RUST_RESPONSE_TIMEOUT_MS = 300000; // 5 minutes
+const WRITE_PERMIT_TIMEOUT_MS = 300000;  // 5 minutes
+
 const categoriesJson = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'categories.json'), 'utf8'));
 const metaCatsJson = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'meta_categories.json'), 'utf8'));
 let categoryScores = {}; try { categoryScores = JSON.parse(fs.readFileSync(CAT_SCORES_F, 'utf8')); } catch {}
@@ -21,13 +25,29 @@ const cleanerPath = fs.existsSync(cleanerRel) ? cleanerRel : (fs.existsSync(clea
 
 let cleaner = null, rl = null, queue = [], waitResolve = null;
 async function ensureCleaner() {
-  if (cleaner || !cleanerPath) return;
+  if (cleaner) return;
+  if (!cleanerPath) {
+    throw new Error('Rust cleaner binary not found. Please run: cargo build -p rust_helper --bin cdx_cleaner --release');
+  }
   cleaner = spawn(cleanerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
+  cleaner.on('error', (e) => {
+    parentPort.postMessage({ type: 'error', id: WID, message: 'Rust cleaner spawn error: ' + (e && e.message ? e.message : String(e)) });
+  });
+  cleaner.on('exit', (code, signal) => {
+    parentPort.postMessage({ type: 'error', id: WID, message: `Rust cleaner exited (code=${code}, signal=${signal})` });
+  });
   rl = (await import('readline')).createInterface({ input: cleaner.stdout });
   rl.on('line', line => { queue.push(line); if (waitResolve) { const r = waitResolve; waitResolve = null; r(); } });
   cleaner.stdin.write(JSON.stringify({ type: 'Init', categories: categoriesJson, meta_map: metaMap }) + '\n');
 }
 async function readLine() { if (queue.length) return queue.shift(); await new Promise(res => waitResolve = res); return queue.shift(); }
+async function readLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
+  if (queue.length) return queue.shift();
+  return await Promise.race([
+    new Promise(res => { waitResolve = res; }),
+    (async () => { await delay(ms); throw new Error(`Timeout waiting for rust cleaner response after ${ms}ms`); })()
+  ]).then(() => queue.shift());
+}
 
 function setupDb() {
   return new Promise((resolve, reject) => {
@@ -44,8 +64,6 @@ function setupDb() {
 
 function requestWritePermit() { parentPort.postMessage({ type: 'request_write_permit', id: WID }); }
 function releaseWritePermit() { parentPort.postMessage({ type: 'release_write_permit', id: WID }); }
-
-parentPort.postMessage({ type: 'ready', id: WID });
 
 parentPort.on('message', async msg => {
   if (msg.type === 'request_work') {
@@ -73,6 +91,7 @@ parentPort.on('message', async msg => {
         }
       };
       const puzzles = await selectWithRetry();
+      if (!Array.isArray(puzzles)) throw new Error('Select returned non-array');
       const total = puzzles.length;
       let processed = 0;
       let invalid = [];
@@ -82,9 +101,15 @@ parentPort.on('message', async msg => {
       let validCount = 0, invalidCount = 0;
       let validDelta = 0, invalidDelta = 0;
 
+      // send an initial tick so orchestrator knows totals
+      parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta: 0, invalidDelta: 0 });
+
+      const FLUSH_THRESHOLD = 500;
       for (const p of puzzles) {
         cleaner.stdin.write(JSON.stringify({ type: 'Validate', rows: [p.row0,p.row1,p.row2,p.row3], cols: [p.col0,p.col1,p.col2,p.col3] }) + '\n');
-        const resp = JSON.parse(await readLine());
+        const line = await readLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
+        let resp;
+        try { resp = JSON.parse(line); } catch (e) { throw new Error('Invalid JSON from rust cleaner: ' + line); }
         if (resp.type === 'Valid') {
           const cats = [p.row0,p.row1,p.row2,p.row3,p.col0,p.col1,p.col2,p.col3];
           const score = cats.reduce((s,c) => s + (categoryScores[c] || 0), 0);
@@ -99,6 +124,11 @@ parentPort.on('message', async msg => {
           invalidCount++; invalidDelta++;
         }
         processed++;
+        if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
+          await performWriteBatch(db, invalid, scoreUpdates);
+          invalid = [];
+          scoreUpdates = [];
+        }
         if (processed % 200 === 0 || processed === total) {
           parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta });
           validDelta = 0; invalidDelta = 0;
@@ -131,10 +161,14 @@ parentPort.on('message', async msg => {
   }
 });
 
+// Signal readiness after message handler is set to avoid race on first request
+parentPort.postMessage({ type: 'ready', id: WID });
+
 async function performWriteBatch(db, invalid, scoreUpdates) {
   // acquire permit from main to keep concurrency low
   requestWritePermit();
-  await new Promise(resolve => {
+  const permitTimeoutMs = WRITE_PERMIT_TIMEOUT_MS;
+  await new Promise((resolve, reject) => {
     // Wait for permit grant message
     const handler = (msg) => {
       if (msg && msg.type === 'write_permit') {
@@ -143,6 +177,13 @@ async function performWriteBatch(db, invalid, scoreUpdates) {
       }
     };
     parentPort.on('message', handler);
+    // timeout watchdog
+    (async () => {
+      await delay(permitTimeoutMs);
+      parentPort.off('message', handler);
+      try { parentPort.postMessage({ type: 'cancel_write_permit_request', id: WID }); } catch {}
+      reject(new Error(`Timed out waiting for write permit after ${permitTimeoutMs}ms`));
+    })();
   });
 
   // Write with retry/backoff on SQLITE_BUSY

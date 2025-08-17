@@ -86,7 +86,12 @@ async function getHashRange(db) {
   const tOpen = Date.now();
   const db = await setupDatabase();
   console.log(`  • Database handle acquired in ${((Date.now()-tOpen)/1000).toFixed(2)}s`);
-  db.serialize(() => { db.run("PRAGMA journal_mode=WAL"); db.run("PRAGMA synchronous=OFF"); });
+  db.serialize(() => {
+    db.run("PRAGMA journal_mode=WAL");
+    db.run("PRAGMA synchronous=OFF");
+    db.run("PRAGMA busy_timeout=30000");
+    db.exec("PRAGMA wal_checkpoint(TRUNCATE)", (err) => { if (err) console.warn("wal_checkpoint(TRUNCATE) failed:", err.message); });
+  });
   console.log(`- Database opened: ${DB_PATH}`);
   console.log("- Skipping COUNT(*); using conservative chunking target.");
   // Assume full SHA-256 range to avoid slow MIN/MAX scan
@@ -158,7 +163,14 @@ async function getHashRange(db) {
     w.on('message', msg => {
       if (msg.type === 'ready') {
         if (!progressStarted) console.log(`  • Worker ${msg.id} ready`);
-        w.postMessage({ type: 'request_work' });
+        // Assign immediately if queue has work; otherwise ask worker to request
+        const job = workQueue.shift();
+        if (job) {
+          status[msg.id].current = { idx: job.idx, processed: 0, total: 1 };
+          w.postMessage({ type: 'work', job });
+        } else {
+          w.postMessage({ type: 'request_work' });
+        }
       } else if (msg.type === 'request_write_permit') {
         if (writerPermits > 0) {
           writerPermits--;
@@ -173,6 +185,12 @@ async function getHashRange(db) {
         } else {
           writerPermits++;
         }
+        // basic visibility into queue length
+        if (!progressStarted) console.log(`  • Writer permits=${writerPermits}, queued=${writerQueue.length}`);
+      } else if (msg.type === 'cancel_write_permit_request') {
+        // A worker timed out waiting for a permit; no direct action required here,
+        // but we keep visibility for debugging
+        console.log(`Worker ${msg.id} canceled write-permit wait (likely timed out)`);
       } else if (msg.type === 'tick') {
         if (typeof msg.validDelta === 'number') { status[msg.id].valid += msg.validDelta; totalValid += msg.validDelta; }
         if (typeof msg.invalidDelta === 'number') { status[msg.id].invalid += msg.invalidDelta; totalInvalid += msg.invalidDelta; }
@@ -190,6 +208,8 @@ async function getHashRange(db) {
             w.postMessage({ type: 'cleanup' });
           }
         }
+      } else if (msg.type === 'error') {
+        console.log(`Worker ${msg.id} error:`, msg.message);
       } else if (msg.type === 'tally') {
         // merge local tally
         const t = msg.tally || {};
@@ -226,24 +246,7 @@ async function getHashRange(db) {
     });
   }
 
-  // Graceful Ctrl+C: finish current chunks, then cleanup
-  process.on('SIGINT', () => {
-    sigintCount++;
-    if (sigintCount === 1) {
-      shuttingDown = true;
-      console.log("\nSIGINT received: finishing current chunks then exiting (press Ctrl+C again to force)…");
-      // Immediately cleanup idle workers
-      workers.forEach((wk, i) => {
-        const st = status[i];
-        if (!st.current || st.current.done) {
-          try { wk.postMessage({ type: 'cleanup' }); } catch {}
-        }
-      });
-    } else {
-      console.log("Force exiting…");
-      process.exit(1);
-    }
-  });
+  // No custom SIGINT handler; allow Node's default behavior
 })();
 
 
