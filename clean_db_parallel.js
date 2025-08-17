@@ -118,8 +118,10 @@ async function getHashRange(db) {
   const RESERVED_LINES = 3 + nWorkers; // overall + totals + per-worker + spacer
   console.log(`- Spawning ${nWorkers} worker(s)`);
   function redraw() {
+    const inProgress = status.filter(s => s.current && !s.current.done);
+    const fractional = inProgress.reduce((sum, s) => sum + (s.current.total ? (s.current.processed / s.current.total) : 0), 0);
     const doneChunks = completed.size + status.filter(s => s.current && s.current.done).length;
-    const pct = (doneChunks) / BATCH_COUNT;
+    const pct = Math.min(1, (doneChunks + fractional) / BATCH_COUNT);
     const lines = [];
     lines.push(`Overall: [${bar(pct)}] ${(pct*100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
     lines.push(`Totals: valid=${totalValid}, deleted=${totalInvalid}`);
@@ -210,7 +212,9 @@ async function getHashRange(db) {
             fs.writeFileSync(tallyOutputPath, JSON.stringify(tallyData, null, 2));
             console.log(`Saved category tally to ${tallyOutputPath}`);
           } catch (e) { console.log('Warning: failed to save category tally:', e.message); }
-          process.exit(0);
+          // Ask workers to shutdown their native resources gracefully before exit
+          for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch {} }
+          setTimeout(() => process.exit(0), 50);
         }
       }
     });

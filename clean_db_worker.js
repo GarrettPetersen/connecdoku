@@ -113,7 +113,7 @@ parentPort.on('message', async msg => {
 
       // Final flush
       if (invalid.length > 0 || scoreUpdates.length > 0) await performWriteBatch(db, invalid, scoreUpdates);
-      db.close();
+      await new Promise(resolve => db.close(() => resolve()));
       // Send tally for this chunk before signaling done
       // flush any remaining deltas
       if (validDelta || invalidDelta) parentPort.postMessage({ type: 'stats', id: WID, validDelta, invalidDelta });
@@ -127,6 +127,12 @@ parentPort.on('message', async msg => {
     }
   } else if (msg.type === 'cleanup') {
     parentPort.postMessage({ type: 'cleanup_done', id: WID });
+  } else if (msg.type === 'shutdown') {
+    // Attempt to gracefully stop the Rust cleaner
+    try { if (cleaner && cleaner.stdin && !cleaner.killed) cleaner.stdin.end(); } catch {}
+    try { if (rl) rl.close(); } catch {}
+    try { if (cleaner && !cleaner.killed) cleaner.kill(); } catch {}
+    process.exit(0);
   }
 });
 
@@ -165,8 +171,10 @@ async function performWriteBatch(db, invalid, scoreUpdates) {
       await runWithRetry(() => new Promise((resolve, reject) => {
         const placeholders = batch.map(() => '?').join(',');
         const stmt = db.prepare(`DELETE FROM puzzles WHERE puzzle_hash IN (${placeholders})`);
-        stmt.run(batch, function(err){ if (err) reject(err); else resolve(); });
-        stmt.finalize();
+        stmt.run(batch, function(err){
+          if (err) return reject(err);
+          stmt.finalize(finalizeErr => finalizeErr ? reject(finalizeErr) : resolve());
+        });
       }));
     }
   }

@@ -136,8 +136,8 @@ if (isMainThread) {
     console.log("No previous progress found, starting fresh.");
   }
 
-  // Calculate total work by building the complete 2-away matrix
-  console.log("Calculating total work...");
+  // Build adjacency once with the same rules workers use, and derive total work from it
+  console.log("Building adjacency and total work...");
   const categoriesJson = JSON.parse(fs.readFileSync(CATS_F, "utf8"));
   const cats = Object.keys(categoriesJson).filter(k => categoriesJson[k].length >= 4).sort();
   const n = cats.length;
@@ -157,67 +157,44 @@ if (isMainThread) {
     return m;
   });
 
-  // Build complete connectivity matrix
+  // Compute subset mask S, adjacency A excluding subset edges, then A2
+  const S = Array.from({ length: n }, () => Array(n).fill(false));
+  const intersects = (a, b) => { for (let i = 0; i < a.length; i++) if (a[i] & b[i]) return true; return false; };
+  const subset = (a, b) => { for (let i = 0; i < a.length; i++) if ((a[i] & ~b[i]) !== 0) return false; return true; };
+  for (let i = 0; i < n; i++)
+    for (let j = i + 1; j < n; j++)
+      if (subset(mask[i], mask[j]) || subset(mask[j], mask[i])) S[i][j] = S[j][i] = true;
+
   const A = Array.from({ length: n }, () => Array(n).fill(0));
-  for (let i = 0; i < n; i++) {
-    for (let j = i + 1; j < n; j++) {
-      // Check if categories i and j have overlapping words
-      let hasOverlap = false;
-      for (let k = 0; k < mask[i].length; k++) {
-        if (mask[i][k] & mask[j][k]) {
-          hasOverlap = true;
-          break;
-        }
-      }
-      if (hasOverlap) {
-        A[i][j] = A[j][i] = 1;
-      }
-    }
-  }
+  for (let i = 0; i < n; i++)
+    for (let j = i + 1; j < n; j++)
+      if (!S[i][j] && intersects(mask[i], mask[j])) A[i][j] = A[j][i] = 1;
 
-  // Calculate complete 2-away matrix
   const A2 = Array.from({ length: n }, () => Array(n).fill(0));
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n; j++) {
-      for (let k = 0; k < n; k++) {
-        A2[i][j] += A[i][k] * A[k][j];
-      }
-    }
-  }
+  for (let i = 0; i < n; i++)
+    for (let j = 0; j < n; j++)
+      for (let k = 0; k < n; k++) A2[i][j] += A[i][k] * A[k][j];
 
-  // Calculate total work for all i values
-  // Only consider i values that can form valid puzzles (need at least 8 categories total)
-  let totalWork = 0;
+  // Derive N1/N2 arrays that workers use
+  let N1Arr = Array.from({ length: n }, (_, i) => A[i].map((v, idx) => v ? idx : -1).filter(x => x !== -1));
+  const B = Array.from({ length: n }, () => Array(n).fill(false));
+  for (let i = 0; i < n; i++)
+    for (let j = i + 1; j < n; j++)
+      if (!S[i][j] && A2[i][j] >= 4) B[i][j] = B[j][i] = true;
+  let N2Arr = Array.from({ length: n }, (_, i) => B[i].map((v, idx) => v ? idx : -1).filter(x => x !== -1));
+
+  // Compute total work from N2 (only j > i and i < n-7)
+  totalWorkEstimate = 0;
   for (let i = 0; i < n - 7; i++) {
-    let validJCount = 0;
-    for (let j = i + 1; j < n; j++) {
-      if (A2[i][j] >= 4) {
-        validJCount++;
-      }
-    }
-    totalWork += validJCount;
+    totalWorkEstimate += N2Arr[i].filter(j => j > i).length;
   }
-
-  console.log(`Total work calculated: ${totalWork} j-steps`);
-
-  // Initialize total work estimate with the calculated total
-  totalWorkEstimate = totalWork;
+  console.log(`Total work calculated: ${totalWorkEstimate} j-steps`);
 
   // If completedChunkWork is missing (old progress file), estimate it
   if (completedChunkWork === 0 && completedChunks.size > 0) {
     console.log("Estimating work from completed chunks...");
-    // Calculate work for completed chunks using the same method as total work
-    // Only count chunks that could have been valid (i < n - 7)
     for (const i of completedChunks) {
-      if (i < n - 7) {
-        let validJCount = 0;
-        for (let j = i + 1; j < n; j++) {
-          if (A2[i][j] >= 4) {
-            validJCount++;
-          }
-        }
-        completedChunkWork += validJCount;
-      }
+      if (i < n - 7) completedChunkWork += N2Arr[i].filter(j => j > i).length;
     }
     console.log(`Estimated ${completedChunkWork} j-steps from ${completedChunks.size} completed chunks`);
   }
@@ -228,7 +205,7 @@ if (isMainThread) {
   // ── work queue management ──
   const workQueue = [];
 
-  // First, calculate difficulties and create initial chunks
+  // First, calculate difficulties and create initial chunks (based on N2)
   const difficulties = new Map();
 
   // Only create chunks for i values that can form valid puzzles (need at least 8 categories total)
@@ -238,13 +215,8 @@ if (isMainThread) {
       continue;
     }
 
-    // Calculate difficulty (number of valid j connections)
-    let validJCount = 0;
-    for (let j = i + 1; j < n; j++) {
-      if (A2[i][j] >= 4) {
-        validJCount++;
-      }
-    }
+    // Calculate difficulty (number of valid j connections via N2)
+    let validJCount = N2Arr[i].filter(j => j > i).length;
     difficulties.set(i, validJCount);
 
     // If there are zero valid j-steps for this i, mark it complete immediately
@@ -318,34 +290,7 @@ if (isMainThread) {
   // Persist progress after marking zero-work i values as completed
   saveProgress(wordListHash, Array.from(completedChunks), completedChunkWork, partialChunkProgress);
 
-  // ── compute adjacency once (main thread) and share with workers ──
-  let N1Arr = null, N2Arr = null;
-  {
-    // JS build of adjacency: compute N1/N2 once in main thread
-    const S = Array.from({ length: n }, () => Array(n).fill(false));
-    const intersects = (a, b) => { for (let i = 0; i < a.length; i++) if (a[i] & b[i]) return true; return false; };
-    const subset = (a, b) => { for (let i = 0; i < a.length; i++) if ((a[i] & ~b[i]) !== 0) return false; return true; };
-    for (let i = 0; i < n; i++)
-      for (let j = i + 1; j < n; j++)
-        if (subset(mask[i], mask[j]) || subset(mask[j], mask[i])) S[i][j] = S[j][i] = true;
-
-    const A = Array.from({ length: n }, () => Array(n).fill(0));
-    for (let i = 0; i < n; i++)
-      for (let j = i + 1; j < n; j++)
-        if (!S[i][j] && intersects(mask[i], mask[j])) A[i][j] = A[j][i] = 1;
-
-    const A2 = Array.from({ length: n }, () => Array(n).fill(0));
-    for (let i = 0; i < n; i++)
-      for (let j = 0; j < n; j++)
-        for (let k = 0; k < n; k++) A2[i][j] += A[i][k] * A[k][j];
-
-    N1Arr = Array.from({ length: n }, (_, i) => A[i].map((v, idx) => v ? idx : -1).filter(x => x !== -1));
-    const B = Array.from({ length: n }, () => Array(n).fill(false));
-    for (let i = 0; i < n; i++)
-      for (let j = i + 1; j < n; j++)
-        if (!S[i][j] && A2[i][j] >= 4) B[i][j] = B[j][i] = true;
-    N2Arr = Array.from({ length: n }, (_, i) => B[i].map((v, idx) => v ? idx : -1).filter(x => x !== -1));
-  }
+  // N1Arr and N2Arr already computed above and will be shared with workers
 
   // ── progress bookkeeping ──
   const status = Array.from({ length: nWorkers }, () => ({
