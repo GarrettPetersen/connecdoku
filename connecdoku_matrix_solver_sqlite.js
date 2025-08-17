@@ -150,6 +150,7 @@ if (isMainThread) {
   const ALL_WORDS = Object.keys(wordsJson);
   const WORD_IDX = new Map(ALL_WORDS.map((w, i) => [w, i]));
   const MASK_LEN = Math.ceil(ALL_WORDS.length / 32);
+  const N2_THRESHOLD = Math.max(1, parseInt(process.env.SOLVER_N2_THRESHOLD || '4', 10));
 
   // Build masks once using the already loaded word index
   const mask = cats.map(c => {
@@ -185,7 +186,7 @@ if (isMainThread) {
   const B = Array.from({ length: n }, () => Array(n).fill(false));
   for (let i = 0; i < n; i++)
     for (let j = i + 1; j < n; j++)
-      if (!S[i][j] && A2[i][j] >= 4) B[i][j] = B[j][i] = true;
+      if (!S[i][j] && A2[i][j] >= N2_THRESHOLD) B[i][j] = B[j][i] = true;
   let N2Arr = Array.from({ length: n }, (_, i) => B[i].map((v, idx) => v ? idx : -1).filter(x => x !== -1));
 
   // Compute total work from N2 (only j > i and i < n-7)
@@ -336,9 +337,7 @@ if (isMainThread) {
           (st.currentChunk.chunkIndex !== undefined ?
             ` (i=${st.currentChunk.start}, chunk=${st.currentChunk.chunkIndex + 1}/${st.currentChunk.totalChunks}, j=${st.jProgress}/${st.totalJ})` :
             ` (i=${st.currentChunk.start}, j=${st.jProgress}/${st.totalJ})`) : "";
-        const stats = st.done ?
-          ` [${st.puzzlesFound} found, ${st.puzzlesInserted} inserted]` :
-          ` [${st.puzzlesFound} found]`;
+        const stats = ` [${st.puzzlesFound} found, ${st.puzzlesInserted} inserted]`;
         out += `\nW${idx} [${bar(pct)}] ${(pct * 100).toFixed(1).padStart(6)}%${st.done ? " ✓" : ""}${chunkInfo}${stats}`;
       });
       out += `\nQueue: ${workQueue.length} chunks remaining   elapsed: ${fmt(elapsed)}`;
@@ -409,7 +408,7 @@ if (isMainThread) {
 
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(fileURLToPath(import.meta.url), {
-      workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH, N1Arr, N2Arr }
+      workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH, N1Arr, N2Arr, writeMode: (process.env.SOLVER_WRITE_MODE||'main').toLowerCase() }
     });
     workers.push(w);
 
@@ -475,9 +474,14 @@ if (isMainThread) {
           redraw();
         }
       } else if (msg.type === 'insert_batch') {
-        if (DEBUG) console.log(`[main] queue insert batch from W${msg.id} req=${msg.reqId} rows=${msg.rows.length}`);
-        insertQueue.push({ id: msg.id, reqId: msg.reqId, rows: msg.rows });
-        processInsertQueue();
+        const writeMode = (process.env.SOLVER_WRITE_MODE || 'main').toLowerCase();
+        if (writeMode === 'main') {
+          if (DEBUG) console.log(`[main] queue insert batch from W${msg.id} req=${msg.reqId} rows=${msg.rows.length}`);
+          insertQueue.push({ id: msg.id, reqId: msg.reqId, rows: msg.rows });
+          processInsertQueue();
+        } else {
+          try { const w = workers[msg.id]; if (w) w.postMessage({ type: 'batch_done', reqId: msg.reqId, inserted: 0 }); } catch {}
+        }
       } else if (msg.type === 'request_write_permit') {
         if (writerPermits > 0) {
           writerPermits--;
@@ -580,7 +584,7 @@ if (isMainThread) {
   /*────────────────────────── WORKER THREAD ─────────────────────────*/
 } else {
 
-  const { id: WID, nWorkers: NW, cats, n, wordListHash, dbPath, N1Arr, N2Arr } = workerData;
+  const { id: WID, nWorkers: NW, cats, n, wordListHash, dbPath, N1Arr, N2Arr, writeMode } = workerData;
 
   // ── load data ──
   const wordsJson = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
@@ -590,7 +594,7 @@ if (isMainThread) {
   const WORD_IDX = new Map(ALL_WORDS.map((w, i) => [w, i]));
   const MASK_LEN = Math.ceil(ALL_WORDS.length / 32);
 
-  // Batch management (send to main thread for insertion)
+  // Batch management: either send to main (default) or do worker-local writes if SOLVER_WRITE_MODE=worker
   const BATCH_SIZE = 99;
   let puzzleBatch = [];
   let pendingBatches = 0;
@@ -599,32 +603,75 @@ if (isMainThread) {
   let puzzlesInserted = 0;
   const MAX_INFLIGHT = 50; // backpressure bound
 
+  let wdb = null;
+  if (writeMode === 'worker') {
+    wdb = new sqlite3.Database(dbPath);
+    wdb.serialize(() => {
+      wdb.run("PRAGMA journal_mode=WAL");
+      wdb.run("PRAGMA synchronous=OFF");
+      wdb.run("PRAGMA busy_timeout=60000");
+      wdb.run("PRAGMA temp_store=MEMORY");
+    });
+  }
+
+  const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+  async function runWithRetry(fn, attempts = 8) {
+    for (let i = 0; i < attempts; i++) {
+      try { return await fn(); } catch (e) {
+        if (e && e.code === 'SQLITE_BUSY' && i < attempts - 1) { await sleep(50 + Math.random()*200); continue; }
+        throw e;
+      }
+    }
+  }
+
   async function flushBatch() {
     if (puzzleBatch.length === 0) return;
-    // Apply backpressure: wait if too many in flight
-    while (pendingBatches >= MAX_INFLIGHT) {
-      await new Promise(r => setTimeout(r, 5));
-    }
     const rows = puzzleBatch;
     puzzleBatch = [];
-    const reqId = nextReqId++;
-    pendingBatches++;
-    if (DEBUG) console.log(`[W${WID}] send batch req=${reqId} rows=${rows.length}`);
-    parentPort.postMessage({ type: 'insert_batch', id: WID, reqId, rows });
-    // Wait for ack
-    await new Promise(resolve => {
-      const handler = (msg) => {
-        if (msg && msg.type === 'batch_done' && msg.reqId === reqId) {
-          try { parentPort.off('message', handler); } catch {}
-          if (DEBUG) console.log(`[W${WID}] ack batch req=${reqId} inserted=${msg.inserted||0}`);
-          puzzlesInserted += (msg.inserted || 0);
-          parentPort.postMessage({ type: 'stats', id: WID, puzzlesFound, puzzlesInserted });
-          pendingBatches--;
-          resolve();
-        }
-      };
-      parentPort.on('message', handler);
-    });
+    if (writeMode !== 'worker') {
+      // Send to main with backpressure
+      while (pendingBatches >= MAX_INFLIGHT) { await new Promise(r => setTimeout(r, 5)); }
+      const reqId = nextReqId++;
+      pendingBatches++;
+      if (DEBUG) console.log(`[W${WID}] send batch req=${reqId} rows=${rows.length}`);
+      parentPort.postMessage({ type: 'insert_batch', id: WID, reqId, rows });
+      await new Promise(resolve => {
+        const handler = (msg) => {
+          if (msg && msg.type === 'batch_done' && msg.reqId === reqId) {
+            try { parentPort.off('message', handler); } catch {}
+            if (DEBUG) console.log(`[W${WID}] ack batch req=${reqId} inserted=${msg.inserted||0}`);
+            puzzlesInserted += (msg.inserted || 0);
+            parentPort.postMessage({ type: 'stats', id: WID, puzzlesFound, puzzlesInserted });
+            pendingBatches--;
+            resolve();
+          }
+        };
+        parentPort.on('message', handler);
+      });
+    } else {
+      // Worker-local insert with transaction and retry
+      const ph = rows.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
+      const flat = rows.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
+      const sql = `INSERT OR IGNORE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
+      try {
+        await runWithRetry(() => new Promise((resolve, reject) => wdb.run('BEGIN IMMEDIATE', err => err ? reject(err) : resolve())));
+        await runWithRetry(() => new Promise((resolve, reject) => {
+          wdb.run(sql, flat, function(err){
+            if (err) return reject(err);
+            const changed = typeof this.changes === 'number' ? this.changes : 0;
+            if (changed) {
+              puzzlesInserted += changed;
+              parentPort.postMessage({ type: 'stats', id: WID, puzzlesFound, puzzlesInserted });
+            }
+            resolve();
+          });
+        }));
+        await runWithRetry(() => new Promise((resolve, reject) => wdb.run('COMMIT', err => err ? reject(err) : resolve())));
+      } catch (e) {
+        try { await new Promise(res => wdb.run('ROLLBACK', () => res())); } catch {}
+        if (!e || e.code !== 'SQLITE_BUSY') console.error(`Worker ${WID} write error:`, e && e.message ? e.message : e);
+      }
+    }
   }
 
   // Build category to meta-category mapping
@@ -717,19 +764,25 @@ if (isMainThread) {
     rustProc = spawn(rustPath, [], { stdio: ["pipe", "pipe", "inherit"] });
     rustRL = (await import('readline')).createInterface({ input: rustProc.stdout });
     const metaMap = cats.map(c => categoryToMeta.get(c) || null);
-    rustProc.stdin.write(JSON.stringify({ type: "Init", masks: mask.map(m => Array.from(m)), n1: N1Arr, n2: N2Arr, categories: cats, meta_map: metaMap }) + "\n");
+    const write_mode = writeMode === 'rust' ? 'rust' : undefined;
+    rustProc.stdin.write(JSON.stringify({ type: "Init", masks: mask.map(m => Array.from(m)), n1: N1Arr, n2: N2Arr, categories: cats, meta_map: metaMap, write_mode, db_path: dbPath, word_list_hash: wordListHash }) + "\n");
     rustRL.on("line", async (line) => {
       try {
         const msg = JSON.parse(line);
         if (msg.type === "Tick") {
           parentPort.postMessage({ type: "tick", id: WID, jProgress: msg.jProgress, totalJ: msg.totalJ });
         } else if (msg.type === "Found") {
-          const rowsCats = msg.rows.map((v) => cats[v]);
-          const colsCats = msg.cols.map((v) => cats[v]);
-          const puzzleHash = sha256(rowsCats.join("|") + colsCats.join("|"));
-          puzzleBatch.push({ hash: puzzleHash, rows: rowsCats, cols: colsCats });
-                    puzzlesFound++;
-          if (puzzleBatch.length >= BATCH_SIZE) await flushBatch();
+          if (writeMode !== 'rust') {
+            const rowsCats = msg.rows.map((v) => cats[v]);
+            const colsCats = msg.cols.map((v) => cats[v]);
+            const puzzleHash = sha256(rowsCats.join("|") + colsCats.join("|"));
+            puzzleBatch.push({ hash: puzzleHash, rows: rowsCats, cols: colsCats });
+            puzzlesFound++;
+            if (puzzleBatch.length >= BATCH_SIZE) await flushBatch();
+          }
+        } else if (msg.type === "Stats") {
+          puzzlesFound += msg.found || 0;
+          puzzlesInserted += msg.inserted || 0;
         } else if (msg.type === "Done") {
           if (currentResolve) { const r = currentResolve; currentResolve = null; r(); }
         }
@@ -769,16 +822,16 @@ if (isMainThread) {
       try { if (rustProc) { rustProc.stdin.end(); } } catch {}
       // Flush any remaining puzzles
       await flushBatch();
-      parentPort.postMessage({
-        type: "cleanup_done",
-        id: WID,
-        puzzlesFound: puzzlesFound,
-        puzzlesInserted: puzzlesInserted
-      });
-      // Allow worker to exit naturally
-      if (parentPort && parentPort.close) {
-        try { parentPort.close(); } catch {}
-      }
+        parentPort.postMessage({
+          type: "cleanup_done",
+          id: WID,
+          puzzlesFound: puzzlesFound,
+          puzzlesInserted: puzzlesInserted
+        });
+        // Allow worker to exit naturally
+        if (parentPort && parentPort.close) {
+          try { parentPort.close(); } catch {}
+        }
     }
   });
 }
