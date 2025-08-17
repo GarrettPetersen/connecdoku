@@ -408,7 +408,7 @@ if (isMainThread) {
 
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(fileURLToPath(import.meta.url), {
-      workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH, N1Arr, N2Arr, writeMode: (process.env.SOLVER_WRITE_MODE||'main').toLowerCase() }
+      workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH, N1Arr, N2Arr, writeMode: (process.env.SOLVER_WRITE_MODE||'rust').toLowerCase() }
     });
     workers.push(w);
 
@@ -474,7 +474,7 @@ if (isMainThread) {
           redraw();
         }
       } else if (msg.type === 'insert_batch') {
-        const writeMode = (process.env.SOLVER_WRITE_MODE || 'main').toLowerCase();
+        const writeMode = (process.env.SOLVER_WRITE_MODE || 'rust').toLowerCase();
         if (writeMode === 'main') {
           if (DEBUG) console.log(`[main] queue insert batch from W${msg.id} req=${msg.reqId} rows=${msg.rows.length}`);
           insertQueue.push({ id: msg.id, reqId: msg.reqId, rows: msg.rows });

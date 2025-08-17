@@ -22,8 +22,12 @@ const ROOT_DIR = path.dirname(new URL(import.meta.url).pathname);
 const cleanerRel = path.join(ROOT_DIR, 'rust_helper', 'target', 'release', 'cdx_cleaner');
 const cleanerDbg = path.join(ROOT_DIR, 'rust_helper', 'target', 'debug', 'cdx_cleaner');
 const cleanerPath = fs.existsSync(cleanerRel) ? cleanerRel : (fs.existsSync(cleanerDbg) ? cleanerDbg : null);
+const writerRel = path.join(ROOT_DIR, 'rust_helper', 'target', 'release', 'cdx_writer');
+const writerDbg = path.join(ROOT_DIR, 'rust_helper', 'target', 'debug', 'cdx_writer');
+const writerPath = fs.existsSync(writerRel) ? writerRel : (fs.existsSync(writerDbg) ? writerDbg : null);
 
 let cleaner = null, rl = null, queue = [], waitResolve = null;
+let writer = null, wrl = null, wqueue = [], wwaitResolve = null;
 async function ensureCleaner() {
   if (cleaner) return;
   if (!cleanerPath) {
@@ -47,6 +51,25 @@ async function readLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
     new Promise(res => { waitResolve = res; }),
     (async () => { await delay(ms); throw new Error(`Timeout waiting for rust cleaner response after ${ms}ms`); })()
   ]).then(() => queue.shift());
+}
+
+async function ensureWriter() {
+  if (writer) return;
+  if (!writerPath) throw new Error('Rust writer binary not found. Please build cdx_writer');
+  writer = spawn(writerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
+  wrl = (await import('readline')).createInterface({ input: writer.stdout });
+  wrl.on('line', line => { wqueue.push(line); if (wwaitResolve) { const r = wwaitResolve; wwaitResolve = null; r(); } });
+  writer.stdin.write(JSON.stringify({ type: 'Init', db_path: DB_PATH }) + '\n');
+  const line = await readWriterLineWithTimeout();
+  let msg; try { msg = JSON.parse(line); } catch { throw new Error('Invalid writer init: ' + line); }
+  if (msg.type !== 'Ready') throw new Error('Writer failed to init: ' + line);
+}
+async function readWriterLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
+  if (wqueue.length) return wqueue.shift();
+  return await Promise.race([
+    new Promise(res => { wwaitResolve = res; }),
+    (async () => { await delay(ms); throw new Error(`Timeout waiting for rust writer response after ${ms}ms`); })()
+  ]).then(() => wqueue.shift());
 }
 
 function setupDb() {
@@ -73,6 +96,7 @@ parentPort.on('message', async msg => {
     try {
       await ensureCleaner();
       const db = await setupDb();
+      await ensureWriter();
       // SELECT with retry on SQLITE_BUSY
       const selectWithRetry = async (attempts = 5) => {
         for (let i = 0; i < attempts; i++) {
@@ -125,7 +149,7 @@ parentPort.on('message', async msg => {
         }
         processed++;
         if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
-          await performWriteBatch(db, invalid, scoreUpdates);
+          await performWriteBatchRust(invalid, scoreUpdates);
           invalid = [];
           scoreUpdates = [];
         }
@@ -137,7 +161,7 @@ parentPort.on('message', async msg => {
       }
 
       // Final flush
-      if (invalid.length > 0 || scoreUpdates.length > 0) await performWriteBatch(db, invalid, scoreUpdates);
+      if (invalid.length > 0 || scoreUpdates.length > 0) await performWriteBatchRust(invalid, scoreUpdates);
       await new Promise(resolve => db.close(() => resolve()));
       // Send tally for this chunk before signaling done
       // flush any remaining deltas
@@ -157,6 +181,9 @@ parentPort.on('message', async msg => {
     try { if (cleaner && cleaner.stdin && !cleaner.killed) cleaner.stdin.end(); } catch {}
     try { if (rl) rl.close(); } catch {}
     try { if (cleaner && !cleaner.killed) cleaner.kill(); } catch {}
+    try { if (writer && writer.stdin && !writer.killed) writer.stdin.end(); } catch {}
+    try { if (wrl) wrl.close(); } catch {}
+    try { if (writer && !writer.killed) writer.kill(); } catch {}
     process.exit(0);
   }
 });
@@ -243,6 +270,28 @@ async function performWriteBatch(db, invalid, scoreUpdates) {
   }
 
   await runWithRetry(() => new Promise((resolve, reject) => db.run('COMMIT', err => err ? reject(err) : resolve())));
+  releaseWritePermit();
+}
+
+async function performWriteBatchRust(invalid, scoreUpdates) {
+  requestWritePermit();
+  await new Promise((resolve, reject) => {
+    const handler = (msg) => { if (msg && msg.type === 'write_permit') { parentPort.off('message', handler); resolve(); } };
+    parentPort.on('message', handler);
+    (async () => { await delay(WRITE_PERMIT_TIMEOUT_MS); parentPort.off('message', handler); reject(new Error('Timed out waiting for write permit')); })();
+  });
+  if (invalid.length > 0) {
+    writer.stdin.write(JSON.stringify({ type: 'Delete', hashes: invalid }) + '\n');
+    const line = await readWriterLineWithTimeout();
+    let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (Delete): ' + line); }
+    if (resp.type !== 'Ack') throw new Error('Writer Delete failed: ' + line);
+  }
+  if (scoreUpdates.length > 0) {
+    writer.stdin.write(JSON.stringify({ type: 'UpsertScores', items: scoreUpdates.map(u => [u.hash, u.score]) }) + '\n');
+    const line = await readWriterLineWithTimeout();
+    let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (UpsertScores): ' + line); }
+    if (resp.type !== 'Ack') throw new Error('Writer UpsertScores failed: ' + line);
+  }
   releaseWritePermit();
 }
 
