@@ -201,13 +201,21 @@ fn run_work_streaming<W: Write>(state: &State, start: usize, end: usize, j_start
                                             hasher.update(cols_cats.join("|").as_bytes());
                                             let hash = hex::encode(hasher.finalize());
                                             if let Some(ref wlh) = state.word_list_hash {
-                                                let _ = db.execute(sql, (
+                                                match db.execute(sql, (
                                                     &hash,
                                                     rows_cats[0], rows_cats[1], rows_cats[2], rows_cats[3],
                                                     cols_cats[0], cols_cats[1], cols_cats[2], cols_cats[3],
                                                     wlh,
-                                                ));
-                                                inserted_count += 1; // approximate; ignore IGNORE status for speed
+                                                )) {
+                                                    Ok(changes) => {
+                                                        if changes > 0 {
+                                                            inserted_count += 1; // Only increment if actually inserted
+                                                        }
+                                                    }
+                                                    Err(_) => {
+                                                        // Ignore errors for speed, but don't count as inserted
+                                                    }
+                                                }
                                             }
                                         }
                                         found_count += 1;
