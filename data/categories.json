@@ -54,12 +54,17 @@
     "Zheng He",
     "Zhu Yuanzhang"
   ],
+  "14th Century BC": [
+    "Akhenaten"
+  ],
   "15th Century": [
     "Christopher Columbus",
     "Copernicus",
     "Da Vinci",
     "Ferdinand Magellan",
+    "Guru Nanak",
     "Henry VII",
+    "Jan Hus",
     "Joan of Arc",
     "Mehmed II",
     "Michelangelo",
@@ -103,9 +108,12 @@
     "Henry VIII",
     "Hernán Cortés",
     "Jane Seymour",
+    "John Calvin",
+    "John Knox",
     "Journey to the West",
     "Juliet",
     "Lady Jane Grey",
+    "Martin Luther",
     "Mary I",
     "Mary Rose",
     "Maurice of Nassau",
@@ -153,6 +161,7 @@
     "Bach",
     "Don Quixote",
     "Galileo",
+    "George Fox",
     "Globe Theatre",
     "Gustavus Adolphus",
     "Guy Fawkes",
@@ -206,8 +215,10 @@
   "1830s": [
     "Davy Crockett",
     "Jackson",
+    "Joseph Smith",
     "Van Buren",
-    "Victoria"
+    "Victoria",
+    "William Miller"
   ],
   "1840s": [
     "Elizabeth Blackwell",
@@ -219,6 +230,7 @@
     "The Count of Monte Cristo",
     "Tyler",
     "Van Buren",
+    "William Miller",
     "Wuthering Heights"
   ],
   "1850s": [
@@ -226,6 +238,7 @@
     "Buchanan",
     "Call me Ishmael",
     "Fillmore",
+    "Hong Xiuquan",
     "It was the best of times",
     "La Traviata",
     "Moby Dick",
@@ -240,44 +253,54 @@
   "1860s": [
     "Alice's Adventures in Wonderland",
     "April 14th, 1865",
+    "Baháʼu'lláh",
     "Buchanan",
     "Crime and Punishment",
     "Ford's Theatre",
     "Four score and seven years ago",
     "Grant",
     "Helmuth von Moltke the Elder",
+    "Hong Xiuquan",
     "John Wilkes Booth",
     "Johnson",
     "Joseph Lister",
     "Les Misérables",
     "Lincoln",
     "Little Women",
+    "Mary Baker Eddy",
     "Robert E. Lee",
     "The Italian Unification",
     "War and Peace"
   ],
   "1870s": [
+    "Baháʼu'lláh",
     "Carmen",
     "Challenger",
+    "Ellen G. White",
     "Grant",
     "Hayes",
+    "Mary Baker Eddy",
     "Robert Koch",
     "The Adventures of Tom Sawyer",
     "The Long Depression"
   ],
   "1880s": [
     "Arthur",
+    "Charles Taze Russell",
     "Cleveland",
     "Eiffel Tower",
+    "Ellen G. White",
     "Garfield",
     "Harrison",
     "Hayes",
     "Krakatoa",
     "Leo",
+    "Mary Baker Eddy",
     "Pinocchio",
     "The Brothers Karamazov"
   ],
   "1890s": [
+    "Charles Taze Russell",
     "Cleveland",
     "Dracula",
     "Elementary, my dear Watson",
@@ -291,6 +314,7 @@
   ],
   "18th Century": [
     "Adams",
+    "Baal Shem Tov",
     "Bach",
     "Beethoven",
     "Catherine",
@@ -302,6 +326,7 @@
     "Give me liberty or give me death",
     "Handel",
     "Jefferson",
+    "John Wesley",
     "Madison",
     "Michel Ney",
     "Mozart",
@@ -518,6 +543,7 @@
     "Johnnie Ray",
     "Johnny B. Goode",
     "Joseph Stalin",
+    "L. Ron Hubbard",
     "Liberace",
     "Lord of the Flies",
     "Mantle",
@@ -631,6 +657,7 @@
     "Kerouac",
     "King Ghidorah",
     "Krushchev",
+    "L. Ron Hubbard",
     "Laika",
     "Lamborghini",
     "Lawrence of Arabia",
@@ -767,6 +794,7 @@
     "Kampuchea",
     "Kindred",
     "Kramer vs. Kramer",
+    "L. Ron Hubbard",
     "Lebanon",
     "Manhattan",
     "Mariner",
@@ -795,6 +823,7 @@
     "Star Wars",
     "Stayin' Alive",
     "Storm",
+    "Sun Myung Moon",
     "Superman",
     "Superstition",
     "Thanos",
@@ -870,6 +899,7 @@
     "Kagemusha",
     "Kampuchea",
     "Kiki's Delivery Service",
+    "L. Ron Hubbard",
     "Lebanon",
     "Lexus",
     "Like a Prayer",
@@ -906,6 +936,7 @@
     "Somewhere in Time",
     "Spike",
     "Street Fighter",
+    "Sun Myung Moon",
     "Super Mario",
     "Sweet Child O' Mine",
     "Tear down this wall",
@@ -1096,6 +1127,7 @@
     "Annie Oakley",
     "April 14th, 1865",
     "Arthur",
+    "Baháʼu'lláh",
     "Beethoven",
     "Bell",
     "Bismarck",
@@ -1107,6 +1139,7 @@
     "Call me Ishmael",
     "Carmen",
     "Challenger",
+    "Charles Taze Russell",
     "Charlotte Brontë",
     "Clara Barton",
     "Clara Schumann",
@@ -1123,6 +1156,7 @@
     "Elizabeth Barrett Browning",
     "Elizabeth Blackwell",
     "Elizabeth Cady Stanton",
+    "Ellen G. White",
     "Emily Brontë",
     "Emily Dickinson",
     "Euchre",
@@ -1146,6 +1180,7 @@
     "Hearts",
     "Helmuth von Moltke the Elder",
     "Hetty Green",
+    "Hong Xiuquan",
     "Isabella Bird",
     "It was the best of times",
     "Jackson",
@@ -1155,6 +1190,7 @@
     "John Wilkes Booth",
     "Johnson",
     "Joseph Lister",
+    "Joseph Smith",
     "June 18th, 1815",
     "Krakatoa",
     "La Bohème",
@@ -1171,6 +1207,7 @@
     "Madame C.J. Walker",
     "Madison",
     "Marie Curie",
+    "Mary Baker Eddy",
     "Mary Cassatt",
     "Mary Kingsley",
     "Mary Shelley",
@@ -1249,6 +1286,7 @@
     "Waterloo",
     "Wellington",
     "Whitney",
+    "William Miller",
     "Wilson",
     "Wuthering Heights"
   ],
@@ -1263,6 +1301,7 @@
     "Colosseum",
     "Herculaneum",
     "James the Less",
+    "Jesus Christ",
     "John",
     "Judas Iscariot",
     "Mary",
@@ -1666,6 +1705,7 @@
     "Chad",
     "Challenger",
     "Chariots of Fire",
+    "Charles Taze Russell",
     "Charlotte's Web",
     "Chernobyl",
     "Chinatown",
@@ -1733,6 +1773,7 @@
     "Einstein",
     "Eisenhower",
     "Elizabeth",
+    "Ellen G. White",
     "Elvis",
     "Empire State Building",
     "Empress of Asia",
@@ -1876,6 +1917,7 @@
     "Kramer vs. Kramer",
     "Krushchev",
     "Kurosawa",
+    "L. Ron Hubbard",
     "Laika",
     "Lamborghini",
     "Land Rover",
@@ -1914,6 +1956,7 @@
     "Mariner",
     "Mario",
     "Mark David Chapman",
+    "Mary Baker Eddy",
     "Mary Poppins",
     "Maserati",
     "Matilda",
@@ -2084,6 +2127,7 @@
     "Suez Crisis",
     "Sugar Ray",
     "Sulu",
+    "Sun Myung Moon",
     "Super Mario",
     "Superman",
     "Superstition",
@@ -2510,6 +2554,7 @@
     "Spirited Away",
     "Spotlight",
     "Sulu",
+    "Sun Myung Moon",
     "Sweeney Todd: The Demon Barber of Fleet Street",
     "Tanaka",
     "Tenet",
@@ -2666,7 +2711,8 @@
     "Narcissus the Wrestler",
     "Pantheon",
     "The Roman Empire",
-    "Trajan"
+    "Trajan",
+    "Zhang Daoling"
   ],
   "2nd Century BC": [
     "Chu–Han Contention",
@@ -2716,6 +2762,7 @@
   "3rd Century": [
     "Bronze Bird Terrace",
     "Guan Yu",
+    "Mani",
     "The Roman Empire"
   ],
   "3rd Century BC": [
@@ -2755,17 +2802,25 @@
     "The unexamined life is not worth living"
   ],
   "6th Century": [
+    "Bodhidharma",
     "Sui",
-    "The Plague of Justinian"
+    "The Plague of Justinian",
+    "Zhiyi"
   ],
   "6th Century BC": [
     "Circus Maximus",
-    "Confucius",
     "Cyrus the Great",
-    "Sun Tzu"
+    "Laozi",
+    "Siddhartha Gautama",
+    "Sun Tzu",
+    "Zoroaster"
   ],
   "7th Century": [
-    "July 2nd, 626"
+    "Abu Bakr",
+    "Ali ibn Abi Talib",
+    "Huineng",
+    "July 2nd, 626",
+    "Muhammad"
   ],
   "8th Century": [
     "Charlemagne",
@@ -3271,6 +3326,9 @@
     "Rome",
     "Samarkand",
     "Troy"
+  ],
+  "Ancient Egypt": [
+    "Akhenaten"
   ],
   "Ancient Empires": [
     "Carthage",
@@ -7458,6 +7516,9 @@
     "Lighthouse of Alexandria",
     "Pyramids"
   ],
+  "Egyptian Pharaohs": [
+    "Akhenaten"
+  ],
   "Electronics": [
     "AC",
     "AM",
@@ -7847,6 +7908,9 @@
     "Takoyaki",
     "Teriyaki"
   ],
+  "Ends with AKR": [
+    "Abu Bakr"
+  ],
   "Ends with ALA": [
     "Guatemala",
     "Nala",
@@ -7914,6 +7978,7 @@
     "Alabama",
     "Obama",
     "Panama",
+    "Siddhartha Gautama",
     "Vasco da Gama"
   ],
   "Ends with AME": [
@@ -8008,6 +8073,7 @@
   ],
   "Ends with ANI": [
     "Biryani",
+    "Mani",
     "Ohtani"
   ],
   "Ends with ANK": [
@@ -8077,6 +8143,7 @@
     "Catherine Howard",
     "Chessboard",
     "Die Hard",
+    "L. Ron Hubbard",
     "Live Free or Die Hard",
     "Martha's Vineyard",
     "Mustard",
@@ -8676,6 +8743,9 @@
     "The Remains of the Day",
     "Yesterday"
   ],
+  "Ends with DDY": [
+    "Mary Baker Eddy"
+  ],
   "Ends with DE!": [
     "Merde!"
   ],
@@ -9010,6 +9080,7 @@
   "Ends with ELL": [
     "Bell",
     "Billy Mitchell",
+    "Charles Taze Russell",
     "Elizabeth Blackwell",
     "Godspell",
     "Hell",
@@ -9041,6 +9112,7 @@
     "Pirates of the Caribbean: At World's End"
   ],
   "Ends with ENG": [
+    "Huineng",
     "Li Jiancheng"
   ],
   "Ends with ENI": [
@@ -9326,6 +9398,7 @@
   ],
   "Ends with FOX": [
     "Fox",
+    "George Fox",
     "Terry Fox"
   ],
   "Ends with FUN": [
@@ -9542,6 +9615,7 @@
     "Heather",
     "Her",
     "I am your father",
+    "Martin Luther",
     "Panther",
     "Pink Panther",
     "The Godfather",
@@ -9626,6 +9700,7 @@
   "Ends with HUS": [
     "Deinonychus",
     "Gustavus Adolphus",
+    "Jan Hus",
     "Parasaurolophus"
   ],
   "Ends with IAD": [
@@ -9964,7 +10039,8 @@
     "Weightlifting",
     "Wrestling",
     "X-Wing",
-    "Yorkshire Pudding"
+    "Yorkshire Pudding",
+    "Zhang Daoling"
   ],
   "Ends with INI": [
     "Bikini",
@@ -10150,6 +10226,7 @@
     "Norwegian Bliss"
   ],
   "Ends with IST": [
+    "Jesus Christ",
     "Schindler's List",
     "The Alchemist",
     "The Artist",
@@ -10172,6 +10249,7 @@
   ],
   "Ends with ITE": [
     "Aphrodite",
+    "Ellen G. White",
     "Fortnite",
     "Parasite",
     "The realm, long divided, must unite",
@@ -10180,6 +10258,7 @@
   "Ends with ITH": [
     "Agent Smith",
     "Captain Smith",
+    "Joseph Smith",
     "Revenge of the Sith"
   ],
   "Ends with ITI": [
@@ -10253,6 +10332,9 @@
   ],
   "Ends with IWI": [
     "Kiwi"
+  ],
+  "Ends with IYI": [
+    "Zhiyi"
   ],
   "Ends with IZA": [
     "Ibiza"
@@ -10474,7 +10556,8 @@
     "Statler",
     "The Killer",
     "Thriller",
-    "Tyler"
+    "Tyler",
+    "William Miller"
   ],
   "Ends with LES": [
     "Achilles",
@@ -10502,6 +10585,7 @@
     "Annie Oakley",
     "Bentley",
     "Galley",
+    "John Wesley",
     "Mary Kingsley",
     "Mary Shelley",
     "McKinley"
@@ -10525,6 +10609,9 @@
     "Mongolia",
     "Sagrada Familia",
     "Somalia"
+  ],
+  "Ends with LIB": [
+    "Ali ibn Abi Talib"
   ],
   "Ends with LIC": [
     "Central African Republic",
@@ -10662,6 +10749,12 @@
   ],
   "Ends with LVO": [
     "Volvo"
+  ],
+  "Ends with LÁH": [
+    "Baháʼu'lláh"
+  ],
+  "Ends with MAD": [
+    "Muhammad"
   ],
   "Ends with MAL": [
     "Animal"
@@ -10832,6 +10925,9 @@
   "Ends with NAC": [
     "Almanac",
     "The Time Traveler's Almanac"
+  ],
+  "Ends with NAK": [
+    "Guru Nanak"
   ],
   "Ends with NAL": [
     "Canal",
@@ -11124,6 +11220,9 @@
   "Ends with NOW": [
     "Don't Look Now",
     "Snow"
+  ],
+  "Ends with NOX": [
+    "John Knox"
   ],
   "Ends with NSE": [
     "Immense",
@@ -11451,7 +11550,8 @@
     "Moon",
     "Platoon",
     "Pontoon",
-    "Rebel Moon"
+    "Rebel Moon",
+    "Sun Myung Moon"
   ],
   "Ends with OOP": [
     "Hula Hoop"
@@ -11653,7 +11753,8 @@
     "Gyoza"
   ],
   "Ends with OZI": [
-    "Jiaozi"
+    "Jiaozi",
+    "Laozi"
   ],
   "Ends with OZO": [
     "Gozo"
@@ -12002,6 +12103,7 @@
     "Dreamgirls"
   ],
   "Ends with RMA": [
+    "Bodhidharma",
     "Burma",
     "Korma",
     "Shawarma"
@@ -12448,6 +12550,7 @@
     "The Grand Budapest Hotel"
   ],
   "Ends with TEN": [
+    "Akhenaten",
     "Jane Austen",
     "Sauerbraten"
   ],
@@ -12474,7 +12577,8 @@
     "The Scarlet Letter",
     "The Shape of Water",
     "The Titanic Disaster",
-    "Toaster"
+    "Toaster",
+    "Zoroaster"
   ],
   "Ends with TES": [
     "Ammonites",
@@ -12574,6 +12678,9 @@
     "Velociraptor",
     "Victor"
   ],
+  "Ends with TOV": [
+    "Baal Shem Tov"
+  ],
   "Ends with TRA": [
     "Cleopatra",
     "Petra",
@@ -12648,6 +12755,7 @@
   ],
   "Ends with UAN": [
     "Gargantuan",
+    "Hong Xiuquan",
     "San Juan",
     "Yuan"
   ],
@@ -12942,7 +13050,8 @@
     "Resident Evil"
   ],
   "Ends with VIN": [
-    "Coq au Vin"
+    "Coq au Vin",
+    "John Calvin"
   ],
   "Ends with VIS": [
     "Elvis",
@@ -14936,6 +15045,49 @@
     "Uruguay",
     "Venezuela"
   ],
+  "Founders of Religions": [
+    "Akhenaten",
+    "Baháʼu'lláh",
+    "Confucius",
+    "Guru Nanak",
+    "Jesus Christ",
+    "Joseph Smith",
+    "L. Ron Hubbard",
+    "Laozi",
+    "Mani",
+    "Mary Baker Eddy",
+    "Muhammad",
+    "Siddhartha Gautama",
+    "Zoroaster"
+  ],
+  "Founders of Religious Movements": [
+    "Abu Bakr",
+    "Ali ibn Abi Talib",
+    "Baal Shem Tov",
+    "Baháʼu'lláh",
+    "Bodhidharma",
+    "Charles Taze Russell",
+    "Ellen G. White",
+    "George Fox",
+    "Guru Nanak",
+    "Hong Xiuquan",
+    "Huineng",
+    "Jan Hus",
+    "Jesus Christ",
+    "John Calvin",
+    "John Knox",
+    "John Wesley",
+    "Joseph Smith",
+    "L. Ron Hubbard",
+    "Mani",
+    "Martin Luther",
+    "Mary Baker Eddy",
+    "Muhammad",
+    "Sun Myung Moon",
+    "William Miller",
+    "Zhang Daoling",
+    "Zhiyi"
+  ],
   "French Architecture": [
     "Eiffel Tower",
     "Mont Saint-Michel",
@@ -16860,12 +17012,15 @@
     "Timon"
   ],
   "Men": [
+    "Abu Bakr",
     "Achilles",
     "Adams",
     "Agent 47",
     "Agent Smith",
+    "Akhenaten",
     "Aladdin",
     "Alexander the Great",
+    "Ali ibn Abi Talib",
     "Andrew",
     "Angel",
     "Archduke Franz Ferdinand",
@@ -16875,8 +17030,10 @@
     "Attila the Hun",
     "Augustus",
     "Avicenna",
+    "Baal Shem Tov",
     "Babur",
     "Bach",
+    "Baháʼu'lláh",
     "Bartholomew",
     "Batman",
     "Batu Khan",
@@ -16891,6 +17048,7 @@
     "Billy Mitchell",
     "Bismarck",
     "Black Panther",
+    "Bodhidharma",
     "Bowser",
     "Brando",
     "Bravo",
@@ -16910,6 +17068,7 @@
     "Chad",
     "Chandragupta Maurya",
     "Charlemagne",
+    "Charles Taze Russell",
     "Christopher Columbus",
     "Chubby Checker",
     "Cicero",
@@ -16970,6 +17129,7 @@
     "Garfield",
     "Gavrilo Princip",
     "Genghis Khan",
+    "George Fox",
     "Graf Zeppelin",
     "Grant",
     "Green Arrow",
@@ -16977,6 +17137,7 @@
     "Green Lantern",
     "Grover",
     "Guan Yu",
+    "Guru Nanak",
     "Gustavus Adolphus",
     "Guy Fawkes",
     "Hadrian",
@@ -16997,8 +17158,10 @@
     "Hey Jude",
     "Hippocrates",
     "Homer",
+    "Hong Xiuquan",
     "Hoover",
     "Hubble",
+    "Huineng",
     "Hulagu Khan",
     "Hulk",
     "Iceman",
@@ -17009,14 +17172,19 @@
     "Jackson",
     "James",
     "James the Less",
+    "Jan Hus",
     "Jebe",
     "Jefferson",
+    "Jesus Christ",
     "Jing Ke",
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
     "John Boyd",
+    "John Calvin",
     "John Jacob Astor",
+    "John Knox",
+    "John Wesley",
     "John Wilkes Booth",
     "Johnnie Ray",
     "Johnny B. Goode",
@@ -17024,6 +17192,7 @@
     "Joker",
     "Jordan",
     "Joseph Lister",
+    "Joseph Smith",
     "Joseph Stalin",
     "Juan Peron",
     "Judas Iscariot",
@@ -17039,7 +17208,9 @@
     "Krushchev",
     "Kublai Khan",
     "Kurosawa",
+    "L. Ron Hubbard",
     "Lando",
+    "Laozi",
     "Lee Harvey Oswald",
     "Leo",
     "Lex Luthor",
@@ -17056,12 +17227,14 @@
     "Madison",
     "Magneto",
     "Malenkov",
+    "Mani",
     "Mantle",
     "Marciano",
     "Marco Polo",
     "Marcus Aurelius",
     "Mario",
     "Mark David Chapman",
+    "Martin Luther",
     "Matsui",
     "Matthew",
     "Maurice of Nassau",
@@ -17079,6 +17252,7 @@
     "Morse",
     "Mozart",
     "Mr. Freeze",
+    "Muhammad",
     "Möngke Khan",
     "Nakamura",
     "Napoleon Bonaparte",
@@ -17149,6 +17323,7 @@
     "Shaggy",
     "Shaka Zulu",
     "Shakespeare",
+    "Siddhartha Gautama",
     "Simon",
     "Sir John A. Macdonald",
     "Sirhan Sirhan",
@@ -17162,6 +17337,7 @@
     "Suleiman the Magnificent",
     "Sulla",
     "Sulu",
+    "Sun Myung Moon",
     "Sun Tzu",
     "Super Mario",
     "Superman",
@@ -17212,15 +17388,19 @@
     "Wellington",
     "Whitney",
     "William Harvey",
+    "William Miller",
     "William the Conqueror",
     "Wilson",
     "Winston Churchill",
     "Wolverine",
     "Wright Brothers",
     "Yojimbo",
+    "Zhang Daoling",
     "Zheng He",
+    "Zhiyi",
     "Zhou Enlai",
     "Zhu Yuanzhang",
+    "Zoroaster",
     "Zulu",
     "Ögedei Khan"
   ],
@@ -17795,6 +17975,7 @@
     "Ammonites"
   ],
   "Monarchs": [
+    "Akhenaten",
     "Alexander the Great",
     "Attila the Hun",
     "Babur",
@@ -23255,8 +23436,11 @@
     "Wellington"
   ],
   "National Leaders": [
+    "Abu Bakr",
     "Adams",
+    "Akhenaten",
     "Alexander the Great",
+    "Ali ibn Abi Talib",
     "Anne Boleyn",
     "Anne of Cleves",
     "Archduke Franz Ferdinand",
@@ -23305,6 +23489,7 @@
     "Hayes",
     "Henry VII",
     "Henry VIII",
+    "Hong Xiuquan",
     "Hoover",
     "Hulagu Khan",
     "Jackson",
@@ -23329,6 +23514,7 @@
     "McKinley",
     "Mehmed II",
     "Monroe",
+    "Muhammad",
     "Möngke Khan",
     "Nasser",
     "Nero",
@@ -23737,13 +23923,16 @@
     "Black"
   ],
   "People": [
+    "Abu Bakr",
     "Achilles",
     "Ada Lovelace",
     "Adams",
     "Agent 47",
     "Agent Smith",
+    "Akhenaten",
     "Aladdin",
     "Alexander the Great",
+    "Ali ibn Abi Talib",
     "Andrew",
     "Angel",
     "Anna",
@@ -23764,8 +23953,10 @@
     "Aurora",
     "Avicenna",
     "Avril Lavigne",
+    "Baal Shem Tov",
     "Babur",
     "Bach",
+    "Baháʼu'lláh",
     "Bartholomew",
     "Batman",
     "Batu Khan",
@@ -23784,6 +23975,7 @@
     "Bismarck",
     "Black Panther",
     "Black Widow",
+    "Bodhidharma",
     "Bowser",
     "Brando",
     "Bravo",
@@ -23810,6 +24002,7 @@
     "Chad",
     "Chandragupta Maurya",
     "Charlemagne",
+    "Charles Taze Russell",
     "Charlotte Brontë",
     "Charlotte Corday",
     "Christopher Columbus",
@@ -23861,6 +24054,7 @@
     "Elizabeth Blackwell",
     "Elizabeth Cady Stanton",
     "Elizabeth I",
+    "Ellen G. White",
     "Elsa",
     "Elvis",
     "Emily Brontë",
@@ -23890,6 +24084,7 @@
     "Gavrilo Princip",
     "Genghis Khan",
     "George Eliot",
+    "George Fox",
     "Graf Zeppelin",
     "Grant",
     "Green Arrow",
@@ -23897,6 +24092,7 @@
     "Green Lantern",
     "Grover",
     "Guan Yu",
+    "Guru Nanak",
     "Gustavus Adolphus",
     "Guy Fawkes",
     "Hadrian",
@@ -23920,8 +24116,10 @@
     "Hey Jude",
     "Hippocrates",
     "Homer",
+    "Hong Xiuquan",
     "Hoover",
     "Hubble",
+    "Huineng",
     "Hulagu Khan",
     "Hulk",
     "Iceman",
@@ -23936,19 +24134,24 @@
     "Jackson",
     "James",
     "James the Less",
+    "Jan Hus",
     "Jane Austen",
     "Jane Eyre",
     "Jane Seymour",
     "Jean Grey",
     "Jebe",
     "Jefferson",
+    "Jesus Christ",
     "Jing Ke",
     "Joan of Arc",
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
     "John Boyd",
+    "John Calvin",
     "John Jacob Astor",
+    "John Knox",
+    "John Wesley",
     "John Wilkes Booth",
     "Johnnie Ray",
     "Johnny B. Goode",
@@ -23956,6 +24159,7 @@
     "Joker",
     "Jordan",
     "Joseph Lister",
+    "Joseph Smith",
     "Joseph Stalin",
     "Juan Peron",
     "Judas Iscariot",
@@ -23972,8 +24176,10 @@
     "Krushchev",
     "Kublai Khan",
     "Kurosawa",
+    "L. Ron Hubbard",
     "Lady Jane Grey",
     "Lando",
+    "Laozi",
     "Lee Harvey Oswald",
     "Lenore",
     "Leo",
@@ -23995,6 +24201,7 @@
     "Madonna",
     "Magneto",
     "Malenkov",
+    "Mani",
     "Mantle",
     "Marciano",
     "Marco Polo",
@@ -24003,7 +24210,9 @@
     "Marilyn Monroe",
     "Mario",
     "Mark David Chapman",
+    "Martin Luther",
     "Mary",
+    "Mary Baker Eddy",
     "Mary Cassatt",
     "Mary I",
     "Mary Kingsley",
@@ -24028,6 +24237,7 @@
     "Morse",
     "Mozart",
     "Mr. Freeze",
+    "Muhammad",
     "Mystique",
     "Möngke Khan",
     "Nakamura",
@@ -24109,6 +24319,7 @@
     "Shaggy",
     "Shaka Zulu",
     "Shakespeare",
+    "Siddhartha Gautama",
     "Simon",
     "Sir John A. Macdonald",
     "Sirhan Sirhan",
@@ -24126,6 +24337,7 @@
     "Suleiman the Magnificent",
     "Sulla",
     "Sulu",
+    "Sun Myung Moon",
     "Sun Tzu",
     "Super Mario",
     "Superman",
@@ -24185,6 +24397,7 @@
     "Wellington",
     "Whitney",
     "William Harvey",
+    "William Miller",
     "William the Conqueror",
     "Wilson",
     "Winston Churchill",
@@ -24194,9 +24407,12 @@
     "Working Girl",
     "Wright Brothers",
     "Yojimbo",
+    "Zhang Daoling",
     "Zheng He",
+    "Zhiyi",
     "Zhou Enlai",
     "Zhu Yuanzhang",
+    "Zoroaster",
     "Zulu",
     "Ögedei Khan"
   ],
@@ -25349,10 +25565,13 @@
     "Zebra"
   ],
   "Real People": [
+    "Abu Bakr",
     "Achilles",
     "Ada Lovelace",
     "Adams",
+    "Akhenaten",
     "Alexander the Great",
+    "Ali ibn Abi Talib",
     "Andrew",
     "Anne Boleyn",
     "Anne of Cleves",
@@ -25365,8 +25584,10 @@
     "Augustus",
     "Avicenna",
     "Avril Lavigne",
+    "Baal Shem Tov",
     "Babur",
     "Bach",
+    "Baháʼu'lláh",
     "Bartholomew",
     "Batu Khan",
     "Beethoven",
@@ -25377,6 +25598,7 @@
     "Beyonce",
     "Billy Mitchell",
     "Bismarck",
+    "Bodhidharma",
     "Brando",
     "Brutus",
     "Buchanan",
@@ -25398,6 +25620,7 @@
     "Chad",
     "Chandragupta Maurya",
     "Charlemagne",
+    "Charles Taze Russell",
     "Charlotte Brontë",
     "Charlotte Corday",
     "Christopher Columbus",
@@ -25440,6 +25663,7 @@
     "Elizabeth Blackwell",
     "Elizabeth Cady Stanton",
     "Elizabeth I",
+    "Ellen G. White",
     "Elvis",
     "Emily Brontë",
     "Emily Dickinson",
@@ -25463,10 +25687,12 @@
     "Gavrilo Princip",
     "Genghis Khan",
     "George Eliot",
+    "George Fox",
     "Graf Zeppelin",
     "Grant",
     "Grover",
     "Guan Yu",
+    "Guru Nanak",
     "Gustavus Adolphus",
     "Guy Fawkes",
     "Hadrian",
@@ -25486,8 +25712,10 @@
     "Hetty Green",
     "Hippocrates",
     "Homer",
+    "Hong Xiuquan",
     "Hoover",
     "Hubble",
+    "Huineng",
     "Hulagu Khan",
     "Ichiro",
     "Ida Straus",
@@ -25497,22 +25725,28 @@
     "Jackson",
     "James",
     "James the Less",
+    "Jan Hus",
     "Jane Austen",
     "Jane Seymour",
     "Jebe",
     "Jefferson",
+    "Jesus Christ",
     "Jing Ke",
     "Joan of Arc",
     "Joe DiMaggio",
     "Joe McCarthy",
     "John",
     "John Boyd",
+    "John Calvin",
     "John Jacob Astor",
+    "John Knox",
+    "John Wesley",
     "John Wilkes Booth",
     "Johnnie Ray",
     "Johnson",
     "Jordan",
     "Joseph Lister",
+    "Joseph Smith",
     "Joseph Stalin",
     "Juan Peron",
     "Judas Iscariot",
@@ -25527,8 +25761,10 @@
     "Krushchev",
     "Kublai Khan",
     "Kurosawa",
+    "L. Ron Hubbard",
     "Lady Jane Grey",
     "Lando",
+    "Laozi",
     "Lee Harvey Oswald",
     "Leo",
     "Li Bai",
@@ -25546,6 +25782,7 @@
     "Madison",
     "Madonna",
     "Malenkov",
+    "Mani",
     "Mantle",
     "Marciano",
     "Marco Polo",
@@ -25553,7 +25790,9 @@
     "Marie Curie",
     "Marilyn Monroe",
     "Mark David Chapman",
+    "Martin Luther",
     "Mary",
+    "Mary Baker Eddy",
     "Mary Cassatt",
     "Mary I",
     "Mary Kingsley",
@@ -25574,6 +25813,7 @@
     "Montgomery",
     "Morse",
     "Mozart",
+    "Muhammad",
     "Möngke Khan",
     "Nakamura",
     "Napoleon Bonaparte",
@@ -25627,6 +25867,7 @@
     "Servilius Casca",
     "Shaka Zulu",
     "Shakespeare",
+    "Siddhartha Gautama",
     "Simon",
     "Sir John A. Macdonald",
     "Sirhan Sirhan",
@@ -25638,6 +25879,7 @@
     "Sugar Ray",
     "Suleiman the Magnificent",
     "Sulla",
+    "Sun Myung Moon",
     "Sun Tzu",
     "Susan B. Anthony",
     "Syngman Rhee",
@@ -25677,13 +25919,17 @@
     "Wellington",
     "Whitney",
     "William Harvey",
+    "William Miller",
     "William the Conqueror",
     "Wilson",
     "Winston Churchill",
     "Wright Brothers",
+    "Zhang Daoling",
     "Zheng He",
+    "Zhiyi",
     "Zhou Enlai",
     "Zhu Yuanzhang",
+    "Zoroaster",
     "Zulu",
     "Ögedei Khan"
   ],
@@ -25739,23 +25985,53 @@
     "The Protestant Reformation"
   ],
   "Religious Figures": [
+    "Abu Bakr",
+    "Akhenaten",
+    "Ali ibn Abi Talib",
     "Andrew",
+    "Baal Shem Tov",
+    "Baháʼu'lláh",
     "Bartholomew",
+    "Bodhidharma",
+    "Charles Taze Russell",
     "Confucius",
+    "Ellen G. White",
+    "George Fox",
     "Guan Yu",
+    "Guru Nanak",
+    "Hong Xiuquan",
+    "Huineng",
     "James the Less",
+    "Jan Hus",
+    "Jesus Christ",
     "Joan of Arc",
     "John",
+    "John Calvin",
+    "John Knox",
+    "John Wesley",
+    "Joseph Smith",
     "Judas Iscariot",
+    "L. Ron Hubbard",
+    "Laozi",
+    "Mani",
+    "Martin Luther",
+    "Mary Baker Eddy",
     "Matthew",
+    "Muhammad",
     "Paul",
     "Peter",
     "Philip",
     "Saint Patrick",
+    "Siddhartha Gautama",
     "Simon",
+    "Sun Myung Moon",
     "Teresa",
     "Thaddeus",
-    "Thomas"
+    "Thomas",
+    "William Miller",
+    "Zhang Daoling",
+    "Zhiyi",
+    "Zoroaster"
   ],
   "Religious Movements": [
     "The Catholic Counter-Reformation",
@@ -26281,6 +26557,7 @@
     "Victory"
   ],
   "Royalty": [
+    "Akhenaten",
     "Alexander the Great",
     "Anne Boleyn",
     "Anne of Cleves",
@@ -27544,6 +27821,9 @@
     "Absalom, Absalom!",
     "Absinthe"
   ],
+  "Starts with ABU": [
+    "Abu Bakr"
+  ],
   "Starts with ABY": [
     "Abyssinia"
   ],
@@ -27591,6 +27871,9 @@
   "Starts with AKA": [
     "Akagi"
   ],
+  "Starts with AKH": [
+    "Akhenaten"
+  ],
   "Starts with AKI": [
     "Akira"
   ],
@@ -27627,6 +27910,7 @@
     "Alhambra"
   ],
   "Starts with ALI": [
+    "Ali ibn Abi Talib",
     "Alice in Wonderland",
     "Alice's Adventures in Wonderland",
     "Alien",
@@ -27874,6 +28158,9 @@
   "Starts with B-2": [
     "B-29"
   ],
+  "Starts with BAA": [
+    "Baal Shem Tov"
+  ],
   "Starts with BAB": [
     "Baba Ganoush",
     "Baba Yaga",
@@ -27902,7 +28189,8 @@
   ],
   "Starts with BAH": [
     "Bahamas",
-    "Bahrain"
+    "Bahrain",
+    "Baháʼu'lláh"
   ],
   "Starts with BAI": [
     "Baijiu"
@@ -28122,6 +28410,9 @@
   ],
   "Starts with BOB": [
     "Bobsled"
+  ],
+  "Starts with BOD": [
+    "Bodhidharma"
   ],
   "Starts with BOE": [
     "Boeing"
@@ -28408,6 +28699,7 @@
     "Char Siu",
     "Chariots of Fire",
     "Charlemagne",
+    "Charles Taze Russell",
     "Charleston",
     "Charlie",
     "Charlotte Brontë",
@@ -29001,6 +29293,7 @@
     "Elizabeth I"
   ],
   "Starts with ELL": [
+    "Ellen G. White",
     "Ellesmere"
   ],
   "Starts with ELM": [
@@ -29362,6 +29655,7 @@
   "Starts with GEO": [
     "George",
     "George Eliot",
+    "George Fox",
     "Georgia"
   ],
   "Starts with GER": [
@@ -29523,6 +29817,9 @@
   ],
   "Starts with GUN": [
     "Gunpowder"
+  ],
+  "Starts with GUR": [
+    "Guru Nanak"
   ],
   "Starts with GUS": [
     "Gustavus Adolphus"
@@ -29707,6 +30004,7 @@
   "Starts with HON": [
     "Honda",
     "Honduras",
+    "Hong Xiuquan",
     "Honolulu",
     "Honshu"
   ],
@@ -29749,7 +30047,8 @@
     "Huge"
   ],
   "Starts with HUI": [
-    "Hui Guo Rou"
+    "Hui Guo Rou",
+    "Huineng"
   ],
   "Starts with HUL": [
     "Hula Hoop",
@@ -29967,6 +30266,7 @@
     "James the Less"
   ],
   "Starts with JAN": [
+    "Jan Hus",
     "Jane Austen",
     "Jane Eyre",
     "Jane Seymour"
@@ -30005,6 +30305,7 @@
     "Jerusalem"
   ],
   "Starts with JES": [
+    "Jesus Christ",
     "Jesus Christ Superstar"
   ],
   "Starts with JIA": [
@@ -30036,7 +30337,10 @@
   "Starts with JOH": [
     "John",
     "John Boyd",
+    "John Calvin",
     "John Jacob Astor",
+    "John Knox",
+    "John Wesley",
     "John Wilkes Booth",
     "Johnnie Ray",
     "Johnny B. Goode",
@@ -30053,6 +30357,7 @@
   ],
   "Starts with JOS": [
     "Joseph Lister",
+    "Joseph Smith",
     "Joseph Stalin"
   ],
   "Starts with JOU": [
@@ -30289,6 +30594,9 @@
   "Starts with L'E": [
     "L'etat c'est moi"
   ],
+  "Starts with L. ": [
+    "L. Ron Hubbard"
+  ],
   "Starts with LA ": [
     "La Bohème",
     "La Garde meurt, elle ne se rend pas!",
@@ -30325,7 +30633,8 @@
     "Lanzarote"
   ],
   "Starts with LAO": [
-    "Laos"
+    "Laos",
+    "Laozi"
   ],
   "Starts with LAR": [
     "Larb"
@@ -30572,6 +30881,7 @@
     "Manchukuo",
     "Mango Sticky Rice",
     "Manhattan",
+    "Mani",
     "Mansaf",
     "Mantle"
   ],
@@ -30596,8 +30906,10 @@
     "Marseille",
     "Marshall Islands",
     "Martha's Vineyard",
+    "Martin Luther",
     "Marvin the Martian",
     "Mary",
+    "Mary Baker Eddy",
     "Mary Cassatt",
     "Mary I",
     "Mary Kingsley",
@@ -30821,6 +31133,9 @@
   ],
   "Starts with MUC": [
     "Much Ado About Nothing"
+  ],
+  "Starts with MUH": [
+    "Muhammad"
   ],
   "Starts with MUL": [
     "Mulan"
@@ -31933,6 +32248,9 @@
   "Starts with SIC": [
     "Sicily"
   ],
+  "Starts with SID": [
+    "Siddhartha Gautama"
+  ],
   "Starts with SIE": [
     "Sierra",
     "Sierra Leone"
@@ -32209,6 +32527,7 @@
   ],
   "Starts with SUN": [
     "Sun",
+    "Sun Myung Moon",
     "Sun Tzu",
     "Sundae",
     "Sunflower"
@@ -33083,6 +33402,7 @@
     "Wildcat",
     "Wile E. Coyote",
     "William Harvey",
+    "William Miller",
     "William the Conqueror",
     "Wilson"
   ],
@@ -33233,8 +33553,14 @@
   "Starts with ZEU": [
     "Zeus"
   ],
+  "Starts with ZHA": [
+    "Zhang Daoling"
+  ],
   "Starts with ZHE": [
     "Zheng He"
+  ],
+  "Starts with ZHI": [
+    "Zhiyi"
   ],
   "Starts with ZHO": [
     "Zhou Enlai"
@@ -33250,6 +33576,9 @@
   ],
   "Starts with ZOO": [
     "Zootopia"
+  ],
+  "Starts with ZOR": [
+    "Zoroaster"
   ],
   "Starts with ZUL": [
     "Zulu"
@@ -33857,7 +34186,8 @@
     "Abkhazia"
   ],
   "Things Afghan": [
-    "Afghanistan"
+    "Afghanistan",
+    "Soviet-Afghan War"
   ],
   "Things Albanian": [
     "Albania",
@@ -33937,7 +34267,6 @@
     "Back to the Future Part III",
     "Bad Santa",
     "Bambi",
-    "Bardot",
     "Baseball",
     "Basketball",
     "Batman",
@@ -33946,7 +34275,6 @@
     "Bay of Pigs Invasion",
     "Beach Volleyball",
     "Beauty and the Beast",
-    "Begin",
     "Bell",
     "Beloved",
     "Ben Hur",
@@ -34002,6 +34330,7 @@
     "Castle Bravo",
     "Cessna",
     "Challenger",
+    "Charles Taze Russell",
     "Charleston",
     "Charlotte's Web",
     "Cheesecake",
@@ -34084,13 +34413,13 @@
     "Elf",
     "Elizabeth Blackwell",
     "Elizabeth Cady Stanton",
+    "Ellen G. White",
     "Elsa",
     "Elvis",
     "Emily Dickinson",
     "Empire State Building",
     "Encanto",
     "Enrico Fermi",
-    "Entebbe Hijacking",
     "Enterprise",
     "Escape from New York",
     "Euchre",
@@ -34230,7 +34559,7 @@
     "Johnson",
     "Jojo Rabbit",
     "Joker",
-    "Juan Peron",
+    "Joseph Smith",
     "Juice",
     "Juneau",
     "Jurassic Park",
@@ -34249,6 +34578,7 @@
     "Kramer vs. Kramer",
     "Kung Fu Panda",
     "Kung Fu Panda 2",
+    "L. Ron Hubbard",
     "La La Land",
     "Lady and the Tramp",
     "Lando",
@@ -34283,7 +34613,6 @@
     "Madison",
     "Madonna",
     "Mafia",
-    "Malenkov",
     "Manhattan",
     "Mantle",
     "Marciano",
@@ -34292,6 +34621,7 @@
     "Mark David Chapman",
     "Martha's Vineyard",
     "Mary",
+    "Mary Baker Eddy",
     "Mary Cassatt",
     "Mary Poppins",
     "Mary Poppins Returns",
@@ -34359,7 +34689,6 @@
     "Out of Africa",
     "Outlander",
     "Palm Springs",
-    "Panmunjom",
     "Papa",
     "Paul",
     "Payola Scandal",
@@ -34435,7 +34764,6 @@
     "San Juan",
     "San Pedro",
     "Santa Fe",
-    "Santayana",
     "Saw",
     "Scarface",
     "Scent of a Woman",
@@ -34617,7 +34945,6 @@
     "Titanic: Adventure Out of Time",
     "To Kill a Mockingbird",
     "Topeka",
-    "Toscanini",
     "Toy Story",
     "Track and Field",
     "Treasure Planet",
@@ -34663,6 +34990,7 @@
     "White Christmas",
     "Whitney",
     "Wildcat",
+    "William Miller",
     "Wilson",
     "Winnie the Pooh",
     "Wish",
@@ -34682,12 +35010,20 @@
   "Things Antiguan": [
     "Antigua and Barbuda"
   ],
+  "Things Arabian": [
+    "Abu Bakr",
+    "Ali ibn Abi Talib",
+    "Mecca",
+    "Muhammad",
+    "Saudi Arabia"
+  ],
   "Things Argentine": [
     "Aconcagua",
     "Alfajor",
     "Argentina",
     "Asado",
     "Chimichurri",
+    "Juan Peron",
     "Locro",
     "Mate",
     "Milanesa",
@@ -34842,6 +35178,7 @@
     "Gandhi",
     "George",
     "George Eliot",
+    "George Fox",
     "Get Carter",
     "Gin",
     "Globe Theatre",
@@ -34881,6 +35218,7 @@
     "Jane Seymour",
     "Jersey",
     "John",
+    "John Wesley",
     "Joseph Lister",
     "Kind Hearts and Coronets",
     "King Lear",
@@ -34923,6 +35261,7 @@
     "Pride and Prejudice",
     "Prince Caspian",
     "Prince of Wales",
+    "Profumo Affair",
     "Puck",
     "Puckle Gun",
     "Queen",
@@ -35133,6 +35472,7 @@
     "Robinson Crusoe"
   ],
   "Things Chinese": [
+    "1989 Chinese Protests",
     "2046",
     "A Better Tomorrow",
     "Ashes of Time",
@@ -35178,15 +35518,18 @@
     "Hard Boiled",
     "Hero",
     "Hoisin",
+    "Hong Xiuquan",
     "Hot Pot",
     "House of Flying Daggers",
     "Hui Guo Rou",
+    "Huineng",
     "In the Mood for Love",
     "Jiaozi",
     "Jing Ke",
     "Journey to the West",
     "Kombucha",
     "Kung Pao Chicken",
+    "Laozi",
     "Li Bai",
     "Li Jiancheng",
     "Li Shimin",
@@ -35222,6 +35565,7 @@
     "The Three-Body Problem",
     "The Wandering Earth",
     "The realm, long divided, must unite",
+    "Tiananmen Square Massacre",
     "Twice Cooked Pork",
     "Wang Mang Usurpation",
     "Water Margin",
@@ -35230,7 +35574,9 @@
     "Xuanwu Gate",
     "Yu Xiang Qie Zi",
     "Yuan",
+    "Zhang Daoling",
     "Zheng He",
+    "Zhiyi",
     "Zhou Enlai",
     "Zhu Yuanzhang"
   ],
@@ -35255,11 +35601,13 @@
     "Croatia"
   ],
   "Things Cuban": [
+    "Castro",
     "Cuba",
     "The Cuban Revolution"
   ],
   "Things Czech": [
     "Czech Republic",
+    "Jan Hus",
     "Pilsner",
     "Skoda",
     "The Hussite Wars"
@@ -35289,6 +35637,7 @@
     "Galapagos"
   ],
   "Things Egyptian": [
+    "Akhenaten",
     "Alexandria",
     "Cleopatra",
     "Egypt",
@@ -35296,7 +35645,8 @@
     "Nile",
     "Pharaoh",
     "Pyramids",
-    "Saladin"
+    "Saladin",
+    "Suez Crisis"
   ],
   "Things Emirati": [
     "United Arab Emirates"
@@ -35331,6 +35681,7 @@
     "Aioli",
     "Airbus",
     "Baguette",
+    "Bardot",
     "Bearnaise",
     "Bechamel",
     "Beef Bourguignon",
@@ -35366,6 +35717,7 @@
     "Hollandaise",
     "I think, therefore I am",
     "Joan of Arc",
+    "John Calvin",
     "L'etat c'est moi",
     "La Garde meurt, elle ne se rend pas!",
     "Les Misérables",
@@ -35449,6 +35801,7 @@
     "Kepler",
     "Käsespätzle",
     "Luge",
+    "Martin Luther",
     "Mercedes",
     "Messerschmitt",
     "Opel",
@@ -35562,6 +35915,7 @@
     "Andaman",
     "Babur",
     "Biryani",
+    "Bodhidharma",
     "Butter Chicken",
     "Chai",
     "Chandragupta Maurya",
@@ -35569,6 +35923,7 @@
     "Curry",
     "Dal",
     "Gulab Jamun",
+    "Guru Nanak",
     "India",
     "Jalebi",
     "Korma",
@@ -35580,6 +35935,7 @@
     "Palak Paneer",
     "Rogan Josh",
     "Roti",
+    "Siddhartha Gautama",
     "Taj Mahal",
     "Tandoori",
     "Tea",
@@ -35606,11 +35962,15 @@
   ],
   "Things Iranian": [
     "Avicenna",
+    "Baháʼu'lláh",
     "Cyrus the Great",
     "Iran",
+    "Iranian Revolution",
+    "Mani",
     "Persia",
     "The Iran Hostage Crisis",
-    "The Iran-Iraq War"
+    "The Iran-Iraq War",
+    "Zoroaster"
   ],
   "Things Iraqi": [
     "Baghdad",
@@ -35626,6 +35986,7 @@
     "Whiskey"
   ],
   "Things Israeli": [
+    "Begin",
     "Israel",
     "Jerusalem",
     "Temple Mount"
@@ -35724,6 +36085,7 @@
     "Tomato",
     "Tortellini",
     "Tosca",
+    "Toscanini",
     "Uffizi",
     "Venice",
     "Verona",
@@ -35855,12 +36217,14 @@
     "Zero"
   ],
   "Things Jewish": [
+    "Baal Shem Tov",
     "Bagel",
     "Brisket",
     "Challah",
     "Corned Beef",
     "Gefilte Fish",
     "Hamantaschen",
+    "Jesus Christ",
     "Kasha",
     "Kishka",
     "Kreplach",
@@ -35906,13 +36270,18 @@
     "Kia",
     "Kimchi",
     "Naengmyeon",
+    "North Korea",
+    "Panmunjom",
     "Parasite",
     "Red Velvet",
     "Samgyeopsal",
     "Seoul",
     "Seventeen",
     "Soju",
+    "South Korea",
+    "Sun Myung Moon",
     "Super Junior",
+    "Syngman Rhee",
     "Taekwondo",
     "Tteokbokki",
     "Xia",
@@ -35933,6 +36302,9 @@
   ],
   "Things Latvian": [
     "Latvia"
+  ],
+  "Things Lebanese": [
+    "Lebanon"
   ],
   "Things Liberian": [
     "Liberia"
@@ -36089,6 +36461,9 @@
     "Karachi",
     "Pakistan"
   ],
+  "Things Palestinian": [
+    "Palestine"
+  ],
   "Things Panamanian": [
     "Panama"
   ],
@@ -36185,7 +36560,6 @@
     "Narcissus the Wrestler",
     "Nero",
     "Ostia Antica",
-    "Palestine",
     "Pantheon",
     "Pilum",
     "Pompeii",
@@ -36227,6 +36601,7 @@
     "Krushchev",
     "Kvass",
     "Laika",
+    "Malenkov",
     "Medovik",
     "MiG",
     "MiG-15",
@@ -36239,6 +36614,7 @@
     "Shashlik",
     "Solyanka",
     "Soviet Union",
+    "Soviet-Afghan War",
     "Sputnik",
     "Tetris",
     "The Battle of Stalingrad",
@@ -36274,13 +36650,10 @@
     "Samoa",
     "Western Samoa"
   ],
-  "Things Saudi": [
-    "Mecca",
-    "Saudi Arabia"
-  ],
   "Things Scottish": [
     "Brave",
     "Braveheart",
+    "John Knox",
     "Macbeth",
     "Scotch",
     "Whiskey"
@@ -36352,6 +36725,7 @@
     "San Antonio",
     "Sangria",
     "Santa Maria",
+    "Santayana",
     "Santiago",
     "Santissima Trinidad",
     "Seat",
@@ -36553,6 +36927,7 @@
     "Turkmenistan"
   ],
   "Things Ugandan": [
+    "Entebbe Hijacking",
     "Uganda"
   ],
   "Things Ukrainian": [
@@ -36579,6 +36954,7 @@
   "Things Vietnamese": [
     "Banh Mi",
     "Banh Xeo",
+    "Battle of Dien Bien Phu",
     "Bun Cha",
     "Che",
     "Com Tam",
@@ -37636,6 +38012,7 @@
     "Elizabeth Blackwell",
     "Elizabeth Cady Stanton",
     "Elizabeth I",
+    "Ellen G. White",
     "Elsa",
     "Emily Brontë",
     "Emily Dickinson",
@@ -37669,6 +38046,7 @@
     "Marie Curie",
     "Marilyn Monroe",
     "Mary",
+    "Mary Baker Eddy",
     "Mary Cassatt",
     "Mary I",
     "Mary Kingsley",
