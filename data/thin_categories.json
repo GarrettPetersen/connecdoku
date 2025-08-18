@@ -422,9 +422,6 @@
   "Movies featuring Rutger Hauer": [
     "Blade Runner"
   ],
-  "Movies featuring Sean Young": [
-    "Blade Runner"
-  ],
   "Biology": [
     "Blood"
   ],
@@ -842,6 +839,18 @@
   "Movies featuring Edward Brophy": [
     "Dumbo"
   ],
+  "Movies directed by David Lynch": [
+    "Dune"
+  ],
+  "Movies featuring Francesca Annis": [
+    "Dune"
+  ],
+  "Movies featuring José Ferrer": [
+    "Dune"
+  ],
+  "Movies featuring Virginia Madsen": [
+    "Dune"
+  ],
   "Movies featuring Dee Wallace": [
     "E.T."
   ],
@@ -980,9 +989,6 @@
   "Movies featuring Norma Crane": [
     "Fiddler on the Roof"
   ],
-  "Movies featuring Topol": [
-    "Fiddler on the Roof"
-  ],
   "Movies featuring Albert Brooks": [
     "Finding Nemo"
   ],
@@ -991,6 +997,15 @@
   ],
   "Things Finnish": [
     "Finland"
+  ],
+  "Movies featuring Peter Wyngarde": [
+    "Flash Gordon"
+  ],
+  "Movies featuring Sam J. Jones": [
+    "Flash Gordon"
+  ],
+  "Movies featuring Timothy Dalton": [
+    "Flash Gordon"
   ],
   "Movies featuring Joey Cramer": [
     "Flight of the Navigator"
@@ -1069,9 +1084,6 @@
   ],
   "Things Georgian": [
     "Georgia"
-  ],
-  "Movies directed by Mike Hodges": [
-    "Get Carter"
   ],
   "Movies featuring Ian Hendry": [
     "Get Carter"
@@ -1760,6 +1772,21 @@
   "Stealth Games": [
     "Metal Gear"
   ],
+  "German Films": [
+    "Metropolis"
+  ],
+  "Movies directed by Fritz Lang": [
+    "Metropolis"
+  ],
+  "Movies featuring Brigitte Helm": [
+    "Metropolis"
+  ],
+  "Movies featuring Gustav Fröhlich": [
+    "Metropolis"
+  ],
+  "Silent Films": [
+    "Metropolis"
+  ],
   "Fictional Mice": [
     "Mickey Mouse"
   ],
@@ -2014,9 +2041,6 @@
   ],
   "Movies featuring Timothy Hutton": [
     "Ordinary People"
-  ],
-  "Movies featuring Ornella Muti": [
-    "Oscar"
   ],
   "Movies directed by Oliver Parker": [
     "Othello"
@@ -2717,9 +2741,6 @@
   "Movies featuring Zachary Levi": [
     "Tangled"
   ],
-  "Movies featuring Brian Blessed": [
-    "Tarzan"
-  ],
   "Movies featuring Glenn Close": [
     "Tarzan"
   ],
@@ -2831,6 +2852,12 @@
   "Movies featuring Audrey Tautou": [
     "The Da Vinci Code"
   ],
+  "Movies directed by Michael Anderson": [
+    "The Dam Busters"
+  ],
+  "Movies featuring Richard Todd": [
+    "The Dam Busters"
+  ],
   "Movies directed by Michael Cimino": [
     "The Deer Hunter"
   ],
@@ -2862,9 +2889,6 @@
     "The Exorcist"
   ],
   "Movies featuring Linda Blair": [
-    "The Exorcist"
-  ],
-  "Movies featuring Max von Sydow": [
     "The Exorcist"
   ],
   "Movies directed by Luc Besson": [
@@ -2926,9 +2950,6 @@
   ],
   "Movies featuring Tony Revolori": [
     "The Grand Budapest Hotel"
-  ],
-  "Movies directed by John Ford": [
-    "The Grapes of Wrath"
   ],
   "Movies featuring Henry Fonda": [
     "The Grapes of Wrath"
@@ -3281,6 +3302,9 @@
   "Nathaniel Hawthorne": [
     "The Scarlet Letter"
   ],
+  "Movies featuring John Wayne": [
+    "The Searchers"
+  ],
   "Movies directed by Agnieszka Holland": [
     "The Secret Garden"
   ],
@@ -3445,6 +3469,27 @@
   ],
   "Things Trinidadian": [
     "Trinidad and Tobago"
+  ],
+  "Documentary Stories": [
+    "Triumph of the Will"
+  ],
+  "Movies directed by Leni Riefenstahl": [
+    "Triumph of the Will"
+  ],
+  "Movies featuring Adolf Hitler": [
+    "Triumph of the Will"
+  ],
+  "Movies featuring Hermann Göring": [
+    "Triumph of the Will"
+  ],
+  "Movies featuring Joseph Goebbels": [
+    "Triumph of the Will"
+  ],
+  "Movies featuring Rudolf Hess": [
+    "Triumph of the Will"
+  ],
+  "Propaganda Stories": [
+    "Triumph of the Will"
   ],
   "Movies directed by Wolfgang Petersen": [
     "Troy"
@@ -3637,9 +3682,6 @@
   ],
   "Movies featuring James Howson": [
     "Wuthering Heights"
-  ],
-  "Movies featuring Patrick Stewart": [
-    "X-Men: Days of Future Past"
   ],
   "Movies directed by Matthew Vaughn": [
     "X-Men: First Class"
@@ -3867,6 +3909,10 @@
   "Spiders": [
     "Black Widow",
     "Spider-Man"
+  ],
+  "Movies featuring Sean Young": [
+    "Blade Runner",
+    "Dune"
   ],
   "Things Danish": [
     "Bornholm",
@@ -4112,6 +4158,10 @@
     "Dreams",
     "Ran"
   ],
+  "Movies featuring Patrick Stewart": [
+    "Dune",
+    "X-Men: Days of Future Past"
+  ],
   "Things Ecuadorian": [
     "Ecuador",
     "Galapagos"
@@ -4176,9 +4226,25 @@
     "Fiddler on the Roof",
     "Jesus Christ Superstar"
   ],
+  "Movies featuring Topol": [
+    "Fiddler on the Roof",
+    "Flash Gordon"
+  ],
   "Movies directed by Andrew Stanton": [
     "Finding Nemo",
     "WALL-E"
+  ],
+  "Movies directed by Mike Hodges": [
+    "Flash Gordon",
+    "Get Carter"
+  ],
+  "Movies featuring Brian Blessed": [
+    "Flash Gordon",
+    "Tarzan"
+  ],
+  "Movies featuring Ornella Muti": [
+    "Flash Gordon",
+    "Oscar"
   ],
   "Movies directed by Randal Kleiser": [
     "Flight of the Navigator",
@@ -4484,10 +4550,6 @@
     "Million Dollar Baby",
     "Unforgiven"
   ],
-  "Movies featuring Natalie Wood": [
-    "Miracle on 34th Street",
-    "West Side Story"
-  ],
   "Movies featuring Rachel House": [
     "Moana",
     "Soul"
@@ -4771,6 +4833,10 @@
   "Movies directed by Mike Nichols": [
     "The Graduate",
     "Working Girl"
+  ],
+  "Movies directed by John Ford": [
+    "The Grapes of Wrath",
+    "The Searchers"
   ],
   "Movies directed by Frank Darabont": [
     "The Green Mile",
@@ -5220,6 +5286,11 @@
     "Pinnochio",
     "Pinocchio"
   ],
+  "Movies featuring Max von Sydow": [
+    "Dune",
+    "Flash Gordon",
+    "The Exorcist"
+  ],
   "Cold War Powers": [
     "East Germany",
     "Soviet Union",
@@ -5369,6 +5440,11 @@
     "Million Dollar Baby",
     "The Good, the Bad and the Ugly",
     "Unforgiven"
+  ],
+  "Movies featuring Natalie Wood": [
+    "Miracle on 34th Street",
+    "The Searchers",
+    "West Side Story"
   ],
   "Things Yemeni": [
     "North Yemen",
