@@ -52,8 +52,8 @@ async function getHashRange(db) {
     const szWords = fs.statSync(WORDS_F).size;
     const szCats = fs.statSync(CATS_F).size;
     const szMeta = fs.statSync(META_CATS_F).size;
-    console.log(`  • words.json: ${(szWords/1024).toFixed(1)} KB, categories.json: ${(szCats/1024).toFixed(1)} KB, meta_categories.json: ${(szMeta/1024).toFixed(1)} KB`);
-  } catch {}
+    console.log(`  • words.json: ${(szWords / 1024).toFixed(1)} KB, categories.json: ${(szCats / 1024).toFixed(1)} KB, meta_categories.json: ${(szMeta / 1024).toFixed(1)} KB`);
+  } catch { }
 
   function loadProgress() {
     if (!fs.existsSync(PROGRESS_FILE)) return { wordListHash: null, completed: [] };
@@ -85,7 +85,7 @@ async function getHashRange(db) {
   console.log("- Opening database…");
   const tOpen = Date.now();
   const db = await setupDatabase();
-  console.log(`  • Database handle acquired in ${((Date.now()-tOpen)/1000).toFixed(2)}s`);
+  console.log(`  • Database handle acquired in ${((Date.now() - tOpen) / 1000).toFixed(2)}s`);
   db.serialize(() => {
     db.run("PRAGMA journal_mode=WAL");
     db.run("PRAGMA synchronous=OFF");
@@ -93,13 +93,35 @@ async function getHashRange(db) {
     db.exec("PRAGMA wal_checkpoint(TRUNCATE)", (err) => { if (err) console.warn("wal_checkpoint(TRUNCATE) failed:", err.message); });
   });
   console.log(`- Database opened: ${DB_PATH}`);
+
+  // Startup cleanup: clear any leftover temporary tables and check for locks
+  console.log("- Performing startup cleanup...");
+  try {
+    await new Promise((resolve, reject) => {
+      db.exec(`
+        DROP TABLE IF EXISTS temp_to_delete;
+        DROP TABLE IF EXISTS temp_scores;
+        DROP TABLE IF EXISTS temp_validation;
+        VACUUM;
+      `, (err) => {
+        if (err) {
+          console.warn("  • Startup cleanup warnings:", err.message);
+        } else {
+          console.log("  • Startup cleanup completed");
+        }
+        resolve();
+      });
+    });
+  } catch (e) {
+    console.warn("  • Startup cleanup failed:", e.message);
+  }
   console.log("- Skipping COUNT(*); using conservative chunking target.");
   // Assume full SHA-256 range to avoid slow MIN/MAX scan
   const MIN_HASH = '0'.repeat(64);
   const MAX_HASH = 'f'.repeat(64);
   const range = { min: MIN_HASH, max: MAX_HASH };
   db.close();
-  console.log(`- Using assumed hash range: ${range.min.slice(0,8)}… → ${range.max.slice(0,8)}…`);
+  console.log(`- Using assumed hash range: ${range.min.slice(0, 8)}… → ${range.max.slice(0, 8)}…`);
 
   const ASSUMED_TOTAL = 100_000_000n; // 100M
   const TARGET_PER_CHUNK = 50_000n;   // ~50k per chunk
@@ -130,7 +152,7 @@ async function getHashRange(db) {
     const doneChunks = completed.size + status.filter(s => s.current && s.current.done).length;
     const pct = Math.min(1, (doneChunks + fractional) / BATCH_COUNT);
     const lines = [];
-    lines.push(`Overall: [${bar(pct)}] ${(pct*100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
+    lines.push(`Overall: [${bar(pct)}] ${(pct * 100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
     lines.push(`Totals: valid=${totalValid}, deleted=${totalInvalid}`);
     status.forEach((st, i) => {
       const s = st.current;
@@ -212,14 +234,14 @@ async function getHashRange(db) {
           try {
             const tallyOutputPath = path.join(DATA_DIR, 'category_tally.json');
             // sort
-            const sorted = Object.entries(globalTally).sort(([,a],[,b]) => b - a).reduce((o,[k,v]) => { o[k]=v; return o; }, {});
-            const totalValid = Object.values(globalTally).reduce((s,c) => s + c, 0) / 8; // 8 categories per puzzle
+            const sorted = Object.entries(globalTally).sort(([, a], [, b]) => b - a).reduce((o, [k, v]) => { o[k] = v; return o; }, {});
+            const totalValid = Object.values(globalTally).reduce((s, c) => s + c, 0) / 8; // 8 categories per puzzle
             const tallyData = { summary: { totalValidPuzzles: totalValid }, categoryUsage: sorted };
             fs.writeFileSync(tallyOutputPath, JSON.stringify(tallyData, null, 2));
             console.log(`Saved category tally to ${tallyOutputPath}`);
           } catch (e) { console.log('Warning: failed to save category tally:', e.message); }
           // Ask workers to shutdown their native resources gracefully before exit
-          for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch {} }
+          for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch { } }
           setTimeout(() => process.exit(0), 50);
         }
       }
