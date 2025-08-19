@@ -154,9 +154,7 @@ async function getHashRange(db) {
 
   let active = nWorkers;
   const workers = [];
-  // Limit concurrent writers to reduce lock contention
-  let writerPermits = Math.min(2, nWorkers);
-  const writerQueue = [];
+  // Write permits removed
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(new URL('./clean_db_worker.js', import.meta.url), { workerData: { id, DB_PATH, DATA_DIR, CAT_SCORES_F } });
     workers.push(w);
@@ -171,26 +169,8 @@ async function getHashRange(db) {
         } else {
           w.postMessage({ type: 'request_work' });
         }
-      } else if (msg.type === 'request_write_permit') {
-        if (writerPermits > 0) {
-          writerPermits--;
-          w.postMessage({ type: 'write_permit' });
-        } else {
-          writerQueue.push(w);
-        }
-      } else if (msg.type === 'release_write_permit') {
-        const next = writerQueue.shift();
-        if (next) {
-          next.postMessage({ type: 'write_permit' });
-        } else {
-          writerPermits++;
-        }
-        // basic visibility into queue length
-        if (!progressStarted) console.log(`  • Writer permits=${writerPermits}, queued=${writerQueue.length}`);
-      } else if (msg.type === 'cancel_write_permit_request') {
-        // A worker timed out waiting for a permit; no direct action required here,
-        // but we keep visibility for debugging
-        console.log(`Worker ${msg.id} canceled write-permit wait (likely timed out)`);
+      } else if (msg.type === 'request_write_permit' || msg.type === 'release_write_permit' || msg.type === 'cancel_write_permit_request') {
+        // no-op; permits removed
       } else if (msg.type === 'tick') {
         if (typeof msg.validDelta === 'number') { status[msg.id].valid += msg.validDelta; totalValid += msg.validDelta; }
         if (typeof msg.invalidDelta === 'number') { status[msg.id].invalid += msg.invalidDelta; totalInvalid += msg.invalidDelta; }

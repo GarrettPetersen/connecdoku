@@ -6,7 +6,7 @@ use std::io::{BufRead, BufReader, Write};
 enum Msg {
     Init { db_path: String },
     Delete { hashes: Vec<String> },
-    UpsertScores { items: Vec<(String, i64)> },
+    UpsertScores { items: Vec<(String, f64)> },
 }
 
 #[derive(Serialize)]
@@ -57,7 +57,7 @@ fn main() {
             Msg::UpsertScores { items } => {
                 if let Some(ref mut conn) = conn_opt {
                     let tx = conn.transaction().unwrap();
-                    tx.execute_batch("CREATE TEMP TABLE IF NOT EXISTS temp_scores(hash TEXT PRIMARY KEY, score INTEGER);").unwrap();
+                    tx.execute_batch("CREATE TEMP TABLE IF NOT EXISTS temp_scores(hash TEXT PRIMARY KEY, score REAL);").unwrap();
                     {
                         let mut stmt = tx.prepare("INSERT OR REPLACE INTO temp_scores(hash, score) VALUES (?1, ?2)").unwrap();
                         for (h, s) in &items { let _ = stmt.execute((h, s)); }

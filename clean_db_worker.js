@@ -10,7 +10,6 @@ const { id: WID, DB_PATH, DATA_DIR, CAT_SCORES_F } = workerData;
 
 // Extended timeouts to reduce false-positive stalls under load
 const RUST_RESPONSE_TIMEOUT_MS = 300000; // 5 minutes
-const WRITE_PERMIT_TIMEOUT_MS = 300000;  // 5 minutes
 
 const categoriesJson = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'categories.json'), 'utf8'));
 const metaCatsJson = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'meta_categories.json'), 'utf8'));
@@ -85,8 +84,7 @@ function setupDb() {
   });
 }
 
-function requestWritePermit() { parentPort.postMessage({ type: 'request_write_permit', id: WID }); }
-function releaseWritePermit() { parentPort.postMessage({ type: 'release_write_permit', id: WID }); }
+// Write permits removed — rely on WAL and rusqlite backoff
 
 parentPort.on('message', async msg => {
   if (msg.type === 'request_work') {
@@ -128,7 +126,7 @@ parentPort.on('message', async msg => {
       // send an initial tick so orchestrator knows totals
       parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta: 0, invalidDelta: 0 });
 
-      const FLUSH_THRESHOLD = 500;
+      const FLUSH_THRESHOLD = 100;
       for (const p of puzzles) {
         cleaner.stdin.write(JSON.stringify({ type: 'Validate', rows: [p.row0,p.row1,p.row2,p.row3], cols: [p.col0,p.col1,p.col2,p.col3] }) + '\n');
         const line = await readLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
@@ -153,7 +151,7 @@ parentPort.on('message', async msg => {
           invalid = [];
           scoreUpdates = [];
         }
-        if (processed % 200 === 0 || processed === total) {
+        if (processed % 50 === 0 || processed === total) {
           parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta });
           validDelta = 0; invalidDelta = 0;
         }
@@ -191,95 +189,9 @@ parentPort.on('message', async msg => {
 // Signal readiness after message handler is set to avoid race on first request
 parentPort.postMessage({ type: 'ready', id: WID });
 
-async function performWriteBatch(db, invalid, scoreUpdates) {
-  // acquire permit from main to keep concurrency low
-  requestWritePermit();
-  const permitTimeoutMs = WRITE_PERMIT_TIMEOUT_MS;
-  await new Promise((resolve, reject) => {
-    // Wait for permit grant message
-    const handler = (msg) => {
-      if (msg && msg.type === 'write_permit') {
-        parentPort.off('message', handler);
-        resolve();
-      }
-    };
-    parentPort.on('message', handler);
-    // timeout watchdog
-    (async () => {
-      await delay(permitTimeoutMs);
-      parentPort.off('message', handler);
-      try { parentPort.postMessage({ type: 'cancel_write_permit_request', id: WID }); } catch {}
-      reject(new Error(`Timed out waiting for write permit after ${permitTimeoutMs}ms`));
-    })();
-  });
-
-  // Write with retry/backoff on SQLITE_BUSY
-  const runWithRetry = (fn, attempts = 5) => new Promise(async (resolve, reject) => {
-    for (let i = 0; i < attempts; i++) {
-      try { await fn(); return resolve(); } catch (e) {
-        if (e && e.code === 'SQLITE_BUSY' && i < attempts - 1) {
-          await delay(50 + Math.random() * 200);
-          continue;
-        }
-        return reject(e);
-      }
-    }
-  });
-
-  await runWithRetry(() => new Promise((resolve, reject) => db.run('BEGIN IMMEDIATE', err => err ? reject(err) : resolve())));
-
-  // Ensure TEMP tables exist for this connection
-  await runWithRetry(() => new Promise((resolve, reject) => db.exec(
-    `CREATE TEMP TABLE IF NOT EXISTS temp_to_delete(hash TEXT PRIMARY KEY);
-     CREATE TEMP TABLE IF NOT EXISTS temp_scores(hash TEXT PRIMARY KEY, score INTEGER);`,
-    err => err ? reject(err) : resolve()
-  )));
-
-  // Populate and apply deletes
-  if (invalid.length > 0) {
-    await runWithRetry(() => new Promise((resolve, reject) => {
-      const stmt = db.prepare('INSERT OR IGNORE INTO temp_to_delete(hash) VALUES (?)');
-      for (const h of invalid) stmt.run(h);
-      stmt.finalize(err => err ? reject(err) : resolve());
-    }));
-    await runWithRetry(() => new Promise((resolve, reject) => db.run(
-      'DELETE FROM puzzles WHERE puzzle_hash IN (SELECT hash FROM temp_to_delete)',
-      err => err ? reject(err) : resolve()
-    )));
-    // Clear temp table for next use
-    await runWithRetry(() => new Promise((resolve, reject) => db.run('DELETE FROM temp_to_delete', err => err ? reject(err) : resolve())));
-  }
-
-  // Populate and apply score updates
-  if (scoreUpdates.length > 0) {
-    await runWithRetry(() => new Promise((resolve, reject) => {
-      const stmt = db.prepare('INSERT OR REPLACE INTO temp_scores(hash, score) VALUES (?, ?)');
-      for (const u of scoreUpdates) stmt.run(u.hash, u.score);
-      stmt.finalize(err => err ? reject(err) : resolve());
-    }));
-    await runWithRetry(() => new Promise((resolve, reject) => db.run(
-      `UPDATE puzzles
-         SET puzzle_quality_score = (
-           SELECT score FROM temp_scores WHERE temp_scores.hash = puzzles.puzzle_hash
-         )
-       WHERE puzzle_hash IN (SELECT hash FROM temp_scores)`,
-      err => err ? reject(err) : resolve()
-    )));
-    // Clear temp table for next use
-    await runWithRetry(() => new Promise((resolve, reject) => db.run('DELETE FROM temp_scores', err => err ? reject(err) : resolve())));
-  }
-
-  await runWithRetry(() => new Promise((resolve, reject) => db.run('COMMIT', err => err ? reject(err) : resolve())));
-  releaseWritePermit();
-}
+// performWriteBatch (Node sqlite) kept for fallback, but currently unused
 
 async function performWriteBatchRust(invalid, scoreUpdates) {
-  requestWritePermit();
-  await new Promise((resolve, reject) => {
-    const handler = (msg) => { if (msg && msg.type === 'write_permit') { parentPort.off('message', handler); resolve(); } };
-    parentPort.on('message', handler);
-    (async () => { await delay(WRITE_PERMIT_TIMEOUT_MS); parentPort.off('message', handler); reject(new Error('Timed out waiting for write permit')); })();
-  });
   if (invalid.length > 0) {
     writer.stdin.write(JSON.stringify({ type: 'Delete', hashes: invalid }) + '\n');
     const line = await readWriterLineWithTimeout();
@@ -292,7 +204,6 @@ async function performWriteBatchRust(invalid, scoreUpdates) {
     let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (UpsertScores): ' + line); }
     if (resp.type !== 'Ack') throw new Error('Writer UpsertScores failed: ' + line);
   }
-  releaseWritePermit();
 }
 
 
