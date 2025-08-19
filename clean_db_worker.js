@@ -13,7 +13,7 @@ const RUST_RESPONSE_TIMEOUT_MS = 300000; // 5 minutes
 
 const categoriesJson = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'categories.json'), 'utf8'));
 const metaCatsJson = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'meta_categories.json'), 'utf8'));
-let categoryScores = {}; try { categoryScores = JSON.parse(fs.readFileSync(CAT_SCORES_F, 'utf8')); } catch {}
+let categoryScores = {}; try { categoryScores = JSON.parse(fs.readFileSync(CAT_SCORES_F, 'utf8')); } catch { }
 
 const metaMap = {}; for (const [m, cats] of Object.entries(metaCatsJson)) if (m !== 'No Meta Category') for (const c of cats) metaMap[c] = m;
 
@@ -55,13 +55,22 @@ async function readLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
 async function ensureWriter() {
   if (writer) return;
   if (!writerPath) throw new Error('Rust writer binary not found. Please build cdx_writer');
+
+  // Add a small delay to stagger writer initializations and reduce database contention
+  await delay(WID * 100); // Stagger by worker ID
+
+  console.log(`Worker ${WID}: Starting writer process...`);
   writer = spawn(writerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
   wrl = (await import('readline')).createInterface({ input: writer.stdout });
   wrl.on('line', line => { wqueue.push(line); if (wwaitResolve) { const r = wwaitResolve; wwaitResolve = null; r(); } });
+  console.log(`Worker ${WID}: Sending init to writer...`);
   writer.stdin.write(JSON.stringify({ type: 'Init', db_path: DB_PATH }) + '\n');
-  const line = await readWriterLineWithTimeout();
+  console.log(`Worker ${WID}: Waiting for writer ready...`);
+  const line = await readWriterLineWithTimeout(10000); // 10 second timeout for init
+  console.log(`Worker ${WID}: Got response: ${line}`);
   let msg; try { msg = JSON.parse(line); } catch { throw new Error('Invalid writer init: ' + line); }
   if (msg.type !== 'Ready') throw new Error('Writer failed to init: ' + line);
+  console.log(`Worker ${WID}: Writer ready`);
 }
 async function readWriterLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
   if (wqueue.length) return wqueue.shift();
@@ -107,7 +116,7 @@ parentPort.on('message', async msg => {
               );
             });
           } catch (e) {
-            if (e && e.code === 'SQLITE_BUSY' && i < attempts - 1) { await delay(50 + Math.random()*200); continue; }
+            if (e && e.code === 'SQLITE_BUSY' && i < attempts - 1) { await delay(50 + Math.random() * 200); continue; }
             throw e;
           }
         }
@@ -128,13 +137,13 @@ parentPort.on('message', async msg => {
 
       const FLUSH_THRESHOLD = 100;
       for (const p of puzzles) {
-        cleaner.stdin.write(JSON.stringify({ type: 'Validate', rows: [p.row0,p.row1,p.row2,p.row3], cols: [p.col0,p.col1,p.col2,p.col3] }) + '\n');
+        cleaner.stdin.write(JSON.stringify({ type: 'Validate', rows: [p.row0, p.row1, p.row2, p.row3], cols: [p.col0, p.col1, p.col2, p.col3] }) + '\n');
         const line = await readLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
         let resp;
         try { resp = JSON.parse(line); } catch (e) { throw new Error('Invalid JSON from rust cleaner: ' + line); }
         if (resp.type === 'Valid') {
-          const cats = [p.row0,p.row1,p.row2,p.row3,p.col0,p.col1,p.col2,p.col3];
-          const score = cats.reduce((s,c) => s + (categoryScores[c] || 0), 0);
+          const cats = [p.row0, p.row1, p.row2, p.row3, p.col0, p.col1, p.col2, p.col3];
+          const score = cats.reduce((s, c) => s + (categoryScores[c] || 0), 0);
           scoreUpdates.push({ hash: p.puzzle_hash, score });
           // tally categories
           for (const c of cats) {
@@ -150,6 +159,8 @@ parentPort.on('message', async msg => {
           await performWriteBatchRust(invalid, scoreUpdates);
           invalid = [];
           scoreUpdates = [];
+          // Small delay to reduce database contention
+          await delay(10);
         }
         if (processed % 50 === 0 || processed === total) {
           parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta });
@@ -176,12 +187,12 @@ parentPort.on('message', async msg => {
     parentPort.postMessage({ type: 'cleanup_done', id: WID });
   } else if (msg.type === 'shutdown') {
     // Attempt to gracefully stop the Rust cleaner
-    try { if (cleaner && cleaner.stdin && !cleaner.killed) cleaner.stdin.end(); } catch {}
-    try { if (rl) rl.close(); } catch {}
-    try { if (cleaner && !cleaner.killed) cleaner.kill(); } catch {}
-    try { if (writer && writer.stdin && !writer.killed) writer.stdin.end(); } catch {}
-    try { if (wrl) wrl.close(); } catch {}
-    try { if (writer && !writer.killed) writer.kill(); } catch {}
+    try { if (cleaner && cleaner.stdin && !cleaner.killed) cleaner.stdin.end(); } catch { }
+    try { if (rl) rl.close(); } catch { }
+    try { if (cleaner && !cleaner.killed) cleaner.kill(); } catch { }
+    try { if (writer && writer.stdin && !writer.killed) writer.stdin.end(); } catch { }
+    try { if (wrl) wrl.close(); } catch { }
+    try { if (writer && !writer.killed) writer.kill(); } catch { }
     process.exit(0);
   }
 });
@@ -192,17 +203,27 @@ parentPort.postMessage({ type: 'ready', id: WID });
 // performWriteBatch (Node sqlite) kept for fallback, but currently unused
 
 async function performWriteBatchRust(invalid, scoreUpdates) {
-  if (invalid.length > 0) {
-    writer.stdin.write(JSON.stringify({ type: 'Delete', hashes: invalid }) + '\n');
-    const line = await readWriterLineWithTimeout();
-    let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (Delete): ' + line); }
-    if (resp.type !== 'Ack') throw new Error('Writer Delete failed: ' + line);
-  }
-  if (scoreUpdates.length > 0) {
-    writer.stdin.write(JSON.stringify({ type: 'UpsertScores', items: scoreUpdates.map(u => [u.hash, u.score]) }) + '\n');
-    const line = await readWriterLineWithTimeout();
-    let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (UpsertScores): ' + line); }
-    if (resp.type !== 'Ack') throw new Error('Writer UpsertScores failed: ' + line);
+  try {
+    if (invalid.length > 0) {
+      console.log(`Worker ${WID}: Sending delete batch of ${invalid.length} items...`);
+      writer.stdin.write(JSON.stringify({ type: 'Delete', hashes: invalid }) + '\n');
+      const line = await readWriterLineWithTimeout(30000); // 30 second timeout
+      console.log(`Worker ${WID}: Got delete response: ${line}`);
+      let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (Delete): ' + line); }
+      if (resp.type !== 'Ack') throw new Error('Writer Delete failed: ' + line);
+    }
+    if (scoreUpdates.length > 0) {
+      console.log(`Worker ${WID}: Sending score update batch of ${scoreUpdates.length} items...`);
+      writer.stdin.write(JSON.stringify({ type: 'UpsertScores', items: scoreUpdates.map(u => [u.hash, u.score]) }) + '\n');
+      const line = await readWriterLineWithTimeout(30000); // 30 second timeout
+      console.log(`Worker ${WID}: Got score response: ${line}`);
+      let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (UpsertScores): ' + line); }
+      if (resp.type !== 'Ack') throw new Error('Writer UpsertScores failed: ' + line);
+    }
+  } catch (e) {
+    // If writer operations fail, log the error but continue processing
+    console.error(`Worker ${WID} write batch failed:`, e.message);
+    // Don't throw - let the worker continue with the next batch
   }
 }
 

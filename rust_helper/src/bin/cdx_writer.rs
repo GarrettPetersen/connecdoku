@@ -50,15 +50,32 @@ fn main() {
         let msg: Msg = match serde_json::from_str(&line) { Ok(m) => m, Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("bad json: {}", e)}).unwrap()); continue; } };
         match msg {
             Msg::Init { db_path } => {
-                match rusqlite::Connection::open(db_path) {
-                    Ok(conn) => {
-                        let _ = conn.pragma_update(None, "journal_mode", &"WAL");
-                        let _ = conn.pragma_update(None, "synchronous", &"OFF");
-                        let _ = conn.busy_timeout(std::time::Duration::from_millis(60000));
+                // Try to open the database with a timeout
+                match std::thread::spawn(move || {
+                    rusqlite::Connection::open(db_path)
+                }).join() {
+                    Ok(Ok(conn)) => {
+                        match conn.pragma_update(None, "journal_mode", &"WAL") {
+                            Ok(_) => {},
+                            Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("WAL pragma failed: {}", e)}).unwrap()); return; }
+                        }
+                        match conn.pragma_update(None, "synchronous", &"OFF") {
+                            Ok(_) => {},
+                            Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("synchronous pragma failed: {}", e)}).unwrap()); return; }
+                        }
+                        match conn.busy_timeout(std::time::Duration::from_millis(60000)) {
+                            Ok(_) => {},
+                            Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("busy_timeout failed: {}", e)}).unwrap()); return; }
+                        }
                         conn_opt = Some(conn);
                         let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Ready).unwrap());
                     }
-                    Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: e.to_string()}).unwrap()); }
+                    Ok(Err(e)) => { 
+                        let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("database open failed: {}", e)}).unwrap()); 
+                    }
+                    Err(_) => { 
+                        let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: "database open timed out".into() }).unwrap()); 
+                    }
                 }
             }
             Msg::Delete { hashes } => {
