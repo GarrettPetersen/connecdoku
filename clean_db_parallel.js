@@ -94,7 +94,7 @@ async function getHashRange(db) {
   });
   console.log(`- Database opened: ${DB_PATH}`);
 
-  // Startup cleanup: clear any leftover temporary tables and check for locks
+  // Startup cleanup: clear any leftover temporary tables (fast)
   console.log("- Performing startup cleanup...");
   try {
     await new Promise((resolve, reject) => {
@@ -102,12 +102,11 @@ async function getHashRange(db) {
         DROP TABLE IF EXISTS temp_to_delete;
         DROP TABLE IF EXISTS temp_scores;
         DROP TABLE IF EXISTS temp_validation;
-        VACUUM;
       `, (err) => {
         if (err) {
           console.warn("  • Startup cleanup warnings:", err.message);
         } else {
-          console.log("  • Startup cleanup completed");
+          console.log("  • Startup cleanup completed (temp tables cleared)");
         }
         resolve();
       });
