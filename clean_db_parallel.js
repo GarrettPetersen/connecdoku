@@ -91,29 +91,22 @@ async function getHashRange(db) {
     db.run("PRAGMA synchronous=OFF");
     db.run("PRAGMA busy_timeout=30000");
     db.exec("PRAGMA wal_checkpoint(TRUNCATE)", (err) => { if (err) console.warn("wal_checkpoint(TRUNCATE) failed:", err.message); });
+
+    // Startup cleanup: clear any leftover temporary tables (fast)
+    console.log("- Performing startup cleanup...");
+    db.exec(`
+      DROP TABLE IF EXISTS temp_to_delete;
+      DROP TABLE IF EXISTS temp_scores;
+      DROP TABLE IF EXISTS temp_validation;
+    `, (err) => {
+      if (err) {
+        console.warn("  • Startup cleanup warnings:", err.message);
+      } else {
+        console.log("  • Startup cleanup completed (temp tables cleared)");
+      }
+    });
   });
   console.log(`- Database opened: ${DB_PATH}`);
-
-  // Startup cleanup: clear any leftover temporary tables (fast)
-  console.log("- Performing startup cleanup...");
-  try {
-    await new Promise((resolve, reject) => {
-      db.exec(`
-        DROP TABLE IF EXISTS temp_to_delete;
-        DROP TABLE IF EXISTS temp_scores;
-        DROP TABLE IF EXISTS temp_validation;
-      `, (err) => {
-        if (err) {
-          console.warn("  • Startup cleanup warnings:", err.message);
-        } else {
-          console.log("  • Startup cleanup completed (temp tables cleared)");
-        }
-        resolve();
-      });
-    });
-  } catch (e) {
-    console.warn("  • Startup cleanup failed:", e.message);
-  }
   console.log("- Skipping COUNT(*); using conservative chunking target.");
   // Assume full SHA-256 range to avoid slow MIN/MAX scan
   const MIN_HASH = '0'.repeat(64);
