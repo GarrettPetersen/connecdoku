@@ -59,18 +59,13 @@ async function ensureWriter() {
   // Add a small delay to stagger writer initializations and reduce database contention
   await delay(WID * 100); // Stagger by worker ID
 
-  console.log(`Worker ${WID}: Starting writer process...`);
   writer = spawn(writerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
   wrl = (await import('readline')).createInterface({ input: writer.stdout });
   wrl.on('line', line => { wqueue.push(line); if (wwaitResolve) { const r = wwaitResolve; wwaitResolve = null; r(); } });
-  console.log(`Worker ${WID}: Sending init to writer...`);
   writer.stdin.write(JSON.stringify({ type: 'Init', db_path: DB_PATH }) + '\n');
-  console.log(`Worker ${WID}: Waiting for writer ready...`);
   const line = await readWriterLineWithTimeout(10000); // 10 second timeout for init
-  console.log(`Worker ${WID}: Got response: ${line}`);
   let msg; try { msg = JSON.parse(line); } catch { throw new Error('Invalid writer init: ' + line); }
   if (msg.type !== 'Ready') throw new Error('Writer failed to init: ' + line);
-  console.log(`Worker ${WID}: Writer ready`);
 }
 async function readWriterLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
   if (wqueue.length) return wqueue.shift();
@@ -103,7 +98,8 @@ parentPort.on('message', async msg => {
     try {
       await ensureCleaner();
       const db = await setupDb();
-      await ensureWriter();
+      // Temporarily disable writer initialization
+      // await ensureWriter();
       // SELECT with retry on SQLITE_BUSY
       const selectWithRetry = async (attempts = 5) => {
         for (let i = 0; i < attempts; i++) {
@@ -156,7 +152,7 @@ parentPort.on('message', async msg => {
         }
         processed++;
         if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
-          await performWriteBatchRust(invalid, scoreUpdates);
+          // Skip database writes for now - just clear the batches
           invalid = [];
           scoreUpdates = [];
           // Small delay to reduce database contention
@@ -170,7 +166,9 @@ parentPort.on('message', async msg => {
       }
 
       // Final flush
-      if (invalid.length > 0 || scoreUpdates.length > 0) await performWriteBatchRust(invalid, scoreUpdates);
+      if (invalid.length > 0 || scoreUpdates.length > 0) {
+        // Skip database writes for now
+      }
       await new Promise(resolve => db.close(() => resolve()));
       // Send tally for this chunk before signaling done
       // flush any remaining deltas
@@ -205,18 +203,14 @@ parentPort.postMessage({ type: 'ready', id: WID });
 async function performWriteBatchRust(invalid, scoreUpdates) {
   try {
     if (invalid.length > 0) {
-      console.log(`Worker ${WID}: Sending delete batch of ${invalid.length} items...`);
       writer.stdin.write(JSON.stringify({ type: 'Delete', hashes: invalid }) + '\n');
       const line = await readWriterLineWithTimeout(30000); // 30 second timeout
-      console.log(`Worker ${WID}: Got delete response: ${line}`);
       let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (Delete): ' + line); }
       if (resp.type !== 'Ack') throw new Error('Writer Delete failed: ' + line);
     }
     if (scoreUpdates.length > 0) {
-      console.log(`Worker ${WID}: Sending score update batch of ${scoreUpdates.length} items...`);
       writer.stdin.write(JSON.stringify({ type: 'UpsertScores', items: scoreUpdates.map(u => [u.hash, u.score]) }) + '\n');
       const line = await readWriterLineWithTimeout(30000); // 30 second timeout
-      console.log(`Worker ${WID}: Got score response: ${line}`);
       let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (UpsertScores): ' + line); }
       if (resp.type !== 'Ack') throw new Error('Writer UpsertScores failed: ' + line);
     }
