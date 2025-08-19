@@ -2278,5 +2278,45 @@
         "Doris Day"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1930s",
+      "Black and White",
+      "Fictional People",
+      "Music"
+    ],
+    "cols": [
+      "Mammals",
+      "Romance Stories",
+      "Birds",
+      "Social Commentary"
+    ],
+    "words": [
+      [
+        "Goofy",
+        "Frankly, my dear, I don't give a damn",
+        "Donald Duck",
+        "The Grapes of Wrath"
+      ],
+      [
+        "Panda",
+        "Casablanca",
+        "Magpie",
+        "To Kill a Mockingbird"
+      ],
+      [
+        "Wolverine",
+        "Jane Eyre",
+        "Robin",
+        "The Great Gatsby"
+      ],
+      [
+        "Monkey",
+        "West Side Story",
+        "Drake",
+        "Les Misérables"
+      ]
+    ]
   }
 ]
