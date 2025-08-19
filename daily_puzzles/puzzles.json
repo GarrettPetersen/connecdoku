@@ -2198,5 +2198,85 @@
         "The Chronicles of Narnia: The Magician's Nephew"
       ]
     ]
+  },
+  {
+    "rows": [
+      "16th Century",
+      "19th Century",
+      "Things Greek",
+      "Things Italian"
+    ],
+    "cols": [
+      "Classic Literature",
+      "Great Conquerors",
+      "Scientists",
+      "Single Name Writers"
+    ],
+    "words": [
+      [
+        "Journey to the West",
+        "Hernán Cortés",
+        "Copernicus",
+        "Shakespeare"
+      ],
+      [
+        "The Adventures of Tom Sawyer",
+        "Napoleon Bonaparte",
+        "Louis Pasteur",
+        "Poe"
+      ],
+      [
+        "Oedipus Rex",
+        "Alexander the Great",
+        "Hippocrates",
+        "Homer"
+      ],
+      [
+        "The Divine Comedy",
+        "Caesar",
+        "Enrico Fermi",
+        "Dante"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "18th Century",
+      "Cities in USA",
+      "Founders of Religious Movements",
+      "Mentioned in We Didn't Start the Fire"
+    ],
+    "cols": [
+      "Ends with ING",
+      "Military Leaders",
+      "Things German",
+      "Women"
+    ],
+    "words": [
+      [
+        "The Great Awakening",
+        "Napoleon Bonaparte",
+        "Handel",
+        "Charlotte Corday"
+      ],
+      [
+        "Lansing",
+        "Montgomery",
+        "Bismarck",
+        "Helena"
+      ],
+      [
+        "Zhang Daoling",
+        "Muhammad",
+        "Martin Luther",
+        "Mary Baker Eddy"
+      ],
+      [
+        "Entebbe Hijacking",
+        "Eisenhower",
+        "Eichmann",
+        "Doris Day"
+      ]
+    ]
   }
 ]
