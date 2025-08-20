@@ -399,7 +399,12 @@ for (const category of allCurrentCategories) {
         movieMakerCount++;
         categorized = true;
         processedCategories.add(category);
-    } else if (category.includes('Century') || category.includes('s') && /^\d{4}s$/.test(category) || /^\d{1,2}th Century/.test(category)) {
+    } else if (
+        category.includes('Century')
+        || (/^\d{4}s$/.test(category)) // decades like 1980s, 2010s
+        || (/^\d{1,2}th Century/.test(category))
+        || (/^[12]\d{3}$/.test(category)) // specific years like 1984, 2001
+    ) {
         updatedMetaCategories["Time Periods"] = updatedMetaCategories["Time Periods"] || [];
         updatedMetaCategories["Time Periods"].push(category);
         timePeriodCount++;
@@ -473,7 +478,12 @@ for (const category of noMetaCategory) {
         shouldBeRemoved = true;
     } else if (category.startsWith('Movies featuring ') || category.startsWith('Movies directed by ')) {
         shouldBeRemoved = true;
-    } else if (category.includes('Century') || category.includes('s') && /^\d{4}s$/.test(category) || /^\d{1,2}th Century/.test(category)) {
+    } else if (
+        category.includes('Century')
+        || (/^\d{4}s$/.test(category))
+        || (/^\d{1,2}th Century/.test(category))
+        || (/^[12]\d{3}$/.test(category))
+    ) {
         shouldBeRemoved = true;
     } else if (category.startsWith('Cities in ') || category.startsWith('Locations in ') || category.startsWith('Countries in ')) {
         shouldBeRemoved = true;
