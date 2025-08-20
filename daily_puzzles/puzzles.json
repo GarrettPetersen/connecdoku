@@ -2718,5 +2718,125 @@
         "Wonder Woman"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1930s",
+      "Black and White",
+      "Fictional People",
+      "Music"
+    ],
+    "cols": [
+      "1940s",
+      "Birds",
+      "Mammals",
+      "Social Commentary"
+    ],
+    "words": [
+      [
+        "Enrico Fermi",
+        "Donald Duck",
+        "Goofy",
+        "The Grapes of Wrath"
+      ],
+      [
+        "Citizen Kane",
+        "Magpie",
+        "Panda",
+        "To Kill a Mockingbird"
+      ],
+      [
+        "Captain America",
+        "Phoenix",
+        "Wolverine",
+        "The Great Gatsby"
+      ],
+      [
+        "The Red Shoes",
+        "Drake",
+        "Monkey",
+        "Les Misérables"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "19th Century",
+      "Movies featuring Keanu Reeves",
+      "Movies featuring Samuel L. Jackson",
+      "Stories Where the Mom Dies"
+    ],
+    "cols": [
+      "2000s",
+      "Family-Friendly Stories",
+      "Horror Stories",
+      "Oscar Winners"
+    ],
+    "words": [
+      [
+        "Tesla",
+        "Davy Crockett",
+        "Dracula",
+        "12 Years a Slave"
+      ],
+      [
+        "The Lake House",
+        "Bill & Ted's Bogus Journey",
+        "The Devil's Advocate",
+        "The Matrix"
+      ],
+      [
+        "Unbreakable",
+        "The Incredibles 2",
+        "Glass",
+        "Django Unchained"
+      ],
+      [
+        "Attack of the Clones",
+        "Bambi",
+        "Carrie",
+        "Joker"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1910s",
+      "2020s",
+      "Books",
+      "World War II"
+    ],
+    "cols": [
+      "Civilian Ships",
+      "Dates",
+      "Ends with TER",
+      "Men"
+    ],
+    "words": [
+      [
+        "Lusitania",
+        "June 28th, 1914",
+        "The Titanic Disaster",
+        "Wilson"
+      ],
+      [
+        "Wonder",
+        "10/7",
+        "Avatar: The Way of Water",
+        "Trump"
+      ],
+      [
+        "Odyssey",
+        "1984",
+        "The Scarlet Letter",
+        "Prince Caspian"
+      ],
+      [
+        "Queen Elizabeth",
+        "December 7th, 1941",
+        "Lancaster",
+        "Joseph Stalin"
+      ]
+    ]
   }
 ]
