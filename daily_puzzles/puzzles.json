@@ -1426,7 +1426,7 @@
         "Carcano Model 38"
       ],
       [
-        "Ben Hur",
+        "Spartacus",
         "Hadrian's Wall",
         "Constantinople",
         "Vesuvius"
@@ -1976,7 +1976,7 @@
       [
         "Ask not what your country can do for you",
         "Abbey Road",
-        "Buddy Holly",
+        "Juan Peron",
         "The Moon Landing"
       ],
       [
@@ -2512,7 +2512,7 @@
         "The Da Vinci Code"
       ],
       [
-        "Ben Hur",
+        "Ben-Hur",
         "Pompeii",
         "Hercules",
         "The Seven Magnificent Gladiators"
@@ -2836,6 +2836,126 @@
         "December 7th, 1941",
         "Lancaster",
         "Joseph Stalin"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "16th Century",
+      "17th Century",
+      "Things American",
+      "Things French"
+    ],
+    "cols": [
+      "Adventure Stories",
+      "Age of Sail",
+      "Ends with ING",
+      "Medical Professionals"
+    ],
+    "words": [
+      [
+        "Journey to the West",
+        "Mary Rose",
+        "Much Ado About Nothing",
+        "Paracelsus"
+      ],
+      [
+        "Don Quixote",
+        "Mayflower",
+        "Qing",
+        "William Harvey"
+      ],
+      [
+        "The Adventures of Tom Sawyer",
+        "Challenger",
+        "Empire State Building",
+        "Elizabeth Blackwell"
+      ],
+      [
+        "The Count of Monte Cristo",
+        "Bucentaure",
+        "Cycling",
+        "Louis Pasteur"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1990s",
+      "2010s",
+      "Mentioned in We Didn't Start the Fire",
+      "Trios"
+    ],
+    "cols": [
+      "2D Animated Films",
+      "Musicians",
+      "Sci-fi Stories",
+      "TV Shows"
+    ],
+    "words": [
+      [
+        "Princess Mononoke",
+        "Madonna",
+        "Galaxy Quest",
+        "Pokemon"
+      ],
+      [
+        "Arrietty",
+        "Avril Lavigne",
+        "Edge of Tomorrow",
+        "Trailer Park Boys"
+      ],
+      [
+        "Peter Pan",
+        "Doris Day",
+        "Stranger in a Strange Land",
+        "Davy Crockett"
+      ],
+      [
+        "The Three Little Pigs",
+        "Bee Gees",
+        "The Three-Body Problem",
+        "The Three Stooges"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1920s",
+      "1980s",
+      "Starts with THE",
+      "Things Japanese"
+    ],
+    "cols": [
+      "Individual Animals",
+      "Inspirations for Star Wars",
+      "Real People",
+      "Romance Stories"
+    ],
+    "words": [
+      [
+        "Winnie-the-Pooh",
+        "Metropolis",
+        "Coolidge",
+        "A Farewell to Arms"
+      ],
+      [
+        "Donkey Kong",
+        "Dune",
+        "Reagan",
+        "Out of Africa"
+      ],
+      [
+        "The Very Hungry Caterpillar",
+        "The Dam Busters",
+        "The Unsinkable Molly Brown",
+        "The English Patient"
+      ],
+      [
+        "Sonic",
+        "Seven Samurai",
+        "Miyazaki",
+        "From Up on Poppy Hill"
       ]
     ]
   }

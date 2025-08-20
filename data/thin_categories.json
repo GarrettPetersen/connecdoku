@@ -351,13 +351,13 @@
     "Belarus"
   ],
   "Movies directed by William Wyler": [
-    "Ben Hur"
+    "Ben-Hur"
   ],
   "Movies featuring Charlton Heston": [
-    "Ben Hur"
+    "Ben-Hur"
   ],
   "Movies featuring Stephen Boyd": [
-    "Ben Hur"
+    "Ben-Hur"
   ],
   "Things Bhutanese": [
     "Bhutan"
@@ -1957,9 +1957,6 @@
   ],
   "French Line": [
     "Normandie"
-  ],
-  "Oceans": [
-    "North Atlantic"
   ],
   "Norwegian Cruise Line": [
     "Norwegian Bliss"
@@ -4622,6 +4619,10 @@
     "No Country for Old Men",
     "Volcano"
   ],
+  "Oceans": [
+    "North Atlantic",
+    "South Pacific"
+  ],
   "Things Zambian": [
     "Northern Rhodesia",
     "Zambia"
@@ -5067,7 +5068,7 @@
     "The Odyssey"
   ],
   "Movies featuring Jack Hawkins": [
-    "Ben Hur",
+    "Ben-Hur",
     "Bridge on the River Kwai",
     "Zulu"
   ],
