@@ -1459,6 +1459,19 @@
     "Roman Cities",
     "Starts with ANT"
   ],
+  "Antony and Cleopatra": [
+    "17th Century",
+    "1st Century BC",
+    "Drama Stories",
+    "Ends with TRA",
+    "Plays",
+    "Romance Stories",
+    "Shakespeare",
+    "Shakespeare Plays",
+    "Starts with ANT",
+    "Things British",
+    "Tragedy Stories"
+  ],
   "Antwerp": [
     "Ends with ERP",
     "Historic Trade Cities",
@@ -2029,6 +2042,8 @@
     "People",
     "Real People",
     "Roman Empire",
+    "Shakespeare",
+    "Shakespeare Characters",
     "Starts with AUG",
     "Things Roman"
   ],
@@ -2871,6 +2886,17 @@
     "Things Roman",
     "Wars"
   ],
+  "Battle of Agincourt": [
+    "1410s",
+    "15th Century",
+    "Ends with URT",
+    "Events",
+    "Hundred Years' War",
+    "Starts with BAT",
+    "Things British",
+    "Things French",
+    "Wars"
+  ],
   "Battle of Alesia": [
     "1st Century BC",
     "Ends with SIA",
@@ -2887,6 +2913,17 @@
     "Roman Republic",
     "Starts with BAT",
     "Things Roman",
+    "Wars"
+  ],
+  "Battle of Crécy": [
+    "1340s",
+    "14th Century",
+    "Ends with ÉCY",
+    "Events",
+    "Hundred Years' War",
+    "Starts with BAT",
+    "Things British",
+    "Things French",
     "Wars"
   ],
   "Battle of Dien Bien Phu": [
@@ -2918,6 +2955,29 @@
     "Roman Republic",
     "Starts with BAT",
     "Things Roman",
+    "Wars"
+  ],
+  "Battle of Poitiers": [
+    "1350s",
+    "14th Century",
+    "Ends with ERS",
+    "Events",
+    "Hundred Years' War",
+    "Starts with BAT",
+    "Things British",
+    "Things French",
+    "Wars"
+  ],
+  "Battle of Sluys": [
+    "1340s",
+    "14th Century",
+    "Ends with UYS",
+    "Events",
+    "Hundred Years' War",
+    "Naval Battles",
+    "Starts with BAT",
+    "Things British",
+    "Things French",
     "Wars"
   ],
   "Battle of Zhizhi": [
@@ -4041,8 +4101,13 @@
   ],
   "Bordeaux": [
     "Alcoholic Drinks",
+    "Cities",
+    "Cities in Europe",
     "Drinks",
     "Ends with AUX",
+    "Hundred Years' War",
+    "Locations in Europe",
+    "Place Names",
     "Starts with BOR",
     "Things French"
   ],
@@ -4558,6 +4623,8 @@
     "People",
     "Real People",
     "Roman Republic",
+    "Shakespeare",
+    "Shakespeare Characters",
     "Starts with BRU",
     "Things Roman"
   ],
@@ -5815,6 +5882,20 @@
     "Religious Figures",
     "Starts with CHA",
     "Things American"
+  ],
+  "Charles V": [
+    "14th Century",
+    "Ends with S V",
+    "Hundred Years' War",
+    "Medieval Figures",
+    "Men",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with CHA",
+    "Things French"
   ],
   "Charleston": [
     "Cities",
@@ -8972,6 +9053,21 @@
     "Starts with EDM",
     "Things American",
     "Things Canadian"
+  ],
+  "Edward III": [
+    "14th Century",
+    "Ends with III",
+    "Hundred Years' War",
+    "Medieval Figures",
+    "Men",
+    "Military Leaders",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with EDW",
+    "Things British"
   ],
   "Edward Jenner": [
     "18th Century",
@@ -13008,6 +13104,26 @@
     "Starts with HEN",
     "Types of Animals"
   ],
+  "Henry V": [
+    "15th Century",
+    "Ends with Y V",
+    "Hundred Years' War",
+    "Medieval Figures",
+    "Men",
+    "Military Leaders",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Plays",
+    "Real People",
+    "Royalty",
+    "Shakespeare",
+    "Shakespeare Characters",
+    "Shakespeare Plays",
+    "Starts with HEN",
+    "Things British",
+    "War Stories"
+  ],
   "Henry VII": [
     "15th Century",
     "Ends with VII",
@@ -15034,6 +15150,7 @@
   "Joan of Arc": [
     "15th Century",
     "Ends with ARC",
+    "Hundred Years' War",
     "Medieval Figures",
     "Military Leaders",
     "People",
@@ -15402,6 +15519,28 @@
     "Starts with JUL",
     "Things Italian",
     "Women"
+  ],
+  "Julius Caesar": [
+    "16th Century",
+    "1st Century BC",
+    "Ancient Figures",
+    "Assassination of Caesar",
+    "Ends with SAR",
+    "Great Conquerors",
+    "Men",
+    "National Leaders",
+    "People",
+    "Plays",
+    "Real People",
+    "Roman Republic",
+    "Shakespeare",
+    "Shakespeare Characters",
+    "Starts with JUL",
+    "Sword and Sandals Stories",
+    "Things British",
+    "Things Italian",
+    "Things Roman",
+    "Tragedy Stories"
   ],
   "July 2nd, 626": [
     "7th Century",
@@ -17376,6 +17515,18 @@
     "Starts with LON",
     "Things American"
   ],
+  "Longbow": [
+    "13th Century",
+    "14th Century",
+    "15th Century",
+    "Ends with BOW",
+    "Historical Weapons",
+    "Hundred Years' War",
+    "Starts with LON",
+    "Things British",
+    "Weapons",
+    "Wooden Objects"
+  ],
   "Looper": [
     "2010s",
     "2012",
@@ -18161,6 +18312,21 @@
     "Video Game Characters",
     "Video Games"
   ],
+  "Mark Antony": [
+    "1st Century BC",
+    "Ancient Figures",
+    "Ends with ONY",
+    "Great Conquerors",
+    "Men",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Roman Republic",
+    "Shakespeare",
+    "Shakespeare Characters",
+    "Starts with MAR",
+    "Things Roman"
+  ],
   "Mark David Chapman": [
     "1980s",
     "20th Century",
@@ -18335,18 +18501,12 @@
   "Mary Rose": [
     "16th Century",
     "Age of Sail",
-    "British Monarchs",
-    "British Royals",
     "Ends with OSE",
-    "People",
-    "Queens",
-    "Real People",
     "Royal Navy",
     "Ships",
     "Shipwrecks",
     "Starts with MAR",
-    "Things British",
-    "Women"
+    "Things British"
   ],
   "Mary Shelley": [
     "19th Century",
@@ -22086,15 +22246,29 @@
     "Starts with PHI"
   ],
   "Philip": [
+    "11th Century",
+    "12th Century",
+    "13th Century",
+    "14th Century",
+    "15th Century",
+    "16th Century",
+    "17th Century",
+    "18th Century",
     "1st Century",
     "Apostles",
     "Ends with LIP",
+    "Hundred Years' War",
+    "Medieval Figures",
     "Men",
+    "Monarchs",
+    "National Leaders",
     "People",
     "Real People",
     "Religious Figures",
+    "Royalty",
     "Saints",
-    "Starts with PHI"
+    "Starts with PHI",
+    "Things French"
   ],
   "Philip II of Macedon": [
     "4th Century BC",
@@ -22109,6 +22283,20 @@
     "Starts with PHI",
     "Things Greek",
     "Things Macedonian"
+  ],
+  "Philip VI": [
+    "14th Century",
+    "Ends with  VI",
+    "Hundred Years' War",
+    "Medieval Figures",
+    "Men",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with PHI",
+    "Things French"
   ],
   "Philippines": [
     "Archipelagos",
@@ -24174,6 +24362,31 @@
     "Starts with RHO",
     "Things Zimbabwean"
   ],
+  "Richard II": [
+    "1360s",
+    "1370s",
+    "1380s",
+    "1390s",
+    "1400s",
+    "14th Century",
+    "15th Century",
+    "Ends with  II",
+    "Hundred Years' War",
+    "Medieval Figures",
+    "Men",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Plays",
+    "Real People",
+    "Royalty",
+    "Shakespeare",
+    "Shakespeare Characters",
+    "Shakespeare Plays",
+    "Starts with RIC",
+    "Things British",
+    "Tragedy Stories"
+  ],
   "Richmond": [
     "Cities",
     "Cities in North America",
@@ -26030,6 +26243,27 @@
     "Religious Figures",
     "Starts with SID",
     "Things Indian"
+  ],
+  "Siege of Calais": [
+    "1340s",
+    "14th Century",
+    "Ends with AIS",
+    "Events",
+    "Hundred Years' War",
+    "Starts with SIE",
+    "Things British",
+    "Things French",
+    "Wars"
+  ],
+  "Siege of Orléans": [
+    "1420s",
+    "15th Century",
+    "Ends with ANS",
+    "Events",
+    "Hundred Years' War",
+    "Starts with SIE",
+    "Things French",
+    "Wars"
   ],
   "Sierra": [
     "Ends with RRA",
@@ -28811,6 +29045,23 @@
     "Events",
     "Pandemics",
     "Starts with THE"
+  ],
+  "The Black Prince": [
+    "1340s",
+    "1350s",
+    "1360s",
+    "14th Century",
+    "Ends with NCE",
+    "Hundred Years' War",
+    "Medieval Figures",
+    "Men",
+    "Military Leaders",
+    "People",
+    "Prince of Wales",
+    "Real People",
+    "Royalty",
+    "Starts with THE",
+    "Things British"
   ],
   "The Boer War": [
     "19th Century",
@@ -32911,6 +33162,28 @@
     "Movies featuring Joseph Gordon-Levitt",
     "Starts with TRE",
     "Things American"
+  ],
+  "Treaty of Brétigny": [
+    "1360s",
+    "14th Century",
+    "Ends with GNY",
+    "Events",
+    "Hundred Years' War",
+    "Peace Treaties",
+    "Starts with TRE",
+    "Things British",
+    "Things French"
+  ],
+  "Treaty of Troyes": [
+    "1420s",
+    "15th Century",
+    "Ends with YES",
+    "Events",
+    "Hundred Years' War",
+    "Peace Treaties",
+    "Starts with TRE",
+    "Things British",
+    "Things French"
   ],
   "Trenton": [
     "Cities",

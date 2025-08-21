@@ -496,6 +496,7 @@
     "1066",
     "Avicenna",
     "Macbeth",
+    "Philip",
     "The First Crusade",
     "The Norman Conquest",
     "The Tale of Genji",
@@ -504,6 +505,7 @@
   "12th Century": [
     "Genghis Khan",
     "Jebe",
+    "Philip",
     "Saladin",
     "Subutai",
     "Temüjin"
@@ -511,6 +513,30 @@
   "12th Century BC": [
     "The Bronze Age Collapse",
     "The Trojan War"
+  ],
+  "1340s": [
+    "Battle of Crécy",
+    "Battle of Sluys",
+    "Siege of Calais",
+    "The Black Prince"
+  ],
+  "1350s": [
+    "Battle of Poitiers",
+    "The Black Prince"
+  ],
+  "1360s": [
+    "Richard II",
+    "The Black Prince",
+    "Treaty of Brétigny"
+  ],
+  "1370s": [
+    "Richard II"
+  ],
+  "1380s": [
+    "Richard II"
+  ],
+  "1390s": [
+    "Richard II"
   ],
   "13th Century": [
     "Batu Khan",
@@ -520,9 +546,11 @@
     "Jebe",
     "Khan",
     "Kublai Khan",
+    "Longbow",
     "Marco Polo",
     "Möngke Khan",
     "Old London Bridge",
+    "Philip",
     "Subutai",
     "The Albigensian Crusade",
     "The Mongol Empire",
@@ -531,18 +559,40 @@
     "Yuan",
     "Ögedei Khan"
   ],
+  "1400s": [
+    "Richard II"
+  ],
+  "1410s": [
+    "Battle of Agincourt"
+  ],
+  "1420s": [
+    "Siege of Orléans",
+    "Treaty of Troyes"
+  ],
   "14th Century": [
+    "Battle of Crécy",
+    "Battle of Poitiers",
+    "Battle of Sluys",
+    "Charles V",
     "Dante",
+    "Edward III",
     "Inferno",
+    "Longbow",
     "Ming",
+    "Philip",
+    "Philip VI",
     "Playing Cards",
+    "Richard II",
     "Romance of the Three Kingdoms",
+    "Siege of Calais",
     "The Black Death",
+    "The Black Prince",
     "The Divine Comedy",
     "The Hundred Years War",
     "The Peasants' Revolt",
     "The realm, long divided, must unite",
     "Timur",
+    "Treaty of Brétigny",
     "Water Margin",
     "Zheng He",
     "Zhu Yuanzhang"
@@ -551,23 +601,30 @@
     "Akhenaten"
   ],
   "15th Century": [
+    "Battle of Agincourt",
     "Christopher Columbus",
     "Copernicus",
     "Da Vinci",
     "Ferdinand Magellan",
     "Guru Nanak",
+    "Henry V",
     "Henry VII",
     "Jan Hus",
     "Joan of Arc",
+    "Longbow",
     "Mehmed II",
     "Michelangelo",
     "Ming",
     "Nina",
+    "Philip",
     "Pinta",
+    "Richard II",
     "Santa Maria",
+    "Siege of Orléans",
     "The Fall of Constantinople",
     "The Hussite Wars",
     "Timur",
+    "Treaty of Troyes",
     "Vasco da Gama",
     "Zheng He"
   ],
@@ -605,6 +662,7 @@
     "John Knox",
     "Journey to the West",
     "Juliet",
+    "Julius Caesar",
     "Lady Jane Grey",
     "Martin Luther",
     "Mary I",
@@ -614,6 +672,7 @@
     "Ming",
     "Much Ado About Nothing",
     "Paracelsus",
+    "Philip",
     "Puck",
     "Queen Mary",
     "Romeo",
@@ -651,6 +710,7 @@
     "Washington"
   ],
   "17th Century": [
+    "Antony and Cleopatra",
     "Bach",
     "Don Quixote",
     "Galileo",
@@ -671,6 +731,7 @@
     "Ming",
     "Newton",
     "Othello",
+    "Philip",
     "Qing",
     "Remember, remember",
     "Robert Catesby",
@@ -825,6 +886,7 @@
     "Mozart",
     "Napoleon Bonaparte",
     "Newton",
+    "Philip",
     "Puckle Gun",
     "Solitaire",
     "The American Revolution",
@@ -1884,6 +1946,7 @@
     "Wang Mang Usurpation"
   ],
   "1st Century BC": [
+    "Antony and Cleopatra",
     "Assassination of Caesar",
     "Battle of Actium",
     "Battle of Alesia",
@@ -1906,6 +1969,8 @@
     "Gaius Marius",
     "Han Wudi's Defeat of the Xiongnu",
     "Ides of March",
+    "Julius Caesar",
+    "Mark Antony",
     "Pompey",
     "Second Triumvirate",
     "Servilius Casca",
@@ -3967,7 +4032,9 @@
     "Guan Yu",
     "Hadrian",
     "Jing Ke",
+    "Julius Caesar",
     "Marcus Aurelius",
+    "Mark Antony",
     "Narcissus the Wrestler",
     "Nero",
     "Pharaoh",
@@ -4286,6 +4353,7 @@
     "Curia",
     "Et tu, Brute?",
     "Ides of March",
+    "Julius Caesar",
     "Pugio",
     "Rome",
     "Servilius Casca"
@@ -5064,13 +5132,11 @@
   ],
   "British Monarchs": [
     "Elizabeth",
-    "Mary Rose",
     "Queen Mary",
     "Victoria"
   ],
   "British Royals": [
     "Elizabeth",
-    "Mary Rose",
     "Queen Mary",
     "Victoria"
   ],
@@ -5535,6 +5601,7 @@
     "Bismarck",
     "Boise",
     "Bologna",
+    "Bordeaux",
     "Boston",
     "Brasilia",
     "Budapest",
@@ -5663,6 +5730,7 @@
     "Athens",
     "Berlin",
     "Bologna",
+    "Bordeaux",
     "Budapest",
     "Caprese",
     "Chernobyl",
@@ -7581,6 +7649,7 @@
     "American Beauty",
     "Animal Farm",
     "Annie Hall",
+    "Antony and Cleopatra",
     "Apollo 13",
     "Argo",
     "Armageddon",
@@ -8284,6 +8353,7 @@
     "Coronation of Elizabeth II",
     "Ghostbusters II",
     "Mehmed II",
+    "Richard II",
     "The Godfather Part II",
     "World War II"
   ],
@@ -8303,7 +8373,8 @@
     "Among Us"
   ],
   "Ends with  VI": [
-    "Edward VI"
+    "Edward VI",
+    "Philip VI"
   ],
   "Ends with  VU": [
     "Deja Vu"
@@ -8541,6 +8612,9 @@
     "Eclair",
     "Profumo Affair"
   ],
+  "Ends with AIS": [
+    "Siege of Calais"
+  ],
   "Ends with AIT": [
     "Kuwait"
   ],
@@ -8758,7 +8832,8 @@
     "101 Dalmatians",
     "Blue Jeans",
     "Percy Jackson & the Olympians",
-    "Rise of the Guardians"
+    "Rise of the Guardians",
+    "Siege of Orléans"
   ],
   "Ends with ANT": [
     "Ant",
@@ -9179,7 +9254,8 @@
     "Phobos"
   ],
   "Ends with BOW": [
-    "Bow"
+    "Bow",
+    "Longbow"
   ],
   "Ends with BOY": [
     "Cowboy",
@@ -9869,6 +9945,7 @@
     "Antwerp"
   ],
   "Ends with ERS": [
+    "Battle of Poitiers",
     "Checkers",
     "Ghostbusters",
     "House of Flying Daggers",
@@ -10180,6 +10257,9 @@
   ],
   "Ends with GNU": [
     "Han Wudi's Defeat of the Xiongnu"
+  ],
+  "Ends with GNY": [
+    "Treaty of Brétigny"
   ],
   "Ends with GO!": [
     "Oh, the Places You'll Go!"
@@ -10533,6 +10613,7 @@
   ],
   "Ends with III": [
     "Back to the Future Part III",
+    "Edward III",
     "Henry VIII",
     "The Godfather Part III"
   ],
@@ -11638,6 +11719,7 @@
     "Prince",
     "Providence",
     "The Age of Innocence",
+    "The Black Prince",
     "The Greek War of Independence",
     "The Latin American Wars of Independence",
     "The Little Prince",
@@ -12179,6 +12261,7 @@
     "Varus, give me back my legions"
   ],
   "Ends with ONY": [
+    "Mark Antony",
     "Sony",
     "Susan B. Anthony"
   ],
@@ -12948,6 +13031,9 @@
   "Ends with S 2": [
     "The Incredibles 2"
   ],
+  "Ends with S V": [
+    "Charles V"
+  ],
   "Ends with SAF": [
     "Mansaf"
   ],
@@ -12964,6 +13050,7 @@
   "Ends with SAR": [
     "Assassination of Caesar",
     "Caesar",
+    "Julius Caesar",
     "Pulsar",
     "Quasar",
     "Render unto Caesar",
@@ -13353,6 +13440,7 @@
     "Baal Shem Tov"
   ],
   "Ends with TRA": [
+    "Antony and Cleopatra",
     "Cleopatra",
     "Petra",
     "Sumatra"
@@ -13610,6 +13698,9 @@
   "Ends with URO": [
     "Sanjuro"
   ],
+  "Ends with URT": [
+    "Battle of Agincourt"
+  ],
   "Ends with URU": [
     "Nauru"
   ],
@@ -13669,6 +13760,9 @@
   ],
   "Ends with UYA": [
     "The Tale of the Princess Kaguya"
+  ],
+  "Ends with UYS": [
+    "Battle of Sluys"
   ],
   "Ends with VAL": [
     "Arrival",
@@ -13821,6 +13915,9 @@
   "Ends with Y I": [
     "Mary I"
   ],
+  "Ends with Y V": [
+    "Henry V"
+  ],
   "Ends with YAK": [
     "Kayak"
   ],
@@ -13843,6 +13940,7 @@
   ],
   "Ends with YES": [
     "Hayes",
+    "Treaty of Troyes",
     "Troyes"
   ],
   "Ends with YON": [
@@ -13928,6 +14026,9 @@
   ],
   "Ends with ÈME": [
     "La Bohème"
+  ],
+  "Ends with ÉCY": [
+    "Battle of Crécy"
   ],
   "Engineering Structures": [
     "Bridge",
@@ -14022,11 +14123,15 @@
     "9/11",
     "Assassination of Caesar",
     "Battle of Actium",
+    "Battle of Agincourt",
     "Battle of Alesia",
     "Battle of Carrhae",
+    "Battle of Crécy",
     "Battle of Dien Bien Phu",
     "Battle of Pharsalus",
     "Battle of Philippi",
+    "Battle of Poitiers",
+    "Battle of Sluys",
     "Battle of Zhizhi",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
@@ -14062,6 +14167,8 @@
     "Pompeii",
     "Profumo Affair",
     "Second Triumvirate",
+    "Siege of Calais",
+    "Siege of Orléans",
     "Soviet-Afghan War",
     "Suez Crisis",
     "Tambora",
@@ -14175,6 +14282,8 @@
     "Tiananmen Square Massacre",
     "Titanic",
     "Toba Supereruption",
+    "Treaty of Brétigny",
+    "Treaty of Troyes",
     "Triple Alliance",
     "Triple Entente",
     "Tsar Bomba",
@@ -15892,7 +16001,9 @@
     "Francisco Pizarro",
     "Genghis Khan",
     "Hernán Cortés",
+    "Julius Caesar",
     "Kublai Khan",
+    "Mark Antony",
     "Mehmed II",
     "Muhammad",
     "Napoleon Bonaparte",
@@ -16185,6 +16296,7 @@
     "Gladius",
     "Guandao",
     "Halberd",
+    "Longbow",
     "Mace",
     "Pilum",
     "Pugio",
@@ -16273,6 +16385,26 @@
     "Sofa",
     "Table",
     "Toaster"
+  ],
+  "Hundred Years' War": [
+    "Battle of Agincourt",
+    "Battle of Crécy",
+    "Battle of Poitiers",
+    "Battle of Sluys",
+    "Bordeaux",
+    "Charles V",
+    "Edward III",
+    "Henry V",
+    "Joan of Arc",
+    "Longbow",
+    "Philip",
+    "Philip VI",
+    "Richard II",
+    "Siege of Calais",
+    "Siege of Orléans",
+    "The Black Prince",
+    "Treaty of Brétigny",
+    "Treaty of Troyes"
   ],
   "Ice-themed": [
     "Ice Age",
@@ -17020,6 +17152,7 @@
     "Belgium",
     "Berlin",
     "Bologna",
+    "Bordeaux",
     "Bornholm",
     "Bosnia and Herzegovina",
     "Budapest",
@@ -17679,10 +17812,17 @@
   ],
   "Medieval Figures": [
     "Charlemagne",
+    "Charles V",
     "Du Fu",
+    "Edward III",
+    "Henry V",
     "Joan of Arc",
     "Li Bai",
     "Marco Polo",
+    "Philip",
+    "Philip VI",
+    "Richard II",
+    "The Black Prince",
     "William the Conqueror",
     "Zheng He",
     "Zhu Yuanzhang"
@@ -17759,6 +17899,7 @@
     "Chandragupta Maurya",
     "Charlemagne",
     "Charles Taze Russell",
+    "Charles V",
     "Christopher Columbus",
     "Chubby Checker",
     "Cicero",
@@ -17791,6 +17932,7 @@
     "Du Fu",
     "Dylan",
     "Edison",
+    "Edward III",
     "Edward Jenner",
     "Edward VI",
     "Eichmann",
@@ -17842,6 +17984,7 @@
     "Hayes",
     "Heinz Guderian",
     "Helmuth von Moltke the Elder",
+    "Henry V",
     "Henry VII",
     "Henry VIII",
     "Hermes",
@@ -17887,6 +18030,7 @@
     "Juan Peron",
     "Judas Iscariot",
     "Juggernaut",
+    "Julius Caesar",
     "Justin Bieber",
     "Kennedy",
     "Kepler",
@@ -17923,6 +18067,7 @@
     "Marco Polo",
     "Marcus Aurelius",
     "Mario",
+    "Mark Antony",
     "Mark David Chapman",
     "Martin Luther",
     "Matsui",
@@ -17972,6 +18117,7 @@
     "Peter Pan",
     "Philip",
     "Philip II of Macedon",
+    "Philip VI",
     "Pierce",
     "Pinocchio",
     "Plato",
@@ -17989,6 +18135,7 @@
     "Reagan",
     "Red Beard",
     "Red Hood",
+    "Richard II",
     "Riddler",
     "Rigoletto",
     "Ringo",
@@ -18041,6 +18188,7 @@
     "Tesla",
     "Thaddeus",
     "Thanos",
+    "The Black Prince",
     "The Count of Monte Cristo",
     "The Great Gatsby",
     "The Grinch",
@@ -18307,6 +18455,7 @@
     "Chandragupta Maurya",
     "Charlemagne",
     "Cyrus the Great",
+    "Edward III",
     "Eisenhower",
     "Emperor Wu of Han",
     "Francisco Pizarro",
@@ -18321,6 +18470,7 @@
     "Hayes",
     "Heinz Guderian",
     "Helmuth von Moltke the Elder",
+    "Henry V",
     "Hernán Cortés",
     "Hulagu Khan",
     "J.F.C. Fuller",
@@ -18329,6 +18479,7 @@
     "Joan of Arc",
     "John Boyd",
     "Kublai Khan",
+    "Mark Antony",
     "Maurice of Nassau",
     "McKinley",
     "Mehmed II",
@@ -18352,6 +18503,7 @@
     "Sébastien Le Prestre de Vauban",
     "Taylor",
     "Temüjin",
+    "The Black Prince",
     "Timur",
     "Tolui",
     "Trajan",
@@ -18672,19 +18824,25 @@
     "Babur",
     "Chandragupta Maurya",
     "Charlemagne",
+    "Charles V",
     "Cyrus the Great",
     "Duke",
+    "Edward III",
     "Elizabeth",
     "Frederick the Great",
     "Gustavus Adolphus",
+    "Henry V",
     "King",
     "Kublai Khan",
     "Macbeth",
     "Mehmed II",
     "Pharaoh",
+    "Philip",
     "Philip II of Macedon",
+    "Philip VI",
     "Qin Shi Huang",
     "Queen Mary",
+    "Richard II",
     "Saladin",
     "Sargon of Akkad",
     "Shaka Zulu",
@@ -24224,6 +24382,7 @@
     "Catherine of Aragon",
     "Chandragupta Maurya",
     "Charlemagne",
+    "Charles V",
     "Claudius",
     "Cleveland",
     "Clinton",
@@ -24231,6 +24390,7 @@
     "Constantine the Great",
     "Coolidge",
     "Cyrus the Great",
+    "Edward III",
     "Edward VI",
     "Eichmann",
     "Eisenhower",
@@ -24248,6 +24408,7 @@
     "Harding",
     "Harrison",
     "Hayes",
+    "Henry V",
     "Henry VII",
     "Henry VIII",
     "Hong Xiuquan",
@@ -24261,6 +24422,7 @@
     "Johnson",
     "Joseph Stalin",
     "Juan Peron",
+    "Julius Caesar",
     "Kennedy",
     "Krushchev",
     "Kublai Khan",
@@ -24282,12 +24444,15 @@
     "Nixon",
     "Obama",
     "Ozymandias",
+    "Philip",
     "Philip II of Macedon",
+    "Philip VI",
     "Pierce",
     "Polk",
     "Pompey",
     "Qin Shi Huang",
     "Reagan",
+    "Richard II",
     "Roosevelt",
     "Roy Cohn",
     "Saladin",
@@ -24341,6 +24506,9 @@
     "Stern",
     "Tack",
     "Uncharted Waters"
+  ],
+  "Naval Battles": [
+    "Battle of Sluys"
   ],
   "New Seven Wonders": [
     "Chichen Itza",
@@ -24691,6 +24859,10 @@
     "747",
     "DC-3"
   ],
+  "Peace Treaties": [
+    "Treaty of Brétigny",
+    "Treaty of Troyes"
+  ],
   "Pearl Jam": [
     "Black"
   ],
@@ -24776,6 +24948,7 @@
     "Chandragupta Maurya",
     "Charlemagne",
     "Charles Taze Russell",
+    "Charles V",
     "Charlotte Brontë",
     "Charlotte Corday",
     "Christopher Columbus",
@@ -24817,6 +24990,7 @@
     "Du Fu",
     "Dylan",
     "Edison",
+    "Edward III",
     "Edward Jenner",
     "Edward VI",
     "Eichmann",
@@ -24883,6 +25057,7 @@
     "Heinz Guderian",
     "Helena",
     "Helmuth von Moltke the Elder",
+    "Henry V",
     "Henry VII",
     "Henry VIII",
     "Hernán Cortés",
@@ -24938,6 +25113,7 @@
     "Judas Iscariot",
     "Juggernaut",
     "Juliet",
+    "Julius Caesar",
     "Justin Bieber",
     "Kennedy",
     "Kepler",
@@ -24982,6 +25158,7 @@
     "Marie Curie",
     "Marilyn Monroe",
     "Mario",
+    "Mark Antony",
     "Mark David Chapman",
     "Martin Luther",
     "Mary",
@@ -24989,7 +25166,6 @@
     "Mary Cassatt",
     "Mary I",
     "Mary Kingsley",
-    "Mary Rose",
     "Mary Shelley",
     "Matilda",
     "Matsui",
@@ -25043,6 +25219,7 @@
     "Peter Pan",
     "Philip",
     "Philip II of Macedon",
+    "Philip VI",
     "Phoenix",
     "Pierce",
     "Pinocchio",
@@ -25063,6 +25240,7 @@
     "Reagan",
     "Red Beard",
     "Red Hood",
+    "Richard II",
     "Riddler",
     "Rigoletto",
     "Ringo",
@@ -25126,6 +25304,7 @@
     "Tesla",
     "Thaddeus",
     "Thanos",
+    "The Black Prince",
     "The Count of Monte Cristo",
     "The Great Gatsby",
     "The Grinch",
@@ -25422,6 +25601,7 @@
     "Boise",
     "Bolivia",
     "Bora Bora",
+    "Bordeaux",
     "Borneo",
     "Bornholm",
     "Bosnia and Herzegovina",
@@ -25898,14 +26078,18 @@
   ],
   "Plays": [
     "A Midsummer Night's Dream",
+    "Antony and Cleopatra",
     "Death of a Salesman",
     "Hamlet",
+    "Henry V",
+    "Julius Caesar",
     "King Lear",
     "Macbeth",
     "Much Ado About Nothing",
     "Oedipus Rex",
     "Of Mice and Men",
     "Othello",
+    "Richard II",
     "Romeo and Juliet",
     "The Merchant of Venice",
     "The Tempest",
@@ -26151,6 +26335,9 @@
     "King Kong",
     "Plesiadapis"
   ],
+  "Prince of Wales": [
+    "The Black Prince"
+  ],
   "Princesses": [
     "Princess Peach"
   ],
@@ -26212,7 +26399,6 @@
   ],
   "Queens": [
     "Elizabeth",
-    "Mary Rose",
     "Queen Mary"
   ],
   "R.E.M.": [
@@ -26400,6 +26586,7 @@
     "Chandragupta Maurya",
     "Charlemagne",
     "Charles Taze Russell",
+    "Charles V",
     "Charlotte Brontë",
     "Charlotte Corday",
     "Christopher Columbus",
@@ -26432,6 +26619,7 @@
     "Duke",
     "Dylan",
     "Edison",
+    "Edward III",
     "Edward Jenner",
     "Edward VI",
     "Eichmann",
@@ -26485,6 +26673,7 @@
     "Hayes",
     "Heinz Guderian",
     "Helmuth von Moltke the Elder",
+    "Henry V",
     "Henry VII",
     "Henry VIII",
     "Hernán Cortés",
@@ -26529,6 +26718,7 @@
     "Joseph Stalin",
     "Juan Peron",
     "Judas Iscariot",
+    "Julius Caesar",
     "Justin Bieber",
     "Kennedy",
     "Kepler",
@@ -26568,6 +26758,7 @@
     "Marcus Aurelius",
     "Marie Curie",
     "Marilyn Monroe",
+    "Mark Antony",
     "Mark David Chapman",
     "Martin Luther",
     "Mary",
@@ -26575,7 +26766,6 @@
     "Mary Cassatt",
     "Mary I",
     "Mary Kingsley",
-    "Mary Rose",
     "Mary Shelley",
     "Matsui",
     "Matthew",
@@ -26615,6 +26805,7 @@
     "Pharaoh",
     "Philip",
     "Philip II of Macedon",
+    "Philip VI",
     "Pierce",
     "Plato",
     "Pocahontas",
@@ -26627,6 +26818,7 @@
     "Queen Mary",
     "Rasputin",
     "Reagan",
+    "Richard II",
     "Ringo",
     "Robert Catesby",
     "Robert E. Lee",
@@ -26670,6 +26862,7 @@
     "Terry Fox",
     "Tesla",
     "Thaddeus",
+    "The Black Prince",
     "The Irishman",
     "The Last Emperor",
     "The Revenant",
@@ -27227,6 +27420,8 @@
     "Gaius Marius",
     "Gladius",
     "Ides of March",
+    "Julius Caesar",
+    "Mark Antony",
     "Pilum",
     "Pompey",
     "Scutum",
@@ -27243,6 +27438,7 @@
     "A Midsummer Night's Dream",
     "About Time",
     "Annie Hall",
+    "Antony and Cleopatra",
     "Brief Encounter",
     "Casablanca",
     "Chocolat",
@@ -27347,11 +27543,14 @@
     "Catherine of Aragon",
     "Chandragupta Maurya",
     "Charlemagne",
+    "Charles V",
     "Cyrus the Great",
+    "Edward III",
     "Edward VI",
     "Elizabeth I",
     "Frederick the Great",
     "Gustavus Adolphus",
+    "Henry V",
     "Henry VII",
     "Henry VIII",
     "Jane Seymour",
@@ -27362,15 +27561,19 @@
     "Macbeth",
     "Mary I",
     "Mehmed II",
+    "Philip",
     "Philip II of Macedon",
+    "Philip VI",
     "Prince",
     "Qin Shi Huang",
     "Queen",
+    "Richard II",
     "Saladin",
     "Sargon of Akkad",
     "Shaka Zulu",
     "Sophie, Duchess of Hohenberg",
     "Suleiman the Magnificent",
+    "The Black Prince",
     "Timur",
     "Trajan",
     "William the Conqueror"
@@ -27885,17 +28088,24 @@
   "Shakespeare": [
     "A Midsummer Night's Dream",
     "All the world's a stage",
+    "Antony and Cleopatra",
+    "Augustus",
+    "Brutus",
     "Caesar",
     "Cleopatra",
     "Et tu, Brute?",
     "Friends, Romans, countrymen",
     "Globe Theatre",
     "Hamlet",
+    "Henry V",
+    "Julius Caesar",
     "King Lear",
     "Macbeth",
+    "Mark Antony",
     "Much Ado About Nothing",
     "Othello",
     "Puck",
+    "Richard II",
     "Romeo",
     "Romeo and Juliet",
     "Shakespeare",
@@ -27908,22 +28118,31 @@
     "Twelfth Night"
   ],
   "Shakespeare Characters": [
+    "Augustus",
+    "Brutus",
     "Caesar",
     "Cleopatra",
     "Hamlet",
     "Helena",
+    "Henry V",
+    "Julius Caesar",
     "King Lear",
     "Macbeth",
+    "Mark Antony",
     "Othello",
     "Puck",
+    "Richard II",
     "Romeo"
   ],
   "Shakespeare Plays": [
+    "Antony and Cleopatra",
     "Hamlet",
+    "Henry V",
     "King Lear",
     "Macbeth",
     "Much Ado About Nothing",
     "Othello",
+    "Richard II",
     "Romeo and Juliet",
     "The Merchant of Venice",
     "The Tempest",
@@ -28780,6 +28999,7 @@
     "Anthem of the Seas",
     "Antigua and Barbuda",
     "Antioch",
+    "Antony and Cleopatra",
     "Antwerp"
   ],
   "Starts with APA": [
@@ -29028,11 +29248,15 @@
     "Battery",
     "Battle Beyond the Stars",
     "Battle of Actium",
+    "Battle of Agincourt",
     "Battle of Alesia",
     "Battle of Carrhae",
+    "Battle of Crécy",
     "Battle of Dien Bien Phu",
     "Battle of Pharsalus",
     "Battle of Philippi",
+    "Battle of Poitiers",
+    "Battle of Sluys",
     "Battle of Zhizhi",
     "Battlefield",
     "Batu Khan"
@@ -29485,6 +29709,7 @@
     "Chariots of Fire",
     "Charlemagne",
     "Charles Taze Russell",
+    "Charles V",
     "Charleston",
     "Charlie",
     "Charlotte Brontë",
@@ -30025,6 +30250,7 @@
     "Edmund Fitzgerald"
   ],
   "Starts with EDW": [
+    "Edward III",
     "Edward Jenner",
     "Edward VI"
   ],
@@ -30727,6 +30953,7 @@
   ],
   "Starts with HEN": [
     "Hen",
+    "Henry V",
     "Henry VII",
     "Henry VIII"
   ],
@@ -31166,6 +31393,7 @@
   ],
   "Starts with JUL": [
     "Juliet",
+    "Julius Caesar",
     "July 2nd, 626"
   ],
   "Starts with JUM": [
@@ -31560,7 +31788,8 @@
   ],
   "Starts with LON": [
     "London",
-    "Long Island"
+    "Long Island",
+    "Longbow"
   ],
   "Starts with LOO": [
     "Looper"
@@ -31685,6 +31914,7 @@
     "Marinara",
     "Mariner",
     "Mario",
+    "Mark Antony",
     "Mark David Chapman",
     "Marker",
     "Marriott",
@@ -32390,6 +32620,7 @@
     "Phi",
     "Philip",
     "Philip II of Macedon",
+    "Philip VI",
     "Philippines"
   ],
   "Starts with PHO": [
@@ -32728,6 +32959,7 @@
     "Rhodesia"
   ],
   "Starts with RIC": [
+    "Richard II",
     "Richmond"
   ],
   "Starts with RID": [
@@ -33039,6 +33271,8 @@
     "Siddhartha Gautama"
   ],
   "Starts with SIE": [
+    "Siege of Calais",
+    "Siege of Orléans",
     "Sierra",
     "Sierra Leone"
   ],
@@ -33514,6 +33748,7 @@
     "The Big Sleep",
     "The Black Cauldron",
     "The Black Death",
+    "The Black Prince",
     "The Boer War",
     "The Boxer Rebellion",
     "The Brexit Vote",
@@ -33895,6 +34130,8 @@
   ],
   "Starts with TRE": [
     "Treasure Planet",
+    "Treaty of Brétigny",
+    "Treaty of Troyes",
     "Trenton",
     "Tres Leches"
   ],
@@ -34660,6 +34897,7 @@
     "Cleopatra",
     "Gladiator",
     "Hercules",
+    "Julius Caesar",
     "Pompeii",
     "Spartacus",
     "The Seven Magnificent Gladiators",
@@ -35864,11 +36102,16 @@
     "All the world's a stage",
     "Animal Farm",
     "Anne Boleyn",
+    "Antony and Cleopatra",
     "Archery",
     "Ark Royal",
     "Arthur Christmas",
     "Aston Martin",
     "Bangers and Mash",
+    "Battle of Agincourt",
+    "Battle of Crécy",
+    "Battle of Poitiers",
+    "Battle of Sluys",
     "Beagle",
     "Beatles",
     "Bee Gees",
@@ -35904,6 +36147,7 @@
     "Dracula",
     "Drake",
     "Earl Grey",
+    "Edward III",
     "Edward Jenner",
     "Edward VI",
     "Elementary, my dear Watson",
@@ -35945,6 +36189,7 @@
     "Hawking",
     "Hebrides",
     "Helena",
+    "Henry V",
     "Henry VII",
     "Henry VIII",
     "Hood",
@@ -35966,6 +36211,7 @@
     "John",
     "John Wesley",
     "Joseph Lister",
+    "Julius Caesar",
     "Kind Hearts and Coronets",
     "King Lear",
     "Lady Jane Grey",
@@ -35973,6 +36219,7 @@
     "Land Rover",
     "Lawrence of Arabia",
     "London",
+    "Longbow",
     "Lord of the Flies",
     "Lotus",
     "Love Actually",
@@ -36018,6 +36265,7 @@
     "Remember, remember",
     "Repulse",
     "Resolution",
+    "Richard II",
     "Ringo",
     "Robert Catesby",
     "Rolls-Royce",
@@ -36032,6 +36280,7 @@
     "Shakespeare in Love",
     "Shepherd's Pie",
     "Shetland",
+    "Siege of Calais",
     "Skye",
     "Slumdog Millionaire",
     "Snowman",
@@ -36049,6 +36298,7 @@
     "Thames",
     "The 5th of November",
     "The Anubis Gates",
+    "The Black Prince",
     "The Brexit Vote",
     "The British Empire",
     "The Chronicles of Narnia",
@@ -36100,6 +36350,8 @@
     "To Say Nothing of the Dog",
     "To be or not to be",
     "Trainspotting",
+    "Treaty of Brétigny",
+    "Treaty of Troyes",
     "Trifle",
     "Twelfth Night",
     "United Kingdom",
@@ -36430,6 +36682,10 @@
     "Airbus",
     "Baguette",
     "Bardot",
+    "Battle of Agincourt",
+    "Battle of Crécy",
+    "Battle of Poitiers",
+    "Battle of Sluys",
     "Bearnaise",
     "Bechamel",
     "Beef Bourguignon",
@@ -36443,6 +36699,7 @@
     "Cassoulet",
     "Champagne",
     "Charlemagne",
+    "Charles V",
     "Charlotte Corday",
     "Chocolat",
     "Citroën",
@@ -36484,6 +36741,8 @@
     "Notre Dame",
     "Paris",
     "Peugeot",
+    "Philip",
+    "Philip VI",
     "Playing Cards",
     "Profiterole",
     "Quiche",
@@ -36494,6 +36753,8 @@
     "Rosa Bonheur",
     "Rosé",
     "Sarah Bernhardt",
+    "Siege of Calais",
+    "Siege of Orléans",
     "Solitaire",
     "Souffle",
     "Sparkling Wine",
@@ -36505,6 +36766,8 @@
     "The Fifth Element",
     "The Little Prince",
     "The Three Musketeers",
+    "Treaty of Brétigny",
+    "Treaty of Troyes",
     "Veloute",
     "Versailles",
     "White Wine",
@@ -36784,6 +37047,7 @@
     "Ischia",
     "Italy",
     "Juliet",
+    "Julius Caesar",
     "La Bohème",
     "La Traviata",
     "Lamborghini",
@@ -37305,7 +37569,9 @@
     "Hispania",
     "Ides of March",
     "Illyria",
+    "Julius Caesar",
     "Marcus Aurelius",
+    "Mark Antony",
     "Mauretania",
     "Narcissus the Wrestler",
     "Nero",
@@ -37980,8 +38246,11 @@
     "Yield Sign"
   ],
   "Tragedy Stories": [
+    "Antony and Cleopatra",
+    "Julius Caesar",
     "Oedipus Rex",
-    "Othello"
+    "Othello",
+    "Richard II"
   ],
   "Tragic Heroes": [
     "Achilles",
@@ -38457,6 +38726,7 @@
     "For Whom the Bell Tolls",
     "Grave of the Fireflies",
     "Halo",
+    "Henry V",
     "Iliad",
     "Inglourious Basterds",
     "Jojo Rabbit",
@@ -38513,13 +38783,19 @@
   ],
   "Wars": [
     "Battle of Actium",
+    "Battle of Agincourt",
     "Battle of Alesia",
     "Battle of Carrhae",
+    "Battle of Crécy",
     "Battle of Pharsalus",
     "Battle of Philippi",
+    "Battle of Poitiers",
+    "Battle of Sluys",
     "Battle of Zhizhi",
     "Chu–Han Contention",
     "Han Wudi's Defeat of the Xiongnu",
+    "Siege of Calais",
+    "Siege of Orléans",
     "The American Civil War",
     "The Boer War",
     "The Cold War",
@@ -38615,6 +38891,7 @@
     "Ivy Mike",
     "Knife",
     "Little Boy",
+    "Longbow",
     "Magazine",
     "Minié ball",
     "Pilum",
@@ -38803,7 +39080,6 @@
     "Mary Cassatt",
     "Mary I",
     "Mary Kingsley",
-    "Mary Rose",
     "Mary Shelley",
     "Matilda",
     "Moana",
@@ -38844,6 +39120,7 @@
     "Chisel",
     "Club",
     "Hammer",
+    "Longbow",
     "Pencil",
     "Pinnochio",
     "Saw",

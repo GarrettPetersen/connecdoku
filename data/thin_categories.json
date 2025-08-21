@@ -317,6 +317,12 @@
   "Movies featuring Robert Vaughn": [
     "Battle Beyond the Stars"
   ],
+  "1410s": [
+    "Battle of Agincourt"
+  ],
+  "Naval Battles": [
+    "Battle of Sluys"
+  ],
   "Charles Darwin": [
     "Beagle"
   ],
@@ -2369,6 +2375,18 @@
   "Movies featuring Ian McDiarmid": [
     "Revenge of the Sith"
   ],
+  "1370s": [
+    "Richard II"
+  ],
+  "1380s": [
+    "Richard II"
+  ],
+  "1390s": [
+    "Richard II"
+  ],
+  "1400s": [
+    "Richard II"
+  ],
   "Movies directed by Peter Ramsey": [
     "Rise of the Guardians"
   ],
@@ -2809,6 +2827,9 @@
   ],
   "Movies featuring Susan Sheridan": [
     "The Black Cauldron"
+  ],
+  "Prince of Wales": [
+    "The Black Prince"
   ],
   "Philosophical Fiction": [
     "The Brothers Karamazov"
@@ -3863,6 +3884,10 @@
     "Batman",
     "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
+  "1350s": [
+    "Battle of Poitiers",
+    "The Black Prince"
+  ],
   "Things Botswanan": [
     "Bechuanaland",
     "Botswana"
@@ -4174,6 +4199,10 @@
   "Movies featuring Zooey Deschanel": [
     "Elf",
     "The Hitchhiker's Guide to the Galaxy"
+  ],
+  "Queens": [
+    "Elizabeth",
+    "Queen Mary"
   ],
   "Captain Cook": [
     "Endeavour",
@@ -4627,10 +4656,6 @@
     "Northern Rhodesia",
     "Zambia"
   ],
-  "Tragedy Stories": [
-    "Oedipus Rex",
-    "Othello"
-  ],
   "Movies directed by Carol Reed": [
     "Oliver!",
     "The Third Man"
@@ -4754,6 +4779,10 @@
   "Things South African": [
     "Shaka Zulu",
     "South Africa"
+  ],
+  "1420s": [
+    "Siege of Orléans",
+    "Treaty of Troyes"
   ],
   "Movies directed by Frank Miller": [
     "Sin City",
@@ -4898,6 +4927,10 @@
   "Movies featuring John Cleese": [
     "Time Bandits",
     "Winnie the Pooh"
+  ],
+  "Peace Treaties": [
+    "Treaty of Brétigny",
+    "Treaty of Troyes"
   ],
   "Movies featuring Ariana DeBose": [
     "West Side Story",
@@ -5302,10 +5335,15 @@
     "Mont Saint-Michel",
     "Versailles"
   ],
-  "Queens": [
+  "British Monarchs": [
     "Elizabeth",
-    "Mary Rose",
-    "Queen Mary"
+    "Queen Mary",
+    "Victoria"
+  ],
+  "British Royals": [
+    "Elizabeth",
+    "Queen Mary",
+    "Victoria"
   ],
   "Gemstones": [
     "Emerald",
@@ -5466,6 +5504,11 @@
     "Rhodesia",
     "Southern Rhodesia",
     "Zimbabwe"
+  ],
+  "1360s": [
+    "Richard II",
+    "The Black Prince",
+    "Treaty of Brétigny"
   ],
   "Movies featuring Phil Harris": [
     "Robin Hood",
