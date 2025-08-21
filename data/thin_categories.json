@@ -182,6 +182,9 @@
   "Social Deduction": [
     "Among Us"
   ],
+  "Classical Music": [
+    "Andrea Bocelli"
+  ],
   "Cambodian Architecture": [
     "Angkor Wat"
   ],
@@ -316,9 +319,6 @@
   ],
   "Movies featuring Robert Vaughn": [
     "Battle Beyond the Stars"
-  ],
-  "1410s": [
-    "Battle of Agincourt"
   ],
   "Naval Battles": [
     "Battle of Sluys"
@@ -593,6 +593,9 @@
   "9th Century": [
     "Charlemagne"
   ],
+  "Holy Roman Emperors": [
+    "Charles IV"
+  ],
   "Movies featuring Catherine Zeta-Jones": [
     "Chicago"
   ],
@@ -748,6 +751,9 @@
   ],
   "Movies featuring Pierce Brosnan": [
     "Dante's Peak"
+  ],
+  "Movies featuring Jennifer Garner": [
+    "Daredevil"
   ],
   "Rooms": [
     "Darkroom"
@@ -1135,6 +1141,9 @@
   ],
   "Movies featuring Vivien Leigh": [
     "Gone with the Wind"
+  ],
+  "10th Century": [
+    "Good King Wenceslas"
   ],
   "Songs by The Beach Boys": [
     "Good Vibrations"
@@ -1751,9 +1760,6 @@
   "Hideki Matsui": [
     "Matsui"
   ],
-  "1620s": [
-    "Mayflower"
-  ],
   "Pilgrim Fathers": [
     "Mayflower"
   ],
@@ -1975,6 +1981,9 @@
   ],
   "Gothic Architecture": [
     "Notre Dame"
+  ],
+  "Models": [
+    "Nyle DiMarco"
   ],
   "Movies featuring Rachel Roberts": [
     "O Lucky Man!"
@@ -3884,9 +3893,9 @@
     "Batman",
     "Sweeney Todd: The Demon Barber of Fleet Street"
   ],
-  "1350s": [
-    "Battle of Poitiers",
-    "The Black Prince"
+  "1410s": [
+    "Battle of Agincourt",
+    "First Defenestration of Prague"
   ],
   "Things Botswanan": [
     "Bechuanaland",
@@ -3935,6 +3944,14 @@
   "Movies featuring Sean Young": [
     "Blade Runner",
     "Dune"
+  ],
+  "1610s": [
+    "Bohemian Revolt",
+    "Second Defenestration of Prague"
+  ],
+  "1620s": [
+    "Bohemian Revolt",
+    "Mayflower"
   ],
   "Things Danish": [
     "Bornholm",
@@ -4728,6 +4745,14 @@
     "Ratatouille",
     "The Madness of King George"
   ],
+  "R&B": [
+    "Ray Charles",
+    "Stevie Wonder"
+  ],
+  "Soul": [
+    "Ray Charles",
+    "Stevie Wonder"
+  ],
   "Movies featuring Helen Mirren": [
     "Red 2",
     "The Madness of King George"
@@ -5045,11 +5070,6 @@
     "Black Hawk",
     "Chinook"
   ],
-  "Movies featuring Ben Affleck": [
-    "Argo",
-    "Armageddon",
-    "Gone Girl"
-  ],
   "Things Armenian": [
     "Armenia",
     "Artsakh",
@@ -5089,6 +5109,11 @@
     "Batman",
     "Birdman",
     "Spotlight"
+  ],
+  "1350s": [
+    "Battle of Poitiers",
+    "John of Bohemia",
+    "The Black Prince"
   ],
   "Things Congolese": [
     "Belgian Congo",
@@ -5504,11 +5529,6 @@
     "Rhodesia",
     "Southern Rhodesia",
     "Zimbabwe"
-  ],
-  "1360s": [
-    "Richard II",
-    "The Black Prince",
-    "Treaty of Brétigny"
   ],
   "Movies featuring Phil Harris": [
     "Robin Hood",
