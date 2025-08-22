@@ -4692,6 +4692,10 @@
     "Starbuck",
     "Toaster"
   ],
+  "Bays": [
+    "Hudson Bay",
+    "San Francisco Bay"
+  ],
   "Bear": [
     "Bruin"
   ],
@@ -5034,10 +5038,32 @@
     "Like a Rolling Stone"
   ],
   "Bodies of Water": [
+    "Amazon River",
+    "Arctic Ocean",
+    "Atlantic Ocean",
+    "Baltic Sea",
     "Bay of Pigs",
+    "Black Sea",
+    "Caribbean Sea",
+    "Caspian Sea",
+    "Great Lakes",
+    "Gulf of Mexico",
+    "Hudson Bay",
+    "Indian Ocean",
+    "Lake Baikal",
+    "Lake Victoria",
+    "Mediterranean Sea",
+    "Mississippi River",
+    "Nile River",
     "North Atlantic",
     "North Sea",
-    "South Pacific"
+    "Pacific Ocean",
+    "Persian Gulf",
+    "Red Sea",
+    "San Francisco Bay",
+    "South Pacific",
+    "Southern Ocean",
+    "Yangtze River"
   ],
   "Body Parts": [
     "Achilles",
@@ -9311,6 +9337,10 @@
   "Ends with BAT": [
     "Bat"
   ],
+  "Ends with BAY": [
+    "Hudson Bay",
+    "San Francisco Bay"
+  ],
   "Ends with BBQ": [
     "BBQ"
   ],
@@ -9808,9 +9838,14 @@
     "I have a dream"
   ],
   "Ends with EAN": [
+    "Arctic Ocean",
+    "Atlantic Ocean",
     "Billie Jean",
     "Green Bean",
-    "Ocean"
+    "Indian Ocean",
+    "Ocean",
+    "Pacific Ocean",
+    "Southern Ocean"
   ],
   "Ends with EAR": [
     "Bear",
@@ -10687,6 +10722,7 @@
   ],
   "Ends with ICO": [
     "Commentarii de Bello Gallico",
+    "Gulf of Mexico",
     "Mexico",
     "Serpico"
   ],
@@ -11284,6 +11320,9 @@
   "Ends with KAD": [
     "Sargon of Akkad"
   ],
+  "Ends with KAL": [
+    "Lake Baikal"
+  ],
   "Ends with KAT": [
     "KitKat"
   ],
@@ -11316,6 +11355,7 @@
     "The Rise of Skywalker"
   ],
   "Ends with KES": [
+    "Great Lakes",
     "Guy Fawkes"
   ],
   "Ends with KET": [
@@ -12977,6 +13017,7 @@
     "Curia",
     "Gran Canaria",
     "Illyria",
+    "Lake Victoria",
     "Liberia",
     "Lighthouse of Alexandria",
     "Nigeria",
@@ -13252,7 +13293,13 @@
     "Pisco"
   ],
   "Ends with SEA": [
+    "Baltic Sea",
+    "Black Sea",
+    "Caribbean Sea",
+    "Caspian Sea",
+    "Mediterranean Sea",
     "North Sea",
+    "Red Sea",
     "Tales from Earthsea",
     "The Old Man and the Sea"
   ],
@@ -13789,7 +13836,8 @@
     "Tarantula"
   ],
   "Ends with ULF": [
-    "Beowulf"
+    "Beowulf",
+    "Persian Gulf"
   ],
   "Ends with ULK": [
     "Hulk"
@@ -13956,13 +14004,17 @@
     "Unforgiven"
   ],
   "Ends with VER": [
+    "Amazon River",
     "Denver",
     "Dover",
     "Grover",
     "Hoover",
     "Land Rover",
     "Lever",
-    "Silver"
+    "Mississippi River",
+    "Nile River",
+    "Silver",
+    "Yangtze River"
   ],
   "Ends with VES": [
     "Anne of Cleves",
@@ -16308,6 +16360,10 @@
   "Grunge": [
     "Nevermind"
   ],
+  "Gulfs": [
+    "Gulf of Mexico",
+    "Persian Gulf"
+  ],
   "Guns N' Roses": [
     "Sweet Child O' Mine"
   ],
@@ -16995,6 +17051,11 @@
     "Scharnhorst",
     "Tirpitz"
   ],
+  "Lakes": [
+    "Great Lakes",
+    "Lake Baikal",
+    "Lake Victoria"
+  ],
   "Landlocked Countries": [
     "Afghanistan",
     "Andorra",
@@ -17192,6 +17253,7 @@
     "Ivory Coast",
     "Kenya",
     "Kilimanjaro",
+    "Lake Victoria",
     "Lesotho",
     "Liberia",
     "Libya",
@@ -17205,11 +17267,13 @@
     "Namibia",
     "Niger",
     "Nigeria",
+    "Nile River",
     "Northern Rhodesia",
     "Nyasaland",
     "Portuguese East Africa",
     "Portuguese Guinea",
     "Portuguese West Africa",
+    "Red Sea",
     "Rhodesia",
     "Rwanda",
     "Sao Tome and Principe",
@@ -17252,6 +17316,7 @@
     "British Malaya",
     "Burma",
     "Cambodia",
+    "Caspian Sea",
     "Cebu",
     "Ceylon",
     "Chang'an",
@@ -17282,6 +17347,7 @@
     "Kuwait",
     "Kyrgyzstan",
     "Kyushu",
+    "Lake Baikal",
     "Lakshadweep",
     "Laos",
     "Lebanon",
@@ -17306,6 +17372,7 @@
     "Palestine",
     "Panmunjom",
     "Persia",
+    "Persian Gulf",
     "Philippines",
     "Phuket",
     "Pinatubo",
@@ -17339,6 +17406,7 @@
     "United Arab Emirates",
     "Uzbekistan",
     "Vietnam",
+    "Yangtze River",
     "Yemen"
   ],
   "Locations in Europe": [
@@ -17350,9 +17418,11 @@
     "Athens",
     "Austria",
     "Azores",
+    "Baltic Sea",
     "Belarus",
     "Belgium",
     "Berlin",
+    "Black Sea",
     "Bohemia",
     "Bologna",
     "Bordeaux",
@@ -17420,6 +17490,7 @@
     "Majorca",
     "Malta",
     "Matterhorn",
+    "Mediterranean Sea",
     "Menorca",
     "Milan",
     "Moldova",
@@ -17494,6 +17565,7 @@
     "British Honduras",
     "Canada",
     "Cancun",
+    "Caribbean Sea",
     "Carson City",
     "Charleston",
     "Cheyenne",
@@ -17515,8 +17587,10 @@
     "Ellesmere",
     "Frankfort",
     "Gettysburg",
+    "Great Lakes",
     "Grenada",
     "Guatemala",
+    "Gulf of Mexico",
     "Haiti",
     "Harrisburg",
     "Hartford",
@@ -17525,6 +17599,7 @@
     "Honduras",
     "Honolulu",
     "Hudson",
+    "Hudson Bay",
     "Indianapolis",
     "Jackson",
     "Jamaica",
@@ -17545,6 +17620,7 @@
     "Melville",
     "Mexico",
     "Miami",
+    "Mississippi River",
     "Montgomery",
     "Montpelier",
     "Nantucket",
@@ -17570,6 +17646,7 @@
     "Salem",
     "Salt Lake City",
     "San Diego",
+    "San Francisco Bay",
     "San Jose",
     "San Juan",
     "Santa Fe",
@@ -17622,6 +17699,7 @@
   ],
   "Locations in South America": [
     "Aconcagua",
+    "Amazon River",
     "Argentina",
     "Bolivia",
     "Brasilia",
@@ -24324,6 +24402,7 @@
     "Sleeping Beauty",
     "Snow White and the Seven Dwarfs",
     "Soul",
+    "South Pacific",
     "Sweeney Todd: The Demon Barber of Fleet Street",
     "Tangled",
     "Tarzan",
@@ -24934,9 +25013,14 @@
     "United States"
   ],
   "Oceans": [
+    "Arctic Ocean",
+    "Atlantic Ocean",
+    "Indian Ocean",
     "North Atlantic",
     "North Sea",
-    "South Pacific"
+    "Pacific Ocean",
+    "South Pacific",
+    "Southern Ocean"
   ],
   "Oligocene Epoch": [
     "Hyaenodon",
@@ -27587,18 +27671,22 @@
   ],
   "Rivers": [
     "Amazon",
+    "Amazon River",
     "Danube",
     "Delta",
     "Ganges",
     "Hudson",
     "Mississippi",
+    "Mississippi River",
     "Nile",
+    "Nile River",
     "Rhine",
     "Seine",
     "Shenandoah",
     "Thames",
     "Volga",
-    "Yangtze"
+    "Yangtze",
+    "Yangtze River"
   ],
   "Road Movies": [
     "Easy Rider"
@@ -28353,6 +28441,14 @@
     "Leviathan",
     "Siren",
     "Whale"
+  ],
+  "Seas": [
+    "Baltic Sea",
+    "Black Sea",
+    "Caribbean Sea",
+    "Caspian Sea",
+    "Mediterranean Sea",
+    "Red Sea"
   ],
   "Sequels": [
     "A Good Day to Die Hard",
@@ -29293,7 +29389,8 @@
   ],
   "Starts with AMA": [
     "Amadeus",
-    "Amazon"
+    "Amazon",
+    "Amazon River"
   ],
   "Starts with AMB": [
     "Ambulocetus"
@@ -29393,7 +29490,8 @@
     "Archaeopteryx",
     "Archduke Franz Ferdinand",
     "Archery",
-    "Archibald Butt"
+    "Archibald Butt",
+    "Arctic Ocean"
   ],
   "Starts with ARD": [
     "Ardipithecus"
@@ -29457,6 +29555,7 @@
   ],
   "Starts with ATL": [
     "Atlanta",
+    "Atlantic Ocean",
     "Atlantis"
   ],
   "Starts with ATT": [
@@ -29563,7 +29662,8 @@
   "Starts with BAL": [
     "Bali",
     "Ball",
-    "Ball Lightning"
+    "Ball Lightning",
+    "Baltic Sea"
   ],
   "Starts with BAM": [
     "Bambi"
@@ -29744,6 +29844,7 @@
     "Black Hawk",
     "Black Hole",
     "Black Panther",
+    "Black Sea",
     "Black Widow",
     "Blade Runner"
   ],
@@ -29997,6 +30098,7 @@
     "Carcano Model 38",
     "Carcassonne",
     "Cardinal",
+    "Caribbean Sea",
     "Carl Vinson",
     "Carmen",
     "Carnotaurus",
@@ -30009,6 +30111,7 @@
   ],
   "Starts with CAS": [
     "Casablanca",
+    "Caspian Sea",
     "Cassiopeia",
     "Cassius",
     "Cassius Chaerea",
@@ -31138,6 +31241,7 @@
   ],
   "Starts with GRE": [
     "Grease",
+    "Great Lakes",
     "Great Wall",
     "Great White Shark",
     "Greece",
@@ -31185,6 +31289,7 @@
   ],
   "Starts with GUL": [
     "Gulab Jamun",
+    "Gulf of Mexico",
     "Gulfstream",
     "Gull"
   ],
@@ -31419,7 +31524,8 @@
     "Hubble"
   ],
   "Starts with HUD": [
-    "Hudson"
+    "Hudson",
+    "Hudson Bay"
   ],
   "Starts with HUG": [
     "Huge"
@@ -31534,6 +31640,7 @@
   ],
   "Starts with IND": [
     "India",
+    "Indian Ocean",
     "Indianapolis",
     "Indigo",
     "Indonesia"
@@ -31998,6 +32105,8 @@
     "Laika, Space Dog"
   ],
   "Starts with LAK": [
+    "Lake Baikal",
+    "Lake Victoria",
     "Laker",
     "Lakshadweep"
   ],
@@ -32349,6 +32458,7 @@
     "MechaGodzilla"
   ],
   "Starts with MED": [
+    "Mediterranean Sea",
     "Medovik"
   ],
   "Starts with MEE": [
@@ -32441,7 +32551,8 @@
   ],
   "Starts with MIS": [
     "Miso",
-    "Mississippi"
+    "Mississippi",
+    "Mississippi River"
   ],
   "Starts with MIT": [
     "Mitsubishi"
@@ -32641,7 +32752,8 @@
     "Nikon"
   ],
   "Starts with NIL": [
-    "Nile"
+    "Nile",
+    "Nile River"
   ],
   "Starts with NIM": [
     "Nimitz"
@@ -32870,6 +32982,7 @@
   ],
   "Starts with PAC": [
     "Pac-Man",
+    "Pacific Ocean",
     "Paczki"
   ],
   "Starts with PAD": [
@@ -32965,6 +33078,7 @@
     "Permian-Triassic Extinction",
     "Perseus",
     "Persia",
+    "Persian Gulf",
     "Persona",
     "Peru"
   ],
@@ -33290,6 +33404,7 @@
     "Red Hood",
     "Red Pill",
     "Red Riding Hood",
+    "Red Sea",
     "Red Velvet",
     "Red Wine",
     "Reddit",
@@ -33504,6 +33619,7 @@
   "Starts with SAN": [
     "San Antonio",
     "San Diego",
+    "San Francisco Bay",
     "San Jose",
     "San Juan",
     "San Marino",
@@ -33783,6 +33899,7 @@
     "South Vietnam",
     "South Yemen",
     "Southampton",
+    "Southern Ocean",
     "Southern Rhodesia",
     "Souvlaki"
   ],
@@ -34888,6 +35005,7 @@
   ],
   "Starts with YAN": [
     "Yangtze",
+    "Yangtze River",
     "Yankee"
   ],
   "Starts with YAP": [
@@ -39155,6 +39273,7 @@
     "Romance of the Three Kingdoms",
     "Seven Samurai",
     "Slaughterhouse-Five",
+    "South Pacific",
     "Star Wars",
     "The Dam Busters",
     "The Deer Hunter",
