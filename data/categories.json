@@ -1,7 +1,15 @@
 {
+  "1955": [
+    "1955 World Series"
+  ],
+  "1972": [
+    "1972 Presidential Election"
+  ],
+  "1979": [
+    "Iranian Revolution"
+  ],
   "1980": [
     "Battle Beyond the Stars",
-    "Crack Epidemic",
     "Flash Gordon",
     "Kagemusha",
     "Ordinary People",
@@ -721,6 +729,7 @@
   "1790s": [
     "Adams",
     "Charlotte Corday",
+    "Francisco Goya",
     "The Haitian Revolution",
     "The Magic Flute",
     "The Whiskey Rebellion",
@@ -766,7 +775,11 @@
     "The play's the thing",
     "William Harvey"
   ],
+  "1800s": [
+    "Francisco Goya"
+  ],
   "1810s": [
+    "Francisco Goya",
     "Frankenstein",
     "June 18th, 1815",
     "La Garde meurt, elle ne se rend pas!",
@@ -846,6 +859,7 @@
     "War and Peace"
   ],
   "1870s": [
+    "Alexander Graham Bell",
     "Baháʼu'lláh",
     "Carmen",
     "Challenger",
@@ -858,6 +872,7 @@
     "The Long Depression"
   ],
   "1880s": [
+    "Alexander Graham Bell",
     "Arthur",
     "Charles Taze Russell",
     "Cleveland",
@@ -895,6 +910,7 @@
     "Don Giovanni",
     "Dream of the Red Chamber",
     "Edward Jenner",
+    "Francisco Goya",
     "Frederick the Great",
     "Give me liberty or give me death",
     "Handel",
@@ -925,6 +941,7 @@
   ],
   "1900s": [
     "Anne of Green Gables",
+    "Belgian Congo",
     "Einstein",
     "GMC",
     "Helen Keller",
@@ -1062,6 +1079,7 @@
   ],
   "1940s": [
     "1984",
+    "Adolf Eichmann",
     "Animal Farm",
     "B-17",
     "B-29",
@@ -1097,6 +1115,7 @@
     "Jill",
     "Joker",
     "Joseph Stalin",
+    "Juan Peron",
     "Judy",
     "June 4th, 1942",
     "Kate",
@@ -1113,7 +1132,6 @@
     "Miracle on 34th Street",
     "Mustang",
     "Oppenheimer",
-    "Palestine",
     "Pinnochio",
     "Prokofiev",
     "Riddler",
@@ -1122,6 +1140,7 @@
     "Saab",
     "Spitfire",
     "Stuka",
+    "Syngman Rhee",
     "The Battle of Stalingrad",
     "The Big Sleep",
     "The Holocaust",
@@ -1146,7 +1165,6 @@
   "1950s": [
     "1955 World Series",
     "Andrea Doria",
-    "Bardot",
     "Battle of Dien Bien Phu",
     "Ben-Hur",
     "Big Iron",
@@ -1154,6 +1172,7 @@
     "Billie Holiday",
     "Brando",
     "Bridge on the River Kwai",
+    "Brigitte Bardot",
     "Budapest",
     "Buddy Holly",
     "California Baseball",
@@ -1177,15 +1196,17 @@
     "Hound Dog",
     "Ikiru",
     "Ivy Mike",
+    "Jack Kerouac",
     "Joe DiMaggio",
     "Joe McCarthy",
     "John Coltrane",
     "Johnnie Ray",
     "Johnny B. Goode",
     "Joseph Stalin",
+    "Juan Peron",
     "Krushchev",
     "L. Ron Hubbard",
-    "Laika",
+    "Laika, Space Dog",
     "Liberace",
     "Lord of the Flies",
     "Malenkov",
@@ -1196,13 +1217,15 @@
     "MiG-21",
     "Miles Davis",
     "Mini",
+    "Monroe",
     "NASA",
+    "Nasser",
     "Nixon",
     "North Korea",
     "On the Road",
-    "Palestine",
     "Panmunjom",
     "Peter Pan",
+    "Polio Vaccine",
     "Prince Caspian",
     "Prokofiev",
     "Rashomon",
@@ -1224,7 +1247,9 @@
     "Subaru",
     "Suez Crisis",
     "Sugar Ray",
+    "Syngman Rhee",
     "Television",
+    "Thalidomide Scandal",
     "The Algerian War",
     "The Catcher in the Rye",
     "The Chronicles of Narnia",
@@ -1249,14 +1274,13 @@
     "Toscanini",
     "Truman",
     "United Arab Republic",
-    "Vaccine",
     "White Christmas"
   ],
   "1960s": [
     "2001: A Space Odyssey",
     "747",
     "Abbey Road",
-    "Alabama",
+    "Adolf Eichmann",
     "Apollo",
     "Ask not what your country can do for you",
     "Bay of Pigs",
@@ -1266,12 +1290,10 @@
     "Big Bird",
     "Birth Control Pill",
     "Black Widow",
-    "Castro",
-    "China",
+    "Bob Dylan",
     "Chinook",
     "Chubby Checker",
     "Cleopatra",
-    "Communist Bloc",
     "Concorde",
     "Congo Crisis",
     "Cream",
@@ -1280,9 +1302,7 @@
     "Doctor Octopus",
     "Dr. Strangelove",
     "Dune",
-    "Dylan",
     "Easy Rider",
-    "Eichmann",
     "Eisenhower",
     "Ella Fitzgerald",
     "Gamera",
@@ -1304,10 +1324,8 @@
     "John Boyd",
     "John Coltrane",
     "Johnson",
-    "Juan Peron",
     "Juggernaut",
     "Kennedy",
-    "Kerouac",
     "King Ghidorah",
     "Krushchev",
     "L. Ron Hubbard",
@@ -1318,9 +1336,9 @@
     "Light My Fire",
     "Like a Rolling Stone",
     "Loki",
-    "Mafia",
     "Magneto",
     "Mantle",
+    "Marilyn Monroe",
     "Mariner",
     "Mary Poppins",
     "McLaren",
@@ -1328,6 +1346,7 @@
     "MiG-21",
     "Midnight Cowboy",
     "Miles Davis",
+    "Monroe",
     "Mothra",
     "Mr. Freeze",
     "My Fair Lady",
@@ -1335,7 +1354,6 @@
     "Nasser",
     "Nick Fury",
     "Nixon",
-    "North Korea",
     "November 22nd, 1963",
     "Oliver!",
     "One Hundred Years of Solitude",
@@ -1361,7 +1379,6 @@
     "Stranger in a Strange Land",
     "Syngman Rhee",
     "Tanganyika",
-    "Thalidomide Scandal",
     "The Apollo Program",
     "The Bell Jar",
     "The Civil Rights Movement",
@@ -1385,7 +1402,6 @@
     "Tsar Bomba",
     "U-2 Spy Plane Incident",
     "United Arab Republic",
-    "Vaccine",
     "Violet",
     "Vulture",
     "West Side Story",
@@ -1410,13 +1426,13 @@
     "Bee Gees",
     "Begin",
     "Black Hawk",
+    "Bob Dylan",
     "Bohemian Rhapsody",
     "Boston",
     "Bridge Over Troubled Water",
     "Cabaret",
     "Carrie",
     "Carter",
-    "China",
     "Chinatown",
     "Chinook",
     "Cola Wars",
@@ -1428,7 +1444,6 @@
     "Death Wish",
     "Dog Day Afternoon",
     "Don't Look Now",
-    "Dylan",
     "Entebbe Hijacking",
     "F-16",
     "Fiddler on the Roof",
@@ -1447,12 +1462,12 @@
     "Jesus Christ Superstar",
     "John",
     "John Boyd",
+    "Juan Peron",
     "Kampuchea",
     "Kindred",
     "Kramer vs. Kramer",
     "L. Ron Hubbard",
     "Learjet",
-    "Lebanon",
     "Manhattan",
     "Mariner",
     "May the Force be with you",
@@ -1507,7 +1522,8 @@
     "Watergate",
     "Waterloo",
     "Wheel of Fortune",
-    "Wolverine"
+    "Wolverine",
+    "Zhou Enlai"
   ],
   "1980s": [
     "1989 Chinese Protests",
@@ -1568,7 +1584,6 @@
     "Kampuchea",
     "Kiki's Delivery Service",
     "L. Ron Hubbard",
-    "Lebanon",
     "Lexus",
     "Like a Prayer",
     "Little Shop of Horrors",
@@ -1577,7 +1592,6 @@
     "Madonna",
     "Mario",
     "Mark David Chapman",
-    "Marlee Matlin",
     "Matilda",
     "Mehmet Ali Agca",
     "Metal Gear",
@@ -1715,7 +1729,6 @@
     "Life is like a box of chocolates",
     "Losing My Religion",
     "Madonna",
-    "Marlee Matlin",
     "Morpheus",
     "Nala",
     "Neo",
@@ -1799,6 +1812,7 @@
     "12 Years a Slave",
     "Ada Lovelace",
     "Adams",
+    "Alexander Graham Bell",
     "Alice's Adventures in Wonderland",
     "Annabel",
     "Annie Oakley",
@@ -1845,6 +1859,7 @@
     "Ford",
     "Ford's Theatre",
     "Four score and seven years ago",
+    "Francisco Goya",
     "Frankenstein",
     "Garfield",
     "George Eliot",
@@ -2095,7 +2110,6 @@
     "Love Actually",
     "Madagascar",
     "Madonna",
-    "Marlee Matlin",
     "Million Dollar Baby",
     "Moulin Rouge!",
     "My Blueberry Nights",
@@ -2304,6 +2318,7 @@
     "Abbey Road",
     "Absalom, Absalom!",
     "Acura",
+    "Adolf Eichmann",
     "Agent Smith",
     "Airbus",
     "Aladdin",
@@ -2340,7 +2355,6 @@
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III",
-    "Bardot",
     "Basket Case",
     "Batman",
     "Battle Beyond the Stars",
@@ -2350,6 +2364,7 @@
     "Beast",
     "Bee Gees",
     "Begin",
+    "Belgian Congo",
     "Bell",
     "Belle",
     "Beloved",
@@ -2374,6 +2389,7 @@
     "Blade Runner",
     "Blood, toil, tears and sweat",
     "Blue Pill",
+    "Bob Dylan",
     "Boeing",
     "Bohemian Rhapsody",
     "Boston",
@@ -2385,6 +2401,7 @@
     "Bridge Over Troubled Water",
     "Bridge on the River Kwai",
     "Brief Encounter",
+    "Brigitte Bardot",
     "Britannia Hospital",
     "Bronco",
     "Buddy Holly",
@@ -2476,12 +2493,10 @@
     "Ducky",
     "Duke Ellington",
     "Dune",
-    "Dylan",
     "E.T.",
     "East Germany",
     "Easy Rider",
     "Edison",
-    "Eichmann",
     "Einstein",
     "Eisenhower",
     "Elizabeth",
@@ -2600,6 +2615,7 @@
     "Ivy",
     "Ivy Mike",
     "J.F.C. Fuller",
+    "Jack Kerouac",
     "Jackie Brown",
     "Jaguar",
     "Jaws",
@@ -2628,7 +2644,6 @@
     "Kampuchea",
     "Kate",
     "Kennedy",
-    "Kerouac",
     "Kia",
     "Kiki's Delivery Service",
     "Kind Hearts and Coronets",
@@ -2641,7 +2656,7 @@
     "Krushchev",
     "Kurosawa",
     "L. Ron Hubbard",
-    "Laika",
+    "Laika, Space Dog",
     "Lamborghini",
     "Lancaster",
     "Land Rover",
@@ -2683,7 +2698,6 @@
     "Mariner",
     "Mario",
     "Mark David Chapman",
-    "Marlee Matlin",
     "Mary Baker Eddy",
     "Mary Poppins",
     "Maserati",
@@ -2730,6 +2744,7 @@
     "Nicole Brown Simpson",
     "Nissan",
     "Nixon",
+    "North Korea",
     "North Vietnam",
     "North Yemen",
     "Norwegian Wood",
@@ -2752,6 +2767,7 @@
     "Outlander",
     "Ozu",
     "Pac-Man",
+    "Palestine",
     "Panmunjom",
     "Papa",
     "Paul",
@@ -3247,7 +3263,6 @@
     "MSC Meraviglia",
     "Madagascar",
     "Madonna",
-    "Marlee Matlin",
     "Mary Poppins Returns",
     "Matsui",
     "Million Dollar Baby",
@@ -3286,7 +3301,6 @@
     "Prince",
     "Professor X",
     "Queen Mary 2",
-    "Ray Charles",
     "Rebel Moon",
     "Red",
     "Red 2",
@@ -3465,6 +3479,7 @@
     "Marcus Aurelius",
     "Narcissus the Wrestler",
     "Pantheon",
+    "Syria Palaestina",
     "The Roman Empire",
     "Trajan",
     "Zhang Daoling"
@@ -3694,7 +3709,11 @@
     "The Legend of Zelda"
   ],
   "Actors": [
+    "Brando",
+    "Brigitte Bardot",
+    "Marilyn Monroe",
     "Mifune",
+    "Monroe",
     "Sarah Bernhardt"
   ],
   "Adventure Stories": [
@@ -4266,6 +4285,7 @@
   ],
   "Animals": [
     "Jaguar",
+    "Laika, Space Dog",
     "Pinky",
     "Turkey"
   ],
@@ -4412,6 +4432,7 @@
   ],
   "Artists": [
     "Da Vinci",
+    "Francisco Goya",
     "Mary Cassatt",
     "Michelangelo",
     "Rosa Bonheur"
@@ -4514,6 +4535,7 @@
     "Voyager"
   ],
   "Athletes": [
+    "Campanella",
     "Cobb",
     "Curry",
     "James",
@@ -5011,6 +5033,12 @@
   "Bob Dylan": [
     "Like a Rolling Stone"
   ],
+  "Bodies of Water": [
+    "Bay of Pigs",
+    "North Atlantic",
+    "North Sea",
+    "South Pacific"
+  ],
   "Body Parts": [
     "Achilles",
     "Arm",
@@ -5291,6 +5319,7 @@
     "Temple of Artemis",
     "Texas Book Depository",
     "Versailles",
+    "Watergate",
     "Xuanwu Gate"
   ],
   "Burger Toppings": [
@@ -6179,6 +6208,7 @@
     "Carl Vinson",
     "Castle Bravo",
     "Chernobyl",
+    "Communist Bloc",
     "Cuba",
     "Czechoslovakia",
     "Davy Crockett",
@@ -6188,7 +6218,9 @@
     "Houston, we have a problem",
     "Hungary",
     "Ivy Mike",
+    "Joe McCarthy",
     "Korea",
+    "Malenkov",
     "MiG-15",
     "MiG-21",
     "Nimitz",
@@ -7411,10 +7443,12 @@
     "The 5th of November"
   ],
   "Deaf People": [
+    "Alexander Graham Bell",
     "Beethoven",
+    "Francisco Goya",
     "Helen Keller",
-    "Marlee Matlin",
-    "Nyle DiMarco"
+    "Nyle DiMarco",
+    "Thomas Edison"
   ],
   "Demigods": [
     "Achilles",
@@ -8930,8 +8964,8 @@
     "Rank"
   ],
   "Ends with ANN": [
-    "Clara Schumann",
-    "Eichmann"
+    "Adolf Eichmann",
+    "Clara Schumann"
   ],
   "Ends with ANO": [
     "Marciano",
@@ -9695,6 +9729,7 @@
     "Dog",
     "Hot Dog",
     "Hound Dog",
+    "Laika, Space Dog",
     "To Say Nothing of the Dog"
   ],
   "Ends with DOM": [
@@ -9728,7 +9763,7 @@
     "Barbados"
   ],
   "Ends with DOT": [
-    "Bardot"
+    "Brigitte Bardot"
   ],
   "Ends with DOW": [
     "Black Widow",
@@ -9934,6 +9969,7 @@
     "Nothing to fear but fear itself"
   ],
   "Ends with ELL": [
+    "Alexander Graham Bell",
     "Bell",
     "Billy Mitchell",
     "Charles Taze Russell",
@@ -10741,7 +10777,6 @@
     "Pao de Queijo"
   ],
   "Ends with IKA": [
-    "Laika",
     "Tanganyika"
   ],
   "Ends with IKE": [
@@ -10813,7 +10848,8 @@
     "China",
     "French Indochina",
     "Katrina",
-    "Nina"
+    "Nina",
+    "Syria Palaestina"
   ],
   "Ends with INC": [
     "Monsters Inc"
@@ -10838,6 +10874,7 @@
     "Palestine",
     "Palpatine",
     "Pine",
+    "Polio Vaccine",
     "Poutine",
     "Red Wine",
     "Rhine",
@@ -10848,7 +10885,6 @@
     "The Russian Invasion of Ukraine",
     "The Time Machine",
     "Ukraine",
-    "Vaccine",
     "White Wine",
     "Wine",
     "Wolverine"
@@ -11357,7 +11393,7 @@
     "Zhou Enlai"
   ],
   "Ends with LAN": [
-    "Dylan",
+    "Bob Dylan",
     "Ferdinand Magellan",
     "Flan",
     "Milan",
@@ -11503,7 +11539,6 @@
     "Graf Zeppelin",
     "Green Goblin",
     "Joseph Stalin",
-    "Marlee Matlin",
     "The Discovery of Penicillin",
     "Violin",
     "Zeppelin"
@@ -12631,6 +12666,9 @@
   "Ends with OWY": [
     "Kotlet Schabowy"
   ],
+  "Ends with OYA": [
+    "Francisco Goya"
+  ],
   "Ends with OYD": [
     "John Boyd"
   ],
@@ -13214,6 +13252,7 @@
     "Pisco"
   ],
   "Ends with SEA": [
+    "North Sea",
     "Tales from Earthsea",
     "The Old Man and the Sea"
   ],
@@ -13642,7 +13681,7 @@
     "Hernán Cortés"
   ],
   "Ends with UAC": [
-    "Kerouac"
+    "Jack Kerouac"
   ],
   "Ends with UAI": [
     "Kauai"
@@ -16640,6 +16679,7 @@
     "Triumph of the Will"
   ],
   "Inventors": [
+    "Alexander Graham Bell",
     "Bell",
     "Da Vinci",
     "Edison",
@@ -16882,6 +16922,7 @@
     "Charlie Parker",
     "Duke Ellington",
     "Ella Fitzgerald",
+    "Jazz",
     "John Coltrane",
     "Louis Armstrong",
     "Miles Davis",
@@ -17286,6 +17327,7 @@
     "Sulawesi",
     "Sumatra",
     "Syria",
+    "Syria Palaestina",
     "Taiwan",
     "Tajikistan",
     "Tambora",
@@ -17696,6 +17738,7 @@
     "K9",
     "Killer Whale",
     "King Kong",
+    "Laika, Space Dog",
     "Lion",
     "Livyatan",
     "Mammoth",
@@ -17955,8 +17998,8 @@
     "AIDS",
     "Birth Control Pill",
     "Crack Epidemic",
-    "Thalidomide Scandal",
-    "Vaccine"
+    "Polio Vaccine",
+    "Thalidomide Scandal"
   ],
   "Medieval Buildings": [
     "Alhambra",
@@ -18010,10 +18053,12 @@
     "Abu Bakr",
     "Achilles",
     "Adams",
+    "Adolf Eichmann",
     "Agent 47",
     "Agent Smith",
     "Akhenaten",
     "Aladdin",
+    "Alexander Graham Bell",
     "Alexander the Great",
     "Ali ibn Abi Talib",
     "Andrea Bocelli",
@@ -18045,6 +18090,7 @@
     "Billy Mitchell",
     "Bismarck",
     "Black Panther",
+    "Bob Dylan",
     "Bodhidharma",
     "Bowser",
     "Brando",
@@ -18101,12 +18147,10 @@
     "Drake",
     "Du Fu",
     "Duke Ellington",
-    "Dylan",
     "Edison",
     "Edward III",
     "Edward Jenner",
     "Edward VI",
-    "Eichmann",
     "Einstein",
     "Eisenhower",
     "Elvis",
@@ -18120,6 +18164,7 @@
     "Flash",
     "Flash Gordon",
     "Ford",
+    "Francisco Goya",
     "Francisco Pizarro",
     "Frankenstein",
     "Franklin D. Roosevelt",
@@ -18174,6 +18219,7 @@
     "Iron Man",
     "Isidor Straus",
     "J.F.C. Fuller",
+    "Jack Kerouac",
     "Jackson",
     "James",
     "James the Less",
@@ -18208,7 +18254,6 @@
     "Justin Bieber",
     "Kennedy",
     "Kepler",
-    "Kerouac",
     "Khan",
     "King Lear",
     "Kirk",
@@ -18426,8 +18471,8 @@
     "1972 Presidential Election",
     "1989 Chinese Protests",
     "AIDS",
+    "Adolf Eichmann",
     "Alabama",
-    "Bardot",
     "Battle of Dien Bien Phu",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
@@ -18437,8 +18482,10 @@
     "Berlin",
     "Bernie Goetz",
     "Birth Control Pill",
+    "Bob Dylan",
     "Brando",
     "Bridge on the River Kwai",
+    "Brigitte Bardot",
     "Budapest",
     "Buddy Holly",
     "California Baseball",
@@ -18453,8 +18500,6 @@
     "Dacron",
     "Davy Crockett",
     "Doris Day",
-    "Dylan",
-    "Eichmann",
     "Einstein",
     "Eisenhower",
     "Entebbe Hijacking",
@@ -18462,15 +18507,15 @@
     "H-bomb",
     "Homeless Veterans Crisis",
     "Iranian Revolution",
+    "Jack Kerouac",
     "Joe DiMaggio",
     "Joe McCarthy",
     "Johnnie Ray",
     "Joseph Stalin",
     "Juan Peron",
     "Kennedy",
-    "Kerouac",
     "Krushchev",
-    "Laika",
+    "Laika, Space Dog",
     "Lawrence of Arabia",
     "Lebanon",
     "Liberace",
@@ -18488,6 +18533,7 @@
     "Payola Scandal",
     "Peter Pan",
     "Peyton Place",
+    "Polio Vaccine",
     "Profumo Affair",
     "Prokofiev",
     "Psycho",
@@ -18516,7 +18562,6 @@
     "Toscanini",
     "Truman",
     "U-2 Spy Plane Incident",
-    "Vaccine",
     "Watergate",
     "We didn't start the fire",
     "Wheel of Fortune",
@@ -19326,7 +19371,6 @@
     "Luca",
     "Madagascar",
     "Manhattan",
-    "Marlee Matlin",
     "Mary Poppins",
     "Mary Poppins Returns",
     "Meet the Robinsons",
@@ -24040,6 +24084,7 @@
     "Billie Holiday",
     "Billie Jean",
     "Black",
+    "Bob Dylan",
     "Bohemian Rhapsody",
     "Boston",
     "Bridge",
@@ -24069,7 +24114,6 @@
     "Drum",
     "Duke Ellington",
     "Dumbo",
-    "Dylan",
     "Ella Fitzgerald",
     "Elvis",
     "Encanto",
@@ -24203,6 +24247,7 @@
     "Thriller",
     "Tick, Tick... Boom!",
     "Tosca",
+    "Toscanini",
     "Tune",
     "Under the Bridge",
     "Usher",
@@ -24291,6 +24336,7 @@
     "The Greatest Showman",
     "The Hunchback of Notre Dame",
     "The Jungle Book",
+    "The King and I",
     "The Lion King",
     "The Little Mermaid",
     "The Many Adventures of Winnie the Pooh",
@@ -24326,6 +24372,7 @@
     "Berlin",
     "Beyonce",
     "Billie Holiday",
+    "Bob Dylan",
     "Boston",
     "Buddy Holly",
     "Charlie Parker",
@@ -24335,7 +24382,6 @@
     "Doris Day",
     "Drake",
     "Duke Ellington",
-    "Dylan",
     "Ella Fitzgerald",
     "Elvis",
     "Fanny Mendelssohn",
@@ -24361,6 +24407,7 @@
     "Stevie Wonder",
     "The Police",
     "Thelonious Monk",
+    "Toscanini",
     "Usher",
     "Xia",
     "Zeppelin"
@@ -24610,7 +24657,6 @@
     "Cyrus the Great",
     "Edward III",
     "Edward VI",
-    "Eichmann",
     "Eisenhower",
     "Elizabeth",
     "Elizabeth I",
@@ -24637,7 +24683,6 @@
     "James",
     "Jane Seymour",
     "Jefferson",
-    "Joe McCarthy",
     "John",
     "John of Bohemia",
     "Johnson",
@@ -24890,6 +24935,7 @@
   ],
   "Oceans": [
     "North Atlantic",
+    "North Sea",
     "South Pacific"
   ],
   "Oligocene Epoch": [
@@ -24907,6 +24953,7 @@
     "Emu",
     "Goofy",
     "Kiwi",
+    "Laika, Space Dog",
     "Macaw",
     "Mickey Mouse",
     "Mothra",
@@ -25010,7 +25057,6 @@
     "La La Land",
     "Lawrence of Arabia",
     "Little Women",
-    "Marlee Matlin",
     "Midnight Cowboy",
     "Million Dollar Baby",
     "Moonlight",
@@ -25065,6 +25111,13 @@
   "Pacific Islands": [
     "Midway Island"
   ],
+  "Painters": [
+    "Da Vinci",
+    "Francisco Goya",
+    "Mary Cassatt",
+    "Michelangelo",
+    "Rosa Bonheur"
+  ],
   "Paleocene Epoch": [
     "Plesiadapis",
     "Titanoboa"
@@ -25109,10 +25162,12 @@
     "Achilles",
     "Ada Lovelace",
     "Adams",
+    "Adolf Eichmann",
     "Agent 47",
     "Agent Smith",
     "Akhenaten",
     "Aladdin",
+    "Alexander Graham Bell",
     "Alexander the Great",
     "Ali ibn Abi Talib",
     "Andrea Bocelli",
@@ -25160,10 +25215,12 @@
     "Bismarck",
     "Black Panther",
     "Black Widow",
+    "Bob Dylan",
     "Bodhidharma",
     "Bowser",
     "Brando",
     "Bravo",
+    "Brigitte Bardot",
     "Brutus",
     "Buchanan",
     "Buddy Holly",
@@ -25232,12 +25289,10 @@
     "Drake",
     "Du Fu",
     "Duke Ellington",
-    "Dylan",
     "Edison",
     "Edward III",
     "Edward Jenner",
     "Edward VI",
-    "Eichmann",
     "Einstein",
     "Eisenhower",
     "Elizabeth",
@@ -25263,6 +25318,7 @@
     "Flash Gordon",
     "Florence Nightingale",
     "Ford",
+    "Francisco Goya",
     "Francisco Pizarro",
     "Frankenstein",
     "Franklin D. Roosevelt",
@@ -25326,6 +25382,7 @@
     "Isidor Straus",
     "Ivy",
     "J.F.C. Fuller",
+    "Jack Kerouac",
     "Jackson",
     "James",
     "James the Less",
@@ -25366,7 +25423,6 @@
     "Justin Bieber",
     "Kennedy",
     "Kepler",
-    "Kerouac",
     "Khan",
     "Kirk",
     "Kobe",
@@ -25410,7 +25466,6 @@
     "Mario",
     "Mark Antony",
     "Mark David Chapman",
-    "Marlee Matlin",
     "Martin Luther",
     "Mary",
     "Mary Baker Eddy",
@@ -26242,6 +26297,7 @@
     "Switzerland",
     "Sydney",
     "Syria",
+    "Syria Palaestina",
     "Tahiti",
     "Taiwan",
     "Tajikistan",
@@ -26739,6 +26795,7 @@
     "K9",
     "Kiwi",
     "Koko",
+    "Laika, Space Dog",
     "Lion",
     "Lobster",
     "Magpie",
@@ -26796,7 +26853,9 @@
     "Achilles",
     "Ada Lovelace",
     "Adams",
+    "Adolf Eichmann",
     "Akhenaten",
+    "Alexander Graham Bell",
     "Alexander the Great",
     "Ali ibn Abi Talib",
     "Andrea Bocelli",
@@ -26828,8 +26887,10 @@
     "Billie Holiday",
     "Billy Mitchell",
     "Bismarck",
+    "Bob Dylan",
     "Bodhidharma",
     "Brando",
+    "Brigitte Bardot",
     "Brutus",
     "Buchanan",
     "Buddy Holly",
@@ -26884,12 +26945,10 @@
     "Du Fu",
     "Duke",
     "Duke Ellington",
-    "Dylan",
     "Edison",
     "Edward III",
     "Edward Jenner",
     "Edward VI",
-    "Eichmann",
     "Einstein",
     "Eisenhower",
     "Elizabeth",
@@ -26911,6 +26970,7 @@
     "Fillmore",
     "Florence Nightingale",
     "Ford",
+    "Francisco Goya",
     "Francisco Pizarro",
     "Franklin D. Roosevelt",
     "Frederick the Great",
@@ -26960,6 +27020,7 @@
     "Isabella Bird",
     "Isidor Straus",
     "J.F.C. Fuller",
+    "Jack Kerouac",
     "Jackson",
     "James",
     "James the Less",
@@ -26994,7 +27055,6 @@
     "Justin Bieber",
     "Kennedy",
     "Kepler",
-    "Kerouac",
     "Khan",
     "King",
     "Kobe",
@@ -27033,7 +27093,6 @@
     "Marilyn Monroe",
     "Mark Antony",
     "Mark David Chapman",
-    "Marlee Matlin",
     "Martin Luther",
     "Mary",
     "Mary Baker Eddy",
@@ -27646,7 +27705,6 @@
     "Narcissus the Wrestler",
     "Nero",
     "Ostia Antica",
-    "Palestine",
     "Pantheon",
     "Pilum",
     "Pompeii",
@@ -27657,6 +27715,7 @@
     "Rome",
     "Scutum",
     "Spatha",
+    "Syria Palaestina",
     "Tiberius",
     "Trajan",
     "Varus, give me back my legions",
@@ -28191,6 +28250,7 @@
     "Challenger"
   ],
   "Scientists": [
+    "Alexander Graham Bell",
     "Aristotle",
     "Avicenna",
     "Copernicus",
@@ -29139,6 +29199,9 @@
     "Ada Lovelace",
     "Adams"
   ],
+  "Starts with ADO": [
+    "Adolf Eichmann"
+  ],
   "Starts with AFF": [
     "Affogato"
   ],
@@ -29191,6 +29254,7 @@
     "Alderney"
   ],
   "Starts with ALE": [
+    "Alexander Graham Bell",
     "Alexander the Great",
     "Alexandria"
   ],
@@ -29520,7 +29584,6 @@
   ],
   "Starts with BAR": [
     "Barbados",
-    "Bardot",
     "Bari",
     "Barszcz",
     "Bartholomew"
@@ -29713,6 +29776,7 @@
     "Boaty McBoatface"
   ],
   "Starts with BOB": [
+    "Bob Dylan",
     "Bobsled"
   ],
   "Starts with BOD": [
@@ -29791,6 +29855,7 @@
     "Brief Encounter",
     "Brig",
     "Brigadeiro",
+    "Brigitte Bardot",
     "Brioche",
     "Brisket",
     "Britannia",
@@ -30513,9 +30578,6 @@
   "Starts with DUT": [
     "Dutch Guiana"
   ],
-  "Starts with DYL": [
-    "Dylan"
-  ],
   "Starts with E.T": [
     "E.T."
   ],
@@ -30562,9 +30624,6 @@
   ],
   "Starts with EGY": [
     "Egypt"
-  ],
-  "Starts with EIC": [
-    "Eichmann"
   ],
   "Starts with EIF": [
     "Eiffel Tower"
@@ -30863,6 +30922,7 @@
     "Fram",
     "France",
     "Francesinha",
+    "Francisco Goya",
     "Francisco Pizarro",
     "Frankenstein",
     "Frankfort",
@@ -31566,6 +31626,7 @@
     "Jabberwocky"
   ],
   "Starts with JAC": [
+    "Jack Kerouac",
     "Jackie Brown",
     "Jackson"
   ],
@@ -31783,9 +31844,6 @@
   "Starts with KEP": [
     "Kepler"
   ],
-  "Starts with KER": [
-    "Kerouac"
-  ],
   "Starts with KET": [
     "Ketchup",
     "Ketchup Chips"
@@ -31937,7 +31995,7 @@
     "Lady and the Tramp"
   ],
   "Starts with LAI": [
-    "Laika"
+    "Laika, Space Dog"
   ],
   "Starts with LAK": [
     "Laker",
@@ -32228,7 +32286,6 @@
     "Mark Antony",
     "Mark David Chapman",
     "Marker",
-    "Marlee Matlin",
     "Marriott",
     "Mars",
     "Marseille",
@@ -32613,6 +32670,7 @@
     "North Atlantic",
     "North Korea",
     "North Macedonia",
+    "North Sea",
     "North Vietnam",
     "North Yemen",
     "Northern Rhodesia",
@@ -33033,6 +33091,7 @@
     "Poland",
     "Polar Bear",
     "Police Car",
+    "Polio Vaccine",
     "Polk",
     "Polo",
     "Polyester"
@@ -33915,7 +33974,8 @@
     "Syngman Rhee"
   ],
   "Starts with SYR": [
-    "Syria"
+    "Syria",
+    "Syria Palaestina"
   ],
   "Starts with SÉB": [
     "Sébastien Le Prestre de Vauban"
@@ -34588,9 +34648,6 @@
   ],
   "Starts with UZB": [
     "Uzbekistan"
-  ],
-  "Starts with VAC": [
-    "Vaccine"
   ],
   "Starts with VAD": [
     "Vader"
@@ -35307,11 +35364,11 @@
     "Gates",
     "H-bomb",
     "Jobs",
-    "Laika",
+    "Laika, Space Dog",
     "Musk",
+    "Polio Vaccine",
     "Sputnik",
-    "Television",
-    "Vaccine"
+    "Television"
   ],
   "Terrorist Attacks": [
     "10/7",
@@ -35524,6 +35581,7 @@
     "Alabama",
     "Aladdin",
     "Alaska",
+    "Alexander Graham Bell",
     "Alice in Wonderland",
     "Alien",
     "Alien 3",
@@ -35597,6 +35655,7 @@
     "Black Hawk",
     "Black Panther",
     "Blade Runner",
+    "Bob Dylan",
     "Boeing",
     "Boise",
     "Bolt",
@@ -35709,7 +35768,6 @@
     "Duke Ellington",
     "Dumbo",
     "Dune",
-    "Dylan",
     "E.T.",
     "Easy Rider",
     "Edge of Tomorrow",
@@ -35850,6 +35908,7 @@
     "It's a Wonderful Life",
     "Ivy",
     "Ivy Mike",
+    "Jack Kerouac",
     "Jackie Brown",
     "Jackson",
     "James",
@@ -35877,7 +35936,6 @@
     "Kate & Leopold",
     "Katrina",
     "Kennedy",
-    "Kerouac",
     "Ketchup",
     "Key West",
     "Kill Bill: Volume 1",
@@ -35924,14 +35982,12 @@
     "Madame C.J. Walker",
     "Madison",
     "Madonna",
-    "Mafia",
     "Manhattan",
     "Mantle",
     "Marciano",
     "Marilyn Monroe",
     "Mariner",
     "Mark David Chapman",
-    "Marlee Matlin",
     "Martha's Vineyard",
     "Mary",
     "Mary Baker Eddy",
@@ -36025,6 +36081,7 @@
     "Pocahontas",
     "Poe",
     "Poker",
+    "Polio Vaccine",
     "Polk",
     "Poseidon",
     "Primer",
@@ -36286,7 +36343,6 @@
     "United States",
     "Up",
     "Usher",
-    "Vaccine",
     "Van Buren",
     "Vantage Point",
     "Velma",
@@ -37036,7 +37092,6 @@
     "Aioli",
     "Airbus",
     "Baguette",
-    "Bardot",
     "Battle of Agincourt",
     "Battle of Crécy",
     "Battle of Poitiers",
@@ -37047,6 +37102,7 @@
     "Belle",
     "Bordeaux",
     "Bouillabaisse",
+    "Brigitte Bardot",
     "Brioche",
     "Bucentaure",
     "Burgundy",
@@ -37137,6 +37193,7 @@
     "Georgia"
   ],
   "Things German": [
+    "Adolf Eichmann",
     "Airbus",
     "Anne of Cleves",
     "Apfelstrudel",
@@ -37153,7 +37210,6 @@
     "Charlemagne",
     "Clara Schumann",
     "East Germany",
-    "Eichmann",
     "Einstein",
     "Fanny Mendelssohn",
     "Frederick the Great",
@@ -37413,6 +37469,7 @@
     "Luigi",
     "MSC Meraviglia",
     "Madame Butterfly",
+    "Mafia",
     "Marco Polo",
     "Marinara",
     "Mario",
@@ -37948,6 +38005,7 @@
     "Spartacus",
     "Spatha",
     "Sulla",
+    "Syria Palaestina",
     "The Roman Empire",
     "The Seven Magnificent Gladiators",
     "Third Servile War",
@@ -37973,7 +38031,7 @@
     "Kotleti",
     "Krushchev",
     "Kvass",
-    "Laika",
+    "Laika, Space Dog",
     "Malenkov",
     "Medovik",
     "MiG",
@@ -38024,6 +38082,7 @@
     "Western Samoa"
   ],
   "Things Scottish": [
+    "Alexander Graham Bell",
     "Brave",
     "Braveheart",
     "John Knox",
@@ -38077,6 +38136,7 @@
     "Ferdinand Magellan",
     "Flan",
     "Formentera",
+    "Francisco Goya",
     "Francisco Pizarro",
     "Fuerteventura",
     "Gazpacho",
@@ -39382,6 +39442,7 @@
     "Billie Holiday",
     "Billie Jean",
     "Black Widow",
+    "Brigitte Bardot",
     "Buttercup",
     "Calamity Jane",
     "Carrie",
@@ -39439,7 +39500,6 @@
     "Madonna",
     "Marie Curie",
     "Marilyn Monroe",
-    "Marlee Matlin",
     "Mary",
     "Mary Baker Eddy",
     "Mary Cassatt",
@@ -39448,6 +39508,7 @@
     "Mary Shelley",
     "Matilda",
     "Moana",
+    "Monroe",
     "Mystique",
     "Nicole Brown Simpson",
     "Olive",
@@ -39570,6 +39631,7 @@
     "Helen Keller",
     "Homer",
     "J.F.C. Fuller",
+    "Jack Kerouac",
     "Jane Austen",
     "Li Bai",
     "Louisa May Alcott",

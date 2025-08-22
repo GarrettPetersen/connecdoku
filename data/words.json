@@ -133,6 +133,7 @@
   ],
   "1955 World Series": [
     "1950s",
+    "1955",
     "20th Century",
     "Ends with IES",
     "Events",
@@ -144,6 +145,7 @@
   ],
   "1972 Presidential Election": [
     "1970s",
+    "1972",
     "20th Century",
     "Ends with ION",
     "Mentioned in We Didn't Start the Fire",
@@ -562,6 +564,18 @@
     "Things American",
     "US Presidents"
   ],
+  "Adolf Eichmann": [
+    "1940s",
+    "1960s",
+    "20th Century",
+    "Ends with ANN",
+    "Men",
+    "Mentioned in We Didn't Start the Fire",
+    "People",
+    "Real People",
+    "Starts with ADO",
+    "Things German"
+  ],
   "Affogato": [
     "Desserts",
     "Ends with ATO",
@@ -685,7 +699,6 @@
     "Starts with AKR"
   ],
   "Alabama": [
-    "1960s",
     "Ends with AMA",
     "Locations in North America",
     "Mentioned in We Didn't Start the Fire",
@@ -782,6 +795,21 @@
     "Place Names",
     "Starts with ALD",
     "Things British"
+  ],
+  "Alexander Graham Bell": [
+    "1870s",
+    "1880s",
+    "19th Century",
+    "Deaf People",
+    "Ends with ELL",
+    "Inventors",
+    "Men",
+    "People",
+    "Real People",
+    "Scientists",
+    "Starts with ALE",
+    "Things American",
+    "Things Scottish"
   ],
   "Alexander the Great": [
     "4th Century BC",
@@ -2732,14 +2760,6 @@
     "Starts with BAR",
     "Things Barbadian"
   ],
-  "Bardot": [
-    "1950s",
-    "20th Century",
-    "Ends with DOT",
-    "Mentioned in We Didn't Start the Fire",
-    "Starts with BAR",
-    "Things French"
-  ],
   "Bari": [
     "Cities",
     "Cities in Italy",
@@ -3028,6 +3048,7 @@
   "Bay of Pigs": [
     "1960s",
     "20th Century",
+    "Bodies of Water",
     "Cold War",
     "Ends with IGS",
     "Events",
@@ -3282,7 +3303,9 @@
     "Things Belarusian"
   ],
   "Belgian Congo": [
+    "1900s",
     "1960s",
+    "20th Century",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -4019,6 +4042,20 @@
     "Starts with BOA",
     "Things British"
   ],
+  "Bob Dylan": [
+    "1960s",
+    "1970s",
+    "20th Century",
+    "Ends with LAN",
+    "Men",
+    "Mentioned in We Didn't Start the Fire",
+    "Music",
+    "Musicians",
+    "People",
+    "Real People",
+    "Starts with BOB",
+    "Things American"
+  ],
   "Bobsled": [
     "Ends with LED",
     "Sports",
@@ -4309,6 +4346,7 @@
   "Brando": [
     "1950s",
     "20th Century",
+    "Actors",
     "Ends with NDO",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -4489,6 +4527,18 @@
     "Foods",
     "Starts with BRI",
     "Things Brazilian"
+  ],
+  "Brigitte Bardot": [
+    "1950s",
+    "20th Century",
+    "Actors",
+    "Ends with DOT",
+    "Mentioned in We Didn't Start the Fire",
+    "People",
+    "Real People",
+    "Starts with BRI",
+    "Things French",
+    "Women"
   ],
   "Brioche": [
     "Breads",
@@ -5211,6 +5261,7 @@
   "Campanella": [
     "1950s",
     "20th Century",
+    "Athletes",
     "Ends with LLA",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -5612,7 +5663,6 @@
     "Things Japanese"
   ],
   "Castro": [
-    "1960s",
     "20th Century",
     "Ends with TRO",
     "Men",
@@ -6227,8 +6277,6 @@
     "Things Argentine"
   ],
   "China": [
-    "1960s",
-    "1970s",
     "BRICS Nations",
     "Countries",
     "Countries in Asia",
@@ -6929,8 +6977,8 @@
     "Things Roman"
   ],
   "Communist Bloc": [
-    "1960s",
     "20th Century",
+    "Cold War",
     "Countries",
     "Ends with LOC",
     "Mentioned in We Didn't Start the Fire",
@@ -7326,7 +7374,6 @@
     "Types of Animals"
   ],
   "Crack Epidemic": [
-    "1980",
     "1980s",
     "20th Century",
     "Ends with MIC",
@@ -7683,6 +7730,7 @@
     "Ends with NCI",
     "Inventors",
     "Men",
+    "Painters",
     "People",
     "Real People",
     "Renaissance Figures",
@@ -9001,20 +9049,6 @@
     "Starts with DUT",
     "Things Guyanese"
   ],
-  "Dylan": [
-    "1960s",
-    "1970s",
-    "20th Century",
-    "Ends with LAN",
-    "Men",
-    "Mentioned in We Didn't Start the Fire",
-    "Music",
-    "Musicians",
-    "People",
-    "Real People",
-    "Starts with DYL",
-    "Things American"
-  ],
   "E.T.": [
     "1980s",
     "1982",
@@ -9252,18 +9286,6 @@
     "Starts with EGY",
     "Things Egyptian",
     "WWII Allied Powers"
-  ],
-  "Eichmann": [
-    "1960s",
-    "20th Century",
-    "Ends with ANN",
-    "Men",
-    "Mentioned in We Didn't Start the Fire",
-    "National Leaders",
-    "People",
-    "Real People",
-    "Starts with EIC",
-    "Things German"
   ],
   "Eiffel Tower": [
     "1880s",
@@ -10768,6 +10790,22 @@
     "Foods",
     "Starts with FRA",
     "Things Portuguese"
+  ],
+  "Francisco Goya": [
+    "1790s",
+    "1800s",
+    "1810s",
+    "18th Century",
+    "19th Century",
+    "Artists",
+    "Deaf People",
+    "Ends with OYA",
+    "Men",
+    "Painters",
+    "People",
+    "Real People",
+    "Starts with FRA",
+    "Things Spanish"
   ],
   "Francisco Pizarro": [
     "16th Century",
@@ -14656,6 +14694,7 @@
   ],
   "Iranian Revolution": [
     "1970s",
+    "1979",
     "20th Century",
     "Ends with ION",
     "Events",
@@ -14939,6 +14978,18 @@
     "Poems",
     "Starts with JAB"
   ],
+  "Jack Kerouac": [
+    "1950s",
+    "20th Century",
+    "Ends with UAC",
+    "Men",
+    "Mentioned in We Didn't Start the Fire",
+    "People",
+    "Real People",
+    "Starts with JAC",
+    "Things American",
+    "Writers"
+  ],
   "Jackie Brown": [
     "1990s",
     "1997",
@@ -15162,6 +15213,7 @@
   ],
   "Jazz": [
     "Ends with AZZ",
+    "Jazz",
     "Music",
     "NBA Teams",
     "Starts with JAZ"
@@ -15373,10 +15425,10 @@
   "Joe McCarthy": [
     "1950s",
     "20th Century",
+    "Cold War",
     "Ends with THY",
     "Men",
     "Mentioned in We Didn't Start the Fire",
-    "National Leaders",
     "People",
     "Real People",
     "Starts with JOE",
@@ -15680,7 +15732,9 @@
     "Things Chinese"
   ],
   "Juan Peron": [
-    "1960s",
+    "1940s",
+    "1950s",
+    "1970s",
     "20th Century",
     "Ends with RON",
     "Men",
@@ -16126,17 +16180,6 @@
     "Space Telescopes",
     "Starts with KEP",
     "Things German"
-  ],
-  "Kerouac": [
-    "1960s",
-    "20th Century",
-    "Ends with UAC",
-    "Men",
-    "Mentioned in We Didn't Start the Fire",
-    "People",
-    "Real People",
-    "Starts with KER",
-    "Things American"
   ],
   "Ketchup": [
     "Condiments",
@@ -16882,11 +16925,15 @@
     "Starts with LAD",
     "Things American"
   ],
-  "Laika": [
+  "Laika, Space Dog": [
     "1950s",
     "20th Century",
-    "Ends with IKA",
+    "Animals",
+    "Ends with DOG",
+    "Mammals",
     "Mentioned in We Didn't Start the Fire",
+    "Omnivores",
+    "Real Animals",
     "Starts with LAI",
     "Technology",
     "Things Russian"
@@ -17113,8 +17160,6 @@
     "Things That Fly"
   ],
   "Lebanon": [
-    "1970s",
-    "1980s",
     "Countries",
     "Countries in Asia",
     "Ends with NON",
@@ -18203,12 +18248,11 @@
     "Starts with MAD"
   ],
   "Mafia": [
-    "1960s",
     "20th Century",
     "Ends with FIA",
     "Mentioned in We Didn't Start the Fire",
     "Starts with MAF",
-    "Things American"
+    "Things Italian"
   ],
   "Magazine": [
     "Checkout Items",
@@ -18320,6 +18364,7 @@
   "Malenkov": [
     "1950s",
     "20th Century",
+    "Cold War",
     "Ends with KOV",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -18523,7 +18568,9 @@
   ],
   "Marilyn Monroe": [
     "1950s",
+    "1960s",
     "20th Century",
+    "Actors",
     "Ends with ROE",
     "Mentioned in We Didn't Start the Fire",
     "People",
@@ -18597,22 +18644,6 @@
     "Starts with MAR",
     "Stationery",
     "Writing Instruments"
-  ],
-  "Marlee Matlin": [
-    "1980s",
-    "1990s",
-    "2000s",
-    "20th Century",
-    "21st Century",
-    "Deaf People",
-    "Ends with LIN",
-    "Movies",
-    "Oscar Winners",
-    "People",
-    "Real People",
-    "Starts with MAR",
-    "Things American",
-    "Women"
   ],
   "Marriott": [
     "Ends with OTT",
@@ -18701,6 +18732,7 @@
     "19th Century",
     "Artists",
     "Ends with ATT",
+    "Painters",
     "People",
     "Real People",
     "Starts with MAR",
@@ -19299,6 +19331,7 @@
     "Artists",
     "Ends with ELO",
     "Men",
+    "Painters",
     "People",
     "Real People",
     "Renaissance Figures",
@@ -19728,7 +19761,10 @@
   "Monroe": [
     "1810s",
     "1820s",
+    "1950s",
+    "1960s",
     "19th Century",
+    "Actors",
     "Ends with ROE",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -19737,7 +19773,8 @@
     "Real People",
     "Starts with MON",
     "Things American",
-    "US Presidents"
+    "US Presidents",
+    "Women"
   ],
   "Monsters Inc": [
     "3D Animated Films",
@@ -20399,6 +20436,7 @@
     "Things American"
   ],
   "Nasser": [
+    "1950s",
     "1960s",
     "20th Century",
     "Ends with SER",
@@ -20845,6 +20883,7 @@
     "World War II"
   ],
   "North Atlantic": [
+    "Bodies of Water",
     "Ends with TIC",
     "Oceans",
     "Place Names",
@@ -20853,7 +20892,7 @@
   ],
   "North Korea": [
     "1950s",
-    "1960s",
+    "20th Century",
     "Cold War",
     "Countries",
     "Countries in Asia",
@@ -20878,6 +20917,12 @@
     "Place Names",
     "Starts with NOR",
     "Things Macedonian"
+  ],
+  "North Sea": [
+    "Bodies of Water",
+    "Ends with SEA",
+    "Oceans",
+    "Starts with NOR"
   ],
   "North Vietnam": [
     "20th Century",
@@ -21872,14 +21917,12 @@
     "Things Micronesian"
   ],
   "Palestine": [
-    "1940s",
-    "1950s",
+    "20th Century",
     "Breakaway Regions",
     "Ends with INE",
     "Locations in Asia",
     "Mentioned in We Didn't Start the Fire",
     "Place Names",
-    "Roman Empire",
     "Starts with PAL",
     "Things Palestinian"
   ],
@@ -23186,6 +23229,15 @@
     "Ends with CAR",
     "Starts with POL"
   ],
+  "Polio Vaccine": [
+    "1950s",
+    "Ends with INE",
+    "Medical Terms",
+    "Mentioned in We Didn't Start the Fire",
+    "Starts with POL",
+    "Technology",
+    "Things American"
+  ],
   "Polk": [
     "1840s",
     "19th Century",
@@ -24245,7 +24297,6 @@
     "1960s",
     "1970s",
     "20th Century",
-    "21st Century",
     "Blind People",
     "Ends with LES",
     "Men",
@@ -25204,6 +25255,7 @@
     "19th Century",
     "Artists",
     "Ends with EUR",
+    "Painters",
     "People",
     "Real People",
     "Starts with ROS",
@@ -27339,6 +27391,7 @@
     "1950s",
     "20th Century",
     "Adventure Stories",
+    "Bodies of Water",
     "Drama Stories",
     "Ends with FIC",
     "Mentioned in We Didn't Start the Fire",
@@ -28465,6 +28518,8 @@
     "Warner Bros. Characters"
   ],
   "Syngman Rhee": [
+    "1940s",
+    "1950s",
     "1960s",
     "20th Century",
     "Ends with HEE",
@@ -28488,6 +28543,15 @@
     "Republics",
     "Starts with SYR",
     "Things Syrian"
+  ],
+  "Syria Palaestina": [
+    "2nd Century",
+    "Ends with INA",
+    "Locations in Asia",
+    "Place Names",
+    "Roman Empire",
+    "Starts with SYR",
+    "Things Roman"
   ],
   "Sébastien Le Prestre de Vauban": [
     "17th Century",
@@ -29139,7 +29203,7 @@
     "WWII Axis Powers"
   ],
   "Thalidomide Scandal": [
-    "1960s",
+    "1950s",
     "20th Century",
     "Ends with DAL",
     "Events",
@@ -30911,6 +30975,7 @@
     "Ends with D I",
     "Mentioned in We Didn't Start the Fire",
     "Movies",
+    "Musical Films",
     "Starts with THE",
     "Things American"
   ],
@@ -32908,6 +32973,7 @@
   "Thomas Edison": [
     "19th Century",
     "20th Century",
+    "Deaf People",
     "Ends with SON",
     "Inventors",
     "Men",
@@ -33425,6 +33491,8 @@
     "Ends with INI",
     "Men",
     "Mentioned in We Didn't Start the Fire",
+    "Music",
+    "Musicians",
     "People",
     "Real People",
     "Starts with TOS",
@@ -34328,16 +34396,6 @@
     "Roman Numerals",
     "Superheroes"
   ],
-  "Vaccine": [
-    "1950s",
-    "1960s",
-    "Ends with INE",
-    "Medical Terms",
-    "Mentioned in We Didn't Start the Fire",
-    "Starts with VAC",
-    "Technology",
-    "Things American"
-  ],
   "Vader": [
     "Ends with DER",
     "Star Wars Universe",
@@ -34974,6 +35032,7 @@
   "Watergate": [
     "1970s",
     "20th Century",
+    "Buildings",
     "Ends with ATE",
     "Events",
     "Mentioned in We Didn't Start the Fire",
@@ -36039,6 +36098,7 @@
   ],
   "Zhou Enlai": [
     "1960s",
+    "1970s",
     "20th Century",
     "Ends with LAI",
     "Men",
