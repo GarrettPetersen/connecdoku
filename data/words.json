@@ -740,6 +740,7 @@
   ],
   "Alaska": [
     "Ends with SKA",
+    "Locations in North America",
     "Place Names",
     "Starts with ALA",
     "Things American",
@@ -774,6 +775,8 @@
   "Albatross": [
     "Animal Species",
     "Birds",
+    "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with OSS",
@@ -1040,10 +1043,12 @@
   "Allosaurus": [
     "Animal Species",
     "Carnivores",
+    "Cretaceous Period",
     "Dinosaurs",
     "Ends with RUS",
     "Extinct Animals",
     "Jurassic Period",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Starts with ALL",
@@ -1053,6 +1058,35 @@
     "Ends with NAC",
     "Periodicals",
     "Starts with ALM"
+  ],
+  "Almond": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with OND",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Nuts",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with ALM"
+  ],
+  "Aloe": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with LOE",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with ALO"
   ],
   "Alpha": [
     "Ends with PHA",
@@ -1175,6 +1209,23 @@
     "Ends with HOR",
     "Nautical Terms",
     "Starts with ANC"
+  ],
+  "Andalgalornis": [
+    "Animal Species",
+    "Birds",
+    "Carnivores",
+    "Cenozoic Era",
+    "Dinosaurs",
+    "Ends with NIS",
+    "Extinct Animals",
+    "Flightless Birds",
+    "Miocene Epoch",
+    "Predators",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with AND",
+    "Terror Birds",
+    "Theropods"
   ],
   "Andaman": [
     "Archipelagos",
@@ -1317,6 +1368,7 @@
     "Ends with RUS",
     "Extinct Animals",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with ANK"
@@ -1470,10 +1522,16 @@
     "Starts with ANO"
   ],
   "Ant": [
+    "Animal Species",
     "Arthropods",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
     "Ends with ANT",
     "Fable Characters",
     "Insects",
+    "Mesozoic Era",
+    "Omnivores",
     "Starts with ANT"
   ],
   "Anthem of the Seas": [
@@ -1546,11 +1604,13 @@
   ],
   "Apatosaurus": [
     "Animal Species",
+    "Cretaceous Period",
     "Dinosaurs",
     "Ends with RUS",
     "Extinct Animals",
     "Herbivores",
     "Jurassic Period",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Sauropods",
@@ -1661,6 +1721,7 @@
     "Feathered Dinosaurs",
     "First Birds",
     "Jurassic Period",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Small Dinosaurs",
@@ -1711,6 +1772,7 @@
     "Hominins",
     "Mammals",
     "Miocene Epoch",
+    "Omnivores",
     "Pliocene Epoch",
     "Prehistoric Life",
     "Starts with ARD"
@@ -1749,6 +1811,7 @@
     "Ends with RUS",
     "Extinct Animals",
     "Herbivores",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Sauropods",
@@ -1799,6 +1862,8 @@
   ],
   "Arizona": [
     "Ends with ONA",
+    "Locations in North America",
+    "Place Names",
     "Starts with ARI",
     "US States"
   ],
@@ -1886,6 +1951,18 @@
     "Thriller Films",
     "Thriller Stories",
     "Time Travel Stories"
+  ],
+  "Arthropleura": [
+    "Animal Species",
+    "Arthropods",
+    "Carboniferous Period",
+    "Ends with URA",
+    "Extinct Animals",
+    "Herbivores",
+    "Paleozoic Era",
+    "Permian Period",
+    "Prehistoric Life",
+    "Starts with ART"
   ],
   "Arthur": [
     "1880s",
@@ -1976,6 +2053,21 @@
     "Presidential Speeches",
     "Starts with ASK",
     "Things American"
+  ],
+  "Asparagus": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with GUS",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with ASP",
+    "Vegetables"
   ],
   "Assassination of Caesar": [
     "1st Century BC",
@@ -2117,6 +2209,7 @@
     "Animal Species",
     "Ends with CHS",
     "Extinct Animals",
+    "Herbivores",
     "Holocene Epoch",
     "Mammals",
     "Prehistoric Life",
@@ -2167,6 +2260,7 @@
     "Extinct Animals",
     "Hominins",
     "Mammals",
+    "Omnivores",
     "Pliocene Epoch",
     "Prehistoric Life",
     "Starts with AUS"
@@ -2701,6 +2795,20 @@
     "Stories Where the Mom Dies",
     "Things American"
   ],
+  "Bamboo": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with BOO",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with BAM"
+  ],
   "Banana": [
     "Ends with ANA",
     "Foods",
@@ -2793,6 +2901,21 @@
     "Ends with ARI",
     "Starts with BAR"
   ],
+  "Barley": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with LEY",
+    "Eocene Epoch",
+    "Grains",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with BAR"
+  ],
   "Barszcz": [
     "Ends with ZCZ",
     "Foods",
@@ -2819,7 +2942,15 @@
     "Things American"
   ],
   "Basil": [
+    "Cenozoic Era",
     "Ends with SIL",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Spices & Herbs",
     "Starts with BAS"
   ],
@@ -3083,6 +3214,21 @@
     "Starts with BAT",
     "Things Mongolian"
   ],
+  "Bay Leaf": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with EAF",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with BAY"
+  ],
   "Bay of Pigs": [
     "1960s",
     "20th Century",
@@ -3135,6 +3281,7 @@
     "Animal Species",
     "Black Things",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with EAR",
     "Mammals",
@@ -3235,13 +3382,14 @@
   "Bee": [
     "Animal Species",
     "Arthropods",
+    "Cenozoic Era",
+    "Cretaceous Period",
     "Currently Living Animals",
-    "Dinosaurs",
     "Ends with BEE",
+    "Herbivores",
     "Insects",
-    "Saurischians",
+    "Mesozoic Era",
     "Starts with BEE",
-    "Theropods",
     "Things That Fly"
   ],
   "Bee Gees": [
@@ -3295,10 +3443,15 @@
     "Things German"
   ],
   "Beetle": [
+    "Animal Species",
     "Arthropods",
     "Band Namesakes",
+    "Cenozoic Era",
+    "Currently Living Animals",
     "Ends with TLE",
+    "Insects",
     "Music",
+    "Omnivores",
     "Real Animals",
     "Starts with BEE",
     "Types of Animals"
@@ -3512,6 +3665,18 @@
     "Starts with BEN",
     "Things Beninese"
   ],
+  "Bennettitales": [
+    "Cretaceous Period",
+    "Ends with LES",
+    "Extinct Animals",
+    "Extinct Plants",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Plants",
+    "Prehistoric Life",
+    "Starts with BEN",
+    "Triassic Period"
+  ],
   "Bentley": [
     "1910s",
     "20th Century",
@@ -3640,6 +3805,7 @@
     "Ends with IRD",
     "Fictional Animals",
     "Flightless Birds",
+    "Mesozoic Era",
     "Muppet Characters",
     "Puppet Characters",
     "Saurischians",
@@ -3784,6 +3950,7 @@
     "Things Korean"
   ],
   "Birch": [
+    "Currently Living Plants",
     "Ends with RCH",
     "Place Names",
     "Plants",
@@ -3951,6 +4118,21 @@
     "Types of Animals",
     "Women"
   ],
+  "Blackberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Fruits",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with BLA"
+  ],
   "Blade Runner": [
     "1980s",
     "1982",
@@ -4006,6 +4188,7 @@
     "Animal Species",
     "Birds",
     "Blue Things",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with JAY",
@@ -4045,6 +4228,7 @@
   "Blue Whale": [
     "Animal Species",
     "Blue Things",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with ALE",
     "Herbivores",
@@ -4058,7 +4242,15 @@
   ],
   "Blueberry": [
     "Blue Things",
+    "Cenozoic Era",
     "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with BLU"
   ],
   "Bluebird": [
@@ -4372,23 +4564,40 @@
     "Starts with BOX",
     "Things British"
   ],
+  "Boysenberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with BOY"
+  ],
   "Brachchiopods": [
     "Animal Species",
     "Brachiopods",
     "Ends with ODS",
     "Extinct Animals",
     "Filter Feeders",
+    "Omnivores",
     "Paleozoic Era",
     "Prehistoric Life",
     "Starts with BRA"
   ],
   "Brachiosaurus": [
     "Animal Species",
+    "Cretaceous Period",
     "Dinosaurs",
     "Ends with RUS",
     "Extinct Animals",
     "Herbivores",
     "Jurassic Period",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Sauropods",
@@ -4505,6 +4714,16 @@
     "Ingredients in a BLT",
     "Starts with BRE"
   ],
+  "Breakup of Pangea": [
+    "Continental Drift",
+    "Cretaceous Period",
+    "Ends with GEA",
+    "Events",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Plate Tectonics",
+    "Starts with BRE"
+  ],
   "Brezel": [
     "Breads",
     "Brown Things",
@@ -4607,6 +4826,17 @@
     "Starts with BRI",
     "Things Jewish"
   ],
+  "Bristlecone Pine": [
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Ends with INE",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Plants",
+    "Starts with BRI",
+    "Trees"
+  ],
   "Britannia": [
     "Ends with NIA",
     "Roman Empire",
@@ -4707,6 +4937,21 @@
     "Place Names",
     "Starts with BRI"
   ],
+  "Broccoli": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with OLI",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with BRO",
+    "Vegetables"
+  ],
   "Bronco": [
     "20th Century",
     "Car Models",
@@ -4716,6 +4961,24 @@
     "OJ Simpson",
     "Starts with BRO",
     "Things American"
+  ],
+  "Brontornis": [
+    "Animal Species",
+    "Birds",
+    "Carnivores",
+    "Cenozoic Era",
+    "Dinosaurs",
+    "Ends with NIS",
+    "Extinct Animals",
+    "Flightless Birds",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Predators",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with BRO",
+    "Terror Birds",
+    "Theropods"
   ],
   "Bronze Bird Terrace": [
     "3rd Century",
@@ -5018,6 +5281,7 @@
     "20th Century",
     "21st Century",
     "Colors",
+    "Currently Living Plants",
     "Ends with CUP",
     "Fictional People",
     "Flower-class Corvettes",
@@ -5036,10 +5300,22 @@
     "Starts with BUT"
   ],
   "Butterfly": [
+    "Animal Species",
     "Arthropods",
+    "Cenozoic Era",
+    "Currently Living Animals",
     "Ends with FLY",
+    "Eocene Epoch",
+    "Herbivores",
+    "Holocene Epoch",
     "Insects",
-    "Starts with BUT"
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with BUT",
+    "Things That Fly"
   ],
   "Butterhead": [
     "Ends with EAD",
@@ -5119,6 +5395,21 @@
     "Starts with CAB",
     "Things American"
   ],
+  "Cabbage": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with AGE",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CAB",
+    "Vegetables"
+  ],
   "Cabin": [
     "Ends with BIN",
     "Nautical Terms",
@@ -5135,12 +5426,40 @@
     "Place Names",
     "Starts with CAB"
   ],
+  "Cacao": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with CAO",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CAC"
+  ],
   "Cachaça": [
     "Alcoholic Drinks",
     "Drinks",
     "Ends with AÇA",
     "Starts with CAC",
     "Things Brazilian"
+  ],
+  "Cactus": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with TUS",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CAC"
   ],
   "Cadillac": [
     "19th Century",
@@ -5195,6 +5514,16 @@
     "Foods",
     "Starts with CAK"
   ],
+  "Calamites": [
+    "Carboniferous Period",
+    "Ends with TES",
+    "Extinct Animals",
+    "Paleozoic Era",
+    "Permian Period",
+    "Prehistoric Life",
+    "Starts with CAL",
+    "Trees"
+  ],
   "Calamity Jane": [
     "19th Century",
     "Ends with ANE",
@@ -5212,6 +5541,7 @@
   ],
   "California": [
     "Ends with NIA",
+    "Locations in North America",
     "Place Names",
     "Starts with CAL",
     "Things American",
@@ -5263,11 +5593,13 @@
   ],
   "Camarasaurus": [
     "Animal Species",
+    "Cretaceous Period",
     "Dinosaurs",
     "Ends with RUS",
     "Extinct Animals",
     "Herbivores",
     "Jurassic Period",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Sauropods",
@@ -5485,9 +5817,25 @@
     "Ends with NNE",
     "Starts with CAR"
   ],
+  "Cardamom": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with MOM",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Spices",
+    "Starts with CAR"
+  ],
   "Cardinal": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with NAL",
@@ -5543,6 +5891,7 @@
     "Dinosaurs",
     "Ends with RUS",
     "Extinct Animals",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Starts with CAR",
@@ -5570,6 +5919,21 @@
     "Things American",
     "Women"
   ],
+  "Carrot": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ROT",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CAR",
+    "Vegetables"
+  ],
   "Cars": [
     "3D Animated Films",
     "Drama Stories",
@@ -5592,8 +5956,7 @@
     "Place Names",
     "Starts with CAR",
     "State Capitals",
-    "Things American",
-    "US States"
+    "Things American"
   ],
   "Carter": [
     "1970s",
@@ -5645,6 +6008,21 @@
     "Things American",
     "War Stories"
   ],
+  "Cashew": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with HEW",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Nuts",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CAS"
+  ],
   "Caspian Sea": [
     "Bodies of Water",
     "Ends with SEA",
@@ -5691,6 +6069,7 @@
   "Cassowary": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ARY",
@@ -5743,6 +6122,7 @@
   "Cat": [
     "Animal Species",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Domesticated Animals",
     "Ends with CAT",
@@ -5810,6 +6190,21 @@
     "Wives of Henry VIII",
     "Women"
   ],
+  "Cauliflower": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with WER",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CAU",
+    "Vegetables"
+  ],
   "Causeway": [
     "Ends with WAY",
     "Engineering Structures",
@@ -5831,6 +6226,7 @@
     "Things Filipino"
   ],
   "Cedar": [
+    "Currently Living Plants",
     "Ends with DAR",
     "Place Names",
     "Plants",
@@ -5838,11 +6234,44 @@
     "Things Canadian",
     "Trees"
   ],
+  "Celery": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ERY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CEL",
+    "Vegetables"
+  ],
   "Centaur": [
     "Ends with AUR",
     "Mythical Creatures",
     "Mythical Horses",
     "Starts with CEN"
+  ],
+  "Centipede": [
+    "Animal Species",
+    "Arthropods",
+    "Carboniferous Period",
+    "Carnivores",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
+    "Ends with EDE",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Silurian Period",
+    "Starts with CEN",
+    "Triassic Period"
   ],
   "Central African Republic": [
     "Countries",
@@ -5867,6 +6296,7 @@
     "Fictional Animals",
     "Fictional Dinosaurs",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with CER",
@@ -5882,7 +6312,8 @@
     "Dwarf Planets",
     "Ends with RES",
     "Roman Gods",
-    "Starts with CER"
+    "Starts with CER",
+    "Things Roman"
   ],
   "Cessna": [
     "1920s",
@@ -5963,6 +6394,21 @@
     "Starts with CHA",
     "Things American",
     "Things British"
+  ],
+  "Chamomile": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ILE",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CHA"
   ],
   "Champagne": [
     "Alcoholic Drinks",
@@ -6157,6 +6603,7 @@
     "Ends with RUS",
     "Extinct Animals",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with CHA"
@@ -6200,6 +6647,21 @@
     "Place Names",
     "Starts with CHE",
     "Things Ukrainian"
+  ],
+  "Cherry Blossom": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with SOM",
+    "Eocene Epoch",
+    "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CHE"
   ],
   "Chess": [
     "Board Games",
@@ -6279,6 +6741,7 @@
   "Chicken": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with KEN",
@@ -6440,6 +6903,7 @@
     "Extinct Animals",
     "Fictional Animals",
     "Fictional Dinosaurs",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Starts with CHO",
@@ -6584,6 +7048,21 @@
     "Starts with CID",
     "Things American"
   ],
+  "Cilantro": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with TRO",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CIL"
+  ],
   "Cinderella": [
     "1950s",
     "20th Century",
@@ -6608,8 +7087,16 @@
     "Women"
   ],
   "Cinnamon": [
+    "Cenozoic Era",
     "Ends with MON",
+    "Eocene Epoch",
     "Foods",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Spices & Herbs",
     "Starts with CIN"
   ],
@@ -6760,6 +7247,50 @@
     "Weather",
     "White Things"
   ],
+  "Cloudberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CLO"
+  ],
+  "Clove": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with OVE",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Spices",
+    "Starts with CLO"
+  ],
+  "Clover": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with VER",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Spices",
+    "Starts with CLO"
+  ],
   "Club": [
     "Ends with LUB",
     "Golf Terms",
@@ -6767,6 +7298,21 @@
     "Sports Equipment",
     "Starts with CLU",
     "Wooden Objects"
+  ],
+  "Club Moss": [
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Devonian Period",
+    "Ends with OSS",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Plants",
+    "Starts with CLU",
+    "Triassic Period"
   ],
   "Clue": [
     "1980s",
@@ -6850,11 +7396,55 @@
     "Starts with COC",
     "Things American"
   ],
+  "Coconut": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with NUT",
+    "Eocene Epoch",
+    "Fruits",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with COC"
+  ],
+  "Coelacanth": [
+    "Animal Species",
+    "Carboniferous Period",
+    "Carnivores",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
+    "Ends with NTH",
+    "Eocene Epoch",
+    "Fish",
+    "Holocene Epoch",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Paleozoic Era",
+    "Permian Period",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Prehistoric Life",
+    "Sea Creatures",
+    "Starts with COE",
+    "Triassic Period"
+  ],
   "Coelophysis": [
     "Animal Species",
+    "Carnivores",
     "Dinosaurs",
     "Ends with SIS",
     "Extinct Animals",
+    "Jurassic Period",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Starts with COE",
     "Theropods",
@@ -6880,6 +7470,20 @@
     "Foods",
     "Starts with COF",
     "Things Canadian"
+  ],
+  "Coffee Plant": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ANT",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with COF"
   ],
   "Cog": [
     "Ends with COG",
@@ -7116,7 +7720,8 @@
     "Ships",
     "Shipwrecks",
     "Starts with CON",
-    "Things Italian"
+    "Things Italian",
+    "Things Roman"
   ],
   "Confucius": [
     "5th Century BC",
@@ -7142,6 +7747,7 @@
     "Ends with NIS",
     "Extinct Animals",
     "Feathered Dinosaurs",
+    "Mesozoic Era",
     "Omnivores",
     "Prehistoric Life",
     "Saurischians",
@@ -7289,6 +7895,7 @@
   ],
   "Coral": [
     "Colors",
+    "Currently Living Plants",
     "Ends with RAL",
     "Plants",
     "Real Animals",
@@ -7308,6 +7915,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ANT",
+    "Mesozoic Era",
     "Real Animals",
     "Saurischians",
     "Sea Birds",
@@ -7315,6 +7923,22 @@
     "Theropods",
     "Things That Fly",
     "Types of Animals"
+  ],
+  "Corn": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ORN",
+    "Eocene Epoch",
+    "Grains",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with COR",
+    "Vegetables"
   ],
   "Corned Beef": [
     "Ends with EEF",
@@ -7362,6 +7986,7 @@
     "Extinct Animals",
     "Hadrosaurs",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with COR"
@@ -7413,6 +8038,7 @@
   ],
   "Cow": [
     "Animal Species",
+    "Cenozoic Era",
     "Domesticated Animals",
     "Ends with COW",
     "Female Animals",
@@ -7433,12 +8059,25 @@
     "Tricksters"
   ],
   "Crab": [
+    "Animal Species",
     "Arthropods",
+    "Cambrian Period",
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
     "Ends with RAB",
     "Foods",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Omnivores",
+    "Paleozoic Era",
+    "Permian Period",
     "Real Animals",
     "Red Things",
     "Starts with CRA",
+    "Triassic Period",
     "Types of Animals"
   ],
   "Crack Epidemic": [
@@ -7458,6 +8097,21 @@
     "Starts with CRA",
     "Things American"
   ],
+  "Cranberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Fruits",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CRA"
+  ],
   "Crash": [
     "2000s",
     "2004",
@@ -7474,6 +8128,25 @@
     "Oscar Winners",
     "Starts with CRA",
     "Things American"
+  ],
+  "Crayfish": [
+    "Animal Species",
+    "Arthropods",
+    "Cambrian Period",
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
+    "Ends with ISH",
+    "Foods",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Omnivores",
+    "Paleozoic Era",
+    "Permian Period",
+    "Starts with CRA",
+    "Triassic Period"
   ],
   "Crayon": [
     "Ends with YON",
@@ -7521,8 +8194,13 @@
     "Things Greek"
   ],
   "Cricket": [
+    "Animal Species",
     "Ball Sports",
+    "Cenozoic Era",
+    "Currently Living Animals",
     "Ends with KET",
+    "Insects",
+    "Omnivores",
     "Sports",
     "Starts with CRI",
     "Things British"
@@ -7595,6 +8273,7 @@
     "Band Namesakes",
     "Birds",
     "Black Things",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ROW",
@@ -7628,6 +8307,21 @@
     "Things Cuban",
     "WWII Allied Powers"
   ],
+  "Cucumber": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with BER",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CUC",
+    "Vegetables"
+  ],
   "Curia": [
     "1st Century BC",
     "Ancient Buildings",
@@ -7658,6 +8352,20 @@
     "Starts with CUR",
     "Things Canadian",
     "Winter Olympic Sports"
+  ],
+  "Currant": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ANT",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with CUR"
   ],
   "Curry": [
     "21st Century",
@@ -7690,6 +8398,19 @@
     "Starts with CYB",
     "Things Polish",
     "Video Games"
+  ],
+  "Cycad": [
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Ends with CAD",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Plants",
+    "Starts with CYC",
+    "Triassic Period"
   ],
   "Cycling": [
     "Ends with ING",
@@ -7848,12 +8569,21 @@
   "Daisy": [
     "20th Century",
     "21st Century",
+    "Cenozoic Era",
+    "Currently Living Plants",
     "Disney Characters",
     "Ends with ISY",
+    "Eocene Epoch",
     "Fictional People",
     "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "People",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with DAI",
     "Things American",
     "Women"
@@ -7921,6 +8651,21 @@
     "Music",
     "Songs",
     "Songs by ABBA",
+    "Starts with DAN"
+  ],
+  "Dandelion": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ION",
+    "Eocene Epoch",
+    "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with DAN"
   ],
   "Dango": [
@@ -8032,6 +8777,21 @@
     "Math Terms",
     "Software",
     "Star Trek",
+    "Starts with DAT"
+  ],
+  "Date": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ATE",
+    "Eocene Epoch",
+    "Fruits",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with DAT"
   ],
   "Dauntless": [
@@ -8146,6 +8906,15 @@
     "Starts with DEA",
     "Things Chinese"
   ],
+  "Deccan Traps Eruption": [
+    "Cretaceous Period",
+    "Ends with ION",
+    "Events",
+    "Mass Extinctions",
+    "Mesozoic Era",
+    "Starts with DEC",
+    "Volcanic Eruptions"
+  ],
   "December 7th, 1941": [
     "1940s",
     "20th Century",
@@ -8185,6 +8954,7 @@
     "Dinosaurs",
     "Ends with HUS",
     "Extinct Animals",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Starts with DEI",
@@ -8340,6 +9110,20 @@
     "Starts with DEV",
     "Things Canadian"
   ],
+  "Dewberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with DEW"
+  ],
   "Diablo": [
     "Ends with BLO",
     "Fantasy Stories",
@@ -8411,6 +9195,21 @@
     "Thriller Films",
     "Thriller Stories"
   ],
+  "Dill": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ILL",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with DIL"
+  ],
   "Dim Sum": [
     "Ends with SUM",
     "Foods",
@@ -8429,11 +9228,13 @@
   ],
   "Diplodocus": [
     "Animal Species",
+    "Cretaceous Period",
     "Dinosaurs",
     "Ends with CUS",
     "Extinct Animals",
     "Herbivores",
     "Jurassic Period",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Sauropods",
@@ -8546,6 +9347,7 @@
     "Birds",
     "Ends with ODO",
     "Extinct Animals",
+    "Herbivores",
     "Holocene Epoch",
     "Prehistoric Life",
     "Starts with DOD"
@@ -8559,9 +9361,11 @@
   ],
   "Dog": [
     "Animal Species",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Domesticated Animals",
     "Ends with DOG",
+    "Omnivores",
     "Real Animals",
     "Starts with DOG",
     "Types of Animals"
@@ -8588,6 +9392,8 @@
   ],
   "Dolphin": [
     "Animal Species",
+    "Carnivores",
+    "Cenozoic Era",
     "Ends with HIN",
     "Mammals",
     "NFL Teams",
@@ -8689,6 +9495,7 @@
     "Fictional Animals",
     "Fictional Birds",
     "Fictional Ducks",
+    "Mesozoic Era",
     "Omnivores",
     "Saurischians",
     "Starts with DON",
@@ -8874,6 +9681,23 @@
     "Starts with DRA",
     "TV Shows"
   ],
+  "Dragonfly": [
+    "Animal Species",
+    "Arthropods",
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Ends with FLY",
+    "Insects",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Starts with DRA",
+    "Things That Fly",
+    "Triassic Period"
+  ],
   "Drake": [
     "16th Century",
     "2000s",
@@ -8886,6 +9710,7 @@
     "Ends with AKE",
     "Male Animals",
     "Men",
+    "Mesozoic Era",
     "Music",
     "Musicians",
     "People",
@@ -9009,6 +9834,7 @@
     "Fictional Dinosaurs",
     "Hadrosaurs",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with DUC",
@@ -9144,6 +9970,7 @@
     "Birds",
     "Birds of Prey",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with GLE",
@@ -9205,6 +10032,21 @@
     "Road Movies",
     "Starts with EAS",
     "Things American"
+  ],
+  "Echinacea": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with CEA",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with ECH"
   ],
   "Echo": [
     "Ends with CHO",
@@ -9268,6 +10110,7 @@
     "Extinct Animals",
     "Hadrosaurs",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with EDM"
@@ -9335,9 +10178,17 @@
     "Things Chinese"
   ],
   "Eggplant": [
+    "Cenozoic Era",
     "Ends with ANT",
+    "Eocene Epoch",
     "Foods",
     "Fruits",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Purple Things",
     "Starts with EGG"
   ],
@@ -9462,6 +10313,20 @@
     "Things Japanese",
     "Video Games"
   ],
+  "Elderberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with ELD"
+  ],
   "Elemental": [
     "3D Animated Films",
     "Ends with TAL",
@@ -9486,6 +10351,7 @@
   ],
   "Elephant": [
     "Animal Species",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with ANT",
     "Herbivores",
@@ -9726,6 +10592,7 @@
   "Emu": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with EMU",
@@ -9972,6 +10839,7 @@
     "Ends with LUS",
     "Extinct Animals",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with EUO"
@@ -9985,6 +10853,20 @@
     "Satellites",
     "Starts with EUR",
     "Video Games"
+  ],
+  "Eurypterid": [
+    "Animal Species",
+    "Arthropods",
+    "Carboniferous Period",
+    "Devonian Period",
+    "Ends with RID",
+    "Extinct Animals",
+    "Paleozoic Era",
+    "Permian Period",
+    "Prehistoric Life",
+    "Sea Creatures",
+    "Silurian Period",
+    "Starts with EUR"
   ],
   "Everest": [
     "1950s",
@@ -10063,8 +10945,24 @@
   ],
   "Eyjafjallajokull": [
     "Ends with ULL",
+    "Locations in Europe",
+    "Mountains",
+    "Place Names",
     "Starts with EYJ",
+    "Things Icelandic",
     "Volcanoes"
+  ],
+  "Eyjafjallajökull Eruption": [
+    "2010",
+    "2010s",
+    "21st Century",
+    "Disasters",
+    "Ends with ION",
+    "Events",
+    "Mountains",
+    "Starts with EYJ",
+    "Things Icelandic",
+    "Volcanic Eruptions"
   ],
   "Ezio Auditore": [
     "2000s",
@@ -10152,6 +11050,7 @@
     "Birds",
     "Birds of Prey",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with CON",
@@ -10338,6 +11237,21 @@
     "Things Portuguese",
     "Things Spanish"
   ],
+  "Fern": [
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Devonian Period",
+    "Ends with ERN",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Plants",
+    "Starts with FER",
+    "Triassic Period"
+  ],
   "Ferrari": [
     "1940s",
     "20th Century",
@@ -10392,6 +11306,21 @@
     "Musical Films",
     "Starts with FID",
     "Things American"
+  ],
+  "Fig": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with FIG",
+    "Eocene Epoch",
+    "Fruits",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with FIG"
   ],
   "Fight Club": [
     "1990s",
@@ -10494,6 +11423,24 @@
     "Red Things",
     "Starts with FIR"
   ],
+  "Firefly": [
+    "Animal Species",
+    "Arthropods",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with FLY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Insects",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Omnivores",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with FIR",
+    "Things That Fly"
+  ],
   "First Defenestration of Prague": [
     "1410s",
     "15th Century",
@@ -10532,6 +11479,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with NGO",
+    "Mesozoic Era",
     "Pink Things",
     "Real Animals",
     "Saurischians",
@@ -10586,6 +11534,23 @@
     "Starts with FLA",
     "Things American"
   ],
+  "Flea": [
+    "Animal Species",
+    "Arthropods",
+    "Carnivores",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with LEA",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Insects",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with FLE"
+  ],
   "Flight of the Navigator": [
     "1980s",
     "1986",
@@ -10625,6 +11590,7 @@
   ],
   "Florida": [
     "Ends with IDA",
+    "Locations in North America",
     "Place Names",
     "Starts with FLO",
     "Things American",
@@ -10641,6 +11607,24 @@
     "Elements",
     "Ends with INE",
     "Starts with FLU"
+  ],
+  "Fly": [
+    "Animal Species",
+    "Arthropods",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with FLY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Insects",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Omnivores",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with FLY",
+    "Things That Fly"
   ],
   "Flyer": [
     "Ends with YER",
@@ -10724,6 +11708,53 @@
     "Mentioned in We Didn't Start the Fire",
     "Starts with FOR",
     "Things American"
+  ],
+  "Formation of Earth": [
+    "Astronomical Events",
+    "Ends with RTH",
+    "Events",
+    "Precambrian",
+    "Solar System Formation",
+    "Starts with FOR"
+  ],
+  "Formation of Himalayas": [
+    "Cenozoic Era",
+    "Ends with YAS",
+    "Eocene Epoch",
+    "Events",
+    "Miocene Epoch",
+    "Mountain Building",
+    "Oligocene Epoch",
+    "Plate Tectonics",
+    "Starts with FOR"
+  ],
+  "Formation of Moon": [
+    "Astronomical Events",
+    "Ends with OON",
+    "Events",
+    "Precambrian",
+    "Solar System Formation",
+    "Starts with FOR"
+  ],
+  "Formation of Pangea": [
+    "Carboniferous Period",
+    "Continental Drift",
+    "Ends with GEA",
+    "Events",
+    "Paleozoic Era",
+    "Permian Period",
+    "Plate Tectonics",
+    "Starts with FOR"
+  ],
+  "Formation of Rocky Mountains": [
+    "Cenozoic Era",
+    "Ends with INS",
+    "Eocene Epoch",
+    "Events",
+    "Mountain Building",
+    "Oligocene Epoch",
+    "Plate Tectonics",
+    "Starts with FOR"
   ],
   "Formentera": [
     "Ends with ERA",
@@ -10812,6 +11843,7 @@
   "Fox": [
     "Animal Species",
     "Carnivores",
+    "Cenozoic Era",
     "Ends with FOX",
     "Mammals",
     "Media Companies",
@@ -11359,6 +12391,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with NET",
+    "Mesozoic Era",
     "Real Animals",
     "Saurischians",
     "Sea Birds",
@@ -11391,6 +12424,21 @@
     "Ends with UAN",
     "Starts with GAR",
     "Synonyms for Big"
+  ],
+  "Garlic": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with LIC",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with GAR",
+    "Vegetables"
   ],
   "Gastornis": [
     "Animal Species",
@@ -11540,6 +12588,7 @@
     "Ends with GIA",
     "Former Soviet Republics",
     "Locations in Europe",
+    "Locations in North America",
     "Modern Countries",
     "Place Names",
     "Republics",
@@ -11680,6 +12729,7 @@
     "Dinosaurs",
     "Ends with RUS",
     "Extinct Animals",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Starts with GIG",
@@ -11701,6 +12751,49 @@
     "Ends with GIN",
     "Starts with GIN",
     "Things British"
+  ],
+  "Ginger": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with GER",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Spices",
+    "Starts with GIN"
+  ],
+  "Ginkgo": [
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Ends with KGO",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Plants",
+    "Starts with GIN",
+    "Triassic Period"
+  ],
+  "Ginseng": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ENG",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with GIN"
   ],
   "Giraffe": [
     "Ends with FFE",
@@ -11778,6 +12871,18 @@
     "Theaters",
     "Things British"
   ],
+  "Glossopteris": [
+    "Animal Species",
+    "Ends with RIS",
+    "Extinct Animals",
+    "Extinct Plants",
+    "Paleozoic Era",
+    "Permian Period",
+    "Plants",
+    "Prehistoric Life",
+    "Starts with GLO",
+    "Triassic Period"
+  ],
   "Glove": [
     "Clothing",
     "Ends with OVE",
@@ -11803,6 +12908,7 @@
   ],
   "Goat": [
     "Animal Species",
+    "Cenozoic Era",
     "Domesticated Animals",
     "Ends with OAT",
     "Herbivores",
@@ -11873,6 +12979,7 @@
   ],
   "Gold": [
     "Colors",
+    "D-Day Beaches",
     "Economics",
     "Elements",
     "Ends with OLD",
@@ -12032,6 +13139,20 @@
     "Starts with GOO",
     "Tech Companies"
   ],
+  "Gooseberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with GOO"
+  ],
   "Gotland": [
     "Ends with AND",
     "Islands",
@@ -12101,9 +13222,17 @@
     "US Presidents"
   ],
   "Grape": [
+    "Cenozoic Era",
     "Ends with APE",
+    "Eocene Epoch",
     "Foods",
     "Fruits",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Purple Things",
     "Starts with GRA"
   ],
@@ -12116,6 +13245,24 @@
     "Paleozoic Era",
     "Prehistoric Life",
     "Starts with GRA"
+  ],
+  "Grasshopper": [
+    "Animal Species",
+    "Arthropods",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with PER",
+    "Eocene Epoch",
+    "Herbivores",
+    "Holocene Epoch",
+    "Insects",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with GRA",
+    "Things That Fly"
   ],
   "Grave of the Fireflies": [
     "2D Animated Films",
@@ -12157,6 +13304,15 @@
     "Things American",
     "Things Canadian"
   ],
+  "Great Oxygenation Event": [
+    "Atmospheric Changes",
+    "Ends with ENT",
+    "Events",
+    "Life Evolution",
+    "Paleozoic Era",
+    "Precambrian",
+    "Starts with GRE"
+  ],
   "Great Wall": [
     "Ancient Buildings",
     "Buildings",
@@ -12170,6 +13326,7 @@
   "Great White Shark": [
     "Animal Species",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with ARK",
     "Ocean Animals",
@@ -12513,6 +13670,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ULL",
+    "Mesozoic Era",
     "Real Animals",
     "Saurischians",
     "Sea Birds",
@@ -13199,6 +14357,7 @@
     "Birds",
     "Birds of Prey",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with AWK",
@@ -13254,6 +14413,21 @@
     "Starts with HAZ",
     "Trees"
   ],
+  "Hazelnut": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with NUT",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Nuts",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with HAZ"
+  ],
   "Hearts": [
     "19th Century",
     "Body Parts",
@@ -13283,6 +14457,7 @@
   "Heather": [
     "20th Century",
     "21st Century",
+    "Currently Living Plants",
     "Ends with HER",
     "Fictional People",
     "Flower-class Corvettes",
@@ -13895,6 +15070,7 @@
   ],
   "Horse": [
     "Animal Species",
+    "Cenozoic Era",
     "Domesticated Animals",
     "Ends with RSE",
     "Greek Mythology",
@@ -13910,6 +15086,21 @@
     "Sports",
     "Starts with HOR",
     "Things British"
+  ],
+  "Horsetail": [
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Devonian Period",
+    "Ends with AIL",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Plants",
+    "Starts with HOR",
+    "Triassic Period"
   ],
   "Hot Chocolate": [
     "Brown Things",
@@ -14068,6 +15259,20 @@
     "Starts with HUB",
     "Things American"
   ],
+  "Huckleberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with HUC"
+  ],
   "Hudson": [
     "Cities",
     "Cities in North America",
@@ -14153,6 +15358,8 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with IRD",
+    "Mesozoic Era",
+    "Omnivores",
     "Real Animals",
     "Saurischians",
     "Starts with HUM",
@@ -14169,6 +15376,7 @@
   "Humpback Whale": [
     "Animal Species",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with ALE",
     "Mammals",
@@ -14839,6 +16047,7 @@
     "20th Century",
     "21st Century",
     "Colors",
+    "Currently Living Plants",
     "Ends with RIS",
     "Fictional People",
     "Flowers",
@@ -15032,6 +16241,7 @@
   "Ivy": [
     "20th Century",
     "21st Century",
+    "Currently Living Plants",
     "Ends with IVY",
     "Fictional People",
     "People",
@@ -15136,6 +16346,18 @@
     "Plant-Based Colors",
     "Shades of Green",
     "Starts with JAD"
+  ],
+  "Jaekelopterus": [
+    "Animal Species",
+    "Arthropods",
+    "Carboniferous Period",
+    "Devonian Period",
+    "Ends with RUS",
+    "Extinct Animals",
+    "Paleozoic Era",
+    "Prehistoric Life",
+    "Sea Creatures",
+    "Starts with JAE"
   ],
   "Jaguar": [
     "1920s",
@@ -15978,15 +17200,34 @@
     "Place Names",
     "Starts with JUN",
     "State Capitals",
+    "Things American"
+  ],
+  "Juno": [
+    "2000s",
+    "2007",
+    "21st Century",
+    "Comedy Stories",
+    "D-Day Beaches",
+    "Ends with UNO",
+    "Movies",
+    "Movies directed by Jason Reitman",
+    "Movies featuring Allison Janney",
+    "Movies featuring Ellen Page",
+    "Movies featuring Jason Bateman",
+    "Movies featuring Jennifer Garner",
+    "Movies featuring Michael Cera",
+    "Roman Gods",
+    "Starts with JUN",
     "Things American",
-    "US States"
+    "Things Roman"
   ],
   "Jupiter": [
     "Ends with TER",
     "Gas Giants",
     "Planets",
     "Roman Gods",
-    "Starts with JUP"
+    "Starts with JUP",
+    "Things Roman"
   ],
   "Jurassic Park": [
     "1990s",
@@ -16094,6 +17335,21 @@
     "Ends with ARI",
     "Place Names",
     "Starts with KAL"
+  ],
+  "Kale": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ALE",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with KAL",
+    "Vegetables"
   ],
   "Kampuchea": [
     "1970s",
@@ -16227,6 +17483,23 @@
     "Starts with KEF",
     "Things Russian"
   ],
+  "Kelenken": [
+    "Animal Species",
+    "Birds",
+    "Carnivores",
+    "Cenozoic Era",
+    "Dinosaurs",
+    "Ends with KEN",
+    "Extinct Animals",
+    "Flightless Birds",
+    "Miocene Epoch",
+    "Predators",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with KEL",
+    "Terror Birds",
+    "Theropods"
+  ],
   "Kennedy": [
     "1960s",
     "20th Century",
@@ -16253,6 +17526,7 @@
     "Extinct Animals",
     "Herbivores",
     "Jurassic Period",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with KEN",
@@ -16404,6 +17678,7 @@
   "Killer Whale": [
     "Animal Species",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with ALE",
     "Mammals",
@@ -16569,6 +17844,7 @@
   "Kiwi": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with IWI",
@@ -16705,7 +17981,19 @@
     "Place Names",
     "Starts with KRA",
     "Things Indonesian",
+    "Volcanic Eruptions",
     "Volcanoes"
+  ],
+  "Krakatoa Eruption": [
+    "1880s",
+    "19th Century",
+    "Disasters",
+    "Ends with ION",
+    "Events",
+    "Mountains",
+    "Starts with KRA",
+    "Things Indonesian",
+    "Volcanic Eruptions"
   ],
   "Kraken": [
     "Drinks",
@@ -17027,6 +18315,23 @@
     "Starts with LAD",
     "Things American"
   ],
+  "Ladybug": [
+    "Animal Species",
+    "Arthropods",
+    "Carnivores",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with BUG",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Insects",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with LAD"
+  ],
   "Laika, Space Dog": [
     "1950s",
     "20th Century",
@@ -17061,6 +18366,17 @@
     "Starts with LAK",
     "Watercraft"
   ],
+  "Laki Eruption": [
+    "1780s",
+    "18th Century",
+    "Disasters",
+    "Ends with ION",
+    "Events",
+    "Mountains",
+    "Starts with LAK",
+    "Things Icelandic",
+    "Volcanic Eruptions"
+  ],
   "Lakshadweep": [
     "Archipelagos",
     "Ends with EEP",
@@ -17082,6 +18398,7 @@
     "Extinct Animals",
     "Hadrosaurs",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with LAM"
@@ -17205,6 +18522,15 @@
     "Ends with SSO",
     "Starts with LAS"
   ],
+  "Last Glacial Maximum": [
+    "Cenozoic Era",
+    "Climate Change",
+    "Ends with MUM",
+    "Events",
+    "Glacial Periods",
+    "Pleistocene Epoch",
+    "Starts with LAS"
+  ],
   "Latke": [
     "Ends with TKE",
     "Foods",
@@ -17228,9 +18554,18 @@
     "Things Latvian"
   ],
   "Lavender": [
+    "Cenozoic Era",
+    "Currently Living Plants",
     "Ends with DER",
+    "Eocene Epoch",
     "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Purple Things",
     "Starts with LAV"
   ],
@@ -17361,6 +18696,17 @@
     "Things American",
     "Zodiac Signs"
   ],
+  "Lepidodendron": [
+    "Animal Species",
+    "Carboniferous Period",
+    "Ends with RON",
+    "Extinct Animals",
+    "Paleozoic Era",
+    "Permian Period",
+    "Prehistoric Life",
+    "Starts with LEP",
+    "Trees"
+  ],
   "Les Misérables": [
     "1860s",
     "19th Century",
@@ -17407,10 +18753,18 @@
   ],
   "Lettuce": [
     "Burger Toppings",
+    "Cenozoic Era",
     "Ends with UCE",
+    "Eocene Epoch",
     "Foods",
+    "Holocene Epoch",
     "Ingredients in Cobb Salad",
     "Ingredients in a BLT",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Salads",
     "Starts with LET",
     "Vegetables"
@@ -17534,6 +18888,21 @@
     "Starts with LIB",
     "Things Libyan"
   ],
+  "Lichen": [
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Devonian Period",
+    "Ends with HEN",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Plants",
+    "Starts with LIC",
+    "Triassic Period"
+  ],
   "Liechtenstein": [
     "Countries",
     "Countries in Europe",
@@ -17635,9 +19004,18 @@
     "Things American"
   ],
   "Lily": [
+    "Cenozoic Era",
+    "Currently Living Plants",
     "Ends with ILY",
+    "Eocene Epoch",
     "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with LIL"
   ],
   "Lima": [
@@ -17675,6 +19053,20 @@
     "US Presidents",
     "Warships"
   ],
+  "Lingonberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with LIN"
+  ],
   "Linguine": [
     "Ends with INE",
     "Foods",
@@ -17686,6 +19078,7 @@
     "Animal Species",
     "Big Cats",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with ION",
     "Mammals",
@@ -17786,6 +19179,7 @@
     "Fictional Animals",
     "Fictional Dinosaurs",
     "Herbivores",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Sauropods",
@@ -17829,12 +19223,25 @@
     "Things Chinese"
   ],
   "Lobster": [
+    "Animal Species",
     "Arthropods",
+    "Cambrian Period",
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
     "Ends with TER",
     "Foods",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Omnivores",
+    "Paleozoic Era",
+    "Permian Period",
     "Real Animals",
     "Red Things",
     "Starts with LOB",
+    "Triassic Period",
     "Types of Animals"
   ],
   "Locker": [
@@ -17859,6 +19266,20 @@
     "Foods",
     "Starts with LOC",
     "Things Argentine"
+  ],
+  "Loganberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with LOG"
   ],
   "Loki": [
     "1960s",
@@ -18186,6 +19607,21 @@
     "Starts with MAC",
     "Things American"
   ],
+  "Macadamia": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with MIA",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Nuts",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with MAC"
+  ],
   "Macaron": [
     "Desserts",
     "Ends with RON",
@@ -18196,6 +19632,7 @@
   "Macaw": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with CAW",
@@ -18411,6 +19848,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with PIE",
+    "Mesozoic Era",
     "Real Animals",
     "Saurischians",
     "Starts with MAG",
@@ -18611,6 +20049,21 @@
     "Starts with MAN",
     "Things American"
   ],
+  "Maple": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with PLE",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with MAP",
+    "Trees"
+  ],
   "Maple Syrup": [
     "Drinks",
     "Ends with RUP",
@@ -18728,6 +20181,20 @@
     "Video Game Characters",
     "Video Games"
   ],
+  "Marionberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with MAR"
+  ],
   "Mark Antony": [
     "1st Century BC",
     "Ancient Figures",
@@ -18772,7 +20239,8 @@
     "Ends with ARS",
     "Planets",
     "Roman Gods",
-    "Starts with MAR"
+    "Starts with MAR",
+    "Things Roman"
   ],
   "Marseille": [
     "Ends with LLE",
@@ -19103,6 +20571,7 @@
     "1620s",
     "17th Century",
     "Age of Sail",
+    "Currently Living Plants",
     "Ends with WER",
     "Exploration Ships",
     "Flowers",
@@ -19235,6 +20704,34 @@
     "Sea Creatures",
     "Sharks",
     "Starts with MEG"
+  ],
+  "Meganeura": [
+    "Animal Species",
+    "Arthropods",
+    "Carboniferous Period",
+    "Ends with URA",
+    "Extinct Animals",
+    "Insects",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Prehistoric Life",
+    "Starts with MEG",
+    "Things That Fly"
+  ],
+  "Meganeuropsis": [
+    "Animal Species",
+    "Arthropods",
+    "Carboniferous Period",
+    "Ends with SIS",
+    "Extinct Animals",
+    "Insects",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Prehistoric Life",
+    "Starts with MEG",
+    "Things That Fly"
   ],
   "Mehmed II": [
     "15th Century",
@@ -19464,6 +20961,8 @@
   ],
   "Michigan": [
     "Ends with GAN",
+    "Locations in North America",
+    "Place Names",
     "Starts with MIC",
     "US States"
   ],
@@ -19510,6 +21009,7 @@
     "Ends with TOR",
     "Extinct Animals",
     "Feathered Dinosaurs",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Small Dinosaurs",
@@ -19638,6 +21138,24 @@
     "Starts with MIL",
     "Things American"
   ],
+  "Millipede": [
+    "Animal Species",
+    "Arthropods",
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
+    "Ends with EDE",
+    "Herbivores",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Silurian Period",
+    "Starts with MIL",
+    "Triassic Period"
+  ],
   "Mindanao": [
     "Ends with NAO",
     "Islands",
@@ -19701,6 +21219,21 @@
   "Minotaur": [
     "Ends with AUR",
     "Greek Myth Monsters",
+    "Starts with MIN"
+  ],
+  "Mint": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with INT",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with MIN"
   ],
   "Miracle on 34th Street": [
@@ -20120,9 +21653,53 @@
     "Sea Creatures",
     "Starts with MOS"
   ],
-  "Moth": [
-    "Ends with OTH",
+  "Mosquito": [
+    "Animal Species",
+    "Arthropods",
+    "Carnivores",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with ITO",
+    "Eocene Epoch",
+    "Holocene Epoch",
     "Insects",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with MOS",
+    "Things That Fly"
+  ],
+  "Moss": [
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Devonian Period",
+    "Ends with OSS",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Plants",
+    "Starts with MOS",
+    "Triassic Period"
+  ],
+  "Moth": [
+    "Animal Species",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with OTH",
+    "Eocene Epoch",
+    "Herbivores",
+    "Holocene Epoch",
+    "Insects",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Real Animals",
     "Starts with MOT",
     "Types of Animals"
@@ -20164,6 +21741,29 @@
     "Romance Stories",
     "Starts with MOU",
     "Things Australian"
+  ],
+  "Mount Pelée Eruption": [
+    "1900s",
+    "20th Century",
+    "Disasters",
+    "Ends with ION",
+    "Events",
+    "Mountains",
+    "Starts with MOU",
+    "Things French",
+    "Volcanic Eruptions"
+  ],
+  "Mount St. Helens Eruption": [
+    "1980",
+    "1980s",
+    "20th Century",
+    "Disasters",
+    "Ends with ION",
+    "Events",
+    "Mountains",
+    "Starts with MOU",
+    "Things American",
+    "Volcanic Eruptions"
   ],
   "Moussaka": [
     "Ends with AKA",
@@ -20258,6 +21858,20 @@
     "Starts with MUL",
     "Things American",
     "War Stories"
+  ],
+  "Mulberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with MUL"
   ],
   "Murder": [
     "Crime",
@@ -20653,7 +22267,8 @@
     "Gas Giants",
     "Planets",
     "Roman Gods",
-    "Starts with NEP"
+    "Starts with NEP",
+    "Things Roman"
   ],
   "Nero": [
     "1st Century",
@@ -20696,10 +22311,23 @@
   "Nevada": [
     "Deserts",
     "Ends with ADA",
+    "Locations in North America",
     "Place Names",
     "Starts with NEV",
     "Things American",
     "US States"
+  ],
+  "Nevado del Ruiz Eruption": [
+    "1980s",
+    "1985",
+    "20th Century",
+    "Disasters",
+    "Ends with ION",
+    "Events",
+    "Mountains",
+    "Starts with NEV",
+    "Things Colombian",
+    "Volcanic Eruptions"
   ],
   "Nevermind": [
     "1990s",
@@ -21221,8 +22849,16 @@
     "Things Vietnamese"
   ],
   "Nutmeg": [
+    "Cenozoic Era",
     "Ends with MEG",
+    "Eocene Epoch",
     "Foods",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Spices & Herbs",
     "Starts with NUT"
   ],
@@ -21286,8 +22922,17 @@
     "Things Hawaiian"
   ],
   "Oak": [
+    "Cenozoic Era",
+    "Currently Living Plants",
     "Ends with OAK",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with OAK"
   ],
   "Oasis of the Seas": [
@@ -21300,6 +22945,21 @@
     "Ships",
     "Starts with OAS",
     "Things American"
+  ],
+  "Oats": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ATS",
+    "Eocene Epoch",
+    "Grains",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with OAT"
   ],
   "Obama": [
     "2010s",
@@ -21447,14 +23107,23 @@
     "1920s",
     "20th Century",
     "21st Century",
+    "Cenozoic Era",
     "Colors",
+    "Currently Living Plants",
     "Ends with IVE",
+    "Eocene Epoch",
     "Fictional People",
     "Foods",
     "Green Things",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "People",
     "Plant-Based Colors",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Shades of Green",
     "Starts with OLI",
     "Things American",
@@ -21538,6 +23207,17 @@
     "Starts with OLY",
     "Tech Companies",
     "Things Greek"
+  ],
+  "Omaha": [
+    "Cities",
+    "Cities in North America",
+    "Cities in USA",
+    "D-Day Beaches",
+    "Ends with AHA",
+    "Locations in North America",
+    "Place Names",
+    "Starts with OMA",
+    "Things American"
   ],
   "Oman": [
     "Countries",
@@ -21651,8 +23331,16 @@
   ],
   "Onion": [
     "Burger Toppings",
+    "Cenozoic Era",
     "Ends with ION",
+    "Eocene Epoch",
     "Foods",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with ONI",
     "Vegetables"
   ],
@@ -21685,6 +23373,16 @@
     "Ends with PEL",
     "Starts with OPE",
     "Things German"
+  ],
+  "Opening of Atlantic Ocean": [
+    "Cretaceous Period",
+    "Ends with EAN",
+    "Events",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Ocean Formation",
+    "Plate Tectonics",
+    "Starts with OPE"
   ],
   "Oppenheimer": [
     "1940s",
@@ -21749,9 +23447,18 @@
     "Types of Animals"
   ],
   "Orchid": [
+    "Cenozoic Era",
+    "Currently Living Plants",
     "Ends with HID",
+    "Eocene Epoch",
     "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with ORC"
   ],
   "Ordinary People": [
@@ -21770,8 +23477,25 @@
     "Starts with ORD",
     "Things American"
   ],
+  "Oregano": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ANO",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with ORE"
+  ],
   "Oregon": [
     "Ends with GON",
+    "Locations in North America",
+    "Place Names",
     "Starts with ORE",
     "US States"
   ],
@@ -21824,6 +23548,7 @@
   "Ostrich": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ICH",
@@ -21922,6 +23647,8 @@
     "Animal Species",
     "Birds",
     "Birds of Prey",
+    "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with OWL",
@@ -22074,6 +23801,21 @@
     "Place Names",
     "Starts with PAL",
     "Things Palestinian"
+  ],
+  "Palm": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ALM",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with PAL",
+    "Trees"
   ],
   "Palm Springs": [
     "2020",
@@ -22289,6 +24031,7 @@
     "Extinct Animals",
     "Hadrosaurs",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with PAR"
@@ -22328,6 +24071,7 @@
   "Parrot": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ROT",
@@ -22336,6 +24080,21 @@
     "Starts with PAR",
     "Theropods",
     "Things That Fly"
+  ],
+  "Parsley": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with LEY",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with PAR"
   ],
   "Parthenon": [
     "Ancient Buildings",
@@ -22372,6 +24131,23 @@
     "Jewish Foods",
     "Starts with PAS",
     "Things Jewish"
+  ],
+  "Patagornis": [
+    "Animal Species",
+    "Birds",
+    "Carnivores",
+    "Cenozoic Era",
+    "Dinosaurs",
+    "Ends with NIS",
+    "Extinct Animals",
+    "Flightless Birds",
+    "Miocene Epoch",
+    "Predators",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with PAT",
+    "Terror Birds",
+    "Theropods"
   ],
   "Paul": [
     "1960s",
@@ -22431,6 +24207,36 @@
     "Starts with PEA",
     "Types of Animals"
   ],
+  "Peanut": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with NUT",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Nuts",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with PEA"
+  ],
+  "Pecan": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with CAN",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Nuts",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with PEC"
+  ],
   "Pegasus": [
     "Ends with SUS",
     "Mythical Creatures",
@@ -22448,6 +24254,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with CAN",
+    "Mesozoic Era",
     "NBA Teams",
     "Real Animals",
     "Saurischians",
@@ -22485,6 +24292,7 @@
     "Birds",
     "Black and White",
     "Carnivores",
+    "Cenozoic Era",
     "Companies",
     "Currently Living Animals",
     "DC Characters",
@@ -22518,10 +24326,19 @@
     "Warner Bros. Characters"
   ],
   "Pepper": [
+    "Cenozoic Era",
     "Colors",
+    "Currently Living Plants",
     "Ends with PER",
+    "Eocene Epoch",
     "Foods",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Spices & Herbs",
     "Starts with PEP"
   ],
@@ -22686,6 +24503,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with REL",
+    "Mesozoic Era",
     "Real Animals",
     "Saurischians",
     "Sea Birds",
@@ -22835,6 +24653,7 @@
     "Locations in North America",
     "Magic",
     "Marvel Characters",
+    "Mesozoic Era",
     "Mythical Creatures",
     "People",
     "Place Names",
@@ -22849,6 +24668,27 @@
     "Video Games",
     "Women",
     "X-Men Characters"
+  ],
+  "Phorusrhacos": [
+    "Animal Species",
+    "Birds",
+    "Carnivores",
+    "Cenozoic Era",
+    "Dinosaurs",
+    "Ends with COS",
+    "Extinct Animals",
+    "Flightless Birds",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Predators",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with PHO",
+    "Terror Birds",
+    "Theropods"
   ],
   "Phuket": [
     "Ends with KET",
@@ -22945,11 +24785,33 @@
     "Place Names",
     "Starts with PIN",
     "Things Indonesian",
+    "Volcanic Eruptions",
     "Volcanoes"
   ],
+  "Pinatubo Eruption": [
+    "1990s",
+    "1991",
+    "20th Century",
+    "Disasters",
+    "Ends with ION",
+    "Events",
+    "Mountains",
+    "Starts with PIN",
+    "Things Filipino",
+    "Volcanic Eruptions"
+  ],
   "Pine": [
+    "Cenozoic Era",
+    "Currently Living Plants",
     "Ends with INE",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with PIN"
   ],
   "Ping Pong": [
@@ -23162,6 +25024,21 @@
     "Starts with PIS",
     "Things Peruvian"
   ],
+  "Pistachio": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with HIO",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Nuts",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with PIS"
+  ],
   "Piston": [
     "Ends with TON",
     "Mechanical Parts",
@@ -23206,6 +25083,8 @@
     "Dinosaurs",
     "Ends with RUS",
     "Extinct Animals",
+    "Jurassic Period",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with PLA",
@@ -23277,7 +25156,8 @@
     "Ends with UTO",
     "Roman Gods",
     "Starts with PLU",
-    "The Bad Place"
+    "The Bad Place",
+    "Things Roman"
   ],
   "Plutonium": [
     "Elements",
@@ -23457,6 +25337,7 @@
     "Sword and Sandals Stories",
     "Things Italian",
     "Things Roman",
+    "Volcanic Eruptions",
     "Volcanoes"
   ],
   "Pompey": [
@@ -23492,6 +25373,21 @@
     "Starts with PON",
     "Studio Ghibli",
     "Things Japanese"
+  ],
+  "Poppy": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with PPY",
+    "Eocene Epoch",
+    "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with POP"
   ],
   "Porco Rosso": [
     "1990s",
@@ -23620,6 +25516,21 @@
     "Religious Sites",
     "Starts with POT",
     "Tibetan Architecture"
+  ],
+  "Potato": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ATO",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with POT",
+    "Vegetables"
   ],
   "Pouding Chomeur": [
     "Desserts",
@@ -23852,6 +25763,7 @@
     "Ends with OPS",
     "Extinct Animals",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with PRO"
@@ -23920,6 +25832,18 @@
     "Starts with PTE",
     "Things That Fly"
   ],
+  "Pterygotus": [
+    "Animal Species",
+    "Arthropods",
+    "Devonian Period",
+    "Ends with TUS",
+    "Extinct Animals",
+    "Paleozoic Era",
+    "Prehistoric Life",
+    "Sea Creatures",
+    "Silurian Period",
+    "Starts with PTE"
+  ],
   "Puck": [
     "16th Century",
     "Ends with UCK",
@@ -23946,6 +25870,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with FIN",
+    "Mesozoic Era",
     "Real Animals",
     "Saurischians",
     "Sea Birds",
@@ -24005,6 +25930,21 @@
     "Foods",
     "Starts with PUM",
     "Things German"
+  ],
+  "Pumpkin": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with KIN",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with PUM",
+    "Vegetables"
   ],
   "Punk Rock": [
     "1970s",
@@ -24212,6 +26152,7 @@
   ],
   "Rabbit": [
     "Animal Species",
+    "Cenozoic Era",
     "Ends with BIT",
     "Herbivores",
     "Mammals",
@@ -24351,6 +26292,7 @@
     "Birds of Prey",
     "Dinosaurs",
     "Ends with TOR",
+    "Mesozoic Era",
     "NBA Teams",
     "Predators",
     "Real Animals",
@@ -24374,6 +26316,21 @@
     "Starts with RAS",
     "Things Japanese"
   ],
+  "Raspberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Fruits",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with RAS"
+  ],
   "Rasputin": [
     "1900s",
     "1910s",
@@ -24390,6 +26347,7 @@
   ],
   "Rat": [
     "Animal Species",
+    "Cenozoic Era",
     "Ends with RAT",
     "Mammals",
     "Omnivores",
@@ -24417,6 +26375,7 @@
     "Associated with Edgar Allan Poe",
     "Birds",
     "Black Things",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with VEN",
@@ -24698,6 +26657,17 @@
     "Things French",
     "Warships"
   ],
+  "Redwood": [
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Ends with OOD",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Plants",
+    "Starts with RED",
+    "Trees"
+  ],
   "Remember, remember": [
     "1600s",
     "17th Century",
@@ -24856,6 +26826,7 @@
   "Rhea": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with HEA",
@@ -24902,6 +26873,21 @@
     "Place Names",
     "Starts with RHO",
     "Things Zimbabwean"
+  ],
+  "Rice": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ICE",
+    "Eocene Epoch",
+    "Grains",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with RIC"
   ],
   "Richard II": [
     "1360s",
@@ -25064,6 +27050,7 @@
     "20th Century",
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "DC Characters",
     "Dinosaurs",
@@ -25426,13 +27413,38 @@
     "Women"
   ],
   "Rose": [
+    "Cenozoic Era",
     "Colors",
+    "Currently Living Plants",
     "Ends with OSE",
+    "Eocene Epoch",
     "Flower-class Corvettes",
     "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "Plant-Based Colors",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Red Things",
+    "Starts with ROS"
+  ],
+  "Rosemary": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ARY",
+    "Eocene Epoch",
+    "Flowers",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with ROS"
   ],
   "Rosé": [
@@ -25484,6 +27496,7 @@
     "Fictional Animals",
     "Fictional Dinosaurs",
     "Gemstones",
+    "Mesozoic Era",
     "Omnivores",
     "Prehistoric Life",
     "Programming Languages",
@@ -25592,8 +27605,16 @@
   "Rye": [
     "Breads",
     "Brown Things",
+    "Cenozoic Era",
     "Ends with RYE",
+    "Eocene Epoch",
     "Foods",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with RYE",
     "Things German"
   ],
@@ -25671,9 +27692,32 @@
     "Things American",
     "Time Travel Stories"
   ],
+  "Saffron": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RON",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Spices",
+    "Starts with SAF"
+  ],
   "Sage": [
+    "Cenozoic Era",
     "Ends with AGE",
+    "Eocene Epoch",
     "Green Things",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Shades of Green",
     "Spices & Herbs",
     "Starts with SAG"
@@ -25850,6 +27894,20 @@
     "Starts with SAL",
     "Types of Animals"
   ],
+  "Salmonberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with SAL"
+  ],
   "Salsa": [
     "Condiments",
     "Ends with LSA",
@@ -25877,6 +27935,7 @@
     "Birds of Prey",
     "Dinosaurs",
     "Ends with GLE",
+    "Mesozoic Era",
     "Muppet Characters",
     "Puppet Characters",
     "Saurischians",
@@ -26177,6 +28236,7 @@
     "Planets",
     "Roman Gods",
     "Starts with SAT",
+    "Things Roman",
     "Video Games"
   ],
   "Saudi Arabia": [
@@ -26340,13 +28400,26 @@
     "Zodiac Signs"
   ],
   "Scorpion": [
+    "Animal Species",
     "Arthropods",
     "Band Namesakes",
+    "Carboniferous Period",
+    "Carnivores",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
     "Ends with ION",
+    "Jurassic Period",
+    "Mesozoic Era",
     "Music",
+    "Paleozoic Era",
+    "Permian Period",
     "Predators",
     "Real Animals",
+    "Silurian Period",
     "Starts with SCO",
+    "Triassic Period",
     "Types of Animals"
   ],
   "Scorpius": [
@@ -26405,6 +28478,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with AWK",
+    "Mesozoic Era",
     "NFL Teams",
     "Predators",
     "Real Animals",
@@ -26502,6 +28576,17 @@
     "Place Names",
     "Starts with SEO",
     "Things Korean"
+  ],
+  "Sequoia": [
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Plants",
+    "Ends with OIA",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Plants",
+    "Starts with SEQ",
+    "Trees"
   ],
   "Serbia": [
     "Countries",
@@ -26691,10 +28776,13 @@
   "Shark": [
     "Animal Species",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with ARK",
     "Fish",
+    "Mesozoic Era",
     "NHL Teams",
+    "Paleozoic Era",
     "Predators",
     "Real Animals",
     "Sea Creatures",
@@ -26715,6 +28803,7 @@
   ],
   "Sheep": [
     "Animal Species",
+    "Cenozoic Era",
     "Domesticated Animals",
     "Ends with EEP",
     "Herbivores",
@@ -26773,6 +28862,25 @@
     "Starts with SHO",
     "Triassic Period"
   ],
+  "Shrimp": [
+    "Animal Species",
+    "Arthropods",
+    "Cambrian Period",
+    "Carboniferous Period",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
+    "Ends with IMP",
+    "Foods",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Omnivores",
+    "Paleozoic Era",
+    "Permian Period",
+    "Starts with SHR",
+    "Triassic Period"
+  ],
   "Siam": [
     "Countries",
     "Countries in Asia",
@@ -26784,6 +28892,15 @@
     "Place Names",
     "Starts with SIA",
     "Things Thai"
+  ],
+  "Siberian Traps Eruption": [
+    "Ends with ION",
+    "Events",
+    "Mass Extinctions",
+    "Paleozoic Era",
+    "Permian Period",
+    "Starts with SIB",
+    "Volcanic Eruptions"
   ],
   "Sicily": [
     "Ends with ILY",
@@ -26846,6 +28963,17 @@
     "Republics",
     "Starts with SIE",
     "Things Sierra Leonean"
+  ],
+  "Sigillaria": [
+    "Animal Species",
+    "Carboniferous Period",
+    "Ends with RIA",
+    "Extinct Animals",
+    "Paleozoic Era",
+    "Permian Period",
+    "Prehistoric Life",
+    "Starts with SIG",
+    "Trees"
   ],
   "Sigma": [
     "Ends with GMA",
@@ -26992,6 +29120,7 @@
     "Ends with RUS",
     "Extinct Animals",
     "Feathered Dinosaurs",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Small Dinosaurs",
@@ -27255,6 +29384,15 @@
     "Musical Films",
     "Starts with SNO",
     "Things American"
+  ],
+  "Snowball Earth": [
+    "Climate Change",
+    "Ends with RTH",
+    "Events",
+    "Glacial Periods",
+    "Paleozoic Era",
+    "Precambrian",
+    "Starts with SNO"
   ],
   "Snowman": [
     "1980s",
@@ -27688,6 +29826,20 @@
     "Starts with SOY",
     "Things Japanese"
   ],
+  "Soybean": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with EAN",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with SOY"
+  ],
   "Spades": [
     "19th Century",
     "Card Games",
@@ -27760,6 +29912,8 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ROW",
+    "Mesozoic Era",
+    "Omnivores",
     "Real Animals",
     "Saurischians",
     "Starts with SPA",
@@ -27840,9 +29994,21 @@
     "Starts with SPI"
   ],
   "Spider": [
+    "Animal Species",
     "Arthropods",
+    "Carboniferous Period",
+    "Carnivores",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
     "Ends with DER",
-    "Starts with SPI"
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Starts with SPI",
+    "Triassic Period"
   ],
   "Spider-Man": [
     "2000s",
@@ -27876,11 +30042,27 @@
     "Fictional Dinosaurs",
     "Herbivores",
     "Jurassic Period",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with SPI",
     "Stegosaurs",
     "The Land Before Time"
+  ],
+  "Spinach": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ACH",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with SPI",
+    "Vegetables"
   ],
   "Spinosaurus": [
     "Animal Species",
@@ -27889,6 +30071,7 @@
     "Dinosaurs",
     "Ends with RUS",
     "Extinct Animals",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Starts with SPI",
@@ -27983,6 +30166,21 @@
     "Starts with SPÄ",
     "Things German"
   ],
+  "Squash": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ASH",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with SQU",
+    "Vegetables"
+  ],
   "Sri Lanka": [
     "Countries",
     "Countries in Asia",
@@ -28012,6 +30210,7 @@
     "Mountains",
     "Place Names",
     "Starts with ST.",
+    "Volcanic Eruptions",
     "Volcanoes"
   ],
   "St. Peter's Basilica": [
@@ -28146,11 +30345,13 @@
   ],
   "Stegosaurus": [
     "Animal Species",
+    "Cretaceous Period",
     "Dinosaurs",
     "Ends with RUS",
     "Extinct Animals",
     "Herbivores",
     "Jurassic Period",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with STE",
@@ -28265,6 +30466,21 @@
     "Starts with STR",
     "Things American"
   ],
+  "Strawberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Fruits",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with STR"
+  ],
   "Street Fighter": [
     "1980s",
     "1987",
@@ -28311,6 +30527,7 @@
     "Ends with RUS",
     "Extinct Animals",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with STY"
@@ -28492,9 +30709,18 @@
     "Starts with SUN"
   ],
   "Sunflower": [
+    "Cenozoic Era",
+    "Currently Living Plants",
     "Ends with WER",
+    "Eocene Epoch",
     "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with SUN",
     "Sun",
     "Yellow Things"
@@ -28594,9 +30820,11 @@
   "Swan": [
     "Animal Species",
     "Birds",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with WAN",
+    "Herbivores",
     "Real Animals",
     "Saurischians",
     "Starts with SWA",
@@ -28672,6 +30900,7 @@
     "Things Swiss"
   ],
   "Sword": [
+    "D-Day Beaches",
     "Ends with ORD",
     "Historical Weapons",
     "Starts with SWO",
@@ -28753,6 +30982,7 @@
     "Dinosaurs",
     "Ends with REX",
     "Extinct Animals",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Starts with T-R",
@@ -28923,7 +31153,19 @@
     "Place Names",
     "Starts with TAM",
     "Things Indonesian",
+    "Volcanic Eruptions",
     "Volcanoes"
+  ],
+  "Tambora Eruption": [
+    "1810s",
+    "19th Century",
+    "Disasters",
+    "Ends with ION",
+    "Events",
+    "Mountains",
+    "Starts with TAM",
+    "Things Indonesian",
+    "Volcanic Eruptions"
   ],
   "Tanaka": [
     "2010s",
@@ -29023,9 +31265,21 @@
     "Things Spanish"
   ],
   "Tarantula": [
+    "Animal Species",
     "Arthropods",
+    "Carboniferous Period",
+    "Carnivores",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Devonian Period",
     "Ends with ULA",
-    "Starts with TAR"
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Paleozoic Era",
+    "Permian Period",
+    "Starts with TAR",
+    "Triassic Period"
   ],
   "Tart": [
     "Baked Goods",
@@ -29073,6 +31327,20 @@
     "Starts with TAU",
     "Zodiac Signs"
   ],
+  "Tayberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with TAY"
+  ],
   "Taylor": [
     "1840s",
     "1850s",
@@ -29101,6 +31369,20 @@
     "Things Chinese",
     "Things Indian",
     "Things Sri Lankan"
+  ],
+  "Tea Plant": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with ANT",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with TEA"
   ],
   "Teal": [
     "Blue Things",
@@ -29266,6 +31548,18 @@
     "Thriller Stories",
     "Time Travel Stories"
   ],
+  "Termite": [
+    "Animal Species",
+    "Arthropods",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Ends with ITE",
+    "Insects",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Starts with TER"
+  ],
   "Terms of Endearment": [
     "1980s",
     "1983",
@@ -29289,6 +31583,7 @@
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ERN",
+    "Mesozoic Era",
     "Real Animals",
     "Saurischians",
     "Sea Birds",
@@ -29348,6 +31643,7 @@
   "Texas": [
     "Card Games",
     "Ends with XAS",
+    "Locations in North America",
     "Place Names",
     "Starts with TEX",
     "Things American",
@@ -33184,6 +35480,20 @@
     "Greek Letters",
     "Starts with THE"
   ],
+  "Thimbleberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with THI"
+  ],
   "Third Servile War": [
     "1st Century BC",
     "Ends with WAR",
@@ -33194,6 +35504,20 @@
     "Starts with THI",
     "Things Roman",
     "Wars"
+  ],
+  "Thistle": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with TLE",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with THI"
   ],
   "Thomas": [
     "1st Century",
@@ -33318,6 +35642,21 @@
     "Things That Fly",
     "World War II"
   ],
+  "Thyme": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with YME",
+    "Eocene Epoch",
+    "Herbs",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with THY"
+  ],
   "Tiananmen Square Massacre": [
     "1980s",
     "1989",
@@ -33350,6 +35689,22 @@
     "Ends with BET",
     "Starts with TIB"
   ],
+  "Tick": [
+    "Animal Species",
+    "Arthropods",
+    "Carnivores",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with ICK",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with TIC"
+  ],
   "Tick, Tick... Boom!": [
     "2020s",
     "2021",
@@ -33372,6 +35727,7 @@
     "Animal Species",
     "Big Cats",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with GER",
     "MLB Teams",
@@ -33520,6 +35876,24 @@
     "Time Travel Stories",
     "Video Games"
   ],
+  "Titanis": [
+    "Animal Species",
+    "Birds",
+    "Carnivores",
+    "Cenozoic Era",
+    "Dinosaurs",
+    "Ends with NIS",
+    "Extinct Animals",
+    "Flightless Birds",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Predators",
+    "Prehistoric Life",
+    "Saurischians",
+    "Starts with TIT",
+    "Terror Birds",
+    "Theropods"
+  ],
   "Titanium": [
     "Elements",
     "Ends with IUM",
@@ -33535,6 +35909,19 @@
     "Prehistoric Life",
     "Reptiles",
     "Snakes",
+    "Starts with TIT"
+  ],
+  "Titanomyrma": [
+    "Animal Species",
+    "Arthropods",
+    "Cenozoic Era",
+    "Ends with RMA",
+    "Eocene Epoch",
+    "Extinct Animals",
+    "Insects",
+    "Mesozoic Era",
+    "Oligocene Epoch",
+    "Prehistoric Life",
     "Starts with TIT"
   ],
   "To Kill a Mockingbird": [
@@ -33651,10 +36038,18 @@
   ],
   "Tomato": [
     "Burger Toppings",
+    "Cenozoic Era",
     "Ends with ATO",
+    "Eocene Epoch",
     "Foods",
+    "Holocene Epoch",
     "Ingredients in Cobb Salad",
     "Ingredients in a BLT",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Red Things",
     "Sauces",
     "Starts with TOM",
@@ -33904,6 +36299,7 @@
     "Ends with OPS",
     "Extinct Animals",
     "Herbivores",
+    "Mesozoic Era",
     "Ornithischians",
     "Prehistoric Life",
     "Starts with TRI"
@@ -34112,9 +36508,18 @@
     "Things Korean"
   ],
   "Tulip": [
+    "Cenozoic Era",
+    "Currently Living Plants",
     "Ends with LIP",
+    "Eocene Epoch",
     "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
     "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
     "Starts with TUL"
   ],
   "Tuna": [
@@ -34154,6 +36559,7 @@
     "Animal Species",
     "Animals",
     "Birds",
+    "Cenozoic Era",
     "Countries",
     "Countries in Asia",
     "Currently Living Animals",
@@ -34188,6 +36594,21 @@
     "Republics",
     "Starts with TUR",
     "Things Turkmen"
+  ],
+  "Turmeric": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RIC",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Spices",
+    "Starts with TUR"
   ],
   "Turning Red": [
     "3D Animated Films",
@@ -34609,6 +37030,15 @@
     "Starts with USH",
     "Things American"
   ],
+  "Utah": [
+    "D-Day Beaches",
+    "Ends with TAH",
+    "Locations in North America",
+    "Place Names",
+    "Starts with UTA",
+    "Things American",
+    "US States"
+  ],
   "Utahraptor": [
     "Animal Species",
     "Carnivores",
@@ -34616,6 +37046,7 @@
     "Dinosaurs",
     "Ends with TOR",
     "Extinct Animals",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Starts with UTA",
@@ -34676,6 +37107,21 @@
     "Starts with VAN",
     "Things American",
     "US Presidents"
+  ],
+  "Vanilla": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with LLA",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Spices",
+    "Starts with VAN"
   ],
   "Vantage Point": [
     "21st Century",
@@ -34784,6 +37230,7 @@
     "Dinosaurs",
     "Ends with TOR",
     "Extinct Animals",
+    "Mesozoic Era",
     "Prehistoric Life",
     "Saurischians",
     "Starts with VEL",
@@ -34848,6 +37295,25 @@
     "Ends with NUS",
     "Planets",
     "Roman Gods",
+    "Starts with VEN",
+    "Things Roman"
+  ],
+  "Venus Flytrap": [
+    "Carnivores",
+    "Carnivorous Plants",
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RAP",
+    "Eocene Epoch",
+    "Flowers",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Predators",
     "Starts with VEN"
   ],
   "Verona": [
@@ -34891,6 +37357,7 @@
     "Starts with VES",
     "Things Italian",
     "Things Roman",
+    "Volcanic Eruptions",
     "Volcanoes"
   ],
   "Victor": [
@@ -35006,6 +37473,8 @@
   ],
   "Virginia": [
     "Ends with NIA",
+    "Locations in North America",
+    "Place Names",
     "Starts with VIR",
     "US States"
   ],
@@ -35109,6 +37578,7 @@
     "Birds",
     "Birds of Prey",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with URE",
@@ -35164,6 +37634,21 @@
     "Movies featuring Luc Roeg",
     "Starts with WAL",
     "Things British"
+  ],
+  "Walnut": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with NUT",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Nuts",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with WAL"
   ],
   "Walrus": [
     "Ends with RUS",
@@ -35249,6 +37734,20 @@
     "US Presidents",
     "US States",
     "Warships"
+  ],
+  "Wasp": [
+    "Animal Species",
+    "Arthropods",
+    "Carnivores",
+    "Cenozoic Era",
+    "Cretaceous Period",
+    "Currently Living Animals",
+    "Ends with ASP",
+    "Insects",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Starts with WAS",
+    "Things That Fly"
   ],
   "Water Margin": [
     "14th Century",
@@ -35451,6 +37950,21 @@
     "Synonyms for Big",
     "Types of Animals"
   ],
+  "Wheat": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with EAT",
+    "Eocene Epoch",
+    "Grains",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with WHE"
+  ],
   "Wheel": [
     "Ends with EEL",
     "Mechanical Parts",
@@ -35619,6 +38133,33 @@
     "Things British",
     "Things French"
   ],
+  "Williamsonia": [
+    "Animal Species",
+    "Cretaceous Period",
+    "Ends with NIA",
+    "Extinct Animals",
+    "Extinct Plants",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Plants",
+    "Prehistoric Life",
+    "Starts with WIL"
+  ],
+  "Willow": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with LOW",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with WIL",
+    "Trees"
+  ],
   "Wilson": [
     "1910s",
     "1920s",
@@ -35640,6 +38181,20 @@
     "Ends with INE",
     "Starts with WIN",
     "Things French"
+  ],
+  "Wineberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with WIN"
   ],
   "Winnie the Pooh": [
     "2D Animated Films",
@@ -35742,6 +38297,7 @@
   "Wolf": [
     "Animal Species",
     "Carnivores",
+    "Cenozoic Era",
     "Currently Living Animals",
     "Ends with OLF",
     "Mammals",
@@ -36190,6 +38746,30 @@
     "Starts with YOU",
     "Things American"
   ],
+  "Youngberry": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with RRY",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with YOU"
+  ],
+  "Younger Dryas": [
+    "Cenozoic Era",
+    "Climate Change",
+    "Ends with YAS",
+    "Events",
+    "Glacial Periods",
+    "Holocene Epoch",
+    "Pleistocene Epoch",
+    "Starts with YOU"
+  ],
   "Yu Xiang Qie Zi": [
     "Ends with  ZI",
     "Foods",
@@ -36265,6 +38845,7 @@
     "Fictional Animals",
     "Fictional Birds",
     "Fictional Hornbills",
+    "Mesozoic Era",
     "Omnivores",
     "Saurischians",
     "Starts with ZAZ",
@@ -36274,6 +38855,7 @@
   "Zebra": [
     "Animal Species",
     "Black and White",
+    "Cenozoic Era",
     "Ends with BRA",
     "Herbivores",
     "Real Animals",
@@ -36426,6 +39008,21 @@
     "Religious Figures",
     "Starts with ZOR",
     "Things Iranian"
+  ],
+  "Zucchini": [
+    "Cenozoic Era",
+    "Currently Living Plants",
+    "Ends with INI",
+    "Eocene Epoch",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Oligocene Epoch",
+    "Paleocene Epoch",
+    "Plants",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Starts with ZUC",
+    "Vegetables"
   ],
   "Zulu": [
     "1960s",

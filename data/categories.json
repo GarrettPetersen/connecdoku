@@ -12,6 +12,7 @@
     "Battle Beyond the Stars",
     "Flash Gordon",
     "Kagemusha",
+    "Mount St. Helens Eruption",
     "Ordinary People",
     "Pac-Man",
     "Somewhere in Time",
@@ -58,6 +59,7 @@
   "1985": [
     "Back to the Future",
     "Clue",
+    "Nevado del Ruiz Eruption",
     "Out of Africa",
     "Ran",
     "The Color Purple",
@@ -126,6 +128,7 @@
     "Losing My Religion",
     "Nevermind",
     "Outlander",
+    "Pinatubo Eruption",
     "Raise the Red Lantern",
     "Robin Hood: Prince of Thieves",
     "Smells Like Teen Spirit",
@@ -335,6 +338,7 @@
     "Hairspray",
     "Harry Potter and the Deathly Hallows",
     "Harry Potter and the Order of the Phoenix",
+    "Juno",
     "My Blueberry Nights",
     "No Country for Old Men",
     "Pirates of the Caribbean: At World's End",
@@ -361,6 +365,7 @@
     "Arrietty",
     "Death's End",
     "Deepwater Horizon",
+    "Eyjafjallajökull Eruption",
     "Harry Potter and the Deathly Hallows: Part 1",
     "Hot Tub Time Machine",
     "Red",
@@ -723,6 +728,7 @@
   ],
   "1780s": [
     "Don Giovanni",
+    "Laki Eruption",
     "The Shays' Rebellion",
     "Washington"
   ],
@@ -788,6 +794,7 @@
     "Monroe",
     "Pride and Prejudice",
     "Tambora",
+    "Tambora Eruption",
     "The Barber of Seville",
     "The Hundred Days",
     "The Latin American Wars of Independence",
@@ -883,6 +890,7 @@
     "Harrison",
     "Hayes",
     "Krakatoa",
+    "Krakatoa Eruption",
     "Leo",
     "Mary Baker Eddy",
     "Pinocchio",
@@ -917,6 +925,7 @@
     "Handel",
     "Jefferson",
     "John Wesley",
+    "Laki Eruption",
     "Madison",
     "Michel Ney",
     "Mozart",
@@ -947,6 +956,7 @@
     "GMC",
     "Helen Keller",
     "Madame Butterfly",
+    "Mount Pelée Eruption",
     "Rasputin",
     "Rockefeller",
     "Rolls-Royce",
@@ -1600,8 +1610,10 @@
     "Mehmet Ali Agca",
     "Metal Gear",
     "Monkey",
+    "Mount St. Helens Eruption",
     "My Neighbor Totoro",
     "National Lampoon's Christmas Vacation",
+    "Nevado del Ruiz Eruption",
     "Norwegian Wood",
     "Ordinary People",
     "Out of Africa",
@@ -1742,6 +1754,7 @@
     "Oh, the Places You'll Go!",
     "Othello",
     "Outlander",
+    "Pinatubo Eruption",
     "Pokemon",
     "Porco Rosso",
     "Prince",
@@ -1890,6 +1903,7 @@
     "Joseph Smith",
     "June 18th, 1815",
     "Krakatoa",
+    "Krakatoa Eruption",
     "La Bohème",
     "La Garde meurt, elle ne se rend pas!",
     "La Traviata",
@@ -1941,6 +1955,7 @@
     "Studebaker",
     "Susan B. Anthony",
     "Tambora",
+    "Tambora Eruption",
     "Taylor",
     "Tesla",
     "The Adventures of Tom Sawyer",
@@ -2105,6 +2120,7 @@
     "Inglourious Basterds",
     "Insomnia",
     "Jordan",
+    "Juno",
     "Kafka on the Shore",
     "Katrina",
     "Kill Bill: Volume 1",
@@ -2197,6 +2213,7 @@
     "Drake",
     "Edge of Tomorrow",
     "Elsa",
+    "Eyjafjallajökull Eruption",
     "F-35",
     "Fortnite",
     "Fukushima",
@@ -2732,6 +2749,8 @@
     "Miyazaki",
     "Morpheus",
     "Mothra",
+    "Mount Pelée Eruption",
+    "Mount St. Helens Eruption",
     "Mr. Freeze",
     "Mustang",
     "My Fair Lady",
@@ -2744,6 +2763,7 @@
     "Nasser",
     "National Lampoon's Christmas Vacation",
     "Neo",
+    "Nevado del Ruiz Eruption",
     "Nevermind",
     "Nick Fury",
     "Nicole Brown Simpson",
@@ -2782,6 +2802,7 @@
     "Peter Pan",
     "Petrie",
     "Peyton Place",
+    "Pinatubo Eruption",
     "Pinnochio",
     "Piper",
     "Platoon",
@@ -3196,6 +3217,7 @@
     "Elizabeth",
     "Elsa",
     "Everything Everywhere All at Once",
+    "Eyjafjallajökull Eruption",
     "Ezio Auditore",
     "F-35",
     "Film",
@@ -3248,6 +3270,7 @@
     "Jojo Rabbit",
     "Joker",
     "Jordan",
+    "Juno",
     "Justin Bieber",
     "Kafka on the Shore",
     "Kate & Leopold",
@@ -4173,32 +4196,43 @@
     "Allosaurus",
     "Ambulocetus",
     "Ammonites",
+    "Andalgalornis",
     "Ankylosaurus",
     "Anomalocaris",
+    "Ant",
     "Apatosaurus",
     "Archaeopteryx",
     "Ardipithecus",
     "Argentinosaurus",
+    "Arthropleura",
     "Aurochs",
     "Australopithecus",
     "Basilosaurus",
     "Bear",
     "Bee",
+    "Beetle",
     "Blue Jay",
     "Blue Whale",
     "Brachchiopods",
     "Brachiosaurus",
+    "Brontornis",
+    "Butterfly",
     "Camarasaurus",
     "Cardinal",
     "Carnotaurus",
     "Cassowary",
     "Cat",
+    "Centipede",
     "Chasmosaurus",
     "Chicken",
+    "Coelacanth",
     "Coelophysis",
     "Confuciusornis",
     "Corythosaurus",
     "Cow",
+    "Crab",
+    "Crayfish",
+    "Cricket",
     "Crow",
     "Deinonychus",
     "Deinotherium",
@@ -4208,18 +4242,25 @@
     "Dodo",
     "Dog",
     "Dolphin",
+    "Dragonfly",
     "Eagle",
     "Edmontosaurus",
     "Elasmosaurus",
     "Elephant",
     "Emu",
     "Euoplocephalus",
+    "Eurypterid",
     "Falcon",
+    "Firefly",
+    "Flea",
+    "Fly",
     "Fox",
     "Gastornis",
     "Giganotosaurus",
+    "Glossopteris",
     "Goat",
     "Graptolites",
+    "Grasshopper",
     "Great White Shark",
     "Ground Sloth",
     "Hallucigenia",
@@ -4228,49 +4269,71 @@
     "Humpback Whale",
     "Hyaenodon",
     "Ichthyosaurus",
+    "Jaekelopterus",
+    "Kelenken",
     "Kentrosaurus",
     "Killer Whale",
     "Kiwi",
+    "Ladybug",
     "Lambeosaurus",
+    "Lepidodendron",
     "Lion",
     "Livyatan",
+    "Lobster",
     "Macaw",
     "Mammoth",
     "Megalodon",
+    "Meganeura",
+    "Meganeuropsis",
     "Microraptor",
+    "Millipede",
     "Mosasaurus",
+    "Mosquito",
+    "Moth",
     "Opabinia",
     "Ostrich",
     "Owl",
     "Paraceratherium",
     "Parasaurolophus",
     "Parrot",
+    "Patagornis",
     "Penguin",
+    "Phorusrhacos",
     "Plateosaurus",
     "Plesiadapis",
     "Plesiosaurus",
     "Protoceratops",
     "Pteranodon",
     "Pterodactyl",
+    "Pterygotus",
     "Quetzalcoatlus",
     "Rabbit",
     "Rat",
     "Raven",
     "Rhea",
     "Robin",
+    "Scorpion",
     "Shark",
     "Sheep",
     "Shonisaurus",
+    "Shrimp",
+    "Sigillaria",
     "Sinornithosaurus",
     "Smilodon",
+    "Spider",
     "Spinosaurus",
     "Stegosaurus",
     "Styracosaurus",
     "Swan",
     "T-Rex",
     "Tanystropheus",
+    "Tarantula",
+    "Termite",
+    "Tick",
     "Tiger",
+    "Titanis",
     "Titanoboa",
+    "Titanomyrma",
     "Triceratops",
     "Trilobite",
     "Trilobites",
@@ -4278,6 +4341,8 @@
     "Utahraptor",
     "Velociraptor",
     "Vulture",
+    "Wasp",
+    "Williamsonia",
     "Wolf",
     "Woolly Rhinoceros",
     "Zebra"
@@ -4423,17 +4488,38 @@
   ],
   "Arthropods": [
     "Ant",
+    "Arthropleura",
     "Bee",
     "Beetle",
     "Butterfly",
+    "Centipede",
     "Crab",
+    "Crayfish",
+    "Dragonfly",
+    "Eurypterid",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Grasshopper",
     "Hallucigenia",
+    "Jaekelopterus",
+    "Ladybug",
     "Lobster",
+    "Meganeura",
+    "Meganeuropsis",
+    "Millipede",
+    "Mosquito",
+    "Pterygotus",
     "Scorpion",
+    "Shrimp",
     "Spider",
     "Tarantula",
+    "Termite",
+    "Tick",
+    "Titanomyrma",
     "Trilobite",
-    "Trilobites"
+    "Trilobites",
+    "Wasp"
   ],
   "Artists": [
     "Da Vinci",
@@ -4516,6 +4602,10 @@
     "Galileo",
     "Kepler"
   ],
+  "Astronomical Events": [
+    "Formation of Earth",
+    "Formation of Moon"
+  ],
   "Astronomical Objects": [
     "Aurora",
     "Black Hole",
@@ -4553,6 +4643,9 @@
     "Ruth",
     "Sugar Ray",
     "Wayne Gretzky"
+  ],
+  "Atmospheric Changes": [
+    "Great Oxygenation Event"
   ],
   "Australian Architecture": [
     "Sydney Opera House"
@@ -4842,9 +4935,11 @@
   ],
   "Birds": [
     "Albatross",
+    "Andalgalornis",
     "Archaeopteryx",
     "Big Bird",
     "Blue Jay",
+    "Brontornis",
     "Cardinal",
     "Cassowary",
     "Chicken",
@@ -4863,6 +4958,7 @@
     "Gull",
     "Hawk",
     "Hummingbird",
+    "Kelenken",
     "Kiwi",
     "Macaw",
     "Magpie",
@@ -4870,10 +4966,12 @@
     "Ostrich",
     "Owl",
     "Parrot",
+    "Patagornis",
     "Pelican",
     "Penguin",
     "Petrel",
     "Phoenix",
+    "Phorusrhacos",
     "Puffin",
     "Raptor",
     "Raven",
@@ -4885,6 +4983,7 @@
     "Sparrow",
     "Swan",
     "Tern",
+    "Titanis",
     "Turkey",
     "Vulture",
     "Zazu"
@@ -5413,8 +5512,12 @@
   "Cambrian Period": [
     "Anomalocaris",
     "Cambrian Explosion",
+    "Crab",
+    "Crayfish",
     "Hallucigenia",
+    "Lobster",
     "Opabinia",
+    "Shrimp",
     "Trilobite"
   ],
   "Camera Companies": [
@@ -5497,6 +5600,33 @@
     "Challenger",
     "Mustang"
   ],
+  "Carboniferous Period": [
+    "Arthropleura",
+    "Calamites",
+    "Centipede",
+    "Club Moss",
+    "Coelacanth",
+    "Crab",
+    "Crayfish",
+    "Dragonfly",
+    "Eurypterid",
+    "Fern",
+    "Formation of Pangea",
+    "Horsetail",
+    "Jaekelopterus",
+    "Lepidodendron",
+    "Lichen",
+    "Lobster",
+    "Meganeura",
+    "Meganeuropsis",
+    "Millipede",
+    "Moss",
+    "Scorpion",
+    "Shrimp",
+    "Sigillaria",
+    "Spider",
+    "Tarantula"
+  ],
   "Card Games": [
     "Bridge",
     "Euchre",
@@ -5515,23 +5645,31 @@
     "Yugioh"
   ],
   "Carnivores": [
+    "Albatross",
     "Allosaurus",
     "Ambulocetus",
     "Ammonites",
+    "Andalgalornis",
     "Anomalocaris",
     "Archaeopteryx",
     "Basilosaurus",
     "Bear",
     "Bowser",
+    "Brontornis",
     "Carnotaurus",
     "Cat",
+    "Centipede",
     "Chomper",
+    "Coelacanth",
+    "Coelophysis",
     "Deinonychus",
     "Dimetrodon",
     "Dire Wolf",
+    "Dolphin",
     "Eagle",
     "Elasmosaurus",
     "Falcon",
+    "Flea",
     "Fox",
     "Gamera",
     "Garfield",
@@ -5543,8 +5681,10 @@
     "Humpback Whale",
     "Hyaenodon",
     "Ichthyosaurus",
+    "Kelenken",
     "Killer Whale",
     "King Ghidorah",
+    "Ladybug",
     "Lion",
     "Livyatan",
     "MechaGodzilla",
@@ -5552,28 +5692,42 @@
     "Microraptor",
     "Moby Dick",
     "Mosasaurus",
+    "Mosquito",
     "Nala",
+    "Owl",
+    "Patagornis",
     "Penguin",
     "Petrie",
+    "Phorusrhacos",
     "Plesiosaurus",
     "Pteranodon",
     "Pterodactyl",
     "Quetzalcoatlus",
     "Rodan",
+    "Scorpion",
     "Shark",
     "Shonisaurus",
     "Simba",
     "Sinornithosaurus",
     "Smilodon",
+    "Spider",
     "Spinosaurus",
     "T-Rex",
     "Tanystropheus",
+    "Tarantula",
+    "Tick",
     "Tiger",
+    "Titanis",
     "Titanoboa",
     "Utahraptor",
     "Velociraptor",
+    "Venus Flytrap",
     "Vulture",
+    "Wasp",
     "Wolf"
+  ],
+  "Carnivorous Plants": [
+    "Venus Flytrap"
   ],
   "Cars": [
     "Acura",
@@ -5633,7 +5787,202 @@
     "Garfield"
   ],
   "Cenozoic Era": [
-    "Megalodon"
+    "Albatross",
+    "Almond",
+    "Aloe",
+    "Andalgalornis",
+    "Ant",
+    "Asparagus",
+    "Bamboo",
+    "Barley",
+    "Basil",
+    "Bay Leaf",
+    "Bear",
+    "Bee",
+    "Beetle",
+    "Blackberry",
+    "Blue Jay",
+    "Blue Whale",
+    "Blueberry",
+    "Boysenberry",
+    "Bristlecone Pine",
+    "Broccoli",
+    "Brontornis",
+    "Butterfly",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Cardinal",
+    "Carrot",
+    "Cashew",
+    "Cassowary",
+    "Cat",
+    "Cauliflower",
+    "Celery",
+    "Centipede",
+    "Chamomile",
+    "Cherry Blossom",
+    "Chicken",
+    "Cilantro",
+    "Cinnamon",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Club Moss",
+    "Coconut",
+    "Coelacanth",
+    "Coffee Plant",
+    "Corn",
+    "Cow",
+    "Crab",
+    "Cranberry",
+    "Crayfish",
+    "Cricket",
+    "Crow",
+    "Cucumber",
+    "Currant",
+    "Cycad",
+    "Daisy",
+    "Dandelion",
+    "Date",
+    "Dewberry",
+    "Dill",
+    "Dog",
+    "Dolphin",
+    "Dragonfly",
+    "Eagle",
+    "Echinacea",
+    "Eggplant",
+    "Elderberry",
+    "Elephant",
+    "Emu",
+    "Falcon",
+    "Fern",
+    "Fig",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Formation of Himalayas",
+    "Formation of Rocky Mountains",
+    "Fox",
+    "Garlic",
+    "Ginger",
+    "Ginkgo",
+    "Ginseng",
+    "Goat",
+    "Gooseberry",
+    "Grape",
+    "Grasshopper",
+    "Great White Shark",
+    "Hawk",
+    "Hazelnut",
+    "Horse",
+    "Horsetail",
+    "Huckleberry",
+    "Humpback Whale",
+    "Kale",
+    "Kelenken",
+    "Killer Whale",
+    "Kiwi",
+    "Ladybug",
+    "Last Glacial Maximum",
+    "Lavender",
+    "Lettuce",
+    "Lichen",
+    "Lily",
+    "Lingonberry",
+    "Lion",
+    "Lobster",
+    "Loganberry",
+    "Macadamia",
+    "Macaw",
+    "Maple",
+    "Marionberry",
+    "Megalodon",
+    "Millipede",
+    "Mint",
+    "Mosquito",
+    "Moss",
+    "Moth",
+    "Mulberry",
+    "Nutmeg",
+    "Oak",
+    "Oats",
+    "Olive",
+    "Onion",
+    "Orchid",
+    "Oregano",
+    "Ostrich",
+    "Owl",
+    "Palm",
+    "Parrot",
+    "Parsley",
+    "Patagornis",
+    "Peanut",
+    "Pecan",
+    "Penguin",
+    "Pepper",
+    "Phorusrhacos",
+    "Pine",
+    "Pistachio",
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Rabbit",
+    "Raspberry",
+    "Rat",
+    "Raven",
+    "Redwood",
+    "Rhea",
+    "Rice",
+    "Robin",
+    "Rose",
+    "Rosemary",
+    "Rye",
+    "Saffron",
+    "Sage",
+    "Salmonberry",
+    "Scorpion",
+    "Sequoia",
+    "Shark",
+    "Sheep",
+    "Shrimp",
+    "Soybean",
+    "Spider",
+    "Spinach",
+    "Squash",
+    "Strawberry",
+    "Sunflower",
+    "Swan",
+    "Tarantula",
+    "Tayberry",
+    "Tea Plant",
+    "Termite",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tick",
+    "Tiger",
+    "Titanis",
+    "Titanomyrma",
+    "Tomato",
+    "Tulip",
+    "Turkey",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Vulture",
+    "Walnut",
+    "Wasp",
+    "Wheat",
+    "Willow",
+    "Wineberry",
+    "Wolf",
+    "Youngberry",
+    "Younger Dryas",
+    "Zebra",
+    "Zucchini"
   ],
   "Ceratopsians": [
     "Cera",
@@ -5829,6 +6178,7 @@
     "New York",
     "Oklahoma City",
     "Olympia",
+    "Omaha",
     "Palm Springs",
     "Panmunjom",
     "Paris",
@@ -5987,6 +6337,7 @@
     "New York",
     "Oklahoma City",
     "Olympia",
+    "Omaha",
     "Palm Springs",
     "Phoenix",
     "Pierre",
@@ -6060,6 +6411,7 @@
     "New York",
     "Oklahoma City",
     "Olympia",
+    "Omaha",
     "Palm Springs",
     "Phoenix",
     "Pierre",
@@ -6230,6 +6582,11 @@
   ],
   "Classical Music": [
     "Andrea Bocelli"
+  ],
+  "Climate Change": [
+    "Last Glacial Maximum",
+    "Snowball Earth",
+    "Younger Dryas"
   ],
   "Clothing": [
     "Bikini",
@@ -6404,6 +6761,7 @@
     "How the Grinch Stole Christmas",
     "Jingle All the Way",
     "Jojo Rabbit",
+    "Juno",
     "Kate & Leopold",
     "Kind Hearts and Coronets",
     "Kung Fu Panda",
@@ -6596,6 +6954,10 @@
     "On the Road",
     "The Bell Jar",
     "The Wind-Up Bird Chronicle"
+  ],
+  "Continental Drift": [
+    "Breakup of Pangea",
+    "Formation of Pangea"
   ],
   "Cooling Devices": [
     "AC",
@@ -7251,32 +7613,68 @@
     "Rodeo"
   ],
   "Cretaceous Period": [
+    "Allosaurus",
     "Ankylosaurus",
+    "Ant",
+    "Apatosaurus",
     "Argentinosaurus",
+    "Bee",
+    "Bennettitales",
+    "Brachiosaurus",
+    "Breakup of Pangea",
+    "Bristlecone Pine",
+    "Camarasaurus",
     "Carnotaurus",
+    "Centipede",
     "Chasmosaurus",
     "Chicxulub Impact",
+    "Club Moss",
+    "Coelacanth",
     "Confuciusornis",
     "Corythosaurus",
+    "Crab",
+    "Crayfish",
+    "Cycad",
+    "Deccan Traps Eruption",
     "Deinonychus",
+    "Diplodocus",
+    "Dragonfly",
     "Edmontosaurus",
     "Elasmosaurus",
     "Euoplocephalus",
+    "Fern",
     "Giganotosaurus",
+    "Ginkgo",
+    "Horsetail",
     "Lambeosaurus",
+    "Lichen",
+    "Lobster",
     "Microraptor",
+    "Millipede",
     "Mosasaurus",
+    "Moss",
+    "Opening of Atlantic Ocean",
     "Parasaurolophus",
     "Protoceratops",
     "Pteranodon",
     "Quetzalcoatlus",
+    "Redwood",
+    "Scorpion",
+    "Sequoia",
+    "Shrimp",
     "Sinornithosaurus",
+    "Spider",
     "Spinosaurus",
+    "Stegosaurus",
     "Styracosaurus",
     "T-Rex",
+    "Tarantula",
+    "Termite",
     "Triceratops",
     "Utahraptor",
-    "Velociraptor"
+    "Velociraptor",
+    "Wasp",
+    "Williamsonia"
   ],
   "Crime": [
     "Battery",
@@ -7384,24 +7782,37 @@
   ],
   "Currently Living Animals": [
     "Albatross",
+    "Ant",
     "Bear",
     "Bee",
+    "Beetle",
     "Blue Jay",
     "Blue Whale",
+    "Butterfly",
     "Cardinal",
     "Cassowary",
     "Cat",
+    "Centipede",
     "Chicken",
+    "Coelacanth",
     "Cormorant",
+    "Crab",
+    "Crayfish",
+    "Cricket",
     "Crow",
     "Dog",
+    "Dragonfly",
     "Drake",
     "Eagle",
     "Elephant",
     "Emu",
     "Falcon",
+    "Firefly",
     "Flamingo",
+    "Flea",
+    "Fly",
     "Gannet",
+    "Grasshopper",
     "Great White Shark",
     "Gull",
     "Hawk",
@@ -7409,9 +7820,14 @@
     "Humpback Whale",
     "Killer Whale",
     "Kiwi",
+    "Ladybug",
     "Lion",
+    "Lobster",
     "Macaw",
     "Magpie",
+    "Millipede",
+    "Mosquito",
+    "Moth",
     "Ostrich",
     "Owl",
     "Parrot",
@@ -7423,15 +7839,136 @@
     "Raven",
     "Rhea",
     "Robin",
+    "Scorpion",
     "Seahawk",
     "Shark",
+    "Shrimp",
     "Sparrow",
+    "Spider",
     "Swan",
+    "Tarantula",
+    "Termite",
     "Tern",
+    "Tick",
     "Tiger",
     "Turkey",
     "Vulture",
+    "Wasp",
     "Wolf"
+  ],
+  "Currently Living Plants": [
+    "Almond",
+    "Aloe",
+    "Asparagus",
+    "Bamboo",
+    "Barley",
+    "Bay Leaf",
+    "Birch",
+    "Blackberry",
+    "Boysenberry",
+    "Bristlecone Pine",
+    "Broccoli",
+    "Buttercup",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Carrot",
+    "Cashew",
+    "Cauliflower",
+    "Cedar",
+    "Celery",
+    "Chamomile",
+    "Cherry Blossom",
+    "Cilantro",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Club Moss",
+    "Coconut",
+    "Coffee Plant",
+    "Coral",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Currant",
+    "Cycad",
+    "Daisy",
+    "Dandelion",
+    "Date",
+    "Dewberry",
+    "Dill",
+    "Echinacea",
+    "Elderberry",
+    "Fern",
+    "Fig",
+    "Garlic",
+    "Ginger",
+    "Ginkgo",
+    "Ginseng",
+    "Gooseberry",
+    "Hazelnut",
+    "Heather",
+    "Horsetail",
+    "Huckleberry",
+    "Iris",
+    "Ivy",
+    "Kale",
+    "Lavender",
+    "Lichen",
+    "Lily",
+    "Lingonberry",
+    "Loganberry",
+    "Macadamia",
+    "Maple",
+    "Marionberry",
+    "Mayflower",
+    "Mint",
+    "Moss",
+    "Mulberry",
+    "Oak",
+    "Oats",
+    "Olive",
+    "Orchid",
+    "Oregano",
+    "Palm",
+    "Parsley",
+    "Peanut",
+    "Pecan",
+    "Pepper",
+    "Pine",
+    "Pistachio",
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Raspberry",
+    "Redwood",
+    "Rice",
+    "Rose",
+    "Rosemary",
+    "Saffron",
+    "Salmonberry",
+    "Sequoia",
+    "Soybean",
+    "Spinach",
+    "Squash",
+    "Strawberry",
+    "Sunflower",
+    "Tayberry",
+    "Tea Plant",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tulip",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Walnut",
+    "Wheat",
+    "Willow",
+    "Wineberry",
+    "Youngberry",
+    "Zucchini"
   ],
   "D&D Stats": [
     "CHA",
@@ -7440,6 +7977,13 @@
     "INT",
     "STR",
     "WIS"
+  ],
+  "D-Day Beaches": [
+    "Gold",
+    "Juno",
+    "Omaha",
+    "Sword",
+    "Utah"
   ],
   "DC Characters": [
     "Batman",
@@ -7570,20 +8114,41 @@
     "Tres Leches",
     "Trifle"
   ],
+  "Devonian Period": [
+    "Centipede",
+    "Club Moss",
+    "Coelacanth",
+    "Crab",
+    "Crayfish",
+    "Eurypterid",
+    "Fern",
+    "Horsetail",
+    "Jaekelopterus",
+    "Lichen",
+    "Lobster",
+    "Millipede",
+    "Moss",
+    "Pterygotus",
+    "Scorpion",
+    "Shrimp",
+    "Spider",
+    "Tarantula"
+  ],
   "Dinosaur Stories": [
     "The Land Before Time"
   ],
   "Dinosaurs": [
     "Albatross",
     "Allosaurus",
+    "Andalgalornis",
     "Ankylosaurus",
     "Apatosaurus",
     "Archaeopteryx",
     "Argentinosaurus",
-    "Bee",
     "Big Bird",
     "Blue Jay",
     "Brachiosaurus",
+    "Brontornis",
     "Camarasaurus",
     "Cardinal",
     "Carnotaurus",
@@ -7613,6 +8178,7 @@
     "Gull",
     "Hawk",
     "Hummingbird",
+    "Kelenken",
     "Kentrosaurus",
     "Kiwi",
     "Lambeosaurus",
@@ -7624,10 +8190,12 @@
     "Owl",
     "Parasaurolophus",
     "Parrot",
+    "Patagornis",
     "Pelican",
     "Penguin",
     "Petrel",
     "Phoenix",
+    "Phorusrhacos",
     "Plateosaurus",
     "Protoceratops",
     "Puffin",
@@ -7647,6 +8215,7 @@
     "Swan",
     "T-Rex",
     "Tern",
+    "Titanis",
     "Triceratops",
     "Turkey",
     "Utahraptor",
@@ -7672,16 +8241,24 @@
     "Concordia",
     "Deepwater Horizon",
     "Empress of Ireland",
+    "Eyjafjallajökull Eruption",
     "Fallout",
     "Fukushima",
     "Herculaneum",
     "Hindenburg",
     "Katrina",
     "Krakatoa",
+    "Krakatoa Eruption",
+    "Laki Eruption",
     "Lusitania",
+    "Mount Pelée Eruption",
+    "Mount St. Helens Eruption",
+    "Nevado del Ruiz Eruption",
     "Permian-Triassic Extinction",
+    "Pinatubo Eruption",
     "Pompeii",
     "Tambora",
+    "Tambora Eruption",
     "The Chernobyl Disaster",
     "The Dust Bowl",
     "The Titanic Disaster",
@@ -8700,7 +9277,8 @@
     "Kreplach",
     "Peach",
     "Princess Peach",
-    "Rugelach"
+    "Rugelach",
+    "Spinach"
   ],
   "Ends with ACK": [
     "Backpack",
@@ -8762,6 +9340,7 @@
   ],
   "Ends with AGE": [
     "All the world's a stage",
+    "Cabbage",
     "Carthage",
     "Ice Age",
     "Sage",
@@ -8777,6 +9356,9 @@
     "Santiago",
     "Trinidad and Tobago"
   ],
+  "Ends with AHA": [
+    "Omaha"
+  ],
   "Ends with AHU": [
     "Oahu"
   ],
@@ -8789,6 +9371,7 @@
   "Ends with AIL": [
     "Beaver Tail",
     "Caesar Cocktail",
+    "Horsetail",
     "Sail"
   ],
   "Ends with AIN": [
@@ -8858,6 +9441,7 @@
     "Blue Whale",
     "Florence Nightingale",
     "Humpback Whale",
+    "Kale",
     "Killer Whale",
     "Tamale",
     "Tell‑Tale",
@@ -8890,6 +9474,9 @@
     "Vauxhall",
     "Volleyball",
     "Wonderwall"
+  ],
+  "Ends with ALM": [
+    "Palm"
   ],
   "Ends with ALO": [
     "Buffalo",
@@ -9018,6 +9605,7 @@
   "Ends with ANO": [
     "Marciano",
     "Mole Poblano",
+    "Oregano",
     "Piano",
     "Volcano"
   ],
@@ -9030,12 +9618,15 @@
   ],
   "Ends with ANT": [
     "Ant",
+    "Coffee Plant",
     "Cormorant",
     "Croissant",
+    "Currant",
     "Eggplant",
     "Elephant",
     "Giant",
     "Grant",
+    "Tea Plant",
     "The Revenant"
   ],
   "Ends with ANY": [
@@ -9154,7 +9745,8 @@
     "Hereditary",
     "Hungary",
     "Mary",
-    "Queen Mary"
+    "Queen Mary",
+    "Rosemary"
   ],
   "Ends with AS!": [
     "La Garde meurt, elle ne se rend pas!"
@@ -9173,10 +9765,14 @@
     "Crash",
     "Flash",
     "Hash",
+    "Squash",
     "The Wall Street Crash"
   ],
   "Ends with ASO": [
     "Burkina Faso"
+  ],
+  "Ends with ASP": [
+    "Wasp"
   ],
   "Ends with ASS": [
     "Glass",
@@ -9203,6 +9799,7 @@
     "The Mahabharata"
   ],
   "Ends with ATE": [
+    "Date",
     "First Triumvirate",
     "Frigate",
     "Hot Chocolate",
@@ -9232,10 +9829,12 @@
     "Gelato",
     "NATO",
     "Plato",
+    "Potato",
     "Tomato",
     "Yamato"
   ],
   "Ends with ATS": [
+    "Oats",
     "The Aristocats"
   ],
   "Ends with ATT": [
@@ -9384,6 +9983,7 @@
     "Annabel"
   ],
   "Ends with BER": [
+    "Cucumber",
     "Dream of the Red Chamber",
     "Justin Bieber",
     "November",
@@ -9449,6 +10049,9 @@
     "Carbon",
     "Gabon"
   ],
+  "Ends with BOO": [
+    "Bamboo"
+  ],
   "Ends with BOS": [
     "Phobos"
   ],
@@ -9469,6 +10072,9 @@
   ],
   "Ends with BTS": [
     "BTS"
+  ],
+  "Ends with BUG": [
+    "Ladybug"
   ],
   "Ends with BUL": [
     "Istanbul"
@@ -9493,11 +10099,18 @@
   "Ends with C-3": [
     "DC-3"
   ],
+  "Ends with CAD": [
+    "Cycad"
+  ],
   "Ends with CAL": [
     "Mezcal"
   ],
   "Ends with CAN": [
+    "Pecan",
     "Pelican"
+  ],
+  "Ends with CAO": [
+    "Cacao"
   ],
   "Ends with CAR": [
     "Madagascar",
@@ -9524,6 +10137,9 @@
   "Ends with CCO": [
     "Morocco",
     "Prosecco"
+  ],
+  "Ends with CEA": [
+    "Echinacea"
   ],
   "Ends with CER": [
     "Cancer",
@@ -9603,6 +10219,9 @@
     "Macon",
     "Millennium Falcon",
     "The Maltese Falcon"
+  ],
+  "Ends with COS": [
+    "Phorusrhacos"
   ],
   "Ends with COW": [
     "Cow"
@@ -9846,6 +10465,9 @@
     "Butterhead",
     "Mead"
   ],
+  "Ends with EAF": [
+    "Bay Leaf"
+  ],
   "Ends with EAK": [
     "Bubble and Squeak",
     "Dante's Peak"
@@ -9867,8 +10489,10 @@
     "Green Bean",
     "Indian Ocean",
     "Ocean",
+    "Opening of Atlantic Ocean",
     "Pacific Ocean",
-    "Southern Ocean"
+    "Southern Ocean",
+    "Soybean"
   ],
   "Ends with EAR": [
     "Bear",
@@ -9893,7 +10517,8 @@
     "Frederick the Great",
     "Heat",
     "Montreal Smoked Meat",
-    "Seat"
+    "Seat",
+    "Wheat"
   ],
   "Ends with EAU": [
     "Juneau"
@@ -9925,6 +10550,10 @@
     "The Butterfly Effect",
     "The Human Genome Project",
     "The Manhattan Project"
+  ],
+  "Ends with EDE": [
+    "Centipede",
+    "Millipede"
   ],
   "Ends with EDI": [
     "Return of the Jedi",
@@ -10062,6 +10691,7 @@
     "Pirates of the Caribbean: At World's End"
   ],
   "Ends with ENG": [
+    "Ginseng",
     "Huineng",
     "Li Jiancheng"
   ],
@@ -10082,6 +10712,7 @@
   "Ends with ENT": [
     "Crime and Punishment",
     "Fluorescent",
+    "Great Oxygenation Event",
     "Rent",
     "Suleiman the Magnificent",
     "Terms of Endearment",
@@ -10138,6 +10769,7 @@
     "Sophie, Duchess of Hohenberg"
   ],
   "Ends with ERN": [
+    "Fern",
     "Green Lantern",
     "Raise the Red Lantern",
     "Stern",
@@ -10176,6 +10808,7 @@
   "Ends with ERY": [
     "Archery",
     "Battery",
+    "Celery",
     "Discovery",
     "Montgomery"
   ],
@@ -10323,6 +10956,9 @@
   "Ends with FIC": [
     "South Pacific"
   ],
+  "Ends with FIG": [
+    "Fig"
+  ],
   "Ends with FIN": [
     "Baffin",
     "Griffin",
@@ -10344,6 +10980,9 @@
   ],
   "Ends with FLY": [
     "Butterfly",
+    "Dragonfly",
+    "Firefly",
+    "Fly",
     "Madame Butterfly"
   ],
   "Ends with FOR": [
@@ -10374,6 +11013,10 @@
   "Ends with GE!": [
     "Moulin Rouge!"
   ],
+  "Ends with GEA": [
+    "Breakup of Pangea",
+    "Formation of Pangea"
+  ],
   "Ends with GED": [
     "Scrooged"
   ],
@@ -10398,6 +11041,7 @@
     "Butterfinger",
     "Challenger",
     "Dagger",
+    "Ginger",
     "Hamburger",
     "Niger",
     "Tiger",
@@ -10512,6 +11156,9 @@
     "Puckle Gun",
     "The Naked Gun"
   ],
+  "Ends with GUS": [
+    "Asparagus"
+  ],
   "Ends with H 2": [
     "Queen Elizabeth 2"
   ],
@@ -10566,6 +11213,7 @@
   "Ends with HEN": [
     "Hamantaschen",
     "Hen",
+    "Lichen",
     "Peahen"
   ],
   "Ends with HER": [
@@ -10590,6 +11238,7 @@
     "Krushchev"
   ],
   "Ends with HEW": [
+    "Cashew",
     "Matthew",
     "The Chronicles of Narnia: The Magician's Nephew",
     "The Magician's Nephew"
@@ -10612,7 +11261,8 @@
   ],
   "Ends with HIO": [
     "Pinnochio",
-    "Pinocchio"
+    "Pinocchio",
+    "Pistachio"
   ],
   "Ends with HKA": [
     "Kishka"
@@ -10726,6 +11376,7 @@
     "Kiki's Delivery Service",
     "Mango Sticky Rice",
     "Pride and Prejudice",
+    "Rice",
     "Spice",
     "The Merchant of Venice",
     "The Police",
@@ -10741,7 +11392,8 @@
     "Buick",
     "Moby Dick",
     "Saint Patrick",
-    "Stick"
+    "Stick",
+    "Tick"
   ],
   "Ends with ICO": [
     "Commentarii de Bello Gallico",
@@ -10857,6 +11509,7 @@
     "The Call of the Wild"
   ],
   "Ends with ILE": [
+    "Chamomile",
     "Chile",
     "Nile",
     "The Green Mile"
@@ -10868,6 +11521,7 @@
     "All You Need Is Kill",
     "Birth Control Pill",
     "Blue Pill",
+    "Dill",
     "From Up on Poppy Hill",
     "Jill",
     "Red Pill",
@@ -10901,6 +11555,9 @@
   "Ends with IMI": [
     "Sashimi"
   ],
+  "Ends with IMP": [
+    "Shrimp"
+  ],
   "Ends with INA": [
     "Argentina",
     "Bosnia and Herzegovina",
@@ -10920,6 +11577,7 @@
     "Nevermind"
   ],
   "Ends with INE": [
+    "Bristlecone Pine",
     "Catherine",
     "Farewell My Concubine",
     "Fettuccine",
@@ -11015,7 +11673,8 @@
     "Santorini",
     "Tahini",
     "Tortellini",
-    "Toscanini"
+    "Toscanini",
+    "Zucchini"
   ],
   "Ends with INK": [
     "BLACKPINK"
@@ -11026,10 +11685,12 @@
     "San Marino"
   ],
   "Ends with INS": [
+    "Formation of Rocky Mountains",
     "Mary Poppins"
   ],
   "Ends with INT": [
     "INT",
+    "Mint",
     "Vantage Point"
   ],
   "Ends with INY": [
@@ -11046,24 +11707,35 @@
     "Chu–Han Contention",
     "Concepcion",
     "Damnation",
+    "Dandelion",
+    "Deccan Traps Eruption",
+    "Eyjafjallajökull Eruption",
     "Federation",
     "Iranian Revolution",
+    "Krakatoa Eruption",
+    "Laki Eruption",
     "Lion",
     "Losing My Religion",
+    "Mount Pelée Eruption",
+    "Mount St. Helens Eruption",
     "My Generation",
     "National Lampoon's Christmas Vacation",
+    "Nevado del Ruiz Eruption",
     "Onion",
     "Orion",
     "Permian-Triassic Extinction",
+    "Pinatubo Eruption",
     "Pinion",
     "Predestination",
     "Pulp Fiction",
     "Red Dead Redemption",
     "Resolution",
     "Scorpion",
+    "Siberian Traps Eruption",
     "Soviet Union",
     "Stallion",
     "Superstition",
+    "Tambora Eruption",
     "Television",
     "The American Revolution",
     "The Boxer Rebellion",
@@ -11171,6 +11843,7 @@
     "Nicoise"
   ],
   "Ends with ISH": [
+    "Crayfish",
     "Death Wish",
     "Gefilte Fish",
     "Wish"
@@ -11215,6 +11888,7 @@
     "Ellen G. White",
     "Fortnite",
     "Parasite",
+    "Termite",
     "The realm, long divided, must unite",
     "Trilobite"
   ],
@@ -11230,7 +11904,8 @@
     "Tahiti"
   ],
   "Ends with ITO": [
-    "Burrito"
+    "Burrito",
+    "Mosquito"
   ],
   "Ends with ITS": [
     "Time Bandits"
@@ -11360,6 +12035,7 @@
     "Butter Chicken",
     "Chicken",
     "Fried Chicken",
+    "Kelenken",
     "Kraken",
     "Kung Pao Chicken",
     "Orange Chicken"
@@ -11397,6 +12073,9 @@
     "Turkey",
     "Whiskey"
   ],
+  "Ends with KGO": [
+    "Ginkgo"
+  ],
   "Ends with KIA": [
     "Czechoslovakia",
     "Kia",
@@ -11410,7 +12089,8 @@
     "Cookie"
   ],
   "Ends with KIN": [
-    "Napkin"
+    "Napkin",
+    "Pumpkin"
   ],
   "Ends with KKI": [
     "Tteokbokki"
@@ -11487,6 +12167,9 @@
     "Matilda",
     "The Legend of Zelda"
   ],
+  "Ends with LEA": [
+    "Flea"
+  ],
   "Ends with LED": [
     "Bobsled",
     "Hard Boiled",
@@ -11533,6 +12216,7 @@
     "Achilles",
     "Anne of Green Gables",
     "Beatles",
+    "Bennettitales",
     "Dan Dan Noodles",
     "Hercules",
     "Holes",
@@ -11554,12 +12238,14 @@
   ],
   "Ends with LEY": [
     "Annie Oakley",
+    "Barley",
     "Bentley",
     "Galley",
     "John Wesley",
     "Mary Kingsley",
     "Mary Shelley",
-    "McKinley"
+    "McKinley",
+    "Parsley"
   ],
   "Ends with LFI": [
     "Kulfi"
@@ -11588,6 +12274,7 @@
     "Central African Republic",
     "Czech Republic",
     "Dominican Republic",
+    "Garlic",
     "United Arab Republic"
   ],
   "Ends with LIE": [
@@ -11624,7 +12311,8 @@
     "Paella",
     "Quesadilla",
     "Sulla",
-    "Tortilla"
+    "Tortilla",
+    "Vanilla"
   ],
   "Ends with LLE": [
     "Belle",
@@ -11660,6 +12348,9 @@
   "Ends with LOC": [
     "Communist Bloc"
   ],
+  "Ends with LOE": [
+    "Aloe"
+  ],
   "Ends with LON": [
     "Biathlon",
     "Ceylon",
@@ -11680,6 +12371,7 @@
   ],
   "Ends with LOW": [
     "High and Low",
+    "Willow",
     "Yellow"
   ],
   "Ends with LOX": [
@@ -11845,7 +12537,8 @@
   ],
   "Ends with MIA": [
     "Bohemia",
-    "John of Bohemia"
+    "John of Bohemia",
+    "Macadamia"
   ],
   "Ends with MIC": [
     "Crack Epidemic",
@@ -11872,6 +12565,9 @@
   "Ends with MOI": [
     "L'etat c'est moi"
   ],
+  "Ends with MOM": [
+    "Cardamom"
+  ],
   "Ends with MON": [
     "Cinnamon",
     "Lemon",
@@ -11887,6 +12583,9 @@
   "Ends with MOS": [
     "Deimos",
     "Los Alamos"
+  ],
+  "Ends with MUM": [
+    "Last Glacial Maximum"
   ],
   "Ends with MUN": [
     "Gulab Jamun"
@@ -12107,7 +12806,8 @@
     "Slovenia",
     "Tanzania",
     "The Chronicles of Narnia",
-    "Virginia"
+    "Virginia",
+    "Williamsonia"
   ],
   "Ends with NIC": [
     "Britannic",
@@ -12133,11 +12833,15 @@
     "Sleipnir"
   ],
   "Ends with NIS": [
+    "Andalgalornis",
+    "Brontornis",
     "Confuciusornis",
     "Gastornis",
+    "Patagornis",
     "Stennis",
     "Table Tennis",
-    "Tennis"
+    "Tennis",
+    "Titanis"
   ],
   "Ends with NIX": [
     "Harry Potter and the Order of the Phoenix",
@@ -12222,6 +12926,7 @@
     "Triple Entente"
   ],
   "Ends with NTH": [
+    "Coelacanth",
     "Pan's Labyrinth"
   ],
   "Ends with NTI": [
@@ -12245,6 +12950,12 @@
     "Cygnus",
     "Uranus",
     "Venus"
+  ],
+  "Ends with NUT": [
+    "Coconut",
+    "Hazelnut",
+    "Peanut",
+    "Walnut"
   ],
   "Ends with NYA": [
     "Kenya"
@@ -12357,7 +13068,8 @@
     "Roy Cohn"
   ],
   "Ends with OIA": [
-    "Conte di Savoia"
+    "Conte di Savoia",
+    "Sequoia"
   ],
   "Ends with OID": [
     "Void"
@@ -12406,6 +13118,7 @@
   ],
   "Ends with OLI": [
     "Aioli",
+    "Broccoli",
     "Cannoli",
     "Ravioli"
   ],
@@ -12460,6 +13173,7 @@
     "Verona"
   ],
   "Ends with OND": [
+    "Almond",
     "Bond",
     "Richmond"
   ],
@@ -12505,6 +13219,7 @@
     "Once Upon a Time in Hollywood",
     "Red Hood",
     "Red Riding Hood",
+    "Redwood",
     "Robin Hood",
     "Throne of Blood"
   ],
@@ -12532,6 +13247,7 @@
     "Cameroon",
     "Dark Side of the Moon",
     "Dog Day Afternoon",
+    "Formation of Moon",
     "Goodnight Moon",
     "Moon",
     "Platoon",
@@ -12605,6 +13321,7 @@
   ],
   "Ends with ORN": [
     "Capricorn",
+    "Corn",
     "Foghorn Leghorn",
     "Matterhorn",
     "Unicorn"
@@ -12638,6 +13355,8 @@
   ],
   "Ends with OSS": [
     "Albatross",
+    "Club Moss",
+    "Moss",
     "Motocross"
   ],
   "Ends with OSÉ": [
@@ -12703,6 +13422,7 @@
     "Terra Nova"
   ],
   "Ends with OVE": [
+    "Clove",
     "Dr. Strangelove",
     "Glove",
     "In the Mood for Love",
@@ -12777,6 +13497,7 @@
   "Ends with PER": [
     "Chomper",
     "Copper",
+    "Grasshopper",
     "Looper",
     "Newspaper",
     "Paper",
@@ -12829,6 +13550,7 @@
     "Constantinople",
     "Green Apple",
     "I see dead people",
+    "Maple",
     "Ordinary People",
     "Purple",
     "The Color Purple",
@@ -12846,6 +13568,9 @@
   "Ends with PPI": [
     "Battle of Philippi",
     "Mississippi"
+  ],
+  "Ends with PPY": [
+    "Poppy"
   ],
   "Ends with PRI": [
     "Capri"
@@ -12916,7 +13641,8 @@
     "Ran"
   ],
   "Ends with RAP": [
-    "The Parent Trap"
+    "The Parent Trap",
+    "Venus Flytrap"
   ],
   "Ends with RAQ": [
     "Iraq"
@@ -13046,11 +13772,16 @@
     "Nigeria",
     "Sangria",
     "Santa Maria",
+    "Sigillaria",
     "Syria",
     "Transnistria",
     "Victoria"
   ],
+  "Ends with RIC": [
+    "Turmeric"
+  ],
   "Ends with RID": [
+    "Eurypterid",
     "Hagrid",
     "Madrid"
   ],
@@ -13073,6 +13804,7 @@
   "Ends with RIS": [
     "Anomalocaris",
     "Eris",
+    "Glossopteris",
     "Iris",
     "Paris",
     "Tetris"
@@ -13099,7 +13831,8 @@
     "Bodhidharma",
     "Burma",
     "Korma",
-    "Shawarma"
+    "Shawarma",
+    "Titanomyrma"
   ],
   "Ends with RMI": [
     "Enrico Fermi"
@@ -13135,9 +13868,11 @@
     "Dacron",
     "Iron",
     "Juan Peron",
+    "Lepidodendron",
     "Macaron",
     "Omicron",
     "Ron",
+    "Saffron",
     "The Black Cauldron"
   ],
   "Ends with ROR": [
@@ -13150,6 +13885,7 @@
     "Woolly Rhinoceros"
   ],
   "Ends with ROT": [
+    "Carrot",
     "Foxtrot",
     "Parrot"
   ],
@@ -13182,15 +13918,34 @@
     "Francisco Pizarro"
   ],
   "Ends with RRY": [
+    "Blackberry",
     "Blueberry",
+    "Boysenberry",
+    "Cloudberry",
+    "Cranberry",
     "Curry",
+    "Dewberry",
+    "Elderberry",
     "Ferry",
+    "Gooseberry",
     "Green Curry",
     "Harry",
+    "Huckleberry",
+    "Lingonberry",
+    "Loganberry",
+    "Marionberry",
+    "Mulberry",
+    "Raspberry",
     "Red Curry",
+    "Salmonberry",
     "Sherry",
+    "Strawberry",
+    "Tayberry",
+    "Thimbleberry",
     "Tom and Jerry",
-    "Yellow Curry"
+    "Wineberry",
+    "Yellow Curry",
+    "Youngberry"
   ],
   "Ends with RSE": [
     "Horse",
@@ -13205,6 +13960,8 @@
   ],
   "Ends with RTH": [
     "Earth",
+    "Formation of Earth",
+    "Snowball Earth",
     "The Man Who Fell to Earth",
     "The Wandering Earth"
   ],
@@ -13240,6 +13997,7 @@
     "Elbrus",
     "Giganotosaurus",
     "Ichthyosaurus",
+    "Jaekelopterus",
     "Kentrosaurus",
     "Lambeosaurus",
     "Mosasaurus",
@@ -13394,6 +14152,7 @@
     "Congo Crisis",
     "Foreign Debt Crisis",
     "Homeless Veterans Crisis",
+    "Meganeuropsis",
     "Suez Crisis",
     "The AIDS Crisis",
     "The Cuban Missile Crisis",
@@ -13418,6 +14177,9 @@
   ],
   "Ends with SOE": [
     "Robinson Crusoe"
+  ],
+  "Ends with SOM": [
+    "Cherry Blossom"
   ],
   "Ends with SON": [
     "Carl Vinson",
@@ -13485,6 +14247,9 @@
   ],
   "Ends with T 2": [
     "Harry Potter and the Deathly Hallows: Part 2"
+  ],
+  "Ends with TAH": [
+    "Utah"
   ],
   "Ends with TAI": [
     "Subutai"
@@ -13586,6 +14351,7 @@
   ],
   "Ends with TES": [
     "Ammonites",
+    "Calamites",
     "Gates",
     "Graptolites",
     "Hippocrates",
@@ -13638,7 +14404,8 @@
     "Howl's Moving Castle",
     "Mantle",
     "Seattle",
-    "The Man in the High Castle"
+    "The Man in the High Castle",
+    "Thistle"
   ],
   "Ends with TNA": [
     "Etna"
@@ -13697,7 +14464,8 @@
     "Globe Theatre"
   ],
   "Ends with TRO": [
-    "Castro"
+    "Castro",
+    "Cilantro"
   ],
   "Ends with TSO": [
     "General Tso"
@@ -13732,8 +14500,10 @@
     "Arch of Titus",
     "Augustus",
     "Brutus",
+    "Cactus",
     "Invictus",
-    "Lotus"
+    "Lotus",
+    "Pterygotus"
   ],
   "Ends with TYL": [
     "Pterodactyl"
@@ -13912,6 +14682,7 @@
     "Skunk"
   ],
   "Ends with UNO": [
+    "Juno",
     "Uno"
   ],
   "Ends with UNT": [
@@ -13923,7 +14694,9 @@
   ],
   "Ends with URA": [
     "Acura",
+    "Arthropleura",
     "Fuerteventura",
+    "Meganeura",
     "Nakamura",
     "Tempura"
   ],
@@ -14028,6 +14801,7 @@
   ],
   "Ends with VER": [
     "Amazon River",
+    "Clover",
     "Denver",
     "Dover",
     "Grover",
@@ -14130,6 +14904,7 @@
     "Charlotte's Web"
   ],
   "Ends with WER": [
+    "Cauliflower",
     "Eiffel Tower",
     "Eisenhower",
     "Mayflower",
@@ -14184,6 +14959,10 @@
   "Ends with YAP": [
     "Yap"
   ],
+  "Ends with YAS": [
+    "Formation of Himalayas",
+    "Younger Dryas"
+  ],
   "Ends with YCE": [
     "Rolls-Royce"
   ],
@@ -14196,6 +14975,9 @@
     "Hayes",
     "Treaty of Troyes",
     "Troyes"
+  ],
+  "Ends with YME": [
+    "Thyme"
   ],
   "Ends with YON": [
     "Crayon"
@@ -14301,11 +15083,129 @@
     "Trailer Park Boys"
   ],
   "Eocene Epoch": [
+    "Almond",
+    "Aloe",
     "Ambulocetus",
+    "Asparagus",
+    "Bamboo",
+    "Barley",
+    "Basil",
     "Basilosaurus",
+    "Bay Leaf",
+    "Blackberry",
+    "Blueberry",
+    "Boysenberry",
+    "Broccoli",
+    "Butterfly",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Carrot",
+    "Cashew",
+    "Cauliflower",
+    "Celery",
+    "Chamomile",
+    "Cherry Blossom",
+    "Cilantro",
+    "Cinnamon",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Coconut",
+    "Coelacanth",
+    "Coffee Plant",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Currant",
+    "Daisy",
+    "Dandelion",
+    "Date",
+    "Dewberry",
+    "Dill",
+    "Echinacea",
+    "Eggplant",
+    "Elderberry",
+    "Fig",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Formation of Himalayas",
+    "Formation of Rocky Mountains",
+    "Garlic",
     "Gastornis",
+    "Ginger",
+    "Ginseng",
+    "Gooseberry",
+    "Grape",
+    "Grasshopper",
+    "Hazelnut",
+    "Huckleberry",
     "Hyaenodon",
-    "Paraceratherium"
+    "Kale",
+    "Ladybug",
+    "Lavender",
+    "Lettuce",
+    "Lily",
+    "Lingonberry",
+    "Loganberry",
+    "Macadamia",
+    "Maple",
+    "Marionberry",
+    "Mint",
+    "Mosquito",
+    "Moth",
+    "Mulberry",
+    "Nutmeg",
+    "Oak",
+    "Oats",
+    "Olive",
+    "Onion",
+    "Orchid",
+    "Oregano",
+    "Palm",
+    "Paraceratherium",
+    "Parsley",
+    "Peanut",
+    "Pecan",
+    "Pepper",
+    "Pine",
+    "Pistachio",
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Raspberry",
+    "Rice",
+    "Rose",
+    "Rosemary",
+    "Rye",
+    "Saffron",
+    "Sage",
+    "Salmonberry",
+    "Soybean",
+    "Spinach",
+    "Squash",
+    "Strawberry",
+    "Sunflower",
+    "Tayberry",
+    "Tea Plant",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tick",
+    "Titanomyrma",
+    "Tomato",
+    "Tulip",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Walnut",
+    "Wheat",
+    "Willow",
+    "Wineberry",
+    "Youngberry",
+    "Zucchini"
   ],
   "Epic Heroes": [
     "Achilles",
@@ -14391,6 +15291,7 @@
     "Bay of Pigs Invasion",
     "Bikini",
     "Bohemian Revolt",
+    "Breakup of Pangea",
     "CON",
     "Caesar crosses the Rubicon",
     "Cambrian Explosion",
@@ -14402,14 +15303,22 @@
     "Cola Wars",
     "Congo Crisis",
     "Coronation of Elizabeth II",
+    "Deccan Traps Eruption",
     "Deepwater Horizon",
     "Empress of Ireland",
     "Entebbe Hijacking",
+    "Eyjafjallajökull Eruption",
     "Fallout",
     "Fat Man",
     "First Defenestration of Prague",
     "First Triumvirate",
+    "Formation of Earth",
+    "Formation of Himalayas",
+    "Formation of Moon",
+    "Formation of Pangea",
+    "Formation of Rocky Mountains",
     "Fukushima",
+    "Great Oxygenation Event",
     "Han Wudi's Defeat of the Xiongnu",
     "Herculaneum",
     "Hindenburg",
@@ -14418,18 +15327,29 @@
     "Ivy Mike",
     "Katrina",
     "Krakatoa",
+    "Krakatoa Eruption",
+    "Laki Eruption",
+    "Last Glacial Maximum",
     "Little Boy",
     "Lusitania",
+    "Mount Pelée Eruption",
+    "Mount St. Helens Eruption",
+    "Nevado del Ruiz Eruption",
+    "Opening of Atlantic Ocean",
     "Permian-Triassic Extinction",
+    "Pinatubo Eruption",
     "Pompeii",
     "Profumo Affair",
     "Second Defenestration of Prague",
     "Second Triumvirate",
+    "Siberian Traps Eruption",
     "Siege of Calais",
     "Siege of Orléans",
+    "Snowball Earth",
     "Soviet-Afghan War",
     "Suez Crisis",
     "Tambora",
+    "Tambora Eruption",
     "Thalidomide Scandal",
     "The AIDS Crisis",
     "The Albigensian Crusade",
@@ -14551,7 +15471,8 @@
     "Watergate",
     "Woodstock",
     "World War I",
-    "World War II"
+    "World War II",
+    "Younger Dryas"
   ],
   "Exploration Ships": [
     "Beagle",
@@ -14589,17 +15510,22 @@
     "Allosaurus",
     "Ambulocetus",
     "Ammonites",
+    "Andalgalornis",
     "Ankylosaurus",
     "Anomalocaris",
     "Apatosaurus",
     "Archaeopteryx",
     "Ardipithecus",
     "Argentinosaurus",
+    "Arthropleura",
     "Aurochs",
     "Australopithecus",
     "Basilosaurus",
+    "Bennettitales",
     "Brachchiopods",
     "Brachiosaurus",
+    "Brontornis",
+    "Calamites",
     "Camarasaurus",
     "Carnotaurus",
     "Cera",
@@ -14618,34 +15544,45 @@
     "Edmontosaurus",
     "Elasmosaurus",
     "Euoplocephalus",
+    "Eurypterid",
     "Gastornis",
     "Giganotosaurus",
+    "Glossopteris",
     "Graptolites",
     "Ground Sloth",
     "Hallucigenia",
     "Hyaenodon",
     "Ichthyosaurus",
+    "Jaekelopterus",
+    "Kelenken",
     "Kentrosaurus",
     "Lambeosaurus",
+    "Lepidodendron",
     "Littlefoot",
     "Livyatan",
     "Mammoth",
     "Megalodon",
+    "Meganeura",
+    "Meganeuropsis",
     "Microraptor",
     "Mosasaurus",
     "Opabinia",
     "Paraceratherium",
     "Parasaurolophus",
+    "Patagornis",
     "Petrie",
+    "Phorusrhacos",
     "Plateosaurus",
     "Plesiadapis",
     "Plesiosaurus",
     "Protoceratops",
     "Pteranodon",
     "Pterodactyl",
+    "Pterygotus",
     "Quetzalcoatlus",
     "Ruby",
     "Shonisaurus",
+    "Sigillaria",
     "Sinornithosaurus",
     "Smilodon",
     "Spinosaurus",
@@ -14653,13 +15590,21 @@
     "Styracosaurus",
     "T-Rex",
     "Tanystropheus",
+    "Titanis",
     "Titanoboa",
+    "Titanomyrma",
     "Triceratops",
     "Trilobite",
     "Trilobites",
     "Utahraptor",
     "Velociraptor",
+    "Williamsonia",
     "Woolly Rhinoceros"
+  ],
+  "Extinct Plants": [
+    "Bennettitales",
+    "Glossopteris",
+    "Williamsonia"
   ],
   "Fable Characters": [
     "Ant",
@@ -15428,6 +16373,7 @@
   ],
   "Fish": [
     "Carp",
+    "Coelacanth",
     "Ray",
     "Salmon",
     "Shark",
@@ -15437,13 +16383,19 @@
     "Pizza"
   ],
   "Flightless Birds": [
+    "Andalgalornis",
     "Big Bird",
+    "Brontornis",
     "Cassowary",
     "Emu",
+    "Kelenken",
     "Kiwi",
     "Ostrich",
+    "Patagornis",
     "Penguin",
-    "Rhea"
+    "Phorusrhacos",
+    "Rhea",
+    "Titanis"
   ],
   "Flower-class Corvettes": [
     "Buttercup",
@@ -15453,16 +16405,21 @@
   ],
   "Flowers": [
     "Buttercup",
+    "Cherry Blossom",
     "Daisy",
+    "Dandelion",
     "Heather",
     "Iris",
     "Lavender",
     "Lily",
     "Mayflower",
     "Orchid",
+    "Poppy",
     "Rose",
+    "Rosemary",
     "Sunflower",
     "Tulip",
+    "Venus Flytrap",
     "Violet"
   ],
   "Folk Horror": [
@@ -15575,6 +16532,7 @@
     "Corned Beef",
     "Cotton Candy",
     "Crab",
+    "Crayfish",
     "Crepe",
     "Croissant",
     "Croque Monsieur",
@@ -15767,6 +16725,7 @@
     "Shashlik",
     "Shawarma",
     "Shepherd's Pie",
+    "Shrimp",
     "Smarties",
     "Soba",
     "Solyanka",
@@ -16148,12 +17107,19 @@
   "Fruits": [
     "Apple",
     "Banana",
+    "Blackberry",
+    "Coconut",
+    "Cranberry",
+    "Date",
     "Eggplant",
+    "Fig",
     "Grape",
     "Kiwi",
     "Lemon",
     "Orange",
-    "Peach"
+    "Peach",
+    "Raspberry",
+    "Strawberry"
   ],
   "Furniture": [
     "Bed",
@@ -16232,6 +17198,11 @@
     "La Traviata",
     "Rigoletto"
   ],
+  "Glacial Periods": [
+    "Last Glacial Maximum",
+    "Snowball Earth",
+    "Younger Dryas"
+  ],
   "Golf Terms": [
     "Club",
     "Green"
@@ -16250,6 +17221,13 @@
     "Frankenstein",
     "Jane Eyre",
     "Wuthering Heights"
+  ],
+  "Grains": [
+    "Barley",
+    "Corn",
+    "Oats",
+    "Rice",
+    "Wheat"
   ],
   "Great Conquerors": [
     "Alexander the Great",
@@ -16445,9 +17423,13 @@
     "Ankylosaurus",
     "Apatosaurus",
     "Argentinosaurus",
+    "Arthropleura",
+    "Aurochs",
+    "Bee",
     "Blue Whale",
     "Brachiosaurus",
     "Buffalo",
+    "Butterfly",
     "Camarasaurus",
     "Cera",
     "Chasmosaurus",
@@ -16455,6 +17437,7 @@
     "Cow",
     "Deinotherium",
     "Diplodocus",
+    "Dodo",
     "Donkey Kong",
     "Ducky",
     "Edmontosaurus",
@@ -16462,6 +17445,7 @@
     "Euoplocephalus",
     "Giraffe",
     "Goat",
+    "Grasshopper",
     "Ground Sloth",
     "Horse",
     "Kentrosaurus",
@@ -16469,6 +17453,8 @@
     "Lambeosaurus",
     "Littlefoot",
     "Mammoth",
+    "Millipede",
+    "Moth",
     "Ostrich",
     "Panda",
     "Paraceratherium",
@@ -16481,10 +17467,24 @@
     "Spike",
     "Stegosaurus",
     "Styracosaurus",
+    "Swan",
     "The Very Hungry Caterpillar",
     "Triceratops",
     "Woolly Rhinoceros",
     "Zebra"
+  ],
+  "Herbs": [
+    "Bay Leaf",
+    "Chamomile",
+    "Cilantro",
+    "Dill",
+    "Echinacea",
+    "Ginseng",
+    "Mint",
+    "Oregano",
+    "Parsley",
+    "Rosemary",
+    "Thyme"
   ],
   "Hideki Matsui": [
     "Matsui"
@@ -16573,8 +17573,124 @@
     "Wayne Gretzky"
   ],
   "Holocene Epoch": [
+    "Almond",
+    "Aloe",
+    "Asparagus",
     "Aurochs",
-    "Dodo"
+    "Bamboo",
+    "Barley",
+    "Basil",
+    "Bay Leaf",
+    "Blackberry",
+    "Blueberry",
+    "Boysenberry",
+    "Broccoli",
+    "Butterfly",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Carrot",
+    "Cashew",
+    "Cauliflower",
+    "Celery",
+    "Chamomile",
+    "Cherry Blossom",
+    "Cilantro",
+    "Cinnamon",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Coconut",
+    "Coelacanth",
+    "Coffee Plant",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Currant",
+    "Daisy",
+    "Dandelion",
+    "Date",
+    "Dewberry",
+    "Dill",
+    "Dodo",
+    "Echinacea",
+    "Eggplant",
+    "Elderberry",
+    "Fig",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Garlic",
+    "Ginger",
+    "Ginseng",
+    "Gooseberry",
+    "Grape",
+    "Grasshopper",
+    "Hazelnut",
+    "Huckleberry",
+    "Kale",
+    "Ladybug",
+    "Lavender",
+    "Lettuce",
+    "Lily",
+    "Lingonberry",
+    "Loganberry",
+    "Macadamia",
+    "Maple",
+    "Marionberry",
+    "Mint",
+    "Mosquito",
+    "Moth",
+    "Mulberry",
+    "Nutmeg",
+    "Oak",
+    "Oats",
+    "Olive",
+    "Onion",
+    "Orchid",
+    "Oregano",
+    "Palm",
+    "Parsley",
+    "Peanut",
+    "Pecan",
+    "Pepper",
+    "Pine",
+    "Pistachio",
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Raspberry",
+    "Rice",
+    "Rose",
+    "Rosemary",
+    "Rye",
+    "Saffron",
+    "Sage",
+    "Salmonberry",
+    "Soybean",
+    "Spinach",
+    "Squash",
+    "Strawberry",
+    "Sunflower",
+    "Tayberry",
+    "Tea Plant",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tick",
+    "Tomato",
+    "Tulip",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Walnut",
+    "Wheat",
+    "Willow",
+    "Wineberry",
+    "Youngberry",
+    "Younger Dryas",
+    "Zucchini"
   ],
   "Holy Roman Emperors": [
     "Charles IV"
@@ -16743,10 +17859,24 @@
   "Insects": [
     "Ant",
     "Bee",
+    "Beetle",
     "Butterfly",
+    "Cricket",
+    "Dragonfly",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Grasshopper",
+    "Ladybug",
+    "Meganeura",
+    "Meganeuropsis",
+    "Mosquito",
     "Moth",
     "Mothra",
-    "The Very Hungry Caterpillar"
+    "Termite",
+    "The Very Hungry Caterpillar",
+    "Titanomyrma",
+    "Wasp"
   ],
   "Inspirations for Star Wars": [
     "Dune",
@@ -17038,16 +18168,45 @@
     "Allosaurus",
     "Apatosaurus",
     "Archaeopteryx",
+    "Bennettitales",
     "Brachiosaurus",
+    "Breakup of Pangea",
+    "Bristlecone Pine",
     "Camarasaurus",
+    "Centipede",
+    "Club Moss",
+    "Coelacanth",
+    "Coelophysis",
+    "Crab",
+    "Crayfish",
+    "Cycad",
     "Diplodocus",
+    "Dragonfly",
+    "Fern",
+    "Ginkgo",
+    "Horsetail",
     "Ichthyosaurus",
     "Jurassic Park",
     "Kentrosaurus",
+    "Lichen",
+    "Lobster",
+    "Millipede",
+    "Moss",
+    "Opening of Atlantic Ocean",
+    "Plateosaurus",
     "Plesiosaurus",
     "Pterodactyl",
+    "Redwood",
+    "Scorpion",
+    "Sequoia",
+    "Shrimp",
+    "Spider",
     "Spike",
-    "Stegosaurus"
+    "Stegosaurus",
+    "Tarantula",
+    "Termite",
+    "Wasp",
+    "Williamsonia"
   ],
   "K-pop": [
     "(G)I-DLE",
@@ -17168,6 +18327,9 @@
   ],
   "Legal Stories": [
     "To Kill a Mockingbird"
+  ],
+  "Life Evolution": [
+    "Great Oxygenation Event"
   ],
   "Lighting": [
     "Aurora",
@@ -17475,6 +18637,7 @@
     "Elbrus",
     "Estonia",
     "Etna",
+    "Eyjafjallajokull",
     "Faroe",
     "Faroe Islands",
     "Finland",
@@ -17569,9 +18732,11 @@
   ],
   "Locations in North America": [
     "Alabama",
+    "Alaska",
     "Albany",
     "Annapolis",
     "Antigua and Barbuda",
+    "Arizona",
     "Atlanta",
     "Augusta",
     "Austin",
@@ -17587,6 +18752,7 @@
     "Boise",
     "Boston",
     "British Honduras",
+    "California",
     "Canada",
     "Cancun",
     "Caribbean Sea",
@@ -17609,7 +18775,9 @@
     "Dover",
     "El Salvador",
     "Ellesmere",
+    "Florida",
     "Frankfort",
+    "Georgia",
     "Gettysburg",
     "Great Lakes",
     "Grenada",
@@ -17644,16 +18812,20 @@
     "Melville",
     "Mexico",
     "Miami",
+    "Michigan",
     "Mississippi River",
     "Montgomery",
     "Montpelier",
     "Nantucket",
     "Nashville",
+    "Nevada",
     "New York",
     "Nicaragua",
     "Oahu",
     "Oklahoma City",
     "Olympia",
+    "Omaha",
+    "Oregon",
     "Palm Springs",
     "Panama",
     "Phoenix",
@@ -17681,13 +18853,16 @@
     "St. Helens",
     "Staten Island",
     "Tallahassee",
+    "Texas",
     "Tijuana",
     "Topeka",
     "Toronto",
     "Trenton",
     "Trinidad and Tobago",
     "United States",
+    "Utah",
     "Victoria",
+    "Virginia",
     "Washington"
   ],
   "Locations in Oceania": [
@@ -18035,6 +19210,10 @@
   ],
   "Masahiro Tanaka": [
     "Tanaka"
+  ],
+  "Mass Extinctions": [
+    "Deccan Traps Eruption",
+    "Siberian Traps Eruption"
   ],
   "Massively Multiplayer Online": [
     "World of Warcraft"
@@ -18671,7 +19850,97 @@
     "Zhou Enlai"
   ],
   "Mesozoic Era": [
-    "Ammonites"
+    "Allosaurus",
+    "Ammonites",
+    "Ankylosaurus",
+    "Ant",
+    "Apatosaurus",
+    "Archaeopteryx",
+    "Argentinosaurus",
+    "Bee",
+    "Bennettitales",
+    "Big Bird",
+    "Brachiosaurus",
+    "Breakup of Pangea",
+    "Bristlecone Pine",
+    "Camarasaurus",
+    "Carnotaurus",
+    "Centipede",
+    "Cera",
+    "Chasmosaurus",
+    "Chomper",
+    "Club Moss",
+    "Coelacanth",
+    "Coelophysis",
+    "Confuciusornis",
+    "Cormorant",
+    "Corythosaurus",
+    "Crab",
+    "Crayfish",
+    "Cycad",
+    "Deccan Traps Eruption",
+    "Deinonychus",
+    "Diplodocus",
+    "Donald Duck",
+    "Dragonfly",
+    "Drake",
+    "Ducky",
+    "Edmontosaurus",
+    "Euoplocephalus",
+    "Fern",
+    "Flamingo",
+    "Gannet",
+    "Giganotosaurus",
+    "Ginkgo",
+    "Gull",
+    "Horsetail",
+    "Hummingbird",
+    "Kentrosaurus",
+    "Lambeosaurus",
+    "Lichen",
+    "Littlefoot",
+    "Lobster",
+    "Magpie",
+    "Meganeura",
+    "Meganeuropsis",
+    "Microraptor",
+    "Millipede",
+    "Moss",
+    "Opening of Atlantic Ocean",
+    "Parasaurolophus",
+    "Pelican",
+    "Petrel",
+    "Phoenix",
+    "Plateosaurus",
+    "Protoceratops",
+    "Puffin",
+    "Raptor",
+    "Redwood",
+    "Ruby",
+    "Sam the Eagle",
+    "Scorpion",
+    "Seahawk",
+    "Sequoia",
+    "Shark",
+    "Shrimp",
+    "Sinornithosaurus",
+    "Sparrow",
+    "Spider",
+    "Spike",
+    "Spinosaurus",
+    "Stegosaurus",
+    "Styracosaurus",
+    "T-Rex",
+    "Tarantula",
+    "Termite",
+    "Tern",
+    "Titanomyrma",
+    "Triceratops",
+    "Utahraptor",
+    "Velociraptor",
+    "Wasp",
+    "Williamsonia",
+    "Zazu"
   ],
   "Metallic Colors": [
     "Cobalt",
@@ -18970,11 +20239,132 @@
     "Uniform"
   ],
   "Miocene Epoch": [
+    "Almond",
+    "Aloe",
+    "Andalgalornis",
     "Ardipithecus",
+    "Asparagus",
+    "Bamboo",
+    "Barley",
+    "Basil",
+    "Bay Leaf",
+    "Blackberry",
+    "Blueberry",
+    "Boysenberry",
+    "Broccoli",
+    "Brontornis",
+    "Butterfly",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Carrot",
+    "Cashew",
+    "Cauliflower",
+    "Celery",
+    "Chamomile",
+    "Cherry Blossom",
+    "Cilantro",
+    "Cinnamon",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Coconut",
+    "Coelacanth",
+    "Coffee Plant",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Currant",
+    "Daisy",
+    "Dandelion",
+    "Date",
     "Deinotherium",
+    "Dewberry",
+    "Dill",
+    "Echinacea",
+    "Eggplant",
+    "Elderberry",
+    "Fig",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Formation of Himalayas",
+    "Garlic",
+    "Ginger",
+    "Ginseng",
+    "Gooseberry",
+    "Grape",
+    "Grasshopper",
+    "Hazelnut",
+    "Huckleberry",
+    "Kale",
+    "Kelenken",
+    "Ladybug",
+    "Lavender",
+    "Lettuce",
+    "Lily",
+    "Lingonberry",
     "Livyatan",
+    "Loganberry",
+    "Macadamia",
+    "Maple",
+    "Marionberry",
     "Megalodon",
-    "Titanoboa"
+    "Mint",
+    "Mosquito",
+    "Moth",
+    "Mulberry",
+    "Nutmeg",
+    "Oak",
+    "Oats",
+    "Olive",
+    "Onion",
+    "Orchid",
+    "Oregano",
+    "Palm",
+    "Parsley",
+    "Patagornis",
+    "Peanut",
+    "Pecan",
+    "Pepper",
+    "Phorusrhacos",
+    "Pine",
+    "Pistachio",
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Raspberry",
+    "Rice",
+    "Rose",
+    "Rosemary",
+    "Rye",
+    "Saffron",
+    "Sage",
+    "Salmonberry",
+    "Soybean",
+    "Spinach",
+    "Squash",
+    "Strawberry",
+    "Sunflower",
+    "Tayberry",
+    "Tea Plant",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tick",
+    "Titanoboa",
+    "Tomato",
+    "Tulip",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Walnut",
+    "Wheat",
+    "Willow",
+    "Wineberry",
+    "Youngberry",
+    "Zucchini"
   ],
   "Models": [
     "Nyle DiMarco"
@@ -19275,6 +20665,10 @@
     "Russia",
     "United States"
   ],
+  "Mountain Building": [
+    "Formation of Himalayas",
+    "Formation of Rocky Mountains"
+  ],
   "Mountains": [
     "Aconcagua",
     "Annapurna",
@@ -19283,17 +20677,26 @@
     "Elbrus",
     "Etna",
     "Everest",
+    "Eyjafjallajokull",
+    "Eyjafjallajökull Eruption",
     "Fuji",
     "K2",
     "Kilimanjaro",
     "Krakatoa",
+    "Krakatoa Eruption",
+    "Laki Eruption",
     "Matterhorn",
     "Mont Blanc",
+    "Mount Pelée Eruption",
+    "Mount St. Helens Eruption",
+    "Nevado del Ruiz Eruption",
     "Olympus",
     "Pinatubo",
+    "Pinatubo Eruption",
     "Sierra",
     "St. Helens",
     "Tambora",
+    "Tambora Eruption",
     "Vesuvius"
   ],
   "Movie Lines": [
@@ -19509,6 +20912,7 @@
     "Jingle All the Way",
     "Jojo Rabbit",
     "Joker",
+    "Juno",
     "Jurassic Park",
     "Kagemusha",
     "Kate & Leopold",
@@ -20271,6 +21675,9 @@
   "Movies directed by Jared Bush": [
     "Encanto"
   ],
+  "Movies directed by Jason Reitman": [
+    "Juno"
+  ],
   "Movies directed by Jean-Pierre Jeunet": [
     "Alien: Resurrection"
   ],
@@ -20999,6 +22406,9 @@
   ],
   "Movies featuring Alida Valli": [
     "The Third Man"
+  ],
+  "Movies featuring Allison Janney": [
+    "Juno"
   ],
   "Movies featuring Amanda Seyfried": [
     "Les Misérables"
@@ -21873,6 +23283,9 @@
   "Movies featuring Ellen Greene": [
     "Little Shop of Horrors"
   ],
+  "Movies featuring Ellen Page": [
+    "Juno"
+  ],
   "Movies featuring Emilia Clarke": [
     "Solo"
   ],
@@ -22330,6 +23743,7 @@
     "Moonrise Kingdom"
   ],
   "Movies featuring Jason Bateman": [
+    "Juno",
     "Zootopia"
   ],
   "Movies featuring Javier Bardem": [
@@ -22353,7 +23767,8 @@
     "A Beautiful Mind"
   ],
   "Movies featuring Jennifer Garner": [
-    "Daredevil"
+    "Daredevil",
+    "Juno"
   ],
   "Movies featuring Jennifer Hudson": [
     "Dreamgirls"
@@ -23079,6 +24494,9 @@
     "The Italian Job",
     "The Muppet Christmas Carol",
     "Zulu"
+  ],
+  "Movies featuring Michael Cera": [
+    "Juno"
   ],
   "Movies featuring Michael Clarke Duncan": [
     "The Green Mile"
@@ -25032,6 +26450,16 @@
     "Clara Barton",
     "Florence Nightingale"
   ],
+  "Nuts": [
+    "Almond",
+    "Cashew",
+    "Hazelnut",
+    "Macadamia",
+    "Peanut",
+    "Pecan",
+    "Pistachio",
+    "Walnut"
+  ],
   "OJ Simpson": [
     "Bronco",
     "Football",
@@ -25081,6 +26509,9 @@
     "Humpback Whale",
     "Killer Whale"
   ],
+  "Ocean Formation": [
+    "Opening of Atlantic Ocean"
+  ],
   "Oceanliners": [
     "Andrea Doria",
     "Britannic",
@@ -25109,21 +26540,154 @@
     "Southern Ocean"
   ],
   "Oligocene Epoch": [
+    "Almond",
+    "Aloe",
+    "Asparagus",
+    "Bamboo",
+    "Barley",
+    "Basil",
+    "Bay Leaf",
+    "Blackberry",
+    "Blueberry",
+    "Boysenberry",
+    "Broccoli",
+    "Brontornis",
+    "Butterfly",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Carrot",
+    "Cashew",
+    "Cauliflower",
+    "Celery",
+    "Chamomile",
+    "Cherry Blossom",
+    "Cilantro",
+    "Cinnamon",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Coconut",
+    "Coelacanth",
+    "Coffee Plant",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Currant",
+    "Daisy",
+    "Dandelion",
+    "Date",
+    "Dewberry",
+    "Dill",
+    "Echinacea",
+    "Eggplant",
+    "Elderberry",
+    "Fig",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Formation of Himalayas",
+    "Formation of Rocky Mountains",
+    "Garlic",
+    "Ginger",
+    "Ginseng",
+    "Gooseberry",
+    "Grape",
+    "Grasshopper",
+    "Hazelnut",
+    "Huckleberry",
     "Hyaenodon",
-    "Paraceratherium"
+    "Kale",
+    "Ladybug",
+    "Lavender",
+    "Lettuce",
+    "Lily",
+    "Lingonberry",
+    "Loganberry",
+    "Macadamia",
+    "Maple",
+    "Marionberry",
+    "Mint",
+    "Mosquito",
+    "Moth",
+    "Mulberry",
+    "Nutmeg",
+    "Oak",
+    "Oats",
+    "Olive",
+    "Onion",
+    "Orchid",
+    "Oregano",
+    "Palm",
+    "Paraceratherium",
+    "Parsley",
+    "Peanut",
+    "Pecan",
+    "Pepper",
+    "Phorusrhacos",
+    "Pine",
+    "Pistachio",
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Raspberry",
+    "Rice",
+    "Rose",
+    "Rosemary",
+    "Rye",
+    "Saffron",
+    "Sage",
+    "Salmonberry",
+    "Soybean",
+    "Spinach",
+    "Squash",
+    "Strawberry",
+    "Sunflower",
+    "Tayberry",
+    "Tea Plant",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tick",
+    "Titanomyrma",
+    "Tomato",
+    "Tulip",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Walnut",
+    "Wheat",
+    "Willow",
+    "Wineberry",
+    "Youngberry",
+    "Zucchini"
   ],
   "Omnivores": [
+    "Ant",
+    "Ardipithecus",
+    "Australopithecus",
+    "Beetle",
     "Blue Jay",
+    "Brachchiopods",
     "Cardinal",
     "Cassowary",
     "Chicken",
     "Confuciusornis",
+    "Crab",
+    "Crayfish",
+    "Cricket",
     "Crow",
+    "Dog",
     "Donald Duck",
     "Emu",
+    "Firefly",
+    "Fly",
     "Goofy",
+    "Hummingbird",
     "Kiwi",
     "Laika, Space Dog",
+    "Lobster",
     "Macaw",
     "Mickey Mouse",
     "Mothra",
@@ -25133,8 +26697,10 @@
     "Raven",
     "Robin",
     "Ruby",
+    "Shrimp",
     "Snoopy",
     "Sonic",
+    "Sparrow",
     "Timon",
     "Trilobites",
     "Turkey",
@@ -25289,14 +26855,163 @@
     "Rosa Bonheur"
   ],
   "Paleocene Epoch": [
+    "Almond",
+    "Aloe",
+    "Asparagus",
+    "Bamboo",
+    "Barley",
+    "Basil",
+    "Bay Leaf",
+    "Blackberry",
+    "Blueberry",
+    "Boysenberry",
+    "Broccoli",
+    "Butterfly",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Carrot",
+    "Cashew",
+    "Cauliflower",
+    "Celery",
+    "Chamomile",
+    "Cherry Blossom",
+    "Cilantro",
+    "Cinnamon",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Coconut",
+    "Coelacanth",
+    "Coffee Plant",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Currant",
+    "Daisy",
+    "Dandelion",
+    "Date",
+    "Dewberry",
+    "Dill",
+    "Echinacea",
+    "Eggplant",
+    "Elderberry",
+    "Fig",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Garlic",
+    "Ginger",
+    "Ginseng",
+    "Gooseberry",
+    "Grape",
+    "Grasshopper",
+    "Hazelnut",
+    "Huckleberry",
+    "Kale",
+    "Ladybug",
+    "Lavender",
+    "Lettuce",
+    "Lily",
+    "Lingonberry",
+    "Loganberry",
+    "Macadamia",
+    "Maple",
+    "Marionberry",
+    "Mint",
+    "Mosquito",
+    "Moth",
+    "Mulberry",
+    "Nutmeg",
+    "Oak",
+    "Oats",
+    "Olive",
+    "Onion",
+    "Orchid",
+    "Oregano",
+    "Palm",
+    "Parsley",
+    "Peanut",
+    "Pecan",
+    "Pepper",
+    "Phorusrhacos",
+    "Pine",
+    "Pistachio",
     "Plesiadapis",
-    "Titanoboa"
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Raspberry",
+    "Rice",
+    "Rose",
+    "Rosemary",
+    "Rye",
+    "Saffron",
+    "Sage",
+    "Salmonberry",
+    "Soybean",
+    "Spinach",
+    "Squash",
+    "Strawberry",
+    "Sunflower",
+    "Tayberry",
+    "Tea Plant",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tick",
+    "Titanoboa",
+    "Tomato",
+    "Tulip",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Walnut",
+    "Wheat",
+    "Willow",
+    "Wineberry",
+    "Youngberry",
+    "Zucchini"
   ],
   "Paleozoic Era": [
+    "Arthropleura",
     "Brachchiopods",
+    "Calamites",
     "Cambrian Explosion",
+    "Centipede",
+    "Club Moss",
+    "Coelacanth",
+    "Crab",
+    "Crayfish",
+    "Cycad",
+    "Dragonfly",
+    "Eurypterid",
+    "Fern",
+    "Formation of Pangea",
+    "Ginkgo",
+    "Glossopteris",
     "Graptolites",
+    "Great Oxygenation Event",
+    "Horsetail",
+    "Jaekelopterus",
+    "Lepidodendron",
+    "Lichen",
+    "Lobster",
+    "Meganeura",
+    "Meganeuropsis",
+    "Millipede",
+    "Moss",
     "Permian-Triassic Extinction",
+    "Pterygotus",
+    "Scorpion",
+    "Shark",
+    "Shrimp",
+    "Siberian Traps Eruption",
+    "Sigillaria",
+    "Snowball Earth",
+    "Spider",
+    "Tarantula",
     "Trilobites"
   ],
   "Palme d'Or Winners": [
@@ -25899,8 +27614,36 @@
     "Newspaper"
   ],
   "Permian Period": [
+    "Arthropleura",
+    "Calamites",
+    "Centipede",
+    "Club Moss",
+    "Coelacanth",
+    "Crab",
+    "Crayfish",
+    "Cycad",
     "Dimetrodon",
-    "Permian-Triassic Extinction"
+    "Dragonfly",
+    "Eurypterid",
+    "Fern",
+    "Formation of Pangea",
+    "Ginkgo",
+    "Glossopteris",
+    "Horsetail",
+    "Lepidodendron",
+    "Lichen",
+    "Lobster",
+    "Meganeura",
+    "Meganeuropsis",
+    "Millipede",
+    "Moss",
+    "Permian-Triassic Extinction",
+    "Scorpion",
+    "Shrimp",
+    "Siberian Traps Eruption",
+    "Sigillaria",
+    "Spider",
+    "Tarantula"
   ],
   "Personality Traits": [
     "Stern"
@@ -26043,6 +27786,7 @@
     "Annapurna",
     "Antigua and Barbuda",
     "Argentina",
+    "Arizona",
     "Armenia",
     "Artsakh",
     "Athens",
@@ -26173,6 +27917,7 @@
     "Etna",
     "Europa",
     "Everest",
+    "Eyjafjallajokull",
     "Falkland Islands",
     "Faroe",
     "Faroe Islands",
@@ -26313,6 +28058,7 @@
     "Menorca",
     "Mexico",
     "Miami",
+    "Michigan",
     "Micronesia",
     "Midway Island",
     "Mindanao",
@@ -26356,8 +28102,10 @@
     "Oklahoma City",
     "Olympia",
     "Olympus",
+    "Omaha",
     "Oman",
     "Orange",
+    "Oregon",
     "Orkney",
     "Ostia Antica",
     "Pakistan",
@@ -26499,6 +28247,7 @@
     "United States",
     "Upper Volta",
     "Uruguay",
+    "Utah",
     "Uzbekistan",
     "Vanuatu",
     "Vatican City",
@@ -26508,6 +28257,7 @@
     "Vesuvius",
     "Victoria",
     "Vietnam",
+    "Virginia",
     "Washington",
     "Waterloo",
     "Wellington",
@@ -26536,25 +28286,128 @@
     "Violet"
   ],
   "Plants": [
+    "Almond",
+    "Aloe",
+    "Asparagus",
+    "Bamboo",
+    "Barley",
+    "Bay Leaf",
+    "Bennettitales",
     "Birch",
+    "Blackberry",
+    "Boysenberry",
+    "Bristlecone Pine",
+    "Broccoli",
     "Buttercup",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Carrot",
+    "Cashew",
+    "Cauliflower",
     "Cedar",
+    "Celery",
+    "Chamomile",
+    "Cherry Blossom",
+    "Cilantro",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Club Moss",
+    "Coconut",
+    "Coffee Plant",
     "Coral",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Currant",
+    "Cycad",
     "Daisy",
+    "Dandelion",
+    "Date",
+    "Dewberry",
+    "Dill",
+    "Echinacea",
+    "Elderberry",
+    "Fern",
+    "Fig",
+    "Garlic",
+    "Ginger",
+    "Ginkgo",
+    "Ginseng",
+    "Glossopteris",
+    "Gooseberry",
+    "Hazelnut",
     "Heather",
+    "Horsetail",
+    "Huckleberry",
     "Iris",
     "Ivy",
+    "Kale",
     "Lavender",
+    "Lichen",
     "Lily",
+    "Lingonberry",
+    "Loganberry",
+    "Macadamia",
+    "Maple",
+    "Marionberry",
     "Mayflower",
+    "Mint",
+    "Moss",
+    "Mulberry",
     "Oak",
+    "Oats",
     "Olive",
     "Orchid",
+    "Oregano",
+    "Palm",
+    "Parsley",
+    "Peanut",
+    "Pecan",
     "Pepper",
     "Pine",
+    "Pistachio",
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Raspberry",
+    "Redwood",
+    "Rice",
     "Rose",
+    "Rosemary",
+    "Saffron",
+    "Salmonberry",
+    "Sequoia",
+    "Soybean",
+    "Spinach",
+    "Squash",
+    "Strawberry",
     "Sunflower",
-    "Tulip"
+    "Tayberry",
+    "Tea Plant",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tulip",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Walnut",
+    "Wheat",
+    "Williamsonia",
+    "Willow",
+    "Wineberry",
+    "Youngberry",
+    "Zucchini"
+  ],
+  "Plate Tectonics": [
+    "Breakup of Pangea",
+    "Formation of Himalayas",
+    "Formation of Pangea",
+    "Formation of Rocky Mountains",
+    "Opening of Atlantic Ocean"
   ],
   "Platform Games": [
     "Sonic",
@@ -26580,18 +28433,254 @@
     "Twelfth Night"
   ],
   "Pleistocene Epoch": [
+    "Almond",
+    "Aloe",
+    "Asparagus",
+    "Bamboo",
+    "Barley",
+    "Basil",
+    "Bay Leaf",
+    "Blackberry",
+    "Blueberry",
+    "Boysenberry",
+    "Broccoli",
+    "Butterfly",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Carrot",
+    "Cashew",
+    "Cauliflower",
+    "Celery",
+    "Chamomile",
+    "Cherry Blossom",
+    "Cilantro",
+    "Cinnamon",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Coconut",
+    "Coelacanth",
+    "Coffee Plant",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Currant",
+    "Daisy",
+    "Dandelion",
+    "Date",
+    "Dewberry",
+    "Dill",
     "Dire Wolf",
+    "Echinacea",
+    "Eggplant",
+    "Elderberry",
+    "Fig",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Garlic",
+    "Ginger",
+    "Ginseng",
+    "Gooseberry",
+    "Grape",
+    "Grasshopper",
     "Ground Sloth",
+    "Hazelnut",
+    "Huckleberry",
+    "Kale",
+    "Ladybug",
+    "Last Glacial Maximum",
+    "Lavender",
+    "Lettuce",
+    "Lily",
+    "Lingonberry",
+    "Loganberry",
+    "Macadamia",
     "Mammoth",
+    "Maple",
+    "Marionberry",
+    "Mint",
+    "Mosquito",
+    "Moth",
+    "Mulberry",
+    "Nutmeg",
+    "Oak",
+    "Oats",
+    "Olive",
+    "Onion",
+    "Orchid",
+    "Oregano",
+    "Palm",
+    "Parsley",
+    "Peanut",
+    "Pecan",
+    "Pepper",
+    "Phorusrhacos",
+    "Pine",
+    "Pistachio",
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Raspberry",
+    "Rice",
+    "Rose",
+    "Rosemary",
+    "Rye",
+    "Saffron",
+    "Sage",
+    "Salmonberry",
     "Smilodon",
+    "Soybean",
+    "Spinach",
+    "Squash",
+    "Strawberry",
+    "Sunflower",
+    "Tayberry",
+    "Tea Plant",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tick",
+    "Titanis",
     "Toba Supereruption",
-    "Woolly Rhinoceros"
+    "Tomato",
+    "Tulip",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Walnut",
+    "Wheat",
+    "Willow",
+    "Wineberry",
+    "Woolly Rhinoceros",
+    "Youngberry",
+    "Younger Dryas",
+    "Zucchini"
   ],
   "Pliocene Epoch": [
+    "Almond",
+    "Aloe",
     "Ardipithecus",
+    "Asparagus",
     "Australopithecus",
+    "Bamboo",
+    "Barley",
+    "Basil",
+    "Bay Leaf",
+    "Blackberry",
+    "Blueberry",
+    "Boysenberry",
+    "Broccoli",
+    "Butterfly",
+    "Cabbage",
+    "Cacao",
+    "Cactus",
+    "Cardamom",
+    "Carrot",
+    "Cashew",
+    "Cauliflower",
+    "Celery",
+    "Chamomile",
+    "Cherry Blossom",
+    "Cilantro",
+    "Cinnamon",
+    "Cloudberry",
+    "Clove",
+    "Clover",
+    "Coconut",
+    "Coelacanth",
+    "Coffee Plant",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Currant",
+    "Daisy",
+    "Dandelion",
+    "Date",
     "Deinotherium",
-    "Megalodon"
+    "Dewberry",
+    "Dill",
+    "Echinacea",
+    "Eggplant",
+    "Elderberry",
+    "Fig",
+    "Firefly",
+    "Flea",
+    "Fly",
+    "Garlic",
+    "Ginger",
+    "Ginseng",
+    "Gooseberry",
+    "Grape",
+    "Grasshopper",
+    "Hazelnut",
+    "Huckleberry",
+    "Kale",
+    "Ladybug",
+    "Lavender",
+    "Lettuce",
+    "Lily",
+    "Lingonberry",
+    "Loganberry",
+    "Macadamia",
+    "Maple",
+    "Marionberry",
+    "Megalodon",
+    "Mint",
+    "Mosquito",
+    "Moth",
+    "Mulberry",
+    "Nutmeg",
+    "Oak",
+    "Oats",
+    "Olive",
+    "Onion",
+    "Orchid",
+    "Oregano",
+    "Palm",
+    "Parsley",
+    "Peanut",
+    "Pecan",
+    "Pepper",
+    "Phorusrhacos",
+    "Pine",
+    "Pistachio",
+    "Poppy",
+    "Potato",
+    "Pumpkin",
+    "Raspberry",
+    "Rice",
+    "Rose",
+    "Rosemary",
+    "Rye",
+    "Saffron",
+    "Sage",
+    "Salmonberry",
+    "Soybean",
+    "Spinach",
+    "Squash",
+    "Strawberry",
+    "Sunflower",
+    "Tayberry",
+    "Tea Plant",
+    "Thimbleberry",
+    "Thistle",
+    "Thyme",
+    "Tick",
+    "Titanis",
+    "Tomato",
+    "Tulip",
+    "Turmeric",
+    "Vanilla",
+    "Venus Flytrap",
+    "Walnut",
+    "Wheat",
+    "Willow",
+    "Wineberry",
+    "Youngberry",
+    "Zucchini"
   ],
   "Poems": [
     "Invictus",
@@ -26689,8 +28778,16 @@
     "Paul",
     "Peter"
   ],
+  "Precambrian": [
+    "Formation of Earth",
+    "Formation of Moon",
+    "Great Oxygenation Event",
+    "Snowball Earth"
+  ],
   "Predators": [
+    "Andalgalornis",
     "Bear",
+    "Brontornis",
     "Bruin",
     "Eagle",
     "Falcon",
@@ -26699,10 +28796,13 @@
     "Hawk",
     "Jaguar",
     "K9",
+    "Kelenken",
     "Killer Whale",
     "Lion",
     "Owl",
     "Panther",
+    "Patagornis",
+    "Phorusrhacos",
     "Polar Bear",
     "Raptor",
     "Raven",
@@ -26711,6 +28811,8 @@
     "Seahawk",
     "Shark",
     "Tiger",
+    "Titanis",
+    "Venus Flytrap",
     "Wolf",
     "Wolverine"
   ],
@@ -26718,22 +28820,28 @@
     "Allosaurus",
     "Ambulocetus",
     "Ammonites",
+    "Andalgalornis",
     "Ankylosaurus",
     "Anomalocaris",
     "Apatosaurus",
     "Archaeopteryx",
     "Ardipithecus",
     "Argentinosaurus",
+    "Arthropleura",
     "Aurochs",
     "Australopithecus",
     "Basilosaurus",
+    "Bennettitales",
     "Brachchiopods",
     "Brachiosaurus",
+    "Brontornis",
+    "Calamites",
     "Camarasaurus",
     "Carnotaurus",
     "Cera",
     "Chasmosaurus",
     "Chomper",
+    "Coelacanth",
     "Coelophysis",
     "Confuciusornis",
     "Corythosaurus",
@@ -26747,34 +28855,45 @@
     "Edmontosaurus",
     "Elasmosaurus",
     "Euoplocephalus",
+    "Eurypterid",
     "Gastornis",
     "Giganotosaurus",
+    "Glossopteris",
     "Graptolites",
     "Ground Sloth",
     "Hallucigenia",
     "Hyaenodon",
     "Ichthyosaurus",
+    "Jaekelopterus",
+    "Kelenken",
     "Kentrosaurus",
     "Lambeosaurus",
+    "Lepidodendron",
     "Littlefoot",
     "Livyatan",
     "Mammoth",
     "Megalodon",
+    "Meganeura",
+    "Meganeuropsis",
     "Microraptor",
     "Mosasaurus",
     "Opabinia",
     "Paraceratherium",
     "Parasaurolophus",
+    "Patagornis",
     "Petrie",
+    "Phorusrhacos",
     "Plateosaurus",
     "Plesiadapis",
     "Plesiosaurus",
     "Protoceratops",
     "Pteranodon",
     "Pterodactyl",
+    "Pterygotus",
     "Quetzalcoatlus",
     "Ruby",
     "Shonisaurus",
+    "Sigillaria",
     "Sinornithosaurus",
     "Smilodon",
     "Spike",
@@ -26783,12 +28902,15 @@
     "Styracosaurus",
     "T-Rex",
     "Tanystropheus",
+    "Titanis",
     "Titanoboa",
+    "Titanomyrma",
     "Triceratops",
     "Trilobite",
     "Trilobites",
     "Utahraptor",
     "Velociraptor",
+    "Williamsonia",
     "Woolly Rhinoceros"
   ],
   "Prehistoric Stories": [
@@ -27900,6 +30022,7 @@
   "Roman Gods": [
     "Ceres",
     "Concordia",
+    "Juno",
     "Jupiter",
     "Mars",
     "Neptune",
@@ -28224,13 +30347,14 @@
   "Saurischians": [
     "Albatross",
     "Allosaurus",
+    "Andalgalornis",
     "Apatosaurus",
     "Archaeopteryx",
     "Argentinosaurus",
-    "Bee",
     "Big Bird",
     "Blue Jay",
     "Brachiosaurus",
+    "Brontornis",
     "Camarasaurus",
     "Cardinal",
     "Carnotaurus",
@@ -28253,6 +30377,7 @@
     "Gull",
     "Hawk",
     "Hummingbird",
+    "Kelenken",
     "Kiwi",
     "Littlefoot",
     "Macaw",
@@ -28261,10 +30386,12 @@
     "Ostrich",
     "Owl",
     "Parrot",
+    "Patagornis",
     "Pelican",
     "Penguin",
     "Petrel",
     "Phoenix",
+    "Phorusrhacos",
     "Puffin",
     "Raven",
     "Rhea",
@@ -28278,6 +30405,7 @@
     "Swan",
     "T-Rex",
     "Tern",
+    "Titanis",
     "Turkey",
     "Utahraptor",
     "Velociraptor",
@@ -28479,14 +30607,17 @@
     "Anomalocaris",
     "Basilosaurus",
     "Blue Whale",
+    "Coelacanth",
     "Dolphin",
     "Dugong",
     "Elasmosaurus",
+    "Eurypterid",
     "Gamera",
     "Godzilla",
     "Great White Shark",
     "Humpback Whale",
     "Ichthyosaurus",
+    "Jaekelopterus",
     "Killer Whale",
     "King Ghidorah",
     "Livyatan",
@@ -28497,6 +30628,7 @@
     "Opabinia",
     "Orca",
     "Plesiosaurus",
+    "Pterygotus",
     "Seal",
     "Shark",
     "Shonisaurus",
@@ -28813,6 +30945,13 @@
   "Silent Films": [
     "Metropolis"
   ],
+  "Silurian Period": [
+    "Centipede",
+    "Eurypterid",
+    "Millipede",
+    "Pterygotus",
+    "Scorpion"
+  ],
   "Silver Things": [
     "Colossus"
   ],
@@ -28894,6 +31033,10 @@
     "Data",
     "INT",
     "Key"
+  ],
+  "Solar System Formation": [
+    "Formation of Earth",
+    "Formation of Moon"
   ],
   "Song Lyrics": [
     "Rock Around the Clock",
@@ -29114,6 +31257,15 @@
     "Pinata",
     "Pinta",
     "Pinto"
+  ],
+  "Spices": [
+    "Cardamom",
+    "Clove",
+    "Clover",
+    "Ginger",
+    "Saffron",
+    "Turmeric",
+    "Vanilla"
   ],
   "Spices & Herbs": [
     "Basil",
@@ -29469,7 +31621,11 @@
     "Allosaurus"
   ],
   "Starts with ALM": [
-    "Almanac"
+    "Almanac",
+    "Almond"
+  ],
+  "Starts with ALO": [
+    "Aloe"
   ],
   "Starts with ALP": [
     "Alpha"
@@ -29501,6 +31657,7 @@
     "Anchor"
   ],
   "Starts with AND": [
+    "Andalgalornis",
     "Andaman",
     "Andorra",
     "Andrea Bocelli",
@@ -29611,6 +31768,7 @@
     "Arrival"
   ],
   "Starts with ART": [
+    "Arthropleura",
     "Arthur",
     "Arthur Christmas",
     "Artsakh"
@@ -29629,6 +31787,9 @@
   ],
   "Starts with ASK": [
     "Ask not what your country can do for you"
+  ],
+  "Starts with ASP": [
+    "Asparagus"
   ],
   "Starts with ASS": [
     "Assassination of Caesar"
@@ -29753,7 +31914,8 @@
     "Baltic Sea"
   ],
   "Starts with BAM": [
-    "Bambi"
+    "Bambi",
+    "Bamboo"
   ],
   "Starts with BAN": [
     "Banana",
@@ -29772,6 +31934,7 @@
   "Starts with BAR": [
     "Barbados",
     "Bari",
+    "Barley",
     "Barszcz",
     "Bartholomew"
   ],
@@ -29806,6 +31969,7 @@
     "Batu Khan"
   ],
   "Starts with BAY": [
+    "Bay Leaf",
     "Bay of Pigs",
     "Bay of Pigs Invasion"
   ],
@@ -29864,6 +32028,7 @@
     "Bench",
     "Benedict",
     "Benin",
+    "Bennettitales",
     "Bentley"
   ],
   "Starts with BEO": [
@@ -29933,6 +32098,7 @@
     "Black Panther",
     "Black Sea",
     "Black Widow",
+    "Blackberry",
     "Blade Runner"
   ],
   "Starts with BLE": [
@@ -30020,6 +32186,9 @@
   "Starts with BOX": [
     "Boxing"
   ],
+  "Starts with BOY": [
+    "Boysenberry"
+  ],
   "Starts with BRA": [
     "Brachchiopods",
     "Brachiosaurus",
@@ -30034,6 +32203,7 @@
   ],
   "Starts with BRE": [
     "Bread",
+    "Breakup of Pangea",
     "Brezel"
   ],
   "Starts with BRI": [
@@ -30046,6 +32216,7 @@
     "Brigitte Bardot",
     "Brioche",
     "Brisket",
+    "Bristlecone Pine",
     "Britannia",
     "Britannia Hospital",
     "Britannic",
@@ -30057,7 +32228,9 @@
     "British West Africa"
   ],
   "Starts with BRO": [
+    "Broccoli",
     "Bronco",
+    "Brontornis",
     "Bronze Bird Terrace",
     "Brother Bear",
     "Brownie"
@@ -30126,11 +32299,14 @@
   ],
   "Starts with CAB": [
     "Cabaret",
+    "Cabbage",
     "Cabin",
     "Cabo Verde"
   ],
   "Starts with CAC": [
-    "Cachaça"
+    "Cacao",
+    "Cachaça",
+    "Cactus"
   ],
   "Starts with CAD": [
     "Cadillac"
@@ -30144,6 +32320,7 @@
     "Cake"
   ],
   "Starts with CAL": [
+    "Calamites",
     "Calamity Jane",
     "Caldo Verde",
     "California",
@@ -30184,6 +32361,7 @@
     "Carbonara",
     "Carcano Model 38",
     "Carcassonne",
+    "Cardamom",
     "Cardinal",
     "Caribbean Sea",
     "Carl Vinson",
@@ -30191,6 +32369,7 @@
     "Carnotaurus",
     "Carp",
     "Carrie",
+    "Carrot",
     "Cars",
     "Carson City",
     "Carter",
@@ -30198,6 +32377,7 @@
   ],
   "Starts with CAS": [
     "Casablanca",
+    "Cashew",
     "Caspian Sea",
     "Cassiopeia",
     "Cassius",
@@ -30217,6 +32397,7 @@
     "Catherine of Aragon"
   ],
   "Starts with CAU": [
+    "Cauliflower",
     "Causeway"
   ],
   "Starts with CAV": [
@@ -30228,8 +32409,12 @@
   "Starts with CED": [
     "Cedar"
   ],
+  "Starts with CEL": [
+    "Celery"
+  ],
   "Starts with CEN": [
     "Centaur",
+    "Centipede",
     "Central African Republic"
   ],
   "Starts with CER": [
@@ -30253,6 +32438,7 @@
     "Chair",
     "Challah",
     "Challenger",
+    "Chamomile",
     "Champagne",
     "Chandragupta Maurya",
     "Chanel",
@@ -30277,6 +32463,7 @@
     "Cheese",
     "Cheesecake",
     "Chernobyl",
+    "Cherry Blossom",
     "Chess",
     "Chessboard",
     "Chewbacca",
@@ -30330,6 +32517,9 @@
   "Starts with CID": [
     "Cider"
   ],
+  "Starts with CIL": [
+    "Cilantro"
+  ],
   "Starts with CIN": [
     "Cinderella",
     "Cinnamon"
@@ -30355,10 +32545,14 @@
     "Clinton"
   ],
   "Starts with CLO": [
-    "Cloud"
+    "Cloud",
+    "Cloudberry",
+    "Clove",
+    "Clover"
   ],
   "Starts with CLU": [
     "Club",
+    "Club Moss",
     "Clue"
   ],
   "Starts with CNN": [
@@ -30371,17 +32565,20 @@
   ],
   "Starts with COC": [
     "Coco",
-    "Cocoa"
+    "Cocoa",
+    "Coconut"
   ],
   "Starts with COD": [
     "CODA"
   ],
   "Starts with COE": [
+    "Coelacanth",
     "Coelophysis"
   ],
   "Starts with COF": [
     "Coffee",
-    "Coffee Crisp"
+    "Coffee Crisp",
+    "Coffee Plant"
   ],
   "Starts with COG": [
     "Cog"
@@ -30442,6 +32639,7 @@
     "Coral",
     "Corfu",
     "Cormorant",
+    "Corn",
     "Corned Beef",
     "Coronation of Elizabeth II",
     "Corsair",
@@ -30469,7 +32667,9 @@
     "Crab",
     "Crack Epidemic",
     "Craft Beer",
+    "Cranberry",
     "Crash",
+    "Crayfish",
     "Crayon"
   ],
   "Starts with CRE": [
@@ -30496,10 +32696,14 @@
   "Starts with CUB": [
     "Cuba"
   ],
+  "Starts with CUC": [
+    "Cucumber"
+  ],
   "Starts with CUR": [
     "Curia",
     "Curie",
     "Curling",
+    "Currant",
     "Curry"
   ],
   "Starts with CYA": [
@@ -30509,6 +32713,7 @@
     "Cyberpunk"
   ],
   "Starts with CYC": [
+    "Cycad",
     "Cycling",
     "Cyclops"
   ],
@@ -30556,6 +32761,7 @@
     "Dan Dan Noodles",
     "Dances with Wolves",
     "Dancing Queen",
+    "Dandelion",
     "Dango",
     "Dante",
     "Dante's Peak",
@@ -30571,7 +32777,8 @@
     "Darwin"
   ],
   "Starts with DAT": [
-    "Data"
+    "Data",
+    "Date"
   ],
   "Starts with DAU": [
     "Dauntless"
@@ -30592,6 +32799,7 @@
     "Death's End"
   ],
   "Starts with DEC": [
+    "Deccan Traps Eruption",
     "December 7th, 1941",
     "Deck"
   ],
@@ -30629,6 +32837,9 @@
     "Devil",
     "Devon"
   ],
+  "Starts with DEW": [
+    "Dewberry"
+  ],
   "Starts with DEX": [
     "DEX"
   ],
@@ -30642,6 +32853,9 @@
     "Die Hard",
     "Die Hard 2",
     "Die Hard with a Vengeance"
+  ],
+  "Starts with DIL": [
+    "Dill"
   ],
   "Starts with DIM": [
     "Dim Sum",
@@ -30723,6 +32937,7 @@
     "Dracula",
     "Dragon",
     "Dragon Ball",
+    "Dragonfly",
     "Drake"
   ],
   "Starts with DRE": [
@@ -30784,6 +32999,7 @@
     "Easy Rider"
   ],
   "Starts with ECH": [
+    "Echinacea",
     "Echo"
   ],
   "Starts with ECL": [
@@ -30836,7 +33052,8 @@
     "Elbrus"
   ],
   "Starts with ELD": [
-    "Elden Ring"
+    "Elden Ring",
+    "Elderberry"
   ],
   "Starts with ELE": [
     "Elemental",
@@ -30947,7 +33164,8 @@
     "Euoplocephalus"
   ],
   "Starts with EUR": [
-    "Europa"
+    "Europa",
+    "Eurypterid"
   ],
   "Starts with EVE": [
     "Everest",
@@ -30964,7 +33182,8 @@
     "EXO"
   ],
   "Starts with EYJ": [
-    "Eyjafjallajokull"
+    "Eyjafjallajokull",
+    "Eyjafjallajökull Eruption"
   ],
   "Starts with EZI": [
     "Ezio Auditore"
@@ -31018,6 +33237,7 @@
   ],
   "Starts with FER": [
     "Ferdinand Magellan",
+    "Fern",
     "Ferrari",
     "Ferry"
   ],
@@ -31034,6 +33254,7 @@
     "Fiddler on the Roof"
   ],
   "Starts with FIG": [
+    "Fig",
     "Fight Club",
     "Figure Skating"
   ],
@@ -31051,6 +33272,7 @@
   ],
   "Starts with FIR": [
     "Fire Truck",
+    "Firefly",
     "First Defenestration of Prague",
     "First Triumvirate"
   ],
@@ -31063,6 +33285,9 @@
     "Flan",
     "Flash",
     "Flash Gordon"
+  ],
+  "Starts with FLE": [
+    "Flea"
   ],
   "Starts with FLI": [
     "Flight of the Navigator"
@@ -31077,6 +33302,7 @@
     "Fluorine"
   ],
   "Starts with FLY": [
+    "Fly",
     "Flyer"
   ],
   "Starts with FOC": [
@@ -31094,6 +33320,11 @@
     "Ford",
     "Ford's Theatre",
     "Foreign Debt Crisis",
+    "Formation of Earth",
+    "Formation of Himalayas",
+    "Formation of Moon",
+    "Formation of Pangea",
+    "Formation of Rocky Mountains",
     "Formentera",
     "Formula One",
     "Forrest Gump",
@@ -31182,7 +33413,8 @@
   ],
   "Starts with GAR": [
     "Garfield",
-    "Gargantuan"
+    "Gargantuan",
+    "Garlic"
   ],
   "Starts with GAS": [
     "Gastornis"
@@ -31251,7 +33483,10 @@
     "Gilgamesh"
   ],
   "Starts with GIN": [
-    "Gin"
+    "Gin",
+    "Ginger",
+    "Ginkgo",
+    "Ginseng"
   ],
   "Starts with GIR": [
     "Giraffe"
@@ -31266,6 +33501,7 @@
   ],
   "Starts with GLO": [
     "Globe Theatre",
+    "Glossopteris",
     "Glove"
   ],
   "Starts with GMC": [
@@ -31307,7 +33543,8 @@
     "Goodfellas",
     "Goodnight Moon",
     "Goofy",
-    "Google"
+    "Google",
+    "Gooseberry"
   ],
   "Starts with GOT": [
     "GOT7",
@@ -31324,11 +33561,13 @@
     "Grant",
     "Grape",
     "Graptolites",
+    "Grasshopper",
     "Grave of the Fireflies"
   ],
   "Starts with GRE": [
     "Grease",
     "Great Lakes",
+    "Great Oxygenation Event",
     "Great Wall",
     "Great White Shark",
     "Greece",
@@ -31483,7 +33722,8 @@
     "Hayes"
   ],
   "Starts with HAZ": [
-    "Hazel"
+    "Hazel",
+    "Hazelnut"
   ],
   "Starts with HEA": [
     "Hearts",
@@ -31586,7 +33826,8 @@
     "Horchata",
     "Hornet",
     "Horse",
-    "Horse Racing"
+    "Horse Racing",
+    "Horsetail"
   ],
   "Starts with HOT": [
     "Hot Chocolate",
@@ -31609,6 +33850,9 @@
   ],
   "Starts with HUB": [
     "Hubble"
+  ],
+  "Starts with HUC": [
+    "Huckleberry"
   ],
   "Starts with HUD": [
     "Hudson",
@@ -31827,6 +34071,9 @@
   "Starts with JAD": [
     "Jade"
   ],
+  "Starts with JAE": [
+    "Jaekelopterus"
+  ],
   "Starts with JAG": [
     "Jaguar"
   ],
@@ -31968,7 +34215,8 @@
     "June 18th, 1815",
     "June 28th, 1914",
     "June 4th, 1942",
-    "Juneau"
+    "Juneau",
+    "Juno"
   ],
   "Starts with JUP": [
     "Jupiter"
@@ -31990,7 +34238,8 @@
     "Kagemusha"
   ],
   "Starts with KAL": [
-    "Kalahari"
+    "Kalahari",
+    "Kale"
   ],
   "Starts with KAM": [
     "Kampuchea"
@@ -32028,6 +34277,9 @@
   ],
   "Starts with KEF": [
     "Kefir"
+  ],
+  "Starts with KEL": [
+    "Kelenken"
   ],
   "Starts with KEN": [
     "Kennedy",
@@ -32123,6 +34375,7 @@
   "Starts with KRA": [
     "Kraft Dinner",
     "Krakatoa",
+    "Krakatoa Eruption",
     "Kraken",
     "Kramer vs. Kramer"
   ],
@@ -32186,7 +34439,8 @@
   ],
   "Starts with LAD": [
     "Lady Jane Grey",
-    "Lady and the Tramp"
+    "Lady and the Tramp",
+    "Ladybug"
   ],
   "Starts with LAI": [
     "Laika, Space Dog"
@@ -32195,6 +34449,7 @@
     "Lake Baikal",
     "Lake Victoria",
     "Laker",
+    "Laki Eruption",
     "Lakshadweep"
   ],
   "Starts with LAM": [
@@ -32220,7 +34475,8 @@
   "Starts with LAS": [
     "Lasagna",
     "Lassi",
-    "Lasso"
+    "Lasso",
+    "Last Glacial Maximum"
   ],
   "Starts with LAT": [
     "Latke",
@@ -32260,6 +34516,9 @@
   "Starts with LEO": [
     "Leo"
   ],
+  "Starts with LEP": [
+    "Lepidodendron"
+  ],
   "Starts with LES": [
     "Les Misérables",
     "Lesotho"
@@ -32288,6 +34547,9 @@
     "Libra",
     "Libya"
   ],
+  "Starts with LIC": [
+    "Lichen"
+  ],
   "Starts with LIE": [
     "Liechtenstein"
   ],
@@ -32312,6 +34574,7 @@
   ],
   "Starts with LIN": [
     "Lincoln",
+    "Lingonberry",
     "Linguine"
   ],
   "Starts with LIO": [
@@ -32340,6 +34603,9 @@
     "Locker",
     "Lockheed",
     "Locro"
+  ],
+  "Starts with LOG": [
+    "Loganberry"
   ],
   "Starts with LOK": [
     "Loki"
@@ -32410,6 +34676,7 @@
   ],
   "Starts with MAC": [
     "Mac and Cheese",
+    "Macadamia",
     "Macaron",
     "Macaw",
     "Macbeth",
@@ -32466,6 +34733,7 @@
     "Mantle"
   ],
   "Starts with MAP": [
+    "Maple",
     "Maple Syrup",
     "Mapo Tofu"
   ],
@@ -32479,6 +34747,7 @@
     "Marinara",
     "Mariner",
     "Mario",
+    "Marionberry",
     "Mark Antony",
     "Mark David Chapman",
     "Marker",
@@ -32552,7 +34821,9 @@
     "Meet the Robinsons"
   ],
   "Starts with MEG": [
-    "Megalodon"
+    "Megalodon",
+    "Meganeura",
+    "Meganeuropsis"
   ],
   "Starts with MEH": [
     "Mehmed II",
@@ -32621,7 +34892,8 @@
     "Milkshake",
     "Milky Way",
     "Millennium Falcon",
-    "Million Dollar Baby"
+    "Million Dollar Baby",
+    "Millipede"
   ],
   "Starts with MIN": [
     "Mindanao",
@@ -32631,7 +34903,8 @@
     "Mini",
     "Minié ball",
     "Minnie",
-    "Minotaur"
+    "Minotaur",
+    "Mint"
   ],
   "Starts with MIR": [
     "Miracle on 34th Street"
@@ -32695,7 +34968,9 @@
     "Morse"
   ],
   "Starts with MOS": [
-    "Mosasaurus"
+    "Mosasaurus",
+    "Mosquito",
+    "Moss"
   ],
   "Starts with MOT": [
     "Moth",
@@ -32704,6 +34979,8 @@
   ],
   "Starts with MOU": [
     "Moulin Rouge!",
+    "Mount Pelée Eruption",
+    "Mount St. Helens Eruption",
     "Moussaka"
   ],
   "Starts with MOZ": [
@@ -32723,7 +35000,8 @@
     "Muhammad"
   ],
   "Starts with MUL": [
-    "Mulan"
+    "Mulan",
+    "Mulberry"
   ],
   "Starts with MUR": [
     "Murder"
@@ -32812,6 +35090,7 @@
   ],
   "Starts with NEV": [
     "Nevada",
+    "Nevado del Ruiz Eruption",
     "Nevermind"
   ],
   "Starts with NEW": [
@@ -32917,6 +35196,9 @@
   "Starts with OAS": [
     "Oasis of the Seas"
   ],
+  "Starts with OAT": [
+    "Oats"
+  ],
   "Starts with OBA": [
     "Obama"
   ],
@@ -32969,6 +35251,7 @@
     "Olympus"
   ],
   "Starts with OMA": [
+    "Omaha",
     "Oman"
   ],
   "Starts with OME": [
@@ -33000,7 +35283,8 @@
     "Opabinia"
   ],
   "Starts with OPE": [
-    "Opel"
+    "Opel",
+    "Opening of Atlantic Ocean"
   ],
   "Starts with OPP": [
     "Oppenheimer"
@@ -33020,6 +35304,7 @@
     "Ordinary People"
   ],
   "Starts with ORE": [
+    "Oregano",
     "Oregon"
   ],
   "Starts with ORI": [
@@ -33086,6 +35371,7 @@
     "Palak Paneer",
     "Palau",
     "Palestine",
+    "Palm",
     "Palm Springs",
     "Palpatine"
   ],
@@ -33117,6 +35403,7 @@
     "Parasite",
     "Paris",
     "Parrot",
+    "Parsley",
     "Parthenon"
   ],
   "Starts with PAS": [
@@ -33124,6 +35411,9 @@
     "Pastel de Nata",
     "Pastitsio",
     "Pastrami"
+  ],
+  "Starts with PAT": [
+    "Patagornis"
   ],
   "Starts with PAU": [
     "Paul"
@@ -33137,7 +35427,11 @@
   "Starts with PEA": [
     "Peach",
     "Peacock",
-    "Peahen"
+    "Peahen",
+    "Peanut"
+  ],
+  "Starts with PEC": [
+    "Pecan"
   ],
   "Starts with PEG": [
     "Pegasus"
@@ -33199,7 +35493,8 @@
   "Starts with PHO": [
     "Pho",
     "Phobos",
-    "Phoenix"
+    "Phoenix",
+    "Phorusrhacos"
   ],
   "Starts with PHU": [
     "Phuket"
@@ -33224,6 +35519,7 @@
   "Starts with PIN": [
     "Pinata",
     "Pinatubo",
+    "Pinatubo Eruption",
     "Pine",
     "Ping Pong",
     "Pinion",
@@ -33248,6 +35544,7 @@
     "Pisa",
     "Pisces",
     "Pisco",
+    "Pistachio",
     "Piston"
   ],
   "Starts with PIT": [
@@ -33306,6 +35603,9 @@
     "Pontoon",
     "Ponyo"
   ],
+  "Starts with POP": [
+    "Poppy"
+  ],
   "Starts with POR": [
     "Porco Rosso",
     "Porky Pig",
@@ -33322,7 +35622,8 @@
     "Poseidon"
   ],
   "Starts with POT": [
-    "Potala Palace"
+    "Potala Palace",
+    "Potato"
   ],
   "Starts with POU": [
     "Pouding Chomeur",
@@ -33366,7 +35667,8 @@
   ],
   "Starts with PTE": [
     "Pteranodon",
-    "Pterodactyl"
+    "Pterodactyl",
+    "Pterygotus"
   ],
   "Starts with PUC": [
     "Puck",
@@ -33384,7 +35686,8 @@
   ],
   "Starts with PUM": [
     "Pumbaa",
-    "Pumpernickel"
+    "Pumpernickel",
+    "Pumpkin"
   ],
   "Starts with PUN": [
     "Punk Rock"
@@ -33459,6 +35762,7 @@
   ],
   "Starts with RAS": [
     "Rashomon",
+    "Raspberry",
     "Rasputin"
   ],
   "Starts with RAT": [
@@ -33495,7 +35799,8 @@
     "Red Velvet",
     "Red Wine",
     "Reddit",
-    "Redoutable"
+    "Redoutable",
+    "Redwood"
   ],
   "Starts with REM": [
     "Remember, remember"
@@ -33536,6 +35841,7 @@
     "Rhodesia"
   ],
   "Starts with RIC": [
+    "Rice",
     "Richard II",
     "Richmond"
   ],
@@ -33609,6 +35915,7 @@
   "Starts with ROS": [
     "Rosa Bonheur",
     "Rose",
+    "Rosemary",
     "Rosé"
   ],
   "Starts with ROT": [
@@ -33664,7 +35971,8 @@
     "Sacramento"
   ],
   "Starts with SAF": [
-    "Safety Not Guaranteed"
+    "Safety Not Guaranteed",
+    "Saffron"
   ],
   "Starts with SAG": [
     "Sage",
@@ -33693,6 +36001,7 @@
     "Salem's Lot",
     "Sally Ride",
     "Salmon",
+    "Salmonberry",
     "Salsa",
     "Salt Lake City"
   ],
@@ -33799,6 +36108,9 @@
   "Starts with SEO": [
     "Seoul"
   ],
+  "Starts with SEQ": [
+    "Sequoia"
+  ],
   "Starts with SER": [
     "Serbia",
     "Serenity",
@@ -33840,8 +36152,14 @@
   "Starts with SHO": [
     "Shonisaurus"
   ],
+  "Starts with SHR": [
+    "Shrimp"
+  ],
   "Starts with SIA": [
     "Siam"
+  ],
+  "Starts with SIB": [
+    "Siberian Traps Eruption"
   ],
   "Starts with SIC": [
     "Sicily"
@@ -33856,6 +36174,7 @@
     "Sierra Leone"
   ],
   "Starts with SIG": [
+    "Sigillaria",
     "Sigma"
   ],
   "Starts with SIK": [
@@ -33934,6 +36253,7 @@
     "Snoopy",
     "Snow",
     "Snow White and the Seven Dwarfs",
+    "Snowball Earth",
     "Snowman"
   ],
   "Starts with SOB": [
@@ -33998,7 +36318,8 @@
     "Sow"
   ],
   "Starts with SOY": [
-    "Soy Sauce"
+    "Soy Sauce",
+    "Soybean"
   ],
   "Starts with SPA": [
     "Spades",
@@ -34025,6 +36346,7 @@
     "Spider",
     "Spider-Man",
     "Spike",
+    "Spinach",
     "Spinosaurus",
     "Spirited Away",
     "Spitfire"
@@ -34044,6 +36366,9 @@
   ],
   "Starts with SPÄ": [
     "Spätzle"
+  ],
+  "Starts with SQU": [
+    "Squash"
   ],
   "Starts with SRI": [
     "Sri Lanka",
@@ -34088,6 +36413,7 @@
     "STR",
     "Strange World",
     "Stranger in a Strange Land",
+    "Strawberry",
     "Street Fighter"
   ],
   "Starts with STU": [
@@ -34223,7 +36549,8 @@
   ],
   "Starts with TAM": [
     "Tamale",
-    "Tambora"
+    "Tambora",
+    "Tambora Eruption"
   ],
   "Starts with TAN": [
     "Tanaka",
@@ -34250,6 +36577,7 @@
     "Taurus"
   ],
   "Starts with TAY": [
+    "Tayberry",
     "Taylor"
   ],
   "Starts with TAZ": [
@@ -34257,6 +36585,7 @@
   ],
   "Starts with TEA": [
     "Tea",
+    "Tea Plant",
     "Teal",
     "Tear down this wall"
   ],
@@ -34286,6 +36615,7 @@
     "Teresa",
     "Teriyaki",
     "Terminator 2: Judgment Day",
+    "Termite",
     "Terms of Endearment",
     "Tern",
     "Terra Nova",
@@ -34597,7 +36927,9 @@
     "Theta"
   ],
   "Starts with THI": [
-    "Third Servile War"
+    "Thimbleberry",
+    "Third Servile War",
+    "Thistle"
   ],
   "Starts with THO": [
     "Thomas",
@@ -34615,6 +36947,9 @@
     "Thunder",
     "Thunderbolt"
   ],
+  "Starts with THY": [
+    "Thyme"
+  ],
   "Starts with TIA": [
     "Tiananmen Square Massacre"
   ],
@@ -34623,6 +36958,7 @@
     "Tibet"
   ],
   "Starts with TIC": [
+    "Tick",
     "Tick, Tick... Boom!"
   ],
   "Starts with TIG": [
@@ -34650,8 +36986,10 @@
   "Starts with TIT": [
     "Titanic",
     "Titanic: Adventure Out of Time",
+    "Titanis",
     "Titanium",
-    "Titanoboa"
+    "Titanoboa",
+    "Titanomyrma"
   ],
   "Starts with TO ": [
     "To Kill a Mockingbird",
@@ -34759,6 +37097,7 @@
     "Turin",
     "Turkey",
     "Turkmenistan",
+    "Turmeric",
     "Turning Red"
   ],
   "Starts with TUV": [
@@ -34849,6 +37188,7 @@
     "USS Zumwalt"
   ],
   "Starts with UTA": [
+    "Utah",
     "Utahraptor"
   ],
   "Starts with UZB": [
@@ -34862,6 +37202,7 @@
   ],
   "Starts with VAN": [
     "Van Buren",
+    "Vanilla",
     "Vantage Point",
     "Vanuatu"
   ],
@@ -34889,7 +37230,8 @@
     "Veni, vidi, vici",
     "Venice",
     "Venom",
-    "Venus"
+    "Venus",
+    "Venus Flytrap"
   ],
   "Starts with VER": [
     "Verona",
@@ -34947,6 +37289,7 @@
     "WALL-E",
     "Waldorf",
     "Walkabout",
+    "Walnut",
     "Walrus"
   ],
   "Starts with WAN": [
@@ -34960,7 +37303,8 @@
   ],
   "Starts with WAS": [
     "Wasabi",
-    "Washington"
+    "Washington",
+    "Wasp"
   ],
   "Starts with WAT": [
     "Water Margin",
@@ -34993,6 +37337,7 @@
     "Whale"
   ],
   "Starts with WHE": [
+    "Wheat",
     "Wheel",
     "Wheel of Fortune",
     "When Marnie Was There",
@@ -35012,10 +37357,13 @@
     "William Harvey",
     "William Miller",
     "William the Conqueror",
+    "Williamsonia",
+    "Willow",
     "Wilson"
   ],
   "Starts with WIN": [
     "Wine",
+    "Wineberry",
     "Winnie the Pooh",
     "Winnie-the-Pooh",
     "Winston Churchill"
@@ -35126,7 +37474,9 @@
     "Yosemite Sam"
   ],
   "Starts with YOU": [
-    "You had me at hello"
+    "You had me at hello",
+    "Youngberry",
+    "Younger Dryas"
   ],
   "Starts with YU ": [
     "Yu Xiang Qie Zi"
@@ -35188,6 +37538,9 @@
   ],
   "Starts with ZOR": [
     "Zoroaster"
+  ],
+  "Starts with ZUC": [
+    "Zucchini"
   ],
   "Starts with ZUL": [
     "Zulu"
@@ -35576,6 +37929,14 @@
     "Sputnik",
     "Television"
   ],
+  "Terror Birds": [
+    "Andalgalornis",
+    "Brontornis",
+    "Kelenken",
+    "Patagornis",
+    "Phorusrhacos",
+    "Titanis"
+  ],
   "Terrorist Attacks": [
     "10/7",
     "9/11",
@@ -35693,10 +38054,11 @@
   "Theropods": [
     "Albatross",
     "Allosaurus",
+    "Andalgalornis",
     "Archaeopteryx",
-    "Bee",
     "Big Bird",
     "Blue Jay",
+    "Brontornis",
     "Cardinal",
     "Carnotaurus",
     "Cassowary",
@@ -35718,6 +38080,7 @@
     "Gull",
     "Hawk",
     "Hummingbird",
+    "Kelenken",
     "Kiwi",
     "Macaw",
     "Magpie",
@@ -35725,10 +38088,12 @@
     "Ostrich",
     "Owl",
     "Parrot",
+    "Patagornis",
     "Pelican",
     "Penguin",
     "Petrel",
     "Phoenix",
+    "Phorusrhacos",
     "Puffin",
     "Raven",
     "Rhea",
@@ -35742,6 +38107,7 @@
     "Swan",
     "T-Rex",
     "Tern",
+    "Titanis",
     "Turkey",
     "Utahraptor",
     "Velociraptor",
@@ -36139,6 +38505,7 @@
     "Joseph Smith",
     "Juice",
     "Juneau",
+    "Juno",
     "Jurassic Park",
     "Kate & Leopold",
     "Katrina",
@@ -36228,6 +38595,7 @@
     "Moonrise Kingdom",
     "Morse",
     "Motocross",
+    "Mount St. Helens Eruption",
     "Mulan",
     "Mustang",
     "Mustard",
@@ -36256,6 +38624,7 @@
     "Olive",
     "Oliver & Company",
     "Olympia",
+    "Omaha",
     "On the Road",
     "Once Upon a Time in Hollywood",
     "One Flew Over the Cuckoo's Nest",
@@ -36553,6 +38922,7 @@
     "United States",
     "Up",
     "Usher",
+    "Utah",
     "Van Buren",
     "Vantage Point",
     "Velma",
@@ -37205,6 +39575,7 @@
     "Bandeja Paisa",
     "Coffee",
     "Colombia",
+    "Nevado del Ruiz Eruption",
     "One Hundred Years of Solitude",
     "Tres Leches"
   ],
@@ -37221,6 +39592,7 @@
   ],
   "Things Cuban": [
     "Bay of Pigs",
+    "Bay of Pigs Invasion",
     "Castro",
     "Cuba",
     "The Cuban Revolution"
@@ -37297,7 +39669,8 @@
     "Cebu",
     "Luzon",
     "Mindanao",
-    "Philippines"
+    "Philippines",
+    "Pinatubo Eruption"
   ],
   "Things Finnish": [
     "Finland"
@@ -37363,6 +39736,7 @@
     "Minié ball",
     "Mont Blanc",
     "Mont Saint-Michel",
+    "Mount Pelée Eruption",
     "Napoleon Bonaparte",
     "Normandie",
     "Notre Dame",
@@ -37550,7 +39924,10 @@
     "Hungary"
   ],
   "Things Icelandic": [
-    "Iceland"
+    "Eyjafjallajokull",
+    "Eyjafjallajökull Eruption",
+    "Iceland",
+    "Laki Eruption"
   ],
   "Things Indian": [
     "Andaman",
@@ -37594,11 +39971,13 @@
     "Indonesia",
     "Java",
     "Krakatoa",
+    "Krakatoa Eruption",
     "Lombok",
     "Pinatubo",
     "Sulawesi",
     "Sumatra",
     "Tambora",
+    "Tambora Eruption",
     "Toba Supereruption"
   ],
   "Things Iranian": [
@@ -38176,12 +40555,14 @@
     "Carthage",
     "Cassius",
     "Cassius Chaerea",
+    "Ceres",
     "Cicero",
     "Circus Maximus",
     "Claudius",
     "Colosseum",
     "Commentarii de Bello Gallico",
     "Commodus",
+    "Concordia",
     "Constantine the Great",
     "Constantinople",
     "Curia",
@@ -38200,14 +40581,19 @@
     "Ides of March",
     "Illyria",
     "Julius Caesar",
+    "Juno",
+    "Jupiter",
     "Marcus Aurelius",
     "Mark Antony",
+    "Mars",
     "Mauretania",
     "Narcissus the Wrestler",
+    "Neptune",
     "Nero",
     "Ostia Antica",
     "Pantheon",
     "Pilum",
+    "Pluto",
     "Pompeii",
     "Pompey",
     "Pugio",
@@ -38215,6 +40601,7 @@
     "Roma",
     "Roman Forum",
     "Rome",
+    "Saturn",
     "Scutum",
     "Second Triumvirate",
     "Servilius Casca",
@@ -38229,6 +40616,7 @@
     "Trajan",
     "Varus, give me back my legions",
     "Veni, vidi, vici",
+    "Venus",
     "Vespasian",
     "Vesuvius"
   ],
@@ -38467,6 +40855,7 @@
     "Blue Jay",
     "Boeing",
     "Bush",
+    "Butterfly",
     "Cardinal",
     "Cessna",
     "Chicken",
@@ -38483,14 +40872,18 @@
     "Discovery",
     "Donald Duck",
     "Douglas",
+    "Dragonfly",
     "Eagle",
     "Enterprise",
     "F-16",
     "F-22",
     "F-35",
     "Falcon",
+    "Firefly",
     "Flash",
+    "Fly",
     "Galactica",
+    "Grasshopper",
     "Green Lantern",
     "Gulfstream",
     "Hawk",
@@ -38506,12 +40899,15 @@
     "Learjet",
     "Lockheed",
     "Macaw",
+    "Meganeura",
+    "Meganeuropsis",
     "Messerschmitt",
     "MiG",
     "MiG-15",
     "MiG-21",
     "Microraptor",
     "Millennium Falcon",
+    "Mosquito",
     "Mothra",
     "Mustang",
     "Owl",
@@ -38540,6 +40936,7 @@
     "Val",
     "Voyager",
     "Vulture",
+    "Wasp",
     "Wildcat",
     "Wonder Woman",
     "X-Wing",
@@ -38909,16 +41306,45 @@
   ],
   "Trees": [
     "Birch",
+    "Bristlecone Pine",
+    "Calamites",
     "Cedar",
     "Hazel",
-    "Olive"
+    "Lepidodendron",
+    "Maple",
+    "Olive",
+    "Palm",
+    "Redwood",
+    "Sequoia",
+    "Sigillaria",
+    "Willow"
   ],
   "Triassic Period": [
+    "Bennettitales",
+    "Centipede",
+    "Club Moss",
+    "Coelacanth",
     "Coelophysis",
+    "Crab",
+    "Crayfish",
+    "Cycad",
+    "Dragonfly",
+    "Fern",
+    "Ginkgo",
+    "Glossopteris",
+    "Horsetail",
+    "Lichen",
+    "Lobster",
+    "Millipede",
+    "Moss",
     "Permian-Triassic Extinction",
     "Plateosaurus",
+    "Scorpion",
     "Shonisaurus",
-    "Tanystropheus"
+    "Shrimp",
+    "Spider",
+    "Tanystropheus",
+    "Tarantula"
   ],
   "Tricksters": [
     "Anansi",
@@ -39171,15 +41597,14 @@
     "Alaska",
     "Arizona",
     "California",
-    "Carson City",
     "Florida",
     "Georgia",
-    "Juneau",
     "Michigan",
     "Nevada",
     "New York",
     "Oregon",
     "Texas",
+    "Utah",
     "Virginia",
     "Washington"
   ],
@@ -39190,13 +41615,28 @@
     "Kilo"
   ],
   "Vegetables": [
+    "Asparagus",
+    "Broccoli",
     "Butterhead",
+    "Cabbage",
+    "Carrot",
+    "Cauliflower",
+    "Celery",
+    "Corn",
+    "Cucumber",
+    "Garlic",
     "Iceberg",
+    "Kale",
     "Lettuce",
     "Onion",
     "Pickle",
+    "Potato",
+    "Pumpkin",
     "Romaine",
-    "Tomato"
+    "Spinach",
+    "Squash",
+    "Tomato",
+    "Zucchini"
   ],
   "Video Game Characters": [
     "Agent 47",
@@ -39256,6 +41696,24 @@
   ],
   "Villains": [
     "Bowser"
+  ],
+  "Volcanic Eruptions": [
+    "Deccan Traps Eruption",
+    "Eyjafjallajökull Eruption",
+    "Krakatoa",
+    "Krakatoa Eruption",
+    "Laki Eruption",
+    "Mount Pelée Eruption",
+    "Mount St. Helens Eruption",
+    "Nevado del Ruiz Eruption",
+    "Pinatubo",
+    "Pinatubo Eruption",
+    "Pompeii",
+    "Siberian Traps Eruption",
+    "St. Helens",
+    "Tambora",
+    "Tambora Eruption",
+    "Vesuvius"
   ],
   "Volcanoes": [
     "Dante's Peak",

@@ -179,9 +179,6 @@
   "Chemicals": [
     "Ammonia"
   ],
-  "Mesozoic Era": [
-    "Ammonites"
-  ],
   "Mollusks": [
     "Ammonites"
   ],
@@ -761,9 +758,6 @@
   "Movies featuring Pierce Brosnan": [
     "Dante's Peak"
   ],
-  "Movies featuring Jennifer Garner": [
-    "Daredevil"
-  ],
   "Rooms": [
     "Darkroom"
   ],
@@ -1181,6 +1175,12 @@
   "Movies featuring Stockard Channing": [
     "Grease"
   ],
+  "Atmospheric Changes": [
+    "Great Oxygenation Event"
+  ],
+  "Life Evolution": [
+    "Great Oxygenation Event"
+  ],
   "Movies directed by Peter Farrelly": [
     "Green Book"
   ],
@@ -1349,9 +1349,6 @@
   "Movies featuring Ray Romano": [
     "Ice Age"
   ],
-  "Things Icelandic": [
-    "Iceland"
-  ],
   "Ichiro Suzuki": [
     "Ichiro"
   ],
@@ -1489,6 +1486,18 @@
   ],
   "Manufactured by Yokosuka": [
     "Judy"
+  ],
+  "Movies directed by Jason Reitman": [
+    "Juno"
+  ],
+  "Movies featuring Allison Janney": [
+    "Juno"
+  ],
+  "Movies featuring Ellen Page": [
+    "Juno"
+  ],
+  "Movies featuring Michael Cera": [
+    "Juno"
   ],
   "Movies featuring Jeff Goldblum": [
     "Jurassic Park"
@@ -1784,9 +1793,6 @@
   "Movies featuring Wesley Singerman": [
     "Meet the Robinsons"
   ],
-  "Cenozoic Era": [
-    "Megalodon"
-  ],
   "Giant Animals": [
     "Megalodon"
   ],
@@ -2053,6 +2059,9 @@
   ],
   "Pirate Terms": [
     "One Piece"
+  ],
+  "Ocean Formation": [
+    "Opening of Atlantic Ocean"
   ],
   "Movies featuring Cillian Murphy": [
     "Oppenheimer"
@@ -3590,6 +3599,9 @@
   "Things Venezuelan": [
     "Venezuela"
   ],
+  "Carnivorous Plants": [
+    "Venus Flytrap"
+  ],
   "Movies directed by Mick Jackson": [
     "Volcano"
   ],
@@ -3752,9 +3764,6 @@
   "Movies featuring Ginnifer Goodwin": [
     "Zootopia"
   ],
-  "Movies featuring Jason Bateman": [
-    "Zootopia"
-  ],
   "Movies directed by Cy Endfield": [
     "Zulu"
   ],
@@ -3885,10 +3894,6 @@
     "Attack of the Clones",
     "Revenge of the Sith"
   ],
-  "Holocene Epoch": [
-    "Aurochs",
-    "Dodo"
-  ],
   "Movies featuring Mark Ruffalo": [
     "Avengers: Endgame",
     "Spotlight"
@@ -3984,6 +3989,10 @@
   "Movies featuring Mel Gibson": [
     "Braveheart",
     "Pocahontas"
+  ],
+  "Continental Drift": [
+    "Breakup of Pangea",
+    "Formation of Pangea"
   ],
   "Movies featuring Stanley Holloway": [
     "Brief Encounter",
@@ -4121,6 +4130,10 @@
     "Dancing Queen",
     "Waterloo"
   ],
+  "Movies featuring Jennifer Garner": [
+    "Daredevil",
+    "Juno"
+  ],
   "Movies featuring Andy Lau": [
     "Days of Being Wild",
     "House of Flying Daggers"
@@ -4137,6 +4150,10 @@
     "Death Wish",
     "Little Shop of Horrors"
   ],
+  "Mass Extinctions": [
+    "Deccan Traps Eruption",
+    "Siberian Traps Eruption"
+  ],
   "Movies featuring Val Kilmer": [
     "Deja Vu",
     "Heat"
@@ -4152,10 +4169,6 @@
   "Movies featuring Jeremy Irons": [
     "Die Hard with a Vengeance",
     "The Lion King"
-  ],
-  "Permian Period": [
-    "Dimetrodon",
-    "Permian-Triassic Extinction"
   ],
   "Antarctic Exploration": [
     "Discovery",
@@ -4313,6 +4326,18 @@
     "Ford",
     "Studebaker"
   ],
+  "Astronomical Events": [
+    "Formation of Earth",
+    "Formation of Moon"
+  ],
+  "Solar System Formation": [
+    "Formation of Earth",
+    "Formation of Moon"
+  ],
+  "Mountain Building": [
+    "Formation of Himalayas",
+    "Formation of Rocky Mountains"
+  ],
   "Movies featuring Andie MacDowell": [
     "Four Weddings and a Funeral",
     "Groundhog Day"
@@ -4445,10 +4470,6 @@
     "Hudson Bay",
     "San Francisco Bay"
   ],
-  "Oligocene Epoch": [
-    "Hyaenodon",
-    "Paraceratherium"
-  ],
   "Movies featuring Takashi Shimura": [
     "Ikiru",
     "Seven Samurai"
@@ -4488,6 +4509,10 @@
   "Things Jordanian": [
     "Jordan",
     "Petra"
+  ],
+  "Movies featuring Jason Bateman": [
+    "Juno",
+    "Zootopia"
   ],
   "Movies directed by Spielberg": [
     "Jurassic Park",
@@ -4740,10 +4765,6 @@
   "Movies featuring Willem Dafoe": [
     "Platoon",
     "Spider-Man"
-  ],
-  "Paleocene Epoch": [
-    "Plesiadapis",
-    "Titanoboa"
   ],
   "Movies directed by Alfred Hitchcock": [
     "Psycho",
@@ -5137,6 +5158,11 @@
     "Bridge on the River Kwai",
     "Zulu"
   ],
+  "Extinct Plants": [
+    "Bennettitales",
+    "Glossopteris",
+    "Williamsonia"
+  ],
   "Movies directed by Don Hall": [
     "Big Hero 6",
     "Raya and the Last Dragon",
@@ -5307,11 +5333,6 @@
     "Dreamgirls",
     "Soul"
   ],
-  "1780s": [
-    "Don Giovanni",
-    "The Shays' Rebellion",
-    "Washington"
-  ],
   "Movies directed by Nicolas Roeg": [
     "Don't Look Now",
     "The Man Who Fell to Earth",
@@ -5481,6 +5502,16 @@
     "La Bohème",
     "Madame Butterfly",
     "Tosca"
+  ],
+  "Climate Change": [
+    "Last Glacial Maximum",
+    "Snowball Earth",
+    "Younger Dryas"
+  ],
+  "Glacial Periods": [
+    "Last Glacial Maximum",
+    "Snowball Earth",
+    "Younger Dryas"
   ],
   "Norse Mythology": [
     "Loki",
