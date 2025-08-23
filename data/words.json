@@ -2943,115 +2943,126 @@
   ],
   "Battle of Actium": [
     "1st Century BC",
+    "Battles",
     "Civil Wars",
     "Ends with IUM",
     "Events",
+    "Military Conflicts",
     "Roman Republic",
     "Starts with BAT",
-    "Things Roman",
-    "Wars"
+    "Things Roman"
   ],
   "Battle of Agincourt": [
     "1410s",
     "15th Century",
+    "Battles",
     "Ends with URT",
     "Events",
     "Hundred Years' War",
+    "Military Conflicts",
     "Starts with BAT",
     "Things British",
-    "Things French",
-    "Wars"
+    "Things French"
   ],
   "Battle of Alesia": [
     "1st Century BC",
+    "Battles",
     "Ends with SIA",
     "Events",
+    "Military Conflicts",
     "Roman Republic",
     "Starts with BAT",
-    "Things Roman",
-    "Wars"
+    "Things Roman"
   ],
   "Battle of Carrhae": [
     "1st Century BC",
+    "Battles",
     "Ends with HAE",
     "Events",
+    "Military Conflicts",
     "Roman Republic",
     "Starts with BAT",
-    "Things Roman",
-    "Wars"
+    "Things Roman"
   ],
   "Battle of Crécy": [
     "1340s",
     "14th Century",
+    "Battles",
     "Ends with ÉCY",
     "Events",
     "Hundred Years' War",
+    "Military Conflicts",
     "Starts with BAT",
     "Things British",
-    "Things French",
-    "Wars"
+    "Things French"
   ],
   "Battle of Dien Bien Phu": [
     "1950s",
     "20th Century",
+    "Battles",
     "Cold War",
     "Ends with PHU",
     "Events",
     "Mentioned in We Didn't Start the Fire",
-    "Political Events",
+    "Military Conflicts",
     "Starts with BAT",
     "Things Vietnamese"
   ],
   "Battle of Pharsalus": [
     "1st Century BC",
+    "Battles",
     "Civil Wars",
     "Ends with LUS",
     "Events",
+    "Military Conflicts",
     "Roman Republic",
     "Starts with BAT",
-    "Things Roman",
-    "Wars"
+    "Things Roman"
   ],
   "Battle of Philippi": [
     "1st Century BC",
+    "Battles",
     "Civil Wars",
     "Ends with PPI",
     "Events",
+    "Military Conflicts",
     "Roman Republic",
     "Starts with BAT",
-    "Things Roman",
-    "Wars"
+    "Things Roman"
   ],
   "Battle of Poitiers": [
     "1350s",
     "14th Century",
+    "Battles",
     "Ends with ERS",
     "Events",
     "Hundred Years' War",
+    "Military Conflicts",
     "Starts with BAT",
     "Things British",
-    "Things French",
-    "Wars"
+    "Things French"
   ],
   "Battle of Sluys": [
     "1340s",
     "14th Century",
+    "Battles",
     "Ends with UYS",
     "Events",
     "Hundred Years' War",
+    "Military Conflicts",
     "Naval Battles",
     "Starts with BAT",
     "Things British",
-    "Things French",
-    "Wars"
+    "Things French"
   ],
   "Battle of Zhizhi": [
     "1st Century BC",
+    "Battles",
     "Ends with ZHI",
     "Events",
+    "Military Conflicts",
     "Starts with BAT",
-    "Things Chinese",
-    "Wars"
+    "Things Chinese"
   ],
   "Battlefield": [
     "Ends with ELD",
@@ -3081,10 +3092,12 @@
     "Events",
     "Locations in North America",
     "Mentioned in We Didn't Start the Fire",
+    "Military Conflicts",
     "Place Names",
     "Political Events",
     "Starts with BAY",
-    "Things Cuban"
+    "Things Cuban",
+    "Wars"
   ],
   "Bay of Pigs Invasion": [
     "1960s",
@@ -3093,9 +3106,12 @@
     "Ends with ION",
     "Events",
     "Mentioned in We Didn't Start the Fire",
+    "Military Conflicts",
     "Political Events",
     "Starts with BAY",
-    "Things American"
+    "Things American",
+    "Things Cuban",
+    "Wars"
   ],
   "Beach Volleyball": [
     "Ball Sports",
@@ -4134,6 +4150,7 @@
     "17th Century",
     "Ends with OLT",
     "Events",
+    "Military Conflicts",
     "Religious Wars",
     "Starts with BOH",
     "Things Bohemian",
@@ -4519,6 +4536,7 @@
     "Title Tracks"
   ],
   "Bridge on the River Kwai": [
+    "1940s",
     "1950s",
     "20th Century",
     "Drama Stories",
@@ -4529,6 +4547,7 @@
     "Movies featuring Alec Guinness",
     "Movies featuring Jack Hawkins",
     "Movies featuring William Holden",
+    "River Crossings",
     "Starts with BRI",
     "Things British",
     "War Stories"
@@ -6535,6 +6554,7 @@
     "Civil Wars",
     "Ends with ION",
     "Events",
+    "Military Conflicts",
     "Starts with CHU",
     "Things Chinese",
     "Wars"
@@ -10479,10 +10499,10 @@
     "15th Century",
     "Ends with GUE",
     "Events",
-    "Religious Wars",
+    "Political Events",
+    "Revolutions",
     "Starts with FIR",
-    "Things Bohemian",
-    "Wars"
+    "Things Bohemian"
   ],
   "First Triumvirate": [
     "1st Century BC",
@@ -11589,11 +11609,13 @@
   ],
   "Gettysburg": [
     "American Civil War",
+    "Battles",
     "Cities",
     "Cities in North America",
     "Ends with URG",
     "Historical Sites",
     "Locations in North America",
+    "Military Conflicts",
     "Place Names",
     "Starts with GET",
     "Things American"
@@ -12765,6 +12787,7 @@
     "2nd Century BC",
     "Ends with GNU",
     "Events",
+    "Military Conflicts",
     "Starts with HAN",
     "Things Chinese",
     "Wars"
@@ -14189,6 +14212,7 @@
     "15th Century",
     "Ends with ARS",
     "Events",
+    "Military Conflicts",
     "Religious Wars",
     "Starts with HUS",
     "Things Bohemian",
@@ -26421,10 +26445,9 @@
     "17th Century",
     "Ends with GUE",
     "Events",
-    "Religious Wars",
+    "Political Events",
     "Starts with SEC",
-    "Things Bohemian",
-    "Wars"
+    "Things Bohemian"
   ],
   "Second Triumvirate": [
     "1st Century BC",
@@ -26784,23 +26807,25 @@
   "Siege of Calais": [
     "1340s",
     "14th Century",
+    "Battles",
     "Ends with AIS",
     "Events",
     "Hundred Years' War",
+    "Military Conflicts",
     "Starts with SIE",
     "Things British",
-    "Things French",
-    "Wars"
+    "Things French"
   ],
   "Siege of Orléans": [
     "1420s",
     "15th Century",
+    "Battles",
     "Ends with ANS",
     "Events",
     "Hundred Years' War",
+    "Military Conflicts",
     "Starts with SIE",
-    "Things French",
-    "Wars"
+    "Things French"
   ],
   "Sierra": [
     "Ends with RRA",
@@ -27641,10 +27666,12 @@
     "Ends with WAR",
     "Events",
     "Mentioned in We Didn't Start the Fire",
+    "Military Conflicts",
     "Political Events",
     "Starts with SOV",
     "Things Afghan",
-    "Things Russian"
+    "Things Russian",
+    "Wars"
   ],
   "Sow": [
     "Ends with SOW",
@@ -29451,9 +29478,11 @@
     "Anti-Colonial Movements",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Things Algerian",
-    "Things French"
+    "Things French",
+    "Wars"
   ],
   "The American Civil War": [
     "19th Century",
@@ -29461,6 +29490,7 @@
     "Civil Wars",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -29469,8 +29499,10 @@
     "Ends with ION",
     "Events",
     "Independence Movements",
+    "Military Conflicts",
     "Revolutions",
-    "Starts with THE"
+    "Starts with THE",
+    "Wars"
   ],
   "The Anubis Gates": [
     "1980s",
@@ -29565,8 +29597,10 @@
   "The Battle of Stalingrad": [
     "1940s",
     "20th Century",
+    "Battles",
     "Ends with RAD",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Things German",
     "Things Russian"
@@ -29645,6 +29679,7 @@
     "Colonial Wars",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -29655,7 +29690,8 @@
     "Ends with ION",
     "Events",
     "Rebellions",
-    "Starts with THE"
+    "Starts with THE",
+    "Wars"
   ],
   "The Brexit Vote": [
     "2010s",
@@ -29836,6 +29872,7 @@
     "20th Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Political Events",
     "Starts with THE",
     "Wars"
@@ -29888,7 +29925,9 @@
     "19th Century",
     "Ends with WAR",
     "Events",
-    "Starts with THE"
+    "Military Conflicts",
+    "Starts with THE",
+    "Wars"
   ],
   "The Crying Game": [
     "1990s",
@@ -29922,9 +29961,11 @@
     "Cold War",
     "Ends with ION",
     "Events",
+    "Military Conflicts",
     "Revolutions",
     "Starts with THE",
-    "Things Cuban"
+    "Things Cuban",
+    "Wars"
   ],
   "The Da Vinci Code": [
     "2000s",
@@ -30134,6 +30175,7 @@
     "Civil Wars",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -30306,6 +30348,7 @@
     "19th Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -30331,9 +30374,11 @@
     "18th Century",
     "Ends with ION",
     "Events",
+    "Military Conflicts",
     "Political Events",
     "Revolutions",
-    "Starts with THE"
+    "Starts with THE",
+    "Wars"
   ],
   "The Full Monty": [
     "1990s",
@@ -30655,6 +30700,7 @@
     "20th Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -30664,9 +30710,11 @@
     "Ends with ION",
     "Events",
     "Independence Movements",
+    "Military Conflicts",
     "Revolutions",
     "Starts with THE",
-    "Things Haitian"
+    "Things Haitian",
+    "Wars"
   ],
   "The Hand": [
     "1980s",
@@ -30838,10 +30886,22 @@
     "Stories about Families",
     "Things American"
   ],
+  "The Hundred Days": [
+    "1810s",
+    "19th Century",
+    "Ends with AYS",
+    "Events",
+    "Military Conflicts",
+    "Napoleonic Wars",
+    "Starts with THE",
+    "Things French",
+    "Wars"
+  ],
   "The Hundred Years War": [
     "14th Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -30973,7 +31033,8 @@
     "Events",
     "Starts with THE",
     "Things British",
-    "Things Indian"
+    "Things Indian",
+    "Wars"
   ],
   "The Industrial Revolution": [
     "18th Century",
@@ -30999,6 +31060,7 @@
     "20th Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Things Iranian",
     "Things Iraqi",
@@ -31010,6 +31072,7 @@
     "21st Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -31060,6 +31123,7 @@
     "16th Century",
     "Ends with ARS",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Things Italian",
     "Wars"
@@ -31158,6 +31222,7 @@
     "Cold War",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -31631,7 +31696,8 @@
     "Events",
     "Starts with THE",
     "Things British",
-    "Things Kenyan"
+    "Things Kenyan",
+    "Wars"
   ],
   "The Merchant of Venice": [
     "16th Century",
@@ -31649,8 +31715,10 @@
     "20th Century",
     "Ends with ION",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
-    "Things Mexican"
+    "Things Mexican",
+    "Wars"
   ],
   "The Mitchells vs the Machines": [
     "2020s",
@@ -31751,6 +31819,7 @@
     "Empire Building",
     "Ends with ARS",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -31842,7 +31911,8 @@
     "Events",
     "Rebellions",
     "Starts with THE",
-    "Things British"
+    "Things British",
+    "Wars"
   ],
   "The Phantom Menace": [
     "1990s",
@@ -32127,8 +32197,10 @@
     "Civil Wars",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
-    "Things Russian"
+    "Things Russian",
+    "Wars"
   ],
   "The Russian Invasion of Ukraine": [
     "2020s",
@@ -32136,6 +32208,7 @@
     "21st Century",
     "Ends with INE",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Things Russian",
     "Things Ukrainian",
@@ -32146,15 +32219,18 @@
     "20th Century",
     "Ends with ION",
     "Events",
+    "Military Conflicts",
     "Political Events",
     "Revolutions",
-    "Starts with THE"
+    "Starts with THE",
+    "Wars"
   ],
   "The Russo-Japanese War": [
     "1900s",
     "20th Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -32297,7 +32373,8 @@
     "Events",
     "Starts with THE",
     "Things British",
-    "Things Indian"
+    "Things Indian",
+    "Wars"
   ],
   "The Seven Magnificent Gladiators": [
     "1980s",
@@ -32320,6 +32397,7 @@
     "18th Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -32364,7 +32442,8 @@
     "Events",
     "Rebellions",
     "Starts with THE",
-    "Things American"
+    "Things American",
+    "Wars"
   ],
   "The Shining": [
     "1970s",
@@ -32482,6 +32561,7 @@
     "16th Century",
     "Ends with ADA",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Things British",
     "Things Spanish",
@@ -32493,6 +32573,7 @@
     "Civil Wars",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Things Spanish",
     "Wars"
@@ -32510,6 +32591,7 @@
     "19th Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -32560,6 +32642,7 @@
     "Civil Wars",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Things Syrian",
     "Wars"
@@ -32571,7 +32654,8 @@
     "Events",
     "Rebellions",
     "Starts with THE",
-    "Things Chinese"
+    "Things Chinese",
+    "Wars"
   ],
   "The Tale of Genji": [
     "11th Century",
@@ -32695,6 +32779,7 @@
     "17th Century",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Religious Wars",
     "Starts with THE",
     "Things Bohemian",
@@ -32808,7 +32893,9 @@
     "12th Century BC",
     "Ends with WAR",
     "Events",
-    "Starts with THE"
+    "Military Conflicts",
+    "Starts with THE",
+    "Wars"
   ],
   "The Unsinkable Molly Brown": [
     "1910s",
@@ -32854,11 +32941,14 @@
     "Things American"
   ],
   "The Vietnam War": [
+    "1950s",
     "1960s",
+    "1970s",
     "20th Century",
     "Cold War",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -32934,7 +33024,8 @@
     "Events",
     "Rebellions",
     "Starts with THE",
-    "Things American"
+    "Things American",
+    "Wars"
   ],
   "The Wicker Man": [
     "1970s",
@@ -33028,6 +33119,7 @@
     "Civil Wars",
     "Ends with ARS",
     "Events",
+    "Military Conflicts",
     "Starts with THE",
     "Wars"
   ],
@@ -33096,6 +33188,7 @@
     "1st Century BC",
     "Ends with WAR",
     "Events",
+    "Military Conflicts",
     "Rebellions",
     "Roman Republic",
     "Starts with THI",
@@ -33655,6 +33748,7 @@
   ],
   "Total War": [
     "Ends with WAR",
+    "Military Conflicts",
     "Period Stories",
     "Starts with TOT",
     "Video Games",
@@ -35764,6 +35858,7 @@
     "20th Century",
     "Ends with R I",
     "Events",
+    "Military Conflicts",
     "Starts with WOR",
     "Wars",
     "World Wars"
@@ -35773,6 +35868,7 @@
     "20th Century",
     "Ends with  II",
     "Events",
+    "Military Conflicts",
     "Starts with WOR",
     "Wars",
     "World Wars"
