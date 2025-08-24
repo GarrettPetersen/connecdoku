@@ -42,7 +42,10 @@ fn check_meta(rows: &[String;4], cols: &[String;4], state: &State) -> Result<(),
         if let Some(m) = state.meta.get(c) {
             let e = counts.entry(m.as_str()).or_insert(0);
             *e += 1;
-            if *e > 2 { return Err(format!("Meta-category constraint violated: \"{}\" appears {} times (max 2 allowed)", m, *e)); }
+            let max_allowed = if m == "Letter Patterns" { 1 } else { 2 };
+            if *e > max_allowed { 
+                return Err(format!("Meta-category constraint violated: \"{}\" appears {} times (max {} allowed)", m, *e, max_allowed)); 
+            }
         }
     }
     Ok(())

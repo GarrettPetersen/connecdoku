@@ -63,14 +63,15 @@ function validatePuzzle(puzzle, categoriesJson, categoryToMeta) {
         }
     }
     
-    // Check meta-category constraint (max 2 per meta-category, excluding "No Meta Category")
+    // Check meta-category constraint (max 2 per meta-category, except Letter Patterns which is max 1, excluding "No Meta Category")
     const metaCounts = new Map();
     for (const category of [...rows, ...cols]) {
         const metaCat = categoryToMeta.get(category);
         if (metaCat) {  // Skip categories not in any meta-category or in "No Meta Category"
             const count = metaCounts.get(metaCat) || 0;
-            if (count >= 2) {
-                return { valid: false, reason: `Meta-category constraint violated: "${metaCat}" appears ${count + 1} times (max 2 allowed)` };
+            const maxAllowed = metaCat === "Letter Patterns" ? 1 : 2;
+            if (count >= maxAllowed) {
+                return { valid: false, reason: `Meta-category constraint violated: "${metaCat}" appears ${count + 1} times (max ${maxAllowed} allowed)` };
             }
             metaCounts.set(metaCat, count + 1);
         }

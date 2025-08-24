@@ -684,14 +684,15 @@ if (isMainThread) {
     }
   }
 
-  // Check if a set of categories violates the meta-category constraint (max 2 per meta-category)
+  // Check if a set of categories violates the meta-category constraint (max 2 per meta-category, except Letter Patterns which is max 1)
   function checkMetaCategoryConstraint(categories) {
     const metaCounts = new Map();
     for (const category of categories) {
       const metaCat = categoryToMeta.get(category);
       if (metaCat) {
         const count = metaCounts.get(metaCat) || 0;
-        if (count >= 2) return false;  // Already have 2 from this meta-category
+        const maxAllowed = metaCat === "Letter Patterns" ? 1 : 2;
+        if (count >= maxAllowed) return false;  // Already have max allowed from this meta-category
         metaCounts.set(metaCat, count + 1);
       }
     }

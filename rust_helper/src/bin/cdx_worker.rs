@@ -60,7 +60,8 @@ fn check_meta_constraint(rows: &[usize; 4], cols: &[usize; 4], state: &State) ->
         if let Some(ref m) = state.meta_map[idx] {
             let e = counts.entry(m.as_str()).or_insert(0);
             *e += 1;
-            if *e > 2 { return false; }
+            let max_allowed = if *m == "Letter Patterns" { 1 } else { 2 };
+            if *e > max_allowed { return false; }
         }
     }
     true
@@ -73,7 +74,8 @@ fn check_rows_meta(rows: &[usize; 4], state: &State) -> bool {
         if let Some(ref m) = state.meta_map[idx] {
             let e = counts.entry(m.as_str()).or_insert(0);
             *e += 1;
-            if *e > 2 { return false; }
+            let max_allowed = if *m == "Letter Patterns" { 1 } else { 2 };
+            if *e > max_allowed { return false; }
         }
     }
     true
