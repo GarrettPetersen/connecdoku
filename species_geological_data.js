@@ -281,7 +281,7 @@ export const SPECIES_GEOLOGICAL_DATA = {
     "Zucchini": [0.01, 0],
 
     // Additional species that were missing geological data
-    "Basilisk": [0, 0], // Mythical creature, no real geological timeline
+    "Basilisk": [50, 0], // Real lizard species, currently living
     "Bat": [52, 0], // Eocene origin, still living
     "Black Widow": [380, 0], // Spider origin, still living
     "Bluebird": [2, 0], // Recent origin, still living
