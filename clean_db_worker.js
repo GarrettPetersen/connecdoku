@@ -98,8 +98,8 @@ parentPort.on('message', async msg => {
     try {
       await ensureCleaner();
       const db = await setupDb();
-      // Temporarily disable writer initialization
-      // await ensureWriter();
+      // Enable writer initialization for actual deletion
+      await ensureWriter();
       // SELECT with retry on SQLITE_BUSY
       const selectWithRetry = async (attempts = 5) => {
         for (let i = 0; i < attempts; i++) {
@@ -152,7 +152,8 @@ parentPort.on('message', async msg => {
         }
         processed++;
         if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
-          // Skip database writes for now - just clear the batches
+          // Actually delete invalid puzzles and update scores
+          await performWriteBatchRust(invalid, scoreUpdates);
           invalid = [];
           scoreUpdates = [];
           // Small delay to reduce database contention
@@ -167,7 +168,8 @@ parentPort.on('message', async msg => {
 
       // Final flush
       if (invalid.length > 0 || scoreUpdates.length > 0) {
-        // Skip database writes for now
+        // Actually delete invalid puzzles and update scores
+        await performWriteBatchRust(invalid, scoreUpdates);
       }
       await new Promise(resolve => db.close(() => resolve()));
       // Send tally for this chunk before signaling done
