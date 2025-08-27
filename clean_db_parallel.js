@@ -174,7 +174,6 @@ async function getHashRange(db) {
     workers.push(w);
     w.on('message', msg => {
       if (msg.type === 'ready') {
-        if (!progressStarted) console.log(`  • Worker ${msg.id} ready`);
         // Assign immediately if queue has work; otherwise ask worker to request
         const job = workQueue.shift();
         if (job) {
@@ -203,7 +202,8 @@ async function getHashRange(db) {
           }
         }
       } else if (msg.type === 'error') {
-        console.log(`Worker ${msg.id} error:`, msg.message);
+        // Log errors but don't interfere with progress display
+        process.stderr.write(`\nWorker ${msg.id} error: ${msg.message}\n`);
       } else if (msg.type === 'tally') {
         // merge local tally
         const t = msg.tally || {};
@@ -211,7 +211,6 @@ async function getHashRange(db) {
       } else if (msg.type === 'done_chunk') {
         completed.add(msg.idx);
         saveProgress({ wordListHash, completed: Array.from(completed), totals: { valid: totalValid, invalid: totalInvalid }, tally: globalTally });
-        if (!progressStarted) console.log(`  • Worker ${msg.id} finished chunk ${msg.idx} (${completed.size}/${BATCH_COUNT})`);
         status[msg.id].current = { idx: msg.idx, processed: 1, total: 1, done: true };
         if (typeof msg.valid === 'number') { status[msg.id].valid += msg.valid; totalValid += msg.valid; }
         if (typeof msg.invalid === 'number') { status[msg.id].invalid += msg.invalid; totalInvalid += msg.invalid; }
