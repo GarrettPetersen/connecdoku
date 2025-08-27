@@ -27,22 +27,40 @@ const writerPath = fs.existsSync(writerRel) ? writerRel : (fs.existsSync(writerD
 
 let cleaner = null, rl = null, queue = [], waitResolve = null;
 let writer = null, wrl = null, wqueue = [], wwaitResolve = null;
+
 async function ensureCleaner() {
   if (cleaner) return;
   if (!cleanerPath) {
     throw new Error('Rust cleaner binary not found. Please run: cargo build -p rust_helper --bin cdx_cleaner --release');
   }
-  cleaner = spawn(cleanerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
+
+  // Redirect stderr to prevent console interference
+  cleaner = spawn(cleanerPath, [], {
+    stdio: ['pipe', 'pipe', 'pipe'],
+    // Capture stderr to prevent it from interfering with progress display
+    stderr: 'pipe'
+  });
+
+  // Handle stderr separately to prevent console interference
+  cleaner.stderr.on('data', (data) => {
+    // Log stderr to a file or ignore it to prevent console interference
+    // Uncomment the next line if you want to log stderr to a file:
+    // fs.appendFileSync(`/tmp/cleaner_stderr_${WID}.log`, data.toString());
+  });
+
   cleaner.on('error', (e) => {
     parentPort.postMessage({ type: 'error', id: WID, message: 'Rust cleaner spawn error: ' + (e && e.message ? e.message : String(e)) });
   });
   cleaner.on('exit', (code, signal) => {
-    parentPort.postMessage({ type: 'error', id: WID, message: `Rust cleaner exited (code=${code}, signal=${signal})` });
+    if (code !== 0 && code !== null) {
+      parentPort.postMessage({ type: 'error', id: WID, message: `Rust cleaner exited (code=${code}, signal=${signal})` });
+    }
   });
   rl = (await import('readline')).createInterface({ input: cleaner.stdout });
   rl.on('line', line => { queue.push(line); if (waitResolve) { const r = waitResolve; waitResolve = null; r(); } });
   cleaner.stdin.write(JSON.stringify({ type: 'Init', categories: categoriesJson, meta_map: metaMap }) + '\n');
 }
+
 async function readLine() { if (queue.length) return queue.shift(); await new Promise(res => waitResolve = res); return queue.shift(); }
 async function readLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
   if (queue.length) return queue.shift();
@@ -59,7 +77,20 @@ async function ensureWriter() {
   // Add a small delay to stagger writer initializations and reduce database contention
   await delay(WID * 100); // Stagger by worker ID
 
-  writer = spawn(writerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
+  // Redirect stderr to prevent console interference
+  writer = spawn(writerPath, [], {
+    stdio: ['pipe', 'pipe', 'pipe'],
+    // Capture stderr to prevent it from interfering with progress display
+    stderr: 'pipe'
+  });
+
+  // Handle stderr separately to prevent console interference
+  writer.stderr.on('data', (data) => {
+    // Log stderr to a file or ignore it to prevent console interference
+    // Uncomment the next line if you want to log stderr to a file:
+    // fs.appendFileSync(`/tmp/writer_stderr_${WID}.log`, data.toString());
+  });
+
   wrl = (await import('readline')).createInterface({ input: writer.stdout });
   wrl.on('line', line => { wqueue.push(line); if (wwaitResolve) { const r = wwaitResolve; wwaitResolve = null; r(); } });
   writer.stdin.write(JSON.stringify({ type: 'Init', db_path: DB_PATH }) + '\n');
@@ -67,6 +98,7 @@ async function ensureWriter() {
   let msg; try { msg = JSON.parse(line); } catch { throw new Error('Invalid writer init: ' + line); }
   if (msg.type !== 'Ready') throw new Error('Writer failed to init: ' + line);
 }
+
 async function readWriterLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
   if (wqueue.length) return wqueue.shift();
   return await Promise.race([
@@ -218,7 +250,10 @@ async function performWriteBatchRust(invalid, scoreUpdates) {
     }
   } catch (e) {
     // If writer operations fail, log the error but continue processing
-    console.error(`Worker ${WID} write batch failed:`, e.message);
+    // Use a more robust error logging that won't interfere with progress display
+    const errorMsg = `Worker ${WID} write batch failed: ${e.message}`;
+    // Write to stderr in a way that won't break the progress display
+    process.stderr.write(`\n${errorMsg}\n`);
     // Don't throw - let the worker continue with the next batch
   }
 }
