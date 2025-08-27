@@ -51,18 +51,19 @@ console.log(`Total puzzles: ${puzzlesData.length}`);
 console.log('');
 
 // Check each future puzzle
+let invalidFutureCount = 0;
 for (let i = currentPuzzleIndex; i < puzzlesData.length; i++) {
   const puzzle = puzzlesData[i];
   const { rows, cols, words } = puzzle;
   const allCategories = [...rows, ...cols];
-  
+
   console.log(`=== PUZZLE ${i} (Future) ===`);
   console.log(`Rows: ${rows.join(', ')}`);
   console.log(`Cols: ${cols.join(', ')}`);
   const score = computePuzzleScore(rows, cols);
   const emoji = scoreEmoji(score);
   console.log(`Quality score: ${score.toFixed(2)} ${emoji}`);
-  
+
   // Soft warning if any categories or words are shared with the previous day
   if (i > 0) {
     const prev = puzzlesData[i - 1];
@@ -84,35 +85,35 @@ for (let i = currentPuzzleIndex; i < puzzlesData.length; i++) {
     }
   }
   console.log('');
-  
+
   let hasErrors = false;
   const errors = [];
-  
+
   // Check each word in the puzzle
   for (let row = 0; row < 4; row++) {
     for (let col = 0; col < 4; col++) {
       const word = words[row][col];
       const rowCategory = rows[row];
       const colCategory = cols[col];
-      
+
       // Check if word exists in our data
       if (!wordsData[word]) {
         errors.push(`"${word}" not found in words.json`);
         hasErrors = true;
         continue;
       }
-      
+
       // Check inclusion rule: word must be in both row and column categories
       if (!wordInCategory(word, rowCategory)) {
         errors.push(`"${word}" is not in row category "${rowCategory}"`);
         hasErrors = true;
       }
-      
+
       if (!wordInCategory(word, colCategory)) {
         errors.push(`"${word}" is not in column category "${colCategory}"`);
         hasErrors = true;
       }
-      
+
       // Check exclusion rule: word must NOT be in the other 6 categories
       const otherCategories = allCategories.filter(cat => cat !== rowCategory && cat !== colCategory);
       for (const otherCat of otherCategories) {
@@ -123,13 +124,21 @@ for (let i = currentPuzzleIndex; i < puzzlesData.length; i++) {
       }
     }
   }
-  
+
   if (hasErrors) {
     console.log('❌ INVALID - Errors found:');
     errors.forEach(error => console.log(`  ${error}`));
+    invalidFutureCount++;
   } else {
     console.log('✅ VALID');
   }
-  
+
   console.log('');
-} 
+}
+
+// Print puzzle runway stats at the end
+const runwayDays = Math.max(0, puzzlesData.length - currentPuzzleIndex);
+const runwayEndDate = new Date(startDate.getTime());
+runwayEndDate.setDate(runwayEndDate.getDate() + (puzzlesData.length - 1));
+console.log(`Puzzle runway: ${runwayDays} day${runwayDays === 1 ? '' : 's'} remaining (through ${runwayEndDate.toISOString().split('T')[0]})`);
+console.log(`Invalid future puzzles: ${invalidFutureCount}`);
