@@ -83,37 +83,13 @@ async function getHashRange(db) {
     }
   }
 
-  console.log("- Opening database…");
-  const tOpen = Date.now();
-  const db = await setupDatabase();
-  console.log(`  • Database handle acquired in ${((Date.now() - tOpen) / 1000).toFixed(2)}s`);
-  db.serialize(() => {
-    db.run("PRAGMA journal_mode=WAL");
-    db.run("PRAGMA synchronous=OFF");
-    db.run("PRAGMA busy_timeout=30000");
-    db.exec("PRAGMA wal_checkpoint(TRUNCATE)", (err) => { if (err) console.warn("wal_checkpoint(TRUNCATE) failed:", err.message); });
-
-    // Startup cleanup: clear any leftover temporary tables (fast)
-    console.log("- Performing startup cleanup...");
-    db.exec(`
-      DROP TABLE IF EXISTS temp_to_delete;
-      DROP TABLE IF EXISTS temp_scores;
-      DROP TABLE IF EXISTS temp_validation;
-    `, (err) => {
-      if (err) {
-        console.warn("  • Startup cleanup warnings:", err.message);
-      } else {
-        console.log("  • Startup cleanup completed (temp tables cleared)");
-      }
-    });
-  });
-  console.log(`- Database opened: ${DB_PATH}`);
+  // Skip opening Node sqlite DB; workers handle WAL/synchronous/busy_timeout.
+  console.log("- Skipping Node DB startup; workers will configure SQLite directly");
   console.log("- Skipping COUNT(*); using conservative chunking target.");
   // Assume full SHA-256 range to avoid slow MIN/MAX scan
   const MIN_HASH = '0'.repeat(64);
   const MAX_HASH = 'f'.repeat(64);
   const range = { min: MIN_HASH, max: MAX_HASH };
-  db.close();
   console.log(`- Using assumed hash range: ${range.min.slice(0, 8)}… → ${range.max.slice(0, 8)}…`);
 
   const ASSUMED_TOTAL = 100_000_000n; // 100M

@@ -78,9 +78,17 @@ fn main() {
                             Ok(_) => {},
                             Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("synchronous pragma failed: {}", e)}).unwrap()); return; }
                         }
-                        match conn.busy_timeout(std::time::Duration::from_millis(60000)) {
+                        match conn.busy_timeout(std::time::Duration::from_millis(10_000)) {
                             Ok(_) => {},
                             Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("busy_timeout failed: {}", e)}).unwrap()); return; }
+                        }
+                        // Create TEMP tables once per connection to avoid DDL inside write transactions
+                        if let Err(e) = conn.execute_batch(
+                            "CREATE TEMP TABLE IF NOT EXISTS temp_to_delete(hash TEXT PRIMARY KEY);\n\
+                             CREATE TEMP TABLE IF NOT EXISTS temp_scores(hash TEXT PRIMARY KEY, score REAL);"
+                        ) {
+                            let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("temp tables setup failed: {}", e)}).unwrap());
+                            return;
                         }
                         conn_opt = Some(conn);
                         let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Ready).unwrap());
@@ -95,9 +103,9 @@ fn main() {
             }
             Msg::Delete { hashes } => {
                 if let Some(ref mut conn) = conn_opt {
+                    use rusqlite::TransactionBehavior;
                     match retry_with_backoff(|| {
-                        let tx = conn.transaction()?;
-                        tx.execute_batch("CREATE TEMP TABLE IF NOT EXISTS temp_to_delete(hash TEXT PRIMARY KEY);")?;
+                        let tx = conn.transaction_with_behavior(TransactionBehavior::Immediate)?;
                         {
                             let mut stmt = tx.prepare("INSERT OR IGNORE INTO temp_to_delete(hash) VALUES (?1)")?;
                             for h in &hashes { 
@@ -122,9 +130,9 @@ fn main() {
             }
             Msg::UpsertScores { items } => {
                 if let Some(ref mut conn) = conn_opt {
+                    use rusqlite::TransactionBehavior;
                     match retry_with_backoff(|| {
-                        let tx = conn.transaction()?;
-                        tx.execute_batch("CREATE TEMP TABLE IF NOT EXISTS temp_scores(hash TEXT PRIMARY KEY, score REAL);")?;
+                        let tx = conn.transaction_with_behavior(TransactionBehavior::Immediate)?;
                         {
                             let mut stmt = tx.prepare("INSERT OR REPLACE INTO temp_scores(hash, score) VALUES (?1, ?2)")?;
                             for (h, s) in &items { 
