@@ -138,32 +138,39 @@ async function getHashRange(db) {
   console.log(`- Spawning ${nWorkers} worker(s)`);
   let shuttingDown = false;
   let sigintCount = 0;
+  let redrawTimeout = null;
   function redraw() {
-    const inProgress = status.filter(s => s.current && !s.current.done);
-    const fractional = inProgress.reduce((sum, s) => sum + (s.current.total ? (s.current.processed / s.current.total) : 0), 0);
-    const doneChunks = completed.size + status.filter(s => s.current && s.current.done).length;
-    const pct = Math.min(1, (doneChunks + fractional) / BATCH_COUNT);
-    const lines = [];
-    lines.push(`Overall: [${bar(pct)}] ${(pct * 100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
-    lines.push(`Totals: valid=${totalValid}, deleted=${totalInvalid}`);
-    status.forEach((st, i) => {
-      const s = st.current;
-      const base = s ? `chunk ${s.idx}: ${s.processed}/${s.total}` : 'idle';
-      lines.push(`W${i} ${base} | v=${st.valid}, d=${st.invalid}`);
-    });
-    lines.push(""); // spacer
+    // Debounce rapid redraws
+    if (redrawTimeout) {
+      clearTimeout(redrawTimeout);
+    }
+    redrawTimeout = setTimeout(() => {
+      const inProgress = status.filter(s => s.current && !s.current.done);
+      const fractional = inProgress.reduce((sum, s) => sum + (s.current.total ? (s.current.processed / s.current.total) : 0), 0);
+      const doneChunks = completed.size + status.filter(s => s.current && s.current.done).length;
+      const pct = Math.min(1, (doneChunks + fractional) / BATCH_COUNT);
+      const lines = [];
+      lines.push(`Overall: [${bar(pct)}] ${(pct * 100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
+      lines.push(`Totals: valid=${totalValid}, deleted=${totalInvalid}`);
+      status.forEach((st, i) => {
+        const s = st.current;
+        const base = s ? `chunk ${s.idx}: ${s.processed}/${s.total}` : 'idle';
+        lines.push(`W${i} ${base} | v=${st.valid}, d=${st.invalid}`);
+      });
+      lines.push(""); // spacer
 
-    if (!reservedPrinted) {
-      process.stdout.write("\n".repeat(RESERVED_LINES));
-      reservedPrinted = true;
-      progressStarted = true;
-    }
-    // Move cursor up and overwrite only our reserved block
-    process.stdout.write(`\x1b[${RESERVED_LINES}A`);
-    for (let i = 0; i < RESERVED_LINES; i++) {
-      const text = lines[i] || "";
-      process.stdout.write(`\x1b[2K\r${text}\n`); // clear line, write, newline
-    }
+      if (!reservedPrinted) {
+        process.stdout.write("\n".repeat(RESERVED_LINES));
+        reservedPrinted = true;
+        progressStarted = true;
+      }
+      // Move cursor up and overwrite only our reserved block
+      process.stdout.write(`\x1b[${RESERVED_LINES}A`);
+      for (let i = 0; i < RESERVED_LINES; i++) {
+        const text = lines[i] || "";
+        process.stdout.write(`\x1b[2K\r${text}\n`); // clear line, write, newline
+      }
+    }, 100); // 100ms debounce
   }
 
   let active = nWorkers;
