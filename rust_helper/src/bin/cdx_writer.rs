@@ -9,11 +9,26 @@ enum Msg {
     Init { db_path: String },
     Delete { hashes: Vec<String> },
     UpsertScores { items: Vec<(String, f64)> },
+    CountRange { min_hash: String, max_hash: String },
+    SelectPage { min_hash: String, max_hash: String, after: String, limit: usize },
+}
+
+#[derive(Serialize)]
+struct RowOut {
+    puzzle_hash: String,
+    row0: String,
+    row1: String,
+    row2: String,
+    row3: String,
+    col0: String,
+    col1: String,
+    col2: String,
+    col3: String,
 }
 
 #[derive(Serialize)]
 #[serde(tag = "type")]
-enum Out { Ready, Ack { deleted: usize }, Error { message: String } }
+enum Out { Ready, Ack { deleted: usize }, Rows { rows: Vec<RowOut> }, Count { total: usize }, Error { message: String } }
 
 fn retry_with_backoff<F, T, E>(mut f: F, max_attempts: usize) -> Result<T, E>
 where
@@ -128,6 +143,59 @@ fn main() {
                             let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("upsert scores failed after retries: {}", e)}).unwrap());
                         }
                     }
+                } else {
+                    let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: "no db".into() }).unwrap());
+                }
+            }
+            Msg::CountRange { min_hash, max_hash } => {
+                if let Some(ref mut conn) = conn_opt {
+                    match conn.query_row(
+                        "SELECT COUNT(*) FROM puzzles WHERE puzzle_hash > ?1 AND puzzle_hash <= ?2",
+                        (&min_hash, &max_hash),
+                        |row| row.get::<_, i64>(0),
+                    ) {
+                        Ok(count) => {
+                            let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Count{ total: count as usize }).unwrap());
+                        }
+                        Err(e) => {
+                            let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("count failed: {}", e)}).unwrap());
+                        }
+                    }
+                } else {
+                    let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: "no db".into() }).unwrap());
+                }
+            }
+            Msg::SelectPage { min_hash, max_hash, after, limit } => {
+                if let Some(ref mut conn) = conn_opt {
+                    let mut rows_out: Vec<RowOut> = Vec::new();
+                    let mut stmt = match conn.prepare(
+                        "SELECT puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3 \
+                         FROM puzzles \
+                         WHERE puzzle_hash > ?1 AND puzzle_hash <= ?2 AND puzzle_hash > ?3 \
+                         ORDER BY puzzle_hash LIMIT ?4"
+                    ) {
+                        Ok(s) => s,
+                        Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("prepare failed: {}", e)}).unwrap()); continue; }
+                    };
+                    let mut rows = match stmt.query((&min_hash, &max_hash, &after, limit as i64)) {
+                        Ok(r) => r,
+                        Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("select failed: {}", e)}).unwrap()); continue; }
+                    };
+                    while let Ok(Some(row)) = rows.next() {
+                        let ro = RowOut {
+                            puzzle_hash: row.get::<_, String>(0).unwrap_or_default(),
+                            row0: row.get::<_, String>(1).unwrap_or_default(),
+                            row1: row.get::<_, String>(2).unwrap_or_default(),
+                            row2: row.get::<_, String>(3).unwrap_or_default(),
+                            row3: row.get::<_, String>(4).unwrap_or_default(),
+                            col0: row.get::<_, String>(5).unwrap_or_default(),
+                            col1: row.get::<_, String>(6).unwrap_or_default(),
+                            col2: row.get::<_, String>(7).unwrap_or_default(),
+                            col3: row.get::<_, String>(8).unwrap_or_default(),
+                        };
+                        rows_out.push(ro);
+                    }
+                    let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Rows{ rows: rows_out }).unwrap());
                 } else {
                     let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: "no db".into() }).unwrap());
                 }

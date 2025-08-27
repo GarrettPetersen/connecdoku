@@ -97,29 +97,44 @@ parentPort.on('message', async msg => {
     const { job } = msg;
     try {
       await ensureCleaner();
-      const db = await setupDb();
       // Enable writer initialization for actual deletion
       await ensureWriter();
-      // SELECT with retry on SQLITE_BUSY
-      const selectWithRetry = async (attempts = 5) => {
+      // COUNT and paginated SELECT via Rust writer to avoid node-sqlite3 native crashes
+      const countWithRetry = async (attempts = 5) => {
+        let lastErr;
         for (let i = 0; i < attempts; i++) {
           try {
-            return await new Promise((resolve, reject) => {
-              db.all(
-                `SELECT puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3 FROM puzzles WHERE puzzle_hash > ? AND puzzle_hash <= ?`,
-                [job.minHash, job.maxHash],
-                (err, rows) => err ? reject(err) : resolve(rows || [])
-              );
-            });
+            writer.stdin.write(JSON.stringify({ type: 'CountRange', min_hash: job.minHash, max_hash: job.maxHash }) + '\n');
+            const line = await readWriterLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
+            let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (CountRange): ' + line); }
+            if (resp.type === 'Count' && typeof resp.total === 'number') return resp.total;
+            if (resp.type === 'Error') throw new Error(resp.message || 'writer count error');
+            throw new Error('unexpected writer response to CountRange: ' + line);
           } catch (e) {
-            if (e && e.code === 'SQLITE_BUSY' && i < attempts - 1) { await delay(50 + Math.random() * 200); continue; }
-            throw e;
+            lastErr = e;
+            await delay(50 + Math.random() * 200);
           }
         }
+        throw lastErr || new Error('writer count failed');
       };
-      const puzzles = await selectWithRetry();
-      if (!Array.isArray(puzzles)) throw new Error('Select returned non-array');
-      const total = puzzles.length;
+      const selectPageWithRetry = async (afterHash, limit, attempts = 5) => {
+        let lastErr;
+        for (let i = 0; i < attempts; i++) {
+          try {
+            writer.stdin.write(JSON.stringify({ type: 'SelectPage', min_hash: job.minHash, max_hash: job.maxHash, after: afterHash, limit }) + '\n');
+            const line = await readWriterLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
+            let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (SelectPage): ' + line); }
+            if (resp.type === 'Rows' && Array.isArray(resp.rows)) return resp.rows;
+            if (resp.type === 'Error') throw new Error(resp.message || 'writer select error');
+            throw new Error('unexpected writer response to SelectPage: ' + line);
+          } catch (e) {
+            lastErr = e;
+            await delay(50 + Math.random() * 200);
+          }
+        }
+        throw lastErr || new Error('writer select failed');
+      };
+      const total = await countWithRetry();
       let processed = 0;
       let lastTickAt = Date.now();
       let invalid = [];
@@ -133,46 +148,49 @@ parentPort.on('message', async msg => {
       parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta: 0, invalidDelta: 0 });
 
       const FLUSH_THRESHOLD = 100;
-      for (const p of puzzles) {
-        cleaner.stdin.write(JSON.stringify({ type: 'Validate', rows: [p.row0, p.row1, p.row2, p.row3], cols: [p.col0, p.col1, p.col2, p.col3] }) + '\n');
-        const line = await readLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
-        let resp;
-        try { resp = JSON.parse(line); } catch (e) { throw new Error('Invalid JSON from rust cleaner: ' + line); }
-        if (resp.type === 'Valid') {
-          const cats = [p.row0, p.row1, p.row2, p.row3, p.col0, p.col1, p.col2, p.col3];
-          const score = cats.reduce((s, c) => s + (categoryScores[c] || 0), 0);
-          scoreUpdates.push({ hash: p.puzzle_hash, score });
-          // tally categories
-          for (const c of cats) {
-            localTally[c] = (localTally[c] || 0) + 1;
+      const PAGE_SIZE = 1000;
+      let lastHash = job.minHash;
+      while (true) {
+        const page = await selectPageWithRetry(lastHash, PAGE_SIZE);
+        if (!Array.isArray(page) || page.length === 0) break;
+        for (const p of page) {
+          cleaner.stdin.write(JSON.stringify({ type: 'Validate', rows: [p.row0, p.row1, p.row2, p.row3], cols: [p.col0, p.col1, p.col2, p.col3] }) + '\n');
+          const line = await readLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
+          let resp;
+          try { resp = JSON.parse(line); } catch (e) { throw new Error('Invalid JSON from rust cleaner: ' + line); }
+          if (resp.type === 'Valid') {
+            const cats = [p.row0, p.row1, p.row2, p.row3, p.col0, p.col1, p.col2, p.col3];
+            const score = cats.reduce((s, c) => s + (categoryScores[c] || 0), 0);
+            scoreUpdates.push({ hash: p.puzzle_hash, score });
+            for (const c of cats) {
+              localTally[c] = (localTally[c] || 0) + 1;
+            }
+            validCount++; validDelta++;
+          } else if (resp.type === 'Invalid') {
+            invalid.push(p.puzzle_hash);
+            invalidCount++; invalidDelta++;
           }
-          validCount++; validDelta++;
-        } else if (resp.type === 'Invalid') {
-          invalid.push(p.puzzle_hash);
-          invalidCount++; invalidDelta++;
-        }
-        processed++;
-        if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
-          // Actually delete invalid puzzles and update scores
-          const res = await performWriteBatchRust(invalid, scoreUpdates);
-          if (!res.ok) {
-            parentPort.postMessage({ type: 'fatal_write', id: WID, idx: job.idx, error: res.error || 'unknown write failure' });
-            return;
+          processed++;
+          if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
+            const res = await performWriteBatchRust(invalid, scoreUpdates);
+            if (!res.ok) {
+              parentPort.postMessage({ type: 'fatal_write', id: WID, idx: job.idx, error: res.error || 'unknown write failure' });
+              return;
+            }
+            const deletedNow = res.deleted || 0;
+            if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
+            invalid = [];
+            scoreUpdates = [];
+            await delay(10);
           }
-          const deletedNow = res.deleted || 0;
-          if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
-          invalid = [];
-          scoreUpdates = [];
-          // Small delay to reduce database contention
-          await delay(10);
+          const now = Date.now();
+          if (processed % 10 === 0 || now - lastTickAt >= 200 || processed === total) {
+            parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta, deletedDelta });
+            validDelta = 0; invalidDelta = 0; deletedDelta = 0;
+            lastTickAt = now;
+          }
         }
-        const now = Date.now();
-        if (processed % 10 === 0 || now - lastTickAt >= 200 || processed === total) {
-          parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta, deletedDelta });
-          validDelta = 0; invalidDelta = 0; deletedDelta = 0;
-          lastTickAt = now;
-        }
-        // No mid-chunk flush; defer to a single transaction at the end of the chunk
+        lastHash = page[page.length - 1].puzzle_hash;
       }
 
       // Final flush
@@ -186,7 +204,7 @@ parentPort.on('message', async msg => {
         const deletedNow = res.deleted || 0;
         if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
       }
-      await new Promise(resolve => db.close(() => resolve()));
+      // no node-sqlite connection used
       // Ensure any pending deltas are reported one last time prior to completion
       if (validDelta || invalidDelta || deletedDelta) {
         parentPort.postMessage({ type: 'stats', id: WID, validDelta, invalidDelta, deletedDelta });
