@@ -27,40 +27,22 @@ const writerPath = fs.existsSync(writerRel) ? writerRel : (fs.existsSync(writerD
 
 let cleaner = null, rl = null, queue = [], waitResolve = null;
 let writer = null, wrl = null, wqueue = [], wwaitResolve = null;
-
 async function ensureCleaner() {
   if (cleaner) return;
   if (!cleanerPath) {
     throw new Error('Rust cleaner binary not found. Please run: cargo build -p rust_helper --bin cdx_cleaner --release');
   }
-
-  // Redirect stderr to prevent console interference
-  cleaner = spawn(cleanerPath, [], {
-    stdio: ['pipe', 'pipe', 'pipe'],
-    // Capture stderr to prevent it from interfering with progress display
-    stderr: 'pipe'
-  });
-
-  // Handle stderr separately to prevent console interference
-  cleaner.stderr.on('data', (data) => {
-    // Log stderr to a file or ignore it to prevent console interference
-    // Uncomment the next line if you want to log stderr to a file:
-    // fs.appendFileSync(`/tmp/cleaner_stderr_${WID}.log`, data.toString());
-  });
-
+  cleaner = spawn(cleanerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
   cleaner.on('error', (e) => {
     parentPort.postMessage({ type: 'error', id: WID, message: 'Rust cleaner spawn error: ' + (e && e.message ? e.message : String(e)) });
   });
   cleaner.on('exit', (code, signal) => {
-    if (code !== 0 && code !== null) {
-      parentPort.postMessage({ type: 'error', id: WID, message: `Rust cleaner exited (code=${code}, signal=${signal})` });
-    }
+    parentPort.postMessage({ type: 'error', id: WID, message: `Rust cleaner exited (code=${code}, signal=${signal})` });
   });
   rl = (await import('readline')).createInterface({ input: cleaner.stdout });
   rl.on('line', line => { queue.push(line); if (waitResolve) { const r = waitResolve; waitResolve = null; r(); } });
   cleaner.stdin.write(JSON.stringify({ type: 'Init', categories: categoriesJson, meta_map: metaMap }) + '\n');
 }
-
 async function readLine() { if (queue.length) return queue.shift(); await new Promise(res => waitResolve = res); return queue.shift(); }
 async function readLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
   if (queue.length) return queue.shift();
@@ -77,28 +59,14 @@ async function ensureWriter() {
   // Add a small delay to stagger writer initializations and reduce database contention
   await delay(WID * 100); // Stagger by worker ID
 
-  // Redirect stderr to prevent console interference
-  writer = spawn(writerPath, [], {
-    stdio: ['pipe', 'pipe', 'pipe'],
-    // Capture stderr to prevent it from interfering with progress display
-    stderr: 'pipe'
-  });
-
-  // Handle stderr separately to prevent console interference
-  writer.stderr.on('data', (data) => {
-    // Log stderr to a file or ignore it to prevent console interference
-    // Uncomment the next line if you want to log stderr to a file:
-    // fs.appendFileSync(`/tmp/writer_stderr_${WID}.log`, data.toString());
-  });
-
+  writer = spawn(writerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
   wrl = (await import('readline')).createInterface({ input: writer.stdout });
   wrl.on('line', line => { wqueue.push(line); if (wwaitResolve) { const r = wwaitResolve; wwaitResolve = null; r(); } });
   writer.stdin.write(JSON.stringify({ type: 'Init', db_path: DB_PATH }) + '\n');
-  const line = await readWriterLineWithTimeout(10000); // 10 second timeout for init
+  const line = await readWriterLineWithTimeout(60000); // 60 second timeout for init
   let msg; try { msg = JSON.parse(line); } catch { throw new Error('Invalid writer init: ' + line); }
   if (msg.type !== 'Ready') throw new Error('Writer failed to init: ' + line);
 }
-
 async function readWriterLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
   if (wqueue.length) return wqueue.shift();
   return await Promise.race([
@@ -153,12 +121,13 @@ parentPort.on('message', async msg => {
       if (!Array.isArray(puzzles)) throw new Error('Select returned non-array');
       const total = puzzles.length;
       let processed = 0;
+      let lastTickAt = Date.now();
       let invalid = [];
       let scoreUpdates = [];
       const localTally = Object.create(null);
       // stats tracking
-      let validCount = 0, invalidCount = 0;
-      let validDelta = 0, invalidDelta = 0;
+      let validCount = 0, invalidCount = 0, deletedCount = 0;
+      let validDelta = 0, invalidDelta = 0, deletedDelta = 0;
 
       // send an initial tick so orchestrator knows totals
       parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta: 0, invalidDelta: 0 });
@@ -185,15 +154,23 @@ parentPort.on('message', async msg => {
         processed++;
         if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
           // Actually delete invalid puzzles and update scores
-          await performWriteBatchRust(invalid, scoreUpdates);
+          const res = await performWriteBatchRust(invalid, scoreUpdates);
+          if (!res.ok) {
+            parentPort.postMessage({ type: 'fatal_write', id: WID, idx: job.idx, error: res.error || 'unknown write failure' });
+            return;
+          }
+          const deletedNow = res.deleted || 0;
+          if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
           invalid = [];
           scoreUpdates = [];
           // Small delay to reduce database contention
           await delay(10);
         }
-        if (processed % 50 === 0 || processed === total) {
-          parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta });
-          validDelta = 0; invalidDelta = 0;
+        const now = Date.now();
+        if (processed % 10 === 0 || now - lastTickAt >= 200 || processed === total) {
+          parentPort.postMessage({ type: 'tick', id: WID, idx: job.idx, processed, total, validDelta, invalidDelta, deletedDelta });
+          validDelta = 0; invalidDelta = 0; deletedDelta = 0;
+          lastTickAt = now;
         }
         // No mid-chunk flush; defer to a single transaction at the end of the chunk
       }
@@ -201,14 +178,29 @@ parentPort.on('message', async msg => {
       // Final flush
       if (invalid.length > 0 || scoreUpdates.length > 0) {
         // Actually delete invalid puzzles and update scores
-        await performWriteBatchRust(invalid, scoreUpdates);
+        const res = await performWriteBatchRust(invalid, scoreUpdates);
+        if (!res.ok) {
+          parentPort.postMessage({ type: 'fatal_write', id: WID, idx: job.idx, error: res.error || 'unknown write failure' });
+          return;
+        }
+        const deletedNow = res.deleted || 0;
+        if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
       }
       await new Promise(resolve => db.close(() => resolve()));
+      // Ensure any pending deltas are reported one last time prior to completion
+      if (validDelta || invalidDelta || deletedDelta) {
+        parentPort.postMessage({ type: 'stats', id: WID, validDelta, invalidDelta, deletedDelta });
+        validDelta = 0; invalidDelta = 0; deletedDelta = 0;
+      }
+
+      // Abort if mismatch between found invalids and confirmed deletions
+      if (invalidCount !== deletedCount) {
+        parentPort.postMessage({ type: 'fatal_mismatch', id: WID, idx: job.idx, invalid: invalidCount, deleted: deletedCount });
+        return;
+      }
       // Send tally for this chunk before signaling done
-      // flush any remaining deltas
-      if (validDelta || invalidDelta) parentPort.postMessage({ type: 'stats', id: WID, validDelta, invalidDelta });
       parentPort.postMessage({ type: 'tally', id: WID, idx: job.idx, tally: localTally });
-      parentPort.postMessage({ type: 'done_chunk', id: WID, idx: job.idx, valid: validCount, invalid: invalidCount });
+      parentPort.postMessage({ type: 'done_chunk', id: WID, idx: job.idx, valid: validCount, invalid: invalidCount, deleted: deletedCount });
     } catch (e) {
       parentPort.postMessage({ type: 'error', id: WID, idx: msg?.job?.idx, message: e && e.message ? e.message : String(e) });
       // Small delay before asking for new work to avoid hot error loop
@@ -235,27 +227,33 @@ parentPort.postMessage({ type: 'ready', id: WID });
 // performWriteBatch (Node sqlite) kept for fallback, but currently unused
 
 async function performWriteBatchRust(invalid, scoreUpdates) {
-  try {
-    if (invalid.length > 0) {
-      writer.stdin.write(JSON.stringify({ type: 'Delete', hashes: invalid }) + '\n');
-      const line = await readWriterLineWithTimeout(30000); // 30 second timeout
-      let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (Delete): ' + line); }
-      if (resp.type !== 'Ack') throw new Error('Writer Delete failed: ' + line);
+  const MAX_ATTEMPTS = 3;
+  let lastError = null;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    try {
+      let deletedCount = 0;
+      if (invalid.length > 0) {
+        writer.stdin.write(JSON.stringify({ type: 'Delete', hashes: invalid }) + '\n');
+        const line = await readWriterLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
+        let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (Delete): ' + line); }
+        if (resp.type !== 'Ack') throw new Error('Writer Delete failed: ' + line);
+        deletedCount = typeof resp.deleted === 'number' ? resp.deleted : 0;
+      }
+      if (scoreUpdates.length > 0) {
+        writer.stdin.write(JSON.stringify({ type: 'UpsertScores', items: scoreUpdates.map(u => [u.hash, u.score]) }) + '\n');
+        const line = await readWriterLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
+        let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (UpsertScores): ' + line); }
+        if (resp.type !== 'Ack') throw new Error('Writer UpsertScores failed: ' + line);
+      }
+      return { ok: true, deleted: deletedCount };
+    } catch (e) {
+      lastError = e && e.message ? e.message : String(e);
+      console.error(`Worker ${WID} write batch attempt ${attempt} failed:`, lastError);
+      // small backoff
+      await delay(50 * attempt);
     }
-    if (scoreUpdates.length > 0) {
-      writer.stdin.write(JSON.stringify({ type: 'UpsertScores', items: scoreUpdates.map(u => [u.hash, u.score]) }) + '\n');
-      const line = await readWriterLineWithTimeout(30000); // 30 second timeout
-      let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (UpsertScores): ' + line); }
-      if (resp.type !== 'Ack') throw new Error('Writer UpsertScores failed: ' + line);
-    }
-  } catch (e) {
-    // If writer operations fail, log the error but continue processing
-    // Use a more robust error logging that won't interfere with progress display
-    const errorMsg = `Worker ${WID} write batch failed: ${e.message}`;
-    // Write to stderr in a way that won't break the progress display
-    process.stderr.write(`\n${errorMsg}\n`);
-    // Don't throw - let the worker continue with the next batch
   }
+  return { ok: false, error: lastError || 'write failed' };
 }
 
 

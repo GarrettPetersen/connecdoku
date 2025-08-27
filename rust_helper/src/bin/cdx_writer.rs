@@ -13,7 +13,7 @@ enum Msg {
 
 #[derive(Serialize)]
 #[serde(tag = "type")]
-enum Out { Ready, Ack, Error { message: String } }
+enum Out { Ready, Ack { deleted: usize }, Error { message: String } }
 
 fn retry_with_backoff<F, T, E>(mut f: F, max_attempts: usize) -> Result<T, E>
 where
@@ -89,13 +89,13 @@ fn main() {
                                 let _ = stmt.execute((&h,))?; 
                             }
                         }
-                        tx.execute("DELETE FROM puzzles WHERE puzzle_hash IN (SELECT hash FROM temp_to_delete)", ())?;
+                        let deleted = tx.execute("DELETE FROM puzzles WHERE puzzle_hash IN (SELECT hash FROM temp_to_delete)", ())?;
                         tx.execute("DELETE FROM temp_to_delete", ())?;
                         tx.commit()?;
-                        Ok::<(), rusqlite::Error>(())
+                        Ok::<usize, rusqlite::Error>(deleted)
                     }, 5) {
-                        Ok(_) => {
-                            let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Ack).unwrap());
+                        Ok(deleted) => {
+                            let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Ack{ deleted }).unwrap());
                         }
                         Err(e) => {
                             let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("delete failed after retries: {}", e)}).unwrap());
@@ -122,7 +122,7 @@ fn main() {
                         Ok::<(), rusqlite::Error>(())
                     }, 5) {
                         Ok(_) => {
-                            let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Ack).unwrap());
+                            let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Ack{ deleted: 0 }).unwrap());
                         }
                         Err(e) => {
                             let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("upsert scores failed after retries: {}", e)}).unwrap());

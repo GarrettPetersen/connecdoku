@@ -43,109 +43,6 @@ async function getHashRange(db) {
   });
 }
 
-// Robust progress display that can handle console interruptions
-class RobustProgressDisplay {
-  constructor(nWorkers) {
-    this.nWorkers = nWorkers;
-    this.RESERVED_LINES = 3 + nWorkers; // overall + totals + per-worker + spacer
-    this.lastRedrawTime = 0;
-    this.redrawInterval = 100; // ms between redraws
-    this.lastProgress = null;
-    this.consoleInterrupted = false;
-    this.initialSetupDone = false;
-    this.checkInterval = null;
-    this.lastCheckTime = 0;
-  }
-
-  setup() {
-    if (this.initialSetupDone) return;
-
-    // Reserve space for progress display
-    process.stdout.write("\n".repeat(this.RESERVED_LINES));
-    this.initialSetupDone = true;
-    this.lastRedrawTime = Date.now();
-
-    // Start periodic check for console interruptions
-    this.startPeriodicCheck();
-  }
-
-  startPeriodicCheck() {
-    // Check every 2 seconds if console has been interrupted
-    this.checkInterval = setInterval(() => {
-      const now = Date.now();
-      if (now - this.lastCheckTime > 2000) { // 2 second interval
-        this.lastCheckTime = now;
-        // Force a redraw to ensure progress is visible
-        this.consoleInterrupted = true;
-        this.lastProgress = null;
-      }
-    }, 2000);
-  }
-
-  stopPeriodicCheck() {
-    if (this.checkInterval) {
-      clearInterval(this.checkInterval);
-      this.checkInterval = null;
-    }
-  }
-
-  redraw(status, completed, totalValid, totalInvalid, BATCH_COUNT) {
-    const now = Date.now();
-    if (now - this.lastRedrawTime < this.redrawInterval && !this.consoleInterrupted) return;
-
-    const inProgress = status.filter(s => s.current && !s.current.done);
-    const fractional = inProgress.reduce((sum, s) => sum + (s.current.total ? (s.current.processed / s.current.total) : 0), 0);
-    const doneChunks = completed.size + status.filter(s => s.current && s.current.done).length;
-    const pct = Math.min(1, (doneChunks + fractional) / BATCH_COUNT);
-
-    // Create the new progress lines
-    const lines = [];
-    lines.push(`Overall: [${bar(pct)}] ${(pct * 100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
-    lines.push(`Totals: valid=${totalValid}, deleted=${totalInvalid}`);
-    status.forEach((st, i) => {
-      const s = st.current;
-      const base = s ? `chunk ${s.idx}: ${s.processed}/${s.total}` : 'idle';
-      lines.push(`W${i} ${base} | v=${st.valid}, d=${st.invalid}`);
-    });
-    lines.push(""); // spacer
-
-    // Check if progress has actually changed
-    const currentProgress = lines.join('\n');
-    if (this.lastProgress === currentProgress && !this.consoleInterrupted) return;
-
-    this.lastProgress = currentProgress;
-    this.lastRedrawTime = now;
-    this.consoleInterrupted = false;
-
-    // Move cursor up to the start of our reserved area
-    process.stdout.write(`\x1b[${this.RESERVED_LINES}A`);
-
-    // Write each line, clearing it first
-    for (let i = 0; i < this.RESERVED_LINES; i++) {
-      const text = lines[i] || "";
-      process.stdout.write(`\x1b[2K\r${text}\n`);
-    }
-  }
-
-  // Call this when we detect console output from other processes
-  markInterrupted() {
-    this.consoleInterrupted = true;
-    this.lastProgress = null; // Force redraw on next call
-  }
-
-  // Force immediate redraw (useful after interruptions)
-  forceRedraw(status, completed, totalValid, totalInvalid, BATCH_COUNT) {
-    this.lastRedrawTime = 0; // Reset timer
-    this.consoleInterrupted = true; // Force redraw
-    this.redraw(status, completed, totalValid, totalInvalid, BATCH_COUNT);
-  }
-
-  // Cleanup method to call when shutting down
-  cleanup() {
-    this.stopPeriodicCheck();
-  }
-}
-
 (async () => {
   console.log("🔍 Puzzle Validator (parallel)");
   const wordListHash = sha256(fs.readFileSync(WORDS_F));
@@ -164,7 +61,7 @@ class RobustProgressDisplay {
   }
   function saveProgress(obj) { fs.writeFileSync(PROGRESS_FILE, JSON.stringify(obj, null, 2)); }
 
-  let totalValid = 0, totalInvalid = 0;
+  let totalValid = 0, totalInvalid = 0, totalDeleted = 0;
   const globalTally = Object.create(null);
 
   const saved = loadProgress();
@@ -175,6 +72,7 @@ class RobustProgressDisplay {
     // Restore running totals/tally if present
     if (saved.totals && typeof saved.totals.valid === 'number') totalValid = saved.totals.valid;
     if (saved.totals && typeof saved.totals.invalid === 'number') totalInvalid = saved.totals.invalid;
+    if (saved.totals && typeof saved.totals.deleted === 'number') totalDeleted = saved.totals.deleted;
     if (saved.tally && typeof saved.tally === 'object') Object.assign(globalTally, saved.tally);
   } else {
     if (fs.existsSync(PROGRESS_FILE)) {
@@ -234,11 +132,45 @@ class RobustProgressDisplay {
   console.log(`- Work queue ready: ${workQueue.length} chunk(s) to process`);
 
   const nWorkers = os.cpus().length;
-  const status = Array.from({ length: nWorkers }, () => ({ current: null, valid: 0, invalid: 0 }));
-  const progressDisplay = new RobustProgressDisplay(nWorkers);
+  const status = Array.from({ length: nWorkers }, () => ({ current: null, valid: 0, invalid: 0, deleted: 0 }));
+  let reservedPrinted = false;
+  let progressStarted = false;
+  const RESERVED_LINES = 3 + nWorkers; // overall + totals + per-worker + spacer
   console.log(`- Spawning ${nWorkers} worker(s)`);
   let shuttingDown = false;
   let sigintCount = 0;
+  function redraw() {
+    const inProgress = status.filter(s => s.current && !s.current.done);
+    const fractional = inProgress.reduce((sum, s) => sum + (s.current.total ? (s.current.processed / s.current.total) : 0), 0);
+    const doneChunks = completed.size + status.filter(s => s.current && s.current.done).length;
+    const pct = Math.min(1, (doneChunks + fractional) / BATCH_COUNT);
+
+    if (!reservedPrinted) {
+      process.stdout.write("\n".repeat(RESERVED_LINES));
+      reservedPrinted = true;
+      progressStarted = true;
+    }
+
+    // Move cursor up to the start of our reserved area
+    process.stdout.write(`\x1b[${RESERVED_LINES}A`);
+
+    // Clear and rewrite only our reserved lines
+    const lines = [];
+    lines.push(`Overall: [${bar(pct)}] ${(pct * 100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
+    lines.push(`Totals: valid=${totalValid}, invalid=${totalInvalid}, deleted=${totalDeleted}`);
+    status.forEach((st, i) => {
+      const s = st.current;
+      const base = s ? `chunk ${s.idx}: ${s.processed}/${s.total}` : 'idle';
+      lines.push(`W${i} ${base} | v=${st.valid}, inv=${st.invalid}, del=${st.deleted}`);
+    });
+    lines.push(""); // spacer
+
+    // Write each line, clearing it first
+    for (let i = 0; i < RESERVED_LINES; i++) {
+      const text = lines[i] || "";
+      process.stdout.write(`\x1b[2K\r${text}\n`);
+    }
+  }
 
   let active = nWorkers;
   const workers = [];
@@ -261,9 +193,23 @@ class RobustProgressDisplay {
       } else if (msg.type === 'tick') {
         if (typeof msg.validDelta === 'number') { status[msg.id].valid += msg.validDelta; totalValid += msg.validDelta; }
         if (typeof msg.invalidDelta === 'number') { status[msg.id].invalid += msg.invalidDelta; totalInvalid += msg.invalidDelta; }
+        if (typeof msg.deletedDelta === 'number') { status[msg.id].deleted += msg.deletedDelta; totalDeleted += msg.deletedDelta; }
         status[msg.id].current = { idx: msg.idx, processed: msg.processed, total: msg.total };
-        progressDisplay.setup();
-        progressDisplay.redraw(status, completed, totalValid, totalInvalid, BATCH_COUNT);
+        redraw();
+      } else if (msg.type === 'fatal_mismatch') {
+        shuttingDown = true;
+        // Print a newline to avoid overwriting progress area
+        process.stderr.write(`\nFatal mismatch on worker ${msg.id}, chunk ${msg.idx}: invalid=${msg.invalid}, deleted=${msg.deleted}. Aborting.\n`);
+        for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch { } }
+        // Persist current totals for debugging
+        try { saveProgress({ wordListHash, completed: Array.from(completed), totals: { valid: totalValid, invalid: totalInvalid, deleted: totalDeleted }, tally: globalTally }); } catch { }
+        setTimeout(() => process.exit(2), 50);
+      } else if (msg.type === 'fatal_write') {
+        shuttingDown = true;
+        process.stderr.write(`\nFatal write failure on worker ${msg.id}, chunk ${msg.idx}: ${msg.error}. Aborting.\n`);
+        for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch { } }
+        try { saveProgress({ wordListHash, completed: Array.from(completed), totals: { valid: totalValid, invalid: totalInvalid, deleted: totalDeleted }, tally: globalTally }); } catch { }
+        setTimeout(() => process.exit(3), 50);
       } else if (msg.type === 'request_work') {
         if (shuttingDown) {
           w.postMessage({ type: 'cleanup' });
@@ -279,28 +225,24 @@ class RobustProgressDisplay {
       } else if (msg.type === 'error') {
         // Log errors but don't interfere with progress display
         process.stderr.write(`\nWorker ${msg.id} error: ${msg.message}\n`);
-        // Mark that console was interrupted so we can redraw properly
-        progressDisplay.markInterrupted();
       } else if (msg.type === 'tally') {
         // merge local tally
         const t = msg.tally || {};
         for (const k of Object.keys(t)) globalTally[k] = (globalTally[k] || 0) + t[k];
       } else if (msg.type === 'done_chunk') {
         completed.add(msg.idx);
-        saveProgress({ wordListHash, completed: Array.from(completed), totals: { valid: totalValid, invalid: totalInvalid }, tally: globalTally });
+        saveProgress({ wordListHash, completed: Array.from(completed), totals: { valid: totalValid, invalid: totalInvalid, deleted: totalDeleted }, tally: globalTally });
         status[msg.id].current = { idx: msg.idx, processed: 1, total: 1, done: true };
         if (typeof msg.valid === 'number') { status[msg.id].valid += msg.valid; totalValid += msg.valid; }
         if (typeof msg.invalid === 'number') { status[msg.id].invalid += msg.invalid; totalInvalid += msg.invalid; }
-        progressDisplay.setup();
-        progressDisplay.forceRedraw(status, completed, totalValid, totalInvalid, BATCH_COUNT);
+        if (typeof msg.deleted === 'number') { status[msg.id].deleted += msg.deleted; totalDeleted += msg.deleted; }
+        redraw();
         w.postMessage({ type: 'request_work' });
       } else if (msg.type === 'cleanup_done') {
         active--;
         if (active === 0) {
-          // Cleanup progress display
-          progressDisplay.cleanup();
           console.log('\nAll workers finished.');
-          console.log(`Totals: valid=${totalValid}, deleted=${totalInvalid}`);
+          console.log(`Totals: valid=${totalValid}, invalid=${totalInvalid}, deleted=${totalDeleted}`);
           // write tally
           try {
             const tallyOutputPath = path.join(DATA_DIR, 'category_tally.json');
