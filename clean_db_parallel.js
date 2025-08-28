@@ -154,7 +154,7 @@ async function getHashRange(db) {
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(new URL('./clean_db_worker.js', import.meta.url), { workerData: { id, DB_PATH, DATA_DIR, CAT_SCORES_F } });
     workers.push(w);
-    w.on('message', msg => {
+    w.on('message', async msg => {
       if (msg.type === 'ready') {
         // Assign immediately if queue has work; otherwise ask worker to request
         const job = workQueue.shift();
@@ -174,10 +174,10 @@ async function getHashRange(db) {
         redraw();
       } else if (msg.type === 'fatal_mismatch') {
         // This should no longer be sent since we removed the fatal mismatch check
-        process.stderr.write(`\nUnexpected fatal_mismatch message from worker ${msg.id}, chunk ${msg.idx}: invalid=${msg.invalid}, deleted=${msg.deleted}.\n`);
+        process.stderr.write(`\nUnexpected fatal_mismatch from W${msg.id} chunk ${msg.idx}: ${msg.invalid} invalid, ${msg.deleted} deleted.\n`);
       } else if (msg.type === 'fatal_write') {
         shuttingDown = true;
-        process.stderr.write(`\nFatal write failure on worker ${msg.id}, chunk ${msg.idx}: ${msg.error}. Aborting.\n`);
+        process.stderr.write(`\nFatal write failure on W${msg.id} chunk ${msg.idx}: ${msg.error}. Aborting.\n`);
         for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch { } }
         try { saveProgress({ wordListHash, completed: Array.from(completed), totals: { valid: totalValid, invalid: totalInvalid, deleted: totalDeleted }, tally: globalTally }); } catch { }
         setTimeout(() => process.exit(3), 50);
@@ -195,7 +195,7 @@ async function getHashRange(db) {
         }
       } else if (msg.type === 'error') {
         // Log errors but don't interfere with progress display
-        process.stderr.write(`\nWorker ${msg.id} error: ${msg.message}\n`);
+        process.stderr.write(`\nW${msg.id} error: ${msg.message}\n`);
       } else if (msg.type === 'tally') {
         // merge local tally
         const t = msg.tally || {};
@@ -224,6 +224,18 @@ async function getHashRange(db) {
             fs.writeFileSync(tallyOutputPath, JSON.stringify(tallyData, null, 2));
             console.log(`Saved category tally to ${tallyOutputPath}`);
           } catch (e) { console.log('Warning: failed to save category tally:', e.message); }
+          
+          // Checkpoint the database to prevent WAL file growth
+          console.log('Checkpointing database to clean up WAL file...');
+          try {
+            const { execSync } = await import('child_process');
+            execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 300000 }); // 5 minute timeout
+            console.log('Database checkpoint completed successfully.');
+          } catch (e) {
+            console.log(`Warning: database checkpoint failed: ${e.message}`);
+            console.log('You may need to run "sqlite3 puzzles.db PRAGMA wal_checkpoint(TRUNCATE);" manually.');
+          }
+          
           // Ask workers to shutdown their native resources gracefully before exit
           for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch { } }
           setTimeout(() => process.exit(0), 50);

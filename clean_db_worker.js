@@ -213,14 +213,17 @@ parentPort.on('message', async msg => {
 
       // Log mismatch but don't abort - this can happen due to concurrent deletions or database constraints
       if (invalidCount !== deletedCount) {
-        console.error(`Worker ${WID} chunk ${job.idx}: Found ${invalidCount} invalid puzzles but only deleted ${deletedCount}. This may be due to concurrent deletions or database constraints.`);
+        console.error(`W${WID} chunk ${job.idx}: ${invalidCount} invalid found, ${deletedCount} deleted (diff: ${invalidCount - deletedCount})`);
         // Continue processing - this is not necessarily a fatal error
       }
       // Send tally for this chunk before signaling done
       parentPort.postMessage({ type: 'tally', id: WID, idx: job.idx, tally: localTally });
       parentPort.postMessage({ type: 'done_chunk', id: WID, idx: job.idx, valid: validCount, invalid: invalidCount, deleted: deletedCount });
     } catch (e) {
-      parentPort.postMessage({ type: 'error', id: WID, idx: msg?.job?.idx, message: e && e.message ? e.message : String(e) });
+      // Truncate long error messages to avoid console spam
+      const errorMsg = e && e.message ? e.message : String(e);
+      const truncatedMsg = errorMsg.length > 200 ? errorMsg.substring(0, 200) + '...' : errorMsg;
+      parentPort.postMessage({ type: 'error', id: WID, idx: msg?.job?.idx, message: truncatedMsg });
       // Small delay before asking for new work to avoid hot error loop
       await delay(200);
       parentPort.postMessage({ type: 'request_work', id: WID });
@@ -266,7 +269,9 @@ async function performWriteBatchRust(invalid, scoreUpdates) {
       return { ok: true, deleted: deletedCount };
     } catch (e) {
       lastError = e && e.message ? e.message : String(e);
-      console.error(`Worker ${WID} write batch attempt ${attempt} failed:`, lastError);
+      // Truncate long error messages
+      const truncatedError = lastError.length > 100 ? lastError.substring(0, 100) + '...' : lastError;
+      console.error(`W${WID} write batch attempt ${attempt} failed:`, truncatedError);
       // small backoff
       await delay(50 * attempt);
     }
