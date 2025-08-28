@@ -55,6 +55,17 @@ async function getHashRange(db) {
     console.log(`  • words.json: ${(szWords / 1024).toFixed(1)} KB, categories.json: ${(szCats / 1024).toFixed(1)} KB, meta_categories.json: ${(szMeta / 1024).toFixed(1)} KB`);
   } catch { }
 
+  // Checkpoint WAL file at startup to clear any accumulated data from previous sessions
+  console.log("- Performing initial WAL checkpoint to ensure clean database state...");
+  try {
+    const { execSync } = await import('child_process');
+    execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 900000 }); // 15 minute timeout
+    console.log("  ✓ Initial WAL checkpoint completed successfully");
+  } catch (e) {
+    console.log(`  ⚠️  Initial WAL checkpoint failed: ${e.message}`);
+    console.log("     This may affect performance but cleanup will continue...");
+  }
+
   function loadProgress() {
     if (!fs.existsSync(PROGRESS_FILE)) return { wordListHash: null, completed: [] };
     try { return JSON.parse(fs.readFileSync(PROGRESS_FILE, "utf8")); } catch { return { wordListHash: null, completed: [] }; }
@@ -224,18 +235,18 @@ async function getHashRange(db) {
             fs.writeFileSync(tallyOutputPath, JSON.stringify(tallyData, null, 2));
             console.log(`Saved category tally to ${tallyOutputPath}`);
           } catch (e) { console.log('Warning: failed to save category tally:', e.message); }
-          
+
           // Checkpoint the database to prevent WAL file growth
           console.log('Checkpointing database to clean up WAL file...');
           try {
             const { execSync } = await import('child_process');
-            execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 300000 }); // 5 minute timeout
+            execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 900000 }); // 15 minute timeout
             console.log('Database checkpoint completed successfully.');
           } catch (e) {
             console.log(`Warning: database checkpoint failed: ${e.message}`);
             console.log('You may need to run "sqlite3 puzzles.db PRAGMA wal_checkpoint(TRUNCATE);" manually.');
           }
-          
+
           // Ask workers to shutdown their native resources gracefully before exit
           for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch { } }
           setTimeout(() => process.exit(0), 50);

@@ -9,7 +9,7 @@ import { setTimeout as delay } from 'timers/promises';
 const { id: WID, DB_PATH, DATA_DIR, CAT_SCORES_F } = workerData;
 
 // Extended timeouts to reduce false-positive stalls under load
-const RUST_RESPONSE_TIMEOUT_MS = 300000; // 5 minutes
+const RUST_RESPONSE_TIMEOUT_MS = 900000; // 15 minutes
 
 const categoriesJson = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'categories.json'), 'utf8'));
 const metaCatsJson = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'meta_categories.json'), 'utf8'));
@@ -63,7 +63,7 @@ async function ensureWriter() {
   wrl = (await import('readline')).createInterface({ input: writer.stdout });
   wrl.on('line', line => { wqueue.push(line); if (wwaitResolve) { const r = wwaitResolve; wwaitResolve = null; r(); } });
   writer.stdin.write(JSON.stringify({ type: 'Init', db_path: DB_PATH }) + '\n');
-  const line = await readWriterLineWithTimeout(60000); // 60 second timeout for init
+  const line = await readWriterLineWithTimeout(180000); // 3 minute timeout for init
   let msg; try { msg = JSON.parse(line); } catch { throw new Error('Invalid writer init: ' + line); }
   if (msg.type !== 'Ready') throw new Error('Writer failed to init: ' + line);
 }
