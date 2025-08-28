@@ -1247,6 +1247,7 @@
     "Rock and Roll",
     "Rodan",
     "Roy Cohn",
+    "SR-71 Blackbird",
     "Santayana",
     "Seven Samurai",
     "Singin' in the Rain",
@@ -1378,6 +1379,7 @@
     "Profumo Affair",
     "Psycho",
     "Purple Haze",
+    "Quicksilver",
     "Ray Charles",
     "Red Beard",
     "Respect",
@@ -2182,6 +2184,7 @@
     "Troy",
     "Twilight",
     "Unbreakable",
+    "Usain Bolt",
     "World of Warcraft"
   ],
   "2010s": [
@@ -2290,6 +2293,7 @@
     "USS Gerald R. Ford",
     "USS Michael Monsoor",
     "USS Zumwalt",
+    "Usain Bolt",
     "X-Men: Days of Future Past",
     "X-Men: First Class"
   ],
@@ -2823,6 +2827,7 @@
     "Punk Rock",
     "Purple Haze",
     "Queen",
+    "Quicksilver",
     "Rafiki",
     "Rain Man",
     "Raise the Red Lantern",
@@ -2854,6 +2859,7 @@
     "Ruby",
     "Rush",
     "Ruth",
+    "SR-71 Blackbird",
     "Saab",
     "Sabretooth",
     "Salem's Lot",
@@ -3423,6 +3429,7 @@
     "USS Michael Monsoor",
     "USS Zumwalt",
     "Unbreakable",
+    "Usain Bolt",
     "Usher",
     "Vantage Point",
     "Velma",
@@ -3969,6 +3976,7 @@
     "MiG-15",
     "MiG-21",
     "Mustang",
+    "SR-71 Blackbird",
     "Spitfire",
     "Stuka",
     "Thunderbolt",
@@ -4233,10 +4241,12 @@
     "Cat",
     "Centipede",
     "Chasmosaurus",
+    "Cheetah",
     "Chicken",
     "Cobra",
     "Coelacanth",
     "Coelophysis",
+    "Compsognathus",
     "Confuciusornis",
     "Cormorant",
     "Corythosaurus",
@@ -4303,6 +4313,7 @@
     "Magpie",
     "Mammoth",
     "Manatee",
+    "Mantis Shrimp",
     "Megalodon",
     "Meganeura",
     "Meganeuropsis",
@@ -4324,6 +4335,7 @@
     "Patagornis",
     "Pelican",
     "Penguin",
+    "Peregrine Falcon",
     "Petrel",
     "Phorusrhacos",
     "Plateosaurus",
@@ -4345,6 +4357,7 @@
     "Rhea",
     "Rhino",
     "Robin",
+    "Sailfish",
     "Salmon",
     "Scorpion",
     "Seahawk",
@@ -4514,6 +4527,7 @@
     "Graptolites",
     "Grasshopper",
     "Great White Shark",
+    "Greyhound",
     "Griffin",
     "Ground Sloth",
     "Gull",
@@ -4966,6 +4980,7 @@
     "Ming",
     "Ruth",
     "Sugar Ray",
+    "Usain Bolt",
     "Wayne Gretzky"
   ],
   "Atmospheric Changes": [
@@ -4982,6 +4997,7 @@
     "Hulk",
     "Iron Man",
     "Nick Fury",
+    "Quicksilver",
     "Thor"
   ],
   "Aviation Pioneers": [
@@ -5221,6 +5237,7 @@
     "Trinity"
   ],
   "Big Cats": [
+    "Cheetah",
     "Jaguar",
     "Lion",
     "Panther",
@@ -5293,6 +5310,7 @@
     "Patagornis",
     "Pelican",
     "Penguin",
+    "Peregrine Falcon",
     "Petrel",
     "Phoenix",
     "Phorusrhacos",
@@ -5318,6 +5336,7 @@
     "Hawk",
     "Hawkeye",
     "Owl",
+    "Peregrine Falcon",
     "Raptor",
     "Sam the Eagle",
     "Seahawk",
@@ -5337,6 +5356,7 @@
     "Nick Fury",
     "Panther",
     "Raven",
+    "SR-71 Blackbird",
     "Stout",
     "Venom"
   ],
@@ -5996,10 +6016,12 @@
     "Carnotaurus",
     "Cat",
     "Centipede",
+    "Cheetah",
     "Chomper",
     "Cobra",
     "Coelacanth",
     "Coelophysis",
+    "Compsognathus",
     "Cormorant",
     "Deinonychus",
     "Deinosuchus",
@@ -6047,6 +6069,7 @@
     "Patagornis",
     "Pelican",
     "Penguin",
+    "Peregrine Falcon",
     "Petrel",
     "Petrie",
     "Phorusrhacos",
@@ -6205,6 +6228,7 @@
     "Celery",
     "Centipede",
     "Chamomile",
+    "Cheetah",
     "Cherry Blossom",
     "Chicken",
     "Cilantro",
@@ -6267,6 +6291,7 @@
     "Grape",
     "Grasshopper",
     "Great White Shark",
+    "Greyhound",
     "Ground Sloth",
     "Hawk",
     "Hazelnut",
@@ -6298,6 +6323,7 @@
     "Macaw",
     "Mammoth",
     "Manatee",
+    "Mantis Shrimp",
     "Maple",
     "Marionberry",
     "Mayflower",
@@ -6330,6 +6356,7 @@
     "Pecan",
     "Penguin",
     "Pepper",
+    "Peregrine Falcon",
     "Phorusrhacos",
     "Pine",
     "Pistachio",
@@ -6354,6 +6381,7 @@
     "Rye",
     "Saffron",
     "Sage",
+    "Sailfish",
     "Salmon",
     "Salmonberry",
     "Scorpion",
@@ -7059,6 +7087,7 @@
     "Queen Elizabeth 2",
     "Reagan",
     "Roosevelt",
+    "SR-71 Blackbird",
     "South Korea",
     "Soviet Union",
     "Soviet-Afghan War",
@@ -8200,6 +8229,13 @@
     "Queen Mary 2",
     "Wonder"
   ],
+  "Crustaceans": [
+    "Crab",
+    "Crayfish",
+    "Lobster",
+    "Mantis Shrimp",
+    "Shrimp"
+  ],
   "Crypto": [
     "Coin",
     "DEX",
@@ -8239,6 +8275,7 @@
     "Cassowary",
     "Cat",
     "Centipede",
+    "Cheetah",
     "Chicken",
     "Coelacanth",
     "Cormorant",
@@ -8260,6 +8297,7 @@
     "Gannet",
     "Grasshopper",
     "Great White Shark",
+    "Greyhound",
     "Gull",
     "Hawk",
     "Hummingbird",
@@ -8271,6 +8309,7 @@
     "Lobster",
     "Macaw",
     "Magpie",
+    "Mantis Shrimp",
     "Millipede",
     "Mosquito",
     "Moth",
@@ -8279,12 +8318,14 @@
     "Parrot",
     "Pelican",
     "Penguin",
+    "Peregrine Falcon",
     "Petrel",
     "Phoenix",
     "Puffin",
     "Raven",
     "Rhea",
     "Robin",
+    "Sailfish",
     "Scorpion",
     "Seahawk",
     "Shark",
@@ -8609,6 +8650,7 @@
     "Chicken",
     "Chomper",
     "Coelophysis",
+    "Compsognathus",
     "Confuciusornis",
     "Cormorant",
     "Corythosaurus",
@@ -8820,6 +8862,7 @@
   ],
   "Dogs": [
     "Goofy",
+    "Greyhound",
     "Snoopy"
   ],
   "Domesticated Animals": [
@@ -9495,6 +9538,7 @@
     "Iron",
     "K",
     "Lithium",
+    "Mercury",
     "N",
     "Neon",
     "Nickel",
@@ -9502,6 +9546,7 @@
     "O",
     "Oxygen",
     "Plutonium",
+    "Quicksilver",
     "Silver",
     "Steel",
     "Titanium",
@@ -10668,6 +10713,7 @@
     "Falcon",
     "Macon",
     "Millennium Falcon",
+    "Peregrine Falcon",
     "The Maltese Falcon"
   ],
   "Ends with COS": [
@@ -11757,6 +11803,7 @@
     "Ben-Hur"
   ],
   "Ends with HUS": [
+    "Compsognathus",
     "Deinonychus",
     "Deinosuchus",
     "Gustavus Adolphus",
@@ -12007,6 +12054,7 @@
     "Sashimi"
   ],
   "Ends with IMP": [
+    "Mantis Shrimp",
     "Shrimp"
   ],
   "Ends with INA": [
@@ -12248,6 +12296,7 @@
     "Bluebird",
     "Hummingbird",
     "Isabella Bird",
+    "SR-71 Blackbird",
     "To Kill a Mockingbird"
   ],
   "Ends with IRE": [
@@ -12297,6 +12346,7 @@
     "Crayfish",
     "Death Wish",
     "Gefilte Fish",
+    "Sailfish",
     "Wish"
   ],
   "Ends with ISK": [
@@ -13595,7 +13645,8 @@
     "Bohemian Revolt",
     "Bolt",
     "The Peasants' Revolt",
-    "Thunderbolt"
+    "Thunderbolt",
+    "Usain Bolt"
   ],
   "Ends with OLY": [
     "Monopoly"
@@ -14700,6 +14751,7 @@
     "Harry Potter and the Deathly Hallows: Part 2"
   ],
   "Ends with TAH": [
+    "Cheetah",
     "Utah"
   ],
   "Ends with TAI": [
@@ -15116,6 +15168,7 @@
     "Tuna"
   ],
   "Ends with UND": [
+    "Greyhound",
     "The Fox and the Hound"
   ],
   "Ends with UNE": [
@@ -15261,6 +15314,7 @@
     "Lever",
     "Mississippi River",
     "Nile River",
+    "Quicksilver",
     "Silver",
     "Yangtze River"
   ],
@@ -15993,6 +16047,7 @@
     "Chasmosaurus",
     "Chomper",
     "Coelophysis",
+    "Compsognathus",
     "Confuciusornis",
     "Corythosaurus",
     "Deinonychus",
@@ -16440,6 +16495,19 @@
     "Knot",
     "Tack"
   ],
+  "Fastest of its Type": [
+    "Cheetah",
+    "Compsognathus",
+    "Concorde",
+    "Flash",
+    "Greyhound",
+    "Mantis Shrimp",
+    "Peregrine Falcon",
+    "Quicksilver",
+    "SR-71 Blackbird",
+    "Sailfish",
+    "Usain Bolt"
+  ],
   "Feathered Dinosaurs": [
     "Archaeopteryx",
     "Confuciusornis",
@@ -16703,6 +16771,7 @@
     "Princess Peach",
     "Professor X",
     "Puck",
+    "Quicksilver",
     "Rain Man",
     "Raven",
     "Red Beard",
@@ -16835,6 +16904,7 @@
     "Carp",
     "Coelacanth",
     "Ray",
+    "Sailfish",
     "Salmon",
     "Shark",
     "Tuna"
@@ -18084,6 +18154,7 @@
     "Celery",
     "Centipede",
     "Chamomile",
+    "Cheetah",
     "Cherry Blossom",
     "Chicken",
     "Cilantro",
@@ -18142,6 +18213,7 @@
     "Grape",
     "Grasshopper",
     "Great White Shark",
+    "Greyhound",
     "Ground Sloth",
     "Hawk",
     "Hazelnut",
@@ -18169,6 +18241,7 @@
     "Macaw",
     "Mammoth",
     "Manatee",
+    "Mantis Shrimp",
     "Maple",
     "Marionberry",
     "Mayflower",
@@ -18198,6 +18271,7 @@
     "Pecan",
     "Penguin",
     "Pepper",
+    "Peregrine Falcon",
     "Pine",
     "Pistachio",
     "Polar Bear",
@@ -18220,6 +18294,7 @@
     "Rye",
     "Saffron",
     "Sage",
+    "Sailfish",
     "Salmon",
     "Salmonberry",
     "Scorpion",
@@ -18757,6 +18832,7 @@
     "Centipede",
     "Club Moss",
     "Coelacanth",
+    "Compsognathus",
     "Coral",
     "Crab",
     "Crayfish",
@@ -19586,6 +19662,7 @@
     "Blue Whale",
     "Bruin",
     "Buffalo",
+    "Cheetah",
     "Deinotherium",
     "Dire Wolf",
     "Dolphin",
@@ -19596,6 +19673,7 @@
     "Garfield",
     "Giraffe",
     "Goofy",
+    "Greyhound",
     "Ground Sloth",
     "Harambe",
     "Humpback Whale",
@@ -19786,6 +19864,7 @@
     "Nightcrawler",
     "Phoenix",
     "Professor X",
+    "Quicksilver",
     "Rogue",
     "Sabretooth",
     "Shadowcat",
@@ -20222,6 +20301,7 @@
     "Prokofiev",
     "Puck",
     "Qin Shi Huang",
+    "Quicksilver",
     "Rain Man",
     "Rasputin",
     "Ray Charles",
@@ -20307,6 +20387,7 @@
     "Truman",
     "Trump",
     "Tyler",
+    "Usain Bolt",
     "V",
     "Van Buren",
     "Vasco da Gama",
@@ -20464,6 +20545,7 @@
     "Club Moss",
     "Coelacanth",
     "Coelophysis",
+    "Compsognathus",
     "Confuciusornis",
     "Coral",
     "Cormorant",
@@ -20569,16 +20651,25 @@
     "Silver"
   ],
   "Metals": [
+    "Beryllium",
     "Cobalt",
     "Colossus",
     "Copper",
     "Gold",
+    "Iron",
     "Iron Man",
+    "K",
+    "Lithium",
     "Magneto",
+    "Mercury",
     "Nickel",
+    "Plutonium",
+    "Quicksilver",
     "Rust",
     "Silver",
-    "Steel"
+    "Steel",
+    "Titanium",
+    "Uranium"
   ],
   "Mexican Food": [
     "Burrito",
@@ -20645,6 +20736,7 @@
     "MiG-15",
     "MiG-21",
     "Mustang",
+    "SR-71 Blackbird",
     "Spitfire",
     "Stuka",
     "Thunderbolt",
@@ -20978,6 +21070,7 @@
     "Pecan",
     "Penguin",
     "Pepper",
+    "Peregrine Falcon",
     "Phorusrhacos",
     "Pine",
     "Pistachio",
@@ -20994,6 +21087,7 @@
     "Rye",
     "Saffron",
     "Sage",
+    "Sailfish",
     "Salmon",
     "Scorpion",
     "Seal",
@@ -27052,6 +27146,7 @@
     "Cedar",
     "Centipede",
     "Chamomile",
+    "Cheetah",
     "Cherry Blossom",
     "Chicken",
     "Clove",
@@ -27094,6 +27189,7 @@
     "Goat",
     "Grasshopper",
     "Great White Shark",
+    "Greyhound",
     "Ground Sloth",
     "Hawk",
     "Hazelnut",
@@ -27117,6 +27213,7 @@
     "Macaw",
     "Mammoth",
     "Manatee",
+    "Mantis Shrimp",
     "Maple",
     "Mayflower",
     "Megalodon",
@@ -27140,6 +27237,7 @@
     "Pecan",
     "Penguin",
     "Pepper",
+    "Peregrine Falcon",
     "Phorusrhacos",
     "Pine",
     "Pistachio",
@@ -27154,6 +27252,7 @@
     "Rose",
     "Rosemary",
     "Saffron",
+    "Sailfish",
     "Salmon",
     "Scorpion",
     "Seal",
@@ -27483,6 +27582,7 @@
     "Rye",
     "Saffron",
     "Sage",
+    "Sailfish",
     "Salmon",
     "Scorpion",
     "Seal",
@@ -27901,6 +28001,7 @@
     "Rose",
     "Rosemary",
     "Saffron",
+    "Sailfish",
     "Salmon",
     "Scorpion",
     "Seal",
@@ -28391,6 +28492,7 @@
     "Prokofiev",
     "Qin Shi Huang",
     "Queen Mary",
+    "Quicksilver",
     "Rain Man",
     "Rasputin",
     "Ray Charles",
@@ -28490,6 +28592,7 @@
     "Truman",
     "Trump",
     "Tyler",
+    "Usain Bolt",
     "V",
     "Van Buren",
     "Vasco da Gama",
@@ -29582,6 +29685,7 @@
     "Rye",
     "Saffron",
     "Sage",
+    "Sailfish",
     "Salmon",
     "Salmonberry",
     "Scorpion",
@@ -29667,6 +29771,7 @@
     "Cedar",
     "Centipede",
     "Chamomile",
+    "Cheetah",
     "Cherry Blossom",
     "Chicken",
     "Cinnamon",
@@ -29712,6 +29817,7 @@
     "Grape",
     "Grasshopper",
     "Great White Shark",
+    "Greyhound",
     "Ground Sloth",
     "Hawk",
     "Hazelnut",
@@ -29733,6 +29839,7 @@
     "Macaw",
     "Mammoth",
     "Manatee",
+    "Mantis Shrimp",
     "Maple",
     "Mayflower",
     "Megalodon",
@@ -29757,6 +29864,7 @@
     "Pecan",
     "Penguin",
     "Pepper",
+    "Peregrine Falcon",
     "Pine",
     "Pistachio",
     "Poppy",
@@ -29772,6 +29880,7 @@
     "Rye",
     "Saffron",
     "Sage",
+    "Sailfish",
     "Salmon",
     "Scorpion",
     "Seal",
@@ -29913,6 +30022,7 @@
     "Bear",
     "Brontornis",
     "Bruin",
+    "Cheetah",
     "Eagle",
     "Falcon",
     "Fox",
@@ -29926,6 +30036,7 @@
     "Owl",
     "Panther",
     "Patagornis",
+    "Peregrine Falcon",
     "Phorusrhacos",
     "Polar Bear",
     "Raptor",
@@ -29967,6 +30078,7 @@
     "Chomper",
     "Coelacanth",
     "Coelophysis",
+    "Compsognathus",
     "Confuciusornis",
     "Corythosaurus",
     "Deinonychus",
@@ -30172,6 +30284,7 @@
     "Celery",
     "Centipede",
     "Chamomile",
+    "Cheetah",
     "Cherry Blossom",
     "Chicken",
     "Cilantro",
@@ -30228,6 +30341,7 @@
     "Gooseberry",
     "Grasshopper",
     "Great White Shark",
+    "Greyhound",
     "Ground Sloth",
     "Hawk",
     "Hazelnut",
@@ -30254,6 +30368,7 @@
     "Macaw",
     "Mammoth",
     "Manatee",
+    "Mantis Shrimp",
     "Maple",
     "Marionberry",
     "Mayflower",
@@ -30281,6 +30396,7 @@
     "Pecan",
     "Penguin",
     "Pepper",
+    "Peregrine Falcon",
     "Pine",
     "Pistachio",
     "Polar Bear",
@@ -30301,6 +30417,7 @@
     "Rose",
     "Rosemary",
     "Saffron",
+    "Sailfish",
     "Salmon",
     "Salmonberry",
     "Scorpion",
@@ -30427,6 +30544,7 @@
     "Gannet",
     "Giraffe",
     "Goat",
+    "Greyhound",
     "Gull",
     "Harambe",
     "Hawk",
@@ -30443,6 +30561,7 @@
     "Magpie",
     "Mammoth",
     "Manatee",
+    "Mantis Shrimp",
     "Mare",
     "Monkey",
     "Moth",
@@ -30454,6 +30573,7 @@
     "Peahen",
     "Pelican",
     "Penguin",
+    "Peregrine Falcon",
     "Petrel",
     "Pink Panther",
     "Polar Bear",
@@ -30469,6 +30589,7 @@
     "Robin",
     "Rooster",
     "Sabretooth",
+    "Sailfish",
     "Salmon",
     "Scorpion",
     "Seahawk",
@@ -30857,6 +30978,7 @@
     "Trump",
     "Tsar",
     "Tyler",
+    "Usain Bolt",
     "Van Buren",
     "Vasco da Gama",
     "Vespasian",
@@ -31069,6 +31191,7 @@
     "Chasmosaurus",
     "Cobra",
     "Coelophysis",
+    "Compsognathus",
     "Corythosaurus",
     "Deinonychus",
     "Deinosuchus",
@@ -31746,6 +31869,7 @@
     "Cassowary",
     "Chicken",
     "Chomper",
+    "Compsognathus",
     "Confuciusornis",
     "Cormorant",
     "Crow",
@@ -32014,6 +32138,7 @@
     "Livyatan",
     "Lobster",
     "Manatee",
+    "Mantis Shrimp",
     "Megalodon",
     "Moby Dick",
     "Mosasaurus",
@@ -32021,6 +32146,7 @@
     "Orca",
     "Plesiosaurus",
     "Pterygotus",
+    "Sailfish",
     "Seal",
     "Shark",
     "Shonisaurus",
@@ -32356,7 +32482,8 @@
     "Worm"
   ],
   "Silver Things": [
-    "Colossus"
+    "Colossus",
+    "Quicksilver"
   ],
   "Sinead O'Connor": [
     "Nothing Compares 2 U"
@@ -33865,6 +33992,7 @@
     "Checkers",
     "Cheese",
     "Cheesecake",
+    "Cheetah",
     "Chernobyl",
     "Cherry Blossom",
     "Chess",
@@ -34008,7 +34136,8 @@
     "Commentarii de Bello Gallico",
     "Commodus",
     "Communist Bloc",
-    "Comoros"
+    "Comoros",
+    "Compsognathus"
   ],
   "Starts with CON": [
     "CON",
@@ -34988,7 +35117,8 @@
     "Green Light",
     "Green Tea",
     "Greenland",
-    "Grenada"
+    "Grenada",
+    "Greyhound"
   ],
   "Starts with GRI": [
     "Griffin"
@@ -36134,6 +36264,7 @@
     "Manhattan",
     "Mani",
     "Mansaf",
+    "Mantis Shrimp",
     "Mantle"
   ],
   "Starts with MAP": [
@@ -36859,6 +36990,7 @@
   ],
   "Starts with PER": [
     "Percy Jackson & the Olympians",
+    "Peregrine Falcon",
     "Performance",
     "Permian-Triassic Extinction",
     "Perseus",
@@ -37131,7 +37263,8 @@
     "Quetzalcoatlus"
   ],
   "Starts with QUI": [
-    "Quiche"
+    "Quiche",
+    "Quicksilver"
   ],
   "Starts with RAB": [
     "Rabbit"
@@ -37388,6 +37521,7 @@
   ],
   "Starts with SAI": [
     "Sail",
+    "Sailfish",
     "Sailing",
     "Saint Kitts and Nevis",
     "Saint Lucia",
@@ -37773,6 +37907,9 @@
   ],
   "Starts with SQU": [
     "Squash"
+  ],
+  "Starts with SR-": [
+    "SR-71 Blackbird"
   ],
   "Starts with SRI": [
     "Sri Lanka",
@@ -38582,6 +38719,9 @@
   "Starts with URU": [
     "Uruguay"
   ],
+  "Starts with USA": [
+    "Usain Bolt"
+  ],
   "Starts with USH": [
     "Usher"
   ],
@@ -39195,6 +39335,7 @@
     "Nightcrawler",
     "Phoenix",
     "Professor X",
+    "Quicksilver",
     "Raven",
     "Red Hood",
     "Robin",
@@ -39470,6 +39611,7 @@
     "Chicken",
     "Chomper",
     "Coelophysis",
+    "Compsognathus",
     "Confuciusornis",
     "Cormorant",
     "Crow",
@@ -40107,6 +40249,7 @@
     "Roy Cohn",
     "Ruth",
     "Rye Whiskey",
+    "SR-71 Blackbird",
     "Sacramento",
     "Safety Not Guaranteed",
     "Saint Paul",
@@ -41523,7 +41666,8 @@
     "Ivory Coast"
   ],
   "Things Jamaican": [
-    "Jamaica"
+    "Jamaica",
+    "Usain Bolt"
   ],
   "Things Japanese": [
     "1Q84",

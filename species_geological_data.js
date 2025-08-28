@@ -24,8 +24,10 @@ export const SPECIES_GEOLOGICAL_DATA = {
     "Camarasaurus": [155, 145],
     "Carnotaurus": [72, 69],
     "Chasmosaurus": [76, 75],
+    "Cheetah": [4, 0], // Still living
     "Coelacanth": [400, 0], // Still living
     "Coelophysis": [228, 201],
+    "Compsognathus": [155, 150],
     "Confuciusornis": [125, 120],
     "Corythosaurus": [77, 75],
     "Deinonychus": [115, 108],
@@ -124,6 +126,7 @@ export const SPECIES_GEOLOGICAL_DATA = {
     "Fly": [250, 0],
     "Fox": [7, 0],
     "Goat": [10, 0],
+    "Greyhound": [2, 0], // Still living
     "Grasshopper": [300, 0],
     "Great White Shark": [16, 0],
     "Hawk": [50, 0],
@@ -136,6 +139,7 @@ export const SPECIES_GEOLOGICAL_DATA = {
     "Lion": [1.5, 0],
     "Lobster": [360, 0],
     "Macaw": [30, 0],
+    "Mantis Shrimp": [50, 0], // Still living
     "Millipede": [430, 0],
     "Mosquito": [200, 0],
     "Moss": [400, 0],
@@ -306,6 +310,7 @@ export const SPECIES_GEOLOGICAL_DATA = {
     "Ray": [150, 0], // Cartilaginous fish origin, still living
     "Rhino": [15, 0], // Recent origin, still living
     "Salmon": [50, 0], // Fish origin, still living
+    "Sailfish": [50, 0], // Fish origin, still living
     "Seal": [25, 0], // Marine mammal origin, still living
     "Skunk": [5, 0], // Recent origin, still living
     "Tuna": [50, 0], // Fish origin, still living

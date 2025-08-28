@@ -3849,6 +3849,7 @@
   "Beryllium": [
     "Elements",
     "Ends with IUM",
+    "Metals",
     "Starts with BER"
   ],
   "Beta": [
@@ -6910,6 +6911,22 @@
     "Starts with CHE",
     "Things American"
   ],
+  "Cheetah": [
+    "Animal Species",
+    "Big Cats",
+    "Carnivores",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with TAH",
+    "Fastest of its Type",
+    "Holocene Epoch",
+    "Mammals",
+    "Neogene Period",
+    "Pliocene Epoch",
+    "Predators",
+    "Quaternary Period",
+    "Starts with CHE"
+  ],
   "Chernobyl": [
     "1980s",
     "1986",
@@ -7979,6 +7996,21 @@
     "Place Names",
     "Starts with COM"
   ],
+  "Compsognathus": [
+    "Animal Species",
+    "Carnivores",
+    "Dinosaurs",
+    "Ends with HUS",
+    "Extinct Animals",
+    "Fastest of its Type",
+    "Jurassic Period",
+    "Mesozoic Era",
+    "Prehistoric Life",
+    "Reptiles",
+    "Saurischians",
+    "Starts with COM",
+    "Theropods"
+  ],
   "Concepcion": [
     "Age of Sail",
     "Ends with ION",
@@ -8007,6 +8039,7 @@
     "Aircraft",
     "Commercial Aircraft",
     "Ends with RDE",
+    "Fastest of its Type",
     "Manufactured by BAC/Aerospatiale",
     "Starts with CON",
     "Supersonic Aircraft",
@@ -8409,6 +8442,7 @@
     "Arthropods",
     "Cenozoic Era",
     "Cretaceous Period",
+    "Crustaceans",
     "Currently Living Animals",
     "Ends with RAB",
     "Eocene Epoch",
@@ -8482,6 +8516,7 @@
     "Carboniferous Period",
     "Cenozoic Era",
     "Cretaceous Period",
+    "Crustaceans",
     "Currently Living Animals",
     "Ends with ISH",
     "Eocene Epoch",
@@ -12026,6 +12061,7 @@
     "20th Century",
     "DC Characters",
     "Ends with ASH",
+    "Fastest of its Type",
     "Fictional People",
     "Lighting",
     "Men",
@@ -14080,6 +14116,21 @@
     "Place Names",
     "Starts with GRE",
     "Things Grenadian"
+  ],
+  "Greyhound": [
+    "Animal Terms",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Dogs",
+    "Ends with UND",
+    "Fastest of its Type",
+    "Holocene Epoch",
+    "Mammals",
+    "Neogene Period",
+    "Pliocene Epoch",
+    "Quaternary Period",
+    "Real Animals",
+    "Starts with GRE"
   ],
   "Griffin": [
     "Animal Terms",
@@ -16743,6 +16794,7 @@
     "Clothing",
     "Elements",
     "Ends with RON",
+    "Metals",
     "Starts with IRO"
   ],
   "Iron Man": [
@@ -17971,6 +18023,7 @@
     "Chemical Symbols",
     "Elements",
     "High-Value Scrabble Letters",
+    "Metals",
     "Single Letters"
   ],
   "K2": [
@@ -19828,6 +19881,7 @@
   "Lithium": [
     "Elements",
     "Ends with IUM",
+    "Metals",
     "Starts with LIT"
   ],
   "Lithuania": [
@@ -19970,6 +20024,7 @@
     "Carboniferous Period",
     "Cenozoic Era",
     "Cretaceous Period",
+    "Crustaceans",
     "Currently Living Animals",
     "Devonian Period",
     "Ends with TER",
@@ -20812,6 +20867,21 @@
     "Starts with MAN",
     "Things Middle Eastern"
   ],
+  "Mantis Shrimp": [
+    "Animal Species",
+    "Cenozoic Era",
+    "Crustaceans",
+    "Currently Living Animals",
+    "Ends with IMP",
+    "Fastest of its Type",
+    "Holocene Epoch",
+    "Neogene Period",
+    "Pliocene Epoch",
+    "Quaternary Period",
+    "Real Animals",
+    "Sea Creatures",
+    "Starts with MAN"
+  ],
   "Mantle": [
     "1950s",
     "1960s",
@@ -21583,7 +21653,9 @@
     "1960s",
     "20th Century",
     "Astronomical Objects",
+    "Elements",
     "Ends with URY",
+    "Metals",
     "Space Missions",
     "Starts with MER",
     "Things American"
@@ -25277,6 +25349,24 @@
     "Starts with PER",
     "Things American"
   ],
+  "Peregrine Falcon": [
+    "Animal Species",
+    "Birds",
+    "Birds of Prey",
+    "Carnivores",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with CON",
+    "Fastest of its Type",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Neogene Period",
+    "Pliocene Epoch",
+    "Predators",
+    "Quaternary Period",
+    "Real Animals",
+    "Starts with PER"
+  ],
   "Performance": [
     "1970s",
     "20th Century",
@@ -26109,6 +26199,7 @@
     "Elements",
     "Ends with IUM",
     "Manhattan Project",
+    "Metals",
     "Starts with PLU"
   ],
   "Pocahontas": [
@@ -27116,6 +27207,22 @@
     "Foods",
     "Starts with QUI",
     "Things French"
+  ],
+  "Quicksilver": [
+    "1960s",
+    "20th Century",
+    "Avengers",
+    "Elements",
+    "Ends with VER",
+    "Fastest of its Type",
+    "Fictional People",
+    "Marvel Characters",
+    "Men",
+    "Metals",
+    "People",
+    "Silver Things",
+    "Starts with QUI",
+    "Superheroes"
   ],
   "R": [
     "Movie Ratings",
@@ -28674,6 +28781,18 @@
     "Place Names",
     "Starts with RYU"
   ],
+  "SR-71 Blackbird": [
+    "1950s",
+    "20th Century",
+    "Aircraft",
+    "Black Things",
+    "Cold War",
+    "Ends with IRD",
+    "Fastest of its Type",
+    "Military Aircraft",
+    "Starts with SR-",
+    "Things American"
+  ],
   "STR": [
     "D&D Stats",
     "Ends with STR",
@@ -28790,6 +28909,25 @@
   "Sail": [
     "Ends with AIL",
     "Nautical Terms",
+    "Starts with SAI"
+  ],
+  "Sailfish": [
+    "Animal Species",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with ISH",
+    "Fastest of its Type",
+    "Fish",
+    "Holocene Epoch",
+    "Miocene Epoch",
+    "Neogene Period",
+    "Oligocene Epoch",
+    "Paleogene Period",
+    "Pleistocene Epoch",
+    "Pliocene Epoch",
+    "Quaternary Period",
+    "Real Animals",
+    "Sea Creatures",
     "Starts with SAI"
   ],
   "Sailing": [
@@ -29982,6 +30120,7 @@
     "Carboniferous Period",
     "Cenozoic Era",
     "Cretaceous Period",
+    "Crustaceans",
     "Currently Living Animals",
     "Devonian Period",
     "Ends with IMP",
@@ -37078,6 +37217,7 @@
   "Titanium": [
     "Elements",
     "Ends with IUM",
+    "Metals",
     "Starts with TIT"
   ],
   "Titanoboa": [
@@ -38221,6 +38361,7 @@
     "Elements",
     "Ends with IUM",
     "Manhattan Project",
+    "Metals",
     "Starts with URA"
   ],
   "Uranus": [
@@ -38246,6 +38387,19 @@
     "Starts with URU",
     "Things Uruguayan",
     "WWII Allied Powers"
+  ],
+  "Usain Bolt": [
+    "2000s",
+    "2010s",
+    "21st Century",
+    "Athletes",
+    "Ends with OLT",
+    "Fastest of its Type",
+    "Men",
+    "People",
+    "Real People",
+    "Starts with USA",
+    "Things Jamaican"
   ],
   "Usher": [
     "20th Century",
