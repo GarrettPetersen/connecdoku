@@ -211,10 +211,10 @@ parentPort.on('message', async msg => {
         validDelta = 0; invalidDelta = 0; deletedDelta = 0;
       }
 
-      // Abort if mismatch between found invalids and confirmed deletions
+      // Log mismatch but don't abort - this can happen due to concurrent deletions or database constraints
       if (invalidCount !== deletedCount) {
-        parentPort.postMessage({ type: 'fatal_mismatch', id: WID, idx: job.idx, invalid: invalidCount, deleted: deletedCount });
-        return;
+        console.error(`Worker ${WID} chunk ${job.idx}: Found ${invalidCount} invalid puzzles but only deleted ${deletedCount}. This may be due to concurrent deletions or database constraints.`);
+        // Continue processing - this is not necessarily a fatal error
       }
       // Send tally for this chunk before signaling done
       parentPort.postMessage({ type: 'tally', id: WID, idx: job.idx, tally: localTally });

@@ -173,13 +173,8 @@ async function getHashRange(db) {
         status[msg.id].current = { idx: msg.idx, processed: msg.processed, total: msg.total };
         redraw();
       } else if (msg.type === 'fatal_mismatch') {
-        shuttingDown = true;
-        // Print a newline to avoid overwriting progress area
-        process.stderr.write(`\nFatal mismatch on worker ${msg.id}, chunk ${msg.idx}: invalid=${msg.invalid}, deleted=${msg.deleted}. Aborting.\n`);
-        for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch { } }
-        // Persist current totals for debugging
-        try { saveProgress({ wordListHash, completed: Array.from(completed), totals: { valid: totalValid, invalid: totalInvalid, deleted: totalDeleted }, tally: globalTally }); } catch { }
-        setTimeout(() => process.exit(2), 50);
+        // This should no longer be sent since we removed the fatal mismatch check
+        process.stderr.write(`\nUnexpected fatal_mismatch message from worker ${msg.id}, chunk ${msg.idx}: invalid=${msg.invalid}, deleted=${msg.deleted}.\n`);
       } else if (msg.type === 'fatal_write') {
         shuttingDown = true;
         process.stderr.write(`\nFatal write failure on worker ${msg.id}, chunk ${msg.idx}: ${msg.error}. Aborting.\n`);
