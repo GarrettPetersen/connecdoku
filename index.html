@@ -35,7 +35,7 @@
 body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
      margin:0;background:#fafafa;color:var(--txt)}
 /* Add emoji font support for compound emojis */
-.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+.emoji{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol"}
 #shell{max-width:850px;margin:60px auto 40px;padding:0 12px;position:relative}
 @media (max-width: 768px) {
   #shell { margin: 20px auto 20px; padding: 0 8px; }
@@ -54,7 +54,6 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
       user-select:none;transition:background-color .3s ease;
       word-wrap:break-word;overflow-wrap:break-word;hyphens:auto;
       white-space:normal;word-spacing:normal;line-height:1.2;
-      lang:auto;
       font-size:clamp(11px, 4vw, 16px)}
 @media (max-width: 768px) {
   .tile { min-height: 65px; padding: 3px 4px; font-size: 13px; line-height: 1.1; }
@@ -65,12 +64,12 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
 @media (max-width: 360px) {
   .tile { font-size: 10px; padding: 1px 2px; line-height: 0.9; }
 }
-.hdr{min-height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:filter .2s ease;text-align:center;white-space:normal;word-spacing:normal}
+.hdr{min-height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:filter .2s ease;text-align:center;white-space:normal;word-spacing:normal;font-variant-numeric:tabular-nums}
 @media (max-width: 768px) {
   .hdr { min-height: 28px; font-size: 14px; text-align: center; white-space: normal; word-spacing: normal; }
   .hdr[data-row] { min-width: 50px; padding: 2px 4px; } /* Compact row headers for mobile */
 }
-.hdr.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+.hdr.emoji{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol"}
 .hdr:hover{filter:brightness(0.9)}
 .hdr button{all:unset;cursor:pointer;color:var(--txt);font-size:16px;font-weight:bold;transition:all .2s ease}
 .hdr.solved{font-weight:600;border:none;cursor:default}
