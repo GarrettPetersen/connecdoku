@@ -161,6 +161,9 @@ async function getHashRange(db) {
 
   let active = nWorkers;
   const workers = [];
+  let checkpointRequests = 0;
+  let lastCheckpointTime = 0;
+  const CHECKPOINT_INTERVAL = 30000; // 30 seconds between checkpoints
   // Write permits removed
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(new URL('./clean_db_worker.js', import.meta.url), { workerData: { id, DB_PATH, DATA_DIR, CAT_SCORES_F } });
@@ -202,6 +205,22 @@ async function getHashRange(db) {
             w.postMessage({ type: 'work', job });
           } else {
             w.postMessage({ type: 'cleanup' });
+          }
+        }
+      } else if (msg.type === 'request_checkpoint') {
+        checkpointRequests++;
+        const now = Date.now();
+        if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
+          // Perform checkpoint
+          console.log(`\nPerforming database checkpoint (${checkpointRequests} requests pending)...`);
+          try {
+            const { execSync } = await import('child_process');
+            execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 300000 }); // 5 minute timeout
+            console.log('Database checkpoint completed successfully.');
+            lastCheckpointTime = now;
+            checkpointRequests = 0;
+          } catch (e) {
+            console.log(`Warning: database checkpoint failed: ${e.message}`);
           }
         }
       } else if (msg.type === 'error') {
