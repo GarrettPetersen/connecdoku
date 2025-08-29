@@ -212,15 +212,15 @@ async function getHashRange(db) {
         const now = Date.now();
         if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
           // Perform checkpoint
-          console.log(`\nPerforming database checkpoint (${checkpointRequests} requests pending)...`);
+          process.stderr.write(`\nCheckpointing DB (${checkpointRequests} requests)...`);
           try {
             const { execSync } = await import('child_process');
             execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 300000 }); // 5 minute timeout
-            console.log('Database checkpoint completed successfully.');
+            process.stderr.write(' ✓\n');
             lastCheckpointTime = now;
             checkpointRequests = 0;
           } catch (e) {
-            console.log(`Warning: database checkpoint failed: ${e.message}`);
+            process.stderr.write(` ✗ (${e.message})\n`);
           }
         }
       } else if (msg.type === 'error') {

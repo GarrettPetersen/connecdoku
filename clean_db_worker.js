@@ -59,7 +59,6 @@ async function ensureWriter() {
   // Add a small delay to stagger writer initializations and reduce database contention
   await delay(WID * 100); // Stagger by worker ID
 
-  console.error(`W${WID}: Initializing Rust writer...`);
   writer = spawn(writerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
   wrl = (await import('readline')).createInterface({ input: writer.stdout });
   wrl.on('line', line => { wqueue.push(line); if (wwaitResolve) { const r = wwaitResolve; wwaitResolve = null; r(); } });
@@ -67,7 +66,6 @@ async function ensureWriter() {
   const line = await readWriterLineWithTimeout(180000); // 3 minute timeout for init
   let msg; try { msg = JSON.parse(line); } catch { throw new Error('Invalid writer init: ' + line); }
   if (msg.type !== 'Ready') throw new Error('Writer failed to init: ' + line);
-  console.error(`W${WID}: Rust writer initialized successfully`);
 }
 async function readWriterLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
   if (wqueue.length) return wqueue.shift();
@@ -173,21 +171,18 @@ parentPort.on('message', async msg => {
             invalidCount++; invalidDelta++;
           }
           processed++;
-          if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
-            console.error(`W${WID}: Mid-chunk flush - ${invalid.length} invalid, ${scoreUpdates.length} score updates`);
+                    if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
             const res = await performWriteBatchRust(invalid, scoreUpdates);
             if (!res.ok) {
-              console.error(`W${WID}: Mid-chunk flush failed: ${res.error}`);
               parentPort.postMessage({ type: 'fatal_write', id: WID, idx: job.idx, error: res.error || 'unknown write failure' });
               return;
             }
             const deletedNow = res.deleted || 0;
             if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
-            console.error(`W${WID}: Mid-chunk flush completed - deleted ${deletedNow} puzzles`);
             invalid = [];
             scoreUpdates = [];
             
-            // Signal main thread that we need a checkpoint
+            // Signal main thread that we need a checkpoint (silently)
             parentPort.postMessage({ type: 'request_checkpoint', id: WID });
             
             await delay(10);
@@ -204,7 +199,6 @@ parentPort.on('message', async msg => {
 
       // Final flush
       if (invalid.length > 0 || scoreUpdates.length > 0) {
-        console.error(`W${WID}: Final flush - ${invalid.length} invalid, ${scoreUpdates.length} score updates`);
         // Actually delete invalid puzzles and update scores
         const res = await performWriteBatchRust(invalid, scoreUpdates);
         if (!res.ok) {
@@ -213,9 +207,8 @@ parentPort.on('message', async msg => {
         }
         const deletedNow = res.deleted || 0;
         if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
-        console.error(`W${WID}: Final flush completed - deleted ${deletedNow} puzzles`);
         
-        // Signal main thread for final checkpoint
+        // Signal main thread for final checkpoint (silently)
         parentPort.postMessage({ type: 'request_checkpoint', id: WID });
       }
       // no node-sqlite connection used
