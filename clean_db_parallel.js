@@ -213,11 +213,11 @@ async function getHashRange(db) {
         if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
           // Perform checkpoint
           process.stderr.write(`\nCheckpointing DB (${checkpointRequests} requests)...`);
+          lastCheckpointTime = now; // Update immediately to prevent overlapping attempts
           try {
             const { execSync } = await import('child_process');
             execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 300000 }); // 5 minute timeout
             process.stderr.write(' ✓\n');
-            lastCheckpointTime = now;
             checkpointRequests = 0;
           } catch (e) {
             process.stderr.write(` ✗ (${e.message})\n`);
@@ -273,6 +273,28 @@ async function getHashRange(db) {
       }
     });
   }
+
+  // Set up periodic checkpointing
+  const checkpointTimer = setInterval(async () => {
+    const now = Date.now();
+    if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
+      process.stderr.write(`\nPeriodic checkpoint (${checkpointRequests} requests pending)...`);
+      lastCheckpointTime = now; // Update immediately to prevent overlapping attempts
+      try {
+        const { execSync } = await import('child_process');
+        execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 300000 }); // 5 minute timeout
+        process.stderr.write(' ✓\n');
+        checkpointRequests = 0;
+      } catch (e) {
+        process.stderr.write(` ✗ (${e.message})\n`);
+      }
+    }
+  }, 30000); // Check every 30 seconds
+
+  // Clean up timer on exit
+  process.on('exit', () => {
+    clearInterval(checkpointTimer);
+  });
 
   // No custom SIGINT handler; allow Node's default behavior
 })();
