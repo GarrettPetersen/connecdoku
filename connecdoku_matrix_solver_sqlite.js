@@ -369,6 +369,8 @@ if (isMainThread) {
   const insertQueue = [];
   let inserting = false;
   const BATCH_SIZE_MAIN = 99; // 10 placeholders/row => 990 < 999
+  let lastCheckpointTime = 0;
+  const CHECKPOINT_INTERVAL = 60000; // 1 minute between checkpoints
   const runWithRetryMain = async (fn, attempts = 5) => {
     for (let i = 0; i < attempts; i++) {
       try { await fn(); return; } catch (e) { await new Promise(r => setTimeout(r, 50 + Math.random()*200)); }
@@ -401,6 +403,25 @@ if (isMainThread) {
       }
       // Acknowledge to the worker that its batch is done (provides backpressure)
       try { const w = workers[sourceId]; if (w) w.postMessage({ type: 'batch_done', reqId, inserted: insertedForItem }); } catch {}
+      
+      // Checkpoint periodically to prevent WAL buildup
+      const now = Date.now();
+      if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
+        console.log('Performing database checkpoint to prevent WAL buildup...');
+        try {
+          db.run("PRAGMA wal_checkpoint(TRUNCATE)", function(err) {
+            if (err) {
+              console.error('Checkpoint error:', err);
+            } else {
+              console.log('Database checkpoint completed successfully.');
+              lastCheckpointTime = now;
+            }
+          });
+        } catch (e) {
+          console.error('Checkpoint failed:', e.message);
+        }
+      }
+      
       redraw();
     }
     inserting = false;
@@ -526,6 +547,20 @@ if (isMainThread) {
               const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
               const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
               console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
+              
+              // Final checkpoint to ensure all changes are applied
+              console.log('Performing final database checkpoint...');
+              try {
+                db.run("PRAGMA wal_checkpoint(TRUNCATE)", function(err) {
+                  if (err) {
+                    console.error('Final checkpoint error:', err);
+                  } else {
+                    console.log('Final database checkpoint completed successfully.');
+                  }
+                });
+              } catch (e) {
+                console.error('Final checkpoint failed:', e.message);
+              }
 
               // Run database cleanup
               // Post-run data updater
