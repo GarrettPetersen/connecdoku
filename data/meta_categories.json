@@ -37,6 +37,7 @@
     "Ends with 066",
     "Ends with 2 U",
     "Ends with 2PM",
+    "Ends with 380",
     "Ends with 451",
     "Ends with 626",
     "Ends with 747",
@@ -1827,6 +1828,7 @@
     "Starts with IBM",
     "Starts with ICE",
     "Starts with ICH",
+    "Starts with ICO",
     "Starts with IDA",
     "Starts with IDE",
     "Starts with IF ",
@@ -3993,6 +3995,7 @@
   ],
   "Manufacturers": [
     "Manufactured by Aichi",
+    "Manufactured by Airbus",
     "Manufactured by Avro",
     "Manufactured by BAC/Aerospatiale",
     "Manufactured by Boeing",

@@ -334,6 +334,7 @@
     "The Three-Body Problem"
   ],
   "2007": [
+    "Airbus A380",
     "Death Proof",
     "Hairspray",
     "Harry Potter and the Deathly Hallows",
@@ -495,6 +496,7 @@
     "Avatar: The Way of Water",
     "Elden Ring",
     "Everything Everywhere All at Once",
+    "Icon of the Seas",
     "The Russian Invasion of Ukraine",
     "USS John Lewis"
   ],
@@ -2078,6 +2080,7 @@
     "9/11",
     "A Beautiful Mind",
     "Agent 47",
+    "Airbus A380",
     "All You Need Is Kill",
     "Andrea Bocelli",
     "Attack of the Clones",
@@ -2308,6 +2311,7 @@
     "Drake",
     "Elden Ring",
     "Everything Everywhere All at Once",
+    "Icon of the Seas",
     "In the Heights",
     "Justin Bieber",
     "Leo",
@@ -3168,6 +3172,7 @@
     "A Wrinkle in Time",
     "About Time",
     "Agent 47",
+    "Airbus A380",
     "All You Need Is Kill",
     "Among Us",
     "Andrea Bocelli",
@@ -3266,6 +3271,7 @@
     "House of Flying Daggers",
     "Ice Age",
     "Ichiro",
+    "Icon of the Seas",
     "In the Heights",
     "In the Mood for Love",
     "Inglourious Basterds",
@@ -3956,6 +3962,7 @@
   ],
   "Aircraft": [
     "747",
+    "Airbus A380",
     "Apache",
     "B-17",
     "B-29",
@@ -6917,6 +6924,7 @@
     "Conte di Savoia",
     "Costa Smeralda",
     "Harmony of the Seas",
+    "Icon of the Seas",
     "Lusitania",
     "MSC Meraviglia",
     "Mauretania",
@@ -7285,6 +7293,7 @@
   ],
   "Commercial Aircraft": [
     "747",
+    "Airbus A380",
     "Concorde",
     "DC-3"
   ],
@@ -8228,6 +8237,7 @@
     "Concordia",
     "Costa Smeralda",
     "Harmony of the Seas",
+    "Icon of the Seas",
     "MSC Meraviglia",
     "Norwegian Bliss",
     "Oasis of the Seas",
@@ -9710,6 +9720,9 @@
   "Ends with 2PM": [
     "2PM"
   ],
+  "Ends with 380": [
+    "Airbus A380"
+  ],
   "Ends with 451": [
     "Fahrenheit 451"
   ],
@@ -11010,6 +11023,7 @@
   "Ends with EAS": [
     "Anthem of the Seas",
     "Harmony of the Seas",
+    "Icon of the Seas",
     "Oasis of the Seas"
   ],
   "Ends with EAT": [
@@ -18988,11 +19002,13 @@
     "United States"
   ],
   "Largest of its Type": [
+    "Airbus A380",
     "Argentinosaurus",
     "Blue Whale",
     "Burj Khalifa",
     "Elephant",
     "Everest",
+    "Icon of the Seas",
     "Jupiter",
     "Komodo Dragon",
     "Ostrich",
@@ -19616,6 +19632,7 @@
     "Conte di Savoia",
     "Costa Smeralda",
     "Harmony of the Seas",
+    "Icon of the Seas",
     "MSC Meraviglia",
     "Mauretania",
     "Normandie",
@@ -19766,6 +19783,9 @@
   ],
   "Manufactured by Aichi": [
     "Val"
+  ],
+  "Manufactured by Airbus": [
+    "Airbus A380"
   ],
   "Manufactured by Avro": [
     "Lancaster"
@@ -28127,6 +28147,7 @@
   ],
   "Passenger Aircraft": [
     "747",
+    "Airbus A380",
     "DC-3"
   ],
   "Peace Treaties": [
@@ -31690,6 +31711,7 @@
   "Royal Caribbean": [
     "Anthem of the Seas",
     "Harmony of the Seas",
+    "Icon of the Seas",
     "Oasis of the Seas",
     "Odyssey",
     "Wonder"
@@ -32258,6 +32280,7 @@
     "Pirates of the Caribbean: Dead Men Tell No Tales",
     "Pirates of the Caribbean: On Stranger Tides",
     "Prince Caspian",
+    "Queen Elizabeth 2",
     "Queen Mary 2",
     "Red 2",
     "Return of the Jedi",
@@ -32408,6 +32431,7 @@
     "Hiryu",
     "Hood",
     "Hornet",
+    "Icon of the Seas",
     "Iris",
     "Kaga",
     "Los Angeles",
@@ -33120,7 +33144,8 @@
     "Aioli"
   ],
   "Starts with AIR": [
-    "Airbus"
+    "Airbus",
+    "Airbus A380"
   ],
   "Starts with AJI": [
     "Ajiaco"
@@ -35502,6 +35527,9 @@
   "Starts with ICH": [
     "Ichiro",
     "Ichthyosaurus"
+  ],
+  "Starts with ICO": [
+    "Icon of the Seas"
   ],
   "Starts with IDA": [
     "Ida Straus"
@@ -40048,6 +40076,7 @@
     "IT",
     "Ice Age",
     "Iced Tea",
+    "Icon of the Seas",
     "Ida Straus",
     "If the glove don't fit you must acquit",
     "In the Heights",
@@ -41263,6 +41292,7 @@
     "Absinthe",
     "Aioli",
     "Airbus",
+    "Airbus A380",
     "Baguette",
     "Battle of Agincourt",
     "Battle of Crécy",
@@ -42429,6 +42459,7 @@
   "Things That Fly": [
     "747",
     "Airbus",
+    "Airbus A380",
     "Albatross",
     "Angel",
     "Apache",
