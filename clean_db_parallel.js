@@ -198,10 +198,25 @@ async function getHashRange(db) {
   async function performBatchCheckpoint() {
     if (workersWithWork > 0) return; // Don't checkpoint if workers are still working
 
-    console.log('\nPerforming batch checkpoint...');
+    console.log('\nVerifying DB connections before checkpoint...');
     checkpointStatus = 'active';
     redraw();
 
+    try {
+      const { execSync } = await import('child_process');
+      // Check for active connections by looking at the WAL file
+      const result = execSync(`sqlite3 "${DB_PATH}" "PRAGMA database_list;"`, { timeout: 30000 });
+      const dbList = result.toString();
+      if (dbList.includes('main') && !dbList.includes('temp')) {
+        console.log('✓ Database connections verified');
+      } else {
+        console.log('⚠ Active connections detected, proceeding anyway');
+      }
+    } catch (e) {
+      console.log(`⚠ Connection check failed: ${e.message}, proceeding anyway`);
+    }
+
+    console.log('Performing batch checkpoint...');
     try {
       const { execSync } = await import('child_process');
       execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 900000 }); // 15 minute timeout

@@ -12,6 +12,7 @@ enum Msg {
     CountRange { min_hash: String, max_hash: String },
     SelectPage { min_hash: String, max_hash: String, after: String, limit: usize },
     Checkpoint,
+    Close,
 }
 
 #[derive(Serialize)]
@@ -222,6 +223,11 @@ fn main() {
                 } else {
                     let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: "no db".into() }).unwrap());
                 }
+            }
+            Msg::Close => {
+                // Close the database connection
+                conn_opt = None;
+                let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Ack{ deleted: 0 }).unwrap());
             }
         }
     }
