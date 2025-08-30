@@ -164,22 +164,69 @@ async function getHashRange(db) {
   const workers = [];
   let checkpointRequests = 0;
   let lastCheckpointTime = 0;
-  const CHECKPOINT_INTERVAL = 30000; // 30 seconds between checkpoints
   let checkpointStatus = 'idle'; // idle, active, success, failed
+  let workersWithWork = 0; // Track how many workers currently have work assigned
+  let batchComplete = false; // Track when current batch is done
+
+  // Function to assign work in batches to all available workers
+  async function assignBatchWork() {
+    batchComplete = false;
+    workersWithWork = 0;
+
+    // Assign work to all workers that are ready
+    for (let id = 0; id < nWorkers; id++) {
+      if (status[id].current === null) { // Worker is idle
+        const job = workQueue.shift();
+        if (job) {
+          status[id].current = { idx: job.idx, processed: 0, total: 1 };
+          workers[id].postMessage({ type: 'work', job });
+          workersWithWork++;
+        }
+      }
+    }
+
+    // If no work was assigned, we're done
+    if (workersWithWork === 0 && workQueue.length === 0) {
+      console.log('\nAll work completed!');
+      return false; // No more work to do
+    }
+
+    return true; // Work assigned, continue
+  }
+
+  // Function to perform batch checkpoint when all workers are idle
+  async function performBatchCheckpoint() {
+    if (workersWithWork > 0) return; // Don't checkpoint if workers are still working
+
+    console.log('\nPerforming batch checkpoint...');
+    checkpointStatus = 'active';
+    redraw();
+
+    try {
+      const { execSync } = await import('child_process');
+      execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 900000 }); // 15 minute timeout
+      checkpointStatus = 'success';
+      console.log('Batch checkpoint completed successfully.');
+    } catch (e) {
+      checkpointStatus = 'failed';
+      console.log(`Batch checkpoint failed: ${e.message}`);
+    }
+
+    redraw();
+    setTimeout(() => {
+      checkpointStatus = 'idle';
+      redraw();
+    }, 2000);
+  }
+
   // Write permits removed
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(new URL('./clean_db_worker.js', import.meta.url), { workerData: { id, DB_PATH, DATA_DIR, CAT_SCORES_F } });
     workers.push(w);
     w.on('message', async msg => {
       if (msg.type === 'ready') {
-        // Assign immediately if queue has work; otherwise ask worker to request
-        const job = workQueue.shift();
-        if (job) {
-          status[msg.id].current = { idx: job.idx, processed: 0, total: 1 };
-          w.postMessage({ type: 'work', job });
-        } else {
-          w.postMessage({ type: 'request_work' });
-        }
+        // In batch mode, wait for all workers to be ready before assigning work
+        w.postMessage({ type: 'wait_for_batch' });
       } else if (msg.type === 'request_write_permit' || msg.type === 'release_write_permit' || msg.type === 'cancel_write_permit_request') {
         // no-op; permits removed
       } else if (msg.type === 'tick') {
@@ -201,43 +248,29 @@ async function getHashRange(db) {
         if (shuttingDown) {
           w.postMessage({ type: 'cleanup' });
         } else {
-          const job = workQueue.shift();
-          if (job) {
-            status[msg.id].current = { idx: job.idx, processed: 0, total: 1 };
-            w.postMessage({ type: 'work', job });
-          } else {
+          // Worker finished a chunk, decrement counter
+          if (status[msg.id].current) {
+            workersWithWork--;
+            status[msg.id].current = null;
+          }
+
+          // Check if batch is complete (all workers idle)
+          if (workersWithWork === 0 && workQueue.length > 0) {
+            // All workers are done, perform checkpoint and start new batch
+            performBatchCheckpoint().then(() => {
+              assignBatchWork();
+            });
+          } else if (workersWithWork === 0 && workQueue.length === 0) {
+            // All work is done
             w.postMessage({ type: 'cleanup' });
+          } else {
+            // Still work in progress, wait
+            w.postMessage({ type: 'wait_for_batch' });
           }
         }
       } else if (msg.type === 'request_checkpoint') {
+        // In batch mode, checkpoints are handled automatically when batches complete
         checkpointRequests++;
-        const now = Date.now();
-        if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
-          // Perform PASSIVE checkpoint during active processing (doesn't block writers)
-          checkpointStatus = 'active';
-          redraw(); // Update progress bar to show checkpoint in progress
-          lastCheckpointTime = now; // Update immediately to prevent overlapping attempts
-          try {
-            const { execSync } = await import('child_process');
-            execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(PASSIVE);"`, { timeout: 300000 }); // 5 minute timeout
-            checkpointStatus = 'success';
-            checkpointRequests = 0;
-            redraw(); // Update progress bar to show success
-            // Reset status after a short delay
-            setTimeout(() => {
-              checkpointStatus = 'idle';
-              redraw();
-            }, 2000);
-          } catch (e) {
-            checkpointStatus = 'failed';
-            redraw(); // Update progress bar to show failure
-            // Reset status after a short delay
-            setTimeout(() => {
-              checkpointStatus = 'idle';
-              redraw();
-            }, 5000);
-          }
-        }
       } else if (msg.type === 'error') {
         // Log errors but don't interfere with progress display
         process.stderr.write(`\nW${msg.id} error: ${msg.message}\n`);
@@ -289,40 +322,13 @@ async function getHashRange(db) {
     });
   }
 
-  // Set up periodic checkpointing
-  const checkpointTimer = setInterval(async () => {
-    const now = Date.now();
-    if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
-      checkpointStatus = 'active';
-      redraw(); // Update progress bar to show checkpoint in progress
-      lastCheckpointTime = now; // Update immediately to prevent overlapping attempts
-      try {
-        const { execSync } = await import('child_process');
-        execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(PASSIVE);"`, { timeout: 300000 }); // 5 minute timeout
-        checkpointStatus = 'success';
-        checkpointRequests = 0;
-        redraw(); // Update progress bar to show success
-        // Reset status after a short delay
-        setTimeout(() => {
-          checkpointStatus = 'idle';
-          redraw();
-        }, 2000);
-      } catch (e) {
-        checkpointStatus = 'failed';
-        redraw(); // Update progress bar to show failure
-        // Reset status after a short delay
-        setTimeout(() => {
-          checkpointStatus = 'idle';
-          redraw();
-        }, 5000);
-      }
-    }
-  }, 30000); // Check every 30 seconds
+  // No periodic checkpoints in batch mode - checkpoints happen between batches
 
-  // Clean up timer on exit
-  process.on('exit', () => {
-    clearInterval(checkpointTimer);
-  });
+  // Initial batch assignment after all workers are ready
+  setTimeout(async () => {
+    console.log('\nStarting batch processing...');
+    await assignBatchWork();
+  }, 1000); // Give workers time to initialize
 
   // No custom SIGINT handler; allow Node's default behavior
 })();
