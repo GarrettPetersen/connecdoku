@@ -93,6 +93,9 @@ function setupDb() {
 parentPort.on('message', async msg => {
   if (msg.type === 'request_work') {
     parentPort.postMessage({ type: 'request_work', id: WID });
+  } else if (msg.type === 'wait_for_batch') {
+    // Worker is waiting for batch assignment, acknowledge and wait
+    parentPort.postMessage({ type: 'ready', id: WID });
   } else if (msg.type === 'work') {
     const { job } = msg;
     try {
@@ -171,7 +174,7 @@ parentPort.on('message', async msg => {
             invalidCount++; invalidDelta++;
           }
           processed++;
-                    if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
+          if (invalid.length >= FLUSH_THRESHOLD || scoreUpdates.length >= FLUSH_THRESHOLD) {
             const res = await performWriteBatchRust(invalid, scoreUpdates);
             if (!res.ok) {
               parentPort.postMessage({ type: 'fatal_write', id: WID, idx: job.idx, error: res.error || 'unknown write failure' });
@@ -181,10 +184,10 @@ parentPort.on('message', async msg => {
             if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
             invalid = [];
             scoreUpdates = [];
-            
+
             // Signal main thread that we need a checkpoint (silently)
             parentPort.postMessage({ type: 'request_checkpoint', id: WID });
-            
+
             await delay(10);
           }
           const now = Date.now();
@@ -207,7 +210,7 @@ parentPort.on('message', async msg => {
         }
         const deletedNow = res.deleted || 0;
         if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
-        
+
         // Signal main thread for final checkpoint (silently)
         parentPort.postMessage({ type: 'request_checkpoint', id: WID });
       }
