@@ -185,8 +185,7 @@ parentPort.on('message', async msg => {
             invalid = [];
             scoreUpdates = [];
 
-            // Signal main thread that we need a checkpoint (silently)
-            parentPort.postMessage({ type: 'request_checkpoint', id: WID });
+
 
             await delay(10);
           }
@@ -211,8 +210,7 @@ parentPort.on('message', async msg => {
         const deletedNow = res.deleted || 0;
         if (deletedNow && typeof deletedNow === 'number') { deletedCount += deletedNow; deletedDelta += deletedNow; }
 
-        // Signal main thread for final checkpoint (silently)
-        parentPort.postMessage({ type: 'request_checkpoint', id: WID });
+
       }
       // no node-sqlite connection used
       // Ensure any pending deltas are reported one last time prior to completion
@@ -226,13 +224,7 @@ parentPort.on('message', async msg => {
         console.error(`W${WID} chunk ${job.idx}: ${invalidCount} invalid found, ${deletedCount} deleted (diff: ${invalidCount - deletedCount})`);
         // Continue processing - this is not necessarily a fatal error
       }
-      // Close database connection between chunks to allow checkpoints to work
-      try {
-        writer.stdin.write(JSON.stringify({ type: 'Close' }) + '\n');
-        await readWriterLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
-      } catch (e) {
-        // Ignore close errors - connection will be re-established on next chunk
-      }
+
 
       // Send tally for this chunk before signaling done
       parentPort.postMessage({ type: 'tally', id: WID, idx: job.idx, tally: localTally });

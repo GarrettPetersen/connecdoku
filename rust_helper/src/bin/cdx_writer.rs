@@ -11,7 +11,6 @@ enum Msg {
     UpsertScores { items: Vec<(String, f64)> },
     CountRange { min_hash: String, max_hash: String },
     SelectPage { min_hash: String, max_hash: String, after: String, limit: usize },
-    Checkpoint,
     Close,
 }
 
@@ -72,9 +71,9 @@ fn main() {
                     rusqlite::Connection::open(db_path)
                 }).join() {
                     Ok(Ok(conn)) => {
-                        match conn.pragma_update(None, "journal_mode", &"WAL") {
+                        match conn.pragma_update(None, "journal_mode", &"DELETE") {
                             Ok(_) => {},
-                            Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("WAL pragma failed: {}", e)}).unwrap()); return; }
+                            Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("DELETE pragma failed: {}", e)}).unwrap()); return; }
                         }
                         match conn.pragma_update(None, "synchronous", &"OFF") {
                             Ok(_) => {},
@@ -206,20 +205,6 @@ fn main() {
                         rows_out.push(ro);
                     }
                     let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Rows{ rows: rows_out }).unwrap());
-                } else {
-                    let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: "no db".into() }).unwrap());
-                }
-            }
-            Msg::Checkpoint => {
-                if let Some(ref mut conn) = conn_opt {
-                    match conn.execute("PRAGMA wal_checkpoint(TRUNCATE)", ()) {
-                        Ok(_) => {
-                            let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Ack{ deleted: 0 }).unwrap());
-                        }
-                        Err(e) => {
-                            let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("checkpoint failed: {}", e)}).unwrap());
-                        }
-                    }
                 } else {
                     let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: "no db".into() }).unwrap());
                 }

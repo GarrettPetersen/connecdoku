@@ -145,7 +145,6 @@ async function getHashRange(db) {
     const lines = [];
     lines.push(`Overall: [${bar(pct)}] ${(pct * 100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
     lines.push(`Totals: valid=${totalValid}, invalid=${totalInvalid}, deleted=${totalDeleted}`);
-    lines.push(`Checkpoint: ${checkpointStatus} (${checkpointRequests} pending)`);
     status.forEach((st, i) => {
       const s = st.current;
       const base = s ? `chunk ${s.idx}: ${s.processed}/${s.total}` : 'idle';
@@ -162,62 +161,9 @@ async function getHashRange(db) {
 
   let active = nWorkers;
   const workers = [];
-  let checkpointRequests = 0;
-  let lastCheckpointTime = 0;
-  let checkpointStatus = 'idle'; // idle, active, success, failed
-  let workersWithWork = 0; // Track how many workers currently have work assigned
-  let batchComplete = false; // Track when current batch is done
 
-  // Function to assign work in batches to all available workers
-  async function assignBatchWork() {
-    batchComplete = false;
-    workersWithWork = 0;
 
-    // Assign work to all workers that are ready
-    for (let id = 0; id < nWorkers; id++) {
-      if (status[id].current === null) { // Worker is idle
-        const job = workQueue.shift();
-        if (job) {
-          status[id].current = { idx: job.idx, processed: 0, total: 1 };
-          workers[id].postMessage({ type: 'work', job });
-          workersWithWork++;
-        }
-      }
-    }
 
-    // If no work was assigned, we're done
-    if (workersWithWork === 0 && workQueue.length === 0) {
-      console.log('\nAll work completed!');
-      return false; // No more work to do
-    }
-
-    return true; // Work assigned, continue
-  }
-
-  // Function to perform batch checkpoint when all workers are idle
-  async function performBatchCheckpoint() {
-    if (workersWithWork > 0) return; // Don't checkpoint if workers are still working
-
-    console.log('\nPerforming batch checkpoint...');
-    checkpointStatus = 'active';
-    redraw();
-
-    try {
-      const { execSync } = await import('child_process');
-      execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 900000 }); // 15 minute timeout
-      checkpointStatus = 'success';
-      console.log('Batch checkpoint completed successfully.');
-    } catch (e) {
-      checkpointStatus = 'failed';
-      console.log(`Batch checkpoint failed: ${e.message}`);
-    }
-
-    redraw();
-    setTimeout(() => {
-      checkpointStatus = 'idle';
-      redraw();
-    }, 2000);
-  }
 
   // Write permits removed
   for (let id = 0; id < nWorkers; id++) {
@@ -225,8 +171,14 @@ async function getHashRange(db) {
     workers.push(w);
     w.on('message', async msg => {
       if (msg.type === 'ready') {
-        // In batch mode, wait for all workers to be ready before assigning work
-        w.postMessage({ type: 'wait_for_batch' });
+        // Worker is ready, assign work immediately
+        const job = workQueue.shift();
+        if (job) {
+          status[msg.id].current = { idx: job.idx, processed: 0, total: 1 };
+          w.postMessage({ type: 'work', job });
+        } else {
+          w.postMessage({ type: 'cleanup' });
+        }
       } else if (msg.type === 'request_write_permit' || msg.type === 'release_write_permit' || msg.type === 'cancel_write_permit_request') {
         // no-op; permits removed
       } else if (msg.type === 'tick') {
@@ -248,35 +200,14 @@ async function getHashRange(db) {
         if (shuttingDown) {
           w.postMessage({ type: 'cleanup' });
         } else {
-          // Worker finished a chunk, decrement counter
-          if (status[msg.id].current) {
-            workersWithWork--;
-            status[msg.id].current = null;
-          }
-
-          // Check if batch is complete (all workers idle)
-          if (workersWithWork === 0 && workQueue.length > 0) {
-            // All workers are done, perform checkpoint and start new batch
-            Promise.race([
-              performBatchCheckpoint(),
-              new Promise((_, reject) => setTimeout(() => reject(new Error('Checkpoint timeout')), 600000)) // 10 minute timeout
-            ]).then(() => {
-              assignBatchWork();
-            }).catch((e) => {
-              console.log(`Checkpoint failed or timed out: ${e.message}, continuing anyway`);
-              assignBatchWork();
-            });
-          } else if (workersWithWork === 0 && workQueue.length === 0) {
-            // All work is done
-            w.postMessage({ type: 'cleanup' });
+          const job = workQueue.shift();
+          if (job) {
+            status[msg.id].current = { idx: job.idx, processed: 0, total: 1 };
+            w.postMessage({ type: 'work', job });
           } else {
-            // Still work in progress, wait
-            w.postMessage({ type: 'wait_for_batch' });
+            w.postMessage({ type: 'cleanup' });
           }
         }
-      } else if (msg.type === 'request_checkpoint') {
-        // In batch mode, checkpoints are handled automatically when batches complete
-        checkpointRequests++;
       } else if (msg.type === 'error') {
         // Log errors but don't interfere with progress display
         process.stderr.write(`\nW${msg.id} error: ${msg.message}\n`);
@@ -309,16 +240,7 @@ async function getHashRange(db) {
             console.log(`Saved category tally to ${tallyOutputPath}`);
           } catch (e) { console.log('Warning: failed to save category tally:', e.message); }
 
-          // Checkpoint the database to prevent WAL file growth
-          console.log('Checkpointing database to clean up WAL file...');
-          try {
-            const { execSync } = await import('child_process');
-            execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 900000 }); // 15 minute timeout
-            console.log('Database checkpoint completed successfully.');
-          } catch (e) {
-            console.log(`Warning: database checkpoint failed: ${e.message}`);
-            console.log('You may need to run "sqlite3 puzzles.db PRAGMA wal_checkpoint(TRUNCATE);" manually.');
-          }
+
 
           // Ask workers to shutdown their native resources gracefully before exit
           for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch { } }
@@ -328,13 +250,7 @@ async function getHashRange(db) {
     });
   }
 
-  // No periodic checkpoints in batch mode - checkpoints happen between batches
 
-  // Initial batch assignment after all workers are ready
-  setTimeout(async () => {
-    console.log('\nStarting batch processing...');
-    await assignBatchWork();
-  }, 1000); // Give workers time to initialize
 
   // No custom SIGINT handler; allow Node's default behavior
 })();
