@@ -122,7 +122,7 @@ async function getHashRange(db) {
   const status = Array.from({ length: nWorkers }, () => ({ current: null, valid: 0, invalid: 0, deleted: 0 }));
   let reservedPrinted = false;
   let progressStarted = false;
-  const RESERVED_LINES = 3 + nWorkers; // overall + totals + per-worker + spacer
+  const RESERVED_LINES = 4 + nWorkers; // overall + totals + checkpoint status + per-worker + spacer
   console.log(`- Spawning ${nWorkers} worker(s)`);
   let shuttingDown = false;
   let sigintCount = 0;
@@ -145,6 +145,7 @@ async function getHashRange(db) {
     const lines = [];
     lines.push(`Overall: [${bar(pct)}] ${(pct * 100).toFixed(1)}% (${doneChunks}/${BATCH_COUNT})`);
     lines.push(`Totals: valid=${totalValid}, invalid=${totalInvalid}, deleted=${totalDeleted}`);
+    lines.push(`Checkpoint: ${checkpointStatus} (${checkpointRequests} pending)`);
     status.forEach((st, i) => {
       const s = st.current;
       const base = s ? `chunk ${s.idx}: ${s.processed}/${s.total}` : 'idle';
@@ -164,6 +165,7 @@ async function getHashRange(db) {
   let checkpointRequests = 0;
   let lastCheckpointTime = 0;
   const CHECKPOINT_INTERVAL = 30000; // 30 seconds between checkpoints
+  let checkpointStatus = 'idle'; // idle, active, success, failed
   // Write permits removed
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(new URL('./clean_db_worker.js', import.meta.url), { workerData: { id, DB_PATH, DATA_DIR, CAT_SCORES_F } });
@@ -211,16 +213,29 @@ async function getHashRange(db) {
         checkpointRequests++;
         const now = Date.now();
         if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
-          // Perform checkpoint
-          process.stderr.write(`\nCheckpointing DB (${checkpointRequests} requests)...`);
+          // Perform PASSIVE checkpoint during active processing (doesn't block writers)
+          checkpointStatus = 'active';
+          redraw(); // Update progress bar to show checkpoint in progress
           lastCheckpointTime = now; // Update immediately to prevent overlapping attempts
           try {
             const { execSync } = await import('child_process');
-            execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 300000 }); // 5 minute timeout
-            process.stderr.write(' ✓\n');
+            execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(PASSIVE);"`, { timeout: 300000 }); // 5 minute timeout
+            checkpointStatus = 'success';
             checkpointRequests = 0;
+            redraw(); // Update progress bar to show success
+            // Reset status after a short delay
+            setTimeout(() => {
+              checkpointStatus = 'idle';
+              redraw();
+            }, 2000);
           } catch (e) {
-            process.stderr.write(` ✗ (${e.message})\n`);
+            checkpointStatus = 'failed';
+            redraw(); // Update progress bar to show failure
+            // Reset status after a short delay
+            setTimeout(() => {
+              checkpointStatus = 'idle';
+              redraw();
+            }, 5000);
           }
         }
       } else if (msg.type === 'error') {
@@ -278,15 +293,28 @@ async function getHashRange(db) {
   const checkpointTimer = setInterval(async () => {
     const now = Date.now();
     if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
-      process.stderr.write(`\nPeriodic checkpoint (${checkpointRequests} requests pending)...`);
+      checkpointStatus = 'active';
+      redraw(); // Update progress bar to show checkpoint in progress
       lastCheckpointTime = now; // Update immediately to prevent overlapping attempts
       try {
         const { execSync } = await import('child_process');
-        execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(TRUNCATE);"`, { timeout: 300000 }); // 5 minute timeout
-        process.stderr.write(' ✓\n');
+        execSync(`sqlite3 "${DB_PATH}" "PRAGMA wal_checkpoint(PASSIVE);"`, { timeout: 300000 }); // 5 minute timeout
+        checkpointStatus = 'success';
         checkpointRequests = 0;
+        redraw(); // Update progress bar to show success
+        // Reset status after a short delay
+        setTimeout(() => {
+          checkpointStatus = 'idle';
+          redraw();
+        }, 2000);
       } catch (e) {
-        process.stderr.write(` ✗ (${e.message})\n`);
+        checkpointStatus = 'failed';
+        redraw(); // Update progress bar to show failure
+        // Reset status after a short delay
+        setTimeout(() => {
+          checkpointStatus = 'idle';
+          redraw();
+        }, 5000);
       }
     }
   }, 30000); // Check every 30 seconds
