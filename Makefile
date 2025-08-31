@@ -105,6 +105,12 @@ checkpoint:
 	sqlite3 puzzles.db "PRAGMA wal_checkpoint(TRUNCATE);"
 	@echo "✓ Checkpoint completed"
 
+# Reclaim space after deletions (VACUUM)
+vacuum:
+	@echo "Reclaiming database space (VACUUM)..."
+	sqlite3 puzzles.db "VACUUM;"
+	@echo "✓ Database space reclaimed"
+
 # Show database file sizes
 db-size:
 	@echo "Database file sizes:"

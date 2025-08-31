@@ -240,7 +240,16 @@ async function getHashRange(db) {
             console.log(`Saved category tally to ${tallyOutputPath}`);
           } catch (e) { console.log('Warning: failed to save category tally:', e.message); }
 
-
+          // Reclaim database space after all deletions are complete
+          console.log('\nReclaiming database space (VACUUM)...');
+          try {
+            const { execSync } = await import('child_process');
+            execSync(`sqlite3 "${DB_PATH}" "VACUUM;"`, { timeout: 1800000 }); // 30 minute timeout
+            console.log('✓ Database space reclaimed successfully');
+          } catch (e) {
+            console.log(`Warning: VACUUM failed: ${e.message}`);
+            console.log('You may need to run "sqlite3 puzzles.db VACUUM;" manually.');
+          }
 
           // Ask workers to shutdown their native resources gracefully before exit
           for (const wk of workers) { try { wk.postMessage({ type: 'shutdown' }); } catch { } }
