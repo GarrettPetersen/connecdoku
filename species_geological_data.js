@@ -299,7 +299,6 @@ export const SPECIES_GEOLOGICAL_DATA = {
     "Dugong": [50, 0], // Sea cow origin, still living
     "Giraffe": [10, 0], // Recent origin, still living
     "Jaguar": [2, 0], // Recent origin, still living
-    "Koko": [0, 0], // Individual gorilla, no geological timeline
     "Komodo Dragon": [5, 0], // Recent origin, still living
     "Manatee": [50, 0], // Sea cow origin, still living
     "Monkey": [40, 0], // Primate origin, still living
