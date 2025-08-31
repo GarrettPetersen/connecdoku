@@ -59,13 +59,51 @@ async function ensureWriter() {
   // Add a small delay to stagger writer initializations and reduce database contention
   await delay(WID * 100); // Stagger by worker ID
 
-  writer = spawn(writerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
-  wrl = (await import('readline')).createInterface({ input: writer.stdout });
-  wrl.on('line', line => { wqueue.push(line); if (wwaitResolve) { const r = wwaitResolve; wwaitResolve = null; r(); } });
-  writer.stdin.write(JSON.stringify({ type: 'Init', db_path: DB_PATH }) + '\n');
-  const line = await readWriterLineWithTimeout(180000); // 3 minute timeout for init
-  let msg; try { msg = JSON.parse(line); } catch { throw new Error('Invalid writer init: ' + line); }
-  if (msg.type !== 'Ready') throw new Error('Writer failed to init: ' + line);
+  const MAX_INIT_RETRIES = 10;
+  let initRetries = 0;
+
+  while (initRetries < MAX_INIT_RETRIES) {
+    try {
+      writer = spawn(writerPath, [], { stdio: ['pipe', 'pipe', 'inherit'] });
+      wrl = (await import('readline')).createInterface({ input: writer.stdout });
+      wrl.on('line', line => { wqueue.push(line); if (wwaitResolve) { const r = wwaitResolve; wwaitResolve = null; r(); } });
+      writer.stdin.write(JSON.stringify({ type: 'Init', db_path: DB_PATH }) + '\n');
+      const line = await readWriterLineWithTimeout(180000); // 3 minute timeout for init
+      let msg; try { msg = JSON.parse(line); } catch { throw new Error('Invalid writer init: ' + line); }
+      if (msg.type !== 'Ready') throw new Error('Writer failed to init: ' + line);
+
+      // Success! Reset retries and return
+      initRetries = 0;
+      return;
+    } catch (e) {
+      initRetries++;
+      const errorMsg = e.message || String(e);
+
+      if (errorMsg.includes('database is locked')) {
+        // Database lock error - retry with exponential backoff
+        const delayMs = Math.min(1000 * Math.pow(2, initRetries), 30000); // Max 30 seconds
+        process.stderr.write(`W${WID} writer init failed (${initRetries}/${MAX_INIT_RETRIES}): database locked, retrying in ${delayMs}ms\n`);
+
+        // Clean up failed writer
+        if (writer) {
+          try { writer.kill(); } catch { }
+          writer = null;
+        }
+        if (wrl) {
+          try { wrl.close(); } catch { }
+          wrl = null;
+        }
+        wqueue = [];
+
+        await delay(delayMs);
+      } else {
+        // Non-lock error - fail immediately
+        throw e;
+      }
+    }
+  }
+
+  throw new Error(`Writer initialization failed after ${MAX_INIT_RETRIES} retries`);
 }
 async function readWriterLineWithTimeout(ms = RUST_RESPONSE_TIMEOUT_MS) {
   if (wqueue.length) return wqueue.shift();
@@ -258,7 +296,7 @@ parentPort.postMessage({ type: 'ready', id: WID });
 // performWriteBatch (Node sqlite) kept for fallback, but currently unused
 
 async function performWriteBatchRust(invalid, scoreUpdates) {
-  const MAX_ATTEMPTS = 3;
+  const MAX_ATTEMPTS = 5; // Increased from 3
   let lastError = null;
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
@@ -267,6 +305,14 @@ async function performWriteBatchRust(invalid, scoreUpdates) {
         writer.stdin.write(JSON.stringify({ type: 'Delete', hashes: invalid }) + '\n');
         const line = await readWriterLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
         let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (Delete): ' + line); }
+        if (resp.type === 'Error') {
+          if (resp.message && resp.message.includes('database is locked')) {
+            await ensureWriter(); // This will retry with backoff
+            attempt--; // Don't count this as a failed attempt
+            continue;
+          }
+          throw new Error(resp.message || 'Writer Delete failed');
+        }
         if (resp.type !== 'Ack') throw new Error('Writer Delete failed: ' + line);
         deletedCount = typeof resp.deleted === 'number' ? resp.deleted : 0;
       }
@@ -274,14 +320,30 @@ async function performWriteBatchRust(invalid, scoreUpdates) {
         writer.stdin.write(JSON.stringify({ type: 'UpsertScores', items: scoreUpdates.map(u => [u.hash, u.score]) }) + '\n');
         const line = await readWriterLineWithTimeout(RUST_RESPONSE_TIMEOUT_MS);
         let resp; try { resp = JSON.parse(line); } catch { throw new Error('Invalid JSON from writer (UpsertScores): ' + line); }
+        if (resp.type === 'Error') {
+          if (resp.message && resp.message.includes('database is locked')) {
+            await ensureWriter(); // This will retry with backoff
+            attempt--; // Don't count this as a failed attempt
+            continue;
+          }
+          throw new Error(resp.message || 'Writer UpsertScores failed');
+        }
         if (resp.type !== 'Ack') throw new Error('Writer UpsertScores failed: ' + line);
       }
       return { ok: true, deleted: deletedCount };
     } catch (e) {
       lastError = e && e.message ? e.message : String(e);
+      const errorMsg = lastError || String(e);
+
+      if (errorMsg.includes('database is locked')) {
+        await ensureWriter(); // This will retry with backoff
+        attempt--; // Don't count this as a failed attempt
+        continue;
+      }
+
       // Truncate long error messages
       const truncatedError = lastError.length > 100 ? lastError.substring(0, 100) + '...' : lastError;
-      console.error(`W${WID} write batch attempt ${attempt} failed:`, truncatedError);
+      process.stderr.write(`W${WID} write batch attempt ${attempt} failed: ${truncatedError}\n`);
       // small backoff
       await delay(50 * attempt);
     }
