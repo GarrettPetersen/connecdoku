@@ -244,7 +244,7 @@ async function getHashRange(db) {
           console.log('\nReclaiming database space (VACUUM)...');
           try {
             const { execSync } = await import('child_process');
-            execSync(`sqlite3 "${DB_PATH}" "VACUUM;"`, { timeout: 1800000 }); // 30 minute timeout
+            execSync(`sqlite3 "${DB_PATH}" "VACUUM;"`); // No timeout - let it run as long as needed
             console.log('✓ Database space reclaimed successfully');
           } catch (e) {
             console.log(`Warning: VACUUM failed: ${e.message}`);
