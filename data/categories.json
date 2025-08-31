@@ -522,7 +522,7 @@
     "William the Conqueror"
   ],
   "12th Century": [
-    "Genghis Khan",
+    "Huizong",
     "Jebe",
     "Philip",
     "Saladin",
@@ -667,7 +667,11 @@
   ],
   "1620s": [
     "Bohemian Revolt",
+    "John Evelyn",
     "Mayflower"
+  ],
+  "1660s": [
+    "Samuel Pepys"
   ],
   "16th Century": [
     "A Midsummer Night's Dream",
@@ -723,8 +727,14 @@
     "To be or not to be",
     "Twelfth Night"
   ],
+  "1700s": [
+    "Samuel Johnson"
+  ],
   "1710s": [
     "Puckle Gun"
+  ],
+  "1740s": [
+    "James Boswell"
   ],
   "1770s": [
     "Give me liberty or give me death"
@@ -758,6 +768,7 @@
     "Handel",
     "I think, therefore I am",
     "James",
+    "John Evelyn",
     "Kepler",
     "King Lear",
     "L'etat c'est moi",
@@ -772,6 +783,7 @@
     "Remember, remember",
     "Robert Catesby",
     "Salem",
+    "Samuel Pepys",
     "Second Defenestration of Prague",
     "Shakespeare",
     "Sébastien Le Prestre de Vauban",
@@ -926,6 +938,7 @@
     "Frederick the Great",
     "Give me liberty or give me death",
     "Handel",
+    "James Boswell",
     "Jefferson",
     "John Wesley",
     "Laki Eruption",
@@ -936,6 +949,7 @@
     "Newton",
     "Philip",
     "Puckle Gun",
+    "Samuel Johnson",
     "Solitaire",
     "The American Revolution",
     "The British Empire",
@@ -1036,6 +1050,7 @@
     "The Sound and the Fury",
     "The Sun Also Rises",
     "The Wall Street Crash",
+    "Virginia Woolf",
     "Volvo",
     "Wilson",
     "Winnie-the-Pooh"
@@ -1087,6 +1102,7 @@
     "The Wizard of Oz",
     "Toyota",
     "Triumph of the Will",
+    "Virginia Woolf",
     "Volkswagen",
     "Wildcat",
     "Zero"
@@ -1095,6 +1111,7 @@
     "1984",
     "Adolf Eichmann",
     "Animal Farm",
+    "Anne Frank",
     "B-17",
     "B-29",
     "Bikini",
@@ -1263,6 +1280,7 @@
     "Subaru",
     "Suez Crisis",
     "Sugar Ray",
+    "Sylvia Plath",
     "Syngman Rhee",
     "Television",
     "Thalidomide Scandal",
@@ -1395,6 +1413,7 @@
     "South Korea",
     "Spartacus",
     "Stranger in a Strange Land",
+    "Sylvia Plath",
     "Syngman Rhee",
     "Tanganyika",
     "The Apollo Program",
@@ -2365,6 +2384,7 @@
     "Andrea Doria",
     "Angel",
     "Animal Farm",
+    "Anne Frank",
     "Anne of Green Gables",
     "Annie",
     "Annie Hall",
@@ -2927,6 +2947,7 @@
     "Superman",
     "Superstition",
     "Sweet Child O' Mine",
+    "Sylvia Plath",
     "Syngman Rhee",
     "Taft",
     "Tanaka",
@@ -3118,6 +3139,7 @@
     "Velma",
     "Venom",
     "Violet",
+    "Virginia Woolf",
     "Volcano",
     "Volkswagen",
     "Volvo",
@@ -3634,7 +3656,8 @@
     "Ali ibn Abi Talib",
     "Huineng",
     "July 2nd, 626",
-    "Muhammad"
+    "Muhammad",
+    "Wu Zetian"
   ],
   "8th Century": [
     "Charlemagne",
@@ -4785,6 +4808,9 @@
   ],
   "Archaeopterygids": [
     "Archaeopteryx"
+  ],
+  "Archdukes": [
+    "Archduke Franz Ferdinand"
   ],
   "Archipelagos": [
     "Aland",
@@ -6456,6 +6482,9 @@
     "Styracosaurus",
     "Triceratops"
   ],
+  "Chancellors": [
+    "Bismarck"
+  ],
   "Charles Darwin": [
     "Beagle"
   ],
@@ -6520,6 +6549,15 @@
     "Tang",
     "Xia",
     "Yuan"
+  ],
+  "Chinese Emperors": [
+    "Emperor Wu of Han",
+    "Huizong",
+    "Kublai Khan",
+    "Li Shimin",
+    "Qin Shi Huang",
+    "Wu Zetian",
+    "Zhu Yuanzhang"
   ],
   "Chocolate Bars": [
     "Bounty",
@@ -9580,15 +9618,19 @@
     "Claudius",
     "Commodus",
     "Constantine the Great",
+    "Emperor Wu of Han",
     "Hadrian",
-    "Li Jiancheng",
+    "Huizong",
+    "Kublai Khan",
     "Li Shimin",
-    "Li Yuanji",
     "Marcus Aurelius",
     "Nero",
+    "Qin Shi Huang",
     "Tiberius",
     "Trajan",
-    "Vespasian"
+    "Vespasian",
+    "Wu Zetian",
+    "Zhu Yuanzhang"
   ],
   "Empire Building": [
     "The British Empire",
@@ -10112,6 +10154,7 @@
     "Ohtani"
   ],
   "Ends with ANK": [
+    "Anne Frank",
     "Rank"
   ],
   "Ends with ANN": [
@@ -10333,6 +10376,7 @@
   "Ends with ATH": [
     "Give me liberty or give me death",
     "Goliath",
+    "Sylvia Plath",
     "The Black Death",
     "The Grapes of Wrath"
   ],
@@ -11181,6 +11225,7 @@
     "Elizabeth Blackwell",
     "Godspell",
     "Hell",
+    "James Boswell",
     "Spell"
   ],
   "Ends with ELO": [
@@ -11848,7 +11893,8 @@
     "Marvin the Martian",
     "Prince Caspian",
     "The Plague of Justinian",
-    "Vespasian"
+    "Vespasian",
+    "Wu Zetian"
   ],
   "Ends with IAR": [
     "Caviar"
@@ -12944,6 +12990,9 @@
   "Ends with LVO": [
     "Volvo"
   ],
+  "Ends with LYN": [
+    "John Evelyn"
+  ],
   "Ends with LÁH": [
     "Baháʼu'lláh"
   ],
@@ -13641,6 +13690,7 @@
   "Ends with OLF": [
     "Dire Wolf",
     "Golf",
+    "Virginia Woolf",
     "Wolf"
   ],
   "Ends with OLI": [
@@ -13721,6 +13771,7 @@
   "Ends with ONG": [
     "Donkey Kong",
     "Dugong",
+    "Huizong",
     "King Kong",
     "Louis Armstrong",
     "Ping Pong",
@@ -14118,6 +14169,9 @@
   ],
   "Ends with PVC": [
     "PVC"
+  ],
+  "Ends with PYS": [
+    "Samuel Pepys"
   ],
   "Ends with Q84": [
     "1Q84"
@@ -14721,6 +14775,7 @@
     "Johnson",
     "Madison",
     "Nicole Brown Simpson",
+    "Samuel Johnson",
     "Thomas Edison",
     "Wilson"
   ],
@@ -16321,6 +16376,16 @@
     "Harambe",
     "Koko"
   ],
+  "Famous Diarists": [
+    "Anne Frank",
+    "James Boswell",
+    "John Evelyn",
+    "Marcus Aurelius",
+    "Samuel Johnson",
+    "Samuel Pepys",
+    "Sylvia Plath",
+    "Virginia Woolf"
+  ],
   "Famous Quotes": [
     "All the world's a stage",
     "Ask not what your country can do for you",
@@ -17710,6 +17775,11 @@
     "Ruby",
     "Sapphire"
   ],
+  "General Secretaries": [
+    "Joseph Stalin",
+    "Krushchev",
+    "Malenkov"
+  ],
   "Genocides": [
     "The Armenian Genocide",
     "The Cambodian Genocide",
@@ -17804,6 +17874,7 @@
     "Qin Shi Huang",
     "Sargon of Akkad",
     "Suleiman the Magnificent",
+    "Temüjin",
     "Timur",
     "Trajan",
     "William the Conqueror"
@@ -18133,6 +18204,9 @@
   ],
   "Hockey Players": [
     "Wayne Gretzky"
+  ],
+  "Holocaust Victims": [
+    "Anne Frank"
   ],
   "Holocene Epoch": [
     "Albatross",
@@ -18915,6 +18989,16 @@
   "Katsuhiko Fujita": [
     "Fujita"
   ],
+  "Khans": [
+    "Batu Khan",
+    "Genghis Khan",
+    "Hulagu Khan",
+    "Möngke Khan",
+    "Temüjin",
+    "Timur",
+    "Tolui",
+    "Ögedei Khan"
+  ],
   "Kitchens": [
     "Galley"
   ],
@@ -19015,6 +19099,9 @@
     "Pacific Ocean",
     "Russia",
     "Sequoia"
+  ],
+  "Lawyers": [
+    "Roy Cohn"
   ],
   "Least Populous Countries (Bottom 10)": [
     "Dominica",
@@ -20019,6 +20106,7 @@
     "Edward III",
     "Good King Wenceslas",
     "Henry V",
+    "Huizong",
     "Joan of Arc",
     "John of Bohemia",
     "Li Bai",
@@ -20028,6 +20116,7 @@
     "Richard II",
     "The Black Prince",
     "William the Conqueror",
+    "Wu Zetian",
     "Zheng He",
     "Zhu Yuanzhang"
   ],
@@ -20035,10 +20124,12 @@
     "Charlemagne",
     "Count",
     "Duke",
+    "Huizong",
     "Khan",
     "King",
     "Tsar",
     "William the Conqueror",
+    "Wu Zetian",
     "Zhu Yuanzhang"
   ],
   "Meerkats": [
@@ -20207,6 +20298,7 @@
     "Hoover",
     "Hubble",
     "Huineng",
+    "Huizong",
     "Hulagu Khan",
     "Hulk",
     "Iceman",
@@ -20217,6 +20309,7 @@
     "Jack Kerouac",
     "Jackson",
     "James",
+    "James Boswell",
     "James the Less",
     "Jan Hus",
     "Jebe",
@@ -20229,6 +20322,7 @@
     "John Boyd",
     "John Calvin",
     "John Coltrane",
+    "John Evelyn",
     "John Jacob Astor",
     "John Knox",
     "John Wesley",
@@ -20370,6 +20464,8 @@
     "Sabretooth",
     "Saint Patrick",
     "Saladin",
+    "Samuel Johnson",
+    "Samuel Pepys",
     "Santayana",
     "Sargon of Akkad",
     "Scarface",
@@ -21395,14 +21491,23 @@
     "Washington",
     "Winston Churchill"
   ],
+  "Modernist Writers": [
+    "Virginia Woolf"
+  ],
   "Mollusks": [
     "Ammonites"
   ],
   "Monarchs": [
     "Akhenaten",
     "Alexander the Great",
+    "Anne Boleyn",
+    "Anne of Cleves",
     "Attila the Hun",
     "Babur",
+    "Catherine",
+    "Catherine Howard",
+    "Catherine Parr",
+    "Catherine of Aragon",
     "Chandragupta Maurya",
     "Charlemagne",
     "Charles IV",
@@ -21410,16 +21515,24 @@
     "Cyrus the Great",
     "Duke",
     "Edward III",
+    "Edward VI",
     "Elizabeth",
+    "Elizabeth I",
     "Frederick the Great",
     "Good King Wenceslas",
     "Gustavus Adolphus",
     "Henry V",
+    "Henry VII",
+    "Henry VIII",
+    "James",
+    "Jane Seymour",
     "John",
     "John of Bohemia",
     "King",
     "Kublai Khan",
+    "Lady Jane Grey",
     "Macbeth",
+    "Mary I",
     "Mehmed II",
     "Pharaoh",
     "Philip",
@@ -21435,6 +21548,7 @@
     "Timur",
     "Trajan",
     "Tsar",
+    "Victoria",
     "William the Conqueror"
   ],
   "Money Slang": [
@@ -26999,11 +27113,9 @@
     "Wellington"
   ],
   "National Leaders": [
-    "Abu Bakr",
     "Adams",
     "Akhenaten",
     "Alexander the Great",
-    "Ali ibn Abi Talib",
     "Anne Boleyn",
     "Anne of Cleves",
     "Archduke Franz Ferdinand",
@@ -27040,6 +27152,7 @@
     "Eisenhower",
     "Elizabeth",
     "Elizabeth I",
+    "Emperor Wu of Han",
     "Fillmore",
     "Ford",
     "Frederick the Great",
@@ -27056,8 +27169,8 @@
     "Henry V",
     "Henry VII",
     "Henry VIII",
-    "Hong Xiuquan",
     "Hoover",
+    "Huizong",
     "Hulagu Khan",
     "Jackson",
     "James",
@@ -27073,6 +27186,7 @@
     "Krushchev",
     "Kublai Khan",
     "Lady Jane Grey",
+    "Li Shimin",
     "Lincoln",
     "Macbeth",
     "Madison",
@@ -27083,7 +27197,6 @@
     "McKinley",
     "Mehmed II",
     "Monroe",
-    "Muhammad",
     "Möngke Khan",
     "Nasser",
     "Nero",
@@ -27100,7 +27213,6 @@
     "Reagan",
     "Richard II",
     "Roosevelt",
-    "Roy Cohn",
     "Saladin",
     "Sargon of Akkad",
     "Shaka Zulu",
@@ -27124,6 +27236,8 @@
     "Washington",
     "William the Conqueror",
     "Wilson",
+    "Wu Zetian",
+    "Zhu Yuanzhang",
     "Ögedei Khan"
   ],
   "Nautical Terms": [
@@ -27876,6 +27990,7 @@
   "Painters": [
     "Da Vinci",
     "Francisco Goya",
+    "Huizong",
     "Mary Cassatt",
     "Michelangelo",
     "Rosa Bonheur"
@@ -28176,6 +28291,7 @@
     "Anna",
     "Annabel",
     "Anne Boleyn",
+    "Anne Frank",
     "Anne of Cleves",
     "Anne of Green Gables",
     "Annie",
@@ -28370,6 +28486,7 @@
     "Hoover",
     "Hubble",
     "Huineng",
+    "Huizong",
     "Hulagu Khan",
     "Hulk",
     "Iceman",
@@ -28384,6 +28501,7 @@
     "Jack Kerouac",
     "Jackson",
     "James",
+    "James Boswell",
     "James the Less",
     "Jan Hus",
     "Jane Austen",
@@ -28401,6 +28519,7 @@
     "John Boyd",
     "John Calvin",
     "John Coltrane",
+    "John Evelyn",
     "John Jacob Astor",
     "John Knox",
     "John Wesley",
@@ -28567,6 +28686,8 @@
     "Sabretooth",
     "Saint Patrick",
     "Saladin",
+    "Samuel Johnson",
+    "Samuel Pepys",
     "Santa Maria",
     "Santayana",
     "Sarah Bernhardt",
@@ -28602,6 +28723,7 @@
     "Super Mario",
     "Superman",
     "Susan B. Anthony",
+    "Sylvia Plath",
     "Syngman Rhee",
     "Sébastien Le Prestre de Vauban",
     "Taft",
@@ -28653,6 +28775,7 @@
     "Victoria",
     "Victoria Woodhull",
     "Violet",
+    "Virginia Woolf",
     "Von Blucher",
     "Vulture",
     "Washington",
@@ -28669,6 +28792,7 @@
     "Wonder Woman",
     "Working Girl",
     "Wright Brothers",
+    "Wu Zetian",
     "Yojimbo",
     "Zhang Daoling",
     "Zheng He",
@@ -29982,7 +30106,8 @@
     "Homer",
     "Li Bai",
     "Poe",
-    "Shakespeare"
+    "Shakespeare",
+    "Sylvia Plath"
   ],
   "Political Events": [
     "10/7",
@@ -30226,10 +30351,20 @@
     "Nothing to fear but fear itself",
     "Tear down this wall"
   ],
+  "Presidents": [
+    "Juan Peron",
+    "Nasser",
+    "Syngman Rhee"
+  ],
   "Primates": [
     "Donkey Kong",
     "King Kong",
     "Plesiadapis"
+  ],
+  "Prime Ministers": [
+    "Begin",
+    "Castro",
+    "Sir John A. Macdonald"
   ],
   "Prince of Wales": [
     "The Black Prince"
@@ -30677,6 +30812,7 @@
     "Andrea Bocelli",
     "Andrew",
     "Anne Boleyn",
+    "Anne Frank",
     "Anne of Cleves",
     "Annie Oakley",
     "Archduke Franz Ferdinand",
@@ -30829,6 +30965,7 @@
     "Hoover",
     "Hubble",
     "Huineng",
+    "Huizong",
     "Hulagu Khan",
     "Ichiro",
     "Ida Straus",
@@ -30838,6 +30975,7 @@
     "Jack Kerouac",
     "Jackson",
     "James",
+    "James Boswell",
     "James the Less",
     "Jan Hus",
     "Jane Austen",
@@ -30853,6 +30991,7 @@
     "John Boyd",
     "John Calvin",
     "John Coltrane",
+    "John Evelyn",
     "John Jacob Astor",
     "John Knox",
     "John Wesley",
@@ -30979,6 +31118,8 @@
     "Ruth",
     "Saint Patrick",
     "Saladin",
+    "Samuel Johnson",
+    "Samuel Pepys",
     "Santa Maria",
     "Santayana",
     "Sarah Bernhardt",
@@ -31003,6 +31144,7 @@
     "Sun Myung Moon",
     "Sun Tzu",
     "Susan B. Anthony",
+    "Sylvia Plath",
     "Syngman Rhee",
     "Sébastien Le Prestre de Vauban",
     "Taft",
@@ -31037,6 +31179,7 @@
     "Vespasian",
     "Victoria",
     "Victoria Woodhull",
+    "Virginia Woolf",
     "Von Blucher",
     "Washington",
     "Wayne Gretzky",
@@ -31048,6 +31191,7 @@
     "Wilson",
     "Winston Churchill",
     "Wright Brothers",
+    "Wu Zetian",
     "Zhang Daoling",
     "Zheng He",
     "Zhiyi",
@@ -31536,6 +31680,25 @@
     "Pompeii",
     "Roma",
     "Rome"
+  ],
+  "Roman Consuls": [
+    "Pompey",
+    "Sulla"
+  ],
+  "Roman Emperors": [
+    "Augustus",
+    "Caesar",
+    "Caligula",
+    "Claudius",
+    "Commodus",
+    "Constantine the Great",
+    "Hadrian",
+    "Julius Caesar",
+    "Marcus Aurelius",
+    "Nero",
+    "Tiberius",
+    "Trajan",
+    "Vespasian"
   ],
   "Roman Empire": [
     "Arch of Titus",
@@ -32964,6 +33127,9 @@
   "Sports Terms": [
     "Overwatch"
   ],
+  "Stadtholders": [
+    "Maurice of Nassau"
+  ],
   "Star": [
     "Black Hole",
     "Milky Way",
@@ -33271,6 +33437,7 @@
     "Annapolis",
     "Annapurna",
     "Anne Boleyn",
+    "Anne Frank",
     "Anne of Cleves",
     "Anne of Green Gables",
     "Annie",
@@ -35456,7 +35623,8 @@
   ],
   "Starts with HUI": [
     "Hui Guo Rou",
-    "Huineng"
+    "Huineng",
+    "Huizong"
   ],
   "Starts with HUL": [
     "Hula Hoop",
@@ -35682,6 +35850,7 @@
   "Starts with JAM": [
     "Jamaica",
     "James",
+    "James Boswell",
     "James the Less"
   ],
   "Starts with JAN": [
@@ -35758,6 +35927,7 @@
     "John Boyd",
     "John Calvin",
     "John Coltrane",
+    "John Evelyn",
     "John Jacob Astor",
     "John Knox",
     "John Wesley",
@@ -37611,7 +37781,9 @@
     "Samarkand",
     "Samgyeopsal",
     "Sami",
-    "Samoa"
+    "Samoa",
+    "Samuel Johnson",
+    "Samuel Pepys"
   ],
   "Starts with SAN": [
     "San Antonio",
@@ -38102,7 +38274,8 @@
     "Sydney Opera House"
   ],
   "Starts with SYL": [
-    "Sylvester"
+    "Sylvester",
+    "Sylvia Plath"
   ],
   "Starts with SYN": [
     "Syngman Rhee"
@@ -38867,6 +39040,7 @@
   "Starts with VIR": [
     "Virgin",
     "Virginia",
+    "Virginia Woolf",
     "Virgo"
   ],
   "Starts with VOD": [
@@ -39013,6 +39187,9 @@
   ],
   "Starts with WRI": [
     "Wright Brothers"
+  ],
+  "Starts with WU ": [
+    "Wu Zetian"
   ],
   "Starts with WUT": [
     "Wuthering Heights"
@@ -39353,6 +39530,9 @@
     "The Wind Rises",
     "When Marnie Was There",
     "Whisper of the Heart"
+  ],
+  "Sultans": [
+    "Saladin"
   ],
   "Summer Olympic Sports": [
     "Archery",
@@ -40370,6 +40550,7 @@
     "Surfing",
     "Susan B. Anthony",
     "Swimming",
+    "Sylvia Plath",
     "Taft",
     "Tallahassee",
     "Tangled",
@@ -40803,11 +40984,13 @@
     "J.F.C. Fuller",
     "Jaguar",
     "James",
+    "James Boswell",
     "Jane Austen",
     "Jane Eyre",
     "Jane Seymour",
     "Jersey",
     "John",
+    "John Evelyn",
     "John Wesley",
     "Joseph Lister",
     "Julius Caesar",
@@ -40872,6 +41055,8 @@
     "Rowing",
     "Rugby",
     "Sailing",
+    "Samuel Johnson",
+    "Samuel Pepys",
     "Sark",
     "Scones",
     "Sense and Sensibility",
@@ -40958,6 +41143,7 @@
     "Victoria",
     "Victory",
     "Virgin",
+    "Virginia Woolf",
     "Walkabout",
     "Water, water everywhere",
     "We shall never surrender",
@@ -41123,6 +41309,7 @@
     "House of Flying Daggers",
     "Hui Guo Rou",
     "Huineng",
+    "Huizong",
     "In the Mood for Love",
     "Jiaozi",
     "Jing Ke",
@@ -41170,6 +41357,7 @@
     "Wang Mang Usurpation",
     "Water Margin",
     "Wonton",
+    "Wu Zetian",
     "Xiaolongbao",
     "Xuanwu Gate",
     "Yangtze River",
@@ -41234,6 +41422,7 @@
     "Dominican Republic"
   ],
   "Things Dutch": [
+    "Anne Frank",
     "Maurice of Nassau",
     "Netherlands",
     "Speed Skating"
@@ -41856,6 +42045,7 @@
     "Zero"
   ],
   "Things Jewish": [
+    "Anne Frank",
     "Baal Shem Tov",
     "Bagel",
     "Brisket",
@@ -43638,6 +43828,7 @@
     "Anna",
     "Annabel",
     "Anne Boleyn",
+    "Anne Frank",
     "Anne of Cleves",
     "Anne of Green Gables",
     "Annie",
@@ -43737,6 +43928,7 @@
     "Sophie, Duchess of Hohenberg",
     "Storm",
     "Susan B. Anthony",
+    "Sylvia Plath",
     "Teresa",
     "The Unsinkable Molly Brown",
     "Tosca",
@@ -43745,9 +43937,11 @@
     "Victoria",
     "Victoria Woodhull",
     "Violet",
+    "Virginia Woolf",
     "Witchblade",
     "Wonder Woman",
-    "Working Girl"
+    "Working Girl",
+    "Wu Zetian"
   ],
   "Wooden Objects": [
     "Bat",
@@ -43773,6 +43967,7 @@
   ],
   "World War II": [
     "Akagi",
+    "Anne Frank",
     "Ark Royal",
     "B-17",
     "B-29",
@@ -43830,6 +44025,7 @@
     "World War II"
   ],
   "Writers": [
+    "Anne Frank",
     "Aristotle",
     "Charlotte Brontë",
     "Confucius",
@@ -43842,14 +44038,20 @@
     "Homer",
     "J.F.C. Fuller",
     "Jack Kerouac",
+    "James Boswell",
     "Jane Austen",
+    "John Evelyn",
     "Li Bai",
     "Louisa May Alcott",
     "Mary Shelley",
     "Plato",
     "Poe",
+    "Samuel Johnson",
+    "Samuel Pepys",
     "Shakespeare",
     "Sun Tzu",
+    "Sylvia Plath",
+    "Virginia Woolf",
     "Winston Churchill"
   ],
   "Writing Instruments": [

@@ -486,7 +486,6 @@
     "Ends with AKR",
     "Founders of Religious Movements",
     "Men",
-    "National Leaders",
     "People",
     "Real People",
     "Religious Figures",
@@ -914,7 +913,6 @@
     "Ends with LIB",
     "Founders of Religious Movements",
     "Men",
-    "National Leaders",
     "People",
     "Real People",
     "Religious Figures",
@@ -1456,6 +1454,7 @@
     "16th Century",
     "Ends with EYN",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -1466,10 +1465,26 @@
     "Wives of Henry VIII",
     "Women"
   ],
+  "Anne Frank": [
+    "1940s",
+    "20th Century",
+    "Ends with ANK",
+    "Famous Diarists",
+    "Holocaust Victims",
+    "People",
+    "Real People",
+    "Starts with ANN",
+    "Things Dutch",
+    "Things Jewish",
+    "Women",
+    "World War II",
+    "Writers"
+  ],
   "Anne of Cleves": [
     "16th Century",
     "Ends with VES",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -1787,6 +1802,7 @@
     "Transitional Fossils"
   ],
   "Archduke Franz Ferdinand": [
+    "Archdukes",
     "Assassination of Archduke Franz Ferdinand",
     "Ends with AND",
     "Men",
@@ -2267,6 +2283,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Shakespeare",
     "Shakespeare Characters",
@@ -3310,6 +3327,7 @@
   "Batu Khan": [
     "13th Century",
     "Ends with HAN",
+    "Khans",
     "Men",
     "Military Leaders",
     "National Leaders",
@@ -3599,6 +3617,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Prime Ministers",
     "Real People",
     "Starts with BEG",
     "Things Israeli"
@@ -4150,6 +4169,7 @@
   "Bismarck": [
     "19th Century",
     "Battleships",
+    "Chancellors",
     "Cities",
     "Cities in North America",
     "Cities in USA",
@@ -5739,6 +5759,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Republic",
     "Salad Dressings",
     "Salads",
@@ -5824,6 +5845,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Starts with CAL",
     "Things Roman"
@@ -6395,6 +6417,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Prime Ministers",
     "Real People",
     "Starts with CAS",
     "Things Cuban"
@@ -6426,6 +6449,7 @@
     "18th Century",
     "Ends with INE",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -6438,6 +6462,7 @@
     "16th Century",
     "Ends with ARD",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -6452,6 +6477,7 @@
     "16th Century",
     "Ends with ARR",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -6466,6 +6492,7 @@
     "16th Century",
     "Ends with GON",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -7507,6 +7534,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Starts with CLA",
     "Things Roman"
@@ -7998,6 +8026,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Starts with COM",
     "Things Roman"
@@ -8166,6 +8195,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Starts with CON",
     "Things Roman"
@@ -10692,6 +10722,7 @@
     "Ends with  VI",
     "Men",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -10974,6 +11005,7 @@
     "16th Century",
     "Ends with H I",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -11095,9 +11127,12 @@
     "2nd Century BC",
     "Ancient Figures",
     "Ancient Rulers",
+    "Chinese Emperors",
+    "Emperors",
     "Ends with HAN",
     "Men",
     "Military Leaders",
+    "National Leaders",
     "People",
     "Real People",
     "Starts with EMP",
@@ -13139,10 +13174,10 @@
     "Things Chinese"
   ],
   "Genghis Khan": [
-    "12th Century",
     "13th Century",
     "Ends with HAN",
     "Great Conquerors",
+    "Khans",
     "Men",
     "Military Leaders",
     "National Leaders",
@@ -14484,6 +14519,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Starts with HAD",
     "Things Roman"
@@ -15326,6 +15362,7 @@
     "15th Century",
     "Ends with VII",
     "Men",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -15339,6 +15376,7 @@
     "Ends with III",
     "Men",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -15709,7 +15747,6 @@
     "Ends with UAN",
     "Founders of Religious Movements",
     "Men",
-    "National Leaders",
     "People",
     "Real People",
     "Religious Figures",
@@ -16046,6 +16083,21 @@
     "Starts with HUI",
     "Things Chinese"
   ],
+  "Huizong": [
+    "12th Century",
+    "Chinese Emperors",
+    "Emperors",
+    "Ends with ONG",
+    "Medieval Figures",
+    "Medieval Rulers",
+    "Men",
+    "National Leaders",
+    "Painters",
+    "People",
+    "Real People",
+    "Starts with HUI",
+    "Things Chinese"
+  ],
   "Hula Hoop": [
     "1960s",
     "20th Century",
@@ -16057,6 +16109,7 @@
   "Hulagu Khan": [
     "13th Century",
     "Ends with HAN",
+    "Khans",
     "Men",
     "Military Leaders",
     "National Leaders",
@@ -17203,6 +17256,7 @@
     "Ends with MES",
     "James Bond Characters",
     "Men",
+    "Monarchs",
     "NBA Players",
     "National Leaders",
     "People",
@@ -17212,6 +17266,18 @@
     "The Gunpowder Plot",
     "Things American",
     "Things British"
+  ],
+  "James Boswell": [
+    "1740s",
+    "18th Century",
+    "Ends with ELL",
+    "Famous Diarists",
+    "Men",
+    "People",
+    "Real People",
+    "Starts with JAM",
+    "Things British",
+    "Writers"
   ],
   "James the Less": [
     "1st Century",
@@ -17270,6 +17336,7 @@
     "16th Century",
     "Ends with OUR",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -17619,6 +17686,18 @@
     "Starts with JOH",
     "Things American"
   ],
+  "John Evelyn": [
+    "1620s",
+    "17th Century",
+    "Ends with LYN",
+    "Famous Diarists",
+    "Men",
+    "People",
+    "Real People",
+    "Starts with JOH",
+    "Things British",
+    "Writers"
+  ],
   "John Jacob Astor": [
     "1910s",
     "20th Century",
@@ -17823,6 +17902,7 @@
     "1950s",
     "20th Century",
     "Ends with LIN",
+    "General Secretaries",
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
@@ -17858,6 +17938,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Presidents",
     "Real People",
     "Starts with JUA",
     "Things Argentine"
@@ -17937,6 +18018,7 @@
     "People",
     "Plays",
     "Real People",
+    "Roman Emperors",
     "Roman Republic",
     "Shakespeare",
     "Shakespeare Characters",
@@ -18860,6 +18942,7 @@
     "1960s",
     "20th Century",
     "Ends with HEV",
+    "General Secretaries",
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
@@ -18875,6 +18958,8 @@
   ],
   "Kublai Khan": [
     "13th Century",
+    "Chinese Emperors",
+    "Emperors",
     "Ends with HAN",
     "Great Conquerors",
     "Men",
@@ -19119,6 +19204,7 @@
     "16th Century",
     "Ends with REY",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -19655,7 +19741,6 @@
     "Writers"
   ],
   "Li Jiancheng": [
-    "Emperors",
     "Ends with ENG",
     "Men",
     "People",
@@ -19665,9 +19750,11 @@
     "Xuanwu Gate Incident"
   ],
   "Li Shimin": [
+    "Chinese Emperors",
     "Emperors",
     "Ends with MIN",
     "Men",
+    "National Leaders",
     "People",
     "Real People",
     "Starts with LI ",
@@ -19675,7 +19762,6 @@
     "Xuanwu Gate Incident"
   ],
   "Li Yuanji": [
-    "Emperors",
     "Ends with NJI",
     "Men",
     "People",
@@ -20797,6 +20883,7 @@
     "20th Century",
     "Cold War",
     "Ends with KOV",
+    "General Secretaries",
     "Men",
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
@@ -21017,10 +21104,12 @@
     "Ancient Figures",
     "Emperors",
     "Ends with IUS",
+    "Famous Diarists",
     "Men",
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Starts with MAR",
     "Things Roman"
@@ -21234,6 +21323,7 @@
     "16th Century",
     "Ends with Y I",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Real People",
@@ -21429,6 +21519,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Stadtholders",
     "Starts with MAU",
     "Things Dutch"
   ],
@@ -22811,7 +22902,6 @@
     "Great Conquerors",
     "Men",
     "Military Leaders",
-    "National Leaders",
     "People",
     "Real People",
     "Religious Figures",
@@ -23003,6 +23093,7 @@
   "Möngke Khan": [
     "13th Century",
     "Ends with HAN",
+    "Khans",
     "Men",
     "Military Leaders",
     "National Leaders",
@@ -23171,6 +23262,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Presidents",
     "Real People",
     "Starts with NAS",
     "Things Egyptian"
@@ -23260,6 +23352,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Starts with NER",
     "Things Roman"
@@ -26456,6 +26549,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Consuls",
     "Roman Republic",
     "Starts with POM",
     "Things Roman"
@@ -27143,6 +27237,8 @@
   "Qin Shi Huang": [
     "3rd Century BC",
     "Ancient Figures",
+    "Chinese Emperors",
+    "Emperors",
     "Ends with ANG",
     "Great Conquerors",
     "Men",
@@ -28691,9 +28787,9 @@
     "1950s",
     "20th Century",
     "Ends with OHN",
+    "Lawyers",
     "Men",
     "Mentioned in We Didn't Start the Fire",
-    "National Leaders",
     "People",
     "Real People",
     "Starts with ROY",
@@ -29097,6 +29193,7 @@
     "Real People",
     "Royalty",
     "Starts with SAL",
+    "Sultans",
     "Things Egyptian"
   ],
   "Salem": [
@@ -29234,6 +29331,30 @@
     "Place Names",
     "Starts with SAM",
     "Things Samoan"
+  ],
+  "Samuel Johnson": [
+    "1700s",
+    "18th Century",
+    "Ends with SON",
+    "Famous Diarists",
+    "Men",
+    "People",
+    "Real People",
+    "Starts with SAM",
+    "Things British",
+    "Writers"
+  ],
+  "Samuel Pepys": [
+    "1660s",
+    "17th Century",
+    "Ends with PYS",
+    "Famous Diarists",
+    "Men",
+    "People",
+    "Real People",
+    "Starts with SAM",
+    "Things British",
+    "Writers"
   ],
   "San Antonio": [
     "Age of Sail",
@@ -30466,6 +30587,7 @@
     "Men",
     "National Leaders",
     "People",
+    "Prime Ministers",
     "Real People",
     "Starts with SIR",
     "Things Canadian"
@@ -31984,6 +32106,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Consuls",
     "Roman Republic",
     "Starts with SUL",
     "Things Roman"
@@ -32284,6 +32407,20 @@
     "Starts with SYL",
     "Warner Bros. Characters"
   ],
+  "Sylvia Plath": [
+    "1950s",
+    "1960s",
+    "20th Century",
+    "Ends with ATH",
+    "Famous Diarists",
+    "People",
+    "Poets",
+    "Real People",
+    "Starts with SYL",
+    "Things American",
+    "Women",
+    "Writers"
+  ],
   "Syngman Rhee": [
     "1940s",
     "1950s",
@@ -32294,6 +32431,7 @@
     "Mentioned in We Didn't Start the Fire",
     "National Leaders",
     "People",
+    "Presidents",
     "Real People",
     "Starts with SYN",
     "Things Korean"
@@ -32816,6 +32954,8 @@
   "Temüjin": [
     "12th Century",
     "Ends with JIN",
+    "Great Conquerors",
+    "Khans",
     "Men",
     "Military Leaders",
     "National Leaders",
@@ -37050,6 +37190,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Starts with TIB",
     "Things Roman"
@@ -37179,6 +37320,7 @@
     "15th Century",
     "Ends with MUR",
     "Great Conquerors",
+    "Khans",
     "Men",
     "Military Leaders",
     "Monarchs",
@@ -37404,6 +37546,7 @@
   "Tolui": [
     "13th Century",
     "Ends with LUI",
+    "Khans",
     "Men",
     "Military Leaders",
     "National Leaders",
@@ -37616,6 +37759,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Royalty",
     "Starts with TRA",
@@ -38793,6 +38937,7 @@
     "National Leaders",
     "People",
     "Real People",
+    "Roman Emperors",
     "Roman Empire",
     "Starts with VES",
     "Things Roman"
@@ -38835,6 +38980,7 @@
     "Islands",
     "Locations in North America",
     "Modern Rulers",
+    "Monarchs",
     "National Leaders",
     "People",
     "Place Names",
@@ -38927,6 +39073,20 @@
     "Place Names",
     "Starts with VIR",
     "US States"
+  ],
+  "Virginia Woolf": [
+    "1920s",
+    "1930s",
+    "20th Century",
+    "Ends with OLF",
+    "Famous Diarists",
+    "Modernist Writers",
+    "People",
+    "Real People",
+    "Starts with VIR",
+    "Things British",
+    "Women",
+    "Writers"
   ],
   "Virgo": [
     "Constellations",
@@ -40006,6 +40166,20 @@
     "Starts with WRI",
     "Things American"
   ],
+  "Wu Zetian": [
+    "7th Century",
+    "Chinese Emperors",
+    "Emperors",
+    "Ends with IAN",
+    "Medieval Figures",
+    "Medieval Rulers",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with WU ",
+    "Things Chinese",
+    "Women"
+  ],
   "Wuthering Heights": [
     "1840s",
     "19th Century",
@@ -40480,11 +40654,14 @@
   ],
   "Zhu Yuanzhang": [
     "14th Century",
+    "Chinese Emperors",
+    "Emperors",
     "Ends with ANG",
     "Medieval Figures",
     "Medieval Rulers",
     "Men",
     "Military Leaders",
+    "National Leaders",
     "People",
     "Real People",
     "Starts with ZHU",
@@ -40582,6 +40759,7 @@
   "Ögedei Khan": [
     "13th Century",
     "Ends with HAN",
+    "Khans",
     "Men",
     "Military Leaders",
     "National Leaders",
