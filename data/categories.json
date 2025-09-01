@@ -610,6 +610,7 @@
     "Charles V",
     "Dante",
     "Edward III",
+    "Florentine Banking Crisis",
     "Inferno",
     "John",
     "John of Bohemia",
@@ -617,7 +618,6 @@
     "Ming",
     "Philip",
     "Philip VI",
-    "Playing Cards",
     "Richard II",
     "Romance of the Three Kingdoms",
     "Siege of Calais",
@@ -3720,7 +3720,8 @@
     "The Odyssey"
   ],
   "9th Century": [
-    "Charlemagne"
+    "Charlemagne",
+    "Playing Cards"
   ],
   "ABBA": [
     "Dancing Queen",
@@ -9608,6 +9609,7 @@
     "Korea"
   ],
   "Economic Events": [
+    "Florentine Banking Crisis",
     "The Digital Revolution",
     "The Great Depression",
     "The Great Recession",
@@ -14847,6 +14849,7 @@
   "Ends with SIS": [
     "Coelophysis",
     "Congo Crisis",
+    "Florentine Banking Crisis",
     "Foreign Debt Crisis",
     "Homeless Veterans Crisis",
     "Meganeuropsis",
@@ -16038,6 +16041,7 @@
     "Fat Man",
     "First Defenestration of Prague",
     "First Triumvirate",
+    "Florentine Banking Crisis",
     "Forbidden City Construction",
     "Formation of Earth",
     "Formation of Himalayas",
@@ -16793,6 +16797,7 @@
     "Moby Dick",
     "Mothra",
     "Nala",
+    "Pegasus",
     "Petrie",
     "Pumbaa",
     "Rafiki",
@@ -18091,6 +18096,7 @@
     "Odyssey",
     "Oedipus Rex",
     "Paris",
+    "Pegasus",
     "Siren",
     "Troy"
   ],
@@ -18238,7 +18244,6 @@
     "Ground Sloth",
     "Horse",
     "Kentrosaurus",
-    "King Kong",
     "Lambeosaurus",
     "Littlefoot",
     "Mammoth",
@@ -35373,6 +35378,7 @@
   "Starts with FLO": [
     "Florence",
     "Florence Nightingale",
+    "Florentine Banking Crisis",
     "Florida"
   ],
   "Starts with FLU": [
@@ -40052,6 +40058,7 @@
     "Ma La Tang",
     "Mooncake",
     "Panda",
+    "Playing Cards",
     "Silk Road",
     "Sweet and Sour",
     "Tang Poetry",
@@ -41729,6 +41736,7 @@
     "Panda",
     "Peking Duck",
     "Ping Pong",
+    "Playing Cards",
     "Qin",
     "Qin Shi Huang",
     "Qing",
@@ -41955,7 +41963,6 @@
     "Peugeot",
     "Philip",
     "Philip VI",
-    "Playing Cards",
     "Profiterole",
     "Quiche",
     "Ratatouille",
@@ -42083,6 +42090,7 @@
     "Olympus",
     "Parthenon",
     "Pastitsio",
+    "Pegasus",
     "Philip II of Macedon",
     "Plato",
     "Rhodes",
@@ -42260,6 +42268,7 @@
     "Fettuccine",
     "Fiat",
     "Florence",
+    "Florentine Banking Crisis",
     "Focaccia",
     "Galileo",
     "Gelato",
@@ -42295,7 +42304,6 @@
     "Penne",
     "Pesto",
     "Pizza",
-    "Playing Cards",
     "Pompeii",
     "Princess Peach",
     "Prosecco",
@@ -43250,6 +43258,9 @@
     "Rhodesia",
     "Southern Rhodesia",
     "Zimbabwe"
+  ],
+  "Things that Fly": [
+    "Pegasus"
   ],
   "Three Kingdoms Period": [
     "Battle of Red Cliff",

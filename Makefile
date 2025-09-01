@@ -89,15 +89,18 @@ curator:
 	@echo "Running puzzle curator..."
 	node puzzle_curator_sqlite.js
 
-# Review specific puzzle (requires puzzle hash as argument)
+# Review specific puzzle (requires puzzle index as argument)
 review-puzzle:
-	@if [ -z "$(PUZZLE_HASH)" ]; then \
-		echo "Error: Please provide PUZZLE_HASH parameter"; \
-		echo "Usage: make review-puzzle PUZZLE_HASH=<hash>"; \
+	@if [ -z "$(INDEX)" ]; then \
+		echo "Error: Please provide INDEX parameter"; \
+		echo "Usage: make review-puzzle INDEX=<index>"; \
+		echo "Examples: make review-puzzle INDEX=-1 (last puzzle)"; \
+		echo "          make review-puzzle INDEX=0 (first puzzle)"; \
+		echo "          make review-puzzle INDEX=5 (sixth puzzle)"; \
 		exit 1; \
 	fi
-	@echo "Reviewing puzzle: $(PUZZLE_HASH)"
-	node review_puzzle.js $(PUZZLE_HASH)
+	@echo "Reviewing puzzle at index: $(INDEX)"
+	node review_puzzle.js $(INDEX)
 
 # Run WAL checkpoint to clean up database
 checkpoint:
