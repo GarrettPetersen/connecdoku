@@ -518,6 +518,7 @@
     "1066",
     "Avicenna",
     "Macbeth",
+    "Movable Type Printing",
     "Philip",
     "The First Crusade",
     "The Norman Conquest",
@@ -531,7 +532,8 @@
     "Philip",
     "Saladin",
     "Subutai",
-    "Temüjin"
+    "Temüjin",
+    "Yue Fei"
   ],
   "12th Century BC": [
     "The Bronze Age Collapse",
@@ -550,6 +552,7 @@
     "The Black Prince"
   ],
   "1360s": [
+    "Battle of Lake Poyang",
     "John of Bohemia",
     "Richard II",
     "The Black Prince",
@@ -565,6 +568,7 @@
     "Richard II"
   ],
   "13th Century": [
+    "Battle of Yamen",
     "Batu Khan",
     "Dante",
     "Genghis Khan",
@@ -574,6 +578,7 @@
     "Kublai Khan",
     "Longbow",
     "Marco Polo",
+    "Mongol Conquest of China",
     "Möngke Khan",
     "Old London Bridge",
     "Philip",
@@ -598,6 +603,7 @@
   ],
   "14th Century": [
     "Battle of Crécy",
+    "Battle of Lake Poyang",
     "Battle of Poitiers",
     "Battle of Sluys",
     "Charles IV",
@@ -630,6 +636,9 @@
   "14th Century BC": [
     "Akhenaten"
   ],
+  "1570s": [
+    "Battle of Lepanto"
+  ],
   "15th Century": [
     "Battle of Agincourt",
     "Christopher Columbus",
@@ -637,6 +646,7 @@
     "Da Vinci",
     "Ferdinand Magellan",
     "First Defenestration of Prague",
+    "Forbidden City Construction",
     "Guru Nanak",
     "Henry V",
     "Henry VII",
@@ -658,7 +668,8 @@
     "Timur",
     "Treaty of Troyes",
     "Vasco da Gama",
-    "Zheng He"
+    "Zheng He",
+    "Zheng He Voyages"
   ],
   "1600s": [
     "Guy Fawkes",
@@ -684,6 +695,7 @@
     "Anne of Cleves",
     "Aurora",
     "Babur",
+    "Battle of Lepanto",
     "Catherine Howard",
     "Catherine Parr",
     "Catherine of Aragon",
@@ -801,11 +813,14 @@
     "William Harvey"
   ],
   "1800s": [
-    "Francisco Goya"
+    "Battle of Trafalgar",
+    "Francisco Goya",
+    "Jean Bernadotte"
   ],
   "1810s": [
     "Francisco Goya",
     "Frankenstein",
+    "Jean Bernadotte",
     "June 18th, 1815",
     "La Garde meurt, elle ne se rend pas!",
     "Madison",
@@ -993,6 +1008,7 @@
     "Archibald Butt",
     "Aston Martin",
     "BMW",
+    "Battle of Jutland",
     "Bentley",
     "Boeing",
     "Captain Smith",
@@ -1864,6 +1880,7 @@
     "April 14th, 1865",
     "Arthur",
     "Baháʼu'lláh",
+    "Battle of Trafalgar",
     "Beethoven",
     "Bell",
     "Bismarck",
@@ -1924,6 +1941,7 @@
     "Jackson",
     "Jane Austen",
     "Jane Eyre",
+    "Jean Bernadotte",
     "Jefferson",
     "John Wilkes Booth",
     "Johnson",
@@ -2035,6 +2053,7 @@
     "Andrew",
     "Arch of Titus",
     "Augustus",
+    "Ban Zhao",
     "Bartholomew",
     "Caligula",
     "Cassius Chaerea",
@@ -2092,6 +2111,7 @@
     "Pompey",
     "Second Triumvirate",
     "Servilius Casca",
+    "Silk Road",
     "Spartacus",
     "Sulla",
     "The Roman Empire",
@@ -2415,6 +2435,7 @@
     "Batman",
     "Battle Beyond the Stars",
     "Battle of Dien Bien Phu",
+    "Battle of Jutland",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
     "Beast",
@@ -3552,13 +3573,15 @@
     "Syria Palaestina",
     "The Roman Empire",
     "Trajan",
-    "Zhang Daoling"
+    "Zhang Daoling",
+    "Zhang Heng"
   ],
   "2nd Century BC": [
     "Chu–Han Contention",
     "Emperor Wu of Han",
     "Gaius Marius",
-    "Han Wudi's Defeat of the Xiongnu"
+    "Han Wudi's Defeat of the Xiongnu",
+    "Silk Road"
   ],
   "3D Animated Films": [
     "A Bug's Life",
@@ -3600,24 +3623,32 @@
     "Zootopia"
   ],
   "3rd Century": [
+    "Battle of Red Cliff",
     "Bronze Bird Terrace",
+    "Cao Cao",
     "Guan Yu",
+    "Liu Bei",
     "Mani",
     "The Roman Empire"
   ],
   "3rd Century BC": [
     "Jing Ke",
+    "Li Si",
     "Qin",
-    "Qin Shi Huang"
+    "Qin Shi Huang",
+    "Terracotta Army"
   ],
   "4th Century": [
     "Constantine the Great",
-    "The Roman Empire"
+    "Tao Yuanming",
+    "The Roman Empire",
+    "Wang Xizhi"
   ],
   "4th Century BC": [
     "Alexander the Great",
     "Aristotle",
     "Chandragupta Maurya",
+    "Hundred Schools of Thought",
     "Philip II of Macedon",
     "Plato",
     "The Mahabharata"
@@ -3630,45 +3661,55 @@
     "The Sack of Rome"
   ],
   "5th Century BC": [
+    "Art of War",
     "Confucius",
     "Cyrus the Great",
     "Hippocrates",
+    "Hundred Schools of Thought",
     "Know thyself",
     "Oedipus Rex",
     "Plato",
     "Socrates",
+    "Spring and Autumn Annals",
     "Sun Tzu",
     "The Ramayana",
     "The unexamined life is not worth living"
   ],
   "6th Century": [
     "Bodhidharma",
+    "Emperor Yang of Sui",
     "Grand Canal",
     "Sui",
     "The Plague of Justinian",
     "Zhiyi"
   ],
   "6th Century BC": [
+    "Art of War",
     "Circus Maximus",
     "Cyrus the Great",
     "Laozi",
     "Siddhartha Gautama",
     "Sun Tzu",
+    "Tao Te Ching",
     "Zoroaster"
   ],
   "7th Century": [
     "Abu Bakr",
     "Ali ibn Abi Talib",
+    "Emperor Yang of Sui",
     "Grand Canal",
     "Huineng",
     "July 2nd, 626",
     "Muhammad",
+    "Tang Poetry",
     "Wu Zetian"
   ],
   "8th Century": [
+    "An Lushan Rebellion",
     "Charlemagne",
     "Du Fu",
-    "Li Bai"
+    "Li Bai",
+    "Tang Poetry"
   ],
   "8th Century BC": [
     "Homer",
@@ -4160,7 +4201,8 @@
     "Roman Forum",
     "Statue of Zeus",
     "Stonehenge",
-    "Temple of Artemis"
+    "Temple of Artemis",
+    "Terracotta Army"
   ],
   "Ancient Cities": [
     "Alexandria",
@@ -4195,9 +4237,11 @@
     "Alexander the Great",
     "Aristotle",
     "Augustus",
+    "Ban Zhao",
     "Brutus",
     "Caesar",
     "Caligula",
+    "Cao Cao",
     "Cassius",
     "Cassius Chaerea",
     "Cicero",
@@ -4210,6 +4254,8 @@
     "Hadrian",
     "Jing Ke",
     "Julius Caesar",
+    "Li Si",
+    "Liu Bei",
     "Marcus Aurelius",
     "Mark Antony",
     "Narcissus the Wrestler",
@@ -4223,13 +4269,17 @@
     "Spartacus",
     "Sulla",
     "Sun Tzu",
+    "Tao Yuanming",
     "Tiberius",
     "Trajan",
-    "Vespasian"
+    "Vespasian",
+    "Wang Xizhi",
+    "Zhang Heng"
   ],
   "Ancient Rulers": [
     "Cleopatra",
     "Emperor Wu of Han",
+    "Emperor Yang of Sui",
     "Ming",
     "Pharaoh",
     "Tsar"
@@ -5155,10 +5205,16 @@
     "Battle of Carrhae",
     "Battle of Crécy",
     "Battle of Dien Bien Phu",
+    "Battle of Jutland",
+    "Battle of Lake Poyang",
+    "Battle of Lepanto",
     "Battle of Pharsalus",
     "Battle of Philippi",
     "Battle of Poitiers",
+    "Battle of Red Cliff",
     "Battle of Sluys",
+    "Battle of Trafalgar",
+    "Battle of Yamen",
     "Battle of Zhizhi",
     "Gettysburg",
     "Siege of Calais",
@@ -5601,6 +5657,7 @@
     "All You Need Is Kill",
     "Animal Farm",
     "Anne of Green Gables",
+    "Art of War",
     "As I Lay Dying",
     "Ball Lightning",
     "Beloved",
@@ -5657,7 +5714,9 @@
     "Salem",
     "Salem's Lot",
     "Slaughterhouse-Five",
+    "Spring and Autumn Annals",
     "Stranger in a Strange Land",
+    "Tao Te Ching",
     "The Adventures of Tom Sawyer",
     "The Age of Innocence",
     "The Alchemist",
@@ -5854,6 +5913,7 @@
     "Sydney Opera House",
     "Taj Mahal",
     "Temple of Artemis",
+    "Terracotta Army",
     "Texas Book Depository",
     "Versailles",
     "Watergate",
@@ -6559,6 +6619,7 @@
   ],
   "Chinese Emperors": [
     "Emperor Wu of Han",
+    "Emperor Yang of Sui",
     "Huizong",
     "Kublai Khan",
     "Li Shimin",
@@ -7021,6 +7082,7 @@
     "Alice's Adventures in Wonderland",
     "Animal Farm",
     "Anne of Green Gables",
+    "Art of War",
     "As I Lay Dying",
     "Brave New World",
     "Call me Ishmael",
@@ -7052,6 +7114,8 @@
     "One Hundred Years of Solitude",
     "Pride and Prejudice",
     "Romance of the Three Kingdoms",
+    "Spring and Autumn Annals",
+    "Tao Te Ching",
     "The Adventures of Tom Sawyer",
     "The Age of Innocence",
     "The Brothers Karamazov",
@@ -9626,6 +9690,7 @@
     "Commodus",
     "Constantine the Great",
     "Emperor Wu of Han",
+    "Emperor Yang of Sui",
     "Hadrian",
     "Huizong",
     "Kublai Khan",
@@ -9695,6 +9760,9 @@
   ],
   "Ends with  OZ": [
     "The Wizard of Oz"
+  ],
+  "Ends with  SI": [
+    "Li Si"
   ],
   "Ends with  SO": [
     "Say It Ain't So"
@@ -10047,6 +10115,9 @@
     "Buffalo",
     "Halo"
   ],
+  "Ends with ALS": [
+    "Spring and Autumn Annals"
+  ],
   "Ends with ALT": [
     "Cobalt",
     "USS Zumwalt"
@@ -10112,6 +10183,7 @@
     "Alice's Adventures in Wonderland",
     "Archduke Franz Ferdinand",
     "Basutoland",
+    "Battle of Jutland",
     "Bechuanaland",
     "British Somaliland",
     "Cleveland",
@@ -10149,6 +10221,7 @@
     "John Coltrane"
   ],
   "Ends with ANG": [
+    "Battle of Lake Poyang",
     "Ma La Tang",
     "Mustang",
     "Qin Shi Huang",
@@ -10546,6 +10619,9 @@
     "Bee",
     "Ultimate Frisbee"
   ],
+  "Ends with BEI": [
+    "Liu Bei"
+  ],
   "Ends with BEL": [
     "Annabel"
   ],
@@ -10677,7 +10753,8 @@
     "Pelican"
   ],
   "Ends with CAO": [
-    "Cacao"
+    "Cacao",
+    "Cao Cao"
   ],
   "Ends with CAR": [
     "Madagascar",
@@ -11263,7 +11340,8 @@
   "Ends with ENG": [
     "Ginseng",
     "Huineng",
-    "Li Jiancheng"
+    "Li Jiancheng",
+    "Zhang Heng"
   ],
   "Ends with ENI": [
     "Pelmeni"
@@ -11514,6 +11592,9 @@
   "Ends with FEH": [
     "Knafeh"
   ],
+  "Ends with FEI": [
+    "Yue Fei"
+  ],
   "Ends with FEL": [
     "Duffel",
     "Falafel"
@@ -11575,6 +11656,9 @@
     "Michigan",
     "Reagan"
   ],
+  "Ends with GAR": [
+    "Battle of Trafalgar"
+  ],
   "Ends with GBY": [
     "Rugby"
   ],
@@ -11620,7 +11704,8 @@
   ],
   "Ends with GES": [
     "Ganges",
-    "The Three Stooges"
+    "The Three Stooges",
+    "Zheng He Voyages"
   ],
   "Ends with GET": [
     "Nugget"
@@ -11630,6 +11715,7 @@
   ],
   "Ends with GHT": [
     "Green Light",
+    "Hundred Schools of Thought",
     "Isle of Wight",
     "Let there be light",
     "Moonlight",
@@ -11767,6 +11853,9 @@
     "Möngke Khan",
     "Sirhan Sirhan",
     "Ögedei Khan"
+  ],
+  "Ends with HAO": [
+    "Ban Zhao"
   ],
   "Ends with HAU": [
     "Bacalhau"
@@ -12034,6 +12123,9 @@
     "Tenerife",
     "The Time Traveler's Wife"
   ],
+  "Ends with IFF": [
+    "Battle of Red Cliff"
+  ],
   "Ends with IGH": [
     "Raleigh"
   ],
@@ -12143,6 +12235,7 @@
     "China",
     "French Indochina",
     "Katrina",
+    "Mongol Conquest of China",
     "Nina",
     "Syria Palaestina"
   ],
@@ -12210,6 +12303,7 @@
     "King",
     "Lansing",
     "Ming",
+    "Movable Type Printing",
     "Much Ado About Nothing",
     "Nothing",
     "Qing",
@@ -12222,6 +12316,8 @@
     "Sticky Toffee Pudding",
     "Surfing",
     "Swimming",
+    "Tao Te Ching",
+    "Tao Yuanming",
     "The Arab Spring",
     "The Great Awakening",
     "The Lion King",
@@ -12281,6 +12377,7 @@
   "Ends with ION": [
     "1972 Presidential Election",
     "Alien: Resurrection",
+    "An Lushan Rebellion",
     "Bay of Pigs Invasion",
     "Cambrian Explosion",
     "Chu–Han Contention",
@@ -12290,6 +12387,7 @@
     "Deccan Traps Eruption",
     "Eyjafjallajökull Eruption",
     "Federation",
+    "Forbidden City Construction",
     "Iranian Revolution",
     "Krakatoa Eruption",
     "Laki Eruption",
@@ -13078,6 +13176,7 @@
     "Bechamel"
   ],
   "Ends with MEN": [
+    "Battle of Yamen",
     "Carmen",
     "Friends, Romans, countrymen",
     "Little Women",
@@ -13518,6 +13617,7 @@
     "Chianti"
   ],
   "Ends with NTO": [
+    "Battle of Lepanto",
     "Encanto",
     "Pinto",
     "Sacramento",
@@ -13554,6 +13654,7 @@
   "Ends with OAD": [
     "Abbey Road",
     "On the Road",
+    "Silk Road",
     "The Road"
   ],
   "Ends with OAH": [
@@ -14431,6 +14532,9 @@
   "Ends with RMS": [
     "A Farewell to Arms"
   ],
+  "Ends with RMY": [
+    "Terracotta Army"
+  ],
   "Ends with RNA": [
     "Annapurna"
   ],
@@ -14820,6 +14924,7 @@
     "Tissue"
   ],
   "Ends with SUI": [
+    "Emperor Yang of Sui",
     "Matsui",
     "Sui"
   ],
@@ -15060,6 +15165,9 @@
     "Castro",
     "Cilantro"
   ],
+  "Ends with TRY": [
+    "Tang Poetry"
+  ],
   "Ends with TSO": [
     "General Tso"
   ],
@@ -15073,7 +15181,8 @@
   ],
   "Ends with TTE": [
     "Baguette",
-    "Gazette"
+    "Gazette",
+    "Jean Bernadotte"
   ],
   "Ends with TTI": [
     "Spaghetti"
@@ -15459,6 +15568,7 @@
     "Taiwan"
   ],
   "Ends with WAR": [
+    "Art of War",
     "God of War",
     "Soviet-Afghan War",
     "The Algerian War",
@@ -15622,7 +15732,8 @@
     "Freezer"
   ],
   "Ends with ZHI": [
-    "Battle of Zhizhi"
+    "Battle of Zhizhi",
+    "Wang Xizhi"
   ],
   "Ends with ZIA": [
     "Abkhazia"
@@ -15881,6 +15992,7 @@
     "1955 World Series",
     "1989 Chinese Protests",
     "9/11",
+    "An Lushan Rebellion",
     "Assassination of Caesar",
     "Battle of Actium",
     "Battle of Agincourt",
@@ -15888,10 +16000,16 @@
     "Battle of Carrhae",
     "Battle of Crécy",
     "Battle of Dien Bien Phu",
+    "Battle of Jutland",
+    "Battle of Lake Poyang",
+    "Battle of Lepanto",
     "Battle of Pharsalus",
     "Battle of Philippi",
     "Battle of Poitiers",
+    "Battle of Red Cliff",
     "Battle of Sluys",
+    "Battle of Trafalgar",
+    "Battle of Yamen",
     "Battle of Zhizhi",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
@@ -15918,6 +16036,7 @@
     "Fat Man",
     "First Defenestration of Prague",
     "First Triumvirate",
+    "Forbidden City Construction",
     "Formation of Earth",
     "Formation of Himalayas",
     "Formation of Moon",
@@ -15928,6 +16047,7 @@
     "Han Wudi's Defeat of the Xiongnu",
     "Herculaneum",
     "Hindenburg",
+    "Hundred Schools of Thought",
     "Hussite Wars",
     "Iranian Revolution",
     "Ivy Mike",
@@ -15939,8 +16059,10 @@
     "Last Glacial Maximum",
     "Little Boy",
     "Lusitania",
+    "Mongol Conquest of China",
     "Mount Pelée Eruption",
     "Mount St. Helens Eruption",
+    "Movable Type Printing",
     "Nevado del Ruiz Eruption",
     "Opening of Atlantic Ocean",
     "Permian-Triassic Extinction",
@@ -15952,6 +16074,7 @@
     "Siberian Traps Eruption",
     "Siege of Calais",
     "Siege of Orléans",
+    "Silk Road",
     "Snowball Earth",
     "Soviet-Afghan War",
     "Suez Crisis",
@@ -16079,7 +16202,8 @@
     "Woodstock",
     "World War I",
     "World War II",
-    "Younger Dryas"
+    "Younger Dryas",
+    "Zheng He Voyages"
   ],
   "Exploration Ships": [
     "Beagle",
@@ -18015,7 +18139,9 @@
     "Parasaurolophus"
   ],
   "Han Dynasty": [
+    "Ban Zhao",
     "Bronze Bird Terrace",
+    "Cao Cao",
     "Chu–Han Contention",
     "Congee",
     "Dragon",
@@ -18025,12 +18151,15 @@
     "Guandao",
     "Han Wudi's Defeat of the Xiongnu",
     "Jiaozi",
+    "Liu Bei",
     "Paper",
     "Romance of the Three Kingdoms",
+    "Silk Road",
     "The realm, long divided, must unite",
     "Wang Mang Usurpation",
     "Wonton",
-    "Zhang Daoling"
+    "Zhang Daoling",
+    "Zhang Heng"
   ],
   "Harry Potter Characters": [
     "Draco",
@@ -18943,7 +19072,9 @@
     "Purple Haze"
   ],
   "Jin Dynasty": [
-    "Jingkang Incident"
+    "Jingkang Incident",
+    "Tao Yuanming",
+    "Wang Xizhi"
   ],
   "John Lennon": [
     "Imagine"
@@ -19046,6 +19177,9 @@
     "Great Lakes",
     "Lake Baikal",
     "Lake Victoria"
+  ],
+  "Land Battles": [
+    "Battle of Agincourt"
   ],
   "Landlocked Countries": [
     "Afghanistan",
@@ -20150,6 +20284,7 @@
     "The Black Prince",
     "William the Conqueror",
     "Wu Zetian",
+    "Yue Fei",
     "Zheng He",
     "Zhu Yuanzhang"
   ],
@@ -20194,6 +20329,7 @@
     "Babur",
     "Bach",
     "Baháʼu'lláh",
+    "Ban Zhao",
     "Bartholomew",
     "Batman",
     "Batu Khan",
@@ -20221,6 +20357,7 @@
     "Caesar",
     "Caligula",
     "Campanella",
+    "Cao Cao",
     "Captain America",
     "Captain Smith",
     "Carter",
@@ -20275,6 +20412,7 @@
     "Eisenhower",
     "Elvis",
     "Emperor Wu of Han",
+    "Emperor Yang of Sui",
     "Enrico Fermi",
     "Ezio Auditore",
     "Faraday",
@@ -20345,6 +20483,7 @@
     "James Boswell",
     "James the Less",
     "Jan Hus",
+    "Jean Bernadotte",
     "Jebe",
     "Jefferson",
     "Jesus Christ",
@@ -20392,9 +20531,11 @@
     "Li Bai",
     "Li Jiancheng",
     "Li Shimin",
+    "Li Si",
     "Li Yuanji",
     "Liberace",
     "Lincoln",
+    "Liu Bei",
     "Loki",
     "Louis Armstrong",
     "Louis Pasteur",
@@ -20530,6 +20671,7 @@
     "Sébastien Le Prestre de Vauban",
     "Taft",
     "Tanaka",
+    "Tao Yuanming",
     "Tarzan",
     "Taylor",
     "Temüjin",
@@ -20571,6 +20713,7 @@
     "Victor",
     "Von Blucher",
     "Vulture",
+    "Wang Xizhi",
     "Washington",
     "Wayne Gretzky",
     "Wellington",
@@ -20583,7 +20726,9 @@
     "Wolverine",
     "Wright Brothers",
     "Yojimbo",
+    "Yue Fei",
     "Zhang Daoling",
+    "Zhang Heng",
     "Zheng He",
     "Zhiyi",
     "Zhou Enlai",
@@ -20920,16 +21065,23 @@
     "Zero"
   ],
   "Military Conflicts": [
+    "An Lushan Rebellion",
     "Battle of Actium",
     "Battle of Agincourt",
     "Battle of Alesia",
     "Battle of Carrhae",
     "Battle of Crécy",
     "Battle of Dien Bien Phu",
+    "Battle of Jutland",
+    "Battle of Lake Poyang",
+    "Battle of Lepanto",
     "Battle of Pharsalus",
     "Battle of Philippi",
     "Battle of Poitiers",
+    "Battle of Red Cliff",
     "Battle of Sluys",
+    "Battle of Trafalgar",
+    "Battle of Yamen",
     "Battle of Zhizhi",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
@@ -20939,6 +21091,7 @@
     "Han Wudi's Defeat of the Xiongnu",
     "Hussite Wars",
     "Jingkang Incident",
+    "Mongol Conquest of China",
     "Siege of Calais",
     "Siege of Orléans",
     "Soviet-Afghan War",
@@ -20991,6 +21144,7 @@
     "Babur",
     "Batu Khan",
     "Billy Mitchell",
+    "Cao Cao",
     "Captain Smith",
     "Chandragupta Maurya",
     "Charlemagne",
@@ -21015,12 +21169,14 @@
     "Hulagu Khan",
     "J.F.C. Fuller",
     "Jackson",
+    "Jean Bernadotte",
     "Jebe",
     "Joan of Arc",
     "John",
     "John Boyd",
     "John of Bohemia",
     "Kublai Khan",
+    "Liu Bei",
     "Mark Antony",
     "Maurice of Nassau",
     "McKinley",
@@ -21054,6 +21210,7 @@
     "Wellington",
     "William the Conqueror",
     "Winston Churchill",
+    "Yue Fei",
     "Zhu Yuanzhang",
     "Ögedei Khan"
   ],
@@ -21122,8 +21279,10 @@
     "Uniform"
   ],
   "Ming Dynasty": [
+    "Battle of Lake Poyang",
     "Beijing",
     "Forbidden City",
+    "Forbidden City Construction",
     "Great Wall",
     "Hainan",
     "Journey to the West",
@@ -21132,6 +21291,7 @@
     "Romance of the Three Kingdoms",
     "The realm, long divided, must unite",
     "Zheng He",
+    "Zheng He Voyages",
     "Zhu Yuanzhang"
   ],
   "Miocene Epoch": [
@@ -21573,6 +21733,7 @@
     "Henry VIII",
     "James",
     "Jane Seymour",
+    "Jean Bernadotte",
     "John",
     "John of Bohemia",
     "King",
@@ -27131,8 +27292,10 @@
     "Shark"
   ],
   "Napoleonic Wars": [
+    "Battle of Trafalgar",
     "Bellerophon",
     "Bucentaure",
+    "Jean Bernadotte",
     "Redoutable",
     "Santissima Trinidad",
     "Temeraire",
@@ -27200,6 +27363,7 @@
     "Elizabeth",
     "Elizabeth I",
     "Emperor Wu of Han",
+    "Emperor Yang of Sui",
     "Fillmore",
     "Ford",
     "Frederick the Great",
@@ -27222,6 +27386,7 @@
     "Jackson",
     "James",
     "Jane Seymour",
+    "Jean Bernadotte",
     "Jefferson",
     "John",
     "John of Bohemia",
@@ -27315,7 +27480,14 @@
     "Uncharted Waters"
   ],
   "Naval Battles": [
-    "Battle of Sluys"
+    "Battle of Actium",
+    "Battle of Jutland",
+    "Battle of Lake Poyang",
+    "Battle of Lepanto",
+    "Battle of Red Cliff",
+    "Battle of Sluys",
+    "Battle of Trafalgar",
+    "Battle of Yamen"
   ],
   "Neogene Period": [
     "Albatross",
@@ -28358,6 +28530,7 @@
     "Babur",
     "Bach",
     "Baháʼu'lláh",
+    "Ban Zhao",
     "Bartholomew",
     "Batman",
     "Batu Khan",
@@ -28392,6 +28565,7 @@
     "Calamity Jane",
     "Caligula",
     "Campanella",
+    "Cao Cao",
     "Captain America",
     "Captain Smith",
     "Carrie",
@@ -28470,6 +28644,7 @@
     "Emily Brontë",
     "Emily Dickinson",
     "Emperor Wu of Han",
+    "Emperor Yang of Sui",
     "Enrico Fermi",
     "Ezio Auditore",
     "Fanny Mendelssohn",
@@ -28554,6 +28729,7 @@
     "Jane Austen",
     "Jane Eyre",
     "Jane Seymour",
+    "Jean Bernadotte",
     "Jean Grey",
     "Jebe",
     "Jefferson",
@@ -28606,9 +28782,11 @@
     "Li Bai",
     "Li Jiancheng",
     "Li Shimin",
+    "Li Si",
     "Li Yuanji",
     "Liberace",
     "Lincoln",
+    "Liu Bei",
     "Loki",
     "Lola Montez",
     "Louis Armstrong",
@@ -28775,6 +28953,7 @@
     "Sébastien Le Prestre de Vauban",
     "Taft",
     "Tanaka",
+    "Tao Yuanming",
     "Tarzan",
     "Taylor",
     "Temüjin",
@@ -28825,6 +29004,7 @@
     "Virginia Woolf",
     "Von Blucher",
     "Vulture",
+    "Wang Xizhi",
     "Washington",
     "Wayne Gretzky",
     "Wellington",
@@ -28841,7 +29021,9 @@
     "Wright Brothers",
     "Wu Zetian",
     "Yojimbo",
+    "Yue Fei",
     "Zhang Daoling",
+    "Zhang Heng",
     "Zheng He",
     "Zhiyi",
     "Zhou Enlai",
@@ -30154,7 +30336,8 @@
     "Li Bai",
     "Poe",
     "Shakespeare",
-    "Sylvia Plath"
+    "Sylvia Plath",
+    "Tao Yuanming"
   ],
   "Political Events": [
     "10/7",
@@ -30474,8 +30657,10 @@
   ],
   "Qin Dynasty": [
     "Great Wall",
+    "Li Si",
     "Qin",
-    "Qin Shi Huang"
+    "Qin Shi Huang",
+    "Terracotta Army"
   ],
   "Qing Dynasty": [
     "Beijing",
@@ -30896,6 +31081,7 @@
     "Babur",
     "Bach",
     "Baháʼu'lláh",
+    "Ban Zhao",
     "Bartholomew",
     "Batu Khan",
     "Beethoven",
@@ -30920,6 +31106,7 @@
     "Calamity Jane",
     "Caligula",
     "Campanella",
+    "Cao Cao",
     "Captain Smith",
     "Carter",
     "Cassius",
@@ -30983,6 +31170,7 @@
     "Emily Brontë",
     "Emily Dickinson",
     "Emperor Wu of Han",
+    "Emperor Yang of Sui",
     "Enrico Fermi",
     "Fanny Mendelssohn",
     "Faraday",
@@ -31049,6 +31237,7 @@
     "Jan Hus",
     "Jane Austen",
     "Jane Seymour",
+    "Jean Bernadotte",
     "Jebe",
     "Jefferson",
     "Jesus Christ",
@@ -31093,9 +31282,11 @@
     "Li Bai",
     "Li Jiancheng",
     "Li Shimin",
+    "Li Si",
     "Li Yuanji",
     "Liberace",
     "Lincoln",
+    "Liu Bei",
     "Lola Montez",
     "Louis Armstrong",
     "Louis Pasteur",
@@ -31218,6 +31409,7 @@
     "Sébastien Le Prestre de Vauban",
     "Taft",
     "Tanaka",
+    "Tao Yuanming",
     "Taylor",
     "Temüjin",
     "Teresa",
@@ -31250,6 +31442,7 @@
     "Victoria Woodhull",
     "Virginia Woolf",
     "Von Blucher",
+    "Wang Xizhi",
     "Washington",
     "Wayne Gretzky",
     "Wellington",
@@ -31261,7 +31454,9 @@
     "Winston Churchill",
     "Wright Brothers",
     "Wu Zetian",
+    "Yue Fei",
     "Zhang Daoling",
+    "Zhang Heng",
     "Zheng He",
     "Zhiyi",
     "Zhou Enlai",
@@ -31271,6 +31466,7 @@
     "Ögedei Khan"
   ],
   "Rebellions": [
+    "An Lushan Rebellion",
     "The Boxer Rebellion",
     "The Peasants' Revolt",
     "The Shays' Rebellion",
@@ -31984,6 +32180,7 @@
     "Edward III",
     "Edward VI",
     "Elizabeth I",
+    "Emperor Yang of Sui",
     "Frederick the Great",
     "Good King Wenceslas",
     "Gustavus Adolphus",
@@ -32016,13 +32213,16 @@
     "The Black Prince",
     "Timur",
     "Trajan",
-    "William the Conqueror"
+    "William the Conqueror",
+    "Zhu Yuanzhang"
   ],
   "Rulers": [
     "Batu Khan",
     "Duke",
+    "Emperor Yang of Sui",
     "Genghis Khan",
     "Hulagu Khan",
+    "Jean Bernadotte",
     "Khan",
     "King",
     "Kublai Khan",
@@ -32032,6 +32232,7 @@
     "Tolui",
     "Tsar",
     "Victoria",
+    "Zhu Yuanzhang",
     "Ögedei Khan"
   ],
   "Sailors": [
@@ -32859,14 +33060,18 @@
   ],
   "Song Dynasty": [
     "Bao",
+    "Battle of Yamen",
     "Dim Sum",
     "Green Tea",
     "Hoisin",
     "Huizong",
     "Jingkang Incident",
+    "Mongol Conquest of China",
+    "Movable Type Printing",
     "Tea",
     "Water Margin",
-    "Xiaolongbao"
+    "Xiaolongbao",
+    "Yue Fei"
   ],
   "Song Lyrics": [
     "Rock Around the Clock",
@@ -33210,7 +33415,9 @@
   "Spring and Autumn Period": [
     "Confucius",
     "Laozi",
-    "Sun Tzu"
+    "Spring and Autumn Annals",
+    "Sun Tzu",
+    "Tao Te Ching"
   ],
   "Stadtholders": [
     "Maurice of Nassau"
@@ -33489,6 +33696,9 @@
     "Among Us",
     "Amontillado"
   ],
+  "Starts with AN ": [
+    "An Lushan Rebellion"
+  ],
   "Starts with ANA": [
     "Anansi"
   ],
@@ -33608,6 +33818,7 @@
     "Arrival"
   ],
   "Starts with ART": [
+    "Art of War",
     "Arthropleura",
     "Arthur",
     "Arthur Christmas",
@@ -33758,6 +33969,7 @@
     "Bamboo"
   ],
   "Starts with BAN": [
+    "Ban Zhao",
     "Banana",
     "Bandeja Paisa",
     "Bangers and Mash",
@@ -33800,10 +34012,16 @@
     "Battle of Carrhae",
     "Battle of Crécy",
     "Battle of Dien Bien Phu",
+    "Battle of Jutland",
+    "Battle of Lake Poyang",
+    "Battle of Lepanto",
     "Battle of Pharsalus",
     "Battle of Philippi",
     "Battle of Poitiers",
+    "Battle of Red Cliff",
     "Battle of Sluys",
+    "Battle of Trafalgar",
+    "Battle of Yamen",
     "Battle of Zhizhi",
     "Battlefield",
     "Batu Khan"
@@ -34189,6 +34407,9 @@
     "Canoe",
     "Canon",
     "Canuck"
+  ],
+  "Starts with CAO": [
+    "Cao Cao"
   ],
   "Starts with CAP": [
     "Caprese",
@@ -34939,6 +35160,7 @@
   "Starts with EMP": [
     "Empanada",
     "Emperor Wu of Han",
+    "Emperor Yang of Sui",
     "Empire State Building",
     "Empress of Asia",
     "Empress of Ireland"
@@ -35161,6 +35383,7 @@
   "Starts with FOR": [
     "For Whom the Bell Tolls",
     "Forbidden City",
+    "Forbidden City Construction",
     "Ford",
     "Ford's Theatre",
     "Foreign Debt Crisis",
@@ -35724,6 +35947,7 @@
     "Humpback Whale"
   ],
   "Starts with HUN": [
+    "Hundred Schools of Thought",
     "Hungary"
   ],
   "Starts with HUR": [
@@ -35959,6 +36183,7 @@
     "Jazz"
   ],
   "Starts with JEA": [
+    "Jean Bernadotte",
     "Jean Grey"
   ],
   "Starts with JEB": [
@@ -36393,6 +36618,7 @@
     "Li Bai",
     "Li Jiancheng",
     "Li Shimin",
+    "Li Si",
     "Li Yuanji"
   ],
   "Starts with LIB": [
@@ -36442,6 +36668,9 @@
     "Little Shop of Horrors",
     "Little Women",
     "Littlefoot"
+  ],
+  "Starts with LIU": [
+    "Liu Bei"
   ],
   "Starts with LIV": [
     "Live Free or Die Hard",
@@ -36792,6 +37021,7 @@
   "Starts with MON": [
     "Monaco",
     "Moneypenny",
+    "Mongol Conquest of China",
     "Mongolia",
     "Monkey",
     "Monopoly",
@@ -36837,6 +37067,9 @@
     "Mount Pelée Eruption",
     "Mount St. Helens Eruption",
     "Moussaka"
+  ],
+  "Starts with MOV": [
+    "Movable Type Printing"
   ],
   "Starts with MOZ": [
     "Mozambique",
@@ -38041,6 +38274,7 @@
     "Sikorsky"
   ],
   "Starts with SIL": [
+    "Silk Road",
     "Silver"
   ],
   "Starts with SIM": [
@@ -38219,6 +38453,7 @@
     "Spotlight"
   ],
   "Starts with SPR": [
+    "Spring and Autumn Annals",
     "Springfield"
   ],
   "Starts with SPU": [
@@ -38420,11 +38655,16 @@
     "Tanaka",
     "Tandoori",
     "Tang",
+    "Tang Poetry",
     "Tanganyika",
     "Tangled",
     "Tango",
     "Tanystropheus",
     "Tanzania"
+  ],
+  "Starts with TAO": [
+    "Tao Te Ching",
+    "Tao Yuanming"
   ],
   "Starts with TAP": [
     "Tapas"
@@ -38483,6 +38723,7 @@
     "Terms of Endearment",
     "Tern",
     "Terra Nova",
+    "Terracotta Army",
     "Terry Fox"
   ],
   "Starts with TES": [
@@ -39162,7 +39403,8 @@
   ],
   "Starts with WAN": [
     "Wand",
-    "Wang Mang Usurpation"
+    "Wang Mang Usurpation",
+    "Wang Xizhi"
   ],
   "Starts with WAR": [
     "War and Peace",
@@ -39355,6 +39597,9 @@
   "Starts with YUA": [
     "Yuan"
   ],
+  "Starts with YUE": [
+    "Yue Fei"
+  ],
   "Starts with YUG": [
     "Yugioh",
     "Yugoslavia"
@@ -39384,10 +39629,12 @@
     "Zeus"
   ],
   "Starts with ZHA": [
-    "Zhang Daoling"
+    "Zhang Daoling",
+    "Zhang Heng"
   ],
   "Starts with ZHE": [
-    "Zheng He"
+    "Zheng He",
+    "Zheng He Voyages"
   ],
   "Starts with ZHI": [
     "Zhiyi"
@@ -39619,7 +39866,11 @@
     "Whisper of the Heart"
   ],
   "Sui Dynasty": [
+    "Emperor Yang of Sui",
     "Grand Canal",
+    "Li Jiancheng",
+    "Li Shimin",
+    "Li Yuanji",
     "Sui"
   ],
   "Sultans": [
@@ -39774,6 +40025,7 @@
     "Yugioh"
   ],
   "Tang Dynasty": [
+    "An Lushan Rebellion",
     "Chang'an",
     "Char Siu",
     "Du Fu",
@@ -39788,7 +40040,9 @@
     "Ma La Tang",
     "Mooncake",
     "Panda",
+    "Silk Road",
     "Sweet and Sour",
+    "Tang Poetry",
     "Tea",
     "Wu Zetian",
     "Xuanwu Gate",
@@ -41002,8 +41256,10 @@
     "Bangers and Mash",
     "Battle of Agincourt",
     "Battle of Crécy",
+    "Battle of Jutland",
     "Battle of Poitiers",
     "Battle of Sluys",
+    "Battle of Trafalgar",
     "Beagle",
     "Beatles",
     "Bee Gees",
@@ -41373,13 +41629,20 @@
     "1989 Chinese Protests",
     "2046",
     "A Better Tomorrow",
+    "An Lushan Rebellion",
+    "Art of War",
     "Ashes of Time",
     "Baijiu",
     "Ball Lightning",
+    "Ban Zhao",
     "Bao",
+    "Battle of Lake Poyang",
+    "Battle of Red Cliff",
+    "Battle of Yamen",
     "Battle of Zhizhi",
     "Beijing",
     "Bronze Bird Terrace",
+    "Cao Cao",
     "Chang'an",
     "Char Siu",
     "China",
@@ -41400,9 +41663,11 @@
     "Dumpling",
     "Egg Foo Young",
     "Emperor Wu of Han",
+    "Emperor Yang of Sui",
     "Fallen Angels",
     "Farewell My Concubine",
     "Forbidden City",
+    "Forbidden City Construction",
     "General Tso",
     "Gobi",
     "Gong Bao Ji Ding",
@@ -41423,6 +41688,7 @@
     "Hui Guo Rou",
     "Huineng",
     "Huizong",
+    "Hundred Schools of Thought",
     "In the Mood for Love",
     "Jiaozi",
     "Jing Ke",
@@ -41434,13 +41700,17 @@
     "Li Bai",
     "Li Jiancheng",
     "Li Shimin",
+    "Li Si",
     "Li Yuanji",
+    "Liu Bei",
     "Lo Mein",
     "Ma La Tang",
     "Mapo Tofu",
     "Marco Polo",
     "Ming",
+    "Mongol Conquest of China",
     "Mooncake",
+    "Movable Type Printing",
     "My Blueberry Nights",
     "Orange Chicken",
     "Oyster Sauce",
@@ -41452,11 +41722,17 @@
     "Qing",
     "Raise the Red Lantern",
     "Romance of the Three Kingdoms",
+    "Silk Road",
+    "Spring and Autumn Annals",
     "Sui",
     "Sun Tzu",
     "Sweet and Sour",
     "Table Tennis",
+    "Tang Poetry",
+    "Tao Te Ching",
+    "Tao Yuanming",
     "Tea",
+    "Terracotta Army",
     "The Dark Forest",
     "The Grandmaster",
     "The Hand",
@@ -41469,6 +41745,7 @@
     "Tiananmen Square Massacre",
     "Twice Cooked Pork",
     "Wang Mang Usurpation",
+    "Wang Xizhi",
     "Water Margin",
     "Wonton",
     "Wu Zetian",
@@ -41477,8 +41754,11 @@
     "Yangtze River",
     "Yu Xiang Qie Zi",
     "Yuan",
+    "Yue Fei",
     "Zhang Daoling",
+    "Zhang Heng",
     "Zheng He",
+    "Zheng He Voyages",
     "Zhiyi",
     "Zhou Enlai",
     "Zhu Yuanzhang"
@@ -41601,6 +41881,7 @@
     "Battle of Crécy",
     "Battle of Poitiers",
     "Battle of Sluys",
+    "Battle of Trafalgar",
     "Bearnaise",
     "Bechamel",
     "Beef Bourguignon",
@@ -41637,6 +41918,7 @@
     "Gaul",
     "Hollandaise",
     "I think, therefore I am",
+    "Jean Bernadotte",
     "Joan of Arc",
     "John",
     "John Calvin",
@@ -41707,6 +41989,7 @@
     "Audi",
     "BMW",
     "Bach",
+    "Battle of Jutland",
     "Beer",
     "Beethoven",
     "Berlin",
@@ -41936,6 +42219,7 @@
     "Andrea Bocelli",
     "Andrea Doria",
     "Arch of Titus",
+    "Battle of Lepanto",
     "Bolognese",
     "Bruschetta",
     "Caesar",
@@ -42526,6 +42810,7 @@
     "Scutum",
     "Second Triumvirate",
     "Servilius Casca",
+    "Silk Road",
     "Spartacus",
     "Spatha",
     "Sulla",
@@ -42651,6 +42936,7 @@
   "Things Spanish": [
     "Airbus",
     "Alhambra",
+    "Battle of Trafalgar",
     "Canary Islands",
     "Catherine of Aragon",
     "Christopher Columbus",
@@ -42717,6 +43003,7 @@
   "Things Swedish": [
     "Gotland",
     "Gustavus Adolphus",
+    "Jean Bernadotte",
     "Minecraft",
     "Saab",
     "Sweden",
@@ -42881,6 +43168,7 @@
   ],
   "Things Turkish": [
     "Ayran",
+    "Battle of Lepanto",
     "Blue Mosque",
     "Constantinople",
     "Hagia Sophia",
@@ -42951,7 +43239,10 @@
     "Zimbabwe"
   ],
   "Three Kingdoms Period": [
+    "Battle of Red Cliff",
+    "Cao Cao",
     "Guan Yu",
+    "Liu Bei",
     "Romance of the Three Kingdoms",
     "The realm, long divided, must unite"
   ],
@@ -43706,11 +43997,14 @@
     "Yosemite Sam"
   ],
   "Warring States Period": [
+    "Art of War",
     "Battle of Zhizhi",
+    "Hundred Schools of Thought",
     "Jing Ke",
     "Sun Tzu"
   ],
   "Wars": [
+    "An Lushan Rebellion",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
     "Bohemian Revolt",
@@ -43718,6 +44012,7 @@
     "Han Wudi's Defeat of the Xiongnu",
     "Hussite Wars",
     "Jingkang Incident",
+    "Mongol Conquest of China",
     "Soviet-Afghan War",
     "The Algerian War",
     "The American Civil War",
@@ -44080,6 +44375,7 @@
     "Stick"
   ],
   "World War I": [
+    "Battle of Jutland",
     "Britannic",
     "Hood",
     "June 28th, 1914",
@@ -44149,6 +44445,7 @@
   "Writers": [
     "Anne Frank",
     "Aristotle",
+    "Ban Zhao",
     "Charlotte Brontë",
     "Confucius",
     "Dante",
@@ -44173,6 +44470,7 @@
     "Shakespeare",
     "Sun Tzu",
     "Sylvia Plath",
+    "Tao Yuanming",
     "Virginia Woolf",
     "Winston Churchill"
   ],
@@ -44228,8 +44526,10 @@
   ],
   "Yuan Dynasty": [
     "Baijiu",
+    "Battle of Lake Poyang",
     "Kublai Khan",
     "Marco Polo",
+    "Mongol Conquest of China",
     "Yuan"
   ],
   "Zodiac Signs": [

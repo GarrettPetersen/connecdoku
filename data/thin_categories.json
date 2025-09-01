@@ -335,8 +335,11 @@
   "Movies featuring Robert Vaughn": [
     "Battle Beyond the Stars"
   ],
-  "Naval Battles": [
-    "Battle of Sluys"
+  "Land Battles": [
+    "Battle of Agincourt"
+  ],
+  "1570s": [
+    "Battle of Lepanto"
   ],
   "Charles Darwin": [
     "Beagle"
@@ -1058,9 +1061,6 @@
   "Arctic Exploration": [
     "Fram"
   ],
-  "1800s": [
-    "Francisco Goya"
-  ],
   "Movies directed by James Whale": [
     "Frankenstein"
   ],
@@ -1464,9 +1464,6 @@
     "Jesus Christ Superstar"
   ],
   "1120s": [
-    "Jingkang Incident"
-  ],
-  "Jin Dynasty": [
     "Jingkang Incident"
   ],
   "Movies featuring Phil Hartman": [
@@ -4127,10 +4124,6 @@
     "Concordia",
     "Costa Smeralda"
   ],
-  "4th Century": [
-    "Constantine the Great",
-    "The Roman Empire"
-  ],
   "Italian Line": [
     "Conte di Savoia",
     "Rex"
@@ -4422,10 +4415,6 @@
   "Fictional Dogs": [
     "Goofy",
     "Snoopy"
-  ],
-  "Sui Dynasty": [
-    "Grand Canal",
-    "Sui"
   ],
   "Sharks": [
     "Great White Shark",
@@ -5180,10 +5169,10 @@
     "John of Bohemia",
     "The Black Prince"
   ],
-  "Warring States Period": [
-    "Battle of Zhizhi",
-    "Jing Ke",
-    "Sun Tzu"
+  "1800s": [
+    "Battle of Trafalgar",
+    "Francisco Goya",
+    "Jean Bernadotte"
   ],
   "Prime Ministers": [
     "Begin",
@@ -5295,11 +5284,6 @@
     "Million Dollar Baby",
     "Rocky"
   ],
-  "8th Century": [
-    "Charlemagne",
-    "Du Fu",
-    "Li Bai"
-  ],
   "Movies featuring Judi Dench": [
     "Chocolat",
     "Home on the Range",
@@ -5324,11 +5308,6 @@
     "Coffee",
     "Java",
     "Starbuck"
-  ],
-  "Spring and Autumn Period": [
-    "Confucius",
-    "Laozi",
-    "Sun Tzu"
   ],
   "Astronomers": [
     "Copernicus",
@@ -5505,16 +5484,6 @@
     "Lake Baikal",
     "Lake Victoria"
   ],
-  "Qin Dynasty": [
-    "Great Wall",
-    "Qin",
-    "Qin Shi Huang"
-  ],
-  "Three Kingdoms Period": [
-    "Guan Yu",
-    "Romance of the Three Kingdoms",
-    "The realm, long divided, must unite"
-  ],
   "1600s": [
     "Guy Fawkes",
     "Remember, remember",
@@ -5540,10 +5509,10 @@
     "The Iliad",
     "The Odyssey"
   ],
-  "3rd Century BC": [
-    "Jing Ke",
-    "Qin",
-    "Qin Shi Huang"
+  "Jin Dynasty": [
+    "Jingkang Incident",
+    "Tao Yuanming",
+    "Wang Xizhi"
   ],
   "Movies featuring Arnold Schwarzenegger": [
     "Jingle All the Way",
