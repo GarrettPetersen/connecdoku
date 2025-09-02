@@ -1265,6 +1265,7 @@
     "Mantle",
     "Marciano",
     "Marilyn Monroe",
+    "Mexican Economic Miracle",
     "MiG-15",
     "MiG-21",
     "Miles Davis",
@@ -1398,6 +1399,7 @@
     "Mary Poppins",
     "McLaren",
     "Mercury",
+    "Mexican Economic Miracle",
     "MiG-21",
     "Midnight Cowboy",
     "Miles Davis",
@@ -1466,6 +1468,7 @@
     "Woodstock",
     "Yesterday",
     "Yojimbo",
+    "Yuri Gagarin",
     "Zanzibar",
     "Zhou Enlai",
     "Zulu"
@@ -3199,6 +3202,7 @@
     "Yesterday",
     "Yojimbo",
     "You had me at hello",
+    "Yuri Gagarin",
     "Zanzibar",
     "Zazu",
     "Zeppelin",
@@ -9610,6 +9614,7 @@
   ],
   "Economic Events": [
     "Florentine Banking Crisis",
+    "Mexican Economic Miracle",
     "The Digital Revolution",
     "The Great Depression",
     "The Great Recession",
@@ -10848,6 +10853,7 @@
     "Rocky"
   ],
   "Ends with CLE": [
+    "Mexican Economic Miracle",
     "The Wind-Up Bird Chronicle"
   ],
   "Ends with CNN": [
@@ -14491,7 +14497,8 @@
     "Brig"
   ],
   "Ends with RIN": [
-    "Turin"
+    "Turin",
+    "Yuri Gagarin"
   ],
   "Ends with RIO": [
     "Mario",
@@ -16065,6 +16072,7 @@
     "Last Glacial Maximum",
     "Little Boy",
     "Lusitania",
+    "Mexican Economic Miracle",
     "Mongol Conquest of China",
     "Mount Pelée Eruption",
     "Mount St. Helens Eruption",
@@ -16209,6 +16217,7 @@
     "World War I",
     "World War II",
     "Younger Dryas",
+    "Yuri Gagarin",
     "Zheng He Voyages"
   ],
   "Exploration Ships": [
@@ -16238,6 +16247,7 @@
     "Marco Polo",
     "Mary Kingsley",
     "Vasco da Gama",
+    "Yuri Gagarin",
     "Zheng He"
   ],
   "Explosives": [
@@ -20734,6 +20744,7 @@
     "Wright Brothers",
     "Yojimbo",
     "Yue Fei",
+    "Yuri Gagarin",
     "Zhang Daoling",
     "Zhang Heng",
     "Zheng He",
@@ -29029,6 +29040,7 @@
     "Wu Zetian",
     "Yojimbo",
     "Yue Fei",
+    "Yuri Gagarin",
     "Zhang Daoling",
     "Zhang Heng",
     "Zheng He",
@@ -31462,6 +31474,7 @@
     "Wright Brothers",
     "Wu Zetian",
     "Yue Fei",
+    "Yuri Gagarin",
     "Zhang Daoling",
     "Zhang Heng",
     "Zheng He",
@@ -36953,6 +36966,7 @@
     "Metropolis"
   ],
   "Starts with MEX": [
+    "Mexican Economic Miracle",
     "Mexico"
   ],
   "Starts with MEZ": [
@@ -39622,6 +39636,9 @@
     "Yugioh",
     "Yugoslavia"
   ],
+  "Starts with YUR": [
+    "Yuri Gagarin"
+  ],
   "Starts with ZAM": [
     "Zambia"
   ],
@@ -41809,6 +41826,7 @@
     "Bay of Pigs Invasion",
     "Castro",
     "Cuba",
+    "The Cuban Missile Crisis",
     "The Cuban Revolution"
   ],
   "Things Czech": [
@@ -42604,6 +42622,7 @@
     "Fajita",
     "Guacamole",
     "Horchata",
+    "Mexican Economic Miracle",
     "Mexico",
     "Mezcal",
     "Mole",
@@ -42891,7 +42910,8 @@
     "Vareniki",
     "Vodka",
     "Volga",
-    "War and Peace"
+    "War and Peace",
+    "Yuri Gagarin"
   ],
   "Things Rwandan": [
     "Rwanda",
@@ -43142,6 +43162,7 @@
     "Mustang",
     "Owl",
     "Parrot",
+    "Pegasus",
     "Penguin",
     "Petrie",
     "Phoenix",
@@ -43258,9 +43279,6 @@
     "Rhodesia",
     "Southern Rhodesia",
     "Zimbabwe"
-  ],
-  "Things that Fly": [
-    "Pegasus"
   ],
   "Three Kingdoms Period": [
     "Battle of Red Cliff",
