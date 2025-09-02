@@ -30,8 +30,8 @@
      crossorigin="anonymous"></script>
 <style>
 /* --- styles unchanged from earlier versions --- */
-:root{--tile:#f6f7f8;--tile-b:#d4d5d6;--s0:#b6e7b2;--s1:#ffe680;--s2:#ffb06a;
-       --txt:#222;--btn1:#4caf50;--btn2:#ffb300;--btn3:#e53935}
+:root{--tile:#f6f7f8;--tile-b:#d4d5d6;--s0:#b6e7b2;--s1:#ffe680;--s2:#ffb06a;--s3:#ff8a65;--s4:#e57373;
+       --txt:#222;--btn1:#4caf50;--btn2:#fff59d;--btn3:#ffcc02;--btn4:#ff9800;--btn5:#f44336}
 body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
      margin:0;background:#fafafa;color:var(--txt)}
 /* Add emoji font support for compound emojis */
@@ -81,9 +81,9 @@ body{font-family:system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
   #helpIcon { top: 8px; right: 8px; font-size: 20px; }
 }
 .strike{margin:16px 0;text-align:center;font-size:18px}
-.lock0{background:var(--s0)}.lock1{background:var(--s1)}.lock2{background:var(--s2)}
+.lock0{background:var(--s0)}.lock1{background:var(--s1)}.lock2{background:var(--s2)}.lock3{background:var(--s3)}.lock4{background:var(--s4)}
 .frozen{cursor:default}.selected{outline:3px solid #2196f3}
-.used1{background:var(--btn2)}.used2{background:var(--btn3)}
+.used1{background:var(--btn2)}.used2{background:var(--btn3)}.used3{background:var(--btn4)}.used4{background:var(--btn5)}
 .disabled{opacity:.5;cursor:default}.disabled button{display:none}
 
 /* New styles for arrow buttons and confirmation flow */
@@ -260,8 +260,8 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
       <li><strong>Swap words:</strong> Click two tiles to swap their positions</li>
       <li><strong>Check categories:</strong> When you think a row or column matches a category, click its arrow button (← for rows, ↓ for columns)</li>
       <li><strong>Confirm guesses:</strong> The arrow changes to "confirm" and highlights the row/column. Click "confirm" to submit your guess</li>
-      <li><strong>Correct guesses:</strong> Lock in place with a color (green → yellow → orange based on strikes)</li>
-      <li><strong>Wrong guesses:</strong> Add a strike (❌) — 3 strikes and you lose!</li>
+      <li><strong>Correct guesses:</strong> Lock in place with a color (green → yellow → orange → orange → red based on strikes)</li>
+      <li><strong>Wrong guesses:</strong> Add a strike (❌) — 5 strikes and you lose!</li>
       <li><strong>Solving order:</strong> When you solve 3 rows, you must complete the puzzle by solving columns, and vice versa</li>
     </ul>
     
@@ -302,7 +302,7 @@ const todayIdx=()=>{
   const startMidnight = new Date(start.getFullYear(), start.getMonth(), start.getDate());
   return Math.floor((localMidnight.getTime()-startMidnight.getTime())/864e5);
 };
-const clr=['lock0','lock1','lock2'], emj=['🟩','🟨','🟧'];
+const clr=['lock0','lock1','lock2','lock3','lock4'], emj=['🟩','🟨','🟧','🟧','🟥'];
 
 /* ---------- cookie management ---------- */
 let cookiesAccepted = false;
@@ -388,6 +388,8 @@ function saveStats() {
   setCookie('connecdoku_stats', stats);
 }
 
+
+
 function updateStats(date, strikes, won) {
   // Only update if this date hasn't been recorded yet
   if (!(date in stats.games)) {
@@ -417,9 +419,9 @@ function updateStats(date, strikes, won) {
 }
 
 function getStrikeDistribution() {
-  const distribution = [0, 0, 0, 0]; // 0, 1, 2, 3 strikes
+  const distribution = [0, 0, 0, 0, 0, 0]; // 0, 1, 2, 3, 4, 5 strikes
   Object.values(stats.games).forEach(strikes => {
-    if (strikes >= 0 && strikes <= 3) {
+    if (strikes >= 0 && strikes <= 5) {
       distribution[strikes]++;
     }
   });
@@ -662,7 +664,7 @@ function init(puz){
         );
       }
       hdr.classList.add('disabled');
-      hdr.style.color = '#666';
+      hdr.style.color = '#333';
     }
 
     /* ── columns ─────────────────────────────────────── */
@@ -685,7 +687,7 @@ function init(puz){
         );
       }
       hdr.classList.add('disabled');
-      hdr.style.color = '#666';
+      hdr.style.color = '#333';
     }
   }
 
@@ -730,7 +732,7 @@ function init(puz){
   const lockColour=(r,c,lvl)=>{
     const t=tile(r,c);
     // Only apply color if it's better (lower strike count) than existing
-    const hasBetter=t.classList.contains('lock0')||(lvl>0&&t.classList.contains('lock1'))||(lvl>1&&t.classList.contains('lock2'));
+    const hasBetter=t.classList.contains('lock0')||(lvl>0&&t.classList.contains('lock1'))||(lvl>1&&t.classList.contains('lock2'))||(lvl>2&&t.classList.contains('lock3'))||(lvl>3&&t.classList.contains('lock4'));
     if(!hasBetter) t.classList.add(clr[lvl]);
   };
   
@@ -1673,9 +1675,9 @@ function init(puz){
   function badAttempt(hdr) {
 
     /* mark header, add strike, shake */
-    if (strikes < 3) {
+    if (strikes < 5) {
     strikes++;
-    hdr.classList.add(strikes === 1 ? 'used1' : 'used2');
+    hdr.classList.add(strikes === 1 ? 'used1' : strikes === 2 ? 'used2' : strikes === 3 ? 'used3' : 'used4');
     shake();
     updateStrike();
     saveGameState();
@@ -1685,8 +1687,8 @@ function init(puz){
       $('#hintContainer').style.display = 'block';
     }
 
-    /* third strike ⇒ auto-solve, reveal labels, end game */
-      if (strikes >= 3) {
+    /* fifth strike ⇒ auto-solve, reveal labels, end game */
+      if (strikes >= 5) {
 
       // put every word in its true final position
       const animTime = solveCompletely();   // may be 0 ms if nothing moved
@@ -1704,7 +1706,7 @@ function init(puz){
   }
 
 
-  function updateStrike(){ $('#strikeTxt').textContent=`Strikes ${strikes}/3`; }
+  function updateStrike(){ $('#strikeTxt').textContent=`Strikes ${strikes}/5`; }
   const shake=()=>{ $('#shell').classList.add('shake');
                     setTimeout(()=>$('#shell').classList.remove('shake'),1200); };
 
@@ -2081,7 +2083,9 @@ function init(puz){
 
   function emojiFor(td){ return td.classList.contains('lock0')?emj[0]:
                                td.classList.contains('lock1')?emj[1]:
-                               td.classList.contains('lock2')?emj[2]:'⬛'; }
+                               td.classList.contains('lock2')?emj[2]:
+                               td.classList.contains('lock3')?emj[3]:
+                               td.classList.contains('lock4')?emj[4]:'⬛'; }
   
   function getCategoryEmoji(category) {
     return categoryEmojis[category] || '❓';
@@ -2146,6 +2150,8 @@ function init(puz){
     return grid;
   }
   
+
+  
   function getCustomTitle(won, strikes) {
     if (won) {
       if (strikes === 0) {
@@ -2157,9 +2163,15 @@ function init(puz){
       } else if (strikes === 2) {
         const messages = ["Phew! Close one.", "That was tight!", "Just made it!", "Narrow escape!", "Cutting it close!"];
         return messages[Math.floor(Math.random() * messages.length)];
+      } else if (strikes === 3) {
+        const messages = ["Still got it!", "Made it through!", "Survived!", "Pulled it off!", "Got there in the end!"];
+        return messages[Math.floor(Math.random() * messages.length)];
+      } else if (strikes === 4) {
+        const messages = ["Barely made it!", "That was close!", "Cutting it fine!", "Last chance!", "Just in time!"];
+        return messages[Math.floor(Math.random() * messages.length)];
       }
     } else {
-      if (strikes === 3) {
+      if (strikes === 5) {
         const solvedCount = solvedRows.size + solvedCols.size;
         if (solvedCount === 0) {
           const messages = ["🤦‍♂️ Maybe try again?", "😅 That was... something.", "🤷‍♂️ At least you tried?", "💀 Brutal."];
@@ -2167,7 +2179,7 @@ function init(puz){
         } else {
           const messages = ["You'll beat it next time!", "Good try!", "Almost had it!", "Better luck next time!", "Keep practicing!"];
           return messages[Math.floor(Math.random() * messages.length)];
-  }
+        }
       }
     }
     return "Connecdoku"; // fallback
@@ -2180,7 +2192,10 @@ function init(puz){
     $('#popTitle').textContent = getCustomTitle(won, strikes);
     const spoilerToggle = document.getElementById('spoilerFreeToggle');
     const spoilerFree = spoilerToggle ? !!spoilerToggle.checked : !!getCookie('connecdoku_share_spoiler_free');
-    $('#shareGrid').textContent = createEmojiGrid(spoilerFree);
+    
+    // Create the grid with the title
+    const gridContent = createEmojiGrid(spoilerFree);
+    $('#shareGrid').textContent = gridContent;
     $('#shareGrid').classList.add('emoji'); // Add emoji class for compound emoji support
 
     // Hook spoiler toggle to instantly re-render the grid while modal is open
@@ -2216,9 +2231,9 @@ function init(puz){
           <div style="display:flex;gap:2px;height:20px;align-items:end;" class="strikes-chart">
     `;
     
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 6; i++) {
       const height = maxStrikes > 0 ? (distribution[i] / maxStrikes) * 100 : 0;
-      const color = ['#4caf50', '#ffb300', '#ff9800', '#e53935'][i];
+      const color = ['#4caf50', '#ffb300', '#ff9800', '#ff8a65', '#e57373', '#000000'][i];
       statsHtml += `
         <div style="flex:1;background:${color};height:${height}%;min-height:2px;border-radius:1px;" title="${i} strikes: ${distribution[i]} games"></div>
       `;
@@ -2231,6 +2246,8 @@ function init(puz){
             <div style="flex:1;text-align:center;">1</div>
             <div style="flex:1;text-align:center;">2</div>
             <div style="flex:1;text-align:center;">3</div>
+            <div style="flex:1;text-align:center;">4</div>
+            <div style="flex:1;text-align:center;">5</div>
           </div>
         </div>
       </div>
@@ -2367,8 +2384,8 @@ function init(puz){
       
       // If puzzle is already completed (either solved or failed), show share popup
       if (finished || (solvedRows.size === 4 && solvedCols.size === 4)) {
-        // If finished due to 3 strikes, we need to show the correct category labels
-        if (finished && strikes >= 3) {
+        // If finished due to 5 strikes, we need to show the correct category labels
+        if (finished && strikes >= 5) {
           relabelAllHeaders();
         }
         
@@ -2378,11 +2395,11 @@ function init(puz){
           showShare(won);
           $('#shareBtn').style.display = 'block';
         }, 500);
-      } else if (strikes >= 3) {
-        // Handle case where game was finished with 3 strikes but finished flag wasn't set
+      } else if (strikes >= 5) {
+        // Handle case where game was finished with 5 strikes but finished flag wasn't set
         finished = true;
         
-        // Rearrange words into proper solved positions (like after 3rd strike)
+        // Rearrange words into proper solved positions (like after 5th strike)
         const animTime = solveCompletely();
         
         // After swaps finish, show missing headers & freeze board
