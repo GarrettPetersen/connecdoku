@@ -27,9 +27,27 @@ import fs from 'fs';
 
 // Function to calculate puzzle date from index
 function getPuzzleDate(index) {
-    const startDate = new Date('2025-07-21T00:00:00');
-    const puzzleDate = new Date(startDate.getTime() + (index * 24 * 60 * 60 * 1000));
-    return puzzleDate.toISOString().split('T')[0]; // Returns YYYY-MM-DD format
+    try {
+        const puzzlesData = JSON.parse(fs.readFileSync('daily_puzzles/puzzles.json', 'utf8'));
+        
+        // For negative indices, calculate backwards from the end
+        if (index < 0) {
+            const actualIndex = puzzlesData.length + index;
+            const startDate = new Date('2025-07-21T00:00:00');
+            const puzzleDate = new Date(startDate.getTime() + (actualIndex * 24 * 60 * 60 * 1000));
+            return puzzleDate.toISOString().split('T')[0];
+        } else {
+            // For positive indices, calculate forward from start date
+            const startDate = new Date('2025-07-21T00:00:00');
+            const puzzleDate = new Date(startDate.getTime() + (index * 24 * 60 * 60 * 1000));
+            return puzzleDate.toISOString().split('T')[0];
+        }
+    } catch (error) {
+        // Fallback to original calculation if file read fails
+        const startDate = new Date('2025-07-21T00:00:00');
+        const puzzleDate = new Date(startDate.getTime() + (index * 24 * 60 * 60 * 1000));
+        return puzzleDate.toISOString().split('T')[0];
+    }
 }
 
 // Function to get puzzle data by index
