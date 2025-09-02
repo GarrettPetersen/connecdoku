@@ -210,7 +210,7 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
     <p class="rowCredit">Connecdoku was created by <a href="https://x.com/GarrettPetersen" target="_blank">@GarrettPetersen</a></p>
     
     <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; font-size: 14px;">
-      <a href="index.html" style="color: #4caf50; text-decoration: none; margin: 0 10px;">Play Game</a>
+      <a href="index.html" style="color: #4caf50; text-decoration: none; margin: 0 10px;">Solve Today's Puzzle</a>
       <a href="archive.html" style="color: #4caf50; text-decoration: none; margin: 0 10px;">Puzzle Archive</a>
       <a href="contact.html" style="color: #4caf50; text-decoration: none; margin: 0 10px;">Contact</a>
       <a href="privacy.html" style="color: #4caf50; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
@@ -304,11 +304,18 @@ const todayIdx=()=>{
 };
 const clr=['lock0','lock1','lock2','lock3','lock4'], emj=['🟩','🟨','🟧','🟧','🟥'];
 
+/* ---------- archive / query handling ---------- */
+const urlParams = new URLSearchParams(window.location.search);
+const requestedPuzzleIndex = urlParams.has('puzzle') ? parseInt(urlParams.get('puzzle'), 10) : null;
+let archiveMode = false; // true when a valid past puzzle is selected
+
 /* ---------- cookie management ---------- */
 let cookiesAccepted = false;
 
 function setCookie(name, value, days = 365) {
   if (!cookiesAccepted) return;
+  // Do not write state or stats cookies in archive mode
+  if (archiveMode && (name === 'connecdoku_state' || name === 'connecdoku_stats')) return;
   const expires = new Date();
   expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
   document.cookie = `${name}=${JSON.stringify(value)};expires=${expires.toUTCString()};path=/`;
@@ -435,6 +442,8 @@ function getTotalGamesFromDistribution() {
 
 /* ---------- load puzzle ---------- */
 function loadGameState(currentPuzzle) {
+  // Do not restore state for archive puzzles
+  if (archiveMode) return null;
   const savedState = getCookie('connecdoku_state');
   const currentDate = todayIdx();
   console.log('Current date index:', currentDate);
@@ -517,9 +526,19 @@ loadStats();
 
 fetch('daily_puzzles/puzzles.json')
   .then(r=>r.json())
-  .then(all=>init(all[todayIdx()%all.length]));
+  .then(all=>{
+    const currentIndex = todayIdx();
+    let selectedIdx = currentIndex % all.length;
+    if (requestedPuzzleIndex !== null && !Number.isNaN(requestedPuzzleIndex)) {
+      if (requestedPuzzleIndex >= 0 && requestedPuzzleIndex < all.length && requestedPuzzleIndex < currentIndex) {
+        archiveMode = true;
+        selectedIdx = requestedPuzzleIndex;
+      }
+    }
+    init(all[selectedIdx], selectedIdx);
+  });
 
-function init(puz){
+function init(puz, puzzleIndex){
 
   /* game vars - declare first so they can be accessed by loadGameState */
   let strikes=0, finished=false, sel=null;
@@ -632,9 +651,20 @@ function init(puz){
   }
 
   renderBoard(); updateStrike();
+  // Show archive notice on page when applicable
+  if (archiveMode) {
+    const note = document.createElement('div');
+    note.textContent = 'Archive puzzles are not included in stats.';
+    note.style.margin = '8px 0 0 0';
+    note.style.textAlign = 'center';
+    note.style.color = '#777';
+    note.style.fontSize = '13px';
+    const credit = document.querySelector('.rowCredit');
+    if (credit && credit.parentNode) credit.parentNode.insertBefore(note, credit.nextSibling);
+  }
   
-  // Save state periodically and on key events
-  setInterval(saveGameState, 30000); // Save every 30 seconds
+  // Save state periodically and on key events (skip in archive mode)
+  if (!archiveMode) setInterval(saveGameState, 30000); // Save every 30 seconds
 
   /* ------------------------------------------------------------
     relabelAllHeaders()  –  hash-based, orientation-agnostic
@@ -1770,9 +1800,11 @@ function init(puz){
     // Hide hint button when game is finished
     $('#hintContainer').style.display = 'none';
 
-      // Update statistics using the same date as the game state
-  const gameDate = new Date(start.getTime() + (todayIdx() * 24 * 60 * 60 * 1000)).toISOString().split('T')[0];
-  updateStats(gameDate, strikes, won);
+      // Update statistics only for today's puzzle
+  if (!archiveMode) {
+    const gameDate = new Date(start.getTime() + (todayIdx() * 24 * 60 * 60 * 1000)).toISOString().split('T')[0];
+    updateStats(gameDate, strikes, won);
+  }
 
     setTimeout(() => {
       showShare(won);
@@ -2134,9 +2166,9 @@ function init(puz){
       }
     }
     
-    // Create the grid with title using the current date (same as puzzle selection)
-    const currentDate = new Date().toISOString().split('T')[0].replace(/-/g, '-');
-    let grid = `Connecdoku ${currentDate}\n\n`;
+    // Title uses the puzzle's date; mark archive if applicable
+    const puzzleDate = new Date(start.getTime() + (puzzleIndex * 24 * 60 * 60 * 1000)).toISOString().split('T')[0];
+    let grid = `Connecdoku ${puzzleDate}${archiveMode ? ' (archive)' : ''}\n\n`;
     grid += cols.join('') + '\n';  // Column categories at top
     for (let r = 0; r < 4; r++) {
       let row = '';
@@ -2186,8 +2218,8 @@ function init(puz){
   }
 
   function showShare(won){
-    // Use the current date (same as puzzle selection) for consistency
-    const currentDate = new Date().toISOString().split('T')[0].replace(/-/g, '-');
+    // Use the puzzle date for consistency
+    const puzzleDate = new Date(start.getTime() + (puzzleIndex * 24 * 60 * 60 * 1000)).toISOString().split('T')[0];
     
     $('#popTitle').textContent = getCustomTitle(won, strikes);
     const spoilerToggle = document.getElementById('spoilerFreeToggle');
@@ -2217,6 +2249,7 @@ function init(puz){
     
     let statsHtml = `
       <div style="margin-top:20px;padding-top:20px;border-top:1px solid #eee;">
+        ${archiveMode ? '<div style="font-size:13px;color:#777;margin-bottom:10px;">Archive puzzles are not included in stats.</div>' : ''}
         <h4 style="margin:0 0 10px 0;">Statistics</h4>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;font-size:14px;" class="stats-grid">
           <div>Current Win Streak: <strong>${stats.currentStreak}</strong></div>

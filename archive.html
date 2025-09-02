@@ -37,8 +37,8 @@ p {
 }
 .puzzle-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   margin: 30px 0;
 }
 .puzzle-card {
@@ -47,40 +47,43 @@ p {
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   border-left: 4px solid #4caf50;
+  box-sizing: border-box;
 }
 .puzzle-date {
   font-weight: bold;
   color: #4caf50;
   margin-bottom: 10px;
 }
-.puzzle-categories {
-  margin: 15px 0;
-}
-.category-section {
-  margin: 10px 0;
-}
-.category-title {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-}
-.category-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-.category-tag {
-  background: #e8f5e8;
-  color: #2e7d32;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 12px;
-  border: 1px solid #c8e6c9;
-}
+.puzzle-categories { display:none; }
 .puzzle-words {
   margin-top: 15px;
   font-size: 14px;
   color: #666;
+}
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+.solve-btn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.note { font-size: 12px; color: #777; margin-top: 4px; }
+
+.load-more-wrap { text-align: center; margin: 10px 0 40px; }
+.load-more {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
 }
 .word-grid {
   display: grid;
@@ -95,6 +98,11 @@ p {
   text-align: center;
   font-size: 12px;
   border: 1px solid #ddd;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  hyphens: auto;
+  max-width: 100%;
 }
 .footer {
   margin-top: 50px;
@@ -135,8 +143,11 @@ p {
     
     <p>Connecdoku is a daily word puzzle game where players organize 16 words into a 4×4 grid where each row and column forms a category. The challenge lies in finding the perfect arrangement where each word belongs to both its row category and column category.</p>
     
-    <div id="puzzleContainer">
+    <div id="puzzleContainer" class="puzzle-grid">
       <div class="loading">Loading puzzle archive...</div>
+    </div>
+    <div class="load-more-wrap" style="display:none;">
+      <button id="loadMore" class="load-more">Load more</button>
     </div>
     
     <div class="footer">
@@ -157,6 +168,8 @@ p {
       .then(response => response.json())
       .then(puzzles => {
         const container = document.getElementById('puzzleContainer');
+        const loadWrap = document.querySelector('.load-more-wrap');
+        const loadBtn = document.getElementById('loadMore');
         const pastPuzzles = [];
         
         // Calculate which puzzles are in the past
@@ -186,8 +199,12 @@ p {
         }
         
         let html = '';
+        const PAGE_SIZE = 100;
+        let rendered = 0;
         
-        pastPuzzles.forEach(({ index, puzzle, date }) => {
+        function renderBatch() {
+          const slice = pastPuzzles.slice(rendered, rendered + PAGE_SIZE);
+          slice.forEach(({ index, puzzle, date }) => {
           const dateStr = date.toLocaleDateString('en-US', { 
             weekday: 'long', 
             year: 'numeric', 
@@ -199,42 +216,45 @@ p {
             <div class="puzzle-card">
               <div class="puzzle-date">${dateStr}</div>
               
-              <div class="puzzle-categories">
-                <div class="category-section">
-                  <div class="category-title">Row Categories:</div>
-                  <div class="category-list">
-                    ${puzzle.rows.map(cat => `<span class="category-tag">${cat}</span>`).join('')}
-                  </div>
-                </div>
-                
-                <div class="category-section">
-                  <div class="category-title">Column Categories:</div>
-                  <div class="category-list">
-                    ${puzzle.cols.map(cat => `<span class="category-tag">${cat}</span>`).join('')}
-                  </div>
-                </div>
-              </div>
-              
               <div class="puzzle-words">
                 <strong>Words:</strong>
                 <div class="word-grid">
           `;
           
-          // Display words in 4x4 grid
-          for (let r = 0; r < 4; r++) {
-            for (let c = 0; c < 4; c++) {
-              html += `<div class="word-cell">${puzzle.words[r][c]}</div>`;
-            }
-          }
+          // Display the 16 words in randomized order
+          const flat = [...puzzle.words.flat()].map(v => [Math.random(), v]).sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
+          for (let i = 0; i < 16; i++) html += `<div class="word-cell">${flat[i]}</div>`;
           
           html += `
                 </div>
               </div>
+              <div class="actions">
+                <a class="solve-btn" href="index.html?puzzle=${index}">Solve this puzzle</a>
+                <span class="note">Archive puzzles are not included in stats.</span>
+              </div>
             </div>
           `;
-        });
+          });
+          rendered += slice.length;
+          if (rendered === slice.length) {
+            container.innerHTML = html;
+          } else {
+            container.insertAdjacentHTML('beforeend', html);
+          }
+          html = '';
+          if (rendered < pastPuzzles.length) {
+            loadWrap.style.display = '';
+          } else {
+            loadWrap.style.display = 'none';
+          }
+        }
         
-        container.innerHTML = html;
+        renderBatch();
+        
+        if (rendered < pastPuzzles.length) {
+          loadWrap.style.display = '';
+          loadBtn.onclick = () => renderBatch();
+        }
       })
       .catch(error => {
         console.error('Error loading puzzles:', error);

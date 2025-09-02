@@ -1,7 +1,10 @@
 # Connecdoku Development Makefile
 # Common commands for managing the puzzle database and data
 
-.PHONY: help build clean solve clean-db check-future curator update-data review-puzzle delete-low-quality geological-era species-data
+.PHONY: help build clean solve clean-db check-future curator update-data review-puzzle delete-low-quality geological-era species-data serve
+
+# Local server config
+PORT ?= 8000
 
 # Default target
 help:
@@ -10,6 +13,7 @@ help:
 	@echo "Build & Setup:"
 	@echo "  build          - Build Rust binaries (cdx_cleaner, cdx_writer, cdx_worker)"
 	@echo "  clean          - Clean Rust build artifacts"
+	@echo "  serve          - Serve the site at http://localhost:$(PORT) (override with PORT=xxxx)"
 	@echo ""
 	@echo "Database Operations:"
 	@echo "  solve          - Run matrix solver to generate new puzzles"
@@ -145,3 +149,9 @@ rebuild: clean-db solve
 # Quick validation check
 validate: check-future
 	@echo "✓ Validation check complete"
+
+# Serve static site locally
+serve:
+	@echo "Serving static site at http://localhost:$(PORT)"
+	@echo "Press Ctrl+C to stop."
+	python3 -m http.server $(PORT)
