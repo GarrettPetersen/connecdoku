@@ -448,6 +448,23 @@ const categoriesJson = JSON.parse(
 );
 console.log(`Loaded ${Object.keys(categoriesJson).length} categories`);
 
+// Load meta-categories for validation
+console.log("Loading meta-categories...");
+const metaCatsJson = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "data", "meta_categories.json"))
+);
+console.log(`Loaded ${Object.keys(metaCatsJson).length} meta-categories`);
+
+// Create meta-category mapping (exclude "No Meta Category")
+const metaMap = {};
+for (const [metaCat, categories] of Object.entries(metaCatsJson)) {
+    if (metaCat !== 'No Meta Category') {
+        for (const category of categories) {
+            metaMap[category] = metaCat;
+        }
+    }
+}
+
 const catSet = {};  // category → Set of words
 for (const [cat, words] of Object.entries(categoriesJson)) {
     catSet[cat] = new Set(words);
@@ -487,6 +504,21 @@ function validatePuzzle(puzzle) {
         if (!catSet[category]) {
             console.log(`❌ Category "${category}" not found in current word list`);
             return false;
+        }
+    }
+
+    // Check meta-category constraints (max 2 per meta-category, except Letter Patterns which is max 1)
+    const metaCounts = new Map();
+    for (const category of allCategories) {
+        const metaCat = metaMap[category];
+        if (metaCat) {  // Skip categories not in any meta-category or in "No Meta Category"
+            const count = metaCounts.get(metaCat) || 0;
+            const maxAllowed = metaCat === "Letter Patterns" ? 1 : 2;
+            if (count >= maxAllowed) {
+                console.log(`❌ Meta-category constraint violated: "${metaCat}" appears ${count + 1} times (max ${maxAllowed} allowed)`);
+                return false;
+            }
+            metaCounts.set(metaCat, count + 1);
         }
     }
 
