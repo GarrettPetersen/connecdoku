@@ -2998,5 +2998,45 @@
         "Aliens"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1940s",
+      "1960s",
+      "Ming Dynasty",
+      "Song Dynasty"
+    ],
+    "cols": [
+      "Classic Literature",
+      "Military Conflicts",
+      "Military Leaders",
+      "Starts with GRE"
+    ],
+    "words": [
+      [
+        "Animal Farm",
+        "The Battle of Stalingrad",
+        "Heinz Guderian",
+        "Green Arrow"
+      ],
+      [
+        "One Hundred Years of Solitude",
+        "Bay of Pigs Invasion",
+        "John Boyd",
+        "Green Eggs and Ham"
+      ],
+      [
+        "Journey to the West",
+        "Battle of Lake Poyang",
+        "Zhu Yuanzhang",
+        "Great Wall"
+      ],
+      [
+        "Water Margin",
+        "Jingkang Incident",
+        "Yue Fei",
+        "Green Tea"
+      ]
+    ]
   }
 ]
