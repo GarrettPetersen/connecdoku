@@ -3078,5 +3078,85 @@
         "Red Dragon"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1981",
+      "1988",
+      "Black and White",
+      "Ends with ERS"
+    ],
+    "cols": [
+      "Action Stories",
+      "Books",
+      "Fantasy Stories",
+      "Men"
+    ],
+    "words": [
+      [
+        "Escape from New York",
+        "The Fox and the Hound",
+        "Time Bandits",
+        "Mehmet Ali Agca"
+      ],
+      [
+        "Die Hard",
+        "The Silence of the Lambs",
+        "My Neighbor Totoro",
+        "Rain Man"
+      ],
+      [
+        "King Kong",
+        "To Kill a Mockingbird",
+        "It's a Wonderful Life",
+        "Othello"
+      ],
+      [
+        "The Dam Busters",
+        "The Three Musketeers",
+        "Ghostbusters",
+        "Wright Brothers"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "17th Century",
+      "1900s",
+      "Cold War",
+      "Things Roman"
+    ],
+    "cols": [
+      "Adventure Stories",
+      "Political Events",
+      "Things German",
+      "Wars"
+    ],
+    "words": [
+      [
+        "Don Quixote",
+        "Second Defenestration of Prague",
+        "Bach",
+        "The English Civil War"
+      ],
+      [
+        "The Wind in the Willows",
+        "Triple Entente",
+        "Einstein",
+        "The Russo-Japanese War"
+      ],
+      [
+        "Davy Crockett",
+        "U-2 Spy Plane Incident",
+        "East Germany",
+        "The Vietnam War"
+      ],
+      [
+        "The Seven Magnificent Gladiators",
+        "First Triumvirate",
+        "Germania",
+        "Third Servile War"
+      ]
+    ]
   }
 ]
