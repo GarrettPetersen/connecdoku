@@ -194,7 +194,7 @@ fn run_work_streaming<W: Write>(state: &State, start: usize, end: usize, j_start
 
                                     if state.write_mode {
                                         if let Some(ref db) = state.db {
-                                            let sql = "INSERT OR IGNORE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES (?1,?2,?3,?4,?5,?6,?7,?8,?9,?10)";
+                                            let sql = "INSERT OR REPLACE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES (?1,?2,?3,?4,?5,?6,?7,?8,?9,?10)";
                                             let rows_cats: Vec<&str> = rows.iter().map(|&idx| state.categories[idx].as_str()).collect();
                                             let cols_cats: Vec<&str> = cols.iter().map(|&idx| state.categories[idx].as_str()).collect();
                                             use sha2::{Digest, Sha256};

@@ -105,6 +105,16 @@ if (isMainThread) {
   });
   const wordListHash = sha256(fs.readFileSync(WORDS_F));
 
+  // Check current database state
+  console.log("Checking database state...");
+  db.get("SELECT COUNT(*) as total, COUNT(CASE WHEN word_list_hash = ? THEN 1 END) as current_hash FROM puzzles", [wordListHash], (err, row) => {
+    if (err) {
+      console.error("Error checking database state:", err);
+    } else {
+      console.log(`Database contains ${row.total} puzzles (${row.current_hash} with current hash, ${row.total - row.current_hash} with old hash)`);
+    }
+  });
+
   // Check for existing progress and initialize completed work
   const savedProgress = loadProgress();
 
@@ -337,7 +347,7 @@ if (isMainThread) {
           (st.currentChunk.chunkIndex !== undefined ?
             ` (i=${st.currentChunk.start}, chunk=${st.currentChunk.chunkIndex + 1}/${st.currentChunk.totalChunks}, j=${st.jProgress}/${st.totalJ})` :
             ` (i=${st.currentChunk.start}, j=${st.jProgress}/${st.totalJ})`) : "";
-        const stats = ` [${st.puzzlesFound} found, ${st.puzzlesInserted} inserted]`;
+        const stats = ` [${st.puzzlesFound} found, ${st.puzzlesInserted} processed]`;
         out += `\nW${idx} [${bar(pct)}] ${(pct * 100).toFixed(1).padStart(6)}%${st.done ? " ✓" : ""}${chunkInfo}${stats}`;
       });
       out += `\nQueue: ${workQueue.length} chunks remaining   elapsed: ${fmt(elapsed)}`;
@@ -373,7 +383,7 @@ if (isMainThread) {
   const CHECKPOINT_INTERVAL = 60000; // 1 minute between checkpoints
   const runWithRetryMain = async (fn, attempts = 5) => {
     for (let i = 0; i < attempts; i++) {
-      try { await fn(); return; } catch (e) { await new Promise(r => setTimeout(r, 50 + Math.random()*200)); }
+      try { await fn(); return; } catch (e) { await new Promise(r => setTimeout(r, 50 + Math.random() * 200)); }
     }
   };
   async function processInsertQueue() {
@@ -388,9 +398,9 @@ if (isMainThread) {
         const chunk = rows.slice(i, i + BATCH_SIZE_MAIN);
         const ph = chunk.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
         const flat = chunk.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
-        const sql = `INSERT OR IGNORE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
+        const sql = `INSERT OR REPLACE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
         await runWithRetryMain(() => new Promise((resolve) => {
-          db.run(sql, flat, function(err){
+          db.run(sql, flat, function (err) {
             if (err) { console.error('Batch insert error (main):', err); return resolve(); }
             const changed = typeof this.changes === 'number' ? this.changes : 0;
             if (changed && status[sourceId]) {
@@ -402,14 +412,14 @@ if (isMainThread) {
         }));
       }
       // Acknowledge to the worker that its batch is done (provides backpressure)
-      try { const w = workers[sourceId]; if (w) w.postMessage({ type: 'batch_done', reqId, inserted: insertedForItem }); } catch {}
-      
+      try { const w = workers[sourceId]; if (w) w.postMessage({ type: 'batch_done', reqId, inserted: insertedForItem }); } catch { }
+
       // Checkpoint periodically to prevent WAL buildup
       const now = Date.now();
       if (now - lastCheckpointTime > CHECKPOINT_INTERVAL) {
         console.log('Performing database checkpoint to prevent WAL buildup...');
         try {
-          db.run("PRAGMA wal_checkpoint(TRUNCATE)", function(err) {
+          db.run("PRAGMA wal_checkpoint(TRUNCATE)", function (err) {
             if (err) {
               console.error('Checkpoint error:', err);
             } else {
@@ -421,7 +431,7 @@ if (isMainThread) {
           console.error('Checkpoint failed:', e.message);
         }
       }
-      
+
       redraw();
     }
     inserting = false;
@@ -429,7 +439,7 @@ if (isMainThread) {
 
   for (let id = 0; id < nWorkers; id++) {
     const w = new Worker(fileURLToPath(import.meta.url), {
-      workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH, N1Arr, N2Arr, writeMode: (process.env.SOLVER_WRITE_MODE||'rust').toLowerCase() }
+      workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH, N1Arr, N2Arr, writeMode: (process.env.SOLVER_WRITE_MODE || 'rust').toLowerCase() }
     });
     workers.push(w);
 
@@ -501,7 +511,7 @@ if (isMainThread) {
           insertQueue.push({ id: msg.id, reqId: msg.reqId, rows: msg.rows });
           processInsertQueue();
         } else {
-          try { const w = workers[msg.id]; if (w) w.postMessage({ type: 'batch_done', reqId: msg.reqId, inserted: 0 }); } catch {}
+          try { const w = workers[msg.id]; if (w) w.postMessage({ type: 'batch_done', reqId: msg.reqId, inserted: 0 }); } catch { }
         }
       } else if (msg.type === 'request_write_permit') {
         if (writerPermits > 0) {
@@ -513,7 +523,7 @@ if (isMainThread) {
       } else if (msg.type === 'release_write_permit') {
         const next = writerQueue.shift();
         if (next) {
-          try { next.postMessage({ type: 'write_permit' }); } catch {}
+          try { next.postMessage({ type: 'write_permit' }); } catch { }
         } else {
           writerPermits++;
         }
@@ -541,28 +551,21 @@ if (isMainThread) {
         // Check if all workers have cleaned up
         if (cleanedUpCount === nWorkers) {
           // Wait a moment for any final database writes to complete
-          console.log("All workers cleaned up. Closing database...");
+          console.log("All workers cleaned up. Finalizing...");
           setTimeout(() => {
-            db.close(() => {
-              const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
-              const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
-              console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} inserted.`);
-              
-              // Final checkpoint to ensure all changes are applied
-              console.log('Performing final database checkpoint...');
-              try {
-                db.run("PRAGMA wal_checkpoint(TRUNCATE)", function(err) {
-                  if (err) {
-                    console.error('Final checkpoint error:', err);
-                  } else {
-                    console.log('Final database checkpoint completed successfully.');
-                  }
-                });
-              } catch (e) {
-                console.error('Final checkpoint failed:', e.message);
+            const totalFound = status.reduce((sum, st) => sum + st.puzzlesFound, 0);
+            const totalInserted = status.reduce((sum, st) => sum + st.puzzlesInserted, 0);
+            console.log(`\nAll done. Total: ${totalFound} puzzles found, ${totalInserted} processed.`);
+
+            // Final checkpoint to ensure all changes are applied
+            console.log('Performing final database checkpoint...');
+            db.run("PRAGMA wal_checkpoint(TRUNCATE)", function (err) {
+              if (err) {
+                console.error('Final checkpoint error:', err);
+              } else {
+                console.log('Final database checkpoint completed successfully.');
               }
 
-              // Run database cleanup
               // Post-run data updater
               try {
                 console.log("Running data update (post)…");
@@ -572,27 +575,29 @@ if (isMainThread) {
                 console.warn('update_all_data.js (post) failed:', e.message);
               }
 
-              console.log("Running database cleanup (parallel validator)...");
-              // Always reset cleaner progress so it validates newly-found puzzles too
-              try {
-                const cleanProgress = path.join(__dirname, "progress_clean.json");
-                if (fs.existsSync(cleanProgress)) fs.unlinkSync(cleanProgress);
-              } catch (e) {
-                console.warn("Warning: could not remove progress_clean.json:", e.message);
-              }
-              import('child_process').then(({ spawn }) => {
-                const cleanup = spawn('node', ['clean_db_parallel.js'], {
-                  stdio: 'inherit',
-                  cwd: __dirname
-                });
+              // Clean up puzzles that still have old word list hashes
+              console.log("Cleaning up puzzles with old word list hashes...");
+              db.run("DELETE FROM puzzles WHERE word_list_hash != ?", [wordListHash], function (err) {
+                if (err) {
+                  console.error("Error deleting old puzzles:", err);
+                } else {
+                  const deleted = this.changes;
+                  console.log(`Deleted ${deleted} puzzles with old word list hash`);
+                }
 
-                cleanup.on('close', (code) => {
-                  if (code === 0) {
-                    console.log("Database cleanup completed successfully.");
+                // Vacuum to reclaim space after deletion
+                db.run("VACUUM", function (err) {
+                  if (err) {
+                    console.error("Error during VACUUM:", err);
                   } else {
-                    console.log(`Database cleanup failed with code ${code}.`);
+                    console.log("Database vacuumed successfully");
                   }
-                  process.exit(0);
+
+                  // Now close the database and exit
+                  db.close(() => {
+                    console.log("Database closed. Exiting.");
+                    process.exit(0);
+                  });
                 });
               });
             });
@@ -606,7 +611,7 @@ if (isMainThread) {
     if (workQueue.length > 0) {
       const chunk = workQueue.shift();
       status[id].currentChunk = chunk;
-      if (DEBUG) console.log(`[main] assign work to W${id}: i=${chunk.start} jTotal=${chunk.totalJ}${chunk.chunkIndex!==undefined?` sub=${chunk.chunkIndex+1}/${chunk.totalChunks}`:''}`);
+      if (DEBUG) console.log(`[main] assign work to W${id}: i=${chunk.start} jTotal=${chunk.totalJ}${chunk.chunkIndex !== undefined ? ` sub=${chunk.chunkIndex + 1}/${chunk.totalChunks}` : ''}`);
       w.postMessage({ type: "work", chunk });
     } else {
       if (!cleanupSent[id]) {
@@ -653,7 +658,7 @@ if (isMainThread) {
   async function runWithRetry(fn, attempts = 8) {
     for (let i = 0; i < attempts; i++) {
       try { return await fn(); } catch (e) {
-        if (e && e.code === 'SQLITE_BUSY' && i < attempts - 1) { await sleep(50 + Math.random()*200); continue; }
+        if (e && e.code === 'SQLITE_BUSY' && i < attempts - 1) { await sleep(50 + Math.random() * 200); continue; }
         throw e;
       }
     }
@@ -673,8 +678,8 @@ if (isMainThread) {
       await new Promise(resolve => {
         const handler = (msg) => {
           if (msg && msg.type === 'batch_done' && msg.reqId === reqId) {
-            try { parentPort.off('message', handler); } catch {}
-            if (DEBUG) console.log(`[W${WID}] ack batch req=${reqId} inserted=${msg.inserted||0}`);
+            try { parentPort.off('message', handler); } catch { }
+            if (DEBUG) console.log(`[W${WID}] ack batch req=${reqId} inserted=${msg.inserted || 0}`);
             puzzlesInserted += (msg.inserted || 0);
             parentPort.postMessage({ type: 'stats', id: WID, puzzlesFound, puzzlesInserted });
             pendingBatches--;
@@ -687,11 +692,11 @@ if (isMainThread) {
       // Worker-local insert with transaction and retry
       const ph = rows.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
       const flat = rows.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
-      const sql = `INSERT OR IGNORE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
+      const sql = `INSERT OR REPLACE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
       try {
         await runWithRetry(() => new Promise((resolve, reject) => wdb.run('BEGIN IMMEDIATE', err => err ? reject(err) : resolve())));
         await runWithRetry(() => new Promise((resolve, reject) => {
-          wdb.run(sql, flat, function(err){
+          wdb.run(sql, flat, function (err) {
             if (err) return reject(err);
             const changed = typeof this.changes === 'number' ? this.changes : 0;
             if (changed) {
@@ -703,7 +708,7 @@ if (isMainThread) {
         }));
         await runWithRetry(() => new Promise((resolve, reject) => wdb.run('COMMIT', err => err ? reject(err) : resolve())));
       } catch (e) {
-        try { await new Promise(res => wdb.run('ROLLBACK', () => res())); } catch {}
+        try { await new Promise(res => wdb.run('ROLLBACK', () => res())); } catch { }
         if (!e || e.code !== 'SQLITE_BUSY') console.error(`Worker ${WID} write error:`, e && e.message ? e.message : e);
       }
     }
@@ -822,7 +827,7 @@ if (isMainThread) {
         } else if (msg.type === "Done") {
           if (currentResolve) { const r = currentResolve; currentResolve = null; r(); }
         }
-      } catch {}
+      } catch { }
     });
   }
 
@@ -835,7 +840,7 @@ if (isMainThread) {
     }
     await new Promise((resolve) => {
       currentResolve = resolve;
-      if (DEBUG) console.log(`[W${WID}] rust Work start=${start} end=${end} j=${jStart??0}-${jEnd??'end'}`);
+      if (DEBUG) console.log(`[W${WID}] rust Work start=${start} end=${end} j=${jStart ?? 0}-${jEnd ?? 'end'}`);
       rustProc.stdin.write(JSON.stringify({ type: "Work", start, end, jStart, jEnd }) + "\n");
     });
     await flushBatch();
@@ -854,20 +859,20 @@ if (isMainThread) {
       });
     } else if (msg.type === "cleanup") {
       // Stop Rust reader and process to avoid new lines during teardown
-      try { if (rustRL) { rustRL.removeAllListeners('line'); rustRL.close(); } } catch {}
-      try { if (rustProc) { rustProc.stdin.end(); } } catch {}
+      try { if (rustRL) { rustRL.removeAllListeners('line'); rustRL.close(); } } catch { }
+      try { if (rustProc) { rustProc.stdin.end(); } } catch { }
       // Flush any remaining puzzles
       await flushBatch();
-        parentPort.postMessage({
-          type: "cleanup_done",
-          id: WID,
-          puzzlesFound: puzzlesFound,
-          puzzlesInserted: puzzlesInserted
-        });
-        // Allow worker to exit naturally
-        if (parentPort && parentPort.close) {
-          try { parentPort.close(); } catch {}
-        }
+      parentPort.postMessage({
+        type: "cleanup_done",
+        id: WID,
+        puzzlesFound: puzzlesFound,
+        puzzlesInserted: puzzlesInserted
+      });
+      // Allow worker to exit naturally
+      if (parentPort && parentPort.close) {
+        try { parentPort.close(); } catch { }
+      }
     }
   });
 }
