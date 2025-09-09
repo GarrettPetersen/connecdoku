@@ -1055,7 +1055,18 @@ async function main() {
                 initial: "7"
             });
 
-            const days = parseInt(numDays);
+            const rawDays = String(numDays).trim();
+            if (rawDays === "") {
+                console.log("Returning to main menu...");
+                // Reset selection context to show main menu again
+                targetCategory = null;
+                searchChoice = null;
+                tryingDifferentPuzzle = false;
+                excludedPuzzleHash = null;
+                continue;
+            }
+
+            const days = parseInt(rawDays);
             if (isNaN(days) || days < 1) {
                 console.log("❌ Invalid number of days. Please enter a positive number.");
                 continue;
@@ -1240,65 +1251,75 @@ async function main() {
 
         console.log("Viable word matrix built successfully");
 
-        // Curator chooses a word for each intersection
-        const chosen = Array.from({ length: 4 }, () => Array(4));
-        const usedWords = new Set();
+        // Curator chooses a word for each intersection, with Reset option
+        let chosen;
+        let usedWords;
         let puzzleAbandoned = false;
+        while (true) {
+            chosen = Array.from({ length: 4 }, () => Array(4));
+            usedWords = new Set();
+            let requestedReset = false;
 
-        for (let r = 0; r < 4 && !puzzleAbandoned; ++r) {
-            for (let c = 0; c < 4 && !puzzleAbandoned; ++c) {
-                // Show current progress
-                console.clear();
-                console.log("Rows:", puzzle.rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
-                console.log("\nCols:", puzzle.cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
-                console.log("\nCurrent puzzle state:");
-                console.table(chosen);
-                const excludedCats = getExcludedCategories(puzzle.rows[r], puzzle.cols[c], allCategories);
-                const excludedList = excludedCats.map(cat => formatWithUsage(cat, categoryUsage)).join(', ');
-                console.log(`\nChoosing word for: ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}\n`);
+            for (let r = 0; r < 4 && !puzzleAbandoned && !requestedReset; ++r) {
+                for (let c = 0; c < 4 && !puzzleAbandoned && !requestedReset; ++c) {
+                    // Show current progress
+                    console.clear();
+                    console.log("Rows:", puzzle.rows.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+                    console.log("\nCols:", puzzle.cols.map((cat, i) => `${i + 1}. ${formatWithUsage(cat, categoryUsage)}`).join('\n     '));
+                    console.log("\nCurrent puzzle state:");
+                    console.table(chosen);
+                    const excludedCats = getExcludedCategories(puzzle.rows[r], puzzle.cols[c], allCategories);
+                    const excludedList = excludedCats.map(cat => formatWithUsage(cat, categoryUsage)).join(', ');
+                    console.log(`\nChoosing word for: ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}\n`);
 
-                const opts = viableGrid[r][c].filter(w => !usedWords.has(w));
+                    const opts = viableGrid[r][c].filter(w => !usedWords.has(w));
 
-                let pick;
-                if (opts.length === 1) {
-                    // Even with only one option, still show selection with "None" option
-                    console.log(`Showing 1 option for selection...`);
+                    let pick;
+                    const baseChoices = [
+                        ...opts.map(w => ({ value: w, name: formatWithUsage(w, wordUsage) })),
+                        { value: "RESET", name: "🔁 Reset puzzle curation (start over)" },
+                        { value: "NONE", name: "❌ None - abandon this puzzle" }
+                    ];
 
-                    pick = await prompts.select({
-                        message: `Pick word for ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}`,
-                        choices: [
-                            ...opts.map(w => ({
-                                value: w,
-                                name: formatWithUsage(w, wordUsage)
-                            })),
-                            { value: "NONE", name: "❌ None - abandon this puzzle" }
-                        ]
-                    });
-                } else {
-                    console.log(`Showing ${opts.length} options for selection...`);
+                    if (opts.length === 1) {
+                        console.log(`Showing 1 option for selection...`);
+                        pick = await prompts.select({
+                            message: `Pick word for ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}`,
+                            choices: baseChoices
+                        });
+                    } else {
+                        console.log(`Showing ${opts.length} options for selection...`);
+                        pick = await prompts.select({
+                            message: `Pick word for ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}`,
+                            choices: baseChoices
+                        });
+                    }
 
-                    pick = await prompts.select({
-                        message: `Pick word for ${formatWithUsage(puzzle.rows[r], categoryUsage)} × ${formatWithUsage(puzzle.cols[c], categoryUsage)} AND NOT ${excludedList}`,
-                        choices: [
-                            ...opts.map(w => ({
-                                value: w,
-                                name: formatWithUsage(w, wordUsage)
-                            })),
-                            { value: "NONE", name: "❌ None - abandon this puzzle" }
-                        ]
-                    });
+                    if (pick === "NONE") {
+                        console.log("❌ Puzzle abandoned by user. Returning to main selection...");
+                        puzzleAbandoned = true;
+                        break;
+                    }
+                    if (pick === "RESET") {
+                        console.log("🔁 Resetting current puzzle curation...");
+                        requestedReset = true;
+                        break;
+                    }
+
+                    chosen[r][c] = pick;
+                    usedWords.add(pick);
                 }
-
-                // Check if user selected "None"
-                if (pick === "NONE") {
-                    console.log("❌ Puzzle abandoned by user. Returning to main selection...");
-                    puzzleAbandoned = true;
-                    break; // Exit the word selection loop and continue to main loop
-                }
-
-                chosen[r][c] = pick;
-                usedWords.add(pick);
             }
+
+            if (puzzleAbandoned) {
+                break; // exit selection loop and go to main loop
+            }
+            if (requestedReset) {
+                // Restart selection loop from scratch for same puzzle
+                continue;
+            }
+            // Completed selection without reset/abandon
+            break;
         }
 
         // If puzzle was abandoned, skip to next iteration of main loop
