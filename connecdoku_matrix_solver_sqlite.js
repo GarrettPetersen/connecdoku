@@ -593,6 +593,19 @@ if (isMainThread) {
                     console.log("Database vacuumed successfully");
                   }
 
+                  // Run clean_db_parallel to score puzzles
+                  try {
+                    console.log("Running puzzle validation and scoring...");
+                    const cleanResult = spawnSync('node', ['clean_db_parallel.js'], { cwd: __dirname, stdio: 'inherit', encoding: 'utf8' });
+                    if (cleanResult.status !== 0) {
+                      console.warn('clean_db_parallel.js exited non-zero');
+                    } else {
+                      console.log('Puzzle validation and scoring completed successfully');
+                    }
+                  } catch (e) {
+                    console.warn('clean_db_parallel.js failed:', e.message);
+                  }
+
                   // Now close the database and exit
                   db.close(() => {
                     console.log("Database closed. Exiting.");
