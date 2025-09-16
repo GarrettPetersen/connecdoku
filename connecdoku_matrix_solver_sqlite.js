@@ -100,10 +100,12 @@ if (isMainThread) {
               col0 TEXT,col1 TEXT,col2 TEXT,col3 TEXT,
               word_list_hash TEXT,
               timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-              rank INTEGER
+              rank INTEGER,
+              puzzle_quality_score REAL
             )`);
   });
   const wordListHash = sha256(fs.readFileSync(WORDS_F));
+  console.log(`Word list hash: ${wordListHash}`);
 
   // Check current database state
   console.log("Checking database state...");
@@ -396,9 +398,9 @@ if (isMainThread) {
       let insertedForItem = 0;
       for (let i = 0; i < rows.length; i += BATCH_SIZE_MAIN) {
         const chunk = rows.slice(i, i + BATCH_SIZE_MAIN);
-        const ph = chunk.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
-        const flat = chunk.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
-        const sql = `INSERT OR REPLACE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
+        const ph = chunk.map(() => "(?,?,?,?,?,?,?,?,?,?,?)").join(",");
+        const flat = chunk.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash, null]);
+        const sql = `INSERT OR REPLACE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash,puzzle_quality_score) VALUES ${ph}`;
         await runWithRetryMain(() => new Promise((resolve) => {
           db.run(sql, flat, function (err) {
             if (err) { console.error('Batch insert error (main):', err); return resolve(); }
@@ -441,6 +443,7 @@ if (isMainThread) {
     const w = new Worker(fileURLToPath(import.meta.url), {
       workerData: { id, nWorkers, cats, n, wordListHash, dbPath: DB_PATH, N1Arr, N2Arr, writeMode: (process.env.SOLVER_WRITE_MODE || 'rust').toLowerCase() }
     });
+    console.log(`Worker ${id} wordListHash: ${wordListHash}`);
     workers.push(w);
 
     w.on("message", msg => {
@@ -575,47 +578,60 @@ if (isMainThread) {
                 console.warn('update_all_data.js (post) failed:', e.message);
               }
 
-              // Clean up puzzles that still have old word list hashes
-              console.log("Cleaning up puzzles with old word list hashes...");
-              db.run("DELETE FROM puzzles WHERE word_list_hash != ?", [wordListHash], function (err) {
+              // Check what word_list_hash values actually exist in the database
+              db.all("SELECT word_list_hash, COUNT(*) as count FROM puzzles GROUP BY word_list_hash ORDER BY count DESC LIMIT 10", (err, rows) => {
                 if (err) {
-                  console.error("Error deleting old puzzles:", err);
+                  console.error("Error checking word_list_hash values:", err);
                 } else {
-                  const deleted = this.changes;
-                  console.log(`Deleted ${deleted} puzzles with old word list hash`);
+                  console.log("Word list hash distribution in database:");
+                  rows.forEach(row => {
+                    const hash = row.word_list_hash || 'NULL';
+                    console.log(`  ${hash.slice(0, 16)}... : ${row.count} puzzles`);
+                  });
                 }
 
-                // Vacuum to reclaim space after deletion
-                db.run("VACUUM", function (err) {
+                // Clean up puzzles that still have old word list hashes
+                console.log("Cleaning up puzzles with old word list hashes...");
+                db.run("DELETE FROM puzzles WHERE word_list_hash != ?", [wordListHash], function (err) {
                   if (err) {
-                    console.error("Error during VACUUM:", err);
+                    console.error("Error deleting old puzzles:", err);
                   } else {
-                    console.log("Database vacuumed successfully");
+                    const deleted = this.changes;
+                    console.log(`Deleted ${deleted} puzzles with old word list hash`);
                   }
 
-                  // Close the database first to release all locks
-                  db.close((closeErr) => {
-                    if (closeErr) {
-                      console.error("Error closing database:", closeErr);
+                  // Vacuum to reclaim space after deletion
+                  db.run("VACUUM", function (err) {
+                    if (err) {
+                      console.error("Error during VACUUM:", err);
                     } else {
-                      console.log("Database closed successfully");
+                      console.log("Database vacuumed successfully");
                     }
 
-                    // Now run clean_db_parallel to score puzzles (with database closed)
-                    try {
-                      console.log("Running puzzle validation and scoring...");
-                      const cleanResult = spawnSync('node', ['clean_db_parallel.js'], { cwd: __dirname, stdio: 'inherit', encoding: 'utf8' });
-                      if (cleanResult.status !== 0) {
-                        console.warn('clean_db_parallel.js exited non-zero');
+                    // Close the database first to release all locks
+                    db.close((closeErr) => {
+                      if (closeErr) {
+                        console.error("Error closing database:", closeErr);
                       } else {
-                        console.log('Puzzle validation and scoring completed successfully');
+                        console.log("Database closed successfully");
                       }
-                    } catch (e) {
-                      console.warn('clean_db_parallel.js failed:', e.message);
-                    }
 
-                    console.log("All processes completed. Exiting.");
-                    process.exit(0);
+                      // Now run clean_db_parallel to score puzzles (with database closed)
+                      try {
+                        console.log("Running puzzle validation and scoring...");
+                        const cleanResult = spawnSync('node', ['clean_db_parallel.js'], { cwd: __dirname, stdio: 'inherit', encoding: 'utf8' });
+                        if (cleanResult.status !== 0) {
+                          console.warn('clean_db_parallel.js exited non-zero');
+                        } else {
+                          console.log('Puzzle validation and scoring completed successfully');
+                        }
+                      } catch (e) {
+                        console.warn('clean_db_parallel.js failed:', e.message);
+                      }
+
+                      console.log("All processes completed. Exiting.");
+                      process.exit(0);
+                    });
                   });
                 });
               });
@@ -644,6 +660,7 @@ if (isMainThread) {
 } else {
 
   const { id: WID, nWorkers: NW, cats, n, wordListHash, dbPath, N1Arr, N2Arr, writeMode } = workerData;
+  console.log(`Worker ${WID} received wordListHash: ${wordListHash}`);
 
   // ── load data ──
   const wordsJson = JSON.parse(fs.readFileSync(WORDS_F, "utf8"));
@@ -709,9 +726,9 @@ if (isMainThread) {
       });
     } else {
       // Worker-local insert with transaction and retry
-      const ph = rows.map(() => "(?,?,?,?,?,?,?,?,?,?)").join(",");
-      const flat = rows.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash]);
-      const sql = `INSERT OR REPLACE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash) VALUES ${ph}`;
+      const ph = rows.map(() => "(?,?,?,?,?,?,?,?,?,?,?)").join(",");
+      const flat = rows.flatMap(p => [p.hash, ...p.rows, ...p.cols, wordListHash, null]);
+      const sql = `INSERT OR REPLACE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash,puzzle_quality_score) VALUES ${ph}`;
       try {
         await runWithRetry(() => new Promise((resolve, reject) => wdb.run('BEGIN IMMEDIATE', err => err ? reject(err) : resolve())));
         await runWithRetry(() => new Promise((resolve, reject) => {
@@ -825,7 +842,9 @@ if (isMainThread) {
     rustRL = (await import('readline')).createInterface({ input: rustProc.stdout });
     const metaMap = cats.map(c => categoryToMeta.get(c) || null);
     const write_mode = writeMode === 'rust' ? 'rust' : undefined;
-    rustProc.stdin.write(JSON.stringify({ type: "Init", masks: mask.map(m => Array.from(m)), n1: N1Arr, n2: N2Arr, categories: cats, meta_map: metaMap, write_mode, db_path: dbPath, word_list_hash: wordListHash }) + "\n");
+    const initMsg = { type: "Init", masks: mask.map(m => Array.from(m)), n1: N1Arr, n2: N2Arr, categories: cats, meta_map: metaMap, write_mode, db_path: dbPath, word_list_hash: wordListHash };
+    console.log(`Worker ${WID} sending to Rust: word_list_hash = ${wordListHash} (type: ${typeof wordListHash}, length: ${wordListHash ? wordListHash.length : 'null'})`);
+    rustProc.stdin.write(JSON.stringify(initMsg) + "\n");
     rustRL.on("line", async (line) => {
       try {
         const msg = JSON.parse(line);
