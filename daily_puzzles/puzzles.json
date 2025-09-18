@@ -3398,5 +3398,285 @@
         "Saturn"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Assassins",
+      "Great Conquerors",
+      "Movies",
+      "Starts with ROM"
+    ],
+    "cols": [
+      "Roman Empire",
+      "Shakespeare Characters",
+      "Things British",
+      "Things Chinese"
+    ],
+    "words": [
+      [
+        "Cassius Chaerea",
+        "Brutus",
+        "Robert Catesby",
+        "Jing Ke"
+      ],
+      [
+        "Trajan",
+        "Caesar",
+        "William the Conqueror",
+        "Qin Shi Huang"
+      ],
+      [
+        "Pompeii",
+        "Cleopatra",
+        "Four Weddings and a Funeral",
+        "Crouching Tiger, Hidden Dragon"
+      ],
+      [
+        "Roman Forum",
+        "Romeo",
+        "Romeo and Juliet",
+        "Romance of the Three Kingdoms"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Drama Stories",
+      "Foods",
+      "Founders of Religious Movements",
+      "Tang Dynasty"
+    ],
+    "cols": [
+      "Han Dynasty",
+      "Things Indian",
+      "Things Korean",
+      "Women"
+    ],
+    "words": [
+      [
+        "Romance of the Three Kingdoms",
+        "The Ramayana",
+        "Parasite",
+        "Carrie"
+      ],
+      [
+        "Dumpling",
+        "Palak Paneer",
+        "Kimchi",
+        "Olive"
+      ],
+      [
+        "Zhang Daoling",
+        "Bodhidharma",
+        "Sun Myung Moon",
+        "Ellen G. White"
+      ],
+      [
+        "Silk Road",
+        "Tea",
+        "Green Tea",
+        "Wu Zetian"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1989",
+      "1992",
+      "Animal Terms",
+      "Ends with DAY"
+    ],
+    "cols": [
+      "Anime",
+      "Christmas Stories",
+      "Sci-fi Stories",
+      "Songs"
+    ],
+    "words": [
+      [
+        "Kiki's Delivery Service",
+        "National Lampoon's Christmas Vacation",
+        "Back to the Future Part II",
+        "We didn't start the fire"
+      ],
+      [
+        "Porco Rosso",
+        "Home Alone 2: Lost in New York",
+        "Alien 3",
+        "Creep"
+      ],
+      [
+        "Pokemon",
+        "Elf",
+        "Black Panther",
+        "Monkey"
+      ],
+      [
+        "Only Yesterday",
+        "The Holiday",
+        "Terminator 2: Judgment Day",
+        "Yesterday"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "13th Century",
+      "5th Century BC",
+      "Things American",
+      "Things Greek"
+    ],
+    "cols": [
+      "Epic Stories",
+      "Events",
+      "Monarchs",
+      "Writers"
+    ],
+    "words": [
+      [
+        "The Tale of the Heike",
+        "The Albigensian Crusade",
+        "Kublai Khan",
+        "Dante"
+      ],
+      [
+        "The Ramayana",
+        "Hundred Schools of Thought",
+        "Cyrus the Great",
+        "Sun Tzu"
+      ],
+      [
+        "Star Wars",
+        "Woodstock",
+        "James",
+        "Sylvia Plath"
+      ],
+      [
+        "Iliad",
+        "The Greek War of Independence",
+        "Philip II of Macedon",
+        "Aristotle"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "14th Century",
+      "1950s",
+      "Roman Republic",
+      "Things Russian"
+    ],
+    "cols": [
+      "Battles",
+      "Ends with WAR",
+      "Period Stories",
+      "Weapons"
+    ],
+    "words": [
+      [
+        "Battle of Lake Poyang",
+        "The Hundred Years War",
+        "Romance of the Three Kingdoms",
+        "Longbow"
+      ],
+      [
+        "Battle of Dien Bien Phu",
+        "The Korean War",
+        "Rashomon",
+        "Castle Bravo"
+      ],
+      [
+        "Battle of Carrhae",
+        "Third Servile War",
+        "Spartacus",
+        "Pilum"
+      ],
+      [
+        "The Battle of Stalingrad",
+        "Soviet-Afghan War",
+        "War and Peace",
+        "Tsar Bomba"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1910s",
+      "21st Century",
+      "Inventors",
+      "Things Spanish"
+    ],
+    "cols": [
+      "Companies",
+      "Deaf People",
+      "Ships",
+      "Things Italian"
+    ],
+    "words": [
+      [
+        "Rockefeller",
+        "Helen Keller",
+        "Empress of Ireland",
+        "Maserati"
+      ],
+      [
+        "Red",
+        "Nyle DiMarco",
+        "Boaty McBoatface",
+        "Andrea Bocelli"
+      ],
+      [
+        "Bell",
+        "Alexander Graham Bell",
+        "Graf Zeppelin",
+        "Galileo"
+      ],
+      [
+        "Airbus",
+        "Francisco Goya",
+        "Pinta",
+        "Christopher Columbus"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1980",
+      "2010",
+      "Stories about Families",
+      "Thriller Stories"
+    ],
+    "cols": [
+      "Best Picture Winners",
+      "Ends with ION",
+      "Japanese Films",
+      "Sequels"
+    ],
+    "words": [
+      [
+        "Ordinary People",
+        "Mount St. Helens Eruption",
+        "Kagemusha",
+        "The Empire Strikes Back"
+      ],
+      [
+        "The King's Speech",
+        "Red Dead Redemption",
+        "Arrietty",
+        "Harry Potter and the Deathly Hallows: Part 1"
+      ],
+      [
+        "The Sound of Music",
+        "National Lampoon's Christmas Vacation",
+        "My Neighbor Totoro",
+        "The Incredibles 2"
+      ],
+      [
+        "Argo",
+        "Pulp Fiction",
+        "High and Low",
+        "Kill Bill: Volume 2"
+      ]
+    ]
   }
 ]
