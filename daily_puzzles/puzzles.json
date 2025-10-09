@@ -3998,5 +3998,125 @@
         "Marco Polo"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1980s",
+      "1994",
+      "Foods",
+      "Greek Mythology"
+    ],
+    "cols": [
+      "Movies",
+      "Things Japanese",
+      "Things That Fly",
+      "Women"
+    ],
+    "words": [
+      [
+        "Little Shop of Horrors",
+        "Super Mario",
+        "Black Hawk",
+        "Madonna"
+      ],
+      [
+        "Forrest Gump",
+        "The Wind-Up Bird Chronicle",
+        "Zazu",
+        "Nicole Brown Simpson"
+      ],
+      [
+        "Chocolat",
+        "Gyoza",
+        "Chicken",
+        "Olive"
+      ],
+      [
+        "Troy",
+        "Odyssey",
+        "Pegasus",
+        "Siren"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Assassination of Caesar",
+      "Assassination of Lincoln",
+      "Things British",
+      "Things Chinese"
+    ],
+    "cols": [
+      "Assassins",
+      "Dates",
+      "Historical Sites",
+      "National Capitals"
+    ],
+    "words": [
+      [
+        "Servilius Casca",
+        "Ides of March",
+        "Curia",
+        "Rome"
+      ],
+      [
+        "John Wilkes Booth",
+        "April 14th, 1865",
+        "Ford's Theatre",
+        "Washington"
+      ],
+      [
+        "Guy Fawkes",
+        "1984",
+        "Hadrian's Wall",
+        "Wellington"
+      ],
+      [
+        "Jing Ke",
+        "2046",
+        "Grand Canal",
+        "Beijing"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1980s",
+      "1990s",
+      "Cretaceous Period",
+      "Saurischians"
+    ],
+    "cols": [
+      "Carnivores",
+      "Jurassic Period",
+      "Omnivores",
+      "Things That Fly"
+    ],
+    "words": [
+      [
+        "Bowser",
+        "Spike",
+        "Monkey",
+        "F-16"
+      ],
+      [
+        "Simba",
+        "Jurassic Park",
+        "Sonic",
+        "F-22"
+      ],
+      [
+        "Deinosuchus",
+        "Breakup of Pangea",
+        "Ant",
+        "Bee"
+      ],
+      [
+        "Brontornis",
+        "Diplodocus",
+        "Cassowary",
+        "Swan"
+      ]
+    ]
   }
 ]
