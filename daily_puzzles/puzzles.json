@@ -4158,5 +4158,125 @@
         "Avicenna"
       ]
     ]
+  },
+  {
+    "rows": [
+      "19th Century",
+      "1st Century BC",
+      "Han Dynasty",
+      "Things American"
+    ],
+    "cols": [
+      "Buildings",
+      "Epic Stories",
+      "Literature Quotes",
+      "Political Events"
+    ],
+    "words": [
+      [
+        "Eiffel Tower",
+        "War and Peace",
+        "Water, water everywhere",
+        "Triple Alliance"
+      ],
+      [
+        "Curia",
+        "Commentarii de Bello Gallico",
+        "Et tu, Brute?",
+        "Second Triumvirate"
+      ],
+      [
+        "Bronze Bird Terrace",
+        "Romance of the Three Kingdoms",
+        "The realm, long divided, must unite",
+        "Wang Mang Usurpation"
+      ],
+      [
+        "Empire State Building",
+        "Star Wars",
+        "Give me liberty or give me death",
+        "The Watergate Scandal"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1983",
+      "1992",
+      "Best Picture Winners",
+      "Movies featuring Johnny Depp"
+    ],
+    "cols": [
+      "Comedy Stories",
+      "Movies featuring Al Pacino",
+      "Period Stories",
+      "Sequels"
+    ],
+    "words": [
+      [
+        "A Christmas Story",
+        "Scarface",
+        "The Seven Magnificent Gladiators",
+        "Return of the Jedi"
+      ],
+      [
+        "The Muppet Christmas Carol",
+        "Scent of a Woman",
+        "Howard's End",
+        "Alien 3"
+      ],
+      [
+        "My Fair Lady",
+        "The Godfather",
+        "Gladiator",
+        "The Lord of the Rings: The Return of the King"
+      ],
+      [
+        "Chocolat",
+        "Donnie Brasco",
+        "Sweeney Todd: The Demon Barber of Fleet Street",
+        "Pirates of the Caribbean: Dead Men Tell No Tales"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1986",
+      "1990",
+      "Movies featuring Kurt Russell",
+      "Prequels"
+    ],
+    "cols": [
+      "Action Stories",
+      "Books",
+      "Oscar Winners",
+      "Sci-fi Stories"
+    ],
+    "words": [
+      [
+        "A Better Tomorrow",
+        "IT",
+        "Platoon",
+        "Flight of the Navigator"
+      ],
+      [
+        "Die Hard 2",
+        "Oh, the Places You'll Go!",
+        "Dances with Wolves",
+        "Back to the Future Part III"
+      ],
+      [
+        "Death Proof",
+        "The Fox and the Hound",
+        "Once Upon a Time in Hollywood",
+        "The Thing"
+      ],
+      [
+        "The Good, the Bad and the Ugly",
+        "The Magician's Nephew",
+        "The Godfather Part II",
+        "Revenge of the Sith"
+      ]
+    ]
   }
 ]
