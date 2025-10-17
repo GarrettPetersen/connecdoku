@@ -4358,5 +4358,125 @@
         "Princess Peach"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Colors",
+      "Paleogene Period",
+      "Superheroes",
+      "Things Thai"
+    ],
+    "cols": [
+      "Green Things",
+      "Place Names",
+      "Starts with RED",
+      "Yellow Things"
+    ],
+    "words": [
+      [
+        "Jade",
+        "Orange",
+        "Red",
+        "Gold"
+      ],
+      [
+        "Kiwi",
+        "Birch",
+        "Redwood",
+        "Sunflower"
+      ],
+      [
+        "Hulk",
+        "Phoenix",
+        "Red Hood",
+        "Wolverine"
+      ],
+      [
+        "Green Curry",
+        "Phuket",
+        "Red Curry",
+        "Yellow Curry"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1970s",
+      "2000s",
+      "People",
+      "Starts with THE"
+    ],
+    "cols": [
+      "Horror Stories",
+      "Movies featuring Dustin Hoffman",
+      "Star Wars Movies",
+      "TV Shows"
+    ],
+    "words": [
+      [
+        "Jaws",
+        "Kramer vs. Kramer",
+        "Star Wars",
+        "Wheel of Fortune"
+      ],
+      [
+        "Sweeney Todd: The Demon Barber of Fleet Street",
+        "Kung Fu Panda",
+        "Revenge of the Sith",
+        "Trailer Park Boys"
+      ],
+      [
+        "Dracula",
+        "Rain Man",
+        "Solo",
+        "Davy Crockett"
+      ],
+      [
+        "The Thing",
+        "The Graduate",
+        "The Force Awakens",
+        "The Three Stooges"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Bodies of Water",
+      "Islands",
+      "Landlocked Countries",
+      "Most Populous Countries (Top 10)"
+    ],
+    "cols": [
+      "Cold War",
+      "Ends with RIA",
+      "Locations in Asia",
+      "Locations in South America"
+    ],
+    "words": [
+      [
+        "Bay of Pigs",
+        "Lake Victoria",
+        "Yangtze River",
+        "Amazon River"
+      ],
+      [
+        "Bikini",
+        "Gran Canaria",
+        "Jeju",
+        "Robinson Crusoe"
+      ],
+      [
+        "Hungary",
+        "Austria",
+        "Azerbaijan",
+        "Paraguay"
+      ],
+      [
+        "United States",
+        "Nigeria",
+        "Indonesia",
+        "Brazil"
+      ]
+    ]
   }
 ]
