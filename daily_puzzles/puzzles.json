@@ -4718,5 +4718,45 @@
         "The Hitchhiker's Guide to the Galaxy"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1980s",
+      "1990s",
+      "Crime Stories",
+      "Red Things"
+    ],
+    "cols": [
+      "Movies directed by Akira Kurosawa",
+      "Movies featuring Bruce Willis",
+      "Things Russian",
+      "X-Men Characters"
+    ],
+    "words": [
+      [
+        "Ran",
+        "Die Hard",
+        "Tetris",
+        "Rogue"
+      ],
+      [
+        "Dreams",
+        "The Sixth Sense",
+        "The Collapse of the Soviet Union",
+        "Beast"
+      ],
+      [
+        "High and Low",
+        "Looper",
+        "Crime and Punishment",
+        "Nightcrawler"
+      ],
+      [
+        "Red Beard",
+        "Red",
+        "Borscht",
+        "Magneto"
+      ]
+    ]
   }
 ]
