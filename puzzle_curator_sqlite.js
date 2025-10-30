@@ -223,6 +223,16 @@ function getMultipleRandomPuzzles(db, count, targetCategories = null) {
     });
 }
 
+// Categories that should always be excluded by the secret sauce filter
+const ALWAYS_EXCLUDED_CATEGORIES = [
+    '21st Century',
+    '20th Century',
+    '2020s',
+    '2010s',
+    'Things American',
+    'Flower-class Corvettes'
+];
+
 function getCategoriesFromLastNDays(numDays) {
     const recentCategories = new Set();
 
@@ -239,6 +249,11 @@ function getCategoriesFromLastNDays(numDays) {
         for (const category of [...puzzle.rows, ...puzzle.cols]) {
             recentCategories.add(category);
         }
+    }
+
+    // Always exclude designated categories
+    for (const cat of ALWAYS_EXCLUDED_CATEGORIES) {
+        recentCategories.add(cat);
     }
 
     return Array.from(recentCategories);

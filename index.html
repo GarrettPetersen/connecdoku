@@ -524,8 +524,8 @@ loadStats();
     }
   })();
 
-fetch('daily_puzzles/puzzles.json')
-  .then(r=>r.json())
+fetch('daily_puzzles/puzzles.json?v=' + Date.now())
+  .then(r=>{ if(!r.ok) throw new Error('Failed to load puzzles.json: '+r.status); return r.json(); })
   .then(all=>{
     const currentIndex = todayIdx();
     let selectedIdx = currentIndex % all.length;
@@ -2108,8 +2108,8 @@ function init(puz, puzzleIndex){
   let categoryEmojis = {};
   
   // Load category emojis
-  fetch('data/category_emojis.json')
-    .then(r => r.json())
+  fetch('data/category_emojis.json?v=' + Date.now())
+    .then(r => { if(!r.ok) throw new Error('Failed to load category_emojis.json: '+r.status); return r.json(); })
     .then(data => { categoryEmojis = data; })
     .catch(err => console.warn('Could not load category emojis:', err));
 
