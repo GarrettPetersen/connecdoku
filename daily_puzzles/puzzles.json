@@ -4878,5 +4878,45 @@
         "Monsters University"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1983",
+      "1990",
+      "Fictional People",
+      "Musical Films"
+    ],
+    "cols": [
+      "Christmas Stories",
+      "Oscar Winners",
+      "Sequels",
+      "Songs"
+    ],
+    "words": [
+      [
+        "A Christmas Story",
+        "Terms of Endearment",
+        "Return of the Jedi",
+        "Every Breath You Take"
+      ],
+      [
+        "Home Alone",
+        "Dances with Wolves",
+        "Back to the Future Part III",
+        "Nothing Compares 2 U"
+      ],
+      [
+        "The Grinch",
+        "Black Panther",
+        "Prince Caspian",
+        "Billie Jean"
+      ],
+      [
+        "The Nightmare Before Christmas",
+        "Chicago",
+        "Mary Poppins Returns",
+        "Rock Around the Clock"
+      ]
+    ]
   }
 ]
