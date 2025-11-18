@@ -2134,7 +2134,9 @@
     "Silk Road",
     "Spartacus",
     "Sulla",
+    "Tabularium",
     "The Roman Empire",
+    "Theatre of Pompey",
     "Third Servile War",
     "Veni, vidi, vici"
   ],
@@ -3604,6 +3606,9 @@
     "Zhang Heng"
   ],
   "2nd Century BC": [
+    "Basilica Aemilia",
+    "Basilica Porcia",
+    "Basilica Sempronia",
     "Chu–Han Contention",
     "Emperor Wu of Han",
     "Gaius Marius",
@@ -3699,6 +3704,8 @@
     "Socrates",
     "Spring and Autumn Annals",
     "Sun Tzu",
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
     "The Ramayana",
     "The unexamined life is not worth living"
   ],
@@ -4212,6 +4219,9 @@
   "Ancient Buildings": [
     "Acropolis",
     "Arch of Titus",
+    "Basilica Aemilia",
+    "Basilica Porcia",
+    "Basilica Sempronia",
     "Bronze Bird Terrace",
     "Chichen Itza",
     "Circus Maximus",
@@ -4231,8 +4241,12 @@
     "Roman Forum",
     "Statue of Zeus",
     "Stonehenge",
+    "Tabularium",
     "Temple of Artemis",
-    "Terracotta Army"
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
+    "Terracotta Army",
+    "Theatre of Pompey"
   ],
   "Ancient Cities": [
     "Alexandria",
@@ -5012,7 +5026,8 @@
     "Julius Caesar",
     "Pugio",
     "Rome",
-    "Servilius Casca"
+    "Servilius Casca",
+    "Theatre of Pompey"
   ],
   "Assassination of JFK": [
     "11/22/63",
@@ -5904,6 +5919,9 @@
     "Alhambra",
     "Angkor Wat",
     "Arch of Titus",
+    "Basilica Aemilia",
+    "Basilica Porcia",
+    "Basilica Sempronia",
     "Blue Mosque",
     "Bronze Bird Terrace",
     "Buckingham Palace",
@@ -5941,10 +5959,14 @@
     "Statue of Zeus",
     "Stonehenge",
     "Sydney Opera House",
+    "Tabularium",
     "Taj Mahal",
     "Temple of Artemis",
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
     "Terracotta Army",
     "Texas Book Depository",
+    "Theatre of Pompey",
     "Versailles",
     "Watergate",
     "Xuanwu Gate"
@@ -10869,6 +10891,7 @@
     "Machu Picchu"
   ],
   "Ends with CIA": [
+    "Basilica Porcia",
     "Focaccia",
     "Saint Lucia"
   ],
@@ -12663,6 +12686,7 @@
     "Lithium",
     "Paraceratherium",
     "Plutonium",
+    "Tabularium",
     "Titanium",
     "Uranium"
   ],
@@ -12983,6 +13007,7 @@
   ],
   "Ends with LIA": [
     "Australia",
+    "Basilica Aemilia",
     "Brasilia",
     "MSC Meraviglia",
     "Mongolia",
@@ -13135,6 +13160,9 @@
     "Battle of Pharsalus",
     "Euoplocephalus",
     "Quetzalcoatlus"
+  ],
+  "Ends with LUX": [
+    "Temple of Castor and Pollux"
   ],
   "Ends with LVO": [
     "Volvo"
@@ -13513,6 +13541,7 @@
     "Albania",
     "Ammonia",
     "Armenia",
+    "Basilica Sempronia",
     "Britannia",
     "California",
     "Estonia",
@@ -14240,7 +14269,8 @@
     "Pepe Le Pew"
   ],
   "Ends with PEY": [
-    "Pompey"
+    "Pompey",
+    "Theatre of Pompey"
   ],
   "Ends with PHA": [
     "Alpha"
@@ -15468,7 +15498,8 @@
     "Luxembourg"
   ],
   "Ends with URN": [
-    "Saturn"
+    "Saturn",
+    "Temple of Saturn"
   ],
   "Ends with URO": [
     "Sanjuro"
@@ -18384,6 +18415,9 @@
   ],
   "Historical Sites": [
     "Arch of Titus",
+    "Basilica Aemilia",
+    "Basilica Porcia",
+    "Basilica Sempronia",
     "Bronze Bird Terrace",
     "Circus Maximus",
     "Colosseum",
@@ -18396,6 +18430,10 @@
     "Ostia Antica",
     "Pantheon",
     "Roman Forum",
+    "Tabularium",
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
+    "Theatre of Pompey",
     "Waterloo",
     "Xuanwu Gate"
   ],
@@ -31712,6 +31750,8 @@
     "Taj Mahal",
     "Temple Mount",
     "Temple of Artemis",
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
     "Vatican City"
   ],
   "Religious Stories": [
@@ -32049,11 +32089,19 @@
   ],
   "Roman Architecture": [
     "Arch of Titus",
+    "Basilica Aemilia",
+    "Basilica Porcia",
+    "Basilica Sempronia",
     "Circus Maximus",
     "Colosseum",
+    "Curia",
     "Hadrian's Wall",
     "Pantheon",
-    "Roman Forum"
+    "Roman Forum",
+    "Tabularium",
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
+    "Theatre of Pompey"
   ],
   "Roman Cities": [
     "Alexandria",
@@ -32152,6 +32200,9 @@
   ],
   "Roman Republic": [
     "Assassination of Caesar",
+    "Basilica Aemilia",
+    "Basilica Porcia",
+    "Basilica Sempronia",
     "Battle of Actium",
     "Battle of Alesia",
     "Battle of Carrhae",
@@ -32179,7 +32230,11 @@
     "Servilius Casca",
     "Spartacus",
     "Sulla",
+    "Tabularium",
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
     "The Roman Empire",
+    "Theatre of Pompey",
     "Third Servile War",
     "Veni, vidi, vici"
   ],
@@ -34125,6 +34180,9 @@
   "Starts with BAS": [
     "Baseball",
     "Basil",
+    "Basilica Aemilia",
+    "Basilica Porcia",
+    "Basilica Sempronia",
     "Basilisk",
     "Basilosaurus",
     "Basket Case",
@@ -38762,7 +38820,8 @@
   "Starts with TAB": [
     "Table",
     "Table Tennis",
-    "Tabouleh"
+    "Tabouleh",
+    "Tabularium"
   ],
   "Starts with TAC": [
     "Tack",
@@ -38851,6 +38910,8 @@
     "Temeraire",
     "Temple Mount",
     "Temple of Artemis",
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
     "Tempura",
     "Temüjin"
   ],
@@ -39173,6 +39234,7 @@
     "The play's the thing",
     "The realm, long divided, must unite",
     "The unexamined life is not worth living",
+    "Theatre of Pompey",
     "Thelonious Monk",
     "Thera",
     "Theseus",
@@ -40355,7 +40417,8 @@
     "Colosseum",
     "Ford's Theatre",
     "Globe Theatre",
-    "Sydney Opera House"
+    "Sydney Opera House",
+    "Theatre of Pompey"
   ],
   "Theropods": [
     "Albatross",
@@ -42377,6 +42440,9 @@
     "Andrea Bocelli",
     "Andrea Doria",
     "Arch of Titus",
+    "Basilica Aemilia",
+    "Basilica Porcia",
+    "Basilica Sempronia",
     "Battle of Lepanto",
     "Bolognese",
     "Bruschetta",
@@ -42457,6 +42523,9 @@
     "Sicily",
     "Spaghetti",
     "St. Peter's Basilica",
+    "Tabularium",
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
     "The Barber of Seville",
     "The Catholic Counter-Reformation",
     "The Divine Comedy",
@@ -42465,6 +42534,7 @@
     "The Italian Wars",
     "The Roman Empire",
     "The Seven Magnificent Gladiators",
+    "Theatre of Pompey",
     "Tiramisu",
     "Tomato",
     "Tortellini",
@@ -42908,6 +42978,9 @@
     "Arch of Titus",
     "Assassination of Caesar",
     "Augustus",
+    "Basilica Aemilia",
+    "Basilica Porcia",
+    "Basilica Sempronia",
     "Battle of Actium",
     "Battle of Alesia",
     "Battle of Carrhae",
@@ -42979,8 +43052,12 @@
     "Spatha",
     "Sulla",
     "Syria Palaestina",
+    "Tabularium",
+    "Temple of Castor and Pollux",
+    "Temple of Saturn",
     "The Roman Empire",
     "The Seven Magnificent Gladiators",
+    "Theatre of Pompey",
     "Third Servile War",
     "Tiberius",
     "Trajan",

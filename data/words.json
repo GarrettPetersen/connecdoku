@@ -3082,6 +3082,42 @@
     "Spices & Herbs",
     "Starts with BAS"
   ],
+  "Basilica Aemilia": [
+    "2nd Century BC",
+    "Ancient Buildings",
+    "Buildings",
+    "Ends with LIA",
+    "Historical Sites",
+    "Roman Architecture",
+    "Roman Republic",
+    "Starts with BAS",
+    "Things Italian",
+    "Things Roman"
+  ],
+  "Basilica Porcia": [
+    "2nd Century BC",
+    "Ancient Buildings",
+    "Buildings",
+    "Ends with CIA",
+    "Historical Sites",
+    "Roman Architecture",
+    "Roman Republic",
+    "Starts with BAS",
+    "Things Italian",
+    "Things Roman"
+  ],
+  "Basilica Sempronia": [
+    "2nd Century BC",
+    "Ancient Buildings",
+    "Buildings",
+    "Ends with NIA",
+    "Historical Sites",
+    "Roman Architecture",
+    "Roman Republic",
+    "Starts with BAS",
+    "Things Italian",
+    "Things Roman"
+  ],
   "Basilisk": [
     "Animal Species",
     "Animal Terms",
@@ -8931,6 +8967,7 @@
     "Buildings",
     "Ends with RIA",
     "Historical Sites",
+    "Roman Architecture",
     "Roman Republic",
     "Starts with CUR",
     "Things Italian",
@@ -32968,6 +33005,18 @@
     "Starts with TAB",
     "Things Middle Eastern"
   ],
+  "Tabularium": [
+    "1st Century BC",
+    "Ancient Buildings",
+    "Buildings",
+    "Ends with IUM",
+    "Historical Sites",
+    "Roman Architecture",
+    "Roman Republic",
+    "Starts with TAB",
+    "Things Italian",
+    "Things Roman"
+  ],
   "Tack": [
     "Ends with ACK",
     "Fastening",
@@ -33435,6 +33484,32 @@
     "Religious Sites",
     "Seven Wonders",
     "Starts with TEM"
+  ],
+  "Temple of Castor and Pollux": [
+    "5th Century BC",
+    "Ancient Buildings",
+    "Buildings",
+    "Ends with LUX",
+    "Historical Sites",
+    "Religious Sites",
+    "Roman Architecture",
+    "Roman Republic",
+    "Starts with TEM",
+    "Things Italian",
+    "Things Roman"
+  ],
+  "Temple of Saturn": [
+    "5th Century BC",
+    "Ancient Buildings",
+    "Buildings",
+    "Ends with URN",
+    "Historical Sites",
+    "Religious Sites",
+    "Roman Architecture",
+    "Roman Republic",
+    "Starts with TEM",
+    "Things Italian",
+    "Things Roman"
   ],
   "Tempura": [
     "Ends with URA",
@@ -37471,6 +37546,20 @@
     "Philosophy Quotes",
     "Starts with THE",
     "Things Greek"
+  ],
+  "Theatre of Pompey": [
+    "1st Century BC",
+    "Ancient Buildings",
+    "Assassination of Caesar",
+    "Buildings",
+    "Ends with PEY",
+    "Historical Sites",
+    "Roman Architecture",
+    "Roman Republic",
+    "Starts with THE",
+    "Theaters",
+    "Things Italian",
+    "Things Roman"
   ],
   "Thelonious Monk": [
     "1950s",
