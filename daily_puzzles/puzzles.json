@@ -5238,5 +5238,125 @@
         "Pinta"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Bodies of Water",
+      "Cities",
+      "Federal Republics",
+      "Islands"
+    ],
+    "cols": [
+      "Ends with RIA",
+      "Locations in Asia",
+      "Locations in South America",
+      "Things Canadian"
+    ],
+    "words": [
+      [
+        "Lake Victoria",
+        "Lake Baikal",
+        "Amazon River",
+        "Hudson Bay"
+      ],
+      [
+        "Alexandria",
+        "Chang'an",
+        "Brasilia",
+        "Toronto"
+      ],
+      [
+        "Austria",
+        "Nepal",
+        "Argentina",
+        "Canada"
+      ],
+      [
+        "Gran Canaria",
+        "Okinawa",
+        "Robinson Crusoe",
+        "Baffin"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1950s",
+      "Starts with CON",
+      "Things British",
+      "Trojan War"
+    ],
+    "cols": [
+      "Animal Terms",
+      "Cities in Europe",
+      "Civilian Ships",
+      "Writers"
+    ],
+    "words": [
+      [
+        "Snoopy",
+        "Budapest",
+        "Andrea Doria",
+        "Jack Kerouac"
+      ],
+      [
+        "Confuciusornis",
+        "Constantinople",
+        "Conte di Savoia",
+        "Confucius"
+      ],
+      [
+        "Cricket",
+        "Southampton",
+        "Boaty McBoatface",
+        "Samuel Pepys"
+      ],
+      [
+        "Horse",
+        "Paris",
+        "Odyssey",
+        "Homer"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1970s",
+      "Movies directed by James Cameron",
+      "Movies featuring Tony Leung",
+      "Things Japanese"
+    ],
+    "cols": [
+      "2000s",
+      "Ends with TER",
+      "Romance Stories",
+      "Thriller Stories"
+    ],
+    "words": [
+      [
+        "The Hitchhiker's Guide to the Galaxy",
+        "Bridge Over Troubled Water",
+        "Grease",
+        "Alien"
+      ],
+      [
+        "Avatar",
+        "Avatar: The Way of Water",
+        "Titanic",
+        "The Terminator"
+      ],
+      [
+        "Hero",
+        "The Grandmaster",
+        "Chungking Express",
+        "Hard Boiled"
+      ],
+      [
+        "Spirited Away",
+        "Street Fighter",
+        "From Up on Poppy Hill",
+        "High and Low"
+      ]
+    ]
   }
 ]
