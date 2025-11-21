@@ -5638,5 +5638,125 @@
         "Mani"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1997",
+      "2009",
+      "Horror Stories",
+      "Sequels"
+    ],
+    "cols": [
+      "Movies directed by Quentin Tarantino",
+      "Movies featuring Sigourney Weaver",
+      "Stories Where the Mom Dies",
+      "Time Travel Stories"
+    ],
+    "words": [
+      [
+        "Jackie Brown",
+        "The Ice Storm",
+        "Harry Potter and the Sorcerer's Stone",
+        "To Say Nothing of the Dog"
+      ],
+      [
+        "Inglourious Basterds",
+        "Avatar",
+        "The Road",
+        "The Time Traveler's Wife"
+      ],
+      [
+        "Death Proof",
+        "The Village",
+        "Carrie",
+        "Donnie Darko"
+      ],
+      [
+        "Kill Bill: Volume 2",
+        "Ghostbusters II",
+        "Attack of the Clones",
+        "Terminator 2: Judgment Day"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "2016",
+      "2023",
+      "Disasters",
+      "Epic Stories"
+    ],
+    "cols": [
+      "Cruise Ships",
+      "Oscar Winners",
+      "Sci-fi Stories",
+      "Starts with THE"
+    ],
+    "words": [
+      [
+        "Harmony of the Seas",
+        "La La Land",
+        "Rogue One",
+        "The Brexit Vote"
+      ],
+      [
+        "Wonder",
+        "Oppenheimer",
+        "Avatar: Frontiers of Pandora",
+        "The Killer"
+      ],
+      [
+        "Concordia",
+        "Titanic",
+        "Fallout",
+        "The Dust Bowl"
+      ],
+      [
+        "Odyssey",
+        "Ben-Hur",
+        "Star Wars",
+        "The Iliad"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1960s",
+      "Mammals",
+      "Mesozoic Era",
+      "Things That Fly"
+    ],
+    "cols": [
+      "Black and White",
+      "Fastest of its Type",
+      "Fictional Animals",
+      "MLB Teams"
+    ],
+    "words": [
+      [
+        "Yojimbo",
+        "Quicksilver",
+        "The Very Hungry Caterpillar",
+        "Mariner"
+      ],
+      [
+        "Panda",
+        "Cheetah",
+        "Garfield",
+        "Tiger"
+      ],
+      [
+        "Anchiornis",
+        "Ornithomimus",
+        "Littlefoot",
+        "Ray"
+      ],
+      [
+        "Magpie",
+        "SR-71 Blackbird",
+        "Pegasus",
+        "Cardinal"
+      ]
+    ]
   }
 ]
