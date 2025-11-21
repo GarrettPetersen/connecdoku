@@ -5758,5 +5758,165 @@
         "Cardinal"
       ]
     ]
+  },
+  {
+    "rows": [
+      "American Civil War",
+      "Han Dynasty",
+      "Napoleonic Wars",
+      "Roman Republic"
+    ],
+    "cols": [
+      "Famous Quotes",
+      "Historical Sites",
+      "People",
+      "Wars"
+    ],
+    "words": [
+      [
+        "Four score and seven years ago",
+        "Gettysburg",
+        "Robert E. Lee",
+        "The American Civil War"
+      ],
+      [
+        "The realm, long divided, must unite",
+        "Bronze Bird Terrace",
+        "Emperor Wen of Han",
+        "Han Wudi's Defeat of the Xiongnu"
+      ],
+      [
+        "Merde!",
+        "Waterloo",
+        "Jean Bernadotte",
+        "The Napoleonic Wars"
+      ],
+      [
+        "Friends, Romans, countrymen",
+        "Temple of Castor and Pollux",
+        "Cicero",
+        "Third Servile War"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Foods",
+      "Large Countries",
+      "Men",
+      "Mountains"
+    ],
+    "cols": [
+      "NATO Phonetic Alphabet",
+      "Starts with MON",
+      "Things Argentine",
+      "Things Russian"
+    ],
+    "words": [
+      [
+        "Lima",
+        "Montreal Smoked Meat",
+        "Milanesa",
+        "Solyanka"
+      ],
+      [
+        "India",
+        "Mongolia",
+        "Argentina",
+        "Russia"
+      ],
+      [
+        "Victor",
+        "Monroe",
+        "Juan Peron",
+        "Krushchev"
+      ],
+      [
+        "Sierra",
+        "Mont Blanc",
+        "Aconcagua",
+        "Elbrus"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Adventure Stories",
+      "Bodies of Water",
+      "Federal Republics",
+      "National Capitals"
+    ],
+    "cols": [
+      "Cold War",
+      "Locations in Asia",
+      "Locations in Europe",
+      "Things Brazilian"
+    ],
+    "words": [
+      [
+        "Davy Crockett",
+        "Krakatoa",
+        "Pompeii",
+        "The Alchemist"
+      ],
+      [
+        "Bay of Pigs",
+        "Caspian Sea",
+        "Mediterranean Sea",
+        "Amazon River"
+      ],
+      [
+        "United States",
+        "Iraq",
+        "Belgium",
+        "Brazil"
+      ],
+      [
+        "Washington",
+        "Seoul",
+        "London",
+        "Brasilia"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1860s",
+      "Roman Empire",
+      "Shakespeare Characters",
+      "Women"
+    ],
+    "cols": [
+      "Assassins",
+      "Drama Stories",
+      "Military Leaders",
+      "Things British"
+    ],
+    "words": [
+      [
+        "John Wilkes Booth",
+        "Little Women",
+        "Helmuth von Moltke the Elder",
+        "Joseph Lister"
+      ],
+      [
+        "Cassius Chaerea",
+        "Pompeii",
+        "Trajan",
+        "Hadrian's Wall"
+      ],
+      [
+        "Brutus",
+        "Romeo",
+        "Mark Antony",
+        "Puck"
+      ],
+      [
+        "Arya Stark",
+        "Madame Butterfly",
+        "Joan of Arc",
+        "Charlotte Brontë"
+      ]
+    ]
   }
 ]
