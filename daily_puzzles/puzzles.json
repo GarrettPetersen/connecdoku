@@ -6078,5 +6078,85 @@
         "The Grandmaster"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1980",
+      "Disney",
+      "Shakespeare Plays",
+      "Things Greek"
+    ],
+    "cols": [
+      "Ends with ING",
+      "Fictional People",
+      "Romance Stories",
+      "War Stories"
+    ],
+    "words": [
+      [
+        "The Shining",
+        "Flash Gordon",
+        "Somewhere in Time",
+        "Kagemusha"
+      ],
+      [
+        "The Lion King",
+        "Pinocchio",
+        "Lady and the Tramp",
+        "Mulan"
+      ],
+      [
+        "Much Ado About Nothing",
+        "King Lear",
+        "Antony and Cleopatra",
+        "Henry V"
+      ],
+      [
+        "The unexamined life is not worth living",
+        "Bellerophon",
+        "Cleopatra",
+        "The Iliad"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1880s",
+      "18th Century",
+      "Companies",
+      "Ships"
+    ],
+    "cols": [
+      "Inventors",
+      "Movies",
+      "Things French",
+      "US Presidents"
+    ],
+    "words": [
+      [
+        "Alexander Graham Bell",
+        "Pinocchio",
+        "Eiffel Tower",
+        "Garfield"
+      ],
+      [
+        "Whitney",
+        "Beethoven",
+        "Charlotte Corday",
+        "Jefferson"
+      ],
+      [
+        "Tesla",
+        "Red",
+        "Airbus",
+        "Ford"
+      ],
+      [
+        "Graf Zeppelin",
+        "Titanic",
+        "Redoutable",
+        "Truman"
+      ]
+    ]
   }
 ]
