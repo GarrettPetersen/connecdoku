@@ -29,7 +29,7 @@ import fs from 'fs';
 function getPuzzleDate(index) {
     try {
         const puzzlesData = JSON.parse(fs.readFileSync('daily_puzzles/puzzles.json', 'utf8'));
-        
+
         // For negative indices, calculate backwards from the end
         if (index < 0) {
             const actualIndex = puzzlesData.length + index;
@@ -65,28 +65,6 @@ function getPuzzleByIndex(index) {
         console.error(`Error reading puzzle at index ${index}:`, error.message);
         return null;
     }
-}
-
-// Function to identify potential homonyms and multiple meanings
-function analyzeHomonyms(word, rowCategory, colCategory) {
-    const homonymNotes = [];
-    
-    // Check for words that might have multiple interpretations
-    if (word.includes(',') || word.includes(' ')) {
-        homonymNotes.push(`🔍 MULTI-WORD: "${word}" - consider each part separately`);
-    }
-    
-    // Check for proper nouns that might have multiple associations
-    if (word.match(/^[A-Z][a-z]+ [A-Z][a-z]+$/)) {
-        homonymNotes.push(`👤 PROPER NOUN: "${word}" - could refer to person, place, or thing`);
-    }
-    
-    // Check for words that might have multiple meanings (general guidance)
-    if (word.length > 3 && !word.includes(' ')) {
-        homonymNotes.push(`💡 Consider: "${word}" might have multiple meanings or interpretations`);
-    }
-    
-    return homonymNotes;
 }
 
 // Function to analyze a word's categories
@@ -125,9 +103,7 @@ function reviewPuzzle(index) {
         console.log(`ROW ${rowIndex + 1} (${rows[rowIndex]}):`);
         for (let colIndex = 0; colIndex < 4; colIndex++) {
             const word = words[rowIndex][colIndex];
-            const homonymNotes = analyzeHomonyms(word, rows[rowIndex], cols[colIndex]);
             console.log(`  [${rowIndex + 1},${colIndex + 1}] ${word}`);
-            homonymNotes.forEach(note => console.log(`    ${note}`));
         }
         console.log('');
     }
@@ -141,9 +117,7 @@ function reviewPuzzle(index) {
         console.log(`COLUMN ${colIndex + 1} (${cols[colIndex]}):`);
         for (let rowIndex = 0; rowIndex < 4; rowIndex++) {
             const word = words[rowIndex][colIndex];
-            const homonymNotes = analyzeHomonyms(word, rows[rowIndex], cols[colIndex]);
             console.log(`  [${rowIndex + 1},${colIndex + 1}] ${word}`);
-            homonymNotes.forEach(note => console.log(`    ${note}`));
         }
         console.log('');
     }
@@ -161,32 +135,6 @@ function reviewPuzzle(index) {
             );
             console.log(`[${rowIndex + 1},${colIndex + 1}] ${word}: Should NOT be in ${otherCategories.join(', ')}`);
         }
-    }
-
-    // NEW: Dedicated HOMONYM ANALYSIS section
-    console.log('\n=== 🔍 HOMONYM ANALYSIS ===');
-    console.log('This section highlights potential homonyms and multiple meanings:');
-    console.log('Words that might fit multiple categories due to different interpretations:\n');
-    
-    const allHomonyms = [];
-    for (let rowIndex = 0; rowIndex < 4; rowIndex++) {
-        for (let colIndex = 0; colIndex < 4; colIndex++) {
-            const word = words[rowIndex][colIndex];
-            const homonymNotes = analyzeHomonyms(word, rows[rowIndex], cols[colIndex]);
-            if (homonymNotes.length > 0) {
-                allHomonyms.push({ word, position: `[${rowIndex + 1},${colIndex + 1}]`, notes: homonymNotes });
-            }
-        }
-    }
-    
-    if (allHomonyms.length === 0) {
-        console.log('✅ No obvious homonyms detected in this puzzle.');
-    } else {
-        allHomonyms.forEach(({ word, position, notes }) => {
-            console.log(`${position} "${word}":`);
-            notes.forEach(note => console.log(`  ${note}`));
-            console.log('');
-        });
     }
 
     // Add homonym examples and guidance
@@ -210,6 +158,7 @@ function reviewPuzzle(index) {
     console.log('4. 🔍 HOMONYM ANALYSIS: Carefully consider words with multiple meanings!');
     console.log('5. COMMON SENSE: Don\'t trust the word list - use your knowledge!');
     console.log('6. ⚠️  HOMONYMS: Words can belong to multiple categories based on different interpretations!');
+    console.log('7. 🚨 MISSING TAGS: The word list may have incorrect or missing tags. That is what we are attempting to check. Use your judgment! Do NOT look at the word list to review the puzzle.');
 }
 
 // Get index from command line argument or use default
