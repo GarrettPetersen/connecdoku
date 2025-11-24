@@ -6198,5 +6198,45 @@
         "The Hidden Fortress"
       ]
     ]
+  },
+  {
+    "rows": [
+      "16th Century",
+      "19th Century",
+      "Ancient Figures",
+      "Medieval Figures"
+    ],
+    "cols": [
+      "Great Conquerors",
+      "Poets",
+      "Religious Figures",
+      "Starts with MAR"
+    ],
+    "words": [
+      [
+        "Babur",
+        "Shakespeare",
+        "John Knox",
+        "Mary I"
+      ],
+      [
+        "Napoleon Bonaparte",
+        "Elizabeth Barrett Browning",
+        "Joseph Smith",
+        "Mary Shelley"
+      ],
+      [
+        "Alexander the Great",
+        "Tao Yuanming",
+        "Confucius",
+        "Mark Antony"
+      ],
+      [
+        "Charlemagne",
+        "Li Bai",
+        "Good King Wenceslas",
+        "Marco Polo"
+      ]
+    ]
   }
 ]

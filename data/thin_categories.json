@@ -342,20 +342,11 @@
   "Land Battles": [
     "Battle of Agincourt"
   ],
-  "1120s": [
-    "Jingkang Incident"
-  ],
-  "Campaigns": [
-    "Jingnan Campaign"
+  "1570s": [
+    "Battle of Lepanto"
   ],
   "1440s": [
     "Battle of Tumu Fortress"
-  ],
-  "1590s": [
-    "Imjin War"
-  ],
-  "1570s": [
-    "Battle of Lepanto"
   ],
   "Charles Darwin": [
     "Beagle"
@@ -764,9 +755,6 @@
   ],
   "Psychological Fiction": [
     "Crime and Punishment"
-  ],
-  "Things Croatian": [
-    "Croatia"
   ],
   "Movies directed by Kevin Costner": [
     "Dances with Wolves"
@@ -1389,6 +1377,9 @@
   "Songs by John Lennon": [
     "Imagine"
   ],
+  "1590s": [
+    "Imjin War"
+  ],
   "Movies directed by Jon M. Chu": [
     "In the Heights"
   ],
@@ -1473,11 +1464,17 @@
   "Movies featuring Yvonne Elliman": [
     "Jesus Christ Superstar"
   ],
+  "1120s": [
+    "Jingkang Incident"
+  ],
   "Movies featuring Phil Hartman": [
     "Jingle All the Way"
   ],
   "Movies featuring Sinbad": [
     "Jingle All the Way"
+  ],
+  "Campaigns": [
+    "Jingnan Campaign"
   ],
   "Chuck Berry": [
     "Johnny B. Goode"
@@ -4016,10 +4013,6 @@
     "Bornholm",
     "Denmark"
   ],
-  "Things Bosnian": [
-    "Bosnia and Herzegovina",
-    "Sarajevo"
-  ],
   "Filter Feeders": [
     "Brachchiopods",
     "Graptolites"
@@ -4159,6 +4152,10 @@
   "Movies featuring Sandra Bullock": [
     "Crash",
     "The Lake House"
+  ],
+  "Things Croatian": [
+    "Croatia",
+    "The Yugoslav Wars"
   ],
   "Movies featuring Michelle Yeoh": [
     "Crouching Tiger, Hidden Dragon",
@@ -4900,10 +4897,6 @@
     "Scrooged",
     "Superman"
   ],
-  "Things South African": [
-    "Shaka Zulu",
-    "South Africa"
-  ],
   "1420s": [
     "Siege of Orléans",
     "Treaty of Troyes"
@@ -5193,20 +5186,10 @@
     "Back to the Future Part II",
     "Back to the Future Part III"
   ],
-  "Things Iraqi": [
-    "Baghdad",
-    "Iraq",
-    "The Iran-Iraq War"
-  ],
   "Movies featuring Michael Keaton": [
     "Batman",
     "Birdman",
     "Spotlight"
-  ],
-  "1400s": [
-    "Jingnan Campaign",
-    "Ming–Vietnam War",
-    "Richard II"
   ],
   "1800s": [
     "Battle of Trafalgar",
@@ -5252,6 +5235,11 @@
     "Bohemian Revolt",
     "John Evelyn",
     "Mayflower"
+  ],
+  "Things Bosnian": [
+    "Bosnia and Herzegovina",
+    "Sarajevo",
+    "The Yugoslav Wars"
   ],
   "Movies directed by David Lean": [
     "Bridge on the River Kwai",
@@ -5503,11 +5491,6 @@
     "Tarzan",
     "Wish"
   ],
-  "Things Serbian": [
-    "Gavrilo Princip",
-    "Serbia",
-    "Tesla"
-  ],
   "Action-Adventure Games": [
     "God of War",
     "Red Dead Redemption",
@@ -5557,6 +5540,11 @@
     "Jingle All the Way",
     "Terminator 2: Judgment Day",
     "The Terminator"
+  ],
+  "1400s": [
+    "Jingnan Campaign",
+    "Ming–Vietnam War",
+    "Richard II"
   ],
   "General Secretaries": [
     "Joseph Stalin",
@@ -5652,6 +5640,11 @@
     "Robin Hood",
     "The Aristocats",
     "The Jungle Book"
+  ],
+  "Things South African": [
+    "Shaka Zulu",
+    "South Africa",
+    "The Boer War"
   ],
   "Things Tanzanian": [
     "Tanganyika",

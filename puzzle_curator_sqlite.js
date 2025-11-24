@@ -456,6 +456,15 @@ function buildUsageCounts() {
 const { categoryUsage, wordUsage } = buildUsageCounts();
 console.log(`Usage tracking built: ${Object.keys(categoryUsage).length} categories, ${Object.keys(wordUsage).length} words`);
 
+// Return the top N most-used categories from existing daily puzzles
+function getTopUsedCategories(limit = 10) {
+    return Object
+        .entries(categoryUsage)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, limit)
+        .map(([cat]) => cat);
+}
+
 // ──────────────── word look-ups ──────────────────────────────────
 console.log("Loading categories...");
 const categoriesJson = JSON.parse(
@@ -1089,13 +1098,16 @@ async function main() {
 
             console.log(`🌶️ Secret Sauce: Finding puzzle with NO categories from last ${days} days...`);
             const recentCategories = getCategoriesFromLastNDays(days);
+            const topUsed = getTopUsedCategories(10);
+            const combinedExclusions = Array.from(new Set([...recentCategories, ...topUsed]));
             console.log(`Recent categories to avoid: ${recentCategories.join(", ")}`);
+            console.log(`Top used categories to avoid: ${topUsed.join(", ")}`);
 
             const sqliteDb = await openDatabase();
             try {
                 console.log("🌶️ Secret Sauce: Finding top 10 puzzles with NO categories from recent days...");
 
-                const puzzles = await findPuzzlesWithNoRecentCategories(sqliteDb, recentCategories, 10);
+                const puzzles = await findPuzzlesWithNoRecentCategories(sqliteDb, combinedExclusions, 10);
 
                 if (puzzles.length === 0) {
                     console.log("❌ No valid puzzles found with no recent categories");

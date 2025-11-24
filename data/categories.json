@@ -1962,6 +1962,7 @@
     "Frankenstein",
     "Garfield",
     "George Eliot",
+    "Gettysburg",
     "Gran Colombia",
     "Grant",
     "Harriet Beecher Stowe",
@@ -3527,6 +3528,7 @@
     "The War on Terror",
     "The Witcher",
     "Tick, Tick... Boom!",
+    "Total War",
     "Trailer Park Boys",
     "Troy",
     "Trump",
@@ -41541,6 +41543,8 @@
     "Thalidomide Scandal",
     "The Adventures of Tom Sawyer",
     "The Age of Innocence",
+    "The American Civil War",
+    "The American Revolution",
     "The Apollo Program",
     "The Aristocats",
     "The Bell Jar",
@@ -41550,6 +41554,7 @@
     "The Call of the Wild",
     "The Catcher in the Rye",
     "The Civil Rights Movement",
+    "The Cold War",
     "The Color Purple",
     "The Da Vinci Code",
     "The Deer Hunter",
@@ -41578,6 +41583,7 @@
     "The Greatest Showman",
     "The Green Mile",
     "The Grinch",
+    "The Gulf War",
     "The Hateful Eight",
     "The Holiday",
     "The Hubble Telescope",
@@ -41589,9 +41595,11 @@
     "The Incredibles",
     "The Incredibles 2",
     "The Iran Hostage Crisis",
+    "The Iraq War",
     "The Irishman",
     "The January 6th Insurrection",
     "The King and I",
+    "The Korean War",
     "The Lake House",
     "The Last Emperor",
     "The Last Jedi",
@@ -41640,6 +41648,7 @@
     "The Sound and the Fury",
     "The Sound of Music",
     "The Space Race",
+    "The Spanish-American War",
     "The Stand",
     "The Sun Also Rises",
     "The Sword in the Stone",
@@ -41651,6 +41660,7 @@
     "The Unsinkable Molly Brown",
     "The Usual Suspects",
     "The Very Hungry Caterpillar",
+    "The Vietnam War",
     "The Village",
     "The Wall Street Crash",
     "The War on Terror",
@@ -41719,6 +41729,8 @@
     "Wonder",
     "Woodstock",
     "Working Girl",
+    "World War I",
+    "World War II",
     "World of Warcraft",
     "Wreck-It Ralph",
     "Wrestling",
@@ -41822,7 +41834,8 @@
   ],
   "Things Bosnian": [
     "Bosnia and Herzegovina",
-    "Sarajevo"
+    "Sarajevo",
+    "The Yugoslav Wars"
   ],
   "Things Botswanan": [
     "Bechuanaland",
@@ -42059,15 +42072,19 @@
     "Terra Nova",
     "Thames",
     "The 5th of November",
+    "The American Revolution",
     "The Anubis Gates",
     "The Black Prince",
+    "The Boer War",
     "The Brexit Vote",
     "The British Empire",
     "The Chronicles of Narnia",
     "The Chronicles of Narnia: The Magician's Nephew",
+    "The Crimean War",
     "The Crying Game",
     "The Dam Busters",
     "The Discovery of Penicillin",
+    "The English Civil War",
     "The English Patient",
     "The English Reformation",
     "The First Fifteen Lives of Harry August",
@@ -42075,6 +42092,7 @@
     "The Great Fire of London",
     "The Hitchhiker's Guide to the Galaxy",
     "The Hobbit",
+    "The Hundred Years War",
     "The Indian Independence Movement",
     "The Indian Rebellion",
     "The Italian Job",
@@ -42089,6 +42107,7 @@
     "The Man Who Fell to Earth",
     "The Mau Mau Uprising",
     "The Merchant of Venice",
+    "The Napoleonic Wars",
     "The Norman Conquest",
     "The Peasants' Revolt",
     "The Police",
@@ -42096,6 +42115,7 @@
     "The Remains of the Day",
     "The Secret Garden",
     "The Sepoy Mutiny",
+    "The Seven Years' War",
     "The Silmarillion",
     "The Spanish Armada",
     "The Tale of Peter Rabbit",
@@ -42111,6 +42131,7 @@
     "Titanic",
     "To Say Nothing of the Dog",
     "To be or not to be",
+    "Total War",
     "Trainspotting",
     "Treaty of Brétigny",
     "Treaty of Troyes",
@@ -42132,6 +42153,8 @@
     "William the Conqueror",
     "Winnie-the-Pooh",
     "Winston Churchill",
+    "World War I",
+    "World War II",
     "Wuthering Heights",
     "Yorkshire Pudding",
     "Zeppelin",
@@ -42417,7 +42440,8 @@
     "Costa Rica"
   ],
   "Things Croatian": [
-    "Croatia"
+    "Croatia",
+    "The Yugoslav Wars"
   ],
   "Things Cuban": [
     "Bay of Pigs",
@@ -42600,8 +42624,13 @@
     "The Artist",
     "The Count of Monte Cristo",
     "The Fifth Element",
+    "The Franco-Prussian War",
+    "The French Revolution",
     "The Hundred Days",
+    "The Hundred Years War",
     "The Little Prince",
+    "The Napoleonic Wars",
+    "The Seven Years' War",
     "The Three Musketeers",
     "Treaty of Brétigny",
     "Treaty of Troyes",
@@ -42609,7 +42638,8 @@
     "Versailles",
     "White Wine",
     "William the Conqueror",
-    "Wine"
+    "Wine",
+    "World War I"
   ],
   "Things Gambian": [
     "Gambia"
@@ -42670,12 +42700,15 @@
     "Spätzle",
     "Stuka",
     "The Battle of Stalingrad",
+    "The Franco-Prussian War",
     "The German Reunification",
     "Tirpitz",
     "Triumph of the Will",
     "Volkswagen",
     "Von Blucher",
-    "Weissbier"
+    "Weissbier",
+    "World War I",
+    "World War II"
   ],
   "Things Ghanaian": [
     "Ghana"
@@ -42719,6 +42752,7 @@
     "The Greek War of Independence",
     "The Iliad",
     "The Odyssey",
+    "The Trojan War",
     "The unexamined life is not worth living",
     "Tzatziki",
     "Zeus"
@@ -42833,7 +42867,9 @@
   "Things Iraqi": [
     "Baghdad",
     "Iraq",
-    "The Iran-Iraq War"
+    "The Gulf War",
+    "The Iran-Iraq War",
+    "The Iraq War"
   ],
   "Things Irish": [
     "Dublin",
@@ -43072,6 +43108,7 @@
     "The Hidden Fortress",
     "The Legend of Zelda",
     "The Nanjing Massacre",
+    "The Russo-Japanese War",
     "The Tale of Genji",
     "The Tale of the Heike",
     "The Tale of the Princess Kaguya",
@@ -43086,6 +43123,7 @@
     "Wasabi",
     "When Marnie Was There",
     "Whisper of the Heart",
+    "World War II",
     "Yakitori",
     "Yamato",
     "Yojimbo",
@@ -43162,6 +43200,7 @@
     "Super Junior",
     "Syngman Rhee",
     "Taekwondo",
+    "The Korean War",
     "Tteokbokki",
     "Xia",
     "iKON"
@@ -43526,15 +43565,20 @@
     "The Battle of Stalingrad",
     "The Brothers Karamazov",
     "The Chernobyl Disaster",
+    "The Cold War",
     "The Collapse of the Soviet Union",
+    "The Crimean War",
     "The Russian Civil War",
     "The Russian Invasion of Ukraine",
+    "The Russian Revolution",
+    "The Russo-Japanese War",
     "The Space Race",
     "Tsar Bomba",
     "Vareniki",
     "Vodka",
     "Volga",
     "War and Peace",
+    "World War II",
     "Yuri Gagarin"
   ],
   "Things Rwandan": [
@@ -43572,7 +43616,8 @@
   "Things Serbian": [
     "Gavrilo Princip",
     "Serbia",
-    "Tesla"
+    "Tesla",
+    "The Yugoslav Wars"
   ],
   "Things Sierra Leonean": [
     "Sierra Leone"
@@ -43593,7 +43638,8 @@
   ],
   "Things South African": [
     "Shaka Zulu",
-    "South Africa"
+    "South Africa",
+    "The Boer War"
   ],
   "Things South Ossetian": [
     "South Ossetia"
@@ -43649,6 +43695,7 @@
     "The Spanish Armada",
     "The Spanish Civil War",
     "The Spanish Flu",
+    "The Spanish-American War",
     "Trinidad"
   ],
   "Things Sri Lankan": [
@@ -43889,6 +43936,7 @@
     "Pho",
     "South Vietnam",
     "The My Lai Massacre",
+    "The Vietnam War",
     "Vietnam"
   ],
   "Things Yemeni": [
