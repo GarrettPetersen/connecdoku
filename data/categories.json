@@ -554,6 +554,7 @@
   "1350s": [
     "Battle of Poitiers",
     "John of Bohemia",
+    "Red Turban Rebellion",
     "The Black Prince"
   ],
   "1360s": [
@@ -596,6 +597,8 @@
     "Ögedei Khan"
   ],
   "1400s": [
+    "Jingnan Campaign",
+    "Ming–Vietnam War",
     "Richard II"
   ],
   "1410s": [
@@ -605,6 +608,9 @@
   "1420s": [
     "Siege of Orléans",
     "Treaty of Troyes"
+  ],
+  "1440s": [
+    "Battle of Tumu Fortress"
   ],
   "14th Century": [
     "Battle of Crécy",
@@ -623,6 +629,7 @@
     "Ming",
     "Philip",
     "Philip VI",
+    "Red Turban Rebellion",
     "Richard II",
     "Romance of the Three Kingdoms",
     "Siege of Calais",
@@ -644,8 +651,12 @@
   "1570s": [
     "Battle of Lepanto"
   ],
+  "1590s": [
+    "Imjin War"
+  ],
   "15th Century": [
     "Battle of Agincourt",
+    "Battle of Tumu Fortress",
     "Christopher Columbus",
     "Copernicus",
     "Da Vinci",
@@ -657,11 +668,13 @@
     "Henry VII",
     "Hussite Wars",
     "Jan Hus",
+    "Jingnan Campaign",
     "Joan of Arc",
     "Longbow",
     "Mehmed II",
     "Michelangelo",
     "Ming",
+    "Ming–Vietnam War",
     "Nina",
     "Philip",
     "Pinta",
@@ -715,6 +728,7 @@
     "Globe Theatre",
     "Henry VIII",
     "Hernán Cortés",
+    "Imjin War",
     "Jane Seymour",
     "John Calvin",
     "John Knox",
@@ -889,6 +903,7 @@
     "Baháʼu'lláh",
     "Buchanan",
     "Crime and Punishment",
+    "Dungan Revolt",
     "Ford's Theatre",
     "Four score and seven years ago",
     "Grant",
@@ -910,6 +925,7 @@
     "Baháʼu'lláh",
     "Carmen",
     "Challenger",
+    "Dungan Revolt",
     "Ellen G. White",
     "Grant",
     "Hayes",
@@ -1005,6 +1021,7 @@
     "Rasputin",
     "Rockefeller",
     "Rolls-Royce",
+    "The Boxer Rebellion",
     "The Call of the Wild",
     "The Russo-Japanese War",
     "The Tale of Peter Rabbit",
@@ -1922,6 +1939,7 @@
     "Debussy",
     "Dorothea Dix",
     "Dracula",
+    "Dungan Revolt",
     "Edison",
     "Eiffel Tower",
     "Elementary, my dear Watson",
@@ -3028,6 +3046,7 @@
     "The Battle of Stalingrad",
     "The Bell Jar",
     "The Big Sleep",
+    "The Boxer Rebellion",
     "The British Empire",
     "The Call of the Wild",
     "The Cambodian Genocide",
@@ -5304,6 +5323,7 @@
     "Battle of Red Cliff",
     "Battle of Sluys",
     "Battle of Trafalgar",
+    "Battle of Tumu Fortress",
     "Battle of Yamen",
     "Battle of Zhizhi",
     "Gettysburg",
@@ -6081,6 +6101,9 @@
     "Olympus",
     "Red",
     "Sony"
+  ],
+  "Campaigns": [
+    "Jingnan Campaign"
   ],
   "Candy": [
     "Coffee Crisp",
@@ -7146,6 +7169,7 @@
     "Battle of Pharsalus",
     "Battle of Philippi",
     "Chu–Han Contention",
+    "Jingnan Campaign",
     "The American Civil War",
     "The English Civil War",
     "The Russian Civil War",
@@ -11681,6 +11705,7 @@
     "Desk"
   ],
   "Ends with ESS": [
+    "Battle of Tumu Fortress",
     "Chess",
     "Chungking Express",
     "Dauntless",
@@ -12337,6 +12362,7 @@
     "Luigi"
   ],
   "Ends with IGN": [
+    "Jingnan Campaign",
     "No Parking Sign",
     "Speed Limit Sign",
     "Stop Sign",
@@ -12611,6 +12637,7 @@
     "Predestination",
     "Pulp Fiction",
     "Red Dead Redemption",
+    "Red Turban Rebellion",
     "Resolution",
     "Scorpion",
     "Siberian Traps Eruption",
@@ -14046,6 +14073,7 @@
     "Bar Kokhba Revolt",
     "Bohemian Revolt",
     "Bolt",
+    "Dungan Revolt",
     "The Peasants' Revolt",
     "Thunderbolt",
     "Usain Bolt"
@@ -15799,7 +15827,9 @@
   "Ends with WAR": [
     "Art of War",
     "God of War",
+    "Imjin War",
     "Kitos War",
+    "Ming–Vietnam War",
     "Soviet-Afghan War",
     "The Algerian War",
     "The American Civil War",
@@ -16245,6 +16275,7 @@
     "Battle of Red Cliff",
     "Battle of Sluys",
     "Battle of Trafalgar",
+    "Battle of Tumu Fortress",
     "Battle of Yamen",
     "Battle of Zhizhi",
     "Bay of Pigs",
@@ -16266,6 +16297,7 @@
     "Crucifixion of Christ",
     "Deccan Traps Eruption",
     "Deepwater Horizon",
+    "Dungan Revolt",
     "Empress of Ireland",
     "Entebbe Hijacking",
     "Eyjafjallajökull Eruption",
@@ -16286,9 +16318,11 @@
     "Hindenburg",
     "Hundred Schools of Thought",
     "Hussite Wars",
+    "Imjin War",
     "Iranian Revolution",
     "Ivy Mike",
     "Jingkang Incident",
+    "Jingnan Campaign",
     "Katrina",
     "Kitos War",
     "Krakatoa",
@@ -16297,6 +16331,7 @@
     "Last Glacial Maximum",
     "Lusitania",
     "Mexican Economic Miracle",
+    "Ming–Vietnam War",
     "Mongol Conquest of China",
     "Mount Pelée Eruption",
     "Mount St. Helens Eruption",
@@ -16309,6 +16344,7 @@
     "Pinatubo Eruption",
     "Pompeii",
     "Profumo Affair",
+    "Red Turban Rebellion",
     "Second Defenestration of Prague",
     "Second Triumvirate",
     "Siberian Traps Eruption",
@@ -21359,20 +21395,26 @@
     "Battle of Red Cliff",
     "Battle of Sluys",
     "Battle of Trafalgar",
+    "Battle of Tumu Fortress",
     "Battle of Yamen",
     "Battle of Zhizhi",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
     "Bohemian Revolt",
     "Chu–Han Contention",
+    "Dungan Revolt",
     "Gettysburg",
     "Han Wudi's Defeat of the Xiongnu",
     "Hussite Wars",
+    "Imjin War",
     "Jingkang Incident",
+    "Jingnan Campaign",
     "Kitos War",
+    "Ming–Vietnam War",
     "Mongol Conquest of China",
     "Nuclear Bombing of Hiroshima",
     "Nuclear Bombing of Nagasaki",
+    "Red Turban Rebellion",
     "Siege of Calais",
     "Siege of Orléans",
     "Soviet-Afghan War",
@@ -21381,6 +21423,7 @@
     "The American Revolution",
     "The Battle of Stalingrad",
     "The Boer War",
+    "The Boxer Rebellion",
     "The Cold War",
     "The Crimean War",
     "The Cuban Revolution",
@@ -21562,14 +21605,19 @@
   ],
   "Ming Dynasty": [
     "Battle of Lake Poyang",
+    "Battle of Tumu Fortress",
     "Beijing",
     "Forbidden City",
     "Forbidden City Construction",
     "Great Wall",
     "Hainan",
+    "Imjin War",
+    "Jingnan Campaign",
     "Journey to the West",
     "Ming",
+    "Ming–Vietnam War",
     "Peking Duck",
+    "Red Turban Rebellion",
     "Romance of the Three Kingdoms",
     "The realm, long divided, must unite",
     "Zheng He",
@@ -31074,6 +31122,7 @@
     "Beijing",
     "Dan Dan Noodles",
     "Dream of the Red Chamber",
+    "Dungan Revolt",
     "Forbidden City",
     "Gong Bao Ji Ding",
     "Hong Xiuquan",
@@ -31083,6 +31132,7 @@
     "Ping Pong",
     "Qing",
     "Table Tennis",
+    "The Boxer Rebellion",
     "The Taiping Rebellion",
     "Twice Cooked Pork",
     "Yu Xiang Qie Zi"
@@ -31908,7 +31958,9 @@
   "Rebellions": [
     "An Lushan Rebellion",
     "Bar Kokhba Revolt",
+    "Dungan Revolt",
     "Kitos War",
+    "Red Turban Rebellion",
     "The Boxer Rebellion",
     "The Peasants' Revolt",
     "The Shays' Rebellion",
@@ -34516,6 +34568,7 @@
     "Battle of Red Cliff",
     "Battle of Sluys",
     "Battle of Trafalgar",
+    "Battle of Tumu Fortress",
     "Battle of Yamen",
     "Battle of Zhizhi",
     "Battlefield",
@@ -35546,7 +35599,8 @@
     "Dumpling"
   ],
   "Starts with DUN": [
-    "Dune"
+    "Dune",
+    "Dungan Revolt"
   ],
   "Starts with DUT": [
     "Dutch Guiana"
@@ -36543,6 +36597,9 @@
   "Starts with IMA": [
     "Imagine"
   ],
+  "Starts with IMJ": [
+    "Imjin War"
+  ],
   "Starts with IMM": [
     "Immense"
   ],
@@ -36726,7 +36783,8 @@
   "Starts with JIN": [
     "Jing Ke",
     "Jingkang Incident",
-    "Jingle All the Way"
+    "Jingle All the Way",
+    "Jingnan Campaign"
   ],
   "Starts with JJA": [
     "Jjajangmyeon"
@@ -37498,6 +37556,7 @@
     "Minecraft",
     "Minestrone",
     "Ming",
+    "Ming–Vietnam War",
     "Mini",
     "Minié ball",
     "Minnie",
@@ -38407,6 +38466,7 @@
     "Red Pill",
     "Red Riding Hood",
     "Red Sea",
+    "Red Turban Rebellion",
     "Red Velvet",
     "Red Wine",
     "Reddit",
@@ -42188,6 +42248,7 @@
     "Bao",
     "Battle of Lake Poyang",
     "Battle of Red Cliff",
+    "Battle of Tumu Fortress",
     "Battle of Yamen",
     "Battle of Zhizhi",
     "Beijing",
@@ -42214,6 +42275,7 @@
     "Dream of the Red Chamber",
     "Du Fu",
     "Dumpling",
+    "Dungan Revolt",
     "Egg Foo Young",
     "Emperor Wen of Han",
     "Emperor Wu of Han",
@@ -42244,10 +42306,12 @@
     "Huineng",
     "Huizong",
     "Hundred Schools of Thought",
+    "Imjin War",
     "In the Mood for Love",
     "Jiaozi",
     "Jing Ke",
     "Jingkang Incident",
+    "Jingnan Campaign",
     "Journey to the West",
     "Kombucha",
     "Kung Pao Chicken",
@@ -42265,6 +42329,7 @@
     "Mapo Tofu",
     "Marco Polo",
     "Ming",
+    "Ming–Vietnam War",
     "Mongol Conquest of China",
     "Mooncake",
     "Movable Type Printing",
@@ -42279,6 +42344,7 @@
     "Qin Shi Huang",
     "Qing",
     "Raise the Red Lantern",
+    "Red Turban Rebellion",
     "Romance of the Three Kingdoms",
     "Silk Road",
     "Sima Yan",
@@ -42294,6 +42360,7 @@
     "Tao Yuanming",
     "Tea",
     "Terracotta Army",
+    "The Boxer Rebellion",
     "The Dark Forest",
     "The Grandmaster",
     "The Hand",
@@ -42929,6 +42996,7 @@
     "Howl's Moving Castle",
     "Ichiro",
     "Ikiru",
+    "Imjin War",
     "Japan",
     "Jill",
     "Judo",
@@ -43074,6 +43142,7 @@
     "Green Tea",
     "Hotteok",
     "Hyundai",
+    "Imjin War",
     "Japchae",
     "Jeju",
     "Jjajangmyeon",
@@ -43814,6 +43883,7 @@
     "Che",
     "Com Tam",
     "Goi Cuon",
+    "Ming–Vietnam War",
     "North Vietnam",
     "Nuoc Cham",
     "Pho",
@@ -44595,11 +44665,14 @@
     "Bay of Pigs Invasion",
     "Bohemian Revolt",
     "Chu–Han Contention",
+    "Dungan Revolt",
     "Han Wudi's Defeat of the Xiongnu",
     "Hussite Wars",
-    "Jingkang Incident",
+    "Imjin War",
     "Kitos War",
+    "Ming–Vietnam War",
     "Mongol Conquest of China",
+    "Red Turban Rebellion",
     "Soviet-Afghan War",
     "The Algerian War",
     "The American Civil War",
@@ -45125,6 +45198,7 @@
     "Kublai Khan",
     "Marco Polo",
     "Mongol Conquest of China",
+    "Red Turban Rebellion",
     "Yuan"
   ],
   "Zodiac Signs": [

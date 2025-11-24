@@ -3484,6 +3484,17 @@
     "Things French",
     "Things Spanish"
   ],
+  "Battle of Tumu Fortress": [
+    "1440s",
+    "15th Century",
+    "Battles",
+    "Ends with ESS",
+    "Events",
+    "Military Conflicts",
+    "Ming Dynasty",
+    "Starts with BAT",
+    "Things Chinese"
+  ],
   "Battle of Yamen": [
     "13th Century",
     "Battles",
@@ -10783,6 +10794,19 @@
     "Starts with DUN",
     "Things American"
   ],
+  "Dungan Revolt": [
+    "1860s",
+    "1870s",
+    "19th Century",
+    "Ends with OLT",
+    "Events",
+    "Military Conflicts",
+    "Qing Dynasty",
+    "Rebellions",
+    "Starts with DUN",
+    "Things Chinese",
+    "Wars"
+  ],
   "Dutch Guiana": [
     "Countries",
     "Countries in South America",
@@ -17016,6 +17040,19 @@
     "Songs by John Lennon",
     "Starts with IMA"
   ],
+  "Imjin War": [
+    "1590s",
+    "16th Century",
+    "Ends with WAR",
+    "Events",
+    "Military Conflicts",
+    "Ming Dynasty",
+    "Starts with IMJ",
+    "Things Chinese",
+    "Things Japanese",
+    "Things Korean",
+    "Wars"
+  ],
   "Immense": [
     "Ends with NSE",
     "Starts with IMM",
@@ -18016,8 +18053,7 @@
     "Military Conflicts",
     "Song Dynasty",
     "Starts with JIN",
-    "Things Chinese",
-    "Wars"
+    "Things Chinese"
   ],
   "Jingle All the Way": [
     "1990s",
@@ -18035,6 +18071,18 @@
     "Movies featuring Sinbad",
     "Starts with JIN",
     "Things American"
+  ],
+  "Jingnan Campaign": [
+    "1400s",
+    "15th Century",
+    "Campaigns",
+    "Civil Wars",
+    "Ends with IGN",
+    "Events",
+    "Military Conflicts",
+    "Ming Dynasty",
+    "Starts with JIN",
+    "Things Chinese"
   ],
   "Jjajangmyeon": [
     "Ends with EON",
@@ -22797,6 +22845,18 @@
     "Ming Dynasty",
     "Starts with MIN",
     "Things Chinese"
+  ],
+  "Ming–Vietnam War": [
+    "1400s",
+    "15th Century",
+    "Ends with WAR",
+    "Events",
+    "Military Conflicts",
+    "Ming Dynasty",
+    "Starts with MIN",
+    "Things Chinese",
+    "Things Vietnamese",
+    "Wars"
   ],
   "Mini": [
     "1950s",
@@ -28573,6 +28633,19 @@
     "Locations in Africa",
     "Seas",
     "Starts with RED"
+  ],
+  "Red Turban Rebellion": [
+    "1350s",
+    "14th Century",
+    "Ends with ION",
+    "Events",
+    "Military Conflicts",
+    "Ming Dynasty",
+    "Rebellions",
+    "Starts with RED",
+    "Things Chinese",
+    "Wars",
+    "Yuan Dynasty"
   ],
   "Red Velvet": [
     "Colors",
@@ -34355,13 +34428,18 @@
     "Wars"
   ],
   "The Boxer Rebellion": [
+    "1900s",
     "19th Century",
+    "20th Century",
     "Anti-Colonial Movements",
     "Colonial Wars",
     "Ends with ION",
     "Events",
+    "Military Conflicts",
+    "Qing Dynasty",
     "Rebellions",
     "Starts with THE",
+    "Things Chinese",
     "Wars"
   ],
   "The Brexit Vote": [
