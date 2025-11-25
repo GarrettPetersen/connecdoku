@@ -6318,5 +6318,85 @@
         "Anne Frank"
       ]
     ]
+  },
+  {
+    "rows": [
+      "15th Century",
+      "American Civil War",
+      "Roman Republic",
+      "Song Dynasty"
+    ],
+    "cols": [
+      "Battles",
+      "People",
+      "Wars",
+      "Weapons"
+    ],
+    "words": [
+      [
+        "Battle of Tumu Fortress",
+        "Mehmed II",
+        "Hussite Wars",
+        "Longbow"
+      ],
+      [
+        "Gettysburg",
+        "Robert E. Lee",
+        "The American Civil War",
+        "Minié ball"
+      ],
+      [
+        "Battle of Alesia",
+        "Pompey",
+        "Third Servile War",
+        "Gladius"
+      ],
+      [
+        "Battle of Yamen",
+        "Huizong",
+        "Mongol Conquest of China",
+        "Gunpowder"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "2006",
+      "Horror Stories",
+      "Men",
+      "Stories about Families"
+    ],
+    "cols": [
+      "Movies featuring Jack Nicholson",
+      "Musical Films",
+      "Sequels",
+      "Stories Where the Mom Dies"
+    ],
+    "words": [
+      [
+        "The Departed",
+        "Dreamgirls",
+        "The Santa Clause 3: The Escape Clause",
+        "Pan's Labyrinth"
+      ],
+      [
+        "The Shining",
+        "Rocky Horror Picture Show",
+        "Alien: Resurrection",
+        "Carrie"
+      ],
+      [
+        "Hoffa",
+        "The Wizard of Oz",
+        "Prince Caspian",
+        "Hamlet"
+      ],
+      [
+        "Terms of Endearment",
+        "Encanto",
+        "The Incredibles 2",
+        "Finding Nemo"
+      ]
+    ]
   }
 ]
