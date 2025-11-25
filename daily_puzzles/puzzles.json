@@ -6398,5 +6398,45 @@
         "Finding Nemo"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1984",
+      "1991",
+      "Classic Literature",
+      "Disasters"
+    ],
+    "cols": [
+      "Adventure Stories",
+      "Oscar Winners",
+      "Sci-fi Stories",
+      "Things Russian"
+    ],
+    "words": [
+      [
+        "Ghostbusters",
+        "Amadeus",
+        "The Terminator",
+        "Tetris"
+      ],
+      [
+        "Robin Hood: Prince of Thieves",
+        "The Silence of the Lambs",
+        "Terminator 2: Judgment Day",
+        "The Collapse of the Soviet Union"
+      ],
+      [
+        "Gulliver's Travels",
+        "Gone with the Wind",
+        "Brave New World",
+        "The Brothers Karamazov"
+      ],
+      [
+        "Krakatoa",
+        "Titanic",
+        "Fallout",
+        "The Chernobyl Disaster"
+      ]
+    ]
   }
 ]
