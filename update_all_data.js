@@ -15,6 +15,14 @@ let wordsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'words.j
 let updatedCount = 0;
 let totalWords = 0;
 
+// Regexes to detect accented Latin letters (upper- and lowercase)
+const UMLAUT_REGEX = /[ÄËÏÖÜŸäëïöüÿ]/; // umlaut / diaeresis
+const ACUTE_REGEX = /[ÁÉÍÓÚÝáéíóúý]/; // acute accent
+const GRAVE_REGEX = /[ÀÈÌÒÙàèìòù]/; // grave accent
+const CIRCUMFLEX_REGEX = /[ÂÊÎÔÛâêîôû]/; // circumflex
+const TILDE_REGEX = /[ÃÑÕãñõ]/; // tilde
+const CEDILLA_REGEX = /[Çç]/; // cedilla
+
 for (const [word, categories] of Object.entries(wordsData)) {
     totalWords++;
 
@@ -35,6 +43,26 @@ for (const [word, categories] of Object.entries(wordsData)) {
         newCategories.push(endsWith);
 
         updatedCount++;
+    }
+
+    // Add categories for words that contain accented characters
+    if (UMLAUT_REGEX.test(word)) {
+        newCategories.push('Contains an Umlaut');
+    }
+    if (ACUTE_REGEX.test(word)) {
+        newCategories.push('Contains an Acute Accent');
+    }
+    if (GRAVE_REGEX.test(word)) {
+        newCategories.push('Contains a Grave Accent');
+    }
+    if (CIRCUMFLEX_REGEX.test(word)) {
+        newCategories.push('Contains a Circumflex');
+    }
+    if (TILDE_REGEX.test(word)) {
+        newCategories.push('Contains a Tilde');
+    }
+    if (CEDILLA_REGEX.test(word)) {
+        newCategories.push('Contains a Cedilla');
     }
 
     // Update the word's categories (for all words, to remove old pattern tags)
@@ -389,7 +417,12 @@ for (const category of allCurrentCategories) {
     let categorized = false;
 
     // Check automatic categorization rules first
-    if (category.startsWith('Starts with ') || category.startsWith('Ends with ')) {
+    if (
+        category.startsWith('Starts with ')
+        || category.startsWith('Ends with ')
+        || category.startsWith('Contains an ')
+        || category.startsWith('Contains a ')
+    ) {
         updatedMetaCategories["Letter Patterns"].push(category);
         letterPatternCount++;
         categorized = true;

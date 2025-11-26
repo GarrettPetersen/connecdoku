@@ -9,6 +9,12 @@
   "1955": [
     "1955 World Series"
   ],
+  "1964": [
+    "A Fistful of Dollars"
+  ],
+  "1965": [
+    "For a Few Dollars More"
+  ],
   "1973": [
     "Soylent Green"
   ],
@@ -107,9 +113,6 @@
     "A Good Day to Die Hard"
   ],
   "Movies directed by Scott Elliott": [
-    "A Map of the World"
-  ],
-  "Movies featuring Julianne Moore": [
     "A Map of the World"
   ],
   "Movies directed by J. A. Bayona": [
@@ -279,15 +282,6 @@
   ],
   "WWI Powers": [
     "Austria-Hungary"
-  ],
-  "Movies directed by Anthony Russo": [
-    "Avengers: Endgame"
-  ],
-  "Movies directed by Joe Russo": [
-    "Avengers: Endgame"
-  ],
-  "Movies featuring Chris Evans": [
-    "Avengers: Endgame"
   ],
   "Things Azerbaijani": [
     "Azerbaijan"
@@ -570,6 +564,9 @@
   ],
   "Movies featuring Michael York": [
     "Cabaret"
+  ],
+  "Contains a Cedilla": [
+    "Cachaça"
   ],
   "First-Person Shooters": [
     "Call of Duty"
@@ -1177,9 +1174,6 @@
   "The Beach Boys": [
     "Good Vibrations"
   ],
-  "Movies featuring Ray Liotta": [
-    "Goodfellas"
-  ],
   "South American Countries": [
     "Gran Colombia"
   ],
@@ -1263,9 +1257,6 @@
   ],
   "Movies directed by Alfonso Cuarón": [
     "Harry Potter and the Prisoner of Azkaban"
-  ],
-  "Movies directed by Michael Mann": [
-    "Heat"
   ],
   "Movies directed by John Cameron Mitchell": [
     "Hedwig and the Angry Inch"
@@ -1633,6 +1624,9 @@
   "Things Kyrgyz": [
     "Kyrgyzstan"
   ],
+  "Contains a Grave Accent": [
+    "La Bohème"
+  ],
   "Movies directed by Damien Chazelle": [
     "La La Land"
   ],
@@ -1791,6 +1785,15 @@
   ],
   "Movies featuring Mariel Hemingway": [
     "Manhattan"
+  ],
+  "Movies featuring Brian Cox": [
+    "Manhunter"
+  ],
+  "Movies featuring Tom Noonan": [
+    "Manhunter"
+  ],
+  "Movies featuring William Petersen": [
+    "Manhunter"
   ],
   "Movies directed by Robert Stevenson": [
     "Mary Poppins"
@@ -2761,9 +2764,6 @@
   "Movies directed by Roland Emmerich": [
     "Stargate"
   ],
-  "Movies featuring James Spader": [
-    "Stargate"
-  ],
   "Movies featuring Viveca Lindfors": [
     "Stargate"
   ],
@@ -2883,6 +2883,9 @@
   ],
   "Movies featuring Jean Dujardin": [
     "The Artist"
+  ],
+  "Movies featuring Tom Hiddleston": [
+    "The Avengers"
   ],
   "Gioachino Rossini": [
     "The Barber of Seville"
@@ -3033,9 +3036,6 @@
   ],
   "Movies featuring Andy Garcia": [
     "The Godfather Part III"
-  ],
-  "Movies directed by Sergio Leone": [
-    "The Good, the Bad and the Ugly"
   ],
   "Movies featuring Anne Bancroft": [
     "The Graduate"
@@ -3201,6 +3201,9 @@
   ],
   "Movies featuring John Lone": [
     "The Last Emperor"
+  ],
+  "Eighth in Internal Chronology": [
+    "The Last Jedi"
   ],
   "Movies directed by Roger Allers": [
     "The Lion King"
@@ -3381,6 +3384,9 @@
   ],
   "Movies featuring Tom Hardy": [
     "The Revenant"
+  ],
+  "Ninth in Internal Chronology": [
+    "The Rise of Skywalker"
   ],
   "Movies directed by John Pasquin": [
     "The Santa Clause"
@@ -3840,9 +3846,17 @@
     "12 Years a Slave",
     "Black Panther"
   ],
+  "Spaghetti Westerns": [
+    "A Fistful of Dollars",
+    "For a Few Dollars More"
+  ],
   "Movies featuring David Strathairn": [
     "A Map of the World",
     "Nomadland"
+  ],
+  "Movies featuring Julianne Moore": [
+    "A Map of the World",
+    "Hannibal"
   ],
   "Movies featuring Felicity Jones": [
     "A Monster Calls",
@@ -3952,13 +3966,21 @@
     "Attack of the Clones",
     "Revenge of the Sith"
   ],
-  "Movies featuring Mark Ruffalo": [
-    "Avengers: Endgame",
-    "Spotlight"
+  "Movies directed by Joss Whedon": [
+    "Avengers: Age of Ultron",
+    "The Avengers"
   ],
-  "Movies featuring Robert Downey Jr.": [
+  "Movies featuring James Spader": [
+    "Avengers: Age of Ultron",
+    "Stargate"
+  ],
+  "Movies directed by Anthony Russo": [
     "Avengers: Endgame",
-    "Oppenheimer"
+    "Avengers: Infinity War"
+  ],
+  "Movies directed by Joe Russo": [
+    "Avengers: Endgame",
+    "Avengers: Infinity War"
   ],
   "Movies directed by David Hand": [
     "Bambi",
@@ -4095,10 +4117,6 @@
   "Wei Dynasty": [
     "Cao Cao",
     "Cao Pi"
-  ],
-  "Things Tunisian": [
-    "Carthage",
-    "Tunisia"
   ],
   "Movies directed by Michael Curtiz": [
     "Casablanca",
@@ -4356,10 +4374,6 @@
     "Escape from New York",
     "Poseidon"
   ],
-  "Movies featuring Lee Van Cleef": [
-    "Escape from New York",
-    "The Good, the Bad and the Ugly"
-  ],
   "Manufactured by Lockheed": [
     "F-22",
     "F-35"
@@ -4480,6 +4494,10 @@
     "Gone with the Wind",
     "The Wizard of Oz"
   ],
+  "Movies featuring Ray Liotta": [
+    "Goodfellas",
+    "Hannibal"
+  ],
   "Fictional Dogs": [
     "Goofy",
     "Snoopy"
@@ -4520,9 +4538,17 @@
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Sorcerer's Stone"
   ],
-  "Movies featuring Gary Oldman": [
-    "Harry Potter and the Prisoner of Azkaban",
-    "The Fifth Element"
+  "Eighth in Release Order": [
+    "Harry Potter and the Deathly Hallows: Part 1",
+    "The Last Jedi"
+  ],
+  "Ninth in Release Order": [
+    "Harry Potter and the Deathly Hallows: Part 2",
+    "The Rise of Skywalker"
+  ],
+  "Movies directed by Michael Mann": [
+    "Heat",
+    "Manhunter"
   ],
   "Movies featuring Danny DeVito": [
     "Hercules",
@@ -4739,10 +4765,6 @@
   "Things Moldovan": [
     "Moldova",
     "Transnistria"
-  ],
-  "Movies featuring Billy Crystal": [
-    "Monsters Inc",
-    "Monsters University"
   ],
   "Movies directed by Wes Anderson": [
     "Moonrise Kingdom",
@@ -5140,6 +5162,11 @@
     "If....",
     "O Lucky Man!"
   ],
+  "Movies directed by Sergio Leone": [
+    "A Fistful of Dollars",
+    "For a Few Dollars More",
+    "The Good, the Bad and the Ugly"
+  ],
   "Movies featuring Oprah Winfrey": [
     "A Wrinkle in Time",
     "The Color Purple",
@@ -5164,11 +5191,6 @@
     "Akira",
     "Blade Runner",
     "The Matrix"
-  ],
-  "Movies directed by Ridley Scott": [
-    "Alien",
-    "Blade Runner",
-    "Gladiator"
   ],
   "Wolfgang Amadeus Mozart": [
     "Amadeus",
@@ -5215,10 +5237,10 @@
     "Avatar: Frontiers of Pandora",
     "Avatar: The Way of Water"
   ],
-  "Movies featuring Scarlett Johansson": [
-    "Avengers: Endgame",
-    "Her",
-    "Jojo Rabbit"
+  "Movies featuring Chris Hemsworth": [
+    "Avengers: Age of Ultron",
+    "Avengers: Infinity War",
+    "The Avengers"
   ],
   "Bomber Aircraft": [
     "B-17",
@@ -5334,6 +5356,11 @@
     "Cambodia",
     "Kampuchea",
     "The Cambodian Genocide"
+  ],
+  "Things Tunisian": [
+    "Carthage",
+    "Hannibal",
+    "Tunisia"
   ],
   "Movies featuring Humphrey Bogart": [
     "Casablanca",
@@ -5510,6 +5537,11 @@
     "Ice Age",
     "Moulin Rouge!"
   ],
+  "Movies featuring Lee Van Cleef": [
+    "Escape from New York",
+    "For a Few Dollars More",
+    "The Good, the Bad and the Ugly"
+  ],
   "Movies directed by Robert Wise": [
     "Everest",
     "The Sound of Music",
@@ -5554,6 +5586,21 @@
     "Guy Fawkes",
     "Remember, remember",
     "Robert Catesby"
+  ],
+  "Movies featuring Gary Oldman": [
+    "Hannibal",
+    "Harry Potter and the Prisoner of Azkaban",
+    "The Fifth Element"
+  ],
+  "Seventh in Release Order": [
+    "Harry Potter and the Deathly Hallows",
+    "The Force Awakens",
+    "The Last Battle"
+  ],
+  "Sixth in Internal Chronology": [
+    "Harry Potter and the Half-Blood Prince",
+    "Return of the Jedi",
+    "The Silver Chair"
   ],
   "Things Hawaiian": [
     "Hawaii",
@@ -5640,15 +5687,15 @@
     "Peru",
     "Pisco"
   ],
-  "Movies featuring Clint Eastwood": [
-    "Million Dollar Baby",
-    "The Good, the Bad and the Ugly",
-    "Unforgiven"
-  ],
   "Movies featuring Natalie Wood": [
     "Miracle on 34th Street",
     "The Searchers",
     "West Side Story"
+  ],
+  "Movies featuring Billy Crystal": [
+    "Monsters Inc",
+    "Monsters University",
+    "Monsters, Inc."
   ],
   "Things Yemeni": [
     "North Yemen",
