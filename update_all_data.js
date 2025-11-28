@@ -386,6 +386,7 @@ let timePeriodCount = 0;
 let locationCount = 0;
 let manufacturerCount = 0;
 let genreCount = 0;
+let seriesOrderCount = 0;
 let countryTypeCount = 0;
 let nationalityCount = 0;
 let noMetaCount = 0;
@@ -461,6 +462,15 @@ for (const category of allCurrentCategories) {
         genreCount++;
         categorized = true;
         processedCategories.add(category);
+    } else if (
+        category.endsWith(' in Release Order')
+        || category.endsWith(' in Internal Chronology')
+    ) {
+        updatedMetaCategories["Series Order"] = updatedMetaCategories["Series Order"] || [];
+        updatedMetaCategories["Series Order"].push(category);
+        seriesOrderCount++;
+        categorized = true;
+        processedCategories.add(category);
     } else if (category.startsWith('Former ') || category.includes('Countries') || category.includes('Nations') || category.includes('Powers') || category.includes('UN Security Council Permanent Members')) {
         updatedMetaCategories["Country Types"] = updatedMetaCategories["Country Types"] || [];
         updatedMetaCategories["Country Types"].push(category);
@@ -524,6 +534,11 @@ for (const category of noMetaCategory) {
         shouldBeRemoved = true;
     } else if (category.endsWith(' Stories') || category.endsWith(' Films')) {
         shouldBeRemoved = true;
+    } else if (
+        category.endsWith(' in Release Order')
+        || category.endsWith(' in Internal Chronology')
+    ) {
+        shouldBeRemoved = true;
     } else if (category.startsWith('Former ') || category.includes('Countries') || category.includes('Nations') || category.includes('Powers') || category.includes('UN Security Council Permanent Members')) {
         shouldBeRemoved = true;
     } else if (category.startsWith('Things ')) {
@@ -547,6 +562,7 @@ console.log(`- Added ${timePeriodCount} categories to Time Periods`);
 console.log(`- Added ${locationCount} categories to Locations`);
 console.log(`- Added ${manufacturerCount} categories to Manufacturers`);
 console.log(`- Added ${genreCount} categories to Genres`);
+console.log(`- Added ${seriesOrderCount} categories to Series Order`);
 console.log(`- Added ${countryTypeCount} categories to Country Types`);
 console.log(`- Added ${nationalityCount} categories to Nationalities`);
 console.log(`- Added ${noMetaCount} categories to No Meta Category`);
