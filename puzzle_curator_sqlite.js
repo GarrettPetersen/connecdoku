@@ -299,10 +299,9 @@ function findPuzzlesWithNoRecentCategories(db, recentCategories, limit = 10) {
             SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp, q
             FROM sample
             ORDER BY q DESC
-            LIMIT ?
         `;
 
-        db.all(query, [DEFAULT_MIN_QUALITY, limit], (err, rows) => {
+        db.all(query, [DEFAULT_MIN_QUALITY], (err, rows) => {
             if (err) {
                 reject(err);
             } else if (rows && rows.length > 0) {
@@ -310,6 +309,9 @@ function findPuzzlesWithNoRecentCategories(db, recentCategories, limit = 10) {
                 let invalidPuzzlesFound = 0;
 
                 for (const row of rows) {
+                    // Stop once we've collected the requested number of valid puzzles
+                    if (validPuzzles.length >= limit) break;
+
                     if (usedHashes.has(row.puzzle_hash)) {
                         continue; // Skip already used puzzles
                     }
@@ -326,11 +328,9 @@ function findPuzzlesWithNoRecentCategories(db, recentCategories, limit = 10) {
                     if (!validatePuzzle(puzzle)) {
                         invalidPuzzlesFound++;
                         console.log(`⚠️  Found invalid puzzle in secret sauce search, deleting from database...`);
-
-                        // Delete the invalid puzzle from database
-                        deletePuzzleFromDatabase(db, puzzle.hash).then(() => {
-                            console.log(`🗑️  Deleted invalid puzzle ${puzzle.hash.substring(0, 8)}...`);
-                        }).catch(err => {
+                        // Delete the invalid puzzle from database (fire-and-forget; we don't
+                        // need to block assembling the menu on this finishing)
+                        deletePuzzleFromDatabase(db, puzzle.hash).catch(err => {
                             console.error("Error deleting invalid puzzle:", err.message);
                         });
                         continue; // Skip this puzzle

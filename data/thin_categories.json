@@ -1207,9 +1207,6 @@
   "Things Grenadian": [
     "Grenada"
   ],
-  "Movies directed by Harold Ramis": [
-    "Groundhog Day"
-  ],
   "Movies featuring Chris Elliott": [
     "Groundhog Day"
   ],
@@ -1972,11 +1969,11 @@
   "Movies directed by Jeremiah S. Chechik": [
     "National Lampoon's Christmas Vacation"
   ],
-  "Movies featuring Beverly D'Angelo": [
-    "National Lampoon's Christmas Vacation"
-  ],
   "Movies featuring Randy Quaid": [
     "National Lampoon's Christmas Vacation"
+  ],
+  "Movies directed by Amy Heckerling": [
+    "National Lampoon's European Vacation"
   ],
   "Grunge": [
     "Nevermind"
@@ -3652,6 +3649,9 @@
   "Movies featuring Matthew Fox": [
     "Vantage Point"
   ],
+  "Movies directed by Stephen Kessler": [
+    "Vegas Vacation"
+  ],
   "Things Venezuelan": [
     "Venezuela"
   ],
@@ -4490,6 +4490,10 @@
     "Give me liberty or give me death",
     "The American Revolution"
   ],
+  "Action-Adventure Games": [
+    "God of War",
+    "The Legend of Zelda"
+  ],
   "Movies directed by Victor Fleming": [
     "Gone with the Wind",
     "The Wizard of Oz"
@@ -4509,6 +4513,10 @@
   "Movies featuring Mahershala Ali": [
     "Green Book",
     "Moonlight"
+  ],
+  "Movies directed by Harold Ramis": [
+    "Groundhog Day",
+    "National Lampoon's Vacation"
   ],
   "Things Guinean": [
     "Guinea",
@@ -4801,10 +4809,6 @@
   "Lions": [
     "Nala",
     "Simba"
-  ],
-  "Movies featuring Chevy Chase": [
-    "National Lampoon's Christmas Vacation",
-    "Three Amigos"
   ],
   "Nirvana": [
     "Nevermind",
@@ -5561,11 +5565,6 @@
     "Frozen",
     "Tarzan",
     "Wish"
-  ],
-  "Action-Adventure Games": [
-    "God of War",
-    "Red Dead Redemption",
-    "The Legend of Zelda"
   ],
   "Movies directed by Martin Scorsese": [
     "Goodfellas",
