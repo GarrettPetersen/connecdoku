@@ -273,7 +273,7 @@ async function findPuzzlesWithNoRecentCategories(sqliteDb, recentCategories, lim
     // search "forever" when they don't exist.
     let batchCount = DEFAULT_QUALITY_SAMPLE; // first call: fast path
     const maxBatchCount = DEFAULT_QUALITY_SAMPLE * 4; // escalate up to 4×
-    const maxCandidatesChecked = 20000; // absolute cap across all batches
+    const maxCandidatesChecked = 1_000_000; // absolute cap across all batches
     let candidatesChecked = 0;
 
     const validPuzzles = [];
@@ -1090,12 +1090,27 @@ async function main() {
 
             const sqliteDb = await openDatabase();
             try {
-                console.log("🌶️ Secret Sauce: Finding top 10 puzzles with NO categories from recent days...");
+                const maxSecretSauceRetries = 3;
+                let puzzles = [];
 
-                const puzzles = await findPuzzlesWithNoRecentCategories(sqliteDb, combinedExclusions, 10);
+                for (let attempt = 1; attempt <= maxSecretSauceRetries; attempt++) {
+                    console.log(
+                        `🌶️ Secret Sauce: Finding top 10 puzzles with NO categories from recent days (attempt ${attempt}/${maxSecretSauceRetries})...`
+                    );
+
+                    puzzles = await findPuzzlesWithNoRecentCategories(sqliteDb, combinedExclusions, 10);
+
+                    if (puzzles.length > 0) {
+                        break;
+                    }
+
+                    if (attempt < maxSecretSauceRetries) {
+                        console.log("No valid puzzles found with no recent categories, retrying Secret Sauce search...");
+                    }
+                }
 
                 if (puzzles.length === 0) {
-                    console.log("❌ No valid puzzles found with no recent categories");
+                    console.log("❌ No valid puzzles found with no recent categories after multiple attempts");
                     result = null;
                 } else {
                     console.log(`✅ Found ${puzzles.length} valid puzzles with no recent categories`);
