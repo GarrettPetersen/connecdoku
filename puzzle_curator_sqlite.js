@@ -259,93 +259,78 @@ function getCategoriesFromLastNDays(numDays) {
     return Array.from(recentCategories);
 }
 
-function findPuzzlesWithNoRecentCategories(db, recentCategories, limit = 10) {
-    return new Promise((resolve, reject) => {
-        if (recentCategories.length === 0) {
-            // If no recent categories, just get quality-aware random puzzles
-            return getMultipleRandomPuzzles(db, limit);
+async function findPuzzlesWithNoRecentCategories(sqliteDb, recentCategories, limit = 10) {
+    // If no recent categories, just get quality-aware random puzzles
+    if (!recentCategories || recentCategories.length === 0) {
+        return getMultipleRandomPuzzles(sqliteDb, limit);
+    }
+
+    // Build a lowercase exclusion set for fast checks
+    const exclusionSet = new Set(recentCategories.map(c => c.toLowerCase()));
+
+    // Start with a reasonably small batch size for speed, then escalate if
+    // we don't find enough puzzles, with a hard global cap so we never
+    // search "forever" when they don't exist.
+    let batchCount = DEFAULT_QUALITY_SAMPLE; // first call: fast path
+    const maxBatchCount = DEFAULT_QUALITY_SAMPLE * 4; // escalate up to 4×
+    const maxCandidatesChecked = 20000; // absolute cap across all batches
+    let candidatesChecked = 0;
+
+    const validPuzzles = [];
+    let invalidPuzzlesFound = 0;
+
+    while (validPuzzles.length < limit && candidatesChecked < maxCandidatesChecked) {
+        const remainingBudget = maxCandidatesChecked - candidatesChecked;
+        const thisBatchCount = Math.min(batchCount, remainingBudget);
+
+        // Grab a quality-aware random batch from SQLite
+        const candidates = await getMultipleRandomPuzzles(sqliteDb, thisBatchCount);
+        if (!candidates || candidates.length === 0) {
+            break;
         }
 
-        // Use CTE to create a temporary table of recent categories
-        // Properly escape category names for SQL
-        const recentCategoriesValues = recentCategories.map(cat => {
-            const escaped = cat.toLowerCase().replace(/'/g, "''"); // Escape single quotes
-            return `('${escaped}')`;
-        }).join(',');
+        candidatesChecked += candidates.length;
 
-        const sampleSize = DEFAULT_QUALITY_SAMPLE;
-        const query = `
-            WITH recent_categories(category) AS (
-                VALUES ${recentCategoriesValues}
-            ), sample AS (
-                SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp,
-                       COALESCE(puzzle_quality_score, 0) AS q
-                FROM puzzles
-                WHERE NOT EXISTS (
-                    SELECT 1 FROM recent_categories 
-                    WHERE LOWER(puzzles.row0) = recent_categories.category
-                       OR LOWER(puzzles.row1) = recent_categories.category
-                       OR LOWER(puzzles.row2) = recent_categories.category
-                       OR LOWER(puzzles.row3) = recent_categories.category
-                       OR LOWER(puzzles.col0) = recent_categories.category
-                       OR LOWER(puzzles.col1) = recent_categories.category
-                       OR LOWER(puzzles.col2) = recent_categories.category
-                       OR LOWER(puzzles.col3) = recent_categories.category
-                )
-                AND COALESCE(puzzle_quality_score, 0) >= ?
-                AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
-                LIMIT ${sampleSize}
-            )
-            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp, q
-            FROM sample
-            ORDER BY q DESC
-        `;
+        for (const puzzle of candidates) {
+            if (validPuzzles.length >= limit) break;
 
-        db.all(query, [DEFAULT_MIN_QUALITY], (err, rows) => {
-            if (err) {
-                reject(err);
-            } else if (rows && rows.length > 0) {
-                const validPuzzles = [];
-                let invalidPuzzlesFound = 0;
+            // Skip already-used hashes across sessions
+            if (usedHashes.has(puzzle.hash)) continue;
 
-                for (const row of rows) {
-                    // Stop once we've collected the requested number of valid puzzles
-                    if (validPuzzles.length >= limit) break;
+            const allCategories = [...puzzle.rows, ...puzzle.cols];
 
-                    if (usedHashes.has(row.puzzle_hash)) {
-                        continue; // Skip already used puzzles
-                    }
-
-                    const puzzle = {
-                        rows: [row.row0, row.row1, row.row2, row.row3],
-                        cols: [row.col0, row.col1, row.col2, row.col3],
-                        hash: row.puzzle_hash,
-                        timestamp: row.timestamp,
-                        qualityScore: row.q
-                    };
-
-                    // Validate the puzzle
-                    if (!validatePuzzle(puzzle)) {
-                        invalidPuzzlesFound++;
-                        console.log(`⚠️  Found invalid puzzle in secret sauce search, deleting from database...`);
-                        // Delete the invalid puzzle from database (fire-and-forget; we don't
-                        // need to block assembling the menu on this finishing)
-                        deletePuzzleFromDatabase(db, puzzle.hash).catch(err => {
-                            console.error("Error deleting invalid puzzle:", err.message);
-                        });
-                        continue; // Skip this puzzle
-                    }
-
-                    validPuzzles.push(puzzle);
+            // Enforce "no recent categories" in JS (case-insensitive)
+            let overlapsRecent = false;
+            for (const cat of allCategories) {
+                if (exclusionSet.has(String(cat).toLowerCase())) {
+                    overlapsRecent = true;
+                    break;
                 }
-
-                console.log(`Found ${validPuzzles.length} valid puzzles (${invalidPuzzlesFound} invalid ones deleted)`);
-                resolve(validPuzzles);
-            } else {
-                resolve([]);
             }
-        });
-    });
+            if (overlapsRecent) continue;
+
+            // Validate the puzzle against current word/meta rules
+            if (!validatePuzzle(puzzle)) {
+                invalidPuzzlesFound++;
+                console.log(`⚠️  Found invalid puzzle in secret sauce search, deleting from database...`);
+                // Fire-and-forget delete; don't block selection on this finishing
+                deletePuzzleFromDatabase(sqliteDb, puzzle.hash).catch(err => {
+                    console.error("Error deleting invalid puzzle:", err.message);
+                });
+                continue;
+            }
+
+            validPuzzles.push(puzzle);
+        }
+
+        // If we still don't have enough puzzles, search more aggressively
+        if (validPuzzles.length < limit && batchCount < maxBatchCount) {
+            batchCount = Math.min(batchCount * 2, maxBatchCount);
+        }
+    }
+
+    console.log(`Found ${validPuzzles.length} valid puzzles (${invalidPuzzlesFound} invalid ones deleted) after checking ~${candidatesChecked} candidates`);
+    return validPuzzles;
 }
 
 async function findHighQualityPuzzle() {
