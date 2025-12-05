@@ -259,7 +259,7 @@ function getCategoriesFromLastNDays(numDays) {
     return Array.from(recentCategories);
 }
 
-async function findPuzzlesWithNoRecentCategories(sqliteDb, recentCategories, limit = 10) {
+async function findPuzzlesWithNoRecentCategories(sqliteDb, recentCategories, limit = 30) {
     // If no recent categories, just get quality-aware random puzzles
     if (!recentCategories || recentCategories.length === 0) {
         return getMultipleRandomPuzzles(sqliteDb, limit);
@@ -1091,14 +1091,15 @@ async function main() {
             const sqliteDb = await openDatabase();
             try {
                 const maxSecretSauceRetries = 3;
+                const secretSauceLimit = 30;
                 let puzzles = [];
 
                 for (let attempt = 1; attempt <= maxSecretSauceRetries; attempt++) {
                     console.log(
-                        `🌶️ Secret Sauce: Finding top 10 puzzles with NO categories from recent days (attempt ${attempt}/${maxSecretSauceRetries})...`
+                        `🌶️ Secret Sauce: Finding top ${secretSauceLimit} puzzles with NO categories from recent days (attempt ${attempt}/${maxSecretSauceRetries})...`
                     );
 
-                    puzzles = await findPuzzlesWithNoRecentCategories(sqliteDb, combinedExclusions, 10);
+                    puzzles = await findPuzzlesWithNoRecentCategories(sqliteDb, combinedExclusions, secretSauceLimit);
 
                     if (puzzles.length > 0) {
                         break;
@@ -1115,7 +1116,9 @@ async function main() {
                 } else {
                     console.log(`✅ Found ${puzzles.length} valid puzzles with no recent categories`);
 
-                    // Create menu choices for the puzzles
+                    // Sort by quality (highest first), then create menu choices
+                    puzzles.sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
+
                     const puzzleChoices = puzzles.map((puzzle, index) => {
                         const allCategories = [...puzzle.rows, ...puzzle.cols];
                         const qs = Math.round(puzzle.qualityScore * 100) / 100;
@@ -1134,7 +1137,7 @@ async function main() {
                     });
 
                     const selectedIndex = await prompts.select({
-                        message: "Choose a puzzle from the top 10 (sorted by quality):",
+                        message: `Choose a puzzle from the top ${secretSauceLimit} (sorted by quality):`,
                         choices: puzzleChoices
                     });
 
