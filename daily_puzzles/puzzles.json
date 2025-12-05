@@ -6598,5 +6598,45 @@
         "For a Few Dollars More"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1990",
+      "2008",
+      "Crime Stories",
+      "Movies featuring Ian McKellen"
+    ],
+    "cols": [
+      "Best Picture Winners",
+      "First in Release Order",
+      "Second in Internal Chronology",
+      "Time Travel Stories"
+    ],
+    "words": [
+      [
+        "Dances with Wolves",
+        "Home Alone",
+        "Die Hard 2",
+        "Back to the Future Part III"
+      ],
+      [
+        "Slumdog Millionaire",
+        "Kung Fu Panda",
+        "Madagascar: Escape 2 Africa",
+        "The Map of Time"
+      ],
+      [
+        "The French Connection",
+        "Kill Bill: Volume 1",
+        "Kill Bill: Volume 2",
+        "Looper"
+      ],
+      [
+        "The Lord of the Rings: The Return of the King",
+        "The Lord of the Rings: The Fellowship of the Ring",
+        "The Lord of the Rings: The Two Towers",
+        "X-Men: Days of Future Past"
+      ]
+    ]
   }
 ]
