@@ -340,10 +340,10 @@ function renderOutput() {
 
         const options = state.viableGrid[state.currentRow][state.currentCol].filter(w => !state.usedWords.includes(w));
         output += `**Options for current cell:**\n`;
-        options.forEach(w => output += `- ${w}\n`);
-        output += `\n- **reset**: Reset word selection for this puzzle\n`;
-        output += `- **abandon**: Abandon this puzzle\n\n`;
-        output += `**Command:** \`node ai_curator.js select "<word>"\` or \`reset\`, \`abandon\``;
+        options.forEach((w, i) => output += `${i}. ${w}\n`);
+        output += `\n- **reset**: Reset word selection for this puzzle
+- **abandon**: Abandon this puzzle\n\n`;
+        output += `**Command:** \`node ai_curator.js select <index>\` or \`reset\`, \`abandon\``;
     } else if (state.phase === "FINAL_APPROVAL") {
         output += `## Final Approval\n\n`;
         output += `**Rows:** ${state.currentPuzzle.rows.join(", ")}\n`;
@@ -543,9 +543,18 @@ async function handleAction(action, value) {
                 state.message = "Puzzle abandoned.";
             } else {
                 const options = state.viableGrid[state.currentRow][state.currentCol].filter(w => !state.usedWords.includes(w));
-                if (options.includes(value)) {
-                    state.chosen[state.currentRow][state.currentCol] = value;
-                    state.usedWords.push(value);
+                const idx = parseInt(value);
+                let selectedWord = null;
+
+                if (!isNaN(idx) && idx >= 0 && idx < options.length) {
+                    selectedWord = options[idx];
+                } else if (options.includes(value)) {
+                    selectedWord = value;
+                }
+
+                if (selectedWord) {
+                    state.chosen[state.currentRow][state.currentCol] = selectedWord;
+                    state.usedWords.push(selectedWord);
                     state.currentCol++;
                     if (state.currentCol === 4) {
                         state.currentCol = 0;
@@ -555,10 +564,10 @@ async function handleAction(action, value) {
                         state.phase = "FINAL_APPROVAL";
                         state.message = "All words chosen. Please approve.";
                     } else {
-                        state.message = `Word chosen: ${value}`;
+                        state.message = `Word chosen: ${selectedWord}`;
                     }
                 } else {
-                    state.message = `Invalid word choice: ${value}`;
+                    state.message = `Invalid word choice or index: ${value}`;
                 }
             }
         }
