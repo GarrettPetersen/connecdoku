@@ -20,4 +20,22 @@ Opt out of the helper:
 ```
 USE_RUST_HELPER=0 node connecdoku_matrix_solver_sqlite.js
 ```
-```
+
+AI Puzzle Curator
+-----------------
+The AI Puzzle Curator is a file-based workflow designed for collaborative puzzle creation between a human and an AI assistant.
+
+### Workflow:
+1. **Initialization:** Run `make ai-curator` to initialize the session.
+2. **Review Output:** Read `curator_output.md` to see the current state, available options, and recommended commands.
+3. **Execution:** Run the suggested `make ai-curator ACTION=... VALUE=...` commands to progress through the phases.
+4. **Phases:**
+   - **Main Menu:** Choose a search strategy (e.g., `secret_sauce` for maximum quality).
+   - **Search Category/Days:** Provide parameters for the search.
+   - **Puzzle List:** Choose a candidate layout from the results.
+   - **Puzzle Review:** Verify the categories and quality score.
+   - **Word Selection:** Pick specific words for each of the 16 intersections.
+   - **Final Approval:** Perform a final check and save the puzzle to `daily_puzzles/puzzles.json`.
+
+### Secret Sauce:
+The "Secret Sauce" method searches through millions of candidate puzzles to find those with zero category overlap with puzzles from the last N days (recommended: 13 days). This ensures a fresh and unique experience for daily players.

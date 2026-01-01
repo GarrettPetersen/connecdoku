@@ -1,7 +1,7 @@
 # Connecdoku Development Makefile
 # Common commands for managing the puzzle database and data
 
-.PHONY: help build clean solve clean-db check-future curator update-data review-puzzle delete-low-quality geological-era species-data serve
+.PHONY: help build clean solve clean-db check-future curator ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve
 
 # Local server config
 PORT ?= 8000
@@ -29,6 +29,7 @@ help:
 	@echo ""
 	@echo "Puzzle Management:"
 	@echo "  curator        - Run puzzle curator"
+	@echo "  ai-curator     - Run AI puzzle curator (use ACTION=select/input VALUE=xxx)"
 	@echo "  review-puzzle  - Review specific puzzle"
 	@echo ""
 	@echo "Database Maintenance:"
@@ -92,6 +93,11 @@ species-data:
 curator:
 	@echo "Running puzzle curator..."
 	node puzzle_curator_sqlite.js
+
+# Run AI puzzle curator
+ai-curator:
+	@echo "Running AI puzzle curator..."
+	node ai_curator.js $(ACTION) $(VALUE)
 
 # Review specific puzzle (requires puzzle index as argument)
 review-puzzle:

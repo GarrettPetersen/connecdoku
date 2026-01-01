@@ -1060,8 +1060,8 @@ async function main() {
         } else if (searchChoice === "secret_sauce") {
             // Ask user for number of days
             const numDays = await prompts.input({
-                message: "How many days of non-overlap would you like? (e.g., 7 for last 7 days)",
-                initial: "7"
+                message: "How many days of non-overlap would you like? (e.g., 13 for last 13 days)",
+                initial: "13"
             });
 
             const rawDays = String(numDays).trim();

@@ -1,0 +1,480 @@
+{
+  "curatedCount": 9,
+  "attempts": 0,
+  "phase": "MAIN_MENU",
+  "searchChoice": null,
+  "targetCategories": [],
+  "currentPuzzle": {
+    "rows": [
+      "1970s",
+      "1986",
+      "Ends with ITY",
+      "Period Stories"
+    ],
+    "cols": [
+      "Cities",
+      "Things Chinese",
+      "Time Travel Stories",
+      "Trios"
+    ],
+    "hash": "82753dbf0bac9a928ce38fd9c11a63039e11384ae8a4f0ccdb694d317d368466",
+    "timestamp": "2025-11-24 08:40:57",
+    "qualityScore": 10.2
+  },
+  "viableGrid": [
+    [
+      [
+        "Boston",
+        "Waterloo"
+      ],
+      [
+        "Zhou Enlai"
+      ],
+      [
+        "Kindred",
+        "The Hitchhiker's Guide to the Galaxy"
+      ],
+      [
+        "Bee Gees",
+        "Rush",
+        "The Police"
+      ]
+    ],
+    [
+      [
+        "Chernobyl"
+      ],
+      [
+        "A Better Tomorrow"
+      ],
+      [
+        "Flight of the Navigator"
+      ],
+      [
+        "Three Amigos"
+      ]
+    ],
+    [
+      [
+        "Carson City",
+        "Jefferson City",
+        "Oklahoma City",
+        "Salt Lake City",
+        "Vatican City"
+      ],
+      [
+        "Forbidden City"
+      ],
+      [
+        "The End of Eternity"
+      ],
+      [
+        "Trinity"
+      ]
+    ],
+    [
+      [
+        "Troy"
+      ],
+      [
+        "Farewell My Concubine"
+      ],
+      [
+        "Titanic: Adventure Out of Time"
+      ],
+      [
+        "The Three Musketeers"
+      ]
+    ]
+  ],
+  "chosen": [
+    [
+      "Boston",
+      "Zhou Enlai",
+      "Kindred",
+      "Bee Gees"
+    ],
+    [
+      "Chernobyl",
+      "A Better Tomorrow",
+      "Flight of the Navigator",
+      "Three Amigos"
+    ],
+    [
+      "Vatican City",
+      "Forbidden City",
+      "The End of Eternity",
+      "Trinity"
+    ],
+    [
+      "Troy",
+      "Farewell My Concubine",
+      "Titanic: Adventure Out of Time",
+      "The Three Musketeers"
+    ]
+  ],
+  "usedWords": [
+    "Boston",
+    "Zhou Enlai",
+    "Kindred",
+    "Bee Gees",
+    "Chernobyl",
+    "A Better Tomorrow",
+    "Flight of the Navigator",
+    "Three Amigos",
+    "Vatican City",
+    "Forbidden City",
+    "The End of Eternity",
+    "Trinity",
+    "Troy",
+    "Farewell My Concubine",
+    "Titanic: Adventure Out of Time",
+    "The Three Musketeers"
+  ],
+  "currentRow": 4,
+  "currentCol": 0,
+  "excludedPuzzleHash": null,
+  "puzzles": [
+    {
+      "rows": [
+        "1970s",
+        "1986",
+        "Ends with ITY",
+        "Period Stories"
+      ],
+      "cols": [
+        "Cities",
+        "Things Chinese",
+        "Time Travel Stories",
+        "Trios"
+      ],
+      "hash": "82753dbf0bac9a928ce38fd9c11a63039e11384ae8a4f0ccdb694d317d368466",
+      "timestamp": "2025-11-24 08:40:57",
+      "qualityScore": 10.2
+    },
+    {
+      "rows": [
+        "1970s",
+        "1986",
+        "Ends with ITY",
+        "Period Stories"
+      ],
+      "cols": [
+        "Cities",
+        "Things Chinese",
+        "Thriller Films",
+        "Trios"
+      ],
+      "hash": "d9a491b27d7e49867cd569cefed4a1edbed12e233ed08b2e2f775107fbce05c1",
+      "timestamp": "2025-11-24 08:40:57",
+      "qualityScore": 10.01
+    },
+    {
+      "rows": [
+        "1994",
+        "Cities",
+        "Foods",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Birds",
+        "Comedy Stories",
+        "Real People",
+        "Things Chinese"
+      ],
+      "hash": "5b5c1b9afd0f92d78c9c035ca9f09396051116a3ad1e3db19216567c48c13f32",
+      "timestamp": "2025-11-24 14:35:33",
+      "qualityScore": 4.75
+    },
+    {
+      "rows": [
+        "1994",
+        "Cities",
+        "Foods",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Real People",
+        "Theropods",
+        "Things Chinese"
+      ],
+      "hash": "94d720d230aff0f8c9753f66a2460e3f4287cb926ec00d3acb594b53196c5543",
+      "timestamp": "2025-11-24 14:35:33",
+      "qualityScore": 4.4799999999999995
+    },
+    {
+      "rows": [
+        "1994",
+        "2000",
+        "First in Release Order",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Comedy Stories",
+        "Movies featuring Bruce Willis",
+        "Things Chinese"
+      ],
+      "hash": "768a5ec615adc42abb7e4f7fb1d5c45da77bfcac5afdde29c180f8e609c4b62b",
+      "timestamp": "2025-12-02 11:52:28",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1994",
+        "2000",
+        "First in Release Order",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Comedy Stories",
+        "Things Chinese",
+        "Thriller Films"
+      ],
+      "hash": "f3913aee08faf131ebaba75a9b4a9513f05fac38d06fd06ebbbbaa470a463e1c",
+      "timestamp": "2025-12-02 11:52:28",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1994",
+        "2000",
+        "First in Release Order",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Movies featuring Bruce Willis",
+        "Period Stories",
+        "Things Chinese"
+      ],
+      "hash": "2aec47a358c90bdcfa400a8c36de5aa113ba205f4bd66922fd15c211d64c62ef",
+      "timestamp": "2025-12-02 11:52:28",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1991",
+        "2011",
+        "Period Stories",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Ends with WAR",
+        "Movies featuring Alan Rickman",
+        "Second in Release Order",
+        "Time Travel Stories"
+      ],
+      "hash": "1c524097f29286528e0af49f26c0ce374699fbaad6e9f9b76c6c687b6c33e670",
+      "timestamp": "2025-12-01 18:01:43",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1870s",
+        "Foods",
+        "Monarchs",
+        "Republics"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Starts with CHA",
+        "Things Chinese",
+        "Things German"
+      ],
+      "hash": "7b5993b2f8371e7358ca4f3a7dd832e53ba4aee207a498bf70c1f1cf4eb520e0",
+      "timestamp": "2025-12-02 16:20:25",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1970s",
+        "Ends with INE",
+        "Pleistocene Epoch",
+        "Real People"
+      ],
+      "cols": [
+        "Locations in Asia",
+        "Songs",
+        "Things Canadian",
+        "Things German"
+      ],
+      "hash": "544167efb5daafdeca9c59f0b3123dcefc919c61837496866c64f567faff0403",
+      "timestamp": "2025-12-01 17:44:34",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1991",
+        "1992",
+        "Real People",
+        "Starts with GRE"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Family-Friendly Stories",
+        "Music",
+        "Things Chinese"
+      ],
+      "hash": "615eb9513daa418d8158cce49fe965a65cf904a5415b0be0a30683af2313aa88",
+      "timestamp": "2025-12-01 17:44:34",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1991",
+        "1992",
+        "Real People",
+        "Starts with MY "
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Family-Friendly Stories",
+        "Songs",
+        "Things Chinese"
+      ],
+      "hash": "03cc36774a2d7cc7dd65493f1919099bd59783a2beced5af22eddfbaf8d1cf9e",
+      "timestamp": "2025-12-01 17:44:34",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1981",
+        "2007",
+        "First in Internal Chronology",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Comedy Stories",
+        "Disney",
+        "Things Chinese"
+      ],
+      "hash": "978d510c074a3693692c53ef2485fa9be57dee43ef126f9c7487ddaf891b7750",
+      "timestamp": "2025-12-02 11:40:37",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1981",
+        "2007",
+        "First in Internal Chronology",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Comedy Stories",
+        "Family-Friendly Stories",
+        "Things Chinese"
+      ],
+      "hash": "2bc45d3fad125613ade8b908cd75b56c06b1b50e321279786b554ac681008b08",
+      "timestamp": "2025-12-02 11:40:37",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1981",
+        "2007",
+        "First in Internal Chronology",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Comedy Stories",
+        "Music",
+        "Things Chinese"
+      ],
+      "hash": "22e15f4c4fbf3d6c5f3d143f12591c100dff15bbf9bd3346e1b775900da55a31",
+      "timestamp": "2025-12-02 11:40:37",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1981",
+        "2007",
+        "First in Internal Chronology",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Comedy Stories",
+        "Musical Films",
+        "Things Chinese"
+      ],
+      "hash": "931128e6a5ed6baa0814c91ccedc15e8955f636514ea0718fb08bf35ac093650",
+      "timestamp": "2025-12-02 11:40:37",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1981",
+        "2007",
+        "First in Internal Chronology",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Disney",
+        "Period Stories",
+        "Things Chinese"
+      ],
+      "hash": "0efc1e7121031fd89cdd2c2ba72804ae242b5fd6c2525c66c097221c076ce84e",
+      "timestamp": "2025-12-02 11:40:37",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1870s",
+        "Holocene Epoch",
+        "Mentioned in We Didn't Start the Fire",
+        "Royalty"
+      ],
+      "cols": [
+        "Music",
+        "Starts with MAR",
+        "Things Chinese",
+        "Things German"
+      ],
+      "hash": "34519dfeea0427bd78a8d280f09554b4e6c0b1d374dc0503393459aa8fc50dcb",
+      "timestamp": "2025-12-02 17:11:09",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1986",
+        "1995",
+        "Ends with ENT",
+        "First in Release Order"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Music",
+        "Things Chinese",
+        "Time Travel Stories"
+      ],
+      "hash": "e889a99e323d7267c9976694ac67817985dec1a2a4ce9f31918d5a2077f56a82",
+      "timestamp": "2025-12-01 16:23:14",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1990",
+        "2006",
+        "Horror Stories",
+        "Starts with HAR"
+      ],
+      "cols": [
+        "Crime Stories",
+        "First in Internal Chronology",
+        "Music",
+        "Second in Internal Chronology"
+      ],
+      "hash": "e10bfbdc3e41b47db3aa9bc70d51090b9573be5b628a671cec267f3ff2680cc0",
+      "timestamp": "2025-12-02 07:30:29",
+      "qualityScore": 0
+    }
+  ],
+  "message": "Puzzle saved successfully!"
+}
