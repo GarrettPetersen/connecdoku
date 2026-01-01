@@ -1,174 +1,150 @@
 {
-  "curatedCount": 14,
+  "curatedCount": 19,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
-  "targetCategories": [],
+  "targetCategories": [
+    "Space Stories"
+  ],
   "currentPuzzle": {
     "rows": [
-      "1960s",
-      "Mammals",
-      "Pleistocene Epoch",
-      "Prehistoric Life"
+      "16th Century",
+      "19th Century",
+      "Things French",
+      "Things Spanish"
     ],
     "cols": [
-      "Black Things",
-      "Black and White",
-      "Fastest of its Type",
-      "Herbivores"
+      "Ends with ION",
+      "Fantasy Stories",
+      "Shipwrecks",
+      "Wars"
     ],
-    "hash": "d2d57003ee2a9719361e8e6f330a859a1be123d8364e1bec58198cc311849a1d",
-    "timestamp": "2025-11-24 23:45:24",
-    "qualityScore": 11.68
+    "hash": "a5cb7242aa4298d4e52411c2d2c1664fc8f04a6ec1125a4e6010bd45a473167b",
+    "timestamp": "2025-11-24 15:26:10",
+    "qualityScore": 6.83
   },
   "viableGrid": [
     [
       [
-        "Nick Fury"
+        "The Catholic Counter-Reformation",
+        "The English Reformation",
+        "The Protestant Reformation"
       ],
       [
-        "High and Low",
-        "Red Beard",
-        "Sanjuro",
-        "To Kill a Mockingbird",
-        "Yojimbo"
+        "Journey to the West"
       ],
       [
-        "Concorde",
-        "Quicksilver"
+        "Mary Rose",
+        "Queen Mary"
       ],
       [
-        "The Very Hungry Caterpillar"
+        "Imjin War",
+        "The Italian Wars"
       ]
     ],
     [
       [
-        "Bear",
-        "Black Cat"
+        "Krakatoa Eruption",
+        "Tambora Eruption",
+        "The Italian Unification",
+        "The Long Depression",
+        "The Second Industrial Revolution"
       ],
       [
-        "King Kong"
+        "Alice's Adventures in Wonderland",
+        "Pinocchio"
       ],
       [
-        "Cheetah",
-        "Greyhound"
+        "Bismarck",
+        "Victoria"
       ],
       [
-        "Donkey Kong",
-        "Pumbaa"
+        "Dungan Revolt",
+        "The American Civil War",
+        "The Boer War",
+        "The Crimean War",
+        "The Sepoy Mutiny"
       ]
     ],
     [
       [
-        "Crow",
-        "Raven"
+        "Mount Pelée Eruption"
       ],
       [
-        "Magpie",
-        "Penguin",
-        "Skunk"
+        "The Little Prince"
       ],
       [
-        "Sailfish"
+        "Bucentaure",
+        "Redoutable"
       ],
       [
-        "Bee",
-        "Bull",
-        "Butterfly",
-        "Cow",
-        "Goat",
-        "Grasshopper",
-        "Horse",
-        "Millipede",
-        "Moth",
-        "Ostrich",
-        "Rhea",
-        "Sheep",
-        "Swan",
-        "Termite"
+        "The Algerian War",
+        "The Hundred Years War",
+        "The Seven Years' War",
+        "World War I"
       ]
     ],
     [
       [
-        "Microraptor"
+        "Concepcion"
       ],
       [
-        "Anchiornis"
+        "Pan's Labyrinth",
+        "The Map of Chaos",
+        "The Map of Time",
+        "The Map of the Sky"
       ],
       [
-        "Ornithomimus"
+        "Santissima Trinidad"
       ],
       [
-        "Ankylosaurus",
-        "Apatosaurus",
-        "Argentinosaurus",
-        "Arthropleura",
-        "Brachiosaurus",
-        "Camarasaurus",
-        "Cera",
-        "Chasmosaurus",
-        "Corythosaurus",
-        "Diplodocus",
-        "Dodo",
-        "Ducky",
-        "Edmontosaurus",
-        "Euoplocephalus",
-        "Kentrosaurus",
-        "Lambeosaurus",
-        "Littlefoot",
-        "Parasaurolophus",
-        "Plateosaurus",
-        "Protoceratops",
-        "Spike",
-        "Stegosaurus",
-        "Styracosaurus",
-        "Triceratops"
+        "The Spanish Civil War"
       ]
     ]
   ],
   "chosen": [
     [
-      "Nick Fury",
-      "High and Low",
-      "Concorde",
-      "The Very Hungry Caterpillar"
+      "The Protestant Reformation",
+      "Journey to the West",
+      "Mary Rose",
+      "The Italian Wars"
     ],
     [
-      "Bear",
-      "King Kong",
-      "Cheetah",
-      "Donkey Kong"
+      "The Italian Unification",
+      "Alice's Adventures in Wonderland",
+      "Victoria",
+      "The American Civil War"
     ],
     [
-      "Raven",
-      "Magpie",
-      "Sailfish",
-      "Bee"
+      "Mount Pelée Eruption",
+      "The Little Prince",
+      "Bucentaure",
+      "The Hundred Years War"
     ],
     [
-      "Microraptor",
-      "Anchiornis",
-      "Ornithomimus",
-      "Ankylosaurus"
+      "Concepcion",
+      "Pan's Labyrinth",
+      "Santissima Trinidad",
+      "The Spanish Civil War"
     ]
   ],
   "usedWords": [
-    "Nick Fury",
-    "High and Low",
-    "Concorde",
-    "The Very Hungry Caterpillar",
-    "Bear",
-    "King Kong",
-    "Cheetah",
-    "Donkey Kong",
-    "Raven",
-    "Magpie",
-    "Sailfish",
-    "Bee",
-    "Microraptor",
-    "Anchiornis",
-    "Ornithomimus",
-    "Ankylosaurus"
+    "The Protestant Reformation",
+    "Journey to the West",
+    "Mary Rose",
+    "The Italian Wars",
+    "The Italian Unification",
+    "Alice's Adventures in Wonderland",
+    "Victoria",
+    "The American Civil War",
+    "Mount Pelée Eruption",
+    "The Little Prince",
+    "Bucentaure",
+    "The Hundred Years War",
+    "Concepcion",
+    "Pan's Labyrinth",
+    "Santissima Trinidad",
+    "The Spanish Civil War"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -176,343 +152,343 @@
   "puzzles": [
     {
       "rows": [
-        "1960s",
-        "1990s",
-        "Starts with MAR",
+        "1950s",
+        "Holocene Epoch",
+        "Things Czech",
+        "Things French"
+      ],
+      "cols": [
+        "Car Brands",
+        "Events",
+        "Modern Countries",
+        "Starts with CHA"
+      ],
+      "hash": "3f919db22962b57c16efe92b96a491dcd41258acf30807680444e146ccc67a03",
+      "timestamp": "2025-11-24 10:48:07",
+      "qualityScore": 5.709999999999999
+    },
+    {
+      "rows": [
+        "1950s",
+        "Holocene Epoch",
+        "Things Czech",
+        "Things French"
+      ],
+      "cols": [
+        "Cars",
+        "Events",
+        "Modern Countries",
+        "Starts with CHA"
+      ],
+      "hash": "8ec7d39f7e816d9804434097742c5b0807043f84e2c05dbf2ac27e6e6d963806",
+      "timestamp": "2025-11-24 10:48:07",
+      "qualityScore": 5.709999999999999
+    },
+    {
+      "rows": [
+        "1950s",
+        "Holocene Epoch",
+        "Things Czech",
+        "Things French"
+      ],
+      "cols": [
+        "Car Brands",
+        "Events",
+        "Place Names",
+        "Starts with CHA"
+      ],
+      "hash": "d85deebe0f94e258e4a02f68eb6119b6262e42f9b309cdc3f85b8dca4062e7d7",
+      "timestamp": "2025-11-24 10:48:07",
+      "qualityScore": 5.699999999999999
+    },
+    {
+      "rows": [
+        "1950s",
+        "Holocene Epoch",
+        "Things Czech",
+        "Things French"
+      ],
+      "cols": [
+        "Cars",
+        "Events",
+        "Place Names",
+        "Starts with CHA"
+      ],
+      "hash": "cf49b182c7d58310ac859133b5a57cf515dbceb4c286d9120229e334bb117b86",
+      "timestamp": "2025-11-24 10:48:07",
+      "qualityScore": 5.699999999999999
+    },
+    {
+      "rows": [
+        "16th Century",
+        "Cars",
+        "Place Names",
+        "Starts with BRI"
+      ],
+      "cols": [
+        "19th Century",
+        "Luxury Ships",
+        "Things French",
+        "Things Roman"
+      ],
+      "hash": "571a403de6a4d2705443f166117f9ad13a019d70a2af0cbb640dc2a777286e1d",
+      "timestamp": "2025-11-24 18:21:19",
+      "qualityScore": 5.7
+    },
+    {
+      "rows": [
+        "16th Century",
+        "Cars",
+        "Place Names",
+        "Starts with BRI"
+      ],
+      "cols": [
+        "Holocene Epoch",
+        "Luxury Ships",
+        "Things French",
+        "Things Roman"
+      ],
+      "hash": "d43e5fc59b041445c9aaaa5362787d28b9814b0d664808949e71a794265ea8ef",
+      "timestamp": "2025-11-24 18:21:19",
+      "qualityScore": 5.69
+    },
+    {
+      "rows": [
+        "16th Century",
+        "Cars",
+        "Place Names",
+        "Starts with BRI"
+      ],
+      "cols": [
+        "Luxury Ships",
+        "Quaternary Period",
+        "Things French",
+        "Things Roman"
+      ],
+      "hash": "f2d34426c9a5ed3fc73ec0088c7e2aa52cd43b085888e35c9c7c30f18e503307",
+      "timestamp": "2025-11-24 18:21:19",
+      "qualityScore": 5.69
+    },
+    {
+      "rows": [
+        "16th Century",
+        "Cars",
+        "Place Names",
+        "Starts with BRI"
+      ],
+      "cols": [
+        "19th Century",
+        "Holocene Epoch",
+        "Luxury Ships",
+        "Things Roman"
+      ],
+      "hash": "d465f8e23342cdf7bbd09788da6e20a1dd38f0886294124d1b165da4e612367b",
+      "timestamp": "2025-11-24 18:21:19",
+      "qualityScore": 5.47
+    },
+    {
+      "rows": [
+        "16th Century",
+        "Cars",
+        "Place Names",
+        "Starts with BRI"
+      ],
+      "cols": [
+        "19th Century",
+        "Luxury Ships",
+        "Quaternary Period",
+        "Things Roman"
+      ],
+      "hash": "278d2195d620c13faa4a751cdb24df3341d65484f1634eee156fa8f07dfb7349",
+      "timestamp": "2025-11-24 18:21:19",
+      "qualityScore": 5.47
+    },
+    {
+      "rows": [
+        "16th Century",
+        "Cars",
+        "Place Names",
+        "Starts with BRI"
+      ],
+      "cols": [
+        "19th Century",
+        "Holocene Epoch",
+        "Luxury Ships",
+        "Things French"
+      ],
+      "hash": "750d66a3a0527e8da9cb02b9dec6d243863db4cefa5af8a30878297d5be67b3f",
+      "timestamp": "2025-11-24 18:21:18",
+      "qualityScore": 5.41
+    },
+    {
+      "rows": [
+        "16th Century",
+        "Cars",
+        "Place Names",
+        "Starts with BRI"
+      ],
+      "cols": [
+        "19th Century",
+        "Luxury Ships",
+        "Quaternary Period",
+        "Things French"
+      ],
+      "hash": "efb8327c585d4c16f28d61e98a0e05a96f02f61fbc423f09aa1c8a3d4a0a37c7",
+      "timestamp": "2025-11-24 18:21:19",
+      "qualityScore": 5.41
+    },
+    {
+      "rows": [
+        "1980s",
+        "19th Century",
+        "Miocene Epoch",
+        "Things Czech"
+      ],
+      "cols": [
+        "Car Brands",
+        "Events",
+        "Place Names",
+        "Starts with CHA"
+      ],
+      "hash": "cdce05f4f38bf23f7afbdfe0f959f7f9525fc125572c595c0310705fc65f3a0f",
+      "timestamp": "2025-11-24 21:22:41",
+      "qualityScore": 5.41
+    },
+    {
+      "rows": [
+        "1950s",
+        "Ends with RIS",
+        "Royalty",
+        "Things That Fly"
+      ],
+      "cols": [
+        "1980s",
+        "Animal Terms",
+        "Fictional People",
+        "Things French"
+      ],
+      "hash": "76451696974fd5a72d5833be201e51368582933d171d452665fcede50d20f5b9",
+      "timestamp": "2025-12-02 11:55:51",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "16th Century",
+        "19th Century",
+        "Things French",
         "Things Spanish"
       ],
       "cols": [
+        "Ends with ION",
         "Fantasy Stories",
-        "Modern Countries",
-        "Saints",
-        "Things Italian"
+        "Shipwrecks",
+        "Wars"
       ],
-      "hash": "a5832d313a776b01119b3835e2c6c12bbb109cfa9bbebfb46cf33a5e3ea1d035",
-      "timestamp": "2025-11-24 18:58:37",
-      "qualityScore": 4.17
+      "hash": "a5cb7242aa4298d4e52411c2d2c1664fc8f04a6ec1125a4e6010bd45a473167b",
+      "timestamp": "2025-11-24 15:26:10",
+      "qualityScore": 6.83
     },
     {
       "rows": [
-        "1960s",
+        "16th Century",
         "19th Century",
-        "Battle of Midway",
-        "Countries in Asia"
+        "Things French",
+        "Things Spanish"
       ],
       "cols": [
-        "Cold War",
-        "Ends with AND",
-        "Things Japanese",
-        "Things That Fly"
+        "Ends with ION",
+        "Fictional People",
+        "Shipwrecks",
+        "Wars"
       ],
-      "hash": "e9cd058a41a47202fd66120c361c5f90b1862d33b2bdbcb72f37c81706547eec",
-      "timestamp": "2025-11-24 20:54:34",
-      "qualityScore": 5.6
+      "hash": "1160319977683b02b098ed1709e22fdf42641e245fa5e6331447cc0702395758",
+      "timestamp": "2025-11-24 15:26:10",
+      "qualityScore": 6.67
     },
     {
       "rows": [
-        "1960s",
-        "Extinct Animals",
-        "Largest of its Type",
-        "Omnivores"
+        "16th Century",
+        "Eocene Epoch",
+        "Place Names",
+        "Things French"
       ],
       "cols": [
-        "Birds",
-        "Jurassic Period",
-        "Reptiles",
-        "Things That Fly"
+        "Age of Sail",
+        "Events",
+        "Fictional People",
+        "Starts with MIN"
       ],
-      "hash": "43c32f7483f612f7de6c4ca2e3bfb76307ab274483e41d6826c473a747fc05e1",
-      "timestamp": "2025-12-01 19:32:07",
+      "hash": "daa7654ef9ba02e42138e26b8842bc74522f536e6d54a3d32500712ce50fa84a",
+      "timestamp": "2025-11-24 09:33:22",
+      "qualityScore": 4.19
+    },
+    {
+      "rows": [
+        "1880s",
+        "1950s",
+        "Ends with LES",
+        "Royalty"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Fictional People",
+        "Place Names",
+        "Things French"
+      ],
+      "hash": "90efb0bf3edc4c5b831493640beee7a57b949ab6991206a641665e1d0e6f773f",
+      "timestamp": "2025-12-01 17:59:46",
       "qualityScore": 0
     },
     {
       "rows": [
-        "1960s",
-        "Extinct Animals",
-        "Largest of its Type",
-        "Omnivores"
+        "1920s",
+        "Ends with DON",
+        "Place Names",
+        "Things Spanish"
       ],
       "cols": [
-        "Cretaceous Period",
-        "Flightless Birds",
-        "Reptiles",
+        "Events",
+        "Fictional People",
+        "Royalty",
         "Things That Fly"
       ],
-      "hash": "e2386c7e89d482d239ffb25081c70e08f6075829a80d7af29554defe4f7d5486",
-      "timestamp": "2025-12-01 19:32:07",
-      "qualityScore": 0
+      "hash": "97db5f7a5d2da963b53c0eb73d1f4316fa845ceed2bfeb9c9f2a13ddbf217379",
+      "timestamp": "2025-11-24 18:30:35",
+      "qualityScore": 4.529999999999999
     },
     {
       "rows": [
-        "1960s",
-        "Extinct Animals",
-        "Largest of its Type",
-        "Omnivores"
-      ],
-      "cols": [
-        "Flightless Birds",
-        "Jurassic Period",
-        "Reptiles",
-        "Things That Fly"
-      ],
-      "hash": "4609a57fcd0340e177e1259780f8df0da670f952721a44d107ca2e9f9ebe2999",
-      "timestamp": "2025-12-01 19:32:07",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1960s",
-        "Extinct Animals",
-        "Largest of its Type",
-        "Omnivores"
-      ],
-      "cols": [
-        "Flightless Birds",
-        "Mesozoic Era",
-        "Reptiles",
-        "Things That Fly"
-      ],
-      "hash": "6eadc1bfd105a3364b41601d9ae5b939695965931e0722cf596e67256d5938fb",
-      "timestamp": "2025-12-01 19:32:07",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1960s",
-        "Extinct Animals",
-        "Largest of its Type",
-        "Omnivores"
-      ],
-      "cols": [
-        "Jurassic Period",
-        "Reptiles",
-        "Saurischians",
-        "Things That Fly"
-      ],
-      "hash": "ba2f821628645d34cc8f68168b074754e09038ae61ec7033d005dee918ebacd4",
-      "timestamp": "2025-12-01 19:32:07",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1960s",
-        "Extinct Animals",
-        "Largest of its Type",
-        "Omnivores"
-      ],
-      "cols": [
-        "Jurassic Period",
-        "Reptiles",
-        "Theropods",
-        "Things That Fly"
-      ],
-      "hash": "bc994b0db5f8ecb5741dce36d03a71ebbe7a69c49d1031906225b6cc17dd8dc5",
-      "timestamp": "2025-12-01 19:32:07",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1960s",
+        "16th Century",
         "19th Century",
-        "Battle of Midway",
-        "Countries in Asia"
+        "Place Names",
+        "White Things"
       ],
       "cols": [
-        "Cold War",
-        "Ends with AND",
-        "Things Japanese",
-        "Things That Fly"
+        "Animal Terms",
+        "Ends with ICE",
+        "Fictional People",
+        "Things French"
       ],
-      "hash": "e9cd058a41a47202fd66120c361c5f90b1862d33b2bdbcb72f37c81706547eec",
-      "timestamp": "2025-11-24 20:54:34",
-      "qualityScore": 5.6
+      "hash": "5c5ed9c71f15bfd2f9e62b11a3c1778f4fbabc7ab971ab0d926156143b060149",
+      "timestamp": "2025-11-24 15:18:32",
+      "qualityScore": 4.470000000000001
     },
     {
       "rows": [
-        "1960s",
-        "Mammals",
-        "Pleistocene Epoch",
-        "Prehistoric Life"
+        "1950s",
+        "Fictional People",
+        "Royalty",
+        "Starts with CHA"
       ],
       "cols": [
-        "Black Things",
-        "Black and White",
-        "Fastest of its Type",
-        "Herbivores"
+        "1980s",
+        "Animal Terms",
+        "Place Names",
+        "Things French"
       ],
-      "hash": "d2d57003ee2a9719361e8e6f330a859a1be123d8364e1bec58198cc311849a1d",
-      "timestamp": "2025-11-24 23:45:24",
-      "qualityScore": 11.68
-    },
-    {
-      "rows": [
-        "1960s",
-        "Mammals",
-        "Pleistocene Epoch",
-        "Prehistoric Life"
-      ],
-      "cols": [
-        "Black Things",
-        "Black and White",
-        "Herbivores",
-        "Sea Creatures"
-      ],
-      "hash": "7f73bb9e84224bbd0b4ff4b988b326c2b456482dd2adfd018bbba1793228d12d",
-      "timestamp": "2025-11-24 23:45:24",
-      "qualityScore": 9.05
-    },
-    {
-      "rows": [
-        "1960s",
-        "Mammals",
-        "Pleistocene Epoch",
-        "Prehistoric Life"
-      ],
-      "cols": [
-        "Black and White",
-        "Fastest of its Type",
-        "Herbivores",
-        "Omnivores"
-      ],
-      "hash": "c3c945e28b1c6758a70cb438c5d6c56427db5206956bb11efc0acf247f55ac3c",
-      "timestamp": "2025-11-24 23:45:24",
-      "qualityScore": 9
-    },
-    {
-      "rows": [
-        "1960s",
-        "Mammals",
-        "Pleistocene Epoch",
-        "Prehistoric Life"
-      ],
-      "cols": [
-        "Carnivores",
-        "Fastest of its Type",
-        "Herbivores",
-        "Omnivores"
-      ],
-      "hash": "0f3450a128bf40f02bb9eeb099c3c4516705708b79e6d3b3c8dda3e7b2c16047",
-      "timestamp": "2025-11-24 23:45:24",
-      "qualityScore": 7.0600000000000005
-    },
-    {
-      "rows": [
-        "1960s",
-        "Mammals",
-        "Pleistocene Epoch",
-        "Prehistoric Life"
-      ],
-      "cols": [
-        "Black and White",
-        "Herbivores",
-        "Omnivores",
-        "Sea Creatures"
-      ],
-      "hash": "ce19bb317b49909bc127b8bff61e0fa9228b328998a266b3f7314314b9ba3b54",
-      "timestamp": "2025-11-24 23:45:24",
-      "qualityScore": 6.370000000000001
-    },
-    {
-      "rows": [
-        "1960s",
-        "Disasters",
-        "National Capitals",
-        "Ships"
-      ],
-      "cols": [
-        "19th Century",
-        "Cold War",
-        "Things Italian",
-        "Things Japanese"
-      ],
-      "hash": "145975b2d8a3553ec1e4801994cc9dcdd275f6cae8c972bf2836a15a4102f8cd",
-      "timestamp": "2025-12-02 06:46:59",
+      "hash": "9d99afd0a023a6c2c29f3eeb49938e1aaef80c0d994bf2cf6dcffbece6167901",
+      "timestamp": "2025-12-01 22:06:25",
       "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1960s",
-        "Mammals",
-        "Pleistocene Epoch",
-        "Saurischians"
-      ],
-      "cols": [
-        "Carnivores",
-        "Fastest of its Type",
-        "Herbivores",
-        "Omnivores"
-      ],
-      "hash": "22d78d038ac56918fed2d06902c68d8ba07cfad94a154165973f71aba760390c",
-      "timestamp": "2025-11-24 23:45:27",
-      "qualityScore": 7.48
-    },
-    {
-      "rows": [
-        "1960s",
-        "Ends with RUS",
-        "Largest of its Type",
-        "Omnivores"
-      ],
-      "cols": [
-        "Jurassic Period",
-        "Sea Creatures",
-        "Theropods",
-        "Things That Fly"
-      ],
-      "hash": "b318abb5b92dd461abdcb7a9ff568dc50a92b352164ee6b0bee85706ab806df0",
-      "timestamp": "2025-12-01 18:22:51",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1960s",
-        "Mammals",
-        "Paleogene Period",
-        "Prehistoric Life"
-      ],
-      "cols": [
-        "Black and White",
-        "Fastest of its Type",
-        "Herbivores",
-        "Omnivores"
-      ],
-      "hash": "e22e54183d77abc6135e1d522f1766d7e41c693f8bf88e02aed3ff27fc624eb5",
-      "timestamp": "2025-11-24 23:44:58",
-      "qualityScore": 9.07
-    },
-    {
-      "rows": [
-        "1960s",
-        "Mammals",
-        "Paleogene Period",
-        "Prehistoric Life"
-      ],
-      "cols": [
-        "Carnivores",
-        "Fastest of its Type",
-        "Herbivores",
-        "Omnivores"
-      ],
-      "hash": "a2083a92751ff2e9a78b73b6dea887280b4b540f05d62818c46b497968e43ac0",
-      "timestamp": "2025-11-24 23:44:58",
-      "qualityScore": 7.130000000000001
-    },
-    {
-      "rows": [
-        "1960s",
-        "Mammals",
-        "Paleogene Period",
-        "Prehistoric Life"
-      ],
-      "cols": [
-        "Black and White",
-        "Herbivores",
-        "Omnivores",
-        "Sea Creatures"
-      ],
-      "hash": "507bb53febc4375f819679cad87b3708e1148d87ea0da83d0be2a68cc069ab0d",
-      "timestamp": "2025-11-24 23:44:58",
-      "qualityScore": 6.4399999999999995
     }
   ],
   "message": "Puzzle saved successfully!"
