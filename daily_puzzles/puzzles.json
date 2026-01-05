@@ -7681,86 +7681,6 @@
   },
   {
     "rows": [
-      "2018",
-      "2019",
-      "Books",
-      "First in Release Order"
-    ],
-    "cols": [
-      "Action Stories",
-      "Cruise Ships",
-      "Stories Where the Mom Dies",
-      "Thriller Stories"
-    ],
-    "words": [
-      [
-        "Black Panther",
-        "Norwegian Bliss",
-        "Hereditary",
-        "Solo"
-      ],
-      [
-        "Avengers: Endgame",
-        "Costa Smeralda",
-        "Jojo Rabbit",
-        "Parasite"
-      ],
-      [
-        "All You Need Is Kill",
-        "Odyssey",
-        "The Road",
-        "The Girl with the Dragon Tattoo"
-      ],
-      [
-        "The Avengers",
-        "Queen Mary",
-        "Bambi",
-        "Alien"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "1930s",
-      "1980s",
-      "Ends with TER",
-      "Period Stories"
-    ],
-    "cols": [
-      "Cannibalism",
-      "Disasters",
-      "Second in Internal Chronology",
-      "War Stories"
-    ],
-    "words": [
-      [
-        "Albert Fish",
-        "Hindenburg",
-        "The Hobbit",
-        "Triumph of the Will"
-      ],
-      [
-        "Issei Sagawa",
-        "Chernobyl",
-        "Aliens",
-        "Platoon"
-      ],
-      [
-        "Hannibal Lecter",
-        "The Titanic Disaster",
-        "Avatar: The Way of Water",
-        "The Deer Hunter"
-      ],
-      [
-        "Sweeney Todd: The Demon Barber of Fleet Street",
-        "Titanic",
-        "For a Few Dollars More",
-        "Braveheart"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "1950s",
       "Adventure Stories",
       "Starts with COM",
@@ -7796,6 +7716,206 @@
         "Paris",
         "Horse",
         "Homer"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1992",
+      "Ends with ERS",
+      "Second in Release Order",
+      "Third in Release Order"
+    ],
+    "cols": [
+      "Comedy Stories",
+      "Disney",
+      "Things Chinese",
+      "Western Stories"
+    ],
+    "words": [
+      [
+        "The Muppet Christmas Carol",
+        "Aladdin",
+        "Hard Boiled",
+        "Unforgiven"
+      ],
+      [
+        "Ghostbusters",
+        "The Rescuers",
+        "House of Flying Daggers",
+        "The Searchers"
+      ],
+      [
+        "Ghostbusters II",
+        "The Rescuers Down Under",
+        "The Dark Forest",
+        "For a Few Dollars More"
+      ],
+      [
+        "National Lampoon's Christmas Vacation",
+        "Pirates of the Caribbean: At World's End",
+        "Death's End",
+        "The Good, the Bad and the Ugly"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1860s",
+      "1870s",
+      "Cars",
+      "Women"
+    ],
+    "cols": [
+      "Drama Stories",
+      "Scientists",
+      "Things German",
+      "US Presidents"
+    ],
+    "words": [
+      [
+        "Crime and Punishment",
+        "Joseph Lister",
+        "Helmuth von Moltke the Elder",
+        "Johnson"
+      ],
+      [
+        "The Adventures of Tom Sawyer",
+        "Alexander Graham Bell",
+        "The Franco-Prussian War",
+        "Hayes"
+      ],
+      [
+        "Odyssey",
+        "Tesla",
+        "Porsche",
+        "Ford"
+      ],
+      [
+        "Jane Eyre",
+        "Marie Curie",
+        "Anne of Cleves",
+        "Monroe"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1880s",
+      "Children's Stories",
+      "Companies",
+      "Countries"
+    ],
+    "cols": [
+      "1900s",
+      "Animal Terms",
+      "Movies",
+      "Starts with CHA"
+    ],
+    "words": [
+      [
+        "Triple Alliance",
+        "Garfield",
+        "Krakatoa",
+        "Charles Taze Russell"
+      ],
+      [
+        "The Tale of Peter Rabbit",
+        "Winnie-the-Pooh",
+        "The Jungle Book",
+        "Charlotte's Web"
+      ],
+      [
+        "Rockefeller",
+        "Penguin",
+        "Red",
+        "Chanel"
+      ],
+      [
+        "Belgian Congo",
+        "Turkey",
+        "Madagascar",
+        "Chad"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1970s",
+      "Greek Mythology",
+      "Photography Terms",
+      "Quaternary Period"
+    ],
+    "cols": [
+      "Greek Gods",
+      "Locations in Asia",
+      "Music",
+      "Superheroes"
+    ],
+    "words": [
+      [
+        "Poseidon",
+        "Kampuchea",
+        "Bohemian Rhapsody",
+        "Superman"
+      ],
+      [
+        "Athena",
+        "Troy",
+        "Hercules",
+        "Cyclops"
+      ],
+      [
+        "Olympus",
+        "Fuji",
+        "Canon",
+        "Flash"
+      ],
+      [
+        "Iris",
+        "Turkey",
+        "Beetle",
+        "Black Widow"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1980",
+      "1986",
+      "Ends with ING",
+      "Locations in North America"
+    ],
+    "cols": [
+      "Best Picture Winners",
+      "Events",
+      "Time Travel Stories",
+      "Video Games"
+    ],
+    "words": [
+      [
+        "Ordinary People",
+        "Mount St. Helens Eruption",
+        "Somewhere in Time",
+        "Pac-Man"
+      ],
+      [
+        "Platoon",
+        "Chernobyl",
+        "Flight of the Navigator",
+        "The Legend of Zelda"
+      ],
+      [
+        "The Lord of the Rings: The Return of the King",
+        "The Moon Landing",
+        "Life, the Universe and Everything",
+        "Elden Ring"
+      ],
+      [
+        "Chicago",
+        "Bay of Pigs",
+        "Palm Springs",
+        "Phoenix"
       ]
     ]
   }
