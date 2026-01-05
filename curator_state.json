@@ -1,5 +1,5 @@
 {
-  "curatedCount": 19,
+  "curatedCount": 24,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -8,143 +8,165 @@
   ],
   "currentPuzzle": {
     "rows": [
-      "16th Century",
-      "19th Century",
-      "Things French",
-      "Things Spanish"
+      "1950s",
+      "Adventure Stories",
+      "Starts with COM",
+      "Trojan War"
     ],
     "cols": [
-      "Ends with ION",
-      "Fantasy Stories",
-      "Shipwrecks",
-      "Wars"
+      "Epic Stories",
+      "Locations in Europe",
+      "Real Animals",
+      "Real People"
     ],
-    "hash": "a5cb7242aa4298d4e52411c2d2c1664fc8f04a6ec1125a4e6010bd45a473167b",
-    "timestamp": "2025-11-24 15:26:10",
-    "qualityScore": 6.83
+    "hash": "ce56551bbc55080b249d14ca452b1206e72062fdfec162b4410d731dd7bc5809",
+    "timestamp": "2025-12-29 07:43:13",
+    "qualityScore": 7.699999999999999
   },
   "viableGrid": [
     [
       [
-        "The Catholic Counter-Reformation",
-        "The English Reformation",
-        "The Protestant Reformation"
+        "Ben-Hur"
       ],
       [
-        "Journey to the West"
+        "Budapest"
       ],
       [
-        "Mary Rose",
-        "Queen Mary"
+        "Laika, Space Dog"
       ],
       [
-        "Imjin War",
-        "The Italian Wars"
+        "Art Tatum",
+        "Billie Holiday",
+        "Brando",
+        "Brigitte Bardot",
+        "Buddy Holly",
+        "Campanella",
+        "Charlie Parker",
+        "Doris Day",
+        "Duke Ellington",
+        "Eisenhower",
+        "Ella Fitzgerald",
+        "Jack Kerouac",
+        "Joe DiMaggio",
+        "Joe McCarthy",
+        "John Coltrane",
+        "Johnnie Ray",
+        "Joseph Stalin",
+        "Juan Peron",
+        "Krushchev",
+        "L. Ron Hubbard",
+        "Liberace",
+        "Malenkov",
+        "Mantle",
+        "Marciano",
+        "Marilyn Monroe",
+        "Miles Davis",
+        "Monroe",
+        "Nasser",
+        "Nixon",
+        "Prokofiev",
+        "Ray Charles",
+        "Roy Cohn",
+        "Santayana",
+        "Sugar Ray",
+        "Sylvia Plath",
+        "Syngman Rhee",
+        "Thelonious Monk",
+        "Toscanini",
+        "Truman"
       ]
     ],
     [
       [
-        "Krakatoa Eruption",
-        "Tambora Eruption",
-        "The Italian Unification",
-        "The Long Depression",
-        "The Second Industrial Revolution"
+        "Avatar",
+        "Star Wars",
+        "The Iliad",
+        "The Odyssey",
+        "The Ramayana"
       ],
       [
-        "Alice's Adventures in Wonderland",
-        "Pinocchio"
+        "Pompeii"
       ],
       [
-        "Bismarck",
-        "Victoria"
+        "Black Panther"
       ],
       [
-        "Dungan Revolt",
-        "The American Civil War",
-        "The Boer War",
-        "The Crimean War",
-        "The Sepoy Mutiny"
+        "Pocahontas"
       ]
     ],
     [
       [
-        "Mount Pelée Eruption"
+        "Commentarii de Bello Gallico"
       ],
       [
-        "The Little Prince"
+        "Comino"
       ],
       [
-        "Bucentaure",
-        "Redoutable"
+        "Compsognathus"
       ],
       [
-        "The Algerian War",
-        "The Hundred Years War",
-        "The Seven Years' War",
-        "World War I"
+        "Commodus"
       ]
     ],
     [
       [
-        "Concepcion"
+        "Iliad"
       ],
       [
-        "Pan's Labyrinth",
-        "The Map of Chaos",
-        "The Map of Time",
-        "The Map of the Sky"
+        "Paris"
       ],
       [
-        "Santissima Trinidad"
+        "Horse"
       ],
       [
-        "The Spanish Civil War"
+        "Achilles",
+        "Homer"
       ]
     ]
   ],
   "chosen": [
     [
-      "The Protestant Reformation",
-      "Journey to the West",
-      "Mary Rose",
-      "The Italian Wars"
+      "Ben-Hur",
+      "Budapest",
+      "Laika, Space Dog",
+      "Marilyn Monroe"
     ],
     [
-      "The Italian Unification",
-      "Alice's Adventures in Wonderland",
-      "Victoria",
-      "The American Civil War"
+      "Star Wars",
+      "Pompeii",
+      "Black Panther",
+      "Pocahontas"
     ],
     [
-      "Mount Pelée Eruption",
-      "The Little Prince",
-      "Bucentaure",
-      "The Hundred Years War"
+      "Commentarii de Bello Gallico",
+      "Comino",
+      "Compsognathus",
+      "Commodus"
     ],
     [
-      "Concepcion",
-      "Pan's Labyrinth",
-      "Santissima Trinidad",
-      "The Spanish Civil War"
+      "Iliad",
+      "Paris",
+      "Horse",
+      "Homer"
     ]
   ],
   "usedWords": [
-    "The Protestant Reformation",
-    "Journey to the West",
-    "Mary Rose",
-    "The Italian Wars",
-    "The Italian Unification",
-    "Alice's Adventures in Wonderland",
-    "Victoria",
-    "The American Civil War",
-    "Mount Pelée Eruption",
-    "The Little Prince",
-    "Bucentaure",
-    "The Hundred Years War",
-    "Concepcion",
-    "Pan's Labyrinth",
-    "Santissima Trinidad",
-    "The Spanish Civil War"
+    "Ben-Hur",
+    "Budapest",
+    "Laika, Space Dog",
+    "Marilyn Monroe",
+    "Star Wars",
+    "Pompeii",
+    "Black Panther",
+    "Pocahontas",
+    "Commentarii de Bello Gallico",
+    "Comino",
+    "Compsognathus",
+    "Commodus",
+    "Iliad",
+    "Paris",
+    "Horse",
+    "Homer"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -153,342 +175,342 @@
     {
       "rows": [
         "1950s",
-        "Holocene Epoch",
-        "Things Czech",
-        "Things French"
+        "1970s",
+        "Things Greek",
+        "Video Games"
       ],
       "cols": [
-        "Car Brands",
-        "Events",
-        "Modern Countries",
-        "Starts with CHA"
+        "Epic Stories",
+        "Military Conflicts",
+        "Things That Fly",
+        "Women"
       ],
-      "hash": "3f919db22962b57c16efe92b96a491dcd41258acf30807680444e146ccc67a03",
-      "timestamp": "2025-11-24 10:48:07",
-      "qualityScore": 5.709999999999999
+      "hash": "a59b3d0e2b09e4bdef97c10850e8c9caccdd7dea6a1c11d3bafc92dfb1fca8a6",
+      "timestamp": "2025-12-29 01:32:11",
+      "qualityScore": 7.119999999999999
     },
     {
       "rows": [
         "1950s",
-        "Holocene Epoch",
-        "Things Czech",
-        "Things French"
+        "1970s",
+        "Things Greek",
+        "Video Games"
       ],
       "cols": [
-        "Cars",
-        "Events",
-        "Modern Countries",
-        "Starts with CHA"
-      ],
-      "hash": "8ec7d39f7e816d9804434097742c5b0807043f84e2c05dbf2ac27e6e6d963806",
-      "timestamp": "2025-11-24 10:48:07",
-      "qualityScore": 5.709999999999999
-    },
-    {
-      "rows": [
-        "1950s",
-        "Holocene Epoch",
-        "Things Czech",
-        "Things French"
-      ],
-      "cols": [
-        "Car Brands",
-        "Events",
-        "Place Names",
-        "Starts with CHA"
-      ],
-      "hash": "d85deebe0f94e258e4a02f68eb6119b6262e42f9b309cdc3f85b8dca4062e7d7",
-      "timestamp": "2025-11-24 10:48:07",
-      "qualityScore": 5.699999999999999
-    },
-    {
-      "rows": [
-        "1950s",
-        "Holocene Epoch",
-        "Things Czech",
-        "Things French"
-      ],
-      "cols": [
-        "Cars",
-        "Events",
-        "Place Names",
-        "Starts with CHA"
-      ],
-      "hash": "cf49b182c7d58310ac859133b5a57cf515dbceb4c286d9120229e334bb117b86",
-      "timestamp": "2025-11-24 10:48:07",
-      "qualityScore": 5.699999999999999
-    },
-    {
-      "rows": [
-        "16th Century",
-        "Cars",
-        "Place Names",
-        "Starts with BRI"
-      ],
-      "cols": [
-        "19th Century",
-        "Luxury Ships",
-        "Things French",
-        "Things Roman"
-      ],
-      "hash": "571a403de6a4d2705443f166117f9ad13a019d70a2af0cbb640dc2a777286e1d",
-      "timestamp": "2025-11-24 18:21:19",
-      "qualityScore": 5.7
-    },
-    {
-      "rows": [
-        "16th Century",
-        "Cars",
-        "Place Names",
-        "Starts with BRI"
-      ],
-      "cols": [
-        "Holocene Epoch",
-        "Luxury Ships",
-        "Things French",
-        "Things Roman"
-      ],
-      "hash": "d43e5fc59b041445c9aaaa5362787d28b9814b0d664808949e71a794265ea8ef",
-      "timestamp": "2025-11-24 18:21:19",
-      "qualityScore": 5.69
-    },
-    {
-      "rows": [
-        "16th Century",
-        "Cars",
-        "Place Names",
-        "Starts with BRI"
-      ],
-      "cols": [
-        "Luxury Ships",
-        "Quaternary Period",
-        "Things French",
-        "Things Roman"
-      ],
-      "hash": "f2d34426c9a5ed3fc73ec0088c7e2aa52cd43b085888e35c9c7c30f18e503307",
-      "timestamp": "2025-11-24 18:21:19",
-      "qualityScore": 5.69
-    },
-    {
-      "rows": [
-        "16th Century",
-        "Cars",
-        "Place Names",
-        "Starts with BRI"
-      ],
-      "cols": [
-        "19th Century",
-        "Holocene Epoch",
-        "Luxury Ships",
-        "Things Roman"
-      ],
-      "hash": "d465f8e23342cdf7bbd09788da6e20a1dd38f0886294124d1b165da4e612367b",
-      "timestamp": "2025-11-24 18:21:19",
-      "qualityScore": 5.47
-    },
-    {
-      "rows": [
-        "16th Century",
-        "Cars",
-        "Place Names",
-        "Starts with BRI"
-      ],
-      "cols": [
-        "19th Century",
-        "Luxury Ships",
-        "Quaternary Period",
-        "Things Roman"
-      ],
-      "hash": "278d2195d620c13faa4a751cdb24df3341d65484f1634eee156fa8f07dfb7349",
-      "timestamp": "2025-11-24 18:21:19",
-      "qualityScore": 5.47
-    },
-    {
-      "rows": [
-        "16th Century",
-        "Cars",
-        "Place Names",
-        "Starts with BRI"
-      ],
-      "cols": [
-        "19th Century",
-        "Holocene Epoch",
-        "Luxury Ships",
-        "Things French"
-      ],
-      "hash": "750d66a3a0527e8da9cb02b9dec6d243863db4cefa5af8a30878297d5be67b3f",
-      "timestamp": "2025-11-24 18:21:18",
-      "qualityScore": 5.41
-    },
-    {
-      "rows": [
-        "16th Century",
-        "Cars",
-        "Place Names",
-        "Starts with BRI"
-      ],
-      "cols": [
-        "19th Century",
-        "Luxury Ships",
-        "Quaternary Period",
-        "Things French"
-      ],
-      "hash": "efb8327c585d4c16f28d61e98a0e05a96f02f61fbc423f09aa1c8a3d4a0a37c7",
-      "timestamp": "2025-11-24 18:21:19",
-      "qualityScore": 5.41
-    },
-    {
-      "rows": [
-        "1980s",
-        "19th Century",
-        "Miocene Epoch",
-        "Things Czech"
-      ],
-      "cols": [
-        "Car Brands",
-        "Events",
-        "Place Names",
-        "Starts with CHA"
-      ],
-      "hash": "cdce05f4f38bf23f7afbdfe0f959f7f9525fc125572c595c0310705fc65f3a0f",
-      "timestamp": "2025-11-24 21:22:41",
-      "qualityScore": 5.41
-    },
-    {
-      "rows": [
-        "1950s",
-        "Ends with RIS",
-        "Royalty",
+        "Epic Stories",
+        "Military Conflicts",
+        "Real People",
         "Things That Fly"
       ],
-      "cols": [
-        "1980s",
-        "Animal Terms",
-        "Fictional People",
-        "Things French"
-      ],
-      "hash": "76451696974fd5a72d5833be201e51368582933d171d452665fcede50d20f5b9",
-      "timestamp": "2025-12-02 11:55:51",
-      "qualityScore": 0
+      "hash": "5a4c97ff2861faf1759533e17475a5f55d438fc3c9a7bebdbdded5f2089441c2",
+      "timestamp": "2025-12-29 01:32:11",
+      "qualityScore": 7.02
     },
     {
       "rows": [
-        "16th Century",
-        "19th Century",
-        "Things French",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Ends with ION",
-        "Fantasy Stories",
-        "Shipwrecks",
-        "Wars"
-      ],
-      "hash": "a5cb7242aa4298d4e52411c2d2c1664fc8f04a6ec1125a4e6010bd45a473167b",
-      "timestamp": "2025-11-24 15:26:10",
-      "qualityScore": 6.83
-    },
-    {
-      "rows": [
-        "16th Century",
-        "19th Century",
-        "Things French",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Ends with ION",
-        "Fictional People",
-        "Shipwrecks",
-        "Wars"
-      ],
-      "hash": "1160319977683b02b098ed1709e22fdf42641e245fa5e6331447cc0702395758",
-      "timestamp": "2025-11-24 15:26:10",
-      "qualityScore": 6.67
-    },
-    {
-      "rows": [
-        "16th Century",
-        "Eocene Epoch",
-        "Place Names",
-        "Things French"
-      ],
-      "cols": [
-        "Age of Sail",
-        "Events",
-        "Fictional People",
-        "Starts with MIN"
-      ],
-      "hash": "daa7654ef9ba02e42138e26b8842bc74522f536e6d54a3d32500712ce50fa84a",
-      "timestamp": "2025-11-24 09:33:22",
-      "qualityScore": 4.19
-    },
-    {
-      "rows": [
-        "1880s",
         "1950s",
-        "Ends with LES",
-        "Royalty"
+        "1970s",
+        "Things Greek",
+        "Video Games"
       ],
       "cols": [
-        "Animal Terms",
-        "Fictional People",
-        "Place Names",
-        "Things French"
+        "Epic Stories",
+        "Military Conflicts",
+        "Real People",
+        "Women"
       ],
-      "hash": "90efb0bf3edc4c5b831493640beee7a57b949ab6991206a641665e1d0e6f773f",
-      "timestamp": "2025-12-01 17:59:46",
-      "qualityScore": 0
+      "hash": "2d4f75634f92fd503cbb8fd8dc7c856b3856f43f8441f2c717b707fa7c3778be",
+      "timestamp": "2025-12-29 01:32:11",
+      "qualityScore": 6.9399999999999995
     },
     {
       "rows": [
         "1920s",
-        "Ends with DON",
-        "Place Names",
-        "Things Spanish"
+        "1970s",
+        "Exploration Ships",
+        "Things Chinese"
       ],
       "cols": [
         "Events",
-        "Fictional People",
+        "Holocene Epoch",
         "Royalty",
         "Things That Fly"
       ],
-      "hash": "97db5f7a5d2da963b53c0eb73d1f4316fa845ceed2bfeb9c9f2a13ddbf217379",
-      "timestamp": "2025-11-24 18:30:35",
-      "qualityScore": 4.529999999999999
+      "hash": "ff736bf7fa4effdd8feb2e82578f4cedeb1e5c8e9caebc23d55842c60db6a29b",
+      "timestamp": "2025-12-28 21:47:38",
+      "qualityScore": 6.34
     },
     {
       "rows": [
-        "16th Century",
-        "19th Century",
-        "Place Names",
-        "White Things"
+        "1920s",
+        "1970s",
+        "Exploration Ships",
+        "Things Chinese"
       ],
       "cols": [
-        "Animal Terms",
-        "Ends with ICE",
-        "Fictional People",
-        "Things French"
+        "Events",
+        "Quaternary Period",
+        "Royalty",
+        "Things That Fly"
       ],
-      "hash": "5c5ed9c71f15bfd2f9e62b11a3c1778f4fbabc7ab971ab0d926156143b060149",
-      "timestamp": "2025-11-24 15:18:32",
-      "qualityScore": 4.470000000000001
+      "hash": "3d8420d70233fbd6459795fe649346d208ca230b90e05561bcab35a44552c8d7",
+      "timestamp": "2025-12-28 21:47:38",
+      "qualityScore": 6.34
+    },
+    {
+      "rows": [
+        "1920s",
+        "1970s",
+        "Exploration Ships",
+        "Things Chinese"
+      ],
+      "cols": [
+        "Events",
+        "Holocene Epoch",
+        "Things That Fly",
+        "Women"
+      ],
+      "hash": "ba667d769220a9a06d0cab073e99ec5928c2558a3e18a63625473b9b4b8fedb4",
+      "timestamp": "2025-12-28 21:47:38",
+      "qualityScore": 5.52
+    },
+    {
+      "rows": [
+        "1920s",
+        "1970s",
+        "Exploration Ships",
+        "Things Chinese"
+      ],
+      "cols": [
+        "Events",
+        "Quaternary Period",
+        "Things That Fly",
+        "Women"
+      ],
+      "hash": "1b33e3818929d29768cd5ed3c39724e4de1d7b4e4223707a2cb61e1fc918d453",
+      "timestamp": "2025-12-28 21:47:38",
+      "qualityScore": 5.52
+    },
+    {
+      "rows": [
+        "1920s",
+        "1970s",
+        "Exploration Ships",
+        "Things Chinese"
+      ],
+      "cols": [
+        "Events",
+        "Holocene Epoch",
+        "Real People",
+        "Things That Fly"
+      ],
+      "hash": "328836148df44029f89282eff36f754efd2de015ff61e1d3b2d1af9ad33a23f7",
+      "timestamp": "2025-12-28 21:47:38",
+      "qualityScore": 5.42
+    },
+    {
+      "rows": [
+        "1920s",
+        "1970s",
+        "Exploration Ships",
+        "Things Chinese"
+      ],
+      "cols": [
+        "Events",
+        "Quaternary Period",
+        "Real People",
+        "Things That Fly"
+      ],
+      "hash": "176c1602e45e70f38b9e8936e02fe59c42022175020de57744579512ff2f7192",
+      "timestamp": "2025-12-28 21:47:38",
+      "qualityScore": 5.42
+    },
+    {
+      "rows": [
+        "1880s",
+        "Ends with ING",
+        "Locations in Europe",
+        "Things Turkish"
+      ],
+      "cols": [
+        "Buildings",
+        "Events",
+        "Movies",
+        "Real People"
+      ],
+      "hash": "ed533a2abdd0f3a75ad543f9ab5c2ea9372e39967c233d7a5e7d3324e5468728",
+      "timestamp": "2025-12-29 01:50:10",
+      "qualityScore": 8.18
     },
     {
       "rows": [
         "1950s",
-        "Fictional People",
-        "Royalty",
-        "Starts with CHA"
+        "Adventure Stories",
+        "Starts with COM",
+        "Trojan War"
       ],
       "cols": [
-        "1980s",
         "Animal Terms",
-        "Place Names",
-        "Things French"
+        "Epic Stories",
+        "Locations in Europe",
+        "Real People"
       ],
-      "hash": "9d99afd0a023a6c2c29f3eeb49938e1aaef80c0d994bf2cf6dcffbece6167901",
-      "timestamp": "2025-12-01 22:06:25",
-      "qualityScore": 0
+      "hash": "c06c32576b30f66d3d27a65cbd73a0b90bbc8d3096e968bc6275209a73fa9889",
+      "timestamp": "2025-12-29 07:43:13",
+      "qualityScore": 7.699999999999999
+    },
+    {
+      "rows": [
+        "1950s",
+        "Adventure Stories",
+        "Starts with COM",
+        "Trojan War"
+      ],
+      "cols": [
+        "Epic Stories",
+        "Locations in Europe",
+        "Real Animals",
+        "Real People"
+      ],
+      "hash": "ce56551bbc55080b249d14ca452b1206e72062fdfec162b4410d731dd7bc5809",
+      "timestamp": "2025-12-29 07:43:13",
+      "qualityScore": 7.699999999999999
+    },
+    {
+      "rows": [
+        "1950s",
+        "Adventure Stories",
+        "Starts with COM",
+        "Things Greek"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Epic Stories",
+        "Locations in Europe",
+        "Real People"
+      ],
+      "hash": "1a0fbed2cd14051740197da73a5fce5f2cbd6849b393282478828f8c81e06158",
+      "timestamp": "2025-12-29 07:43:12",
+      "qualityScore": 5.03
+    },
+    {
+      "rows": [
+        "1950s",
+        "Adventure Stories",
+        "Starts with COM",
+        "Things Greek"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Epic Stories",
+        "Modern Countries",
+        "Real People"
+      ],
+      "hash": "9e18ac2e1dea87b73eefdf6a30dfa2e5ead8b3df3fc5f8a70475fcfc7d785e41",
+      "timestamp": "2025-12-29 07:43:12",
+      "qualityScore": 4.98
+    },
+    {
+      "rows": [
+        "1950s",
+        "Adventure Stories",
+        "Starts with COM",
+        "Things Russian"
+      ],
+      "cols": [
+        "1970s",
+        "Epic Stories",
+        "Locations in Europe",
+        "Real People"
+      ],
+      "hash": "ab6807257112f55285bcc9689d4b502695512c3ee3e6187f6b1a27618ce5722d",
+      "timestamp": "2025-12-29 07:43:13",
+      "qualityScore": 4.93
+    },
+    {
+      "rows": [
+        "1950s",
+        "Adventure Stories",
+        "Starts with COM",
+        "Things Russian"
+      ],
+      "cols": [
+        "1970s",
+        "Epic Stories",
+        "Modern Countries",
+        "Real People"
+      ],
+      "hash": "7eaf1aa1a6000be324f64fa188fb6f4e8c1313c7134d0625a7ae15944c7f891e",
+      "timestamp": "2025-12-29 07:43:13",
+      "qualityScore": 4.88
+    },
+    {
+      "rows": [
+        "1950s",
+        "Adventure Stories",
+        "Starts with COM",
+        "Things Chinese"
+      ],
+      "cols": [
+        "1970s",
+        "Animal Terms",
+        "Epic Stories",
+        "Modern Countries"
+      ],
+      "hash": "629067b562d334217afbb16f80b6bfd593975be9496da176d0e7537457c8c554",
+      "timestamp": "2025-12-29 07:43:12",
+      "qualityScore": 3.66
+    },
+    {
+      "rows": [
+        "1950s",
+        "Adventure Stories",
+        "Starts with COM",
+        "Things Chinese"
+      ],
+      "cols": [
+        "1970s",
+        "Epic Stories",
+        "Modern Countries",
+        "Real Animals"
+      ],
+      "hash": "341c4333656ee2219326c62a3d8c4dbe99dda173b78504eb67c12b1d303f3406",
+      "timestamp": "2025-12-29 07:43:12",
+      "qualityScore": 3.66
+    },
+    {
+      "rows": [
+        "1950s",
+        "1991",
+        "Things Chinese",
+        "Things Greek"
+      ],
+      "cols": [
+        "Adventure Stories",
+        "Animal Terms",
+        "Military Conflicts",
+        "Movies"
+      ],
+      "hash": "e3ece04203e226795d7083dca7245d2cafab8613421b21a5d6cd2d726cc2b9b3",
+      "timestamp": "2025-12-29 04:15:41",
+      "qualityScore": 5.7299999999999995
+    },
+    {
+      "rows": [
+        "1950s",
+        "1991",
+        "Things Chinese",
+        "Things Greek"
+      ],
+      "cols": [
+        "Adventure Stories",
+        "Animal Terms",
+        "Ends with WAR",
+        "Movies"
+      ],
+      "hash": "474691e8385a7714f787482e03827d889d06f3b174a727692db186ce8436da29",
+      "timestamp": "2025-12-29 04:15:41",
+      "qualityScore": 5.34
     }
   ],
   "message": "Puzzle saved successfully!"
