@@ -18,7 +18,7 @@ export const SPECIES_GEOLOGICAL_DATA = {
     "Australopithecus": [4, 2],
     "Basilosaurus": [40, 34],
     "Bennettitales": [252, 66],
-    "Brachchiopods": [541, 0],
+    "Brachiopods": [541, 0],
     "Brachiosaurus": [154, 150],
     "Brontornis": [23, 15],
     "Camarasaurus": [155, 145],

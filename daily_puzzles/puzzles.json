@@ -6823,7 +6823,7 @@
         "Coelacanth",
         "Plesiosaurus",
         "Spike",
-        "Brachchiopods"
+        "Brachiopods"
       ],
       [
         "Killer Whale",
@@ -7916,6 +7916,206 @@
         "Bay of Pigs",
         "Palm Springs",
         "Phoenix"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "2018",
+      "2019",
+      "Books",
+      "First in Release Order"
+    ],
+    "cols": [
+      "Cruise Ships",
+      "Fictional People",
+      "Horror Stories",
+      "Period Stories"
+    ],
+    "words": [
+      [
+        "Norwegian Bliss",
+        "Black Panther",
+        "Hereditary",
+        "Green Book"
+      ],
+      [
+        "Costa Smeralda",
+        "Joker",
+        "Glass",
+        "Once Upon a Time in Hollywood"
+      ],
+      [
+        "Odyssey",
+        "Don Quixote",
+        "The Shining",
+        "War and Peace"
+      ],
+      [
+        "Queen Mary",
+        "Pinocchio",
+        "Alien",
+        "A Fistful of Dollars"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1960s",
+      "2001",
+      "Fourth in Release Order",
+      "Prequels"
+    ],
+    "cols": [
+      "Action Stories",
+      "Stories Where the Mom Dies",
+      "Stories about Families",
+      "Thriller Stories"
+    ],
+    "words": [
+      [
+        "A Fistful of Dollars",
+        "The Fox and the Hound",
+        "The Sound of Music",
+        "Psycho"
+      ],
+      [
+        "The Lord of the Rings: The Fellowship of the Ring",
+        "Harry Potter and the Sorcerer's Stone",
+        "Monsters, Inc.",
+        "Donnie Darko"
+      ],
+      [
+        "Avengers: Endgame",
+        "Harry Potter and the Goblet of Fire",
+        "Vegas Vacation",
+        "Alien: Resurrection"
+      ],
+      [
+        "X-Men: First Class",
+        "Attack of the Clones",
+        "The Godfather Part II",
+        "Rogue One"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "15th Century",
+      "1890s",
+      "Han Dynasty",
+      "Things Iranian"
+    ],
+    "cols": [
+      "Founders of Religious Movements",
+      "Military Conflicts",
+      "Military Leaders",
+      "Political Events"
+    ],
+    "words": [
+      [
+        "Guru Nanak",
+        "Battle of Agincourt",
+        "Joan of Arc",
+        "First Defenestration of Prague"
+      ],
+      [
+        "Charles Taze Russell",
+        "The Spanish-American War",
+        "McKinley",
+        "Triple Alliance"
+      ],
+      [
+        "Zhang Daoling",
+        "Yellow Turban Rebellion",
+        "Cao Cao",
+        "Wang Mang Usurpation"
+      ],
+      [
+        "Mani",
+        "The Iran-Iraq War",
+        "Cyrus the Great",
+        "Iranian Revolution"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1930s",
+      "1990s",
+      "Things British",
+      "Things Japanese"
+    ],
+    "cols": [
+      "Aircraft Carriers",
+      "Black and White Films",
+      "Cannibalism",
+      "Military Aircraft"
+    ],
+    "words": [
+      [
+        "Roosevelt",
+        "King Kong",
+        "Albert Fish",
+        "B-17"
+      ],
+      [
+        "Bush",
+        "Schindler's List",
+        "The Silence of the Lambs",
+        "F-22"
+      ],
+      [
+        "Ark Royal",
+        "The Third Man",
+        "Sweeney Todd: The Demon Barber of Fleet Street",
+        "Lancaster"
+      ],
+      [
+        "Akagi",
+        "Seven Samurai",
+        "Issei Sagawa",
+        "Kate"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1997",
+      "Movies featuring Kurt Russell",
+      "Oscar Winners",
+      "Pixar"
+    ],
+    "cols": [
+      "2000s",
+      "Movies featuring Samuel L. Jackson",
+      "Musical Films",
+      "Sci-fi Stories"
+    ],
+    "words": [
+      [
+        "Harry Potter and the Sorcerer's Stone",
+        "Jackie Brown",
+        "The Full Monty",
+        "The Fifth Element"
+      ],
+      [
+        "Death Proof",
+        "The Hateful Eight",
+        "The Fox and the Hound",
+        "The Thing"
+      ],
+      [
+        "Gladiator",
+        "Django Unchained",
+        "La La Land",
+        "The Matrix"
+      ],
+      [
+        "Monsters, Inc.",
+        "The Incredibles 2",
+        "Coco",
+        "WALL-E"
       ]
     ]
   }
