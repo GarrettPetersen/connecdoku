@@ -4694,6 +4694,7 @@
     "Meganeuropsis",
     "Microraptor",
     "Millipede",
+    "Moles",
     "Monkey",
     "Mosasaurus",
     "Mosquito",
@@ -4812,7 +4813,6 @@
     "Bee",
     "Beetle",
     "Behemoth",
-    "Bennettitales",
     "Big Bird",
     "Black Cat",
     "Black Panther",
@@ -4830,7 +4830,6 @@
     "Buffalo",
     "Bull",
     "Butterfly",
-    "Calamites",
     "Camarasaurus",
     "Cardinal",
     "Carnotaurus",
@@ -4957,6 +4956,7 @@
     "Microraptor",
     "Millipede",
     "Moby Dick",
+    "Moles",
     "Monkey",
     "Mosasaurus",
     "Mosquito",
@@ -5061,7 +5061,6 @@
     "Unicorn",
     "Utahraptor",
     "Velociraptor",
-    "Venus Flytrap",
     "Vulture",
     "Walrus",
     "Wasp",
@@ -6927,6 +6926,9 @@
   ],
   "Chemicals": [
     "Ammonia"
+  ],
+  "Chemistry": [
+    "Moles"
   ],
   "Chen Dynasty": [
     "Chen Baxian",
@@ -8886,6 +8888,7 @@
     "Mantis Shrimp",
     "Mare",
     "Millipede",
+    "Moles",
     "Monkey",
     "Mosquito",
     "Moth",
@@ -8973,7 +8976,6 @@
     "Club Moss",
     "Coconut",
     "Coffee Plant",
-    "Coral",
     "Corn",
     "Cranberry",
     "Cucumber",
@@ -13524,6 +13526,7 @@
     "Holes",
     "Les Misérables",
     "Los Angeles",
+    "Moles",
     "Naples",
     "Pirates of the Caribbean: Dead Men Tell No Tales",
     "Prince of Wales",
@@ -16953,11 +16956,9 @@
     "Aurochs",
     "Australopithecus",
     "Basilosaurus",
-    "Bennettitales",
     "Brachiopods",
     "Brachiosaurus",
     "Brontornis",
-    "Calamites",
     "Camarasaurus",
     "Carnotaurus",
     "Cera",
@@ -20919,6 +20920,7 @@
     "Manatee",
     "Mickey Mouse",
     "Moby Dick",
+    "Moles",
     "Monkey",
     "Nala",
     "Orca",
@@ -29183,6 +29185,7 @@
     "Macaw",
     "Magpie",
     "Mickey Mouse",
+    "Moles",
     "Monkey",
     "Mothra",
     "Opabinia",
@@ -31008,7 +31011,6 @@
     "Club Moss",
     "Coconut",
     "Coffee Plant",
-    "Coral",
     "Corn",
     "Cranberry",
     "Cucumber",
@@ -32246,7 +32248,6 @@
     "Buffalo",
     "Bull",
     "Butterfly",
-    "Calamites",
     "Camarasaurus",
     "Cardinal",
     "Carnotaurus",
@@ -34020,6 +34021,9 @@
     "WALL-E",
     "X-Men: Days of Future Past",
     "X-Men: First Class"
+  ],
+  "Science": [
+    "Moles"
   ],
   "Science Quotes": [
     "One small step for man",
@@ -38686,7 +38690,8 @@
   "Starts with MOL": [
     "Moldova",
     "Mole",
-    "Mole Poblano"
+    "Mole Poblano",
+    "Moles"
   ],
   "Starts with MON": [
     "Monaco",
@@ -45676,7 +45681,8 @@
     "United States"
   ],
   "Units of Measurement": [
-    "Kilo"
+    "Kilo",
+    "Moles"
   ],
   "Vegetables": [
     "Asparagus",
