@@ -287,7 +287,6 @@ export const SPECIES_GEOLOGICAL_DATA = {
     // Additional species that were missing geological data
     "Basilisk": [50, 0], // Real lizard species, currently living
     "Bat": [52, 0], // Eocene origin, still living
-    "Black Widow": [380, 0], // Spider origin, still living
     "Bluebird": [2, 0], // Recent origin, still living
     "Boar": [10, 0], // Domestic pig origin, still living
     "Bruin": [5, 0], // Bear origin, still living

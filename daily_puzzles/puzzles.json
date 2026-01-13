@@ -8118,5 +8118,205 @@
         "WALL-E"
       ]
     ]
+  },
+  {
+    "rows": [
+      "18th Century",
+      "19th Century",
+      "Ming Dynasty",
+      "Things Greek"
+    ],
+    "cols": [
+      "Classic Literature",
+      "National Capitals",
+      "Royalty",
+      "Wars"
+    ],
+    "words": [
+      [
+        "Gulliver's Travels",
+        "Washington",
+        "Frederick the Great",
+        "The American Revolution"
+      ],
+      [
+        "Moby Dick",
+        "Wellington",
+        "Victoria",
+        "The Napoleonic Wars"
+      ],
+      [
+        "Journey to the West",
+        "Beijing",
+        "Zhu Yuanzhang",
+        "Imjin War"
+      ],
+      [
+        "The Iliad",
+        "Athens",
+        "Alexander the Great",
+        "The Trojan War"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1988",
+      "Crime Stories",
+      "First in Internal Chronology",
+      "Sequels"
+    ],
+    "cols": [
+      "Christmas Stories",
+      "Men",
+      "Movies featuring Sigourney Weaver",
+      "Starts with THE"
+    ],
+    "words": [
+      [
+        "Scrooged",
+        "Rain Man",
+        "Working Girl",
+        "The Naked Gun"
+      ],
+      [
+        "Bad Santa",
+        "Scarface",
+        "Copycat",
+        "The Departed"
+      ],
+      [
+        "Home Alone",
+        "Pinocchio",
+        "Alien",
+        "The Phantom Menace"
+      ],
+      [
+        "Home Alone 2: Lost in New York",
+        "Prince Caspian",
+        "Aliens",
+        "The Empire Strikes Back"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Assassination of Caesar",
+      "Napoleonic Wars",
+      "The Gunpowder Plot",
+      "World War II"
+    ],
+    "cols": [
+      "Dates",
+      "Famous Quotes",
+      "National Leaders",
+      "Place Names"
+    ],
+    "words": [
+      [
+        "Ides of March",
+        "Et tu, Brute?",
+        "Julius Caesar",
+        "Rome"
+      ],
+      [
+        "June 18th, 1815",
+        "Merde!",
+        "Napoleon Bonaparte",
+        "Waterloo"
+      ],
+      [
+        "The 5th of November",
+        "Remember, remember",
+        "James",
+        "Palace of Westminster"
+      ],
+      [
+        "June 4th, 1942",
+        "We shall never surrender",
+        "Joseph Stalin",
+        "Montgomery"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1980s",
+      "2006",
+      "Adventure Stories",
+      "People"
+    ],
+    "cols": [
+      "Movies featuring Jack Nicholson",
+      "Romance Stories",
+      "Third in Internal Chronology",
+      "Trios"
+    ],
+    "words": [
+      [
+        "The Shining",
+        "Somewhere in Time",
+        "National Lampoon's Christmas Vacation",
+        "Three Amigos"
+      ],
+      [
+        "The Departed",
+        "The Holiday",
+        "The Santa Clause 3: The Escape Clause",
+        "The Three-Body Problem"
+      ],
+      [
+        "Easy Rider",
+        "Moonrise Kingdom",
+        "Revenge of the Sith",
+        "The Three Musketeers"
+      ],
+      [
+        "Hoffa",
+        "Cleopatra",
+        "Hannibal",
+        "Trinity"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "2012",
+      "2013",
+      "Fourth in Internal Chronology",
+      "Third in Release Order"
+    ],
+    "cols": [
+      "Comedy Stories",
+      "Fantasy Stories",
+      "Movies featuring Bruce Willis",
+      "Movies featuring Scarlett Johansson"
+    ],
+    "words": [
+      [
+        "Safety Not Guaranteed",
+        "The Map of the Sky",
+        "Looper",
+        "The Avengers"
+      ],
+      [
+        "About Time",
+        "The Map of Chaos",
+        "A Good Day to Die Hard",
+        "Her"
+      ],
+      [
+        "Vegas Vacation",
+        "Harry Potter and the Goblet of Fire",
+        "Live Free or Die Hard",
+        "Avengers: Endgame"
+      ],
+      [
+        "National Lampoon's Christmas Vacation",
+        "Harry Potter and the Prisoner of Azkaban",
+        "Die Hard with a Vengeance",
+        "Avengers: Infinity War"
+      ]
+    ]
   }
 ]
