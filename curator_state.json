@@ -1,5 +1,5 @@
 {
-  "curatedCount": 39,
+  "curatedCount": 44,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -8,131 +8,171 @@
   ],
   "currentPuzzle": {
     "rows": [
-      "2012",
-      "2013",
-      "Fourth in Internal Chronology",
-      "Third in Release Order"
+      "2018",
+      "2019",
+      "Books",
+      "First in Release Order"
     ],
     "cols": [
-      "Comedy Stories",
-      "Fantasy Stories",
-      "Movies featuring Bruce Willis",
-      "Movies featuring Scarlett Johansson"
+      "Cruise Ships",
+      "Disney",
+      "Horror Stories",
+      "Period Stories"
     ],
-    "hash": "402203039d6a536ac3bcdc21859136691d3a00a58cf649a56b4c2a551e2446a8",
-    "timestamp": "2025-12-28 18:33:35",
-    "qualityScore": 23.73
+    "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
+    "timestamp": "2025-12-28 18:16:22",
+    "qualityScore": 15.609999999999996
   },
   "viableGrid": [
     [
       [
-        "Safety Not Guaranteed"
+        "Norwegian Bliss"
       ],
       [
-        "The Map of the Sky"
+        "Mary Poppins Returns",
+        "Solo"
       ],
       [
-        "Looper"
+        "Among Us",
+        "Hereditary"
       ],
       [
-        "The Avengers"
+        "Green Book"
       ]
     ],
     [
       [
-        "About Time"
+        "Costa Smeralda"
       ],
       [
-        "The Map of Chaos"
+        "The Rise of Skywalker"
       ],
       [
-        "A Good Day to Die Hard"
+        "Glass"
       ],
       [
-        "Her"
+        "Once Upon a Time in Hollywood"
       ]
     ],
     [
       [
-        "So Long, and Thanks for All the Fish",
-        "Vegas Vacation"
+        "Odyssey"
       ],
       [
-        "Harry Potter and the Goblet of Fire",
-        "Pirates of the Caribbean: On Stranger Tides",
-        "Prince Caspian"
+        "Peter Pan",
+        "The Fox and the Hound"
       ],
       [
-        "Live Free or Die Hard"
+        "Carrie",
+        "Dracula",
+        "Frankenstein",
+        "Hannibal",
+        "IT",
+        "Salem's Lot",
+        "The Shining",
+        "The Stand"
       ],
       [
-        "Avengers: Endgame"
+        "12 Years a Slave",
+        "Les Misérables",
+        "Romance of the Three Kingdoms",
+        "The Tale of the Heike",
+        "The Three Musketeers",
+        "War and Peace"
       ]
     ],
     [
       [
-        "Back to the Future Part III",
-        "Life, the Universe and Everything",
-        "National Lampoon's Christmas Vacation"
+        "Queen Mary"
       ],
       [
-        "Harry Potter and the Prisoner of Azkaban",
-        "Pirates of the Caribbean: At World's End",
-        "The Lord of the Rings: The Return of the King",
-        "The Silmarillion",
-        "The Voyage of the Dawn Treader"
+        "101 Dalmatians",
+        "Aladdin",
+        "Alice in Wonderland",
+        "Atlantis",
+        "Bambi",
+        "Beauty and the Beast",
+        "Big Hero 6",
+        "Brother Bear",
+        "Cinderella",
+        "Fantasia",
+        "Frozen",
+        "Hercules",
+        "Lady and the Tramp",
+        "Lilo & Stitch",
+        "Mary Poppins",
+        "Moana",
+        "Monsters, Inc.",
+        "Mulan",
+        "Pinocchio",
+        "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "Pocahontas",
+        "Sleeping Beauty",
+        "Snow White and the Seven Dwarfs",
+        "The Emperor's New Groove",
+        "The Hunchback of Notre Dame",
+        "The Lion King",
+        "The Little Mermaid",
+        "The Many Adventures of Winnie the Pooh",
+        "The Parent Trap",
+        "The Rescuers",
+        "The Three Little Pigs",
+        "Wreck-It Ralph",
+        "Zootopia"
       ],
       [
-        "Die Hard with a Vengeance"
+        "Alien",
+        "The Terminator"
       ],
       [
-        "Avengers: Infinity War"
+        "A Fistful of Dollars",
+        "Red Dead Redemption"
       ]
     ]
   ],
   "chosen": [
     [
-      "Safety Not Guaranteed",
-      "The Map of the Sky",
-      "Looper",
-      "The Avengers"
+      "Norwegian Bliss",
+      "Solo",
+      "Hereditary",
+      "Green Book"
     ],
     [
-      "About Time",
-      "The Map of Chaos",
-      "A Good Day to Die Hard",
-      "Her"
+      "Costa Smeralda",
+      "The Rise of Skywalker",
+      "Glass",
+      "Once Upon a Time in Hollywood"
     ],
     [
-      "Vegas Vacation",
-      "Harry Potter and the Goblet of Fire",
-      "Live Free or Die Hard",
-      "Avengers: Endgame"
+      "Odyssey",
+      "Peter Pan",
+      "Dracula",
+      "War and Peace"
     ],
     [
-      "National Lampoon's Christmas Vacation",
-      "Harry Potter and the Prisoner of Azkaban",
-      "Die Hard with a Vengeance",
-      "Avengers: Infinity War"
+      "Queen Mary",
+      "Snow White and the Seven Dwarfs",
+      "Alien",
+      "A Fistful of Dollars"
     ]
   ],
   "usedWords": [
-    "Safety Not Guaranteed",
-    "The Map of the Sky",
-    "Looper",
-    "The Avengers",
-    "About Time",
-    "The Map of Chaos",
-    "A Good Day to Die Hard",
-    "Her",
-    "Vegas Vacation",
-    "Harry Potter and the Goblet of Fire",
-    "Live Free or Die Hard",
-    "Avengers: Endgame",
-    "National Lampoon's Christmas Vacation",
-    "Harry Potter and the Prisoner of Azkaban",
-    "Die Hard with a Vengeance",
-    "Avengers: Infinity War"
+    "Norwegian Bliss",
+    "Solo",
+    "Hereditary",
+    "Green Book",
+    "Costa Smeralda",
+    "The Rise of Skywalker",
+    "Glass",
+    "Once Upon a Time in Hollywood",
+    "Odyssey",
+    "Peter Pan",
+    "Dracula",
+    "War and Peace",
+    "Queen Mary",
+    "Snow White and the Seven Dwarfs",
+    "Alien",
+    "A Fistful of Dollars"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -140,343 +180,343 @@
   "puzzles": [
     {
       "rows": [
-        "1910s",
-        "Real People",
-        "Things Italian",
-        "Things Roman"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Car Brands",
-        "Mentioned in We Didn't Start the Fire",
-        "Oceanliners",
-        "Starts with BAT"
+        "Cruise Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "fa1309e9ddfccd0276fac68a4cf0b2e91599f7d985fe75e5ff4e3aa5eff81e46",
-      "timestamp": "2025-12-29 01:40:04",
-      "qualityScore": 6.76
+      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 15.609999999999996
     },
     {
       "rows": [
-        "13th Century",
-        "1st Century BC",
-        "Mentioned in We Didn't Start the Fire",
-        "Three Kingdoms Period"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Battles",
-        "Buildings",
-        "Epic Stories",
-        "Real People"
+        "Disney",
+        "Horror Stories",
+        "Luxury Ships",
+        "Period Stories"
       ],
-      "hash": "e9b07017179106a516daacb02c1a5552d6de18ee73f05b83e85af7b548c723c9",
-      "timestamp": "2025-12-29 02:18:26",
-      "qualityScore": 15.9
+      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 14.539999999999996
     },
     {
       "rows": [
-        "13th Century",
-        "1st Century BC",
-        "Mentioned in We Didn't Start the Fire",
-        "Three Kingdoms Period"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Buildings",
-        "Epic Stories",
-        "Real People",
-        "Starts with BAT"
+        "Civilian Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "abba0f16aadb02951987360edff9723694d41a696ddffc4ad94ffe482a79395d",
-      "timestamp": "2025-12-29 02:18:26",
-      "qualityScore": 13.18
+      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
+      "timestamp": "2025-12-28 18:16:21",
+      "qualityScore": 14.279999999999998
     },
     {
       "rows": [
-        "13th Century",
-        "1st Century BC",
-        "Mentioned in We Didn't Start the Fire",
-        "Things Indian"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Buildings",
-        "Epic Stories",
-        "Real People",
-        "Things Chinese"
+        "Cruise Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "406701af601282ca8921348b642094164549d2639177eb85a3baab9e0344b2b8",
-      "timestamp": "2025-12-29 02:18:26",
-      "qualityScore": 11.04
+      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 15.609999999999996
     },
     {
       "rows": [
-        "1940s",
-        "Green Things",
-        "Real People",
-        "Red Things"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Animal Species",
-        "Supervillains",
-        "Things French",
-        "Things Italian"
+        "Disney",
+        "Horror Stories",
+        "Luxury Ships",
+        "Period Stories"
       ],
-      "hash": "e503e4449921439e2e815ef21068fe4c1acc4225bb8df1533f71d11becc215d3",
-      "timestamp": "2025-12-29 02:41:19",
-      "qualityScore": 8.520000000000001
+      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 14.539999999999996
     },
     {
       "rows": [
-        "1810s",
-        "1910s",
-        "Cities in Europe",
-        "Ends with ION"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Disasters",
-        "Mentioned in We Didn't Start the Fire",
-        "Things French",
-        "Things Italian"
+        "Civilian Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "5fd07584b9d7e7ccfd30adc3758a920609672c356760fb5251d1d3ef77e36f68",
-      "timestamp": "2025-12-29 04:37:58",
-      "qualityScore": 9.99
+      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
+      "timestamp": "2025-12-28 18:16:21",
+      "qualityScore": 14.279999999999998
     },
     {
       "rows": [
-        "1810s",
-        "1910s",
-        "Cities in Europe",
-        "Islands"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Disasters",
-        "Real People",
-        "Things French",
-        "Things Italian"
+        "Cruise Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "beeac59dedb63a09d04901875ce882a77d32dcf42be4003758999952451e06f8",
-      "timestamp": "2025-12-29 04:37:58",
-      "qualityScore": 9.900000000000002
+      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 15.609999999999996
     },
     {
       "rows": [
-        "1950s",
-        "Ends with ION",
-        "Islands",
-        "Things Roman"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Comedy Stories",
-        "Countries that No Longer Exist",
-        "Mountains",
-        "Things Spanish"
+        "Disney",
+        "Horror Stories",
+        "Luxury Ships",
+        "Period Stories"
       ],
-      "hash": "a3fd92cd7e58a8fa48acba4119402896929703e6da181dbf41d463be87d3cf17",
-      "timestamp": "2025-12-28 23:02:51",
-      "qualityScore": 4.71
+      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 14.539999999999996
     },
     {
       "rows": [
-        "1950s",
-        "Mammals",
-        "Paleogene Period",
-        "Things French"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Car Brands",
-        "Ends with INE",
-        "Fastest of its Type",
-        "Largest of its Type"
+        "Civilian Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "931a0e02a1ee449c36f99bd75491b8a2c44ea5c962e17929baf5f3f94997a415",
-      "timestamp": "2025-12-29 00:16:45",
-      "qualityScore": 9.67
+      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
+      "timestamp": "2025-12-28 18:16:21",
+      "qualityScore": 14.279999999999998
     },
     {
       "rows": [
-        "1950s",
-        "Mammals",
-        "Paleogene Period",
-        "Things French"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Car Brands",
-        "Ends with ION",
-        "Fastest of its Type",
-        "Largest of its Type"
+        "Cruise Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "44bf6a1718e2bf4da8d670072413d37c94985af16b56b34018fec290ec27ebea",
-      "timestamp": "2025-12-29 00:16:45",
-      "qualityScore": 9.67
+      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 15.609999999999996
     },
     {
       "rows": [
-        "1940s",
-        "Cities",
-        "Starts with PRO",
-        "Weapons"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Marvel Characters",
-        "Mentioned in We Didn't Start the Fire",
-        "Things French",
-        "Things Italian"
+        "Disney",
+        "Horror Stories",
+        "Luxury Ships",
+        "Period Stories"
       ],
-      "hash": "69d97b8265721e4b5d65fd1c41347693f1d1edc4d933d23252f759ffffbfbcc3",
-      "timestamp": "2025-12-29 08:37:37",
-      "qualityScore": 4.7
+      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 14.539999999999996
     },
     {
       "rows": [
-        "1991",
-        "2000",
-        "Ends with ITY",
-        "Third in Release Order"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Comedy Stories",
-        "Movies featuring Alan Rickman",
-        "Things Chinese",
-        "Thriller Films"
+        "Civilian Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "1b20379819c48d2d8dacf5a911237daac71782ac3e7d6bae5a5e27fc4f4214ca",
-      "timestamp": "2025-12-29 01:24:57",
-      "qualityScore": 15.83
+      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
+      "timestamp": "2025-12-28 18:16:21",
+      "qualityScore": 14.279999999999998
     },
     {
       "rows": [
-        "1950s",
-        "Birds",
-        "Starts with SAI",
-        "Things French"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Cities",
-        "Fastest of its Type",
-        "Modern Countries",
-        "Real People"
+        "Cruise Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "f257bf70d86a01bfc04b1356f1671867b5051b5ac753ce4389e11de5939c1cf6",
-      "timestamp": "2025-12-29 07:57:51",
-      "qualityScore": 5.3
+      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 15.609999999999996
     },
     {
       "rows": [
-        "13th Century",
-        "Tang Dynasty",
-        "Things Roman",
-        "Three Kingdoms Period"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Battles",
-        "Buildings",
-        "Emperors",
-        "Religious Figures"
+        "Disney",
+        "Horror Stories",
+        "Luxury Ships",
+        "Period Stories"
       ],
-      "hash": "8a29d733548258af6eb1911868dc45018742a976f209c9a83ad00a26b5c91cb0",
-      "timestamp": "2025-12-29 03:31:31",
-      "qualityScore": 16.5
+      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 14.539999999999996
     },
     {
       "rows": [
-        "2012",
-        "2013",
-        "Fourth in Internal Chronology",
-        "Third in Release Order"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Comedy Stories",
-        "Fantasy Stories",
-        "Movies featuring Bruce Willis",
-        "Movies featuring Scarlett Johansson"
+        "Civilian Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "402203039d6a536ac3bcdc21859136691d3a00a58cf649a56b4c2a551e2446a8",
-      "timestamp": "2025-12-28 18:33:35",
-      "qualityScore": 23.73
+      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
+      "timestamp": "2025-12-28 18:16:21",
+      "qualityScore": 14.279999999999998
     },
     {
       "rows": [
-        "2012",
-        "2013",
-        "Fourth in Internal Chronology",
-        "Second in Internal Chronology"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Comedy Stories",
-        "Fantasy Stories",
-        "Movies featuring Bruce Willis",
-        "Movies featuring Scarlett Johansson"
+        "Cruise Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "9e402df0a2c27d3914cdd309cdbfdb436cfd78b3d01f674f6c88c626d26e65be",
-      "timestamp": "2025-12-28 18:33:35",
-      "qualityScore": 22.31
+      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 15.609999999999996
     },
     {
       "rows": [
-        "2012",
-        "2013",
-        "Fourth in Internal Chronology",
-        "Second in Release Order"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Comedy Stories",
-        "Fantasy Stories",
-        "Movies featuring Bruce Willis",
-        "Movies featuring Scarlett Johansson"
+        "Disney",
+        "Horror Stories",
+        "Luxury Ships",
+        "Period Stories"
       ],
-      "hash": "4de7b42e85f755464b63e27ac70dce79225e11bae8a7196f881327003343b9cd",
-      "timestamp": "2025-12-28 18:33:35",
-      "qualityScore": 22.250000000000004
+      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 14.539999999999996
     },
     {
       "rows": [
-        "1950s",
-        "Cities",
-        "Real People",
-        "Republics"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Islands",
-        "Real Animals",
-        "Things Egyptian",
-        "Things French"
+        "Civilian Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "e8429472fb1857205f2d7d8d3a840cb6752a7d4c6f2ef0c7b36f13101ed223c4",
-      "timestamp": "2025-12-29 08:19:47",
-      "qualityScore": 4.57
+      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
+      "timestamp": "2025-12-28 18:16:21",
+      "qualityScore": 14.279999999999998
     },
     {
       "rows": [
-        "1950s",
-        "Cities",
-        "Real People",
-        "Republics"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Islands",
-        "Real Animals",
-        "Things Egyptian",
-        "Things Italian"
+        "Cruise Ships",
+        "Disney",
+        "Horror Stories",
+        "Period Stories"
       ],
-      "hash": "4be5f82caf37ff897292b4cadf13c45bf9fb1e2b0689880ea674885a04bbec4a",
-      "timestamp": "2025-12-29 08:19:47",
-      "qualityScore": 4.55
+      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 15.609999999999996
     },
     {
       "rows": [
-        "1810s",
-        "Battles",
-        "Modern Countries",
-        "Ships"
+        "2018",
+        "2019",
+        "Books",
+        "First in Release Order"
       ],
       "cols": [
-        "Cities",
-        "Mentioned in We Didn't Start the Fire",
-        "Things Italian",
-        "Things Spanish"
+        "Disney",
+        "Horror Stories",
+        "Luxury Ships",
+        "Period Stories"
       ],
-      "hash": "193459788659b2f10557173f7dfa152074e7ee2aedbf17d0fd52c688f6a37d9f",
-      "timestamp": "2025-12-29 05:18:58",
-      "qualityScore": 7.94
+      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
+      "timestamp": "2025-12-28 18:16:22",
+      "qualityScore": 14.539999999999996
     }
   ],
   "message": "Puzzle saved successfully!"

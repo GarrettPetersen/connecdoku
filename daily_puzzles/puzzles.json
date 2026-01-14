@@ -7121,46 +7121,6 @@
   },
   {
     "rows": [
-      "1910s",
-      "Dinosaurs",
-      "Locations in Europe",
-      "Movies"
-    ],
-    "cols": [
-      "Companies",
-      "Musicians",
-      "Things Turkish",
-      "Women"
-    ],
-    "words": [
-      [
-        "Boeing",
-        "Debussy",
-        "The Armenian Genocide",
-        "The Unsinkable Molly Brown"
-      ],
-      [
-        "Penguin",
-        "Drake",
-        "Turkey",
-        "Phoenix"
-      ],
-      [
-        "Olympus",
-        "Berlin",
-        "Constantinople",
-        "Santa Maria"
-      ],
-      [
-        "Red",
-        "Beethoven",
-        "Troy",
-        "Cleopatra"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "1970s",
       "1986",
       "Ends with ITY",
@@ -7436,46 +7396,6 @@
         "Romeo",
         "Andrea Doria",
         "Battle of Lepanto"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "1990s",
-      "Colors",
-      "Marvel Characters",
-      "Omnivores"
-    ],
-    "cols": [
-      "2000s",
-      "Blue Things",
-      "Jurassic Period",
-      "Red Things"
-    ],
-    "words": [
-      [
-        "Andrea Bocelli",
-        "Blue Pill",
-        "Jurassic Park",
-        "Red Pill"
-      ],
-      [
-        "Silver",
-        "Cobalt",
-        "Coral",
-        "Red"
-      ],
-      [
-        "Spider-Man",
-        "Mystique",
-        "Black Widow",
-        "Iron Man"
-      ],
-      [
-        "Drake",
-        "Blue Jay",
-        "Beetle",
-        "Cardinal"
       ]
     ]
   },
@@ -7836,46 +7756,6 @@
         "Turkey",
         "Madagascar",
         "Chad"
-      ]
-    ]
-  },
-  {
-    "rows": [
-      "1970s",
-      "Greek Mythology",
-      "Photography Terms",
-      "Quaternary Period"
-    ],
-    "cols": [
-      "Greek Gods",
-      "Locations in Asia",
-      "Music",
-      "Superheroes"
-    ],
-    "words": [
-      [
-        "Poseidon",
-        "Kampuchea",
-        "Bohemian Rhapsody",
-        "Superman"
-      ],
-      [
-        "Athena",
-        "Troy",
-        "Hercules",
-        "Cyclops"
-      ],
-      [
-        "Olympus",
-        "Fuji",
-        "Canon",
-        "Flash"
-      ],
-      [
-        "Iris",
-        "Turkey",
-        "Beetle",
-        "Black Widow"
       ]
     ]
   },
@@ -8316,6 +8196,206 @@
         "Harry Potter and the Prisoner of Azkaban",
         "Die Hard with a Vengeance",
         "Avengers: Infinity War"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1940s",
+      "1970s",
+      "Carnivores",
+      "Mammals"
+    ],
+    "cols": [
+      "Fastest of its Type",
+      "Marvel Characters",
+      "Music",
+      "Starts with KIN"
+    ],
+    "words": [
+      [
+        "Flash",
+        "Captain America",
+        "Ella Fitzgerald",
+        "Kind Hearts and Coronets"
+      ],
+      [
+        "Concorde",
+        "Storm",
+        "Bohemian Rhapsody",
+        "Kindred"
+      ],
+      [
+        "Peregrine Falcon",
+        "Black Widow",
+        "Scorpion",
+        "King Ghidorah"
+      ],
+      [
+        "Greyhound",
+        "Beast",
+        "Monkey",
+        "King Kong"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "13th Century",
+      "Things Italian",
+      "Things Roman",
+      "Three Kingdoms Period"
+    ],
+    "cols": [
+      "Buildings",
+      "Epic Stories",
+      "Naval Battles",
+      "Real People"
+    ],
+    "words": [
+      [
+        "Old London Bridge",
+        "The Tale of the Heike",
+        "Battle of Yamen",
+        "Genghis Khan"
+      ],
+      [
+        "St. Peter's Basilica",
+        "The Divine Comedy",
+        "Battle of Lepanto",
+        "Galileo"
+      ],
+      [
+        "Hadrian's Wall",
+        "Commentarii de Bello Gallico",
+        "Battle of Actium",
+        "Julius Caesar"
+      ],
+      [
+        "Bronze Bird Terrace",
+        "Romance of the Three Kingdoms",
+        "Battle of Red Cliff",
+        "Cao Cao"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "16th Century",
+      "1920s",
+      "Cities",
+      "Things Russian"
+    ],
+    "cols": [
+      "Animal Terms",
+      "Drama Stories",
+      "Modern Rulers",
+      "Things German"
+    ],
+    "words": [
+      [
+        "Drake",
+        "Romeo",
+        "Elizabeth",
+        "Martin Luther"
+      ],
+      [
+        "Winnie-the-Pooh",
+        "The Great Gatsby",
+        "Emperor Taisho",
+        "Einstein"
+      ],
+      [
+        "Phoenix",
+        "Chicago",
+        "Victoria",
+        "Berlin"
+      ],
+      [
+        "Laika, Space Dog",
+        "War and Peace",
+        "Catherine",
+        "The Battle of Stalingrad"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1980",
+      "Best Picture Winners",
+      "Time Travel Stories",
+      "Video Games"
+    ],
+    "cols": [
+      "Ends with ING",
+      "Events",
+      "Second in Release Order",
+      "War Stories"
+    ],
+    "words": [
+      [
+        "The Shining",
+        "Mount St. Helens Eruption",
+        "The Empire Strikes Back",
+        "Kagemusha"
+      ],
+      [
+        "The Lord of the Rings: The Return of the King",
+        "Titanic",
+        "The Godfather Part II",
+        "Platoon"
+      ],
+      [
+        "Life, the Universe and Everything",
+        "The Philadelphia Experiment",
+        "Back to the Future Part II",
+        "Slaughterhouse-Five"
+      ],
+      [
+        "Elden Ring",
+        "Fallout",
+        "Red Dead Redemption 2",
+        "Call of Duty"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "2018",
+      "2019",
+      "Books",
+      "First in Release Order"
+    ],
+    "cols": [
+      "Cruise Ships",
+      "Disney",
+      "Horror Stories",
+      "Period Stories"
+    ],
+    "words": [
+      [
+        "Norwegian Bliss",
+        "Solo",
+        "Hereditary",
+        "Green Book"
+      ],
+      [
+        "Costa Smeralda",
+        "The Rise of Skywalker",
+        "Glass",
+        "Once Upon a Time in Hollywood"
+      ],
+      [
+        "Odyssey",
+        "Peter Pan",
+        "Dracula",
+        "War and Peace"
+      ],
+      [
+        "Queen Mary",
+        "Snow White and the Seven Dwarfs",
+        "Alien",
+        "A Fistful of Dollars"
       ]
     ]
   }
