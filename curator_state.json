@@ -1,5 +1,5 @@
 {
-  "curatedCount": 44,
+  "curatedCount": 49,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -8,171 +8,164 @@
   ],
   "currentPuzzle": {
     "rows": [
-      "2018",
-      "2019",
-      "Books",
-      "First in Release Order"
+      "15th Century",
+      "19th Century",
+      "Roman Republic",
+      "Song Dynasty"
     ],
     "cols": [
-      "Cruise Ships",
-      "Disney",
-      "Horror Stories",
-      "Period Stories"
+      "Battles",
+      "Military Leaders",
+      "Wars",
+      "Weapons"
     ],
-    "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
-    "timestamp": "2025-12-28 18:16:22",
-    "qualityScore": 15.609999999999996
+    "hash": "10bbb2f44e11a8e984578ddd96c3f7596c1c758168ba670edd025ceeda03816c",
+    "timestamp": "2025-11-24 20:09:50",
+    "qualityScore": 14.42
   },
   "viableGrid": [
     [
       [
-        "Norwegian Bliss"
+        "Battle of Agincourt",
+        "Battle of Tumu Fortress",
+        "Siege of Orléans"
       ],
       [
-        "Mary Poppins Returns",
-        "Solo"
+        "Henry V",
+        "Joan of Arc",
+        "Mehmed II",
+        "Timur"
       ],
       [
-        "Among Us",
-        "Hereditary"
+        "Hussite Wars",
+        "Ming–Vietnam War"
       ],
       [
-        "Green Book"
+        "Longbow"
       ]
     ],
     [
       [
-        "Costa Smeralda"
+        "Battle of Trafalgar",
+        "Gettysburg"
       ],
       [
-        "The Rise of Skywalker"
+        "Garfield",
+        "Grant",
+        "Harrison",
+        "Hayes",
+        "Helmuth von Moltke the Elder",
+        "Jackson",
+        "Jean Bernadotte",
+        "McKinley",
+        "Michel Ney",
+        "Napoleon Bonaparte",
+        "Robert E. Lee",
+        "Shaka Zulu",
+        "Taylor",
+        "Von Blucher",
+        "Wellington"
       ],
       [
-        "Glass"
+        "Dungan Revolt",
+        "The American Civil War",
+        "The Boer War",
+        "The Boxer Rebellion",
+        "The Crimean War",
+        "The Franco-Prussian War",
+        "The Hundred Days",
+        "The Indian Rebellion",
+        "The Napoleonic Wars",
+        "The Sepoy Mutiny",
+        "The Spanish-American War",
+        "The Taiping Rebellion"
       ],
       [
-        "Once Upon a Time in Hollywood"
+        "Davy Crockett",
+        "Minié ball"
       ]
     ],
     [
       [
-        "Odyssey"
+        "Battle of Actium",
+        "Battle of Alesia",
+        "Battle of Carrhae",
+        "Battle of Pharsalus",
+        "Battle of Philippi"
       ],
       [
-        "Peter Pan",
-        "The Fox and the Hound"
+        "Gaius Marius",
+        "Mark Antony",
+        "Pompey",
+        "Sulla"
       ],
       [
-        "Carrie",
-        "Dracula",
-        "Frankenstein",
-        "Hannibal",
-        "IT",
-        "Salem's Lot",
-        "The Shining",
-        "The Stand"
+        "Third Servile War"
       ],
       [
-        "12 Years a Slave",
-        "Les Misérables",
-        "Romance of the Three Kingdoms",
-        "The Tale of the Heike",
-        "The Three Musketeers",
-        "War and Peace"
+        "Gladius",
+        "Pilum",
+        "Scutum"
       ]
     ],
     [
       [
-        "Queen Mary"
+        "Battle of Yamen"
       ],
       [
-        "101 Dalmatians",
-        "Aladdin",
-        "Alice in Wonderland",
-        "Atlantis",
-        "Bambi",
-        "Beauty and the Beast",
-        "Big Hero 6",
-        "Brother Bear",
-        "Cinderella",
-        "Fantasia",
-        "Frozen",
-        "Hercules",
-        "Lady and the Tramp",
-        "Lilo & Stitch",
-        "Mary Poppins",
-        "Moana",
-        "Monsters, Inc.",
-        "Mulan",
-        "Pinocchio",
-        "Pirates of the Caribbean: The Curse of the Black Pearl",
-        "Pocahontas",
-        "Sleeping Beauty",
-        "Snow White and the Seven Dwarfs",
-        "The Emperor's New Groove",
-        "The Hunchback of Notre Dame",
-        "The Lion King",
-        "The Little Mermaid",
-        "The Many Adventures of Winnie the Pooh",
-        "The Parent Trap",
-        "The Rescuers",
-        "The Three Little Pigs",
-        "Wreck-It Ralph",
-        "Zootopia"
+        "Yue Fei"
       ],
       [
-        "Alien",
-        "The Terminator"
+        "Mongol Conquest of China"
       ],
       [
-        "A Fistful of Dollars",
-        "Red Dead Redemption"
+        "Gunpowder"
       ]
     ]
   ],
   "chosen": [
     [
-      "Norwegian Bliss",
-      "Solo",
-      "Hereditary",
-      "Green Book"
+      "Battle of Agincourt",
+      "Joan of Arc",
+      "Hussite Wars",
+      "Longbow"
     ],
     [
-      "Costa Smeralda",
-      "The Rise of Skywalker",
-      "Glass",
-      "Once Upon a Time in Hollywood"
+      "Battle of Trafalgar",
+      "Napoleon Bonaparte",
+      "The Napoleonic Wars",
+      "Minié ball"
     ],
     [
-      "Odyssey",
-      "Peter Pan",
-      "Dracula",
-      "War and Peace"
+      "Battle of Alesia",
+      "Mark Antony",
+      "Third Servile War",
+      "Pilum"
     ],
     [
-      "Queen Mary",
-      "Snow White and the Seven Dwarfs",
-      "Alien",
-      "A Fistful of Dollars"
+      "Battle of Yamen",
+      "Yue Fei",
+      "Mongol Conquest of China",
+      "Gunpowder"
     ]
   ],
   "usedWords": [
-    "Norwegian Bliss",
-    "Solo",
-    "Hereditary",
-    "Green Book",
-    "Costa Smeralda",
-    "The Rise of Skywalker",
-    "Glass",
-    "Once Upon a Time in Hollywood",
-    "Odyssey",
-    "Peter Pan",
-    "Dracula",
-    "War and Peace",
-    "Queen Mary",
-    "Snow White and the Seven Dwarfs",
-    "Alien",
-    "A Fistful of Dollars"
+    "Battle of Agincourt",
+    "Joan of Arc",
+    "Hussite Wars",
+    "Longbow",
+    "Battle of Trafalgar",
+    "Napoleon Bonaparte",
+    "The Napoleonic Wars",
+    "Minié ball",
+    "Battle of Alesia",
+    "Mark Antony",
+    "Third Servile War",
+    "Pilum",
+    "Battle of Yamen",
+    "Yue Fei",
+    "Mongol Conquest of China",
+    "Gunpowder"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -180,343 +173,343 @@
   "puzzles": [
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1890s",
+        "1930s",
+        "Ends with ENT",
+        "Things Greek"
       ],
       "cols": [
-        "Cruise Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "Classic Literature",
+        "Military Conflicts",
+        "Military Leaders",
+        "Movies"
       ],
-      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 15.609999999999996
+      "hash": "6465722d314bc52cfe1e2f97c5e53529b22a167b1569c36a9724c4ff5c174d88",
+      "timestamp": "2025-12-02 06:53:33",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "19th Century",
+        "Cities in USA",
+        "Countries",
+        "Musicians"
       ],
       "cols": [
-        "Disney",
-        "Horror Stories",
-        "Luxury Ships",
-        "Period Stories"
+        "2000s",
+        "Cold War",
+        "Ends with LES",
+        "Things Canadian"
       ],
-      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 14.539999999999996
+      "hash": "81ba97ff103e39eda6f88099d824b26a1e4df48d79cfec91233dba3f7f900cf1",
+      "timestamp": "2025-12-01 18:26:56",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "19th Century",
+        "Cities in USA",
+        "Countries",
+        "Musicians"
       ],
       "cols": [
-        "Civilian Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "2000s",
+        "Cold War",
+        "Starts with CHA",
+        "Things Canadian"
       ],
-      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
-      "timestamp": "2025-12-28 18:16:21",
-      "qualityScore": 14.279999999999998
+      "hash": "df161681ae3fe925cfefbf1bb9637097235dbcc5cfd6dfe4f69f4a96e8209d4e",
+      "timestamp": "2025-12-01 18:26:56",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "19th Century",
+        "Ends with ARY",
+        "Islands",
+        "Locations in North America"
       ],
       "cols": [
-        "Cruise Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "Cold War",
+        "Countries that No Longer Exist",
+        "Movies",
+        "Women"
       ],
-      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 15.609999999999996
+      "hash": "25c72a8d6ef4999b48794443a2d5345dcd76f9c3d30b5c06e0dc43e4ee8e7d62",
+      "timestamp": "2025-12-01 19:12:39",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "15th Century",
+        "19th Century",
+        "Roman Republic",
+        "Song Dynasty"
       ],
       "cols": [
-        "Disney",
-        "Horror Stories",
-        "Luxury Ships",
-        "Period Stories"
+        "Battles",
+        "Military Leaders",
+        "Wars",
+        "Weapons"
       ],
-      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 14.539999999999996
+      "hash": "10bbb2f44e11a8e984578ddd96c3f7596c1c758168ba670edd025ceeda03816c",
+      "timestamp": "2025-11-24 20:09:50",
+      "qualityScore": 14.42
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "15th Century",
+        "19th Century",
+        "Roman Republic",
+        "Song Dynasty"
       ],
       "cols": [
-        "Civilian Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "Military Leaders",
+        "Starts with BAT",
+        "Wars",
+        "Weapons"
       ],
-      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
-      "timestamp": "2025-12-28 18:16:21",
-      "qualityScore": 14.279999999999998
+      "hash": "61b891cd2354e54b5b206c89798dc14f99fcaad0b9fe3f37e61340a558cd8843",
+      "timestamp": "2025-11-24 20:09:50",
+      "qualityScore": 11.42
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1930s",
+        "Blind People",
+        "Cities in North America",
+        "Ends with HER"
       ],
       "cols": [
-        "Cruise Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "Military Leaders",
+        "Movies",
+        "Musicians",
+        "Women"
       ],
-      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 15.609999999999996
+      "hash": "b63687f9fdb2069ff2bda2f88db1549a9292f70d07bea7d093708b64868bbd39",
+      "timestamp": "2025-11-24 21:46:45",
+      "qualityScore": 8.46
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1930s",
+        "Blind People",
+        "Cities in North America",
+        "Starts with CHA"
       ],
       "cols": [
-        "Disney",
-        "Horror Stories",
-        "Luxury Ships",
-        "Period Stories"
+        "Military Leaders",
+        "Movies",
+        "Musicians",
+        "Women"
       ],
-      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 14.539999999999996
+      "hash": "9be488eb9606ac6e52f59a17e515add91e0b167bd05e6a1c335f27e054228eb1",
+      "timestamp": "2025-11-24 21:46:45",
+      "qualityScore": 8.46
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1930s",
+        "Blind People",
+        "Cities in North America",
+        "Starts with SHA"
       ],
       "cols": [
-        "Civilian Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "Military Leaders",
+        "Movies",
+        "Musicians",
+        "Women"
       ],
-      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
-      "timestamp": "2025-12-28 18:16:21",
-      "qualityScore": 14.279999999999998
+      "hash": "e098e591a8ea5b4c24075c53fbe7f2e6b5e8cab0852e9508edc363d800e64c4f",
+      "timestamp": "2025-11-24 21:46:45",
+      "qualityScore": 8.46
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1930s",
+        "Blind People",
+        "Cities in North America",
+        "Ends with NCE"
       ],
       "cols": [
-        "Cruise Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "19th Century",
+        "Military Leaders",
+        "Movies",
+        "Musicians"
       ],
-      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 15.609999999999996
+      "hash": "50455749096e1f55ece743566cfa534b9ea55015d26d84dfc6259bf0478e2494",
+      "timestamp": "2025-11-24 21:46:45",
+      "qualityScore": 8.34
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1930s",
+        "Blind People",
+        "Cities in North America",
+        "Starts with CHA"
       ],
       "cols": [
-        "Disney",
-        "Horror Stories",
-        "Luxury Ships",
-        "Period Stories"
+        "19th Century",
+        "Military Leaders",
+        "Movies",
+        "Musicians"
       ],
-      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 14.539999999999996
+      "hash": "c0acfda241fab0ce88a1882af907b29437f572b4e5cff6376259da34bb67e88e",
+      "timestamp": "2025-11-24 21:46:45",
+      "qualityScore": 8.34
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1810s",
+        "1880s",
+        "Movies",
+        "Things Greek"
       ],
       "cols": [
-        "Civilian Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "Ends with NCE",
+        "Military Leaders",
+        "Mountains",
+        "Women"
       ],
-      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
-      "timestamp": "2025-12-28 18:16:21",
-      "qualityScore": 14.279999999999998
+      "hash": "6baebae73e74abf3cd47cc3ef56308e33918849e1eec05312d090886e510bfbe",
+      "timestamp": "2025-12-02 08:36:48",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "19th Century",
+        "Countries in Europe",
+        "Islands",
+        "Military Conflicts"
       ],
       "cols": [
-        "Cruise Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "Ends with AND",
+        "Locations in North America",
+        "Things Greek",
+        "Things Spanish"
       ],
-      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 15.609999999999996
+      "hash": "f1df54f30010e68db7217d98348f78e371dfd771f5b2fc9da76ea05f4f11f4ee",
+      "timestamp": "2025-12-01 18:49:29",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "19th Century",
+        "Countries in Europe",
+        "Islands",
+        "Military Leaders"
       ],
       "cols": [
-        "Disney",
-        "Horror Stories",
-        "Luxury Ships",
-        "Period Stories"
+        "Cold War",
+        "Locations in North America",
+        "Things Greek",
+        "Things Spanish"
       ],
-      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 14.539999999999996
+      "hash": "ef3c916f6ed87a852c362f939830bb1f55f05f101f9a7a1b618cf63b0a4a162d",
+      "timestamp": "2025-12-01 18:49:29",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1810s",
+        "Hundred Years' War",
+        "Locations in North America",
+        "Musicians"
       ],
       "cols": [
-        "Civilian Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "18th Century",
+        "Cities in Europe",
+        "Ends with NCE",
+        "Women"
       ],
-      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
-      "timestamp": "2025-12-28 18:16:21",
-      "qualityScore": 14.279999999999998
+      "hash": "4d2e9124bcaab42a5dd2c16c6450ef175d60d4e3d917e62ee415411665a8a11b",
+      "timestamp": "2025-11-24 08:29:54",
+      "qualityScore": 12.27
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1910s",
+        "Locations in Asia",
+        "Locations in North America",
+        "Things Spanish"
       ],
       "cols": [
-        "Cruise Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "19th Century",
+        "Ends with NIA",
+        "Movies",
+        "Things That Fly"
       ],
-      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 15.609999999999996
+      "hash": "e4254081cd1484ff165face25bd5d183de13b5ce59e778390efd640afe2eab81",
+      "timestamp": "2025-12-01 18:15:23",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1910s",
+        "2000s",
+        "Locations in North America",
+        "Starts with MON"
       ],
       "cols": [
-        "Disney",
-        "Horror Stories",
-        "Luxury Ships",
-        "Period Stories"
+        "Military Conflicts",
+        "Movies",
+        "Things Canadian",
+        "US Presidents"
       ],
-      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 14.539999999999996
+      "hash": "b725b59c5cd88ff98205c0d7665fcc5dc0baa87dc93644d289e3c3696e2758e4",
+      "timestamp": "2025-12-02 10:11:16",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1910s",
+        "2000s",
+        "Locations in North America",
+        "Starts with MON"
       ],
       "cols": [
-        "Civilian Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "Military Conflicts",
+        "Movies",
+        "Things Canadian",
+        "Women"
       ],
-      "hash": "af0934ab994c557650df397965b2602d979caef653c3dcad01d41392b3dcedc2",
-      "timestamp": "2025-12-28 18:16:21",
-      "qualityScore": 14.279999999999998
+      "hash": "041b162ef41ddb28795a45fe9d06c827ce6e3d2991166647984e7c3ceef03a13",
+      "timestamp": "2025-12-02 10:11:16",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1910s",
+        "2000s",
+        "Locations in North America",
+        "Starts with MON"
       ],
       "cols": [
-        "Cruise Ships",
-        "Disney",
-        "Horror Stories",
-        "Period Stories"
+        "Movies",
+        "Things Canadian",
+        "US Presidents",
+        "Wars"
       ],
-      "hash": "45d33027ccdeeb71e11226fb557162e82f8f4ac8aa82ae5e8d83824e11ce2e02",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 15.609999999999996
+      "hash": "b315c7d1837a9d4d1b0345aacd144e856041508b5517921d378b433195c983b0",
+      "timestamp": "2025-12-02 10:11:16",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "2018",
-        "2019",
-        "Books",
-        "First in Release Order"
+        "1910s",
+        "2000s",
+        "Locations in North America",
+        "Starts with MON"
       ],
       "cols": [
-        "Disney",
-        "Horror Stories",
-        "Luxury Ships",
-        "Period Stories"
+        "Movies",
+        "Things Canadian",
+        "Wars",
+        "Women"
       ],
-      "hash": "32cdac76e60b31ab9f1924db3c4a4f4fffcc5edb3c8edbc4097b5221d239debe",
-      "timestamp": "2025-12-28 18:16:22",
-      "qualityScore": 14.539999999999996
+      "hash": "444ca7aadb810e411267f1c6c3de3cc826eec001105177c925b009b18f98c005",
+      "timestamp": "2025-12-02 10:11:16",
+      "qualityScore": 0
     }
   ],
   "message": "Puzzle saved successfully!"
