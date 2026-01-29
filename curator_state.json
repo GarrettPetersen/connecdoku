@@ -1,5 +1,5 @@
 {
-  "curatedCount": 49,
+  "curatedCount": 54,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -8,164 +8,160 @@
   ],
   "currentPuzzle": {
     "rows": [
-      "15th Century",
-      "19th Century",
-      "Roman Republic",
-      "Song Dynasty"
+      "1970s",
+      "1992",
+      "Ends with NCE",
+      "Movies featuring Hugh Jackman"
     ],
     "cols": [
-      "Battles",
-      "Military Leaders",
-      "Wars",
-      "Weapons"
+      "Fantasy Stories",
+      "Music",
+      "Romance Stories",
+      "Sequels"
     ],
-    "hash": "10bbb2f44e11a8e984578ddd96c3f7596c1c758168ba670edd025ceeda03816c",
-    "timestamp": "2025-11-24 20:09:50",
-    "qualityScore": 14.42
+    "hash": "f8205b4777d1eb7c459e53887dcf8ee3aaacb9333afb2d90678f60417d976cfa",
+    "timestamp": "2025-11-24 10:50:24",
+    "qualityScore": 10.739999999999998
   },
   "viableGrid": [
     [
       [
-        "Battle of Agincourt",
-        "Battle of Tumu Fortress",
-        "Siege of Orléans"
+        "The Silmarillion"
       ],
       [
-        "Henry V",
-        "Joan of Arc",
-        "Mehmed II",
-        "Timur"
+        "Another Brick in the Wall",
+        "Apollo",
+        "Bee Gees",
+        "Bob Dylan",
+        "Bohemian Rhapsody",
+        "Boston",
+        "Bridge Over Troubled Water",
+        "Cabaret",
+        "Comfortably Numb",
+        "Dancing Queen",
+        "Dark Side of the Moon",
+        "Fiddler on the Roof",
+        "George",
+        "Godspell",
+        "Hotel California",
+        "Imagine",
+        "Jesus Christ Superstar",
+        "John",
+        "Miles Davis",
+        "Paul",
+        "Punk Rock",
+        "Ray Charles",
+        "Ringo",
+        "Rocky Horror Picture Show",
+        "Rush",
+        "Stairway to Heaven",
+        "Stayin' Alive",
+        "Stevie Wonder",
+        "Superstition",
+        "The Police",
+        "The Wall",
+        "Thelonious Monk",
+        "Waterloo"
       ],
       [
-        "Hussite Wars",
-        "Ming–Vietnam War"
+        "Annie Hall",
+        "Manhattan"
       ],
       [
-        "Longbow"
+        "The Godfather Part II"
       ]
     ],
     [
       [
-        "Battle of Trafalgar",
-        "Gettysburg"
+        "Porco Rosso"
       ],
       [
-        "Garfield",
-        "Grant",
-        "Harrison",
-        "Hayes",
-        "Helmuth von Moltke the Elder",
-        "Jackson",
-        "Jean Bernadotte",
-        "McKinley",
-        "Michel Ney",
-        "Napoleon Bonaparte",
-        "Robert E. Lee",
-        "Shaka Zulu",
-        "Taylor",
-        "Von Blucher",
-        "Wellington"
+        "Creep",
+        "Under the Bridge"
       ],
       [
-        "Dungan Revolt",
-        "The American Civil War",
-        "The Boer War",
-        "The Boxer Rebellion",
-        "The Crimean War",
-        "The Franco-Prussian War",
-        "The Hundred Days",
-        "The Indian Rebellion",
-        "The Napoleonic Wars",
-        "The Sepoy Mutiny",
-        "The Spanish-American War",
-        "The Taiping Rebellion"
+        "Howards End"
       ],
       [
-        "Davy Crockett",
-        "Minié ball"
+        "Alien 3",
+        "Home Alone 2: Lost in New York",
+        "Mostly Harmless"
       ]
     ],
     [
       [
-        "Battle of Actium",
-        "Battle of Alesia",
-        "Battle of Carrhae",
-        "Battle of Pharsalus",
-        "Battle of Philippi"
+        "The Little Prince"
       ],
       [
-        "Gaius Marius",
-        "Mark Antony",
-        "Pompey",
-        "Sulla"
+        "Beyonce",
+        "Prince"
       ],
       [
-        "Third Servile War"
+        "The Age of Innocence"
       ],
       [
-        "Gladius",
-        "Pilum",
-        "Scutum"
+        "Die Hard with a Vengeance"
       ]
     ],
     [
       [
-        "Battle of Yamen"
+        "Rise of the Guardians"
       ],
       [
-        "Yue Fei"
+        "Les Misérables",
+        "The Greatest Showman"
       ],
       [
-        "Mongol Conquest of China"
+        "Kate & Leopold"
       ],
       [
-        "Gunpowder"
+        "X-Men: Days of Future Past"
       ]
     ]
   ],
   "chosen": [
     [
-      "Battle of Agincourt",
-      "Joan of Arc",
-      "Hussite Wars",
-      "Longbow"
+      "The Silmarillion",
+      "Bohemian Rhapsody",
+      "Annie Hall",
+      "The Godfather Part II"
     ],
     [
-      "Battle of Trafalgar",
-      "Napoleon Bonaparte",
-      "The Napoleonic Wars",
-      "Minié ball"
+      "Porco Rosso",
+      "Creep",
+      "Howards End",
+      "Home Alone 2: Lost in New York"
     ],
     [
-      "Battle of Alesia",
-      "Mark Antony",
-      "Third Servile War",
-      "Pilum"
+      "The Little Prince",
+      "Prince",
+      "The Age of Innocence",
+      "Die Hard with a Vengeance"
     ],
     [
-      "Battle of Yamen",
-      "Yue Fei",
-      "Mongol Conquest of China",
-      "Gunpowder"
+      "Rise of the Guardians",
+      "The Greatest Showman",
+      "Kate & Leopold",
+      "X-Men: Days of Future Past"
     ]
   ],
   "usedWords": [
-    "Battle of Agincourt",
-    "Joan of Arc",
-    "Hussite Wars",
-    "Longbow",
-    "Battle of Trafalgar",
-    "Napoleon Bonaparte",
-    "The Napoleonic Wars",
-    "Minié ball",
-    "Battle of Alesia",
-    "Mark Antony",
-    "Third Servile War",
-    "Pilum",
-    "Battle of Yamen",
-    "Yue Fei",
-    "Mongol Conquest of China",
-    "Gunpowder"
+    "The Silmarillion",
+    "Bohemian Rhapsody",
+    "Annie Hall",
+    "The Godfather Part II",
+    "Porco Rosso",
+    "Creep",
+    "Howards End",
+    "Home Alone 2: Lost in New York",
+    "The Little Prince",
+    "Prince",
+    "The Age of Innocence",
+    "Die Hard with a Vengeance",
+    "Rise of the Guardians",
+    "The Greatest Showman",
+    "Kate & Leopold",
+    "X-Men: Days of Future Past"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -173,343 +169,224 @@
   "puzzles": [
     {
       "rows": [
-        "1890s",
-        "1930s",
-        "Ends with ENT",
-        "Things Greek"
-      ],
-      "cols": [
-        "Classic Literature",
-        "Military Conflicts",
-        "Military Leaders",
-        "Movies"
-      ],
-      "hash": "6465722d314bc52cfe1e2f97c5e53529b22a167b1569c36a9724c4ff5c174d88",
-      "timestamp": "2025-12-02 06:53:33",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "19th Century",
-        "Cities in USA",
-        "Countries",
-        "Musicians"
-      ],
-      "cols": [
-        "2000s",
-        "Cold War",
-        "Ends with LES",
-        "Things Canadian"
-      ],
-      "hash": "81ba97ff103e39eda6f88099d824b26a1e4df48d79cfec91233dba3f7f900cf1",
-      "timestamp": "2025-12-01 18:26:56",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "19th Century",
-        "Cities in USA",
-        "Countries",
-        "Musicians"
-      ],
-      "cols": [
-        "2000s",
-        "Cold War",
-        "Starts with CHA",
-        "Things Canadian"
-      ],
-      "hash": "df161681ae3fe925cfefbf1bb9637097235dbcc5cfd6dfe4f69f4a96e8209d4e",
-      "timestamp": "2025-12-01 18:26:56",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "19th Century",
-        "Ends with ARY",
-        "Islands",
-        "Locations in North America"
-      ],
-      "cols": [
-        "Cold War",
-        "Countries that No Longer Exist",
-        "Movies",
-        "Women"
-      ],
-      "hash": "25c72a8d6ef4999b48794443a2d5345dcd76f9c3d30b5c06e0dc43e4ee8e7d62",
-      "timestamp": "2025-12-01 19:12:39",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "15th Century",
-        "19th Century",
-        "Roman Republic",
-        "Song Dynasty"
-      ],
-      "cols": [
-        "Battles",
-        "Military Leaders",
-        "Wars",
-        "Weapons"
-      ],
-      "hash": "10bbb2f44e11a8e984578ddd96c3f7596c1c758168ba670edd025ceeda03816c",
-      "timestamp": "2025-11-24 20:09:50",
-      "qualityScore": 14.42
-    },
-    {
-      "rows": [
-        "15th Century",
-        "19th Century",
-        "Roman Republic",
-        "Song Dynasty"
-      ],
-      "cols": [
-        "Military Leaders",
-        "Starts with BAT",
-        "Wars",
-        "Weapons"
-      ],
-      "hash": "61b891cd2354e54b5b206c89798dc14f99fcaad0b9fe3f37e61340a558cd8843",
-      "timestamp": "2025-11-24 20:09:50",
-      "qualityScore": 11.42
-    },
-    {
-      "rows": [
-        "1930s",
-        "Blind People",
+        "1940s",
         "Cities in North America",
-        "Ends with HER"
+        "Comedy Stories",
+        "Stories about Families"
       ],
       "cols": [
-        "Military Leaders",
-        "Movies",
-        "Musicians",
-        "Women"
+        "1970s",
+        "Crime Stories",
+        "Red Things",
+        "Starts with LIT"
       ],
-      "hash": "b63687f9fdb2069ff2bda2f88db1549a9292f70d07bea7d093708b64868bbd39",
-      "timestamp": "2025-11-24 21:46:45",
-      "qualityScore": 8.46
+      "hash": "2f0cc25a50ec008ee9dd26510b29136823d095588f89433c198c9c7e204ee632",
+      "timestamp": "2025-11-25 00:27:39",
+      "qualityScore": 6.38
     },
     {
       "rows": [
-        "1930s",
-        "Blind People",
-        "Cities in North America",
-        "Starts with CHA"
+        "1940s",
+        "1970s",
+        "Crime Stories",
+        "Red Things"
       ],
       "cols": [
-        "Military Leaders",
-        "Movies",
-        "Musicians",
-        "Women"
+        "Comedy Stories",
+        "Ends with MAN",
+        "Locations in North America",
+        "Stories about Families"
       ],
-      "hash": "9be488eb9606ac6e52f59a17e515add91e0b167bd05e6a1c335f27e054228eb1",
-      "timestamp": "2025-11-24 21:46:45",
-      "qualityScore": 8.46
+      "hash": "03ed797cb8ae3ee38dfac502d4ad348bbe884f82205ca6c0acbea88f4fa62bdd",
+      "timestamp": "2025-11-24 13:20:37",
+      "qualityScore": 5.77
     },
     {
       "rows": [
-        "1930s",
-        "Blind People",
-        "Cities in North America",
-        "Starts with SHA"
-      ],
-      "cols": [
-        "Military Leaders",
-        "Movies",
-        "Musicians",
-        "Women"
-      ],
-      "hash": "e098e591a8ea5b4c24075c53fbe7f2e6b5e8cab0852e9508edc363d800e64c4f",
-      "timestamp": "2025-11-24 21:46:45",
-      "qualityScore": 8.46
-    },
-    {
-      "rows": [
-        "1930s",
-        "Blind People",
-        "Cities in North America",
-        "Ends with NCE"
-      ],
-      "cols": [
-        "19th Century",
-        "Military Leaders",
-        "Movies",
-        "Musicians"
-      ],
-      "hash": "50455749096e1f55ece743566cfa534b9ea55015d26d84dfc6259bf0478e2494",
-      "timestamp": "2025-11-24 21:46:45",
-      "qualityScore": 8.34
-    },
-    {
-      "rows": [
-        "1930s",
-        "Blind People",
-        "Cities in North America",
-        "Starts with CHA"
-      ],
-      "cols": [
-        "19th Century",
-        "Military Leaders",
-        "Movies",
-        "Musicians"
-      ],
-      "hash": "c0acfda241fab0ce88a1882af907b29437f572b4e5cff6376259da34bb67e88e",
-      "timestamp": "2025-11-24 21:46:45",
-      "qualityScore": 8.34
-    },
-    {
-      "rows": [
-        "1810s",
-        "1880s",
-        "Movies",
-        "Things Greek"
-      ],
-      "cols": [
-        "Ends with NCE",
-        "Military Leaders",
-        "Mountains",
-        "Women"
-      ],
-      "hash": "6baebae73e74abf3cd47cc3ef56308e33918849e1eec05312d090886e510bfbe",
-      "timestamp": "2025-12-02 08:36:48",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "19th Century",
+        "1970s",
+        "Archipelagos",
         "Countries in Europe",
-        "Islands",
         "Military Conflicts"
       ],
       "cols": [
+        "Cold War",
         "Ends with AND",
         "Locations in North America",
-        "Things Greek",
         "Things Spanish"
       ],
-      "hash": "f1df54f30010e68db7217d98348f78e371dfd771f5b2fc9da76ea05f4f11f4ee",
-      "timestamp": "2025-12-01 18:49:29",
+      "hash": "8d5b4eb6fc6ae8fefa326632663ce913301badc082c2deebf08786d560fedfb0",
+      "timestamp": "2025-11-24 16:53:36",
+      "qualityScore": 6.24
+    },
+    {
+      "rows": [
+        "1970s",
+        "Archipelagos",
+        "Countries in Europe",
+        "Islands"
+      ],
+      "cols": [
+        "Countries that No Longer Exist",
+        "Ends with AND",
+        "Locations in North America",
+        "Things Spanish"
+      ],
+      "hash": "b6e6f9cd63c6f09669365f169e0531905c15f8ea8fbaaafded8ce8ac587552ba",
+      "timestamp": "2025-11-24 16:53:35",
+      "qualityScore": 5.57
+    },
+    {
+      "rows": [
+        "1940s",
+        "Carnivores",
+        "Crime Stories",
+        "Mammals"
+      ],
+      "cols": [
+        "1970s",
+        "Black and White",
+        "Music",
+        "Superheroes"
+      ],
+      "hash": "2fb4932e2fad6442c6bbc10363474683ac37818d170fc773b4cbaee6076cc86e",
+      "timestamp": "2025-11-25 00:12:04",
+      "qualityScore": 6.78
+    },
+    {
+      "rows": [
+        "1990",
+        "2001",
+        "Classic Literature",
+        "Movies featuring Johnny Depp"
+      ],
+      "cols": [
+        "Crime Stories",
+        "First in Internal Chronology",
+        "Romance Stories",
+        "Second in Internal Chronology"
+      ],
+      "hash": "0633eb65cdb8b4624d349a6f8968d88aaff7574f33d3fbae55b701fd4e0f7c7a",
+      "timestamp": "2025-12-02 07:21:43",
       "qualityScore": 0
     },
     {
       "rows": [
-        "19th Century",
-        "Countries in Europe",
+        "1930s",
+        "1940s",
+        "Carnivores",
+        "Crime Stories"
+      ],
+      "cols": [
+        "Black and White",
+        "Classic Literature",
+        "Music",
+        "Superheroes"
+      ],
+      "hash": "499194cac696c08204bddd5faeae4f26da46449f53ca371ff92e34d6aa23e8cb",
+      "timestamp": "2025-12-02 06:19:29",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1990",
+        "Classic Literature",
+        "Comedy Stories",
+        "Music"
+      ],
+      "cols": [
+        "Ends with ERS",
+        "Romance Stories",
+        "Second in Internal Chronology",
+        "Stories about Families"
+      ],
+      "hash": "daa28398210c42f99159f924b7a3827f3f857101d21c58fc881c44e1eba79a71",
+      "timestamp": "2025-12-02 08:16:31",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1940s",
+        "Carnivores",
+        "Crime Stories",
+        "Mammals"
+      ],
+      "cols": [
+        "1970s",
+        "Black and White",
+        "Music",
+        "Superheroes"
+      ],
+      "hash": "2fb4932e2fad6442c6bbc10363474683ac37818d170fc773b4cbaee6076cc86e",
+      "timestamp": "2025-11-25 00:12:04",
+      "qualityScore": 6.78
+    },
+    {
+      "rows": [
+        "1986",
+        "1992",
+        "Ends with NCE",
+        "First in Internal Chronology"
+      ],
+      "cols": [
+        "Crime Stories",
+        "Fantasy Stories",
+        "Music",
+        "Sequels"
+      ],
+      "hash": "690b3aeff84d20fbb62e258bb98744ed75e21439ad197fa8eedf9e801c7039f7",
+      "timestamp": "2025-12-01 16:15:24",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1970s",
+        "Ends with AND",
+        "Ming Dynasty",
+        "Things Spanish"
+      ],
+      "cols": [
+        "Fantasy Stories",
         "Islands",
-        "Military Leaders"
+        "Military Conflicts",
+        "Royalty"
+      ],
+      "hash": "8ac9bc55dca49ccb98279917802eeaa884c80d567d988bb7cb9b732a730a16e8",
+      "timestamp": "2025-11-24 19:14:31",
+      "qualityScore": 7
+    },
+    {
+      "rows": [
+        "1970s",
+        "1992",
+        "Ends with NCE",
+        "Movies featuring Hugh Jackman"
+      ],
+      "cols": [
+        "Fantasy Stories",
+        "Music",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "hash": "f8205b4777d1eb7c459e53887dcf8ee3aaacb9333afb2d90678f60417d976cfa",
+      "timestamp": "2025-11-24 10:50:24",
+      "qualityScore": 10.739999999999998
+    },
+    {
+      "rows": [
+        "1940s",
+        "1990",
+        "Ends with ENT",
+        "Sequels"
       ],
       "cols": [
         "Cold War",
-        "Locations in North America",
-        "Things Greek",
-        "Things Spanish"
+        "Comedy Stories",
+        "Crime Stories",
+        "Music"
       ],
-      "hash": "ef3c916f6ed87a852c362f939830bb1f55f05f101f9a7a1b618cf63b0a4a162d",
-      "timestamp": "2025-12-01 18:49:29",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1810s",
-        "Hundred Years' War",
-        "Locations in North America",
-        "Musicians"
-      ],
-      "cols": [
-        "18th Century",
-        "Cities in Europe",
-        "Ends with NCE",
-        "Women"
-      ],
-      "hash": "4d2e9124bcaab42a5dd2c16c6450ef175d60d4e3d917e62ee415411665a8a11b",
-      "timestamp": "2025-11-24 08:29:54",
-      "qualityScore": 12.27
-    },
-    {
-      "rows": [
-        "1910s",
-        "Locations in Asia",
-        "Locations in North America",
-        "Things Spanish"
-      ],
-      "cols": [
-        "19th Century",
-        "Ends with NIA",
-        "Movies",
-        "Things That Fly"
-      ],
-      "hash": "e4254081cd1484ff165face25bd5d183de13b5ce59e778390efd640afe2eab81",
-      "timestamp": "2025-12-01 18:15:23",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1910s",
-        "2000s",
-        "Locations in North America",
-        "Starts with MON"
-      ],
-      "cols": [
-        "Military Conflicts",
-        "Movies",
-        "Things Canadian",
-        "US Presidents"
-      ],
-      "hash": "b725b59c5cd88ff98205c0d7665fcc5dc0baa87dc93644d289e3c3696e2758e4",
-      "timestamp": "2025-12-02 10:11:16",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1910s",
-        "2000s",
-        "Locations in North America",
-        "Starts with MON"
-      ],
-      "cols": [
-        "Military Conflicts",
-        "Movies",
-        "Things Canadian",
-        "Women"
-      ],
-      "hash": "041b162ef41ddb28795a45fe9d06c827ce6e3d2991166647984e7c3ceef03a13",
-      "timestamp": "2025-12-02 10:11:16",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1910s",
-        "2000s",
-        "Locations in North America",
-        "Starts with MON"
-      ],
-      "cols": [
-        "Movies",
-        "Things Canadian",
-        "US Presidents",
-        "Wars"
-      ],
-      "hash": "b315c7d1837a9d4d1b0345aacd144e856041508b5517921d378b433195c983b0",
-      "timestamp": "2025-12-02 10:11:16",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1910s",
-        "2000s",
-        "Locations in North America",
-        "Starts with MON"
-      ],
-      "cols": [
-        "Movies",
-        "Things Canadian",
-        "Wars",
-        "Women"
-      ],
-      "hash": "444ca7aadb810e411267f1c6c3de3cc826eec001105177c925b009b18f98c005",
-      "timestamp": "2025-12-02 10:11:16",
-      "qualityScore": 0
+      "hash": "a1866959363359836dd1ee42d9b66f15a1be23a3c6dcb26ba5ebf9ac8d991a77",
+      "timestamp": "2025-11-24 17:56:50",
+      "qualityScore": 7.829999999999999
     }
   ],
   "message": "Puzzle saved successfully!"
