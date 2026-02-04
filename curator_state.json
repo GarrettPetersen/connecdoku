@@ -1,5 +1,5 @@
 {
-  "curatedCount": 59,
+  "curatedCount": 68,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -9,134 +9,157 @@
   "currentPuzzle": {
     "rows": [
       "17th Century",
-      "Cities",
-      "Fictional People",
-      "Starts with CHA"
+      "1870s",
+      "Things British",
+      "Things Iranian"
     ],
     "cols": [
-      "Age of Sail",
-      "Musicians",
-      "Things Chinese",
-      "Things French"
+      "Military Leaders",
+      "Religious Figures",
+      "Scientists",
+      "Wars"
     ],
-    "hash": "d3a1906b3e39bbec907e4437c7c2e210818052a003337e3fbc6c0354cf197773",
-    "timestamp": "2025-11-24 15:42:02",
-    "qualityScore": 6.140000000000001
+    "hash": "ca3c51e05974a38e2ac8329201e9fc178d0cd75938e0aec0d48eb17c16c668fa",
+    "timestamp": "2025-12-28 19:29:05",
+    "qualityScore": 13.95
   },
   "viableGrid": [
     [
       [
-        "Mayflower"
-      ],
-      [
-        "Bach",
-        "Handel"
-      ],
-      [
-        "Ming",
-        "Qing"
-      ],
-      [
-        "I think, therefore I am",
-        "L'etat c'est moi",
-        "Philip",
+        "Gustavus Adolphus",
+        "Maurice of Nassau",
         "Sébastien Le Prestre de Vauban"
+      ],
+      [
+        "Philip"
+      ],
+      [
+        "Galileo",
+        "Kepler"
+      ],
+      [
+        "Bohemian Revolt",
+        "The Thirty Years War"
       ]
     ],
     [
       [
-        "Victoria"
+        "Grant",
+        "Hayes"
       ],
       [
-        "Berlin",
-        "Boston"
+        "Ellen G. White",
+        "Mary Baker Eddy"
       ],
       [
-        "Beijing"
+        "Alexander Graham Bell",
+        "Robert Koch"
       ],
       [
-        "Bordeaux",
-        "Paris"
+        "Dungan Revolt",
+        "The Franco-Prussian War"
       ]
     ],
     [
       [
-        "Bellerophon"
+        "Captain Smith",
+        "Edward III",
+        "Henry V",
+        "J.F.C. Fuller",
+        "Montgomery",
+        "The Black Prince",
+        "Wellington",
+        "William the Conqueror",
+        "Winston Churchill"
       ],
       [
-        "Shaggy"
+        "John Wesley",
+        "Paul"
       ],
       [
-        "The Killer"
+        "Darwin",
+        "Dirac",
+        "Edward Jenner",
+        "Faraday",
+        "Hawking",
+        "Joseph Lister"
       ],
       [
-        "Belle",
-        "Carmen",
-        "The Count of Monte Cristo",
-        "The Little Prince"
+        "The American Revolution",
+        "The Boer War",
+        "The Crimean War",
+        "The Hundred Years War",
+        "The Indian Rebellion",
+        "The Mau Mau Uprising",
+        "The Napoleonic Wars",
+        "The Peasants' Revolt",
+        "The Sepoy Mutiny",
+        "The Seven Years' War",
+        "The Spanish Armada",
+        "Total War",
+        "World War I",
+        "World War II"
       ]
     ],
     [
       [
-        "Challenger"
+        "Cyrus the Great"
       ],
       [
-        "Charlie Parker"
+        "Mani",
+        "Zoroaster"
       ],
       [
-        "Char Siu"
+        "Avicenna"
       ],
       [
-        "Champagne",
-        "Charlemagne",
-        "Charles V",
-        "Charlotte Corday"
+        "The Iran-Iraq War"
       ]
     ]
   ],
   "chosen": [
     [
-      "Mayflower",
-      "Bach",
-      "Ming",
-      "I think, therefore I am"
+      "Gustavus Adolphus",
+      "Philip",
+      "Galileo",
+      "The Thirty Years War"
     ],
     [
-      "Victoria",
-      "Berlin",
-      "Beijing",
-      "Bordeaux"
+      "Grant",
+      "Mary Baker Eddy",
+      "Alexander Graham Bell",
+      "The Franco-Prussian War"
     ],
     [
-      "Bellerophon",
-      "Shaggy",
-      "The Killer",
-      "Belle"
+      "Winston Churchill",
+      "John Wesley",
+      "Darwin",
+      "World War II"
     ],
     [
-      "Challenger",
-      "Charlie Parker",
-      "Char Siu",
-      "Champagne"
+      "Cyrus the Great",
+      "Zoroaster",
+      "Avicenna",
+      "The Iran-Iraq War"
     ]
   ],
   "usedWords": [
-    "Mayflower",
-    "Bach",
-    "Ming",
-    "I think, therefore I am",
-    "Victoria",
-    "Berlin",
-    "Beijing",
-    "Bordeaux",
-    "Bellerophon",
-    "Shaggy",
-    "The Killer",
-    "Belle",
-    "Challenger",
-    "Charlie Parker",
-    "Char Siu",
-    "Champagne"
+    "Gustavus Adolphus",
+    "Philip",
+    "Galileo",
+    "The Thirty Years War",
+    "Grant",
+    "Mary Baker Eddy",
+    "Alexander Graham Bell",
+    "The Franco-Prussian War",
+    "Winston Churchill",
+    "John Wesley",
+    "Darwin",
+    "World War II",
+    "Cyrus the Great",
+    "Zoroaster",
+    "Avicenna",
+    "The Iran-Iraq War"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -144,343 +167,343 @@
   "puzzles": [
     {
       "rows": [
-        "1986",
-        "1990",
-        "Ends with TER",
-        "Things Italian"
+        "1950s",
+        "2001",
+        "Animal Terms",
+        "Cities in USA"
       ],
       "cols": [
-        "Books",
-        "Second in Internal Chronology",
-        "Things Chinese",
-        "Video Games"
+        "Military Leaders",
+        "Oscar Winners",
+        "Starts with MON",
+        "Things British"
       ],
-      "hash": "90c19e3b14ee65d2f86b222675dc94a96a68b54719113471ce5fee91d9eea754",
-      "timestamp": "2025-12-01 15:58:05",
-      "qualityScore": 0
+      "hash": "09405e79179be1b8bfc794275678bfe342f38c4f7416a203983522e106eb2de6",
+      "timestamp": "2025-12-29 06:06:11",
+      "qualityScore": 5.6000000000000005
     },
     {
       "rows": [
-        "1986",
-        "1990",
-        "Ends with TER",
-        "Things Italian"
+        "1950s",
+        "2001",
+        "Animal Terms",
+        "Cities in North America"
       ],
       "cols": [
-        "Books",
-        "Second in Release Order",
-        "Things Chinese",
-        "Video Games"
+        "Military Leaders",
+        "Oscar Winners",
+        "Starts with MON",
+        "Things British"
       ],
-      "hash": "b3b995c6975b97a94db0002a0857834bba8131c634d7e54ad4e1096ba3df153f",
-      "timestamp": "2025-12-01 15:58:05",
-      "qualityScore": 0
+      "hash": "1a1a503eaf65b24c44b46dd1217b07145d1e3635d5b559edb42b87abc4ecf4d4",
+      "timestamp": "2025-12-29 06:06:11",
+      "qualityScore": 5.44
     },
     {
       "rows": [
-        "17th Century",
-        "Red Things",
-        "Starts with BAT",
-        "White Things"
+        "1950s",
+        "2001",
+        "Animal Terms",
+        "Cities"
       ],
       "cols": [
-        "Cenozoic Era",
-        "Fictional People",
-        "Things French",
-        "Things Italian"
+        "Military Leaders",
+        "Oscar Winners",
+        "Starts with MON",
+        "Things British"
       ],
-      "hash": "ac4f38c6981f392efd11716071bac8f2330a572eadab7a24331d99d29ef0a550",
-      "timestamp": "2025-12-02 06:36:13",
-      "qualityScore": 0
+      "hash": "28b2bf975d5c2ba4657278a493ab8a84656839f2d82022face8a4073183a5a46",
+      "timestamp": "2025-12-29 06:06:11",
+      "qualityScore": 4.93
     },
     {
       "rows": [
-        "17th Century",
-        "Red Things",
-        "Starts with BAT",
-        "White Things"
+        "1950s",
+        "2001",
+        "Animal Terms",
+        "Cities"
       ],
       "cols": [
-        "Fictional People",
-        "Miocene Epoch",
-        "Things French",
-        "Things Italian"
+        "Military Leaders",
+        "Starts with MON",
+        "Things British",
+        "Things Japanese"
       ],
-      "hash": "d5dff1d858750b90215db62bdb253e5cfae64392ce0e197e34527a5a9c1e4a06",
-      "timestamp": "2025-12-02 06:36:13",
-      "qualityScore": 0
+      "hash": "9a6909d33e5114a2b752af8fbe39f88e09c3d0bc83295c10ddb8f80786a31a67",
+      "timestamp": "2025-12-29 06:06:11",
+      "qualityScore": 4.609999999999999
     },
     {
       "rows": [
-        "17th Century",
-        "Red Things",
-        "Starts with BAT",
-        "White Things"
+        "1890s",
+        "1950s",
+        "Cities",
+        "Things Indian"
       ],
       "cols": [
-        "Fictional People",
-        "Oligocene Epoch",
-        "Things French",
-        "Things Italian"
+        "Military Leaders",
+        "Starts with CHA",
+        "Things British",
+        "War Stories"
       ],
-      "hash": "5baaa8f96ae9d5a9f0c98c0d75ee3c6195e3555495ff18f6f7d712b1e1b75f17",
-      "timestamp": "2025-12-02 06:36:13",
-      "qualityScore": 0
+      "hash": "c628f4021ef124559ec9950e262351fa54f2d86eb3b0275224cd72258498d303",
+      "timestamp": "2025-12-28 22:40:34",
+      "qualityScore": 7.68
     },
     {
       "rows": [
-        "17th Century",
-        "Red Things",
-        "Starts with BAT",
-        "White Things"
+        "1981",
+        "19th Century",
+        "Starts with CAS",
+        "Things British"
       ],
       "cols": [
-        "Fictional People",
-        "Paleogene Period",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "288b0f5b6dbefb588e061eaf992e0d5575a20e370ef2bcb592ffe295c89bec95",
-      "timestamp": "2025-12-02 06:36:13",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Red Things",
-        "Starts with BAT",
-        "White Things"
-      ],
-      "cols": [
-        "Fictional People",
-        "Pliocene Epoch",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "0fdec61d31972865c4a046e62191ad5fc6776141113c0472ee9f647acec25a54",
-      "timestamp": "2025-12-02 06:36:13",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Red Things",
-        "Starts with BAT",
-        "White Things"
-      ],
-      "cols": [
-        "Fictional People",
-        "Quaternary Period",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "e8ab0560a7914c35cb91c0abd57ee8d76bf7f977f435e8bddc93b4766d930d31",
-      "timestamp": "2025-12-02 06:36:13",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Fictional People",
-        "NATO Countries",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Cenozoic Era",
-        "Locations in North America",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "1b1e2c6417a9935d878c47c2e5f6cf15660b1c8feec18520f20b9618db964551",
-      "timestamp": "2025-12-01 17:08:58",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Fictional People",
-        "NATO Countries",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Locations in North America",
-        "Pliocene Epoch",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "43eb8256750de7916238450727c9e6a3b8e7d1bdd410eb79002e5c92eef2d735",
-      "timestamp": "2025-12-01 17:08:58",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Fictional People",
-        "NATO Countries",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Locations in North America",
-        "Quaternary Period",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "d53d32332882f8c8e403c5c6e2e826a231ae6315a8c70ff29ab2f007434ceebd",
-      "timestamp": "2025-12-01 17:08:58",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Fictional People",
-        "NATO Countries",
-        "Starts with MAR"
-      ],
-      "cols": [
-        "Cenozoic Era",
-        "Locations in North America",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "cabfb1b9d4ea394363c937c28f26784377a5e56d15265ef77b4d2a5d32963361",
-      "timestamp": "2025-12-01 17:08:58",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Fictional People",
-        "NATO Countries",
-        "Starts with MAR"
-      ],
-      "cols": [
-        "Locations in North America",
-        "Quaternary Period",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "87520d5f5abd10d55953b837f9db2a53c5abff0241cfaef320f08578416024f3",
-      "timestamp": "2025-12-01 17:08:58",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Fictional People",
-        "NATO Members",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Cenozoic Era",
-        "Locations in North America",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "8069f93219587a771f8f7db4115f18cd84a3f723cd58b162f5ecb9ab5ccadfcd",
-      "timestamp": "2025-12-01 17:08:58",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "1910s",
-        "Shakespeare",
-        "Starts with MAR"
-      ],
-      "cols": [
+        "2D Animated Films",
+        "Animal Terms",
         "Assassins",
+        "Mentioned in We Didn't Start the Fire"
+      ],
+      "hash": "5cbe59d142875b7e7f9b55cd4853b20aa56ff9246a8eb2f2471c9e621155cbec",
+      "timestamp": "2025-12-28 20:12:05",
+      "qualityScore": 8.18
+    },
+    {
+      "rows": [
+        "1981",
+        "19th Century",
+        "Starts with CAS",
+        "Things British"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Assassins",
+        "Mentioned in We Didn't Start the Fire",
+        "Things Japanese"
+      ],
+      "hash": "8f77eb96c01cc17acb895a9c42dda5e84840c56ef067fe2ad59e972987ea55ab",
+      "timestamp": "2025-12-28 20:12:05",
+      "qualityScore": 7.56
+    },
+    {
+      "rows": [
+        "1950s",
+        "1980",
+        "Cities",
+        "War Stories"
+      ],
+      "cols": [
+        "Oscar Winners",
+        "Starts with BAT",
+        "Things British",
+        "Things Japanese"
+      ],
+      "hash": "0ba1af0007d3bb807c32744d0a54bf75d67eb70137c462de41dfec8cd82fd49e",
+      "timestamp": "2025-12-29 01:33:08",
+      "qualityScore": 6.47
+    },
+    {
+      "rows": [
+        "17th Century",
+        "19th Century",
+        "Hundred Years' War",
+        "Things Bohemian"
+      ],
+      "cols": [
+        "Cities",
+        "Military Conflicts",
+        "Religious Figures",
+        "Royalty"
+      ],
+      "hash": "1bf677a7d14843d8886dfc63012678cf1bec800bc2ba42b73d078d2b243b46c7",
+      "timestamp": "2025-12-28 20:27:35",
+      "qualityScore": 10.98
+    },
+    {
+      "rows": [
+        "1870s",
+        "Animal Terms",
+        "Crime Stories",
+        "Ming Dynasty"
+      ],
+      "cols": [
         "Classic Literature",
-        "Royalty",
-        "Things Italian"
+        "Ends with ION",
+        "Military Leaders",
+        "Things Japanese"
       ],
-      "hash": "d1e86be81a18c15bc0feac596e27f88e841b3d9a931f58b9e249fd6b47a3b253",
-      "timestamp": "2025-12-01 18:12:45",
-      "qualityScore": 0
+      "hash": "4470204aa9137f6cc1cbb6b65f7ff18cb66fa302d1b00992418242f13c1f82ed",
+      "timestamp": "2025-12-28 18:57:50",
+      "qualityScore": 8.830000000000002
     },
     {
       "rows": [
-        "17th Century",
-        "Cities",
-        "Fictional People",
-        "Starts with CHA"
+        "1910s",
+        "Ends with ION",
+        "Mentioned in We Didn't Start the Fire",
+        "Napoleonic Wars"
       ],
       "cols": [
-        "Age of Sail",
-        "Musicians",
-        "Things Chinese",
-        "Things French"
+        "Ships",
+        "Songs",
+        "Things British",
+        "Wars"
       ],
-      "hash": "d3a1906b3e39bbec907e4437c7c2e210818052a003337e3fbc6c0354cf197773",
-      "timestamp": "2025-11-24 15:42:02",
-      "qualityScore": 6.140000000000001
+      "hash": "0e0d6e4f8072929148eb2ee2f7440fd66e01e237357649b591d9855aad21eb15",
+      "timestamp": "2025-12-29 01:55:48",
+      "qualityScore": 7.69
     },
     {
       "rows": [
-        "17th Century",
-        "Cities",
-        "Fictional People",
-        "Religious Figures"
+        "1910s",
+        "Ends with ION",
+        "Mentioned in We Didn't Start the Fire",
+        "Napoleonic Wars"
       ],
       "cols": [
-        "Musicians",
-        "Royalty",
-        "Things Chinese",
-        "Things French"
+        "Military Conflicts",
+        "Ships",
+        "Songs",
+        "Things British"
       ],
-      "hash": "140ad6559e616f9aca1e10a736c3e400f78b92b4eafa04a4feea282f4bdaa7d6",
-      "timestamp": "2025-11-24 15:42:01",
-      "qualityScore": 5.63
+      "hash": "8881e9ee1f24426b34069f641e12a8653e5f8132bc7d1541b2fdb27959cfb699",
+      "timestamp": "2025-12-29 01:55:48",
+      "qualityScore": 7.279999999999999
     },
     {
       "rows": [
-        "17th Century",
-        "1930s",
-        "Things Chinese",
-        "Things French"
+        "1950s",
+        "Cities",
+        "Ends with AND",
+        "World War II"
+      ],
+      "cols": [
+        "Cold War",
+        "Military Conflicts",
+        "Shipwrecks",
+        "US Presidents"
+      ],
+      "hash": "fa606875dbd2064abe8cf76f88efb35a0d6b01c01babba3b02fed5f97d78a170",
+      "timestamp": "2025-12-29 08:15:09",
+      "qualityScore": 6.9
+    },
+    {
+      "rows": [
+        "15th Century",
+        "1910s",
+        "Things British",
+        "Things Japanese"
       ],
       "cols": [
         "Ends with ING",
-        "Fictional People",
+        "Scientists",
+        "Ships",
+        "Wars"
+      ],
+      "hash": "ab4ac48a22050b9ce1c2102b33f97257fa54952c83f6cbc8e495a2888879944f",
+      "timestamp": "2025-12-29 05:32:07",
+      "qualityScore": 7.0200000000000005
+    },
+    {
+      "rows": [
+        "19th Century",
+        "1st Century BC",
+        "Cold War",
+        "Song Dynasty"
+      ],
+      "cols": [
+        "Battles",
+        "Military Leaders",
+        "Things British",
+        "Wars"
+      ],
+      "hash": "7a5a843473d038f55b0e51e16ef57c00d0a471907d55cba260f0ead0ec747aba",
+      "timestamp": "2025-12-29 02:19:28",
+      "qualityScore": 10.240000000000002
+    },
+    {
+      "rows": [
+        "1890s",
+        "Contains an Acute Accent",
+        "Han Dynasty",
+        "Things British"
+      ],
+      "cols": [
+        "Classic Literature",
+        "Founders of Religious Movements",
         "Military Conflicts",
-        "Military Reformers"
+        "Military Leaders"
       ],
-      "hash": "ef5d5e3606dad61dc69ae80a497a91272b56a82146d0017db9720a2d9df781a6",
-      "timestamp": "2025-12-01 18:33:19",
-      "qualityScore": 0
+      "hash": "438fc445f86cbf3209126d8be93bab970c09cc7757c02e9370cf3853d2f11e2f",
+      "timestamp": "2025-12-28 23:12:20",
+      "qualityScore": 10.060000000000002
     },
     {
       "rows": [
-        "1989",
-        "2013",
-        "Crime Stories",
-        "Ends with ITY"
+        "1890s",
+        "Contains an Acute Accent",
+        "Han Dynasty",
+        "Things British"
       ],
       "cols": [
-        "Fictional People",
-        "Second in Release Order",
-        "Things Chinese",
-        "Time Travel Stories"
+        "Classic Literature",
+        "Military Conflicts",
+        "Military Leaders",
+        "Religious Figures"
       ],
-      "hash": "89437dbd67431ba8c0c1f3cfa268f5e653640329929ecc1ce13afeb16adfcca7",
-      "timestamp": "2025-12-01 16:27:30",
-      "qualityScore": 0
+      "hash": "5fa8fe95f830db0a0735d7b95a41b229ae61a0b84a539e79f696bc53cc426b22",
+      "timestamp": "2025-12-28 23:12:20",
+      "qualityScore": 8.71
     },
     {
       "rows": [
-        "1997",
-        "2000",
-        "Second in Release Order",
-        "Third in Release Order"
+        "17th Century",
+        "1870s",
+        "Things British",
+        "Things Iranian"
       ],
       "cols": [
-        "Blockbusters",
-        "Movies featuring Bruce Willis",
-        "Movies featuring Johnny Depp",
-        "Things Chinese"
+        "Military Leaders",
+        "Religious Figures",
+        "Scientists",
+        "Wars"
       ],
-      "hash": "1b0223e427a0e703653c5288c0783a968f3125e6c9f26bb48e46a521af583b08",
-      "timestamp": "2025-12-01 16:46:05",
-      "qualityScore": 0
+      "hash": "ca3c51e05974a38e2ac8329201e9fc178d0cd75938e0aec0d48eb17c16c668fa",
+      "timestamp": "2025-12-28 19:29:05",
+      "qualityScore": 13.95
+    },
+    {
+      "rows": [
+        "17th Century",
+        "1870s",
+        "Things British",
+        "Things Iranian"
+      ],
+      "cols": [
+        "Military Conflicts",
+        "Military Leaders",
+        "Religious Figures",
+        "Scientists"
+      ],
+      "hash": "69ec6a2c616f34012380e5eb335ea2df762e7e1d52a87a7a4683b12509e8e2d2",
+      "timestamp": "2025-12-28 19:29:05",
+      "qualityScore": 13.54
+    },
+    {
+      "rows": [
+        "17th Century",
+        "1870s",
+        "Things British",
+        "Things Iranian"
+      ],
+      "cols": [
+        "Ends with ION",
+        "Religious Figures",
+        "Scientists",
+        "Wars"
+      ],
+      "hash": "8f77f2fad69a0cbdbd55450d236d003cea27fa095f04e141fc366d684205a652",
+      "timestamp": "2025-12-28 19:29:05",
+      "qualityScore": 13.49
     }
   ],
   "message": "Puzzle saved successfully!"

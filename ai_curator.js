@@ -340,10 +340,13 @@ function renderOutput() {
 
         const options = state.viableGrid[state.currentRow][state.currentCol].filter(w => !state.usedWords.includes(w));
         output += `**Options for current cell:**\n`;
-        options.forEach((w, i) => output += `${i}. ${w}\n`);
+        options.forEach((w, i) => {
+            const firstLetter = w.trim().charAt(0).toUpperCase();
+            output += `${i}. ${w} [${firstLetter}]\n`;
+        });
         output += `\n- **reset**: Reset word selection for this puzzle
 - **abandon**: Abandon this puzzle\n\n`;
-        output += `**Command:** \`node ai_curator.js select <index>\` or \`reset\`, \`abandon\``;
+        output += `**Command:** \`node ai_curator.js select <index><letter>\` (e.g., \`node ai_curator.js select 0B\` for option 0 with first letter B) or \`reset\`, \`abandon\``;
     } else if (state.phase === "FINAL_APPROVAL") {
         output += `## Final Approval\n\n`;
         output += `**Rows:** ${state.currentPuzzle.rows.join(", ")}\n`;
@@ -543,13 +546,31 @@ async function handleAction(action, value) {
                 state.message = "Puzzle abandoned.";
             } else {
                 const options = state.viableGrid[state.currentRow][state.currentCol].filter(w => !state.usedWords.includes(w));
-                const idx = parseInt(value);
                 let selectedWord = null;
 
-                if (!isNaN(idx) && idx >= 0 && idx < options.length) {
-                    selectedWord = options[idx];
+                // Parse value: should be like "0B" (number + first letter)
+                const match = value.match(/^(\d+)([A-Za-z])$/);
+                if (match) {
+                    const idx = parseInt(match[1]);
+                    const providedLetter = match[2].toUpperCase();
+                    
+                    if (idx >= 0 && idx < options.length) {
+                        const word = options[idx];
+                        const expectedLetter = word.trim().charAt(0).toUpperCase();
+                        
+                        if (providedLetter === expectedLetter) {
+                            selectedWord = word;
+                        } else {
+                            state.message = `Letter mismatch: expected ${expectedLetter} for option ${idx} (${word}), got ${providedLetter}`;
+                        }
+                    } else {
+                        state.message = `Invalid index: ${idx} (valid range: 0-${options.length - 1})`;
+                    }
                 } else if (options.includes(value)) {
+                    // Still allow full word name for backwards compatibility
                     selectedWord = value;
+                } else {
+                    state.message = `Invalid format: expected <number><letter> (e.g., "0B") or full word name. Got: ${value}`;
                 }
 
                 if (selectedWord) {
@@ -566,8 +587,6 @@ async function handleAction(action, value) {
                     } else {
                         state.message = `Word chosen: ${selectedWord}`;
                     }
-                } else {
-                    state.message = `Invalid word choice or index: ${value}`;
                 }
             }
         }

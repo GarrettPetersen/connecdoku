@@ -34,14 +34,14 @@ The AI Puzzle Curator is a file-based workflow designed for collaborative puzzle
    - **Search Category/Days:** Provide parameters for the search.
    - **Puzzle List:** Choose a candidate layout from the results.
    - **Puzzle Review:** Verify the categories and quality score.
-   - **Word Selection:** Pick specific words for each of the 16 intersections. You can select a word by its number in the provided list or by typing its full name.
+   - **Word Selection:** Pick specific words for each of the 16 intersections. You must select a word by providing both its number and the first letter (e.g., `0G` for option 0 with first letter G). This ensures you read the options before selecting. You can also type the full word name as an alternative.
    - **Final Approval:** Perform a final check and save the puzzle to `daily_puzzles/puzzles.json`.
 
 ### Secret Sauce:
 The "Secret Sauce" method is the standard for high-quality puzzle generation. It searches through millions of candidate puzzles to find those with **zero category overlap** with puzzles from the last N days (standard lookback: **13 days**). This ensures a fresh and unique experience for daily players by preventing repetitive themes.
 
 ### Data Maintenance and Word Selection:
-During the **Word Selection** phase, you should carefully review the words offered for each intersection. If a word seems miscategorized (e.g., a movie listed under the wrong genre), follow this process:
+During the **Word Selection** phase, you should carefully review the words offered for each intersection. Each option displays its first letter in brackets (e.g., `0. Goodfellas [G]`). To select a word, you must provide both the number and first letter (e.g., `make ai-curator ACTION=select VALUE=0G`). This format ensures you read and verify each option before selecting. If a word seems miscategorized (e.g., a movie listed under the wrong genre), follow this process:
 1. **Identify the error:** Note the word and the incorrect category.
 2. **Fix the source:** Open `data/words.json` and update the categories for that word.
 3. **Synchronize:** Run `make update-data` to rebuild the category indexes.
