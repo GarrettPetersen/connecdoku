@@ -1,5 +1,5 @@
 {
-  "curatedCount": 54,
+  "curatedCount": 59,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -8,160 +8,135 @@
   ],
   "currentPuzzle": {
     "rows": [
-      "1970s",
-      "1992",
-      "Ends with NCE",
-      "Movies featuring Hugh Jackman"
+      "17th Century",
+      "Cities",
+      "Fictional People",
+      "Starts with CHA"
     ],
     "cols": [
-      "Fantasy Stories",
-      "Music",
-      "Romance Stories",
-      "Sequels"
+      "Age of Sail",
+      "Musicians",
+      "Things Chinese",
+      "Things French"
     ],
-    "hash": "f8205b4777d1eb7c459e53887dcf8ee3aaacb9333afb2d90678f60417d976cfa",
-    "timestamp": "2025-11-24 10:50:24",
-    "qualityScore": 10.739999999999998
+    "hash": "d3a1906b3e39bbec907e4437c7c2e210818052a003337e3fbc6c0354cf197773",
+    "timestamp": "2025-11-24 15:42:02",
+    "qualityScore": 6.140000000000001
   },
   "viableGrid": [
     [
       [
-        "The Silmarillion"
+        "Mayflower"
       ],
       [
-        "Another Brick in the Wall",
-        "Apollo",
-        "Bee Gees",
-        "Bob Dylan",
-        "Bohemian Rhapsody",
-        "Boston",
-        "Bridge Over Troubled Water",
-        "Cabaret",
-        "Comfortably Numb",
-        "Dancing Queen",
-        "Dark Side of the Moon",
-        "Fiddler on the Roof",
-        "George",
-        "Godspell",
-        "Hotel California",
-        "Imagine",
-        "Jesus Christ Superstar",
-        "John",
-        "Miles Davis",
-        "Paul",
-        "Punk Rock",
-        "Ray Charles",
-        "Ringo",
-        "Rocky Horror Picture Show",
-        "Rush",
-        "Stairway to Heaven",
-        "Stayin' Alive",
-        "Stevie Wonder",
-        "Superstition",
-        "The Police",
-        "The Wall",
-        "Thelonious Monk",
-        "Waterloo"
+        "Bach",
+        "Handel"
       ],
       [
-        "Annie Hall",
-        "Manhattan"
+        "Ming",
+        "Qing"
       ],
       [
-        "The Godfather Part II"
+        "I think, therefore I am",
+        "L'etat c'est moi",
+        "Philip",
+        "Sébastien Le Prestre de Vauban"
       ]
     ],
     [
       [
-        "Porco Rosso"
+        "Victoria"
       ],
       [
-        "Creep",
-        "Under the Bridge"
+        "Berlin",
+        "Boston"
       ],
       [
-        "Howards End"
+        "Beijing"
       ],
       [
-        "Alien 3",
-        "Home Alone 2: Lost in New York",
-        "Mostly Harmless"
+        "Bordeaux",
+        "Paris"
       ]
     ],
     [
       [
+        "Bellerophon"
+      ],
+      [
+        "Shaggy"
+      ],
+      [
+        "The Killer"
+      ],
+      [
+        "Belle",
+        "Carmen",
+        "The Count of Monte Cristo",
         "The Little Prince"
-      ],
-      [
-        "Beyonce",
-        "Prince"
-      ],
-      [
-        "The Age of Innocence"
-      ],
-      [
-        "Die Hard with a Vengeance"
       ]
     ],
     [
       [
-        "Rise of the Guardians"
+        "Challenger"
       ],
       [
-        "Les Misérables",
-        "The Greatest Showman"
+        "Charlie Parker"
       ],
       [
-        "Kate & Leopold"
+        "Char Siu"
       ],
       [
-        "X-Men: Days of Future Past"
+        "Champagne",
+        "Charlemagne",
+        "Charles V",
+        "Charlotte Corday"
       ]
     ]
   ],
   "chosen": [
     [
-      "The Silmarillion",
-      "Bohemian Rhapsody",
-      "Annie Hall",
-      "The Godfather Part II"
+      "Mayflower",
+      "Bach",
+      "Ming",
+      "I think, therefore I am"
     ],
     [
-      "Porco Rosso",
-      "Creep",
-      "Howards End",
-      "Home Alone 2: Lost in New York"
+      "Victoria",
+      "Berlin",
+      "Beijing",
+      "Bordeaux"
     ],
     [
-      "The Little Prince",
-      "Prince",
-      "The Age of Innocence",
-      "Die Hard with a Vengeance"
+      "Bellerophon",
+      "Shaggy",
+      "The Killer",
+      "Belle"
     ],
     [
-      "Rise of the Guardians",
-      "The Greatest Showman",
-      "Kate & Leopold",
-      "X-Men: Days of Future Past"
+      "Challenger",
+      "Charlie Parker",
+      "Char Siu",
+      "Champagne"
     ]
   ],
   "usedWords": [
-    "The Silmarillion",
-    "Bohemian Rhapsody",
-    "Annie Hall",
-    "The Godfather Part II",
-    "Porco Rosso",
-    "Creep",
-    "Howards End",
-    "Home Alone 2: Lost in New York",
-    "The Little Prince",
-    "Prince",
-    "The Age of Innocence",
-    "Die Hard with a Vengeance",
-    "Rise of the Guardians",
-    "The Greatest Showman",
-    "Kate & Leopold",
-    "X-Men: Days of Future Past"
+    "Mayflower",
+    "Bach",
+    "Ming",
+    "I think, therefore I am",
+    "Victoria",
+    "Berlin",
+    "Beijing",
+    "Bordeaux",
+    "Bellerophon",
+    "Shaggy",
+    "The Killer",
+    "Belle",
+    "Challenger",
+    "Charlie Parker",
+    "Char Siu",
+    "Champagne"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -169,224 +144,343 @@
   "puzzles": [
     {
       "rows": [
-        "1940s",
-        "Cities in North America",
-        "Comedy Stories",
-        "Stories about Families"
-      ],
-      "cols": [
-        "1970s",
-        "Crime Stories",
-        "Red Things",
-        "Starts with LIT"
-      ],
-      "hash": "2f0cc25a50ec008ee9dd26510b29136823d095588f89433c198c9c7e204ee632",
-      "timestamp": "2025-11-25 00:27:39",
-      "qualityScore": 6.38
-    },
-    {
-      "rows": [
-        "1940s",
-        "1970s",
-        "Crime Stories",
-        "Red Things"
-      ],
-      "cols": [
-        "Comedy Stories",
-        "Ends with MAN",
-        "Locations in North America",
-        "Stories about Families"
-      ],
-      "hash": "03ed797cb8ae3ee38dfac502d4ad348bbe884f82205ca6c0acbea88f4fa62bdd",
-      "timestamp": "2025-11-24 13:20:37",
-      "qualityScore": 5.77
-    },
-    {
-      "rows": [
-        "1970s",
-        "Archipelagos",
-        "Countries in Europe",
-        "Military Conflicts"
-      ],
-      "cols": [
-        "Cold War",
-        "Ends with AND",
-        "Locations in North America",
-        "Things Spanish"
-      ],
-      "hash": "8d5b4eb6fc6ae8fefa326632663ce913301badc082c2deebf08786d560fedfb0",
-      "timestamp": "2025-11-24 16:53:36",
-      "qualityScore": 6.24
-    },
-    {
-      "rows": [
-        "1970s",
-        "Archipelagos",
-        "Countries in Europe",
-        "Islands"
-      ],
-      "cols": [
-        "Countries that No Longer Exist",
-        "Ends with AND",
-        "Locations in North America",
-        "Things Spanish"
-      ],
-      "hash": "b6e6f9cd63c6f09669365f169e0531905c15f8ea8fbaaafded8ce8ac587552ba",
-      "timestamp": "2025-11-24 16:53:35",
-      "qualityScore": 5.57
-    },
-    {
-      "rows": [
-        "1940s",
-        "Carnivores",
-        "Crime Stories",
-        "Mammals"
-      ],
-      "cols": [
-        "1970s",
-        "Black and White",
-        "Music",
-        "Superheroes"
-      ],
-      "hash": "2fb4932e2fad6442c6bbc10363474683ac37818d170fc773b4cbaee6076cc86e",
-      "timestamp": "2025-11-25 00:12:04",
-      "qualityScore": 6.78
-    },
-    {
-      "rows": [
+        "1986",
         "1990",
-        "2001",
-        "Classic Literature",
-        "Movies featuring Johnny Depp"
+        "Ends with TER",
+        "Things Italian"
       ],
       "cols": [
-        "Crime Stories",
-        "First in Internal Chronology",
-        "Romance Stories",
-        "Second in Internal Chronology"
-      ],
-      "hash": "0633eb65cdb8b4624d349a6f8968d88aaff7574f33d3fbae55b701fd4e0f7c7a",
-      "timestamp": "2025-12-02 07:21:43",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1930s",
-        "1940s",
-        "Carnivores",
-        "Crime Stories"
-      ],
-      "cols": [
-        "Black and White",
-        "Classic Literature",
-        "Music",
-        "Superheroes"
-      ],
-      "hash": "499194cac696c08204bddd5faeae4f26da46449f53ca371ff92e34d6aa23e8cb",
-      "timestamp": "2025-12-02 06:19:29",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1990",
-        "Classic Literature",
-        "Comedy Stories",
-        "Music"
-      ],
-      "cols": [
-        "Ends with ERS",
-        "Romance Stories",
+        "Books",
         "Second in Internal Chronology",
-        "Stories about Families"
+        "Things Chinese",
+        "Video Games"
       ],
-      "hash": "daa28398210c42f99159f924b7a3827f3f857101d21c58fc881c44e1eba79a71",
-      "timestamp": "2025-12-02 08:16:31",
+      "hash": "90c19e3b14ee65d2f86b222675dc94a96a68b54719113471ce5fee91d9eea754",
+      "timestamp": "2025-12-01 15:58:05",
       "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1940s",
-        "Carnivores",
-        "Crime Stories",
-        "Mammals"
-      ],
-      "cols": [
-        "1970s",
-        "Black and White",
-        "Music",
-        "Superheroes"
-      ],
-      "hash": "2fb4932e2fad6442c6bbc10363474683ac37818d170fc773b4cbaee6076cc86e",
-      "timestamp": "2025-11-25 00:12:04",
-      "qualityScore": 6.78
     },
     {
       "rows": [
         "1986",
-        "1992",
-        "Ends with NCE",
-        "First in Internal Chronology"
+        "1990",
+        "Ends with TER",
+        "Things Italian"
       ],
       "cols": [
-        "Crime Stories",
-        "Fantasy Stories",
-        "Music",
-        "Sequels"
+        "Books",
+        "Second in Release Order",
+        "Things Chinese",
+        "Video Games"
       ],
-      "hash": "690b3aeff84d20fbb62e258bb98744ed75e21439ad197fa8eedf9e801c7039f7",
-      "timestamp": "2025-12-01 16:15:24",
+      "hash": "b3b995c6975b97a94db0002a0857834bba8131c634d7e54ad4e1096ba3df153f",
+      "timestamp": "2025-12-01 15:58:05",
       "qualityScore": 0
     },
     {
       "rows": [
-        "1970s",
-        "Ends with AND",
-        "Ming Dynasty",
-        "Things Spanish"
+        "17th Century",
+        "Red Things",
+        "Starts with BAT",
+        "White Things"
       ],
       "cols": [
-        "Fantasy Stories",
-        "Islands",
+        "Cenozoic Era",
+        "Fictional People",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "ac4f38c6981f392efd11716071bac8f2330a572eadab7a24331d99d29ef0a550",
+      "timestamp": "2025-12-02 06:36:13",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Red Things",
+        "Starts with BAT",
+        "White Things"
+      ],
+      "cols": [
+        "Fictional People",
+        "Miocene Epoch",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "d5dff1d858750b90215db62bdb253e5cfae64392ce0e197e34527a5a9c1e4a06",
+      "timestamp": "2025-12-02 06:36:13",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Red Things",
+        "Starts with BAT",
+        "White Things"
+      ],
+      "cols": [
+        "Fictional People",
+        "Oligocene Epoch",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "5baaa8f96ae9d5a9f0c98c0d75ee3c6195e3555495ff18f6f7d712b1e1b75f17",
+      "timestamp": "2025-12-02 06:36:13",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Red Things",
+        "Starts with BAT",
+        "White Things"
+      ],
+      "cols": [
+        "Fictional People",
+        "Paleogene Period",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "288b0f5b6dbefb588e061eaf992e0d5575a20e370ef2bcb592ffe295c89bec95",
+      "timestamp": "2025-12-02 06:36:13",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Red Things",
+        "Starts with BAT",
+        "White Things"
+      ],
+      "cols": [
+        "Fictional People",
+        "Pliocene Epoch",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "0fdec61d31972865c4a046e62191ad5fc6776141113c0472ee9f647acec25a54",
+      "timestamp": "2025-12-02 06:36:13",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Red Things",
+        "Starts with BAT",
+        "White Things"
+      ],
+      "cols": [
+        "Fictional People",
+        "Quaternary Period",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "e8ab0560a7914c35cb91c0abd57ee8d76bf7f977f435e8bddc93b4766d930d31",
+      "timestamp": "2025-12-02 06:36:13",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Fictional People",
+        "NATO Countries",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Cenozoic Era",
+        "Locations in North America",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "1b1e2c6417a9935d878c47c2e5f6cf15660b1c8feec18520f20b9618db964551",
+      "timestamp": "2025-12-01 17:08:58",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Fictional People",
+        "NATO Countries",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Locations in North America",
+        "Pliocene Epoch",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "43eb8256750de7916238450727c9e6a3b8e7d1bdd410eb79002e5c92eef2d735",
+      "timestamp": "2025-12-01 17:08:58",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Fictional People",
+        "NATO Countries",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Locations in North America",
+        "Quaternary Period",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "d53d32332882f8c8e403c5c6e2e826a231ae6315a8c70ff29ab2f007434ceebd",
+      "timestamp": "2025-12-01 17:08:58",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Fictional People",
+        "NATO Countries",
+        "Starts with MAR"
+      ],
+      "cols": [
+        "Cenozoic Era",
+        "Locations in North America",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "cabfb1b9d4ea394363c937c28f26784377a5e56d15265ef77b4d2a5d32963361",
+      "timestamp": "2025-12-01 17:08:58",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Fictional People",
+        "NATO Countries",
+        "Starts with MAR"
+      ],
+      "cols": [
+        "Locations in North America",
+        "Quaternary Period",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "87520d5f5abd10d55953b837f9db2a53c5abff0241cfaef320f08578416024f3",
+      "timestamp": "2025-12-01 17:08:58",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Fictional People",
+        "NATO Members",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Cenozoic Era",
+        "Locations in North America",
+        "Things French",
+        "Things Italian"
+      ],
+      "hash": "8069f93219587a771f8f7db4115f18cd84a3f723cd58b162f5ecb9ab5ccadfcd",
+      "timestamp": "2025-12-01 17:08:58",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "1910s",
+        "Shakespeare",
+        "Starts with MAR"
+      ],
+      "cols": [
+        "Assassins",
+        "Classic Literature",
+        "Royalty",
+        "Things Italian"
+      ],
+      "hash": "d1e86be81a18c15bc0feac596e27f88e841b3d9a931f58b9e249fd6b47a3b253",
+      "timestamp": "2025-12-01 18:12:45",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Cities",
+        "Fictional People",
+        "Starts with CHA"
+      ],
+      "cols": [
+        "Age of Sail",
+        "Musicians",
+        "Things Chinese",
+        "Things French"
+      ],
+      "hash": "d3a1906b3e39bbec907e4437c7c2e210818052a003337e3fbc6c0354cf197773",
+      "timestamp": "2025-11-24 15:42:02",
+      "qualityScore": 6.140000000000001
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Cities",
+        "Fictional People",
+        "Religious Figures"
+      ],
+      "cols": [
+        "Musicians",
+        "Royalty",
+        "Things Chinese",
+        "Things French"
+      ],
+      "hash": "140ad6559e616f9aca1e10a736c3e400f78b92b4eafa04a4feea282f4bdaa7d6",
+      "timestamp": "2025-11-24 15:42:01",
+      "qualityScore": 5.63
+    },
+    {
+      "rows": [
+        "17th Century",
+        "1930s",
+        "Things Chinese",
+        "Things French"
+      ],
+      "cols": [
+        "Ends with ING",
+        "Fictional People",
         "Military Conflicts",
-        "Royalty"
+        "Military Reformers"
       ],
-      "hash": "8ac9bc55dca49ccb98279917802eeaa884c80d567d988bb7cb9b732a730a16e8",
-      "timestamp": "2025-11-24 19:14:31",
-      "qualityScore": 7
+      "hash": "ef5d5e3606dad61dc69ae80a497a91272b56a82146d0017db9720a2d9df781a6",
+      "timestamp": "2025-12-01 18:33:19",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "1970s",
-        "1992",
-        "Ends with NCE",
-        "Movies featuring Hugh Jackman"
-      ],
-      "cols": [
-        "Fantasy Stories",
-        "Music",
-        "Romance Stories",
-        "Sequels"
-      ],
-      "hash": "f8205b4777d1eb7c459e53887dcf8ee3aaacb9333afb2d90678f60417d976cfa",
-      "timestamp": "2025-11-24 10:50:24",
-      "qualityScore": 10.739999999999998
-    },
-    {
-      "rows": [
-        "1940s",
-        "1990",
-        "Ends with ENT",
-        "Sequels"
-      ],
-      "cols": [
-        "Cold War",
-        "Comedy Stories",
+        "1989",
+        "2013",
         "Crime Stories",
-        "Music"
+        "Ends with ITY"
       ],
-      "hash": "a1866959363359836dd1ee42d9b66f15a1be23a3c6dcb26ba5ebf9ac8d991a77",
-      "timestamp": "2025-11-24 17:56:50",
-      "qualityScore": 7.829999999999999
+      "cols": [
+        "Fictional People",
+        "Second in Release Order",
+        "Things Chinese",
+        "Time Travel Stories"
+      ],
+      "hash": "89437dbd67431ba8c0c1f3cfa268f5e653640329929ecc1ce13afeb16adfcca7",
+      "timestamp": "2025-12-01 16:27:30",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1997",
+        "2000",
+        "Second in Release Order",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Blockbusters",
+        "Movies featuring Bruce Willis",
+        "Movies featuring Johnny Depp",
+        "Things Chinese"
+      ],
+      "hash": "1b0223e427a0e703653c5288c0783a968f3125e6c9f26bb48e46a521af583b08",
+      "timestamp": "2025-12-01 16:46:05",
+      "qualityScore": 0
     }
   ],
   "message": "Puzzle saved successfully!"

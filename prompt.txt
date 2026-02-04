@@ -1,0 +1,1 @@
+Read the readme and follow the process to curate 5 new puzzles. Make sure to manually choose the best option for each word. If you find any misclassified words, change them in words.json and run make update-data to input your fixes. Once you have 5 new puzzles, commit and push them to github.
