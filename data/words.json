@@ -1,4 +1,17 @@
 {
+  "300": [
+    "2000s",
+    "2006",
+    "21st Century",
+    "Action Stories",
+    "Battle of Thermopylae",
+    "Dates",
+    "Ends with 300",
+    "Movies",
+    "Numbers",
+    "Starts with 300",
+    "Sword and Sandals Stories"
+  ],
   "747": [
     "1960s",
     "1970s",
@@ -8,6 +21,7 @@
     "Dates",
     "Ends with 747",
     "Manufactured by Boeing",
+    "Numbers",
     "Passenger Aircraft",
     "Starts with 747",
     "Things American",
@@ -15,9 +29,20 @@
   ],
   "1066": [
     "11th Century",
+    "Battle of Hastings",
     "Dates",
     "Ends with 066",
+    "Numbers",
     "Starts with 106"
+  ],
+  "1776": [
+    "1770s",
+    "18th Century",
+    "Dates",
+    "Ends with 776",
+    "Numbers",
+    "Starts with 177",
+    "The American Revolution"
   ],
   "1984": [
     "1940s",
@@ -28,6 +53,7 @@
     "Drama Stories",
     "Dystopian Stories",
     "Ends with 984",
+    "Numbers",
     "Political Fiction",
     "Sci-fi Stories",
     "Starts with 198",
@@ -42,6 +68,7 @@
     "Ends with 046",
     "Movies",
     "Movies directed by Wong Kar-wai",
+    "Numbers",
     "Sci-fi Stories",
     "Starts with 204",
     "Things Chinese"
@@ -60,6 +87,7 @@
     "Dates",
     "Ends with 0/7",
     "Events",
+    "Numbers",
     "Political Events",
     "Starts with 10/",
     "Terrorist Attacks"
@@ -213,6 +241,7 @@
     "Dates",
     "Ends with /11",
     "Events",
+    "Numbers",
     "Political Events",
     "Starts with 9/1",
     "Terrorist Attacks"
@@ -605,6 +634,7 @@
     "People",
     "Real People",
     "Starts with ADA",
+    "The American Revolution",
     "Things American",
     "US Presidents"
   ],
@@ -710,6 +740,7 @@
   ],
   "Akagi": [
     "Aircraft Carriers",
+    "Attack on Pearl Harbor",
     "Battle of Midway",
     "Ends with AGI",
     "Imperial Japanese Navy",
@@ -2086,11 +2117,13 @@
     "Writers"
   ],
   "Arizona": [
+    "Attack on Pearl Harbor",
     "Ends with ONA",
     "Locations in North America",
     "Place Names",
     "Starts with ARI",
-    "US States"
+    "US States",
+    "World War II"
   ],
   "Ark Royal": [
     "Aircraft Carriers",
@@ -3431,6 +3464,17 @@
     "Sports",
     "Starts with BAS",
     "Things American"
+  ],
+  "Bastille": [
+    "18th Century",
+    "Buildings",
+    "Ends with LLE",
+    "French Revolution",
+    "Historical Sites",
+    "Place Names",
+    "Starts with BAS",
+    "Storming of the Bastille",
+    "Things French"
   ],
   "Basutoland": [
     "Countries",
@@ -6061,6 +6105,7 @@
   "C": [
     "Chemical Symbols",
     "Elements",
+    "Numbers",
     "Programming Languages",
     "Roman Numerals",
     "Single Letters"
@@ -7391,6 +7436,7 @@
     "18th Century",
     "Assassins",
     "Ends with DAY",
+    "French Revolution",
     "People",
     "Real People",
     "Starts with CHA",
@@ -8618,6 +8664,7 @@
     "Place Names",
     "Starts with CON",
     "State Capitals",
+    "The American Revolution",
     "Things American"
   ],
   "Concorde": [
@@ -9537,6 +9584,7 @@
     "Starts with CZE"
   ],
   "D": [
+    "Numbers",
     "Roman Numerals"
   ],
   "DC-3": [
@@ -9999,6 +10047,7 @@
   "December 7th, 1941": [
     "1940s",
     "20th Century",
+    "Attack on Pearl Harbor",
     "Dates",
     "Ends with 941",
     "Famous Quotes",
@@ -11466,6 +11515,7 @@
     "20th Century",
     "Aircraft Carriers",
     "Cold War",
+    "D-Day",
     "Ends with WER",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -14110,6 +14160,7 @@
     "1860s",
     "19th Century",
     "American Civil War",
+    "Battle of Gettysburg",
     "Battles",
     "Cities",
     "Cities in North America",
@@ -14293,6 +14344,7 @@
     "Famous Quotes",
     "Literature Quotes",
     "Starts with GIV",
+    "The American Revolution",
     "Things American"
   ],
   "Gladiator": [
@@ -14468,6 +14520,7 @@
   ],
   "Gold": [
     "Colors",
+    "D-Day",
     "D-Day Beaches",
     "Economics",
     "Elements",
@@ -14477,6 +14530,7 @@
     "Metals",
     "Money Slang",
     "Starts with GOL",
+    "World War II",
     "Yellow Things"
   ],
   "Golden Hind": [
@@ -15630,6 +15684,18 @@
     "Starts with HAP",
     "Things Chinese"
   ],
+  "Harald Hardrada": [
+    "11th Century",
+    "Battle of Hastings",
+    "Ends with ADA",
+    "Medieval Figures",
+    "Men",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with HAR"
+  ],
   "Harambe": [
     "2010s",
     "2016",
@@ -15690,6 +15756,18 @@
     "Ships",
     "Starts with HAR",
     "Things American"
+  ],
+  "Harold Godwinson": [
+    "11th Century",
+    "Battle of Hastings",
+    "Ends with SON",
+    "Medieval Figures",
+    "Men",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with HAR"
   ],
   "Harp": [
     "Ends with ARP",
@@ -15998,6 +16076,7 @@
     "Starts with HAU"
   ],
   "Hawaii": [
+    "Attack on Pearl Harbor",
     "Ends with AII",
     "Islands",
     "Locations in North America",
@@ -16531,6 +16610,7 @@
   ],
   "Hiryu": [
     "Aircraft Carriers",
+    "Attack on Pearl Harbor",
     "Battle of Midway",
     "Ends with RYU",
     "Imperial Japanese Navy",
@@ -17256,6 +17336,7 @@
     "Things Korean"
   ],
   "I": [
+    "Numbers",
     "Roman Numerals"
   ],
   "I am your father": [
@@ -18129,6 +18210,7 @@
   ],
   "Ix": [
     "Dune",
+    "Numbers",
     "Roman Numerals",
     "Two-Letter Words"
   ],
@@ -18491,6 +18573,7 @@
     "People",
     "Real People",
     "Starts with JEF",
+    "The American Revolution",
     "Things American",
     "US Presidents"
   ],
@@ -19114,6 +19197,23 @@
     "Things Roman",
     "Tragedy Stories"
   ],
+  "July 14th, 1789": [
+    "1780s",
+    "18th Century",
+    "Dates",
+    "Ends with 789",
+    "French Revolution",
+    "Starts with JUL",
+    "Storming of the Bastille"
+  ],
+  "July 1st, 1863": [
+    "1860s",
+    "19th Century",
+    "Battle of Gettysburg",
+    "Dates",
+    "Ends with 863",
+    "Starts with JUL"
+  ],
   "July 2nd, 626": [
     "7th Century",
     "Dates",
@@ -19153,6 +19253,15 @@
     "Starts with JUN",
     "World War II"
   ],
+  "June 6th, 1944": [
+    "1940s",
+    "20th Century",
+    "D-Day",
+    "Dates",
+    "Ends with 944",
+    "Starts with JUN",
+    "World War II"
+  ],
   "Juneau": [
     "Cities",
     "Cities in North America",
@@ -19169,6 +19278,7 @@
     "2007",
     "21st Century",
     "Comedy Stories",
+    "D-Day",
     "D-Day Beaches",
     "Ends with UNO",
     "Movies",
@@ -19181,7 +19291,8 @@
     "Roman Gods",
     "Starts with JUN",
     "Things American",
-    "Things Roman"
+    "Things Roman",
+    "World War II"
   ],
   "Jupiter": [
     "Ends with TER",
@@ -19265,6 +19376,7 @@
   ],
   "Kaga": [
     "Aircraft Carriers",
+    "Attack on Pearl Harbor",
     "Battle of Midway",
     "Ends with AGA",
     "Imperial Japanese Navy",
@@ -19364,6 +19476,7 @@
     "1940s",
     "20th Century",
     "Aircraft",
+    "Attack on Pearl Harbor",
     "Battle of Midway",
     "Ends with ATE",
     "Manufactured by Nakajima",
@@ -20211,6 +20324,7 @@
     "Things German"
   ],
   "L": [
+    "Numbers",
     "Roman Numerals"
   ],
   "L'etat c'est moi": [
@@ -20377,6 +20491,18 @@
     "Quaternary Period",
     "Real Animals",
     "Starts with LAD"
+  ],
+  "Lafayette": [
+    "18th Century",
+    "Ends with TTE",
+    "French Revolution",
+    "Men",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Starts with LAF",
+    "The American Revolution",
+    "Things French"
   ],
   "Laika, Space Dog": [
     "1950s",
@@ -20750,6 +20876,20 @@
     "Starts with LEO",
     "Things American",
     "Zodiac Signs"
+  ],
+  "Leonidas": [
+    "5th Century BC",
+    "Ancient Figures",
+    "Battle of Thermopylae",
+    "Ends with DAS",
+    "Epic Heroes",
+    "Greek Mythology",
+    "Men",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Starts with LEO",
+    "Things Greek"
   ],
   "Lepidodendron": [
     "Carboniferous Period",
@@ -21616,6 +21756,17 @@
     "Starts with LOU",
     "Things French"
   ],
+  "Louis XVI": [
+    "18th Century",
+    "Ends with XVI",
+    "French Revolution",
+    "Men",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with LOU",
+    "Things French"
+  ],
   "Louisa May Alcott": [
     "19th Century",
     "Classic Literature",
@@ -21752,6 +21903,7 @@
   "M": [
     "James Bond Characters",
     "Movie Ratings",
+    "Numbers",
     "Roman Numerals",
     "Single Letters"
   ],
@@ -22427,6 +22579,18 @@
     "Female Animals",
     "Real Animals",
     "Starts with MAR"
+  ],
+  "Marie Antoinette": [
+    "18th Century",
+    "Ends with TTE",
+    "French Revolution",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with MAR",
+    "Things Austrian",
+    "Things French",
+    "Women"
   ],
   "Marie Curie": [
     "19th Century",
@@ -24652,6 +24816,7 @@
     "19th Century",
     "Battle of Waterloo",
     "Ends with RTE",
+    "French Revolution",
     "Great Conquerors",
     "Men",
     "Military Leaders",
@@ -25203,6 +25368,15 @@
     "Luxury Ships",
     "Oceanliners",
     "Ships",
+    "Starts with NOR",
+    "Things French",
+    "World War II"
+  ],
+  "Normandy": [
+    "D-Day",
+    "Ends with NDY",
+    "Locations in Europe",
+    "Place Names",
     "Starts with NOR",
     "Things French",
     "World War II"
@@ -25802,12 +25976,14 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "D-Day",
     "D-Day Beaches",
     "Ends with AHA",
     "Locations in North America",
     "Place Names",
     "Starts with OMA",
-    "Things American"
+    "Things American",
+    "World War II"
   ],
   "Oman": [
     "Countries",
@@ -25980,6 +26156,16 @@
     "Ocean Formation",
     "Plate Tectonics",
     "Starts with OPE"
+  ],
+  "Operation Overlord": [
+    "1940s",
+    "20th Century",
+    "D-Day",
+    "Ends with ORD",
+    "Events",
+    "Military Conflicts",
+    "Starts with OPE",
+    "World War II"
   ],
   "Oppenheimer": [
     "1940s",
@@ -26741,6 +26927,7 @@
     "National Capitals",
     "Place Names",
     "Starts with PAR",
+    "Storming of the Bastille",
     "Things French",
     "Trojan War"
   ],
@@ -26905,6 +27092,17 @@
     "Pleistocene Epoch",
     "Quaternary Period",
     "Starts with PEA"
+  ],
+  "Pearl Harbor": [
+    "1940s",
+    "20th Century",
+    "Attack on Pearl Harbor",
+    "Ends with BOR",
+    "Locations in North America",
+    "Place Names",
+    "Starts with PEA",
+    "Things American",
+    "World War II"
   ],
   "Pecan": [
     "Cenozoic Era",
@@ -27441,7 +27639,8 @@
     "Things Thai"
   ],
   "Pi": [
-    "Greek Letters"
+    "Greek Letters",
+    "Numbers"
   ],
   "Piano": [
     "Ends with ANO",
@@ -27452,6 +27651,15 @@
   "Picard": [
     "Ends with ARD",
     "Star Trek",
+    "Starts with PIC"
+  ],
+  "Pickett's Charge": [
+    "1860s",
+    "19th Century",
+    "Battle of Gettysburg",
+    "Ends with RGE",
+    "Events",
+    "Military Conflicts",
     "Starts with PIC"
   ],
   "Pickle": [
@@ -29005,6 +29213,7 @@
   ],
   "R": [
     "Movie Ratings",
+    "Numbers",
     "Programming Languages",
     "Roman Numerals"
   ],
@@ -30005,6 +30214,7 @@
     "1860s",
     "19th Century",
     "American Civil War",
+    "Battle of Gettysburg",
     "Ends with LEE",
     "Men",
     "Military Leaders",
@@ -31347,6 +31557,25 @@
     "Foods",
     "Starts with SAU",
     "Things German"
+  ],
+  "Saving Private Ryan": [
+    "1990s",
+    "1998",
+    "20th Century",
+    "Action Stories",
+    "D-Day",
+    "Drama Stories",
+    "Ends with YAN",
+    "Movies",
+    "Movies directed by Steven Spielberg",
+    "Movies featuring Matt Damon",
+    "Movies featuring Tom Hanks",
+    "Oscar Winners",
+    "Period Stories",
+    "Starts with SAV",
+    "Things American",
+    "War Stories",
+    "World War II"
   ],
   "Saw": [
     "2000s",
@@ -32890,6 +33119,7 @@
   ],
   "Soryu": [
     "Aircraft Carriers",
+    "Attack on Pearl Harbor",
     "Battle of Midway",
     "Ends with RYU",
     "Imperial Japanese Navy",
@@ -34277,11 +34507,13 @@
     "Things Swiss"
   ],
   "Sword": [
+    "D-Day",
     "D-Day Beaches",
     "Ends with ORD",
     "Historical Weapons",
     "Starts with SWO",
-    "Weapons"
+    "Weapons",
+    "World War II"
   ],
   "Sydney": [
     "Ends with NEY",
@@ -35317,6 +35549,7 @@
     "Military Conflicts",
     "Revolutions",
     "Starts with THE",
+    "The American Revolution",
     "Things American",
     "Things British",
     "Wars"
@@ -36259,10 +36492,12 @@
     "18th Century",
     "Ends with ION",
     "Events",
+    "French Revolution",
     "Military Conflicts",
     "Political Events",
     "Revolutions",
     "Starts with THE",
+    "Storming of the Bastille",
     "Things French",
     "Wars"
   ],
@@ -36618,6 +36853,7 @@
     "18th Century",
     "Ends with ION",
     "Events",
+    "French Revolution",
     "Independence Movements",
     "Military Conflicts",
     "Revolutions",
@@ -37914,6 +38150,22 @@
     "Romance Stories",
     "Starts with THE",
     "Stories about Families"
+  ],
+  "The Patriot": [
+    "2000",
+    "2000s",
+    "21st Century",
+    "Action Stories",
+    "Drama Stories",
+    "Ends with IOT",
+    "Movies",
+    "Movies directed by Roland Emmerich",
+    "Movies featuring Mel Gibson",
+    "Period Stories",
+    "Starts with THE",
+    "The American Revolution",
+    "Things American",
+    "War Stories"
   ],
   "The Peasants' Revolt": [
     "14th Century",
@@ -39311,6 +39563,19 @@
     "Ends with ERA",
     "Starts with THE",
     "Volcanoes"
+  ],
+  "Thermopylae": [
+    "5th Century BC",
+    "Ancient Times",
+    "Battle of Thermopylae",
+    "Battles",
+    "Ends with LAE",
+    "Historical Sites",
+    "Locations in Europe",
+    "Military Conflicts",
+    "Place Names",
+    "Starts with THE",
+    "Things Greek"
   ],
   "Theseus": [
     "Demigods",
@@ -41015,13 +41280,15 @@
     "Things American"
   ],
   "Utah": [
+    "D-Day",
     "D-Day Beaches",
     "Ends with TAH",
     "Locations in North America",
     "Place Names",
     "Starts with UTA",
     "Things American",
-    "US States"
+    "US States",
+    "World War II"
   ],
   "Utahraptor": [
     "Animal Species",
@@ -41059,6 +41326,7 @@
     "DC Characters",
     "Fictional People",
     "Men",
+    "Numbers",
     "People",
     "Roman Numerals",
     "Superheroes"
@@ -41072,6 +41340,7 @@
     "1940s",
     "20th Century",
     "Aircraft",
+    "Attack on Pearl Harbor",
     "Battle of Midway",
     "Dive Bomber",
     "Ends with VAL",
@@ -41337,6 +41606,7 @@
     "Buildings",
     "Ends with LES",
     "French Architecture",
+    "French Revolution",
     "Medieval Buildings",
     "Starts with VER",
     "Things French"
@@ -41794,6 +42064,7 @@
     "Real People",
     "Starts with WAS",
     "State Capitals",
+    "The American Revolution",
     "Things American",
     "US Navy",
     "US Presidents",
@@ -42214,6 +42485,7 @@
   ],
   "William the Conqueror": [
     "11th Century",
+    "Battle of Hastings",
     "Ends with ROR",
     "Great Conquerors",
     "Medieval Figures",
@@ -42672,6 +42944,7 @@
     "Companies",
     "High-Value Scrabble Letters",
     "Movie Ratings",
+    "Numbers",
     "Roman Numerals",
     "Single Letters",
     "Social Media Brands",
@@ -42735,6 +43008,19 @@
     "Noble Gases",
     "Photography Terms",
     "Starts with XEN"
+  ],
+  "Xerxes": [
+    "5th Century BC",
+    "Ancient Figures",
+    "Battle of Thermopylae",
+    "Ends with XES",
+    "Men",
+    "Military Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with XER",
+    "Things Persian"
   ],
   "Xi": [
     "Greek Letters"
@@ -42955,6 +43241,7 @@
     "Ships",
     "Shipwrecks",
     "Starts with YOR",
+    "The American Revolution",
     "Things American",
     "US Navy",
     "Warships",
@@ -43164,6 +43451,7 @@
     "20th Century",
     "Abstract Concepts",
     "Aircraft",
+    "Attack on Pearl Harbor",
     "Battle of Midway",
     "Ends with ERO",
     "Fighter Aircraft",

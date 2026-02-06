@@ -1,5 +1,5 @@
 {
-  "curatedCount": 68,
+  "curatedCount": 73,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -8,158 +8,171 @@
   ],
   "currentPuzzle": {
     "rows": [
-      "17th Century",
-      "1870s",
-      "Things British",
-      "Things Iranian"
+      "1920s",
+      "1940s",
+      "Ends with ING",
+      "Things Russian"
     ],
     "cols": [
-      "Military Leaders",
-      "Religious Figures",
-      "Scientists",
-      "Wars"
+      "Classic Literature",
+      "Companies",
+      "Real People",
+      "Scientific Events"
     ],
-    "hash": "ca3c51e05974a38e2ac8329201e9fc178d0cd75938e0aec0d48eb17c16c668fa",
-    "timestamp": "2025-12-28 19:29:05",
-    "qualityScore": 13.95
+    "hash": "9d2ed9a6ea4767d459b047842a18e4665d96ce44eff65b1de59a5270052391ed",
+    "timestamp": "2025-12-28 21:21:17",
+    "qualityScore": 9.87
   },
   "viableGrid": [
     [
       [
-        "Gustavus Adolphus",
-        "Maurice of Nassau",
-        "Sébastien Le Prestre de Vauban"
+        "A Farewell to Arms",
+        "The Age of Innocence",
+        "The Great Gatsby",
+        "The Sound and the Fury",
+        "The Sun Also Rises",
+        "Winnie-the-Pooh"
       ],
       [
-        "Philip"
+        "Cessna",
+        "Douglas",
+        "Piper",
+        "Rockefeller",
+        "Sikorsky"
       ],
       [
-        "Galileo",
-        "Kepler"
-      ],
-      [
-        "Bohemian Revolt",
-        "The Thirty Years War"
-      ]
-    ],
-    [
-      [
-        "Grant",
-        "Hayes"
-      ],
-      [
-        "Ellen G. White",
-        "Mary Baker Eddy"
-      ],
-      [
-        "Alexander Graham Bell",
-        "Robert Koch"
-      ],
-      [
-        "Dungan Revolt",
-        "The Franco-Prussian War"
-      ]
-    ],
-    [
-      [
-        "Captain Smith",
-        "Edward III",
-        "Henry V",
+        "Albert Fish",
+        "Billy Mitchell",
+        "Coolidge",
+        "Einstein",
+        "Emperor Taisho",
+        "Helen Keller",
+        "Hoover",
         "J.F.C. Fuller",
-        "Montgomery",
-        "The Black Prince",
-        "Wellington",
-        "William the Conqueror",
-        "Winston Churchill"
+        "Ruth",
+        "Virginia Woolf",
+        "Wilson"
       ],
       [
-        "John Wesley",
-        "Paul"
-      ],
-      [
-        "Darwin",
-        "Dirac",
-        "Edward Jenner",
-        "Faraday",
-        "Hawking",
-        "Joseph Lister"
-      ],
-      [
-        "The American Revolution",
-        "The Boer War",
-        "The Crimean War",
-        "The Hundred Years War",
-        "The Indian Rebellion",
-        "The Mau Mau Uprising",
-        "The Napoleonic Wars",
-        "The Peasants' Revolt",
-        "The Sepoy Mutiny",
-        "The Seven Years' War",
-        "The Spanish Armada",
-        "Total War",
-        "World War I",
-        "World War II"
+        "The Discovery of Penicillin"
       ]
     ],
     [
       [
-        "Cyrus the Great"
+        "1984",
+        "Animal Farm",
+        "For Whom the Bell Tolls",
+        "The Grapes of Wrath",
+        "The Little Prince"
       ],
       [
-        "Mani",
-        "Zoroaster"
+        "Honda",
+        "Messerschmitt"
       ],
       [
-        "Avicenna"
+        "Adolf Eichmann",
+        "Anne Frank",
+        "Art Tatum",
+        "Billie Holiday",
+        "Charlie Parker",
+        "Duke Ellington",
+        "Ella Fitzgerald",
+        "Enrico Fermi",
+        "Heinz Guderian",
+        "Juan Peron",
+        "Oppenheimer",
+        "Roosevelt",
+        "Syngman Rhee",
+        "Toscanini",
+        "Truman"
       ],
       [
-        "The Iran-Iraq War"
+        "The Manhattan Project"
+      ]
+    ],
+    [
+      [
+        "As I Lay Dying",
+        "Tao Te Ching"
+      ],
+      [
+        "Boeing"
+      ],
+      [
+        "Elizabeth Barrett Browning",
+        "Hawking",
+        "King",
+        "Tao Yuanming",
+        "Zhang Daoling"
+      ],
+      [
+        "The Moon Landing"
+      ]
+    ],
+    [
+      [
+        "Crime and Punishment",
+        "The Brothers Karamazov",
+        "War and Peace"
+      ],
+      [
+        "MiG"
+      ],
+      [
+        "Catherine",
+        "Krushchev",
+        "Malenkov",
+        "Rasputin",
+        "Yuri Gagarin"
+      ],
+      [
+        "The Space Race"
       ]
     ]
   ],
   "chosen": [
     [
-      "Gustavus Adolphus",
-      "Philip",
-      "Galileo",
-      "The Thirty Years War"
+      "The Great Gatsby",
+      "Rockefeller",
+      "Ruth",
+      "The Discovery of Penicillin"
     ],
     [
-      "Grant",
-      "Mary Baker Eddy",
-      "Alexander Graham Bell",
-      "The Franco-Prussian War"
+      "Animal Farm",
+      "Messerschmitt",
+      "Roosevelt",
+      "The Manhattan Project"
     ],
     [
-      "Winston Churchill",
-      "John Wesley",
-      "Darwin",
-      "World War II"
+      "As I Lay Dying",
+      "Boeing",
+      "King",
+      "The Moon Landing"
     ],
     [
-      "Cyrus the Great",
-      "Zoroaster",
-      "Avicenna",
-      "The Iran-Iraq War"
+      "War and Peace",
+      "MiG",
+      "Yuri Gagarin",
+      "The Space Race"
     ]
   ],
   "usedWords": [
-    "Gustavus Adolphus",
-    "Philip",
-    "Galileo",
-    "The Thirty Years War",
-    "Grant",
-    "Mary Baker Eddy",
-    "Alexander Graham Bell",
-    "The Franco-Prussian War",
-    "Winston Churchill",
-    "John Wesley",
-    "Darwin",
-    "World War II",
-    "Cyrus the Great",
-    "Zoroaster",
-    "Avicenna",
-    "The Iran-Iraq War"
+    "The Great Gatsby",
+    "Rockefeller",
+    "Ruth",
+    "The Discovery of Penicillin",
+    "Animal Farm",
+    "Messerschmitt",
+    "Roosevelt",
+    "The Manhattan Project",
+    "As I Lay Dying",
+    "Boeing",
+    "King",
+    "The Moon Landing",
+    "War and Peace",
+    "MiG",
+    "Yuri Gagarin",
+    "The Space Race"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -167,343 +180,343 @@
   "puzzles": [
     {
       "rows": [
-        "1950s",
-        "2001",
-        "Animal Terms",
-        "Cities in USA"
+        "1920s",
+        "1940s",
+        "Ends with ING",
+        "Things Russian"
       ],
       "cols": [
-        "Military Leaders",
-        "Oscar Winners",
+        "Classic Literature",
+        "Companies",
+        "Real People",
+        "Scientific Events"
+      ],
+      "hash": "9d2ed9a6ea4767d459b047842a18e4665d96ce44eff65b1de59a5270052391ed",
+      "timestamp": "2025-12-28 21:21:17",
+      "qualityScore": 9.87
+    },
+    {
+      "rows": [
+        "Foods",
+        "Large Countries",
+        "Mountains",
+        "Real People"
+      ],
+      "cols": [
+        "NATO Phonetic Alphabet",
         "Starts with MON",
-        "Things British"
+        "Things Argentine",
+        "Things Russian"
       ],
-      "hash": "09405e79179be1b8bfc794275678bfe342f38c4f7416a203983522e106eb2de6",
-      "timestamp": "2025-12-29 06:06:11",
-      "qualityScore": 5.6000000000000005
+      "hash": "761ab785a6e37ef6967f5cbd6a574604d8e50386c9f29677ecdb19c717c204f4",
+      "timestamp": "2025-12-29 03:01:56",
+      "qualityScore": 13.46
     },
     {
       "rows": [
-        "1950s",
-        "2001",
-        "Animal Terms",
-        "Cities in North America"
+        "1920s",
+        "1940s",
+        "Ends with ING",
+        "Things Russian"
       ],
       "cols": [
-        "Military Leaders",
-        "Oscar Winners",
-        "Starts with MON",
-        "Things British"
+        "Classic Literature",
+        "Companies",
+        "Real People",
+        "Scientific Events"
       ],
-      "hash": "1a1a503eaf65b24c44b46dd1217b07145d1e3635d5b559edb42b87abc4ecf4d4",
-      "timestamp": "2025-12-29 06:06:11",
-      "qualityScore": 5.44
+      "hash": "9d2ed9a6ea4767d459b047842a18e4665d96ce44eff65b1de59a5270052391ed",
+      "timestamp": "2025-12-28 21:21:17",
+      "qualityScore": 9.87
     },
     {
       "rows": [
-        "1950s",
-        "2001",
-        "Animal Terms",
-        "Cities"
-      ],
-      "cols": [
-        "Military Leaders",
-        "Oscar Winners",
-        "Starts with MON",
-        "Things British"
-      ],
-      "hash": "28b2bf975d5c2ba4657278a493ab8a84656839f2d82022face8a4073183a5a46",
-      "timestamp": "2025-12-29 06:06:11",
-      "qualityScore": 4.93
-    },
-    {
-      "rows": [
-        "1950s",
-        "2001",
-        "Animal Terms",
-        "Cities"
-      ],
-      "cols": [
-        "Military Leaders",
-        "Starts with MON",
-        "Things British",
-        "Things Japanese"
-      ],
-      "hash": "9a6909d33e5114a2b752af8fbe39f88e09c3d0bc83295c10ddb8f80786a31a67",
-      "timestamp": "2025-12-29 06:06:11",
-      "qualityScore": 4.609999999999999
-    },
-    {
-      "rows": [
-        "1890s",
-        "1950s",
-        "Cities",
-        "Things Indian"
-      ],
-      "cols": [
-        "Military Leaders",
-        "Starts with CHA",
-        "Things British",
-        "War Stories"
-      ],
-      "hash": "c628f4021ef124559ec9950e262351fa54f2d86eb3b0275224cd72258498d303",
-      "timestamp": "2025-12-28 22:40:34",
-      "qualityScore": 7.68
-    },
-    {
-      "rows": [
-        "1981",
-        "19th Century",
-        "Starts with CAS",
-        "Things British"
-      ],
-      "cols": [
-        "2D Animated Films",
-        "Animal Terms",
-        "Assassins",
-        "Mentioned in We Didn't Start the Fire"
-      ],
-      "hash": "5cbe59d142875b7e7f9b55cd4853b20aa56ff9246a8eb2f2471c9e621155cbec",
-      "timestamp": "2025-12-28 20:12:05",
-      "qualityScore": 8.18
-    },
-    {
-      "rows": [
-        "1981",
-        "19th Century",
-        "Starts with CAS",
-        "Things British"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Assassins",
-        "Mentioned in We Didn't Start the Fire",
-        "Things Japanese"
-      ],
-      "hash": "8f77eb96c01cc17acb895a9c42dda5e84840c56ef067fe2ad59e972987ea55ab",
-      "timestamp": "2025-12-28 20:12:05",
-      "qualityScore": 7.56
-    },
-    {
-      "rows": [
-        "1950s",
-        "1980",
-        "Cities",
-        "War Stories"
-      ],
-      "cols": [
-        "Oscar Winners",
-        "Starts with BAT",
-        "Things British",
-        "Things Japanese"
-      ],
-      "hash": "0ba1af0007d3bb807c32744d0a54bf75d67eb70137c462de41dfec8cd82fd49e",
-      "timestamp": "2025-12-29 01:33:08",
-      "qualityScore": 6.47
-    },
-    {
-      "rows": [
-        "17th Century",
-        "19th Century",
-        "Hundred Years' War",
-        "Things Bohemian"
-      ],
-      "cols": [
-        "Cities",
-        "Military Conflicts",
-        "Religious Figures",
-        "Royalty"
-      ],
-      "hash": "1bf677a7d14843d8886dfc63012678cf1bec800bc2ba42b73d078d2b243b46c7",
-      "timestamp": "2025-12-28 20:27:35",
-      "qualityScore": 10.98
-    },
-    {
-      "rows": [
-        "1870s",
-        "Animal Terms",
+        "1940s",
         "Crime Stories",
+        "Ends with ERS",
+        "Mammals"
+      ],
+      "cols": [
+        "Black and White Films",
+        "Classic Literature",
+        "Real People",
+        "Superheroes"
+      ],
+      "hash": "206fbd0c78f5dd8f05536132bed66541d9e0a17292ae68d60e7c9d931a81f0db",
+      "timestamp": "2025-12-29 08:52:42",
+      "qualityScore": 6.76
+    },
+    {
+      "rows": [
+        "1940s",
+        "Crime Stories",
+        "Ends with ERS",
+        "Omnivores"
+      ],
+      "cols": [
+        "Black and White",
+        "Classic Literature",
+        "Real People",
+        "Superheroes"
+      ],
+      "hash": "707846d120a34dbe9edbbfb33fdb62ab10030fd5cce552bd84178e021c16d5f6",
+      "timestamp": "2025-12-29 08:52:42",
+      "qualityScore": 6.15
+    },
+    {
+      "rows": [
+        "1940s",
+        "Crime Stories",
+        "Ends with ERS",
+        "Mammals"
+      ],
+      "cols": [
+        "Black and White",
+        "Classic Literature",
+        "Real People",
+        "Superheroes"
+      ],
+      "hash": "ad6e9c6164fddb2a07c68c06893ca2e07193a329a93374ae4ece7778ef7ed3e1",
+      "timestamp": "2025-12-29 08:52:42",
+      "qualityScore": 6.109999999999999
+    },
+    {
+      "rows": [
+        "13th Century",
+        "18th Century",
+        "Contains an Acute Accent",
+        "Han Dynasty"
+      ],
+      "cols": [
+        "Classic Literature",
+        "Military Conflicts",
+        "Real People",
+        "Weapons"
+      ],
+      "hash": "c2050fe70374e8a7db1f05dd528469ae358a17f3683aae3631d41e294a8fb40b",
+      "timestamp": "2025-12-29 02:11:11",
+      "qualityScore": 9.94
+    },
+    {
+      "rows": [
+        "1970s",
+        "2003",
+        "Mentioned in We Didn't Start the Fire",
         "Ming Dynasty"
       ],
       "cols": [
+        "Fantasy Stories",
+        "Military Conflicts",
+        "Real People",
+        "War Stories"
+      ],
+      "hash": "66f7336426cf5f57d46d2b8f1971996cdd6bfa435a77c329353abc295957a9ca",
+      "timestamp": "2025-12-29 06:47:03",
+      "qualityScore": 9.61
+    },
+    {
+      "rows": [
+        "1920s",
+        "Black and White",
+        "Red Things",
+        "Things Russian"
+      ],
+      "cols": [
+        "1940s",
         "Classic Literature",
-        "Ends with ION",
-        "Military Leaders",
-        "Things Japanese"
+        "Companies",
+        "Omnivores"
       ],
-      "hash": "4470204aa9137f6cc1cbb6b65f7ff18cb66fa302d1b00992418242f13c1f82ed",
-      "timestamp": "2025-12-28 18:57:50",
-      "qualityScore": 8.830000000000002
+      "hash": "01d2d337cdec7c172a53a131277bd973771d252fd45c0417dfe58c64f0377be9",
+      "timestamp": "2025-12-28 23:15:04",
+      "qualityScore": 9.62
     },
     {
       "rows": [
-        "1910s",
-        "Ends with ION",
-        "Mentioned in We Didn't Start the Fire",
-        "Napoleonic Wars"
-      ],
-      "cols": [
-        "Ships",
-        "Songs",
-        "Things British",
-        "Wars"
-      ],
-      "hash": "0e0d6e4f8072929148eb2ee2f7440fd66e01e237357649b591d9855aad21eb15",
-      "timestamp": "2025-12-29 01:55:48",
-      "qualityScore": 7.69
-    },
-    {
-      "rows": [
-        "1910s",
-        "Ends with ION",
-        "Mentioned in We Didn't Start the Fire",
-        "Napoleonic Wars"
+        "18th Century",
+        "1970s",
+        "Cities in North America",
+        "Ends with AND"
       ],
       "cols": [
         "Military Conflicts",
-        "Ships",
-        "Songs",
-        "Things British"
-      ],
-      "hash": "8881e9ee1f24426b34069f641e12a8653e5f8132bc7d1541b2fdb27959cfb699",
-      "timestamp": "2025-12-29 01:55:48",
-      "qualityScore": 7.279999999999999
-    },
-    {
-      "rows": [
-        "1950s",
-        "Cities",
-        "Ends with AND",
-        "World War II"
-      ],
-      "cols": [
-        "Cold War",
-        "Military Conflicts",
-        "Shipwrecks",
+        "Romance Stories",
+        "Royalty",
         "US Presidents"
       ],
-      "hash": "fa606875dbd2064abe8cf76f88efb35a0d6b01c01babba3b02fed5f97d78a170",
-      "timestamp": "2025-12-29 08:15:09",
-      "qualityScore": 6.9
+      "hash": "d2bdebf9da4aace8614b23e239107bdbac50a4e328c11bc03e729145c849c0bc",
+      "timestamp": "2025-12-29 00:26:59",
+      "qualityScore": 5.62
     },
     {
       "rows": [
-        "15th Century",
         "1910s",
-        "Things British",
-        "Things Japanese"
+        "1970s",
+        "Classic Literature",
+        "Foods"
       ],
       "cols": [
         "Ends with ING",
-        "Scientists",
-        "Ships",
-        "Wars"
+        "Romance Stories",
+        "Things Canadian",
+        "Things Russian"
       ],
-      "hash": "ab4ac48a22050b9ce1c2102b33f97257fa54952c83f6cbc8e495a2888879944f",
-      "timestamp": "2025-12-29 05:32:07",
-      "qualityScore": 7.0200000000000005
+      "hash": "546600a06280b957398492861a326b6f35a3839b7a1d527c46164241e884a886",
+      "timestamp": "2025-12-29 06:30:42",
+      "qualityScore": 5.03
     },
     {
       "rows": [
-        "19th Century",
-        "1st Century BC",
+        "1910s",
+        "1970s",
+        "Classic Literature",
+        "Foods"
+      ],
+      "cols": [
+        "Real People",
+        "Romance Stories",
+        "Things Canadian",
+        "Things Russian"
+      ],
+      "hash": "8be7f29e7337fda7c0855ed8543e6afa43ec9b605ff9da4bec77dd7f68042118",
+      "timestamp": "2025-12-29 06:30:42",
+      "qualityScore": 5.03
+    },
+    {
+      "rows": [
+        "1940s",
+        "Countries in Asia",
+        "Ends with ARY",
+        "Mentioned in We Didn't Start the Fire"
+      ],
+      "cols": [
         "Cold War",
-        "Song Dynasty"
+        "Countries that No Longer Exist",
+        "Omnivores",
+        "Real People"
       ],
-      "cols": [
-        "Battles",
-        "Military Leaders",
-        "Things British",
-        "Wars"
-      ],
-      "hash": "7a5a843473d038f55b0e51e16ef57c00d0a471907d55cba260f0ead0ec747aba",
-      "timestamp": "2025-12-29 02:19:28",
-      "qualityScore": 10.240000000000002
+      "hash": "b4aaa3f5ac463390acf5485296693addd78b0c5de7fd407e2da995fd1bc33426",
+      "timestamp": "2025-12-29 08:51:53",
+      "qualityScore": 3.63
     },
     {
       "rows": [
-        "1890s",
-        "Contains an Acute Accent",
+        "1940s",
+        "Companies",
+        "Crime Stories",
+        "Mammals"
+      ],
+      "cols": [
+        "1970s",
+        "Black and White",
+        "Starts with GOO",
+        "Things Russian"
+      ],
+      "hash": "98e3388c6947d45d7bdfdcf19a725ef87dc41c0a9734ed38026f3c1be73649d0",
+      "timestamp": "2025-12-29 08:48:26",
+      "qualityScore": 6.380000000000001
+    },
+    {
+      "rows": [
+        "1940s",
+        "Companies",
+        "Crime Stories",
+        "Omnivores"
+      ],
+      "cols": [
+        "Black and White",
+        "Real People",
+        "Starts with GOO",
+        "Things Russian"
+      ],
+      "hash": "e3372375dfdcaa710538fe3ccae633ca0cd86ef672bb794210cc12c3026ade44",
+      "timestamp": "2025-12-29 08:48:27",
+      "qualityScore": 6.300000000000001
+    },
+    {
+      "rows": [
+        "1940s",
+        "Companies",
+        "Crime Stories",
+        "Mammals"
+      ],
+      "cols": [
+        "Black and White",
+        "Real People",
+        "Starts with GOO",
+        "Things Russian"
+      ],
+      "hash": "567215571b609c2b7855799c5be3a1b549b35d0a4b7692a4625e0defd5024f1b",
+      "timestamp": "2025-12-29 08:48:27",
+      "qualityScore": 6.260000000000001
+    },
+    {
+      "rows": [
+        "1970s",
+        "Cities in USA",
+        "Foods",
+        "Oceanliners"
+      ],
+      "cols": [
+        "Real People",
+        "Romance Stories",
+        "Starts with CON",
+        "Things Canadian"
+      ],
+      "hash": "1a8a00b58d2f1f25a7dc19d2dab25f0b7b3776e5aaa84c452ea42b1d861233e9",
+      "timestamp": "2025-12-29 07:53:12",
+      "qualityScore": 5.970000000000001
+    },
+    {
+      "rows": [
+        "1940s",
         "Han Dynasty",
-        "Things British"
+        "Song Dynasty",
+        "Things Russian"
       ],
       "cols": [
         "Classic Literature",
-        "Founders of Religious Movements",
         "Military Conflicts",
-        "Military Leaders"
+        "Real People",
+        "Weapons"
       ],
-      "hash": "438fc445f86cbf3209126d8be93bab970c09cc7757c02e9370cf3853d2f11e2f",
-      "timestamp": "2025-12-28 23:12:20",
-      "qualityScore": 10.060000000000002
+      "hash": "4fa5d67ddda2d5a1b16f4d8862120add03ced18fe7a0dd45cfe3c672c02abe10",
+      "timestamp": "2025-12-29 02:41:32",
+      "qualityScore": 10.77
     },
     {
       "rows": [
-        "1890s",
-        "Contains an Acute Accent",
-        "Han Dynasty",
-        "Things British"
+        "1910s",
+        "1970s",
+        "Mentioned in We Didn't Start the Fire",
+        "Pliocene Epoch"
       ],
       "cols": [
-        "Classic Literature",
-        "Military Conflicts",
-        "Military Leaders",
-        "Religious Figures"
-      ],
-      "hash": "5fa8fe95f830db0a0735d7b95a41b229ae61a0b84a539e79f696bc53cc426b22",
-      "timestamp": "2025-12-28 23:12:20",
-      "qualityScore": 8.71
-    },
-    {
-      "rows": [
-        "17th Century",
-        "1870s",
-        "Things British",
-        "Things Iranian"
-      ],
-      "cols": [
-        "Military Leaders",
-        "Religious Figures",
-        "Scientists",
-        "Wars"
-      ],
-      "hash": "ca3c51e05974a38e2ac8329201e9fc178d0cd75938e0aec0d48eb17c16c668fa",
-      "timestamp": "2025-12-28 19:29:05",
-      "qualityScore": 13.95
-    },
-    {
-      "rows": [
-        "17th Century",
-        "1870s",
-        "Things British",
-        "Things Iranian"
-      ],
-      "cols": [
-        "Military Conflicts",
-        "Military Leaders",
-        "Religious Figures",
-        "Scientists"
-      ],
-      "hash": "69ec6a2c616f34012380e5eb335ea2df762e7e1d52a87a7a4683b12509e8e2d2",
-      "timestamp": "2025-12-28 19:29:05",
-      "qualityScore": 13.54
-    },
-    {
-      "rows": [
-        "17th Century",
-        "1870s",
-        "Things British",
-        "Things Iranian"
-      ],
-      "cols": [
+        "Companies",
         "Ends with ION",
-        "Religious Figures",
-        "Scientists",
-        "Wars"
+        "Musicians",
+        "Songs"
       ],
-      "hash": "8f77f2fad69a0cbdbd55450d236d003cea27fa095f04e141fc366d684205a652",
-      "timestamp": "2025-12-28 19:29:05",
-      "qualityScore": 13.49
+      "hash": "cdae12d0d1586efe9d8ca114e6f9ec546b9e9c4bc8e6fb49b0ec8712105b1fa9",
+      "timestamp": "2025-12-29 06:32:16",
+      "qualityScore": 5.74
+    },
+    {
+      "rows": [
+        "1910s",
+        "1970s",
+        "Mentioned in We Didn't Start the Fire",
+        "Quaternary Period"
+      ],
+      "cols": [
+        "Companies",
+        "Ends with ION",
+        "Musicians",
+        "Songs"
+      ],
+      "hash": "43dfec670160556ccfa92e05b2655dc70c96feba1cc3f8246d927d6b57c94924",
+      "timestamp": "2025-12-29 06:32:16",
+      "qualityScore": 5.73
     }
   ],
   "message": "Puzzle saved successfully!"

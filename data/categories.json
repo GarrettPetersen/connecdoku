@@ -474,6 +474,7 @@
     "Armageddon",
     "Harry Potter and the Chamber of Secrets",
     "Mulan",
+    "Saving Private Ryan",
     "Shakespeare in Love"
   ],
   "1999": [
@@ -503,6 +504,7 @@
     "In the Mood for Love",
     "Silver",
     "The Emperor's New Groove",
+    "The Patriot",
     "Unbreakable"
   ],
   "2001": [
@@ -594,6 +596,7 @@
     "Twilight"
   ],
   "2006": [
+    "300",
     "Cars",
     "Deja Vu",
     "Dreamgirls",
@@ -842,6 +845,8 @@
   "11th Century": [
     "1066",
     "Avicenna",
+    "Harald Hardrada",
+    "Harold Godwinson",
     "Macbeth",
     "Movable Type Printing",
     "Philip",
@@ -1092,11 +1097,13 @@
     "James Boswell"
   ],
   "1770s": [
+    "1776",
     "Give me liberty or give me death",
     "The American Revolution"
   ],
   "1780s": [
     "Don Giovanni",
+    "July 14th, 1789",
     "Laki Eruption",
     "The American Revolution",
     "The French Revolution",
@@ -1241,10 +1248,12 @@
     "John Wilkes Booth",
     "Johnson",
     "Joseph Lister",
+    "July 1st, 1863",
     "Les Misérables",
     "Lincoln",
     "Little Women",
     "Mary Baker Eddy",
+    "Pickett's Charge",
     "Robert E. Lee",
     "The American Civil War",
     "The Italian Unification",
@@ -1302,9 +1311,11 @@
     "Triple Alliance"
   ],
   "18th Century": [
+    "1776",
     "Adams",
     "Baal Shem Tov",
     "Bach",
+    "Bastille",
     "Beethoven",
     "Catherine",
     "Charlotte Corday",
@@ -1319,8 +1330,12 @@
     "James Boswell",
     "Jefferson",
     "John Wesley",
+    "July 14th, 1789",
+    "Lafayette",
     "Laki Eruption",
+    "Louis XVI",
     "Madison",
+    "Marie Antoinette",
     "Michel Ney",
     "Mozart",
     "Napoleon Bonaparte",
@@ -1547,6 +1562,7 @@
     "Juan Peron",
     "Judy",
     "June 4th, 1942",
+    "June 6th, 1944",
     "Kate",
     "Kind Hearts and Coronets",
     "Lancaster",
@@ -1562,7 +1578,9 @@
     "Mustang",
     "Nuclear Bombing of Hiroshima",
     "Nuclear Bombing of Nagasaki",
+    "Operation Overlord",
     "Oppenheimer",
+    "Pearl Harbor",
     "Pinocchio",
     "Prokofiev",
     "Riddler",
@@ -2246,6 +2264,7 @@
     "Resident Evil",
     "Robin Hood: Prince of Thieves",
     "Rush",
+    "Saving Private Ryan",
     "Say It Ain't So",
     "Scent of a Woman",
     "Schindler's List",
@@ -2394,6 +2413,7 @@
     "Johnson",
     "Joseph Lister",
     "Joseph Smith",
+    "July 1st, 1863",
     "June 18th, 1815",
     "Krakatoa",
     "Krakatoa Eruption",
@@ -2430,6 +2450,7 @@
     "Oscar",
     "Ozymandias",
     "Peugeot",
+    "Pickett's Charge",
     "Pierce",
     "Pinocchio",
     "Poe",
@@ -2572,6 +2593,7 @@
   "2000s": [
     "1Q84",
     "2046",
+    "300",
     "9/11",
     "A Beautiful Mind",
     "Agent 47",
@@ -2702,6 +2724,7 @@
     "The Lord of the Rings: The Return of the King",
     "The Lord of the Rings: The Two Towers",
     "The Map of Time",
+    "The Patriot",
     "The Phantom of the Opera",
     "The Polar Express",
     "The Princess and the Frog",
@@ -3259,6 +3282,7 @@
     "Juggernaut",
     "June 28th, 1914",
     "June 4th, 1942",
+    "June 6th, 1944",
     "Jurassic Park",
     "Kagemusha",
     "Kampuchea",
@@ -3390,6 +3414,7 @@
     "One Flew Over the Cuckoo's Nest",
     "One Hundred Years of Solitude",
     "One small step for man",
+    "Operation Overlord",
     "Oppenheimer",
     "Ordinary People",
     "Othello",
@@ -3402,6 +3427,7 @@
     "Papa",
     "Paul",
     "Payola Scandal",
+    "Pearl Harbor",
     "Performance",
     "Peter",
     "Peter Pan",
@@ -3467,6 +3493,7 @@
     "Sam the Eagle",
     "Sanjuro",
     "Santayana",
+    "Saving Private Ryan",
     "Say It Ain't So",
     "Scarface",
     "Scent of a Woman",
@@ -3774,6 +3801,7 @@
     "12 Years a Slave",
     "1Q84",
     "2046",
+    "300",
     "9/11",
     "A Beautiful Mind",
     "A Good Day to Die Hard",
@@ -4032,6 +4060,7 @@
     "The Map of the Sky",
     "The Mitchells vs the Machines",
     "The Opioid Epidemic",
+    "The Patriot",
     "The Phantom of the Opera",
     "The Polar Express",
     "The Revenant",
@@ -4257,6 +4286,7 @@
     "Hippocrates",
     "Hundred Schools of Thought",
     "Know thyself",
+    "Leonidas",
     "Oedipus Rex",
     "Plato",
     "Socrates",
@@ -4265,7 +4295,9 @@
     "Temple of Castor and Pollux",
     "Temple of Saturn",
     "The Ramayana",
-    "The unexamined life is not worth living"
+    "The unexamined life is not worth living",
+    "Thermopylae",
+    "Xerxes"
   ],
   "6th Century": [
     "Bodhidharma",
@@ -4353,6 +4385,7 @@
     "The Witcher"
   ],
   "Action Stories": [
+    "300",
     "A Better Tomorrow",
     "A Fistful of Dollars",
     "A Good Day to Die Hard",
@@ -4401,6 +4434,7 @@
     "Red Dead Redemption",
     "Red Dead Redemption 2",
     "Robin Hood: Prince of Thieves",
+    "Saving Private Ryan",
     "Sin City",
     "Sin City: A Dame to Kill For",
     "Source Code",
@@ -4419,6 +4453,7 @@
     "The Lord of the Rings: The Return of the King",
     "The Lord of the Rings: The Two Towers",
     "The Matrix",
+    "The Patriot",
     "The Philadelphia Experiment",
     "The Terminator",
     "Vantage Point",
@@ -4892,6 +4927,7 @@
     "Hannibal",
     "Jing Ke",
     "Julius Caesar",
+    "Leonidas",
     "Li Si",
     "Liu Bei",
     "Marcus Aurelius",
@@ -4915,6 +4951,7 @@
     "Trajan",
     "Vespasian",
     "Wang Xizhi",
+    "Xerxes",
     "Zhang Heng"
   ],
   "Ancient Rulers": [
@@ -4941,7 +4978,8 @@
   ],
   "Ancient Times": [
     "Let there be light",
-    "Qin"
+    "Qin",
+    "Thermopylae"
   ],
   "Animal Species": [
     "Albatross",
@@ -5745,6 +5783,19 @@
   "Atmospheric Changes": [
     "Great Oxygenation Event"
   ],
+  "Attack on Pearl Harbor": [
+    "Akagi",
+    "Arizona",
+    "December 7th, 1941",
+    "Hawaii",
+    "Hiryu",
+    "Kaga",
+    "Kate",
+    "Pearl Harbor",
+    "Soryu",
+    "Val",
+    "Zero"
+  ],
   "Australian Architecture": [
     "Sydney Opera House"
   ],
@@ -5833,6 +5884,18 @@
   "Battle Royale": [
     "Fortnite"
   ],
+  "Battle of Gettysburg": [
+    "Gettysburg",
+    "July 1st, 1863",
+    "Pickett's Charge",
+    "Robert E. Lee"
+  ],
+  "Battle of Hastings": [
+    "1066",
+    "Harald Hardrada",
+    "Harold Godwinson",
+    "William the Conqueror"
+  ],
   "Battle of Midway": [
     "Akagi",
     "Dauntless",
@@ -5852,6 +5915,12 @@
     "Wildcat",
     "Yorktown",
     "Zero"
+  ],
+  "Battle of Thermopylae": [
+    "300",
+    "Leonidas",
+    "Thermopylae",
+    "Xerxes"
   ],
   "Battle of Waterloo": [
     "June 18th, 1815",
@@ -5886,7 +5955,8 @@
     "Siege of Calais",
     "Siege of Orléans",
     "Siege of Suiyang",
-    "The Battle of Stalingrad"
+    "The Battle of Stalingrad",
+    "Thermopylae"
   ],
   "Battleships": [
     "Bellerophon",
@@ -6561,6 +6631,7 @@
     "Basilica Aemilia",
     "Basilica Porcia",
     "Basilica Sempronia",
+    "Bastille",
     "Blue Mosque",
     "Bronze Bird Terrace",
     "Buckingham Palace",
@@ -9434,6 +9505,18 @@
     "STR",
     "WIS"
   ],
+  "D-Day": [
+    "Eisenhower",
+    "Gold",
+    "June 6th, 1944",
+    "Juno",
+    "Normandy",
+    "Omaha",
+    "Operation Overlord",
+    "Saving Private Ryan",
+    "Sword",
+    "Utah"
+  ],
   "D-Day Beaches": [
     "Gold",
     "Juno",
@@ -9475,8 +9558,10 @@
     "10/7",
     "1066",
     "11/22/63",
+    "1776",
     "1984",
     "2046",
+    "300",
     "747",
     "9/11",
     "April 14th, 1865",
@@ -9485,10 +9570,13 @@
     "December 7th, 1941",
     "Four score and seven years ago",
     "Ides of March",
+    "July 14th, 1789",
+    "July 1st, 1863",
     "July 2nd, 626",
     "June 18th, 1815",
     "June 28th, 1914",
     "June 4th, 1942",
+    "June 6th, 1944",
     "November 22nd, 1963",
     "The 5th of November"
   ],
@@ -10156,6 +10244,7 @@
     "Salem",
     "Salem's Lot",
     "Sanjuro",
+    "Saving Private Ryan",
     "Saw",
     "Scarface",
     "Scent of a Woman",
@@ -10278,6 +10367,7 @@
     "The Nightmare Before Christmas",
     "The Odyssey",
     "The Old Man and the Sea",
+    "The Patriot",
     "The Phantom of the Opera",
     "The Philadelphia Experiment",
     "The Polar Express",
@@ -10779,6 +10869,9 @@
   "Ends with 2PM": [
     "2PM"
   ],
+  "Ends with 300": [
+    "300"
+  ],
   "Ends with 380": [
     "Airbus A380"
   ],
@@ -10794,11 +10887,20 @@
   "Ends with 747": [
     "747"
   ],
+  "Ends with 776": [
+    "1776"
+  ],
+  "Ends with 789": [
+    "July 14th, 1789"
+  ],
   "Ends with 81)": [
     "The Hand (1981)"
   ],
   "Ends with 815": [
     "June 18th, 1815"
+  ],
+  "Ends with 863": [
+    "July 1st, 1863"
   ],
   "Ends with 865": [
     "April 14th, 1865"
@@ -10814,6 +10916,9 @@
   ],
   "Ends with 942": [
     "June 4th, 1942"
+  ],
+  "Ends with 944": [
+    "June 6th, 1944"
   ],
   "Ends with 963": [
     "November 22nd, 1963"
@@ -10885,6 +10990,7 @@
     "Enchilada",
     "Feijoada",
     "Grenada",
+    "Harald Hardrada",
     "Nevada",
     "Prada",
     "The Spanish Armada"
@@ -11655,6 +11761,9 @@
   "Ends with BOO": [
     "Bamboo"
   ],
+  "Ends with BOR": [
+    "Pearl Harbor"
+  ],
   "Ends with BOS": [
     "Phobos"
   ],
@@ -11898,6 +12007,9 @@
   ],
   "Ends with DAR": [
     "Cedar"
+  ],
+  "Ends with DAS": [
+    "Leonidas"
   ],
   "Ends with DAY": [
     "Billie Holiday",
@@ -13440,7 +13552,8 @@
   ],
   "Ends with IOT": [
     "George Eliot",
-    "Judas Iscariot"
+    "Judas Iscariot",
+    "The Patriot"
   ],
   "Ends with IPE": [
     "Sao Tome and Principe"
@@ -13795,6 +13908,9 @@
   "Ends with LAD": [
     "Olivier Salad"
   ],
+  "Ends with LAE": [
+    "Thermopylae"
+  ],
   "Ends with LAF": [
     "Olaf"
   ],
@@ -13986,6 +14102,7 @@
     "Vanilla"
   ],
   "Ends with LLE": [
+    "Bastille",
     "Belle",
     "Marseille",
     "Melville",
@@ -14387,7 +14504,8 @@
   ],
   "Ends with NDY": [
     "Burgundy",
-    "Cotton Candy"
+    "Cotton Candy",
+    "Normandy"
   ],
   "Ends with NEA": [
     "Equatorial Guinea",
@@ -14991,6 +15109,7 @@
     "Concord",
     "Ford",
     "Hartford",
+    "Operation Overlord",
     "Sword",
     "USS Gerald R. Ford"
   ],
@@ -15455,6 +15574,7 @@
   ],
   "Ends with RGE": [
     "George",
+    "Pickett's Charge",
     "The Madness of King George"
   ],
   "Ends with RGO": [
@@ -15906,6 +16026,7 @@
     "Edison",
     "Elementary, my dear Watson",
     "Emily Dickinson",
+    "Harold Godwinson",
     "Harrison",
     "Hudson",
     "Jackson",
@@ -16215,7 +16336,9 @@
   "Ends with TTE": [
     "Baguette",
     "Gazette",
-    "Jean Bernadotte"
+    "Jean Bernadotte",
+    "Lafayette",
+    "Marie Antoinette"
   ],
   "Ends with TTI": [
     "Spaghetti"
@@ -16676,6 +16799,9 @@
   "Ends with XEO": [
     "Banh Xeo"
   ],
+  "Ends with XES": [
+    "Xerxes"
+  ],
   "Ends with XIA": [
     "Xia"
   ],
@@ -16684,6 +16810,9 @@
   ],
   "Ends with XUS": [
     "Lexus"
+  ],
+  "Ends with XVI": [
+    "Louis XVI"
   ],
   "Ends with Y 2": [
     "Queen Mary 2"
@@ -16702,6 +16831,7 @@
   ],
   "Ends with YAN": [
     "Cyan",
+    "Saving Private Ryan",
     "Sima Yan",
     "Xiao Yan"
   ],
@@ -16976,6 +17106,7 @@
     "Beowulf",
     "Gilgamesh",
     "Hercules",
+    "Leonidas",
     "Odysseus",
     "Perseus",
     "Theseus"
@@ -17126,7 +17257,9 @@
     "Nuclear Bombing of Hiroshima",
     "Nuclear Bombing of Nagasaki",
     "Opening of Atlantic Ocean",
+    "Operation Overlord",
     "Permian-Triassic Extinction",
+    "Pickett's Charge",
     "Pinatubo Eruption",
     "Pompeii",
     "Profumo Affair",
@@ -19128,6 +19261,18 @@
     "Bucentaure",
     "Redoutable"
   ],
+  "French Revolution": [
+    "Bastille",
+    "Charlotte Corday",
+    "July 14th, 1789",
+    "Lafayette",
+    "Louis XVI",
+    "Marie Antoinette",
+    "Napoleon Bonaparte",
+    "The French Revolution",
+    "The Haitian Revolution",
+    "Versailles"
+  ],
   "French Words": [
     "Chocolat"
   ],
@@ -19359,6 +19504,7 @@
     "Hermes",
     "Horse",
     "Iliad",
+    "Leonidas",
     "Morpheus",
     "Odyssey",
     "Oedipus Rex",
@@ -19596,6 +19742,7 @@
     "Basilica Aemilia",
     "Basilica Porcia",
     "Basilica Sempronia",
+    "Bastille",
     "Bronze Bird Terrace",
     "Circus Maximus",
     "Colosseum",
@@ -19612,6 +19759,7 @@
     "Temple of Castor and Pollux",
     "Temple of Saturn",
     "Theatre of Pompey",
+    "Thermopylae",
     "Waterloo",
     "Xuanwu Gate"
   ],
@@ -20940,6 +21088,7 @@
     "Mykonos",
     "Naples",
     "Netherlands",
+    "Normandy",
     "North Macedonia",
     "Norway",
     "Olympus",
@@ -20975,6 +21124,7 @@
     "Sweden",
     "Switzerland",
     "Tenerife",
+    "Thermopylae",
     "Transnistria",
     "Ukraine",
     "United Kingdom",
@@ -21081,6 +21231,7 @@
     "Oregon",
     "Palm Springs",
     "Panama",
+    "Pearl Harbor",
     "Phoenix",
     "Pierre",
     "Prince of Wales",
@@ -21568,6 +21719,8 @@
     "Du Fu",
     "Edward III",
     "Good King Wenceslas",
+    "Harald Hardrada",
+    "Harold Godwinson",
     "Henry V",
     "Huizong",
     "Joan of Arc",
@@ -21760,7 +21913,9 @@
     "Handel",
     "Hannibal",
     "Hannibal Lecter",
+    "Harald Hardrada",
     "Harding",
+    "Harold Godwinson",
     "Harrison",
     "Hawkeye",
     "Hawking",
@@ -21836,10 +21991,12 @@
     "Kublai Khan",
     "Kurosawa",
     "L. Ron Hubbard",
+    "Lafayette",
     "Lando",
     "Laozi",
     "Lee Harvey Oswald",
     "Leo",
+    "Leonidas",
     "Lex Luthor",
     "Li Bai",
     "Li Jiancheng",
@@ -21854,6 +22011,7 @@
     "Loki",
     "Louis Armstrong",
     "Louis Pasteur",
+    "Louis XVI",
     "Luigi",
     "Macbeth",
     "Madison",
@@ -22049,6 +22207,7 @@
     "Winston Churchill",
     "Wolverine",
     "Wright Brothers",
+    "Xerxes",
     "Xiao Yan",
     "Xiao Ze",
     "Yang Jian",
@@ -22413,6 +22572,8 @@
     "Mongol Conquest of China",
     "Nuclear Bombing of Hiroshima",
     "Nuclear Bombing of Nagasaki",
+    "Operation Overlord",
+    "Pickett's Charge",
     "Red Turban Rebellion",
     "Siege of Calais",
     "Siege of Orléans",
@@ -22453,6 +22614,7 @@
     "The Trojan War",
     "The Vietnam War",
     "The Yugoslav Wars",
+    "Thermopylae",
     "Third Servile War",
     "Total War",
     "World War I",
@@ -22486,6 +22648,8 @@
     "Guan Yu",
     "Gustavus Adolphus",
     "Hannibal",
+    "Harald Hardrada",
+    "Harold Godwinson",
     "Harrison",
     "Hayes",
     "Heinz Guderian",
@@ -22502,6 +22666,8 @@
     "John Boyd",
     "John of Bohemia",
     "Kublai Khan",
+    "Lafayette",
+    "Leonidas",
     "Liu Bei",
     "Mark Antony",
     "Maurice of Nassau",
@@ -22536,6 +22702,7 @@
     "Wellington",
     "William the Conqueror",
     "Winston Churchill",
+    "Xerxes",
     "Yue Fei",
     "Zhu Yuanzhang",
     "Ögedei Khan"
@@ -23180,6 +23347,7 @@
     "12 Years a Slave",
     "2001: A Space Odyssey",
     "2046",
+    "300",
     "A Beautiful Mind",
     "A Better Tomorrow",
     "A Bug's Life",
@@ -23491,6 +23659,7 @@
     "Rogue One",
     "Safety Not Guaranteed",
     "Sanjuro",
+    "Saving Private Ryan",
     "Saw",
     "Scarface",
     "Scent of a Woman",
@@ -23604,6 +23773,7 @@
     "The Muppet Christmas Carol",
     "The Naked Gun",
     "The Nightmare Before Christmas",
+    "The Patriot",
     "The Phantom Menace",
     "The Phantom of the Opera",
     "The Philadelphia Experiment",
@@ -24603,7 +24773,8 @@
     "Dante's Peak"
   ],
   "Movies directed by Roland Emmerich": [
-    "Stargate"
+    "Stargate",
+    "The Patriot"
   ],
   "Movies directed by Roman Polanski": [
     "Chinatown"
@@ -24699,6 +24870,7 @@
     "E.T.",
     "Jaws",
     "Jurassic Park",
+    "Saving Private Ryan",
     "Schindler's List",
     "The Color Purple",
     "West Side Story"
@@ -26961,6 +27133,7 @@
   ],
   "Movies featuring Matt Damon": [
     "Oppenheimer",
+    "Saving Private Ryan",
     "The Departed"
   ],
   "Movies featuring Matt Dillon": [
@@ -26997,7 +27170,8 @@
   ],
   "Movies featuring Mel Gibson": [
     "Braveheart",
-    "Pocahontas"
+    "Pocahontas",
+    "The Patriot"
   ],
   "Movies featuring Melanie Griffith": [
     "Working Girl"
@@ -27915,6 +28089,7 @@
   "Movies featuring Tom Hanks": [
     "Big",
     "Forrest Gump",
+    "Saving Private Ryan",
     "The Da Vinci Code",
     "The Green Mile",
     "The Polar Express",
@@ -29261,6 +29436,26 @@
     "Trinity",
     "Tsar Bomba"
   ],
+  "Numbers": [
+    "10/7",
+    "1066",
+    "1776",
+    "1984",
+    "2046",
+    "300",
+    "747",
+    "9/11",
+    "C",
+    "D",
+    "I",
+    "Ix",
+    "L",
+    "M",
+    "Pi",
+    "R",
+    "V",
+    "X"
+  ],
   "Nurses": [
     "Clara Barton",
     "Florence Nightingale"
@@ -29675,6 +29870,7 @@
     "Platoon",
     "Rain Man",
     "Rocky",
+    "Saving Private Ryan",
     "Scent of a Woman",
     "Schindler's List",
     "Shakespeare in Love",
@@ -30202,7 +30398,9 @@
     "Handel",
     "Hannibal",
     "Hannibal Lecter",
+    "Harald Hardrada",
     "Harding",
+    "Harold Godwinson",
     "Harriet Beecher Stowe",
     "Harriet Tubman",
     "Harrison",
@@ -30294,11 +30492,13 @@
     "Kurosawa",
     "L. Ron Hubbard",
     "Lady Jane Grey",
+    "Lafayette",
     "Lando",
     "Laozi",
     "Lee Harvey Oswald",
     "Lenore",
     "Leo",
+    "Leonidas",
     "Lex Luthor",
     "Li Bai",
     "Li Jiancheng",
@@ -30314,6 +30514,7 @@
     "Lola Montez",
     "Louis Armstrong",
     "Louis Pasteur",
+    "Louis XVI",
     "Louisa May Alcott",
     "Luigi",
     "Mabel Gardiner Hubbard",
@@ -30328,6 +30529,7 @@
     "Marciano",
     "Marco Polo",
     "Marcus Aurelius",
+    "Marie Antoinette",
     "Marie Curie",
     "Marilyn Monroe",
     "Mario",
@@ -30552,6 +30754,7 @@
     "Working Girl",
     "Wright Brothers",
     "Wu Zetian",
+    "Xerxes",
     "Xiao Yan",
     "Xiao Ze",
     "Yang Jian",
@@ -30599,6 +30802,7 @@
     "Red Dead Redemption",
     "Romance of the Three Kingdoms",
     "Sanjuro",
+    "Saving Private Ryan",
     "Schindler's List",
     "Sense and Sensibility",
     "Seven Samurai",
@@ -30614,6 +30818,7 @@
     "The Last Emperor",
     "The Madness of King George",
     "The Magnificent Seven",
+    "The Patriot",
     "The Remains of the Day",
     "The Searchers",
     "The Seven Magnificent Gladiators",
@@ -30845,6 +31050,7 @@
     "Bangladesh",
     "Banks",
     "Barbados",
+    "Bastille",
     "Basutoland",
     "Baton Rouge",
     "Bay of Pigs",
@@ -31129,6 +31335,7 @@
     "Nicobar",
     "Niger",
     "Nigeria",
+    "Normandy",
     "North Atlantic",
     "North Korea",
     "North Macedonia",
@@ -31158,6 +31365,7 @@
     "Papua New Guinea",
     "Paraguay",
     "Paris",
+    "Pearl Harbor",
     "Persia",
     "Peru",
     "Philippines",
@@ -31267,6 +31475,7 @@
     "Tenerife",
     "Texas",
     "Thailand",
+    "Thermopylae",
     "Tijuana",
     "Togo",
     "Tokyo",
@@ -32940,7 +33149,9 @@
     "Hadrian",
     "Handel",
     "Hannibal",
+    "Harald Hardrada",
     "Harding",
+    "Harold Godwinson",
     "Harriet Beecher Stowe",
     "Harriet Tubman",
     "Harrison",
@@ -33016,10 +33227,12 @@
     "Kurosawa",
     "L. Ron Hubbard",
     "Lady Jane Grey",
+    "Lafayette",
     "Lando",
     "Laozi",
     "Lee Harvey Oswald",
     "Leo",
+    "Leonidas",
     "Li Bai",
     "Li Jiancheng",
     "Li Shimin",
@@ -33033,6 +33246,7 @@
     "Lola Montez",
     "Louis Armstrong",
     "Louis Pasteur",
+    "Louis XVI",
     "Louisa May Alcott",
     "Luigi",
     "Mabel Gardiner Hubbard",
@@ -33046,6 +33260,7 @@
     "Marciano",
     "Marco Polo",
     "Marcus Aurelius",
+    "Marie Antoinette",
     "Marie Curie",
     "Marilyn Monroe",
     "Mark Antony",
@@ -33202,6 +33417,7 @@
     "Winston Churchill",
     "Wright Brothers",
     "Wu Zetian",
+    "Xerxes",
     "Xiao Yan",
     "Xiao Ze",
     "Yang Jian",
@@ -33993,6 +34209,8 @@
     "Frederick the Great",
     "Good King Wenceslas",
     "Gustavus Adolphus",
+    "Harald Hardrada",
+    "Harold Godwinson",
     "Henry V",
     "Henry VII",
     "Henry VIII",
@@ -34003,7 +34221,9 @@
     "King Lear",
     "Kublai Khan",
     "Lady Jane Grey",
+    "Louis XVI",
     "Macbeth",
+    "Marie Antoinette",
     "Mary I",
     "Mehmed II",
     "Pharaoh",
@@ -34024,6 +34244,7 @@
     "Trajan",
     "Victoria",
     "William the Conqueror",
+    "Xerxes",
     "Zhu Yuanzhang"
   ],
   "Rulers": [
@@ -35452,6 +35673,9 @@
     "12 Monkeys",
     "12 Years a Slave"
   ],
+  "Starts with 177": [
+    "1776"
+  ],
   "Starts with 195": [
     "1955 World Series"
   ],
@@ -35473,6 +35697,9 @@
   ],
   "Starts with 2PM": [
     "2PM"
+  ],
+  "Starts with 300": [
+    "300"
   ],
   "Starts with 747": [
     "747"
@@ -35971,6 +36198,7 @@
     "Basilosaurus",
     "Basket Case",
     "Basketball",
+    "Bastille",
     "Basutoland"
   ],
   "Starts with BAT": [
@@ -37745,11 +37973,13 @@
     "Happy Together"
   ],
   "Starts with HAR": [
+    "Harald Hardrada",
     "Harambe",
     "Hard Boiled",
     "Harding",
     "Hare",
     "Harmony of the Seas",
+    "Harold Godwinson",
     "Harp",
     "Harriet Beecher Stowe",
     "Harriet Tubman",
@@ -38288,6 +38518,8 @@
   "Starts with JUL": [
     "Juliet",
     "Julius Caesar",
+    "July 14th, 1789",
+    "July 1st, 1863",
     "July 2nd, 626"
   ],
   "Starts with JUM": [
@@ -38297,6 +38529,7 @@
     "June 18th, 1815",
     "June 28th, 1914",
     "June 4th, 1942",
+    "June 6th, 1944",
     "Juneau",
     "Juno"
   ],
@@ -38526,6 +38759,9 @@
     "Lady and the Tramp",
     "Ladybug"
   ],
+  "Starts with LAF": [
+    "Lafayette"
+  ],
   "Starts with LAI": [
     "Laika, Space Dog"
   ],
@@ -38598,7 +38834,8 @@
     "Lens"
   ],
   "Starts with LEO": [
-    "Leo"
+    "Leo",
+    "Leonidas"
   ],
   "Starts with LEP": [
     "Lepidodendron"
@@ -38729,6 +38966,7 @@
   "Starts with LOU": [
     "Louis Armstrong",
     "Louis Pasteur",
+    "Louis XVI",
     "Louisa May Alcott",
     "Louvre"
   ],
@@ -38840,6 +39078,7 @@
     "Marco Polo",
     "Marcus Aurelius",
     "Mare",
+    "Marie Antoinette",
     "Marie Curie",
     "Marilyn Monroe",
     "Marinara",
@@ -39254,6 +39493,7 @@
   ],
   "Starts with NOR": [
     "Normandie",
+    "Normandy",
     "North Atlantic",
     "North Korea",
     "North Macedonia",
@@ -39397,7 +39637,8 @@
   ],
   "Starts with OPE": [
     "Opel",
-    "Opening of Atlantic Ocean"
+    "Opening of Atlantic Ocean",
+    "Operation Overlord"
   ],
   "Starts with OPP": [
     "Oppenheimer"
@@ -39544,7 +39785,8 @@
     "Peach",
     "Peacock",
     "Peahen",
-    "Peanut"
+    "Peanut",
+    "Pearl Harbor"
   ],
   "Starts with PEC": [
     "Pecan"
@@ -39621,6 +39863,7 @@
   ],
   "Starts with PIC": [
     "Picard",
+    "Pickett's Charge",
     "Pickle"
   ],
   "Starts with PIE": [
@@ -40174,6 +40417,9 @@
     "Saudi Arabia",
     "Sauerbraten",
     "Sauerkraut"
+  ],
+  "Starts with SAV": [
+    "Saving Private Ryan"
   ],
   "Starts with SAW": [
     "Saw"
@@ -40976,6 +41222,7 @@
     "The Old Man and the Sea",
     "The Opioid Epidemic",
     "The Parent Trap",
+    "The Patriot",
     "The Peasants' Revolt",
     "The Phantom Menace",
     "The Phantom of the Opera",
@@ -41077,6 +41324,7 @@
     "Theatre of Pompey",
     "Thelonious Monk",
     "Thera",
+    "Thermopylae",
     "Theseus",
     "Theta"
   ],
@@ -41590,6 +41838,9 @@
   "Starts with XEN": [
     "Xenon"
   ],
+  "Starts with XER": [
+    "Xerxes"
+  ],
   "Starts with XIA": [
     "Xia",
     "Xiao Yan",
@@ -41911,6 +42162,12 @@
     "Vegas Vacation",
     "White Christmas"
   ],
+  "Storming of the Bastille": [
+    "Bastille",
+    "July 14th, 1789",
+    "Paris",
+    "The French Revolution"
+  ],
   "Studio Ghibli": [
     "Arrietty",
     "Castle in the Sky",
@@ -42031,6 +42288,7 @@
     "Resident Evil"
   ],
   "Sword and Sandals Stories": [
+    "300",
     "Ben-Hur",
     "Cleopatra",
     "Gladiator",
@@ -42169,6 +42427,18 @@
     "9/11",
     "The London Bombings",
     "The Oklahoma City Bombing"
+  ],
+  "The American Revolution": [
+    "1776",
+    "Adams",
+    "Concord",
+    "Give me liberty or give me death",
+    "Jefferson",
+    "Lafayette",
+    "The American Revolution",
+    "The Patriot",
+    "Washington",
+    "Yorktown"
   ],
   "The Bad Place": [
     "Cerberus",
@@ -42892,6 +43162,7 @@
     "Papa",
     "Paul",
     "Payola Scandal",
+    "Pearl Harbor",
     "Percy Jackson & the Olympians",
     "Peter",
     "Peyton Place",
@@ -42968,6 +43239,7 @@
     "San Juan",
     "San Pedro",
     "Santa Fe",
+    "Saving Private Ryan",
     "Saw",
     "Scarface",
     "Scent of a Woman",
@@ -43108,6 +43380,7 @@
     "The Oklahoma City Bombing",
     "The Old Man and the Sea",
     "The Opioid Epidemic",
+    "The Patriot",
     "The Phantom Menace",
     "The Phantom of the Opera",
     "The Philadelphia Experiment",
@@ -43266,6 +43539,7 @@
     "Archduke Franz Ferdinand",
     "Austria",
     "Don Giovanni",
+    "Marie Antoinette",
     "Mozart",
     "Skiing",
     "Sledding",
@@ -44036,6 +44310,7 @@
     "Airbus",
     "Airbus A380",
     "Baguette",
+    "Bastille",
     "Battle of Agincourt",
     "Battle of Crécy",
     "Battle of Poitiers",
@@ -44084,11 +44359,14 @@
     "John Calvin",
     "L'etat c'est moi",
     "La Garde meurt, elle ne se rend pas!",
+    "Lafayette",
     "Les Misérables",
     "Louis Pasteur",
+    "Louis XVI",
     "Louvre",
     "Macaron",
     "Madeleine",
+    "Marie Antoinette",
     "Marie Curie",
     "Merde!",
     "Michel Ney",
@@ -44098,6 +44376,7 @@
     "Mount Pelée Eruption",
     "Napoleon Bonaparte",
     "Normandie",
+    "Normandy",
     "Notre Dame",
     "Paris",
     "Peugeot",
@@ -44234,6 +44513,7 @@
     "Homer",
     "Iliad",
     "Know thyself",
+    "Leonidas",
     "Moussaka",
     "Mykonos",
     "Oedipus Rex",
@@ -44254,6 +44534,7 @@
     "The Odyssey",
     "The Trojan War",
     "The unexamined life is not worth living",
+    "Thermopylae",
     "Tzatziki",
     "Zeus"
   ],
@@ -44890,6 +45171,9 @@
   ],
   "Things Paraguayan": [
     "Paraguay"
+  ],
+  "Things Persian": [
+    "Xerxes"
   ],
   "Things Peruvian": [
     "Machu Picchu",
@@ -46220,6 +46504,7 @@
     "Platoon",
     "Ran",
     "Romance of the Three Kingdoms",
+    "Saving Private Ryan",
     "Seven Samurai",
     "Slaughterhouse-Five",
     "South Pacific",
@@ -46231,6 +46516,7 @@
     "The Hurt Locker",
     "The Iliad",
     "The Mahabharata",
+    "The Patriot",
     "The Red Badge of Courage",
     "The Tale of the Heike",
     "Total War",
@@ -46599,6 +46885,7 @@
     "Madame Butterfly",
     "Madame C.J. Walker",
     "Madonna",
+    "Marie Antoinette",
     "Marie Curie",
     "Marilyn Monroe",
     "Mary",
@@ -46670,6 +46957,7 @@
   "World War II": [
     "Akagi",
     "Anne Frank",
+    "Arizona",
     "Ark Royal",
     "B-17",
     "B-29",
@@ -46684,6 +46972,7 @@
     "Fat Man",
     "Franklin D. Roosevelt",
     "Gneisenau",
+    "Gold",
     "Heinz Guderian",
     "Hiryu",
     "Hood",
@@ -46693,6 +46982,8 @@
     "Joseph Stalin",
     "Judy",
     "June 4th, 1942",
+    "June 6th, 1944",
+    "Juno",
     "Kaga",
     "Kate",
     "Lancaster",
@@ -46703,19 +46994,26 @@
     "Mustang",
     "Nimitz",
     "Normandie",
+    "Normandy",
     "Nuclear Bombing of Hiroshima",
     "Nuclear Bombing of Nagasaki",
+    "Omaha",
+    "Operation Overlord",
+    "Pearl Harbor",
     "Prince of Wales",
     "Queen Elizabeth",
     "Queen Mary",
     "Repulse",
+    "Saving Private Ryan",
     "Scharnhorst",
     "Soryu",
     "Spitfire",
     "Stuka",
+    "Sword",
     "Thunderbolt",
     "Tirpitz",
     "Truman",
+    "Utah",
     "Val",
     "We shall never surrender",
     "We will fight them on the beaches",

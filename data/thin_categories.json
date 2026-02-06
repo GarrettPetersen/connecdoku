@@ -2852,9 +2852,6 @@
   "Space Stories": [
     "Star Wars"
   ],
-  "Movies directed by Roland Emmerich": [
-    "Stargate"
-  ],
   "Movies featuring Viveca Lindfors": [
     "Stargate"
   ],
@@ -3884,6 +3881,9 @@
   "Movies directed by Matthew Vaughn": [
     "X-Men: First Class"
   ],
+  "Things Persian": [
+    "Xerxes"
+  ],
   "Liang Dynasty": [
     "Xiao Yan"
   ],
@@ -4157,10 +4157,6 @@
   "Cities in South America": [
     "Brasilia",
     "Lima"
-  ],
-  "Movies featuring Mel Gibson": [
-    "Braveheart",
-    "Pocahontas"
   ],
   "Continental Drift": [
     "Breakup of Pangea",
@@ -4582,10 +4578,6 @@
     "Ghostbusters",
     "Ghostbusters II"
   ],
-  "1770s": [
-    "Give me liberty or give me death",
-    "The American Revolution"
-  ],
   "Action-Adventure Games": [
     "God of War",
     "The Legend of Zelda"
@@ -4786,10 +4778,6 @@
     "Les Misérables",
     "The King's Speech"
   ],
-  "Ancient Times": [
-    "Let there be light",
-    "Qin"
-  ],
   "Egyptian Architecture": [
     "Lighthouse of Alexandria",
     "Pyramids"
@@ -4942,10 +4930,6 @@
     "One small step for man",
     "The Eagle has landed"
   ],
-  "Movies featuring Matt Damon": [
-    "Oppenheimer",
-    "The Departed"
-  ],
   "Movies directed by John Landis": [
     "Oscar",
     "Three Amigos"
@@ -5086,6 +5070,10 @@
     "Sonic",
     "Super Mario"
   ],
+  "Movies directed by Roland Emmerich": [
+    "Stargate",
+    "The Patriot"
+  ],
   "Movies featuring Jaye Davidson": [
     "Stargate",
     "The Crying Game"
@@ -5222,6 +5210,11 @@
     "747",
     "Airbus A380",
     "DC-3"
+  ],
+  "1770s": [
+    "1776",
+    "Give me liberty or give me death",
+    "The American Revolution"
   ],
   "Movies featuring Russell Crowe": [
     "A Beautiful Mind",
@@ -5397,6 +5390,11 @@
     "Bosnia and Herzegovina",
     "Sarajevo",
     "The Yugoslav Wars"
+  ],
+  "Movies featuring Mel Gibson": [
+    "Braveheart",
+    "Pocahontas",
+    "The Patriot"
   ],
   "Movies directed by David Lean": [
     "Bridge on the River Kwai",
@@ -5753,6 +5751,11 @@
     "Snowball Earth",
     "Younger Dryas"
   ],
+  "Ancient Times": [
+    "Let there be light",
+    "Qin",
+    "Thermopylae"
+  ],
   "Norse Mythology": [
     "Loki",
     "Sleipnir",
@@ -5802,6 +5805,11 @@
     "North Yemen",
     "South Yemen",
     "Yemen"
+  ],
+  "Movies featuring Matt Damon": [
+    "Oppenheimer",
+    "Saving Private Ryan",
+    "The Departed"
   ],
   "Movies directed by Gore Verbinski": [
     "Pirates of the Caribbean: At World's End",
