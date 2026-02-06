@@ -8,6 +8,10 @@
     "Dates",
     "Ends with 300",
     "Movies",
+    "Movies directed by Zack Snyder",
+    "Movies featuring David Wenham",
+    "Movies featuring Gerard Butler",
+    "Movies featuring Lena Headey",
     "Numbers",
     "Starts with 300",
     "Sword and Sandals Stories"
@@ -3312,6 +3316,18 @@
     "Starts with BAR",
     "Things Barbadian"
   ],
+  "Barbara Bush": [
+    "1980s",
+    "1990s",
+    "20th Century",
+    "Ends with USH",
+    "First Ladies",
+    "People",
+    "Real People",
+    "Starts with BAR",
+    "Things American",
+    "Women"
+  ],
   "Bari": [
     "Cities",
     "Cities in Italy",
@@ -5106,6 +5122,21 @@
     "James Bond Characters",
     "Money Slang",
     "Starts with BON"
+  ],
+  "Bonhomme Richard": [
+    "1770s",
+    "1780s",
+    "18th Century",
+    "Age of Sail",
+    "Ends with ARD",
+    "Military Ships",
+    "Ships",
+    "Shipwrecks",
+    "Starts with BON",
+    "The American Revolution",
+    "Things American",
+    "US Navy",
+    "Warships"
   ],
   "Boom": [
     "Economics",
@@ -11606,6 +11637,18 @@
     "Quaternary Period",
     "Starts with ELD"
   ],
+  "Eleanor Roosevelt": [
+    "1930s",
+    "1940s",
+    "20th Century",
+    "Ends with ELT",
+    "First Ladies",
+    "People",
+    "Real People",
+    "Starts with ELE",
+    "Things American",
+    "Women"
+  ],
   "Elemental": [
     "2020s",
     "2023",
@@ -15597,6 +15640,23 @@
     "Things Chinese",
     "Wars"
   ],
+  "Hancock": [
+    "1770s",
+    "1780s",
+    "18th Century",
+    "Age of Sail",
+    "Ends with OCK",
+    "Men",
+    "Military Ships",
+    "People",
+    "Real People",
+    "Ships",
+    "Starts with HAN",
+    "The American Revolution",
+    "Things American",
+    "US Navy",
+    "Warships"
+  ],
   "Handel": [
     "17th Century",
     "18th Century",
@@ -16582,6 +16642,19 @@
     "Things Japanese",
     "Thriller Stories"
   ],
+  "Hillary Clinton": [
+    "1990s",
+    "2000s",
+    "20th Century",
+    "21st Century",
+    "Ends with TON",
+    "First Ladies",
+    "People",
+    "Real People",
+    "Starts with HIL",
+    "Things American",
+    "Women"
+  ],
   "Hilton": [
     "Ends with TON",
     "Hotels",
@@ -16718,6 +16791,7 @@
     "Action Stories",
     "Christmas Stories",
     "Comedy Stories",
+    "Donald Trump",
     "Ends with ORK",
     "Family-Friendly Stories",
     "Movies",
@@ -18266,6 +18340,18 @@
     "Things American",
     "Thriller Films",
     "Thriller Stories"
+  ],
+  "Jackie Kennedy": [
+    "1960s",
+    "20th Century",
+    "Assassination of JFK",
+    "Ends with EDY",
+    "First Ladies",
+    "People",
+    "Real People",
+    "Starts with JAC",
+    "Things American",
+    "Women"
   ],
   "Jackson": [
     "1820s",
@@ -20731,6 +20817,18 @@
     "Starts with LAT",
     "Things Latvian"
   ],
+  "Laura Bush": [
+    "2000s",
+    "20th Century",
+    "21st Century",
+    "Ends with USH",
+    "First Ladies",
+    "People",
+    "Real People",
+    "Starts with LAU",
+    "Things American",
+    "Women"
+  ],
   "Lavender": [
     "Cenozoic Era",
     "Currently Living Plants",
@@ -22532,6 +22630,19 @@
     "Starts with MAP",
     "Things Chinese"
   ],
+  "Mar-A-Lago": [
+    "1920s",
+    "20th Century",
+    "21st Century",
+    "American Architecture",
+    "Buildings",
+    "Donald Trump",
+    "Ends with AGO",
+    "Historical Sites",
+    "Modern Buildings",
+    "Starts with MAR",
+    "Things American"
+  ],
   "Marciano": [
     "1950s",
     "20th Century",
@@ -23251,6 +23362,20 @@
     "Starts with MEH",
     "Things Turkish"
   ],
+  "Melania": [
+    "2010s",
+    "2020s",
+    "21st Century",
+    "Donald Trump",
+    "Ends with NIA",
+    "First Ladies",
+    "People",
+    "Real People",
+    "Starts with MEL",
+    "Things American",
+    "Things Slovenian",
+    "Women"
+  ],
   "Melody": [
     "Ends with ODY",
     "Music",
@@ -23464,6 +23589,18 @@
     "Renaissance Figures",
     "Starts with MIC",
     "Things Italian"
+  ],
+  "Michelle Obama": [
+    "2000s",
+    "2010s",
+    "21st Century",
+    "Ends with AMA",
+    "First Ladies",
+    "People",
+    "Real People",
+    "Starts with MIC",
+    "Things American",
+    "Women"
   ],
   "Michigan": [
     "Ends with GAN",
@@ -24788,6 +24925,17 @@
     "Foods",
     "Starts with NAN",
     "Things Canadian"
+  ],
+  "Nancy Reagan": [
+    "1980s",
+    "20th Century",
+    "Ends with GAN",
+    "First Ladies",
+    "People",
+    "Real People",
+    "Starts with NAN",
+    "Things American",
+    "Women"
   ],
   "Nantucket": [
     "Ends with KET",
@@ -30625,6 +30773,18 @@
     "Things French",
     "Women"
   ],
+  "Rosalynn Carter": [
+    "1970s",
+    "1980s",
+    "20th Century",
+    "Ends with TER",
+    "First Ladies",
+    "People",
+    "Real People",
+    "Starts with ROS",
+    "Things American",
+    "Women"
+  ],
   "Rose": [
     "Cenozoic Era",
     "Colors",
@@ -31568,8 +31728,13 @@
     "Ends with YAN",
     "Movies",
     "Movies directed by Steven Spielberg",
+    "Movies featuring Barry Pepper",
+    "Movies featuring Edward Burns",
+    "Movies featuring Giovanni Ribisi",
     "Movies featuring Matt Damon",
     "Movies featuring Tom Hanks",
+    "Movies featuring Tom Sizemore",
+    "Movies featuring Vin Diesel",
     "Oscar Winners",
     "Period Stories",
     "Starts with SAV",
@@ -35574,6 +35739,18 @@
     "Starts with THE",
     "Things American"
   ],
+  "The Apprentice": [
+    "2000s",
+    "2004",
+    "2010s",
+    "21st Century",
+    "Donald Trump",
+    "Ends with ICE",
+    "Reality TV",
+    "Starts with THE",
+    "TV Shows",
+    "Things American"
+  ],
   "The Arab Spring": [
     "2010s",
     "2011",
@@ -37323,6 +37500,7 @@
     "2020s",
     "2021",
     "21st Century",
+    "Donald Trump",
     "Ends with ION",
     "Events",
     "Political Events",
@@ -38160,6 +38338,9 @@
     "Ends with IOT",
     "Movies",
     "Movies directed by Roland Emmerich",
+    "Movies featuring Chris Cooper",
+    "Movies featuring Heath Ledger",
+    "Movies featuring Jason Isaacs",
     "Movies featuring Mel Gibson",
     "Period Stories",
     "Starts with THE",
@@ -40664,6 +40845,7 @@
     "20th Century",
     "21st Century",
     "Board Game Equipment",
+    "Donald Trump",
     "Ends with UMP",
     "Men",
     "National Leaders",
@@ -40672,6 +40854,18 @@
     "Starts with TRU",
     "Things American",
     "US Presidents"
+  ],
+  "Trump Tower": [
+    "1980s",
+    "20th Century",
+    "21st Century",
+    "American Architecture",
+    "Buildings",
+    "Donald Trump",
+    "Ends with WER",
+    "Modern Buildings",
+    "Starts with TRU",
+    "Things American"
   ],
   "Tsar": [
     "Ancient Rulers",

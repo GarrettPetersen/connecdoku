@@ -122,6 +122,12 @@
     "Superman",
     "The Deer Hunter"
   ],
+  "Movies featuring David Wenham": [
+    "300"
+  ],
+  "Movies featuring Lena Headey": [
+    "300"
+  ],
   "Political Fiction": [
     "1984"
   ],
@@ -1034,9 +1040,6 @@
   "Movies featuring Will Ferrell": [
     "Elf"
   ],
-  "American Architecture": [
-    "Empire State Building"
-  ],
   "Movies directed by Jared Bush": [
     "Encanto"
   ],
@@ -1320,9 +1323,6 @@
     "Guardians of the Galaxy"
   ],
   "Movies featuring Lee Pace": [
-    "Guardians of the Galaxy"
-  ],
-  "Movies featuring Vin Diesel": [
     "Guardians of the Galaxy"
   ],
   "Things Guatemalan": [
@@ -2474,9 +2474,6 @@
   "Movies featuring Thelma Ritter": [
     "Rear Window"
   ],
-  "Movies directed by Zack Snyder": [
-    "Rebel Moon"
-  ],
   "Movies featuring Charlie Hunnam": [
     "Rebel Moon"
   ],
@@ -2633,6 +2630,18 @@
   "Spanish Navy": [
     "Santissima Trinidad"
   ],
+  "Movies featuring Barry Pepper": [
+    "Saving Private Ryan"
+  ],
+  "Movies featuring Edward Burns": [
+    "Saving Private Ryan"
+  ],
+  "Movies featuring Giovanni Ribisi": [
+    "Saving Private Ryan"
+  ],
+  "Movies featuring Tom Sizemore": [
+    "Saving Private Ryan"
+  ],
   "Movies directed by James Wan": [
     "Saw"
   ],
@@ -2725,9 +2734,6 @@
   ],
   "Things Slovak": [
     "Slovakia"
-  ],
-  "Things Slovenian": [
-    "Slovenia"
   ],
   "Movies featuring Anil Kapoor": [
     "Slumdog Millionaire"
@@ -2959,6 +2965,9 @@
   ],
   "Edith Wharton": [
     "The Age of Innocence"
+  ],
+  "Reality TV": [
+    "The Apprentice"
   ],
   "Movies featuring Scatman Crothers": [
     "The Aristocats"
@@ -3398,6 +3407,15 @@
   "Stop-Motion Animated Films": [
     "The Nightmare Before Christmas"
   ],
+  "Movies featuring Chris Cooper": [
+    "The Patriot"
+  ],
+  "Movies featuring Heath Ledger": [
+    "The Patriot"
+  ],
+  "Movies featuring Jason Isaacs": [
+    "The Patriot"
+  ],
   "Movies featuring Jake Lloyd": [
     "The Phantom Menace"
   ],
@@ -3405,9 +3423,6 @@
     "The Phantom of the Opera"
   ],
   "Movies featuring Emmy Rossum": [
-    "The Phantom of the Opera"
-  ],
-  "Movies featuring Gerard Butler": [
     "The Phantom of the Opera"
   ],
   "Movies featuring Miranda Richardson": [
@@ -3925,6 +3940,14 @@
   ],
   "Movies featuring Stanley Baker": [
     "Zulu"
+  ],
+  "Movies directed by Zack Snyder": [
+    "300",
+    "Rebel Moon"
+  ],
+  "Movies featuring Gerard Butler": [
+    "300",
+    "The Phantom of the Opera"
   ],
   "Movies directed by Terry Gilliam": [
     "12 Monkeys",
@@ -4606,6 +4629,10 @@
     "Groundhog Day",
     "National Lampoon's Vacation"
   ],
+  "Movies featuring Vin Diesel": [
+    "Guardians of the Galaxy",
+    "Saving Private Ryan"
+  ],
   "Things Guinean": [
     "Guinea",
     "Portuguese Guinea"
@@ -4833,6 +4860,10 @@
   "Movies directed by Stephen Anderson": [
     "Meet the Robinsons",
     "Winnie the Pooh"
+  ],
+  "Things Slovenian": [
+    "Melania",
+    "Slovenia"
   ],
   "Manufactured by MiG": [
     "MiG-15",
@@ -5210,11 +5241,6 @@
     "747",
     "Airbus A380",
     "DC-3"
-  ],
-  "1770s": [
-    "1776",
-    "Give me liberty or give me death",
-    "The American Revolution"
   ],
   "Movies featuring Russell Crowe": [
     "A Beautiful Mind",
@@ -5620,6 +5646,11 @@
     "Emerald",
     "Ruby",
     "Sapphire"
+  ],
+  "American Architecture": [
+    "Empire State Building",
+    "Mar-A-Lago",
+    "Trump Tower"
   ],
   "Movies featuring John Leguizamo": [
     "Encanto",
