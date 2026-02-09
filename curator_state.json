@@ -1,5 +1,5 @@
 {
-  "curatedCount": 86,
+  "curatedCount": 91,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -8,71 +8,42 @@
   ],
   "currentPuzzle": {
     "rows": [
-      "17th Century",
-      "Han Dynasty",
-      "Roman Republic",
-      "The American Revolution"
+      "16th Century",
+      "18th Century",
+      "Napoleonic Wars",
+      "Roman Empire"
     ],
     "cols": [
-      "Literature Quotes",
-      "Military Leaders",
-      "National Leaders",
-      "Wars"
+      "Famous Quotes",
+      "Historical Sites",
+      "Ships",
+      "Things Spanish"
     ],
-    "hash": "74a34abf20c722ab04cd90cad5991020ea9da37b1560b9b5d88b92d8f5f751d4",
-    "timestamp": "2026-02-07 01:47:58",
-    "qualityScore": 14.98
+    "hash": "2ba20dc0d0c87e4233e0279f9000b9891228ba54406eba79a23078e64df5fa23",
+    "timestamp": "2026-02-07 11:26:39",
+    "qualityScore": 11.410000000000002
   },
   "viableGrid": [
     [
       [
-        "The play's the thing"
+        "All the world's a stage",
+        "Something is rotten in Denmark",
+        "The play's the thing",
+        "To be or not to be"
       ],
       [
-        "Sébastien Le Prestre de Vauban"
+        "Globe Theatre"
       ],
       [
-        "James",
-        "Macbeth",
-        "Philip"
+        "Mary Rose",
+        "Queen Mary"
       ],
       [
-        "Bohemian Revolt",
-        "The English Civil War",
-        "The Thirty Years War"
-      ]
-    ],
-    [
-      [
-        "The realm, long divided, must unite"
-      ],
-      [
-        "Cao Cao",
-        "Guan Yu",
-        "Liu Bei"
-      ],
-      [
-        "Emperor Wen of Han"
-      ],
-      [
-        "Chu–Han Contention",
-        "Han Wudi's Defeat of the Xiongnu"
-      ]
-    ],
-    [
-      [
-        "Et tu, Brute?"
-      ],
-      [
-        "Gaius Marius",
-        "Mark Antony"
-      ],
-      [
-        "Caesar",
-        "Julius Caesar"
-      ],
-      [
-        "Third Servile War"
+        "Catherine of Aragon",
+        "Ferdinand Magellan",
+        "Francisco Pizarro",
+        "Hernán Cortés",
+        "The Spanish Armada"
       ]
     ],
     [
@@ -80,60 +51,107 @@
         "Give me liberty or give me death"
       ],
       [
-        "Lafayette"
+        "Bastille"
       ],
       [
-        "Adams",
-        "Jefferson"
+        "Bonhomme Richard",
+        "Hancock"
       ],
       [
-        "The American Revolution"
+        "Francisco Goya"
+      ]
+    ],
+    [
+      [
+        "La Garde meurt, elle ne se rend pas!",
+        "Merde!"
+      ],
+      [
+        "Waterloo"
+      ],
+      [
+        "Bellerophon",
+        "Bucentaure",
+        "Redoutable",
+        "Temeraire",
+        "Victory"
+      ],
+      [
+        "Battle of Trafalgar"
+      ]
+    ],
+    [
+      [
+        "Render unto Caesar",
+        "Varus, give me back my legions"
+      ],
+      [
+        "Arch of Titus",
+        "Basilica Aemilia",
+        "Basilica Porcia",
+        "Basilica Sempronia",
+        "Circus Maximus",
+        "Colosseum",
+        "Curia",
+        "Hadrian's Wall",
+        "Ostia Antica",
+        "Pantheon",
+        "Roman Forum",
+        "Tabularium",
+        "Temple of Castor and Pollux",
+        "Temple of Saturn"
+      ],
+      [
+        "Mauretania"
+      ],
+      [
+        "Hispania"
       ]
     ]
   ],
   "chosen": [
     [
-      "The play's the thing",
-      "Sébastien Le Prestre de Vauban",
-      "James",
-      "The Thirty Years War"
-    ],
-    [
-      "The realm, long divided, must unite",
-      "Cao Cao",
-      "Emperor Wen of Han",
-      "Chu–Han Contention"
-    ],
-    [
-      "Et tu, Brute?",
-      "Mark Antony",
-      "Julius Caesar",
-      "Third Servile War"
+      "To be or not to be",
+      "Globe Theatre",
+      "Mary Rose",
+      "The Spanish Armada"
     ],
     [
       "Give me liberty or give me death",
-      "Lafayette",
-      "Jefferson",
-      "The American Revolution"
+      "Bastille",
+      "Bonhomme Richard",
+      "Francisco Goya"
+    ],
+    [
+      "La Garde meurt, elle ne se rend pas!",
+      "Waterloo",
+      "Victory",
+      "Battle of Trafalgar"
+    ],
+    [
+      "Render unto Caesar",
+      "Colosseum",
+      "Mauretania",
+      "Hispania"
     ]
   ],
   "usedWords": [
-    "The play's the thing",
-    "Sébastien Le Prestre de Vauban",
-    "James",
-    "The Thirty Years War",
-    "The realm, long divided, must unite",
-    "Cao Cao",
-    "Emperor Wen of Han",
-    "Chu–Han Contention",
-    "Et tu, Brute?",
-    "Mark Antony",
-    "Julius Caesar",
-    "Third Servile War",
+    "To be or not to be",
+    "Globe Theatre",
+    "Mary Rose",
+    "The Spanish Armada",
     "Give me liberty or give me death",
-    "Lafayette",
-    "Jefferson",
-    "The American Revolution"
+    "Bastille",
+    "Bonhomme Richard",
+    "Francisco Goya",
+    "La Garde meurt, elle ne se rend pas!",
+    "Waterloo",
+    "Victory",
+    "Battle of Trafalgar",
+    "Render unto Caesar",
+    "Colosseum",
+    "Mauretania",
+    "Hispania"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -141,343 +159,343 @@
   "puzzles": [
     {
       "rows": [
-        "15th Century",
-        "17th Century",
-        "Starts with MAR",
-        "Things Greek"
+        "16th Century",
+        "18th Century",
+        "Napoleonic Wars",
+        "Roman Empire"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Historical Sites",
+        "Ships",
+        "Things Spanish"
+      ],
+      "hash": "2ba20dc0d0c87e4233e0279f9000b9891228ba54406eba79a23078e64df5fa23",
+      "timestamp": "2026-02-07 11:26:39",
+      "qualityScore": 11.410000000000002
+    },
+    {
+      "rows": [
+        "16th Century",
+        "18th Century",
+        "Napoleonic Wars",
+        "Roman Empire"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Historical Sites",
+        "Real People",
+        "Ships"
+      ],
+      "hash": "30b56dc200471b486aeba30c48606c904e5e755083e2b4b96733bbbdd734a2e8",
+      "timestamp": "2026-02-07 11:26:39",
+      "qualityScore": 10.36
+    },
+    {
+      "rows": [
+        "16th Century",
+        "18th Century",
+        "Napoleonic Wars",
+        "Starts with FRA"
       ],
       "cols": [
         "Age of Sail",
-        "Military Leaders",
-        "National Leaders",
-        "Scientists"
-      ],
-      "hash": "e0f549215d2392a07138208de3e247ae5b3533883703312e9c641ca430f6d0c7",
-      "timestamp": "2026-02-07 10:46:42",
-      "qualityScore": 10.04
-    },
-    {
-      "rows": [
-        "15th Century",
-        "17th Century",
-        "Starts with MAR",
-        "Things Greek"
-      ],
-      "cols": [
-        "Military Leaders",
-        "National Leaders",
-        "Scientists",
-        "Ships"
-      ],
-      "hash": "4f966355a97d2470c33b34018a706d57f086503b004cae3936d7b33b46e32e38",
-      "timestamp": "2026-02-07 10:46:42",
-      "qualityScore": 7.87
-    },
-    {
-      "rows": [
-        "15th Century",
-        "17th Century",
-        "Starts with MAR",
-        "Things German"
-      ],
-      "cols": [
-        "Military Leaders",
-        "National Leaders",
-        "Scientists",
-        "Ships"
-      ],
-      "hash": "adefc34559e6984c64b1238d045678d48941ff9104cb8afca2e40fc93af3dd70",
-      "timestamp": "2026-02-07 10:46:42",
-      "qualityScore": 7.25
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Republic",
-        "The American Revolution"
-      ],
-      "cols": [
-        "Literature Quotes",
-        "Military Leaders",
-        "National Leaders",
-        "Wars"
-      ],
-      "hash": "74a34abf20c722ab04cd90cad5991020ea9da37b1560b9b5d88b92d8f5f751d4",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 14.98
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Republic",
-        "The American Revolution"
-      ],
-      "cols": [
-        "Literature Quotes",
-        "Military Conflicts",
-        "Military Leaders",
-        "National Leaders"
-      ],
-      "hash": "120998619408ca5ca7223be262587e7a4fd4510cbd1ecd8d6388cdba29aaf050",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 14.53
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Republic",
-        "The American Revolution"
-      ],
-      "cols": [
+        "Drama Stories",
         "Famous Quotes",
-        "Military Leaders",
-        "National Leaders",
-        "Wars"
+        "Real People"
       ],
-      "hash": "20c916af7bf86f04d165bbfce26f284c639e75e0670d9f79532735975eab7f7b",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 12.170000000000002
+      "hash": "2b8c2fdf1fa5b0b039709cd9f37a6e6d65cd4427a988e5cf064b5faee627e340",
+      "timestamp": "2026-02-07 11:26:39",
+      "qualityScore": 9.090000000000002
     },
     {
       "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Republic",
-        "The American Revolution"
+        "1980s",
+        "Real Animals",
+        "Things Korean",
+        "Things Swedish"
       ],
       "cols": [
+        "Car Brands",
+        "Countries",
+        "Drama Stories",
+        "Real People"
+      ],
+      "hash": "2da34ff1be0527a2555ef1cb1c10b47cf64d342aacf3df8137e56680691cd7c3",
+      "timestamp": "2026-02-07 11:26:40",
+      "qualityScore": 7.260000000000001
+    },
+    {
+      "rows": [
+        "1980s",
+        "Real Animals",
+        "Things Korean",
+        "Things Swedish"
+      ],
+      "cols": [
+        "Car Brands",
+        "Countries",
+        "Movies",
+        "Real People"
+      ],
+      "hash": "9d6b7acfb5ab99888e1502aaf483775eb151879340043784bc298be56acb6663",
+      "timestamp": "2026-02-07 11:26:40",
+      "qualityScore": 7.260000000000001
+    },
+    {
+      "rows": [
+        "1980s",
+        "Real Animals",
+        "Things Korean",
+        "Things Swedish"
+      ],
+      "cols": [
+        "Cars",
+        "Countries",
+        "Drama Stories",
+        "Real People"
+      ],
+      "hash": "4b838aa3f010d9cd28c1c4278545ab099c5e41548d2665615b13d74abe589a62",
+      "timestamp": "2026-02-07 11:26:40",
+      "qualityScore": 7.260000000000001
+    },
+    {
+      "rows": [
+        "1980s",
+        "Real Animals",
+        "Things Korean",
+        "Things Swedish"
+      ],
+      "cols": [
+        "Cars",
+        "Countries",
+        "Movies",
+        "Real People"
+      ],
+      "hash": "fadf10573b5647d12700679d4263329e02eba7d5394049d61cc5d0080fc28057",
+      "timestamp": "2026-02-07 11:26:40",
+      "qualityScore": 7.260000000000001
+    },
+    {
+      "rows": [
+        "16th Century",
+        "18th Century",
+        "Napoleonic Wars",
+        "Starts with FRA"
+      ],
+      "cols": [
+        "Drama Stories",
         "Famous Quotes",
-        "Military Conflicts",
-        "Military Leaders",
-        "National Leaders"
-      ],
-      "hash": "5de2e04e604178b0705d327686a6f240e2f11115f2abc1c4fa2aaefb6b192280",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 11.72
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Republic",
-        "Starts with THE"
-      ],
-      "cols": [
-        "Historical Sites",
-        "Military Leaders",
-        "Political Events",
-        "Wars"
-      ],
-      "hash": "9461a728a3e870478f5303c753d092ed30b6fb5ca27e1134143584c25b7eb055",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 11.38
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Empire",
-        "War Stories"
-      ],
-      "cols": [
-        "Historical Sites",
-        "Military Leaders",
-        "Starts with THE",
-        "Wars"
-      ],
-      "hash": "e120b343058a2d63d76c02f9330cc3639ac87d2519e4b4b0f64d12752f880a7f",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 10.53
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Empire",
-        "War Stories"
-      ],
-      "cols": [
-        "Historical Sites",
-        "National Leaders",
-        "Starts with THE",
-        "Wars"
-      ],
-      "hash": "eff695de29c278bb64633644c69047d649d172804c20a340fc0e01847c5acf17",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 10.18
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Empire",
-        "War Stories"
-      ],
-      "cols": [
-        "Historical Sites",
-        "Military Conflicts",
-        "Military Leaders",
-        "Starts with THE"
-      ],
-      "hash": "9d38a890b5d45675b9e209a040b9ed559d9d94e829dd4794d76b3a7dd4be5caa",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 10.08
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Empire",
-        "War Stories"
-      ],
-      "cols": [
-        "Historical Sites",
-        "Military Conflicts",
-        "National Leaders",
-        "Starts with THE"
-      ],
-      "hash": "02032149acfa4f53a8a2ffe513a69035021242fbd560f3ab2805291851c19188",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 9.73
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Republic",
-        "Starts with MON"
-      ],
-      "cols": [
-        "Buildings",
-        "Military Leaders",
-        "National Leaders",
-        "Wars"
-      ],
-      "hash": "bc61043769878133c9ddceb0d9984750ca6514a515dd44dd2526d0d67c2c7ec9",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 7.83
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Empire",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Buildings",
-        "Military Conflicts",
-        "Military Leaders",
-        "Starts with THE"
-      ],
-      "hash": "c0f7491c076ba97426493d11a747954bf0a3536bc89059f756667e4adc0b9820",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 7.819999999999999
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Empire",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Buildings",
-        "Military Conflicts",
-        "National Leaders",
-        "Starts with THE"
-      ],
-      "hash": "ba3dc98900a417bb98626dbfd50dc3672cbea88eb3a499358103349aa2d63e2a",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 7.47
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Han Dynasty",
-        "Roman Republic",
-        "Starts with MON"
-      ],
-      "cols": [
-        "Buildings",
-        "Military Conflicts",
-        "Military Leaders",
-        "National Leaders"
-      ],
-      "hash": "cfbdd926061c9e4b04246e9e4c6aa093a28bb6571300ee2bc850f2833c3c6db0",
-      "timestamp": "2026-02-07 01:47:58",
-      "qualityScore": 7.38
-    },
-    {
-      "rows": [
-        "1910s",
-        "Starts with HAN",
-        "Things Spanish",
-        "World War II"
-      ],
-      "cols": [
-        "Military Conflicts",
-        "Military Leaders",
-        "Ships",
-        "Things German"
-      ],
-      "hash": "09c50a18adc180415118115be580674e1b7076ec14639a4f39c41355f52d66dd",
-      "timestamp": "2026-02-07 02:14:09",
-      "qualityScore": 5.09
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Ends with SON",
-        "National Leaders",
-        "World War II"
-      ],
-      "cols": [
-        "Cities in USA",
-        "Famous Diarists",
-        "Military Leaders",
+        "Real People",
         "Ships"
       ],
-      "hash": "6850d053cc189dee1ca84e3e1848e5abe46a3aa162e500dc12984a4eda303865",
-      "timestamp": "2026-02-07 01:26:13",
-      "qualityScore": 8.1
+      "hash": "44532cfb65bc96c2fab029d9630b73b1548595fd4d4b176df8fa4c25709bfcfc",
+      "timestamp": "2026-02-07 11:26:39",
+      "qualityScore": 6.920000000000001
     },
     {
       "rows": [
-        "17th Century",
-        "Ends with SON",
-        "National Leaders",
-        "World War II"
+        "19th Century",
+        "Animal Terms",
+        "Drinks",
+        "Modern Countries"
       ],
       "cols": [
-        "Cities in North America",
-        "Famous Diarists",
-        "Military Leaders",
-        "Ships"
+        "Cities",
+        "Movies",
+        "Things Indonesian",
+        "Things Russian"
       ],
-      "hash": "585f3ff85a3c769160b3e56a8d04b0c411a4f962d614170fc065d17de8245cc3",
-      "timestamp": "2026-02-07 01:26:13",
-      "qualityScore": 7.93
+      "hash": "1108fcc4cfa0154bcb74425b03a81726c9a7480a012682c6c3506cfa731cdfba",
+      "timestamp": "2026-02-07 06:54:55",
+      "qualityScore": 5.6899999999999995
     },
     {
       "rows": [
-        "17th Century",
-        "Ends with SON",
-        "National Leaders",
-        "World War II"
+        "19th Century",
+        "Animal Terms",
+        "Drinks",
+        "Modern Countries"
       ],
       "cols": [
-        "Famous Diarists",
+        "Cities",
+        "Starts with CHA",
+        "Things Indonesian",
+        "Things Russian"
+      ],
+      "hash": "b6a14f1626f68a195df75ba7330ad46e28ed48ffea965e660d52f3374ec85b8f",
+      "timestamp": "2026-02-07 06:54:55",
+      "qualityScore": 5.6899999999999995
+    },
+    {
+      "rows": [
+        "19th Century",
+        "Animal Terms",
+        "Drinks",
+        "Modern Countries"
+      ],
+      "cols": [
+        "Cities",
+        "Starts with SPA",
+        "Things Indonesian",
+        "Things Russian"
+      ],
+      "hash": "db7404fbd475284fd586f00a5ecea7f1cd2cb818f2a367783fcc4c44b13300f4",
+      "timestamp": "2026-02-07 06:54:55",
+      "qualityScore": 5.6899999999999995
+    },
+    {
+      "rows": [
+        "19th Century",
+        "Animal Terms",
+        "Drinks",
+        "Modern Countries"
+      ],
+      "cols": [
+        "Ends with INE",
         "Locations in North America",
-        "Military Leaders",
-        "Ships"
+        "Things Indonesian",
+        "Things Russian"
       ],
-      "hash": "4e66b9feca6885b33ef3f9c370548da47b476dbe64d0cd32b9c3a4f07c47325e",
-      "timestamp": "2026-02-07 01:26:13",
-      "qualityScore": 7.38
+      "hash": "676c6c550e5f57019026901662699791b9894ec3223455c81f1afd52775b9213",
+      "timestamp": "2026-02-07 06:54:55",
+      "qualityScore": 5.65
+    },
+    {
+      "rows": [
+        "19th Century",
+        "Animal Terms",
+        "Drinks",
+        "Modern Countries"
+      ],
+      "cols": [
+        "Locations in North America",
+        "Starts with CHA",
+        "Things Indonesian",
+        "Things Russian"
+      ],
+      "hash": "ffa13e2b6f949374cb8f7521fe1197274dc4add700b8d408eb488be8fac9d71a",
+      "timestamp": "2026-02-07 06:54:55",
+      "qualityScore": 5.65
+    },
+    {
+      "rows": [
+        "19th Century",
+        "Animal Terms",
+        "Drinks",
+        "Modern Countries"
+      ],
+      "cols": [
+        "Locations in North America",
+        "Starts with SPA",
+        "Things Indonesian",
+        "Things Russian"
+      ],
+      "hash": "6c64c6ae13c4e8383e4c3f95b0b02e0543a0d8c3713e694ce0d57c564e30b64c",
+      "timestamp": "2026-02-07 06:54:55",
+      "qualityScore": 5.65
+    },
+    {
+      "rows": [
+        "1920s",
+        "Companies",
+        "Starts with BEE",
+        "Things Russian"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Foods",
+        "Music",
+        "Things German"
+      ],
+      "hash": "fba1d14e1df462379ca1ec9d5f5d1dfb494d968e50cc74d2ebc24f52087afef7",
+      "timestamp": "2026-02-06 23:40:11",
+      "qualityScore": 4.91
+    },
+    {
+      "rows": [
+        "1920s",
+        "Companies",
+        "Starts with BEE",
+        "Things Russian"
+      ],
+      "cols": [
+        "Foods",
+        "Music",
+        "Real Animals",
+        "Things German"
+      ],
+      "hash": "23283e2d2ae891a252ae653dae76f601ad4be4199b62458a144ac5cc0e7e7c93",
+      "timestamp": "2026-02-06 23:40:11",
+      "qualityScore": 4.91
+    },
+    {
+      "rows": [
+        "1920s",
+        "Companies",
+        "Starts with BLA",
+        "Things Russian"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Drama Stories",
+        "Music",
+        "Things German"
+      ],
+      "hash": "ae9fc0d82a6f6c027e205ac84fbc658db6bea2d3c308737ef63f6c64241a0f40",
+      "timestamp": "2026-02-06 23:40:11",
+      "qualityScore": 4.91
+    },
+    {
+      "rows": [
+        "1920s",
+        "Companies",
+        "Starts with BLA",
+        "Things Russian"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Music",
+        "Real Animals",
+        "Things German"
+      ],
+      "hash": "3cbb35e2c0bd9ab1c4cff78d3fd83b557b634f300bfe01df693d6fd25e51f02f",
+      "timestamp": "2026-02-06 23:40:11",
+      "qualityScore": 4.91
+    },
+    {
+      "rows": [
+        "1920s",
+        "Companies",
+        "Starts with BIG",
+        "Things Russian"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Drama Stories",
+        "Foods",
+        "Music"
+      ],
+      "hash": "aa2da1aa21ee2cda5ce01d82a0f31ab5985bd5f24d61b5bc6ef0557535bafdee",
+      "timestamp": "2026-02-06 23:40:11",
+      "qualityScore": 4.16
+    },
+    {
+      "rows": [
+        "1920s",
+        "Companies",
+        "Starts with BLA",
+        "Things Russian"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Drama Stories",
+        "Foods",
+        "Music"
+      ],
+      "hash": "1d98fb86434ebe03f7a8c901d5299affb32a50781f17afe9c1741f02371140b9",
+      "timestamp": "2026-02-06 23:40:11",
+      "qualityScore": 4.16
     }
   ],
   "message": "Puzzle saved successfully!"
