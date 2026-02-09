@@ -1,7 +1,7 @@
 # Connecdoku Development Makefile
 # Common commands for managing the puzzle database and data
 
-.PHONY: help build clean solve clean-db check-future curator ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve
+.PHONY: help build clean solve clean-db check-future curator ai-curator update-data review-puzzle delete-low-quality delete-old-hash-puzzles geological-era species-data serve
 
 # Local server config
 PORT ?= 8000
@@ -34,6 +34,7 @@ help:
 	@echo ""
 	@echo "Database Maintenance:"
 	@echo "  checkpoint     - Run WAL checkpoint to clean up database"
+	@echo "  delete-old-hash-puzzles - Delete puzzles with old word list hashes (reclaims space)"
 	@echo "  db-size        - Show database file sizes"
 	@echo "  db-status      - Show database status and statistics"
 
@@ -78,6 +79,11 @@ check-future:
 delete-low-quality:
 	@echo "Deleting low quality future puzzles..."
 	node delete_low_quality_future_puzzles.js
+
+# Delete puzzles with old word list hashes (immediately reclaims space)
+delete-old-hash-puzzles:
+	@echo "Deleting puzzles with old word list hashes..."
+	node delete_old_hash_puzzles.js
 
 # Update geological era data
 geological-era:

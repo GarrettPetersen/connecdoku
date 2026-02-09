@@ -201,20 +201,27 @@ function getCategoriesFromLastNDays(dailyDb, numDays) {
 }
 
 // ──────────────── Data Loading ─────────────────────────────
-const categoriesJson = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "categories.json")));
-const metaCatsJson = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "meta_categories.json")));
-const catSet = {};
-for (const [cat, words] of Object.entries(categoriesJson)) {
-    catSet[cat] = new Set(words);
-}
-const metaMap = {};
-for (const [metaCat, categories] of Object.entries(metaCatsJson)) {
-    if (metaCat !== 'No Meta Category') {
-        for (const category of categories) {
-            metaMap[category] = metaCat;
+let categoriesJson, metaCatsJson, catSet, metaMap;
+
+function loadCategories() {
+    categoriesJson = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "categories.json")));
+    metaCatsJson = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "meta_categories.json")));
+    catSet = {};
+    for (const [cat, words] of Object.entries(categoriesJson)) {
+        catSet[cat] = new Set(words);
+    }
+    metaMap = {};
+    for (const [metaCat, categories] of Object.entries(metaCatsJson)) {
+        if (metaCat !== 'No Meta Category') {
+            for (const category of categories) {
+                metaMap[category] = metaCat;
+            }
         }
     }
 }
+
+// Load categories on startup
+loadCategories();
 
 function uniqueWords(rCat, cCat, allCats) {
     const rowWords = catSet[rCat];
@@ -346,6 +353,8 @@ function renderOutput() {
         });
         output += `\n- **reset**: Reset word selection for this puzzle
 - **abandon**: Abandon this puzzle\n\n`;
+        output += `⚠️ **IMPORTANT: You must manually review ALL options and choose the BEST word for this cell!**\n`;
+        output += `⚠️ **The letter requirement forces you to review each choice - don't just pick option 0!**\n\n`;
         output += `**Command:** \`node ai_curator.js select <index><letter>\` (e.g., \`node ai_curator.js select 0B\` for option 0 with first letter B) or \`reset\`, \`abandon\``;
     } else if (state.phase === "FINAL_APPROVAL") {
         output += `## Final Approval\n\n`;
@@ -536,11 +545,25 @@ async function handleAction(action, value) {
     } else if (state.phase === "WORD_SELECTION") {
         if (action === "select") {
             if (value === "reset") {
+                // Reload categories in case words.json was updated
+                loadCategories();
+                
+                // Rebuild viable grid with updated categories
+                const p = state.currentPuzzle;
+                const allCats = [...p.rows, ...p.cols];
+                const grid = Array.from({ length: 4 }, () => Array(4));
+                for (let r = 0; r < 4; r++) {
+                    for (let c = 0; c < 4; c++) {
+                        grid[r][c] = uniqueWords(p.rows[r], p.cols[c], allCats);
+                    }
+                }
+                state.viableGrid = grid;
+                
                 state.chosen = Array.from({ length: 4 }, () => Array(4).fill(null));
                 state.usedWords = [];
                 state.currentRow = 0;
                 state.currentCol = 0;
-                state.message = "Word selection reset.";
+                state.message = "Word selection reset. Categories reloaded.";
             } else if (value === "abandon") {
                 state.phase = "MAIN_MENU";
                 state.message = "Puzzle abandoned.";
@@ -561,7 +584,7 @@ async function handleAction(action, value) {
                         if (providedLetter === expectedLetter) {
                             selectedWord = word;
                         } else {
-                            state.message = `Letter mismatch: expected ${expectedLetter} for option ${idx} (${word}), got ${providedLetter}`;
+                            state.message = `⚠️ Letter mismatch: expected ${expectedLetter} for option ${idx} (${word}), got ${providedLetter}. This mismatch is INTENTIONAL to force you to review ALL options and manually choose the BEST word - don't just pick option 0! Please review all options carefully.`;
                         }
                     } else {
                         state.message = `Invalid index: ${idx} (valid range: 0-${options.length - 1})`;
@@ -570,7 +593,7 @@ async function handleAction(action, value) {
                     // Still allow full word name for backwards compatibility
                     selectedWord = value;
                 } else {
-                    state.message = `Invalid format: expected <number><letter> (e.g., "0B") or full word name. Got: ${value}`;
+                    state.message = `Invalid format: expected <number><letter> (e.g., "0B") or full word name. Got: ${value}. ⚠️ Remember: You must manually review ALL options and choose the BEST word - the letter requirement forces careful review of each choice!`;
                 }
 
                 if (selectedWord) {
