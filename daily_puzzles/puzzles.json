@@ -9518,5 +9518,205 @@
         "Italy"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1990",
+      "2002",
+      "Men",
+      "Movies featuring Keanu Reeves"
+    ],
+    "cols": [
+      "First in Internal Chronology",
+      "Movies featuring Al Pacino",
+      "Sci-fi Stories",
+      "Second in Release Order"
+    ],
+    "words": [
+      [
+        "Home Alone",
+        "The Godfather Part III",
+        "Back to the Future Part III",
+        "Die Hard 2"
+      ],
+      [
+        "Red Dragon",
+        "Insomnia",
+        "Attack of the Clones",
+        "The Lord of the Rings: The Two Towers"
+      ],
+      [
+        "Aladdin",
+        "Scarface",
+        "Superman",
+        "Prince Caspian"
+      ],
+      [
+        "Bill & Ted's Excellent Adventure",
+        "The Devil's Advocate",
+        "The Matrix Revolutions",
+        "Bill & Ted's Bogus Journey"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "2004",
+      "2013",
+      "Fictional People",
+      "First in Release Order"
+    ],
+    "cols": [
+      "3D Animated Films",
+      "Action Stories",
+      "Best Picture Winners",
+      "Movies featuring Joaquin Phoenix"
+    ],
+    "words": [
+      [
+        "The Polar Express",
+        "Kill Bill: Volume 2",
+        "Crash",
+        "The Village"
+      ],
+      [
+        "Monsters University",
+        "A Good Day to Die Hard",
+        "12 Years a Slave",
+        "Her"
+      ],
+      [
+        "The Grinch",
+        "Batman",
+        "Rocky",
+        "Joker"
+      ],
+      [
+        "Monsters, Inc.",
+        "The Matrix",
+        "The Godfather",
+        "Brother Bear"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1930s",
+      "1997",
+      "Second in Internal Chronology",
+      "Third in Release Order"
+    ],
+    "cols": [
+      "Ends with ION",
+      "Horror Stories",
+      "Stories Where the Mom Dies",
+      "Things Chinese"
+    ],
+    "words": [
+      [
+        "The Great Depression",
+        "Dracula",
+        "Batman",
+        "The Nanjing Massacre"
+      ],
+      [
+        "Vegas Vacation",
+        "The Devil's Advocate",
+        "Harry Potter and the Sorcerer's Stone",
+        "Happy Together"
+      ],
+      [
+        "National Lampoon's European Vacation",
+        "Aliens",
+        "Attack of the Clones",
+        "The Dark Forest"
+      ],
+      [
+        "National Lampoon's Christmas Vacation",
+        "Alien 3",
+        "Harry Potter and the Prisoner of Azkaban",
+        "Death's End"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1960s",
+      "1990s",
+      "Carnivores",
+      "Omnivores"
+    ],
+    "cols": [
+      "Black and White",
+      "Fictional Animals",
+      "MLB Teams",
+      "Things British"
+    ],
+    "words": [
+      [
+        "To Kill a Mockingbird",
+        "Big Bird",
+        "Mariner",
+        "Abbey Road"
+      ],
+      [
+        "Schindler's List",
+        "Pumbaa",
+        "Angel",
+        "Four Weddings and a Funeral"
+      ],
+      [
+        "Penguin",
+        "Godzilla",
+        "Tiger",
+        "Jaguar"
+      ],
+      [
+        "Magpie",
+        "Mickey Mouse",
+        "Cardinal",
+        "Cricket"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "17th Century",
+      "Han Dynasty",
+      "Roman Republic",
+      "The American Revolution"
+    ],
+    "cols": [
+      "Literature Quotes",
+      "Military Leaders",
+      "National Leaders",
+      "Wars"
+    ],
+    "words": [
+      [
+        "The play's the thing",
+        "Sébastien Le Prestre de Vauban",
+        "James",
+        "The Thirty Years War"
+      ],
+      [
+        "The realm, long divided, must unite",
+        "Cao Cao",
+        "Emperor Wen of Han",
+        "Chu–Han Contention"
+      ],
+      [
+        "Et tu, Brute?",
+        "Mark Antony",
+        "Julius Caesar",
+        "Third Servile War"
+      ],
+      [
+        "Give me liberty or give me death",
+        "Lafayette",
+        "Jefferson",
+        "The American Revolution"
+      ]
+    ]
   }
 ]

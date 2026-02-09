@@ -1,5 +1,5 @@
 {
-  "curatedCount": 81,
+  "curatedCount": 86,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -8,177 +8,132 @@
   ],
   "currentPuzzle": {
     "rows": [
-      "2000s",
-      "Islands",
-      "National Capitals",
-      "Republics"
+      "17th Century",
+      "Han Dynasty",
+      "Roman Republic",
+      "The American Revolution"
     ],
     "cols": [
-      "Cold War",
-      "Locations in Asia",
-      "Things French",
-      "Things Italian"
+      "Literature Quotes",
+      "Military Leaders",
+      "National Leaders",
+      "Wars"
     ],
-    "hash": "a93f20e0bc30f4f707d72937b86d056cf5b4752e8182424a72b2cfc34d711e80",
-    "timestamp": "2026-02-07 16:36:31",
-    "qualityScore": 0
+    "hash": "74a34abf20c722ab04cd90cad5991020ea9da37b1560b9b5d88b92d8f5f751d4",
+    "timestamp": "2026-02-07 01:47:58",
+    "qualityScore": 14.98
   },
   "viableGrid": [
     [
       [
-        "Bush"
+        "The play's the thing"
       ],
       [
-        "Jordan",
-        "Troy"
+        "Sébastien Le Prestre de Vauban"
       ],
       [
-        "Airbus A380",
-        "Chocolat",
-        "Ratatouille"
+        "James",
+        "Macbeth",
+        "Philip"
       ],
       [
-        "Andrea Bocelli",
-        "Ezio Auditore"
+        "Bohemian Revolt",
+        "The English Civil War",
+        "The Thirty Years War"
       ]
     ],
     [
       [
-        "Bikini",
-        "Cuba"
+        "The realm, long divided, must unite"
       ],
       [
-        "Bali",
-        "Cebu",
-        "Hainan",
-        "Hokkaido",
-        "Honshu",
-        "Jeju",
-        "Krakatoa",
-        "Kyushu",
-        "Lombok",
-        "Luzon",
-        "Mindanao",
-        "Okinawa",
-        "Palau",
-        "Phuket",
-        "Shikoku",
-        "Singapore",
-        "Sulawesi",
-        "Sumatra",
-        "Taiwan"
+        "Cao Cao",
+        "Guan Yu",
+        "Liu Bei"
       ],
       [
-        "Martinique"
+        "Emperor Wen of Han"
       ],
       [
-        "Capri",
-        "Elba",
-        "Ischia",
-        "Sardinia",
-        "Sicily"
+        "Chu–Han Contention",
+        "Han Wudi's Defeat of the Xiongnu"
       ]
     ],
     [
       [
-        "Berlin",
-        "Washington"
+        "Et tu, Brute?"
       ],
       [
-        "Beijing",
-        "Delhi",
-        "Seoul",
-        "Tokyo"
+        "Gaius Marius",
+        "Mark Antony"
       ],
       [
-        "Paris"
+        "Caesar",
+        "Julius Caesar"
       ],
       [
-        "Roma",
-        "Rome"
+        "Third Servile War"
       ]
     ],
     [
       [
-        "Hungary",
-        "Poland"
+        "Give me liberty or give me death"
       ],
       [
-        "Armenia",
-        "Azerbaijan",
-        "Bangladesh",
-        "China",
-        "India",
-        "Indonesia",
-        "Iran",
-        "Iraq",
-        "Israel",
-        "Kazakhstan",
-        "Kyrgyzstan",
-        "Laos",
-        "Lebanon",
-        "Mongolia",
-        "Myanmar",
-        "Pakistan",
-        "Philippines",
-        "Syria",
-        "Tajikistan",
-        "Turkey",
-        "Turkmenistan",
-        "Uzbekistan",
-        "Yemen"
+        "Lafayette"
       ],
       [
-        "France"
+        "Adams",
+        "Jefferson"
       ],
       [
-        "Italy"
+        "The American Revolution"
       ]
     ]
   ],
   "chosen": [
     [
-      "Bush",
-      "Jordan",
-      "Ratatouille",
-      "Andrea Bocelli"
+      "The play's the thing",
+      "Sébastien Le Prestre de Vauban",
+      "James",
+      "The Thirty Years War"
     ],
     [
-      "Cuba",
-      "Singapore",
-      "Martinique",
-      "Sicily"
+      "The realm, long divided, must unite",
+      "Cao Cao",
+      "Emperor Wen of Han",
+      "Chu–Han Contention"
     ],
     [
-      "Berlin",
-      "Tokyo",
-      "Paris",
-      "Rome"
+      "Et tu, Brute?",
+      "Mark Antony",
+      "Julius Caesar",
+      "Third Servile War"
     ],
     [
-      "Poland",
-      "China",
-      "France",
-      "Italy"
+      "Give me liberty or give me death",
+      "Lafayette",
+      "Jefferson",
+      "The American Revolution"
     ]
   ],
   "usedWords": [
-    "Bush",
-    "Jordan",
-    "Ratatouille",
-    "Andrea Bocelli",
-    "Cuba",
-    "Singapore",
-    "Martinique",
-    "Sicily",
-    "Berlin",
-    "Tokyo",
-    "Paris",
-    "Rome",
-    "Poland",
-    "China",
-    "France",
-    "Italy"
+    "The play's the thing",
+    "Sébastien Le Prestre de Vauban",
+    "James",
+    "The Thirty Years War",
+    "The realm, long divided, must unite",
+    "Cao Cao",
+    "Emperor Wen of Han",
+    "Chu–Han Contention",
+    "Et tu, Brute?",
+    "Mark Antony",
+    "Julius Caesar",
+    "Third Servile War",
+    "Give me liberty or give me death",
+    "Lafayette",
+    "Jefferson",
+    "The American Revolution"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -186,343 +141,343 @@
   "puzzles": [
     {
       "rows": [
-        "1810s",
-        "Car Brands",
-        "Countries",
-        "Musicians"
+        "15th Century",
+        "17th Century",
+        "Starts with MAR",
+        "Things Greek"
       ],
       "cols": [
-        "2000s",
-        "Locations in North America",
-        "Things French",
-        "Things Italian"
+        "Age of Sail",
+        "Military Leaders",
+        "National Leaders",
+        "Scientists"
       ],
-      "hash": "19353a0492c341aa071d9299652ed3040c59c3180e2044cc42e69ba15fd23ac9",
-      "timestamp": "2026-02-09 01:08:18",
-      "qualityScore": 0
+      "hash": "e0f549215d2392a07138208de3e247ae5b3533883703312e9c641ca430f6d0c7",
+      "timestamp": "2026-02-07 10:46:42",
+      "qualityScore": 10.04
     },
     {
       "rows": [
-        "1810s",
-        "Car Brands",
-        "Countries",
-        "Political Events"
+        "15th Century",
+        "17th Century",
+        "Starts with MAR",
+        "Things Greek"
       ],
       "cols": [
-        "2000s",
-        "Locations in North America",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "ddcb114b5311bd4fb4016884eb1921c9bae60dbba29125324cfd82ee73997cab",
-      "timestamp": "2026-02-09 01:08:19",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1810s",
-        "Car Brands",
-        "Countries",
+        "Military Leaders",
+        "National Leaders",
+        "Scientists",
         "Ships"
       ],
-      "cols": [
-        "2000s",
-        "Locations in North America",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "54fee447c0abbb78a2e0f6064b14ed8dabce9f294fcabfca7debf179284eb227",
-      "timestamp": "2026-02-09 01:08:19",
-      "qualityScore": 0
+      "hash": "4f966355a97d2470c33b34018a706d57f086503b004cae3936d7b33b46e32e38",
+      "timestamp": "2026-02-07 10:46:42",
+      "qualityScore": 7.87
     },
     {
       "rows": [
-        "1810s",
-        "Car Brands",
-        "Countries",
-        "Ships"
-      ],
-      "cols": [
-        "2000s",
-        "Locations in North America",
-        "Things French",
-        "Things Spanish"
-      ],
-      "hash": "cb52913c663082a7b1bb14c4fa778c57757df382ab85333228e7bf44274d79b3",
-      "timestamp": "2026-02-09 01:08:19",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1810s",
-        "Car Brands",
-        "Countries",
-        "Ships"
-      ],
-      "cols": [
-        "2000s",
-        "Locations in North America",
-        "Things Italian",
-        "Things Spanish"
-      ],
-      "hash": "046670bc8f1d4e741f2ec0f7b8b36dff655dc213510266e33ab4d2501768f11c",
-      "timestamp": "2026-02-09 01:08:19",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1992",
-        "2013",
-        "Movies featuring Ian McKellen",
-        "Movies featuring Mark Ruffalo"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "First in Internal Chronology",
-        "Second in Internal Chronology",
-        "Time Travel Stories"
-      ],
-      "hash": "690425b2e9fe08238227ce23b4aeb3a64bae88f9804de93e800913b3d4a31f26",
-      "timestamp": "2026-02-07 12:28:56",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1992",
-        "2013",
-        "Movies featuring Ian McKellen",
-        "Movies featuring Robert Downey Jr."
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "First in Internal Chronology",
-        "Second in Internal Chronology",
-        "Time Travel Stories"
-      ],
-      "hash": "a330c1defb2f2ccf4de569b35cb03ad45d517ca3c5e22b41e22d61adfaa1fd20",
-      "timestamp": "2026-02-07 12:28:57",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "2006",
-        "2010",
-        "2D Animated Films",
-        "Pixar"
-      ],
-      "cols": [
-        "First in Internal Chronology",
-        "Musical Films",
-        "Second in Internal Chronology",
-        "Stories Where the Mom Dies"
-      ],
-      "hash": "8fef50c6d8aac125a4fde8e6a6bc576648490fa3a8d1823de5c7fc9da2c1cf03",
-      "timestamp": "2026-02-08 13:48:46",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "2000s",
-        "NATO Countries",
-        "Sci-fi Stories",
-        "Starts with MAR"
-      ],
-      "cols": [
-        "Locations in North America",
-        "Real Animals",
-        "Things French",
+        "15th Century",
+        "17th Century",
+        "Starts with MAR",
         "Things German"
       ],
-      "hash": "626300b4d68c8924a8fbbb5f4bc42de6f66bc9ca8922d3039b3e6f0c7c5a53eb",
-      "timestamp": "2026-02-06 22:33:18",
-      "qualityScore": 0
+      "cols": [
+        "Military Leaders",
+        "National Leaders",
+        "Scientists",
+        "Ships"
+      ],
+      "hash": "adefc34559e6984c64b1238d045678d48941ff9104cb8afca2e40fc93af3dd70",
+      "timestamp": "2026-02-07 10:46:42",
+      "qualityScore": 7.25
     },
     {
       "rows": [
-        "1810s",
-        "Islands",
-        "NATO Members",
-        "Starts with PAN"
+        "17th Century",
+        "Han Dynasty",
+        "Roman Republic",
+        "The American Revolution"
       ],
       "cols": [
-        "Locations in Asia",
-        "Locations in North America",
-        "Things Italian",
-        "Things Spanish"
+        "Literature Quotes",
+        "Military Leaders",
+        "National Leaders",
+        "Wars"
       ],
-      "hash": "7cf667f61e7073be8e2b5a03c71e967302861fcc0f971c7f64b67f59108c6ead",
-      "timestamp": "2025-11-24 08:30:53",
-      "qualityScore": 7.57
+      "hash": "74a34abf20c722ab04cd90cad5991020ea9da37b1560b9b5d88b92d8f5f751d4",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 14.98
     },
     {
       "rows": [
-        "1810s",
-        "Islands",
-        "NATO Countries",
-        "Starts with PAN"
+        "17th Century",
+        "Han Dynasty",
+        "Roman Republic",
+        "The American Revolution"
       ],
       "cols": [
-        "Locations in Asia",
-        "Locations in North America",
-        "Things Italian",
-        "Things Spanish"
+        "Literature Quotes",
+        "Military Conflicts",
+        "Military Leaders",
+        "National Leaders"
       ],
-      "hash": "b093690e14fa7785d7159e8d94b8a5a29c5155969688ee66679ab1c66dcc9d6e",
-      "timestamp": "2025-11-24 08:30:53",
-      "qualityScore": 7.5
+      "hash": "120998619408ca5ca7223be262587e7a4fd4510cbd1ecd8d6388cdba29aaf050",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 14.53
     },
     {
       "rows": [
-        "1999",
-        "2000s",
-        "Ends with ION",
-        "Second in Internal Chronology"
+        "17th Century",
+        "Han Dynasty",
+        "Roman Republic",
+        "The American Revolution"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Fantasy Stories",
-        "Movies featuring Bruce Willis",
-        "Movies featuring Sigourney Weaver"
+        "Famous Quotes",
+        "Military Leaders",
+        "National Leaders",
+        "Wars"
       ],
-      "hash": "a8584ba3e692e1a7d71e1023993ee4fe21ee5faee48e5cb7660f285ac5a64915",
-      "timestamp": "2026-02-06 21:21:55",
-      "qualityScore": 0
+      "hash": "20c916af7bf86f04d165bbfce26f284c639e75e0670d9f79532735975eab7f7b",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 12.170000000000002
     },
     {
       "rows": [
-        "1999",
-        "2000s",
-        "Ends with ION",
-        "Second in Internal Chronology"
+        "17th Century",
+        "Han Dynasty",
+        "Roman Republic",
+        "The American Revolution"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Fantasy Stories",
-        "Movies featuring Bruce Willis",
-        "Sci-fi Stories"
+        "Famous Quotes",
+        "Military Conflicts",
+        "Military Leaders",
+        "National Leaders"
       ],
-      "hash": "2f55c37e0cd5e56c38cd01d4f473fe575f00772b3bb61b7ae92d0b0914280bea",
-      "timestamp": "2026-02-06 21:21:55",
-      "qualityScore": 0
+      "hash": "5de2e04e604178b0705d327686a6f240e2f11115f2abc1c4fa2aaefb6b192280",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 11.72
     },
     {
       "rows": [
-        "1999",
-        "2001",
-        "Movies featuring Jack Nicholson",
-        "Second in Internal Chronology"
+        "17th Century",
+        "Han Dynasty",
+        "Roman Republic",
+        "Starts with THE"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Musical Films",
-        "Stories Where the Mom Dies",
-        "Thriller Stories"
+        "Historical Sites",
+        "Military Leaders",
+        "Political Events",
+        "Wars"
       ],
-      "hash": "a6c75102af1b36b8ed094b58ab3b2ecb43b2cecb395342a80050215d9e0b19b0",
-      "timestamp": "2026-02-06 21:27:55",
-      "qualityScore": 0
+      "hash": "9461a728a3e870478f5303c753d092ed30b6fb5ca27e1134143584c25b7eb055",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 11.38
     },
     {
       "rows": [
-        "2000s",
-        "Islands",
-        "National Capitals",
-        "Republics"
-      ],
-      "cols": [
-        "Cold War",
-        "Locations in Asia",
-        "Things French",
-        "Things Italian"
-      ],
-      "hash": "a93f20e0bc30f4f707d72937b86d056cf5b4752e8182424a72b2cfc34d711e80",
-      "timestamp": "2026-02-07 16:36:31",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "2018",
-        "Ends with ION",
-        "Movies featuring Ian McKellen",
-        "Movies featuring Mark Ruffalo"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "First in Internal Chronology",
-        "Second in Internal Chronology",
-        "Time Travel Stories"
-      ],
-      "hash": "d6cfd2aa9710ba595eb0104b0daaa0a153300fab36c0ec4c6b6ae28e465fdb01",
-      "timestamp": "2026-02-07 15:49:55",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "2018",
-        "Ends with ION",
-        "Movies featuring Ian McKellen",
-        "Movies featuring Robert Downey Jr."
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "First in Internal Chronology",
-        "Second in Internal Chronology",
-        "Time Travel Stories"
-      ],
-      "hash": "d1a21f62987103f7260f06667a4500cb41ac999f7547be00bd8f780c6bf45e9e",
-      "timestamp": "2026-02-07 15:49:55",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1992",
-        "2004",
-        "Movies featuring Ian McKellen",
-        "Movies featuring Mark Ruffalo"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "First in Internal Chronology",
-        "Second in Internal Chronology",
-        "Time Travel Stories"
-      ],
-      "hash": "837ae05bf264d654491d3178be9c0b2562e2298f0940167de0916e92880ae562",
-      "timestamp": "2026-02-08 13:44:14",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1992",
-        "2004",
-        "Movies featuring Ian McKellen",
-        "Movies featuring Robert Downey Jr."
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "First in Internal Chronology",
-        "Second in Internal Chronology",
-        "Time Travel Stories"
-      ],
-      "hash": "5e704a5969d4933fbf72470e9eab41a0d779c6104d8b54626933068628ac541a",
-      "timestamp": "2026-02-08 13:44:14",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1st Century BC",
+        "17th Century",
+        "Han Dynasty",
         "Roman Empire",
-        "Things French",
+        "War Stories"
+      ],
+      "cols": [
+        "Historical Sites",
+        "Military Leaders",
+        "Starts with THE",
+        "Wars"
+      ],
+      "hash": "e120b343058a2d63d76c02f9330cc3639ac87d2519e4b4b0f64d12752f880a7f",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 10.53
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Han Dynasty",
+        "Roman Empire",
+        "War Stories"
+      ],
+      "cols": [
+        "Historical Sites",
+        "National Leaders",
+        "Starts with THE",
+        "Wars"
+      ],
+      "hash": "eff695de29c278bb64633644c69047d649d172804c20a340fc0e01847c5acf17",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 10.18
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Han Dynasty",
+        "Roman Empire",
+        "War Stories"
+      ],
+      "cols": [
+        "Historical Sites",
+        "Military Conflicts",
+        "Military Leaders",
+        "Starts with THE"
+      ],
+      "hash": "9d38a890b5d45675b9e209a040b9ed559d9d94e829dd4794d76b3a7dd4be5caa",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 10.08
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Han Dynasty",
+        "Roman Empire",
+        "War Stories"
+      ],
+      "cols": [
+        "Historical Sites",
+        "Military Conflicts",
+        "National Leaders",
+        "Starts with THE"
+      ],
+      "hash": "02032149acfa4f53a8a2ffe513a69035021242fbd560f3ab2805291851c19188",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 9.73
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Han Dynasty",
+        "Roman Republic",
+        "Starts with MON"
+      ],
+      "cols": [
+        "Buildings",
+        "Military Leaders",
+        "National Leaders",
+        "Wars"
+      ],
+      "hash": "bc61043769878133c9ddceb0d9984750ca6514a515dd44dd2526d0d67c2c7ec9",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 7.83
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Han Dynasty",
+        "Roman Empire",
         "Things Spanish"
       ],
       "cols": [
         "Buildings",
-        "Great Conquerors",
         "Military Conflicts",
-        "Starts with SPA"
+        "Military Leaders",
+        "Starts with THE"
       ],
-      "hash": "b5f8ca8e57eb3c30f243c832dc87573142396bdda4dccc1faeb2c0bb03c41d62",
-      "timestamp": "2026-02-08 04:09:20",
-      "qualityScore": 0
+      "hash": "c0f7491c076ba97426493d11a747954bf0a3536bc89059f756667e4adc0b9820",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 7.819999999999999
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Han Dynasty",
+        "Roman Empire",
+        "Things Spanish"
+      ],
+      "cols": [
+        "Buildings",
+        "Military Conflicts",
+        "National Leaders",
+        "Starts with THE"
+      ],
+      "hash": "ba3dc98900a417bb98626dbfd50dc3672cbea88eb3a499358103349aa2d63e2a",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 7.47
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Han Dynasty",
+        "Roman Republic",
+        "Starts with MON"
+      ],
+      "cols": [
+        "Buildings",
+        "Military Conflicts",
+        "Military Leaders",
+        "National Leaders"
+      ],
+      "hash": "cfbdd926061c9e4b04246e9e4c6aa093a28bb6571300ee2bc850f2833c3c6db0",
+      "timestamp": "2026-02-07 01:47:58",
+      "qualityScore": 7.38
+    },
+    {
+      "rows": [
+        "1910s",
+        "Starts with HAN",
+        "Things Spanish",
+        "World War II"
+      ],
+      "cols": [
+        "Military Conflicts",
+        "Military Leaders",
+        "Ships",
+        "Things German"
+      ],
+      "hash": "09c50a18adc180415118115be580674e1b7076ec14639a4f39c41355f52d66dd",
+      "timestamp": "2026-02-07 02:14:09",
+      "qualityScore": 5.09
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Ends with SON",
+        "National Leaders",
+        "World War II"
+      ],
+      "cols": [
+        "Cities in USA",
+        "Famous Diarists",
+        "Military Leaders",
+        "Ships"
+      ],
+      "hash": "6850d053cc189dee1ca84e3e1848e5abe46a3aa162e500dc12984a4eda303865",
+      "timestamp": "2026-02-07 01:26:13",
+      "qualityScore": 8.1
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Ends with SON",
+        "National Leaders",
+        "World War II"
+      ],
+      "cols": [
+        "Cities in North America",
+        "Famous Diarists",
+        "Military Leaders",
+        "Ships"
+      ],
+      "hash": "585f3ff85a3c769160b3e56a8d04b0c411a4f962d614170fc065d17de8245cc3",
+      "timestamp": "2026-02-07 01:26:13",
+      "qualityScore": 7.93
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Ends with SON",
+        "National Leaders",
+        "World War II"
+      ],
+      "cols": [
+        "Famous Diarists",
+        "Locations in North America",
+        "Military Leaders",
+        "Ships"
+      ],
+      "hash": "4e66b9feca6885b33ef3f9c370548da47b476dbe64d0cd32b9c3a4f07c47325e",
+      "timestamp": "2026-02-07 01:26:13",
+      "qualityScore": 7.38
     }
   ],
   "message": "Puzzle saved successfully!"

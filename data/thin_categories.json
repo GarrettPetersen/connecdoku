@@ -3353,8 +3353,8 @@
   "Movies featuring Paul Winchell": [
     "The Many Adventures of Winnie the Pooh"
   ],
-  "Movies directed by Wachowskis": [
-    "The Matrix"
+  "Movies directed by Lana Wachowski": [
+    "The Matrix Resurrections"
   ],
   "Movies directed by Mike Rianda": [
     "The Mitchells vs the Machines"
@@ -4241,10 +4241,6 @@
     "Chile",
     "Robinson Crusoe"
   ],
-  "Movies featuring Carrie-Anne Moss": [
-    "Chocolat",
-    "The Matrix"
-  ],
   "Movies featuring Juliette Binoche": [
     "Chocolat",
     "The English Patient"
@@ -4969,10 +4965,6 @@
     "Oscar",
     "Rocky"
   ],
-  "Movies featuring Laurence Fishburne": [
-    "Othello",
-    "The Matrix"
-  ],
   "Movies directed by Guillermo del Toro": [
     "Pan's Labyrinth",
     "The Shape of Water"
@@ -5180,6 +5172,10 @@
   "Movies featuring Junius Matthews": [
     "The Many Adventures of Winnie the Pooh",
     "The Sword in the Stone"
+  ],
+  "Movies featuring Hugo Weaving": [
+    "The Matrix Reloaded",
+    "The Matrix Revolutions"
   ],
   "Movies featuring Keith David": [
     "The Princess and the Frog",
@@ -5951,5 +5947,10 @@
     "The Lord of the Rings: The Fellowship of the Ring",
     "The Lord of the Rings: The Return of the King",
     "The Lord of the Rings: The Two Towers"
+  ],
+  "Movies directed by Wachowskis": [
+    "The Matrix",
+    "The Matrix Reloaded",
+    "The Matrix Revolutions"
   ]
 }
