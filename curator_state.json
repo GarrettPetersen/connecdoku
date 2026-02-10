@@ -1,5 +1,5 @@
 {
-  "curatedCount": 91,
+  "curatedCount": 121,
   "attempts": 0,
   "phase": "MAIN_MENU",
   "searchChoice": null,
@@ -8,150 +8,158 @@
   ],
   "currentPuzzle": {
     "rows": [
-      "16th Century",
-      "18th Century",
-      "Napoleonic Wars",
-      "Roman Empire"
+      "Cenozoic Era",
+      "Qing Dynasty",
+      "Things Italian",
+      "Video Games"
     ],
     "cols": [
-      "Famous Quotes",
-      "Historical Sites",
-      "Ships",
-      "Things Spanish"
+      "Ends with ION",
+      "Place Names",
+      "Real People",
+      "Red Things"
     ],
-    "hash": "2ba20dc0d0c87e4233e0279f9000b9891228ba54406eba79a23078e64df5fa23",
-    "timestamp": "2026-02-07 11:26:39",
-    "qualityScore": 11.410000000000002
+    "hash": "533c68fb779cbbc9196b5c8a17c378bf34a3c9290158e27a99d47fabd950dc45",
+    "timestamp": "2025-11-24 07:44:10",
+    "qualityScore": 7.37
   },
   "viableGrid": [
     [
       [
-        "All the world's a stage",
-        "Something is rotten in Denmark",
-        "The play's the thing",
-        "To be or not to be"
+        "Dandelion",
+        "Lion",
+        "Onion",
+        "Scorpion"
       ],
       [
-        "Globe Theatre"
+        "Birch",
+        "Cedar",
+        "Turkey"
       ],
       [
-        "Mary Rose",
-        "Queen Mary"
+        "Drake"
       ],
       [
-        "Catherine of Aragon",
-        "Ferdinand Magellan",
-        "Francisco Pizarro",
-        "Hernán Cortés",
-        "The Spanish Armada"
+        "Cardinal",
+        "Crab",
+        "Lobster",
+        "Rose"
       ]
     ],
     [
       [
-        "Give me liberty or give me death"
+        "The Boxer Rebellion",
+        "The Taiping Rebellion"
       ],
       [
-        "Bastille"
+        "Beijing"
       ],
       [
-        "Bonhomme Richard",
-        "Hancock"
+        "Hong Xiuquan"
       ],
       [
-        "Francisco Goya"
+        "Dream of the Red Chamber"
       ]
     ],
     [
       [
-        "La Garde meurt, elle ne se rend pas!",
-        "Merde!"
+        "The Catholic Counter-Reformation",
+        "The Italian Unification"
       ],
       [
-        "Waterloo"
-      ],
-      [
-        "Bellerophon",
-        "Bucentaure",
-        "Redoutable",
-        "Temeraire",
-        "Victory"
-      ],
-      [
-        "Battle of Trafalgar"
-      ]
-    ],
-    [
-      [
-        "Render unto Caesar",
-        "Varus, give me back my legions"
-      ],
-      [
-        "Arch of Titus",
-        "Basilica Aemilia",
-        "Basilica Porcia",
-        "Basilica Sempronia",
-        "Circus Maximus",
-        "Colosseum",
-        "Curia",
-        "Hadrian's Wall",
+        "Capri",
+        "Corsica",
+        "Elba",
+        "Etna",
+        "Florence",
+        "Herculaneum",
+        "Ischia",
+        "Italy",
         "Ostia Antica",
-        "Pantheon",
-        "Roman Forum",
-        "Tabularium",
-        "Temple of Castor and Pollux",
-        "Temple of Saturn"
+        "Pompeii",
+        "Roma",
+        "Rome",
+        "Sardinia",
+        "Sicily",
+        "Venice",
+        "Verona",
+        "Vesuvius"
       ],
       [
-        "Mauretania"
+        "Andrea Bocelli",
+        "Christopher Columbus",
+        "Da Vinci",
+        "Dante",
+        "Enrico Fermi",
+        "Galileo",
+        "Luigi",
+        "Marco Polo",
+        "Michelangelo",
+        "Toscanini"
       ],
       [
-        "Hispania"
+        "Bolognese",
+        "Marinara"
+      ]
+    ],
+    [
+      [
+        "Red Dead Redemption"
+      ],
+      [
+        "Europa"
+      ],
+      [
+        "Pharaoh"
+      ],
+      [
+        "Rust"
       ]
     ]
   ],
   "chosen": [
     [
-      "To be or not to be",
-      "Globe Theatre",
-      "Mary Rose",
-      "The Spanish Armada"
+      "Lion",
+      "Turkey",
+      "Drake",
+      "Rose"
     ],
     [
-      "Give me liberty or give me death",
-      "Bastille",
-      "Bonhomme Richard",
-      "Francisco Goya"
+      "The Boxer Rebellion",
+      "Beijing",
+      "Hong Xiuquan",
+      "Dream of the Red Chamber"
     ],
     [
-      "La Garde meurt, elle ne se rend pas!",
-      "Waterloo",
-      "Victory",
-      "Battle of Trafalgar"
+      "The Italian Unification",
+      "Rome",
+      "Da Vinci",
+      "Marinara"
     ],
     [
-      "Render unto Caesar",
-      "Colosseum",
-      "Mauretania",
-      "Hispania"
+      "Red Dead Redemption",
+      "Europa",
+      "Pharaoh",
+      "Rust"
     ]
   ],
   "usedWords": [
-    "To be or not to be",
-    "Globe Theatre",
-    "Mary Rose",
-    "The Spanish Armada",
-    "Give me liberty or give me death",
-    "Bastille",
-    "Bonhomme Richard",
-    "Francisco Goya",
-    "La Garde meurt, elle ne se rend pas!",
-    "Waterloo",
-    "Victory",
-    "Battle of Trafalgar",
-    "Render unto Caesar",
-    "Colosseum",
-    "Mauretania",
-    "Hispania"
+    "Lion",
+    "Turkey",
+    "Drake",
+    "Rose",
+    "The Boxer Rebellion",
+    "Beijing",
+    "Hong Xiuquan",
+    "Dream of the Red Chamber",
+    "The Italian Unification",
+    "Rome",
+    "Da Vinci",
+    "Marinara",
+    "Red Dead Redemption",
+    "Europa",
+    "Pharaoh",
+    "Rust"
   ],
   "currentRow": 4,
   "currentCol": 0,
@@ -159,343 +167,343 @@
   "puzzles": [
     {
       "rows": [
-        "16th Century",
-        "18th Century",
-        "Napoleonic Wars",
-        "Roman Empire"
+        "1860s",
+        "Ming Dynasty",
+        "Things Italian",
+        "Warring States Period"
       ],
       "cols": [
-        "Famous Quotes",
-        "Historical Sites",
+        "Battles",
+        "Buildings",
+        "Classic Literature",
+        "Real People"
+      ],
+      "hash": "2ba819eaaffb9e33301ebb0a09950e27a2ba8369cc17c99a2fb5b560f43cf8a2",
+      "timestamp": "2026-02-06 20:25:24",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1940s",
+        "Real People",
         "Ships",
-        "Things Spanish"
+        "Starts with BAT"
       ],
-      "hash": "2ba20dc0d0c87e4233e0279f9000b9891228ba54406eba79a23078e64df5fa23",
-      "timestamp": "2026-02-07 11:26:39",
-      "qualityScore": 11.410000000000002
+      "cols": [
+        "Cold War",
+        "Movies",
+        "Quaternary Period",
+        "Things Italian"
+      ],
+      "hash": "f20302de59e673339901688462f489ee4bd761b2ce3d4c3fab4a1761867a9959",
+      "timestamp": "2025-12-02 09:32:24",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "16th Century",
-        "18th Century",
-        "Napoleonic Wars",
-        "Roman Empire"
+        "1940s",
+        "Real People",
+        "Ships",
+        "Starts with BAT"
       ],
       "cols": [
-        "Famous Quotes",
-        "Historical Sites",
+        "Cold War",
+        "Place Names",
+        "Pleistocene Epoch",
+        "Things Italian"
+      ],
+      "hash": "fed32a44e2c0a72b46ca2dde72d7e9e5f496d46af9a65b6863ef79da263a13ba",
+      "timestamp": "2025-12-02 09:32:24",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1940s",
         "Real People",
+        "Ships",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Cold War",
+        "Place Names",
+        "Quaternary Period",
+        "Things Italian"
+      ],
+      "hash": "dc3d194ebde133b436703ba49337f12c664580c3ed38b6a0ac8d92b979c9ecc1",
+      "timestamp": "2025-12-02 09:32:24",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1940s",
+        "Real People",
+        "Ships",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Holocene Epoch",
+        "Locations in North America",
+        "Movies",
+        "Things Italian"
+      ],
+      "hash": "77ee1ad839556d96fe4e956b7cef2858bff269c7ce3c7e4326775595124e72f8",
+      "timestamp": "2025-12-02 09:32:25",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1940s",
+        "Real People",
+        "Ships",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Holocene Epoch",
+        "Movies",
+        "Place Names",
+        "Things Italian"
+      ],
+      "hash": "483bf4c3f748468142572e7a226250b61a259d27ae280ab0ccdca31a6ceb9309",
+      "timestamp": "2025-12-02 09:32:25",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1940s",
+        "Real People",
+        "Ships",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Locations in North America",
+        "Movies",
+        "Pleistocene Epoch",
+        "Things Italian"
+      ],
+      "hash": "81d7980d01802a953034512c0eb3a10145e5dabc159d5f6fd6775418e764aaff",
+      "timestamp": "2025-12-02 09:32:25",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1940s",
+        "Real People",
+        "Ships",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Locations in North America",
+        "Movies",
+        "Quaternary Period",
+        "Things Italian"
+      ],
+      "hash": "f64ba6e27e5805e5bde20019138565a51357c145dc0d060550e0e808f95814df",
+      "timestamp": "2025-12-02 09:32:25",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1940s",
+        "Real People",
+        "Ships",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Movies",
+        "Place Names",
+        "Pleistocene Epoch",
+        "Things Italian"
+      ],
+      "hash": "66456350231522f8c31acf95930a7ddc80ecee446665fac8a02cf4ef551d3e57",
+      "timestamp": "2025-12-02 09:32:25",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "1940s",
+        "Real People",
+        "Ships",
+        "Starts with BAT"
+      ],
+      "cols": [
+        "Movies",
+        "Place Names",
+        "Quaternary Period",
+        "Things Italian"
+      ],
+      "hash": "0e673cfb0f83b39805417a936ba3edaf5273dfebcc403620d71ebd2ef46d3519",
+      "timestamp": "2025-12-02 09:32:25",
+      "qualityScore": 0
+    },
+    {
+      "rows": [
+        "17th Century",
+        "Place Names",
+        "Starts with MAR",
+        "Things Greek"
+      ],
+      "cols": [
+        "Classic Literature",
+        "Movies",
+        "National Leaders",
         "Ships"
       ],
-      "hash": "30b56dc200471b486aeba30c48606c904e5e755083e2b4b96733bbbdd734a2e8",
-      "timestamp": "2026-02-07 11:26:39",
-      "qualityScore": 10.36
+      "hash": "289c535229339da755b651ee1d9475ab44671e2edba6dcc229301e9786840d80",
+      "timestamp": "2025-12-02 06:30:59",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "16th Century",
-        "18th Century",
-        "Napoleonic Wars",
-        "Starts with FRA"
+        "17th Century",
+        "Place Names",
+        "Starts with MAR",
+        "Things Greek"
       ],
       "cols": [
-        "Age of Sail",
-        "Drama Stories",
-        "Famous Quotes",
-        "Real People"
-      ],
-      "hash": "2b8c2fdf1fa5b0b039709cd9f37a6e6d65cd4427a988e5cf064b5faee627e340",
-      "timestamp": "2026-02-07 11:26:39",
-      "qualityScore": 9.090000000000002
-    },
-    {
-      "rows": [
-        "1980s",
-        "Real Animals",
-        "Things Korean",
-        "Things Swedish"
-      ],
-      "cols": [
-        "Car Brands",
-        "Countries",
-        "Drama Stories",
-        "Real People"
-      ],
-      "hash": "2da34ff1be0527a2555ef1cb1c10b47cf64d342aacf3df8137e56680691cd7c3",
-      "timestamp": "2026-02-07 11:26:40",
-      "qualityScore": 7.260000000000001
-    },
-    {
-      "rows": [
-        "1980s",
-        "Real Animals",
-        "Things Korean",
-        "Things Swedish"
-      ],
-      "cols": [
-        "Car Brands",
-        "Countries",
-        "Movies",
-        "Real People"
-      ],
-      "hash": "9d6b7acfb5ab99888e1502aaf483775eb151879340043784bc298be56acb6663",
-      "timestamp": "2026-02-07 11:26:40",
-      "qualityScore": 7.260000000000001
-    },
-    {
-      "rows": [
-        "1980s",
-        "Real Animals",
-        "Things Korean",
-        "Things Swedish"
-      ],
-      "cols": [
-        "Cars",
-        "Countries",
-        "Drama Stories",
-        "Real People"
-      ],
-      "hash": "4b838aa3f010d9cd28c1c4278545ab099c5e41548d2665615b13d74abe589a62",
-      "timestamp": "2026-02-07 11:26:40",
-      "qualityScore": 7.260000000000001
-    },
-    {
-      "rows": [
-        "1980s",
-        "Real Animals",
-        "Things Korean",
-        "Things Swedish"
-      ],
-      "cols": [
-        "Cars",
-        "Countries",
-        "Movies",
-        "Real People"
-      ],
-      "hash": "fadf10573b5647d12700679d4263329e02eba7d5394049d61cc5d0080fc28057",
-      "timestamp": "2026-02-07 11:26:40",
-      "qualityScore": 7.260000000000001
-    },
-    {
-      "rows": [
-        "16th Century",
-        "18th Century",
-        "Napoleonic Wars",
-        "Starts with FRA"
-      ],
-      "cols": [
-        "Drama Stories",
-        "Famous Quotes",
-        "Real People",
+        "Classic Literature",
+        "National Leaders",
+        "Shakespeare Characters",
         "Ships"
       ],
-      "hash": "44532cfb65bc96c2fab029d9630b73b1548595fd4d4b176df8fa4c25709bfcfc",
-      "timestamp": "2026-02-07 11:26:39",
-      "qualityScore": 6.920000000000001
+      "hash": "48385a2a9109d9b357f61a8ec850186bb742fe20dadbb7e04afa2fb1a8c79b10",
+      "timestamp": "2025-12-02 06:30:59",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "19th Century",
-        "Animal Terms",
-        "Drinks",
-        "Modern Countries"
+        "17th Century",
+        "Place Names",
+        "Starts with MAR",
+        "Things Indian"
       ],
       "cols": [
-        "Cities",
+        "Athletes",
+        "Classic Literature",
         "Movies",
-        "Things Indonesian",
-        "Things Russian"
+        "National Leaders"
       ],
-      "hash": "1108fcc4cfa0154bcb74425b03a81726c9a7480a012682c6c3506cfa731cdfba",
-      "timestamp": "2026-02-07 06:54:55",
-      "qualityScore": 5.6899999999999995
+      "hash": "1c81967c7d1dda076b48eda6dca3c379b664897e62fa521cf1c3b2e2054cdb3b",
+      "timestamp": "2025-12-02 06:30:59",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "19th Century",
-        "Animal Terms",
-        "Drinks",
-        "Modern Countries"
+        "17th Century",
+        "Place Names",
+        "Starts with MAR",
+        "Things Indian"
       ],
       "cols": [
-        "Cities",
-        "Starts with CHA",
-        "Things Indonesian",
-        "Things Russian"
+        "Athletes",
+        "Classic Literature",
+        "Movies",
+        "Royalty"
       ],
-      "hash": "b6a14f1626f68a195df75ba7330ad46e28ed48ffea965e660d52f3374ec85b8f",
-      "timestamp": "2026-02-07 06:54:55",
-      "qualityScore": 5.6899999999999995
+      "hash": "0c64cbcb4606ee1fa9eaa3709d437d7bf7e61d1f468d0fa53023055c34782e43",
+      "timestamp": "2025-12-02 06:30:59",
+      "qualityScore": 0
     },
     {
       "rows": [
-        "19th Century",
-        "Animal Terms",
-        "Drinks",
-        "Modern Countries"
+        "Cenozoic Era",
+        "Qing Dynasty",
+        "Things Italian",
+        "Video Games"
       ],
       "cols": [
-        "Cities",
-        "Starts with SPA",
-        "Things Indonesian",
-        "Things Russian"
+        "Ends with ION",
+        "Place Names",
+        "Real People",
+        "Red Things"
       ],
-      "hash": "db7404fbd475284fd586f00a5ecea7f1cd2cb818f2a367783fcc4c44b13300f4",
-      "timestamp": "2026-02-07 06:54:55",
-      "qualityScore": 5.6899999999999995
-    },
-    {
-      "rows": [
-        "19th Century",
-        "Animal Terms",
-        "Drinks",
-        "Modern Countries"
-      ],
-      "cols": [
-        "Ends with INE",
-        "Locations in North America",
-        "Things Indonesian",
-        "Things Russian"
-      ],
-      "hash": "676c6c550e5f57019026901662699791b9894ec3223455c81f1afd52775b9213",
-      "timestamp": "2026-02-07 06:54:55",
-      "qualityScore": 5.65
-    },
-    {
-      "rows": [
-        "19th Century",
-        "Animal Terms",
-        "Drinks",
-        "Modern Countries"
-      ],
-      "cols": [
-        "Locations in North America",
-        "Starts with CHA",
-        "Things Indonesian",
-        "Things Russian"
-      ],
-      "hash": "ffa13e2b6f949374cb8f7521fe1197274dc4add700b8d408eb488be8fac9d71a",
-      "timestamp": "2026-02-07 06:54:55",
-      "qualityScore": 5.65
-    },
-    {
-      "rows": [
-        "19th Century",
-        "Animal Terms",
-        "Drinks",
-        "Modern Countries"
-      ],
-      "cols": [
-        "Locations in North America",
-        "Starts with SPA",
-        "Things Indonesian",
-        "Things Russian"
-      ],
-      "hash": "6c64c6ae13c4e8383e4c3f95b0b02e0543a0d8c3713e694ce0d57c564e30b64c",
-      "timestamp": "2026-02-07 06:54:55",
-      "qualityScore": 5.65
+      "hash": "533c68fb779cbbc9196b5c8a17c378bf34a3c9290158e27a99d47fabd950dc45",
+      "timestamp": "2025-11-24 07:44:10",
+      "qualityScore": 7.37
     },
     {
       "rows": [
         "1920s",
-        "Companies",
-        "Starts with BEE",
-        "Things Russian"
+        "Place Names",
+        "Red Things",
+        "Starts with CHA"
       ],
       "cols": [
-        "Animal Terms",
-        "Foods",
-        "Music",
-        "Things German"
+        "Classic Literature",
+        "Companies",
+        "Eocene Epoch",
+        "Movies"
       ],
-      "hash": "fba1d14e1df462379ca1ec9d5f5d1dfb494d968e50cc74d2ebc24f52087afef7",
-      "timestamp": "2026-02-06 23:40:11",
-      "qualityScore": 4.91
+      "hash": "0bbb8e5a502ed70f44afc6a29a9f1503571a57a72647600638018dfa8906cb86",
+      "timestamp": "2026-02-07 04:52:40",
+      "qualityScore": 0
     },
     {
       "rows": [
         "1920s",
-        "Companies",
-        "Starts with BEE",
-        "Things Russian"
+        "Place Names",
+        "Red Things",
+        "Starts with CHA"
       ],
       "cols": [
-        "Foods",
-        "Music",
-        "Real Animals",
-        "Things German"
+        "Classic Literature",
+        "Companies",
+        "Holocene Epoch",
+        "Movies"
       ],
-      "hash": "23283e2d2ae891a252ae653dae76f601ad4be4199b62458a144ac5cc0e7e7c93",
-      "timestamp": "2026-02-06 23:40:11",
-      "qualityScore": 4.91
+      "hash": "a894dc52fe439e6d0f86b1b7649b99502823a66c6a479fd8b28d6970c7414eee",
+      "timestamp": "2026-02-07 04:52:40",
+      "qualityScore": 0
     },
     {
       "rows": [
         "1920s",
-        "Companies",
-        "Starts with BLA",
-        "Things Russian"
+        "Place Names",
+        "Red Things",
+        "Starts with CHA"
       ],
       "cols": [
-        "Animal Terms",
-        "Drama Stories",
-        "Music",
-        "Things German"
+        "Classic Literature",
+        "Companies",
+        "Miocene Epoch",
+        "Movies"
       ],
-      "hash": "ae9fc0d82a6f6c027e205ac84fbc658db6bea2d3c308737ef63f6c64241a0f40",
-      "timestamp": "2026-02-06 23:40:11",
-      "qualityScore": 4.91
+      "hash": "6a29b75ca89afe13c916c971440d06006b055a64058fc60164b4b014617e7b79",
+      "timestamp": "2026-02-07 04:52:40",
+      "qualityScore": 0
     },
     {
       "rows": [
         "1920s",
-        "Companies",
-        "Starts with BLA",
-        "Things Russian"
+        "Place Names",
+        "Red Things",
+        "Starts with CHA"
       ],
       "cols": [
-        "Drama Stories",
-        "Music",
-        "Real Animals",
-        "Things German"
+        "Classic Literature",
+        "Companies",
+        "Movies",
+        "Neogene Period"
       ],
-      "hash": "3cbb35e2c0bd9ab1c4cff78d3fd83b557b634f300bfe01df693d6fd25e51f02f",
-      "timestamp": "2026-02-06 23:40:11",
-      "qualityScore": 4.91
+      "hash": "8e936d67fdf451b53fb45678ccfdc97fad97e1beb264cbc82ff5427f1f9762a5",
+      "timestamp": "2026-02-07 04:52:40",
+      "qualityScore": 0
     },
     {
       "rows": [
         "1920s",
-        "Companies",
-        "Starts with BIG",
-        "Things Russian"
+        "Place Names",
+        "Red Things",
+        "Starts with CHA"
       ],
       "cols": [
-        "Animal Terms",
-        "Drama Stories",
-        "Foods",
-        "Music"
-      ],
-      "hash": "aa2da1aa21ee2cda5ce01d82a0f31ab5985bd5f24d61b5bc6ef0557535bafdee",
-      "timestamp": "2026-02-06 23:40:11",
-      "qualityScore": 4.16
-    },
-    {
-      "rows": [
-        "1920s",
+        "Classic Literature",
         "Companies",
-        "Starts with BLA",
-        "Things Russian"
+        "Movies",
+        "Oligocene Epoch"
       ],
-      "cols": [
-        "Animal Terms",
-        "Drama Stories",
-        "Foods",
-        "Music"
-      ],
-      "hash": "1d98fb86434ebe03f7a8c901d5299affb32a50781f17afe9c1741f02371140b9",
-      "timestamp": "2026-02-06 23:40:11",
-      "qualityScore": 4.16
+      "hash": "719133ac9b5e05fb9a72f748ef1a08ad68271671560f0eaf5beffd9d927acafe",
+      "timestamp": "2026-02-07 04:52:40",
+      "qualityScore": 0
     }
   ],
   "message": "Puzzle saved successfully!"
