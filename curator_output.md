@@ -2,15 +2,17 @@
 
 **Status:** Puzzle saved successfully!
 
-**Curated this session:** 121
+**Curated this session:** 1
 
 ## Main Menu
 
-Please select a search type:
-1. **high_quality**: Find a high-quality puzzle (score ≥ 20)
-2. **truly_random**: Find a truly random puzzle
-3. **search**: Search for puzzle with specific category
-4. **secret_sauce**: Find puzzle with NO categories from recent days
-5. **stop**: Stop curating
+This curator no longer reads from a database.
 
-**Command:** `node ai_curator.js select <value>` (e.g., `node ai_curator.js select high_quality`)
+To generate candidate puzzles, run:
+- `make solve-and-curate`
+
+If you already have a puzzle list loaded, choose one:
+- `node ai_curator.js select list`
+
+Or stop:
+- `node ai_curator.js select stop`

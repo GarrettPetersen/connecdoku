@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
-import sqlite3 from 'sqlite3';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -711,36 +710,4 @@ try {
     console.log(`- Error compiling categories missing from daily puzzles: ${err.message}`);
 }
 
-// Step 7: Count candidate puzzles in SQLite database
-// console.log('7. Counting candidate puzzles in SQLite database...');
-const dbPath = path.join(__dirname, 'puzzles.db');
-
-function countPuzzlesInDatabase() {
-    return new Promise((resolve, reject) => {
-        if (!fs.existsSync(dbPath)) {
-            resolve(0);
-            return;
-        }
-
-        const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READONLY, (err) => {
-            if (err) {
-                console.log(`- SQLite database not accessible: ${err.message}`);
-                resolve(0);
-                return;
-            }
-
-            db.get('SELECT COUNT(*) as count FROM puzzles', (err, row) => {
-                if (err) {
-                    console.log(`- Error counting puzzles: ${err.message}`);
-                    resolve(0);
-                } else {
-                    resolve(row ? row.count : 0);
-                }
-                db.close();
-            });
-        });
-    });
-}
-
-// const puzzleCount = await countPuzzlesInDatabase();
-// console.log(`- Found ${puzzleCount} candidate puzzles in SQLite database`); 
+// (DB code removed — Connecdoku now uses a DB-free solve-and-curate pipeline.)

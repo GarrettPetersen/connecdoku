@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* ai_curator.js
    ------------------------------------------------------------------
-   • File-based version of puzzle_curator_sqlite.js for AI interaction
+   • File-based curator for AI interaction (DB-free)
    • Reads state from curator_state.json
    • Writes human-readable output to curator_output.md
    • Accepts commands via CLI arguments
@@ -11,11 +11,9 @@ import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 import { fileURLToPath } from "url";
-import sqlite3 from "sqlite3";
 
 // ──────────────── paths ───────────────────────────────────────────
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DB_PATH = path.join(__dirname, "puzzles.db");
 const OUT_DIR = path.join(__dirname, "daily_puzzles");
 const DB_FILE = path.join(OUT_DIR, "puzzles.json");
 const STATE_FILE = path.join(__dirname, "curator_state.json");
@@ -42,145 +40,7 @@ function computePuzzleHash(rows, cols) {
 const canon = arr => [...arr].sort().join("|");
 const makeKey = (rows, cols) => canon(rows) + "::" + canon(cols);
 
-// ──────────────── database operations ─────────────────────────────
-function openDatabase() {
-    return new Promise((resolve, reject) => {
-        const db = new sqlite3.Database(DB_PATH, sqlite3.OPEN_READWRITE, (err) => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve(db);
-            }
-        });
-    });
-}
-
-function getRandomPuzzle(db, targetCategories = null) {
-    return new Promise((resolve, reject) => {
-        const sampleSize = DEFAULT_QUALITY_SAMPLE;
-        let params = [];
-
-        let whereClauses = [];
-        if (targetCategories) {
-            const categories = Array.isArray(targetCategories) ? targetCategories : [targetCategories];
-            if (categories.length === 1) {
-                const lowerCategory = categories[0].toLowerCase();
-                whereClauses.push(`(LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
-                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)`);
-                params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
-                    lowerCategory, lowerCategory, lowerCategory, lowerCategory);
-            } else {
-                const conditions = [];
-                for (const category of categories) {
-                    const lowerCategory = category.toLowerCase();
-                    conditions.push(`(LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
-                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)`);
-                    params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
-                        lowerCategory, lowerCategory, lowerCategory, lowerCategory);
-                }
-                whereClauses.push(`(${conditions.join(' AND ')})`);
-            }
-        }
-        whereClauses.push(`COALESCE(puzzle_quality_score, 0) >= ?`);
-        params.push(DEFAULT_MIN_QUALITY);
-
-        const whereSQL = whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : '';
-
-        const query = `
-            WITH sample AS (
-                SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp,
-                       COALESCE(puzzle_quality_score, 0) AS q
-                FROM puzzles
-                ${whereSQL}
-                AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
-                LIMIT ${sampleSize}
-            )
-            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp, q
-            FROM sample
-            ORDER BY q DESC
-            LIMIT 1
-        `;
-
-        db.get(query, params, (err, row) => {
-            if (err) {
-                reject(err);
-            } else if (row) {
-                resolve({
-                    rows: [row.row0, row.row1, row.row2, row.row3],
-                    cols: [row.col0, row.col1, row.col2, row.col3],
-                    hash: row.puzzle_hash,
-                    timestamp: row.timestamp,
-                    qualityScore: row.q
-                });
-            } else {
-                resolve(null);
-            }
-        });
-    });
-}
-
-function getMultipleRandomPuzzles(db, count, targetCategories = null, usedHashes = new Set()) {
-    return new Promise((resolve, reject) => {
-        const sampleSize = Math.max(count * 5, DEFAULT_QUALITY_SAMPLE);
-        let params = [];
-
-        let whereClauses = [`COALESCE(puzzle_quality_score, 0) >= ?`];
-        params.push(DEFAULT_MIN_QUALITY);
-
-        if (targetCategories) {
-            const categories = Array.isArray(targetCategories) ? targetCategories : [targetCategories];
-            if (categories.length === 1) {
-                const lowerCategory = categories[0].toLowerCase();
-                whereClauses.push(`(LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
-                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)`);
-                params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
-                    lowerCategory, lowerCategory, lowerCategory, lowerCategory);
-            } else {
-                const conditions = [];
-                for (const category of categories) {
-                    const lowerCategory = category.toLowerCase();
-                    conditions.push(`(LOWER(row0) = ? OR LOWER(row1) = ? OR LOWER(row2) = ? OR LOWER(row3) = ? 
-                       OR LOWER(col0) = ? OR LOWER(col1) = ? OR LOWER(col2) = ? OR LOWER(col3) = ?)`);
-                    params.push(lowerCategory, lowerCategory, lowerCategory, lowerCategory,
-                        lowerCategory, lowerCategory, lowerCategory, lowerCategory);
-                }
-                whereClauses.push(`(${conditions.join(' AND ')})`);
-            }
-        }
-        const whereSQL = whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : '';
-
-        const query = `
-            WITH sample AS (
-                SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp,
-                       COALESCE(puzzle_quality_score, 0) AS q
-                FROM puzzles
-                ${whereSQL}
-                AND ROWID >= (ABS(RANDOM()) % (SELECT MAX(ROWID) FROM puzzles))
-                LIMIT ${sampleSize}
-            )
-            SELECT puzzle_hash, row0, row1, row2, row3, col0, col1, col2, col3, timestamp, q
-            FROM sample
-            ORDER BY q DESC
-            LIMIT ?
-        `;
-        params.push(count);
-
-        db.all(query, params, (err, rows) => {
-            if (err) {
-                reject(err);
-            } else {
-                const filtered = rows.filter(r => !usedHashes.has(r.puzzle_hash));
-                resolve(filtered.map(row => ({
-                    rows: [row.row0, row.row1, row.row2, row.row3],
-                    cols: [row.col0, row.col1, row.col2, row.col3],
-                    hash: row.puzzle_hash,
-                    timestamp: row.timestamp,
-                    qualityScore: row.q
-                })));
-            }
-        });
-    });
-}
+// (DB search removed — Connecdoku now uses a DB-free solve-and-curate pipeline.)
 
 const ALWAYS_EXCLUDED_CATEGORIES = [
     '21st Century', '20th Century', '2020s', '2010s', 'Things American', 'Flower-class Corvettes'
@@ -301,13 +161,14 @@ function renderOutput() {
     output += `**Curated this session:** ${state.curatedCount}\n\n`;
 
     if (state.phase === "MAIN_MENU") {
-        output += `## Main Menu\n\nPlease select a search type:\n`;
-        output += `1. **high_quality**: Find a high-quality puzzle (score ≥ 20)\n`;
-        output += `2. **truly_random**: Find a truly random puzzle\n`;
-        output += `3. **search**: Search for puzzle with specific category\n`;
-        output += `4. **secret_sauce**: Find puzzle with NO categories from recent days\n`;
-        output += `5. **stop**: Stop curating\n\n`;
-        output += `**Command:** \`node ai_curator.js select <value>\` (e.g., \`node ai_curator.js select high_quality\`)`;
+        output += `## Main Menu\n\n`;
+        output += `This curator no longer reads from a database.\n\n`;
+        output += `To generate candidate puzzles, run:\n`;
+        output += `- \`make solve-and-curate\`\n\n`;
+        output += `If you already have a puzzle list loaded, choose one:\n`;
+        output += `- \`node ai_curator.js select list\`\n\n`;
+        output += `Or stop:\n`;
+        output += `- \`node ai_curator.js select stop\`\n`;
     } else if (state.phase === "SEARCH_CATEGORY") {
         output += `## Search Category\n\n`;
         output += `Currently selected: ${state.targetCategories.join(", ") || "None"}\n\n`;
@@ -381,117 +242,18 @@ async function handleAction(action, value) {
 
     if (state.phase === "MAIN_MENU") {
         if (action === "select") {
-            if (value === "high_quality") {
-                const db = await openDatabase();
-                const hq = await getMultipleRandomPuzzles(db, 20, null, usedHashes);
-                db.close();
-                const filtered = hq.filter(p => validatePuzzle(p)).slice(0, 1);
-                if (filtered.length > 0) {
-                    state.currentPuzzle = filtered[0];
-                    state.phase = "PUZZLE_REVIEW";
-                    state.message = "High-quality puzzle found!";
+            if (value === "list") {
+                if (state.puzzles && state.puzzles.length > 0) {
+                    state.phase = "PUZZLE_LIST";
+                    state.message = `Loaded ${state.puzzles.length} puzzle(s).`;
                 } else {
-                    state.message = "No high-quality puzzles found right now.";
+                    state.message = "No puzzle list loaded. Run `make solve-and-curate` first.";
                 }
-            } else if (value === "truly_random") {
-                const db = await openDatabase();
-                let found = null;
-                for (let i = 0; i < 50; i++) {
-                    const p = await getRandomPuzzle(db);
-                    if (p && !usedHashes.has(p.hash) && validatePuzzle(p)) {
-                        found = p;
-                        break;
-                    }
-                }
-                db.close();
-                if (found) {
-                    state.currentPuzzle = found;
-                    state.phase = "PUZZLE_REVIEW";
-                    state.message = "Random puzzle found!";
-                } else {
-                    state.message = "Failed to find a valid random puzzle.";
-                }
-            } else if (value === "search") {
-                state.phase = "SEARCH_CATEGORY";
-                state.targetCategories = [];
-                state.message = "Enter categories for search.";
-            } else if (value === "secret_sauce") {
-                state.phase = "SECRET_SAUCE_DAYS";
-                state.message = "Enter number of days for non-overlap.";
             } else if (value === "stop") {
                 state.message = "Stopped.";
                 process.exit(0);
-            }
-        }
-    } else if (state.phase === "SEARCH_CATEGORY") {
-        if (action === "input") {
-            if (categoriesJson[value]) {
-                if (!state.targetCategories.includes(value)) {
-                    state.targetCategories.push(value);
-                    state.message = `Added category: ${value}`;
-                } else {
-                    state.message = `Category already added: ${value}`;
-                }
             } else {
-                state.message = `Category not found: ${value}`;
-            }
-        } else if (action === "select" && value === "done") {
-            if (state.targetCategories.length > 0) {
-                const db = await openDatabase();
-                const puzzles = await getMultipleRandomPuzzles(db, 20, state.targetCategories, usedHashes);
-                db.close();
-                const filtered = puzzles.filter(p => validatePuzzle(p));
-                if (filtered.length > 0) {
-                    state.puzzles = filtered;
-                    state.phase = "PUZZLE_LIST";
-                    state.message = `Found ${filtered.length} puzzles.`;
-                } else {
-                    state.phase = "MAIN_MENU";
-                    state.message = "No valid puzzles found with those categories.";
-                }
-            } else {
-                state.message = "Please add at least one category.";
-            }
-        }
-    } else if (state.phase === "SECRET_SAUCE_DAYS") {
-        if (action === "input") {
-            const days = parseInt(value);
-            if (!isNaN(days) && days > 0) {
-                const recentCats = getCategoriesFromLastNDays(dailyDb, days);
-                const db = await openDatabase();
-                
-                let foundPuzzles = [];
-                let attempts = 0;
-                const maxSearch = 20000; // batches
-                const batchSize = 500; // total 10M
-
-                while (foundPuzzles.length < 20 && attempts < maxSearch) {
-                    attempts++;
-                    const candidates = await getMultipleRandomPuzzles(db, batchSize, null, usedHashes);
-                    if (!candidates || candidates.length === 0) break;
-
-                    const filtered = candidates.filter(p => {
-                        if (!validatePuzzle(p)) return false;
-                        const allP = [...p.rows, ...p.cols];
-                        return !allP.some(c => recentCats.includes(c));
-                    });
-                    
-                    foundPuzzles = [...foundPuzzles, ...filtered];
-                }
-                
-                db.close();
-                const finalPuzzles = foundPuzzles.slice(0, 20);
-
-                if (finalPuzzles.length > 0) {
-                    state.puzzles = finalPuzzles;
-                    state.phase = "PUZZLE_LIST";
-                    state.message = `Found ${finalPuzzles.length} puzzles with no overlap after searching ${attempts * batchSize} candidates.`;
-                } else {
-                    state.phase = "MAIN_MENU";
-                    state.message = "No puzzles found with no overlap.";
-                }
-            } else {
-                state.message = "Invalid number of days.";
+                state.message = "Unknown option. Run `make solve-and-curate`, then `node ai_curator.js select list`.";
             }
         }
     } else if (state.phase === "PUZZLE_LIST") {
@@ -535,7 +297,7 @@ async function handleAction(action, value) {
                     state.message = "Choose another puzzle.";
                 } else {
                     state.phase = "MAIN_MENU";
-                    state.message = "No other puzzles in current search. Returned to main menu.";
+                    state.message = "No other puzzles in current list. Returned to main menu.";
                 }
             } else if (value === "skip") {
                 state.phase = "MAIN_MENU";

@@ -1,509 +1,483 @@
 {
-  "curatedCount": 121,
+  "curatedCount": 1,
   "attempts": 0,
   "phase": "MAIN_MENU",
-  "searchChoice": null,
-  "targetCategories": [
-    "Space Stories"
-  ],
+  "searchChoice": "solve_and_curate",
+  "targetCategories": [],
   "currentPuzzle": {
+    "hash": "84534a9582d00a880d4b2d9d4d228d0ca1d93e16b02c5941262db9e022f010f0",
     "rows": [
-      "Cenozoic Era",
-      "Qing Dynasty",
-      "Things Italian",
-      "Video Games"
+      "Disasters",
+      "Drinks",
+      "Foods",
+      "Republics"
     ],
     "cols": [
-      "Ends with ION",
-      "Place Names",
-      "Real People",
-      "Red Things"
+      "Drama Stories",
+      "Starts with CHA",
+      "Things Colombian",
+      "Things Portuguese"
     ],
-    "hash": "533c68fb779cbbc9196b5c8a17c378bf34a3c9290158e27a99d47fabd950dc45",
-    "timestamp": "2025-11-24 07:44:10",
-    "qualityScore": 7.37
+    "timestamp": null,
+    "qualityScore": 11.170000000000002
   },
   "viableGrid": [
     [
       [
-        "Dandelion",
-        "Lion",
-        "Onion",
-        "Scorpion"
-      ],
-      [
-        "Birch",
-        "Cedar",
-        "Turkey"
-      ],
-      [
-        "Drake"
-      ],
-      [
-        "Cardinal",
-        "Crab",
-        "Lobster",
-        "Rose"
-      ]
-    ],
-    [
-      [
-        "The Boxer Rebellion",
-        "The Taiping Rebellion"
-      ],
-      [
-        "Beijing"
-      ],
-      [
-        "Hong Xiuquan"
-      ],
-      [
-        "Dream of the Red Chamber"
-      ]
-    ],
-    [
-      [
-        "The Catholic Counter-Reformation",
-        "The Italian Unification"
-      ],
-      [
-        "Capri",
-        "Corsica",
-        "Elba",
-        "Etna",
-        "Florence",
-        "Herculaneum",
-        "Ischia",
-        "Italy",
-        "Ostia Antica",
+        "Krakatoa",
         "Pompeii",
-        "Roma",
-        "Rome",
-        "Sardinia",
-        "Sicily",
-        "Venice",
-        "Verona",
-        "Vesuvius"
+        "Titanic"
       ],
       [
-        "Andrea Bocelli",
-        "Christopher Columbus",
-        "Da Vinci",
-        "Dante",
-        "Enrico Fermi",
-        "Galileo",
-        "Luigi",
-        "Marco Polo",
-        "Michelangelo",
-        "Toscanini"
+        "Challenger"
       ],
       [
-        "Bolognese",
-        "Marinara"
+        "Nevado del Ruiz Eruption"
+      ],
+      [
+        "Lusitania"
       ]
     ],
     [
       [
-        "Red Dead Redemption"
+        "Manhattan"
       ],
       [
-        "Europa"
+        "CHA",
+        "Chai",
+        "Champagne"
       ],
       [
-        "Pharaoh"
+        "Coffee"
       ],
       [
-        "Rust"
+        "Madeira",
+        "Port"
+      ]
+    ],
+    [
+      [
+        "Chocolat"
+      ],
+      [
+        "Challah",
+        "Char Siu"
+      ],
+      [
+        "Ajiaco",
+        "Arepa",
+        "Bandeja Paisa",
+        "Tres Leches"
+      ],
+      [
+        "Bacalhau",
+        "Caldo Verde",
+        "Francesinha",
+        "Pastel de Nata"
+      ]
+    ],
+    [
+      [
+        "Madagascar"
+      ],
+      [
+        "Chad"
+      ],
+      [
+        "Colombia"
+      ],
+      [
+        "Portugal"
       ]
     ]
   ],
   "chosen": [
     [
-      "Lion",
-      "Turkey",
-      "Drake",
-      "Rose"
+      "Titanic",
+      "Challenger",
+      "Nevado del Ruiz Eruption",
+      "Lusitania"
     ],
     [
-      "The Boxer Rebellion",
-      "Beijing",
-      "Hong Xiuquan",
-      "Dream of the Red Chamber"
+      "Manhattan",
+      "Champagne",
+      "Coffee",
+      "Port"
     ],
     [
-      "The Italian Unification",
-      "Rome",
-      "Da Vinci",
-      "Marinara"
+      "Chocolat",
+      "Challah",
+      "Arepa",
+      "Pastel de Nata"
     ],
     [
-      "Red Dead Redemption",
-      "Europa",
-      "Pharaoh",
-      "Rust"
+      "Madagascar",
+      "Chad",
+      "Colombia",
+      "Portugal"
     ]
   ],
   "usedWords": [
-    "Lion",
-    "Turkey",
-    "Drake",
-    "Rose",
-    "The Boxer Rebellion",
-    "Beijing",
-    "Hong Xiuquan",
-    "Dream of the Red Chamber",
-    "The Italian Unification",
-    "Rome",
-    "Da Vinci",
-    "Marinara",
-    "Red Dead Redemption",
-    "Europa",
-    "Pharaoh",
-    "Rust"
+    "Titanic",
+    "Challenger",
+    "Nevado del Ruiz Eruption",
+    "Lusitania",
+    "Manhattan",
+    "Champagne",
+    "Coffee",
+    "Port",
+    "Chocolat",
+    "Challah",
+    "Arepa",
+    "Pastel de Nata",
+    "Madagascar",
+    "Chad",
+    "Colombia",
+    "Portugal"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
+      "hash": "84534a9582d00a880d4b2d9d4d228d0ca1d93e16b02c5941262db9e022f010f0",
       "rows": [
-        "1860s",
-        "Ming Dynasty",
-        "Things Italian",
-        "Warring States Period"
+        "Disasters",
+        "Drinks",
+        "Foods",
+        "Republics"
       ],
       "cols": [
-        "Battles",
-        "Buildings",
-        "Classic Literature",
-        "Real People"
+        "Drama Stories",
+        "Starts with CHA",
+        "Things Colombian",
+        "Things Portuguese"
       ],
-      "hash": "2ba819eaaffb9e33301ebb0a09950e27a2ba8369cc17c99a2fb5b560f43cf8a2",
-      "timestamp": "2026-02-06 20:25:24",
-      "qualityScore": 0
+      "timestamp": null,
+      "qualityScore": 11.170000000000002
     },
     {
+      "hash": "5779a5cb494b3a9a516e68cb2114dc1cea7f3c21f1fd607043d871248b6bdaef",
       "rows": [
-        "1940s",
-        "Real People",
-        "Ships",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Cold War",
-        "Movies",
-        "Quaternary Period",
-        "Things Italian"
-      ],
-      "hash": "f20302de59e673339901688462f489ee4bd761b2ce3d4c3fab4a1761867a9959",
-      "timestamp": "2025-12-02 09:32:24",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1940s",
-        "Real People",
-        "Ships",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Cold War",
-        "Place Names",
-        "Pleistocene Epoch",
-        "Things Italian"
-      ],
-      "hash": "fed32a44e2c0a72b46ca2dde72d7e9e5f496d46af9a65b6863ef79da263a13ba",
-      "timestamp": "2025-12-02 09:32:24",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1940s",
-        "Real People",
-        "Ships",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Cold War",
-        "Place Names",
-        "Quaternary Period",
-        "Things Italian"
-      ],
-      "hash": "dc3d194ebde133b436703ba49337f12c664580c3ed38b6a0ac8d92b979c9ecc1",
-      "timestamp": "2025-12-02 09:32:24",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1940s",
-        "Real People",
-        "Ships",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Holocene Epoch",
-        "Locations in North America",
-        "Movies",
-        "Things Italian"
-      ],
-      "hash": "77ee1ad839556d96fe4e956b7cef2858bff269c7ce3c7e4326775595124e72f8",
-      "timestamp": "2025-12-02 09:32:25",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1940s",
-        "Real People",
-        "Ships",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Holocene Epoch",
-        "Movies",
-        "Place Names",
-        "Things Italian"
-      ],
-      "hash": "483bf4c3f748468142572e7a226250b61a259d27ae280ab0ccdca31a6ceb9309",
-      "timestamp": "2025-12-02 09:32:25",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1940s",
-        "Real People",
-        "Ships",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Locations in North America",
-        "Movies",
-        "Pleistocene Epoch",
-        "Things Italian"
-      ],
-      "hash": "81d7980d01802a953034512c0eb3a10145e5dabc159d5f6fd6775418e764aaff",
-      "timestamp": "2025-12-02 09:32:25",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1940s",
-        "Real People",
-        "Ships",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Locations in North America",
-        "Movies",
-        "Quaternary Period",
-        "Things Italian"
-      ],
-      "hash": "f64ba6e27e5805e5bde20019138565a51357c145dc0d060550e0e808f95814df",
-      "timestamp": "2025-12-02 09:32:25",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1940s",
-        "Real People",
-        "Ships",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Movies",
-        "Place Names",
-        "Pleistocene Epoch",
-        "Things Italian"
-      ],
-      "hash": "66456350231522f8c31acf95930a7ddc80ecee446665fac8a02cf4ef551d3e57",
-      "timestamp": "2025-12-02 09:32:25",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "1940s",
-        "Real People",
-        "Ships",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "Movies",
-        "Place Names",
-        "Quaternary Period",
-        "Things Italian"
-      ],
-      "hash": "0e673cfb0f83b39805417a936ba3edaf5273dfebcc403620d71ebd2ef46d3519",
-      "timestamp": "2025-12-02 09:32:25",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Place Names",
-        "Starts with MAR",
-        "Things Greek"
-      ],
-      "cols": [
-        "Classic Literature",
-        "Movies",
-        "National Leaders",
+        "Birds",
+        "Drama Stories",
+        "Eocene Epoch",
         "Ships"
       ],
-      "hash": "289c535229339da755b651ee1d9475ab44671e2edba6dcc229301e9786840d80",
-      "timestamp": "2025-12-02 06:30:59",
-      "qualityScore": 0
+      "cols": [
+        "Largest of its Type",
+        "Starts with TER",
+        "Things Canadian",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.08
     },
     {
+      "hash": "252af03d4e9b4477861665ba8d46d70deb2d4bcb6a3c7981fa1c3a1618fd3e7c",
       "rows": [
-        "17th Century",
-        "Place Names",
-        "Starts with MAR",
-        "Things Greek"
+        "Countries in Asia",
+        "Drama Stories",
+        "Ends with NGO",
+        "Locations in North America"
       ],
       "cols": [
-        "Classic Literature",
-        "National Leaders",
-        "Shakespeare Characters",
-        "Ships"
+        "Former French Colonies",
+        "Mentioned in We Didn't Start the Fire",
+        "NATO Phonetic Alphabet",
+        "Real Animals"
       ],
-      "hash": "48385a2a9109d9b357f61a8ec850186bb742fe20dadbb7e04afa2fb1a8c79b10",
-      "timestamp": "2025-12-02 06:30:59",
-      "qualityScore": 0
+      "timestamp": null,
+      "qualityScore": 4.85
     },
     {
+      "hash": "bcc9e54e4f370e5f7981061eaeac912b7dac08fcfd22d0556faddbf75453fd71",
       "rows": [
-        "17th Century",
-        "Place Names",
-        "Starts with MAR",
-        "Things Indian"
-      ],
-      "cols": [
-        "Athletes",
-        "Classic Literature",
-        "Movies",
+        "Birds",
+        "Comedy Stories",
+        "Ends with ING",
         "National Leaders"
       ],
-      "hash": "1c81967c7d1dda076b48eda6dca3c379b664897e62fa521cf1c3b2e2054cdb3b",
-      "timestamp": "2025-12-02 06:30:59",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "17th Century",
-        "Place Names",
-        "Starts with MAR",
-        "Things Indian"
-      ],
       "cols": [
-        "Athletes",
-        "Classic Literature",
-        "Movies",
-        "Royalty"
-      ],
-      "hash": "0c64cbcb4606ee1fa9eaa3709d437d7bf7e61d1f468d0fa53023055c34782e43",
-      "timestamp": "2025-12-02 06:30:59",
-      "qualityScore": 0
-    },
-    {
-      "rows": [
-        "Cenozoic Era",
-        "Qing Dynasty",
-        "Things Italian",
-        "Video Games"
-      ],
-      "cols": [
-        "Ends with ION",
-        "Place Names",
-        "Real People",
-        "Red Things"
-      ],
-      "hash": "533c68fb779cbbc9196b5c8a17c378bf34a3c9290158e27a99d47fabd950dc45",
-      "timestamp": "2025-11-24 07:44:10",
-      "qualityScore": 7.37
-    },
-    {
-      "rows": [
-        "1920s",
-        "Place Names",
-        "Red Things",
-        "Starts with CHA"
-      ],
-      "cols": [
-        "Classic Literature",
+        "Cities in USA",
         "Companies",
-        "Eocene Epoch",
-        "Movies"
+        "Foods",
+        "Things Canadian"
       ],
-      "hash": "0bbb8e5a502ed70f44afc6a29a9f1503571a57a72647600638018dfa8906cb86",
-      "timestamp": "2026-02-07 04:52:40",
-      "qualityScore": 0
+      "timestamp": null,
+      "qualityScore": 4.01
     },
     {
+      "hash": "b5d88d276cf7d01d054d9c699b31924fcdbe6f0b0cae94801a5a36336d244773",
       "rows": [
-        "1920s",
-        "Place Names",
-        "Red Things",
-        "Starts with CHA"
+        "Disasters",
+        "Greek Gods",
+        "Largest of its Type",
+        "World War II"
       ],
       "cols": [
-        "Classic Literature",
-        "Companies",
-        "Holocene Epoch",
-        "Movies"
+        "Drama Stories",
+        "Ends with TER",
+        "Locations in Europe",
+        "Ships"
       ],
-      "hash": "a894dc52fe439e6d0f86b1b7649b99502823a66c6a479fd8b28d6970c7414eee",
-      "timestamp": "2026-02-07 04:52:40",
-      "qualityScore": 0
+      "timestamp": null,
+      "qualityScore": 10.490000000000002
     },
     {
+      "hash": "64dd0bda41d7ce3b2156414d89fa56bd85f14c7d8918e994134dc8860a88b7fc",
       "rows": [
-        "1920s",
-        "Place Names",
-        "Red Things",
-        "Starts with CHA"
+        "Birds",
+        "Drama Stories",
+        "Events",
+        "Foods"
       ],
       "cols": [
-        "Classic Literature",
-        "Companies",
-        "Miocene Epoch",
-        "Movies"
+        "Cities",
+        "Ends with CON",
+        "Jurassic Period",
+        "Things Canadian"
       ],
-      "hash": "6a29b75ca89afe13c916c971440d06006b055a64058fc60164b4b014617e7b79",
-      "timestamp": "2026-02-07 04:52:40",
-      "qualityScore": 0
+      "timestamp": null,
+      "qualityScore": 3.01
     },
     {
+      "hash": "346da01f207fe2c6faecb6e75fa2b568ada8fd427abec2990d9bcf4700f91bac",
       "rows": [
-        "1920s",
-        "Place Names",
-        "Red Things",
-        "Starts with CHA"
+        "Disasters",
+        "Greek Mythology",
+        "Largest of its Type",
+        "Starts with GRA"
       ],
       "cols": [
-        "Classic Literature",
-        "Companies",
-        "Movies",
-        "Neogene Period"
+        "Drama Stories",
+        "Locations in Europe",
+        "Pleistocene Epoch",
+        "Ships"
       ],
-      "hash": "8e936d67fdf451b53fb45678ccfdc97fad97e1beb264cbc82ff5427f1f9762a5",
-      "timestamp": "2026-02-07 04:52:40",
-      "qualityScore": 0
+      "timestamp": null,
+      "qualityScore": 9.300000000000002
     },
     {
+      "hash": "b511930e2bb39f53c9712717fe51b2288fb2541499cc33c3cc2538bfc85b24db",
       "rows": [
-        "1920s",
-        "Place Names",
-        "Red Things",
-        "Starts with CHA"
+        "Disasters",
+        "Drama Stories",
+        "Ends with INE",
+        "Foods"
       ],
       "cols": [
-        "Classic Literature",
-        "Companies",
-        "Movies",
+        "Locations in Asia",
+        "Locations in Europe",
+        "Things Canadian",
+        "Things Russian"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.49
+    },
+    {
+      "hash": "d5446a2cf006ca59d2fc976437ecce3e5ff158a9870e8385a4850f606cefb0f9",
+      "rows": [
+        "Countries in Asia",
+        "Drama Stories",
+        "Ships",
+        "Things Spanish"
+      ],
+      "cols": [
+        "Ends with NIA",
+        "Islands",
+        "Mentioned in We Didn't Start the Fire",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.6799999999999997
+    },
+    {
+      "hash": "70e6632270e82f2901b9f7767a71ff56ba1ea9dedca9fff74fc88cf9d9f856a8",
+      "rows": [
+        "Birds",
+        "Drama Stories",
+        "National Leaders",
+        "Paleogene Period"
+      ],
+      "cols": [
+        "Carnivores",
+        "Starts with CAS",
+        "Things Canadian",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.2900000000000005
+    },
+    {
+      "hash": "985f82877d23029558efec581ebb4299450926e3ce3e43bbd02ae346415cb47e",
+      "rows": [
+        "Birds",
+        "Drama Stories",
+        "Modern Countries",
+        "Ships"
+      ],
+      "cols": [
+        "Cities",
+        "Largest of its Type",
+        "Starts with AND",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.95
+    },
+    {
+      "hash": "a5465e7505b2ac76c05c05de4ed5c05a92023c3b3b7ac49ff25a2230a3a14cf1",
+      "rows": [
+        "Birds",
+        "Currently Living Plants",
+        "Drama Stories",
+        "Locations in Europe"
+      ],
+      "cols": [
+        "Foods",
+        "Largest of its Type",
+        "Starts with MAC",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.74
+    },
+    {
+      "hash": "e43ff791eecec1d5f0f5dd8720d404bd6ea9ea7df0dcaf2a8026a78a0a1a6e42",
+      "rows": [
+        "Birds",
+        "Drama Stories",
+        "Locations in Europe",
+        "Plants"
+      ],
+      "cols": [
+        "Foods",
+        "Largest of its Type",
+        "Starts with PAR",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.72
+    },
+    {
+      "hash": "56cabeca70ad86894fcf41329d8043622f6cec8211559faa4a2b6f9274d035a2",
+      "rows": [
+        "Birds",
+        "Drama Stories",
+        "National Leaders",
         "Oligocene Epoch"
       ],
-      "hash": "719133ac9b5e05fb9a72f748ef1a08ad68271671560f0eaf5beffd9d927acafe",
-      "timestamp": "2026-02-07 04:52:40",
-      "qualityScore": 0
+      "cols": [
+        "Carnivores",
+        "Foods",
+        "Starts with CAR",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.1
+    },
+    {
+      "hash": "8f0f87ef77ff29028c6c84e2088a7bcf433dd45a14a880255763d4ccc411fb19",
+      "rows": [
+        "Disasters",
+        "Drinks",
+        "Foods",
+        "Republics"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Starts with CHI",
+        "Things Colombian",
+        "Things Portuguese"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.170000000000002
+    },
+    {
+      "hash": "7b9158421a17a23847aafb1ef91c65dbe77cb03f0e8d169ab3eefea7b7893637",
+      "rows": [
+        "Birds",
+        "Countries",
+        "Drama Stories",
+        "Ships"
+      ],
+      "cols": [
+        "Cities",
+        "Largest of its Type",
+        "Starts with AND",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.94
+    },
+    {
+      "hash": "839bceffb895158fe97f003cc3980fcc9724f75e9919e34a9231eff8bd6dad75",
+      "rows": [
+        "Birds",
+        "Comedy Stories",
+        "National Leaders",
+        "Starts with CAN"
+      ],
+      "cols": [
+        "Cities",
+        "Companies",
+        "Foods",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 3.33
+    },
+    {
+      "hash": "653c301c9a5ece3e5ae556fdb74a584e8ed86f738d4dabf9dd4b9ddd5b6fb1aa",
+      "rows": [
+        "Birds",
+        "Drama Stories",
+        "Foods",
+        "National Leaders"
+      ],
+      "cols": [
+        "Cities",
+        "Companies",
+        "Ends with ANT",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 3.12
+    },
+    {
+      "hash": "3cba65bc29f3687321384c1d747b182335a61f3f10c406afeca0576cb5fcfa4d",
+      "rows": [
+        "Birds",
+        "Drama Stories",
+        "Events",
+        "Foods"
+      ],
+      "cols": [
+        "Cities",
+        "Jurassic Period",
+        "Starts with FAL",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 3.01
+    },
+    {
+      "hash": "ff8d49baf806f5939f210ca1929dc983ccc1e171aff0ac71cd640d8b3a5c743d",
+      "rows": [
+        "Disasters",
+        "Greek Mythology",
+        "Largest of its Type",
+        "Things Canadian"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Locations in Europe",
+        "Pleistocene Epoch",
+        "Ships"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.250000000000002
     }
   ],
   "message": "Puzzle saved successfully!"

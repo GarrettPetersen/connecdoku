@@ -10,9 +10,6 @@ enum Msg {
         n2: Vec<Vec<usize>>,  // adjacency 2-away
         categories: Vec<String>,
         meta_map: Vec<Option<String>>, // meta per category index (or None)
-        write_mode: Option<String>, // None or Some("rust")
-        db_path: Option<String>,
-        word_list_hash: Option<String>,
     },
     Work {
         start: usize,
@@ -28,7 +25,6 @@ enum Out {
     Ready,
     Tick { jProgress: usize, totalJ: usize },
     Found { rows: [usize; 4], cols: [usize; 4] },
-    Stats { found: usize, inserted: usize },
     Done { totalJ: usize },
     Error { message: String },
 }
@@ -40,9 +36,6 @@ struct State {
     categories: Vec<String>,
     meta_map: Vec<Option<String>>, // same length as categories
     subset: Vec<Vec<bool>>, // S[i][j]
-    write_mode: bool,
-    db: Option<rusqlite::Connection>,
-    word_list_hash: Option<String>,
 }
 
 fn intersects(a: &[u32], b: &[u32]) -> bool {
@@ -106,7 +99,6 @@ fn run_work_streaming<W: Write>(state: &State, start: usize, end: usize, j_start
     let mask_len = state.masks[0].len();
 
     let mut found_count: usize = 0;
-    let mut inserted_count: usize = 0;
     for i in start..end {
         let mut j_list: Vec<usize> = state.n2[i].iter().copied().filter(|&j| j > i).collect();
         j_list.sort_unstable();
@@ -192,40 +184,8 @@ fn run_work_streaming<W: Write>(state: &State, start: usize, end: usize, j_start
                                     }
                                     if !ok { continue; }
 
-                                    if state.write_mode {
-                                        if let Some(ref db) = state.db {
-                                            let sql = "INSERT OR REPLACE INTO puzzles (puzzle_hash,row0,row1,row2,row3,col0,col1,col2,col3,word_list_hash,puzzle_quality_score) VALUES (?1,?2,?3,?4,?5,?6,?7,?8,?9,?10,?11)";
-                                            let rows_cats: Vec<&str> = rows.iter().map(|&idx| state.categories[idx].as_str()).collect();
-                                            let cols_cats: Vec<&str> = cols.iter().map(|&idx| state.categories[idx].as_str()).collect();
-                                            use sha2::{Digest, Sha256};
-                                            let mut hasher = Sha256::new();
-                                            hasher.update(rows_cats.join("|").as_bytes());
-                                            hasher.update(cols_cats.join("|").as_bytes());
-                                            let hash = hex::encode(hasher.finalize());
-                                            if let Some(ref wlh) = state.word_list_hash {
-                                                match db.execute(sql, (
-                                                    &hash,
-                                                    rows_cats[0], rows_cats[1], rows_cats[2], rows_cats[3],
-                                                    cols_cats[0], cols_cats[1], cols_cats[2], cols_cats[3],
-                                                    wlh,
-                                                    None::<f64>, // puzzle_quality_score = NULL
-                                                )) {
-                                                    Ok(changes) => {
-                                                        if changes > 0 {
-                                                            inserted_count += 1; // Only increment if actually inserted
-                                                        }
-                                                    }
-                                                    Err(_) => {
-                                                        // Ignore errors for speed, but don't count as inserted
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        found_count += 1;
-                                    } else {
-                                        let _ = writeln!(writer, "{}", serde_json::to_string(&Out::Found { rows, cols }).unwrap());
-                                        found_count += 1;
-                                    }
+                                    let _ = writeln!(writer, "{}", serde_json::to_string(&Out::Found { rows, cols }).unwrap());
+                                    found_count += 1;
                                 }
                             }
                         }
@@ -240,9 +200,6 @@ fn run_work_streaming<W: Write>(state: &State, start: usize, end: usize, j_start
         if total_j == 0 || j_progress != total_j {
             let _ = writeln!(writer, "{}", serde_json::to_string(&Out::Tick { jProgress: total_j, totalJ: total_j }).unwrap());
         }
-    }
-    if state.write_mode {
-        let _ = writeln!(writer, "{}", serde_json::to_string(&Out::Stats { found: found_count, inserted: inserted_count }).unwrap());
     }
     let _ = writeln!(writer, "{}", serde_json::to_string(&Out::Done { totalJ: 0 }).unwrap());
 }
@@ -263,7 +220,7 @@ fn main() {
             Err(e) => { let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Error{ message: format!("bad json: {}", e)}).unwrap()); continue; }
         };
         match msg {
-            Msg::Init { masks, mut n1, mut n2, categories, meta_map, write_mode, db_path, word_list_hash } => {
+            Msg::Init { masks, mut n1, mut n2, categories, meta_map } => {
                 // sort adjacency for binary_search
                 for v in &mut n1 { v.sort_unstable(); }
                 for v in &mut n2 { v.sort_unstable(); }
@@ -277,19 +234,7 @@ fn main() {
                         if a_sub_b { subset[i][j] = true; }
                     }
                 }
-                let mut db_conn: Option<rusqlite::Connection> = None;
-                let wm = matches!(write_mode.as_deref(), Some("rust"));
-                if wm {
-                    if let Some(path) = db_path {
-                        if let Ok(conn) = rusqlite::Connection::open(path) {
-                            let _ = conn.pragma_update(None, "journal_mode", &"WAL");
-                            let _ = conn.pragma_update(None, "synchronous", &"OFF");
-                            let _ = conn.busy_timeout(std::time::Duration::from_millis(60000));
-                            db_conn = Some(conn);
-                        }
-                    }
-                }
-                state_opt = Some(State { masks, n1, n2, categories, meta_map, subset, write_mode: wm, db: db_conn, word_list_hash });
+                state_opt = Some(State { masks, n1, n2, categories, meta_map, subset });
                 let _ = writeln!(stdout, "{}", serde_json::to_string(&Out::Ready).unwrap());
             }
             Msg::Work { start, end, jStart, jEnd } => {

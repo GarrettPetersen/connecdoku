@@ -4,7 +4,6 @@
   "type": "module",
   "dependencies": {
     "@inquirer/prompts": "^3.3.2",
-    "ml-matrix": "^6.12.1",
-    "sqlite3": "^5.1.7"
+    "ml-matrix": "^6.12.1"
   }
 }

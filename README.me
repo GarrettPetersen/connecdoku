@@ -13,12 +13,13 @@ cd rust_helper && cargo build --release
 Default run (uses helper if built):
 
 ```
-node connecdoku_matrix_solver_sqlite.js
+make solve-and-curate
 
 Opt out of the helper:
 
 ```
-USE_RUST_HELPER=0 node connecdoku_matrix_solver_sqlite.js
+To generate candidate puzzles (DB-free):
+- `make solve-and-curate`
 ```
 
 AI Puzzle Curator
