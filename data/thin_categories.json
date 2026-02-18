@@ -1622,9 +1622,6 @@
   "Movies featuring Laura Dern": [
     "Jurassic Park"
   ],
-  "Movies featuring Sam Neill": [
-    "Jurassic Park"
-  ],
   "Movies featuring Tsutomu Yamazaki": [
     "Kagemusha"
   ],
@@ -2306,9 +2303,6 @@
   "Movies featuring Evelyn Venable": [
     "Pinocchio"
   ],
-  "Movies featuring Stellan Skarsgård": [
-    "Pirates of the Caribbean: Dead Man's Chest"
-  ],
   "Movies directed by Joachim Rønning": [
     "Pirates of the Caribbean: Dead Men Tell No Tales"
   ],
@@ -2535,9 +2529,6 @@
     "Richard II"
   ],
   "Movies directed by Peter Ramsey": [
-    "Rise of the Guardians"
-  ],
-  "Movies featuring Alec Baldwin": [
     "Rise of the Guardians"
   ],
   "Movies featuring Brian Bedford": [
@@ -3299,9 +3290,6 @@
   "Movies directed by Roger Allers": [
     "The Lion King"
   ],
-  "Movies featuring James Earl Jones": [
-    "The Lion King"
-  ],
   "Movies featuring Matthew Broderick": [
     "The Lion King"
   ],
@@ -3545,9 +3533,6 @@
   "Movies featuring Jodie Foster": [
     "The Silence of the Lambs"
   ],
-  "Movies featuring Scott Glenn": [
-    "The Silence of the Lambs"
-  ],
   "Movies featuring Haley Joel Osment": [
     "The Sixth Sense"
   ],
@@ -3625,9 +3610,6 @@
   ],
   "Movies featuring Vanessa Hudgens": [
     "Tick, Tick... Boom!"
-  ],
-  "Movies featuring Sean Connery": [
-    "Time Bandits"
   ],
   "Fictional Meerkats": [
     "Timon"
@@ -4277,10 +4259,6 @@
     "Club",
     "Green"
   ],
-  "Movies featuring Tim Curry": [
-    "Clue",
-    "Rocky Horror Picture Show"
-  ],
   "Candy": [
     "Coffee Crisp",
     "Smarties"
@@ -4364,10 +4342,6 @@
   "Movies featuring Val Kilmer": [
     "Deja Vu",
     "Heat"
-  ],
-  "Movies directed by John McTiernan": [
-    "Die Hard",
-    "Die Hard with a Vengeance"
   ],
   "Movies featuring Bonnie Bedelia": [
     "Die Hard",
@@ -4753,6 +4727,10 @@
     "Jurassic Park",
     "Schindler's List"
   ],
+  "Movies featuring Sam Neill": [
+    "Jurassic Park",
+    "The Hunt for Red October"
+  ],
   "Movies featuring David Carradine": [
     "Kill Bill: Volume 1",
     "Kill Bill: Volume 2"
@@ -4973,6 +4951,10 @@
     "Performance",
     "The Remains of the Day"
   ],
+  "Movies featuring Stellan Skarsgård": [
+    "Pirates of the Caribbean: Dead Man's Chest",
+    "The Hunt for Red October"
+  ],
   "Movies featuring Kaya Scodelario": [
     "Pirates of the Caribbean: Dead Men Tell No Tales",
     "Wuthering Heights"
@@ -5024,6 +5006,10 @@
   "Movies featuring Frank Oz": [
     "Return of the Jedi",
     "The Empire Strikes Back"
+  ],
+  "Movies featuring Alec Baldwin": [
+    "Rise of the Guardians",
+    "The Hunt for Red October"
   ],
   "Movies featuring Chris Pine": [
     "Rise of the Guardians",
@@ -5160,6 +5146,18 @@
   "Movies featuring Jennifer Lawrence": [
     "The Hunger Games",
     "X-Men: First Class"
+  ],
+  "Movies featuring James Earl Jones": [
+    "The Hunt for Red October",
+    "The Lion King"
+  ],
+  "Movies featuring Scott Glenn": [
+    "The Hunt for Red October",
+    "The Silence of the Lambs"
+  ],
+  "Movies featuring Sean Connery": [
+    "The Hunt for Red October",
+    "Time Bandits"
   ],
   "Movies featuring Craig T. Nelson": [
     "The Incredibles",
@@ -5513,6 +5511,11 @@
     "Othello",
     "The Third Man"
   ],
+  "Movies featuring Tim Curry": [
+    "Clue",
+    "Rocky Horror Picture Show",
+    "The Hunt for Red October"
+  ],
   "Snakes": [
     "Cobra",
     "Python",
@@ -5577,6 +5580,11 @@
     "Devastator",
     "Jill",
     "Kate"
+  ],
+  "Movies directed by John McTiernan": [
+    "Die Hard",
+    "Die Hard with a Vengeance",
+    "The Hunt for Red October"
   ],
   "Movies featuring Jamie Foxx": [
     "Django Unchained",
