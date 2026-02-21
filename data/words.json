@@ -589,7 +589,6 @@
     "Greek Heroes",
     "Men",
     "People",
-    "Real People",
     "Starts with ACH",
     "Tragic Heroes",
     "Trojan War"
@@ -9588,7 +9587,6 @@
     "Starts with CYP"
   ],
   "Cyrus the Great": [
-    "5th Century BC",
     "6th Century BC",
     "Ends with EAT",
     "Great Conquerors",
@@ -16653,6 +16651,20 @@
     "Starts with HER",
     "Things American"
   ],
+  "Hesiod": [
+    "8th Century BC",
+    "Ancient Figures",
+    "Ends with IOD",
+    "Greek Mythology",
+    "Men",
+    "People",
+    "Poets",
+    "Real People",
+    "Single Name Writers",
+    "Starts with HES",
+    "Things Greek",
+    "Writers"
+  ],
   "Hetty Green": [
     "19th Century",
     "Businesspeople",
@@ -16882,6 +16894,7 @@
   "Homer": [
     "8th Century BC",
     "Ends with MER",
+    "Greek Mythology",
     "Men",
     "People",
     "Poets",
@@ -21058,7 +21071,6 @@
     "Battle of Thermopylae",
     "Ends with DAS",
     "Epic Heroes",
-    "Greek Mythology",
     "Men",
     "Military Leaders",
     "People",
@@ -22224,7 +22236,6 @@
     "Adventure Stories",
     "Countries",
     "Countries in Africa",
-    "Drama Stories",
     "Ends with CAR",
     "Family-Friendly Stories",
     "First in Internal Chronology",
@@ -22250,7 +22261,6 @@
     "2012",
     "21st Century",
     "Adventure Stories",
-    "Drama Stories",
     "Ends with TED",
     "Family-Friendly Stories",
     "Movies",
@@ -22269,7 +22279,6 @@
     "2008",
     "21st Century",
     "Adventure Stories",
-    "Drama Stories",
     "Ends with ICA",
     "Family-Friendly Stories",
     "Movies",
@@ -30826,11 +30835,13 @@
     "Cities",
     "Cities in Europe",
     "Cities in Italy",
+    "Drama Stories",
     "Ends with OME",
     "Former Empires",
     "Locations in Europe",
     "National Capitals",
     "Place Names",
+    "Republics",
     "Roman Cities",
     "Roman Empire",
     "Roman Republic",
@@ -31636,6 +31647,7 @@
     "Microstates",
     "Modern Countries",
     "Place Names",
+    "Saints",
     "Small Countries",
     "Starts with SAN"
   ],
@@ -36249,7 +36261,7 @@
     "Adventure Stories",
     "Books",
     "C.S. Lewis",
-    "Drama Stories",
+    "Children's Books",
     "Ends with NIA",
     "Family-Friendly Stories",
     "Fantasy Literature",
@@ -41888,10 +41900,12 @@
     "Locations in Europe",
     "Microstates",
     "Modern Countries",
+    "National Capitals",
     "Place Names",
     "Religious Sites",
     "Small Countries",
-    "Starts with VAT"
+    "Starts with VAT",
+    "Things Italian"
   ],
   "Vauxhall": [
     "19th Century",
@@ -43455,10 +43469,13 @@
     "Ends with XES",
     "Men",
     "Military Leaders",
+    "Monarchs",
+    "National Leaders",
     "People",
     "Real People",
     "Royalty",
     "Starts with XER",
+    "Things Iranian",
     "Things Persian"
   ],
   "Xi": [
