@@ -30,6 +30,7 @@ import { fileURLToPath } from "url";
 import { Worker, isMainThread, parentPort, workerData } from "worker_threads";
 import { spawn, spawnSync } from "child_process";
 import * as prompts from "@inquirer/prompts";
+import { loadCategorySimilarity, puzzleCategorySimilarity } from "./similarity.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -123,7 +124,8 @@ function countOverlapWithSet(allCats, usedSet) {
 
 function diversifiedGreedyOrder(puzzles, k) {
   if (!puzzles.length) return [];
-  const sorted = [...puzzles].sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
+  const getScore = (p) => (typeof p.finalScore === "number" ? p.finalScore : (p.qualityScore || 0));
+  const sorted = [...puzzles].sort((a, b) => getScore(b) - getScore(a));
   const selected = [];
   const usedCats = new Set();
 
@@ -140,7 +142,7 @@ function diversifiedGreedyOrder(puzzles, k) {
       const p = sorted[i];
       const cats = [...p.rows, ...p.cols];
       const overlap = countOverlapWithSet(cats, usedCats);
-      const score = p.qualityScore || 0;
+      const score = getScore(p);
       if (overlap < bestOverlap || (overlap === bestOverlap && score > bestScore)) {
         bestOverlap = overlap;
         bestScore = score;
@@ -179,10 +181,15 @@ async function getParamsInteractive() {
     jChunk: getEnvInt("SOLVE_CURATE_J_CHUNK", 15),
     maxSeconds: getEnvFloat("SOLVE_CURATE_MAX_SECONDS", 180),
     minScore: getEnvFloat("SOLVE_CURATE_MIN_SCORE", -Infinity),
+    simPenaltyWeight: getEnvFloat("SOLVE_CURATE_SIM_PENALTY_WEIGHT", 8),
+    simCutoff: getEnvFloat("SOLVE_CURATE_SIM_CUTOFF", 0.625),
+    simEvalTopN: getEnvInt("SOLVE_CURATE_SIM_EVAL_TOPN", 100),
   };
 
   // If explicitly non-interactive, skip prompts.
   if (process.env.SOLVE_CURATE_NONINTERACTIVE === "1") return params;
+  // If there's no interactive terminal, don't block on prompts.
+  if (!process.stdin.isTTY) return params;
 
   console.log("\nSolve-and-curate parameters (press Enter to accept defaults):\n");
 
@@ -218,6 +225,18 @@ async function getParamsInteractive() {
     message: "Minimum score to keep a candidate (optional; blank = no min)",
     initial: params.minScore === -Infinity ? "" : String(params.minScore),
   });
+  const simPenaltyRaw = await prompts.input({
+    message: "Similarity penalty weight vs past puzzles (bigger = more diversity pressure)",
+    initial: String(params.simPenaltyWeight),
+  });
+  const simCutoffRaw = await prompts.input({
+    message: "Similarity cutoff vs past puzzles (>= cutoff will be rejected; 1.0 disables)",
+    initial: String(params.simCutoff),
+  });
+  const simTopNRaw = await prompts.input({
+    message: "Only compute similarity for top-N candidates by base score (speeds things up)",
+    initial: String(params.simEvalTopN),
+  });
 
   const parseOr = (raw, dflt, parseFn) => {
     const t = String(raw).trim();
@@ -234,6 +253,9 @@ async function getParamsInteractive() {
   params.jChunk = Math.max(1, parseOr(jChunkRaw, params.jChunk, (s) => parseInt(s, 10)));
   params.maxSeconds = Math.max(0, parseOr(maxSecRaw, params.maxSeconds, (s) => parseFloat(s)));
   params.minScore = minScoreRaw.trim() === "" ? -Infinity : parseOr(minScoreRaw, params.minScore, (s) => parseFloat(s));
+  params.simPenaltyWeight = Math.max(0, parseOr(simPenaltyRaw, params.simPenaltyWeight, (s) => parseFloat(s)));
+  params.simCutoff = Math.max(0, Math.min(1, parseOr(simCutoffRaw, params.simCutoff, (s) => parseFloat(s))));
+  params.simEvalTopN = Math.max(1, parseOr(simTopNRaw, params.simEvalTopN, (s) => parseInt(s, 10)));
 
   return params;
 }
@@ -540,12 +562,50 @@ async function mainSolveAndCurate() {
     minScore: params.minScore,
   });
 
+  // Similarity-to-past penalty / cutoff (diversity)
+  const simDb = loadCategorySimilarity(DATA_DIR);
+  if (!simDb) {
+    console.warn("Category similarity file not found/invalid; falling back to exact-match-only similarity.");
+  }
+  const categorySimFn = simDb ? simDb.categorySimilarity : (a, b) => (a === b ? 1 : 0);
+  const pastPuzzles = dailyDb.filter((p) => Array.isArray(p?.rows) && Array.isArray(p?.cols));
+
+  // Stage 1: cheap prefilter by base score (quality only).
+  const baseSorted = [...candidates].sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
+  const simEvalTopN = Math.max(1, Math.min(params.simEvalTopN || 100, baseSorted.length));
+  const simEvalCandidates = baseSorted.slice(0, simEvalTopN);
+  if (simEvalTopN < baseSorted.length) {
+    console.log(`Similarity scoring: evaluating top ${simEvalTopN}/${baseSorted.length} candidates by base score (quality).`);
+  } else {
+    console.log(`Similarity scoring: evaluating all ${baseSorted.length} candidates.`);
+  }
+
+  const scoredCandidates = [];
+  let rejectedBySim = 0;
+  for (const c of simEvalCandidates) {
+    let maxSim = 0;
+    for (const past of pastPuzzles) {
+      const s = puzzleCategorySimilarity(c, past, categorySimFn);
+      if (s > maxSim) maxSim = s;
+      if (maxSim >= 1) break;
+    }
+    const maxSimilarityToPast = Math.round(maxSim * 10000) / 10000;
+    const finalScore = (c.qualityScore || 0) - params.simPenaltyWeight * maxSimilarityToPast;
+    const out = { ...c, maxSimilarityToPast, finalScore };
+    if (params.simCutoff < 1 && maxSimilarityToPast >= params.simCutoff) {
+      rejectedBySim++;
+      continue;
+    }
+    scoredCandidates.push(out);
+  }
+
   if (!candidates.length) {
     writeAiCuratorStateWithPuzzles([], "Solve-and-curate: no candidates found. Try increasing maxSeconds/poolSize, lowering minScore, or reducing exclusions.");
   } else {
-    const topDiversified = diversifiedGreedyOrder(candidates, Math.min(params.optionsToShow, candidates.length));
+    const topDiversified = diversifiedGreedyOrder(scoredCandidates, Math.min(params.optionsToShow, scoredCandidates.length));
     const msg =
       `Solve-and-curate complete. Found ${candidates.length} candidates; ` +
+      (rejectedBySim ? `rejected ${rejectedBySim} for similarity>=${params.simCutoff}; ` : "") +
       `showing ${topDiversified.length} diversified options (highest score first, then minimal overlap). ` +
       `Use: node ai_curator.js select <index> to review.`;
     writeAiCuratorStateWithPuzzles(topDiversified, msg);

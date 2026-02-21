@@ -5,479 +5,530 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "84534a9582d00a880d4b2d9d4d228d0ca1d93e16b02c5941262db9e022f010f0",
+    "hash": "97430fd534ba3db3647ddb7fd8ce88ec062db9adb53b6c25d6640461e53a6b8d",
     "rows": [
-      "Disasters",
-      "Drinks",
-      "Foods",
-      "Republics"
+      "1980s",
+      "5th Century BC",
+      "Things Bohemian",
+      "Things Spanish"
     ],
     "cols": [
-      "Drama Stories",
-      "Starts with CHA",
-      "Things Colombian",
-      "Things Portuguese"
+      "Ends with WAR",
+      "Locations in Europe",
+      "Religious Figures",
+      "Royalty"
     ],
     "timestamp": null,
-    "qualityScore": 11.170000000000002
+    "qualityScore": 9.83,
+    "maxSimilarityToPast": 0.387,
+    "finalScore": 6.734
   },
   "viableGrid": [
     [
       [
-        "Krakatoa",
-        "Pompeii",
-        "Titanic"
+        "The Iran-Iraq War"
       ],
       [
-        "Challenger"
+        "Chernobyl"
       ],
       [
-        "Nevado del Ruiz Eruption"
+        "L. Ron Hubbard",
+        "Paul",
+        "Sun Myung Moon",
+        "Teresa"
       ],
       [
-        "Lusitania"
+        "Prince"
       ]
     ],
     [
       [
-        "Manhattan"
+        "Art of War"
       ],
       [
-        "CHA",
-        "Chai",
-        "Champagne"
+        "Thermopylae"
       ],
       [
-        "Coffee"
+        "Confucius"
       ],
       [
-        "Madeira",
-        "Port"
+        "Xerxes"
       ]
     ],
     [
       [
-        "Chocolat"
+        "The Thirty Years War"
       ],
       [
-        "Challah",
-        "Char Siu"
+        "Bohemia",
+        "Prague"
       ],
       [
-        "Ajiaco",
-        "Arepa",
-        "Bandeja Paisa",
-        "Tres Leches"
+        "Jan Hus"
       ],
       [
-        "Bacalhau",
-        "Caldo Verde",
-        "Francesinha",
-        "Pastel de Nata"
+        "Charles IV",
+        "John of Bohemia"
       ]
     ],
     [
       [
-        "Madagascar"
+        "The Spanish Civil War",
+        "The Spanish-American War"
       ],
       [
-        "Chad"
+        "Canary Islands",
+        "El Hierro",
+        "Formentera",
+        "Fuerteventura",
+        "Gran Canaria",
+        "Ibiza",
+        "La Gomera",
+        "La Palma",
+        "Lanzarote",
+        "Majorca",
+        "Menorca",
+        "Santa Maria",
+        "Spain",
+        "Tenerife"
       ],
       [
-        "Colombia"
+        "Alfonso de Borja",
+        "Pedro de Luna",
+        "Rodrigo Borgia"
       ],
       [
-        "Portugal"
+        "Catherine of Aragon"
       ]
     ]
   ],
   "chosen": [
     [
-      "Titanic",
-      "Challenger",
-      "Nevado del Ruiz Eruption",
-      "Lusitania"
+      "The Iran-Iraq War",
+      "Chernobyl",
+      "Teresa",
+      "Prince"
     ],
     [
-      "Manhattan",
-      "Champagne",
-      "Coffee",
-      "Port"
+      "Art of War",
+      "Thermopylae",
+      "Confucius",
+      "Xerxes"
     ],
     [
-      "Chocolat",
-      "Challah",
-      "Arepa",
-      "Pastel de Nata"
+      "The Thirty Years War",
+      "Prague",
+      "Jan Hus",
+      "Charles IV"
     ],
     [
-      "Madagascar",
-      "Chad",
-      "Colombia",
-      "Portugal"
+      "The Spanish Civil War",
+      "Spain",
+      "Rodrigo Borgia",
+      "Catherine of Aragon"
     ]
   ],
   "usedWords": [
-    "Titanic",
-    "Challenger",
-    "Nevado del Ruiz Eruption",
-    "Lusitania",
-    "Manhattan",
-    "Champagne",
-    "Coffee",
-    "Port",
-    "Chocolat",
-    "Challah",
-    "Arepa",
-    "Pastel de Nata",
-    "Madagascar",
-    "Chad",
-    "Colombia",
-    "Portugal"
+    "The Iran-Iraq War",
+    "Chernobyl",
+    "Teresa",
+    "Prince",
+    "Art of War",
+    "Thermopylae",
+    "Confucius",
+    "Xerxes",
+    "The Thirty Years War",
+    "Prague",
+    "Jan Hus",
+    "Charles IV",
+    "The Spanish Civil War",
+    "Spain",
+    "Rodrigo Borgia",
+    "Catherine of Aragon"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "84534a9582d00a880d4b2d9d4d228d0ca1d93e16b02c5941262db9e022f010f0",
+      "hash": "4aa9e8c85e69f6f381d6737ca0bb8012ce219449d395a89bf3573e05f3309c59",
       "rows": [
-        "Disasters",
-        "Drinks",
-        "Foods",
-        "Republics"
+        "2001",
+        "2007",
+        "Ends with NCE",
+        "Family Sagas"
       ],
       "cols": [
-        "Drama Stories",
-        "Starts with CHA",
-        "Things Colombian",
-        "Things Portuguese"
+        "Best Picture Winners",
+        "Movies featuring Emma Watson",
+        "Romance Stories",
+        "Third in Internal Chronology"
       ],
       "timestamp": null,
-      "qualityScore": 11.170000000000002
+      "qualityScore": 20.339999999999996,
+      "maxSimilarityToPast": 0.2999,
+      "finalScore": 17.940799999999996
     },
     {
-      "hash": "5779a5cb494b3a9a516e68cb2114dc1cea7f3c21f1fd607043d871248b6bdaef",
+      "hash": "97430fd534ba3db3647ddb7fd8ce88ec062db9adb53b6c25d6640461e53a6b8d",
       "rows": [
-        "Birds",
-        "Drama Stories",
-        "Eocene Epoch",
-        "Ships"
-      ],
-      "cols": [
-        "Largest of its Type",
-        "Starts with TER",
-        "Things Canadian",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.08
-    },
-    {
-      "hash": "252af03d4e9b4477861665ba8d46d70deb2d4bcb6a3c7981fa1c3a1618fd3e7c",
-      "rows": [
-        "Countries in Asia",
-        "Drama Stories",
-        "Ends with NGO",
-        "Locations in North America"
-      ],
-      "cols": [
-        "Former French Colonies",
-        "Mentioned in We Didn't Start the Fire",
-        "NATO Phonetic Alphabet",
-        "Real Animals"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.85
-    },
-    {
-      "hash": "bcc9e54e4f370e5f7981061eaeac912b7dac08fcfd22d0556faddbf75453fd71",
-      "rows": [
-        "Birds",
-        "Comedy Stories",
-        "Ends with ING",
-        "National Leaders"
-      ],
-      "cols": [
-        "Cities in USA",
-        "Companies",
-        "Foods",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.01
-    },
-    {
-      "hash": "b5d88d276cf7d01d054d9c699b31924fcdbe6f0b0cae94801a5a36336d244773",
-      "rows": [
-        "Disasters",
-        "Greek Gods",
-        "Largest of its Type",
-        "World War II"
-      ],
-      "cols": [
-        "Drama Stories",
-        "Ends with TER",
-        "Locations in Europe",
-        "Ships"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.490000000000002
-    },
-    {
-      "hash": "64dd0bda41d7ce3b2156414d89fa56bd85f14c7d8918e994134dc8860a88b7fc",
-      "rows": [
-        "Birds",
-        "Drama Stories",
-        "Events",
-        "Foods"
-      ],
-      "cols": [
-        "Cities",
-        "Ends with CON",
-        "Jurassic Period",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 3.01
-    },
-    {
-      "hash": "346da01f207fe2c6faecb6e75fa2b568ada8fd427abec2990d9bcf4700f91bac",
-      "rows": [
-        "Disasters",
-        "Greek Mythology",
-        "Largest of its Type",
-        "Starts with GRA"
-      ],
-      "cols": [
-        "Drama Stories",
-        "Locations in Europe",
-        "Pleistocene Epoch",
-        "Ships"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.300000000000002
-    },
-    {
-      "hash": "b511930e2bb39f53c9712717fe51b2288fb2541499cc33c3cc2538bfc85b24db",
-      "rows": [
-        "Disasters",
-        "Drama Stories",
-        "Ends with INE",
-        "Foods"
-      ],
-      "cols": [
-        "Locations in Asia",
-        "Locations in Europe",
-        "Things Canadian",
-        "Things Russian"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.49
-    },
-    {
-      "hash": "d5446a2cf006ca59d2fc976437ecce3e5ff158a9870e8385a4850f606cefb0f9",
-      "rows": [
-        "Countries in Asia",
-        "Drama Stories",
-        "Ships",
+        "1980s",
+        "5th Century BC",
+        "Things Bohemian",
         "Things Spanish"
       ],
       "cols": [
-        "Ends with NIA",
-        "Islands",
-        "Mentioned in We Didn't Start the Fire",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 2.6799999999999997
-    },
-    {
-      "hash": "70e6632270e82f2901b9f7767a71ff56ba1ea9dedca9fff74fc88cf9d9f856a8",
-      "rows": [
-        "Birds",
-        "Drama Stories",
-        "National Leaders",
-        "Paleogene Period"
-      ],
-      "cols": [
-        "Carnivores",
-        "Starts with CAS",
-        "Things Canadian",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 2.2900000000000005
-    },
-    {
-      "hash": "985f82877d23029558efec581ebb4299450926e3ce3e43bbd02ae346415cb47e",
-      "rows": [
-        "Birds",
-        "Drama Stories",
-        "Modern Countries",
-        "Ships"
-      ],
-      "cols": [
-        "Cities",
-        "Largest of its Type",
-        "Starts with AND",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.95
-    },
-    {
-      "hash": "a5465e7505b2ac76c05c05de4ed5c05a92023c3b3b7ac49ff25a2230a3a14cf1",
-      "rows": [
-        "Birds",
-        "Currently Living Plants",
-        "Drama Stories",
-        "Locations in Europe"
-      ],
-      "cols": [
-        "Foods",
-        "Largest of its Type",
-        "Starts with MAC",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.74
-    },
-    {
-      "hash": "e43ff791eecec1d5f0f5dd8720d404bd6ea9ea7df0dcaf2a8026a78a0a1a6e42",
-      "rows": [
-        "Birds",
-        "Drama Stories",
+        "Ends with WAR",
         "Locations in Europe",
-        "Plants"
-      ],
-      "cols": [
-        "Foods",
-        "Largest of its Type",
-        "Starts with PAR",
-        "Things Canadian"
+        "Religious Figures",
+        "Royalty"
       ],
       "timestamp": null,
-      "qualityScore": 5.72
+      "qualityScore": 9.83,
+      "maxSimilarityToPast": 0.387,
+      "finalScore": 6.734
     },
     {
-      "hash": "56cabeca70ad86894fcf41329d8043622f6cec8211559faa4a2b6f9274d035a2",
+      "hash": "84fef2a4afddf3bb3c7b20782d4cd40884f1a2f8af93ccf770e75960f4f3d675",
       "rows": [
-        "Birds",
-        "Drama Stories",
-        "National Leaders",
-        "Oligocene Epoch"
+        "2001",
+        "2003",
+        "Sci-fi Stories",
+        "Sequels"
       ],
       "cols": [
-        "Carnivores",
-        "Foods",
-        "Starts with CAR",
-        "Things Canadian"
+        "Action Stories",
+        "Disney",
+        "Movies featuring Alan Rickman",
+        "Pixar"
       ],
       "timestamp": null,
-      "qualityScore": 2.1
+      "qualityScore": 15.02,
+      "maxSimilarityToPast": 0.394,
+      "finalScore": 11.867999999999999
     },
     {
-      "hash": "8f0f87ef77ff29028c6c84e2088a7bcf433dd45a14a880255763d4ccc411fb19",
+      "hash": "9f56f1d9b9e7c69fc867da951c07bb8cce6cfd433a69168e7274ac491afb1cf9",
       "rows": [
-        "Disasters",
-        "Drinks",
-        "Foods",
-        "Republics"
-      ],
-      "cols": [
-        "Drama Stories",
-        "Starts with CHI",
-        "Things Colombian",
-        "Things Portuguese"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.170000000000002
-    },
-    {
-      "hash": "7b9158421a17a23847aafb1ef91c65dbe77cb03f0e8d169ab3eefea7b7893637",
-      "rows": [
-        "Birds",
-        "Countries",
-        "Drama Stories",
-        "Ships"
-      ],
-      "cols": [
-        "Cities",
-        "Largest of its Type",
-        "Starts with AND",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.94
-    },
-    {
-      "hash": "839bceffb895158fe97f003cc3980fcc9724f75e9919e34a9231eff8bd6dad75",
-      "rows": [
-        "Birds",
-        "Comedy Stories",
-        "National Leaders",
-        "Starts with CAN"
-      ],
-      "cols": [
-        "Cities",
+        "1980s",
+        "1990s",
         "Companies",
-        "Foods",
-        "Things Canadian"
+        "Things Russian"
       ],
-      "timestamp": null,
-      "qualityScore": 3.33
-    },
-    {
-      "hash": "653c301c9a5ece3e5ae556fdb74a584e8ed86f738d4dabf9dd4b9ddd5b6fb1aa",
-      "rows": [
-        "Birds",
-        "Drama Stories",
-        "Foods",
+      "cols": [
+        "Animal Terms",
+        "Fighter Aircraft",
+        "Mountains",
         "National Leaders"
       ],
+      "timestamp": null,
+      "qualityScore": 8.45,
+      "maxSimilarityToPast": 0.381,
+      "finalScore": 5.401999999999999
+    },
+    {
+      "hash": "309ee15123ecf0e9b64855fb91247abba51ccde54dd9b6e12e430c878e1af39e",
+      "rows": [
+        "1980s",
+        "Cities in North America",
+        "Currently Living Animals",
+        "Things German"
+      ],
       "cols": [
-        "Cities",
+        "Cars",
+        "Musicians",
+        "Starts with BAT",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 3.85,
+      "maxSimilarityToPast": 0.3873,
+      "finalScore": 0.7516000000000003
+    },
+    {
+      "hash": "2edd2e374b42e19ff2336fc124519c41fa436a67349bb44c19b35a0cca0a99d3",
+      "rows": [
+        "1980s",
+        "3D Animated Films",
+        "Fourth in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Blockbusters",
+        "Comedy Stories",
+        "Ends with ARS",
+        "Movies featuring Sigourney Weaver"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.14,
+      "maxSimilarityToPast": 0.3606,
+      "finalScore": 13.2552
+    },
+    {
+      "hash": "1fca35d5da674afed277ae0c475e61af16ae9f2241d785d8389be4947ff184df",
+      "rows": [
+        "1980s",
+        "1990s",
+        "Cities in USA",
+        "Ends with MAN"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Musical Films",
+        "US Presidents",
+        "X-Men Characters"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.1000000000000005,
+      "maxSimilarityToPast": 0.3827,
+      "finalScore": 3.0384000000000007
+    },
+    {
+      "hash": "459f425fe87a532e27b593016fab8ed6276514529b527a6813c060ffbc5c591d",
+      "rows": [
+        "2001",
+        "2019",
+        "Fifth in Release Order",
+        "Fourth in Release Order"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Disney",
+        "Movies featuring Emma Watson",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 21.93,
+      "maxSimilarityToPast": 0.6149,
+      "finalScore": 17.0108
+    },
+    {
+      "hash": "777db5602adcf215d048d1c71c39ec5f24e435fac6d9fc43604f5a8afdec106a",
+      "rows": [
+        "2001",
+        "2011",
+        "Fifth in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Disney",
+        "Movies featuring Daniel Radcliffe",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.1,
+      "maxSimilarityToPast": 0.5861,
+      "finalScore": 15.411200000000001
+    },
+    {
+      "hash": "61813f4726a2575adaab633eb82290329d5de712d9846c6aa17a4fbb34eaac8b",
+      "rows": [
+        "1980s",
+        "1990s",
+        "Black and White Films",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Best Picture Winners",
+        "Ends with ERS",
+        "Movies With the Seven Samurai Plot"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.05,
+      "maxSimilarityToPast": 0.3911,
+      "finalScore": 4.921200000000001
+    },
+    {
+      "hash": "88ebbf1af0cedccbb21f808656bc3600e922c6be83a9eea868e65feda4f81dc7",
+      "rows": [
+        "1980s",
+        "Cities in North America",
+        "Paleogene Period",
+        "Things Spanish"
+      ],
+      "cols": [
+        "Car Brands",
+        "Exploration Ships",
+        "Starts with BAT",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.05,
+      "maxSimilarityToPast": 0.3401,
+      "finalScore": 3.3291999999999997
+    },
+    {
+      "hash": "5045866a7c844c9f713350ea287984f878216f96b418ccea04485c224c0cc107",
+      "rows": [
+        "1980s",
+        "1990s",
         "Companies",
-        "Ends with ANT",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 3.12
-    },
-    {
-      "hash": "3cba65bc29f3687321384c1d747b182335a61f3f10c406afeca0576cb5fcfa4d",
-      "rows": [
-        "Birds",
-        "Drama Stories",
-        "Events",
-        "Foods"
+        "Locations in North America"
       ],
       "cols": [
-        "Cities",
-        "Jurassic Period",
-        "Starts with FAL",
-        "Things Canadian"
+        "Comedy Stories",
+        "Ends with ING",
+        "US Presidents",
+        "Volcanoes"
       ],
       "timestamp": null,
-      "qualityScore": 3.01
+      "qualityScore": 5.77,
+      "maxSimilarityToPast": 0.3324,
+      "finalScore": 3.1108
     },
     {
-      "hash": "ff8d49baf806f5939f210ca1929dc983ccc1e171aff0ac71cd640d8b3a5c743d",
+      "hash": "bc7b1d7659b14ca640118883802bffa0a3d010ce21288e5bbbf74cbb8ab726fa",
       "rows": [
-        "Disasters",
-        "Greek Mythology",
-        "Largest of its Type",
-        "Things Canadian"
+        "1980s",
+        "1990s",
+        "Companies",
+        "Locations in Asia"
       ],
       "cols": [
-        "Drama Stories",
+        "Ends with TES",
+        "Mountains",
+        "Theropods",
+        "Things Russian"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.51,
+      "maxSimilarityToPast": 0.4225,
+      "finalScore": 2.13
+    },
+    {
+      "hash": "531cfe2bfe45e6896ea51d1597ad43f1e05ef94d84474ee95f4f4281856b6cb1",
+      "rows": [
+        "1980s",
+        "Cities in North America",
+        "Ends with ESS",
+        "Things Spanish"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Military Conflicts",
+        "Saints",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.619999999999999,
+      "maxSimilarityToPast": 0.3417,
+      "finalScore": 1.8863999999999992
+    },
+    {
+      "hash": "9733aa0093f74ee8219a45624080a81e16531978210f45c04fa9f3a6038988c0",
+      "rows": [
+        "1980s",
+        "1990s",
+        "Companies",
+        "Starts with CHI"
+      ],
+      "cols": [
+        "Disney",
+        "Military Aircraft",
+        "Saurischians",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.07,
+      "maxSimilarityToPast": 0.4857,
+      "finalScore": 1.1844000000000001
+    },
+    {
+      "hash": "e363371c297e0f8dc6bc18457c51ac0637f480068704914fc8761a3f2a0bd80e",
+      "rows": [
+        "1980s",
+        "Age of Sail",
+        "Companies",
+        "Ends with DON"
+      ],
+      "cols": [
+        "Eocene Epoch",
         "Locations in Europe",
-        "Pleistocene Epoch",
-        "Ships"
+        "National Leaders",
+        "Things That Fly"
       ],
       "timestamp": null,
-      "qualityScore": 10.250000000000002
+      "qualityScore": 3.89,
+      "maxSimilarityToPast": 0.3602,
+      "finalScore": 1.0084
+    },
+    {
+      "hash": "fe846268684e92509b86dcfdb93965d2a172c46f6ecab828da805bbba99522e1",
+      "rows": [
+        "1980s",
+        "1990s",
+        "Best Picture Winners",
+        "Thriller Stories"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Movies directed by Steven Spielberg",
+        "Movies featuring Jack Nicholson",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.79,
+      "maxSimilarityToPast": 0.4242,
+      "finalScore": 7.396399999999999
+    },
+    {
+      "hash": "4ba2d07c889b3932bc7ff64731c98246542400d0bbb35bb424d47c670e0274e0",
+      "rows": [
+        "2001",
+        "2016",
+        "Action Stories",
+        "Sequels"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Disney",
+        "Starts with HAR",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.35,
+      "maxSimilarityToPast": 0.4393,
+      "finalScore": 6.8355999999999995
+    },
+    {
+      "hash": "ae623076ef4155619ee940992a2e2016b3f9f31e64eec8c6d9114e36cd21fa03",
+      "rows": [
+        "1980s",
+        "1990s",
+        "Comedy Stories",
+        "Thriller Films"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Movies featuring Kurt Russell",
+        "Sequels",
+        "Starts with DON"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.779999999999999,
+      "maxSimilarityToPast": 0.508,
+      "finalScore": 2.7159999999999993
+    },
+    {
+      "hash": "de141c29238ee77003605b1d75987b61c515e5f6bf275279964c44e4fbd5597d",
+      "rows": [
+        "1980s",
+        "1990s",
+        "Cities in North America",
+        "Ends with HER"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Marvel Characters",
+        "Musicians",
+        "Romance Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.040000000000001,
+      "maxSimilarityToPast": 0.5326,
+      "finalScore": 0.7792000000000012
     }
   ],
   "message": "Puzzle saved successfully!"

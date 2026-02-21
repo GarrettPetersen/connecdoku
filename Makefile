@@ -48,7 +48,7 @@ clean:
 # Solve-and-curate (no DB): find high-quality diverse puzzles directly and hand to AI curator
 solve-and-curate:
 	@echo "Running solve-and-curate (no DB)..."
-	caffeinate -i node solve_and_curate.js
+	SOLVE_CURATE_NONINTERACTIVE=1 node solve_and_curate.js
 
 # Update all data files
 update-data:

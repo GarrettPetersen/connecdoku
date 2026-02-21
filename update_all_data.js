@@ -183,6 +183,84 @@ const finalCategories = sortedCategories;
 const outputPath = path.join(__dirname, 'data', 'categories.json');
 fs.writeFileSync(outputPath, JSON.stringify(finalCategories, null, 2), 'utf8');
 
+// Step 2.6: Build and save category similarity matrix (sparse Jaccard)
+console.log('2.6. Building category similarity matrix...');
+try {
+    const categoriesList = Object.keys(finalCategories).sort();
+    const catIndex = new Map();
+    categoriesList.forEach((c, i) => catIndex.set(c, i));
+    const catSizes = categoriesList.map((c) => (finalCategories[c] ? finalCategories[c].length : 0));
+
+    // Build intersection counts for category pairs by iterating words -> categories.
+    // We store only pairs with overlap >= 1; disjoint pairs are implicitly 0.
+    const nCats = categoriesList.length;
+    const pairCounts = new Map(); // key = i*nCats + j (i<j), value = intersection count
+
+    for (const categories of Object.values(wordsData)) {
+        if (!Array.isArray(categories) || categories.length < 2) continue;
+        // Map to indices and sort (defensive).
+        const idxs = [];
+        for (const c of categories) {
+            const ix = catIndex.get(c);
+            if (ix !== undefined) idxs.push(ix);
+        }
+        if (idxs.length < 2) continue;
+        idxs.sort((a, b) => a - b);
+
+        for (let a = 0; a < idxs.length; a++) {
+            const i = idxs[a];
+            for (let b = a + 1; b < idxs.length; b++) {
+                const j = idxs[b];
+                if (i === j) continue;
+                const key = i * nCats + j;
+                pairCounts.set(key, (pairCounts.get(key) || 0) + 1);
+            }
+        }
+    }
+
+    // Build per-category neighbor lists, cap size for file practicality.
+    // Always include [i,1] on the diagonal.
+    const TOP_K = 250;
+    const MIN_SIM = 0.02; // ignore extremely tiny overlaps; 0s are implicit
+    const neighbors = Array.from({ length: nCats }, (_, i) => [[i, 1]]);
+
+    for (const [key, inter] of pairCounts.entries()) {
+        const i = Math.floor(key / nCats);
+        const j = key % nCats;
+        const si = catSizes[i] || 0;
+        const sj = catSizes[j] || 0;
+        const union = si + sj - inter;
+        if (union <= 0) continue;
+        const sim = inter / union; // Jaccard
+        if (sim < MIN_SIM) continue;
+        const s = Math.round(sim * 10000) / 10000; // 4dp
+        neighbors[i].push([j, s]);
+        neighbors[j].push([i, s]);
+    }
+
+    for (let i = 0; i < nCats; i++) {
+        // Sort descending similarity, then by category index for stability.
+        neighbors[i].sort((a, b) => (b[1] - a[1]) || (a[0] - b[0]));
+        // Keep diagonal + topK others.
+        if (neighbors[i].length > TOP_K + 1) neighbors[i] = neighbors[i].slice(0, TOP_K + 1);
+    }
+
+    const simOut = {
+        metric: "jaccard",
+        generatedAt: new Date().toISOString(),
+        minSimilarity: MIN_SIM,
+        topKPerCategory: TOP_K,
+        categories: categoriesList,
+        neighbors,
+    };
+
+    const simPath = path.join(__dirname, "data", "category_similarity.json");
+    fs.writeFileSync(simPath, JSON.stringify(simOut, null, 2), "utf8");
+    console.log(`- Wrote category similarity to ${simPath}`);
+} catch (err) {
+    console.log(`- Error building category similarity matrix: ${err.message}`);
+}
+
 // Step 2.75: Manage category emojis
 console.log('2.75. Managing category emojis...');
 const categoryEmojisPath = path.join(__dirname, 'data', 'category_emojis.json');

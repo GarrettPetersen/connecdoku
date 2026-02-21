@@ -181,13 +181,21 @@ function renderOutput() {
         output += `## Select a Puzzle\n\n`;
         state.puzzles.forEach((p, i) => {
             const qs = p.qualityScore ? p.qualityScore.toFixed(2) : "N/A";
-            output += `${i}. ${scoreEmoji(p.qualityScore)} Quality: ${qs} | Categories: ${[...p.rows, ...p.cols].join(", ")}\n`;
+            const fs = typeof p.finalScore === "number" ? p.finalScore.toFixed(2) : null;
+            const ms = typeof p.maxSimilarityToPast === "number" ? p.maxSimilarityToPast.toFixed(3) : null;
+            const extras = [
+              fs ? `Final: ${fs}` : null,
+              ms ? `MaxSimPast: ${ms}` : null,
+            ].filter(Boolean).join(" | ");
+            output += `${i}. ${scoreEmoji(p.qualityScore)} Quality: ${qs}${extras ? ` | ${extras}` : ""} | Categories: ${[...p.rows, ...p.cols].join(", ")}\n`;
         });
         output += `\n**Command:** \`node ai_curator.js select <index>\` or \`node ai_curator.js select none\``;
     } else if (state.phase === "PUZZLE_REVIEW") {
         const p = state.currentPuzzle;
         output += `## Review Puzzle\n\n`;
         output += `**Quality Score:** ${p.qualityScore.toFixed(2)} ${scoreEmoji(p.qualityScore)}\n`;
+        if (typeof p.finalScore === "number") output += `**Final Score:** ${p.finalScore.toFixed(2)}\n`;
+        if (typeof p.maxSimilarityToPast === "number") output += `**Max similarity to past:** ${p.maxSimilarityToPast.toFixed(3)}\n`;
         output += `**Rows:**\n${p.rows.map((r, i) => `  ${i + 1}. ${r}`).join("\n")}\n`;
         output += `**Cols:**\n${p.cols.map((c, i) => `  ${i + 1}. ${c}`).join("\n")}\n\n`;
         output += `Options:\n`;

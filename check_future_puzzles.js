@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { loadCategorySimilarity, puzzleCategorySimilarity } from './similarity.js';
 
 // Read the data files
 const DATA_DIR = 'data';
@@ -39,6 +40,18 @@ function scoreEmoji(score) {
   return '🔴';
 }
 
+// Similarity cutoff for "too similar to past puzzles"
+// - If >= 1, similarity checking is disabled.
+// - Otherwise, any future puzzle with maxSimilarityToPast >= cutoff is flagged as TOO SIMILAR.
+const SIM_CUTOFF_RAW = process.env.CHECK_FUTURE_SIM_CUTOFF;
+const SIM_CUTOFF = Number.isFinite(Number(SIM_CUTOFF_RAW)) ? Number(SIM_CUTOFF_RAW) : 0.625;
+const simDb = SIM_CUTOFF < 1 ? loadCategorySimilarity(DATA_DIR) : null;
+if (SIM_CUTOFF < 1 && !simDb) {
+  console.log('Warning: data/category_similarity.json not found/invalid; similarity will fall back to exact category matches only.');
+}
+const categorySimFn = simDb ? simDb.categorySimilarity : (a, b) => (a === b ? 1 : 0);
+const SIM_ENFORCE_INVALID = process.env.CHECK_FUTURE_SIM_ENFORCE === '1';
+
 // Get current date to identify future puzzles
 const currentDate = new Date();
 const startDate = new Date('2025-07-21T00:00:00'); // Actual start date from the game
@@ -48,10 +61,13 @@ const currentPuzzleIndex = daysSinceStart;
 console.log(`Current date: ${currentDate.toISOString().split('T')[0]}`);
 console.log(`Current puzzle index: ${currentPuzzleIndex}`);
 console.log(`Total puzzles: ${puzzlesData.length}`);
+console.log(`Similarity cutoff: ${SIM_CUTOFF >= 1 ? 'disabled' : SIM_CUTOFF} (set CHECK_FUTURE_SIM_CUTOFF=1 to disable)`);
+console.log(`Similarity enforcement: ${SIM_ENFORCE_INVALID ? 'INVALID' : 'separate flag'} (set CHECK_FUTURE_SIM_ENFORCE=1 to enforce)`);
 console.log('');
 
 // Check each future puzzle
 let invalidFutureCount = 0;
+let tooSimilarFutureCount = 0;
 for (let i = currentPuzzleIndex; i < puzzlesData.length; i++) {
   const puzzle = puzzlesData[i];
   const { rows, cols, words } = puzzle;
@@ -63,6 +79,35 @@ for (let i = currentPuzzleIndex; i < puzzlesData.length; i++) {
   const score = computePuzzleScore(rows, cols);
   const emoji = scoreEmoji(score);
   console.log(`Quality score: ${score.toFixed(2)} ${emoji}`);
+
+  // Similarity check vs all past puzzles (by index)
+  let maxSimilarityToPast = null;
+  let closestPastIdx = -1;
+  if (SIM_CUTOFF < 1) {
+    let bestSim = 0;
+    let bestIdx = -1;
+    for (let j = 0; j < i; j++) {
+      const past = puzzlesData[j];
+      if (!past || !Array.isArray(past.rows) || !Array.isArray(past.cols)) continue;
+      const s = puzzleCategorySimilarity(puzzle, past, categorySimFn);
+      if (s > bestSim) {
+        bestSim = s;
+        bestIdx = j;
+      }
+      if (bestSim >= 1) break;
+    }
+    maxSimilarityToPast = Math.round(bestSim * 10000) / 10000;
+    closestPastIdx = bestIdx;
+
+    // Always print the max similarity + closest puzzle index for each entry.
+    console.log(`MaxSimPast: ${maxSimilarityToPast.toFixed(4)} (closest puzzle index ${closestPastIdx})`);
+
+    if (maxSimilarityToPast >= SIM_CUTOFF) {
+      console.log(`⚠️ TOO SIMILAR: maxSimPast=${maxSimilarityToPast.toFixed(4)} (closest puzzle index ${bestIdx})`);
+    } else if (maxSimilarityToPast >= Math.max(0, SIM_CUTOFF - 0.05)) {
+      console.log(`⚠️ High similarity: maxSimPast=${maxSimilarityToPast.toFixed(4)} (closest puzzle index ${bestIdx})`);
+    }
+  }
 
   // Soft warning if any categories or words are shared with the previous day
   if (i > 0) {
@@ -88,6 +133,17 @@ for (let i = currentPuzzleIndex; i < puzzlesData.length; i++) {
 
   let hasErrors = false;
   const errors = [];
+  let isTooSimilar = false;
+
+  // Similarity is a separate concern from "INVALID" (miscategorized words),
+  // unless explicitly enforced via CHECK_FUTURE_SIM_ENFORCE=1.
+  if (SIM_CUTOFF < 1 && typeof maxSimilarityToPast === 'number' && maxSimilarityToPast >= SIM_CUTOFF) {
+    isTooSimilar = true;
+    if (SIM_ENFORCE_INVALID) {
+      errors.push(`Similarity too high vs past puzzle ${closestPastIdx}: maxSimPast=${maxSimilarityToPast.toFixed(4)} (cutoff=${SIM_CUTOFF})`);
+      hasErrors = true;
+    }
+  }
 
   // Check each word in the puzzle
   for (let row = 0; row < 4; row++) {
@@ -130,7 +186,12 @@ for (let i = currentPuzzleIndex; i < puzzlesData.length; i++) {
     errors.forEach(error => console.log(`  ${error}`));
     invalidFutureCount++;
   } else {
-    console.log('✅ VALID');
+    if (isTooSimilar) {
+      console.log('✅ VALID (but TOO SIMILAR)');
+      tooSimilarFutureCount++;
+    } else {
+      console.log('✅ VALID');
+    }
   }
 
   console.log('');
@@ -142,3 +203,4 @@ const runwayEndDate = new Date(startDate.getTime());
 runwayEndDate.setDate(runwayEndDate.getDate() + (puzzlesData.length - 1));
 console.log(`Puzzle runway: ${runwayDays} day${runwayDays === 1 ? '' : 's'} remaining (through ${runwayEndDate.toISOString().split('T')[0]})`);
 console.log(`Invalid future puzzles: ${invalidFutureCount}`);
+console.log(`Too-similar future puzzles: ${tooSimilarFutureCount}`);
