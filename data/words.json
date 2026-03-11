@@ -983,6 +983,7 @@
     "Real People",
     "Religious Figures",
     "Starts with ALF",
+    "The Crusades",
     "Things Spanish"
   ],
   "Alfredo": [
@@ -1252,7 +1253,9 @@
     "Movies featuring F. Murray Abraham",
     "Movies featuring Tom Hulce",
     "Oscar Winners",
+    "People",
     "Period Stories",
+    "Real People",
     "Starts with AMA",
     "Things American",
     "Wolfgang Amadeus Mozart"
@@ -1816,7 +1819,8 @@
     "Ends with OCH",
     "Locations in Asia",
     "Roman Cities",
-    "Starts with ANT"
+    "Starts with ANT",
+    "The Crusades"
   ],
   "Antonine Plague": [
     "2nd Century",
@@ -1896,10 +1900,23 @@
     "1960s",
     "1970s",
     "20th Century",
+    "Apollo 11",
     "Battlestar Galactica",
     "Ends with LLO",
     "Greek Gods",
     "Music",
+    "Space Missions",
+    "Starts with APO",
+    "Things American"
+  ],
+  "Apollo 11": [
+    "1960s",
+    "1969",
+    "20th Century",
+    "Apollo 11",
+    "Ends with  11",
+    "Events",
+    "Space Exploration",
     "Space Missions",
     "Starts with APO",
     "Things American"
@@ -4361,6 +4378,7 @@
     "Cold War",
     "Composers",
     "Ends with LIN",
+    "Fall of the Berlin Wall",
     "Locations in Europe",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -4369,6 +4387,18 @@
     "People",
     "Place Names",
     "Real People",
+    "Starts with BER",
+    "Things German"
+  ],
+  "Berlin Wall": [
+    "1960s",
+    "1980s",
+    "20th Century",
+    "Cold War",
+    "Ends with ALL",
+    "Fall of the Berlin Wall",
+    "Locations in Europe",
+    "Place Names",
     "Starts with BER",
     "Things German"
   ],
@@ -5070,6 +5100,20 @@
     "Starts with BOH",
     "Things Bohemian"
   ],
+  "Bohemond": [
+    "11th Century",
+    "12th Century",
+    "Ends with OND",
+    "Men",
+    "Military Leaders",
+    "Monarchs",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with BOH",
+    "The Crusades",
+    "Things Italian"
+  ],
   "Boise": [
     "Cities",
     "Cities in North America",
@@ -5217,6 +5261,7 @@
     "20th Century",
     "Band Namesakes",
     "Bands",
+    "Boston Tea Party",
     "Cities",
     "Cities in North America",
     "Ends with TON",
@@ -5226,6 +5271,17 @@
     "Place Names",
     "Rock Bands",
     "Starts with BOS",
+    "Things American"
+  ],
+  "Boston Tea Party": [
+    "1770s",
+    "18th Century",
+    "Boston Tea Party",
+    "Ends with RTY",
+    "Events",
+    "Political Events",
+    "Starts with BOS",
+    "The American Revolution",
     "Things American"
   ],
   "Botswana": [
@@ -6978,6 +7034,7 @@
   ],
   "Castro": [
     "20th Century",
+    "Cuban Missile Crisis",
     "Ends with TRO",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -9087,6 +9144,18 @@
     "Starts with COU",
     "Titles of Rank"
   ],
+  "County of Tripoli": [
+    "11th Century",
+    "12th Century",
+    "13th Century",
+    "Countries",
+    "Countries that No Longer Exist",
+    "Ends with OLI",
+    "Place Names",
+    "Starts with COU",
+    "The Crusades",
+    "Things Middle Eastern"
+  ],
   "Cow": [
     "Animal Species",
     "Animal Terms",
@@ -9428,6 +9497,7 @@
     "Cold War",
     "Countries",
     "Countries in North America",
+    "Cuban Missile Crisis",
     "Ends with UBA",
     "Former Spanish Colonies",
     "Island Nations",
@@ -9437,6 +9507,18 @@
     "Place Names",
     "Starts with CUB",
     "Things Cuban"
+  ],
+  "Cuban Missile Crisis": [
+    "1960s",
+    "1962",
+    "20th Century",
+    "Cold War",
+    "Cuban Missile Crisis",
+    "Ends with SIS",
+    "Events",
+    "Political Events",
+    "Starts with CUB",
+    "Things American"
   ],
   "Cucumber": [
     "Cenozoic Era",
@@ -10103,6 +10185,17 @@
     "Nautical Terms",
     "Starts with DEC"
   ],
+  "Deep Throat": [
+    "1970s",
+    "20th Century",
+    "Ends with OAT",
+    "Men",
+    "People",
+    "Real People",
+    "Starts with DEE",
+    "Things American",
+    "Watergate"
+  ],
   "Deepwater Horizon": [
     "2010",
     "2010s",
@@ -10273,6 +10366,15 @@
     "Furniture",
     "Household Items",
     "Starts with DES"
+  ],
+  "Deus Vult": [
+    "11th Century",
+    "12th Century",
+    "Ends with ULT",
+    "Famous Quotes",
+    "Latin Phrases",
+    "Starts with DEU",
+    "The Crusades"
   ],
   "Devastator": [
     "1930s",
@@ -11446,6 +11548,20 @@
     "Things American",
     "Things Canadian"
   ],
+  "Edward I": [
+    "13th Century",
+    "Ends with D I",
+    "Men",
+    "Military Leaders",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with EDW",
+    "The Crusades",
+    "Things British"
+  ],
   "Edward III": [
     "14th Century",
     "Ends with III",
@@ -12248,6 +12364,18 @@
     "Starts with EUC",
     "Things American"
   ],
+  "Eugene III": [
+    "12th Century",
+    "Ends with III",
+    "Men",
+    "People",
+    "Popes",
+    "Real People",
+    "Religious Figures",
+    "Starts with EUG",
+    "The Crusades",
+    "Things Italian"
+  ],
   "Euoplocephalus": [
     "Animal Species",
     "Animal Terms",
@@ -12509,6 +12637,18 @@
     "Place Names",
     "Starts with FAL",
     "Things British"
+  ],
+  "Fall of the Berlin Wall": [
+    "1980s",
+    "1989",
+    "20th Century",
+    "Cold War",
+    "Ends with ALL",
+    "Events",
+    "Fall of the Berlin Wall",
+    "Political Events",
+    "Starts with FAL",
+    "Things German"
   ],
   "Fallen Angels": [
     "1990s",
@@ -13058,6 +13198,7 @@
     "Locations in Europe",
     "Place Names",
     "Starts with FLO",
+    "The Renaissance",
     "Things Italian"
   ],
   "Florence Nightingale": [
@@ -13529,6 +13670,35 @@
     "Things American",
     "Warner Bros. Characters"
   ],
+  "Frederick I Barbarossa": [
+    "12th Century",
+    "Ends with SSA",
+    "Holy Roman Emperors",
+    "Men",
+    "Military Leaders",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with FRE",
+    "The Crusades",
+    "Things German"
+  ],
+  "Frederick II": [
+    "13th Century",
+    "Ends with  II",
+    "Holy Roman Emperors",
+    "Men",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with FRE",
+    "The Crusades",
+    "Things German"
+  ],
   "Frederick the Great": [
     "18th Century",
     "Ends with EAT",
@@ -13858,6 +14028,7 @@
     "Space Missions",
     "Space Telescopes",
     "Starts with GAL",
+    "The Renaissance",
     "Things Italian"
   ],
   "Galley": [
@@ -14388,6 +14559,7 @@
     "Real People",
     "Religious Figures",
     "Starts with GIO",
+    "The Crusades",
     "Things Italian"
   ],
   "Giraffe": [
@@ -15143,6 +15315,18 @@
     "Place Names",
     "Starts with GRE",
     "Things Greenlandic"
+  ],
+  "Gregory VIII": [
+    "12th Century",
+    "Ends with III",
+    "Men",
+    "People",
+    "Popes",
+    "Real People",
+    "Religious Figures",
+    "Starts with GRE",
+    "The Crusades",
+    "Things Italian"
   ],
   "Grenada": [
     "Countries",
@@ -16571,6 +16755,16 @@
     "Sword and Sandals Stories",
     "Things American"
   ],
+  "Here I Stand": [
+    "16th Century",
+    "Board Games",
+    "Ends with AND",
+    "Famous Quotes",
+    "Protestant Reformation",
+    "Starts with HER",
+    "Things American",
+    "Things German"
+  ],
   "Here's looking at you, kid": [
     "1940s",
     "20th Century",
@@ -17477,6 +17671,17 @@
     "Numbers",
     "Roman Numerals"
   ],
+  "I am not a crook": [
+    "1970s",
+    "20th Century",
+    "Ends with OOK",
+    "Famous Quotes",
+    "Political Speeches",
+    "Presidential Speeches",
+    "Starts with I A",
+    "Things American",
+    "Watergate"
+  ],
   "I am your father": [
     "1980s",
     "20th Century",
@@ -17945,6 +18150,19 @@
     "Starts with ING",
     "Things American",
     "War Stories"
+  ],
+  "Innocent III": [
+    "12th Century",
+    "13th Century",
+    "Ends with III",
+    "Men",
+    "People",
+    "Popes",
+    "Real People",
+    "Religious Figures",
+    "Starts with INN",
+    "The Crusades",
+    "Things Italian"
   ],
   "Inside Out": [
     "2010s",
@@ -18789,6 +19007,7 @@
     "Religious Sites",
     "Roman Cities",
     "Starts with JER",
+    "The Crusades",
     "Things Israeli"
   ],
   "Jesus Christ": [
@@ -19063,6 +19282,16 @@
     "Religious Figures",
     "Starts with JOH",
     "Things Scottish"
+  ],
+  "John Proctor": [
+    "17th Century",
+    "Ends with TOR",
+    "Men",
+    "People",
+    "Real People",
+    "Salem Witch Trials",
+    "Starts with JOH",
+    "Things American"
   ],
   "John Wesley": [
     "18th Century",
@@ -19757,6 +19986,7 @@
     "1960s",
     "20th Century",
     "Assassination of JFK",
+    "Cuban Missile Crisis",
     "Ends with EDY",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -19856,6 +20086,19 @@
     "Starts with KHA",
     "Things Mongolian",
     "Titles of Rank"
+  ],
+  "Khrushchev": [
+    "1950s",
+    "1960s",
+    "20th Century",
+    "Cuban Missile Crisis",
+    "Ends with HEV",
+    "Men",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Starts with KHR",
+    "Things Russian"
   ],
   "Kia": [
     "20th Century",
@@ -20023,6 +20266,19 @@
     "Sea Creatures",
     "Starts with KIN"
   ],
+  "King John": [
+    "13th Century",
+    "Ends with OHN",
+    "Magna Carta",
+    "Men",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with KIN",
+    "Things British"
+  ],
   "King Kong": [
     "1930s",
     "1933",
@@ -20072,6 +20328,32 @@
     "Place Names",
     "Starts with KIN",
     "Things Canadian"
+  ],
+  "Kingdom of Heaven": [
+    "2000s",
+    "2005",
+    "21st Century",
+    "Drama Stories",
+    "Ends with VEN",
+    "Movies",
+    "Movies directed by Ridley Scott",
+    "Period Stories",
+    "Starts with KIN",
+    "The Crusades",
+    "Things American",
+    "War Stories"
+  ],
+  "Kingdom of Jerusalem": [
+    "11th Century",
+    "12th Century",
+    "13th Century",
+    "Countries",
+    "Countries that No Longer Exist",
+    "Ends with LEM",
+    "Place Names",
+    "Starts with KIN",
+    "The Crusades",
+    "Things Middle Eastern"
   ],
   "Kiribati": [
     "Archipelagos",
@@ -20996,6 +21278,7 @@
   ],
   "Lee Harvey Oswald": [
     "1960s",
+    "1963",
     "20th Century",
     "Assassination of JFK",
     "Assassins",
@@ -21931,6 +22214,20 @@
     "Starts with LOU",
     "Things American"
   ],
+  "Louis IX": [
+    "13th Century",
+    "Ends with  IX",
+    "Men",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Saints",
+    "Starts with LOU",
+    "The Crusades",
+    "Things French"
+  ],
   "Louis Pasteur": [
     "19th Century",
     "Ends with EUR",
@@ -21941,6 +22238,19 @@
     "Real People",
     "Scientists",
     "Starts with LOU",
+    "Things French"
+  ],
+  "Louis VII": [
+    "12th Century",
+    "Ends with VII",
+    "Men",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with LOU",
+    "The Crusades",
     "Things French"
   ],
   "Louis XVI": [
@@ -22399,6 +22709,16 @@
     "Magic",
     "NBA Teams",
     "Starts with MAG"
+  ],
+  "Magna Carta": [
+    "1215",
+    "13th Century",
+    "Ends with RTA",
+    "Events",
+    "Magna Carta",
+    "Political Events",
+    "Starts with MAG",
+    "Things British"
   ],
   "Magneto": [
     "1960s",
@@ -22938,6 +23258,7 @@
     "Founders of Religious Movements",
     "Men",
     "People",
+    "Protestant Reformation",
     "Real People",
     "Religious Figures",
     "Starts with MAR",
@@ -23079,6 +23400,27 @@
     "Things British",
     "Women",
     "Writers"
+  ],
+  "Mary, Queen of Scots": [
+    "16th Century",
+    "1970s",
+    "1971",
+    "20th Century",
+    "Biographical Stories",
+    "Drama Stories",
+    "Ends with OTS",
+    "Historical Epics",
+    "Monarchs",
+    "Movies",
+    "Movies featuring Vanessa Redgrave",
+    "National Leaders",
+    "People",
+    "Period Stories",
+    "Real People",
+    "Royalty",
+    "Starts with MAR",
+    "Things British",
+    "Women"
   ],
   "Maserati": [
     "1910s",
@@ -23682,6 +24024,7 @@
     "Real People",
     "Renaissance Figures",
     "Starts with MIC",
+    "The Renaissance",
     "Things Italian"
   ],
   "Michelle Obama": [
@@ -24387,6 +24730,7 @@
     "Synonyms for Big"
   ],
   "Moon": [
+    "Apollo 11",
     "Astronomical Objects",
     "Ends with OON",
     "Poems",
@@ -24955,6 +25299,7 @@
     "1950s",
     "20th Century",
     "Acronyms",
+    "Apollo 11",
     "Ends with ASA",
     "Organizations",
     "Space Missions",
@@ -25567,7 +25912,8 @@
     "Real People",
     "Starts with NIX",
     "Things American",
-    "US Presidents"
+    "US Presidents",
+    "Watergate"
   ],
   "No Country for Old Men": [
     "2000s",
@@ -27792,6 +28138,19 @@
     "Starts with PHI",
     "Things French"
   ],
+  "Philip II of France": [
+    "12th Century",
+    "Ends with NCE",
+    "Men",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with PHI",
+    "The Crusades",
+    "Things French"
+  ],
   "Philip II of Macedon": [
     "4th Century BC",
     "Ends with DON",
@@ -28855,6 +29214,19 @@
     "Thriller Stories",
     "Time Travel Stories"
   ],
+  "Prester John": [
+    "12th Century",
+    "Ends with OHN",
+    "Folklore Figures",
+    "Men",
+    "Monarchs",
+    "People",
+    "Religious Figures",
+    "Rulers",
+    "Starts with PRE",
+    "The Crusades",
+    "Things Ethiopian"
+  ],
   "Pretzel": [
     "Breads",
     "Brown Things",
@@ -28978,6 +29350,18 @@
     "Video Game Characters",
     "Women"
   ],
+  "Principality of Antioch": [
+    "11th Century",
+    "12th Century",
+    "13th Century",
+    "Countries",
+    "Countries that No Longer Exist",
+    "Ends with OCH",
+    "Place Names",
+    "Starts with PRI",
+    "The Crusades",
+    "Things Middle Eastern"
+  ],
   "Professor X": [
     "20th Century",
     "21st Century",
@@ -29026,6 +29410,18 @@
     "Ends with CCO",
     "Starts with PRO",
     "Things Italian"
+  ],
+  "Protestant Reformation": [
+    "1517",
+    "1520s",
+    "16th Century",
+    "Ends with ION",
+    "Events",
+    "Political Events",
+    "Protestant Reformation",
+    "Religious Events",
+    "Starts with PRO",
+    "Things German"
   ],
   "Protoceratops": [
     "Animal Species",
@@ -29861,6 +30257,16 @@
     "Thriller Films",
     "Thriller Stories"
   ],
+  "Rebecca Nurse": [
+    "17th Century",
+    "Ends with RSE",
+    "People",
+    "Real People",
+    "Salem Witch Trials",
+    "Starts with REB",
+    "Things American",
+    "Women"
+  ],
   "Rebel Moon": [
     "2020s",
     "2023",
@@ -30376,6 +30782,19 @@
     "Things British",
     "Tragedy Stories"
   ],
+  "Richard the Lionheart": [
+    "12th Century",
+    "Ends with ART",
+    "Men",
+    "Monarchs",
+    "National Leaders",
+    "People",
+    "Real People",
+    "Royalty",
+    "Starts with RIC",
+    "The Crusades",
+    "Things British"
+  ],
   "Richmond": [
     "Cities",
     "Cities in North America",
@@ -30518,6 +30937,7 @@
     "Real People",
     "Religious Figures",
     "Starts with ROB",
+    "The Crusades",
     "Things Swiss"
   ],
   "Robin": [
@@ -30579,6 +30999,7 @@
     "Movies featuring Kevin Costner",
     "Movies featuring Morgan Freeman",
     "Starts with ROB",
+    "The Crusades",
     "Things American"
   ],
   "Robinson Crusoe": [
@@ -30635,6 +31056,8 @@
     "Companies",
     "Ends with LER",
     "Mentioned in We Didn't Start the Fire",
+    "People",
+    "Real People",
     "Starts with ROC",
     "Things American"
   ],
@@ -30706,6 +31129,7 @@
     "Real People",
     "Religious Figures",
     "Starts with ROD",
+    "The Crusades",
     "Things Spanish"
   ],
   "Rogan Josh": [
@@ -31059,6 +31483,16 @@
     "Ends with RUM",
     "Starts with RUM",
     "Things Caribbean"
+  ],
+  "Runnymede": [
+    "13th Century",
+    "Ends with EDE",
+    "Historical Sites",
+    "Locations in Europe",
+    "Magna Carta",
+    "Place Names",
+    "Starts with RUN",
+    "Things British"
   ],
   "Rush": [
     "1970s",
@@ -31414,6 +31848,7 @@
     "Royalty",
     "Starts with SAL",
     "Sultans",
+    "The Crusades",
     "Things Egyptian"
   ],
   "Salem": [
@@ -31426,8 +31861,18 @@
     "Historical Stories",
     "Locations in North America",
     "Place Names",
+    "Salem Witch Trials",
     "Starts with SAL",
     "State Capitals",
+    "Things American"
+  ],
+  "Salem Witch Trials": [
+    "1692",
+    "17th Century",
+    "Ends with ALS",
+    "Events",
+    "Salem Witch Trials",
+    "Starts with SAL",
     "Things American"
   ],
   "Salem's Lot": [
@@ -31550,6 +31995,18 @@
     "Place Names",
     "Starts with SAM",
     "Things Samoan"
+  ],
+  "Samuel Adams": [
+    "1770s",
+    "18th Century",
+    "Boston Tea Party",
+    "Ends with AMS",
+    "Men",
+    "People",
+    "Real People",
+    "Starts with SAM",
+    "The American Revolution",
+    "Things American"
   ],
   "Samuel Johnson": [
     "1700s",
@@ -34266,6 +34723,17 @@
     "US Navy",
     "Warships"
   ],
+  "Stephen Langton": [
+    "13th Century",
+    "Ends with TON",
+    "Magna Carta",
+    "Men",
+    "People",
+    "Real People",
+    "Religious Figures",
+    "Starts with STE",
+    "Things British"
+  ],
   "Stern": [
     "Ends with ERN",
     "Nautical Terms",
@@ -35365,6 +35833,7 @@
     "Warner Bros. Characters"
   ],
   "Tea": [
+    "Boston Tea Party",
     "Drinks",
     "Ends with TEA",
     "Song Dynasty",
@@ -35402,6 +35871,7 @@
     "20th Century",
     "Cold War",
     "Ends with ALL",
+    "Fall of the Berlin Wall",
     "Famous Quotes",
     "Political Speeches",
     "Presidential Speeches",
@@ -36360,6 +36830,27 @@
     "Things Russian",
     "Wars"
   ],
+  "The Crucible": [
+    "1950s",
+    "20th Century",
+    "Drama Stories",
+    "Ends with BLE",
+    "Plays",
+    "Salem Witch Trials",
+    "Starts with THE",
+    "Things American"
+  ],
+  "The Crusades": [
+    "11th Century",
+    "12th Century",
+    "13th Century",
+    "Ends with DES",
+    "Events",
+    "Military Conflicts",
+    "Starts with THE",
+    "The Crusades",
+    "Things European"
+  ],
   "The Crying Game": [
     "1990s",
     "1992",
@@ -36378,9 +36869,11 @@
   ],
   "The Cuban Missile Crisis": [
     "1960s",
+    "1962",
     "20th Century",
     "Cold War",
     "Crises",
+    "Cuban Missile Crisis",
     "Ends with SIS",
     "Events",
     "Political Events",
@@ -36725,12 +37218,27 @@
     "Starts with THE",
     "Things French"
   ],
+  "The First Barons' War": [
+    "1210s",
+    "13th Century",
+    "Civil Wars",
+    "Ends with WAR",
+    "Events",
+    "Magna Carta",
+    "Military Conflicts",
+    "Starts with THE",
+    "Things British",
+    "Wars"
+  ],
   "The First Crusade": [
+    "1090s",
     "11th Century",
     "Ends with ADE",
     "Events",
-    "Religious Wars",
-    "Starts with THE"
+    "Military Conflicts",
+    "Starts with THE",
+    "The Crusades",
+    "Things European"
   ],
   "The First Fifteen Lives of Harry August": [
     "2010s",
@@ -38793,6 +39301,17 @@
     "Starts with THE",
     "Things British"
   ],
+  "The Renaissance": [
+    "14th Century",
+    "15th Century",
+    "16th Century",
+    "Ends with NCE",
+    "Events",
+    "Starts with THE",
+    "The Renaissance",
+    "Things European",
+    "Things Italian"
+  ],
   "The Rescuers": [
     "1970s",
     "1977",
@@ -40045,6 +40564,19 @@
     "Things Roman",
     "Wars"
   ],
+  "Thirteen Days": [
+    "2000",
+    "2000s",
+    "20th Century",
+    "21st Century",
+    "Cuban Missile Crisis",
+    "Drama Stories",
+    "Ends with AYS",
+    "Movies",
+    "Political Events",
+    "Starts with THI",
+    "Things American"
+  ],
   "Thistle": [
     "Cenozoic Era",
     "Currently Living Plants",
@@ -40493,6 +41025,16 @@
     "Prehistoric Life",
     "Real Animals",
     "Starts with TIT"
+  ],
+  "Tituba": [
+    "17th Century",
+    "Ends with UBA",
+    "People",
+    "Real People",
+    "Salem Witch Trials",
+    "Starts with TIT",
+    "Things American",
+    "Women"
   ],
   "To Kill a Mockingbird": [
     "1960s",
@@ -41672,6 +42214,18 @@
     "Planets",
     "Starts with URA"
   ],
+  "Urban II": [
+    "11th Century",
+    "Ends with  II",
+    "Men",
+    "People",
+    "Popes",
+    "Real People",
+    "Religious Figures",
+    "Starts with URB",
+    "The Crusades",
+    "Things French"
+  ],
   "Ursa Major": [
     "Constellations",
     "Ends with JOR",
@@ -42589,7 +43143,8 @@
     "Mentioned in We Didn't Start the Fire",
     "Political Events",
     "Starts with WAT",
-    "Things American"
+    "Things American",
+    "Watergate"
   ],
   "Waterloo": [
     "1810s",
@@ -43113,6 +43668,17 @@
     "Songs by U2",
     "Starts with WIT",
     "U2"
+  ],
+  "Wittenberg": [
+    "16th Century",
+    "Cities",
+    "Cities in Europe",
+    "Ends with ERG",
+    "Locations in Europe",
+    "Place Names",
+    "Protestant Reformation",
+    "Starts with WIT",
+    "Things German"
   ],
   "Wizard": [
     "Ends with ARD",

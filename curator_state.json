@@ -1,535 +1,1283 @@
 {
   "curatedCount": 1,
   "attempts": 0,
-  "phase": "MAIN_MENU",
+  "phase": "WORD_SELECTION",
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "97430fd534ba3db3647ddb7fd8ce88ec062db9adb53b6c25d6640461e53a6b8d",
+    "hash": "4a34e213243a5b7bf74e176c0a0e843e6a771f755cba186c55b85b6deeba8fd9",
     "rows": [
-      "1980s",
-      "5th Century BC",
-      "Things Bohemian",
-      "Things Spanish"
+      "2006",
+      "2008",
+      "Movies featuring Tom Hanks",
+      "Sequels"
     ],
     "cols": [
-      "Ends with WAR",
-      "Locations in Europe",
-      "Religious Figures",
-      "Royalty"
+      "Action Stories",
+      "Best Picture Winners",
+      "Christmas Stories",
+      "Pixar"
     ],
     "timestamp": null,
-    "qualityScore": 9.83,
-    "maxSimilarityToPast": 0.387,
-    "finalScore": 6.734
+    "qualityScore": 19.11,
+    "maxSimilarityToPast": 0.3888,
+    "finalScore": 15.9996
   },
   "viableGrid": [
     [
       [
-        "The Iran-Iraq War"
+        "300",
+        "Deja Vu"
       ],
       [
-        "Chernobyl"
+        "The Departed"
       ],
       [
-        "L. Ron Hubbard",
-        "Paul",
-        "Sun Myung Moon",
-        "Teresa"
+        "The Holiday"
       ],
       [
-        "Prince"
+        "Cars"
       ]
     ],
     [
       [
-        "Art of War"
+        "Vantage Point"
       ],
       [
-        "Thermopylae"
+        "Slumdog Millionaire"
       ],
       [
-        "Confucius"
+        "Four Christmases"
       ],
       [
-        "Xerxes"
+        "WALL-E"
       ]
     ],
     [
       [
-        "The Thirty Years War"
+        "Saving Private Ryan"
       ],
       [
-        "Bohemia",
-        "Prague"
+        "Forrest Gump"
       ],
       [
-        "Jan Hus"
+        "The Polar Express"
       ],
       [
-        "Charles IV",
-        "John of Bohemia"
+        "Toy Story"
       ]
     ],
     [
       [
-        "The Spanish Civil War",
-        "The Spanish-American War"
+        "A Good Day to Die Hard",
+        "Aliens",
+        "Avatar: The Way of Water",
+        "Avengers: Age of Ultron",
+        "Avengers: Endgame",
+        "Avengers: Infinity War",
+        "Die Hard 2",
+        "Die Hard with a Vengeance",
+        "Kill Bill: Volume 2",
+        "Live Free or Die Hard",
+        "Pirates of the Caribbean: At World's End",
+        "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "Pirates of the Caribbean: On Stranger Tides",
+        "Red 2",
+        "Red Dead Redemption",
+        "Sin City: A Dame to Kill For",
+        "Terminator 2: Judgment Day",
+        "The Lord of the Rings: The Two Towers",
+        "The Matrix Reloaded",
+        "The Matrix Resurrections",
+        "The Matrix Revolutions",
+        "X-Men: Days of Future Past"
       ],
       [
-        "Canary Islands",
-        "El Hierro",
-        "Formentera",
-        "Fuerteventura",
-        "Gran Canaria",
-        "Ibiza",
-        "La Gomera",
-        "La Palma",
-        "Lanzarote",
-        "Majorca",
-        "Menorca",
-        "Santa Maria",
-        "Spain",
-        "Tenerife"
+        "The Godfather Part II"
       ],
       [
-        "Alfonso de Borja",
-        "Pedro de Luna",
-        "Rodrigo Borgia"
+        "National Lampoon's Christmas Vacation",
+        "The Santa Clause 2"
       ],
       [
-        "Catherine of Aragon"
+        "Monsters University",
+        "The Incredibles 2"
       ]
     ]
   ],
   "chosen": [
     [
-      "The Iran-Iraq War",
-      "Chernobyl",
-      "Teresa",
-      "Prince"
+      "Deja Vu",
+      null,
+      null,
+      null
     ],
     [
-      "Art of War",
-      "Thermopylae",
-      "Confucius",
-      "Xerxes"
+      null,
+      null,
+      null,
+      null
     ],
     [
-      "The Thirty Years War",
-      "Prague",
-      "Jan Hus",
-      "Charles IV"
+      null,
+      null,
+      null,
+      null
     ],
     [
-      "The Spanish Civil War",
-      "Spain",
-      "Rodrigo Borgia",
-      "Catherine of Aragon"
+      null,
+      null,
+      null,
+      null
     ]
   ],
   "usedWords": [
-    "The Iran-Iraq War",
-    "Chernobyl",
-    "Teresa",
-    "Prince",
-    "Art of War",
-    "Thermopylae",
-    "Confucius",
-    "Xerxes",
-    "The Thirty Years War",
-    "Prague",
-    "Jan Hus",
-    "Charles IV",
-    "The Spanish Civil War",
-    "Spain",
-    "Rodrigo Borgia",
-    "Catherine of Aragon"
+    "Deja Vu"
   ],
-  "currentRow": 4,
-  "currentCol": 0,
+  "currentRow": 0,
+  "currentCol": 1,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "4aa9e8c85e69f6f381d6737ca0bb8012ce219449d395a89bf3573e05f3309c59",
+      "hash": "dc784dfe32b8769175f16afbafcaae5b8f61672dd4eda4bad8b0f930b9d5e08a",
       "rows": [
-        "2001",
-        "2007",
-        "Ends with NCE",
-        "Family Sagas"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "Movies featuring Emma Watson",
-        "Romance Stories",
-        "Third in Internal Chronology"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.339999999999996,
-      "maxSimilarityToPast": 0.2999,
-      "finalScore": 17.940799999999996
-    },
-    {
-      "hash": "97430fd534ba3db3647ddb7fd8ce88ec062db9adb53b6c25d6640461e53a6b8d",
-      "rows": [
-        "1980s",
-        "5th Century BC",
-        "Things Bohemian",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Ends with WAR",
-        "Locations in Europe",
-        "Religious Figures",
-        "Royalty"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.83,
-      "maxSimilarityToPast": 0.387,
-      "finalScore": 6.734
-    },
-    {
-      "hash": "84fef2a4afddf3bb3c7b20782d4cd40884f1a2f8af93ccf770e75960f4f3d675",
-      "rows": [
-        "2001",
-        "2003",
-        "Sci-fi Stories",
-        "Sequels"
-      ],
-      "cols": [
-        "Action Stories",
-        "Disney",
-        "Movies featuring Alan Rickman",
-        "Pixar"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.02,
-      "maxSimilarityToPast": 0.394,
-      "finalScore": 11.867999999999999
-    },
-    {
-      "hash": "9f56f1d9b9e7c69fc867da951c07bb8cce6cfd433a69168e7274ac491afb1cf9",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Companies",
-        "Things Russian"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Fighter Aircraft",
-        "Mountains",
-        "National Leaders"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.45,
-      "maxSimilarityToPast": 0.381,
-      "finalScore": 5.401999999999999
-    },
-    {
-      "hash": "309ee15123ecf0e9b64855fb91247abba51ccde54dd9b6e12e430c878e1af39e",
-      "rows": [
-        "1980s",
-        "Cities in North America",
-        "Currently Living Animals",
-        "Things German"
-      ],
-      "cols": [
-        "Cars",
-        "Musicians",
-        "Starts with BAT",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 3.85,
-      "maxSimilarityToPast": 0.3873,
-      "finalScore": 0.7516000000000003
-    },
-    {
-      "hash": "2edd2e374b42e19ff2336fc124519c41fa436a67349bb44c19b35a0cca0a99d3",
-      "rows": [
-        "1980s",
-        "3D Animated Films",
-        "Fourth in Internal Chronology",
-        "Third in Internal Chronology"
-      ],
-      "cols": [
-        "Blockbusters",
-        "Comedy Stories",
-        "Ends with ARS",
-        "Movies featuring Sigourney Weaver"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.14,
-      "maxSimilarityToPast": 0.3606,
-      "finalScore": 13.2552
-    },
-    {
-      "hash": "1fca35d5da674afed277ae0c475e61af16ae9f2241d785d8389be4947ff184df",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Cities in USA",
-        "Ends with MAN"
-      ],
-      "cols": [
-        "Comedy Stories",
-        "Musical Films",
-        "US Presidents",
-        "X-Men Characters"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.1000000000000005,
-      "maxSimilarityToPast": 0.3827,
-      "finalScore": 3.0384000000000007
-    },
-    {
-      "hash": "459f425fe87a532e27b593016fab8ed6276514529b527a6813c060ffbc5c591d",
-      "rows": [
-        "2001",
-        "2019",
-        "Fifth in Release Order",
-        "Fourth in Release Order"
-      ],
-      "cols": [
-        "Comedy Stories",
-        "Disney",
-        "Movies featuring Emma Watson",
-        "Thriller Films"
-      ],
-      "timestamp": null,
-      "qualityScore": 21.93,
-      "maxSimilarityToPast": 0.6149,
-      "finalScore": 17.0108
-    },
-    {
-      "hash": "777db5602adcf215d048d1c71c39ec5f24e435fac6d9fc43604f5a8afdec106a",
-      "rows": [
-        "2001",
         "2011",
+        "2019",
         "Fifth in Internal Chronology",
         "Third in Internal Chronology"
       ],
       "cols": [
         "Comedy Stories",
         "Disney",
-        "Movies featuring Daniel Radcliffe",
-        "Thriller Stories"
+        "Movies featuring Emma Watson",
+        "Thriller Films"
       ],
       "timestamp": null,
-      "qualityScore": 20.1,
-      "maxSimilarityToPast": 0.5861,
-      "finalScore": 15.411200000000001
+      "qualityScore": 20.720000000000002,
+      "maxSimilarityToPast": 0.5462,
+      "finalScore": 16.3504
     },
     {
-      "hash": "61813f4726a2575adaab633eb82290329d5de712d9846c6aa17a4fbb34eaac8b",
+      "hash": "4a34e213243a5b7bf74e176c0a0e843e6a771f755cba186c55b85b6deeba8fd9",
       "rows": [
-        "1980s",
-        "1990s",
-        "Black and White Films",
-        "Sci-fi Stories"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Best Picture Winners",
-        "Ends with ERS",
-        "Movies With the Seven Samurai Plot"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.05,
-      "maxSimilarityToPast": 0.3911,
-      "finalScore": 4.921200000000001
-    },
-    {
-      "hash": "88ebbf1af0cedccbb21f808656bc3600e922c6be83a9eea868e65feda4f81dc7",
-      "rows": [
-        "1980s",
-        "Cities in North America",
-        "Paleogene Period",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Car Brands",
-        "Exploration Ships",
-        "Starts with BAT",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.05,
-      "maxSimilarityToPast": 0.3401,
-      "finalScore": 3.3291999999999997
-    },
-    {
-      "hash": "5045866a7c844c9f713350ea287984f878216f96b418ccea04485c224c0cc107",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Companies",
-        "Locations in North America"
-      ],
-      "cols": [
-        "Comedy Stories",
-        "Ends with ING",
-        "US Presidents",
-        "Volcanoes"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.77,
-      "maxSimilarityToPast": 0.3324,
-      "finalScore": 3.1108
-    },
-    {
-      "hash": "bc7b1d7659b14ca640118883802bffa0a3d010ce21288e5bbbf74cbb8ab726fa",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Companies",
-        "Locations in Asia"
-      ],
-      "cols": [
-        "Ends with TES",
-        "Mountains",
-        "Theropods",
-        "Things Russian"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.51,
-      "maxSimilarityToPast": 0.4225,
-      "finalScore": 2.13
-    },
-    {
-      "hash": "531cfe2bfe45e6896ea51d1597ad43f1e05ef94d84474ee95f4f4281856b6cb1",
-      "rows": [
-        "1980s",
-        "Cities in North America",
-        "Ends with ESS",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Comedy Stories",
-        "Military Conflicts",
-        "Saints",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.619999999999999,
-      "maxSimilarityToPast": 0.3417,
-      "finalScore": 1.8863999999999992
-    },
-    {
-      "hash": "9733aa0093f74ee8219a45624080a81e16531978210f45c04fa9f3a6038988c0",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Companies",
-        "Starts with CHI"
-      ],
-      "cols": [
-        "Disney",
-        "Military Aircraft",
-        "Saurischians",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.07,
-      "maxSimilarityToPast": 0.4857,
-      "finalScore": 1.1844000000000001
-    },
-    {
-      "hash": "e363371c297e0f8dc6bc18457c51ac0637f480068704914fc8761a3f2a0bd80e",
-      "rows": [
-        "1980s",
-        "Age of Sail",
-        "Companies",
-        "Ends with DON"
-      ],
-      "cols": [
-        "Eocene Epoch",
-        "Locations in Europe",
-        "National Leaders",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 3.89,
-      "maxSimilarityToPast": 0.3602,
-      "finalScore": 1.0084
-    },
-    {
-      "hash": "fe846268684e92509b86dcfdb93965d2a172c46f6ecab828da805bbba99522e1",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Best Picture Winners",
-        "Thriller Stories"
-      ],
-      "cols": [
-        "Comedy Stories",
-        "Movies directed by Steven Spielberg",
-        "Movies featuring Jack Nicholson",
+        "2006",
+        "2008",
+        "Movies featuring Tom Hanks",
         "Sequels"
       ],
-      "timestamp": null,
-      "qualityScore": 10.79,
-      "maxSimilarityToPast": 0.4242,
-      "finalScore": 7.396399999999999
-    },
-    {
-      "hash": "4ba2d07c889b3932bc7ff64731c98246542400d0bbb35bb424d47c670e0274e0",
-      "rows": [
-        "2001",
-        "2016",
+      "cols": [
         "Action Stories",
-        "Sequels"
-      ],
-      "cols": [
         "Best Picture Winners",
-        "Disney",
-        "Starts with HAR",
-        "Thriller Films"
+        "Christmas Stories",
+        "Pixar"
       ],
       "timestamp": null,
-      "qualityScore": 10.35,
-      "maxSimilarityToPast": 0.4393,
-      "finalScore": 6.8355999999999995
+      "qualityScore": 19.11,
+      "maxSimilarityToPast": 0.3888,
+      "finalScore": 15.9996
     },
     {
-      "hash": "ae623076ef4155619ee940992a2e2016b3f9f31e64eec8c6d9114e36cd21fa03",
+      "hash": "3ffb4cb5dbb1d0f8a6606619240225404936ff6c46857de0f958ba400982e7ab",
       "rows": [
-        "1980s",
-        "1990s",
-        "Comedy Stories",
-        "Thriller Films"
+        "2011",
+        "2014",
+        "Ends with NCE",
+        "Movies directed by Steven Spielberg"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Movies featuring Kurt Russell",
-        "Sequels",
-        "Starts with DON"
+        "Movies featuring Ralph Fiennes",
+        "Music",
+        "Sci-fi Stories",
+        "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 6.779999999999999,
-      "maxSimilarityToPast": 0.508,
-      "finalScore": 2.7159999999999993
+      "qualityScore": 16.13,
+      "maxSimilarityToPast": 0.2964,
+      "finalScore": 13.758799999999999
     },
     {
-      "hash": "de141c29238ee77003605b1d75987b61c515e5f6bf275279964c44e4fbd5597d",
+      "hash": "f5a48cfbb537a05e890e8d15f1f320719d8b9756f3452866b5bf7985680379ac",
       "rows": [
-        "1980s",
-        "1990s",
-        "Cities in North America",
+        "2006",
+        "2007",
+        "Movies featuring Sigourney Weaver",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Crime Stories",
+        "Pixar",
+        "Romance Stories",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 19.59,
+      "maxSimilarityToPast": 0.5207,
+      "finalScore": 15.424399999999999
+    },
+    {
+      "hash": "ddb1eb705533481e63cf01778d0648fa5e5c91447918bd20dcb9d69de87f76ad",
+      "rows": [
+        "1996",
+        "1999",
+        "Classic Films",
         "Ends with HER"
       ],
       "cols": [
+        "Action Stories",
         "Best Picture Winners",
-        "Marvel Characters",
-        "Musicians",
+        "Movie Lines",
+        "Music"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.79,
+      "maxSimilarityToPast": 0.2868,
+      "finalScore": 13.4956
+    },
+    {
+      "hash": "4c40c8a4f383fca5778b2de667e207eef6995bc4096b62752e80cff1b4a91f53",
+      "rows": [
+        "2006",
+        "2021",
+        "Ends with LES",
+        "Movies featuring Hugh Jackman"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Comedy Stories",
+        "Music",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.97,
+      "maxSimilarityToPast": 0.402,
+      "finalScore": 11.754000000000001
+    },
+    {
+      "hash": "706dd8ccc70c6623149f7fd89ce58b94dae0c688fa4174200e0fc5bcb0a9019b",
+      "rows": [
+        "1983",
+        "2012",
+        "Ends with TER",
+        "Western Stories"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Crime Stories",
+        "Music",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.14,
+      "maxSimilarityToPast": 0.4249,
+      "finalScore": 10.7408
+    },
+    {
+      "hash": "1019312332c6eef8ca77d6a5efdba1565564ff66674d8d088b261cedcd5ef166",
+      "rows": [
+        "2011",
+        "Ends with ITY",
+        "Fifth in Release Order",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Disney",
+        "Movies featuring Alan Rickman",
+        "Sci-fi Stories",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.63,
+      "maxSimilarityToPast": 0.3967,
+      "finalScore": 12.4564
+    },
+    {
+      "hash": "556f38fae01400dbd94f77714f586de5d9fb82ce22be2625c1b300d5b5ad7e0d",
+      "rows": [
+        "2006",
+        "2014",
+        "Fourth in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Disney",
+        "Ends with ARS",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.64,
+      "maxSimilarityToPast": 0.3963,
+      "finalScore": 12.4696
+    },
+    {
+      "hash": "f503d080bdfa1701744192c650d624042ed7a63f9448592201b4207953ae502f",
+      "rows": [
+        "2006",
+        "2012",
+        "Blockbusters",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Christmas Stories",
+        "Pixar",
+        "Sci-fi Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.790000000000003,
+      "maxSimilarityToPast": 0.4369,
+      "finalScore": 15.294800000000002
+    },
+    {
+      "hash": "3687357b2669b0d83eb616e2592aca803ed736133bdc66ee2f77221bd4f82814",
+      "rows": [
+        "2011",
+        "Movies featuring Kate Winslet",
+        "Music",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Movies featuring Alan Rickman",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.2,
+      "maxSimilarityToPast": 0.448,
+      "finalScore": 14.616
+    },
+    {
+      "hash": "2f5df0144cde5c023260346ea9a7431390ad5ffb2619085f96da9af9e28a53a9",
+      "rows": [
+        "2006",
+        "2011",
+        "Music",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Movies featuring Johnny Depp",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 17.72,
+      "maxSimilarityToPast": 0.5618,
+      "finalScore": 13.2256
+    },
+    {
+      "hash": "373c10da5251868b90457370fcc756afd873f096db98369e576b044d2bf70fa5",
+      "rows": [
+        "1996",
+        "1997",
+        "Classic Films",
+        "Ends with HER"
+      ],
+      "cols": [
+        "Action Stories",
+        "Best Picture Winners",
+        "Movie Lines",
+        "Music"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.569999999999997,
+      "maxSimilarityToPast": 0.2935,
+      "finalScore": 13.221999999999998
+    },
+    {
+      "hash": "14eb0d77d0a9cced6a36fe43da59acf063d5b79103b081610984f93841ba1d15",
+      "rows": [
+        "2011",
+        "2014",
+        "Movies featuring Joaquin Phoenix",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Disney",
+        "Sci-fi Stories",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.45,
+      "maxSimilarityToPast": 0.4579,
+      "finalScore": 12.7868
+    },
+    {
+      "hash": "bf3a2bfaae4972e53814a482f6ba93df208101e69345d49c171e545f7ec38f54",
+      "rows": [
+        "2006",
+        "2009",
+        "Movies featuring Hugh Jackman",
+        "Stories about Families"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Music",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.84,
+      "maxSimilarityToPast": 0.5169,
+      "finalScore": 12.704799999999999
+    },
+    {
+      "hash": "1651fe34c2fb2352f873c2e59aa8f892b68eddd877084747b766a6cfeb9ab413",
+      "rows": [
+        "2006",
+        "2012",
+        "Musical Films",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Pixar",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.81,
+      "maxSimilarityToPast": 0.5585,
+      "finalScore": 11.342
+    },
+    {
+      "hash": "21afdf5a019ed07f55a56e894fb146c416ac0cee6996e8fa2190477a2bd988d8",
+      "rows": [
+        "2011",
+        "2018",
+        "Stories about Families",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Disney",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.41,
+      "maxSimilarityToPast": 0.5625,
+      "finalScore": 10.91
+    },
+    {
+      "hash": "4caeabe266324e1a936a4a1f2270e6c81819bf56e5e2b63665d68fb6c8f7ef88",
+      "rows": [
+        "1983",
+        "1986",
+        "Ends with NCE",
+        "Western Stories"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Crime Stories",
+        "Music",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.14,
+      "maxSimilarityToPast": 0.4249,
+      "finalScore": 10.7408
+    },
+    {
+      "hash": "06504139aeea306301f9a4e9b5d8363518894cb8ff92f463cb512e862a2d8a10",
+      "rows": [
+        "2006",
+        "2008",
+        "Romance Stories",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Comedy Stories",
+        "Disney",
+        "Studio Ghibli"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.83,
+      "maxSimilarityToPast": 0.4443,
+      "finalScore": 10.2756
+    },
+    {
+      "hash": "08469ca80a0ac2f96a483fc3e025b9d4c99aa18bc75c4f3210bbc165ee65e462",
+      "rows": [
+        "2006",
+        "2014",
+        "Sci-fi Stories",
+        "Stories about Families"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Anime",
+        "Best Picture Winners",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.99,
+      "maxSimilarityToPast": 0.56,
+      "finalScore": 9.51
+    },
+    {
+      "hash": "8a4a2f90f885da788582a9381da8f2f15c554a5b08cbdc581ace47606187605b",
+      "rows": [
+        "1983",
+        "1995",
+        "Ends with NCE",
+        "Western Stories"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Crime Stories",
+        "Music",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.700000000000001,
+      "maxSimilarityToPast": 0.5298,
+      "finalScore": 9.4616
+    },
+    {
+      "hash": "2b599b72381eff6a440262d118d9a378b824dbd444e735d5dfe981f1786631e4",
+      "rows": [
+        "2006",
+        "2012",
+        "Cannibalism",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Music",
+        "Sci-fi Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.000000000000002,
+      "maxSimilarityToPast": 0.6012,
+      "finalScore": 9.190400000000002
+    },
+    {
+      "hash": "2fe652a633ee753906af1b38d8199becf27a87272ddd94630efeda320f7877c9",
+      "rows": [
+        "2006",
+        "2023",
+        "Sequels",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Music",
+        "Pixar",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.860000000000001,
+      "maxSimilarityToPast": 0.6004,
+      "finalScore": 9.0568
+    },
+    {
+      "hash": "7d1fe70a48cf8c21876058103567c231909f26f5d601d34e6b71c103bd2e1065",
+      "rows": [
+        "2011",
+        "2019",
+        "Fifth in Release Order",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Disney",
+        "Movies featuring Emma Watson",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.720000000000002,
+      "maxSimilarityToPast": 0.5462,
+      "finalScore": 16.3504
+    },
+    {
+      "hash": "85111d6666d07393227c06d790aa8e845ed894aee7d84ed50b459a5cca1d5164",
+      "rows": [
+        "2011",
+        "2019",
+        "Fifth in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Disney",
+        "Movies featuring Emma Watson",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.46,
+      "maxSimilarityToPast": 0.5161,
+      "finalScore": 16.331200000000003
+    },
+    {
+      "hash": "db2867c5e8726c24091f41563a7eae6e20001d03e0a54f5f3df88b79cc56e562",
+      "rows": [
+        "2011",
+        "2019",
+        "Fifth in Release Order",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Disney",
+        "Movies featuring Emma Watson",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.46,
+      "maxSimilarityToPast": 0.5161,
+      "finalScore": 16.331200000000003
+    },
+    {
+      "hash": "9ff59cfa14362a346d8d8fc71b28dda72a43ca6498ea945ee68fbe542ddeb6dc",
+      "rows": [
+        "2006",
+        "2012",
+        "Movies featuring Tom Hanks",
+        "Sequels"
+      ],
+      "cols": [
+        "Action Stories",
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Pixar"
+      ],
+      "timestamp": null,
+      "qualityScore": 19.11,
+      "maxSimilarityToPast": 0.3888,
+      "finalScore": 15.9996
+    },
+    {
+      "hash": "8643e72c50017d503d6c87406c7e3cfc5fb8379ecc8dbfd0f52af3caa6bfa663",
+      "rows": [
+        "2006",
+        "2012",
+        "Blockbusters",
+        "Music"
+      ],
+      "cols": [
+        "Christmas Stories",
+        "Pixar",
+        "Sci-fi Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 17.46,
+      "maxSimilarityToPast": 0.3676,
+      "finalScore": 14.519200000000001
+    },
+    {
+      "hash": "bc7ac422e6e3c99c840a5a2ad05411fa8fa8f0f9a462f50ac0bd84a1b367b7c6",
+      "rows": [
+        "2006",
+        "2007",
+        "Movies featuring Sigourney Weaver",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Crime Stories",
+        "Pixar",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 17.07,
+      "maxSimilarityToPast": 0.5142,
+      "finalScore": 12.9564
+    },
+    {
+      "hash": "08f941eaa2c3423bf907b05e97f48e0a3bb0fdda7a29bcffbdf0abc45fa54575",
+      "rows": [
+        "2006",
+        "2012",
+        "Movies featuring Sigourney Weaver",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Crime Stories",
+        "Pixar",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.950000000000003,
+      "maxSimilarityToPast": 0.5402,
+      "finalScore": 12.628400000000003
+    },
+    {
+      "hash": "72855e1af3d5d2296c36d0ccfd1a4a177a2102450f9aa55c600c4482213fde55",
+      "rows": [
+        "2006",
+        "2007",
+        "Movies featuring Hugh Jackman",
+        "Stories about Families"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Comedy Stories",
+        "Music",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.930000000000001,
+      "maxSimilarityToPast": 0.4329,
+      "finalScore": 12.466800000000001
+    },
+    {
+      "hash": "b70bb9aec832c515e2de4e439ce8736a75be097cc30cddd3bde53893a2fe83d9",
+      "rows": [
+        "2006",
+        "2012",
+        "Best Picture Winners",
+        "Movies featuring Alan Rickman"
+      ],
+      "cols": [
+        "Music",
+        "Romance Stories",
+        "Third in Internal Chronology",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.92,
+      "maxSimilarityToPast": 0.443,
+      "finalScore": 12.376
+    },
+    {
+      "hash": "485528f16d8062d84fe7dafc37a59f58477217745be7e2ee5b6799b59b6d32e9",
+      "rows": [
+        "2006",
+        "2014",
+        "Fourth in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Disney",
+        "Ends with ARS",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.38,
+      "maxSimilarityToPast": 0.382,
+      "finalScore": 12.324000000000002
+    },
+    {
+      "hash": "90f0f3dbd5ea8b0cd7b48478c525d2ee19b4e2a0aa6781b1a8c32dd38696a4aa",
+      "rows": [
+        "2006",
+        "2009",
+        "Disney",
+        "Movies featuring Sigourney Weaver"
+      ],
+      "cols": [
+        "Action Stories",
+        "Pixar",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.169999999999998,
+      "maxSimilarityToPast": 0.4835,
+      "finalScore": 12.301999999999998
+    },
+    {
+      "hash": "edc2fad4ba585ee9bd298f62075805a7605da57dbcae2eb5c2b8ed5d6f94be75",
+      "rows": [
+        "2006",
+        "2012",
+        "Music",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Christmas Stories",
+        "Crime Stories",
+        "Pixar",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.71,
+      "maxSimilarityToPast": 0.4304,
+      "finalScore": 12.2668
+    },
+    {
+      "hash": "3237be47b9a1888677633b1b99ed9e975183f47f7014642c820cf45beed5ee4b",
+      "rows": [
+        "2006",
+        "2012",
+        "Sequels",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Christmas Stories",
+        "Crime Stories",
+        "Music",
+        "Pixar"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.71,
+      "maxSimilarityToPast": 0.4304,
+      "finalScore": 12.2668
+    },
+    {
+      "hash": "37386aca59e44fb08531243c46d247ff87d80c0c2fbe590bcee15f58a86a7b35",
+      "rows": [
+        "2006",
+        "2012",
+        "Disney",
+        "Movies featuring Sigourney Weaver"
+      ],
+      "cols": [
+        "Action Stories",
+        "Pixar",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.54,
+      "maxSimilarityToPast": 0.4105,
+      "finalScore": 12.256
+    },
+    {
+      "hash": "583b0578035f4ffb7be3551b19edc817030be54a22c838afd2012b4a4de71b5a",
+      "rows": [
+        "2006",
+        "2007",
+        "Movies featuring Hugh Jackman",
+        "Stories about Families"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Music",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.33,
+      "maxSimilarityToPast": 0.5121,
+      "finalScore": 12.233199999999998
+    },
+    {
+      "hash": "38cc27c4f3ecafb25093fd8802ea5bb2a727986e57546c1139ec0da2c707bc45",
+      "rows": [
+        "2006",
+        "2012",
+        "Best Picture Winners",
+        "Movies featuring Alan Rickman"
+      ],
+      "cols": [
+        "Music",
+        "Romance Stories",
+        "Third in Internal Chronology",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.66,
+      "maxSimilarityToPast": 0.4438,
+      "finalScore": 12.1096
+    },
+    {
+      "hash": "bc0a8027982e5282308cdcb60827eae51f6e5708b7cbe5ac10abec23a7435a14",
+      "rows": [
+        "2006",
+        "2012",
+        "Music",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Pixar",
         "Romance Stories"
       ],
       "timestamp": null,
-      "qualityScore": 5.040000000000001,
-      "maxSimilarityToPast": 0.5326,
-      "finalScore": 0.7792000000000012
+      "qualityScore": 15.569999999999999,
+      "maxSimilarityToPast": 0.4338,
+      "finalScore": 12.099599999999999
+    },
+    {
+      "hash": "fc9dbe4c76cc268e3bf8fd8e7717e332e70643b44994f45aae81594a6f3a72b0",
+      "rows": [
+        "2006",
+        "2007",
+        "Movies featuring Sigourney Weaver",
+        "Music"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Crime Stories",
+        "Pixar",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.340000000000002,
+      "maxSimilarityToPast": 0.4164,
+      "finalScore": 12.0088
+    },
+    {
+      "hash": "7d70dad89a5780b894f6b81c037638cb522af44db0b02cbe861e2704059e10c3",
+      "rows": [
+        "2011",
+        "Ends with ITY",
+        "Fifth in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Disney",
+        "Movies featuring Alan Rickman",
+        "Sci-fi Stories",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.63,
+      "maxSimilarityToPast": 0.4592,
+      "finalScore": 11.9564
+    },
+    {
+      "hash": "d3f12502c1e64d1595963357624b5cca50ec6c1aa7813934fa8fee6bb09cb866",
+      "rows": [
+        "2006",
+        "2012",
+        "Movies featuring Sigourney Weaver",
+        "Music"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Crime Stories",
+        "Pixar",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.220000000000002,
+      "maxSimilarityToPast": 0.4204,
+      "finalScore": 11.856800000000003
+    },
+    {
+      "hash": "2ae39cbcfb9618b95900d043d6a617fddbf16c40504bccb44fc3198af7b5a86e",
+      "rows": [
+        "2006",
+        "2007",
+        "Disney",
+        "Movies featuring Sigourney Weaver"
+      ],
+      "cols": [
+        "Action Stories",
+        "Pixar",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.659999999999998,
+      "maxSimilarityToPast": 0.4847,
+      "finalScore": 11.782399999999999
+    },
+    {
+      "hash": "a6c68782d9c59ba85956fe36f35491c025fdfc89899f699782c1308cc5280d1b",
+      "rows": [
+        "2006",
+        "2007",
+        "Movies featuring Sigourney Weaver",
+        "Music"
+      ],
+      "cols": [
+        "Crime Stories",
+        "Pixar",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.74,
+      "maxSimilarityToPast": 0.5152,
+      "finalScore": 11.618400000000001
+    },
+    {
+      "hash": "2b93345b62d1aec1c00c581d87359323c5c18037d5430e0cc0633cfdd5888ff3",
+      "rows": [
+        "2006",
+        "2012",
+        "Music",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Pixar",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.44,
+      "maxSimilarityToPast": 0.4811,
+      "finalScore": 11.591199999999999
+    },
+    {
+      "hash": "d3060bc83e9151346bf29493b9843c5b19634731284b60bdc4862ae3299dc240",
+      "rows": [
+        "2006",
+        "2012",
+        "Sequels",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Music",
+        "Pixar"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.44,
+      "maxSimilarityToPast": 0.4811,
+      "finalScore": 11.591199999999999
+    },
+    {
+      "hash": "56c2f693965def5a729e37c0e11194bfb7509ee066f9839d66efdde68888dc6a",
+      "rows": [
+        "2006",
+        "2012",
+        "Movies featuring Sigourney Weaver",
+        "Music"
+      ],
+      "cols": [
+        "Crime Stories",
+        "Pixar",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.620000000000001,
+      "maxSimilarityToPast": 0.5186,
+      "finalScore": 11.471200000000001
+    },
+    {
+      "hash": "8dfe543af897318881901a8b32b1637e40d2263d133435a397593df6ad81ed6c",
+      "rows": [
+        "2006",
+        "2012",
+        "Disney",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Pixar",
+        "Romance Stories",
+        "Sci-fi Stories",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.97,
+      "maxSimilarityToPast": 0.568,
+      "finalScore": 11.426000000000002
+    },
+    {
+      "hash": "5bc49b9b1dba9aa238ffbb656f05fe1084fda209c23bcc1d9bcd0b4835876089",
+      "rows": [
+        "2006",
+        "2012",
+        "Sci-fi Stories",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Disney",
+        "Pixar",
+        "Romance Stories",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.969999999999999,
+      "maxSimilarityToPast": 0.568,
+      "finalScore": 11.425999999999998
+    },
+    {
+      "hash": "9e8e9625ca021a25ee37bbd580f31f3ffd7708eed6f9d01c742f6ed2bd7e2baf",
+      "rows": [
+        "2006",
+        "2012",
+        "Movies featuring Alan Rickman",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Christmas Stories",
+        "Music",
+        "Sci-fi Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.210000000000003,
+      "maxSimilarityToPast": 0.4815,
+      "finalScore": 11.358000000000002
+    },
+    {
+      "hash": "a7dc25100671da82d98270c2631cefc9e43a55b0fb2f75a7aae0cb100323d22a",
+      "rows": [
+        "2006",
+        "2012",
+        "Movies featuring Alan Rickman",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Music",
+        "Romance Stories",
+        "Sci-fi Stories",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.870000000000001,
+      "maxSimilarityToPast": 0.5642,
+      "finalScore": 11.3564
+    },
+    {
+      "hash": "6e18bb74e4a06c7c2c0c833377c22bed2b86cfa652aa773a40e78d75183c03a7",
+      "rows": [
+        "2006",
+        "2012",
+        "Sequels",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Musical Films",
+        "Pixar"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.809999999999999,
+      "maxSimilarityToPast": 0.5585,
+      "finalScore": 11.341999999999999
+    },
+    {
+      "hash": "6b4be384278e85e9232ddc74058903615dd7e8206b9ab52ec7f189d05b16243b",
+      "rows": [
+        "2006",
+        "2007",
+        "Ends with LES",
+        "Movies featuring Hugh Jackman"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Comedy Stories",
+        "Music",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.600000000000001,
+      "maxSimilarityToPast": 0.419,
+      "finalScore": 11.248000000000001
+    },
+    {
+      "hash": "d536c73e8f5b589c34ca688643e4311f7c48e23e933d049aa5228069123e4d5c",
+      "rows": [
+        "2006",
+        "2012",
+        "Sequels",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Pixar",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.57,
+      "maxSimilarityToPast": 0.5601,
+      "finalScore": 11.0892
+    },
+    {
+      "hash": "87ba4ba44e0214542d4dea251906b37186a30b90b957575d71f8cfe49a29fd85",
+      "rows": [
+        "2006",
+        "2012",
+        "Ends with NCE",
+        "Movies featuring Alan Rickman"
+      ],
+      "cols": [
+        "Music",
+        "Romance Stories",
+        "Sci-fi Stories",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.540000000000001,
+      "maxSimilarityToPast": 0.4392,
+      "finalScore": 11.0264
+    },
+    {
+      "hash": "653ebb45f2e3911f3a59b2f15f093d86c575b2dfa2f3797c81db9066969ecb9a",
+      "rows": [
+        "2006",
+        "2012",
+        "Sequels",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Christmas Stories",
+        "Music",
+        "Pixar",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.790000000000001,
+      "maxSimilarityToPast": 0.4811,
+      "finalScore": 10.9412
+    },
+    {
+      "hash": "fd2044cb1bdfdbbe277c9da1c423424ad43fe9474460b2f50a912d611eade143",
+      "rows": [
+        "2006",
+        "2012",
+        "Disney",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Music",
+        "Pixar",
+        "Sci-fi Stories",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.360000000000001,
+      "maxSimilarityToPast": 0.5569,
+      "finalScore": 10.904800000000002
+    },
+    {
+      "hash": "b861e151f46d10cc9e0fcbad7a4a9b93eff617feeeec586a186045b2ea798c0c",
+      "rows": [
+        "2006",
+        "2012",
+        "Best Picture Winners",
+        "Movies featuring Alan Rickman"
+      ],
+      "cols": [
+        "Music",
+        "Romance Stories",
+        "Sci-fi Stories",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.32,
+      "maxSimilarityToPast": 0.5572,
+      "finalScore": 10.862400000000001
+    },
+    {
+      "hash": "98195116d0ed2ee435c2da4d3b5881355f70ec8f3de2a575d3063d0b8d4c7c6c",
+      "rows": [
+        "1983",
+        "2012",
+        "Ends with NCE",
+        "Western Stories"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Crime Stories",
+        "Music",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.14,
+      "maxSimilarityToPast": 0.4249,
+      "finalScore": 10.7408
     }
   ],
-  "message": "Puzzle saved successfully!"
+  "message": "Word chosen: Deja Vu"
 }

@@ -1,4 +1,13 @@
 {
+  "1215": [
+    "Magna Carta"
+  ],
+  "1517": [
+    "Protestant Reformation"
+  ],
+  "1692": [
+    "Salem Witch Trials"
+  ],
   "1927": [
     "Metropolis"
   ],
@@ -89,16 +98,6 @@
     "101 Dalmatians",
     "West Side Story",
     "Yojimbo"
-  ],
-  "1962": [
-    "Lawrence of Arabia",
-    "Sanjuro",
-    "To Kill a Mockingbird"
-  ],
-  "1963": [
-    "Cleopatra",
-    "High and Low",
-    "The Sword in the Stone"
   ],
   "1966": [
     "The Good, the Bad and the Ugly"
@@ -722,9 +721,6 @@
   "Movies featuring Nigel Havers": [
     "Chariots of Fire"
   ],
-  "Holy Roman Emperors": [
-    "Charles IV"
-  ],
   "Movies featuring Catherine Zeta-Jones": [
     "Chicago"
   ],
@@ -910,6 +906,9 @@
   ],
   "Movies featuring Paula Patton": [
     "Deja Vu"
+  ],
+  "Latin Phrases": [
+    "Deus Vult"
   ],
   "Movies directed by Renny Harlin": [
     "Die Hard 2"
@@ -1435,9 +1434,6 @@
   ],
   "Movies directed by Chuck Jones": [
     "How the Grinch Stole Christmas"
-  ],
-  "Movies featuring Vanessa Redgrave": [
-    "Howards End"
   ],
   "Toys": [
     "Hula Hoop"
@@ -2399,6 +2395,9 @@
   "Princesses": [
     "Princess Peach"
   ],
+  "1520s": [
+    "Protestant Reformation"
+  ],
   "Movies featuring Anthony Perkins": [
     "Psycho"
   ],
@@ -3082,6 +3081,12 @@
   ],
   "Movies featuring Milla Jovovich": [
     "The Fifth Element"
+  ],
+  "1210s": [
+    "The First Barons' War"
+  ],
+  "1090s": [
+    "The First Crusade"
   ],
   "Movies directed by Art Stevens": [
     "The Fox and the Hound"
@@ -4247,10 +4252,6 @@
     "Clara Barton",
     "Florence Nightingale"
   ],
-  "Historical Epics": [
-    "Cleopatra",
-    "Spartacus"
-  ],
   "Movies featuring Rex Harrison": [
     "Cleopatra",
     "My Fair Lady"
@@ -4290,10 +4291,6 @@
   "Movies featuring Michelle Yeoh": [
     "Crouching Tiger, Hidden Dragon",
     "Everything Everywhere All at Once"
-  ],
-  "Religious Events": [
-    "Crucifixion of Christ",
-    "The Protestant Reformation"
   ],
   "Movies featuring Kevin Costner": [
     "Dances with Wolves",
@@ -4674,6 +4671,10 @@
   "Movies directed by James Ivory": [
     "Howards End",
     "The Remains of the Day"
+  ],
+  "Movies featuring Vanessa Redgrave": [
+    "Howards End",
+    "Mary, Queen of Scots"
   ],
   "Bays": [
     "Hudson Bay",
@@ -5291,11 +5292,6 @@
     "Four Weddings and a Funeral",
     "Love Actually"
   ],
-  "Things Ethiopian": [
-    "Abyssinia",
-    "Coffee",
-    "Ethiopia"
-  ],
   "Cult Classics": [
     "Akira",
     "Blade Runner",
@@ -5496,6 +5492,11 @@
     "Gunpowder",
     "Playing Cards"
   ],
+  "Holy Roman Emperors": [
+    "Charles IV",
+    "Frederick I Barbarossa",
+    "Frederick II"
+  ],
   "Movies featuring Judi Dench": [
     "Chocolat",
     "Home on the Range",
@@ -5510,6 +5511,11 @@
     "Citizen Kane",
     "Othello",
     "The Third Man"
+  ],
+  "Historical Epics": [
+    "Cleopatra",
+    "Mary, Queen of Scots",
+    "Spartacus"
   ],
   "Movies featuring Tim Curry": [
     "Clue",
@@ -5550,6 +5556,11 @@
     "Crouching Tiger, Hidden Dragon",
     "House of Flying Daggers",
     "The Grandmaster"
+  ],
+  "Religious Events": [
+    "Crucifixion of Christ",
+    "Protestant Reformation",
+    "The Protestant Reformation"
   ],
   "Role-Playing Games": [
     "Cyberpunk",
@@ -5900,6 +5911,11 @@
     "The Catholic Counter-Reformation",
     "The English Reformation",
     "The Protestant Reformation"
+  ],
+  "Things European": [
+    "The Crusades",
+    "The First Crusade",
+    "The Renaissance"
   ],
   "Industrialization": [
     "The Digital Revolution",
