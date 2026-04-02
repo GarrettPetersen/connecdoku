@@ -79,6 +79,7 @@
   "1954": [
     "Creature from the Black Lagoon",
     "Rear Window",
+    "Robinson Crusoe",
     "Seven Samurai",
     "White Christmas"
   ],
@@ -97,6 +98,7 @@
   "1957": [
     "Bridge on the River Kwai",
     "Peyton Place",
+    "The Sun Also Rises",
     "Throne of Blood"
   ],
   "1958": [
@@ -147,6 +149,7 @@
     "The Good, the Bad and the Ugly"
   ],
   "1967": [
+    "Oedipus Rex",
     "The Graduate",
     "The Jungle Book"
   ],
@@ -450,6 +453,7 @@
     "Say It Ain't So",
     "Sense and Sensibility",
     "The Oklahoma City Bombing",
+    "The Scarlet Letter",
     "The Time Ships",
     "The Usual Suspects",
     "Toy Story",
@@ -1796,6 +1800,7 @@
     "Rashomon",
     "Ray Charles",
     "Rear Window",
+    "Robinson Crusoe",
     "Rock Around the Clock",
     "Rock and Roll",
     "Rodan",
@@ -1840,6 +1845,7 @@
     "The Searchers",
     "The Silver Chair",
     "The Space Race",
+    "The Sun Also Rises",
     "The Vietnam War",
     "The Voyage of the Dawn Treader",
     "Thelonious Monk",
@@ -1940,6 +1946,7 @@
     "Nick Fury",
     "Nixon",
     "November 22nd, 1963",
+    "Oedipus Rex",
     "Oliver!",
     "One Hundred Years of Solitude",
     "One small step for man",
@@ -2432,6 +2439,7 @@
     "The Rescuers Down Under",
     "The Rwandan Genocide",
     "The Santa Clause",
+    "The Scarlet Letter",
     "The Secret Garden",
     "The Shawshank Redemption",
     "The Silence of the Lambs",
@@ -3633,6 +3641,7 @@
     "Riddler",
     "Robin",
     "Robin Hood: Prince of Thieves",
+    "Robinson Crusoe",
     "Rock and Roll",
     "Rocky",
     "Rocky Horror Picture Show",
@@ -6463,19 +6472,6 @@
     "John of Bohemia",
     "Ray Charles",
     "Stevie Wonder"
-  ],
-  "Blockbusters": [
-    "Die Hard",
-    "Harry Potter and the Chamber of Secrets",
-    "Harry Potter and the Deathly Hallows: Part 1",
-    "Harry Potter and the Deathly Hallows: Part 2",
-    "Harry Potter and the Goblet of Fire",
-    "Harry Potter and the Half-Blood Prince",
-    "Harry Potter and the Order of the Phoenix",
-    "Harry Potter and the Prisoner of Azkaban",
-    "Harry Potter and the Sorcerer's Stone",
-    "Jurassic Park",
-    "Toy Story"
   ],
   "Blood Types": [
     "A",
@@ -23102,6 +23098,7 @@
     "John",
     "John Boyd",
     "John of Bohemia",
+    "Julius Caesar",
     "Kublai Khan",
     "Lafayette",
     "Leonidas",
@@ -24055,6 +24052,7 @@
     "No Country for Old Men",
     "Nomadland",
     "O Lucky Man!",
+    "Oedipus Rex",
     "Oliver & Company",
     "Oliver!",
     "Once Upon a Time in Hollywood",
@@ -24110,6 +24108,7 @@
     "Rise of the Guardians",
     "Robin Hood",
     "Robin Hood: Prince of Thieves",
+    "Robinson Crusoe",
     "Rock Around the Clock",
     "Rocky",
     "Rocky Horror Picture Show",
@@ -24250,6 +24249,7 @@
     "The Santa Clause",
     "The Santa Clause 2",
     "The Santa Clause 3: The Escape Clause",
+    "The Scarlet Letter",
     "The Searchers",
     "The Secret Garden",
     "The Seven Magnificent Gladiators",
@@ -24259,6 +24259,7 @@
     "The Silence of the Lambs",
     "The Sixth Sense",
     "The Sound of Music",
+    "The Sun Also Rises",
     "The Sword in the Stone",
     "The Tale of the Princess Kaguya",
     "The Terminator",
@@ -24715,6 +24716,9 @@
   "Movies directed by Hendel Butoy": [
     "The Rescuers Down Under"
   ],
+  "Movies directed by Henry King": [
+    "The Sun Also Rises"
+  ],
   "Movies directed by Henry Selick": [
     "The Nightmare Before Christmas"
   ],
@@ -24951,6 +24955,9 @@
   "Movies directed by Luc Besson": [
     "The Fifth Element"
   ],
+  "Movies directed by Luis Buñuel": [
+    "Robinson Crusoe"
+  ],
   "Movies directed by M. Night Shyamalan": [
     "Glass",
     "The Sixth Sense",
@@ -25129,6 +25136,9 @@
   "Movies directed by Phillip Noyce": [
     "Silver"
   ],
+  "Movies directed by Pier Paolo Pasolini": [
+    "Oedipus Rex"
+  ],
   "Movies directed by Quentin Tarantino": [
     "Death Proof",
     "Django Unchained",
@@ -25242,6 +25252,9 @@
   "Movies directed by Roland Emmerich": [
     "Stargate",
     "The Patriot"
+  ],
+  "Movies directed by Roland Joffé": [
+    "The Scarlet Letter"
   ],
   "Movies directed by Roman Polanski": [
     "Chinatown"
@@ -26277,7 +26290,8 @@
     "E.T."
   ],
   "Movies featuring Demi Moore": [
-    "The Hunchback of Notre Dame"
+    "The Hunchback of Notre Dame",
+    "The Scarlet Letter"
   ],
   "Movies featuring Denis Leary": [
     "Ice Age"
@@ -26619,7 +26633,8 @@
   "Movies featuring Gary Oldman": [
     "Hannibal",
     "Harry Potter and the Prisoner of Azkaban",
-    "The Fifth Element"
+    "The Fifth Element",
+    "The Scarlet Letter"
   ],
   "Movies featuring Gene Hackman": [
     "Poseidon",
@@ -28170,7 +28185,8 @@
     "The Avengers"
   ],
   "Movies featuring Robert Duvall": [
-    "Four Christmases"
+    "Four Christmases",
+    "The Scarlet Letter"
   ],
   "Movies featuring Robert Forster": [
     "Jackie Brown"

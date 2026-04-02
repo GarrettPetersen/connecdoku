@@ -1,0 +1,14 @@
+---
+description: Homonym-first design and how to review words vs puzzles
+alwaysApply: true
+---
+
+# Connecdoku: homonyms and upstream review
+
+- The game is intentionally about **homonyms** and multiply valid readings of the same string. A single `words.json` key often carries **more than one correct sense** (e.g. book vs film, character vs movie title); overlapping categories are not automatically bugs.
+
+- When something looks “wrong” in `words.json` or a puzzle, **before editing**:
+  1. Search for **alternate entries** (other keys that split senses, e.g. distinct film vs book titles if present).
+  2. For a specific grid cell, run `node puzzle_cell_options.js --index <n> --row <r> --col <c>` to see valid replacements under current row/column categories (excluding words already in the grid).
+
+- **Ask the user** whether they want to change data (tags, split entries), swap a puzzle word, or leave the homonym merged—do not assume they want “cleanup” that collapses intentional ambiguity.
