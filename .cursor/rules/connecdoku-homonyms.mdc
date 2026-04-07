@@ -12,3 +12,5 @@ alwaysApply: true
   2. For a specific grid cell, run `node puzzle_cell_options.js --index <n> --row <r> --col <c>` to see valid replacements under current row/column categories (excluding words already in the grid).
 
 - **Ask the user** whether they want to change data (tags, split entries), swap a puzzle word, or leave the homonym merged—do not assume they want “cleanup” that collapses intentional ambiguity.
+
+- **Published puzzles vs `words.json`:** Grids that have **already shipped** to players must **not** be edited to chase tag changes. Improving `words.json` (geography, film tags, taxonomy, etc.) is allowed even when `check_future_puzzles.js` (or the same rules) would flag an **older** puzzle as invalid—**stale invalidity is acceptable**; do not rewrite history in `daily_puzzles/puzzles.json` unless the user explicitly asks.
