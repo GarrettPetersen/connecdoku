@@ -546,6 +546,22 @@ async function mainSolveAndCurate() {
   const topUsed = getTopUsedCategories(categoryUsage, params.topUsedExclude);
   const excluded = new Set([...recent, ...topUsed]);
 
+  if (process.env.SOLVE_CURATE_EXCLUDE_MOVIE_HEAVY === "1") {
+    const beforeMovie = excluded.size;
+    const meta = readJsonOr(META_CATS_F, {});
+    for (const c of meta["Movie Makers"] || []) excluded.add(c);
+    const catsJson = readJsonOr(CATS_F, {});
+    for (const cat of Object.keys(catsJson)) {
+      if (cat === "Movies" || cat.startsWith("Movies featuring ") || cat.startsWith("Movies named ")) {
+        excluded.add(cat);
+      }
+    }
+    console.log(
+      `\nMovie-heavy filter (SOLVE_CURATE_EXCLUDE_MOVIE_HEAVY=1): +${excluded.size - beforeMovie} categories ` +
+        `(Movie Makers + \"Movies\" + Movies featuring/named).`
+    );
+  }
+
   console.log("\nSecret-sauce exclusions:");
   console.log(`- Recent (${params.daysLag}d) + always-excluded: ${recent.length}`);
   console.log(`- Top used (${params.topUsedExclude}): ${topUsed.length}`);

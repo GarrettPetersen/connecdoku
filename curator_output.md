@@ -1,29 +1,18 @@
 # Connecdoku AI Curator
 
-**Status:** Word chosen: Deja Vu
+**Status:** Puzzle saved successfully!
 
 **Curated this session:** 1
 
-## Word Selection
+## Main Menu
 
-**Cell [0, 1]:** 2006 × Best Picture Winners
+This curator no longer reads from a database.
 
-**Current Grid:**
+To generate candidate puzzles, run:
+- `make solve-and-curate`
 
-| | Col 1 | Col 2 | Col 3 | Col 4 |
-|---|---|---|---|---|
-| **Row 1** | Deja Vu | --- | --- | --- |
-| **Row 2** | --- | --- | --- | --- |
-| **Row 3** | --- | --- | --- | --- |
-| **Row 4** | --- | --- | --- | --- |
+If you already have a puzzle list loaded, choose one:
+- `node ai_curator.js select list`
 
-**Options for current cell:**
-0. The Departed [T]
-
-- **reset**: Reset word selection for this puzzle
-- **abandon**: Abandon this puzzle
-
-⚠️ **IMPORTANT: You must manually review ALL options and choose the BEST word for this cell!**
-⚠️ **The letter requirement forces you to review each choice - don't just pick option 0!**
-
-**Command:** `node ai_curator.js select <index><letter>` (e.g., `node ai_curator.js select 0B` for option 0 with first letter B) or `reset`, `abandon`
+Or stop:
+- `node ai_curator.js select stop`

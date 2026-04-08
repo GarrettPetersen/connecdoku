@@ -43,6 +43,9 @@
     "Bambi",
     "Casablanca"
   ],
+  "1944": [
+    "D-Day"
+  ],
   "1945": [
     "Brief Encounter",
     "Nuclear Bombing of Hiroshima",
@@ -441,11 +444,17 @@
   "Movies featuring Robert Vaughn": [
     "Battle Beyond the Stars"
   ],
-  "Land Battles": [
-    "Battle of Agincourt"
+  "1180s": [
+    "Battle of Hattin"
+  ],
+  "The Korean War": [
+    "Battle of Inchon"
   ],
   "1570s": [
     "Battle of Lepanto"
+  ],
+  "The Russo-Japanese War": [
+    "Battle of Tsushima"
   ],
   "1440s": [
     "Battle of Tumu Fortress"
@@ -2391,9 +2400,6 @@
   "Princesses": [
     "Princess Peach"
   ],
-  "1520s": [
-    "Protestant Reformation"
-  ],
   "Movies featuring Anthony Perkins": [
     "Psycho"
   ],
@@ -2684,6 +2690,12 @@
   ],
   "Movies featuring Joseph Fiennes": [
     "Shakespeare in Love"
+  ],
+  "1560s": [
+    "Siege of Malta"
+  ],
+  "The Crimean War": [
+    "Siege of Sevastopol"
   ],
   "Things Sierra Leonean": [
     "Sierra Leone"
@@ -3885,9 +3897,6 @@
   "Movies directed by Matthew Vaughn": [
     "X-Men: First Class"
   ],
-  "Things Persian": [
-    "Xerxes"
-  ],
   "Liang Dynasty": [
     "Xiao Yan"
   ],
@@ -4093,6 +4102,14 @@
   "1410s": [
     "Battle of Agincourt",
     "First Defenestration of Prague"
+  ],
+  "The Spanish-American War": [
+    "Battle of Manila Bay",
+    "Battle of Santiago de Cuba"
+  ],
+  "Things Persian": [
+    "Battle of Salamis",
+    "Xerxes"
   ],
   "Things Botswanan": [
     "Bechuanaland",
@@ -4830,6 +4847,10 @@
     "Malawi",
     "Nyasaland"
   ],
+  "Things Maltese": [
+    "Malta",
+    "Siege of Malta"
+  ],
   "Movies featuring Julie Andrews": [
     "Mary Poppins",
     "The Sound of Music"
@@ -4977,6 +4998,10 @@
   "Roman Consuls": [
     "Pompey",
     "Sulla"
+  ],
+  "1520s": [
+    "Protestant Reformation",
+    "Siege of Tenochtitlan"
   ],
   "Movies directed by Alfred Hitchcock": [
     "Psycho",
@@ -5802,11 +5827,6 @@
     "Snowball Earth",
     "Younger Dryas"
   ],
-  "Ancient Times": [
-    "Let there be light",
-    "Qin",
-    "Thermopylae"
-  ],
   "Norse Mythology": [
     "Loki",
     "Sleipnir",
@@ -5916,11 +5936,6 @@
     "The Catholic Counter-Reformation",
     "The English Reformation",
     "The Protestant Reformation"
-  ],
-  "Things European": [
-    "The Crusades",
-    "The First Crusade",
-    "The Renaissance"
   ],
   "Industrialization": [
     "The Digital Revolution",

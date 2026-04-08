@@ -43,6 +43,9 @@
     "Bambi",
     "Casablanca"
   ],
+  "1944": [
+    "D-Day"
+  ],
   "1945": [
     "Brief Encounter",
     "Nuclear Bombing of Hiroshima",
@@ -872,6 +875,9 @@
   "1120s": [
     "Jingkang Incident"
   ],
+  "1180s": [
+    "Battle of Hattin"
+  ],
   "11th Century": [
     "1066",
     "Avicenna",
@@ -896,6 +902,7 @@
     "The First Barons' War"
   ],
   "12th Century": [
+    "Battle of Hattin",
     "Bohemond",
     "County of Tripoli",
     "Deus Vult",
@@ -1045,7 +1052,11 @@
     "Akhenaten"
   ],
   "1520s": [
-    "Protestant Reformation"
+    "Protestant Reformation",
+    "Siege of Tenochtitlan"
+  ],
+  "1560s": [
+    "Siege of Malta"
   ],
   "1570s": [
     "Battle of Lepanto"
@@ -1162,6 +1173,8 @@
     "Rodrigo Borgia",
     "Romeo",
     "Shakespeare",
+    "Siege of Malta",
+    "Siege of Tenochtitlan",
     "Something is rotten in Denmark",
     "Spanish Empire",
     "Suleiman the Magnificent",
@@ -1329,6 +1342,7 @@
     "Moby Dick",
     "Pierce",
     "Rigoletto",
+    "Siege of Sevastopol",
     "Taylor",
     "The Crimean War",
     "The Indian Rebellion",
@@ -1398,6 +1412,8 @@
     "Triple Alliance"
   ],
   "1890s": [
+    "Battle of Manila Bay",
+    "Battle of Santiago de Cuba",
     "Charles Taze Russell",
     "Cleveland",
     "Debussy",
@@ -1470,6 +1486,7 @@
   ],
   "1900s": [
     "Anne of Green Gables",
+    "Battle of Tsushima",
     "Belgian Congo",
     "Einstein",
     "GMC",
@@ -1502,6 +1519,7 @@
     "Einstein",
     "Emperor Taisho",
     "Empress of Ireland",
+    "Gallipoli Campaign",
     "Gavrilo Princip",
     "Helen Keller",
     "Ida Straus",
@@ -1634,6 +1652,17 @@
     "B-17",
     "B-29",
     "Bambi",
+    "Battle of Anzio",
+    "Battle of Guadalcanal",
+    "Battle of Iwo Jima",
+    "Battle of Leyte Gulf",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
+    "Battle of Saipan",
+    "Battle of Salerno",
+    "Battle of Tarawa",
+    "Battle of the Coral Sea",
     "Bikini",
     "Billie Holiday",
     "Blood, toil, tears and sweat",
@@ -1644,7 +1673,9 @@
     "Charlie Parker",
     "Citizen Kane",
     "Corsair",
+    "D-Day",
     "DC-3",
+    "DUKW",
     "Dauntless",
     "Death of a Salesman",
     "December 7th, 1941",
@@ -1666,6 +1697,7 @@
     "Here's looking at you, kid",
     "Honda",
     "Hurricane",
+    "Invasion of Sicily",
     "It's a Wonderful Life",
     "Jill",
     "Joker",
@@ -1676,6 +1708,7 @@
     "June 6th, 1944",
     "Kate",
     "Kind Hearts and Coronets",
+    "LVT-4",
     "Lancaster",
     "Land Rover",
     "Lex Luthor",
@@ -1729,6 +1762,7 @@
     "Andrea Doria",
     "Art Tatum",
     "Battle of Dien Bien Phu",
+    "Battle of Inchon",
     "Ben-Hur",
     "Big Iron",
     "Bikini",
@@ -1791,6 +1825,7 @@
     "Nixon",
     "North Korea",
     "On the Road",
+    "PT-76",
     "Panmunjom",
     "Peter Pan",
     "Peyton Place",
@@ -1867,6 +1902,7 @@
     "Apollo",
     "Apollo 11",
     "Ask not what your country can do for you",
+    "BRDM-2",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
     "Bee Gees",
@@ -2013,6 +2049,7 @@
     "1972 Presidential Election",
     "747",
     "A Clockwork Orange",
+    "AAV-7",
     "Airbus",
     "Alien",
     "Annie Hall",
@@ -2199,6 +2236,7 @@
     "Kampuchea",
     "Kiki's Delivery Service",
     "L. Ron Hubbard",
+    "LCAC",
     "Lexus",
     "Life, the Universe and Everything",
     "Like a Prayer",
@@ -2478,6 +2516,8 @@
     "April 14th, 1865",
     "Arthur",
     "Baháʼu'lláh",
+    "Battle of Manila Bay",
+    "Battle of Santiago de Cuba",
     "Battle of Trafalgar",
     "Beethoven",
     "Bell",
@@ -2601,6 +2641,7 @@
     "Rosa Bonheur",
     "Sarah Bernhardt",
     "Shaka Zulu",
+    "Siege of Sevastopol",
     "Sir John A. Macdonald",
     "Sojourner Truth",
     "Spades",
@@ -3093,6 +3134,7 @@
     "A Farewell to Arms",
     "A Fistful of Dollars",
     "A Map of the World",
+    "AAV-7",
     "AIDS",
     "Abbey Road",
     "Absalom, Absalom!",
@@ -3136,6 +3178,7 @@
     "B-17",
     "B-29",
     "BMW",
+    "BRDM-2",
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III",
@@ -3143,8 +3186,21 @@
     "Basket Case",
     "Batman",
     "Battle Beyond the Stars",
+    "Battle of Anzio",
     "Battle of Dien Bien Phu",
+    "Battle of Guadalcanal",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
     "Battle of Jutland",
+    "Battle of Leyte Gulf",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
+    "Battle of Saipan",
+    "Battle of Salerno",
+    "Battle of Tarawa",
+    "Battle of Tsushima",
+    "Battle of the Coral Sea",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
     "Beast",
@@ -3246,7 +3302,9 @@
     "Curie",
     "Cyclops",
     "Czechoslovakia",
+    "D-Day",
     "DC-3",
+    "DUKW",
     "Dacron",
     "Dahomey",
     "Daisy",
@@ -3332,6 +3390,7 @@
     "Fujita",
     "GMC",
     "Galaxy Quest",
+    "Gallipoli Campaign",
     "Gambit",
     "Gamera",
     "Gandhi",
@@ -3408,6 +3467,7 @@
     "Ikiru",
     "Imagine",
     "Infiniti",
+    "Invasion of Sicily",
     "Iranian Revolution",
     "Iris",
     "Iron Man",
@@ -3462,6 +3522,8 @@
     "Krushchev",
     "Kurosawa",
     "L. Ron Hubbard",
+    "LCAC",
+    "LVT-4",
     "Laika, Space Dog",
     "Lamborghini",
     "Lancaster",
@@ -3587,6 +3649,7 @@
     "Out of Africa",
     "Outlander",
     "Ozu",
+    "PT-76",
     "Pac-Man",
     "Palestine",
     "Panmunjom",
@@ -4465,6 +4528,7 @@
   ],
   "5th Century BC": [
     "Art of War",
+    "Battle of Salamis",
     "Confucius",
     "Hippocrates",
     "Hundred Schools of Thought",
@@ -4560,6 +4624,7 @@
     "EXO",
     "FM",
     "GOT7",
+    "LCAC",
     "NASA",
     "NATO",
     "iKON"
@@ -5035,6 +5100,67 @@
     "Robert E. Lee",
     "The American Civil War"
   ],
+  "Amphibious": [
+    "AAV-7",
+    "Axolotl",
+    "BRDM-2",
+    "Battle of Anzio",
+    "Battle of Guadalcanal",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
+    "Battle of Saipan",
+    "Battle of Salerno",
+    "Battle of Tarawa",
+    "Bay of Pigs",
+    "Bay of Pigs Invasion",
+    "Caecilian",
+    "D-Day",
+    "DUKW",
+    "Frog",
+    "Gallipoli Campaign",
+    "Hellbender",
+    "Invasion of Sicily",
+    "LCAC",
+    "LVT-4",
+    "Mudpuppy",
+    "Mudskipper",
+    "Newt",
+    "Operation Overlord",
+    "PT-76",
+    "Salamander",
+    "The American Revolution",
+    "The Iraq War",
+    "The Korean War",
+    "The Spanish Armada",
+    "The Spanish-American War",
+    "Toad",
+    "World War II"
+  ],
+  "Amphibious Operations": [
+    "Battle of Anzio",
+    "Battle of Guadalcanal",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
+    "Battle of Saipan",
+    "Battle of Salerno",
+    "Battle of Tarawa",
+    "Bay of Pigs",
+    "Bay of Pigs Invasion",
+    "D-Day",
+    "Gallipoli Campaign",
+    "Invasion of Sicily",
+    "Operation Overlord",
+    "The American Revolution",
+    "The Iraq War",
+    "The Korean War",
+    "The Spanish Armada",
+    "The Spanish-American War",
+    "World War II"
+  ],
   "Ancient Buildings": [
     "Acropolis",
     "Arch of Titus",
@@ -5170,6 +5296,7 @@
     "Zhao Mo"
   ],
   "Ancient Times": [
+    "Battle of Salamis",
     "Let there be light",
     "Qin",
     "Thermopylae"
@@ -5191,6 +5318,7 @@
     "Arthropleura",
     "Aurochs",
     "Australopithecus",
+    "Axolotl",
     "Basilisk",
     "Basilosaurus",
     "Bat",
@@ -5209,6 +5337,7 @@
     "Buffalo",
     "Bull",
     "Butterfly",
+    "Caecilian",
     "Camarasaurus",
     "Cardinal",
     "Carnotaurus",
@@ -5257,6 +5386,7 @@
     "Flea",
     "Fly",
     "Fox",
+    "Frog",
     "Gannet",
     "Gastornis",
     "Giganotosaurus",
@@ -5269,6 +5399,7 @@
     "Gull",
     "Hallucigenia",
     "Hawk",
+    "Hellbender",
     "Horse",
     "Hummingbird",
     "Humpback Whale",
@@ -5301,6 +5432,9 @@
     "Mosasaurus",
     "Mosquito",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
+    "Newt",
     "Opabinia",
     "Orca",
     "Ornithomimus",
@@ -5337,6 +5471,7 @@
     "Rhino",
     "Robin",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Scorpion",
     "Seahawk",
@@ -5364,6 +5499,7 @@
     "Titanis",
     "Titanoboa",
     "Titanomyrma",
+    "Toad",
     "Triceratops",
     "Trilobite",
     "Trilobites",
@@ -5406,6 +5542,7 @@
     "Arthropleura",
     "Aurochs",
     "Australopithecus",
+    "Axolotl",
     "Banshee",
     "Basilisk",
     "Basilosaurus",
@@ -5432,6 +5569,7 @@
     "Buffalo",
     "Bull",
     "Butterfly",
+    "Caecilian",
     "Camarasaurus",
     "Cardinal",
     "Carnotaurus",
@@ -5493,6 +5631,7 @@
     "Flea",
     "Fly",
     "Fox",
+    "Frog",
     "Gamera",
     "Gannet",
     "Garfield",
@@ -5514,6 +5653,7 @@
     "Harambe",
     "Hawk",
     "Hawkeye",
+    "Hellbender",
     "Hen",
     "Horse",
     "Hummingbird",
@@ -5564,7 +5704,10 @@
     "Mosquito",
     "Moth",
     "Mothra",
+    "Mudpuppy",
+    "Mudskipper",
     "Nala",
+    "Newt",
     "Opabinia",
     "Orca",
     "Ornithomimus",
@@ -5616,6 +5759,7 @@
     "Ruby",
     "Sabretooth",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Sam the Eagle",
     "Scorpion",
@@ -5655,6 +5799,7 @@
     "Titanis",
     "Titanoboa",
     "Titanomyrma",
+    "Toad",
     "Triceratops",
     "Trilobite",
     "Trilobites",
@@ -6136,25 +6281,48 @@
     "Battle of Actium",
     "Battle of Agincourt",
     "Battle of Alesia",
+    "Battle of Anzio",
     "Battle of Carrhae",
     "Battle of Crécy",
     "Battle of Dien Bien Phu",
+    "Battle of Guadalcanal",
+    "Battle of Hattin",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
     "Battle of Jutland",
     "Battle of Lake Poyang",
     "Battle of Lepanto",
+    "Battle of Leyte Gulf",
+    "Battle of Manila Bay",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
     "Battle of Pharsalus",
     "Battle of Philippi",
     "Battle of Poitiers",
     "Battle of Red Cliff",
+    "Battle of Saipan",
+    "Battle of Salamis",
+    "Battle of Salerno",
+    "Battle of Santiago de Cuba",
     "Battle of Sluys",
+    "Battle of Tarawa",
     "Battle of Trafalgar",
+    "Battle of Tsushima",
     "Battle of Tumu Fortress",
     "Battle of Yamen",
     "Battle of Zhizhi",
+    "Battle of the Coral Sea",
+    "D-Day",
+    "Gallipoli Campaign",
     "Gettysburg",
+    "Invasion of Sicily",
     "Siege of Calais",
+    "Siege of Malta",
     "Siege of Orléans",
+    "Siege of Sevastopol",
     "Siege of Suiyang",
+    "Siege of Tenochtitlan",
     "The Battle of Stalingrad",
     "Thermopylae"
   ],
@@ -7093,6 +7261,7 @@
     "Andalgalornis",
     "Anomalocaris",
     "Archaeopteryx",
+    "Axolotl",
     "Basilosaurus",
     "Bat",
     "Bear",
@@ -7101,6 +7270,7 @@
     "Blue Whale",
     "Bowser",
     "Brontornis",
+    "Caecilian",
     "Carnotaurus",
     "Cat",
     "Centipede",
@@ -7123,6 +7293,7 @@
     "Falcon",
     "Flea",
     "Fox",
+    "Frog",
     "Gamera",
     "Gannet",
     "Garfield",
@@ -7131,6 +7302,7 @@
     "Godzilla",
     "Great White Shark",
     "Hawk",
+    "Hellbender",
     "Humpback Whale",
     "Hyaenodon",
     "Ichthyosaurus",
@@ -7151,7 +7323,10 @@
     "Moby Dick",
     "Mosasaurus",
     "Mosquito",
+    "Mudpuppy",
+    "Mudskipper",
     "Nala",
+    "Newt",
     "Orca",
     "Owl",
     "Panther",
@@ -7173,6 +7348,7 @@
     "Raptor",
     "Ray",
     "Rodan",
+    "Salamander",
     "Salmon",
     "Scorpion",
     "Seahawk",
@@ -7192,6 +7368,7 @@
     "Tiger",
     "Titanis",
     "Titanoboa",
+    "Toad",
     "Tuna",
     "Utahraptor",
     "Velociraptor",
@@ -7274,6 +7451,7 @@
     "Asparagus",
     "Aurochs",
     "Australopithecus",
+    "Axolotl",
     "Bamboo",
     "Barley",
     "Basil",
@@ -7304,6 +7482,7 @@
     "Cabbage",
     "Cacao",
     "Cactus",
+    "Caecilian",
     "Cardamom",
     "Cardinal",
     "Carp",
@@ -7371,6 +7550,7 @@
     "Formation of Himalayas",
     "Formation of Rocky Mountains",
     "Fox",
+    "Frog",
     "Gannet",
     "Garlic",
     "Gastornis",
@@ -7389,6 +7569,7 @@
     "Hawk",
     "Hazelnut",
     "Heather",
+    "Hellbender",
     "Horse",
     "Horsetail",
     "Huckleberry",
@@ -7430,7 +7611,10 @@
     "Mosquito",
     "Moss",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
     "Mulberry",
+    "Newt",
     "Nutmeg",
     "Oak",
     "Oats",
@@ -7481,6 +7665,7 @@
     "Saffron",
     "Sage",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Salmonberry",
     "Scorpion",
@@ -7513,6 +7698,7 @@
     "Titanis",
     "Titanoboa",
     "Titanomyrma",
+    "Toad",
     "Tomato",
     "Tulip",
     "Tuna",
@@ -8204,6 +8390,7 @@
   ],
   "Cold War": [
     "Afghanistan",
+    "BRDM-2",
     "Battle of Dien Bien Phu",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
@@ -8234,6 +8421,7 @@
     "Nimitz",
     "North Korea",
     "One small step for man",
+    "PT-76",
     "Panmunjom",
     "Poland",
     "Queen Elizabeth 2",
@@ -9481,6 +9669,7 @@
   "Currently Living Animals": [
     "Albatross",
     "Ant",
+    "Axolotl",
     "Basilisk",
     "Bat",
     "Bear",
@@ -9496,6 +9685,7 @@
     "Buffalo",
     "Bull",
     "Butterfly",
+    "Caecilian",
     "Cardinal",
     "Carp",
     "Cassowary",
@@ -9529,6 +9719,7 @@
     "Flea",
     "Fly",
     "Fox",
+    "Frog",
     "Gannet",
     "Giraffe",
     "Goat",
@@ -9537,6 +9728,7 @@
     "Greyhound",
     "Gull",
     "Hawk",
+    "Hellbender",
     "Hen",
     "Horse",
     "Hummingbird",
@@ -9558,6 +9750,9 @@
     "Monkey",
     "Mosquito",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
+    "Newt",
     "Orca",
     "Ostrich",
     "Owl",
@@ -9583,6 +9778,7 @@
     "Robin",
     "Rooster",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Scorpion",
     "Seahawk",
@@ -9601,6 +9797,7 @@
     "Tern",
     "Tick",
     "Tiger",
+    "Toad",
     "Tuna",
     "Turkey",
     "Vulture",
@@ -9733,6 +9930,7 @@
     "WIS"
   ],
   "D-Day": [
+    "D-Day",
     "Eisenhower",
     "Gold",
     "June 6th, 1944",
@@ -11083,6 +11281,9 @@
   "Ends with -35": [
     "F-35"
   ],
+  "Ends with -76": [
+    "PT-76"
+  ],
   "Ends with ...": [
     "And Another Thing...",
     "If...."
@@ -11842,6 +12043,8 @@
     "Castle Bravo"
   ],
   "Ends with AWA": [
+    "Battle of Okinawa",
+    "Battle of Tarawa",
     "Issei Sagawa",
     "Kurosawa",
     "Okinawa",
@@ -11927,6 +12130,7 @@
     "Bat"
   ],
   "Ends with BAY": [
+    "Battle of Manila Bay",
     "Hudson Bay",
     "San Francisco Bay"
   ],
@@ -12074,6 +12278,9 @@
   ],
   "Ends with C-3": [
     "DC-3"
+  ],
+  "Ends with CAC": [
+    "LCAC"
   ],
   "Ends with CAD": [
     "Cycad"
@@ -12278,6 +12485,7 @@
   "Ends with DAY": [
     "Billie Holiday",
     "Charlotte Corday",
+    "D-Day",
     "Doris Day",
     "Faraday",
     "Groundhog Day",
@@ -12314,11 +12522,13 @@
     "Cider",
     "Easy Rider",
     "Gunpowder",
+    "Hellbender",
     "Helmuth von Moltke the Elder",
     "Lavender",
     "Murder",
     "Outlander",
     "Rudder",
+    "Salamander",
     "Spider",
     "Stevie Wonder",
     "The Rescuers Down Under",
@@ -12922,6 +13132,9 @@
   "Ends with EWS": [
     "Thomas Andrews"
   ],
+  "Ends with EWT": [
+    "Newt"
+  ],
   "Ends with EXO": [
     "EXO"
   ],
@@ -13294,6 +13507,7 @@
     "Daphne"
   ],
   "Ends with HON": [
+    "Battle of Inchon",
     "Bellerophon",
     "Python"
   ],
@@ -13346,6 +13560,7 @@
     "Siam"
   ],
   "Ends with IAN": [
+    "Caecilian",
     "Chen Baxian",
     "Chen Qian",
     "Hadrian",
@@ -13502,6 +13717,7 @@
     "Luigi"
   ],
   "Ends with IGN": [
+    "Gallipoli Campaign",
     "Jingnan Campaign",
     "No Parking Sign",
     "Speed Limit Sign",
@@ -13579,10 +13795,13 @@
     "Kilo"
   ],
   "Ends with ILY": [
+    "Invasion of Sicily",
     "Lily",
     "Sicily"
   ],
   "Ends with IMA": [
+    "Battle of Iwo Jima",
+    "Battle of Tsushima",
     "Fukushima",
     "Lima",
     "Nuclear Bombing of Hiroshima"
@@ -14214,7 +14433,8 @@
     "Ferdinand Magellan",
     "Flan",
     "Milan",
-    "Mulan"
+    "Mulan",
+    "Siege of Tenochtitlan"
   ],
   "Ends with LAR": [
     "Interstellar",
@@ -14380,6 +14600,9 @@
     "Indianapolis",
     "Metropolis"
   ],
+  "Ends with LIU": [
+    "Battle of Peleliu"
+  ],
   "Ends with LLA": [
     "Campanella",
     "Cinderella",
@@ -14468,6 +14691,7 @@
   "Ends with LTA": [
     "Delta",
     "Malta",
+    "Siege of Malta",
     "Upper Volta"
   ],
   "Ends with LTZ": [
@@ -14503,6 +14727,9 @@
   ],
   "Ends with LÁH": [
     "Baháʼu'lláh"
+  ],
+  "Ends with M-2": [
+    "BRDM-2"
   ],
   "Ends with MAD": [
     "Muhammad"
@@ -14642,6 +14869,7 @@
     "Li Shimin"
   ],
   "Ends with MIS": [
+    "Battle of Salamis",
     "Temple of Artemis"
   ],
   "Ends with MMA": [
@@ -14704,6 +14932,7 @@
     "Guru Nanak"
   ],
   "Ends with NAL": [
+    "Battle of Guadalcanal",
     "Canal",
     "Cardinal",
     "Grand Canal",
@@ -15077,7 +15306,8 @@
     "Abbey Road",
     "On the Road",
     "Silk Road",
-    "The Road"
+    "The Road",
+    "Toad"
   ],
   "Ends with OAH": [
     "Shenandoah"
@@ -15517,6 +15747,9 @@
   "Ends with OTI": [
     "Roti"
   ],
+  "Ends with OTL": [
+    "Axolotl"
+  ],
   "Ends with OTS": [
     "Mary, Queen of Scots"
   ],
@@ -15610,6 +15843,7 @@
     "Nepal"
   ],
   "Ends with PAN": [
+    "Battle of Saipan",
     "Japan",
     "Peter Pan",
     "Saipan"
@@ -15631,6 +15865,7 @@
     "Copper",
     "Grasshopper",
     "Looper",
+    "Mudskipper",
     "Newspaper",
     "Paper",
     "Pepper",
@@ -15692,6 +15927,9 @@
   "Ends with POE": [
     "Poe"
   ],
+  "Ends with POL": [
+    "Siege of Sevastopol"
+  ],
   "Ends with POT": [
     "Hot Pot"
   ],
@@ -15703,6 +15941,7 @@
     "Mississippi"
   ],
   "Ends with PPY": [
+    "Mudpuppy",
     "Poppy"
   ],
   "Ends with PRI": [
@@ -15989,6 +16228,7 @@
     "Annapurna"
   ],
   "Ends with RNO": [
+    "Battle of Salerno",
     "Inferno"
   ],
   "Ends with RNS": [
@@ -16001,6 +16241,7 @@
     "Monroe"
   ],
   "Ends with ROG": [
+    "Frog",
     "The Princess and the Frog"
   ],
   "Ends with ROL": [
@@ -16233,6 +16474,7 @@
   ],
   "Ends with SEA": [
     "Baltic Sea",
+    "Battle of the Coral Sea",
     "Black Sea",
     "Caribbean Sea",
     "Caspian Sea",
@@ -16421,6 +16663,9 @@
   "Ends with T 2": [
     "Harry Potter and the Deathly Hallows: Part 2"
   ],
+  "Ends with T-4": [
+    "LVT-4"
+  ],
   "Ends with TAH": [
     "Cheetah",
     "Utah"
@@ -16568,6 +16813,7 @@
   "Ends with TIN": [
     "Aston Martin",
     "Austin",
+    "Battle of Hattin",
     "Rasputin"
   ],
   "Ends with TIS": [
@@ -16733,6 +16979,7 @@
     "Uruguay"
   ],
   "Ends with UBA": [
+    "Battle of Santiago de Cuba",
     "Cuba",
     "Tituba"
   ],
@@ -16813,6 +17060,9 @@
     "Duke",
     "Luke"
   ],
+  "Ends with UKW": [
+    "DUKW"
+  ],
   "Ends with ULA": [
     "Caligula",
     "Dracula",
@@ -16820,6 +17070,7 @@
     "Tarantula"
   ],
   "Ends with ULF": [
+    "Battle of Leyte Gulf",
     "Beowulf",
     "Persian Gulf"
   ],
@@ -16982,6 +17233,9 @@
   "Ends with UYS": [
     "Battle of Sluys"
   ],
+  "Ends with V-7": [
+    "AAV-7"
+  ],
   "Ends with VAL": [
     "Arrival",
     "Val"
@@ -17100,6 +17354,7 @@
     "Angkor Wat"
   ],
   "Ends with WAY": [
+    "Battle of Midway",
     "Causeway",
     "Jingle All the Way",
     "Milky Way",
@@ -17254,6 +17509,9 @@
   ],
   "Ends with ZIL": [
     "Brazil"
+  ],
+  "Ends with ZIO": [
+    "Battle of Anzio"
   ],
   "Ends with ZKI": [
     "Paczki"
@@ -17520,21 +17778,38 @@
     "Battle of Actium",
     "Battle of Agincourt",
     "Battle of Alesia",
+    "Battle of Anzio",
     "Battle of Carrhae",
     "Battle of Crécy",
     "Battle of Dien Bien Phu",
+    "Battle of Guadalcanal",
+    "Battle of Hattin",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
     "Battle of Jutland",
     "Battle of Lake Poyang",
     "Battle of Lepanto",
+    "Battle of Leyte Gulf",
+    "Battle of Manila Bay",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
     "Battle of Pharsalus",
     "Battle of Philippi",
     "Battle of Poitiers",
     "Battle of Red Cliff",
+    "Battle of Saipan",
+    "Battle of Salamis",
+    "Battle of Salerno",
+    "Battle of Santiago de Cuba",
     "Battle of Sluys",
+    "Battle of Tarawa",
     "Battle of Trafalgar",
+    "Battle of Tsushima",
     "Battle of Tumu Fortress",
     "Battle of Yamen",
     "Battle of Zhizhi",
+    "Battle of the Coral Sea",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
     "Bikini",
@@ -17554,6 +17829,7 @@
     "Coronation of Elizabeth II",
     "Crucifixion of Christ",
     "Cuban Missile Crisis",
+    "D-Day",
     "Deccan Traps Eruption",
     "Deepwater Horizon",
     "Donner Party",
@@ -17573,6 +17849,7 @@
     "Formation of Pangea",
     "Formation of Rocky Mountains",
     "Fukushima",
+    "Gallipoli Campaign",
     "Great Oxygenation Event",
     "Han Wudi's Defeat of the Xiongnu",
     "Herculaneum",
@@ -17580,6 +17857,7 @@
     "Hundred Schools of Thought",
     "Hussite Wars",
     "Imjin War",
+    "Invasion of Sicily",
     "Iranian Revolution",
     "Ivy Mike",
     "Jingkang Incident",
@@ -17615,8 +17893,11 @@
     "Second Triumvirate",
     "Siberian Traps Eruption",
     "Siege of Calais",
+    "Siege of Malta",
     "Siege of Orléans",
+    "Siege of Sevastopol",
     "Siege of Suiyang",
+    "Siege of Tenochtitlan",
     "Silk Road",
     "Snowball Earth",
     "Soviet-Afghan War",
@@ -18886,6 +19167,7 @@
   "Fish": [
     "Carp",
     "Coelacanth",
+    "Mudskipper",
     "Ray",
     "Sailfish",
     "Salmon",
@@ -20185,6 +20467,7 @@
     "Aloe",
     "Ant",
     "Asparagus",
+    "Axolotl",
     "Bamboo",
     "Barley",
     "Basil",
@@ -20212,6 +20495,7 @@
     "Cabbage",
     "Cacao",
     "Cactus",
+    "Caecilian",
     "Cardamom",
     "Cardinal",
     "Carp",
@@ -20276,6 +20560,7 @@
     "Flea",
     "Fly",
     "Fox",
+    "Frog",
     "Gannet",
     "Garlic",
     "Ginger",
@@ -20293,6 +20578,7 @@
     "Hawk",
     "Hazelnut",
     "Heather",
+    "Hellbender",
     "Horse",
     "Horsetail",
     "Huckleberry",
@@ -20329,7 +20615,10 @@
     "Mosquito",
     "Moss",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
     "Mulberry",
+    "Newt",
     "Nutmeg",
     "Oak",
     "Oats",
@@ -20376,6 +20665,7 @@
     "Saffron",
     "Sage",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Salmonberry",
     "Scorpion",
@@ -20405,6 +20695,7 @@
     "Thyme",
     "Tick",
     "Tiger",
+    "Toad",
     "Tomato",
     "Tulip",
     "Tuna",
@@ -21014,7 +21305,97 @@
     "Lake Victoria"
   ],
   "Land Battles": [
-    "Battle of Agincourt"
+    "An Lushan Rebellion",
+    "Bar Kokhba Revolt",
+    "Battle of Agincourt",
+    "Battle of Alesia",
+    "Battle of Anzio",
+    "Battle of Carrhae",
+    "Battle of Crécy",
+    "Battle of Dien Bien Phu",
+    "Battle of Guadalcanal",
+    "Battle of Hattin",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
+    "Battle of Pharsalus",
+    "Battle of Philippi",
+    "Battle of Poitiers",
+    "Battle of Saipan",
+    "Battle of Salerno",
+    "Battle of Tarawa",
+    "Battle of Tumu Fortress",
+    "Battle of Zhizhi",
+    "Bay of Pigs",
+    "Bay of Pigs Invasion",
+    "Bohemian Revolt",
+    "Chu–Han Contention",
+    "D-Day",
+    "Dungan Revolt",
+    "Gallipoli Campaign",
+    "Gettysburg",
+    "Han Wudi's Defeat of the Xiongnu",
+    "Hussite Wars",
+    "Imjin War",
+    "Invasion of Sicily",
+    "Jingkang Incident",
+    "Jingnan Campaign",
+    "Kitos War",
+    "Ming–Vietnam War",
+    "Mongol Conquest of China",
+    "Operation Overlord",
+    "Pickett's Charge",
+    "Red Turban Rebellion",
+    "Siege of Calais",
+    "Siege of Malta",
+    "Siege of Orléans",
+    "Siege of Sevastopol",
+    "Siege of Suiyang",
+    "Siege of Tenochtitlan",
+    "Soviet-Afghan War",
+    "The Albigensian Crusade",
+    "The Algerian War",
+    "The American Civil War",
+    "The American Revolution",
+    "The Battle of Stalingrad",
+    "The Boer War",
+    "The Boxer Rebellion",
+    "The Crimean War",
+    "The Crusades",
+    "The Cuban Revolution",
+    "The English Civil War",
+    "The First Barons' War",
+    "The First Crusade",
+    "The Franco-Prussian War",
+    "The French Revolution",
+    "The Gulf War",
+    "The Haitian Revolution",
+    "The Hundred Days",
+    "The Hundred Years War",
+    "The Iran-Iraq War",
+    "The Iraq War",
+    "The Italian Wars",
+    "The Korean War",
+    "The Mexican Revolution",
+    "The Napoleonic Wars",
+    "The Russian Civil War",
+    "The Russian Invasion of Ukraine",
+    "The Russian Revolution",
+    "The Russo-Japanese War",
+    "The Seven Years' War",
+    "The Spanish Civil War",
+    "The Spanish-American War",
+    "The Syrian Civil War",
+    "The Thirty Years War",
+    "The Trojan War",
+    "The Vietnam War",
+    "The Yugoslav Wars",
+    "Thermopylae",
+    "Third Servile War",
+    "World War I",
+    "World War II",
+    "Yellow Turban Rebellion"
   ],
   "Landlocked Countries": [
     "Afghanistan",
@@ -22972,30 +23353,50 @@
     "Battle of Actium",
     "Battle of Agincourt",
     "Battle of Alesia",
+    "Battle of Anzio",
     "Battle of Carrhae",
     "Battle of Crécy",
     "Battle of Dien Bien Phu",
+    "Battle of Guadalcanal",
+    "Battle of Hattin",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
     "Battle of Jutland",
     "Battle of Lake Poyang",
     "Battle of Lepanto",
+    "Battle of Leyte Gulf",
+    "Battle of Manila Bay",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
     "Battle of Pharsalus",
     "Battle of Philippi",
     "Battle of Poitiers",
     "Battle of Red Cliff",
+    "Battle of Saipan",
+    "Battle of Salamis",
+    "Battle of Salerno",
+    "Battle of Santiago de Cuba",
     "Battle of Sluys",
+    "Battle of Tarawa",
     "Battle of Trafalgar",
+    "Battle of Tsushima",
     "Battle of Tumu Fortress",
     "Battle of Yamen",
     "Battle of Zhizhi",
+    "Battle of the Coral Sea",
     "Bay of Pigs",
     "Bay of Pigs Invasion",
     "Bohemian Revolt",
     "Chu–Han Contention",
+    "D-Day",
     "Dungan Revolt",
+    "Gallipoli Campaign",
     "Gettysburg",
     "Han Wudi's Defeat of the Xiongnu",
     "Hussite Wars",
     "Imjin War",
+    "Invasion of Sicily",
     "Jingkang Incident",
     "Jingnan Campaign",
     "Kitos War",
@@ -23007,9 +23408,13 @@
     "Pickett's Charge",
     "Red Turban Rebellion",
     "Siege of Calais",
+    "Siege of Malta",
     "Siege of Orléans",
+    "Siege of Sevastopol",
     "Siege of Suiyang",
+    "Siege of Tenochtitlan",
     "Soviet-Afghan War",
+    "The Albigensian Crusade",
     "The Algerian War",
     "The American Civil War",
     "The American Revolution",
@@ -23162,14 +23567,17 @@
     "Sébastien Le Prestre de Vauban"
   ],
   "Military Ships": [
+    "AAV-7",
     "Akagi",
     "Ark Royal",
+    "BRDM-2",
     "Bellerophon",
     "Bismarck",
     "Bonhomme Richard",
     "Bucentaure",
     "Bush",
     "Carl Vinson",
+    "DUKW",
     "Eisenhower",
     "Enterprise",
     "Gneisenau",
@@ -23178,9 +23586,12 @@
     "Hood",
     "Hornet",
     "Kaga",
+    "LCAC",
+    "LVT-4",
     "Lincoln",
     "Musashi",
     "Nimitz",
+    "PT-76",
     "Prince of Wales",
     "Reagan",
     "Redoutable",
@@ -23241,6 +23652,7 @@
     "Ant",
     "Ardipithecus",
     "Asparagus",
+    "Axolotl",
     "Bamboo",
     "Barley",
     "Basil",
@@ -23260,6 +23672,7 @@
     "Butterfly",
     "Cacao",
     "Cactus",
+    "Caecilian",
     "Cardamom",
     "Carp",
     "Cashew",
@@ -23307,6 +23720,7 @@
     "Fly",
     "Formation of Himalayas",
     "Fox",
+    "Frog",
     "Gannet",
     "Ginger",
     "Ginkgo",
@@ -23321,6 +23735,7 @@
     "Hawk",
     "Hazelnut",
     "Heather",
+    "Hellbender",
     "Horse",
     "Horsetail",
     "Hummingbird",
@@ -23350,7 +23765,10 @@
     "Mosquito",
     "Moss",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
     "Mulberry",
+    "Newt",
     "Nutmeg",
     "Oak",
     "Olive",
@@ -23386,6 +23804,7 @@
     "Saffron",
     "Sage",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Scorpion",
     "Seahawk",
@@ -23405,6 +23824,7 @@
     "Thistle",
     "Thyme",
     "Tick",
+    "Toad",
     "Tomato",
     "Tulip",
     "Tuna",
@@ -29690,13 +30110,50 @@
   ],
   "Naval Battles": [
     "Battle of Actium",
+    "Battle of Anzio",
+    "Battle of Guadalcanal",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
     "Battle of Jutland",
     "Battle of Lake Poyang",
     "Battle of Lepanto",
+    "Battle of Leyte Gulf",
+    "Battle of Manila Bay",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
     "Battle of Red Cliff",
+    "Battle of Saipan",
+    "Battle of Salamis",
+    "Battle of Salerno",
+    "Battle of Santiago de Cuba",
     "Battle of Sluys",
+    "Battle of Tarawa",
     "Battle of Trafalgar",
-    "Battle of Yamen"
+    "Battle of Tsushima",
+    "Battle of Yamen",
+    "Battle of the Coral Sea",
+    "Bay of Pigs",
+    "Bay of Pigs Invasion",
+    "D-Day",
+    "Gallipoli Campaign",
+    "Imjin War",
+    "Invasion of Sicily",
+    "Operation Overlord",
+    "Siege of Malta",
+    "Siege of Sevastopol",
+    "Siege of Tenochtitlan",
+    "The Crimean War",
+    "The Hundred Years War",
+    "The Italian Wars",
+    "The Korean War",
+    "The Napoleonic Wars",
+    "The Russo-Japanese War",
+    "The Seven Years' War",
+    "The Spanish Armada",
+    "The Spanish-American War",
+    "World War I",
+    "World War II"
   ],
   "Neogene Period": [
     "Albatross",
@@ -29707,6 +30164,7 @@
     "Ardipithecus",
     "Asparagus",
     "Australopithecus",
+    "Axolotl",
     "Bamboo",
     "Barley",
     "Basilisk",
@@ -29726,6 +30184,7 @@
     "Butterfly",
     "Cacao",
     "Cactus",
+    "Caecilian",
     "Cardamom",
     "Carp",
     "Cashew",
@@ -29773,6 +30232,7 @@
     "Flea",
     "Fly",
     "Fox",
+    "Frog",
     "Gannet",
     "Ginger",
     "Ginkgo",
@@ -29787,6 +30247,7 @@
     "Hawk",
     "Hazelnut",
     "Heather",
+    "Hellbender",
     "Horse",
     "Horsetail",
     "Hummingbird",
@@ -29819,7 +30280,10 @@
     "Mosquito",
     "Moss",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
     "Mulberry",
+    "Newt",
     "Oak",
     "Olive",
     "Orca",
@@ -29852,6 +30316,7 @@
     "Rosemary",
     "Saffron",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Scorpion",
     "Seahawk",
@@ -29873,6 +30338,7 @@
     "Thyme",
     "Tick",
     "Titanis",
+    "Toad",
     "Tulip",
     "Tuna",
     "Turkey",
@@ -30069,7 +30535,8 @@
     "Blue Whale",
     "Great White Shark",
     "Humpback Whale",
-    "Killer Whale"
+    "Killer Whale",
+    "Mudskipper"
   ],
   "Ocean Formation": [
     "Opening of Atlantic Ocean"
@@ -30534,6 +31001,7 @@
     "Ambulocetus",
     "Ant",
     "Asparagus",
+    "Axolotl",
     "Bamboo",
     "Basilisk",
     "Basilosaurus",
@@ -30547,6 +31015,7 @@
     "Buttercup",
     "Butterfly",
     "Cactus",
+    "Caecilian",
     "Cardamom",
     "Cashew",
     "Cedar",
@@ -30580,6 +31049,7 @@
     "Firefly",
     "Flea",
     "Fly",
+    "Frog",
     "Gastornis",
     "Ginger",
     "Ginkgo",
@@ -30589,6 +31059,7 @@
     "Hawk",
     "Hazelnut",
     "Heather",
+    "Hellbender",
     "Horse",
     "Horsetail",
     "Hyaenodon",
@@ -30611,7 +31082,10 @@
     "Mosquito",
     "Moss",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
     "Mulberry",
+    "Newt",
     "Oak",
     "Olive",
     "Orchid",
@@ -30636,6 +31110,7 @@
     "Rosemary",
     "Saffron",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Scorpion",
     "Seal",
@@ -30651,6 +31126,7 @@
     "Tick",
     "Titanoboa",
     "Titanomyrma",
+    "Toad",
     "Tulip",
     "Tuna",
     "Turmeric",
@@ -32295,6 +32771,7 @@
     "Asparagus",
     "Aurochs",
     "Australopithecus",
+    "Axolotl",
     "Bamboo",
     "Barley",
     "Basil",
@@ -32322,6 +32799,7 @@
     "Cabbage",
     "Cacao",
     "Cactus",
+    "Caecilian",
     "Cardamom",
     "Cardinal",
     "Carp",
@@ -32384,6 +32862,7 @@
     "Flea",
     "Fly",
     "Fox",
+    "Frog",
     "Gannet",
     "Garlic",
     "Ginger",
@@ -32400,6 +32879,7 @@
     "Hawk",
     "Hazelnut",
     "Heather",
+    "Hellbender",
     "Horse",
     "Horsetail",
     "Huckleberry",
@@ -32436,7 +32916,10 @@
     "Mosquito",
     "Moss",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
     "Mulberry",
+    "Newt",
     "Nutmeg",
     "Oak",
     "Oats",
@@ -32479,6 +32962,7 @@
     "Saffron",
     "Sage",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Salmonberry",
     "Scorpion",
@@ -32507,6 +32991,7 @@
     "Tick",
     "Tiger",
     "Titanis",
+    "Toad",
     "Toba Supereruption",
     "Tomato",
     "Tulip",
@@ -32538,6 +33023,7 @@
     "Ardipithecus",
     "Asparagus",
     "Australopithecus",
+    "Axolotl",
     "Bamboo",
     "Barley",
     "Basil",
@@ -32558,6 +33044,7 @@
     "Butterfly",
     "Cacao",
     "Cactus",
+    "Caecilian",
     "Cardamom",
     "Carp",
     "Cashew",
@@ -32607,6 +33094,7 @@
     "Flea",
     "Fly",
     "Fox",
+    "Frog",
     "Gannet",
     "Ginger",
     "Ginkgo",
@@ -32622,6 +33110,7 @@
     "Hawk",
     "Hazelnut",
     "Heather",
+    "Hellbender",
     "Horse",
     "Horsetail",
     "Hummingbird",
@@ -32652,7 +33141,10 @@
     "Mosquito",
     "Moss",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
     "Mulberry",
+    "Newt",
     "Nutmeg",
     "Oak",
     "Olive",
@@ -32687,6 +33179,7 @@
     "Saffron",
     "Sage",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Scorpion",
     "Seahawk",
@@ -32708,6 +33201,7 @@
     "Thyme",
     "Tick",
     "Titanis",
+    "Toad",
     "Tomato",
     "Tulip",
     "Tuna",
@@ -33125,6 +33619,7 @@
     "Asparagus",
     "Aurochs",
     "Australopithecus",
+    "Axolotl",
     "Bamboo",
     "Barley",
     "Basilisk",
@@ -33150,6 +33645,7 @@
     "Cabbage",
     "Cacao",
     "Cactus",
+    "Caecilian",
     "Cardamom",
     "Cardinal",
     "Carp",
@@ -33213,6 +33709,7 @@
     "Flea",
     "Fly",
     "Fox",
+    "Frog",
     "Gannet",
     "Garlic",
     "Ginger",
@@ -33229,6 +33726,7 @@
     "Hawk",
     "Hazelnut",
     "Heather",
+    "Hellbender",
     "Horse",
     "Horsetail",
     "Huckleberry",
@@ -33264,7 +33762,10 @@
     "Mosquito",
     "Moss",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
     "Mulberry",
+    "Newt",
     "Oak",
     "Oats",
     "Olive",
@@ -33307,6 +33808,7 @@
     "Rosemary",
     "Saffron",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Salmonberry",
     "Scorpion",
@@ -33337,6 +33839,7 @@
     "Tick",
     "Tiger",
     "Titanis",
+    "Toad",
     "Tulip",
     "Tuna",
     "Turkey",
@@ -33414,6 +33917,7 @@
     "Arthropleura",
     "Aurochs",
     "Australopithecus",
+    "Axolotl",
     "Basilisk",
     "Basilosaurus",
     "Bear",
@@ -33433,6 +33937,7 @@
     "Buffalo",
     "Bull",
     "Butterfly",
+    "Caecilian",
     "Camarasaurus",
     "Cardinal",
     "Carnotaurus",
@@ -33483,6 +33988,7 @@
     "Flea",
     "Fly",
     "Fox",
+    "Frog",
     "Gannet",
     "Gastornis",
     "Giganotosaurus",
@@ -33497,6 +34003,7 @@
     "Hallucigenia",
     "Harambe",
     "Hawk",
+    "Hellbender",
     "Hen",
     "Horse",
     "Hummingbird",
@@ -33533,6 +34040,9 @@
     "Mosasaurus",
     "Mosquito",
     "Moth",
+    "Mudpuppy",
+    "Mudskipper",
+    "Newt",
     "Opabinia",
     "Orca",
     "Ornithomimus",
@@ -33576,6 +34086,7 @@
     "Rooster",
     "Sabretooth",
     "Sailfish",
+    "Salamander",
     "Salmon",
     "Scorpion",
     "Seahawk",
@@ -33606,6 +34117,7 @@
     "Titanis",
     "Titanoboa",
     "Titanomyrma",
+    "Toad",
     "Triceratops",
     "Trilobite",
     "Trilobites",
@@ -35716,10 +36228,12 @@
     "Annie Oakley"
   ],
   "Ships": [
+    "AAV-7",
     "Akagi",
     "Andrea Doria",
     "Anthem of the Seas",
     "Ark Royal",
+    "BRDM-2",
     "Beagle",
     "Bellerophon",
     "Bismarck",
@@ -35734,6 +36248,7 @@
     "Concordia",
     "Conte di Savoia",
     "Costa Smeralda",
+    "DUKW",
     "Discovery",
     "Edmund Fitzgerald",
     "Eisenhower",
@@ -35754,6 +36269,8 @@
     "Icon of the Seas",
     "Iris",
     "Kaga",
+    "LCAC",
+    "LVT-4",
     "Los Angeles",
     "Lusitania",
     "MSC Meraviglia",
@@ -35768,6 +36285,7 @@
     "Oasis of the Seas",
     "Odyssey",
     "Olympic",
+    "PT-76",
     "Pinta",
     "Queen Elizabeth",
     "Queen Elizabeth 2",
@@ -35841,6 +36359,21 @@
     "Mapo Tofu",
     "Twice Cooked Pork",
     "Yu Xiang Qie Zi"
+  ],
+  "Sieges": [
+    "Bar Kokhba Revolt",
+    "Battle of Alesia",
+    "Battle of Dien Bien Phu",
+    "Jingkang Incident",
+    "Siege of Calais",
+    "Siege of Malta",
+    "Siege of Orléans",
+    "Siege of Sevastopol",
+    "Siege of Suiyang",
+    "Siege of Tenochtitlan",
+    "The Battle of Stalingrad",
+    "The Boxer Rebellion",
+    "The Trojan War"
   ],
   "Silent Films": [
     "Metropolis"
@@ -36464,6 +36997,9 @@
   "Starts with A W": [
     "A Wrinkle in Time"
   ],
+  "Starts with AAV": [
+    "AAV-7"
+  ],
   "Starts with ABB": [
     "Abbey Road",
     "Abbottabad"
@@ -36834,6 +37370,9 @@
     "Axe",
     "Axel Heiberg"
   ],
+  "Starts with AXO": [
+    "Axolotl"
+  ],
   "Starts with AYR": [
     "Ayran"
   ],
@@ -36946,21 +37485,38 @@
     "Battle of Actium",
     "Battle of Agincourt",
     "Battle of Alesia",
+    "Battle of Anzio",
     "Battle of Carrhae",
     "Battle of Crécy",
     "Battle of Dien Bien Phu",
+    "Battle of Guadalcanal",
+    "Battle of Hattin",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
     "Battle of Jutland",
     "Battle of Lake Poyang",
     "Battle of Lepanto",
+    "Battle of Leyte Gulf",
+    "Battle of Manila Bay",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
     "Battle of Pharsalus",
     "Battle of Philippi",
     "Battle of Poitiers",
     "Battle of Red Cliff",
+    "Battle of Saipan",
+    "Battle of Salamis",
+    "Battle of Salerno",
+    "Battle of Santiago de Cuba",
     "Battle of Sluys",
+    "Battle of Tarawa",
     "Battle of Trafalgar",
+    "Battle of Tsushima",
     "Battle of Tumu Fortress",
     "Battle of Yamen",
     "Battle of Zhizhi",
+    "Battle of the Coral Sea",
     "Battlefield",
     "Batu Khan"
   ],
@@ -37201,6 +37757,9 @@
     "Bravo",
     "Brazil"
   ],
+  "Starts with BRD": [
+    "BRDM-2"
+  ],
   "Starts with BRE": [
     "Bread",
     "Breakup of Pangea",
@@ -37313,6 +37872,7 @@
     "Cadillac"
   ],
   "Starts with CAE": [
+    "Caecilian",
     "Caesar",
     "Caesar Cocktail",
     "Caesar crosses the Rubicon"
@@ -37743,6 +38303,9 @@
     "Czech Republic",
     "Czechoslovakia"
   ],
+  "Starts with D-D": [
+    "D-Day"
+  ],
   "Starts with DA ": [
     "Da Vinci"
   ],
@@ -37992,6 +38555,7 @@
     "Dugong"
   ],
   "Starts with DUK": [
+    "DUKW",
     "Duke",
     "Duke Ellington"
   ],
@@ -38409,6 +38973,7 @@
     "Frigate"
   ],
   "Starts with FRO": [
+    "Frog",
     "From Up on Poppy Hill",
     "Frozen"
   ],
@@ -38436,7 +39001,8 @@
     "Galaxy Quest",
     "Galen",
     "Galileo",
-    "Galley"
+    "Galley",
+    "Gallipoli Campaign"
   ],
   "Starts with GAM": [
     "Gambia",
@@ -38800,6 +39366,7 @@
     "Helios",
     "Helium",
     "Hell",
+    "Hellbender",
     "Helmuth von Moltke the Elder"
   ],
   "Starts with HEN": [
@@ -39072,6 +39639,7 @@
     "Inuit"
   ],
   "Starts with INV": [
+    "Invasion of Sicily",
     "Invictus"
   ],
   "Starts with IOT": [
@@ -39592,6 +40160,9 @@
   "Starts with LAW": [
     "Lawrence of Arabia"
   ],
+  "Starts with LCA": [
+    "LCAC"
+  ],
   "Starts with LEA": [
     "League of Legends",
     "Learjet"
@@ -39782,6 +40353,9 @@
   ],
   "Starts with LUZ": [
     "Luzon"
+  ],
+  "Starts with LVT": [
+    "LVT-4"
   ],
   "Starts with LYR": [
     "Lyra"
@@ -40134,6 +40708,10 @@
   "Starts with MUC": [
     "Much Ado About Nothing"
   ],
+  "Starts with MUD": [
+    "Mudpuppy",
+    "Mudskipper"
+  ],
   "Starts with MUG": [
     "Mughal Empire"
   ],
@@ -40243,6 +40821,7 @@
     "New York Bagel",
     "New Zealand",
     "Newspaper",
+    "Newt",
     "Newton"
   ],
   "Starts with NIC": [
@@ -40828,6 +41407,9 @@
   "Starts with PSY": [
     "Psycho"
   ],
+  "Starts with PT-": [
+    "PT-76"
+  ],
   "Starts with PTE": [
     "Pteranodon",
     "Pterodactyl",
@@ -41172,6 +41754,7 @@
   ],
   "Starts with SAL": [
     "Saladin",
+    "Salamander",
     "Salem",
     "Salem Witch Trials",
     "Salem's Lot",
@@ -41352,8 +41935,11 @@
   ],
   "Starts with SIE": [
     "Siege of Calais",
+    "Siege of Malta",
     "Siege of Orléans",
+    "Siege of Sevastopol",
     "Siege of Suiyang",
+    "Siege of Tenochtitlan",
     "Sierra",
     "Sierra Leone"
   ],
@@ -42226,6 +42812,7 @@
     "To be or not to be"
   ],
   "Starts with TOA": [
+    "Toad",
     "Toaster"
   ],
   "Starts with TOB": [
@@ -43311,9 +43898,13 @@
   "The Cranberries": [
     "Zombie"
   ],
+  "The Crimean War": [
+    "Siege of Sevastopol"
+  ],
   "The Crusades": [
     "Alfonso de Borja",
     "Antioch",
+    "Battle of Hattin",
     "Bohemond",
     "County of Tripoli",
     "Deus Vult",
@@ -43329,6 +43920,7 @@
     "Kingdom of Jerusalem",
     "Louis IX",
     "Louis VII",
+    "Malta",
     "Philip II of France",
     "Prester John",
     "Principality of Antioch",
@@ -43337,6 +43929,8 @@
     "Robin Hood: Prince of Thieves",
     "Rodrigo Borgia",
     "Saladin",
+    "Siege of Malta",
+    "The Albigensian Crusade",
     "The Crusades",
     "The First Crusade",
     "Urban II"
@@ -43363,6 +43957,9 @@
     "Remember, remember",
     "Robert Catesby",
     "The 5th of November"
+  ],
+  "The Korean War": [
+    "Battle of Inchon"
   ],
   "The Land Before Time": [
     "Cera",
@@ -43395,6 +43992,9 @@
     "Michelangelo",
     "The Renaissance"
   ],
+  "The Russo-Japanese War": [
+    "Battle of Tsushima"
+  ],
   "The Sinking of RMS Titanic": [
     "Archibald Butt",
     "Captain Smith",
@@ -43408,6 +44008,10 @@
     "Thomas Andrews",
     "Titanic",
     "Titanic: Adventure Out of Time"
+  ],
+  "The Spanish-American War": [
+    "Battle of Manila Bay",
+    "Battle of Santiago de Cuba"
   ],
   "The Who": [
     "My Generation"
@@ -43525,6 +44129,7 @@
     "A Good Day to Die Hard",
     "A Map of the World",
     "A Wrinkle in Time",
+    "AAV-7",
     "AIDS",
     "Absalom, Absalom!",
     "Acura",
@@ -43590,6 +44195,20 @@
     "Batman",
     "Baton Rouge",
     "Battle Beyond the Stars",
+    "Battle of Anzio",
+    "Battle of Guadalcanal",
+    "Battle of Inchon",
+    "Battle of Iwo Jima",
+    "Battle of Leyte Gulf",
+    "Battle of Manila Bay",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
+    "Battle of Saipan",
+    "Battle of Salerno",
+    "Battle of Santiago de Cuba",
+    "Battle of Tarawa",
+    "Battle of the Coral Sea",
     "Bay of Pigs Invasion",
     "Beach Volleyball",
     "Beauty and the Beast",
@@ -43691,7 +44310,9 @@
     "Crash",
     "Creature from the Black Lagoon",
     "Cuban Missile Crisis",
+    "D-Day",
     "DC-3",
+    "DUKW",
     "Dacron",
     "Daisy",
     "Dallas",
@@ -43832,6 +44453,7 @@
     "Hedwig and the Angry Inch",
     "Helen Keller",
     "Helena",
+    "Hellbender",
     "Her",
     "Hercules",
     "Here I Stand",
@@ -43877,6 +44499,7 @@
     "Insomnia",
     "Interstellar",
     "Into the Woods",
+    "Invasion of Sicily",
     "Iris",
     "Isidor Straus",
     "It's a Wonderful Life",
@@ -43927,6 +44550,8 @@
     "Kung Fu Panda",
     "Kung Fu Panda 2",
     "L. Ron Hubbard",
+    "LCAC",
+    "LVT-4",
     "La La Land",
     "Lady and the Tramp",
     "Lando",
@@ -44010,6 +44635,7 @@
     "Morse",
     "Motocross",
     "Mount St. Helens Eruption",
+    "Mudpuppy",
     "Mulan",
     "Mustang",
     "Mustard",
@@ -44441,6 +45067,9 @@
   ],
   "Things Australian": [
     "Australia",
+    "Battle of Guadalcanal",
+    "Battle of the Coral Sea",
+    "Gallipoli Campaign",
     "Moulin Rouge!",
     "Predestination",
     "Sydney",
@@ -44549,9 +45178,11 @@
     "Aston Martin",
     "Bangers and Mash",
     "Battle of Agincourt",
+    "Battle of Anzio",
     "Battle of Crécy",
     "Battle of Jutland",
     "Battle of Poitiers",
+    "Battle of Salerno",
     "Battle of Sluys",
     "Battle of Trafalgar",
     "Beagle",
@@ -44581,6 +45212,7 @@
     "Coronation of Elizabeth II",
     "Cream",
     "Cricket",
+    "D-Day",
     "Darwin",
     "Dirac",
     "Discovery",
@@ -44607,6 +45239,7 @@
     "Formula One",
     "Four Weddings and a Funeral",
     "Frankenstein",
+    "Gallipoli Campaign",
     "Gandhi",
     "George",
     "George Eliot",
@@ -44641,6 +45274,7 @@
     "Howards End",
     "Hurricane",
     "If....",
+    "Invasion of Sicily",
     "Isabella Bird",
     "Isle of Man",
     "Isle of Wight",
@@ -44738,6 +45372,7 @@
     "Shepherd's Pie",
     "Shetland",
     "Siege of Calais",
+    "Siege of Sevastopol",
     "Skye",
     "Slumdog Millionaire",
     "Snowman",
@@ -44896,6 +45531,7 @@
     "Cedar",
     "Coffee Crisp",
     "Curling",
+    "D-Day",
     "Devon",
     "Drake",
     "Edmund Fitzgerald",
@@ -45186,6 +45822,7 @@
   "Things Egyptian": [
     "Akhenaten",
     "Alexandria",
+    "Battle of Hattin",
     "Cleopatra",
     "Egypt",
     "Nasser",
@@ -45214,6 +45851,7 @@
     "Prester John"
   ],
   "Things European": [
+    "Battle of Hattin",
     "The Crusades",
     "The First Crusade",
     "The Renaissance"
@@ -45223,6 +45861,7 @@
     "Faroe Islands"
   ],
   "Things Filipino": [
+    "Battle of Leyte Gulf",
     "Cebu",
     "Luzon",
     "Mindanao",
@@ -45269,6 +45908,7 @@
     "Croissant",
     "Croque Monsieur",
     "Cycling",
+    "D-Day",
     "Debussy",
     "Duck Confit",
     "Eclair",
@@ -45278,6 +45918,7 @@
     "Fencing",
     "France",
     "French Onion Soup",
+    "Gallipoli Campaign",
     "Gaul",
     "Hollandaise",
     "I think, therefore I am",
@@ -45325,6 +45966,7 @@
     "Sarah Bernhardt",
     "Siege of Calais",
     "Siege of Orléans",
+    "Siege of Sevastopol",
     "Solitaire",
     "Souffle",
     "Sparkling Wine",
@@ -45367,7 +46009,9 @@
     "Audi",
     "BMW",
     "Bach",
+    "Battle of Anzio",
     "Battle of Jutland",
+    "Battle of Salerno",
     "Beer",
     "Beethoven",
     "Berlin",
@@ -45378,6 +46022,7 @@
     "Brezel",
     "Charlemagne",
     "Clara Schumann",
+    "D-Day",
     "East Germany",
     "Einstein",
     "Fall of the Berlin Wall",
@@ -45393,6 +46038,7 @@
     "Heinz Guderian",
     "Helmuth von Moltke the Elder",
     "Here I Stand",
+    "Invasion of Sicily",
     "Kartoffelsalat",
     "Kepler",
     "Käsespätzle",
@@ -45439,6 +46085,7 @@
     "Athena",
     "Athens",
     "Baklava",
+    "Battle of Salamis",
     "Bellerophon",
     "Cleopatra",
     "Constantinople",
@@ -45620,7 +46267,9 @@
     "Basilica Aemilia",
     "Basilica Porcia",
     "Basilica Sempronia",
+    "Battle of Anzio",
     "Battle of Lepanto",
+    "Battle of Salerno",
     "Bohemond",
     "Bolognese",
     "Bruschetta",
@@ -45664,6 +46313,7 @@
     "Herculaneum",
     "Inferno",
     "Innocent III",
+    "Invasion of Sicily",
     "Ischia",
     "Italy",
     "Juliet",
@@ -45743,6 +46393,16 @@
     "Akira",
     "All You Need Is Kill",
     "Arrietty",
+    "Battle of Guadalcanal",
+    "Battle of Iwo Jima",
+    "Battle of Leyte Gulf",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
+    "Battle of Saipan",
+    "Battle of Tarawa",
+    "Battle of Tsushima",
+    "Battle of the Coral Sea",
     "Castle in the Sky",
     "Colorless Tsukuru Tazaki",
     "Dango",
@@ -45907,6 +46567,7 @@
     "2PM",
     "BLACKPINK",
     "BTS",
+    "Battle of Inchon",
     "Bibimbap",
     "Bingsu",
     "Bulgogi",
@@ -45989,6 +46650,10 @@
   "Things Malian": [
     "Mali"
   ],
+  "Things Maltese": [
+    "Malta",
+    "Siege of Malta"
+  ],
   "Things Marshall Islander": [
     "Saipan"
   ],
@@ -46000,6 +46665,7 @@
   ],
   "Things Mexican": [
     "Agua Fresca",
+    "Axolotl",
     "Burrito",
     "Cancun",
     "Ceviche",
@@ -46017,6 +46683,7 @@
     "Mole Poblano",
     "Quesadilla",
     "Salsa",
+    "Siege of Tenochtitlan",
     "Taco",
     "Tamale",
     "Tequila",
@@ -46130,6 +46797,7 @@
     "Paraguay"
   ],
   "Things Persian": [
+    "Battle of Salamis",
     "Xerxes"
   ],
   "Things Peruvian": [
@@ -46282,6 +46950,8 @@
     "Romania"
   ],
   "Things Russian": [
+    "BRDM-2",
+    "Battle of Tsushima",
     "Blini",
     "Borscht",
     "Catherine",
@@ -46302,11 +46972,13 @@
     "MiG-15",
     "MiG-21",
     "Olivier Salad",
+    "PT-76",
     "Pelmeni",
     "Prokofiev",
     "Rasputin",
     "Russia",
     "Shashlik",
+    "Siege of Sevastopol",
     "Solyanka",
     "Soviet Union",
     "Soviet-Afghan War",
@@ -46399,6 +47071,8 @@
     "Airbus",
     "Alfonso de Borja",
     "Alhambra",
+    "Battle of Manila Bay",
+    "Battle of Santiago de Cuba",
     "Battle of Trafalgar",
     "Canary Islands",
     "Catherine of Aragon",
@@ -46440,6 +47114,7 @@
     "Santissima Trinidad",
     "Seat",
     "Sherry",
+    "Siege of Tenochtitlan",
     "Spain",
     "Spanish Empire",
     "Tapas",
@@ -46641,9 +47316,12 @@
     "Battle of Lepanto",
     "Blue Mosque",
     "Constantinople",
+    "Gallipoli Campaign",
     "Hagia Sophia",
     "Mehmed II",
     "Mehmet Ali Agca",
+    "Siege of Malta",
+    "Siege of Sevastopol",
     "Suleiman the Magnificent",
     "The Armenian Genocide",
     "The Fall of Constantinople",
@@ -47181,13 +47859,17 @@
     "United States"
   ],
   "US Navy": [
+    "AAV-7",
     "Bonhomme Richard",
     "Bush",
     "Carl Vinson",
+    "DUKW",
     "Eisenhower",
     "Enterprise",
     "Hancock",
     "Hornet",
+    "LCAC",
+    "LVT-4",
     "Lincoln",
     "Los Angeles",
     "Nimitz",
@@ -47597,8 +48279,10 @@
     "World War II"
   ],
   "Warships": [
+    "AAV-7",
     "Akagi",
     "Ark Royal",
+    "BRDM-2",
     "Bellerophon",
     "Bismarck",
     "Bonhomme Richard",
@@ -47613,9 +48297,12 @@
     "Hood",
     "Hornet",
     "Kaga",
+    "LCAC",
+    "LVT-4",
     "Lincoln",
     "Musashi",
     "Nimitz",
+    "PT-76",
     "Prince of Wales",
     "Reagan",
     "Redoutable",
@@ -47943,6 +48630,7 @@
   "World War I": [
     "Battle of Jutland",
     "Britannic",
+    "Gallipoli Campaign",
     "Hood",
     "June 28th, 1914",
     "Lusitania",
@@ -47956,9 +48644,22 @@
     "Ark Royal",
     "B-17",
     "B-29",
+    "Battle of Anzio",
+    "Battle of Guadalcanal",
+    "Battle of Iwo Jima",
+    "Battle of Leyte Gulf",
+    "Battle of Midway",
+    "Battle of Okinawa",
+    "Battle of Peleliu",
+    "Battle of Saipan",
+    "Battle of Salerno",
+    "Battle of Tarawa",
+    "Battle of the Coral Sea",
     "Bismarck",
     "Blood, toil, tears and sweat",
     "Corsair",
+    "D-Day",
+    "DUKW",
     "Dauntless",
     "December 7th, 1941",
     "Devastator",
@@ -47973,6 +48674,7 @@
     "Hood",
     "Hornet",
     "Hurricane",
+    "Invasion of Sicily",
     "Jill",
     "Joseph Stalin",
     "Judy",
@@ -47981,6 +48683,7 @@
     "Juno",
     "Kaga",
     "Kate",
+    "LVT-4",
     "Lancaster",
     "Little Boy",
     "Messerschmitt",

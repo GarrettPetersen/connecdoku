@@ -11478,5 +11478,45 @@
         "Die Hard with a Vengeance"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1st Century BC",
+      "American Civil War",
+      "The American Revolution",
+      "World War II"
+    ],
+    "cols": [
+      "Dates",
+      "Military Conflicts",
+      "Military Leaders",
+      "National Leaders"
+    ],
+    "words": [
+      [
+        "Ides of March",
+        "Battle of Pharsalus",
+        "Mark Antony",
+        "Caesar"
+      ],
+      [
+        "Four score and seven years ago",
+        "Gettysburg",
+        "Robert E. Lee",
+        "Lincoln"
+      ],
+      [
+        "1776",
+        "The American Revolution",
+        "Lafayette",
+        "Jefferson"
+      ],
+      [
+        "June 6th, 1944",
+        "Operation Overlord",
+        "Montgomery",
+        "Truman"
+      ]
+    ]
   }
 ]
