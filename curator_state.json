@@ -5,719 +5,721 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "a747d7f58187a8590e0f31f3204a0270daebc7f64274a9c40996608a2a11496c",
+    "hash": "2297c78de8d144332096d7828c1443d39cfdb86d749ed38fb8400edaef0cb764",
     "rows": [
-      "1st Century BC",
-      "American Civil War",
-      "The American Revolution",
-      "World War II"
+      "2nd Century",
+      "Qing Dynasty",
+      "Tang Dynasty",
+      "Things Turkish"
     ],
     "cols": [
-      "Dates",
-      "Military Conflicts",
-      "Military Leaders",
-      "National Leaders"
+      "Buildings",
+      "Locations in Asia",
+      "Real People",
+      "Sieges"
     ],
     "timestamp": null,
-    "qualityScore": 13.920000000000002,
-    "maxSimilarityToPast": 0.52,
-    "finalScore": 9.760000000000002
+    "qualityScore": 17.6,
+    "maxSimilarityToPast": 0.3959,
+    "finalScore": 14.432800000000002
   },
   "viableGrid": [
     [
       [
-        "Ides of March"
+        "Circus Maximus",
+        "Hadrian's Wall",
+        "Pantheon"
       ],
       [
-        "Battle of Actium",
-        "Battle of Alesia",
-        "Battle of Carrhae",
-        "Battle of Pharsalus",
-        "Battle of Philippi",
-        "Battle of Zhizhi",
-        "Han Wudi's Defeat of the Xiongnu",
-        "Third Servile War"
+        "Syria Palaestina"
       ],
       [
-        "Gaius Marius",
-        "Mark Antony"
+        "Commodus",
+        "Galen",
+        "Hadrian",
+        "Marcus Aurelius",
+        "Narcissus the Wrestler",
+        "Trajan",
+        "Zhang Daoling",
+        "Zhang Heng"
       ],
       [
-        "Caesar",
-        "Emperor Wen of Han"
+        "Bar Kokhba Revolt"
       ]
     ],
     [
       [
-        "Four score and seven years ago"
+        "Forbidden City"
       ],
       [
-        "Gettysburg",
-        "The American Civil War"
+        "Beijing"
       ],
       [
-        "Robert E. Lee"
+        "Hong Xiuquan"
       ],
       [
-        "Lincoln"
+        "The Boxer Rebellion"
       ]
     ],
     [
       [
-        "1776"
+        "Xuanwu Gate"
       ],
       [
-        "The American Revolution"
+        "Chang'an"
       ],
       [
-        "Lafayette"
+        "Du Fu",
+        "Huineng",
+        "Li Bai",
+        "Li Jiancheng",
+        "Li Shimin",
+        "Li Yuanji",
+        "Wu Zetian",
+        "Zhiyi"
       ],
       [
-        "Adams",
-        "Jefferson"
+        "Siege of Suiyang"
       ]
     ],
     [
       [
-        "December 7th, 1941",
-        "June 4th, 1942",
-        "June 6th, 1944"
+        "Blue Mosque",
+        "Hagia Sophia"
       ],
       [
-        "Nuclear Bombing of Hiroshima",
-        "Nuclear Bombing of Nagasaki",
-        "Operation Overlord"
+        "Troy",
+        "Turkey"
       ],
       [
-        "Heinz Guderian",
-        "Montgomery",
-        "Nimitz",
-        "Winston Churchill"
+        "Mehmed II",
+        "Mehmet Ali Agca",
+        "Suleiman the Magnificent",
+        "Timur"
       ],
       [
-        "Bismarck",
-        "Joseph Stalin",
-        "Truman"
+        "Siege of Malta",
+        "Siege of Sevastopol"
       ]
     ]
   ],
   "chosen": [
     [
-      "Ides of March",
-      "Battle of Pharsalus",
-      "Mark Antony",
-      "Caesar"
+      "Hadrian's Wall",
+      "Syria Palaestina",
+      "Marcus Aurelius",
+      "Bar Kokhba Revolt"
     ],
     [
-      "Four score and seven years ago",
-      "Gettysburg",
-      "Robert E. Lee",
-      "Lincoln"
+      "Forbidden City",
+      "Beijing",
+      "Hong Xiuquan",
+      "The Boxer Rebellion"
     ],
     [
-      "1776",
-      "The American Revolution",
-      "Lafayette",
-      "Jefferson"
+      "Xuanwu Gate",
+      "Chang'an",
+      "Li Bai",
+      "Siege of Suiyang"
     ],
     [
-      "June 6th, 1944",
-      "Operation Overlord",
-      "Montgomery",
-      "Truman"
+      "Hagia Sophia",
+      "Turkey",
+      "Suleiman the Magnificent",
+      "Siege of Malta"
     ]
   ],
   "usedWords": [
-    "Ides of March",
-    "Battle of Pharsalus",
-    "Mark Antony",
-    "Caesar",
-    "Four score and seven years ago",
-    "Gettysburg",
-    "Robert E. Lee",
-    "Lincoln",
-    "1776",
-    "The American Revolution",
-    "Lafayette",
-    "Jefferson",
-    "June 6th, 1944",
-    "Operation Overlord",
-    "Montgomery",
-    "Truman"
+    "Hadrian's Wall",
+    "Syria Palaestina",
+    "Marcus Aurelius",
+    "Bar Kokhba Revolt",
+    "Forbidden City",
+    "Beijing",
+    "Hong Xiuquan",
+    "The Boxer Rebellion",
+    "Xuanwu Gate",
+    "Chang'an",
+    "Li Bai",
+    "Siege of Suiyang",
+    "Hagia Sophia",
+    "Turkey",
+    "Suleiman the Magnificent",
+    "Siege of Malta"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "a3dcbd2f0557f13f7d6b1f2c93461d5ed87c0b3997ed907ace0642e902d4d490",
+      "hash": "2297c78de8d144332096d7828c1443d39cfdb86d749ed38fb8400edaef0cb764",
       "rows": [
-        "1994",
-        "2008",
-        "People",
-        "Stories about Families"
+        "2nd Century",
+        "Qing Dynasty",
+        "Tang Dynasty",
+        "Things Turkish"
       ],
       "cols": [
-        "Coming of Age Stories",
-        "Crime Stories",
+        "Buildings",
+        "Locations in Asia",
+        "Real People",
+        "Sieges"
+      ],
+      "timestamp": null,
+      "qualityScore": 17.6,
+      "maxSimilarityToPast": 0.3959,
+      "finalScore": 14.432800000000002
+    },
+    {
+      "hash": "877782cfcc297dcf395474b323a47e95393debd409c16b88b760ffa26d55f6b0",
+      "rows": [
+        "17th Century",
+        "19th Century",
+        "Ancient Figures",
+        "Things Greek"
+      ],
+      "cols": [
+        "Military Reformers",
+        "Period Stories",
+        "Poets",
+        "Tragedy Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.82,
+      "maxSimilarityToPast": 0.3913,
+      "finalScore": 13.6896
+    },
+    {
+      "hash": "f0295d74f9fcca1b7cf9797fedc27b73a9cfbbb12d4e712a9cd8d899648564b1",
+      "rows": [
+        "1880s",
+        "1960s",
+        "Red Things",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Family Sagas",
+        "Fictional Animals",
         "First in Release Order",
-        "Studio Ghibli"
+        "Starts with MAR"
       ],
       "timestamp": null,
-      "qualityScore": 16.790000000000003,
-      "maxSimilarityToPast": 0.3866,
-      "finalScore": 13.697200000000002
+      "qualityScore": 13.91,
+      "maxSimilarityToPast": 0.4084,
+      "finalScore": 10.642800000000001
     },
     {
-      "hash": "a747d7f58187a8590e0f31f3204a0270daebc7f64274a9c40996608a2a11496c",
+      "hash": "74e926652c4ff3475ba52109b2172b5e367e36df2c33a628456580aa12a439dd",
       "rows": [
-        "1st Century BC",
-        "American Civil War",
-        "The American Revolution",
-        "World War II"
+        "1920s",
+        "1994",
+        "Black and White",
+        "Starts with GRE"
       ],
       "cols": [
-        "Dates",
-        "Military Conflicts",
-        "Military Leaders",
-        "National Leaders"
+        "Carnivores",
+        "Family-Friendly Stories",
+        "Romance Stories",
+        "Things That Fly"
       ],
       "timestamp": null,
-      "qualityScore": 13.920000000000002,
-      "maxSimilarityToPast": 0.52,
-      "finalScore": 9.760000000000002
+      "qualityScore": 7.44,
+      "maxSimilarityToPast": 0.5266,
+      "finalScore": 3.2272000000000007
     },
     {
-      "hash": "2f9ef6ec8a0ea561a823aba85d906e8807dc01feeebcbf0093cd94d1d8ddfbc3",
+      "hash": "73fa7d03b6a712e8e250971eb9cb777443a24bfcee3b38c8dbde9aae32189f8f",
       "rows": [
-        "1994",
-        "1996",
-        "Classic Films",
-        "Ends with HER"
+        "13th Century",
+        "17th Century",
+        "Cities in Europe",
+        "Cities in North America"
+      ],
+      "cols": [
+        "Ends with TON",
+        "Historical Sites",
+        "Saints",
+        "Things German"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.299999999999999,
+      "maxSimilarityToPast": 0.443,
+      "finalScore": 7.7559999999999985
+    },
+    {
+      "hash": "ffeee111f6a84769ca955ddc334d3c11e971f4e9fef0bf442ededa6acca83449",
+      "rows": [
+        "2018",
+        "Ends with INE",
+        "First in Release Order",
+        "Second in Release Order"
+      ],
+      "cols": [
+        "Period Stories",
+        "Star Wars Universe",
+        "Superheroes",
+        "Time Travel Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.49,
+      "maxSimilarityToPast": 0.4807,
+      "finalScore": 8.644400000000001
+    },
+    {
+      "hash": "5fcc9f117b92f622b0cc783a83c2e353745936dee569e4889c9f371779c61852",
+      "rows": [
+        "17th Century",
+        "1st Century",
+        "Starts with MAR",
+        "Warring States Period"
+      ],
+      "cols": [
+        "Assassins",
+        "Buildings",
+        "Monarchs",
+        "Writers"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.989999999999998,
+      "maxSimilarityToPast": 0.3931,
+      "finalScore": 10.845199999999998
+    },
+    {
+      "hash": "4386af8d40275934b633483ae002783854c23d29af2253b2d53ab8883a8b7e48",
+      "rows": [
+        "1992",
+        "Ends with ISH",
+        "First in Release Order",
+        "Third in Release Order"
       ],
       "cols": [
         "Action Stories",
-        "Best Picture Winners",
-        "Movie Lines",
-        "Music"
+        "Douglas Adams",
+        "Family-Friendly Stories",
+        "Real People"
       ],
       "timestamp": null,
-      "qualityScore": 15.079999999999998,
-      "maxSimilarityToPast": 0.2855,
-      "finalScore": 12.796
+      "qualityScore": 12.309999999999999,
+      "maxSimilarityToPast": 0.3679,
+      "finalScore": 9.366799999999998
     },
     {
-      "hash": "36b8b7c0591fda8744f2db2eda893cac9f7d4678f6280101cb4c42d80d48eab9",
+      "hash": "20b1d54f343133ec5935c9c0ef3cafc16d47e4b6e151e50cd05df0fc828f7568",
       "rows": [
-        "1994",
-        "2006",
-        "Romance Stories",
-        "Stories about Families"
+        "1920s",
+        "1940s",
+        "Countries",
+        "Real People"
       ],
       "cols": [
-        "Anime",
-        "Best Picture Winners",
-        "Christmas Stories",
-        "Music"
+        "Ends with NCE",
+        "Omnivores",
+        "Things German",
+        "Things Swedish"
       ],
       "timestamp": null,
-      "qualityScore": 14.190000000000001,
-      "maxSimilarityToPast": 0.4312,
-      "finalScore": 10.740400000000001
+      "qualityScore": 7.67,
+      "maxSimilarityToPast": 0.3777,
+      "finalScore": 4.6484000000000005
     },
     {
-      "hash": "54188d1cfa95e002d41f02409d6188c9632980c5e5223ab57de74ae97a862886",
+      "hash": "09a4b4e9a167be18b60890d998b763ccf919dddb3c15d71d7b804d97d60d6f15",
       "rows": [
-        "1994",
-        "2014",
-        "Cannibalism",
-        "Classic Films"
+        "15th Century",
+        "19th Century",
+        "Things German",
+        "Things Greek"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Music",
-        "Sci-fi Stories",
-        "Things Japanese"
+        "Great Conquerors",
+        "Scientists",
+        "Sieges",
+        "Starts with BAT"
       ],
       "timestamp": null,
-      "qualityScore": 13.850000000000001,
-      "maxSimilarityToPast": 0.398,
-      "finalScore": 10.666
+      "qualityScore": 12.18,
+      "maxSimilarityToPast": 0.513,
+      "finalScore": 8.076
     },
     {
-      "hash": "edbe6fc1367e56695c2d2ad98aa45b927765c3f7eee0030623f3bb5a03f11e2d",
+      "hash": "9f964990fac8bdad6f867676d2f7d4b190f434698bea0bd965cc1e48aeb02d9b",
       "rows": [
-        "1994",
-        "2002",
+        "1992",
+        "2005",
+        "Real People",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "First in Release Order",
+        "Horror Stories",
+        "Period Stories",
+        "Starts with HAR"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.23,
+      "maxSimilarityToPast": 0.4459,
+      "finalScore": 7.662800000000001
+    },
+    {
+      "hash": "e1d867e5318adb89bccac60fd780e9f372e3bd8734a040fb9a95f3a4a245e04e",
+      "rows": [
+        "17th Century",
+        "Ends with LES",
+        "Opera",
+        "Things Greek"
+      ],
+      "cols": [
+        "19th Century",
+        "Buildings",
+        "Real People",
+        "Tragic Heroes"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.79,
+      "maxSimilarityToPast": 0.3977,
+      "finalScore": 7.6084
+    },
+    {
+      "hash": "5f00c82791da536ed3e61ce387cb24c5f6d89da291e89e06b925c973802f3916",
+      "rows": [
+        "1992",
+        "2003",
+        "Ends with TER",
+        "First in Release Order"
+      ],
+      "cols": [
+        "Real People",
         "Romance Stories",
+        "Second in Internal Chronology",
         "Thriller Stories"
       ],
+      "timestamp": null,
+      "qualityScore": 10.05,
+      "maxSimilarityToPast": 0.4075,
+      "finalScore": 6.790000000000001
+    },
+    {
+      "hash": "3ff89460bc49fe27ed4681a47f17ea05a32fd43aa41a05ea77bac3526346d51f",
+      "rows": [
+        "1992",
+        "1994",
+        "Ends with RON",
+        "Mammals"
+      ],
       "cols": [
-        "Best Picture Winners",
+        "Action Stories",
+        "Family-Friendly Stories",
+        "Real People",
+        "Songs"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.91,
+      "maxSimilarityToPast": 0.3551,
+      "finalScore": 6.0692
+    },
+    {
+      "hash": "59617b120a11fd109fd60bac1622cfe6f84c10d156e72783b7d825c05561a52b",
+      "rows": [
+        "1880s",
+        "Companies",
+        "Ends with AND",
+        "Period Stories"
+      ],
+      "cols": [
+        "1910s",
         "First in Release Order",
-        "Haruki Murakami",
-        "People"
+        "Locations in Asia",
+        "Real People"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.499999999999999,
+      "maxSimilarityToPast": 0.3405,
+      "finalScore": 4.775999999999999
+    },
+    {
+      "hash": "89ed3c106e6388a92a0298983f0dc79700a649b39389590a3614caf18206f648",
+      "rows": [
+        "17th Century",
+        "1960s",
+        "Modern Countries",
+        "Starts with MAR"
+      ],
+      "cols": [
+        "Athletes",
+        "Cenozoic Era",
+        "Saints",
+        "Things German"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.68,
+      "maxSimilarityToPast": 0.4006,
+      "finalScore": 4.475199999999999
+    },
+    {
+      "hash": "d3f0f56ce3bbc1e2dc758acb360b12464f69926c9dfec9eee2f85152585d8b89",
+      "rows": [
+        "17th Century",
+        "1960s",
+        "Medieval Figures",
+        "Starts with MAR"
+      ],
+      "cols": [
+        "Saints",
+        "Shakespeare Characters",
+        "Things German",
+        "Writers"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.37,
+      "maxSimilarityToPast": 0.4623,
+      "finalScore": 8.6716
+    },
+    {
+      "hash": "edf8ac809cac3eacf2d82eab882ff0e8414d7e0f28fde6e5ad0078eae2001e22",
+      "rows": [
+        "13th Century",
+        "1930s",
+        "Things Egyptian",
+        "Things Turkish"
+      ],
+      "cols": [
+        "Buildings",
+        "Countries",
+        "Real People",
+        "Starts with BAT"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.969999999999999,
+      "maxSimilarityToPast": 0.4467,
+      "finalScore": 7.396399999999999
+    },
+    {
+      "hash": "f6453c6a136d588e0ccb9cca8f1f5502edfa19d6ac4b3e9ac0cdcce080ad9ac5",
+      "rows": [
+        "14th Century",
+        "19th Century",
+        "The Crusades",
+        "Things Greek"
+      ],
+      "cols": [
+        "Monarchs",
+        "Period Stories",
+        "Sieges",
+        "Starts with BAT"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.35,
+      "maxSimilarityToPast": 0.4356,
+      "finalScore": 6.8652
+    },
+    {
+      "hash": "a46bae0f3d85756337c18d44a035fc67511a64c407be2404b658b4d24b301bc6",
+      "rows": [
+        "13th Century",
+        "Ends with RIA",
+        "Things Indian",
+        "Things Turkish"
+      ],
+      "cols": [
+        "15th Century",
+        "Buildings",
+        "Countries",
+        "Monarchs"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.14,
+      "maxSimilarityToPast": 0.4837,
+      "finalScore": 6.2704
+    },
+    {
+      "hash": "ea38cefce065e7552219de4b0795f23a106f0d12e165f21ec32907d7cbcebfd4",
+      "rows": [
+        "1920s",
+        "1940s",
+        "Birds",
+        "Fictional Animals"
+      ],
+      "cols": [
+        "Black and White",
+        "Green Things",
+        "Real People",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.39,
+      "maxSimilarityToPast": 0.4208,
+      "finalScore": 6.0236
+    },
+    {
+      "hash": "105be85281189d15799db81f99f4ee55fc614c9d94d6b47a070243107376987a",
+      "rows": [
+        "1880s",
+        "1970s",
+        "Romance Stories",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Ends with NCE",
+        "Family-Friendly Stories",
+        "Real People",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.46,
+      "maxSimilarityToPast": 0.4464,
+      "finalScore": 4.888800000000001
+    },
+    {
+      "hash": "452af98474d3c72b43444072a0b14fd06590cc974df151fff29e8b80020c158e",
+      "rows": [
+        "17th Century",
+        "1960s",
+        "Roman Empire",
+        "Starts with MAR"
+      ],
+      "cols": [
+        "Assassins",
+        "Monarchs",
+        "Shakespeare",
+        "Things German"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.48,
+      "maxSimilarityToPast": 0.453,
+      "finalScore": 4.856
+    },
+    {
+      "hash": "45fd987b38634ff0aa652d80f4cc1a041b42bbe964462a48e1898128a72901d7",
+      "rows": [
+        "17th Century",
+        "1940s",
+        "Ancient Figures",
+        "Things Greek"
+      ],
+      "cols": [
+        "Military Reformers",
+        "Period Stories",
+        "Plays",
+        "Writers"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.550000000000002,
+      "maxSimilarityToPast": 0.3455,
+      "finalScore": 10.786000000000003
+    },
+    {
+      "hash": "4e86522d863a9031cb7a6f8c40462c9cc9b20e6c797acc32b697b370228479c4",
+      "rows": [
+        "13th Century",
+        "16th Century",
+        "Things Greek",
+        "Warring States Period"
+      ],
+      "cols": [
+        "Buildings",
+        "Great Conquerors",
+        "Starts with BAT",
+        "Writers"
       ],
       "timestamp": null,
       "qualityScore": 13.74,
-      "maxSimilarityToPast": 0.376,
-      "finalScore": 10.732
+      "maxSimilarityToPast": 0.429,
+      "finalScore": 10.308
     },
     {
-      "hash": "59a2aef68702515616d5f70b3c3c99beecd202252766da9287ae1f622962e6d5",
+      "hash": "db841331d9b908db715662e66fa6fd3850873e7e43177848b8cac299bb1b9eb9",
       "rows": [
-        "1994",
-        "1996",
-        "Horror Stories",
-        "Sci-fi Stories"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Best Picture Winners",
-        "Ends with ING",
-        "Movie Lines"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.579999999999998,
-      "maxSimilarityToPast": 0.3759,
-      "finalScore": 10.572799999999997
-    },
-    {
-      "hash": "816e44d3f316a71ec32cca1be504002e970a9b1d6a0fc007a4d2cf85bc527b0c",
-      "rows": [
-        "1994",
-        "2012",
-        "Stories about Families",
-        "Western Stories"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "Crime Stories",
+        "2018",
         "First in Release Order",
-        "Music"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.84,
-      "maxSimilarityToPast": 0.4001,
-      "finalScore": 10.639199999999999
-    },
-    {
-      "hash": "d2bb9d55816d5ae14aeccc0dcdc539ca020909b277615a0afe921ada5b3669b0",
-      "rows": [
-        "1994",
-        "2008",
-        "People",
-        "Stories about Families"
+        "Real People",
+        "Second in Internal Chronology"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "First in Release Order",
-        "Japanese Films"
+        "Family-Friendly Stories",
+        "Period Stories",
+        "Prequels",
+        "Star Wars Universe"
       ],
       "timestamp": null,
-      "qualityScore": 15.45,
-      "maxSimilarityToPast": 0.4019,
-      "finalScore": 12.2348
+      "qualityScore": 13.7,
+      "maxSimilarityToPast": 0.4307,
+      "finalScore": 10.254399999999999
     },
     {
-      "hash": "fa1989010ca13138ab6274338f03b6e9282e5e04b217913e093ee2889fff72fd",
+      "hash": "829635fbb8144d5b6ca1a98aef6879863acd375f936bb366ad665f438d7fd297",
       "rows": [
-        "1994",
-        "1999",
-        "Classic Films",
-        "Ends with HER"
-      ],
-      "cols": [
-        "Movie Lines",
-        "People",
-        "Sci-fi Stories",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 14.560000000000002,
-      "maxSimilarityToPast": 0.3016,
-      "finalScore": 12.147200000000002
-    },
-    {
-      "hash": "e5c47fc978bb333a8678ace4b5ad0d87ad12d31d9c67464356ecf68cbc427667",
-      "rows": [
-        "1994",
-        "1997",
-        "Classic Films",
-        "Horror Stories"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "Movie Lines",
-        "Music",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.200000000000001,
-      "maxSimilarityToPast": 0.3871,
-      "finalScore": 12.103200000000001
-    },
-    {
-      "hash": "68268a27bbe646ef21c2c40448ead912579f9d8add9c04700bc6034a32e4b36f",
-      "rows": [
-        "1994",
+        "1992",
         "2004",
-        "Romance Stories",
-        "Stories about Families"
+        "Real People",
+        "Second in Internal Chronology"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Christmas Stories",
-        "Music",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 14.200000000000001,
-      "maxSimilarityToPast": 0.4322,
-      "finalScore": 10.742400000000002
-    },
-    {
-      "hash": "ecec17e1290a10e360178faef77838d5ad261be40dad80d3c190c22f7d9eab3d",
-      "rows": [
-        "1994",
-        "2001",
-        "Stories about Families",
-        "Western Stories"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "Crime Stories",
         "First in Release Order",
-        "Music"
+        "Horror Stories",
+        "Period Stories",
+        "Starts with HAR"
       ],
       "timestamp": null,
-      "qualityScore": 13.72,
-      "maxSimilarityToPast": 0.3975,
-      "finalScore": 10.540000000000001
+      "qualityScore": 11.030000000000001,
+      "maxSimilarityToPast": 0.4486,
+      "finalScore": 7.441200000000001
     },
     {
-      "hash": "6b46efe17bbc8d3388a45bdaf5c36932119a343aeb67e64c31c8e47bca3a2bc0",
+      "hash": "730dd61881a436ec1f7f5ef168e67489daaace5aeb27af254c3af065378ec2ec",
       "rows": [
-        "1994",
-        "1995",
-        "Cannibalism",
-        "Classic Films"
+        "1920s",
+        "1940s",
+        "Dinosaurs",
+        "Fictional Animals"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Music",
-        "Sci-fi Stories",
-        "Things Japanese"
+        "Black and White",
+        "Green Things",
+        "Real People",
+        "Things That Fly"
       ],
       "timestamp": null,
-      "qualityScore": 13.540000000000001,
-      "maxSimilarityToPast": 0.414,
-      "finalScore": 10.228000000000002
+      "qualityScore": 8.77,
+      "maxSimilarityToPast": 0.4214,
+      "finalScore": 5.3988
     },
     {
-      "hash": "d2f2f4ce7b95202e7f09b6465fbe2b028296a27fb7543c62df03cec1687fcbd8",
+      "hash": "21573a6709a713c733c77e48520bdf66165e2976ac05768632eea55ae4e76ec8",
       "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
+        "1920s",
+        "1940s",
+        "Currently Living Animals",
+        "Fictional Animals"
       ],
       "cols": [
-        "Coming of Age Stories",
-        "Crime Stories",
-        "First in Release Order",
-        "Studio Ghibli"
+        "Black and White",
+        "Green Things",
+        "Real People",
+        "Things That Fly"
       ],
       "timestamp": null,
-      "qualityScore": 16.560000000000002,
-      "maxSimilarityToPast": 0.3783,
-      "finalScore": 13.533600000000002
+      "qualityScore": 8.489999999999998,
+      "maxSimilarityToPast": 0.4041,
+      "finalScore": 5.257199999999998
     },
     {
-      "hash": "bec1fcab42f74e446a9d5942eb5568d511854027351497eee2ab2f2900716403",
+      "hash": "e5e49ffa9fb27206efd74a789500a7d8a5d9bc3187ce6f77b1e3deb6901c11a9",
       "rows": [
-        "1994",
-        "2008",
-        "People",
-        "Stories about Families"
+        "1920s",
+        "1940s",
+        "Animal Species",
+        "Fictional Animals"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "First in Release Order",
-        "Studio Ghibli"
+        "Black and White",
+        "Green Things",
+        "Real People",
+        "Things That Fly"
       ],
       "timestamp": null,
-      "qualityScore": 16.52,
-      "maxSimilarityToPast": 0.3889,
-      "finalScore": 13.4088
-    },
-    {
-      "hash": "b07473d386170b2160920ee44183e8b75f073db91d4b258bd5b68e1256bc3d8c",
-      "rows": [
-        "1994",
-        "2008",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "Crime Stories",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.98,
-      "maxSimilarityToPast": 0.4574,
-      "finalScore": 13.3208
-    },
-    {
-      "hash": "23bb0aa5a7095cce65d534aa1ac14bb3b00f20c05a44ffdbe538e917cfe2e3fb",
-      "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "First in Release Order",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.29,
-      "maxSimilarityToPast": 0.3889,
-      "finalScore": 13.178799999999999
-    },
-    {
-      "hash": "096787fd2527d031ab262be402091627319b92eb2cff0a81bca96a201dc0757d",
-      "rows": [
-        "1994",
-        "2008",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Anime",
-        "Coming of Age Stories",
-        "Crime Stories",
-        "First in Release Order"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.240000000000002,
-      "maxSimilarityToPast": 0.3866,
-      "finalScore": 13.147200000000002
-    },
-    {
-      "hash": "f0a4dfa793ab587f4c32a02fdbec256c58b6b66e7a6d83cbc8601ec1c89ada58",
-      "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "Crime Stories",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.75,
-      "maxSimilarityToPast": 0.4574,
-      "finalScore": 13.0908
-    },
-    {
-      "hash": "fb3d9750f5febb14a57d0484ccc9bd5d98889dda0722591c46d8c7d8a2ec90e9",
-      "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Coming of Age Stories",
-        "First in Release Order",
-        "Music",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.51,
-      "maxSimilarityToPast": 0.3077,
-      "finalScore": 13.0484
-    },
-    {
-      "hash": "afa09a22713e45ae09782a8c222d1c6bc119b896906d7ae1f93ee37857cdd64f",
-      "rows": [
-        "1994",
-        "2008",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Coming of Age Stories",
-        "First in Release Order",
-        "Sci-fi Stories",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.870000000000001,
-      "maxSimilarityToPast": 0.3612,
-      "finalScore": 12.980400000000001
-    },
-    {
-      "hash": "e78f514a601fd283a6811dfa8bcf29cd963094f00f30833f8d90b3bae5205609",
-      "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Anime",
-        "Coming of Age Stories",
-        "Crime Stories",
-        "First in Release Order"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.01,
-      "maxSimilarityToPast": 0.3797,
-      "finalScore": 12.972400000000002
-    },
-    {
-      "hash": "f9407ab85bcb4ee05df2b28ac72147036b500cb4f93714f5b1a91a527dba7a31",
-      "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Coming of Age Stories",
-        "Crime Stories",
-        "Music",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.97,
-      "maxSimilarityToPast": 0.3901,
-      "finalScore": 12.8492
-    },
-    {
-      "hash": "b064a8d28801b506e59918e46f455af7b7d71e99dbaccf442fa4da37a152c8ff",
-      "rows": [
-        "1994",
-        "2008",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Anime",
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "First in Release Order"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.969999999999999,
-      "maxSimilarityToPast": 0.3903,
-      "finalScore": 12.8476
-    },
-    {
-      "hash": "d2b53dfb61daf9c46570cbe7e9816bbba0bcde4814e640bec245dacd4ef6de22",
-      "rows": [
-        "1994",
-        "2008",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Anime",
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "Crime Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.43,
-      "maxSimilarityToPast": 0.4507,
-      "finalScore": 12.8244
-    },
-    {
-      "hash": "748d0a9c7bad28932dba51cd6b008b17bd60d0311f365c7d8d37fb8a2ccb0635",
-      "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Coming of Age Stories",
-        "First in Release Order",
-        "Sci-fi Stories",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.64,
-      "maxSimilarityToPast": 0.3558,
-      "finalScore": 12.793600000000001
-    },
-    {
-      "hash": "5d1c16a008fe6144a3407396796050968387af8366cc79f93679b5854bb81a17",
-      "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "Music",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.7,
-      "maxSimilarityToPast": 0.3844,
-      "finalScore": 12.624799999999999
-    },
-    {
-      "hash": "cf8a022fbd6e3871f37134e54f583eeb1e6d11600900241140250ece31ac4ddf",
-      "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Anime",
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "First in Release Order"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.74,
-      "maxSimilarityToPast": 0.3903,
-      "finalScore": 12.6176
-    },
-    {
-      "hash": "c0611eed0fccdc00302c4b02965f32f53fbf74f275eb256401bed96acb207455",
-      "rows": [
-        "1994",
-        "2014",
-        "People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Anime",
-        "Best Picture Winners",
-        "Coming of Age Stories",
-        "Crime Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.2,
-      "maxSimilarityToPast": 0.4507,
-      "finalScore": 12.5944
+      "qualityScore": 8.440000000000001,
+      "maxSimilarityToPast": 0.4245,
+      "finalScore": 5.044000000000001
     }
   ],
   "message": "Puzzle saved successfully!"
