@@ -5,709 +5,726 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "b4a8212f535a958b0b90cbac5c32e6e9b5ed81b88c264e5292b6d95efe35d20a",
+    "hash": "5ef639054f49ded04df8c9fb67875166c66109b7fa7e4b5f8d492292e7895708",
     "rows": [
-      "1860s",
-      "1960s",
-      "French Revolution",
-      "Roman Republic"
+      "Cities",
+      "The Crusades",
+      "Things Czech",
+      "Things Iranian"
     ],
     "cols": [
-      "Assassins",
-      "Military Reformers",
-      "Starts with MAR",
-      "Wars"
+      "Countries that No Longer Exist",
+      "Events",
+      "Modern Countries",
+      "Monarchs"
     ],
     "timestamp": null,
-    "qualityScore": 15.559999999999999,
-    "maxSimilarityToPast": 0.3173,
-    "finalScore": 13.0216
+    "qualityScore": 11.51,
+    "maxSimilarityToPast": 0.4822,
+    "finalScore": 7.6524
   },
   "viableGrid": [
     [
       [
-        "John Wilkes Booth"
+        "Carthage"
       ],
       [
-        "Helmuth von Moltke the Elder"
+        "Abbottabad",
+        "Chernobyl",
+        "Fukushima",
+        "Herculaneum",
+        "Pompeii"
       ],
       [
-        "Mary Baker Eddy"
+        "Monaco",
+        "San Marino",
+        "Singapore",
+        "Vatican City"
       ],
       [
-        "Dungan Revolt",
-        "The American Civil War"
+        "Victoria"
       ]
     ],
     [
       [
-        "Black Widow",
-        "Lee Harvey Oswald",
-        "Sirhan Sirhan"
+        "County of Tripoli",
+        "Kingdom of Jerusalem",
+        "Principality of Antioch"
       ],
       [
-        "John Boyd"
+        "Battle of Hattin",
+        "Siege of Malta",
+        "The Albigensian Crusade",
+        "The Crusades",
+        "The First Crusade"
       ],
       [
-        "Marilyn Monroe",
-        "Mariner",
-        "Mary Poppins"
+        "Malta"
       ],
       [
-        "Bay of Pigs",
-        "Bay of Pigs Invasion",
-        "The Vietnam War"
+        "Bohemond",
+        "Edward I",
+        "Frederick I Barbarossa",
+        "Frederick II",
+        "Louis IX",
+        "Louis VII",
+        "Philip II of France",
+        "Prester John",
+        "Richard the Lionheart",
+        "Saladin"
       ]
     ],
     [
       [
-        "Charlotte Corday"
+        "Bohemia"
       ],
       [
-        "Napoleon Bonaparte"
+        "The Hussite Wars"
       ],
       [
-        "Marie Antoinette"
+        "Czech Republic"
       ],
       [
-        "The French Revolution",
-        "The Haitian Revolution"
+        "Charles IV",
+        "Good King Wenceslas",
+        "John of Bohemia"
       ]
     ],
     [
       [
-        "Brutus",
-        "Cassius",
-        "Servilius Casca"
+        "Persia"
       ],
       [
-        "Gaius Marius"
+        "Iranian Revolution",
+        "The Iran Hostage Crisis",
+        "The Iran-Iraq War"
       ],
       [
-        "Mark Antony"
+        "Iran"
       ],
       [
-        "Third Servile War"
+        "Cyrus the Great",
+        "Xerxes"
       ]
     ]
   ],
   "chosen": [
     [
-      "John Wilkes Booth",
-      "Helmuth von Moltke the Elder",
-      "Mary Baker Eddy",
-      "The American Civil War"
+      "Carthage",
+      "Chernobyl",
+      "Singapore",
+      "Victoria"
     ],
     [
-      "Lee Harvey Oswald",
-      "John Boyd",
-      "Mary Poppins",
-      "The Vietnam War"
+      "Kingdom of Jerusalem",
+      "The First Crusade",
+      "Malta",
+      "Richard the Lionheart"
     ],
     [
-      "Charlotte Corday",
-      "Napoleon Bonaparte",
-      "Marie Antoinette",
-      "The French Revolution"
+      "Bohemia",
+      "The Hussite Wars",
+      "Czech Republic",
+      "Charles IV"
     ],
     [
-      "Brutus",
-      "Gaius Marius",
-      "Mark Antony",
-      "Third Servile War"
+      "Persia",
+      "Iranian Revolution",
+      "Iran",
+      "Cyrus the Great"
     ]
   ],
   "usedWords": [
-    "John Wilkes Booth",
-    "Helmuth von Moltke the Elder",
-    "Mary Baker Eddy",
-    "The American Civil War",
-    "Lee Harvey Oswald",
-    "John Boyd",
-    "Mary Poppins",
-    "The Vietnam War",
-    "Charlotte Corday",
-    "Napoleon Bonaparte",
-    "Marie Antoinette",
-    "The French Revolution",
-    "Brutus",
-    "Gaius Marius",
-    "Mark Antony",
-    "Third Servile War"
+    "Carthage",
+    "Chernobyl",
+    "Singapore",
+    "Victoria",
+    "Kingdom of Jerusalem",
+    "The First Crusade",
+    "Malta",
+    "Richard the Lionheart",
+    "Bohemia",
+    "The Hussite Wars",
+    "Czech Republic",
+    "Charles IV",
+    "Persia",
+    "Iranian Revolution",
+    "Iran",
+    "Cyrus the Great"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "b4a8212f535a958b0b90cbac5c32e6e9b5ed81b88c264e5292b6d95efe35d20a",
+      "hash": "6185536878299b2efd4c6189e20d86c7e0603603a2682ce3be73cfed53a0814a",
       "rows": [
-        "1860s",
-        "1960s",
-        "French Revolution",
-        "Roman Republic"
-      ],
-      "cols": [
-        "Assassins",
-        "Military Reformers",
-        "Starts with MAR",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.559999999999999,
-      "maxSimilarityToPast": 0.3173,
-      "finalScore": 13.0216
-    },
-    {
-      "hash": "40a3d2662ce4c4e90eb7f5017f6cfa91f053003e2e89736e98bbc815b47c277f",
-      "rows": [
-        "2008",
+        "1995",
+        "2015",
         "First in Release Order",
-        "Musical Films",
-        "Second in Release Order"
+        "Prequels"
       ],
       "cols": [
-        "2012",
-        "2D Animated Films",
-        "Pixar",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 14.99,
-      "maxSimilarityToPast": 0.3829,
-      "finalScore": 11.9268
-    },
-    {
-      "hash": "1a5f9db4c08caa4ebf0f7a33868f340623d4958442046510b5079d61a78f4fad",
-      "rows": [
-        "Birds",
-        "Eocene Epoch",
-        "Fictional Animals",
-        "Paleozoic Era"
-      ],
-      "cols": [
-        "Herbivores",
-        "Mesozoic Era",
-        "Omnivores",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.21,
-      "maxSimilarityToPast": 0.5201,
-      "finalScore": 2.0492
-    },
-    {
-      "hash": "6e01e7a3db6981fe8552f655f2d1ee6e7f577db6ab6e56559444f71ee9617c65",
-      "rows": [
-        "2005",
-        "2013",
-        "Ends with ACE",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "First in Release Order",
         "Period Stories",
-        "Prequels",
+        "Pixar",
+        "Second in Internal Chronology",
         "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 14.110000000000001,
-      "maxSimilarityToPast": 0.4423,
-      "finalScore": 10.5716
+      "qualityScore": 17.77,
+      "maxSimilarityToPast": 0.3896,
+      "finalScore": 14.6532
     },
     {
-      "hash": "a2b932f1a2a0dc788c1392af4fdb12235bc004d8cfa36ca6c7f31fd946be0d0c",
+      "hash": "cc884f53ce1ec422c9ef7dec48f07fd3edbc996ce16bb3d39aded6a6e3f8f081",
       "rows": [
-        "1860s",
-        "1940s",
-        "Cold War",
-        "Napoleonic Wars"
+        "Currently Living Plants",
+        "Omnivores",
+        "Supervillains",
+        "Things That Fly"
       ],
       "cols": [
-        "Battles",
-        "Famous Quotes",
-        "Military Ships",
-        "Things German"
+        "Green Things",
+        "Paleocene Epoch",
+        "Predators",
+        "Red Things"
       ],
       "timestamp": null,
-      "qualityScore": 10.819999999999999,
-      "maxSimilarityToPast": 0.5029,
-      "finalScore": 6.796799999999998
+      "qualityScore": 11.83,
+      "maxSimilarityToPast": 0.3443,
+      "finalScore": 9.0756
     },
     {
-      "hash": "677b03d6380afd4b6e9f2a36bbf38ad27cc31f59c5c2cc24ba19cf3ba4f9d688",
+      "hash": "5ef639054f49ded04df8c9fb67875166c66109b7fa7e4b5f8d492292e7895708",
       "rows": [
-        "1860s",
-        "1970s",
+        "Cities",
+        "The Crusades",
+        "Things Czech",
+        "Things Iranian"
+      ],
+      "cols": [
         "Countries that No Longer Exist",
+        "Events",
+        "Modern Countries",
+        "Monarchs"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.51,
+      "maxSimilarityToPast": 0.4822,
+      "finalScore": 7.6524
+    },
+    {
+      "hash": "2f7f874743c26cb4e7ea0a6469bb7c13c8b21a63645a05c0f3825153b3f287f4",
+      "rows": [
+        "Adventure Stories",
+        "Bodies of Water",
+        "Landlocked Countries",
+        "WWII Allied Powers"
+      ],
+      "cols": [
+        "Cold War",
+        "Locations in Africa",
+        "Locations in South America",
+        "Starts with NOR"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.47,
+      "maxSimilarityToPast": 0.5322,
+      "finalScore": 6.212400000000001
+    },
+    {
+      "hash": "870e400e52c97a0f51be08a0240b757dcc0135b639a789a9d7a04fa3e5f0dfdb",
+      "rows": [
+        "Cities",
+        "Commonwealth Nations",
+        "Ends with SIA",
+        "Islands"
+      ],
+      "cols": [
+        "Countries in Europe",
+        "Locations in Oceania",
+        "Republics",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.16,
+      "maxSimilarityToPast": 0.4121,
+      "finalScore": 5.8632
+    },
+    {
+      "hash": "fb7a3565b2bf579c53133c40f74d58119f263fa214bcff5aeef529881292ed0c",
+      "rows": [
+        "2016",
+        "Cities in USA",
+        "First in Release Order",
+        "Second in Release Order"
+      ],
+      "cols": [
+        "Musical Films",
+        "Ships",
+        "Starts with HAR",
+        "Time Travel Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.31,
+      "maxSimilarityToPast": 0.3483,
+      "finalScore": 5.5236
+    },
+    {
+      "hash": "550660b541dc5b44767bde6c001697e3aa7be94463038a2f83d0a1e630d57ea4",
+      "rows": [
+        "Adventure Stories",
+        "Birds",
+        "Insects",
+        "Reptiles"
+      ],
+      "cols": [
+        "Fictional Animals",
+        "Jurassic Period",
+        "Starts with TIT",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.09,
+      "maxSimilarityToPast": 0.4112,
+      "finalScore": 4.8004
+    },
+    {
+      "hash": "394ffcfa4575385836bff2191d3e8d69341d9530a7ede7f1ea52d4b92a5b94c4",
+      "rows": [
+        "Archipelagos",
+        "Countries that No Longer Exist",
+        "Federal Republics",
+        "Islands"
+      ],
+      "cols": [
+        "Countries in Asia",
+        "Ends with AND",
+        "Former British Colonies",
+        "Locations in South America"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.84,
+      "maxSimilarityToPast": 0.4853,
+      "finalScore": 5.957599999999999
+    },
+    {
+      "hash": "2adbe29e9f368bdf4461e7d43d3881c08edb155428a95719f71d5ee22e413400",
+      "rows": [
+        "Cities",
+        "Islands",
+        "Oceanliners",
+        "Starts with CON"
+      ],
+      "cols": [
+        "Countries",
+        "Events",
+        "Famous Shipwrecks",
+        "Roman Empire"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.11,
+      "maxSimilarityToPast": 0.4232,
+      "finalScore": 4.724399999999999
+    },
+    {
+      "hash": "ba4d02e343088e4c6f33a3e0a3897635c110abbe5666b82666421b29f8cf9b52",
+      "rows": [
+        "Cities",
+        "Starts with GRE",
+        "Things Indonesian",
+        "Things Mexican"
+      ],
+      "cols": [
+        "Drinks",
+        "Events",
+        "Modern Countries",
+        "Real Animals"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.89,
+      "maxSimilarityToPast": 0.4012,
+      "finalScore": 3.6803999999999997
+    },
+    {
+      "hash": "791fa30bed32ffcce873fcedcdfe61213466de9d9790c77c5e025bea3892d61f",
+      "rows": [
+        "11th Century",
+        "1970s",
+        "Roman Empire",
+        "Things German"
+      ],
+      "cols": [
+        "Countries that No Longer Exist",
+        "Events",
+        "Famous Quotes",
+        "Monarchs"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.11,
+      "maxSimilarityToPast": 0.504,
+      "finalScore": 3.0780000000000003
+    },
+    {
+      "hash": "043e988f6a98dc329c1fce22355b2b3ce79845a5abb21ddd61901a77d7587ca1",
+      "rows": [
+        "1995",
+        "2010",
+        "Cannibalism",
+        "Time Travel Stories"
+      ],
+      "cols": [
+        "Events",
+        "First in Release Order",
+        "Period Stories",
+        "Third in Release Order"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.200000000000003,
+      "maxSimilarityToPast": 0.3583,
+      "finalScore": 13.333600000000002
+    },
+    {
+      "hash": "71f58a598432f0aa0a71e83e81b36928ae8857712a8edabb5f37c0631cddad40",
+      "rows": [
+        "Adventure Stories",
+        "Carnivores",
+        "Red Things",
+        "Things That Fly"
+      ],
+      "cols": [
+        "DC Characters",
+        "Fictional Animals",
+        "Jurassic Period",
+        "Marvel Characters"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.35,
+      "maxSimilarityToPast": 0.4135,
+      "finalScore": 7.042
+    },
+    {
+      "hash": "48de4dc2d9d44b2b95ca5d75daa18059be9e26a6a62d6fb0bfc4c8265576914d",
+      "rows": [
+        "Cities",
+        "Islands",
+        "Naval Battles",
+        "Starts with GRE"
+      ],
+      "cols": [
+        "Ming Dynasty",
+        "The Crusades",
+        "Things Canadian",
+        "Things Korean"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.11,
+      "maxSimilarityToPast": 0.3819,
+      "finalScore": 6.054799999999999
+    },
+    {
+      "hash": "be209c0080072e12512e2dec5ce1a7f302b2737e685c64f762d1475e74e55844",
+      "rows": [
+        "Adventure Stories",
+        "Events",
+        "Monarchs",
+        "WWII Allied Powers"
+      ],
+      "cols": [
+        "Civilian Ships",
+        "Ends with NCE",
+        "Islands",
+        "Things Indian"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.890000000000001,
+      "maxSimilarityToPast": 0.4107,
+      "finalScore": 4.6044
+    },
+    {
+      "hash": "cafb2d66584ab9472d6b4435078aa5a62a9b402d29307aa066cf9bae112095d7",
+      "rows": [
+        "Adventure Stories",
+        "Herbivores",
+        "Omnivores",
+        "Theropods"
+      ],
+      "cols": [
+        "Black and White",
+        "Fictional Animals",
+        "Jurassic Period",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.409999999999998,
+      "maxSimilarityToPast": 0.5667,
+      "finalScore": 2.8763999999999985
+    },
+    {
+      "hash": "a4a9c241c089c456e64aa9ba64e9a52c1653a5f47673462bb836eafe7bd11eec",
+      "rows": [
+        "1995",
+        "2012",
+        "First in Release Order",
+        "Prequels"
+      ],
+      "cols": [
+        "Action Stories",
+        "Pixar",
+        "Second in Internal Chronology",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.659999999999997,
+      "maxSimilarityToPast": 0.4092,
+      "finalScore": 13.386399999999997
+    },
+    {
+      "hash": "15b648c1381f5be9a5b2ffc957b3da4f788603a6efa18ec217a585ffbe2390be",
+      "rows": [
+        "Adventure Stories",
+        "Ancient Cities",
+        "Starts with GRE",
+        "Things Egyptian"
+      ],
+      "cols": [
+        "Countries",
+        "Events",
+        "Period Stories",
+        "The Crusades"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.02,
+      "maxSimilarityToPast": 0.2941,
+      "finalScore": 7.667199999999999
+    },
+    {
+      "hash": "e210bbeb67528b75c6e0f5b64d0210de4eba30251abdf4779e1de6b54f51f3f6",
+      "rows": [
+        "Adventure Stories",
+        "Cities",
+        "Former British Colonies",
+        "Former Spanish Colonies"
+      ],
+      "cols": [
+        "Cold War",
+        "Ends with NES",
+        "Locations in Africa",
+        "Locations in South America"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.220000000000001,
+      "maxSimilarityToPast": 0.3175,
+      "finalScore": 4.680000000000001
+    },
+    {
+      "hash": "8880a13f0662ce327a8107d35b2f64cbed3ff009f69ab76342e0f713c653581a",
+      "rows": [
+        "Cities",
+        "Ends with INE",
+        "Islands",
+        "Things Czech"
+      ],
+      "cols": [
+        "Countries in Europe",
+        "Drinks",
+        "Events",
+        "Saints"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.18,
+      "maxSimilarityToPast": 0.5312,
+      "finalScore": 3.9303999999999997
+    },
+    {
+      "hash": "8db4d46cb08745acfc818d4516345219fa3da8c2590e26bf080dac1dc5abb1b9",
+      "rows": [
+        "Adventure Stories",
+        "Cold War",
+        "Largest of its Type",
+        "Starts with GRA"
+      ],
+      "cols": [
+        "Bodies of Water",
+        "Countries",
+        "Ships",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.1899999999999995,
+      "maxSimilarityToPast": 0.5142,
+      "finalScore": 3.0763999999999996
+    },
+    {
+      "hash": "251c0b1f4fed1920eb99cb8afce4ceb0ca3f49a038cdcc74581a9c8ef262e5d1",
+      "rows": [
+        "Adventure Stories",
+        "Cities in Asia",
+        "Starts with GRE",
+        "Things Egyptian"
+      ],
+      "cols": [
+        "Events",
+        "Modern Countries",
+        "Period Stories",
+        "The Crusades"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.03,
+      "maxSimilarityToPast": 0.3352,
+      "finalScore": 7.3484
+    },
+    {
+      "hash": "7d29f2af7ad20c8289eb9a4eb4d74d90b52084bfcfda51ecb77373a784935b22",
+      "rows": [
+        "Cities",
+        "Events",
+        "Modern Countries",
+        "Monarchs"
+      ],
+      "cols": [
+        "Starts with CHA",
+        "The Crusades",
+        "Things Czech",
+        "Things Egyptian"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.78,
+      "maxSimilarityToPast": 0.4822,
+      "finalScore": 6.9224
+    },
+    {
+      "hash": "ecaaf078286d4154d298267ce3843f8b79b4b8cbe1d0fef7319b83adef703bd7",
+      "rows": [
+        "Archipelagos",
+        "Countries that No Longer Exist",
+        "Islands",
         "Republics"
       ],
       "cols": [
-        "Cities",
+        "Countries in Asia",
         "Ends with AND",
-        "Things German",
-        "Things Iranian"
+        "Former German Colonies",
+        "Locations in South America"
       ],
       "timestamp": null,
-      "qualityScore": 7.99,
-      "maxSimilarityToPast": 0.385,
-      "finalScore": 4.91
+      "qualityScore": 10.06,
+      "maxSimilarityToPast": 0.4576,
+      "finalScore": 6.3992
     },
     {
-      "hash": "833874a1b39f2aabba8d3c5529eb0535ebc2f326bba581d27631112d0fee2d57",
+      "hash": "4e027ef6be1cc71b774720433cf6fac50510bfebf19ea4abf6e7ff21bae58c7a",
       "rows": [
-        "2005",
-        "2016",
-        "First in Release Order",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "Musical Films",
-        "Star Wars Movies",
-        "Starts with HAR",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 14.28,
-      "maxSimilarityToPast": 0.3227,
-      "finalScore": 11.6984
-    },
-    {
-      "hash": "bc4a214d2246775b925d0d2b5674afe19ad3a5d8b8d1bde45b5a59f5162d2408",
-      "rows": [
-        "1860s",
-        "French Revolution",
-        "Roman Empire",
-        "Roman Republic"
-      ],
-      "cols": [
-        "Assassins",
-        "Historical Sites",
-        "Starts with MAR",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.22,
-      "maxSimilarityToPast": 0.4334,
-      "finalScore": 11.7528
-    },
-    {
-      "hash": "757d9e635a7e2bc75ddc77de62ff6dcc7cea96d7b48dc363b46d8056ba0086ef",
-      "rows": [
-        "1860s",
+        "Cities",
         "Countries that No Longer Exist",
-        "Modern Countries",
-        "Monarchs"
+        "Federal Republics",
+        "Landlocked Countries"
       ],
       "cols": [
-        "1960s",
-        "Cities",
-        "Things German",
-        "Things Iranian"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.45,
-      "maxSimilarityToPast": 0.3828,
-      "finalScore": 5.387599999999999
-    },
-    {
-      "hash": "88c89ca50369aeef0758a95dc3545e6c539a3a11ee0015c6aa7c551c2a3fbe81",
-      "rows": [
-        "1860s",
-        "1900s",
         "Cold War",
-        "Napoleonic Wars"
-      ],
-      "cols": [
-        "Battles",
-        "Military Ships",
-        "Things German",
-        "Wars"
+        "Countries in Europe",
+        "Locations in South America",
+        "Starts with SOU"
       ],
       "timestamp": null,
-      "qualityScore": 13.139999999999999,
-      "maxSimilarityToPast": 0.5043,
-      "finalScore": 9.105599999999999
+      "qualityScore": 9.86,
+      "maxSimilarityToPast": 0.4743,
+      "finalScore": 6.0656
     },
     {
-      "hash": "816dc3938f5e75cb45b08c521a7de32cd785a2ca5e21aecbc7dce8d3846705c0",
+      "hash": "d274d63429c38fc5e7e8e4de44480c42682d49b773cef7d5ff28469e4c0be7b2",
       "rows": [
-        "1860s",
-        "1910s",
-        "Cold War",
-        "Napoleonic Wars"
-      ],
-      "cols": [
-        "Battles",
-        "Military Ships",
-        "Things German",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.749999999999998,
-      "maxSimilarityToPast": 0.5,
-      "finalScore": 7.749999999999998
-    },
-    {
-      "hash": "f9eeb4f8344f395fefbac238d30d48e74055bf421acb34fffc39249397aca8ab",
-      "rows": [
-        "1860s",
-        "1970s",
-        "Ming Dynasty",
-        "Roman Republic"
-      ],
-      "cols": [
         "Cities",
-        "Famous Quotes",
-        "Period Stories",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.95,
-      "maxSimilarityToPast": 0.5142,
-      "finalScore": 5.836399999999999
-    },
-    {
-      "hash": "b9626b3877027328760d8a11c1e25831a0ceedbf6a1df3a106622fd56e71b647",
-      "rows": [
-        "1860s",
-        "1970s",
-        "Countries",
-        "Monarchs"
+        "Islands",
+        "Things Ethiopian",
+        "Things German"
       ],
       "cols": [
-        "Cities",
-        "Starts with MAR",
-        "Things German",
-        "Things Iranian"
+        "Countries that No Longer Exist",
+        "Drinks",
+        "Republics",
+        "The Crusades"
       ],
       "timestamp": null,
-      "qualityScore": 7.89,
-      "maxSimilarityToPast": 0.4286,
-      "finalScore": 4.4612
+      "qualityScore": 9.040000000000001,
+      "maxSimilarityToPast": 0.3848,
+      "finalScore": 5.961600000000001
     },
     {
-      "hash": "31cf655957325ec8b5e8451b59ec26ed72fe50a60ae75e8cd99991dbab452247",
+      "hash": "9a9454859d785253ea4b4f28bcb3e390ecd987d620e2879b0c4e8274d3da268d",
       "rows": [
-        "Birds",
-        "Fictional Animals",
-        "Oligocene Epoch",
-        "Paleozoic Era"
-      ],
-      "cols": [
-        "Herbivores",
-        "Mesozoic Era",
-        "Omnivores",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.2,
-      "maxSimilarityToPast": 0.5205,
-      "finalScore": 2.0360000000000005
-    },
-    {
-      "hash": "3585feef072eb99beb07ec2b8e30fc2caf195081318d633ddc67d730581d03e1",
-      "rows": [
-        "Birds",
-        "Fictional Animals",
-        "Paleogene Period",
-        "Paleozoic Era"
-      ],
-      "cols": [
-        "Herbivores",
-        "Mesozoic Era",
-        "Omnivores",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.19,
-      "maxSimilarityToPast": 0.5219,
-      "finalScore": 2.0148
-    },
-    {
-      "hash": "a4e42761d7f46049216e01e322f898410d8881b80d66d7be9309f3587f42af23",
-      "rows": [
-        "Birds",
-        "Fictional Animals",
-        "Miocene Epoch",
-        "Paleozoic Era"
-      ],
-      "cols": [
-        "Herbivores",
-        "Mesozoic Era",
-        "Omnivores",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.16,
-      "maxSimilarityToPast": 0.5206,
-      "finalScore": 1.9952000000000005
-    },
-    {
-      "hash": "ca2e495a4dc389152d753df5d6f423fe13da3b8551f05a411205153793c15de4",
-      "rows": [
-        "1860s",
-        "1970s",
-        "French Revolution",
-        "Roman Republic"
-      ],
-      "cols": [
-        "Historical Sites",
-        "Military Reformers",
-        "Starts with MAR",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.090000000000002,
-      "maxSimilarityToPast": 0.4257,
-      "finalScore": 11.684400000000002
-    },
-    {
-      "hash": "fc76cab360a2a5a9905a3ac7930107f1d2ad161725931c3a18e3df68a3ddcbee",
-      "rows": [
-        "2005",
         "2016",
+        "Cities in North America",
         "First in Release Order",
         "Second in Release Order"
       ],
       "cols": [
         "Musical Films",
-        "Star Wars Movies",
+        "Ships",
         "Starts with HAR",
-        "Thriller Stories"
+        "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 14.23,
-      "maxSimilarityToPast": 0.3287,
-      "finalScore": 11.6004
+      "qualityScore": 8.14,
+      "maxSimilarityToPast": 0.3483,
+      "finalScore": 5.3536
     },
     {
-      "hash": "11e866453a5e6f55bf2f6c59b3415650406f8c66b22e5e23970887d658d0806c",
+      "hash": "c9990f153beb645a62d0c4dab4f8b7d513090411acdc0f1bbae86e3c6f928583",
       "rows": [
-        "1860s",
-        "1970s",
-        "Napoleonic Wars",
-        "Roman Republic"
+        "Adventure Stories",
+        "Carnivores",
+        "Red Things",
+        "Things That Fly"
       ],
       "cols": [
-        "Cities",
-        "Famous Quotes",
-        "Military Reformers",
-        "Wars"
+        "Black and White",
+        "Fictional Animals",
+        "Jurassic Period",
+        "Superheroes"
       ],
       "timestamp": null,
-      "qualityScore": 12.99,
-      "maxSimilarityToPast": 0.5461,
-      "finalScore": 8.6212
+      "qualityScore": 8.67,
+      "maxSimilarityToPast": 0.4748,
+      "finalScore": 4.8716
     },
     {
-      "hash": "9b3a150dd025cf77392b74bc7f7d85285a30267465d8adc2cc55c82ffef4621b",
+      "hash": "7e8486c4f442288adde8001307b60c3af2ecc138da3df684cf274d03e9792e4d",
       "rows": [
-        "1860s",
-        "1960s",
-        "Roman Empire",
-        "Roman Republic"
+        "Adventure Stories",
+        "Insects",
+        "Reptiles",
+        "Saurischians"
       ],
       "cols": [
-        "Assassins",
-        "Famous Quotes",
-        "Starts with MAR",
-        "Wars"
+        "Fictional Animals",
+        "Jurassic Period",
+        "Starts with TIT",
+        "Things That Fly"
       ],
       "timestamp": null,
-      "qualityScore": 9.85,
-      "maxSimilarityToPast": 0.4577,
-      "finalScore": 6.1884
+      "qualityScore": 7.75,
+      "maxSimilarityToPast": 0.4505,
+      "finalScore": 4.146
     },
     {
-      "hash": "3270ae6c5120ec7ab9af31f2e501dd060d0d037436db67a45c37d118e52f0042",
+      "hash": "7de3e6c7b15617e1c9b777514340c8d81cbc7cfd37f0d23ecbd9d944f0a0ec00",
       "rows": [
-        "1860s",
-        "1970s",
-        "Napoleonic Wars",
-        "Roman Empire"
+        "Adventure Stories",
+        "Dinosaurs",
+        "Insects",
+        "Reptiles"
       ],
       "cols": [
-        "Cities",
-        "Famous Quotes",
-        "Things German",
-        "Wars"
+        "Fictional Animals",
+        "Jurassic Period",
+        "Starts with TIT",
+        "Things That Fly"
       ],
       "timestamp": null,
-      "qualityScore": 9.27,
-      "maxSimilarityToPast": 0.4348,
-      "finalScore": 5.791599999999999
-    },
-    {
-      "hash": "2af7647e4f0d72c3d81887135e38eb57f59fc91fc80b63290926f7c213313ebf",
-      "rows": [
-        "1860s",
-        "Cold War",
-        "Napoleonic Wars",
-        "Roman Empire"
-      ],
-      "cols": [
-        "Cities",
-        "Famous Quotes",
-        "Things German",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.91,
-      "maxSimilarityToPast": 0.5428,
-      "finalScore": 5.5676000000000005
-    },
-    {
-      "hash": "aeb926f0976cde8bd0c22dfb92a89ba105ebc4cef1a8e933bf93e206e64c1c3a",
-      "rows": [
-        "1860s",
-        "1910s",
-        "Cold War",
-        "Things German"
-      ],
-      "cols": [
-        "Battles",
-        "Ends with AND",
-        "Military Ships",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.549999999999999,
-      "maxSimilarityToPast": 0.4182,
-      "finalScore": 5.204399999999999
-    },
-    {
-      "hash": "4acb64c7c8238de9d3f571838704a5c08ea07b91bc4b862881867c07c674d6de",
-      "rows": [
-        "1860s",
-        "1970s",
-        "Roman Empire",
-        "Roman Republic"
-      ],
-      "cols": [
-        "Famous Quotes",
-        "Historical Sites",
-        "Starts with MAR",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.379999999999999,
-      "maxSimilarityToPast": 0.5584,
-      "finalScore": 4.912799999999999
-    },
-    {
-      "hash": "0eefa2fc9e4479d3eb8ec9f1306cf11d9e08ff660fc3d9a91e44a703f8050d56",
-      "rows": [
-        "1860s",
-        "1970s",
-        "Countries that No Longer Exist",
-        "Modern Countries"
-      ],
-      "cols": [
-        "Cities",
-        "Ends with AND",
-        "Things German",
-        "Things Iranian"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.879999999999999,
-      "maxSimilarityToPast": 0.385,
-      "finalScore": 4.799999999999999
-    },
-    {
-      "hash": "0cbf2b34840ecc79e4a91f3f51c5d6a8697f3ccf31bccc4d100f6839a6f1c4f3",
-      "rows": [
-        "1860s",
-        "1970s",
-        "Modern Countries",
-        "Monarchs"
-      ],
-      "cols": [
-        "Cities",
-        "Starts with MAR",
-        "Things German",
-        "Things Iranian"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.8999999999999995,
-      "maxSimilarityToPast": 0.4286,
-      "finalScore": 4.4712
-    },
-    {
-      "hash": "babe1e0f34eedddd0be46951f2cd278c420cba5878d7a89e7934d34398d11bca",
-      "rows": [
-        "1860s",
-        "Roman Empire",
-        "Roman Republic",
-        "Things German"
-      ],
-      "cols": [
-        "Battles",
-        "Famous Quotes",
-        "Starts with MAR",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.5,
-      "maxSimilarityToPast": 0.5083,
-      "finalScore": 4.4336
-    },
-    {
-      "hash": "3321bb0a9615e2f7f02cdead8f100b1b0de907f8509411195d7691b9e3422bda",
-      "rows": [
-        "1860s",
-        "1970s",
-        "Roman Republic",
-        "Things German"
-      ],
-      "cols": [
-        "Cities",
-        "Famous Quotes",
-        "Starts with MAR",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.669999999999999,
-      "maxSimilarityToPast": 0.4098,
-      "finalScore": 3.391599999999999
-    },
-    {
-      "hash": "eb74dbae514e1d3b85944aaa68aba772f1b406e6c4890d2188d3900dc9743380",
-      "rows": [
-        "1860s",
-        "Cold War",
-        "Roman Republic",
-        "Things German"
-      ],
-      "cols": [
-        "1960s",
-        "Cities",
-        "Famous Quotes",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.34,
-      "maxSimilarityToPast": 0.5207,
-      "finalScore": 3.1743999999999994
-    },
-    {
-      "hash": "d9b72665a32f016253eb8484fcddd8a9f4b3dec8a9165c9c0f56163b079e264e",
-      "rows": [
-        "1860s",
-        "1970s",
-        "Roman Empire",
-        "Things German"
-      ],
-      "cols": [
-        "Cities",
-        "Famous Quotes",
-        "Starts with MAR",
-        "Wars"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.069999999999999,
-      "maxSimilarityToPast": 0.3928,
-      "finalScore": 2.9275999999999995
+      "qualityScore": 7.469999999999999,
+      "maxSimilarityToPast": 0.4244,
+      "finalScore": 4.074799999999999
     }
   ],
   "message": "Puzzle saved successfully!"
