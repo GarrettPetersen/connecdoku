@@ -223,8 +223,11 @@ function renderOutput() {
         output += `\n- **reset**: Reset word selection for this puzzle
 - **abandon**: Abandon this puzzle\n\n`;
         output += `⚠️ **IMPORTANT: You must manually review ALL options and choose the BEST word for this cell!**\n`;
-        output += `⚠️ **The letter requirement forces you to review each choice - don't just pick option 0!**\n\n`;
-        output += `**Command:** \`node ai_curator.js select <index><letter>\` (e.g., \`node ai_curator.js select 0B\` for option 0 with first letter B) or \`reset\`, \`abandon\``;
+        output += `⚠️ **Anti-autopick rule:** for cells with 2+ options, you must provide BOTH your best choice and a runner-up.\n\n`;
+        output += `**Command:**\n`;
+        output += `- Single-option cell: \`node ai_curator.js select <index><letter>\` (e.g., \`0B\`)\n`;
+        output += `- Multi-option cell: \`node ai_curator.js select <bestIndex><bestLetter>/<runnerIndex><runnerLetter>\` (e.g., \`2L/5T\`)\n`;
+        output += `- Or: \`reset\`, \`abandon\``;
     } else if (state.phase === "FINAL_APPROVAL") {
         output += `## Final Approval\n\n`;
         output += `**Rows:** ${state.currentPuzzle.rows.join(", ")}\n`;
@@ -341,29 +344,56 @@ async function handleAction(action, value) {
                 const options = state.viableGrid[state.currentRow][state.currentCol].filter(w => !state.usedWords.includes(w));
                 let selectedWord = null;
 
-                // Parse value: should be like "0B" (number + first letter)
-                const match = value.match(/^(\d+)([A-Za-z])$/);
-                if (match) {
-                    const idx = parseInt(match[1]);
-                    const providedLetter = match[2].toUpperCase();
-                    
-                    if (idx >= 0 && idx < options.length) {
-                        const word = options[idx];
-                        const expectedLetter = word.trim().charAt(0).toUpperCase();
-                        
-                        if (providedLetter === expectedLetter) {
-                            selectedWord = word;
+                // Single-option cell: allow simple format "0B".
+                const simpleMatch = value.match(/^(\d+)([A-Za-z])$/);
+                // Multi-option cell: require best + runner-up format "2L/5T".
+                const dualMatch = value.match(/^(\d+)([A-Za-z])\/(\d+)([A-Za-z])$/);
+                if (options.length <= 1) {
+                    if (simpleMatch) {
+                        const idx = parseInt(simpleMatch[1], 10);
+                        const providedLetter = simpleMatch[2].toUpperCase();
+                        if (idx >= 0 && idx < options.length) {
+                            const word = options[idx];
+                            const expectedLetter = word.trim().charAt(0).toUpperCase();
+                            if (providedLetter === expectedLetter) {
+                                selectedWord = word;
+                            } else {
+                                state.message = `⚠️ Letter mismatch: expected ${expectedLetter} for option ${idx} (${word}), got ${providedLetter}.`;
+                            }
                         } else {
-                            state.message = `⚠️ Letter mismatch: expected ${expectedLetter} for option ${idx} (${word}), got ${providedLetter}. This mismatch is INTENTIONAL to force you to review ALL options and manually choose the BEST word - don't just pick option 0! Please review all options carefully.`;
+                            state.message = `Invalid index: ${idx} (valid range: 0-${options.length - 1})`;
                         }
                     } else {
-                        state.message = `Invalid index: ${idx} (valid range: 0-${options.length - 1})`;
+                        state.message = `Invalid format for single-option cell. Expected <index><letter> (e.g., "0B"). Got: ${value}`;
                     }
-                } else if (options.includes(value)) {
-                    // Still allow full word name for backwards compatibility
-                    selectedWord = value;
+                } else if (dualMatch) {
+                    const bestIdx = parseInt(dualMatch[1], 10);
+                    const bestLetter = dualMatch[2].toUpperCase();
+                    const altIdx = parseInt(dualMatch[3], 10);
+                    const altLetter = dualMatch[4].toUpperCase();
+
+                    if (bestIdx === altIdx) {
+                        state.message = `Invalid runner-up: best and runner-up indices must be different.`;
+                    } else if (
+                        bestIdx < 0 || bestIdx >= options.length ||
+                        altIdx < 0 || altIdx >= options.length
+                    ) {
+                        state.message = `Invalid index in ${value} (valid range: 0-${options.length - 1})`;
+                    } else {
+                        const bestWord = options[bestIdx];
+                        const altWord = options[altIdx];
+                        const expectedBest = bestWord.trim().charAt(0).toUpperCase();
+                        const expectedAlt = altWord.trim().charAt(0).toUpperCase();
+                        if (bestLetter !== expectedBest) {
+                            state.message = `⚠️ Best-choice letter mismatch: expected ${expectedBest} for option ${bestIdx} (${bestWord}), got ${bestLetter}.`;
+                        } else if (altLetter !== expectedAlt) {
+                            state.message = `⚠️ Runner-up letter mismatch: expected ${expectedAlt} for option ${altIdx} (${altWord}), got ${altLetter}.`;
+                        } else {
+                            selectedWord = bestWord;
+                        }
+                    }
                 } else {
-                    state.message = `Invalid format: expected <number><letter> (e.g., "0B") or full word name. Got: ${value}. ⚠️ Remember: You must manually review ALL options and choose the BEST word - the letter requirement forces careful review of each choice!`;
+                    state.message = `Invalid format for multi-option cell. Expected <bestIndex><bestLetter>/<runnerIndex><runnerLetter> (e.g., "2L/5T"). Got: ${value}`;
                 }
 
                 if (selectedWord) {
@@ -425,4 +455,3 @@ main().catch(err => {
     console.error(err);
     process.exit(1);
 });
-
