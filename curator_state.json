@@ -5,721 +5,709 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "2297c78de8d144332096d7828c1443d39cfdb86d749ed38fb8400edaef0cb764",
+    "hash": "b4a8212f535a958b0b90cbac5c32e6e9b5ed81b88c264e5292b6d95efe35d20a",
     "rows": [
-      "2nd Century",
-      "Qing Dynasty",
-      "Tang Dynasty",
-      "Things Turkish"
+      "1860s",
+      "1960s",
+      "French Revolution",
+      "Roman Republic"
     ],
     "cols": [
-      "Buildings",
-      "Locations in Asia",
-      "Real People",
-      "Sieges"
+      "Assassins",
+      "Military Reformers",
+      "Starts with MAR",
+      "Wars"
     ],
     "timestamp": null,
-    "qualityScore": 17.6,
-    "maxSimilarityToPast": 0.3959,
-    "finalScore": 14.432800000000002
+    "qualityScore": 15.559999999999999,
+    "maxSimilarityToPast": 0.3173,
+    "finalScore": 13.0216
   },
   "viableGrid": [
     [
       [
-        "Circus Maximus",
-        "Hadrian's Wall",
-        "Pantheon"
+        "John Wilkes Booth"
       ],
       [
-        "Syria Palaestina"
+        "Helmuth von Moltke the Elder"
       ],
       [
-        "Commodus",
-        "Galen",
-        "Hadrian",
-        "Marcus Aurelius",
-        "Narcissus the Wrestler",
-        "Trajan",
-        "Zhang Daoling",
-        "Zhang Heng"
+        "Mary Baker Eddy"
       ],
       [
-        "Bar Kokhba Revolt"
+        "Dungan Revolt",
+        "The American Civil War"
       ]
     ],
     [
       [
-        "Forbidden City"
+        "Black Widow",
+        "Lee Harvey Oswald",
+        "Sirhan Sirhan"
       ],
       [
-        "Beijing"
+        "John Boyd"
       ],
       [
-        "Hong Xiuquan"
+        "Marilyn Monroe",
+        "Mariner",
+        "Mary Poppins"
       ],
       [
-        "The Boxer Rebellion"
+        "Bay of Pigs",
+        "Bay of Pigs Invasion",
+        "The Vietnam War"
       ]
     ],
     [
       [
-        "Xuanwu Gate"
+        "Charlotte Corday"
       ],
       [
-        "Chang'an"
+        "Napoleon Bonaparte"
       ],
       [
-        "Du Fu",
-        "Huineng",
-        "Li Bai",
-        "Li Jiancheng",
-        "Li Shimin",
-        "Li Yuanji",
-        "Wu Zetian",
-        "Zhiyi"
+        "Marie Antoinette"
       ],
       [
-        "Siege of Suiyang"
+        "The French Revolution",
+        "The Haitian Revolution"
       ]
     ],
     [
       [
-        "Blue Mosque",
-        "Hagia Sophia"
+        "Brutus",
+        "Cassius",
+        "Servilius Casca"
       ],
       [
-        "Troy",
-        "Turkey"
+        "Gaius Marius"
       ],
       [
-        "Mehmed II",
-        "Mehmet Ali Agca",
-        "Suleiman the Magnificent",
-        "Timur"
+        "Mark Antony"
       ],
       [
-        "Siege of Malta",
-        "Siege of Sevastopol"
+        "Third Servile War"
       ]
     ]
   ],
   "chosen": [
     [
-      "Hadrian's Wall",
-      "Syria Palaestina",
-      "Marcus Aurelius",
-      "Bar Kokhba Revolt"
+      "John Wilkes Booth",
+      "Helmuth von Moltke the Elder",
+      "Mary Baker Eddy",
+      "The American Civil War"
     ],
     [
-      "Forbidden City",
-      "Beijing",
-      "Hong Xiuquan",
-      "The Boxer Rebellion"
+      "Lee Harvey Oswald",
+      "John Boyd",
+      "Mary Poppins",
+      "The Vietnam War"
     ],
     [
-      "Xuanwu Gate",
-      "Chang'an",
-      "Li Bai",
-      "Siege of Suiyang"
+      "Charlotte Corday",
+      "Napoleon Bonaparte",
+      "Marie Antoinette",
+      "The French Revolution"
     ],
     [
-      "Hagia Sophia",
-      "Turkey",
-      "Suleiman the Magnificent",
-      "Siege of Malta"
+      "Brutus",
+      "Gaius Marius",
+      "Mark Antony",
+      "Third Servile War"
     ]
   ],
   "usedWords": [
-    "Hadrian's Wall",
-    "Syria Palaestina",
-    "Marcus Aurelius",
-    "Bar Kokhba Revolt",
-    "Forbidden City",
-    "Beijing",
-    "Hong Xiuquan",
-    "The Boxer Rebellion",
-    "Xuanwu Gate",
-    "Chang'an",
-    "Li Bai",
-    "Siege of Suiyang",
-    "Hagia Sophia",
-    "Turkey",
-    "Suleiman the Magnificent",
-    "Siege of Malta"
+    "John Wilkes Booth",
+    "Helmuth von Moltke the Elder",
+    "Mary Baker Eddy",
+    "The American Civil War",
+    "Lee Harvey Oswald",
+    "John Boyd",
+    "Mary Poppins",
+    "The Vietnam War",
+    "Charlotte Corday",
+    "Napoleon Bonaparte",
+    "Marie Antoinette",
+    "The French Revolution",
+    "Brutus",
+    "Gaius Marius",
+    "Mark Antony",
+    "Third Servile War"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "2297c78de8d144332096d7828c1443d39cfdb86d749ed38fb8400edaef0cb764",
+      "hash": "b4a8212f535a958b0b90cbac5c32e6e9b5ed81b88c264e5292b6d95efe35d20a",
       "rows": [
-        "2nd Century",
-        "Qing Dynasty",
-        "Tang Dynasty",
-        "Things Turkish"
-      ],
-      "cols": [
-        "Buildings",
-        "Locations in Asia",
-        "Real People",
-        "Sieges"
-      ],
-      "timestamp": null,
-      "qualityScore": 17.6,
-      "maxSimilarityToPast": 0.3959,
-      "finalScore": 14.432800000000002
-    },
-    {
-      "hash": "877782cfcc297dcf395474b323a47e95393debd409c16b88b760ffa26d55f6b0",
-      "rows": [
-        "17th Century",
-        "19th Century",
-        "Ancient Figures",
-        "Things Greek"
-      ],
-      "cols": [
-        "Military Reformers",
-        "Period Stories",
-        "Poets",
-        "Tragedy Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.82,
-      "maxSimilarityToPast": 0.3913,
-      "finalScore": 13.6896
-    },
-    {
-      "hash": "f0295d74f9fcca1b7cf9797fedc27b73a9cfbbb12d4e712a9cd8d899648564b1",
-      "rows": [
-        "1880s",
+        "1860s",
         "1960s",
-        "Red Things",
-        "Second in Internal Chronology"
+        "French Revolution",
+        "Roman Republic"
       ],
       "cols": [
-        "Family Sagas",
-        "Fictional Animals",
-        "First in Release Order",
-        "Starts with MAR"
+        "Assassins",
+        "Military Reformers",
+        "Starts with MAR",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 13.91,
-      "maxSimilarityToPast": 0.4084,
-      "finalScore": 10.642800000000001
+      "qualityScore": 15.559999999999999,
+      "maxSimilarityToPast": 0.3173,
+      "finalScore": 13.0216
     },
     {
-      "hash": "74e926652c4ff3475ba52109b2172b5e367e36df2c33a628456580aa12a439dd",
+      "hash": "40a3d2662ce4c4e90eb7f5017f6cfa91f053003e2e89736e98bbc815b47c277f",
       "rows": [
-        "1920s",
-        "1994",
-        "Black and White",
-        "Starts with GRE"
+        "2008",
+        "First in Release Order",
+        "Musical Films",
+        "Second in Release Order"
       ],
       "cols": [
-        "Carnivores",
-        "Family-Friendly Stories",
-        "Romance Stories",
+        "2012",
+        "2D Animated Films",
+        "Pixar",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.99,
+      "maxSimilarityToPast": 0.3829,
+      "finalScore": 11.9268
+    },
+    {
+      "hash": "1a5f9db4c08caa4ebf0f7a33868f340623d4958442046510b5079d61a78f4fad",
+      "rows": [
+        "Birds",
+        "Eocene Epoch",
+        "Fictional Animals",
+        "Paleozoic Era"
+      ],
+      "cols": [
+        "Herbivores",
+        "Mesozoic Era",
+        "Omnivores",
         "Things That Fly"
       ],
       "timestamp": null,
-      "qualityScore": 7.44,
-      "maxSimilarityToPast": 0.5266,
-      "finalScore": 3.2272000000000007
+      "qualityScore": 6.21,
+      "maxSimilarityToPast": 0.5201,
+      "finalScore": 2.0492
     },
     {
-      "hash": "73fa7d03b6a712e8e250971eb9cb777443a24bfcee3b38c8dbde9aae32189f8f",
+      "hash": "6e01e7a3db6981fe8552f655f2d1ee6e7f577db6ab6e56559444f71ee9617c65",
       "rows": [
-        "13th Century",
-        "17th Century",
-        "Cities in Europe",
-        "Cities in North America"
+        "2005",
+        "2013",
+        "Ends with ACE",
+        "Second in Internal Chronology"
       ],
       "cols": [
-        "Ends with TON",
-        "Historical Sites",
-        "Saints",
+        "First in Release Order",
+        "Period Stories",
+        "Prequels",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.110000000000001,
+      "maxSimilarityToPast": 0.4423,
+      "finalScore": 10.5716
+    },
+    {
+      "hash": "a2b932f1a2a0dc788c1392af4fdb12235bc004d8cfa36ca6c7f31fd946be0d0c",
+      "rows": [
+        "1860s",
+        "1940s",
+        "Cold War",
+        "Napoleonic Wars"
+      ],
+      "cols": [
+        "Battles",
+        "Famous Quotes",
+        "Military Ships",
         "Things German"
       ],
       "timestamp": null,
-      "qualityScore": 11.299999999999999,
-      "maxSimilarityToPast": 0.443,
-      "finalScore": 7.7559999999999985
+      "qualityScore": 10.819999999999999,
+      "maxSimilarityToPast": 0.5029,
+      "finalScore": 6.796799999999998
     },
     {
-      "hash": "ffeee111f6a84769ca955ddc334d3c11e971f4e9fef0bf442ededa6acca83449",
+      "hash": "677b03d6380afd4b6e9f2a36bbf38ad27cc31f59c5c2cc24ba19cf3ba4f9d688",
       "rows": [
-        "2018",
-        "Ends with INE",
+        "1860s",
+        "1970s",
+        "Countries that No Longer Exist",
+        "Republics"
+      ],
+      "cols": [
+        "Cities",
+        "Ends with AND",
+        "Things German",
+        "Things Iranian"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.99,
+      "maxSimilarityToPast": 0.385,
+      "finalScore": 4.91
+    },
+    {
+      "hash": "833874a1b39f2aabba8d3c5529eb0535ebc2f326bba581d27631112d0fee2d57",
+      "rows": [
+        "2005",
+        "2016",
+        "First in Release Order",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Musical Films",
+        "Star Wars Movies",
+        "Starts with HAR",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.28,
+      "maxSimilarityToPast": 0.3227,
+      "finalScore": 11.6984
+    },
+    {
+      "hash": "bc4a214d2246775b925d0d2b5674afe19ad3a5d8b8d1bde45b5a59f5162d2408",
+      "rows": [
+        "1860s",
+        "French Revolution",
+        "Roman Empire",
+        "Roman Republic"
+      ],
+      "cols": [
+        "Assassins",
+        "Historical Sites",
+        "Starts with MAR",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.22,
+      "maxSimilarityToPast": 0.4334,
+      "finalScore": 11.7528
+    },
+    {
+      "hash": "757d9e635a7e2bc75ddc77de62ff6dcc7cea96d7b48dc363b46d8056ba0086ef",
+      "rows": [
+        "1860s",
+        "Countries that No Longer Exist",
+        "Modern Countries",
+        "Monarchs"
+      ],
+      "cols": [
+        "1960s",
+        "Cities",
+        "Things German",
+        "Things Iranian"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.45,
+      "maxSimilarityToPast": 0.3828,
+      "finalScore": 5.387599999999999
+    },
+    {
+      "hash": "88c89ca50369aeef0758a95dc3545e6c539a3a11ee0015c6aa7c551c2a3fbe81",
+      "rows": [
+        "1860s",
+        "1900s",
+        "Cold War",
+        "Napoleonic Wars"
+      ],
+      "cols": [
+        "Battles",
+        "Military Ships",
+        "Things German",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.139999999999999,
+      "maxSimilarityToPast": 0.5043,
+      "finalScore": 9.105599999999999
+    },
+    {
+      "hash": "816dc3938f5e75cb45b08c521a7de32cd785a2ca5e21aecbc7dce8d3846705c0",
+      "rows": [
+        "1860s",
+        "1910s",
+        "Cold War",
+        "Napoleonic Wars"
+      ],
+      "cols": [
+        "Battles",
+        "Military Ships",
+        "Things German",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.749999999999998,
+      "maxSimilarityToPast": 0.5,
+      "finalScore": 7.749999999999998
+    },
+    {
+      "hash": "f9eeb4f8344f395fefbac238d30d48e74055bf421acb34fffc39249397aca8ab",
+      "rows": [
+        "1860s",
+        "1970s",
+        "Ming Dynasty",
+        "Roman Republic"
+      ],
+      "cols": [
+        "Cities",
+        "Famous Quotes",
+        "Period Stories",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.95,
+      "maxSimilarityToPast": 0.5142,
+      "finalScore": 5.836399999999999
+    },
+    {
+      "hash": "b9626b3877027328760d8a11c1e25831a0ceedbf6a1df3a106622fd56e71b647",
+      "rows": [
+        "1860s",
+        "1970s",
+        "Countries",
+        "Monarchs"
+      ],
+      "cols": [
+        "Cities",
+        "Starts with MAR",
+        "Things German",
+        "Things Iranian"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.89,
+      "maxSimilarityToPast": 0.4286,
+      "finalScore": 4.4612
+    },
+    {
+      "hash": "31cf655957325ec8b5e8451b59ec26ed72fe50a60ae75e8cd99991dbab452247",
+      "rows": [
+        "Birds",
+        "Fictional Animals",
+        "Oligocene Epoch",
+        "Paleozoic Era"
+      ],
+      "cols": [
+        "Herbivores",
+        "Mesozoic Era",
+        "Omnivores",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.2,
+      "maxSimilarityToPast": 0.5205,
+      "finalScore": 2.0360000000000005
+    },
+    {
+      "hash": "3585feef072eb99beb07ec2b8e30fc2caf195081318d633ddc67d730581d03e1",
+      "rows": [
+        "Birds",
+        "Fictional Animals",
+        "Paleogene Period",
+        "Paleozoic Era"
+      ],
+      "cols": [
+        "Herbivores",
+        "Mesozoic Era",
+        "Omnivores",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.19,
+      "maxSimilarityToPast": 0.5219,
+      "finalScore": 2.0148
+    },
+    {
+      "hash": "a4e42761d7f46049216e01e322f898410d8881b80d66d7be9309f3587f42af23",
+      "rows": [
+        "Birds",
+        "Fictional Animals",
+        "Miocene Epoch",
+        "Paleozoic Era"
+      ],
+      "cols": [
+        "Herbivores",
+        "Mesozoic Era",
+        "Omnivores",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.16,
+      "maxSimilarityToPast": 0.5206,
+      "finalScore": 1.9952000000000005
+    },
+    {
+      "hash": "ca2e495a4dc389152d753df5d6f423fe13da3b8551f05a411205153793c15de4",
+      "rows": [
+        "1860s",
+        "1970s",
+        "French Revolution",
+        "Roman Republic"
+      ],
+      "cols": [
+        "Historical Sites",
+        "Military Reformers",
+        "Starts with MAR",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.090000000000002,
+      "maxSimilarityToPast": 0.4257,
+      "finalScore": 11.684400000000002
+    },
+    {
+      "hash": "fc76cab360a2a5a9905a3ac7930107f1d2ad161725931c3a18e3df68a3ddcbee",
+      "rows": [
+        "2005",
+        "2016",
         "First in Release Order",
         "Second in Release Order"
       ],
       "cols": [
-        "Period Stories",
-        "Star Wars Universe",
-        "Superheroes",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.49,
-      "maxSimilarityToPast": 0.4807,
-      "finalScore": 8.644400000000001
-    },
-    {
-      "hash": "5fcc9f117b92f622b0cc783a83c2e353745936dee569e4889c9f371779c61852",
-      "rows": [
-        "17th Century",
-        "1st Century",
-        "Starts with MAR",
-        "Warring States Period"
-      ],
-      "cols": [
-        "Assassins",
-        "Buildings",
-        "Monarchs",
-        "Writers"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.989999999999998,
-      "maxSimilarityToPast": 0.3931,
-      "finalScore": 10.845199999999998
-    },
-    {
-      "hash": "4386af8d40275934b633483ae002783854c23d29af2253b2d53ab8883a8b7e48",
-      "rows": [
-        "1992",
-        "Ends with ISH",
-        "First in Release Order",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Action Stories",
-        "Douglas Adams",
-        "Family-Friendly Stories",
-        "Real People"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.309999999999999,
-      "maxSimilarityToPast": 0.3679,
-      "finalScore": 9.366799999999998
-    },
-    {
-      "hash": "20b1d54f343133ec5935c9c0ef3cafc16d47e4b6e151e50cd05df0fc828f7568",
-      "rows": [
-        "1920s",
-        "1940s",
-        "Countries",
-        "Real People"
-      ],
-      "cols": [
-        "Ends with NCE",
-        "Omnivores",
-        "Things German",
-        "Things Swedish"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.67,
-      "maxSimilarityToPast": 0.3777,
-      "finalScore": 4.6484000000000005
-    },
-    {
-      "hash": "09a4b4e9a167be18b60890d998b763ccf919dddb3c15d71d7b804d97d60d6f15",
-      "rows": [
-        "15th Century",
-        "19th Century",
-        "Things German",
-        "Things Greek"
-      ],
-      "cols": [
-        "Great Conquerors",
-        "Scientists",
-        "Sieges",
-        "Starts with BAT"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.18,
-      "maxSimilarityToPast": 0.513,
-      "finalScore": 8.076
-    },
-    {
-      "hash": "9f964990fac8bdad6f867676d2f7d4b190f434698bea0bd965cc1e48aeb02d9b",
-      "rows": [
-        "1992",
-        "2005",
-        "Real People",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "First in Release Order",
-        "Horror Stories",
-        "Period Stories",
-        "Starts with HAR"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.23,
-      "maxSimilarityToPast": 0.4459,
-      "finalScore": 7.662800000000001
-    },
-    {
-      "hash": "e1d867e5318adb89bccac60fd780e9f372e3bd8734a040fb9a95f3a4a245e04e",
-      "rows": [
-        "17th Century",
-        "Ends with LES",
-        "Opera",
-        "Things Greek"
-      ],
-      "cols": [
-        "19th Century",
-        "Buildings",
-        "Real People",
-        "Tragic Heroes"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.79,
-      "maxSimilarityToPast": 0.3977,
-      "finalScore": 7.6084
-    },
-    {
-      "hash": "5f00c82791da536ed3e61ce387cb24c5f6d89da291e89e06b925c973802f3916",
-      "rows": [
-        "1992",
-        "2003",
-        "Ends with TER",
-        "First in Release Order"
-      ],
-      "cols": [
-        "Real People",
-        "Romance Stories",
-        "Second in Internal Chronology",
+        "Musical Films",
+        "Star Wars Movies",
+        "Starts with HAR",
         "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 10.05,
-      "maxSimilarityToPast": 0.4075,
-      "finalScore": 6.790000000000001
+      "qualityScore": 14.23,
+      "maxSimilarityToPast": 0.3287,
+      "finalScore": 11.6004
     },
     {
-      "hash": "3ff89460bc49fe27ed4681a47f17ea05a32fd43aa41a05ea77bac3526346d51f",
+      "hash": "11e866453a5e6f55bf2f6c59b3415650406f8c66b22e5e23970887d658d0806c",
       "rows": [
-        "1992",
-        "1994",
-        "Ends with RON",
-        "Mammals"
-      ],
-      "cols": [
-        "Action Stories",
-        "Family-Friendly Stories",
-        "Real People",
-        "Songs"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.91,
-      "maxSimilarityToPast": 0.3551,
-      "finalScore": 6.0692
-    },
-    {
-      "hash": "59617b120a11fd109fd60bac1622cfe6f84c10d156e72783b7d825c05561a52b",
-      "rows": [
-        "1880s",
-        "Companies",
-        "Ends with AND",
-        "Period Stories"
-      ],
-      "cols": [
-        "1910s",
-        "First in Release Order",
-        "Locations in Asia",
-        "Real People"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.499999999999999,
-      "maxSimilarityToPast": 0.3405,
-      "finalScore": 4.775999999999999
-    },
-    {
-      "hash": "89ed3c106e6388a92a0298983f0dc79700a649b39389590a3614caf18206f648",
-      "rows": [
-        "17th Century",
-        "1960s",
-        "Modern Countries",
-        "Starts with MAR"
-      ],
-      "cols": [
-        "Athletes",
-        "Cenozoic Era",
-        "Saints",
-        "Things German"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.68,
-      "maxSimilarityToPast": 0.4006,
-      "finalScore": 4.475199999999999
-    },
-    {
-      "hash": "d3f0f56ce3bbc1e2dc758acb360b12464f69926c9dfec9eee2f85152585d8b89",
-      "rows": [
-        "17th Century",
-        "1960s",
-        "Medieval Figures",
-        "Starts with MAR"
-      ],
-      "cols": [
-        "Saints",
-        "Shakespeare Characters",
-        "Things German",
-        "Writers"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.37,
-      "maxSimilarityToPast": 0.4623,
-      "finalScore": 8.6716
-    },
-    {
-      "hash": "edf8ac809cac3eacf2d82eab882ff0e8414d7e0f28fde6e5ad0078eae2001e22",
-      "rows": [
-        "13th Century",
-        "1930s",
-        "Things Egyptian",
-        "Things Turkish"
-      ],
-      "cols": [
-        "Buildings",
-        "Countries",
-        "Real People",
-        "Starts with BAT"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.969999999999999,
-      "maxSimilarityToPast": 0.4467,
-      "finalScore": 7.396399999999999
-    },
-    {
-      "hash": "f6453c6a136d588e0ccb9cca8f1f5502edfa19d6ac4b3e9ac0cdcce080ad9ac5",
-      "rows": [
-        "14th Century",
-        "19th Century",
-        "The Crusades",
-        "Things Greek"
-      ],
-      "cols": [
-        "Monarchs",
-        "Period Stories",
-        "Sieges",
-        "Starts with BAT"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.35,
-      "maxSimilarityToPast": 0.4356,
-      "finalScore": 6.8652
-    },
-    {
-      "hash": "a46bae0f3d85756337c18d44a035fc67511a64c407be2404b658b4d24b301bc6",
-      "rows": [
-        "13th Century",
-        "Ends with RIA",
-        "Things Indian",
-        "Things Turkish"
-      ],
-      "cols": [
-        "15th Century",
-        "Buildings",
-        "Countries",
-        "Monarchs"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.14,
-      "maxSimilarityToPast": 0.4837,
-      "finalScore": 6.2704
-    },
-    {
-      "hash": "ea38cefce065e7552219de4b0795f23a106f0d12e165f21ec32907d7cbcebfd4",
-      "rows": [
-        "1920s",
-        "1940s",
-        "Birds",
-        "Fictional Animals"
-      ],
-      "cols": [
-        "Black and White",
-        "Green Things",
-        "Real People",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.39,
-      "maxSimilarityToPast": 0.4208,
-      "finalScore": 6.0236
-    },
-    {
-      "hash": "105be85281189d15799db81f99f4ee55fc614c9d94d6b47a070243107376987a",
-      "rows": [
-        "1880s",
+        "1860s",
         "1970s",
-        "Romance Stories",
-        "Third in Release Order"
+        "Napoleonic Wars",
+        "Roman Republic"
       ],
       "cols": [
-        "Ends with NCE",
-        "Family-Friendly Stories",
-        "Real People",
-        "Stories about Families"
+        "Cities",
+        "Famous Quotes",
+        "Military Reformers",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 8.46,
-      "maxSimilarityToPast": 0.4464,
-      "finalScore": 4.888800000000001
+      "qualityScore": 12.99,
+      "maxSimilarityToPast": 0.5461,
+      "finalScore": 8.6212
     },
     {
-      "hash": "452af98474d3c72b43444072a0b14fd06590cc974df151fff29e8b80020c158e",
+      "hash": "9b3a150dd025cf77392b74bc7f7d85285a30267465d8adc2cc55c82ffef4621b",
       "rows": [
-        "17th Century",
+        "1860s",
         "1960s",
         "Roman Empire",
-        "Starts with MAR"
+        "Roman Republic"
       ],
       "cols": [
         "Assassins",
-        "Monarchs",
-        "Shakespeare",
+        "Famous Quotes",
+        "Starts with MAR",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.85,
+      "maxSimilarityToPast": 0.4577,
+      "finalScore": 6.1884
+    },
+    {
+      "hash": "3270ae6c5120ec7ab9af31f2e501dd060d0d037436db67a45c37d118e52f0042",
+      "rows": [
+        "1860s",
+        "1970s",
+        "Napoleonic Wars",
+        "Roman Empire"
+      ],
+      "cols": [
+        "Cities",
+        "Famous Quotes",
+        "Things German",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.27,
+      "maxSimilarityToPast": 0.4348,
+      "finalScore": 5.791599999999999
+    },
+    {
+      "hash": "2af7647e4f0d72c3d81887135e38eb57f59fc91fc80b63290926f7c213313ebf",
+      "rows": [
+        "1860s",
+        "Cold War",
+        "Napoleonic Wars",
+        "Roman Empire"
+      ],
+      "cols": [
+        "Cities",
+        "Famous Quotes",
+        "Things German",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.91,
+      "maxSimilarityToPast": 0.5428,
+      "finalScore": 5.5676000000000005
+    },
+    {
+      "hash": "aeb926f0976cde8bd0c22dfb92a89ba105ebc4cef1a8e933bf93e206e64c1c3a",
+      "rows": [
+        "1860s",
+        "1910s",
+        "Cold War",
         "Things German"
       ],
+      "cols": [
+        "Battles",
+        "Ends with AND",
+        "Military Ships",
+        "Wars"
+      ],
       "timestamp": null,
-      "qualityScore": 8.48,
-      "maxSimilarityToPast": 0.453,
-      "finalScore": 4.856
+      "qualityScore": 8.549999999999999,
+      "maxSimilarityToPast": 0.4182,
+      "finalScore": 5.204399999999999
     },
     {
-      "hash": "45fd987b38634ff0aa652d80f4cc1a041b42bbe964462a48e1898128a72901d7",
+      "hash": "4acb64c7c8238de9d3f571838704a5c08ea07b91bc4b862881867c07c674d6de",
       "rows": [
-        "17th Century",
-        "1940s",
-        "Ancient Figures",
-        "Things Greek"
+        "1860s",
+        "1970s",
+        "Roman Empire",
+        "Roman Republic"
       ],
       "cols": [
-        "Military Reformers",
-        "Period Stories",
-        "Plays",
-        "Writers"
+        "Famous Quotes",
+        "Historical Sites",
+        "Starts with MAR",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 13.550000000000002,
-      "maxSimilarityToPast": 0.3455,
-      "finalScore": 10.786000000000003
+      "qualityScore": 9.379999999999999,
+      "maxSimilarityToPast": 0.5584,
+      "finalScore": 4.912799999999999
     },
     {
-      "hash": "4e86522d863a9031cb7a6f8c40462c9cc9b20e6c797acc32b697b370228479c4",
+      "hash": "0eefa2fc9e4479d3eb8ec9f1306cf11d9e08ff660fc3d9a91e44a703f8050d56",
       "rows": [
-        "13th Century",
-        "16th Century",
-        "Things Greek",
-        "Warring States Period"
+        "1860s",
+        "1970s",
+        "Countries that No Longer Exist",
+        "Modern Countries"
       ],
       "cols": [
-        "Buildings",
-        "Great Conquerors",
-        "Starts with BAT",
-        "Writers"
+        "Cities",
+        "Ends with AND",
+        "Things German",
+        "Things Iranian"
       ],
       "timestamp": null,
-      "qualityScore": 13.74,
-      "maxSimilarityToPast": 0.429,
-      "finalScore": 10.308
+      "qualityScore": 7.879999999999999,
+      "maxSimilarityToPast": 0.385,
+      "finalScore": 4.799999999999999
     },
     {
-      "hash": "db841331d9b908db715662e66fa6fd3850873e7e43177848b8cac299bb1b9eb9",
+      "hash": "0cbf2b34840ecc79e4a91f3f51c5d6a8697f3ccf31bccc4d100f6839a6f1c4f3",
       "rows": [
-        "2018",
-        "First in Release Order",
-        "Real People",
-        "Second in Internal Chronology"
+        "1860s",
+        "1970s",
+        "Modern Countries",
+        "Monarchs"
       ],
       "cols": [
-        "Family-Friendly Stories",
-        "Period Stories",
-        "Prequels",
-        "Star Wars Universe"
+        "Cities",
+        "Starts with MAR",
+        "Things German",
+        "Things Iranian"
       ],
       "timestamp": null,
-      "qualityScore": 13.7,
-      "maxSimilarityToPast": 0.4307,
-      "finalScore": 10.254399999999999
+      "qualityScore": 7.8999999999999995,
+      "maxSimilarityToPast": 0.4286,
+      "finalScore": 4.4712
     },
     {
-      "hash": "829635fbb8144d5b6ca1a98aef6879863acd375f936bb366ad665f438d7fd297",
+      "hash": "babe1e0f34eedddd0be46951f2cd278c420cba5878d7a89e7934d34398d11bca",
       "rows": [
-        "1992",
-        "2004",
-        "Real People",
-        "Second in Internal Chronology"
+        "1860s",
+        "Roman Empire",
+        "Roman Republic",
+        "Things German"
       ],
       "cols": [
-        "First in Release Order",
-        "Horror Stories",
-        "Period Stories",
-        "Starts with HAR"
+        "Battles",
+        "Famous Quotes",
+        "Starts with MAR",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 11.030000000000001,
-      "maxSimilarityToPast": 0.4486,
-      "finalScore": 7.441200000000001
+      "qualityScore": 8.5,
+      "maxSimilarityToPast": 0.5083,
+      "finalScore": 4.4336
     },
     {
-      "hash": "730dd61881a436ec1f7f5ef168e67489daaace5aeb27af254c3af065378ec2ec",
+      "hash": "3321bb0a9615e2f7f02cdead8f100b1b0de907f8509411195d7691b9e3422bda",
       "rows": [
-        "1920s",
-        "1940s",
-        "Dinosaurs",
-        "Fictional Animals"
+        "1860s",
+        "1970s",
+        "Roman Republic",
+        "Things German"
       ],
       "cols": [
-        "Black and White",
-        "Green Things",
-        "Real People",
-        "Things That Fly"
+        "Cities",
+        "Famous Quotes",
+        "Starts with MAR",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 8.77,
-      "maxSimilarityToPast": 0.4214,
-      "finalScore": 5.3988
+      "qualityScore": 6.669999999999999,
+      "maxSimilarityToPast": 0.4098,
+      "finalScore": 3.391599999999999
     },
     {
-      "hash": "21573a6709a713c733c77e48520bdf66165e2976ac05768632eea55ae4e76ec8",
+      "hash": "eb74dbae514e1d3b85944aaa68aba772f1b406e6c4890d2188d3900dc9743380",
       "rows": [
-        "1920s",
-        "1940s",
-        "Currently Living Animals",
-        "Fictional Animals"
+        "1860s",
+        "Cold War",
+        "Roman Republic",
+        "Things German"
       ],
       "cols": [
-        "Black and White",
-        "Green Things",
-        "Real People",
-        "Things That Fly"
+        "1960s",
+        "Cities",
+        "Famous Quotes",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 8.489999999999998,
-      "maxSimilarityToPast": 0.4041,
-      "finalScore": 5.257199999999998
+      "qualityScore": 7.34,
+      "maxSimilarityToPast": 0.5207,
+      "finalScore": 3.1743999999999994
     },
     {
-      "hash": "e5e49ffa9fb27206efd74a789500a7d8a5d9bc3187ce6f77b1e3deb6901c11a9",
+      "hash": "d9b72665a32f016253eb8484fcddd8a9f4b3dec8a9165c9c0f56163b079e264e",
       "rows": [
-        "1920s",
-        "1940s",
-        "Animal Species",
-        "Fictional Animals"
+        "1860s",
+        "1970s",
+        "Roman Empire",
+        "Things German"
       ],
       "cols": [
-        "Black and White",
-        "Green Things",
-        "Real People",
-        "Things That Fly"
+        "Cities",
+        "Famous Quotes",
+        "Starts with MAR",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 8.440000000000001,
-      "maxSimilarityToPast": 0.4245,
-      "finalScore": 5.044000000000001
+      "qualityScore": 6.069999999999999,
+      "maxSimilarityToPast": 0.3928,
+      "finalScore": 2.9275999999999995
     }
   ],
   "message": "Puzzle saved successfully!"
