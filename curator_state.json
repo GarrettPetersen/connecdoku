@@ -5,726 +5,730 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "5ef639054f49ded04df8c9fb67875166c66109b7fa7e4b5f8d492292e7895708",
+    "hash": "90f34b43024f4143cc9e0e1712267d359fdab269add7f0705bd11d730cd91127",
     "rows": [
-      "Cities",
-      "The Crusades",
-      "Things Czech",
-      "Things Iranian"
+      "2016",
+      "2017",
+      "First in Internal Chronology",
+      "Second in Release Order"
     ],
     "cols": [
-      "Countries that No Longer Exist",
-      "Events",
-      "Modern Countries",
-      "Monarchs"
+      "Civilian Ships",
+      "Fantasy Stories",
+      "Musical Films",
+      "Star Wars Movies"
     ],
     "timestamp": null,
-    "qualityScore": 11.51,
-    "maxSimilarityToPast": 0.4822,
-    "finalScore": 7.6524
+    "qualityScore": 17.57,
+    "maxSimilarityToPast": 0.3827,
+    "finalScore": 14.5084
   },
   "viableGrid": [
     [
       [
-        "Carthage"
+        "Boaty McBoatface",
+        "Harmony of the Seas"
       ],
       [
-        "Abbottabad",
-        "Chernobyl",
-        "Fukushima",
-        "Herculaneum",
-        "Pompeii"
+        "A Monster Calls"
       ],
       [
-        "Monaco",
-        "San Marino",
-        "Singapore",
-        "Vatican City"
+        "La La Land"
       ],
       [
-        "Victoria"
+        "Rogue One"
       ]
     ],
     [
       [
-        "County of Tripoli",
-        "Kingdom of Jerusalem",
-        "Principality of Antioch"
+        "MSC Meraviglia"
       ],
       [
-        "Battle of Hattin",
-        "Siege of Malta",
-        "The Albigensian Crusade",
-        "The Crusades",
-        "The First Crusade"
+        "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "The Shape of Water"
       ],
       [
-        "Malta"
+        "The Greatest Showman"
       ],
       [
-        "Bohemond",
-        "Edward I",
-        "Frederick I Barbarossa",
-        "Frederick II",
-        "Louis IX",
-        "Louis VII",
-        "Philip II of France",
-        "Prester John",
-        "Richard the Lionheart",
-        "Saladin"
+        "The Last Jedi"
       ]
     ],
     [
       [
-        "Bohemia"
+        "Queen Elizabeth",
+        "Queen Mary"
       ],
       [
-        "The Hussite Wars"
+        "Ghostbusters",
+        "Harry Potter and the Sorcerer's Stone",
+        "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "The Chronicles of Narnia: The Magician's Nephew",
+        "The Lord of the Rings: The Fellowship of the Ring",
+        "The Magician's Nephew",
+        "The Map of Time",
+        "The Santa Clause",
+        "The Silmarillion"
       ],
       [
-        "Czech Republic"
+        "101 Dalmatians",
+        "Bambi",
+        "Lady and the Tramp",
+        "Lilo & Stitch",
+        "Mulan",
+        "Pocahontas",
+        "The Emperor's New Groove",
+        "The Hunchback of Notre Dame",
+        "The Jungle Book",
+        "The Lion King",
+        "The Many Adventures of Winnie the Pooh",
+        "The Parent Trap",
+        "The Rescuers"
       ],
       [
-        "Charles IV",
-        "Good King Wenceslas",
-        "John of Bohemia"
+        "The Phantom Menace"
       ]
     ],
     [
       [
-        "Persia"
+        "Queen Elizabeth 2",
+        "Queen Mary 2"
       ],
       [
-        "Iranian Revolution",
-        "The Iran Hostage Crisis",
-        "The Iran-Iraq War"
+        "Ghostbusters II",
+        "Harry Potter and the Chamber of Secrets",
+        "Pirates of the Caribbean: Dead Man's Chest",
+        "Prince Caspian",
+        "The Lord of the Rings",
+        "The Lord of the Rings: The Two Towers",
+        "The Map of the Sky",
+        "The Santa Clause 2"
       ],
       [
-        "Iran"
+        "Winnie the Pooh"
       ],
       [
-        "Cyrus the Great",
-        "Xerxes"
+        "The Empire Strikes Back"
       ]
     ]
   ],
   "chosen": [
     [
-      "Carthage",
-      "Chernobyl",
-      "Singapore",
-      "Victoria"
+      "Harmony of the Seas",
+      "A Monster Calls",
+      "La La Land",
+      "Rogue One"
     ],
     [
-      "Kingdom of Jerusalem",
-      "The First Crusade",
-      "Malta",
-      "Richard the Lionheart"
+      "MSC Meraviglia",
+      "The Shape of Water",
+      "The Greatest Showman",
+      "The Last Jedi"
     ],
     [
-      "Bohemia",
-      "The Hussite Wars",
-      "Czech Republic",
-      "Charles IV"
+      "Queen Mary",
+      "The Chronicles of Narnia: The Magician's Nephew",
+      "Lady and the Tramp",
+      "The Phantom Menace"
     ],
     [
-      "Persia",
-      "Iranian Revolution",
-      "Iran",
-      "Cyrus the Great"
+      "Queen Mary 2",
+      "The Lord of the Rings: The Two Towers",
+      "Winnie the Pooh",
+      "The Empire Strikes Back"
     ]
   ],
   "usedWords": [
-    "Carthage",
-    "Chernobyl",
-    "Singapore",
-    "Victoria",
-    "Kingdom of Jerusalem",
-    "The First Crusade",
-    "Malta",
-    "Richard the Lionheart",
-    "Bohemia",
-    "The Hussite Wars",
-    "Czech Republic",
-    "Charles IV",
-    "Persia",
-    "Iranian Revolution",
-    "Iran",
-    "Cyrus the Great"
+    "Harmony of the Seas",
+    "A Monster Calls",
+    "La La Land",
+    "Rogue One",
+    "MSC Meraviglia",
+    "The Shape of Water",
+    "The Greatest Showman",
+    "The Last Jedi",
+    "Queen Mary",
+    "The Chronicles of Narnia: The Magician's Nephew",
+    "Lady and the Tramp",
+    "The Phantom Menace",
+    "Queen Mary 2",
+    "The Lord of the Rings: The Two Towers",
+    "Winnie the Pooh",
+    "The Empire Strikes Back"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "6185536878299b2efd4c6189e20d86c7e0603603a2682ce3be73cfed53a0814a",
-      "rows": [
-        "1995",
-        "2015",
-        "First in Release Order",
-        "Prequels"
-      ],
-      "cols": [
-        "Period Stories",
-        "Pixar",
-        "Second in Internal Chronology",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 17.77,
-      "maxSimilarityToPast": 0.3896,
-      "finalScore": 14.6532
-    },
-    {
-      "hash": "cc884f53ce1ec422c9ef7dec48f07fd3edbc996ce16bb3d39aded6a6e3f8f081",
-      "rows": [
-        "Currently Living Plants",
-        "Omnivores",
-        "Supervillains",
-        "Things That Fly"
-      ],
-      "cols": [
-        "Green Things",
-        "Paleocene Epoch",
-        "Predators",
-        "Red Things"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.83,
-      "maxSimilarityToPast": 0.3443,
-      "finalScore": 9.0756
-    },
-    {
-      "hash": "5ef639054f49ded04df8c9fb67875166c66109b7fa7e4b5f8d492292e7895708",
-      "rows": [
-        "Cities",
-        "The Crusades",
-        "Things Czech",
-        "Things Iranian"
-      ],
-      "cols": [
-        "Countries that No Longer Exist",
-        "Events",
-        "Modern Countries",
-        "Monarchs"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.51,
-      "maxSimilarityToPast": 0.4822,
-      "finalScore": 7.6524
-    },
-    {
-      "hash": "2f7f874743c26cb4e7ea0a6469bb7c13c8b21a63645a05c0f3825153b3f287f4",
-      "rows": [
-        "Adventure Stories",
-        "Bodies of Water",
-        "Landlocked Countries",
-        "WWII Allied Powers"
-      ],
-      "cols": [
-        "Cold War",
-        "Locations in Africa",
-        "Locations in South America",
-        "Starts with NOR"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.47,
-      "maxSimilarityToPast": 0.5322,
-      "finalScore": 6.212400000000001
-    },
-    {
-      "hash": "870e400e52c97a0f51be08a0240b757dcc0135b639a789a9d7a04fa3e5f0dfdb",
-      "rows": [
-        "Cities",
-        "Commonwealth Nations",
-        "Ends with SIA",
-        "Islands"
-      ],
-      "cols": [
-        "Countries in Europe",
-        "Locations in Oceania",
-        "Republics",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.16,
-      "maxSimilarityToPast": 0.4121,
-      "finalScore": 5.8632
-    },
-    {
-      "hash": "fb7a3565b2bf579c53133c40f74d58119f263fa214bcff5aeef529881292ed0c",
+      "hash": "e2364ba7dc5afe36748db9b3352ac72270dff9c81f838a8220cd4bfb8dfa92ed",
       "rows": [
         "2016",
-        "Cities in USA",
-        "First in Release Order",
-        "Second in Release Order"
+        "2018",
+        "Sixth in Release Order",
+        "War Stories"
       ],
       "cols": [
-        "Musical Films",
-        "Ships",
-        "Starts with HAR",
+        "First in Internal Chronology",
+        "Star Wars Movies",
+        "Stories Where the Mom Dies",
         "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 8.31,
-      "maxSimilarityToPast": 0.3483,
-      "finalScore": 5.5236
+      "qualityScore": 21.569999999999997,
+      "maxSimilarityToPast": 0.5349,
+      "finalScore": 17.290799999999997
     },
     {
-      "hash": "550660b541dc5b44767bde6c001697e3aa7be94463038a2f83d0a1e630d57ea4",
+      "hash": "9e729786ba01675cf0c8bab8a7fdd4baffc94479bd908b3e5b4956d7480f848a",
       "rows": [
-        "Adventure Stories",
-        "Birds",
-        "Insects",
-        "Reptiles"
-      ],
-      "cols": [
-        "Fictional Animals",
-        "Jurassic Period",
-        "Starts with TIT",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.09,
-      "maxSimilarityToPast": 0.4112,
-      "finalScore": 4.8004
-    },
-    {
-      "hash": "394ffcfa4575385836bff2191d3e8d69341d9530a7ede7f1ea52d4b92a5b94c4",
-      "rows": [
-        "Archipelagos",
-        "Countries that No Longer Exist",
-        "Federal Republics",
-        "Islands"
-      ],
-      "cols": [
-        "Countries in Asia",
-        "Ends with AND",
-        "Former British Colonies",
-        "Locations in South America"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.84,
-      "maxSimilarityToPast": 0.4853,
-      "finalScore": 5.957599999999999
-    },
-    {
-      "hash": "2adbe29e9f368bdf4461e7d43d3881c08edb155428a95719f71d5ee22e413400",
-      "rows": [
-        "Cities",
-        "Islands",
-        "Oceanliners",
-        "Starts with CON"
-      ],
-      "cols": [
-        "Countries",
-        "Events",
-        "Famous Shipwrecks",
-        "Roman Empire"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.11,
-      "maxSimilarityToPast": 0.4232,
-      "finalScore": 4.724399999999999
-    },
-    {
-      "hash": "ba4d02e343088e4c6f33a3e0a3897635c110abbe5666b82666421b29f8cf9b52",
-      "rows": [
-        "Cities",
-        "Starts with GRE",
-        "Things Indonesian",
-        "Things Mexican"
-      ],
-      "cols": [
-        "Drinks",
-        "Events",
-        "Modern Countries",
-        "Real Animals"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.89,
-      "maxSimilarityToPast": 0.4012,
-      "finalScore": 3.6803999999999997
-    },
-    {
-      "hash": "791fa30bed32ffcce873fcedcdfe61213466de9d9790c77c5e025bea3892d61f",
-      "rows": [
-        "11th Century",
-        "1970s",
-        "Roman Empire",
-        "Things German"
-      ],
-      "cols": [
-        "Countries that No Longer Exist",
-        "Events",
-        "Famous Quotes",
-        "Monarchs"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.11,
-      "maxSimilarityToPast": 0.504,
-      "finalScore": 3.0780000000000003
-    },
-    {
-      "hash": "043e988f6a98dc329c1fce22355b2b3ce79845a5abb21ddd61901a77d7587ca1",
-      "rows": [
-        "1995",
-        "2010",
-        "Cannibalism",
-        "Time Travel Stories"
-      ],
-      "cols": [
-        "Events",
+        "2018",
+        "2023",
         "First in Release Order",
-        "Period Stories",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Action Stories",
+        "Cruise Ships",
+        "Oscar Winners"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.93,
+      "maxSimilarityToPast": 0.4691,
+      "finalScore": 13.1772
+    },
+    {
+      "hash": "f9cb788eb7f5be8d99c4855fb973c3630f15d6cb916a886ddc610a02809298d7",
+      "rows": [
+        "2018",
+        "Fourth in Release Order",
+        "Stories Where the Mom Dies",
         "Third in Release Order"
       ],
-      "timestamp": null,
-      "qualityScore": 16.200000000000003,
-      "maxSimilarityToPast": 0.3583,
-      "finalScore": 13.333600000000002
-    },
-    {
-      "hash": "71f58a598432f0aa0a71e83e81b36928ae8857712a8edabb5f37c0631cddad40",
-      "rows": [
-        "Adventure Stories",
-        "Carnivores",
-        "Red Things",
-        "Things That Fly"
-      ],
       "cols": [
-        "DC Characters",
-        "Fictional Animals",
-        "Jurassic Period",
-        "Marvel Characters"
+        "Fantasy Stories",
+        "Horror Stories",
+        "Prequels",
+        "Stories about Families"
       ],
       "timestamp": null,
-      "qualityScore": 10.35,
-      "maxSimilarityToPast": 0.4135,
-      "finalScore": 7.042
+      "qualityScore": 19.42,
+      "maxSimilarityToPast": 0.5363,
+      "finalScore": 15.129600000000002
     },
     {
-      "hash": "48de4dc2d9d44b2b95ca5d75daa18059be9e26a6a62d6fb0bfc4c8265576914d",
+      "hash": "90f34b43024f4143cc9e0e1712267d359fdab269add7f0705bd11d730cd91127",
       "rows": [
-        "Cities",
-        "Islands",
-        "Naval Battles",
-        "Starts with GRE"
-      ],
-      "cols": [
-        "Ming Dynasty",
-        "The Crusades",
-        "Things Canadian",
-        "Things Korean"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.11,
-      "maxSimilarityToPast": 0.3819,
-      "finalScore": 6.054799999999999
-    },
-    {
-      "hash": "be209c0080072e12512e2dec5ce1a7f302b2737e685c64f762d1475e74e55844",
-      "rows": [
-        "Adventure Stories",
-        "Events",
-        "Monarchs",
-        "WWII Allied Powers"
+        "2016",
+        "2017",
+        "First in Internal Chronology",
+        "Second in Release Order"
       ],
       "cols": [
         "Civilian Ships",
-        "Ends with NCE",
-        "Islands",
-        "Things Indian"
+        "Fantasy Stories",
+        "Musical Films",
+        "Star Wars Movies"
       ],
       "timestamp": null,
-      "qualityScore": 7.890000000000001,
-      "maxSimilarityToPast": 0.4107,
-      "finalScore": 4.6044
+      "qualityScore": 17.57,
+      "maxSimilarityToPast": 0.3827,
+      "finalScore": 14.5084
     },
     {
-      "hash": "cafb2d66584ab9472d6b4435078aa5a62a9b402d29307aa066cf9bae112095d7",
+      "hash": "3029a235de09752b65ea06939ed2137fbd81516f271a5cd3d6f10c18c6532481",
       "rows": [
-        "Adventure Stories",
-        "Herbivores",
-        "Omnivores",
-        "Theropods"
+        "2018",
+        "Period Stories",
+        "Stories Where the Mom Dies",
+        "The Matrix"
       ],
       "cols": [
-        "Black and White",
-        "Fictional Animals",
-        "Jurassic Period",
-        "Things That Fly"
+        "Ends with IME",
+        "Oscar Winners",
+        "Second in Internal Chronology",
+        "Third in Release Order"
       ],
       "timestamp": null,
-      "qualityScore": 7.409999999999998,
-      "maxSimilarityToPast": 0.5667,
-      "finalScore": 2.8763999999999985
+      "qualityScore": 15.709999999999999,
+      "maxSimilarityToPast": 0.4005,
+      "finalScore": 12.505999999999998
     },
     {
-      "hash": "a4a9c241c089c456e64aa9ba64e9a52c1653a5f47673462bb836eafe7bd11eec",
+      "hash": "c556d78e7b670dd058f082810ceeb6120a9d97050c3d07660577109371055950",
       "rows": [
-        "1995",
-        "2012",
-        "First in Release Order",
-        "Prequels"
+        "2018",
+        "2021",
+        "Prequels",
+        "Stories Where the Mom Dies"
       ],
       "cols": [
         "Action Stories",
-        "Pixar",
-        "Second in Internal Chronology",
-        "Thriller Stories"
+        "Fantasy Stories",
+        "Oscar Winners",
+        "Pixar"
       ],
       "timestamp": null,
-      "qualityScore": 16.659999999999997,
-      "maxSimilarityToPast": 0.4092,
-      "finalScore": 13.386399999999997
+      "qualityScore": 17.700000000000003,
+      "maxSimilarityToPast": 0.4603,
+      "finalScore": 14.017600000000003
     },
     {
-      "hash": "15b648c1381f5be9a5b2ffc957b3da4f788603a6efa18ec217a585ffbe2390be",
+      "hash": "321add219874389b8307c3e41ccccc3b9c7e5809a83f906b6dc34da81d3f08b1",
       "rows": [
-        "Adventure Stories",
-        "Ancient Cities",
-        "Starts with GRE",
-        "Things Egyptian"
+        "2018",
+        "Fourth in Internal Chronology",
+        "Prequels",
+        "Third in Release Order"
       ],
       "cols": [
-        "Countries",
-        "Events",
-        "Period Stories",
-        "The Crusades"
+        "Action Stories",
+        "Fantasy Stories",
+        "Star Wars Movies",
+        "Stories about Families"
       ],
       "timestamp": null,
-      "qualityScore": 10.02,
-      "maxSimilarityToPast": 0.2941,
-      "finalScore": 7.667199999999999
+      "qualityScore": 20.57,
+      "maxSimilarityToPast": 0.4673,
+      "finalScore": 16.8316
     },
     {
-      "hash": "e210bbeb67528b75c6e0f5b64d0210de4eba30251abdf4779e1de6b54f51f3f6",
+      "hash": "e2e4a54f7f9a2e5add03ba986e4a795bc6828122a1f124dff44bce0b3ddb83e9",
       "rows": [
-        "Adventure Stories",
-        "Cities",
-        "Former British Colonies",
-        "Former Spanish Colonies"
+        "2018",
+        "First in Release Order",
+        "Second in Release Order",
+        "Stories Where the Mom Dies"
       ],
       "cols": [
-        "Cold War",
-        "Ends with NES",
-        "Locations in Africa",
-        "Locations in South America"
+        "3D Animated Films",
+        "Horror Stories",
+        "Star Wars Movies",
+        "Superheroes"
       ],
       "timestamp": null,
-      "qualityScore": 7.220000000000001,
-      "maxSimilarityToPast": 0.3175,
-      "finalScore": 4.680000000000001
+      "qualityScore": 16.86,
+      "maxSimilarityToPast": 0.4182,
+      "finalScore": 13.514399999999998
     },
     {
-      "hash": "8880a13f0662ce327a8107d35b2f64cbed3ff009f69ab76342e0f713c653581a",
-      "rows": [
-        "Cities",
-        "Ends with INE",
-        "Islands",
-        "Things Czech"
-      ],
-      "cols": [
-        "Countries in Europe",
-        "Drinks",
-        "Events",
-        "Saints"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.18,
-      "maxSimilarityToPast": 0.5312,
-      "finalScore": 3.9303999999999997
-    },
-    {
-      "hash": "8db4d46cb08745acfc818d4516345219fa3da8c2590e26bf080dac1dc5abb1b9",
-      "rows": [
-        "Adventure Stories",
-        "Cold War",
-        "Largest of its Type",
-        "Starts with GRA"
-      ],
-      "cols": [
-        "Bodies of Water",
-        "Countries",
-        "Ships",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.1899999999999995,
-      "maxSimilarityToPast": 0.5142,
-      "finalScore": 3.0763999999999996
-    },
-    {
-      "hash": "251c0b1f4fed1920eb99cb8afce4ceb0ca3f49a038cdcc74581a9c8ef262e5d1",
-      "rows": [
-        "Adventure Stories",
-        "Cities in Asia",
-        "Starts with GRE",
-        "Things Egyptian"
-      ],
-      "cols": [
-        "Events",
-        "Modern Countries",
-        "Period Stories",
-        "The Crusades"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.03,
-      "maxSimilarityToPast": 0.3352,
-      "finalScore": 7.3484
-    },
-    {
-      "hash": "7d29f2af7ad20c8289eb9a4eb4d74d90b52084bfcfda51ecb77373a784935b22",
-      "rows": [
-        "Cities",
-        "Events",
-        "Modern Countries",
-        "Monarchs"
-      ],
-      "cols": [
-        "Starts with CHA",
-        "The Crusades",
-        "Things Czech",
-        "Things Egyptian"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.78,
-      "maxSimilarityToPast": 0.4822,
-      "finalScore": 6.9224
-    },
-    {
-      "hash": "ecaaf078286d4154d298267ce3843f8b79b4b8cbe1d0fef7319b83adef703bd7",
-      "rows": [
-        "Archipelagos",
-        "Countries that No Longer Exist",
-        "Islands",
-        "Republics"
-      ],
-      "cols": [
-        "Countries in Asia",
-        "Ends with AND",
-        "Former German Colonies",
-        "Locations in South America"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.06,
-      "maxSimilarityToPast": 0.4576,
-      "finalScore": 6.3992
-    },
-    {
-      "hash": "4e027ef6be1cc71b774720433cf6fac50510bfebf19ea4abf6e7ff21bae58c7a",
-      "rows": [
-        "Cities",
-        "Countries that No Longer Exist",
-        "Federal Republics",
-        "Landlocked Countries"
-      ],
-      "cols": [
-        "Cold War",
-        "Countries in Europe",
-        "Locations in South America",
-        "Starts with SOU"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.86,
-      "maxSimilarityToPast": 0.4743,
-      "finalScore": 6.0656
-    },
-    {
-      "hash": "d274d63429c38fc5e7e8e4de44480c42682d49b773cef7d5ff28469e4c0be7b2",
-      "rows": [
-        "Cities",
-        "Islands",
-        "Things Ethiopian",
-        "Things German"
-      ],
-      "cols": [
-        "Countries that No Longer Exist",
-        "Drinks",
-        "Republics",
-        "The Crusades"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.040000000000001,
-      "maxSimilarityToPast": 0.3848,
-      "finalScore": 5.961600000000001
-    },
-    {
-      "hash": "9a9454859d785253ea4b4f28bcb3e390ecd987d620e2879b0c4e8274d3da268d",
+      "hash": "cfeb481ebd69c6eddd32069d41150b75f8da86a04d5a20a0cdd5afb872ad8ffe",
       "rows": [
         "2016",
-        "Cities in North America",
+        "2018",
         "First in Release Order",
         "Second in Release Order"
       ],
       "cols": [
-        "Musical Films",
+        "Oscar Winners",
         "Ships",
-        "Starts with HAR",
+        "Star Wars Movies",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.57,
+      "maxSimilarityToPast": 0.4033,
+      "finalScore": 13.3436
+    },
+    {
+      "hash": "a4578f12cb210d7e8b13a1f8ede2a52f8d57cd2b557b8568e62099a572b5ba2d",
+      "rows": [
+        "2018",
+        "2023",
+        "First in Internal Chronology",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Adventure Stories",
+        "Cruise Ships",
+        "Oscar Winners"
+      ],
+      "timestamp": null,
+      "qualityScore": 16.51,
+      "maxSimilarityToPast": 0.4353,
+      "finalScore": 13.027600000000001
+    },
+    {
+      "hash": "e046264256acff0d939adca42bb83c534a706c4b7d6962e4a81dd9215ed3ab41",
+      "rows": [
+        "2018",
+        "First in Release Order",
+        "Oscar Winners",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Stories Where the Mom Dies",
+        "Stories about Families",
+        "Time Travel Stories",
+        "Western Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.63,
+      "maxSimilarityToPast": 0.5093,
+      "finalScore": 11.555600000000002
+    },
+    {
+      "hash": "3a7e5c6ba6b1a533553bcc13777f5fb2bf9ae491d65cfb3ac069861b1388db06",
+      "rows": [
+        "2018",
+        "Fourth in Internal Chronology",
+        "Stories Where the Mom Dies",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Fantasy Stories",
+        "Horror Stories",
+        "Star Wars Movies",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 19.910000000000004,
+      "maxSimilarityToPast": 0.4205,
+      "finalScore": 16.546000000000003
+    },
+    {
+      "hash": "56575772aaf71e4ce634667414c2b13afe6deb73baac25a667b20544dd4f7802",
+      "rows": [
+        "2016",
+        "2017",
+        "First in Internal Chronology",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Cruise Ships",
+        "Fantasy Stories",
+        "Musical Films",
+        "Star Wars Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.950000000000003,
+      "maxSimilarityToPast": 0.3177,
+      "finalScore": 16.408400000000004
+    },
+    {
+      "hash": "c09be08d49396da8d823a16acf210150080f8df5df56746a7b9daed12ec250db",
+      "rows": [
+        "2016",
+        "2017",
+        "First in Internal Chronology",
+        "Second in Release Order"
+      ],
+      "cols": [
+        "Cruise Ships",
+        "Fantasy Stories",
+        "Musical Films",
+        "Star Wars Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.9,
+      "maxSimilarityToPast": 0.3177,
+      "finalScore": 16.3584
+    },
+    {
+      "hash": "9c4fb19f2a4ff8ce0b51bfcfcaf6b79c309eb4d5d0d899de4a51a815b79897e4",
+      "rows": [
+        "2018",
+        "Fourth in Release Order",
+        "Stories Where the Mom Dies",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Fantasy Stories",
+        "Horror Stories",
+        "Star Wars Movies",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 19.78,
+      "maxSimilarityToPast": 0.4351,
+      "finalScore": 16.299200000000003
+    },
+    {
+      "hash": "0acd974451849426427611b4705141342dd9fcbb8b5de65eb0089ddee4c653d0",
+      "rows": [
+        "2016",
+        "2017",
+        "First in Release Order",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Cruise Ships",
+        "Fantasy Stories",
+        "Musical Films",
+        "Star Wars Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.93,
+      "maxSimilarityToPast": 0.3294,
+      "finalScore": 16.2948
+    },
+    {
+      "hash": "6b30ed8a80d627c5361c2f65e3046ba157b023a9d18943d1c1d92cb7bea17648",
+      "rows": [
+        "2016",
+        "2017",
+        "First in Release Order",
+        "Second in Release Order"
+      ],
+      "cols": [
+        "Cruise Ships",
+        "Fantasy Stories",
+        "Musical Films",
+        "Star Wars Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.880000000000003,
+      "maxSimilarityToPast": 0.332,
+      "finalScore": 16.224000000000004
+    },
+    {
+      "hash": "6cf5f99a6204c83247defa4f335af853d959fea7a91294de1af4f115ddbc5153",
+      "rows": [
+        "2018",
+        "Fourth in Internal Chronology",
+        "Stories Where the Mom Dies",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Action Stories",
+        "Horror Stories",
+        "Star Wars Movies",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.22,
+      "maxSimilarityToPast": 0.5034,
+      "finalScore": 16.1928
+    },
+    {
+      "hash": "197f6eed7c02b1927310b6dd77866d31da8822bc422b0673da5ad4aeb5ad3478",
+      "rows": [
+        "2016",
+        "2018",
+        "First in Release Order",
+        "Second in Release Order"
+      ],
+      "cols": [
+        "Cruise Ships",
+        "Oscar Winners",
+        "Star Wars Movies",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.209999999999997,
+      "maxSimilarityToPast": 0.5125,
+      "finalScore": 16.11
+    },
+    {
+      "hash": "cf2e1a532b6237628b54f6076ae19c4924e629d5dc522ed0b32a2558e8852103",
+      "rows": [
+        "2016",
+        "2018",
+        "First in Internal Chronology",
+        "Second in Release Order"
+      ],
+      "cols": [
+        "Cruise Ships",
+        "Oscar Winners",
+        "Star Wars Movies",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.229999999999997,
+      "maxSimilarityToPast": 0.5372,
+      "finalScore": 15.932399999999998
+    },
+    {
+      "hash": "c096b1fef4cbbc76678a722262ed63989bc1f5084bf32dd2cdab6671bd9ee45f",
+      "rows": [
+        "2016",
+        "2018",
+        "First in Release Order",
+        "Second in Release Order"
+      ],
+      "cols": [
+        "Cruise Ships",
+        "Star Wars Movies",
+        "Stories Where the Mom Dies",
         "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 8.14,
-      "maxSimilarityToPast": 0.3483,
-      "finalScore": 5.3536
+      "qualityScore": 20.649999999999995,
+      "maxSimilarityToPast": 0.6116,
+      "finalScore": 15.757199999999994
     },
     {
-      "hash": "c9990f153beb645a62d0c4dab4f8b7d513090411acdc0f1bbae86e3c6f928583",
+      "hash": "0a3e5a62169edbe48be391b375920b1f479fc5d3da56f5a5ee2ac6ab130c2baa",
       "rows": [
-        "Adventure Stories",
-        "Carnivores",
-        "Red Things",
-        "Things That Fly"
+        "2018",
+        "Fourth in Release Order",
+        "Stories Where the Mom Dies",
+        "Third in Release Order"
       ],
       "cols": [
-        "Black and White",
-        "Fictional Animals",
-        "Jurassic Period",
-        "Superheroes"
+        "Action Stories",
+        "Horror Stories",
+        "Star Wars Movies",
+        "Stories about Families"
       ],
       "timestamp": null,
-      "qualityScore": 8.67,
-      "maxSimilarityToPast": 0.4748,
-      "finalScore": 4.8716
+      "qualityScore": 20.089999999999996,
+      "maxSimilarityToPast": 0.5515,
+      "finalScore": 15.677999999999997
     },
     {
-      "hash": "7e8486c4f442288adde8001307b60c3af2ecc138da3df684cf274d03e9792e4d",
+      "hash": "eb53d0ba9ecb40d4a6d04b7c813ae76a9b5cce2b3f4cddd7af5e7711930b4a77",
       "rows": [
-        "Adventure Stories",
-        "Insects",
-        "Reptiles",
-        "Saurischians"
+        "2016",
+        "2018",
+        "First in Release Order",
+        "Second in Internal Chronology"
       ],
       "cols": [
-        "Fictional Animals",
-        "Jurassic Period",
-        "Starts with TIT",
-        "Things That Fly"
+        "Cruise Ships",
+        "Prequels",
+        "Stories Where the Mom Dies",
+        "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 7.75,
-      "maxSimilarityToPast": 0.4505,
-      "finalScore": 4.146
+      "qualityScore": 20.339999999999996,
+      "maxSimilarityToPast": 0.6059,
+      "finalScore": 15.492799999999995
     },
     {
-      "hash": "7de3e6c7b15617e1c9b777514340c8d81cbc7cfd37f0d23ecbd9d944f0a0ec00",
+      "hash": "39ece9cc6647105e04fd7ac4c2096339beb0b0bede6e52a08307dba0f4c86769",
       "rows": [
-        "Adventure Stories",
-        "Dinosaurs",
-        "Insects",
-        "Reptiles"
+        "2016",
+        "2018",
+        "Third in Release Order",
+        "War Stories"
       ],
       "cols": [
-        "Fictional Animals",
-        "Jurassic Period",
-        "Starts with TIT",
-        "Things That Fly"
+        "First in Internal Chronology",
+        "Star Wars Movies",
+        "Stories Where the Mom Dies",
+        "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 7.469999999999999,
-      "maxSimilarityToPast": 0.4244,
-      "finalScore": 4.074799999999999
+      "qualityScore": 19.729999999999997,
+      "maxSimilarityToPast": 0.5369,
+      "finalScore": 15.434799999999996
+    },
+    {
+      "hash": "94f9de5c0f5f98c7c605447331cd318a6a8704520374804a78adf4b4eabb0ded",
+      "rows": [
+        "2016",
+        "2018",
+        "First in Release Order",
+        "Second in Release Order"
+      ],
+      "cols": [
+        "Civilian Ships",
+        "Oscar Winners",
+        "Star Wars Movies",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.88,
+      "maxSimilarityToPast": 0.4475,
+      "finalScore": 15.299999999999999
+    },
+    {
+      "hash": "da013027cea0512a1658ce6e48b6bc845d39215d93e2683bb91d1464ed3e5c62",
+      "rows": [
+        "2016",
+        "2018",
+        "Third in Release Order",
+        "War Stories"
+      ],
+      "cols": [
+        "First in Internal Chronology",
+        "Oscar Winners",
+        "Star Wars Movies",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 19.29,
+      "maxSimilarityToPast": 0.5071,
+      "finalScore": 15.2332
+    },
+    {
+      "hash": "382df83bd87e9bbad199442efb57d1729e93dd42878a228cb508e0e0d80325ae",
+      "rows": [
+        "2016",
+        "2018",
+        "First in Internal Chronology",
+        "Second in Release Order"
+      ],
+      "cols": [
+        "Civilian Ships",
+        "Oscar Winners",
+        "Star Wars Movies",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.9,
+      "maxSimilarityToPast": 0.4722,
+      "finalScore": 15.122399999999999
+    },
+    {
+      "hash": "2a988f08b758bd6a77e88cf3e8cd10e060a3f19ae788aec820cca144c70c0262",
+      "rows": [
+        "2018",
+        "Fourth in Internal Chronology",
+        "Stories Where the Mom Dies",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Action Stories",
+        "Fantasy Stories",
+        "Star Wars Movies",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.9,
+      "maxSimilarityToPast": 0.4839,
+      "finalScore": 15.028799999999999
+    },
+    {
+      "hash": "316edc0bd281da7d14c0d8f4e5c93c3af9cbf6ee6dd822fd68681400f8974d2b",
+      "rows": [
+        "2016",
+        "2018",
+        "First in Internal Chronology",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Cruise Ships",
+        "Fantasy Stories",
+        "Oscar Winners",
+        "Star Wars Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.45,
+      "maxSimilarityToPast": 0.4327,
+      "finalScore": 14.988399999999999
+    },
+    {
+      "hash": "e3b01435115427ef934d3f25353ccc3cd657ab539e521360445e11e05937629b",
+      "rows": [
+        "2016",
+        "2018",
+        "First in Release Order",
+        "Second in Internal Chronology"
+      ],
+      "cols": [
+        "Cruise Ships",
+        "Fantasy Stories",
+        "Oscar Winners",
+        "Star Wars Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.43,
+      "maxSimilarityToPast": 0.4328,
+      "finalScore": 14.9676
     }
   ],
   "message": "Puzzle saved successfully!"
