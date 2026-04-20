@@ -300,9 +300,6 @@
   "Mollusks": [
     "Ammonites"
   ],
-  "Multiplayer Games": [
-    "Among Us"
-  ],
   "Social Deduction": [
     "Among Us"
   ],
@@ -1908,9 +1905,6 @@
   "Manufactured by Messerschmitt": [
     "Messerschmitt"
   ],
-  "Stealth Games": [
-    "Metal Gear"
-  ],
   "German Films": [
     "Metropolis"
   ],
@@ -1943,9 +1937,6 @@
   ],
   "Toshiro Mifune": [
     "Mifune"
-  ],
-  "Sandbox Games": [
-    "Minecraft"
   ],
   "Movies directed by George Seaton": [
     "Miracle on 34th Street"
@@ -4031,6 +4022,10 @@
     "Amadeus",
     "The Hunchback of Notre Dame"
   ],
+  "Multiplayer Games": [
+    "Among Us",
+    "Avatar: Frontiers of Pandora"
+  ],
   "Ankylosaurs": [
     "Ankylosaurus",
     "Euoplocephalus"
@@ -4074,6 +4069,18 @@
   "Movies featuring Hayden Christensen": [
     "Attack of the Clones",
     "Revenge of the Sith"
+  ],
+  "Movies featuring Sam Worthington": [
+    "Avatar",
+    "Avatar: The Way of Water"
+  ],
+  "Sandbox Games": [
+    "Avatar: Frontiers of Pandora",
+    "Minecraft"
+  ],
+  "Stealth Games": [
+    "Avatar: Frontiers of Pandora",
+    "Metal Gear"
   ],
   "Movies directed by Joss Whedon": [
     "Avengers: Age of Ultron",
@@ -4443,10 +4450,6 @@
     "Edge of Tomorrow",
     "Rain Man"
   ],
-  "Action Role-Playing Games": [
-    "Elden Ring",
-    "The Witcher"
-  ],
   "Movies featuring Zooey Deschanel": [
     "Elf",
     "The Hitchhiker's Guide to the Galaxy"
@@ -4590,10 +4593,6 @@
   "Movies directed by Ivan Reitman": [
     "Ghostbusters",
     "Ghostbusters II"
-  ],
-  "Action-Adventure Games": [
-    "God of War",
-    "The Legend of Zelda"
   ],
   "Movies directed by Victor Fleming": [
     "Gone with the Wind",
@@ -5372,10 +5371,15 @@
     "Beauty and the Beast",
     "The Hunchback of Notre Dame"
   ],
-  "Movies featuring Sam Worthington": [
-    "Avatar",
+  "Action Role-Playing Games": [
     "Avatar: Frontiers of Pandora",
-    "Avatar: The Way of Water"
+    "Elden Ring",
+    "The Witcher"
+  ],
+  "Action-Adventure Games": [
+    "Avatar: Frontiers of Pandora",
+    "God of War",
+    "The Legend of Zelda"
   ],
   "Movies featuring Chris Hemsworth": [
     "Avengers: Age of Ultron",
