@@ -5,730 +5,737 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "90f34b43024f4143cc9e0e1712267d359fdab269add7f0705bd11d730cd91127",
+    "hash": "4d720827d6a990a7cc9cd6295233fe7c3fac684d70d5c44c59f74d86607620be",
     "rows": [
-      "2016",
-      "2017",
-      "First in Internal Chronology",
-      "Second in Release Order"
+      "Cities in USA",
+      "Cold War",
+      "Napoleonic Wars",
+      "World War II"
     ],
     "cols": [
-      "Civilian Ships",
-      "Fantasy Stories",
-      "Musical Films",
-      "Star Wars Movies"
+      "Locations in Oceania",
+      "Military Ships",
+      "Movies",
+      "Starts with BAT"
     ],
     "timestamp": null,
-    "qualityScore": 17.57,
-    "maxSimilarityToPast": 0.3827,
-    "finalScore": 14.5084
+    "qualityScore": 8.58,
+    "maxSimilarityToPast": 0.3522,
+    "finalScore": 5.7623999999999995
   },
   "viableGrid": [
     [
       [
-        "Boaty McBoatface",
-        "Harmony of the Seas"
+        "Honolulu"
       ],
       [
-        "A Monster Calls"
+        "Lincoln"
       ],
       [
-        "La La Land"
+        "Chicago",
+        "Palm Springs"
       ],
       [
-        "Rogue One"
+        "Baton Rouge"
       ]
     ],
     [
       [
-        "MSC Meraviglia"
+        "Bikini"
       ],
       [
-        "Pirates of the Caribbean: Dead Men Tell No Tales",
-        "The Shape of Water"
+        "Bush",
+        "Carl Vinson",
+        "PT-76",
+        "Reagan",
+        "Roosevelt",
+        "Stennis"
       ],
       [
-        "The Greatest Showman"
+        "The Hunt for Red October"
       ],
       [
-        "The Last Jedi"
+        "Battle of Dien Bien Phu"
       ]
     ],
     [
       [
-        "Queen Elizabeth",
-        "Queen Mary"
+        "Wellington"
       ],
       [
-        "Ghostbusters",
-        "Harry Potter and the Sorcerer's Stone",
-        "Pirates of the Caribbean: The Curse of the Black Pearl",
-        "The Chronicles of Narnia: The Magician's Nephew",
-        "The Lord of the Rings: The Fellowship of the Ring",
-        "The Magician's Nephew",
-        "The Map of Time",
-        "The Santa Clause",
-        "The Silmarillion"
+        "Bellerophon",
+        "Bucentaure",
+        "Redoutable",
+        "Santissima Trinidad",
+        "Temeraire",
+        "Victory"
       ],
       [
-        "101 Dalmatians",
-        "Bambi",
-        "Lady and the Tramp",
-        "Lilo & Stitch",
-        "Mulan",
-        "Pocahontas",
-        "The Emperor's New Groove",
-        "The Hunchback of Notre Dame",
-        "The Jungle Book",
-        "The Lion King",
-        "The Many Adventures of Winnie the Pooh",
-        "The Parent Trap",
-        "The Rescuers"
+        "Waterloo"
       ],
       [
-        "The Phantom Menace"
+        "Battle of Trafalgar"
       ]
     ],
     [
       [
-        "Queen Elizabeth 2",
-        "Queen Mary 2"
+        "Pearl Harbor"
       ],
       [
-        "Ghostbusters II",
-        "Harry Potter and the Chamber of Secrets",
-        "Pirates of the Caribbean: Dead Man's Chest",
-        "Prince Caspian",
-        "The Lord of the Rings",
-        "The Lord of the Rings: The Two Towers",
-        "The Map of the Sky",
-        "The Santa Clause 2"
+        "Akagi",
+        "Ark Royal",
+        "DUKW",
+        "Gneisenau",
+        "Hiryu",
+        "Hood",
+        "Hornet",
+        "Kaga",
+        "LVT-4",
+        "Musashi",
+        "Prince of Wales",
+        "Repulse",
+        "Scharnhorst",
+        "Soryu",
+        "Tirpitz",
+        "Yamato",
+        "Yorktown"
       ],
       [
-        "Winnie the Pooh"
+        "Juno",
+        "Saving Private Ryan"
       ],
       [
-        "The Empire Strikes Back"
+        "Battle of Anzio",
+        "Battle of Guadalcanal",
+        "Battle of Iwo Jima",
+        "Battle of Leyte Gulf",
+        "Battle of Midway",
+        "Battle of Okinawa",
+        "Battle of Peleliu",
+        "Battle of Saipan",
+        "Battle of Salerno",
+        "Battle of Tarawa",
+        "Battle of the Coral Sea"
       ]
     ]
   ],
   "chosen": [
     [
-      "Harmony of the Seas",
-      "A Monster Calls",
-      "La La Land",
-      "Rogue One"
+      "Honolulu",
+      "Lincoln",
+      "Chicago",
+      "Baton Rouge"
     ],
     [
-      "MSC Meraviglia",
-      "The Shape of Water",
-      "The Greatest Showman",
-      "The Last Jedi"
+      "Bikini",
+      "Reagan",
+      "The Hunt for Red October",
+      "Battle of Dien Bien Phu"
     ],
     [
-      "Queen Mary",
-      "The Chronicles of Narnia: The Magician's Nephew",
-      "Lady and the Tramp",
-      "The Phantom Menace"
+      "Wellington",
+      "Victory",
+      "Waterloo",
+      "Battle of Trafalgar"
     ],
     [
-      "Queen Mary 2",
-      "The Lord of the Rings: The Two Towers",
-      "Winnie the Pooh",
-      "The Empire Strikes Back"
+      "Pearl Harbor",
+      "Yamato",
+      "Saving Private Ryan",
+      "Battle of Midway"
     ]
   ],
   "usedWords": [
-    "Harmony of the Seas",
-    "A Monster Calls",
-    "La La Land",
-    "Rogue One",
-    "MSC Meraviglia",
-    "The Shape of Water",
-    "The Greatest Showman",
-    "The Last Jedi",
-    "Queen Mary",
-    "The Chronicles of Narnia: The Magician's Nephew",
-    "Lady and the Tramp",
-    "The Phantom Menace",
-    "Queen Mary 2",
-    "The Lord of the Rings: The Two Towers",
-    "Winnie the Pooh",
-    "The Empire Strikes Back"
+    "Honolulu",
+    "Lincoln",
+    "Chicago",
+    "Baton Rouge",
+    "Bikini",
+    "Reagan",
+    "The Hunt for Red October",
+    "Battle of Dien Bien Phu",
+    "Wellington",
+    "Victory",
+    "Waterloo",
+    "Battle of Trafalgar",
+    "Pearl Harbor",
+    "Yamato",
+    "Saving Private Ryan",
+    "Battle of Midway"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "e2364ba7dc5afe36748db9b3352ac72270dff9c81f838a8220cd4bfb8dfa92ed",
+      "hash": "da07d9ebaa90f8dfc25b5e3165d943554451d5d996e3ff50d2ad6a67ea7b7af1",
       "rows": [
-        "2016",
-        "2018",
-        "Sixth in Release Order",
-        "War Stories"
+        "2011",
+        "2013",
+        "Second in Internal Chronology",
+        "Third in Internal Chronology"
       ],
       "cols": [
-        "First in Internal Chronology",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies",
-        "Time Travel Stories"
+        "Movies featuring Bill Nighy",
+        "Period Stories",
+        "Prequels",
+        "Stories Where the Mom Dies"
       ],
       "timestamp": null,
-      "qualityScore": 21.569999999999997,
-      "maxSimilarityToPast": 0.5349,
-      "finalScore": 17.290799999999997
+      "qualityScore": 22.86,
+      "maxSimilarityToPast": 0.4096,
+      "finalScore": 19.583199999999998
     },
     {
-      "hash": "9e729786ba01675cf0c8bab8a7fdd4baffc94479bd908b3e5b4956d7480f848a",
+      "hash": "4d720827d6a990a7cc9cd6295233fe7c3fac684d70d5c44c59f74d86607620be",
       "rows": [
-        "2018",
-        "2023",
-        "First in Release Order",
-        "Second in Internal Chronology"
+        "Cities in USA",
+        "Cold War",
+        "Napoleonic Wars",
+        "World War II"
       ],
       "cols": [
-        "3D Animated Films",
-        "Action Stories",
-        "Cruise Ships",
-        "Oscar Winners"
+        "Locations in Oceania",
+        "Military Ships",
+        "Movies",
+        "Starts with BAT"
       ],
       "timestamp": null,
-      "qualityScore": 16.93,
-      "maxSimilarityToPast": 0.4691,
-      "finalScore": 13.1772
+      "qualityScore": 8.58,
+      "maxSimilarityToPast": 0.3522,
+      "finalScore": 5.7623999999999995
     },
     {
-      "hash": "f9cb788eb7f5be8d99c4855fb973c3630f15d6cb916a886ddc610a02809298d7",
+      "hash": "b6bc1ab43c915adbb1695293690ce3abb29f592de302526ae9ed3af6b9aedb47",
       "rows": [
-        "2018",
-        "Fourth in Release Order",
-        "Stories Where the Mom Dies",
+        "2011",
+        "Fifth in Release Order",
+        "Movies featuring Al Pacino",
         "Third in Release Order"
       ],
       "cols": [
-        "Fantasy Stories",
-        "Horror Stories",
+        "Comedy Stories",
+        "Movies featuring Johnny Depp",
         "Prequels",
-        "Stories about Families"
+        "Thriller Films"
       ],
       "timestamp": null,
-      "qualityScore": 19.42,
-      "maxSimilarityToPast": 0.5363,
-      "finalScore": 15.129600000000002
+      "qualityScore": 23.73,
+      "maxSimilarityToPast": 0.5404,
+      "finalScore": 19.4068
     },
     {
-      "hash": "90f34b43024f4143cc9e0e1712267d359fdab269add7f0705bd11d730cd91127",
+      "hash": "48f5b22c65ebc5395b063d2ae2ada9f12e8b4928541f7ede8b6f11a5aac4e02d",
       "rows": [
-        "2016",
-        "2017",
-        "First in Internal Chronology",
-        "Second in Release Order"
+        "Carnivores",
+        "DC Characters",
+        "Starts with CAR",
+        "World War II"
       ],
       "cols": [
-        "Civilian Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
+        "Movies",
+        "National Leaders",
+        "Things That Fly",
+        "Weapons"
       ],
       "timestamp": null,
-      "qualityScore": 17.57,
-      "maxSimilarityToPast": 0.3827,
-      "finalScore": 14.5084
+      "qualityScore": 6.04,
+      "maxSimilarityToPast": 0.3318,
+      "finalScore": 3.3856
     },
     {
-      "hash": "3029a235de09752b65ea06939ed2137fbd81516f271a5cd3d6f10c18c6532481",
+      "hash": "fe9fd9264e256a9b08fa8b9bc9521761adca2cf2d598fbdb9b9c20136e9cfb11",
       "rows": [
-        "2018",
-        "Period Stories",
-        "Stories Where the Mom Dies",
-        "The Matrix"
+        "Cities in USA",
+        "Ends with INE",
+        "Locations in Europe",
+        "Royalty"
       ],
       "cols": [
-        "Ends with IME",
-        "Oscar Winners",
+        "Movies",
+        "Saints",
+        "Things Canadian",
+        "Things German"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.040000000000001,
+      "maxSimilarityToPast": 0.518,
+      "finalScore": 0.8960000000000008
+    },
+    {
+      "hash": "aa13a311352e8958be75e21ea6e5b27e2659155b2fc995b92f849abae8892957",
+      "rows": [
+        "Cities in USA",
+        "Ends with NIA",
+        "Mentioned in We Didn't Start the Fire",
+        "Republics"
+      ],
+      "cols": [
+        "Movies",
+        "Real Animals",
+        "Things German",
+        "US States"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.27,
+      "maxSimilarityToPast": 0.5498,
+      "finalScore": 0.8715999999999999
+    },
+    {
+      "hash": "0d758bab173b6734e072fd1406f84be0618388a2713f69af8d3f2dfcc481a354",
+      "rows": [
+        "2011",
+        "2019",
         "Second in Internal Chronology",
         "Third in Release Order"
       ],
+      "cols": [
+        "Disney",
+        "Movies featuring Emma Watson",
+        "Period Stories",
+        "Time Travel Stories"
+      ],
       "timestamp": null,
-      "qualityScore": 15.709999999999999,
-      "maxSimilarityToPast": 0.4005,
-      "finalScore": 12.505999999999998
+      "qualityScore": 18.389999999999997,
+      "maxSimilarityToPast": 0.6092,
+      "finalScore": 13.516399999999997
     },
     {
-      "hash": "c556d78e7b670dd058f082810ceeb6120a9d97050c3d07660577109371055950",
+      "hash": "c107493115492b7666f94cea55a434d7bbb27d185d8fd945d30b999ce4631b92",
       "rows": [
-        "2018",
-        "2021",
-        "Prequels",
-        "Stories Where the Mom Dies"
+        "Cities in USA",
+        "Ends with TER",
+        "Military Leaders",
+        "Ships"
       ],
       "cols": [
-        "Action Stories",
-        "Fantasy Stories",
-        "Oscar Winners",
-        "Pixar"
+        "Movies",
+        "Saints",
+        "US Presidents",
+        "World War II"
       ],
       "timestamp": null,
-      "qualityScore": 17.700000000000003,
-      "maxSimilarityToPast": 0.4603,
-      "finalScore": 14.017600000000003
+      "qualityScore": 5.48,
+      "maxSimilarityToPast": 0.3838,
+      "finalScore": 2.4096000000000006
     },
     {
-      "hash": "321add219874389b8307c3e41ccccc3b9c7e5809a83f906b6dc34da81d3f08b1",
+      "hash": "c987400dd42d8a715cc4ad56330a06e9fdc4fa8a8cf13031e928cff6861e01a0",
       "rows": [
+        "2011",
+        "Movies featuring Alan Rickman",
+        "Movies featuring Keanu Reeves",
+        "Prequels"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Fourth in Release Order",
+        "Second in Internal Chronology",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 21.470000000000002,
+      "maxSimilarityToPast": 0.4572,
+      "finalScore": 17.812400000000004
+    },
+    {
+      "hash": "82fdd6c4013c6292c1e0c7b857fc5d39e89c86ceead81c08998a20d136e4d25f",
+      "rows": [
+        "Cities in USA",
+        "Countries",
+        "National Leaders",
+        "Star Wars Universe"
+      ],
+      "cols": [
+        "Ends with NCE",
+        "Movies",
+        "Saints",
+        "Things That Fly"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.33,
+      "maxSimilarityToPast": 0.4189,
+      "finalScore": 2.9788
+    },
+    {
+      "hash": "94646891269bf311d99362861b5879ea55fca5828c63bb5334fd28f468ad4c7f",
+      "rows": [
+        "2011",
         "2018",
-        "Fourth in Internal Chronology",
-        "Prequels",
+        "Stories about Families",
         "Third in Release Order"
       ],
       "cols": [
-        "Action Stories",
-        "Fantasy Stories",
-        "Star Wars Movies",
-        "Stories about Families"
+        "Comedy Stories",
+        "Disney",
+        "Prequels",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 17.85,
+      "maxSimilarityToPast": 0.5226,
+      "finalScore": 13.669200000000002
+    },
+    {
+      "hash": "a2c54df5e106b4a6ad735e337f294b28b6b91d21a8fa8be6e2a7f08420c28672",
+      "rows": [
+        "Cities in USA",
+        "Locations in Europe",
+        "National Leaders",
+        "Oceanliners"
+      ],
+      "cols": [
+        "Movies",
+        "Starts with CON",
+        "Things Canadian",
+        "World War II"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.67,
+      "maxSimilarityToPast": 0.3959,
+      "finalScore": 2.5028
+    },
+    {
+      "hash": "0368e656bfba3c0ff2a26d869c7d19c1d2608cbb58e8ae66d7499bf0bbeb0961",
+      "rows": [
+        "Cities in USA",
+        "Starts with HAR",
+        "The American Revolution",
+        "Things German"
+      ],
+      "cols": [
+        "Military Leaders",
+        "Movies",
+        "National Leaders",
+        "Ships"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.55,
+      "maxSimilarityToPast": 0.4113,
+      "finalScore": 2.2596
+    },
+    {
+      "hash": "10c6d0c8a4ff74df4ce336fc00c479c37b659faa49040f27d34f916c9250e354",
+      "rows": [
+        "Cities in USA",
+        "Cold War",
+        "Ends with AND",
+        "Napoleonic Wars"
+      ],
+      "cols": [
+        "Locations in Oceania",
+        "Movies",
+        "National Leaders",
+        "Ships"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.15,
+      "maxSimilarityToPast": 0.3757,
+      "finalScore": 4.144400000000001
+    },
+    {
+      "hash": "999aa05b632ea18be6cd0a346c85833bc8fb7800200c0c1eb05735b17ed39d6d",
+      "rows": [
+        "Cities in USA",
+        "Locations in Europe",
+        "National Leaders",
+        "Shipwrecks"
+      ],
+      "cols": [
+        "Movies",
+        "Starts with CON",
+        "Things Canadian",
+        "World War II"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.05,
+      "maxSimilarityToPast": 0.4606,
+      "finalScore": 1.3651999999999997
+    },
+    {
+      "hash": "08a979a6705ae7975739238e0a6f80114394b2744ef74156e30a844602a6373c",
+      "rows": [
+        "2011",
+        "Fifth in Release Order",
+        "Movies featuring Al Pacino",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Movies featuring Johnny Depp",
+        "Prequels",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 23.73,
+      "maxSimilarityToPast": 0.5821,
+      "finalScore": 19.0732
+    },
+    {
+      "hash": "eaadffb806951623d3a64897732edbf72149a3926913755948956d8e0378c93a",
+      "rows": [
+        "2011",
+        "Comedy Stories",
+        "Fifth in Release Order",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Movies featuring Alan Rickman",
+        "Movies featuring Johnny Depp",
+        "Prequels",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 23.49,
+      "maxSimilarityToPast": 0.5916,
+      "finalScore": 18.757199999999997
+    },
+    {
+      "hash": "54301fb46a15a660d7e90b070c880bbaeec646fde5aad8a6ba1781957ebd843f",
+      "rows": [
+        "2011",
+        "2013",
+        "Second in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Movies featuring Bill Nighy",
+        "Prequels",
+        "Stories Where the Mom Dies",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 22.79,
+      "maxSimilarityToPast": 0.5086,
+      "finalScore": 18.7212
+    },
+    {
+      "hash": "4ac185726c24b71863d03c1c655b5e69bbe4d017f48025e2a1a7747fa14a58cd",
+      "rows": [
+        "2011",
+        "2013",
+        "Second in Internal Chronology",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Movies featuring Bill Nighy",
+        "Prequels",
+        "Stories Where the Mom Dies",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 22.79,
+      "maxSimilarityToPast": 0.5086,
+      "finalScore": 18.7212
+    },
+    {
+      "hash": "8488e08f60ccaf4918a4fb2341949c875184a141c0299e5ae5a7ab91310dfcb8",
+      "rows": [
+        "2011",
+        "2018",
+        "Fourth in Release Order",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Prequels",
+        "Stories Where the Mom Dies",
+        "Time Travel Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.83,
+      "maxSimilarityToPast": 0.4101,
+      "finalScore": 17.5492
+    },
+    {
+      "hash": "86547a1509fcba19309eecc52cd900ac2c037f15bc6667334504facc5dad9ebb",
+      "rows": [
+        "2011",
+        "2013",
+        "Second in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Movies featuring Bill Nighy",
+        "Period Stories",
+        "Prequels",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 21.62,
+      "maxSimilarityToPast": 0.5111,
+      "finalScore": 17.531200000000002
+    },
+    {
+      "hash": "982c4ed9627d810cd443055e0553d75b14c3b165ccf31686c1a1c7c4fc9a9436",
+      "rows": [
+        "2011",
+        "2018",
+        "Fourth in Release Order",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Comedy Stories",
+        "Prequels",
+        "Stories Where the Mom Dies",
+        "Time Travel Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.83,
+      "maxSimilarityToPast": 0.4283,
+      "finalScore": 17.403599999999997
+    },
+    {
+      "hash": "e8b64dabc6972834c3c5955c895952671fabeffb206ea301288ceafcc4893939",
+      "rows": [
+        "2011",
+        "Comedy Stories",
+        "Second in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Movies featuring Alan Rickman",
+        "Movies featuring Johnny Depp",
+        "Prequels",
+        "Time Travel Stories"
       ],
       "timestamp": null,
       "qualityScore": 20.57,
-      "maxSimilarityToPast": 0.4673,
-      "finalScore": 16.8316
+      "maxSimilarityToPast": 0.4679,
+      "finalScore": 16.8268
     },
     {
-      "hash": "e2e4a54f7f9a2e5add03ba986e4a795bc6828122a1f124dff44bce0b3ddb83e9",
+      "hash": "d3955e2053b04d9e8bbd65cf205e7c117a7fec03a6358c1e0b97144ffd9e1f02",
       "rows": [
-        "2018",
-        "First in Release Order",
-        "Second in Release Order",
-        "Stories Where the Mom Dies"
-      ],
-      "cols": [
-        "3D Animated Films",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Superheroes"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.86,
-      "maxSimilarityToPast": 0.4182,
-      "finalScore": 13.514399999999998
-    },
-    {
-      "hash": "cfeb481ebd69c6eddd32069d41150b75f8da86a04d5a20a0cdd5afb872ad8ffe",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Oscar Winners",
-        "Ships",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.57,
-      "maxSimilarityToPast": 0.4033,
-      "finalScore": 13.3436
-    },
-    {
-      "hash": "a4578f12cb210d7e8b13a1f8ede2a52f8d57cd2b557b8568e62099a572b5ba2d",
-      "rows": [
-        "2018",
-        "2023",
-        "First in Internal Chronology",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "3D Animated Films",
-        "Adventure Stories",
-        "Cruise Ships",
-        "Oscar Winners"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.51,
-      "maxSimilarityToPast": 0.4353,
-      "finalScore": 13.027600000000001
-    },
-    {
-      "hash": "e046264256acff0d939adca42bb83c534a706c4b7d6962e4a81dd9215ed3ab41",
-      "rows": [
-        "2018",
-        "First in Release Order",
-        "Oscar Winners",
+        "2011",
+        "Comedy Stories",
+        "Second in Internal Chronology",
         "Third in Release Order"
       ],
       "cols": [
-        "Stories Where the Mom Dies",
-        "Stories about Families",
-        "Time Travel Stories",
-        "Western Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.63,
-      "maxSimilarityToPast": 0.5093,
-      "finalScore": 11.555600000000002
-    },
-    {
-      "hash": "3a7e5c6ba6b1a533553bcc13777f5fb2bf9ae491d65cfb3ac069861b1388db06",
-      "rows": [
-        "2018",
-        "Fourth in Internal Chronology",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Fantasy Stories",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 19.910000000000004,
-      "maxSimilarityToPast": 0.4205,
-      "finalScore": 16.546000000000003
-    },
-    {
-      "hash": "56575772aaf71e4ce634667414c2b13afe6deb73baac25a667b20544dd4f7802",
-      "rows": [
-        "2016",
-        "2017",
-        "First in Internal Chronology",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.950000000000003,
-      "maxSimilarityToPast": 0.3177,
-      "finalScore": 16.408400000000004
-    },
-    {
-      "hash": "c09be08d49396da8d823a16acf210150080f8df5df56746a7b9daed12ec250db",
-      "rows": [
-        "2016",
-        "2017",
-        "First in Internal Chronology",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.9,
-      "maxSimilarityToPast": 0.3177,
-      "finalScore": 16.3584
-    },
-    {
-      "hash": "9c4fb19f2a4ff8ce0b51bfcfcaf6b79c309eb4d5d0d899de4a51a815b79897e4",
-      "rows": [
-        "2018",
-        "Fourth in Release Order",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Fantasy Stories",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 19.78,
-      "maxSimilarityToPast": 0.4351,
-      "finalScore": 16.299200000000003
-    },
-    {
-      "hash": "0acd974451849426427611b4705141342dd9fcbb8b5de65eb0089ddee4c653d0",
-      "rows": [
-        "2016",
-        "2017",
-        "First in Release Order",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.93,
-      "maxSimilarityToPast": 0.3294,
-      "finalScore": 16.2948
-    },
-    {
-      "hash": "6b30ed8a80d627c5361c2f65e3046ba157b023a9d18943d1c1d92cb7bea17648",
-      "rows": [
-        "2016",
-        "2017",
-        "First in Release Order",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.880000000000003,
-      "maxSimilarityToPast": 0.332,
-      "finalScore": 16.224000000000004
-    },
-    {
-      "hash": "6cf5f99a6204c83247defa4f335af853d959fea7a91294de1af4f115ddbc5153",
-      "rows": [
-        "2018",
-        "Fourth in Internal Chronology",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Action Stories",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.22,
-      "maxSimilarityToPast": 0.5034,
-      "finalScore": 16.1928
-    },
-    {
-      "hash": "197f6eed7c02b1927310b6dd77866d31da8822bc422b0673da5ad4aeb5ad3478",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.209999999999997,
-      "maxSimilarityToPast": 0.5125,
-      "finalScore": 16.11
-    },
-    {
-      "hash": "cf2e1a532b6237628b54f6076ae19c4924e629d5dc522ed0b32a2558e8852103",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Internal Chronology",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.229999999999997,
-      "maxSimilarityToPast": 0.5372,
-      "finalScore": 15.932399999999998
-    },
-    {
-      "hash": "c096b1fef4cbbc76678a722262ed63989bc1f5084bf32dd2cdab6671bd9ee45f",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies",
+        "Movies featuring Alan Rickman",
+        "Movies featuring Johnny Depp",
+        "Prequels",
         "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 20.649999999999995,
-      "maxSimilarityToPast": 0.6116,
-      "finalScore": 15.757199999999994
+      "qualityScore": 20.57,
+      "maxSimilarityToPast": 0.486,
+      "finalScore": 16.682000000000002
     },
     {
-      "hash": "0a3e5a62169edbe48be391b375920b1f479fc5d3da56f5a5ee2ac6ab130c2baa",
+      "hash": "0f2dfbb7c67332e798443ee0b85ce9d62ad79e8b02e55130bd0d90f6c677a329",
       "rows": [
-        "2018",
-        "Fourth in Release Order",
-        "Stories Where the Mom Dies",
+        "2011",
+        "2013",
+        "Second in Internal Chronology",
         "Third in Release Order"
       ],
       "cols": [
-        "Action Stories",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Stories about Families"
+        "Movies featuring Bill Nighy",
+        "Period Stories",
+        "Stories Where the Mom Dies",
+        "Thriller Films"
       ],
       "timestamp": null,
-      "qualityScore": 20.089999999999996,
-      "maxSimilarityToPast": 0.5515,
-      "finalScore": 15.677999999999997
+      "qualityScore": 19.95,
+      "maxSimilarityToPast": 0.4161,
+      "finalScore": 16.621199999999998
     },
     {
-      "hash": "eb53d0ba9ecb40d4a6d04b7c813ae76a9b5cce2b3f4cddd7af5e7711930b4a77",
+      "hash": "3b7020847d6322d25b41a5e1042a4f20c414b16ded510ff29c4450d5c06ada51",
       "rows": [
-        "2016",
+        "2011",
+        "2013",
+        "Second in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Movies featuring Bill Nighy",
+        "Period Stories",
+        "Stories Where the Mom Dies",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 19.95,
+      "maxSimilarityToPast": 0.4269,
+      "finalScore": 16.5348
+    },
+    {
+      "hash": "11b6f76b26721b4f03a1ad837714630d683f4ce0bacd42731b5985214941f17d",
+      "rows": [
+        "2011",
+        "Comedy Stories",
+        "Second in Internal Chronology",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Movies featuring Alan Rickman",
+        "Movies featuring Johnny Depp",
+        "Prequels",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.470000000000002,
+      "maxSimilarityToPast": 0.5364,
+      "finalScore": 16.178800000000003
+    },
+    {
+      "hash": "5f1749bfe2bffedf6f15c8fd5b74428092b25a691264d67b4d214090fd1fcaf1",
+      "rows": [
+        "2011",
         "2018",
-        "First in Release Order",
+        "Fourth in Release Order",
         "Second in Internal Chronology"
       ],
       "cols": [
-        "Cruise Ships",
+        "Comedy Stories",
         "Prequels",
         "Stories Where the Mom Dies",
         "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 20.339999999999996,
-      "maxSimilarityToPast": 0.6059,
-      "finalScore": 15.492799999999995
+      "qualityScore": 19.499999999999996,
+      "maxSimilarityToPast": 0.4192,
+      "finalScore": 16.146399999999996
     },
     {
-      "hash": "39ece9cc6647105e04fd7ac4c2096339beb0b0bede6e52a08307dba0f4c86769",
+      "hash": "34438c68bc06e564276735b5fc6e41ad8b63036cbbd187271fa5d630c6050d84",
       "rows": [
-        "2016",
-        "2018",
-        "Third in Release Order",
-        "War Stories"
+        "2011",
+        "Comedy Stories",
+        "Second in Internal Chronology",
+        "Third in Internal Chronology"
       ],
       "cols": [
-        "First in Internal Chronology",
-        "Star Wars Movies",
+        "Movies featuring Alan Rickman",
+        "Movies featuring Johnny Depp",
+        "Prequels",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.470000000000002,
+      "maxSimilarityToPast": 0.578,
+      "finalScore": 15.846000000000004
+    },
+    {
+      "hash": "8efa00a0773706dd2d2d46fc270a57b22634e901da52f17782a7e84ec98291cf",
+      "rows": [
+        "2011",
+        "Comedy Stories",
+        "Second in Internal Chronology",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Movies featuring Johnny Depp",
+        "Prequels",
         "Stories Where the Mom Dies",
         "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 19.729999999999997,
-      "maxSimilarityToPast": 0.5369,
-      "finalScore": 15.434799999999996
-    },
-    {
-      "hash": "94f9de5c0f5f98c7c605447331cd318a6a8704520374804a78adf4b4eabb0ded",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Civilian Ships",
-        "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.88,
-      "maxSimilarityToPast": 0.4475,
-      "finalScore": 15.299999999999999
-    },
-    {
-      "hash": "da013027cea0512a1658ce6e48b6bc845d39215d93e2683bb91d1464ed3e5c62",
-      "rows": [
-        "2016",
-        "2018",
-        "Third in Release Order",
-        "War Stories"
-      ],
-      "cols": [
-        "First in Internal Chronology",
-        "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 19.29,
-      "maxSimilarityToPast": 0.5071,
-      "finalScore": 15.2332
-    },
-    {
-      "hash": "382df83bd87e9bbad199442efb57d1729e93dd42878a228cb508e0e0d80325ae",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Internal Chronology",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Civilian Ships",
-        "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.9,
-      "maxSimilarityToPast": 0.4722,
-      "finalScore": 15.122399999999999
-    },
-    {
-      "hash": "2a988f08b758bd6a77e88cf3e8cd10e060a3f19ae788aec820cca144c70c0262",
-      "rows": [
-        "2018",
-        "Fourth in Internal Chronology",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Action Stories",
-        "Fantasy Stories",
-        "Star Wars Movies",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.9,
-      "maxSimilarityToPast": 0.4839,
-      "finalScore": 15.028799999999999
-    },
-    {
-      "hash": "316edc0bd281da7d14c0d8f4e5c93c3af9cbf6ee6dd822fd68681400f8974d2b",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Internal Chronology",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Oscar Winners",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.45,
-      "maxSimilarityToPast": 0.4327,
-      "finalScore": 14.988399999999999
-    },
-    {
-      "hash": "e3b01435115427ef934d3f25353ccc3cd657ab539e521360445e11e05937629b",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Oscar Winners",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.43,
-      "maxSimilarityToPast": 0.4328,
-      "finalScore": 14.9676
+      "qualityScore": 19.019999999999996,
+      "maxSimilarityToPast": 0.4105,
+      "finalScore": 15.735999999999997
     }
   ],
   "message": "Puzzle saved successfully!"

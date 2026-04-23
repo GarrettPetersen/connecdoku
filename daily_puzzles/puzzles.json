@@ -11958,5 +11958,125 @@
         "The Empire Strikes Back"
       ]
     ]
+  },
+  {
+    "rows": [
+      "2008",
+      "2012",
+      "First in Release Order",
+      "Movies featuring Tom Hanks"
+    ],
+    "cols": [
+      "Christmas Stories",
+      "Oscar Winners",
+      "Pixar",
+      "Thriller Stories"
+    ],
+    "words": [
+      [
+        "Four Christmases",
+        "Slumdog Millionaire",
+        "WALL-E",
+        "Vantage Point"
+      ],
+      [
+        "Rise of the Guardians",
+        "Django Unchained",
+        "Brave",
+        "Looper"
+      ],
+      [
+        "Home Alone",
+        "The Godfather",
+        "The Incredibles",
+        "The Terminator"
+      ],
+      [
+        "The Polar Express",
+        "Forrest Gump",
+        "Toy Story",
+        "The Da Vinci Code"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "15th Century",
+      "Classic Literature",
+      "Foods",
+      "Medieval Buildings"
+    ],
+    "cols": [
+      "Ming Dynasty",
+      "Shakespeare",
+      "Things Indian",
+      "Things Spanish"
+    ],
+    "words": [
+      [
+        "Zheng He",
+        "Henry V",
+        "Guru Nanak",
+        "Christopher Columbus"
+      ],
+      [
+        "Journey to the West",
+        "A Midsummer Night's Dream",
+        "The Mahabharata",
+        "Don Quixote"
+      ],
+      [
+        "Peking Duck",
+        "Caesar",
+        "Biryani",
+        "Paella"
+      ],
+      [
+        "Forbidden City",
+        "Globe Theatre",
+        "Taj Mahal",
+        "Alhambra"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Cities in USA",
+      "Cold War",
+      "Napoleonic Wars",
+      "World War II"
+    ],
+    "cols": [
+      "Locations in Oceania",
+      "Military Ships",
+      "Movies",
+      "Starts with BAT"
+    ],
+    "words": [
+      [
+        "Honolulu",
+        "Lincoln",
+        "Chicago",
+        "Baton Rouge"
+      ],
+      [
+        "Bikini",
+        "Reagan",
+        "The Hunt for Red October",
+        "Battle of Dien Bien Phu"
+      ],
+      [
+        "Wellington",
+        "Victory",
+        "Waterloo",
+        "Battle of Trafalgar"
+      ],
+      [
+        "Pearl Harbor",
+        "Yamato",
+        "Saving Private Ryan",
+        "Battle of Midway"
+      ]
+    ]
   }
 ]
