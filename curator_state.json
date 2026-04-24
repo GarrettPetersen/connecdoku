@@ -5,737 +5,914 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "4d720827d6a990a7cc9cd6295233fe7c3fac684d70d5c44c59f74d86607620be",
+    "hash": "354c5f3de2be701b6142796b5379997828610cd7b1b0a4f1e8509f8e243d2b2f",
     "rows": [
-      "Cities in USA",
-      "Cold War",
-      "Napoleonic Wars",
-      "World War II"
+      "Archipelagos",
+      "Landlocked Countries",
+      "People",
+      "WWII Allied Powers"
     ],
     "cols": [
-      "Locations in Oceania",
-      "Military Ships",
-      "Movies",
-      "Starts with BAT"
+      "Cold War",
+      "Countries in Asia",
+      "Ends with AND",
+      "Locations in South America"
     ],
     "timestamp": null,
-    "qualityScore": 8.58,
-    "maxSimilarityToPast": 0.3522,
-    "finalScore": 5.7623999999999995
+    "qualityScore": 10.610000000000001,
+    "maxSimilarityToPast": 0.473,
+    "similarityPenalty": 3.784,
+    "movieOverlapPenalty": 0.9418733201480805,
+    "yearProximityPenalty": 0,
+    "adjacentDecadePenalty": 0,
+    "adjacentCenturyPenalty": 0,
+    "temporalPenalty": 0,
+    "finalScore": 5.884126679851921
   },
   "viableGrid": [
-    [
-      [
-        "Honolulu"
-      ],
-      [
-        "Lincoln"
-      ],
-      [
-        "Chicago",
-        "Palm Springs"
-      ],
-      [
-        "Baton Rouge"
-      ]
-    ],
     [
       [
         "Bikini"
       ],
       [
+        "British Malaya",
+        "Indonesia",
+        "Maldives",
+        "Netherlands East Indies",
+        "Portuguese Timor"
+      ],
+      [
+        "Aland",
+        "Shetland"
+      ],
+      [
+        "Falkland Islands",
+        "Galapagos"
+      ]
+    ],
+    [
+      [
+        "Hungary"
+      ],
+      [
+        "Armenia",
+        "Azerbaijan",
+        "Bhutan",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Laos",
+        "Mongolia",
+        "Nepal",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan"
+      ],
+      [
+        "Switzerland"
+      ],
+      [
+        "Bolivia",
+        "Paraguay"
+      ]
+    ],
+    [
+      [
+        "Berlin",
         "Bush",
-        "Carl Vinson",
-        "PT-76",
+        "Davy Crockett",
+        "Eisenhower",
+        "Joe McCarthy",
+        "Malenkov",
+        "Nimitz",
         "Reagan",
         "Roosevelt",
-        "Stennis"
+        "Truman",
+        "Washington"
       ],
       [
-        "The Hunt for Red October"
+        "Jordan"
       ],
       [
-        "Battle of Dien Bien Phu"
+        "Archduke Franz Ferdinand",
+        "Cleveland"
+      ],
+      [
+        "Robinson Crusoe"
       ]
     ],
     [
       [
-        "Wellington"
+        "United States"
       ],
       [
-        "Bellerophon",
-        "Bucentaure",
-        "Redoutable",
-        "Santissima Trinidad",
-        "Temeraire",
-        "Victory"
+        "China",
+        "India"
       ],
       [
-        "Waterloo"
+        "New Zealand"
       ],
       [
-        "Battle of Trafalgar"
-      ]
-    ],
-    [
-      [
-        "Pearl Harbor"
-      ],
-      [
-        "Akagi",
-        "Ark Royal",
-        "DUKW",
-        "Gneisenau",
-        "Hiryu",
-        "Hood",
-        "Hornet",
-        "Kaga",
-        "LVT-4",
-        "Musashi",
-        "Prince of Wales",
-        "Repulse",
-        "Scharnhorst",
-        "Soryu",
-        "Tirpitz",
-        "Yamato",
-        "Yorktown"
-      ],
-      [
-        "Juno",
-        "Saving Private Ryan"
-      ],
-      [
-        "Battle of Anzio",
-        "Battle of Guadalcanal",
-        "Battle of Iwo Jima",
-        "Battle of Leyte Gulf",
-        "Battle of Midway",
-        "Battle of Okinawa",
-        "Battle of Peleliu",
-        "Battle of Saipan",
-        "Battle of Salerno",
-        "Battle of Tarawa",
-        "Battle of the Coral Sea"
+        "Brazil"
       ]
     ]
   ],
   "chosen": [
     [
-      "Honolulu",
-      "Lincoln",
-      "Chicago",
-      "Baton Rouge"
-    ],
-    [
       "Bikini",
+      "Indonesia",
+      "Shetland",
+      "Galapagos"
+    ],
+    [
+      "Hungary",
+      "Mongolia",
+      "Switzerland",
+      "Bolivia"
+    ],
+    [
       "Reagan",
-      "The Hunt for Red October",
-      "Battle of Dien Bien Phu"
+      "Jordan",
+      "Archduke Franz Ferdinand",
+      "Robinson Crusoe"
     ],
     [
-      "Wellington",
-      "Victory",
-      "Waterloo",
-      "Battle of Trafalgar"
-    ],
-    [
-      "Pearl Harbor",
-      "Yamato",
-      "Saving Private Ryan",
-      "Battle of Midway"
+      "United States",
+      "China",
+      "New Zealand",
+      "Brazil"
     ]
   ],
   "usedWords": [
-    "Honolulu",
-    "Lincoln",
-    "Chicago",
-    "Baton Rouge",
     "Bikini",
+    "Indonesia",
+    "Shetland",
+    "Galapagos",
+    "Hungary",
+    "Mongolia",
+    "Switzerland",
+    "Bolivia",
     "Reagan",
-    "The Hunt for Red October",
-    "Battle of Dien Bien Phu",
-    "Wellington",
-    "Victory",
-    "Waterloo",
-    "Battle of Trafalgar",
-    "Pearl Harbor",
-    "Yamato",
-    "Saving Private Ryan",
-    "Battle of Midway"
+    "Jordan",
+    "Archduke Franz Ferdinand",
+    "Robinson Crusoe",
+    "United States",
+    "China",
+    "New Zealand",
+    "Brazil"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "da07d9ebaa90f8dfc25b5e3165d943554451d5d996e3ff50d2ad6a67ea7b7af1",
+      "hash": "354c5f3de2be701b6142796b5379997828610cd7b1b0a4f1e8509f8e243d2b2f",
       "rows": [
-        "2011",
-        "2013",
-        "Second in Internal Chronology",
-        "Third in Internal Chronology"
+        "Archipelagos",
+        "Landlocked Countries",
+        "People",
+        "WWII Allied Powers"
       ],
       "cols": [
-        "Movies featuring Bill Nighy",
-        "Period Stories",
-        "Prequels",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 22.86,
-      "maxSimilarityToPast": 0.4096,
-      "finalScore": 19.583199999999998
-    },
-    {
-      "hash": "4d720827d6a990a7cc9cd6295233fe7c3fac684d70d5c44c59f74d86607620be",
-      "rows": [
-        "Cities in USA",
         "Cold War",
-        "Napoleonic Wars",
-        "World War II"
-      ],
-      "cols": [
-        "Locations in Oceania",
-        "Military Ships",
-        "Movies",
-        "Starts with BAT"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.58,
-      "maxSimilarityToPast": 0.3522,
-      "finalScore": 5.7623999999999995
-    },
-    {
-      "hash": "b6bc1ab43c915adbb1695293690ce3abb29f592de302526ae9ed3af6b9aedb47",
-      "rows": [
-        "2011",
-        "Fifth in Release Order",
-        "Movies featuring Al Pacino",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Comedy Stories",
-        "Movies featuring Johnny Depp",
-        "Prequels",
-        "Thriller Films"
-      ],
-      "timestamp": null,
-      "qualityScore": 23.73,
-      "maxSimilarityToPast": 0.5404,
-      "finalScore": 19.4068
-    },
-    {
-      "hash": "48f5b22c65ebc5395b063d2ae2ada9f12e8b4928541f7ede8b6f11a5aac4e02d",
-      "rows": [
-        "Carnivores",
-        "DC Characters",
-        "Starts with CAR",
-        "World War II"
-      ],
-      "cols": [
-        "Movies",
-        "National Leaders",
-        "Things That Fly",
-        "Weapons"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.04,
-      "maxSimilarityToPast": 0.3318,
-      "finalScore": 3.3856
-    },
-    {
-      "hash": "fe9fd9264e256a9b08fa8b9bc9521761adca2cf2d598fbdb9b9c20136e9cfb11",
-      "rows": [
-        "Cities in USA",
-        "Ends with INE",
-        "Locations in Europe",
-        "Royalty"
-      ],
-      "cols": [
-        "Movies",
-        "Saints",
-        "Things Canadian",
-        "Things German"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.040000000000001,
-      "maxSimilarityToPast": 0.518,
-      "finalScore": 0.8960000000000008
-    },
-    {
-      "hash": "aa13a311352e8958be75e21ea6e5b27e2659155b2fc995b92f849abae8892957",
-      "rows": [
-        "Cities in USA",
-        "Ends with NIA",
-        "Mentioned in We Didn't Start the Fire",
-        "Republics"
-      ],
-      "cols": [
-        "Movies",
-        "Real Animals",
-        "Things German",
-        "US States"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.27,
-      "maxSimilarityToPast": 0.5498,
-      "finalScore": 0.8715999999999999
-    },
-    {
-      "hash": "0d758bab173b6734e072fd1406f84be0618388a2713f69af8d3f2dfcc481a354",
-      "rows": [
-        "2011",
-        "2019",
-        "Second in Internal Chronology",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Disney",
-        "Movies featuring Emma Watson",
-        "Period Stories",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.389999999999997,
-      "maxSimilarityToPast": 0.6092,
-      "finalScore": 13.516399999999997
-    },
-    {
-      "hash": "c107493115492b7666f94cea55a434d7bbb27d185d8fd945d30b999ce4631b92",
-      "rows": [
-        "Cities in USA",
-        "Ends with TER",
-        "Military Leaders",
-        "Ships"
-      ],
-      "cols": [
-        "Movies",
-        "Saints",
-        "US Presidents",
-        "World War II"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.48,
-      "maxSimilarityToPast": 0.3838,
-      "finalScore": 2.4096000000000006
-    },
-    {
-      "hash": "c987400dd42d8a715cc4ad56330a06e9fdc4fa8a8cf13031e928cff6861e01a0",
-      "rows": [
-        "2011",
-        "Movies featuring Alan Rickman",
-        "Movies featuring Keanu Reeves",
-        "Prequels"
-      ],
-      "cols": [
-        "Comedy Stories",
-        "Fourth in Release Order",
-        "Second in Internal Chronology",
-        "Thriller Films"
-      ],
-      "timestamp": null,
-      "qualityScore": 21.470000000000002,
-      "maxSimilarityToPast": 0.4572,
-      "finalScore": 17.812400000000004
-    },
-    {
-      "hash": "82fdd6c4013c6292c1e0c7b857fc5d39e89c86ceead81c08998a20d136e4d25f",
-      "rows": [
-        "Cities in USA",
-        "Countries",
-        "National Leaders",
-        "Star Wars Universe"
-      ],
-      "cols": [
-        "Ends with NCE",
-        "Movies",
-        "Saints",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.33,
-      "maxSimilarityToPast": 0.4189,
-      "finalScore": 2.9788
-    },
-    {
-      "hash": "94646891269bf311d99362861b5879ea55fca5828c63bb5334fd28f468ad4c7f",
-      "rows": [
-        "2011",
-        "2018",
-        "Stories about Families",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Comedy Stories",
-        "Disney",
-        "Prequels",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 17.85,
-      "maxSimilarityToPast": 0.5226,
-      "finalScore": 13.669200000000002
-    },
-    {
-      "hash": "a2c54df5e106b4a6ad735e337f294b28b6b91d21a8fa8be6e2a7f08420c28672",
-      "rows": [
-        "Cities in USA",
-        "Locations in Europe",
-        "National Leaders",
-        "Oceanliners"
-      ],
-      "cols": [
-        "Movies",
-        "Starts with CON",
-        "Things Canadian",
-        "World War II"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.67,
-      "maxSimilarityToPast": 0.3959,
-      "finalScore": 2.5028
-    },
-    {
-      "hash": "0368e656bfba3c0ff2a26d869c7d19c1d2608cbb58e8ae66d7499bf0bbeb0961",
-      "rows": [
-        "Cities in USA",
-        "Starts with HAR",
-        "The American Revolution",
-        "Things German"
-      ],
-      "cols": [
-        "Military Leaders",
-        "Movies",
-        "National Leaders",
-        "Ships"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.55,
-      "maxSimilarityToPast": 0.4113,
-      "finalScore": 2.2596
-    },
-    {
-      "hash": "10c6d0c8a4ff74df4ce336fc00c479c37b659faa49040f27d34f916c9250e354",
-      "rows": [
-        "Cities in USA",
-        "Cold War",
+        "Countries in Asia",
         "Ends with AND",
-        "Napoleonic Wars"
-      ],
-      "cols": [
-        "Locations in Oceania",
-        "Movies",
-        "National Leaders",
-        "Ships"
+        "Locations in South America"
       ],
       "timestamp": null,
-      "qualityScore": 7.15,
-      "maxSimilarityToPast": 0.3757,
-      "finalScore": 4.144400000000001
+      "qualityScore": 10.610000000000001,
+      "maxSimilarityToPast": 0.473,
+      "similarityPenalty": 3.784,
+      "movieOverlapPenalty": 0.9418733201480805,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 5.884126679851921
     },
     {
-      "hash": "999aa05b632ea18be6cd0a346c85833bc8fb7800200c0c1eb05735b17ed39d6d",
+      "hash": "f4b56341449814ed0fd3a6eb42c0f8029f1f75a78b3fea8c5a7f7a2a34327dc4",
       "rows": [
-        "Cities in USA",
-        "Locations in Europe",
-        "National Leaders",
-        "Shipwrecks"
+        "1994",
+        "2002",
+        "Black and White Films",
+        "Stories Where the Mom Dies"
       ],
       "cols": [
-        "Movies",
-        "Starts with CON",
-        "Things Canadian",
+        "Action Stories",
+        "Oscar Winners",
+        "Stories about Families",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.200000000000001,
+      "maxSimilarityToPast": 0.4192,
+      "similarityPenalty": 3.3536,
+      "movieOverlapPenalty": 25.4984126984127,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -16.0520126984127
+    },
+    {
+      "hash": "7d4b92b75ea05c06a9328d8ee978b8b41f105a8fb1e78fabf12b203e8e692dac",
+      "rows": [
+        "1994",
+        "2012",
+        "People",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Crime Stories",
+        "Disney"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.27,
+      "maxSimilarityToPast": 0.4882,
+      "similarityPenalty": 3.9056,
+      "movieOverlapPenalty": 24.5323127133272,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -14.167912713327201
+    },
+    {
+      "hash": "faa3d7c3b63abba7948a47aa5468998bcd2ef2635226627dbdc93ee9441b28b3",
+      "rows": [
+        "1994",
+        "2013",
+        "Ends with OOD",
+        "Thriller Stories"
+      ],
+      "cols": [
+        "Haruki Murakami",
+        "Japanese Films",
+        "Oscar Winners",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.18,
+      "maxSimilarityToPast": 0.4096,
+      "similarityPenalty": 3.2768,
+      "movieOverlapPenalty": 18.24429604362344,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.341096043623439
+    },
+    {
+      "hash": "0fc96b6e1eba9d4441ad392bf2f21ab542b67b90b89af9936594ae10852e076c",
+      "rows": [
+        "1994",
+        "1995",
+        "Ends with DAY",
+        "War Stories"
+      ],
+      "cols": [
+        "Action Stories",
+        "People",
+        "Songs",
+        "Studio Ghibli"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.58,
+      "maxSimilarityToPast": 0.373,
+      "similarityPenalty": 2.984,
+      "movieOverlapPenalty": 17.602805954764925,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -9.806805954764926
+    },
+    {
+      "hash": "6ae7fa9d32f6345aae8dc7dc7cd7668f6206fc576a6bd0633ba2afe0144c6606",
+      "rows": [
+        "1994",
+        "1999",
+        "Classic Films",
+        "Starts with HER"
+      ],
+      "cols": [
+        "Adventure Stories",
+        "Famous Quotes",
+        "Oscar Winners",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.57,
+      "maxSimilarityToPast": 0.5102,
+      "similarityPenalty": 4.0816,
+      "movieOverlapPenalty": 17.373145654561778,
+      "yearProximityPenalty": 1,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1,
+      "finalScore": -11.884745654561778
+    },
+    {
+      "hash": "b8cc319f54ed3e8b38cca45b11628abbefcf91e708b2882370ddc8b987678bb7",
+      "rows": [
+        "1994",
+        "2002",
+        "Ends with TER",
+        "Oscar Winners"
+      ],
+      "cols": [
+        "Martial Arts Stories",
+        "People",
+        "Things Japanese",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.320000000000002,
+      "maxSimilarityToPast": 0.5085,
+      "similarityPenalty": 4.068,
+      "movieOverlapPenalty": 20.222296600571358,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -12.370296600571356
+    },
+    {
+      "hash": "cc6499585d64cf2073d7f10c3e2f3a1c3196cd45b56d1e7dd5a6ac3f24a67c0a",
+      "rows": [
+        "1994",
+        "2001",
+        "Fictional Animals",
+        "War Stories"
+      ],
+      "cols": [
+        "Action Stories",
+        "Disney",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.76,
+      "maxSimilarityToPast": 0.4913,
+      "similarityPenalty": 3.9304,
+      "movieOverlapPenalty": 16.99350707452156,
+      "yearProximityPenalty": 0.6,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.6,
+      "finalScore": -10.76390707452156
+    },
+    {
+      "hash": "5c3629f284940461c27ef7b7556a4a298124ec14ac2f7c350faa4d8df1a7358d",
+      "rows": [
+        "1994",
+        "2015",
+        "Prequels",
+        "War Stories"
+      ],
+      "cols": [
+        "Action Stories",
+        "Best Picture Winners",
+        "Disney",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.16,
+      "maxSimilarityToPast": 0.4911,
+      "similarityPenalty": 3.9288,
+      "movieOverlapPenalty": 22.830015011029502,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.598815011029501
+    },
+    {
+      "hash": "df3bce0e56a937b3ebd6198a1c30f3504c591c24e292ab9e229f80e56f2d92ba",
+      "rows": [
+        "1994",
+        "2003",
+        "Best Picture Winners",
+        "Fourth in Internal Chronology"
+      ],
+      "cols": [
+        "Action Stories",
+        "People",
+        "Stories about Families",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.27,
+      "maxSimilarityToPast": 0.4696,
+      "similarityPenalty": 3.7568,
+      "movieOverlapPenalty": 23.851256403524967,
+      "yearProximityPenalty": 0.2,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.2,
+      "finalScore": -14.538056403524967
+    },
+    {
+      "hash": "9bcf4bc4e43dabdb554628109ed8c50c0bda8ecba227501f5599e1921c59f7b5",
+      "rows": [
+        "1994",
+        "2000",
+        "People",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Disney",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.19,
+      "maxSimilarityToPast": 0.4923,
+      "similarityPenalty": 3.9384,
+      "movieOverlapPenalty": 25.180664361678847,
+      "yearProximityPenalty": 0.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.8,
+      "finalScore": -15.729064361678848
+    },
+    {
+      "hash": "e7099d55a2222631948a96815ca016d9a5e868df6479cc556d85b8397eda2275",
+      "rows": [
+        "1994",
+        "2013",
+        "Ends with OOD",
+        "Thriller Stories"
+      ],
+      "cols": [
+        "Contemporary Literature",
+        "Japanese Films",
+        "Oscar Winners",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.74,
+      "maxSimilarityToPast": 0.4096,
+      "similarityPenalty": 3.2768,
+      "movieOverlapPenalty": 18.24429604362344,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.781096043623439
+    },
+    {
+      "hash": "66b0acd515c2c5ac6eda2cb0a221db942ded547f6ce02157f4c373e5f3b04de3",
+      "rows": [
+        "1994",
+        "1995",
+        "Classic Films",
         "World War II"
       ],
+      "cols": [
+        "Action Stories",
+        "Famous Quotes",
+        "People",
+        "Things Japanese"
+      ],
       "timestamp": null,
-      "qualityScore": 5.05,
-      "maxSimilarityToPast": 0.4606,
-      "finalScore": 1.3651999999999997
+      "qualityScore": 10.629999999999999,
+      "maxSimilarityToPast": 0.4169,
+      "similarityPenalty": 3.3352,
+      "movieOverlapPenalty": 13.65878745652956,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -8.163987456529561
     },
     {
-      "hash": "08a979a6705ae7975739238e0a6f80114394b2744ef74156e30a844602a6373c",
+      "hash": "a98246a20c6dac16f35ff63290eb5cf1bfe03c39d638cbfaf881e2f447d3b901",
       "rows": [
-        "2011",
-        "Fifth in Release Order",
-        "Movies featuring Al Pacino",
-        "Third in Internal Chronology"
+        "1994",
+        "1999",
+        "Classic Films",
+        "Ends with BER"
       ],
       "cols": [
-        "Comedy Stories",
-        "Movies featuring Johnny Depp",
-        "Prequels",
-        "Thriller Films"
+        "Famous Quotes",
+        "People",
+        "Stories about Families",
+        "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 23.73,
-      "maxSimilarityToPast": 0.5821,
-      "finalScore": 19.0732
+      "qualityScore": 11.97,
+      "maxSimilarityToPast": 0.4098,
+      "similarityPenalty": 3.2784,
+      "movieOverlapPenalty": 16.836359535686928,
+      "yearProximityPenalty": 1,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1,
+      "finalScore": -9.144759535686926
     },
     {
-      "hash": "eaadffb806951623d3a64897732edbf72149a3926913755948956d8e0378c93a",
+      "hash": "36f3ae418ba773b994e2828074a6ac9cc1058b1ad56abdb9d87d60a824033c7b",
       "rows": [
-        "2011",
-        "Comedy Stories",
-        "Fifth in Release Order",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Movies featuring Alan Rickman",
-        "Movies featuring Johnny Depp",
-        "Prequels",
-        "Thriller Films"
-      ],
-      "timestamp": null,
-      "qualityScore": 23.49,
-      "maxSimilarityToPast": 0.5916,
-      "finalScore": 18.757199999999997
-    },
-    {
-      "hash": "54301fb46a15a660d7e90b070c880bbaeec646fde5aad8a6ba1781957ebd843f",
-      "rows": [
-        "2011",
+        "1994",
         "2013",
-        "Second in Internal Chronology",
-        "Third in Internal Chronology"
+        "Classic Films",
+        "Starts with TER"
       ],
       "cols": [
-        "Movies featuring Bill Nighy",
-        "Prequels",
-        "Stories Where the Mom Dies",
-        "Thriller Films"
+        "Action Stories",
+        "People",
+        "Stories about Families",
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 22.79,
-      "maxSimilarityToPast": 0.5086,
-      "finalScore": 18.7212
+      "qualityScore": 10.93,
+      "maxSimilarityToPast": 0.4319,
+      "similarityPenalty": 3.4552,
+      "movieOverlapPenalty": 17.738843017117777,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.264043017117777
     },
     {
-      "hash": "4ac185726c24b71863d03c1c655b5e69bbe4d017f48025e2a1a7747fa14a58cd",
+      "hash": "f9423d611d988b6b49e6b9378c1ea836bd4c520de3811ed885f8a37d5aee4488",
       "rows": [
-        "2011",
-        "2013",
-        "Second in Internal Chronology",
-        "Third in Release Order"
+        "1994",
+        "1995",
+        "Classic Films",
+        "Horror Stories"
       ],
       "cols": [
-        "Movies featuring Bill Nighy",
-        "Prequels",
-        "Stories Where the Mom Dies",
-        "Thriller Films"
+        "Best Picture Winners",
+        "Famous Quotes",
+        "People",
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 22.79,
-      "maxSimilarityToPast": 0.5086,
-      "finalScore": 18.7212
+      "qualityScore": 12.05,
+      "maxSimilarityToPast": 0.4786,
+      "similarityPenalty": 3.8288,
+      "movieOverlapPenalty": 17.008289360248334,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -10.587089360248335
     },
     {
-      "hash": "8488e08f60ccaf4918a4fb2341949c875184a141c0299e5ae5a7ab91310dfcb8",
+      "hash": "305a5e52ce1b8838d818e69e8d5e22fd3e3ffe2027c2a117a53ab7ca002a1e17",
       "rows": [
-        "2011",
+        "1994",
         "2018",
-        "Fourth in Release Order",
-        "Third in Release Order"
+        "Prequels",
+        "War Stories"
       ],
       "cols": [
-        "Comedy Stories",
-        "Prequels",
-        "Stories Where the Mom Dies",
-        "Time Travel Stories"
+        "Action Stories",
+        "Best Picture Winners",
+        "Disney",
+        "People"
       ],
       "timestamp": null,
-      "qualityScore": 20.83,
-      "maxSimilarityToPast": 0.4101,
-      "finalScore": 17.5492
+      "qualityScore": 13.639999999999999,
+      "maxSimilarityToPast": 0.4929,
+      "similarityPenalty": 3.9432,
+      "movieOverlapPenalty": 22.330015011029502,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.633215011029503
     },
     {
-      "hash": "86547a1509fcba19309eecc52cd900ac2c037f15bc6667334504facc5dad9ebb",
+      "hash": "bea34b715823e4b51f1417375002f673c3e1a0f587a46c23c7a8d529480a482a",
       "rows": [
-        "2011",
+        "1994",
+        "2019",
+        "Prequels",
+        "War Stories"
+      ],
+      "cols": [
+        "Action Stories",
+        "Best Picture Winners",
+        "Disney",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.76,
+      "maxSimilarityToPast": 0.6161,
+      "similarityPenalty": 4.9288,
+      "movieOverlapPenalty": 22.602742283756776,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -13.771542283756776
+    },
+    {
+      "hash": "459f63e440df88e32dc9ab2c02902114ced4252ce938bb6b687b3eca3c0260e7",
+      "rows": [
+        "1994",
+        "2002",
+        "Black and White Films",
+        "Sequels"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "People",
+        "Stories about Families",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.06,
+      "maxSimilarityToPast": 0.526,
+      "similarityPenalty": 4.208,
+      "movieOverlapPenalty": 24.532550011877404,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -17.080550011877403
+    },
+    {
+      "hash": "07d3f1f32174541f32abeeb9d487f9b311fea5e514ef82b508e2364353bcb325",
+      "rows": [
+        "1994",
+        "2002",
+        "Ends with OOD",
+        "Thriller Stories"
+      ],
+      "cols": [
+        "Haruki Murakami",
+        "Japanese Films",
+        "Oscar Winners",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.18,
+      "maxSimilarityToPast": 0.4141,
+      "similarityPenalty": 3.3128,
+      "movieOverlapPenalty": 19.101438900766293,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -8.634238900766293
+    },
+    {
+      "hash": "8f155e3f49de88e4cd98967d6c46d4d037053540369673ac1f56817829d87b38",
+      "rows": [
+        "1994",
+        "2002",
+        "Ends with OOD",
+        "Thriller Stories"
+      ],
+      "cols": [
+        "Contemporary Literature",
+        "Japanese Films",
+        "Oscar Winners",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.74,
+      "maxSimilarityToPast": 0.4141,
+      "similarityPenalty": 3.3128,
+      "movieOverlapPenalty": 19.101438900766293,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -9.074238900766295
+    },
+    {
+      "hash": "820c02ba85e68feb2e8d70e86903af598c6eb8419706fe84e391a7f055d06baf",
+      "rows": [
+        "1994",
+        "1995",
+        "Classic Films",
+        "World War II"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Oscar Winners",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.57,
+      "maxSimilarityToPast": 0.5042,
+      "similarityPenalty": 4.0336,
+      "movieOverlapPenalty": 13.866579664321767,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -9.130179664321767
+    },
+    {
+      "hash": "cbe8c930ab58e5f04559447a329885f9e7154583142fe5aa4cafd434155b637d",
+      "rows": [
+        "1994",
         "2013",
-        "Second in Internal Chronology",
-        "Third in Internal Chronology"
+        "Fictional Animals",
+        "War Stories"
       ],
       "cols": [
-        "Movies featuring Bill Nighy",
-        "Period Stories",
-        "Prequels",
-        "Thriller Films"
+        "Action Stories",
+        "Disney",
+        "People",
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 21.62,
-      "maxSimilarityToPast": 0.5111,
-      "finalScore": 17.531200000000002
+      "qualityScore": 10.88,
+      "maxSimilarityToPast": 0.4913,
+      "similarityPenalty": 3.9304,
+      "movieOverlapPenalty": 16.650649931664418,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -9.701049931664418
     },
     {
-      "hash": "982c4ed9627d810cd443055e0553d75b14c3b165ccf31686c1a1c7c4fc9a9436",
+      "hash": "4b4889cf44d077cc5dbf0e4c07d1ebfa8532f4045db26f25e543507c88611c04",
       "rows": [
-        "2011",
-        "2018",
-        "Fourth in Release Order",
-        "Third in Internal Chronology"
+        "1994",
+        "1995",
+        "Classic Films",
+        "Horror Stories"
       ],
       "cols": [
-        "Comedy Stories",
-        "Prequels",
-        "Stories Where the Mom Dies",
-        "Time Travel Stories"
+        "Famous Quotes",
+        "Oscar Winners",
+        "People",
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 20.83,
-      "maxSimilarityToPast": 0.4283,
-      "finalScore": 17.403599999999997
+      "qualityScore": 11.660000000000002,
+      "maxSimilarityToPast": 0.5094,
+      "similarityPenalty": 4.0752,
+      "movieOverlapPenalty": 17.008289360248334,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -11.223489360248333
     },
     {
-      "hash": "e8b64dabc6972834c3c5955c895952671fabeffb206ea301288ceafcc4893939",
+      "hash": "39f6d93660ffcd2674ea2765859f3d5be083e718d88d0695ef3ebc1005dc0641",
       "rows": [
-        "2011",
-        "Comedy Stories",
-        "Second in Internal Chronology",
-        "Third in Internal Chronology"
-      ],
-      "cols": [
-        "Movies featuring Alan Rickman",
-        "Movies featuring Johnny Depp",
-        "Prequels",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.57,
-      "maxSimilarityToPast": 0.4679,
-      "finalScore": 16.8268
-    },
-    {
-      "hash": "d3955e2053b04d9e8bbd65cf205e7c117a7fec03a6358c1e0b97144ffd9e1f02",
-      "rows": [
-        "2011",
-        "Comedy Stories",
-        "Second in Internal Chronology",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Movies featuring Alan Rickman",
-        "Movies featuring Johnny Depp",
-        "Prequels",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.57,
-      "maxSimilarityToPast": 0.486,
-      "finalScore": 16.682000000000002
-    },
-    {
-      "hash": "0f2dfbb7c67332e798443ee0b85ce9d62ad79e8b02e55130bd0d90f6c677a329",
-      "rows": [
-        "2011",
+        "1994",
         "2013",
-        "Second in Internal Chronology",
-        "Third in Release Order"
+        "Black and White Films",
+        "Starts with TER"
       ],
       "cols": [
-        "Movies featuring Bill Nighy",
-        "Period Stories",
-        "Stories Where the Mom Dies",
-        "Thriller Films"
+        "Action Stories",
+        "People",
+        "Stories about Families",
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 19.95,
-      "maxSimilarityToPast": 0.4161,
-      "finalScore": 16.621199999999998
+      "qualityScore": 10.84,
+      "maxSimilarityToPast": 0.4909,
+      "similarityPenalty": 3.9272,
+      "movieOverlapPenalty": 18.238843017117777,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.326043017117776
     },
     {
-      "hash": "3b7020847d6322d25b41a5e1042a4f20c414b16ded510ff29c4450d5c06ada51",
+      "hash": "fa0bed21f00a510474db9edc32cff7244c92666d3b1d30e562eea9240105b5bc",
       "rows": [
-        "2011",
+        "1994",
         "2013",
-        "Second in Internal Chronology",
-        "Third in Internal Chronology"
+        "Black and White Films",
+        "Starts with TER"
       ],
       "cols": [
-        "Movies featuring Bill Nighy",
-        "Period Stories",
-        "Stories Where the Mom Dies",
-        "Thriller Films"
+        "People",
+        "Stories about Families",
+        "Things Japanese",
+        "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 19.95,
-      "maxSimilarityToPast": 0.4269,
-      "finalScore": 16.5348
+      "qualityScore": 10.860000000000001,
+      "maxSimilarityToPast": 0.5308,
+      "similarityPenalty": 4.2464,
+      "movieOverlapPenalty": 18.28874048806788,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.675140488067878
     },
     {
-      "hash": "11b6f76b26721b4f03a1ad837714630d683f4ce0bacd42731b5985214941f17d",
+      "hash": "81024021aae3a151fc3f8a315e280502e1aa4033cf0f40df163f2acbc9c16cc7",
       "rows": [
-        "2011",
-        "Comedy Stories",
-        "Second in Internal Chronology",
-        "Third in Release Order"
+        "1994",
+        "2013",
+        "Classic Films",
+        "Starts with TER"
       ],
       "cols": [
-        "Movies featuring Alan Rickman",
-        "Movies featuring Johnny Depp",
-        "Prequels",
-        "Thriller Films"
+        "Action Stories",
+        "Best Picture Winners",
+        "People",
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 20.470000000000002,
-      "maxSimilarityToPast": 0.5364,
-      "finalScore": 16.178800000000003
+      "qualityScore": 10.379999999999999,
+      "maxSimilarityToPast": 0.4873,
+      "similarityPenalty": 3.8984,
+      "movieOverlapPenalty": 18.36106523934,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.879465239340002
     },
     {
-      "hash": "5f1749bfe2bffedf6f15c8fd5b74428092b25a691264d67b4d214090fd1fcaf1",
+      "hash": "afba195304ed1845afcd3b014be0bec1e895bcf41b26a6cc086c22956348bc62",
       "rows": [
-        "2011",
-        "2018",
-        "Fourth in Release Order",
-        "Second in Internal Chronology"
+        "1994",
+        "2002",
+        "Ends with TER",
+        "Oscar Winners"
       ],
       "cols": [
-        "Comedy Stories",
-        "Prequels",
-        "Stories Where the Mom Dies",
-        "Time Travel Stories"
+        "Crime Stories",
+        "Martial Arts Stories",
+        "People",
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 19.499999999999996,
-      "maxSimilarityToPast": 0.4192,
-      "finalScore": 16.146399999999996
+      "qualityScore": 12.64,
+      "maxSimilarityToPast": 0.5079,
+      "similarityPenalty": 4.0632,
+      "movieOverlapPenalty": 20.145373523648285,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -11.968573523648285
     },
     {
-      "hash": "34438c68bc06e564276735b5fc6e41ad8b63036cbbd187271fa5d630c6050d84",
+      "hash": "f172abebbae7b6e4fa58b314dba5351be1f68d0e3531866c26952384410a6480",
       "rows": [
-        "2011",
-        "Comedy Stories",
-        "Second in Internal Chronology",
-        "Third in Internal Chronology"
+        "1994",
+        "2013",
+        "Classic Films",
+        "Ends with TER"
       ],
       "cols": [
-        "Movies featuring Alan Rickman",
-        "Movies featuring Johnny Depp",
-        "Prequels",
-        "Thriller Films"
+        "Action Stories",
+        "Best Picture Winners",
+        "People",
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 20.470000000000002,
-      "maxSimilarityToPast": 0.578,
-      "finalScore": 15.846000000000004
+      "qualityScore": 10.379999999999999,
+      "maxSimilarityToPast": 0.4908,
+      "similarityPenalty": 3.9264,
+      "movieOverlapPenalty": 18.657361535636298,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.2037615356363
     },
     {
-      "hash": "8efa00a0773706dd2d2d46fc270a57b22634e901da52f17782a7e84ec98291cf",
+      "hash": "22d730522f337ac2e58cfdee71b682a70722e3e4f432205fe06e740e272d1d8b",
       "rows": [
-        "2011",
-        "Comedy Stories",
-        "Second in Internal Chronology",
-        "Third in Release Order"
+        "1994",
+        "2002",
+        "Ends with TER",
+        "Oscar Winners"
       ],
       "cols": [
-        "Movies featuring Johnny Depp",
-        "Prequels",
-        "Stories Where the Mom Dies",
-        "Time Travel Stories"
+        "Martial Arts Stories",
+        "People",
+        "Things Japanese",
+        "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 19.019999999999996,
-      "maxSimilarityToPast": 0.4105,
-      "finalScore": 15.735999999999997
+      "qualityScore": 12.060000000000002,
+      "maxSimilarityToPast": 0.5094,
+      "similarityPenalty": 4.0752,
+      "movieOverlapPenalty": 20.064401863729252,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -12.479601863729249
     }
   ],
   "message": "Puzzle saved successfully!"

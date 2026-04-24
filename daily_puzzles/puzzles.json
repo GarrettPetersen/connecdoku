@@ -11961,50 +11961,10 @@
   },
   {
     "rows": [
-      "2008",
-      "2012",
-      "First in Release Order",
-      "Movies featuring Tom Hanks"
-    ],
-    "cols": [
-      "Christmas Stories",
-      "Oscar Winners",
-      "Pixar",
-      "Thriller Stories"
-    ],
-    "words": [
-      [
-        "Four Christmases",
-        "Slumdog Millionaire",
-        "WALL-E",
-        "Vantage Point"
-      ],
-      [
-        "Rise of the Guardians",
-        "Django Unchained",
-        "Brave",
-        "Looper"
-      ],
-      [
-        "Home Alone",
-        "The Godfather",
-        "The Incredibles",
-        "The Terminator"
-      ],
-      [
-        "The Polar Express",
-        "Forrest Gump",
-        "Toy Story",
-        "The Da Vinci Code"
-      ]
-    ]
-  },
-  {
-    "rows": [
       "15th Century",
       "Classic Literature",
       "Foods",
-      "Medieval Buildings"
+      "Buildings"
     ],
     "cols": [
       "Ming Dynasty",
@@ -12028,7 +11988,7 @@
       [
         "Peking Duck",
         "Caesar",
-        "Biryani",
+        "Curry",
         "Paella"
       ],
       [
@@ -12041,41 +12001,121 @@
   },
   {
     "rows": [
-      "Cities in USA",
-      "Cold War",
-      "Napoleonic Wars",
-      "World War II"
+      "2005",
+      "2010",
+      "First in Release Order",
+      "Second in Internal Chronology"
     ],
     "cols": [
-      "Locations in Oceania",
-      "Military Ships",
-      "Movies",
-      "Starts with BAT"
+      "Comedy Stories",
+      "Liu Cixin",
+      "Period Stories",
+      "Starts with HAR"
     ],
     "words": [
       [
-        "Honolulu",
-        "Lincoln",
-        "Chicago",
-        "Baton Rouge"
+        "Chicken Little",
+        "Ball Lightning",
+        "Kingdom of Heaven",
+        "Harry Potter and the Goblet of Fire"
       ],
+      [
+        "Hot Tub Time Machine",
+        "Death's End",
+        "The King's Speech",
+        "Harry Potter and the Deathly Hallows: Part 1"
+      ],
+      [
+        "Back to the Future",
+        "The Three-Body Problem",
+        "A Fistful of Dollars",
+        "Harry Potter and the Sorcerer's Stone"
+      ],
+      [
+        "Back to the Future Part II",
+        "The Dark Forest",
+        "For a Few Dollars More",
+        "Harry Potter and the Chamber of Secrets"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Black Things",
+      "Black and White",
+      "National Leaders",
+      "X-Men Characters"
+    ],
+    "cols": [
+      "Ends with MAN",
+      "Mammals",
+      "Supervillains",
+      "Things That Fly"
+    ],
+    "words": [
+      [
+        "Batman",
+        "Panther",
+        "Venom",
+        "SR-71 Blackbird"
+      ],
+      [
+        "The Third Man",
+        "Panda",
+        "Penguin",
+        "Magpie"
+      ],
+      [
+        "Truman",
+        "Garfield",
+        "Ozymandias",
+        "Hindenburg"
+      ],
+      [
+        "Iceman",
+        "Wolverine",
+        "Magneto",
+        "Angel"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Archipelagos",
+      "Landlocked Countries",
+      "People",
+      "WWII Allied Powers"
+    ],
+    "cols": [
+      "Cold War",
+      "Countries in Asia",
+      "Ends with AND",
+      "Locations in South America"
+    ],
+    "words": [
       [
         "Bikini",
+        "Indonesia",
+        "Shetland",
+        "Galapagos"
+      ],
+      [
+        "Hungary",
+        "Mongolia",
+        "Switzerland",
+        "Bolivia"
+      ],
+      [
         "Reagan",
-        "The Hunt for Red October",
-        "Battle of Dien Bien Phu"
+        "Jordan",
+        "Archduke Franz Ferdinand",
+        "Robinson Crusoe"
       ],
       [
-        "Wellington",
-        "Victory",
-        "Waterloo",
-        "Battle of Trafalgar"
-      ],
-      [
-        "Pearl Harbor",
-        "Yamato",
-        "Saving Private Ryan",
-        "Battle of Midway"
+        "United States",
+        "China",
+        "New Zealand",
+        "Brazil"
       ]
     ]
   }
