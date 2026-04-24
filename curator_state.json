@@ -5,730 +5,914 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "90f34b43024f4143cc9e0e1712267d359fdab269add7f0705bd11d730cd91127",
+    "hash": "354c5f3de2be701b6142796b5379997828610cd7b1b0a4f1e8509f8e243d2b2f",
     "rows": [
-      "2016",
-      "2017",
-      "First in Internal Chronology",
-      "Second in Release Order"
+      "Archipelagos",
+      "Landlocked Countries",
+      "People",
+      "WWII Allied Powers"
     ],
     "cols": [
-      "Civilian Ships",
-      "Fantasy Stories",
-      "Musical Films",
-      "Star Wars Movies"
+      "Cold War",
+      "Countries in Asia",
+      "Ends with AND",
+      "Locations in South America"
     ],
     "timestamp": null,
-    "qualityScore": 17.57,
-    "maxSimilarityToPast": 0.3827,
-    "finalScore": 14.5084
+    "qualityScore": 10.610000000000001,
+    "maxSimilarityToPast": 0.473,
+    "similarityPenalty": 3.784,
+    "movieOverlapPenalty": 0.9418733201480805,
+    "yearProximityPenalty": 0,
+    "adjacentDecadePenalty": 0,
+    "adjacentCenturyPenalty": 0,
+    "temporalPenalty": 0,
+    "finalScore": 5.884126679851921
   },
   "viableGrid": [
     [
       [
-        "Boaty McBoatface",
-        "Harmony of the Seas"
+        "Bikini"
       ],
       [
-        "A Monster Calls"
+        "British Malaya",
+        "Indonesia",
+        "Maldives",
+        "Netherlands East Indies",
+        "Portuguese Timor"
       ],
       [
-        "La La Land"
+        "Aland",
+        "Shetland"
       ],
       [
-        "Rogue One"
+        "Falkland Islands",
+        "Galapagos"
       ]
     ],
     [
       [
-        "MSC Meraviglia"
+        "Hungary"
       ],
       [
-        "Pirates of the Caribbean: Dead Men Tell No Tales",
-        "The Shape of Water"
+        "Armenia",
+        "Azerbaijan",
+        "Bhutan",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Laos",
+        "Mongolia",
+        "Nepal",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan"
       ],
       [
-        "The Greatest Showman"
+        "Switzerland"
       ],
       [
-        "The Last Jedi"
+        "Bolivia",
+        "Paraguay"
       ]
     ],
     [
       [
-        "Queen Elizabeth",
-        "Queen Mary"
+        "Berlin",
+        "Bush",
+        "Davy Crockett",
+        "Eisenhower",
+        "Joe McCarthy",
+        "Malenkov",
+        "Nimitz",
+        "Reagan",
+        "Roosevelt",
+        "Truman",
+        "Washington"
       ],
       [
-        "Ghostbusters",
-        "Harry Potter and the Sorcerer's Stone",
-        "Pirates of the Caribbean: The Curse of the Black Pearl",
-        "The Chronicles of Narnia: The Magician's Nephew",
-        "The Lord of the Rings: The Fellowship of the Ring",
-        "The Magician's Nephew",
-        "The Map of Time",
-        "The Santa Clause",
-        "The Silmarillion"
+        "Jordan"
       ],
       [
-        "101 Dalmatians",
-        "Bambi",
-        "Lady and the Tramp",
-        "Lilo & Stitch",
-        "Mulan",
-        "Pocahontas",
-        "The Emperor's New Groove",
-        "The Hunchback of Notre Dame",
-        "The Jungle Book",
-        "The Lion King",
-        "The Many Adventures of Winnie the Pooh",
-        "The Parent Trap",
-        "The Rescuers"
+        "Archduke Franz Ferdinand",
+        "Cleveland"
       ],
       [
-        "The Phantom Menace"
+        "Robinson Crusoe"
       ]
     ],
     [
       [
-        "Queen Elizabeth 2",
-        "Queen Mary 2"
+        "United States"
       ],
       [
-        "Ghostbusters II",
-        "Harry Potter and the Chamber of Secrets",
-        "Pirates of the Caribbean: Dead Man's Chest",
-        "Prince Caspian",
-        "The Lord of the Rings",
-        "The Lord of the Rings: The Two Towers",
-        "The Map of the Sky",
-        "The Santa Clause 2"
+        "China",
+        "India"
       ],
       [
-        "Winnie the Pooh"
+        "New Zealand"
       ],
       [
-        "The Empire Strikes Back"
+        "Brazil"
       ]
     ]
   ],
   "chosen": [
     [
-      "Harmony of the Seas",
-      "A Monster Calls",
-      "La La Land",
-      "Rogue One"
+      "Bikini",
+      "Indonesia",
+      "Shetland",
+      "Galapagos"
     ],
     [
-      "MSC Meraviglia",
-      "The Shape of Water",
-      "The Greatest Showman",
-      "The Last Jedi"
+      "Hungary",
+      "Mongolia",
+      "Switzerland",
+      "Bolivia"
     ],
     [
-      "Queen Mary",
-      "The Chronicles of Narnia: The Magician's Nephew",
-      "Lady and the Tramp",
-      "The Phantom Menace"
+      "Reagan",
+      "Jordan",
+      "Archduke Franz Ferdinand",
+      "Robinson Crusoe"
     ],
     [
-      "Queen Mary 2",
-      "The Lord of the Rings: The Two Towers",
-      "Winnie the Pooh",
-      "The Empire Strikes Back"
+      "United States",
+      "China",
+      "New Zealand",
+      "Brazil"
     ]
   ],
   "usedWords": [
-    "Harmony of the Seas",
-    "A Monster Calls",
-    "La La Land",
-    "Rogue One",
-    "MSC Meraviglia",
-    "The Shape of Water",
-    "The Greatest Showman",
-    "The Last Jedi",
-    "Queen Mary",
-    "The Chronicles of Narnia: The Magician's Nephew",
-    "Lady and the Tramp",
-    "The Phantom Menace",
-    "Queen Mary 2",
-    "The Lord of the Rings: The Two Towers",
-    "Winnie the Pooh",
-    "The Empire Strikes Back"
+    "Bikini",
+    "Indonesia",
+    "Shetland",
+    "Galapagos",
+    "Hungary",
+    "Mongolia",
+    "Switzerland",
+    "Bolivia",
+    "Reagan",
+    "Jordan",
+    "Archduke Franz Ferdinand",
+    "Robinson Crusoe",
+    "United States",
+    "China",
+    "New Zealand",
+    "Brazil"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "e2364ba7dc5afe36748db9b3352ac72270dff9c81f838a8220cd4bfb8dfa92ed",
+      "hash": "354c5f3de2be701b6142796b5379997828610cd7b1b0a4f1e8509f8e243d2b2f",
       "rows": [
-        "2016",
-        "2018",
-        "Sixth in Release Order",
-        "War Stories"
+        "Archipelagos",
+        "Landlocked Countries",
+        "People",
+        "WWII Allied Powers"
       ],
       "cols": [
-        "First in Internal Chronology",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies",
-        "Time Travel Stories"
+        "Cold War",
+        "Countries in Asia",
+        "Ends with AND",
+        "Locations in South America"
       ],
       "timestamp": null,
-      "qualityScore": 21.569999999999997,
-      "maxSimilarityToPast": 0.5349,
-      "finalScore": 17.290799999999997
+      "qualityScore": 10.610000000000001,
+      "maxSimilarityToPast": 0.473,
+      "similarityPenalty": 3.784,
+      "movieOverlapPenalty": 0.9418733201480805,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 5.884126679851921
     },
     {
-      "hash": "9e729786ba01675cf0c8bab8a7fdd4baffc94479bd908b3e5b4956d7480f848a",
+      "hash": "f4b56341449814ed0fd3a6eb42c0f8029f1f75a78b3fea8c5a7f7a2a34327dc4",
       "rows": [
-        "2018",
-        "2023",
-        "First in Release Order",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "3D Animated Films",
-        "Action Stories",
-        "Cruise Ships",
-        "Oscar Winners"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.93,
-      "maxSimilarityToPast": 0.4691,
-      "finalScore": 13.1772
-    },
-    {
-      "hash": "f9cb788eb7f5be8d99c4855fb973c3630f15d6cb916a886ddc610a02809298d7",
-      "rows": [
-        "2018",
-        "Fourth in Release Order",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Fantasy Stories",
-        "Horror Stories",
-        "Prequels",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 19.42,
-      "maxSimilarityToPast": 0.5363,
-      "finalScore": 15.129600000000002
-    },
-    {
-      "hash": "90f34b43024f4143cc9e0e1712267d359fdab269add7f0705bd11d730cd91127",
-      "rows": [
-        "2016",
-        "2017",
-        "First in Internal Chronology",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Civilian Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 17.57,
-      "maxSimilarityToPast": 0.3827,
-      "finalScore": 14.5084
-    },
-    {
-      "hash": "3029a235de09752b65ea06939ed2137fbd81516f271a5cd3d6f10c18c6532481",
-      "rows": [
-        "2018",
-        "Period Stories",
-        "Stories Where the Mom Dies",
-        "The Matrix"
-      ],
-      "cols": [
-        "Ends with IME",
-        "Oscar Winners",
-        "Second in Internal Chronology",
-        "Third in Release Order"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.709999999999999,
-      "maxSimilarityToPast": 0.4005,
-      "finalScore": 12.505999999999998
-    },
-    {
-      "hash": "c556d78e7b670dd058f082810ceeb6120a9d97050c3d07660577109371055950",
-      "rows": [
-        "2018",
-        "2021",
-        "Prequels",
+        "1994",
+        "2002",
+        "Black and White Films",
         "Stories Where the Mom Dies"
       ],
       "cols": [
         "Action Stories",
-        "Fantasy Stories",
         "Oscar Winners",
-        "Pixar"
-      ],
-      "timestamp": null,
-      "qualityScore": 17.700000000000003,
-      "maxSimilarityToPast": 0.4603,
-      "finalScore": 14.017600000000003
-    },
-    {
-      "hash": "321add219874389b8307c3e41ccccc3b9c7e5809a83f906b6dc34da81d3f08b1",
-      "rows": [
-        "2018",
-        "Fourth in Internal Chronology",
-        "Prequels",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Action Stories",
-        "Fantasy Stories",
-        "Star Wars Movies",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.57,
-      "maxSimilarityToPast": 0.4673,
-      "finalScore": 16.8316
-    },
-    {
-      "hash": "e2e4a54f7f9a2e5add03ba986e4a795bc6828122a1f124dff44bce0b3ddb83e9",
-      "rows": [
-        "2018",
-        "First in Release Order",
-        "Second in Release Order",
-        "Stories Where the Mom Dies"
-      ],
-      "cols": [
-        "3D Animated Films",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Superheroes"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.86,
-      "maxSimilarityToPast": 0.4182,
-      "finalScore": 13.514399999999998
-    },
-    {
-      "hash": "cfeb481ebd69c6eddd32069d41150b75f8da86a04d5a20a0cdd5afb872ad8ffe",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Oscar Winners",
-        "Ships",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.57,
-      "maxSimilarityToPast": 0.4033,
-      "finalScore": 13.3436
-    },
-    {
-      "hash": "a4578f12cb210d7e8b13a1f8ede2a52f8d57cd2b557b8568e62099a572b5ba2d",
-      "rows": [
-        "2018",
-        "2023",
-        "First in Internal Chronology",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "3D Animated Films",
-        "Adventure Stories",
-        "Cruise Ships",
-        "Oscar Winners"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.51,
-      "maxSimilarityToPast": 0.4353,
-      "finalScore": 13.027600000000001
-    },
-    {
-      "hash": "e046264256acff0d939adca42bb83c534a706c4b7d6962e4a81dd9215ed3ab41",
-      "rows": [
-        "2018",
-        "First in Release Order",
-        "Oscar Winners",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Stories Where the Mom Dies",
         "Stories about Families",
-        "Time Travel Stories",
-        "Western Stories"
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 15.63,
-      "maxSimilarityToPast": 0.5093,
-      "finalScore": 11.555600000000002
+      "qualityScore": 13.200000000000001,
+      "maxSimilarityToPast": 0.4192,
+      "similarityPenalty": 3.3536,
+      "movieOverlapPenalty": 25.4984126984127,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -16.0520126984127
     },
     {
-      "hash": "3a7e5c6ba6b1a533553bcc13777f5fb2bf9ae491d65cfb3ac069861b1388db06",
+      "hash": "7d4b92b75ea05c06a9328d8ee978b8b41f105a8fb1e78fabf12b203e8e692dac",
       "rows": [
-        "2018",
-        "Fourth in Internal Chronology",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
+        "1994",
+        "2012",
+        "People",
+        "Third in Internal Chronology"
       ],
       "cols": [
-        "Fantasy Stories",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Stories about Families"
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Crime Stories",
+        "Disney"
       ],
       "timestamp": null,
-      "qualityScore": 19.910000000000004,
-      "maxSimilarityToPast": 0.4205,
-      "finalScore": 16.546000000000003
+      "qualityScore": 14.27,
+      "maxSimilarityToPast": 0.4882,
+      "similarityPenalty": 3.9056,
+      "movieOverlapPenalty": 24.5323127133272,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -14.167912713327201
     },
     {
-      "hash": "56575772aaf71e4ce634667414c2b13afe6deb73baac25a667b20544dd4f7802",
+      "hash": "faa3d7c3b63abba7948a47aa5468998bcd2ef2635226627dbdc93ee9441b28b3",
       "rows": [
-        "2016",
-        "2017",
-        "First in Internal Chronology",
-        "Second in Internal Chronology"
+        "1994",
+        "2013",
+        "Ends with OOD",
+        "Thriller Stories"
       ],
       "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
+        "Haruki Murakami",
+        "Japanese Films",
+        "Oscar Winners",
+        "People"
       ],
       "timestamp": null,
-      "qualityScore": 18.950000000000003,
-      "maxSimilarityToPast": 0.3177,
-      "finalScore": 16.408400000000004
+      "qualityScore": 14.18,
+      "maxSimilarityToPast": 0.4096,
+      "similarityPenalty": 3.2768,
+      "movieOverlapPenalty": 18.24429604362344,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.341096043623439
     },
     {
-      "hash": "c09be08d49396da8d823a16acf210150080f8df5df56746a7b9daed12ec250db",
+      "hash": "0fc96b6e1eba9d4441ad392bf2f21ab542b67b90b89af9936594ae10852e076c",
       "rows": [
-        "2016",
-        "2017",
-        "First in Internal Chronology",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.9,
-      "maxSimilarityToPast": 0.3177,
-      "finalScore": 16.3584
-    },
-    {
-      "hash": "9c4fb19f2a4ff8ce0b51bfcfcaf6b79c309eb4d5d0d899de4a51a815b79897e4",
-      "rows": [
-        "2018",
-        "Fourth in Release Order",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
-      ],
-      "cols": [
-        "Fantasy Stories",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 19.78,
-      "maxSimilarityToPast": 0.4351,
-      "finalScore": 16.299200000000003
-    },
-    {
-      "hash": "0acd974451849426427611b4705141342dd9fcbb8b5de65eb0089ddee4c653d0",
-      "rows": [
-        "2016",
-        "2017",
-        "First in Release Order",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.93,
-      "maxSimilarityToPast": 0.3294,
-      "finalScore": 16.2948
-    },
-    {
-      "hash": "6b30ed8a80d627c5361c2f65e3046ba157b023a9d18943d1c1d92cb7bea17648",
-      "rows": [
-        "2016",
-        "2017",
-        "First in Release Order",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Musical Films",
-        "Star Wars Movies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.880000000000003,
-      "maxSimilarityToPast": 0.332,
-      "finalScore": 16.224000000000004
-    },
-    {
-      "hash": "6cf5f99a6204c83247defa4f335af853d959fea7a91294de1af4f115ddbc5153",
-      "rows": [
-        "2018",
-        "Fourth in Internal Chronology",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
+        "1994",
+        "1995",
+        "Ends with DAY",
+        "War Stories"
       ],
       "cols": [
         "Action Stories",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Stories about Families"
+        "People",
+        "Songs",
+        "Studio Ghibli"
       ],
       "timestamp": null,
-      "qualityScore": 20.22,
-      "maxSimilarityToPast": 0.5034,
-      "finalScore": 16.1928
+      "qualityScore": 12.58,
+      "maxSimilarityToPast": 0.373,
+      "similarityPenalty": 2.984,
+      "movieOverlapPenalty": 17.602805954764925,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -9.806805954764926
     },
     {
-      "hash": "197f6eed7c02b1927310b6dd77866d31da8822bc422b0673da5ad4aeb5ad3478",
+      "hash": "6ae7fa9d32f6345aae8dc7dc7cd7668f6206fc576a6bd0633ba2afe0144c6606",
       "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Release Order"
+        "1994",
+        "1999",
+        "Classic Films",
+        "Starts with HER"
       ],
       "cols": [
-        "Cruise Ships",
+        "Adventure Stories",
+        "Famous Quotes",
         "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
+        "People"
       ],
       "timestamp": null,
-      "qualityScore": 20.209999999999997,
-      "maxSimilarityToPast": 0.5125,
-      "finalScore": 16.11
+      "qualityScore": 10.57,
+      "maxSimilarityToPast": 0.5102,
+      "similarityPenalty": 4.0816,
+      "movieOverlapPenalty": 17.373145654561778,
+      "yearProximityPenalty": 1,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1,
+      "finalScore": -11.884745654561778
     },
     {
-      "hash": "cf2e1a532b6237628b54f6076ae19c4924e629d5dc522ed0b32a2558e8852103",
+      "hash": "b8cc319f54ed3e8b38cca45b11628abbefcf91e708b2882370ddc8b987678bb7",
       "rows": [
-        "2016",
-        "2018",
-        "First in Internal Chronology",
-        "Second in Release Order"
+        "1994",
+        "2002",
+        "Ends with TER",
+        "Oscar Winners"
       ],
       "cols": [
-        "Cruise Ships",
-        "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
+        "Martial Arts Stories",
+        "People",
+        "Things Japanese",
+        "Thriller Films"
       ],
       "timestamp": null,
-      "qualityScore": 20.229999999999997,
-      "maxSimilarityToPast": 0.5372,
-      "finalScore": 15.932399999999998
+      "qualityScore": 12.320000000000002,
+      "maxSimilarityToPast": 0.5085,
+      "similarityPenalty": 4.068,
+      "movieOverlapPenalty": 20.222296600571358,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -12.370296600571356
     },
     {
-      "hash": "c096b1fef4cbbc76678a722262ed63989bc1f5084bf32dd2cdab6671bd9ee45f",
+      "hash": "cc6499585d64cf2073d7f10c3e2f3a1c3196cd45b56d1e7dd5a6ac3f24a67c0a",
       "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Cruise Ships",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.649999999999995,
-      "maxSimilarityToPast": 0.6116,
-      "finalScore": 15.757199999999994
-    },
-    {
-      "hash": "0a3e5a62169edbe48be391b375920b1f479fc5d3da56f5a5ee2ac6ab130c2baa",
-      "rows": [
-        "2018",
-        "Fourth in Release Order",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
+        "1994",
+        "2001",
+        "Fictional Animals",
+        "War Stories"
       ],
       "cols": [
         "Action Stories",
-        "Horror Stories",
-        "Star Wars Movies",
-        "Stories about Families"
+        "Disney",
+        "People",
+        "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 20.089999999999996,
-      "maxSimilarityToPast": 0.5515,
-      "finalScore": 15.677999999999997
+      "qualityScore": 10.76,
+      "maxSimilarityToPast": 0.4913,
+      "similarityPenalty": 3.9304,
+      "movieOverlapPenalty": 16.99350707452156,
+      "yearProximityPenalty": 0.6,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.6,
+      "finalScore": -10.76390707452156
     },
     {
-      "hash": "eb53d0ba9ecb40d4a6d04b7c813ae76a9b5cce2b3f4cddd7af5e7711930b4a77",
+      "hash": "5c3629f284940461c27ef7b7556a4a298124ec14ac2f7c350faa4d8df1a7358d",
       "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "Cruise Ships",
+        "1994",
+        "2015",
         "Prequels",
-        "Stories Where the Mom Dies",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.339999999999996,
-      "maxSimilarityToPast": 0.6059,
-      "finalScore": 15.492799999999995
-    },
-    {
-      "hash": "39ece9cc6647105e04fd7ac4c2096339beb0b0bede6e52a08307dba0f4c86769",
-      "rows": [
-        "2016",
-        "2018",
-        "Third in Release Order",
         "War Stories"
-      ],
-      "cols": [
-        "First in Internal Chronology",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 19.729999999999997,
-      "maxSimilarityToPast": 0.5369,
-      "finalScore": 15.434799999999996
-    },
-    {
-      "hash": "94f9de5c0f5f98c7c605447331cd318a6a8704520374804a78adf4b4eabb0ded",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Civilian Ships",
-        "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.88,
-      "maxSimilarityToPast": 0.4475,
-      "finalScore": 15.299999999999999
-    },
-    {
-      "hash": "da013027cea0512a1658ce6e48b6bc845d39215d93e2683bb91d1464ed3e5c62",
-      "rows": [
-        "2016",
-        "2018",
-        "Third in Release Order",
-        "War Stories"
-      ],
-      "cols": [
-        "First in Internal Chronology",
-        "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 19.29,
-      "maxSimilarityToPast": 0.5071,
-      "finalScore": 15.2332
-    },
-    {
-      "hash": "382df83bd87e9bbad199442efb57d1729e93dd42878a228cb508e0e0d80325ae",
-      "rows": [
-        "2016",
-        "2018",
-        "First in Internal Chronology",
-        "Second in Release Order"
-      ],
-      "cols": [
-        "Civilian Ships",
-        "Oscar Winners",
-        "Star Wars Movies",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.9,
-      "maxSimilarityToPast": 0.4722,
-      "finalScore": 15.122399999999999
-    },
-    {
-      "hash": "2a988f08b758bd6a77e88cf3e8cd10e060a3f19ae788aec820cca144c70c0262",
-      "rows": [
-        "2018",
-        "Fourth in Internal Chronology",
-        "Stories Where the Mom Dies",
-        "Third in Release Order"
       ],
       "cols": [
         "Action Stories",
-        "Fantasy Stories",
-        "Star Wars Movies",
-        "Stories about Families"
+        "Best Picture Winners",
+        "Disney",
+        "People"
       ],
       "timestamp": null,
-      "qualityScore": 18.9,
-      "maxSimilarityToPast": 0.4839,
-      "finalScore": 15.028799999999999
+      "qualityScore": 14.16,
+      "maxSimilarityToPast": 0.4911,
+      "similarityPenalty": 3.9288,
+      "movieOverlapPenalty": 22.830015011029502,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.598815011029501
     },
     {
-      "hash": "316edc0bd281da7d14c0d8f4e5c93c3af9cbf6ee6dd822fd68681400f8974d2b",
+      "hash": "df3bce0e56a937b3ebd6198a1c30f3504c591c24e292ab9e229f80e56f2d92ba",
       "rows": [
-        "2016",
-        "2018",
-        "First in Internal Chronology",
-        "Second in Internal Chronology"
+        "1994",
+        "2003",
+        "Best Picture Winners",
+        "Fourth in Internal Chronology"
       ],
       "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Oscar Winners",
-        "Star Wars Movies"
+        "Action Stories",
+        "People",
+        "Stories about Families",
+        "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 18.45,
-      "maxSimilarityToPast": 0.4327,
-      "finalScore": 14.988399999999999
+      "qualityScore": 13.27,
+      "maxSimilarityToPast": 0.4696,
+      "similarityPenalty": 3.7568,
+      "movieOverlapPenalty": 23.851256403524967,
+      "yearProximityPenalty": 0.2,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.2,
+      "finalScore": -14.538056403524967
     },
     {
-      "hash": "e3b01435115427ef934d3f25353ccc3cd657ab539e521360445e11e05937629b",
+      "hash": "9bcf4bc4e43dabdb554628109ed8c50c0bda8ecba227501f5599e1921c59f7b5",
       "rows": [
-        "2016",
-        "2018",
-        "First in Release Order",
-        "Second in Internal Chronology"
+        "1994",
+        "2000",
+        "People",
+        "Third in Release Order"
       ],
       "cols": [
-        "Cruise Ships",
-        "Fantasy Stories",
-        "Oscar Winners",
-        "Star Wars Movies"
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Disney",
+        "Thriller Films"
       ],
       "timestamp": null,
-      "qualityScore": 18.43,
-      "maxSimilarityToPast": 0.4328,
-      "finalScore": 14.9676
+      "qualityScore": 14.19,
+      "maxSimilarityToPast": 0.4923,
+      "similarityPenalty": 3.9384,
+      "movieOverlapPenalty": 25.180664361678847,
+      "yearProximityPenalty": 0.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.8,
+      "finalScore": -15.729064361678848
+    },
+    {
+      "hash": "e7099d55a2222631948a96815ca016d9a5e868df6479cc556d85b8397eda2275",
+      "rows": [
+        "1994",
+        "2013",
+        "Ends with OOD",
+        "Thriller Stories"
+      ],
+      "cols": [
+        "Contemporary Literature",
+        "Japanese Films",
+        "Oscar Winners",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.74,
+      "maxSimilarityToPast": 0.4096,
+      "similarityPenalty": 3.2768,
+      "movieOverlapPenalty": 18.24429604362344,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.781096043623439
+    },
+    {
+      "hash": "66b0acd515c2c5ac6eda2cb0a221db942ded547f6ce02157f4c373e5f3b04de3",
+      "rows": [
+        "1994",
+        "1995",
+        "Classic Films",
+        "World War II"
+      ],
+      "cols": [
+        "Action Stories",
+        "Famous Quotes",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.629999999999999,
+      "maxSimilarityToPast": 0.4169,
+      "similarityPenalty": 3.3352,
+      "movieOverlapPenalty": 13.65878745652956,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -8.163987456529561
+    },
+    {
+      "hash": "a98246a20c6dac16f35ff63290eb5cf1bfe03c39d638cbfaf881e2f447d3b901",
+      "rows": [
+        "1994",
+        "1999",
+        "Classic Films",
+        "Ends with BER"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "People",
+        "Stories about Families",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.97,
+      "maxSimilarityToPast": 0.4098,
+      "similarityPenalty": 3.2784,
+      "movieOverlapPenalty": 16.836359535686928,
+      "yearProximityPenalty": 1,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1,
+      "finalScore": -9.144759535686926
+    },
+    {
+      "hash": "36f3ae418ba773b994e2828074a6ac9cc1058b1ad56abdb9d87d60a824033c7b",
+      "rows": [
+        "1994",
+        "2013",
+        "Classic Films",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Action Stories",
+        "People",
+        "Stories about Families",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.93,
+      "maxSimilarityToPast": 0.4319,
+      "similarityPenalty": 3.4552,
+      "movieOverlapPenalty": 17.738843017117777,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.264043017117777
+    },
+    {
+      "hash": "f9423d611d988b6b49e6b9378c1ea836bd4c520de3811ed885f8a37d5aee4488",
+      "rows": [
+        "1994",
+        "1995",
+        "Classic Films",
+        "Horror Stories"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Famous Quotes",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.05,
+      "maxSimilarityToPast": 0.4786,
+      "similarityPenalty": 3.8288,
+      "movieOverlapPenalty": 17.008289360248334,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -10.587089360248335
+    },
+    {
+      "hash": "305a5e52ce1b8838d818e69e8d5e22fd3e3ffe2027c2a117a53ab7ca002a1e17",
+      "rows": [
+        "1994",
+        "2018",
+        "Prequels",
+        "War Stories"
+      ],
+      "cols": [
+        "Action Stories",
+        "Best Picture Winners",
+        "Disney",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.639999999999999,
+      "maxSimilarityToPast": 0.4929,
+      "similarityPenalty": 3.9432,
+      "movieOverlapPenalty": 22.330015011029502,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.633215011029503
+    },
+    {
+      "hash": "bea34b715823e4b51f1417375002f673c3e1a0f587a46c23c7a8d529480a482a",
+      "rows": [
+        "1994",
+        "2019",
+        "Prequels",
+        "War Stories"
+      ],
+      "cols": [
+        "Action Stories",
+        "Best Picture Winners",
+        "Disney",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.76,
+      "maxSimilarityToPast": 0.6161,
+      "similarityPenalty": 4.9288,
+      "movieOverlapPenalty": 22.602742283756776,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -13.771542283756776
+    },
+    {
+      "hash": "459f63e440df88e32dc9ab2c02902114ced4252ce938bb6b687b3eca3c0260e7",
+      "rows": [
+        "1994",
+        "2002",
+        "Black and White Films",
+        "Sequels"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "People",
+        "Stories about Families",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.06,
+      "maxSimilarityToPast": 0.526,
+      "similarityPenalty": 4.208,
+      "movieOverlapPenalty": 24.532550011877404,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -17.080550011877403
+    },
+    {
+      "hash": "07d3f1f32174541f32abeeb9d487f9b311fea5e514ef82b508e2364353bcb325",
+      "rows": [
+        "1994",
+        "2002",
+        "Ends with OOD",
+        "Thriller Stories"
+      ],
+      "cols": [
+        "Haruki Murakami",
+        "Japanese Films",
+        "Oscar Winners",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.18,
+      "maxSimilarityToPast": 0.4141,
+      "similarityPenalty": 3.3128,
+      "movieOverlapPenalty": 19.101438900766293,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -8.634238900766293
+    },
+    {
+      "hash": "8f155e3f49de88e4cd98967d6c46d4d037053540369673ac1f56817829d87b38",
+      "rows": [
+        "1994",
+        "2002",
+        "Ends with OOD",
+        "Thriller Stories"
+      ],
+      "cols": [
+        "Contemporary Literature",
+        "Japanese Films",
+        "Oscar Winners",
+        "People"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.74,
+      "maxSimilarityToPast": 0.4141,
+      "similarityPenalty": 3.3128,
+      "movieOverlapPenalty": 19.101438900766293,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -9.074238900766295
+    },
+    {
+      "hash": "820c02ba85e68feb2e8d70e86903af598c6eb8419706fe84e391a7f055d06baf",
+      "rows": [
+        "1994",
+        "1995",
+        "Classic Films",
+        "World War II"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Oscar Winners",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.57,
+      "maxSimilarityToPast": 0.5042,
+      "similarityPenalty": 4.0336,
+      "movieOverlapPenalty": 13.866579664321767,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -9.130179664321767
+    },
+    {
+      "hash": "cbe8c930ab58e5f04559447a329885f9e7154583142fe5aa4cafd434155b637d",
+      "rows": [
+        "1994",
+        "2013",
+        "Fictional Animals",
+        "War Stories"
+      ],
+      "cols": [
+        "Action Stories",
+        "Disney",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.88,
+      "maxSimilarityToPast": 0.4913,
+      "similarityPenalty": 3.9304,
+      "movieOverlapPenalty": 16.650649931664418,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -9.701049931664418
+    },
+    {
+      "hash": "4b4889cf44d077cc5dbf0e4c07d1ebfa8532f4045db26f25e543507c88611c04",
+      "rows": [
+        "1994",
+        "1995",
+        "Classic Films",
+        "Horror Stories"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Oscar Winners",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.660000000000002,
+      "maxSimilarityToPast": 0.5094,
+      "similarityPenalty": 4.0752,
+      "movieOverlapPenalty": 17.008289360248334,
+      "yearProximityPenalty": 1.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.8,
+      "finalScore": -11.223489360248333
+    },
+    {
+      "hash": "39f6d93660ffcd2674ea2765859f3d5be083e718d88d0695ef3ebc1005dc0641",
+      "rows": [
+        "1994",
+        "2013",
+        "Black and White Films",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Action Stories",
+        "People",
+        "Stories about Families",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.84,
+      "maxSimilarityToPast": 0.4909,
+      "similarityPenalty": 3.9272,
+      "movieOverlapPenalty": 18.238843017117777,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.326043017117776
+    },
+    {
+      "hash": "fa0bed21f00a510474db9edc32cff7244c92666d3b1d30e562eea9240105b5bc",
+      "rows": [
+        "1994",
+        "2013",
+        "Black and White Films",
+        "Starts with TER"
+      ],
+      "cols": [
+        "People",
+        "Stories about Families",
+        "Things Japanese",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.860000000000001,
+      "maxSimilarityToPast": 0.5308,
+      "similarityPenalty": 4.2464,
+      "movieOverlapPenalty": 18.28874048806788,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.675140488067878
+    },
+    {
+      "hash": "81024021aae3a151fc3f8a315e280502e1aa4033cf0f40df163f2acbc9c16cc7",
+      "rows": [
+        "1994",
+        "2013",
+        "Classic Films",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Action Stories",
+        "Best Picture Winners",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.379999999999999,
+      "maxSimilarityToPast": 0.4873,
+      "similarityPenalty": 3.8984,
+      "movieOverlapPenalty": 18.36106523934,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.879465239340002
+    },
+    {
+      "hash": "afba195304ed1845afcd3b014be0bec1e895bcf41b26a6cc086c22956348bc62",
+      "rows": [
+        "1994",
+        "2002",
+        "Ends with TER",
+        "Oscar Winners"
+      ],
+      "cols": [
+        "Crime Stories",
+        "Martial Arts Stories",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.64,
+      "maxSimilarityToPast": 0.5079,
+      "similarityPenalty": 4.0632,
+      "movieOverlapPenalty": 20.145373523648285,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -11.968573523648285
+    },
+    {
+      "hash": "f172abebbae7b6e4fa58b314dba5351be1f68d0e3531866c26952384410a6480",
+      "rows": [
+        "1994",
+        "2013",
+        "Classic Films",
+        "Ends with TER"
+      ],
+      "cols": [
+        "Action Stories",
+        "Best Picture Winners",
+        "People",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.379999999999999,
+      "maxSimilarityToPast": 0.4908,
+      "similarityPenalty": 3.9264,
+      "movieOverlapPenalty": 18.657361535636298,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.2037615356363
+    },
+    {
+      "hash": "22d730522f337ac2e58cfdee71b682a70722e3e4f432205fe06e740e272d1d8b",
+      "rows": [
+        "1994",
+        "2002",
+        "Ends with TER",
+        "Oscar Winners"
+      ],
+      "cols": [
+        "Martial Arts Stories",
+        "People",
+        "Things Japanese",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.060000000000002,
+      "maxSimilarityToPast": 0.5094,
+      "similarityPenalty": 4.0752,
+      "movieOverlapPenalty": 20.064401863729252,
+      "yearProximityPenalty": 0.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.4,
+      "finalScore": -12.479601863729249
     }
   ],
   "message": "Puzzle saved successfully!"

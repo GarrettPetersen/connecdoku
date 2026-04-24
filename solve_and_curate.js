@@ -116,6 +116,86 @@ function scorePuzzle(allCats, categoryScores) {
   return s;
 }
 
+function computeCategoryMovieOverlap(categoriesJson) {
+  const movies = new Set(categoriesJson["Movies"] || []);
+  const overlaps = Object.create(null);
+  if (!movies.size) return overlaps;
+
+  for (const [cat, words] of Object.entries(categoriesJson)) {
+    if (!Array.isArray(words) || words.length === 0) {
+      overlaps[cat] = 0;
+      continue;
+    }
+    let intersection = 0;
+    for (const w of words) {
+      if (movies.has(w)) intersection++;
+    }
+    // Explicit overlap ratio of this category with Movies.
+    overlaps[cat] = intersection / words.length;
+  }
+  return overlaps;
+}
+
+function parseYearCategory(cat) {
+  if (!/^\d{4}$/.test(cat)) return null;
+  return parseInt(cat, 10);
+}
+
+function parseDecadeCategory(cat) {
+  const m = cat.match(/^(\d{3}0)s$/);
+  if (!m) return null;
+  return parseInt(m[1], 10);
+}
+
+function parseCenturyCategory(cat) {
+  const m = cat.match(/^(\d+)(st|nd|rd|th) Century$/);
+  if (!m) return null;
+  return parseInt(m[1], 10);
+}
+
+function computeTemporalPenalty(allCats, params) {
+  let yearProximityPenalty = 0;
+  let adjacentDecadePenalty = 0;
+  let adjacentCenturyPenalty = 0;
+
+  const years = allCats.map(parseYearCategory).filter((v) => Number.isFinite(v));
+  const decades = allCats.map(parseDecadeCategory).filter((v) => Number.isFinite(v));
+  const centuries = allCats.map(parseCenturyCategory).filter((v) => Number.isFinite(v));
+
+  for (let i = 0; i < years.length; i++) {
+    for (let j = i + 1; j < years.length; j++) {
+      const d = Math.abs(years[i] - years[j]);
+      if (d < 10) {
+        // Descending penalty: diff 0 => full weight, diff 9 => 10% weight.
+        yearProximityPenalty += params.yearProximityPenaltyWeight * ((10 - d) / 10);
+      }
+    }
+  }
+
+  for (let i = 0; i < decades.length; i++) {
+    for (let j = i + 1; j < decades.length; j++) {
+      if (Math.abs(decades[i] - decades[j]) === 10) {
+        adjacentDecadePenalty += params.adjacentDecadePenaltyWeight;
+      }
+    }
+  }
+
+  for (let i = 0; i < centuries.length; i++) {
+    for (let j = i + 1; j < centuries.length; j++) {
+      if (Math.abs(centuries[i] - centuries[j]) === 1) {
+        adjacentCenturyPenalty += params.adjacentCenturyPenaltyWeight;
+      }
+    }
+  }
+
+  return {
+    yearProximityPenalty,
+    adjacentDecadePenalty,
+    adjacentCenturyPenalty,
+    temporalPenalty: yearProximityPenalty + adjacentDecadePenalty + adjacentCenturyPenalty,
+  };
+}
+
 function countOverlapWithSet(allCats, usedSet) {
   let o = 0;
   for (const c of allCats) if (usedSet.has(c)) o++;
@@ -184,6 +264,10 @@ async function getParamsInteractive() {
     simPenaltyWeight: getEnvFloat("SOLVE_CURATE_SIM_PENALTY_WEIGHT", 8),
     simCutoff: getEnvFloat("SOLVE_CURATE_SIM_CUTOFF", 0.625),
     simEvalTopN: getEnvInt("SOLVE_CURATE_SIM_EVAL_TOPN", 100),
+    movieOverlapPenaltyWeight: getEnvFloat("SOLVE_CURATE_MOVIE_OVERLAP_PENALTY_WEIGHT", 4),
+    yearProximityPenaltyWeight: getEnvFloat("SOLVE_CURATE_YEAR_PROXIMITY_PENALTY_WEIGHT", 2),
+    adjacentDecadePenaltyWeight: getEnvFloat("SOLVE_CURATE_ADJ_DECADE_PENALTY_WEIGHT", 0.6),
+    adjacentCenturyPenaltyWeight: getEnvFloat("SOLVE_CURATE_ADJ_CENTURY_PENALTY_WEIGHT", 0.35),
   };
 
   // If explicitly non-interactive, skip prompts.
@@ -237,6 +321,22 @@ async function getParamsInteractive() {
     message: "Only compute similarity for top-N candidates by base score (speeds things up)",
     initial: String(params.simEvalTopN),
   });
+  const movieOverlapPenaltyRaw = await prompts.input({
+    message: "Movie-overlap penalty weight (per-category overlap with Movies)",
+    initial: String(params.movieOverlapPenaltyWeight),
+  });
+  const yearProximityPenaltyRaw = await prompts.input({
+    message: "Year proximity penalty weight (pairs within 10 years)",
+    initial: String(params.yearProximityPenaltyWeight),
+  });
+  const adjDecadePenaltyRaw = await prompts.input({
+    message: "Adjacent decade penalty weight",
+    initial: String(params.adjacentDecadePenaltyWeight),
+  });
+  const adjCenturyPenaltyRaw = await prompts.input({
+    message: "Adjacent century penalty weight",
+    initial: String(params.adjacentCenturyPenaltyWeight),
+  });
 
   const parseOr = (raw, dflt, parseFn) => {
     const t = String(raw).trim();
@@ -256,6 +356,22 @@ async function getParamsInteractive() {
   params.simPenaltyWeight = Math.max(0, parseOr(simPenaltyRaw, params.simPenaltyWeight, (s) => parseFloat(s)));
   params.simCutoff = Math.max(0, Math.min(1, parseOr(simCutoffRaw, params.simCutoff, (s) => parseFloat(s))));
   params.simEvalTopN = Math.max(1, parseOr(simTopNRaw, params.simEvalTopN, (s) => parseInt(s, 10)));
+  params.movieOverlapPenaltyWeight = Math.max(
+    0,
+    parseOr(movieOverlapPenaltyRaw, params.movieOverlapPenaltyWeight, (s) => parseFloat(s))
+  );
+  params.yearProximityPenaltyWeight = Math.max(
+    0,
+    parseOr(yearProximityPenaltyRaw, params.yearProximityPenaltyWeight, (s) => parseFloat(s))
+  );
+  params.adjacentDecadePenaltyWeight = Math.max(
+    0,
+    parseOr(adjDecadePenaltyRaw, params.adjacentDecadePenaltyWeight, (s) => parseFloat(s))
+  );
+  params.adjacentCenturyPenaltyWeight = Math.max(
+    0,
+    parseOr(adjCenturyPenaltyRaw, params.adjacentCenturyPenaltyWeight, (s) => parseFloat(s))
+  );
 
   return params;
 }
@@ -568,6 +684,8 @@ async function mainSolveAndCurate() {
   console.log(`- Total excluded: ${excluded.size}`);
 
   const categoryScores = readJsonOr(CAT_SCORES_F, {});
+  const categoriesJson = readJsonOr(CATS_F, {});
+  const categoryMovieOverlap = computeCategoryMovieOverlap(categoriesJson);
   const candidates = await solveCandidatesInMemory({
     excludedSet: excluded,
     candidatePoolSize: params.candidatePoolSize,
@@ -599,15 +717,32 @@ async function mainSolveAndCurate() {
   const scoredCandidates = [];
   let rejectedBySim = 0;
   for (const c of simEvalCandidates) {
+    const allCats = [...c.rows, ...c.cols];
     let maxSim = 0;
     for (const past of pastPuzzles) {
       const s = puzzleCategorySimilarity(c, past, categorySimFn);
       if (s > maxSim) maxSim = s;
       if (maxSim >= 1) break;
     }
+
+    let movieOverlapPenalty = 0;
+    for (const cat of allCats) {
+      movieOverlapPenalty += params.movieOverlapPenaltyWeight * Number(categoryMovieOverlap[cat] || 0);
+    }
+
+    const temporalParts = computeTemporalPenalty(allCats, params);
     const maxSimilarityToPast = Math.round(maxSim * 10000) / 10000;
-    const finalScore = (c.qualityScore || 0) - params.simPenaltyWeight * maxSimilarityToPast;
-    const out = { ...c, maxSimilarityToPast, finalScore };
+    const similarityPenalty = params.simPenaltyWeight * maxSimilarityToPast;
+    const finalScore =
+      (c.qualityScore || 0) - similarityPenalty - movieOverlapPenalty - (temporalParts.temporalPenalty || 0);
+    const out = {
+      ...c,
+      maxSimilarityToPast,
+      similarityPenalty,
+      movieOverlapPenalty,
+      ...temporalParts,
+      finalScore,
+    };
     if (params.simCutoff < 1 && maxSimilarityToPast >= params.simCutoff) {
       rejectedBySim++;
       continue;
@@ -798,5 +933,4 @@ if (isMainThread) {
     process.exit(1);
   });
 }
-
 

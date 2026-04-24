@@ -11958,5 +11958,165 @@
         "The Empire Strikes Back"
       ]
     ]
+  },
+  {
+    "rows": [
+      "15th Century",
+      "Classic Literature",
+      "Foods",
+      "Buildings"
+    ],
+    "cols": [
+      "Ming Dynasty",
+      "Shakespeare",
+      "Things Indian",
+      "Things Spanish"
+    ],
+    "words": [
+      [
+        "Zheng He",
+        "Henry V",
+        "Guru Nanak",
+        "Christopher Columbus"
+      ],
+      [
+        "Journey to the West",
+        "A Midsummer Night's Dream",
+        "The Mahabharata",
+        "Don Quixote"
+      ],
+      [
+        "Peking Duck",
+        "Caesar",
+        "Curry",
+        "Paella"
+      ],
+      [
+        "Forbidden City",
+        "Globe Theatre",
+        "Taj Mahal",
+        "Alhambra"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "2005",
+      "2010",
+      "First in Release Order",
+      "Second in Internal Chronology"
+    ],
+    "cols": [
+      "Comedy Stories",
+      "Liu Cixin",
+      "Period Stories",
+      "Starts with HAR"
+    ],
+    "words": [
+      [
+        "Chicken Little",
+        "Ball Lightning",
+        "Kingdom of Heaven",
+        "Harry Potter and the Goblet of Fire"
+      ],
+      [
+        "Hot Tub Time Machine",
+        "Death's End",
+        "The King's Speech",
+        "Harry Potter and the Deathly Hallows: Part 1"
+      ],
+      [
+        "Back to the Future",
+        "The Three-Body Problem",
+        "A Fistful of Dollars",
+        "Harry Potter and the Sorcerer's Stone"
+      ],
+      [
+        "Back to the Future Part II",
+        "The Dark Forest",
+        "For a Few Dollars More",
+        "Harry Potter and the Chamber of Secrets"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Black Things",
+      "Black and White",
+      "National Leaders",
+      "X-Men Characters"
+    ],
+    "cols": [
+      "Ends with MAN",
+      "Mammals",
+      "Supervillains",
+      "Things That Fly"
+    ],
+    "words": [
+      [
+        "Batman",
+        "Panther",
+        "Venom",
+        "SR-71 Blackbird"
+      ],
+      [
+        "The Third Man",
+        "Panda",
+        "Penguin",
+        "Magpie"
+      ],
+      [
+        "Truman",
+        "Garfield",
+        "Ozymandias",
+        "Hindenburg"
+      ],
+      [
+        "Iceman",
+        "Wolverine",
+        "Magneto",
+        "Angel"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Archipelagos",
+      "Landlocked Countries",
+      "People",
+      "WWII Allied Powers"
+    ],
+    "cols": [
+      "Cold War",
+      "Countries in Asia",
+      "Ends with AND",
+      "Locations in South America"
+    ],
+    "words": [
+      [
+        "Bikini",
+        "Indonesia",
+        "Shetland",
+        "Galapagos"
+      ],
+      [
+        "Hungary",
+        "Mongolia",
+        "Switzerland",
+        "Bolivia"
+      ],
+      [
+        "Reagan",
+        "Jordan",
+        "Archduke Franz Ferdinand",
+        "Robinson Crusoe"
+      ],
+      [
+        "United States",
+        "China",
+        "New Zealand",
+        "Brazil"
+      ]
+    ]
   }
 ]
