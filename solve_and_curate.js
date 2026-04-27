@@ -263,7 +263,9 @@ async function getParamsInteractive() {
     minScore: getEnvFloat("SOLVE_CURATE_MIN_SCORE", -Infinity),
     simPenaltyWeight: getEnvFloat("SOLVE_CURATE_SIM_PENALTY_WEIGHT", 8),
     simCutoff: getEnvFloat("SOLVE_CURATE_SIM_CUTOFF", 0.625),
-    simEvalTopN: getEnvInt("SOLVE_CURATE_SIM_EVAL_TOPN", 100),
+    // 0 or unset default: score every candidate for finalScore (sort/curator use final only).
+    // Set SOLVE_CURATE_SIM_EVAL_TOPN to a positive N to only score the top N by quality first (faster).
+    simEvalTopN: getEnvInt("SOLVE_CURATE_SIM_EVAL_TOPN", 0),
     movieOverlapPenaltyWeight: getEnvFloat("SOLVE_CURATE_MOVIE_OVERLAP_PENALTY_WEIGHT", 4),
     yearProximityPenaltyWeight: getEnvFloat("SOLVE_CURATE_YEAR_PROXIMITY_PENALTY_WEIGHT", 2),
     adjacentDecadePenaltyWeight: getEnvFloat("SOLVE_CURATE_ADJ_DECADE_PENALTY_WEIGHT", 0.6),
@@ -318,7 +320,7 @@ async function getParamsInteractive() {
     initial: String(params.simCutoff),
   });
   const simTopNRaw = await prompts.input({
-    message: "Only compute similarity for top-N candidates by base score (speeds things up)",
+    message: "Only compute similarity for top-N by quality (0 = all candidates; slower but full final ranking)",
     initial: String(params.simEvalTopN),
   });
   const movieOverlapPenaltyRaw = await prompts.input({
@@ -355,7 +357,7 @@ async function getParamsInteractive() {
   params.minScore = minScoreRaw.trim() === "" ? -Infinity : parseOr(minScoreRaw, params.minScore, (s) => parseFloat(s));
   params.simPenaltyWeight = Math.max(0, parseOr(simPenaltyRaw, params.simPenaltyWeight, (s) => parseFloat(s)));
   params.simCutoff = Math.max(0, Math.min(1, parseOr(simCutoffRaw, params.simCutoff, (s) => parseFloat(s))));
-  params.simEvalTopN = Math.max(1, parseOr(simTopNRaw, params.simEvalTopN, (s) => parseInt(s, 10)));
+  params.simEvalTopN = Math.max(0, parseOr(simTopNRaw, params.simEvalTopN, (s) => parseInt(s, 10)));
   params.movieOverlapPenaltyWeight = Math.max(
     0,
     parseOr(movieOverlapPenaltyRaw, params.movieOverlapPenaltyWeight, (s) => parseFloat(s))
@@ -704,19 +706,23 @@ async function mainSolveAndCurate() {
   const categorySimFn = simDb ? simDb.categorySimilarity : (a, b) => (a === b ? 1 : 0);
   const pastPuzzles = dailyDb.filter((p) => Array.isArray(p?.rows) && Array.isArray(p?.cols));
 
-  // Stage 1: cheap prefilter by base score (quality only).
-  const baseSorted = [...candidates].sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
-  const simEvalTopN = Math.max(1, Math.min(params.simEvalTopN || 100, baseSorted.length));
-  const simEvalCandidates = baseSorted.slice(0, simEvalTopN);
-  if (simEvalTopN < baseSorted.length) {
-    console.log(`Similarity scoring: evaluating top ${simEvalTopN}/${baseSorted.length} candidates by base score (quality).`);
+  // Score candidates for finalScore (quality − penalties). Default: all candidates (simEvalTopN 0).
+  const byQuality = [...candidates].sort((a, b) => (b.qualityScore || 0) - (a.qualityScore || 0));
+  const cap = params.simEvalTopN;
+  const toScore =
+    !Number.isFinite(cap) || cap <= 0 || cap >= byQuality.length ? byQuality : byQuality.slice(0, cap);
+  if (toScore.length < candidates.length) {
+    console.log(
+      `Similarity scoring: evaluating top ${toScore.length}/${candidates.length} by quality ` +
+        `(set SOLVE_CURATE_SIM_EVAL_TOPN=0 to score all for final-only ranking).`
+    );
   } else {
-    console.log(`Similarity scoring: evaluating all ${baseSorted.length} candidates.`);
+    console.log(`Similarity scoring: evaluating all ${candidates.length} candidates for final score.`);
   }
 
   const scoredCandidates = [];
   let rejectedBySim = 0;
-  for (const c of simEvalCandidates) {
+  for (const c of toScore) {
     const allCats = [...c.rows, ...c.cols];
     let maxSim = 0;
     for (const past of pastPuzzles) {
@@ -750,6 +756,8 @@ async function mainSolveAndCurate() {
     scoredCandidates.push(out);
   }
 
+  scoredCandidates.sort((a, b) => (b.finalScore ?? 0) - (a.finalScore ?? 0));
+
   if (!candidates.length) {
     writeAiCuratorStateWithPuzzles([], "Solve-and-curate: no candidates found. Try increasing maxSeconds/poolSize, lowering minScore, or reducing exclusions.");
   } else {
@@ -757,7 +765,7 @@ async function mainSolveAndCurate() {
     const msg =
       `Solve-and-curate complete. Found ${candidates.length} candidates; ` +
       (rejectedBySim ? `rejected ${rejectedBySim} for similarity>=${params.simCutoff}; ` : "") +
-      `showing ${topDiversified.length} diversified options (highest score first, then minimal overlap). ` +
+      `showing ${topDiversified.length} diversified options (highest final score first, then minimal category overlap). ` +
       `Use: node ai_curator.js select <index> to review.`;
     writeAiCuratorStateWithPuzzles(topDiversified, msg);
   }

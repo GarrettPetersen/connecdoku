@@ -32,6 +32,13 @@ function scoreEmoji(score) {
     return '🔴';
 }
 
+/** Curator list / review: one score = final (penalized), fallback to quality for legacy state. */
+function curatorDisplayScore(p) {
+    if (typeof p.finalScore === "number") return p.finalScore;
+    if (typeof p.qualityScore === "number") return p.qualityScore;
+    return null;
+}
+
 function computePuzzleHash(rows, cols) {
     const s = rows.join("|") + cols.join("|");
     return crypto.createHash("sha256").update(s).digest("hex");
@@ -180,21 +187,23 @@ function renderOutput() {
     } else if (state.phase === "PUZZLE_LIST") {
         output += `## Select a Puzzle\n\n`;
         state.puzzles.forEach((p, i) => {
-            const qs = p.qualityScore ? p.qualityScore.toFixed(2) : "N/A";
-            const fs = typeof p.finalScore === "number" ? p.finalScore.toFixed(2) : null;
+            const sc = curatorDisplayScore(p);
+            const scStr = sc !== null ? sc.toFixed(2) : "N/A";
             const ms = typeof p.maxSimilarityToPast === "number" ? p.maxSimilarityToPast.toFixed(3) : null;
-            const extras = [
-              fs ? `Final: ${fs}` : null,
-              ms ? `MaxSimPast: ${ms}` : null,
-            ].filter(Boolean).join(" | ");
-            output += `${i}. ${scoreEmoji(p.qualityScore)} Quality: ${qs}${extras ? ` | ${extras}` : ""} | Categories: ${[...p.rows, ...p.cols].join(", ")}\n`;
+            const extras = [ms ? `MaxSimPast: ${ms}` : null].filter(Boolean).join(" | ");
+            const emojiScore = sc !== null ? sc : 0;
+            output += `${i}. ${scoreEmoji(emojiScore)} Score: ${scStr}${extras ? ` | ${extras}` : ""} | Categories: ${[...p.rows, ...p.cols].join(", ")}\n`;
         });
         output += `\n**Command:** \`node ai_curator.js select <index>\` or \`node ai_curator.js select none\``;
     } else if (state.phase === "PUZZLE_REVIEW") {
         const p = state.currentPuzzle;
         output += `## Review Puzzle\n\n`;
-        output += `**Quality Score:** ${p.qualityScore.toFixed(2)} ${scoreEmoji(p.qualityScore)}\n`;
-        if (typeof p.finalScore === "number") output += `**Final Score:** ${p.finalScore.toFixed(2)}\n`;
+        {
+            const sc = curatorDisplayScore(p);
+            const scStr = sc !== null ? sc.toFixed(2) : "N/A";
+            const emojiScore = sc !== null ? sc : 0;
+            output += `**Score:** ${scStr} ${scoreEmoji(emojiScore)}\n`;
+        }
         if (typeof p.maxSimilarityToPast === "number") output += `**Max similarity to past:** ${p.maxSimilarityToPast.toFixed(3)}\n`;
         output += `**Rows:**\n${p.rows.map((r, i) => `  ${i + 1}. ${r}`).join("\n")}\n`;
         output += `**Cols:**\n${p.cols.map((c, i) => `  ${i + 1}. ${c}`).join("\n")}\n\n`;
@@ -344,21 +353,29 @@ async function handleAction(action, value) {
                 const options = state.viableGrid[state.currentRow][state.currentCol].filter(w => !state.usedWords.includes(w));
                 let selectedWord = null;
 
-                // Single-option cell: allow simple format "0B".
-                const simpleMatch = value.match(/^(\d+)([A-Za-z])$/);
+                // Single-option cell: exact title also allowed (avoids "01" vs index 1 ambiguity for digit-leading titles).
+                if (options.length === 1 && value === options[0]) {
+                    selectedWord = options[0];
+                }
+
+                // Single-option cell: allow simple format "0B" (second char may be digit if the title starts with a digit).
+                const simpleMatch = value.match(/^(\d+)([A-Za-z0-9])$/);
                 // Multi-option cell: require best + runner-up format "2L/5T".
-                const dualMatch = value.match(/^(\d+)([A-Za-z])\/(\d+)([A-Za-z])$/);
+                const dualMatch = value.match(/^(\d+)([A-Za-z0-9])\/(\d+)([A-Za-z0-9])$/);
                 if (options.length <= 1) {
-                    if (simpleMatch) {
+                    if (selectedWord) {
+                        // already chosen via exact match
+                    } else if (simpleMatch) {
                         const idx = parseInt(simpleMatch[1], 10);
                         const providedLetter = simpleMatch[2].toUpperCase();
                         if (idx >= 0 && idx < options.length) {
                             const word = options[idx];
-                            const expectedLetter = word.trim().charAt(0).toUpperCase();
-                            if (providedLetter === expectedLetter) {
+                            const expectedCh = word.trim().charAt(0).toUpperCase();
+                            const gotCh = providedLetter.toUpperCase();
+                            if (gotCh === expectedCh) {
                                 selectedWord = word;
                             } else {
-                                state.message = `⚠️ Letter mismatch: expected ${expectedLetter} for option ${idx} (${word}), got ${providedLetter}.`;
+                                state.message = `⚠️ Letter mismatch: expected ${expectedCh} for option ${idx} (${word}), got ${gotCh}.`;
                             }
                         } else {
                             state.message = `Invalid index: ${idx} (valid range: 0-${options.length - 1})`;
@@ -384,10 +401,10 @@ async function handleAction(action, value) {
                         const altWord = options[altIdx];
                         const expectedBest = bestWord.trim().charAt(0).toUpperCase();
                         const expectedAlt = altWord.trim().charAt(0).toUpperCase();
-                        if (bestLetter !== expectedBest) {
-                            state.message = `⚠️ Best-choice letter mismatch: expected ${expectedBest} for option ${bestIdx} (${bestWord}), got ${bestLetter}.`;
-                        } else if (altLetter !== expectedAlt) {
-                            state.message = `⚠️ Runner-up letter mismatch: expected ${expectedAlt} for option ${altIdx} (${altWord}), got ${altLetter}.`;
+                        if (bestLetter.toUpperCase() !== expectedBest) {
+                            state.message = `⚠️ Best-choice letter mismatch: expected ${expectedBest} for option ${bestIdx} (${bestWord}), got ${bestLetter.toUpperCase()}.`;
+                        } else if (altLetter.toUpperCase() !== expectedAlt) {
+                            state.message = `⚠️ Runner-up letter mismatch: expected ${expectedAlt} for option ${altIdx} (${altWord}), got ${altLetter.toUpperCase()}.`;
                         } else {
                             selectedWord = bestWord;
                         }
