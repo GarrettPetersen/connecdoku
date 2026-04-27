@@ -5,914 +5,1687 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "354c5f3de2be701b6142796b5379997828610cd7b1b0a4f1e8509f8e243d2b2f",
+    "hash": "7ddfb8f32e10259540a1008816861724f43e3486a4dd0c14a04a724e4d134b1d",
     "rows": [
-      "Archipelagos",
-      "Landlocked Countries",
-      "People",
-      "WWII Allied Powers"
+      "1940s",
+      "5th Century BC",
+      "Napoleonic Wars",
+      "The American Revolution"
     ],
     "cols": [
-      "Cold War",
-      "Countries in Asia",
-      "Ends with AND",
-      "Locations in South America"
+      "Famous Quotes",
+      "Military Conflicts",
+      "Military Leaders",
+      "Movies"
     ],
     "timestamp": null,
-    "qualityScore": 10.610000000000001,
-    "maxSimilarityToPast": 0.473,
-    "similarityPenalty": 3.784,
-    "movieOverlapPenalty": 0.9418733201480805,
+    "qualityScore": 11.829999999999998,
+    "maxSimilarityToPast": 0.4931,
+    "similarityPenalty": 3.9448,
+    "movieOverlapPenalty": 5.420074696545285,
     "yearProximityPenalty": 0,
     "adjacentDecadePenalty": 0,
     "adjacentCenturyPenalty": 0,
     "temporalPenalty": 0,
-    "finalScore": 5.884126679851921
+    "finalScore": 2.4651253034547134
   },
   "viableGrid": [
     [
       [
-        "Bikini"
+        "Blood, toil, tears and sweat",
+        "December 7th, 1941",
+        "Here's looking at you, kid",
+        "We shall never surrender",
+        "We will fight them on the beaches"
       ],
       [
-        "British Malaya",
-        "Indonesia",
-        "Maldives",
-        "Netherlands East Indies",
-        "Portuguese Timor"
+        "Battle of Anzio",
+        "Battle of Guadalcanal",
+        "Battle of Iwo Jima",
+        "Battle of Leyte Gulf",
+        "Battle of Midway",
+        "Battle of Okinawa",
+        "Battle of Peleliu",
+        "Battle of Saipan",
+        "Battle of Salerno",
+        "Battle of Tarawa",
+        "Battle of the Coral Sea",
+        "D-Day",
+        "Invasion of Sicily",
+        "Kerch-Eltigen Operation",
+        "Nuclear Bombing of Hiroshima",
+        "Nuclear Bombing of Nagasaki",
+        "Operation Overlord",
+        "The Battle of Stalingrad",
+        "World War II"
       ],
       [
-        "Aland",
-        "Shetland"
+        "Heinz Guderian",
+        "Roosevelt"
       ],
       [
-        "Falkland Islands",
-        "Galapagos"
+        "Bambi",
+        "Bridge on the River Kwai",
+        "Brief Encounter",
+        "Casablanca",
+        "Citizen Kane",
+        "Dumbo",
+        "Fantasia",
+        "It's a Wonderful Life",
+        "Joker",
+        "Kind Hearts and Coronets",
+        "Miracle on 34th Street",
+        "Oppenheimer",
+        "Pinocchio",
+        "The Big Sleep",
+        "The Grapes of Wrath",
+        "The Maltese Falcon",
+        "The Red Shoes",
+        "The Third Man"
       ]
     ],
     [
       [
-        "Hungary"
+        "Know thyself",
+        "The unexamined life is not worth living"
       ],
       [
-        "Armenia",
-        "Azerbaijan",
-        "Bhutan",
-        "Kazakhstan",
-        "Kyrgyzstan",
-        "Laos",
-        "Mongolia",
-        "Nepal",
-        "Tajikistan",
-        "Turkmenistan",
-        "Uzbekistan"
+        "Battle of Salamis",
+        "Thermopylae"
       ],
       [
-        "Switzerland"
+        "Leonidas",
+        "Sun Tzu",
+        "Xerxes"
       ],
       [
-        "Bolivia",
-        "Paraguay"
+        "Oedipus Rex"
       ]
     ],
     [
       [
-        "Berlin",
-        "Bush",
-        "Davy Crockett",
-        "Eisenhower",
-        "Joe McCarthy",
-        "Malenkov",
-        "Nimitz",
-        "Reagan",
-        "Roosevelt",
-        "Truman",
+        "La Garde meurt, elle ne se rend pas!",
+        "Merde!"
+      ],
+      [
+        "Battle of Trafalgar",
+        "The Hundred Days",
+        "The Napoleonic Wars"
+      ],
+      [
+        "Jean Bernadotte",
+        "Michel Ney",
+        "Napoleon Bonaparte",
+        "Von Blucher",
+        "Wellington"
+      ],
+      [
+        "Waterloo"
+      ]
+    ],
+    [
+      [
+        "Give me liberty or give me death"
+      ],
+      [
+        "The American Revolution"
+      ],
+      [
+        "Lafayette",
         "Washington"
       ],
       [
-        "Jordan"
-      ],
-      [
-        "Archduke Franz Ferdinand",
-        "Cleveland"
-      ],
-      [
-        "Robinson Crusoe"
-      ]
-    ],
-    [
-      [
-        "United States"
-      ],
-      [
-        "China",
-        "India"
-      ],
-      [
-        "New Zealand"
-      ],
-      [
-        "Brazil"
+        "The Patriot"
       ]
     ]
   ],
   "chosen": [
     [
-      "Bikini",
-      "Indonesia",
-      "Shetland",
-      "Galapagos"
+      "Here's looking at you, kid",
+      "D-Day",
+      "Roosevelt",
+      "Casablanca"
     ],
     [
-      "Hungary",
-      "Mongolia",
-      "Switzerland",
-      "Bolivia"
+      "The unexamined life is not worth living",
+      "Thermopylae",
+      "Leonidas",
+      "Oedipus Rex"
     ],
     [
-      "Reagan",
-      "Jordan",
-      "Archduke Franz Ferdinand",
-      "Robinson Crusoe"
+      "La Garde meurt, elle ne se rend pas!",
+      "Battle of Trafalgar",
+      "Napoleon Bonaparte",
+      "Waterloo"
     ],
     [
-      "United States",
-      "China",
-      "New Zealand",
-      "Brazil"
+      "Give me liberty or give me death",
+      "The American Revolution",
+      "Washington",
+      "The Patriot"
     ]
   ],
   "usedWords": [
-    "Bikini",
-    "Indonesia",
-    "Shetland",
-    "Galapagos",
-    "Hungary",
-    "Mongolia",
-    "Switzerland",
-    "Bolivia",
-    "Reagan",
-    "Jordan",
-    "Archduke Franz Ferdinand",
-    "Robinson Crusoe",
-    "United States",
-    "China",
-    "New Zealand",
-    "Brazil"
+    "Here's looking at you, kid",
+    "D-Day",
+    "Roosevelt",
+    "Casablanca",
+    "The unexamined life is not worth living",
+    "Thermopylae",
+    "Leonidas",
+    "Oedipus Rex",
+    "La Garde meurt, elle ne se rend pas!",
+    "Battle of Trafalgar",
+    "Napoleon Bonaparte",
+    "Waterloo",
+    "Give me liberty or give me death",
+    "The American Revolution",
+    "Washington",
+    "The Patriot"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "354c5f3de2be701b6142796b5379997828610cd7b1b0a4f1e8509f8e243d2b2f",
+      "hash": "7ddfb8f32e10259540a1008816861724f43e3486a4dd0c14a04a724e4d134b1d",
       "rows": [
-        "Archipelagos",
-        "Landlocked Countries",
-        "People",
-        "WWII Allied Powers"
+        "1940s",
+        "5th Century BC",
+        "Napoleonic Wars",
+        "The American Revolution"
       ],
       "cols": [
-        "Cold War",
-        "Countries in Asia",
-        "Ends with AND",
-        "Locations in South America"
+        "Famous Quotes",
+        "Military Conflicts",
+        "Military Leaders",
+        "Movies"
       ],
       "timestamp": null,
-      "qualityScore": 10.610000000000001,
-      "maxSimilarityToPast": 0.473,
-      "similarityPenalty": 3.784,
-      "movieOverlapPenalty": 0.9418733201480805,
+      "qualityScore": 11.829999999999998,
+      "maxSimilarityToPast": 0.4931,
+      "similarityPenalty": 3.9448,
+      "movieOverlapPenalty": 5.420074696545285,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 5.884126679851921
+      "finalScore": 2.4651253034547134
     },
     {
-      "hash": "f4b56341449814ed0fd3a6eb42c0f8029f1f75a78b3fea8c5a7f7a2a34327dc4",
+      "hash": "e422bbf1b3e0c20d82e70bc236730d2ae55af96e76f4bf58261d38da7409a1e8",
       "rows": [
-        "1994",
-        "2002",
-        "Black and White Films",
-        "Stories Where the Mom Dies"
+        "1940s",
+        "1970s",
+        "Action Stories",
+        "Royalty"
       ],
       "cols": [
-        "Action Stories",
-        "Oscar Winners",
-        "Stories about Families",
-        "Things Japanese"
+        "Animal Terms",
+        "Blind People",
+        "Ends with NCE",
+        "War Stories"
       ],
       "timestamp": null,
-      "qualityScore": 13.200000000000001,
-      "maxSimilarityToPast": 0.4192,
-      "similarityPenalty": 3.3536,
-      "movieOverlapPenalty": 25.4984126984127,
-      "yearProximityPenalty": 0.4,
+      "qualityScore": 7.3100000000000005,
+      "maxSimilarityToPast": 0.3434,
+      "similarityPenalty": 2.7472,
+      "movieOverlapPenalty": 10.002605528849378,
+      "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.4,
-      "finalScore": -16.0520126984127
+      "temporalPenalty": 0,
+      "finalScore": -5.4398055288493765
     },
     {
-      "hash": "7d4b92b75ea05c06a9328d8ee978b8b41f105a8fb1e78fabf12b203e8e692dac",
+      "hash": "42bd358adf0f4074528985e2040698c0d1f5d87daf017146a53edbe2068d550b",
       "rows": [
+        "1940s",
         "1994",
-        "2012",
-        "People",
+        "Red Things",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Birds",
+        "Stories about Families",
+        "Things Japanese",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.72,
+      "maxSimilarityToPast": 0.3986,
+      "similarityPenalty": 3.1888,
+      "movieOverlapPenalty": 11.971831092883725,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.440631092883725
+    },
+    {
+      "hash": "5a81e774ac8ed350e8278440b74e7b68aa399ae87adcbe2522a11cb367c44b45",
+      "rows": [
+        "1940s",
+        "1980",
+        "Mentioned in We Didn't Start the Fire",
         "Third in Internal Chronology"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Christmas Stories",
-        "Crime Stories",
-        "Disney"
+        "Adventure Stories",
+        "Ends with ION",
+        "Oscar Winners",
+        "Sci-fi Stories"
       ],
       "timestamp": null,
-      "qualityScore": 14.27,
-      "maxSimilarityToPast": 0.4882,
-      "similarityPenalty": 3.9056,
-      "movieOverlapPenalty": 24.5323127133272,
+      "qualityScore": 7.999999999999999,
+      "maxSimilarityToPast": 0.5331,
+      "similarityPenalty": 4.2648,
+      "movieOverlapPenalty": 17.106800522005226,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -14.167912713327201
+      "finalScore": -13.371600522005227
     },
     {
-      "hash": "faa3d7c3b63abba7948a47aa5468998bcd2ef2635226627dbdc93ee9441b28b3",
+      "hash": "66bac322b0801224492e8785f5bab9e5f87b532024f73f4fee9d2c4899cbdc47",
       "rows": [
-        "1994",
-        "2013",
-        "Ends with OOD",
-        "Thriller Stories"
+        "1940s",
+        "1980s",
+        "2D Animated Films",
+        "Sci-fi Stories"
       ],
       "cols": [
-        "Haruki Murakami",
-        "Japanese Films",
-        "Oscar Winners",
-        "People"
+        "Starts with SPI",
+        "Stories Where the Mom Dies",
+        "Stories about Families",
+        "Trios"
       ],
       "timestamp": null,
-      "qualityScore": 14.18,
-      "maxSimilarityToPast": 0.4096,
-      "similarityPenalty": 3.2768,
-      "movieOverlapPenalty": 18.24429604362344,
+      "qualityScore": 7.69,
+      "maxSimilarityToPast": 0.4256,
+      "similarityPenalty": 3.4048,
+      "movieOverlapPenalty": 17.710375951419973,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -7.341096043623439
+      "finalScore": -13.425175951419973
     },
     {
-      "hash": "0fc96b6e1eba9d4441ad392bf2f21ab542b67b90b89af9936594ae10852e076c",
+      "hash": "d941804e53c80d5a9fafce5e43e0805a377ea9057ccb6a9f7549a0c82cafe93b",
       "rows": [
+        "1940s",
         "1994",
-        "1995",
-        "Ends with DAY",
+        "Ends with HER",
+        "Horror Stories"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Best Picture Winners",
+        "Movie Lines",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.440000000000001,
+      "maxSimilarityToPast": 0.382,
+      "similarityPenalty": 3.056,
+      "movieOverlapPenalty": 14.113940731534854,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.729940731534852
+    },
+    {
+      "hash": "7e4d4bd95115a96c596fb3890f68dfd8cef5dca0dd4eb70ada89ab805f2ce85a",
+      "rows": [
+        "1940s",
+        "1994",
+        "Japanese Films",
+        "Sequels"
+      ],
+      "cols": [
+        "Crime Stories",
+        "Ends with ESS",
+        "Oscar Winners",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.219999999999999,
+      "maxSimilarityToPast": 0.5134,
+      "similarityPenalty": 4.1072,
+      "movieOverlapPenalty": 22.697045177045176,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -18.584245177045176
+    },
+    {
+      "hash": "a412e5cab333145a9af23860a0ccdbeb0d13cc44c1f2f24b5d909af87583dd18",
+      "rows": [
+        "1940s",
+        "5th Century BC",
+        "Roman Empire",
+        "Things German"
+      ],
+      "cols": [
+        "Battles",
+        "Famous Quotes",
+        "Military Leaders",
+        "Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.410000000000001,
+      "maxSimilarityToPast": 0.4374,
+      "similarityPenalty": 3.4992,
+      "movieOverlapPenalty": 5.1454872674939915,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -1.2346872674939906
+    },
+    {
+      "hash": "86088cd5dec37009a4a7b09d2eab6bd6631cde522cd9fdf172f002fcbca13b11",
+      "rows": [
+        "1940s",
+        "1970s",
+        "Action Stories",
+        "Greek Mythology"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Disney",
+        "Marvel Characters",
         "War Stories"
       ],
-      "cols": [
-        "Action Stories",
-        "People",
-        "Songs",
-        "Studio Ghibli"
-      ],
       "timestamp": null,
-      "qualityScore": 12.58,
-      "maxSimilarityToPast": 0.373,
-      "similarityPenalty": 2.984,
-      "movieOverlapPenalty": 17.602805954764925,
-      "yearProximityPenalty": 1.8,
+      "qualityScore": 7.6899999999999995,
+      "maxSimilarityToPast": 0.4543,
+      "similarityPenalty": 3.6344,
+      "movieOverlapPenalty": 13.411070755843804,
+      "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1.8,
-      "finalScore": -9.806805954764926
+      "temporalPenalty": 0,
+      "finalScore": -9.355470755843804
     },
     {
-      "hash": "6ae7fa9d32f6345aae8dc7dc7cd7668f6206fc576a6bd0633ba2afe0144c6606",
+      "hash": "e3cd06ed8d5b18e27b5f62512df06fd6766cdb0c7fc10341341070fdb50a5241",
       "rows": [
+        "1940s",
         "1994",
-        "1999",
         "Classic Films",
-        "Starts with HER"
+        "Ends with ITE"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Best Picture Winners",
+        "Famous Quotes",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.69,
+      "maxSimilarityToPast": 0.3829,
+      "similarityPenalty": 3.0632,
+      "movieOverlapPenalty": 13.61394073153485,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -8.98714073153485
+    },
+    {
+      "hash": "3aa13f81f21c95d401db79ced205445e896274cf61267ad03209a88e92e9a034",
+      "rows": [
+        "1940s",
+        "1979",
+        "Prequels",
+        "Third in Internal Chronology"
       ],
       "cols": [
         "Adventure Stories",
-        "Famous Quotes",
+        "Ends with ION",
         "Oscar Winners",
-        "People"
+        "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 10.57,
-      "maxSimilarityToPast": 0.5102,
-      "similarityPenalty": 4.0816,
-      "movieOverlapPenalty": 17.373145654561778,
-      "yearProximityPenalty": 1,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1,
-      "finalScore": -11.884745654561778
-    },
-    {
-      "hash": "b8cc319f54ed3e8b38cca45b11628abbefcf91e708b2882370ddc8b987678bb7",
-      "rows": [
-        "1994",
-        "2002",
-        "Ends with TER",
-        "Oscar Winners"
-      ],
-      "cols": [
-        "Martial Arts Stories",
-        "People",
-        "Things Japanese",
-        "Thriller Films"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.320000000000002,
-      "maxSimilarityToPast": 0.5085,
-      "similarityPenalty": 4.068,
-      "movieOverlapPenalty": 20.222296600571358,
-      "yearProximityPenalty": 0.4,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.4,
-      "finalScore": -12.370296600571356
-    },
-    {
-      "hash": "cc6499585d64cf2073d7f10c3e2f3a1c3196cd45b56d1e7dd5a6ac3f24a67c0a",
-      "rows": [
-        "1994",
-        "2001",
-        "Fictional Animals",
-        "War Stories"
-      ],
-      "cols": [
-        "Action Stories",
-        "Disney",
-        "People",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.76,
-      "maxSimilarityToPast": 0.4913,
-      "similarityPenalty": 3.9304,
-      "movieOverlapPenalty": 16.99350707452156,
-      "yearProximityPenalty": 0.6,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -10.76390707452156
-    },
-    {
-      "hash": "5c3629f284940461c27ef7b7556a4a298124ec14ac2f7c350faa4d8df1a7358d",
-      "rows": [
-        "1994",
-        "2015",
-        "Prequels",
-        "War Stories"
-      ],
-      "cols": [
-        "Action Stories",
-        "Best Picture Winners",
-        "Disney",
-        "People"
-      ],
-      "timestamp": null,
-      "qualityScore": 14.16,
-      "maxSimilarityToPast": 0.4911,
-      "similarityPenalty": 3.9288,
-      "movieOverlapPenalty": 22.830015011029502,
+      "qualityScore": 12.330000000000002,
+      "maxSimilarityToPast": 0.5087,
+      "similarityPenalty": 4.0696,
+      "movieOverlapPenalty": 20.477220538256635,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -12.598815011029501
+      "finalScore": -12.216820538256634
     },
     {
-      "hash": "df3bce0e56a937b3ebd6198a1c30f3504c591c24e292ab9e229f80e56f2d92ba",
+      "hash": "5e08084068d31a41e500cf9d3f6aeb550e188e685f91ed76b55a1935035e0d24",
       "rows": [
+        "1940s",
         "1994",
-        "2003",
-        "Best Picture Winners",
-        "Fourth in Internal Chronology"
-      ],
-      "cols": [
-        "Action Stories",
-        "People",
-        "Stories about Families",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.27,
-      "maxSimilarityToPast": 0.4696,
-      "similarityPenalty": 3.7568,
-      "movieOverlapPenalty": 23.851256403524967,
-      "yearProximityPenalty": 0.2,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.2,
-      "finalScore": -14.538056403524967
-    },
-    {
-      "hash": "9bcf4bc4e43dabdb554628109ed8c50c0bda8ecba227501f5599e1921c59f7b5",
-      "rows": [
-        "1994",
-        "2000",
-        "People",
+        "Movies directed by Steven Spielberg",
         "Third in Release Order"
       ],
       "cols": [
         "Best Picture Winners",
-        "Christmas Stories",
+        "Sci-fi Stories",
+        "Stories about Families",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.200000000000001,
+      "maxSimilarityToPast": 0.4698,
+      "similarityPenalty": 3.7584,
+      "movieOverlapPenalty": 23.69459859087246,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -14.252998590872458
+    },
+    {
+      "hash": "66894e8bc1cf6b6004188cc18e374dc2ac997baab60d1e260921630de69667f3",
+      "rows": [
+        "1940s",
+        "1970s",
+        "3D Animated Films",
+        "Fourth in Internal Chronology"
+      ],
+      "cols": [
         "Disney",
-        "Thriller Films"
+        "Sci-fi Stories",
+        "Stories Where the Mom Dies",
+        "Stories about Families"
       ],
       "timestamp": null,
-      "qualityScore": 14.19,
-      "maxSimilarityToPast": 0.4923,
-      "similarityPenalty": 3.9384,
-      "movieOverlapPenalty": 25.180664361678847,
-      "yearProximityPenalty": 0.8,
+      "qualityScore": 9.969999999999999,
+      "maxSimilarityToPast": 0.3913,
+      "similarityPenalty": 3.1304,
+      "movieOverlapPenalty": 23.0083443701763,
+      "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.8,
-      "finalScore": -15.729064361678848
+      "temporalPenalty": 0,
+      "finalScore": -16.1687443701763
     },
     {
-      "hash": "e7099d55a2222631948a96815ca016d9a5e868df6479cc556d85b8397eda2275",
+      "hash": "6f9ec33b72b9132b3db0b219a403c5a50e6caed698410cd1d5049fa5f6aeff1d",
       "rows": [
-        "1994",
-        "2013",
-        "Ends with OOD",
-        "Thriller Stories"
-      ],
-      "cols": [
-        "Contemporary Literature",
-        "Japanese Films",
+        "1940s",
+        "1954",
         "Oscar Winners",
-        "People"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.74,
-      "maxSimilarityToPast": 0.4096,
-      "similarityPenalty": 3.2768,
-      "movieOverlapPenalty": 18.24429604362344,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -7.781096043623439
-    },
-    {
-      "hash": "66b0acd515c2c5ac6eda2cb0a221db942ded547f6ce02157f4c373e5f3b04de3",
-      "rows": [
-        "1994",
-        "1995",
-        "Classic Films",
-        "World War II"
-      ],
-      "cols": [
-        "Action Stories",
-        "Famous Quotes",
-        "People",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.629999999999999,
-      "maxSimilarityToPast": 0.4169,
-      "similarityPenalty": 3.3352,
-      "movieOverlapPenalty": 13.65878745652956,
-      "yearProximityPenalty": 1.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1.8,
-      "finalScore": -8.163987456529561
-    },
-    {
-      "hash": "a98246a20c6dac16f35ff63290eb5cf1bfe03c39d638cbfaf881e2f447d3b901",
-      "rows": [
-        "1994",
-        "1999",
-        "Classic Films",
-        "Ends with BER"
-      ],
-      "cols": [
-        "Famous Quotes",
-        "People",
-        "Stories about Families",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.97,
-      "maxSimilarityToPast": 0.4098,
-      "similarityPenalty": 3.2784,
-      "movieOverlapPenalty": 16.836359535686928,
-      "yearProximityPenalty": 1,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1,
-      "finalScore": -9.144759535686926
-    },
-    {
-      "hash": "36f3ae418ba773b994e2828074a6ac9cc1058b1ad56abdb9d87d60a824033c7b",
-      "rows": [
-        "1994",
-        "2013",
-        "Classic Films",
-        "Starts with TER"
-      ],
-      "cols": [
-        "Action Stories",
-        "People",
-        "Stories about Families",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.93,
-      "maxSimilarityToPast": 0.4319,
-      "similarityPenalty": 3.4552,
-      "movieOverlapPenalty": 17.738843017117777,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -10.264043017117777
-    },
-    {
-      "hash": "f9423d611d988b6b49e6b9378c1ea836bd4c520de3811ed885f8a37d5aee4488",
-      "rows": [
-        "1994",
-        "1995",
-        "Classic Films",
-        "Horror Stories"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "Famous Quotes",
-        "People",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.05,
-      "maxSimilarityToPast": 0.4786,
-      "similarityPenalty": 3.8288,
-      "movieOverlapPenalty": 17.008289360248334,
-      "yearProximityPenalty": 1.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1.8,
-      "finalScore": -10.587089360248335
-    },
-    {
-      "hash": "305a5e52ce1b8838d818e69e8d5e22fd3e3ffe2027c2a117a53ab7ca002a1e17",
-      "rows": [
-        "1994",
-        "2018",
-        "Prequels",
-        "War Stories"
-      ],
-      "cols": [
-        "Action Stories",
-        "Best Picture Winners",
-        "Disney",
-        "People"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.639999999999999,
-      "maxSimilarityToPast": 0.4929,
-      "similarityPenalty": 3.9432,
-      "movieOverlapPenalty": 22.330015011029502,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -12.633215011029503
-    },
-    {
-      "hash": "bea34b715823e4b51f1417375002f673c3e1a0f587a46c23c7a8d529480a482a",
-      "rows": [
-        "1994",
-        "2019",
-        "Prequels",
-        "War Stories"
-      ],
-      "cols": [
-        "Action Stories",
-        "Best Picture Winners",
-        "Disney",
-        "People"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.76,
-      "maxSimilarityToPast": 0.6161,
-      "similarityPenalty": 4.9288,
-      "movieOverlapPenalty": 22.602742283756776,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -13.771542283756776
-    },
-    {
-      "hash": "459f63e440df88e32dc9ab2c02902114ced4252ce938bb6b687b3eca3c0260e7",
-      "rows": [
-        "1994",
-        "2002",
-        "Black and White Films",
-        "Sequels"
-      ],
-      "cols": [
-        "Best Picture Winners",
-        "People",
-        "Stories about Families",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.06,
-      "maxSimilarityToPast": 0.526,
-      "similarityPenalty": 4.208,
-      "movieOverlapPenalty": 24.532550011877404,
-      "yearProximityPenalty": 0.4,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.4,
-      "finalScore": -17.080550011877403
-    },
-    {
-      "hash": "07d3f1f32174541f32abeeb9d487f9b311fea5e514ef82b508e2364353bcb325",
-      "rows": [
-        "1994",
-        "2002",
-        "Ends with OOD",
-        "Thriller Stories"
-      ],
-      "cols": [
-        "Haruki Murakami",
-        "Japanese Films",
-        "Oscar Winners",
-        "People"
-      ],
-      "timestamp": null,
-      "qualityScore": 14.18,
-      "maxSimilarityToPast": 0.4141,
-      "similarityPenalty": 3.3128,
-      "movieOverlapPenalty": 19.101438900766293,
-      "yearProximityPenalty": 0.4,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.4,
-      "finalScore": -8.634238900766293
-    },
-    {
-      "hash": "8f155e3f49de88e4cd98967d6c46d4d037053540369673ac1f56817829d87b38",
-      "rows": [
-        "1994",
-        "2002",
-        "Ends with OOD",
-        "Thriller Stories"
-      ],
-      "cols": [
-        "Contemporary Literature",
-        "Japanese Films",
-        "Oscar Winners",
-        "People"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.74,
-      "maxSimilarityToPast": 0.4141,
-      "similarityPenalty": 3.3128,
-      "movieOverlapPenalty": 19.101438900766293,
-      "yearProximityPenalty": 0.4,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.4,
-      "finalScore": -9.074238900766295
-    },
-    {
-      "hash": "820c02ba85e68feb2e8d70e86903af598c6eb8419706fe84e391a7f055d06baf",
-      "rows": [
-        "1994",
-        "1995",
-        "Classic Films",
-        "World War II"
-      ],
-      "cols": [
-        "Famous Quotes",
-        "Oscar Winners",
-        "People",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.57,
-      "maxSimilarityToPast": 0.5042,
-      "similarityPenalty": 4.0336,
-      "movieOverlapPenalty": 13.866579664321767,
-      "yearProximityPenalty": 1.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1.8,
-      "finalScore": -9.130179664321767
-    },
-    {
-      "hash": "cbe8c930ab58e5f04559447a329885f9e7154583142fe5aa4cafd434155b637d",
-      "rows": [
-        "1994",
-        "2013",
-        "Fictional Animals",
-        "War Stories"
-      ],
-      "cols": [
-        "Action Stories",
-        "Disney",
-        "People",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.88,
-      "maxSimilarityToPast": 0.4913,
-      "similarityPenalty": 3.9304,
-      "movieOverlapPenalty": 16.650649931664418,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -9.701049931664418
-    },
-    {
-      "hash": "4b4889cf44d077cc5dbf0e4c07d1ebfa8532f4045db26f25e543507c88611c04",
-      "rows": [
-        "1994",
-        "1995",
-        "Classic Films",
-        "Horror Stories"
-      ],
-      "cols": [
-        "Famous Quotes",
-        "Oscar Winners",
-        "People",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.660000000000002,
-      "maxSimilarityToPast": 0.5094,
-      "similarityPenalty": 4.0752,
-      "movieOverlapPenalty": 17.008289360248334,
-      "yearProximityPenalty": 1.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1.8,
-      "finalScore": -11.223489360248333
-    },
-    {
-      "hash": "39f6d93660ffcd2674ea2765859f3d5be083e718d88d0695ef3ebc1005dc0641",
-      "rows": [
-        "1994",
-        "2013",
-        "Black and White Films",
-        "Starts with TER"
-      ],
-      "cols": [
-        "Action Stories",
-        "People",
-        "Stories about Families",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.84,
-      "maxSimilarityToPast": 0.4909,
-      "similarityPenalty": 3.9272,
-      "movieOverlapPenalty": 18.238843017117777,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -11.326043017117776
-    },
-    {
-      "hash": "fa0bed21f00a510474db9edc32cff7244c92666d3b1d30e562eea9240105b5bc",
-      "rows": [
-        "1994",
-        "2013",
-        "Black and White Films",
-        "Starts with TER"
-      ],
-      "cols": [
-        "People",
-        "Stories about Families",
-        "Things Japanese",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.860000000000001,
-      "maxSimilarityToPast": 0.5308,
-      "similarityPenalty": 4.2464,
-      "movieOverlapPenalty": 18.28874048806788,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -11.675140488067878
-    },
-    {
-      "hash": "81024021aae3a151fc3f8a315e280502e1aa4033cf0f40df163f2acbc9c16cc7",
-      "rows": [
-        "1994",
-        "2013",
-        "Classic Films",
-        "Starts with TER"
-      ],
-      "cols": [
-        "Action Stories",
-        "Best Picture Winners",
-        "People",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.379999999999999,
-      "maxSimilarityToPast": 0.4873,
-      "similarityPenalty": 3.8984,
-      "movieOverlapPenalty": 18.36106523934,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -11.879465239340002
-    },
-    {
-      "hash": "afba195304ed1845afcd3b014be0bec1e895bcf41b26a6cc086c22956348bc62",
-      "rows": [
-        "1994",
-        "2002",
-        "Ends with TER",
-        "Oscar Winners"
+        "Sci-fi Stories"
       ],
       "cols": [
         "Crime Stories",
-        "Martial Arts Stories",
-        "People",
+        "Ends with OON",
+        "Stories about Families",
         "Things Japanese"
       ],
       "timestamp": null,
-      "qualityScore": 12.64,
-      "maxSimilarityToPast": 0.5079,
-      "similarityPenalty": 4.0632,
-      "movieOverlapPenalty": 20.145373523648285,
-      "yearProximityPenalty": 0.4,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.4,
-      "finalScore": -11.968573523648285
-    },
-    {
-      "hash": "f172abebbae7b6e4fa58b314dba5351be1f68d0e3531866c26952384410a6480",
-      "rows": [
-        "1994",
-        "2013",
-        "Classic Films",
-        "Ends with TER"
-      ],
-      "cols": [
-        "Action Stories",
-        "Best Picture Winners",
-        "People",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.379999999999999,
-      "maxSimilarityToPast": 0.4908,
-      "similarityPenalty": 3.9264,
-      "movieOverlapPenalty": 18.657361535636298,
+      "qualityScore": 7.929999999999999,
+      "maxSimilarityToPast": 0.4114,
+      "similarityPenalty": 3.2912,
+      "movieOverlapPenalty": 21.20789348311472,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -12.2037615356363
+      "finalScore": -16.56909348311472
     },
     {
-      "hash": "22d730522f337ac2e58cfdee71b682a70722e3e4f432205fe06e740e272d1d8b",
+      "hash": "e50693f53759c3332c1ddcf2cadae07142fbf7f9d9f541ffd9c71154c9acca33",
       "rows": [
-        "1994",
-        "2002",
-        "Ends with TER",
-        "Oscar Winners"
+        "1940s",
+        "5th Century BC",
+        "Napoleonic Wars",
+        "Things German"
       ],
       "cols": [
-        "Martial Arts Stories",
-        "People",
+        "Famous Quotes",
+        "Military Leaders",
+        "Movies",
+        "Naval Battles"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.87,
+      "maxSimilarityToPast": 0.4181,
+      "similarityPenalty": 3.3448,
+      "movieOverlapPenalty": 5.298743972474835,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.2264560275251641
+    },
+    {
+      "hash": "2ca4d39b764456bbcac177326049df41365c6eb6d2b73052c975eef75a32361c",
+      "rows": [
+        "1940s",
+        "5th Century BC",
+        "Napoleonic Wars",
+        "Things German"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Military Leaders",
+        "Movies",
+        "Starts with BAT"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.59,
+      "maxSimilarityToPast": 0.4036,
+      "similarityPenalty": 3.2288,
+      "movieOverlapPenalty": 5.484790484102742,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -0.12359048410274198
+    },
+    {
+      "hash": "705d063ece42982d94849565572458e4a83f94b7999d7dea015845d035f545a6",
+      "rows": [
+        "1940s",
+        "1994",
+        "Red Things",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Stories about Families",
+        "Theropods",
         "Things Japanese",
         "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 12.060000000000002,
-      "maxSimilarityToPast": 0.5094,
-      "similarityPenalty": 4.0752,
-      "movieOverlapPenalty": 20.064401863729252,
-      "yearProximityPenalty": 0.4,
+      "qualityScore": 7.5,
+      "maxSimilarityToPast": 0.3986,
+      "similarityPenalty": 3.1888,
+      "movieOverlapPenalty": 11.971831092883725,
+      "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.4,
-      "finalScore": -12.479601863729249
+      "temporalPenalty": 0,
+      "finalScore": -7.660631092883726
+    },
+    {
+      "hash": "5a7c945534693b186b94ea4284e849a905b17c94a190121b6f9e0d4a839f0827",
+      "rows": [
+        "1940s",
+        "1994",
+        "Red Things",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Saurischians",
+        "Stories about Families",
+        "Things Japanese",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.38,
+      "maxSimilarityToPast": 0.3986,
+      "similarityPenalty": 3.1888,
+      "movieOverlapPenalty": 11.971831092883725,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.780631092883725
+    },
+    {
+      "hash": "d8313e3341afbff7e7230eaa2e3c2c948fb96fc7c0c8515a575482ff67158910",
+      "rows": [
+        "1940s",
+        "1994",
+        "Red Things",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Dinosaurs",
+        "Stories about Families",
+        "Things Japanese",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.1,
+      "maxSimilarityToPast": 0.3986,
+      "similarityPenalty": 3.1888,
+      "movieOverlapPenalty": 11.971831092883725,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -8.060631092883726
+    },
+    {
+      "hash": "b009f454cfdc15488759cf84a28bc38777dad2d5a4f71f7f9a2d83b4d9028d01",
+      "rows": [
+        "1940s",
+        "1980",
+        "Animal Terms",
+        "Epic Stories"
+      ],
+      "cols": [
+        "Adventure Stories",
+        "Ends with ION",
+        "Movies",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.739999999999999,
+      "maxSimilarityToPast": 0.4109,
+      "similarityPenalty": 3.2872,
+      "movieOverlapPenalty": 12.706880139236487,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -8.254080139236487
+    },
+    {
+      "hash": "582246ced3e72bee7a0e149078ff76d037c57e6579d47c7a62515325e75efad2",
+      "rows": [
+        "1940s",
+        "1994",
+        "Ends with MEN",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Crime Stories",
+        "Famous Quotes",
+        "Stories about Families",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.71,
+      "maxSimilarityToPast": 0.3972,
+      "similarityPenalty": 3.1776,
+      "movieOverlapPenalty": 14.480620755841995,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.948220755841994
+    },
+    {
+      "hash": "9ccc0b5687dd259386e5970c35a06cac08fcac1558563f13595adaf81054582c",
+      "rows": [
+        "1940s",
+        "1970s",
+        "Action Stories",
+        "Greek Mythology"
+      ],
+      "cols": [
+        "Disney",
+        "Real Animals",
+        "Stories Where the Mom Dies",
+        "War Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.82,
+      "maxSimilarityToPast": 0.3891,
+      "similarityPenalty": 3.1128,
+      "movieOverlapPenalty": 16.53966230686934,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.832462306869338
+    },
+    {
+      "hash": "873af618590089421e566f550590259412f71e9adc3ecb5b0a6ad84d74f7a656",
+      "rows": [
+        "1940s",
+        "1994",
+        "Christmas Stories",
+        "Things Japanese"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Crime Stories",
+        "Ends with ESS",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.85,
+      "maxSimilarityToPast": 0.521,
+      "similarityPenalty": 4.168,
+      "movieOverlapPenalty": 16.48928623165911,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.807286231659113
+    },
+    {
+      "hash": "a95b1d619f7df608b373362c05fb46054e31b428b17241b64e6383ec8cd1abe1",
+      "rows": [
+        "1940s",
+        "1994",
+        "Movies featuring Joaquin Phoenix",
+        "Prequels"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Disney",
+        "Sci-fi Stories",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.32,
+      "maxSimilarityToPast": 0.4557,
+      "similarityPenalty": 3.6456,
+      "movieOverlapPenalty": 24.009580108593706,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -14.335180108593706
+    },
+    {
+      "hash": "695591714af6eda376b10222d1d4b3e0187bef769d0861cfee7dc1d9174e8c4f",
+      "rows": [
+        "1940s",
+        "1970s",
+        "2D Animated Films",
+        "Third in Release Order"
+      ],
+      "cols": [
+        "Ends with DER",
+        "Sci-fi Stories",
+        "Stories Where the Mom Dies",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.35,
+      "maxSimilarityToPast": 0.4251,
+      "similarityPenalty": 3.4008,
+      "movieOverlapPenalty": 19.41717237626458,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -15.467972376264582
+    },
+    {
+      "hash": "c234bf0b7b8a9f4076d571e6a089894e2bfb4fa5bb0cb083a0c46e3fea18c92d",
+      "rows": [
+        "1940s",
+        "1970s",
+        "3D Animated Films",
+        "Fourth in Release Order"
+      ],
+      "cols": [
+        "Disney",
+        "Sci-fi Stories",
+        "Stories Where the Mom Dies",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.84,
+      "maxSimilarityToPast": 0.4179,
+      "similarityPenalty": 3.3432,
+      "movieOverlapPenalty": 23.081071642903574,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -16.584271642903573
+    },
+    {
+      "hash": "96c0891a680209738d304d36e8645588a0ba69eeeccbb615f3a3508bbac4c6db",
+      "rows": [
+        "1940s",
+        "5th Century BC",
+        "Napoleonic Wars",
+        "Roman Empire"
+      ],
+      "cols": [
+        "Battles",
+        "Famous Quotes",
+        "Military Leaders",
+        "Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.09,
+      "maxSimilarityToPast": 0.4698,
+      "similarityPenalty": 3.7584,
+      "movieOverlapPenalty": 5.2033259280723785,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.1282740719276214
+    },
+    {
+      "hash": "a0850f20f8446b294869a249f150bfebdef9f49ce4237e489dbc3fdd1558c706",
+      "rows": [
+        "1940s",
+        "5th Century BC",
+        "Napoleonic Wars",
+        "Things German"
+      ],
+      "cols": [
+        "Battles",
+        "Famous Quotes",
+        "Military Leaders",
+        "Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.75,
+      "maxSimilarityToPast": 0.4213,
+      "similarityPenalty": 3.3704,
+      "movieOverlapPenalty": 5.298743972474835,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.080856027525165
+    },
+    {
+      "hash": "869b829a6907fe613252d3f312d3f2336dd9a3d05e606b6e9583246492d21c64",
+      "rows": [
+        "1940s",
+        "5th Century BC",
+        "The American Revolution",
+        "Things German"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Military Conflicts",
+        "Military Leaders",
+        "Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.149999999999999,
+      "maxSimilarityToPast": 0.4261,
+      "similarityPenalty": 3.4088,
+      "movieOverlapPenalty": 5.362236035966898,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 0.37896396403310106
+    },
+    {
+      "hash": "f86a76cd2af2d81eb9668d9923e9333f5a659b215488055b8beda42240d4fcd3",
+      "rows": [
+        "1940s",
+        "5th Century BC",
+        "Roman Empire",
+        "The American Revolution"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Military Conflicts",
+        "Military Leaders",
+        "Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.489999999999998,
+      "maxSimilarityToPast": 0.5092,
+      "similarityPenalty": 4.0736,
+      "movieOverlapPenalty": 5.266817991564442,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 0.1495820084355568
+    },
+    {
+      "hash": "3e6986bc48489a2258d0cb6256513bd20f7a5753b546dbf20251e05626abc303",
+      "rows": [
+        "1940s",
+        "5th Century BC",
+        "Napoleonic Wars",
+        "Roman Empire"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Military Conflicts",
+        "Military Leaders",
+        "Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.049999999999999,
+      "maxSimilarityToPast": 0.5416,
+      "similarityPenalty": 4.3328,
+      "movieOverlapPenalty": 5.2033259280723785,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -0.4861259280723793
+    },
+    {
+      "hash": "3bb80642812f65b58a767f7bca422850fcf459dfef6e346496448a77eae677eb",
+      "rows": [
+        "1940s",
+        "5th Century BC",
+        "Napoleonic Wars",
+        "Things German"
+      ],
+      "cols": [
+        "Famous Quotes",
+        "Military Conflicts",
+        "Military Leaders",
+        "Movies"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.709999999999999,
+      "maxSimilarityToPast": 0.4931,
+      "similarityPenalty": 3.9448,
+      "movieOverlapPenalty": 5.298743972474835,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -0.5335439724748356
+    },
+    {
+      "hash": "965653854b4de160359c46b4ba7c600ea25f925465c5b800d1c7d599a8291052",
+      "rows": [
+        "1940s",
+        "1970s",
+        "Action Stories",
+        "Greek Mythology"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Marvel Characters",
+        "Stories Where the Mom Dies",
+        "War Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.14,
+      "maxSimilarityToPast": 0.433,
+      "similarityPenalty": 3.464,
+      "movieOverlapPenalty": 13.211817953851277,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.535817953851277
+    },
+    {
+      "hash": "141471bddd3d265176cd9e94924dc0a05858e5981bcdc1cd17ae350258ed98ce",
+      "rows": [
+        "1940s",
+        "1994",
+        "Classic Films",
+        "Ends with HER"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Famous Quotes",
+        "Sci-fi Stories",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.24,
+      "maxSimilarityToPast": 0.3031,
+      "similarityPenalty": 2.4248,
+      "movieOverlapPenalty": 13.753623271217391,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.93842327121739
+    },
+    {
+      "hash": "cae565a96bc5ce48db59acc7ce3a24b7969e593eb8db94d90264bd5f253916ef",
+      "rows": [
+        "1940s",
+        "1994",
+        "Classic Films",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Ends with ESS",
+        "Famous Quotes",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.24,
+      "maxSimilarityToPast": 0.3069,
+      "similarityPenalty": 2.4552,
+      "movieOverlapPenalty": 13.920289937884059,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -8.135489937884058
+    },
+    {
+      "hash": "3df2b279e27d00c20ebd6dfcbc48ba4cd6c49ece3c0a708764c27329cfe08f92",
+      "rows": [
+        "1940s",
+        "1994",
+        "Horror Stories",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Best Picture Winners",
+        "Movie Lines",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.500000000000002,
+      "maxSimilarityToPast": 0.5029,
+      "similarityPenalty": 4.0232,
+      "movieOverlapPenalty": 13.758385175979296,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -8.281585175979295
+    },
+    {
+      "hash": "6f4c2e784c297cd30fc2c956dd4a83bde6af0fae5a67820d1e2274e9e778af07",
+      "rows": [
+        "1940s",
+        "1994",
+        "Classic Films",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Famous Quotes",
+        "Stories about Families",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.3,
+      "maxSimilarityToPast": 0.4179,
+      "similarityPenalty": 3.3432,
+      "movieOverlapPenalty": 13.398067715661837,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -8.441267715661835
+    },
+    {
+      "hash": "1552248cae0df7f5deaccc9203cc3296a94e1692c2a24193236c4db9ba177829",
+      "rows": [
+        "1940s",
+        "1994",
+        "Red Things",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Stories about Families",
+        "Things Japanese",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.77,
+      "maxSimilarityToPast": 0.4,
+      "similarityPenalty": 3.2,
+      "movieOverlapPenalty": 12.039627703053217,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -8.469627703053217
+    },
+    {
+      "hash": "84ef9300bd65c912aca77f8017335ad175443622f284c2958671fcbaff8c79c4",
+      "rows": [
+        "1940s",
+        "1994",
+        "Classic Films",
+        "Ends with ITE"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Famous Quotes",
+        "Oscar Winners",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.3,
+      "maxSimilarityToPast": 0.4137,
+      "similarityPenalty": 3.3096,
+      "movieOverlapPenalty": 13.61394073153485,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -9.62354073153485
+    },
+    {
+      "hash": "99500a4aff576c4d34b813fc5b13d1a0710700ad1a56d5d49765ced6c1439f67",
+      "rows": [
+        "1940s",
+        "1980s",
+        "2D Animated Films",
+        "War Stories"
+      ],
+      "cols": [
+        "Mentioned in We Didn't Start the Fire",
+        "Stories Where the Mom Dies",
+        "Things Japanese",
+        "Trios"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.059999999999999,
+      "maxSimilarityToPast": 0.4233,
+      "similarityPenalty": 3.3864,
+      "movieOverlapPenalty": 14.342153907976693,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -9.668553907976694
+    },
+    {
+      "hash": "5dd48ac5283f6b11842a0fc0af032fbabef41998444a7631920e6069ab0388a5",
+      "rows": [
+        "1940s",
+        "1994",
+        "Classic Films",
+        "Ends with HER"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Best Picture Winners",
+        "Famous Quotes",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.69,
+      "maxSimilarityToPast": 0.3829,
+      "similarityPenalty": 3.0632,
+      "movieOverlapPenalty": 14.375845493439613,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -9.749045493439613
+    },
+    {
+      "hash": "fb046efb8a03e76394dade7cb84410347a8183c8d3e170685808b2da5e190913",
+      "rows": [
+        "1940s",
+        "1994",
+        "Epic Stories",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Ends with ION",
+        "Sci-fi Stories",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.65,
+      "maxSimilarityToPast": 0.4274,
+      "similarityPenalty": 3.4192,
+      "movieOverlapPenalty": 15.053955316018659,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -9.823155316018658
+    },
+    {
+      "hash": "3d38e42041e7f3adc9338f9b388e679f30dee24fed61dc0014a98804a9065a35",
+      "rows": [
+        "1940s",
+        "1994",
+        "Classic Films",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Best Picture Winners",
+        "Ends with ESS",
+        "Famous Quotes"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.69,
+      "maxSimilarityToPast": 0.3867,
+      "similarityPenalty": 3.0936,
+      "movieOverlapPenalty": 14.54251216010628,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -9.94611216010628
+    },
+    {
+      "hash": "45871676788eb368cd02d7b93662a5bbb72283a1275d97d48677a93fa3ca46df",
+      "rows": [
+        "1940s",
+        "1970s",
+        "Action Stories",
+        "Greek Mythology"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Disney",
+        "Marvel Characters",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.1,
+      "maxSimilarityToPast": 0.4517,
+      "similarityPenalty": 3.6136,
+      "movieOverlapPenalty": 14.54743439220744,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.061034392207441
+    },
+    {
+      "hash": "c70aa6432a0f3610fcb5baf9cea51d4ff2937e0334fcbad926ba6d5a3ef72313",
+      "rows": [
+        "1940s",
+        "1994",
+        "Epic Stories",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Ends with ION",
+        "Oscar Winners",
+        "Sci-fi Stories",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.260000000000002,
+      "maxSimilarityToPast": 0.4157,
+      "similarityPenalty": 3.3256,
+      "movieOverlapPenalty": 15.053955316018662,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.11955531601866
+    },
+    {
+      "hash": "037312d7e07e52e03eaf05919050506d49b6133c18e7703aefc8a3f71115d6ad",
+      "rows": [
+        "1940s",
+        "1994",
+        "Classic Films",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Best Picture Winners",
+        "Famous Quotes",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.75,
+      "maxSimilarityToPast": 0.4977,
+      "similarityPenalty": 3.9816,
+      "movieOverlapPenalty": 14.020289937884058,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.251889937884059
+    },
+    {
+      "hash": "d51a01cfa58d010922630649ad8d62299adeeea662c5f515eff978a605ac7e3e",
+      "rows": [
+        "1940s",
+        "1980",
+        "Epic Stories",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Ends with ION",
+        "Sci-fi Stories",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.97,
+      "maxSimilarityToPast": 0.5524,
+      "similarityPenalty": 4.4192,
+      "movieOverlapPenalty": 15.85395531601866,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.303155316018659
+    },
+    {
+      "hash": "f6b92d06c68d9ad1c1ac1ae66b1212466c1bbbad7a1ed408e548f32851c644e3",
+      "rows": [
+        "1940s",
+        "1980",
+        "Epic Stories",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Ends with ION",
+        "Oscar Winners",
+        "Sci-fi Stories",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.580000000000002,
+      "maxSimilarityToPast": 0.5216,
+      "similarityPenalty": 4.1728,
+      "movieOverlapPenalty": 15.85395531601866,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.446755316018656
+    },
+    {
+      "hash": "12b66cfe139ca4a632ce303081e6ca11e65aff39c6d666696c0e010e81b85b14",
+      "rows": [
+        "1940s",
+        "1994",
+        "Red Things",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Stories about Families",
+        "Things Japanese",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.8999999999999995,
+      "maxSimilarityToPast": 0.4229,
+      "similarityPenalty": 3.3832,
+      "movieOverlapPenalty": 13.982597221243974,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.465797221243974
+    },
+    {
+      "hash": "664db8547fea20b2247b84805fa6ab79a21910eef0ba76000cbd4eff99c50664",
+      "rows": [
+        "1940s",
+        "1994",
+        "Classic Films",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Sci-fi Stories",
+        "Stories about Families",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.1,
+      "maxSimilarityToPast": 0.4179,
+      "similarityPenalty": 3.3432,
+      "movieOverlapPenalty": 14.286956604550726,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.530156604550726
+    },
+    {
+      "hash": "9cf95a0f3fb0e995346c6bd81baf75b4e7ba47d72d91cc703ed0e212a155e6b1",
+      "rows": [
+        "1940s",
+        "1970s",
+        "Action Stories",
+        "Greek Mythology"
+      ],
+      "cols": [
+        "Disney",
+        "Marvel Characters",
+        "Stories Where the Mom Dies",
+        "War Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.66,
+      "maxSimilarityToPast": 0.4015,
+      "similarityPenalty": 3.212,
+      "movieOverlapPenalty": 16.979637782037948,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.531637782037947
+    },
+    {
+      "hash": "906923908c450a152e530c4b36e61d257e41e24379b786f3b45d70e5d81f2f04",
+      "rows": [
+        "1940s",
+        "1994",
+        "Horror Stories",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Best Picture Winners",
+        "Famous Quotes",
+        "Things Japanese"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.57,
+      "maxSimilarityToPast": 0.5029,
+      "similarityPenalty": 4.0232,
+      "movieOverlapPenalty": 13.758385175979296,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.211585175979295
+    },
+    {
+      "hash": "91a99d1b553db450e4b13e71990a72a9fbc42151c0fdc75e3509a9561e600032",
+      "rows": [
+        "1940s",
+        "1970s",
+        "Action Stories",
+        "Greek Mythology"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Disney",
+        "Stories Where the Mom Dies",
+        "War Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.82,
+      "maxSimilarityToPast": 0.3891,
+      "similarityPenalty": 3.1128,
+      "movieOverlapPenalty": 16.590291535064583,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.883091535064583
+    },
+    {
+      "hash": "a19d26b35fa4de7d3fefa677de8cad320bbc0b185e0cbfab7e01c6b4f7dfeb48",
+      "rows": [
+        "1940s",
+        "1994",
+        "Prequels",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Disney",
+        "Ends with ION",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.01,
+      "maxSimilarityToPast": 0.435,
+      "similarityPenalty": 3.48,
+      "movieOverlapPenalty": 19.641159055962127,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.111159055962128
+    },
+    {
+      "hash": "33f358b2e258ea7cab26036ab9ebb7bad413c2aff5782da006f2d1756b3c2e11",
+      "rows": [
+        "1940s",
+        "1994",
+        "Oscar Winners",
+        "Red Things"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Stories about Families",
+        "Things Japanese",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.159999999999999,
+      "maxSimilarityToPast": 0.5201,
+      "similarityPenalty": 4.1608,
+      "movieOverlapPenalty": 15.150738814164328,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.15153881416433
+    },
+    {
+      "hash": "c0acd7e5238af4904fb311cee1c112ef44cced456be92c756fd9cb036a7960dd",
+      "rows": [
+        "1940s",
+        "1980s",
+        "2D Animated Films",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Mentioned in We Didn't Start the Fire",
+        "Stories Where the Mom Dies",
+        "Things Japanese",
+        "Trios"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.630000000000001,
+      "maxSimilarityToPast": 0.5172,
+      "similarityPenalty": 4.1376,
+      "movieOverlapPenalty": 14.674012315056338,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.181612315056338
+    },
+    {
+      "hash": "ae43d96dd06c637c804914cc1a9446da8c0997a5910972ecc660b00482e7dc73",
+      "rows": [
+        "1940s",
+        "1994",
+        "Prequels",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Disney",
+        "Ends with ION",
+        "Oscar Winners",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.620000000000001,
+      "maxSimilarityToPast": 0.4351,
+      "similarityPenalty": 3.4808,
+      "movieOverlapPenalty": 19.641159055962124,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.501959055962123
+    },
+    {
+      "hash": "3dd3798a9fa94d8c32a78e5054821c68cb7eaaa9b82a3c7504f7b4fd0686f0ed",
+      "rows": [
+        "1940s",
+        "1994",
+        "Mentioned in We Didn't Start the Fire",
+        "Prequels"
+      ],
+      "cols": [
+        "Best Picture Winners",
+        "Disney",
+        "Ends with ION",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.22,
+      "maxSimilarityToPast": 0.5177,
+      "similarityPenalty": 4.1416,
+      "movieOverlapPenalty": 17.004795419598487,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.926395419598487
+    },
+    {
+      "hash": "f805fb12a53dacac10fc30e49850574420543b291a3aa8e702a7648a22806152",
+      "rows": [
+        "1940s",
+        "1970s",
+        "2D Animated Films",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Mentioned in We Didn't Start the Fire",
+        "Stories Where the Mom Dies",
+        "Stories about Families",
+        "Trios"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.97,
+      "maxSimilarityToPast": 0.5205,
+      "similarityPenalty": 4.164,
+      "movieOverlapPenalty": 16.8363642954565,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -13.0303642954565
+    },
+    {
+      "hash": "402ec0b378aa1bf1a600e087dd5fc264b4b2b610e173a71419a10998f3480dcb",
+      "rows": [
+        "1940s",
+        "1980s",
+        "2D Animated Films",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Mentioned in We Didn't Start the Fire",
+        "Stories Where the Mom Dies",
+        "Stories about Families",
+        "Trios"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.9,
+      "maxSimilarityToPast": 0.5172,
+      "similarityPenalty": 4.1376,
+      "movieOverlapPenalty": 17.074012315056336,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -13.311612315056337
     }
   ],
   "message": "Puzzle saved successfully!"
