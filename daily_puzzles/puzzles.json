@@ -12238,5 +12238,85 @@
         "Halo"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Alcoholic Drinks",
+      "Land Battles",
+      "Men",
+      "Naval Battles"
+    ],
+    "cols": [
+      "Hundred Years' War",
+      "Things German",
+      "Things Russian",
+      "Yuan Dynasty"
+    ],
+    "words": [
+      [
+        "Bordeaux",
+        "Weissbier",
+        "Vodka",
+        "Baijiu"
+      ],
+      [
+        "Battle of Agincourt",
+        "The Franco-Prussian War",
+        "The Russian Civil War",
+        "Mongol Conquest of China"
+      ],
+      [
+        "Henry V",
+        "Bismarck",
+        "Joseph Stalin",
+        "Kublai Khan"
+      ],
+      [
+        "Battle of Sluys",
+        "Battle of Jutland",
+        "Battle of Tsushima",
+        "Battle of Lake Poyang"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1980s",
+      "6th Century BC",
+      "Ancient Figures",
+      "Women"
+    ],
+    "cols": [
+      "Ends with ING",
+      "Founders of Religions",
+      "Royalty",
+      "Things Roman"
+    ],
+    "words": [
+      [
+        "Life, the Universe and Everything",
+        "L. Ron Hubbard",
+        "Prince",
+        "The Seven Magnificent Gladiators"
+      ],
+      [
+        "Tao Te Ching",
+        "Siddhartha Gautama",
+        "Cyrus the Great",
+        "Circus Maximus"
+      ],
+      [
+        "Kongming",
+        "Confucius",
+        "Alexander the Great",
+        "Julius Caesar"
+      ],
+      [
+        "Elizabeth Barrett Browning",
+        "Mary Baker Eddy",
+        "Elizabeth I",
+        "Cleopatra"
+      ]
+    ]
   }
 ]
