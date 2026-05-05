@@ -444,14 +444,8 @@
   "1180s": [
     "Battle of Hattin"
   ],
-  "The Korean War": [
-    "Battle of Inchon"
-  ],
   "1570s": [
     "Battle of Lepanto"
-  ],
-  "The Russo-Japanese War": [
-    "Battle of Tsushima"
   ],
   "1440s": [
     "Battle of Tumu Fortress"
@@ -1263,9 +1257,6 @@
   "Movies featuring Vivien Leigh": [
     "Gone with the Wind"
   ],
-  "10th Century": [
-    "Good King Wenceslas"
-  ],
   "Songs by The Beach Boys": [
     "Good Vibrations"
   ],
@@ -1331,9 +1322,6 @@
   ],
   "Explosives": [
     "Gunpowder"
-  ],
-  "Byzantine Architecture": [
-    "Hagia Sophia"
   ],
   "Movies directed by Adam Shankman": [
     "Hairspray"
@@ -1557,6 +1545,9 @@
   "Movies featuring Yvonne Elliman": [
     "Jesus Christ Superstar"
   ],
+  "7th Century BC": [
+    "Jian"
+  ],
   "1120s": [
     "Jingkang Incident"
   ],
@@ -1631,6 +1622,9 @@
   ],
   "Things Kazakh": [
     "Kazakhstan"
+  ],
+  "16th Century BC": [
+    "Khopesh"
   ],
   "Movies featuring Vivica A. Fox": [
     "Kill Bill: Volume 1"
@@ -2478,6 +2472,9 @@
   "Movies featuring Sofia Boutella": [
     "Rebel Moon"
   ],
+  "10th Century BC": [
+    "Recurve Bow"
+  ],
   "Movies directed by Robert Schwentke": [
     "Red"
   ],
@@ -2687,9 +2684,6 @@
   ],
   "1560s": [
     "Siege of Malta"
-  ],
-  "The Crimean War": [
-    "Siege of Sevastopol"
   ],
   "Things Sierra Leonean": [
     "Sierra Leone"
@@ -3441,9 +3435,6 @@
   "Movies featuring Nancy Allen": [
     "The Philadelphia Experiment"
   ],
-  "Things Byzantine": [
-    "The Plague of Justinian"
-  ],
   "Movies featuring Anika Noni Rose": [
     "The Princess and the Frog"
   ],
@@ -4048,6 +4039,10 @@
     "Ardipithecus",
     "Australopithecus"
   ],
+  "The Russo-Japanese War": [
+    "Arisaka",
+    "Battle of Tsushima"
+  ],
   "Movies directed by Hiromasa Yonebayashi": [
     "Arrietty",
     "When Marnie Was There"
@@ -4112,13 +4107,13 @@
     "Battle of Agincourt",
     "First Defenestration of Prague"
   ],
+  "The Korean War": [
+    "Battle of Inchon",
+    "M1 Garand"
+  ],
   "The Spanish-American War": [
     "Battle of Manila Bay",
     "Battle of Santiago de Cuba"
-  ],
-  "Things Persian": [
-    "Battle of Salamis",
-    "Xerxes"
   ],
   "Things Botswanan": [
     "Bechuanaland",
@@ -4219,10 +4214,6 @@
   "French Navy": [
     "Bucentaure",
     "Redoutable"
-  ],
-  "Things Hungarian": [
-    "Budapest",
-    "Hungary"
   ],
   "Things Emirati": [
     "Burj Khalifa",
@@ -4632,6 +4623,10 @@
     "Gulf of Mexico",
     "Persian Gulf"
   ],
+  "Byzantine Architecture": [
+    "Hagia Sophia",
+    "Theodosian Walls"
+  ],
   "Movies featuring Michelle Pfeiffer": [
     "Hairspray",
     "Scarface"
@@ -4879,6 +4874,10 @@
   "Movies directed by Clint Eastwood": [
     "Million Dollar Baby",
     "Unforgiven"
+  ],
+  "The Crimean War": [
+    "Minié ball",
+    "Siege of Sevastopol"
   ],
   "Movies featuring Rachel House": [
     "Moana",
@@ -5403,6 +5402,11 @@
     "Birdman",
     "Spotlight"
   ],
+  "Things Persian": [
+    "Battle of Salamis",
+    "Shamshir",
+    "Xerxes"
+  ],
   "Prime Ministers": [
     "Begin",
     "Castro",
@@ -5493,10 +5497,20 @@
     "Old London Bridge",
     "Stonehenge"
   ],
+  "Things Hungarian": [
+    "Budapest",
+    "Hungary",
+    "Orban"
+  ],
   "Types of Lettuce": [
     "Butterhead",
     "Iceberg",
     "Romaine"
+  ],
+  "Things Byzantine": [
+    "Byzantine Empire",
+    "The Plague of Justinian",
+    "Theodosian Walls"
   ],
   "Dances": [
     "CHA",
@@ -5717,6 +5731,11 @@
     "Fight Club",
     "Sweeney Todd: The Demon Barber of Fleet Street",
     "The King's Speech"
+  ],
+  "10th Century": [
+    "Fire Lance",
+    "Good King Wenceslas",
+    "Tachi"
   ],
   "Movies featuring Hugh Grant": [
     "Four Weddings and a Funeral",

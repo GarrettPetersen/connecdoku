@@ -872,7 +872,12 @@
     "The First Crusade"
   ],
   "10th Century": [
-    "Good King Wenceslas"
+    "Fire Lance",
+    "Good King Wenceslas",
+    "Tachi"
+  ],
+  "10th Century BC": [
+    "Recurve Bow"
   ],
   "1120s": [
     "Jingkang Incident"
@@ -886,6 +891,7 @@
     "Avicenna",
     "Bohemond",
     "County of Tripoli",
+    "Crossbow",
     "Deus Vult",
     "Harald Hardrada",
     "Harold Godwinson",
@@ -928,6 +934,7 @@
     "Subutai",
     "Temüjin",
     "The Crusades",
+    "Trebuchet",
     "Yue Fei"
   ],
   "12th Century BC": [
@@ -969,6 +976,7 @@
     "County of Tripoli",
     "Dante",
     "Edward I",
+    "Falchion",
     "Frederick II",
     "Genghis Khan",
     "Hulagu Khan",
@@ -1021,15 +1029,18 @@
     "Battle of Lake Poyang",
     "Battle of Poitiers",
     "Battle of Sluys",
+    "Cannon",
     "Charles IV",
     "Charles V",
     "Dante",
     "Edward III",
+    "Estoc",
     "Florentine Banking Crisis",
     "Inferno",
     "John",
     "John of Bohemia",
     "Longbow",
+    "Messer",
     "Ming",
     "Pedro de Luna",
     "Philip",
@@ -1070,9 +1081,13 @@
   ],
   "15th Century": [
     "Alfonso de Borja",
+    "Arquebus",
     "Battle of Agincourt",
     "Battle of Tumu Fortress",
+    "Bombard",
     "Christopher Columbus",
+    "Claymore",
+    "Constantine XI Palaiologos",
     "Copernicus",
     "Da Vinci",
     "Ferdinand Magellan",
@@ -1080,11 +1095,13 @@
     "Forbidden City Construction",
     "Giovanni de' Medici",
     "Giulio de' Medici",
+    "Great Turkish Bombard",
     "Guru Nanak",
     "Henry V",
     "Henry VII",
     "Hussite Wars",
     "Jan Hus",
+    "Janissaries",
     "Jingnan Campaign",
     "Joan of Arc",
     "Longbow",
@@ -1093,12 +1110,15 @@
     "Ming",
     "Ming–Vietnam War",
     "Nina",
+    "Orban",
     "Pedro de Luna",
     "Philip",
+    "Pike",
     "Pinta",
     "Richard II",
     "Rodrigo Borgia",
     "Santa Maria",
+    "Siege of Constantinople",
     "Siege of Orléans",
     "The Fall of Constantinople",
     "The Hussite Wars",
@@ -1141,10 +1161,12 @@
     "Copernicus",
     "Da Vinci",
     "Drake",
+    "Dusack",
     "Edward VI",
     "Elizabeth",
     "Elizabeth I",
     "Ferdinand Magellan",
+    "Flamberge",
     "Francisco Pizarro",
     "Giovanni de' Medici",
     "Giulio de' Medici",
@@ -1169,6 +1191,7 @@
     "Ming",
     "Much Ado About Nothing",
     "Mughal Empire",
+    "Musket",
     "Paracelsus",
     "Philip",
     "Protestant Reformation",
@@ -1177,6 +1200,7 @@
     "Rodrigo Borgia",
     "Romeo",
     "Shakespeare",
+    "Shamshir",
     "Siege of Malta",
     "Siege of Tenochtitlan",
     "Something is rotten in Denmark",
@@ -1192,8 +1216,13 @@
     "The Spanish Armada",
     "The play's the thing",
     "To be or not to be",
+    "Tulwar",
     "Twelfth Night",
-    "Wittenberg"
+    "Wittenberg",
+    "Zweihander"
+  ],
+  "16th Century BC": [
+    "Khopesh"
   ],
   "1700s": [
     "Samuel Johnson"
@@ -1238,6 +1267,7 @@
   "17th Century": [
     "Antony and Cleopatra",
     "Bach",
+    "Bayonet",
     "Bohemian Revolt",
     "Don Quixote",
     "Galileo",
@@ -1247,6 +1277,7 @@
     "Guy Fawkes",
     "Hamlet",
     "Handel",
+    "Hanger",
     "I think, therefore I am",
     "James",
     "James I",
@@ -1255,6 +1286,7 @@
     "John Proctor",
     "Kepler",
     "King Lear",
+    "Kirpan",
     "L'etat c'est moi",
     "Macbeth",
     "Maurice of Nassau",
@@ -1268,6 +1300,7 @@
     "Rebecca Nurse",
     "Remember, remember",
     "Robert Catesby",
+    "Sabre",
     "Salem",
     "Salem Witch Trials",
     "Samuel Pepys",
@@ -1449,8 +1482,11 @@
     "Beethoven",
     "Bonhomme Richard",
     "Boston Tea Party",
+    "Brown Bess",
     "Catherine",
+    "Charleville Musket",
     "Charlotte Corday",
+    "Churika",
     "Don Giovanni",
     "Dream of the Red Chamber",
     "Edward Jenner",
@@ -1629,6 +1665,7 @@
     "King Kong",
     "Light in August",
     "Louis Armstrong",
+    "M1 Garand",
     "Manchukuo",
     "Messerschmitt",
     "MiG",
@@ -2531,6 +2568,7 @@
     "April 14th, 1865",
     "Arthur",
     "Baháʼu'lláh",
+    "Baker Rifle",
     "Battle of Manila Bay",
     "Battle of Santiago de Cuba",
     "Battle of Trafalgar",
@@ -2538,6 +2576,7 @@
     "Bell",
     "Bismarck",
     "Bridge",
+    "Brown Bess",
     "Buchanan",
     "Buick",
     "Cadillac",
@@ -2546,6 +2585,7 @@
     "Carmen",
     "Challenger",
     "Charles Taze Russell",
+    "Charleville Musket",
     "Charlotte Brontë",
     "Clara Barton",
     "Clara Schumann",
@@ -2593,6 +2633,7 @@
     "Helmuth von Moltke the Elder",
     "Hetty Green",
     "Hong Xiuquan",
+    "Howitzer",
     "Isabella Bird",
     "It was the best of times",
     "Jackson",
@@ -2611,6 +2652,7 @@
     "La Bohème",
     "La Garde meurt, elle ne se rend pas!",
     "La Traviata",
+    "Lee-Enfield",
     "Lenore",
     "Leo",
     "Les Misérables",
@@ -3195,6 +3237,7 @@
     "Apollo 13",
     "April 15th, 1912",
     "Archibald Butt",
+    "Arisaka",
     "Armageddon",
     "Art Tatum",
     "Arya Stark",
@@ -3563,6 +3606,7 @@
     "Lawrence of Arabia",
     "Learjet",
     "Lee Harvey Oswald",
+    "Lee-Enfield",
     "Lex Luthor",
     "Lexus",
     "Liberace",
@@ -3584,6 +3628,7 @@
     "Louis Armstrong",
     "Luigi",
     "Lusitania",
+    "M1 Garand",
     "Madame Butterfly",
     "Madonna",
     "Mafia",
@@ -4532,6 +4577,8 @@
     "Sun He"
   ],
   "3rd Century BC": [
+    "Ballista",
+    "Ballistae",
     "Hannibal",
     "Jing Ke",
     "Li Si",
@@ -4549,6 +4596,7 @@
     "Alexander the Great",
     "Aristotle",
     "Chandragupta Maurya",
+    "Dao",
     "Hundred Schools of Thought",
     "Philip II of Macedon",
     "Plato",
@@ -4575,6 +4623,7 @@
     "Leonidas",
     "Oedipus Rex",
     "Plato",
+    "Sling",
     "Socrates",
     "Spring and Autumn Annals",
     "Sun Tzu",
@@ -4591,6 +4640,8 @@
     "Chen Qian",
     "Emperor Yang of Sui",
     "Grand Canal",
+    "Mangonel",
+    "Seax",
     "Sui",
     "The Plague of Justinian",
     "Theodora",
@@ -4622,6 +4673,9 @@
     "Tang Poetry",
     "Wu Zetian"
   ],
+  "7th Century BC": [
+    "Jian"
+  ],
   "8th Century": [
     "An Lushan Rebellion",
     "Charlemagne",
@@ -4636,7 +4690,8 @@
     "Iliad",
     "Odyssey",
     "The Iliad",
-    "The Odyssey"
+    "The Odyssey",
+    "Xiphos"
   ],
   "9th Century": [
     "Charlemagne",
@@ -5509,6 +5564,7 @@
     "Peregrine Falcon",
     "Petrel",
     "Phorusrhacos",
+    "Pike",
     "Plateosaurus",
     "Plesiadapis",
     "Plesiosaurus",
@@ -5787,6 +5843,7 @@
     "Petrie",
     "Phoenix",
     "Phorusrhacos",
+    "Pike",
     "Pink Panther",
     "Plateosaurus",
     "Plesiadapis",
@@ -6326,10 +6383,12 @@
     "Xerxes"
   ],
   "Battle of Waterloo": [
+    "Cannon",
     "June 18th, 1815",
     "La Garde meurt, elle ne se rend pas!",
     "Merde!",
     "Michel Ney",
+    "Musket",
     "Napoleon Bonaparte",
     "Von Blucher",
     "Waterloo",
@@ -6975,6 +7034,12 @@
     "Samuel Adams",
     "Tea"
   ],
+  "Bows": [
+    "Bow",
+    "Crossbow",
+    "Longbow",
+    "Recurve Bow"
+  ],
   "Brachiopods": [
     "Brachiopods"
   ],
@@ -7108,6 +7173,7 @@
     "Terracotta Army",
     "Texas Book Depository",
     "Theatre of Pompey",
+    "Theodosian Walls",
     "Trump Tower",
     "Versailles",
     "Watergate",
@@ -7143,7 +7209,8 @@
     "Thomas Andrews"
   ],
   "Byzantine Architecture": [
-    "Hagia Sophia"
+    "Hagia Sophia",
+    "Theodosian Walls"
   ],
   "C.S. Lewis": [
     "Prince Caspian",
@@ -9448,6 +9515,7 @@
     "British Somaliland",
     "British West Africa",
     "Burma",
+    "Byzantine Empire",
     "Carthage",
     "Ceylon",
     "County of Tripoli",
@@ -9991,6 +10059,20 @@
     "Wineberry",
     "Youngberry",
     "Zucchini"
+  ],
+  "Curved Blades": [
+    "Churika",
+    "Dao",
+    "Dusack",
+    "Falchion",
+    "Guandao",
+    "Hanger",
+    "Khopesh",
+    "Kirpan",
+    "Sabre",
+    "Shamshir",
+    "Tachi",
+    "Tulwar"
   ],
   "D&D Stats": [
     "CHA",
@@ -11499,6 +11581,7 @@
   "Ends with ACK": [
     "Backpack",
     "Black",
+    "Dusack",
     "I'll be back",
     "Ice Pack",
     "Tack",
@@ -11612,6 +11695,7 @@
     "Kuwait"
   ],
   "Ends with AKA": [
+    "Arisaka",
     "Moussaka",
     "Tanaka"
   ],
@@ -11791,6 +11875,7 @@
     "Italian Somaliland",
     "La La Land",
     "Long Island",
+    "M1 Garand",
     "Midway Island",
     "New Zealand",
     "Nomadland",
@@ -11898,10 +11983,12 @@
   "Ends with ARD": [
     "A Good Day to Die Hard",
     "Board",
+    "Bombard",
     "Bonhomme Richard",
     "Catherine Howard",
     "Chessboard",
     "Die Hard",
+    "Great Turkish Bombard",
     "L. Ron Hubbard",
     "Live Free or Die Hard",
     "Mabel Gardiner Hubbard",
@@ -12191,6 +12278,7 @@
   ],
   "Ends with BAN": [
     "Harry Potter and the Prisoner of Azkaban",
+    "Orban",
     "Sébastien Le Prestre de Vauban"
   ],
   "Ends with BAO": [
@@ -12315,7 +12403,9 @@
   ],
   "Ends with BOW": [
     "Bow",
-    "Longbow"
+    "Crossbow",
+    "Longbow",
+    "Recurve Bow"
   ],
   "Ends with BOY": [
     "Cowboy",
@@ -12328,6 +12418,9 @@
     "Cobra",
     "Libra",
     "Zebra"
+  ],
+  "Ends with BRE": [
+    "Sabre"
   ],
   "Ends with BTS": [
     "BTS"
@@ -12343,6 +12436,7 @@
   ],
   "Ends with BUS": [
     "Airbus",
+    "Arquebus",
     "Christopher Columbus",
     "Columbus"
   ],
@@ -12430,7 +12524,8 @@
     "Chi",
     "Karachi",
     "Kimchi",
-    "Mochi"
+    "Mochi",
+    "Tachi"
   ],
   "Ends with CHO": [
     "Echo",
@@ -12553,6 +12648,7 @@
     "Sudan"
   ],
   "Ends with DAO": [
+    "Dao",
     "Guandao"
   ],
   "Ends with DAR": [
@@ -12615,7 +12711,8 @@
     "Thunder",
     "Vader",
     "We shall never surrender",
-    "Wonder"
+    "Wonder",
+    "Zweihander"
   ],
   "Ends with DES": [
     "Colossus of Rhodes",
@@ -12800,6 +12897,9 @@
   "Ends with EAU": [
     "Juneau"
   ],
+  "Ends with EAX": [
+    "Seax"
+  ],
   "Ends with EBE": [
     "Jebe"
   ],
@@ -12926,6 +13026,7 @@
   "Ends with ELD": [
     "Battlefield",
     "Garfield",
+    "Lee-Enfield",
     "Shield",
     "Springfield",
     "Track and Field"
@@ -13115,7 +13216,8 @@
   ],
   "Ends with ESH": [
     "Bangladesh",
-    "Gilgamesh"
+    "Gilgamesh",
+    "Khopesh"
   ],
   "Ends with ESI": [
     "Sulawesi"
@@ -13125,6 +13227,7 @@
   ],
   "Ends with ESS": [
     "Battle of Tumu Fortress",
+    "Brown Bess",
     "Chess",
     "Chungking Express",
     "Dauntless",
@@ -13275,6 +13378,7 @@
     "Duck Confit"
   ],
   "Ends with FLE": [
+    "Baker Rifle",
     "Rifle",
     "Souffle",
     "Trifle"
@@ -13351,6 +13455,7 @@
     "Dagger",
     "Ginger",
     "Hamburger",
+    "Hanger",
     "Niger",
     "Tiger",
     "Voyager"
@@ -13439,6 +13544,7 @@
   ],
   "Ends with GOS": [
     "Bigos",
+    "Constantine XI Palaiologos",
     "Galapagos",
     "Three Amigos"
   ],
@@ -13554,6 +13660,9 @@
     "Tres Leches",
     "We will fight them on the beaches"
   ],
+  "Ends with HET": [
+    "Trebuchet"
+  ],
   "Ends with HEV": [
     "Khrushchev",
     "Krushchev"
@@ -13584,6 +13693,9 @@
     "Pinocchio",
     "Pistachio"
   ],
+  "Ends with HIR": [
+    "Shamshir"
+  ],
   "Ends with HKA": [
     "Kishka"
   ],
@@ -13602,6 +13714,9 @@
     "Anchor",
     "Lex Luthor",
     "Thor"
+  ],
+  "Ends with HOS": [
+    "Xiphos"
   ],
   "Ends with HOW": [
     "Rocky Horror Picture Show"
@@ -13650,6 +13765,7 @@
     "Hadrian",
     "Heinz Guderian",
     "Italian",
+    "Jian",
     "Marvin the Martian",
     "Prince Caspian",
     "The Plague of Justinian",
@@ -13770,6 +13886,7 @@
     "Aries",
     "Batteries",
     "Grave of the Fireflies",
+    "Janissaries",
     "Lord of the Flies",
     "Netherlands East Indies",
     "Smarties"
@@ -13832,11 +13949,13 @@
     "Pao de Queijo"
   ],
   "Ends with IKA": [
+    "Churika",
     "Tanganyika"
   ],
   "Ends with IKE": [
     "Ivy Mike",
     "Mike",
+    "Pike",
     "Spike",
     "The Tale of the Heike"
   ],
@@ -13995,6 +14114,7 @@
     "Siege of Nanjing",
     "Skiing",
     "Sledding",
+    "Sling",
     "Speed Skating",
     "Sticky Toffee Pudding",
     "Surfing",
@@ -14072,6 +14192,7 @@
     "Dandelion",
     "Deccan Traps Eruption",
     "Eyjafjallajökull Eruption",
+    "Falchion",
     "Federation",
     "Forbidden City Construction",
     "Iranian Revolution",
@@ -14172,6 +14293,7 @@
     "To Kill a Mockingbird"
   ],
   "Ends with IRE": [
+    "Byzantine Empire",
     "Chariots of Fire",
     "Harry Potter and the Goblet of Fire",
     "Light My Fire",
@@ -14438,7 +14560,9 @@
   ],
   "Ends with KET": [
     "Brisket",
+    "Charleville Musket",
     "Cricket",
+    "Musket",
     "Nantucket",
     "Phuket"
   ],
@@ -14723,7 +14847,8 @@
   ],
   "Ends with LLS": [
     "A Monster Calls",
-    "For Whom the Bell Tolls"
+    "For Whom the Bell Tolls",
+    "Theodosian Walls"
   ],
   "Ends with LLY": [
     "Buddy Holly",
@@ -15057,6 +15182,7 @@
     "Beyonce",
     "Die Hard with a Vengeance",
     "Everything Everywhere All at Once",
+    "Fire Lance",
     "Florence",
     "France",
     "Harry Potter and the Half-Blood Prince",
@@ -15136,6 +15262,7 @@
   ],
   "Ends with NEL": [
     "Chanel",
+    "Mangonel",
     "Tunnel"
   ],
   "Ends with NEO": [
@@ -15160,6 +15287,7 @@
     "The Mitchells vs the Machines"
   ],
   "Ends with NET": [
+    "Bayonet",
     "Gannet",
     "Hornet",
     "Planet",
@@ -15314,6 +15442,7 @@
   ],
   "Ends with NON": [
     "Beef Bourguignon",
+    "Cannon",
     "Canon",
     "Lebanon",
     "Parthenon",
@@ -15742,6 +15871,7 @@
     "USS Gerald R. Ford"
   ],
   "Ends with ORE": [
+    "Claymore",
     "Dumbledore",
     "Ezio Auditore",
     "Fillmore",
@@ -15773,6 +15903,7 @@
     "Capricorn",
     "Corn",
     "Foghorn Leghorn",
+    "Golden Horn",
     "Matterhorn",
     "Unicorn"
   ],
@@ -15936,6 +16067,7 @@
   "Ends with PAN": [
     "Battle of Saipan",
     "Japan",
+    "Kirpan",
     "Peter Pan",
     "Saipan"
   ],
@@ -16012,6 +16144,7 @@
     "Maple",
     "Ordinary People",
     "Purple",
+    "Siege of Constantinople",
     "The Color Purple",
     "The Fall of Constantinople"
   ],
@@ -16215,6 +16348,7 @@
     "Corfu"
   ],
   "Ends with RGE": [
+    "Flamberge",
     "George",
     "Pickett's Charge",
     "The Madness of King George"
@@ -16586,6 +16720,7 @@
   "Ends with SER": [
     "Bowser",
     "Dresser",
+    "Messer",
     "Nasser"
   ],
   "Ends with SES": [
@@ -16719,6 +16854,7 @@
   ],
   "Ends with STA": [
     "Augusta",
+    "Ballista",
     "Pasta"
   ],
   "Ends with STO": [
@@ -16759,6 +16895,9 @@
   ],
   "Ends with T-4": [
     "LVT-4"
+  ],
+  "Ends with TAE": [
+    "Ballistae"
   ],
   "Ends with TAH": [
     "Cheetah",
@@ -16933,6 +17072,9 @@
   ],
   "Ends with TOA": [
     "Krakatoa"
+  ],
+  "Ends with TOC": [
+    "Estoc"
   ],
   "Ends with TOK": [
     "TikTok"
@@ -17445,7 +17587,8 @@
     "The Trojan War",
     "The Vietnam War",
     "Third Servile War",
-    "Total War"
+    "Total War",
+    "Tulwar"
   ],
   "Ends with WAT": [
     "Angkor Wat"
@@ -17595,7 +17738,8 @@
     "Frozen"
   ],
   "Ends with ZER": [
-    "Freezer"
+    "Freezer",
+    "Howitzer"
   ],
   "Ends with ZHI": [
     "Battle of Zhizhi",
@@ -17992,6 +18136,7 @@
     "Second Triumvirate",
     "Siberian Traps Eruption",
     "Siege of Calais",
+    "Siege of Constantinople",
     "Siege of Hatra",
     "Siege of Malta",
     "Siege of Nanjing",
@@ -19270,6 +19415,7 @@
     "Carp",
     "Coelacanth",
     "Mudskipper",
+    "Pike",
     "Ray",
     "Sailfish",
     "Salmon",
@@ -19804,6 +19950,7 @@
   ],
   "Former Empires": [
     "Austria-Hungary",
+    "Byzantine Empire",
     "Carthage",
     "Gran Colombia",
     "Mughal Empire",
@@ -20316,6 +20463,24 @@
     "Gulf of Mexico",
     "Persian Gulf"
   ],
+  "Gunpowder Weapons": [
+    "Arisaka",
+    "Arquebus",
+    "Baker Rifle",
+    "Bombard",
+    "Brown Bess",
+    "Cannon",
+    "Charleville Musket",
+    "Fire Lance",
+    "Great Turkish Bombard",
+    "Gunpowder",
+    "Howitzer",
+    "Lee-Enfield",
+    "M1 Garand",
+    "Musket",
+    "Puckle Gun",
+    "Rifle"
+  ],
   "Guns N' Roses": [
     "Sweet Child O' Mine"
   ],
@@ -20549,21 +20714,62 @@
     "Salem"
   ],
   "Historical Weapons": [
+    "Arisaka",
+    "Arquebus",
     "Axe",
+    "Baker Rifle",
+    "Ballista",
+    "Ballistae",
+    "Bayonet",
+    "Bombard",
     "Bow",
+    "Brown Bess",
+    "Cannon",
+    "Charleville Musket",
+    "Churika",
+    "Claymore",
     "Club",
+    "Crossbow",
     "Dagger",
+    "Dao",
+    "Dusack",
+    "Estoc",
+    "Falchion",
+    "Fire Lance",
+    "Flamberge",
     "Gladius",
+    "Great Turkish Bombard",
     "Guandao",
     "Halberd",
+    "Hanger",
+    "Howitzer",
+    "Jian",
+    "Khopesh",
+    "Kirpan",
+    "Lee-Enfield",
     "Longbow",
     "Mace",
+    "Mangonel",
+    "Messer",
+    "Musket",
+    "Pike",
     "Pilum",
     "Pugio",
+    "Recurve Bow",
+    "Sabre",
+    "Scorpion",
     "Scutum",
+    "Seax",
+    "Shamshir",
+    "Sling",
     "Spatha",
     "Spear",
-    "Sword"
+    "Sword",
+    "Tachi",
+    "Trebuchet",
+    "Tulwar",
+    "Xiphos",
+    "Zweihander"
   ],
   "Hockey Players": [
     "Wayne Gretzky"
@@ -21943,6 +22149,7 @@
     "Genoa",
     "Georgia",
     "Germany",
+    "Golden Horn",
     "Gotland",
     "Gozo",
     "Gran Canaria",
@@ -22601,7 +22808,8 @@
     "Hagia Sophia",
     "Mont Saint-Michel",
     "Notre Dame",
-    "Old London Bridge"
+    "Old London Bridge",
+    "Theodosian Walls"
   ],
   "Medieval Figures": [
     "Charlemagne",
@@ -22729,6 +22937,7 @@
     "Colossus",
     "Commodus",
     "Confucius",
+    "Constantine XI Palaiologos",
     "Constantine the Great",
     "Coolidge",
     "Copernicus",
@@ -22860,6 +23069,7 @@
     "James I",
     "James the Less",
     "Jan Hus",
+    "Janissaries",
     "Jean Bernadotte",
     "Jebe",
     "Jefferson",
@@ -22979,6 +23189,7 @@
     "Oedipus Rex",
     "Ohtani",
     "Oppenheimer",
+    "Orban",
     "Oscar",
     "Othello",
     "Ozu",
@@ -24205,6 +24416,7 @@
     "Charlemagne",
     "Charles IV",
     "Charles V",
+    "Constantine XI Palaiologos",
     "Cyrus the Great",
     "Duke",
     "Edward I",
@@ -30020,17 +30232,25 @@
     "Zhao Mo"
   ],
   "Napoleonic Wars": [
+    "Baker Rifle",
     "Battle of Trafalgar",
+    "Bayonet",
     "Bellerophon",
+    "Brown Bess",
     "Bucentaure",
+    "Cannon",
+    "Charleville Musket",
+    "Howitzer",
     "Jean Bernadotte",
     "June 18th, 1815",
     "La Garde meurt, elle ne se rend pas!",
     "Master and Commander: The Far Side of the World",
     "Merde!",
     "Michel Ney",
+    "Musket",
     "Napoleon Bonaparte",
     "Redoutable",
+    "Sabre",
     "Santissima Trinidad",
     "Temeraire",
     "The Duellists",
@@ -30097,6 +30317,7 @@
     "Cleveland",
     "Clinton",
     "Commodus",
+    "Constantine XI Palaiologos",
     "Constantine the Great",
     "Coolidge",
     "Cyrus the Great",
@@ -30920,6 +31141,34 @@
     "Worm",
     "Zazu"
   ],
+  "One-Handed Weapons": [
+    "Axe",
+    "Bayonet",
+    "Churika",
+    "Club",
+    "Dagger",
+    "Dao",
+    "Dusack",
+    "Falchion",
+    "Gladius",
+    "Hammer",
+    "Hanger",
+    "Jian",
+    "Khopesh",
+    "Kirpan",
+    "Knife",
+    "Mace",
+    "Messer",
+    "Pugio",
+    "Sabre",
+    "Seax",
+    "Shamshir",
+    "Sling",
+    "Spatha",
+    "Sword",
+    "Tulwar",
+    "Xiphos"
+  ],
   "Opera": [
     "Andrea Bocelli",
     "Beethoven",
@@ -31487,6 +31736,7 @@
     "Colossus",
     "Commodus",
     "Confucius",
+    "Constantine XI Palaiologos",
     "Constantine the Great",
     "Coolidge",
     "Copernicus",
@@ -31798,6 +32048,7 @@
     "Ohtani",
     "Olive",
     "Oppenheimer",
+    "Orban",
     "Oscar",
     "Othello",
     "Ozu",
@@ -32429,6 +32680,7 @@
     "Gettysburg",
     "Ghana",
     "Gobi",
+    "Golden Horn",
     "Gotland",
     "Gozo",
     "Gran Canaria",
@@ -33400,6 +33652,13 @@
     "Sylvia Plath",
     "Tao Yuanming"
   ],
+  "Polearms": [
+    "Guandao",
+    "Halberd",
+    "Pike",
+    "Pilum",
+    "Spear"
+  ],
   "Political Events": [
     "10/7",
     "1989 Chinese Protests",
@@ -34062,6 +34321,25 @@
     "Congo",
     "Daintree"
   ],
+  "Ranged Weapons": [
+    "Arisaka",
+    "Arquebus",
+    "Baker Rifle",
+    "Bow",
+    "Brown Bess",
+    "Charleville Musket",
+    "Crossbow",
+    "Fire Lance",
+    "Howitzer",
+    "Lee-Enfield",
+    "Longbow",
+    "M1 Garand",
+    "Musket",
+    "Puckle Gun",
+    "Recurve Bow",
+    "Rifle",
+    "Sling"
+  ],
   "Real Animals": [
     "Albatross",
     "Allosaurus",
@@ -34225,6 +34503,7 @@
     "Petrel",
     "Phoenix",
     "Phorusrhacos",
+    "Pike",
     "Pink Panther",
     "Plateosaurus",
     "Plesiadapis",
@@ -34390,6 +34669,7 @@
     "Cobb",
     "Commodus",
     "Confucius",
+    "Constantine XI Palaiologos",
     "Constantine the Great",
     "Coolidge",
     "Copernicus",
@@ -34649,6 +34929,7 @@
     "Obama",
     "Ohtani",
     "Oppenheimer",
+    "Orban",
     "Ozu",
     "Ozymandias",
     "Paracelsus",
@@ -35344,6 +35625,8 @@
     "Antonine Plague",
     "Arch of Titus",
     "Augustus",
+    "Ballista",
+    "Ballistae",
     "Bar Kokhba Revolt",
     "Basilica Aemilia",
     "Basilica Porcia",
@@ -35385,6 +35668,7 @@
     "Roman Forum",
     "Rome",
     "Sardinia",
+    "Scorpion",
     "Scutum",
     "Sicily",
     "Siege of Hatra",
@@ -35583,6 +35867,7 @@
     "Charlemagne",
     "Charles IV",
     "Charles V",
+    "Constantine XI Palaiologos",
     "Cyrus the Great",
     "Edward I",
     "Edward III",
@@ -36549,10 +36834,22 @@
     "Twice Cooked Pork",
     "Yu Xiang Qie Zi"
   ],
+  "Siege Engines": [
+    "Ballista",
+    "Ballistae",
+    "Bombard",
+    "Cannon",
+    "Great Turkish Bombard",
+    "Howitzer",
+    "Mangonel",
+    "Scorpion",
+    "Trebuchet"
+  ],
   "Sieges": [
     "Battle of Alesia",
     "Battle of Dien Bien Phu",
     "Siege of Calais",
+    "Siege of Constantinople",
     "Siege of Hatra",
     "Siege of Malta",
     "Siege of Nanjing",
@@ -36561,6 +36858,7 @@
     "Siege of Suiyang",
     "Siege of Tenochtitlan",
     "The Battle of Stalingrad",
+    "The Fall of Constantinople",
     "The Trojan War"
   ],
   "Silent Films": [
@@ -36686,6 +36984,7 @@
     "Bao",
     "Battle of Yamen",
     "Dim Sum",
+    "Fire Lance",
     "Green Tea",
     "Gunpowder",
     "Hoisin",
@@ -37454,6 +37753,7 @@
   ],
   "Starts with ARI": [
     "Aries",
+    "Arisaka",
     "Aristotle",
     "Arizona"
   ],
@@ -37465,6 +37765,9 @@
     "Armageddon",
     "Armenia",
     "Armin Meiwes"
+  ],
+  "Starts with ARQ": [
+    "Arquebus"
   ],
   "Starts with ARR": [
     "Arrietty",
@@ -37615,12 +37918,15 @@
     "Baijiu"
   ],
   "Starts with BAK": [
+    "Baker Rifle",
     "Baklava"
   ],
   "Starts with BAL": [
     "Bali",
     "Ball",
     "Ball Lightning",
+    "Ballista",
+    "Ballistae",
     "Baltic Sea"
   ],
   "Starts with BAM": [
@@ -37712,7 +38018,8 @@
   "Starts with BAY": [
     "Bay Leaf",
     "Bay of Pigs",
-    "Bay of Pigs Invasion"
+    "Bay of Pigs Invasion",
+    "Bayonet"
   ],
   "Starts with BBQ": [
     "BBQ"
@@ -37896,6 +38203,9 @@
     "Bolognese",
     "Bolt"
   ],
+  "Starts with BOM": [
+    "Bombard"
+  ],
   "Starts with BON": [
     "Bond",
     "Bonhomme Richard"
@@ -37981,6 +38291,7 @@
     "Brontornis",
     "Bronze Bird Terrace",
     "Brother Bear",
+    "Brown Bess",
     "Brownie"
   ],
   "Starts with BRU": [
@@ -38046,6 +38357,9 @@
   "Starts with BYR": [
     "Byrd"
   ],
+  "Starts with BYZ": [
+    "Byzantine Empire"
+  ],
   "Starts with CAB": [
     "Cabaret",
     "Cabbage",
@@ -38095,6 +38409,7 @@
     "Cancer",
     "Cancun",
     "Cannoli",
+    "Cannon",
     "Canoe",
     "Canon",
     "Canuck"
@@ -38204,6 +38519,7 @@
     "Charles Taze Russell",
     "Charles V",
     "Charleston",
+    "Charleville Musket",
     "Charlie",
     "Charlie Parker",
     "Charlotte Brontë",
@@ -38260,6 +38576,7 @@
   "Starts with CHU": [
     "Chubby Checker",
     "Chungking Express",
+    "Churika",
     "Churro",
     "Chutney",
     "Chuuk",
@@ -38292,7 +38609,8 @@
   "Starts with CLA": [
     "Clara Barton",
     "Clara Schumann",
-    "Claudius"
+    "Claudius",
+    "Claymore"
   ],
   "Starts with CLE": [
     "Cleopatra",
@@ -38376,6 +38694,7 @@
     "Congee",
     "Congo",
     "Congo Crisis",
+    "Constantine XI Palaiologos",
     "Constantine the Great",
     "Constantinople",
     "Conte di Savoia"
@@ -38447,6 +38766,7 @@
     "Croissant",
     "Croque Monsieur",
     "Cross Country Skiing",
+    "Crossbow",
     "Crouching Tiger, Hidden Dragon",
     "Crow"
   ],
@@ -38531,6 +38851,9 @@
     "Dante",
     "Dante's Peak",
     "Danube"
+  ],
+  "Starts with DAO": [
+    "Dao"
   ],
   "Starts with DAP": [
     "Daphne"
@@ -38757,6 +39080,9 @@
     "Dune",
     "Dungan Revolt"
   ],
+  "Starts with DUS": [
+    "Dusack"
+  ],
   "Starts with DUT": [
     "Dutch Guiana"
   ],
@@ -38926,6 +39252,7 @@
     "Espagnole"
   ],
   "Starts with EST": [
+    "Estoc",
     "Estonia"
   ],
   "Starts with ESW": [
@@ -38994,6 +39321,7 @@
   ],
   "Starts with FAL": [
     "Falafel",
+    "Falchion",
     "Falcon",
     "Falkland Islands",
     "Fall of the Berlin Wall",
@@ -39061,6 +39389,7 @@
     "Finland"
   ],
   "Starts with FIR": [
+    "Fire Lance",
     "Fire Truck",
     "Firefly",
     "First Defenestration of Prague",
@@ -39071,6 +39400,7 @@
     "Fish and Chips"
   ],
   "Starts with FLA": [
+    "Flamberge",
     "Flamingo",
     "Flan",
     "Flash",
@@ -39331,6 +39661,7 @@
     "Golabki",
     "Gold",
     "Golden Hind",
+    "Golden Horn",
     "Golf",
     "Goliath"
   ],
@@ -39372,6 +39703,7 @@
     "Grease",
     "Great Lakes",
     "Great Oxygenation Event",
+    "Great Turkish Bombard",
     "Great Wall",
     "Great White Shark",
     "Greece",
@@ -39486,6 +39818,7 @@
     "Han Wudi's Defeat of the Xiongnu",
     "Hancock",
     "Handel",
+    "Hanger",
     "Hanging Gardens",
     "Hannibal",
     "Hannibal Lecter"
@@ -39668,6 +40001,7 @@
   "Starts with HOW": [
     "How the Grinch Stole Christmas",
     "Howards End",
+    "Howitzer",
     "Howl's Moving Castle"
   ],
   "Starts with HUB": [
@@ -39937,7 +40271,8 @@
     "Jan Hus",
     "Jane Austen",
     "Jane Eyre",
-    "Jane Seymour"
+    "Jane Seymour",
+    "Janissaries"
   ],
   "Starts with JAP": [
     "Japan",
@@ -39979,6 +40314,7 @@
     "Jesus Christ Superstar"
   ],
   "Starts with JIA": [
+    "Jian",
     "Jiaozi"
   ],
   "Starts with JIB": [
@@ -40159,6 +40495,9 @@
   "Starts with KHA": [
     "Khan"
   ],
+  "Starts with KHO": [
+    "Khopesh"
+  ],
   "Starts with KHR": [
     "Khrushchev"
   ],
@@ -40195,7 +40534,8 @@
   ],
   "Starts with KIR": [
     "Kiribati",
-    "Kirk"
+    "Kirk",
+    "Kirpan"
   ],
   "Starts with KIS": [
     "Kishka"
@@ -40377,7 +40717,8 @@
     "LED"
   ],
   "Starts with LEE": [
-    "Lee Harvey Oswald"
+    "Lee Harvey Oswald",
+    "Lee-Enfield"
   ],
   "Starts with LEI": [
     "Leia",
@@ -40564,6 +40905,9 @@
   "Starts with LYR": [
     "Lyra"
   ],
+  "Starts with M1 ": [
+    "M1 Garand"
+  ],
   "Starts with MA ": [
     "Ma La Tang"
   ],
@@ -40626,6 +40970,7 @@
     "Manatee",
     "Manchukuo",
     "Mango Sticky Rice",
+    "Mangonel",
     "Manhattan",
     "Manhunter",
     "Mani",
@@ -40749,6 +41094,7 @@
     "Merde!"
   ],
   "Starts with MES": [
+    "Messer",
     "Messerschmitt"
   ],
   "Starts with MET": [
@@ -40933,6 +41279,7 @@
   "Starts with MUS": [
     "Musashi",
     "Musk",
+    "Musket",
     "Mustang",
     "Mustard"
   ],
@@ -41228,6 +41575,7 @@
     "Orange Chicken"
   ],
   "Starts with ORB": [
+    "Orban",
     "Orbit"
   ],
   "Starts with ORC": [
@@ -41455,6 +41803,9 @@
     "Pierce",
     "Pierogi",
     "Pierre"
+  ],
+  "Starts with PIK": [
+    "Pike"
   ],
   "Starts with PIL": [
     "Pilsner",
@@ -41740,6 +42091,9 @@
     "Rebecca Nurse",
     "Rebel Moon"
   ],
+  "Starts with REC": [
+    "Recurve Bow"
+  ],
   "Starts with RED": [
     "Red",
     "Red 2",
@@ -41929,6 +42283,7 @@
     "Saab"
   ],
   "Starts with SAB": [
+    "Sabre",
     "Sabretooth"
   ],
   "Starts with SAC": [
@@ -42065,7 +42420,8 @@
     "Seahawk",
     "Seal",
     "Seat",
-    "Seattle"
+    "Seattle",
+    "Seax"
   ],
   "Starts with SEC": [
     "Second Defenestration of Prague",
@@ -42107,6 +42463,7 @@
     "Shaka Zulu",
     "Shakespeare",
     "Shakespeare in Love",
+    "Shamshir",
     "Shang Yang",
     "Shark",
     "Shashlik",
@@ -42143,6 +42500,7 @@
   ],
   "Starts with SIE": [
     "Siege of Calais",
+    "Siege of Constantinople",
     "Siege of Hatra",
     "Siege of Malta",
     "Siege of Nanjing",
@@ -42204,6 +42562,9 @@
     "Sledding",
     "Sleeping Beauty",
     "Sleipnir"
+  ],
+  "Starts with SLI": [
+    "Sling"
   ],
   "Starts with SLO": [
     "Slovakia",
@@ -42515,6 +42876,7 @@
     "Tabularium"
   ],
   "Starts with TAC": [
+    "Tachi",
     "Tack",
     "Taco"
   ],
@@ -42946,6 +43308,7 @@
     "Theatre of Pompey",
     "Thelonious Monk",
     "Theodora",
+    "Theodosian Walls",
     "Thera",
     "Thermopylae",
     "Theseus",
@@ -43083,6 +43446,7 @@
     "Treasure Planet",
     "Treaty of Brétigny",
     "Treaty of Troyes",
+    "Trebuchet",
     "Trenton",
     "Tres Leches"
   ],
@@ -43115,7 +43479,8 @@
     "Tteokbokki"
   ],
   "Starts with TUL": [
-    "Tulip"
+    "Tulip",
+    "Tulwar"
   ],
   "Starts with TUN": [
     "Tuna",
@@ -43480,6 +43845,9 @@
     "Xiao Ze",
     "Xiaolongbao"
   ],
+  "Starts with XIP": [
+    "Xiphos"
+  ],
   "Starts with XUA": [
     "Xuanwu Gate"
   ],
@@ -43615,6 +43983,9 @@
   ],
   "Starts with ZUR": [
     "Zurek"
+  ],
+  "Starts with ZWE": [
+    "Zweihander"
   ],
   "Starts with ÖGE": [
     "Ögedei Khan"
@@ -43802,6 +44173,19 @@
     "Paris",
     "The French Revolution"
   ],
+  "Straight Blades": [
+    "Claymore",
+    "Estoc",
+    "Flamberge",
+    "Gladius",
+    "Jian",
+    "Messer",
+    "Seax",
+    "Spatha",
+    "Sword",
+    "Xiphos",
+    "Zweihander"
+  ],
   "Studio Ghibli": [
     "Arrietty",
     "Castle in the Sky",
@@ -43932,6 +44316,30 @@
     "Spartacus",
     "The Seven Magnificent Gladiators",
     "Troy"
+  ],
+  "Swords": [
+    "Churika",
+    "Claymore",
+    "Dao",
+    "Dusack",
+    "Estoc",
+    "Falchion",
+    "Flamberge",
+    "Gladius",
+    "Hanger",
+    "Jian",
+    "Khopesh",
+    "Kirpan",
+    "Messer",
+    "Sabre",
+    "Seax",
+    "Shamshir",
+    "Spatha",
+    "Sword",
+    "Tachi",
+    "Tulwar",
+    "Xiphos",
+    "Zweihander"
   ],
   "Sylvia Plath": [
     "The Bell Jar"
@@ -44068,11 +44476,15 @@
     "Adams",
     "Bonhomme Richard",
     "Boston Tea Party",
+    "Brown Bess",
+    "Cannon",
+    "Charleville Musket",
     "Concord",
     "Give me liberty or give me death",
     "Hancock",
     "Jefferson",
     "Lafayette",
+    "Musket",
     "Samuel Adams",
     "The American Revolution",
     "The Patriot",
@@ -44113,6 +44525,7 @@
     "Zombie"
   ],
   "The Crimean War": [
+    "Minié ball",
     "Siege of Sevastopol"
   ],
   "The Crusades": [
@@ -44121,6 +44534,7 @@
     "Battle of Hattin",
     "Bohemond",
     "County of Tripoli",
+    "Crossbow",
     "Deus Vult",
     "Edward I",
     "Eugene III",
@@ -44135,6 +44549,7 @@
     "Louis IX",
     "Louis VII",
     "Malta",
+    "Mangonel",
     "Philip II of France",
     "Prester John",
     "Principality of Antioch",
@@ -44147,10 +44562,26 @@
     "The Albigensian Crusade",
     "The Crusades",
     "The First Crusade",
+    "Trebuchet",
     "Urban II"
   ],
   "The Doors": [
     "Light My Fire"
+  ],
+  "The Fall of Constantinople": [
+    "Bombard",
+    "Byzantine Empire",
+    "Constantine XI Palaiologos",
+    "Constantinople",
+    "Golden Horn",
+    "Great Turkish Bombard",
+    "Hagia Sophia",
+    "Janissaries",
+    "Mehmed II",
+    "Orban",
+    "Ottoman Empire",
+    "Siege of Constantinople",
+    "Theodosian Walls"
   ],
   "The Good Place": [
     "Angel",
@@ -44173,7 +44604,8 @@
     "The 5th of November"
   ],
   "The Korean War": [
-    "Battle of Inchon"
+    "Battle of Inchon",
+    "M1 Garand"
   ],
   "The Land Before Time": [
     "Cera",
@@ -44207,6 +44639,7 @@
     "The Renaissance"
   ],
   "The Russo-Japanese War": [
+    "Arisaka",
     "Battle of Tsushima"
   ],
   "The Sinking of RMS Titanic": [
@@ -44796,6 +45229,7 @@
     "Louis Armstrong",
     "Louisa May Alcott",
     "Luca",
+    "M1 Garand",
     "Mabel Gardiner Hubbard",
     "Mac and Cheese",
     "Madagascar",
@@ -45391,6 +45825,7 @@
     "Ark Royal",
     "Arthur Christmas",
     "Aston Martin",
+    "Baker Rifle",
     "Bangers and Mash",
     "Battle of Agincourt",
     "Battle of Anzio",
@@ -45415,6 +45850,7 @@
     "Britannia",
     "Britannia Hospital",
     "Britannic",
+    "Brown Bess",
     "Bubble and Squeak",
     "Buckingham Palace",
     "Captain Smith",
@@ -45469,6 +45905,7 @@
     "Guy Fawkes",
     "Hadrian's Wall",
     "Hamlet",
+    "Hanger",
     "Harry Potter and the Chamber of Secrets",
     "Harry Potter and the Deathly Hallows",
     "Harry Potter and the Deathly Hallows: Part 1",
@@ -45515,6 +45952,7 @@
     "Lancaster",
     "Land Rover",
     "Lawrence of Arabia",
+    "Lee-Enfield",
     "Life, the Universe and Everything",
     "London",
     "Longbow",
@@ -45552,6 +45990,7 @@
     "Performance",
     "Pete Best",
     "Peter Pan",
+    "Pike",
     "Polo",
     "Pride and Prejudice",
     "Prince Caspian",
@@ -45582,6 +46021,7 @@
     "Samuel Pepys",
     "Sark",
     "Scones",
+    "Seax",
     "Sense and Sensibility",
     "Shakespeare",
     "Shakespeare in Love",
@@ -45721,7 +46161,9 @@
     "Burundi"
   ],
   "Things Byzantine": [
-    "The Plague of Justinian"
+    "Byzantine Empire",
+    "The Plague of Justinian",
+    "Theodosian Walls"
   ],
   "Things Cambodian": [
     "Cambodia",
@@ -45835,6 +46277,7 @@
     "Congee",
     "Crouching Tiger, Hidden Dragon",
     "Dan Dan Noodles",
+    "Dao",
     "Days of Being Wild",
     "Death's End",
     "Dim Sum",
@@ -45853,6 +46296,7 @@
     "Emperor Yang of Sui",
     "Fallen Angels",
     "Farewell My Concubine",
+    "Fire Lance",
     "Forbidden City",
     "Forbidden City Construction",
     "General Tso",
@@ -45879,6 +46323,7 @@
     "Hundred Schools of Thought",
     "Imjin War",
     "In the Mood for Love",
+    "Jian",
     "Jiaozi",
     "Jin Ping Mei",
     "Jing Ke",
@@ -46049,6 +46494,7 @@
     "Cleopatra",
     "Egypt",
     "Hypatia",
+    "Khopesh",
     "Nasser",
     "Nile",
     "Nile River",
@@ -46107,6 +46553,7 @@
     "Battle of Poitiers",
     "Battle of Sluys",
     "Battle of Trafalgar",
+    "Bayonet",
     "Bearnaise",
     "Bechamel",
     "Beef Bourguignon",
@@ -46122,6 +46569,7 @@
     "Champagne",
     "Charlemagne",
     "Charles V",
+    "Charleville Musket",
     "Charlotte Corday",
     "Chocolat",
     "Citroën",
@@ -46139,7 +46587,10 @@
     "Eiffel Tower",
     "Escargot",
     "Espagnole",
+    "Estoc",
+    "Falchion",
     "Fencing",
+    "Flamberge",
     "France",
     "French Onion Soup",
     "Gallipoli Campaign",
@@ -46188,6 +46639,7 @@
     "Renault",
     "Rosa Bonheur",
     "Rosé",
+    "Sabre",
     "Sarah Bernhardt",
     "Siege of Calais",
     "Siege of Orléans",
@@ -46249,6 +46701,7 @@
     "Charlemagne",
     "Clara Schumann",
     "D-Day",
+    "Dusack",
     "East Germany",
     "Einstein",
     "Fall of the Berlin Wall",
@@ -46271,6 +46724,7 @@
     "Luge",
     "Martin Luther",
     "Mercedes",
+    "Messer",
     "Messerschmitt",
     "Metropolis",
     "Opel",
@@ -46299,7 +46753,8 @@
     "Weissbier",
     "Wittenberg",
     "World War I",
-    "World War II"
+    "World War II",
+    "Zweihander"
   ],
   "Things Ghanaian": [
     "Ghana"
@@ -46313,7 +46768,9 @@
     "Baklava",
     "Battle of Salamis",
     "Bellerophon",
+    "Byzantine Empire",
     "Cleopatra",
+    "Constantine XI Palaiologos",
     "Constantinople",
     "Corfu",
     "Crete",
@@ -46339,6 +46796,7 @@
     "Plato",
     "Rhodes",
     "Santorini",
+    "Siege of Constantinople",
     "Socrates",
     "Souvlaki",
     "Spanakopita",
@@ -46348,8 +46806,10 @@
     "The Odyssey",
     "The Trojan War",
     "The unexamined life is not worth living",
+    "Theodosian Walls",
     "Thermopylae",
     "Tzatziki",
+    "Xiphos",
     "Zeus"
   ],
   "Things Greenlandic": [
@@ -46387,7 +46847,8 @@
   ],
   "Things Hungarian": [
     "Budapest",
-    "Hungary"
+    "Hungary",
+    "Orban"
   ],
   "Things Icelandic": [
     "Eyjafjallajokull",
@@ -46403,6 +46864,7 @@
     "Butter Chicken",
     "Chai",
     "Chandragupta Maurya",
+    "Churika",
     "Chutney",
     "Curry",
     "Dal",
@@ -46410,6 +46872,7 @@
     "Guru Nanak",
     "India",
     "Jalebi",
+    "Kirpan",
     "Korma",
     "Kulfi",
     "Lakshadweep",
@@ -46432,6 +46895,7 @@
     "The Ramayana",
     "The Sepoy Mutiny",
     "Tikka Masala",
+    "Tulwar",
     "Vindaloo"
   ],
   "Things Indonesian": [
@@ -46619,6 +47083,7 @@
     "Akagi",
     "Akira",
     "All You Need Is Kill",
+    "Arisaka",
     "Arrietty",
     "Battle of Guadalcanal",
     "Battle of Iwo Jima",
@@ -46720,6 +47185,7 @@
     "Sumo",
     "Super Mario",
     "Sushi",
+    "Tachi",
     "Taiyaki",
     "Takoyaki",
     "Tales from Earthsea",
@@ -46962,6 +47428,7 @@
     "Kublai Khan",
     "Mongolia",
     "Möngke Khan",
+    "Recurve Bow",
     "Subutai",
     "Temüjin",
     "The Mongol Empire",
@@ -47025,6 +47492,7 @@
   ],
   "Things Persian": [
     "Battle of Salamis",
+    "Shamshir",
     "Xerxes"
   ],
   "Things Peruvian": [
@@ -47077,6 +47545,8 @@
     "Arch of Titus",
     "Assassination of Caesar",
     "Augustus",
+    "Ballista",
+    "Ballistae",
     "Bar Kokhba Revolt",
     "Basilica Aemilia",
     "Basilica Porcia",
@@ -47152,6 +47622,7 @@
     "Rome",
     "Sardinia",
     "Saturn",
+    "Scorpion",
     "Scutum",
     "Second Triumvirate",
     "Servilius Casca",
@@ -47260,6 +47731,7 @@
     "Alexander Graham Bell",
     "Brave",
     "Braveheart",
+    "Claymore",
     "John Knox",
     "Macbeth",
     "Scotch",
@@ -47549,16 +48021,22 @@
     "Ayran",
     "Battle of Lepanto",
     "Blue Mosque",
+    "Bombard",
     "Constantinople",
     "Gallipoli Campaign",
+    "Golden Horn",
+    "Great Turkish Bombard",
     "Hagia Sophia",
+    "Janissaries",
     "Mehmed II",
     "Mehmet Ali Agca",
+    "Siege of Constantinople",
     "Siege of Malta",
     "Siege of Sevastopol",
     "Suleiman the Magnificent",
     "The Armenian Genocide",
     "The Fall of Constantinople",
+    "Theodosian Walls",
     "Timur",
     "Troy",
     "Turkey"
@@ -48071,6 +48549,20 @@
     "Mary I",
     "Queen Mary"
   ],
+  "Two-Handed Weapons": [
+    "Claymore",
+    "Crossbow",
+    "Estoc",
+    "Flamberge",
+    "Guandao",
+    "Halberd",
+    "Longbow",
+    "Pike",
+    "Recurve Bow",
+    "Spear",
+    "Tachi",
+    "Zweihander"
+  ],
   "Two-Letter Words": [
     "AB",
     "Go",
@@ -48576,39 +49068,82 @@
     "Watergate"
   ],
   "Weapons": [
+    "Arisaka",
     "Arm",
+    "Arquebus",
+    "Baker Rifle",
+    "Ballista",
+    "Ballistae",
+    "Bayonet",
+    "Bombard",
     "Bow",
+    "Brown Bess",
+    "Cannon",
     "Carcano Model 38",
     "Castle Bravo",
+    "Charleville Musket",
+    "Churika",
+    "Claymore",
     "Cobra",
+    "Crossbow",
     "Dagger",
+    "Dao",
     "Davy Crockett",
     "Draco",
+    "Dusack",
+    "Estoc",
+    "Falchion",
     "Fat Man",
+    "Fire Lance",
+    "Flamberge",
     "Gladius",
+    "Great Turkish Bombard",
     "Green Arrow",
     "Guandao",
     "Gunpowder",
     "H-bomb",
+    "Halberd",
     "Hammer",
+    "Hanger",
     "Hawkeye",
+    "Howitzer",
     "Ivy Mike",
+    "Jian",
+    "Khopesh",
+    "Kirpan",
     "Knife",
+    "Lee-Enfield",
     "Little Boy",
     "Longbow",
+    "M1 Garand",
     "Magazine",
+    "Mangonel",
+    "Messer",
     "Minié ball",
+    "Musket",
+    "Pike",
     "Pilum",
     "Puckle Gun",
     "Pugio",
+    "Recurve Bow",
     "Rifle",
+    "Sabre",
+    "Scorpion",
     "Scutum",
+    "Seax",
+    "Shamshir",
     "Shield",
+    "Sling",
     "Spatha",
     "Spear",
     "Sword",
+    "Tachi",
+    "Trebuchet",
     "Tsar Bomba",
-    "Witchblade"
+    "Tulwar",
+    "Witchblade",
+    "Xiphos",
+    "Zweihander"
   ],
   "Weather": [
     "Cloud",
@@ -48859,10 +49394,12 @@
     "Bow",
     "Chisel",
     "Club",
+    "Crossbow",
     "Hammer",
     "Longbow",
     "Pencil",
     "Pinocchio",
+    "Recurve Bow",
     "Saw",
     "Spear",
     "Stick"
@@ -48874,13 +49411,16 @@
     "Gallipoli Campaign",
     "Hood",
     "June 28th, 1914",
+    "Lee-Enfield",
     "Lusitania",
+    "Rifle",
     "Triple Alliance",
     "Triple Entente"
   ],
   "World War II": [
     "Akagi",
     "Anne Frank",
+    "Arisaka",
     "Arizona",
     "Ark Royal",
     "B-17",
@@ -48927,7 +49467,9 @@
     "Kerch-Eltigen Operation",
     "LVT-4",
     "Lancaster",
+    "Lee-Enfield",
     "Little Boy",
+    "M1 Garand",
     "Messerschmitt",
     "Montgomery",
     "Musashi",
