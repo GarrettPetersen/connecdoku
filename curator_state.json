@@ -5,531 +5,247 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "1bd69b70956968dc87351202de5b80ce00920c773436ebaf2b334e14628e162e",
+    "hash": "73afb677ad9ada6f038be56d137b315c5d429573e064b7d543529b0c774265bf",
     "rows": [
-      "1980s",
-      "6th Century BC",
-      "Ancient Figures",
-      "Women"
+      "11th Century",
+      "18th Century",
+      "Things Egyptian",
+      "Things Scottish"
     ],
     "cols": [
-      "Ends with ING",
-      "Founders of Religions",
-      "Royalty",
-      "Things Roman"
+      "Drama Stories",
+      "Historical Weapons",
+      "Religious Figures",
+      "Scientists"
     ],
     "timestamp": null,
-    "qualityScore": 10.129999999999997,
-    "maxSimilarityToPast": 0.3168,
-    "similarityPenalty": 2.5344,
-    "movieOverlapPenalty": 2.9511669166889494,
+    "qualityScore": 15.780000000000001,
+    "maxSimilarityToPast": 0.2861,
+    "similarityPenalty": 2.2888,
+    "movieOverlapPenalty": 4.487859966120836,
     "yearProximityPenalty": 0,
     "adjacentDecadePenalty": 0,
     "adjacentCenturyPenalty": 0,
     "temporalPenalty": 0,
-    "finalScore": 4.644433083311048
+    "finalScore": 9.003340033879166
   },
   "viableGrid": [
     [
       [
-        "Life, the Universe and Everything",
-        "The Shining",
-        "The Thing"
+        "The Tale of Genji"
       ],
       [
-        "L. Ron Hubbard"
+        "Crossbow"
       ],
       [
-        "Prince"
+        "Urban II"
       ],
       [
-        "The Seven Magnificent Gladiators"
+        "Avicenna"
       ]
     ],
     [
       [
-        "Tao Te Ching"
+        "Don Giovanni",
+        "Dream of the Red Chamber",
+        "The Magic Flute"
       ],
       [
-        "Laozi",
-        "Siddhartha Gautama",
-        "Zoroaster"
+        "Brown Bess",
+        "Charleville Musket",
+        "Churika"
       ],
       [
-        "Cyrus the Great"
+        "Baal Shem Tov",
+        "John Wesley"
       ],
       [
-        "Circus Maximus"
+        "Edward Jenner",
+        "Newton"
       ]
     ],
     [
-      [
-        "Tao Yuanming"
-      ],
-      [
-        "Confucius"
-      ],
-      [
-        "Alexander the Great",
-        "Pharaoh",
-        "Qin Shi Huang",
-        "Xerxes"
-      ],
-      [
-        "Augustus",
-        "Brutus",
-        "Caesar",
-        "Caligula",
-        "Cassius",
-        "Cassius Chaerea",
-        "Cicero",
-        "Claudius",
-        "Commodus",
-        "Constantine the Great",
-        "Hadrian",
-        "Julius Caesar",
-        "Marcus Aurelius",
-        "Mark Antony",
-        "Narcissus the Wrestler",
-        "Nero",
-        "Pompey",
-        "Servilius Casca",
-        "Spartacus",
-        "Sulla",
-        "Tiberius",
-        "Vespasian"
-      ]
-    ],
-    [
-      [
-        "Elizabeth Barrett Browning"
-      ],
-      [
-        "Mary Baker Eddy"
-      ],
-      [
-        "Anne Boleyn",
-        "Anne of Cleves",
-        "Catherine Howard",
-        "Catherine Parr",
-        "Catherine of Aragon",
-        "Elizabeth",
-        "Elizabeth I",
-        "Jane Seymour",
-        "Lady Jane Grey",
-        "Marie Antoinette",
-        "Mary I",
-        "Mary, Queen of Scots",
-        "Sophie, Duchess of Hohenberg",
-        "Victoria"
-      ],
       [
         "Cleopatra"
+      ],
+      [
+        "Khopesh"
+      ],
+      [
+        "Akhenaten"
+      ],
+      [
+        "Hypatia"
+      ]
+    ],
+    [
+      [
+        "Brave",
+        "Braveheart"
+      ],
+      [
+        "Claymore"
+      ],
+      [
+        "John Knox"
+      ],
+      [
+        "Alexander Graham Bell"
       ]
     ]
   ],
   "chosen": [
     [
-      "Life, the Universe and Everything",
-      "L. Ron Hubbard",
-      "Prince",
-      "The Seven Magnificent Gladiators"
+      "The Tale of Genji",
+      "Crossbow",
+      "Urban II",
+      "Avicenna"
     ],
     [
-      "Tao Te Ching",
-      "Siddhartha Gautama",
-      "Cyrus the Great",
-      "Circus Maximus"
+      "Dream of the Red Chamber",
+      "Brown Bess",
+      "John Wesley",
+      "Newton"
     ],
     [
-      "Tao Yuanming",
-      "Confucius",
-      "Alexander the Great",
-      "Julius Caesar"
+      "Cleopatra",
+      "Khopesh",
+      "Akhenaten",
+      "Hypatia"
     ],
     [
-      "Elizabeth Barrett Browning",
-      "Mary Baker Eddy",
-      "Elizabeth I",
-      "Cleopatra"
+      "Braveheart",
+      "Claymore",
+      "John Knox",
+      "Alexander Graham Bell"
     ]
   ],
   "usedWords": [
-    "Life, the Universe and Everything",
-    "L. Ron Hubbard",
-    "Prince",
-    "The Seven Magnificent Gladiators",
-    "Tao Te Ching",
-    "Siddhartha Gautama",
-    "Cyrus the Great",
-    "Circus Maximus",
-    "Tao Yuanming",
-    "Confucius",
-    "Alexander the Great",
-    "Julius Caesar",
-    "Elizabeth Barrett Browning",
-    "Mary Baker Eddy",
-    "Elizabeth I",
-    "Cleopatra"
+    "The Tale of Genji",
+    "Crossbow",
+    "Urban II",
+    "Avicenna",
+    "Dream of the Red Chamber",
+    "Brown Bess",
+    "John Wesley",
+    "Newton",
+    "Cleopatra",
+    "Khopesh",
+    "Akhenaten",
+    "Hypatia",
+    "Braveheart",
+    "Claymore",
+    "John Knox",
+    "Alexander Graham Bell"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "1bd69b70956968dc87351202de5b80ce00920c773436ebaf2b334e14628e162e",
+      "hash": "73afb677ad9ada6f038be56d137b315c5d429573e064b7d543529b0c774265bf",
       "rows": [
-        "1980s",
-        "6th Century BC",
-        "Ancient Figures",
-        "Women"
+        "11th Century",
+        "18th Century",
+        "Things Egyptian",
+        "Things Scottish"
       ],
       "cols": [
-        "Ends with ING",
-        "Founders of Religions",
-        "Royalty",
-        "Things Roman"
+        "Drama Stories",
+        "Historical Weapons",
+        "Religious Figures",
+        "Scientists"
       ],
       "timestamp": null,
-      "qualityScore": 10.129999999999997,
-      "maxSimilarityToPast": 0.3168,
-      "similarityPenalty": 2.5344,
-      "movieOverlapPenalty": 2.9511669166889494,
+      "qualityScore": 15.780000000000001,
+      "maxSimilarityToPast": 0.2861,
+      "similarityPenalty": 2.2888,
+      "movieOverlapPenalty": 4.487859966120836,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 4.644433083311048
+      "finalScore": 9.003340033879166
     },
     {
-      "hash": "326f051477781b545bb51f4d7d579f200d93bef34f1841f70480db67487ac1f4",
+      "hash": "1fa6c84dab3e2fd149fd36ae535c3a49bc755983ecccafba9d7fef9fbe6a1060",
       "rows": [
-        "1980s",
-        "Action Stories",
-        "Green Things",
-        "White Things"
+        "Animal Species",
+        "Athletes",
+        "Starts with GRE",
+        "Things French"
       ],
       "cols": [
-        "Animal Terms",
-        "DC Characters",
-        "Marvel Characters",
-        "Things Italian"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.35,
-      "maxSimilarityToPast": 0.5398,
-      "similarityPenalty": 4.3184,
-      "movieOverlapPenalty": 6.955264675755424,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.07633532424457634
-    },
-    {
-      "hash": "a6a34ab279db6b750839a4447c1a57c79c8702793859826ce55a0b935f3d35e8",
-      "rows": [
-        "1980s",
-        "2D Animated Films",
-        "Greek Mythology",
-        "Horror Stories"
-      ],
-      "cols": [
-        "2004",
-        "Fictional Animals",
-        "Stories Where the Mom Dies",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.250000000000002,
-      "maxSimilarityToPast": 0.4025,
-      "similarityPenalty": 3.22,
-      "movieOverlapPenalty": 18.127139098225044,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -9.097139098225043
-    },
-    {
-      "hash": "58a0cf25c2b65739063501a599ae3566faef88e7f9cfdd07536dfba619d2745f",
-      "rows": [
-        "1980s",
-        "2006",
-        "Fourth in Internal Chronology",
-        "Third in Internal Chronology"
-      ],
-      "cols": [
-        "Disney",
-        "Ends with ARS",
-        "Thriller Stories",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.61,
-      "maxSimilarityToPast": 0.4825,
-      "similarityPenalty": 3.86,
-      "movieOverlapPenalty": 22.734026806692796,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -13.984026806692796
-    },
-    {
-      "hash": "4003b62a603657965f0581a3b4956f43b10a8079b82c4d6c277f34e931b804ca",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Currently Living Animals",
-        "Currently Living Plants"
-      ],
-      "cols": [
-        "Carnivores",
-        "Ends with ION",
-        "Jurassic Period",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 1.3800000000000001,
-      "maxSimilarityToPast": 0.542,
-      "similarityPenalty": 4.336,
-      "movieOverlapPenalty": 5.005341018652314,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -8.561341018652314
-    },
-    {
-      "hash": "82684f48ca17d20e3586c23de609254bda19c37a483b2c838940ec7f3ecd8569",
-      "rows": [
-        "1980s",
-        "2003",
-        "Classic Films",
-        "Ends with HER"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Sci-fi Stories",
-        "Stories about Families",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.289999999999999,
-      "maxSimilarityToPast": 0.3319,
-      "similarityPenalty": 2.6552,
-      "movieOverlapPenalty": 16.516445516704525,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -11.881645516704527
-    },
-    {
-      "hash": "e53a7e81f480e8b51c30715bdc83213e2cde5fb01366b13a975a3a631e1e0892",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Cenozoic Era",
-        "Red Things"
-      ],
-      "cols": [
-        "Ends with PLE",
-        "Marvel Characters",
-        "Theropods",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.63,
-      "maxSimilarityToPast": 0.4393,
-      "similarityPenalty": 3.5144,
-      "movieOverlapPenalty": 6.012895066722747,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -5.497295066722747
-    },
-    {
-      "hash": "d2c739e33bf0f3e25b48e44463ac9c8e1a626c26634fa1abb3bbaf97978e9d33",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Cruise Ships",
-        "Ends with ARD"
-      ],
-      "cols": [
-        "Board Games",
-        "Sequels",
-        "Things Japanese",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.03,
-      "maxSimilarityToPast": 0.4095,
-      "similarityPenalty": 3.276,
-      "movieOverlapPenalty": 10.188883522711203,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -6.034883522711203
-    },
-    {
-      "hash": "73a540291b4f9f2eb99694b8a1f98ca0ae9b822f3175d6e0d88456015610591e",
-      "rows": [
-        "1980s",
-        "2007",
-        "Dates",
-        "Ends with ATE"
-      ],
-      "cols": [
-        "Action Stories",
-        "Aircraft",
-        "Things Roman",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.56,
-      "maxSimilarityToPast": 0.2887,
-      "similarityPenalty": 2.3096,
-      "movieOverlapPenalty": 14.213587620463034,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -6.963187620463033
-    },
-    {
-      "hash": "f1949f3efa10e237ef301be2e0388ff9d3c9428fa9fccd6a7cce04a0a80f821a",
-      "rows": [
-        "1980s",
-        "1990s",
         "Countries",
-        "Red Things"
-      ],
-      "cols": [
-        "Ends with INE",
-        "Omnivores",
-        "Things Italian",
-        "Things Japanese"
+        "Fastest of its Type",
+        "Fictional People",
+        "Things Canadian"
       ],
       "timestamp": null,
-      "qualityScore": 2.93,
-      "maxSimilarityToPast": 0.3892,
-      "similarityPenalty": 3.1136,
-      "movieOverlapPenalty": 5.778557082366041,
+      "qualityScore": 8.65,
+      "maxSimilarityToPast": 0.3876,
+      "similarityPenalty": 3.1008,
+      "movieOverlapPenalty": 1.5969284774023693,
       "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 3.9522715225976315
+    },
+    {
+      "hash": "0827bdc0b59f3681ff0c3f1a98291be77a3575ae1a7ceb6a8c2b3d372731d492",
+      "rows": [
+        "1997",
+        "2004",
+        "Animal Terms",
+        "Stories Where the Mom Dies"
+      ],
+      "cols": [
+        "Anime",
+        "Greek Mythology",
+        "Horror Stories",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.610000000000001,
+      "maxSimilarityToPast": 0.506,
+      "similarityPenalty": 4.048,
+      "movieOverlapPenalty": 20.873822929601445,
+      "yearProximityPenalty": 0.6,
+      "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0.6,
-      "finalScore": -6.56215708236604
+      "finalScore": -9.911822929601444
     },
     {
-      "hash": "9b352c3da05d5cfad6e4d690ee39fd958e0cf7d3f525481d5f33c38fc22b9121",
+      "hash": "6c7c61c4c6ae3e6e70b1b60ee597d56258e9db196354506ebf7382cac36f56c5",
       "rows": [
-        "1980s",
-        "Action Stories",
-        "Amphibious",
-        "The Bad Place"
+        "1980",
+        "19th Century",
+        "Locations in North America",
+        "Things Greek"
       ],
       "cols": [
-        "2000s",
-        "Animal Terms",
-        "Ends with ION",
-        "Things Italian"
+        "Fictional People",
+        "Mountains",
+        "Romance Stories",
+        "Starts with BAT"
       ],
       "timestamp": null,
-      "qualityScore": 6.119999999999999,
-      "maxSimilarityToPast": 0.406,
-      "similarityPenalty": 3.248,
-      "movieOverlapPenalty": 10.099854809626686,
+      "qualityScore": 8.239999999999998,
+      "maxSimilarityToPast": 0.5,
+      "similarityPenalty": 4,
+      "movieOverlapPenalty": 8.07705634343743,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -7.227854809626687
+      "finalScore": -3.837056343437432
     },
     {
-      "hash": "b25881e1625e7a4f1c806c3f2f5c521351e575386bb938a1f03d4f8636f9adb2",
+      "hash": "e641ab5e41ecf23bf2d3bd1e699eabf6a172cb8c03a290348ce82d299850d04f",
       "rows": [
-        "1980s",
-        "2003",
-        "Ends with LES",
-        "Women"
-      ],
-      "cols": [
-        "2D Animated Films",
-        "3D Animated Films",
-        "Animal Terms",
-        "Blind People"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.2,
-      "maxSimilarityToPast": 0.3081,
-      "similarityPenalty": 2.4648,
-      "movieOverlapPenalty": 15.136015681053452,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -7.400815681053453
-    },
-    {
-      "hash": "db8fb6878e48131c32500cf6d779d9bc8109a49c7498452d11789703212ed902",
-      "rows": [
-        "1980s",
-        "2018",
-        "Ends with DER",
-        "Horror Stories"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Sequels",
-        "Star Wars Universe",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.77,
-      "maxSimilarityToPast": 0.3902,
-      "similarityPenalty": 3.1216,
-      "movieOverlapPenalty": 14.729648916684905,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -8.081248916684906
-    },
-    {
-      "hash": "07ed4d7a96e16b74ffce4c446cf0416484df86224c56bf0b7df11c9882b11b27",
-      "rows": [
-        "1980s",
-        "2011",
-        "Things Japanese",
-        "Things Roman"
-      ],
-      "cols": [
-        "Action Stories",
-        "Ends with WAR",
-        "Locations in Asia",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.22,
-      "maxSimilarityToPast": 0.3988,
-      "similarityPenalty": 3.1904,
-      "movieOverlapPenalty": 9.93135408893359,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -8.90175408893359
-    },
-    {
-      "hash": "74a7773669fd72c27452217593073388c8c844c99f31fcbdbe4c16f3d31e246d",
-      "rows": [
-        "1980s",
+        "1997",
         "2006",
         "Fifth in Release Order",
         "Fourth in Release Order"
@@ -537,394 +253,644 @@
       "cols": [
         "Disney",
         "Stories Where the Mom Dies",
-        "Thriller Films",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.400000000000002,
-      "maxSimilarityToPast": 0.5282,
-      "similarityPenalty": 4.2256,
-      "movieOverlapPenalty": 24.934345785959145,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -12.759945785959143
-    },
-    {
-      "hash": "6c910e62adbb35c79aa2497ca9dd64f656e8bce5796d9063dfddfda8710172b1",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Black and White Films",
-        "Sci-fi Stories"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Ends with TER",
-        "Movies With the Seven Samurai Plot",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.59,
-      "maxSimilarityToPast": 0.3785,
-      "similarityPenalty": 3.028,
-      "movieOverlapPenalty": 19.556229990809687,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -14.594229990809687
-    },
-    {
-      "hash": "ee2076e0f069afbc53ab63bce5d2ebbc1d4aa678b038599eedee13909a18d20d",
-      "rows": [
-        "1980s",
-        "Action Stories",
-        "Countries",
-        "Tang Dynasty"
-      ],
-      "cols": [
-        "Ends with ION",
-        "Real Animals",
-        "Things Japanese",
-        "Things Roman"
-      ],
-      "timestamp": null,
-      "qualityScore": 3.4400000000000004,
-      "maxSimilarityToPast": 0.3746,
-      "similarityPenalty": 2.9968,
-      "movieOverlapPenalty": 7.280114492114552,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -6.836914492114552
-    },
-    {
-      "hash": "fc8405e64e0e6e069c06b8d46da21d1707ea919744a6c10588f3e5a15b473df4",
-      "rows": [
-        "1980s",
-        "2004",
-        "Action Stories",
-        "Women"
-      ],
-      "cols": [
-        "Disney",
-        "Donald Trump",
-        "Sword and Sandals Stories",
-        "Things Japanese"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.88,
-      "maxSimilarityToPast": 0.4021,
-      "similarityPenalty": 3.2168,
-      "movieOverlapPenalty": 18.410988005866304,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -8.747788005866305
-    },
-    {
-      "hash": "820c8d2ce08c19d9189e99709df9dd07b4c09ed2ff7fc8dbf696f4a47418015c",
-      "rows": [
-        "1980s",
-        "2003",
-        "Ends with ITE",
-        "Superheroes"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Sci-fi Stories",
-        "Thriller Stories",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.55,
-      "maxSimilarityToPast": 0.3235,
-      "similarityPenalty": 2.588,
-      "movieOverlapPenalty": 13.646236661232514,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -10.684236661232514
-    },
-    {
-      "hash": "1c6cdd7e7cea47dd6c9a1cfa59254f34e9c68e0e2fdef32dc84911f3d3c7e8b3",
-      "rows": [
-        "1980s",
-        "2011",
-        "Animal Terms",
-        "Ends with DAY"
-      ],
-      "cols": [
-        "Christmas Stories",
-        "Sci-fi Stories",
-        "Things Japanese",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.039999999999999,
-      "maxSimilarityToPast": 0.5484,
-      "similarityPenalty": 4.3872,
-      "movieOverlapPenalty": 14.336195962337325,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -12.683395962337325
-    },
-    {
-      "hash": "b6b63390f1d6e90809fc4ddbcc0689908b889434e14f71f74d007ce036778977",
-      "rows": [
-        "1980s",
-        "2012",
-        "Ends with ITY",
-        "Third in Internal Chronology"
-      ],
-      "cols": [
-        "Disney",
-        "Things Italian",
         "Thriller Stories",
         "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 8.569999999999999,
-      "maxSimilarityToPast": 0.362,
-      "similarityPenalty": 2.896,
-      "movieOverlapPenalty": 19.287704822665894,
-      "yearProximityPenalty": 0,
+      "qualityScore": 19.419999999999995,
+      "maxSimilarityToPast": 0.5022,
+      "similarityPenalty": 4.0176,
+      "movieOverlapPenalty": 26.58434382648115,
+      "yearProximityPenalty": 0.2,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -13.613704822665895
+      "temporalPenalty": 0.2,
+      "finalScore": -11.381943826481153
     },
     {
-      "hash": "61fe87cb62f3eccc1bedbf652b98e4acd1ff3b5b03377a0e1ae3b2588441929b",
+      "hash": "ec7a0bc641b0b3be86f301f189a291f91a604c748f47c6ba8d3792fb570386e2",
       "rows": [
-        "1980s",
-        "2008",
-        "Sci-fi Stories",
-        "Stories Where the Mom Dies"
-      ],
-      "cols": [
-        "Disney",
-        "Dystopian Stories",
-        "Sequels",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.49,
-      "maxSimilarityToPast": 0.4385,
-      "similarityPenalty": 3.508,
-      "movieOverlapPenalty": 23.29932572310947,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -14.31732572310947
-    },
-    {
-      "hash": "acaab2a11569ecaf67e1268cd413ccbe5554db0cec6474ec51c13c98ebb5f8a3",
-      "rows": [
-        "1980s",
-        "6th Century BC",
+        "11th Century",
+        "13th Century",
         "Ancient Figures",
-        "Women"
+        "Starts with CHA"
       ],
       "cols": [
-        "Ends with ING",
+        "Drama Stories",
+        "Great Conquerors",
         "Religious Figures",
-        "Royalty",
-        "Things Roman"
+        "Writers"
       ],
       "timestamp": null,
-      "qualityScore": 7.1,
-      "maxSimilarityToPast": 0.4089,
-      "similarityPenalty": 3.2712,
-      "movieOverlapPenalty": 2.9511669166889494,
+      "qualityScore": 11.27,
+      "maxSimilarityToPast": 0.4265,
+      "similarityPenalty": 3.412,
+      "movieOverlapPenalty": 3.608003271091727,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 0.8776330833110504
+      "finalScore": 4.249996728908273
     },
     {
-      "hash": "e5f87efffed11608bc595389d73ce9ef8a7029d92ae7298f1e32fdeb8142903b",
+      "hash": "4d958f7283b17141eb5bdcceda1cbfef2b3a3eba84a1f01c778a133331f63660",
       "rows": [
-        "1980s",
-        "Action Stories",
-        "Cenozoic Era",
-        "White Things"
+        "1997",
+        "Countries",
+        "Trojan War",
+        "World War II"
       ],
       "cols": [
-        "DC Characters",
-        "Ends with PER",
-        "Marvel Characters",
-        "Things Italian"
+        "2000s",
+        "Ends with LES",
+        "Luxury Ships",
+        "Things French"
       ],
       "timestamp": null,
-      "qualityScore": 8.8,
-      "maxSimilarityToPast": 0.5304,
-      "similarityPenalty": 4.2432,
-      "movieOverlapPenalty": 7.331912510030377,
+      "qualityScore": 10.66,
+      "maxSimilarityToPast": 0.3804,
+      "similarityPenalty": 3.0432,
+      "movieOverlapPenalty": 8.425561697125467,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -2.775112510030376
+      "finalScore": -0.8087616971254672
     },
     {
-      "hash": "074b5ef648dc6f0a866e4017adc8fdbddc0addb14dc31fdae190f5f70f583829",
+      "hash": "bac9b72abe36c502e7b71ddb9310b486633c6a72f0d796f3f8f2d3ebed8bed2c",
       "rows": [
-        "1980s",
-        "2003",
-        "Things Canadian",
-        "Things Japanese"
+        "1997",
+        "2011",
+        "Ends with AME",
+        "Fictional People"
       ],
       "cols": [
-        "Amphibious",
-        "Animal Terms",
-        "Ends with ING",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.93,
-      "maxSimilarityToPast": 0.4098,
-      "similarityPenalty": 3.2784,
-      "movieOverlapPenalty": 6.831253776291548,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -4.179653776291548
-    },
-    {
-      "hash": "bf79ac1c1ad6b2ab35988cf8e3e741e6fe084613fe6209abf2faf835a3b0c3fa",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Cenozoic Era",
-        "Red Things"
-      ],
-      "cols": [
-        "Ends with PLE",
-        "Marvel Characters",
-        "Saurischians",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.51,
-      "maxSimilarityToPast": 0.4393,
-      "similarityPenalty": 3.5144,
-      "movieOverlapPenalty": 6.012895066722747,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -5.617295066722747
-    },
-    {
-      "hash": "d3014f52f3f7cd50d6330928b4078c769efa96756523da32dbaa4f76d07499b5",
-      "rows": [
-        "1980s",
-        "1990s",
-        "Cenozoic Era",
-        "Red Things"
-      ],
-      "cols": [
-        "Dinosaurs",
-        "Ends with PLE",
-        "Marvel Characters",
-        "Women"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.2299999999999995,
-      "maxSimilarityToPast": 0.4393,
-      "similarityPenalty": 3.5144,
-      "movieOverlapPenalty": 6.012895066722747,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -5.897295066722747
-    },
-    {
-      "hash": "6c55b01cfc4691e4ae0aa1f86c082450426d237f8d299c7c971a3614e9867908",
-      "rows": [
-        "1980s",
-        "2003",
-        "Locations in North America",
-        "Things Japanese"
-      ],
-      "cols": [
-        "Amphibious",
-        "Animal Terms",
-        "Ends with ING",
-        "Sci-fi Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.16,
-      "maxSimilarityToPast": 0.4069,
-      "similarityPenalty": 3.2552,
-      "movieOverlapPenalty": 9.428285115702021,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -7.523485115702021
-    },
-    {
-      "hash": "6ce0bcb1c892961c0af5dc3104a556556970a60c7803b633ab1b6304d607273a",
-      "rows": [
-        "1980s",
         "2D Animated Films",
+        "Fourth in Internal Chronology",
+        "Things French",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.25,
+      "maxSimilarityToPast": 0.3425,
+      "similarityPenalty": 2.74,
+      "movieOverlapPenalty": 20.966147863269924,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.456147863269925
+    },
+    {
+      "hash": "63994870cc9fb1386c9bb304a12a2d5d75b293196b65c2d305ce2ed745a6bd15",
+      "rows": [
+        "Battleships",
+        "Countries in Europe",
+        "Drama Stories",
+        "Islands"
+      ],
+      "cols": [
+        "Locations in North America",
+        "Starts with SAN",
+        "Things French",
+        "Things Greek"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.8100000000000005,
+      "maxSimilarityToPast": 0.3457,
+      "similarityPenalty": 2.7656,
+      "movieOverlapPenalty": 3.9314654332189876,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -0.8870654332189871
+    },
+    {
+      "hash": "d4309e69bf1b8e447161b0a59dc3ca4dc16317caedb1bd76c99b6432ba38ccee",
+      "rows": [
+        "1997",
+        "2003",
         "Classic Films",
         "Red Things"
       ],
       "cols": [
-        "Ends with OOD",
-        "Fictional Animals",
+        "Fictional People",
         "Stories about Families",
-        "Women"
+        "Things French",
+        "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 8.47,
+      "qualityScore": 12.910000000000002,
       "maxSimilarityToPast": 0.4012,
       "similarityPenalty": 3.2096,
-      "movieOverlapPenalty": 14.735405218070108,
-      "yearProximityPenalty": 0,
+      "movieOverlapPenalty": 19.093553185845526,
+      "yearProximityPenalty": 0.8,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -9.475005218070107
+      "temporalPenalty": 0.8,
+      "finalScore": -10.193153185845524
     },
     {
-      "hash": "62d7cc738fc5186f0dd605460115ce90b3962dca4b870113ad1c87b5f2ef2aff",
+      "hash": "b9b1e99cef1bb776d7ff9804112011c841eb77ab37f79f90af1f4fc138642dd9",
       "rows": [
-        "1980s",
-        "2011",
-        "Animal Terms",
-        "Ends with ORE"
+        "1997",
+        "2000s",
+        "Ends with DAY",
+        "Family-Friendly Stories"
       ],
       "cols": [
-        "Action Stories",
-        "Locations in Asia",
-        "Things Japanese",
-        "Women"
+        "Romance Stories",
+        "Sequels",
+        "Studio Ghibli",
+        "Things French"
       ],
       "timestamp": null,
-      "qualityScore": 4.02,
-      "maxSimilarityToPast": 0.4222,
-      "similarityPenalty": 3.3776,
-      "movieOverlapPenalty": 10.161547012467135,
+      "qualityScore": 7.58,
+      "maxSimilarityToPast": 0.3806,
+      "similarityPenalty": 3.0448,
+      "movieOverlapPenalty": 22.10292777718906,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -9.519147012467137
+      "finalScore": -17.56772777718906
+    },
+    {
+      "hash": "1b8b16b87749c4418bd755a036848c1155ec08af646cf19f436f702a8876dbb5",
+      "rows": [
+        "11th Century",
+        "18th Century",
+        "Battle of Waterloo",
+        "World War II"
+      ],
+      "cols": [
+        "Dates",
+        "Drama Stories",
+        "Ranged Weapons",
+        "Things French"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.39,
+      "maxSimilarityToPast": 0.5,
+      "similarityPenalty": 4,
+      "movieOverlapPenalty": 4.2455565331197285,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 6.144443466880272
+    },
+    {
+      "hash": "f3a3b8b3795f1d7045c11acc2d01f50052d46d9f2e9a53ddcc1760d281189da0",
+      "rows": [
+        "11th Century",
+        "2000s",
+        "Locations in Europe",
+        "Locations in North America"
+      ],
+      "cols": [
+        "Countries",
+        "Drama Stories",
+        "Ends with EST",
+        "Saints"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.390000000000001,
+      "maxSimilarityToPast": 0.4658,
+      "similarityPenalty": 3.7264,
+      "movieOverlapPenalty": 7.560948126698062,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -5.897348126698061
+    },
+    {
+      "hash": "40ba5211260a5f6e900186b85deebe2513790a781204290d72cc9ac752031064",
+      "rows": [
+        "1997",
+        "2014",
+        "Fifth in Internal Chronology",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Disney",
+        "Stories Where the Mom Dies",
+        "Thriller Stories",
+        "Time Travel Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.189999999999998,
+      "maxSimilarityToPast": 0.5164,
+      "similarityPenalty": 4.1312,
+      "movieOverlapPenalty": 26.38304512518245,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.32424512518245
+    },
+    {
+      "hash": "bbe56565740979e4b0a2979661c527fe9fc7f737de1d3574d8354deb800df4c9",
+      "rows": [
+        "11th Century",
+        "18th Century",
+        "Things French",
+        "Things Greek"
+      ],
+      "cols": [
+        "Historical Weapons",
+        "Medical Professionals",
+        "Romance Stories",
+        "Tragic Heroes"
+      ],
+      "timestamp": null,
+      "qualityScore": 14.599999999999998,
+      "maxSimilarityToPast": 0.3367,
+      "similarityPenalty": 2.6936,
+      "movieOverlapPenalty": 4.197933571810929,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 7.708466428189069
+    },
+    {
+      "hash": "5578583da8afa161296a45f4fe8574e751bf904fe32df219491a8c5b58ca4d2a",
+      "rows": [
+        "11th Century",
+        "17th Century",
+        "Han Dynasty",
+        "Starts with CHA"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Historical Weapons",
+        "Religious Figures",
+        "Writers"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.01,
+      "maxSimilarityToPast": 0.3215,
+      "similarityPenalty": 2.572,
+      "movieOverlapPenalty": 3.2977199100984267,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 4.140280089901573
+    },
+    {
+      "hash": "4f644d8e2cd76b7f07c37a79c34c8ddab48f3636e0c2b00fd0069d7b6c84bf28",
+      "rows": [
+        "11th Century",
+        "Roman Empire",
+        "Things Greek",
+        "Things Turkish"
+      ],
+      "cols": [
+        "Countries",
+        "Drama Stories",
+        "Great Conquerors",
+        "Historical Weapons"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.41,
+      "maxSimilarityToPast": 0.4572,
+      "similarityPenalty": 3.6576,
+      "movieOverlapPenalty": 3.660455756398255,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 4.091944243601745
+    },
+    {
+      "hash": "bcafd5764f059d948c0abf7a24e7df7346637ee54ba1d9c03cfd7fd19febd585",
+      "rows": [
+        "11th Century",
+        "16th Century",
+        "Ancient Figures",
+        "Ends with ELL"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Religious Figures",
+        "Scientists",
+        "Writers"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.32,
+      "maxSimilarityToPast": 0.45,
+      "similarityPenalty": 3.6,
+      "movieOverlapPenalty": 3.766185089273545,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.9538149107264555
+    },
+    {
+      "hash": "fc625d281e45d74aef20f06023816a6e600773c4566bfba9c09061bf1799e950",
+      "rows": [
+        "1997",
+        "2007",
+        "Ends with NCE",
+        "Fictional People"
+      ],
+      "cols": [
+        "Romance Stories",
+        "Stories Where the Mom Dies",
+        "Things French",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.44,
+      "maxSimilarityToPast": 0.2976,
+      "similarityPenalty": 2.3808,
+      "movieOverlapPenalty": 19.655489606912383,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.596289606912382
+    },
+    {
+      "hash": "7777114c4881093bbbf0cb3c45bb5a185deeff8c888af146bc730747b420d48c",
+      "rows": [
+        "1997",
+        "Pixar",
+        "Romance Stories",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "2001",
+        "Disney",
+        "Sci-fi Stories",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.49,
+      "maxSimilarityToPast": 0.4429,
+      "similarityPenalty": 3.5432,
+      "movieOverlapPenalty": 26.78915714154266,
+      "yearProximityPenalty": 1.2,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.2,
+      "finalScore": -16.04235714154266
+    },
+    {
+      "hash": "18949a008f4452b51eab4be4fe8bb03f11cdf2d57da2d001a824580917aaad45",
+      "rows": [
+        "1997",
+        "2003",
+        "3D Animated Films",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Ends with RLD",
+        "Fictional People",
+        "Sequels",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.770000000000001,
+      "maxSimilarityToPast": 0.4265,
+      "similarityPenalty": 3.412,
+      "movieOverlapPenalty": 24.015747015696334,
+      "yearProximityPenalty": 0.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.8,
+      "finalScore": -17.457747015696334
+    },
+    {
+      "hash": "99924acdd6c7341a32a5fdd42fe1d20b1ceabc8967230b7778b8fd470199c5b5",
+      "rows": [
+        "1997",
+        "Ends with ESS",
+        "Fictional People",
+        "Stories about Families"
+      ],
+      "cols": [
+        "2000s",
+        "Japanese Films",
+        "Romance Stories",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.77,
+      "maxSimilarityToPast": 0.4024,
+      "similarityPenalty": 3.2192,
+      "movieOverlapPenalty": 22.41784428414182,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -17.867044284141823
+    },
+    {
+      "hash": "177de5bceb31a383eb80a4d9ecf82df3fc8d32213da361c8a2df800ebe7d3558",
+      "rows": [
+        "11th Century",
+        "14th Century",
+        "Starts with CHA",
+        "Things Greek"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Great Conquerors",
+        "Historical Weapons",
+        "Writers"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.52,
+      "maxSimilarityToPast": 0.3801,
+      "similarityPenalty": 3.0408,
+      "movieOverlapPenalty": 3.557969464465628,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 4.92123053553437
+    },
+    {
+      "hash": "b3bc9779f9fe724679fb87bfbb4ca104bf894689c072b413ace8374460f9e541",
+      "rows": [
+        "11th Century",
+        "19th Century",
+        "Starts with MAN",
+        "Things Egyptian"
+      ],
+      "cols": [
+        "Countries",
+        "Historical Weapons",
+        "Religious Figures",
+        "Romance Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.89,
+      "maxSimilarityToPast": 0.2744,
+      "similarityPenalty": 2.1952,
+      "movieOverlapPenalty": 4.478937742596479,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 2.215862257403522
+    },
+    {
+      "hash": "25ec504c0d1a06152acbda4677b91a3291cc9d4c3e52697ed2fa0b0fa7066f11",
+      "rows": [
+        "11th Century",
+        "1990s",
+        "Things French",
+        "Things Greek"
+      ],
+      "cols": [
+        "Countries",
+        "Romance Stories",
+        "Scientists",
+        "Tragic Heroes"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.809999999999999,
+      "maxSimilarityToPast": 0.3034,
+      "similarityPenalty": 2.4272,
+      "movieOverlapPenalty": 6.442263791832242,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.9405362081677575
+    },
+    {
+      "hash": "c43719158c02a2e4e7b8285a4a97afff5012e862ab95d4d21cbe79a4f53b49f0",
+      "rows": [
+        "11th Century",
+        "18th Century",
+        "Ancient Figures",
+        "Ends with LER"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Religious Figures",
+        "Scientists",
+        "Writers"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.709999999999999,
+      "maxSimilarityToPast": 0.5148,
+      "similarityPenalty": 4.1184,
+      "movieOverlapPenalty": 3.9804708035592595,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.6111291964407393
+    },
+    {
+      "hash": "88b1a0b6e236118403451ba8afd3cf674242a802c638f4e86cb418ffb8cfc264",
+      "rows": [
+        "11th Century",
+        "19th Century",
+        "Starts with SPA",
+        "Things Turkish"
+      ],
+      "cols": [
+        "Countries",
+        "Drama Stories",
+        "Historical Weapons",
+        "Things French"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.8100000000000005,
+      "maxSimilarityToPast": 0.3974,
+      "similarityPenalty": 3.1792,
+      "movieOverlapPenalty": 4.1702250195258195,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -0.5394250195258188
+    },
+    {
+      "hash": "6a24ae3ecaf0cf257a301f5481bbe218f34a41689726c6e8e99bdd9457c1e559",
+      "rows": [
+        "Battleships",
+        "Countries",
+        "Roman Empire",
+        "Romance Stories"
+      ],
+      "cols": [
+        "Ends with IRE",
+        "Islands",
+        "Things French",
+        "Things Greek"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.050000000000001,
+      "maxSimilarityToPast": 0.3686,
+      "similarityPenalty": 2.9488,
+      "movieOverlapPenalty": 4.354671092740547,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -1.2534710927405466
+    },
+    {
+      "hash": "05a2eb1165f5f99e0e4987e0112baa31bd2b953313a313e3e756da322cd7de1c",
+      "rows": [
+        "11th Century",
+        "2000s",
+        "Cities in Europe",
+        "Locations in North America"
+      ],
+      "cols": [
+        "Countries",
+        "Drama Stories",
+        "Ends with EST",
+        "Things French"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.49,
+      "maxSimilarityToPast": 0.4248,
+      "similarityPenalty": 3.3984,
+      "movieOverlapPenalty": 8.005745661485486,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -5.914145661485486
+    },
+    {
+      "hash": "fdc9214f4133feddacfa28cf4b1e4076f664dc39f03ff3abfbfe6c84eea83ac8",
+      "rows": [
+        "11th Century",
+        "19th Century",
+        "Family-Friendly Stories",
+        "Locations in North America"
+      ],
+      "cols": [
+        "Countries",
+        "Romance Stories",
+        "Starts with ANN",
+        "Things French"
+      ],
+      "timestamp": null,
+      "qualityScore": 3.7699999999999996,
+      "maxSimilarityToPast": 0.4075,
+      "similarityPenalty": 3.26,
+      "movieOverlapPenalty": 7.765349450405892,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.255349450405892
     }
   ],
   "message": "Puzzle saved successfully!"
