@@ -1,7 +1,7 @@
 # Connecdoku Development Makefile
 # Common commands for managing the puzzle database and data
 
-.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve
+.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve social-preview
 .PHONY: cell-options cell-replace
 
 # Local server config
@@ -13,6 +13,7 @@ help:
 	@echo ""
 	@echo "Build & Setup:"
 	@echo "  build          - Build Rust binaries (cdx_worker)"
+	@echo "  social-preview - Generate social-preview.png for today's puzzle"
 	@echo "  clean          - Clean Rust build artifacts"
 	@echo "  serve          - Serve the site at http://localhost:$(PORT) (override with PORT=xxxx)"
 	@echo ""
@@ -133,3 +134,9 @@ serve:
 	@echo "Serving static site at http://localhost:$(PORT)"
 	@echo "Press Ctrl+C to stop."
 	python3 -m http.server $(PORT)
+
+# Generate today's spoiler-safe social sharing image
+social-preview:
+	@echo "Generating social preview image..."
+	node generate_social_preview.js
+	@echo "✓ social-preview.png generated"

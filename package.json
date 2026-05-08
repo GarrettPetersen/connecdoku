@@ -2,8 +2,14 @@
   "name": "connecdoku",
   "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "build": "npm run generate:social-preview",
+    "generate:social-preview": "node generate_social_preview.js"
+  },
   "dependencies": {
+    "@fontsource/fredoka-one": "^5.2.5",
     "@inquirer/prompts": "^3.3.2",
+    "@resvg/resvg-js": "^2.6.2",
     "ml-matrix": "^6.12.1"
   }
 }
