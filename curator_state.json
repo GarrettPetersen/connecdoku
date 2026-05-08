@@ -5,889 +5,895 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "9036387ddc1741ec13cdbedc95a5088820dc497ef5cca60477fb4ee19f73e095",
+    "hash": "a96913dfe9b018b52cabb2bc86f9b62acef4466735ddf38b22481b49f9bdb389",
     "rows": [
-      "1960s",
-      "Age of Sail",
-      "Cities in Europe",
-      "Luxury Ships"
+      "1997",
+      "2011",
+      "Cannibalism",
+      "Ends with NCE"
     ],
     "cols": [
-      "Disasters",
-      "Greek Mythology",
-      "Locations in North America",
-      "Starts with CON"
+      "Events",
+      "Fictional People",
+      "Movies featuring Alan Rickman",
+      "Sci-fi Stories"
     ],
     "timestamp": null,
-    "qualityScore": 12.91,
-    "maxSimilarityToPast": 0.4227,
-    "similarityPenalty": 3.3816,
-    "movieOverlapPenalty": 2.497240868832999,
+    "qualityScore": 14.27,
+    "maxSimilarityToPast": 0.2857,
+    "similarityPenalty": 2.2856,
+    "movieOverlapPenalty": 16.35006649260297,
     "yearProximityPenalty": 0,
     "adjacentDecadePenalty": 0,
     "adjacentCenturyPenalty": 0,
     "temporalPenalty": 0,
-    "finalScore": 7.0311591311670005
+    "finalScore": -4.365666492602971
   },
   "viableGrid": [
-    [
-      [
-        "Krakatoa"
-      ],
-      [
-        "Cyclops",
-        "Oedipus Rex"
-      ],
-      [
-        "Bay of Pigs"
-      ],
-      [
-        "Concorde",
-        "Congo Crisis"
-      ]
-    ],
-    [
-      [
-        "Challenger"
-      ],
-      [
-        "Bellerophon"
-      ],
-      [
-        "Victoria"
-      ],
-      [
-        "Concepcion"
-      ]
-    ],
-    [
-      [
-        "Chernobyl",
-        "Herculaneum",
-        "Pompeii"
-      ],
-      [
-        "Paris"
-      ],
-      [
-        "Southampton"
-      ],
-      [
-        "Constantinople"
-      ]
-    ],
     [
       [
         "Titanic"
       ],
       [
-        "Odyssey"
+        "Hercules"
       ],
       [
-        "United States"
+        "Harry Potter and the Sorcerer's Stone"
       ],
       [
-        "Conte di Savoia"
+        "Alien: Resurrection",
+        "The Fifth Element",
+        "To Say Nothing of the Dog"
+      ]
+    ],
+    [
+      [
+        "Abbottabad",
+        "Fukushima",
+        "The Arab Spring",
+        "The Syrian Civil War"
+      ],
+      [
+        "Jane Eyre"
+      ],
+      [
+        "Harry Potter and the Deathly Hallows: Part 2"
+      ],
+      [
+        "Source Code",
+        "X-Men: First Class"
+      ]
+    ],
+    [
+      [
+        "Donner Party",
+        "Siege of Suiyang"
+      ],
+      [
+        "Hannibal Lecter"
+      ],
+      [
+        "Sweeney Todd: The Demon Barber of Fleet Street"
+      ],
+      [
+        "Soylent Green"
+      ]
+    ],
+    [
+      [
+        "The Greek War of Independence",
+        "The Latin American Wars of Independence",
+        "The Renaissance",
+        "Triple Alliance"
+      ],
+      [
+        "The Little Prince"
+      ],
+      [
+        "Harry Potter and the Half-Blood Prince"
+      ],
+      [
+        "Everything Everywhere All at Once"
       ]
     ]
   ],
   "chosen": [
     [
-      "Krakatoa",
-      "Cyclops",
-      "Bay of Pigs",
-      "Concorde"
-    ],
-    [
-      "Challenger",
-      "Bellerophon",
-      "Victoria",
-      "Concepcion"
-    ],
-    [
-      "Chernobyl",
-      "Paris",
-      "Southampton",
-      "Constantinople"
-    ],
-    [
       "Titanic",
-      "Odyssey",
-      "United States",
-      "Conte di Savoia"
+      "Hercules",
+      "Harry Potter and the Sorcerer's Stone",
+      "Alien: Resurrection"
+    ],
+    [
+      "Abbottabad",
+      "Jane Eyre",
+      "Harry Potter and the Deathly Hallows: Part 2",
+      "Source Code"
+    ],
+    [
+      "Donner Party",
+      "Hannibal Lecter",
+      "Sweeney Todd: The Demon Barber of Fleet Street",
+      "Soylent Green"
+    ],
+    [
+      "The Greek War of Independence",
+      "The Little Prince",
+      "Harry Potter and the Half-Blood Prince",
+      "Everything Everywhere All at Once"
     ]
   ],
   "usedWords": [
-    "Krakatoa",
-    "Cyclops",
-    "Bay of Pigs",
-    "Concorde",
-    "Challenger",
-    "Bellerophon",
-    "Victoria",
-    "Concepcion",
-    "Chernobyl",
-    "Paris",
-    "Southampton",
-    "Constantinople",
     "Titanic",
-    "Odyssey",
-    "United States",
-    "Conte di Savoia"
+    "Hercules",
+    "Harry Potter and the Sorcerer's Stone",
+    "Alien: Resurrection",
+    "Abbottabad",
+    "Jane Eyre",
+    "Harry Potter and the Deathly Hallows: Part 2",
+    "Source Code",
+    "Donner Party",
+    "Hannibal Lecter",
+    "Sweeney Todd: The Demon Barber of Fleet Street",
+    "Soylent Green",
+    "The Greek War of Independence",
+    "The Little Prince",
+    "Harry Potter and the Half-Blood Prince",
+    "Everything Everywhere All at Once"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "9036387ddc1741ec13cdbedc95a5088820dc497ef5cca60477fb4ee19f73e095",
+      "hash": "a96913dfe9b018b52cabb2bc86f9b62acef4466735ddf38b22481b49f9bdb389",
       "rows": [
-        "1960s",
-        "Age of Sail",
-        "Cities in Europe",
-        "Luxury Ships"
+        "1997",
+        "2011",
+        "Cannibalism",
+        "Ends with NCE"
       ],
       "cols": [
-        "Disasters",
-        "Greek Mythology",
-        "Locations in North America",
-        "Starts with CON"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.91,
-      "maxSimilarityToPast": 0.4227,
-      "similarityPenalty": 3.3816,
-      "movieOverlapPenalty": 2.497240868832999,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 7.0311591311670005
-    },
-    {
-      "hash": "7d4a5fefe91000fbad20f3b344e0ecc6d8216a378fa53c6ed5da3416b45e2e9f",
-      "rows": [
-        "1960s",
-        "1990s",
-        "Animal Species",
-        "Ends with INE"
-      ],
-      "cols": [
-        "Locations in Asia",
-        "Red Things",
-        "Songs",
-        "White Things"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.71,
-      "maxSimilarityToPast": 0.3667,
-      "similarityPenalty": 2.9336,
-      "movieOverlapPenalty": 4.124355140223813,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -0.3479551402238137
-    },
-    {
-      "hash": "7121911ccc845f16674a04037642d4d9dc1f77c6ed94fdd3a65396254a5e15b5",
-      "rows": [
-        "1960s",
-        "1st Century BC",
+        "Events",
         "Fictional People",
-        "Things French"
-      ],
-      "cols": [
-        "Assassins",
-        "Romance Stories",
-        "Starts with MAR",
-        "Trios"
+        "Movies featuring Alan Rickman",
+        "Sci-fi Stories"
       ],
       "timestamp": null,
-      "qualityScore": 8.629999999999999,
-      "maxSimilarityToPast": 0.5154,
-      "similarityPenalty": 4.1232,
-      "movieOverlapPenalty": 6.236784552664021,
+      "qualityScore": 14.27,
+      "maxSimilarityToPast": 0.2857,
+      "similarityPenalty": 2.2856,
+      "movieOverlapPenalty": 16.35006649260297,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -1.729984552664022
+      "finalScore": -4.365666492602971
     },
     {
-      "hash": "b03c8cdb417fad4f38a602a4f12fbdce28b16974b15da1b47de81922c335bc01",
+      "hash": "af97df9205c4ca27ab479199f72e3cbc866d709d656ae9047ec74d09e0078a78",
       "rows": [
-        "1960s",
-        "1990",
-        "Stories Where the Mom Dies",
+        "2001",
+        "2007",
+        "Movies featuring Sigourney Weaver",
         "Stories about Families"
       ],
       "cols": [
-        "Children's Stories",
-        "Disney",
-        "Japanese Films",
+        "Pixar",
+        "Romance Stories",
+        "Stories Where the Mom Dies",
         "Third in Internal Chronology"
       ],
       "timestamp": null,
-      "qualityScore": 15.919999999999998,
-      "maxSimilarityToPast": 0.4087,
-      "similarityPenalty": 3.2696,
-      "movieOverlapPenalty": 22.498123865569475,
-      "yearProximityPenalty": 0,
+      "qualityScore": 20.47,
+      "maxSimilarityToPast": 0.4036,
+      "similarityPenalty": 3.2288,
+      "movieOverlapPenalty": 27.613249552379987,
+      "yearProximityPenalty": 0.8,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -9.847723865569478
+      "temporalPenalty": 0.8,
+      "finalScore": -11.172049552379988
     },
     {
-      "hash": "fe624a61e3ef56637b5688acf06335ec9e1a163f1b5eb409f2238c4d9e4d0b77",
+      "hash": "98b383043d1685ac3319a0e028a83cfcbe760eb34a18a54b6c766d69409322ff",
       "rows": [
-        "1960s",
-        "Age of Sail",
-        "Countries",
-        "Roman Empire"
-      ],
-      "cols": [
-        "Ends with IRE",
-        "Islands",
-        "Pliocene Epoch",
-        "Things Greek"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.48,
-      "maxSimilarityToPast": 0.2902,
-      "similarityPenalty": 2.3216,
-      "movieOverlapPenalty": 2.038156755290029,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.12024324470997128
-    },
-    {
-      "hash": "8460182cd81e02b402c4abe4215ac8bae78639c9ab4edaecb96b04fbe4e0ffc7",
-      "rows": [
-        "1960s",
-        "2000s",
-        "Amphibious",
-        "Starts with MON"
-      ],
-      "cols": [
-        "Miocene Epoch",
-        "Things French",
-        "Wars",
-        "World War II"
-      ],
-      "timestamp": null,
-      "qualityScore": 2.88,
-      "maxSimilarityToPast": 0.3043,
-      "similarityPenalty": 2.4344,
-      "movieOverlapPenalty": 4.769825646272879,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -4.324225646272879
-    },
-    {
-      "hash": "d13ed90b5608f2b1ee67add25c874ee1388f472e004bdfafe48eafffdc52f230",
-      "rows": [
-        "1960s",
-        "Age of Sail",
-        "Companies",
-        "Volcanoes"
-      ],
-      "cols": [
-        "19th Century",
-        "Locations in Europe",
-        "Pleistocene Epoch",
-        "Things French"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.579999999999999,
-      "maxSimilarityToPast": 0.4133,
-      "similarityPenalty": 3.3064,
-      "movieOverlapPenalty": 2.2020459697852193,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 1.07155403021478
-    },
-    {
-      "hash": "566323e342443371a9b656027dc1d1145920af6f7d102cf87094d854f345945b",
-      "rows": [
-        "1960s",
-        "1988",
+        "1997",
+        "2000",
         "Fifth in Release Order",
         "Fourth in Internal Chronology"
       ],
       "cols": [
+        "Family-Friendly Stories",
+        "Movies featuring Bruce Willis",
+        "Movies featuring Johnny Depp",
+        "Time Travel Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 24.35,
+      "maxSimilarityToPast": 0.5535,
+      "similarityPenalty": 4.428,
+      "movieOverlapPenalty": 27.16136485059589,
+      "yearProximityPenalty": 1.4,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.4,
+      "finalScore": -8.639364850595891
+    },
+    {
+      "hash": "4cb1ec0b22ae213dacae66a7bb3e0d19675081f03081ac5fb00f49b63db37a99",
+      "rows": [
+        "1997",
+        "2002",
+        "Fifth in Internal Chronology",
+        "Fourth in Release Order"
+      ],
+      "cols": [
         "Disney",
-        "Ends with ARD",
+        "Movies featuring Daniel Radcliffe",
         "Sci-fi Stories",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 21.149999999999995,
+      "maxSimilarityToPast": 0.4723,
+      "similarityPenalty": 3.7784,
+      "movieOverlapPenalty": 27.692671526979243,
+      "yearProximityPenalty": 1,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1,
+      "finalScore": -11.32107152697925
+    },
+    {
+      "hash": "80c923bb0b59dffbbd051f69508cb07f75d760880a7014f1efec4f5aab7f7e7f",
+      "rows": [
+        "1997",
+        "2000s",
+        "Ends with AME",
+        "Fictional People"
+      ],
+      "cols": [
+        "2D Animated Films",
+        "Sequels",
+        "Things French",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.32,
+      "maxSimilarityToPast": 0.3984,
+      "similarityPenalty": 3.1872,
+      "movieOverlapPenalty": 21.309294682973416,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -19.176494682973416
+    },
+    {
+      "hash": "6b555ed1272734deea12476073b3d249cf7b540fef9b49c84759669285813091",
+      "rows": [
+        "2001",
+        "2006",
+        "Fictional People",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Anime",
+        "Numbers",
         "Stories Where the Mom Dies"
       ],
       "timestamp": null,
-      "qualityScore": 15.350000000000001,
-      "maxSimilarityToPast": 0.4117,
-      "similarityPenalty": 3.2936,
-      "movieOverlapPenalty": 21.974426717093564,
-      "yearProximityPenalty": 0,
+      "qualityScore": 16.7,
+      "maxSimilarityToPast": 0.3948,
+      "similarityPenalty": 3.1584,
+      "movieOverlapPenalty": 21.932684457339658,
+      "yearProximityPenalty": 1,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -9.918026717093563
+      "temporalPenalty": 1,
+      "finalScore": -9.391084457339659
     },
     {
-      "hash": "d4b4762b39f66a9819b0a880e43409b0eb86ccd2b96b60127c7f0a7a8e47fce4",
+      "hash": "d5949ecc78518cb98d07b4fee663261802eac167a77f00decc38f86262f56250",
       "rows": [
-        "1960s",
-        "1970s",
-        "Age of Sail",
-        "Things Canadian"
-      ],
-      "cols": [
-        "Cenozoic Era",
-        "Disasters",
-        "Locations in Europe",
-        "Warships"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.069999999999999,
-      "maxSimilarityToPast": 0.4022,
-      "similarityPenalty": 3.2176,
-      "movieOverlapPenalty": 2.864100468424864,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": 0.3882995315751355
-    },
-    {
-      "hash": "5c55c59ef8405d8f63cc0190e8589c99bba585566d8a6d102951468ee4c38365",
-      "rows": [
-        "1960s",
-        "1990s",
-        "2D Animated Films",
-        "Classic Films"
-      ],
-      "cols": [
-        "Ends with ILL",
-        "Fictional Animals",
-        "Fictional People",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.4799999999999995,
-      "maxSimilarityToPast": 0.4262,
-      "similarityPenalty": 3.4096,
-      "movieOverlapPenalty": 16.44809605339869,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -13.37769605339869
-    },
-    {
-      "hash": "ae26efaac0e5a0e1882dcc3c710e35acac5683af7c38fcc9e3ec91dcc133365e",
-      "rows": [
-        "1960s",
-        "2000s",
-        "Age of Sail",
-        "Cars"
-      ],
-      "cols": [
-        "Greek Mythology",
-        "Quaternary Period",
-        "Things French",
-        "US Navy"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.06,
-      "maxSimilarityToPast": 0.3181,
-      "similarityPenalty": 2.5448,
-      "movieOverlapPenalty": 4.641714671160679,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 1.8734853288393207
-    },
-    {
-      "hash": "fb5e5530853c38cf67e9380c8cd07756ea5ed0171ac9ce7603991170528262cc",
-      "rows": [
-        "1960s",
-        "2000s",
-        "American Civil War",
-        "World War II"
-      ],
-      "cols": [
-        "Dates",
-        "Locations in North America",
-        "Things French",
-        "US Presidents"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.23,
-      "maxSimilarityToPast": 0.4526,
-      "similarityPenalty": 3.6208,
-      "movieOverlapPenalty": 4.532492312939546,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 1.0767076870604546
-    },
-    {
-      "hash": "282c7dc7270f0fd9267168c2ca72e586b424f60e47feb073fc0d9077a46be7c5",
-      "rows": [
-        "1960s",
-        "1970s",
-        "Animal Species",
-        "Locations in North America"
-      ],
-      "cols": [
-        "Car Brands",
-        "Countries",
-        "Starts with GRE",
-        "Superheroes"
-      ],
-      "timestamp": null,
-      "qualityScore": 2.91,
-      "maxSimilarityToPast": 0.5258,
-      "similarityPenalty": 4.2064,
-      "movieOverlapPenalty": 3.8108287737471684,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -5.707228773747168
-    },
-    {
-      "hash": "5fd27f91800bbb1ba8a9841480dfad7c143eaf514dac87a68720725821278b49",
-      "rows": [
-        "1960s",
-        "1988",
-        "Movies featuring Jake Gyllenhaal",
-        "Movies featuring Joaquin Phoenix"
+        "1997",
+        "2018",
+        "Movies featuring Kurt Russell",
+        "Third in Internal Chronology"
       ],
       "cols": [
         "Disney",
-        "Fictional People",
         "Horror Stories",
+        "Movies featuring Samuel L. Jackson",
         "Sci-fi Stories"
       ],
       "timestamp": null,
-      "qualityScore": 15.88,
-      "maxSimilarityToPast": 0.3276,
-      "similarityPenalty": 2.6208,
-      "movieOverlapPenalty": 23.852049304150114,
+      "qualityScore": 21.24,
+      "maxSimilarityToPast": 0.4035,
+      "similarityPenalty": 3.228,
+      "movieOverlapPenalty": 27.43498184823693,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -10.592849304150114
+      "finalScore": -9.422981848236933
     },
     {
-      "hash": "dc3bddda2519ca23ced6a3503b7963687f9d25fa4f4ac26c8db2f95360b53357",
+      "hash": "d4309e69bf1b8e447161b0a59dc3ca4dc16317caedb1bd76c99b6432ba38ccee",
       "rows": [
-        "1960s",
-        "1989",
-        "Fourth in Release Order",
-        "Romance Stories"
+        "1997",
+        "2003",
+        "Classic Films",
+        "Red Things"
+      ],
+      "cols": [
+        "Fictional People",
+        "Stories about Families",
+        "Things French",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.910000000000002,
+      "maxSimilarityToPast": 0.4012,
+      "similarityPenalty": 3.2096,
+      "movieOverlapPenalty": 19.093553185845526,
+      "yearProximityPenalty": 0.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.8,
+      "finalScore": -10.193153185845524
+    },
+    {
+      "hash": "1584341e5692c2e937c6db56b0027fd69f6a0daaa570f83b28313602c78dd34a",
+      "rows": [
+        "1997",
+        "2000s",
+        "Movies featuring Jack Nicholson",
+        "Movies featuring Robert De Niro"
+      ],
+      "cols": [
+        "Biographical Stories",
+        "Fictional People",
+        "Stories about Families",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 17.2,
+      "maxSimilarityToPast": 0.3324,
+      "similarityPenalty": 2.6592,
+      "movieOverlapPenalty": 26.65879012700986,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -12.11799012700986
+    },
+    {
+      "hash": "0a08a5ed0e3618c7f9d72cf33bc59eb775681628398f5e1696e5d330d3643598",
+      "rows": [
+        "1997",
+        "2000s",
+        "Ends with OOD",
+        "Stories about Families"
       ],
       "cols": [
         "Disney",
-        "Ends with IRE",
+        "Japanese Films",
+        "Movies featuring Al Pacino",
+        "Romance Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.549999999999999,
+      "maxSimilarityToPast": 0.3154,
+      "similarityPenalty": 2.5232,
+      "movieOverlapPenalty": 25.83534751495082,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -16.80854751495082
+    },
+    {
+      "hash": "c004cf70d21c2cf9f31563e2d8cca39455d9c456518e555e9f03d15dfb34989f",
+      "rows": [
+        "1997",
+        "2019",
+        "Fifth in Release Order",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Disney",
+        "Movies featuring Bruce Willis",
+        "Movies featuring Emma Watson",
+        "Time Travel Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 23.709999999999997,
+      "maxSimilarityToPast": 0.6053,
+      "similarityPenalty": 4.8424,
+      "movieOverlapPenalty": 26.67730349838819,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.809703498388195
+    },
+    {
+      "hash": "2aee1f8041ed33a0c1897495dfe90587bcaab04a0786728ad5aa866e01bb621f",
+      "rows": [
+        "1997",
+        "2004",
+        "Fifth in Release Order",
+        "Fourth in Release Order"
+      ],
+      "cols": [
+        "Disney",
+        "Movies featuring Rupert Grint",
+        "Sci-fi Stories",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 20.609999999999996,
+      "maxSimilarityToPast": 0.419,
+      "similarityPenalty": 3.352,
+      "movieOverlapPenalty": 27.55733318111458,
+      "yearProximityPenalty": 0.6,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.6,
+      "finalScore": -10.899333181114583
+    },
+    {
+      "hash": "7c116aa4477117c281ca2de083017f434ea433dccf8a0d5b3a7bcb3030b59fd3",
+      "rows": [
+        "1997",
+        "2003",
+        "Ends with ITY",
+        "Horror Stories"
+      ],
+      "cols": [
+        "Fictional People",
+        "Movies directed by Quentin Tarantino",
+        "Movies featuring Alan Rickman",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.63,
+      "maxSimilarityToPast": 0.4411,
+      "similarityPenalty": 3.5288,
+      "movieOverlapPenalty": 22.88722220717153,
+      "yearProximityPenalty": 0.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.8,
+      "finalScore": -11.58602220717153
+    },
+    {
+      "hash": "cd1ceefe1944b3580be0c6c17b2cdcc64829304447b888970706cbb62368bdb2",
+      "rows": [
+        "2001",
+        "2014",
+        "Fictional People",
+        "Stories about Families"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Sequels",
+        "Stories Where the Mom Dies",
+        "Studio Ghibli"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.5,
+      "maxSimilarityToPast": 0.4153,
+      "similarityPenalty": 3.3224,
+      "movieOverlapPenalty": 25.998921288355252,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -13.821321288355252
+    },
+    {
+      "hash": "2b8ac376abbd98794bb6b341b8293246c88807d2070cb25023ddabf72c072645",
+      "rows": [
+        "1997",
+        "2008",
+        "Ends with ERS",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "2D Animated Films",
+        "Events",
+        "Movies featuring Sigourney Weaver",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.45,
+      "maxSimilarityToPast": 0.4187,
+      "similarityPenalty": 3.3496,
+      "movieOverlapPenalty": 23.115638701806233,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -15.015238701806235
+    },
+    {
+      "hash": "e6008ffdfd70214e9a9f1703c02673df0b888a3b22fe54019e4364c4bf88c6cd",
+      "rows": [
+        "1997",
+        "Christmas Stories",
+        "Horror Stories",
+        "Starts with RED"
+      ],
+      "cols": [
+        "2000s",
+        "Fictional People",
+        "Movies featuring Bruce Willis",
+        "Sequels"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.85,
+      "maxSimilarityToPast": 0.4172,
+      "similarityPenalty": 3.3376,
+      "movieOverlapPenalty": 22.871512128091002,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -15.359112128091002
+    },
+    {
+      "hash": "4597899fd74b6dc13a6913fb11fb77702a2ee2f0ade3b8676be05464241920c7",
+      "rows": [
+        "2001",
+        "2003",
+        "Disney",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Pixar",
+        "Romance Stories",
+        "TV Shows",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 17.58,
+      "maxSimilarityToPast": 0.3938,
+      "similarityPenalty": 3.1504,
+      "movieOverlapPenalty": 23.748634265725666,
+      "yearProximityPenalty": 1.6,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.6,
+      "finalScore": -10.919034265725667
+    },
+    {
+      "hash": "3b80c54a47c9d13af5beafe04bea134f929d9e0acc18cbd067ff7e2450290199",
+      "rows": [
+        "1997",
+        "2009",
+        "Romance Stories",
+        "Third in Internal Chronology"
+      ],
+      "cols": [
+        "Disney",
+        "Movies featuring Alan Rickman",
+        "Movies featuring Sigourney Weaver",
+        "Time Travel Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 19.229999999999997,
+      "maxSimilarityToPast": 0.5522,
+      "similarityPenalty": 4.4176,
+      "movieOverlapPenalty": 26.419068979284106,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.606668979284109
+    },
+    {
+      "hash": "d966e7832fcf41c0f2d2b64568edd16e6a55e8266590f3b186d74d4170751281",
+      "rows": [
+        "1997",
+        "2000s",
+        "Disney",
+        "Fictional People"
+      ],
+      "cols": [
+        "Fourth in Internal Chronology",
+        "Romance Stories",
+        "Sci-fi Stories",
+        "The Bad Place"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.59,
+      "maxSimilarityToPast": 0.3904,
+      "similarityPenalty": 3.1232,
+      "movieOverlapPenalty": 21.32087468513319,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.854074685133192
+    },
+    {
+      "hash": "7f2864bd7f07a1fa779742f1deb09d4fa405477ebb9c077ad7bbc5404c243532",
+      "rows": [
+        "2001",
+        "2003",
+        "Ends with ARS",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Events",
+        "Pixar",
+        "Romance Stories",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.540000000000001,
+      "maxSimilarityToPast": 0.3856,
+      "similarityPenalty": 3.0848,
+      "movieOverlapPenalty": 20.785481595485443,
+      "yearProximityPenalty": 1.6,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 1.6,
+      "finalScore": -11.930281595485441
+    },
+    {
+      "hash": "b9a7ab5fa5546da906e0ea80751910793da6ae6de6cfb4cefaf3ea80ead1c38c",
+      "rows": [
+        "1997",
+        "2004",
+        "Fifth in Internal Chronology",
+        "Movies featuring Sigourney Weaver"
+      ],
+      "cols": [
+        "Ends with LES",
+        "Sci-fi Stories",
+        "Stories Where the Mom Dies",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 17.12,
+      "maxSimilarityToPast": 0.4506,
+      "similarityPenalty": 3.6048,
+      "movieOverlapPenalty": 25.354358954347994,
+      "yearProximityPenalty": 0.6,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.6,
+      "finalScore": -12.439158954347993
+    },
+    {
+      "hash": "91de3e0c02da2ee315b40decf1c20fecc4740ce94a21fcaca1d122ab237434dd",
+      "rows": [
+        "1997",
+        "2019",
+        "Ends with RED",
+        "Romance Stories"
+      ],
+      "cols": [
+        "Fictional People",
+        "Movies featuring Bruce Willis",
         "Stories about Families",
         "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 10.94,
-      "maxSimilarityToPast": 0.4079,
-      "similarityPenalty": 3.2632,
-      "movieOverlapPenalty": 19.824242563869454,
+      "qualityScore": 13.17,
+      "maxSimilarityToPast": 0.3947,
+      "similarityPenalty": 3.1576,
+      "movieOverlapPenalty": 22.598737465646828,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -12.147442563869454
+      "finalScore": -12.586337465646828
     },
     {
-      "hash": "0f6bb2faecf519bfae2f1234b37a1fa9fad26665678ddbbd49991acc97af78bd",
+      "hash": "33b1b2821364811872ac743c17588459b76715737c240490301e18f499dd73fd",
       "rows": [
-        "1960s",
-        "1970s",
-        "3D Animated Films",
-        "Romance Stories"
-      ],
-      "cols": [
+        "2001",
+        "2011",
         "Disney",
-        "Ends with ARS",
-        "Fictional People",
-        "Movies featuring Christopher Plummer"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.75,
-      "maxSimilarityToPast": 0.3839,
-      "similarityPenalty": 3.0712,
-      "movieOverlapPenalty": 19.63392174593175,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -15.555121745931752
-    },
-    {
-      "hash": "b9484bddf2d9ad737edf9a2c2fb47d25e9b297f74de11e8c78893104b3cc573c",
-      "rows": [
-        "1960s",
-        "Age of Sail",
-        "Countries",
-        "Sauces"
+        "Fictional People"
       ],
       "cols": [
-        "Holocene Epoch",
-        "Starts with MAR",
-        "Things French",
-        "Things Greek"
+        "2D Animated Films",
+        "Movies featuring Jake Gyllenhaal",
+        "Romance Stories",
+        "Stories Where the Mom Dies"
       ],
       "timestamp": null,
-      "qualityScore": 5.63,
-      "maxSimilarityToPast": 0.29,
-      "similarityPenalty": 2.32,
-      "movieOverlapPenalty": 1.6676803916614977,
+      "qualityScore": 15.62,
+      "maxSimilarityToPast": 0.4276,
+      "similarityPenalty": 3.4208,
+      "movieOverlapPenalty": 25.30615466334114,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 1.6423196083385023
+      "finalScore": -13.10695466334114
     },
     {
-      "hash": "6a02bddd0570c5cd56c4e5b3c86d4b8fd22803423b1ac9335346706fdd0dd89f",
+      "hash": "7f0629d14cbad2f8f154e08286a2ec733faec27b8cccbca66f363037b6dd8880",
       "rows": [
-        "1960s",
-        "1990s",
-        "Animal Species",
-        "Locations in Europe"
+        "1997",
+        "2000s",
+        "Ends with  II",
+        "Fictional People"
       ],
       "cols": [
-        "Greek Mythology",
-        "Middle Eastern Countries",
-        "Musicians",
-        "Songs"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.110000000000001,
-      "maxSimilarityToPast": 0.4658,
-      "similarityPenalty": 3.7264,
-      "movieOverlapPenalty": 4.258308317916775,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 1.1252916820832262
-    },
-    {
-      "hash": "fc185b50121ce05a2a04571f1094c1b20d69ae18c96115c1269603aa22467d3e",
-      "rows": [
-        "1960s",
-        "Age of Sail",
-        "Countries",
-        "Ends with INE"
-      ],
-      "cols": [
-        "19th Century",
-        "Neogene Period",
-        "Saints",
+        "Family-Friendly Stories",
+        "Movies featuring Al Pacino",
+        "Movies featuring Sigourney Weaver",
         "Things French"
       ],
       "timestamp": null,
-      "qualityScore": 4.83,
-      "maxSimilarityToPast": 0.3517,
-      "similarityPenalty": 2.8136,
-      "movieOverlapPenalty": 1.7965319322777442,
+      "qualityScore": 10.39,
+      "maxSimilarityToPast": 0.4,
+      "similarityPenalty": 3.2,
+      "movieOverlapPenalty": 20.381699746264555,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 0.21986806772225576
+      "finalScore": -13.191699746264554
     },
     {
-      "hash": "3899c1da97704cebde673a6bd733c1a96e40ce9c3080a79785e8133c68a41dc9",
+      "hash": "16f77c9acea2e85500af0bb2b11661e067b6c0d50b6824f0c45c9c1895e81200",
       "rows": [
-        "1960s",
-        "Age of Sail",
-        "Battles",
-        "Ends with NCE"
-      ],
-      "cols": [
-        "Locations in Europe",
-        "Locations in North America",
-        "Things French",
-        "Things Greek"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.91,
-      "maxSimilarityToPast": 0.3044,
-      "similarityPenalty": 2.4352,
-      "movieOverlapPenalty": 2.365025966053141,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.10977403394685892
-    },
-    {
-      "hash": "76a7fa104510f7658444b59c7f3d0fdc300f432007b0eafd92c17fb0dc6d0d7f",
-      "rows": [
-        "1960s",
-        "Age of Sail",
-        "Companies",
-        "Starts with BAT"
-      ],
-      "cols": [
-        "19th Century",
-        "Oligocene Epoch",
-        "Things French",
-        "Things Greek"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.77,
-      "maxSimilarityToPast": 0.3827,
-      "similarityPenalty": 3.0616,
-      "movieOverlapPenalty": 1.9155556405898402,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -0.20715564058984048
-    },
-    {
-      "hash": "5471ff0a6740fc75ccf5a9b1550856167702b321fbd8e20d08d2a2c4fd2717bb",
-      "rows": [
-        "1960s",
-        "1988",
-        "Fifth in Internal Chronology",
-        "Fourth in Internal Chronology"
+        "2001",
+        "2011",
+        "Sci-fi Stories",
+        "Starts with HER"
       ],
       "cols": [
         "Disney",
-        "Sci-fi Stories",
-        "Stories Where the Mom Dies",
+        "Events",
+        "Romance Stories",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.030000000000001,
+      "maxSimilarityToPast": 0.4176,
+      "similarityPenalty": 3.3408,
+      "movieOverlapPenalty": 20.512363630989558,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -13.823163630989557
+    },
+    {
+      "hash": "658ea3e72a564c4b2d31e9a7416ab62571fdd418e9e1742475b5276578b43d0e",
+      "rows": [
+        "1997",
+        "2003",
+        "Ends with MEN",
+        "Sci-fi Stories"
+      ],
+      "cols": [
+        "Events",
+        "Fictional People",
+        "Stories about Families",
         "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 15.820000000000002,
-      "maxSimilarityToPast": 0.5192,
-      "similarityPenalty": 4.1536,
-      "movieOverlapPenalty": 24.92764309136257,
+      "qualityScore": 8.45,
+      "maxSimilarityToPast": 0.4699,
+      "similarityPenalty": 3.7592,
+      "movieOverlapPenalty": 18.745669582323707,
+      "yearProximityPenalty": 0.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.8,
+      "finalScore": -14.854869582323708
+    },
+    {
+      "hash": "81d987c9752fdb7254eb3c3ea8ff086cea6a000d78931a21ca62bd4a70221e3d",
+      "rows": [
+        "2001",
+        "2012",
+        "Sci-fi Stories",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Disney",
+        "Pixar",
+        "Romance Stories",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.83,
+      "maxSimilarityToPast": 0.5117,
+      "similarityPenalty": 4.0936,
+      "movieOverlapPenalty": 26.688316805408203,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -13.261243091362566
+      "finalScore": -14.951916805408203
     },
     {
-      "hash": "045ca4027fc3e1def784004bdc44d0414cf0f9dad92e620253ece4fcc30446bf",
+      "hash": "7e19951af1ea02ac2a0a2675c4e51a1748952909b4a48876f812bfb32d4c4ca2",
       "rows": [
-        "1960s",
-        "1988",
-        "Ends with ITY",
-        "Movies featuring Joaquin Phoenix"
+        "1997",
+        "2003",
+        "Ends with DAY",
+        "Fictional People"
       ],
       "cols": [
-        "Disney",
+        "2D Animated Films",
+        "Romance Stories",
+        "Sequels",
+        "Things French"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.36,
+      "maxSimilarityToPast": 0.3192,
+      "similarityPenalty": 2.5536,
+      "movieOverlapPenalty": 20.19725380762395,
+      "yearProximityPenalty": 0.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.8,
+      "finalScore": -15.190853807623952
+    },
+    {
+      "hash": "eb77cfdc20fdabb48df5205722fe9ae19fee39710e38a0bf01d8ce0c16295bfb",
+      "rows": [
+        "1997",
+        "2003",
+        "3D Animated Films",
+        "Movies featuring Sigourney Weaver"
+      ],
+      "cols": [
+        "Ends with RLD",
         "Fictional People",
         "Sci-fi Stories",
+        "Stories Where the Mom Dies"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.490000000000002,
+      "maxSimilarityToPast": 0.422,
+      "similarityPenalty": 3.376,
+      "movieOverlapPenalty": 24.762413682363,
+      "yearProximityPenalty": 0.8,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.8,
+      "finalScore": -15.448413682362999
+    },
+    {
+      "hash": "b8e074671e7dc93085d14f2f36d250e2503b6e9c9166c1a77130883c44b4b99c",
+      "rows": [
+        "1997",
+        "2011",
+        "Cannibalism",
+        "Ends with NCE"
+      ],
+      "cols": [
+        "Events",
+        "Fictional People",
+        "Movies featuring Alan Rickman",
         "Thriller Films"
       ],
       "timestamp": null,
-      "qualityScore": 10.15,
-      "maxSimilarityToPast": 0.3293,
-      "similarityPenalty": 2.6344,
-      "movieOverlapPenalty": 21.5370309891318,
+      "qualityScore": 14.87,
+      "maxSimilarityToPast": 0.325,
+      "similarityPenalty": 2.6,
+      "movieOverlapPenalty": 17.518208085523327,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -14.0214309891318
-    },
-    {
-      "hash": "941bb5d482951e6df343384f6b421658ba1fc193b359b0fa7a369fbe1e8c853c",
-      "rows": [
-        "1960s",
-        "2000s",
-        "2D Animated Films",
-        "Sequels"
-      ],
-      "cols": [
-        "Disney",
-        "Ends with DAY",
-        "Fictional People",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 3.1,
-      "maxSimilarityToPast": 0.3438,
-      "similarityPenalty": 2.7504,
-      "movieOverlapPenalty": 21.10943736875596,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -20.75983736875596
-    },
-    {
-      "hash": "d17488855ec5c35f784828650bdcf2bf934e504fe748a7b2b803d93c71f8a236",
-      "rows": [
-        "1960s",
-        "Age of Sail",
-        "Cities in Europe",
-        "Oceanliners"
-      ],
-      "cols": [
-        "Disasters",
-        "Locations in North America",
-        "Starts with CON",
-        "Things French"
-      ],
-      "timestamp": null,
-      "qualityScore": 10.59,
-      "maxSimilarityToPast": 0.4386,
-      "similarityPenalty": 3.5088,
-      "movieOverlapPenalty": 2.167564669878954,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 4.913635330121046
-    },
-    {
-      "hash": "fff4822ecf9d6793779a0d90a985d36e10791d85d7e2730a0d9b2aa19f958b65",
-      "rows": [
-        "1960s",
-        "Age of Sail",
-        "Countries",
-        "Historical Sites"
-      ],
-      "cols": [
-        "19th Century",
-        "Starts with MAR",
-        "Things French",
-        "Things Greek"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.140000000000001,
-      "maxSimilarityToPast": 0.3103,
-      "similarityPenalty": 2.4824,
-      "movieOverlapPenalty": 2.1851629091440152,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 1.4724370908559852
-    },
-    {
-      "hash": "50daf7690a47135fee2b096c4ed1e4fc03b5f028831bb177b6eab356656cadb5",
-      "rows": [
-        "1960s",
-        "1970s",
-        "Airships",
-        "Things French"
-      ],
-      "cols": [
-        "Disasters",
-        "Locations in Europe",
-        "Locations in North America",
-        "Musicians"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.9700000000000015,
-      "maxSimilarityToPast": 0.3847,
-      "similarityPenalty": 3.0776,
-      "movieOverlapPenalty": 3.25878738505198,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": 1.033612614948022
-    },
-    {
-      "hash": "5dc48457c1924e4b52bea285cb7ece7f16d6ec283f80666dafcd463f2168826f",
-      "rows": [
-        "1960s",
-        "1970s",
-        "Age of Sail",
-        "Things Canadian"
-      ],
-      "cols": [
-        "Cenozoic Era",
-        "Disasters",
-        "Locations in Europe",
-        "Military Ships"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.02,
-      "maxSimilarityToPast": 0.4021,
-      "similarityPenalty": 3.2168,
-      "movieOverlapPenalty": 2.864100468424864,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": 0.3390995315751356
-    },
-    {
-      "hash": "03ea4bbf5d07b329fbbdceeee074cc10a0c4e4e2ec465d7ec1969b424c8ab5df",
-      "rows": [
-        "1960s",
-        "Age of Sail",
-        "Companies",
-        "Things Canadian"
-      ],
-      "cols": [
-        "19th Century",
-        "Locations in Europe",
-        "Paleogene Period",
-        "Things French"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.64,
-      "maxSimilarityToPast": 0.3605,
-      "similarityPenalty": 2.884,
-      "movieOverlapPenalty": 1.6306173983566479,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.1253826016433519
-    },
-    {
-      "hash": "7e5d50f80cb000c9f5c03fab5fca4bb831e6648345650ea438e8aa4d6e37d686",
-      "rows": [
-        "1960s",
-        "Age of Sail",
-        "Companies",
-        "Starts with SPA"
-      ],
-      "cols": [
-        "19th Century",
-        "Miocene Epoch",
-        "Things French",
-        "Things Greek"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.7299999999999995,
-      "maxSimilarityToPast": 0.3827,
-      "similarityPenalty": 3.0616,
-      "movieOverlapPenalty": 2.0628424622952664,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -0.3944424622952667
+      "finalScore": -5.248208085523327
     }
   ],
   "message": "Puzzle saved successfully!"
