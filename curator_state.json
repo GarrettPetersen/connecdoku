@@ -5,921 +5,906 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "5f368c235c24593dc81122b350d808ae3460a9b0eb2b28ebdd489715b2f9672d",
+    "hash": "efd0e32611a22e976535396bac6794362d5f686b859fa35d7b43728e21a9f265",
     "rows": [
-      "15th Century",
-      "19th Century",
-      "Roman Empire",
-      "The Crusades"
+      "1st Century",
+      "Assassination of Caesar",
+      "Assassination of JFK",
+      "Things Turkish"
     ],
     "cols": [
-      "Locations in Europe",
-      "Monarchs",
-      "Siege Engines",
-      "Sieges"
+      "Assassins",
+      "Buildings",
+      "Cities",
+      "National Leaders"
     ],
     "timestamp": null,
-    "qualityScore": 12.23,
-    "maxSimilarityToPast": 0.3393,
-    "similarityPenalty": 2.7144,
-    "movieOverlapPenalty": 0.7690859105256825,
+    "qualityScore": 16.82,
+    "maxSimilarityToPast": 0.5204,
+    "similarityPenalty": 4.1632,
+    "movieOverlapPenalty": 0.4826087930300791,
     "yearProximityPenalty": 0,
     "adjacentDecadePenalty": 0,
     "adjacentCenturyPenalty": 0,
     "temporalPenalty": 0,
-    "finalScore": 8.746514089474319
+    "finalScore": 12.17419120696992
   },
   "viableGrid": [
     [
       [
-        "Santa Maria"
+        "Cassius Chaerea"
       ],
       [
-        "Constantine XI Palaiologos",
-        "Henry V",
-        "Henry VII",
-        "Mehmed II",
-        "Philip",
-        "Richard II",
-        "Timur"
+        "Arch of Titus",
+        "Colosseum"
       ],
       [
-        "Bombard",
-        "Great Turkish Bombard"
-      ],
-      [
-        "Siege of Constantinople",
-        "Siege of Orléans",
-        "The Fall of Constantinople"
-      ]
-    ],
-    [
-      [
-        "Waterloo"
-      ],
-      [
-        "Jean Bernadotte",
-        "Napoleon Bonaparte",
-        "Shaka Zulu",
-        "Victoria"
-      ],
-      [
-        "Howitzer"
-      ],
-      [
-        "Siege of Nanjing",
-        "Siege of Sevastopol"
-      ]
-    ],
-    [
-      [
-        "Capri",
-        "Constantinople",
-        "Elba",
         "Herculaneum",
-        "Ischia",
-        "Ostia Antica",
-        "Pompeii",
-        "Roma",
-        "Rome",
-        "Sardinia",
-        "Sicily",
-        "Vesuvius"
+        "Pompeii"
       ],
       [
-        "Trajan"
-      ],
-      [
-        "Ballista",
-        "Ballistae",
-        "Scorpion"
-      ],
-      [
-        "Siege of Hatra"
+        "Augustus",
+        "Caligula",
+        "Claudius",
+        "Emperor Ping",
+        "Emperor Ping of Han",
+        "John",
+        "Nero",
+        "Philip",
+        "Tiberius",
+        "Vespasian",
+        "Wang Mang"
       ]
     ],
     [
       [
-        "Malta"
+        "Brutus",
+        "Cassius",
+        "Servilius Casca"
       ],
       [
-        "Bohemond",
-        "Edward I",
-        "Frederick I Barbarossa",
-        "Frederick II",
-        "Louis IX",
-        "Louis VII",
-        "Philip II of France",
-        "Prester John",
-        "Richard the Lionheart",
-        "Saladin"
+        "Curia",
+        "Theatre of Pompey"
       ],
       [
-        "Mangonel",
-        "Trebuchet"
+        "Rome"
       ],
       [
-        "Siege of Malta"
+        "Caesar",
+        "Julius Caesar"
+      ]
+    ],
+    [
+      [
+        "Lee Harvey Oswald"
+      ],
+      [
+        "Texas Book Depository"
+      ],
+      [
+        "Dallas"
+      ],
+      [
+        "Kennedy"
+      ]
+    ],
+    [
+      [
+        "Mehmet Ali Agca"
+      ],
+      [
+        "Blue Mosque",
+        "Hagia Sophia",
+        "Theodosian Walls"
+      ],
+      [
+        "Constantinople",
+        "Troy"
+      ],
+      [
+        "Mehmed II",
+        "Suleiman the Magnificent",
+        "Timur"
       ]
     ]
   ],
   "chosen": [
     [
-      "Santa Maria",
-      "Mehmed II",
-      "Great Turkish Bombard",
-      "The Fall of Constantinople"
+      "Cassius Chaerea",
+      "Colosseum",
+      "Pompeii",
+      "Augustus"
     ],
     [
-      "Waterloo",
-      "Victoria",
-      "Howitzer",
-      "Siege of Sevastopol"
+      "Brutus",
+      "Theatre of Pompey",
+      "Rome",
+      "Julius Caesar"
     ],
     [
+      "Lee Harvey Oswald",
+      "Texas Book Depository",
+      "Dallas",
+      "Kennedy"
+    ],
+    [
+      "Mehmet Ali Agca",
+      "Hagia Sophia",
       "Constantinople",
-      "Trajan",
-      "Ballista",
-      "Siege of Hatra"
-    ],
-    [
-      "Malta",
-      "Richard the Lionheart",
-      "Trebuchet",
-      "Siege of Malta"
+      "Mehmed II"
     ]
   ],
   "usedWords": [
-    "Santa Maria",
-    "Mehmed II",
-    "Great Turkish Bombard",
-    "The Fall of Constantinople",
-    "Waterloo",
-    "Victoria",
-    "Howitzer",
-    "Siege of Sevastopol",
+    "Cassius Chaerea",
+    "Colosseum",
+    "Pompeii",
+    "Augustus",
+    "Brutus",
+    "Theatre of Pompey",
+    "Rome",
+    "Julius Caesar",
+    "Lee Harvey Oswald",
+    "Texas Book Depository",
+    "Dallas",
+    "Kennedy",
+    "Mehmet Ali Agca",
+    "Hagia Sophia",
     "Constantinople",
-    "Trajan",
-    "Ballista",
-    "Siege of Hatra",
-    "Malta",
-    "Richard the Lionheart",
-    "Trebuchet",
-    "Siege of Malta"
+    "Mehmed II"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "5f368c235c24593dc81122b350d808ae3460a9b0eb2b28ebdd489715b2f9672d",
+      "hash": "efd0e32611a22e976535396bac6794362d5f686b859fa35d7b43728e21a9f265",
       "rows": [
-        "15th Century",
-        "19th Century",
-        "Roman Empire",
-        "The Crusades"
-      ],
-      "cols": [
-        "Locations in Europe",
-        "Monarchs",
-        "Siege Engines",
-        "Sieges"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.23,
-      "maxSimilarityToPast": 0.3393,
-      "similarityPenalty": 2.7144,
-      "movieOverlapPenalty": 0.7690859105256825,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 8.746514089474319
-    },
-    {
-      "hash": "fc636c26d289bf9b5e07c289d3005ca0842dd843956d7adcbfe282305cc95bc9",
-      "rows": [
-        "1880s",
-        "1970s",
-        "Qing Dynasty",
-        "Things Indian"
-      ],
-      "cols": [
-        "Buildings",
-        "Classic Literature",
-        "Founders of Religious Movements",
-        "Locations in Asia"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.170000000000002,
-      "maxSimilarityToPast": 0.3854,
-      "similarityPenalty": 3.0832,
-      "movieOverlapPenalty": 3.1197575757575757,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 5.967042424242426
-    },
-    {
-      "hash": "89cc754f99c23cc3a5f2babce12dd9a1f2cd674c66b7218917d951ec0652ea5c",
-      "rows": [
-        "1992",
-        "2006",
-        "Stories Where the Mom Dies",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Anime",
-        "Musical Films",
-        "Second in Release Order",
-        "Third in Internal Chronology"
-      ],
-      "timestamp": null,
-      "qualityScore": 17.89,
-      "maxSimilarityToPast": 0.5993,
-      "similarityPenalty": 4.7944,
-      "movieOverlapPenalty": 27.081443148551582,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -13.98584314855158
-    },
-    {
-      "hash": "a7dc5924e05eb2166fd4169f0953f0941ee2a494b7f31483690171ba1cbb4319",
-      "rows": [
-        "Commonwealth Nations",
-        "Ends with SIA",
-        "Foods",
-        "Islands"
-      ],
-      "cols": [
-        "Locations in Europe",
-        "Locations in Oceania",
-        "Republics",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.06,
-      "maxSimilarityToPast": 0.3291,
-      "similarityPenalty": 2.6328,
-      "movieOverlapPenalty": 0.5591605385029336,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 4.868039461497068
-    },
-    {
-      "hash": "203e91818c7546c3ca809a11aae311ce8e5b2593d91eeb68bdafa0f62bd99f82",
-      "rows": [
-        "Classic Literature",
-        "Dinosaurs",
-        "Drinks",
-        "Eocene Epoch"
-      ],
-      "cols": [
-        "Red Things",
-        "Sea Creatures",
-        "Starts with CHA",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.55,
-      "maxSimilarityToPast": 0.2683,
-      "similarityPenalty": 2.1464,
-      "movieOverlapPenalty": 1.53564170321737,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 1.86795829678263
-    },
-    {
-      "hash": "857053b995a75b248fa7c8b8b32455f0eaf684e2a4e9008083b4f04bf2b80742",
-      "rows": [
-        "15th Century",
-        "2000s",
-        "Amphibious",
-        "Roman Empire"
-      ],
-      "cols": [
-        "Animal Species",
-        "Ends with WAR",
-        "Things Spanish",
+        "1st Century",
+        "Assassination of Caesar",
+        "Assassination of JFK",
         "Things Turkish"
       ],
+      "cols": [
+        "Assassins",
+        "Buildings",
+        "Cities",
+        "National Leaders"
+      ],
       "timestamp": null,
-      "qualityScore": 7.27,
-      "maxSimilarityToPast": 0.3188,
-      "similarityPenalty": 2.5504,
-      "movieOverlapPenalty": 3.318237342967281,
+      "qualityScore": 16.82,
+      "maxSimilarityToPast": 0.5204,
+      "similarityPenalty": 4.1632,
+      "movieOverlapPenalty": 0.4826087930300791,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 1.4013626570327187
+      "finalScore": 12.17419120696992
     },
     {
-      "hash": "b6d1602ab1faecad748e1841f0df84e575d75d84ff372b4ab10ae6b9f4b935ed",
+      "hash": "67a49d36c21bfa78f7aee48d1f67c2c433db897d471d1ca3ab7a588cd627679d",
       "rows": [
-        "1992",
-        "Ends with DER",
-        "Family Sagas",
-        "First in Internal Chronology"
+        "2000s",
+        "Blue Things",
+        "Ends with PER",
+        "Red Things"
       ],
       "cols": [
-        "19th Century",
-        "Fantasy Stories",
+        "Metals",
+        "Miocene Epoch",
+        "Things That Fly",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.27,
+      "maxSimilarityToPast": 0.3017,
+      "similarityPenalty": 2.4136,
+      "movieOverlapPenalty": 7.961138789893603,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -1.104738789893604
+    },
+    {
+      "hash": "72c4fe89e39ae34f199625921a5c6668cfd6b87c022225bcb8e978aab292bcc0",
+      "rows": [
+        "1988",
+        "1990",
+        "Classic Literature",
+        "Disney"
+      ],
+      "cols": [
+        "Children's Stories",
         "Romance Stories",
-        "Sequels"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.64,
-      "maxSimilarityToPast": 0.5125,
-      "similarityPenalty": 4.1,
-      "movieOverlapPenalty": 19.061126634901033,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -13.521126634901032
-    },
-    {
-      "hash": "7b757235f37e5e1429aa47277eee1b322917c9c0d06e7ea4fdae4c4cbcff470c",
-      "rows": [
-        "15th Century",
-        "Buildings",
-        "Ends with WAR",
-        "Rebellions"
-      ],
-      "cols": [
-        "17th Century",
-        "Ming Dynasty",
-        "Political Events",
-        "Things Indian"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.5,
-      "maxSimilarityToPast": 0.5184,
-      "similarityPenalty": 4.1472,
-      "movieOverlapPenalty": 0.4034313725490196,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 7.949368627450981
-    },
-    {
-      "hash": "e3d0681838006065da933bf60323dbac5cf601d65f8cac0dc63f352f45901db5",
-      "rows": [
-        "15th Century",
-        "19th Century",
-        "Fantasy Stories",
-        "Modern Countries"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Ends with ORE",
-        "Things Polish",
-        "Things Spanish"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.67,
-      "maxSimilarityToPast": 0.3863,
-      "similarityPenalty": 3.0904,
-      "movieOverlapPenalty": 3.866255551485575,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -1.286655551485575
-    },
-    {
-      "hash": "88b3881e21f483c1e61bf4d9228dfbc64c89915ede51c23d8586e1aff4851637",
-      "rows": [
-        "15th Century",
-        "19th Century",
-        "The Crusades",
-        "World War II"
-      ],
-      "cols": [
-        "Locations in Europe",
-        "Monarchs",
-        "Ranged Weapons",
-        "Starts with BAT"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.17,
-      "maxSimilarityToPast": 0.3809,
-      "similarityPenalty": 3.0472,
-      "movieOverlapPenalty": 0.9825819074757396,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 3.14021809252426
-    },
-    {
-      "hash": "61511569e732bec7d462137321311e1706a6dd3d26a47f97fc01dcda495ef845",
-      "rows": [
-        "15th Century",
-        "16th Century",
-        "Locations in Asia",
-        "Starts with GRE"
-      ],
-      "cols": [
-        "Locations in Europe",
-        "Ming Dynasty",
-        "Real Animals",
-        "The Crusades"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.72,
-      "maxSimilarityToPast": 0.375,
-      "similarityPenalty": 3,
-      "movieOverlapPenalty": 0.8016162581379973,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0.35,
-      "temporalPenalty": 0.35,
-      "finalScore": 2.5683837418620024
-    },
-    {
-      "hash": "7ece5bed887f7c55c094c0bcf657c36277d3abff6354e8a0b18c996eef673b01",
-      "rows": [
-        "1992",
-        "1995",
-        "Stories Where the Mom Dies",
+        "Second in Internal Chronology",
         "Stories about Families"
       ],
-      "cols": [
-        "Disney",
-        "Second in Release Order",
-        "Studio Ghibli",
-        "Third in Internal Chronology"
-      ],
       "timestamp": null,
-      "qualityScore": 18.049999999999997,
-      "maxSimilarityToPast": 0.4707,
-      "similarityPenalty": 3.7656,
-      "movieOverlapPenalty": 27.12404935047329,
-      "yearProximityPenalty": 1.4,
+      "qualityScore": 15.51,
+      "maxSimilarityToPast": 0.3244,
+      "similarityPenalty": 2.5952,
+      "movieOverlapPenalty": 21.920518548704496,
+      "yearProximityPenalty": 1.6,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1.4,
-      "finalScore": -14.239649350473291
+      "temporalPenalty": 1.6,
+      "finalScore": -10.605718548704496
     },
     {
-      "hash": "69d0c9cdc60e3b6b16b342fee8a09edd19e4a0c4ef55258fed623ed10585fcce",
+      "hash": "bc688850a500e8d815704802a2200d13a8bb238362df76e0b2daa6cef4841773",
       "rows": [
-        "1992",
-        "Ends with DAY",
-        "First in Internal Chronology",
-        "Stories about Families"
-      ],
-      "cols": [
-        "19th Century",
-        "2D Animated Films",
-        "Christmas Stories",
-        "Sequels"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.010000000000002,
-      "maxSimilarityToPast": 0.4372,
-      "similarityPenalty": 3.4976,
-      "movieOverlapPenalty": 23.47469399881165,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -17.962293998811646
-    },
-    {
-      "hash": "2ac79c6bcd2ee2956cae62022b04e71646b380fb44951d08aaac10588a203b8d",
-      "rows": [
-        "1880s",
-        "1970s",
-        "Starts with MAR",
-        "Things Indian"
-      ],
-      "cols": [
-        "Buildings",
-        "Classic Literature",
-        "Family-Friendly Stories",
-        "Founders of Religious Movements"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.850000000000001,
-      "maxSimilarityToPast": 0.3784,
-      "similarityPenalty": 3.0272,
-      "movieOverlapPenalty": 6.76670809359417,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -0.9439080935941693
-    },
-    {
-      "hash": "fd483728c4769f358db985d406bf3a54d06aed81aa9bd8ab7fb26d101be16d16",
-      "rows": [
-        "1880s",
-        "1970s",
-        "Ends with TER",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Buildings",
-        "Classic Literature",
-        "Fantasy Stories",
-        "Popes"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.07,
-      "maxSimilarityToPast": 0.3853,
-      "similarityPenalty": 3.0824,
-      "movieOverlapPenalty": 7.01049530886819,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -1.0228953088681898
-    },
-    {
-      "hash": "199c2ebb939f0011b18f17765654ca56711d95486b5179ddfae319889a6b3268",
-      "rows": [
-        "15th Century",
-        "19th Century",
-        "Roman Empire",
-        "The Crusades"
-      ],
-      "cols": [
-        "Locations in Europe",
-        "Monarchs",
-        "Siege Engines",
-        "Starts with SIE"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.59,
-      "maxSimilarityToPast": 0.3322,
-      "similarityPenalty": 2.6576,
-      "movieOverlapPenalty": 0.7690859105256825,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 5.163314089474317
-    },
-    {
-      "hash": "b77deb6f80522ccbe9de965eb72152a5c23dd6ba423165de0bfd61f2d56dccb7",
-      "rows": [
-        "Classic Literature",
-        "Dinosaurs",
-        "Drinks",
-        "Oligocene Epoch"
-      ],
-      "cols": [
-        "Red Things",
-        "Sea Creatures",
-        "Starts with CHA",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.54,
-      "maxSimilarityToPast": 0.2683,
-      "similarityPenalty": 2.1464,
-      "movieOverlapPenalty": 1.53564170321737,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 1.8579582967826302
-    },
-    {
-      "hash": "90fe3952862f98e005b936c01fbe1c81d86edaa6742f6914a024af5a73455f46",
-      "rows": [
-        "Classic Literature",
-        "Dinosaurs",
-        "Drinks",
-        "Paleogene Period"
-      ],
-      "cols": [
-        "Red Things",
-        "Sea Creatures",
-        "Starts with CHA",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.53,
-      "maxSimilarityToPast": 0.2683,
-      "similarityPenalty": 2.1464,
-      "movieOverlapPenalty": 1.53564170321737,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 1.8479582967826305
-    },
-    {
-      "hash": "adfdd04b9e1be07468eb5752aafe9c0fa9347decde5db93de398556ad20f2519",
-      "rows": [
-        "Classic Literature",
-        "Drinks",
-        "Modern Countries",
-        "Monarchs"
-      ],
-      "cols": [
-        "Ends with INE",
-        "Islands",
-        "Things Indian",
-        "Things Spanish"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.0200000000000005,
-      "maxSimilarityToPast": 0.4556,
-      "similarityPenalty": 3.6448,
-      "movieOverlapPenalty": 1.6258503076570807,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -1.2506503076570803
-    },
-    {
-      "hash": "f0aa94f3a4bfae86e5cc07f1d52f51630ff12326532dd364223373fa06aa68d5",
-      "rows": [
-        "15th Century",
-        "19th Century",
-        "Countries",
-        "Fantasy Stories"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Ends with ORE",
-        "Things Polish",
-        "Things Spanish"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.66,
-      "maxSimilarityToPast": 0.3863,
-      "similarityPenalty": 3.0904,
-      "movieOverlapPenalty": 3.860941727842911,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -1.2913417278429105
-    },
-    {
-      "hash": "0299296abd33f764f5753bdf2343ca9752bb186e187b45c82208d09f3b6ab614",
-      "rows": [
-        "1880s",
-        "1970s",
-        "Ends with LES",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Buildings",
-        "Classic Literature",
-        "Fantasy Stories",
-        "Islands"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.880000000000001,
-      "maxSimilarityToPast": 0.375,
-      "similarityPenalty": 3,
-      "movieOverlapPenalty": 7.072014455133099,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -4.192014455133098
-    },
-    {
-      "hash": "e0638397086caa41ba4b4fe1830dea2a4326d633a2627dd6d66222fa5c1dd75a",
-      "rows": [
-        "1992",
-        "Disney",
-        "Family Sagas",
+        "1983",
+        "2005",
+        "Things Chinese",
         "Time Travel Stories"
       ],
       "cols": [
-        "19th Century",
+        "Ends with ENT",
+        "First in Release Order",
+        "Sequels",
+        "Thriller Films"
+      ],
+      "timestamp": null,
+      "qualityScore": 10.49,
+      "maxSimilarityToPast": 0.3418,
+      "similarityPenalty": 2.7344,
+      "movieOverlapPenalty": 21.544125158723762,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -13.788525158723761
+    },
+    {
+      "hash": "33543f2c4c5cc17aa0de7203ff785a12aec063468f353dfb4cdd098216a07b83",
+      "rows": [
+        "1st Century",
+        "Great Conquerors",
+        "Starts with MAR",
+        "Tang Dynasty"
+      ],
+      "cols": [
+        "1st Century BC",
+        "Emperors",
+        "Founders of Religious Movements",
+        "Medieval Figures"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.570000000000002,
+      "maxSimilarityToPast": 0.4685,
+      "similarityPenalty": 3.748,
+      "movieOverlapPenalty": 0.8516876077851687,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 10.970312392214835
+    },
+    {
+      "hash": "acf1018a5d27e1f5e55e7914cf5a2919b785597e98a136a2485a6fceb889cdb4",
+      "rows": [
+        "1st Century",
+        "Foods",
+        "Historical Sites",
+        "Period Stories"
+      ],
+      "cols": [
+        "Ancient Cities",
+        "Han Dynasty",
+        "Shakespeare",
+        "Starts with MAR"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.71,
+      "maxSimilarityToPast": 0.4144,
+      "similarityPenalty": 3.3152,
+      "movieOverlapPenalty": 5.006174218912919,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 4.3886257810870815
+    },
+    {
+      "hash": "6002a9d45b561395fdf32eccd43adebd02f12a89883281fc67e5340f9a645708",
+      "rows": [
+        "2000s",
+        "2012",
+        "Second in Release Order",
+        "Stories about Families"
+      ],
+      "cols": [
+        "Christmas Stories",
+        "Musical Films",
+        "Pixar",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 15.549999999999999,
+      "maxSimilarityToPast": 0.4898,
+      "similarityPenalty": 3.9184,
+      "movieOverlapPenalty": 27.713128292675748,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -16.08152829267575
+    },
+    {
+      "hash": "577a7e5eca2df97a2b6e022d1bda8c91db7a04cddfc62eb6129ece5928207f33",
+      "rows": [
+        "2000s",
+        "Airships",
+        "Animal Terms",
+        "Things Canadian"
+      ],
+      "cols": [
+        "Cities in USA",
+        "Foods",
+        "Musicians",
+        "National Leaders"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.3,
+      "maxSimilarityToPast": 0.3762,
+      "similarityPenalty": 3.0096,
+      "movieOverlapPenalty": 3.20590817328588,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.0844918267141201
+    },
+    {
+      "hash": "f6265c14331bee9069b9e063d7bc4f1929d6ed297585a47c96d9e4f7d97da7e7",
+      "rows": [
+        "2000s",
+        "2010",
+        "Black and White",
+        "Starts with CHA"
+      ],
+      "cols": [
+        "Companies",
+        "Family-Friendly Stories",
+        "Period Stories",
+        "Things Chinese"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.3999999999999995,
+      "maxSimilarityToPast": 0.2958,
+      "similarityPenalty": 2.3664,
+      "movieOverlapPenalty": 15.036619939260653,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.003019939260653
+    },
+    {
+      "hash": "4db53459edffd04c1dc187aead30561327d8390ff5e6d653c0bcfa8e4486d512",
+      "rows": [
+        "1998",
+        "2007",
+        "Ends with ESS",
+        "First in Release Order"
+      ],
+      "cols": [
+        "3D Animated Films",
         "Romance Stories",
-        "Second in Release Order",
-        "Third in Internal Chronology"
+        "Sequels",
+        "World War II"
       ],
       "timestamp": null,
-      "qualityScore": 14.379999999999999,
-      "maxSimilarityToPast": 0.4786,
-      "similarityPenalty": 3.8288,
-      "movieOverlapPenalty": 21.413549988470994,
-      "yearProximityPenalty": 0,
+      "qualityScore": 12.11,
+      "maxSimilarityToPast": 0.2918,
+      "similarityPenalty": 2.3344,
+      "movieOverlapPenalty": 22.55705893028441,
+      "yearProximityPenalty": 0.2,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -10.862349988470996
+      "temporalPenalty": 0.2,
+      "finalScore": -12.98145893028441
     },
     {
-      "hash": "13c08817d088edcb7e7ecb4c7f8710152b6bfe19c200b4f875ef26761e28bf59",
+      "hash": "539b3288772c054963b20beb5ce994796b15c0dc9b6e598987444b78ddf4428a",
       "rows": [
-        "1992",
-        "2006",
-        "Stories Where the Mom Dies",
-        "Stories about Families"
+        "2000s",
+        "Battleships",
+        "Drinks",
+        "Foods"
       ],
       "cols": [
-        "Japanese Films",
-        "Musical Films",
-        "Second in Release Order",
-        "Third in Internal Chronology"
+        "Cities",
+        "Starts with RED",
+        "Things Canadian",
+        "Things Spanish"
       ],
       "timestamp": null,
-      "qualityScore": 17.37,
-      "maxSimilarityToPast": 0.5989,
-      "similarityPenalty": 4.7912,
-      "movieOverlapPenalty": 27.721443148551582,
+      "qualityScore": 5.83,
+      "maxSimilarityToPast": 0.3826,
+      "similarityPenalty": 3.0608,
+      "movieOverlapPenalty": 4.131770532896129,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -15.142643148551581
+      "finalScore": -1.3625705328961293
     },
     {
-      "hash": "8cb4316893d3f2901178866111e70a0c96421a531e4e92879c12fb13fc4de8e4",
+      "hash": "c0081f619697ca01ed8912c43cba0a2ee1f4185276ca583010e8e4f9442cc9eb",
       "rows": [
-        "1992",
-        "2004",
-        "Disney",
-        "Stories about Families"
+        "1st Century",
+        "Ancient Figures",
+        "Athletes",
+        "Islands"
       ],
       "cols": [
-        "2D Animated Films",
-        "Musical Films",
-        "Second in Release Order",
-        "Third in Internal Chronology"
+        "2000s",
+        "National Leaders",
+        "Starts with MAR",
+        "Things Chinese"
       ],
       "timestamp": null,
-      "qualityScore": 14.049999999999997,
-      "maxSimilarityToPast": 0.5979,
-      "similarityPenalty": 4.7832,
-      "movieOverlapPenalty": 28.071071890393736,
+      "qualityScore": 6.4399999999999995,
+      "maxSimilarityToPast": 0.2931,
+      "similarityPenalty": 2.3448,
+      "movieOverlapPenalty": 4.133469374649116,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -18.80427189039374
+      "finalScore": -0.03826937464911673
     },
     {
-      "hash": "4d013f22bb628549f616ec2e77c1dfe7e7c514594f77bb9d3c564260c97f3997",
+      "hash": "537fcc7e5409b240408704b5487f5481fceb2fe18e7179eebfe85dca404b6a91",
       "rows": [
-        "15th Century",
-        "19th Century",
-        "Roman Empire",
-        "The Crusades"
+        "1st Century",
+        "Foods",
+        "Locations in Asia",
+        "Real Animals"
       ],
       "cols": [
-        "Islands",
-        "Monarchs",
-        "Siege Engines",
-        "Sieges"
+        "2000s",
+        "Cities",
+        "Starts with CAS",
+        "Things Chinese"
       ],
       "timestamp": null,
-      "qualityScore": 12.29,
-      "maxSimilarityToPast": 0.4027,
-      "similarityPenalty": 3.2216,
-      "movieOverlapPenalty": 0.8467081163719119,
+      "qualityScore": 2.05,
+      "maxSimilarityToPast": 0.4047,
+      "similarityPenalty": 3.2376,
+      "movieOverlapPenalty": 4.444821291986429,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 8.221691883628086
+      "finalScore": -5.632421291986429
     },
     {
-      "hash": "931b4aa3fc6bc54bb04d82efbd8daf7b48b466fc5aa4beb3dd8d9de020d758cb",
+      "hash": "fd695e12e4078fa5f1f5d0a935ed1fd5260be83b3521273934780444e367dbf3",
       "rows": [
-        "15th Century",
-        "16th Century",
+        "2000s",
+        "2016",
+        "Classic Literature",
+        "Ends with HER"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Fantasy Stories",
+        "First in Release Order",
+        "Romance Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.699999999999999,
+      "maxSimilarityToPast": 0.3751,
+      "similarityPenalty": 3.0008,
+      "movieOverlapPenalty": 16.858550151423955,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -14.159350151423956
+    },
+    {
+      "hash": "b793aff55510e7226c82493cfc3b938e462fbad0cbf034ca7a89885652e8e528",
+      "rows": [
+        "1st Century",
+        "Starts with MAR",
+        "Tang Dynasty",
+        "Warring States Period"
+      ],
+      "cols": [
+        "1st Century BC",
         "Buildings",
-        "Locations in Asia"
-      ],
-      "cols": [
-        "Locations in Europe",
-        "Ming Dynasty",
-        "Things Indian",
-        "Things Turkish"
+        "Emperors",
+        "Writers"
       ],
       "timestamp": null,
-      "qualityScore": 10.08,
-      "maxSimilarityToPast": 0.5278,
-      "similarityPenalty": 4.2224,
-      "movieOverlapPenalty": 0.5044356609574001,
+      "qualityScore": 14.559999999999999,
+      "maxSimilarityToPast": 0.3909,
+      "similarityPenalty": 3.1272,
+      "movieOverlapPenalty": 0.669869425966987,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 10.762930574033012
+    },
+    {
+      "hash": "d52897f250ff54220325a86671f373b3c39484bc400e23171fc76a277d92c802",
+      "rows": [
+        "1st Century",
+        "2nd Century",
+        "Starts with MAR",
+        "The Gunpowder Plot"
+      ],
+      "cols": [
+        "Assassins",
+        "Buildings",
+        "National Leaders",
+        "Things Chinese"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.24,
+      "maxSimilarityToPast": 0.5277,
+      "similarityPenalty": 4.2216,
+      "movieOverlapPenalty": 0.9129308220981897,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0.35,
       "temporalPenalty": 0.35,
-      "finalScore": 5.0031643390426
+      "finalScore": 7.75546917790181
     },
     {
-      "hash": "2df8c993c9c478fccbe401e1e323253617358e839a9b63c74e6a83f637e3a75f",
+      "hash": "cdc4ff64b0d8beada3384e76ef65a34bee1c3159ed4feabad9f2e41fd8030b25",
       "rows": [
-        "15th Century",
-        "19th Century",
-        "Roman Empire",
-        "Things Turkish"
+        "1st Century",
+        "French Revolution",
+        "Roman Republic",
+        "Things Chinese"
+      ],
+      "cols": [
+        "Assassins",
+        "Historical Sites",
+        "National Leaders",
+        "Starts with MAR"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.83,
+      "maxSimilarityToPast": 0.5153,
+      "similarityPenalty": 4.1224,
+      "movieOverlapPenalty": 1.2528234875722504,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 7.454776512427749
+    },
+    {
+      "hash": "13d39e298692b1d437178aaf9327485bd8a70f1588a47a3073990366976de995",
+      "rows": [
+        "2000s",
+        "4th Century BC",
+        "Period Stories",
+        "Shakespeare"
+      ],
+      "cols": [
+        "Ancient Figures",
+        "Classic Literature",
+        "Ends with GHT",
+        "National Leaders"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.569999999999999,
+      "maxSimilarityToPast": 0.2802,
+      "similarityPenalty": 2.2416,
+      "movieOverlapPenalty": 9.67765098830076,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -3.3492509883007617
+    },
+    {
+      "hash": "743d179897dda11dea448ef980e0bc1d35b5d0ec6d32baeb89af09f2d058a950",
+      "rows": [
+        "1996",
+        "2003",
+        "Classic Literature",
+        "Things Chinese"
       ],
       "cols": [
         "Animal Terms",
-        "Locations in Europe",
-        "Monarchs",
-        "Sieges"
+        "First in Release Order",
+        "Period Stories",
+        "Romance Stories"
       ],
       "timestamp": null,
-      "qualityScore": 8.93,
-      "maxSimilarityToPast": 0.3961,
-      "similarityPenalty": 3.1688,
-      "movieOverlapPenalty": 0.7899002313400033,
-      "yearProximityPenalty": 0,
+      "qualityScore": 9.889999999999999,
+      "maxSimilarityToPast": 0.3323,
+      "similarityPenalty": 2.6584,
+      "movieOverlapPenalty": 17.36465192861285,
+      "yearProximityPenalty": 0.6,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 4.971299768659996
+      "temporalPenalty": 0.6,
+      "finalScore": -10.733051928612852
     },
     {
-      "hash": "41d76ba6444d05687c7c98e64e0c6d2d50d657bd1fd93a4f37f738d4d32ce0f0",
+      "hash": "2271ed1cd599da433746910097adece49c4d7077fe9de24af444f4674aeccd20",
       "rows": [
-        "15th Century",
-        "19th Century",
-        "Roman Empire",
-        "The Crusades"
-      ],
-      "cols": [
-        "Islands",
-        "Monarchs",
-        "Siege Engines",
-        "Starts with SIE"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.649999999999999,
-      "maxSimilarityToPast": 0.4004,
-      "similarityPenalty": 3.2032,
-      "movieOverlapPenalty": 0.8467081163719119,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 4.600091883628087
-    },
-    {
-      "hash": "a84c609e1937bf531addd93d51da559069cc2fba4c7a4660d63b6ed8946b57a0",
-      "rows": [
-        "15th Century",
-        "19th Century",
-        "Amphibious",
-        "Roman Empire"
-      ],
-      "cols": [
+        "2000s",
+        "Airships",
         "Animal Terms",
-        "Ends with WAR",
-        "Things Spanish",
-        "Things Turkish"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.26,
-      "maxSimilarityToPast": 0.3786,
-      "similarityPenalty": 3.0288,
-      "movieOverlapPenalty": 0.8713924936834079,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 3.3598075063165913
-    },
-    {
-      "hash": "3f19df81cf4e73ad9ba7b06356ee609967cee0820e36e901c6275efcea726a91",
-      "rows": [
-        "15th Century",
-        "19th Century",
-        "The Crusades",
-        "World War II"
+        "Things Canadian"
       ],
       "cols": [
-        "Islands",
-        "Monarchs",
-        "Ranged Weapons",
-        "Starts with BAT"
+        "Cities in North America",
+        "Foods",
+        "Musicians",
+        "National Leaders"
       ],
       "timestamp": null,
-      "qualityScore": 7.2299999999999995,
-      "maxSimilarityToPast": 0.3809,
-      "similarityPenalty": 3.0472,
-      "movieOverlapPenalty": 1.0602041133219688,
+      "qualityScore": 7.13,
+      "maxSimilarityToPast": 0.3891,
+      "similarityPenalty": 3.1128,
+      "movieOverlapPenalty": 3.1924076911258026,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 3.1225958866780306
+      "finalScore": 0.8247923088741973
+    },
+    {
+      "hash": "3c7cf880f63378ef22c9e6dee3c8913eb832d087245faa28367cc99eca3cb746",
+      "rows": [
+        "1st Century",
+        "Animal Terms",
+        "Starts with CHA",
+        "Things Korean"
+      ],
+      "cols": [
+        "Cities",
+        "Musicians",
+        "National Leaders",
+        "Things Chinese"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.739999999999999,
+      "maxSimilarityToPast": 0.3895,
+      "similarityPenalty": 3.116,
+      "movieOverlapPenalty": 1.129047093183702,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 0.4949529068162972
+    },
+    {
+      "hash": "3b265e55276c5d5467d60b8142e4d82f393719886819ea3c1da5a5250a712200",
+      "rows": [
+        "2000s",
+        "Airships",
+        "Animal Terms",
+        "Things Canadian"
+      ],
+      "cols": [
+        "Ends with LES",
+        "Foods",
+        "Musicians",
+        "National Leaders"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.52,
+      "maxSimilarityToPast": 0.3878,
+      "similarityPenalty": 3.1024,
+      "movieOverlapPenalty": 4.185871743413384,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -0.7682717434133841
+    },
+    {
+      "hash": "03c9612e27a3200d4e35aa44e279152b503dece7a0b2cec43061060011cb69c0",
+      "rows": [
+        "2000s",
+        "Blue Things",
+        "Ends with PER",
+        "Red Things"
+      ],
+      "cols": [
+        "Metals",
+        "Pliocene Epoch",
+        "Things That Fly",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.26,
+      "maxSimilarityToPast": 0.305,
+      "similarityPenalty": 2.44,
+      "movieOverlapPenalty": 7.961138789893603,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -1.1411387898936027
+    },
+    {
+      "hash": "08257b7252b7b90a61b3982f75508cdc002de4ef0afecf94192ac3be2cf47e61",
+      "rows": [
+        "2000s",
+        "Blue Things",
+        "Ends with PER",
+        "Red Things"
+      ],
+      "cols": [
+        "Metals",
+        "Neogene Period",
+        "Things That Fly",
+        "Thriller Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.27,
+      "maxSimilarityToPast": 0.3087,
+      "similarityPenalty": 2.4696,
+      "movieOverlapPenalty": 7.961138789893603,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -1.1607387898936032
+    },
+    {
+      "hash": "118899de52bed8f73eae2344056f35610a21d6fcfcca74638c8f33a605a4fa03",
+      "rows": [
+        "1st Century",
+        "Animal Terms",
+        "Athletes",
+        "Foods"
+      ],
+      "cols": [
+        "2000s",
+        "Ends with LLA",
+        "National Leaders",
+        "Things Chinese"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.469999999999999,
+      "maxSimilarityToPast": 0.4,
+      "similarityPenalty": 3.2,
+      "movieOverlapPenalty": 3.918032193800435,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -1.6480321938004363
+    },
+    {
+      "hash": "14b9f515f1b2a874c0468e6051bc93bd1c0dda7372c250bb18452e9f96a94080",
+      "rows": [
+        "1st Century",
+        "Animal Terms",
+        "Foods",
+        "Things Canadian"
+      ],
+      "cols": [
+        "2000s",
+        "Cities",
+        "National Leaders",
+        "Starts with BAN"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.8400000000000003,
+      "maxSimilarityToPast": 0.4194,
+      "similarityPenalty": 3.3552,
+      "movieOverlapPenalty": 3.2695283465505063,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -3.784728346550506
+    },
+    {
+      "hash": "7f3baf529024255d9601c8fdf041b04ba6ab4d03d01689744f67f317843100c7",
+      "rows": [
+        "1st Century",
+        "Modern Countries",
+        "National Leaders",
+        "Real Animals"
+      ],
+      "cols": [
+        "2000s",
+        "Cities",
+        "Starts with MAR",
+        "Things Chinese"
+      ],
+      "timestamp": null,
+      "qualityScore": 1.9400000000000002,
+      "maxSimilarityToPast": 0.383,
+      "similarityPenalty": 3.064,
+      "movieOverlapPenalty": 3.9937710391436645,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -5.117771039143665
+    },
+    {
+      "hash": "0bc116397ed3f790b4844a799ad2538847df4a23fcffe63053e6b4e77c1fcf21",
+      "rows": [
+        "1st Century",
+        "Animal Terms",
+        "Ends with VER",
+        "Foods"
+      ],
+      "cols": [
+        "2000s",
+        "Cities",
+        "National Leaders",
+        "Things Chinese"
+      ],
+      "timestamp": null,
+      "qualityScore": 1.9300000000000002,
+      "maxSimilarityToPast": 0.4156,
+      "similarityPenalty": 3.3248,
+      "movieOverlapPenalty": 3.99101375769109,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -5.38581375769109
+    },
+    {
+      "hash": "0bdd26d119d32b55f1f83b7fb1ae15d64de9f4ff9c10ec18c2a46f50a00cf6e3",
+      "rows": [
+        "1st Century",
+        "Animal Terms",
+        "Foods",
+        "Starts with MON"
+      ],
+      "cols": [
+        "2000s",
+        "Cities",
+        "National Leaders",
+        "Things Chinese"
+      ],
+      "timestamp": null,
+      "qualityScore": 1.9300000000000002,
+      "maxSimilarityToPast": 0.4191,
+      "similarityPenalty": 3.3528,
+      "movieOverlapPenalty": 4.3499881166654495,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -5.772788116665449
+    },
+    {
+      "hash": "7307ba59f395339fe8e7b5f717af059393ca006aa28a11bea08b23486a41eed9",
+      "rows": [
+        "1st Century",
+        "Animal Terms",
+        "Foods",
+        "Period Stories"
+      ],
+      "cols": [
+        "Cities",
+        "Ends with MON",
+        "National Leaders",
+        "Things Chinese"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.66,
+      "maxSimilarityToPast": 0.4156,
+      "similarityPenalty": 3.3248,
+      "movieOverlapPenalty": 5.432000780110056,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -6.0968007801100566
     }
   ],
   "message": "Puzzle saved successfully!"
