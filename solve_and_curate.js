@@ -522,6 +522,7 @@ async function solveCandidatesInMemory({
 
   const status = Array.from({ length: workers }, () => ({ found: 0, inFlight: null }));
   let active = workers;
+  const wObjs = [];
 
   function shouldStop() {
     if (stopRequested) return true;
@@ -530,18 +531,28 @@ async function solveCandidatesInMemory({
     return false;
   }
 
+  function requestGlobalCleanup() {
+    for (const w of wObjs) {
+      try {
+        w.postMessage({ type: "cleanup" });
+      } catch {}
+    }
+  }
+
   function maybeAccept(p) {
+    // Hard cap: never allow candidate map to exceed pool size.
+    if (candidatesByHash.size >= candidatePoolSize) return false;
     const all = [...p.rows, ...p.cols];
     const qualityScore = scorePuzzle(all, categoryScores);
-    if (qualityScore < minScore) return;
+    if (qualityScore < minScore) return false;
     const hash = p.hash || computePuzzleHash(p.rows, p.cols);
-    if (candidatesByHash.has(hash)) return;
+    if (candidatesByHash.has(hash)) return false;
     candidatesByHash.set(hash, { ...p, hash, qualityScore });
+    return true;
   }
 
   console.log(`Launching ${workers} worker(s)… (jChunk=${jChunk}, stop at pool=${candidatePoolSize} or ${maxSeconds}s)`);
 
-  const wObjs = [];
   const workerFile = fileURLToPath(import.meta.url);
   for (let id = 0; id < workers; id++) {
     const w = new Worker(workerFile, {
@@ -578,7 +589,14 @@ async function solveCandidatesInMemory({
         w.postMessage({ type: "work", chunk });
       } else if (msg.type === "found_batch") {
         if (Array.isArray(msg.puzzles)) {
-          for (const p of msg.puzzles) maybeAccept(p);
+          for (const p of msg.puzzles) {
+            maybeAccept(p);
+            if (candidatesByHash.size >= candidatePoolSize) {
+              stopRequested = true;
+              requestGlobalCleanup();
+              break;
+            }
+          }
         }
         if (DEBUG) console.log(`[main] candidates=${candidatesByHash.size}`);
       } else if (msg.type === "cleanup_done") {
@@ -618,11 +636,7 @@ async function solveCandidatesInMemory({
   while (active > 0) {
     if (!stopRequested && shouldStop()) {
       stopRequested = true;
-      for (const w of wObjs) {
-        try {
-          w.postMessage({ type: "cleanup" });
-        } catch {}
-      }
+      requestGlobalCleanup();
     }
     // eslint-disable-next-line no-await-in-loop
     await new Promise((r) => setTimeout(r, 100));

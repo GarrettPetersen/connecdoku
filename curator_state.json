@@ -1,952 +1,792 @@
 {
-  "curatedCount": 1,
+  "curatedCount": 0,
   "attempts": 0,
-  "phase": "MAIN_MENU",
+  "phase": "PUZZLE_LIST",
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
-  "currentPuzzle": {
-    "hash": "9473a16ea7eb3355523f5ec6bc38b277ab379b0d46c913b03bbc86a9b212eee7",
-    "rows": [
-      "1910s",
-      "Carnivores",
-      "Cold War",
-      "World War II"
-    ],
-    "cols": [
-      "Amphibious",
-      "Starts with BAT",
-      "Things That Fly",
-      "US Presidents"
-    ],
-    "timestamp": null,
-    "qualityScore": 6.01,
-    "maxSimilarityToPast": 0.3072,
-    "similarityPenalty": 2.4576,
-    "movieOverlapPenalty": 0.7439138664323008,
-    "yearProximityPenalty": 0,
-    "adjacentDecadePenalty": 0,
-    "adjacentCenturyPenalty": 0,
-    "temporalPenalty": 0,
-    "finalScore": 2.8084861335676994
-  },
-  "viableGrid": [
-    [
-      [
-        "Gallipoli Campaign"
-      ],
-      [
-        "Battle of Jutland"
-      ],
-      [
-        "Boeing",
-        "Lockheed"
-      ],
-      [
-        "Taft",
-        "Wilson"
-      ]
-    ],
-    [
-      [
-        "Axolotl",
-        "Caecilian",
-        "Frog",
-        "Hellbender",
-        "Mudpuppy",
-        "Mudskipper",
-        "Newt",
-        "Salamander",
-        "Toad"
-      ],
-      [
-        "Bat"
-      ],
-      [
-        "Albatross",
-        "Archaeopteryx",
-        "Cormorant",
-        "Dragonfly",
-        "Eagle",
-        "Falcon",
-        "Hawk",
-        "Meganeura",
-        "Meganeuropsis",
-        "Microraptor",
-        "Mosquito",
-        "Owl",
-        "Petrie",
-        "Pteranodon",
-        "Pterodactyl",
-        "Quetzalcoatlus",
-        "Rodan",
-        "Sinornithosaurus",
-        "Vulture",
-        "Wasp"
-      ],
-      [
-        "Garfield"
-      ]
-    ],
-    [
-      [
-        "BRDM-2",
-        "Bay of Pigs",
-        "Bay of Pigs Invasion",
-        "PT-76",
-        "The Korean War"
-      ],
-      [
-        "Battle of Dien Bien Phu"
-      ],
-      [
-        "MiG-15",
-        "MiG-21",
-        "SR-71 Blackbird"
-      ],
-      [
-        "Reagan",
-        "Roosevelt",
-        "Washington"
-      ]
-    ],
-    [
-      [
-        "D-Day",
-        "DUKW",
-        "Invasion of Sicily",
-        "Kerch-Eltigen Operation",
-        "LVT-4",
-        "Operation Overlord"
-      ],
-      [
-        "Battle of Leyte Gulf",
-        "Battle of Midway",
-        "Battle of the Coral Sea"
-      ],
-      [
-        "B-17",
-        "B-29",
-        "Corsair",
-        "Dauntless",
-        "Devastator",
-        "Hornet",
-        "Hurricane",
-        "Jill",
-        "Judy",
-        "Kate",
-        "Lancaster",
-        "Messerschmitt",
-        "Mustang",
-        "Spitfire",
-        "Stuka",
-        "Thunderbolt",
-        "Val",
-        "Wildcat",
-        "Zero"
-      ],
-      [
-        "Franklin D. Roosevelt"
-      ]
-    ]
-  ],
+  "currentPuzzle": null,
+  "viableGrid": null,
   "chosen": [
     [
-      "Gallipoli Campaign",
-      "Battle of Jutland",
-      "Boeing",
-      "Wilson"
+      null,
+      null,
+      null,
+      null
     ],
     [
-      "Salamander",
-      "Bat",
-      "Eagle",
-      "Garfield"
+      null,
+      null,
+      null,
+      null
     ],
     [
-      "Bay of Pigs Invasion",
-      "Battle of Dien Bien Phu",
-      "SR-71 Blackbird",
-      "Reagan"
+      null,
+      null,
+      null,
+      null
     ],
     [
-      "D-Day",
-      "Battle of Midway",
-      "Spitfire",
-      "Franklin D. Roosevelt"
+      null,
+      null,
+      null,
+      null
     ]
   ],
-  "usedWords": [
-    "Gallipoli Campaign",
-    "Battle of Jutland",
-    "Boeing",
-    "Wilson",
-    "Salamander",
-    "Bat",
-    "Eagle",
-    "Garfield",
-    "Bay of Pigs Invasion",
-    "Battle of Dien Bien Phu",
-    "SR-71 Blackbird",
-    "Reagan",
-    "D-Day",
-    "Battle of Midway",
-    "Spitfire",
-    "Franklin D. Roosevelt"
-  ],
-  "currentRow": 4,
+  "usedWords": [],
+  "currentRow": 0,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "9473a16ea7eb3355523f5ec6bc38b277ab379b0d46c913b03bbc86a9b212eee7",
+      "hash": "db40b20ec412e314804799c35b62bc456fb2ccdb65172393c87d76b6d7a2bc36",
       "rows": [
-        "1910s",
-        "Carnivores",
-        "Cold War",
-        "World War II"
+        "1990s",
+        "Birds",
+        "Ends with INE",
+        "Foods"
       ],
       "cols": [
-        "Amphibious",
-        "Starts with BAT",
-        "Things That Fly",
-        "US Presidents"
+        "Jurassic Period",
+        "Red Things",
+        "Things Canadian",
+        "White Things"
       ],
       "timestamp": null,
-      "qualityScore": 6.01,
-      "maxSimilarityToPast": 0.3072,
-      "similarityPenalty": 2.4576,
-      "movieOverlapPenalty": 0.7439138664323008,
+      "qualityScore": 7.87,
+      "maxSimilarityToPast": 0.3443,
+      "similarityPenalty": 2.7544,
+      "movieOverlapPenalty": 2.998824636790787,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 2.8084861335676994
+      "finalScore": 2.1167753632092134
     },
     {
-      "hash": "78354cf28fdc210fca32990a408adb39057059d0d704120aa63ba851c090339f",
+      "hash": "b9370b216eb84d5e7efdc635334900b69ee6a51b95a527cd5531a776110325b1",
       "rows": [
-        "17th Century",
-        "Animal Terms",
-        "Starts with CHA",
-        "Things Canadian"
+        "1990s",
+        "2003",
+        "Fictional Animals",
+        "The Bad Place"
       ],
       "cols": [
+        "Books",
+        "Music",
+        "Mythical Creatures",
+        "Video Games"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.29,
+      "maxSimilarityToPast": 0.4009,
+      "similarityPenalty": 3.2072,
+      "movieOverlapPenalty": 10.210386948783192,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -0.12758694878319332
+    },
+    {
+      "hash": "eca6ca629ef988ea0dcf5c038b42efdc4db95dad113d85a2d361203812c0f358",
+      "rows": [
+        "1990s",
+        "2000s",
+        "C.S. Lewis",
+        "Disney"
+      ],
+      "cols": [
+        "Fifth in Release Order",
+        "Fourth in Internal Chronology",
+        "Prequels",
+        "Stories about Families"
+      ],
+      "timestamp": null,
+      "qualityScore": 18.740000000000002,
+      "maxSimilarityToPast": 0.362,
+      "similarityPenalty": 2.896,
+      "movieOverlapPenalty": 21.187345543687083,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0.6,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.6,
+      "finalScore": -5.943345543687082
+    },
+    {
+      "hash": "29a4de677fbec9c53623127f514c1e78f708b7b49f3c3d66fe802e92ca7e2346",
+      "rows": [
+        "1990s",
+        "2012",
         "Cities in USA",
-        "Classic Literature",
-        "Musicians",
-        "Paleogene Period"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.47,
-      "maxSimilarityToPast": 0.2802,
-      "similarityPenalty": 2.2416,
-      "movieOverlapPenalty": 1.425445800828085,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.8029541991719147
-    },
-    {
-      "hash": "ff77194dadc345a5e793e8840133881d8df1e9b09b9bb1b5e72b7980897f34ff",
-      "rows": [
-        "1990",
-        "2004",
-        "Period Stories",
-        "Superheroes"
+        "Second in Internal Chronology"
       ],
       "cols": [
-        "Ends with ERS",
-        "Second in Release Order",
-        "Third in Internal Chronology",
-        "Thriller Films"
-      ],
-      "timestamp": null,
-      "qualityScore": 14.39,
-      "maxSimilarityToPast": 0.3774,
-      "similarityPenalty": 3.0192,
-      "movieOverlapPenalty": 23.03949078651965,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -11.66869078651965
-    },
-    {
-      "hash": "5753414579af3e0560ee9bca3e0398c9287af4f94ecc02322a5b0342357df9b4",
-      "rows": [
-        "2008",
-        "2019",
-        "Second in Internal Chronology",
-        "Third in Internal Chronology"
-      ],
-      "cols": [
-        "Disney",
-        "Stories about Families",
-        "Thriller Stories",
+        "Ships",
+        "Starts with MAD",
+        "Superheroes",
         "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 15.46,
-      "maxSimilarityToPast": 0.4917,
-      "similarityPenalty": 3.9336,
-      "movieOverlapPenalty": 25.896596829755822,
+      "qualityScore": 8.85,
+      "maxSimilarityToPast": 0.2694,
+      "similarityPenalty": 2.1552,
+      "movieOverlapPenalty": 13.547246540232415,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -14.370196829755821
+      "finalScore": -6.852446540232415
     },
     {
-      "hash": "2d2c33ac7642594ab301b74cf752b4a12346d4a4f93525f5e26683f59cc3f208",
+      "hash": "acd1b891c741883558efc058a7ace173a9e271546b2d18fa7300dec1d74701c7",
       "rows": [
-        "Bodies of Water",
-        "Ends with AND",
-        "Islands",
-        "Large Countries"
+        "1990s",
+        "2016",
+        "Ends with LES",
+        "Mentioned in We Didn't Start the Fire"
       ],
       "cols": [
-        "Cold War",
-        "Locations in Africa",
-        "Locations in Asia",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.849999999999999,
-      "maxSimilarityToPast": 0.5603,
-      "similarityPenalty": 4.4824,
-      "movieOverlapPenalty": 0.8326684270916092,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 2.5349315729083894
-    },
-    {
-      "hash": "e1164f5cdb10f0e36611d9b03693103dc037f1fd00923ab63fe7373f7f4f728a",
-      "rows": [
-        "1910s",
-        "1930s",
-        "Animal Terms",
-        "Things Spanish"
-      ],
-      "cols": [
-        "Cars",
-        "Companies",
         "Fantasy Stories",
-        "Starts with TRI"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.47,
-      "maxSimilarityToPast": 0.3917,
-      "similarityPenalty": 3.1336,
-      "movieOverlapPenalty": 4.523746852897655,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -2.187346852897655
-    },
-    {
-      "hash": "1821baa49796a4b59075105918389fc446b0b2242c8e0cb878d688148d16a81a",
-      "rows": [
-        "1910s",
-        "2000s",
-        "Thriller Stories",
-        "World War II"
-      ],
-      "cols": [
-        "Colors",
-        "Dates",
-        "Ends with TOR",
-        "Things Australian"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.840000000000002,
-      "maxSimilarityToPast": 0.3893,
-      "similarityPenalty": 3.1144,
-      "movieOverlapPenalty": 9.746885867314562,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -1.0212858673145604
-    },
-    {
-      "hash": "3af91a952702ac88d5c46359eaa99bbb8e538bf5f3f26d299b0a1e6692158747",
-      "rows": [
-        "1995",
-        "2012",
-        "Fantasy Stories",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Classic Literature",
         "First in Release Order",
-        "Pixar",
+        "Omnivores",
+        "US Navy"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.93,
+      "maxSimilarityToPast": 0.3637,
+      "similarityPenalty": 2.9096,
+      "movieOverlapPenalty": 12.505281547748686,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.484881547748686
+    },
+    {
+      "hash": "7cdc3a0974ab7c0655f9968030f20c88505e71e3a3829f8471fed9677b4e7563",
+      "rows": [
+        "1990s",
+        "2013",
+        "Family-Friendly Stories",
+        "Oscar Winners"
+      ],
+      "cols": [
+        "Romance Stories",
+        "Second in Release Order",
+        "Studio Ghibli",
+        "Third in Internal Chronology"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.36,
+      "maxSimilarityToPast": 0.3627,
+      "similarityPenalty": 2.9016,
+      "movieOverlapPenalty": 25.713056774236076,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -16.254656774236075
+    },
+    {
+      "hash": "23c4937ceb68a4620da81d446a7a3d7c283a2c7ba5d6740d2f51b13931834099",
+      "rows": [
+        "1990s",
+        "2004",
+        "Black and White",
         "Sequels"
       ],
-      "timestamp": null,
-      "qualityScore": 12.860000000000001,
-      "maxSimilarityToPast": 0.3773,
-      "similarityPenalty": 3.0184,
-      "movieOverlapPenalty": 24.238825343813904,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -14.397225343813902
-    },
-    {
-      "hash": "b497c064ab344bb7420e213a126f5a740457a5704aed7b9a0f78d335ce816006",
-      "rows": [
-        "17th Century",
-        "1970s",
-        "Red Things",
-        "Starts with CHA"
-      ],
       "cols": [
-        "Cenozoic Era",
-        "Cities in North America",
-        "Classic Literature",
+        "Best Picture Winners",
+        "Christmas Stories",
+        "Ends with ERS",
         "Period Stories"
       ],
       "timestamp": null,
-      "qualityScore": 4.98,
-      "maxSimilarityToPast": 0.3282,
-      "similarityPenalty": 2.6256,
-      "movieOverlapPenalty": 6.493040308205393,
+      "qualityScore": 9.26,
+      "maxSimilarityToPast": 0.4077,
+      "similarityPenalty": 3.2616,
+      "movieOverlapPenalty": 25.60553792583484,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -4.138640308205392
+      "finalScore": -19.60713792583484
     },
     {
-      "hash": "db7eaa78093acc1a2aa2753acf67afb273258871a8ff8aa04e7b4caff4220113",
+      "hash": "a30ecf95c7127cde8b8a4da3c46d91eea06cc45913948cc17bc47aadfaf2cbf8",
       "rows": [
-        "1910s",
         "1990s",
-        "Cold War",
-        "Omnivores"
+        "2005",
+        "Mentioned in We Didn't Start the Fire",
+        "Things Indian"
       ],
       "cols": [
-        "Ends with TER",
+        "Ends with WAR",
+        "Modern Countries",
+        "Musical Films",
+        "War Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.97,
+      "maxSimilarityToPast": 0.292,
+      "similarityPenalty": 2.336,
+      "movieOverlapPenalty": 12.52835367433857,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.89435367433857
+    },
+    {
+      "hash": "6b7ee3fc369e382e44ad85e2d3188c8f81032a2db80918cf06908d3b06992057",
+      "rows": [
+        "1990s",
+        "Classic Films",
+        "Folklore Figures",
+        "Foods"
+      ],
+      "cols": [
+        "Animal Terms",
         "Family-Friendly Stories",
-        "Musicians",
-        "Things That Fly"
+        "Shakespeare Characters",
+        "Starts with RED"
       ],
       "timestamp": null,
-      "qualityScore": 4.39,
-      "maxSimilarityToPast": 0.3839,
-      "similarityPenalty": 3.0712,
-      "movieOverlapPenalty": 7.464413992037771,
+      "qualityScore": 10.1,
+      "maxSimilarityToPast": 0.306,
+      "similarityPenalty": 2.448,
+      "movieOverlapPenalty": 11.940605936228417,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -6.145613992037771
+      "finalScore": -4.288605936228418
     },
     {
-      "hash": "7c59d7805e720db8e11aa686b438a4cb7494c9bac2aa9519b3565f2dd4210ad8",
+      "hash": "0c2338beb0fe9dad3b48077d918a6ddd5cf7c73570fa9d5a3da653f52ed08a9f",
       "rows": [
-        "1910s",
-        "2000s",
-        "Paleogene Period",
-        "Warships"
+        "1990s",
+        "2015",
+        "First in Release Order",
+        "Second in Internal Chronology"
       ],
       "cols": [
-        "Amphibious",
-        "Car Brands",
-        "Things Canadian",
-        "Things That Fly"
+        "Civilian Ships",
+        "Pixar",
+        "Thriller Films",
+        "Western Stories"
       ],
       "timestamp": null,
-      "qualityScore": 6.81,
-      "maxSimilarityToPast": 0.2886,
-      "similarityPenalty": 2.3088,
-      "movieOverlapPenalty": 3.24765478424015,
+      "qualityScore": 16.689999999999998,
+      "maxSimilarityToPast": 0.3944,
+      "similarityPenalty": 3.1552,
+      "movieOverlapPenalty": 23.705842614625542,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 1.253545215759849
+      "finalScore": -10.171042614625545
     },
     {
-      "hash": "edbd9df1c5fa8f5e850979c4b3cd606e31b374c18deae34f59d9dfec05daef8a",
+      "hash": "88e9f59e8265768ca99015e304b2f6a42f4fd5e802db192f89113896da76a182",
       "rows": [
-        "1910s",
-        "1970s",
-        "Animal Terms",
-        "Ends with DAY"
+        "1990s",
+        "2014",
+        "Adventure Stories",
+        "Red Things"
       ],
       "cols": [
-        "Amphibious",
-        "Fantasy Stories",
-        "Musicians",
-        "Songs"
+        "Books",
+        "Ends with MAN",
+        "Japanese Films",
+        "Marvel Characters"
       ],
       "timestamp": null,
-      "qualityScore": 6.119999999999999,
-      "maxSimilarityToPast": 0.3943,
-      "similarityPenalty": 3.1544,
-      "movieOverlapPenalty": 6.810911812486726,
+      "qualityScore": 9.299999999999999,
+      "maxSimilarityToPast": 0.4039,
+      "similarityPenalty": 3.2312,
+      "movieOverlapPenalty": 16.283076095385383,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -3.8453118124867265
+      "finalScore": -10.214276095385383
     },
     {
-      "hash": "6fcf6864d136e799cfbd9f190d5197f39bead307b0a6c5d57c8424a80e9c95d5",
+      "hash": "f862a20ddedced7c0985ea37a4dd7f2bbcc3b181641d394eb93984ae5b7ead65",
       "rows": [
-        "1995",
-        "2004",
+        "1990s",
+        "2007",
+        "Companies",
+        "Starts with CHI"
+      ],
+      "cols": [
+        "Aircraft",
         "Disney",
-        "Stories about Families"
-      ],
-      "cols": [
-        "2D Animated Films",
-        "3D Animated Films",
-        "Second in Release Order",
-        "Third in Internal Chronology"
+        "Music",
+        "Thriller Stories"
       ],
       "timestamp": null,
-      "qualityScore": 15.04,
-      "maxSimilarityToPast": 0.5194,
-      "similarityPenalty": 4.1552,
-      "movieOverlapPenalty": 27.816633082530704,
-      "yearProximityPenalty": 0.2,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.2,
-      "finalScore": -17.131833082530704
-    },
-    {
-      "hash": "5f7fdaa7e06e5ee617e920b8e3c06367fdc32d91905dd7756124c6d8b91d9bb2",
-      "rows": [
-        "1910s",
-        "Cold War",
-        "Things Spanish",
-        "World War II"
-      ],
-      "cols": [
-        "Amphibious",
-        "Military Ships",
-        "Starts with BAT",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.62,
-      "maxSimilarityToPast": 0.4062,
-      "similarityPenalty": 3.2496,
-      "movieOverlapPenalty": 0.7799644448557608,
+      "qualityScore": 7.839999999999999,
+      "maxSimilarityToPast": 0.319,
+      "similarityPenalty": 2.552,
+      "movieOverlapPenalty": 15.876570577612682,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 2.5904355551442393
+      "finalScore": -10.588570577612684
     },
     {
-      "hash": "00600eb508e6af12673205c5cea2eb02dccf48923e26a1ffe16478d7bc97a198",
+      "hash": "5303a7cb3a9ff531960c7a3000f55da37eb04e3440be2872ad3978c09c95ddf0",
       "rows": [
-        "1910s",
-        "1930s",
-        "Cities in North America",
-        "Holocene Epoch"
+        "1990s",
+        "Cenozoic Era",
+        "Drinks",
+        "Foods"
       ],
       "cols": [
-        "Cars",
-        "Musicians",
-        "Starts with BAT",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.3999999999999995,
-      "maxSimilarityToPast": 0.3778,
-      "similarityPenalty": 3.0224,
-      "movieOverlapPenalty": 1.5268620518264095,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.8507379481735897
-    },
-    {
-      "hash": "a338b72d2d2de7d3f3da1173119b38536bd1580cfa3962c12041b5a2b1dc944e",
-      "rows": [
-        "1910s",
-        "1930s",
-        "Cities in North America",
-        "Pleistocene Epoch"
-      ],
-      "cols": [
-        "Cars",
-        "Musicians",
-        "Starts with BAT",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.3999999999999995,
-      "maxSimilarityToPast": 0.3788,
-      "similarityPenalty": 3.0304,
-      "movieOverlapPenalty": 1.5268620518264095,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.8427379481735897
-    },
-    {
-      "hash": "869e31a0ada6f121a4feece4a71b2008849f824b1c02204d92a68e2475874331",
-      "rows": [
-        "1910s",
-        "1930s",
-        "Cities in North America",
-        "Quaternary Period"
-      ],
-      "cols": [
-        "Cars",
-        "Musicians",
-        "Starts with BAT",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.3999999999999995,
-      "maxSimilarityToPast": 0.3811,
-      "similarityPenalty": 3.0488,
-      "movieOverlapPenalty": 1.5268620518264095,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.82433794817359
-    },
-    {
-      "hash": "2e48c28145796a84f69f1b7e63d402189025f71a4fa68ffe66fb01639b96fdb4",
-      "rows": [
-        "1910s",
-        "1930s",
-        "Cities in North America",
-        "Miocene Epoch"
-      ],
-      "cols": [
-        "Car Brands",
-        "Musicians",
-        "Starts with BAT",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.409999999999999,
-      "maxSimilarityToPast": 0.385,
-      "similarityPenalty": 3.08,
-      "movieOverlapPenalty": 1.5268620518264095,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.8031379481735896
-    },
-    {
-      "hash": "17aaac63cc5431bc13ca6f04fd474ecbdc729c178c9f2e18c6d67b3bda6fdee6",
-      "rows": [
-        "17th Century",
-        "Animal Terms",
-        "Starts with CHA",
+        "Nautical Terms",
+        "Red Things",
+        "Starts with BEE",
         "Things Canadian"
       ],
-      "cols": [
-        "Cities in USA",
-        "Classic Literature",
-        "Eocene Epoch",
-        "Musicians"
-      ],
       "timestamp": null,
-      "qualityScore": 4.49,
-      "maxSimilarityToPast": 0.2833,
-      "similarityPenalty": 2.2664,
-      "movieOverlapPenalty": 1.425445800828085,
+      "qualityScore": 6,
+      "maxSimilarityToPast": 0.2791,
+      "similarityPenalty": 2.2328,
+      "movieOverlapPenalty": 3.3606433477989746,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 0.7981541991719152
+      "finalScore": 0.4065566522010253
     },
     {
-      "hash": "4632761a5e3243f20b3314de0effb766d8ce0dece2ef4bb16991b28b741df2e2",
+      "hash": "251c666150daf3ddcf06c1d2135d6c588746c2b38c1309ff51f6a02147d0f629",
       "rows": [
-        "17th Century",
-        "Animal Terms",
-        "Starts with CHA",
-        "Things Canadian"
-      ],
-      "cols": [
-        "Cities in USA",
-        "Classic Literature",
-        "Musicians",
-        "Oligocene Epoch"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.4799999999999995,
-      "maxSimilarityToPast": 0.2832,
-      "similarityPenalty": 2.2656,
-      "movieOverlapPenalty": 1.425445800828085,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.7889541991719144
-    },
-    {
-      "hash": "57804df35af0bf0019d0cd170da5e44450c9b63ac710ebe24a7bcfe3e0a9d8a2",
-      "rows": [
-        "17th Century",
-        "Animal Terms",
-        "Starts with CHA",
-        "Things Canadian"
-      ],
-      "cols": [
-        "Cities in USA",
-        "Classic Literature",
-        "Musicians",
-        "Neogene Period"
-      ],
-      "timestamp": null,
-      "qualityScore": 4.4399999999999995,
-      "maxSimilarityToPast": 0.2802,
-      "similarityPenalty": 2.2416,
-      "movieOverlapPenalty": 1.425445800828085,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.7729541991719144
-    },
-    {
-      "hash": "ef365f5fd477cc832014cde2d1fda63b2d8c21b321515a7a643fb4f4c305b9f2",
-      "rows": [
-        "1910s",
-        "1930s",
-        "Cities in North America",
-        "Pliocene Epoch"
-      ],
-      "cols": [
-        "Car Brands",
-        "Musicians",
-        "Starts with BAT",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.3999999999999995,
-      "maxSimilarityToPast": 0.3886,
-      "similarityPenalty": 3.1088,
-      "movieOverlapPenalty": 1.5268620518264095,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.7643379481735899
-    },
-    {
-      "hash": "ea45bd36e3f5de389903c13a0c4c133ecfa96e8e01c2d020f2fda6e6fa65c0e5",
-      "rows": [
-        "1910s",
-        "1930s",
-        "Cities in North America",
-        "Currently Living Animals"
-      ],
-      "cols": [
+        "1990s",
         "Cars",
-        "Musicians",
-        "Starts with BAT",
-        "Things That Fly"
+        "Miocene Epoch",
+        "Video Games"
+      ],
+      "cols": [
+        "2000s",
+        "Mammals",
+        "Ships",
+        "Starts with FOR"
       ],
       "timestamp": null,
-      "qualityScore": 5.449999999999999,
+      "qualityScore": 3.3300000000000005,
       "maxSimilarityToPast": 0.3981,
       "similarityPenalty": 3.1848,
-      "movieOverlapPenalty": 1.5268620518264095,
+      "movieOverlapPenalty": 6.09168489422288,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0.6,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.6,
+      "finalScore": -6.546484894222878
+    },
+    {
+      "hash": "9c17a61f4ae10a8e5e98333ef8a723cc8273ddc60cf491b72c1447e998eca1d7",
+      "rows": [
+        "1990s",
+        "2003",
+        "Ends with ITY",
+        "Fourth in Release Order"
+      ],
+      "cols": [
+        "Books",
+        "Crime Stories",
+        "Disney",
+        "The Matrix"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.81,
+      "maxSimilarityToPast": 0.3179,
+      "similarityPenalty": 2.5432,
+      "movieOverlapPenalty": 20.133577648626662,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 0.7383379481735897
+      "finalScore": -9.866777648626663
     },
     {
-      "hash": "e593b922cadd1b7b3a6264104b8f64038213be1341d8e98a9db262f53a6cd96d",
+      "hash": "5c61a4c1488e7b915b186c2ca409c8f23f8dd3e63a9ab352d48b572537f5705d",
       "rows": [
-        "1910s",
-        "1930s",
-        "Animal Species",
+        "1990s",
+        "2006",
+        "Best Picture Winners",
+        "Plays"
+      ],
+      "cols": [
+        "Books",
+        "Ends with EST",
+        "Romance Stories",
+        "Sword and Sandals Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.379999999999999,
+      "maxSimilarityToPast": 0.5309,
+      "similarityPenalty": 4.2472,
+      "movieOverlapPenalty": 19.333255384695107,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -11.200455384695108
+    },
+    {
+      "hash": "bb64e795c74a60f17a322d22b1085a2bc699fbacf5c5bbc6455e5829a141c99e",
+      "rows": [
+        "1990s",
+        "Cities in USA",
+        "Countries",
+        "Musicians"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Ends with LES",
+        "Saints",
+        "Things Canadian"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.11,
+      "maxSimilarityToPast": 0.4018,
+      "similarityPenalty": 3.2144,
+      "movieOverlapPenalty": 3.7786462356019657,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -1.8830462356019653
+    },
+    {
+      "hash": "09d41624df8abe9e84eeda72dff9eb46014af596781cea5bd05c874db27e57d4",
+      "rows": [
+        "1990s",
+        "2017",
+        "Greek Gods",
+        "Video Games"
+      ],
+      "cols": [
+        "Adventure Stories",
+        "Ends with TER",
+        "Music",
+        "Ships"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.76,
+      "maxSimilarityToPast": 0.4022,
+      "similarityPenalty": 3.2176,
+      "movieOverlapPenalty": 11.150518876704794,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -4.608118876704794
+    },
+    {
+      "hash": "f5efc8987e3932d040633b896454df56c767a0eb7ebe41ee80ca49a3760c696e",
+      "rows": [
+        "1990s",
+        "2010",
+        "Books",
         "Cities in North America"
       ],
       "cols": [
-        "Cars",
-        "Musicians",
-        "Starts with BAT",
-        "Things That Fly"
+        "Music",
+        "Red Things",
+        "Starts with HAR",
+        "Time Travel Stories"
       ],
       "timestamp": null,
-      "qualityScore": 5.3999999999999995,
-      "maxSimilarityToPast": 0.4543,
-      "similarityPenalty": 3.6344,
-      "movieOverlapPenalty": 1.5268620518264095,
+      "qualityScore": 7.329999999999999,
+      "maxSimilarityToPast": 0.3238,
+      "similarityPenalty": 2.5904,
+      "movieOverlapPenalty": 11.254588743299262,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 0.23873794817359006
+      "finalScore": -6.514988743299263
     },
     {
-      "hash": "518f783d07e90729337821c99718174160c57518cc57b5481fedfe57292bd16e",
+      "hash": "2649a052da6aa988706809d35d014f218570ed5e22853743b10db64a03445d03",
       "rows": [
-        "Bodies of Water",
-        "Ends with AND",
-        "Former British Colonies",
-        "Islands"
+        "1990s",
+        "2023",
+        "Books",
+        "Star Wars Universe"
       ],
       "cols": [
-        "Cold War",
-        "Locations in Africa",
-        "Locations in Asia",
+        "Disney",
+        "Ends with DER",
+        "Thriller Stories",
+        "Video Games"
+      ],
+      "timestamp": null,
+      "qualityScore": 9.860000000000001,
+      "maxSimilarityToPast": 0.3535,
+      "similarityPenalty": 2.828,
+      "movieOverlapPenalty": 14.799332361749794,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.7673323617497925
+    },
+    {
+      "hash": "6e16b897a6d17f1e661f84b81a5848fa1394526f7f748ee99dbb57bf8f0a8ce0",
+      "rows": [
+        "1990s",
+        "2003",
+        "Trios",
+        "War Stories"
+      ],
+      "cols": [
+        "2D Animated Films",
+        "Books",
+        "Music",
+        "TV Shows"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.379999999999999,
+      "maxSimilarityToPast": 0.5446,
+      "similarityPenalty": 4.3568,
+      "movieOverlapPenalty": 15.859670727335264,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.836470727335264
+    },
+    {
+      "hash": "b0a849b6006d50161c02885edb9eb0052d20449d05990415e16a51d7622c7c52",
+      "rows": [
+        "1990s",
+        "2019",
+        "Ends with LES",
+        "Mentioned in We Didn't Start the Fire"
+      ],
+      "cols": [
+        "Coming of Age Stories",
+        "Disney",
+        "Period Stories",
+        "Warships"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.179999999999998,
+      "maxSimilarityToPast": 0.5153,
+      "similarityPenalty": 4.1224,
+      "movieOverlapPenalty": 16.21683295460644,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -9.159232954606441
+    },
+    {
+      "hash": "c445742d7f9656addefb5e7a8ddf8534414ff376ed8b0599e58513285cd75d48",
+      "rows": [
+        "1990s",
+        "2002",
+        "Ends with OOD",
+        "Thriller Stories"
+      ],
+      "cols": [
+        "Haruki Murakami",
+        "Japanese Films",
+        "Oscar Winners",
+        "Superheroes"
+      ],
+      "timestamp": null,
+      "qualityScore": 13.040000000000001,
+      "maxSimilarityToPast": 0.4222,
+      "similarityPenalty": 3.3776,
+      "movieOverlapPenalty": 20.075852421752053,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -10.413452421752051
+    },
+    {
+      "hash": "778ad94d26d76a5d4942bcd3c38ae1619683592d367c4e00781765bb17965dc0",
+      "rows": [
+        "1990s",
+        "2000s",
+        "Epic Stories",
+        "Western Stories"
+      ],
+      "cols": [
+        "Ends with ARS",
+        "Oscar Winners",
+        "Third in Release Order",
+        "Video Games"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.790000000000001,
+      "maxSimilarityToPast": 0.5158,
+      "similarityPenalty": 4.1264,
+      "movieOverlapPenalty": 17.654110057711872,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0.6,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0.6,
+      "finalScore": -10.590510057711871
+    },
+    {
+      "hash": "fb4a104285382f78eb97410944978b9fcb918369be84e8aca4c341e22e53ccbb",
+      "rows": [
+        "1990s",
+        "2001",
+        "Books",
+        "Music"
+      ],
+      "cols": [
+        "3D Animated Films",
+        "Biographical Stories",
+        "First in Release Order",
         "Things Canadian"
       ],
       "timestamp": null,
-      "qualityScore": 4.87,
-      "maxSimilarityToPast": 0.5233,
-      "similarityPenalty": 4.1864,
-      "movieOverlapPenalty": 0.8326684270916092,
+      "qualityScore": 9.84,
+      "maxSimilarityToPast": 0.3005,
+      "similarityPenalty": 2.404,
+      "movieOverlapPenalty": 19.634679564380157,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -0.14906842709160895
+      "finalScore": -12.198679564380157
     },
     {
-      "hash": "c520c237f84fffe5154b6cfd26545fdc658f9ae7d067ae43d47b414d914f5797",
+      "hash": "ba0970e190f3628ae4eedb62a412af40b76b05398f069592d580a2e160e5dc5b",
       "rows": [
-        "1910s",
-        "1970s",
-        "Cold War",
-        "Real Animals"
-      ],
-      "cols": [
-        "Amphibious",
-        "Ends with TER",
-        "Musicians",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.33,
-      "maxSimilarityToPast": 0.2917,
-      "similarityPenalty": 2.3336,
-      "movieOverlapPenalty": 3.2210099225848356,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -0.2246099225848357
-    },
-    {
-      "hash": "16f69dfa7ad7111c1240a4a52d3823941f3adada482f195deffb2381784d227f",
-      "rows": [
-        "1910s",
-        "2000s",
-        "Starts with GRE",
-        "World War II"
-      ],
-      "cols": [
-        "Colors",
-        "Period Stories",
-        "Things Canadian",
-        "Things That Fly"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.18,
-      "maxSimilarityToPast": 0.2918,
-      "similarityPenalty": 2.3344,
-      "movieOverlapPenalty": 7.465574648821679,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -3.6199746488216795
-    },
-    {
-      "hash": "e4f93128ac8368b3bedc79a025bc54b725ff364bfcc0b060d2120a27400d693c",
-      "rows": [
-        "17th Century",
-        "Animal Terms",
-        "Things Canadian",
-        "Time Travel Stories"
-      ],
-      "cols": [
         "1990s",
         "Cities in USA",
-        "Classic Literature",
-        "Starts with KIN"
+        "Islands",
+        "Music"
+      ],
+      "cols": [
+        "Ends with TON",
+        "Romance Stories",
+        "Saints",
+        "Video Games"
       ],
       "timestamp": null,
-      "qualityScore": 4.109999999999999,
-      "maxSimilarityToPast": 0.2827,
-      "similarityPenalty": 2.2616,
-      "movieOverlapPenalty": 7.128787526954878,
+      "qualityScore": 5.0600000000000005,
+      "maxSimilarityToPast": 0.3425,
+      "similarityPenalty": 2.74,
+      "movieOverlapPenalty": 7.396321707283718,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -5.280387526954879
+      "finalScore": -5.076321707283718
     },
     {
-      "hash": "3d0c3798c38a26d5a671c746069a894b0f2ea50f0872fa713f7c82a1f1081bf5",
+      "hash": "a602f9f14f98df8bffd7423bfe669bf9cf95e506fd5aca9078b685715180f145",
       "rows": [
-        "1910s",
+        "1990s",
+        "2013",
+        "Animal Terms",
+        "Starts with ANN"
+      ],
+      "cols": [
+        "Books",
+        "Disney Characters",
+        "Music",
+        "Oscar Winners"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.06,
+      "maxSimilarityToPast": 0.359,
+      "similarityPenalty": 2.872,
+      "movieOverlapPenalty": 12.547795786192031,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.359795786192031
+    },
+    {
+      "hash": "889bc8766e7e1faab2830ef6d3ed5610ecbb08bd9a86a0ed6776e1c280acdea4",
+      "rows": [
+        "1990s",
+        "2016",
+        "Mentioned in We Didn't Start the Fire",
+        "Starts with CAR"
+      ],
+      "cols": [
+        "Family-Friendly Stories",
+        "Military Ships",
+        "Music",
+        "Omnivores"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.27,
+      "maxSimilarityToPast": 0.3995,
+      "similarityPenalty": 3.196,
+      "movieOverlapPenalty": 10.497273410115115,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.423273410115115
+    },
+    {
+      "hash": "be1d4fd07dcbd550ede73ec7d9cd926570dc9fa49c3e1ddc9c2a8d1f8ca2dd64",
+      "rows": [
+        "1990s",
+        "2014",
+        "Animal Terms",
+        "Ends with IRE"
+      ],
+      "cols": [
+        "Blue Things",
+        "Books",
+        "Music",
+        "Oscar Winners"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.35,
+      "maxSimilarityToPast": 0.3241,
+      "similarityPenalty": 2.5928,
+      "movieOverlapPenalty": 13.540652929049173,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -8.783452929049174
+    },
+    {
+      "hash": "3bb52a268b17f27056518f0500f177d7d8d8e907a5936ff13d3e4914bd3685aa",
+      "rows": [
+        "1990s",
         "2000s",
-        "Animal Terms",
-        "Starts with ART"
+        "Mentioned in We Didn't Start the Fire",
+        "Things Indian"
       ],
       "cols": [
-        "Classic Literature",
-        "Fantasy Stories",
-        "Musicians",
-        "US Presidents"
+        "Athletes",
+        "Disney",
+        "Ends with ENT",
+        "War Stories"
       ],
       "timestamp": null,
-      "qualityScore": 4.819999999999999,
-      "maxSimilarityToPast": 0.385,
-      "similarityPenalty": 3.08,
-      "movieOverlapPenalty": 7.740112108126044,
+      "qualityScore": 7.470000000000001,
+      "maxSimilarityToPast": 0.3116,
+      "similarityPenalty": 2.4928,
+      "movieOverlapPenalty": 13.624441510051343,
       "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
+      "adjacentDecadePenalty": 0.6,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -6.000112108126045
-    },
-    {
-      "hash": "2054e9e8fbc7f4799619f96208c8eb9edbbb0a9434d247eec687164ce1a212fc",
-      "rows": [
-        "17th Century",
-        "1930s",
-        "Animal Terms",
-        "Family-Friendly Stories"
-      ],
-      "cols": [
-        "Black and White",
-        "Classic Literature",
-        "Ends with TOR",
-        "Musicians"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.3100000000000005,
-      "maxSimilarityToPast": 0.3575,
-      "similarityPenalty": 2.86,
-      "movieOverlapPenalty": 8.930212095065441,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -6.48021209506544
+      "temporalPenalty": 0.6,
+      "finalScore": -9.24724151005134
     }
   ],
-  "message": "Puzzle saved successfully!"
+  "message": "Solve-and-curate complete. Found 41876 candidates; rejected 317 for similarity>=0.625; showing 30 diversified options (highest final score first, then minimal category overlap). Use: node ai_curator.js select <index> to review."
 }
