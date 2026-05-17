@@ -5,895 +5,900 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "a96913dfe9b018b52cabb2bc86f9b62acef4466735ddf38b22481b49f9bdb389",
+    "hash": "e1a3dc6b08cc60aa6c09b6f5bdd982ab69dcfe8244f22670243577fded7ad5f0",
     "rows": [
-      "1997",
-      "2011",
-      "Cannibalism",
-      "Ends with NCE"
+      "1850s",
+      "1900s",
+      "Things French",
+      "Things Greek"
     ],
     "cols": [
-      "Events",
-      "Fictional People",
-      "Movies featuring Alan Rickman",
-      "Sci-fi Stories"
+      "Battles",
+      "Real People",
+      "Tragic Heroes",
+      "Wars"
     ],
     "timestamp": null,
-    "qualityScore": 14.27,
-    "maxSimilarityToPast": 0.2857,
-    "similarityPenalty": 2.2856,
-    "movieOverlapPenalty": 16.35006649260297,
+    "qualityScore": 13.009999999999998,
+    "maxSimilarityToPast": 0.3889,
+    "similarityPenalty": 3.1112,
+    "movieOverlapPenalty": 1.8990267891030528,
     "yearProximityPenalty": 0,
     "adjacentDecadePenalty": 0,
     "adjacentCenturyPenalty": 0,
     "temporalPenalty": 0,
-    "finalScore": -4.365666492602971
+    "finalScore": 7.9997732108969455
   },
   "viableGrid": [
     [
       [
-        "Titanic"
+        "Siege of Nanjing"
       ],
       [
-        "Hercules"
+        "Buchanan",
+        "Fillmore",
+        "Hong Xiuquan",
+        "Pierce",
+        "Taylor"
       ],
       [
-        "Harry Potter and the Sorcerer's Stone"
+        "Rigoletto"
       ],
       [
-        "Alien: Resurrection",
-        "The Fifth Element",
-        "To Say Nothing of the Dog"
+        "The Crimean War",
+        "The Indian Rebellion",
+        "The Sepoy Mutiny",
+        "The Taiping Rebellion"
       ]
     ],
     [
       [
-        "Abbottabad",
-        "Fukushima",
-        "The Arab Spring",
-        "The Syrian Civil War"
+        "Battle of Tsushima"
       ],
       [
-        "Jane Eyre"
+        "Einstein",
+        "Helen Keller",
+        "Rasputin",
+        "Rockefeller"
       ],
       [
-        "Harry Potter and the Deathly Hallows: Part 2"
+        "Madame Butterfly",
+        "Tosca"
       ],
       [
-        "Source Code",
-        "X-Men: First Class"
+        "The Boer War",
+        "The Boxer Rebellion",
+        "The Russo-Japanese War"
       ]
     ],
     [
       [
-        "Donner Party",
-        "Siege of Suiyang"
+        "Battle of Agincourt",
+        "Battle of Crécy",
+        "Battle of Poitiers",
+        "Battle of Sluys",
+        "Battle of Trafalgar",
+        "D-Day",
+        "Gallipoli Campaign",
+        "Siege of Calais",
+        "Siege of Orléans"
       ],
       [
-        "Hannibal Lecter"
+        "Brigitte Bardot",
+        "Charlemagne",
+        "Charles V",
+        "Charlotte Corday",
+        "Debussy",
+        "Jean Bernadotte",
+        "Joan of Arc",
+        "John",
+        "John Calvin",
+        "Lafayette",
+        "Louis IX",
+        "Louis Pasteur",
+        "Louis VII",
+        "Louis XVI",
+        "Marie Antoinette",
+        "Marie Curie",
+        "Michel Ney",
+        "Napoleon Bonaparte",
+        "Philip",
+        "Philip II of France",
+        "Philip VI",
+        "Rosa Bonheur",
+        "Sarah Bernhardt",
+        "Sébastien Le Prestre de Vauban",
+        "Urban II",
+        "William the Conqueror"
       ],
       [
-        "Sweeney Todd: The Demon Barber of Fleet Street"
+        "Carmen"
       ],
       [
-        "Soylent Green"
+        "The Algerian War",
+        "The Franco-Prussian War",
+        "The French Revolution",
+        "The Hundred Days",
+        "The Hundred Years War",
+        "The Napoleonic Wars",
+        "The Seven Years' War",
+        "World War I"
       ]
     ],
     [
       [
-        "The Greek War of Independence",
-        "The Latin American Wars of Independence",
-        "The Renaissance",
-        "Triple Alliance"
+        "Battle of Salamis",
+        "Thermopylae"
       ],
       [
-        "The Little Prince"
+        "Alexander the Great",
+        "Aristotle",
+        "Cleopatra",
+        "Constantine XI Palaiologos",
+        "Galen",
+        "Hesiod",
+        "Hippocrates",
+        "Homer",
+        "Leonidas",
+        "Philip II of Macedon",
+        "Plato",
+        "Socrates"
       ],
       [
-        "Harry Potter and the Half-Blood Prince"
+        "Oedipus Rex"
       ],
       [
-        "Everything Everywhere All at Once"
+        "The Trojan War"
       ]
     ]
   ],
   "chosen": [
     [
-      "Titanic",
-      "Hercules",
-      "Harry Potter and the Sorcerer's Stone",
-      "Alien: Resurrection"
+      "Siege of Nanjing",
+      "Hong Xiuquan",
+      "Rigoletto",
+      "The Taiping Rebellion"
     ],
     [
-      "Abbottabad",
-      "Jane Eyre",
-      "Harry Potter and the Deathly Hallows: Part 2",
-      "Source Code"
+      "Battle of Tsushima",
+      "Einstein",
+      "Madame Butterfly",
+      "The Russo-Japanese War"
     ],
     [
-      "Donner Party",
-      "Hannibal Lecter",
-      "Sweeney Todd: The Demon Barber of Fleet Street",
-      "Soylent Green"
+      "D-Day",
+      "Napoleon Bonaparte",
+      "Carmen",
+      "The Napoleonic Wars"
     ],
     [
-      "The Greek War of Independence",
-      "The Little Prince",
-      "Harry Potter and the Half-Blood Prince",
-      "Everything Everywhere All at Once"
+      "Thermopylae",
+      "Alexander the Great",
+      "Oedipus Rex",
+      "The Trojan War"
     ]
   ],
   "usedWords": [
-    "Titanic",
-    "Hercules",
-    "Harry Potter and the Sorcerer's Stone",
-    "Alien: Resurrection",
-    "Abbottabad",
-    "Jane Eyre",
-    "Harry Potter and the Deathly Hallows: Part 2",
-    "Source Code",
-    "Donner Party",
-    "Hannibal Lecter",
-    "Sweeney Todd: The Demon Barber of Fleet Street",
-    "Soylent Green",
-    "The Greek War of Independence",
-    "The Little Prince",
-    "Harry Potter and the Half-Blood Prince",
-    "Everything Everywhere All at Once"
+    "Siege of Nanjing",
+    "Hong Xiuquan",
+    "Rigoletto",
+    "The Taiping Rebellion",
+    "Battle of Tsushima",
+    "Einstein",
+    "Madame Butterfly",
+    "The Russo-Japanese War",
+    "D-Day",
+    "Napoleon Bonaparte",
+    "Carmen",
+    "The Napoleonic Wars",
+    "Thermopylae",
+    "Alexander the Great",
+    "Oedipus Rex",
+    "The Trojan War"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "a96913dfe9b018b52cabb2bc86f9b62acef4466735ddf38b22481b49f9bdb389",
+      "hash": "e1a3dc6b08cc60aa6c09b6f5bdd982ab69dcfe8244f22670243577fded7ad5f0",
       "rows": [
-        "1997",
-        "2011",
-        "Cannibalism",
-        "Ends with NCE"
-      ],
-      "cols": [
-        "Events",
-        "Fictional People",
-        "Movies featuring Alan Rickman",
-        "Sci-fi Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 14.27,
-      "maxSimilarityToPast": 0.2857,
-      "similarityPenalty": 2.2856,
-      "movieOverlapPenalty": 16.35006649260297,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -4.365666492602971
-    },
-    {
-      "hash": "af97df9205c4ca27ab479199f72e3cbc866d709d656ae9047ec74d09e0078a78",
-      "rows": [
-        "2001",
-        "2007",
-        "Movies featuring Sigourney Weaver",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Pixar",
-        "Romance Stories",
-        "Stories Where the Mom Dies",
-        "Third in Internal Chronology"
-      ],
-      "timestamp": null,
-      "qualityScore": 20.47,
-      "maxSimilarityToPast": 0.4036,
-      "similarityPenalty": 3.2288,
-      "movieOverlapPenalty": 27.613249552379987,
-      "yearProximityPenalty": 0.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.8,
-      "finalScore": -11.172049552379988
-    },
-    {
-      "hash": "98b383043d1685ac3319a0e028a83cfcbe760eb34a18a54b6c766d69409322ff",
-      "rows": [
-        "1997",
-        "2000",
-        "Fifth in Release Order",
-        "Fourth in Internal Chronology"
-      ],
-      "cols": [
-        "Family-Friendly Stories",
-        "Movies featuring Bruce Willis",
-        "Movies featuring Johnny Depp",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 24.35,
-      "maxSimilarityToPast": 0.5535,
-      "similarityPenalty": 4.428,
-      "movieOverlapPenalty": 27.16136485059589,
-      "yearProximityPenalty": 1.4,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1.4,
-      "finalScore": -8.639364850595891
-    },
-    {
-      "hash": "4cb1ec0b22ae213dacae66a7bb3e0d19675081f03081ac5fb00f49b63db37a99",
-      "rows": [
-        "1997",
-        "2002",
-        "Fifth in Internal Chronology",
-        "Fourth in Release Order"
-      ],
-      "cols": [
-        "Disney",
-        "Movies featuring Daniel Radcliffe",
-        "Sci-fi Stories",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 21.149999999999995,
-      "maxSimilarityToPast": 0.4723,
-      "similarityPenalty": 3.7784,
-      "movieOverlapPenalty": 27.692671526979243,
-      "yearProximityPenalty": 1,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1,
-      "finalScore": -11.32107152697925
-    },
-    {
-      "hash": "80c923bb0b59dffbbd051f69508cb07f75d760880a7014f1efec4f5aab7f7e7f",
-      "rows": [
-        "1997",
-        "2000s",
-        "Ends with AME",
-        "Fictional People"
-      ],
-      "cols": [
-        "2D Animated Films",
-        "Sequels",
+        "1850s",
+        "1900s",
         "Things French",
-        "Thriller Films"
+        "Things Greek"
+      ],
+      "cols": [
+        "Battles",
+        "Real People",
+        "Tragic Heroes",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 5.32,
-      "maxSimilarityToPast": 0.3984,
-      "similarityPenalty": 3.1872,
-      "movieOverlapPenalty": 21.309294682973416,
+      "qualityScore": 13.009999999999998,
+      "maxSimilarityToPast": 0.3889,
+      "similarityPenalty": 3.1112,
+      "movieOverlapPenalty": 1.8990267891030528,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -19.176494682973416
+      "finalScore": 7.9997732108969455
     },
     {
-      "hash": "6b555ed1272734deea12476073b3d249cf7b540fef9b49c84759669285813091",
+      "hash": "caac91278952a2079fc9e189c0f7521a444b5b8be4d6d66c91e6cf22252579ee",
       "rows": [
-        "2001",
-        "2006",
-        "Fictional People",
-        "Sci-fi Stories"
+        "Animal Terms",
+        "Historical Sites",
+        "Islands",
+        "Shakespeare Characters"
       ],
       "cols": [
-        "3D Animated Films",
-        "Anime",
-        "Numbers",
-        "Stories Where the Mom Dies"
+        "Cities in North America",
+        "Roman Empire",
+        "Starts with MAR",
+        "Things Greek"
       ],
       "timestamp": null,
-      "qualityScore": 16.7,
-      "maxSimilarityToPast": 0.3948,
-      "similarityPenalty": 3.1584,
-      "movieOverlapPenalty": 21.932684457339658,
-      "yearProximityPenalty": 1,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1,
-      "finalScore": -9.391084457339659
-    },
-    {
-      "hash": "d5949ecc78518cb98d07b4fee663261802eac167a77f00decc38f86262f56250",
-      "rows": [
-        "1997",
-        "2018",
-        "Movies featuring Kurt Russell",
-        "Third in Internal Chronology"
-      ],
-      "cols": [
-        "Disney",
-        "Horror Stories",
-        "Movies featuring Samuel L. Jackson",
-        "Sci-fi Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 21.24,
-      "maxSimilarityToPast": 0.4035,
-      "similarityPenalty": 3.228,
-      "movieOverlapPenalty": 27.43498184823693,
+      "qualityScore": 8.58,
+      "maxSimilarityToPast": 0.3156,
+      "similarityPenalty": 2.5248,
+      "movieOverlapPenalty": 1.5940602131357733,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -9.422981848236933
+      "finalScore": 4.461139786864226
     },
     {
-      "hash": "d4309e69bf1b8e447161b0a59dc3ca4dc16317caedb1bd76c99b6432ba38ccee",
+      "hash": "3cb08d2456001ee10a60f61309dc2d069729127bdad607ab73df866736b78cba",
       "rows": [
-        "1997",
-        "2003",
+        "Ends with INE",
+        "Qing Dynasty",
+        "Tang Dynasty",
+        "Things Korean"
+      ],
+      "cols": [
+        "Locations in Asia",
+        "Noodles",
+        "Real People",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.89,
+      "maxSimilarityToPast": 0.5034,
+      "similarityPenalty": 4.0272,
+      "movieOverlapPenalty": 0.61184479980572,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 7.250955200194281
+    },
+    {
+      "hash": "3bf2eef664e139830cddce09bb771f690cc814c465bf59e805fba288313b2db2",
+      "rows": [
+        "1850s",
+        "Assassins",
+        "Fantasy Stories",
+        "Modern Countries"
+      ],
+      "cols": [
+        "1990s",
+        "Animal Terms",
+        "Ends with ORE",
+        "Things French"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.43,
+      "maxSimilarityToPast": 0.2813,
+      "similarityPenalty": 2.2504,
+      "movieOverlapPenalty": 6.690636531168093,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -2.5110365311680933
+    },
+    {
+      "hash": "e02e6ac319233c5663bced6d4f75edcb61b66c297d361c3fea0850b7e1dc057b",
+      "rows": [
+        "Animal Terms",
+        "Civilian Ships",
+        "National Capitals",
+        "Things Greek"
+      ],
+      "cols": [
+        "Countries",
+        "Real People",
+        "Roman Empire",
+        "Trojan War"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.96,
+      "maxSimilarityToPast": 0.4195,
+      "similarityPenalty": 3.356,
+      "movieOverlapPenalty": 0.9768748698858399,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 7.627125130114161
+    },
+    {
+      "hash": "46886e7b5157e38acaa4a7edde7446ad66a263756fab1e98a1c4ec924fa04070",
+      "rows": [
+        "Animal Terms",
+        "Mountains",
+        "Real People",
+        "Religious Sites"
+      ],
+      "cols": [
+        "Locations in Asia",
+        "Roman Empire",
+        "Starts with MON",
+        "Things Greek"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.33,
+      "maxSimilarityToPast": 0.3989,
+      "similarityPenalty": 3.1912,
+      "movieOverlapPenalty": 1.6061095345922025,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 2.5326904654077973
+    },
+    {
+      "hash": "c319758ba67fda8953e740dbc02509659049385fc1f3080023c28aab9a899fc8",
+      "rows": [
+        "Animal Terms",
+        "Companies",
+        "Things Korean",
+        "Trojan War"
+      ],
+      "cols": [
+        "Cars",
+        "Locations in Asia",
+        "Real People",
+        "Starts with PAR"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.04,
+      "maxSimilarityToPast": 0.5459,
+      "similarityPenalty": 4.3672,
+      "movieOverlapPenalty": 1.2706211585820788,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 2.40217884141792
+    },
+    {
+      "hash": "0a5d584e712f4dadeb4b6765101162528868c0bfab6246fe65cc8c6412b75439",
+      "rows": [
+        "Ends with INE",
+        "Real People",
+        "Roman Empire",
+        "Volcanoes"
+      ],
+      "cols": [
+        "Locations in Asia",
+        "Locations in Europe",
+        "Pleistocene Epoch",
+        "Things French"
+      ],
+      "timestamp": null,
+      "qualityScore": 3.9399999999999995,
+      "maxSimilarityToPast": 0.4057,
+      "similarityPenalty": 3.2456,
+      "movieOverlapPenalty": 1.418609261890003,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -0.7242092618900036
+    },
+    {
+      "hash": "28b1f1a3ddfecf13c3d4e84aa0c9b9ddcb21499e999fa1626f48e7a2f6fe2bd1",
+      "rows": [
+        "1850s",
+        "1970s",
+        "Roman Empire",
+        "Things Greek"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Battles",
+        "Ends with WAR",
+        "Real People"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.2700000000000005,
+      "maxSimilarityToPast": 0.2972,
+      "similarityPenalty": 2.3776,
+      "movieOverlapPenalty": 2.777447196929865,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.1149528030701354
+    },
+    {
+      "hash": "e20df0854adaa0cbd5870d4b492e6445da0983dd1549cbc2ae300aa5c38cc77e",
+      "rows": [
+        "1850s",
         "Classic Films",
-        "Red Things"
+        "Ends with INE",
+        "Family-Friendly Stories"
       ],
       "cols": [
-        "Fictional People",
-        "Stories about Families",
+        "1990s",
+        "Animal Terms",
+        "Real People",
+        "Things French"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.85,
+      "maxSimilarityToPast": 0.3121,
+      "similarityPenalty": 2.4968,
+      "movieOverlapPenalty": 10.633277317167154,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.280077317167155
+    },
+    {
+      "hash": "7286c423c08c0c262db282ba775bfa7cd79dd2c19cb92023d1fb7b13190e3301",
+      "rows": [
+        "Animal Terms",
+        "Civilian Ships",
         "Things French",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.910000000000002,
-      "maxSimilarityToPast": 0.4012,
-      "similarityPenalty": 3.2096,
-      "movieOverlapPenalty": 19.093553185845526,
-      "yearProximityPenalty": 0.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.8,
-      "finalScore": -10.193153185845524
-    },
-    {
-      "hash": "1584341e5692c2e937c6db56b0027fd69f6a0daaa570f83b28313602c78dd34a",
-      "rows": [
-        "1997",
-        "2000s",
-        "Movies featuring Jack Nicholson",
-        "Movies featuring Robert De Niro"
+        "Things Greek"
       ],
       "cols": [
-        "Biographical Stories",
-        "Fictional People",
-        "Stories about Families",
-        "Thriller Stories"
+        "NATO Members",
+        "Real People",
+        "Roman Empire",
+        "Trojan War"
       ],
       "timestamp": null,
-      "qualityScore": 17.2,
-      "maxSimilarityToPast": 0.3324,
-      "similarityPenalty": 2.6592,
-      "movieOverlapPenalty": 26.65879012700986,
+      "qualityScore": 10.72,
+      "maxSimilarityToPast": 0.403,
+      "similarityPenalty": 3.224,
+      "movieOverlapPenalty": 1.1788347938290897,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -12.11799012700986
+      "finalScore": 6.317165206170911
     },
     {
-      "hash": "0a08a5ed0e3618c7f9d72cf33bc59eb775681628398f5e1696e5d330d3643598",
+      "hash": "60edfe30260aa6e61645d059b2c33664ace538e722b621f3631381e67f683de8",
       "rows": [
-        "1997",
-        "2000s",
-        "Ends with OOD",
-        "Stories about Families"
+        "Animal Terms",
+        "Civilian Ships",
+        "Things French",
+        "Things Greek"
       ],
       "cols": [
-        "Disney",
-        "Japanese Films",
-        "Movies featuring Al Pacino",
-        "Romance Stories"
+        "NATO Countries",
+        "Real People",
+        "Roman Empire",
+        "Trojan War"
       ],
       "timestamp": null,
-      "qualityScore": 11.549999999999999,
-      "maxSimilarityToPast": 0.3154,
-      "similarityPenalty": 2.5232,
-      "movieOverlapPenalty": 25.83534751495082,
+      "qualityScore": 10.65,
+      "maxSimilarityToPast": 0.403,
+      "similarityPenalty": 3.224,
+      "movieOverlapPenalty": 1.1788347938290897,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -16.80854751495082
+      "finalScore": 6.24716520617091
     },
     {
-      "hash": "c004cf70d21c2cf9f31563e2d8cca39455d9c456518e555e9f03d15dfb34989f",
+      "hash": "cc75ff6ae3a3a3904e3374022ce20fc05b0edf242a974e4da45afedb7e9a5bd8",
       "rows": [
-        "1997",
-        "2019",
-        "Fifth in Release Order",
-        "Third in Internal Chronology"
+        "Animal Terms",
+        "Civilian Ships",
+        "Locations in Asia",
+        "Locations in Europe"
       ],
       "cols": [
-        "Disney",
-        "Movies featuring Bruce Willis",
-        "Movies featuring Emma Watson",
-        "Time Travel Stories"
+        "Real People",
+        "Roman Empire",
+        "Starts with AND",
+        "Trojan War"
       ],
       "timestamp": null,
-      "qualityScore": 23.709999999999997,
-      "maxSimilarityToPast": 0.6053,
-      "similarityPenalty": 4.8424,
-      "movieOverlapPenalty": 26.67730349838819,
+      "qualityScore": 7.6499999999999995,
+      "maxSimilarityToPast": 0.4781,
+      "similarityPenalty": 3.8248,
+      "movieOverlapPenalty": 0.9719797087488219,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -7.809703498388195
+      "finalScore": 2.8532202912511773
     },
     {
-      "hash": "2aee1f8041ed33a0c1897495dfe90587bcaab04a0786728ad5aa866e01bb621f",
+      "hash": "a3ffcb84cb1b5b6ca0f02cea9b47495abbc84494461add9fed2b98f9056daa1f",
       "rows": [
-        "1997",
-        "2004",
-        "Fifth in Release Order",
-        "Fourth in Release Order"
+        "Animal Terms",
+        "Civilian Ships",
+        "Locations in Asia",
+        "Locations in Europe"
       ],
       "cols": [
-        "Disney",
-        "Movies featuring Rupert Grint",
-        "Sci-fi Stories",
-        "Thriller Stories"
+        "Real People",
+        "Roman Empire",
+        "Starts with UNI",
+        "Trojan War"
       ],
       "timestamp": null,
-      "qualityScore": 20.609999999999996,
-      "maxSimilarityToPast": 0.419,
-      "similarityPenalty": 3.352,
-      "movieOverlapPenalty": 27.55733318111458,
-      "yearProximityPenalty": 0.6,
+      "qualityScore": 7.6499999999999995,
+      "maxSimilarityToPast": 0.4781,
+      "similarityPenalty": 3.8248,
+      "movieOverlapPenalty": 0.9719797087488219,
+      "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -10.899333181114583
+      "temporalPenalty": 0,
+      "finalScore": 2.8532202912511773
     },
     {
-      "hash": "7c116aa4477117c281ca2de083017f434ea433dccf8a0d5b3a7bcb3030b59fd3",
+      "hash": "a77817fc495b60cafce68e30f969ed6b044732b69c8a4b4c431cb31165f686c8",
       "rows": [
-        "1997",
+        "1850s",
         "2003",
-        "Ends with ITY",
-        "Horror Stories"
+        "Ends with INE",
+        "Roman Empire"
       ],
       "cols": [
-        "Fictional People",
-        "Movies directed by Quentin Tarantino",
-        "Movies featuring Alan Rickman",
-        "Sci-fi Stories"
+        "Animal Terms",
+        "Real People",
+        "Things French",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 15.63,
-      "maxSimilarityToPast": 0.4411,
-      "similarityPenalty": 3.5288,
-      "movieOverlapPenalty": 22.88722220717153,
-      "yearProximityPenalty": 0.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.8,
-      "finalScore": -11.58602220717153
-    },
-    {
-      "hash": "cd1ceefe1944b3580be0c6c17b2cdcc64829304447b888970706cbb62368bdb2",
-      "rows": [
-        "2001",
-        "2014",
-        "Fictional People",
-        "Stories about Families"
-      ],
-      "cols": [
-        "3D Animated Films",
-        "Sequels",
-        "Stories Where the Mom Dies",
-        "Studio Ghibli"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.5,
-      "maxSimilarityToPast": 0.4153,
-      "similarityPenalty": 3.3224,
-      "movieOverlapPenalty": 25.998921288355252,
+      "qualityScore": 8,
+      "maxSimilarityToPast": 0.3868,
+      "similarityPenalty": 3.0944,
+      "movieOverlapPenalty": 4.747686334445337,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -13.821321288355252
+      "finalScore": 0.15791366555466269
     },
     {
-      "hash": "2b8ac376abbd98794bb6b341b8293246c88807d2070cb25023ddabf72c072645",
+      "hash": "b93d73365219dd2b92aa2c23bd71e6eda645fafcbe353f2c98181adcbcc60de3",
       "rows": [
-        "1997",
-        "2008",
-        "Ends with ERS",
-        "Sci-fi Stories"
+        "1850s",
+        "1990s",
+        "Ends with INE",
+        "Roman Empire"
       ],
       "cols": [
-        "2D Animated Films",
-        "Events",
-        "Movies featuring Sigourney Weaver",
-        "Sequels"
+        "Carnivores",
+        "Real People",
+        "Things French",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 11.45,
-      "maxSimilarityToPast": 0.4187,
-      "similarityPenalty": 3.3496,
-      "movieOverlapPenalty": 23.115638701806233,
+      "qualityScore": 4.890000000000001,
+      "maxSimilarityToPast": 0.4023,
+      "similarityPenalty": 3.2184,
+      "movieOverlapPenalty": 3.750624488546281,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -15.015238701806235
+      "finalScore": -2.0790244885462803
     },
     {
-      "hash": "e6008ffdfd70214e9a9f1703c02673df0b888a3b22fe54019e4364c4bf88c6cd",
+      "hash": "49cb3db5d220d46eae6e67b6d30bcfaeed10a5d96f7117f919637ffa7853277f",
       "rows": [
-        "1997",
-        "Christmas Stories",
-        "Horror Stories",
-        "Starts with RED"
-      ],
-      "cols": [
+        "1850s",
         "2000s",
-        "Fictional People",
-        "Movies featuring Bruce Willis",
-        "Sequels"
+        "Ends with INE",
+        "Roman Empire"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Real People",
+        "Things French",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 10.85,
-      "maxSimilarityToPast": 0.4172,
-      "similarityPenalty": 3.3376,
-      "movieOverlapPenalty": 22.871512128091002,
+      "qualityScore": 4.82,
+      "maxSimilarityToPast": 0.4068,
+      "similarityPenalty": 3.2544,
+      "movieOverlapPenalty": 4.292401781599808,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -15.359112128091002
+      "finalScore": -2.7268017815998076
     },
     {
-      "hash": "4597899fd74b6dc13a6913fb11fb77702a2ee2f0ade3b8676be05464241920c7",
+      "hash": "1d4c7eb602c8e66458a7579b9c4766d426094e3acdac47a32a07f58006757506",
       "rows": [
-        "2001",
+        "Animal Terms",
+        "Civilian Ships",
+        "National Capitals",
+        "Things Greek"
+      ],
+      "cols": [
+        "Modern Countries",
+        "Real People",
+        "Roman Empire",
+        "Trojan War"
+      ],
+      "timestamp": null,
+      "qualityScore": 11.969999999999999,
+      "maxSimilarityToPast": 0.4195,
+      "similarityPenalty": 3.356,
+      "movieOverlapPenalty": 0.9821886935285046,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 7.631811306471494
+    },
+    {
+      "hash": "81b11fde87406d6fbb7043bc5d27c464a46fa849f9a8b1ee26b62e854f83b6d0",
+      "rows": [
+        "1850s",
+        "1900s",
+        "Things French",
+        "Things Greek"
+      ],
+      "cols": [
+        "Battles",
+        "Ends with WAR",
+        "Real People",
+        "Tragic Heroes"
+      ],
+      "timestamp": null,
+      "qualityScore": 12.259999999999998,
+      "maxSimilarityToPast": 0.3328,
+      "similarityPenalty": 2.6624,
+      "movieOverlapPenalty": 2.024026789103053,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 7.573573210896946
+    },
+    {
+      "hash": "3134bc1968e65369d114de36b39be227adc3a84f09721edbb38464cf701557f6",
+      "rows": [
+        "Animal Terms",
+        "Civilian Ships",
+        "Things French",
+        "Things Greek"
+      ],
+      "cols": [
+        "Modern Countries",
+        "Real People",
+        "Roman Empire",
+        "Trojan War"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.629999999999999,
+      "maxSimilarityToPast": 0.4257,
+      "similarityPenalty": 3.4056,
+      "movieOverlapPenalty": 1.199242957094396,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 4.025157042905603
+    },
+    {
+      "hash": "5fdb3caecf6fcbbc0c190be6e78a8af9913254cc55f72091e4c95da2382aa497",
+      "rows": [
+        "Animal Terms",
+        "Civilian Ships",
+        "Things French",
+        "Things Greek"
+      ],
+      "cols": [
+        "Countries",
+        "Real People",
+        "Roman Empire",
+        "Trojan War"
+      ],
+      "timestamp": null,
+      "qualityScore": 8.620000000000001,
+      "maxSimilarityToPast": 0.4374,
+      "similarityPenalty": 3.4992,
+      "movieOverlapPenalty": 1.1939291334517312,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 3.9268708665482697
+    },
+    {
+      "hash": "fa7c3410f6b0381282421f4974a735f5c04a4fa3d6b82fb7fa518ee22a38a5f7",
+      "rows": [
+        "1850s",
+        "1970s",
+        "Roman Empire",
+        "Things Greek"
+      ],
+      "cols": [
+        "Animal Terms",
+        "Battles",
+        "Real People",
+        "Wars"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.0200000000000005,
+      "maxSimilarityToPast": 0.3692,
+      "similarityPenalty": 2.9536,
+      "movieOverlapPenalty": 2.652447196929865,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.4139528030701358
+    },
+    {
+      "hash": "8acf653014dd134512ec78e9e29884d8b8378bdc63e73ba9fb94b6220e61482c",
+      "rows": [
+        "1850s",
         "2003",
-        "Disney",
-        "Sci-fi Stories"
+        "Roman Empire",
+        "Starts with MON"
       ],
       "cols": [
-        "Pixar",
-        "Romance Stories",
-        "TV Shows",
-        "Third in Internal Chronology"
+        "Animal Terms",
+        "Real People",
+        "Things French",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 17.58,
-      "maxSimilarityToPast": 0.3938,
-      "similarityPenalty": 3.1504,
-      "movieOverlapPenalty": 23.748634265725666,
-      "yearProximityPenalty": 1.6,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1.6,
-      "finalScore": -10.919034265725667
-    },
-    {
-      "hash": "3b80c54a47c9d13af5beafe04bea134f929d9e0acc18cbd067ff7e2450290199",
-      "rows": [
-        "1997",
-        "2009",
-        "Romance Stories",
-        "Third in Internal Chronology"
-      ],
-      "cols": [
-        "Disney",
-        "Movies featuring Alan Rickman",
-        "Movies featuring Sigourney Weaver",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 19.229999999999997,
-      "maxSimilarityToPast": 0.5522,
-      "similarityPenalty": 4.4176,
-      "movieOverlapPenalty": 26.419068979284106,
+      "qualityScore": 8,
+      "maxSimilarityToPast": 0.3842,
+      "similarityPenalty": 3.0736,
+      "movieOverlapPenalty": 5.128638715397718,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -11.606668979284109
+      "finalScore": -0.20223871539771832
     },
     {
-      "hash": "d966e7832fcf41c0f2d2b64568edd16e6a55e8266590f3b186d74d4170751281",
+      "hash": "be2f20f00f7dca19d81274b484e4ba82cc207a38fe3691c351e4c8e6fe66b7ac",
       "rows": [
-        "1997",
-        "2000s",
-        "Disney",
-        "Fictional People"
+        "1850s",
+        "1970s",
+        "Roman Empire",
+        "Starts with MON"
       ],
       "cols": [
-        "Fourth in Internal Chronology",
-        "Romance Stories",
-        "Sci-fi Stories",
-        "The Bad Place"
+        "Animal Terms",
+        "Real People",
+        "Things French",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 12.59,
-      "maxSimilarityToPast": 0.3904,
-      "similarityPenalty": 3.1232,
-      "movieOverlapPenalty": 21.32087468513319,
+      "qualityScore": 4.880000000000001,
+      "maxSimilarityToPast": 0.3905,
+      "similarityPenalty": 3.124,
+      "movieOverlapPenalty": 3.2993053820643836,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -11.854074685133192
+      "finalScore": -1.543305382064383
     },
     {
-      "hash": "7f2864bd7f07a1fa779742f1deb09d4fa405477ebb9c077ad7bbc5404c243532",
+      "hash": "ad2336293603da7885d0fabfe0443ecf9dd118f0e63a5c59d3780c3dd292c81b",
       "rows": [
-        "2001",
-        "2003",
-        "Ends with ARS",
-        "Sci-fi Stories"
+        "1850s",
+        "1990s",
+        "Ends with INE",
+        "Roman Empire"
       ],
       "cols": [
-        "Events",
-        "Pixar",
-        "Romance Stories",
-        "Third in Internal Chronology"
+        "Animal Terms",
+        "Real People",
+        "Things French",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 13.540000000000001,
-      "maxSimilarityToPast": 0.3856,
-      "similarityPenalty": 3.0848,
-      "movieOverlapPenalty": 20.785481595485443,
-      "yearProximityPenalty": 1.6,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 1.6,
-      "finalScore": -11.930281595485441
-    },
-    {
-      "hash": "b9a7ab5fa5546da906e0ea80751910793da6ae6de6cfb4cefaf3ea80ead1c38c",
-      "rows": [
-        "1997",
-        "2004",
-        "Fifth in Internal Chronology",
-        "Movies featuring Sigourney Weaver"
-      ],
-      "cols": [
-        "Ends with LES",
-        "Sci-fi Stories",
-        "Stories Where the Mom Dies",
-        "Thriller Films"
-      ],
-      "timestamp": null,
-      "qualityScore": 17.12,
-      "maxSimilarityToPast": 0.4506,
-      "similarityPenalty": 3.6048,
-      "movieOverlapPenalty": 25.354358954347994,
-      "yearProximityPenalty": 0.6,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -12.439158954347993
-    },
-    {
-      "hash": "91de3e0c02da2ee315b40decf1c20fecc4740ce94a21fcaca1d122ab237434dd",
-      "rows": [
-        "1997",
-        "2019",
-        "Ends with RED",
-        "Romance Stories"
-      ],
-      "cols": [
-        "Fictional People",
-        "Movies featuring Bruce Willis",
-        "Stories about Families",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.17,
-      "maxSimilarityToPast": 0.3947,
-      "similarityPenalty": 3.1576,
-      "movieOverlapPenalty": 22.598737465646828,
+      "qualityScore": 4.8100000000000005,
+      "maxSimilarityToPast": 0.4023,
+      "similarityPenalty": 3.2184,
+      "movieOverlapPenalty": 3.786446024367817,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -12.586337465646828
+      "finalScore": -2.1948460243678163
     },
     {
-      "hash": "33b1b2821364811872ac743c17588459b76715737c240490301e18f499dd73fd",
+      "hash": "df40cfa71d7d600b7a2eca1ba2a71607b17213f3233b166cfdbb7ae6e811e62d",
       "rows": [
-        "2001",
-        "2011",
-        "Disney",
-        "Fictional People"
+        "1850s",
+        "Assassins",
+        "Countries",
+        "Fantasy Stories"
       ],
       "cols": [
-        "2D Animated Films",
-        "Movies featuring Jake Gyllenhaal",
-        "Romance Stories",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.62,
-      "maxSimilarityToPast": 0.4276,
-      "similarityPenalty": 3.4208,
-      "movieOverlapPenalty": 25.30615466334114,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -13.10695466334114
-    },
-    {
-      "hash": "7f0629d14cbad2f8f154e08286a2ec733faec27b8cccbca66f363037b6dd8880",
-      "rows": [
-        "1997",
-        "2000s",
-        "Ends with  II",
-        "Fictional People"
-      ],
-      "cols": [
-        "Family-Friendly Stories",
-        "Movies featuring Al Pacino",
-        "Movies featuring Sigourney Weaver",
+        "1990s",
+        "Animal Terms",
+        "Ends with ORE",
         "Things French"
       ],
       "timestamp": null,
-      "qualityScore": 10.39,
-      "maxSimilarityToPast": 0.4,
-      "similarityPenalty": 3.2,
-      "movieOverlapPenalty": 20.381699746264555,
+      "qualityScore": 6.42,
+      "maxSimilarityToPast": 0.2813,
+      "similarityPenalty": 2.2504,
+      "movieOverlapPenalty": 6.685322707525429,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -13.191699746264554
+      "finalScore": -2.5157227075254287
     },
     {
-      "hash": "16f77c9acea2e85500af0bb2b11661e067b6c0d50b6824f0c45c9c1895e81200",
+      "hash": "92d01acdd61c6f3a1de84483b832275feaa619f6cd3656b0d1fea72c1537677e",
       "rows": [
-        "2001",
-        "2011",
-        "Sci-fi Stories",
-        "Starts with HER"
+        "1850s",
+        "1990s",
+        "Roman Empire",
+        "Starts with MON"
       ],
       "cols": [
-        "Disney",
-        "Events",
-        "Romance Stories",
-        "Stories Where the Mom Dies"
+        "Animal Terms",
+        "Real People",
+        "Things French",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 10.030000000000001,
-      "maxSimilarityToPast": 0.4176,
-      "similarityPenalty": 3.3408,
-      "movieOverlapPenalty": 20.512363630989558,
+      "qualityScore": 4.8100000000000005,
+      "maxSimilarityToPast": 0.4023,
+      "similarityPenalty": 3.2184,
+      "movieOverlapPenalty": 4.167398405320198,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -13.823163630989557
+      "finalScore": -2.5757984053201977
     },
     {
-      "hash": "658ea3e72a564c4b2d31e9a7416ab62571fdd418e9e1742475b5276578b43d0e",
+      "hash": "7d4fe08d4ec702c2fd81dadb08ac726ce79ede3a9f107962a4a78eee7bd0b3b2",
       "rows": [
-        "1997",
-        "2003",
-        "Ends with MEN",
-        "Sci-fi Stories"
+        "1850s",
+        "2000s",
+        "Roman Empire",
+        "Starts with MON"
       ],
       "cols": [
-        "Events",
-        "Fictional People",
-        "Stories about Families",
-        "Thriller Stories"
+        "Animal Terms",
+        "Real People",
+        "Things French",
+        "Wars"
       ],
       "timestamp": null,
-      "qualityScore": 8.45,
-      "maxSimilarityToPast": 0.4699,
-      "similarityPenalty": 3.7592,
-      "movieOverlapPenalty": 18.745669582323707,
-      "yearProximityPenalty": 0.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.8,
-      "finalScore": -14.854869582323708
-    },
-    {
-      "hash": "81d987c9752fdb7254eb3c3ea8ff086cea6a000d78931a21ca62bd4a70221e3d",
-      "rows": [
-        "2001",
-        "2012",
-        "Sci-fi Stories",
-        "Stories about Families"
-      ],
-      "cols": [
-        "Disney",
-        "Pixar",
-        "Romance Stories",
-        "Third in Internal Chronology"
-      ],
-      "timestamp": null,
-      "qualityScore": 15.83,
-      "maxSimilarityToPast": 0.5117,
-      "similarityPenalty": 4.0936,
-      "movieOverlapPenalty": 26.688316805408203,
+      "qualityScore": 4.82,
+      "maxSimilarityToPast": 0.4068,
+      "similarityPenalty": 3.2544,
+      "movieOverlapPenalty": 4.673354162552189,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -14.951916805408203
-    },
-    {
-      "hash": "7e19951af1ea02ac2a0a2675c4e51a1748952909b4a48876f812bfb32d4c4ca2",
-      "rows": [
-        "1997",
-        "2003",
-        "Ends with DAY",
-        "Fictional People"
-      ],
-      "cols": [
-        "2D Animated Films",
-        "Romance Stories",
-        "Sequels",
-        "Things French"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.36,
-      "maxSimilarityToPast": 0.3192,
-      "similarityPenalty": 2.5536,
-      "movieOverlapPenalty": 20.19725380762395,
-      "yearProximityPenalty": 0.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.8,
-      "finalScore": -15.190853807623952
-    },
-    {
-      "hash": "eb77cfdc20fdabb48df5205722fe9ae19fee39710e38a0bf01d8ce0c16295bfb",
-      "rows": [
-        "1997",
-        "2003",
-        "3D Animated Films",
-        "Movies featuring Sigourney Weaver"
-      ],
-      "cols": [
-        "Ends with RLD",
-        "Fictional People",
-        "Sci-fi Stories",
-        "Stories Where the Mom Dies"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.490000000000002,
-      "maxSimilarityToPast": 0.422,
-      "similarityPenalty": 3.376,
-      "movieOverlapPenalty": 24.762413682363,
-      "yearProximityPenalty": 0.8,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.8,
-      "finalScore": -15.448413682362999
-    },
-    {
-      "hash": "b8e074671e7dc93085d14f2f36d250e2503b6e9c9166c1a77130883c44b4b99c",
-      "rows": [
-        "1997",
-        "2011",
-        "Cannibalism",
-        "Ends with NCE"
-      ],
-      "cols": [
-        "Events",
-        "Fictional People",
-        "Movies featuring Alan Rickman",
-        "Thriller Films"
-      ],
-      "timestamp": null,
-      "qualityScore": 14.87,
-      "maxSimilarityToPast": 0.325,
-      "similarityPenalty": 2.6,
-      "movieOverlapPenalty": 17.518208085523327,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -5.248208085523327
+      "finalScore": -3.107754162552189
     }
   ],
   "message": "Puzzle saved successfully!"
