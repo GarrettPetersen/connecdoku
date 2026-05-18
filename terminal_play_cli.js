@@ -39,7 +39,7 @@ function hasFlag(name) {
   return Object.prototype.hasOwnProperty.call(flags, name);
 }
 
-const API_BASE = String(flag("api", process.env.CONNECDOKU_API || "https://api.connecdoku.com")).replace(/\/+$/, "");
+const API_BASE = String(flag("api", process.env.CONNECDOKU_API || "https://connecdoku.com")).replace(/\/+$/, "");
 const DATE = flag("date", null);
 const INDEX_RAW = flag("index", null);
 const SEED = flag("seed", null);
@@ -277,7 +277,7 @@ async function api(pathname, body) {
     });
   } catch (e) {
     throw new Error(
-      `Cannot reach API at ${API_BASE}. Start it with 'make terminal-api' or set --api to your deployed endpoint.`
+      `Cannot reach API at ${API_BASE}. If this is the public endpoint, it may not be deployed yet. Try again later or pass --api to a reachable endpoint.`
     );
   }
 
@@ -298,7 +298,7 @@ async function apiGet(pathname) {
     });
   } catch (e) {
     throw new Error(
-      `Cannot reach API at ${API_BASE}. Start it with 'make terminal-api' or set --api to your deployed endpoint.`
+      `Cannot reach API at ${API_BASE}. If this is the public endpoint, it may not be deployed yet. Try again later or pass --api to a reachable endpoint.`
     );
   }
 

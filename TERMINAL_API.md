@@ -24,7 +24,7 @@ PORT=8787 TERMINAL_API_SECRET='replace-with-long-random-secret' node terminal_ap
 ## Cloudflare Worker + D1 Setup
 
 The Worker entrypoint is `terminal_api_worker.js`, configured by `wrangler.toml`.
-This repo is configured to deploy API on `https://api.connecdoku.com`.
+This repo is configured to deploy API on `https://connecdoku.com/api`.
 
 1. Create a D1 DB (once):
 
@@ -59,7 +59,7 @@ make terminal-worker-deploy   # deploy to configured domain routes
 After deploy, health check:
 
 ```bash
-curl -sS https://api.connecdoku.com/api/v1/health
+curl -sS https://connecdoku.com/api/v1/health
 ```
 
 ## Public CLI Command (No Clone)
@@ -67,7 +67,7 @@ curl -sS https://api.connecdoku.com/api/v1/health
 Users can play from terminal without cloning this repo:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/GarrettPetersen/connecdoku/master/terminal_play_cli.js | node --input-type=module - --api https://api.connecdoku.com
+curl -fsSL https://raw.githubusercontent.com/GarrettPetersen/connecdoku/master/terminal_play_cli.js | node --input-type=module - --api https://connecdoku.com
 ```
 
 Once published to npm with the `connecdoku` package name, the one-liner is:
