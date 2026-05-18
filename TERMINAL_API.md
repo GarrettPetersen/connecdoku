@@ -1,0 +1,236 @@
+# Terminal Play API (Stateless) + Competition Submissions
+
+This API supports headless Connecdoku play from any terminal.
+It is stateless on the server for gameplay: each response returns a signed `stateToken` that the client must send back on the next action.
+
+Competition submissions are stored server-side in D1 (`competitors`, `competition_results`).
+
+## Run Locally
+
+```bash
+# Recommended: set a real secret before public deployment
+export TERMINAL_API_SECRET='replace-with-long-random-secret'
+
+make terminal-api
+# default Make port: 8000
+```
+
+You can also run directly:
+
+```bash
+PORT=8787 TERMINAL_API_SECRET='replace-with-long-random-secret' node terminal_api_server.js
+```
+
+## Cloudflare Worker + D1 Setup
+
+The Worker entrypoint is `terminal_api_worker.js`, configured by `wrangler.toml`.
+This repo is configured to deploy API on `https://api.connecdoku.com`.
+
+1. Create a D1 DB (once):
+
+```bash
+wrangler d1 create connecdoku-terminal
+```
+
+2. Put the returned `database_id` into `wrangler.toml` (`[[d1_databases]]` block).
+3. Apply migrations:
+
+```bash
+make d1-migrate-local
+make d1-migrate-remote
+```
+
+4. Set secrets:
+
+```bash
+wrangler secret put TERMINAL_API_SECRET
+wrangler secret put COMPETITION_PASSWORD_SALT
+wrangler secret put COMPETITION_ADMIN_KEY
+```
+
+5. Run worker:
+
+```bash
+make terminal-worker          # local wrangler dev
+make terminal-worker-remote   # internet-reachable preview URL
+make terminal-worker-deploy   # deploy to configured domain routes
+```
+
+After deploy, health check:
+
+```bash
+curl -sS https://api.connecdoku.com/api/v1/health
+```
+
+## Public CLI Command (No Clone)
+
+Users can play from terminal without cloning this repo:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/GarrettPetersen/connecdoku/master/terminal_play_cli.js | node --input-type=module - --api https://api.connecdoku.com
+```
+
+Once published to npm with the `connecdoku` package name, the one-liner is:
+
+```bash
+npx connecdoku
+```
+
+## Routes
+
+- `GET /api/v1/health`
+- `GET /api/v1/rules`
+- `POST /api/v1/play/start`
+- `POST /api/v1/play/state`
+- `POST /api/v1/play/swap`
+- `POST /api/v1/play/guess`
+- `POST /api/v1/competition/register` (admin key required)
+- `POST /api/v1/competition/submit`
+- `GET /api/v1/competition/leaderboard`
+- `POST /api/v1/competition/delete-result` (admin key required)
+
+## Start Game
+
+```bash
+curl -sS -X POST http://localhost:8000/api/v1/play/start \
+  -H 'content-type: application/json' \
+  -d '{}'
+```
+
+Optional start fields:
+- `date`: `YYYY-MM-DD`
+- `puzzleIndex`: specific index in `daily_puzzles/puzzles.json`
+- `seed`: deterministic shuffle seed
+- `ttlSeconds`: token TTL (capped server-side)
+
+## Action Loop with curl + jq
+
+```bash
+API=http://localhost:8000
+TOKEN=$(curl -sS -X POST "$API/api/v1/play/start" \
+  -H 'content-type: application/json' -d '{}' | jq -r '.stateToken')
+
+# inspect state
+curl -sS -X POST "$API/api/v1/play/state" \
+  -H 'content-type: application/json' \
+  -d "{\"stateToken\":\"$TOKEN\"}" | jq .
+
+# swap [0,0] with [3,3]
+RESP=$(curl -sS -X POST "$API/api/v1/play/swap" \
+  -H 'content-type: application/json' \
+  -d "{\"stateToken\":\"$TOKEN\",\"a\":[0,0],\"b\":[3,3]}")
+TOKEN=$(echo "$RESP" | jq -r '.stateToken')
+
+# guess row 1
+RESP=$(curl -sS -X POST "$API/api/v1/play/guess" \
+  -H 'content-type: application/json' \
+  -d "{\"stateToken\":\"$TOKEN\",\"kind\":\"row\",\"index\":1}")
+TOKEN=$(echo "$RESP" | jq -r '.stateToken')
+```
+
+## Interactive Terminal Client
+
+```bash
+# local API
+make terminal-cli
+
+# remote API
+make terminal-cli API=https://your-domain
+
+# direct node invocation
+CONNECDOKU_API=https://your-domain node terminal_play_cli.js
+```
+
+Client commands:
+- `swap r1 c1 r2 c2`
+- `guess row i`
+- `guess col i`
+- `state`
+- `rules`
+- `token` (prints current state token)
+- `stats` (local streaks + records)
+- `next` (load next daily puzzle only when available after local midnight)
+- `help`
+- `quit`
+
+By default, interactive mode requests today's puzzle using the **client local date** (`YYYY-MM-DD`), not server local time.
+
+## AI/Automation CLI Mode
+
+`terminal_play_cli.js` also supports one-shot commands for script/AI use:
+
+```bash
+# start (returns JSON with stateToken)
+node terminal_play_cli.js start --api https://your-domain
+
+# state
+node terminal_play_cli.js state --api https://your-domain --token <STATE_TOKEN>
+
+# swap
+node terminal_play_cli.js swap --api https://your-domain --token <STATE_TOKEN> --a 0,0 --b 3,3
+
+# guess
+node terminal_play_cli.js guess --api https://your-domain --token <STATE_TOKEN> --kind row --line 1
+
+# submit finished result
+node terminal_play_cli.js submit --api https://your-domain --token <STATE_TOKEN> --model gpt-5 --password <PASSWORD>
+
+# admin register/update competitor
+node terminal_play_cli.js register --api https://your-domain --admin-key <ADMIN_KEY> --model gpt-5 --password <PASSWORD> --display-name "GPT-5"
+
+# leaderboard
+node terminal_play_cli.js leaderboard --api https://your-domain --limit 20
+
+# local stats dump
+node terminal_play_cli.js stats
+```
+
+This gives AI runners both options:
+- call HTTP endpoints directly, or
+- use the one-shot CLI wrapper.
+
+Password generator helper:
+
+```bash
+node scripts/competition_keygen.mjs gpt-5 24
+```
+
+## Session Resume Behavior
+
+Interactive CLI mode saves the current game session token locally and auto-resumes on next launch when:
+- API base URL matches, and
+- saved puzzle date equals your current local date.
+
+If local date has changed, CLI starts a fresh session for today (frontend-like behavior).
+
+## Local Stats Persistence
+
+CLI results are recorded locally by puzzle date when a game finishes:
+- preferred path: `~/.connecdoku/terminal_stats.json`
+- fallback path (if home-dir write is unavailable): `./.connecdoku/terminal_stats.json`
+
+Stored per-day fields:
+- `won`
+- `strikes`
+- `completedAt`
+
+Streaks are derived from these day records (win streak and attempt streak).
+
+## Gameplay Rules Implemented
+
+- Goal: Find the 8 hidden categories by correctly guessing the 4 members in each of them.
+- 16 words visible, categories hidden.
+- Guesses are submitted by row/column index.
+- Correct guess locks that line and returns revealed category label.
+- Incorrect guess adds a strike.
+- At 5 strikes, game ends in loss.
+- If 3 rows are solved, manual row guesses are blocked until columns progress (and vice versa).
+- The game may reorder the just-solved line to keep the puzzle solvable.
+- Forced final-line auto-solves are applied like the frontend.
+
+## Deployment Notes
+
+For internet exposure:
+- Set `TERMINAL_API_SECRET` to a strong random secret.
+- Put service behind Cloudflare.
+- Add rate limits and (optionally) per-run auth if you want trusted benchmarking.

@@ -1,0 +1,25 @@
+name = "connecdoku-terminal-api"
+main = "terminal_api_worker.js"
+compatibility_date = "2026-05-18"
+workers_dev = false
+
+[[routes]]
+pattern = "api.connecdoku.com"
+custom_domain = true
+
+# Optional alternative to host API under your main site path instead:
+# [[routes]]
+# pattern = "connecdoku.com/api/*"
+# zone_name = "connecdoku.com"
+
+[vars]
+TERMINAL_API_STATE_TTL_SECONDS = "3600"
+TERMINAL_API_MAX_STATE_TTL_SECONDS = "86400"
+TERMINAL_API_DISABLE_FUTURE = "1"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "connecdoku-terminal"
+database_id = "00000000-0000-0000-0000-000000000000"
+preview_database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"

@@ -12,6 +12,7 @@ node_modules/
 
 # Cloudflare Wrangler
 .wrangler/
+.dev.vars
 
 # macOS system files
 .DS_Store

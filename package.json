@@ -2,9 +2,16 @@
   "name": "connecdoku",
   "version": "1.0.0",
   "type": "module",
+  "bin": {
+    "connecdoku": "./terminal_play_cli.js"
+  },
   "scripts": {
     "build": "npm run generate:social-preview",
-    "generate:social-preview": "node generate_social_preview.js"
+    "generate:social-preview": "node generate_social_preview.js",
+    "terminal-api": "node terminal_api_server.js",
+    "terminal-cli": "node terminal_play_cli.js",
+    "terminal-worker": "WRANGLER_LOG=none wrangler dev --port 8787",
+    "terminal-worker-remote": "WRANGLER_LOG=none wrangler dev --remote"
   },
   "dependencies": {
     "@fontsource/fredoka-one": "^5.2.5",

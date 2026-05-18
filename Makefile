@@ -1,7 +1,7 @@
 # Connecdoku Development Makefile
 # Common commands for managing the puzzle database and data
 
-.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve social-preview
+.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve social-preview terminal-api terminal-cli terminal-play terminal-worker terminal-worker-remote terminal-worker-deploy d1-migrate-local d1-migrate-remote
 .PHONY: cell-options cell-replace
 
 # Local server config
@@ -14,6 +14,14 @@ help:
 	@echo "Build & Setup:"
 	@echo "  build          - Build Rust binaries (cdx_worker)"
 	@echo "  social-preview - Generate social-preview.png for today's puzzle"
+	@echo "  terminal-api   - Run terminal play API at http://localhost:$(PORT) (override with PORT=xxxx)"
+	@echo "  terminal-cli   - Play via terminal client (API=http://localhost:8000 by default)"
+	@echo "  terminal-play  - Start local API + CLI together (single command)"
+	@echo "  terminal-worker - Run Cloudflare Worker API locally via Wrangler (http://localhost:8787)"
+	@echo "  terminal-worker-remote - Run Cloudflare Worker API in remote preview (internet URL)"
+	@echo "  terminal-worker-deploy - Deploy Worker to configured routes/domains"
+	@echo "  d1-migrate-local - Apply D1 migrations to local Wrangler DB"
+	@echo "  d1-migrate-remote - Apply D1 migrations to remote Cloudflare D1 DB"
 	@echo "  clean          - Clean Rust build artifacts"
 	@echo "  serve          - Serve the site at http://localhost:$(PORT) (override with PORT=xxxx)"
 	@echo ""
@@ -140,3 +148,43 @@ social-preview:
 	@echo "Generating social preview image..."
 	node generate_social_preview.js
 	@echo "✓ social-preview.png generated"
+
+# Run terminal-play API server
+terminal-api:
+	@echo "Starting terminal API at http://localhost:$(PORT)"
+	PORT=$(PORT) node terminal_api_server.js
+
+# Run interactive terminal client against a headless API
+terminal-cli:
+	@echo "Starting terminal client against API=$(API)"
+	@echo "Override with: make terminal-cli API=https://your-domain"
+	CONNECDOKU_API=$(if $(API),$(API),http://localhost:8000) node terminal_play_cli.js
+
+# Start local API server and CLI together for one-command play.
+terminal-play:
+	@echo "Starting local terminal API on http://localhost:$(PORT) and opening CLI..."
+	@PORT=$(PORT) node terminal_api_server.js & \
+	API_PID=$$!; \
+	trap 'kill $$API_PID 2>/dev/null || true' EXIT INT TERM; \
+	sleep 0.6; \
+	CONNECDOKU_API=http://localhost:$(PORT) node terminal_play_cli.js
+
+# Run worker API locally via Wrangler (uses local D1 by default)
+terminal-worker:
+	WRANGLER_LOG=none wrangler dev --port 8787
+
+# Run worker API on Cloudflare's remote preview network
+terminal-worker-remote:
+	WRANGLER_LOG=none wrangler dev --remote
+
+# Deploy worker to Cloudflare (uses routes in wrangler.toml)
+terminal-worker-deploy:
+	WRANGLER_LOG=none wrangler deploy
+
+# Apply migrations to local wrangler D1 file
+d1-migrate-local:
+	WRANGLER_LOG=none wrangler d1 migrations apply DB --local
+
+# Apply migrations to remote D1 (requires configured database_id and auth)
+d1-migrate-remote:
+	WRANGLER_LOG=none wrangler d1 migrations apply DB --remote

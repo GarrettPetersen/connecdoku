@@ -1,0 +1,4 @@
+# Copy to .dev.vars (do not commit secrets)
+TERMINAL_API_SECRET=replace-with-long-random-secret
+COMPETITION_PASSWORD_SALT=replace-with-random-salt
+COMPETITION_ADMIN_KEY=replace-with-admin-bearer-token
