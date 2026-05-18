@@ -1,39 +1,176 @@
 {
-  "curatedCount": 0,
+  "curatedCount": 1,
   "attempts": 0,
-  "phase": "PUZZLE_LIST",
+  "phase": "MAIN_MENU",
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
-  "currentPuzzle": null,
-  "viableGrid": null,
-  "chosen": [
+  "currentPuzzle": {
+    "hash": "db40b20ec412e314804799c35b62bc456fb2ccdb65172393c87d76b6d7a2bc36",
+    "rows": [
+      "1990s",
+      "Birds",
+      "Ends with INE",
+      "Foods"
+    ],
+    "cols": [
+      "Jurassic Period",
+      "Red Things",
+      "Things Canadian",
+      "White Things"
+    ],
+    "timestamp": null,
+    "qualityScore": 7.87,
+    "maxSimilarityToPast": 0.3443,
+    "similarityPenalty": 2.7544,
+    "movieOverlapPenalty": 2.998824636790787,
+    "yearProximityPenalty": 0,
+    "adjacentDecadePenalty": 0,
+    "adjacentCenturyPenalty": 0,
+    "temporalPenalty": 0,
+    "finalScore": 2.1167753632092134
+  },
+  "viableGrid": [
     [
-      null,
-      null,
-      null,
-      null
+      [
+        "Jurassic Park"
+      ],
+      [
+        "Gambit",
+        "Red Pill"
+      ],
+      [
+        "Rush",
+        "Wayne Gretzky"
+      ],
+      [
+        "Angel"
+      ]
     ],
     [
-      null,
-      null,
-      null,
-      null
+      [
+        "Anchiornis",
+        "Archaeopteryx"
+      ],
+      [
+        "Cardinal",
+        "Phoenix"
+      ],
+      [
+        "Drake"
+      ],
+      [
+        "Albatross",
+        "Swan"
+      ]
     ],
     [
-      null,
-      null,
-      null,
-      null
+      [
+        "Pine"
+      ],
+      [
+        "Red Wine"
+      ],
+      [
+        "Ice Wine"
+      ],
+      [
+        "White Wine"
+      ]
     ],
     [
-      null,
-      null,
-      null,
-      null
+      [
+        "Crayfish",
+        "Shrimp"
+      ],
+      [
+        "Apple",
+        "Barszcz",
+        "Bolognese",
+        "Borscht",
+        "Ketchup",
+        "Marinara",
+        "Red Curry",
+        "Red Velvet",
+        "Salsa",
+        "Sriracha",
+        "Tomato"
+      ],
+      [
+        "All Dressed Chips",
+        "Bannock",
+        "Beaver Tail",
+        "Butter Tart",
+        "Coffee Crisp",
+        "Hawaiian Pizza",
+        "Ketchup Chips",
+        "Kraft Dinner",
+        "Montreal Bagel",
+        "Montreal Smoked Meat",
+        "Nanaimo Bar",
+        "Pouding Chomeur",
+        "Smarties",
+        "Split Pea Soup",
+        "Tarte au Sucre",
+        "Tourtiere"
+      ],
+      [
+        "Aioli",
+        "Alfredo",
+        "Bechamel",
+        "Carbonara",
+        "Egg",
+        "Mayo",
+        "Milk",
+        "Ranch",
+        "Veloute"
+      ]
     ]
   ],
-  "usedWords": [],
-  "currentRow": 0,
+  "chosen": [
+    [
+      "Jurassic Park",
+      "Red Pill",
+      "Wayne Gretzky",
+      "Angel"
+    ],
+    [
+      "Archaeopteryx",
+      "Cardinal",
+      "Drake",
+      "Swan"
+    ],
+    [
+      "Pine",
+      "Red Wine",
+      "Ice Wine",
+      "White Wine"
+    ],
+    [
+      "Shrimp",
+      "Tomato",
+      "Butter Tart",
+      "Alfredo"
+    ]
+  ],
+  "usedWords": [
+    "Jurassic Park",
+    "Red Pill",
+    "Wayne Gretzky",
+    "Angel",
+    "Archaeopteryx",
+    "Cardinal",
+    "Drake",
+    "Swan",
+    "Pine",
+    "Red Wine",
+    "Ice Wine",
+    "White Wine",
+    "Shrimp",
+    "Tomato",
+    "Butter Tart",
+    "Alfredo"
+  ],
+  "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
@@ -788,5 +925,5 @@
       "finalScore": -9.24724151005134
     }
   ],
-  "message": "Solve-and-curate complete. Found 41876 candidates; rejected 317 for similarity>=0.625; showing 30 diversified options (highest final score first, then minimal category overlap). Use: node ai_curator.js select <index> to review."
+  "message": "Puzzle saved successfully!"
 }
