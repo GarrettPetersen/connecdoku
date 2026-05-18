@@ -1,10 +1,17 @@
 {
   "name": "connecdoku",
   "version": "1.0.0",
+  "description": "Play the daily Connecdoku puzzle from your terminal.",
+  "license": "UNLICENSED",
   "type": "module",
   "bin": {
     "connecdoku": "./terminal_play_cli.js"
   },
+  "files": [
+    "terminal_play_cli.js",
+    "TERMINAL_API.md",
+    "README.me"
+  ],
   "scripts": {
     "build": "npm run generate:social-preview",
     "generate:social-preview": "node generate_social_preview.js",
