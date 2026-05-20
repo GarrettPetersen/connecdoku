@@ -29,6 +29,11 @@ MODELS=(
   "Haiku 4.5|haiku-4.5|AI_PASS_HAIKU_4_5"
   "Composer 2|composer-2|AI_PASS_COMPOSER_2"
   "Composer 2.5|composer-2.5|AI_PASS_COMPOSER_2_5"
+  "Gemini 3.1 Pro|gemini-3.1-pro|AI_PASS_GEMINI_3_1_PRO"
+  "Gemini 3.5 Flash|gemini-3.5-flash|AI_PASS_GEMINI_3_5_FLASH"
+  "Grok 4.3|grok-4.3|AI_PASS_GROK_4_3"
+  "Kimi K2.5|kimi-k2.5|AI_PASS_KIMI_K2_5"
+  "Codex 5.1 Max|codex-5.1-max|AI_PASS_CODEX_5_1_MAX"
 )
 
 missing=()
