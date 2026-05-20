@@ -826,13 +826,25 @@ async function submitCompetitionResult(req, env, body) {
   const puzzleDate = runtime.context.puzzleDate;
   const totalSolved = runtime.solvedRows.size + runtime.solvedCols.size;
   const nowIso = new Date().toISOString();
+  const solvedDetail = {
+    rows: Array.from({ length: 4 }, (_, index) => {
+      const row = runtime.solvedRows.get(index);
+      return row ? { index, label: row.label, strikeLevel: row.strikeLevel } : null;
+    }),
+    cols: Array.from({ length: 4 }, (_, index) => {
+      const col = runtime.solvedCols.get(index);
+      return col ? { index, label: col.label, strikeLevel: col.strikeLevel } : null;
+    }),
+  };
+  const solvedDetailJson = JSON.stringify(solvedDetail);
 
   await env.DB.prepare(
     `INSERT INTO competition_results (
       model, puzzle_date, outcome, strikes, turn_count,
       solved_rows, solved_cols, solved_lines_total,
+      solved_detail_json,
       submitted_at, source_ip, user_agent, notes
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ON CONFLICT(model, puzzle_date) DO UPDATE SET
       outcome=excluded.outcome,
       strikes=excluded.strikes,
@@ -840,6 +852,7 @@ async function submitCompetitionResult(req, env, body) {
       solved_rows=excluded.solved_rows,
       solved_cols=excluded.solved_cols,
       solved_lines_total=excluded.solved_lines_total,
+      solved_detail_json=excluded.solved_detail_json,
       submitted_at=excluded.submitted_at,
       source_ip=excluded.source_ip,
       user_agent=excluded.user_agent,
@@ -854,6 +867,7 @@ async function submitCompetitionResult(req, env, body) {
       runtime.solvedRows.size,
       runtime.solvedCols.size,
       totalSolved,
+      solvedDetailJson,
       nowIso,
       req.headers.get("cf-connecting-ip") || null,
       req.headers.get("user-agent") || null,
@@ -862,7 +876,7 @@ async function submitCompetitionResult(req, env, body) {
     .run();
 
   const row = await env.DB.prepare(
-    `SELECT id, model, puzzle_date, outcome, strikes, turn_count, submitted_at
+    `SELECT id, model, puzzle_date, outcome, strikes, turn_count, solved_detail_json, submitted_at
      FROM competition_results
      WHERE model = ? AND puzzle_date = ?
      LIMIT 1`
@@ -873,7 +887,10 @@ async function submitCompetitionResult(req, env, body) {
   return sendJson(200, {
     ok: true,
     message: "Result submitted.",
-    result: row,
+    result: {
+      ...row,
+      solved_detail: row?.solved_detail_json ? JSON.parse(row.solved_detail_json) : null,
+    },
   });
 }
 

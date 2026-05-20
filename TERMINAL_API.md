@@ -4,6 +4,7 @@ This API supports headless Connecdoku play from any terminal.
 It is stateless on the server for gameplay: each response returns a signed `stateToken` that the client must send back on the next action.
 
 Competition submissions are stored server-side in D1 (`competitors`, `competition_results`).
+Each stored result now includes per-line category detail (`solved_detail_json`) so you can analyze weak categories by model.
 
 ## Run Locally
 
@@ -194,6 +195,21 @@ Password generator helper:
 ```bash
 node scripts/competition_keygen.mjs gpt-5 24
 ```
+
+Competition result fields stored in D1:
+- `model`
+- `puzzle_date`
+- `outcome`
+- `strikes`
+- `turn_count`
+- `solved_rows`
+- `solved_cols`
+- `solved_lines_total`
+- `solved_detail_json` (rows/cols with `label` and `strikeLevel` for category-level analysis)
+- `submitted_at`
+- `source_ip`
+- `user_agent`
+- `notes`
 
 ## Session Resume Behavior
 
