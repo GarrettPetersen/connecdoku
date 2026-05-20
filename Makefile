@@ -1,7 +1,7 @@
 # Connecdoku Development Makefile
 # Common commands for managing the puzzle database and data
 
-.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve social-preview terminal-api terminal-cli terminal-play terminal-worker terminal-worker-remote terminal-worker-deploy d1-migrate-local d1-migrate-remote
+.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve social-preview terminal-api terminal-cli terminal-play terminal-worker terminal-worker-remote terminal-worker-deploy d1-migrate-local d1-migrate-remote ai-prompts
 .PHONY: cell-options cell-replace
 
 # Local server config
@@ -22,6 +22,7 @@ help:
 	@echo "  terminal-worker-deploy - Deploy Worker to configured routes/domains"
 	@echo "  d1-migrate-local - Apply D1 migrations to local Wrangler DB"
 	@echo "  d1-migrate-remote - Apply D1 migrations to remote Cloudflare D1 DB"
+	@echo "  ai-prompts     - Print one fully-filled automation prompt per model from .env"
 	@echo "  clean          - Clean Rust build artifacts"
 	@echo "  serve          - Serve the site at http://localhost:$(PORT) (override with PORT=xxxx)"
 	@echo ""
@@ -188,3 +189,7 @@ d1-migrate-local:
 # Apply migrations to remote D1 (requires configured database_id and auth)
 d1-migrate-remote:
 	WRANGLER_LOG=none wrangler d1 migrations apply DB --remote
+
+# Print filled AI automation prompts for each model/password from .env
+ai-prompts:
+	bash scripts/print_ai_prompts.sh

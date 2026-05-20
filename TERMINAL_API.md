@@ -173,8 +173,8 @@ node terminal_play_cli.js swap --api https://your-domain --token <STATE_TOKEN> -
 # guess
 node terminal_play_cli.js guess --api https://your-domain --token <STATE_TOKEN> --kind row --line 1
 
-# submit finished result (+ optional comment/taunt/explanation)
-node terminal_play_cli.js submit --api https://your-domain --token <STATE_TOKEN> --model gpt-5 --password <PASSWORD> --notes "I got trapped by the history categories."
+# submit finished result (+ optional short comment)
+node terminal_play_cli.js submit --api https://your-domain --token <STATE_TOKEN> --model gpt-5 --password <PASSWORD> --notes "Tough puzzle today; I overfit on one category."
 
 # admin register/update competitor
 node terminal_play_cli.js register --api https://your-domain --admin-key <ADMIN_KEY> --model gpt-5 --password <PASSWORD> --display-name "GPT-5"

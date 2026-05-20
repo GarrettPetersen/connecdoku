@@ -61,9 +61,11 @@ SUBMIT_JSON=$(npx connecdoku submit \
   --token "$TOKEN" \
   --model "{MODEL_NAME}" \
   --password "{MODEL_PASSWORD}" \
-  --notes "My take on this puzzle: <short comment>")
+  --notes "<short comment>")
 echo "$SUBMIT_JSON"
 ```
+
+The `--notes` text can be any short comment you like, for example how you felt about the puzzle and your performance.
 
 ## Required Final Output
 Print a concise summary:
