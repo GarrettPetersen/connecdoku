@@ -375,7 +375,7 @@ function printStats() {
 }
 
 function printHelp() {
-  console.log(`\nCommands:\n  swap r1 c1 r2 c2     Swap two tiles\n  guess row i          Guess row i (0..3)\n  guess col i          Guess column i (0..3)\n  state                Refresh and print board\n  rules                Show basic gameplay rules\n  token                Print current state token\n  stats                Show local streak stats\n  submit MODEL PASS    Submit finished result to competition API\n  leaderboard [N]      Show competition leaderboard (default 20)\n  next                 Load next daily puzzle if available (after local midnight)\n  help                 Show commands\n  quit                 Exit\n`);
+  console.log(`\nCommands:\n  swap r1 c1 r2 c2             Swap two tiles\n  guess row i                  Guess row i (0..3)\n  guess col i                  Guess column i (0..3)\n  state                        Refresh and print board\n  rules                        Show basic gameplay rules\n  token                        Print current state token\n  stats                        Show local streak stats\n  submit MODEL PASS [COMMENT]  Submit finished result (+ optional comment)\n  leaderboard [N]              Show competition leaderboard (default 20)\n  next                         Load next daily puzzle if available (after local midnight)\n  help                         Show commands\n  quit                         Exit\n`);
 }
 
 function printRulesOverview() {
@@ -484,7 +484,7 @@ async function runOneShot() {
     if (!token) throw new Error("submit requires --token");
     const model = String(flag("model", "")).trim();
     const password = String(flag("password", "")).trim();
-    const notes = String(flag("notes", "")).trim();
+    const notes = String(flag("notes", flag("note", flag("comment", "")))).trim();
     if (!model) throw new Error("submit requires --model");
     if (!password) throw new Error("submit requires --password");
 
@@ -510,7 +510,7 @@ async function runOneShot() {
 }
 
 if (hasFlag("help") || hasFlag("h")) {
-  console.log(`Usage:\n  Interactive:\n    node terminal_play_cli.js [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n\n  One-shot (AI/script-friendly):\n    node terminal_play_cli.js start [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n    node terminal_play_cli.js state --api URL --token <STATE_TOKEN>\n    node terminal_play_cli.js swap --api URL --token <STATE_TOKEN> --a r,c --b r,c\n    node terminal_play_cli.js guess --api URL --token <STATE_TOKEN> --kind row|col --line N\n    node terminal_play_cli.js submit --api URL --token <STATE_TOKEN> --model <MODEL_ID> --password <PASSWORD>\n    node terminal_play_cli.js register --api URL --admin-key <ADMIN_KEY> --model <MODEL_ID> --password <PASSWORD> [--display-name NAME]\n    node terminal_play_cli.js leaderboard [--api URL] [--limit 50]\n    node terminal_play_cli.js stats\n\nExamples:\n  node terminal_play_cli.js --api https://example.com\n  node terminal_play_cli.js start --api https://example.com --date 2026-05-18\n  node terminal_play_cli.js guess --api https://example.com --token TOKEN --kind row --line 1\n`);
+  console.log(`Usage:\n  Interactive:\n    node terminal_play_cli.js [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n\n  One-shot (AI/script-friendly):\n    node terminal_play_cli.js start [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n    node terminal_play_cli.js state --api URL --token <STATE_TOKEN>\n    node terminal_play_cli.js swap --api URL --token <STATE_TOKEN> --a r,c --b r,c\n    node terminal_play_cli.js guess --api URL --token <STATE_TOKEN> --kind row|col --line N\n    node terminal_play_cli.js submit --api URL --token <STATE_TOKEN> --model <MODEL_ID> --password <PASSWORD> [--notes \"...\"]\n    node terminal_play_cli.js register --api URL --admin-key <ADMIN_KEY> --model <MODEL_ID> --password <PASSWORD> [--display-name NAME]\n    node terminal_play_cli.js leaderboard [--api URL] [--limit 50]\n    node terminal_play_cli.js stats\n\nExamples:\n  node terminal_play_cli.js --api https://example.com\n  node terminal_play_cli.js start --api https://example.com --date 2026-05-18\n  node terminal_play_cli.js guess --api https://example.com --token TOKEN --kind row --line 1\n`);
   process.exit(0);
 }
 
@@ -587,15 +587,17 @@ if (COMMAND !== "play") {
   }
 
   async function doSubmit(parts) {
-    if (parts.length < 3) throw new Error("Usage: submit MODEL PASSWORD");
+    if (parts.length < 3) throw new Error("Usage: submit MODEL PASSWORD [COMMENT...]");
     const model = String(parts[1] || "").trim();
     const password = String(parts[2] || "").trim();
-    if (!model || !password) throw new Error("Usage: submit MODEL PASSWORD");
+    if (!model || !password) throw new Error("Usage: submit MODEL PASSWORD [COMMENT...]");
+    const notes = parts.length > 3 ? parts.slice(3).join(" ").trim() : "";
 
     const resp = await api("/api/v1/competition/submit", {
       stateToken,
       model,
       password,
+      notes: notes || undefined,
     });
     console.log(`Submitted: ${resp?.result?.model || model} ${resp?.result?.puzzle_date || ""}`.trim());
   }

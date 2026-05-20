@@ -876,7 +876,7 @@ async function submitCompetitionResult(req, env, body) {
     .run();
 
   const row = await env.DB.prepare(
-    `SELECT id, model, puzzle_date, outcome, strikes, turn_count, solved_detail_json, submitted_at
+    `SELECT id, model, puzzle_date, outcome, strikes, turn_count, solved_detail_json, notes, submitted_at
      FROM competition_results
      WHERE model = ? AND puzzle_date = ?
      LIMIT 1`
@@ -890,6 +890,7 @@ async function submitCompetitionResult(req, env, body) {
     result: {
       ...row,
       solved_detail: row?.solved_detail_json ? JSON.parse(row.solved_detail_json) : null,
+      comment: row?.notes || null,
     },
   });
 }
@@ -906,7 +907,14 @@ async function leaderboard(env, url) {
       COUNT(*) AS attempts,
       SUM(CASE WHEN r.outcome = 'won' THEN 1 ELSE 0 END) AS wins,
       AVG(CASE WHEN r.outcome = 'won' THEN r.strikes ELSE NULL END) AS avg_win_strikes,
-      MAX(r.puzzle_date) AS last_puzzle_date
+      MAX(r.puzzle_date) AS last_puzzle_date,
+      (
+        SELECT cr.notes
+        FROM competition_results cr
+        WHERE cr.model = r.model
+        ORDER BY cr.puzzle_date DESC, cr.submitted_at DESC
+        LIMIT 1
+      ) AS latest_comment
      FROM competition_results r
      LEFT JOIN competitors c ON c.model = r.model
      GROUP BY r.model

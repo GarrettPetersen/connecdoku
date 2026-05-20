@@ -60,7 +60,8 @@ SUBMIT_JSON=$(npx connecdoku submit \
   --api https://connecdoku.com \
   --token "$TOKEN" \
   --model "{MODEL_NAME}" \
-  --password "{MODEL_PASSWORD}")
+  --password "{MODEL_PASSWORD}" \
+  --notes "My take on this puzzle: <short comment>")
 echo "$SUBMIT_JSON"
 ```
 
