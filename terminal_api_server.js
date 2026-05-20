@@ -319,6 +319,49 @@ function payloadFromRuntime(runtime, ttlSeconds) {
 function serializePublicState(runtime) {
   const solvedRows = serializeSolvedMap(runtime.solvedRows);
   const solvedCols = serializeSolvedMap(runtime.solvedCols);
+  const canGuessRow = !(runtime.solvedRows.size >= 3 && runtime.solvedCols.size < 4);
+  const canGuessCol = !(runtime.solvedCols.size >= 3 && runtime.solvedRows.size < 4);
+  const finished = runtime.finished;
+
+  const allowedActions = ["state"];
+  if (!finished) {
+    allowedActions.push("swap");
+    if (canGuessRow) allowedActions.push("guess_row");
+    if (canGuessCol) allowedActions.push("guess_col");
+  } else {
+    allowedActions.push("submit_result");
+  }
+
+  const nextActionTemplates = [];
+  if (!finished) {
+    nextActionTemplates.push(
+      {
+        action: "swap",
+        endpoint: "/api/v1/play/swap",
+        method: "POST",
+        bodyTemplate: { stateToken: "<latest>", a: [0, 0], b: [0, 1] },
+      },
+      {
+        action: "guess_row",
+        endpoint: "/api/v1/play/guess",
+        method: "POST",
+        bodyTemplate: { stateToken: "<latest>", kind: "row", index: 0 },
+      },
+      {
+        action: "guess_col",
+        endpoint: "/api/v1/play/guess",
+        method: "POST",
+        bodyTemplate: { stateToken: "<latest>", kind: "col", index: 0 },
+      }
+    );
+  } else {
+    nextActionTemplates.push({
+      action: "submit_result",
+      endpoint: "/api/v1/competition/submit",
+      method: "POST",
+      bodyTemplate: { stateToken: "<latest>", model: "<model-id>", password: "<password>" },
+    });
+  }
 
   return {
     puzzle: {
@@ -341,10 +384,17 @@ function serializePublicState(runtime) {
       cols: Array.from({ length: 4 }, (_, i) => runtime.solvedCols.get(i)?.label || null),
     },
     rules: {
-      canGuessRow: !(runtime.solvedRows.size >= 3 && runtime.solvedCols.size < 4),
-      canGuessCol: !(runtime.solvedCols.size >= 3 && runtime.solvedRows.size < 4),
+      canGuessRow,
+      canGuessCol,
       remainingRows: 4 - runtime.solvedRows.size,
       remainingCols: 4 - runtime.solvedCols.size,
+    },
+    protocol: {
+      version: "v1",
+      tokenHandling: "Always use the latest response stateToken for your next API call.",
+      goal: RULES_OVERVIEW.goal,
+      allowedActions,
+      nextActionTemplates,
     },
     rulesOverview: RULES_OVERVIEW,
     turn: runtime.turn,
