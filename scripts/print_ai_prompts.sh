@@ -22,6 +22,7 @@ set +a
 MODELS=(
   "GPT-5.5|gpt-5.5|AI_PASS_GPT_5_5"
   "GPT-5.4|gpt-5.4|AI_PASS_GPT_5_4"
+  "GPT-5.4 Nano|gpt-5.4-nano|AI_PASS_GPT_5_4_NANO"
   "GPT-5.3|gpt-5.3|AI_PASS_GPT_5_3"
   "Opus 4.7|opus-4.7|AI_PASS_OPUS_4_7"
   "Opus 4.6|opus-4.6|AI_PASS_OPUS_4_6"
@@ -33,7 +34,6 @@ MODELS=(
   "Gemini 3.5 Flash|gemini-3.5-flash|AI_PASS_GEMINI_3_5_FLASH"
   "Grok 4.3|grok-4.3|AI_PASS_GROK_4_3"
   "Kimi K2.5|kimi-k2.5|AI_PASS_KIMI_K2_5"
-  "Codex 5.1 Max|codex-5.1-max|AI_PASS_CODEX_5_1_MAX"
 )
 
 missing=()
