@@ -1331,10 +1331,13 @@ async function benchmarkData(env, url) {
       SUM(CASE WHEN r.outcome = 'won' THEN 1 ELSE 0 END) AS wins,
       AVG(r.strikes) AS avg_strikes,
       AVG(CASE WHEN r.outcome = 'won' THEN r.strikes ELSE NULL END) AS avg_win_strikes,
-      AVG(r.duration_ms) AS avg_duration_ms,
-      AVG(r.estimated_cost_usd) AS avg_estimated_cost_usd
+      AVG(br.duration_ms) AS avg_duration_ms,
+      AVG(br.estimated_cost_usd) AS avg_estimated_cost_usd
     FROM competition_results r
     LEFT JOIN competitors c ON c.model = r.model
+    LEFT JOIN competition_benchmark_runs br
+      ON br.model = r.model
+      AND br.puzzle_date = r.puzzle_date
     ${whereClause}
     GROUP BY r.model
     ORDER BY avg_strikes ASC, attempts DESC, display_name ASC
