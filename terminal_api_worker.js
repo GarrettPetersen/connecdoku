@@ -4,6 +4,7 @@ const START_DATE = new Date("2025-07-21T00:00:00");
 const MAX_STRIKES = 5;
 const DEFAULT_STATE_TTL_SECONDS = 3600;
 const MAX_STATE_TTL_SECONDS = 86400;
+const DEFAULT_COMPETITION_TOKEN_TTL_SECONDS = 7 * 86400;
 
 const RULES_OVERVIEW = {
   goal: "Find the 8 hidden categories by correctly guessing the 4 members in each of them.",
@@ -336,7 +337,9 @@ function payloadFromRuntime(runtime, ttlSeconds) {
   };
 }
 
-function serializePublicState(runtime) {
+function serializePublicState(runtime, options = {}) {
+  const competitionMode = options.mode === "competition";
+  const competitionToken = typeof options.competitionToken === "string" ? options.competitionToken : null;
   const solvedRows = serializeSolvedMap(runtime.solvedRows);
   const solvedCols = serializeSolvedMap(runtime.solvedCols);
   const canGuessRow = !(runtime.solvedRows.size >= 3 && runtime.solvedCols.size < 4);
@@ -357,29 +360,37 @@ function serializePublicState(runtime) {
     nextActionTemplates.push(
       {
         action: "swap",
-        endpoint: "/api/v1/play/swap",
-        method: "POST",
-        bodyTemplate: { stateToken: "<latest>", a: [0, 0], b: [0, 1] },
-      },
-      {
-        action: "guess_row",
-        endpoint: "/api/v1/play/guess",
-        method: "POST",
-        bodyTemplate: { stateToken: "<latest>", kind: "row", index: 0 },
-      },
-      {
-        action: "guess_col",
-        endpoint: "/api/v1/play/guess",
-        method: "POST",
-        bodyTemplate: { stateToken: "<latest>", kind: "col", index: 0 },
-      }
-    );
+      endpoint: competitionMode ? "/api/v1/competition/swap" : "/api/v1/play/swap",
+      method: "POST",
+      bodyTemplate: competitionMode
+        ? { competitionToken: "<competition-token>", a: [0, 0], b: [0, 1] }
+        : { stateToken: "<latest>", a: [0, 0], b: [0, 1] },
+    },
+    {
+      action: "guess_row",
+      endpoint: competitionMode ? "/api/v1/competition/guess" : "/api/v1/play/guess",
+      method: "POST",
+      bodyTemplate: competitionMode
+        ? { competitionToken: "<competition-token>", kind: "row", index: 0 }
+        : { stateToken: "<latest>", kind: "row", index: 0 },
+    },
+    {
+      action: "guess_col",
+      endpoint: competitionMode ? "/api/v1/competition/guess" : "/api/v1/play/guess",
+      method: "POST",
+      bodyTemplate: competitionMode
+        ? { competitionToken: "<competition-token>", kind: "col", index: 0 }
+        : { stateToken: "<latest>", kind: "col", index: 0 },
+    }
+  );
   } else {
     nextActionTemplates.push({
       action: "submit_result",
       endpoint: "/api/v1/competition/submit",
       method: "POST",
-      bodyTemplate: { stateToken: "<latest>", model: "<model-id>", password: "<password>" },
+      bodyTemplate: competitionMode
+        ? { competitionToken: "<competition-token>" }
+        : { stateToken: "<latest>", model: "<model-id>", password: "<password>" },
     });
   }
 
@@ -411,11 +422,19 @@ function serializePublicState(runtime) {
     },
     protocol: {
       version: "v1",
-      tokenHandling: "Always use the latest response stateToken for your next API call.",
+      tokenHandling: competitionMode
+        ? "Use competitionToken for all competition endpoints; stateToken is informational."
+        : "Always use the latest response stateToken for your next API call.",
       goal: RULES_OVERVIEW.goal,
       allowedActions,
       nextActionTemplates,
     },
+    competition: competitionMode
+      ? {
+          mode: true,
+          token: competitionToken,
+        }
+      : null,
     rulesOverview: RULES_OVERVIEW,
     turn: runtime.turn,
   };
@@ -722,6 +741,15 @@ async function tokenResponse(runtime, env, ttlSeconds) {
   };
 }
 
+async function tokenResponseWithMode(runtime, env, ttlSeconds, options = {}) {
+  const payload = payloadFromRuntime(runtime, ttlSeconds);
+  const token = await encodeStateToken(payload, tokenSecret(env));
+  return {
+    stateToken: token,
+    state: serializePublicState(runtime, options),
+  };
+}
+
 function bearerToken(req) {
   const h = req.headers.get("authorization") || "";
   const m = h.match(/^Bearer\s+(.+)$/i);
@@ -795,25 +823,322 @@ async function verifyCompetitor(env, model, password) {
   return { ok: true, competitor: row };
 }
 
-async function submitCompetitionResult(req, env, body) {
+function competitionTokenTtlSeconds(env) {
+  return envNum(env, "COMPETITION_TOKEN_TTL_SECONDS", DEFAULT_COMPETITION_TOKEN_TTL_SECONDS);
+}
+
+async function issueCompetitionToken(env, model, puzzleDate) {
+  const now = Math.floor(Date.now() / 1000);
+  const ttl = Math.max(300, Math.min(30 * 86400, competitionTokenTtlSeconds(env)));
+  return encodeStateToken(
+    {
+      v: 1,
+      type: "competition",
+      model,
+      puzzleDate,
+      iat: now,
+      exp: now + ttl,
+    },
+    tokenSecret(env)
+  );
+}
+
+async function decodeCompetitionToken(env, token) {
+  const payload = await decodeStateToken(token, tokenSecret(env));
+  if (!payload || payload.type !== "competition") {
+    throw new Error("Invalid competition token.");
+  }
+  if (typeof payload.model !== "string" || typeof payload.puzzleDate !== "string") {
+    throw new Error("Invalid competition token payload.");
+  }
+  return payload;
+}
+
+function snapshotFromRuntime(runtime) {
+  return {
+    dayIndex: runtime.context.dayIndex,
+    dataIndex: runtime.context.dataIndex,
+    puzzleDate: runtime.context.puzzleDate,
+    board: copyGrid(runtime.grid),
+    strikes: runtime.strikes,
+    finished: runtime.finished,
+    outcome: runtime.outcome,
+    solvedRows: serializeSolvedMap(runtime.solvedRows),
+    solvedCols: serializeSolvedMap(runtime.solvedCols),
+    turn: runtime.turn,
+    seed: runtime.seed,
+  };
+}
+
+function runtimeFromSnapshot(snapshot) {
+  const runtime = runtimeFromPayload(snapshot);
+  if (!validateBoardWords(runtime)) throw new Error("Invalid stored attempt board.");
+  return runtime;
+}
+
+function attemptFieldsFromRuntime(runtime) {
+  return {
+    finished: runtime.finished ? 1 : 0,
+    outcome: runtime.outcome || null,
+    strikes: runtime.strikes,
+    turnCount: runtime.turn,
+  };
+}
+
+async function getCompetitionAttempt(env, model, puzzleDate) {
+  return env.DB.prepare(
+    `SELECT
+      model, puzzle_date, runtime_json, finished, outcome, strikes, turn_count,
+      started_at, updated_at, submitted_at
+     FROM competition_attempts
+     WHERE model = ? AND puzzle_date = ?
+     LIMIT 1`
+  )
+    .bind(model, puzzleDate)
+    .first();
+}
+
+async function upsertCompetitionAttempt(env, model, puzzleDate, runtime, metadata = {}) {
+  const nowIso = new Date().toISOString();
+  const fields = attemptFieldsFromRuntime(runtime);
+  const runtimeJson = JSON.stringify(snapshotFromRuntime(runtime));
+  const startedAt = metadata.startedAt || nowIso;
+  const submittedAt = runtime.finished ? (metadata.submittedAt || nowIso) : null;
+
+  await env.DB.prepare(
+    `INSERT INTO competition_attempts (
+      model, puzzle_date, runtime_json, finished, outcome, strikes, turn_count,
+      started_at, updated_at, submitted_at, source_ip, user_agent
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(model, puzzle_date) DO UPDATE SET
+      runtime_json=excluded.runtime_json,
+      finished=excluded.finished,
+      outcome=excluded.outcome,
+      strikes=excluded.strikes,
+      turn_count=excluded.turn_count,
+      updated_at=excluded.updated_at,
+      submitted_at=COALESCE(excluded.submitted_at, competition_attempts.submitted_at),
+      source_ip=COALESCE(excluded.source_ip, competition_attempts.source_ip),
+      user_agent=COALESCE(excluded.user_agent, competition_attempts.user_agent)`
+  )
+    .bind(
+      model,
+      puzzleDate,
+      runtimeJson,
+      fields.finished,
+      fields.outcome,
+      fields.strikes,
+      fields.turnCount,
+      startedAt,
+      nowIso,
+      submittedAt,
+      metadata.sourceIp || null,
+      metadata.userAgent || null
+    )
+    .run();
+}
+
+async function loadCompetitionRuntime(env, competitionToken) {
+  const payload = await decodeCompetitionToken(env, competitionToken);
+  const row = await getCompetitionAttempt(env, payload.model, payload.puzzleDate);
+  if (!row) throw new Error("No locked attempt found for this model and date. Start with /api/v1/competition/start.");
+
+  let snapshot;
+  try {
+    snapshot = JSON.parse(row.runtime_json);
+  } catch {
+    throw new Error("Stored attempt payload is invalid.");
+  }
+
+  const runtime = runtimeFromSnapshot(snapshot);
+  if (runtime.context.puzzleDate !== payload.puzzleDate) {
+    throw new Error("Attempt date mismatch.");
+  }
+
+  return { payload, row, runtime };
+}
+
+async function competitionStart(req, env, body) {
   await ensureDb(env);
 
   const verify = await verifyCompetitor(env, body.model, body.password);
   if (!verify.ok) return sendJson(401, { ok: false, error: verify.error });
 
-  let payload;
+  let selection;
   try {
-    payload = await decodeStateToken(body.stateToken, tokenSecret(env));
+    selection = pickPuzzleSelection(body, env);
+  } catch (e) {
+    return sendJson(400, { ok: false, error: e.message });
+  }
+
+  const puzzleDate = selection.date;
+  const model = verify.competitor.model;
+  const existing = await getCompetitionAttempt(env, model, puzzleDate);
+  const competitionToken = await issueCompetitionToken(env, model, puzzleDate);
+  const ttl = envNum(env, "TERMINAL_API_STATE_TTL_SECONDS", DEFAULT_STATE_TTL_SECONDS);
+
+  if (existing) {
+    let snapshot;
+    try {
+      snapshot = JSON.parse(existing.runtime_json);
+    } catch {
+      return sendJson(500, { ok: false, error: "Stored attempt payload is invalid." });
+    }
+
+    let runtime;
+    try {
+      runtime = runtimeFromSnapshot(snapshot);
+    } catch (e) {
+      return sendJson(500, { ok: false, error: e.message });
+    }
+
+    return sendJson(200, {
+      ok: true,
+      message: runtime.finished ? "Attempt already complete; resumed completed attempt." : "Existing attempt resumed.",
+      lockedAttempt: true,
+      model,
+      competitionToken,
+      ...(await tokenResponseWithMode(runtime, env, ttl, { mode: "competition", competitionToken })),
+      attempt: {
+        model,
+        puzzleDate,
+        finished: runtime.finished,
+        outcome: runtime.outcome,
+        strikes: runtime.strikes,
+        turnCount: runtime.turn,
+        startedAt: existing.started_at,
+        updatedAt: existing.updated_at,
+        submittedAt: existing.submitted_at || null,
+      },
+    });
+  }
+
+  const context = buildPuzzleContext(selection.dayIndex, selection.dataIndex);
+  const seed = typeof body.seed === "string" && body.seed.length ? body.seed : `${Date.now()}-${Math.random()}`;
+  const shuffled = shuffledWords(flatten(context.puzzle.words), seed);
+  const grid = Array.from({ length: 4 }, (_, r) => Array.from({ length: 4 }, (_, c) => shuffled[r * 4 + c]));
+
+  const runtime = {
+    context,
+    grid,
+    strikes: 0,
+    finished: false,
+    outcome: null,
+    solvedRows: new Map(),
+    solvedCols: new Map(),
+    turn: 0,
+    seed,
+  };
+
+  await upsertCompetitionAttempt(env, model, puzzleDate, runtime, {
+    sourceIp: req.headers.get("cf-connecting-ip") || null,
+    userAgent: req.headers.get("user-agent") || null,
+  });
+
+  const row = await getCompetitionAttempt(env, model, puzzleDate);
+  return sendJson(201, {
+    ok: true,
+    message: "Attempt locked and started.",
+    lockedAttempt: true,
+    model,
+    competitionToken,
+    ...(await tokenResponseWithMode(runtime, env, ttl, { mode: "competition", competitionToken })),
+    attempt: {
+      model,
+      puzzleDate,
+      finished: false,
+      outcome: null,
+      strikes: 0,
+      turnCount: 0,
+      startedAt: row?.started_at || null,
+      updatedAt: row?.updated_at || null,
+      submittedAt: null,
+    },
+  });
+}
+
+async function competitionState(env, body) {
+  const loaded = await loadCompetitionRuntime(env, body.competitionToken);
+  const ttl = envNum(env, "TERMINAL_API_STATE_TTL_SECONDS", DEFAULT_STATE_TTL_SECONDS);
+  return sendJson(200, {
+    ok: true,
+    competitionToken: body.competitionToken,
+    ...(await tokenResponseWithMode(loaded.runtime, env, ttl, { mode: "competition", competitionToken: body.competitionToken })),
+    attempt: {
+      model: loaded.payload.model,
+      puzzleDate: loaded.payload.puzzleDate,
+      finished: !!loaded.runtime.finished,
+      outcome: loaded.runtime.outcome,
+      strikes: loaded.runtime.strikes,
+      turnCount: loaded.runtime.turn,
+      startedAt: loaded.row.started_at,
+      updatedAt: loaded.row.updated_at,
+      submittedAt: loaded.row.submitted_at || null,
+    },
+  });
+}
+
+async function competitionSwap(req, env, body) {
+  const loaded = await loadCompetitionRuntime(env, body.competitionToken);
+  if (loaded.runtime.finished) return sendJson(409, { ok: false, error: "Game is already finished." });
+
+  const result = handleSwap(loaded.runtime, body.a, body.b);
+  if (!result.ok) return sendJson(result.status || 400, result);
+
+  await upsertCompetitionAttempt(env, loaded.payload.model, loaded.payload.puzzleDate, loaded.runtime, {
+    sourceIp: req.headers.get("cf-connecting-ip") || null,
+    userAgent: req.headers.get("user-agent") || null,
+  });
+
+  const ttl = envNum(env, "TERMINAL_API_STATE_TTL_SECONDS", DEFAULT_STATE_TTL_SECONDS);
+  return sendJson(200, {
+    ok: true,
+    result,
+    competitionToken: body.competitionToken,
+    ...(await tokenResponseWithMode(loaded.runtime, env, ttl, { mode: "competition", competitionToken: body.competitionToken })),
+  });
+}
+
+async function competitionGuess(req, env, body) {
+  const loaded = await loadCompetitionRuntime(env, body.competitionToken);
+  if (loaded.runtime.finished) return sendJson(409, { ok: false, error: "Game is already finished." });
+
+  const result = handleGuess(loaded.runtime, body.kind, Number(body.index));
+  if (!result.ok) return sendJson(result.status || 400, result);
+
+  await upsertCompetitionAttempt(env, loaded.payload.model, loaded.payload.puzzleDate, loaded.runtime, {
+    sourceIp: req.headers.get("cf-connecting-ip") || null,
+    userAgent: req.headers.get("user-agent") || null,
+    submittedAt: loaded.runtime.finished ? new Date().toISOString() : null,
+  });
+
+  const ttl = envNum(env, "TERMINAL_API_STATE_TTL_SECONDS", DEFAULT_STATE_TTL_SECONDS);
+  return sendJson(200, {
+    ok: true,
+    result,
+    competitionToken: body.competitionToken,
+    ...(await tokenResponseWithMode(loaded.runtime, env, ttl, { mode: "competition", competitionToken: body.competitionToken })),
+  });
+}
+
+async function submitCompetitionResult(req, env, body) {
+  await ensureDb(env);
+
+  if (!body || typeof body.competitionToken !== "string" || !body.competitionToken.trim()) {
+    return sendJson(400, {
+      ok: false,
+      error: "competitionToken is required. Start with /api/v1/competition/start using model+password.",
+    });
+  }
+
+  let loaded;
+  try {
+    loaded = await loadCompetitionRuntime(env, body.competitionToken);
   } catch (e) {
     return sendJson(401, { ok: false, error: e.message });
   }
 
-  let runtime;
-  try {
-    runtime = runtimeFromPayload(payload);
-  } catch (e) {
-    return sendJson(400, { ok: false, error: e.message });
-  }
+  const runtime = loaded.runtime;
 
   if (!validateBoardWords(runtime)) {
     return sendJson(400, { ok: false, error: "Invalid board word set." });
@@ -859,7 +1184,7 @@ async function submitCompetitionResult(req, env, body) {
       notes=excluded.notes`
   )
     .bind(
-      verify.competitor.model,
+      loaded.payload.model,
       puzzleDate,
       runtime.outcome,
       runtime.strikes,
@@ -881,8 +1206,14 @@ async function submitCompetitionResult(req, env, body) {
      WHERE model = ? AND puzzle_date = ?
      LIMIT 1`
   )
-    .bind(verify.competitor.model, puzzleDate)
+    .bind(loaded.payload.model, puzzleDate)
     .first();
+
+  await upsertCompetitionAttempt(env, loaded.payload.model, puzzleDate, runtime, {
+    sourceIp: req.headers.get("cf-connecting-ip") || null,
+    userAgent: req.headers.get("user-agent") || null,
+    submittedAt: nowIso,
+  });
 
   return sendJson(200, {
     ok: true,
@@ -1049,7 +1380,8 @@ async function routeRequest(req, env) {
         ok: true,
         service: "connecdoku-terminal-api-worker",
         puzzles: puzzles.length,
-        stateless: true,
+        statelessPlay: true,
+        competitionStateful: true,
         now: new Date().toISOString(),
       });
     }
@@ -1164,6 +1496,47 @@ async function routeRequest(req, env) {
       }
     }
 
+    if (method === "POST" && url.pathname === "/api/v1/competition/start") {
+      const body = await parseBody(req);
+      return competitionStart(req, env, body);
+    }
+
+    if (method === "POST" && url.pathname === "/api/v1/competition/state") {
+      const body = await parseBody(req);
+      if (!body || typeof body.competitionToken !== "string") {
+        return sendJson(400, { ok: false, error: "competitionToken is required." });
+      }
+      try {
+        return await competitionState(env, body);
+      } catch (e) {
+        return sendJson(401, { ok: false, error: e.message });
+      }
+    }
+
+    if (method === "POST" && url.pathname === "/api/v1/competition/swap") {
+      const body = await parseBody(req);
+      if (!body || typeof body.competitionToken !== "string") {
+        return sendJson(400, { ok: false, error: "competitionToken is required." });
+      }
+      try {
+        return await competitionSwap(req, env, body);
+      } catch (e) {
+        return sendJson(401, { ok: false, error: e.message });
+      }
+    }
+
+    if (method === "POST" && url.pathname === "/api/v1/competition/guess") {
+      const body = await parseBody(req);
+      if (!body || typeof body.competitionToken !== "string") {
+        return sendJson(400, { ok: false, error: "competitionToken is required." });
+      }
+      try {
+        return await competitionGuess(req, env, body);
+      } catch (e) {
+        return sendJson(401, { ok: false, error: e.message });
+      }
+    }
+
     if (method === "POST" && url.pathname === "/api/v1/competition/submit") {
       const body = await parseBody(req);
       return submitCompetitionResult(req, env, body);
@@ -1198,6 +1571,10 @@ async function routeRequest(req, env) {
         "POST /api/v1/play/swap",
         "POST /api/v1/play/guess",
         "POST /api/v1/competition/register",
+        "POST /api/v1/competition/start",
+        "POST /api/v1/competition/state",
+        "POST /api/v1/competition/swap",
+        "POST /api/v1/competition/guess",
         "POST /api/v1/competition/submit",
         "GET  /api/v1/competition/leaderboard",
         "GET  /api/v1/competition/benchmark",

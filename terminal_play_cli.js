@@ -375,7 +375,7 @@ function printStats() {
 }
 
 function printHelp() {
-  console.log(`\nCommands:\n  swap r1 c1 r2 c2             Swap two tiles\n  guess row i                  Guess row i (0..3)\n  guess col i                  Guess column i (0..3)\n  state                        Refresh and print board\n  rules                        Show basic gameplay rules\n  token                        Print current state token\n  stats                        Show local streak stats\n  submit MODEL PASS [COMMENT]  Submit finished result (+ optional comment)\n  leaderboard [N]              Show competition leaderboard (default 20)\n  next                         Load next daily puzzle if available (after local midnight)\n  help                         Show commands\n  quit                         Exit\n`);
+  console.log(`\nCommands:\n  swap r1 c1 r2 c2               Swap two tiles\n  guess row i                    Guess row i (0..3)\n  guess col i                    Guess column i (0..3)\n  state                          Refresh and print board\n  rules                          Show basic gameplay rules\n  token                          Print current token(s)\n  stats                          Show local streak stats\n  auth MODEL PASS                Lock/resume competition attempt for today (or --date)\n  submit [COMMENT...]            Submit finished result (requires auth/competition mode)\n  leaderboard [N]                Show competition leaderboard (default 20)\n  next                           Load next daily puzzle if available (after local midnight)\n  help                           Show commands\n  quit                           Exit\n`);
 }
 
 function printRulesOverview() {
@@ -415,39 +415,51 @@ async function runOneShot() {
   }
 
   if (COMMAND === "start") {
-    const resp = await api("/api/v1/play/start", startBodyFromFlags(true));
+    const model = String(flag("model", "")).trim();
+    const password = String(flag("password", "")).trim();
+    const startBody = startBodyFromFlags(true);
+    const resp = model || password
+      ? await api("/api/v1/competition/start", { ...startBody, model, password })
+      : await api("/api/v1/play/start", startBody);
     console.log(JSON.stringify(resp, null, 2));
     return;
   }
 
   const token = flag("token", null);
+  const competitionToken = flag("competition-token", null);
 
   if (COMMAND === "state") {
-    if (!token) throw new Error("state requires --token");
-    const resp = await api("/api/v1/play/state", { stateToken: token });
+    if (!token && !competitionToken) throw new Error("state requires --token or --competition-token");
+    const resp = competitionToken
+      ? await api("/api/v1/competition/state", { competitionToken })
+      : await api("/api/v1/play/state", { stateToken: token });
     console.log(JSON.stringify(resp, null, 2));
     return;
   }
 
   if (COMMAND === "swap") {
-    if (!token) throw new Error("swap requires --token");
+    if (!token && !competitionToken) throw new Error("swap requires --token or --competition-token");
     const a = parseCoord(String(flag("a", "")));
     const b = parseCoord(String(flag("b", "")));
     if (!a || !b) throw new Error("swap requires --a r,c --b r,c (0..3)");
-    const resp = await api("/api/v1/play/swap", { stateToken: token, a, b });
+    const resp = competitionToken
+      ? await api("/api/v1/competition/swap", { competitionToken, a, b })
+      : await api("/api/v1/play/swap", { stateToken: token, a, b });
     if (resp?.state?.finished) recordFinishedGame(resp.state);
     console.log(JSON.stringify(resp, null, 2));
     return;
   }
 
   if (COMMAND === "guess") {
-    if (!token) throw new Error("guess requires --token");
+    if (!token && !competitionToken) throw new Error("guess requires --token or --competition-token");
     const kind = String(flag("kind", "")).toLowerCase();
     const line = Number(flag("line", NaN));
     if (kind !== "row" && kind !== "col") throw new Error("guess requires --kind row|col");
     if (!Number.isInteger(line) || line < 0 || line > 3) throw new Error("guess requires --line 0..3");
 
-    const resp = await api("/api/v1/play/guess", { stateToken: token, kind, index: line });
+    const resp = competitionToken
+      ? await api("/api/v1/competition/guess", { competitionToken, kind, index: line })
+      : await api("/api/v1/play/guess", { stateToken: token, kind, index: line });
     if (resp?.state?.finished) recordFinishedGame(resp.state);
     console.log(JSON.stringify(resp, null, 2));
     return;
@@ -481,17 +493,10 @@ async function runOneShot() {
   }
 
   if (COMMAND === "submit") {
-    if (!token) throw new Error("submit requires --token");
-    const model = String(flag("model", "")).trim();
-    const password = String(flag("password", "")).trim();
+    if (!competitionToken) throw new Error("submit requires --competition-token. Start with: start --model ... --password ...");
     const notes = String(flag("notes", flag("note", flag("comment", "")))).trim();
-    if (!model) throw new Error("submit requires --model");
-    if (!password) throw new Error("submit requires --password");
-
     const resp = await api("/api/v1/competition/submit", {
-      stateToken: token,
-      model,
-      password,
+      competitionToken,
       notes: notes || undefined,
     });
     console.log(JSON.stringify(resp, null, 2));
@@ -510,7 +515,7 @@ async function runOneShot() {
 }
 
 if (hasFlag("help") || hasFlag("h")) {
-  console.log(`Usage:\n  Interactive:\n    node terminal_play_cli.js [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n\n  One-shot (AI/script-friendly):\n    node terminal_play_cli.js start [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n    node terminal_play_cli.js state --api URL --token <STATE_TOKEN>\n    node terminal_play_cli.js swap --api URL --token <STATE_TOKEN> --a r,c --b r,c\n    node terminal_play_cli.js guess --api URL --token <STATE_TOKEN> --kind row|col --line N\n    node terminal_play_cli.js submit --api URL --token <STATE_TOKEN> --model <MODEL_ID> --password <PASSWORD> [--notes \"...\"]\n    node terminal_play_cli.js register --api URL --admin-key <ADMIN_KEY> --model <MODEL_ID> --password <PASSWORD> [--display-name NAME]\n    node terminal_play_cli.js leaderboard [--api URL] [--limit 50]\n    node terminal_play_cli.js stats\n\nExamples:\n  node terminal_play_cli.js --api https://example.com\n  node terminal_play_cli.js start --api https://example.com --date 2026-05-18\n  node terminal_play_cli.js guess --api https://example.com --token TOKEN --kind row --line 1\n`);
+  console.log(`Usage:\n  Interactive:\n    node terminal_play_cli.js [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n\n  One-shot (AI/script-friendly):\n    node terminal_play_cli.js start [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n    node terminal_play_cli.js start --api URL --model <MODEL_ID> --password <PASSWORD> [--date YYYY-MM-DD]\n    node terminal_play_cli.js state --api URL --token <STATE_TOKEN>\n    node terminal_play_cli.js state --api URL --competition-token <COMP_TOKEN>\n    node terminal_play_cli.js swap --api URL --competition-token <COMP_TOKEN> --a r,c --b r,c\n    node terminal_play_cli.js guess --api URL --competition-token <COMP_TOKEN> --kind row|col --line N\n    node terminal_play_cli.js submit --api URL --competition-token <COMP_TOKEN> [--notes \"...\"]\n    node terminal_play_cli.js register --api URL --admin-key <ADMIN_KEY> --model <MODEL_ID> --password <PASSWORD> [--display-name NAME]\n    node terminal_play_cli.js leaderboard [--api URL] [--limit 50]\n    node terminal_play_cli.js stats\n\nExamples:\n  node terminal_play_cli.js start --api https://example.com --model gpt-5.5 --password secret\n  node terminal_play_cli.js guess --api https://example.com --competition-token COMP --kind row --line 1\n`);
   process.exit(0);
 }
 
@@ -521,6 +526,7 @@ if (COMMAND !== "play") {
   });
 } else {
   let stateToken = null;
+  let competitionToken = null;
   let state = null;
 
   function persistSession() {
@@ -529,8 +535,11 @@ if (COMMAND !== "play") {
   }
 
   async function refreshState() {
-    const resp = await api("/api/v1/play/state", { stateToken });
+    const resp = competitionToken
+      ? await api("/api/v1/competition/state", { competitionToken })
+      : await api("/api/v1/play/state", { stateToken });
     stateToken = resp.stateToken;
+    competitionToken = resp.competitionToken || competitionToken || resp?.state?.competition?.token || null;
     state = resp.state;
     persistSession();
     return state;
@@ -540,8 +549,25 @@ if (COMMAND !== "play") {
     const body = bodyOverride || startBodyFromFlags(true);
     const resp = await api("/api/v1/play/start", body);
     stateToken = resp.stateToken;
+    competitionToken = null;
     state = resp.state;
     persistSession();
+    printBoard(state);
+  }
+
+  async function authCompetition(model, password, bodyOverride = null) {
+    if (!model || !password) throw new Error("Usage: auth MODEL PASS");
+    const body = bodyOverride || startBodyFromFlags(true);
+    const resp = await api("/api/v1/competition/start", {
+      ...body,
+      model,
+      password,
+    });
+    competitionToken = resp.competitionToken || resp?.state?.competition?.token || null;
+    stateToken = resp.stateToken;
+    state = resp.state;
+    persistSession();
+    console.log(resp.message || "Competition attempt locked.");
     printBoard(state);
   }
 
@@ -553,12 +579,19 @@ if (COMMAND !== "play") {
     }
 
     const [r1, c1, r2, c2] = nums;
-    const resp = await api("/api/v1/play/swap", {
-      stateToken,
-      a: [r1, c1],
-      b: [r2, c2],
-    });
+    const resp = competitionToken
+      ? await api("/api/v1/competition/swap", {
+          competitionToken,
+          a: [r1, c1],
+          b: [r2, c2],
+        })
+      : await api("/api/v1/play/swap", {
+          stateToken,
+          a: [r1, c1],
+          b: [r2, c2],
+        });
     stateToken = resp.stateToken;
+    competitionToken = resp.competitionToken || competitionToken || resp?.state?.competition?.token || null;
     state = resp.state;
     persistSession();
     console.log(resp.result.changed ? "Swap applied." : "No-op swap.");
@@ -572,8 +605,11 @@ if (COMMAND !== "play") {
     if (kind !== "row" && kind !== "col") throw new Error("kind must be row or col");
     if (!Number.isInteger(index) || index < 0 || index > 3) throw new Error("index must be 0..3");
 
-    const resp = await api("/api/v1/play/guess", { stateToken, kind, index });
+    const resp = competitionToken
+      ? await api("/api/v1/competition/guess", { competitionToken, kind, index })
+      : await api("/api/v1/play/guess", { stateToken, kind, index });
     stateToken = resp.stateToken;
+    competitionToken = resp.competitionToken || competitionToken || resp?.state?.competition?.token || null;
     state = resp.state;
     persistSession();
 
@@ -587,19 +623,15 @@ if (COMMAND !== "play") {
   }
 
   async function doSubmit(parts) {
-    if (parts.length < 3) throw new Error("Usage: submit MODEL PASSWORD [COMMENT...]");
-    const model = String(parts[1] || "").trim();
-    const password = String(parts[2] || "").trim();
-    if (!model || !password) throw new Error("Usage: submit MODEL PASSWORD [COMMENT...]");
-    const notes = parts.length > 3 ? parts.slice(3).join(" ").trim() : "";
-
+    if (!competitionToken) {
+      throw new Error("Use 'auth MODEL PASS' first. Submission now requires a locked competition attempt.");
+    }
+    const notes = parts.length > 1 ? parts.slice(1).join(" ").trim() : "";
     const resp = await api("/api/v1/competition/submit", {
-      stateToken,
-      model,
-      password,
+      competitionToken,
       notes: notes || undefined,
     });
-    console.log(`Submitted: ${resp?.result?.model || model} ${resp?.result?.puzzle_date || ""}`.trim());
+    console.log(`Submitted: ${resp?.result?.model || "competition"} ${resp?.result?.puzzle_date || ""}`.trim());
   }
 
   async function doLeaderboard(parts) {
@@ -690,8 +722,12 @@ if (COMMAND !== "play") {
           await doGuess(parts);
         } else if (cmd === "token") {
           console.log(stateToken);
+          if (competitionToken) console.log(`competitionToken=${competitionToken}`);
         } else if (cmd === "stats") {
           printStats();
+        } else if (cmd === "auth") {
+          if (parts.length < 3) throw new Error("Usage: auth MODEL PASS");
+          await authCompetition(String(parts[1]).trim(), String(parts[2]).trim());
         } else if (cmd === "submit") {
           await doSubmit(parts);
         } else if (cmd === "leaderboard") {

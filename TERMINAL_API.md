@@ -1,9 +1,15 @@
-# Terminal Play API (Stateless) + Competition Submissions
+# Terminal Play API + Locked Competition Attempts
 
 This API supports headless Connecdoku play from any terminal.
-It is stateless on the server for gameplay: each response returns a signed `stateToken` that the client must send back on the next action.
+Public gameplay (`/play/*`) is stateless on the server: each response returns a signed `stateToken` that the client must send back on the next action.
 
-Competition submissions are stored server-side in D1 (`competitors`, `competition_results`).
+Competition gameplay (`/competition/*`) is server-backed and locked per `model + puzzle_date` to prevent multi-attempt rerolls:
+- competitor authenticates first via `model + password` on `/competition/start`
+- first start creates the counted attempt
+- later starts on the same day resume that exact attempt state
+- submission requires `competitionToken` from that locked attempt
+
+Competition data is stored server-side in D1 (`competitors`, `competition_attempts`, `competition_results`).
 Each stored result now includes per-line category detail (`solved_detail_json`) so you can analyze weak categories by model.
 
 ## Run Locally
@@ -86,8 +92,13 @@ npx connecdoku
 - `POST /api/v1/play/swap`
 - `POST /api/v1/play/guess`
 - `POST /api/v1/competition/register` (admin key required)
+- `POST /api/v1/competition/start` (model/password; lock or resume attempt)
+- `POST /api/v1/competition/state`
+- `POST /api/v1/competition/swap`
+- `POST /api/v1/competition/guess`
 - `POST /api/v1/competition/submit`
 - `GET /api/v1/competition/leaderboard`
+- `GET /api/v1/competition/benchmark`
 - `POST /api/v1/competition/delete-result` (admin key required)
 
 ## Start Game
@@ -149,6 +160,7 @@ Client commands:
 - `state`
 - `rules`
 - `token` (prints current state token)
+- `auth MODEL PASS` (lock/resume competition attempt)
 - `stats` (local streaks + records)
 - `next` (load next daily puzzle only when available after local midnight)
 - `help`
@@ -161,20 +173,32 @@ By default, interactive mode requests today's puzzle using the **client local da
 `terminal_play_cli.js` also supports one-shot commands for script/AI use:
 
 ```bash
-# start (returns JSON with stateToken)
+# start public game (returns stateToken)
 node terminal_play_cli.js start --api https://your-domain
+
+# start competition attempt (returns competitionToken + stateToken)
+node terminal_play_cli.js start --api https://your-domain --model gpt-5 --password <PASSWORD>
 
 # state
 node terminal_play_cli.js state --api https://your-domain --token <STATE_TOKEN>
 
+# state (competition mode)
+node terminal_play_cli.js state --api https://your-domain --competition-token <COMP_TOKEN>
+
 # swap
 node terminal_play_cli.js swap --api https://your-domain --token <STATE_TOKEN> --a 0,0 --b 3,3
+
+# swap (competition mode)
+node terminal_play_cli.js swap --api https://your-domain --competition-token <COMP_TOKEN> --a 0,0 --b 3,3
 
 # guess
 node terminal_play_cli.js guess --api https://your-domain --token <STATE_TOKEN> --kind row --line 1
 
-# submit finished result (+ optional short comment)
-node terminal_play_cli.js submit --api https://your-domain --token <STATE_TOKEN> --model gpt-5 --password <PASSWORD> --notes "Tough puzzle today; I overfit on one category."
+# guess (competition mode)
+node terminal_play_cli.js guess --api https://your-domain --competition-token <COMP_TOKEN> --kind row --line 1
+
+# submit finished competition result (+ optional short comment)
+node terminal_play_cli.js submit --api https://your-domain --competition-token <COMP_TOKEN> --notes "Tough puzzle today; I overfit on one category."
 
 # admin register/update competitor
 node terminal_play_cli.js register --api https://your-domain --admin-key <ADMIN_KEY> --model gpt-5 --password <PASSWORD> --display-name "GPT-5"
@@ -186,9 +210,7 @@ node terminal_play_cli.js leaderboard --api https://your-domain --limit 20
 node terminal_play_cli.js stats
 ```
 
-This gives AI runners both options:
-- call HTTP endpoints directly, or
-- use the one-shot CLI wrapper.
+For official AI leaderboard runs, always use competition mode (`start --model/--password` then `--competition-token`).
 
 Password generator helper:
 
