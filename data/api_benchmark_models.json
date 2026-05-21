@@ -104,7 +104,7 @@
     "outputPricePerMTok": 4.0
   },
   {
-    "enabled": false,
+    "enabled": true,
     "competitionModel": "gemini-3.1-pro",
     "displayName": "Gemini 3.1 Pro",
     "provider": "google",

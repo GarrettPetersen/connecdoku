@@ -292,6 +292,21 @@ function buildNoteRepairPrompt(basePrompt, reason, lastOutput) {
   ].join("\n");
 }
 
+function buildForcedOneSentenceNotePrompt(state, runStats) {
+  return [
+    "Reply with exactly one short sentence only.",
+    "Do not explain instructions. Do not mention prompts, constraints, or the user.",
+    "Comment on your puzzle performance.",
+    "Max 120 characters.",
+    "",
+    `Outcome: ${state?.outcome}`,
+    `Strikes: ${state?.strikes}`,
+    `Turns: ${state?.turn}`,
+    `Correct guesses: ${runStats.gameCorrectGuesses}`,
+    `Incorrect guesses: ${runStats.gameIncorrectGuesses}`,
+  ].join("\n");
+}
+
 function noteLooksLikePromptEcho(note) {
   const s = String(note || "").trim().toLowerCase();
   if (!s) return true;
@@ -307,6 +322,13 @@ function noteLooksLikePromptEcho(note) {
     s.includes("correct guesses:") ||
     s.includes("incorrect guesses:")
   );
+}
+
+function noteLooksUsable(note) {
+  const s = trimText(note || "", NOTE_MAX_CHARS);
+  if (!s) return false;
+  if (s.length < 8) return false;
+  return !noteLooksLikePromptEcho(s);
 }
 
 function buildRepairPrompt(basePrompt, reason, lastOutput) {
@@ -764,10 +786,14 @@ async function runSingleModel(opts, modelCfg) {
         const notePrompt = buildNotePrompt(state, stats);
         let noteText = "";
         let noteOk = false;
-        for (let attempt = 0; attempt < 2; attempt++) {
-          const prompt = attempt === 0
-            ? notePrompt
-            : buildNoteRepairPrompt(notePrompt, "Previous note was prompt echo or otherwise invalid.", noteText);
+        const maxAttempts = modelCfg.provider === "cursor" && /composer/i.test(String(modelCfg.competitionModel || "")) ? 4 : 3;
+        for (let attempt = 0; attempt < maxAttempts; attempt++) {
+          let prompt = notePrompt;
+          if (attempt === 1) {
+            prompt = buildNoteRepairPrompt(notePrompt, "Previous note was prompt echo or otherwise invalid.", noteText);
+          } else if (attempt >= 2) {
+            prompt = buildForcedOneSentenceNotePrompt(state, stats);
+          }
           const noteResp = await runCursorAgentPrompt(modelCfg, prompt, "note", opts.cursor, cursorSession);
           stats.modelApiCalls += 1;
           stats.modelLatencyMsTotal += noteResp.latencyMs;
@@ -784,7 +810,7 @@ async function runSingleModel(opts, modelCfg) {
           if (Number.isFinite(totalTok)) stats.totalTokens += totalTok;
 
           noteText = trimText(noteResp.text, NOTE_MAX_CHARS);
-          if (!noteLooksLikePromptEcho(noteText)) {
+          if (noteLooksUsable(noteText)) {
             noteOk = true;
             break;
           }
@@ -792,7 +818,7 @@ async function runSingleModel(opts, modelCfg) {
         note = noteOk ? noteText : "No comment.";
       } catch (e) {
         stats.modelApiErrors += 1;
-        note = trimText(`I fumbled the commentary step: ${e.message}`, NOTE_MAX_CHARS);
+        note = "No comment.";
       }
     }
 

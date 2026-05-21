@@ -100,6 +100,10 @@ function httpTimeoutMs() {
   return Math.max(5000, Number(process.env.API_BENCH_HTTP_TIMEOUT_MS || HTTP_TIMEOUT_MS_DEFAULT));
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function postJson(url, body, headers = {}, timeoutOverrideMs = null) {
   const started = Date.now();
   const { res, json } = await fetchJsonWithTimeout(url, {
@@ -306,6 +310,21 @@ function buildNoteRepairPrompt(basePrompt, reason, lastOutput) {
   ].join("\n");
 }
 
+function buildForcedOneSentenceNotePrompt(state, runStats) {
+  return [
+    "Reply with exactly one short sentence only.",
+    "Do not explain instructions. Do not mention prompts, constraints, or the user.",
+    "Comment on your puzzle performance.",
+    "Max 120 characters.",
+    "",
+    `Outcome: ${state?.outcome}`,
+    `Strikes: ${state?.strikes}`,
+    `Turns: ${state?.turn}`,
+    `Correct guesses: ${runStats.gameCorrectGuesses}`,
+    `Incorrect guesses: ${runStats.gameIncorrectGuesses}`,
+  ].join("\n");
+}
+
 function noteLooksLikePromptEcho(note) {
   const s = String(note || "").trim().toLowerCase();
   if (!s) return true;
@@ -321,6 +340,13 @@ function noteLooksLikePromptEcho(note) {
     s.includes("correct guesses:") ||
     s.includes("incorrect guesses:")
   );
+}
+
+function noteLooksUsable(note) {
+  const s = trimText(note || "", NOTE_MAX_CHARS);
+  if (!s) return false;
+  if (s.length < 8) return false;
+  return !noteLooksLikePromptEcho(s);
 }
 
 function normalizeAction(obj) {
@@ -453,6 +479,16 @@ function isOpenAiNotChatModel(resp) {
   return resp?.status === 404 && msg.includes("not a chat model");
 }
 
+function parseRetryDelayMs(message, fallbackMs = 65000) {
+  const text = String(message || "");
+  const secMatch = text.match(/retry in\s+([0-9]+(?:\.[0-9]+)?)s/i);
+  if (secMatch) {
+    const sec = Number(secMatch[1]);
+    if (Number.isFinite(sec) && sec > 0) return Math.round(sec * 1000);
+  }
+  return fallbackMs;
+}
+
 async function callProviderModel(cfg, prompt, mode = "action") {
   const provider = cfg.provider;
   const model = cfg.resolvedApiModel;
@@ -572,15 +608,31 @@ async function callProviderModel(cfg, prompt, mode = "action") {
         },
       },
     };
-    const resp = await postJson(endpoint, body);
-    if (!resp.ok) throw new Error(`Google error (${resp.status}): ${resp.json?.error?.message || resp.json?.error || "unknown"}`);
-    const text = resp.json?.candidates?.[0]?.content?.parts?.map((p) => p?.text || "").join("\n") || "";
-    return {
-      text,
-      usage: normalizeUsage("google", resp.json),
-      latencyMs: resp.elapsedMs,
-      providerModel: model,
-    };
+    const maxAttempts = Math.max(1, Number(process.env.GOOGLE_BENCH_MAX_RETRIES || 5));
+    let lastErr = null;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      const resp = await postJson(endpoint, body);
+      if (resp.ok) {
+        const text = resp.json?.candidates?.[0]?.content?.parts?.map((p) => p?.text || "").join("\n") || "";
+        return {
+          text,
+          usage: normalizeUsage("google", resp.json),
+          latencyMs: resp.elapsedMs,
+          providerModel: model,
+        };
+      }
+      const msg = resp.json?.error?.message || resp.json?.error || "unknown";
+      lastErr = `Google error (${resp.status}): ${msg}`;
+      if (resp.status !== 429 || attempt === maxAttempts) {
+        throw new Error(lastErr);
+      }
+      const baseDelay = parseRetryDelayMs(msg, 65000);
+      const jitterMs = Math.floor(Math.random() * 2000);
+      const waitMs = baseDelay + jitterMs;
+      console.log(`Google 429 for ${model}; retry ${attempt}/${maxAttempts} after ${Math.round(waitMs / 1000)}s`);
+      await sleep(waitMs);
+    }
+    throw new Error(lastErr || "Google request failed.");
   }
 
   if (provider === "xai" || provider === "moonshot" || provider === "cursor") {
@@ -772,13 +824,16 @@ async function runSingleModel(opts, modelCfg) {
   let note = "";
   try {
     const notePrompt = buildNotePrompt(state, stats);
-    const noteAttempts = [];
     let noteText = "";
     let noteOk = false;
-    for (let attempt = 0; attempt < 2; attempt++) {
-      const prompt = attempt === 0
-        ? notePrompt
-        : buildNoteRepairPrompt(notePrompt, "Previous note was prompt echo or otherwise invalid.", noteText);
+    const maxAttempts = modelCfg.provider === "moonshot" ? 4 : 3;
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
+      let prompt = notePrompt;
+      if (attempt === 1) {
+        prompt = buildNoteRepairPrompt(notePrompt, "Previous note was prompt echo or otherwise invalid.", noteText);
+      } else if (attempt >= 2) {
+        prompt = buildForcedOneSentenceNotePrompt(state, stats);
+      }
       const noteResp = await callProviderModel(modelCfg, prompt, "note");
       stats.modelApiCalls += 1;
       stats.modelLatencyMsTotal += noteResp.latencyMs;
@@ -787,8 +842,7 @@ async function runSingleModel(opts, modelCfg) {
       stats.outputTokens += Number(noteResp.usage.outputTokens || 0);
       stats.totalTokens += Number(noteResp.usage.totalTokens || 0);
       noteText = trimText(noteResp.text, NOTE_MAX_CHARS);
-      noteAttempts.push(noteText);
-      if (!noteLooksLikePromptEcho(noteText)) {
+      if (noteLooksUsable(noteText)) {
         noteOk = true;
         break;
       }
@@ -796,7 +850,7 @@ async function runSingleModel(opts, modelCfg) {
     note = noteOk ? noteText : "No comment.";
   } catch (e) {
     stats.modelApiErrors += 1;
-    note = trimText(`I fumbled the commentary step: ${e.message}`, NOTE_MAX_CHARS);
+    note = "No comment.";
   }
 
   const submitResp = await postJson(`${apiBase}/api/v1/competition/submit`, {
