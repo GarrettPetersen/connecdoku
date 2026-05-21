@@ -438,6 +438,8 @@ async function waitForCursorAgentFinished(agentId, apiKey, cursorBase, cursorOpt
   const pollMs = Math.max(1000, Number(cursorOpts.pollMs || CURSOR_POLL_MS_DEFAULT));
   const timeoutMs = Math.max(10_000, Number(cursorOpts.timeoutMs || CURSOR_TIMEOUT_MS_DEFAULT));
   const deadline = Date.now() + timeoutMs;
+  let lastStatus = "";
+  let polls = 0;
 
   while (Date.now() < deadline) {
     const s = await cursorApiReq("GET", `/v0/agents/${encodeURIComponent(agentId)}`, null, apiKey, cursorBase);
@@ -446,6 +448,15 @@ async function waitForCursorAgentFinished(agentId, apiKey, cursorBase, cursorOpt
     }
     statusJson = s.json || {};
     const status = String(statusJson?.status || "").toUpperCase();
+    polls += 1;
+    if (status !== lastStatus) {
+      console.log(`Cursor agent ${agentId} status -> ${status || "UNKNOWN"} (${polls} polls)`);
+      lastStatus = status;
+    }
+    if (polls % 12 === 0) {
+      const secsLeft = Math.max(0, Math.round((deadline - Date.now()) / 1000));
+      console.log(`Cursor agent ${agentId} still ${status || "UNKNOWN"}; ~${secsLeft}s until timeout`);
+    }
     if (status === "FINISHED") break;
     if (status === "ERROR" || status === "EXPIRED") {
       throw new Error(`Cursor agent ended with status=${status}. Summary: ${trimText(statusJson?.summary || "", 240)}`);
@@ -490,7 +501,9 @@ async function runCursorAgentPrompt(cfg, prompt, mode, cursorOpts, cursorSession
     const agentId = createResp.json?.id;
     if (!agentId) throw new Error("Cursor create agent response missing id.");
     cursorSession.agentId = agentId;
+    console.log(`Cursor agent created: ${agentId} model=${cfg.resolvedApiModel || "auto"}`);
   } else {
+    console.log(`Cursor agent followup: ${cursorSession.agentId}`);
     const followResp = await cursorApiReq(
       "POST",
       `/v0/agents/${encodeURIComponent(cursorSession.agentId)}/followup`,

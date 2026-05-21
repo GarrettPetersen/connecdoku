@@ -398,11 +398,6 @@ table {
 
   function buildLeaderboard(rows) {
     const filteredRows = rows.filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')));
-    filteredRows.sort((a, b) => {
-      const ai = OFFICIAL_MODEL_ORDER.indexOf(String(a.model || ''));
-      const bi = OFFICIAL_MODEL_ORDER.indexOf(String(b.model || ''));
-      return ai - bi;
-    });
 
     if (!filteredRows.length) {
       leaderboardWrap.innerHTML = '<div class="empty-state">No benchmark results yet.</div>';
