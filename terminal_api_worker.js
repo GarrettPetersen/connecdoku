@@ -1330,7 +1330,9 @@ async function benchmarkData(env, url) {
       COUNT(*) AS attempts,
       SUM(CASE WHEN r.outcome = 'won' THEN 1 ELSE 0 END) AS wins,
       AVG(r.strikes) AS avg_strikes,
-      AVG(CASE WHEN r.outcome = 'won' THEN r.strikes ELSE NULL END) AS avg_win_strikes
+      AVG(CASE WHEN r.outcome = 'won' THEN r.strikes ELSE NULL END) AS avg_win_strikes,
+      AVG(r.duration_ms) AS avg_duration_ms,
+      AVG(r.estimated_cost_usd) AS avg_estimated_cost_usd
     FROM competition_results r
     LEFT JOIN competitors c ON c.model = r.model
     ${whereClause}

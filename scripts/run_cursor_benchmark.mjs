@@ -227,6 +227,8 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
   return [
     "Return exactly ONE JSON object. No markdown. No extra text.",
     "Pick one legal move only.",
+    "The starting board is a random arrangement, so an untouched row or column is unlikely to be correct.",
+    "Expect to use swaps before guessing most rows or columns.",
     "Allowed shapes:",
     '{"action":"guess","kind":"row","index":0}',
     '{"action":"guess","kind":"col","index":1}',
@@ -251,7 +253,8 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
 
 function buildNotePrompt(state, runStats) {
   return [
-    "Write a short post-game note for a public benchmark table.",
+    "Write only the final note text for a public benchmark table.",
+    "Do not explain the task, restate these instructions, or mention the prompt.",
     "Be creative and specific: mention a category insight, a mistake, a surprise, or a boast.",
     "Tone can be witty, reflective, or dramatic.",
     "Constraints: plain text only, <= 220 characters, no newlines.",
@@ -263,6 +266,35 @@ function buildNotePrompt(state, runStats) {
     `Correct guesses: ${runStats.gameCorrectGuesses}`,
     `Incorrect guesses: ${runStats.gameIncorrectGuesses}`,
   ].join("\n");
+}
+
+function buildNoteRepairPrompt(basePrompt, reason, lastOutput) {
+  const details = trimText(lastOutput || "", 240);
+  return [
+    basePrompt,
+    "",
+    "Your previous response was not a valid benchmark note.",
+    `Reason: ${reason}`,
+    details ? `Previous response: ${details}` : "Previous response: (empty)",
+    "Reply with only the final note text, and nothing else.",
+  ].join("\n");
+}
+
+function noteLooksLikePromptEcho(note) {
+  const s = String(note || "").trim().toLowerCase();
+  if (!s) return true;
+  return (
+    s.includes("write only the final note text") ||
+    s.includes("write a short post-game note") ||
+    s.includes("the user wants") ||
+    s.includes("constraints:") ||
+    s.includes("puzzle date:") ||
+    s.includes("outcome:") ||
+    s.includes("strikes:") ||
+    s.includes("turns:") ||
+    s.includes("correct guesses:") ||
+    s.includes("incorrect guesses:")
+  );
 }
 
 function buildRepairPrompt(basePrompt, reason, lastOutput) {
@@ -684,22 +716,34 @@ async function runSingleModel(opts, modelCfg) {
     } else {
       try {
         const notePrompt = buildNotePrompt(state, stats);
-        const noteResp = await runCursorAgentPrompt(modelCfg, notePrompt, "note", opts.cursor, cursorSession);
-        stats.modelApiCalls += 1;
-        stats.modelLatencyMsTotal += noteResp.latencyMs;
-        stats.modelLatencyMsMax = Math.max(stats.modelLatencyMsMax, noteResp.latencyMs);
+        let noteText = "";
+        let noteOk = false;
+        for (let attempt = 0; attempt < 2; attempt++) {
+          const prompt = attempt === 0
+            ? notePrompt
+            : buildNoteRepairPrompt(notePrompt, "Previous note was prompt echo or otherwise invalid.", noteText);
+          const noteResp = await runCursorAgentPrompt(modelCfg, prompt, "note", opts.cursor, cursorSession);
+          stats.modelApiCalls += 1;
+          stats.modelLatencyMsTotal += noteResp.latencyMs;
+          stats.modelLatencyMsMax = Math.max(stats.modelLatencyMsMax, noteResp.latencyMs);
 
-        const inTok = Number(noteResp.usage.inputTokens);
-        const outTok = Number(noteResp.usage.outputTokens);
-        const totalTok = Number(noteResp.usage.totalTokens);
-        if (Number.isFinite(inTok) || Number.isFinite(outTok) || Number.isFinite(totalTok)) {
-          stats.tokenTelemetryAvailable = true;
+          const inTok = Number(noteResp.usage.inputTokens);
+          const outTok = Number(noteResp.usage.outputTokens);
+          const totalTok = Number(noteResp.usage.totalTokens);
+          if (Number.isFinite(inTok) || Number.isFinite(outTok) || Number.isFinite(totalTok)) {
+            stats.tokenTelemetryAvailable = true;
+          }
+          if (Number.isFinite(inTok)) stats.inputTokens += inTok;
+          if (Number.isFinite(outTok)) stats.outputTokens += outTok;
+          if (Number.isFinite(totalTok)) stats.totalTokens += totalTok;
+
+          noteText = trimText(noteResp.text, NOTE_MAX_CHARS);
+          if (!noteLooksLikePromptEcho(noteText)) {
+            noteOk = true;
+            break;
+          }
         }
-        if (Number.isFinite(inTok)) stats.inputTokens += inTok;
-        if (Number.isFinite(outTok)) stats.outputTokens += outTok;
-        if (Number.isFinite(totalTok)) stats.totalTokens += totalTok;
-
-        note = trimText(noteResp.text, NOTE_MAX_CHARS);
+        note = noteOk ? noteText : "No comment.";
       } catch (e) {
         stats.modelApiErrors += 1;
         note = trimText(`I fumbled the commentary step: ${e.message}`, NOTE_MAX_CHARS);

@@ -380,6 +380,22 @@ table {
     return Number.isFinite(n) ? n : null;
   }
 
+  function formatDuration(ms) {
+    const n = Number(ms);
+    if (!Number.isFinite(n) || n < 0) return '—';
+    const totalSeconds = Math.round(n / 1000);
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+    if (minutes <= 0) return `${seconds}s`;
+    return `${minutes}m ${String(seconds).padStart(2, '0')}s`;
+  }
+
+  function formatCost(value) {
+    const n = Number(value);
+    if (!Number.isFinite(n)) return '—';
+    return `$${n.toFixed(4)}`;
+  }
+
   function buildLeaderboard(rows) {
     const filteredRows = rows.filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')));
     filteredRows.sort((a, b) => {
@@ -402,6 +418,8 @@ table {
           <th>#</th>
           <th>Model</th>
           <th>Avg Strikes</th>
+          <th>Avg Time</th>
+          <th>Avg Cost</th>
           <th>Attempts</th>
           <th>Wins</th>
         </tr>
@@ -413,6 +431,8 @@ table {
     filteredRows.forEach((row, idx) => {
       const tr = document.createElement('tr');
       const avg = safeAvg(row.avg_strikes);
+      const avgDuration = formatDuration(row.avg_duration_ms);
+      const avgCost = formatCost(row.avg_estimated_cost_usd);
       const avgText = avg === null ? '—' : avg.toFixed(2);
       const scoreClass = avg === null ? 's5' : strikeClass(Math.round(avg));
 
@@ -420,6 +440,8 @@ table {
         <td>${idx + 1}</td>
         <td>${row.display_name || row.model}</td>
         <td><span class="score-pill ${scoreClass}">${avgText}</span></td>
+        <td>${avgDuration}</td>
+        <td>${avgCost}</td>
         <td>${Number(row.attempts || 0)}</td>
         <td>${Number(row.wins || 0)}</td>
       `;
