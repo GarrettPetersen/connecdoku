@@ -375,6 +375,17 @@ table {
     return 's5';
   }
 
+  function correctGuessClass(correctGuesses) {
+    const n = Number(correctGuesses);
+    if (!Number.isFinite(n)) return 's5';
+    if (n >= 8) return 's0';
+    if (n >= 6) return 's1';
+    if (n >= 4) return 's2';
+    if (n >= 3) return 's3';
+    if (n >= 1) return 's4';
+    return 's5';
+  }
+
   function safeAvg(value) {
     const n = Number(value);
     return Number.isFinite(n) ? n : null;
@@ -413,6 +424,7 @@ table {
           <th>#</th>
           <th>Model</th>
           <th>Avg Strikes</th>
+          <th>Avg Correct</th>
           <th>Avg Time</th>
           <th>Avg Cost</th>
           <th>Attempts</th>
@@ -426,15 +438,19 @@ table {
     filteredRows.forEach((row, idx) => {
       const tr = document.createElement('tr');
       const avg = safeAvg(row.avg_strikes);
+      const avgCorrect = safeAvg(row.avg_correct_guesses);
       const avgDuration = formatDuration(row.avg_duration_ms);
       const avgCost = formatCost(row.avg_estimated_cost_usd);
       const avgText = avg === null ? '—' : avg.toFixed(2);
       const scoreClass = avg === null ? 's5' : strikeClass(Math.round(avg));
+      const correctText = avgCorrect === null ? '—' : avgCorrect.toFixed(2);
+      const correctClass = avgCorrect === null ? 's5' : correctGuessClass(avgCorrect);
 
       tr.innerHTML = `
         <td>${idx + 1}</td>
         <td>${row.display_name || row.model}</td>
         <td><span class="score-pill ${scoreClass}">${avgText}</span></td>
+        <td><span class="score-pill ${correctClass}">${correctText}</span></td>
         <td>${avgDuration}</td>
         <td>${avgCost}</td>
         <td>${Number(row.attempts || 0)}</td>
@@ -534,6 +550,11 @@ table {
           strike.textContent = rec.outcome === 'lost' ? `${rec.strikes}×` : String(rec.strikes);
           cell.appendChild(strike);
 
+          const correct = document.createElement('span');
+          const cg = Number(rec.game_correct_guesses);
+          correct.textContent = Number.isFinite(cg) ? `C${cg}` : 'C—';
+          cell.appendChild(correct);
+
           if (rec.notes && String(rec.notes).trim()) {
             const dot = document.createElement('span');
             dot.className = 'note-dot';
@@ -541,7 +562,7 @@ table {
           }
 
           const note = rec.notes && String(rec.notes).trim() ? String(rec.notes).trim() : 'No comment submitted.';
-          const tip = `${rec.display_name || rec.model}\n${day}\nOutcome: ${rec.outcome}\nStrikes: ${rec.strikes}\nTurns: ${rec.turn_count}\nNote: ${note}`;
+          const tip = `${rec.display_name || rec.model}\n${day}\nOutcome: ${rec.outcome}\nStrikes: ${rec.strikes}\nCorrect guesses: ${Number.isFinite(cg) ? cg : '—'}\nTurns: ${rec.turn_count}\nNote: ${note}`;
           cell.setAttribute('data-tip', tip);
           wireCellTooltip(cell);
 

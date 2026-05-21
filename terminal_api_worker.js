@@ -1296,11 +1296,15 @@ async function benchmarkData(env, url) {
       COALESCE(c.display_name, r.model) AS display_name,
       r.outcome,
       r.strikes,
+      br.game_correct_guesses,
       r.turn_count,
       r.notes,
       r.submitted_at
     FROM competition_results r
     LEFT JOIN competitors c ON c.model = r.model
+    LEFT JOIN competition_benchmark_runs br
+      ON br.model = r.model
+      AND br.puzzle_date = r.puzzle_date
     ${whereClause}
     ORDER BY r.puzzle_date DESC, display_name ASC
   `;
@@ -1330,6 +1334,7 @@ async function benchmarkData(env, url) {
       COUNT(*) AS attempts,
       SUM(CASE WHEN r.outcome = 'won' THEN 1 ELSE 0 END) AS wins,
       AVG(r.strikes) AS avg_strikes,
+      AVG(br.game_correct_guesses) AS avg_correct_guesses,
       AVG(CASE WHEN r.outcome = 'won' THEN r.strikes ELSE NULL END) AS avg_win_strikes,
       AVG(br.duration_ms) AS avg_duration_ms,
       AVG(br.estimated_cost_usd) AS avg_estimated_cost_usd
@@ -1340,7 +1345,7 @@ async function benchmarkData(env, url) {
       AND br.puzzle_date = r.puzzle_date
     ${whereClause}
     GROUP BY r.model
-    ORDER BY avg_strikes ASC, attempts DESC, display_name ASC
+    ORDER BY avg_strikes ASC, avg_correct_guesses DESC, attempts DESC, display_name ASC
   `;
   const leaderboardStmt = env.DB.prepare(leaderboardQuery);
   const leaderboardRows = whereParams.length ? await leaderboardStmt.bind(...whereParams).all() : await leaderboardStmt.all();
