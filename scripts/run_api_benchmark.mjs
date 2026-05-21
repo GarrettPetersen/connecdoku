@@ -400,6 +400,26 @@ function normalizeReasoningLevel(level) {
   return "medium";
 }
 
+function solvedCountFromState(state) {
+  const rows = Array.isArray(state?.solved?.rows) ? state.solved.rows.length : 0;
+  const cols = Array.isArray(state?.solved?.cols) ? state.solved.cols.length : 0;
+  return rows + cols;
+}
+
+function assertFreshCompetitionAttempt(startJson, modelId, date) {
+  const state = startJson?.state || {};
+  const attempt = startJson?.attempt || {};
+  const turnCount = Number(attempt.turnCount ?? state.turn ?? 0);
+  const solvedCount = solvedCountFromState(state);
+  const finished = !!state.finished || !!attempt.finished;
+  if (finished || turnCount !== 0 || solvedCount !== 0) {
+    throw new Error(
+      `Refusing resumed attempt for ${modelId} on ${date}. ` +
+      `Need fresh state (turn=0, solved=0, unfinished), got turn=${turnCount}, solved=${solvedCount}, finished=${finished}.`
+    );
+  }
+}
+
 function geminiThinkingBudgetFor(level) {
   const normalized = normalizeReasoningLevel(level);
   if (normalized === "none") return 0;
@@ -637,6 +657,7 @@ async function runSingleModel(opts, modelCfg) {
   if (!startResp.ok) {
     throw new Error(`start failed: ${startResp.json?.error || startResp.status}`);
   }
+  assertFreshCompetitionAttempt(startResp.json, modelCfg.competitionModel, opts.date);
 
   let state = startResp.json.state;
   const competitionToken = startResp.json.competitionToken;
