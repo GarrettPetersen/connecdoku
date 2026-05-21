@@ -930,6 +930,94 @@ async function leaderboard(env, url) {
   });
 }
 
+async function benchmarkData(env, url) {
+  await ensureDb(env);
+  const from = url.searchParams.get("from");
+  const to = url.searchParams.get("to");
+
+  const hasFrom = typeof from === "string" && /^\d{4}-\d{2}-\d{2}$/.test(from);
+  const hasTo = typeof to === "string" && /^\d{4}-\d{2}-\d{2}$/.test(to);
+
+  let whereClause = "";
+  const whereParams = [];
+  if (hasFrom && hasTo) {
+    whereClause = "WHERE r.puzzle_date BETWEEN ? AND ?";
+    whereParams.push(from, to);
+  } else if (hasFrom) {
+    whereClause = "WHERE r.puzzle_date >= ?";
+    whereParams.push(from);
+  } else if (hasTo) {
+    whereClause = "WHERE r.puzzle_date <= ?";
+    whereParams.push(to);
+  }
+
+  const modelRows = await env.DB.prepare(
+    `SELECT model, display_name, active
+     FROM competitors
+     WHERE active = 1
+     ORDER BY display_name ASC`
+  ).all();
+
+  const resultQuery = `
+    SELECT
+      r.puzzle_date,
+      r.model,
+      COALESCE(c.display_name, r.model) AS display_name,
+      r.outcome,
+      r.strikes,
+      r.turn_count,
+      r.notes,
+      r.submitted_at
+    FROM competition_results r
+    LEFT JOIN competitors c ON c.model = r.model
+    ${whereClause}
+    ORDER BY r.puzzle_date DESC, display_name ASC
+  `;
+
+  const resultStmt = env.DB.prepare(resultQuery);
+  const resultRows = whereParams.length ? await resultStmt.bind(...whereParams).all() : await resultStmt.all();
+
+  const dateRows = await (whereParams.length
+    ? env.DB.prepare(
+        `SELECT DISTINCT r.puzzle_date
+         FROM competition_results r
+         ${whereClause}
+         ORDER BY r.puzzle_date DESC`
+      )
+        .bind(...whereParams)
+        .all()
+    : env.DB.prepare(
+        `SELECT DISTINCT r.puzzle_date
+         FROM competition_results r
+         ORDER BY r.puzzle_date DESC`
+      ).all());
+
+  const leaderboardQuery = `
+    SELECT
+      r.model,
+      COALESCE(c.display_name, r.model) AS display_name,
+      COUNT(*) AS attempts,
+      SUM(CASE WHEN r.outcome = 'won' THEN 1 ELSE 0 END) AS wins,
+      AVG(r.strikes) AS avg_strikes,
+      AVG(CASE WHEN r.outcome = 'won' THEN r.strikes ELSE NULL END) AS avg_win_strikes
+    FROM competition_results r
+    LEFT JOIN competitors c ON c.model = r.model
+    ${whereClause}
+    GROUP BY r.model
+    ORDER BY avg_strikes ASC, attempts DESC, display_name ASC
+  `;
+  const leaderboardStmt = env.DB.prepare(leaderboardQuery);
+  const leaderboardRows = whereParams.length ? await leaderboardStmt.bind(...whereParams).all() : await leaderboardStmt.all();
+
+  return sendJson(200, {
+    ok: true,
+    models: modelRows.results || [],
+    dates: (dateRows.results || []).map((d) => d.puzzle_date),
+    results: resultRows.results || [],
+    leaderboard: leaderboardRows.results || [],
+  });
+}
+
 async function deleteCompetitionResult(env, body) {
   await ensureDb(env);
 
@@ -1085,6 +1173,10 @@ async function routeRequest(req, env) {
       return leaderboard(env, url);
     }
 
+    if (method === "GET" && url.pathname === "/api/v1/competition/benchmark") {
+      return benchmarkData(env, url);
+    }
+
     if (method === "POST" && url.pathname === "/api/v1/competition/delete-result") {
       if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
       const body = await parseBody(req);
@@ -1108,6 +1200,7 @@ async function routeRequest(req, env) {
         "POST /api/v1/competition/register",
         "POST /api/v1/competition/submit",
         "GET  /api/v1/competition/leaderboard",
+        "GET  /api/v1/competition/benchmark",
         "POST /api/v1/competition/delete-result",
       ],
     });
