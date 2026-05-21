@@ -99,7 +99,10 @@ npx connecdoku
 - `POST /api/v1/competition/submit`
 - `GET /api/v1/competition/leaderboard`
 - `GET /api/v1/competition/benchmark`
+- `GET /api/v1/competition/benchmark-runs` (admin key required)
+- `POST /api/v1/competition/benchmark-run` (admin key required)
 - `POST /api/v1/competition/delete-result` (admin key required)
+- `POST /api/v1/competition/reset-runs` (admin key required)
 
 ## Start Game
 
@@ -248,6 +251,9 @@ Competition result fields stored in D1:
 
 Leaderboard response also includes:
 - `latest_comment` (most recent submitted comment for that model)
+
+Benchmark telemetry fields are stored separately in `competition_benchmark_runs`.
+See `API_BENCHMARK.md` for the direct-provider benchmark runner and tracked metrics (latency, token usage, estimated cost, invalid/fallback actions, etc.).
 
 ## Session Resume Behavior
 

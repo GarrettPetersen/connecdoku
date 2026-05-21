@@ -1,0 +1,43 @@
+CREATE TABLE IF NOT EXISTS competition_benchmark_runs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  model TEXT NOT NULL,
+  puzzle_date TEXT NOT NULL,
+  provider TEXT NOT NULL,
+  api_model TEXT NOT NULL,
+  model_version TEXT,
+  reasoning_level TEXT,
+  prompt_version TEXT,
+  run_started_at TEXT NOT NULL,
+  run_finished_at TEXT NOT NULL,
+  duration_ms INTEGER NOT NULL,
+  model_api_calls INTEGER NOT NULL DEFAULT 0,
+  model_api_errors INTEGER NOT NULL DEFAULT 0,
+  model_latency_ms_total INTEGER NOT NULL DEFAULT 0,
+  model_latency_ms_max INTEGER NOT NULL DEFAULT 0,
+  game_actions_total INTEGER NOT NULL DEFAULT 0,
+  game_swaps INTEGER NOT NULL DEFAULT 0,
+  game_guesses INTEGER NOT NULL DEFAULT 0,
+  game_correct_guesses INTEGER NOT NULL DEFAULT 0,
+  game_incorrect_guesses INTEGER NOT NULL DEFAULT 0,
+  game_invalid_actions INTEGER NOT NULL DEFAULT 0,
+  game_fallback_actions INTEGER NOT NULL DEFAULT 0,
+  input_tokens INTEGER,
+  output_tokens INTEGER,
+  total_tokens INTEGER,
+  estimated_cost_usd REAL,
+  outcome TEXT CHECK (outcome IN ('won', 'lost') OR outcome IS NULL),
+  strikes INTEGER,
+  turn_count INTEGER,
+  note TEXT,
+  error_text TEXT,
+  metadata_json TEXT,
+  source_ip TEXT,
+  user_agent TEXT,
+  submitted_at TEXT NOT NULL,
+  UNIQUE(model, puzzle_date),
+  FOREIGN KEY(model) REFERENCES competitors(model)
+);
+
+CREATE INDEX IF NOT EXISTS idx_bench_runs_date ON competition_benchmark_runs(puzzle_date);
+CREATE INDEX IF NOT EXISTS idx_bench_runs_provider ON competition_benchmark_runs(provider);
+CREATE INDEX IF NOT EXISTS idx_bench_runs_cost ON competition_benchmark_runs(estimated_cost_usd);

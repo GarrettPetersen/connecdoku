@@ -1368,6 +1368,205 @@ async function deleteCompetitionResult(env, body) {
   return { ok: true, deleted };
 }
 
+async function resetCompetitionRuns(env, body) {
+  await ensureDb(env);
+  if (!body || body.confirm !== "RESET_COMPETITION_RUNS") {
+    throw new Error("Refusing reset. Set confirm=RESET_COMPETITION_RUNS.");
+  }
+  const wipeCompetitors = body.wipeCompetitors === true;
+
+  const out = {
+    competition_results_deleted: 0,
+    competition_attempts_deleted: 0,
+    competition_benchmark_runs_deleted: 0,
+    competitors_deleted: 0,
+  };
+
+  const delResults = await env.DB.prepare("DELETE FROM competition_results").run();
+  out.competition_results_deleted = Number(delResults.meta?.changes || 0);
+
+  const delAttempts = await env.DB.prepare("DELETE FROM competition_attempts").run();
+  out.competition_attempts_deleted = Number(delAttempts.meta?.changes || 0);
+
+  const delBenchmarkRuns = await env.DB.prepare("DELETE FROM competition_benchmark_runs").run();
+  out.competition_benchmark_runs_deleted = Number(delBenchmarkRuns.meta?.changes || 0);
+
+  if (wipeCompetitors) {
+    const delCompetitors = await env.DB.prepare("DELETE FROM competitors").run();
+    out.competitors_deleted = Number(delCompetitors.meta?.changes || 0);
+  }
+
+  return { ok: true, reset: out };
+}
+
+function parseNullableNumber(value) {
+  if (value === null || value === undefined || value === "") return null;
+  const n = Number(value);
+  return Number.isFinite(n) ? n : null;
+}
+
+async function upsertBenchmarkRun(req, env, body) {
+  await ensureDb(env);
+
+  const requiredStrings = ["model", "puzzleDate", "provider", "apiModel", "runStartedAt", "runFinishedAt"];
+  for (const key of requiredStrings) {
+    if (typeof body[key] !== "string" || !body[key].trim()) {
+      throw new Error(`${key} is required.`);
+    }
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(body.puzzleDate)) {
+    throw new Error("puzzleDate must be YYYY-MM-DD.");
+  }
+
+  const nowIso = new Date().toISOString();
+  const model = body.model.trim();
+  const puzzleDate = body.puzzleDate;
+
+  const metadataJson = body.metadata && typeof body.metadata === "object"
+    ? JSON.stringify(body.metadata)
+    : (typeof body.metadataJson === "string" ? body.metadataJson : null);
+
+  await env.DB.prepare(
+    `INSERT INTO competition_benchmark_runs (
+      model, puzzle_date, provider, api_model, model_version, reasoning_level, prompt_version,
+      run_started_at, run_finished_at, duration_ms,
+      model_api_calls, model_api_errors, model_latency_ms_total, model_latency_ms_max,
+      game_actions_total, game_swaps, game_guesses, game_correct_guesses, game_incorrect_guesses,
+      game_invalid_actions, game_fallback_actions,
+      input_tokens, output_tokens, total_tokens, estimated_cost_usd,
+      outcome, strikes, turn_count, note, error_text, metadata_json,
+      source_ip, user_agent, submitted_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(model, puzzle_date) DO UPDATE SET
+      provider=excluded.provider,
+      api_model=excluded.api_model,
+      model_version=excluded.model_version,
+      reasoning_level=excluded.reasoning_level,
+      prompt_version=excluded.prompt_version,
+      run_started_at=excluded.run_started_at,
+      run_finished_at=excluded.run_finished_at,
+      duration_ms=excluded.duration_ms,
+      model_api_calls=excluded.model_api_calls,
+      model_api_errors=excluded.model_api_errors,
+      model_latency_ms_total=excluded.model_latency_ms_total,
+      model_latency_ms_max=excluded.model_latency_ms_max,
+      game_actions_total=excluded.game_actions_total,
+      game_swaps=excluded.game_swaps,
+      game_guesses=excluded.game_guesses,
+      game_correct_guesses=excluded.game_correct_guesses,
+      game_incorrect_guesses=excluded.game_incorrect_guesses,
+      game_invalid_actions=excluded.game_invalid_actions,
+      game_fallback_actions=excluded.game_fallback_actions,
+      input_tokens=excluded.input_tokens,
+      output_tokens=excluded.output_tokens,
+      total_tokens=excluded.total_tokens,
+      estimated_cost_usd=excluded.estimated_cost_usd,
+      outcome=excluded.outcome,
+      strikes=excluded.strikes,
+      turn_count=excluded.turn_count,
+      note=excluded.note,
+      error_text=excluded.error_text,
+      metadata_json=excluded.metadata_json,
+      source_ip=excluded.source_ip,
+      user_agent=excluded.user_agent,
+      submitted_at=excluded.submitted_at`
+  )
+    .bind(
+      model,
+      puzzleDate,
+      body.provider.trim(),
+      body.apiModel.trim(),
+      typeof body.modelVersion === "string" ? body.modelVersion.slice(0, 120) : null,
+      typeof body.reasoningLevel === "string" ? body.reasoningLevel.slice(0, 80) : null,
+      typeof body.promptVersion === "string" ? body.promptVersion.slice(0, 80) : null,
+      body.runStartedAt,
+      body.runFinishedAt,
+      parseNullableNumber(body.durationMs) || 0,
+      parseNullableNumber(body.modelApiCalls) || 0,
+      parseNullableNumber(body.modelApiErrors) || 0,
+      parseNullableNumber(body.modelLatencyMsTotal) || 0,
+      parseNullableNumber(body.modelLatencyMsMax) || 0,
+      parseNullableNumber(body.gameActionsTotal) || 0,
+      parseNullableNumber(body.gameSwaps) || 0,
+      parseNullableNumber(body.gameGuesses) || 0,
+      parseNullableNumber(body.gameCorrectGuesses) || 0,
+      parseNullableNumber(body.gameIncorrectGuesses) || 0,
+      parseNullableNumber(body.gameInvalidActions) || 0,
+      parseNullableNumber(body.gameFallbackActions) || 0,
+      parseNullableNumber(body.inputTokens),
+      parseNullableNumber(body.outputTokens),
+      parseNullableNumber(body.totalTokens),
+      parseNullableNumber(body.estimatedCostUsd),
+      typeof body.outcome === "string" ? body.outcome : null,
+      parseNullableNumber(body.strikes),
+      parseNullableNumber(body.turnCount),
+      typeof body.note === "string" ? body.note.slice(0, 1000) : null,
+      typeof body.errorText === "string" ? body.errorText.slice(0, 2000) : null,
+      metadataJson,
+      req.headers.get("cf-connecting-ip") || null,
+      req.headers.get("user-agent") || null,
+      nowIso
+    )
+    .run();
+
+  const row = await env.DB.prepare(
+    `SELECT id, model, puzzle_date, provider, api_model, model_version, reasoning_level, prompt_version,
+            duration_ms, model_api_calls, model_api_errors,
+            game_actions_total, game_invalid_actions, input_tokens, output_tokens, total_tokens, estimated_cost_usd,
+            outcome, strikes, turn_count, note, error_text, submitted_at
+     FROM competition_benchmark_runs
+     WHERE model = ? AND puzzle_date = ?
+     LIMIT 1`
+  )
+    .bind(model, puzzleDate)
+    .first();
+
+  return { ok: true, benchmarkRun: row };
+}
+
+async function getBenchmarkRuns(env, url) {
+  await ensureDb(env);
+  const limitRaw = Number(url.searchParams.get("limit") || 200);
+  const limit = Math.max(1, Math.min(1000, Number.isFinite(limitRaw) ? Math.floor(limitRaw) : 200));
+  const from = url.searchParams.get("from");
+  const to = url.searchParams.get("to");
+  const model = url.searchParams.get("model");
+
+  const clauses = [];
+  const params = [];
+  if (model) {
+    clauses.push("model = ?");
+    params.push(model);
+  }
+  if (from && /^\d{4}-\d{2}-\d{2}$/.test(from)) {
+    clauses.push("puzzle_date >= ?");
+    params.push(from);
+  }
+  if (to && /^\d{4}-\d{2}-\d{2}$/.test(to)) {
+    clauses.push("puzzle_date <= ?");
+    params.push(to);
+  }
+  const where = clauses.length ? `WHERE ${clauses.join(" AND ")}` : "";
+
+  const query = `
+    SELECT
+      id, model, puzzle_date, provider, api_model, model_version, reasoning_level, prompt_version,
+      run_started_at, run_finished_at, duration_ms,
+      model_api_calls, model_api_errors, model_latency_ms_total, model_latency_ms_max,
+      game_actions_total, game_swaps, game_guesses, game_correct_guesses, game_incorrect_guesses,
+      game_invalid_actions, game_fallback_actions,
+      input_tokens, output_tokens, total_tokens, estimated_cost_usd,
+      outcome, strikes, turn_count, note, error_text, metadata_json, submitted_at
+    FROM competition_benchmark_runs
+    ${where}
+    ORDER BY puzzle_date DESC, model ASC
+    LIMIT ?
+  `;
+  const stmt = env.DB.prepare(query);
+  const rows = await stmt.bind(...params, limit).all();
+  return sendJson(200, { ok: true, runs: rows.results || [] });
+}
+
 async function routeRequest(req, env) {
   try {
     if (req.method === "OPTIONS") return sendJson(204, { ok: true });
@@ -1550,11 +1749,36 @@ async function routeRequest(req, env) {
       return benchmarkData(env, url);
     }
 
+    if (method === "GET" && url.pathname === "/api/v1/competition/benchmark-runs") {
+      if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
+      return getBenchmarkRuns(env, url);
+    }
+
+    if (method === "POST" && url.pathname === "/api/v1/competition/benchmark-run") {
+      if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
+      const body = await parseBody(req);
+      try {
+        return sendJson(200, await upsertBenchmarkRun(req, env, body));
+      } catch (e) {
+        return sendJson(400, { ok: false, error: e.message });
+      }
+    }
+
     if (method === "POST" && url.pathname === "/api/v1/competition/delete-result") {
       if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
       const body = await parseBody(req);
       try {
         return sendJson(200, await deleteCompetitionResult(env, body));
+      } catch (e) {
+        return sendJson(400, { ok: false, error: e.message });
+      }
+    }
+
+    if (method === "POST" && url.pathname === "/api/v1/competition/reset-runs") {
+      if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
+      const body = await parseBody(req);
+      try {
+        return sendJson(200, await resetCompetitionRuns(env, body));
       } catch (e) {
         return sendJson(400, { ok: false, error: e.message });
       }
@@ -1578,7 +1802,10 @@ async function routeRequest(req, env) {
         "POST /api/v1/competition/submit",
         "GET  /api/v1/competition/leaderboard",
         "GET  /api/v1/competition/benchmark",
+        "GET  /api/v1/competition/benchmark-runs",
+        "POST /api/v1/competition/benchmark-run",
         "POST /api/v1/competition/delete-result",
+        "POST /api/v1/competition/reset-runs",
       ],
     });
   } catch (e) {

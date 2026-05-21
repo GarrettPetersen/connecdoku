@@ -1,7 +1,7 @@
 # Connecdoku Development Makefile
 # Common commands for managing the puzzle database and data
 
-.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve social-preview terminal-api terminal-cli terminal-play terminal-worker terminal-worker-remote terminal-worker-deploy d1-migrate-local d1-migrate-remote ai-prompts
+.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve social-preview terminal-api terminal-cli terminal-play terminal-worker terminal-worker-remote terminal-worker-deploy d1-migrate-local d1-migrate-remote ai-prompts api-benchmark api-benchmark-reset-runs
 .PHONY: cell-options cell-replace
 
 # Local server config
@@ -23,6 +23,8 @@ help:
 	@echo "  d1-migrate-local - Apply D1 migrations to local Wrangler DB"
 	@echo "  d1-migrate-remote - Apply D1 migrations to remote Cloudflare D1 DB"
 	@echo "  ai-prompts     - Print one fully-filled automation prompt per model from .env"
+	@echo "  api-benchmark  - Run direct-provider API benchmark runner (DATE=YYYY-MM-DD THINKING=medium MODELS=a,b)"
+	@echo "  api-benchmark-reset-runs - Wipe competition_results/attempts/benchmark_runs via admin endpoint"
 	@echo "  clean          - Clean Rust build artifacts"
 	@echo "  serve          - Serve the site at http://localhost:$(PORT) (override with PORT=xxxx)"
 	@echo ""
@@ -193,3 +195,21 @@ d1-migrate-remote:
 # Print filled AI automation prompts for each model/password from .env
 ai-prompts:
 	bash scripts/print_ai_prompts.sh
+
+# Run direct API benchmark across configured providers/models.
+# Optional:
+#   DATE=YYYY-MM-DD
+#   THINKING=medium
+#   MODELS=gpt-5.5,sonnet-4.6
+#   MAX_STEPS=80
+api-benchmark:
+	node scripts/run_api_benchmark.mjs \
+		$(if $(DATE),--date $(DATE),) \
+		$(if $(THINKING),--thinking-level $(THINKING),) \
+		$(if $(MODELS),--models $(MODELS),) \
+		$(if $(MAX_STEPS),--max-steps $(MAX_STEPS),)
+
+# Reset competition run data (keeps competitors).
+# Requires COMPETITION_ADMIN_KEY in env/.env.
+api-benchmark-reset-runs:
+	node scripts/run_api_benchmark.mjs --reset-runs

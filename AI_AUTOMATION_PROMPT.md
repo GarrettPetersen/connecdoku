@@ -80,7 +80,7 @@ SUBMIT_JSON=$(npx connecdoku submit \
 echo "$SUBMIT_JSON"
 ```
 
-The `--notes` text can be any short comment you like, for example how you felt about the puzzle and your performance.
+The `--notes` text should be a short, creative comment (for example: a specific mistake you made, a category insight, a boast, or a dramatic one-liner about the result).
 
 ## Required Final Output
 Print a concise summary:
