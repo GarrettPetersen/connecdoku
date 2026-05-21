@@ -8,84 +8,86 @@
 <meta name="description" content="Connecdoku AI benchmark leaderboard and daily model performance matrix.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #f5f8f5;
-  --ink: #1e293b;
-  --muted: #64748b;
+  --bg: #fafafa;
+  --ink: #222;
+  --muted: #6b7280;
   --card: #ffffff;
-  --line: #d8e1d8;
-  --accent: #2f7d4f;
-  --s0: #7fd48f;
-  --s1: #f6df74;
-  --s2: #f7b36a;
-  --s3: #ef8f5f;
-  --s4: #e76f51;
-  --s5: #c92a2a;
+  --line: #d4d5d6;
+  --accent: #4caf50;
+  --s0: #b6e7b2;
+  --s1: #ffe680;
+  --s2: #ffb06a;
+  --s3: #ff8a65;
+  --s4: #e57373;
+  --s5: #c62828;
 }
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: "Space Grotesk", system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 15% -10%, #d6f5db 0, transparent 40%),
-    radial-gradient(circle at 85% -20%, #d7ecff 0, transparent 35%),
-    var(--bg);
+  background: var(--bg);
 }
 .container {
-  max-width: 1400px;
-  margin: 28px auto 50px;
-  padding: 0 18px;
+  max-width: 1150px;
+  margin: 28px auto 40px;
+  padding: 0 12px;
 }
 .hero {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fff9 60%, #eef7ff 100%);
-  border: 1px solid #dce8dc;
-  border-radius: 18px;
-  padding: 20px 24px;
-  box-shadow: 0 8px 30px rgba(23, 37, 84, 0.08);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  padding: 18px 20px;
 }
 .hero h1 {
-  font-family: "Fraunces", serif;
+  font-family: "Fredoka One", cursive;
   margin: 0 0 8px;
-  font-size: clamp(30px, 5vw, 52px);
-  line-height: 1.03;
+  font-size: clamp(34px, 6vw, 48px);
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: center;
 }
 .hero p {
-  margin: 0;
+  margin: 0 auto;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 14px;
+  text-align: center;
+  max-width: 760px;
 }
 .section {
-  margin-top: 18px;
+  margin-top: 14px;
   background: var(--card);
-  border: 1px solid #dce8dc;
-  border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 4px 22px rgba(15, 23, 42, 0.05);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
 }
 .section h2 {
-  font-family: "Fraunces", serif;
+  font-family: "Fredoka One", cursive;
   margin: 0 0 12px;
-  font-size: 26px;
+  font-size: 24px;
+  letter-spacing: 0.4px;
 }
 .kicker {
-  font-size: 12px;
-  letter-spacing: 0.12em;
+  font-size: 11px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #406f54;
+  color: #4b5563;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .meta {
   margin: 0 0 10px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
 }
 .table-wrap {
-  overflow: auto;
-  border: 1px solid var(--line);
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 2px solid var(--line);
   border-radius: 12px;
 }
 table {
@@ -96,17 +98,17 @@ table {
 .leaderboard th,
 .leaderboard td {
   padding: 10px 12px;
-  border-bottom: 1px solid #edf2ed;
+  border-bottom: 1px solid #ececec;
   font-size: 14px;
   text-align: left;
 }
 .leaderboard thead th {
-  background: #f8fbf8;
+  background: #f6f7f8;
   position: sticky;
   top: 0;
   z-index: 2;
 }
-.leaderboard tbody tr:hover td { background: #f9fcf9; }
+.leaderboard tbody tr:hover td { background: #f8fff8; }
 .score-pill {
   display: inline-flex;
   align-items: center;
@@ -124,9 +126,9 @@ table {
   position: sticky;
   top: 0;
   z-index: 3;
-  background: #f8fbf8;
+  background: #f6f7f8;
   border-bottom: 1px solid var(--line);
-  border-right: 1px solid #e8eee8;
+  border-right: 1px solid #ececec;
   padding: 9px 8px;
   text-align: center;
   font-size: 12px;
@@ -143,8 +145,8 @@ table {
   left: 0;
   z-index: 2;
   background: #ffffff;
-  border-right: 1px solid #e8eee8;
-  border-bottom: 1px solid #edf2ed;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   text-align: left;
   font-size: 13px;
   font-weight: 700;
@@ -152,8 +154,8 @@ table {
   white-space: nowrap;
 }
 .matrix tbody td {
-  border-bottom: 1px solid #edf2ed;
-  border-right: 1px solid #f0f4f0;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #f1f1f1;
   text-align: center;
   min-width: 76px;
   padding: 0;
@@ -184,30 +186,9 @@ table {
   width: 8px;
   height: 8px;
   border-radius: 999px;
-  background: rgba(15, 23, 42, 0.5);
+  background: rgba(34, 34, 34, 0.55);
 }
 .s5 .note-dot { background: rgba(255,255,255,0.7); }
-.cell[data-tip]:hover::after,
-.cell[data-tip]:focus::after {
-  content: attr(data-tip);
-  position: absolute;
-  bottom: calc(100% + 6px);
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 180px;
-  max-width: 280px;
-  padding: 8px 10px;
-  border-radius: 10px;
-  background: rgba(15, 23, 42, 0.94);
-  color: #fff;
-  font-size: 12px;
-  line-height: 1.35;
-  white-space: pre-line;
-  text-align: left;
-  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.4);
-  z-index: 20;
-  pointer-events: none;
-}
 .loading,
 .error,
 .empty-state {
@@ -215,13 +196,13 @@ table {
   border-radius: 10px;
   font-size: 14px;
 }
-.loading { background: #f7faf7; color: #475569; }
-.error { background: #fff0f0; color: #9b1c1c; }
-.empty-state { background: #f7faf7; color: #64748b; }
+.loading { background: #f6f7f8; color: #4b5563; }
+.error { background: #fff3f3; color: #9b1c1c; }
+.empty-state { background: #f6f7f8; color: #6b7280; }
 .footer {
   margin-top: 30px;
   padding-top: 16px;
-  border-top: 1px solid #d5e0d5;
+  border-top: 1px solid #ddd;
   text-align: center;
   font-size: 14px;
 }
@@ -231,9 +212,31 @@ table {
   margin: 0 10px;
 }
 .footer a:hover { text-decoration: underline; }
+.floating-tooltip {
+  position: fixed;
+  z-index: 10000;
+  max-width: min(360px, calc(100vw - 24px));
+  min-width: 220px;
+  padding: 9px 11px;
+  border-radius: 10px;
+  background: rgba(17, 24, 39, 0.96);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-line;
+  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.4);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: opacity 90ms ease-out, transform 90ms ease-out;
+}
+.floating-tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 @media (max-width: 840px) {
   .container { margin-top: 16px; }
-  .hero { padding: 16px; }
+  .hero { padding: 16px 14px; }
   .section { padding: 12px; }
 }
 </style>
@@ -274,11 +277,68 @@ table {
 <script>
 (function () {
   const API_URL = '/api/v1/competition/benchmark';
+  const TOOLTIP_GAP = 8;
 
   const leaderboardWrap = document.getElementById('leaderboardWrap');
   const matrixWrap = document.getElementById('matrixWrap');
   const leaderboardMeta = document.getElementById('leaderboardMeta');
   const matrixMeta = document.getElementById('matrixMeta');
+  const tooltipEl = document.createElement('div');
+  tooltipEl.className = 'floating-tooltip';
+  document.body.appendChild(tooltipEl);
+  let tooltipTarget = null;
+
+  function placeTooltip(target) {
+    if (!target) return;
+    const rect = target.getBoundingClientRect();
+    const tipW = tooltipEl.offsetWidth;
+    const tipH = tooltipEl.offsetHeight;
+
+    let left = rect.left + (rect.width / 2) - (tipW / 2);
+    if (left < 12) left = 12;
+    const maxLeft = window.innerWidth - tipW - 12;
+    if (left > maxLeft) left = maxLeft;
+
+    let top = rect.top - tipH - TOOLTIP_GAP;
+    if (top < 8) {
+      top = rect.bottom + TOOLTIP_GAP;
+      const maxTop = window.innerHeight - tipH - 8;
+      if (top > maxTop) top = maxTop;
+    }
+
+    tooltipEl.style.left = `${Math.round(left)}px`;
+    tooltipEl.style.top = `${Math.round(top)}px`;
+  }
+
+  function showTooltip(target) {
+    const tip = target && target.getAttribute('data-tip');
+    if (!tip) return;
+    tooltipTarget = target;
+    tooltipEl.textContent = tip;
+    tooltipEl.classList.add('show');
+    placeTooltip(target);
+  }
+
+  function hideTooltip() {
+    tooltipTarget = null;
+    tooltipEl.classList.remove('show');
+  }
+
+  function wireCellTooltip(cell) {
+    cell.removeAttribute('title');
+    cell.setAttribute('tabindex', '0');
+    cell.addEventListener('mouseenter', () => showTooltip(cell));
+    cell.addEventListener('focus', () => showTooltip(cell));
+    cell.addEventListener('mouseleave', hideTooltip);
+    cell.addEventListener('blur', hideTooltip);
+  }
+
+  window.addEventListener('scroll', () => {
+    if (tooltipTarget) placeTooltip(tooltipTarget);
+  }, true);
+  window.addEventListener('resize', () => {
+    if (tooltipTarget) placeTooltip(tooltipTarget);
+  });
 
   function fmtDate(dateText) {
     const d = new Date(dateText + 'T00:00:00');
@@ -443,7 +503,7 @@ table {
           const note = rec.notes && String(rec.notes).trim() ? String(rec.notes).trim() : 'No comment submitted.';
           const tip = `${rec.display_name || rec.model}\n${day}\nOutcome: ${rec.outcome}\nStrikes: ${rec.strikes}\nTurns: ${rec.turn_count}\nNote: ${note}`;
           cell.setAttribute('data-tip', tip);
-          cell.setAttribute('title', tip);
+          wireCellTooltip(cell);
 
           td.appendChild(cell);
         }
