@@ -427,23 +427,48 @@ async function runOneShot() {
 
   const token = flag("token", null);
   const competitionToken = flag("competition-token", null);
+  const competitionModel = String(flag("model", "")).trim();
+  const competitionPassword = String(flag("password", "")).trim();
+
+  function hasCompetitionCreds() {
+    return !!competitionModel && !!competitionPassword;
+  }
+
+  async function resolveCompetitionToken() {
+    if (competitionToken) return competitionToken;
+    if (!hasCompetitionCreds()) return null;
+
+    const startBody = startBodyFromFlags(true);
+    const startResp = await api("/api/v1/competition/start", {
+      ...startBody,
+      model: competitionModel,
+      password: competitionPassword,
+    });
+    return startResp.competitionToken || startResp?.state?.competition?.token || null;
+  }
 
   if (COMMAND === "state") {
-    if (!token && !competitionToken) throw new Error("state requires --token or --competition-token");
-    const resp = competitionToken
-      ? await api("/api/v1/competition/state", { competitionToken })
+    const compToken = await resolveCompetitionToken();
+    if (!token && !compToken) {
+      throw new Error("state requires --token OR --competition-token OR --model+--password");
+    }
+    const resp = compToken
+      ? await api("/api/v1/competition/state", { competitionToken: compToken })
       : await api("/api/v1/play/state", { stateToken: token });
     console.log(JSON.stringify(resp, null, 2));
     return;
   }
 
   if (COMMAND === "swap") {
-    if (!token && !competitionToken) throw new Error("swap requires --token or --competition-token");
+    const compToken = await resolveCompetitionToken();
+    if (!token && !compToken) {
+      throw new Error("swap requires --token OR --competition-token OR --model+--password");
+    }
     const a = parseCoord(String(flag("a", "")));
     const b = parseCoord(String(flag("b", "")));
     if (!a || !b) throw new Error("swap requires --a r,c --b r,c (0..3)");
-    const resp = competitionToken
-      ? await api("/api/v1/competition/swap", { competitionToken, a, b })
+    const resp = compToken
+      ? await api("/api/v1/competition/swap", { competitionToken: compToken, a, b })
       : await api("/api/v1/play/swap", { stateToken: token, a, b });
     if (resp?.state?.finished) recordFinishedGame(resp.state);
     console.log(JSON.stringify(resp, null, 2));
@@ -451,14 +476,17 @@ async function runOneShot() {
   }
 
   if (COMMAND === "guess") {
-    if (!token && !competitionToken) throw new Error("guess requires --token or --competition-token");
+    const compToken = await resolveCompetitionToken();
+    if (!token && !compToken) {
+      throw new Error("guess requires --token OR --competition-token OR --model+--password");
+    }
     const kind = String(flag("kind", "")).toLowerCase();
     const line = Number(flag("line", NaN));
     if (kind !== "row" && kind !== "col") throw new Error("guess requires --kind row|col");
     if (!Number.isInteger(line) || line < 0 || line > 3) throw new Error("guess requires --line 0..3");
 
-    const resp = competitionToken
-      ? await api("/api/v1/competition/guess", { competitionToken, kind, index: line })
+    const resp = compToken
+      ? await api("/api/v1/competition/guess", { competitionToken: compToken, kind, index: line })
       : await api("/api/v1/play/guess", { stateToken: token, kind, index: line });
     if (resp?.state?.finished) recordFinishedGame(resp.state);
     console.log(JSON.stringify(resp, null, 2));
@@ -493,10 +521,13 @@ async function runOneShot() {
   }
 
   if (COMMAND === "submit") {
-    if (!competitionToken) throw new Error("submit requires --competition-token. Start with: start --model ... --password ...");
+    const compToken = await resolveCompetitionToken();
+    if (!compToken) {
+      throw new Error("submit requires --competition-token or --model+--password");
+    }
     const notes = String(flag("notes", flag("note", flag("comment", "")))).trim();
     const resp = await api("/api/v1/competition/submit", {
-      competitionToken,
+      competitionToken: compToken,
       notes: notes || undefined,
     });
     console.log(JSON.stringify(resp, null, 2));
@@ -515,7 +546,7 @@ async function runOneShot() {
 }
 
 if (hasFlag("help") || hasFlag("h")) {
-  console.log(`Usage:\n  Interactive:\n    node terminal_play_cli.js [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n\n  One-shot (AI/script-friendly):\n    node terminal_play_cli.js start [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n    node terminal_play_cli.js start --api URL --model <MODEL_ID> --password <PASSWORD> [--date YYYY-MM-DD]\n    node terminal_play_cli.js state --api URL --token <STATE_TOKEN>\n    node terminal_play_cli.js state --api URL --competition-token <COMP_TOKEN>\n    node terminal_play_cli.js swap --api URL --competition-token <COMP_TOKEN> --a r,c --b r,c\n    node terminal_play_cli.js guess --api URL --competition-token <COMP_TOKEN> --kind row|col --line N\n    node terminal_play_cli.js submit --api URL --competition-token <COMP_TOKEN> [--notes \"...\"]\n    node terminal_play_cli.js register --api URL --admin-key <ADMIN_KEY> --model <MODEL_ID> --password <PASSWORD> [--display-name NAME]\n    node terminal_play_cli.js leaderboard [--api URL] [--limit 50]\n    node terminal_play_cli.js stats\n\nExamples:\n  node terminal_play_cli.js start --api https://example.com --model gpt-5.5 --password secret\n  node terminal_play_cli.js guess --api https://example.com --competition-token COMP --kind row --line 1\n`);
+  console.log(`Usage:\n  Interactive:\n    node terminal_play_cli.js [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n\n  One-shot (AI/script-friendly):\n    node terminal_play_cli.js start [--api URL] [--date YYYY-MM-DD | --index N] [--seed TEXT]\n    node terminal_play_cli.js start --api URL --model <MODEL_ID> --password <PASSWORD> [--date YYYY-MM-DD]\n    node terminal_play_cli.js state --api URL --token <STATE_TOKEN>\n    node terminal_play_cli.js state --api URL --competition-token <COMP_TOKEN>\n    node terminal_play_cli.js state --api URL --model <MODEL_ID> --password <PASSWORD> [--date YYYY-MM-DD]\n    node terminal_play_cli.js swap --api URL (--competition-token <COMP_TOKEN> | --model <MODEL_ID> --password <PASSWORD>) --a r,c --b r,c\n    node terminal_play_cli.js guess --api URL (--competition-token <COMP_TOKEN> | --model <MODEL_ID> --password <PASSWORD>) --kind row|col --line N\n    node terminal_play_cli.js submit --api URL (--competition-token <COMP_TOKEN> | --model <MODEL_ID> --password <PASSWORD>) [--notes \"...\"]\n    node terminal_play_cli.js register --api URL --admin-key <ADMIN_KEY> --model <MODEL_ID> --password <PASSWORD> [--display-name NAME]\n    node terminal_play_cli.js leaderboard [--api URL] [--limit 50]\n    node terminal_play_cli.js stats\n\nExamples:\n  node terminal_play_cli.js guess --api https://example.com --model gpt-5.5 --password secret --kind row --line 1\n  node terminal_play_cli.js submit --api https://example.com --model gpt-5.5 --password secret --notes \"Fun puzzle\"\n`);
   process.exit(0);
 }
 

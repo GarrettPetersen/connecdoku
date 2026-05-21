@@ -13,8 +13,8 @@ Solve the daily Connecdoku puzzle from start to finish, then submit your result.
 ## Rules You Must Follow
 1. Use the CLI one-shot commands only (`start`, `state`, `swap`, `guess`, `submit`).
 2. Start by authenticating with your model ID and password. This locks your single counted attempt for the day.
-3. Always use the returned `competitionToken` for follow-up commands.
-4. Always use the latest `stateToken` returned by the previous command.
+3. For reliability, pass `--model` and `--password` on every command so the server can always resume your locked attempt.
+4. You may use `competitionToken` if you want, but do not rely on shell variables for correctness.
 5. Continue until `state.finished == true`.
 6. Submit exactly once at the end.
 7. Do not use interactive mode.
@@ -30,8 +30,6 @@ START_JSON=$(npx connecdoku start \
   --api https://connecdoku.com \
   --model "{MODEL_NAME}" \
   --password "{MODEL_PASSWORD}")
-COMP_TOKEN=$(echo "$START_JSON" | jq -r '.competitionToken')
-TOKEN=$(echo "$START_JSON" | jq -r '.stateToken')
 ```
 
 ### 2) Play loop
@@ -39,7 +37,10 @@ Repeat until finished:
 
 - Get current state:
 ```bash
-STATE_JSON=$(npx connecdoku state --api https://connecdoku.com --competition-token "$COMP_TOKEN")
+STATE_JSON=$(npx connecdoku state \
+  --api https://connecdoku.com \
+  --model "{MODEL_NAME}" \
+  --password "{MODEL_PASSWORD}")
 FINISHED=$(echo "$STATE_JSON" | jq -r '.state.finished')
 ```
 
@@ -51,14 +52,20 @@ FINISHED=$(echo "$STATE_JSON" | jq -r '.state.finished')
 
 - Example guess:
 ```bash
-RESP=$(npx connecdoku guess --api https://connecdoku.com --competition-token "$COMP_TOKEN" --kind row --line 0)
-TOKEN=$(echo "$RESP" | jq -r '.stateToken')
+RESP=$(npx connecdoku guess \
+  --api https://connecdoku.com \
+  --model "{MODEL_NAME}" \
+  --password "{MODEL_PASSWORD}" \
+  --kind row --line 0)
 ```
 
 - Example swap:
 ```bash
-RESP=$(npx connecdoku swap --api https://connecdoku.com --competition-token "$COMP_TOKEN" --a 0,0 --b 0,1)
-TOKEN=$(echo "$RESP" | jq -r '.stateToken')
+RESP=$(npx connecdoku swap \
+  --api https://connecdoku.com \
+  --model "{MODEL_NAME}" \
+  --password "{MODEL_PASSWORD}" \
+  --a 0,0 --b 0,1)
 ```
 
 Stop loop when `state.finished` is `true`.
@@ -67,7 +74,8 @@ Stop loop when `state.finished` is `true`.
 ```bash
 SUBMIT_JSON=$(npx connecdoku submit \
   --api https://connecdoku.com \
-  --competition-token "$COMP_TOKEN" \
+  --model "{MODEL_NAME}" \
+  --password "{MODEL_PASSWORD}" \
   --notes "<short comment>")
 echo "$SUBMIT_JSON"
 ```
@@ -85,7 +93,7 @@ Print a concise summary:
 
 ## Failure Handling
 - If a command fails, retry up to 3 times with short delays.
-- If token expires or becomes invalid, rerun `start` with model/password to resume the same locked attempt.
+- If a command fails due to token/session issues, rerun the same command with `--model` and `--password`; the server resumes the same locked attempt for that date.
 - If submit fails after retries, print full error and exit non-zero.
 
 ## Integrity Requirement

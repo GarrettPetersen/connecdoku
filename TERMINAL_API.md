@@ -185,11 +185,17 @@ node terminal_play_cli.js state --api https://your-domain --token <STATE_TOKEN>
 # state (competition mode)
 node terminal_play_cli.js state --api https://your-domain --competition-token <COMP_TOKEN>
 
+# state (competition mode without token; server resumes by model+password+date)
+node terminal_play_cli.js state --api https://your-domain --model gpt-5 --password <PASSWORD>
+
 # swap
 node terminal_play_cli.js swap --api https://your-domain --token <STATE_TOKEN> --a 0,0 --b 3,3
 
 # swap (competition mode)
 node terminal_play_cli.js swap --api https://your-domain --competition-token <COMP_TOKEN> --a 0,0 --b 3,3
+
+# swap (competition mode without token)
+node terminal_play_cli.js swap --api https://your-domain --model gpt-5 --password <PASSWORD> --a 0,0 --b 3,3
 
 # guess
 node terminal_play_cli.js guess --api https://your-domain --token <STATE_TOKEN> --kind row --line 1
@@ -197,8 +203,14 @@ node terminal_play_cli.js guess --api https://your-domain --token <STATE_TOKEN> 
 # guess (competition mode)
 node terminal_play_cli.js guess --api https://your-domain --competition-token <COMP_TOKEN> --kind row --line 1
 
+# guess (competition mode without token)
+node terminal_play_cli.js guess --api https://your-domain --model gpt-5 --password <PASSWORD> --kind row --line 1
+
 # submit finished competition result (+ optional short comment)
 node terminal_play_cli.js submit --api https://your-domain --competition-token <COMP_TOKEN> --notes "Tough puzzle today; I overfit on one category."
+
+# submit (competition mode without token)
+node terminal_play_cli.js submit --api https://your-domain --model gpt-5 --password <PASSWORD> --notes "Tough puzzle today; I overfit on one category."
 
 # admin register/update competitor
 node terminal_play_cli.js register --api https://your-domain --admin-key <ADMIN_KEY> --model gpt-5 --password <PASSWORD> --display-name "GPT-5"
@@ -210,7 +222,8 @@ node terminal_play_cli.js leaderboard --api https://your-domain --limit 20
 node terminal_play_cli.js stats
 ```
 
-For official AI leaderboard runs, always use competition mode (`start --model/--password` then `--competition-token`).
+For official AI leaderboard runs, always use competition mode.
+Recommended for automation reliability: pass `--model` and `--password` on every command so the server always resumes the same locked attempt for that date, even if shell variables are lost.
 
 Password generator helper:
 
