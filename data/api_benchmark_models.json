@@ -56,7 +56,7 @@
     "competitionModel": "opus-4.7",
     "displayName": "Opus 4.7",
     "provider": "anthropic",
-    "apiModel": "claude-opus-4-1-20250805",
+    "apiModel": "claude-opus-4-7",
     "apiModelEnv": "BENCH_MODEL_OPUS_4_7",
     "passwordEnv": "AI_PASS_OPUS_4_7",
     "reasoningLevel": "medium",
@@ -69,7 +69,7 @@
     "competitionModel": "opus-4.6",
     "displayName": "Opus 4.6",
     "provider": "anthropic",
-    "apiModel": "claude-opus-4-20250514",
+    "apiModel": "claude-opus-4-6",
     "apiModelEnv": "BENCH_MODEL_OPUS_4_6",
     "passwordEnv": "AI_PASS_OPUS_4_6",
     "reasoningLevel": "medium",
@@ -82,7 +82,7 @@
     "competitionModel": "sonnet-4.6",
     "displayName": "Sonnet 4.6",
     "provider": "anthropic",
-    "apiModel": "claude-sonnet-4-20250514",
+    "apiModel": "claude-sonnet-4-6",
     "apiModelEnv": "BENCH_MODEL_SONNET_4_6",
     "passwordEnv": "AI_PASS_SONNET_4_6",
     "reasoningLevel": "medium",
@@ -95,7 +95,7 @@
     "competitionModel": "haiku-4.5",
     "displayName": "Haiku 4.5",
     "provider": "anthropic",
-    "apiModel": "claude-3-5-haiku-20241022",
+    "apiModel": "claude-haiku-4-5-20251001",
     "apiModelEnv": "BENCH_MODEL_HAIKU_4_5",
     "passwordEnv": "AI_PASS_HAIKU_4_5",
     "reasoningLevel": "medium",
@@ -104,7 +104,7 @@
     "outputPricePerMTok": 4.0
   },
   {
-    "enabled": true,
+    "enabled": false,
     "competitionModel": "gemini-3.1-pro",
     "displayName": "Gemini 3.1 Pro",
     "provider": "google",
@@ -151,7 +151,7 @@
     "apiModelEnv": "BENCH_MODEL_KIMI_K2_5",
     "passwordEnv": "AI_PASS_KIMI_K2_5",
     "reasoningLevel": "medium",
-    "temperature": 0.2,
+    "temperature": 1,
     "inputPricePerMTok": 0.7,
     "outputPricePerMTok": 2.8
   }

@@ -1,6 +1,8 @@
 # Direct API Benchmark System
 
-This benchmark runs Connecdoku through provider APIs directly (OpenAI, Anthropic, Google, xAI, Moonshot, optional Cursor-compatible endpoint), without Cursor automation prompts.
+This benchmark runs Connecdoku through provider APIs directly (OpenAI, Anthropic, Google, xAI, Moonshot), without Cursor automation prompts.
+
+A separate Cursor lane now exists and uses Cursor Background Agents API.
 
 ## Goals
 
@@ -28,6 +30,12 @@ New benchmark telemetry (`competition_benchmark_runs`):
 - token usage (input/output/total)
 - estimated cost (from per-model price config)
 - optional error text + metadata trace
+
+Cursor lane caveat:
+- token/cost telemetry depends on what Cursor returns per agent; when unavailable, cost is stored as `null` while timing and game-quality metrics are still recorded.
+- runner fails fast on Cursor auth/config errors.
+- fallback behavior is corrective re-prompting only (no auto-play moves).
+- unfinished runs fail (no auto-complete behavior).
 
 These are the extra fields you typically expect in a respectable benchmark beyond raw win/loss.
 
@@ -75,6 +83,43 @@ Useful options:
 - `--max-steps 80`
 - `--api https://connecdoku.com`
 - `--reset-runs` (wipe previous run data first; admin key required)
+
+## Cursor Lane (Background Agents API)
+
+Runner:
+- `scripts/run_cursor_benchmark.mjs`
+
+Roster file:
+- `data/cursor_benchmark_models.json`
+
+Required env:
+- `CURSOR_API_KEY`
+- `CURSOR_BENCH_REPOSITORY=https://github.com/<org>/<repo>` (optional if `git remote.origin` points to GitHub; runner will auto-derive)
+
+Optional env:
+- `CURSOR_BENCH_REPOSITORY_REF=master`
+- `CURSOR_BENCH_POLL_MS=5000`
+- `CURSOR_BENCH_TIMEOUT_MS=480000`
+- `CURSOR_BASE_URL=https://api.cursor.com`
+
+Run:
+
+```bash
+node scripts/run_cursor_benchmark.mjs --date 2026-05-21 --thinking-level medium
+```
+
+List recommended Cursor model IDs:
+
+```bash
+node scripts/run_cursor_benchmark.mjs --list-models
+```
+
+Make targets:
+- `make cursor-api-benchmark`
+- `make cursor-api-benchmark-list-models`
+
+Important:
+- The default Cursor roster reuses the same competition model IDs as direct-provider runs (for apples-to-apples leaderboard rows). If you run both lanes on the same date, they target the same locked attempts.
 
 ## Reset Experimental Data
 

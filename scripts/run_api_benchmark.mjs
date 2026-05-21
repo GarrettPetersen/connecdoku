@@ -9,7 +9,9 @@ const MODELS_FILE = path.join(ROOT, "data", "api_benchmark_models.json");
 const DEFAULT_API_BASE = "https://connecdoku.com";
 const PROMPT_VERSION = "api-benchmark-v1";
 const MAX_STEPS_DEFAULT = 64;
+const MAX_ACTION_RETRIES = 3;
 const NOTE_MAX_CHARS = 500;
+const HTTP_TIMEOUT_MS_DEFAULT = 120000;
 
 function loadDotEnv() {
   const envPath = path.join(ROOT, ".env");
@@ -65,33 +67,58 @@ function sha1(s) {
   return crypto.createHash("sha1").update(s).digest("hex");
 }
 
-async function postJson(url, body, headers = {}) {
+async function fetchJsonWithTimeout(url, init = {}, timeoutMs = HTTP_TIMEOUT_MS_DEFAULT) {
+  const controller = new AbortController();
+  let timer = null;
+  const timeoutPromise = new Promise((_, reject) => {
+    timer = setTimeout(() => {
+      controller.abort();
+      reject(new Error(`Request timeout after ${timeoutMs}ms`));
+    }, timeoutMs);
+  });
+
+  const opPromise = (async () => {
+    const res = await fetch(url, { ...init, signal: controller.signal });
+    const raw = await res.text();
+    let json = {};
+    try {
+      json = raw ? JSON.parse(raw) : {};
+    } catch {
+      json = {};
+    }
+    return { res, json };
+  })();
+
+  try {
+    return await Promise.race([opPromise, timeoutPromise]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
+function httpTimeoutMs() {
+  return Math.max(5000, Number(process.env.API_BENCH_HTTP_TIMEOUT_MS || HTTP_TIMEOUT_MS_DEFAULT));
+}
+
+async function postJson(url, body, headers = {}, timeoutOverrideMs = null) {
   const started = Date.now();
-  const res = await fetch(url, {
+  const { res, json } = await fetchJsonWithTimeout(url, {
     method: "POST",
     headers: { "content-type": "application/json", ...headers },
     body: JSON.stringify(body || {}),
-  });
+  }, timeoutOverrideMs == null ? httpTimeoutMs() : Math.max(5000, Number(timeoutOverrideMs)));
   const elapsedMs = Date.now() - started;
-  let json = {};
-  try {
-    json = await res.json();
-  } catch {
-    json = {};
-  }
   return { ok: res.ok && json.ok !== false, status: res.status, json, elapsedMs };
 }
 
-async function getJson(url, headers = {}) {
+async function getJson(url, headers = {}, timeoutOverrideMs = null) {
   const started = Date.now();
-  const res = await fetch(url, { method: "GET", headers });
+  const { res, json } = await fetchJsonWithTimeout(
+    url,
+    { method: "GET", headers },
+    timeoutOverrideMs == null ? httpTimeoutMs() : Math.max(5000, Number(timeoutOverrideMs))
+  );
   const elapsedMs = Date.now() - started;
-  let json = {};
-  try {
-    json = await res.json();
-  } catch {
-    json = {};
-  }
   return { ok: res.ok && json.ok !== false, status: res.status, json, elapsedMs };
 }
 
@@ -104,11 +131,28 @@ function extractTextFromOpenAIStyle(respJson) {
   const choice = respJson?.choices?.[0];
   const msg = choice?.message;
   if (!msg) return "";
-  if (typeof msg.content === "string") return msg.content;
+  if (typeof msg.content === "string" && msg.content.trim()) return msg.content;
   if (Array.isArray(msg.content)) {
-    return msg.content.map((x) => (typeof x === "string" ? x : (x?.text || ""))).join("\n");
+    const contentText = msg.content.map((x) => (typeof x === "string" ? x : (x?.text || ""))).join("\n").trim();
+    if (contentText) return contentText;
   }
+  if (typeof msg.reasoning_content === "string" && msg.reasoning_content.trim()) return msg.reasoning_content;
+  if (typeof choice?.text === "string" && choice.text.trim()) return choice.text;
   return "";
+}
+
+function extractTextFromOpenAIResponses(respJson) {
+  if (!respJson || typeof respJson !== "object") return "";
+  if (typeof respJson.output_text === "string") return respJson.output_text;
+  const out = Array.isArray(respJson.output) ? respJson.output : [];
+  const parts = [];
+  for (const item of out) {
+    const content = Array.isArray(item?.content) ? item.content : [];
+    for (const c of content) {
+      if (typeof c?.text === "string" && c.text) parts.push(c.text);
+    }
+  }
+  return parts.join("\n");
 }
 
 function parseJsonObjectLoose(text) {
@@ -153,6 +197,26 @@ function parseJsonObjectLoose(text) {
     }
     return null;
   }
+}
+
+function parseActionFromTextLoose(text) {
+  const src = String(text || "").trim();
+  if (!src) return null;
+  const lower = src.toLowerCase();
+
+  const guess = lower.match(/\b(?:guess\s+)?(row|col|column)\s*[:#]?\s*([0-3])\b/);
+  if (guess) {
+    const kind = guess[1] === "row" ? "row" : "col";
+    return { action: "guess", kind, index: Number(guess[2]) };
+  }
+
+  if (lower.includes("swap")) {
+    const nums = Array.from(lower.matchAll(/\b([0-3])\s*,\s*([0-3])\b/g)).map((m) => [Number(m[1]), Number(m[2])]);
+    if (nums.length >= 2) {
+      return { action: "swap", a: nums[0], b: nums[1] };
+    }
+  }
+  return null;
 }
 
 function buildBoardText(state) {
@@ -252,39 +316,16 @@ function normalizeAction(obj) {
   return null;
 }
 
-function fallbackAction(state) {
-  // Prefer legal guess actions to drive the game forward.
-  const canRow = !!state?.rules?.canGuessRow;
-  const canCol = !!state?.rules?.canGuessCol;
-
-  const solvedRows = new Set((state?.solved?.rows || []).map((x) => x.index));
-  const solvedCols = new Set((state?.solved?.cols || []).map((x) => x.index));
-
-  if (canRow) {
-    for (let i = 0; i < 4; i++) {
-      if (!solvedRows.has(i)) return { action: "guess", kind: "row", index: i, fallback: true };
-    }
-  }
-  if (canCol) {
-    for (let i = 0; i < 4; i++) {
-      if (!solvedCols.has(i)) return { action: "guess", kind: "col", index: i, fallback: true };
-    }
-  }
-
-  // Fallback swap on first two unlocked cells.
-  const lockedRows = solvedRows;
-  const lockedCols = solvedCols;
-  const unlocked = [];
-  for (let r = 0; r < 4; r++) {
-    for (let c = 0; c < 4; c++) {
-      if (!lockedRows.has(r) && !lockedCols.has(c)) unlocked.push([r, c]);
-    }
-  }
-  if (unlocked.length >= 2) {
-    return { action: "swap", a: unlocked[0], b: unlocked[1], fallback: true };
-  }
-
-  return { action: "guess", kind: canRow ? "row" : "col", index: 0, fallback: true };
+function buildRepairPrompt(basePrompt, reason, lastOutput) {
+  const details = trimText(lastOutput || "", 280);
+  return [
+    basePrompt,
+    "",
+    "Your previous response was invalid for this API turn.",
+    `Reason: ${reason}`,
+    details ? `Previous response: ${details}` : "Previous response: (empty)",
+    "Reply again with exactly one valid JSON action object only.",
+  ].join("\n");
 }
 
 function normalizeUsage(provider, json) {
@@ -336,6 +377,30 @@ function geminiThinkingBudgetFor(level) {
   return 12288; // xhigh
 }
 
+function openAiErrorMessage(resp) {
+  return String(resp?.json?.error?.message || resp?.json?.error || "unknown");
+}
+
+function isOpenAiUnsupportedTemperature(resp) {
+  const msg = openAiErrorMessage(resp).toLowerCase();
+  return resp?.status === 400 && msg.includes("temperature") && msg.includes("unsupported");
+}
+
+function isOpenAiUnsupportedReasoningEffort(resp) {
+  const msg = openAiErrorMessage(resp).toLowerCase();
+  return resp?.status === 400 && msg.includes("reasoning_effort") && msg.includes("unsupported");
+}
+
+function isOpenAiUnsupportedResponseFormat(resp) {
+  const msg = openAiErrorMessage(resp).toLowerCase();
+  return resp?.status === 400 && msg.includes("response_format") && msg.includes("unsupported");
+}
+
+function isOpenAiNotChatModel(resp) {
+  const msg = openAiErrorMessage(resp).toLowerCase();
+  return resp?.status === 404 && msg.includes("not a chat model");
+}
+
 async function callProviderModel(cfg, prompt, mode = "action") {
   const provider = cfg.provider;
   const model = cfg.resolvedApiModel;
@@ -345,13 +410,16 @@ async function callProviderModel(cfg, prompt, mode = "action") {
   if (provider === "openai") {
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) throw new Error("OPENAI_API_KEY missing.");
-    const body = {
+    const baseBody = {
       model,
-      temperature,
       messages: [
         { role: "system", content: mode === "note" ? "Return plain text only." : "You are a careful puzzle solver. Return only valid JSON." },
         { role: "user", content: prompt },
       ],
+    };
+    let body = {
+      ...baseBody,
+      temperature,
     };
     if (mode !== "note") {
       body.response_format = { type: "json_object" };
@@ -359,9 +427,51 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     // Some models support this; harmless if ignored.
     body.reasoning_effort = reasoningLevel;
 
-    const resp = await postJson("https://api.openai.com/v1/chat/completions", body, {
+    let resp = await postJson("https://api.openai.com/v1/chat/completions", body, {
       authorization: `Bearer ${apiKey}`,
     });
+    if (!resp.ok && isOpenAiUnsupportedTemperature(resp)) {
+      body = { ...body };
+      delete body.temperature;
+      resp = await postJson("https://api.openai.com/v1/chat/completions", body, {
+        authorization: `Bearer ${apiKey}`,
+      });
+    }
+    if (!resp.ok && isOpenAiUnsupportedReasoningEffort(resp)) {
+      body = { ...body };
+      delete body.reasoning_effort;
+      resp = await postJson("https://api.openai.com/v1/chat/completions", body, {
+        authorization: `Bearer ${apiKey}`,
+      });
+    }
+    if (!resp.ok && isOpenAiUnsupportedResponseFormat(resp) && mode !== "note") {
+      body = { ...body };
+      delete body.response_format;
+      resp = await postJson("https://api.openai.com/v1/chat/completions", body, {
+        authorization: `Bearer ${apiKey}`,
+      });
+    }
+    if (!resp.ok && isOpenAiNotChatModel(resp)) {
+      const responsesBody = {
+        model,
+        input: [
+          { role: "system", content: mode === "note" ? "Return plain text only." : "You are a careful puzzle solver. Return only valid JSON." },
+          { role: "user", content: prompt },
+        ],
+      };
+      const rr = await postJson("https://api.openai.com/v1/responses", responsesBody, {
+        authorization: `Bearer ${apiKey}`,
+      });
+      if (!rr.ok) {
+        throw new Error(`OpenAI responses error (${rr.status}): ${rr.json?.error?.message || rr.json?.error || "unknown"}`);
+      }
+      return {
+        text: extractTextFromOpenAIResponses(rr.json),
+        usage: normalizeUsage("openai", rr.json),
+        latencyMs: rr.elapsedMs,
+        providerModel: rr.json?.model || model,
+      };
+    }
     if (!resp.ok) throw new Error(`OpenAI error (${resp.status}): ${resp.json?.error?.message || resp.json?.error || "unknown"}`);
     return {
       text: extractTextFromOpenAIStyle(resp.json),
@@ -377,7 +487,6 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     const body = {
       model,
       max_tokens: mode === "note" ? 180 : 240,
-      temperature,
       system: "Return only JSON for action mode. For note mode, plain text only.",
       messages: [{ role: "user", content: prompt }],
     };
@@ -434,8 +543,9 @@ async function callProviderModel(cfg, prompt, mode = "action") {
 
     const body = {
       model,
+      max_tokens: mode === "note" ? 180 : 260,
       temperature,
-      response_format: mode === "note" ? undefined : { type: "json_object" },
+      response_format: (mode === "note" || provider === "moonshot") ? undefined : { type: "json_object" },
       messages: [
         { role: "system", content: "Return valid JSON only for action mode." },
         { role: "user", content: prompt },
@@ -445,13 +555,15 @@ async function callProviderModel(cfg, prompt, mode = "action") {
       // xAI documents reasoning_effort on grok-4.3.
       body.reasoning_effort = reasoningLevel === "xhigh" ? "high" : reasoningLevel;
     }
+    const providerTimeoutMs = provider === "moonshot" ? Math.max(httpTimeoutMs(), 300000) : httpTimeoutMs();
     const resp = await postJson(`${entry.base.replace(/\/+$/, "")}/chat/completions`, body, {
       authorization: `Bearer ${entry.key}`,
-    });
+    }, providerTimeoutMs);
     if (!resp.ok) throw new Error(`${provider} error (${resp.status}): ${resp.json?.error?.message || resp.json?.error || "unknown"}`);
 
+    const extractedText = extractTextFromOpenAIStyle(resp.json);
     return {
-      text: extractTextFromOpenAIStyle(resp.json),
+      text: extractedText,
       usage: normalizeUsage(provider, resp.json),
       latencyMs: resp.elapsedMs,
       providerModel: resp.json?.model || model,
@@ -502,104 +614,106 @@ async function runSingleModel(opts, modelCfg) {
   let step = 0;
 
   while (!state.finished && step < opts.maxSteps) {
-    const prompt = buildDecisionPrompt(state, stats, modelCfg);
+    const basePrompt = buildDecisionPrompt(state, stats, modelCfg);
+    let repairReason = "No valid command received.";
+    let lastModelOutput = "";
+    let stepSolved = false;
 
-    let action = null;
-    let modelRespText = "";
-    try {
-      const modelResp = await callProviderModel(modelCfg, prompt, "action");
-      stats.modelApiCalls += 1;
-      stats.modelLatencyMsTotal += modelResp.latencyMs;
-      stats.modelLatencyMsMax = Math.max(stats.modelLatencyMsMax, modelResp.latencyMs);
-      stats.inputTokens += Number(modelResp.usage.inputTokens || 0);
-      stats.outputTokens += Number(modelResp.usage.outputTokens || 0);
-      stats.totalTokens += Number(modelResp.usage.totalTokens || 0);
-      modelRespText = modelResp.text;
+    for (let attempt = 0; attempt < MAX_ACTION_RETRIES; attempt++) {
+      const prompt = attempt === 0 ? basePrompt : buildRepairPrompt(basePrompt, repairReason, lastModelOutput);
 
-      const parsed = parseJsonObjectLoose(modelResp.text);
-      action = normalizeAction(parsed);
-    } catch (e) {
-      stats.modelApiErrors += 1;
-      stats.gameInvalidActions += 1;
-      action = null;
-      actionTrace.push({ step, error: `model_call_error: ${e.message}` });
-    }
+      let action = null;
+      let modelRespText = "";
+      try {
+        const modelResp = await callProviderModel(modelCfg, prompt, "action");
+        stats.modelApiCalls += 1;
+        stats.modelLatencyMsTotal += modelResp.latencyMs;
+        stats.modelLatencyMsMax = Math.max(stats.modelLatencyMsMax, modelResp.latencyMs);
+        stats.inputTokens += Number(modelResp.usage.inputTokens || 0);
+        stats.outputTokens += Number(modelResp.usage.outputTokens || 0);
+        stats.totalTokens += Number(modelResp.usage.totalTokens || 0);
+        modelRespText = modelResp.text;
+        lastModelOutput = modelRespText;
 
-    if (!action) {
-      stats.gameFallbackActions += 1;
-      action = fallbackAction(state);
-    }
+        const parsed = parseJsonObjectLoose(modelResp.text);
+        action = normalizeAction(parsed);
+        if (!action) {
+          const textFallback = parseActionFromTextLoose(modelResp.text);
+          action = normalizeAction(textFallback);
+        }
+      } catch (e) {
+        stats.modelApiErrors += 1;
+        stats.gameInvalidActions += 1;
+        repairReason = `Model API call failed: ${e.message}`;
+        actionTrace.push({ step, attempt, error: `model_call_error: ${e.message}` });
+        if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
+        continue;
+      }
 
-    stats.gameActionsTotal += 1;
-    if (action.action === "swap") stats.gameSwaps += 1;
-    if (action.action === "guess") stats.gameGuesses += 1;
+      if (!action) {
+        stats.gameInvalidActions += 1;
+        const snippet = trimText(modelRespText, 200);
+        repairReason = snippet
+          ? `Response was not a valid JSON action command. Output: ${snippet}`
+          : "Response was not a valid JSON action command.";
+        actionTrace.push({ step, attempt, error: "invalid_action_json", modelOutput: trimText(modelRespText, 280) });
+        if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
+        continue;
+      }
 
-    let playResp;
-    if (action.action === "swap") {
-      playResp = await postJson(`${apiBase}/api/v1/competition/swap`, {
-        competitionToken,
-        a: action.a,
-        b: action.b,
-      });
-    } else {
-      playResp = await postJson(`${apiBase}/api/v1/competition/guess`, {
-        competitionToken,
-        kind: action.kind,
-        index: action.index,
-      });
-    }
+      stats.gameActionsTotal += 1;
+      if (action.action === "swap") stats.gameSwaps += 1;
+      if (action.action === "guess") stats.gameGuesses += 1;
 
-    if (!playResp.ok) {
-      stats.gameInvalidActions += 1;
+      const playResp = action.action === "swap"
+        ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: action.a, b: action.b })
+        : await postJson(`${apiBase}/api/v1/competition/guess`, { competitionToken, kind: action.kind, index: action.index });
+
+      if (!playResp.ok) {
+        stats.gameInvalidActions += 1;
+        repairReason = `Action rejected by game API: ${playResp.json?.error || `HTTP ${playResp.status}`}`;
+        actionTrace.push({
+          step,
+          attempt,
+          action,
+          modelOutput: trimText(modelRespText, 280),
+          apiError: playResp.json?.error || `HTTP ${playResp.status}`,
+        });
+        if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
+        continue;
+      }
+
+      if (action.action === "guess") {
+        if (playResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
+        else stats.gameIncorrectGuesses += 1;
+      }
+
+      state = playResp.json.state;
       actionTrace.push({
         step,
+        attempt,
         action,
         modelOutput: trimText(modelRespText, 280),
-        apiError: playResp.json?.error || `HTTP ${playResp.status}`,
+        strikes: state.strikes,
+        turn: state.turn,
+        finished: state.finished,
       });
-      step += 1;
-      continue;
+      stepSolved = true;
+      break;
     }
 
-    if (action.action === "guess") {
-      if (playResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
-      else stats.gameIncorrectGuesses += 1;
+    if (!stepSolved) {
+      throw new Error(`Model failed to produce an executable command at step ${step}. Last reason: ${repairReason}`);
     }
-
-    state = playResp.json.state;
-    actionTrace.push({
-      step,
-      action,
-      modelOutput: trimText(modelRespText, 280),
-      strikes: state.strikes,
-      turn: state.turn,
-      finished: state.finished,
-    });
     step += 1;
   }
 
-  // If model stalled, force completion with deterministic fallback guesses.
-  let forcedFinish = false;
-  let guard = 0;
-  while (!state.finished && guard < 32) {
-    const fb = fallbackAction(state);
-    const resp = fb.action === "swap"
-      ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: fb.a, b: fb.b })
-      : await postJson(`${apiBase}/api/v1/competition/guess`, { competitionToken, kind: fb.kind, index: fb.index });
-    stats.gameFallbackActions += 1;
-    stats.gameActionsTotal += 1;
-    if (fb.action === "swap") stats.gameSwaps += 1; else stats.gameGuesses += 1;
-    if (resp.ok) {
-      state = resp.json.state;
-      if (fb.action === "guess") {
-        if (resp.json?.result?.correct) stats.gameCorrectGuesses += 1;
-        else stats.gameIncorrectGuesses += 1;
-      }
-    } else {
-      stats.gameInvalidActions += 1;
-    }
-    guard += 1;
-    forcedFinish = true;
+  if (!state.finished) {
+    throw new Error(`Model did not finish puzzle within ${opts.maxSteps} turns.`);
+  }
+
+  if (stats.modelApiCalls < 1) {
+    throw new Error("No successful model API calls.");
   }
 
   let note = "";
@@ -661,7 +775,7 @@ async function runSingleModel(opts, modelCfg) {
     turnCount: state.turn,
     note,
     metadata: {
-      forcedFinish,
+      fallbackPromptRetries: stats.gameFallbackActions,
       maxSteps: opts.maxSteps,
       actionTrace: actionTrace.slice(-40),
       promptHash: sha1(buildDecisionPrompt(state, stats, modelCfg)),
@@ -797,6 +911,9 @@ async function main() {
   console.log(`\nCompleted: ${okRuns.length}/${results.length}`);
   console.log(`Average strikes: ${avgStrikes.toFixed(2)}`);
   console.log(`Estimated total cost: $${totalCost.toFixed(4)}`);
+  if (failedRuns.length) {
+    process.exitCode = 1;
+  }
 }
 
 main().catch((e) => {

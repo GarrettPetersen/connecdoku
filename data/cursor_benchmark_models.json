@@ -1,0 +1,24 @@
+[
+  {
+    "enabled": true,
+    "competitionModel": "composer-2",
+    "displayName": "Composer 2",
+    "provider": "cursor",
+    "apiModel": "composer-2",
+    "apiModelEnv": "CURSOR_BENCH_MODEL_COMPOSER_2",
+    "passwordEnv": "AI_PASS_COMPOSER_2",
+    "reasoningLevel": "medium",
+    "temperature": 0.2
+  },
+  {
+    "enabled": true,
+    "competitionModel": "composer-2.5",
+    "displayName": "Composer 2.5",
+    "provider": "cursor",
+    "apiModel": "composer-2.5",
+    "apiModelEnv": "CURSOR_BENCH_MODEL_COMPOSER_2_5",
+    "passwordEnv": "AI_PASS_COMPOSER_2_5",
+    "reasoningLevel": "medium",
+    "temperature": 0.2
+  }
+]

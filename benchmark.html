@@ -278,6 +278,21 @@ table {
 (function () {
   const API_URL = '/api/v1/competition/benchmark';
   const TOOLTIP_GAP = 8;
+  const OFFICIAL_MODEL_ORDER = [
+    'gpt-5.5',
+    'gpt-5.4',
+    'gpt-5.3',
+    'gpt-5.4-nano',
+    'opus-4.7',
+    'sonnet-4.6',
+    'haiku-4.5',
+    'gemini-3.5-flash',
+    'grok-4.3',
+    'kimi-k2.5',
+    'composer-2',
+    'composer-2.5'
+  ];
+  const OFFICIAL_MODEL_SET = new Set(OFFICIAL_MODEL_ORDER);
 
   const leaderboardWrap = document.getElementById('leaderboardWrap');
   const matrixWrap = document.getElementById('matrixWrap');
@@ -366,7 +381,14 @@ table {
   }
 
   function buildLeaderboard(rows) {
-    if (!rows.length) {
+    const filteredRows = rows.filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')));
+    filteredRows.sort((a, b) => {
+      const ai = OFFICIAL_MODEL_ORDER.indexOf(String(a.model || ''));
+      const bi = OFFICIAL_MODEL_ORDER.indexOf(String(b.model || ''));
+      return ai - bi;
+    });
+
+    if (!filteredRows.length) {
       leaderboardWrap.innerHTML = '<div class="empty-state">No benchmark results yet.</div>';
       leaderboardMeta.textContent = 'No submitted runs yet.';
       return;
@@ -388,7 +410,7 @@ table {
     `;
 
     const tbody = table.querySelector('tbody');
-    rows.forEach((row, idx) => {
+    filteredRows.forEach((row, idx) => {
       const tr = document.createElement('tr');
       const avg = safeAvg(row.avg_strikes);
       const avgText = avg === null ? '—' : avg.toFixed(2);
@@ -406,7 +428,7 @@ table {
 
     leaderboardWrap.innerHTML = '';
     leaderboardWrap.appendChild(table);
-    leaderboardMeta.textContent = `${rows.length} models with submitted results.`;
+    leaderboardMeta.textContent = `${filteredRows.length} models with submitted results.`;
   }
 
   function buildMatrix(data) {
@@ -415,8 +437,11 @@ table {
     const dates = Array.isArray(data.dates) ? data.dates : [];
 
     const modelMap = new Map();
-    modelsInput.forEach((m) => modelMap.set(m.model, { ...m }));
+    modelsInput
+      .filter((m) => OFFICIAL_MODEL_SET.has(String(m.model || '')))
+      .forEach((m) => modelMap.set(m.model, { ...m }));
     results.forEach((r) => {
+      if (!OFFICIAL_MODEL_SET.has(String(r.model || ''))) return;
       if (!modelMap.has(r.model)) {
         modelMap.set(r.model, {
           model: r.model,
@@ -431,12 +456,9 @@ table {
       leaderboardOrder.set(row.model, idx);
     });
 
-    const models = [...modelMap.values()].sort((a, b) => {
-      const aIdx = leaderboardOrder.has(a.model) ? leaderboardOrder.get(a.model) : Number.MAX_SAFE_INTEGER;
-      const bIdx = leaderboardOrder.has(b.model) ? leaderboardOrder.get(b.model) : Number.MAX_SAFE_INTEGER;
-      if (aIdx !== bIdx) return aIdx - bIdx;
-      return String(a.display_name || a.model).localeCompare(String(b.display_name || b.model));
-    });
+    const models = OFFICIAL_MODEL_ORDER
+      .filter((id) => modelMap.has(id))
+      .map((id) => modelMap.get(id));
 
     if (!models.length || !dates.length) {
       matrixWrap.innerHTML = '<div class="empty-state">No matrix data yet.</div>';
@@ -446,6 +468,7 @@ table {
 
     const resultByKey = new Map();
     for (const row of results) {
+      if (!OFFICIAL_MODEL_SET.has(String(row.model || ''))) continue;
       resultByKey.set(`${row.puzzle_date}::${row.model}`, row);
     }
 

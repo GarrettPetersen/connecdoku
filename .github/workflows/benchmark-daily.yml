@@ -1,0 +1,94 @@
+name: Daily AI Benchmark
+
+on:
+  schedule:
+    - cron: '15 8 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Puzzle date (YYYY-MM-DD). Leave blank for local today on runner.'
+        required: false
+        type: string
+      max_steps:
+        description: 'Max turns per model'
+        required: false
+        default: '64'
+        type: string
+      thinking_level:
+        description: 'Reasoning level baseline'
+        required: false
+        default: 'medium'
+        type: choice
+        options:
+          - low
+          - medium
+          - high
+
+concurrency:
+  group: daily-ai-benchmark-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  run-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Resolve run date
+        id: run_date
+        shell: bash
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            echo "date=${{ inputs.date }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "date=$(date +%F)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run all models in parallel
+        env:
+          COMPETITION_ADMIN_KEY: ${{ secrets.COMPETITION_ADMIN_KEY }}
+
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
+
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_BENCH_REPOSITORY: ${{ secrets.CURSOR_BENCH_REPOSITORY }}
+          CURSOR_BENCH_REPOSITORY_REF: ${{ secrets.CURSOR_BENCH_REPOSITORY_REF }}
+
+          AI_PASS_GPT_5_5: ${{ secrets.AI_PASS_GPT_5_5 }}
+          AI_PASS_GPT_5_4: ${{ secrets.AI_PASS_GPT_5_4 }}
+          AI_PASS_GPT_5_3: ${{ secrets.AI_PASS_GPT_5_3 }}
+          AI_PASS_GPT_5_4_NANO: ${{ secrets.AI_PASS_GPT_5_4_NANO }}
+          AI_PASS_OPUS_4_7: ${{ secrets.AI_PASS_OPUS_4_7 }}
+          AI_PASS_SONNET_4_6: ${{ secrets.AI_PASS_SONNET_4_6 }}
+          AI_PASS_HAIKU_4_5: ${{ secrets.AI_PASS_HAIKU_4_5 }}
+          AI_PASS_GEMINI_3_1_PRO: ${{ secrets.AI_PASS_GEMINI_3_1_PRO }}
+          AI_PASS_GEMINI_3_5_FLASH: ${{ secrets.AI_PASS_GEMINI_3_5_FLASH }}
+          AI_PASS_GROK_4_3: ${{ secrets.AI_PASS_GROK_4_3 }}
+          AI_PASS_KIMI_K2_5: ${{ secrets.AI_PASS_KIMI_K2_5 }}
+
+          AI_PASS_COMPOSER_2: ${{ secrets.AI_PASS_COMPOSER_2 }}
+          AI_PASS_COMPOSER_2_5: ${{ secrets.AI_PASS_COMPOSER_2_5 }}
+        run: |
+          DATE="${{ steps.run_date.outputs.date }}"
+          MAX_STEPS="${{ inputs.max_steps || '64' }}"
+          THINKING="${{ inputs.thinking_level || 'medium' }}"
+          node scripts/run_all_benchmarks_parallel.mjs \
+            --date "$DATE" \
+            --max-steps "$MAX_STEPS" \
+            --thinking-level "$THINKING" \
+            --concurrency 32 \
+            --lanes direct,cursor

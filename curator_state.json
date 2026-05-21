@@ -5,924 +5,904 @@
   "searchChoice": "solve_and_curate",
   "targetCategories": [],
   "currentPuzzle": {
-    "hash": "db40b20ec412e314804799c35b62bc456fb2ccdb65172393c87d76b6d7a2bc36",
+    "hash": "1adcd65ba592d443fdb0d71412d328da7cc8ec250e6bffdb1bdf2add2f0f6840",
     "rows": [
-      "1990s",
-      "Birds",
-      "Ends with INE",
-      "Foods"
+      "3D Animated Films",
+      "Carnivores",
+      "NATO Phonetic Alphabet",
+      "Tang Dynasty"
     ],
     "cols": [
-      "Jurassic Period",
-      "Red Things",
-      "Things Canadian",
-      "White Things"
+      "Foods",
+      "Men",
+      "Starts with TAN",
+      "Women"
     ],
     "timestamp": null,
-    "qualityScore": 7.87,
-    "maxSimilarityToPast": 0.3443,
-    "similarityPenalty": 2.7544,
-    "movieOverlapPenalty": 2.998824636790787,
+    "qualityScore": 6.990000000000001,
+    "maxSimilarityToPast": 0,
+    "similarityPenalty": 0,
+    "movieOverlapPenalty": 5.463454705449824,
     "yearProximityPenalty": 0,
     "adjacentDecadePenalty": 0,
     "adjacentCenturyPenalty": 0,
     "temporalPenalty": 0,
-    "finalScore": 2.1167753632092134
+    "finalScore": 1.5265452945501767
   },
   "viableGrid": [
     [
       [
-        "Jurassic Park"
+        "Ratatouille"
       ],
       [
-        "Gambit",
-        "Red Pill"
+        "The Grinch"
       ],
       [
-        "Rush",
-        "Wayne Gretzky"
+        "Tangled"
       ],
       [
-        "Angel"
+        "Moana"
       ]
     ],
     [
       [
-        "Anchiornis",
-        "Archaeopteryx"
+        "Salmon"
       ],
       [
-        "Cardinal",
-        "Phoenix"
+        "Bowser",
+        "Garfield",
+        "Penguin",
+        "Vulture",
+        "Wolverine"
       ],
       [
-        "Drake"
+        "Tanystropheus"
       ],
       [
-        "Albatross",
-        "Swan"
+        "Black Widow"
       ]
     ],
     [
       [
-        "Pine"
+        "Lima"
       ],
       [
-        "Red Wine"
+        "Bravo",
+        "Oscar",
+        "Papa",
+        "Romeo",
+        "Victor",
+        "Zulu"
       ],
       [
-        "Ice Wine"
+        "Tango"
       ],
       [
-        "White Wine"
+        "Juliet"
       ]
     ],
     [
       [
-        "Crayfish",
-        "Shrimp"
+        "Char Siu",
+        "Hot Pot",
+        "Lo Mein",
+        "Mooncake",
+        "Sweet and Sour"
       ],
       [
-        "Apple",
-        "Barszcz",
-        "Bolognese",
-        "Borscht",
-        "Ketchup",
-        "Marinara",
-        "Red Curry",
-        "Red Velvet",
-        "Salsa",
-        "Sriracha",
-        "Tomato"
+        "Du Fu",
+        "Huineng",
+        "Li Bai",
+        "Li Jiancheng",
+        "Li Shimin",
+        "Li Yuanji",
+        "Zhiyi"
       ],
       [
-        "All Dressed Chips",
-        "Bannock",
-        "Beaver Tail",
-        "Butter Tart",
-        "Coffee Crisp",
-        "Hawaiian Pizza",
-        "Ketchup Chips",
-        "Kraft Dinner",
-        "Montreal Bagel",
-        "Montreal Smoked Meat",
-        "Nanaimo Bar",
-        "Pouding Chomeur",
-        "Smarties",
-        "Split Pea Soup",
-        "Tarte au Sucre",
-        "Tourtiere"
+        "Tang Poetry"
       ],
       [
-        "Aioli",
-        "Alfredo",
-        "Bechamel",
-        "Carbonara",
-        "Egg",
-        "Mayo",
-        "Milk",
-        "Ranch",
-        "Veloute"
+        "Wu Zetian"
       ]
     ]
   ],
   "chosen": [
     [
-      "Jurassic Park",
-      "Red Pill",
-      "Wayne Gretzky",
-      "Angel"
+      "Ratatouille",
+      "The Grinch",
+      "Tangled",
+      "Moana"
     ],
     [
-      "Archaeopteryx",
-      "Cardinal",
-      "Drake",
-      "Swan"
+      "Salmon",
+      "Garfield",
+      "Tanystropheus",
+      "Black Widow"
     ],
     [
-      "Pine",
-      "Red Wine",
-      "Ice Wine",
-      "White Wine"
+      "Lima",
+      "Bravo",
+      "Tango",
+      "Juliet"
     ],
     [
-      "Shrimp",
-      "Tomato",
-      "Butter Tart",
-      "Alfredo"
+      "Char Siu",
+      "Li Bai",
+      "Tang Poetry",
+      "Wu Zetian"
     ]
   ],
   "usedWords": [
-    "Jurassic Park",
-    "Red Pill",
-    "Wayne Gretzky",
-    "Angel",
-    "Archaeopteryx",
-    "Cardinal",
-    "Drake",
-    "Swan",
-    "Pine",
-    "Red Wine",
-    "Ice Wine",
-    "White Wine",
-    "Shrimp",
-    "Tomato",
-    "Butter Tart",
-    "Alfredo"
+    "Ratatouille",
+    "The Grinch",
+    "Tangled",
+    "Moana",
+    "Salmon",
+    "Garfield",
+    "Tanystropheus",
+    "Black Widow",
+    "Lima",
+    "Bravo",
+    "Tango",
+    "Juliet",
+    "Char Siu",
+    "Li Bai",
+    "Tang Poetry",
+    "Wu Zetian"
   ],
   "currentRow": 4,
   "currentCol": 0,
   "excludedPuzzleHash": null,
   "puzzles": [
     {
-      "hash": "db40b20ec412e314804799c35b62bc456fb2ccdb65172393c87d76b6d7a2bc36",
+      "hash": "1adcd65ba592d443fdb0d71412d328da7cc8ec250e6bffdb1bdf2add2f0f6840",
       "rows": [
-        "1990s",
-        "Birds",
-        "Ends with INE",
-        "Foods"
+        "3D Animated Films",
+        "Carnivores",
+        "NATO Phonetic Alphabet",
+        "Tang Dynasty"
       ],
       "cols": [
+        "Foods",
+        "Men",
+        "Starts with TAN",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 6.990000000000001,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 5.463454705449824,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": 1.5265452945501767
+    },
+    {
+      "hash": "6dbdc93cf0e6f1cbe6f972b8542436b831a693cf2bf3c548597579bd74ca1e44",
+      "rows": [
+        "Fish",
+        "Movies",
+        "Omnivores",
+        "Starts with SPI"
+      ],
+      "cols": [
+        "Foods",
         "Jurassic Period",
-        "Red Things",
-        "Things Canadian",
-        "White Things"
+        "Sea Creatures",
+        "Things British"
       ],
       "timestamp": null,
-      "qualityScore": 7.87,
-      "maxSimilarityToPast": 0.3443,
-      "similarityPenalty": 2.7544,
-      "movieOverlapPenalty": 2.998824636790787,
+      "qualityScore": 7.3100000000000005,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 6.0426153751634155,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": 2.1167753632092134
+      "finalScore": 1.267384624836585
     },
     {
-      "hash": "b9370b216eb84d5e7efdc635334900b69ee6a51b95a527cd5531a776110325b1",
+      "hash": "6d49f7b532b825f38543a66d8e65ea5e64a8ce7acde8ab1a3fba31fe8814d88f",
       "rows": [
-        "1990s",
-        "2003",
-        "Fictional Animals",
-        "The Bad Place"
-      ],
-      "cols": [
-        "Books",
-        "Music",
-        "Mythical Creatures",
-        "Video Games"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.29,
-      "maxSimilarityToPast": 0.4009,
-      "similarityPenalty": 3.2072,
-      "movieOverlapPenalty": 10.210386948783192,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -0.12758694878319332
-    },
-    {
-      "hash": "eca6ca629ef988ea0dcf5c038b42efdc4db95dad113d85a2d361203812c0f358",
-      "rows": [
-        "1990s",
-        "2000s",
-        "C.S. Lewis",
-        "Disney"
-      ],
-      "cols": [
-        "Fifth in Release Order",
-        "Fourth in Internal Chronology",
-        "Prequels",
-        "Stories about Families"
-      ],
-      "timestamp": null,
-      "qualityScore": 18.740000000000002,
-      "maxSimilarityToPast": 0.362,
-      "similarityPenalty": 2.896,
-      "movieOverlapPenalty": 21.187345543687083,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -5.943345543687082
-    },
-    {
-      "hash": "29a4de677fbec9c53623127f514c1e78f708b7b49f3c3d66fe802e92ca7e2346",
-      "rows": [
-        "1990s",
-        "2012",
-        "Cities in USA",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "Ships",
-        "Starts with MAD",
-        "Superheroes",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.85,
-      "maxSimilarityToPast": 0.2694,
-      "similarityPenalty": 2.1552,
-      "movieOverlapPenalty": 13.547246540232415,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -6.852446540232415
-    },
-    {
-      "hash": "acd1b891c741883558efc058a7ace173a9e271546b2d18fa7300dec1d74701c7",
-      "rows": [
-        "1990s",
-        "2016",
-        "Ends with LES",
+        "3D Animated Films",
+        "Cannibalism",
+        "Classic Literature",
         "Mentioned in We Didn't Start the Fire"
       ],
       "cols": [
-        "Fantasy Stories",
         "First in Release Order",
-        "Omnivores",
-        "US Navy"
+        "Music",
+        "People",
+        "Sci-fi Stories"
       ],
       "timestamp": null,
-      "qualityScore": 7.93,
-      "maxSimilarityToPast": 0.3637,
-      "similarityPenalty": 2.9096,
-      "movieOverlapPenalty": 12.505281547748686,
+      "qualityScore": 7.08,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 14.937091737790038,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -7.484881547748686
+      "finalScore": -7.8570917377900376
     },
     {
-      "hash": "7cdc3a0974ab7c0655f9968030f20c88505e71e3a3829f8471fed9677b4e7563",
+      "hash": "30b075b304858ddf0088374cdc7035d428171ec5a8f6d0788442b7c391ee8b3e",
       "rows": [
-        "1990s",
-        "2013",
-        "Family-Friendly Stories",
-        "Oscar Winners"
+        "3D Animated Films",
+        "Carnivores",
+        "Red Things",
+        "Things Roman"
       ],
       "cols": [
+        "Books",
+        "Fictional People",
+        "Foods",
+        "Starts with CAR"
+      ],
+      "timestamp": null,
+      "qualityScore": 3.9299999999999997,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 7.080116960873562,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -3.1501169608735626
+    },
+    {
+      "hash": "4d5e21869ef9448f89be6c99c11a112c1e40db811afe6acaecca46974f2fcd90",
+      "rows": [
+        "3D Animated Films",
+        "Ends with ARD",
+        "Han Dynasty",
+        "The Sinking of RMS Titanic"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 7.84,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 8.96108268133867,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -1.1210826813386703
+    },
+    {
+      "hash": "8cf6a3d972eaa280887491d63ddc8a53b34d47ba9888cb18574e93f30b19f4b9",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Locations in North America",
+        "Mythical Creatures"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Ends with GON",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.88,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 9.743485103579244,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -4.863485103579245
+    },
+    {
+      "hash": "1a8170c7dcb17f44820f6ea082c9a92d59db74df9de41f863f6509943ca4492f",
+      "rows": [
+        "3D Animated Films",
+        "Ends with ANO",
+        "Things Canadian",
+        "Things Korean"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Music"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.26,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 9.888173125103854,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -5.628173125103855
+    },
+    {
+      "hash": "ddaad604932b49382906ccb4822564f255491544336a8e1d1f27004d4fc99c69",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Starts with CHA",
+        "Things Greek"
+      ],
+      "cols": [
+        "Books",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.9199999999999995,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 6.047288978665889,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -3.1272889786658893
+    },
+    {
+      "hash": "be10fc7c75ded59d78dd301c8c46cad03f3c71b5cb5dcc2feb2167c0260b0d7d",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Ends with ING",
+        "Things Spanish"
+      ],
+      "cols": [
+        "Books",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.6599999999999997,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 6.17322284373734,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -3.5132228437373407
+    },
+    {
+      "hash": "3c472fc5da560359966f19cc7831fb453765d8f33832a7aab136d8fadd9a6e6d",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Roman Republic",
+        "Things Russian"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.2,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 7.956653002490387,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -3.7566530024903866
+    },
+    {
+      "hash": "958636615febb1f02e25f1266b31f6f0cff5d8c7264e5cb2439bafead18f81a8",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Starts with COM",
+        "Things Italian"
+      ],
+      "cols": [
+        "Books",
+        "Foods",
+        "Men",
+        "Music"
+      ],
+      "timestamp": null,
+      "qualityScore": 1.87,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 7.138410167890026,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -5.268410167890026
+    },
+    {
+      "hash": "aca875f19312ca1051bee582fdc18cb71007fc22548fe1655c95f0961ed9d866",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Real People",
+        "Starts with GRE"
+      ],
+      "cols": [
+        "Books",
+        "Fictional People",
+        "Foods",
+        "Music"
+      ],
+      "timestamp": null,
+      "qualityScore": 1.8,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 8.115749411908018,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -6.315749411908018
+    },
+    {
+      "hash": "e078bb436a565f857581e56881c34f3aba3065a4a21b234d75aa0971e0d152a5",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Locations in Europe",
+        "Starts with SHA"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 1.85,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 8.192213868991596,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -6.342213868991596
+    },
+    {
+      "hash": "a5a580445bdfd6472b40f1e812861e3ae504361ac652f0a7235da22359eaafb6",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Republics",
+        "Things Chinese"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Starts with TAN"
+      ],
+      "timestamp": null,
+      "qualityScore": 1.8800000000000001,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 8.342458764239172,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -6.462458764239172
+    },
+    {
+      "hash": "119265209d52b13c5221cb5a5299aedec09b77eee41e5f2100d94880eda2b187",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Companies",
+        "Ends with EAT"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Music"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.8,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 9.491579075878226,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -6.691579075878226
+    },
+    {
+      "hash": "7501b2f1fb47f8b698cc271f011a8095350046c87d086ef191a38cf7992b12b1",
+      "rows": [
+        "3D Animated Films",
+        "Cannibalism",
+        "Ends with OON",
+        "Things French"
+      ],
+      "cols": [
+        "Books",
+        "Men",
+        "Music",
+        "Sci-fi Stories"
+      ],
+      "timestamp": null,
+      "qualityScore": 5.9,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 12.877611902367697,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -6.977611902367697
+    },
+    {
+      "hash": "19ceba73683958de37db2c47bf5ed812fc8962d520d43c12654a14b2d92827e3",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Cities",
+        "Ends with LES"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 1.9000000000000001,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 9.047006858171939,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.147006858171938
+    },
+    {
+      "hash": "410ebabb4ea9efbbd77bb1db8137cee36445445241e9290fcbf00a8bf92eff07",
+      "rows": [
+        "3D Animated Films",
+        "Ends with ANO",
+        "Roman Empire",
+        "Things That Fly"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Music"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.6300000000000003,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 9.925406814623996,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -7.295406814623995
+    },
+    {
+      "hash": "6fc18e9702e08fd8183dabd7b131c80b4a43765ff1fdf0bfe371e77ad19e1d41",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Monarchs",
+        "Place Names"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Ends with GON",
+        "Fictional People",
+        "Music"
+      ],
+      "timestamp": null,
+      "qualityScore": 2.25,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 11.31079927667409,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -9.06079927667409
+    },
+    {
+      "hash": "3e47a6d300e8ef556b06f205eb668066921ab1b232d8e96c3feb37a495ceb960",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Han Dynasty",
+        "Things Japanese"
+      ],
+      "cols": [
+        "Books",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.12,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 6.693929883202886,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -2.5739298832028856
+    },
+    {
+      "hash": "e6092ebfcc2f69239f65255c43a0addb1c9f751f69f61068d39d89dcd0a9214c",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Ends with TER",
+        "Han Dynasty"
+      ],
+      "cols": [
+        "Books",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.07,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 6.915611418753034,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -2.845611418753034
+    },
+    {
+      "hash": "3fc27cad2eea67a4eb35ad31da8db7e828e0fa20e7734ff66df5a0dbf4f83730",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Han Dynasty",
+        "Things German"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.51,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 7.928501227704585,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -3.418501227704585
+    },
+    {
+      "hash": "4bb6470bbe211311e6d08817435b66f9ea5ba128bc214bf54285c4ab8a248058",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Han Dynasty",
+        "Starts with TER"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.04,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 8.65949537975137,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -4.61949537975137
+    },
+    {
+      "hash": "26b6df17bc7f7bb798406f908dcfe21bd535dd7706346a5e87362bc92fa354e0",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Ends with MAN",
+        "Han Dynasty"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Women"
+      ],
+      "timestamp": null,
+      "qualityScore": 4.04,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 9.462914183170172,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -5.422914183170172
+    },
+    {
+      "hash": "a1e196c946a21b3a10c4aa4adf00644080730e56536a1b1bfd10bb3487f9ebd8",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
+        "Starts with DAN",
+        "Things Korean"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Music"
+      ],
+      "timestamp": null,
+      "qualityScore": 3.42,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 10.119919156849885,
+      "yearProximityPenalty": 0,
+      "adjacentDecadePenalty": 0,
+      "adjacentCenturyPenalty": 0,
+      "temporalPenalty": 0,
+      "finalScore": -6.6999191568498855
+    },
+    {
+      "hash": "728ef072e37acbee1d60316e2705d71c61417cc7c05926eb3032507357578dbd",
+      "rows": [
+        "3D Animated Films",
+        "Carnivores",
         "Romance Stories",
-        "Second in Release Order",
-        "Studio Ghibli",
-        "Third in Internal Chronology"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.36,
-      "maxSimilarityToPast": 0.3627,
-      "similarityPenalty": 2.9016,
-      "movieOverlapPenalty": 25.713056774236076,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -16.254656774236075
-    },
-    {
-      "hash": "23c4937ceb68a4620da81d446a7a3d7c283a2c7ba5d6740d2f51b13931834099",
-      "rows": [
-        "1990s",
-        "2004",
-        "Black and White",
-        "Sequels"
+        "Starts with COM"
       ],
       "cols": [
-        "Best Picture Winners",
-        "Christmas Stories",
-        "Ends with ERS",
-        "Period Stories"
+        "Books",
+        "Foods",
+        "Music",
+        "People"
       ],
       "timestamp": null,
-      "qualityScore": 9.26,
-      "maxSimilarityToPast": 0.4077,
-      "similarityPenalty": 3.2616,
-      "movieOverlapPenalty": 25.60553792583484,
+      "qualityScore": 2.3699999999999997,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 9.990592429203925,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -19.60713792583484
+      "finalScore": -7.620592429203926
     },
     {
-      "hash": "a30ecf95c7127cde8b8a4da3c46d91eea06cc45913948cc17bc47aadfaf2cbf8",
+      "hash": "e9ad85f1bab870a243aebc021aa2a731f954d29ce4f134ad634b335a046c1037",
       "rows": [
-        "1990s",
-        "2005",
-        "Mentioned in We Didn't Start the Fire",
-        "Things Indian"
+        "3D Animated Films",
+        "Carnivores",
+        "Locations in North America",
+        "Royalty"
       ],
       "cols": [
-        "Ends with WAR",
-        "Modern Countries",
-        "Musical Films",
-        "War Stories"
+        "Drama Stories",
+        "Ends with GON",
+        "Men",
+        "Music"
       ],
       "timestamp": null,
-      "qualityScore": 6.97,
-      "maxSimilarityToPast": 0.292,
-      "similarityPenalty": 2.336,
-      "movieOverlapPenalty": 12.52835367433857,
+      "qualityScore": 2.18,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 10.635153659290959,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -7.89435367433857
+      "finalScore": -8.455153659290959
     },
     {
-      "hash": "6b7ee3fc369e382e44ad85e2d3188c8f81032a2db80918cf06908d3b06992057",
+      "hash": "e3eb96ed3aa09d14355f70a7e35f6c497eccceda8b139f561ae57a7139ccdee8",
       "rows": [
-        "1990s",
-        "Classic Films",
-        "Folklore Figures",
-        "Foods"
+        "3D Animated Films",
+        "Carnivores",
+        "Locations in North America",
+        "National Leaders"
       ],
       "cols": [
-        "Animal Terms",
-        "Family-Friendly Stories",
-        "Shakespeare Characters",
-        "Starts with RED"
+        "Drama Stories",
+        "Ends with GON",
+        "Fictional People",
+        "Music"
       ],
       "timestamp": null,
-      "qualityScore": 10.1,
-      "maxSimilarityToPast": 0.306,
-      "similarityPenalty": 2.448,
-      "movieOverlapPenalty": 11.940605936228417,
+      "qualityScore": 1.87,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 11.30808874538273,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -4.288605936228418
+      "finalScore": -9.438088745382728
     },
     {
-      "hash": "0c2338beb0fe9dad3b48077d918a6ddd5cf7c73570fa9d5a3da653f52ed08a9f",
+      "hash": "e33fb2d3d3825c2bb7e691a7ef44aabd503636eae5802da65af984c77588cec8",
       "rows": [
-        "1990s",
-        "2015",
-        "First in Release Order",
-        "Second in Internal Chronology"
-      ],
-      "cols": [
-        "Civilian Ships",
-        "Pixar",
-        "Thriller Films",
-        "Western Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 16.689999999999998,
-      "maxSimilarityToPast": 0.3944,
-      "similarityPenalty": 3.1552,
-      "movieOverlapPenalty": 23.705842614625542,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -10.171042614625545
-    },
-    {
-      "hash": "88e9f59e8265768ca99015e304b2f6a42f4fd5e802db192f89113896da76a182",
-      "rows": [
-        "1990s",
-        "2014",
-        "Adventure Stories",
+        "3D Animated Films",
+        "Carnivores",
+        "Han Dynasty",
         "Red Things"
       ],
       "cols": [
         "Books",
-        "Ends with MAN",
-        "Japanese Films",
-        "Marvel Characters"
+        "Foods",
+        "Men",
+        "Women"
       ],
       "timestamp": null,
-      "qualityScore": 9.299999999999999,
-      "maxSimilarityToPast": 0.4039,
-      "similarityPenalty": 3.2312,
-      "movieOverlapPenalty": 16.283076095385383,
+      "qualityScore": 6.04,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 5.972850475992091,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -10.214276095385383
+      "finalScore": 0.06714952400790875
     },
     {
-      "hash": "f862a20ddedced7c0985ea37a4dd7f2bbcc3b181641d394eb93984ae5b7ead65",
+      "hash": "ed5a3933147d787218b2dc40353045d29d21fb52d5535052a303786e4c6aa2f6",
       "rows": [
-        "1990s",
-        "2007",
-        "Companies",
-        "Starts with CHI"
-      ],
-      "cols": [
-        "Aircraft",
-        "Disney",
-        "Music",
-        "Thriller Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.839999999999999,
-      "maxSimilarityToPast": 0.319,
-      "similarityPenalty": 2.552,
-      "movieOverlapPenalty": 15.876570577612682,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -10.588570577612684
-    },
-    {
-      "hash": "5303a7cb3a9ff531960c7a3000f55da37eb04e3440be2872ad3978c09c95ddf0",
-      "rows": [
-        "1990s",
-        "Cenozoic Era",
-        "Drinks",
-        "Foods"
-      ],
-      "cols": [
-        "Nautical Terms",
-        "Red Things",
-        "Starts with BEE",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 6,
-      "maxSimilarityToPast": 0.2791,
-      "similarityPenalty": 2.2328,
-      "movieOverlapPenalty": 3.3606433477989746,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": 0.4065566522010253
-    },
-    {
-      "hash": "251c666150daf3ddcf06c1d2135d6c588746c2b38c1309ff51f6a02147d0f629",
-      "rows": [
-        "1990s",
-        "Cars",
-        "Miocene Epoch",
-        "Video Games"
-      ],
-      "cols": [
-        "2000s",
-        "Mammals",
-        "Ships",
-        "Starts with FOR"
-      ],
-      "timestamp": null,
-      "qualityScore": 3.3300000000000005,
-      "maxSimilarityToPast": 0.3981,
-      "similarityPenalty": 3.1848,
-      "movieOverlapPenalty": 6.09168489422288,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -6.546484894222878
-    },
-    {
-      "hash": "9c17a61f4ae10a8e5e98333ef8a723cc8273ddc60cf491b72c1447e998eca1d7",
-      "rows": [
-        "1990s",
-        "2003",
-        "Ends with ITY",
-        "Fourth in Release Order"
-      ],
-      "cols": [
-        "Books",
-        "Crime Stories",
-        "Disney",
-        "The Matrix"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.81,
-      "maxSimilarityToPast": 0.3179,
-      "similarityPenalty": 2.5432,
-      "movieOverlapPenalty": 20.133577648626662,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -9.866777648626663
-    },
-    {
-      "hash": "5c61a4c1488e7b915b186c2ca409c8f23f8dd3e63a9ab352d48b572537f5705d",
-      "rows": [
-        "1990s",
-        "2006",
-        "Best Picture Winners",
-        "Plays"
-      ],
-      "cols": [
-        "Books",
-        "Ends with EST",
-        "Romance Stories",
-        "Sword and Sandals Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.379999999999999,
-      "maxSimilarityToPast": 0.5309,
-      "similarityPenalty": 4.2472,
-      "movieOverlapPenalty": 19.333255384695107,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -11.200455384695108
-    },
-    {
-      "hash": "bb64e795c74a60f17a322d22b1085a2bc699fbacf5c5bbc6455e5829a141c99e",
-      "rows": [
-        "1990s",
-        "Cities in USA",
-        "Countries",
-        "Musicians"
-      ],
-      "cols": [
-        "Animal Terms",
-        "Ends with LES",
-        "Saints",
-        "Things Canadian"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.11,
-      "maxSimilarityToPast": 0.4018,
-      "similarityPenalty": 3.2144,
-      "movieOverlapPenalty": 3.7786462356019657,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -1.8830462356019653
-    },
-    {
-      "hash": "09d41624df8abe9e84eeda72dff9eb46014af596781cea5bd05c874db27e57d4",
-      "rows": [
-        "1990s",
-        "2017",
-        "Greek Gods",
-        "Video Games"
-      ],
-      "cols": [
-        "Adventure Stories",
-        "Ends with TER",
-        "Music",
-        "Ships"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.76,
-      "maxSimilarityToPast": 0.4022,
-      "similarityPenalty": 3.2176,
-      "movieOverlapPenalty": 11.150518876704794,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -4.608118876704794
-    },
-    {
-      "hash": "f5efc8987e3932d040633b896454df56c767a0eb7ebe41ee80ca49a3760c696e",
-      "rows": [
-        "1990s",
-        "2010",
-        "Books",
-        "Cities in North America"
-      ],
-      "cols": [
-        "Music",
-        "Red Things",
-        "Starts with HAR",
-        "Time Travel Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.329999999999999,
-      "maxSimilarityToPast": 0.3238,
-      "similarityPenalty": 2.5904,
-      "movieOverlapPenalty": 11.254588743299262,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -6.514988743299263
-    },
-    {
-      "hash": "2649a052da6aa988706809d35d014f218570ed5e22853743b10db64a03445d03",
-      "rows": [
-        "1990s",
-        "2023",
-        "Books",
-        "Star Wars Universe"
-      ],
-      "cols": [
-        "Disney",
-        "Ends with DER",
-        "Thriller Stories",
-        "Video Games"
-      ],
-      "timestamp": null,
-      "qualityScore": 9.860000000000001,
-      "maxSimilarityToPast": 0.3535,
-      "similarityPenalty": 2.828,
-      "movieOverlapPenalty": 14.799332361749794,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -7.7673323617497925
-    },
-    {
-      "hash": "6e16b897a6d17f1e661f84b81a5848fa1394526f7f748ee99dbb57bf8f0a8ce0",
-      "rows": [
-        "1990s",
-        "2003",
-        "Trios",
-        "War Stories"
-      ],
-      "cols": [
-        "2D Animated Films",
-        "Books",
-        "Music",
-        "TV Shows"
-      ],
-      "timestamp": null,
-      "qualityScore": 12.379999999999999,
-      "maxSimilarityToPast": 0.5446,
-      "similarityPenalty": 4.3568,
-      "movieOverlapPenalty": 15.859670727335264,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -7.836470727335264
-    },
-    {
-      "hash": "b0a849b6006d50161c02885edb9eb0052d20449d05990415e16a51d7622c7c52",
-      "rows": [
-        "1990s",
-        "2019",
-        "Ends with LES",
-        "Mentioned in We Didn't Start the Fire"
-      ],
-      "cols": [
-        "Coming of Age Stories",
-        "Disney",
-        "Period Stories",
-        "Warships"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.179999999999998,
-      "maxSimilarityToPast": 0.5153,
-      "similarityPenalty": 4.1224,
-      "movieOverlapPenalty": 16.21683295460644,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -9.159232954606441
-    },
-    {
-      "hash": "c445742d7f9656addefb5e7a8ddf8534414ff376ed8b0599e58513285cd75d48",
-      "rows": [
-        "1990s",
-        "2002",
-        "Ends with OOD",
-        "Thriller Stories"
-      ],
-      "cols": [
-        "Haruki Murakami",
-        "Japanese Films",
-        "Oscar Winners",
-        "Superheroes"
-      ],
-      "timestamp": null,
-      "qualityScore": 13.040000000000001,
-      "maxSimilarityToPast": 0.4222,
-      "similarityPenalty": 3.3776,
-      "movieOverlapPenalty": 20.075852421752053,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -10.413452421752051
-    },
-    {
-      "hash": "778ad94d26d76a5d4942bcd3c38ae1619683592d367c4e00781765bb17965dc0",
-      "rows": [
-        "1990s",
-        "2000s",
-        "Epic Stories",
-        "Western Stories"
-      ],
-      "cols": [
-        "Ends with ARS",
-        "Oscar Winners",
-        "Third in Release Order",
-        "Video Games"
-      ],
-      "timestamp": null,
-      "qualityScore": 11.790000000000001,
-      "maxSimilarityToPast": 0.5158,
-      "similarityPenalty": 4.1264,
-      "movieOverlapPenalty": 17.654110057711872,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -10.590510057711871
-    },
-    {
-      "hash": "fb4a104285382f78eb97410944978b9fcb918369be84e8aca4c341e22e53ccbb",
-      "rows": [
-        "1990s",
-        "2001",
-        "Books",
-        "Music"
-      ],
-      "cols": [
         "3D Animated Films",
-        "Biographical Stories",
-        "First in Release Order",
-        "Things Canadian"
+        "Carnivores",
+        "Han Dynasty",
+        "The Sinking of RMS Titanic"
+      ],
+      "cols": [
+        "Drama Stories",
+        "Foods",
+        "Men",
+        "Women"
       ],
       "timestamp": null,
-      "qualityScore": 9.84,
-      "maxSimilarityToPast": 0.3005,
-      "similarityPenalty": 2.404,
-      "movieOverlapPenalty": 19.634679564380157,
+      "qualityScore": 7.92,
+      "maxSimilarityToPast": 0,
+      "similarityPenalty": 0,
+      "movieOverlapPenalty": 8.103939824195812,
       "yearProximityPenalty": 0,
       "adjacentDecadePenalty": 0,
       "adjacentCenturyPenalty": 0,
       "temporalPenalty": 0,
-      "finalScore": -12.198679564380157
-    },
-    {
-      "hash": "ba0970e190f3628ae4eedb62a412af40b76b05398f069592d580a2e160e5dc5b",
-      "rows": [
-        "1990s",
-        "Cities in USA",
-        "Islands",
-        "Music"
-      ],
-      "cols": [
-        "Ends with TON",
-        "Romance Stories",
-        "Saints",
-        "Video Games"
-      ],
-      "timestamp": null,
-      "qualityScore": 5.0600000000000005,
-      "maxSimilarityToPast": 0.3425,
-      "similarityPenalty": 2.74,
-      "movieOverlapPenalty": 7.396321707283718,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -5.076321707283718
-    },
-    {
-      "hash": "a602f9f14f98df8bffd7423bfe669bf9cf95e506fd5aca9078b685715180f145",
-      "rows": [
-        "1990s",
-        "2013",
-        "Animal Terms",
-        "Starts with ANN"
-      ],
-      "cols": [
-        "Books",
-        "Disney Characters",
-        "Music",
-        "Oscar Winners"
-      ],
-      "timestamp": null,
-      "qualityScore": 8.06,
-      "maxSimilarityToPast": 0.359,
-      "similarityPenalty": 2.872,
-      "movieOverlapPenalty": 12.547795786192031,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -7.359795786192031
-    },
-    {
-      "hash": "889bc8766e7e1faab2830ef6d3ed5610ecbb08bd9a86a0ed6776e1c280acdea4",
-      "rows": [
-        "1990s",
-        "2016",
-        "Mentioned in We Didn't Start the Fire",
-        "Starts with CAR"
-      ],
-      "cols": [
-        "Family-Friendly Stories",
-        "Military Ships",
-        "Music",
-        "Omnivores"
-      ],
-      "timestamp": null,
-      "qualityScore": 6.27,
-      "maxSimilarityToPast": 0.3995,
-      "similarityPenalty": 3.196,
-      "movieOverlapPenalty": 10.497273410115115,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -7.423273410115115
-    },
-    {
-      "hash": "be1d4fd07dcbd550ede73ec7d9cd926570dc9fa49c3e1ddc9c2a8d1f8ca2dd64",
-      "rows": [
-        "1990s",
-        "2014",
-        "Animal Terms",
-        "Ends with IRE"
-      ],
-      "cols": [
-        "Blue Things",
-        "Books",
-        "Music",
-        "Oscar Winners"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.35,
-      "maxSimilarityToPast": 0.3241,
-      "similarityPenalty": 2.5928,
-      "movieOverlapPenalty": 13.540652929049173,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0,
-      "finalScore": -8.783452929049174
-    },
-    {
-      "hash": "3bb52a268b17f27056518f0500f177d7d8d8e907a5936ff13d3e4914bd3685aa",
-      "rows": [
-        "1990s",
-        "2000s",
-        "Mentioned in We Didn't Start the Fire",
-        "Things Indian"
-      ],
-      "cols": [
-        "Athletes",
-        "Disney",
-        "Ends with ENT",
-        "War Stories"
-      ],
-      "timestamp": null,
-      "qualityScore": 7.470000000000001,
-      "maxSimilarityToPast": 0.3116,
-      "similarityPenalty": 2.4928,
-      "movieOverlapPenalty": 13.624441510051343,
-      "yearProximityPenalty": 0,
-      "adjacentDecadePenalty": 0.6,
-      "adjacentCenturyPenalty": 0,
-      "temporalPenalty": 0.6,
-      "finalScore": -9.24724151005134
+      "finalScore": -0.18393982419581256
     }
   ],
   "message": "Puzzle saved successfully!"
