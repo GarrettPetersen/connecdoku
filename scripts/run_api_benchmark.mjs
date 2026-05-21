@@ -321,10 +321,25 @@ function estimateCostUsd(modelCfg, usage) {
   return Number((inputCost + outputCost).toFixed(8));
 }
 
+function normalizeReasoningLevel(level) {
+  const v = String(level || "").toLowerCase();
+  if (v === "none" || v === "low" || v === "medium" || v === "high" || v === "xhigh") return v;
+  return "medium";
+}
+
+function geminiThinkingBudgetFor(level) {
+  const normalized = normalizeReasoningLevel(level);
+  if (normalized === "none") return 0;
+  if (normalized === "low") return 512;
+  if (normalized === "medium") return 2048;
+  if (normalized === "high") return 8192;
+  return 12288; // xhigh
+}
+
 async function callProviderModel(cfg, prompt, mode = "action") {
   const provider = cfg.provider;
   const model = cfg.resolvedApiModel;
-  const reasoningLevel = cfg.reasoningLevel || "medium";
+  const reasoningLevel = normalizeReasoningLevel(cfg.reasoningLevel || "medium");
   const temperature = Number(cfg.temperature ?? 0.2);
 
   if (provider === "openai") {
@@ -391,6 +406,9 @@ async function callProviderModel(cfg, prompt, mode = "action") {
       generationConfig: {
         temperature,
         responseMimeType: mode === "note" ? "text/plain" : "application/json",
+        thinkingConfig: {
+          thinkingBudget: geminiThinkingBudgetFor(reasoningLevel),
+        },
       },
     };
     const resp = await postJson(endpoint, body);
@@ -423,6 +441,10 @@ async function callProviderModel(cfg, prompt, mode = "action") {
         { role: "user", content: prompt },
       ],
     };
+    if (provider === "xai") {
+      // xAI documents reasoning_effort on grok-4.3.
+      body.reasoning_effort = reasoningLevel === "xhigh" ? "high" : reasoningLevel;
+    }
     const resp = await postJson(`${entry.base.replace(/\/+$/, "")}/chat/completions`, body, {
       authorization: `Bearer ${entry.key}`,
     });
