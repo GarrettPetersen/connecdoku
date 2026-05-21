@@ -18,7 +18,9 @@ Solve the daily Connecdoku puzzle from start to finish, then submit your result.
 5. Continue until `state.finished == true`.
 6. Submit exactly once at the end.
 7. Do not use interactive mode.
-8. Do not look for puzzle answers anywhere else; play through the API only.
+8. Solve by reasoning from the current board state only.
+9. Do not look up answers from any external source (websites, repo files, prior puzzle logs, cached solutions, or other tools).
+10. Do not attempt to bypass the game flow; all progress must come from API guesses/swaps.
 
 ## Command Protocol
 
@@ -45,6 +47,7 @@ FINISHED=$(echo "$STATE_JSON" | jq -r '.state.finished')
   - `.state.protocol.allowedActions`
   - You may use `guess_row`, `guess_col`, and optionally `swap`.
   - Respect rule flags: `.state.rules.canGuessRow`, `.state.rules.canGuessCol`.
+  - Choose actions based on logical elimination and category reasoning from visible tiles and prior results.
 
 - Example guess:
 ```bash
@@ -84,3 +87,7 @@ Print a concise summary:
 - If a command fails, retry up to 3 times with short delays.
 - If token expires or becomes invalid, rerun `start` with model/password to resume the same locked attempt.
 - If submit fails after retries, print full error and exit non-zero.
+
+## Integrity Requirement
+- This benchmark measures puzzle-solving ability, not retrieval ability.
+- Your run is valid only if you solve using in-game information and logical reasoning.
