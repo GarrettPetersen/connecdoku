@@ -267,6 +267,7 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     board,
     `invalidSoFar=${metrics.gameInvalidActions}`,
     `repairPromptsSoFar=${metrics.gameFallbackActions}`,
+    metrics.lastActionSummary ? `lastAction=${metrics.lastActionSummary}` : null,
   ].join("\n");
 }
 
@@ -668,6 +669,7 @@ async function runSingleModel(opts, modelCfg) {
     modelCallErrors: [],
     consecutiveSwaps: 0,
     forcedFallbackGuesses: 0,
+    lastActionSummary: "",
   };
 
   const startResp = await postJson(`${apiBase}/api/v1/competition/start`, {
@@ -773,9 +775,32 @@ async function runSingleModel(opts, modelCfg) {
           continue;
         }
 
+        const prevState = state;
         if (action.action === "guess") {
-          if (playResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
-          else stats.gameIncorrectGuesses += 1;
+          const correct = !!playResp.json?.result?.correct;
+          const lost = !!playResp.json?.result?.lost;
+          const nextState = playResp.json?.state || {};
+          if (correct) {
+            stats.gameCorrectGuesses += 1;
+            stats.lastActionSummary = `guess ${action.kind}${action.index} correct`;
+          } else {
+            stats.gameIncorrectGuesses += 1;
+            stats.lastActionSummary = `guess ${action.kind}${action.index} strike`;
+            if (!lost) {
+              const prevBoard = JSON.stringify(prevState?.board || null);
+              const nextBoard = JSON.stringify(nextState?.board || null);
+              const prevStrikes = Number(prevState?.strikes || 0);
+              const nextStrikes = Number(nextState?.strikes || 0);
+              if (prevBoard !== nextBoard) {
+                throw new Error("Invariant violation: board changed after incorrect non-losing guess.");
+              }
+              if (nextStrikes !== prevStrikes + 1) {
+                throw new Error(`Invariant violation: strikes did not increment by 1 after incorrect guess (${prevStrikes} -> ${nextStrikes}).`);
+              }
+            }
+          }
+        } else {
+          stats.lastActionSummary = `swap [${action.a[0]},${action.a[1]}]<->[${action.b[0]},${action.b[1]}]`;
         }
         stats.modelActionsAccepted += 1;
 
