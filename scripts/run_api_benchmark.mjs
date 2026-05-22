@@ -256,8 +256,15 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "You are solving a Connecdoku puzzle via API.",
     "Use logic only from the board and revealed categories.",
     "Never attempt to retrieve or infer hidden answers from external sources.",
-    "The starting board is a random arrangement, so an untouched row or column is unlikely to be correct.",
+    ...(Number(state?.turn || 0) === 0
+      ? ["The starting board is a random arrangement, so an untouched row or column is unlikely to be correct."]
+      : []),
     "Expect to use swaps before guessing most rows or columns.",
+    ...(metrics.consecutiveSwaps > 8
+      ? ["You cannot solve the puzzle without guessing. Make your best guess now. Endless swaps with no guesses will be counted as a loss."]
+      : metrics.consecutiveSwaps > 4
+        ? [`You have done ${metrics.consecutiveSwaps} swaps in a row. Try making a guess.`]
+        : []),
     "Return exactly one JSON object and no other text.",
     "Allowed JSON outputs:",
     '{"action":"guess","kind":"row","index":0,"brief_reason":"..."}',
@@ -279,6 +286,23 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     `Invalid actions so far: ${metrics.gameInvalidActions}`,
     `Fallback actions so far: ${metrics.gameFallbackActions}`,
   ].join("\n");
+}
+
+function pickForcedGuessAction(state) {
+  const solvedRows = new Set((state?.solved?.rows || []).map((x) => Number(x.index)));
+  const solvedCols = new Set((state?.solved?.cols || []).map((x) => Number(x.index)));
+  const canRow = !!state?.rules?.canGuessRow;
+  const canCol = !!state?.rules?.canGuessCol;
+
+  if (canRow) {
+    for (let i = 0; i < 4; i++) if (!solvedRows.has(i)) return { action: "guess", kind: "row", index: i };
+  }
+  if (canCol) {
+    for (let i = 0; i < 4; i++) if (!solvedCols.has(i)) return { action: "guess", kind: "col", index: i };
+  }
+  for (let i = 0; i < 4; i++) if (!solvedRows.has(i)) return { action: "guess", kind: "row", index: i };
+  for (let i = 0; i < 4; i++) if (!solvedCols.has(i)) return { action: "guess", kind: "col", index: i };
+  return null;
 }
 
 function buildNotePrompt(state, runStats) {
@@ -695,6 +719,8 @@ async function runSingleModel(opts, modelCfg) {
     gameIncorrectGuesses: 0,
     gameInvalidActions: 0,
     gameFallbackActions: 0,
+    consecutiveSwaps: 0,
+    forcedFallbackGuesses: 0,
     inputTokens: 0,
     outputTokens: 0,
     totalTokens: 0,
@@ -767,8 +793,14 @@ async function runSingleModel(opts, modelCfg) {
       }
 
       stats.gameActionsTotal += 1;
-      if (action.action === "swap") stats.gameSwaps += 1;
-      if (action.action === "guess") stats.gameGuesses += 1;
+      if (action.action === "swap") {
+        stats.gameSwaps += 1;
+        stats.consecutiveSwaps += 1;
+      }
+      if (action.action === "guess") {
+        stats.gameGuesses += 1;
+        stats.consecutiveSwaps = 0;
+      }
 
       const playResp = action.action === "swap"
         ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: action.a, b: action.b })
@@ -808,13 +840,70 @@ async function runSingleModel(opts, modelCfg) {
     }
 
     if (!stepSolved) {
-      throw new Error(`Model failed to produce an executable command at step ${step}. Last reason: ${repairReason}`);
+      const forced = pickForcedGuessAction(state);
+      if (!forced) {
+        throw new Error(`Model failed to produce an executable command at step ${step}. Last reason: ${repairReason}`);
+      }
+      const forcedResp = await postJson(
+        `${apiBase}/api/v1/competition/guess`,
+        { competitionToken, kind: forced.kind, index: forced.index }
+      );
+      if (!forcedResp.ok) {
+        throw new Error(
+          `Model failed at step ${step}, and forced-guess fallback also failed: ${forcedResp.json?.error || `HTTP ${forcedResp.status}`}`
+        );
+      }
+      stats.gameFallbackActions += 1;
+      stats.forcedFallbackGuesses += 1;
+      stats.gameActionsTotal += 1;
+      stats.gameGuesses += 1;
+      stats.consecutiveSwaps = 0;
+      if (forcedResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
+      else stats.gameIncorrectGuesses += 1;
+      state = forcedResp.json.state;
+      actionTrace.push({
+        step,
+        attempt: "forced-fallback",
+        action: forced,
+        strikes: state.strikes,
+        turn: state.turn,
+        finished: state.finished,
+      });
+      step += 1;
+      continue;
     }
     step += 1;
   }
 
   if (!state.finished) {
-    throw new Error(`Model did not finish puzzle within ${opts.maxSteps} turns.`);
+    for (let guard = 0; guard < 12 && !state.finished; guard++) {
+      const forced = pickForcedGuessAction(state);
+      if (!forced) break;
+      const forcedResp = await postJson(
+        `${apiBase}/api/v1/competition/guess`,
+        { competitionToken, kind: forced.kind, index: forced.index }
+      );
+      if (!forcedResp.ok) break;
+      stats.gameFallbackActions += 1;
+      stats.forcedFallbackGuesses += 1;
+      stats.gameActionsTotal += 1;
+      stats.gameGuesses += 1;
+      stats.consecutiveSwaps = 0;
+      if (forcedResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
+      else stats.gameIncorrectGuesses += 1;
+      state = forcedResp.json.state;
+      actionTrace.push({
+        step: step + guard,
+        attempt: "forced-finish",
+        action: forced,
+        strikes: state.strikes,
+        turn: state.turn,
+        finished: state.finished,
+      });
+    }
+    if (!state.finished) {
+      throw new Error(`Model did not finish puzzle within ${opts.maxSteps} turns.`);
+    }
   }
 
   if (stats.modelApiCalls < 1) {
@@ -853,12 +942,41 @@ async function runSingleModel(opts, modelCfg) {
     note = "No comment.";
   }
 
-  const submitResp = await postJson(`${apiBase}/api/v1/competition/submit`, {
-    competitionToken,
-    notes: note,
-  });
-  if (!submitResp.ok) {
-    throw new Error(`submit failed: ${submitResp.json?.error || submitResp.status}`);
+  let submitOk = false;
+  let submitErr = "";
+  for (let submitAttempt = 0; submitAttempt < 4 && !submitOk; submitAttempt++) {
+    const submitResp = await postJson(`${apiBase}/api/v1/competition/submit`, {
+      competitionToken,
+      notes: submitAttempt > 0 ? "No comment." : note,
+    });
+    if (submitResp.ok) {
+      submitOk = true;
+      break;
+    }
+    submitErr = String(submitResp.json?.error || `HTTP ${submitResp.status}`);
+    const stateResp = await postJson(`${apiBase}/api/v1/competition/state`, { competitionToken });
+    if (!stateResp.ok) continue;
+    state = stateResp.json?.state || state;
+    if (!state?.finished) {
+      const forced = pickForcedGuessAction(state);
+      if (!forced) continue;
+      const forcedResp = await postJson(
+        `${apiBase}/api/v1/competition/guess`,
+        { competitionToken, kind: forced.kind, index: forced.index }
+      );
+      if (forcedResp.ok) {
+        stats.gameFallbackActions += 1;
+        stats.forcedFallbackGuesses += 1;
+        stats.gameActionsTotal += 1;
+        stats.gameGuesses += 1;
+        if (forcedResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
+        else stats.gameIncorrectGuesses += 1;
+        state = forcedResp.json.state;
+      }
+    }
+  }
+  if (!submitOk) {
+    throw new Error(`submit failed: ${submitErr || "unknown"}`);
   }
 
   const endedAtIso = nowIso();

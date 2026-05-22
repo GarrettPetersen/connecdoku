@@ -239,8 +239,15 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "- If 3 rows are solved, row guesses are blocked until columns advance (and vice versa).",
     "- The game may reorder the just-solved line to keep the puzzle solvable.",
     "- Final unresolved line may auto-resolve when only one row and one column remain.",
-    "The starting board is a random arrangement, so an untouched row or column is unlikely to be correct.",
+    ...(Number(state?.turn || 0) === 0
+      ? ["The starting board is a random arrangement, so an untouched row or column is unlikely to be correct."]
+      : []),
     "Use swaps to build candidate sets; avoid blind guesses.",
+    ...(metrics.consecutiveSwaps > 8
+      ? ["You cannot solve the puzzle without guessing. Make your best guess now. Endless swaps with no guesses will be counted as a loss."]
+      : metrics.consecutiveSwaps > 4
+        ? [`You have done ${metrics.consecutiveSwaps} swaps in a row. Try making a guess.`]
+        : []),
     "Allowed shapes:",
     '{"action":"guess","kind":"row","index":0}',
     '{"action":"guess","kind":"col","index":1}',
@@ -365,6 +372,23 @@ function normalizeAction(obj) {
       return { action: "swap", a, b, briefReason: trimText(obj.brief_reason || obj.reason || "", 140) };
     }
   }
+  return null;
+}
+
+function pickForcedGuessAction(state) {
+  const solvedRows = new Set((state?.solved?.rows || []).map((x) => Number(x.index)));
+  const solvedCols = new Set((state?.solved?.cols || []).map((x) => Number(x.index)));
+  const canRow = !!state?.rules?.canGuessRow;
+  const canCol = !!state?.rules?.canGuessCol;
+
+  if (canRow) {
+    for (let i = 0; i < 4; i++) if (!solvedRows.has(i)) return { action: "guess", kind: "row", index: i };
+  }
+  if (canCol) {
+    for (let i = 0; i < 4; i++) if (!solvedCols.has(i)) return { action: "guess", kind: "col", index: i };
+  }
+  for (let i = 0; i < 4; i++) if (!solvedRows.has(i)) return { action: "guess", kind: "row", index: i };
+  for (let i = 0; i < 4; i++) if (!solvedCols.has(i)) return { action: "guess", kind: "col", index: i };
   return null;
 }
 
@@ -642,6 +666,8 @@ async function runSingleModel(opts, modelCfg) {
     modelActionsProposed: 0,
     modelActionsAccepted: 0,
     modelCallErrors: [],
+    consecutiveSwaps: 0,
+    forcedFallbackGuesses: 0,
   };
 
   const startResp = await postJson(`${apiBase}/api/v1/competition/start`, {
@@ -720,8 +746,14 @@ async function runSingleModel(opts, modelCfg) {
 
         stats.modelActionsProposed += 1;
         stats.gameActionsTotal += 1;
-        if (action.action === "swap") stats.gameSwaps += 1;
-        if (action.action === "guess") stats.gameGuesses += 1;
+        if (action.action === "swap") {
+          stats.gameSwaps += 1;
+          stats.consecutiveSwaps += 1;
+        }
+        if (action.action === "guess") {
+          stats.gameGuesses += 1;
+          stats.consecutiveSwaps = 0;
+        }
 
         const playResp = action.action === "swap"
           ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: action.a, b: action.b })
@@ -762,7 +794,37 @@ async function runSingleModel(opts, modelCfg) {
       }
 
       if (!stepSolved) {
-        throw new Error(`Model failed to produce an executable command at step ${step}. Last reason: ${repairReason}`);
+        const forced = pickForcedGuessAction(state);
+        if (!forced) {
+          throw new Error(`Model failed to produce an executable command at step ${step}. Last reason: ${repairReason}`);
+        }
+        const forcedResp = await postJson(
+          `${apiBase}/api/v1/competition/guess`,
+          { competitionToken, kind: forced.kind, index: forced.index }
+        );
+        if (!forcedResp.ok) {
+          throw new Error(
+            `Model failed at step ${step}, and forced-guess fallback also failed: ${forcedResp.json?.error || `HTTP ${forcedResp.status}`}`
+          );
+        }
+        stats.gameFallbackActions += 1;
+        stats.forcedFallbackGuesses += 1;
+        stats.gameActionsTotal += 1;
+        stats.gameGuesses += 1;
+        stats.consecutiveSwaps = 0;
+        if (forcedResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
+        else stats.gameIncorrectGuesses += 1;
+        state = forcedResp.json.state;
+        actionTrace.push({
+          step,
+          attempt: "forced-fallback",
+          action: forced,
+          strikes: state.strikes,
+          turn: state.turn,
+          finished: state.finished,
+        });
+        step += 1;
+        continue;
       }
       step += 1;
     }
@@ -775,7 +837,34 @@ async function runSingleModel(opts, modelCfg) {
     throw new Error("No model-proposed actions were accepted by the puzzle API.");
   }
   if (!state.finished) {
-    throw new Error(`Run did not finish within max steps (${opts.maxSteps}).`);
+    for (let guard = 0; guard < 12 && !state.finished; guard++) {
+      const forced = pickForcedGuessAction(state);
+      if (!forced) break;
+      const forcedResp = await postJson(
+        `${apiBase}/api/v1/competition/guess`,
+        { competitionToken, kind: forced.kind, index: forced.index }
+      );
+      if (!forcedResp.ok) break;
+      stats.gameFallbackActions += 1;
+      stats.forcedFallbackGuesses += 1;
+      stats.gameActionsTotal += 1;
+      stats.gameGuesses += 1;
+      stats.consecutiveSwaps = 0;
+      if (forcedResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
+      else stats.gameIncorrectGuesses += 1;
+      state = forcedResp.json.state;
+      actionTrace.push({
+        step: step + guard,
+        attempt: "forced-finish",
+        action: forced,
+        strikes: state.strikes,
+        turn: state.turn,
+        finished: state.finished,
+      });
+    }
+    if (!state.finished) {
+      throw new Error(`Run did not finish within max steps (${opts.maxSteps}).`);
+    }
   }
 
     let note = "";
@@ -822,12 +911,41 @@ async function runSingleModel(opts, modelCfg) {
       }
     }
 
-    const submitResp = await postJson(`${apiBase}/api/v1/competition/submit`, {
-      competitionToken,
-      notes: note,
-    });
-    if (!submitResp.ok) {
-      throw new Error(`submit failed: ${submitResp.json?.error || submitResp.status}`);
+    let submitOk = false;
+    let submitErr = "";
+    for (let submitAttempt = 0; submitAttempt < 4 && !submitOk; submitAttempt++) {
+      const submitResp = await postJson(`${apiBase}/api/v1/competition/submit`, {
+        competitionToken,
+        notes: submitAttempt > 0 ? "No comment." : note,
+      });
+      if (submitResp.ok) {
+        submitOk = true;
+        break;
+      }
+      submitErr = String(submitResp.json?.error || `HTTP ${submitResp.status}`);
+      const stateResp = await postJson(`${apiBase}/api/v1/competition/state`, { competitionToken });
+      if (!stateResp.ok) continue;
+      state = stateResp.json?.state || state;
+      if (!state?.finished) {
+        const forced = pickForcedGuessAction(state);
+        if (!forced) continue;
+        const forcedResp = await postJson(
+          `${apiBase}/api/v1/competition/guess`,
+          { competitionToken, kind: forced.kind, index: forced.index }
+        );
+        if (forcedResp.ok) {
+          stats.gameFallbackActions += 1;
+          stats.forcedFallbackGuesses += 1;
+          stats.gameActionsTotal += 1;
+          stats.gameGuesses += 1;
+          if (forcedResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
+          else stats.gameIncorrectGuesses += 1;
+          state = forcedResp.json.state;
+        }
+      }
+    }
+    if (!submitOk) {
+      throw new Error(`submit failed: ${submitErr || "unknown"}`);
     }
 
     const endedAtIso = nowIso();
