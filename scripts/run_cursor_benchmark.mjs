@@ -251,6 +251,20 @@ function finalSolvedLabels(state) {
   return { rows, cols };
 }
 
+function revealedAfterLossLabels(state) {
+  if (String(state?.outcome || "") !== "lost") return { rows: "none", cols: "none" };
+  const maxStrikes = Number(state?.maxStrikes ?? 5);
+  const rows = (state?.solved?.rows || [])
+    .filter((x) => Number(x?.strikeLevel) >= maxStrikes)
+    .map((x) => `row ${x.index}: ${x.label}`)
+    .join("; ") || "none";
+  const cols = (state?.solved?.cols || [])
+    .filter((x) => Number(x?.strikeLevel) >= maxStrikes)
+    .map((x) => `col ${x.index}: ${x.label}`)
+    .join("; ") || "none";
+  return { rows, cols };
+}
+
 function buildDecisionPrompt(state, metrics, modelMeta) {
   const board = buildBoardText(state);
   const solvedRows = (state?.solved?.rows || []).map((x) => x.index).join(",") || "none";
@@ -315,6 +329,7 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
 
 function buildNotePrompt(state, runStats) {
   const solved = finalSolvedLabels(state);
+  const revealedAfterLoss = revealedAfterLossLabels(state);
   return [
     "Write only the final note text for a public benchmark table.",
     "Do not explain the task, restate these instructions, or mention the prompt.",
@@ -330,6 +345,8 @@ function buildNotePrompt(state, runStats) {
     `Incorrect guesses: ${runStats.gameIncorrectGuesses}`,
     `Solved rows: ${solved.rows}`,
     `Solved cols: ${solved.cols}`,
+    `Revealed after loss (not solved before losing) rows: ${revealedAfterLoss.rows}`,
+    `Revealed after loss (not solved before losing) cols: ${revealedAfterLoss.cols}`,
     "Final board:",
     buildBoardText(state),
     `Scratchpad timeline: ${runStats.scratchpad || "(empty)"}`,
@@ -871,12 +888,14 @@ async function runSingleModel(opts, modelCfg) {
         if (!playResp.ok) {
           stats.gameInvalidActions += 1;
           const apiError = playResp.json?.error || `HTTP ${playResp.status}`;
+          const guessedWords = action.action === "guess" ? lineWordsFromState(state, action.kind, action.index) : null;
           repairReason = `Action rejected by game API: ${apiError}`;
           actionTrace.push({
             step,
             attempt,
             reason: "api_rejected",
             action,
+            guessedWords,
             modelOutput: trimText(modelRespText, 280),
             apiError,
           });
@@ -918,12 +937,14 @@ async function runSingleModel(opts, modelCfg) {
         }
         stats.modelActionsAccepted += 1;
 
+        const guessedWords = action.action === "guess" ? lineWordsFromState(prevState, action.kind, action.index) : null;
         state = playResp.json.state;
         actionTrace.push({
           step,
           attempt,
           reason: "action_accepted",
           action,
+          guessedWords,
           modelOutput: trimText(modelRespText, 280),
           result: {
             correct: !!playResp.json?.result?.correct,
@@ -974,12 +995,14 @@ async function runSingleModel(opts, modelCfg) {
           const guessed = lineWordsFromState(state, forced.kind, forced.index);
           if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
         }
+        const forcedGuessedWords = lineWordsFromState(state, forced.kind, forced.index);
         state = forcedResp.json.state;
         actionTrace.push({
           step,
           attempt: "forced-fallback",
           reason: "forced_fallback_guess",
           action: forced,
+          guessedWords: forcedGuessedWords,
           strikes: state.strikes,
           turn: state.turn,
           finished: state.finished,
@@ -1023,12 +1046,14 @@ async function runSingleModel(opts, modelCfg) {
         const guessed = lineWordsFromState(state, forced.kind, forced.index);
         if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
       }
+      const forcedGuessedWords = lineWordsFromState(state, forced.kind, forced.index);
       state = forcedResp.json.state;
       actionTrace.push({
         step: step + guard,
         attempt: "forced-finish",
         reason: "forced_finish_guess",
         action: forced,
+        guessedWords: forcedGuessedWords,
         strikes: state.strikes,
         turn: state.turn,
         finished: state.finished,
