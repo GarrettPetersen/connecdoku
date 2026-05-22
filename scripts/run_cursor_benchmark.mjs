@@ -466,11 +466,13 @@ function assertFreshCompetitionAttempt(startJson, modelId, date) {
   const attempt = startJson?.attempt || {};
   const turnCount = Number(attempt.turnCount ?? state.turn ?? 0);
   const solvedCount = solvedCountFromState(state);
+  const strikes = Number(attempt.strikes ?? state.strikes ?? 0);
   const finished = !!state.finished || !!attempt.finished;
-  if (finished || turnCount !== 0 || solvedCount !== 0) {
+  const pristine = !finished && turnCount === 0 && solvedCount === 0 && strikes === 0;
+  if (!pristine) {
     throw new Error(
       `Refusing resumed attempt for ${modelId} on ${date}. ` +
-      `Need fresh state (turn=0, solved=0, unfinished), got turn=${turnCount}, solved=${solvedCount}, finished=${finished}.`
+      `Need pristine state (turn=0, solved=0, strikes=0, unfinished), got turn=${turnCount}, solved=${solvedCount}, strikes=${strikes}, finished=${finished}.`
     );
   }
 }
