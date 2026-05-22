@@ -13,6 +13,7 @@ const PROMPT_VERSION = "cursor-benchmark-v1";
 const MAX_STEPS_DEFAULT = 64;
 const MAX_ACTION_RETRIES = 3;
 const NOTE_MAX_CHARS = 500;
+const SCRATCHPAD_MAX_CHARS = 3000;
 const CURSOR_POLL_MS_DEFAULT = 5000;
 const CURSOR_TIMEOUT_MS_DEFAULT = 15 * 60 * 1000;
 const HTTP_TIMEOUT_MS_DEFAULT = 120000;
@@ -152,6 +153,15 @@ function trimText(s, max = NOTE_MAX_CHARS) {
   return str.slice(0, max);
 }
 
+function appendScratchpad(existing, update, maxChars = SCRATCHPAD_MAX_CHARS) {
+  const prev = trimText(existing || "", maxChars);
+  const next = trimText(update || "", 500);
+  if (!next) return prev;
+  const joined = prev ? `${prev} || ${next}` : next;
+  if (joined.length <= maxChars) return joined;
+  return joined.slice(joined.length - maxChars);
+}
+
 function parseJsonObjectLoose(text) {
   const src = String(text || "").trim();
   if (!src) return null;
@@ -276,7 +286,8 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     '{"action":"guess","kind":"col","index":1,"scratchpad_update":"..."}',
     '{"action":"swap","a":[0,0],"b":[1,1],"scratchpad_update":"..."}',
     "Use scratchpad_update to persist what you learned and your plan for later turns.",
-    "Keep scratchpad_update concise and factual (max ~400 chars).",
+    "Scratchpad is append-only: previous entries persist, and your new scratchpad_update is appended.",
+    "Keep scratchpad_update concise and factual (max ~400 chars) and add only new information.",
     "Do not repeat the same no-progress move in a loop.",
     "",
     `model=${modelMeta.displayName}`,
@@ -822,7 +833,7 @@ async function runSingleModel(opts, modelCfg) {
           continue;
         }
 
-        if (action.scratchpadUpdate) stats.scratchpad = action.scratchpadUpdate;
+        if (action.scratchpadUpdate) stats.scratchpad = appendScratchpad(stats.scratchpad, action.scratchpadUpdate);
 
         const prevState = state;
         if (action.action === "guess") {

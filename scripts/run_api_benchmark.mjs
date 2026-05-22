@@ -11,6 +11,7 @@ const PROMPT_VERSION = "api-benchmark-v1";
 const MAX_STEPS_DEFAULT = 64;
 const MAX_ACTION_RETRIES = 3;
 const NOTE_MAX_CHARS = 500;
+const SCRATCHPAD_MAX_CHARS = 3000;
 const HTTP_TIMEOUT_MS_DEFAULT = 120000;
 
 function loadDotEnv() {
@@ -129,6 +130,15 @@ async function getJson(url, headers = {}, timeoutOverrideMs = null) {
 function trimText(s, max = NOTE_MAX_CHARS) {
   const str = String(s || "").trim().replace(/\s+/g, " ");
   return str.slice(0, max);
+}
+
+function appendScratchpad(existing, update, maxChars = SCRATCHPAD_MAX_CHARS) {
+  const prev = trimText(existing || "", maxChars);
+  const next = trimText(update || "", 500);
+  if (!next) return prev;
+  const joined = prev ? `${prev} || ${next}` : next;
+  if (joined.length <= maxChars) return joined;
+  return joined.slice(joined.length - maxChars);
 }
 
 function extractTextFromOpenAIStyle(respJson) {
@@ -290,7 +300,8 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
         : []),
     "Return exactly one JSON object and no other text.",
     "Use scratchpad_update to persist what you learned and your plan for later turns.",
-    "Keep scratchpad_update concise and factual (max ~400 chars).",
+    "Scratchpad is append-only: previous entries persist, and your new scratchpad_update is appended.",
+    "Keep scratchpad_update concise and factual (max ~400 chars) and add only new information.",
     "Allowed JSON outputs:",
     '{"action":"guess","kind":"row","index":0,"brief_reason":"...","scratchpad_update":"..."}',
     '{"action":"guess","kind":"col","index":1,"brief_reason":"...","scratchpad_update":"..."}',
@@ -867,7 +878,7 @@ async function runSingleModel(opts, modelCfg) {
         continue;
       }
 
-      if (action.scratchpadUpdate) stats.scratchpad = action.scratchpadUpdate;
+      if (action.scratchpadUpdate) stats.scratchpad = appendScratchpad(stats.scratchpad, action.scratchpadUpdate);
 
       if (action.action === "guess") {
         if (playResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
