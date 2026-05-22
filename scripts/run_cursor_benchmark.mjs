@@ -914,6 +914,12 @@ async function runSingleModel(opts, modelCfg) {
       }
 
       if (!stepSolved) {
+        if (stats.modelApiCalls < 1) {
+          const suffix = stats.modelCallErrors.length
+            ? ` Last API error: ${stats.modelCallErrors[stats.modelCallErrors.length - 1]}`
+            : "";
+          throw new Error(`No successful model API calls.${suffix}`);
+        }
         const forced = pickForcedGuessAction(state);
         if (!forced) {
           throw new Error(`Model failed to produce an executable command at step ${step}. Last reason: ${repairReason}`);
@@ -960,10 +966,16 @@ async function runSingleModel(opts, modelCfg) {
   if (stats.modelActionsAccepted < 1) {
     throw new Error("No model-proposed actions were accepted by the puzzle API.");
   }
-  if (!state.finished) {
-    for (let guard = 0; guard < 12 && !state.finished; guard++) {
-      const forced = pickForcedGuessAction(state);
-      if (!forced) break;
+    if (!state.finished) {
+      if (stats.modelApiCalls < 1) {
+        const suffix = stats.modelCallErrors.length
+          ? ` Last API error: ${stats.modelCallErrors[stats.modelCallErrors.length - 1]}`
+          : "";
+        throw new Error(`No successful model API calls.${suffix}`);
+      }
+      for (let guard = 0; guard < 12 && !state.finished; guard++) {
+        const forced = pickForcedGuessAction(state);
+        if (!forced) break;
       const forcedResp = await postJson(
         `${apiBase}/api/v1/competition/guess`,
         { competitionToken, kind: forced.kind, index: forced.index }
@@ -1116,6 +1128,9 @@ async function runSingleModel(opts, modelCfg) {
     note,
     metadata: {
       fallbackPromptRetries: stats.gameFallbackActions,
+      forcedFallbackGuesses: stats.forcedFallbackGuesses,
+      usedFallback: stats.gameFallbackActions > 0,
+      usedForcedFallback: stats.forcedFallbackGuesses > 0,
       maxSteps: opts.maxSteps,
       tokenTelemetryAvailable: stats.tokenTelemetryAvailable,
       modelActionsProposed: stats.modelActionsProposed,
@@ -1149,6 +1164,10 @@ async function runSingleModel(opts, modelCfg) {
         input: stats.tokenTelemetryAvailable ? stats.inputTokens : null,
         output: stats.tokenTelemetryAvailable ? stats.outputTokens : null,
         total: stats.tokenTelemetryAvailable ? stats.totalTokens : null,
+      },
+      fallback: {
+        total: stats.gameFallbackActions,
+        forcedGuesses: stats.forcedFallbackGuesses,
       },
       note,
     };

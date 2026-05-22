@@ -939,6 +939,10 @@ async function runSingleModel(opts, modelCfg) {
     }
 
     if (!stepSolved) {
+      if (stats.modelApiCalls < 1) {
+        const suffix = stats.lastModelApiError ? ` Last API error: ${stats.lastModelApiError}` : "";
+        throw new Error(`No successful model API calls.${suffix}`);
+      }
       const forced = pickForcedGuessAction(state);
       if (!forced) {
         throw new Error(`Model failed to produce an executable command at step ${step}. Last reason: ${repairReason}`);
@@ -979,6 +983,10 @@ async function runSingleModel(opts, modelCfg) {
   }
 
   if (!state.finished) {
+    if (stats.modelApiCalls < 1) {
+      const suffix = stats.lastModelApiError ? ` Last API error: ${stats.lastModelApiError}` : "";
+      throw new Error(`No successful model API calls.${suffix}`);
+    }
     for (let guard = 0; guard < 12 && !state.finished; guard++) {
       const forced = pickForcedGuessAction(state);
       if (!forced) break;
@@ -1127,6 +1135,9 @@ async function runSingleModel(opts, modelCfg) {
     note,
     metadata: {
       fallbackPromptRetries: stats.gameFallbackActions,
+      forcedFallbackGuesses: stats.forcedFallbackGuesses,
+      usedFallback: stats.gameFallbackActions > 0,
+      usedForcedFallback: stats.forcedFallbackGuesses > 0,
       maxSteps: opts.maxSteps,
       actionTrace: actionTrace.slice(-40),
       promptHash: sha1(buildDecisionPrompt(state, stats, modelCfg)),
@@ -1153,6 +1164,10 @@ async function runSingleModel(opts, modelCfg) {
       input: stats.inputTokens,
       output: stats.outputTokens,
       total: stats.totalTokens,
+    },
+    fallback: {
+      total: stats.gameFallbackActions,
+      forcedGuesses: stats.forcedFallbackGuesses,
     },
     note,
   };
