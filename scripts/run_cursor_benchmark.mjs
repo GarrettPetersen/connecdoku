@@ -790,6 +790,7 @@ async function runSingleModel(opts, modelCfg) {
       let repairReason = "No valid command received.";
       let lastModelOutput = "";
       let stepSolved = false;
+      let stepSawModelResponse = false;
 
       for (let attempt = 0; attempt < MAX_ACTION_RETRIES; attempt++) {
         const prompt = attempt === 0 ? basePrompt : buildRepairPrompt(basePrompt, repairReason, lastModelOutput);
@@ -814,6 +815,7 @@ async function runSingleModel(opts, modelCfg) {
 
           modelRespText = modelResp.text;
           lastModelOutput = modelRespText;
+          stepSawModelResponse = true;
           const parsed = parseJsonObjectLoose(modelResp.text);
           action = normalizeAction(parsed);
         } catch (e) {
@@ -854,16 +856,18 @@ async function runSingleModel(opts, modelCfg) {
 
         if (!playResp.ok) {
           stats.gameInvalidActions += 1;
-          repairReason = `Action rejected by game API: ${playResp.json?.error || `HTTP ${playResp.status}`}`;
+          const apiError = playResp.json?.error || `HTTP ${playResp.status}`;
+          repairReason = `Action rejected by game API: ${apiError}`;
           actionTrace.push({
             step,
             attempt,
             action,
             modelOutput: trimText(modelRespText, 280),
-            apiError: playResp.json?.error || `HTTP ${playResp.status}`,
+            apiError,
           });
-          if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
-          continue;
+          // A syntactically valid action was proposed; surface game feedback and move on.
+          stepSolved = true;
+          break;
         }
 
         if (action.scratchpadUpdate) stats.scratchpad = appendScratchpad(stats.scratchpad, action.scratchpadUpdate);
@@ -914,6 +918,12 @@ async function runSingleModel(opts, modelCfg) {
       }
 
       if (!stepSolved) {
+        if (!stepSawModelResponse) {
+          const suffix = stats.modelCallErrors.length
+            ? ` Last API error: ${stats.modelCallErrors[stats.modelCallErrors.length - 1]}`
+            : "";
+          throw new Error(`Model API unavailable after retries at step ${step}.${suffix}`);
+        }
         if (stats.modelApiCalls < 1) {
           const suffix = stats.modelCallErrors.length
             ? ` Last API error: ${stats.modelCallErrors[stats.modelCallErrors.length - 1]}`
