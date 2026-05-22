@@ -211,33 +211,33 @@ function parseActionFromTextLoose(text) {
   if (!src) return null;
   const lower = src.toLowerCase();
 
-  const slashGuess = lower.match(/\/guess\s+(row|col|column)\s+([0-3])\b/);
-  if (slashGuess) {
-    const kind = slashGuess[1] === "row" ? "row" : "col";
-    return { action: "guess", kind, index: Number(slashGuess[2]) };
-  }
-  const slashSwap = lower.match(/\/swap\s+([0-3])\s+([0-3])\s+([0-3])\s+([0-3])\b/);
-  if (slashSwap) {
-    return {
-      action: "swap",
-      a: [Number(slashSwap[1]), Number(slashSwap[2])],
-      b: [Number(slashSwap[3]), Number(slashSwap[4])],
-    };
+  let scratchpadUpdate = "";
+  const scratchMatch = src.match(/\/scratch\s+"((?:\\.|[^"\\])*)"/i);
+  if (scratchMatch && scratchMatch[1] != null) {
+    scratchpadUpdate = String(scratchMatch[1]).replace(/\\"/g, '"').replace(/\\\\/g, "\\");
   }
 
-  const guess = lower.match(/\b(?:guess\s+)?(row|col|column)\s*[:#]?\s*([0-3])\b/);
-  if (guess) {
-    const kind = guess[1] === "row" ? "row" : "col";
-    return { action: "guess", kind, index: Number(guess[2]) };
+  const candidates = [];
+  for (const m of lower.matchAll(/\/guess\s+(row|col|column)\s+([0-3])\b/g)) {
+    const kind = m[1] === "row" ? "row" : "col";
+    candidates.push({
+      idx: m.index ?? Number.MAX_SAFE_INTEGER,
+      action: { action: "guess", kind, index: Number(m[2]), scratchpad_update: scratchpadUpdate },
+    });
   }
-
-  if (lower.includes("swap")) {
-    const nums = Array.from(lower.matchAll(/\b([0-3])\s*,\s*([0-3])\b/g)).map((m) => [Number(m[1]), Number(m[2])]);
-    if (nums.length >= 2) {
-      return { action: "swap", a: nums[0], b: nums[1] };
-    }
+  for (const m of lower.matchAll(/\/swap\s+([0-3])\s+([0-3])\s+([0-3])\s+([0-3])\b/g)) {
+    candidates.push({
+      idx: m.index ?? Number.MAX_SAFE_INTEGER,
+      action: {
+        action: "swap",
+        a: [Number(m[1]), Number(m[2])],
+        b: [Number(m[3]), Number(m[4])],
+        scratchpad_update: scratchpadUpdate,
+      },
+    });
   }
-  return null;
+  const valid = candidates.sort((a, b) => a.idx - b.idx);
+  return valid.length ? valid[0].action : null;
 }
 
 function buildBoardText(state) {
@@ -336,6 +336,13 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     '{"action":"guess","kind":"row","index":0,"scratchpad_update":"..."}',
     '{"action":"guess","kind":"col","index":1,"scratchpad_update":"..."}',
     '{"action":"swap","a":[0,0],"b":[1,1],"scratchpad_update":"..."}',
+    "Alternative command outputs accepted:",
+    "/guess row 0",
+    "/guess col 1",
+    "/swap 0 0 1 1",
+    '/scratch "short note about what you learned and plan next"',
+    'Combined example: /guess row 2 /scratch "row2 hypothesis is weak; test col next"',
+    "Parsing rule: we scan your whole response and execute the first valid command we find.",
     "Use scratchpad_update to persist what you learned and your plan for later turns.",
     "Scratchpad is append-only: previous entries persist, and your new scratchpad_update is appended.",
     "Keep scratchpad_update concise and factual (max ~400 chars) and add only new information.",
@@ -448,7 +455,7 @@ function buildRepairPrompt(basePrompt, reason, lastOutput) {
     details ? `You said: ${details}` : "You said: (empty)",
     "Now output exactly one move command with no explanation.",
     "Preferred: one JSON object only.",
-    "Alternative accepted format: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i",
+    'Alternative accepted format: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i, optional /scratch "..."',
     "Reply again with exactly one command only.",
   ].join("\n");
 }
