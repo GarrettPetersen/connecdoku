@@ -396,6 +396,30 @@ table {
     return 's5';
   }
 
+  function avgCorrectTopClass(avgCorrect) {
+    const n = Number(avgCorrect);
+    if (!Number.isFinite(n)) return 's5';
+    return n > 0 ? 's1' : 's5';
+  }
+
+  function matrixOutcomeClass(rec) {
+    const outcome = String(rec?.outcome || '');
+    const strikes = Number(rec?.strikes);
+    const correct = Number(rec?.game_correct_guesses);
+
+    if (outcome === 'won') {
+      if (!Number.isFinite(strikes)) return 's1';
+      if (strikes <= 0) return 's0';
+      if (strikes <= 2) return 's1';
+      return 's2';
+    }
+
+    if (!Number.isFinite(correct) || correct <= 0) return 's5';
+    if (correct >= 4) return 's2';
+    if (correct >= 2) return 's3';
+    return 's4';
+  }
+
   function safeAvg(value) {
     const n = Number(value);
     return Number.isFinite(n) ? n : null;
@@ -455,7 +479,7 @@ table {
       const avgText = avg === null ? '—' : avg.toFixed(2);
       const scoreClass = avg === null ? 's5' : strikeClass(Math.round(avg));
       const correctText = avgCorrect === null ? '—' : avgCorrect.toFixed(2);
-      const correctClass = avgCorrect === null ? 's5' : correctGuessClass(avgCorrect);
+      const correctClass = avgCorrectTopClass(avgCorrect);
 
       tr.innerHTML = `
         <td>${idx + 1}</td>
@@ -554,7 +578,7 @@ table {
           td.appendChild(empty);
         } else {
           const cell = document.createElement('div');
-          const klass = strikeClass(rec.strikes);
+          const klass = matrixOutcomeClass(rec);
           cell.className = `cell ${klass}`;
 
           const strike = document.createElement('span');
