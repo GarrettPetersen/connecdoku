@@ -1436,6 +1436,22 @@ async function deleteCompetitionResult(env, body) {
   return { ok: true, deleted };
 }
 
+async function deleteCompetitionAttempt(env, body) {
+  await ensureDb(env);
+
+  let deleted = 0;
+  if (typeof body.model === "string" && typeof body.puzzleDate === "string") {
+    const resp = await env.DB.prepare(`DELETE FROM competition_attempts WHERE model = ? AND puzzle_date = ?`)
+      .bind(body.model, body.puzzleDate)
+      .run();
+    deleted = Number(resp.meta?.changes || 0);
+  } else {
+    throw new Error("Provide model+puzzleDate.");
+  }
+
+  return { ok: true, deleted };
+}
+
 async function resetCompetitionRuns(env, body) {
   await ensureDb(env);
   if (!body || body.confirm !== "RESET_COMPETITION_RUNS") {
@@ -1844,6 +1860,16 @@ async function routeRequest(req, env) {
       }
     }
 
+    if (method === "POST" && url.pathname === "/api/v1/competition/delete-attempt") {
+      if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
+      const body = await parseBody(req);
+      try {
+        return sendJson(200, await deleteCompetitionAttempt(env, body));
+      } catch (e) {
+        return sendJson(400, { ok: false, error: e.message });
+      }
+    }
+
     if (method === "POST" && url.pathname === "/api/v1/competition/reset-runs") {
       if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
       const body = await parseBody(req);
@@ -1875,6 +1901,7 @@ async function routeRequest(req, env) {
         "GET  /api/v1/competition/benchmark-runs",
         "POST /api/v1/competition/benchmark-run",
         "POST /api/v1/competition/delete-result",
+        "POST /api/v1/competition/delete-attempt",
         "POST /api/v1/competition/reset-runs",
       ],
     });
