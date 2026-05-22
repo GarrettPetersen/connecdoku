@@ -1254,6 +1254,17 @@ async function maybeResetRuns(apiBase, doReset) {
   console.log("Reset existing run data:", resp.json.reset);
 }
 
+async function cleanupAttemptOnFailure(apiBase, adminKey, model, puzzleDate) {
+  if (!adminKey) return { ok: false, skipped: true, reason: "missing_admin_key" };
+  const resp = await postJson(
+    `${apiBase}/api/v1/competition/delete-attempt`,
+    { model, puzzleDate },
+    { authorization: `Bearer ${adminKey}` }
+  );
+  if (!resp.ok) return { ok: false, error: resp.json?.error || `HTTP ${resp.status}` };
+  return { ok: true, deleted: Number(resp.json?.deleted || 0) };
+}
+
 async function main() {
   loadDotEnv();
 
@@ -1303,6 +1314,7 @@ async function main() {
   console.log(`Prompt version: ${PROMPT_VERSION}`);
 
   const results = [];
+  const adminKey = process.env.COMPETITION_ADMIN_KEY || "";
   for (const m of active) {
     console.log(`\n=== ${m.displayName} (${m.provider}:${m.resolvedApiModel}) ===`);
     try {
@@ -1311,6 +1323,16 @@ async function main() {
       printSummaryRow(row);
     } catch (e) {
       console.log(`FAILED ${m.displayName}: ${e.message}`);
+      try {
+        const cleanup = await cleanupAttemptOnFailure(apiBase, adminKey, m.competitionModel, date);
+        if (cleanup.ok) {
+          console.log(`Cleanup attempt ${m.competitionModel} ${date}: deleted=${cleanup.deleted}`);
+        } else if (!cleanup.skipped) {
+          console.log(`Cleanup attempt failed for ${m.competitionModel} ${date}: ${cleanup.error || "unknown"}`);
+        }
+      } catch (cleanupErr) {
+        console.log(`Cleanup attempt errored for ${m.competitionModel} ${date}: ${cleanupErr.message}`);
+      }
       results.push({
         model: m.competitionModel,
         displayName: m.displayName,
