@@ -262,6 +262,12 @@ function solvedLabelText(arr, prefix) {
   return parts.join("; ") || "none";
 }
 
+function finalSolvedLabels(state) {
+  const rows = (state?.solved?.rows || []).map((x) => `row ${x.index}: ${x.label}`).join("; ") || "none";
+  const cols = (state?.solved?.cols || []).map((x) => `col ${x.index}: ${x.label}`).join("; ") || "none";
+  return { rows, cols };
+}
+
 function buildDecisionPrompt(state, metrics, modelMeta) {
   const board = buildBoardText(state);
   const solvedRows = solvedLabelText(state?.solved?.rows, "row");
@@ -283,10 +289,12 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
         ? [`You have done ${metrics.consecutiveSwaps} swaps in a row. Try making a guess.`]
         : []),
     "Return exactly one JSON object and no other text.",
+    "Use scratchpad_update to persist what you learned and your plan for later turns.",
+    "Keep scratchpad_update concise and factual (max ~400 chars).",
     "Allowed JSON outputs:",
-    '{"action":"guess","kind":"row","index":0,"brief_reason":"..."}',
-    '{"action":"guess","kind":"col","index":1,"brief_reason":"..."}',
-    '{"action":"swap","a":[0,0],"b":[1,1],"brief_reason":"..."}',
+    '{"action":"guess","kind":"row","index":0,"brief_reason":"...","scratchpad_update":"..."}',
+    '{"action":"guess","kind":"col","index":1,"brief_reason":"...","scratchpad_update":"..."}',
+    '{"action":"swap","a":[0,0],"b":[1,1],"brief_reason":"...","scratchpad_update":"..."}',
     "Keep brief_reason to <= 140 chars.",
     "Prioritize legal actions and avoid repeating clearly bad guesses.",
     "",
@@ -303,6 +311,7 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     `Invalid actions so far: ${metrics.gameInvalidActions}`,
     `Fallback actions so far: ${metrics.gameFallbackActions}`,
     `incorrect guesses: ${JSON.stringify(metrics.incorrectGuessWordSets || [])}`,
+    `scratchpad: ${metrics.scratchpad || "(empty)"}`,
   ].join("\n");
 }
 
@@ -324,6 +333,7 @@ function pickForcedGuessAction(state) {
 }
 
 function buildNotePrompt(state, runStats) {
+  const solved = finalSolvedLabels(state);
   return [
     "Write only the final note text for a public benchmark table.",
     "Do not explain the task, restate these instructions, or mention the prompt.",
@@ -337,6 +347,11 @@ function buildNotePrompt(state, runStats) {
     `Turns: ${state?.turn}`,
     `Correct guesses: ${runStats.gameCorrectGuesses}`,
     `Incorrect guesses: ${runStats.gameIncorrectGuesses}`,
+    `Solved rows: ${solved.rows}`,
+    `Solved cols: ${solved.cols}`,
+    "Final board:",
+    buildBoardText(state),
+    `Scratchpad timeline: ${runStats.scratchpad || "(empty)"}`,
   ].join("\n");
 }
 
@@ -398,7 +413,13 @@ function normalizeAction(obj) {
     const kind = String(obj.kind || "").toLowerCase();
     const index = Number(obj.index);
     if ((kind === "row" || kind === "col") && Number.isInteger(index) && index >= 0 && index <= 3) {
-      return { action: "guess", kind, index, briefReason: trimText(obj.brief_reason || obj.reason || "", 140) };
+      return {
+        action: "guess",
+        kind,
+        index,
+        briefReason: trimText(obj.brief_reason || obj.reason || "", 140),
+        scratchpadUpdate: trimText(obj.scratchpad_update || obj.scratchpad || "", 500),
+      };
     }
     return null;
   }
@@ -410,7 +431,13 @@ function normalizeAction(obj) {
       a.every((v) => Number.isInteger(v) && v >= 0 && v <= 3) &&
       b.every((v) => Number.isInteger(v) && v >= 0 && v <= 3)
     ) {
-      return { action: "swap", a, b, briefReason: trimText(obj.brief_reason || obj.reason || "", 140) };
+      return {
+        action: "swap",
+        a,
+        b,
+        briefReason: trimText(obj.brief_reason || obj.reason || "", 140),
+        scratchpadUpdate: trimText(obj.scratchpad_update || obj.scratchpad || "", 500),
+      };
     }
   }
   return null;
@@ -736,6 +763,7 @@ async function runSingleModel(opts, modelCfg) {
     gameCorrectGuesses: 0,
     gameIncorrectGuesses: 0,
     incorrectGuessWordSets: [],
+    scratchpad: "",
     gameInvalidActions: 0,
     gameFallbackActions: 0,
     consecutiveSwaps: 0,
@@ -838,6 +866,8 @@ async function runSingleModel(opts, modelCfg) {
         if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
         continue;
       }
+
+      if (action.scratchpadUpdate) stats.scratchpad = action.scratchpadUpdate;
 
       if (action.action === "guess") {
         if (playResp.json?.result?.correct) stats.gameCorrectGuesses += 1;

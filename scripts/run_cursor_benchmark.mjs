@@ -234,6 +234,12 @@ function lineWordsFromState(state, kind, index) {
   return words;
 }
 
+function finalSolvedLabels(state) {
+  const rows = (state?.solved?.rows || []).map((x) => `row ${x.index}: ${x.label}`).join("; ") || "none";
+  const cols = (state?.solved?.cols || []).map((x) => `col ${x.index}: ${x.label}`).join("; ") || "none";
+  return { rows, cols };
+}
+
 function buildDecisionPrompt(state, metrics, modelMeta) {
   const board = buildBoardText(state);
   const solvedRows = (state?.solved?.rows || []).map((x) => x.index).join(",") || "none";
@@ -266,9 +272,11 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
         ? [`You have done ${metrics.consecutiveSwaps} swaps in a row. Try making a guess.`]
         : []),
     "Allowed shapes:",
-    '{"action":"guess","kind":"row","index":0}',
-    '{"action":"guess","kind":"col","index":1}',
-    '{"action":"swap","a":[0,0],"b":[1,1]}',
+    '{"action":"guess","kind":"row","index":0,"scratchpad_update":"..."}',
+    '{"action":"guess","kind":"col","index":1,"scratchpad_update":"..."}',
+    '{"action":"swap","a":[0,0],"b":[1,1],"scratchpad_update":"..."}',
+    "Use scratchpad_update to persist what you learned and your plan for later turns.",
+    "Keep scratchpad_update concise and factual (max ~400 chars).",
     "Do not repeat the same no-progress move in a loop.",
     "",
     `model=${modelMeta.displayName}`,
@@ -285,11 +293,13 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     `invalidSoFar=${metrics.gameInvalidActions}`,
     `repairPromptsSoFar=${metrics.gameFallbackActions}`,
     `incorrect guesses: ${JSON.stringify(metrics.incorrectGuessWordSets || [])}`,
+    `scratchpad: ${metrics.scratchpad || "(empty)"}`,
     metrics.lastActionSummary ? `lastAction=${metrics.lastActionSummary}` : null,
   ].join("\n");
 }
 
 function buildNotePrompt(state, runStats) {
+  const solved = finalSolvedLabels(state);
   return [
     "Write only the final note text for a public benchmark table.",
     "Do not explain the task, restate these instructions, or mention the prompt.",
@@ -303,6 +313,11 @@ function buildNotePrompt(state, runStats) {
     `Turns: ${state?.turn}`,
     `Correct guesses: ${runStats.gameCorrectGuesses}`,
     `Incorrect guesses: ${runStats.gameIncorrectGuesses}`,
+    `Solved rows: ${solved.rows}`,
+    `Solved cols: ${solved.cols}`,
+    "Final board:",
+    buildBoardText(state),
+    `Scratchpad timeline: ${runStats.scratchpad || "(empty)"}`,
   ].join("\n");
 }
 
@@ -376,7 +391,13 @@ function normalizeAction(obj) {
     const kind = String(obj.kind || "").toLowerCase();
     const index = Number(obj.index);
     if ((kind === "row" || kind === "col") && Number.isInteger(index) && index >= 0 && index <= 3) {
-      return { action: "guess", kind, index, briefReason: trimText(obj.brief_reason || obj.reason || "", 140) };
+      return {
+        action: "guess",
+        kind,
+        index,
+        briefReason: trimText(obj.brief_reason || obj.reason || "", 140),
+        scratchpadUpdate: trimText(obj.scratchpad_update || obj.scratchpad || "", 500),
+      };
     }
     return null;
   }
@@ -388,7 +409,13 @@ function normalizeAction(obj) {
       a.every((v) => Number.isInteger(v) && v >= 0 && v <= 3) &&
       b.every((v) => Number.isInteger(v) && v >= 0 && v <= 3)
     ) {
-      return { action: "swap", a, b, briefReason: trimText(obj.brief_reason || obj.reason || "", 140) };
+      return {
+        action: "swap",
+        a,
+        b,
+        briefReason: trimText(obj.brief_reason || obj.reason || "", 140),
+        scratchpadUpdate: trimText(obj.scratchpad_update || obj.scratchpad || "", 500),
+      };
     }
   }
   return null;
@@ -677,6 +704,7 @@ async function runSingleModel(opts, modelCfg) {
     gameCorrectGuesses: 0,
     gameIncorrectGuesses: 0,
     incorrectGuessWordSets: [],
+    scratchpad: "",
     gameInvalidActions: 0,
     gameFallbackActions: 0,
     inputTokens: 0,
@@ -793,6 +821,8 @@ async function runSingleModel(opts, modelCfg) {
           if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
           continue;
         }
+
+        if (action.scratchpadUpdate) stats.scratchpad = action.scratchpadUpdate;
 
         const prevState = state;
         if (action.action === "guess") {
