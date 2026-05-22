@@ -182,13 +182,20 @@ table {
 .s3 { background: var(--s3); }
 .s4 { background: var(--s4); }
 .s5 { background: var(--s5); color: #fff; }
+.mw0 { background: var(--s0); } /* win, strongest */
+.mw1 { background: #d8ef9f; }   /* win, medium */
+.mw2 { background: #ffe680; }   /* win, weaker */
+.ml0 { background: #ff8a65; }   /* loss, better */
+.ml1 { background: #e57373; }   /* loss, medium */
+.ml2 { background: #c62828; color: #fff; } /* loss, worst */
 .note-dot {
   width: 8px;
   height: 8px;
   border-radius: 999px;
   background: rgba(34, 34, 34, 0.55);
 }
-.s5 .note-dot { background: rgba(255,255,255,0.7); }
+  .s5 .note-dot,
+  .ml2 .note-dot { background: rgba(255,255,255,0.7); }
 .loading,
 .error,
 .empty-state {
@@ -408,16 +415,16 @@ table {
     const correct = Number(rec?.game_correct_guesses);
 
     if (outcome === 'won') {
-      if (!Number.isFinite(strikes)) return 's1';
-      if (strikes <= 0) return 's0';
-      if (strikes <= 2) return 's1';
-      return 's2';
+      if (!Number.isFinite(strikes)) return 'mw1';
+      if (strikes <= 1) return 'mw0';
+      if (strikes <= 3) return 'mw1';
+      return 'mw2';
     }
 
-    if (!Number.isFinite(correct) || correct <= 0) return 's5';
-    if (correct >= 4) return 's2';
-    if (correct >= 2) return 's3';
-    return 's4';
+    if (!Number.isFinite(correct) || correct <= 0) return 'ml2';
+    if (correct >= 4) return 'ml0';
+    if (correct >= 2) return 'ml1';
+    return 'ml2';
   }
 
   function safeAvg(value) {
