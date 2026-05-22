@@ -76,6 +76,44 @@ function requireEnvVars(vars) {
   }
 }
 
+async function fetchJson(url, init = {}, timeoutMs = 30000) {
+  const ctl = new AbortController();
+  const timer = setTimeout(() => ctl.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, { ...init, signal: ctl.signal });
+    const text = await res.text();
+    let json = {};
+    try {
+      json = text ? JSON.parse(text) : {};
+    } catch {
+      json = { ok: false, error: text || `HTTP ${res.status}` };
+    }
+    return { ok: res.ok && json.ok !== false, status: res.status, json };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function fetchExistingModelsForDate(apiBase, date, adminKey) {
+  const url = `${apiBase}/api/v1/competition/benchmark-runs?from=${encodeURIComponent(date)}&to=${encodeURIComponent(date)}&limit=1000`;
+  const resp = await fetchJson(url, {
+    method: "GET",
+    headers: {
+      authorization: `Bearer ${adminKey}`,
+    },
+  });
+  if (!resp.ok) {
+    throw new Error(`Failed to load existing benchmark runs for ${date}: ${resp.json?.error || `HTTP ${resp.status}`}`);
+  }
+  const set = new Set();
+  const runs = Array.isArray(resp.json?.runs) ? resp.json.runs : [];
+  for (const r of runs) {
+    const model = String(r?.model || "").trim();
+    if (model) set.add(model);
+  }
+  return set;
+}
+
 function runTask(task) {
   return new Promise((resolve) => {
     const child = spawn(task.cmd, task.args, {
@@ -137,7 +175,7 @@ async function main() {
   const f = parsed.flags;
 
   if (f.help || f.h) {
-    console.log(`Usage:\n  node scripts/run_all_benchmarks_parallel.mjs [--date YYYY-MM-DD] [--api https://connecdoku.com] [--thinking-level medium] [--max-steps 64] [--concurrency 16] [--lanes direct,cursor]\n\nNotes:\n  - Runs one benchmark process per model in parallel.\n  - Uses scripts/run_api_benchmark.mjs for direct providers.\n  - Uses scripts/run_cursor_benchmark.mjs for Composer models.\n  - Date is shared across all tasks for fair same-day comparison.\n`);
+    console.log(`Usage:\n  node scripts/run_all_benchmarks_parallel.mjs [--date YYYY-MM-DD] [--api https://connecdoku.com] [--thinking-level medium] [--max-steps 64] [--concurrency 16] [--lanes direct,cursor] [--only-missing]\n\nNotes:\n  - Runs one benchmark process per model in parallel.\n  - Uses scripts/run_api_benchmark.mjs for direct providers.\n  - Uses scripts/run_cursor_benchmark.mjs for Composer models.\n  - Date is shared across all tasks for fair same-day comparison.\n  - --only-missing skips models that already have a benchmark run for that date.\n`);
     return;
   }
 
@@ -149,14 +187,21 @@ async function main() {
   const maxSteps = Math.max(8, Math.min(300, Number(f["max-steps"] || DEFAULT_MAX_STEPS)));
   const concurrency = Math.max(1, Math.min(64, Number(f.concurrency || 32)));
   const lanes = String(f.lanes || "direct,cursor").split(",").map((x) => x.trim()).filter(Boolean);
+  const onlyMissing = !!f["only-missing"];
 
   requireEnvVars(["COMPETITION_ADMIN_KEY"]);
 
   const tasks = [];
+  let existingForDate = new Set();
+  if (onlyMissing) {
+    existingForDate = await fetchExistingModelsForDate(apiBase, date, process.env.COMPETITION_ADMIN_KEY);
+    console.log(`Idempotent mode: found ${existingForDate.size} existing model result(s) for ${date}.`);
+  }
 
   if (lanes.includes("direct")) {
     const direct = getEnabledModels(DIRECT_MODELS_FILE);
     for (const m of direct) {
+      if (onlyMissing && existingForDate.has(m.competitionModel)) continue;
       if (!process.env[m.passwordEnv || ""]) {
         throw new Error(`Missing password env for direct model ${m.competitionModel}: ${m.passwordEnv}`);
       }
@@ -181,6 +226,7 @@ async function main() {
     requireEnvVars(["CURSOR_API_KEY", "CURSOR_BENCH_REPOSITORY"]);
     const cursor = getEnabledModels(CURSOR_MODELS_FILE);
     for (const m of cursor) {
+      if (onlyMissing && existingForDate.has(m.competitionModel)) continue;
       if (!process.env[m.passwordEnv || ""]) {
         throw new Error(`Missing password env for cursor model ${m.competitionModel}: ${m.passwordEnv}`);
       }
@@ -201,7 +247,10 @@ async function main() {
     }
   }
 
-  if (!tasks.length) throw new Error("No tasks to run. Check --lanes and model rosters.");
+  if (!tasks.length) {
+    console.log(`No tasks to run for ${date}. All selected models already have results.`);
+    return;
+  }
 
   console.log(`Running ${tasks.length} benchmark tasks in parallel on ${date}`);
   console.log(`API base: ${apiBase}`);

@@ -104,4 +104,5 @@ jobs:
             --max-steps "$MAX_STEPS" \
             --thinking-level "$THINKING" \
             --concurrency 32 \
-            --lanes direct,cursor
+            --lanes direct,cursor \
+            --only-missing
