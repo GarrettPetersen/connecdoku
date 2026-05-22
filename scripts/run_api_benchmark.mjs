@@ -528,6 +528,17 @@ function assertFreshCompetitionAttempt(startJson, modelId, date) {
   }
 }
 
+function classifyCompetitionAttempt(startJson) {
+  const state = startJson?.state || {};
+  const attempt = startJson?.attempt || {};
+  const turnCount = Number(attempt.turnCount ?? state.turn ?? 0);
+  const solvedCount = solvedCountFromState(state);
+  const strikes = Number(attempt.strikes ?? state.strikes ?? 0);
+  const finished = !!state.finished || !!attempt.finished;
+  const pristine = !finished && turnCount === 0 && solvedCount === 0 && strikes === 0;
+  return { state, turnCount, solvedCount, strikes, finished, pristine };
+}
+
 function geminiThinkingBudgetFor(level) {
   const normalized = normalizeReasoningLevel(level);
   if (normalized === "none") return 0;
@@ -796,7 +807,27 @@ async function runSingleModel(opts, modelCfg) {
   if (!startResp.ok) {
     throw new Error(`start failed: ${startResp.json?.error || startResp.status}`);
   }
-  assertFreshCompetitionAttempt(startResp.json, modelCfg.competitionModel, opts.date);
+  const startClass = classifyCompetitionAttempt(startResp.json);
+  if (startClass.finished) {
+    console.log(
+      `Skipping ${modelCfg.displayName}: locked attempt already finished ` +
+      `(turn=${startClass.turnCount}, solved=${startClass.solvedCount}, strikes=${startClass.strikes}).`
+    );
+    return {
+      model: modelCfg.competitionModel,
+      displayName: modelCfg.displayName,
+      provider: modelCfg.provider,
+      apiModel: modelCfg.resolvedApiModel,
+      outcome: startResp.json?.state?.outcome || "lost",
+      strikes: Number(startResp.json?.state?.strikes ?? startClass.strikes ?? 0),
+      turns: Number(startResp.json?.state?.turn ?? startClass.turnCount ?? 0),
+      durationMs: 0,
+      estimatedCostUsd: 0,
+      tokens: { input: 0, output: 0, total: 0 },
+      note: "Skipped: locked attempt already finished.",
+      skipped: true,
+    };
+  }
 
   let state = startResp.json.state;
   const competitionToken = startResp.json.competitionToken;
