@@ -782,6 +782,7 @@ async function runSingleModel(opts, modelCfg) {
     inputTokens: 0,
     outputTokens: 0,
     totalTokens: 0,
+    lastModelApiError: "",
   };
 
   const startResp = await postJson(`${apiBase}/api/v1/competition/start`, {
@@ -833,6 +834,7 @@ async function runSingleModel(opts, modelCfg) {
       } catch (e) {
         stats.modelApiErrors += 1;
         stats.gameInvalidActions += 1;
+        stats.lastModelApiError = String(e?.message || e || "");
         repairReason = `Model API call failed: ${e.message}`;
         actionTrace.push({ step, attempt, error: `model_call_error: ${e.message}` });
         if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
@@ -979,7 +981,8 @@ async function runSingleModel(opts, modelCfg) {
   }
 
   if (stats.modelApiCalls < 1) {
-    throw new Error("No successful model API calls.");
+    const suffix = stats.lastModelApiError ? ` Last API error: ${stats.lastModelApiError}` : "";
+    throw new Error(`No successful model API calls.${suffix}`);
   }
 
   let note = "";
