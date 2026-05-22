@@ -1323,6 +1323,46 @@ async function main() {
       printSummaryRow(row);
     } catch (e) {
       console.log(`FAILED ${m.displayName}: ${e.message}`);
+      if (adminKey) {
+        try {
+          const t = nowIso();
+          await postJson(`${apiBase}/api/v1/competition/benchmark-run`, {
+            model: m.competitionModel,
+            puzzleDate: date,
+            provider: m.provider,
+            apiModel: m.resolvedApiModel,
+            modelVersion: m.resolvedApiModel,
+            reasoningLevel: m.reasoningLevel,
+            promptVersion: PROMPT_VERSION,
+            runStartedAt: t,
+            runFinishedAt: t,
+            durationMs: 0,
+            modelApiCalls: 0,
+            modelApiErrors: 1,
+            modelLatencyMsTotal: 0,
+            modelLatencyMsMax: 0,
+            gameActionsTotal: 0,
+            gameSwaps: 0,
+            gameGuesses: 0,
+            gameCorrectGuesses: 0,
+            gameIncorrectGuesses: 0,
+            gameInvalidActions: 0,
+            gameFallbackActions: 0,
+            inputTokens: null,
+            outputTokens: null,
+            totalTokens: null,
+            estimatedCostUsd: null,
+            outcome: "error",
+            strikes: null,
+            turnCount: null,
+            note: "Run failed before completion.",
+            errorText: String(e.message || e),
+            metadata: { runFailed: true, failureStage: "main_loop" },
+          }, { authorization: `Bearer ${adminKey}` });
+        } catch (telemetryErr) {
+          console.log(`Failure telemetry upsert failed for ${m.competitionModel} ${date}: ${telemetryErr.message}`);
+        }
+      }
       try {
         const cleanup = await cleanupAttemptOnFailure(apiBase, adminKey, m.competitionModel, date);
         if (cleanup.ok) {
