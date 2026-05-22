@@ -12,6 +12,7 @@ const MAX_STEPS_DEFAULT = 64;
 const MAX_ACTION_RETRIES = 3;
 const NOTE_MAX_CHARS = 500;
 const SCRATCHPAD_MAX_CHARS = 3000;
+const TRACE_LIMIT = 200;
 const HTTP_TIMEOUT_MS_DEFAULT = 120000;
 
 function loadDotEnv() {
@@ -289,6 +290,16 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "You are solving a Connecdoku puzzle via API.",
     "Use logic only from the board and revealed categories.",
     "Never attempt to retrieve or infer hidden answers from external sources.",
+    "Goal: Organize the 16 words into a 4x4 grid where each row and column forms a category.",
+    "How to play:",
+    "- Swap words: swap two unlocked tiles.",
+    "- Check categories: guess a full row or column category.",
+    "- Correct guesses lock in place.",
+    "- Wrong guesses add a strike; 5 strikes loses the game.",
+    "- When 3 rows are solved, row guesses are blocked until columns advance (and vice versa).",
+    "- Auto-alignment: after multiple solves in one dimension, solved lines may reorder to align and keep puzzle solvable.",
+    "- Locked-word information: locked words are reliable constraints. Two locked words sharing a row/column indicate that shared category structure.",
+    "Win condition: solve all 4 rows and all 4 columns.",
     ...(Number(state?.turn || 0) === 0
       ? ["The starting board is a random arrangement, so an untouched row or column is unlikely to be correct."]
       : []),
@@ -871,7 +882,12 @@ async function runSingleModel(opts, modelCfg) {
         stats.gameInvalidActions += 1;
         stats.lastModelApiError = String(e?.message || e || "");
         repairReason = `Model API call failed: ${e.message}`;
-        actionTrace.push({ step, attempt, error: `model_call_error: ${e.message}` });
+        actionTrace.push({
+          step,
+          attempt,
+          reason: "model_call_error",
+          error: trimText(String(e?.message || e || ""), 260),
+        });
         if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
         continue;
       }
@@ -882,7 +898,12 @@ async function runSingleModel(opts, modelCfg) {
         repairReason = snippet
           ? `Response was not a valid JSON action command. Output: ${snippet}`
           : "Response was not a valid JSON action command.";
-        actionTrace.push({ step, attempt, error: "invalid_action_json", modelOutput: trimText(modelRespText, 280) });
+        actionTrace.push({
+          step,
+          attempt,
+          reason: "invalid_action_json",
+          modelOutput: trimText(modelRespText, 280),
+        });
         if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
         continue;
       }
@@ -908,6 +929,7 @@ async function runSingleModel(opts, modelCfg) {
         actionTrace.push({
           step,
           attempt,
+          reason: "api_rejected",
           action,
           modelOutput: trimText(modelRespText, 280),
           apiError,
@@ -932,8 +954,13 @@ async function runSingleModel(opts, modelCfg) {
       actionTrace.push({
         step,
         attempt,
+        reason: "action_accepted",
         action,
         modelOutput: trimText(modelRespText, 280),
+        result: {
+          correct: !!playResp.json?.result?.correct,
+          lost: !!playResp.json?.result?.lost,
+        },
         strikes: state.strikes,
         turn: state.turn,
         finished: state.finished,
@@ -979,6 +1006,7 @@ async function runSingleModel(opts, modelCfg) {
       actionTrace.push({
         step,
         attempt: "forced-fallback",
+        reason: "forced_fallback_guess",
         action: forced,
         strikes: state.strikes,
         turn: state.turn,
@@ -1018,6 +1046,7 @@ async function runSingleModel(opts, modelCfg) {
       actionTrace.push({
         step: step + guard,
         attempt: "forced-finish",
+        reason: "forced_finish_guess",
         action: forced,
         strikes: state.strikes,
         turn: state.turn,
@@ -1147,7 +1176,7 @@ async function runSingleModel(opts, modelCfg) {
       usedFallback: stats.gameFallbackActions > 0,
       usedForcedFallback: stats.forcedFallbackGuesses > 0,
       maxSteps: opts.maxSteps,
-      actionTrace: actionTrace.slice(-40),
+      transcriptCompact: actionTrace.slice(-TRACE_LIMIT),
       promptHash: sha1(buildDecisionPrompt(state, stats, modelCfg)),
     },
   };
