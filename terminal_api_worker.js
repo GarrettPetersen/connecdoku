@@ -479,6 +479,27 @@ function chooseCompatibleLayout(runtime, constraint) {
   return best;
 }
 
+function invariantSnapshot(runtime, context) {
+  return {
+    context,
+    puzzleDate: runtime?.context?.puzzleDate || null,
+    turn: runtime?.turn ?? null,
+    strikes: runtime?.strikes ?? null,
+    solvedRows: [...(runtime?.solvedRows?.keys?.() || [])],
+    solvedCols: [...(runtime?.solvedCols?.keys?.() || [])],
+    board: copyGrid(runtime?.grid || []),
+  };
+}
+
+function assertSolvableOrThrow(runtime, context) {
+  const candidate = chooseCompatibleLayout(runtime, null);
+  if (candidate) return;
+  const snapshot = invariantSnapshot(runtime, context);
+  const message = `INVARIANT VIOLATION: UNSOLVABLE_STATE after ${context}.`;
+  console.error(message, JSON.stringify(snapshot));
+  throw new Error(`${message} This should never happen; puzzle state is corrupted.`);
+}
+
 function alignJustSolvedLine(runtime, kind, index, words) {
   const aligned = chooseCompatibleLayout(runtime, { kind, index, words });
   if (!aligned) return;
@@ -612,6 +633,7 @@ function handleSwap(runtime, a, b) {
   if (!validateBoardWords(runtime)) return { ok: false, status: 400, error: "Invalid board word set." };
 
   runtime.turn += 1;
+  assertSolvableOrThrow(runtime, "swap");
   return { ok: true, changed: true };
 }
 
@@ -637,12 +659,16 @@ function handleGuess(runtime, kind, index) {
     runtime.strikes += 1;
     if (runtime.strikes >= MAX_STRIKES) {
       finalizeLoss(runtime);
+      assertSolvableOrThrow(runtime, "finalizeLoss");
       return { ok: true, correct: false, strikes: runtime.strikes, lost: true };
     }
+    assertSolvableOrThrow(runtime, "incorrect_guess");
     return { ok: true, correct: false, strikes: runtime.strikes, lost: false };
   }
 
-  return applyCorrectGuess(runtime, kind, index, label, false);
+  const result = applyCorrectGuess(runtime, kind, index, label, false);
+  assertSolvableOrThrow(runtime, "correct_guess");
+  return result;
 }
 
 function envNum(env, key, fallback) {
@@ -680,6 +706,19 @@ function sendJson(code, payload) {
       "access-control-allow-methods": "GET, POST, OPTIONS",
     },
   });
+}
+
+function authOrInternalError(e) {
+  const msg = String(e?.message || e || "");
+  if (
+    msg.includes("Invalid competition token") ||
+    msg.includes("No locked attempt found") ||
+    msg.includes("Attempt date mismatch") ||
+    msg.includes("Stored attempt payload is invalid")
+  ) {
+    return sendJson(401, { ok: false, error: msg });
+  }
+  return sendJson(500, { ok: false, error: msg });
 }
 
 async function parseBody(req) {
@@ -873,6 +912,7 @@ function snapshotFromRuntime(runtime) {
 function runtimeFromSnapshot(snapshot) {
   const runtime = runtimeFromPayload(snapshot);
   if (!validateBoardWords(runtime)) throw new Error("Invalid stored attempt board.");
+  assertSolvableOrThrow(runtime, "runtimeFromSnapshot");
   return runtime;
 }
 
@@ -954,6 +994,7 @@ async function loadCompetitionRuntime(env, competitionToken) {
   if (runtime.context.puzzleDate !== payload.puzzleDate) {
     throw new Error("Attempt date mismatch.");
   }
+  assertSolvableOrThrow(runtime, "loadCompetitionRuntime");
 
   return { payload, row, runtime };
 }
@@ -1350,12 +1391,29 @@ async function benchmarkData(env, url) {
   const leaderboardStmt = env.DB.prepare(leaderboardQuery);
   const leaderboardRows = whereParams.length ? await leaderboardStmt.bind(...whereParams).all() : await leaderboardStmt.all();
 
+  const inProgressRows = await env.DB.prepare(
+    `SELECT
+      a.model,
+      COALESCE(c.display_name, a.model) AS display_name,
+      a.puzzle_date,
+      a.strikes,
+      a.turn_count,
+      a.updated_at,
+      COALESCE(json_array_length(json_extract(a.runtime_json, '$.solvedRows')), 0)
+      + COALESCE(json_array_length(json_extract(a.runtime_json, '$.solvedCols')), 0) AS correct_guesses
+    FROM competition_attempts a
+    LEFT JOIN competitors c ON c.model = a.model
+    WHERE a.finished = 0
+    ORDER BY a.updated_at DESC, display_name ASC`
+  ).all();
+
   return sendJson(200, {
     ok: true,
     models: modelRows.results || [],
     dates: (dateRows.results || []).map((d) => d.puzzle_date),
     results: resultRows.results || [],
     leaderboard: leaderboardRows.results || [],
+    in_progress: inProgressRows.results || [],
   });
 }
 
@@ -1655,6 +1713,7 @@ async function routeRequest(req, env) {
       if (!validateBoardWords(runtime)) {
         return sendJson(400, { ok: false, error: "Invalid board word set." });
       }
+      assertSolvableOrThrow(runtime, "play_state");
 
       return sendJson(200, { ok: true, ...(await tokenResponse(runtime, env, envNum(env, "TERMINAL_API_STATE_TTL_SECONDS", DEFAULT_STATE_TTL_SECONDS))) });
     }
@@ -1678,6 +1737,7 @@ async function routeRequest(req, env) {
       if (!validateBoardWords(runtime)) {
         return sendJson(400, { ok: false, error: "Invalid board word set." });
       }
+      assertSolvableOrThrow(runtime, "play_action_pre");
 
       const result = url.pathname.endsWith("/swap")
         ? handleSwap(runtime, body.a, body.b)
@@ -1730,7 +1790,7 @@ async function routeRequest(req, env) {
       try {
         return await competitionSwap(req, env, body);
       } catch (e) {
-        return sendJson(401, { ok: false, error: e.message });
+        return authOrInternalError(e);
       }
     }
 
@@ -1742,7 +1802,7 @@ async function routeRequest(req, env) {
       try {
         return await competitionGuess(req, env, body);
       } catch (e) {
-        return sendJson(401, { ok: false, error: e.message });
+        return authOrInternalError(e);
       }
     }
 

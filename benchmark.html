@@ -265,6 +265,14 @@ table {
       </div>
     </section>
 
+    <section class="section" id="liveSection">
+      <h2>Live In-Progress Runs</h2>
+      <p class="meta" id="liveMeta">Checking for active runs...</p>
+      <div class="table-wrap" id="liveWrap">
+        <div class="loading">Loading live run status...</div>
+      </div>
+    </section>
+
     <div class="footer">
       <a href="index.html">Play Game</a>
       <a href="archive.html">Puzzle Archive</a>
@@ -296,8 +304,10 @@ table {
 
   const leaderboardWrap = document.getElementById('leaderboardWrap');
   const matrixWrap = document.getElementById('matrixWrap');
+  const liveWrap = document.getElementById('liveWrap');
   const leaderboardMeta = document.getElementById('leaderboardMeta');
   const matrixMeta = document.getElementById('matrixMeta');
+  const liveMeta = document.getElementById('liveMeta');
   const tooltipEl = document.createElement('div');
   tooltipEl.className = 'floating-tooltip';
   document.body.appendChild(tooltipEl);
@@ -582,7 +592,59 @@ table {
     matrixMeta.textContent = `${dates.length} dates × ${models.length} models.`;
   }
 
+  function buildLiveRuns(rows) {
+    const active = (Array.isArray(rows) ? rows : [])
+      .filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')));
+
+    if (!active.length) {
+      liveWrap.innerHTML = '<div class="empty-state">No active runs right now.</div>';
+      liveMeta.textContent = 'No unfinished attempts detected.';
+      return;
+    }
+
+    const table = document.createElement('table');
+    table.className = 'leaderboard';
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Puzzle Date</th>
+          <th>Strikes</th>
+          <th>Correct</th>
+          <th>Turns</th>
+          <th>Last Update</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    `;
+
+    const tbody = table.querySelector('tbody');
+    active.forEach((row) => {
+      const tr = document.createElement('tr');
+      const strikes = Number(row.strikes);
+      const correct = Number(row.correct_guesses);
+      const turns = Number(row.turn_count);
+      const updated = row.updated_at ? new Date(row.updated_at).toLocaleTimeString() : '—';
+      tr.innerHTML = `
+        <td>${row.display_name || row.model}</td>
+        <td>${row.puzzle_date || '—'}</td>
+        <td><span class="score-pill ${strikeClass(strikes)}">${Number.isFinite(strikes) ? strikes : '—'}</span></td>
+        <td><span class="score-pill ${correctGuessClass(correct)}">${Number.isFinite(correct) ? correct : '—'}</span></td>
+        <td>${Number.isFinite(turns) ? turns : '—'}</td>
+        <td>${updated}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+
+    liveWrap.innerHTML = '';
+    liveWrap.appendChild(table);
+    liveMeta.textContent = `${active.length} active run${active.length === 1 ? '' : 's'}. Auto-refreshing every 45s.`;
+  }
+
+  let loading = false;
   async function load() {
+    if (loading) return;
+    loading = true;
     try {
       const res = await fetch(API_URL, { headers: { 'accept': 'application/json' } });
       if (!res.ok) {
@@ -595,16 +657,22 @@ table {
 
       buildLeaderboard(Array.isArray(data.leaderboard) ? data.leaderboard : []);
       buildMatrix(data);
+      buildLiveRuns(Array.isArray(data.in_progress) ? data.in_progress : []);
     } catch (err) {
       const message = err && err.message ? err.message : String(err);
       leaderboardWrap.innerHTML = `<div class="error">Failed to load leaderboard: ${message}</div>`;
       matrixWrap.innerHTML = `<div class="error">Failed to load benchmark matrix: ${message}</div>`;
+      liveWrap.innerHTML = `<div class="error">Failed to load live run status: ${message}</div>`;
       leaderboardMeta.textContent = 'Unable to load leaderboard.';
       matrixMeta.textContent = 'Unable to load matrix.';
+      liveMeta.textContent = 'Unable to load live run status.';
+    } finally {
+      loading = false;
     }
   }
 
   load();
+  setInterval(load, 45000);
 })();
 </script>
 </body>

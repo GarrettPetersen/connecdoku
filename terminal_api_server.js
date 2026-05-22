@@ -440,6 +440,27 @@ function chooseCompatibleLayout(runtime, constraint) {
   return best;
 }
 
+function invariantSnapshot(runtime, context) {
+  return {
+    context,
+    puzzleDate: runtime?.context?.puzzleDate || null,
+    turn: runtime?.turn ?? null,
+    strikes: runtime?.strikes ?? null,
+    solvedRows: [...(runtime?.solvedRows?.keys?.() || [])],
+    solvedCols: [...(runtime?.solvedCols?.keys?.() || [])],
+    board: copyGrid(runtime?.grid || []),
+  };
+}
+
+function assertSolvableOrThrow(runtime, context) {
+  const candidate = chooseCompatibleLayout(runtime, null);
+  if (candidate) return;
+  const snapshot = invariantSnapshot(runtime, context);
+  const message = `INVARIANT VIOLATION: UNSOLVABLE_STATE after ${context}.`;
+  console.error(message, JSON.stringify(snapshot));
+  throw new Error(`${message} This should never happen; puzzle state is corrupted.`);
+}
+
 function alignJustSolvedLine(runtime, kind, index, words) {
   const aligned = chooseCompatibleLayout(runtime, { kind, index, words });
   if (!aligned) return;
@@ -576,6 +597,7 @@ function handleSwap(runtime, a, b) {
   if (!validateBoardWords(runtime)) return { ok: false, status: 400, error: "Invalid board word set." };
 
   runtime.turn += 1;
+  assertSolvableOrThrow(runtime, "swap");
   return { ok: true, changed: true };
 }
 
@@ -601,12 +623,16 @@ function handleGuess(runtime, kind, index) {
     runtime.strikes += 1;
     if (runtime.strikes >= MAX_STRIKES) {
       finalizeLoss(runtime);
+      assertSolvableOrThrow(runtime, "finalizeLoss");
       return { ok: true, correct: false, strikes: runtime.strikes, lost: true };
     }
+    assertSolvableOrThrow(runtime, "incorrect_guess");
     return { ok: true, correct: false, strikes: runtime.strikes, lost: false };
   }
 
-  return applyCorrectGuess(runtime, kind, index, label, false);
+  const result = applyCorrectGuess(runtime, kind, index, label, false);
+  assertSolvableOrThrow(runtime, "correct_guess");
+  return result;
 }
 
 function sendJson(res, code, payload) {
@@ -759,6 +785,7 @@ const server = http.createServer(async (req, res) => {
       if (!validateBoardWords(runtime)) {
         return sendJson(res, 400, { ok: false, error: "Invalid board word set." });
       }
+      assertSolvableOrThrow(runtime, "play_state");
 
       return sendJson(res, 200, { ok: true, ...tokenResponse(runtime, DEFAULT_STATE_TTL_SECONDS) });
     }
@@ -782,6 +809,7 @@ const server = http.createServer(async (req, res) => {
       if (!validateBoardWords(runtime)) {
         return sendJson(res, 400, { ok: false, error: "Invalid board word set." });
       }
+      assertSolvableOrThrow(runtime, "play_action_pre");
 
       const result = url.pathname.endsWith("/swap")
         ? handleSwap(runtime, body.a, body.b)

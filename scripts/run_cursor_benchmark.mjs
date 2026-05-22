@@ -217,6 +217,23 @@ function solvedLabelText(arr, prefix) {
   return parts.join("; ") || "none";
 }
 
+function lineWordsFromState(state, kind, index) {
+  const board = state?.board;
+  if (!Array.isArray(board) || (kind !== "row" && kind !== "col") || !Number.isInteger(index) || index < 0 || index > 3) {
+    return null;
+  }
+  if (kind === "row") {
+    const row = board[index];
+    return Array.isArray(row) && row.length === 4 ? row.slice(0, 4) : null;
+  }
+  const words = [];
+  for (let r = 0; r < 4; r++) {
+    if (!Array.isArray(board[r]) || board[r].length < 4) return null;
+    words.push(board[r][index]);
+  }
+  return words;
+}
+
 function buildDecisionPrompt(state, metrics, modelMeta) {
   const board = buildBoardText(state);
   const solvedRows = (state?.solved?.rows || []).map((x) => x.index).join(",") || "none";
@@ -267,6 +284,7 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     board,
     `invalidSoFar=${metrics.gameInvalidActions}`,
     `repairPromptsSoFar=${metrics.gameFallbackActions}`,
+    `incorrect guesses: ${JSON.stringify(metrics.incorrectGuessWordSets || [])}`,
     metrics.lastActionSummary ? `lastAction=${metrics.lastActionSummary}` : null,
   ].join("\n");
 }
@@ -658,6 +676,7 @@ async function runSingleModel(opts, modelCfg) {
     gameGuesses: 0,
     gameCorrectGuesses: 0,
     gameIncorrectGuesses: 0,
+    incorrectGuessWordSets: [],
     gameInvalidActions: 0,
     gameFallbackActions: 0,
     inputTokens: 0,
@@ -785,6 +804,8 @@ async function runSingleModel(opts, modelCfg) {
             stats.lastActionSummary = `guess ${action.kind}${action.index} correct`;
           } else {
             stats.gameIncorrectGuesses += 1;
+            const guessed = lineWordsFromState(prevState, action.kind, action.index);
+            if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
             stats.lastActionSummary = `guess ${action.kind}${action.index} strike`;
             if (!lost) {
               const prevBoard = JSON.stringify(prevState?.board || null);
@@ -838,7 +859,11 @@ async function runSingleModel(opts, modelCfg) {
         stats.gameGuesses += 1;
         stats.consecutiveSwaps = 0;
         if (forcedResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
-        else stats.gameIncorrectGuesses += 1;
+        else {
+          stats.gameIncorrectGuesses += 1;
+          const guessed = lineWordsFromState(state, forced.kind, forced.index);
+          if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
+        }
         state = forcedResp.json.state;
         actionTrace.push({
           step,
@@ -876,7 +901,11 @@ async function runSingleModel(opts, modelCfg) {
       stats.gameGuesses += 1;
       stats.consecutiveSwaps = 0;
       if (forcedResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
-      else stats.gameIncorrectGuesses += 1;
+      else {
+        stats.gameIncorrectGuesses += 1;
+        const guessed = lineWordsFromState(state, forced.kind, forced.index);
+        if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
+      }
       state = forcedResp.json.state;
       actionTrace.push({
         step: step + guard,
@@ -964,7 +993,11 @@ async function runSingleModel(opts, modelCfg) {
           stats.gameActionsTotal += 1;
           stats.gameGuesses += 1;
           if (forcedResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
-          else stats.gameIncorrectGuesses += 1;
+          else {
+            stats.gameIncorrectGuesses += 1;
+            const guessed = lineWordsFromState(state, forced.kind, forced.index);
+            if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
+          }
           state = forcedResp.json.state;
         }
       }
