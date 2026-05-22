@@ -307,7 +307,6 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
   const actions = (state?.protocol?.allowedActions || []).join(",");
 
   return [
-    "Return exactly ONE JSON object. No markdown. No extra text.",
     "You are playing Connecdoku, not editing code. Ignore repository tasks, commits, and file operations.",
     "Pick one legal move only.",
     "Game rules:",
@@ -691,7 +690,7 @@ async function runCursorAgentPrompt(cfg, prompt, mode, cursorOpts, cursorSession
 
   const promptText = mode === "note"
     ? `${prompt}\n\nReturn only the final note text.`
-    : `${prompt}\n\nReturn only one JSON object and no markdown fences.`;
+    : prompt;
 
   const started = Date.now();
   if (!cursorSession.agentId) {

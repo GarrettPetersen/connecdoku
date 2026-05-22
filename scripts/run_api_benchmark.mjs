@@ -640,7 +640,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     const baseBody = {
       model,
       messages: [
-        { role: "system", content: mode === "note" ? "Return plain text only." : "You are a careful puzzle solver. Return only valid JSON." },
+        { role: "system", content: mode === "note" ? "Return plain text only." : "You are a careful puzzle solver. Follow the user's command protocol exactly." },
         { role: "user", content: prompt },
       ],
     };
@@ -648,9 +648,6 @@ async function callProviderModel(cfg, prompt, mode = "action") {
       ...baseBody,
       temperature,
     };
-    if (mode !== "note") {
-      body.response_format = { type: "json_object" };
-    }
     // Some models support this; harmless if ignored.
     body.reasoning_effort = reasoningLevel;
 
@@ -671,18 +668,11 @@ async function callProviderModel(cfg, prompt, mode = "action") {
         authorization: `Bearer ${apiKey}`,
       });
     }
-    if (!resp.ok && isOpenAiUnsupportedResponseFormat(resp) && mode !== "note") {
-      body = { ...body };
-      delete body.response_format;
-      resp = await postJson("https://api.openai.com/v1/chat/completions", body, {
-        authorization: `Bearer ${apiKey}`,
-      });
-    }
     if (!resp.ok && isOpenAiNotChatModel(resp)) {
       const responsesBody = {
         model,
         input: [
-          { role: "system", content: mode === "note" ? "Return plain text only." : "You are a careful puzzle solver. Return only valid JSON." },
+          { role: "system", content: mode === "note" ? "Return plain text only." : "You are a careful puzzle solver. Follow the user's command protocol exactly." },
           { role: "user", content: prompt },
         ],
       };
@@ -714,7 +704,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     const body = {
       model,
       max_tokens: mode === "note" ? 180 : 240,
-      system: "Return only JSON for action mode. For note mode, plain text only.",
+      system: "For note mode, plain text only. For action mode, follow the user's command protocol exactly.",
       messages: [{ role: "user", content: prompt }],
     };
     const resp = await postJson("https://api.anthropic.com/v1/messages", body, {
@@ -741,7 +731,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
       contents: [{ role: "user", parts: [{ text: prompt }] }],
       generationConfig: {
         temperature,
-        responseMimeType: mode === "note" ? "text/plain" : "application/json",
+        responseMimeType: "text/plain",
         thinkingConfig: {
           thinkingBudget: geminiThinkingBudgetFor(reasoningLevel),
         },
@@ -788,9 +778,8 @@ async function callProviderModel(cfg, prompt, mode = "action") {
       model,
       max_tokens: mode === "note" ? 180 : 260,
       temperature,
-      response_format: (mode === "note" || provider === "moonshot") ? undefined : { type: "json_object" },
       messages: [
-        { role: "system", content: "Return valid JSON only for action mode." },
+        { role: "system", content: "Follow the user's command protocol exactly. For note mode, plain text only." },
         { role: "user", content: prompt },
       ],
     };
