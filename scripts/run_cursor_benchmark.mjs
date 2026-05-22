@@ -206,6 +206,40 @@ function parseJsonObjectLoose(text) {
   }
 }
 
+function parseActionFromTextLoose(text) {
+  const src = String(text || "").trim();
+  if (!src) return null;
+  const lower = src.toLowerCase();
+
+  const slashGuess = lower.match(/\/guess\s+(row|col|column)\s+([0-3])\b/);
+  if (slashGuess) {
+    const kind = slashGuess[1] === "row" ? "row" : "col";
+    return { action: "guess", kind, index: Number(slashGuess[2]) };
+  }
+  const slashSwap = lower.match(/\/swap\s+([0-3])\s+([0-3])\s+([0-3])\s+([0-3])\b/);
+  if (slashSwap) {
+    return {
+      action: "swap",
+      a: [Number(slashSwap[1]), Number(slashSwap[2])],
+      b: [Number(slashSwap[3]), Number(slashSwap[4])],
+    };
+  }
+
+  const guess = lower.match(/\b(?:guess\s+)?(row|col|column)\s*[:#]?\s*([0-3])\b/);
+  if (guess) {
+    const kind = guess[1] === "row" ? "row" : "col";
+    return { action: "guess", kind, index: Number(guess[2]) };
+  }
+
+  if (lower.includes("swap")) {
+    const nums = Array.from(lower.matchAll(/\b([0-3])\s*,\s*([0-3])\b/g)).map((m) => [Number(m[1]), Number(m[2])]);
+    if (nums.length >= 2) {
+      return { action: "swap", a: nums[0], b: nums[1] };
+    }
+  }
+  return null;
+}
+
 function buildBoardText(state) {
   const lines = [];
   const rows = state?.board || [];
@@ -411,8 +445,11 @@ function buildRepairPrompt(basePrompt, reason, lastOutput) {
     "",
     "Your previous response was invalid for this API turn.",
     `Reason: ${reason}`,
-    details ? `Previous response: ${details}` : "Previous response: (empty)",
-    "Reply again with exactly one valid JSON action object only.",
+    details ? `You said: ${details}` : "You said: (empty)",
+    "Now output exactly one move command with no explanation.",
+    "Preferred: one JSON object only.",
+    "Alternative accepted format: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i",
+    "Reply again with exactly one command only.",
   ].join("\n");
 }
 
@@ -839,6 +876,10 @@ async function runSingleModel(opts, modelCfg) {
           stepSawModelResponse = true;
           const parsed = parseJsonObjectLoose(modelResp.text);
           action = normalizeAction(parsed);
+          if (!action) {
+            const textFallback = parseActionFromTextLoose(modelResp.text);
+            action = normalizeAction(textFallback);
+          }
         } catch (e) {
           stats.modelCallErrors.push(String(e.message || e));
           if (isLikelyFatalModelCallError(e.message)) {

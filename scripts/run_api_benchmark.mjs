@@ -219,6 +219,24 @@ function parseActionFromTextLoose(text) {
   if (!src) return null;
   const lower = src.toLowerCase();
 
+  // Slash command forms:
+  // /guess row 2
+  // /guess col 1
+  // /swap 0 1 3 2
+  const slashGuess = lower.match(/\/guess\s+(row|col|column)\s+([0-3])\b/);
+  if (slashGuess) {
+    const kind = slashGuess[1] === "row" ? "row" : "col";
+    return { action: "guess", kind, index: Number(slashGuess[2]) };
+  }
+  const slashSwap = lower.match(/\/swap\s+([0-3])\s+([0-3])\s+([0-3])\s+([0-3])\b/);
+  if (slashSwap) {
+    return {
+      action: "swap",
+      a: [Number(slashSwap[1]), Number(slashSwap[2])],
+      b: [Number(slashSwap[3]), Number(slashSwap[4])],
+    };
+  }
+
   const guess = lower.match(/\b(?:guess\s+)?(row|col|column)\s*[:#]?\s*([0-3])\b/);
   if (guess) {
     const kind = guess[1] === "row" ? "row" : "col";
@@ -490,8 +508,11 @@ function buildRepairPrompt(basePrompt, reason, lastOutput) {
     "",
     "Your previous response was invalid for this API turn.",
     `Reason: ${reason}`,
-    details ? `Previous response: ${details}` : "Previous response: (empty)",
-    "Reply again with exactly one valid JSON action object only.",
+    details ? `You said: ${details}` : "You said: (empty)",
+    "Now output exactly one move command with no explanation.",
+    "Preferred: one JSON object only.",
+    "Alternative accepted format: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i",
+    "Reply again with exactly one command only.",
   ].join("\n");
 }
 
