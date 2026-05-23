@@ -93,6 +93,7 @@ body {
   grid-template-columns: 180px minmax(280px, 1fr) 88px;
   gap: 10px;
   align-items: center;
+  min-width: 0;
 }
 .bar-label {
   font-size: 13px;
@@ -121,6 +122,7 @@ body {
   font-size: 13px;
   font-weight: 700;
   color: #1f2937;
+  white-space: nowrap;
 }
 .table-wrap {
   overflow-x: auto;
@@ -284,8 +286,12 @@ table {
   .hero { padding: 16px 14px; }
   .section { padding: 12px; }
   .bar-row {
-    grid-template-columns: 120px minmax(180px, 1fr) 66px;
+    grid-template-columns: minmax(88px, 32vw) minmax(92px, 1fr) 54px;
     gap: 8px;
+  }
+  .bar-label,
+  .bar-value {
+    font-size: 12px;
   }
 }
 </style>
