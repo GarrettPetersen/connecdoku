@@ -84,6 +84,44 @@ body {
   color: var(--muted);
   font-size: 13px;
 }
+.bar-chart {
+  display: grid;
+  gap: 10px;
+}
+.bar-row {
+  display: grid;
+  grid-template-columns: 180px minmax(280px, 1fr) 88px;
+  gap: 10px;
+  align-items: center;
+}
+.bar-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bar-track {
+  position: relative;
+  height: 26px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  min-width: 2px;
+  transition: width 180ms ease-out;
+}
+.bar-value {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1f2937;
+}
 .table-wrap {
   overflow-x: auto;
   overflow-y: hidden;
@@ -245,6 +283,10 @@ table {
   .container { margin-top: 16px; }
   .hero { padding: 16px 14px; }
   .section { padding: 12px; }
+  .bar-row {
+    grid-template-columns: 120px minmax(180px, 1fr) 66px;
+    gap: 8px;
+  }
 }
 </style>
 </head>
@@ -254,6 +296,14 @@ table {
       <div class="kicker">Connecdoku Lab</div>
       <h1>AI Benchmark</h1>
       <p>Daily head-to-head performance across models. Lower strike counts are better. Hover any cell to see that model's note for the day.</p>
+    </section>
+
+    <section class="section" id="scoreChartSection">
+      <h2>Connecdoku Benchmark Score</h2>
+      <p class="meta" id="scoreChartMeta">Loading score chart...</p>
+      <div id="scoreChartWrap">
+        <div class="loading">Loading benchmark data...</div>
+      </div>
     </section>
 
     <section class="section" id="leaderboardSection">
@@ -310,9 +360,11 @@ table {
   const OFFICIAL_MODEL_SET = new Set(OFFICIAL_MODEL_ORDER);
 
   const leaderboardWrap = document.getElementById('leaderboardWrap');
+  const scoreChartWrap = document.getElementById('scoreChartWrap');
   const matrixWrap = document.getElementById('matrixWrap');
   const liveWrap = document.getElementById('liveWrap');
   const leaderboardMeta = document.getElementById('leaderboardMeta');
+  const scoreChartMeta = document.getElementById('scoreChartMeta');
   const matrixMeta = document.getElementById('matrixMeta');
   const liveMeta = document.getElementById('liveMeta');
   const tooltipEl = document.createElement('div');
@@ -447,6 +499,81 @@ table {
     const n = Number(value);
     if (!Number.isFinite(n)) return '—';
     return `$${n.toFixed(4)}`;
+  }
+
+  function scoreColor(score, minScore, maxScore) {
+    const s = Number(score);
+    if (!Number.isFinite(s)) return 'hsl(0 0% 82%)';
+    const lo = Number.isFinite(minScore) ? minScore : s;
+    const hi = Number.isFinite(maxScore) ? maxScore : s;
+    const span = Math.max(hi - lo, 0.0001);
+    const t = Math.max(0, Math.min(1, (s - lo) / span));
+    const hue = 120 * t; // red (0) -> yellow (60) -> green (120)
+    return `hsl(${hue.toFixed(1)} 72% 52%)`;
+  }
+
+  function buildScoreChart(rows) {
+    const filteredRows = rows
+      .filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')))
+      .map((r) => {
+        const avgStrikes = safeAvg(r.avg_strikes);
+        const avgCorrect = safeAvg(r.avg_correct_guesses);
+        if (avgStrikes === null || avgCorrect === null) return null;
+        const score = avgCorrect + (5 - avgStrikes);
+        return {
+          model: r.model,
+          label: r.display_name || r.model,
+          score,
+          avgStrikes,
+          avgCorrect,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.score - a.score);
+
+    if (!filteredRows.length) {
+      scoreChartWrap.innerHTML = '<div class="empty-state">No score chart data yet.</div>';
+      scoreChartMeta.textContent = 'Waiting for submitted runs with averages.';
+      return;
+    }
+
+    const minScore = Math.min(...filteredRows.map((r) => r.score));
+    const maxScore = Math.max(...filteredRows.map((r) => r.score));
+    const widthDenom = maxScore > 0 ? maxScore : 1;
+
+    const chart = document.createElement('div');
+    chart.className = 'bar-chart';
+
+    filteredRows.forEach((row) => {
+      const barRow = document.createElement('div');
+      barRow.className = 'bar-row';
+
+      const label = document.createElement('div');
+      label.className = 'bar-label';
+      label.textContent = row.label;
+
+      const track = document.createElement('div');
+      track.className = 'bar-track';
+
+      const fill = document.createElement('div');
+      fill.className = 'bar-fill';
+      fill.style.width = `${Math.max(3, (row.score / widthDenom) * 100)}%`;
+      fill.style.background = scoreColor(row.score, minScore, maxScore);
+      track.appendChild(fill);
+
+      const value = document.createElement('div');
+      value.className = 'bar-value';
+      value.textContent = row.score.toFixed(2);
+
+      barRow.appendChild(label);
+      barRow.appendChild(track);
+      barRow.appendChild(value);
+      chart.appendChild(barRow);
+    });
+
+    scoreChartWrap.innerHTML = '';
+    scoreChartWrap.appendChild(chart);
+    scoreChartMeta.textContent = 'Score = avg correct + (5 - avg strikes). Higher is better.';
   }
 
   function buildLeaderboard(rows) {
@@ -686,14 +813,17 @@ table {
         throw new Error(data && data.error ? data.error : 'Failed to load benchmark data');
       }
 
+      buildScoreChart(Array.isArray(data.leaderboard) ? data.leaderboard : []);
       buildLeaderboard(Array.isArray(data.leaderboard) ? data.leaderboard : []);
       buildMatrix(data);
       buildLiveRuns(Array.isArray(data.in_progress) ? data.in_progress : []);
     } catch (err) {
       const message = err && err.message ? err.message : String(err);
+      scoreChartWrap.innerHTML = `<div class="error">Failed to load score chart: ${message}</div>`;
       leaderboardWrap.innerHTML = `<div class="error">Failed to load leaderboard: ${message}</div>`;
       matrixWrap.innerHTML = `<div class="error">Failed to load benchmark matrix: ${message}</div>`;
       liveWrap.innerHTML = `<div class="error">Failed to load live run status: ${message}</div>`;
+      scoreChartMeta.textContent = 'Unable to load score chart.';
       leaderboardMeta.textContent = 'Unable to load leaderboard.';
       matrixMeta.textContent = 'Unable to load matrix.';
       liveMeta.textContent = 'Unable to load live run status.';
