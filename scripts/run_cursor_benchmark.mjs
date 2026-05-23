@@ -206,9 +206,9 @@ function parseJsonObjectLoose(text) {
   }
 }
 
-function parseActionFromTextLoose(text) {
+function parseSlashCommandSequence(text) {
   const src = String(text || "").trim();
-  if (!src) return null;
+  if (!src) return { commands: [], scratchpadUpdate: "" };
   const lower = src.toLowerCase();
 
   let scratchpadUpdate = "";
@@ -217,27 +217,33 @@ function parseActionFromTextLoose(text) {
     scratchpadUpdate = String(scratchMatch[1]).replace(/\\"/g, '"').replace(/\\\\/g, "\\");
   }
 
-  const candidates = [];
+  const events = [];
   for (const m of lower.matchAll(/\/guess\s+(row|col|column)\s+([0-3])\b/g)) {
     const kind = m[1] === "row" ? "row" : "col";
-    candidates.push({
-      idx: m.index ?? Number.MAX_SAFE_INTEGER,
-      action: { action: "guess", kind, index: Number(m[2]), scratchpad_update: scratchpadUpdate },
-    });
+    events.push({ idx: m.index ?? Number.MAX_SAFE_INTEGER, type: "guess", kind, index: Number(m[2]) });
   }
   for (const m of lower.matchAll(/\/swap\s+([0-3])\s+([0-3])\s+([0-3])\s+([0-3])\b/g)) {
-    candidates.push({
+    events.push({
       idx: m.index ?? Number.MAX_SAFE_INTEGER,
-      action: {
-        action: "swap",
-        a: [Number(m[1]), Number(m[2])],
-        b: [Number(m[3]), Number(m[4])],
-        scratchpad_update: scratchpadUpdate,
-      },
+      type: "swap",
+      a: [Number(m[1]), Number(m[2])],
+      b: [Number(m[3]), Number(m[4])],
     });
   }
-  const valid = candidates.sort((a, b) => a.idx - b.idx);
-  return valid.length ? valid[0].action : null;
+  events.sort((a, b) => a.idx - b.idx);
+
+  const commands = [];
+  let sawGuess = false;
+  for (const ev of events) {
+    if (sawGuess) continue;
+    if (ev.type === "guess") {
+      commands.push({ action: "guess", kind: ev.kind, index: ev.index, scratchpad_update: scratchpadUpdate });
+      sawGuess = true;
+      continue;
+    }
+    if (ev.type === "swap") commands.push({ action: "swap", a: ev.a, b: ev.b, scratchpad_update: scratchpadUpdate });
+  }
+  return { commands, scratchpadUpdate };
 }
 
 function buildBoardText(state) {
@@ -336,10 +342,17 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "/guess col 1",
     "/swap 0 0 1 1",
     '/scratch "short note about what you learned and plan next (optional)"',
-    'Combined example: /guess row 2 /scratch "row2 hypothesis is weak; test col next"',
-    "Parsing rule: we scan your whole response and execute the first valid /guess or /swap command we find.",
+    'Combined example: /swap 0 0 1 1 /swap 1 1 1 2 /guess row 1 /scratch "lined up a likely set"',
+    "Parsing rule: we scan your whole response in order.",
+    "We execute multiple /swap commands, then at most one /guess.",
+    "Any commands after the first /guess are ignored (except /scratch).",
+    "Critical output requirement:",
+    "- Every turn, output at least one valid move command.",
+    "- Valid move commands are only /swap and /guess.",
+    "- Prose-only responses are invalid and do not make a move.",
+    "- Repeated invalid responses trigger forced fallback guesses and can cause a loss.",
     'Persisted means: the first /scratch "..." is saved, carried into future turns, and included in end-of-run note context.',
-    "You may include normal text, but only the first valid slash command(s) affect state.",
+    "You may include normal text, but only valid slash commands affect state.",
     "Do not repeat the same no-progress move in a loop.",
     "",
     `model=${modelMeta.displayName}`,
@@ -349,7 +362,7 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     `canGuessRow=${rules.canGuessRow}`,
     `canGuessCol=${rules.canGuessCol}`,
     "Allowed output actions: /swap and /guess.",
-    "Output rule: include at least one valid slash move command in your response.",
+    "Output rule: include at least one valid /swap or /guess command in your response.",
     `solvedRows=${solvedRows}`,
     `solvedCols=${solvedCols}`,
     "Board:",
@@ -368,6 +381,9 @@ function buildNotePrompt(state, runStats) {
   return [
     "Write only the final note text for a public benchmark table.",
     "Do not explain the task, restate these instructions, or mention the prompt.",
+    "Do not output move commands, JSON, code blocks, or labels.",
+    "Do not output analysis before the note.",
+    "Your entire response must be the note text itself.",
     "Be creative and specific: mention a category insight, a mistake, a surprise, or a boast.",
     "Tone can be witty, reflective, or dramatic.",
     "Constraints: plain text only, <= 220 characters, no newlines.",
@@ -397,6 +413,7 @@ function buildNoteRepairPrompt(basePrompt, reason, lastOutput) {
     `Reason: ${reason}`,
     details ? `Previous response: ${details}` : "Previous response: (empty)",
     "Reply with only the final note text, and nothing else.",
+    "No analysis. No preamble. No commands. No JSON.",
   ].join("\n");
 }
 
@@ -447,7 +464,7 @@ function buildRepairPrompt(basePrompt, reason, lastOutput) {
     "Your previous response was invalid for this API turn.",
     `Reason: ${reason}`,
     details ? `You said: ${details}` : "You said: (empty)",
-    "Now output a valid slash move command.",
+    "Now output a valid slash move command. Prose without a move is invalid.",
     'Accepted format: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i, optional /scratch "..."',
     'Persisted means: /scratch text is saved for future turns and note context.',
     "Reply again with at least one valid slash move command.",
@@ -856,6 +873,7 @@ async function runSingleModel(opts, modelCfg) {
 
         let action = null;
         let modelRespText = "";
+        let parsedSeq = [];
         try {
           const modelResp = await runCursorAgentPrompt(modelCfg, prompt, "action", opts.cursor, cursorSession);
           stats.modelApiCalls += 1;
@@ -878,8 +896,9 @@ async function runSingleModel(opts, modelCfg) {
           const parsed = parseJsonObjectLoose(modelResp.text);
           action = normalizeAction(parsed);
           if (!action) {
-            const textFallback = parseActionFromTextLoose(modelResp.text);
-            action = normalizeAction(textFallback);
+            const seq = parseSlashCommandSequence(modelResp.text);
+            parsedSeq = (seq.commands || []).map((x) => normalizeAction(x)).filter(Boolean);
+            if (parsedSeq.length) action = parsedSeq[0];
           }
         } catch (e) {
           stats.modelCallErrors.push(String(e.message || e));
@@ -901,7 +920,7 @@ async function runSingleModel(opts, modelCfg) {
 
         if (!action) {
           stats.gameInvalidActions += 1;
-          repairReason = "Response was not a valid JSON action command.";
+          repairReason = "Response did not include a valid slash move command.";
           actionTrace.push({
             step,
             attempt,
@@ -912,31 +931,89 @@ async function runSingleModel(opts, modelCfg) {
           continue;
         }
 
-        stats.modelActionsProposed += 1;
-        stats.gameActionsTotal += 1;
-        if (action.action === "swap") {
-          stats.gameSwaps += 1;
-          stats.consecutiveSwaps += 1;
-        }
-        if (action.action === "guess") {
-          stats.gameGuesses += 1;
-          stats.consecutiveSwaps = 0;
+        const commandsToRun = [action, ...parsedSeq.slice(1)];
+        let playResp = null;
+        let lastAction = null;
+
+        for (const cmd of commandsToRun) {
+          lastAction = cmd;
+          stats.modelActionsProposed += 1;
+          stats.gameActionsTotal += 1;
+          if (cmd.action === "swap") {
+            stats.gameSwaps += 1;
+            stats.consecutiveSwaps += 1;
+          } else {
+            stats.gameGuesses += 1;
+            stats.consecutiveSwaps = 0;
+          }
+
+          playResp = cmd.action === "swap"
+            ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: cmd.a, b: cmd.b })
+            : await postJson(`${apiBase}/api/v1/competition/guess`, { competitionToken, kind: cmd.kind, index: cmd.index });
+          if (!playResp.ok) break;
+
+          if (cmd.scratchpadUpdate) stats.scratchpad = appendScratchpad(stats.scratchpad, cmd.scratchpadUpdate);
+
+          const prevState = state;
+          if (cmd.action === "guess") {
+            const correct = !!playResp.json?.result?.correct;
+            const lost = !!playResp.json?.result?.lost;
+            const nextState = playResp.json?.state || {};
+            if (correct) {
+              stats.gameCorrectGuesses += 1;
+              stats.lastActionSummary = `guess ${cmd.kind}${cmd.index} correct`;
+            } else {
+              stats.gameIncorrectGuesses += 1;
+              const guessed = lineWordsFromState(prevState, cmd.kind, cmd.index);
+              if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
+              stats.lastActionSummary = `guess ${cmd.kind}${cmd.index} strike`;
+              if (!lost) {
+                const prevBoard = JSON.stringify(prevState?.board || null);
+                const nextBoard = JSON.stringify(nextState?.board || null);
+                const prevStrikes = Number(prevState?.strikes || 0);
+                const nextStrikes = Number(nextState?.strikes || 0);
+                if (prevBoard !== nextBoard) {
+                  throw new Error("Invariant violation: board changed after incorrect non-losing guess.");
+                }
+                if (nextStrikes !== prevStrikes + 1) {
+                  throw new Error(`Invariant violation: strikes did not increment by 1 after incorrect guess (${prevStrikes} -> ${nextStrikes}).`);
+                }
+              }
+            }
+          } else {
+            stats.lastActionSummary = `swap [${cmd.a[0]},${cmd.a[1]}]<->[${cmd.b[0]},${cmd.b[1]}]`;
+          }
+          stats.modelActionsAccepted += 1;
+          const guessedWords = cmd.action === "guess" ? lineWordsFromState(prevState, cmd.kind, cmd.index) : null;
+          state = playResp.json.state;
+          actionTrace.push({
+            step,
+            attempt,
+            reason: "action_accepted",
+            action: cmd,
+            guessedWords,
+            modelOutput: trimText(modelRespText, 280),
+            result: {
+              correct: !!playResp.json?.result?.correct,
+              lost: !!playResp.json?.result?.lost,
+            },
+            strikes: state.strikes,
+            turn: state.turn,
+            finished: state.finished,
+          });
+          if (cmd.action === "guess") break;
         }
 
-        const playResp = action.action === "swap"
-          ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: action.a, b: action.b })
-          : await postJson(`${apiBase}/api/v1/competition/guess`, { competitionToken, kind: action.kind, index: action.index });
-
-        if (!playResp.ok) {
+        if (!playResp || !playResp.ok) {
           stats.gameInvalidActions += 1;
-          const apiError = playResp.json?.error || `HTTP ${playResp.status}`;
-          const guessedWords = action.action === "guess" ? lineWordsFromState(state, action.kind, action.index) : null;
+          const apiError = playResp?.json?.error || `HTTP ${playResp?.status ?? "unknown"}`;
+          const guessedWords = lastAction?.action === "guess" ? lineWordsFromState(state, lastAction.kind, lastAction.index) : null;
           repairReason = `Action rejected by game API: ${apiError}`;
           actionTrace.push({
             step,
             attempt,
             reason: "api_rejected",
-            action,
+            action: lastAction || action,
             guessedWords,
             modelOutput: trimText(modelRespText, 280),
             apiError,
@@ -945,57 +1022,6 @@ async function runSingleModel(opts, modelCfg) {
           stepSolved = true;
           break;
         }
-
-        if (action.scratchpadUpdate) stats.scratchpad = appendScratchpad(stats.scratchpad, action.scratchpadUpdate);
-
-        const prevState = state;
-        if (action.action === "guess") {
-          const correct = !!playResp.json?.result?.correct;
-          const lost = !!playResp.json?.result?.lost;
-          const nextState = playResp.json?.state || {};
-          if (correct) {
-            stats.gameCorrectGuesses += 1;
-            stats.lastActionSummary = `guess ${action.kind}${action.index} correct`;
-          } else {
-            stats.gameIncorrectGuesses += 1;
-            const guessed = lineWordsFromState(prevState, action.kind, action.index);
-            if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
-            stats.lastActionSummary = `guess ${action.kind}${action.index} strike`;
-            if (!lost) {
-              const prevBoard = JSON.stringify(prevState?.board || null);
-              const nextBoard = JSON.stringify(nextState?.board || null);
-              const prevStrikes = Number(prevState?.strikes || 0);
-              const nextStrikes = Number(nextState?.strikes || 0);
-              if (prevBoard !== nextBoard) {
-                throw new Error("Invariant violation: board changed after incorrect non-losing guess.");
-              }
-              if (nextStrikes !== prevStrikes + 1) {
-                throw new Error(`Invariant violation: strikes did not increment by 1 after incorrect guess (${prevStrikes} -> ${nextStrikes}).`);
-              }
-            }
-          }
-        } else {
-          stats.lastActionSummary = `swap [${action.a[0]},${action.a[1]}]<->[${action.b[0]},${action.b[1]}]`;
-        }
-        stats.modelActionsAccepted += 1;
-
-        const guessedWords = action.action === "guess" ? lineWordsFromState(prevState, action.kind, action.index) : null;
-        state = playResp.json.state;
-        actionTrace.push({
-          step,
-          attempt,
-          reason: "action_accepted",
-          action,
-          guessedWords,
-          modelOutput: trimText(modelRespText, 280),
-          result: {
-            correct: !!playResp.json?.result?.correct,
-            lost: !!playResp.json?.result?.lost,
-          },
-          strikes: state.strikes,
-          turn: state.turn,
-          finished: state.finished,
-        });
         stepSolved = true;
         break;
       }

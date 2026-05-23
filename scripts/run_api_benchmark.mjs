@@ -214,9 +214,9 @@ function parseJsonObjectLoose(text) {
   }
 }
 
-function parseActionFromTextLoose(text) {
+function parseSlashCommandSequence(text) {
   const src = String(text || "").trim();
-  if (!src) return null;
+  if (!src) return { commands: [], scratchpadUpdate: "" };
   const lower = src.toLowerCase();
 
   let scratchpadUpdate = "";
@@ -225,27 +225,35 @@ function parseActionFromTextLoose(text) {
     scratchpadUpdate = String(scratchMatch[1]).replace(/\\"/g, '"').replace(/\\\\/g, "\\");
   }
 
-  const candidates = [];
+  const events = [];
   for (const m of lower.matchAll(/\/guess\s+(row|col|column)\s+([0-3])\b/g)) {
     const kind = m[1] === "row" ? "row" : "col";
-    candidates.push({
-      idx: m.index ?? Number.MAX_SAFE_INTEGER,
-      action: { action: "guess", kind, index: Number(m[2]), scratchpad_update: scratchpadUpdate },
-    });
+    events.push({ idx: m.index ?? Number.MAX_SAFE_INTEGER, type: "guess", kind, index: Number(m[2]) });
   }
   for (const m of lower.matchAll(/\/swap\s+([0-3])\s+([0-3])\s+([0-3])\s+([0-3])\b/g)) {
-    candidates.push({
+    events.push({
       idx: m.index ?? Number.MAX_SAFE_INTEGER,
-      action: {
-        action: "swap",
-        a: [Number(m[1]), Number(m[2])],
-        b: [Number(m[3]), Number(m[4])],
-        scratchpad_update: scratchpadUpdate,
-      },
+      type: "swap",
+      a: [Number(m[1]), Number(m[2])],
+      b: [Number(m[3]), Number(m[4])],
     });
   }
-  const valid = candidates.sort((a, b) => a.idx - b.idx);
-  return valid.length ? valid[0].action : null;
+  events.sort((a, b) => a.idx - b.idx);
+
+  const commands = [];
+  let sawGuess = false;
+  for (const ev of events) {
+    if (sawGuess) continue;
+    if (ev.type === "guess") {
+      commands.push({ action: "guess", kind: ev.kind, index: ev.index, scratchpad_update: scratchpadUpdate });
+      sawGuess = true;
+      continue;
+    }
+    if (ev.type === "swap") {
+      commands.push({ action: "swap", a: ev.a, b: ev.b, scratchpad_update: scratchpadUpdate });
+    }
+  }
+  return { commands, scratchpadUpdate };
 }
 
 function buildBoardText(state) {
@@ -343,9 +351,17 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "/swap 0 0 1 1",
     '/scratch "short note about what you learned and plan next (optional)"',
     'Combined example: /swap 0 0 1 1 /scratch "move X-Men candidates into one line"',
-    "Parsing rule: we scan your whole response and execute the first valid /guess or /swap command we find.",
+    "Parsing rule: we scan your whole response in order.",
+    "We execute multiple /swap commands, then at most one /guess.",
+    "You may include multiple slash commands in one response: do swaps first, then optionally one guess.",
+    "Any slash commands after the first guess are ignored (except /scratch).",
+    "Critical output requirement:",
+    "- Every turn, output at least one valid move command.",
+    "- Valid move commands are only /swap and /guess.",
+    "- Prose-only responses are invalid and do not make a move.",
+    "- Repeated invalid responses trigger forced fallback guesses and can cause a loss.",
     'Persisted means: the first /scratch "..." is saved, carried into future turns, and included in end-of-run note context.',
-    "You may include normal text, but only the first valid slash command(s) affect state.",
+    "You may include normal text, but only valid slash commands affect state.",
     "Prioritize legal actions and avoid repeating clearly bad guesses.",
     "",
     `Model: ${modelMeta.displayName} (${modelMeta.provider})`,
@@ -389,6 +405,9 @@ function buildNotePrompt(state, runStats) {
   return [
     "Write only the final note text for a public benchmark table.",
     "Do not explain the task, restate these instructions, or mention the prompt.",
+    "Do not output move commands, JSON, code blocks, or labels.",
+    "Do not output analysis before the note.",
+    "Your entire response must be the note text itself.",
     "Be creative and specific: mention a category insight, a mistake, a surprise, or a boast.",
     "Tone can be witty, reflective, or dramatic.",
     "Constraints: plain text only, <= 220 characters, no newlines.",
@@ -418,6 +437,7 @@ function buildNoteRepairPrompt(basePrompt, reason, lastOutput) {
     `Reason: ${reason}`,
     details ? `Previous response: ${details}` : "Previous response: (empty)",
     "Reply with only the final note text, and nothing else.",
+    "No analysis. No preamble. No commands. No JSON.",
   ].join("\n");
 }
 
@@ -505,7 +525,7 @@ function buildRepairPrompt(basePrompt, reason, lastOutput) {
     "Your previous response was invalid for this API turn.",
     `Reason: ${reason}`,
     details ? `You said: ${details}` : "You said: (empty)",
-    "Now output a valid slash move command.",
+    "Now output a valid slash move command. Prose without a move is invalid.",
     'Accepted format: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i, optional /scratch "..."',
     'Persisted means: /scratch text is saved for future turns and note context.',
     "Reply again with at least one valid slash move command.",
@@ -897,9 +917,11 @@ async function runSingleModel(opts, modelCfg) {
 
         const parsed = parseJsonObjectLoose(modelResp.text);
         action = normalizeAction(parsed);
+        let parsedSequence = [];
         if (!action) {
-          const textFallback = parseActionFromTextLoose(modelResp.text);
-          action = normalizeAction(textFallback);
+          const seq = parseSlashCommandSequence(modelResp.text);
+          parsedSequence = (seq.commands || []).map((x) => normalizeAction(x)).filter(Boolean);
+          if (parsedSequence.length) action = parsedSequence[0];
         }
       } catch (e) {
         stats.modelApiErrors += 1;
@@ -920,8 +942,8 @@ async function runSingleModel(opts, modelCfg) {
         stats.gameInvalidActions += 1;
         const snippet = trimText(modelRespText, 200);
         repairReason = snippet
-          ? `Response was not a valid JSON action command. Output: ${snippet}`
-          : "Response was not a valid JSON action command.";
+          ? `Response did not include a valid slash move command. Output: ${snippet}`
+          : "Response did not include a valid slash move command.";
         actionTrace.push({
           step,
           attempt,
@@ -932,30 +954,78 @@ async function runSingleModel(opts, modelCfg) {
         continue;
       }
 
-      stats.gameActionsTotal += 1;
-      if (action.action === "swap") {
-        stats.gameSwaps += 1;
-        stats.consecutiveSwaps += 1;
+      const commandsToRun = [];
+      const parsedSeq = parseSlashCommandSequence(modelRespText).commands || [];
+      if (action) {
+        commandsToRun.push(action);
+        if (parsedSeq.length > 1) {
+          for (let i = 1; i < parsedSeq.length; i++) {
+            const nx = normalizeAction(parsedSeq[i]);
+            if (nx) commandsToRun.push(nx);
+          }
+        }
       }
-      if (action.action === "guess") {
-        stats.gameGuesses += 1;
-        stats.consecutiveSwaps = 0;
+      if (!commandsToRun.length) {
+        stats.gameInvalidActions += 1;
+        repairReason = "No valid command found.";
+        continue;
       }
 
-      const playResp = action.action === "swap"
-        ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: action.a, b: action.b })
-        : await postJson(`${apiBase}/api/v1/competition/guess`, { competitionToken, kind: action.kind, index: action.index });
+      let playResp = null;
+      let lastAction = null;
+      for (const cmd of commandsToRun) {
+        lastAction = cmd;
+        stats.gameActionsTotal += 1;
+        if (cmd.action === "swap") {
+          stats.gameSwaps += 1;
+          stats.consecutiveSwaps += 1;
+        } else {
+          stats.gameGuesses += 1;
+          stats.consecutiveSwaps = 0;
+        }
+        playResp = cmd.action === "swap"
+          ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: cmd.a, b: cmd.b })
+          : await postJson(`${apiBase}/api/v1/competition/guess`, { competitionToken, kind: cmd.kind, index: cmd.index });
+        if (!playResp.ok) break;
+
+        if (cmd.scratchpadUpdate) stats.scratchpad = appendScratchpad(stats.scratchpad, cmd.scratchpadUpdate);
+        if (cmd.action === "guess") {
+          if (playResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
+          else {
+            stats.gameIncorrectGuesses += 1;
+            const guessed = lineWordsFromState(state, cmd.kind, cmd.index);
+            if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
+          }
+        }
+        const guessedWords = cmd.action === "guess" ? lineWordsFromState(state, cmd.kind, cmd.index) : null;
+        state = playResp.json.state;
+        actionTrace.push({
+          step,
+          attempt,
+          reason: "action_accepted",
+          action: cmd,
+          guessedWords,
+          modelOutput: trimText(modelRespText, 280),
+          result: {
+            correct: !!playResp.json?.result?.correct,
+            lost: !!playResp.json?.result?.lost,
+          },
+          strikes: state.strikes,
+          turn: state.turn,
+          finished: state.finished,
+        });
+      }
 
       if (!playResp.ok) {
         stats.gameInvalidActions += 1;
         const apiError = playResp.json?.error || `HTTP ${playResp.status}`;
-        const guessedWords = action.action === "guess" ? lineWordsFromState(state, action.kind, action.index) : null;
+        const guessedWords = lastAction?.action === "guess" ? lineWordsFromState(state, lastAction.kind, lastAction.index) : null;
         repairReason = `Action rejected by game API: ${apiError}`;
         actionTrace.push({
           step,
           attempt,
           reason: "api_rejected",
-          action,
+          action: lastAction || action,
           guessedWords,
           modelOutput: trimText(modelRespText, 280),
           apiError,
@@ -964,35 +1034,6 @@ async function runSingleModel(opts, modelCfg) {
         stepSolved = true;
         break;
       }
-
-      if (action.scratchpadUpdate) stats.scratchpad = appendScratchpad(stats.scratchpad, action.scratchpadUpdate);
-
-      if (action.action === "guess") {
-        if (playResp.json?.result?.correct) stats.gameCorrectGuesses += 1;
-        else {
-          stats.gameIncorrectGuesses += 1;
-          const guessed = lineWordsFromState(state, action.kind, action.index);
-          if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
-        }
-      }
-
-      const guessedWords = action.action === "guess" ? lineWordsFromState(state, action.kind, action.index) : null;
-      state = playResp.json.state;
-      actionTrace.push({
-        step,
-        attempt,
-        reason: "action_accepted",
-        action,
-        guessedWords,
-        modelOutput: trimText(modelRespText, 280),
-        result: {
-          correct: !!playResp.json?.result?.correct,
-          lost: !!playResp.json?.result?.lost,
-        },
-        strikes: state.strikes,
-        turn: state.turn,
-        finished: state.finished,
-      });
       stepSolved = true;
       break;
     }
