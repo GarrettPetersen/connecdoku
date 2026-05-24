@@ -14,6 +14,7 @@ const NOTE_MAX_CHARS = 500;
 const SCRATCHPAD_MAX_CHARS = 50000;
 const TRACE_LIMIT = 200;
 const HTTP_TIMEOUT_MS_DEFAULT = 120000;
+const OPENAI_MIN_TIMEOUT_MS = 240000;
 
 function loadDotEnv() {
   const envPath = path.join(ROOT, ".env");
@@ -645,6 +646,39 @@ function parseRetryDelayMs(message, fallbackMs = 65000) {
   return fallbackMs;
 }
 
+function isOpenAiTransientStatus(status) {
+  return [408, 409, 425, 429, 500, 502, 503, 504, 524].includes(Number(status));
+}
+
+async function postOpenAiWithRetries(url, body, apiKey, timeoutMs) {
+  const maxAttempts = Math.max(1, Number(process.env.OPENAI_BENCH_MAX_RETRIES || 4));
+  let lastErr = null;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const resp = await postJson(url, body, { authorization: `Bearer ${apiKey}` }, timeoutMs);
+      if (resp.ok) return resp;
+      const msg = resp.json?.error?.message || resp.json?.error || `HTTP ${resp.status}`;
+      if (attempt < maxAttempts && isOpenAiTransientStatus(resp.status)) {
+        const delayMs = parseRetryDelayMs(msg, Math.min(30000, 4000 * attempt));
+        await sleep(delayMs + Math.floor(Math.random() * 800));
+        continue;
+      }
+      return resp;
+    } catch (e) {
+      const msg = String(e?.message || e || "");
+      lastErr = msg;
+      const timeoutLike = msg.includes("Request timeout");
+      if (attempt < maxAttempts && timeoutLike) {
+        const delayMs = Math.min(30000, 4000 * attempt);
+        await sleep(delayMs + Math.floor(Math.random() * 800));
+        continue;
+      }
+      throw e;
+    }
+  }
+  throw new Error(lastErr || "OpenAI request failed after retries.");
+}
+
 async function callProviderModel(cfg, prompt, mode = "action") {
   const provider = cfg.provider;
   const model = cfg.resolvedApiModel;
@@ -668,22 +702,17 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     // Some models support this; harmless if ignored.
     body.reasoning_effort = reasoningLevel;
 
-    let resp = await postJson("https://api.openai.com/v1/chat/completions", body, {
-      authorization: `Bearer ${apiKey}`,
-    });
+    const openAiTimeoutMs = Math.max(httpTimeoutMs(), OPENAI_MIN_TIMEOUT_MS);
+    let resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs);
     if (!resp.ok && isOpenAiUnsupportedTemperature(resp)) {
       body = { ...body };
       delete body.temperature;
-      resp = await postJson("https://api.openai.com/v1/chat/completions", body, {
-        authorization: `Bearer ${apiKey}`,
-      });
+      resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs);
     }
     if (!resp.ok && isOpenAiUnsupportedReasoningEffort(resp)) {
       body = { ...body };
       delete body.reasoning_effort;
-      resp = await postJson("https://api.openai.com/v1/chat/completions", body, {
-        authorization: `Bearer ${apiKey}`,
-      });
+      resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs);
     }
     if (!resp.ok && isOpenAiNotChatModel(resp)) {
       const responsesBody = {
@@ -693,9 +722,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
           { role: "user", content: prompt },
         ],
       };
-      const rr = await postJson("https://api.openai.com/v1/responses", responsesBody, {
-        authorization: `Bearer ${apiKey}`,
-      });
+      const rr = await postOpenAiWithRetries("https://api.openai.com/v1/responses", responsesBody, apiKey, openAiTimeoutMs);
       if (!rr.ok) {
         throw new Error(`OpenAI responses error (${rr.status}): ${rr.json?.error?.message || rr.json?.error || "unknown"}`);
       }

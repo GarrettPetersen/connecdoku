@@ -65,6 +65,8 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
+          API_BENCH_HTTP_TIMEOUT_MS: '240000'
+          OPENAI_BENCH_MAX_RETRIES: '4'
 
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           CURSOR_BENCH_REPOSITORY: ${{ secrets.CURSOR_BENCH_REPOSITORY || 'https://github.com/GarrettPetersen/connecdoku-player' }}
