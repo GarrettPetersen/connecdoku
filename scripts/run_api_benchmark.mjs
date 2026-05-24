@@ -373,6 +373,11 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     `incorrect guesses: ${JSON.stringify(metrics.incorrectGuessWordSets || [])}`,
     "scratchpad (full prior model outputs, newest last):",
     metrics.scratchpad || "(empty)",
+    "",
+    "FINAL REMINDER - REQUIRED OUTPUT FORMAT:",
+    "Include at least one literal move command in your response.",
+    "Valid commands: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i",
+    "If no valid /swap or /guess appears, the turn is invalid.",
   ].join("\n");
 }
 
