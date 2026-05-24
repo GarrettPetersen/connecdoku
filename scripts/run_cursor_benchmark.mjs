@@ -9,11 +9,11 @@ const ROOT = path.resolve(path.join(path.dirname(new URL(import.meta.url).pathna
 const MODELS_FILE = path.join(ROOT, "data", "cursor_benchmark_models.json");
 const DEFAULT_API_BASE = "https://connecdoku.com";
 const DEFAULT_CURSOR_BASE = "https://api.cursor.com";
-const PROMPT_VERSION = "cursor-benchmark-v1";
+const PROMPT_VERSION = "cursor-benchmark-v2";
 const MAX_STEPS_DEFAULT = 64;
 const MAX_ACTION_RETRIES = 3;
 const NOTE_MAX_CHARS = 500;
-const SCRATCHPAD_MAX_CHARS = 3000;
+const SCRATCHPAD_MAX_CHARS = 50000;
 const TRACE_LIMIT = 200;
 const CURSOR_POLL_MS_DEFAULT = 5000;
 const CURSOR_TIMEOUT_MS_DEFAULT = 15 * 60 * 1000;
@@ -155,10 +155,10 @@ function trimText(s, max = NOTE_MAX_CHARS) {
 }
 
 function appendScratchpad(existing, update, maxChars = SCRATCHPAD_MAX_CHARS) {
-  const prev = trimText(existing || "", maxChars);
-  const next = trimText(update || "", 500);
+  const prev = String(existing || "").trim();
+  const next = String(update || "").trim();
   if (!next) return prev;
-  const joined = prev ? `${prev} || ${next}` : next;
+  const joined = prev ? `${prev}\n\n${next}` : next;
   if (joined.length <= maxChars) return joined;
   return joined.slice(joined.length - maxChars);
 }
@@ -208,14 +208,8 @@ function parseJsonObjectLoose(text) {
 
 function parseSlashCommandSequence(text) {
   const src = String(text || "").trim();
-  if (!src) return { commands: [], scratchpadUpdate: "" };
+  if (!src) return { commands: [] };
   const lower = src.toLowerCase();
-
-  let scratchpadUpdate = "";
-  const scratchMatch = src.match(/\/scratch\s+"((?:\\.|[^"\\])*)"/i);
-  if (scratchMatch && scratchMatch[1] != null) {
-    scratchpadUpdate = String(scratchMatch[1]).replace(/\\"/g, '"').replace(/\\\\/g, "\\");
-  }
 
   const events = [];
   for (const m of lower.matchAll(/\/guess\s+(row|col|column)\s+([0-3])\b/g)) {
@@ -237,13 +231,13 @@ function parseSlashCommandSequence(text) {
   for (const ev of events) {
     if (sawGuess) continue;
     if (ev.type === "guess") {
-      commands.push({ action: "guess", kind: ev.kind, index: ev.index, scratchpad_update: scratchpadUpdate });
+      commands.push({ action: "guess", kind: ev.kind, index: ev.index });
       sawGuess = true;
       continue;
     }
-    if (ev.type === "swap") commands.push({ action: "swap", a: ev.a, b: ev.b, scratchpad_update: scratchpadUpdate });
+    if (ev.type === "swap") commands.push({ action: "swap", a: ev.a, b: ev.b });
   }
-  return { commands, scratchpadUpdate };
+  return { commands };
 }
 
 function buildBoardText(state) {
@@ -314,7 +308,7 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
 
   return [
     "You are playing Connecdoku, not editing code. Ignore repository tasks, commits, and file operations.",
-    "Pick one legal move only.",
+    "Pick legal move commands only.",
     "Game rules:",
     "- Goal: Find the 8 hidden categories by correctly guessing the 4 members in each of them.",
     "- You see 16 words; category names are hidden.",
@@ -341,17 +335,16 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "/guess row 0",
     "/guess col 1",
     "/swap 0 0 1 1",
-    '/scratch "short note about what you learned and plan next (optional)"',
-    'Combined example: /swap 0 0 1 1 /swap 1 1 1 2 /guess row 1 /scratch "lined up a likely set"',
+    "Combined example: /swap 0 0 1 1 /swap 1 1 1 2 /guess row 1",
     "Parsing rule: we scan your whole response in order.",
     "We execute multiple /swap commands, then at most one /guess.",
-    "Any commands after the first /guess are ignored (except /scratch).",
+    "Any commands after the first /guess are ignored.",
     "Critical output requirement:",
     "- Every turn, output at least one valid move command.",
     "- Valid move commands are only /swap and /guess.",
     "- Prose-only responses are invalid and do not make a move.",
     "- Repeated invalid responses trigger forced fallback guesses and can cause a loss.",
-    'Persisted means: the first /scratch "..." is saved, carried into future turns, and included in end-of-run note context.',
+    "Your full response text is saved as scratchpad and shown back to you on future turns.",
     "You may include normal text, but only valid slash commands affect state.",
     "Do not repeat the same no-progress move in a loop.",
     "",
@@ -370,7 +363,8 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     `invalidSoFar=${metrics.gameInvalidActions}`,
     `repairPromptsSoFar=${metrics.gameFallbackActions}`,
     `incorrect guesses: ${JSON.stringify(metrics.incorrectGuessWordSets || [])}`,
-    `scratchpad: ${metrics.scratchpad || "(empty)"}`,
+    "scratchpad (full prior model outputs, newest last):",
+    metrics.scratchpad || "(empty)",
     metrics.lastActionSummary ? `lastAction=${metrics.lastActionSummary}` : null,
   ].join("\n");
 }
@@ -465,8 +459,8 @@ function buildRepairPrompt(basePrompt, reason, lastOutput) {
     `Reason: ${reason}`,
     details ? `You said: ${details}` : "You said: (empty)",
     "Now output a valid slash move command. Prose without a move is invalid.",
-    'Accepted format: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i, optional /scratch "..."',
-    'Persisted means: /scratch text is saved for future turns and note context.',
+    "Accepted format: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i",
+    "Your full response text is saved as scratchpad for future turns.",
     "Reply again with at least one valid slash move command.",
   ].join("\n");
 }
@@ -483,7 +477,6 @@ function normalizeAction(obj) {
         kind,
         index,
         briefReason: trimText(obj.brief_reason || obj.reason || "", 140),
-        scratchpadUpdate: trimText(obj.scratchpad_update || obj.scratchpad || "", 500),
       };
     }
     return null;
@@ -501,7 +494,6 @@ function normalizeAction(obj) {
         a,
         b,
         briefReason: trimText(obj.brief_reason || obj.reason || "", 140),
-        scratchpadUpdate: trimText(obj.scratchpad_update || obj.scratchpad || "", 500),
       };
     }
   }
@@ -893,6 +885,7 @@ async function runSingleModel(opts, modelCfg) {
           modelRespText = modelResp.text;
           lastModelOutput = modelRespText;
           stepSawModelResponse = true;
+          stats.scratchpad = appendScratchpad(stats.scratchpad, modelRespText);
           const parsed = parseJsonObjectLoose(modelResp.text);
           action = normalizeAction(parsed);
           if (!action) {
@@ -951,8 +944,6 @@ async function runSingleModel(opts, modelCfg) {
             ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: cmd.a, b: cmd.b })
             : await postJson(`${apiBase}/api/v1/competition/guess`, { competitionToken, kind: cmd.kind, index: cmd.index });
           if (!playResp.ok) break;
-
-          if (cmd.scratchpadUpdate) stats.scratchpad = appendScratchpad(stats.scratchpad, cmd.scratchpadUpdate);
 
           const prevState = state;
           if (cmd.action === "guess") {
