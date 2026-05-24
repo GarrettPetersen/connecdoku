@@ -34,6 +34,7 @@ MODELS=(
   "Gemini 3.5 Flash|gemini-3.5-flash|AI_PASS_GEMINI_3_5_FLASH"
   "Grok 4.3|grok-4.3|AI_PASS_GROK_4_3"
   "Kimi K2.5|kimi-k2.5|AI_PASS_KIMI_K2_5"
+  "Kimi K2.6|kimi-k2.6|AI_PASS_KIMI_K2_6"
 )
 
 missing=()

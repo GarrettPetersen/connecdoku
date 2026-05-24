@@ -154,5 +154,18 @@
     "temperature": 1,
     "inputPricePerMTok": 0.7,
     "outputPricePerMTok": 2.8
+  },
+  {
+    "enabled": true,
+    "competitionModel": "kimi-k2.6",
+    "displayName": "Kimi K2.6",
+    "provider": "moonshot",
+    "apiModel": "kimi-k2.6",
+    "apiModelEnv": "BENCH_MODEL_KIMI_K2_6",
+    "passwordEnv": "AI_PASS_KIMI_K2_6",
+    "reasoningLevel": "medium",
+    "temperature": 1,
+    "inputPricePerMTok": 0.7,
+    "outputPricePerMTok": 2.8
   }
 ]
