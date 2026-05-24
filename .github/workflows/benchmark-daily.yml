@@ -81,6 +81,7 @@ jobs:
           AI_PASS_GEMINI_3_5_FLASH: ${{ secrets.AI_PASS_GEMINI_3_5_FLASH }}
           AI_PASS_GROK_4_3: ${{ secrets.AI_PASS_GROK_4_3 }}
           AI_PASS_KIMI_K2_5: ${{ secrets.AI_PASS_KIMI_K2_5 }}
+            AI_PASS_KIMI_K2_6: ${{ secrets.AI_PASS_KIMI_K2_6 }}
 
           AI_PASS_COMPOSER_2: ${{ secrets.AI_PASS_COMPOSER_2 }}
           AI_PASS_COMPOSER_2_5: ${{ secrets.AI_PASS_COMPOSER_2_5 }}
