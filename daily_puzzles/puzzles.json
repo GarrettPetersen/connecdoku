@@ -13238,5 +13238,45 @@
         "Airbus A380"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1st Century",
+      "3rd Century BC",
+      "Shakespeare",
+      "Things Turkish"
+    ],
+    "cols": [
+      "Assassins",
+      "Buildings",
+      "Drama Stories",
+      "Monarchs"
+    ],
+    "words": [
+      [
+        "Cassius Chaerea",
+        "Colosseum",
+        "Pompeii",
+        "Emperor Ping of Han"
+      ],
+      [
+        "Jing Ke",
+        "Terracotta Army",
+        "Hannibal",
+        "Qin Shi Huang"
+      ],
+      [
+        "Brutus",
+        "Globe Theatre",
+        "Hamlet",
+        "Henry V"
+      ],
+      [
+        "Mehmet Ali Agca",
+        "Hagia Sophia",
+        "Troy",
+        "Suleiman the Magnificent"
+      ]
+    ]
   }
 ]
