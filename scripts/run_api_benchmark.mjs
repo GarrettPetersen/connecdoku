@@ -9,12 +9,16 @@ const MODELS_FILE = path.join(ROOT, "data", "api_benchmark_models.json");
 const DEFAULT_API_BASE = "https://connecdoku.com";
 const PROMPT_VERSION = "api-benchmark-v2";
 const MAX_STEPS_DEFAULT = 64;
-const MAX_ACTION_RETRIES = 3;
+const MAX_ACTION_RETRIES = Math.max(1, Number(process.env.API_BENCH_MAX_ACTION_RETRIES || 3));
 const NOTE_MAX_CHARS = 500;
-const SCRATCHPAD_MAX_CHARS = 50000;
+const SCRATCHPAD_MAX_CHARS = 8000;
 const TRACE_LIMIT = 200;
 const HTTP_TIMEOUT_MS_DEFAULT = 120000;
 const OPENAI_MIN_TIMEOUT_MS = 240000;
+
+function openAiMinTimeoutMs() {
+  return Math.max(5000, Number(process.env.OPENAI_BENCH_MIN_TIMEOUT_MS || OPENAI_MIN_TIMEOUT_MS));
+}
 
 function loadDotEnv() {
   const envPath = path.join(ROOT, ".env");
@@ -105,6 +109,22 @@ function httpTimeoutMs() {
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function modelCallHardTimeoutMs() {
+  return Math.max(5000, Number(process.env.API_BENCH_MODEL_CALL_HARD_TIMEOUT_MS || 90000));
+}
+
+async function withHardTimeout(promise, timeoutMs, label = "operation") {
+  let timer = null;
+  const timeoutPromise = new Promise((_, reject) => {
+    timer = setTimeout(() => reject(new Error(`${label} hard-timeout after ${timeoutMs}ms`)), timeoutMs);
+  });
+  try {
+    return await Promise.race([promise, timeoutPromise]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
 }
 
 async function postJson(url, body, headers = {}, timeoutOverrideMs = null) {
@@ -637,17 +657,39 @@ function isOpenAiNotChatModel(resp) {
 }
 
 function parseRetryDelayMs(message, fallbackMs = 65000) {
+  const maxBackoffMs = Math.max(1000, Number(process.env.OPENAI_BENCH_MAX_BACKOFF_MS || 30000));
   const text = String(message || "");
   const secMatch = text.match(/retry in\s+([0-9]+(?:\.[0-9]+)?)s/i);
   if (secMatch) {
     const sec = Number(secMatch[1]);
-    if (Number.isFinite(sec) && sec > 0) return Math.round(sec * 1000);
+    if (Number.isFinite(sec) && sec > 0) return Math.min(maxBackoffMs, Math.round(sec * 1000));
   }
-  return fallbackMs;
+  return Math.min(maxBackoffMs, fallbackMs);
 }
 
 function isOpenAiTransientStatus(status) {
   return [408, 409, 425, 429, 500, 502, 503, 504, 524].includes(Number(status));
+}
+
+function isLikelyInfraError(message) {
+  const msg = String(message || "").toLowerCase();
+  if (!msg) return false;
+  return (
+    msg.includes("request timeout") ||
+    msg.includes("timed out") ||
+    msg.includes("model api unavailable") ||
+    msg.includes("no successful model api calls") ||
+    msg.includes("fetch failed") ||
+    msg.includes("openai error (408)") ||
+    msg.includes("openai error (409)") ||
+    msg.includes("openai error (425)") ||
+    msg.includes("openai error (429)") ||
+    msg.includes("openai error (500)") ||
+    msg.includes("openai error (502)") ||
+    msg.includes("openai error (503)") ||
+    msg.includes("openai error (504)") ||
+    msg.includes("openai error (524)")
+  );
 }
 
 async function postOpenAiWithRetries(url, body, apiKey, timeoutMs) {
@@ -688,6 +730,29 @@ async function callProviderModel(cfg, prompt, mode = "action") {
   if (provider === "openai") {
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) throw new Error("OPENAI_API_KEY missing.");
+    const forceResponses = String(process.env.OPENAI_BENCH_FORCE_RESPONSES || "").toLowerCase();
+    const useResponsesFirst = forceResponses === "1" || forceResponses === "true" || forceResponses === "yes";
+    const openAiTimeoutMs = Math.max(httpTimeoutMs(), openAiMinTimeoutMs());
+    if (useResponsesFirst) {
+      const responsesBody = {
+        model,
+        input: [
+          { role: "system", content: mode === "note" ? "Return plain text only." : "You are a careful puzzle solver. Follow the user's command protocol exactly." },
+          { role: "user", content: prompt },
+        ],
+      };
+      const rr = await postOpenAiWithRetries("https://api.openai.com/v1/responses", responsesBody, apiKey, openAiTimeoutMs);
+      if (!rr.ok) {
+        throw new Error(`OpenAI responses error (${rr.status}): ${rr.json?.error?.message || rr.json?.error || "unknown"}`);
+      }
+      return {
+        text: extractTextFromOpenAIResponses(rr.json),
+        usage: normalizeUsage("openai", rr.json),
+        latencyMs: rr.elapsedMs,
+        providerModel: rr.json?.model || model,
+      };
+    }
+
     const baseBody = {
       model,
       messages: [
@@ -702,7 +767,6 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     // Some models support this; harmless if ignored.
     body.reasoning_effort = reasoningLevel;
 
-    const openAiTimeoutMs = Math.max(httpTimeoutMs(), OPENAI_MIN_TIMEOUT_MS);
     let resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs);
     if (!resp.ok && isOpenAiUnsupportedTemperature(resp)) {
       body = { ...body };
@@ -860,6 +924,7 @@ async function runSingleModel(opts, modelCfg) {
     modelApiErrors: 0,
     modelLatencyMsTotal: 0,
     modelLatencyMsMax: 0,
+    gameApiLatencyMsTotal: 0,
     gameActionsTotal: 0,
     gameSwaps: 0,
     gameGuesses: 0,
@@ -877,7 +942,13 @@ async function runSingleModel(opts, modelCfg) {
     lastModelApiError: "",
   };
 
-  const startResp = await postJson(`${apiBase}/api/v1/competition/start`, {
+  async function postGame(path, body, headers = {}) {
+    const resp = await postJson(`${apiBase}${path}`, body, headers);
+    stats.gameApiLatencyMsTotal += Number(resp.elapsedMs || 0);
+    return resp;
+  }
+
+  const startResp = await postGame(`/api/v1/competition/start`, {
     model: modelCfg.competitionModel,
     password: modelCfg.password,
     date: opts.date,
@@ -928,7 +999,11 @@ async function runSingleModel(opts, modelCfg) {
       let action = null;
       let modelRespText = "";
       try {
-        const modelResp = await callProviderModel(modelCfg, prompt, "action");
+        const modelResp = await withHardTimeout(
+          callProviderModel(modelCfg, prompt, "action"),
+          modelCallHardTimeoutMs(),
+          "model call"
+        );
         stats.modelApiCalls += 1;
         stats.modelLatencyMsTotal += modelResp.latencyMs;
         stats.modelLatencyMsMax = Math.max(stats.modelLatencyMsMax, modelResp.latencyMs);
@@ -1009,8 +1084,8 @@ async function runSingleModel(opts, modelCfg) {
           stats.consecutiveSwaps = 0;
         }
         playResp = cmd.action === "swap"
-          ? await postJson(`${apiBase}/api/v1/competition/swap`, { competitionToken, a: cmd.a, b: cmd.b })
-          : await postJson(`${apiBase}/api/v1/competition/guess`, { competitionToken, kind: cmd.kind, index: cmd.index });
+          ? await postGame(`/api/v1/competition/swap`, { competitionToken, a: cmd.a, b: cmd.b })
+          : await postGame(`/api/v1/competition/guess`, { competitionToken, kind: cmd.kind, index: cmd.index });
         if (!playResp.ok) break;
 
         if (cmd.action === "guess") {
@@ -1075,10 +1150,7 @@ async function runSingleModel(opts, modelCfg) {
       if (!forced) {
         throw new Error(`Model failed to produce an executable command at step ${step}. Last reason: ${repairReason}`);
       }
-      const forcedResp = await postJson(
-        `${apiBase}/api/v1/competition/guess`,
-        { competitionToken, kind: forced.kind, index: forced.index }
-      );
+      const forcedResp = await postGame(`/api/v1/competition/guess`, { competitionToken, kind: forced.kind, index: forced.index });
       if (!forcedResp.ok) {
         throw new Error(
           `Model failed at step ${step}, and forced-guess fallback also failed: ${forcedResp.json?.error || `HTTP ${forcedResp.status}`}`
@@ -1121,10 +1193,7 @@ async function runSingleModel(opts, modelCfg) {
     for (let guard = 0; guard < 12 && !state.finished; guard++) {
       const forced = pickForcedGuessAction(state);
       if (!forced) break;
-      const forcedResp = await postJson(
-        `${apiBase}/api/v1/competition/guess`,
-        { competitionToken, kind: forced.kind, index: forced.index }
-      );
+      const forcedResp = await postGame(`/api/v1/competition/guess`, { competitionToken, kind: forced.kind, index: forced.index });
       if (!forcedResp.ok) break;
       stats.gameFallbackActions += 1;
       stats.forcedFallbackGuesses += 1;
@@ -1173,7 +1242,11 @@ async function runSingleModel(opts, modelCfg) {
       } else if (attempt >= 2) {
         prompt = buildForcedOneSentenceNotePrompt(state, stats);
       }
-      const noteResp = await callProviderModel(modelCfg, prompt, "note");
+      const noteResp = await withHardTimeout(
+        callProviderModel(modelCfg, prompt, "note"),
+        modelCallHardTimeoutMs(),
+        "note call"
+      );
       stats.modelApiCalls += 1;
       stats.modelLatencyMsTotal += noteResp.latencyMs;
       stats.modelLatencyMsMax = Math.max(stats.modelLatencyMsMax, noteResp.latencyMs);
@@ -1195,7 +1268,7 @@ async function runSingleModel(opts, modelCfg) {
   let submitOk = false;
   let submitErr = "";
   for (let submitAttempt = 0; submitAttempt < 4 && !submitOk; submitAttempt++) {
-    const submitResp = await postJson(`${apiBase}/api/v1/competition/submit`, {
+    const submitResp = await postGame(`/api/v1/competition/submit`, {
       competitionToken,
       notes: submitAttempt > 0 ? "No comment." : note,
     });
@@ -1204,16 +1277,13 @@ async function runSingleModel(opts, modelCfg) {
       break;
     }
     submitErr = String(submitResp.json?.error || `HTTP ${submitResp.status}`);
-    const stateResp = await postJson(`${apiBase}/api/v1/competition/state`, { competitionToken });
+    const stateResp = await postGame(`/api/v1/competition/state`, { competitionToken });
     if (!stateResp.ok) continue;
     state = stateResp.json?.state || state;
     if (!state?.finished) {
       const forced = pickForcedGuessAction(state);
       if (!forced) continue;
-      const forcedResp = await postJson(
-        `${apiBase}/api/v1/competition/guess`,
-        { competitionToken, kind: forced.kind, index: forced.index }
-      );
+      const forcedResp = await postGame(`/api/v1/competition/guess`, { competitionToken, kind: forced.kind, index: forced.index });
       if (forcedResp.ok) {
         stats.gameFallbackActions += 1;
         stats.forcedFallbackGuesses += 1;
@@ -1234,7 +1304,9 @@ async function runSingleModel(opts, modelCfg) {
   }
 
   const endedAtIso = nowIso();
-  const durationMs = Date.now() - startTs;
+  const wallClockDurationMs = Date.now() - startTs;
+  const activeDurationMs = Math.round(stats.modelLatencyMsTotal + stats.gameApiLatencyMsTotal);
+  const durationMs = activeDurationMs;
   const estimatedCostUsd = estimateCostUsd(modelCfg, stats);
 
   const benchmarkBody = {
@@ -1268,6 +1340,9 @@ async function runSingleModel(opts, modelCfg) {
     turnCount: state.turn,
     note,
     metadata: {
+      wallClockDurationMs,
+      activeDurationMs,
+      excludedStallMs: Math.max(0, wallClockDurationMs - activeDurationMs),
       fallbackPromptRetries: stats.gameFallbackActions,
       forcedFallbackGuesses: stats.forcedFallbackGuesses,
       usedFallback: stats.gameFallbackActions > 0,
@@ -1393,7 +1468,9 @@ async function main() {
       results.push({ ...row, ok: true });
       printSummaryRow(row);
     } catch (e) {
-      console.log(`FAILED ${m.displayName}: ${e.message}`);
+      const errMsg = String(e?.message || e || "");
+      const infraError = isLikelyInfraError(errMsg);
+      console.log(`FAILED ${m.displayName}: ${errMsg}`);
       if (adminKey) {
         try {
           const t = nowIso();
@@ -1426,23 +1503,27 @@ async function main() {
             outcome: "error",
             strikes: null,
             turnCount: null,
-            note: "Run failed before completion.",
-            errorText: String(e.message || e),
-            metadata: { runFailed: true, failureStage: "main_loop" },
+            note: infraError ? "Infrastructure/API failure before completion (non-scoring)." : "Run failed before completion.",
+            errorText: errMsg,
+            metadata: { runFailed: true, failureStage: "main_loop", infraError, nonScoring: infraError },
           }, { authorization: `Bearer ${adminKey}` });
         } catch (telemetryErr) {
           console.log(`Failure telemetry upsert failed for ${m.competitionModel} ${date}: ${telemetryErr.message}`);
         }
       }
-      try {
-        const cleanup = await cleanupAttemptOnFailure(apiBase, adminKey, m.competitionModel, date);
-        if (cleanup.ok) {
-          console.log(`Cleanup attempt ${m.competitionModel} ${date}: deleted=${cleanup.deleted}`);
-        } else if (!cleanup.skipped) {
-          console.log(`Cleanup attempt failed for ${m.competitionModel} ${date}: ${cleanup.error || "unknown"}`);
+      if (!infraError) {
+        try {
+          const cleanup = await cleanupAttemptOnFailure(apiBase, adminKey, m.competitionModel, date);
+          if (cleanup.ok) {
+            console.log(`Cleanup attempt ${m.competitionModel} ${date}: deleted=${cleanup.deleted}`);
+          } else if (!cleanup.skipped) {
+            console.log(`Cleanup attempt failed for ${m.competitionModel} ${date}: ${cleanup.error || "unknown"}`);
+          }
+        } catch (cleanupErr) {
+          console.log(`Cleanup attempt errored for ${m.competitionModel} ${date}: ${cleanupErr.message}`);
         }
-      } catch (cleanupErr) {
-        console.log(`Cleanup attempt errored for ${m.competitionModel} ${date}: ${cleanupErr.message}`);
+      } else {
+        console.log(`Preserving locked attempt for ${m.competitionModel} ${date} due to infra/API failure.`);
       }
       results.push({
         model: m.competitionModel,
@@ -1450,7 +1531,7 @@ async function main() {
         provider: m.provider,
         apiModel: m.resolvedApiModel,
         ok: false,
-        error: e.message,
+        error: errMsg,
       });
     }
   }
