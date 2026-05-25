@@ -455,6 +455,7 @@ table {
     const n = Number(avgStrikes);
     if (!Number.isFinite(n)) return '';
     const clamped = Math.max(0, Math.min(5, n));
+    if (clamped >= 5) return 'background:#c62828;color:#fff;';
     let hue;
     if (clamped <= 2.5) {
       // 0.0 -> 2.5 maps green (120) toward yellow (60)
