@@ -267,7 +267,7 @@ async function getParamsInteractive() {
     // Set SOLVE_CURATE_SIM_EVAL_TOPN to a positive N to only score the top N by quality first (faster).
     simEvalTopN: getEnvInt("SOLVE_CURATE_SIM_EVAL_TOPN", 0),
     movieOverlapPenaltyWeight: getEnvFloat("SOLVE_CURATE_MOVIE_OVERLAP_PENALTY_WEIGHT", 4),
-    yearProximityPenaltyWeight: getEnvFloat("SOLVE_CURATE_YEAR_PROXIMITY_PENALTY_WEIGHT", 2),
+    yearProximityPenaltyWeight: getEnvFloat("SOLVE_CURATE_YEAR_PROXIMITY_PENALTY_WEIGHT", 4),
     adjacentDecadePenaltyWeight: getEnvFloat("SOLVE_CURATE_ADJ_DECADE_PENALTY_WEIGHT", 0.6),
     adjacentCenturyPenaltyWeight: getEnvFloat("SOLVE_CURATE_ADJ_CENTURY_PENALTY_WEIGHT", 0.35),
   };
@@ -955,4 +955,3 @@ if (isMainThread) {
     process.exit(1);
   });
 }
-
