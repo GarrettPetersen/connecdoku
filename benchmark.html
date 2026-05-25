@@ -470,6 +470,24 @@ table {
     return `background:hsl(${hue.toFixed(1)} 78% 63%);color:${fg};`;
   }
 
+  function avgCorrectPillStyle(avgCorrect) {
+    const n = Number(avgCorrect);
+    if (!Number.isFinite(n)) return '';
+    const clamped = Math.max(0, Math.min(6, n));
+    if (clamped <= 0) return 'background:#c62828;color:#fff;';
+    if (clamped >= 6) return 'background:#b6e7b2;color:#0f172a;';
+    let hue;
+    if (clamped <= 3) {
+      const t = clamped / 3;
+      hue = 60 * t;
+    } else {
+      const t = (clamped - 3) / 3;
+      hue = 60 + (60 * t);
+    }
+    const fg = clamped <= 1 ? '#fff' : '#0f172a';
+    return `background:hsl(${hue.toFixed(1)} 78% 63%);color:${fg};`;
+  }
+
   function correctGuessClass(correctGuesses) {
     const n = Number(correctGuesses);
     if (!Number.isFinite(n)) return 's5';
@@ -640,13 +658,14 @@ table {
       const scoreClass = avg === null ? 's5' : '';
       const scoreStyle = avg === null ? '' : avgStrikePillStyle(avg);
       const correctText = avgCorrect === null ? '—' : avgCorrect.toFixed(2);
-      const correctClass = avgCorrectTopClass(avgCorrect);
+      const correctClass = avgCorrect === null ? 's5' : '';
+      const correctStyle = avgCorrect === null ? '' : avgCorrectPillStyle(avgCorrect);
 
       tr.innerHTML = `
         <td>${idx + 1}</td>
         <td>${row.display_name || row.model}</td>
         <td><span class="score-pill ${scoreClass}" style="${scoreStyle}">${avgText}</span></td>
-        <td><span class="score-pill ${correctClass}">${correctText}</span></td>
+        <td><span class="score-pill ${correctClass}" style="${correctStyle}">${correctText}</span></td>
         <td>${avgDuration}</td>
         <td>${avgCost}</td>
         <td>${Number(row.attempts || 0)}</td>
