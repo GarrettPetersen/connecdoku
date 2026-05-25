@@ -301,7 +301,7 @@ table {
     <section class="hero">
       <div class="kicker">Connecdoku Lab</div>
       <h1>AI Benchmark</h1>
-      <p>Daily head-to-head performance across models. Lower strike counts are better. Hover any cell to see that model's note for the day.</p>
+      <p>Daily head-to-head performance across models. Lower strike counts are better.</p>
     </section>
 
     <section class="section" id="scoreChartSection">
@@ -322,7 +322,7 @@ table {
 
     <section class="section" id="matrixSection">
       <h2>Daily Results Matrix</h2>
-      <p class="meta" id="matrixMeta">Loading matrix...</p>
+      <p class="meta" id="matrixMeta">Loading matrix... Hover any cell to see that model's note for the day.</p>
       <div class="table-wrap" id="matrixWrap">
         <div class="loading">Loading benchmark data...</div>
       </div>
@@ -449,6 +449,24 @@ table {
     if (n === 3) return 's3';
     if (n === 4) return 's4';
     return 's5';
+  }
+
+  function avgStrikePillStyle(avgStrikes) {
+    const n = Number(avgStrikes);
+    if (!Number.isFinite(n)) return '';
+    const clamped = Math.max(0, Math.min(5, n));
+    let hue;
+    if (clamped <= 2.5) {
+      // 0.0 -> 2.5 maps green (120) toward yellow (60)
+      const t = clamped / 2.5;
+      hue = 120 - (60 * t);
+    } else {
+      // 2.5 -> 5.0 maps yellow (60) toward red (0)
+      const t = (clamped - 2.5) / 2.5;
+      hue = 60 - (60 * t);
+    }
+    const fg = clamped >= 4.2 ? '#fff' : '#0f172a';
+    return `background:hsl(${hue.toFixed(1)} 78% 63%);color:${fg};`;
   }
 
   function correctGuessClass(correctGuesses) {
@@ -618,14 +636,15 @@ table {
       const avgDuration = formatDuration(row.avg_duration_ms);
       const avgCost = formatCost(row.avg_estimated_cost_usd);
       const avgText = avg === null ? '—' : avg.toFixed(2);
-      const scoreClass = avg === null ? 's5' : strikeClass(Math.round(avg));
+      const scoreClass = avg === null ? 's5' : '';
+      const scoreStyle = avg === null ? '' : avgStrikePillStyle(avg);
       const correctText = avgCorrect === null ? '—' : avgCorrect.toFixed(2);
       const correctClass = avgCorrectTopClass(avgCorrect);
 
       tr.innerHTML = `
         <td>${idx + 1}</td>
         <td>${row.display_name || row.model}</td>
-        <td><span class="score-pill ${scoreClass}">${avgText}</span></td>
+        <td><span class="score-pill ${scoreClass}" style="${scoreStyle}">${avgText}</span></td>
         <td><span class="score-pill ${correctClass}">${correctText}</span></td>
         <td>${avgDuration}</td>
         <td>${avgCost}</td>
@@ -754,7 +773,7 @@ table {
     table.appendChild(tbody);
     matrixWrap.innerHTML = '';
     matrixWrap.appendChild(table);
-    matrixMeta.textContent = `${dates.length} dates × ${models.length} models.`;
+    matrixMeta.textContent = `${dates.length} dates × ${models.length} models. Hover any cell to see that model's note for the day.`;
   }
 
   function buildLiveRuns(rows) {
