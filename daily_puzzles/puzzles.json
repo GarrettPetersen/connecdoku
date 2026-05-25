@@ -13158,5 +13158,45 @@
         "The Godfather Part II"
       ]
     ]
+  },
+  {
+    "rows": [
+      "D-Day",
+      "Roman Republic",
+      "The American Revolution",
+      "The Gunpowder Plot"
+    ],
+    "cols": [
+      "Dates",
+      "National Leaders",
+      "Place Names",
+      "Weapons"
+    ],
+    "words": [
+      [
+        "June 6th, 1944",
+        "Eisenhower",
+        "Normandy",
+        "Sword"
+      ],
+      [
+        "Ides of March",
+        "Julius Caesar",
+        "Rome",
+        "Gladius"
+      ],
+      [
+        "1776",
+        "Jefferson",
+        "Concord",
+        "Brown Bess"
+      ],
+      [
+        "The 5th of November",
+        "James I",
+        "Palace of Westminster",
+        "Gunpowder"
+      ]
+    ]
   }
 ]
