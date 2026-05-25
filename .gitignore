@@ -20,6 +20,7 @@ node_modules/
 # Solver progress
 progress.json
 progress_clean.json
+curator_state.json
 
 # env files
 .env
