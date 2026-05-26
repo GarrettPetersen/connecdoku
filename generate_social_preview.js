@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { Resvg } from "@resvg/resvg-js";
+import { ensureFredokaFontPath } from "./social_preview_font.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,15 +12,6 @@ const __dirname = path.dirname(__filename);
 const START_DATE = new Date("2025-07-21T00:00:00");
 const OUTPUT_PATH = path.join(__dirname, "social-preview.png");
 const PUZZLES_PATH = path.join(__dirname, "daily_puzzles", "puzzles.json");
-const FREDOKA_ONE_FONT_PATH = path.join(
-  __dirname,
-  "node_modules",
-  "@fontsource",
-  "fredoka-one",
-  "files",
-  "fredoka-one-all-400-normal.woff",
-);
-
 function todayIndex() {
   const now = new Date();
   const localMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -207,6 +199,7 @@ function buildSvg({ puzzleNumber, shuffledGrid }) {
 }
 
 function main() {
+  const fredokaFontPath = ensureFredokaFontPath();
   const puzzlesRaw = fs.readFileSync(PUZZLES_PATH, "utf8");
   const puzzles = JSON.parse(puzzlesRaw);
   if (!Array.isArray(puzzles) || puzzles.length === 0) {
@@ -224,7 +217,7 @@ function main() {
   const svg = buildSvg({ puzzleNumber, shuffledGrid });
   const resvg = new Resvg(svg, {
     font: {
-      fontFiles: [FREDOKA_ONE_FONT_PATH],
+      fontFiles: fredokaFontPath ? [fredokaFontPath] : [],
       loadSystemFonts: true,
     },
     fitTo: {

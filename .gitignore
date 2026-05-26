@@ -9,6 +9,7 @@ progress.json
 
 # Node.js dependencies
 node_modules/
+.cache/
 
 # Cloudflare Wrangler
 .wrangler/
