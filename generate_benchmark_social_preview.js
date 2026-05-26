@@ -113,13 +113,42 @@ function buildBars(rows) {
   let svg = "";
   topRows.forEach((row, index) => {
     const y = 228 + index * 36;
-    const fillWidth = Math.max(14, Math.round((row.score / widthDenom) * 596));
+    const trackX = 388;
+    const trackY = y;
+    const trackWidth = 596;
+    const trackHeight = 24;
+    const trackRadius = trackHeight / 2;
+    const fillWidth = Math.max(trackHeight, Math.round((row.score / widthDenom) * trackWidth));
     svg += `<text x="118" y="${y + 17}" fill="#111827" font-size="20" font-weight="700" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">${escapeXml(row.label)}</text>`;
-    svg += `<rect x="388" y="${y}" width="596" height="24" rx="999" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1"/>`;
-    svg += `<rect x="388" y="${y}" width="${fillWidth}" height="24" rx="999" fill="${scoreColor(row.score, minScore, maxScore)}"/>`;
+    svg += `<rect x="${trackX}" y="${trackY}" width="${trackWidth}" height="${trackHeight}" rx="${trackRadius}" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1"/>`;
+    svg += buildCapsuleBar(trackX, trackY, fillWidth, trackHeight, scoreColor(row.score, minScore, maxScore));
     svg += `<text x="1028" y="${y + 17}" text-anchor="end" fill="#1f2937" font-size="20" font-weight="700" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">${row.score.toFixed(2)}</text>`;
   });
   return svg;
+}
+
+function buildCapsuleBar(x, y, width, height, fill) {
+  const radius = height / 2;
+  const minWidth = height;
+  const actualWidth = Math.max(minWidth, width);
+  const leftCx = x + radius;
+  const cy = y + radius;
+  const rightCx = x + actualWidth - radius;
+
+  if (actualWidth <= height) {
+    return `<circle cx="${x + actualWidth / 2}" cy="${cy}" r="${actualWidth / 2}" fill="${fill}"/>`;
+  }
+
+  const rectX = leftCx;
+  const rectWidth = Math.max(0, actualWidth - height);
+
+  return [
+    `<circle cx="${leftCx}" cy="${cy}" r="${radius}" fill="${fill}"/>`,
+    rectWidth > 0
+      ? `<rect x="${rectX}" y="${y}" width="${rectWidth}" height="${height}" fill="${fill}"/>`
+      : "",
+    `<circle cx="${rightCx}" cy="${cy}" r="${radius}" fill="${fill}"/>`,
+  ].join("");
 }
 
 function buildSvg({ scoreRows, latestDate, fetchedAt, fetchError }) {
