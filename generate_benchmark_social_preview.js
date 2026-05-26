@@ -45,13 +45,21 @@ function safeAvg(value) {
 
 function scoreColor(score, minScore, maxScore) {
   const s = Number(score);
-  if (!Number.isFinite(s)) return "hsl(0 0% 82%)";
+  if (!Number.isFinite(s)) return "#d1d5db";
   const lo = Number.isFinite(minScore) ? minScore : s;
   const hi = Number.isFinite(maxScore) ? maxScore : s;
   const span = Math.max(hi - lo, 0.0001);
   const t = Math.max(0, Math.min(1, (s - lo) / span));
-  const hue = 120 * t;
-  return `hsl(${hue.toFixed(1)} 72% 52%)`;
+  const start = { r: 198, g: 40, b: 40 };
+  const mid = { r: 245, g: 194, b: 66 };
+  const end = { r: 73, g: 179, b: 91 };
+  const from = t < 0.5 ? start : mid;
+  const to = t < 0.5 ? mid : end;
+  const localT = t < 0.5 ? t / 0.5 : (t - 0.5) / 0.5;
+  const r = Math.round(from.r + (to.r - from.r) * localT);
+  const g = Math.round(from.g + (to.g - from.g) * localT);
+  const b = Math.round(from.b + (to.b - from.b) * localT);
+  return `#${[r, g, b].map((value) => value.toString(16).padStart(2, "0")).join("")}`;
 }
 
 function computeScoreRows(leaderboard) {
@@ -104,7 +112,7 @@ function buildBars(rows) {
 
   let svg = "";
   topRows.forEach((row, index) => {
-    const y = 216 + index * 36;
+    const y = 228 + index * 36;
     const fillWidth = Math.max(14, Math.round((row.score / widthDenom) * 596));
     svg += `<text x="118" y="${y + 17}" fill="#111827" font-size="20" font-weight="700" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">${escapeXml(row.label)}</text>`;
     svg += `<rect x="388" y="${y}" width="596" height="24" rx="999" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1"/>`;
@@ -134,8 +142,8 @@ function buildSvg({ scoreRows, latestDate, fetchedAt, fetchError }) {
   <rect x="60" y="42" width="1080" height="546" rx="28" fill="#ffffff" stroke="#d4d5d6" stroke-width="3"/>
   <text x="600" y="116" text-anchor="middle" fill="#222" font-size="66" font-weight="400" font-family="'Fredoka One', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Connecdoku</text>
   <text x="600" y="162" text-anchor="middle" fill="#222" font-size="34" font-weight="700" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">AI Benchmark</text>
-  <text x="600" y="192" text-anchor="middle" fill="#6b7280" font-size="22" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">${escapeXml(subtitle)}</text>
-  <text x="118" y="196" fill="#4b5563" font-size="16" font-weight="700" letter-spacing="1.5" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">CONNECDOKU BENCHMARK SCORE</text>
+  <text x="600" y="194" text-anchor="middle" fill="#6b7280" font-size="22" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">${escapeXml(subtitle)}</text>
+  <text x="118" y="210" fill="#4b5563" font-size="16" font-weight="700" letter-spacing="1.5" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">CONNECDOKU BENCHMARK SCORE</text>
   ${buildBars(scoreRows)}
   <text x="600" y="556" text-anchor="middle" fill="#6b7280" font-size="18" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">${escapeXml(footer)}</text>
 </svg>`;
