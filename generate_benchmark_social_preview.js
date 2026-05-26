@@ -152,9 +152,7 @@ function buildCapsuleBar(x, y, width, height, fill) {
 }
 
 function buildSvg({ scoreRows, latestDate, fetchedAt, fetchError }) {
-  const subtitle = latestDate
-    ? `Top benchmark chart through ${latestDate}`
-    : "Top benchmark chart";
+  const subtitle = latestDate ? `Through ${latestDate}` : "Latest results";
   const footer = fetchError
     ? `Generated ${fetchedAt} • fallback image`
     : `Generated ${fetchedAt} • score = avg correct + (5 - avg strikes)`;
@@ -170,9 +168,9 @@ function buildSvg({ scoreRows, latestDate, fetchedAt, fetchError }) {
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="60" y="42" width="1080" height="546" rx="28" fill="#ffffff" stroke="#d4d5d6" stroke-width="3"/>
   <text x="600" y="116" text-anchor="middle" fill="#222" font-size="66" font-weight="400" font-family="'Fredoka One', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Connecdoku</text>
-  <text x="600" y="162" text-anchor="middle" fill="#222" font-size="34" font-weight="700" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">AI Benchmark</text>
+  <text x="600" y="162" text-anchor="middle" fill="#222" font-size="34" font-weight="700" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">AI Models</text>
   <text x="600" y="194" text-anchor="middle" fill="#6b7280" font-size="22" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">${escapeXml(subtitle)}</text>
-  <text x="118" y="210" fill="#4b5563" font-size="16" font-weight="700" letter-spacing="1.5" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">CONNECDOKU BENCHMARK SCORE</text>
+  <text x="118" y="210" fill="#4b5563" font-size="16" font-weight="700" letter-spacing="1.5" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">SCORE</text>
   ${buildBars(scoreRows)}
   <text x="600" y="556" text-anchor="middle" fill="#6b7280" font-size="18" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">${escapeXml(footer)}</text>
 </svg>`;
