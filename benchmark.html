@@ -238,12 +238,22 @@ table {
   font-weight: 800;
   line-height: 1;
   cursor: pointer;
-  opacity: 0.62;
+  opacity: 0;
   padding: 0;
+  pointer-events: none;
+  transition: opacity 90ms ease-out, background-color 90ms ease-out, color 90ms ease-out;
 }
+.cell:hover .diag-cell-btn,
+.cell:focus .diag-cell-btn,
+.cell:focus-within .diag-cell-btn,
+.cell.diag-revealed .diag-cell-btn,
 .diag-cell-btn:hover,
 .diag-cell-btn.active {
   opacity: 1;
+  pointer-events: auto;
+}
+.diag-cell-btn:hover,
+.diag-cell-btn.active {
   background: #fff;
   color: #111827;
 }
@@ -481,6 +491,7 @@ table {
     expandedDiagButton.classList.remove('active');
     expandedDiagButton.textContent = 'i';
     if (priorCell) {
+      priorCell.classList.remove('diag-revealed');
       const pop = priorCell.querySelector('.diag-pop');
       if (pop) pop.remove();
     }
@@ -513,6 +524,11 @@ table {
       cell.appendChild(pop);
     });
     cell.appendChild(btn);
+    cell.addEventListener('click', () => {
+      if (cell.classList.contains('diag-revealed')) return;
+      closeExpandedDiag(null);
+      cell.classList.add('diag-revealed');
+    });
   }
 
   window.addEventListener('scroll', () => {
