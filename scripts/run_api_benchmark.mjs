@@ -7,7 +7,7 @@ import crypto from "crypto";
 const ROOT = path.resolve(path.join(path.dirname(new URL(import.meta.url).pathname), ".."));
 const MODELS_FILE = path.join(ROOT, "data", "api_benchmark_models.json");
 const DEFAULT_API_BASE = "https://connecdoku.com";
-const PROMPT_VERSION = "api-benchmark-v2";
+const PROMPT_VERSION = "api-benchmark-v3";
 const MAX_STEPS_DEFAULT = 64;
 const MAX_ACTION_RETRIES = Math.max(1, Number(process.env.API_BENCH_MAX_ACTION_RETRIES || 3));
 const NOTE_MAX_CHARS = 500;
@@ -536,17 +536,26 @@ function normalizeAction(obj) {
 }
 
 function buildRepairPrompt(basePrompt, reason, lastOutput) {
-  const details = trimText(lastOutput || "", 280);
+  const details = trimText(lastOutput || "", 1800);
   return [
     basePrompt,
     "",
-    "Your previous response was invalid for this API turn.",
+    "Your previous response was invalid for this API turn because it did not contain an executable move.",
     `Reason: ${reason}`,
-    details ? `You said: ${details}` : "You said: (empty)",
-    "Now output a valid slash move command. Prose without a move is invalid.",
-    "Accepted format: /swap r1 c1 r2 c2 OR /guess row i OR /guess col i",
+    "Previous model response:",
+    details || "(empty)",
+    "",
+    "Final repair instruction:",
+    "Convert your own previous guess or category analysis into valid slash commands now.",
+    "If you identified four words that belong together, use the board coordinates above to move those words into one row or column, then guess that row or column.",
+    "Use only these command forms:",
+    "/swap r1 c1 r2 c2",
+    "/guess row i",
+    "/guess col i",
+    "You may include multiple /swap commands followed by one /guess command.",
+    "Do not answer with analysis only. A response without at least one /swap or /guess command is invalid.",
     "Your full response text is saved as scratchpad for future turns.",
-    "Reply again with at least one valid slash move command.",
+    "Reply now with valid slash commands based on your previous answer.",
   ].join("\n");
 }
 
