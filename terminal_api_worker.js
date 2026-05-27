@@ -1461,6 +1461,40 @@ async function deleteCompetitionAttempt(env, body) {
   return { ok: true, deleted };
 }
 
+async function deleteBenchmarkRun(env, body) {
+  await ensureDb(env);
+
+  if (typeof body.model !== "string" || typeof body.puzzleDate !== "string") {
+    throw new Error("Provide model+puzzleDate.");
+  }
+
+  const model = body.model.trim();
+  const puzzleDate = body.puzzleDate.trim();
+  if (!model) throw new Error("Provide model+puzzleDate.");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(puzzleDate)) {
+    throw new Error("puzzleDate must be YYYY-MM-DD.");
+  }
+
+  const delBenchmarkRuns = await env.DB.prepare(
+    `DELETE FROM competition_benchmark_runs WHERE model = ? AND puzzle_date = ?`
+  ).bind(model, puzzleDate).run();
+  const delResults = await env.DB.prepare(
+    `DELETE FROM competition_results WHERE model = ? AND puzzle_date = ?`
+  ).bind(model, puzzleDate).run();
+  const delAttempts = await env.DB.prepare(
+    `DELETE FROM competition_attempts WHERE model = ? AND puzzle_date = ?`
+  ).bind(model, puzzleDate).run();
+
+  return {
+    ok: true,
+    deleted: {
+      competition_benchmark_runs_deleted: Number(delBenchmarkRuns.meta?.changes || 0),
+      competition_results_deleted: Number(delResults.meta?.changes || 0),
+      competition_attempts_deleted: Number(delAttempts.meta?.changes || 0),
+    },
+  };
+}
+
 async function resetCompetitionRuns(env, body) {
   await ensureDb(env);
   if (!body || body.confirm !== "RESET_COMPETITION_RUNS") {
@@ -1969,6 +2003,16 @@ async function routeRequest(req, env) {
       }
     }
 
+    if (method === "POST" && url.pathname === "/api/v1/competition/delete-benchmark-run") {
+      if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
+      const body = await parseBody(req);
+      try {
+        return sendJson(200, await deleteBenchmarkRun(env, body));
+      } catch (e) {
+        return sendJson(400, { ok: false, error: e.message });
+      }
+    }
+
     if (method === "POST" && url.pathname === "/api/v1/competition/reset-runs") {
       if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
       const body = await parseBody(req);
@@ -2002,6 +2046,7 @@ async function routeRequest(req, env) {
         "POST /api/v1/competition/benchmark-run",
         "POST /api/v1/competition/delete-result",
         "POST /api/v1/competition/delete-attempt",
+        "POST /api/v1/competition/delete-benchmark-run",
         "POST /api/v1/competition/reset-runs",
       ],
     });

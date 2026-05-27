@@ -1095,8 +1095,7 @@ async function runSingleModel(opts, modelCfg) {
           reason: "model_call_error",
           error: trimText(String(e?.message || e || ""), 260),
         });
-        if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
-        continue;
+        throw e;
       }
 
       if (!action) {
