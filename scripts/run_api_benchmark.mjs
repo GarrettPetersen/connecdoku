@@ -9,7 +9,7 @@ const MODELS_FILE = path.join(ROOT, "data", "api_benchmark_models.json");
 const DEFAULT_API_BASE = "https://connecdoku.com";
 const PROMPT_VERSION = "api-benchmark-v4";
 const MAX_STEPS_DEFAULT = 64;
-const MAX_ACTION_RETRIES = Math.max(1, Number(process.env.API_BENCH_MAX_ACTION_RETRIES || 3));
+const MAX_ACTION_RETRIES = Math.max(1, Number(process.env.API_BENCH_MAX_ACTION_RETRIES || 20));
 const NOTE_MAX_CHARS = 500;
 const SCRATCHPAD_MAX_CHARS = 8000;
 const TRACE_MODEL_OUTPUT_MAX_CHARS = 8000;
@@ -407,6 +407,7 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     `incorrect guesses: ${JSON.stringify(metrics.incorrectGuessWordSets || [])}`,
     "scratchpad (full prior model outputs, newest last):",
     metrics.scratchpad || "(empty)",
+    metrics.lastActionSummary ? `lastAction=${metrics.lastActionSummary}` : null,
     "",
     "FINAL REMINDER - REQUIRED OUTPUT FORMAT:",
     "Include at least one literal move command in your response.",
@@ -958,6 +959,7 @@ async function runSingleModel(opts, modelCfg) {
     gameFallbackActions: 0,
     consecutiveSwaps: 0,
     forcedFallbackGuesses: 0,
+    lastActionSummary: "",
     inputTokens: 0,
     outputTokens: 0,
     totalTokens: 0,
@@ -1190,11 +1192,15 @@ async function runSingleModel(opts, modelCfg) {
         if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
       }
       const forcedGuessedWords = lineWordsFromState(state, forced.kind, forced.index);
+      const forcedSummary =
+        `forced fallback guess ${forced.kind} ${forced.index} because the model gave ${MAX_ACTION_RETRIES} repeated invalid responses`;
       state = forcedResp.json.state;
+      stats.lastActionSummary = forcedSummary;
       actionTrace.push({
         step,
         attempt: "forced-fallback",
         reason: "forced_fallback_guess",
+        note: forcedSummary,
         action: forced,
         guessedWords: forcedGuessedWords,
         strikes: state.strikes,

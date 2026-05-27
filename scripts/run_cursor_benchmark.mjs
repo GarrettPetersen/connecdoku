@@ -11,7 +11,7 @@ const DEFAULT_API_BASE = "https://connecdoku.com";
 const DEFAULT_CURSOR_BASE = "https://api.cursor.com";
 const PROMPT_VERSION = "cursor-benchmark-v4";
 const MAX_STEPS_DEFAULT = 64;
-const MAX_ACTION_RETRIES = 3;
+const MAX_ACTION_RETRIES = Math.max(1, Number(process.env.CURSOR_BENCH_MAX_ACTION_RETRIES || 20));
 const NOTE_MAX_CHARS = 500;
 const SCRATCHPAD_MAX_CHARS = 50000;
 const TRACE_MODEL_OUTPUT_MAX_CHARS = 8000;
@@ -1082,11 +1082,15 @@ async function runSingleModel(opts, modelCfg) {
           if (Array.isArray(guessed) && guessed.length === 4) stats.incorrectGuessWordSets.push(guessed);
         }
         const forcedGuessedWords = lineWordsFromState(state, forced.kind, forced.index);
+        const forcedSummary =
+          `forced fallback guess ${forced.kind} ${forced.index} because the model gave ${MAX_ACTION_RETRIES} repeated invalid responses`;
         state = forcedResp.json.state;
+        stats.lastActionSummary = forcedSummary;
         actionTrace.push({
           step,
           attempt: "forced-fallback",
           reason: "forced_fallback_guess",
+          note: forcedSummary,
           action: forced,
           guessedWords: forcedGuessedWords,
           strikes: state.strikes,
