@@ -175,6 +175,12 @@ function traceModelCall(cfg, message) {
   console.log(`[trace:${label}] ${message}`);
 }
 
+function useResponsesFirstForOpenAi(model) {
+  const forceResponses = String(process.env.OPENAI_BENCH_FORCE_RESPONSES || "").toLowerCase();
+  if (forceResponses === "1" || forceResponses === "true" || forceResponses === "yes") return true;
+  return String(model || "").toLowerCase().includes("gpt-5.4");
+}
+
 function extractTextFromOpenAIStyle(respJson) {
   const choice = respJson?.choices?.[0];
   const msg = choice?.message;
@@ -771,11 +777,11 @@ async function callProviderModel(cfg, prompt, mode = "action") {
   if (provider === "openai") {
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) throw new Error("OPENAI_API_KEY missing.");
-    const forceResponses = String(process.env.OPENAI_BENCH_FORCE_RESPONSES || "").toLowerCase();
-    const useResponsesFirst = forceResponses === "1" || forceResponses === "true" || forceResponses === "yes";
+    const useResponsesFirst = useResponsesFirstForOpenAi(model);
     const openAiTimeoutMs = Math.max(httpTimeoutMs(), openAiMinTimeoutMs());
     if (trace) trace(`begin mode=${mode} model=${model} reasoning=${reasoningLevel} temperature=${Number.isFinite(temperature) ? temperature : "n/a"} timeout=${openAiTimeoutMs}ms`);
     if (useResponsesFirst) {
+      if (trace) trace(`using responses endpoint first for model=${model}`);
       const responsesBody = {
         model,
         input: [
