@@ -7,7 +7,7 @@ import crypto from "crypto";
 const ROOT = path.resolve(path.join(path.dirname(new URL(import.meta.url).pathname), ".."));
 const MODELS_FILE = path.join(ROOT, "data", "api_benchmark_models.json");
 const DEFAULT_API_BASE = "https://connecdoku.com";
-const PROMPT_VERSION = "api-benchmark-v3";
+const PROMPT_VERSION = "api-benchmark-v4";
 const MAX_STEPS_DEFAULT = 64;
 const MAX_ACTION_RETRIES = Math.max(1, Number(process.env.API_BENCH_MAX_ACTION_RETRIES || 3));
 const NOTE_MAX_CHARS = 500;
@@ -272,6 +272,15 @@ function parseSlashCommandSequence(text) {
   return { commands };
 }
 
+function lockedCellText(state, r, c) {
+  const row = (state?.solved?.rows || []).find((x) => Number(x?.index) === r);
+  const col = (state?.solved?.cols || []).find((x) => Number(x?.index) === c);
+  const parts = [];
+  if (row) parts.push(`row ${r}: ${row.label}`);
+  if (col) parts.push(`col ${c}: ${col.label}`);
+  return parts.length ? ` LOCKED(${parts.join("; ")})` : "";
+}
+
 function buildBoardText(state) {
   const lines = [];
   const rows = state?.board || [];
@@ -279,7 +288,7 @@ function buildBoardText(state) {
     const cells = [];
     for (let c = 0; c < 4; c++) {
       const word = rows?.[r]?.[c] || "?";
-      cells.push(`[${r},${c}] ${word}`);
+      cells.push(`[${r},${c}] ${word}${lockedCellText(state, r, c)}`);
     }
     lines.push(cells.join(" | "));
   }
@@ -347,10 +356,12 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "- Swap words: swap two unlocked tiles.",
     "- Check categories: guess a full row or column category.",
     "- Correct guesses lock in place.",
+    "- Locked tiles cannot be swapped. Never use /swap with any coordinate marked LOCKED on the board.",
     "- Wrong guesses add a strike; 5 strikes loses the game.",
     "- When 3 rows are solved, row guesses are blocked until columns advance (and vice versa).",
     "- Auto-alignment: after multiple solves in one dimension, solved lines may reorder to align and keep puzzle solvable.",
     "- Locked-word information: locked words are reliable constraints. Two locked words sharing a row/column indicate that shared category structure.",
+    "- Alignment rule: when building a new row, align its words with any solved column labels already crossing that row. When building a new column, align its words with any solved row labels already crossing that column.",
     "Win condition: solve all 4 rows and all 4 columns.",
     ...(Number(state?.turn || 0) === 0
       ? ["The starting board is a random arrangement, so an untouched row or column is unlikely to be correct."]
@@ -387,6 +398,7 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "Output rule: include at least one valid slash move command in your response.",
     `Solved rows: ${solvedRows}`,
     `Solved cols: ${solvedCols}`,
+    "Board coordinates marked LOCKED are frozen because their row or column is already solved.",
     "Board:",
     board,
     "",

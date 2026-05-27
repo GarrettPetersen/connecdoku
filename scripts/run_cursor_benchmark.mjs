@@ -9,7 +9,7 @@ const ROOT = path.resolve(path.join(path.dirname(new URL(import.meta.url).pathna
 const MODELS_FILE = path.join(ROOT, "data", "cursor_benchmark_models.json");
 const DEFAULT_API_BASE = "https://connecdoku.com";
 const DEFAULT_CURSOR_BASE = "https://api.cursor.com";
-const PROMPT_VERSION = "cursor-benchmark-v3";
+const PROMPT_VERSION = "cursor-benchmark-v4";
 const MAX_STEPS_DEFAULT = 64;
 const MAX_ACTION_RETRIES = 3;
 const NOTE_MAX_CHARS = 500;
@@ -241,6 +241,15 @@ function parseSlashCommandSequence(text) {
   return { commands };
 }
 
+function lockedCellText(state, r, c) {
+  const row = (state?.solved?.rows || []).find((x) => Number(x?.index) === r);
+  const col = (state?.solved?.cols || []).find((x) => Number(x?.index) === c);
+  const parts = [];
+  if (row) parts.push(`row ${r}: ${row.label}`);
+  if (col) parts.push(`col ${c}: ${col.label}`);
+  return parts.length ? ` LOCKED(${parts.join("; ")})` : "";
+}
+
 function buildBoardText(state) {
   const lines = [];
   const rows = state?.board || [];
@@ -248,7 +257,7 @@ function buildBoardText(state) {
     const cells = [];
     for (let c = 0; c < 4; c++) {
       const word = rows?.[r]?.[c] || "?";
-      cells.push(`[${r},${c}] ${word}`);
+      cells.push(`[${r},${c}] ${word}${lockedCellText(state, r, c)}`);
     }
     lines.push(cells.join(" | "));
   }
@@ -302,8 +311,8 @@ function revealedAfterLossLabels(state) {
 
 function buildDecisionPrompt(state, metrics, modelMeta) {
   const board = buildBoardText(state);
-  const solvedRows = (state?.solved?.rows || []).map((x) => x.index).join(",") || "none";
-  const solvedCols = (state?.solved?.cols || []).map((x) => x.index).join(",") || "none";
+  const solvedRows = solvedLabelText(state?.solved?.rows, "row");
+  const solvedCols = solvedLabelText(state?.solved?.cols, "col");
   const rules = state?.rules || {};
   const actions = (state?.protocol?.allowedActions || []).join(",");
 
@@ -316,12 +325,14 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "- Swap two unlocked tiles to rearrange the grid.",
     "- Guess a full row or column category.",
     "- Correct guess locks that line.",
+    "- Locked tiles cannot be swapped. Never use /swap with any coordinate marked LOCKED on the board.",
     "- Wrong guess adds one strike.",
     "- At 5 strikes, you lose.",
     "- If 3 rows are solved, row guesses are blocked until columns advance (and vice versa).",
     "- The game may reorder the just-solved line to keep the puzzle solvable.",
     "- Auto-alignment: after multiple solves in one dimension, solved lines may reorder to align and reveal hints in the other dimension.",
     "- Locked-word information: locked words are reliable constraints. Two locked words sharing a row/column indicate that shared category structure.",
+    "- Alignment rule: when building a new row, align its words with any solved column labels already crossing that row. When building a new column, align its words with any solved row labels already crossing that column.",
     "- Final unresolved line may auto-resolve when only one row and one column remain.",
     ...(Number(state?.turn || 0) === 0
       ? ["The starting board is a random arrangement, so an untouched row or column is unlikely to be correct."]
@@ -359,6 +370,7 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "Output rule: include at least one valid /swap or /guess command in your response.",
     `solvedRows=${solvedRows}`,
     `solvedCols=${solvedCols}`,
+    "Board coordinates marked LOCKED are frozen because their row or column is already solved.",
     "Board:",
     board,
     `invalidSoFar=${metrics.gameInvalidActions}`,
