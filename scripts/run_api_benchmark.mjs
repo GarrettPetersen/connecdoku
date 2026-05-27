@@ -13,7 +13,7 @@ const MAX_ACTION_RETRIES = Math.max(1, Number(process.env.API_BENCH_MAX_ACTION_R
 const NOTE_MAX_CHARS = 500;
 const SCRATCHPAD_MAX_CHARS = 8000;
 const TRACE_MODEL_OUTPUT_MAX_CHARS = 8000;
-const ANTHROPIC_MAX_TOKENS = Math.max(1024, Number(process.env.API_BENCH_ANTHROPIC_MAX_TOKENS || 8192));
+const ANTHROPIC_MAX_TOKENS = Math.max(1024, Number(process.env.API_BENCH_ANTHROPIC_MAX_TOKENS || 32768));
 const TRACE_LIMIT = 200;
 const HTTP_TIMEOUT_MS_DEFAULT = 120000;
 const OPENAI_MIN_TIMEOUT_MS = 240000;
@@ -616,6 +616,17 @@ function normalizeUsage(provider, json) {
   return { inputTokens, outputTokens, totalTokens };
 }
 
+function isAnthropicMaxTokensError(resp) {
+  if (!resp || resp.status !== 400) return false;
+  const msg = String(resp.json?.error?.message || resp.json?.error || "").toLowerCase();
+  return msg.includes("max_tokens") || msg.includes("maximum tokens");
+}
+
+function anthropicTokenCapsToTry() {
+  const caps = [ANTHROPIC_MAX_TOKENS, 16384, 8192, 4096];
+  return [...new Set(caps.filter((n) => Number.isFinite(n) && n >= 1024))];
+}
+
 function estimateCostUsd(modelCfg, usage) {
   const inRate = Number(modelCfg.inputPricePerMTok || 0);
   const outRate = Number(modelCfg.outputPricePerMTok || 0);
@@ -864,16 +875,24 @@ async function callProviderModel(cfg, prompt, mode = "action") {
   if (provider === "anthropic") {
     const apiKey = process.env.ANTHROPIC_API_KEY;
     if (!apiKey) throw new Error("ANTHROPIC_API_KEY missing.");
-    const body = {
-      model,
-      max_tokens: ANTHROPIC_MAX_TOKENS,
-      system: "For note mode, plain text only. For action mode, follow the user's command protocol exactly.",
-      messages: [{ role: "user", content: prompt }],
-    };
-    const resp = await postJson("https://api.anthropic.com/v1/messages", body, {
+    const headers = {
       "x-api-key": apiKey,
       "anthropic-version": "2023-06-01",
-    });
+    };
+    let resp = null;
+    let lastCap = null;
+    for (const maxTokens of anthropicTokenCapsToTry()) {
+      lastCap = maxTokens;
+      const body = {
+        model,
+        max_tokens: maxTokens,
+        system: "For note mode, plain text only. For action mode, follow the user's command protocol exactly.",
+        messages: [{ role: "user", content: prompt }],
+      };
+      resp = await postJson("https://api.anthropic.com/v1/messages", body, headers);
+      if (resp.ok || !isAnthropicMaxTokensError(resp)) break;
+      console.log(`Anthropic rejected max_tokens=${maxTokens} for ${model}; retrying with lower cap.`);
+    }
     if (!resp.ok) throw new Error(`Anthropic error (${resp.status}): ${resp.json?.error?.message || resp.json?.error || "unknown"}`);
     const text = (resp.json?.content || [])
       .map((c) => (c?.type === "text" ? c.text : ""))
@@ -883,6 +902,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
       usage: normalizeUsage("anthropic", resp.json),
       latencyMs: resp.elapsedMs,
       providerModel: resp.json?.model || model,
+      maxTokens: lastCap,
     };
   }
 
