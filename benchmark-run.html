@@ -221,6 +221,8 @@ a:hover { text-decoration: underline; }
           ${Number.isFinite(Number(entry.turn)) ? `<span class="pill">${esc(`turn ${entry.turn}`)}</span>` : ''}
         </div>
         ${entry.guessedWords ? `<div class="mini"><strong>Guessed words:</strong> ${entry.guessedWords.map(esc).join(' | ')}</div>` : ''}
+        ${entry.note ? `<div class="mini"><strong>Note:</strong> ${esc(entry.note)}</div>` : ''}
+        ${entry.reconstructed ? `<div class="mini"><strong>Reconstructed prior state:</strong> ${esc(`${entry.priorSwaps || 0} swaps, ${entry.priorCorrectGuesses || 0} correct guesses, ${entry.priorIncorrectGuesses || 0} incorrect guesses`)}</div>` : ''}
         ${entry.result ? `<div class="mini"><strong>Result:</strong> correct=${esc(!!entry.result.correct)} lost=${esc(!!entry.result.lost)}</div>` : ''}
         ${entry.apiError ? `<div class="mini"><strong>API error:</strong> ${esc(entry.apiError)}</div>` : ''}
         ${entry.error ? `<div class="mini"><strong>Error:</strong> ${esc(entry.error)}</div>` : ''}

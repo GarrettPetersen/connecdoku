@@ -556,20 +556,44 @@ function solvedCountFromState(state) {
   return rows + cols;
 }
 
-function assertFreshCompetitionAttempt(startJson, modelId, date) {
-  const state = startJson?.state || {};
-  const attempt = startJson?.attempt || {};
-  const turnCount = Number(attempt.turnCount ?? state.turn ?? 0);
-  const solvedCount = solvedCountFromState(state);
-  const strikes = Number(attempt.strikes ?? state.strikes ?? 0);
-  const finished = !!state.finished || !!attempt.finished;
-  const pristine = !finished && turnCount === 0 && solvedCount === 0 && strikes === 0;
-  if (!pristine) {
-    throw new Error(
-      `Refusing resumed attempt for ${modelId} on ${date}. ` +
-      `Need pristine state (turn=0, solved=0, strikes=0, unfinished), got turn=${turnCount}, solved=${solvedCount}, strikes=${strikes}, finished=${finished}.`
-    );
-  }
+function realSolvedCountFromState(state) {
+  const maxStrikes = Number(state?.maxStrikes ?? 5);
+  const countReal = (items) => (Array.isArray(items) ? items : [])
+    .filter((x) => !Number.isFinite(Number(x?.strikeLevel)) || Number(x.strikeLevel) < maxStrikes)
+    .length;
+  return countReal(state?.solved?.rows) + countReal(state?.solved?.cols);
+}
+
+function seedStatsFromResumedState(stats, actionTrace, state, startClass) {
+  const priorTurnCount = Math.max(0, Number(startClass?.turnCount ?? state?.turn ?? 0));
+  const priorCorrectGuesses = realSolvedCountFromState(state);
+  const priorIncorrectGuesses = Math.max(0, Number(startClass?.strikes ?? state?.strikes ?? 0));
+  const priorGuesses = Math.min(priorTurnCount, priorCorrectGuesses + priorIncorrectGuesses);
+  const priorSwaps = Math.max(0, priorTurnCount - priorGuesses);
+
+  stats.gameActionsTotal += priorTurnCount;
+  stats.gameSwaps += priorSwaps;
+  stats.gameGuesses += priorGuesses;
+  stats.gameCorrectGuesses += priorCorrectGuesses;
+  stats.gameIncorrectGuesses += priorIncorrectGuesses;
+  stats.lastActionSummary =
+    `resumed from turn ${priorTurnCount} with ${priorCorrectGuesses} correct guesses and ${priorIncorrectGuesses} strikes`;
+
+  actionTrace.push({
+    step: "resume",
+    attempt: "prior",
+    reason: "resumed_prior_state",
+    note: "Prior exact commands were not available in persisted attempt state; counters were reconstructed from turn, strikes, and solved lines.",
+    reconstructed: true,
+    priorTurnCount,
+    priorSwaps,
+    priorGuesses,
+    priorCorrectGuesses,
+    priorIncorrectGuesses,
+    strikes: Number(state?.strikes ?? 0),
+    turn: priorTurnCount,
+    finished: !!state?.finished,
+  });
 }
 
 function classifyCompetitionAttempt(startJson) {
@@ -868,30 +892,6 @@ async function runSingleModel(opts, modelCfg) {
       skipped: true,
     };
   }
-  if (!startClass.pristine) {
-    if (!adminKey) {
-      assertFreshCompetitionAttempt(startResp.json, modelCfg.competitionModel, opts.date);
-    }
-    console.log(
-      `Resetting stale unfinished attempt for ${modelCfg.displayName}: ` +
-      `turn=${startClass.turnCount}, solved=${startClass.solvedCount}, strikes=${startClass.strikes}.`
-    );
-    const cleanup = await cleanupAttemptOnFailure(apiBase, adminKey, modelCfg.competitionModel, opts.date);
-    if (!cleanup.ok) {
-      throw new Error(`Failed to reset stale unfinished attempt: ${cleanup.error || cleanup.reason || "unknown"}`);
-    }
-    startResp = await postJson(`${apiBase}/api/v1/competition/start`, {
-      model: modelCfg.competitionModel,
-      password: modelCfg.password,
-      date: opts.date,
-    });
-    if (!startResp.ok) {
-      throw new Error(`restart after stale attempt cleanup failed: ${startResp.json?.error || startResp.status}`);
-    }
-    startClass = classifyCompetitionAttempt(startResp.json);
-    assertFreshCompetitionAttempt(startResp.json, modelCfg.competitionModel, opts.date);
-  }
-
   let state = startResp.json.state;
   const competitionToken = startResp.json.competitionToken;
   if (!competitionToken) throw new Error("competitionToken missing from start response.");
@@ -900,8 +900,15 @@ async function runSingleModel(opts, modelCfg) {
   }
 
   const actionTrace = [];
+  if (!startClass.pristine) {
+    console.log(
+      `Resuming unfinished attempt for ${modelCfg.displayName}: ` +
+      `turn=${startClass.turnCount}, solved=${startClass.solvedCount}, strikes=${startClass.strikes}.`
+    );
+    seedStatsFromResumedState(stats, actionTrace, state, startClass);
+  }
   const cursorSession = { agentId: null };
-  let step = 0;
+  let step = startClass.pristine ? 0 : Math.max(0, Number(startClass.turnCount || 0));
   try {
     while (!state.finished && step < opts.maxSteps) {
       const basePrompt = buildDecisionPrompt(state, stats, modelCfg);
