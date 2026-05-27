@@ -258,6 +258,14 @@ table {
 .loading { background: #f6f7f8; color: #4b5563; }
 .error { background: #fff3f3; color: #9b1c1c; }
 .empty-state { background: #f6f7f8; color: #6b7280; }
+.diag-toast {
+  margin-top: 10px;
+  padding: 9px 11px;
+  border-radius: 10px;
+  background: #f6f7f8;
+  color: #4b5563;
+  font-size: 12px;
+}
 .footer {
   margin-top: 30px;
   padding-top: 16px;
@@ -386,10 +394,37 @@ table {
   const scoreChartMeta = document.getElementById('scoreChartMeta');
   const matrixMeta = document.getElementById('matrixMeta');
   const liveMeta = document.getElementById('liveMeta');
+  const matrixSection = document.getElementById('matrixSection');
+  const heroKicker = document.querySelector('.hero .kicker');
   const tooltipEl = document.createElement('div');
   tooltipEl.className = 'floating-tooltip';
   document.body.appendChild(tooltipEl);
   let tooltipTarget = null;
+  let diagArmedUntil = 0;
+
+  function showDiagToast(text) {
+    let toast = document.getElementById('diagToast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'diagToast';
+      toast.className = 'diag-toast';
+      matrixSection.appendChild(toast);
+    }
+    toast.textContent = text;
+    window.clearTimeout(showDiagToast._timer);
+    showDiagToast._timer = window.setTimeout(() => {
+      if (toast) toast.remove();
+    }, 5000);
+  }
+
+  function armDiagnostics() {
+    diagArmedUntil = Date.now() + 10000;
+    showDiagToast('Diagnostic mode armed for 10 seconds. Click any populated matrix cell to inspect that run.');
+  }
+
+  function diagnosticsArmed() {
+    return Date.now() < diagArmedUntil;
+  }
 
   function placeTooltip(target) {
     if (!target) return;
@@ -792,6 +827,10 @@ table {
           const tip = `${rec.display_name || rec.model}\n${day}\nOutcome: ${rec.outcome}\nStrikes: ${rec.strikes}\nCorrect guesses: ${Number.isFinite(cg) ? cg : '—'}\nTurns: ${rec.turn_count}\nNote: ${note}`;
           cell.setAttribute('data-tip', tip);
           wireCellTooltip(cell);
+          cell.addEventListener('click', () => {
+            if (!diagnosticsArmed()) return;
+            window.location.href = `benchmark-run.html?model=${encodeURIComponent(rec.model)}&date=${encodeURIComponent(day)}`;
+          });
 
           td.appendChild(cell);
         }
@@ -892,6 +931,7 @@ table {
 
   load();
   setInterval(load, 45000);
+  if (heroKicker) heroKicker.addEventListener('click', armDiagnostics);
 })();
 </script>
 </body>

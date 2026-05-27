@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Benchmark Run Detail - Connecdoku</title>
+<link rel="icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Diagnostic viewer for an individual Connecdoku benchmark run.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#fafafa; --ink:#222; --muted:#6b7280; --card:#fff; --line:#d4d5d6; --accent:#4caf50; --tile:#f6f7f8; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif; color: var(--ink); background: var(--bg); }
+.shell { max-width: 1180px; margin: 24px auto 40px; padding: 0 12px; }
+.hero, .section { background: var(--card); border: 2px solid var(--line); border-radius: 14px; }
+.hero { padding: 18px 20px; margin-bottom: 14px; }
+.kicker { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #4b5563; font-weight: 700; margin-bottom: 8px; }
+h1, h2 { margin: 0; font-family: "Fredoka One", cursive; letter-spacing: .4px; }
+h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1; }
+h2 { font-size: 22px; margin-bottom: 10px; }
+.hero p { margin: 10px 0 0; color: var(--muted); }
+.grid { display: grid; gap: 14px; }
+.grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.section { padding: 14px; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.stat { border: 1px solid #ececec; border-radius: 12px; padding: 10px 12px; background: #fcfcfc; }
+.stat-label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #6b7280; font-weight: 700; }
+.stat-value { margin-top: 4px; font-size: 22px; font-weight: 700; }
+.mini { color: var(--muted); font-size: 13px; }
+.board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.tile { min-height: 76px; padding: 8px; border-radius: 12px; background: var(--tile); border: 2px solid var(--line); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 14px; line-height: 1.2; }
+.meta-list { display: grid; gap: 8px; }
+.meta-row { display: grid; grid-template-columns: 160px 1fr; gap: 10px; align-items: start; font-size: 14px; }
+.meta-row strong { color: #111827; }
+.trace { display: grid; gap: 10px; }
+.trace-card { border: 1px solid #ececec; border-radius: 12px; padding: 12px; background: #fcfcfc; }
+.trace-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.pill { display: inline-flex; align-items: center; padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; background: #eef2f7; color: #334155; }
+.pill.good { background: #dff3df; color: #176534; }
+.pill.warn { background: #fff1cf; color: #8a5a00; }
+.pill.bad { background: #ffe0e0; color: #9b1c1c; }
+pre { white-space: pre-wrap; word-break: break-word; background: #f6f7f8; border-radius: 10px; padding: 10px; font-size: 12px; margin: 8px 0 0; }
+.hint { color: var(--muted); font-size: 13px; margin-top: 8px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.error, .loading { border-radius: 12px; padding: 14px; font-size: 14px; }
+.error { background: #fff3f3; color: #9b1c1c; }
+.loading { background: #f6f7f8; color: #4b5563; }
+@media (max-width: 900px) {
+  .grid.two, .stats { grid-template-columns: 1fr; }
+  .meta-row { grid-template-columns: 1fr; gap: 2px; }
+}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="kicker">Diagnostic Viewer</div>
+      <h1>Benchmark Run Detail</h1>
+      <p id="heroText">Loading run detail...</p>
+    </section>
+    <div id="content" class="loading">Loading benchmark run detail...</div>
+  </div>
+<script>
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const model = params.get('model') || '';
+  const date = params.get('date') || '';
+  const content = document.getElementById('content');
+  const heroText = document.getElementById('heroText');
+
+  function esc(text) {
+    return String(text == null ? '' : text)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+  }
+
+  function fmtDate(dateText) {
+    const d = new Date(dateText + 'T00:00:00');
+    return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  }
+
+  function fmtNum(value, digits) {
+    const n = Number(value);
+    if (!Number.isFinite(n)) return '—';
+    return typeof digits === 'number' ? n.toFixed(digits) : String(n);
+  }
+
+  function pillClass(reason, trace) {
+    if (reason === 'action_accepted' && trace?.result?.correct) return 'pill good';
+    if (reason === 'action_accepted') return 'pill warn';
+    if (reason && reason.includes('forced')) return 'pill warn';
+    if (reason === 'api_rejected' || reason === 'model_call_error' || reason === 'invalid_action_json') return 'pill bad';
+    return 'pill';
+  }
+
+  function formatAction(action) {
+    if (!action || typeof action !== 'object') return '—';
+    if (action.action === 'swap') return `/swap ${action.a?.join(' ')} ${action.b?.join(' ')}`;
+    if (action.action === 'guess') return `/guess ${action.kind} ${action.index}`;
+    return JSON.stringify(action);
+  }
+
+  function renderBoard(board) {
+    if (!Array.isArray(board) || board.length !== 4) return '<div class="mini">No board snapshot stored.</div>';
+    return `<div class="board">${board.flat().map((cell) => `<div class="tile">${esc(cell)}</div>`).join('')}</div>`;
+  }
+
+  function renderSolvedDetail(detail) {
+    if (!detail) return '<div class="mini">No solved detail stored.</div>';
+    const rows = Array.isArray(detail.rows) ? detail.rows.filter(Boolean) : [];
+    const cols = Array.isArray(detail.cols) ? detail.cols.filter(Boolean) : [];
+    return `
+      <div class="meta-list">
+        <div class="meta-row"><strong>Solved rows</strong><span>${rows.length ? rows.map((x) => esc(`${x.index}: ${x.label}`)).join('<br>') : '—'}</span></div>
+        <div class="meta-row"><strong>Solved cols</strong><span>${cols.length ? cols.map((x) => esc(`${x.index}: ${x.label}`)).join('<br>') : '—'}</span></div>
+      </div>
+    `;
+  }
+
+  function renderTrace(trace) {
+    if (!Array.isArray(trace) || !trace.length) return '<div class="mini">No compact trace stored for this run.</div>';
+    return `<div class="trace">${trace.map((entry) => `
+      <div class="trace-card">
+        <div class="trace-head">
+          <span class="pill">${esc(`step ${entry.step}`)}</span>
+          <span class="pill">${esc(`attempt ${entry.attempt}`)}</span>
+          <span class="${pillClass(entry.reason, entry)}">${esc(entry.reason || 'unknown')}</span>
+          ${entry.action ? `<span class="pill">${esc(formatAction(entry.action))}</span>` : ''}
+          ${Number.isFinite(Number(entry.strikes)) ? `<span class="pill">${esc(`strikes ${entry.strikes}`)}</span>` : ''}
+          ${Number.isFinite(Number(entry.turn)) ? `<span class="pill">${esc(`turn ${entry.turn}`)}</span>` : ''}
+        </div>
+        ${entry.guessedWords ? `<div class="mini"><strong>Guessed words:</strong> ${entry.guessedWords.map(esc).join(' | ')}</div>` : ''}
+        ${entry.result ? `<div class="mini"><strong>Result:</strong> correct=${esc(!!entry.result.correct)} lost=${esc(!!entry.result.lost)}</div>` : ''}
+        ${entry.apiError ? `<div class="mini"><strong>API error:</strong> ${esc(entry.apiError)}</div>` : ''}
+        ${entry.error ? `<div class="mini"><strong>Error:</strong> ${esc(entry.error)}</div>` : ''}
+        ${entry.modelOutput ? `<pre>${esc(entry.modelOutput)}</pre>` : ''}
+      </div>
+    `).join('')}</div>`;
+  }
+
+  async function load() {
+    if (!model || !date) {
+      content.className = 'error';
+      content.textContent = 'Missing model or date query parameter.';
+      return;
+    }
+
+    heroText.textContent = `${model} on ${fmtDate(date)}`;
+
+    try {
+      const res = await fetch(`/api/v1/competition/benchmark-run-detail?model=${encodeURIComponent(model)}&date=${encodeURIComponent(date)}`, {
+        headers: { accept: 'application/json' }
+      });
+      const data = await res.json();
+      if (!res.ok || !data || data.ok === false) {
+        throw new Error(data && data.error ? data.error : `HTTP ${res.status}`);
+      }
+
+      const run = data.run || {};
+      const metadata = run.metadata || {};
+      const trace = Array.isArray(metadata.transcriptCompact) ? metadata.transcriptCompact : [];
+      const runtime = data.attempt && data.attempt.runtime ? data.attempt.runtime : null;
+      const board = runtime && Array.isArray(runtime.board) ? runtime.board : null;
+      const puzzle = data.puzzle || null;
+
+      content.className = '';
+      content.innerHTML = `
+        <div class="grid">
+          <section class="section">
+            <h2>Run Summary</h2>
+            <div class="stats">
+              <div class="stat"><div class="stat-label">Outcome</div><div class="stat-value">${esc(run.outcome || '—')}</div></div>
+              <div class="stat"><div class="stat-label">Strikes</div><div class="stat-value">${esc(fmtNum(run.strikes))}</div></div>
+              <div class="stat"><div class="stat-label">Turns</div><div class="stat-value">${esc(fmtNum(run.turn_count))}</div></div>
+              <div class="stat"><div class="stat-label">Correct Guesses</div><div class="stat-value">${esc(fmtNum(run.game_correct_guesses))}</div></div>
+            </div>
+          </section>
+          <div class="grid two">
+            <section class="section">
+              <h2>Benchmark Metadata</h2>
+              <div class="meta-list">
+                <div class="meta-row"><strong>Provider</strong><span>${esc(run.provider || '—')}</span></div>
+                <div class="meta-row"><strong>API model</strong><span>${esc(run.api_model || '—')}</span></div>
+                <div class="meta-row"><strong>Prompt version</strong><span>${esc(run.prompt_version || '—')}</span></div>
+                <div class="meta-row"><strong>Reasoning level</strong><span>${esc(run.reasoning_level || '—')}</span></div>
+                <div class="meta-row"><strong>Duration</strong><span>${esc(fmtNum(run.duration_ms))} ms</span></div>
+                <div class="meta-row"><strong>Model API calls</strong><span>${esc(fmtNum(run.model_api_calls))}</span></div>
+                <div class="meta-row"><strong>Invalid actions</strong><span>${esc(fmtNum(run.game_invalid_actions))}</span></div>
+                <div class="meta-row"><strong>Fallback actions</strong><span>${esc(fmtNum(run.game_fallback_actions))}</span></div>
+                <div class="meta-row"><strong>Tokens</strong><span>${esc(fmtNum(run.total_tokens))}</span></div>
+                <div class="meta-row"><strong>Estimated cost</strong><span>${Number.isFinite(Number(run.estimated_cost_usd)) ? `$${Number(run.estimated_cost_usd).toFixed(4)}` : '—'}</span></div>
+                <div class="meta-row"><strong>Prompt hash</strong><span>${esc(metadata.promptHash || '—')}</span></div>
+                <div class="meta-row"><strong>Note</strong><span>${esc(run.note || '—')}</span></div>
+              </div>
+              <div class="hint">This page shows the stored compact trace and telemetry. It is not a full verbatim model chat transcript.</div>
+            </section>
+            <section class="section">
+              <h2>Puzzle</h2>
+              ${puzzle ? `
+                <div class="meta-list">
+                  <div class="meta-row"><strong>Rows</strong><span>${puzzle.rows.map(esc).join('<br>')}</span></div>
+                  <div class="meta-row"><strong>Cols</strong><span>${puzzle.cols.map(esc).join('<br>')}</span></div>
+                </div>
+              ` : '<div class="mini">Puzzle data unavailable.</div>'}
+            </section>
+          </div>
+          <div class="grid two">
+            <section class="section">
+              <h2>Final Board Snapshot</h2>
+              ${renderBoard(board)}
+            </section>
+            <section class="section">
+              <h2>Solved Labels</h2>
+              ${renderSolvedDetail(data.result && data.result.solved_detail)}
+            </section>
+          </div>
+          <section class="section">
+            <h2>Compact Trace</h2>
+            ${renderTrace(trace)}
+          </section>
+        </div>
+      `;
+    } catch (err) {
+      content.className = 'error';
+      content.textContent = err && err.message ? err.message : String(err);
+    }
+  }
+
+  load();
+})();
+</script>
+</body>
+</html>

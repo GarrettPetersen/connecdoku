@@ -61,6 +61,15 @@ function parseIsoDate(s) {
   return dt;
 }
 
+function safeJsonParse(text, fallback = null) {
+  if (typeof text !== "string" || !text.trim()) return fallback;
+  try {
+    return JSON.parse(text);
+  } catch {
+    return fallback;
+  }
+}
+
 function wrapIndex(i, n) {
   const m = i % n;
   return m < 0 ? m + n : m;
@@ -1651,6 +1660,92 @@ async function getBenchmarkRuns(env, url) {
   return sendJson(200, { ok: true, runs: rows.results || [] });
 }
 
+async function getBenchmarkRunDetail(env, url) {
+  await ensureDb(env);
+  const model = String(url.searchParams.get("model") || "").trim();
+  const puzzleDate = String(url.searchParams.get("date") || "").trim();
+
+  if (!model) return sendJson(400, { ok: false, error: "model is required." });
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(puzzleDate)) {
+    return sendJson(400, { ok: false, error: "date must be YYYY-MM-DD." });
+  }
+
+  const run = await env.DB.prepare(
+    `SELECT
+      id, model, puzzle_date, provider, api_model, model_version, reasoning_level, prompt_version,
+      run_started_at, run_finished_at, duration_ms,
+      model_api_calls, model_api_errors, model_latency_ms_total, model_latency_ms_max,
+      game_actions_total, game_swaps, game_guesses, game_correct_guesses, game_incorrect_guesses,
+      game_invalid_actions, game_fallback_actions,
+      input_tokens, output_tokens, total_tokens, estimated_cost_usd,
+      outcome, strikes, turn_count, note, error_text, metadata_json, submitted_at
+     FROM competition_benchmark_runs
+     WHERE model = ? AND puzzle_date = ?
+     LIMIT 1`
+  ).bind(model, puzzleDate).first();
+
+  if (!run) {
+    return sendJson(404, { ok: false, error: "Benchmark run not found." });
+  }
+
+  const result = await env.DB.prepare(
+    `SELECT id, outcome, strikes, turn_count, solved_detail_json, notes, submitted_at
+     FROM competition_results
+     WHERE model = ? AND puzzle_date = ?
+     LIMIT 1`
+  ).bind(model, puzzleDate).first();
+
+  const attempt = await env.DB.prepare(
+    `SELECT runtime_json, updated_at, finished, outcome, strikes, turn_count
+     FROM competition_attempts
+     WHERE model = ? AND puzzle_date = ?
+     LIMIT 1`
+  ).bind(model, puzzleDate).first();
+
+  const dt = parseIsoDate(puzzleDate);
+  let puzzle = null;
+  if (dt) {
+    const dayIndex = localDayIndexForDate(dt);
+    if (dayIndex >= 0) {
+      const dataIndex = wrapIndex(dayIndex, puzzles.length);
+      const context = buildPuzzleContext(dayIndex, dataIndex);
+      puzzle = {
+        date: context.puzzleDate,
+        dayIndex,
+        dataIndex,
+        rows: context.puzzle.rows,
+        cols: context.puzzle.cols,
+        words: context.puzzle.words,
+      };
+    }
+  }
+
+  const metadata = safeJsonParse(run.metadata_json, {}) || {};
+  const solvedDetail = safeJsonParse(result?.solved_detail_json, null);
+  const runtimeSnapshot = safeJsonParse(attempt?.runtime_json, null);
+
+  return sendJson(200, {
+    ok: true,
+    run: {
+      ...run,
+      metadata,
+    },
+    result: result ? {
+      ...result,
+      solved_detail: solvedDetail,
+    } : null,
+    attempt: attempt ? {
+      updated_at: attempt.updated_at,
+      finished: attempt.finished,
+      outcome: attempt.outcome,
+      strikes: attempt.strikes,
+      turn_count: attempt.turn_count,
+      runtime: runtimeSnapshot,
+    } : null,
+    puzzle,
+  });
+}
+
 async function routeRequest(req, env) {
   try {
     if (req.method === "OPTIONS") return sendJson(204, { ok: true });
@@ -1840,6 +1935,10 @@ async function routeRequest(req, env) {
       return getBenchmarkRuns(env, url);
     }
 
+    if (method === "GET" && url.pathname === "/api/v1/competition/benchmark-run-detail") {
+      return getBenchmarkRunDetail(env, url);
+    }
+
     if (method === "POST" && url.pathname === "/api/v1/competition/benchmark-run") {
       if (!requireAdmin(req, env)) return sendJson(403, { ok: false, error: "Forbidden." });
       const body = await parseBody(req);
@@ -1898,6 +1997,7 @@ async function routeRequest(req, env) {
         "POST /api/v1/competition/submit",
         "GET  /api/v1/competition/leaderboard",
         "GET  /api/v1/competition/benchmark",
+        "GET  /api/v1/competition/benchmark-run-detail",
         "GET  /api/v1/competition/benchmark-runs",
         "POST /api/v1/competition/benchmark-run",
         "POST /api/v1/competition/delete-result",
