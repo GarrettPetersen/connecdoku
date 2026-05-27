@@ -167,7 +167,7 @@ function appendScratchpad(existing, update, maxChars = SCRATCHPAD_MAX_CHARS) {
 
 function isTraceModel(cfg) {
   const id = String(cfg?.competitionModel || cfg?.resolvedApiModel || "").toLowerCase();
-  return id.includes("gpt-5.4");
+  return id.includes("gpt-5.4") || id.includes("gpt-5.5");
 }
 
 function traceModelCall(cfg, message) {
@@ -179,7 +179,8 @@ function traceModelCall(cfg, message) {
 function useResponsesFirstForOpenAi(model) {
   const forceResponses = String(process.env.OPENAI_BENCH_FORCE_RESPONSES || "").toLowerCase();
   if (forceResponses === "1" || forceResponses === "true" || forceResponses === "yes") return true;
-  return String(model || "").toLowerCase().includes("gpt-5.4");
+  const id = String(model || "").toLowerCase();
+  return id.includes("gpt-5.4") || id.includes("gpt-5.5");
 }
 
 function extractTextFromOpenAIStyle(respJson) {
