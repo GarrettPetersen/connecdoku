@@ -10,7 +10,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 <style>
-:root { --bg:#fafafa; --ink:#222; --muted:#6b7280; --card:#fff; --line:#d4d5d6; --accent:#4caf50; --tile:#f6f7f8; }
+:root {
+  --bg:#fafafa;
+  --ink:#222;
+  --muted:#6b7280;
+  --card:#fff;
+  --line:#d4d5d6;
+  --accent:#4caf50;
+  --tile:#f6f7f8;
+  --s0:#b6e7b2;
+  --s1:#ffe680;
+  --s2:#ffb06a;
+  --s3:#ff8a65;
+  --s4:#e57373;
+}
 * { box-sizing: border-box; }
 body { margin: 0; font-family: system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif; color: var(--ink); background: var(--bg); }
 .shell { max-width: 1180px; margin: 24px auto 40px; padding: 0 12px; }
@@ -31,6 +44,11 @@ h2 { font-size: 22px; margin-bottom: 10px; }
 .mini { color: var(--muted); font-size: 13px; }
 .board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .tile { min-height: 76px; padding: 8px; border-radius: 12px; background: var(--tile); border: 2px solid var(--line); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 14px; line-height: 1.2; }
+.tile.lock0 { background: var(--s0); }
+.tile.lock1 { background: var(--s1); }
+.tile.lock2 { background: var(--s2); }
+.tile.lock3 { background: var(--s3); }
+.tile.lock4 { background: var(--s4); }
 .meta-list { display: grid; gap: 8px; }
 .meta-row { display: grid; grid-template-columns: 160px 1fr; gap: 10px; align-items: start; font-size: 14px; }
 .meta-row strong { color: #111827; }
@@ -43,6 +61,9 @@ h2 { font-size: 22px; margin-bottom: 10px; }
 .pill.bad { background: #ffe0e0; color: #9b1c1c; }
 pre { white-space: pre-wrap; word-break: break-word; background: #f6f7f8; border-radius: 10px; padding: 10px; font-size: 12px; margin: 8px 0 0; }
 .hint { color: var(--muted); font-size: 13px; margin-top: 8px; }
+.actions { display: flex; justify-content: center; margin-top: 14px; }
+.back-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border-radius: 8px; background: var(--accent); color: #fff; font-weight: 700; }
+.back-btn:hover { text-decoration: none; filter: brightness(.96); }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .error, .loading { border-radius: 12px; padding: 14px; font-size: 14px; }
@@ -106,9 +127,28 @@ a:hover { text-decoration: underline; }
     return JSON.stringify(action);
   }
 
-  function renderBoard(board) {
+  function solvedLevelForCell(detail, r, c) {
+    const row = detail && Array.isArray(detail.rows) ? detail.rows[r] : null;
+    const col = detail && Array.isArray(detail.cols) ? detail.cols[c] : null;
+    const rowLevel = row && Number.isInteger(Number(row.strikeLevel)) ? Number(row.strikeLevel) : null;
+    const colLevel = col && Number.isInteger(Number(col.strikeLevel)) ? Number(col.strikeLevel) : null;
+    if (rowLevel !== null && colLevel !== null) return Math.min(rowLevel, colLevel);
+    if (rowLevel !== null) return rowLevel;
+    if (colLevel !== null) return colLevel;
+    return null;
+  }
+
+  function renderBoard(board, detail) {
     if (!Array.isArray(board) || board.length !== 4) return '<div class="mini">No board snapshot stored.</div>';
-    return `<div class="board">${board.flat().map((cell) => `<div class="tile">${esc(cell)}</div>`).join('')}</div>`;
+    const cells = [];
+    for (let r = 0; r < 4; r += 1) {
+      for (let c = 0; c < 4; c += 1) {
+        const level = solvedLevelForCell(detail, r, c);
+        const klass = level === null ? 'tile' : `tile lock${Math.max(0, Math.min(4, level))}`;
+        cells.push(`<div class="${klass}">${esc(board[r][c])}</div>`);
+      }
+    }
+    return `<div class="board">${cells.join('')}</div>`;
   }
 
   function renderSolvedDetail(detail) {
@@ -168,6 +208,7 @@ a:hover { text-decoration: underline; }
       const runtime = data.attempt && data.attempt.runtime ? data.attempt.runtime : null;
       const board = runtime && Array.isArray(runtime.board) ? runtime.board : null;
       const puzzle = data.puzzle || null;
+      const solvedDetail = data.result && data.result.solved_detail ? data.result.solved_detail : null;
 
       content.className = '';
       content.innerHTML = `
@@ -213,17 +254,20 @@ a:hover { text-decoration: underline; }
           <div class="grid two">
             <section class="section">
               <h2>Final Board Snapshot</h2>
-              ${renderBoard(board)}
+              ${renderBoard(board, solvedDetail)}
             </section>
             <section class="section">
               <h2>Solved Labels</h2>
-              ${renderSolvedDetail(data.result && data.result.solved_detail)}
+              ${renderSolvedDetail(solvedDetail)}
             </section>
           </div>
           <section class="section">
             <h2>Compact Trace</h2>
             ${renderTrace(trace)}
           </section>
+          <div class="actions">
+            <a class="back-btn" href="benchmark.html">Back to benchmark</a>
+          </div>
         </div>
       `;
     } catch (err) {

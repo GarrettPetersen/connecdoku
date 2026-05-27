@@ -224,6 +224,44 @@ table {
   cursor: default;
   position: relative;
 }
+.diag-cell-btn {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(15, 23, 42, 0.22);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.58);
+  color: rgba(15, 23, 42, 0.7);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.62;
+  padding: 0;
+}
+.diag-cell-btn:hover,
+.diag-cell-btn.active {
+  opacity: 1;
+  background: #fff;
+  color: #111827;
+}
+.diag-pop {
+  position: absolute;
+  top: 23px;
+  right: 3px;
+  z-index: 5;
+  padding: 5px 7px;
+  border-radius: 8px;
+  background: rgba(17, 24, 39, 0.94);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 6px 14px rgba(2, 6, 23, 0.28);
+  pointer-events: none;
+}
 .cell.empty {
   color: #a3a3a3;
   background: #fafafa;
@@ -258,14 +296,6 @@ table {
 .loading { background: #f6f7f8; color: #4b5563; }
 .error { background: #fff3f3; color: #9b1c1c; }
 .empty-state { background: #f6f7f8; color: #6b7280; }
-.diag-toast {
-  margin-top: 10px;
-  padding: 9px 11px;
-  border-radius: 10px;
-  background: #f6f7f8;
-  color: #4b5563;
-  font-size: 12px;
-}
 .footer {
   margin-top: 30px;
   padding-top: 16px;
@@ -394,37 +424,11 @@ table {
   const scoreChartMeta = document.getElementById('scoreChartMeta');
   const matrixMeta = document.getElementById('matrixMeta');
   const liveMeta = document.getElementById('liveMeta');
-  const matrixSection = document.getElementById('matrixSection');
-  const heroKicker = document.querySelector('.hero .kicker');
   const tooltipEl = document.createElement('div');
   tooltipEl.className = 'floating-tooltip';
   document.body.appendChild(tooltipEl);
   let tooltipTarget = null;
-  let diagArmedUntil = 0;
-
-  function showDiagToast(text) {
-    let toast = document.getElementById('diagToast');
-    if (!toast) {
-      toast = document.createElement('div');
-      toast.id = 'diagToast';
-      toast.className = 'diag-toast';
-      matrixSection.appendChild(toast);
-    }
-    toast.textContent = text;
-    window.clearTimeout(showDiagToast._timer);
-    showDiagToast._timer = window.setTimeout(() => {
-      if (toast) toast.remove();
-    }, 5000);
-  }
-
-  function armDiagnostics() {
-    diagArmedUntil = Date.now() + 10000;
-    showDiagToast('Diagnostic mode armed for 10 seconds. Click any populated matrix cell to inspect that run.');
-  }
-
-  function diagnosticsArmed() {
-    return Date.now() < diagArmedUntil;
-  }
+  let expandedDiagButton = null;
 
   function placeTooltip(target) {
     if (!target) return;
@@ -469,6 +473,46 @@ table {
     cell.addEventListener('focus', () => showTooltip(cell));
     cell.addEventListener('mouseleave', hideTooltip);
     cell.addEventListener('blur', hideTooltip);
+  }
+
+  function closeExpandedDiag(exceptButton) {
+    if (!expandedDiagButton || expandedDiagButton === exceptButton) return;
+    const priorCell = expandedDiagButton.closest('.cell');
+    expandedDiagButton.classList.remove('active');
+    expandedDiagButton.textContent = 'i';
+    if (priorCell) {
+      const pop = priorCell.querySelector('.diag-pop');
+      if (pop) pop.remove();
+    }
+    expandedDiagButton = null;
+  }
+
+  function wireDiagnosticButton(cell, rec, day) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'diag-cell-btn';
+    btn.textContent = 'i';
+    btn.setAttribute('aria-label', `Inspect ${rec.display_name || rec.model} on ${day}`);
+    btn.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      hideTooltip();
+
+      if (expandedDiagButton === btn) {
+        window.location.href = `benchmark-run.html?model=${encodeURIComponent(rec.model)}&date=${encodeURIComponent(day)}`;
+        return;
+      }
+
+      closeExpandedDiag(btn);
+      expandedDiagButton = btn;
+      btn.classList.add('active');
+      btn.textContent = '>';
+      const pop = document.createElement('div');
+      pop.className = 'diag-pop';
+      pop.textContent = 'open diagnostics';
+      cell.appendChild(pop);
+    });
+    cell.appendChild(btn);
   }
 
   window.addEventListener('scroll', () => {
@@ -827,10 +871,7 @@ table {
           const tip = `${rec.display_name || rec.model}\n${day}\nOutcome: ${rec.outcome}\nStrikes: ${rec.strikes}\nCorrect guesses: ${Number.isFinite(cg) ? cg : '—'}\nTurns: ${rec.turn_count}\nNote: ${note}`;
           cell.setAttribute('data-tip', tip);
           wireCellTooltip(cell);
-          cell.addEventListener('click', () => {
-            if (!diagnosticsArmed()) return;
-            window.location.href = `benchmark-run.html?model=${encodeURIComponent(rec.model)}&date=${encodeURIComponent(day)}`;
-          });
+          wireDiagnosticButton(cell, rec, day);
 
           td.appendChild(cell);
         }
@@ -931,7 +972,7 @@ table {
 
   load();
   setInterval(load, 45000);
-  if (heroKicker) heroKicker.addEventListener('click', armDiagnostics);
+  document.addEventListener('click', () => closeExpandedDiag(null));
 })();
 </script>
 </body>
