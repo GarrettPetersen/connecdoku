@@ -14,6 +14,7 @@ const MAX_STEPS_DEFAULT = 64;
 const MAX_ACTION_RETRIES = 3;
 const NOTE_MAX_CHARS = 500;
 const SCRATCHPAD_MAX_CHARS = 50000;
+const TRACE_MODEL_OUTPUT_MAX_CHARS = 8000;
 const TRACE_LIMIT = 200;
 const CURSOR_POLL_MS_DEFAULT = 5000;
 const CURSOR_TIMEOUT_MS_DEFAULT = 15 * 60 * 1000;
@@ -932,7 +933,7 @@ async function runSingleModel(opts, modelCfg) {
             step,
             attempt,
             reason: "invalid_action_json",
-            modelOutput: trimText(modelRespText, 280),
+            modelOutput: trimText(modelRespText, TRACE_MODEL_OUTPUT_MAX_CHARS),
           });
           if (attempt < MAX_ACTION_RETRIES - 1) stats.gameFallbackActions += 1;
           continue;
@@ -997,7 +998,7 @@ async function runSingleModel(opts, modelCfg) {
             reason: "action_accepted",
             action: cmd,
             guessedWords,
-            modelOutput: trimText(modelRespText, 280),
+            modelOutput: trimText(modelRespText, TRACE_MODEL_OUTPUT_MAX_CHARS),
             result: {
               correct: !!playResp.json?.result?.correct,
               lost: !!playResp.json?.result?.lost,
@@ -1020,7 +1021,7 @@ async function runSingleModel(opts, modelCfg) {
             reason: "api_rejected",
             action: lastAction || action,
             guessedWords,
-            modelOutput: trimText(modelRespText, 280),
+            modelOutput: trimText(modelRespText, TRACE_MODEL_OUTPUT_MAX_CHARS),
             apiError,
           });
           // A syntactically valid action was proposed; surface game feedback and move on.
