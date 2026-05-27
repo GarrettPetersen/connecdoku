@@ -1023,7 +1023,7 @@ async function runSingleModel(opts, modelCfg) {
     return resp;
   }
 
-  const startResp = await postGame(`/api/v1/competition/start`, {
+  let startResp = await postGame(`/api/v1/competition/start`, {
     model: modelCfg.competitionModel,
     password: modelCfg.password,
     date: opts.date,
@@ -1032,7 +1032,7 @@ async function runSingleModel(opts, modelCfg) {
   if (!startResp.ok) {
     throw new Error(`start failed: ${startResp.json?.error || startResp.status}`);
   }
-  const startClass = classifyCompetitionAttempt(startResp.json);
+  let startClass = classifyCompetitionAttempt(startResp.json);
   if (startClass.finished) {
     console.log(
       `Skipping ${modelCfg.displayName}: locked attempt already finished ` +
@@ -1052,6 +1052,29 @@ async function runSingleModel(opts, modelCfg) {
       note: "Skipped: locked attempt already finished.",
       skipped: true,
     };
+  }
+  if (!startClass.pristine) {
+    if (!adminKey) {
+      assertFreshCompetitionAttempt(startResp.json, modelCfg.competitionModel, opts.date);
+    }
+    console.log(
+      `Resetting stale unfinished attempt for ${modelCfg.displayName}: ` +
+      `turn=${startClass.turnCount}, solved=${startClass.solvedCount}, strikes=${startClass.strikes}.`
+    );
+    const cleanup = await cleanupAttemptOnFailure(apiBase, adminKey, modelCfg.competitionModel, opts.date);
+    if (!cleanup.ok) {
+      throw new Error(`Failed to reset stale unfinished attempt: ${cleanup.error || cleanup.reason || "unknown"}`);
+    }
+    startResp = await postGame(`/api/v1/competition/start`, {
+      model: modelCfg.competitionModel,
+      password: modelCfg.password,
+      date: opts.date,
+    });
+    if (!startResp.ok) {
+      throw new Error(`restart after stale attempt cleanup failed: ${startResp.json?.error || startResp.status}`);
+    }
+    startClass = classifyCompetitionAttempt(startResp.json);
+    assertFreshCompetitionAttempt(startResp.json, modelCfg.competitionModel, opts.date);
   }
 
   let state = startResp.json.state;
