@@ -164,6 +164,17 @@ function appendScratchpad(existing, update, maxChars = SCRATCHPAD_MAX_CHARS) {
   return joined.slice(joined.length - maxChars);
 }
 
+function isTraceModel(cfg) {
+  const id = String(cfg?.competitionModel || cfg?.resolvedApiModel || "").toLowerCase();
+  return id.includes("gpt-5.4");
+}
+
+function traceModelCall(cfg, message) {
+  if (!isTraceModel(cfg)) return;
+  const label = String(cfg?.displayName || cfg?.competitionModel || cfg?.resolvedApiModel || "model");
+  console.log(`[trace:${label}] ${message}`);
+}
+
 function extractTextFromOpenAIStyle(respJson) {
   const choice = respJson?.choices?.[0];
   const msg = choice?.message;
@@ -715,16 +726,20 @@ function isLikelyInfraError(message) {
   );
 }
 
-async function postOpenAiWithRetries(url, body, apiKey, timeoutMs) {
+async function postOpenAiWithRetries(url, body, apiKey, timeoutMs, trace = null) {
   const maxAttempts = Math.max(1, Number(process.env.OPENAI_BENCH_MAX_RETRIES || 4));
   let lastErr = null;
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     try {
+      if (trace) trace(`POST ${url} attempt ${attempt}/${maxAttempts} start timeout=${timeoutMs}ms`);
       const resp = await postJson(url, body, { authorization: `Bearer ${apiKey}` }, timeoutMs);
+      if (trace) trace(`POST ${url} attempt ${attempt}/${maxAttempts} done status=${resp.status} ok=${resp.ok} elapsed=${resp.elapsedMs}ms`);
       if (resp.ok) return resp;
       const msg = resp.json?.error?.message || resp.json?.error || `HTTP ${resp.status}`;
       if (attempt < maxAttempts && isOpenAiTransientStatus(resp.status)) {
+        if (trace) trace(`POST ${url} attempt ${attempt}/${maxAttempts} retryable status=${resp.status}: ${msg}`);
         const delayMs = parseRetryDelayMs(msg, Math.min(30000, 4000 * attempt));
+        if (trace) trace(`POST ${url} attempt ${attempt}/${maxAttempts} sleeping ${delayMs}ms before retry`);
         await sleep(delayMs + Math.floor(Math.random() * 800));
         continue;
       }
@@ -732,9 +747,11 @@ async function postOpenAiWithRetries(url, body, apiKey, timeoutMs) {
     } catch (e) {
       const msg = String(e?.message || e || "");
       lastErr = msg;
+      if (trace) trace(`POST ${url} attempt ${attempt}/${maxAttempts} threw: ${msg}`);
       const timeoutLike = msg.includes("Request timeout");
       if (attempt < maxAttempts && timeoutLike) {
         const delayMs = Math.min(30000, 4000 * attempt);
+        if (trace) trace(`POST ${url} attempt ${attempt}/${maxAttempts} sleeping ${delayMs}ms after timeout`);
         await sleep(delayMs + Math.floor(Math.random() * 800));
         continue;
       }
@@ -749,6 +766,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
   const model = cfg.resolvedApiModel;
   const reasoningLevel = normalizeReasoningLevel(cfg.reasoningLevel || "medium");
   const temperature = Number(cfg.temperature ?? 0.2);
+  const trace = isTraceModel(cfg) ? (message) => traceModelCall(cfg, message) : null;
 
   if (provider === "openai") {
     const apiKey = process.env.OPENAI_API_KEY;
@@ -756,6 +774,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     const forceResponses = String(process.env.OPENAI_BENCH_FORCE_RESPONSES || "").toLowerCase();
     const useResponsesFirst = forceResponses === "1" || forceResponses === "true" || forceResponses === "yes";
     const openAiTimeoutMs = Math.max(httpTimeoutMs(), openAiMinTimeoutMs());
+    if (trace) trace(`begin mode=${mode} model=${model} reasoning=${reasoningLevel} temperature=${Number.isFinite(temperature) ? temperature : "n/a"} timeout=${openAiTimeoutMs}ms`);
     if (useResponsesFirst) {
       const responsesBody = {
         model,
@@ -764,10 +783,11 @@ async function callProviderModel(cfg, prompt, mode = "action") {
           { role: "user", content: prompt },
         ],
       };
-      const rr = await postOpenAiWithRetries("https://api.openai.com/v1/responses", responsesBody, apiKey, openAiTimeoutMs);
+      const rr = await postOpenAiWithRetries("https://api.openai.com/v1/responses", responsesBody, apiKey, openAiTimeoutMs, trace);
       if (!rr.ok) {
         throw new Error(`OpenAI responses error (${rr.status}): ${rr.json?.error?.message || rr.json?.error || "unknown"}`);
       }
+      if (trace) trace(`end mode=${mode} source=responses elapsed=${rr.elapsedMs}ms`);
       return {
         text: extractTextFromOpenAIResponses(rr.json),
         usage: normalizeUsage("openai", rr.json),
@@ -790,18 +810,21 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     // Some models support this; harmless if ignored.
     body.reasoning_effort = reasoningLevel;
 
-    let resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs);
+    let resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs, trace);
     if (!resp.ok && isOpenAiUnsupportedTemperature(resp)) {
+      if (trace) trace(`chat/completions unsupported temperature; retrying without temperature`);
       body = { ...body };
       delete body.temperature;
-      resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs);
+      resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs, trace);
     }
     if (!resp.ok && isOpenAiUnsupportedReasoningEffort(resp)) {
+      if (trace) trace(`chat/completions unsupported reasoning_effort; retrying without reasoning_effort`);
       body = { ...body };
       delete body.reasoning_effort;
-      resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs);
+      resp = await postOpenAiWithRetries("https://api.openai.com/v1/chat/completions", body, apiKey, openAiTimeoutMs, trace);
     }
     if (!resp.ok && isOpenAiNotChatModel(resp)) {
+      if (trace) trace(`chat/completions reported not-a-chat-model; trying responses endpoint`);
       const responsesBody = {
         model,
         input: [
@@ -809,10 +832,11 @@ async function callProviderModel(cfg, prompt, mode = "action") {
           { role: "user", content: prompt },
         ],
       };
-      const rr = await postOpenAiWithRetries("https://api.openai.com/v1/responses", responsesBody, apiKey, openAiTimeoutMs);
+      const rr = await postOpenAiWithRetries("https://api.openai.com/v1/responses", responsesBody, apiKey, openAiTimeoutMs, trace);
       if (!rr.ok) {
         throw new Error(`OpenAI responses error (${rr.status}): ${rr.json?.error?.message || rr.json?.error || "unknown"}`);
       }
+      if (trace) trace(`end mode=${mode} source=responses elapsed=${rr.elapsedMs}ms`);
       return {
         text: extractTextFromOpenAIResponses(rr.json),
         usage: normalizeUsage("openai", rr.json),
@@ -821,6 +845,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
       };
     }
     if (!resp.ok) throw new Error(`OpenAI error (${resp.status}): ${resp.json?.error?.message || resp.json?.error || "unknown"}`);
+    if (trace) trace(`end mode=${mode} source=chat elapsed=${resp.elapsedMs}ms`);
     return {
       text: extractTextFromOpenAIStyle(resp.json),
       usage: normalizeUsage("openai", resp.json),
@@ -1023,11 +1048,13 @@ async function runSingleModel(opts, modelCfg) {
       let action = null;
       let modelRespText = "";
       try {
+        traceModelCall(modelCfg, `step=${step} attempt=${attempt} action call start`);
         const modelResp = await withHardTimeout(
           callProviderModel(modelCfg, prompt, "action"),
           modelCallHardTimeoutMs(),
           "model call"
         );
+        traceModelCall(modelCfg, `step=${step} attempt=${attempt} action call returned latency=${modelResp.latencyMs}ms`);
         stats.modelApiCalls += 1;
         stats.modelLatencyMsTotal += modelResp.latencyMs;
         stats.modelLatencyMsMax = Math.max(stats.modelLatencyMsMax, modelResp.latencyMs);
@@ -1263,19 +1290,21 @@ async function runSingleModel(opts, modelCfg) {
     let noteText = "";
     let noteOk = false;
     const maxAttempts = modelCfg.provider === "moonshot" ? 4 : 3;
-    for (let attempt = 0; attempt < maxAttempts; attempt++) {
-      let prompt = notePrompt;
-      if (attempt === 1) {
-        prompt = buildNoteRepairPrompt(notePrompt, "Previous note was prompt echo or otherwise invalid.", noteText);
-      } else if (attempt >= 2) {
-        prompt = buildForcedOneSentenceNotePrompt(state, stats);
-      }
-      const noteResp = await withHardTimeout(
-        callProviderModel(modelCfg, prompt, "note"),
-        modelCallHardTimeoutMs(),
-        "note call"
-      );
-      stats.modelApiCalls += 1;
+      for (let attempt = 0; attempt < maxAttempts; attempt++) {
+        let prompt = notePrompt;
+        if (attempt === 1) {
+          prompt = buildNoteRepairPrompt(notePrompt, "Previous note was prompt echo or otherwise invalid.", noteText);
+        } else if (attempt >= 2) {
+          prompt = buildForcedOneSentenceNotePrompt(state, stats);
+        }
+        traceModelCall(modelCfg, `note attempt=${attempt} start`);
+        const noteResp = await withHardTimeout(
+          callProviderModel(modelCfg, prompt, "note"),
+          modelCallHardTimeoutMs(),
+          "note call"
+        );
+        traceModelCall(modelCfg, `note attempt=${attempt} returned latency=${noteResp.latencyMs}ms`);
+        stats.modelApiCalls += 1;
       stats.modelLatencyMsTotal += noteResp.latencyMs;
       stats.modelLatencyMsMax = Math.max(stats.modelLatencyMsMax, noteResp.latencyMs);
       stats.inputTokens += Number(noteResp.usage.inputTokens || 0);
