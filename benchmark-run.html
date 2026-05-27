@@ -55,6 +55,11 @@ h2 { font-size: 22px; margin-bottom: 10px; }
 .trace { display: grid; gap: 10px; }
 .trace-card { border: 1px solid #ececec; border-radius: 12px; padding: 12px; background: #fcfcfc; }
 .trace-head { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.command-list { display: grid; gap: 8px; margin-top: 8px; }
+.command-row { border-left: 4px solid #d4d5d6; padding: 6px 8px; background: #fff; border-radius: 8px; }
+.command-row.good { border-left-color: #4caf50; }
+.command-row.warn { border-left-color: #ffb06a; }
+.command-row.bad { border-left-color: #c62828; }
 .pill { display: inline-flex; align-items: center; padding: 4px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; background: #eef2f7; color: #334155; }
 .pill.good { background: #dff3df; color: #176534; }
 .pill.warn { background: #fff1cf; color: #8a5a00; }
@@ -120,6 +125,12 @@ a:hover { text-decoration: underline; }
     return 'pill';
   }
 
+  function commandClass(entry) {
+    if (entry?.reason === 'action_accepted' && entry?.result?.correct) return 'command-row good';
+    if (entry?.reason === 'api_rejected' || entry?.reason === 'model_call_error' || entry?.reason === 'invalid_action_json') return 'command-row bad';
+    return 'command-row warn';
+  }
+
   function formatAction(action) {
     if (!action || typeof action !== 'object') return '—';
     if (action.action === 'swap') return `/swap ${action.a?.join(' ')} ${action.b?.join(' ')}`;
@@ -163,13 +174,40 @@ a:hover { text-decoration: underline; }
     `;
   }
 
-  function renderTrace(trace) {
-    if (!Array.isArray(trace) || !trace.length) return '<div class="mini">No compact trace stored for this run.</div>';
-    return `<div class="trace">${trace.map((entry) => `
-      <div class="trace-card">
+  function traceGroupKey(entry) {
+    const output = String(entry?.modelOutput || '');
+    if (output) return `${entry.step}::${entry.attempt}::${entry.reason}::${output}`;
+    return `${entry.step}::${entry.attempt}::${entry.reason}::${entry.error || entry.apiError || ''}`;
+  }
+
+  function groupTrace(trace) {
+    const groups = [];
+    const byKey = new Map();
+    trace.forEach((entry) => {
+      const key = traceGroupKey(entry);
+      let group = byKey.get(key);
+      if (!group) {
+        group = {
+          step: entry.step,
+          attempt: entry.attempt,
+          reason: entry.reason,
+          modelOutput: entry.modelOutput || '',
+          error: entry.error || '',
+          apiError: entry.apiError || '',
+          entries: [],
+        };
+        byKey.set(key, group);
+        groups.push(group);
+      }
+      group.entries.push(entry);
+    });
+    return groups;
+  }
+
+  function renderCommand(entry) {
+    return `
+      <div class="${commandClass(entry)}">
         <div class="trace-head">
-          <span class="pill">${esc(`step ${entry.step}`)}</span>
-          <span class="pill">${esc(`attempt ${entry.attempt}`)}</span>
           <span class="${pillClass(entry.reason, entry)}">${esc(entry.reason || 'unknown')}</span>
           ${entry.action ? `<span class="pill">${esc(formatAction(entry.action))}</span>` : ''}
           ${Number.isFinite(Number(entry.strikes)) ? `<span class="pill">${esc(`strikes ${entry.strikes}`)}</span>` : ''}
@@ -179,7 +217,23 @@ a:hover { text-decoration: underline; }
         ${entry.result ? `<div class="mini"><strong>Result:</strong> correct=${esc(!!entry.result.correct)} lost=${esc(!!entry.result.lost)}</div>` : ''}
         ${entry.apiError ? `<div class="mini"><strong>API error:</strong> ${esc(entry.apiError)}</div>` : ''}
         ${entry.error ? `<div class="mini"><strong>Error:</strong> ${esc(entry.error)}</div>` : ''}
-        ${entry.modelOutput ? `<pre>${esc(entry.modelOutput)}</pre>` : ''}
+      </div>
+    `;
+  }
+
+  function renderTrace(trace) {
+    if (!Array.isArray(trace) || !trace.length) return '<div class="mini">No compact trace stored for this run.</div>';
+    return `<div class="trace">${groupTrace(trace).map((group) => `
+      <div class="trace-card">
+        <div class="trace-head">
+          <span class="pill">${esc(`step ${group.step}`)}</span>
+          <span class="pill">${esc(`attempt ${group.attempt}`)}</span>
+          <span class="pill">${esc(`${group.entries.length} command${group.entries.length === 1 ? '' : 's'}`)}</span>
+        </div>
+        ${group.modelOutput ? `<pre>${esc(group.modelOutput)}</pre>` : ''}
+        ${group.error ? `<div class="mini"><strong>Error:</strong> ${esc(group.error)}</div>` : ''}
+        ${group.apiError ? `<div class="mini"><strong>API error:</strong> ${esc(group.apiError)}</div>` : ''}
+        <div class="command-list">${group.entries.map(renderCommand).join('')}</div>
       </div>
     `).join('')}</div>`;
   }
@@ -262,7 +316,7 @@ a:hover { text-decoration: underline; }
             </section>
           </div>
           <section class="section">
-            <h2>Compact Trace</h2>
+            <h2>Model Messages</h2>
             ${renderTrace(trace)}
           </section>
           <div class="actions">
