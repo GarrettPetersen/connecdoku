@@ -13,6 +13,8 @@ const MAX_ACTION_RETRIES = Math.max(1, Number(process.env.API_BENCH_MAX_ACTION_R
 const NOTE_MAX_CHARS = 500;
 const SCRATCHPAD_MAX_CHARS = 8000;
 const TRACE_MODEL_OUTPUT_MAX_CHARS = 8000;
+const ACTION_MAX_OUTPUT_TOKENS = 512;
+const NOTE_MAX_OUTPUT_TOKENS = 256;
 const TRACE_LIMIT = 200;
 const HTTP_TIMEOUT_MS_DEFAULT = 120000;
 const OPENAI_MIN_TIMEOUT_MS = 240000;
@@ -784,6 +786,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
       if (trace) trace(`using responses endpoint first for model=${model}`);
       const responsesBody = {
         model,
+        max_output_tokens: mode === "note" ? NOTE_MAX_OUTPUT_TOKENS : ACTION_MAX_OUTPUT_TOKENS,
         input: [
           { role: "system", content: mode === "note" ? "Return plain text only." : "You are a careful puzzle solver. Follow the user's command protocol exactly." },
           { role: "user", content: prompt },
@@ -812,6 +815,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     let body = {
       ...baseBody,
       temperature,
+      max_completion_tokens: mode === "note" ? NOTE_MAX_OUTPUT_TOKENS : ACTION_MAX_OUTPUT_TOKENS,
     };
     // Some models support this; harmless if ignored.
     body.reasoning_effort = reasoningLevel;
@@ -865,7 +869,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
     if (!apiKey) throw new Error("ANTHROPIC_API_KEY missing.");
     const body = {
       model,
-      max_tokens: mode === "note" ? 180 : 240,
+      max_tokens: mode === "note" ? NOTE_MAX_OUTPUT_TOKENS : ACTION_MAX_OUTPUT_TOKENS,
       system: "For note mode, plain text only. For action mode, follow the user's command protocol exactly.",
       messages: [{ role: "user", content: prompt }],
     };
@@ -938,7 +942,7 @@ async function callProviderModel(cfg, prompt, mode = "action") {
 
     const body = {
       model,
-      max_tokens: mode === "note" ? 180 : 260,
+      max_tokens: mode === "note" ? NOTE_MAX_OUTPUT_TOKENS : ACTION_MAX_OUTPUT_TOKENS,
       temperature,
       messages: [
         { role: "system", content: "Follow the user's command protocol exactly. For note mode, plain text only." },
