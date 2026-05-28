@@ -57,6 +57,7 @@ Each entry controls:
 
 For reproducibility, set exact model IDs via env vars (preferred):
 - `BENCH_MODEL_GPT_5_5=...`
+- `BENCH_MODEL_OPUS_4_8=...`
 - `BENCH_MODEL_OPUS_4_7=...`
 - etc.
 

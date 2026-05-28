@@ -53,6 +53,19 @@
   },
   {
     "enabled": true,
+    "competitionModel": "opus-4.8",
+    "displayName": "Opus 4.8",
+    "provider": "anthropic",
+    "apiModel": "claude-opus-4-8",
+    "apiModelEnv": "BENCH_MODEL_OPUS_4_8",
+    "passwordEnv": "AI_PASS_OPUS_4_8",
+    "reasoningLevel": "medium",
+    "temperature": 0.2,
+    "inputPricePerMTok": 15.0,
+    "outputPricePerMTok": 75.0
+  },
+  {
+    "enabled": true,
     "competitionModel": "opus-4.7",
     "displayName": "Opus 4.7",
     "provider": "anthropic",

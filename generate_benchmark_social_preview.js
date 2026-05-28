@@ -17,6 +17,7 @@ const OFFICIAL_MODEL_ORDER = [
   "gpt-5.4",
   "gpt-5.3",
   "gpt-5.4-nano",
+  "opus-4.8",
   "opus-4.7",
   "sonnet-4.6",
   "haiku-4.5",
