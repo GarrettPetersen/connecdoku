@@ -279,6 +279,21 @@ table {
   background: #fff;
   color: #111827;
 }
+.inline-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.28);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.74);
+  color: rgba(15, 23, 42, 0.76);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  vertical-align: -2px;
+}
 .cell.empty {
   color: #a3a3a3;
   background: #fafafa;
@@ -389,7 +404,7 @@ table {
 
     <section class="section" id="matrixSection">
       <h2>Daily Results Matrix</h2>
-      <p class="meta" id="matrixMeta">Loading matrix... Hover any cell to see that model's note for the day. Click (i) to inspect a model's reasoning for a specific puzzle.</p>
+      <p class="meta" id="matrixMeta">Loading matrix... Hover any cell to see that model's note for the day. Click <span class="inline-info-icon" aria-label="info">i</span> to inspect a model's reasoning for a specific puzzle.</p>
       <div class="table-wrap" id="matrixWrap">
         <div class="loading">Loading benchmark data...</div>
       </div>
@@ -688,6 +703,10 @@ table {
     return `<button class="leaderboard-sort ${active ? 'active' : ''}" data-sort-key="${key}" data-sort-mark="${mark}" title="${title}">${label}</button>`;
   }
 
+  function matrixHelpText(prefix) {
+    return `${prefix} Hover any cell to see that model's note for the day. Click <span class="inline-info-icon" aria-label="info">i</span> to inspect a model's reasoning for a specific puzzle.`;
+  }
+
   function scoreColor(score, minScore, maxScore) {
     const s = Number(score);
     if (!Number.isFinite(s)) return 'hsl(0 0% 82%)';
@@ -949,7 +968,7 @@ table {
     table.appendChild(tbody);
     matrixWrap.innerHTML = '';
     matrixWrap.appendChild(table);
-    matrixMeta.textContent = `${dates.length} dates × ${models.length} models. Hover any cell to see that model's note for the day. Click (i) to inspect a model's reasoning for a specific puzzle.`;
+    matrixMeta.innerHTML = matrixHelpText(`${dates.length} dates × ${models.length} models.`);
   }
 
   function buildLiveRuns(rows) {
