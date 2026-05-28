@@ -66,6 +66,10 @@ function getEnabledModels(filePath) {
   return arr.filter((m) => m && m.enabled !== false);
 }
 
+function commaSet(value) {
+  return new Set(String(value || "").split(",").map((x) => x.trim()).filter(Boolean));
+}
+
 function requireEnvVars(vars) {
   const missing = [];
   for (const key of vars) {
@@ -175,7 +179,7 @@ async function main() {
   const f = parsed.flags;
 
   if (f.help || f.h) {
-    console.log(`Usage:\n  node scripts/run_all_benchmarks_parallel.mjs [--date YYYY-MM-DD] [--api https://connecdoku.com] [--thinking-level medium] [--max-steps 64] [--concurrency 16] [--lanes direct,cursor] [--only-missing]\n\nNotes:\n  - Runs one benchmark process per model in parallel.\n  - Uses scripts/run_api_benchmark.mjs for direct providers.\n  - Uses scripts/run_cursor_benchmark.mjs for Composer models.\n  - Date is shared across all tasks for fair same-day comparison.\n  - --only-missing skips models that already have a benchmark run for that date.\n`);
+    console.log(`Usage:\n  node scripts/run_all_benchmarks_parallel.mjs [--date YYYY-MM-DD] [--api https://connecdoku.com] [--thinking-level medium] [--max-steps 64] [--concurrency 16] [--lanes direct,cursor] [--only-missing] [--exclude-models id1,id2]\n\nNotes:\n  - Runs one benchmark process per model in parallel.\n  - Uses scripts/run_api_benchmark.mjs for direct providers.\n  - Uses scripts/run_cursor_benchmark.mjs for Composer models.\n  - Date is shared across all tasks for fair same-day comparison.\n  - --only-missing skips models that already have a benchmark run for that date.\n  - --exclude-models skips listed model ids for scheduled rosters without disabling manual runs.\n`);
     return;
   }
 
@@ -188,6 +192,7 @@ async function main() {
   const concurrency = Math.max(1, Math.min(64, Number(f.concurrency || 32)));
   const lanes = String(f.lanes || "direct,cursor").split(",").map((x) => x.trim()).filter(Boolean);
   const onlyMissing = !!f["only-missing"];
+  const excludeModels = commaSet(f["exclude-models"]);
 
   requireEnvVars(["COMPETITION_ADMIN_KEY"]);
 
@@ -201,6 +206,7 @@ async function main() {
   if (lanes.includes("direct")) {
     const direct = getEnabledModels(DIRECT_MODELS_FILE);
     for (const m of direct) {
+      if (excludeModels.has(m.competitionModel)) continue;
       if (onlyMissing && existingForDate.has(m.competitionModel)) continue;
       if (!process.env[m.passwordEnv || ""]) {
         throw new Error(`Missing password env for direct model ${m.competitionModel}: ${m.passwordEnv}`);
@@ -226,6 +232,7 @@ async function main() {
     requireEnvVars(["CURSOR_API_KEY", "CURSOR_BENCH_REPOSITORY"]);
     const cursor = getEnabledModels(CURSOR_MODELS_FILE);
     for (const m of cursor) {
+      if (excludeModels.has(m.competitionModel)) continue;
       if (onlyMissing && existingForDate.has(m.competitionModel)) continue;
       if (!process.env[m.passwordEnv || ""]) {
         throw new Error(`Missing password env for cursor model ${m.competitionModel}: ${m.passwordEnv}`);
@@ -257,6 +264,7 @@ async function main() {
   console.log(`Thinking: ${thinking}`);
   console.log(`Max steps: ${maxSteps}`);
   console.log(`Concurrency: ${concurrency}`);
+  if (excludeModels.size) console.log(`Excluded models: ${[...excludeModels].join(", ")}`);
 
   const started = Date.now();
   const results = await runWithConcurrency(tasks, concurrency);
