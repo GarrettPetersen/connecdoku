@@ -271,30 +271,13 @@ table {
 .cell:focus .diag-cell-btn,
 .cell:focus-within .diag-cell-btn,
 .cell.diag-revealed .diag-cell-btn,
-.diag-cell-btn:hover,
-.diag-cell-btn.active {
+.diag-cell-btn:hover {
   opacity: 1;
   pointer-events: auto;
 }
-.diag-cell-btn:hover,
-.diag-cell-btn.active {
+.diag-cell-btn:hover {
   background: #fff;
   color: #111827;
-}
-.diag-pop {
-  position: absolute;
-  top: 23px;
-  right: 3px;
-  z-index: 5;
-  padding: 5px 7px;
-  border-radius: 8px;
-  background: rgba(17, 24, 39, 0.94);
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  white-space: nowrap;
-  box-shadow: 0 6px 14px rgba(2, 6, 23, 0.28);
-  pointer-events: none;
 }
 .cell.empty {
   color: #a3a3a3;
@@ -406,7 +389,7 @@ table {
 
     <section class="section" id="matrixSection">
       <h2>Daily Results Matrix</h2>
-      <p class="meta" id="matrixMeta">Loading matrix... Hover any cell to see that model's note for the day.</p>
+      <p class="meta" id="matrixMeta">Loading matrix... Hover any cell to see that model's note for the day. Click (i) to inspect a model's reasoning for a specific puzzle.</p>
       <div class="table-wrap" id="matrixWrap">
         <div class="loading">Loading benchmark data...</div>
       </div>
@@ -463,7 +446,6 @@ table {
   tooltipEl.className = 'floating-tooltip';
   document.body.appendChild(tooltipEl);
   let tooltipTarget = null;
-  let expandedDiagButton = null;
   let leaderboardRows = [];
   let leaderboardSort = { key: null, direction: null };
 
@@ -512,19 +494,6 @@ table {
     cell.addEventListener('blur', hideTooltip);
   }
 
-  function closeExpandedDiag(exceptButton) {
-    if (!expandedDiagButton || expandedDiagButton === exceptButton) return;
-    const priorCell = expandedDiagButton.closest('.cell');
-    expandedDiagButton.classList.remove('active');
-    expandedDiagButton.textContent = 'i';
-    if (priorCell) {
-      priorCell.classList.remove('diag-revealed');
-      const pop = priorCell.querySelector('.diag-pop');
-      if (pop) pop.remove();
-    }
-    expandedDiagButton = null;
-  }
-
   function wireDiagnosticButton(cell, rec, day) {
     const btn = document.createElement('button');
     btn.type = 'button';
@@ -535,25 +504,10 @@ table {
       event.preventDefault();
       event.stopPropagation();
       hideTooltip();
-
-      if (expandedDiagButton === btn) {
-        window.location.href = `benchmark-run.html?model=${encodeURIComponent(rec.model)}&date=${encodeURIComponent(day)}`;
-        return;
-      }
-
-      closeExpandedDiag(btn);
-      expandedDiagButton = btn;
-      btn.classList.add('active');
-      btn.textContent = '>';
-      const pop = document.createElement('div');
-      pop.className = 'diag-pop';
-      pop.textContent = 'open diagnostics';
-      cell.appendChild(pop);
+      window.location.href = `benchmark-run.html?model=${encodeURIComponent(rec.model)}&date=${encodeURIComponent(day)}`;
     });
     cell.appendChild(btn);
     cell.addEventListener('click', () => {
-      if (cell.classList.contains('diag-revealed')) return;
-      closeExpandedDiag(null);
       cell.classList.add('diag-revealed');
     });
   }
@@ -995,7 +949,7 @@ table {
     table.appendChild(tbody);
     matrixWrap.innerHTML = '';
     matrixWrap.appendChild(table);
-    matrixMeta.textContent = `${dates.length} dates × ${models.length} models. Hover any cell to see that model's note for the day.`;
+    matrixMeta.textContent = `${dates.length} dates × ${models.length} models. Hover any cell to see that model's note for the day. Click (i) to inspect a model's reasoning for a specific puzzle.`;
   }
 
   function buildLiveRuns(rows) {
