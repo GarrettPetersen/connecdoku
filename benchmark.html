@@ -5,7 +5,7 @@
 <title>AI Benchmark - Connecdoku</title>
 <link rel="icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Connecdoku AI benchmark leaderboard and daily model performance matrix.">
+<meta name="description" content="Connecdoku AI benchmark stats and daily model performance matrix.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://connecdoku.com/benchmark">
 <meta property="og:title" content="Connecdoku AI Benchmark">
@@ -397,8 +397,8 @@ table {
     </section>
 
     <section class="section" id="leaderboardSection">
-      <h2>Model Performance Leaderboard</h2>
-      <p class="meta" id="leaderboardMeta">Loading leaderboard...</p>
+      <h2>Model Stats Table</h2>
+      <p class="meta" id="leaderboardMeta">Loading model stats...</p>
       <div class="table-wrap" id="leaderboardWrap">
         <div class="loading">Loading benchmark data...</div>
       </div>
@@ -1068,11 +1068,11 @@ table {
     } catch (err) {
       const message = err && err.message ? err.message : String(err);
       scoreChartWrap.innerHTML = `<div class="error">Failed to load score chart: ${message}</div>`;
-      leaderboardWrap.innerHTML = `<div class="error">Failed to load leaderboard: ${message}</div>`;
+      leaderboardWrap.innerHTML = `<div class="error">Failed to load model stats: ${message}</div>`;
       matrixWrap.innerHTML = `<div class="error">Failed to load benchmark matrix: ${message}</div>`;
       liveWrap.innerHTML = `<div class="error">Failed to load live run status: ${message}</div>`;
       scoreChartMeta.textContent = 'Unable to load score chart.';
-      leaderboardMeta.textContent = 'Unable to load leaderboard.';
+      leaderboardMeta.textContent = 'Unable to load model stats.';
       matrixMeta.textContent = 'Unable to load matrix.';
       liveMeta.textContent = 'Unable to load live run status.';
     } finally {
