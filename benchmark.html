@@ -160,6 +160,30 @@ table {
   top: 0;
   z-index: 2;
 }
+.leaderboard-sort {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  padding: 0;
+  text-align: left;
+}
+.leaderboard-sort:hover,
+.leaderboard-sort:focus-visible {
+  color: var(--green-dark);
+  outline: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.leaderboard-sort.active::after {
+  content: attr(data-sort-mark);
+  display: inline-block;
+  margin-left: 6px;
+  text-decoration: none;
+}
 .leaderboard tbody tr:hover td { background: #f8fff8; }
 .score-pill {
   display: inline-flex;
@@ -440,6 +464,8 @@ table {
   document.body.appendChild(tooltipEl);
   let tooltipTarget = null;
   let expandedDiagButton = null;
+  let leaderboardRows = [];
+  let leaderboardSort = { key: null, direction: null };
 
   function placeTooltip(target) {
     if (!target) return;
@@ -653,6 +679,61 @@ table {
     return `$${n.toFixed(4)}`;
   }
 
+  function leaderboardSortValue(row, key) {
+    if (key === 'rank') return Number(row.__defaultRank || 0);
+    if (key === 'model') return String(row.display_name || row.model || '').toLowerCase();
+    if (key === 'avg_strikes') return safeAvg(row.avg_strikes);
+    if (key === 'avg_correct_guesses') return safeAvg(row.avg_correct_guesses);
+    if (key === 'avg_duration_ms') return safeAvg(row.avg_duration_ms);
+    if (key === 'avg_estimated_cost_usd') return safeAvg(row.avg_estimated_cost_usd);
+    if (key === 'attempts') return Number(row.attempts || 0);
+    if (key === 'wins') return Number(row.wins || 0);
+    return null;
+  }
+
+  function compareLeaderboardRows(a, b, key, direction) {
+    const av = leaderboardSortValue(a, key);
+    const bv = leaderboardSortValue(b, key);
+    const aMissing = av === null || av === undefined || av === '';
+    const bMissing = bv === null || bv === undefined || bv === '';
+    if (aMissing && bMissing) return Number(a.__defaultRank || 0) - Number(b.__defaultRank || 0);
+    if (aMissing) return 1;
+    if (bMissing) return -1;
+
+    let cmp = 0;
+    if (typeof av === 'string' || typeof bv === 'string') {
+      cmp = String(av).localeCompare(String(bv), undefined, { sensitivity: 'base', numeric: true });
+    } else {
+      cmp = Number(av) - Number(bv);
+    }
+    if (direction === 'desc') cmp *= -1;
+    return cmp || (Number(a.__defaultRank || 0) - Number(b.__defaultRank || 0));
+  }
+
+  function nextLeaderboardSort(key) {
+    if (leaderboardSort.key !== key) return { key, direction: 'asc' };
+    if (leaderboardSort.direction === 'asc') return { key, direction: 'desc' };
+    if (leaderboardSort.direction === 'desc') return { key: null, direction: null };
+    return { key, direction: 'asc' };
+  }
+
+  function sortedLeaderboardRows(rows) {
+    const copy = rows.slice();
+    if (!leaderboardSort.key || !leaderboardSort.direction) {
+      return copy.sort((a, b) => Number(a.__defaultRank || 0) - Number(b.__defaultRank || 0));
+    }
+    return copy.sort((a, b) => compareLeaderboardRows(a, b, leaderboardSort.key, leaderboardSort.direction));
+  }
+
+  function leaderboardHeader(label, key) {
+    const active = leaderboardSort.key === key && leaderboardSort.direction;
+    const mark = leaderboardSort.direction === 'asc' ? '↑' : leaderboardSort.direction === 'desc' ? '↓' : '';
+    const title = active
+      ? `Sorted ${leaderboardSort.direction === 'asc' ? 'ascending' : 'descending'}; click to cycle sort`
+      : 'Click to sort ascending';
+    return `<button class="leaderboard-sort ${active ? 'active' : ''}" data-sort-key="${key}" data-sort-mark="${mark}" title="${title}">${label}</button>`;
+  }
+
   function scoreColor(score, minScore, maxScore) {
     const s = Number(score);
     if (!Number.isFinite(s)) return 'hsl(0 0% 82%)';
@@ -729,7 +810,10 @@ table {
   }
 
   function buildLeaderboard(rows) {
-    const filteredRows = rows.filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')));
+    leaderboardRows = rows
+      .filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')))
+      .map((r, idx) => ({ ...r, __defaultRank: Number.isFinite(Number(r.__defaultRank)) ? Number(r.__defaultRank) : idx }));
+    const filteredRows = sortedLeaderboardRows(leaderboardRows);
 
     if (!filteredRows.length) {
       leaderboardWrap.innerHTML = '<div class="empty-state">No benchmark results yet.</div>';
@@ -742,14 +826,14 @@ table {
     table.innerHTML = `
       <thead>
         <tr>
-          <th>#</th>
-          <th>Model</th>
-          <th>Avg Strikes</th>
-          <th>Avg Correct</th>
-          <th>Avg Time</th>
-          <th>Avg Cost</th>
-          <th>Attempts</th>
-          <th>Wins</th>
+          <th>${leaderboardHeader('#', 'rank')}</th>
+          <th>${leaderboardHeader('Model', 'model')}</th>
+          <th>${leaderboardHeader('Avg Strikes', 'avg_strikes')}</th>
+          <th>${leaderboardHeader('Avg Correct', 'avg_correct_guesses')}</th>
+          <th>${leaderboardHeader('Avg Time', 'avg_duration_ms')}</th>
+          <th>${leaderboardHeader('Avg Cost', 'avg_estimated_cost_usd')}</th>
+          <th>${leaderboardHeader('Attempts', 'attempts')}</th>
+          <th>${leaderboardHeader('Wins', 'wins')}</th>
         </tr>
       </thead>
       <tbody></tbody>
@@ -784,7 +868,16 @@ table {
 
     leaderboardWrap.innerHTML = '';
     leaderboardWrap.appendChild(table);
-    leaderboardMeta.textContent = `${filteredRows.length} models with submitted results.`;
+    leaderboardWrap.querySelectorAll('[data-sort-key]').forEach((button) => {
+      button.addEventListener('click', () => {
+        leaderboardSort = nextLeaderboardSort(button.dataset.sortKey);
+        buildLeaderboard(leaderboardRows);
+      });
+    });
+    const sortText = leaderboardSort.key && leaderboardSort.direction
+      ? ` Sorted ${leaderboardSort.direction === 'asc' ? 'ascending' : 'descending'} by ${leaderboardSort.key.replaceAll('_', ' ')}.`
+      : '';
+    leaderboardMeta.textContent = `${filteredRows.length} models with submitted results.${sortText}`;
   }
 
   function buildMatrix(data) {
