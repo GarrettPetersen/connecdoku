@@ -2,7 +2,7 @@ name: Daily AI Benchmark
 
 on:
   schedule:
-    - cron: '15 8 * * *'
+    - cron: '15 0,8,16 * * *'
   workflow_dispatch:
     inputs:
       date:
