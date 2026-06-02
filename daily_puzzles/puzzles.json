@@ -13758,5 +13758,45 @@
         "Parasite"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1930s",
+      "1940s",
+      "American Civil War",
+      "Cold War"
+    ],
+    "cols": [
+      "Events",
+      "National Leaders",
+      "Presidential Speeches",
+      "Weapons"
+    ],
+    "words": [
+      [
+        "The Great Depression",
+        "Hoover",
+        "Nothing to fear but fear itself",
+        "M1 Garand"
+      ],
+      [
+        "D-Day",
+        "Joseph Stalin",
+        "December 7th, 1941",
+        "Little Boy"
+      ],
+      [
+        "The American Civil War",
+        "Grant",
+        "Four score and seven years ago",
+        "Minié ball"
+      ],
+      [
+        "The Vietnam War",
+        "Eisenhower",
+        "Tear down this wall",
+        "Davy Crockett"
+      ]
+    ]
   }
 ]
