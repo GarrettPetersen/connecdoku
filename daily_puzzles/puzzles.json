@@ -13798,5 +13798,125 @@
         "Davy Crockett"
       ]
     ]
+  },
+  {
+    "rows": [
+      "1810s",
+      "1860s",
+      "D-Day",
+      "The American Revolution"
+    ],
+    "cols": [
+      "Dates",
+      "Place Names",
+      "US Presidents",
+      "War Stories"
+    ],
+    "words": [
+      [
+        "June 18th, 1815",
+        "Tambora",
+        "Monroe",
+        "Master and Commander: The Far Side of the World"
+      ],
+      [
+        "July 1st, 1863",
+        "Gettysburg",
+        "Johnson",
+        "War and Peace"
+      ],
+      [
+        "June 6th, 1944",
+        "Normandy",
+        "Eisenhower",
+        "Saving Private Ryan"
+      ],
+      [
+        "1776",
+        "Concord",
+        "Jefferson",
+        "The Patriot"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Companies",
+      "Drama Stories",
+      "Religious Sites",
+      "WWII Allied Powers"
+    ],
+    "cols": [
+      "Ends with ICA",
+      "Locations in Asia",
+      "Things Brazilian",
+      "Things French"
+    ],
+    "words": [
+      [
+        "Leica",
+        "Fuji",
+        "Amazon",
+        "Airbus"
+      ],
+      [
+        "Out of Africa",
+        "Everest",
+        "The Alchemist",
+        "Les Misérables"
+      ],
+      [
+        "St. Peter's Basilica",
+        "Jerusalem",
+        "Christ the Redeemer",
+        "Mont Saint-Michel"
+      ],
+      [
+        "South Africa",
+        "China",
+        "Brazil",
+        "France"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Companies",
+      "Drama Stories",
+      "Federal Republics",
+      "Religious Sites"
+    ],
+    "cols": [
+      "Ends with ICA",
+      "Locations in Asia",
+      "Locations in Europe",
+      "Things Brazilian"
+    ],
+    "words": [
+      [
+        "Leica",
+        "Fuji",
+        "Olympus",
+        "Amazon"
+      ],
+      [
+        "Out of Africa",
+        "Everest",
+        "Waterloo",
+        "The Alchemist"
+      ],
+      [
+        "South Africa",
+        "Malaysia",
+        "Germany",
+        "Brazil"
+      ],
+      [
+        "St. Peter's Basilica",
+        "Jerusalem",
+        "Vatican City",
+        "Christ the Redeemer"
+      ]
+    ]
   }
 ]

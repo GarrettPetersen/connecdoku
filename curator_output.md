@@ -2,7 +2,7 @@
 
 **Status:** Puzzle saved successfully!
 
-**Curated this session:** 1
+**Curated this session:** 2
 
 ## Main Menu
 
