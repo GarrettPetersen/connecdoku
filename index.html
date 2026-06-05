@@ -197,6 +197,22 @@ pre{white-space:pre-wrap;margin:12px 0;font-size:20px}
   }
 }
 pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Android Emoji","EmojiSymbols","EmojiOne Mozilla","Twemoji Mozilla","Segoe UI Symbol",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+#shijiPop .shiji-modal-card{max-width:420px}
+.shiji-modal-body{display:flex;gap:16px;align-items:flex-start;text-align:left}
+.shiji-modal-cover{flex-shrink:0;width:100px;height:auto;border-radius:6px;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);display:block}
+.shiji-modal-text{margin:0 0 12px;font-size:14px;line-height:1.5;color:#333}
+.shiji-modal-title{margin:0 0 10px;font-size:15px;font-weight:700;color:#9f2f2f}
+.shiji-modal-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:8px}
+.shiji-modal-btn{
+  display:inline-block;padding:8px 12px;border-radius:20px;background:#9f2f2f;
+  color:#fff;text-decoration:none;font-size:13px;font-weight:600}
+.shiji-modal-link{font-size:12px;color:#4caf50;text-decoration:none}
+.shiji-modal-disclosure{margin:0;font-size:11px;line-height:1.4;color:#888}
+@media (max-width:480px){
+  .shiji-modal-body{flex-direction:column;align-items:center}
+  .shiji-modal-cover{width:88px}
+}
 </style>
 </head>
 <body>
@@ -233,6 +249,26 @@ pre.emoji{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","A
     <button class="action" id="copy">Copy to clipboard</button>
     <div id="unsolved"></div>
     <button class="action" id="returnToPuzzle" style="background:#666">Return to puzzle</button>
+  </div>
+</div>
+
+<!-- Shiji e-book promo (shown after share modal) -->
+<div id="shijiPop" class="modalBg">
+  <div class="modalCard shiji-modal-card">
+    <button class="min" id="minShiji">×</button>
+    <div class="shiji-modal-body">
+      <img src="shiji-ebook-ad/shiji.svg" alt="Records of the Grand Historian cover" class="shiji-modal-cover" width="100" height="160" loading="lazy" decoding="async">
+      <div class="shiji-modal-copy">
+        <p class="shiji-modal-text">Hi, I'm Garrett, creator of Connecdoku. I want to tell you about another project I've been working on: my AI-assisted translations of Chinese history texts. I recently released my translation of <strong>Records of the Grand Historian</strong> for Kindle. If you love history, this might be the book for you.</p>
+        <p class="shiji-modal-title">Records of the Grand Historian</p>
+        <p class="shiji-modal-actions">
+          <a class="shiji-modal-btn" href="https://amzn.to/4vzL5yT" target="_blank" rel="noopener noreferrer sponsored">View on Kindle</a>
+          <a class="shiji-modal-link" href="https://24histories.com/book/shiji.html" target="_blank" rel="noopener noreferrer">Read free on 24 Histories</a>
+        </p>
+        <p class="shiji-modal-disclosure">As an Amazon Associate, Garrett M. Petersen earns from qualifying purchases.</p>
+      </div>
+    </div>
+    <button class="action" id="shijiReturnToPuzzle" style="background:#666">Return to puzzle</button>
   </div>
 </div>
 
@@ -2305,8 +2341,17 @@ function init(puz, puzzleIndex){
     if (gridEl) gridEl.textContent = createEmojiGrid(spoilerFree);
     $('#sharePop').classList.add('show'); 
   };
+  function closeShijiPop(){ $('#shijiPop').classList.remove('show'); }
+  function maybeShowShijiAd(){
+    if(sessionStorage.getItem('connecdoku_shiji_ad_shown')) return;
+    sessionStorage.setItem('connecdoku_shiji_ad_shown','1');
+    $('#shijiPop').classList.add('show');
+  }
   $('#returnToPuzzle').onclick=()=>{ $('#sharePop').classList.remove('show');
-                                     $('#shareBtn').style.display='block'; };
+                                     $('#shareBtn').style.display='block';
+                                     maybeShowShijiAd(); };
+  $('#minShiji').onclick=closeShijiPop;
+  $('#shijiReturnToPuzzle').onclick=closeShijiPop;
 
   $('#helpIcon').onclick=()=>$('#helpPop').classList.add('show');
   $('#minHelp').onclick=$('#helpOK').onclick=()=>$('#helpPop').classList.remove('show');
