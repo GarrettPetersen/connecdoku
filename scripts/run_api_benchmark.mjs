@@ -377,7 +377,8 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "- Correct guesses lock in place.",
     "- Locked tiles cannot be swapped. Never use /swap with any coordinate marked LOCKED on the board.",
     "- Wrong guesses add a strike; 5 strikes loses the game.",
-    "- When 3 rows are solved, row guesses are blocked until columns advance (and vice versa).",
+    "- When 3 rows are solved, row guesses are blocked until columns advance (and vice versa). This guess-order rule does not block swaps.",
+    "- Swaps remain available anytime: rearrange any two unlocked (non-LOCKED) tiles, including while one guess dimension is blocked.",
     "- Auto-alignment: after multiple solves in one dimension, solved lines may reorder to align and keep puzzle solvable.",
     "- Locked-word information: locked words are reliable constraints. Two locked words sharing a row/column indicate that shared category structure.",
     "- Alignment rule: when building a new row, align its words with any solved column labels already crossing that row. When building a new column, align its words with any solved row labels already crossing that column.",
@@ -413,11 +414,17 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     `Puzzle date: ${state?.puzzle?.date}`,
     `Turn: ${state?.turn}, Strikes: ${state?.strikes}/${state?.maxStrikes}`,
     `Can guess row: ${rules.canGuessRow}, can guess col: ${rules.canGuessCol}`,
+    ...(!rules.canGuessRow
+      ? ["- Row guesses are currently blocked until another column is solved. You may still /swap unlocked tiles."]
+      : []),
+    ...(!rules.canGuessCol
+      ? ["- Column guesses are currently blocked until another row is solved. You may still /swap unlocked tiles."]
+      : []),
     "Allowed output actions: /swap and /guess.",
     "Output rule: include at least one valid slash move command in your response.",
     `Solved rows: ${solvedRows}`,
     `Solved cols: ${solvedCols}`,
-    "Board coordinates marked LOCKED are frozen because their row or column is already solved.",
+    "Board coordinates marked LOCKED belong to a solved row or column and cannot be swapped; all other tiles may still be swapped.",
     "Board:",
     board,
     "",

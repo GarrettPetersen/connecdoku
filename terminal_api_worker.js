@@ -14,7 +14,7 @@ const RULES_OVERVIEW = {
   ],
   constraints: [
     "Locked tiles cannot be swapped.",
-    "If 3 rows are solved, manual row guesses are blocked until columns advance (and vice versa).",
+    "If 3 rows are solved, manual row guesses are blocked until columns advance (and vice versa). Guess-order blocking does not prevent swaps between unlocked tiles.",
   ],
   scoring: {
     maxStrikes: MAX_STRIKES,
@@ -656,7 +656,11 @@ function handleGuess(runtime, kind, index) {
 
   if (!guessAllowed(runtime, kind, false)) {
     const mustSolve = kind === "row" ? "column" : "row";
-    return { ok: false, status: 409, error: `You must solve a ${mustSolve} now.` };
+    return {
+      ok: false,
+      status: 409,
+      error: `You must solve a ${mustSolve} now. Guess-order blocking does not prevent swaps between unlocked tiles.`,
+    };
   }
 
   const words = lineWords(runtime.grid, kind, index);

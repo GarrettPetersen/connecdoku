@@ -284,7 +284,7 @@ Streaks are derived from these day records (win streak and attempt streak).
 - Correct guess locks that line and returns revealed category label.
 - Incorrect guess adds a strike.
 - At 5 strikes, game ends in loss.
-- If 3 rows are solved, manual row guesses are blocked until columns progress (and vice versa).
+- If 3 rows are solved, manual row guesses are blocked until columns progress (and vice versa). Guess-order blocking does not prevent swaps between unlocked tiles.
 - The game may reorder the just-solved line to keep the puzzle solvable.
 - Forced final-line auto-solves are applied like the frontend.
 

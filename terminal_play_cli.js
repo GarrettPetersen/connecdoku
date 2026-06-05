@@ -346,8 +346,8 @@ function printBoard(s) {
   );
   console.log(colLabels.join("  "));
 
-  if (!s.rules.canGuessRow) console.log("Rule: row guesses are blocked until columns advance.");
-  if (!s.rules.canGuessCol) console.log("Rule: column guesses are blocked until rows advance.");
+  if (!s.rules.canGuessRow) console.log("Rule: row guesses are blocked until columns advance. Swaps between unlocked tiles are still allowed.");
+  if (!s.rules.canGuessCol) console.log("Rule: column guesses are blocked until rows advance. Swaps between unlocked tiles are still allowed.");
 
   if (s.finished) {
     console.log(`\nGame over: ${String(s.outcome || "unknown").toUpperCase()}`);
@@ -386,7 +386,7 @@ function printRulesOverview() {
   console.log("- Guess a full row/column category with: guess row i / guess col i");
   console.log("- Correct guess locks that line; wrong guess adds a strike.");
   console.log("- At 5 strikes, you lose.");
-  console.log("- If 3 rows are solved, row guesses are blocked until columns advance (and vice versa).");
+  console.log("- If 3 rows are solved, row guesses are blocked until columns advance (and vice versa). Swaps between unlocked tiles are still allowed.");
   console.log("- The game may reorder the just-solved line to keep the puzzle solvable.");
 }
 

@@ -328,7 +328,8 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     "- Locked tiles cannot be swapped. Never use /swap with any coordinate marked LOCKED on the board.",
     "- Wrong guess adds one strike.",
     "- At 5 strikes, you lose.",
-    "- If 3 rows are solved, row guesses are blocked until columns advance (and vice versa).",
+    "- If 3 rows are solved, row guesses are blocked until columns advance (and vice versa). This guess-order rule does not block swaps.",
+    "- Swaps remain available anytime: rearrange any two unlocked (non-LOCKED) tiles, including while one guess dimension is blocked.",
     "- The game may reorder the just-solved line to keep the puzzle solvable.",
     "- Auto-alignment: after multiple solves in one dimension, solved lines may reorder to align and reveal hints in the other dimension.",
     "- Locked-word information: locked words are reliable constraints. Two locked words sharing a row/column indicate that shared category structure.",
@@ -366,11 +367,17 @@ function buildDecisionPrompt(state, metrics, modelMeta) {
     `strikes=${state?.strikes}/${state?.maxStrikes}`,
     `canGuessRow=${rules.canGuessRow}`,
     `canGuessCol=${rules.canGuessCol}`,
+    ...(!rules.canGuessRow
+      ? ["- Row guesses are currently blocked until another column is solved. You may still /swap unlocked tiles."]
+      : []),
+    ...(!rules.canGuessCol
+      ? ["- Column guesses are currently blocked until another row is solved. You may still /swap unlocked tiles."]
+      : []),
     "Allowed output actions: /swap and /guess.",
     "Output rule: include at least one valid /swap or /guess command in your response.",
     `solvedRows=${solvedRows}`,
     `solvedCols=${solvedCols}`,
-    "Board coordinates marked LOCKED are frozen because their row or column is already solved.",
+    "Board coordinates marked LOCKED belong to a solved row or column and cannot be swapped; all other tiles may still be swapped.",
     "Board:",
     board,
     `invalidSoFar=${metrics.gameInvalidActions}`,

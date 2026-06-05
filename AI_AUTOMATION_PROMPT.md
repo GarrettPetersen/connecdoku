@@ -48,6 +48,7 @@ FINISHED=$(echo "$STATE_JSON" | jq -r '.state.finished')
   - `.state.protocol.allowedActions`
   - You may use `guess_row`, `guess_col`, and optionally `swap`.
   - Respect rule flags: `.state.rules.canGuessRow`, `.state.rules.canGuessCol`.
+  - When one guess dimension is blocked, swaps between unlocked tiles are still allowed.
   - Choose actions based on logical elimination and category reasoning from visible tiles and prior results.
 
 - Example guess:
