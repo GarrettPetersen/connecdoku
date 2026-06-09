@@ -449,6 +449,12 @@ table {
     'composer-2.5'
   ];
   const OFFICIAL_MODEL_SET = new Set(OFFICIAL_MODEL_ORDER);
+  let activeApiModelSet = new Set();
+
+  function isDashboardModel(modelId) {
+    const id = String(modelId || '');
+    return OFFICIAL_MODEL_SET.has(id) || activeApiModelSet.has(id);
+  }
 
   const leaderboardWrap = document.getElementById('leaderboardWrap');
   const scoreChartWrap = document.getElementById('scoreChartWrap');
@@ -721,7 +727,7 @@ table {
 
   function buildScoreChart(rows) {
     const filteredRows = rows
-      .filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')))
+      .filter((r) => isDashboardModel(r.model))
       .map((r) => {
         const avgStrikes = safeAvg(r.avg_strikes);
         const avgCorrect = safeAvg(r.avg_correct_guesses);
@@ -785,7 +791,7 @@ table {
 
   function buildLeaderboard(rows) {
     leaderboardRows = rows
-      .filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')))
+      .filter((r) => isDashboardModel(r.model))
       .map((r, idx) => ({ ...r, __defaultRank: Number.isFinite(Number(r.__defaultRank)) ? Number(r.__defaultRank) : idx }));
     const filteredRows = sortedLeaderboardRows(leaderboardRows);
 
@@ -861,10 +867,10 @@ table {
 
     const modelMap = new Map();
     modelsInput
-      .filter((m) => OFFICIAL_MODEL_SET.has(String(m.model || '')))
+      .filter((m) => isDashboardModel(m.model))
       .forEach((m) => modelMap.set(m.model, { ...m }));
     results.forEach((r) => {
-      if (!OFFICIAL_MODEL_SET.has(String(r.model || ''))) return;
+      if (!isDashboardModel(r.model)) return;
       if (!modelMap.has(r.model)) {
         modelMap.set(r.model, {
           model: r.model,
@@ -882,6 +888,10 @@ table {
     const models = OFFICIAL_MODEL_ORDER
       .filter((id) => modelMap.has(id))
       .map((id) => modelMap.get(id));
+    Array.from(modelMap.keys())
+      .filter((id) => !OFFICIAL_MODEL_SET.has(id))
+      .sort((a, b) => String(modelMap.get(a)?.display_name || a).localeCompare(String(modelMap.get(b)?.display_name || b), undefined, { sensitivity: 'base', numeric: true }))
+      .forEach((id) => models.push(modelMap.get(id)));
 
     if (!models.length || !dates.length) {
       matrixWrap.innerHTML = '<div class="empty-state">No matrix data yet.</div>';
@@ -891,7 +901,7 @@ table {
 
     const resultByKey = new Map();
     for (const row of results) {
-      if (!OFFICIAL_MODEL_SET.has(String(row.model || ''))) continue;
+      if (!isDashboardModel(row.model)) continue;
       resultByKey.set(`${row.puzzle_date}::${row.model}`, row);
     }
 
@@ -974,7 +984,7 @@ table {
 
   function buildLiveRuns(rows) {
     const active = (Array.isArray(rows) ? rows : [])
-      .filter((r) => OFFICIAL_MODEL_SET.has(String(r.model || '')));
+      .filter((r) => isDashboardModel(r.model));
 
     if (!active.length) {
       liveWrap.innerHTML = '<div class="empty-state">No active runs right now.</div>';
@@ -1034,6 +1044,10 @@ table {
       if (!data || data.ok === false) {
         throw new Error(data && data.error ? data.error : 'Failed to load benchmark data');
       }
+      activeApiModelSet = new Set((Array.isArray(data.models) ? data.models : [])
+        .filter((m) => Number(m.active) === 1 || m.active === true)
+        .map((m) => String(m.model || ''))
+        .filter(Boolean));
 
       buildScoreChart(Array.isArray(data.leaderboard) ? data.leaderboard : []);
       buildLeaderboard(Array.isArray(data.leaderboard) ? data.leaderboard : []);
