@@ -110,5 +110,5 @@ jobs:
             --thinking-level "$THINKING" \
             --concurrency 32 \
             --lanes direct,cursor \
-            --exclude-models gpt-5.3,opus-4.7,sonnet-4.6,haiku-4.5,kimi-k2.5,kimi-k2.6,composer-2 \
+            --exclude-models gpt-5.4,gpt-5.4-nano,gpt-5.3,opus-4.7,sonnet-4.6,haiku-4.5,kimi-k2.5,kimi-k2.6,composer-2 \
             --only-missing
