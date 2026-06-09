@@ -77,6 +77,7 @@ jobs:
           AI_PASS_GPT_5_4: ${{ secrets.AI_PASS_GPT_5_4 }}
           AI_PASS_GPT_5_3: ${{ secrets.AI_PASS_GPT_5_3 }}
           AI_PASS_GPT_5_4_NANO: ${{ secrets.AI_PASS_GPT_5_4_NANO }}
+          AI_PASS_FABLE_5: ${{ secrets.AI_PASS_FABLE_5 }}
           AI_PASS_OPUS_4_8: ${{ secrets.AI_PASS_OPUS_4_8 }}
           AI_PASS_OPUS_4_7: ${{ secrets.AI_PASS_OPUS_4_7 }}
           AI_PASS_SONNET_4_6: ${{ secrets.AI_PASS_SONNET_4_6 }}

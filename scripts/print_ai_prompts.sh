@@ -24,6 +24,7 @@ MODELS=(
   "GPT-5.4|gpt-5.4|AI_PASS_GPT_5_4"
   "GPT-5.4 Nano|gpt-5.4-nano|AI_PASS_GPT_5_4_NANO"
   "GPT-5.3 Codex|gpt-5.3|AI_PASS_GPT_5_3"
+  "Fable 5|fable-5|AI_PASS_FABLE_5"
   "Opus 4.8|opus-4.8|AI_PASS_OPUS_4_8"
   "Opus 4.7|opus-4.7|AI_PASS_OPUS_4_7"
   "Opus 4.6|opus-4.6|AI_PASS_OPUS_4_6"

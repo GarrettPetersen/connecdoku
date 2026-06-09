@@ -53,6 +53,19 @@
   },
   {
     "enabled": true,
+    "competitionModel": "fable-5",
+    "displayName": "Fable 5",
+    "provider": "anthropic",
+    "apiModel": "claude-fable-5",
+    "apiModelEnv": "BENCH_MODEL_FABLE_5",
+    "passwordEnv": "AI_PASS_FABLE_5",
+    "reasoningLevel": "medium",
+    "temperature": 0.2,
+    "inputPricePerMTok": 15.0,
+    "outputPricePerMTok": 75.0
+  },
+  {
+    "enabled": true,
     "competitionModel": "opus-4.8",
     "displayName": "Opus 4.8",
     "provider": "anthropic",
