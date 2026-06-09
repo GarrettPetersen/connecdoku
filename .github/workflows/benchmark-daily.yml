@@ -66,6 +66,7 @@ jobs:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
           API_BENCH_HTTP_TIMEOUT_MS: '240000'
+          API_BENCH_MODEL_CALL_HARD_TIMEOUT_MS: '300000'
           OPENAI_BENCH_MAX_RETRIES: '4'
 
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}

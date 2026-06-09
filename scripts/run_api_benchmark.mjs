@@ -17,6 +17,7 @@ const ANTHROPIC_MAX_TOKENS = Math.max(1024, Number(process.env.API_BENCH_ANTHROP
 const TRACE_LIMIT = 200;
 const HTTP_TIMEOUT_MS_DEFAULT = 120000;
 const OPENAI_MIN_TIMEOUT_MS = 240000;
+const MODEL_CALL_HARD_TIMEOUT_MS_DEFAULT = 300000;
 
 function openAiMinTimeoutMs() {
   return Math.max(5000, Number(process.env.OPENAI_BENCH_MIN_TIMEOUT_MS || OPENAI_MIN_TIMEOUT_MS));
@@ -114,7 +115,7 @@ function sleep(ms) {
 }
 
 function modelCallHardTimeoutMs() {
-  return Math.max(5000, Number(process.env.API_BENCH_MODEL_CALL_HARD_TIMEOUT_MS || 90000));
+  return Math.max(5000, Number(process.env.API_BENCH_MODEL_CALL_HARD_TIMEOUT_MS || MODEL_CALL_HARD_TIMEOUT_MS_DEFAULT));
 }
 
 async function withHardTimeout(promise, timeoutMs, label = "operation") {
