@@ -61,8 +61,8 @@
     "passwordEnv": "AI_PASS_FABLE_5",
     "reasoningLevel": "medium",
     "temperature": 0.2,
-    "inputPricePerMTok": 15.0,
-    "outputPricePerMTok": 75.0
+    "inputPricePerMTok": 10.0,
+    "outputPricePerMTok": 50.0
   },
   {
     "enabled": true,
@@ -74,8 +74,8 @@
     "passwordEnv": "AI_PASS_OPUS_4_8",
     "reasoningLevel": "medium",
     "temperature": 0.2,
-    "inputPricePerMTok": 15.0,
-    "outputPricePerMTok": 75.0
+    "inputPricePerMTok": 5.0,
+    "outputPricePerMTok": 25.0
   },
   {
     "enabled": true,
@@ -87,8 +87,8 @@
     "passwordEnv": "AI_PASS_OPUS_4_7",
     "reasoningLevel": "medium",
     "temperature": 0.2,
-    "inputPricePerMTok": 15.0,
-    "outputPricePerMTok": 75.0
+    "inputPricePerMTok": 5.0,
+    "outputPricePerMTok": 25.0
   },
   {
     "enabled": false,
@@ -126,8 +126,8 @@
     "passwordEnv": "AI_PASS_HAIKU_4_5",
     "reasoningLevel": "medium",
     "temperature": 0.2,
-    "inputPricePerMTok": 0.8,
-    "outputPricePerMTok": 4.0
+    "inputPricePerMTok": 1.0,
+    "outputPricePerMTok": 5.0
   },
   {
     "enabled": true,
