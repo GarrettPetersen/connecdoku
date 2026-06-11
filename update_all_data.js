@@ -21,13 +21,52 @@ const GRAVE_REGEX = /[ÀÈÌÒÙàèìòù]/; // grave accent
 const CIRCUMFLEX_REGEX = /[ÂÊÎÔÛâêîôû]/; // circumflex
 const TILDE_REGEX = /[ÃÑÕãñõ]/; // tilde
 const CEDILLA_REGEX = /[Çç]/; // cedilla
+const TRANSPORT_MODE_CATEGORY = 'Contains a Mode of Transport';
+const TRANSPORT_MODES = [
+    'airplane',
+    'bicycle',
+    'bike',
+    'boat',
+    'bus',
+    'cab',
+    'canoe',
+    'car',
+    'cart',
+    'cycle',
+    'ferry',
+    'jeep',
+    'kayak',
+    'limo',
+    'metro',
+    'motorcycle',
+    'plane',
+    'raft',
+    'rocket',
+    'scooter',
+    'ship',
+    'shuttle',
+    'ski',
+    'sled',
+    'submarine',
+    'subway',
+    'taxi',
+    'train',
+    'tram',
+    'trolley',
+    'truck',
+    'van',
+    'yacht',
+];
+let transportModeCount = 0;
 
 for (const [word, categories] of Object.entries(wordsData)) {
     totalWords++;
 
     // Remove all existing "Starts with" and "Ends with" categories from ALL words
     const newCategories = categories.filter(category =>
-        !category.startsWith('Starts with ') && !category.startsWith('Ends with ')
+        !category.startsWith('Starts with ')
+        && !category.startsWith('Ends with ')
+        && category !== TRANSPORT_MODE_CATEGORY
     );
 
     // Only add new pattern tags to words with 3 or more letters
@@ -62,6 +101,12 @@ for (const [word, categories] of Object.entries(wordsData)) {
     }
     if (CEDILLA_REGEX.test(word)) {
         newCategories.push('Contains a Cedilla');
+    }
+
+    const normalizedWord = word.toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (TRANSPORT_MODES.some(mode => normalizedWord.includes(mode))) {
+        newCategories.push(TRANSPORT_MODE_CATEGORY);
+        transportModeCount++;
     }
 
     // Update the word's categories (for all words, to remove old pattern tags)
@@ -390,6 +435,7 @@ fs.writeFileSync(path.join(__dirname, 'data', 'thin_categories.json'), JSON.stri
 
 console.log('All data files updated successfully!');
 console.log(`- Updated ${updatedCount} words with patterns`);
+console.log(`- Tagged ${transportModeCount} words with ${TRANSPORT_MODE_CATEGORY}`);
 console.log(`- Removed ${duplicateCategoriesRemoved} duplicate categories within words`);
 console.log(`- Found and merged ${duplicateWordsFound} duplicate words`);
 console.log(`- Generated ${Object.keys(finalCategories).length} categories`);
