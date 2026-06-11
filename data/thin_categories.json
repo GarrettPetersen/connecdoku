@@ -409,6 +409,9 @@
   "Things Bahraini": [
     "Bahrain"
   ],
+  "Politics": [
+    "Ballot"
+  ],
   "Movies featuring Hardie Albright": [
     "Bambi"
   ],
@@ -613,6 +616,12 @@
   "Movies featuring Sophie Marceau": [
     "Braveheart"
   ],
+  "Family Guy": [
+    "Brian Griffin"
+  ],
+  "Family Guy Characters": [
+    "Brian Griffin"
+  ],
   "Folk Songs": [
     "Bridge Over Troubled Water"
   ],
@@ -753,6 +762,9 @@
   ],
   "Movies featuring Zach Braff": [
     "Chicken Little"
+  ],
+  "Police": [
+    "Chief Wiggum"
   ],
   "Movies directed by Roman Polanski": [
     "Chinatown"
@@ -1219,12 +1231,6 @@
   "Movies featuring Martin Sheen": [
     "Gandhi"
   ],
-  "Cats": [
-    "Garfield"
-  ],
-  "Fictional Cats": [
-    "Garfield"
-  ],
   "Things Georgian": [
     "Georgia"
   ],
@@ -1431,9 +1437,6 @@
   ],
   "Movies directed by Chuck Jones": [
     "How the Grinch Stole Christmas"
-  ],
-  "Toys": [
-    "Hula Hoop"
   ],
   "Manufactured by Hawker": [
     "Hurricane"
@@ -1720,6 +1723,9 @@
   "Movies featuring Justin Henry": [
     "Kramer vs. Kramer"
   ],
+  "Clowns": [
+    "Krusty"
+  ],
   "Movies directed by John Stevenson": [
     "Kung Fu Panda"
   ],
@@ -1939,6 +1945,9 @@
   "Pilgrim Fathers": [
     "Mayflower"
   ],
+  "Mayors": [
+    "Mayor Quimby"
+  ],
   "Robots": [
     "MechaGodzilla"
   ],
@@ -1968,9 +1977,6 @@
   ],
   "Silent Films": [
     "Metropolis"
-  ],
-  "Fictional Mice": [
-    "Mickey Mouse"
   ],
   "Mice": [
     "Mickey Mouse"
@@ -2314,9 +2320,6 @@
   "Former Russian Colonies": [
     "Persia"
   ],
-  "Psychology Terms": [
-    "Persona"
-  ],
   "Movies featuring Bobby Driscoll": [
     "Peter Pan"
   ],
@@ -2616,9 +2619,6 @@
   ],
   "Things Romanian": [
     "Romania"
-  ],
-  "Lawyers": [
-    "Roy Cohn"
   ],
   "Things Caribbean": [
     "Rum"
@@ -4229,10 +4229,6 @@
     "Bornholm",
     "Denmark"
   ],
-  "Villains": [
-    "Bowser",
-    "Hannibal Lecter"
-  ],
   "Filter Feeders": [
     "Brachiopods",
     "Graptolites"
@@ -4493,6 +4489,10 @@
     "Edge of Tomorrow",
     "Rain Man"
   ],
+  "Teachers": [
+    "Edna Krabappel",
+    "Skinner"
+  ],
   "Movies featuring Zooey Deschanel": [
     "Elf",
     "The Hitchhiker's Guide to the Galaxy"
@@ -4741,6 +4741,10 @@
     "Hudson Bay",
     "San Francisco Bay"
   ],
+  "Toys": [
+    "Hula Hoop",
+    "Toy"
+  ],
   "Movies featuring Takashi Shimura": [
     "Ikiru",
     "Seven Samurai"
@@ -4756,6 +4760,10 @@
   "Movies featuring James Stewart": [
     "It's a Wonderful Life",
     "Rear Window"
+  ],
+  "Fictional Mice": [
+    "Itchy",
+    "Mickey Mouse"
   ],
   "Things Jamaican": [
     "Jamaica",
@@ -4788,6 +4796,10 @@
   "Movies featuring Sam Neill": [
     "Jurassic Park",
     "The Hunt for Red October"
+  ],
+  "Aliens": [
+    "Kang",
+    "Kodos"
   ],
   "Movies featuring David Carradine": [
     "Kill Bill: Volume 1",
@@ -4844,6 +4856,10 @@
   "Movies featuring David Ogden Stiers": [
     "Lilo & Stitch",
     "Pocahontas"
+  ],
+  "Lawyers": [
+    "Lionel Hutz",
+    "Roy Cohn"
   ],
   "Movies featuring Steve Martin": [
     "Little Shop of Horrors",
@@ -5004,10 +5020,6 @@
   "Movies featuring Sylvester Stallone": [
     "Oscar",
     "Rocky"
-  ],
-  "Sports Terms": [
-    "Overwatch",
-    "Shot"
   ],
   "Movies directed by Guillermo del Toro": [
     "Pan's Labyrinth",
@@ -5495,6 +5507,11 @@
     "Sarajevo",
     "The Yugoslav Wars"
   ],
+  "Villains": [
+    "Bowser",
+    "Hannibal Lecter",
+    "Sideshow Bob"
+  ],
   "Movies featuring Mel Gibson": [
     "Braveheart",
     "Pocahontas",
@@ -5599,11 +5616,6 @@
     "Citizen Kane",
     "Othello",
     "The Third Man"
-  ],
-  "Comedians": [
-    "Clown",
-    "Joker",
-    "Riddler"
   ],
   "Movies featuring Tim Curry": [
     "Clue",
@@ -5780,10 +5792,25 @@
     "Love Actually",
     "Sense and Sensibility"
   ],
+  "Psychologists": [
+    "Freud",
+    "Pavlov",
+    "Skinner"
+  ],
   "Movies directed by Chris Buck": [
     "Frozen",
     "Tarzan",
     "Wish"
+  ],
+  "Cats": [
+    "Garfield",
+    "Scratchy",
+    "Snowball"
+  ],
+  "Fictional Cats": [
+    "Garfield",
+    "Scratchy",
+    "Snowball"
   ],
   "Movies directed by Martin Scorsese": [
     "Goodfellas",
@@ -5934,6 +5961,11 @@
     "Oppenheimer",
     "Saving Private Ryan",
     "The Departed"
+  ],
+  "Sports Terms": [
+    "Overwatch",
+    "Penalty",
+    "Shot"
   ],
   "Movies directed by Gore Verbinski": [
     "Pirates of the Caribbean: At World's End",
