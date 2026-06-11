@@ -754,6 +754,7 @@
     "Companies",
     "Contains a Mode of Transport",
     "Ends with BUS",
+    "Ends with a Mode of Transport",
     "Starts with AIR",
     "Things British",
     "Things French",
@@ -2306,6 +2307,7 @@
     "15th Century",
     "Contains a Mode of Transport",
     "Ends with BUS",
+    "Ends with a Mode of Transport",
     "Gunpowder Weapons",
     "Historical Weapons",
     "Ranged Weapons",
@@ -5604,6 +5606,7 @@
   "Bobsled": [
     "Contains a Mode of Transport",
     "Ends with LED",
+    "Ends with a Mode of Transport",
     "Sports",
     "Starts with BOB",
     "Things Swiss",
@@ -5931,7 +5934,8 @@
     "Ends with ING",
     "Sports",
     "Starts with BOX",
-    "Things British"
+    "Things British",
+    "_____ Ring"
   ],
   "Boysenberry": [
     "Cenozoic Era",
@@ -6929,7 +6933,8 @@
     "Contains a Mode of Transport",
     "Ends with BIN",
     "Nautical Terms",
-    "Starts with CAB"
+    "Starts with CAB",
+    "What Cab Might Refer To"
   ],
   "Cabo Verde": [
     "Contains a Mode of Transport",
@@ -7128,6 +7133,19 @@
     "Video Games",
     "War Stories"
   ],
+  "Calloway": [
+    "20th Century",
+    "Ends with WAY",
+    "Jazz Musicians",
+    "Men",
+    "Music",
+    "Musicians",
+    "People",
+    "Real People",
+    "Starts with CAL",
+    "Things American",
+    "What Cab Might Refer To"
+  ],
   "Camarasaurus": [
     "Animal Species",
     "Animal Terms",
@@ -7270,6 +7288,7 @@
   "Canoe": [
     "Contains a Mode of Transport",
     "Ends with NOE",
+    "Ends with a Mode of Transport",
     "Starts with CAN",
     "Watercraft"
   ],
@@ -7914,6 +7933,12 @@
     "Mythical Creatures",
     "Mythical Horses",
     "Starts with CEN"
+  ],
+  "Center": [
+    "Ends with TER",
+    "Sports Terms",
+    "Starts with CEN",
+    "_____ Piece"
   ],
   "Centipede": [
     "Animal Species",
@@ -8714,6 +8739,7 @@
     "15th Century",
     "Contains a Mode of Transport",
     "Ends with BUS",
+    "Ends with a Mode of Transport",
     "Explorers",
     "Men",
     "People",
@@ -9306,7 +9332,8 @@
     "Things American",
     "Things Brazilian",
     "Things Colombian",
-    "Things Ethiopian"
+    "Things Ethiopian",
+    "_____ Table"
   ],
   "Coffee Crisp": [
     "Candy",
@@ -9333,6 +9360,12 @@
     "Mechanical Parts",
     "Nautical Terms",
     "Starts with COG"
+  ],
+  "Coil": [
+    "Ends with OIL",
+    "Physics Terms",
+    "Starts with COI",
+    "What Spring Might Refer To"
   ],
   "Coin": [
     "Crypto",
@@ -9438,6 +9471,7 @@
     "Cities in USA",
     "Contains a Mode of Transport",
     "Ends with BUS",
+    "Ends with a Mode of Transport",
     "Locations in North America",
     "Place Names",
     "Starts with COL",
@@ -9713,6 +9747,13 @@
     "Starts with CON",
     "Things Italian"
   ],
+  "Conversation": [
+    "Abstract Concepts",
+    "Ends with ION",
+    "Language",
+    "Starts with CON",
+    "_____ Piece"
+  ],
   "Cookie": [
     "Baked Goods",
     "Ends with KIE",
@@ -9759,6 +9800,8 @@
     "Metallic Colors",
     "Metallurgy",
     "Metals",
+    "Old-Timey Law Enforcement Slang",
+    "Police",
     "Starts with COP"
   ],
   "Copycat": [
@@ -9813,6 +9856,16 @@
     "Silurian Period",
     "Starts with COR",
     "Triassic Period"
+  ],
+  "Core": [
+    "Contains a Music Genre",
+    "Ends with ORE",
+    "Ends with a Music Genre",
+    "Music Genre Suffixes",
+    "Parts of Earth",
+    "Science Terms",
+    "Starts with COR",
+    "Starts with a Music Genre"
   ],
   "Corfu": [
     "Ends with RFU",
@@ -10328,6 +10381,12 @@
     "Ends with NCH",
     "Starts with CRU"
   ],
+  "Crust": [
+    "Ends with UST",
+    "Foods",
+    "Parts of Earth",
+    "Starts with CRU"
+  ],
   "Cuba": [
     "Cold War",
     "Countries",
@@ -10437,6 +10496,7 @@
     "21st Century",
     "Contains a Music Genre",
     "Ends with UNK",
+    "Ends with a Music Genre",
     "Role-Playing Games",
     "Sci-fi Stories",
     "Starts with CYB",
@@ -10899,6 +10959,7 @@
     "Pleistocene Epoch",
     "Pliocene Epoch",
     "Quaternary Period",
+    "Relationships",
     "Starts with DAT"
   ],
   "Dauntless": [
@@ -11335,6 +11396,14 @@
     "Ends with ICE",
     "Starts with DIC"
   ],
+  "Dick": [
+    "Ends with ICK",
+    "Men",
+    "Old-Timey Law Enforcement Slang",
+    "People",
+    "Police",
+    "Starts with DIC"
+  ],
   "Die Hard": [
     "1980s",
     "1988",
@@ -11425,6 +11494,13 @@
     "Starts with DIM",
     "Synapsids"
   ],
+  "Dinner": [
+    "Ends with NER",
+    "Events",
+    "Foods",
+    "Starts with DIN",
+    "_____ Table"
+  ],
   "Diplodocus": [
     "Animal Species",
     "Animal Terms",
@@ -11476,6 +11552,7 @@
     "Royal Navy",
     "Ships",
     "Starts with DIS",
+    "Starts with a Music Genre",
     "Things British",
     "Things That Fly"
   ],
@@ -11483,7 +11560,8 @@
     "Contains a Music Genre",
     "Ends with ONE",
     "Fictional Spaceships",
-    "Starts with DIS"
+    "Starts with DIS",
+    "Starts with a Music Genre"
   ],
   "Disney": [
     "Businesspeople",
@@ -11925,6 +12003,13 @@
     "Starts with DRA",
     "Things British"
   ],
+  "Drafting": [
+    "Contains a Mode of Transport",
+    "Ends with ING",
+    "Engineering",
+    "Starts with DRA",
+    "_____ Table"
+  ],
   "Dragon": [
     "Ends with GON",
     "Han Dynasty",
@@ -12103,6 +12188,7 @@
     "Locations in Europe",
     "Place Names",
     "Starts with DUB",
+    "Starts with a Music Genre",
     "Things Irish"
   ],
   "Duck Confit": [
@@ -12346,6 +12432,7 @@
   ],
   "Earth": [
     "Ends with RTH",
+    "Parts of Earth",
     "Planets",
     "Starts with EAR"
   ],
@@ -13732,7 +13819,8 @@
   "Fan": [
     "Cooling Devices",
     "Ends with FAN",
-    "Starts with FAN"
+    "Starts with FAN",
+    "They Have Blades"
   ],
   "Fanny Mendelssohn": [
     "19th Century",
@@ -13924,6 +14012,7 @@
   "Ferry": [
     "Contains a Mode of Transport",
     "Ends with RRY",
+    "Ends with a Mode of Transport",
     "River Crossings",
     "Starts with FER"
   ],
@@ -14106,6 +14195,7 @@
   "Fire Truck": [
     "Contains a Mode of Transport",
     "Ends with UCK",
+    "Ends with a Mode of Transport",
     "Red Things",
     "Starts with FIR"
   ],
@@ -14253,6 +14343,13 @@
     "Sci-fi Stories",
     "Starts with FLA",
     "Things American"
+  ],
+  "Flatfoot": [
+    "Ends with OOT",
+    "Old-Timey Law Enforcement Slang",
+    "People",
+    "Police",
+    "Starts with FLA"
   ],
   "Flea": [
     "Animal Species",
@@ -14595,6 +14692,12 @@
     "Starts with FOR",
     "Things American",
     "Video Games"
+  ],
+  "Fountain": [
+    "Ends with AIN",
+    "Engineering Structures",
+    "Starts with FOU",
+    "What Spring Might Refer To"
   ],
   "Four Christmases": [
     "2000s",
@@ -16275,6 +16378,13 @@
     "Sea Creatures",
     "Starts with GRA"
   ],
+  "Grass": [
+    "Currently Living Plants",
+    "Ends with ASS",
+    "Plants",
+    "Starts with GRA",
+    "They Have Blades"
+  ],
   "Grasshopper": [
     "Animal Species",
     "Animal Terms",
@@ -16846,6 +16956,13 @@
     "Ends with GUM",
     "Starts with GUM"
   ],
+  "Gumshoe": [
+    "Ends with HOE",
+    "Old-Timey Law Enforcement Slang",
+    "People",
+    "Police",
+    "Starts with GUM"
+  ],
   "Gunpowder": [
     "9th Century",
     "Ends with DER",
@@ -17000,6 +17117,12 @@
     "Men",
     "People",
     "Starts with HAG"
+  ],
+  "Haiku": [
+    "Ends with IKU",
+    "Literary Terms",
+    "Poetry",
+    "Starts with HAI"
   ],
   "Hainan": [
     "Ends with NAN",
@@ -17879,6 +18002,13 @@
     "Things British",
     "Women"
   ],
+  "Helicopter": [
+    "Ends with TER",
+    "Starts with HEL",
+    "Technology",
+    "They Have Blades",
+    "Things That Fly"
+  ],
   "Helios": [
     "Astronomical Objects",
     "Ends with IOS",
@@ -18668,7 +18798,9 @@
     "Buildings",
     "Contains a Music Genre",
     "Ends with USE",
+    "Ends with a Music Genre",
     "Starts with HOU",
+    "Starts with a Music Genre",
     "White _____"
   ],
   "House of Flying Daggers": [
@@ -18686,6 +18818,7 @@
     "Movies featuring Takeshi Kaneshiro",
     "Movies featuring Zhang Ziyi",
     "Starts with HOU",
+    "Starts with a Music Genre",
     "Things Chinese"
   ],
   "Houston, we have a problem": [
@@ -19190,6 +19323,14 @@
     "Ends with ACK",
     "Starts with ICE"
   ],
+  "Ice Skates": [
+    "Clothing",
+    "Ends with TES",
+    "Sports Equipment",
+    "Starts with ICE",
+    "They Have Blades",
+    "Winter Olympic Sports"
+  ],
   "Ice Wine": [
     "Alcoholic Drinks",
     "Drinks",
@@ -19427,6 +19568,14 @@
     "Romance Stories",
     "Starts with IN ",
     "Things Chinese"
+  ],
+  "Incubus": [
+    "Contains a Mode of Transport",
+    "Ends with BUS",
+    "Ends with a Mode of Transport",
+    "Music",
+    "Rock Bands",
+    "Starts with INC"
   ],
   "India": [
     "BRICS Nations",
@@ -20335,10 +20484,12 @@
   "Jazz": [
     "Contains a Music Genre",
     "Ends with AZZ",
+    "Ends with a Music Genre",
     "Jazz",
     "Music",
     "NBA Teams",
-    "Starts with JAZ"
+    "Starts with JAZ",
+    "Starts with a Music Genre"
   ],
   "Jean Bernadotte": [
     "1800s",
@@ -20388,6 +20539,7 @@
     "Cars",
     "Contains a Mode of Transport",
     "Ends with EEP",
+    "Ends with a Mode of Transport",
     "Starts with JEE"
   ],
   "Jefferson": [
@@ -21444,6 +21596,7 @@
   "Kayak": [
     "Contains a Mode of Transport",
     "Ends with YAK",
+    "Ends with a Mode of Transport",
     "Starts with KAY",
     "Watercraft"
   ],
@@ -21605,7 +21758,8 @@
     "Ends with KEY",
     "Household Items",
     "Software",
-    "Starts with KEY"
+    "Starts with KEY",
+    "_____ Ring"
   ],
   "Key West": [
     "Ends with EST",
@@ -22010,6 +22164,7 @@
     "Ends with IFE",
     "One-Handed Weapons",
     "Starts with KNI",
+    "They Have Blades",
     "Tools",
     "Weapons"
   ],
@@ -22865,6 +23020,12 @@
     "Quaternary Period",
     "Starts with LAV"
   ],
+  "Lawn Mower": [
+    "Ends with WER",
+    "Starts with LAW",
+    "They Have Blades",
+    "Tools"
+  ],
   "Lawrence of Arabia": [
     "1960s",
     "1962",
@@ -22894,6 +23055,13 @@
     "Starts with LEA",
     "Things American",
     "Video Games"
+  ],
+  "Leap": [
+    "Dances",
+    "Ends with EAP",
+    "Sports Terms",
+    "Starts with LEA",
+    "What Spring Might Refer To"
   ],
   "Learjet": [
     "1960s",
@@ -23512,6 +23680,12 @@
     "Metals",
     "Starts with LIT"
   ],
+  "Lithosphere": [
+    "Ends with ERE",
+    "Parts of Earth",
+    "Science Terms",
+    "Starts with LIT"
+  ],
   "Lithuania": [
     "Countries",
     "Countries in Europe",
@@ -23544,6 +23718,7 @@
     "Cities in USA",
     "Contains a Music Genre",
     "Ends with OCK",
+    "Ends with a Music Genre",
     "Locations in North America",
     "Place Names",
     "Starts with LIT",
@@ -23999,6 +24174,13 @@
     "Starts with LOU",
     "Things French"
   ],
+  "Love": [
+    "Abstract Concepts",
+    "Ends with OVE",
+    "Relationships",
+    "Sports Terms",
+    "Starts with LOV"
+  ],
   "Love Actually": [
     "2000s",
     "2003",
@@ -24287,6 +24469,7 @@
     "Countries",
     "Countries in Africa",
     "Ends with CAR",
+    "Ends with a Mode of Transport",
     "Family-Friendly Stories",
     "First in Internal Chronology",
     "First in Release Order",
@@ -24770,6 +24953,7 @@
     "MLB Players",
     "Men",
     "Mentioned in We Didn't Start the Fire",
+    "Parts of Earth",
     "People",
     "Real People",
     "Starts with MAN",
@@ -24819,6 +25003,14 @@
     "Modern Buildings",
     "Starts with MAR",
     "Things American"
+  ],
+  "March": [
+    "Ends with RCH",
+    "Events",
+    "Labor Protest Actions",
+    "Music",
+    "Political Events",
+    "Starts with MAR"
   ],
   "Marciano": [
     "1950s",
@@ -24991,6 +25183,14 @@
     "Starts with MAR",
     "Stationery",
     "Writing Instruments"
+  ],
+  "Marriage": [
+    "Cultural Events",
+    "Ends with AGE",
+    "Events",
+    "Relationships",
+    "Religious Events",
+    "Starts with MAR"
   ],
   "Marriott": [
     "Ends with OTT",
@@ -25239,6 +25439,13 @@
     "Ends with AST",
     "Nautical Terms",
     "Starts with MAS"
+  ],
+  "Master": [
+    "Ends with TER",
+    "People",
+    "Starts with MAS",
+    "Titles of Rank",
+    "_____ Piece"
   ],
   "Master and Commander: The Far Side of the World": [
     "1800s",
@@ -25754,6 +25961,7 @@
     "Contains a Music Genre",
     "Ends with EAR",
     "Starts with MET",
+    "Starts with a Music Genre",
     "Stealth Games",
     "Things Japanese",
     "Video Games"
@@ -26039,6 +26247,7 @@
   "Milhouse": [
     "Contains a Music Genre",
     "Ends with USE",
+    "Ends with a Music Genre",
     "Fictional People",
     "Men",
     "People",
@@ -26137,6 +26346,7 @@
     "Adventure Stories",
     "Contains a Mode of Transport",
     "Ends with AFT",
+    "Ends with a Mode of Transport",
     "Sandbox Games",
     "Starts with MIN",
     "Things Swedish",
@@ -28724,7 +28934,8 @@
     "Pleistocene Epoch",
     "Pliocene Epoch",
     "Starts with ONI",
-    "Vegetables"
+    "Vegetables",
+    "_____ Ring"
   ],
   "Only Yesterday": [
     "1990s",
@@ -28784,6 +28995,7 @@
     "Land Battles",
     "Military Conflicts",
     "Starts with OPE",
+    "Starts with a Music Genre",
     "World War II"
   ],
   "Oppenheimer": [
@@ -28964,6 +29176,7 @@
     "Contains a Mode of Transport",
     "Drama Stories",
     "Ends with CAR",
+    "Ends with a Mode of Transport",
     "Fictional People",
     "Men",
     "Movies",
@@ -30016,6 +30229,22 @@
     "Starts with PER",
     "Things British"
   ],
+  "Period": [
+    "Ends with IOD",
+    "Grammar",
+    "Language",
+    "Punctuation",
+    "Starts with PER",
+    "Time Periods",
+    "_____ Piece"
+  ],
+  "Periodic": [
+    "Chemistry Terms",
+    "Ends with DIC",
+    "Science Terms",
+    "Starts with PER",
+    "_____ Table"
+  ],
   "Permian-Triassic Extinction": [
     "Disasters",
     "Ends with ION",
@@ -30393,6 +30622,12 @@
     "Contains a Mode of Transport",
     "Ends with ARD",
     "Star Trek",
+    "Starts with PIC"
+  ],
+  "Picket": [
+    "Ends with KET",
+    "Labor Protest Actions",
+    "Political Events",
     "Starts with PIC"
   ],
   "Pickett's Charge": [
@@ -31033,6 +31268,7 @@
     "Contains a Mode of Transport",
     "Crime",
     "Ends with CAR",
+    "Ends with a Mode of Transport",
     "Starts with POL"
   ],
   "Polio Vaccine": [
@@ -31151,6 +31387,15 @@
     "Studio Ghibli",
     "Things Japanese"
   ],
+  "Pop": [
+    "Contains a Music Genre",
+    "Ends with POP",
+    "Ends with a Music Genre",
+    "Music Genre Suffixes",
+    "Music Genres",
+    "Starts with POP",
+    "Starts with a Music Genre"
+  ],
   "Pope Urban VIII": [
     "17th Century",
     "Contains a Music Genre",
@@ -31161,6 +31406,7 @@
     "Real People",
     "Religious Figures",
     "Starts with POP",
+    "Starts with a Music Genre",
     "Things Italian"
   ],
   "Poppy": [
@@ -31179,7 +31425,8 @@
     "Pleistocene Epoch",
     "Pliocene Epoch",
     "Quaternary Period",
-    "Starts with POP"
+    "Starts with POP",
+    "Starts with a Music Genre"
   ],
   "Porco Rosso": [
     "1990s",
@@ -31717,6 +31964,12 @@
     "Things British",
     "Weapons"
   ],
+  "Puff": [
+    "Ends with UFF",
+    "Foods",
+    "Starts with PUF",
+    "_____ Piece"
+  ],
   "Puffer": [
     "Clothing",
     "Ends with FER",
@@ -31816,10 +32069,12 @@
     "20th Century",
     "Contains a Music Genre",
     "Ends with OCK",
+    "Ends with a Music Genre",
     "Mentioned in We Didn't Start the Fire",
     "Music",
     "Music Genres",
     "Starts with PUN",
+    "Starts with a Music Genre",
     "Things American"
   ],
   "Purple": [
@@ -31930,6 +32185,14 @@
     "Astronomical Objects",
     "Ends with SAR",
     "Radio Terms",
+    "Starts with QUA"
+  ],
+  "Quatrain": [
+    "Contains a Mode of Transport",
+    "Ends with AIN",
+    "Ends with a Mode of Transport",
+    "Literary Terms",
+    "Poetry",
     "Starts with QUA"
   ],
   "Quebec": [
@@ -32121,6 +32384,7 @@
   "Raft": [
     "Contains a Mode of Transport",
     "Ends with AFT",
+    "Ends with a Mode of Transport",
     "River Crossings",
     "Starts with RAF"
   ],
@@ -32184,6 +32448,14 @@
     "Starts with RAL",
     "State Capitals",
     "Things American"
+  ],
+  "Rally": [
+    "Ends with LLY",
+    "Events",
+    "Labor Protest Actions",
+    "Political Events",
+    "Sports Terms",
+    "Starts with RAL"
   ],
   "Ralph": [
     "Ends with LPH",
@@ -32260,6 +32532,7 @@
     "Predators",
     "Real Animals",
     "Starts with RAP",
+    "Starts with a Music Genre",
     "Things That Fly"
   ],
   "Rashomon": [
@@ -32711,7 +32984,8 @@
     "Red Things",
     "Red _____",
     "Starts with RED",
-    "Things French"
+    "Things French",
+    "What Cab Might Refer To"
   ],
   "Reddit": [
     "Companies",
@@ -32984,6 +33258,12 @@
     "Place Names",
     "Starts with RHO",
     "Things Zimbabwean"
+  ],
+  "Rhyme": [
+    "Ends with YME",
+    "Literary Terms",
+    "Poetry",
+    "Starts with RHY"
   ],
   "Rice": [
     "Cenozoic Era",
@@ -33276,11 +33556,13 @@
     "Camp _____",
     "Contains a Music Genre",
     "Ends with OCK",
+    "Ends with a Music Genre",
     "Materials",
     "Moon _____",
     "Music",
     "Music Genres",
-    "Starts with ROC"
+    "Starts with ROC",
+    "Starts with a Music Genre"
   ],
   "Rock Around the Clock": [
     "1950s",
@@ -33295,6 +33577,7 @@
     "Song Lyrics",
     "Songs",
     "Starts with ROC",
+    "Starts with a Music Genre",
     "Things American"
   ],
   "Rock Climbing": [
@@ -33302,6 +33585,7 @@
     "Ends with ING",
     "Sports",
     "Starts with ROC",
+    "Starts with a Music Genre",
     "Things American"
   ],
   "Rock and Roll": [
@@ -33313,6 +33597,7 @@
     "Music",
     "Music Genres",
     "Starts with ROC",
+    "Starts with a Music Genre",
     "Things American"
   ],
   "Rockefeller": [
@@ -33327,6 +33612,7 @@
     "People",
     "Real People",
     "Starts with ROC",
+    "Starts with a Music Genre",
     "Things American"
   ],
   "Rocky": [
@@ -33348,6 +33634,7 @@
     "People",
     "Sports Stories",
     "Starts with ROC",
+    "Starts with a Music Genre",
     "Things American"
   ],
   "Rocky Horror Picture Show": [
@@ -33368,6 +33655,7 @@
     "Music",
     "Musical Films",
     "Starts with ROC",
+    "Starts with a Music Genre",
     "Things American"
   ],
   "Rodan": [
@@ -33699,6 +33987,13 @@
     "Foods",
     "Starts with ROU",
     "Things German"
+  ],
+  "Round": [
+    "Ends with UND",
+    "Shapes",
+    "Sports Terms",
+    "Starts with ROU",
+    "_____ Table"
   ],
   "Rover": [
     "Animal Terms",
@@ -34268,11 +34563,13 @@
     "Condiments",
     "Contains a Music Genre",
     "Ends with LSA",
+    "Ends with a Music Genre",
     "Foods",
     "Mexican Food",
     "Red Things",
     "Sauces",
     "Starts with SAL",
+    "Starts with a Music Genre",
     "Things Mexican"
   ],
   "Salt Lake City": [
@@ -34663,7 +34960,8 @@
     "Roman Gods",
     "Starts with SAT",
     "Things Roman",
-    "Video Games"
+    "Video Games",
+    "_____ Ring"
   ],
   "Saudi Arabia": [
     "Countries",
@@ -35014,6 +35312,12 @@
     "Sea Creatures",
     "Sea Mammals",
     "Starts with SEA"
+  ],
+  "Season": [
+    "Ends with SON",
+    "Starts with SEA",
+    "Time Periods",
+    "What Spring Might Refer To"
   ],
   "Seat": [
     "20th Century",
@@ -35972,10 +36276,19 @@
     "Place Names",
     "Starts with SIT"
   ],
+  "Situationship": [
+    "Abstract Concepts",
+    "Contains a Mode of Transport",
+    "Ends with HIP",
+    "Ends with a Mode of Transport",
+    "Relationships",
+    "Starts with SIT"
+  ],
   "Skate": [
     "Ends with ATE",
     "Sports Equipment",
-    "Starts with SKA"
+    "Starts with SKA",
+    "They Have Blades"
   ],
   "Skiing": [
     "Contains a Mode of Transport",
@@ -36492,6 +36805,12 @@
     "Video Game Characters",
     "Video Games"
   ],
+  "Sonnet": [
+    "Ends with NET",
+    "Literary Terms",
+    "Poetry",
+    "Starts with SON"
+  ],
   "Sony": [
     "Camera Companies",
     "Companies",
@@ -36539,6 +36858,7 @@
     "Contains a Music Genre",
     "Disney",
     "Ends with OUL",
+    "Ends with a Music Genre",
     "Family-Friendly Stories",
     "Fantasy Stories",
     "Movies",
@@ -36551,6 +36871,7 @@
     "Musical Films",
     "Pixar",
     "Starts with SOU",
+    "Starts with a Music Genre",
     "The Bad Place",
     "The Good Place",
     "Things American"
@@ -37248,6 +37569,12 @@
     "Stationery",
     "Tools"
   ],
+  "Stanza": [
+    "Ends with NZA",
+    "Literary Terms",
+    "Poetry",
+    "Starts with STA"
+  ],
   "Star": [
     "Astronomical Objects",
     "Ends with TAR",
@@ -37375,6 +37702,12 @@
     "Things American",
     "US Navy",
     "Warships"
+  ],
+  "Step": [
+    "Dances",
+    "Ends with TEP",
+    "Music Genre Suffixes",
+    "Starts with STE"
   ],
   "Stephen Langton": [
     "13th Century",
@@ -37516,6 +37849,13 @@
     "Starts with STR",
     "Things Japanese",
     "Video Games"
+  ],
+  "Strike": [
+    "Ends with IKE",
+    "Labor Protest Actions",
+    "Political Events",
+    "Sports Terms",
+    "Starts with STR"
   ],
   "Studebaker": [
     "1950s",
@@ -37969,6 +38309,7 @@
     "Starts with SWO",
     "Straight Blades",
     "Swords",
+    "They Have Blades",
     "Weapons",
     "World War II",
     "_____ Fish"
@@ -37984,6 +38325,7 @@
     "Buildings",
     "Contains a Music Genre",
     "Ends with USE",
+    "Ends with a Music Genre",
     "Modern Buildings",
     "Opera",
     "Starts with SYD",
@@ -38478,6 +38820,15 @@
     "Ends with RUS",
     "Starts with TAU",
     "Zodiac Signs"
+  ],
+  "Taxi": [
+    "Cars",
+    "Contains a Mode of Transport",
+    "Ends with AXI",
+    "Ends with a Mode of Transport",
+    "Public Transport",
+    "Starts with TAX",
+    "What Cab Might Refer To"
   ],
   "Tayberry": [
     "Cenozoic Era",
@@ -41054,6 +41405,7 @@
     "Contains a Music Genre",
     "Drama Stories",
     "Ends with USE",
+    "Ends with a Music Genre",
     "Movies",
     "Movies directed by Alejandro Agresti",
     "Movies featuring Christopher Plummer",
@@ -41825,6 +42177,7 @@
     "Contains a Music Genre",
     "Disney",
     "Ends with RAP",
+    "Ends with a Music Genre",
     "Family-Friendly Stories",
     "First in Internal Chronology",
     "First in Release Order",
@@ -41889,6 +42242,7 @@
     "Contains a Music Genre",
     "Drama Stories",
     "Ends with ERA",
+    "Ends with a Music Genre",
     "Horror Stories",
     "Movies",
     "Movies directed by Joel Schumacher",
@@ -43358,6 +43712,12 @@
     "Quaternary Period",
     "Starts with THI"
   ],
+  "Think": [
+    "Abstract Concepts",
+    "Ends with INK",
+    "Starts with THI",
+    "_____ Piece"
+  ],
   "Third": [
     "Ends with IRD",
     "Numbers",
@@ -43678,6 +44038,12 @@
     "Starts with TIM",
     "Things British",
     "Time Travel Stories"
+  ],
+  "Times": [
+    "Ends with MES",
+    "Newspapers",
+    "Starts with TIM",
+    "_____ Table"
   ],
   "Timon": [
     "1990s",
@@ -44276,6 +44642,14 @@
     "Starts with TRE",
     "The Crusades",
     "Weapons"
+  ],
+  "Tree": [
+    "Currently Living Plants",
+    "Ends with REE",
+    "Plants",
+    "Starts with TRE",
+    "Wooden Objects",
+    "_____ Ring"
   ],
   "Trenton": [
     "Cities",
@@ -45495,6 +45869,7 @@
     "Contains a Music Genre",
     "Currently Living Plants",
     "Ends with RAP",
+    "Ends with a Music Genre",
     "Flowers",
     "Holocene Epoch",
     "Plants",
@@ -45520,6 +45895,12 @@
     "French Revolution",
     "Starts with VER",
     "Things French"
+  ],
+  "Verse": [
+    "Ends with RSE",
+    "Literary Terms",
+    "Poetry",
+    "Starts with VER"
   ],
   "Vespasian": [
     "1st Century",
@@ -46119,6 +46500,15 @@
     "Things Belgian",
     "War Stories"
   ],
+  "Wave": [
+    "Contains a Music Genre",
+    "Ends with AVE",
+    "Ends with a Music Genre",
+    "Music Genre Suffixes",
+    "Physics Terms",
+    "Starts with WAV",
+    "Starts with a Music Genre"
+  ],
   "Wayne Gretzky": [
     "1980s",
     "1990s",
@@ -46165,6 +46555,15 @@
     "Starts with WE ",
     "Things British",
     "World War II"
+  ],
+  "Wedding": [
+    "Cultural Events",
+    "Ends with ING",
+    "Events",
+    "Relationships",
+    "Religious Events",
+    "Starts with WED",
+    "_____ Ring"
   ],
   "Weightlifting": [
     "Ends with ING",
@@ -46819,6 +47218,7 @@
     "21st Century",
     "Contains a Mode of Transport",
     "Ends with AFT",
+    "Ends with a Mode of Transport",
     "Fantasy Stories",
     "Massively Multiplayer Online",
     "Role-Playing Games",
@@ -47093,6 +47493,7 @@
   "Yacht": [
     "Contains a Mode of Transport",
     "Ends with CHT",
+    "Ends with a Mode of Transport",
     "Starts with YAC",
     "Watercraft"
   ],

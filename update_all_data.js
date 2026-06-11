@@ -22,6 +22,7 @@ const CIRCUMFLEX_REGEX = /[ÂÊÎÔÛâêîôû]/; // circumflex
 const TILDE_REGEX = /[ÃÑÕãñõ]/; // tilde
 const CEDILLA_REGEX = /[Çç]/; // cedilla
 const TRANSPORT_MODE_CATEGORY = 'Contains a Mode of Transport';
+const ENDS_WITH_TRANSPORT_MODE_CATEGORY = 'Ends with a Mode of Transport';
 const TRANSPORT_MODES = [
     'airplane',
     'bicycle',
@@ -58,6 +59,8 @@ const TRANSPORT_MODES = [
     'yacht',
 ];
 const MUSIC_GENRE_CATEGORY = 'Contains a Music Genre';
+const STARTS_WITH_MUSIC_GENRE_CATEGORY = 'Starts with a Music Genre';
+const ENDS_WITH_MUSIC_GENRE_CATEGORY = 'Ends with a Music Genre';
 const MUSIC_GENRES = [
     'ambient',
     'blues',
@@ -87,7 +90,10 @@ const MUSIC_GENRES = [
     'wave',
 ];
 let transportModeCount = 0;
+let endsWithTransportModeCount = 0;
 let musicGenreCount = 0;
+let startsWithMusicGenreCount = 0;
+let endsWithMusicGenreCount = 0;
 
 for (const [word, categories] of Object.entries(wordsData)) {
     totalWords++;
@@ -97,7 +103,10 @@ for (const [word, categories] of Object.entries(wordsData)) {
         !category.startsWith('Starts with ')
         && !category.startsWith('Ends with ')
         && category !== TRANSPORT_MODE_CATEGORY
+        && category !== ENDS_WITH_TRANSPORT_MODE_CATEGORY
         && category !== MUSIC_GENRE_CATEGORY
+        && category !== STARTS_WITH_MUSIC_GENRE_CATEGORY
+        && category !== ENDS_WITH_MUSIC_GENRE_CATEGORY
     );
 
     // Only add new pattern tags to words with 3 or more letters
@@ -139,9 +148,21 @@ for (const [word, categories] of Object.entries(wordsData)) {
         newCategories.push(TRANSPORT_MODE_CATEGORY);
         transportModeCount++;
     }
+    if (TRANSPORT_MODES.some(mode => normalizedWord.endsWith(mode))) {
+        newCategories.push(ENDS_WITH_TRANSPORT_MODE_CATEGORY);
+        endsWithTransportModeCount++;
+    }
     if (MUSIC_GENRES.some(genre => normalizedWord.includes(genre))) {
         newCategories.push(MUSIC_GENRE_CATEGORY);
         musicGenreCount++;
+    }
+    if (MUSIC_GENRES.some(genre => normalizedWord.startsWith(genre))) {
+        newCategories.push(STARTS_WITH_MUSIC_GENRE_CATEGORY);
+        startsWithMusicGenreCount++;
+    }
+    if (MUSIC_GENRES.some(genre => normalizedWord.endsWith(genre))) {
+        newCategories.push(ENDS_WITH_MUSIC_GENRE_CATEGORY);
+        endsWithMusicGenreCount++;
     }
 
     // Update the word's categories (for all words, to remove old pattern tags)
@@ -471,7 +492,10 @@ fs.writeFileSync(path.join(__dirname, 'data', 'thin_categories.json'), JSON.stri
 console.log('All data files updated successfully!');
 console.log(`- Updated ${updatedCount} words with patterns`);
 console.log(`- Tagged ${transportModeCount} words with ${TRANSPORT_MODE_CATEGORY}`);
+console.log(`- Tagged ${endsWithTransportModeCount} words with ${ENDS_WITH_TRANSPORT_MODE_CATEGORY}`);
 console.log(`- Tagged ${musicGenreCount} words with ${MUSIC_GENRE_CATEGORY}`);
+console.log(`- Tagged ${startsWithMusicGenreCount} words with ${STARTS_WITH_MUSIC_GENRE_CATEGORY}`);
+console.log(`- Tagged ${endsWithMusicGenreCount} words with ${ENDS_WITH_MUSIC_GENRE_CATEGORY}`);
 console.log(`- Removed ${duplicateCategoriesRemoved} duplicate categories within words`);
 console.log(`- Found and merged ${duplicateWordsFound} duplicate words`);
 console.log(`- Generated ${Object.keys(finalCategories).length} categories`);
