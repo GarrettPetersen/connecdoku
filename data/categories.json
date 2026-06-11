@@ -4736,7 +4736,9 @@
     "Waterloo"
   ],
   "Abstract Concepts": [
+    "Control",
     "Conversation",
+    "Corner",
     "Fact",
     "Food",
     "Gift",
@@ -4749,6 +4751,7 @@
     "Situationship",
     "Spot",
     "Think",
+    "Touch",
     "Vibe",
     "Void",
     "World",
@@ -5194,6 +5197,7 @@
     "Beer",
     "Bordeaux",
     "Bourbon",
+    "Bud",
     "Burgundy",
     "Cachaça",
     "Champagne",
@@ -6759,6 +6763,7 @@
     "Black Widow",
     "Coffee",
     "Crow",
+    "Dark",
     "Microraptor",
     "Nick Fury",
     "Panther",
@@ -7291,6 +7296,7 @@
     "Texas Book Depository",
     "Theatre of Pompey",
     "Theodosian Walls",
+    "Tomb",
     "Trump Tower",
     "Versailles",
     "Watergate",
@@ -7753,6 +7759,7 @@
     "Broccoli",
     "Brontornis",
     "Bruin",
+    "Bud",
     "Buffalo",
     "Bull",
     "Buttercup",
@@ -8786,6 +8793,7 @@
     "Indigo",
     "Iris",
     "Jade",
+    "Lime",
     "Magenta",
     "Olive",
     "Orange",
@@ -10310,6 +10318,7 @@
     "Boysenberry",
     "Bristlecone Pine",
     "Broccoli",
+    "Bud",
     "Buttercup",
     "Cabbage",
     "Cacao",
@@ -11418,6 +11427,7 @@
     "Bordeaux",
     "Bourbon",
     "Bubble Tea",
+    "Bud",
     "Burgundy",
     "CHA",
     "Cachaça",
@@ -12247,6 +12257,7 @@
     "Bechuanaland",
     "British Somaliland",
     "Cleveland",
+    "Command",
     "Easter Island",
     "Empress of Ireland",
     "Finland",
@@ -12354,6 +12365,7 @@
     "Papa"
   ],
   "Ends with APE": [
+    "Escape",
     "Grape",
     "Snape"
   ],
@@ -12407,6 +12419,7 @@
   ],
   "Ends with ARK": [
     "Arya Stark",
+    "Dark",
     "Denmark",
     "Great White Shark",
     "Jurassic Park",
@@ -12847,7 +12860,8 @@
     "BTS"
   ],
   "Ends with BUD": [
-    "Air Bud"
+    "Air Bud",
+    "Bud"
   ],
   "Ends with BUG": [
     "Ladybug"
@@ -13904,6 +13918,9 @@
     "Montreal Bagel",
     "New York Bagel"
   ],
+  "Ends with GEM": [
+    "Gem"
+  ],
   "Ends with GEN": [
     "Halogen",
     "Hydrogen",
@@ -14405,7 +14422,8 @@
     "Battle of Red Cliff"
   ],
   "Ends with IFT": [
-    "Gift"
+    "Gift",
+    "Shift"
   ],
   "Ends with IGH": [
     "Raleigh"
@@ -14519,6 +14537,7 @@
     "About Time",
     "Ashes of Time",
     "Bullet Time",
+    "Lime",
     "Somewhere in Time",
     "The Land Before Time",
     "The Map of Time",
@@ -14628,6 +14647,7 @@
     "Sledding",
     "Sling",
     "Speed Skating",
+    "Spring",
     "Sticky Toffee Pudding",
     "Surfing",
     "Swimming",
@@ -14725,6 +14745,7 @@
     "National Lampoon's Vacation",
     "Nevado del Ruiz Eruption",
     "Onion",
+    "Option",
     "Orion",
     "Permian-Triassic Extinction",
     "Pinatubo Eruption",
@@ -15835,6 +15856,7 @@
   ],
   "Ends with NER": [
     "Blade Runner",
+    "Corner",
     "Dinner",
     "Edward Jenner",
     "Kraft Dinner",
@@ -16311,7 +16333,8 @@
     "Roma"
   ],
   "Ends with OMB": [
-    "H-bomb"
+    "H-bomb",
+    "Tomb"
   ],
   "Ends with OME": [
     "Rome",
@@ -17091,6 +17114,7 @@
     "The Princess and the Frog"
   ],
   "Ends with ROL": [
+    "Control",
     "The Muppet Christmas Carol"
   ],
   "Ends with RON": [
@@ -17615,6 +17639,7 @@
     "Carter",
     "Center",
     "Demeter",
+    "Enter",
     "Get Carter",
     "Hannibal Lecter",
     "Helicopter",
@@ -17885,6 +17910,9 @@
     "Lettuce",
     "Oyster Sauce",
     "Soy Sauce"
+  ],
+  "Ends with UCH": [
+    "Touch"
   ],
   "Ends with UCK": [
     "Buck",
@@ -18559,6 +18587,7 @@
     "Blueberry",
     "Brachiopods",
     "Bristlecone Pine",
+    "Bud",
     "Buttercup",
     "Butterfly",
     "Cardamom",
@@ -20300,6 +20329,7 @@
     "Violet"
   ],
   "Flowers": [
+    "Bud",
     "Buttercup",
     "Cherry Blossom",
     "Daisy",
@@ -20526,6 +20556,7 @@
     "Lemon",
     "Lettuce",
     "Lima",
+    "Lime",
     "Linguine",
     "Lo Mein",
     "Lobster",
@@ -21103,6 +21134,7 @@
   ],
   "Gemstones": [
     "Emerald",
+    "Gem",
     "Pearl",
     "Ruby",
     "Sapphire",
@@ -21583,6 +21615,7 @@
     "Temple of Saturn",
     "Theatre of Pompey",
     "Thermopylae",
+    "Tomb",
     "Waterloo",
     "Xuanwu Gate"
   ],
@@ -21690,6 +21723,7 @@
     "Bristlecone Pine",
     "Broccoli",
     "Bruin",
+    "Bud",
     "Buffalo",
     "Bull",
     "Buttercup",
@@ -23666,6 +23700,7 @@
   "Materials": [
     "Dust",
     "Film",
+    "Gem",
     "Ground",
     "Ice",
     "Notebook",
@@ -24922,6 +24957,7 @@
   "Military Terms": [
     "Battlefield",
     "Brig",
+    "Command",
     "NATO",
     "Overwatch",
     "Scout",
@@ -24974,6 +25010,7 @@
     "Brachiopods",
     "Bristlecone Pine",
     "Brontornis",
+    "Bud",
     "Bull",
     "Buttercup",
     "Butterfly",
@@ -31632,6 +31669,7 @@
     "Bristlecone Pine",
     "Brontornis",
     "Bruin",
+    "Bud",
     "Bull",
     "Buttercup",
     "Butterfly",
@@ -32057,6 +32095,7 @@
     "Blueberry",
     "Brachiopods",
     "Bristlecone Pine",
+    "Bud",
     "Buttercup",
     "Butterfly",
     "Cactus",
@@ -32453,6 +32492,7 @@
     "Beetle",
     "Blueberry",
     "Brachiopods",
+    "Bud",
     "Centipede",
     "Cinnamon",
     "Club Moss",
@@ -32524,6 +32564,7 @@
     "Birch",
     "Brachiopods",
     "Bristlecone Pine",
+    "Bud",
     "Buttercup",
     "Butterfly",
     "Cactus",
@@ -34242,6 +34283,7 @@
   "Plant-Based Colors": [
     "Buttercup",
     "Jade",
+    "Lime",
     "Olive",
     "Orange",
     "Rose",
@@ -34262,6 +34304,7 @@
     "Boysenberry",
     "Bristlecone Pine",
     "Broccoli",
+    "Bud",
     "Buttercup",
     "Cabbage",
     "Cacao",
@@ -34313,6 +34356,7 @@
     "Lavender",
     "Lichen",
     "Lily",
+    "Lime",
     "Lingonberry",
     "Loganberry",
     "Macadamia",
@@ -34430,6 +34474,7 @@
     "Bristlecone Pine",
     "Broccoli",
     "Bruin",
+    "Bud",
     "Buffalo",
     "Bull",
     "Buttercup",
@@ -34681,6 +34726,7 @@
     "Brachiopods",
     "Bristlecone Pine",
     "Bruin",
+    "Bud",
     "Bull",
     "Buttercup",
     "Butterfly",
@@ -35335,6 +35381,7 @@
     "Bristlecone Pine",
     "Broccoli",
     "Bruin",
+    "Bud",
     "Buffalo",
     "Bull",
     "Buttercup",
@@ -36562,6 +36609,7 @@
     "Temple of Artemis",
     "Temple of Castor and Pollux",
     "Temple of Saturn",
+    "Tomb",
     "Vatican City"
   ],
   "Religious Stories": [
@@ -38336,9 +38384,14 @@
     "X"
   ],
   "Software": [
+    "Command",
+    "Control",
     "Data",
+    "Enter",
     "INT",
-    "Key"
+    "Key",
+    "Option",
+    "Shift"
   ],
   "Solar System Formation": [
     "Formation of Earth",
@@ -39724,6 +39777,7 @@
     "Buckingham Palace"
   ],
   "Starts with BUD": [
+    "Bud",
     "Budapest",
     "Buddy Holly"
   ],
@@ -40103,6 +40157,7 @@
     "Comfortably Numb",
     "Comic Book Guy",
     "Comino",
+    "Command",
     "Commentarii de Bello Gallico",
     "Commodus",
     "Communist Bloc",
@@ -40124,6 +40179,7 @@
     "Constantine the Great",
     "Constantinople",
     "Conte di Savoia",
+    "Control",
     "Conversation"
   ],
   "Starts with COO": [
@@ -40146,6 +40202,7 @@
     "Cormorant",
     "Corn",
     "Corned Beef",
+    "Corner",
     "Coronation of Elizabeth II",
     "Corsair",
     "Corsica",
@@ -40291,6 +40348,7 @@
   ],
   "Starts with DAR": [
     "Daredevil",
+    "Dark",
     "Dark Side of the Moon",
     "Darkroom",
     "Darwin"
@@ -40675,6 +40733,7 @@
   ],
   "Starts with ENT": [
     "Entebbe Hijacking",
+    "Enter",
     "Enterprise"
   ],
   "Starts with ENV": [
@@ -40691,6 +40750,7 @@
     "Eritrea"
   ],
   "Starts with ESC": [
+    "Escape",
     "Escape from New York",
     "Escargot"
   ],
@@ -41040,6 +41100,7 @@
     "Gelato"
   ],
   "Starts with GEM": [
+    "Gem",
     "Gemini"
   ],
   "Starts with GEN": [
@@ -42317,7 +42378,8 @@
     "Lily"
   ],
   "Starts with LIM": [
-    "Lima"
+    "Lima",
+    "Lime"
   ],
   "Starts with LIN": [
     "Lincoln",
@@ -43143,6 +43205,9 @@
   ],
   "Starts with OPP": [
     "Oppenheimer"
+  ],
+  "Starts with OPT": [
+    "Option"
   ],
   "Starts with ORA": [
     "Orange",
@@ -44115,6 +44180,7 @@
   ],
   "Starts with SHI": [
     "Shield",
+    "Shift",
     "Shikoku",
     "Ship"
   ],
@@ -44363,6 +44429,7 @@
     "Spotlight"
   ],
   "Starts with SPR": [
+    "Spring",
     "Spring and Autumn Annals",
     "Springfield"
   ],
@@ -45080,6 +45147,7 @@
     "Tom Yum",
     "Tom and Jerry",
     "Tomato",
+    "Tomb",
     "Tommy"
   ],
   "Starts with TON": [
@@ -45105,6 +45173,7 @@
     "Total War"
   ],
   "Starts with TOU": [
+    "Touch",
     "Tourtiere"
   ],
   "Starts with TOY": [
@@ -46733,6 +46802,7 @@
     "Brother Bear",
     "Brownie",
     "Buchanan",
+    "Bud",
     "Buddy Holly",
     "Buick",
     "Burns",
@@ -51636,12 +51706,19 @@
     "Thunder"
   ],
   "_____ Board": [
+    "Black",
+    "Bread",
     "Chess",
     "Game",
+    "Key",
     "Mother",
     "Ouija",
     "Score",
-    "Surf"
+    "Snow",
+    "Sound",
+    "Spring",
+    "Surf",
+    "White"
   ],
   "_____ Box": [
     "Ballot",
@@ -51710,14 +51787,21 @@
   ],
   "_____ Key": [
     "Car",
+    "Command",
+    "Control",
+    "Enter",
+    "Escape",
     "House",
     "Lock",
     "Map",
-    "Piano"
+    "Option",
+    "Piano",
+    "Shift"
   ],
   "_____ Light": [
     "Black",
     "Blue",
+    "Bud",
     "Flash",
     "Green",
     "Moon",
@@ -51759,8 +51843,12 @@
     "New"
   ],
   "_____ Paper": [
+    "Carbon",
     "Fly",
+    "Rice",
+    "Sand",
     "Term",
+    "Tissue",
     "Toilet",
     "Wall",
     "White"
@@ -51782,19 +51870,29 @@
     "Wedding"
   ],
   "_____ Room": [
+    "Ball",
+    "Bed",
+    "Board",
     "Chat",
     "Class",
     "Court",
+    "Dark",
+    "Escape",
     "Green",
     "News",
     "War"
   ],
   "_____ Stone": [
     "Black",
+    "Corner",
+    "Gem",
     "Kidney",
+    "Lime",
     "Moon",
     "Rolling",
-    "Rosetta"
+    "Rosetta",
+    "Tomb",
+    "Touch"
   ],
   "_____ Table": [
     "Coffee",
