@@ -86,6 +86,20 @@ Useful options:
 - `--api https://connecdoku.com`
 - `--reset-runs` (wipe previous run data first; admin key required)
 
+## Local Cron Schedule
+
+GitHub Actions no longer runs the daily benchmark on a schedule. The workflow is
+manual-only, and the scheduled retries should run from this machine instead:
+
+```bash
+make api-benchmark-cron-install
+```
+
+This installs a user crontab entry for `01:15`, `09:15`, and `17:15` local
+machine time. The wrapper reads `.env`, skips models that already have a result
+for the day, uses the same scheduled roster exclusions as the former GitHub
+Actions schedule, and writes logs under `.cache/benchmark-cron/`.
+
 ## Cursor Lane (Background Agents API)
 
 Runner:

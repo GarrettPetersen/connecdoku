@@ -1,7 +1,7 @@
 # Connecdoku Development Makefile
 # Common commands for managing the puzzle database and data
 
-.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve social-preview terminal-api terminal-cli terminal-play terminal-worker terminal-worker-remote terminal-worker-deploy d1-migrate-local d1-migrate-remote ai-prompts api-benchmark api-benchmark-reset-runs api-benchmark-all-parallel cursor-api-benchmark cursor-api-benchmark-list-models
+.PHONY: help build clean solve-and-curate delete-db check-future ai-curator update-data review-puzzle delete-low-quality geological-era species-data serve social-preview terminal-api terminal-cli terminal-play terminal-worker terminal-worker-remote terminal-worker-deploy d1-migrate-local d1-migrate-remote ai-prompts api-benchmark api-benchmark-reset-runs api-benchmark-all-parallel api-benchmark-cron-print api-benchmark-cron-install cursor-api-benchmark cursor-api-benchmark-list-models
 .PHONY: cell-options cell-replace
 
 # Local server config
@@ -25,6 +25,7 @@ help:
 	@echo "  ai-prompts     - Print one fully-filled automation prompt per model from .env"
 	@echo "  api-benchmark  - Run direct-provider API benchmark runner (DATE=YYYY-MM-DD THINKING=medium MODELS=a,b)"
 	@echo "  api-benchmark-all-parallel - Run all enabled direct+cursor models in parallel on one date"
+	@echo "  api-benchmark-cron-install - Install local cron schedule for benchmark retries"
 	@echo "  cursor-api-benchmark - Run Cursor Background Agent benchmark lane (DATE=YYYY-MM-DD THINKING=medium MODELS=a,b)"
 	@echo "  cursor-api-benchmark-list-models - Print Cursor recommended model IDs from /v0/models"
 	@echo "  api-benchmark-reset-runs - Wipe competition_results/attempts/benchmark_runs via admin endpoint"
@@ -231,6 +232,14 @@ api-benchmark-all-parallel:
 		$(if $(MAX_STEPS),--max-steps $(MAX_STEPS),) \
 		$(if $(CONCURRENCY),--concurrency $(CONCURRENCY),) \
 		$(if $(LANES),--lanes $(LANES),)
+
+api-benchmark-cron-print:
+	@echo "15 1,9,17 * * * cd $(CURDIR) && /bin/bash scripts/run_benchmark_cron.sh"
+
+api-benchmark-cron-install:
+	@(crontab -l 2>/dev/null | grep -v 'scripts/run_benchmark_cron.sh' ; echo "15 1,9,17 * * * cd $(CURDIR) && /bin/bash scripts/run_benchmark_cron.sh") | crontab -
+	@echo "Installed local benchmark cron schedule:"
+	@$(MAKE) --no-print-directory api-benchmark-cron-print
 
 # Run Cursor Background Agent benchmark lane.
 # Required env:
