@@ -1828,6 +1828,7 @@
     "Ends with ANT",
     "Eocene Epoch",
     "Fable Characters",
+    "Fire _____",
     "Holocene Epoch",
     "Insects",
     "Mesozoic Era",
@@ -2014,6 +2015,12 @@
     "Foods",
     "Starts with APP",
     "Things American"
+  ],
+  "April": [
+    "Ends with RIL",
+    "Months",
+    "Starts with APR",
+    "Time Periods"
   ],
   "April 14th, 1865": [
     "1860s",
@@ -2515,6 +2522,13 @@
     "Starts with ASS",
     "Things Roman"
   ],
+  "Assembly": [
+    "Ends with BLY",
+    "Events",
+    "Political Events",
+    "Starts with ASS",
+    "_____ Line"
+  ],
   "Aston Martin": [
     "1910s",
     "20th Century",
@@ -2579,6 +2593,13 @@
     "Starts with ATL",
     "Things American"
   ],
+  "Atlas": [
+    "Books",
+    "Ends with LAS",
+    "Geography",
+    "Greek Mythology",
+    "Starts with ATL"
+  ],
   "Attack of the Clones": [
     "2000s",
     "2002",
@@ -2621,6 +2642,12 @@
     "Ends with UDI",
     "Starts with AUD",
     "Things German"
+  ],
+  "August": [
+    "Ends with UST",
+    "Months",
+    "Starts with AUG",
+    "Time Periods"
   ],
   "Augusta": [
     "Cities",
@@ -5293,7 +5320,8 @@
     "Starts with BLA",
     "_____ Bird",
     "_____ Box",
-    "_____ Light"
+    "_____ Light",
+    "_____ Stone"
   ],
   "Black Cat": [
     "Animal Terms",
@@ -5440,7 +5468,8 @@
     "Biology",
     "Ends with OOD",
     "Red Things",
-    "Starts with BLO"
+    "Starts with BLO",
+    "_____ Bank"
   ],
   "Blood, toil, tears and sweat": [
     "1940s",
@@ -5560,9 +5589,11 @@
     "Ends with OAR",
     "Holocene Epoch",
     "Male Animals",
+    "Mammals",
     "Miocene Epoch",
     "Neogene Period",
     "Omnivores",
+    "Pigs",
     "Pleistocene Epoch",
     "Pliocene Epoch",
     "Quaternary Period",
@@ -5575,6 +5606,14 @@
     "Rime of the Ancient Mariner",
     "Starts with BOA",
     "Wooden Objects"
+  ],
+  "Boat": [
+    "Contains a Mode of Transport",
+    "Ends with OAT",
+    "Ends with a Mode of Transport",
+    "Starts with BOA",
+    "Vehicles",
+    "Watercraft"
   ],
   "Boaty McBoatface": [
     "2010s",
@@ -6738,6 +6777,14 @@
     "Starts with BUR",
     "Things Burundian"
   ],
+  "Bus": [
+    "Contains a Mode of Transport",
+    "Ends with BUS",
+    "Ends with a Mode of Transport",
+    "Public Transport",
+    "Starts with BUS",
+    "Vehicles"
+  ],
   "Bush": [
     "1980s",
     "1990s",
@@ -7388,6 +7435,15 @@
     "Starts with CAP",
     "The Sinking of RMS Titanic",
     "Things British"
+  ],
+  "Car": [
+    "Cars",
+    "Contains a Mode of Transport",
+    "Ends with CAR",
+    "Ends with a Mode of Transport",
+    "Starts with CAR",
+    "Vehicles",
+    "_____ Key"
   ],
   "Carbon": [
     "Contains a Mode of Transport",
@@ -8329,6 +8385,12 @@
     "Reptiles",
     "Starts with CHA"
   ],
+  "Chat": [
+    "Ends with HAT",
+    "Starts with CHA",
+    "Technology",
+    "_____ Room"
+  ],
   "Che": [
     "Desserts",
     "Ends with CHE",
@@ -8438,7 +8500,8 @@
     "Black and White",
     "Board Games",
     "Ends with ESS",
-    "Starts with CHE"
+    "Starts with CHE",
+    "_____ Board"
   ],
   "Chessboard": [
     "Black and White",
@@ -8983,6 +9046,12 @@
     "Things German",
     "Women"
   ],
+  "Class": [
+    "Ends with ASS",
+    "School",
+    "Starts with CLA",
+    "_____ Room"
+  ],
   "Claudius": [
     "1st Century",
     "Ancient Figures",
@@ -9179,6 +9248,14 @@
     "Mystery Stories",
     "Starts with CLU",
     "Things American"
+  ],
+  "Coast": [
+    "Bodies of Water",
+    "Ends with AST",
+    "Geography",
+    "Place Names",
+    "Starts with COA",
+    "_____ Line"
   ],
   "Cobalt": [
     "Blue Things",
@@ -10028,6 +10105,12 @@
     "The Crusades",
     "Things Middle Eastern"
   ],
+  "Court": [
+    "Ends with URT",
+    "Sports Terms",
+    "Starts with COU",
+    "_____ Room"
+  ],
   "Cow": [
     "Animal Species",
     "Animal Terms",
@@ -10422,6 +10505,7 @@
     "Plants",
     "Pleistocene Epoch",
     "Quaternary Period",
+    "Sea _____",
     "Starts with CUC",
     "Vegetables"
   ],
@@ -10960,7 +11044,8 @@
     "Pliocene Epoch",
     "Quaternary Period",
     "Relationships",
-    "Starts with DAT"
+    "Starts with DAT",
+    "_____ Line"
   ],
   "Dauntless": [
     "1930s",
@@ -11119,6 +11204,12 @@
     "Mesozoic Era",
     "Starts with DEC",
     "Volcanic Eruptions"
+  ],
+  "December": [
+    "Ends with BER",
+    "Months",
+    "Starts with DEC",
+    "Time Periods"
   ],
   "December 25th, 2010": [
     "2010",
@@ -11673,6 +11764,7 @@
     "Pliocene Epoch",
     "Quaternary Period",
     "Real Animals",
+    "Sea _____",
     "Starts with DOG",
     "_____ Fish"
   ],
@@ -12017,8 +12109,10 @@
     "Mythical Creatures",
     "Red _____",
     "Reptiles",
+    "Sea _____",
     "Starts with DRA",
-    "Things Chinese"
+    "Things Chinese",
+    "_____ Fly"
   ],
   "Dragon Ball": [
     "Anime",
@@ -12143,6 +12237,12 @@
     "Furniture",
     "Household Items",
     "Starts with DRE"
+  ],
+  "Drill": [
+    "Ends with ILL",
+    "Fire _____",
+    "Starts with DRI",
+    "Tools"
   ],
   "Driving Miss Daisy": [
     "1980s",
@@ -12432,6 +12532,7 @@
   ],
   "Earth": [
     "Ends with RTH",
+    "Geography",
     "Parts of Earth",
     "Planets",
     "Starts with EAR"
@@ -13942,6 +14043,12 @@
     "Starts with FAT",
     "Things Middle Eastern"
   ],
+  "February": [
+    "Ends with ARY",
+    "Months",
+    "Starts with FEB",
+    "Time Periods"
+  ],
   "Federation": [
     "Alliances",
     "Ends with ION",
@@ -14159,6 +14266,12 @@
     "Stories about Families",
     "Things American"
   ],
+  "Finish": [
+    "Ends with ISH",
+    "Sports Terms",
+    "Starts with FIN",
+    "_____ Line"
+  ],
   "Finland": [
     "Countries",
     "Countries in Europe",
@@ -14179,7 +14292,8 @@
     "Lighting",
     "Red Things",
     "Starts with FIR",
-    "Yellow Things"
+    "Yellow Things",
+    "_____ Fly"
   ],
   "Fire Lance": [
     "10th Century",
@@ -14467,6 +14581,7 @@
     "Currently Living Animals",
     "Ends with FLY",
     "Eocene Epoch",
+    "Fire _____",
     "Holocene Epoch",
     "Insects",
     "Jurassic Period",
@@ -14483,7 +14598,8 @@
     "Real Animals",
     "Starts with FLY",
     "Things That Fly",
-    "Triassic Period"
+    "Triassic Period",
+    "_____ Paper"
   ],
   "Flyer": [
     "Ends with YER",
@@ -14508,6 +14624,12 @@
     "Ends with WER",
     "People",
     "Starts with FOL"
+  ],
+  "Food": [
+    "Abstract Concepts",
+    "Ends with OOD",
+    "Starts with FOO",
+    "_____ Bank"
   ],
   "Football": [
     "Ends with ALL",
@@ -14752,6 +14874,7 @@
     "Cenozoic Era",
     "Currently Living Animals",
     "Ends with FOX",
+    "Fire _____",
     "Holocene Epoch",
     "Mammals",
     "Media Companies",
@@ -15135,6 +15258,13 @@
     "Stories about Families",
     "Things American"
   ],
+  "Fruit": [
+    "Ends with UIT",
+    "Foods",
+    "Fruits",
+    "Starts with FRU",
+    "_____ Fly"
+  ],
   "Fuerteventura": [
     "Ends with URA",
     "Islands",
@@ -15352,6 +15482,11 @@
     "Starts with GAM",
     "Superheroes",
     "X-Men Characters"
+  ],
+  "Game": [
+    "Ends with AME",
+    "Starts with GAM",
+    "_____ Board"
   ],
   "Gamera": [
     "1960s",
@@ -16543,7 +16678,8 @@
     "Ends with EEN",
     "Golf Terms",
     "Starts with GRE",
-    "_____ Light"
+    "_____ Light",
+    "_____ Room"
   ],
   "Green Apple": [
     "Ends with PLE",
@@ -18685,8 +18821,10 @@
     "Pliocene Epoch",
     "Quaternary Period",
     "Real Animals",
+    "Sea _____",
     "Starts with HOR",
-    "Trojan War"
+    "Trojan War",
+    "_____ Fly"
   ],
   "Horse Racing": [
     "Ends with ING",
@@ -18801,7 +18939,9 @@
     "Ends with a Music Genre",
     "Starts with HOU",
     "Starts with a Music Genre",
-    "White _____"
+    "White _____",
+    "_____ Fly",
+    "_____ Key"
   ],
   "House of Flying Daggers": [
     "2000s",
@@ -20432,6 +20572,12 @@
     "The Fall of Constantinople",
     "Things Turkish"
   ],
+  "January": [
+    "Ends with ARY",
+    "Months",
+    "Starts with JAN",
+    "Time Periods"
+  ],
   "Japan": [
     "Constitutional Monarchies",
     "Countries",
@@ -20540,7 +20686,8 @@
     "Contains a Mode of Transport",
     "Ends with EEP",
     "Ends with a Mode of Transport",
-    "Starts with JEE"
+    "Starts with JEE",
+    "Vehicles"
   ],
   "Jefferson": [
     "18th Century",
@@ -21226,6 +21373,12 @@
     "Things Roman",
     "Tragedy Stories"
   ],
+  "July": [
+    "Ends with ULY",
+    "Months",
+    "Starts with JUL",
+    "Time Periods"
+  ],
   "July 14th, 1789": [
     "1780s",
     "18th Century",
@@ -21254,6 +21407,12 @@
     "Ends with MBO",
     "Starts with JUM",
     "Synonyms for Big"
+  ],
+  "June": [
+    "Ends with UNE",
+    "Months",
+    "Starts with JUN",
+    "Time Periods"
   ],
   "June 18th, 1815": [
     "1810s",
@@ -21814,6 +21973,12 @@
     "Ends with KIA",
     "Starts with KIA",
     "Things Korean"
+  ],
+  "Kidney": [
+    "Body Parts",
+    "Ends with NEY",
+    "Starts with KID",
+    "_____ Stone"
   ],
   "Kielbasa": [
     "Ends with ASA",
@@ -23650,6 +23815,7 @@
     "Predators",
     "Quaternary Period",
     "Real Animals",
+    "Sea _____",
     "Starts with LIO",
     "_____ Fish"
   ],
@@ -23915,6 +24081,13 @@
     "Sea Creatures",
     "Starts with LOB",
     "Triassic Period"
+  ],
+  "Lock": [
+    "Ends with OCK",
+    "Household Items",
+    "Starts with LOC",
+    "Tools",
+    "_____ Key"
   ],
   "Locker": [
     "Ends with KER",
@@ -24959,6 +25132,13 @@
     "Starts with MAN",
     "Things American"
   ],
+  "Map": [
+    "Ends with MAP",
+    "Geography",
+    "Place Names",
+    "Starts with MAP",
+    "_____ Key"
+  ],
   "Maple": [
     "Cenozoic Era",
     "Currently Living Plants",
@@ -25008,9 +25188,11 @@
     "Ends with RCH",
     "Events",
     "Labor Protest Actions",
+    "Months",
     "Music",
     "Political Events",
-    "Starts with MAR"
+    "Starts with MAR",
+    "Time Periods"
   ],
   "Marciano": [
     "1950s",
@@ -25601,6 +25783,13 @@
     "Greek Architecture",
     "Seven Wonders",
     "Starts with MAU"
+  ],
+  "May": [
+    "Ends with MAY",
+    "Months",
+    "Starts with MAY",
+    "Time Periods",
+    "_____ Fly"
   ],
   "May the Force be with you": [
     "1970s",
@@ -26830,7 +27019,8 @@
     "Poems",
     "Satellites",
     "Starts with MOO",
-    "_____ Light"
+    "_____ Light",
+    "_____ Stone"
   ],
   "Mooncake": [
     "Desserts",
@@ -27029,6 +27219,12 @@
     "Real Animals",
     "Starts with MOT",
     "Things That Fly"
+  ],
+  "Mother": [
+    "Ends with HER",
+    "People",
+    "Starts with MOT",
+    "_____ Board"
   ],
   "Mothra": [
     "1960s",
@@ -27892,6 +28088,11 @@
     "Things New Zealand",
     "WWII Allied Powers"
   ],
+  "News": [
+    "Ends with EWS",
+    "Starts with NEW",
+    "_____ Room"
+  ],
   "Newspaper": [
     "Black and White",
     "Ends with PER",
@@ -28256,6 +28457,11 @@
     "Starts with NOR",
     "Things Yemeni"
   ],
+  "Northern": [
+    "Ends with ERN",
+    "Starts with NOR",
+    "_____ Light"
+  ],
   "Northern Rhodesia": [
     "Countries",
     "Countries in Africa",
@@ -28360,8 +28566,10 @@
   ],
   "November": [
     "Ends with BER",
+    "Months",
     "NATO Phonetic Alphabet",
-    "Starts with NOV"
+    "Starts with NOV",
+    "Time Periods"
   ],
   "November 22nd, 1963": [
     "1960s",
@@ -28555,6 +28763,12 @@
     "Ends with EAN",
     "Rime of the Ancient Mariner",
     "Starts with OCE"
+  ],
+  "October": [
+    "Ends with BER",
+    "Months",
+    "Starts with OCT",
+    "Time Periods"
   ],
   "Oden": [
     "Ends with DEN",
@@ -29284,6 +29498,14 @@
     "Starts with OTT",
     "The Fall of Constantinople"
   ],
+  "Ouija": [
+    "Board Game Equipment",
+    "Board Games",
+    "Ends with IJA",
+    "Magic",
+    "Starts with OUI",
+    "_____ Board"
+  ],
   "Out": [
     "Abstract Concepts",
     "Camp _____",
@@ -29702,7 +29924,8 @@
     "Starts with PAP",
     "Stationery",
     "White Things",
-    "White _____"
+    "White _____",
+    "_____ Jam"
   ],
   "Papua New Guinea": [
     "Countries",
@@ -30003,6 +30226,14 @@
     "Pleistocene Epoch",
     "Quaternary Period",
     "Starts with PEA"
+  ],
+  "Pearl": [
+    "Ends with ARL",
+    "Gemstones",
+    "Music",
+    "Pearl Jam",
+    "Starts with PEA",
+    "_____ Jam"
   ],
   "Pearl Harbor": [
     "1940s",
@@ -30616,7 +30847,8 @@
     "Ends with ANO",
     "Music",
     "Musical Instruments",
-    "Starts with PIA"
+    "Starts with PIA",
+    "_____ Key"
   ],
   "Picard": [
     "Contains a Mode of Transport",
@@ -30685,6 +30917,19 @@
     "Starts with PIE",
     "State Capitals",
     "Things American"
+  ],
+  "Pig": [
+    "Animal Terms",
+    "Ends with PIG",
+    "Pigs",
+    "Starts with PIG"
+  ],
+  "Piggy": [
+    "Animal Terms",
+    "Ends with GGY",
+    "Pigs",
+    "Starts with PIG",
+    "_____ Bank"
   ],
   "Pike": [
     "15th Century",
@@ -31031,6 +31276,14 @@
     "Foods",
     "Starts with PIZ",
     "Things Italian"
+  ],
+  "Plane": [
+    "Contains a Mode of Transport",
+    "Ends with ANE",
+    "Ends with a Mode of Transport",
+    "Starts with PLA",
+    "Things That Fly",
+    "Vehicles"
   ],
   "Planet": [
     "Contains a Mode of Transport",
@@ -31458,7 +31711,10 @@
   ],
   "Porky Pig": [
     "Ends with PIG",
+    "Fictional Animals",
     "Fictional Characters",
+    "Fictional Pigs",
+    "Pigs",
     "Starts with POR",
     "Warner Bros. Characters"
   ],
@@ -32074,6 +32330,14 @@
     "Quaternary Period",
     "Starts with PUM",
     "Vegetables"
+  ],
+  "Punch": [
+    "Drinks",
+    "Ends with NCH",
+    "Foods",
+    "Sports Terms",
+    "Starts with PUN",
+    "_____ Line"
   ],
   "Punk Rock": [
     "1970s",
@@ -33422,7 +33686,8 @@
     "Ends with VER",
     "Moon _____",
     "Rivers",
-    "Starts with RIV"
+    "Starts with RIV",
+    "_____ Bank"
   ],
   "Road Runner": [
     "Ends with NER",
@@ -33739,6 +34004,11 @@
     "Starts with ROG",
     "Things American"
   ],
+  "Rolling": [
+    "Ends with ING",
+    "Starts with ROL",
+    "_____ Stone"
+  ],
   "Rolls-Royce": [
     "1900s",
     "20th Century",
@@ -33969,6 +34239,15 @@
     "Pliocene Epoch",
     "Quaternary Period",
     "Starts with ROS"
+  ],
+  "Rosetta": [
+    "Cities",
+    "Cities in Africa",
+    "Ends with TTA",
+    "Locations in Africa",
+    "Starts with ROS",
+    "Things Egyptian",
+    "_____ Stone"
   ],
   "Rosé": [
     "Alcoholic Drinks",
@@ -35153,6 +35432,15 @@
     "Starts with SCO",
     "Warner Bros. Characters"
   ],
+  "Score": [
+    "Contains a Music Genre",
+    "Ends with ORE",
+    "Ends with a Music Genre",
+    "Music",
+    "Sports Terms",
+    "Starts with SCO",
+    "_____ Board"
+  ],
   "Scorpio": [
     "Ends with PIO",
     "Starts with SCO",
@@ -35431,6 +35719,12 @@
     "Place Names",
     "Starts with SEO",
     "Things Korean"
+  ],
+  "September": [
+    "Ends with BER",
+    "Months",
+    "Starts with SEP",
+    "Time Periods"
   ],
   "Sequoia": [
     "Cenozoic Era",
@@ -35778,6 +36072,15 @@
     "Place Names",
     "Starts with SHI",
     "Things Japanese"
+  ],
+  "Ship": [
+    "Contains a Mode of Transport",
+    "Ends with HIP",
+    "Ends with a Mode of Transport",
+    "Ships",
+    "Starts with SHI",
+    "Vehicles",
+    "Watercraft"
   ],
   "Shonisaurus": [
     "Animal Species",
@@ -36360,6 +36663,13 @@
     "Starts with SKY",
     "Things British"
   ],
+  "Skyline": [
+    "Buildings",
+    "Ends with INE",
+    "Place Names",
+    "Starts with SKY",
+    "_____ Line"
+  ],
   "Slaughterhouse-Five": [
     "1960s",
     "20th Century",
@@ -36564,7 +36874,8 @@
     "Ends with NOW",
     "Starts with SNO",
     "Weather",
-    "White Things"
+    "White Things",
+    "_____ Bank"
   ],
   "Snow White and the Seven Dwarfs": [
     "1930s",
@@ -37080,6 +37391,7 @@
     "Currently Living Animals",
     "Ends with SOW",
     "Female Animals",
+    "Pigs",
     "Real Animals",
     "Starts with SOW"
   ],
@@ -37116,6 +37428,13 @@
     "Sci-fi Stories",
     "Starts with SOY",
     "Things American"
+  ],
+  "Space": [
+    "Astronomical Objects",
+    "Ends with ACE",
+    "Physics Terms",
+    "Starts with SPA",
+    "_____ Jam"
   ],
   "Spades": [
     "19th Century",
@@ -37589,6 +37908,7 @@
   "Star": [
     "Astronomical Objects",
     "Ends with TAR",
+    "Sea _____",
     "Starts with STA",
     "_____ Fish"
   ],
@@ -37771,6 +38091,7 @@
   ],
   "Stone": [
     "Ends with ONE",
+    "Fire _____",
     "Gemstones",
     "Materials",
     "Moon _____",
@@ -38176,6 +38497,12 @@
     "Soul Songs",
     "Starts with SUP",
     "Stevie Wonder"
+  ],
+  "Surf": [
+    "Ends with URF",
+    "Sports",
+    "Starts with SUR",
+    "_____ Board"
   ],
   "Surfing": [
     "Ends with ING",
@@ -39076,6 +39403,12 @@
     "Sauces",
     "Starts with TER",
     "Things Japanese"
+  ],
+  "Term": [
+    "Ends with ERM",
+    "School",
+    "Starts with TER",
+    "_____ Paper"
   ],
   "Terminator 2: Judgment Day": [
     "1990s",
@@ -43222,9 +43555,12 @@
     "Ends with IGS",
     "Fairy Tales",
     "Family-Friendly Stories",
+    "Fictional Animals",
+    "Fictional Pigs",
     "First in Internal Chronology",
     "First in Release Order",
     "Movies",
+    "Pigs",
     "Starts with THE",
     "Things American",
     "Trios"
@@ -44311,6 +44647,12 @@
     "Ends with ONE",
     "Starts with TOB"
   ],
+  "Toe": [
+    "Body Parts",
+    "Ends with TOE",
+    "Starts with TOE",
+    "_____ Jam"
+  ],
   "Togo": [
     "Countries",
     "Countries in Africa",
@@ -44323,6 +44665,11 @@
     "Republics",
     "Starts with TOG",
     "Things Togolese"
+  ],
+  "Toilet": [
+    "Ends with LET",
+    "Starts with TOI",
+    "_____ Paper"
   ],
   "Tokyo": [
     "Cities",
@@ -44551,6 +44898,7 @@
     "Ends with FIC",
     "Starts with TRA",
     "Traffic Signs",
+    "_____ Jam",
     "_____ Light"
   ],
   "Trailer Park Boys": [
@@ -44564,6 +44912,14 @@
     "Starts with TRA",
     "TV Shows",
     "Things Canadian"
+  ],
+  "Train": [
+    "Contains a Mode of Transport",
+    "Ends with AIN",
+    "Ends with a Mode of Transport",
+    "Public Transport",
+    "Starts with TRA",
+    "Vehicles"
   ],
   "Trainspotting": [
     "1990s",
@@ -44881,6 +45237,15 @@
     "Ends with YES",
     "Starts with TRO"
   ],
+  "Truck": [
+    "Cars",
+    "Contains a Mode of Transport",
+    "Ends with UCK",
+    "Ends with a Mode of Transport",
+    "Fire _____",
+    "Starts with TRU",
+    "Vehicles"
+  ],
   "Truman": [
     "1940s",
     "1950s",
@@ -45112,6 +45477,20 @@
     "Starts with TUR",
     "Stories about Families",
     "Things American"
+  ],
+  "Turtle": [
+    "Animal Species",
+    "Animal Terms",
+    "Cenozoic Era",
+    "Currently Living Animals",
+    "Ends with TLE",
+    "Holocene Epoch",
+    "Quaternary Period",
+    "Real Animals",
+    "Reptiles",
+    "Sea Creatures",
+    "Sea _____",
+    "Starts with TUR"
   ],
   "Tuvalu": [
     "Countries",
@@ -46262,6 +46641,11 @@
     "Starts with WAL",
     "Things British"
   ],
+  "Wall": [
+    "Ends with ALL",
+    "Starts with WAL",
+    "_____ Paper"
+  ],
   "Walnut": [
     "Cenozoic Era",
     "Currently Living Plants",
@@ -46341,6 +46725,14 @@
     "Real People",
     "Starts with WAN",
     "Things Chinese"
+  ],
+  "War": [
+    "Ends with WAR",
+    "Military Conflicts",
+    "Military Terms",
+    "Starts with WAR",
+    "Wars",
+    "_____ Room"
   ],
   "War and Peace": [
     "1860s",
@@ -46764,6 +47156,14 @@
     "Ends with IST",
     "Starts with WHI",
     "Things British"
+  ],
+  "White": [
+    "Black and White",
+    "Colors",
+    "Ends with ITE",
+    "Starts with WHI",
+    "White Things",
+    "_____ Paper"
   ],
   "White Christmas": [
     "1950s",
@@ -47191,6 +47591,14 @@
     "Starts with WOR",
     "Things American",
     "Women"
+  ],
+  "World": [
+    "Abstract Concepts",
+    "Ends with RLD",
+    "Geography",
+    "Place Names",
+    "Starts with WOR",
+    "_____ Bank"
   ],
   "World War I": [
     "1910s",

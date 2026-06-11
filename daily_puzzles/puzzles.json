@@ -14198,5 +14198,125 @@
         "Pontifex Maximus"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Animal Species",
+      "Movies",
+      "Supervillains",
+      "_____ Light"
+    ],
+    "cols": [
+      "Black Things",
+      "DC Characters",
+      "Mammals",
+      "Starts with GRE"
+    ],
+    "words": [
+      [
+        "Crow",
+        "Robin",
+        "Elephant",
+        "Great White Shark"
+      ],
+      [
+        "Black Panther",
+        "Superman",
+        "King Kong",
+        "Grease"
+      ],
+      [
+        "Venom",
+        "Lex Luthor",
+        "Sabretooth",
+        "Green Goblin"
+      ],
+      [
+        "Black",
+        "Flash",
+        "Spot",
+        "Green"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "1800s",
+      "1910s",
+      "Ming Dynasty",
+      "The Crusades"
+    ],
+    "cols": [
+      "Battles",
+      "Period Stories",
+      "Rulers",
+      "Starts with THE"
+    ],
+    "words": [
+      [
+        "Battle of Trafalgar",
+        "Master and Commander: The Far Side of the World",
+        "Jean Bernadotte",
+        "The Napoleonic Wars"
+      ],
+      [
+        "Battle of Jutland",
+        "Titanic",
+        "Emperor Taisho",
+        "The Spanish Flu"
+      ],
+      [
+        "Battle of Lake Poyang",
+        "Romance of the Three Kingdoms",
+        "Zhu Yuanzhang",
+        "The realm, long divided, must unite"
+      ],
+      [
+        "Battle of Hattin",
+        "Kingdom of Heaven",
+        "Prester John",
+        "The First Crusade"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "French Revolution",
+      "Roman Republic",
+      "Things Chinese",
+      "Things Greek"
+    ],
+    "cols": [
+      "Historical Sites",
+      "Military Reformers",
+      "Wars",
+      "Women"
+    ],
+    "words": [
+      [
+        "Bastille",
+        "Napoleon Bonaparte",
+        "The Haitian Revolution",
+        "Marie Antoinette"
+      ],
+      [
+        "Roman Forum",
+        "Gaius Marius",
+        "Third Servile War",
+        "Livia Drusilla"
+      ],
+      [
+        "Grand Canal",
+        "Shang Yang",
+        "The Boxer Rebellion",
+        "Wu Zetian"
+      ],
+      [
+        "Thermopylae",
+        "Philip II of Macedon",
+        "The Trojan War",
+        "Athena"
+      ]
+    ]
   }
 ]
