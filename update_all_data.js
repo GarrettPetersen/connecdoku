@@ -57,7 +57,37 @@ const TRANSPORT_MODES = [
     'van',
     'yacht',
 ];
+const MUSIC_GENRE_CATEGORY = 'Contains a Music Genre';
+const MUSIC_GENRES = [
+    'ambient',
+    'blues',
+    'classical',
+    'core',
+    'country',
+    'disco',
+    'dub',
+    'folk',
+    'funk',
+    'gospel',
+    'grunge',
+    'hiphop',
+    'house',
+    'jazz',
+    'metal',
+    'opera',
+    'pop',
+    'punk',
+    'rap',
+    'reggae',
+    'rock',
+    'salsa',
+    'soul',
+    'techno',
+    'trance',
+    'wave',
+];
 let transportModeCount = 0;
+let musicGenreCount = 0;
 
 for (const [word, categories] of Object.entries(wordsData)) {
     totalWords++;
@@ -67,6 +97,7 @@ for (const [word, categories] of Object.entries(wordsData)) {
         !category.startsWith('Starts with ')
         && !category.startsWith('Ends with ')
         && category !== TRANSPORT_MODE_CATEGORY
+        && category !== MUSIC_GENRE_CATEGORY
     );
 
     // Only add new pattern tags to words with 3 or more letters
@@ -107,6 +138,10 @@ for (const [word, categories] of Object.entries(wordsData)) {
     if (TRANSPORT_MODES.some(mode => normalizedWord.includes(mode))) {
         newCategories.push(TRANSPORT_MODE_CATEGORY);
         transportModeCount++;
+    }
+    if (MUSIC_GENRES.some(genre => normalizedWord.includes(genre))) {
+        newCategories.push(MUSIC_GENRE_CATEGORY);
+        musicGenreCount++;
     }
 
     // Update the word's categories (for all words, to remove old pattern tags)
@@ -436,6 +471,7 @@ fs.writeFileSync(path.join(__dirname, 'data', 'thin_categories.json'), JSON.stri
 console.log('All data files updated successfully!');
 console.log(`- Updated ${updatedCount} words with patterns`);
 console.log(`- Tagged ${transportModeCount} words with ${TRANSPORT_MODE_CATEGORY}`);
+console.log(`- Tagged ${musicGenreCount} words with ${MUSIC_GENRE_CATEGORY}`);
 console.log(`- Removed ${duplicateCategoriesRemoved} duplicate categories within words`);
 console.log(`- Found and merged ${duplicateWordsFound} duplicate words`);
 console.log(`- Generated ${Object.keys(finalCategories).length} categories`);

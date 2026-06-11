@@ -478,6 +478,7 @@
     "You had me at hello"
   ],
   "1997": [
+    "Air Bud",
     "Alien: Resurrection",
     "Dante's Peak",
     "Donnie Brasco",
@@ -2394,6 +2395,7 @@
     "A Bug's Life",
     "A Map of the World",
     "Agent Smith",
+    "Air Bud",
     "Aladdin",
     "Alien 3",
     "Alien: Resurrection",
@@ -3219,6 +3221,7 @@
     "Acura",
     "Adolf Eichmann",
     "Agent Smith",
+    "Air Bud",
     "Airbus",
     "Akira",
     "Aladdin",
@@ -4714,9 +4717,13 @@
     "Waterloo"
   ],
   "Abstract Concepts": [
+    "Fact",
     "INT",
     "Infinity",
     "Nothing",
+    "Reality",
+    "Spot",
+    "Vibe",
     "Void",
     "Zero"
   ],
@@ -5527,6 +5534,7 @@
     "Hallucigenia",
     "Hawk",
     "Hellbender",
+    "Herring",
     "Horse",
     "Hummingbird",
     "Humpback Whale",
@@ -5646,12 +5654,14 @@
     "Zebra"
   ],
   "Animal Stories": [
+    "Air Bud",
     "The Jungle Book",
     "The Tale of Peter Rabbit",
     "The Wind in the Willows",
     "Winnie-the-Pooh"
   ],
   "Animal Terms": [
+    "Air Bud",
     "Albatross",
     "Allosaurus",
     "Ambulocetus",
@@ -5678,6 +5688,7 @@
     "Bear",
     "Beast",
     "Bee",
+    "Beethoven",
     "Beetle",
     "Behemoth",
     "Big Bird",
@@ -5783,6 +5794,7 @@
     "Hawkeye",
     "Hellbender",
     "Hen",
+    "Herring",
     "Horse",
     "Hummingbird",
     "Humpback Whale",
@@ -5862,6 +5874,7 @@
     "Plateosaurus",
     "Plesiadapis",
     "Plesiosaurus",
+    "Pluto",
     "Pokemon",
     "Polar Bear",
     "Protoceratops",
@@ -5885,6 +5898,7 @@
     "Robin",
     "Rodan",
     "Rooster",
+    "Rover",
     "Ruby",
     "Sabretooth",
     "Sailfish",
@@ -5912,6 +5926,7 @@
     "Spider",
     "Spike",
     "Spinosaurus",
+    "Spot",
     "Stallion",
     "Stegosaurus",
     "Styracosaurus",
@@ -6005,6 +6020,7 @@
   "Apollo 11": [
     "Apollo",
     "Apollo 11",
+    "Landing",
     "Moon",
     "NASA"
   ],
@@ -6213,12 +6229,14 @@
   ],
   "Astronomical Events": [
     "Formation of Earth",
-    "Formation of Moon"
+    "Formation of Moon",
+    "Phase"
   ],
   "Astronomical Objects": [
     "Aurora",
     "Black Hole",
     "Deimos",
+    "Dwarf",
     "Europa",
     "Galaxy",
     "Gemini",
@@ -6703,6 +6721,25 @@
     "Stout",
     "Venom"
   ],
+  "Black _____": [
+    "Berry",
+    "Box",
+    "Cat",
+    "Caviar",
+    "Coffee",
+    "Hawk",
+    "Ice",
+    "Light",
+    "Magic",
+    "Panther",
+    "Pepper",
+    "Rose",
+    "Sea",
+    "Sheep",
+    "Swan",
+    "Tea",
+    "Widow"
+  ],
   "Black and White": [
     "Anchiornis",
     "Brief Encounter",
@@ -6711,6 +6748,7 @@
     "Chessboard",
     "Citizen Kane",
     "Creature from the Black Lagoon",
+    "Gray",
     "High and Low",
     "Ikiru",
     "It's a Wonderful Life",
@@ -6804,6 +6842,7 @@
   ],
   "Board Game Equipment": [
     "Bishop",
+    "Blank",
     "Board",
     "Chessboard",
     "Dice",
@@ -6867,7 +6906,9 @@
     "Pacific Ocean",
     "Persian Gulf",
     "Red Sea",
+    "River",
     "San Francisco Bay",
+    "Sea",
     "South Pacific",
     "Southern Ocean",
     "Yangtze River"
@@ -6875,6 +6916,7 @@
   "Body Parts": [
     "Achilles",
     "Arm",
+    "Gut",
     "Hearts",
     "Pinky"
   ],
@@ -7166,6 +7208,7 @@
     "Hadrian's Wall",
     "Hagia Sophia",
     "Hanging Gardens",
+    "House",
     "Lighthouse of Alexandria",
     "Machu Picchu",
     "Mar-A-Lago",
@@ -7331,6 +7374,7 @@
     "Porsche",
     "Renault",
     "Rolls-Royce",
+    "Rover",
     "Saab",
     "Saturn",
     "Seat",
@@ -7577,6 +7621,7 @@
     "Porsche",
     "Renault",
     "Rolls-Royce",
+    "Rover",
     "Saab",
     "Saturn",
     "Seat",
@@ -7612,9 +7657,11 @@
     "Basilosaurus",
     "Bat",
     "Bay Leaf",
+    "Bean",
     "Bear",
     "Bee",
     "Beetle",
+    "Berry",
     "Birch",
     "Blackberry",
     "Blue Jay",
@@ -7699,6 +7746,7 @@
     "Firefly",
     "Flamingo",
     "Flea",
+    "Flower",
     "Fly",
     "Formation of Himalayas",
     "Formation of Rocky Mountains",
@@ -7723,6 +7771,7 @@
     "Hazelnut",
     "Heather",
     "Hellbender",
+    "Herring",
     "Horse",
     "Horsetail",
     "Huckleberry",
@@ -8642,6 +8691,7 @@
     "Coral",
     "Cyan",
     "Gold",
+    "Gray",
     "Green",
     "Indigo",
     "Iris",
@@ -8675,6 +8725,7 @@
     "Wrestling"
   ],
   "Comedians": [
+    "Clown",
     "Joker",
     "Riddler"
   ],
@@ -8683,6 +8734,7 @@
     "A Charlie Brown Christmas",
     "A Christmas Story",
     "About Time",
+    "Air Bud",
     "And Another Thing...",
     "Annie",
     "Annie Hall",
@@ -9018,6 +9070,63 @@
     "Vanuatu",
     "World of Warcraft",
     "Yacht"
+  ],
+  "Contains a Music Genre": [
+    "Ask not what your country can do for you",
+    "Cassoulet",
+    "Cross Country Skiing",
+    "Cyberpunk",
+    "Davy Crockett",
+    "Deccan Traps Eruption",
+    "Discovery",
+    "Discovery One",
+    "Dublin",
+    "Formation of Rocky Mountains",
+    "Four score and seven years ago",
+    "Friends, Romans, countrymen",
+    "From Up on Poppy Hill",
+    "Grape",
+    "Graptolites",
+    "Green Grape Soju",
+    "House",
+    "House of Flying Daggers",
+    "Jazz",
+    "KPop Demon Hunters",
+    "Kerch-Eltigen Operation",
+    "Lighthouse of Alexandria",
+    "Little Rock",
+    "Mary Poppins",
+    "Mary Poppins Returns",
+    "Mehmet Ali Agca",
+    "Metal Gear",
+    "Microraptor",
+    "No Country for Old Men",
+    "Operation Overlord",
+    "Pope Urban VIII",
+    "Poppy",
+    "Punk Rock",
+    "Raptor",
+    "Rock",
+    "Rock Around the Clock",
+    "Rock Climbing",
+    "Rock and Roll",
+    "Rockefeller",
+    "Rocky",
+    "Rocky Horror Picture Show",
+    "Salsa",
+    "Scrappy-Doo",
+    "Siberian Traps Eruption",
+    "Slaughterhouse-Five",
+    "Soul",
+    "Sydney Opera House",
+    "The Discovery of Penicillin",
+    "The Grapes of Wrath",
+    "The Lake House",
+    "The Parent Trap",
+    "The Phantom of the Opera",
+    "Utahraptor",
+    "Velociraptor",
+    "Venus Flytrap"
   ],
   "Contains an Acute Accent": [
     "Baháʼu'lláh",
@@ -9992,6 +10101,7 @@
     "Hawk",
     "Hellbender",
     "Hen",
+    "Herring",
     "Horse",
     "Hummingbird",
     "Humpback Whale",
@@ -10077,6 +10187,8 @@
     "Bamboo",
     "Barley",
     "Bay Leaf",
+    "Bean",
+    "Berry",
     "Birch",
     "Blackberry",
     "Boysenberry",
@@ -10115,6 +10227,7 @@
     "Elderberry",
     "Fern",
     "Fig",
+    "Flower",
     "Garlic",
     "Ginger",
     "Ginkgo",
@@ -10253,7 +10366,8 @@
   "Dances": [
     "CHA",
     "Foxtrot",
-    "Tango"
+    "Tango",
+    "Walk"
   ],
   "Dates": [
     "10/7",
@@ -10626,9 +10740,15 @@
     "Triumph of the Will"
   ],
   "Dogs": [
+    "Air Bud",
+    "Beethoven",
     "Goofy",
     "Greyhound",
-    "Snoopy"
+    "Laika, Space Dog",
+    "Pluto",
+    "Rover",
+    "Snoopy",
+    "Spot"
   ],
   "Domesticated Animals": [
     "Cat",
@@ -10678,6 +10798,7 @@
     "A Monster Calls",
     "About Time",
     "Absalom, Absalom!",
+    "Air Bud",
     "Akira",
     "Alice's Adventures in Wonderland",
     "Alien",
@@ -11314,6 +11435,7 @@
     "Good",
     "Monopoly",
     "Nickel",
+    "Pay",
     "Rent",
     "Risk",
     "Silver"
@@ -11718,6 +11840,7 @@
   ],
   "Ends with ACT": [
     "Chicxulub Impact",
+    "Fact",
     "Tripartite Pact",
     "Warsaw Pact"
   ],
@@ -11881,6 +12004,9 @@
     "Denali",
     "Mali"
   ],
+  "Ends with ALK": [
+    "Walk"
+  ],
   "Ends with ALL": [
     "American Football",
     "Annie Hall",
@@ -12039,6 +12165,7 @@
   ],
   "Ends with ANK": [
     "Anne Frank",
+    "Blank",
     "Rank"
   ],
   "Ends with ANN": [
@@ -12130,6 +12257,9 @@
     "Shakespeare",
     "Where the Wild Things Are"
   ],
+  "Ends with ARF": [
+    "Dwarf"
+  ],
   "Ends with ARI": [
     "Bari",
     "Ferrari",
@@ -12207,6 +12337,7 @@
   "Ends with ASE": [
     "Basket Case",
     "Grease",
+    "Phase",
     "Suitcase"
   ],
   "Ends with ASH": [
@@ -12493,6 +12624,7 @@
   ],
   "Ends with BLE": [
     "Hubble",
+    "Invisible",
     "Redoutable",
     "Scrabble",
     "Table",
@@ -12531,6 +12663,9 @@
     "Longbow",
     "Recurve Bow"
   ],
+  "Ends with BOX": [
+    "Box"
+  ],
   "Ends with BOY": [
     "Cowboy",
     "Little Boy",
@@ -12548,6 +12683,9 @@
   ],
   "Ends with BTS": [
     "BTS"
+  ],
+  "Ends with BUD": [
+    "Air Bud"
   ],
   "Ends with BUG": [
     "Ladybug"
@@ -12936,7 +13074,9 @@
   ],
   "Ends with DOW": [
     "Black Widow",
-    "Rear Window"
+    "Rear Window",
+    "Shadow",
+    "Widow"
   ],
   "Ends with DOX": [
     "Paradox"
@@ -12982,6 +13122,7 @@
   "Ends with EAN": [
     "Arctic Ocean",
     "Atlantic Ocean",
+    "Bean",
     "Billie Jean",
     "Green Bean",
     "Indian Ocean",
@@ -13014,6 +13155,7 @@
     "Cyrus the Great",
     "Frederick the Great",
     "Heat",
+    "Meat",
     "Montreal Smoked Meat",
     "Seat",
     "Wheat"
@@ -13365,6 +13507,7 @@
     "Budapest",
     "Everest",
     "Galaxy Quest",
+    "Harvest",
     "Journey to the West",
     "Key West",
     "One Flew Over the Cuckoo's Nest",
@@ -13476,6 +13619,9 @@
     "Duffel",
     "Falafel"
   ],
+  "Ends with FER": [
+    "Puffer"
+  ],
   "Ends with FFA": [
     "Hoffa"
   ],
@@ -13486,7 +13632,8 @@
     "Mafia"
   ],
   "Ends with FIC": [
-    "South Pacific"
+    "South Pacific",
+    "Traffic"
   ],
   "Ends with FIG": [
     "Fig"
@@ -13601,6 +13748,7 @@
     "Hundred Schools of Thought",
     "Isle of Wight",
     "Let there be light",
+    "Light",
     "Moonlight",
     "Spotlight",
     "The Hateful Eight",
@@ -13702,6 +13850,9 @@
   ],
   "Ends with GUS": [
     "Asparagus"
+  ],
+  "Ends with GUT": [
+    "Gut"
   ],
   "Ends with H 2": [
     "Queen Elizabeth 2"
@@ -13843,6 +13994,9 @@
   "Ends with HOS": [
     "Xiphos"
   ],
+  "Ends with HOT": [
+    "Shot"
+  ],
   "Ends with HOW": [
     "Rocky Horror Picture Show"
   ],
@@ -13906,6 +14060,9 @@
   ],
   "Ends with IAT": [
     "Fiat"
+  ],
+  "Ends with IBE": [
+    "Vibe"
   ],
   "Ends with IBM": [
     "IBM"
@@ -14018,6 +14175,7 @@
   ],
   "Ends with IET": [
     "Juliet",
+    "Quiet",
     "Romeo and Juliet"
   ],
   "Ends with IEV": [
@@ -14112,6 +14270,7 @@
     "Dill",
     "From Up on Poppy Hill",
     "Jill",
+    "Pill",
     "Red Pill",
     "Triumph of the Will",
     "Winston Churchill"
@@ -14223,9 +14382,11 @@
     "Gong Bao Ji Ding",
     "Harding",
     "Hawking",
+    "Herring",
     "Horse Racing",
     "King",
     "Kongming",
+    "Landing",
     "Lansing",
     "Life, the Universe and Everything",
     "Ming",
@@ -14235,6 +14396,7 @@
     "Qing",
     "Rock Climbing",
     "Rowing",
+    "Running",
     "Sailing",
     "Siege of Nanjing",
     "Skiing",
@@ -14415,6 +14577,7 @@
     "Hummingbird",
     "Isabella Bird",
     "SR-71 Blackbird",
+    "Third",
     "To Kill a Mockingbird"
   ],
   "Ends with IRE": [
@@ -14461,7 +14624,8 @@
     "Boise",
     "Enterprise",
     "Hollandaise",
-    "Nicoise"
+    "Nicoise",
+    "Noise"
   ],
   "Ends with ISH": [
     "Albert Fish",
@@ -14545,6 +14709,7 @@
     "Jefferson City",
     "Monsters University",
     "Oklahoma City",
+    "Reality",
     "Salt Lake City",
     "Sense and Sensibility",
     "Serenity",
@@ -14677,7 +14842,8 @@
     "Poker",
     "Studebaker",
     "The Hurt Locker",
-    "The Rise of Skywalker"
+    "The Rise of Skywalker",
+    "Wicker"
   ],
   "Ends with KES": [
     "Great Lakes",
@@ -14759,6 +14925,9 @@
   ],
   "Ends with LAF": [
     "Olaf"
+  ],
+  "Ends with LAG": [
+    "Flag"
   ],
   "Ends with LAH": [
     "Challah"
@@ -14977,6 +15146,7 @@
   ],
   "Ends with LLY": [
     "Buddy Holly",
+    "Jelly",
     "Love Actually"
   ],
   "Ends with LMA": [
@@ -15005,6 +15175,7 @@
     "Waterloo"
   ],
   "Ends with LOR": [
+    "Sailor",
     "Taylor"
   ],
   "Ends with LOT": [
@@ -15420,6 +15591,9 @@
     "Tenet",
     "Treasure Planet"
   ],
+  "Ends with NEW": [
+    "New"
+  ],
   "Ends with NEY": [
     "Alderney",
     "Bill & Ted's Bogus Journey",
@@ -15696,6 +15870,7 @@
     "Little Rock",
     "Peacock",
     "Punk Rock",
+    "Rock",
     "Rock Around the Clock",
     "Spock",
     "Woodstock"
@@ -15883,6 +16058,7 @@
     "Minestrone",
     "Rogue One",
     "Sierra Leone",
+    "Stone",
     "The Sword in the Stone",
     "Toblerone"
   ],
@@ -16152,6 +16328,7 @@
   ],
   "Ends with OWN": [
     "Chinatown",
+    "Clown",
     "Jackie Brown",
     "The Unsinkable Molly Brown",
     "Yorktown"
@@ -16200,6 +16377,9 @@
   ],
   "Ends with PAS": [
     "Tapas"
+  ],
+  "Ends with PAY": [
+    "Pay"
   ],
   "Ends with PEI": [
     "Pohnpei"
@@ -16282,7 +16462,8 @@
     "Siege of Sevastopol"
   ],
   "Ends with POT": [
-    "Hot Pot"
+    "Hot Pot",
+    "Spot"
   ],
   "Ends with PPA": [
     "Kappa"
@@ -16382,6 +16563,7 @@
     "Rat"
   ],
   "Ends with RAY": [
+    "Gray",
     "Hairspray",
     "Johnnie Ray",
     "Ray",
@@ -16659,6 +16841,7 @@
     "Francisco Pizarro"
   ],
   "Ends with RRY": [
+    "Berry",
     "Blackberry",
     "Blueberry",
     "Boysenberry",
@@ -16835,6 +17018,7 @@
     "Mediterranean Sea",
     "North Sea",
     "Red Sea",
+    "Sea",
     "Tales from Earthsea",
     "The Old Man and the Sea"
   ],
@@ -17112,6 +17296,7 @@
     "Demeter",
     "Get Carter",
     "Hannibal Lecter",
+    "Hunter",
     "Joseph Lister",
     "Jupiter",
     "Lancaster",
@@ -17447,6 +17632,7 @@
   "Ends with ULL": [
     "Bull",
     "Eyjafjallajokull",
+    "Full",
     "Gull",
     "Hull",
     "Victoria Woodhull"
@@ -17476,7 +17662,9 @@
     "Tuna"
   ],
   "Ends with UND": [
+    "Background",
     "Greyhound",
+    "Sound",
     "The Fox and the Hound"
   ],
   "Ends with UNE": [
@@ -17544,6 +17732,7 @@
     "The Sound and the Fury"
   ],
   "Ends with USE": [
+    "House",
     "Mickey Mouse",
     "Sydney Opera House",
     "The Lake House",
@@ -17562,6 +17751,7 @@
     "Musk"
   ],
   "Ends with UST": [
+    "Dust",
     "Light in August",
     "Rust",
     "The First Fifteen Lives of Harry August",
@@ -17630,6 +17820,8 @@
     "Mississippi River",
     "Nile River",
     "Quicksilver",
+    "River",
+    "Rover",
     "Silver",
     "Yangtze River"
   ],
@@ -17640,7 +17832,8 @@
     "Robin Hood: Prince of Thieves"
   ],
   "Ends with VET": [
-    "Red Velvet"
+    "Red Velvet",
+    "Velvet"
   ],
   "Ends with VEY": [
     "William Harvey"
@@ -17736,6 +17929,7 @@
     "Cauliflower",
     "Eiffel Tower",
     "Eisenhower",
+    "Flower",
     "Mayflower",
     "Sunflower",
     "Trump Tower"
@@ -18443,6 +18637,7 @@
     "Zheng He"
   ],
   "Explosives": [
+    "Blank",
     "Gunpowder"
   ],
   "Extinct Animals": [
@@ -18575,6 +18770,7 @@
     "A Charlie Brown Christmas",
     "A Christmas Story",
     "A Wrinkle in Time",
+    "Air Bud",
     "Aladdin",
     "Alice in Wonderland",
     "Anne of Green Gables",
@@ -18744,6 +18940,16 @@
     "Sylvia Plath",
     "Virginia Woolf"
   ],
+  "Famous Dogs": [
+    "Air Bud",
+    "Beethoven",
+    "Goofy",
+    "Laika, Space Dog",
+    "Pluto",
+    "Rover",
+    "Snoopy",
+    "Spot"
+  ],
   "Famous Quotes": [
     "All the world's a stage",
     "Ask not what your country can do for you",
@@ -18812,6 +19018,7 @@
     "Yamato"
   ],
   "Fantasy": [
+    "Dwarf",
     "Elf",
     "Magic",
     "Spell",
@@ -19007,6 +19214,8 @@
     "Sow"
   ],
   "Fictional Animals": [
+    "Air Bud",
+    "Beethoven",
     "Big Bird",
     "Bowser",
     "Cera",
@@ -19029,6 +19238,7 @@
     "Nala",
     "Pegasus",
     "Petrie",
+    "Pluto",
     "Pumbaa",
     "Rafiki",
     "Rodan",
@@ -19037,6 +19247,7 @@
     "Snoopy",
     "Sonic",
     "Spike",
+    "Spot",
     "The Very Hungry Caterpillar",
     "Timon",
     "Winnie the Pooh",
@@ -19085,8 +19296,12 @@
     "Spike"
   ],
   "Fictional Dogs": [
+    "Air Bud",
+    "Beethoven",
     "Goofy",
-    "Snoopy"
+    "Pluto",
+    "Snoopy",
+    "Spot"
   ],
   "Fictional Ducks": [
     "Donald Duck"
@@ -19106,14 +19321,18 @@
     "Simba"
   ],
   "Fictional Mammals": [
+    "Air Bud",
+    "Beethoven",
     "Garfield",
     "Goofy",
     "Mickey Mouse",
     "Nala",
+    "Pluto",
     "Pumbaa",
     "Rafiki",
     "Simba",
     "Snoopy",
+    "Spot",
     "Timon"
   ],
   "Fictional Mandrills": [
@@ -19162,6 +19381,7 @@
     "Carmen",
     "Carrie",
     "Cinderella",
+    "Clown",
     "Cobb",
     "Colossus",
     "Count",
@@ -19545,6 +19765,7 @@
   "Fish": [
     "Carp",
     "Coelacanth",
+    "Herring",
     "Mudskipper",
     "Pike",
     "Ray",
@@ -19582,6 +19803,7 @@
     "Cherry Blossom",
     "Daisy",
     "Dandelion",
+    "Flower",
     "Heather",
     "Iris",
     "Lavender",
@@ -19643,10 +19865,12 @@
     "Bannock",
     "Bao",
     "Barszcz",
+    "Bean",
     "Bearnaise",
     "Beaver Tail",
     "Bechamel",
     "Beef Bourguignon",
+    "Berry",
     "Bibimbap",
     "Bigos",
     "Bingsu",
@@ -19759,6 +19983,7 @@
     "Hamburger",
     "Hash",
     "Hawaiian Pizza",
+    "Herring",
     "Hoisin",
     "Hollandaise",
     "Hot Dog",
@@ -19769,6 +19994,7 @@
     "Iceberg",
     "Jalebi",
     "Japchae",
+    "Jelly",
     "Jiaozi",
     "Jjajangmyeon",
     "Kartoffelsalat",
@@ -19813,6 +20039,7 @@
     "Massaman",
     "Matzo Ball",
     "Mayo",
+    "Meat",
     "Medovik",
     "Milanesa",
     "Milk",
@@ -20322,6 +20549,7 @@
   "Fruits": [
     "Apple",
     "Banana",
+    "Berry",
     "Blackberry",
     "Coconut",
     "Cranberry",
@@ -20367,7 +20595,8 @@
   "Gemstones": [
     "Emerald",
     "Ruby",
-    "Sapphire"
+    "Sapphire",
+    "Stone"
   ],
   "General Secretaries": [
     "Joseph Stalin",
@@ -20598,6 +20827,7 @@
     "Arisaka",
     "Arquebus",
     "Baker Rifle",
+    "Blank",
     "Bombard",
     "Brown Bess",
     "Cannon",
@@ -20921,8 +21151,10 @@
     "Basilisk",
     "Bat",
     "Bay Leaf",
+    "Bean",
     "Bee",
     "Beetle",
+    "Berry",
     "Birch",
     "Blackberry",
     "Blue Jay",
@@ -21005,6 +21237,7 @@
     "Firefly",
     "Flamingo",
     "Flea",
+    "Flower",
     "Fly",
     "Fox",
     "Frog",
@@ -21026,6 +21259,7 @@
     "Hazelnut",
     "Heather",
     "Hellbender",
+    "Herring",
     "Horse",
     "Horsetail",
     "Huckleberry",
@@ -22627,6 +22861,7 @@
     "Stallion"
   ],
   "Mammals": [
+    "Air Bud",
     "Ambulocetus",
     "Ardipithecus",
     "Aurochs",
@@ -22634,6 +22869,7 @@
     "Basilosaurus",
     "Bear",
     "Beast",
+    "Beethoven",
     "Black Cat",
     "Blue Whale",
     "Bruin",
@@ -22673,18 +22909,21 @@
     "Panther",
     "Paraceratherium",
     "Plesiadapis",
+    "Pluto",
     "Polar Bear",
     "Pumbaa",
     "Rabbit",
     "Rafiki",
     "Rat",
     "Rhino",
+    "Rover",
     "Sabretooth",
     "Seal",
     "Simba",
     "Smilodon",
     "Snoopy",
     "Sonic",
+    "Spot",
     "Tiger",
     "Timon",
     "Walrus",
@@ -22871,6 +23110,7 @@
     "World of Warcraft"
   ],
   "Materials": [
+    "Dust",
     "Film",
     "Ice",
     "Notebook",
@@ -22879,8 +23119,12 @@
     "Paper",
     "Plastic",
     "Polyester",
+    "Rock",
     "Steel",
-    "Teflon"
+    "Stone",
+    "Teflon",
+    "Velvet",
+    "Wicker"
   ],
   "Math Terms": [
     "Count",
@@ -22932,6 +23176,7 @@
     "AIDS",
     "Birth Control Pill",
     "Crack Epidemic",
+    "Pill",
     "Polio Vaccine",
     "Thalidomide Scandal"
   ],
@@ -24125,8 +24370,10 @@
     "Basilisk",
     "Bat",
     "Bay Leaf",
+    "Bean",
     "Bee",
     "Beetle",
+    "Berry",
     "Birch",
     "Blueberry",
     "Boar",
@@ -24183,6 +24430,7 @@
     "Firefly",
     "Flamingo",
     "Flea",
+    "Flower",
     "Fly",
     "Formation of Himalayas",
     "Fox",
@@ -24202,6 +24450,7 @@
     "Hazelnut",
     "Heather",
     "Hellbender",
+    "Herring",
     "Horse",
     "Horsetail",
     "Hummingbird",
@@ -24626,6 +24875,25 @@
     "Creature from the Black Lagoon",
     "King Kong"
   ],
+  "Moon _____": [
+    "Cake",
+    "Dust",
+    "Flower",
+    "Jelly",
+    "Landing",
+    "Light",
+    "Phase",
+    "Pie",
+    "Rabbit",
+    "River",
+    "Rock",
+    "Rover",
+    "Sailor",
+    "Shadow",
+    "Shot",
+    "Stone",
+    "Walk"
+  ],
   "Most Populous Countries (Top 10)": [
     "Bangladesh",
     "Brazil",
@@ -24710,6 +24978,7 @@
     "A Monster Calls",
     "A Wrinkle in Time",
     "About Time",
+    "Air Bud",
     "Akira",
     "Aladdin",
     "Alice in Wonderland",
@@ -25374,6 +25643,9 @@
   ],
   "Movies directed by Catherine Hardwicke": [
     "Twilight"
+  ],
+  "Movies directed by Charles Martin Smith": [
+    "Air Bud"
   ],
   "Movies directed by Chen Kaige": [
     "Farewell My Concubine"
@@ -28285,6 +28557,9 @@
     "American Beauty",
     "The Usual Suspects"
   ],
+  "Movies featuring Kevin Zegers": [
+    "Air Bud"
+  ],
   "Movies featuring Kim Basinger": [
     "Batman"
   ],
@@ -28693,6 +28968,9 @@
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III"
+  ],
+  "Movies featuring Michael Jeter": [
+    "Air Bud"
   ],
   "Movies featuring Michael Keaton": [
     "Batman",
@@ -29726,6 +30004,9 @@
   "Movies featuring Wendy Crewson": [
     "The Santa Clause"
   ],
+  "Movies featuring Wendy Makkena": [
+    "Air Bud"
+  ],
   "Movies featuring Wesley Singerman": [
     "Meet the Robinsons"
   ],
@@ -29978,6 +30259,7 @@
     "My Fair Lady",
     "My Generation",
     "Nevermind",
+    "Noise",
     "Note",
     "Nothing Compares 2 U",
     "Oliver & Company",
@@ -30000,6 +30282,7 @@
     "Rigoletto",
     "Ringo",
     "Robin Hood",
+    "Rock",
     "Rock Around the Clock",
     "Rock and Roll",
     "Rocky Horror Picture Show",
@@ -30015,6 +30298,7 @@
     "Snow White and the Seven Dwarfs",
     "Song",
     "Soul",
+    "Sound",
     "Stairway to Heaven",
     "Stayin' Alive",
     "Stevie Wonder",
@@ -30057,6 +30341,7 @@
     "Tune",
     "Under the Bridge",
     "Usher",
+    "Vibe",
     "Violin",
     "Waterloo",
     "We didn't start the fire",
@@ -30077,6 +30362,7 @@
   ],
   "Music Genres": [
     "Punk Rock",
+    "Rock",
     "Rock and Roll"
   ],
   "Musical Films": [
@@ -30262,6 +30548,7 @@
   ],
   "Mythical People": [
     "Bellerophon",
+    "Dwarf",
     "Hercules"
   ],
   "Mythology": [
@@ -30708,8 +30995,10 @@
     "Basilisk",
     "Bat",
     "Bay Leaf",
+    "Bean",
     "Bee",
     "Beetle",
+    "Berry",
     "Birch",
     "Blue Whale",
     "Boar",
@@ -30768,6 +31057,7 @@
     "Firefly",
     "Flamingo",
     "Flea",
+    "Flower",
     "Fly",
     "Fox",
     "Frog",
@@ -30786,6 +31076,7 @@
     "Hazelnut",
     "Heather",
     "Hellbender",
+    "Herring",
     "Horse",
     "Horsetail",
     "Hummingbird",
@@ -31009,6 +31300,7 @@
     "M",
     "Pi",
     "R",
+    "Third",
     "V",
     "X"
   ],
@@ -31250,10 +31542,12 @@
     "Worm"
   ],
   "Omnivores": [
+    "Air Bud",
     "Ant",
     "Ardipithecus",
     "Australopithecus",
     "Basilisk",
+    "Beethoven",
     "Beetle",
     "Blue Jay",
     "Bluebird",
@@ -31294,17 +31588,20 @@
     "Opabinia",
     "Parrot",
     "Plesiadapis",
+    "Pluto",
     "Pumbaa",
     "Rafiki",
     "Rat",
     "Raven",
     "Robin",
+    "Rover",
     "Ruby",
     "Shrimp",
     "Skunk",
     "Snoopy",
     "Sonic",
     "Sparrow",
+    "Spot",
     "Timon",
     "Titanomyrma",
     "Turkey",
@@ -31576,8 +31873,10 @@
     "Basilosaurus",
     "Bat",
     "Bay Leaf",
+    "Bean",
     "Bee",
     "Beetle",
+    "Berry",
     "Birch",
     "Brachiopods",
     "Bristlecone Pine",
@@ -31617,6 +31916,7 @@
     "Fig",
     "Firefly",
     "Flea",
+    "Flower",
     "Fly",
     "Frog",
     "Gastornis",
@@ -31906,6 +32206,7 @@
     "Cleopatra",
     "Cleveland",
     "Clinton",
+    "Clown",
     "Cobb",
     "Colossus",
     "Commodus",
@@ -31940,6 +32241,7 @@
     "Drake",
     "Du Fu",
     "Duke Ellington",
+    "Dwarf",
     "Edison",
     "Edward I",
     "Edward III",
@@ -32054,6 +32356,7 @@
     "Huizong",
     "Hulagu Khan",
     "Hulk",
+    "Hunter",
     "Hypatia",
     "Iceman",
     "Ichiro",
@@ -32299,6 +32602,7 @@
     "Roy Cohn",
     "Ruth",
     "Sabretooth",
+    "Sailor",
     "Saint Patrick",
     "Saladin",
     "Samuel Adams",
@@ -32412,6 +32716,7 @@
     "Wayne Gretzky",
     "Wellington",
     "Whitney",
+    "Widow",
     "William Harvey",
     "William Miller",
     "William the Conqueror",
@@ -32566,9 +32871,11 @@
     "The unexamined life is not worth living"
   ],
   "Philosophical Concepts": [
+    "Fact",
     "Infinity",
     "Nothing",
     "Paradox",
+    "Reality",
     "Zero"
   ],
   "Philosophical Fiction": [
@@ -32583,6 +32890,7 @@
   ],
   "Photography Terms": [
     "Aperture",
+    "Background",
     "Camera",
     "Canon",
     "Darkroom",
@@ -32622,8 +32930,14 @@
   "Physics Terms": [
     "Aperture",
     "Infinity",
+    "Light",
+    "Noise",
     "Nothing",
-    "Portal"
+    "Phase",
+    "Portal",
+    "Reality",
+    "Shadow",
+    "Sound"
   ],
   "Pianists": [
     "Art Tatum",
@@ -33224,7 +33538,9 @@
     "Bamboo",
     "Barley",
     "Bay Leaf",
+    "Bean",
     "Bennettitales",
+    "Berry",
     "Birch",
     "Blackberry",
     "Boysenberry",
@@ -33263,6 +33579,7 @@
     "Elderberry",
     "Fern",
     "Fig",
+    "Flower",
     "Garlic",
     "Ginger",
     "Ginkgo",
@@ -33379,8 +33696,10 @@
     "Basilisk",
     "Bat",
     "Bay Leaf",
+    "Bean",
     "Bee",
     "Beetle",
+    "Berry",
     "Birch",
     "Blackberry",
     "Blue Jay",
@@ -33461,6 +33780,7 @@
     "Firefly",
     "Flamingo",
     "Flea",
+    "Flower",
     "Fly",
     "Fox",
     "Frog",
@@ -33481,6 +33801,7 @@
     "Hazelnut",
     "Heather",
     "Hellbender",
+    "Herring",
     "Horse",
     "Horsetail",
     "Huckleberry",
@@ -33631,8 +33952,10 @@
     "Basilisk",
     "Bat",
     "Bay Leaf",
+    "Bean",
     "Bee",
     "Beetle",
+    "Berry",
     "Birch",
     "Blue Whale",
     "Blueberry",
@@ -33693,6 +34016,7 @@
     "Firefly",
     "Flamingo",
     "Flea",
+    "Flower",
     "Fly",
     "Fox",
     "Frog",
@@ -33712,6 +34036,7 @@
     "Hazelnut",
     "Heather",
     "Hellbender",
+    "Herring",
     "Horse",
     "Horsetail",
     "Hummingbird",
@@ -34235,8 +34560,10 @@
     "Basilisk",
     "Bat",
     "Bay Leaf",
+    "Bean",
     "Bee",
     "Beetle",
+    "Berry",
     "Birch",
     "Blackberry",
     "Blue Jay",
@@ -34317,6 +34644,7 @@
     "Firefly",
     "Flamingo",
     "Flea",
+    "Flower",
     "Fly",
     "Fox",
     "Frog",
@@ -34337,6 +34665,7 @@
     "Hazelnut",
     "Heather",
     "Hellbender",
+    "Herring",
     "Horse",
     "Horsetail",
     "Huckleberry",
@@ -34634,6 +34963,7 @@
     "Hawk",
     "Hellbender",
     "Hen",
+    "Herring",
     "Horse",
     "Hummingbird",
     "Humpback Whale",
@@ -35328,6 +35658,27 @@
     "Tomato",
     "Wonder Woman"
   ],
+  "Red _____": [
+    "Apple",
+    "Bean",
+    "Bull",
+    "Cardinal",
+    "Curry",
+    "Dragon",
+    "Dwarf",
+    "Fox",
+    "Herring",
+    "Light",
+    "Meat",
+    "Panda",
+    "Pepper",
+    "Pill",
+    "Red Wine",
+    "Rose",
+    "Sea",
+    "Velvet",
+    "Wine"
+  ],
   "Reformations": [
     "The Catholic Counter-Reformation",
     "The English Reformation",
@@ -35700,6 +36051,7 @@
     "Nile",
     "Nile River",
     "Rhine",
+    "River",
     "Seine",
     "Shenandoah",
     "Thames",
@@ -36158,6 +36510,7 @@
     "Christopher Columbus",
     "Drake",
     "Ferdinand Magellan",
+    "Sailor",
     "Vasco da Gama",
     "Zheng He"
   ],
@@ -36572,6 +36925,7 @@
     "Graptolites",
     "Great White Shark",
     "Hallucigenia",
+    "Herring",
     "Humpback Whale",
     "Ichthyosaurus",
     "Jaekelopterus",
@@ -36632,7 +36986,8 @@
     "Caribbean Sea",
     "Caspian Sea",
     "Mediterranean Sea",
-    "Red Sea"
+    "Red Sea",
+    "Sea"
   ],
   "Second in Internal Chronology": [
     "Aliens",
@@ -37357,7 +37712,9 @@
   "Space Exploration": [
     "Apollo 11",
     "Houston, we have a problem",
+    "Landing",
     "One small step for man",
+    "Rover",
     "Sputnik",
     "The Apollo Program",
     "The Eagle has landed",
@@ -37373,9 +37730,11 @@
     "Gemini",
     "Hubble",
     "Kepler",
+    "Landing",
     "Mariner",
     "Mercury",
     "NASA",
+    "Rover",
     "The Moon Landing",
     "The Space Race",
     "Voyager"
@@ -37501,6 +37860,7 @@
     "Rock Climbing",
     "Rowing",
     "Rugby",
+    "Running",
     "Sailing",
     "Skiing",
     "Sledding",
@@ -37515,6 +37875,7 @@
     "Track and Field",
     "Ultimate Frisbee",
     "Volleyball",
+    "Walk",
     "Water Polo",
     "Weightlifting",
     "Wrestling"
@@ -37534,12 +37895,14 @@
     "1955 World Series"
   ],
   "Sports Stories": [
+    "Air Bud",
     "Chariots of Fire",
     "Million Dollar Baby",
     "Rocky"
   ],
   "Sports Terms": [
-    "Overwatch"
+    "Overwatch",
+    "Shot"
   ],
   "Spring and Autumn Period": [
     "Confucius",
@@ -37742,6 +38105,7 @@
     "Aioli"
   ],
   "Starts with AIR": [
+    "Air Bud",
     "Airbus",
     "Airbus A380"
   ],
@@ -38090,6 +38454,7 @@
     "Back to the Future",
     "Back to the Future Part II",
     "Back to the Future Part III",
+    "Background",
     "Backpack",
     "Bacon"
   ],
@@ -38225,6 +38590,7 @@
   "Starts with BEA": [
     "Beach Volleyball",
     "Beagle",
+    "Bean",
     "Bear",
     "Bearnaise",
     "Beast",
@@ -38284,6 +38650,7 @@
     "Berlin",
     "Berlin Wall",
     "Bernie Goetz",
+    "Berry",
     "Beryllium"
   ],
   "Starts with BET": [
@@ -38346,7 +38713,8 @@
     "Black Sea",
     "Black Widow",
     "Blackberry",
-    "Blade Runner"
+    "Blade Runner",
+    "Blank"
   ],
   "Starts with BLE": [
     "Bleu Cheese"
@@ -38437,6 +38805,7 @@
     "Bowser"
   ],
   "Starts with BOX": [
+    "Box",
     "Boxing"
   ],
   "Starts with BOY": [
@@ -38821,7 +39190,8 @@
     "Cloud",
     "Cloudberry",
     "Clove",
-    "Clover"
+    "Clover",
+    "Clown"
   ],
   "Starts with CLU": [
     "Club",
@@ -39279,10 +39649,14 @@
     "Dungan Revolt"
   ],
   "Starts with DUS": [
-    "Dusack"
+    "Dusack",
+    "Dust"
   ],
   "Starts with DUT": [
     "Dutch Guiana"
+  ],
+  "Starts with DWA": [
+    "Dwarf"
   ],
   "Starts with E.T": [
     "E.T."
@@ -39511,6 +39885,9 @@
   "Starts with F-3": [
     "F-35"
   ],
+  "Starts with FAC": [
+    "Fact"
+  ],
   "Starts with FAH": [
     "Fahrenheit 451"
   ],
@@ -39598,6 +39975,7 @@
     "Fish and Chips"
   ],
   "Starts with FLA": [
+    "Flag",
     "Flamberge",
     "Flamingo",
     "Flan",
@@ -39614,7 +39992,8 @@
     "Florence",
     "Florence Nightingale",
     "Florentine Banking Crisis",
-    "Florida"
+    "Florida",
+    "Flower"
   ],
   "Starts with FLU": [
     "Fluorescent",
@@ -39707,6 +40086,9 @@
   ],
   "Starts with FUK": [
     "Fukushima"
+  ],
+  "Starts with FUL": [
+    "Full"
   ],
   "Starts with GAB": [
     "Gabon"
@@ -39895,7 +40277,8 @@
     "Grape",
     "Graptolites",
     "Grasshopper",
-    "Grave of the Fireflies"
+    "Grave of the Fireflies",
+    "Gray"
   ],
   "Starts with GRE": [
     "Grease",
@@ -39968,6 +40351,9 @@
   ],
   "Starts with GUS": [
     "Gustavus Adolphus"
+  ],
+  "Starts with GUT": [
+    "Gut"
   ],
   "Starts with GUY": [
     "Guy Fawkes",
@@ -40047,7 +40433,8 @@
     "Harry Potter and the Order of the Phoenix",
     "Harry Potter and the Prisoner of Azkaban",
     "Harry Potter and the Sorcerer's Stone",
-    "Hartford"
+    "Hartford",
+    "Harvest"
   ],
   "Starts with HAS": [
     "Hash"
@@ -40111,6 +40498,7 @@
     "Hermione",
     "Hernán Cortés",
     "Hero",
+    "Herring",
     "Hershey"
   ],
   "Starts with HES": [
@@ -40193,6 +40581,7 @@
   ],
   "Starts with HOU": [
     "Hound Dog",
+    "House",
     "House of Flying Daggers",
     "Houston, we have a problem"
   ],
@@ -40233,7 +40622,8 @@
   ],
   "Starts with HUN": [
     "Hundred Schools of Thought",
-    "Hungary"
+    "Hungary",
+    "Hunter"
   ],
   "Starts with HUR": [
     "Hurricane"
@@ -40369,7 +40759,8 @@
   "Starts with INV": [
     "Invasion of Minorca",
     "Invasion of Sicily",
-    "Invictus"
+    "Invictus",
+    "Invisible"
   ],
   "Starts with IOT": [
     "Iota"
@@ -40502,6 +40893,9 @@
   ],
   "Starts with JEJ": [
     "Jeju"
+  ],
+  "Starts with JEL": [
+    "Jelly"
   ],
   "Starts with JER": [
     "Jersey",
@@ -40874,6 +41268,7 @@
   "Starts with LAN": [
     "Lancaster",
     "Land Rover",
+    "Landing",
     "Lando",
     "Lansing",
     "Lanzarote"
@@ -40980,6 +41375,7 @@
     "Life, the Universe and Everything"
   ],
   "Starts with LIG": [
+    "Light",
     "Light My Fire",
     "Light in August",
     "Lighthouse of Alexandria"
@@ -41259,7 +41655,8 @@
     "McLaren"
   ],
   "Starts with MEA": [
-    "Mead"
+    "Mead",
+    "Meat"
   ],
   "Starts with MEC": [
     "Mecca",
@@ -41569,6 +41966,7 @@
     "Nevermind"
   ],
   "Starts with NEW": [
+    "New",
     "New Hebrides",
     "New York",
     "New York Bagel",
@@ -41615,6 +42013,9 @@
   "Starts with NO ": [
     "No Country for Old Men",
     "No Parking Sign"
+  ],
+  "Starts with NOI": [
+    "Noise"
   ],
   "Starts with NOM": [
     "Nomadland"
@@ -41911,6 +42312,7 @@
     "Pawn"
   ],
   "Starts with PAY": [
+    "Pay",
     "Payola Scandal"
   ],
   "Starts with PEA": [
@@ -41975,7 +42377,8 @@
     "Peyton Place"
   ],
   "Starts with PHA": [
-    "Pharaoh"
+    "Pharaoh",
+    "Phase"
   ],
   "Starts with PHI": [
     "Phi",
@@ -42012,6 +42415,7 @@
     "Pike"
   ],
   "Starts with PIL": [
+    "Pill",
     "Pilsner",
     "Pilum"
   ],
@@ -42180,6 +42584,7 @@
     "Puckle Gun"
   ],
   "Starts with PUF": [
+    "Puffer",
     "Puffin"
   ],
   "Starts with PUG": [
@@ -42233,7 +42638,8 @@
   ],
   "Starts with QUI": [
     "Quiche",
-    "Quicksilver"
+    "Quicksilver",
+    "Quiet"
   ],
   "Starts with RAB": [
     "Rabbit"
@@ -42289,6 +42695,7 @@
   ],
   "Starts with REA": [
     "Reagan",
+    "Reality",
     "Rear Window"
   ],
   "Starts with REB": [
@@ -42378,6 +42785,9 @@
     "Risk",
     "Risotto"
   ],
+  "Starts with RIV": [
+    "River"
+  ],
   "Starts with ROA": [
     "Road Runner"
   ],
@@ -42392,6 +42802,7 @@
     "Robinson Crusoe"
   ],
   "Starts with ROC": [
+    "Rock",
     "Rock Around the Clock",
     "Rock Climbing",
     "Rock and Roll",
@@ -42443,6 +42854,9 @@
   "Starts with ROU": [
     "Rouladen"
   ],
+  "Starts with ROV": [
+    "Rover"
+  ],
   "Starts with ROW": [
     "Rowing"
   ],
@@ -42463,6 +42877,7 @@
     "Rum"
   ],
   "Starts with RUN": [
+    "Running",
     "Runnymede"
   ],
   "Starts with RUS": [
@@ -42509,6 +42924,7 @@
     "Sail",
     "Sailfish",
     "Sailing",
+    "Sailor",
     "Saint Kitts and Nevis",
     "Saint Lucia",
     "Saint Patrick",
@@ -42621,6 +43037,7 @@
     "Scutum"
   ],
   "Starts with SEA": [
+    "Sea",
     "Seahawk",
     "Seal",
     "Seat",
@@ -42662,6 +43079,7 @@
   ],
   "Starts with SHA": [
     "Shabu Shabu",
+    "Shadow",
     "Shadowcat",
     "Shaggy",
     "Shaka Zulu",
@@ -42685,7 +43103,8 @@
     "Shikoku"
   ],
   "Starts with SHO": [
-    "Shonisaurus"
+    "Shonisaurus",
+    "Shot"
   ],
   "Starts with SHR": [
     "Shrimp"
@@ -42847,6 +43266,7 @@
   "Starts with SOU": [
     "Souffle",
     "Soul",
+    "Sound",
     "Source Code",
     "Sourdough",
     "South Africa",
@@ -42909,6 +43329,7 @@
   ],
   "Starts with SPO": [
     "Spock",
+    "Spot",
     "Spotlight"
   ],
   "Starts with SPR": [
@@ -42962,6 +43383,7 @@
     "Sticky Toffee Pudding"
   ],
   "Starts with STO": [
+    "Stone",
     "Stonehenge",
     "Stop Sign",
     "Storm",
@@ -43520,6 +43942,7 @@
   ],
   "Starts with THI": [
     "Thimbleberry",
+    "Third",
     "Third Servile War",
     "Thirteen Days",
     "Thistle"
@@ -43641,6 +44064,7 @@
   ],
   "Starts with TRA": [
     "Track and Field",
+    "Traffic",
     "Trailer Park Boys",
     "Trainspotting",
     "Trajan",
@@ -43833,7 +44257,8 @@
   "Starts with VEL": [
     "Velma",
     "Velociraptor",
-    "Veloute"
+    "Veloute",
+    "Velvet"
   ],
   "Starts with VEN": [
     "Venezuela",
@@ -43850,6 +44275,9 @@
   "Starts with VES": [
     "Vespasian",
     "Vesuvius"
+  ],
+  "Starts with VIB": [
+    "Vibe"
   ],
   "Starts with VIC": [
     "Victor",
@@ -43899,6 +44327,7 @@
   "Starts with WAL": [
     "WALL-E",
     "Waldorf",
+    "Walk",
     "Walkabout",
     "Walnut",
     "Walrus"
@@ -43964,6 +44393,12 @@
     "White Christmas",
     "White Wine",
     "Whitney"
+  ],
+  "Starts with WIC": [
+    "Wicker"
+  ],
+  "Starts with WID": [
+    "Widow"
   ],
   "Starts with WIL": [
     "Wildcat",
@@ -44286,6 +44721,7 @@
   ],
   "Storage": [
     "Backpack",
+    "Box",
     "Duffel",
     "Locker",
     "Suitcase"
@@ -44659,6 +45095,7 @@
     "Laika, Space Dog",
     "Musk",
     "Polio Vaccine",
+    "Rover",
     "Sputnik",
     "Television"
   ],
@@ -44834,6 +45271,9 @@
     "The Matrix Revolutions",
     "Trinity"
   ],
+  "The Moon Landing": [
+    "Landing"
+  ],
   "The Police": [
     "Every Breath You Take"
   ],
@@ -44986,6 +45426,7 @@
     "Absalom, Absalom!",
     "Acura",
     "Adams",
+    "Air Bud",
     "Alabama",
     "Aladdin",
     "Alaska",
@@ -46379,6 +46820,7 @@
     "Cameroon"
   ],
   "Things Canadian": [
+    "Air Bud",
     "All Dressed Chips",
     "Anne of Green Gables",
     "Avril Lavigne",
@@ -48648,6 +49090,7 @@
     "No Parking Sign",
     "Speed Limit Sign",
     "Stop Sign",
+    "Traffic",
     "Yield Sign"
   ],
   "Tragedy Stories": [
@@ -48918,6 +49361,7 @@
   ],
   "Vegetables": [
     "Asparagus",
+    "Bean",
     "Broccoli",
     "Butterhead",
     "Cabbage",
@@ -49311,6 +49755,7 @@
     "Ballista",
     "Ballistae",
     "Bayonet",
+    "Blank",
     "Bombard",
     "Bow",
     "Brown Bess",
@@ -49451,6 +49896,23 @@
     "Swan",
     "Veloute",
     "White Wine"
+  ],
+  "White _____": [
+    "Bread",
+    "Dwarf",
+    "Elephant",
+    "Flag",
+    "House",
+    "Light",
+    "Meat",
+    "Noise",
+    "Paper",
+    "Rabbit",
+    "Rice",
+    "Sea",
+    "Swan",
+    "Whale",
+    "Wine"
   ],
   "William Faulkner": [
     "Absalom, Absalom!",
@@ -49621,6 +50083,7 @@
     "Victoria Woodhull",
     "Violet",
     "Virginia Woolf",
+    "Widow",
     "Witchblade",
     "Wonder Woman",
     "Working Girl",
@@ -49853,5 +50316,72 @@
     "Scorpio",
     "Taurus",
     "Virgo"
+  ],
+  "_____ Bird": [
+    "Big",
+    "Black",
+    "Blue",
+    "Dodo",
+    "Song",
+    "Thunder"
+  ],
+  "_____ Check": [
+    "Background",
+    "Blank",
+    "Fact",
+    "Gut",
+    "Pay",
+    "Rain",
+    "Reality",
+    "Sound",
+    "Spell",
+    "Spot",
+    "Vibe"
+  ],
+  "_____ Fish": [
+    "Angel",
+    "Cat",
+    "Clown",
+    "Dog",
+    "Gold",
+    "Jelly",
+    "Lion",
+    "Puffer",
+    "Star",
+    "Sword"
+  ],
+  "_____ Light": [
+    "Black",
+    "Blue",
+    "Flash",
+    "Green",
+    "Moon",
+    "Red",
+    "Spot",
+    "Traffic"
+  ],
+  "_____ Man Movies": [
+    "Ant",
+    "Bat",
+    "Cinderella",
+    "Elephant",
+    "Gray",
+    "Invisible",
+    "Iron",
+    "Omega",
+    "Quiet",
+    "Rain",
+    "Running",
+    "Spider",
+    "Third",
+    "Wicker",
+    "Wolf"
+  ],
+  "_____ Moon": [
+    "Blue",
+    "Full",
+    "Harvest",
+    "Hunter",
+    "New"
   ]
 }

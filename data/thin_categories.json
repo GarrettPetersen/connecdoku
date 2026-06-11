@@ -226,6 +226,18 @@
   "Things Abkhazian": [
     "Abkhazia"
   ],
+  "Movies directed by Charles Martin Smith": [
+    "Air Bud"
+  ],
+  "Movies featuring Kevin Zegers": [
+    "Air Bud"
+  ],
+  "Movies featuring Michael Jeter": [
+    "Air Bud"
+  ],
+  "Movies featuring Wendy Makkena": [
+    "Air Bud"
+  ],
   "Manufactured by Airbus": [
     "Airbus A380"
   ],
@@ -1321,9 +1333,6 @@
   "Things Guinea-Bissauan": [
     "Guinea-Bissau"
   ],
-  "Explosives": [
-    "Gunpowder"
-  ],
   "Movies directed by Adam Shankman": [
     "Hairspray"
   ],
@@ -1761,6 +1770,9 @@
   ],
   "Manufactured by Avro": [
     "Lancaster"
+  ],
+  "The Moon Landing": [
+    "Landing"
   ],
   "Things Laotian": [
     "Laos"
@@ -2238,9 +2250,6 @@
   ],
   "Movies featuring Robert Redford": [
     "Out of Africa"
-  ],
-  "Sports Terms": [
-    "Overwatch"
   ],
   "Yasujiro Ozu": [
     "Ozu"
@@ -4172,10 +4181,6 @@
     "Belize",
     "British Honduras"
   ],
-  "Mythical People": [
-    "Bellerophon",
-    "Hercules"
-  ],
   "Historical Stories": [
     "Beloved",
     "Salem"
@@ -4211,6 +4216,10 @@
   "Movies featuring Sean Young": [
     "Blade Runner",
     "Dune"
+  ],
+  "Explosives": [
+    "Blank",
+    "Gunpowder"
   ],
   "1610s": [
     "Bohemian Revolt",
@@ -4568,10 +4577,6 @@
     "Ford",
     "Studebaker"
   ],
-  "Astronomical Events": [
-    "Formation of Earth",
-    "Formation of Moon"
-  ],
   "Solar System Formation": [
     "Formation of Earth",
     "Formation of Moon"
@@ -4635,10 +4640,6 @@
   "Movies featuring Ray Liotta": [
     "Goodfellas",
     "Hannibal"
-  ],
-  "Fictional Dogs": [
-    "Goofy",
-    "Snoopy"
   ],
   "Sharks": [
     "Great White Shark",
@@ -4771,10 +4772,6 @@
   "Movies featuring Sam Rockwell": [
     "Jojo Rabbit",
     "The Hitchhiker's Guide to the Galaxy"
-  ],
-  "Comedians": [
-    "Joker",
-    "Riddler"
   ],
   "Things Jordanian": [
     "Jordan",
@@ -5008,6 +5005,10 @@
     "Oscar",
     "Rocky"
   ],
+  "Sports Terms": [
+    "Overwatch",
+    "Shot"
+  ],
   "Movies directed by Guillermo del Toro": [
     "Pan's Labyrinth",
     "The Shape of Water"
@@ -5043,10 +5044,6 @@
   "Movies directed by Alfred Hitchcock": [
     "Psycho",
     "Rear Window"
-  ],
-  "Music Genres": [
-    "Punk Rock",
-    "Rock and Roll"
   ],
   "Movies featuring Ian Holm": [
     "Ratatouille",
@@ -5458,6 +5455,11 @@
     "Congo",
     "Democratic Republic of the Congo"
   ],
+  "Mythical People": [
+    "Bellerophon",
+    "Dwarf",
+    "Hercules"
+  ],
   "Mythology": [
     "Bellerophon",
     "The Iliad",
@@ -5553,11 +5555,6 @@
     "The Plague of Justinian",
     "Theodosian Walls"
   ],
-  "Dances": [
-    "CHA",
-    "Foxtrot",
-    "Tango"
-  ],
   "Things Cambodian": [
     "Cambodia",
     "Kampuchea",
@@ -5577,11 +5574,6 @@
     "Ceylon",
     "Sri Lanka",
     "Tea"
-  ],
-  "Sports Stories": [
-    "Chariots of Fire",
-    "Million Dollar Baby",
-    "Rocky"
   ],
   "9th Century": [
     "Charlemagne",
@@ -5607,6 +5599,11 @@
     "Citizen Kane",
     "Othello",
     "The Third Man"
+  ],
+  "Comedians": [
+    "Clown",
+    "Joker",
+    "Riddler"
   ],
   "Movies featuring Tim Curry": [
     "Clue",
@@ -5743,11 +5740,6 @@
     "Queen Mary",
     "Victoria"
   ],
-  "Gemstones": [
-    "Emerald",
-    "Ruby",
-    "Sapphire"
-  ],
   "American Architecture": [
     "Empire State Building",
     "Mar-A-Lago",
@@ -5778,6 +5770,11 @@
     "Good King Wenceslas",
     "Tachi"
   ],
+  "Astronomical Events": [
+    "Formation of Earth",
+    "Formation of Moon",
+    "Phase"
+  ],
   "Movies featuring Hugh Grant": [
     "Four Weddings and a Funeral",
     "Love Actually",
@@ -5792,11 +5789,6 @@
     "Goodfellas",
     "The Departed",
     "The Irishman"
-  ],
-  "Dogs": [
-    "Goofy",
-    "Greyhound",
-    "Snoopy"
   ],
   "Lakes": [
     "Great Lakes",
@@ -5947,6 +5939,11 @@
     "Pirates of the Caribbean: At World's End",
     "Pirates of the Caribbean: Dead Man's Chest",
     "Pirates of the Caribbean: The Curse of the Black Pearl"
+  ],
+  "Music Genres": [
+    "Punk Rock",
+    "Rock",
+    "Rock and Roll"
   ],
   "Movies directed by Brad Bird": [
     "Ratatouille",
