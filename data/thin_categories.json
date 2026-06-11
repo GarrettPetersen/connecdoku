@@ -436,12 +436,6 @@
   "Movies featuring Kim Basinger": [
     "Batman"
   ],
-  "Bodhisattvas": [
-    "Batō Kannon"
-  ],
-  "Buddhism": [
-    "Batō Kannon"
-  ],
   "Movies directed by Jimmy T. Murakami": [
     "Battle Beyond the Stars"
   ],
@@ -465,6 +459,12 @@
   ],
   "1440s": [
     "Battle of Tumu Fortress"
+  ],
+  "Bodhisattvas": [
+    "Batō Kannon"
+  ],
+  "Buddhism": [
+    "Batō Kannon"
   ],
   "Charles Darwin": [
     "Beagle"
@@ -619,11 +619,11 @@
   "Family Guy Characters": [
     "Brian Griffin"
   ],
-  "Movies featuring William Holden": [
-    "Bridge on the River Kwai"
-  ],
   "Folk Songs": [
     "Bridge Over Troubled Water"
+  ],
+  "Movies featuring William Holden": [
+    "Bridge on the River Kwai"
   ],
   "Movies featuring Celia Johnson": [
     "Brief Encounter"
@@ -660,6 +660,18 @@
   ],
   "Things Burundian": [
     "Burundi"
+  ],
+  "Movies directed by Sian Heder": [
+    "CODA"
+  ],
+  "Movies featuring Emilia Jones": [
+    "CODA"
+  ],
+  "Movies featuring Marlee Matlin": [
+    "CODA"
+  ],
+  "Movies featuring Troy Kotsur": [
+    "CODA"
   ],
   "Movies directed by Bob Fosse": [
     "Cabaret"
@@ -825,18 +837,6 @@
   ],
   "Movies featuring Gael García Bernal": [
     "Coco"
-  ],
-  "Movies directed by Sian Heder": [
-    "CODA"
-  ],
-  "Movies featuring Emilia Jones": [
-    "CODA"
-  ],
-  "Movies featuring Marlee Matlin": [
-    "CODA"
-  ],
-  "Movies featuring Troy Kotsur": [
-    "CODA"
   ],
   "Manufactured by BAC/Aerospatiale": [
     "Concorde"
@@ -1621,6 +1621,42 @@
   "Movies featuring Laura Dern": [
     "Jurassic Park"
   ],
+  "Movies directed by Chris Appelhans": [
+    "KPop Demon Hunters"
+  ],
+  "Movies directed by Maggie Kang": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring Ahn Hyo-seop": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring Arden Cho": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring Byung Hun Lee": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring Daniel Dae Kim": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring Ji-young Yoo": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring Joel Kim Booster": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring Ken Jeong": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring Liza Koshy": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring May Hong": [
+    "KPop Demon Hunters"
+  ],
+  "Movies featuring Yunjin Kim": [
+    "KPop Demon Hunters"
+  ],
   "Movies featuring Tsutomu Yamazaki": [
     "Kagemusha"
   ],
@@ -1671,42 +1707,6 @@
   ],
   "East Asian Countries": [
     "Korea"
-  ],
-  "Movies directed by Chris Appelhans": [
-    "KPop Demon Hunters"
-  ],
-  "Movies directed by Maggie Kang": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring Ahn Hyo-seop": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring Arden Cho": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring Byung Hun Lee": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring Daniel Dae Kim": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring Ji-young Yoo": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring Joel Kim Booster": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring Ken Jeong": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring Liza Koshy": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring May Hong": [
-    "KPop Demon Hunters"
-  ],
-  "Movies featuring Yunjin Kim": [
-    "KPop Demon Hunters"
   ],
   "Movies directed by Bernard L. Kowalski": [
     "Krakatoa"
@@ -1885,6 +1885,9 @@
   "Movies featuring Jacob Tremblay": [
     "Luca"
   ],
+  "MSC Cruises": [
+    "MSC Meraviglia"
+  ],
   "Incan Architecture": [
     "Machu Picchu"
   ],
@@ -2046,9 +2049,6 @@
   ],
   "Movies featuring Nicole Kidman": [
     "Moulin Rouge!"
-  ],
-  "MSC Cruises": [
-    "MSC Meraviglia"
   ],
   "Movies directed by Tony Bancroft": [
     "Mulan"
@@ -4221,10 +4221,6 @@
     "Birdman",
     "La La Land"
   ],
-  "Religious Titles": [
-    "Bishop",
-    "Cardinal"
-  ],
   "Spiders": [
     "Black Widow",
     "Spider-Man"
@@ -4933,13 +4929,13 @@
     "Melania",
     "Slovenia"
   ],
-  "Dromaeosaurids": [
-    "Microraptor",
-    "Sinornithosaurus"
-  ],
   "Manufactured by MiG": [
     "MiG-15",
     "MiG-21"
+  ],
+  "Dromaeosaurids": [
+    "Microraptor",
+    "Sinornithosaurus"
   ],
   "Movies directed by Clint Eastwood": [
     "Million Dollar Baby",
@@ -4985,6 +4981,10 @@
     "My Blueberry Nights",
     "The Holiday"
   ],
+  "Organizations": [
+    "NASA",
+    "NATO"
+  ],
   "Fictional Lions": [
     "Nala",
     "Simba"
@@ -4992,10 +4992,6 @@
   "Lions": [
     "Nala",
     "Simba"
-  ],
-  "Organizations": [
-    "NASA",
-    "NATO"
   ],
   "Nirvana": [
     "Nevermind",
@@ -5512,6 +5508,11 @@
     "Fight Club",
     "Red Dragon"
   ],
+  "Religious Titles": [
+    "Bishop",
+    "Cardinal",
+    "Pontifex Maximus"
+  ],
   "Star": [
     "Black Hole",
     "Milky Way",
@@ -5687,6 +5688,11 @@
     "Final Fantasy",
     "World of Warcraft"
   ],
+  "Manufactured by Douglas": [
+    "DC-3",
+    "Dauntless",
+    "Devastator"
+  ],
   "Movies featuring Linda Hamilton": [
     "Dante's Peak",
     "Terminator 2: Judgment Day",
@@ -5696,11 +5702,6 @@
     "Data",
     "INT",
     "Key"
-  ],
-  "Manufactured by Douglas": [
-    "Dauntless",
-    "DC-3",
-    "Devastator"
   ],
   "Movies featuring Maggie Cheung": [
     "Days of Being Wild",
