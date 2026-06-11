@@ -4736,6 +4736,7 @@
   ],
   "Abstract Concepts": [
     "Fact",
+    "Gift",
     "INT",
     "Infinity",
     "Nothing",
@@ -6739,6 +6740,7 @@
     "BLACKPINK",
     "Batman",
     "Bear",
+    "Black",
     "Black Cat",
     "Black Hole",
     "Black Panther",
@@ -8644,6 +8646,7 @@
     "Glove",
     "Hood",
     "Iron",
+    "Puffer",
     "Red Hood",
     "Red Riding Hood",
     "Uniform"
@@ -8740,6 +8743,7 @@
   ],
   "Colors": [
     "Aurora",
+    "Black",
     "Blue",
     "Buttercup",
     "Cobalt",
@@ -18579,6 +18583,7 @@
     "Gallipoli Campaign",
     "Great Oxygenation Event",
     "Han Wudi's Defeat of the Xiongnu",
+    "Harvest",
     "Herculaneum",
     "Hindenburg",
     "Hundred Schools of Thought",
@@ -24603,6 +24608,7 @@
     "Brig",
     "NATO",
     "Overwatch",
+    "Scout",
     "Uniform"
   ],
   "Ming Dynasty": [
@@ -31637,6 +31643,13 @@
   "Oasis": [
     "Wonderwall"
   ],
+  "Occupations": [
+    "Clown",
+    "Counselor",
+    "Hunter",
+    "Sailor",
+    "Scout"
+  ],
   "Ocean Animals": [
     "Blue Whale",
     "Great White Shark",
@@ -34558,7 +34571,8 @@
     "Animal Farm"
   ],
   "Politics": [
-    "Ballot"
+    "Ballot",
+    "Flag"
   ],
   "Polymers": [
     "Nylon",
@@ -34822,6 +34836,7 @@
     "Skinner"
   ],
   "Psychology Terms": [
+    "Counselor",
     "Freud",
     "Pavlov",
     "Persona",
@@ -37054,6 +37069,7 @@
   "School": [
     "Apple",
     "Backpack",
+    "Counselor",
     "Crayon",
     "Envelope",
     "Locker",
@@ -38233,6 +38249,7 @@
     "Bat",
     "Bow",
     "Club",
+    "Glove",
     "Golf",
     "Puck",
     "Skate",
@@ -38249,8 +38266,10 @@
     "Rocky"
   ],
   "Sports Terms": [
+    "Hunter",
     "Overwatch",
     "Penalty",
+    "Scout",
     "Shot"
   ],
   "Spring and Autumn Period": [
