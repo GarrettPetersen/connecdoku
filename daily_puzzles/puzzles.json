@@ -14318,5 +14318,45 @@
         "Athena"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Adventure Stories",
+      "Countries that No Longer Exist",
+      "Federal Republics",
+      "Landlocked Countries"
+    ],
+    "cols": [
+      "Cold War",
+      "Locations in Europe",
+      "Locations in South America",
+      "Starts with SOU"
+    ],
+    "words": [
+      [
+        "The Hunt for Red October",
+        "Pompeii",
+        "Robinson Crusoe",
+        "South Pacific"
+      ],
+      [
+        "Soviet Union",
+        "Bohemia",
+        "British Guiana",
+        "South Vietnam"
+      ],
+      [
+        "United States",
+        "Germany",
+        "Brazil",
+        "South Africa"
+      ],
+      [
+        "Afghanistan",
+        "Czech Republic",
+        "Bolivia",
+        "South Sudan"
+      ]
+    ]
   }
 ]
