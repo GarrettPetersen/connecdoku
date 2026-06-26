@@ -89,11 +89,119 @@ const MUSIC_GENRES = [
     'trance',
     'wave',
 ];
+const WORDPLAY_DETECTORS = [
+    {
+        category: 'Contains a Bird Name',
+        emoji: '🐦',
+        terms: [
+            'albatross', 'anchiornis', 'andalgalornis', 'archaeopteryx',
+            'bluejay', 'brontornis', 'canary', 'cardinal', 'cassowary',
+            'chicken', 'confuciusornis', 'cormorant', 'crane', 'crow', 'dodo',
+            'drake', 'duck', 'eagle', 'falcon', 'finch', 'flamingo', 'gannet',
+            'gastornis', 'goose', 'gull', 'hawk', 'hummingbird', 'kelenken',
+            'kiwi', 'lark', 'macaw', 'magpie', 'microraptor', 'ostrich',
+            'parrot', 'patagornis', 'pelican', 'penguin', 'petrel',
+            'phorusrhacos', 'phoenix', 'puffin', 'raptor', 'raven', 'rhea',
+            'robin', 'sinornithosaurus', 'sparrow', 'swan', 'tern', 'titanis',
+            'turkey', 'vulture', 'wren', 'zazu',
+        ],
+        exactTerms: ['bigbird', 'bluejay', 'emu', 'owl'],
+    },
+    {
+        category: 'Contains a Color Name',
+        emoji: '🎨',
+        terms: [
+            'aurora', 'black', 'blue', 'brown', 'buttercup', 'cobalt',
+            'copper', 'coral', 'cyan', 'gold', 'gray', 'grey', 'green',
+            'indigo', 'iris', 'jade', 'lime', 'magenta', 'olive', 'orange',
+            'peach', 'pepper', 'pink', 'purple', 'red', 'rose', 'silver',
+            'steel', 'teal', 'violet', 'white', 'yellow',
+        ],
+    },
+    {
+        category: 'Contains a Planet Name',
+        emoji: '🪐',
+        terms: [
+            'ceres', 'earth', 'eris', 'haumea', 'jupiter', 'makemake', 'mars',
+            'mercury', 'neptune', 'pluto', 'saturn', 'uranus', 'venus',
+        ],
+    },
+    {
+        category: 'Contains a Month Name',
+        emoji: '📅',
+        terms: [
+            'january', 'february', 'march', 'april', 'june', 'july',
+            'august', 'september', 'october', 'november', 'december',
+        ],
+        tokenPrefixTerms: ['may'],
+    },
+    {
+        category: 'Contains a Card Rank',
+        emoji: '🃏',
+        terms: ['ace', 'jack', 'queen', 'king'],
+    },
+    {
+        category: 'Contains a Family Member',
+        emoji: '👪',
+        terms: ['mom', 'dad', 'mother', 'father', 'son', 'daughter', 'sister', 'brother', 'aunt', 'uncle', 'cousin'],
+    },
+    {
+        category: 'Contains a Comic Sound Effect',
+        emoji: '💥',
+        terms: ['bang', 'bam', 'boom', 'pow', 'zap', 'wham', 'biff'],
+    },
+    {
+        category: 'Contains a Compass Direction',
+        emoji: '🧭',
+        terms: ['north', 'south', 'east', 'west'],
+    },
+    {
+        category: 'Contains a Shape Name',
+        emoji: '🔷',
+        terms: ['circle', 'square', 'triangle', 'star', 'cross', 'ring', 'line'],
+    },
+    {
+        category: 'Contains a Zodiac Sign',
+        emoji: '♈',
+        terms: ['aries', 'taurus', 'gemini', 'cancer', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces'],
+        exactTerms: ['leo'],
+    },
+    {
+        category: 'Contains a Chess Piece',
+        emoji: '♟️',
+        terms: ['king', 'queen', 'bishop', 'knight', 'rook', 'pawn'],
+    },
+];
+const WORDPLAY_CATEGORIES = new Set(WORDPLAY_DETECTORS.map(detector => detector.category));
+const DEPRECATED_WORDPLAY_CATEGORIES = new Set([
+    'Contains a Greek Letter Name',
+]);
+const WORDPLAY_EMOJIS = Object.fromEntries(WORDPLAY_DETECTORS.map(detector => [detector.category, detector.emoji]));
+
+function hasWordplayMatch(detector, normalizedWord, wordTokens) {
+    if (detector.terms && detector.terms.some(term => normalizedWord.includes(term))) {
+        return true;
+    }
+    if (detector.exactTerms && detector.exactTerms.some(term => normalizedWord === term)) {
+        return true;
+    }
+    if (detector.tokenTerms && detector.tokenTerms.some(term => wordTokens.includes(term))) {
+        return true;
+    }
+    if (detector.tokenPrefixTerms && detector.tokenPrefixTerms.some(term =>
+        wordTokens.some(token => token === term || token.startsWith(term))
+    )) {
+        return true;
+    }
+    return false;
+}
+
 let transportModeCount = 0;
 let endsWithTransportModeCount = 0;
 let musicGenreCount = 0;
 let startsWithMusicGenreCount = 0;
 let endsWithMusicGenreCount = 0;
+const wordplayCounts = Object.fromEntries(WORDPLAY_DETECTORS.map(detector => [detector.category, 0]));
 
 for (const [word, categories] of Object.entries(wordsData)) {
     totalWords++;
@@ -107,6 +215,8 @@ for (const [word, categories] of Object.entries(wordsData)) {
         && category !== MUSIC_GENRE_CATEGORY
         && category !== STARTS_WITH_MUSIC_GENRE_CATEGORY
         && category !== ENDS_WITH_MUSIC_GENRE_CATEGORY
+        && !WORDPLAY_CATEGORIES.has(category)
+        && !DEPRECATED_WORDPLAY_CATEGORIES.has(category)
     );
 
     // Only add new pattern tags to words with 3 or more letters
@@ -144,6 +254,7 @@ for (const [word, categories] of Object.entries(wordsData)) {
     }
 
     const normalizedWord = word.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const wordTokens = word.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
     if (TRANSPORT_MODES.some(mode => normalizedWord.includes(mode))) {
         newCategories.push(TRANSPORT_MODE_CATEGORY);
         transportModeCount++;
@@ -163,6 +274,12 @@ for (const [word, categories] of Object.entries(wordsData)) {
     if (MUSIC_GENRES.some(genre => normalizedWord.endsWith(genre))) {
         newCategories.push(ENDS_WITH_MUSIC_GENRE_CATEGORY);
         endsWithMusicGenreCount++;
+    }
+    for (const detector of WORDPLAY_DETECTORS) {
+        if (hasWordplayMatch(detector, normalizedWord, wordTokens)) {
+            newCategories.push(detector.category);
+            wordplayCounts[detector.category]++;
+        }
     }
 
     // Update the word's categories (for all words, to remove old pattern tags)
@@ -390,7 +507,9 @@ currentCategories.forEach(category => {
         updatedEmojis[category] = existingEmojis[category];
     } else {
         // Add new category with appropriate emoji
-        if (category.startsWith('Starts with ') || category.startsWith('Ends with ')) {
+        if (WORDPLAY_EMOJIS[category]) {
+            updatedEmojis[category] = WORDPLAY_EMOJIS[category];
+        } else if (category.startsWith('Starts with ') || category.startsWith('Ends with ')) {
             // Assign 🔤 emoji to "Starts with" and "Ends with" categories
             updatedEmojis[category] = '🔤';
         } else {
@@ -496,6 +615,9 @@ console.log(`- Tagged ${endsWithTransportModeCount} words with ${ENDS_WITH_TRANS
 console.log(`- Tagged ${musicGenreCount} words with ${MUSIC_GENRE_CATEGORY}`);
 console.log(`- Tagged ${startsWithMusicGenreCount} words with ${STARTS_WITH_MUSIC_GENRE_CATEGORY}`);
 console.log(`- Tagged ${endsWithMusicGenreCount} words with ${ENDS_WITH_MUSIC_GENRE_CATEGORY}`);
+for (const [category, count] of Object.entries(wordplayCounts)) {
+    console.log(`- Tagged ${count} words with ${category}`);
+}
 console.log(`- Removed ${duplicateCategoriesRemoved} duplicate categories within words`);
 console.log(`- Found and merged ${duplicateWordsFound} duplicate words`);
 console.log(`- Generated ${Object.keys(finalCategories).length} categories`);

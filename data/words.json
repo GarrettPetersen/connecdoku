@@ -220,6 +220,7 @@
     "1960s",
     "1968",
     "20th Century",
+    "Contains a Card Rank",
     "Drama Stories",
     "Ends with SEY",
     "Movies",
@@ -311,6 +312,7 @@
     "2D Animated Films",
     "Christmas Stories",
     "Comedy Stories",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with MAS",
     "Family-Friendly Stories",
@@ -341,6 +343,7 @@
     "1970s",
     "1971",
     "20th Century",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with NGE",
     "Movies",
@@ -494,7 +497,6 @@
     "Medical Terms",
     "Mentioned in We Didn't Start the Fire",
     "Starts with AID",
-    "Technology",
     "Things American"
   ],
   "AM": [
@@ -631,6 +633,7 @@
   ],
   "Ada Lovelace": [
     "19th Century",
+    "Contains a Card Rank",
     "Ends with ACE",
     "Mathematicians",
     "People",
@@ -836,6 +839,7 @@
     "Starts with AKR"
   ],
   "Alabama": [
+    "Contains a Comic Sound Effect",
     "Ends with AMA",
     "Locations in North America",
     "Mentioned in We Didn't Start the Fire",
@@ -917,6 +921,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with OSS",
@@ -1029,6 +1034,7 @@
     "Things Spanish"
   ],
   "Alfredo": [
+    "Contains a Color Name",
     "Ends with EDO",
     "Foods",
     "Sauces",
@@ -1429,6 +1435,7 @@
     "Birds",
     "Black and White",
     "Carnivores",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with NIS",
     "Extinct Animals",
@@ -1472,6 +1479,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with NIS",
     "Extinct Animals",
@@ -1737,6 +1745,7 @@
     "Books",
     "Classic Literature",
     "Coming of Age Stories",
+    "Contains a Color Name",
     "Ends with LES",
     "Family-Friendly Stories",
     "Fictional People",
@@ -2017,6 +2026,7 @@
     "Things American"
   ],
   "April": [
+    "Contains a Month Name",
     "Ends with RIL",
     "Months",
     "Starts with APR",
@@ -2026,6 +2036,7 @@
     "1860s",
     "19th Century",
     "Assassination of Lincoln",
+    "Contains a Month Name",
     "Dates",
     "Ends with 865",
     "Starts with APR"
@@ -2033,6 +2044,7 @@
   "April 15th, 1912": [
     "1910s",
     "20th Century",
+    "Contains a Month Name",
     "Dates",
     "Ends with 912",
     "Starts with APR"
@@ -2050,6 +2062,7 @@
   ],
   "Aquarius": [
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with IUS",
     "Starts with AQU",
     "Zodiac Signs"
@@ -2073,6 +2086,7 @@
     "Bird-like Dinosaurs",
     "Birds",
     "Carnivores",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with RYX",
     "Extinct Animals",
@@ -2211,6 +2225,7 @@
   ],
   "Aries": [
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with IES",
     "Starts with ARI",
     "Zodiac Signs"
@@ -2442,6 +2457,7 @@
     "20th Century",
     "21st Century",
     "Assassins",
+    "Contains a Shape Name",
     "Ends with ARK",
     "Fictional People",
     "People",
@@ -2644,6 +2660,7 @@
     "Things German"
   ],
   "August": [
+    "Contains a Month Name",
     "Ends with UST",
     "Months",
     "Starts with AUG",
@@ -2653,6 +2670,7 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Contains a Month Name",
     "Ends with STA",
     "Locations in North America",
     "Place Names",
@@ -2663,6 +2681,7 @@
   "Augustus": [
     "1st Century",
     "Ancient Figures",
+    "Contains a Month Name",
     "Emperors",
     "Ends with TUS",
     "Men",
@@ -2697,6 +2716,7 @@
     "20th Century",
     "Astronomical Objects",
     "Colors",
+    "Contains a Color Name",
     "Disney Characters",
     "Ends with ORA",
     "Fictional People",
@@ -3047,6 +3067,7 @@
   ],
   "BLACKPINK": [
     "Black Things",
+    "Contains a Color Name",
     "Ends with INK",
     "K-pop",
     "Pink Things",
@@ -3264,6 +3285,7 @@
     "Ancient Cities",
     "Cities",
     "Cities in Asia",
+    "Contains a Family Member",
     "Ends with DAD",
     "Historic Trade Cities",
     "Locations in Asia",
@@ -3407,6 +3429,7 @@
     "1940s",
     "1942",
     "2D Animated Films",
+    "Contains a Comic Sound Effect",
     "Disney",
     "Drama Stories",
     "Ends with MBI",
@@ -3427,6 +3450,7 @@
   ],
   "Bamboo": [
     "Cenozoic Era",
+    "Contains a Comic Sound Effect",
     "Currently Living Plants",
     "Ends with BOO",
     "Holocene Epoch",
@@ -3466,12 +3490,14 @@
     "Things Colombian"
   ],
   "Bangers and Mash": [
+    "Contains a Comic Sound Effect",
     "Ends with ASH",
     "Foods",
     "Starts with BAN",
     "Things British"
   ],
   "Bangladesh": [
+    "Contains a Comic Sound Effect",
     "Countries",
     "Countries in Asia",
     "Ends with ESH",
@@ -3832,6 +3858,7 @@
     "1980",
     "1980s",
     "20th Century",
+    "Contains a Shape Name",
     "Ends with ARS",
     "Movies",
     "Movies With the Seven Samurai Plot",
@@ -3974,6 +4001,7 @@
     "Amphibious",
     "Amphibious Operations",
     "Battles",
+    "Contains a Bird Name",
     "Ends with HON",
     "Events",
     "Land Battles",
@@ -4150,6 +4178,7 @@
   "Battle of Red Cliff": [
     "3rd Century",
     "Battles",
+    "Contains a Color Name",
     "Ends with IFF",
     "Events",
     "Military Conflicts",
@@ -4311,6 +4340,7 @@
     "1940s",
     "20th Century",
     "Battles",
+    "Contains a Color Name",
     "Ends with SEA",
     "Events",
     "Military Conflicts",
@@ -4433,6 +4463,7 @@
   "Beagle": [
     "Age of Sail",
     "Charles Darwin",
+    "Contains a Bird Name",
     "Ends with GLE",
     "Exploration Ships",
     "Royal Navy",
@@ -4483,6 +4514,7 @@
     "20th Century",
     "Animal Terms",
     "Blue Things",
+    "Contains a Compass Direction",
     "Ends with AST",
     "Fictional People",
     "Mammals",
@@ -4512,6 +4544,7 @@
     "1990s",
     "1991",
     "2D Animated Films",
+    "Contains a Compass Direction",
     "Disney",
     "Drama Stories",
     "Ends with AST",
@@ -4744,6 +4777,7 @@
     "Things Congolese"
   ],
   "Belgian East Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -4754,6 +4788,7 @@
     "Starts with BEL"
   ],
   "Belgian West Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -5070,6 +5105,7 @@
     "20th Century",
     "Animal Terms",
     "Birds",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with IRD",
     "Fictional Animals",
@@ -5278,6 +5314,7 @@
   ],
   "Bishop": [
     "Board Game Equipment",
+    "Contains a Chess Piece",
     "Ends with HOP",
     "Religious Terms",
     "Religious Titles",
@@ -5313,6 +5350,7 @@
     "20th Century",
     "Black Things",
     "Colors",
+    "Contains a Color Name",
     "Ends with ACK",
     "Music",
     "Pearl Jam",
@@ -5330,6 +5368,7 @@
     "Animal Terms",
     "Black Things",
     "Carnivores",
+    "Contains a Color Name",
     "Currently Living Animals",
     "Ends with CAT",
     "Mammals",
@@ -5337,6 +5376,7 @@
     "Starts with BLA"
   ],
   "Black Forest Cake": [
+    "Contains a Color Name",
     "Desserts",
     "Ends with AKE",
     "Foods",
@@ -5348,6 +5388,8 @@
     "1980s",
     "20th Century",
     "Aircraft",
+    "Contains a Bird Name",
+    "Contains a Color Name",
     "Ends with AWK",
     "Helicopters",
     "Manufactured by Sikorsky",
@@ -5359,6 +5401,7 @@
   "Black Hole": [
     "Astronomical Objects",
     "Black Things",
+    "Contains a Color Name",
     "Ends with OLE",
     "Star",
     "Starts with BLA"
@@ -5372,6 +5415,7 @@
     "Animal Terms",
     "Avengers",
     "Black Things",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with HER",
     "Fictional People",
@@ -5392,6 +5436,7 @@
   ],
   "Black Sea": [
     "Bodies of Water",
+    "Contains a Color Name",
     "Ends with SEA",
     "Locations in Europe",
     "Seas",
@@ -5406,6 +5451,7 @@
     "Avengers",
     "Black Things",
     "Carnivores",
+    "Contains a Color Name",
     "Ends with DOW",
     "Fictional People",
     "Marvel Characters",
@@ -5419,6 +5465,7 @@
   ],
   "Blackberry": [
     "Cenozoic Era",
+    "Contains a Color Name",
     "Currently Living Plants",
     "Ends with RRY",
     "Fruits",
@@ -5486,6 +5533,7 @@
   ],
   "Blue": [
     "Colors",
+    "Contains a Color Name",
     "Ends with LUE",
     "Starts with BLU",
     "_____ Bird",
@@ -5498,6 +5546,8 @@
     "Birds",
     "Blue Things",
     "Cenozoic Era",
+    "Contains a Bird Name",
+    "Contains a Color Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with JAY",
@@ -5514,11 +5564,13 @@
   ],
   "Blue Jeans": [
     "Blue Things",
+    "Contains a Color Name",
     "Ends with ANS",
     "Starts with BLU"
   ],
   "Blue Mosque": [
     "Buildings",
+    "Contains a Color Name",
     "Ends with QUE",
     "Islamic Architecture",
     "Religious Sites",
@@ -5530,6 +5582,7 @@
     "1999",
     "20th Century",
     "Blue Things",
+    "Contains a Color Name",
     "Ends with ILL",
     "Incel Terminology",
     "Starts with BLU",
@@ -5541,6 +5594,7 @@
     "Blue Things",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Color Name",
     "Currently Living Animals",
     "Ends with ALE",
     "Holocene Epoch",
@@ -5561,6 +5615,7 @@
   "Blueberry": [
     "Blue Things",
     "Cenozoic Era",
+    "Contains a Color Name",
     "Ends with RRY",
     "Eocene Epoch",
     "Holocene Epoch",
@@ -5576,6 +5631,7 @@
     "Animal Terms",
     "Blue Things",
     "Cenozoic Era",
+    "Contains a Color Name",
     "Currently Living Animals",
     "Ends with IRD",
     "Holocene Epoch",
@@ -5625,6 +5681,7 @@
     "21st Century",
     "British Antarctic Survey",
     "Civilian Ships",
+    "Contains a Card Rank",
     "Contains a Mode of Transport",
     "Ends with ACE",
     "Exploration Ships",
@@ -5817,6 +5874,7 @@
     "Warships"
   ],
   "Boom": [
+    "Contains a Comic Sound Effect",
     "Economics",
     "Ends with OOM",
     "Nautical Terms",
@@ -5909,6 +5967,7 @@
     "Things American"
   ],
   "Botswana": [
+    "Contains a Bird Name",
     "Countries",
     "Countries in Africa",
     "Ends with ANA",
@@ -6090,6 +6149,7 @@
     "20th Century",
     "Books",
     "Classic Literature",
+    "Contains a Bird Name",
     "Drama Stories",
     "Dystopian Stories",
     "Ends with RLD",
@@ -6340,6 +6400,7 @@
     "World War I"
   ],
   "British East Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -6396,6 +6457,7 @@
     "Things Somali"
   ],
   "British West Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -6432,6 +6494,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with NIS",
     "Extinct Animals",
@@ -6450,6 +6513,7 @@
     "3rd Century",
     "Ancient Buildings",
     "Buildings",
+    "Contains a Card Rank",
     "Ends with ACE",
     "Han Dynasty",
     "Historical Sites",
@@ -6461,6 +6525,7 @@
     "2000s",
     "2003",
     "2D Animated Films",
+    "Contains a Family Member",
     "Disney",
     "Drama Stories",
     "Ends with EAR",
@@ -6480,6 +6545,7 @@
   "Brown Bess": [
     "18th Century",
     "19th Century",
+    "Contains a Color Name",
     "Ends with ESS",
     "Gunpowder Weapons",
     "Historical Weapons",
@@ -6491,6 +6557,7 @@
     "Weapons"
   ],
   "Brownie": [
+    "Contains a Color Name",
     "Desserts",
     "Ends with NIE",
     "Foods",
@@ -6596,6 +6663,8 @@
   "Buckingham Palace": [
     "British Architecture",
     "Buildings",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with ACE",
     "Modern Buildings",
     "Starts with BUC",
@@ -6836,6 +6905,7 @@
     "Warships"
   ],
   "Butter Chicken": [
+    "Contains a Bird Name",
     "Ends with KEN",
     "Foods",
     "Starts with BUT",
@@ -6853,6 +6923,7 @@
     "21st Century",
     "Cenozoic Era",
     "Colors",
+    "Contains a Color Name",
     "Currently Living Plants",
     "Ends with CUP",
     "Eocene Epoch",
@@ -6902,6 +6973,7 @@
     "Things That Fly"
   ],
   "Butterhead": [
+    "Contains a Bird Name",
     "Ends with EAD",
     "Foods",
     "Salads",
@@ -7114,6 +7186,7 @@
   ],
   "Caesar crosses the Rubicon": [
     "1st Century BC",
+    "Contains a Shape Name",
     "Ends with CON",
     "Events",
     "Political Events",
@@ -7312,6 +7385,7 @@
   ],
   "Canary": [
     "Archipelagos",
+    "Contains a Bird Name",
     "Ends with ARY",
     "Locations in Europe",
     "Place Names",
@@ -7319,6 +7393,7 @@
   ],
   "Canary Islands": [
     "Archipelagos",
+    "Contains a Bird Name",
     "Ends with NDS",
     "Locations in Europe",
     "Place Names",
@@ -7327,6 +7402,7 @@
   ],
   "Cancer": [
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with CER",
     "Starts with CAN",
     "Zodiac Signs"
@@ -7433,6 +7509,7 @@
   ],
   "Capricorn": [
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with ORN",
     "Starts with CAP",
     "Zodiac Signs"
@@ -7501,12 +7578,14 @@
   "Carcassonne": [
     "Board Games",
     "Board Games Named After Places",
+    "Contains a Family Member",
     "Contains a Mode of Transport",
     "Ends with NNE",
     "Starts with CAR"
   ],
   "Cardamom": [
     "Cenozoic Era",
+    "Contains a Family Member",
     "Contains a Mode of Transport",
     "Currently Living Plants",
     "Ends with MOM",
@@ -7528,6 +7607,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Contains a Mode of Transport",
     "Currently Living Animals",
     "Dinosaurs",
@@ -7569,6 +7649,7 @@
   "Carl Vinson": [
     "Aircraft Carriers",
     "Cold War",
+    "Contains a Family Member",
     "Contains a Mode of Transport",
     "Ends with SON",
     "Military Ships",
@@ -7599,6 +7680,7 @@
     "Animal Terms",
     "Carnivores",
     "Contains a Mode of Transport",
+    "Contains a Zodiac Sign",
     "Cretaceous Period",
     "Dinosaurs",
     "Ends with RUS",
@@ -7678,6 +7760,7 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Contains a Family Member",
     "Contains a Mode of Transport",
     "Ends with ITY",
     "Locations in North America",
@@ -7812,6 +7895,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ARY",
@@ -8091,6 +8175,7 @@
     "The Bad Place"
   ],
   "Ceres": [
+    "Contains a Planet Name",
     "Dwarf Planets",
     "Ends with RES",
     "Roman Gods",
@@ -8180,6 +8265,7 @@
   ],
   "Chamomile": [
     "Cenozoic Era",
+    "Contains a Family Member",
     "Currently Living Plants",
     "Ends with ILE",
     "Eocene Epoch",
@@ -8606,6 +8692,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with KEN",
@@ -8629,6 +8716,7 @@
     "2005",
     "3D Animated Films",
     "Comedy Stories",
+    "Contains a Bird Name",
     "Disney",
     "Ends with TLE",
     "Family-Friendly Stories",
@@ -8819,6 +8907,7 @@
   "Christ the Redeemer": [
     "Brazilian Architecture",
     "Buildings",
+    "Contains a Color Name",
     "Ends with MER",
     "Modern Buildings",
     "New Seven Wonders",
@@ -8867,6 +8956,8 @@
     "1990s",
     "1994",
     "20th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with ESS",
     "Movies",
@@ -9288,6 +9379,7 @@
   "Cobalt": [
     "Blue Things",
     "Colors",
+    "Contains a Color Name",
     "Elements",
     "Ends with ALT",
     "Metallic Colors",
@@ -9762,6 +9854,7 @@
     "Bird-like Dinosaurs",
     "Birds",
     "Confuciusornithids",
+    "Contains a Bird Name",
     "Cretaceous Period",
     "Dinosaurs",
     "Ends with NIS",
@@ -9913,6 +10006,7 @@
   ],
   "Copper": [
     "Colors",
+    "Contains a Color Name",
     "Economics",
     "Elements",
     "Ends with PER",
@@ -9952,6 +10046,7 @@
     "Carboniferous Period",
     "Cenozoic Era",
     "Colors",
+    "Contains a Color Name",
     "Cretaceous Period",
     "Currently Living Animals",
     "Devonian Period",
@@ -10000,6 +10095,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ANT",
@@ -10089,6 +10185,7 @@
     "Starts with COR"
   ],
   "Costa Rica": [
+    "Contains a Shape Name",
     "Countries",
     "Countries in Central America",
     "Ends with ICA",
@@ -10326,6 +10423,7 @@
     "20th Century",
     "Black and White",
     "Black and White Films",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with OON",
     "Fictional Monsters",
@@ -10440,6 +10538,7 @@
   "Cross Country Skiing": [
     "Contains a Mode of Transport",
     "Contains a Music Genre",
+    "Contains a Shape Name",
     "Ends with ING",
     "Sports",
     "Starts with CRO",
@@ -10449,6 +10548,7 @@
   "Crossbow": [
     "11th Century",
     "Bows",
+    "Contains a Shape Name",
     "Ends with BOW",
     "Historical Weapons",
     "Ranged Weapons",
@@ -10481,6 +10581,7 @@
     "Birds",
     "Black Things",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ROW",
@@ -10619,6 +10720,7 @@
   "Cyan": [
     "Blue Things",
     "Colors",
+    "Contains a Color Name",
     "Ends with YAN",
     "Starts with CYA"
   ],
@@ -10815,6 +10917,7 @@
     "Things American"
   ],
   "Daffy Duck": [
+    "Contains a Bird Name",
     "Ends with UCK",
     "Fictional Characters",
     "Starts with DAF",
@@ -10929,6 +11032,8 @@
     "1970s",
     "20th Century",
     "ABBA",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Disco Songs",
     "Ends with EEN",
     "Music",
@@ -11029,6 +11134,7 @@
     "Action Stories",
     "Adventure Stories",
     "Blind People",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with VIL",
     "Fictional People",
@@ -11107,6 +11213,7 @@
     "20th Century",
     "Aircraft",
     "Battle of Midway",
+    "Contains a Family Member",
     "Dive Bomber",
     "Ends with ESS",
     "Manufactured by Douglas",
@@ -11260,6 +11367,7 @@
     "Volcanic Eruptions"
   ],
   "December": [
+    "Contains a Month Name",
     "Ends with BER",
     "Months",
     "Starts with DEC",
@@ -11268,6 +11376,7 @@
   "December 25th, 2010": [
     "2010",
     "2010s",
+    "Contains a Month Name",
     "Dates",
     "Ends with 010",
     "Starts with DEC"
@@ -11276,6 +11385,7 @@
     "1940s",
     "20th Century",
     "Attack on Pearl Harbor",
+    "Contains a Month Name",
     "Dates",
     "Ends with 941",
     "Famous Quotes",
@@ -11783,6 +11893,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Ends with ODO",
     "Extinct Animals",
     "Herbivores",
@@ -11826,6 +11937,7 @@
     "1970s",
     "1975",
     "20th Century",
+    "Contains a Bird Name",
     "Crime Stories",
     "Drama Stories",
     "Ends with OON",
@@ -11954,6 +12066,7 @@
     "20th Century",
     "Animal Terms",
     "Birds",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with UCK",
     "Fictional Animals",
@@ -12216,6 +12329,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with AKE",
@@ -12245,6 +12359,7 @@
     "18th Century",
     "Books",
     "Classic Literature",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with BER",
     "Family Sagas",
@@ -12346,6 +12461,7 @@
     "Things Irish"
   ],
   "Duck Confit": [
+    "Contains a Bird Name",
     "Ends with FIT",
     "Foods",
     "Starts with DUC",
@@ -12355,6 +12471,7 @@
     "1980s",
     "20th Century",
     "Animal Terms",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with CKY",
     "Extinct Animals",
@@ -12558,6 +12675,7 @@
     "Birds of Prey",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with GLE",
@@ -12579,12 +12697,14 @@
     "Things That Fly"
   ],
   "Earl Grey": [
+    "Contains a Color Name",
     "Drinks",
     "Ends with REY",
     "Starts with EAR",
     "Things British"
   ],
   "Earth": [
+    "Contains a Planet Name",
     "Ends with RTH",
     "Geography",
     "Parts of Earth",
@@ -12595,6 +12715,7 @@
     "20th Century",
     "Cold War",
     "Cold War Powers",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Europe",
     "Countries in the USSR",
@@ -12608,6 +12729,8 @@
     "Things German"
   ],
   "Easter Island": [
+    "Contains a Compass Direction",
+    "Contains a Planet Name",
     "Ends with AND",
     "Islands",
     "Locations in Oceania",
@@ -12633,6 +12756,7 @@
   ],
   "Echinacea": [
     "Cenozoic Era",
+    "Contains a Card Rank",
     "Currently Living Plants",
     "Ends with CEA",
     "Eocene Epoch",
@@ -12693,6 +12817,7 @@
   "Edison": [
     "19th Century",
     "20th Century",
+    "Contains a Family Member",
     "Ends with SON",
     "Inventors",
     "Men",
@@ -12940,6 +13065,7 @@
     "2022",
     "21st Century",
     "Action Role-Playing Games",
+    "Contains a Shape Name",
     "Ends with ING",
     "Fantasy Stories",
     "Starts with ELD",
@@ -12986,6 +13112,7 @@
     "1890s",
     "19th Century",
     "Classic Literature",
+    "Contains a Family Member",
     "Ends with SON",
     "Famous Quotes",
     "Literature Quotes",
@@ -13051,6 +13178,7 @@
   ],
   "Elizabeth Barrett Browning": [
     "19th Century",
+    "Contains a Color Name",
     "Ends with ING",
     "People",
     "Poets",
@@ -13062,6 +13190,7 @@
   "Elizabeth Blackwell": [
     "1840s",
     "19th Century",
+    "Contains a Color Name",
     "Ends with ELL",
     "Medical Professionals",
     "People",
@@ -13113,6 +13242,7 @@
     "1880s",
     "19th Century",
     "20th Century",
+    "Contains a Color Name",
     "Ends with ITE",
     "Founders of Religious Movements",
     "People",
@@ -13187,6 +13317,7 @@
   ],
   "Emily Dickinson": [
     "19th Century",
+    "Contains a Family Member",
     "Ends with SON",
     "People",
     "Poets",
@@ -13379,6 +13510,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with EMU",
@@ -13462,6 +13594,8 @@
     "1970s",
     "1976",
     "20th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with ING",
     "Events",
     "Starts with ENT",
@@ -13514,6 +13648,7 @@
     "Starts with EQU"
   ],
   "Eris": [
+    "Contains a Planet Name",
     "Dwarf Planets",
     "Ends with RIS",
     "Starts with ERI"
@@ -13918,6 +14053,7 @@
     "Birds of Prey",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with CON",
@@ -14110,6 +14246,7 @@
     "Things Middle Eastern"
   ],
   "February": [
+    "Contains a Month Name",
     "Ends with ARY",
     "Months",
     "Starts with FEB",
@@ -14459,6 +14596,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with NGO",
@@ -14596,6 +14734,8 @@
   ],
   "Florentine Banking Crisis": [
     "14th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Economic Events",
     "Ends with SIS",
     "Events",
@@ -14794,6 +14934,7 @@
   ],
   "Formation of Earth": [
     "Astronomical Events",
+    "Contains a Planet Name",
     "Ends with RTH",
     "Events",
     "Precambrian",
@@ -15083,6 +15224,7 @@
   "Fred": [
     "20th Century",
     "21st Century",
+    "Contains a Color Name",
     "Ends with RED",
     "Fictional Characters",
     "Fictional People",
@@ -15095,6 +15237,7 @@
   ],
   "Frederick I Barbarossa": [
     "12th Century",
+    "Contains a Color Name",
     "Ends with SSA",
     "Holy Roman Emperors",
     "Men",
@@ -15110,6 +15253,7 @@
   ],
   "Frederick II": [
     "13th Century",
+    "Contains a Color Name",
     "Ends with  II",
     "Holy Roman Emperors",
     "Men",
@@ -15124,6 +15268,7 @@
   ],
   "Frederick the Great": [
     "18th Century",
+    "Contains a Color Name",
     "Ends with EAT",
     "Men",
     "Military Leaders",
@@ -15150,6 +15295,7 @@
     "Starts with FRE"
   ],
   "French East Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -15197,6 +15343,7 @@
     "Things Djiboutian"
   ],
   "French West Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -15244,6 +15391,7 @@
     "Starts with FRI"
   ],
   "Fried Chicken": [
+    "Contains a Bird Name",
     "Ends with KEN",
     "Foods",
     "Starts with FRI",
@@ -15603,6 +15751,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with NET",
@@ -15663,6 +15812,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Ends with NIS",
     "Eocene Epoch",
     "Extinct Animals",
@@ -15740,6 +15890,7 @@
     "20th Century",
     "Astronomical Objects",
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with INI",
     "Space Missions",
     "Starts with GEM",
@@ -15825,6 +15976,7 @@
     "US States"
   ],
   "German East Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -15835,6 +15987,7 @@
     "Starts with GER"
   ],
   "German West Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -16173,6 +16326,7 @@
     "Things British"
   ],
   "Glossopteris": [
+    "Contains a Planet Name",
     "Ends with RIS",
     "Extinct Plants",
     "Paleozoic Era",
@@ -16289,6 +16443,7 @@
   ],
   "Gold": [
     "Colors",
+    "Contains a Color Name",
     "D-Day",
     "D-Day Beaches",
     "Economics",
@@ -16305,6 +16460,7 @@
   ],
   "Golden Hind": [
     "Age of Sail",
+    "Contains a Color Name",
     "Ends with IND",
     "Exploration Ships",
     "Pirates",
@@ -16314,6 +16470,7 @@
     "Things British"
   ],
   "Golden Horn": [
+    "Contains a Color Name",
     "Ends with ORN",
     "Locations in Europe",
     "Place Names",
@@ -16393,6 +16550,8 @@
   ],
   "Good King Wenceslas": [
     "10th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with LAS",
     "Medieval Figures",
     "Men",
@@ -16466,6 +16625,7 @@
   ],
   "Gooseberry": [
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Plants",
     "Ends with RRY",
     "Holocene Epoch",
@@ -16643,6 +16803,7 @@
   "Gray": [
     "Black and White",
     "Colors",
+    "Contains a Color Name",
     "Ends with RAY",
     "Starts with GRA",
     "_____ Man Movies"
@@ -16711,6 +16872,7 @@
     "Animal Terms",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Color Name",
     "Currently Living Animals",
     "Ends with ARK",
     "Holocene Epoch",
@@ -16748,6 +16910,7 @@
   ],
   "Green": [
     "Colors",
+    "Contains a Color Name",
     "Ends with EEN",
     "Golf Terms",
     "Starts with GRE",
@@ -16755,6 +16918,7 @@
     "_____ Room"
   ],
   "Green Apple": [
+    "Contains a Color Name",
     "Ends with PLE",
     "Green Things",
     "Starts with GRE"
@@ -16762,6 +16926,7 @@
   "Green Arrow": [
     "1940s",
     "20th Century",
+    "Contains a Color Name",
     "DC Characters",
     "Ends with ROW",
     "Fictional People",
@@ -16773,6 +16938,7 @@
     "Weapons"
   ],
   "Green Bean": [
+    "Contains a Color Name",
     "Ends with EAN",
     "Green Things",
     "Starts with GRE"
@@ -16784,6 +16950,7 @@
     "Best Picture Winners",
     "Biographical Stories",
     "Comedy Stories",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with OOK",
     "Movies",
@@ -16797,6 +16964,7 @@
     "Things American"
   ],
   "Green Curry": [
+    "Contains a Color Name",
     "Ends with RRY",
     "Foods",
     "Green Things",
@@ -16809,6 +16977,7 @@
     "20th Century",
     "Books",
     "Children's Stories",
+    "Contains a Color Name",
     "Ends with HAM",
     "Family-Friendly Stories",
     "Starts with GRE",
@@ -16817,6 +16986,7 @@
   "Green Goblin": [
     "1960s",
     "20th Century",
+    "Contains a Color Name",
     "Ends with LIN",
     "Fictional People",
     "Green Things",
@@ -16828,6 +16998,7 @@
     "Supervillains"
   ],
   "Green Grape Soju": [
+    "Contains a Color Name",
     "Contains a Music Genre",
     "Drinks",
     "Ends with OJU",
@@ -16837,6 +17008,8 @@
   "Green Lantern": [
     "1940s",
     "20th Century",
+    "Contains a Bird Name",
+    "Contains a Color Name",
     "DC Characters",
     "Ends with ERN",
     "Fictional People",
@@ -16848,11 +17021,13 @@
     "Things That Fly"
   ],
   "Green Light": [
+    "Contains a Color Name",
     "Ends with GHT",
     "Green Things",
     "Starts with GRE"
   ],
   "Green Tea": [
+    "Contains a Color Name",
     "Drinks",
     "Ends with TEA",
     "Green Things",
@@ -16865,6 +17040,7 @@
     "Things Korean"
   ],
   "Greenland": [
+    "Contains a Color Name",
     "Ends with AND",
     "Islands",
     "Place Names",
@@ -16900,6 +17076,7 @@
   "Greyhound": [
     "Animal Terms",
     "Cenozoic Era",
+    "Contains a Color Name",
     "Currently Living Animals",
     "Dogs",
     "Ends with UND",
@@ -17133,6 +17310,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ULL",
@@ -17155,6 +17333,7 @@
     "Adventure Stories",
     "Books",
     "Classic Literature",
+    "Contains a Bird Name",
     "Ends with ELS",
     "Satire",
     "Starts with GUL",
@@ -17174,6 +17353,7 @@
   ],
   "Gunpowder": [
     "9th Century",
+    "Contains a Comic Sound Effect",
     "Ends with DER",
     "Explosives",
     "Gunpowder Weapons",
@@ -17663,6 +17843,7 @@
   "Harold Godwinson": [
     "11th Century",
     "Battle of Hastings",
+    "Contains a Family Member",
     "Ends with SON",
     "Medieval Figures",
     "Men",
@@ -17714,6 +17895,7 @@
     "1880s",
     "1890s",
     "19th Century",
+    "Contains a Family Member",
     "Ends with SON",
     "Men",
     "Military Leaders",
@@ -17876,6 +18058,7 @@
     "21st Century",
     "Adventure Stories",
     "Books",
+    "Contains a Bird Name",
     "Ends with NIX",
     "Family-Friendly Stories",
     "Fantasy Stories",
@@ -17903,6 +18086,7 @@
     "21st Century",
     "Adventure Stories",
     "Books",
+    "Contains a Family Member",
     "Ends with BAN",
     "Family-Friendly Stories",
     "Fantasy Stories",
@@ -17972,6 +18156,7 @@
   ],
   "Haumea": [
     "Astronomical Objects",
+    "Contains a Planet Name",
     "Dwarf Planets",
     "Ends with MEA",
     "Starts with HAU"
@@ -17998,6 +18183,7 @@
     "Black _____",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with AWK",
@@ -18023,6 +18209,7 @@
     "Animal Terms",
     "Avengers",
     "Birds of Prey",
+    "Contains a Bird Name",
     "Ends with EYE",
     "Fictional People",
     "Marvel Characters",
@@ -18035,6 +18222,9 @@
   "Hawking": [
     "20th Century",
     "21st Century",
+    "Contains a Bird Name",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with ING",
     "Men",
     "People",
@@ -18409,6 +18599,8 @@
     "1940s",
     "20th Century",
     "Classic Films",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with KID",
     "Famous Quotes",
     "Movie Lines",
@@ -18420,6 +18612,7 @@
     "2010s",
     "2018",
     "21st Century",
+    "Contains a Color Name",
     "Ends with ARY",
     "Horror Stories",
     "Movies",
@@ -18480,6 +18673,7 @@
     "Animal Species",
     "Animal Terms",
     "Cenozoic Era",
+    "Contains a Shape Name",
     "Currently Living Animals",
     "Ends with ING",
     "Fish",
@@ -18522,6 +18716,7 @@
   "Hetty Green": [
     "19th Century",
     "Businesspeople",
+    "Contains a Color Name",
     "Ends with EEN",
     "People",
     "Real People",
@@ -19131,6 +19326,7 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Contains a Family Member",
     "Ends with SON",
     "Locations in North America",
     "Place Names",
@@ -19141,6 +19337,7 @@
   "Hudson Bay": [
     "Bays",
     "Bodies of Water",
+    "Contains a Family Member",
     "Ends with BAY",
     "Locations in North America",
     "Starts with HUD",
@@ -19230,6 +19427,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with IRD",
@@ -19277,6 +19475,7 @@
   "Hundred Schools of Thought": [
     "4th Century BC",
     "5th Century BC",
+    "Contains a Color Name",
     "Ends with GHT",
     "Events",
     "Starts with HUN",
@@ -19397,6 +19596,7 @@
   "I am not a crook": [
     "1970s",
     "20th Century",
+    "Contains a Chess Piece",
     "Ends with OOK",
     "Famous Quotes",
     "Political Speeches",
@@ -19408,6 +19608,7 @@
   "I am your father": [
     "1980s",
     "20th Century",
+    "Contains a Family Member",
     "Ends with HER",
     "Famous Quotes",
     "Movie Lines",
@@ -19460,6 +19661,8 @@
     "1990s",
     "1997",
     "20th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with RLD",
     "Famous Quotes",
     "Movie Lines",
@@ -19654,6 +19857,7 @@
   "Ides of March": [
     "1st Century BC",
     "Assassination of Caesar",
+    "Contains a Month Name",
     "Dates",
     "Ends with RCH",
     "Historical Events",
@@ -19830,6 +20034,7 @@
   "Indigo": [
     "Blue Things",
     "Colors",
+    "Contains a Color Name",
     "Ends with IGO",
     "Starts with IND"
   ],
@@ -20089,6 +20294,7 @@
     "21st Century",
     "Cenozoic Era",
     "Colors",
+    "Contains a Color Name",
     "Currently Living Plants",
     "Ends with RIS",
     "Eocene Epoch",
@@ -20249,6 +20455,7 @@
     "Starts with ITA"
   ],
   "Italian East Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -20271,6 +20478,7 @@
     "Things Somali"
   ],
   "Italian West Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -20384,6 +20592,7 @@
     "Starts with JAB"
   ],
   "Jack": [
+    "Contains a Card Rank",
     "Ends with ACK",
     "Fictional People",
     "Men",
@@ -20394,6 +20603,7 @@
   "Jack Kerouac": [
     "1950s",
     "20th Century",
+    "Contains a Card Rank",
     "Ends with UAC",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -20407,6 +20617,8 @@
     "1990s",
     "1997",
     "20th Century",
+    "Contains a Card Rank",
+    "Contains a Color Name",
     "Crime Stories",
     "Drama Stories",
     "Ends with OWN",
@@ -20424,6 +20636,7 @@
     "1960s",
     "20th Century",
     "Assassination of JFK",
+    "Contains a Card Rank",
     "Ends with EDY",
     "First Ladies",
     "People",
@@ -20439,6 +20652,8 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Contains a Card Rank",
+    "Contains a Family Member",
     "Ends with SON",
     "Locations in North America",
     "Men",
@@ -20454,6 +20669,7 @@
   ],
   "Jade": [
     "Colors",
+    "Contains a Color Name",
     "Ends with ADE",
     "Green Things",
     "Plant-Based Colors",
@@ -20639,6 +20855,7 @@
   ],
   "Janissaries": [
     "15th Century",
+    "Contains a Zodiac Sign",
     "Ends with IES",
     "Men",
     "Starts with JAN",
@@ -20646,6 +20863,7 @@
     "Things Turkish"
   ],
   "January": [
+    "Contains a Month Name",
     "Ends with ARY",
     "Months",
     "Starts with JAN",
@@ -20731,6 +20949,7 @@
   "Jean Grey": [
     "20th Century",
     "21st Century",
+    "Contains a Color Name",
     "Ends with REY",
     "Fictional People",
     "Marvel Characters",
@@ -20765,6 +20984,7 @@
   "Jefferson": [
     "18th Century",
     "19th Century",
+    "Contains a Family Member",
     "Ends with SON",
     "Men",
     "National Leaders",
@@ -20779,6 +20999,7 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Contains a Family Member",
     "Ends with ITY",
     "Locations in North America",
     "Place Names",
@@ -20850,6 +21071,7 @@
     "1970s",
     "1973",
     "20th Century",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with TAR",
     "Movies",
@@ -21205,6 +21427,7 @@
     "1860s",
     "1960s",
     "19th Century",
+    "Contains a Family Member",
     "Ends with SON",
     "Men",
     "National Leaders",
@@ -21332,6 +21555,7 @@
     "Adventure Stories",
     "Books",
     "Classic Literature",
+    "Contains a Compass Direction",
     "Ends with EST",
     "Fantasy Stories",
     "Ming Dynasty",
@@ -21447,6 +21671,7 @@
     "Tragedy Stories"
   ],
   "July": [
+    "Contains a Month Name",
     "Ends with ULY",
     "Months",
     "Starts with JUL",
@@ -21455,6 +21680,7 @@
   "July 14th, 1789": [
     "1780s",
     "18th Century",
+    "Contains a Month Name",
     "Dates",
     "Ends with 789",
     "French Revolution",
@@ -21465,12 +21691,14 @@
     "1860s",
     "19th Century",
     "Battle of Gettysburg",
+    "Contains a Month Name",
     "Dates",
     "Ends with 863",
     "Starts with JUL"
   ],
   "July 2nd, 626": [
     "7th Century",
+    "Contains a Month Name",
     "Dates",
     "Ends with 626",
     "Starts with JUL",
@@ -21482,6 +21710,7 @@
     "Synonyms for Big"
   ],
   "June": [
+    "Contains a Month Name",
     "Ends with UNE",
     "Months",
     "Starts with JUN",
@@ -21491,6 +21720,7 @@
     "1810s",
     "19th Century",
     "Battle of Waterloo",
+    "Contains a Month Name",
     "Dates",
     "Ends with 815",
     "Napoleonic Wars",
@@ -21500,6 +21730,7 @@
     "1910s",
     "20th Century",
     "Assassination of Archduke Franz Ferdinand",
+    "Contains a Month Name",
     "Dates",
     "Ends with 914",
     "Starts with JUN",
@@ -21509,6 +21740,7 @@
     "1940s",
     "20th Century",
     "Battle of Midway",
+    "Contains a Month Name",
     "Dates",
     "Ends with 942",
     "Starts with JUN",
@@ -21517,6 +21749,7 @@
   "June 6th, 1944": [
     "1940s",
     "20th Century",
+    "Contains a Month Name",
     "D-Day",
     "Dates",
     "Ends with 944",
@@ -21527,6 +21760,7 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Contains a Month Name",
     "Ends with EAU",
     "Locations in North America",
     "Place Names",
@@ -21556,6 +21790,7 @@
     "World War II"
   ],
   "Jupiter": [
+    "Contains a Planet Name",
     "Ends with TER",
     "Gas Giants",
     "Largest of its Type",
@@ -21870,6 +22105,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with KEN",
     "Extinct Animals",
@@ -21995,6 +22231,7 @@
     "_____ Ring"
   ],
   "Key West": [
+    "Contains a Compass Direction",
     "Ends with EST",
     "Islands",
     "Locations in North America",
@@ -22180,6 +22417,7 @@
     "1970s",
     "20th Century",
     "Books",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with RED",
     "Starts with KIN",
@@ -22188,6 +22426,8 @@
   ],
   "King": [
     "Board Game Equipment",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with ING",
     "Fictional People",
     "Medieval Rulers",
@@ -22203,6 +22443,8 @@
     "20th Century",
     "Animal Terms",
     "Carnivores",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Dragons",
     "Ends with RAH",
     "Fictional Animals",
@@ -22215,6 +22457,8 @@
   ],
   "King John": [
     "13th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with OHN",
     "Magna Carta",
     "Men",
@@ -22236,6 +22480,8 @@
     "Black and White",
     "Black and White Films",
     "Classic Films",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with ONG",
     "Fictional Animals",
@@ -22255,6 +22501,8 @@
   ],
   "King Lear": [
     "17th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with EAR",
     "Fictional People",
@@ -22270,6 +22518,8 @@
     "Tragic Heroes"
   ],
   "King William": [
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with IAM",
     "Islands",
     "Locations in North America",
@@ -22281,6 +22531,8 @@
     "2000s",
     "2005",
     "21st Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with VEN",
     "Movies",
@@ -22295,6 +22547,8 @@
     "11th Century",
     "12th Century",
     "13th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Countries",
     "Countries that No Longer Exist",
     "Ends with LEM",
@@ -22369,6 +22623,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with IWI",
@@ -22713,6 +22968,7 @@
     "Things American"
   ],
   "Kung Pao Chicken": [
+    "Contains a Bird Name",
     "Ends with KEN",
     "Foods",
     "Qing Dynasty",
@@ -22913,6 +23169,7 @@
     "Things Italian"
   ],
   "Lacrosse": [
+    "Contains a Shape Name",
     "Ends with SSE",
     "Sports",
     "Starts with LAC",
@@ -22920,6 +23177,7 @@
   ],
   "Lady Jane Grey": [
     "16th Century",
+    "Contains a Color Name",
     "Ends with REY",
     "Monarchs",
     "National Leaders",
@@ -22995,6 +23253,7 @@
     "20th Century",
     "Animal Terms",
     "Animals",
+    "Contains a Card Rank",
     "Dogs",
     "Ends with DOG",
     "Famous Dogs",
@@ -23271,6 +23530,7 @@
     "20th Century",
     "Best Picture Winners",
     "Biographical Stories",
+    "Contains a Bird Name",
     "Drama Stories",
     "Ends with BIA",
     "Mentioned in We Didn't Start the Fire",
@@ -23415,6 +23675,7 @@
     "2020s",
     "21st Century",
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with LEO",
     "Men",
     "People",
@@ -23607,6 +23868,7 @@
   "Liberace": [
     "1950s",
     "20th Century",
+    "Contains a Card Rank",
     "Ends with ACE",
     "Men",
     "Mentioned in We Didn't Start the Fire",
@@ -23630,6 +23892,7 @@
   ],
   "Libra": [
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with BRA",
     "Starts with LIB",
     "Zodiac Signs"
@@ -23741,6 +24004,7 @@
     "Adventure Stories",
     "Books",
     "Classic Literature",
+    "Contains a Month Name",
     "Drama Stories",
     "Ends with UST",
     "Starts with LIG",
@@ -23833,6 +24097,7 @@
   ],
   "Lime": [
     "Colors",
+    "Contains a Color Name",
     "Ends with IME",
     "Foods",
     "Plant-Based Colors",
@@ -24415,6 +24680,7 @@
   "Louisa May Alcott": [
     "19th Century",
     "Classic Literature",
+    "Contains a Month Name",
     "Ends with OTT",
     "People",
     "Real People",
@@ -24645,6 +24911,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with CAW",
@@ -24684,6 +24951,7 @@
     "Tragic Heroes"
   ],
   "Mace": [
+    "Contains a Card Rank",
     "Ends with ACE",
     "Historical Weapons",
     "One-Handed Weapons",
@@ -24691,6 +24959,7 @@
     "Starts with MAC"
   ],
   "Macedonia": [
+    "Contains a Card Rank",
     "Countries",
     "Countries in Europe",
     "Ends with NIA",
@@ -24832,6 +25101,7 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Contains a Family Member",
     "Ends with SON",
     "Locations in North America",
     "Men",
@@ -24880,6 +25150,7 @@
   ],
   "Magenta": [
     "Colors",
+    "Contains a Color Name",
     "Ends with NTA",
     "Starts with MAG"
   ],
@@ -24933,6 +25204,7 @@
     "Birds",
     "Black and White",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with PIE",
@@ -24965,6 +25237,7 @@
   ],
   "Makemake": [
     "Astronomical Objects",
+    "Contains a Planet Name",
     "Dwarf Planets",
     "Ends with AKE",
     "Starts with MAK"
@@ -25268,6 +25541,7 @@
     "Things American"
   ],
   "March": [
+    "Contains a Month Name",
     "Ends with RCH",
     "Events",
     "Labor Protest Actions",
@@ -25464,6 +25738,7 @@
   ],
   "Mars": [
     "Chocolate Bars",
+    "Contains a Planet Name",
     "Ends with ARS",
     "Planets",
     "Roman Gods",
@@ -25471,12 +25746,14 @@
     "Things Roman"
   ],
   "Marseille": [
+    "Contains a Planet Name",
     "Ends with LLE",
     "Historic Trade Cities",
     "Starts with MAR"
   ],
   "Marshall Islands": [
     "Archipelagos",
+    "Contains a Planet Name",
     "Countries",
     "Countries in Oceania",
     "Ends with NDS",
@@ -25551,6 +25828,7 @@
     "1880s",
     "19th Century",
     "20th Century",
+    "Contains a Color Name",
     "Ends with DDY",
     "Founders of Religions",
     "Founders of Religious Movements",
@@ -25587,6 +25865,8 @@
   ],
   "Mary Kingsley": [
     "19th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with LEY",
     "Explorers",
     "People",
@@ -25641,6 +25921,7 @@
   "Mary Rose": [
     "16th Century",
     "Age of Sail",
+    "Contains a Color Name",
     "Ends with OSE",
     "Royal Navy",
     "Ships",
@@ -25665,6 +25946,8 @@
     "1971",
     "20th Century",
     "Biographical Stories",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with OTS",
     "Historical Epics",
@@ -25868,6 +26151,7 @@
     "Starts with MAU"
   ],
   "May": [
+    "Contains a Month Name",
     "Ends with MAY",
     "Months",
     "Starts with MAY",
@@ -25877,6 +26161,7 @@
   "May the Force be with you": [
     "1970s",
     "20th Century",
+    "Contains a Month Name",
     "Ends with YOU",
     "Famous Quotes",
     "Movie Lines",
@@ -25889,6 +26174,7 @@
     "17th Century",
     "Age of Sail",
     "Cenozoic Era",
+    "Contains a Month Name",
     "Currently Living Plants",
     "Ends with WER",
     "Eocene Epoch",
@@ -25910,6 +26196,7 @@
   ],
   "Mayo": [
     "Condiments",
+    "Contains a Month Name",
     "Ends with AYO",
     "Foods",
     "Sauces",
@@ -25918,6 +26205,7 @@
     "White Things"
   ],
   "Mayor Quimby": [
+    "Contains a Month Name",
     "Ends with MBY",
     "Fictional People",
     "Mayors",
@@ -25931,6 +26219,7 @@
   "Mays": [
     "20th Century",
     "Athletes",
+    "Contains a Month Name",
     "Ends with AYS",
     "MLB Players",
     "Men",
@@ -26028,6 +26317,8 @@
     "2000s",
     "2007",
     "3D Animated Films",
+    "Contains a Bird Name",
+    "Contains a Family Member",
     "Disney",
     "Ends with ONS",
     "Family-Friendly Stories",
@@ -26170,6 +26461,7 @@
     "1960s",
     "20th Century",
     "Astronomical Objects",
+    "Contains a Planet Name",
     "Elements",
     "Ends with URY",
     "Metals",
@@ -26369,6 +26661,7 @@
     "2000s",
     "2010s",
     "21st Century",
+    "Contains a Comic Sound Effect",
     "Ends with AMA",
     "First Ladies",
     "People",
@@ -26423,6 +26716,7 @@
     "Birds",
     "Black Things",
     "Carnivores",
+    "Contains a Bird Name",
     "Contains a Music Genre",
     "Cretaceous Period",
     "Dinosaurs",
@@ -26550,6 +26844,7 @@
     "Starts with MIL"
   ],
   "Millennium Falcon": [
+    "Contains a Bird Name",
     "Ends with CON",
     "Fictional Spaceships",
     "Star Wars Universe",
@@ -27136,6 +27431,8 @@
     "21st Century",
     "Adventure Stories",
     "Comedy Stories",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with DOM",
     "Movies",
@@ -27304,6 +27601,7 @@
     "Things That Fly"
   ],
   "Mother": [
+    "Contains a Family Member",
     "Ends with HER",
     "People",
     "Starts with MOT",
@@ -27324,6 +27622,7 @@
     "Things That Fly"
   ],
   "Motocross": [
+    "Contains a Shape Name",
     "Ends with OSS",
     "Racing Sports",
     "Sports",
@@ -27604,6 +27903,7 @@
   ],
   "Mustard": [
     "Condiments",
+    "Contains a Shape Name",
     "Ends with ARD",
     "Foods",
     "Sauces",
@@ -27616,6 +27916,7 @@
     "2007",
     "21st Century",
     "Adventure Stories",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with HTS",
     "Movies",
@@ -27998,6 +28299,7 @@
     "Things American"
   ],
   "Nelson": [
+    "Contains a Family Member",
     "Ends with SON",
     "Fictional People",
     "Men",
@@ -28038,6 +28340,7 @@
     "Things Nepalese"
   ],
   "Neptune": [
+    "Contains a Planet Name",
     "Ends with UNE",
     "Gas Giants",
     "Planets",
@@ -28075,6 +28378,7 @@
   ],
   "Netherlands East Indies": [
     "Archipelagos",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -28265,6 +28569,8 @@
     "1990s",
     "1994",
     "20th Century",
+    "Contains a Color Name",
+    "Contains a Family Member",
     "Ends with SON",
     "OJ Simpson",
     "People",
@@ -28426,6 +28732,8 @@
     "Western Stories"
   ],
   "No Parking Sign": [
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with IGN",
     "Road Signs",
     "Starts with NO ",
@@ -28476,6 +28784,7 @@
   ],
   "North Atlantic": [
     "Bodies of Water",
+    "Contains a Compass Direction",
     "Ends with TIC",
     "Oceans",
     "Place Names",
@@ -28486,6 +28795,7 @@
     "1950s",
     "20th Century",
     "Cold War",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Asia",
     "Countries with Nuclear Weapons",
@@ -28498,6 +28808,8 @@
     "Things Korean"
   ],
   "North Macedonia": [
+    "Contains a Card Rank",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Europe",
     "Ends with NIA",
@@ -28512,12 +28824,14 @@
   ],
   "North Sea": [
     "Bodies of Water",
+    "Contains a Compass Direction",
     "Ends with SEA",
     "Oceans",
     "Starts with NOR"
   ],
   "North Vietnam": [
     "20th Century",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -28530,6 +28844,7 @@
   ],
   "North Yemen": [
     "20th Century",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -28541,11 +28856,13 @@
     "Things Yemeni"
   ],
   "Northern": [
+    "Contains a Compass Direction",
     "Ends with ERN",
     "Starts with NOR",
     "_____ Light"
   ],
   "Northern Rhodesia": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -28640,6 +28957,7 @@
   ],
   "Notre Dame": [
     "Buildings",
+    "Contains a Color Name",
     "Ends with AME",
     "Gothic Architecture",
     "Medieval Buildings",
@@ -28648,6 +28966,7 @@
     "Things French"
   ],
   "November": [
+    "Contains a Month Name",
     "Ends with BER",
     "Months",
     "NATO Phonetic Alphabet",
@@ -28657,6 +28976,7 @@
   "November 22nd, 1963": [
     "1960s",
     "Assassination of JFK",
+    "Contains a Month Name",
     "Dates",
     "Ends with 963",
     "Starts with NOV"
@@ -28832,6 +29152,7 @@
   "Obama": [
     "2010s",
     "21st Century",
+    "Contains a Comic Sound Effect",
     "Ends with AMA",
     "Men",
     "National Leaders",
@@ -28848,6 +29169,7 @@
     "Starts with OCE"
   ],
   "October": [
+    "Contains a Month Name",
     "Ends with BER",
     "Months",
     "Starts with OCT",
@@ -28925,6 +29247,7 @@
     "20th Century",
     "Books",
     "Children's Stories",
+    "Contains a Card Rank",
     "Drama Stories",
     "Ends with GO!",
     "Family-Friendly Stories",
@@ -28989,6 +29312,7 @@
     "21st Century",
     "Cenozoic Era",
     "Colors",
+    "Contains a Color Name",
     "Currently Living Plants",
     "Ends with IVE",
     "Eocene Epoch",
@@ -29017,6 +29341,7 @@
     "1988",
     "2D Animated Films",
     "Comedy Stories",
+    "Contains a Color Name",
     "Disney",
     "Ends with ANY",
     "Family-Friendly Stories",
@@ -29037,6 +29362,7 @@
     "1968",
     "20th Century",
     "Best Picture Winners",
+    "Contains a Color Name",
     "Ends with ER!",
     "Family-Friendly Stories",
     "Movies",
@@ -29183,6 +29509,7 @@
     "20th Century",
     "Books",
     "Classic Literature",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with UDE",
     "Family Sagas",
@@ -29334,6 +29661,7 @@
   "Orange": [
     "Colors",
     "Companies",
+    "Contains a Color Name",
     "Ends with NGE",
     "Foods",
     "Fruits",
@@ -29343,6 +29671,8 @@
     "Things American"
   ],
   "Orange Chicken": [
+    "Contains a Bird Name",
+    "Contains a Color Name",
     "Ends with KEN",
     "Foods",
     "Starts with ORA",
@@ -29514,6 +29844,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ICH",
@@ -29648,6 +29979,7 @@
     "Birds of Prey",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with OWL",
@@ -29781,6 +30113,8 @@
   ],
   "Palace of Westminster": [
     "Buildings",
+    "Contains a Card Rank",
+    "Contains a Compass Direction",
     "Ends with TER",
     "Locations in Europe",
     "Place Names",
@@ -29849,6 +30183,7 @@
     "Cities in North America",
     "Cities in USA",
     "Comedy Stories",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with NGS",
     "Locations in North America",
@@ -29901,6 +30236,7 @@
   ],
   "Panasonic": [
     "Companies",
+    "Contains a Family Member",
     "Ends with NIC",
     "Starts with PAN",
     "Tech Companies"
@@ -30032,6 +30368,7 @@
   ],
   "Paracelsus": [
     "16th Century",
+    "Contains a Card Rank",
     "Ends with SUS",
     "Medical Professionals",
     "Men",
@@ -30046,6 +30383,7 @@
     "Animal Species",
     "Animal Terms",
     "Cenozoic Era",
+    "Contains a Card Rank",
     "Ends with IUM",
     "Extinct Animals",
     "Herbivores",
@@ -30129,6 +30467,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ROT",
@@ -30202,6 +30541,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with NIS",
     "Extinct Animals",
@@ -30265,6 +30605,7 @@
   ],
   "Pawn": [
     "Board Game Equipment",
+    "Contains a Chess Piece",
     "Ends with AWN",
     "Starts with PAW"
   ],
@@ -30284,6 +30625,7 @@
   ],
   "Peach": [
     "Colors",
+    "Contains a Color Name",
     "Ends with ACH",
     "Foods",
     "Fruits",
@@ -30376,6 +30718,9 @@
     "Things That Fly"
   ],
   "Peking Duck": [
+    "Contains a Bird Name",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with UCK",
     "Foods",
     "Ming Dynasty",
@@ -30388,6 +30733,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with CAN",
@@ -30443,6 +30789,7 @@
     "Carnivores",
     "Cenozoic Era",
     "Companies",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "DC Characters",
     "Dinosaurs",
@@ -30486,6 +30833,7 @@
     "Black _____",
     "Cenozoic Era",
     "Colors",
+    "Contains a Color Name",
     "Currently Living Plants",
     "Ends with PER",
     "Eocene Epoch",
@@ -30507,6 +30855,8 @@
     "21st Century",
     "Adventure Stories",
     "Books",
+    "Contains a Card Rank",
+    "Contains a Family Member",
     "Drama Stories",
     "Ends with ANS",
     "Family-Friendly Stories",
@@ -30521,6 +30871,7 @@
     "Birds of Prey",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Ends with CON",
     "Fastest of its Type",
@@ -30604,6 +30955,7 @@
     "Starts with PER"
   ],
   "Persona": [
+    "Contains a Family Member",
     "Ends with ONA",
     "Music",
     "Psychology Terms",
@@ -30704,6 +31056,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with REL",
@@ -30748,6 +31101,7 @@
     "1957",
     "1960s",
     "20th Century",
+    "Contains a Card Rank",
     "Drama Stories",
     "Ends with ACE",
     "First in Internal Chronology",
@@ -30822,6 +31176,7 @@
   ],
   "Philip II of Macedon": [
     "4th Century BC",
+    "Contains a Card Rank",
     "Ends with DON",
     "Men",
     "Military Reformers",
@@ -30881,6 +31236,7 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Contains a Bird Name",
     "Ends with NIX",
     "Fictional People",
     "Locations in North America",
@@ -30906,6 +31262,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with COS",
     "Extinct Animals",
@@ -31120,6 +31477,7 @@
   ],
   "Pink Panther": [
     "Animal Terms",
+    "Contains a Color Name",
     "Ends with HER",
     "Pink Panther Characters",
     "Pink Things",
@@ -31129,6 +31487,7 @@
   "Pinky": [
     "Animals",
     "Body Parts",
+    "Contains a Color Name",
     "Ends with NKY",
     "Starts with PIN",
     "Warner Bros. Characters"
@@ -31286,6 +31645,7 @@
     "21st Century",
     "Action Stories",
     "Adventure Stories",
+    "Contains a Color Name",
     "Contains a Mode of Transport",
     "Disney",
     "Ends with ARL",
@@ -31311,6 +31671,7 @@
     "Starts with PIS"
   ],
   "Pisces": [
+    "Contains a Zodiac Sign",
     "Ends with CES",
     "Starts with PIS",
     "Zodiac Signs"
@@ -31477,6 +31838,7 @@
   ],
   "Pluto": [
     "Animal Terms",
+    "Contains a Planet Name",
     "Disney Characters",
     "Dogs",
     "Dwarf Planets",
@@ -31493,6 +31855,7 @@
     "Things Roman"
   ],
   "Plutonium": [
+    "Contains a Planet Name",
     "Elements",
     "Ends with IUM",
     "Manhattan Project",
@@ -31846,6 +32209,7 @@
     "Things Portuguese"
   ],
   "Portuguese East Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -31880,6 +32244,7 @@
     "Things East Timorese"
   ],
   "Portuguese West Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -31908,6 +32273,7 @@
   ],
   "Potala Palace": [
     "Buildings",
+    "Contains a Card Rank",
     "Ends with ACE",
     "Religious Sites",
     "Starts with POT",
@@ -31963,6 +32329,7 @@
     "2010s",
     "2014",
     "21st Century",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with ION",
     "Movies",
@@ -32110,6 +32477,7 @@
   "Princess Peach": [
     "1980s",
     "20th Century",
+    "Contains a Color Name",
     "Ends with ACH",
     "Fictional People",
     "Nintendo Characters",
@@ -32176,6 +32544,7 @@
   ],
   "Prosecco": [
     "Alcoholic Drinks",
+    "Contains a Color Name",
     "Drinks",
     "Ends with CCO",
     "Starts with PRO",
@@ -32339,6 +32708,7 @@
     "Black and White",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with FIN",
@@ -32443,12 +32813,14 @@
   ],
   "Purple": [
     "Colors",
+    "Contains a Color Name",
     "Ends with PLE",
     "Starts with PUR"
   ],
   "Purple Haze": [
     "1960s",
     "20th Century",
+    "Contains a Color Name",
     "Ends with AZE",
     "Jimi Hendrix",
     "Music",
@@ -32572,6 +32944,8 @@
     "Band Namesakes",
     "Bands",
     "Board Game Equipment",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Ends with EEN",
     "Music",
     "Musicians",
@@ -32581,6 +32955,8 @@
   ],
   "Queen Elizabeth": [
     "Civilian Ships",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Cunard Line",
     "Ends with ETH",
     "First in Internal Chronology",
@@ -32596,6 +32972,8 @@
   "Queen Elizabeth 2": [
     "Civilian Ships",
     "Cold War",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Cunard Line",
     "Ends with H 2",
     "Luxury Ships",
@@ -32612,6 +32990,8 @@
     "British Monarchs",
     "British Royals",
     "Civilian Ships",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Cruise Ships",
     "Cunard Line",
     "Ends with ARY",
@@ -32634,6 +33014,8 @@
   "Queen Mary 2": [
     "21st Century",
     "Civilian Ships",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Cruise Ships",
     "Cunard Line",
     "Ends with Y 2",
@@ -32676,6 +33058,7 @@
     "1960s",
     "20th Century",
     "Avengers",
+    "Contains a Color Name",
     "Elements",
     "Ends with VER",
     "Fastest of its Type",
@@ -32792,6 +33175,8 @@
     "1990s",
     "1991",
     "20th Century",
+    "Contains a Bird Name",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with ERN",
     "Movies",
@@ -32888,6 +33273,7 @@
     "Birds",
     "Birds of Prey",
     "Carnivores",
+    "Contains a Bird Name",
     "Contains a Music Genre",
     "Dinosaurs",
     "Ends with TOR",
@@ -32980,6 +33366,7 @@
     "Birds",
     "Black Things",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "DC Characters",
     "Dinosaurs",
@@ -33164,6 +33551,7 @@
     "Colors",
     "Comedy Stories",
     "Companies",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with RED",
     "First in Internal Chronology",
@@ -33184,6 +33572,7 @@
     "21st Century",
     "Action Stories",
     "Comedy Stories",
+    "Contains a Color Name",
     "Ends with D 2",
     "Movies",
     "Movies directed by Dean Parisot",
@@ -33204,6 +33593,7 @@
     "Black and White",
     "Black and White Films",
     "Classic Films",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with ARD",
     "Fictional People",
@@ -33220,6 +33610,7 @@
     "Things Japanese"
   ],
   "Red Curry": [
+    "Contains a Color Name",
     "Ends with RRY",
     "Foods",
     "Red Things",
@@ -33233,6 +33624,7 @@
     "21st Century",
     "Action Stories",
     "Adventure Stories",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with ION",
     "First in Release Order",
@@ -33250,6 +33642,7 @@
     "21st Century",
     "Action Stories",
     "Adventure Stories",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with N 2",
     "First in Internal Chronology",
@@ -33264,6 +33657,7 @@
     "2000s",
     "2002",
     "21st Century",
+    "Contains a Color Name",
     "Crime Stories",
     "Drama Stories",
     "Ends with GON",
@@ -33284,6 +33678,7 @@
   "Red Hood": [
     "21st Century",
     "Clothing",
+    "Contains a Color Name",
     "DC Characters",
     "Ends with OOD",
     "Fictional People",
@@ -33297,6 +33692,7 @@
     "1990s",
     "1999",
     "20th Century",
+    "Contains a Color Name",
     "Ends with ILL",
     "Incel Terminology",
     "Red Things",
@@ -33305,6 +33701,7 @@
   ],
   "Red Riding Hood": [
     "Clothing",
+    "Contains a Color Name",
     "Ends with OOD",
     "Folklore Figures",
     "Red Things",
@@ -33312,6 +33709,7 @@
   ],
   "Red Sea": [
     "Bodies of Water",
+    "Contains a Color Name",
     "Ends with SEA",
     "Locations in Africa",
     "Seas",
@@ -33321,6 +33719,7 @@
     "1350s",
     "14th Century",
     "Civil Wars",
+    "Contains a Color Name",
     "Ends with ION",
     "Events",
     "Land Battles",
@@ -33334,6 +33733,7 @@
   ],
   "Red Velvet": [
     "Colors",
+    "Contains a Color Name",
     "Ends with VET",
     "Foods",
     "K-pop",
@@ -33343,6 +33743,7 @@
   ],
   "Red Wine": [
     "Alcoholic Drinks",
+    "Contains a Color Name",
     "Drinks",
     "Ends with INE",
     "Red Things",
@@ -33353,6 +33754,7 @@
   ],
   "Reddit": [
     "Companies",
+    "Contains a Color Name",
     "Ends with DIT",
     "Social Media Brands",
     "Starts with RED",
@@ -33361,6 +33763,7 @@
   "Redoutable": [
     "Age of Sail",
     "Battleships",
+    "Contains a Color Name",
     "Ends with BLE",
     "French Navy",
     "Military Ships",
@@ -33373,6 +33776,7 @@
   ],
   "Redwood": [
     "Cenozoic Era",
+    "Contains a Color Name",
     "Cretaceous Period",
     "Currently Living Plants",
     "Ends with OOD",
@@ -33556,6 +33960,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with HEA",
@@ -33731,6 +34136,7 @@
     "1960s",
     "1970s",
     "Beatles Members",
+    "Contains a Shape Name",
     "Ends with NGO",
     "Men",
     "Music",
@@ -33842,6 +34248,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "DC Characters",
     "Dinosaurs",
@@ -33865,6 +34272,7 @@
     "1973",
     "2D Animated Films",
     "Adventure Stories",
+    "Contains a Bird Name",
     "Disney",
     "Ends with OOD",
     "Family-Friendly Stories",
@@ -33886,6 +34294,7 @@
     "20th Century",
     "Action Stories",
     "Adventure Stories",
+    "Contains a Bird Name",
     "Drama Stories",
     "Ends with VES",
     "Movies",
@@ -33905,6 +34314,8 @@
     "Adventure Stories",
     "Books",
     "Classic Literature",
+    "Contains a Bird Name",
+    "Contains a Family Member",
     "Ends with SOE",
     "Fictional People",
     "Islands",
@@ -34153,6 +34564,8 @@
     "14th Century",
     "Books",
     "Classic Literature",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with OMS",
     "Epic Novels",
@@ -34293,6 +34706,7 @@
     "Black _____",
     "Cenozoic Era",
     "Colors",
+    "Contains a Color Name",
     "Currently Living Plants",
     "Ends with OSE",
     "Eocene Epoch",
@@ -34314,6 +34728,7 @@
   ],
   "Rosemary": [
     "Cenozoic Era",
+    "Contains a Color Name",
     "Currently Living Plants",
     "Ends with ARY",
     "Eocene Epoch",
@@ -34333,6 +34748,7 @@
   "Rosetta": [
     "Cities",
     "Cities in Africa",
+    "Contains a Color Name",
     "Ends with TTA",
     "Locations in Africa",
     "Starts with ROS",
@@ -34576,6 +34992,7 @@
     "Aircraft",
     "Black Things",
     "Cold War",
+    "Contains a Color Name",
     "Ends with IRD",
     "Fastest of its Type",
     "Military Aircraft",
@@ -34689,6 +35106,7 @@
   ],
   "Sagittarius": [
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with IUS",
     "Starts with SAG",
     "Zodiac Signs"
@@ -34968,6 +35386,7 @@
     "Animal Terms",
     "Birds",
     "Birds of Prey",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with GLE",
     "Muppet Characters",
@@ -35029,6 +35448,7 @@
   "Samuel Johnson": [
     "1700s",
     "18th Century",
+    "Contains a Family Member",
     "Ends with SON",
     "Famous Diarists",
     "Men",
@@ -35241,6 +35661,7 @@
   "Santissima Trinidad": [
     "Age of Sail",
     "Battleships",
+    "Contains a Family Member",
     "Ends with DAD",
     "Military Ships",
     "Napoleonic Wars",
@@ -35335,6 +35756,7 @@
   "Saturn": [
     "Car Brands",
     "Cars",
+    "Contains a Planet Name",
     "Ends with URN",
     "Gas Giants",
     "Planets",
@@ -35427,6 +35849,7 @@
     "1980s",
     "1983",
     "20th Century",
+    "Contains a Card Rank",
     "Contains a Mode of Transport",
     "Crime Stories",
     "Drama Stories",
@@ -35533,6 +35956,7 @@
     "_____ Board"
   ],
   "Scorpio": [
+    "Contains a Zodiac Sign",
     "Ends with PIO",
     "Starts with SCO",
     "Zodiac Signs"
@@ -35545,6 +35969,7 @@
     "Carboniferous Period",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Zodiac Sign",
     "Cretaceous Period",
     "Currently Living Animals",
     "Devonian Period",
@@ -35665,6 +36090,7 @@
     "Birds of Prey",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with AWK",
@@ -35704,6 +36130,7 @@
     "Starts with SEA"
   ],
   "Season": [
+    "Contains a Family Member",
     "Ends with SON",
     "Starts with SEA",
     "Time Periods",
@@ -35812,6 +36239,7 @@
     "Things Korean"
   ],
   "September": [
+    "Contains a Month Name",
     "Ends with BER",
     "Months",
     "Starts with SEP",
@@ -35935,6 +36363,7 @@
     "1960s",
     "20th Century",
     "Albums",
+    "Contains a Color Name",
     "Ends with AND",
     "Music",
     "Starts with SGT",
@@ -36474,6 +36903,7 @@
     "20th Century",
     "21st Century",
     "Colors",
+    "Contains a Color Name",
     "Drama Stories",
     "Economics",
     "Elements",
@@ -36633,6 +37063,7 @@
     "Bird-like Dinosaurs",
     "Birds",
     "Carnivores",
+    "Contains a Bird Name",
     "Cretaceous Period",
     "Dinosaurs",
     "Dromaeosaurids",
@@ -36762,6 +37193,7 @@
   ],
   "Skyline": [
     "Buildings",
+    "Contains a Shape Name",
     "Ends with INE",
     "Place Names",
     "Starts with SKY",
@@ -36980,6 +37412,7 @@
     "1937",
     "2D Animated Films",
     "Adventure Stories",
+    "Contains a Color Name",
     "Disney",
     "Ends with RFS",
     "Family-Friendly Stories",
@@ -37014,6 +37447,7 @@
   ],
   "Snowball Earth": [
     "Climate Change",
+    "Contains a Planet Name",
     "Ends with RTH",
     "Events",
     "Glacial Periods",
@@ -37202,6 +37636,7 @@
   ],
   "Song": [
     "Chinese Dynasties",
+    "Contains a Family Member",
     "Ends with ONG",
     "Music",
     "Starts with SON",
@@ -37212,6 +37647,7 @@
     "1991",
     "20th Century",
     "Animal Terms",
+    "Contains a Family Member",
     "Ends with NIC",
     "Fictional Animals",
     "Fictional Hedgehogs",
@@ -37226,6 +37662,7 @@
     "Video Games"
   ],
   "Sonnet": [
+    "Contains a Family Member",
     "Ends with NET",
     "Literary Terms",
     "Poetry",
@@ -37234,6 +37671,7 @@
   "Sony": [
     "Camera Companies",
     "Companies",
+    "Contains a Family Member",
     "Ends with ONY",
     "Photography Terms",
     "Starts with SON",
@@ -37333,6 +37771,7 @@
   "South Africa": [
     "BRICS Nations",
     "Commonwealth Nations",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Ends with ICA",
@@ -37351,6 +37790,7 @@
     "1950s",
     "1960s",
     "Cold War",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Asia",
     "Ends with REA",
@@ -37363,6 +37803,7 @@
   ],
   "South Ossetia": [
     "Breakaway Regions",
+    "Contains a Compass Direction",
     "Ends with TIA",
     "Locations in Asia",
     "Place Names",
@@ -37375,6 +37816,7 @@
     "20th Century",
     "Adventure Stories",
     "Bodies of Water",
+    "Contains a Compass Direction",
     "Drama Stories",
     "Ends with FIC",
     "Mentioned in We Didn't Start the Fire",
@@ -37386,6 +37828,7 @@
     "War Stories"
   ],
   "South Sudan": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Ends with DAN",
@@ -37400,6 +37843,7 @@
   ],
   "South Vietnam": [
     "20th Century",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -37412,6 +37856,7 @@
   ],
   "South Yemen": [
     "20th Century",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Asia",
     "Countries that No Longer Exist",
@@ -37425,6 +37870,7 @@
   "Southampton": [
     "Cities",
     "Cities in Europe",
+    "Contains a Compass Direction",
     "Ends with TON",
     "Islands",
     "Locations in Europe",
@@ -37436,11 +37882,13 @@
   ],
   "Southern Ocean": [
     "Bodies of Water",
+    "Contains a Compass Direction",
     "Ends with EAN",
     "Oceans",
     "Starts with SOU"
   ],
   "Southern Rhodesia": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -37516,6 +37964,7 @@
     "1973",
     "20th Century",
     "Cannibalism",
+    "Contains a Color Name",
     "Dystopian Stories",
     "Ends with EEN",
     "Horror Stories",
@@ -37530,6 +37979,7 @@
   ],
   "Space": [
     "Astronomical Objects",
+    "Contains a Card Rank",
     "Ends with ACE",
     "Physics Terms",
     "Starts with SPA",
@@ -37569,6 +38019,7 @@
     "Things Greek"
   ],
   "Spanish East Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -37595,6 +38046,7 @@
     "Starts with SPA"
   ],
   "Spanish West Africa": [
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Africa",
     "Countries that No Longer Exist",
@@ -37615,6 +38067,7 @@
     "Animal Terms",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ROW",
@@ -37886,6 +38339,7 @@
     "Thriller Stories"
   ],
   "Spring": [
+    "Contains a Shape Name",
     "Ends with ING",
     "Starts with SPR",
     "_____ Board"
@@ -37894,6 +38348,7 @@
     "5th Century BC",
     "Books",
     "Classic Literature",
+    "Contains a Shape Name",
     "Ends with ALS",
     "Spring and Autumn Period",
     "Starts with SPR",
@@ -37903,6 +38358,7 @@
     "Cities",
     "Cities in North America",
     "Cities in USA",
+    "Contains a Shape Name",
     "Ends with ELD",
     "Locations in North America",
     "Place Names",
@@ -38011,6 +38467,7 @@
   ],
   "Star": [
     "Astronomical Objects",
+    "Contains a Shape Name",
     "Ends with TAR",
     "Sea _____",
     "Starts with STA",
@@ -38021,6 +38478,7 @@
     "1977",
     "20th Century",
     "Adventure Stories",
+    "Contains a Shape Name",
     "Ends with ARS",
     "Epic Stories",
     "First in Release Order",
@@ -38040,6 +38498,7 @@
     "War Stories"
   ],
   "Starboard": [
+    "Contains a Shape Name",
     "Ends with ARD",
     "Nautical Terms",
     "Starts with STA"
@@ -38047,6 +38506,7 @@
   "Starbuck": [
     "Battlestar Galactica",
     "Coffee",
+    "Contains a Shape Name",
     "Ends with UCK",
     "Starts with STA"
   ],
@@ -38056,6 +38516,7 @@
     "20th Century",
     "Action Stories",
     "Adventure Stories",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with ATE",
     "Movies",
@@ -38105,6 +38566,7 @@
   ],
   "Steel": [
     "Colors",
+    "Contains a Color Name",
     "Elements",
     "Ends with EEL",
     "Materials",
@@ -38156,6 +38618,7 @@
     "Things British"
   ],
   "Stern": [
+    "Contains a Bird Name",
     "Ends with ERN",
     "Nautical Terms",
     "Personality Traits",
@@ -38655,6 +39118,7 @@
     "Birds",
     "Black _____",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with WAN",
@@ -38833,6 +39297,7 @@
   ],
   "Sébastien Le Prestre de Vauban": [
     "17th Century",
+    "Contains a Color Name",
     "Contains an Acute Accent",
     "Ends with BAN",
     "Men",
@@ -39012,6 +39477,7 @@
     "2006",
     "2D Animated Films",
     "Anime",
+    "Contains a Planet Name",
     "Drama Stories",
     "Ends with SEA",
     "Fantasy Stories",
@@ -39259,6 +39725,7 @@
   ],
   "Taurus": [
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with RUS",
     "Starts with TAU",
     "Zodiac Signs"
@@ -39334,6 +39801,7 @@
   "Teal": [
     "Blue Things",
     "Colors",
+    "Contains a Color Name",
     "Ends with EAL",
     "Starts with TEA"
   ],
@@ -39415,6 +39883,7 @@
     "5th Century BC",
     "Ancient Buildings",
     "Buildings",
+    "Contains a Planet Name",
     "Ends with URN",
     "Historical Sites",
     "Religious Sites",
@@ -39584,6 +40053,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with ERN",
@@ -39729,6 +40199,7 @@
     "Supervillains"
   ],
   "The 5th of November": [
+    "Contains a Month Name",
     "Dates",
     "Ends with BER",
     "Starts with THE",
@@ -39869,6 +40340,7 @@
     "2010s",
     "2011",
     "21st Century",
+    "Contains a Shape Name",
     "Ends with ING",
     "Events",
     "Political Events",
@@ -40005,6 +40477,7 @@
     "1980s",
     "1985",
     "2D Animated Films",
+    "Contains a Color Name",
     "Disney",
     "Ends with RON",
     "Family-Friendly Stories",
@@ -40022,6 +40495,7 @@
   ],
   "The Black Death": [
     "14th Century",
+    "Contains a Color Name",
     "Ends with ATH",
     "Events",
     "Pandemics",
@@ -40032,6 +40506,7 @@
     "1350s",
     "1360s",
     "14th Century",
+    "Contains a Color Name",
     "Ends with NCE",
     "Hundred Years' War",
     "Medieval Figures",
@@ -40108,6 +40583,7 @@
     "19th Century",
     "Books",
     "Classic Literature",
+    "Contains a Family Member",
     "Drama Stories",
     "Ends with ZOV",
     "Family Sagas",
@@ -40282,6 +40758,7 @@
     "1985",
     "20th Century",
     "Books",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with PLE",
     "Movies",
@@ -40561,6 +41038,7 @@
     "1960s",
     "20th Century",
     "Cold War",
+    "Contains a Bird Name",
     "Ends with DED",
     "Famous Quotes",
     "Science Quotes",
@@ -40614,6 +41092,7 @@
     "1950s",
     "20th Century",
     "Books",
+    "Contains a Bird Name",
     "Drama Stories",
     "Ends with ITY",
     "Sci-fi Stories",
@@ -40713,6 +41192,7 @@
     "21st Century",
     "Books",
     "Coming of Age Stories",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with ARS",
     "Romance Stories",
@@ -40765,6 +41245,7 @@
     "2014",
     "21st Century",
     "Books",
+    "Contains a Month Name",
     "Drama Stories",
     "Ends with UST",
     "Sci-fi Stories",
@@ -40925,6 +41406,7 @@
     "1972",
     "20th Century",
     "Best Picture Winners",
+    "Contains a Family Member",
     "Crime Stories",
     "Drama Stories",
     "Ends with HER",
@@ -40945,6 +41427,7 @@
     "1974",
     "20th Century",
     "Best Picture Winners",
+    "Contains a Family Member",
     "Crime Stories",
     "Drama Stories",
     "Ends with  II",
@@ -40966,6 +41449,7 @@
     "1990",
     "1990s",
     "20th Century",
+    "Contains a Family Member",
     "Crime Stories",
     "Drama Stories",
     "Ends with III",
@@ -41174,6 +41658,7 @@
     "1990s",
     "1999",
     "20th Century",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with ILE",
     "Movies",
@@ -41413,6 +41898,7 @@
     "1990s",
     "1996",
     "2D Animated Films",
+    "Contains a Color Name",
     "Disney",
     "Drama Stories",
     "Ends with AME",
@@ -41436,6 +41922,7 @@
   "The Hundred Days": [
     "1810s",
     "19th Century",
+    "Contains a Color Name",
     "Ends with AYS",
     "Events",
     "Land Battles",
@@ -41447,6 +41934,7 @@
   ],
   "The Hundred Years War": [
     "14th Century",
+    "Contains a Color Name",
     "Ends with WAR",
     "Events",
     "Land Battles",
@@ -41485,6 +41973,8 @@
     "Adventure Stories",
     "Books",
     "Cold War",
+    "Contains a Color Name",
+    "Contains a Month Name",
     "Ends with BER",
     "Movies",
     "Movies directed by John McTiernan",
@@ -41560,6 +42050,7 @@
     "2004",
     "3D Animated Films",
     "Adventure Stories",
+    "Contains a Color Name",
     "Ends with LES",
     "Family-Friendly Stories",
     "First in Internal Chronology",
@@ -41580,6 +42071,7 @@
     "3D Animated Films",
     "Adventure Stories",
     "Comedy Stories",
+    "Contains a Color Name",
     "Ends with S 2",
     "Family-Friendly Stories",
     "Movies",
@@ -41670,6 +42162,7 @@
     "2019",
     "21st Century",
     "Biographical Stories",
+    "Contains a Color Name",
     "Crime Stories",
     "Drama Stories",
     "Ends with MAN",
@@ -41724,6 +42217,7 @@
     "2020s",
     "2021",
     "21st Century",
+    "Contains a Month Name",
     "Donald Trump",
     "Ends with ION",
     "Events",
@@ -41787,6 +42281,8 @@
     "1950s",
     "1956",
     "20th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with D I",
     "Mentioned in We Didn't Start the Fire",
@@ -41801,6 +42297,8 @@
     "21st Century",
     "Best Picture Winners",
     "Biographical Stories",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with ECH",
     "Movies",
@@ -41962,6 +42460,8 @@
     "1994",
     "2D Animated Films",
     "Adventure Stories",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Disney",
     "Drama Stories",
     "Ends with ING",
@@ -42054,6 +42554,7 @@
     "20th Century",
     "Adventure Stories",
     "Books",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with NGS",
     "Fantasy Literature",
@@ -42072,6 +42573,7 @@
     "Action Stories",
     "Adventure Stories",
     "Contains a Mode of Transport",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with ING",
     "Fantasy Stories",
@@ -42093,6 +42595,9 @@
     "Action Stories",
     "Adventure Stories",
     "Best Picture Winners",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with ING",
     "Fantasy Stories",
@@ -42115,6 +42620,7 @@
     "21st Century",
     "Action Stories",
     "Adventure Stories",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with ERS",
     "Fantasy Stories",
@@ -42134,6 +42640,8 @@
     "1990s",
     "1994",
     "20th Century",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with RGE",
     "Movies",
@@ -42212,6 +42720,7 @@
     "20th Century",
     "Black and White",
     "Black and White Films",
+    "Contains a Bird Name",
     "Crime Stories",
     "Drama Stories",
     "Ends with CON",
@@ -42228,6 +42737,7 @@
     "1970s",
     "1976",
     "20th Century",
+    "Contains a Planet Name",
     "Drama Stories",
     "Ends with RTH",
     "Movies",
@@ -42668,6 +43178,7 @@
     "1999",
     "20th Century",
     "Adventure Stories",
+    "Contains a Card Rank",
     "Ends with ACE",
     "First in Internal Chronology",
     "Fourth in Release Order",
@@ -42811,6 +43322,7 @@
     "19th Century",
     "Books",
     "Classic Literature",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with AGE",
     "Starts with THE",
@@ -42822,6 +43334,7 @@
     "1940s",
     "1948",
     "20th Century",
+    "Contains a Color Name",
     "Dance Films",
     "Drama Stories",
     "Ends with OES",
@@ -42944,6 +43457,7 @@
     "2019",
     "21st Century",
     "Adventure Stories",
+    "Contains a Planet Name",
     "Disney",
     "Ends with KER",
     "Movies",
@@ -43243,6 +43757,7 @@
     "1990s",
     "1994",
     "20th Century",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with ION",
     "Movies",
@@ -43329,6 +43844,7 @@
     "Adventure Stories",
     "Books",
     "C.S. Lewis",
+    "Contains a Color Name",
     "Ends with AIR",
     "Family-Friendly Stories",
     "Fantasy Literature",
@@ -43389,6 +43905,7 @@
   "The Space Race": [
     "1950s",
     "20th Century",
+    "Contains a Card Rank",
     "Ends with ACE",
     "Events",
     "Scientific Events",
@@ -43783,6 +44300,7 @@
   "The Unsinkable Molly Brown": [
     "1910s",
     "20th Century",
+    "Contains a Color Name",
     "Ends with OWN",
     "People",
     "Real People",
@@ -43896,6 +44414,8 @@
   "The Wandering Earth": [
     "21st Century",
     "Books",
+    "Contains a Planet Name",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with RTH",
     "Liu Cixin",
@@ -44242,6 +44762,7 @@
   "Thomas Edison": [
     "19th Century",
     "20th Century",
+    "Contains a Family Member",
     "Deaf People",
     "Ends with SON",
     "Inventors",
@@ -44362,6 +44883,7 @@
     "1980s",
     "1989",
     "20th Century",
+    "Contains a Shape Name",
     "Ends with CRE",
     "Events",
     "Mentioned in We Didn't Start the Fire",
@@ -44419,6 +44941,7 @@
     "2021",
     "21st Century",
     "Biographical Stories",
+    "Contains a Comic Sound Effect",
     "Drama Stories",
     "Ends with OM!",
     "Movies",
@@ -44605,6 +45128,7 @@
     "Birds",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with NIS",
     "Extinct Animals",
@@ -44676,6 +45200,8 @@
     "Black and White Films",
     "Books",
     "Classic Literature",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with IRD",
     "Legal Stories",
@@ -45216,6 +45742,7 @@
   ],
   "Trinidad": [
     "Age of Sail",
+    "Contains a Family Member",
     "Ends with DAD",
     "Exploration Ships",
     "First Circumnavigation",
@@ -45225,6 +45752,7 @@
     "Things Spanish"
   ],
   "Trinidad and Tobago": [
+    "Contains a Family Member",
     "Countries",
     "Countries in North America",
     "Ends with AGO",
@@ -45525,6 +46053,7 @@
     "Animals",
     "Birds",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Countries",
     "Countries in Asia",
     "Currently Living Animals",
@@ -45586,6 +46115,7 @@
     "2020s",
     "2022",
     "3D Animated Films",
+    "Contains a Color Name",
     "Ends with RED",
     "Family-Friendly Stories",
     "Movies",
@@ -45907,6 +46437,8 @@
   "United Kingdom": [
     "Commonwealth Nations",
     "Constitutional Monarchies",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Countries",
     "Countries in Europe",
     "Countries with Nuclear Weapons",
@@ -45991,6 +46523,7 @@
     "Starts with URA"
   ],
   "Uranus": [
+    "Contains a Planet Name",
     "Ends with NUS",
     "Gas Giants",
     "Planets",
@@ -46073,6 +46606,7 @@
     "Animal Species",
     "Animal Terms",
     "Carnivores",
+    "Contains a Bird Name",
     "Contains a Music Genre",
     "Cretaceous Period",
     "Dinosaurs",
@@ -46291,6 +46825,7 @@
     "Animal Species",
     "Animal Terms",
     "Carnivores",
+    "Contains a Bird Name",
     "Contains a Music Genre",
     "Cretaceous Period",
     "Dinosaurs",
@@ -46365,6 +46900,7 @@
     "Supervillains"
   ],
   "Venus": [
+    "Contains a Planet Name",
     "Ends with NUS",
     "Music",
     "Planets",
@@ -46378,6 +46914,7 @@
     "Carnivorous Plants",
     "Cenozoic Era",
     "Contains a Music Genre",
+    "Contains a Planet Name",
     "Currently Living Plants",
     "Ends with RAP",
     "Ends with a Music Genre",
@@ -46536,6 +47073,7 @@
     "20th Century",
     "21st Century",
     "Colors",
+    "Contains a Color Name",
     "Ends with LET",
     "Fictional People",
     "Flower-class Corvettes",
@@ -46584,6 +47122,7 @@
   ],
   "Virgo": [
     "Constellations",
+    "Contains a Zodiac Sign",
     "Ends with RGO",
     "Starts with VIR",
     "Zodiac Signs"
@@ -46685,6 +47224,7 @@
     "Birds of Prey",
     "Carnivores",
     "Cenozoic Era",
+    "Contains a Bird Name",
     "Currently Living Animals",
     "Dinosaurs",
     "Ends with URE",
@@ -46858,6 +47398,7 @@
     "19th Century",
     "Books",
     "Classic Literature",
+    "Contains a Card Rank",
     "Drama Stories",
     "Ends with ACE",
     "Epic Novels",
@@ -46876,6 +47417,7 @@
   ],
   "Wars of the Roses": [
     "15th Century",
+    "Contains a Color Name",
     "Ends with SES",
     "Events",
     "Starts with WAR",
@@ -47050,6 +47592,7 @@
     "1980s",
     "1989",
     "Billy Joel",
+    "Contains a Shape Name",
     "Ends with IRE",
     "Mentioned in We Didn't Start the Fire",
     "Music",
@@ -47124,6 +47667,7 @@
     "20th Century",
     "Cold War",
     "Cold War Powers",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Europe",
     "Countries that No Longer Exist",
@@ -47136,6 +47680,7 @@
     "1961",
     "20th Century",
     "Best Picture Winners",
+    "Contains a Compass Direction",
     "Drama Stories",
     "Ends with ORY",
     "Movies",
@@ -47157,6 +47702,8 @@
     "Things American"
   ],
   "Western Samoa": [
+    "Contains a Bird Name",
+    "Contains a Compass Direction",
     "Countries",
     "Countries in Oceania",
     "Countries that No Longer Exist",
@@ -47279,6 +47826,7 @@
   "White": [
     "Black and White",
     "Colors",
+    "Contains a Color Name",
     "Ends with ITE",
     "Starts with WHI",
     "White Things",
@@ -47290,6 +47838,7 @@
     "1954",
     "20th Century",
     "Christmas Stories",
+    "Contains a Color Name",
     "Drama Stories",
     "Ends with MAS",
     "Movies",
@@ -47306,6 +47855,7 @@
   ],
   "White Wine": [
     "Alcoholic Drinks",
+    "Contains a Color Name",
     "Drinks",
     "Ends with INE",
     "Starts with WHI",
@@ -47401,6 +47951,7 @@
     "Things French"
   ],
   "Williamsonia": [
+    "Contains a Family Member",
     "Cretaceous Period",
     "Ends with NIA",
     "Extinct Plants",
@@ -47433,6 +47984,7 @@
     "1920s",
     "19th Century",
     "20th Century",
+    "Contains a Family Member",
     "Ends with SON",
     "Men",
     "National Leaders",
@@ -47698,6 +48250,8 @@
     "1988",
     "20th Century",
     "Comedy Stories",
+    "Contains a Card Rank",
+    "Contains a Chess Piece",
     "Drama Stories",
     "Ends with IRL",
     "Fictional People",
@@ -47826,6 +48380,7 @@
   "Wright Brothers": [
     "20th Century",
     "Aviation Pioneers",
+    "Contains a Family Member",
     "Ends with ERS",
     "Inventors",
     "Men",
@@ -47856,6 +48411,7 @@
     "2011",
     "Books",
     "Classic Literature",
+    "Contains a Shape Name",
     "Drama Stories",
     "Ends with HTS",
     "Gothic Fiction",
@@ -48100,10 +48656,12 @@
   ],
   "Yellow": [
     "Colors",
+    "Contains a Color Name",
     "Ends with LOW",
     "Starts with YEL"
   ],
   "Yellow Curry": [
+    "Contains a Color Name",
     "Ends with RRY",
     "Foods",
     "Spicy Foods",
@@ -48114,6 +48672,7 @@
   "Yellow Turban Rebellion": [
     "2nd Century",
     "Civil Wars",
+    "Contains a Color Name",
     "Ends with ION",
     "Events",
     "Han Dynasty",
@@ -48359,6 +48918,7 @@
     "20th Century",
     "Animal Terms",
     "Birds",
+    "Contains a Bird Name",
     "Dinosaurs",
     "Ends with AZU",
     "Fictional Animals",
