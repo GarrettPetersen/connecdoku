@@ -14678,5 +14678,85 @@
         "Puck"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Black _____",
+      "Contains a Color Name",
+      "Moon _____",
+      "Red _____"
+    ],
+    "cols": [
+      "Currently Living Plants",
+      "Materials",
+      "People",
+      "Real Animals"
+    ],
+    "words": [
+      [
+        "Berry",
+        "Ice",
+        "Widow",
+        "Cat"
+      ],
+      [
+        "Redwood",
+        "Steel",
+        "Violet",
+        "Blue Jay"
+      ],
+      [
+        "Flower",
+        "Rock",
+        "Sailor",
+        "Rabbit"
+      ],
+      [
+        "Bean",
+        "Velvet",
+        "Dwarf",
+        "Fox"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Cities in North America",
+      "Civilian Ships",
+      "Events",
+      "Locations in Europe"
+    ],
+    "cols": [
+      "Cold War",
+      "Exploration Ships",
+      "Starts with CON",
+      "World War II"
+    ],
+    "words": [
+      [
+        "Washington",
+        "Victoria",
+        "Concord",
+        "Omaha"
+      ],
+      [
+        "Queen Elizabeth 2",
+        "Boaty McBoatface",
+        "Concordia",
+        "Queen Mary"
+      ],
+      [
+        "Cuban Missile Crisis",
+        "Challenger",
+        "Congo Crisis",
+        "D-Day"
+      ],
+      [
+        "Berlin Wall",
+        "Santa Maria",
+        "Constantinople",
+        "Normandy"
+      ]
+    ]
   }
 ]
