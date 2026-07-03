@@ -14758,5 +14758,165 @@
         "Normandy"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Drinks",
+      "Historical Weapons",
+      "Monarchs",
+      "Religious Figures"
+    ],
+    "cols": [
+      "Hundred Years' War",
+      "Starts with CHA",
+      "Things Indian",
+      "Things Scottish"
+    ],
+    "words": [
+      [
+        "Bordeaux",
+        "Champagne",
+        "Lassi",
+        "Scotch"
+      ],
+      [
+        "Longbow",
+        "Charleville Musket",
+        "Tulwar",
+        "Claymore"
+      ],
+      [
+        "Henry V",
+        "Charlemagne",
+        "Babur",
+        "Macbeth"
+      ],
+      [
+        "Joan of Arc",
+        "Charles Taze Russell",
+        "Siddhartha Gautama",
+        "John Knox"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Action Stories",
+      "Black Things",
+      "Starts with GRE",
+      "White Things"
+    ],
+    "cols": [
+      "Colors",
+      "DC Characters",
+      "Mammals",
+      "Marvel Characters"
+    ],
+    "words": [
+      [
+        "Red",
+        "Superman",
+        "King Kong",
+        "Spider-Man"
+      ],
+      [
+        "Black",
+        "Raven",
+        "Panther",
+        "Black Widow"
+      ],
+      [
+        "Green",
+        "Green Lantern",
+        "Greyhound",
+        "Green Goblin"
+      ],
+      [
+        "White",
+        "Mr. Freeze",
+        "Polar Bear",
+        "Iceman"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Buildings",
+      "Desserts",
+      "Sieges",
+      "Women"
+    ],
+    "cols": [
+      "Ends with ING",
+      "Tang Dynasty",
+      "Things Greek",
+      "Things Spanish"
+    ],
+    "words": [
+      [
+        "Empire State Building",
+        "Xuanwu Gate",
+        "Parthenon",
+        "Alhambra"
+      ],
+      [
+        "Sticky Toffee Pudding",
+        "Mooncake",
+        "Baklava",
+        "Churro"
+      ],
+      [
+        "Siege of Nanjing",
+        "Siege of Suiyang",
+        "Siege of Constantinople",
+        "Siege of Tenochtitlan"
+      ],
+      [
+        "Elizabeth Barrett Browning",
+        "Wu Zetian",
+        "Athena",
+        "Catherine of Aragon"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Ancient Cities",
+      "Battles",
+      "Modern Countries",
+      "Royalty"
+    ],
+    "cols": [
+      "Ends with AND",
+      "The Crusades",
+      "Things Greek",
+      "Things Turkish"
+    ],
+    "words": [
+      [
+        "Samarkand",
+        "Jerusalem",
+        "Athens",
+        "Troy"
+      ],
+      [
+        "Battle of Jutland",
+        "Battle of Hattin",
+        "Thermopylae",
+        "Gallipoli Campaign"
+      ],
+      [
+        "Finland",
+        "Malta",
+        "Greece",
+        "Turkey"
+      ],
+      [
+        "Archduke Franz Ferdinand",
+        "Richard the Lionheart",
+        "Alexander the Great",
+        "Suleiman the Magnificent"
+      ]
+    ]
   }
 ]
