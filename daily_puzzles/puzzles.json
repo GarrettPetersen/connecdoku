@@ -15198,5 +15198,125 @@
         "Pharaoh"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Assassination of Caesar",
+      "Contains a Music Genre",
+      "The Gunpowder Plot",
+      "Things French"
+    ],
+    "cols": [
+      "Assassins",
+      "Buildings",
+      "Famous Quotes",
+      "Weapons"
+    ],
+    "words": [
+      [
+        "Brutus",
+        "Curia",
+        "Et tu, Brute?",
+        "Pugio"
+      ],
+      [
+        "Mehmet Ali Agca",
+        "Sydney Opera House",
+        "Friends, Romans, countrymen",
+        "Davy Crockett"
+      ],
+      [
+        "Guy Fawkes",
+        "Palace of Westminster",
+        "Remember, remember",
+        "Gunpowder"
+      ],
+      [
+        "Charlotte Corday",
+        "Eiffel Tower",
+        "I think, therefore I am",
+        "Bayonet"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Land Battles",
+      "Locations in Asia",
+      "Noodles",
+      "Religious Figures"
+    ],
+    "cols": [
+      "Qing Dynasty",
+      "Tang Dynasty",
+      "Things Japanese",
+      "Things Korean"
+    ],
+    "words": [
+      [
+        "Dungan Revolt",
+        "An Lushan Rebellion",
+        "Battle of Guadalcanal",
+        "Battle of Inchon"
+      ],
+      [
+        "Beijing",
+        "Chang'an",
+        "Hokkaido",
+        "Seoul"
+      ],
+      [
+        "Dan Dan Noodles",
+        "Lo Mein",
+        "Ramen",
+        "Jjajangmyeon"
+      ],
+      [
+        "Hong Xiuquan",
+        "Huineng",
+        "Batō Kannon",
+        "Sun Myung Moon"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Animal Species",
+      "Colors",
+      "Marvel Characters",
+      "Weapons"
+    ],
+    "cols": [
+      "Green Things",
+      "Starts with MAG",
+      "Women",
+      "_____ Fish"
+    ],
+    "words": [
+      [
+        "Kiwi",
+        "Magpie",
+        "Raven",
+        "Dog"
+      ],
+      [
+        "Jade",
+        "Magenta",
+        "Aurora",
+        "Gold"
+      ],
+      [
+        "Hulk",
+        "Magneto",
+        "Jean Grey",
+        "Angel"
+      ],
+      [
+        "Green Arrow",
+        "Magazine",
+        "Witchblade",
+        "Sword"
+      ]
+    ]
   }
 ]
