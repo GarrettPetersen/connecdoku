@@ -15118,5 +15118,85 @@
         "Sir John A. Macdonald"
       ]
     ]
+  },
+  {
+    "rows": [
+      "Black _____",
+      "Ends with a Music Genre",
+      "Red _____",
+      "_____ Man Movies"
+    ],
+    "cols": [
+      "Carnivores",
+      "Materials",
+      "People",
+      "White _____"
+    ],
+    "words": [
+      [
+        "Cat",
+        "Ice",
+        "Widow",
+        "Swan"
+      ],
+      [
+        "Venus Flytrap",
+        "Rock",
+        "Milhouse",
+        "House"
+      ],
+      [
+        "Fox",
+        "Velvet",
+        "Curry",
+        "Wine"
+      ],
+      [
+        "Bat",
+        "Wicker",
+        "Cinderella",
+        "Elephant"
+      ]
+    ]
+  },
+  {
+    "rows": [
+      "Bodies of Water",
+      "Military Leaders",
+      "Romance Stories",
+      "Video Games"
+    ],
+    "cols": [
+      "Contains a Color Name",
+      "Locations in North America",
+      "The Sinking of RMS Titanic",
+      "Things Egyptian"
+    ],
+    "words": [
+      [
+        "Black Sea",
+        "Great Lakes",
+        "North Atlantic",
+        "Nile River"
+      ],
+      [
+        "The Black Prince",
+        "Jackson",
+        "Captain Smith",
+        "Saladin"
+      ],
+      [
+        "Dream of the Red Chamber",
+        "Manhattan",
+        "Titanic",
+        "Cleopatra"
+      ],
+      [
+        "Red Dead Redemption",
+        "Victoria",
+        "Titanic: Adventure Out of Time",
+        "Pharaoh"
+      ]
+    ]
   }
 ]
