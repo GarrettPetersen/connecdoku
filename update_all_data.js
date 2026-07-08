@@ -114,8 +114,8 @@ const WORDPLAY_DETECTORS = [
             'aurora', 'black', 'blue', 'brown', 'buttercup', 'cobalt',
             'copper', 'coral', 'cyan', 'gold', 'gray', 'grey', 'green',
             'indigo', 'iris', 'jade', 'lime', 'magenta', 'olive', 'orange',
-            'peach', 'pepper', 'pink', 'purple', 'red', 'rose', 'silver',
-            'steel', 'teal', 'violet', 'white', 'yellow',
+            'peach', 'pepper', 'pink', 'plum', 'purple', 'red', 'rose',
+            'scarlet', 'silver', 'steel', 'teal', 'violet', 'white', 'yellow',
         ],
     },
     {
