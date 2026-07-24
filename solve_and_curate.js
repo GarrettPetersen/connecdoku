@@ -250,6 +250,12 @@ function getEnvFloat(name, fallback) {
   return Number.isFinite(v) ? v : fallback;
 }
 
+function getEnvCsvSet(name) {
+  const raw = process.env[name];
+  if (!raw) return new Set();
+  return new Set(String(raw).split(",").map((value) => value.trim()).filter(Boolean));
+}
+
 async function getParamsInteractive() {
   const cpuCount = os.cpus().length;
   const params = {
@@ -677,10 +683,23 @@ async function mainSolveAndCurate() {
   const recent = getCategoriesFromLastNDays(dailyDb, params.daysLag);
   const topUsed = getTopUsedCategories(categoryUsage, params.topUsedExclude);
   const excluded = new Set([...recent, ...topUsed]);
+  const meta = readJsonOr(META_CATS_F, {});
+  const excludedMeta = getEnvCsvSet("SOLVE_CURATE_EXCLUDE_META");
+
+  for (const metaName of excludedMeta) {
+    const categories = meta[metaName];
+    if (!Array.isArray(categories)) {
+      throw new Error(`Unknown meta category in SOLVE_CURATE_EXCLUDE_META: ${metaName}`);
+    }
+    for (const category of categories) excluded.add(category);
+  }
+
+  if (excludedMeta.size) {
+    console.log(`\nMeta-category filter (SOLVE_CURATE_EXCLUDE_META): ${[...excludedMeta].join(", ")}`);
+  }
 
   if (process.env.SOLVE_CURATE_EXCLUDE_MOVIE_HEAVY === "1") {
     const beforeMovie = excluded.size;
-    const meta = readJsonOr(META_CATS_F, {});
     for (const c of meta["Movie Makers"] || []) excluded.add(c);
     const catsJson = readJsonOr(CATS_F, {});
     for (const cat of Object.keys(catsJson)) {
